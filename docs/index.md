@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<img src="./assets/img/docs_logo.png" width="300" height="80" />
+<img src="./assets/img/manual_logo.png" width="300" height="80" />
 
 share calcs anywhere, anytime
 
