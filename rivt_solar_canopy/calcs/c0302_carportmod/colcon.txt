@@ -1,0 +1,52 @@
+   Bolted Column to Base Angle Connector
+   
+   Connection Data:
+      Column:
+         Lumber Post  D.Fir-L No.1  dry seasoned 5.50 x 5.50" 
+
+      Temperature (T) : T <= 100 deg F
+
+      Loads: 
+         Lateral:     500 lbs   ten minutes duration
+         Uplift:      150 lbs   ten minutes duration
+
+   Connector Design:
+      Components:                                    Area (sq in)  Weight (lbs)
+         2 Side plates:  2.500 x  1.500 x  0.1250"        3.7        0.133
+         1 Base plate:   5.500 x  5.500 x  0.2500"       30.2        2.145
+         2 Clip Angles: 1-1/2 x 1-1/2 x 3/16 x 1.281 in   3.6        0.191
+         Totals:                                         45.0        2.793
+         Plate Steel:
+            Grade: ASTM A36/A36M       Fy:  35525 psi    Fu:  58000 psi
+         Steel Design Checks:
+            Each Side Plate:
+               Ratio of net area to gross area: 0.625
+               Tension in plate: T =    75 lbs   Resistance Tr =  3399 lbs
+
+      Fasteners:
+         Face Plate:
+            Bolts: ASTM A307     Fy: 45,000 psi     Fu: 60,000 psi 
+            Bolt diameter: 1/2"
+            1 rows of 1 Bolts =  1 Bolts
+            Steel Design Checks:
+               Shear per bolt:   V =    75 lbs   Resistance:    Vr =  1590 lbs
+               Bearing per bolt: B =    75 lbs   Resistance:    Br =  2040 lbs
+
+   Design Results using NDS 2015:
+      Load:                     P  =   150 lbs
+      Lateral capacity:         Z' =  1144 lbs  Ratio: 0.13
+      Tension capacity net area Tr = 32646 lbs  Ratio: 0.00
+      Row tear out capacity     Rt =  2772 lbs  Ratio: 0.05
+      Horizontal Bearing:
+         Lateral load:             Q  =   500 lbs
+         Max. bearing load:        Qr =   500 lbs
+         Max. bending load:        Yr =   576 lbs
+
+   Additional Data:
+      Adjustment factors:
+      CD     CM     Ct     Cg   Cdelta   Cd    Cst    Cft
+      1.60   1.00   1.00   1.00   0.50    -      -     1.00
+
+      Yield Limit Values (lbs):
+         Im        Is        II        IIIm      IIIs      IV
+         3850      2719      -          -        1430      1963

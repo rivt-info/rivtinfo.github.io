@@ -1,0 +1,10 @@
+    [1] The maximum opening height shall be taken as the 
+    maximum opening clear height in a perforated shear wall. 
+    Where areas above and/or below an opening remain unsheathed, 
+    the height of each opening shall be defined as the clear 
+    height of the opening plus the unsheathed areas.					
+
+    [2] The sum of the perforated shear wall segment lengths, Sum(L), 
+    divided by the total length of the perforated shear wall. Lengths of 
+    perforated shear wall segments with aspect ratios greater than 2:1 
+    shall be adjusted in accordance with Section 4.3.4.3.					

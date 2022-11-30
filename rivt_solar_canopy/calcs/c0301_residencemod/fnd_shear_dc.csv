@@ -1,0 +1,7 @@
+Foundation D-C Ratio ,,, 
+Label, Type, Vd (lbs), Vc (lbs), D-C 
+SW1,URFP,6000,9000,0.67
+SW4,URFP,3000,4500,0.67
+SW6,URFP,3000,4500,0.67
+SW11-SW12,wall,6000,12000,0.5 (4" oc bdry)
+SW13-SW14,wall,6000,12000,0.5 (4" oc bdry

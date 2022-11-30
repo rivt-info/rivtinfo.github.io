@@ -1,0 +1,2 @@
+pdf | C:/Users/rodhh/.rivtcalc/sumatrapdf.exe
+tex | 

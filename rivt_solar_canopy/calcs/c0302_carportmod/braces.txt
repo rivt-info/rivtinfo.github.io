@@ -1,0 +1,47 @@
+   One Steel Side Member Bolted at Angle To Main Member
+
+   Connection Data:
+      Main:
+         Lumber-soft  D.Fir-L No.1  dry seasoned 5.50 x 5.50" 
+         Member extends indefinitely, and end assumed to be free.
+      Side Plate:
+         ASTM A36 Grade A Steel   0.1250 x 5.00" 
+         End is flush with edge of main member.
+      Side member is sloped 135.0 degrees with respect to the main member.
+
+      Temperature (T) : T <= 100 deg F
+
+      Loads: 
+         Along side member:  1600 lbs   ten minutes duration in tension.
+
+   Connector Design:
+      Fasteners:
+         Bolt diameter: 5/8"
+         2 rows of 2 Bolts =  4 Bolts
+         Row Spacing:          2.21"
+         Bolt spacing in row:  2.68"
+
+   Design Results using NDS 2015:
+      Parallel to Grain:
+         Load:                     P  = -1131 lbs
+         Row tear out capacity     Rt = 19802 lbs  Ratio: 0.06
+      Perpendicular to Grain:
+         Lateral load:             Q  =  1131 lbs
+      Resultant: 
+         Combined lateral load:    N  =  1600 lbs at 45.0 degrees
+         Lateral capacity:         Z' =  3889 lbs  Ratio: 0.41
+
+   ===============================================================
+   Only one bolt per row is used so the lateral capacity is 
+   reduced by a factor of two.
+
+   =>  DC ratio = .82
+   ===============================================================
+   Additional Data:
+      Adjustment factors:
+      CD     CM     Ct     Cg   Cdelta   Cd    Cst    Cft
+      1.60   1.00   1.00   0.99   0.76    -      -     1.00
+
+      Yield Limit Values (lbs):
+         Im        Is        II        IIIm      IIIs      IV
+         2868      1510      1304      1593       812      1128

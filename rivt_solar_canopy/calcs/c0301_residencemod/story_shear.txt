@@ -1,0 +1,37 @@
+                  
+ COORDINATES OF CENTERS OF CUMULATIVE MASS & CENTERS OF RIGIDITY
+ STORY  DIAPHRAGM /----------CENTER OF MASS----------//--CENTER OF RIGIDITY--/
+ LEVEL     NUMBER        MASS  ORDINATE-X  ORDINATE-Y  ORDINATE-X  ORDINATE-Y
+ ROOF    
+                1       0.046     277.763     202.598     264.774     203.475
+ WINTOP  
+                1       0.054     278.706     200.942     262.890     190.041
+ WINBOT  
+                1       0.063     278.026     198.763     245.047     203.759
+ FLOOR   
+                1       0.130     280.866     205.918     171.905     238.081
+ FNDTOP  
+                1       0.134     282.490     208.273      43.027     297.137
+ FNDMID  
+                1       0.135     284.189     209.256     532.139     347.254
+ FNDBOT  
+                1       0.136     285.420     209.878     283.134     204.655
+
+ STATIC LOAD CONDITION LATERAL STORY SHEARS FOR ALL DIAPHRAGMS 
+ VALUES ARE AT THE GLOBAL ORIGIN IN THE GLOBAL COORDINATES
+                 /---------------------LOAD  CONDITIONS---------------------/
+ LEVEL     DIRN           I        II       III         A         B         C
+ ROOF         X        0.00      0.00      0.00      4.66      0.00      0.00
+ ROOF         Y        0.00      0.00      0.00      0.00      4.66      0.00
+ WINTOP       X        0.00      0.00      0.00      5.34      0.00      0.00
+ WINTOP       Y        0.00      0.00      0.00      0.00      5.34      0.00
+ WINBOT       X        0.00      0.00      0.00      5.89      0.00      0.00
+ WINBOT       Y        0.00      0.00      0.00      0.00      5.89      0.00
+ FLOOR        X        0.00      0.00      0.00      8.20      0.00      0.00
+ FLOOR        Y        0.00      0.00      0.00      0.00      8.20      0.00
+ FNDTOP       X        0.00      0.00      0.00      8.27      0.00      0.00
+ FNDTOP       Y        0.00      0.00      0.00      0.00      8.27      0.00
+ FNDMID       X        0.00      0.00      0.00      8.29      0.00      0.00
+ FNDMID       Y        0.00      0.00      0.00      0.00      8.29      0.00
+ FNDBOT       X        0.00      0.00      0.00      8.29      0.00      0.00
+ FNDBOT       Y        0.00      0.00      0.00      0.00      8.29      0.00

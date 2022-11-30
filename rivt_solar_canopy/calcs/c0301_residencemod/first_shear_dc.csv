@@ -1,0 +1,10 @@
+First Floor D-C Ratio,,,, 
+Label, Type, Vd (lbs), Vc (lbs), D-C (6"), D-C (12")
+SW1,wall,4000,12948,0.3,0.6
+SW2,wall,1500,6198,0.25,0.5
+SW3,wall,-,-,-,-
+SW4,wall,1500,5990,0.25,0.5
+SW5,wall,-,-,-,-
+SW6,wall,1500,6365,0.25,0.5
+SW7,wall,4000,13572,0.3,0.6
+SW8,wall,4000,12012,0.3,0.6

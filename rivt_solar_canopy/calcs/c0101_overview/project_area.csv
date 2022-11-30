@@ -1,0 +1,5 @@
+Project Areas,,,,
+Variable, Value, Description, Unit, Alt Unit
+ra1,1000,residence area, SQF, SQM
+cpa1,400,car port area, SQF, SQM
+sa1,100,storage area, SQF, SQM

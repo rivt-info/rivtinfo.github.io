@@ -1,0 +1,16 @@
+    Note: Table applies to wood structural panels, subfloor, roof 
+    and interior wall sheathing to framing and particleboard wall 
+    sheathing to framing [see Table FI602.3(3) for wood structural 
+    panel exterior wall sheathing to wall framing
+
+    [a] Nails are smooth-common box or deformed shanks except where 
+    otherwise stated. Nails used for framing and sheathing connections 
+    shall have minimum average bending yield strengths as shown: 
+    80 ksi for shank diameter of 0.192 inch (20d common nail); 
+    90 ksi for shank diameters larger than 0.142 inch but not larger 
+    than 0.177 inch and 100 ksi for shank diameters of 0.142 inch or less.
+
+    [b] Staples are l6 gage wire and have a minimum 7/16-inch diameter crown width.
+
+    [c] Nails shall be spaced at not more than 6 inches on center at all supports 
+    where spans are 48 inches or greater.
