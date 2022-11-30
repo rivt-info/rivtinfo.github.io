@@ -1,0 +1,54 @@
+   Bolted Column to Base Angle Connector
+   
+   Connection Data:
+      Column:
+         Timber-soft  D.Fir-L No.1  dry seasoned 11.25 x 3.50" 
+
+      Temperature (T) : T <= 100 deg F
+
+      Loads: 
+         Lateral:     200 lbs   ten minutes duration
+         Uplift:     1000 lbs   ten minutes duration
+
+   Connector Design:
+      Components:                                    Area (sq in)  Weight (lbs)
+         2 Side plates:  4.000 x  5.000 x  0.1250"       20.0        0.709
+         1 Base plate:   3.500 x 11.250 x  0.2500"       39.4        2.792
+         2 Clip Angles: 1-1/2 x 1-1/2 x 3/16 x 0.500 in   1.4        0.077
+         Totals:                                         82.3        4.363
+         Plate Steel:
+            Grade: ASTM A36/A36M       Fy:  35525 psi    Fu:  58000 psi
+         Steel Design Checks:
+            Each Side Plate:
+               Ratio of net area to gross area: 0.675
+               Tension in plate: T =   500 lbs   Resistance Tr = 12238 lbs
+
+      Fasteners:
+         Face Plate:
+            Bolts: ASTM A307     Fy: 45,000 psi     Fu: 60,000 psi 
+            Bolt diameter: 3/4"
+            2 rows of 1 Bolts =  2 Bolts
+            Row Spacing:          3"
+            Steel Design Checks:
+               Shear per bolt:   V =   250 lbs   Resistance:    Vr =  5869 lbs
+               Bearing per bolt: B =   250 lbs   Resistance:    Br =  2583 lbs
+
+   Design Results using NDS 2015:
+      Load:                     P  =  1000 lbs
+      Lateral capacity:         Z' =  5745 lbs  Ratio: 0.17
+      Tension capacity net area Tr = 42455 lbs  Ratio: 0.02
+      Row tear out capacity     Rt = 18360 lbs  Ratio: 0.05
+      Group tear out capacity   Gt = 35758 lbs  Ratio: 0.03
+      Horizontal Bearing:
+         Lateral load:             Q  =   200 lbs
+         Max. bearing load:        Qr =   200 lbs
+         Max. bending load:        Yr =   230 lbs
+
+   Additional Data:
+      Adjustment factors:
+      CD     CM     Ct     Cg   Cdelta   Cd    Cst    Cft
+      1.60   1.00   1.00   1.00   0.57    -      -     1.00
+
+      Yield Limit Values (lbs):
+         Im        Is        II        IIIm      IIIs      IV
+         3675      4078      -          -        3142      4417

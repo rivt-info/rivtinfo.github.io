@@ -1,0 +1,218 @@
+
+| Dec 14, 2014
+|
+| **Outline of Scope and Schedule for Renovations and Improvements at**
+| 55 Loring Ave.
+| Mill Valley, CA 94107
+|
+| **Work by JAM and owner**
+
+#- 01  Floor plan
+
+
+#- 02  Opening dimensions
+
+
+#- 03  Wall lighting locations (red-new, blue-replace, green- wiring)
+
+
+[s] JAM - General
+
+**1. Kitchen**
+
+    Materials:
+        - flooring installation materials other than vinyl flooring
+
+    Labor:
+        - install new flooring
+        - install kitchen cabinets
+        - install white tile backsplash with quarter-round edging
+        - fabricate and install granite counters from two 8'and one 9'lengths including:
+          cut to length, sink cutout, cut to size and add new edge at refrigerator counter
+        - new shelf over refrigerator
+        - install new sink and disposal
+        - install new dishwasher
+        - install new vented range hood
+        - reinstall gas stove (stored under house)
+        - remove door stops at two interior doors - convert to openings
+        - widen passage opening to living room and match door framing
+        - install new exterior entry door at kitchen with reversed inward swing
+        - remove and repair dryer outlet penetration
+
+**Cost:** $______________  Expected completion date _____________
+
+|
+
+**2. Bathroom**
+
+    Materials:
+        - flooring materials other than vinyl flooring
+
+    Labor:
+        - install new flooring
+        - install new vanity and mirror
+        - remove shower doors on bathtub
+
+**Cost:** $______________  Expected completion date _____________
+
+|
+
+**4. Drywall and Bedrooms**
+
+    Materials:
+        - drywall materials
+        - two hollow core doors and brass hardware
+        - narrow hardwood shelf at see-through opening
+        - skylight
+
+    Labor:
+        - cut opening in hall partition and finish edges, install narrow shelf (Figure 2)
+        - repair sheetrock damagein hall
+        - widen passage between kitchen and living room
+        - replace french doors with hollow core doors using flush mounted hardward on bedroom side
+        - replace bedroom skylight
+        - kitchen drywall repairs
+        - drywall soffit enclosure over sink for can lights
+
+**Cost:** $______________ Expected completion date _____________
+
+|
+
+**5. Brick Planter**
+
+    Labor:
+        - repair top row of loose bricks adjacent to front door
+
+    **Cost:** $______________ Expected completion date _____________
+
+|
+
+**6. Carport Retrofit and Appliance Enclosure - Drawings in progress**
+
+
+[s] JAM sub - Electrical
+
+        Materials:
+            - switches, outlets and wires
+
+        Labor:
+            - install wall mounted lights, run wiring in walls (Figure 3)
+            - replace hanging lights in kitchen with flush mount fixtures
+            - replace flourescent sink light with 3 surface mount led
+            - replace dimmer switches with on/off switches
+            - install electical for new gas fireplace
+            - install light and switch in under-house storage
+            - install outside light on motion detector at soffit over storage door
+
+**Cost:** $______________  Expected completion date _____________
+
+|
+
+[s] JAM sub - Plumbing and Piping
+
+        Materials:
+            - plumbing piping
+            - gas piping
+
+        Labor:
+            - replace plumbing where needed to restore good water pressure to kitchen and bathroom
+            - do not replace plumbing to hose bibs
+            - add new hose bib at bottom of exterior steps
+            - relocate toilet closer to vanity (vanity is now smaller)
+            - extend natural gas to fireplace and outside appliance enclosure
+
+**Cost:** $______________  Expected completion date _____________
+
+|
+
+[s] JAM and JAM sub - Living Room Window
+
+    Demo:
+        Existing window
+
+    Install:
+        New framing and windows with safety glass
+
+**Cost:** $______________  Expected completion date _____________
+
+|
+
+[s] By Owner
+
+**1. Drawings**
+
+    - partition see-through; completed
+    - kitchen layout and widened passage; completed
+    - lighting locations: completed
+    - self supporting exterior appliance screen; completed next week
+    - permit drawings: carport repairs and seismic improvements; completed end of December
+
+**2. Demo**
+
+    Kitchen:
+        - kitchen and bathroom cabinets; completed
+        - refrigerator and dishwasher; completed
+        - fireplace; completed
+        - washer, dryer and stove; completed, stored under house
+
+    Other:
+        - blinds; completed
+        - misc fixtures and lights; completed
+        - bathroom cabinet and mirror; completed
+
+**3. Painting and Finishing**
+
+    Hardwood floor:
+        - finishing; completed after everything is done (except for kitchen)
+
+    Painting:
+        - interior; completed
+        - kitchen, bath, fireplace and picture window; completed after construction
+        - exterior and laundry screen; completed after kitchen door and windows
+
+    Blinds:
+        - install blinds; to be completed after painting is complete
+
+**4. Materials**
+
+    Kitchen:
+        - new cabinets; at house
+        - new tile backsplash and grout; at house
+        - new granite counters; at house
+        - new microwave; in shipment
+        - new range hood; in shipment
+        - new dishwasher; to be purchased next week
+        - new refrigerator 21 cubic feet; to be purchased next week
+
+    Lighting:
+        - new wall mounted fixtures (8); some at house, some in shipment
+        - new ceiling mounted fixtures in kitchen (2); in shipment
+        - new lighting over bathroom vanity; in shipment
+        - 3 new led surface ights over sink in kitchen; in shipment
+
+    Bathroom:
+        - new vanity and mirror; in shipment
+        - new toilet tank lid; to be purchased next week
+
+    All rooms:
+        - new louver blinds; to be purchased next week
+
+**5. Construction**
+
+    - 12' x 16' under-house storage platform
+    - level front entrance sidewalk
+
+**6. Cleaning**
+
+    Windows:
+        - windows and frames; completed near end of project
+
+
+
+#- formateq | 3,3 | 1.0
+#-01 | 2,2 | index | col
+
+#- fileop
+#- 01 | f | mvplan03.png  | Floor plan | 65 |
+#- 02 | f | opening.png   | Opening dimensions | 80 |
+#- 03 | f | lightplan.png | Wall lighting locations (red-new, blue-replace, green-wiring) | 75 |

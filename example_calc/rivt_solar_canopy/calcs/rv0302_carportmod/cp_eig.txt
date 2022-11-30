@@ -1,0 +1,25 @@
+                                                                           
+     STRUCTURAL TIME PERIODS AND FREQUENCIES
+     MODE                   PERIOD           FREQUENCY       CIRCULAR/FREQ
+     NUMBER                   (TIME)  (CYCLES/UNIT TIME) (RADIANS/UNIT TIME)
+          1                  0.12353             8.09552            50.86566
+          2                  0.09821            10.18244            63.97819
+          3                  0.09772            10.23350            64.29899                                                        
+     MODAL PARTICIPATION FACTORS
+     MODE                  X-TRANS             Y-TRANS              Z-ROTN
+     NUMBER                DIRECTION           DIRECTION           DIRECTION
+          1                  0.09758             0.00029            -0.78367
+          2                 -0.00983             0.01423            -7.91733
+          3                  0.00115             0.09709             1.16317                                                       
+     MODAL DIRECTION FACTORS
+     MODE                  X-TRANS             Y-TRANS              Z-ROTN
+     NUMBER                DIRECTION           DIRECTION           DIRECTION
+          1                 99.36060             0.00096             0.63844
+          2                 32.87273             2.11559            65.01169
+          3                  0.70362            97.89345             1.40293                                                      
+     EFFECTIVE MASS FACTORS
+     NUMBER        %-MASS  <%-SUM>     %-MASS  <%-SUM>     %-MASS  <%-SUM>
+          1         98.83  < 98.8>       0.00  <  0.0>       0.64  <  0.6>
+          2          1.00  < 99.8>       2.10  <  2.1>      64.93  < 65.6>
+          3          0.01  < 99.8>      97.83  < 99.9>       1.40  < 67.0>                                                       
+     

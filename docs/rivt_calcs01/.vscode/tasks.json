@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "RC-update",
+      "type": "shell",
+      "command": "pip3 install --upgrade --no-deps git+https://github.com/rivtlib/rivtlib-code",
+      "windows": {
+        "command": "pip install --upgrade --no-deps git+https://github.com/rivtlib/rivtlib-code"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "RC-install",
+      "type": "shell",
+      "command": "pip3 install --upgrade git+https://github.com/rivtlib/rivetcalc-code",
+      "windows": {
+        "command": "pip install --upgrade git+https://github.com/rivtlib/rivetcalc-code"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+  ]
+}

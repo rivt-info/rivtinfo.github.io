@@ -1,0 +1,29 @@
+[s] section 1
+
+    [y] s | 1/(x+y)
+
+    [t] term 1 | x = 1*IN
+    [t] term 2 | y = 2*FT
+
+
+    #- 01 insert a new figure at 50% size
+
+[s] section 2
+
+    [c] check DC ratio | ok | 3
+        x / 10 | < | 1.0
+
+    [a] table 1                 # -02
+
+    [f] import a function
+        a_func.py | new_result
+
+    [e] equation 1              #- 01
+        area = x * y
+
+#- formateq | 3,3 | 0
+#-01 | 2,2 | IN**2 | 3
+#-02 | 2,2 | index | col
+
+#- fileop
+#- 01 | f | testfig.png | test figure | 50 |

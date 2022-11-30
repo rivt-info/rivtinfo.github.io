@@ -1,0 +1,201 @@
+
+| Nov 25, 2014
+|
+| **Outline of Scope and Schedule for Renovations and Improvements at**
+| 55 Loring Ave.
+| Mill Valley, CA 94107
+|
+| **Work by JAM and owner**
+
+#- 01  floor plan
+
+
+[s] JAM - General
+
+**1. Kitchen** [15k]
+
+    Materials:
+        - flooring installation materials other than vinyl flooring
+
+    Labor:
+        - install new flooring
+        - install kitchen cabinets
+        - install tile backsplash
+        - fabricate and install granite counters from 8'and 9' lengths
+        - install sink and existing disposal
+        - reinstall stove (stored under house)
+        - remove door stops at two interior doors - convert to openings
+        - widen passage opening to living room and match door framing
+        - install new exterior entry door with reversed swing
+
+**Cost:** $______________  Date complete _____________
+
+|
+
+**2. Bathroom** [1.4k]
+
+    Materials:
+        - flooring materials other than vinyl flooring
+
+    Labor:
+        - install new flooring
+        - install vanity and mirror
+        - remove shower doors on bathtub
+
+**Cost:** $______________  Date complete _____________
+
+|
+
+**3. Laundry Enclosure Screen** [3.8k]
+
+        Materials:
+            - wood framing
+            - concrete and reinforcing for raised slab
+            - door hardware
+
+        Labor:
+            - build screen enclosure
+
+**Cost:** $______________  Date complete _____________
+
+|
+
+
+**4. Drywall and Bedrooms** [1k]
+
+    Materials:
+        - two hollow core doors and brass hardware
+        - narrow hardwood shelf
+        - skylight
+
+    Labor:
+        - cut opening in hall partition and finish edges, install narrow shelf
+        - repair sheetrock damage location in hall
+        - widen passage between kitchen and living room
+        - replace french doors with hollow core doors
+        - use flush mounted hardward on bedroom side so they may be used as wall.
+        - replace bedroom skylight
+
+**Cost:** $______________ Date complete _____________
+
+|
+
+**5. Brick Planter**
+
+    Labor:
+        - repair top row of loose bricks adjacent to front door
+
+    **Cost:** $______________ Date complete _____________
+
+|
+
+**6. Carport Retrofit - Drawings in progress**
+
+
+[s] JAM sub - Electrical [2.1k]
+
+        Materials:
+            - switches, outlets and wires
+
+        Labor:
+            - install wall lights, run wiring in walls (see plans for locations)
+            - install new outlets in kitchen
+            - replace dimmer switches with on/off switches
+            - replace fluorescent fixture with recessed 3-socket LED fixture over sink
+
+**Cost:** $______________  Date complete _____________
+
+
+[s] JAM sub - Plumbing and Piping
+
+        Materials:
+            - plumbing piping
+            - gas piping
+
+        Labor:
+            - replace water plumbing starting from main connection at house
+            - extend natural gas to fireplace and outside appliance enclosure
+            - relocate toilet closer to vanity (vanity is now smaller)
+
+**Cost:** $______________  Date complete _____________
+
+
+
+[s] JAM sub - Living Room Window [3.5k]
+
+    Demo:
+        Existing window
+
+    Install:
+        New framing and windows with safety glass
+
+
+[s] By Owner
+
+**1. Drawings**
+
+    - partition see-through opening; completed this week
+    - kitchen layout and widened passage opening; completed this week
+    - self supporting exterior appliance screen; completed next week
+    - permit drawings: carport repairs and seismic improvements; completed in two weeks
+
+**2. Demo**
+
+    Kitchen:
+        - kitchen and bathroom cabinets; removed next week
+        - refrigerator; removed next week
+        - washer, dryer and stove; stored under house next week
+
+    Other:
+        - blinds; removed next week
+        - misc fixtures and lights; removed next week
+
+**3. Painting and Finishing**
+
+    Hardwood floor:
+        - finishing; completed after everything is done (except for kitchen)
+
+    Painting:
+        - interior; completed next week except for kitchen and bath
+        - exterior; completed 2 weeks after kitchen door and windows
+        - laundry screen; completed after construction
+
+    Blinds:
+        - install blinds; completed after painting
+
+**4. Materials**
+
+    Kitchen:
+        - new cabinets; at house
+        - new granite counters; at house
+        - new microwave; purchased in a few weeks
+        - new refrigerator; purchased in a few weeks
+        - new tile backsplash and grout; purchased next week
+
+    Lighting:
+        - wall mounted fixtures in all rooms; purchased next week
+        - ceiling mounted fixtures in kitchen; purchased next week
+        - lighting over vanity; purchased next week
+
+    Bathroom:
+        - vanity and mirror; purchased this week
+        - toilet tank lid; purchased this week
+
+    All rooms:
+        - louver blinds
+
+**5. Cleaning**
+
+    Fireplace brick:
+        - fireplace; completed next week (paint if uncleanable)
+
+    Windows:
+        - windows and frames; completed near end of project
+
+
+
+#- formateq | 3,3 | 1.0
+#-01 | 2,2 | index | col
+
+#- fileop
+#- 01 | f | mvfloor2.png | Floor plan | 65 |

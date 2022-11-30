@@ -1,0 +1,19 @@
+{
+    "python.defaultInterpreterPath": "C:\\Users\\rhh2\\rivitcalc_0701\\Python382\\python.exe",
+    "insertDateString.format": "MM-DD-YYYY hh:mm:ss",
+    "insertDateString.formatDate": "MM-DD-YYYY",
+    "inline-bookmarks.view.showVisibleFilesOnly": true,
+    "snippets.viewer.expandSnippetFiles": false,
+    "snippets.viewer.skipLanguageSnippets": "latex-expl3, rsweave,jlweave, tex, markdown",
+    "snippets.viewer.sortSnippetsByName": false,
+    "snippets.viewer.combineLanguageSnippets": true,
+    "cSpell.words": [
+        "rivt",
+        "rivtcalc"
+    ],
+    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.colorCustomizations": {
+        "tab.activeBackground": "#2a2570",
+        "tab.inactiveBackground": "#505052"
+    }
+}

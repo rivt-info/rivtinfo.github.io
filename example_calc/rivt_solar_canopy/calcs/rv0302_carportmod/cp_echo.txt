@@ -1,0 +1,286 @@
+                                    E T A B S                                   
+               Extended Three Dimensional Analysis of Building Systems            
+                              NONLINEAR Version 6.22                            
+                              Copyright (C) 1983-1998                            
+                           COMPUTERS AND STRUCTURES, INC.                        
+                                 All rights reserved                              
+                        
+   CARPORT                                                               
+   SEISMIC ANALYSIS                                                      
+   J O B   C O N T R O L   I N F O R M A T I O N
+   NUMBER OF STORIES----------------------------  11
+   NUMBER OF FLOOR DIAPHRAGMS ON EACH LEVEL-----   1
+   NUMBER OF DIFFERENT FRAMES-------------------   1
+   NUMBER OF TOTAL FRAMES-----------------------   1
+   NUMBER OF MASS TYPES-------------------------   0
+   NUMBER OF LOAD CASES-------------------------   0
+   NUMBER OF STRUCTURAL PERIODS-----------------   3
+   NUMBER OF MATERIAL PROPERTIES----------------   1
+   NUMBER OF PROPERTIES FOR COLUMNS-------------   1
+   NUMBER OF PROPERTIES FOR BEAMS---------------   2
+   NUMBER OF PROPERTIES FOR FLOORS--------------   1
+   NUMBER OF PROPERTIES FOR BRACES--------------   1
+   NUMBER OF PROPERTIES FOR PANELS--------------   0
+   NUMBER OF PROPERTIES FOR SUPPORTS/LINKS------   0
+   CODE FOR STATIC LATERAL ANALYSIS-------------  11
+   CODE FOR DYNAMIC LATERAL ANALYSIS------------   1
+   CODE FOR STRUCTURE TYPE----------------------   0
+   CODE FOR P-DELTA ANALYSIS -------------------   0
+   CODE FOR FRAME JOINT STIFFNESS MODIFICATION--   2
+   CODE FOR FRAME SELF WEIGHT LOAD CONDITION----   0
+   CODE FOR TYPE OF UNITS-----------------------   1
+   GRAVITATIONAL ACCELERATION-----------------   0.3864E+03
+   EIGEN CONVERGENCE TOLERANCE----------------   0.1000E-03
+   EIGEN CUTOFF TIME PERIOD-------------------   0.0000E+00
+   P-DELTA FACTOR-----------------------------   0.1000E+01
+   CARPORT                                                               
+   SEISMIC ANALYSIS                                                      
+   STRUCTURAL STORY DATA . . .
+   STORY         STORY  NUMBER OF
+   LEVEL        HEIGHT DIAPHRAGMS
+   HITRIM         3.00          0
+   HICOL          2.00          0
+   HIBRAC1        2.00          0
+   HIBRAC2        8.00          0
+   MIDCOL         8.00          0
+   LOWBRC2        2.00          0
+   LOWBRC1        2.00          0
+   LOWCOL         3.00          0
+   LOWTRIM       13.00          0
+   LOWBC1        16.00          0
+   LOWBC2        52.00          0
+   CARPORT                                                               
+   SEISMIC ANALYSIS                                                      
+   MATERIAL PROPERTIES
+   ID TYPE     ELASTIC    POISSONS        UNIT        UNIT    COEFF OF
+               MODULUS       RATIO      WEIGHT        MASS   EXPANSION
+      1    O  0.1000E+05      0.3000  0.2300E-04  0.6000E-07  0.0000E+00
+   MATERIAL PROPERTIES FOR DESIGN
+   ID TYPE         FY         FC        FYS        FCS      FBMAJ      FBMIN
+                                                   
+   SECTION PROPERTIES FOR COLUMNS
+         SECTION            MAT     MAJOR     MINOR    FLANGE       WEB
+      ID  TYPE                ID       DIM       DIM     THICK     THICK
+      1  RECT                 1     5.500     5.500     0.000     0.000
+   SECTION PROPERTY REDUCTION FACTORS FOR  COLUMNS
+               TORSION       MAJOR       MINOR
+      ID             J           I           I
+      1         1.000       1.000       1.000
+   ANALYSIS SECTION PROPERTIES FOR   COLUMNS
+               AXIAL       MAJOR       MINOR     TORSION       MAJOR       MINOR
+      ID             A          AV          AV           J           I           I
+      1        30.250      25.208      25.208  0.1289E+03  0.7626E+02  0.7626E+02
+                                                
+   SECTION PROPERTIES FOR BEAMS  
+         SECTION            MAT     DEPTH     DEPTH      BEAM    FLANGE       WEB
+      ID  TYPE                ID     BELOW     ABOVE     WIDTH     THICK     THICK
+      1  RECT                 1    11.250     0.000     3.500     0.000     0.000
+      2  RECT                 1     5.500     0.000     1.500     0.000     0.000
+   SECTION PROPERTY REDUCTION FACTORS FOR  BEAMS  
+               TORSION       MAJOR       MINOR
+      ID             J           I           I
+      1         1.000       1.000       1.000
+      2         1.000       1.000       1.000
+   ANALYSIS SECTION PROPERTIES FOR   BEAMS  
+               AXIAL       MAJOR       MINOR     TORSION       MAJOR       MINOR
+      ID             A          AV          AV           J           I           I
+      1        39.375      32.813      32.813  0.1293E+03  0.4153E+03  0.4020E+02
+      2         8.250       6.875       6.875  0.5125E+01  0.2080E+02  0.1547E+01
+   CARPORT                                                               
+   SEISMIC ANALYSIS                                                      
+   SECTION PROPERTIES FOR   FLOORS 
+         ELEMENT   MAT    FLOOR    FLOOR    FLOOR
+      ID TYPE       ID      T11      T22      T12
+      1 MEMB        1    1.500    1.500    0.100
+   CARPORT                                                               
+   SEISMIC ANALYSIS                                                      
+   SECTION PROPERTIES FOR BRACES 
+         SECTION            MAT     MAJOR     MINOR    FLANGE       WEB
+      ID  TYPE                ID       DIM       DIM     THICK     THICK
+      1  RECT                 1     3.500     3.500     0.000     0.000
+   SECTION PROPERTY REDUCTION FACTORS FOR  BRACES 
+               TORSION       MAJOR       MINOR
+      ID             J           I           I
+      1         1.000       1.000       1.000
+   ANALYSIS SECTION PROPERTIES FOR   BRACES 
+               AXIAL       MAJOR       MINOR     TORSION       MAJOR       MINOR
+      ID             A          AV          AV           J           I           I
+      1        12.250      10.208      10.208  0.2113E+02  0.1251E+02  0.1251E+02
+   CARPORT                                                               
+   SEISMIC ANALYSIS                                                      
+   F R A M E   C O N T R O L   I N F O R M A T I O N
+   CARPORT                                                                       
+   FRAME ID NUMBER----------------------------    1
+   NUMBER OF COLUMN LINES---------------------   72
+   NUMBER OF BEAM BAYS------------------------   63
+   NUMBER OF FLOOR BAYS-----------------------   24
+   NUMBER OF JOINT LOAD PATTERNS--------------    0
+   NUMBER OF BEAM SPAN LOAD PATTERNS----------    0
+   NUMBER OF FLOOR SURFACE LOAD PATTERNS------    0
+   CODE FOR JOINT DATA------------------------    0
+   MAXIMUM NUMBER OF BRACE ELEMENTS-----------   10
+   MAXIMUM NUMBER OF PANEL ELEMENTS-----------    0
+   MAXIMUM NUMBER OF LINK  ELEMENTS-----------    0
+   MAXIMUM NUMBER OF LOADS PER BEAM SPAN------    4
+   SEISMIC ANALYSIS                                                      
+   INPUT AND/OR GENERATED BRACING DATA
+   BRACE  LEVEL      COLUMN   COLUMN     PROP  PIN END   LEVELS           BRACE
+      ID  AT TOP     AT BOT   AT TOP       ID  MAJ/MIN  DROPPED          LENGTH
+      1  LOWCOL         10       11        1      3/3        2           22.63
+      2  LOWCOL         15       14        1      3/3        2           22.63
+      3  HICOL          58       60        1      3/3        8           51.22
+      4  HICOL          63       61        1      3/3        8           51.22
+      5  MIDCOL         34       35        1      3/3        5           32.25
+      6  MIDCOL         39       38        1      3/3        5           32.25
+      7  LOWBRC2        15       31        1      3/3        5           48.17
+      8  HIBRAC2        63       47        1      3/3        6           48.17
+      9  LOWBRC2        10       26        1      3/3        5           48.17
+      10  HIBRAC1        58       50        1      3/3        2           18.87                                                        
+   LEVEL    /------------------ELEMENT TYPE-----------------/
+   ID          COLUMN      BEAM     BRACE     PANEL     FLOOR
+   HITRIM       0.000     0.052     0.000     0.000     0.105
+   HICOL        0.001     0.241     0.014     0.000     0.175
+   HIBRAC1      0.003     0.035     0.003     0.000     0.140
+   HIBRAC2      0.007     0.088     0.007     0.000     0.350
+   MIDCOL       0.017     0.360     0.012     0.000     0.561
+   LOWBRC2      0.014     0.088     0.014     0.000     0.350
+   LOWBRC1      0.006     0.035     0.000     0.000     0.140
+   LOWCOL       0.009     0.241     0.006     0.000     0.175
+   LOWTRIM      0.033     0.052     0.000     0.000     0.105
+   LOWBC1       0.061     0.000     0.037     0.000     0.000
+   LOWBC2       0.142     0.000     0.014     0.000     0.000
+   BASELINE     0.109     0.000     0.000     0.000     0.000
+   TOTALS   0.401E+00 0.119E+01 0.106E+00 0.000E+00 0.210E+01            
+   CARPORT                                                               
+   SEISMIC ANALYSIS                                                      
+   DIAPHRAGM MASS DATA
+   RESULTANTS OF STORY & TRIBUTARY ELEMENT MASSES
+   STORY     DIAPHRAGM   DIAPHRAGM   DIAPHRAGM   DIAPHRAGM   DIAPHRAGM
+   LEVEL        NUMBER        MASS         MMI         X-M         Y-M
+   HITRIM  
+                     1       0.000  0.3774E+01      126.00      240.00
+   HICOL   
+                     1       0.001  0.9170E+01      126.00      216.00
+   HIBRAC1 
+                     1       0.000  0.4748E+01      124.59      200.25
+   HIBRAC2 
+                     1       0.001  0.1189E+02      127.44      184.49
+   MIDCOL  
+                     1       0.002  0.2315E+02      125.73      121.40
+   LOWBRC2 
+                     1       0.001  0.1273E+02      126.00       59.34
+   LOWBRC1 
+                     1       0.000  0.5014E+01      126.00       43.93
+   LOWCOL  
+                     1       0.001  0.9719E+01      126.00       26.32
+   LOWTRIM 
+                     1       0.000  0.6148E+01      126.00       20.99
+   LOWBC1  
+                     1       0.000  0.3905E+01      132.70      134.66
+   LOWBC2  
+                     1       0.000  0.6311E+01      126.00      111.62
+   CARPORT                                                               
+   SEISMIC ANALYSIS                                                      
+   STATIC SEISMIC LOAD CALCULATION DATA . . .  
+   UNIFORM BUILDING CODE 1994                  
+   UBC ZONE FACTOR (Z)-------------------------      0.40
+   UBC IMPORTANCE FACTOR (I)-------------------      1.00
+   UBC SITE COEFFICIENT (S) -------------------      1.20
+   LOAD CONDITION A (X-DIRECTION) . . .        
+   PERIOD OF PREDOMINANT X STRUCTURAL MODE-----     0.500
+   UBC (METHOD A) PERIOD FOR X DIRECTION-------     0.500
+   UBC STRUCTURAL SYSTEM COEFFICIENT (RW)------     4.000
+   TOP    LEVEL OF TRIANGULAR DISTRIBUTION-----  HITRIM  
+   BOTTOM LEVEL OF TRIANGULAR DISTRIBUTION-----  BASELINE
+   LOAD CONDITION B (Y-DIRECTION) . . .        
+   PERIOD OF PREDOMINANT Y STRUCTURAL MODE-----     0.500
+   UBC (METHOD A) PERIOD FOR Y DIRECTION-------     0.500
+   UBC STRUCTURAL SYSTEM COEFFICIENT (RW)------     4.000
+   TOP    LEVEL OF TRIANGULAR DISTRIBUTION-----  HITRIM  
+   BOTTOM LEVEL OF TRIANGULAR DISTRIBUTION-----  BASELINE
+   ADDITIONAL STORY ECCENTRICITIES . . .
+   LEVEL           EYA        EXB
+   HITRIM         0.00       0.00
+   HICOL          0.00       0.00
+   HIBRAC1        0.00       0.00
+   HIBRAC2        0.00       0.00
+   MIDCOL         0.00       0.00
+   LOWBRC2        0.00       0.00
+   LOWBRC1        0.00       0.00
+   LOWCOL         0.00       0.00
+   LOWTRIM        0.00       0.00
+   LOWBC1         0.00       0.00
+   LOWBC2         0.00       0.00
+   CARPORT                                                               
+   SEISMIC ANALYSIS                                                      
+   UBC '94 SEISMIC LOADS FOR DIRECTION   X
+   V = ZICW/RW,   C = 1.25S/T**(2/3)           
+   T =    0.5000
+   Z =    0.4000
+   S =    1.2000
+   I =    1.0000
+   C =    2.3811
+   RW=    4.0000
+   W =       3.7
+   V =    0.2381W
+      =      0.89
+   FT=      0.00
+   CARPORT                                                               
+   SEISMIC ANALYSIS                                                      
+   UBC '94 SEISMIC LOADS FOR DIRECTION   Y
+   V = ZICW/RW,   C = 1.25S/T**(2/3)           
+   T =    0.5000
+   Z =    0.4000
+   S =    1.2000
+   I =    1.0000
+   C =    2.3811
+   RW=    4.0000
+   W =       3.7
+   V =    0.2381W
+      =      0.89
+   FT=      0.00
+   CARPORT                                                               
+   SEISMIC ANALYSIS                                                      
+   STRUCTURAL LATERAL LOAD CONDITIONS          
+   AS ADJUSTED BY CODE SEISMIC REQUIREMENTS    
+   STRUCTURAL LATERAL LOAD CONDITION A (X-DIRECTION) FOR DIAPHRAGM     1
+   LEVEL             FX          FY           X           Y
+   HITRIM          0.05        0.00      126.00      240.00
+   HICOL           0.12        0.00      126.00      216.00
+   HIBRAC1         0.05        0.00      124.59      200.25
+   HIBRAC2         0.12        0.00      127.44      184.49
+   MIDCOL          0.23        0.00      125.73      121.40
+   LOWBRC2         0.11        0.00      126.00       59.34
+   LOWBRC1         0.04        0.00      126.00       43.93
+   LOWCOL          0.09        0.00      126.00       26.32
+   LOWTRIM         0.04        0.00      126.00       20.99
+   LOWBC1          0.02        0.00      132.70      134.66
+   LOWBC2          0.02        0.00      126.00      111.62
+   CARPORT                                                               
+   STRUCTURAL LATERAL LOAD CONDITION B (Y-DIRECTION) FOR DIAPHRAGM     1
+   LEVEL             FX          FY           X           Y
+   HITRIM          0.00        0.05      126.00      240.00
+   HICOL           0.00        0.12      126.00      216.00
+   HIBRAC1         0.00        0.05      124.59      200.25
+   HIBRAC2         0.00        0.12      127.44      184.49
+   MIDCOL          0.00        0.23      125.73      121.40
+   LOWBRC2         0.00        0.11      126.00       59.34
+   LOWBRC1         0.00        0.04      126.00       43.93
+   LOWCOL          0.00        0.09      126.00       26.32
+   LOWTRIM         0.00        0.04      126.00       20.99
+   LOWBC1          0.00        0.02      132.70      134.66
+   LOWBC2          0.00        0.02      126.00      111.62
+   CARPORT                                                               
+   STRUCTURAL LATERAL LOAD CONDITION C (ROTATION) FOR DIAPHRAGM     1
+   LEVEL             MZ
+   HITRIM          0.00
+   HICOL           0.00
+   HIBRAC1         0.00
+   HIBRAC2         0.00
+   MIDCOL          0.00
+   LOWBRC2         0.00
+   LOWBRC1         0.00
+   LOWCOL          0.00
+   LOWTRIM         0.00
+   LOWBC1          0.00
+   LOWBC2          0.00
