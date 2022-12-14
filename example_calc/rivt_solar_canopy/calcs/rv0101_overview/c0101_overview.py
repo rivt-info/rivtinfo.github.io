@@ -1,11 +1,10 @@
 #! python
 # %%
-import rivtcalc.calc as rv
+import rivt.rivtapi as rv
 
 rv.R(
-    """[01]_ Summary
+    """ Summary | Overview | none | 1
 
-    [readme]__ 
     The project includes renovations, repairs and alterations to
     improve the function and seismic resistance of a single story, wood framed
     residence with an attached car port and under-house storage space.
@@ -17,19 +16,11 @@ rv.R(
     carport framing and residence foundation walls. The work did not
     change the building foot print.
     
-    || output | term | rivt | Overview - Residence Renovations | 1 | del
-    || project | project_data.syk | 60,L | [:]
-    || search | keywords.txt | calclist.txt
-    || attach | front | calc_cover.pdf
-    || attach | back  | append1.pdf
-    || attach | back  | append2.pdf
-    || attach | back  | docstrings
-    || report | toc | coverpage.pdf | reportconfig.txt 
     """
 )
 # %%
 rv.I(
-    """[02]_ Background
+    """ Background | default
     
     The structural calculations address remodeling, repair and strengthening of
     a single family residence.
