@@ -1,5 +1,0 @@
-section: [1] JAM - General
-section: [2] JAM sub - Electrical
-section: [3] JAM sub - Plumbing and Piping
-section: [4] JAM and JAM sub - Living Room Window
-section: [5] By Owner

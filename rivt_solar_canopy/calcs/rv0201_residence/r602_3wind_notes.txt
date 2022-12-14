@@ -1,0 +1,13 @@
+    [1] Panel strength axis parallel or perpendicular to supports. Three-ply plywood 
+    sheathing with studs spaced more than 16 inches on center shall be applied with	
+    panel strength axis perpendicular to supports.	
+
+    [2] Table is based on wind pressures acting toward and away from building surfaces 
+    in accordance with Section R301.2. Lateral bracing requirements shall be in	
+    accordance with Section 8602.10.	
+
+    [3] Wood structural panels with span ratings of Wall-16 or Wall-24 shall be permitted 
+    as an alternate to panels with a 24/0 span rating. Plywood siding rated 16 o.c. or 
+    24 o.c. shall be permitted as an alternate to panels with a 24/16 span rating. 
+    Wall-16 and Plywood siding 16 o.c. shall be used with studs spaced not more than 
+    16 inches on center.	
