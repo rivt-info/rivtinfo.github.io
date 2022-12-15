@@ -2,8 +2,7 @@
 # %%
 import rivt.rivtapi as rv
 
-rv.R(
-    """ Summary | Overview | none | 1
+rv.R("""Summary | Calculation Overview | none | 1
 
     The project includes renovations, repairs and alterations to
     improve the function and seismic resistance of a single story, wood framed
@@ -16,11 +15,9 @@ rv.R(
     carport framing and residence foundation walls. The work did not
     change the building foot print.
     
-    """
-)
+    """)
 # %%
-rv.I(
-    """ Background | default
+rv.I(""" Background | default
     
     The structural calculations address remodeling, repair and strengthening of
     a single family residence.
@@ -56,11 +53,9 @@ rv.I(
     || insert | image1 | house01.jpg | 60,r 
     Residence viewed from Loring Drive [f]_
 
-    """
-)
+    """)
 # %%
-rv.I(
-    """[03]_ Building Codes and Site
+rv.I("""Building Codes and Site | default
     
     The residence is under the jurisdiction of Marin County, California which
     uses the 2019 California Building Code and the 2019 California
@@ -70,45 +65,36 @@ rv.I(
     
     || image | site01.jpg, site02.jpg | 35,35
 
-    Site map - Marin County web site [f]_
-    Site map - Google Earth [f]_
+    Site map - Marin County web site _[f]
+    Site map - Google Earth _[f]
 
     [page]_
     
-    """
-)
-rv.V(
-    """[04]_  Drawing List 
+    """)
+rv.V("""Drawing List
  
     || insert | text | drawing_list.txt | literal
 
     || inset | image | residence01.jpg | 90
-    Residence and Carport [f]_
+    Residence and Carport _[f]
 
     [page]_
 
-    """
-)
-rv.V(
-    """[05]_  References 
+    """)
+rv.V("""References 
  
     || insert | text | references.txt | literal
 
     [page]_
 
-    """
-)
-rv.T(
-    """[06]_  Math and Text Abbreviations 
+    """)
+rv.T("""Math and Text Abbreviations 
  
     || insert | text | abbrev_all.txt | raw
 
-    """
-)
-rv.X(
-    """[06]_  Math and Text Abbreviations 
+    """)
+rv.X(""" Math and Text Abbreviations 
  
     || insert | text | abbrev_all.txt | raw
 
-    """
-)
+    """)
