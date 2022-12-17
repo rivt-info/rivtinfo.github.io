@@ -1,0 +1,9 @@
+{
+    "python.formatting.provider": "yapf",
+    "cSpell.enabled": false,
+    "inline-bookmarks.default.words.blue": "rv.R",
+    "inline-bookmarks.default.words.green": "rv.I",
+    "inline-bookmarks.default.words.purple": "rv.V",
+    "inline-bookmarks.default.words.red": "rv.T",
+    "inline-bookmarks.view.showVisibleFilesOnly": true
+}
