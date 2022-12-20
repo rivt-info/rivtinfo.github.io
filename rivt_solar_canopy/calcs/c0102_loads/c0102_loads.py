@@ -1,9 +1,7 @@
 #! python
-import rivt.rivtapi as rv
-
+import rivtcalc.calc as rc
 # %%
-rv.V(
-    """[01]_  Load Combinations 
+rc.V("""[01]_  Load Combinations 
  
     Basic loads and load combinations are derived from the California Building
     and Residential Codes.
@@ -14,11 +12,9 @@ rv.V(
 
     [page]_
     
-    """
-)
+    """)
 # %%
-rc.V(
-    """[02]_  Gravity Loads and Seismic Mass
+rc.V("""[02]_  Gravity Loads and Seismic Mass
  
     || config | nosub | 2,2
     
@@ -56,11 +52,9 @@ rc.V(
     Total building weight [e]_
     totwt1 = rfwt1 + flrwt1 + partwt1 + exwallwt1       |LBF, KN
     
-    """
-)
+    """)
 # %%
-rc.V(
-    """[03]_  Material Densities - Seismic Models
+rc.V("""[03]_  Material Densities - Seismic Models
 
     Because the T&G roof is relatively more flexible, the effective floor load
     for seismic models is calculated as the sum of the floor and all of the
@@ -76,5 +70,4 @@ rc.V(
 
     ewalldens1 = extwalldl1/(0.5*IN)                    |PCI, KNCM
     
-    """
-)
+    """)
