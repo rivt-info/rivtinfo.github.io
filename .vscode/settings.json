@@ -17,4 +17,7 @@
         "tab.activeBackground": "#2a2570",
         "tab.inactiveBackground": "#505052"
     },
+    "ShortcutMenuBar.showCommands": true,
+    "ShortcutMenuBar.openSettings": true,
+    "ShortcutMenuBar.quickOpen": false,
 }
