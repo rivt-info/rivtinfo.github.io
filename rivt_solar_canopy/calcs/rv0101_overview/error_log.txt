@@ -1,2 +1,0 @@
-12-17 11:20 root         INFO     calc path: rivt_solar_canopy\docs\d00_docs
-12-17 11:20 root         INFO     log path: rivtDocs\rivt_solar_canopy\docs\d00_docs
