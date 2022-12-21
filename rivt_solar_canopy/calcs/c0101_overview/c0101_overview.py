@@ -2,7 +2,7 @@
 # %%
 import rivt.rivtapi as rv
 
-rv.R("""[01]_ Summary
+rv.R("""Summary | 
 
     The project includes renovations, repairs and alterations to
     improve the function and seismic resistance of a single story, wood framed

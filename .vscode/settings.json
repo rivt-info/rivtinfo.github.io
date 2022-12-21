@@ -20,4 +20,5 @@
     "ShortcutMenuBar.showCommands": true,
     "ShortcutMenuBar.openSettings": true,
     "ShortcutMenuBar.quickOpen": false,
+    "editor.formatOnSave": true,
 }
