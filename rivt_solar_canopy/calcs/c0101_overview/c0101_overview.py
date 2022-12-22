@@ -2,7 +2,7 @@
 # %%
 import rivt.rivtapi as rv
 
-rv.R("""Summary | 
+rv.R("""  Summary | 
 
     The project includes renovations, repairs and alterations to
     improve the function and seismic resistance of a single story, wood framed
@@ -52,7 +52,7 @@ rv.I("""[02]_ Background
 
     || insert | image1 | house01.jpg | 60,r 
     Residence viewed from Loring Drive [f]_
-
+    
     """)
 # %%
 rv.I("""[03]_ Building Codes and Site
