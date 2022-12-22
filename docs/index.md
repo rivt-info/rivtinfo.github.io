@@ -5,8 +5,8 @@ layout: default
 
 <table>
 <colgroup>
-  <col width="60%" />
-  <col width="30%" />
+  <col width="50%" />
+  <col width="50%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -17,7 +17,7 @@ layout: default
 <tbody>
 <tr>
   <td style="text-align: center"><img src="./assets/img/codedocs09.png" width="175" height="45" /></td>
-  <td style="text-align: center"><a href="https://rivtcode.net"> <img src="./assets/img/rivt01.png" width="100" height="35" /></a></td>
+  <td style="text-align: center"><a href="https://rivtcode.net"> <img src="./assets/img/rivt01.png" width="175" height="45" /></a></td>
 </tr>
 </tbody>
 </table>
