@@ -2,19 +2,19 @@
 layout: default
 ---
 
-<img src="./assets/img/manual_logo01.png" width="300" height="80" />
 
-share calcs anywhere, anytime
+<img src="./assets/img/codedocs09.png" width="300" height="80" />
+
+**rivt User Manual**
+
+<img src="./assets/img/rivt01.png" width="300" height="80" />
+
+[**rivt** source code documentation](https://rivtcode.net)
+
 
 ---------------------------
 
-**rivtlib code documentation menu (left or upper right)**
-
-[link to **rivtlib** code on Github](https://github.com/ShareCalcs/rivtlib)
-
-[link to **rivt** user manual](https://github.com/ShareCalcs/rivtdocs)
-
-[link to **rivt** installers](https://github.com/ShareCalcs/rivtdocs)
+**share calcs anywhere, anytime**
 
 ## Introduction
 
