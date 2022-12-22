@@ -3,13 +3,24 @@ layout: default
 ---
 
 
-<img src="./assets/img/codedocs09.png" width="175" height="45" />
-
-**rivt User Manual**
-
-<img src="./assets/img/rivt01.png" width="100" height="35" />
-
-[**rivt** source code](https://rivtcode.net)
+<table>
+<colgroup>
+  <col width="60%" />
+  <col width="30%" />
+</colgroup>
+<thead>
+<tr class="header">
+  <th style="text-align: center">rivt User Manual</th>
+  <th style="text-align: center">rivt source code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align: center"><img src="./assets/img/codedocs09.png" width="175" height="45" /></td>
+  <td style="text-align: center"><a href="https://rivtcode.net"> <img src="./assets/img/rivt01.png" width="100" height="35" /></a></td>
+</tr>
+</tbody>
+</table>
 
 ---------------------------
 
