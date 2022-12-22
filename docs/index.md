@@ -3,13 +3,13 @@ layout: default
 ---
 
 
-<img src="./assets/img/codedocs09.png" width="200" height="50" />
+<img src="./assets/img/codedocs09.png" width="175" height="45" />
 
 **rivt User Manual**
 
-<img src="./assets/img/rivt01.png" width="200" height="50" />
+<img src="./assets/img/rivt01.png" width="100" height="35" />
 
-[**rivt** source code documentation](https://rivtcode.net)
+[**rivt** source code](https://rivtcode.net)
 
 ---------------------------
 
