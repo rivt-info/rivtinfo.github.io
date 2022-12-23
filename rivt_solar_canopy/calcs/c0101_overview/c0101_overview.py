@@ -4,24 +4,24 @@ import rivt.rivtapi as rv
 
 rv.R("""Overview | Solar Canopy - Loads | inter | 1
 
-    For building permit purposes this report documents the structural design of
-    a solar canopy located on a residential site in the City of Larkspur, County
-    of Marin, California. The project includes the structural design of a
-    concrete slab and stem wall, a steel tube frame, and attachment of solar
-    panels to the frame.
+    This permitting document describes the structural design of a solar canopy
+    located on a residential site in the City of Larkspur, County of Marin,
+    California. The document includes the structural design of a concrete slab
+    and stem wall, a steel tube frame, and attachment of solar panels to the
+    frame.
     
+    || project | proj_info.txt | default
+
     The report is divided into four divisions:
 
-    01] Loads
-    02] Foundation
-    03] Frame
-    04] Panel clips
+    - 01 Loads
+    - 02 Foundation
+    - 03 Frame
+    - 04 Panel clips
 
-    || project | proj_info.txt | default
-    
     """)
 # %%
-rv.I(""" Building Codes and Site | default
+rv.I("""-Building Codes and Site | default
     
     The canopy is under the approval jurisdiction of the City of Fairfax,
     California which adopted the 2019 California Building Code [CBC] and the
@@ -36,6 +36,7 @@ rv.I(""" Building Codes and Site | default
     Site map - Google Earth [f]_
 
     _[new]
+    
     
     """)
 
@@ -117,7 +118,8 @@ rv.V("""References
     [page]_
 
     """)
-rv.V(""" Drawing List 
+
+rv.V("""-Drawing List 
  
     || insert | text | drawing_list.txt | literal
 
@@ -128,7 +130,7 @@ rv.V(""" Drawing List
 
     """)
 
-rv.T(""" Math and Text Abbreviations 
+rv.T("""-Math and Text Abbreviations 
  
     || insert | text | abbrev_all.txt | raw
 
