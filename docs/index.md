@@ -19,8 +19,7 @@ share calcs anywhere, anytime
 ## Introduction
 
 Recent progress in open source software tools can be applied to reducing
-barriers to sharing and collaborating on engineering calculations. They provide
-an opportunity to improve production efficiency and quality. 
+barriers to sharing and collaborating on document preparation. In particular there is a need for simpler sharing of engineering calculation documents. 
 
 Because most engineering technologies are changing slowly, design procedures are
 often fixed in codes for decades. The heart of engineering work lies in
@@ -54,11 +53,11 @@ promote sharing.
 
 ## **rivt** Overview
 
-**rivt** is an integration of three open source programs (listed below). It
-implements **rivtText**, a plain text, human readable, calculation markup
-language derived from restructuredText.  **rivtlib** is the Python library that
-processes **rivtText**. **Github** repositories are the primary platform used to
-search and distribute **rivt** calcs.
+**rivtDoc** is an integration of four open source programs and technologies
+(listed below). It implements **rivtText**, a plain text, human readable,
+calculation markup language derived from restructuredText. **rivt** is the
+Python library that processes **rivtText**. **Github** repositories are the
+primary platform used to search and distribute **rivt** calcs.
 
 **rivt** can be installed on the desktop or run in the cloud.  The absolute
 minimum software needed is a Python installation with 8 additional libraries and
@@ -68,15 +67,16 @@ and formal document production includes:
 1. Python 3.8 or above + libraries
 2. VSCode + extensions
 3. LaTeX
+4. Github
 
-**rivt** installers are available for every OS platforms.  It can also be run in
-the cloud using GitHub CodeSpaces (or other cloud service providers).
+**rivtDoc** installers are available for every OS platforms. It can also be run
+in the cloud using GitHub CodeSpaces (or other cloud service providers).
 Installation details are provided in the user manual ___here ____.
 
 
-## **rivtlib** Overview
+## **rivt** Overview
 
-**rivtlib** is a Python package that provides a calculation API for **rivt**.
+**rivt** is a Python package that provides a calculation API for **rivtText**.
 The API is file and folder based with a specified folder and naming convention.
 The file, folder and prefix naming (italic shows optional) divide the
 calculation report into modular, easily edited and shareable components. The
@@ -85,74 +85,65 @@ are shown bracketed and notes are in parenthesis.
 
 **rivt Folder Structure**
 
-- **[rivt*_user_project_name*]** (user project_name)
+ **[rivt*_user_project_name*]** (user project_name)
     - **[text]**
         - **[rv00*_user_config_name*]** (calc configuration data)
             - units.py
-        - **[rv01*_user_calc_division_name1*]**  (folder report division name)
-            - *rv0101*_calc_name1.py (calc file name) 
-            - *rv0102*_calc_name2.py
-            - *rv0101*_calc_name1.txt (text calc output file)
-            - *rv0102*_calc_name2.txt
+            - config.py
+        - **[rv0101*_user_calc_division_name*]**  (folder report division name)
+            - *r0101*_calc_name.py (calc file name) 
+            - README.txt (text calc output file)
             - chart.csv (text file used in calc)
             - functions.py (function file used in calc)
-         - **[rv02*_user_calc_division_name2*]**
-            - rv0201_calc_name3.py
-            - rv0202_calc_name4.py
-            - rv0201_calc_name3.txt
-            - rv0202_calc_name4.txt
+        - **[rv0102*_user_calc_division_name*]** 
+            - *r0102*_calc_name.py
+            - README.txt
+            - chart1.csv 
+            - functions1.py 
+         - **[rv0201*_user_calc_division_name*]**
+            - *r0201*_calc_name.py
+            - README.txt
             - paragraph.txt
-   - **[docs]**
-        - **[d00]** (project and report configuration data)
+   - **[binary]**
+        - **[b00]** (report configuration data)
             - pdf_style.sty
-            - config.txt
-            - project_data.xlsx
-        - **[d01]**
+            - project_data.syk
+        - **[b01]**
             - image1.jpg
-        - **[d02]**
+        - **[b02]**
             - image2.jpg
             - attachment.pdf    
-        - **[html]** (html calc output files)
-            - **[resources]**
-                - image1.png
-                - image2.png
-            - index.html
-            - d0101_gravity.html
-            - d0102_wind.html
-            - d0201_gravity.html
-            - d0202_wind.html
-        - **[pdf]** (pdf calc output files)
-            - d0101_gravity.pdf
-            - d0102_wind.pdf
-            - d0201_floor.pdf
-            - d0202_roof.pdf
-            - report.pdf
-    - **[files]** (additional user resource files)
-        - **[*user_folder_name*]**
-            - info.txt 
+    - **[report]** (pdf output files)
+        - r0101_gravity.pdf
+        - r0102_wind.pdf
+        - r0201_floor.pdf
+        - r0202_roof.pdf
+        - report.pdf
+    - **[site]** (html calc output files)
+        - **[resources]**
+            - image1.png
+            - image2.png
+        - index.html
+        - s0101_gravity.html
+        - s0102_wind.html
+        - s0201_gravity.html
+        - s0202_wind.html
 
-The three top-level folder names (text, docs and files) are required. Other file
-names are user determined using the specified prefixes. Underscores that
-separate words in file and folder names are stripped out when used as calc and
-division names in the report. The API is designed so that only files in the text
-folder are uploaded for version control and sharing. They constitute the
+The four top-level folder names (text, binary, report and site) are required.
+Other file names are user determined using the specified prefixes. Underscores
+that separate words in file and folder names are stripped out when used as calc
+and division names in the report. The API is designed so that only files in the
+text folder are uploaded for version control and sharing. They constitute the
 essential core of the calculation - the text, equations, functions and tables.
 Files in the docs folder are not shared and are typically binary files such as
 images, pdf attachments and proprietary data (e.g. client contact information
 and costs).
 
-Files File type	File description rivt file (.py) input model written in RivtText
-calc (.txt)	formatted UTF-8 output, written to screen and file doc (.pdf or
-.html)	formatted HTML or PDF calc output written to a file report (.pdf)
-collated PDF docs written to a file API Functions The rivtlib API consists of
-five functions that take a rivt-string as input (only four produce output) and a
-function that controls the output format. The library is imported with:
-
 A rivt file is a Python file that imports rivtlib and calls functions on
 rivt-strings. Rivt-strings are free-form plain text strings enclosed in triple
 quotes that may include commands and tags defining the calculation.
  
-rvcddnn_filename.py where dd is the division and folder number and ddnn is the
+rddnn_filename.py where dd is the division and folder number and ddnn is the
 calc number.  The two subfolders under the project folder are calcs and docs.
 The calcs folder includes all of the plain text input files and output calc
 files (.txt and .tex). The docs folder includes all of the binary inputs (i.e.
