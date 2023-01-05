@@ -1,5 +1,5 @@
 {
-    "python.formatting.provider": "yapf",
+    "python.formatting.provider": "autopep8",
     "cSpell.enabled": false,
     "inline-bookmarks.default.words.blue": "rv.R",
     "inline-bookmarks.default.words.green": "rv.I",
@@ -21,4 +21,27 @@
     "ShortcutMenuBar.openSettings": true,
     "ShortcutMenuBar.quickOpen": false,
     "editor.formatOnSave": true,
+<<<<<<< HEAD
+=======
+    "fsdeploy.nodes": [
+        {
+            "source": "/git/solar_canopy/rivtManual",
+            "target": "/Users/rodhh/OneDrive/StL_projects/proj_2020/projects_2022/solar_canopy/rivtManual",
+            "include": "**/*.*",
+            "exclude": "*.git",
+            "deleteTargetOnDeploy": true,
+        }
+    ],
+    "fsdeploy.deployOnSave": true,
+    "fsdeploy.deployWorkspaceOnSave": true,
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.quickSuggestions": {
+        "other": "off",
+        "comments": "off",
+        "strings": "off"
+    },
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.parameterHints.enabled": false,
+>>>>>>> 33e4c4b22ad12346920c40f33e327fbd6391b4c8
 }
