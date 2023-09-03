@@ -1,2 +1,2 @@
-       <img class="logo" src="_static/img/riv02.png" alt="rivt"><h1>  &nbsp rivt </h1>
+       <img class="logo" src="_static/img/riv02.png">
    
