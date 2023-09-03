@@ -1,5 +1,6 @@
 
-<h1>rivt User Manual<\h1>
+rivt User Manual
+================
 
 .. toctree::
    :maxdepth: 3
