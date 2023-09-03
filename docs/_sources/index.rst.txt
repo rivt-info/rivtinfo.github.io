@@ -1,4 +1,5 @@
 
+rivt User Manual
 
 .. toctree::
    :maxdepth: 3
