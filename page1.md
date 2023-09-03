@@ -3,10 +3,10 @@
 :alt: rivt logo
 :target: index.html
 :width: 125px
-:align: center
+:align: left
 ```
 
-**<p style="text-align: center;"><a href="index.html"> HOME </a></p>**
+**<p style="text-align: left;"><a href="index.html"> HOME </a></p>**
 
 # **rivt**
 
