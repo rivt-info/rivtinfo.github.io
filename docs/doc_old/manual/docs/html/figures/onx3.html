@@ -1,0 +1,1991 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2D2D2D" />
+  
+  <title>rivt :: [![on-c-e is an open source project started by StructureLabs. The project was initiated to stimulate design variety and creativity in research and practice by simplifying the composition, modification, review and sharing of structural engineering calculations. Features</title>
+  
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../../../../_static/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../../../../_static/img/favicon-16x16.png">
+  <link rel="index" title="Index" href="../../../../../genindex.html"/>
+
+  <link rel="stylesheet" href="../../../../../_static/css/insegel.css"/>
+  <link rel="stylesheet" href="../../../../../_static/css/custom.css"/>
+
+  <script type="text/javascript" id="documentation_options" data-url_root="../../../../../" src="../../../../../_static/documentation_options.js"></script>
+      <script type="text/javascript" src="../../../../../_static/documentation_options.js"></script>
+      <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../../../../_static/sphinx_highlight.js"></script>
+  
+
+  <script src="https://email.tl.fortawesome.com/c/eJxNjUEOgyAQAF8jR7Kw6wIHDh7sP1Cw2mgxgmn6-3JsMqc5zEQfE8dkxOY1KKMUOI3ACFKRJpSW2AAp7ontYIaxI6i7XPJVwyeVfCQ550Os3jLrGSNOLgbdAy6s0PBk2TFNjEbsfq31LB0OnX407pJa5v2faRadwSW63mn5KuLyR9j2tgx3zecanl-55R_-jjPs"></script> 
+</head>
+
+<body>
+  <div id="insegel-container">
+    <header>
+      <div id="logo-container">
+          
+          <h1>rivt</h1>
+          
+      </div>
+      <div id="project-container">
+        
+        write | assemble | share
+        
+      </div>
+    </header>
+
+    <div id="content-container">
+
+      <div id="main-content-container">
+        <div id="main-content" role="main">
+          
+  <p><img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image001.jpg" /></p>
+<p>** **</p>
+<p>** **</p>
+<p>** **</p>
+<p><strong>ON-C-E</strong></p>
+<p><img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image002.png" /><strong>O</strong>pe<strong>N</strong> <strong>C</strong>alculation <strong>E</strong>nvironment
+for<br />
+Structural Calculations and Documents</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p>+——————–+——————–+——————–+——————–+
+| <strong>USER MANUAL and  |
+| SPECIFICATION</strong>    |
+|                    |
+| ** **              |
+|                    |
+| ** **              |
+|                    |
+| ** **              |
++——————–+——————–+——————–+——————–+</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p><img alt="Structural Model" src="doc_old/manual/docs/html/figures/onx2_files/image003.png" /></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p>\</p>
+<section id="on-c-e-is-an-open-source-project-started-by-structurelabs-the-project-was-initiated-to-stimulate-design-variety-and-creativity-in-research-and-practice-by-simplifying-the-composition-modification-review-and-sharing-of-structural-engineering-calculations-features">
+<h1>[![on-c-e is an open source project started by StructureLabs. The
+project was initiated to stimulate design variety and creativity in
+research and practice by simplifying the composition, modification,
+review and sharing of structural engineering calculations.
+Features<a class="headerlink" href="#on-c-e-is-an-open-source-project-started-by-structurelabs-the-project-was-initiated-to-stimulate-design-variety-and-creativity-in-research-and-practice-by-simplifying-the-composition-modification-review-and-sharing-of-structural-engineering-calculations-features" title="Link to this heading">¶</a></h1>
+<p>implements a simple, readable, natural markup language</p>
+<ul class="simple">
+<li><p>produces
+clear, explicit, organized calculation documents</p></li>
+<li><p>facilitates sharing
+and reuse through web databases</p></li>
+<li><p>runs on workstations, web platforms
+and mobile devices</p></li>
+<li><p>uses Python engineering and scientific libraries</p></li>
+<li><p>integrates with other structural engineering programs</p></li>
+</ul>
+<p>](onx2_files/image004.png)](http://www.structurelabs.com/)</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p>![“Simplicity is the ultimate sophistication.”
+Leonardo da Vinci</p>
+<p>](onx2_files/image005.png)</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p>+————————————————————————–+
+|                                                                          |
++————————————————————————–+</p>
+<p></p>
+<p><strong>CONTENTS</strong></p>
+<p></p>
+<p><a class="reference internal" href="#_Toc395008070"><span class="xref myst">1….. Introduction   5</span></a></p>
+<p><a class="reference internal" href="#_Toc395008071"><span class="xref myst">2….. Add a simple template to once-db   6</span></a></p>
+<p><a class="reference internal" href="#_Toc395008072"><span class="xref myst">3….. Generate a calc from a template   7</span></a></p>
+<p><a class="reference internal" href="#_Toc395008073"><span class="xref myst">4….. on-c-e Overview    8</span></a></p>
+<p><a class="reference internal" href="#_Toc395008074"><span class="xref myst">5….. Files and Paths  9</span></a></p>
+<p><a class="reference internal" href="#_Toc395008075"><span class="xref myst">6….. Model Operations  11</span></a></p>
+<p><a class="reference internal" href="#_Toc395008076"><span class="xref myst">7….. Project Operations  11</span></a></p>
+<p><a class="reference internal" href="#_Toc395008077"><span class="xref myst">8. … Web Resources  13</span></a></p>
+<p><a class="reference internal" href="#_Toc395008078"><span class="xref myst">9. … Interactive Analysis  15</span></a></p>
+<p><a class="reference internal" href="#_Toc395008079"><span class="xref myst">Appendix A – Example Model and Calc   17</span></a></p>
+<p><a class="reference internal" href="#_Toc395008080"><span class="xref myst">Appendix B – Operations  23</span></a></p>
+<p><a class="reference internal" href="#_Toc395008081"><span class="xref myst">Appendix C – Komodo Edit   30</span></a></p>
+<p><a class="reference internal" href="#_Toc395008082"><span class="xref myst">Appendix D – Linux, Windows, Mac, iOS, Android   32</span></a></p>
+<p><a class="reference internal" href="#_Toc395008083"><span class="xref myst">Appendix E – Wakari, PythonAnywhere   36</span></a></p>
+<p><a class="reference internal" href="#_Toc395008084"><span class="xref myst">Appendix F – Minimum Programs and Libraries  38</span></a></p>
+<p><a class="reference internal" href="#_Toc395008085"><span class="xref myst">Appendix G – Licenses  39</span></a></p>
+<p><a class="reference internal" href="#_Toc395008086"><span class="xref myst">Appendix H – Security and Namespaces  41</span></a></p>
+<p><a class="reference internal" href="#_Toc395008087"><span class="xref myst">Appendix I – Examples  42</span></a></p>
+<p><a class="reference internal" href="#_Toc395008088"><span class="xref myst">Index   43</span></a></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p><strong>Figures</strong></p>
+<p>** **</p>
+<p>** **</p>
+<p><a class="reference internal" href="#_Toc395008056"><span class="xref myst"><strong>Figure 1. Program and interface structure</strong>. 5</span></a></p>
+<p><a class="reference internal" href="#_Toc395008057"><span class="xref myst"><strong>Figure 2. Basic environment components</strong>. 9</span></a></p>
+<p><a class="reference internal" href="#once-manual-spec-041_x.docx#_Toc395008058"><span class="xref myst"><strong>Figure 3. Model, calc and project content</strong>
+13</span></a></p>
+<p><a class="reference internal" href="#_Toc395008059"><span class="xref myst"><strong>Figure 4.  Screenshots of equation history in IPython terminal and QT
+shells</strong>. 16</span></a></p>
+<p><a class="reference internal" href="#once-manual-spec-041_x.docx#_Toc395008060"><span class="xref myst"><strong>Figure 5. Example PDF calc</strong>.
+20</span></a></p>
+<p><a class="reference internal" href="#once-manual-spec-041_x.docx#_Toc395008061"><span class="xref myst"><strong>Figure 6. Example PDF calc (continued)</strong>.
+21</span></a></p>
+<p><a class="reference internal" href="#once-manual-spec-041_x.docx#_Toc395008062"><span class="xref myst"><strong>Figure 7. Example PDF calc (continued)</strong>.
+22</span></a></p>
+<p><a class="reference internal" href="#_Toc395008063"><span class="xref myst"><strong>Figure 8. Komodo interface</strong>. 30</span></a></p>
+<p><a class="reference internal" href="#_Toc395008064"><span class="xref myst"><strong>Figure 9.  Notesy screenshot of onceutf calc running on iPhone</strong>.
+33</span></a></p>
+<p><a class="reference internal" href="#_Toc395008065"><span class="xref myst"><strong>Figure 10. DroidEdit screenshot of onceutf calc running on Android
+tablet</strong> 35</span></a></p>
+<p><a class="reference internal" href="#_Toc395008066"><span class="xref myst"><strong>Figure 11. Wakari – terminal and editor in split windows</strong>.
+36</span></a></p>
+<p><a class="reference internal" href="#_Toc395008067"><span class="xref myst"><strong>Figure 12.</strong> <strong>PythonAnywhere – side by side browser windows</strong>.
+37</span></a></p>
+<p><a class="reference internal" href="#_Toc395008068"><span class="xref myst"><strong>Figure 13. http://opensource.org/licenses/MIT</strong>.. 39</span></a></p>
+<p><a class="reference internal" href="#_Toc395008069"><span class="xref myst"><strong>Figure 14. http://creativecommons.org/publicdomain/zero/1.0/</strong>.
+40</span></a></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p><strong>Tables</strong></p>
+<p></p>
+<p></p>
+<p><a class="reference internal" href="#_Toc395008089"><span class="xref myst"><strong>Table 1. Open source components (See Appendices D, E for details)</strong>.
+8</span></a></p>
+<p><a class="reference internal" href="#_Toc395008090"><span class="xref myst"><strong>Table 2. File and folder structure</strong>. 10</span></a></p>
+<p><a class="reference internal" href="#_Toc395008091"><span class="xref myst"><strong>Table 3. Operations summary</strong>. 12</span></a></p>
+<p><a class="reference internal" href="#_Toc395008092"><span class="xref myst"><strong>Table 4. Minimum required versions of programs and libraries</strong>.
+38</span></a></p>
+<p>* *</p>
+<p></p>
+<p>\</p>
+<p>\</p>
+<p></p>
+</section>
+<section id="introduction-style-margin-left-25in-text-indent-25in">
+<h1>1.   Introduction {style=”margin-left:.25in;text-indent:-.25in”}<a class="headerlink" href="#introduction-style-margin-left-25in-text-indent-25in" title="Link to this heading">¶</a></h1>
+<p>**on-c-e (**pronounced once) implements a readable, sequentially
+organized markup language for writing and publishing structural
+engineering calculations.  Calculations are stored in text files called
+<strong>models</strong> or <strong>templates</strong> that describe structural behavior using
+equations, text, tables and figures.  Relative to Mathematica ™, Mathcad
+™ or MATLAB ™ it has several advantages:  it is much easier to use,
+files will never be incompatible, and the program can be freely shared.</p>
+<p>Models generate design or analysis calculations. Templates are similar
+but they do not represent specific designs.  The same model generates
+calculations in two types of formatted documents referred to as
+<strong>calcs</strong> (see Appendices A and H for examples).  A UTF calc is used for
+iterative design and study and is formatted with UTF-8 characters.  It
+is generated instantly and can be easily edited.  A PDF calc includes
+graphics and <strong>LaTeX</strong> math and is used for reports or construction
+documents. It takes a few seconds to generate. Models can interact with
+other models, files and external structural engineering programs to
+produce calcs or input to <strong>IPython notebooks</strong> for interactive
+analysis. Typical models are less than a few hundred lines. Because they
+are text they can be searched and stored in many types of databases. 
+From a software point of view, models are instructions given in a
+structural calculation markup language to <strong>Python scientific and
+engineering libraries</strong> and external programs.</p>
+<p>Calcs may be standalone PDF or UTF-8 files, or combined into a single
+PDF <strong>project calc</strong> file.  Typical calcs are less than one or two dozen
+pages but project calcs can be as large as needed. A project calc is
+defined in a project file that specifies organization, numbering, title
+blocks and table of contents.  From a software point of view, calcs are
+produced by wrapping the <strong>numpy</strong> and <strong>sympy</strong> libraries in a
+structural document formatting language. <strong>PDF</strong> and <strong>project calcs</strong>
+are produced by processing the calc through <strong>reStructuredText</strong>,
+<strong>docutils</strong>, <strong>LaTeX</strong> and <strong>PyPDF2</strong> libraries.</p>
+<p><img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image006.png" />**on-c-e **runs on workstations, web and
+mobile platforms on top of **Python. ** The interface is an
+<strong>Interactive Development Environment</strong> on workstations (Section 4),
+**** a <strong>browser</strong> on web platforms, **** and <strong>Apps</strong> on mobile
+platforms **** (Appendix D).</p>
+<p><strong>Figure</strong> <strong>1. Program and interface structure</strong></p>
+<p>2.    Add a simple template to once-db</p>
+<p>This page describes the simplest approach to adding a template to the
+once-db database. The purpose of the exercise is to gain an initial
+familiarity with the process.</p>
+<p>We will use the template <strong>0001.simple.txt</strong> **** and modify it to make
+a new template. Everything will be done in a browser – no installation
+is needed.</p>
+<p>Step 1.  Go to <a class="reference external" href="http://on-c-e.org">http://on-c-e.org</a>.  Click on **** <a class="reference external" href="http://structurelabs.knackhq.com/oncedb#home/">**  [Download Model
+Templates] **</a>** ** at
+the top of the page.</p>
+<p>Step 2.  Scroll down to <strong>search once-db</strong>, click on the <strong>description</strong>
+dropdown box and select <strong>contains</strong>.  Enter the search term ‘<strong>simple
+example’</strong>.  Click on the <strong>Search</strong> button.  One or more results should
+appear at the bottom of the page.</p>
+<p>Step 3.  Look for the template name <strong>0001.simple.txt</strong> and the
+associated calc names <strong>cal0001.simple.txt</strong> and <strong>cal0001.simple.pdf.</strong>
+Click on the links that begin with <strong>cal</strong> to view the two different
+calc formats in a browser window.</p>
+<p>Step 4.  Select the window for <strong>cal0001.simple.txt.</strong> Press the keys
+CTRL-A or select all of the template text by dragging the mouse.  Press
+CTRL-C or right click in the browser window and select copy to copy the
+text to the clipboard.</p>
+<p>Step 5.  Click on <a class="reference external" href="http://structurelabs.knackhq.com/oncedb#upload-model/">**  [Upload Model
+Templates] **</a> at
+the top of the page.  Scroll down to the box labeled <strong>Template Text</strong>
+and enlarge it by left clicking on the handle in the lower right corner
+and dragging it.  Click in the box and press CTRL-V or right click and
+select paste.  You should now have a copy of the template in the box.</p>
+<p>+————————————————————————–+
+| :                                                                        |
++————————————————————————–+</p>
+<p>+————————————————————————–+
+| :                                                                        |
++————————————————————————–+</p>
+<p>+————————————————————————–+
+| ##### <em><strong>Upload Template</strong></em> {align=”center” style=”text-align:center”}   |
++————————————————————————–+</p>
+<p>+————————————————————————–+
+| ##### <em><strong>Edit Template</strong></em> {align=”center” style=”text-align:center”}     |
++————————————————————————–+</p>
+<p>Step 5.  Read over the template and edit the text, terms, and equations
+to represent your own idea. Maybe you want to change it to a calculation
+of calories or driving time to work. The only rules you need to follow
+are to leave the tags and vertical bars in place and just edit the text
+between them or delete the whole line with the tag. Section 6 provides
+an overview and Appendix B describes what each tag does in more detail.</p>
+<p>When you finish editing the template, type a brief template summary in
+the <strong>Template Summary Description</strong> box above. Include the phrase
+‘<strong>learning template’</strong> in the description. Delete all of the words
+ ‘<strong>example</strong>’  from the template and description (so it doesn’t show up
+in the search).  Don’t worry about the template contents; the learning
+templates will be removed from the database every few days.</p>
+<p></p>
+<p>Step 6.  Click on the **** **  Submit **  button. You should receive a
+confirmation message that the template was submitted.</p>
+<p></p>
+<p>That’s it!  Thanks for learning how to contribute.</p>
+<p>(note: typically the template file will be prepared on your computer and
+uploaded)</p>
+<p></p>
+<p>3.    Generate a calc from a template</p>
+<p>This page describes the simplest approach to running an example
+template. It uses a web platform that does not require program
+installation.</p>
+<p>+——————–+——————–+——————–+——————–+
+| icon key           |
+|                    |
+| 1 ** Web           |
+| Document**         |
+|                    |
+| : <strong>Exercise</strong>     |
+|                    |
+| <strong>$</strong>             |
+| <strong>Summary</strong>        |
++——————–+——————–+——————–+——————–+</p>
+<p><strong>on-c-e</strong> is designed to run on workstations with Python installed, but
+it can also run in the cloud on Python web platforms like **Wakari **and
+**PythonAnywhere. ** They provide an in-browser editor and shell
+terminal interface.  <strong>Wakari</strong> and <strong>PythonAnywhere</strong> are discussed in
+the manual but other Python web platforms can be used.  Appendix E
+provides additional details for web execution.  Appendix D discusses
+installation of the program on a computer or mobile device.</p>
+<p>For this exercise a simple example model is run on a Python web platform
+using the program onceutfnnn.py.  You can preview and download other
+models at <a class="reference external" href="http://on-c-e.org">http://on-c-e.org</a>.  Printed example models and calc output
+are provided in Appendix I. onceutf.py is a single file subset of
+<strong>on-c-e</strong> that does not include project options, PDF calcs, or unit
+overrides.  ** **It was written to simplify program testing and
+implementation on web and mobile platforms.</p>
+<p>+————————————————————————–+
+| :                                                                        |
++————————————————————————–+</p>
+<p>+————————————————————————–+
+| ##### <em><strong>Run\                                                            |
+|  template</strong></em>* *** {align=”center” style=”text-align:center”}             |
++————————————————————————–+</p>
+<p>1.      Sign up for a Wakari account at <a class="reference external" href="http://continuum.io/">http://continuum.io/</a><br />
+      or at<br />
+PythonAnywhere at 
+<a class="reference external" href="https://www.pythonanywhere.com/%E2%80%8E">https://www.pythonanywhere.com/‎</a></p>
+<p>2.      Download onceutfnnn.py and <strong>0101.simple.txt</strong> **** or
+<strong>0101.template.txt</strong> from  <a class="reference external" href="http://on-c-e.us">http://on-c-e.us</a></p>
+<p>3.      Upload the program and template files to a folder on your
+Wakari or PythonAnywhere account.  Choose a bash shell terminal from the
+drop-down list and open it (Appendix E).  At the shell command line
+check that both files are in the folder you selected (type <em><strong>ls</strong></em> or
+<em><strong>dir</strong></em>).  Enter the command</p>
+<p>python  onceutfnnn.py  <strong>0001.simple.txt</strong>  -e</p>
+<p></p>
+<p>where <em>nnn</em>  is the program version number (i.e. 040).</p>
+<p></p>
+<p>The model will write several files to the directory (Table 2) and echo
+the log file and calc, <strong>cal0101.simple.txt</strong>, to the screen.  You can
+open the calc using the browser editor provided by the web platform. 
+The switches following the model name echo the calc to the console
+(–<strong>e)</strong> or browser<br />
+(<strong>–b)</strong>.  The browser option works when run on local computer.</p>
+<p></p>
+<p>Congratulation on running your first model!</p>
+<p>(note: refer to Appendix D for <strong>on-c-e</strong> installation instructions)</p>
+<p></p>
+</section>
+<section id="on-c-e-overview-style-margin-left-25in-text-indent-25in">
+<h1>4.    on-c-e Overview {style=”margin-left:.25in;text-indent:-.25in”}<a class="headerlink" href="#on-c-e-overview-style-margin-left-25in-text-indent-25in" title="Link to this heading">¶</a></h1>
+<p>The **** <strong>OpeN Calculation Environment</strong> is defined by:</p>
+<p>-    <strong>oncepy</strong> - Python package</p>
+<p>-    <strong>onceutf.py –</strong> single file program and subset of <strong>oncepy</strong></p>
+<p>-    <strong>onceipy.py</strong> – updates the IPython database with
+<strong>on-c-e</strong> equations for interactive analysis</p>
+<p>-    **once-db **- online browser accessible database for sharing
+template files.</p>
+<p>-    <strong>Komodo Edit</strong> - a multilanguage IDE for Windows, Linux,
+OSX (others may be used)</p>
+<p>-    **Anaconda 1.9.2  **- scientific Python distribution for Windows,
+Linux, OSX (others may be used)</p>
+<p>-    <strong>Wakari –</strong> web based scientific Python distribution with browser
+interface (others may be used)</p>
+<p>-    **Pythonista **- Python platform for iOS</p>
+<p>-    **QPython **- Python platform for Android</p>
+<p>+————————————————————————–+
+| 1                                                                        |
++————————————————————————–+</p>
+<p><strong>oncepy</strong> is written **** for <strong>Python 2 or 3</strong> and **IPython. **
+Python is a dynamic, high-level, general-purpose language widely used
+for engineering and scientific scripting and programs.  For comparisons
+with other numerical computing environments, such as <strong>MATLAB,</strong> see for
+example:</p>
+<p>+————————————————————————–+
+| ##### <em><strong>MATLAB\                                                         |
+|  vs</strong></em>*\                                                                 |
+|  Python*** {align=”center” style=”margin-right:-2.25pt;text-align:center |
+| “}                                                                       |
++————————————————————————–+</p>
+<p></p>
+<p><a class="reference external" href="http://www.stat.washington.edu/~hoytak/blog/whypython.html">http://www.stat.washington.edu/~hoytak/blog/whypython.html</a></p>
+<p><a class="reference external" href="https://sites.google.com/site/pythonforscientists/python-vs-matlab">https://sites.google.com/site/pythonforscientists/python-vs-matlab</a></p>
+<p></p>
+<p>A single file program called <strong>onceutf.py,</strong> was written to simplify
+testing and implementation in web and mobile environments. It produces
+UTF calcs and does not require any installation other than copying the
+file to a folder.</p>
+<p></p>
+<p><img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image007.jpg" /><strong>Komodo Edit<br />
+IDE</strong></p>
+<p><img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image008.jpg" /><strong>Anaconda<br />
+Python<br />
+Platform</strong> ****</p>
+<p><strong><br />
+  Wakari<br />
+  Web<br />
+  Platform</strong></p>
+<p><img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image009.jpg" />**oncepy                           
+      once-db                                                  onceutf.py                                            <br />
+                 **</p>
+<p><strong>Links</strong></p>
+<p><a class="reference external" href="http://www.activestate.com/komodo-edit/downloads"><strong>activestate.com</strong></a></p>
+<p><a class="reference external" href="https://store.continuum.io/cshop/anaconda"><strong>anaconda</strong></a></p>
+<p><a class="reference external" href="https://wakari.io/"><strong>wakari.io</strong></a></p>
+<p><a class="reference external" href="http://on-c-e.org/"><strong>on-c-e.org</strong></a><a class="reference external" href="http://structurelabs.knackhq.com/oncedb#programs/"></a></p>
+<p><a class="reference external" href="http://structurelabs.knackhq.com/oncedb#home/"><strong>oncedb</strong></a></p>
+<p><strong>OS</strong></p>
+<p>Windows, Linux and OSX</p>
+<p><strong>Details</strong></p>
+<p>Full featured open source IDE for multiple languages</p>
+<p>Enterprise-ready distribution for scientific computing</p>
+<p>Python package and single file subset for structural calculations</p>
+<p>Online template database with web interface</p>
+<p><strong>Sponsor</strong></p>
+<p>Active State<br />
+Canada</p>
+<p>Continuum<br />
+USA</p>
+<p>StructureLabs<br />
+USA</p>
+<p><strong>License</strong></p>
+<p>Mozilla Public License</p>
+<p>Various Open Source Licenses</p>
+<p>Program: MIT License<br />
+Models:  CCO1.0 Public Domain</p>
+<p><strong><br />
+                         Table</strong> <strong>1. Open source components (See
+Appendices D, E for details)</strong></p>
+</section>
+<section id="files-and-paths-style-margin-left-25in-text-indent-25in">
+<h1>5.    Files and Paths {style=”margin-left:.25in;text-indent:-.25in”}<a class="headerlink" href="#files-and-paths-style-margin-left-25in-text-indent-25in" title="Link to this heading">¶</a></h1>
+<p>The fundamental program component is a model file xxyy.model.txt, where
+<strong>model</strong> is a user-created file name and <strong>xxyy</strong> is a four digit model
+designation.  The first two digits refer to the model division number
+and the last two to the model number. The designation is used for calc
+and project organization and must be unique. Models are stored in
+division folders and division folders are stored in a project folder
+(one level deep).  When a model is run it produces the following output
+files (Figure 2, Table 2):</p>
+<p>-          ­­UTF-8 calc <strong>calxxyy.model.txt</strong>.</p>
+<p>-          calc description file sumxxyy.model.txt that can be pasted in
+the once-db form.</p>
+<p>-          IPython input file _onceeq.py for interactive analysis.</p>
+<p>-          execution log file _modelog.txt, also (partially) echoed to
+screen.</p>
+<p>-          optional PDF calc <strong>calxxyy.model.pdf</strong> and supporting files<br />
+(.rst, .tex, .log, .out, fls, fdb_latexmk – see Appendix D for file
+handling).</p>
+<p>-          optional project calc <strong>project.pdf</strong> assembled from a
+specified set of division folders.</p>
+<p>Models are grouped in division folders and may include references to
+other models, external functions, data, and batch or script control
+files. External model files are generally located in the model
+division folder and are identified by file name only.  The program
+recreates the full path name internally, which allows division folders
+to be moved without changing the models.  The exceptions include files
+manipulated by the disk operation parameters r (read) and e (edit) which
+require a full path name, and comodels imported with option i which
+require the division folder name (see operation [d] with options i, r, e
+in Appendix B).</p>
+<p></p>
+<p>A division folder has the name xx_division_name where xx is the unique
+division number.  Each division or project folder may contain up to 100
+models or divisions respectively.  The project folder contains the
+project definition file if needed, and it may contain unit and PDF style
+definition files (<strong>unitc.py</strong>, <strong>once.sty</strong>) that override the program
+defaults for the entire project.  Definition files in a division file
+override all other definition files.</p>
+<p></p>
+<p><img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image010.jpg" /></p>
+<p></p>
+<p><strong>Figure</strong> <strong>2.</strong> <strong>Basic environment components</strong></p>
+<p></p>
+<p><strong>Project Files</strong></p>
+<p><strong>Project / Division Folder Structure</strong></p>
+<p></p>
+<p></p>
+<p><img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image011.jpg" /></p>
+<p><strong>Division Files</strong></p>
+<p>**xxyy.model.txt<br />
+** Model</p>
+<p></p>
+<p>** (project.txt)<br />
+**  Project file</p>
+<p>**(unitc.py)<br />
+** Custom units</p>
+<p><strong>(background.pdf)</strong><br />
+Calc background</p>
+<p>**(unitc.py)<br />
+** Custom units</p>
+<p>**(once.sty)<br />
+** Custom PDF style</p>
+<p></p>
+<p>**(once.sty)<br />
+** Custom PDF style</p>
+<p>**calxxyy.model.txt<br />
+** UTF-8 calc</p>
+<p>**sumxxyy.model.txt<br />
+** Model description</p>
+<p>**(project.pdf)<br />
+** Project calc</p>
+<p>**_onceeq.py<br />
+** IPython file</p>
+<p>**(project.log.txt)<br />
+** Project execution log</p>
+<p>**_log.txt<br />
+** Model execution log</p>
+<p>**(calxxyy.model.pdf)<br />
+** PDF calc</p>
+<p>** **</p>
+<p>Notes:\</p>
+<ol class="arabic simple">
+<li><p>Input files are in blue; output in green\</p></li>
+<li><p>Optional files are in parenthesis   \</p></li>
+<li><p>PDF calc auxillary files are erased by default (Appendix D)<br />
+    To keep auxillary files use ‘–noclean’ command line option <br />
+ <br />
+\</p></li>
+</ol>
+<p>** **</p>
+<p><strong>Table</strong> <strong>2. File and folder structure</strong></p>
+<p>**<br />
+**</p>
+<p>** **</p>
+<p></p>
+</section>
+<section id="model-operations-style-margin-left-25in-text-indent-25in">
+<h1>6.    Model Operations {style=”margin-left:.25in;text-indent:-.25in”}<a class="headerlink" href="#model-operations-style-margin-left-25in-text-indent-25in" title="Link to this heading">¶</a></h1>
+<p>Models are composed of a dozen operations. The basic operations are
+<strong>sections</strong>, <strong>terms</strong>, <strong>equations checks</strong>, <strong>arrays</strong>,
+<strong>functions,</strong> and <strong>format</strong> (see Figure 3, Table 3, and Appendix B).
+ When operations are processed the calc sections and equations are
+sequentially numbered. Equations are first formatted symbolically and
+then with numerical substitutions. The degree of printed detail is
+controlled by formatting statements. Tables are created from arrays and
+vectors.  Units and decimal places are reduced and formatted (see
+<strong>unitc.py</strong> file).  PDF calcs start a new page at every section and
+figures are inserted.</p>
+<p></p>
+<p>Operations are identified by bracketed <strong>tags</strong> and may occur in any
+order or frequency as long as each term or variable is defined before
+use. Operations are executed sequentially, in the order they are
+entered.  Nesting is not permitted.  Parameters and options associated
+with tags are provided on the same line, separated by vertical bars (|).
+Parameters with defaults or empty parameters may be omitted but the bar
+delimiters (with at least one space in between) must be provided. Arrays
+do not include unit processing.   Operations may extend over single or
+multiple lines.  Tags for single line operations include [d], **** [o],
+**** [t]<strong>.</strong> Tags for multi-line operations include [c], **** [a], ****
+[f], **** [e], **** [s].  Multi-line operations are terminated with a
+blank line.</p>
+<p></p>
+<p>The <strong>disk operation</strong> [d] performs several file functions depending on
+the option selected. Options are designated by s, t, o, w, f, i, r, e. 
+The option s reads external Python files that can define functions
+available to the <strong>function tag</strong> [f].  The option i imports a comodel
+into the main model. A comodel is a model that does not import other
+models (only one level of model recursion is permitted).  Other options
+import figures and text, and execute read, write, edit and run
+operations on external files and programs.</p>
+<p></p>
+<p>Tags may be indented to improve model readability (4 spaces is
+standard).    Any text in the model not associated with an operation tag
+is passed through to the output unchanged, including
+<strong>reStructuredText</strong> markup. For example, surrounding text with
+**double asterisks** will print <strong>bold</strong>, *single asterisks* will
+print <em>italics</em> and a vertical bar in the first column will force a new
+line in PDF calcs.  See the <a class="reference external" href="http://docutils.sourceforge.net/docs/user/rst/quickref.html">reST quick
+reference</a>
+for further documentation.</p>
+</section>
+<section id="project-operations-style-margin-left-25in-text-align-justify-text-indent-25in">
+<h1>7.    Project Operations {style=”margin-left:.25in;text-align:justify;text-indent:-.25in”}<a class="headerlink" href="#project-operations-style-margin-left-25in-text-align-justify-text-indent-25in" title="Link to this heading">¶</a></h1>
+<p><strong>Project</strong> operations are identified with tags [p] **** and [#]
+pformat.  The operation writes a project calc with the name
+<strong>project.pdf</strong> to the project folder, overwriting an existing file. The
+project operation is divided into a project data definition section and
+a division (folder) inclusion list (Table 3 and Appendix B).  Each
+division designation includes the option to override the project
+defaults on a calc by calc basis.  Project data is defined by a
+dictionary of keyword-data pairs that can easily be incorporated into
+databases.  The project format operation defines the page print
+location, if any, for a specific piece of project data.</p>
+<p></p>
+<p>Project calcs produced from the project operation are simply ordered
+assemblies of calcs that include a title page, table of contents, title
+blocks and navigational links.</p>
+<p></p>
+<p><strong>Tags</strong></p>
+<p><strong>Operations (optional parameters)</strong></p>
+<p><strong>Notes</strong></p>
+<p><a class="reference internal" href="#d_op"><span class="xref myst"><strong>[d]</strong></span></a></p>
+<p>Disk file<br />
+[d] folder/file | option | (var1) | (var2) | (var3)</p>
+<p>option is one of<br />
+s,t,o,w,f,i,r,e</p>
+<p><a class="reference internal" href="#disk"><span class="xref myst"><strong>[o]</strong></span></a></p>
+<p>Symbolic representation<br />
+[o] sympy symbolic expression</p>
+<p>Expression is printed but not evaluated.</p>
+<p><a class="reference internal" href="#term"><span class="xref myst"><strong>[t]</strong></span></a>**<br />
+<br />
+**</p>
+<p>Term<br />
+[t] description | var = value</p>
+<p></p>
+<p><a class="reference internal" href="#disk"><span class="xref myst"><strong>[c]</strong></span></a></p>
+<p>Check expression against limit<br />
+[c] decimal | description | ok<br />
+     expression | op | limit</p>
+<p></p>
+<p><a class="reference internal" href="#array"><span class="xref myst"><strong>[a]</strong></span></a></p>
+<p>Array table<br />
+[a] format_number | table description<br />
+    range variables<br />
+    var = expression</p>
+<p>For format reference numbers see format operation.</p>
+<p>** **</p>
+<p><a class="reference internal" href="#equation"><span class="xref myst"><strong>[f]</strong></span></a></p>
+<p>Function<br />
+[f] var | function description<br />
+     function_name()</p>
+<p>Functions are defined in external files and imported with [d] | s |</p>
+<p><a class="reference internal" href="#equation"><span class="xref myst"><strong>[e]</strong></span></a>**<br />
+<br />
+**</p>
+<p>Equation<br />
+[e] format_number | equation description<br />
+     var = expression</p>
+<p></p>
+<p><a class="reference internal" href="#section"><span class="xref myst"><strong>[s]</strong></span></a></p>
+<p>Section<br />
+[s] section heading<br />
+    section description</p>
+<p></p>
+<p><a class="reference internal" href="#format"><span class="xref myst"><strong>[#]</strong></span></a></p>
+<p><a class="reference internal" href="#format"><span class="xref myst"><strong>format</strong></span></a></p>
+<p><strong>stop</strong></p>
+<p>Comment or equation and array formats</p>
+<p>[#] format | (deci, deci) | (out type)<br />
+    format_number | (deci, deci) | (units) | (label/prnt code)</p>
+<p>[#] stop</p>
+<p>[#] comment line</p>
+<p>[#] followed by format or stop are special cases. stop terminates model
+processing.</p>
+<p><a class="reference internal" href="#project"><span class="xref myst"><strong>[p]</strong></span></a></p>
+<p>Project data (requires oncepy)<br />
+[p] (pdf size) | (background.pdf)<br />
+keyword = data | (format_number)<br />
+keyword = data |<br />
+01_divisionfolder | (division title)<br />
+  model_name1 | (pdf size) | (background1.pdf)<br />
+    keyword = format_number  | keyword = format_number | | |<br />
+  model_name2 |            |<br />
+    keyword = format_number  | | | |<br />
+02_divisionfolder <br />
+03_divisionfolder</p>
+<p>Model files (.txt suffix) are first processed to PDF.</p>
+<p><a class="reference internal" href="#pformat"><span class="xref myst"><strong>[#]</strong></span></a></p>
+<p><a class="reference internal" href="#pformat"><span class="xref myst"><strong>pformat</strong></span></a></p>
+<p></p>
+<p>Project formats (requires oncepy)</p>
+<p>[#] pformat  | format_number<br />
+    keyword | x location | y location<br />
+    keyword | x location | y location</p>
+<p>[#] followed by format is a special cases. Terminate with blank line</p>
+<p></p>
+<p><strong>Table</strong> <strong>3. Operations summary</strong></p>
+<p>** **</p>
+</section>
+<section id="style-margin-left-0in">
+<h1><img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image012.png" /><br />
+{style=”margin-left:0in”}<a class="headerlink" href="#style-margin-left-0in" title="Link to this heading">¶</a></h1>
+<p><img alt="Figure 3. Model, calc and project content" src="doc_old/manual/docs/html/figures/onx2_files/image013.png" /></p>
+<p><br />
+8.     Web Resources</p>
+<p></p>
+<p>+————————————–+————————————–+
+| \                                    |
+| :                                    |
++————————————–+————————————–+</p>
+<p>+————————————————————————–+
+| ##### * Share models*                                                    |
++————————————————————————–+</p>
+<p>**Download  Models<br />
+** <a class="reference external" href="http://on-c-e.org">http://on-c-e.org</a></p>
+<p>**Upload Models<br />
+** <a class="reference external" href="http://on-c-e.org/upload-model">http://on-c-e.org/upload-model</a></p>
+<p>** **</p>
+<p>+————————————————————————–+
+| :                                                                        |
++————————————————————————–+</p>
+<p>+————————————————————————–+
+| ##### <em>Run locally</em> {align=”center” style=”margin-left:9.0pt;text-align: |
+| center”}                                                                 |
++————————————————————————–+</p>
+<p>**Download and install Anaconda 1.9.2. ** Using <em><strong>pip</strong></em>, install
+<strong>Unum</strong>, <strong>tabulate</strong> and <strong>PyPDF2</strong>.  Install <strong>Tex Live</strong> 2014.
+Download and install Komodo Edit (see Appendices D and F).</p>
+<p></p>
+<p></p>
+<p>Although any text editor is adequate for composing and running models,
+the most effective tool is an interactive development environment
+(IDE).  It provides project and file management, font management, code
+navigation, templates, custom toolbars and macros, syntax coloring,
+window layout controls and remote file access. Komodo Edit is an open
+source workstation IDE which can manage <strong>Python, TCL, Ruby</strong> and other
+programing languages applicable to structural engineering work. Several
+Komodo specific tools are provided for <strong>on-c-e</strong> and described in
+Appendix C.  Although Komodo is discussed in this manual other IDEs may
+be used.** **</p>
+<p>+————————————————————————–+
+| $                                                                       |
++————————————————————————–+</p>
+<p></p>
+<p>+————————————————————————–+
+| ##### *Find\                                                             |
+| \                                                                        |
+| * {style=”margin-left:4.5pt”}                                            |
++————————————————————————–+</p>
+<p>About                                                
+<a class="reference external" href="http://on-c-e.org">on-c-e.org</a><br />
+User manual                                     <a class="reference external" href="http://on-c-e.us/">http://on-c-e.us/</a><br />
+Komodo Edit                                    
+<a class="reference external" href="http://activestate.com/komodo-edit">http://activestate.com/komodo-edit</a><br />
+DejaVu Fonts                                               
+<a class="reference external" href="http://dejavu-fonts.org/wiki/Main_Page">http://dejavu-fonts.org/wiki/Main_Page</a><br />
+Workstation (Anaconda 1.9.2)      
+<a class="reference external" href="http://repo.continuum.io/archive/index.html">http://repo.continuum.io/archive/index.html</a><br />
+Web Platform (Wakari)                    <a class="reference external" href="https://wakari.io/">https://wakari.io/</a><br />
+onceutf                                             
+<a class="reference external" href="http://on-c-e.us">http://on-c-e.us</a><br />
+oncepy                                              
+<a class="reference external" href="http://on-c-e.org/programs/">http://on-c-e.org/programs/</a><br />
+model database                              
+<a class="reference external" href="http://structurelabs.knackhq.com/oncedb#home/">http://</a>on-c-e.org/<br />
+TeX Live                                            
+<a class="reference external" href="https://www.tug.org/texlive/">https://www.tug.org/texlive/</a><br />
+Code and docs                                
+<a class="reference external" href="http://on-c-e.github.io/">http://on-c-e.github.io/</a><br />
+Road map                                          <a class="reference external" href="http://on-c-e.info/">http://on-c-e.info/</a></p>
+<p>\</p>
+<p></p>
+<ol class="arabic simple" start="9">
+<li><p>Interactive Analysis {style=”margin-left:0in”}
+===========================</p></li>
+</ol>
+<p>In some cases equation level interactive analysis and design is
+preferred over complete model runs.  An import equation file,
+_<strong>onceeq.py,</strong> is written when <strong>on-c-e</strong> is run and may be used for
+interactive analysis.  Three interactive interfaces are available:</p>
+<p></p>
+<p>+————————————————————————–+
+| :                                                                        |
++————————————————————————–+</p>
+<p>o   <strong>Komodo IDE</strong> (commercial version):  Cut and paste the entire
+<strong>onceeq.py</strong> file into the interactive shell for access to equations
+and terms.</p>
+<p></p>
+<p>o   <img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image014.jpg" /><strong>IPython Notebook</strong>:
+ <a class="reference external" href="http://ipython.org/notebook.html">http://ipython.org/notebook.html</a>  Cut and paste the entire
+<strong>onceeq.py</strong> file into a notebook cell for interactive access to
+equations and terms.</p>
+<p></p>
+<p>o   <strong>IPython Terminal</strong> and <strong>Qt shell</strong>:  <a class="reference external" href="http://ipython.org/">http://ipython.org/</a></p>
+<p></p>
+<p>Equations from <strong>_onceeq.py</strong> are loaded into a shell in two steps:</p>
+<p></p>
+<p>1.      The script <strong>onceipy.py</strong> updates the
+<strong>history.sqlilte</strong> database with the equations. Copy <strong>onceipy.py</strong> to
+the Python /lib/site-packages directory.</p>
+<p></p>
+<p>2.      _<strong>onceeq.py</strong> is loaded into Ipython using the ‘run’ command.</p>
+<p></p>
+<p>Both steps are executed by the <strong>IPy</strong> macro button on the Komodo
+<strong>on-c-e</strong> toolbar (see Appendix C).  Run this macro after running the
+model and when the division file for the model has focus.  Prior to
+using the button, modify the command “<strong>run_onceipy</strong>” (at the end of
+the tool list in the Komodo toolbox) by adding the location of the
+history.sqlite directory to the command line entry (do not type
+brackets), i.e.</p>
+<p></p>
+<p>python -m onceipy.py  [C:\Users\rhh.ipython\profile_default]</p>
+<p></p>
+<p>When <strong>onceipy</strong> is run, the equations are read from the <strong>onceeq.py</strong>
+file generated when <strong>on-c-e</strong> is run.  They are assigned the next
+session number and added to the end of the <strong>history.sqlite</strong> file. A
+backup copy of the file is made before the new equation records are
+added.</p>
+<p></p>
+<p>If the history.sqlite file becomes too large or corrupted it may be
+deleted and reinitialized simply by running IPython from the command
+line.</p>
+<p></p>
+<p>Equations and terms are available in the shell through command history
+scrolling or using the <strong>%rep ref</strong> command, where <strong>ref</strong> is the
+equation history reference.</p>
+<p><img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image015.png" /><img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image016.png" /></p>
+<p></p>
+<p><strong>Figure</strong> <strong>4.  Screenshots of equation history in IPython terminal and
+QT shells</strong></p>
+</section>
+<section id="appendix-a-example-model-and-calc-style-margin-left-0in">
+<h1>Appendix A – Example Model and Calc {style=”margin-left:0in”}<a class="headerlink" href="#appendix-a-example-model-and-calc-style-margin-left-0in" title="Link to this heading">¶</a></h1>
+<p></p>
+<p><strong>Example Template / Model</strong></p>
+<p></p>
+<p>[s] Example 0101 - basic model template</p>
+<p>This example template calculates the mid-span beam moment</p>
+<p>under uniformly distributed (UDL) floor loads.  It demonstrates</p>
+<p>**section [s], term [t] equation [e] and [#] format
+operations**.</p>
+<p>reStructuredText inline markup is also used.</p>
+<p></p>
+<p></p>
+<p>[d] beam.png | f | Simply supported beam | 70 |</p>
+<p></p>
+<p>[s] Beam Loads and geometry</p>
+<p>Dead and live load contributions to beam UDL and beam layout</p>
+<p>configuration</p>
+<p></p>
+<p>**Dead loads** from permanent weights</p>
+<p>[t] joists          | jst_DL   =   3.8*PSF</p>
+<p>[t] plywood         | ply_DL   =   2.1*PSF</p>
+<p>[t] partitions      | part_DL  =  10.0*PSF</p>
+<p>[t] fixed machinery | equip_DL =   0.5*KLF</p>
+<p></p>
+<p>**Live loads** from people and moveable items</p>
+<p>[t] ASCE7-O5        | live_LL = 40*PSF</p>
+<p></p>
+<p></p>
+<p>**Beam tributary width and span**</p>
+<p>[t] distance between beams  | trib_width = 2*FT</p>
+<p>[t] beam span               | span = 14*FT</p>
+<p></p>
+<p></p>
+<p>[s] Maximum bending moment</p>
+<p>Calculate factored UDL loads and bending moment at mid-span of beam</p>
+<p></p>
+<p>[e] 010122 |  Total UDL factored dead load</p>
+<p>DL_D = 1.4 * (trib_width *(jst_DL + ply_DL + part_DL) +
+equip_DL)</p>
+<p></p>
+<p>[e] 010122 |  Total UDL factored live load</p>
+<p>LL_D = 1.7 * trib_width * live_LL</p>
+<p></p>
+<p>[e] 010122 | factored UDL</p>
+<p>omega_1 = DL_D + LL_D</p>
+<p></p>
+<p>[e] 010123 | Bending moment at mid-span</p>
+<p>M_0 = omega_1 * span**2 / 8</p>
+<p></p>
+<p></p>
+<p>[#] format  | 3,3  | pdf</p>
+<p>010122  | 2,2  | KLF     | 2</p>
+<p>010123  | 2,1  | KIP*FT  | 3</p>
+<p></p>
+<p>[#] This file contains a generic on-c-e model template (the template).</p>
+<p>[#] It is distributed under the CCO 1.0 Public Domain Dedication at</p>
+<p>[#] http://creativecommons.org/publicdomain/zero/1.0/</p>
+<p>[#] The template is not a structural design calculation and</p>
+<p>[#] must be modified by the user prior to use.</p>
+<p>[#] The template user assumes sole and complete responsibility for</p>
+<p>[#] all existing or modified inputs and the computed model results.</p>
+<p>\</p>
+<p></p>
+<p></p>
+<p><strong>UTF calc</strong></p>
+<p></p>
+<p>![07/19/14 21:04:30</p>
+<p>==========================================================================================</p>
+<p>[1] Example 0101 - basic model template [0101]</p>
+<p>==========================================================================================</p>
+<p>This example model calculates the mid-span beam moment
+under uniformly
+distributed (UDL) floor loads. It demonstrates
+**section [s], term
+[t] equation [e] and [#] format operations**.
+reStructuredText
+inline markup is also used.</p>
+<p>Figure 1. Simply supported beam
+&lt;file: beam.png &gt;</p>
+<p>==========================================================================================</p>
+<p>[2] Beam Loads and geometry [0101]</p>
+<p>==========================================================================================</p>
+<p>Dead and live load contributions to beam UDL and beam layout
+configuration</p>
+<p>**Dead loads** from permanent weights
+joists |
+jst_DL = 3.8 [psf]
+plywood | ply_DL = 2.1 [psf]
+partitions |
+part_DL = 10.0 [psf]
+fixed machinery | equip_DL = 0.5 [kips/ft]</p>
+<p>**Live loads** from people and moveable items
+ASCE7-O5 | live_LL =
+40 [psf]</p>
+<p>**Beam tributary width and span**
+distance between
+beams | trib_width = 2 [ft]
+beam span | span = 14 [ft]</p>
+<p>](onx2_files/image017.png)</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p>\</p>
+<p></p>
+<p><strong>UTF calc - continued</strong></p>
+<p></p>
+<p>![==========================================================================================</p>
+<p>[3] Maximum bending moment [0101]</p>
+<p>==========================================================================================</p>
+<p>Calculate factored UDL loads and bending moment at mid-span of beam</p>
+<p>—————————————————————————————–┐</p>
+<p>DL_D | Total UDL factored dead load [3.1]</p>
+<p>1.4⋅equip_DL +
+1.4⋅trib_width⋅(jst_DL + part_DL + ply_DL)</p>
+<p>DL_D = 0.74
+[kips/ft]</p>
+<p>—————————————————————————————–┘</p>
+<p>—————————————————————————————–┐</p>
+<p>LL_D | Total UDL factored live load [3.2]</p>
+<p>1.7⋅live_LL⋅trib_width</p>
+<p>LL_D = 0.14 [kips/ft]</p>
+<p>—————————————————————————————–┘</p>
+<p>—————————————————————————————–┐</p>
+<p>omega_1 | factored UDL [3.3]</p>
+<p>DL_D + LL_D</p>
+<p>omega_1 = 0.88
+[kips/ft]</p>
+<p>—————————————————————————————–┘</p>
+<p>—————————————————————————————–┐</p>
+<p>M_0 | Bending moment at mid-span [3.4]</p>
+<p>2
+ω₁⋅span
+────────
+8</p>
+<p>2
+0.88 [kips/ft]⋅14.00 [ft]
+——————————————————————————
+8</p>
+<p>M_0
+= 21.6 [ft.kip]</p>
+<p>—————————————————————————————–┘</p>
+<p>](onx2_files/image018.png)</p>
+<p>\</p>
+<p></p>
+<p><img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image019.png" /><img alt="Figure 5. Example PDFcalc" src="doc_old/manual/docs/html/figures/onx2_files/image020.png" />\</p>
+<p><img alt="Figure 6. Example PDF calc(continued)" src="doc_old/manual/docs/html/figures/onx2_files/image021.png" /><img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image022.png" /></p>
+<p><img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image023.png" /><img alt="Figure 7. Example PDF calc(continued)" src="doc_old/manual/docs/html/figures/onx2_files/image024.png" /></p>
+</section>
+<section id="appendix-b-operations-style-margin-left-0in">
+<h1>Appendix B – Operations {style=”margin-left:0in”}<a class="headerlink" href="#appendix-b-operations-style-margin-left-0in" title="Link to this heading">¶</a></h1>
+<p>Calcs are composed of nine model operations: three operations are single
+lines with the tags [d]<strong>,</strong> [o]<strong>,</strong> [t], and six operations are
+multiline with tags [c]<strong>,</strong> [a]<strong>,</strong> [f]<strong>,</strong> [e]<strong>,</strong> [s], and [#]
+format.  Project calcs are built with a multiline operation using the
+[p] **** and [#] format tags.  All multiline operations are terminated
+with a blank line.</p>
+<p></p>
+<p><img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image025.png" />** **</p>
+<p>\</p>
+<p><strong>[d]</strong>   (path)/filename | s,t,o,w,f,i,r,e | (v1) | (v2) | (v3)</p>
+<p></p>
+<p>The disk operation processes external disk files according to single
+letter options. Files for the first 5 options are located in the
+model folder and are specified by file name only.  The model folder and
+name are used for the i **** operation.  Full file paths are used for
+the r **** and e **** options. This approach makes a model as portable
+as possible across different folder organizations.</p>
+<p>** **</p>
+<p>filename: **** file name used in disk operation. See details for each
+parameter type.<br />
+v1-v3: **** variables specific to the disk operation option. See
+details.</p>
+<p>s: **** execute Python file in model.  Typically used to process
+external functions.</p>
+<p>t: **** add text file boilerplate to output (no operations are
+processed).</p>
+<p>o: **** run an operating system batch or script file. Typically runs a
+program.</p>
+<p>w: **** write values of variable to CSV file. Overwrites existing
+files.  w+ **** appends files.</p>
+<p>f: **** insert image from file into calc (jpg, png etc.)</p>
+<p>i: **** insert and process a comodel file.  Integrates sections and
+equation numbering.</p>
+<p>r: **** read CSV file data into array variable.</p>
+<p>e: **** edit line of existing text file and save in copy of file.</p>
+<p></p>
+<p>s: **** execute an external Python script in model namespace.<br />
+\</p>
+<p>Executes an external Python script and includes the methods (functions)
+and variables in the model namespace.</p>
+<p>** **</p>
+<p>t: **** inset text file contents into output (no operations are
+processed).</p>
+<p></p>
+<p>Inserts the text file contents at the operation location. The var
+parameter optionally specifies the line range to be inserted for lines
+n1:n2 inclusive.</p>
+<p>** **</p>
+<p>o: **** run an operating system command or executable file</p>
+<p>.</p>
+<p>w: **** write array values to file.<br />
+\</p>
+<p>Write contents of array v1 to the file specified by filename. Each line
+or row is written using the <strong>numpy.tofile</strong> method. To append data to
+an existing file use the option w+.  v2 specifies the separation
+character (comma is default, for a space character use *). v3 is the
+data type (default is character format %s).</p>
+<p></p>
+<p>f: **** insert figure from file into calc (<strong>jpg, png etc.</strong>).<br />
+\</p>
+<p>Insert figure from file with caption v1. Figure labels are automatically
+added and incremented. v2 specifies the image width in percent of
+document width.  The figure is centered and the aspect ratio is
+maintained.   v3 specifies a side by side arrangement for a second
+consecutive figure using the keyword adjacent. For UTF-8 output the
+following text is inserted: <br />
+<strong>Figure n:  caption - file: filename</strong></p>
+<p>** **</p>
+<p>i: **** insert and process a comodel file. <br />
+division_folder/file: **** model folder and file name</p>
+<p></p>
+<p>Merge a comodel file into the main model file at the operation
+location.  The comodel cannot include a comodel.  Sections and equation
+numbers are integrated into the main model sequence.  Format numbers
+must be unique in the two models (see format operation for suggested
+format numbering schemes).</p>
+<p>** **</p>
+<p>r: **** read file data into variable</p>
+<p>path/file: **** absolute path name</p>
+<p></p>
+<p>Read CSV contents of <strong>path/filename</strong> into variable v1 **** and store
+as array using the <strong>numpy.genfromtext</strong> method.  v2 specifies the
+separation character (comma is default, for space character use *). v3
+specifies the number of lines to skip before reading the data (default
+is 0).</p>
+<p></p>
+<p>** **</p>
+<p>e: **** edit text file</p>
+<p>path/file: **** absolute path name</p>
+<p></p>
+<p>Edit an external file at run time. Lines immediately following the edit
+operation have the form:</p>
+<p></p>
+<p>n | replacement text for line n</p>
+<p></p>
+<p>where n **** is the line number to be replaced with the specified
+replacement text. The v1 parameter is appended to the file name before
+it is saved with edits i.e. if v1 **** is <strong>copy</strong> and the filename is
+<strong>file.tcl</strong> the edited file is saved as <strong>filecopy.tcl.</strong></p>
+<p>** **</p>
+<p>Template variables may be used in the replacement line.  A
+template variable is created by appending a <strong>%</strong> in front of the
+variable name used in the model.</p>
+<p></p>
+<p>\</p>
+<p></p>
+<p></p>
+<p><strong>[o]</strong> **** Python or sympy expression ** **</p>
+<p></p>
+<p>The symbolic operation formats a sympy symbolic expression without
+evaluating the terms.</p>
+<p></p>
+<p><img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image025.png" />** **</p>
+<p>\</p>
+<p><strong>[t]</strong> **** var = value | (description) ****</p>
+<p></p>
+<p>The term operation is used to assign values to terms used in equations. 
+It evaluates expressions that multiply by constants or units.</p>
+<p></p>
+<p>var = value: **** define term</p>
+<p>description: **** term description</p>
+<p>** **</p>
+<p><img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image025.png" />*** ***</p>
+<p>\</p>
+<p><strong>[#]</strong>  The hash tag is used for non-printing comments. If the comment
+is format** **the format operation is subsequently processed.  If the
+comment is stop the program processes the model to that point along with
+any formats in the model. This can be useful for developing and
+debugging a model.</p>
+<p>*** ***</p>
+<p><strong>[#] format</strong>   |(default deci, deci) | (output type)</p>
+<p>format number |(deci, deci)     | (units/label)`     | (prt
+code/label)          format number |(deci, deci)     | (units/label)
+     | (prt code/label)</p>
+<p></p>
+<p>The format operation describes decimals, units and labels for
+equations and arrays. <br />
+Use print code 0, 1 or 2 for equations that return arrays.</p>
+<p>** **</p>
+<p>default deci: number of printed decimal places in equation and result
+(default 3, 3)</p>
+<p>output type: **** output type is <strong><em>txt</em>, <em>rst</em></strong> or **<em>pdf</em> (**default
+is txt). Not read when running <strong>onceutf.</strong>  Set command line option to
+<strong>–noclean</strong> to retain <strong>rst</strong> file.  See Appendix D.</p>
+<p>ref: Unique six digit equation or array format number between 1 and
+99999.  Typically the first four digits are the model number and the
+fifth digit is the section number.  This pattern facilities organization
+and unique formats when comodels are used.</p>
+<p>deci, deci: **** number of printed decimal places in equation and result</p>
+<p>units/label: **** unum unit for dependent variable or label for first
+range variable</p>
+<p>print code/label: **** For equations provide print code 0, 1, 2, 3
+(default is 3) where:</p>
+<p>0 - evaluate but do not print result</p>
+<p>1 - print result</p>
+<p>2 - print symbolic expansion and result</p>
+<p>3 - print full results - symbolic expansion, substitution and result</p>
+<p></p>
+<p>For 2D arrays provide a label for the second range variable.</p>
+<p>\</p>
+<p></p>
+<p></p>
+<p><strong>[c]</strong> decimal, decimal | description | ok</p>
+<p>expression | operation | limit</p>
+<p></p>
+<p>The check operation checks an expression value (no variable assignment)
+against a limit for a given operation.</p>
+<p>** **</p>
+<p>decimal: **** number of printed decimal places in equation, result
+(default 3, 3)</p>
+<p>description: **** description of comparison</p>
+<p>expression: **** expression to evaluate – typically a ratio</p>
+<p>operation: **** Python expression with comparison operator (&lt;, &gt;, &lt;=,
+&gt;=, =)</p>
+<p>limit: **** value or expression to evaluate that sets upper or lower
+limit</p>
+<p>ok: **** phrase that prints if compare evaluates to True. If expression
+evaluates to False the word ‘not’ is prepended.  May be blank.</p>
+<p>** **</p>
+<p><img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image025.png" /></p>
+<p>** **</p>
+<p>\</p>
+<p><strong>[a]</strong>  format ref | array description<br />
+     vector variable1</p>
+<p>(vector variable2 for 2D arrays)</p>
+<p>var = expression</p>
+<p>** **</p>
+<p>The array operation input is similar to the equation operation but
+outputs the results of vector equations in tables 1D or 2D table with
+column and row labels.  Range variables and expressions must be
+unitless.  If only one range variable is provided a single row table is
+output.  The variable name may be a previously defined vector.  Note
+that the number of printed decimals corresponds to the first entry in
+the integer pair.</p>
+<p>** **</p>
+<p>variable1: **** a range statement or variable containing vector or array
+values.<br />
+variable2: **** a range statement for 2D tables.<br />
+var = expression: **** unitless equation using Python syntax</p>
+<p></p>
+<p><img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image025.png" /></p>
+<p>** **</p>
+<p>** **</p>
+<p>\</p>
+<p><strong>[f]</strong> var | function description</p>
+<p>function_name(args)</p>
+<p>** **</p>
+<p>The function operation executes a function and assigns the return value
+to variable var. The function is defined in a Python file and imported
+using the [d]operation with the s option.   Describe the function using
+the function doc strings which are imported into the model.  Printed
+decimals should be controlled by the function itself.</p>
+<p>** **</p>
+<p>var : **** one line description of function<br />
+function description : **** short description of function</p>
+<p>function_name(args): **** name of function and arguments to be executed</p>
+<p>** **</p>
+<p>** **</p>
+<p><strong>[e]</strong> **** format number | (description)<br />
+     var = expression</p>
+<p></p>
+<p>The equation operation evaluates a Python math statement and optionally
+prints the symbolic representation, equation with substituted values and
+solution.  The format operation (<strong>[#] format</strong>) controls the level of
+printing detail, decimals and units.  Equation input may extend over a
+maximum of three lines.   Terminate the operation with a blank line.
+Indenting equations, terms, functions and arrays may help legibility.</p>
+<p>** **</p>
+<p>format ref: **** integer between 1 and 999999 that references a
+formatting operation.</p>
+<p>description: **** equation description and building code references</p>
+<p>var = expression: ****  equation using Python syntax</p>
+<p>** **</p>
+<p><img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image025.png" />**<br />
+<br />
+**</p>
+<p><strong>[s]</strong> section heading</p>
+<p>(description)</p>
+<p>**<br />
+** The section operation provides organization to the calculation.
+Sections are automatically numbered and labeled with the associated
+model. The source model designation number is added to the section
+heading and right justified.  Equation numbers are generated within
+sections as <strong>s . e</strong> where <strong>e</strong> restarts at 1 in each section.</p>
+<p></p>
+<p>heading: **** left justified heading</p>
+<p>description: **** up to 10 lines of text (no blank lines) describing the
+section. Terminate with blank line.</p>
+<p>** **</p>
+<p>**<br />
+**</p>
+<p>** **</p>
+<p></p>
+<p>.</p>
+<p>*** ***</p>
+<p><strong>[p]</strong> **** (project default size) | (default background.pdf)</p>
+<p>(keyword = data) | (format_number)</p>
+<p>(keyword = data) |</p>
+<p>(keyword = data) |</p>
+<p><strong>.</strong></p>
+<p><strong>.</strong></p>
+<p>01(_divisionfolder) | (division title)</p>
+<p>01yy.model.txt| size| background2.pdf</p>
+<p>keyword = data | keyword = data | | |</p>
+<p>02 | (division title)</p>
+<p>02yy.model.pdf| size| nobackground</p>
+<p>03 | (division title)</p>
+<p>03yy.model.txt| size| background2.pdf</p>
+<p>keyword = -1| kewyword = -1|  | |</p>
+<p>04 | (division title)</p>
+<p>04yy.model.pdf| | omit</p>
+<p>| | | |</p>
+<p>04yy.model.pdf| size |</p>
+<p>05 | (division title)</p>
+<p><strong>.</strong></p>
+<p><strong>.</strong></p>
+<p></p>
+<p>The project operation is specified in the project file and provides
+project calc information. Project files are located in the project
+folder which in turn contain division folders as subfolders.</p>
+<p>**<br />
+** size: **** size and orientation settings of PDF pages.</p>
+<p>portrait_letter (default)</p>
+<p>landscape_letter</p>
+<p>landscape_tableau (11x17)</p>
+<p>portrait_A4</p>
+<p>landscape_A4</p>
+<p>** **</p>
+<p>background.pdf: ****** user file name for the calc background (default:
+none)</p>
+<p></p>
+<p>keyword = data: **** keyword-data pairs to be added to the
+project dictionary.  Any key word may be defined except for key words
+reserved for project calc printing.  They include:</p>
+<p>ptitle, pname, padd1, padd2**,** pstate, pzip, powner, pnumber, eng**,**
+date, rev, stamp1, stamp2</p>
+<p>** **</p>
+<p>\</p>
+<p></p>
+<p>xx(_divisionfolder): **** by default include calcs from this folder in
+the project calcs.  If _divisionfolder is provided as part of the
+folder name it is used for the division name in the project calcs (i.e.
+table of contents).  If division title is provided it is used instead.</p>
+<p></p>
+<p>For each model in the folder, if a PDF calc is available, it is used. 
+Otherwise the model is run to produce the PDF calc.</p>
+<p></p>
+<p>Project settings may be overridden for a specified calc or model.   If
+default background.pdf is set, then set the value to nobackground ****
+to suppress the default template and all keywords for a particular
+calc.  To omit a calc from the project set use omit for the template
+value. A keyword data may be redefined for a specific calc.  To suppress
+writing the keyword value to a calc set its value to -1.  To write only
+keyword data without a template specify the keyword data on the keyword
+override line.</p>
+<p>** **</p>
+<p>The project or division folder may also include the file <strong>once.sty</strong>
+which defines the LaTeX PDF style settings, and the <strong>unitc.py</strong> file
+which defines calc units.  They will override the default settings in
+the <strong>oncepy</strong> package directory – division folder files override
+project folder files.</p>
+<p></p>
+<p>*** ***</p>
+<p><strong>[#] pformat</strong>   | format_number</p>
+<p></p>
+<p>The project format operation describes the print location on a
+calc sheet of keyword data defined in the project operation.  Terminate
+format number definitions with a blank line.</p>
+<p>** **</p>
+<p>keyword | x location | y location</p>
+<p>keyword | x location | y location</p>
+<p>keyword | x location | y location</p>
+<p>.<br />
+.</p>
+<p></p>
+<p>keyword: project keyword</p>
+<p>x location: **** x location of keyword value on page in points from
+upper left corner.</p>
+<p>y location: y location of keyword value on page in points from upper
+left corner.</p>
+<p>** **</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p>** **</p>
+<p>+————————————————————————–+
+| :                                                                        |
++————————————————————————–+</p>
+</section>
+<section id="appendix-c-komodo-edit-style-margin-left-0in">
+<h1><img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image026.png" /><br />
+Appendix C – Komodo Edit {style=”margin-left:0in”}<a class="headerlink" href="#appendix-c-komodo-edit-style-margin-left-0in" title="Link to this heading">¶</a></h1>
+<p><img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image027.png" /></p>
+<p>\</p>
+<p><strong>Figure</strong> <strong>8. Komodo interface</strong> ****</p>
+<p>** **</p>
+<p>Template files can be prepared using any text editor however Komodo Edit
+provides additional useful capabilities and tools.  <strong>on-c-e</strong> syntax
+coloring and operation tools are provided to improve readability and
+efficiency. A <strong>on-c-e</strong> toolbar is provided to simplify program
+execution.</p>
+<p></p>
+<p><strong>Install on-c-e utilities and fonts in Komodo</strong></p>
+<p>1.      Download and install DejaVu fonts from</p>
+<p><a class="reference external" href="http://dejavu-fonts.org/wiki/Main_Page">http://dejavu-fonts.org/wiki/Main_Page</a></p>
+<p><img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image028.png" />A point size of 9 and line width of 90 is
+suggest.</p>
+<p><img alt="run model in IPy" src="doc_old/manual/docs/html/figures/onx2_files/image029.png" /></p>
+<p></p>
+<p>** **</p>
+<p>** **</p>
+<p>\</p>
+<p>**            The toolbar operates on the model that has focus**</p>
+<p>2.      Download and unzip <strong>oncetoolsnnn.zip</strong></p>
+<p>3.      <strong>Install the on-c-e tools folder</strong> by - right clicking in tool
+box pane – import folder – select the <strong>on-c-e_tools</strong> folder rom the
+unzipped file. Tools include a <strong>tool bar</strong>, <strong>documentation menu</strong> and
+<strong>code snippets</strong> that can be inserted into models by double clicking.</p>
+<p>4.      Close and reopen Komodo to complete installation. Edit a tool by
+right clicking on it in the tool pane and selecting Properties.  Pane
+arrangement can be controlled by the user.</p>
+<p>5.      <strong>Install the syntax coloring plugin</strong> <strong>once-0.3.1-ko.xpi</strong>
+**** using the menu - Tools – Add On. Select the xpi file from the
+unzipped <strong>oncetoolsnnn</strong> folder. To see <strong>once</strong> syntax coloring in
+your file set the language for the <strong>.txt</strong> file type to type <strong>once</strong>
+**** using the right click context Properties and Settings when the file
+is open.</p>
+<p>6.      After running a model the UTF calc is automatically opened in
+the input pane. The associated PDF calc can then be opened in the users
+default PDF viewer with the tool bar when the UTF calc has focus.</p>
+<p></p>
+<p>7.      The suggested model line length is 90 characters using
+mono-spaced 9pt font.  Indents should be spaces, not tab characters. 
+UTF calcs are formatted to a 90 character width.</p>
+<p></p>
+<p>8.      <strong>PDF calcs</strong> require installation of <strong>TexLive</strong>. See Appendix
+D and F.</p>
+<p>\</p>
+<p></p>
+<p></p>
+<p>+————————————————————————–+
+| :                                                                        |
++————————————————————————–+</p>
+</section>
+<section id="appendix-d-linux-windows-mac-ios-android-style-margin-left-0in">
+<h1>Appendix D – Linux, Windows, Mac, iOS, Android {style=”margin-left:0in”}<a class="headerlink" href="#appendix-d-linux-windows-mac-ios-android-style-margin-left-0in" title="Link to this heading">¶</a></h1>
+<p>** **</p>
+<p><strong>Install local copy of onceutf.py on Linux, Windows, Mac:</strong></p>
+<p>Install a scientific Python distribution.  Copy <strong>onceutfnnn.py</strong> and
+the model file into the same folder, open a console window in the folder
+and type:</p>
+<p></p>
+<p><em><strong>python onceutfnnn.py modfile.m.txt  (-e or –b) (-noclean)</strong></em></p>
+<p></p>
+<p>where <strong>nnn</strong> is the program version number (i.e. 040),
+ <strong>nnnn.modfile.txt</strong> is the file name of the input model, <strong>-e</strong> or
+<strong>–b</strong>  are options to echo calculation results to the console or
+terminal or browser and <strong>–noclean</strong> retains the auxiliary PDF files
+(erased by default).</p>
+<p></p>
+<p>To open a terminal window in in Windows 7 or 8, navigate to the folder
+with the model, hold the shift key, right click in the folder and click
+on ‘open command window here’.</p>
+<p>Change the browser encoding settings if needed:</p>
+<p>·         Chrome – type **chrome:settings/fonts ** in url bar - scroll
+to the bottom of the dialog box to make the change.</p>
+<p>·         Firefox - options - content - advanced - UTF-8</p>
+<p>·         Internet Explorer - right click in window - encoding - UTF-8</p>
+<p></p>
+<p>**For UTF font symbols install font package from<br />
+**
+<a class="reference external" href="http://dejavu-fonts.org/wiki/Main_Page"><strong>http://dejavu-fonts.org/wiki/Main_Page</strong></a></p>
+<p>** **</p>
+<p>** **</p>
+<p><strong>Install local ‘site-packages’ copy of onceutf on Linux, Windows,
+Mac:</strong></p>
+<p>Install a scientific Python distribution.  Copy the <strong>onceutfnnn.py</strong>
+file into the Python/Lib/site-packages/ folder and rename to
+<strong>onceutf.py.</strong> Run from any directory with the command</p>
+<p>*** ***</p>
+<p>*<strong>python –m onceutf</strong> nnnn.modfile.txt ***</p>
+<p></p>
+<p><strong>Install a complete oncepy environment on Linux, Windows, Mac:<br />
+See Section 8 for links</strong></p>
+<p>1.      Install Anaconda 1.9.2</p>
+<p>2.      Install unum and tabulate modules (using pip install)</p>
+<p>3.      Install TexLive</p>
+<p>4.      Install DejaVu Fonts (and set to Mono in IDE)</p>
+<p>5.      Install Komodo Edit</p>
+<p>6.      Install on-c-e tools for Komodo</p>
+<p>7.      Unzip and copy the <strong>oncepy</strong> folder into the
+Python/Lib/site-packages/</p>
+<p>8.      Run from any folder containing the model file with the command:</p>
+<p>***python –m oncepy nnnn.modfile.txt ***</p>
+<p>\</p>
+<p><strong>Install onceutf on iOS:</strong></p>
+<p></p>
+<p><strong>onceutf</strong> runs in the iOS <strong>Pythonista</strong> <strong>App</strong> environment which
+includes numpy, sympy and matplotlib libraries.  Copy the <strong>onceutf.py</strong>
+file to the site-packages folder and a model file to a division folder.</p>
+<p></p>
+<p>Without Dropbox integration files will need to be moved by creating new
+empty files in Pythonista and using copy and paste (script for
+downloading  Dropbox files to Pythonista
+<a class="reference external" href="https://omz-forums.appspot.com/pythonista/post/4995757044137984">https://omz-forums.appspot.com/pythonista/post/4995757044137984</a>).</p>
+<p></p>
+<p>Open the <strong>onceutf.py</strong> program in Pythonista and create an ‘action’
+(wrench menu) for it, leaving the argument blank.  Open a model or
+template.  Run it by invoking the action.  The calc will be echoed to
+the screen. The following script makes it convenient to iterate a model
+by editing in Pythonista and viewing with the <strong>Notesy App</strong> (UTF-8
+fonts).</p>
+<p></p>
+<p><strong>notesy.py script (</strong><a class="reference external" href="http://on-c-e.us">http://on-c-e.us</a>)</p>
+<p>“””open Pythonista calc in Notesy</p>
+<p></p>
+<p>1. Copy this script to Pythonista and set it as an action.</p>
+<p>2. Set the fixed width font in Notesy to DejaVu Sans Mono.</p>
+<p>“””</p>
+<p>import editor</p>
+<p>import webbrowser</p>
+<p>import clipboard</p>
+<p>base = ‘notesy://x-callback-url/append?name=calc_tmp.txt’</p>
+<p>text = editor.get_text()</p>
+<p>url = clipboard.set(text)</p>
+<p>webbrowser.open(base)</p>
+<p><img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image030.png" /></p>
+<p><strong>Figure</strong> <strong>9.  Notesy screenshot of onceutf calc running on iPhone</strong></p>
+<p></p>
+<p></p>
+<p><strong>Install onceutf on Android:</strong></p>
+<p></p>
+<p><strong>onceutf</strong> runs in the <strong>QPython</strong> <strong>App</strong> (Python 2) environment on
+Android.  Copy the compiled numpy and sympy libraries into the
+site-packages folder at</p>
+<p></p>
+<p>/mnt/sdcard/com.hipipal.qpyplus/lib/python2.7/site-packages.</p>
+<p></p>
+<p>The compiled libraries are available through QPython sites and also at
+<a class="reference external" href="http://on-c-e.us">http://on-c-e.us</a>.  Matplotlib libraries are not yet available.</p>
+<p></p>
+<p>The following file arrangement and script makes it convenient to iterate
+and review a model.  It uses the <strong>DroidEdit App</strong> to edit the model and
+view the calc. The <strong>Hackers Keyboard App</strong> is efficient for writing
+models.</p>
+<p></p>
+<p><strong>once.py script (</strong><a class="reference external" href="http://on-c-e.us">http://on-c-e.us</a>)</p>
+<p></p>
+<p>#qpy:console</p>
+<p>“””</p>
+<p>once.py script runs a onceutf model on Android using QPython</p>
+<p></p>
+<p>1. Copy onceutf.py to the ‘scripts’ folder (see prog path below)</p>
+<p>2. Create a division folder for the models (see model path below)</p>
+<p>3. Copy the model and this script into the division folder</p>
+<p>4. Open this script in QEdit (which is part of QPython)</p>
+<p>5. Modify folder and model names below, as needed, and save.</p>
+<p>6. Edit models and review calcs in DroidEdit (or similar editor).</p>
+<p>7. Set the editor font to DejaVu Sans Mono for calc math symbols.</p>
+<p>8. Run this script in QEdit to execute program.</p>
+<p></p>
+<p>“””</p>
+<p></p>
+<p>import os, sys</p>
+<p></p>
+<p>prog =’/mnt/sdcard/com.hipipal.qpyplus/scripts/onceutf.py’</p>
+<p>model =’/mnt/sdcard/com.hipipal.qpyplus/models/0301.deflection.txt’</p>
+<p>os.system(sys.executable + “ “ + prog + “ “ + model)</p>
+<p></p>
+<p></p>
+<p></p>
+<p><img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image031.png" /></p>
+<p><strong>Figure</strong> <strong>10. DroidEdit screenshot of onceutf calc running on
+Android tablet</strong></p>
+<p>\</p>
+<p></p>
+<p></p>
+<p>+————————————————————————–+
+| :                                                                        |
++————————————————————————–+</p>
+</section>
+<section id="appendix-e-wakari-pythonanywhere-style-margin-left-0in">
+<h1>Appendix E – Wakari, PythonAnywhere {style=”margin-left:0in”}<a class="headerlink" href="#appendix-e-wakari-pythonanywhere-style-margin-left-0in" title="Link to this heading">¶</a></h1>
+<p><img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image032.jpg" /></p>
+<p>** **</p>
+<p>\</p>
+<p><strong>Onceutf.py</strong> runs on desktop and web platforms.  Both environments are
+discussed in this section.</p>
+<p></p>
+<p><strong>Wakari</strong> is a Python-Linux web platform that runs in the browser. 
+Upload <strong>onceutfnnn.py</strong> and <strong>mode.01.txt</strong> to your Wakari account. 
+Open a <strong>bash shell</strong> window (not Ipython) and type</p>
+<p><br />
+<em><strong>python onceutfnnn.py 0101.simple.txt –c</strong></em></p>
+<p></p>
+<p>at the command prompt, where nnn is the version number (i.e. 040).  The
+program will output a model summary followed by the calc output (the –c
+option echoes the output to stdout; use –b to echo output to the browser
+when using the program locally). Use the browser file editor to review
+and modify the files.</p>
+<p>** **</p>
+<p><strong><img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image033.png" /></strong></p>
+<p><strong>Figure</strong> <strong>11. Wakari – terminal and editor in split windows</strong></p>
+<p>** **</p>
+<p>+————————————————————————–+
+| :                                                                        |
++————————————————————————–+</p>
+<p><strong>PythonAnywhere</strong> is a Python-Linux web platform that runs in the
+browser.  Upload <strong>onceutfnnn.py</strong> and <strong>mode.001.txt</strong> to your
+<strong>PythonAnywhere</strong> account.  Open a <strong>bash shell</strong> window (not Ipython
+or Python) and type</p>
+<p><img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image034.jpg" /><br />
+<em><strong>python onceutfnnn.py 0101.simple.txt –c</strong></em></p>
+<p></p>
+<p>at the command prompt, where nnn is the version number (i.e. 040).  The
+program will output a model summary followed by the calc output (the –c
+option echoes the output to stdout).  Edit files in the file editor.</p>
+<p><img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image035.png" /></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p>\</p>
+<p>**                Figure** <strong>12.</strong> <strong>PythonAnywhere – side by side
+browser windows</strong></p>
+<p>\</p>
+<p></p>
+<p></p>
+<p>** **</p>
+<p>** **</p>
+<p>** **</p>
+</section>
+<section id="appendix-f-minimum-programs-and-libraries-style-margin-left-0in">
+<h1>Appendix F – Minimum Programs and Libraries {style=”margin-left:0in”}<a class="headerlink" href="#appendix-f-minimum-programs-and-libraries-style-margin-left-0in" title="Link to this heading">¶</a></h1>
+<p></p>
+<p>Note:  If the standard scientific distribution does not include a
+library use the pip install method or in the case of Anaconda use
+conda.  Other installed scientific libraries including SciPy, pandas,
+rpy etc. may be installed by the distribution or installed separately
+and will be available to <strong>on-c-e</strong> through functions and script
+operations (see disk operations, Appendix B).</p>
+<p></p>
+<p><strong>Program</strong></p>
+<p><strong>Python 2</strong></p>
+<p><strong>Python 3</strong></p>
+<p><strong>Notes</strong></p>
+<p>** **</p>
+<p></p>
+<p></p>
+<p></p>
+<p>**onceutf **</p>
+<p><strong>0.4.0</strong></p>
+<p><strong>0.4.0</strong></p>
+<p></p>
+<p><strong>Python</strong></p>
+<p>2.7.x  and above</p>
+<p>3.4 and above</p>
+<p>Python Platform</p>
+<p><strong>Numpy</strong></p>
+<p>1.7.x and above</p>
+<p>1.8 and above</p>
+<p>Python Library</p>
+<p><strong>SymPy</strong></p>
+<p>0.7.x and above</p>
+<p>0.7.5 and above</p>
+<p>Python Library</p>
+<p><strong>Matplotlib</strong></p>
+<p>1.2.x and above</p>
+<p>1.3.1 and above</p>
+<p>Python Library</p>
+<p><strong>DejaVu fonts</strong></p>
+<p>(note: <strong>Unum</strong> and <strong>tabulate</strong> are built-in classes of <strong>onceutf</strong></p>
+<p>2.3.4 and above</p>
+<p>2.3.4 and above</p>
+<p>UTF math fonts (external program)</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p>**oncepy<br />
+** in addition to above</p>
+<p><strong>0.4.0</strong></p>
+<p><strong>0.4.0</strong></p>
+<p></p>
+<p><strong>Unum</strong></p>
+<p>4.1.x and above</p>
+<p>4.1.x and above</p>
+<p>Install with pip</p>
+<p><strong>Tabulate</strong></p>
+<p>0.7.x and above</p>
+<p>0.7.x and above</p>
+<p>Install with pip</p>
+<p><strong>once.sty</strong></p>
+<p>0.4.0</p>
+<p>0.4.0</p>
+<p>Customize PDF styles</p>
+<p><strong>unitc.py</strong></p>
+<p>0.4.0</p>
+<p>0.4.0</p>
+<p>Customize units</p>
+<p>**oncepy  with PDF<br />
+** in addition to above</p>
+<p><strong>0.4.0</strong></p>
+<p><strong>0.4.0</strong></p>
+<p></p>
+<p><strong>TeX Live</strong></p>
+<p>2013 and above</p>
+<p>2013 and above</p>
+<p>Network install (external program)</p>
+<p><strong>PyPDF2</strong></p>
+<p>1.1x and above</p>
+<p>1.1x and above</p>
+<p>Install with pip</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p><strong>Table</strong> <strong>4. Minimum required versions of programs and libraries</strong></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p>+————————————————————————–+
+| 1                                                                        |
++————————————————————————–+</p>
+</section>
+<section id="appendix-g-licenses-style-margin-left-0in">
+<h1>Appendix G – Licenses {style=”margin-left:0in”}<a class="headerlink" href="#appendix-g-licenses-style-margin-left-0in" title="Link to this heading">¶</a></h1>
+<p></p>
+<p></p>
+<p><strong>oncepy, onceutf</strong> and <strong>on-c-e Komodo tools</strong> are distributed under
+the <strong>MIT</strong> or compatible license.  Copyright is retained by the code
+author.</p>
+<p></p>
+<p><img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image036.png" /></p>
+<p></p>
+<p>** **</p>
+<p><strong>Figure</strong> <strong>13.</strong>
+<a class="reference external" href="http://opensource.org/licenses/MIT"><strong>http://opensource.org/licenses/MIT</strong></a></p>
+<p>\</p>
+<p></p>
+<p><img alt="" src="doc_old/manual/docs/html/figures/onx2_files/image037.png" /></p>
+<p></p>
+<p><strong>Figure</strong> <strong>14. http://creativecommons.org/publicdomain/zero/1.0/</strong></p>
+<p>Template files uploaded to <strong>once-db</strong> are made available to others
+under the CCO 1.0 Public Domain Dedication. A <strong>Komodo</strong> snippet is
+provided for inserting license text in a template file:</p>
+<p></p>
+<p><strong>[#] This file contains a generic on-c-e model template (the
+template).</strong></p>
+<p><strong>[#] The template is distributed under the CCO 1.0 Public Domain
+Dedication</strong></p>
+<p><strong>[#] http://creativecommons.org/publicdomain/zero/1.0/</strong></p>
+<p><strong>[#] The template is not a structural design calculation and</strong></p>
+<p><strong>[#] must be modified by the user prior to use.</strong></p>
+<p><strong>[#] The template user assumes sole and complete responsibility for</strong></p>
+<p>**[#] all existing or modified inputs and the computed model results.<br />
+**</p>
+<p></p>
+<p>+————————————————————————–+
+| $                                                                       |
++————————————————————————–+</p>
+</section>
+<section id="appendix-h-security-and-namespaces-style-margin-left-0in">
+<h1>Appendix H – Security and Namespaces {style=”margin-left:0in”}<a class="headerlink" href="#appendix-h-security-and-namespaces-style-margin-left-0in" title="Link to this heading">¶</a></h1>
+<p>** **</p>
+<p>** **</p>
+<p>** **</p>
+<p>** **</p>
+<p><strong>on-c-e</strong> is designed to be a flexible and efficient tool for
+structural analysis and design. It is also designed to facilitate
+program verification by keeping the source code relatively compact. 
+<strong>onceutf.py</strong> and <strong>oncepy</strong> are each about 1500 lines of source code
+(about 3000 lines with comments).  Programming tradeoffs occur in
+pursuing these objectives.</p>
+<p></p>
+<p>The programs use Python <strong>exec</strong> and <strong>eval</strong> statements because it is
+the simple, straightforward way to process the model operations. It is
+possible to send input to <strong>exec</strong> and <strong>eval</strong> that does unexpected or
+undesirable things. However the chances of this happening can be
+controlled or eliminated with relatively little effort.  Sensible model
+file input is tightly constrained and under the control of engineers and
+designers who are running the models. Appropriate inputs, in the form of
+structural analysis equations, arrays and functions are well known and
+easily recognized by the engineers using the tool.  Because unsafe code
+in the model would appear very different from these well understood
+structural forms it is straightforward to spot and delete suspicious or
+problematic model code before it is run.  Model security checks may be
+added in the future but the only way to ensure proper operation of the
+program is to check the input.</p>
+<p></p>
+<p>The programs also import <strong>numpy</strong>, <strong>sympy</strong> and other libraries in
+their entirety into the model namespace.  This approach improves
+readability and streamlines equation input but may introduce potential
+problems with naming collisions. Some variable naming rules have been
+developed and more will be added as experience is gained using the
+program.  The programs currently includes some tools and methods for
+checking collisions between model variable names and more will be added.</p>
+<p></p>
+<p>In summary, to make <strong>on-c-e</strong> more readable, useful and flexible, the
+design philosophy chosen is code simplicity and transparency, along with
+the obviousness of appropriate input as opposed to verbose and
+restrictive input and processing policies.</p>
+<p>\</p>
+<p></p>
+<p>+————————————————————————–+
+| :                                                                        |
++————————————————————————–+</p>
+</section>
+<section id="appendix-i-examples-style-margin-left-0in">
+<h1>Appendix I – Examples {style=”margin-left:0in”}<a class="headerlink" href="#appendix-i-examples-style-margin-left-0in" title="Link to this heading">¶</a></h1>
+<p></p>
+<p>This appendix includes the PDF calc output for each example. The PDF
+calcs are followed by inputs and outputs for each example, in order:
+<strong>(1)</strong> model <strong>(2)</strong> UTF calc <strong>(3)</strong> IPython file<br />
+<strong>(4)</strong> function file <strong>(5)</strong> summary file <strong>(6)</strong> log file.  Download
+example files at <a class="reference external" href="http://on-c-e.org">http://on-c-e.org</a>.</p>
+<p><strong>00_Simple:</strong> 0001.simple.txt ****</p>
+<p>**               Demonstrates:** sections, terms and equations</p>
+<p><strong>01_Template:</strong> 0101.template.txt** **</p>
+<p>**              ** Sections, terms, equations and inline
+reStructuredText</p>
+<p><strong>02_Bearing:</strong> 0201.bearing.txt</p>
+<p>**              ** Figures, complex equations, limit checks</p>
+<p><strong>03_Deflection:</strong> 0301.deflection.txt</p>
+<p>Figures, arrays, equation expansion options</p>
+<p><strong>04_Seismic:</strong></p>
+<p>0401.bldg_info.txt       term lists, inline reStructuredText</p>
+<p>0402.seismic.txt                      built-in math functions</p>
+<p>0403.seismic.txt                      comodels, symbolic expressions</p>
+<p>0404.frame.txt             sections, arrays</p>
+<p>0405.brace.txt             limit checks</p>
+<p><strong>05_Eigenvector:</strong>  0501.eigenvector.txt</p>
+<p>External functions, plotting and linear algebra
+library.</p>
+<p><strong>06_OpenSees:</strong>  0601.truss.txt</p>
+<p>Read, edit and disk operations for external programs and
+data</p>
+<p><strong>07_Matrix:</strong>  0701.stiffness.txt</p>
+<p>External functions, plotting and linear algebra
+library</p>
+<p></p>
+<p>*** ***</p>
+<p>** **</p>
+</section>
+<section id="index-style-margin-left-0in">
+<h1>Index {style=”margin-left:0in”}<a class="headerlink" href="#index-style-margin-left-0in" title="Link to this heading">¶</a></h1>
+</section>
+<section id="id1">
+<h1>{style=”margin-left:0in”}<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<p></p>
+<p>\</p>
+<p><strong>0101.template.txt</strong>, 7, 42</p>
+<p>Android, 8, 32, 34, 35</p>
+<p><strong>arrays</strong>, 11, 25, 26, 27, 41, 42</p>
+<p>ASCII, 9</p>
+<p>calc, 6, 7, 9, 10, 11, 23, 24, 28, 29, 31, 36, 37, 42</p>
+<p>calculation, 5, 7, 8, 9, 27, 32</p>
+<p><strong>DejaVu</strong>, 14, 31, 38</p>
+<p><strong>Download</strong>, 7, 14, 31</p>
+<p>equations, 12, 25, 27</p>
+<p>fonts, 14, 31, 32</p>
+<p>Fonts, 14</p>
+<p><strong>format</strong>, 11, 12, 23, 24, 25, 26, 27, 28, 29</p>
+<p>functions, 23, 42</p>
+<p>IDE, 8, 14</p>
+<p><strong>install</strong>, 14, 38</p>
+<p>interactive analysis, 5, 8, 9, 15</p>
+<p>iOS, 8, 32, 33</p>
+<p><strong>IPython</strong>, 4, 5, 8, 9, 15, 16, 42</p>
+<p><strong>Komodo Edit</strong>, 14</p>
+<p><strong>LaTeX</strong>, 29</p>
+<p>Linux, 8, 32, 36, 37</p>
+<p><strong>MATLAB</strong>, 8</p>
+<p>model, 7, 8, 9, 10, 11, 14, 23, 24, 25, 28, 31, 32, 36, 37, 40</p>
+<p><em><strong>on-c-e</strong></em>, 2, 5, 7, 8, 14, 31, 38, 39</p>
+<p><strong>once-db</strong>, 8, 40</p>
+<p><strong>onceutf</strong>, 8, 14, 25, 32, 33, 34, 38, 41</p>
+<p><strong>OpenSees</strong>, 42</p>
+<p>OSX, 8</p>
+<p><strong>PDF</strong>, 10, 12, 38</p>
+<p>project, 4, 5, 7, 9, 10, 11, 14, 28, 29</p>
+<p>Python, 7, 8, 10, 14, 23, 26, 27, 36, 37, 38</p>
+<p><strong>PythonAnywhere</strong>, 7, 36, 37</p>
+<p><strong>Pythonista</strong>, 8, 33</p>
+<p><strong>QPython</strong>, 8, 34</p>
+<p><strong>sections</strong>, 11, 23, 27, 42</p>
+<p><strong>sqlilte</strong>, 15</p>
+<p>template, 6, 7, 8, 24, 29, 31, 40</p>
+<p>terms, 25, 27</p>
+<p><strong>TexLive</strong>, 31</p>
+<p><strong>Upload</strong>, 7, 14, 36, 37</p>
+<p>UTF, 5, 10, 24, 31, 32, 38, 42</p>
+<p>UTF-8, 5, 10, 24, 32</p>
+<p><strong>Wakari</strong>, 7, 8, 36</p>
+<p>Windows, 8, 32</p>
+<p>\</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p><strong>ã</strong> <strong>StructureLabs</strong></p>
+<p>15 Blanca Drive</p>
+<p>Novato, CA  94947</p>
+<p>Phone 415.314.8453 <strong>• rholland&#64;structurelabs.com</strong></p>
+<p></p>
+<p>\</p>
+<p></p>
+</section>
+
+
+        </div>
+      </div>
+
+      <div id="side-menu-container">
+
+        <div id="search" role="search">
+        <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
+            <input type="text" name="q" placeholder="Search..." />
+            <input type="hidden" name="check_keywords" value="yes" />
+            <input type="hidden" name="area" value="default" />
+        </form>
+</div>
+
+        <div id="side-menu" role="navigation">
+
+          
+  
+    
+  
+  
+    <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../page1.html"><strong>rivt</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../page1.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../page1.html#folder-structure">Folder Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../page1.html#commands-and-tags">Commands and Tags</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../page1.html#commands">commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../page1.html#tags">tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../page1.html#example">example</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../page2.html"><strong>rivt-doc</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../page2.html#rivt-installation">rivt installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../page2.html#rivt-doc-installation">rivt-doc installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../page2.html#vscode-profiles">VSCode profiles</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../page2.html#snippets">snippets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../page2.html#short-cuts">short cuts</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  
+
+
+        </div>
+
+        
+
+      </div>
+
+    </div>
+
+<footer>
+    <div id="footer-info">
+        <ul id="build-details">
+            
+                <li class="footer-element">
+                    
+                        <a href="../../../../../_sources/doc_old/manual/docs/html/figures/onx3.md.txt" rel="nofollow"> source</a>
+                    
+                </li>
+            
+
+            
+
+            
+        </ul>
+
+        
+            <div id="copyright">
+                &copy; 2023, rholland
+            </div>
+        
+
+        <div id="credit">
+            created with <a href="http://sphinx-doc.org/">Sphinx</a> and <a href="https://github.com/Autophagy/insegel">Insegel</a>
+
+        </div>
+    </div>
+
+    <a id="menu-toggle" class="fa fa-bars" aria-hidden="true"></a>
+
+    <script type="text/javascript">
+      $("#menu-toggle").click(function() {
+        $("#menu-toggle").toggleClass("toggled");
+        $("#side-menu-container").slideToggle(300);
+      });
+    </script>
+
+</footer> 
+
+</div>
+
+</body>
+</html>
