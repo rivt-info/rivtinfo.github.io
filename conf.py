@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'rivt'
-copyright = '2023, rholland'
+copyright = '2023 StructureLabs'
 author = 'rholland'
 release = '0.1'
 
