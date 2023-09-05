@@ -33,30 +33,15 @@ provided in the [rivt User Manual](https://www.rivt-sys.net>)
 
 ## rivt-doc installation
 
-The minimum software needed to run is:
-
-- Python 3.8 or higher 
-- rivt library + Python dependencies
-
-A complete rivt system additionally includes:
-
 - VSCode + extensions 
 - LaTeX 
 - Github account
 
-rivt-sys installs the complete rivt system in a portable folder via a zip file,
-and is available for every OS platform. rivt also runs in the cloud using
-GitHub CodeSpaces or other cloud service providers. Installation details are
-provided in the [rivt User Manual](https://www.rivt-sys.net>)
+rivt-doc is available for every OS platform and installs either in a single
+portable folder via a zip file or as a set of system programs. It also runs in
+the cloud using GitHub CodeSpaces or other cloud service providers.
 
 ## VSCode profiles
-
-abc defg
-
-dasdfasdkj sdlkj asd
-
-
-## snippets and shortcuts
 
 The rivt VSCode profile includes shortcuts for common editing functions and
 snippets for API functions and commands.
