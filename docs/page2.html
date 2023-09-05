@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#2D2D2D" />
   
-  <title>rivt :: rivt-doc</title>
+  <title>rivt :: rivt syntax</title>
   
 
   <link rel="icon" type="image/png" sizes="32x32" href="_static/img/favicon-32x32.png">
@@ -45,97 +45,361 @@
       <div id="main-content-container">
         <div id="main-content" role="main">
           
-  <a class="reference external image-reference" href="index.html"><img alt="rivt logo" class="align-left" src="_images/riv-doc02.png" style="width: 125px;" /></a>
-<p><strong><p style="text-align: left;"><a href="index.html"> HOME </a></p></strong></p>
-<section id="rivt-doc">
-<h1><strong>rivt-doc</strong><a class="headerlink" href="#rivt-doc" title="Link to this heading">¶</a></h1>
-<ul class="simple">
-<li><p>VS Code</p></li>
-<li><p>Texlive</p></li>
-</ul>
-<section id="rivt-installation">
-<h2>rivt installation<a class="headerlink" href="#rivt-installation" title="Link to this heading">¶</a></h2>
-<p>The minimum software needed to run is:</p>
-<ul class="simple">
-<li><p>Python 3.8 or higher</p></li>
-<li><p>rivt library + Python dependencies</p></li>
-</ul>
-<p>A complete rivt system additionally includes:</p>
-<ul class="simple">
-<li><p>VSCode + extensions</p></li>
-<li><p>LaTeX</p></li>
-<li><p>Github account</p></li>
-</ul>
-<p>rivt-sys installs the complete rivt system in a portable folder via a zip file,
-and is available for every OS platform. rivt also runs in the cloud using
-GitHub CodeSpaces or other cloud service providers. Installation details are
-provided in the <a class="reference external" href="https://www.rivt-sys.net%3E">rivt User Manual</a></p>
+  <section id="rivt-syntax">
+<h1>rivt syntax<a class="headerlink" href="#rivt-syntax" title="Link to this heading">¶</a></h1>
+<p>rivt syntax includes arbitrary unicode text including rivt commands and tags. A
+rivt command reads or writes external files and is denoted by || at the
+beginning of a line. Command parameters are separated by |. In the summary
+below parameter options are desginated with semi-colons and list parameters
+with commas.</p>
+<p>Tags format a line or block of text and are denoted with _[tag] at the end of a
+line. Block tags start a block of text with _[[tag]] and end with _[[q]]. The
+“=” and “:=” tags used in the Value method are exceptions.</p>
 </section>
-<section id="rivt-doc-installation">
-<h2>rivt-doc installation<a class="headerlink" href="#rivt-doc-installation" title="Link to this heading">¶</a></h2>
-<p>The minimum software needed to run is:</p>
-<ul class="simple">
-<li><p>Python 3.8 or higher</p></li>
-<li><p>rivt library + Python dependencies</p></li>
-</ul>
-<p>A complete rivt system additionally includes:</p>
-<ul class="simple">
-<li><p>VSCode + extensions</p></li>
-<li><p>LaTeX</p></li>
-<li><p>Github account</p></li>
-</ul>
-<p>rivt-sys installs the complete rivt system in a portable folder via a zip file,
-and is available for every OS platform. rivt also runs in the cloud using
-GitHub CodeSpaces or other cloud service providers. Installation details are
-provided in the <a class="reference external" href="https://www.rivt-sys.net%3E">rivt User Manual</a></p>
-</section>
-<section id="vscode-profiles">
-<h2>VSCode profiles<a class="headerlink" href="#vscode-profiles" title="Link to this heading">¶</a></h2>
-<p>abc defg</p>
-<p>dasdfasdkj sdlkj asd</p>
-<section id="snippets">
-<h3>snippets<a class="headerlink" href="#snippets" title="Link to this heading">¶</a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">asdfa</span>
-<span class="n">asdfas</span>
-<span class="n">asdfas</span>
+<section id="api-functions">
+<h1>API functions<a class="headerlink" href="#api-functions" title="Link to this heading">¶</a></h1>
+<p>name        function<br />
+repo        rv.R(“””label | toc; notoc page</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>                Report, repository and introductory text
+
+                &quot;&quot;&quot;)
 </pre></div>
 </div>
-</section>
-<section id="short-cuts">
-<h3>short cuts<a class="headerlink" href="#short-cuts" title="Link to this heading">¶</a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Keystroke</span>                   <span class="n">Description</span>
+<p>insert      rv.I(“””label | color</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>                Text, static tables and images
 
-
-<span class="n">alt</span><span class="o">+</span><span class="n">q</span>                <span class="n">rewrap</span> <span class="n">paragraph</span> <span class="k">with</span> <span class="n">hard</span> <span class="n">line</span> <span class="n">feeds</span> <span class="p">(</span><span class="mi">80</span> <span class="n">default</span><span class="p">)</span>
-<span class="n">alt</span><span class="o">+</span><span class="n">p</span>                <span class="nb">open</span> <span class="n">file</span> <span class="n">under</span> <span class="n">cursor</span>
-<span class="n">alt</span><span class="o">+.</span>                <span class="n">select</span> <span class="n">correct</span> <span class="n">spelling</span> <span class="n">under</span> <span class="n">cursor</span>
-<span class="n">alt</span><span class="o">+</span><span class="mi">8</span>                <span class="n">insert</span> <span class="n">date</span>
-<span class="n">alt</span><span class="o">+</span><span class="mi">9</span>                <span class="n">insert</span> <span class="n">time</span>
-
-<span class="n">ctl</span><span class="o">+</span><span class="mi">1</span>                <span class="n">focus</span> <span class="n">on</span> <span class="n">first</span> <span class="n">editor</span>
-<span class="n">ctl</span><span class="o">+</span><span class="mi">2</span>                <span class="n">focus</span> <span class="n">on</span> <span class="nb">next</span> <span class="n">editor</span>
-<span class="n">ctl</span><span class="o">+</span><span class="mi">3</span>                <span class="n">focus</span> <span class="n">on</span> <span class="n">previous</span> <span class="n">editor</span>
-<span class="n">ctl</span><span class="o">+</span><span class="mi">8</span>                <span class="n">focus</span> <span class="n">on</span> <span class="n">explorer</span> <span class="n">pane</span>
-<span class="n">ctl</span><span class="o">+</span><span class="mi">9</span>                <span class="n">focus</span> <span class="n">on</span> <span class="n">github</span> <span class="n">pane</span>    
-
-<span class="n">ctl</span><span class="o">+</span><span class="n">alt</span><span class="o">+</span><span class="n">x</span>            <span class="n">reload</span> <span class="n">window</span>
-<span class="n">ctl</span><span class="o">+</span><span class="n">alt</span><span class="o">+</span><span class="n">u</span>            <span class="n">unfold</span> <span class="nb">all</span> <span class="n">code</span>
-<span class="n">ctl</span><span class="o">+</span><span class="n">alt</span><span class="o">+</span><span class="n">f</span>            <span class="n">fold</span> <span class="n">code</span> <span class="n">level</span> <span class="mi">2</span> <span class="p">(</span><span class="n">rivt</span> <span class="n">sections</span> <span class="n">visible</span><span class="p">)</span>
-<span class="n">ctl</span><span class="o">+</span><span class="n">alt</span><span class="o">+</span><span class="n">a</span>            <span class="n">fold</span> <span class="n">code</span> <span class="o">-</span> <span class="nb">all</span> <span class="n">levels</span>
-<span class="n">ctl</span><span class="o">+</span><span class="n">alt</span><span class="o">+</span><span class="n">t</span>            <span class="n">toggle</span> <span class="n">local</span> <span class="n">fold</span>
-<span class="n">ctl</span><span class="o">+</span><span class="n">alt</span><span class="o">+</span><span class="n">e</span>            <span class="n">toggle</span> <span class="n">explorer</span> <span class="n">sort</span> <span class="n">order</span>
-<span class="n">ctl</span><span class="o">+</span><span class="n">alt</span><span class="o">+</span><span class="n">s</span>            <span class="n">toggle</span> <span class="n">spell</span> <span class="n">check</span>
-<span class="n">ctl</span><span class="o">+</span><span class="n">alt</span><span class="o">+</span><span class="n">g</span>            <span class="nb">next</span> <span class="n">editor</span> <span class="n">group</span>
-
-<span class="n">ctl</span><span class="o">+</span><span class="n">shift</span><span class="o">+</span><span class="n">u</span>          <span class="nb">open</span> <span class="n">URL</span> <span class="n">under</span> <span class="n">cursor</span> <span class="ow">in</span> <span class="n">browser</span>
-<span class="n">ctl</span><span class="o">+</span><span class="n">shift</span><span class="o">+</span><span class="n">s</span>          <span class="nb">open</span> <span class="n">GitHub</span> <span class="n">rivt</span> <span class="n">README</span> <span class="n">search</span>
-<span class="n">ctl</span><span class="o">+</span><span class="n">shift</span><span class="o">+</span><span class="n">a</span>          <span class="n">commit</span> <span class="nb">all</span> 
-<span class="n">ctl</span><span class="o">+</span><span class="n">shift</span><span class="o">+</span><span class="n">z</span>          <span class="n">commit</span> <span class="n">current</span> <span class="n">editor</span>
-<span class="n">ctl</span><span class="o">+</span><span class="n">shift</span><span class="o">+</span><span class="n">x</span>          <span class="n">post</span> <span class="n">to</span> <span class="n">remote</span>   
+                &quot;&quot;&quot;)
 </pre></div>
 </div>
+<p>values      rv.V(“””label | sub; nosub</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>                Equations and text
+            
+                &quot;&quot;&quot;)
+</pre></div>
+</div>
+<p>tools       rv.T(“””label | lines; nolines</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>                Python code
+
+                &quot;&quot;&quot;)
+</pre></div>
+</div>
+<p>exclude     rv.X(“””any</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>                Any function changed to X is not evaluated and can be used for
+                comments and debugging.
+
+                &quot;&quot;&quot;)
+</pre></div>
+</div>
+<p>write-md    rv.writemd()
+(wm)        writes markdown document</p>
+<p>write-pdf   rv.writepdf()
+(wp)        writes markdown and PDF document</p>
 </section>
+<section id="id1">
+<h1>API functions<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
 </section>
+<section id="rivt-commands">
+<h1>rivt commands<a class="headerlink" href="#rivt-commands" title="Link to this heading">¶</a></h1>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>command</strong></p></th>
+<th class="head text-center"><p><strong>API function</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>||init | rel file path</p></td>
+<td class="text-center"><p>R</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>||append | rel file path</p></td>
+<td class="text-center"><p>R</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>||image | rel file path</p></td>
+<td class="text-center"><p>I</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>||table | rel file path</p></td>
+<td class="text-center"><p>I</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>||declare | rel file path</p></td>
+<td class="text-center"><p>V</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>||text | rel file path</p></td>
+<td class="text-center"><p>R I V</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="rivt-tags">
+<h1>rivt tags<a class="headerlink" href="#rivt-tags" title="Link to this heading">¶</a></h1>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>line tags</strong></p></th>
+<th class="head text-center"><p><strong>description</strong></p></th>
+<th class="head text-center"><p><strong>API</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>text _[b]</p></td>
+<td class="text-center"><p>bold</p></td>
+<td class="text-center"><p>R I V</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>text _[c]</p></td>
+<td class="text-center"><p>center</p></td>
+<td class="text-center"><p>R I V</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>text _[i]</p></td>
+<td class="text-center"><p>italic</p></td>
+<td class="text-center"><p>R I V</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>text _[bc]</p></td>
+<td class="text-center"><p>bold center</p></td>
+<td class="text-center"><p>R I V</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>text _[bi]</p></td>
+<td class="text-center"><p>bold italic</p></td>
+<td class="text-center"><p>R I V</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>text _[r]</p></td>
+<td class="text-center"><p>right justify</p></td>
+<td class="text-center"><p>R I V</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>text _[u]</p></td>
+<td class="text-center"><p>underline</p></td>
+<td class="text-center"><p>R I V</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>text _[l]</p></td>
+<td class="text-center"><p>LaTeX math</p></td>
+<td class="text-center"><p>R I V</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>text _[s]</p></td>
+<td class="text-center"><p>sympy math</p></td>
+<td class="text-center"><p>R I V</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>text _[bs]</p></td>
+<td class="text-center"><p>bold sympy math</p></td>
+<td class="text-center"><p>R I V</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>text _[e]</p></td>
+<td class="text-center"><p>equation label autonumber</p></td>
+<td class="text-center"><p>R I V</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>text _[f]</p></td>
+<td class="text-center"><p>figure caption autonumber</p></td>
+<td class="text-center"><p>R I V</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>text _[t]</p></td>
+<td class="text-center"><p>table title autonumber</p></td>
+<td class="text-center"><p>R I V</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>text _[#]</p></td>
+<td class="text-center"><p>footnote autonumber</p></td>
+<td class="text-center"><p>R I V</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>text _[d]</p></td>
+<td class="text-center"><p>footnote description</p></td>
+<td class="text-center"><p>R I V</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>_[page]</p></td>
+<td class="text-center"><p>new page</p></td>
+<td class="text-center"><p>R I V</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>_[address label]</p></td>
+<td class="text-center"><p>link</p></td>
+<td class="text-center"><p>R I V</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>a = n | unit, alt | descrip</p></td>
+<td class="text-center"><p>= tag declares a variable</p></td>
+<td class="text-center"><p>V</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>a := b + c | unit, alt | n, n</p></td>
+<td class="text-center"><p>:= tag assigns a value</p></td>
+<td class="text-center"><p>V</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>block tags</strong></p></th>
+<th class="head text-center"><p><strong>description</strong></p></th>
+<th class="head text-center"><p><strong>API function</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>_[[b]]</p></td>
+<td class="text-center"><p>bold</p></td>
+<td class="text-center"><p>R I V</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>_[[c]]</p></td>
+<td class="text-center"><p>center</p></td>
+<td class="text-center"><p>R I V</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>_[[i]]</p></td>
+<td class="text-center"><p>italic</p></td>
+<td class="text-center"><p>R I V</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>_[[p]]</p></td>
+<td class="text-center"><p>plain</p></td>
+<td class="text-center"><p>R I V</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>_[[q]]</p></td>
+<td class="text-center"><p>quit block</p></td>
+<td class="text-center"><p>R I V</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>_[[l]]</p></td>
+<td class="text-center"><p>LaTeX</p></td>
+<td class="text-center"><p>I V</p></td>
+</tr>
+</tbody>
+</table>
+<p>The first line of a rivt file is <em>import rivt.rivtapi as rv</em> followed by the
+Repo method rv.R(). rv.R is followed by any of the other three methods in any
+number or order. The first line of each method is a section label followed by
+section parameters. Section labels may be converted into editing references by
+prepending a double hyphen –.</p>
+<p>File format conventions follow the Python formatter pep8, and linter ruff.
+Method names start in column one. All other lines must be indented 4 spaces to
+facilitate section folding, bookmarks and legibility. The first line of each
+rivt function defines the section title and parameters.</p>
+</section>
+<section id="rivt-example">
+<h1>rivt example<a class="headerlink" href="#rivt-example" title="Link to this heading">¶</a></h1>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">rivt.rivtapi</span> <span class="k">as</span> <span class="nn">rv</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">R</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Introduction | notoc, 1</span>
+
+<span class="s2">    The Repo method (short for repository and report) is the first method of a</span>
+<span class="s2">    rivt file which specifies document configuration settings.</span>
+
+<span class="s2">    The first line of any method is the heading line, which starts a new</span>
+<span class="s2">    document section. If the section heading is preceded by two dashes (--) it</span>
+<span class="s2">    becomes a section reference and a new section is not started. The toc</span>
+<span class="s2">    parameter specifies whether a document table of contents is generated (not</span>
+<span class="s2">    to be confused with a report table of contents). The page number is the</span>
+<span class="s2">    starting page number for the doc when processed as a stand alone document.</span>
+
+<span class="s2">    The init command specifies the name of the configuration file which is read</span>
+<span class="s2">    from the rivt-doc folder. Report formatting can be easily modified by</span>
+<span class="s2">    specifying a different init file.</span>
+
+<span class="s2">    ||init | rivt01.ini</span>
+
+<span class="s2">    The text command inserts text from an external file. Text files may be</span>
+<span class="s2">    plain text or include rivt tags.</span>
+
+<span class="s2">    ||text | private/text/proj.txt | plain</span>
+<span class="s2">    </span>
+<span class="s2">    The append command attaches PDF files to the end of the doc.</span>
+
+<span class="s2">    || append | append/report1.pdf</span>
+<span class="s2">    || append | append/report2.pdf</span>
+
+<span class="s2">    </span>
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;The Insert method | color </span>
+
+<span class="s2">    The Insert method formats static information e.g. images and text. The</span>
+<span class="s2">    color command specifies a background color for the section.</span>
+
+<span class="s2">    The text command inserts and formats text from external files into the</span>
+<span class="s2">    rivt file. Text files may be plain text or text with rivt tags.</span>
+
+<span class="s2">    ||text | data0101/describe.txt | rivt     </span>
+
+<span class="s2">    The table command inserts and formats tabular data from csv or xls files.</span>
+<span class="s2">    </span>
+<span class="s2">    The _[t] tag formats and autonumbers table titles.</span>
+
+<span class="s2">    A table title  _[t]</span>
+<span class="s2">    || table | data0101/file.csv | 60,r</span>
+
+<span class="s2">    The image command inserts and formats image data from png or jpg files.</span>
+
+<span class="s2">    The _[f] tag formats and autonumbers figures.</span>
+<span class="s2">        </span>
+<span class="s2">    A figure caption _[f]</span>
+<span class="s2">    || image | data0101/f1.png | 50</span>
+
+<span class="s2">    Two images may be placed side by side as follows:</span>
+
+<span class="s2">    The first figure caption  _[f]</span>
+<span class="s2">    The second figure caption  _[f]</span>
+<span class="s2">    || image | private/image/f2.png, private/image/f3.png | 45,35</span>
+<span class="s2">    </span>
+<span class="s2">    The tags _[x] and _[s] format LaTeX and sympy equations:</span>
+
+<span class="s2">    \gamma = </span><span class="se">\f</span><span class="s2">rac</span><span class="si">{5}</span><span class="s2">{x+y} + 3  _[x] </span>
+
+<span class="s2">    x = 32 + (y/2)  _[s]</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;The Values method |  sub; nosub </span>
+
+<span class="s2">    The Values method assigns values to variables and evaluates equations. The</span>
+<span class="s2">    sub; nosub setting specifies whether the equations are printed a second</span>
+<span class="s2">    time with substituted numerical values.</span>
+
+<span class="s2">    A table tag provides a table title and number.  </span>
+<span class="s2">    </span>
+<span class="s2">    The equal tag declares a value. A sequence of declared values terminated</span>
+<span class="s2">    with a blank line are formatted as a table.</span>
+<span class="s2">    </span>
+<span class="s2">    Example of assignment list _[t]</span>
+<span class="s2">    f1 = 10.1 * LBF | N | a force</span>
+<span class="s2">    d1 = 12.1 * IN | CM | a length</span>
+
+<span class="s2">    An equation tag provides an equation description and number. A colon-equal</span>
+<span class="s2">    tag assigns a value and specifies the result units and printed output</span>
+<span class="s2">    decimal places in the result and equation.</span>
+
+<span class="s2">    Example equation - Area of circle  _[e]</span>
+<span class="s2">    a1 := 3.14(d1/2)^2 | IN^2, CM^2 | 1,2</span>
+
+<span class="s2">    || declare | data0102/values0102.csv</span>
+<span class="s2">    </span>
+<span class="s2">    The declare command imports values from a csv file written by rivt when</span>
+<span class="s2">    processing assigned and declared values from another doc in the same</span>
+<span class="s2">    project.</span>
+
+<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">T</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;The Tools method | color </span>
+
+<span class="s2">    # The Tools method processes Python code in the rivt namespace and prints</span>
+<span class="s2">    # the code and the result of any print statement in the doc. </span>
+<span class="s2">    # Functions may be written explicitly or imported from other</span>
+<span class="s2">    # files. Line comments (#) are printed. Triple quotes cannot be used. Use</span>
+<span class="s2">    # raw strings instead.</span>
+<span class="s2">    </span>
+<span class="s2">    # Four Python libraries are imported by rivt and available as: </span>
+<span class="s2">    # pyplot -&gt; plt</span>
+<span class="s2">    # numpy -&gt; np</span>
+<span class="s2">    # pandas -&gt; pd</span>
+<span class="s2">    # sympy -&gt; sy</span>
+<span class="s2">    </span>
+<span class="s2">    # Python code example:</span>
+<span class="s2">    </span>
+<span class="s2">    def f1(x,y): z = x + y</span>
+<span class="s2">        print(z)</span>
+<span class="s2">        return Z</span>
+
+<span class="s2">    with open(&#39;file.csv&#39;, &#39;r&#39;) as f: </span>
+<span class="s2">        input = f.readlines()</span>
+<span class="s2">    </span>
+<span class="s2">    var = range(10)</span>
+<span class="s2">    with open(&#39;fileout.csv&#39;, &#39;w&#39;) as f: </span>
+<span class="s2">        f.write(var)</span>
+<span class="s2">        </span>
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;any text</span>
+
+<span class="s2">    Changing a function to X skips evaluation of that function. Its uses</span>
+<span class="s2">    include review comments and debugging.</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span> 
+</pre></div>
+</div>
 </section>
 
 
@@ -162,22 +426,26 @@ provided in the <a class="reference external" href="https://www.rivt-sys.net%3E"
     <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="page1.html"><strong>rivt</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="page1.html#introduction">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="page1.html#folder-structure">Folder Structure</a></li>
-<li class="toctree-l2"><a class="reference internal" href="page1.html#commands-and-tags">Commands and Tags</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="page1.html#commands">commands</a></li>
-<li class="toctree-l3"><a class="reference internal" href="page1.html#tags">tags</a></li>
-<li class="toctree-l3"><a class="reference internal" href="page1.html#example">example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="page1.html#rivt-files">rivt files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="page1.html#rivt-syntax">rivt syntax</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#"><strong>rivt-doc</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#rivt-installation">rivt installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#rivt-doc-installation">rivt-doc installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#vscode-profiles">VSCode profiles</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#snippets">snippets</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#short-cuts">short cuts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page1.html#rivt-example">============================================================================
+rivt example</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">rivt syntax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#api-functions">API functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id1">API functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#rivt-commands">rivt commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#rivt-tags">rivt tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#rivt-example">rivt example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page3.html"><strong>rivt-doc</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="page3.html#rivt-installation">rivt installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="page3.html#rivt-doc-installation">rivt-doc installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="page3.html#vscode-profiles">VSCode profiles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="page3.html#snippets-and-shortcuts">snippets and shortcuts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="page3.html#shortcuts">shortcuts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="page3.html#api-function-snippets">API function snippets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="page3.html#command-snippets">command snippets</a></li>
 </ul>
 </li>
 </ul>
@@ -213,7 +481,7 @@ provided in the <a class="reference external" href="https://www.rivt-sys.net%3E"
 
         
             <div id="copyright">
-                &copy; 2023, rholland
+                &copy; 2023 StructureLabs
             </div>
         
 
