@@ -33,10 +33,12 @@ A rivt file is a utf-8 text (Python) file that includes the import statement:
 which exposes four single-letter API functions: repo, insert, values and tools.
 Each function takes a single, triple quoted string as argument.
 
+<pre style="background: #e6ecdf">
 rv.R(rmS) - repository and report information 
 rv.I(rmS) - static text, images, tables and math
 rv.V(rmS) - equations
 rv.T(rmS) - Python functions and scripts
+</pre>
 
 When running in an IDE (e.g. VSCode), each function may be run individually
 using the standard cell decorator (# %%). Interactive output is formatted as
