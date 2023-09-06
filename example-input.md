@@ -8,8 +8,7 @@
 ```
 **<p style="text-align: left;"><a href="index.html"> HOME </a></p>**
 
-# **rivt example**
-
+# **rivt toy example**
 
 ## toy example input file
 
@@ -152,7 +151,7 @@ rv.X("""any text
 </pre>
 
 
-## example text output file
+## text output
 
 import rivt.rivtapi as rv
 
@@ -292,11 +291,11 @@ rv.X("""any text
 </pre>
 
 
-## example markdown output file
+## markdown output
 
 some markdown
 
 
-## example PDF output file
+## PDF output file
 
 [PDF output - rivt toy example](./_static/attach/rivt-toy-example.pdf)
