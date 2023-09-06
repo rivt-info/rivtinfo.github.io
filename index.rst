@@ -8,9 +8,6 @@ rivt User Manual
 
    rivt.md
    example-input.md
-   out-text.md
-   out-md.md
-   out-pdf.md
    rivt-doc.md
    rivt-tools.md
 
