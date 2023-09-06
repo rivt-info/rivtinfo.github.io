@@ -10,6 +10,7 @@
 
 # **rivt example**
 
+{.bg-primary}
 ## example input file
 
 ```
