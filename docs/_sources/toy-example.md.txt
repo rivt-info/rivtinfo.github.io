@@ -10,7 +10,7 @@
 
 # **rivt toy example**
 
-## toy example input
+## example input
 
 <pre style="background: #e6ecdf">
 import rivt.rivtapi as rv

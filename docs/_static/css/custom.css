@@ -6,11 +6,11 @@ img.align-center {
     display: block;
 }
 
-.internal-link {
+a.internal-link {
     text-decoration: underline !important;
     color: orange;
 }
 
-.internal-link:hover {
+a.internal-link:hover {
     color: red;
 }
