@@ -11,9 +11,9 @@
 # **rivt example**
 
 
-## example input filex
+## example input file
 
-<pre style="background: #b4c8a0">
+<pre style="background: #e6ecdf">
 import rivt.rivtapi as rv
 
 rv.R("""Introduction | notoc, 1

@@ -7,9 +7,13 @@ rivt User Manual
    :caption: Contents:
 
    rivt.md
-   rivt-example.md
-   rivt-syntax.md
+   example-input.md
+   out-text.md
+   out-md.md
+   out-pdf.md
+   rivt-doc.md
    rivt-tools.md
+
 
 Indices and tables
 ==================
