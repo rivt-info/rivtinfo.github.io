@@ -6,9 +6,10 @@ rivt User Manual
    :maxdepth: 3
    :caption: Contents:
 
-   page1.md
-   page2.md
-   page3.md
+   rivt.md
+   rivt-example.md
+   rivt-syntax.md
+   rivt-tools.md
 
 Indices and tables
 ==================

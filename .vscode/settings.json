@@ -10,7 +10,8 @@
     "insertDateString.formatDate": "MM-DD-YYYY",
     "cSpell.words": [
         "rivt",
-        "rivtcalc"
+        "rivt-doc",
+        "rivt-tools"
     ],
     "workbench.colorTheme": "Visual Studio Dark",
     "workbench.colorCustomizations": {

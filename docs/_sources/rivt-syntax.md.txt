@@ -1,7 +1,7 @@
 
 ```{image} _static/img/riv-doc02.png
 :alt: rivt logo
-:target: index.html
+:target: https://www.rivt-doc.net/index.html
 :width: 125px
 :align: left
 ```

@@ -1,35 +1,17 @@
 
-```{image} _static/img/rivt-tools01.png
+```{image} _static/img/riv-doc02.png
 :alt: rivt logo
-:target: index.html
+:target: https://www.rivt-doc.net/index.html
 :width: 125px
 :align: left
 ```
 
 **<p style="text-align: left;"><a href="index.html"> HOME </a></p>**
 
-# **rivt-tools**
+# **rivt-doc**
 
 - VS Code
 - Texlive 
-
-## rivt installation
-
-The minimum software needed to run is:
-
-- Python 3.8 or higher 
-- rivt library + Python dependencies
-
-A complete rivt system additionally includes:
-
-- VSCode + extensions 
-- LaTeX 
-- Github account
-
-rivt-sys installs the complete rivt system in a portable folder via a zip file,
-and is available for every OS platform. rivt also runs in the cloud using
-GitHub CodeSpaces or other cloud service providers. Installation details are
-provided in the [rivt User Manual](https://www.rivt-sys.net>)
 
 ## rivt-doc installation
 
