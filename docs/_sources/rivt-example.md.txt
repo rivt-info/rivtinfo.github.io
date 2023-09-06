@@ -1,9 +1,4 @@
 
-<style>
-div {
-  background-color: lightblue;
-}
-</style>
 
 ```{image} _static/img/riv02.png
 :alt: rivt logo
@@ -18,8 +13,7 @@ div {
 
 ## example input filex
 
-<div>
-<pre>
+<pre style="background: lightblue">
 import rivt.rivtapi as rv
 
 rv.R("""Introduction | notoc, 1
@@ -156,7 +150,7 @@ rv.X("""any text
 
     """) 
 </pre>
-<div>
+
 
 ## rivt installation
 
