@@ -107,7 +107,7 @@ Tags format a line or block of text and are denoted with _[tag] at the end of a
 line. Block tags start a block of text with _[[tag]] and end with _[[q]]. The
 "=" and ":=" tags used in the Value method are exceptions.
 
-### rivt commands
+### commands
 
  |         **command**          | **API function** |
  | :--------------------------: | :--------------: |
@@ -119,7 +119,7 @@ line. Block tags start a block of text with _[[tag]] and end with _[[q]]. The
  |  \|\|text \| rel file path   |      R I V       |
 
 
-### rivt tags
+### tags
 
 |          **line tags**           |      **description**      | **API** |
 | :------------------------------: | :-----------------------: | :-----: |
