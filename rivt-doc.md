@@ -6,8 +6,6 @@
 :align: left
 ```
 
-**<p style="text-align: left;"><a href="index.html"> HOME </a></p>**
-
 # **rivt-doc**
 
 - VS Code

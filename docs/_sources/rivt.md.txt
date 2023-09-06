@@ -6,8 +6,6 @@
 :align: left
 ```
 
-**<p style="text-align: left;"><a href="index.html"> HOME </a></p>**
-
 # **rivt**
 
 **rivt** is an engineering markdown language processed by a Python library,

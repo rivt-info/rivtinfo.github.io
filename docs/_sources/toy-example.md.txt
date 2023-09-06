@@ -6,7 +6,6 @@
 :width: 125px
 :align: left
 ```
-**<p style="text-align: left;"><a href="index.html"> HOME </a></p>**
 
 # **rivt toy example**
 
@@ -298,4 +297,4 @@ some markdown
 
 ## PDF output file
 
-[PDF output - rivt toy example](./_static/attach/rivt-toy-example.pdf)
+[PDF output from example](./_static/attach/rivt-toy-example.pdf)
