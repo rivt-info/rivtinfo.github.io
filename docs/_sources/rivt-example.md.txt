@@ -13,7 +13,7 @@
 
 ## example input filex
 
-<pre style="background: lightblue">
+<pre style="background: #b4c8a0">
 import rivt.rivtapi as rv
 
 rv.R("""Introduction | notoc, 1
