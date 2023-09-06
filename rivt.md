@@ -47,14 +47,14 @@ formats respectively.
 
 rivt works with single file documents and extensive reports including hundreds
 of files. Multi-file reports are structured through a tri-level folder
-structure explained [here](/rivt-doc.md).
+structure explained [here]<project:rivt-doc.md>.
 
 ## API functions
 
 <pre style="background: #dce8ef">
-=====       =================================================
-name        function
-=====       =================================================
+========= ========================================================
+ name                       function
+========= ========================================================
 
 repo        rv.R("""label | toc; notoc page
 
