@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'rivt:  write | organize | share'
+project = 'rivt:  write <br> organize <br> share'
 copyright = '2023 StructureLabs'
 author = 'rholland'
 release = '0.1'
