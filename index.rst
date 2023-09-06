@@ -7,9 +7,10 @@ rivt User Manual
    :caption: Contents:
 
    rivt.md
-   example-input.md
+   toy-example.md
    rivt-doc.md
    rivt-tools.md
+   rivt-online.md
 
 
 Indices and tables
