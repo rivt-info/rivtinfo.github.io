@@ -47,7 +47,7 @@ formats respectively.
 
 rivt works with single file documents and extensive reports including hundreds
 of files. Multi-file reports are structured through a tri-level folder
-structure explained [here](http://rivt-doc.net/rivt-doc.html) .
+structure explained [here](/rivt-doc.md).
 
 ## API functions
 
@@ -106,16 +106,23 @@ line. Block tags start a block of text with _[[tag]] and end with _[[q]]. The
 "=" and ":=" tags used in the Value method are exceptions.
 
 ### commands
+<pre style="background: #dcf0fa">
+==================================================== ==============
+    command syntax                                          API 
+==================================================== ==============
 
- |         **command**          | **API function** |
- | :--------------------------: | :--------------: |
- |  \|\|init \| rel file path   |        R         |
- | \|\|append \| rel file path  |        R         |
- |  \|\|image \| rel file path  |        I         |
- |  \|\|table \| rel file path  |        I         |
- | \|\|declare \| rel file path |        V         |
- |  \|\|text \| rel file path   |      R I V       |
+|| init | rel file path                                      R
 
+|| append | rel file path                                    R
+
+|| image  | rel file path, .. | .50, ..                      I
+
+|| table  | rel file path | 60,r; l; c                       I
+
+|| declare | rel file path |  print; noprint                 V
+
+|| text | rel file path | rivt; plain                      R I V
+</pre>
 
 ### tags
 

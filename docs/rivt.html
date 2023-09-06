@@ -79,7 +79,7 @@ functions which generate files in GitHub Flavored Markdown (GFM) and PDF
 formats respectively.</p>
 <p>rivt works with single file documents and extensive reports including hundreds
 of files. Multi-file reports are structured through a tri-level folder
-structure explained <a class="reference external" href="http://rivt-doc.net/rivt-doc.html">here</a> .</p>
+structure explained <a class="reference internal" href="rivt-doc.html"><span class="std std-doc">here</span></a>.</p>
 </section>
 <section id="api-functions">
 <h2>API functions<a class="headerlink" href="#api-functions" title="Link to this heading">¶</a></h2>
@@ -137,33 +137,23 @@ line. Block tags start a block of text with _[[tag]] and end with _[[q]]. The
 “=” and “:=” tags used in the Value method are exceptions.</p>
 <section id="commands">
 <h3>commands<a class="headerlink" href="#commands" title="Link to this heading">¶</a></h3>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head text-center"><p><strong>command</strong></p></th>
-<th class="head text-center"><p><strong>API function</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-center"><p>||init | rel file path</p></td>
-<td class="text-center"><p>R</p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p>||append | rel file path</p></td>
-<td class="text-center"><p>R</p></td>
-</tr>
-<tr class="row-even"><td class="text-center"><p>||image | rel file path</p></td>
-<td class="text-center"><p>I</p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p>||table | rel file path</p></td>
-<td class="text-center"><p>I</p></td>
-</tr>
-<tr class="row-even"><td class="text-center"><p>||declare | rel file path</p></td>
-<td class="text-center"><p>V</p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p>||text | rel file path</p></td>
-<td class="text-center"><p>R I V</p></td>
-</tr>
-</tbody>
-</table>
+<pre style="background: #dcf0fa">
+==================================================== ==============
+    command syntax                                          API 
+==================================================== ==============
+
+|| init | rel file path                                      R
+
+|| append | rel file path                                    R
+
+|| image  | rel file path, .. | .50, ..                      I
+
+|| table  | rel file path | 60,r; l; c                       I
+
+|| declare | rel file path |  print; noprint                 V
+
+|| text | rel file path | rivt; plain                      R I V
+</pre>
 </section>
 <section id="tags">
 <h3>tags<a class="headerlink" href="#tags" title="Link to this heading">¶</a></h3>
