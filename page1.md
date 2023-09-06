@@ -298,3 +298,10 @@ rv.X("""any text
 
     """) 
 ```
+
+### rivt installation
+
+The minimum software needed to run is:
+
+- Python 3.8 or higher 
+- rivt library + Python dependencies
