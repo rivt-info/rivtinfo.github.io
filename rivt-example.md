@@ -1,19 +1,25 @@
 
+<style>
+div {
+  background-color: lightblue;
+}
+</style>
+
 ```{image} _static/img/riv02.png
 :alt: rivt logo
 :target: https://www.rivt-doc.net/index.html
 :width: 125px
 :align: left
 ```
-
 **<p style="text-align: left;"><a href="index.html"> HOME </a></p>**
 
 # **rivt example**
 
-{.bg-primary}
+
 ## example input filex
 
-```
+<div>
+<pre>
 import rivt.rivtapi as rv
 
 rv.R("""Introduction | notoc, 1
@@ -149,7 +155,8 @@ rv.X("""any text
     for review comments and debugging.
 
     """) 
-```
+</pre>
+<div>
 
 ## rivt installation
 
