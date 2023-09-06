@@ -48,38 +48,38 @@
   <a class="reference external image-reference" href="https://www.rivt-doc.net/index.html"><img alt="rivt logo" class="align-left" src="_images/riv02.png" style="width: 125px;" /></a>
 <section id="rivt">
 <h1><strong>rivt</strong><a class="headerlink" href="#rivt" title="Link to this heading">¶</a></h1>
-<p><strong>rivt</strong> is an engineering markdown language processed by a Python library,
-<strong>rivtlib</strong>. They are both open source and run on any platform that supports
-Python 3.8 or above. The language is designed to prioritize clarity, efficiency
-and access when writing, organizing and sharing engineering documents.</p>
+<p><strong>rivt</strong> is an engineering markdown language processed by the Python library,
+<strong>rivtlib</strong>. The language is designed to prioritize clarity, efficiency and
+access when writing, organizing and sharing engineering documents. <strong>rivtlib</strong>
+is MIT open source.</p>
 <p>The minimum software needed is:</p>
 <ul class="simple">
 <li><p>Python 3.8 or higher</p></li>
 <li><p><strong>rivtlib</strong> + Python dependencies</p></li>
 </ul>
 <p><strong>rivt-doc</strong> is an installable, open source editing and publishing framework
-that requires additional open source library and application dependencies.
-Details are provided here.</p>
+that requires additional open source dependencies. Details are provided here.</p>
 <section id="rivt-files">
 <h2>rivt files<a class="headerlink" href="#rivt-files" title="Link to this heading">¶</a></h2>
-<p>A rivt file is a utf-8 text (Python) file that includes the import statement:</p>
+<p>A rivt file is a utf-8 Python file that includes the import statement:</p>
 <p><em>import rivtlib.rivtapi as rv</em></p>
-<p>which exposes four single-letter API functions: repo, insert, values and tools.
-Each function takes a single, triple quoted string as argument.</p>
+<p>and exposes four single-letter API functions: repo, insert, values and tools.
+Each function takes a triple quoted string as argument.</p>
 <pre style="background: #e6ecdf">
-rv.R(rmS) - repository and report information 
-rv.I(rmS) - static text, images, tables and math
-rv.V(rmS) - equations
-rv.T(rmS) - Python functions and scripts
+rv.R(str) - repository and report information 
+rv.I(str) - static text, images, tables and math
+rv.V(str) - equations
+rv.T(str) - Python functions and scripts
 </pre>
-<p>When running in an IDE (e.g. VSCode), each function may be run individually
-using the standard cell decorator (# %%). Interactive output is formatted as
-utf-8 text for speed and compatiblility.</p>
+<p>When running in an IDE (e.g. VSCode), functions may be run individually
+with the standard cell decorator (# %%). Interactive output is formatted as
+utf-8 text for speed and compatiblility with virtually any platform.</p>
 <p>Documents and reports are generated using the rv.writemd() and rv.writepdf()
-functions. The write GitHub Flavored Markdown (GFM) and PDF formats respectively.</p>
-<p>rivt works effectively with single file documents and extensive reports
-including hundreds of files. Multi-file reports are structured through a
-tri-level folder structure explained here.</p>
+functions which generate files in GitHub Flavored Markdown (GFM) and PDF
+formats respectively.</p>
+<p>rivt works with single file documents and extensive reports including hundreds
+of files. Multi-file reports are structured through a tri-level folder
+structure explained <a class="reference external" href="http://rivt-doc.net/rivt-doc.html">here</a> .</p>
 </section>
 <section id="api-functions">
 <h2>API functions<a class="headerlink" href="#api-functions" title="Link to this heading">¶</a></h2>

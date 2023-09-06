@@ -8,10 +8,10 @@
 
 # **rivt**
 
-**rivt** is an engineering markdown language processed by a Python library,
-**rivtlib**. They are both open source and run on any platform that supports
-Python 3.8 or above. The language is designed to prioritize clarity, efficiency
-and access when writing, organizing and sharing engineering documents.
+**rivt** is an engineering markdown language processed by the Python library,
+**rivtlib**. The language is designed to prioritize clarity, efficiency and
+access when writing, organizing and sharing engineering documents. **rivtlib**
+is MIT open source.
 
 The minimum software needed is:
 
@@ -19,35 +19,35 @@ The minimum software needed is:
 - **rivtlib** + Python dependencies
 
 **rivt-doc** is an installable, open source editing and publishing framework
-that requires additional open source library and application dependencies.
-Details are provided here.
+that requires additional open source dependencies. Details are provided here.
 
 ## rivt files
 
-A rivt file is a utf-8 text (Python) file that includes the import statement:
+A rivt file is a utf-8 Python file that includes the import statement:
 
 *import rivtlib.rivtapi as rv*
  
-which exposes four single-letter API functions: repo, insert, values and tools.
-Each function takes a single, triple quoted string as argument.
+and exposes four single-letter API functions: repo, insert, values and tools.
+Each function takes a triple quoted string as argument.
 
 <pre style="background: #e6ecdf">
-rv.R(rmS) - repository and report information 
-rv.I(rmS) - static text, images, tables and math
-rv.V(rmS) - equations
-rv.T(rmS) - Python functions and scripts
+rv.R(str) - repository and report information 
+rv.I(str) - static text, images, tables and math
+rv.V(str) - equations
+rv.T(str) - Python functions and scripts
 </pre>
 
-When running in an IDE (e.g. VSCode), each function may be run individually
-using the standard cell decorator (# %%). Interactive output is formatted as
-utf-8 text for speed and compatiblility.
+When running in an IDE (e.g. VSCode), functions may be run individually
+with the standard cell decorator (# %%). Interactive output is formatted as
+utf-8 text for speed and compatiblility with virtually any platform.
 
 Documents and reports are generated using the rv.writemd() and rv.writepdf()
-functions. The write GitHub Flavored Markdown (GFM) and PDF formats respectively.
+functions which generate files in GitHub Flavored Markdown (GFM) and PDF
+formats respectively.
 
-rivt works effectively with single file documents and extensive reports
-including hundreds of files. Multi-file reports are structured through a
-tri-level folder structure explained here.
+rivt works with single file documents and extensive reports including hundreds
+of files. Multi-file reports are structured through a tri-level folder
+structure explained [here](http://rivt-doc.net/rivt-doc.html) .
 
 ## API functions
 
