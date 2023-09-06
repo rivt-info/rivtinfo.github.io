@@ -49,79 +49,80 @@
 <p><strong><p style="text-align: left;"><a href="index.html"> HOME </a></p></strong></p>
 <section id="rivt">
 <h1><strong>rivt</strong><a class="headerlink" href="#rivt" title="Link to this heading">¶</a></h1>
-<p><strong>rivt</strong> is an engineering document markdown language processed by <strong>rivtlib</strong>,
-a Python library. They are both open source and run on any platform that
-supports Python 3.8 or above. The language and library are designed to write,
-assemble and share engineering documents in a way that prioritizes clarity,
-efficiency, extension and universal access. <strong>rivt-doc</strong> is a complete open
-source editing and publishing system with installers and requiring a number of
-open source library and application dependencies.</p>
+<p><strong>rivt</strong> is an engineering markdown language processed by a Python library,
+<strong>rivtlib</strong>. They are both open source and run on any platform that supports
+Python 3.8 or above. The language is designed to prioritize clarity, efficiency
+and access when writing, organizing and sharing engineering documents.</p>
 <p>The minimum software needed is:</p>
 <ul class="simple">
 <li><p>Python 3.8 or higher</p></li>
 <li><p><strong>rivtlib</strong> + Python dependencies</p></li>
 </ul>
-<p>Full capabilities require the <strong>rivt-doc</strong> framework.</p>
+<p><strong>rivt-doc</strong> is an installable, open source editing and publishing framework
+that requires additional open source library and application dependencies.
+Details are provided here.</p>
 <section id="rivt-files">
 <h2>rivt files<a class="headerlink" href="#rivt-files" title="Link to this heading">¶</a></h2>
 <p>A rivt file is a utf-8 text (Python) file that includes the import statement:</p>
 <p><em>import rivtlib.rivtapi as rv</em></p>
-<p>which in turn provides four single-letter API functions referred to as repo,
-insert, values and tools. Each function takes a single, triple quoted string
-as argument.</p>
+<p>which exposes four single-letter API functions: repo, insert, values and tools.
+Each function takes a single, triple quoted string as argument.</p>
 <p>rv.R(rmS) - repository and report information
 rv.I(rmS) - static text, images, tables and math
 rv.V(rmS) - equations
 rv.T(rmS) - Python functions and scripts</p>
-<p>When running in an IDE (e.g. VSCode), each method may be run interactively
+<p>When running in an IDE (e.g. VSCode), each function may be run individually
 using the standard cell decorator (# %%). Interactive output is formatted as
-utf-8 text. The rv.writemd() and rv.writepdf() functions generate document
-files and report compilations in GitHub Flavored Markdown (GFM) and PDF formats.</p>
-<p>rivt works with both single file documents, as well as extensive reports with
-hundreds of files. Multi-file reports are structured through a two-level,
-folder-based framework.</p>
+utf-8 text for speed and compatiblility.</p>
+<p>Documents and reports are generated using the rv.writemd() and rv.writepdf()
+functions. The write GitHub Flavored Markdown (GFM) and PDF formats respectively.</p>
+<p>rivt works effectively with single file documents and extensive reports
+including hundreds of files. Multi-file reports are structured through a
+tri-level folder structure explained here.</p>
 </section>
 <section id="api-functions">
 <h2>API functions<a class="headerlink" href="#api-functions" title="Link to this heading">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">name</span>        <span class="n">function</span>    
-<span class="n">repo</span>        <span class="n">rv</span><span class="o">.</span><span class="n">R</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;label | toc; notoc page</span>
+<pre style="background: #e6ecdf">
+name        function
+=====       =================================================
 
-<span class="s2">                    Report, repository and introductory text</span>
+repo        rv.R("""label | toc; notoc page
 
-<span class="s2">                    &quot;&quot;&quot;</span><span class="p">)</span>
+                    Report, repository and introductory text
 
-<span class="n">insert</span>      <span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;label | color  </span>
+                    """)
 
-<span class="s2">                    Text, static tables and images</span>
+insert      rv.I("""label | color  
 
-<span class="s2">                    &quot;&quot;&quot;</span><span class="p">)</span>
+                    Text, static tables and images
 
-<span class="n">values</span>      <span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;label | sub; nosub </span>
+                    """)
 
-<span class="s2">                    Equations and text</span>
-<span class="s2">                </span>
-<span class="s2">                    &quot;&quot;&quot;</span><span class="p">)</span>
+values      rv.V("""label | sub; nosub 
 
-<span class="n">tools</span>       <span class="n">rv</span><span class="o">.</span><span class="n">T</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;label | lines; nolines</span>
+                    Equations and text
+                
+                    """)
 
-<span class="s2">                    Python code</span>
+tools       rv.T("""label | lines; nolines
 
-<span class="s2">                    &quot;&quot;&quot;</span><span class="p">)</span>
+                    Python code
 
-<span class="n">exclude</span>     <span class="n">rv</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;any </span>
+                    """)
 
-<span class="s2">                    Any function changed to X is not evaluated and can be used for</span>
-<span class="s2">                    comments and debugging.</span>
+exclude     rv.X("""any 
 
-<span class="s2">                    &quot;&quot;&quot;</span><span class="p">)</span>
+                    Any function changed to X is not evaluated and can be used for
+                    comments and debugging.
 
-<span class="n">write</span><span class="o">-</span><span class="n">md</span>    <span class="n">rv</span><span class="o">.</span><span class="n">writemd</span><span class="p">()</span>
-<span class="p">(</span><span class="n">wm</span><span class="p">)</span>        <span class="n">writes</span> <span class="n">markdown</span> <span class="n">document</span>
+                    """)
 
-<span class="n">write</span><span class="o">-</span><span class="n">pdf</span>   <span class="n">rv</span><span class="o">.</span><span class="n">writepdf</span><span class="p">()</span>
-<span class="p">(</span><span class="n">wp</span><span class="p">)</span>        <span class="n">writes</span> <span class="n">markdown</span> <span class="ow">and</span> <span class="n">PDF</span> <span class="n">document</span>
-</pre></div>
-</div>
+write-md    rv.writemd()
+(wm)        writes markdown document
+
+write-pdf   rv.writepdf()
+(wp)        writes markdown and PDF document
+</pre>
 </section>
 <section id="rivt-syntax">
 <h2>rivt syntax<a class="headerlink" href="#rivt-syntax" title="Link to this heading">¶</a></h2>
