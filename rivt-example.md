@@ -11,7 +11,7 @@
 # **rivt example**
 
 {.bg-primary}
-## example input file
+## example input filex
 
 ```
 import rivt.rivtapi as rv
