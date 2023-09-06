@@ -18,6 +18,12 @@ efficiency, extension and universal access. **rivt-doc** is a complete open
 source editing and publishing system with installers and requiring a number of
 open source library and application dependencies.
 
+The minimum software needed is:
+
+- Python 3.8 or higher 
+- **rivtlib** + Python dependencies
+
+Full capabilities require the **rivt-doc** framework.
 
 ## rivt files
 
