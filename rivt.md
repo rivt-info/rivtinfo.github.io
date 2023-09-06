@@ -30,7 +30,7 @@ A rivt file is a utf-8 Python file that includes the import statement:
 and exposes four single-letter API functions: repo, insert, values and tools.
 Each function takes a triple quoted string as argument.
 
-<pre style="background: #e6ecdf">
+<pre style="background: #dce8ef">
 rv.R(str) - repository and report information 
 rv.I(str) - static text, images, tables and math
 rv.V(str) - equations
@@ -51,7 +51,8 @@ structure explained [here](/rivt-doc.md).
 
 ## API functions
 
-<pre style="background: #e6ecdf">
+<pre style="background: #dce8ef">
+=====       =================================================
 name        function
 =====       =================================================
 
@@ -106,7 +107,7 @@ line. Block tags start a block of text with _[[tag]] and end with _[[q]]. The
 "=" and ":=" tags used in the Value method are exceptions.
 
 ### commands
-<pre style="background: #dcf0fa">
+<pre style="background: #dce8ef">
 ==================================================== ==============
     command syntax                                          API 
 ==================================================== ==============
@@ -126,39 +127,40 @@ line. Block tags start a block of text with _[[tag]] and end with _[[q]]. The
 
 ### tags
 
-|          **line tags**           |      **description**      | **API** |
-| :------------------------------: | :-----------------------: | :-----: |
-|           text \_\[b\]           |           bold            |  R I V  |
-|           text \_\[c\]           |          center           |  R I V  |
-|           text \_\[i\]           |          italic           |  R I V  |
-|          text \_\[bc\]           |        bold center        |  R I V  |
-|          text \_\[bi\]           |        bold italic        |  R I V  |
-|           text \_\[r\]           |       right justify       |  R I V  |
-|           text \_\[u\]           |         underline         |  R I V  |
-|           text \_\[l\]           |        LaTeX math         |  R I V  |
-|           text \_\[s\]           |        sympy math         |  R I V  |
-|          text \_\[bs\]           |      bold sympy math      |  R I V  |
-|           text \_\[e\]           | equation label autonumber |  R I V  |
-|           text \_\[f\]           | figure caption autonumber |  R I V  |
-|           text \_\[t\]           |  table title autonumber   |  R I V  |
-|          text \_\[\#\]           |    footnote autonumber    |  R I V  |
-|           text \_\[d\]           |   footnote description    |  R I V  |
-|            \_\[page\]            |         new page          |  R I V  |
-|       \_\[address label\]        |           link            |  R I V  |
-|  a = n \| unit, alt \| descrip   | = tag declares a variable |    V    |
-| a := b \+ c \| unit, alt \| n, n |  := tag assigns a value   |    V    |
+<pre style="background: #dce8ef">
+============================ ================================= ==========
+   line tags                        description                   API
+============================ ================================ ===========
+text _[b]                       bold                            R I V 
+text _[c]                       center                          R I V  
+text _[i]                       italic                          R I V  
+text _[bc]                      bold center                     R I V  
+text _[bi]                      bold italic                     R I V
+text _[r]                       right justify                   R I V
+text _[u]                       underline                       R I V   
+text _[l]                       LaTeX math                        I V
+text _[s]                       sympy math                        I V
+text _[bs]                      bold sympy math                   I V
+text _[e]                       equation label, autonumber        I V
+text _[f]                       figure caption, autonumber        I V
+text _[t]                       table title, autonumber           I V
+text _[#]                       footnote, autonumber              I V
+text _[d]                       footnote description              I V
+_[page]                         new page                          I V
+_[address, label]               url or internal reference         I V
+a = 1.2 | unit, alt | descrip   declare =                           V
+a := b + c | unit, alt | n,n    assign :=                           V
 
-
-
-| **block tags** | **description** | **API function** |
-| :------------: | :-------------: | :--------------: |
-|  \_\[\[b\]\]   |      bold       |      R I V       |
-|  \_\[\[c\]\]   |     center      |      R I V       |
-|  \_\[\[i\]\]   |     italic      |      R I V       |
-|  \_\[\[p\]\]   |      plain      |      R I V       |
-|  \_\[\[q\]\]   |   quit block    |      R I V       |
-|  \_\[\[l\]\]   |      LaTeX      |       I V        |
-
+============================ ================================= ==========
+   block tags                        description                   API
+============================ ================================ ===========
+_[[b]]                          bold                            R I V
+_[[c]]                          center                          R I V
+_[[i]]                          italic                          R I V
+_[[p]]                          plain                           R I V
+_[[q]]                          quit block                      R I V
+_[[l]]                          LaTeX                             I V
+</pre>
 
 
 The first line of a rivt file is *import rivt.rivtapi as rv* followed by the

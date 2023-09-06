@@ -65,7 +65,7 @@ that requires additional open source dependencies. Details are provided here.</p
 <p><em>import rivtlib.rivtapi as rv</em></p>
 <p>and exposes four single-letter API functions: repo, insert, values and tools.
 Each function takes a triple quoted string as argument.</p>
-<pre style="background: #e6ecdf">
+<pre style="background: #dce8ef">
 rv.R(str) - repository and report information 
 rv.I(str) - static text, images, tables and math
 rv.V(str) - equations
@@ -83,7 +83,8 @@ structure explained <a class="reference internal" href="rivt-doc.html"><span cla
 </section>
 <section id="api-functions">
 <h2>API functions<a class="headerlink" href="#api-functions" title="Link to this heading">¶</a></h2>
-<pre style="background: #e6ecdf">
+<pre style="background: #dce8ef">
+=====       =================================================
 name        function
 =====       =================================================
 
@@ -137,7 +138,7 @@ line. Block tags start a block of text with _[[tag]] and end with _[[q]]. The
 “=” and “:=” tags used in the Value method are exceptions.</p>
 <section id="commands">
 <h3>commands<a class="headerlink" href="#commands" title="Link to this heading">¶</a></h3>
-<pre style="background: #dcf0fa">
+<pre style="background: #dce8ef">
 ==================================================== ==============
     command syntax                                          API 
 ==================================================== ==============
@@ -157,126 +158,40 @@ line. Block tags start a block of text with _[[tag]] and end with _[[q]]. The
 </section>
 <section id="tags">
 <h3>tags<a class="headerlink" href="#tags" title="Link to this heading">¶</a></h3>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head text-center"><p><strong>line tags</strong></p></th>
-<th class="head text-center"><p><strong>description</strong></p></th>
-<th class="head text-center"><p><strong>API</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-center"><p>text _[b]</p></td>
-<td class="text-center"><p>bold</p></td>
-<td class="text-center"><p>R I V</p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p>text _[c]</p></td>
-<td class="text-center"><p>center</p></td>
-<td class="text-center"><p>R I V</p></td>
-</tr>
-<tr class="row-even"><td class="text-center"><p>text _[i]</p></td>
-<td class="text-center"><p>italic</p></td>
-<td class="text-center"><p>R I V</p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p>text _[bc]</p></td>
-<td class="text-center"><p>bold center</p></td>
-<td class="text-center"><p>R I V</p></td>
-</tr>
-<tr class="row-even"><td class="text-center"><p>text _[bi]</p></td>
-<td class="text-center"><p>bold italic</p></td>
-<td class="text-center"><p>R I V</p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p>text _[r]</p></td>
-<td class="text-center"><p>right justify</p></td>
-<td class="text-center"><p>R I V</p></td>
-</tr>
-<tr class="row-even"><td class="text-center"><p>text _[u]</p></td>
-<td class="text-center"><p>underline</p></td>
-<td class="text-center"><p>R I V</p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p>text _[l]</p></td>
-<td class="text-center"><p>LaTeX math</p></td>
-<td class="text-center"><p>R I V</p></td>
-</tr>
-<tr class="row-even"><td class="text-center"><p>text _[s]</p></td>
-<td class="text-center"><p>sympy math</p></td>
-<td class="text-center"><p>R I V</p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p>text _[bs]</p></td>
-<td class="text-center"><p>bold sympy math</p></td>
-<td class="text-center"><p>R I V</p></td>
-</tr>
-<tr class="row-even"><td class="text-center"><p>text _[e]</p></td>
-<td class="text-center"><p>equation label autonumber</p></td>
-<td class="text-center"><p>R I V</p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p>text _[f]</p></td>
-<td class="text-center"><p>figure caption autonumber</p></td>
-<td class="text-center"><p>R I V</p></td>
-</tr>
-<tr class="row-even"><td class="text-center"><p>text _[t]</p></td>
-<td class="text-center"><p>table title autonumber</p></td>
-<td class="text-center"><p>R I V</p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p>text _[#]</p></td>
-<td class="text-center"><p>footnote autonumber</p></td>
-<td class="text-center"><p>R I V</p></td>
-</tr>
-<tr class="row-even"><td class="text-center"><p>text _[d]</p></td>
-<td class="text-center"><p>footnote description</p></td>
-<td class="text-center"><p>R I V</p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p>_[page]</p></td>
-<td class="text-center"><p>new page</p></td>
-<td class="text-center"><p>R I V</p></td>
-</tr>
-<tr class="row-even"><td class="text-center"><p>_[address label]</p></td>
-<td class="text-center"><p>link</p></td>
-<td class="text-center"><p>R I V</p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p>a = n | unit, alt | descrip</p></td>
-<td class="text-center"><p>= tag declares a variable</p></td>
-<td class="text-center"><p>V</p></td>
-</tr>
-<tr class="row-even"><td class="text-center"><p>a := b + c | unit, alt | n, n</p></td>
-<td class="text-center"><p>:= tag assigns a value</p></td>
-<td class="text-center"><p>V</p></td>
-</tr>
-</tbody>
-</table>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head text-center"><p><strong>block tags</strong></p></th>
-<th class="head text-center"><p><strong>description</strong></p></th>
-<th class="head text-center"><p><strong>API function</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-center"><p>_[[b]]</p></td>
-<td class="text-center"><p>bold</p></td>
-<td class="text-center"><p>R I V</p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p>_[[c]]</p></td>
-<td class="text-center"><p>center</p></td>
-<td class="text-center"><p>R I V</p></td>
-</tr>
-<tr class="row-even"><td class="text-center"><p>_[[i]]</p></td>
-<td class="text-center"><p>italic</p></td>
-<td class="text-center"><p>R I V</p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p>_[[p]]</p></td>
-<td class="text-center"><p>plain</p></td>
-<td class="text-center"><p>R I V</p></td>
-</tr>
-<tr class="row-even"><td class="text-center"><p>_[[q]]</p></td>
-<td class="text-center"><p>quit block</p></td>
-<td class="text-center"><p>R I V</p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p>_[[l]]</p></td>
-<td class="text-center"><p>LaTeX</p></td>
-<td class="text-center"><p>I V</p></td>
-</tr>
-</tbody>
-</table>
+<pre style="background: #dce8ef">
+============================ ================================= ==========
+   line tags                        description                   API
+============================ ================================ ===========
+text _[b]                       bold                            R I V 
+text _[c]                       center                          R I V  
+text _[i]                       italic                          R I V  
+text _[bc]                      bold center                     R I V  
+text _[bi]                      bold italic                     R I V
+text _[r]                       right justify                   R I V
+text _[u]                       underline                       R I V   
+text _[l]                       LaTeX math                        I V
+text _[s]                       sympy math                        I V
+text _[bs]                      bold sympy math                   I V
+text _[e]                       equation label, autonumber        I V
+text _[f]                       figure caption, autonumber        I V
+text _[t]                       table title, autonumber           I V
+text _[#]                       footnote, autonumber              I V
+text _[d]                       footnote description              I V
+_[page]                         new page                          I V
+_[address, label]               url or internal reference         I V
+a = 1.2 | unit, alt | descrip   declare =                           V
+a := b + c | unit, alt | n,n    assign :=                           V
+
+============================ ================================= ==========
+   block tags                        description                   API
+============================ ================================ ===========
+_[[b]]                          bold                            R I V
+_[[c]]                          center                          R I V
+_[[i]]                          italic                          R I V
+_[[p]]                          plain                           R I V
+_[[q]]                          quit block                      R I V
+_[[l]]                          LaTeX                             I V
+</pre>
 <p>The first line of a rivt file is <em>import rivt.rivtapi as rv</em> followed by the
 Repo function rv.R(). rv.R is followed by any of the other three methods in any
 number or order. The first line of each function is a label followed by section
