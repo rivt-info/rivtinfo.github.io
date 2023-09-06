@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'rivt:  write <br> organize <br> share'
+project = 'rivt'
 copyright = '2023 StructureLabs'
 author = 'rholland'
 release = '0.1'
@@ -28,4 +28,4 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 html_theme = 'insegel'
 html_static_path = ['_static']
-html_logo = "_static/img/riv02.png"
+html_logo = "riv02.png"
