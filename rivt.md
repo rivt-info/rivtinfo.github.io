@@ -19,7 +19,8 @@ The minimum software needed is:
 - **rivtlib** + Python dependencies
 
 **rivt-doc** is an installable, open source editing and publishing framework
-that requires additional open source dependencies. Details are provided here.
+that requires additional open source dependencies. Details are provided
+here (<project:rivt-doc.md>).
 
 ## rivt files
 
@@ -30,7 +31,7 @@ A rivt file is a utf-8 Python file that includes the import statement:
 and exposes four single-letter API functions: repo, insert, values and tools.
 Each function takes a triple quoted string as argument.
 
-<pre style="background: #dce8ef">
+<pre style="background:  #cfdde2">
 rv.R(str) - repository and report information 
 rv.I(str) - static text, images, tables and math
 rv.V(str) - equations
@@ -47,11 +48,11 @@ formats respectively.
 
 rivt works with single file documents and extensive reports including hundreds
 of files. Multi-file reports are structured through a tri-level folder
-structure explained [here]<project:rivt-doc.md>.
+structure explained here (<project:rivt-doc.md>).
 
 ## API functions
 
-<pre style="background: #dce8ef">
+<pre style="background:  #cfdde2">
 ========= ========================================================
  name                       function
 ========= ========================================================
