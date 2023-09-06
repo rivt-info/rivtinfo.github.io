@@ -51,144 +51,141 @@
 <h1><strong>rivt example</strong><a class="headerlink" href="#rivt-example" title="Link to this heading">¶</a></h1>
 <section id="example-input-file">
 <h2>example input file<a class="headerlink" href="#example-input-file" title="Link to this heading">¶</a></h2>
-<p>.. important::</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>```
-import rivt.rivtapi as rv
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">rivt.rivtapi</span> <span class="k">as</span> <span class="nn">rv</span>
 
-rv.R(&quot;&quot;&quot;Introduction | notoc, 1
+<span class="n">rv</span><span class="o">.</span><span class="n">R</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Introduction | notoc, 1</span>
 
-    The Repo method (short for repository and report) is the first method of a
-    rivt file which specifies document configuration settings.
+<span class="s2">    The Repo method (short for repository and report) is the first method of a</span>
+<span class="s2">    rivt file which specifies document configuration settings.</span>
 
-    The first line of any method is the heading line, which starts a new
-    document section. If the section heading is preceded by two dashes (--) it
-    becomes a section reference and a new section is not started. The toc
-    parameter specifies whether a document table of contents is generated (not
-    to be confused with a report table of contents). The page number is the
-    starting page number for the doc when processed as a stand alone document.
+<span class="s2">    The first line of any method is the heading line, which starts a new</span>
+<span class="s2">    document section. If the section heading is preceded by two dashes (--) it</span>
+<span class="s2">    becomes a section reference and a new section is not started. The toc</span>
+<span class="s2">    parameter specifies whether a document table of contents is generated (not</span>
+<span class="s2">    to be confused with a report table of contents). The page number is the</span>
+<span class="s2">    starting page number for the doc when processed as a stand alone document.</span>
 
-    The init command specifies the name of the configuration file which is read
-    from the rivt-doc folder. Report formatting can be easily modified by
-    specifying a different init file.
+<span class="s2">    The init command specifies the name of the configuration file which is read</span>
+<span class="s2">    from the rivt-doc folder. Report formatting can be easily modified by</span>
+<span class="s2">    specifying a different init file.</span>
 
-    ||init | rivt01.ini
+<span class="s2">    ||init | rivt01.ini</span>
 
-    The text command inserts text from an external file. Text files may be
-    plain text or include rivt tags.
+<span class="s2">    The text command inserts text from an external file. Text files may be</span>
+<span class="s2">    plain text or include rivt tags.</span>
 
-    ||text | private/text/proj.txt | plain
-    
-    The append command attaches PDF files to the end of the doc.
+<span class="s2">    ||text | private/text/proj.txt | plain</span>
+<span class="s2">    </span>
+<span class="s2">    The append command attaches PDF files to the end of the doc.</span>
 
-    || append | append/report1.pdf
-    || append | append/report2.pdf
+<span class="s2">    || append | append/report1.pdf</span>
+<span class="s2">    || append | append/report2.pdf</span>
 
-    
-    &quot;&quot;&quot;)
+<span class="s2">    </span>
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 
-rv.I(&quot;&quot;&quot;The Insert method | default 
+<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;The Insert method | default </span>
 
-    The Insert method formats static information e.g. images and text. The
-    color command specifies a background color for the section.
+<span class="s2">    The Insert method formats static information e.g. images and text. The</span>
+<span class="s2">    color command specifies a background color for the section.</span>
 
-    The text command inserts and formats text from external files into the
-    rivt file. Text files may be plain text or text with rivt tags.
+<span class="s2">    The text command inserts and formats text from external files into the</span>
+<span class="s2">    rivt file. Text files may be plain text or text with rivt tags.</span>
 
-    ||text | data0101/describe.txt | rivt     
+<span class="s2">    ||text | data0101/describe.txt | rivt     </span>
 
-    The table command inserts and formats tabular data from csv or xls files.
-    
-    The _[t] tag formats and autonumbers table titles.
+<span class="s2">    The table command inserts and formats tabular data from csv or xls files.</span>
+<span class="s2">    </span>
+<span class="s2">    The _[t] tag formats and autonumbers table titles.</span>
 
-    A table title  _[t]
-    || table | data0101/file.csv | 60,r
+<span class="s2">    A table title  _[t]</span>
+<span class="s2">    || table | data0101/file.csv | 60,r</span>
 
-    The image command inserts and formats image data from png or jpg files.
+<span class="s2">    The image command inserts and formats image data from png or jpg files.</span>
 
-    The _[f] tag formats and autonumbers figures.
-        
-    A figure caption _[f]
-    || image | data0101/f1.png | 50
+<span class="s2">    The _[f] tag formats and autonumbers figures.</span>
+<span class="s2">        </span>
+<span class="s2">    A figure caption _[f]</span>
+<span class="s2">    || image | data0101/f1.png | 50</span>
 
-    Two images may be placed side by side as follows:
+<span class="s2">    Two images may be placed side by side as follows:</span>
 
-    The first figure caption  _[f]
-    The second figure caption  _[f]
-    || image | private/image/f2.png, private/image/f3.png | 45,35
-    
-    The tags _[x] and _[s] format LaTeX and sympy equations:
+<span class="s2">    The first figure caption  _[f]</span>
+<span class="s2">    The second figure caption  _[f]</span>
+<span class="s2">    || image | private/image/f2.png, private/image/f3.png | 45,35</span>
+<span class="s2">    </span>
+<span class="s2">    The tags _[x] and _[s] format LaTeX and sympy equations:</span>
 
-    \gamma = \frac{5}{x+y} + 3  _[x] 
+<span class="s2">    \gamma = </span><span class="se">\f</span><span class="s2">rac</span><span class="si">{5}</span><span class="s2">{x+y} + 3  _[x] </span>
 
-    x = 32 + (y/2)  _[s]
+<span class="s2">    x = 32 + (y/2)  _[s]</span>
 
-    &quot;&quot;&quot;)
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 
-rv.V(&quot;&quot;&quot;The Values method |  sub; nosub 
+<span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;The Values method |  sub; nosub </span>
 
-    The Values method assigns values to variables and evaluates equations. The
-    sub; nosub setting specifies whether the equations are printed a second
-    time with substituted numerical values.
+<span class="s2">    The Values method assigns values to variables and evaluates equations. The</span>
+<span class="s2">    sub; nosub setting specifies whether the equations are printed a second</span>
+<span class="s2">    time with substituted numerical values.</span>
 
-    A table tag provides a table title and number.  
-    
-    The equal tag declares a value. A sequence of declared values terminated
-    with a blank line are formatted as a table.
-    
-    Example of assignment list _[t]
-    f1 = 10.1 * LBF | N | a force
-    d1 = 12.1 * IN | CM | a length
+<span class="s2">    A table tag provides a table title and number.  </span>
+<span class="s2">    </span>
+<span class="s2">    The equal tag declares a value. A sequence of declared values terminated</span>
+<span class="s2">    with a blank line are formatted as a table.</span>
+<span class="s2">    </span>
+<span class="s2">    Example of assignment list _[t]</span>
+<span class="s2">    f1 = 10.1 * LBF | N | a force</span>
+<span class="s2">    d1 = 12.1 * IN | CM | a length</span>
 
-    An equation tag provides an equation description and number. A colon-equal
-    tag assigns a value and specifies the result units and printed output
-    decimal places in the result and equation.
+<span class="s2">    An equation tag provides an equation description and number. A colon-equal</span>
+<span class="s2">    tag assigns a value and specifies the result units and printed output</span>
+<span class="s2">    decimal places in the result and equation.</span>
 
-    Example equation - Area of circle  _[e]
-    a1 := 3.14(d1/2)^2 | IN^2, CM^2 | 1,2
+<span class="s2">    Example equation - Area of circle  _[e]</span>
+<span class="s2">    a1 := 3.14(d1/2)^2 | IN^2, CM^2 | 1,2</span>
 
-    || declare | data0102/values0102.csv
-    
-    The declare command imports values from a csv file written by rivt when
-    processing assigned and declared values from another doc in the same
-    project.
+<span class="s2">    || declare | data0102/values0102.csv</span>
+<span class="s2">    </span>
+<span class="s2">    The declare command imports values from a csv file written by rivt when</span>
+<span class="s2">    processing assigned and declared values from another doc in the same</span>
+<span class="s2">    project.</span>
 
-    &quot;&quot;&quot;)
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 
-rv.T(&quot;&quot;&quot;The Tools method | color 
+<span class="n">rv</span><span class="o">.</span><span class="n">T</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;The Tools method | color </span>
 
-    # The Tools method processes Python code in the rivt namespace and prints
-    # the code and result of any print statement in the doc. New functions 
-    # may be written explicitly or imported from other files. Line comments 
-    # are printed. Triple quotes cannot be used. Use raw strings instead.
-    
-    # Four Python libraries, if installed, are imported by rivt and available as: 
-    # pyplot -&gt; plt
-    # numpy -&gt; np
-    # pandas -&gt; pd
-    # sympy -&gt; sy
-    
-    # Python code:
-    
-    def f1(x,y): z = x + y
-        print(z)
-        return Z
+<span class="s2">    # The Tools method processes Python code in the rivt namespace and prints</span>
+<span class="s2">    # the code and result of any print statement in the doc. New functions </span>
+<span class="s2">    # may be written explicitly or imported from other files. Line comments </span>
+<span class="s2">    # are printed. Triple quotes cannot be used. Use raw strings instead.</span>
+<span class="s2">    </span>
+<span class="s2">    # Four Python libraries, if installed, are imported by rivt and available as: </span>
+<span class="s2">    # pyplot -&gt; plt</span>
+<span class="s2">    # numpy -&gt; np</span>
+<span class="s2">    # pandas -&gt; pd</span>
+<span class="s2">    # sympy -&gt; sy</span>
+<span class="s2">    </span>
+<span class="s2">    # Python code:</span>
+<span class="s2">    </span>
+<span class="s2">    def f1(x,y): z = x + y</span>
+<span class="s2">        print(z)</span>
+<span class="s2">        return Z</span>
 
-    with open(&#39;file.csv&#39;, &#39;r&#39;) as f: 
-        input = f.readlines()
-    
-    var = range(10)
-    with open(&#39;fileout.csv&#39;, &#39;w&#39;) as f: 
-        f.write(var)
-        
-    &quot;&quot;&quot;)
+<span class="s2">    with open(&#39;file.csv&#39;, &#39;r&#39;) as f: </span>
+<span class="s2">        input = f.readlines()</span>
+<span class="s2">    </span>
+<span class="s2">    var = range(10)</span>
+<span class="s2">    with open(&#39;fileout.csv&#39;, &#39;w&#39;) as f: </span>
+<span class="s2">        f.write(var)</span>
+<span class="s2">        </span>
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 
-rv.X(&quot;&quot;&quot;any text
+<span class="n">rv</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;any text</span>
 
-    Changing a function to X skips evaluation of that function and may be used
-    for review comments and debugging.
+<span class="s2">    Changing a function to X skips evaluation of that function and may be used</span>
+<span class="s2">    for review comments and debugging.</span>
 
-    &quot;&quot;&quot;) 
-```
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span> 
 </pre></div>
 </div>
 </section>
@@ -293,10 +290,6 @@ rv.X(&quot;&quot;&quot;any text
             </div>
         
 
-        <div id="credit">
-            created with <a href="http://sphinx-doc.org/">Sphinx</a> and <a href="https://github.com/Autophagy/insegel">Insegel</a>
-
-        </div>
     </div>
 
     <a id="menu-toggle" class="fa fa-bars" aria-hidden="true"></a>
