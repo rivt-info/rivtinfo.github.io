@@ -1,5 +1,5 @@
 
-```{image} _static/img/riv-doc02.png
+```{image} _static/img/rivt-tools01.png
 :alt: rivt logo
 :target: index.html
 :width: 125px
@@ -8,7 +8,7 @@
 
 **<p style="text-align: left;"><a href="index.html"> HOME </a></p>**
 
-# **rivt-doc**
+# **rivt-tools**
 
 - VS Code
 - Texlive 
