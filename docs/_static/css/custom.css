@@ -31,4 +31,6 @@ a.underline {
 a {
     color: #005580;
     text-decoration: underline;
+    font-weight: bold;
+
 }

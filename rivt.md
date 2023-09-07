@@ -13,7 +13,7 @@ when writing, organizing and sharing engineering documents. **rivtlib** is an
 open source Python library for processing **rivt**. The minimum software needed
 to write rivt documents is Python 3.8 and libraries.
 
-<a href="rivt-doc.html"><b>rivt-doc</b></a> is an installable, open source editing and
+<a href="rivt-doc.html">rivt-doc</a> is an installable, open source editing and
 publishing framework that requires additional open source programs.
 
 ## rivt files
