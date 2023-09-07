@@ -10,8 +10,8 @@ rivt User Manual
    toy-example.md
    rivt-doc.md
    rivt-tools.md
-   rivt-online.md
    rivt-search.md
+   rivt-online.md
 
 
 Indices and tables
