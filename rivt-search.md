@@ -12,9 +12,9 @@
 <style>
 .button {
   background-color: #005580; 
-  border: 2 px solid black;
+  border: 3 px solid black;
   color: white;
-  padding: 15px 32px;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -30,11 +30,7 @@
 
 </head>
 
-<hr>
-
 ## Search GitHub 
-
-<hr>
 
 Full text **rivt** search across README files
 
@@ -48,25 +44,21 @@ Example: concrete+beam+bridge  [**rivt** term is inserted by program]
 
 <button class="button" id="searchBtn" onclick="searchRivt()">Search [ ctrl+enter ]</button>
 
-<hr>
 
 ## Search GitHub Organization
 
-<input type="text" id="terms" name="terms" size=40 style="height:40px;font-size:14pt; font-weight: bold"><br>
+<input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: bold"> Enter Organization<br>
 
-<hr>
 
 <input type="text" id="terms" name="terms" size=80 style="height:40px;font-size:14pt; font-weight: bold"><br>
 
 <button class="button" id="searchBtn" onclick="searchOrg()">Search [ ctrl+enter ]</button>
 
-<hr>
 
 ## Search GitHub Account
 
-<input type="text" id="terms" name="terms" size=40 style="height:40px;font-size:14pt; font-weight: bold"><br>
+<input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: bold">Enter Account<br>
 
-<hr>
 
 <input type="text" id="terms" name="terms" size=80 style="height:40px;font-size:14pt; font-weight: bold"><br>
 
