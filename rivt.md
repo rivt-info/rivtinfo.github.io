@@ -7,7 +7,7 @@
 ```
 <style>
 a {
-    color: #cfdde2;
+    color: #005580;
     text-decoration: underline;
 }
 
