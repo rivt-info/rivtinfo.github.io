@@ -7,7 +7,7 @@ rivt User Manual
    :caption: Contents:
 
    rivt.md
-   toy-example.md
+   examples.md
    rivt-doc.md
    rivt-tools.md
    rivt-search.md
