@@ -36,15 +36,13 @@
 
 <hr>
 
-Full text **rivt** search across README files ()
+Full text **rivt** search across README files
 
 Enter search terms separated by a + sign
 
-**rivt** term is appended
+<input type="text" id="terms" name="terms" size=80 style="height:40px;font-size:14pt; font-weight: bold"><br>
 
-<input type="text" id="terms" name="terms" size=80 style="height:50px;font-size:14pt; font-weight: bold"><br>
-
-Example: concrete+beam+bridge
+Example: concrete+beam+bridge  [**rivt** term is inserted by program]
 
 [ctrl+R or F5] to clear search terms
 
@@ -54,13 +52,11 @@ Example: concrete+beam+bridge
 
 ## Search GitHub Organization
 
+<input type="text" id="terms" name="terms" size=40 style="height:40px;font-size:14pt; font-weight: bold"><br>
+
 <hr>
 
-Full text **rivt** search across README files for a GitHub Organization
-
-<input type="text" id="terms" name="terms" size=80 style="height:50px;font-size:14pt; font-weight: bold"><br>
-
-Example: concrete+beam+bridge
+<input type="text" id="terms" name="terms" size=80 style="height:40px;font-size:14pt; font-weight: bold"><br>
 
 <button class="button" id="searchBtn" onclick="searchOrg()">Search [ ctrl+enter ]</button>
 
@@ -68,10 +64,10 @@ Example: concrete+beam+bridge
 
 ## Search GitHub Account
 
+<input type="text" id="terms" name="terms" size=40 style="height:40px;font-size:14pt; font-weight: bold"><br>
+
 <hr>
 
-Full text **rivt** search across README files for a GitHub Account
-
-<input type="text" id="terms" name="terms" size=80 style="height:50px;font-size:14pt; font-weight: bold"><br>
+<input type="text" id="terms" name="terms" size=80 style="height:40px;font-size:14pt; font-weight: bold"><br>
 
 <button class="button" id="searchBtn" onclick="searchRivt()">Search [ ctrl+enter ]</button>
