@@ -27,3 +27,8 @@ a.external-link:hover {
 a.underline {
     text-decoration: underline;
 }
+
+a {
+    color: blue;
+    text-decoration: underline;
+}

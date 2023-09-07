@@ -6,24 +6,8 @@ img.align-center {
     display: block;
 }
 
-a.internal-link {
-    text-decoration: underline !important;
-    color: orange;
-}
 
-a.internal-link:hover {
-    color: red;
-}
-
-a.external-link {
-    text-decoration: underline !important;
-    color: orange;
-}
-
-a.external-link:hover {
-    color: red;
-}
-
-a.underline {
+a {
+    color: blue;
     text-decoration: underline;
 }

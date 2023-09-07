@@ -42,7 +42,7 @@ formats respectively.
 
 rivt works with documents of all sizes; from single files to extensive reports
 including hundreds of files. Multi-file reports are structured through a
-tri-level folder structure explained here <a href="rivt-doc.html">rivt-doc</a>.
+tri-level folder structure explained here <a href="rivt-doc.html">here</a>.
 
 ## API functions
 
