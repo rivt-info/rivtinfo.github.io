@@ -7,9 +7,9 @@
 :align: left
 ```
 
-# **rivt toy example**
+# **rivt exampled**
 
-## example input
+## toy example input
 
 <pre style="background: #e6ecdf">
 import rivt.rivtapi as rv
@@ -150,7 +150,7 @@ rv.X("""any text
 </pre>
 
 
-## text output
+### text output
 
 import rivt.rivtapi as rv
 
@@ -290,11 +290,16 @@ rv.X("""any text
 </pre>
 
 
-## markdown output
+### markdown output
 
 some markdown
 
 
-## PDF output file
+### PDF output file
 
 [PDF output from example](./_static/attach/rivt-toy-example.pdf)
+
+
+## other examples
+
+xyz
