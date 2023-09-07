@@ -11,6 +11,15 @@
 - VS Code
 - Texlive 
 
+## rivt-doc installation
+
+- VSCode + extensions 
+- LaTeX 
+- Github account
+
+rivt-doc is available for every OS platform and installs either in a single
+portable folder via a zip file or as a set of system programs. It also runs in
+the cloud using GitHub CodeSpaces or other cloud service providers.
 
 ## folder structure
 
@@ -62,17 +71,6 @@
             ├── data1.csv
             └── data1.xls
 </pre>
-
-## rivt-doc installation
-
-- VSCode + extensions 
-- LaTeX 
-- Github account
-
-rivt-doc is available for every OS platform and installs either in a single
-portable folder via a zip file or as a set of system programs. It also runs in
-the cloud using GitHub CodeSpaces or other cloud service providers.
-
 
 ## VSCode Profiles
 

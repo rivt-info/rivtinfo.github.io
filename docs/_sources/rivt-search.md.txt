@@ -30,7 +30,7 @@
 
 </head>
 
-## Search GitHub 
+## GitHub 
 
 Full text **rivt** document search across README files
 
@@ -45,7 +45,7 @@ Example: concrete+beam+bridge  [**rivt** term is inserted by program]
 <button class="button" id="searchBtn" onclick="searchRivt()">Search [ ctrl+enter ]</button>
 
 
-## Search GitHub Organization
+## GitHub Organization
 
 <input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: bold"> Enter Organization<br>
 
@@ -55,7 +55,7 @@ Example: concrete+beam+bridge  [**rivt** term is inserted by program]
 <button class="button" id="searchBtn" onclick="searchOrg()">Search [ ctrl+enter ]</button>
 
 
-## Search GitHub Account
+## GitHub Account
 
 <input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: bold"> Enter Account<br>
 

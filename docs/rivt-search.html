@@ -66,8 +66,8 @@
 <script> function searchRivt(){var strng1 = document.getElementById("terms");var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 13) && e.ctrlKey){document.getElementById("searchBtn").click();}});</script>
 <script> function searchOrg(){var strng1 = document.getElementById("terms");var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 13) && e.ctrlKey){document.getElementById("searchBtn").click();}});</script>
 </head>
-<section id="search-github">
-<h2>Search GitHub<a class="headerlink" href="#search-github" title="Link to this heading">¶</a></h2>
+<section id="github">
+<h2>GitHub<a class="headerlink" href="#github" title="Link to this heading">¶</a></h2>
 <p>Full text <strong>rivt</strong> document search across README files</p>
 <p>Enter search terms separated by a + sign</p>
 <p><input type="text" id="terms" name="terms" size=80 style="height:40px;font-size:14pt; font-weight: bold"><br></p>
@@ -75,14 +75,14 @@
 <p>[ctrl+R or F5] to clear search terms</p>
 <p><button class="button" id="searchBtn" onclick="searchRivt()">Search [ ctrl+enter ]</button></p>
 </section>
-<section id="search-github-organization">
-<h2>Search GitHub Organization<a class="headerlink" href="#search-github-organization" title="Link to this heading">¶</a></h2>
+<section id="github-organization">
+<h2>GitHub Organization<a class="headerlink" href="#github-organization" title="Link to this heading">¶</a></h2>
 <p><input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: bold"> Enter Organization<br></p>
 <p><input type="text" id="terms" name="terms" size=80 style="height:40px;font-size:14pt; font-weight: bold"><br></p>
 <p><button class="button" id="searchBtn" onclick="searchOrg()">Search [ ctrl+enter ]</button></p>
 </section>
-<section id="search-github-account">
-<h2>Search GitHub Account<a class="headerlink" href="#search-github-account" title="Link to this heading">¶</a></h2>
+<section id="github-account">
+<h2>GitHub Account<a class="headerlink" href="#github-account" title="Link to this heading">¶</a></h2>
 <p><input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: bold"> Enter Account<br></p>
 <p><input type="text" id="terms" name="terms" size=80 style="height:40px;font-size:14pt; font-weight: bold"><br></p>
 <p><button class="button" id="searchBtn" onclick="searchRivt()">Search [ ctrl+enter ]</button></p>
@@ -122,20 +122,22 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="examples.html"><strong>rivt examples</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="examples.html#toy-example-input">toy example input</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="examples.html#text-output">text output</a></li>
-<li class="toctree-l3"><a class="reference internal" href="examples.html#markdown-output">markdown output</a></li>
-<li class="toctree-l3"><a class="reference internal" href="examples.html#pdf-output-file">PDF output file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html"><strong>rivt Examples</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#toy-input">toy input</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#output-text">output - text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#output-markdown">output - markdown</a></li>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#output-pdf-file">output - pdf file</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="examples.html#other-examples">other examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#solar-canopy">Solar Canopy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#seismic-strengthening">Seismic Strengthening</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="rivt-doc.html"><strong>rivt-doc</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="rivt-doc.html#rivt-doc-installation">rivt-doc installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rivt-doc.html#vscode-profiles">VSCode profiles</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="rivt-doc.html#shortcuts">shortcuts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rivt-doc.html#folder-structure">folder structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rivt-doc.html#vscode-profiles">VSCode Profiles</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="rivt-doc.html#shortcuts">Shortcuts</a></li>
 <li class="toctree-l3"><a class="reference internal" href="rivt-doc.html#api-function-snippets">API function snippets</a></li>
 <li class="toctree-l3"><a class="reference internal" href="rivt-doc.html#command-snippets">command snippets</a></li>
 </ul>
@@ -143,9 +145,9 @@
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#"><strong>rivt-search</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#search-github">Search GitHub</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#search-github-organization">Search GitHub Organization</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#search-github-account">Search GitHub Account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#github">GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#github-organization">GitHub Organization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#github-account">GitHub Account</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="rivt-tools.html"><strong>rivt-tools</strong></a><ul>
