@@ -11,7 +11,7 @@
 <head>
 <style>
 .button {
-  background-color: #4CAF50; /* Green */
+  background-color: #005580; 
   border: 2 px solid black;
   color: white;
   padding: 15px 32px;
@@ -28,34 +28,12 @@
 
 </head>
 
-<p style= "font-size: 1.3em !important;"> Open Source Software for Composing and Sharing Engineering Documents </p>
-
-<hr>
-
-<div id="banner" style="overflow: visible; display: flex; justify-content:space-around;">
-<div>
-<a href="https://rivtdocs.net"><img src="./assets/img/rivtdocs03.png" width="75" height="75" /></a><a href="https://rivtdocs.net">rivtDocs</a>
-</div>
-
-<div>
-<a href="https://rivtcode.net"><img src="./assets/img/rivt03.png" width="75" height="75"/></a><a href="https://rivtcode.net">rivt</a>
-</div>
-
-<div>
-<a href="https://rivtdocs.net/search"><img src="./assets/img/search03.png" width="75" height="75"/></a><a href="https://rivtdocs.net/search"><b>rivtSearch</b></a>
-</div>
-</div>
-
-<hr>
-
-
 ## Search GitHub 
 
 Full text **rivt** search across README files on GitHub (**rivt** term is not required)
 
 Enter search terms separated by a + sign
 
-<br>
 [ctrl+enter] to execute search
 <br>
 [ctrl+R or F5] to clear search terms
@@ -66,6 +44,7 @@ Example: concrete+beam+bridge
 
 <button class="button" id="searchBtn" onclick="searchRivt()">Search [ ctrl+enter ]</button>
 
+<hr>
 
 ## Search Organization
 

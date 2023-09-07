@@ -89,6 +89,16 @@ write-pdf   rv.writepdf()
 (wp)        writes markdown and PDF document
 </pre>
 
+The first line of each function is a label followed by section parameters. Each
+function defines a new section with the label as the title. The labels may be
+converted into editing references that do not start a new section by prepending
+a double hyphen.
+
+File format conventions follow the Python formatter pep8, and linter ruff.
+Method names start in column one. All other lines must be indented 4 spaces to
+facilitate section folding, bookmarks and legibility. The first line of each
+rivt function defines the section title and parameters.
+
 ## rivt syntax
 
 rivt syntax includes arbitrary unicode text including rivt commands and tags. A
@@ -158,15 +168,5 @@ _[[l]]                          LaTeX                             I V
 </pre>
 
 
-The first line of a rivt file is *import rivt.rivtapi as rv* followed by the
-Repo function rv.R(). rv.R is followed by any of the other three methods in any
-number or order. The first line of each function is a label followed by section
-parameters. Each function defines a new section with the label as the title.
-The labels may be converted into editing references that do not start a new
-section by prepending a double hyphen.
 
-File format conventions follow the Python formatter pep8, and linter ruff.
-Method names start in column one. All other lines must be indented 4 spaces to
-facilitate section folding, bookmarks and legibility. The first line of each
-rivt function defines the section title and parameters.
 

@@ -120,6 +120,14 @@ write-md    rv.writemd()
 write-pdf   rv.writepdf()
 (wp)        writes markdown and PDF document
 </pre>
+<p>The first line of each function is a label followed by section parameters. Each
+function defines a new section with the label as the title. The labels may be
+converted into editing references that do not start a new section by prepending
+a double hyphen.</p>
+<p>File format conventions follow the Python formatter pep8, and linter ruff.
+Method names start in column one. All other lines must be indented 4 spaces to
+facilitate section folding, bookmarks and legibility. The first line of each
+rivt function defines the section title and parameters.</p>
 </section>
 <section id="rivt-syntax">
 <h2>rivt syntax<a class="headerlink" href="#rivt-syntax" title="Link to this heading">¶</a></h2>
@@ -187,16 +195,6 @@ _[[p]]                          plain                           R I V
 _[[q]]                          quit block                      R I V
 _[[l]]                          LaTeX                             I V
 </pre>
-<p>The first line of a rivt file is <em>import rivt.rivtapi as rv</em> followed by the
-Repo function rv.R(). rv.R is followed by any of the other three methods in any
-number or order. The first line of each function is a label followed by section
-parameters. Each function defines a new section with the label as the title.
-The labels may be converted into editing references that do not start a new
-section by prepending a double hyphen.</p>
-<p>File format conventions follow the Python formatter pep8, and linter ruff.
-Method names start in column one. All other lines must be indented 4 spaces to
-facilitate section folding, bookmarks and legibility. The first line of each
-rivt function defines the section title and parameters.</p>
 </section>
 </section>
 </section>
@@ -232,6 +230,16 @@ rivt function defines the section title and parameters.</p>
 <li class="toctree-l3"><a class="reference internal" href="#tags">tags</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html"><strong>rivt exampled</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#toy-example-input">toy example input</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#text-output">text output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#markdown-output">markdown output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#pdf-output-file">PDF output file</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#other-examples">other examples</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="rivt-doc.html"><strong>rivt-doc</strong></a><ul>
