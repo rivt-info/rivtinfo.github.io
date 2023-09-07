@@ -5,13 +5,6 @@
 :width: 125px
 :align: left
 ```
-<style>
-a {
-    color: #005580;
-    text-decoration: underline;
-}
-
-</style>
 
 # **rivt**
 
