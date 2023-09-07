@@ -26,28 +26,44 @@
 
 <script> function searchRivt(){var strng1 = document.getElementById("terms");var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 13) && e.ctrlKey){document.getElementById("searchBtn").click();}});</script>
 
+<script> function searchOrg(){var strng1 = document.getElementById("terms");var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 13) && e.ctrlKey){document.getElementById("searchBtn").click();}});</script>
+
 </head>
 
 ## Search GitHub 
 
-Full text **rivt** search across README files on GitHub (**rivt** term is not required)
+Full text **rivt** search across README files ()
 
 Enter search terms separated by a + sign
 
-[ctrl+enter] to execute search
-<br>
-[ctrl+R or F5] to clear search terms
-<br>
-<input type="text" id="terms" name="terms" size=80 style="height:50px;font-size:14pt; font-weight: bold">
-<br>
+**rivt** term is appended
+
+<input type="text" id="terms" name="terms" size=80 style="height:50px;font-size:14pt; font-weight: bold"><br>
+
 Example: concrete+beam+bridge
+
+[ctrl+R or F5] to clear search terms
 
 <button class="button" id="searchBtn" onclick="searchRivt()">Search [ ctrl+enter ]</button>
 
 <hr>
 
-## Search Organization
+## Search GitHub Organization
 
-x
+Full text **rivt** search across README files for a GitHub Organization
 
+<input type="text" id="terms" name="terms" size=80 style="height:50px;font-size:14pt; font-weight: bold"><br>
 
+Example: concrete+beam+bridge
+
+<button class="button" id="searchBtn" onclick="searchOrg()">Search [ ctrl+enter ]</button>
+
+<hr>
+
+## Search GitHub Account
+
+Full text **rivt** search across README files for a GitHub Account
+
+<input type="text" id="terms" name="terms" size=80 style="height:50px;font-size:14pt; font-weight: bold"><br>
+
+<button class="button" id="searchBtn" onclick="searchRivt()">Search [ ctrl+enter ]</button>
