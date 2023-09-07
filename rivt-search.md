@@ -30,7 +30,11 @@
 
 </head>
 
+<hr>
+
 ## Search GitHub 
+
+<hr>
 
 Full text **rivt** search across README files ()
 
@@ -50,6 +54,8 @@ Example: concrete+beam+bridge
 
 ## Search GitHub Organization
 
+<hr>
+
 Full text **rivt** search across README files for a GitHub Organization
 
 <input type="text" id="terms" name="terms" size=80 style="height:50px;font-size:14pt; font-weight: bold"><br>
@@ -61,6 +67,8 @@ Example: concrete+beam+bridge
 <hr>
 
 ## Search GitHub Account
+
+<hr>
 
 Full text **rivt** search across README files for a GitHub Account
 
