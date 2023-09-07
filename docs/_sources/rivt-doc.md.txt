@@ -11,6 +11,58 @@
 - VS Code
 - Texlive 
 
+
+## folder structure
+
+<pre style="background:  #cfdde2">
+[rivtdoc]-Report-Label/               
+    ├── .git
+    ├── units.py                        (input: unit over-ride)
+    ├── README.md                       (output: toc and summary) 
+    ├── rivt01.ini                      (input: config file)
+    ├── [doc0101]-div-label/            (division label)
+        ├── [data0101]/                     (resource data)
+            ├── data1.csv                   
+            ├── paper1.pdf
+            └── functions1.py                   
+        ├── [rivt]-doc-label1.py            (input: rivt file)
+        └── README.md                       (output: GFM doc)
+    ├── [doc0102]/                      (division file)
+        ├── data[0102]/                     (input: resource data)
+            ├── data1.csv
+            ├── fig1.png
+            └── fig2.png
+        ├── [rivt]-doc-label2.py            (input: rivt file)
+        └── README.md                       (output: GFM doc)
+    ├── [doc0201]-div-label/            (division label)
+        ├── [data0201]/                     (input: resource data)                   
+            ├── data1.csv
+            ├── attachment.pdf
+            ├── functions.py
+            └── fig1.png
+        ├── [rivt]-doc-label3.py            (input: rivt file)   
+        └── README.md                       (output: GFM doc)
+    └── [private]/                      (private files)
+        ├── [temp]/                         (output: temp files)
+        ├── [report]/                       (report files)
+            ├── 0101-Doc Label1.pdf         (output: PDF docs)
+            ├── 0102-Doc Label2.pdf
+            ├── 0201-Doc Label3.pdf
+            └── Report Label.pdf            
+        ├── images/                         (input: optional data folders ...)
+            ├── fig1.png
+            └── fig2.png
+        ├── text/    
+            ├── text1.txt
+            └── text2.txt
+        ├── append/    
+            ├── report1.pdf
+            └── report2.pdf
+        └── tables/
+            ├── data1.csv
+            └── data1.xls
+</pre>
+
 ## rivt-doc installation
 
 - VSCode + extensions 
@@ -21,14 +73,18 @@ rivt-doc is available for every OS platform and installs either in a single
 portable folder via a zip file or as a set of system programs. It also runs in
 the cloud using GitHub CodeSpaces or other cloud service providers.
 
-## VSCode profiles
+
+## VSCode Profiles
 
 The rivt VSCode profile includes shortcuts for common editing functions and
 snippets for API functions and commands.
 
-### shortcuts
+### Shortcuts
 
+<pre style="background:  #cfdde2">
+==============  ===========================================================
 Keystroke                   Description
+==============  ===========================================================
 
 
 alt+q                rewrap paragraph with hard line feeds (80 default)
@@ -57,6 +113,7 @@ ctl+shift+s          open GitHub rivt README search
 ctl+shift+a          commit all 
 ctl+shift+z          commit current editor
 ctl+shift+x          post to remote   
+</pre>
 
 ### API function snippets
 

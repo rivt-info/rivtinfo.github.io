@@ -52,6 +52,57 @@
 <li><p>VS Code</p></li>
 <li><p>Texlive</p></li>
 </ul>
+<section id="folder-structure">
+<h2>folder structure<a class="headerlink" href="#folder-structure" title="Link to this heading">¶</a></h2>
+<pre style="background:  #cfdde2">
+[rivtdoc]-Report-Label/               
+    ├── .git
+    ├── units.py                        (input: unit over-ride)
+    ├── README.md                       (output: toc and summary) 
+    ├── rivt01.ini                      (input: config file)
+    ├── [doc0101]-div-label/            (division label)
+        ├── [data0101]/                     (resource data)
+            ├── data1.csv                   
+            ├── paper1.pdf
+            └── functions1.py                   
+        ├── [rivt]-doc-label1.py            (input: rivt file)
+        └── README.md                       (output: GFM doc)
+    ├── [doc0102]/                      (division file)
+        ├── data[0102]/                     (input: resource data)
+            ├── data1.csv
+            ├── fig1.png
+            └── fig2.png
+        ├── [rivt]-doc-label2.py            (input: rivt file)
+        └── README.md                       (output: GFM doc)
+    ├── [doc0201]-div-label/            (division label)
+        ├── [data0201]/                     (input: resource data)                   
+            ├── data1.csv
+            ├── attachment.pdf
+            ├── functions.py
+            └── fig1.png
+        ├── [rivt]-doc-label3.py            (input: rivt file)   
+        └── README.md                       (output: GFM doc)
+    └── [private]/                      (private files)
+        ├── [temp]/                         (output: temp files)
+        ├── [report]/                       (report files)
+            ├── 0101-Doc Label1.pdf         (output: PDF docs)
+            ├── 0102-Doc Label2.pdf
+            ├── 0201-Doc Label3.pdf
+            └── Report Label.pdf            
+        ├── images/                         (input: optional data folders ...)
+            ├── fig1.png
+            └── fig2.png
+        ├── text/    
+            ├── text1.txt
+            └── text2.txt
+        ├── append/    
+            ├── report1.pdf
+            └── report2.pdf
+        └── tables/
+            ├── data1.csv
+            └── data1.xls
+</pre>
+</section>
 <section id="rivt-doc-installation">
 <h2>rivt-doc installation<a class="headerlink" href="#rivt-doc-installation" title="Link to this heading">¶</a></h2>
 <ul class="simple">
@@ -64,35 +115,44 @@ portable folder via a zip file or as a set of system programs. It also runs in
 the cloud using GitHub CodeSpaces or other cloud service providers.</p>
 </section>
 <section id="vscode-profiles">
-<h2>VSCode profiles<a class="headerlink" href="#vscode-profiles" title="Link to this heading">¶</a></h2>
+<h2>VSCode Profiles<a class="headerlink" href="#vscode-profiles" title="Link to this heading">¶</a></h2>
 <p>The rivt VSCode profile includes shortcuts for common editing functions and
 snippets for API functions and commands.</p>
 <section id="shortcuts">
-<h3>shortcuts<a class="headerlink" href="#shortcuts" title="Link to this heading">¶</a></h3>
-<p>Keystroke                   Description</p>
-<p>alt+q                rewrap paragraph with hard line feeds (80 default)
+<h3>Shortcuts<a class="headerlink" href="#shortcuts" title="Link to this heading">¶</a></h3>
+<pre style="background:  #cfdde2">
+==============  ===========================================================
+Keystroke                   Description
+==============  ===========================================================
+
+
+alt+q                rewrap paragraph with hard line feeds (80 default)
 alt+p                open file under cursor
 alt+.                select correct spelling under cursor
 alt+8                insert date
-alt+9                insert time</p>
-<p>ctl+1                focus on first editor
+alt+9                insert time
+
+ctl+1                focus on first editor
 ctl+2                focus on next editor
 ctl+3                focus on previous editor
 ctl+8                focus on explorer pane
-ctl+9                focus on github pane</p>
-<p>ctl+alt+x            reload window
+ctl+9                focus on github pane    
+
+ctl+alt+x            reload window
 ctl+alt+u            unfold all code
 ctl+alt+f            fold code level 2 (rivt sections visible)
 ctl+alt+a            fold code - all levels
 ctl+alt+t            toggle local fold
 ctl+alt+e            toggle explorer sort order
 ctl+alt+s            toggle spell check
-ctl+alt+g            next editor group</p>
-<p>ctl+shift+u          open URL under cursor in browser
+ctl+alt+g            next editor group
+
+ctl+shift+u          open URL under cursor in browser
 ctl+shift+s          open GitHub rivt README search
-ctl+shift+a          commit all
+ctl+shift+a          commit all 
 ctl+shift+z          commit current editor
-ctl+shift+x          post to remote</p>
+ctl+shift+x          post to remote   
+</pre>
 </section>
 <section id="api-function-snippets">
 <h3>API function snippets<a class="headerlink" href="#api-function-snippets" title="Link to this heading">¶</a></h3>
@@ -167,9 +227,10 @@ ctl+shift+x          post to remote</p>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#"><strong>rivt-doc</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#folder-structure">folder structure</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#rivt-doc-installation">rivt-doc installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#vscode-profiles">VSCode profiles</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#shortcuts">shortcuts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vscode-profiles">VSCode Profiles</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#shortcuts">Shortcuts</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#api-function-snippets">API function snippets</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#command-snippets">command snippets</a></li>
 </ul>
