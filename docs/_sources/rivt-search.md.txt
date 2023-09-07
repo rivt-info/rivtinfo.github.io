@@ -32,7 +32,7 @@
 
 ## Search GitHub 
 
-Full text **rivt** search across README files
+Full text **rivt** document search across README files
 
 Enter search terms separated by a + sign
 
@@ -57,7 +57,7 @@ Example: concrete+beam+bridge  [**rivt** term is inserted by program]
 
 ## Search GitHub Account
 
-<input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: bold">Enter Account<br>
+<input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: bold"> Enter Account<br>
 
 
 <input type="text" id="terms" name="terms" size=80 style="height:40px;font-size:14pt; font-weight: bold"><br>

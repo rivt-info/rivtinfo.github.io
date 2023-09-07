@@ -9,8 +9,8 @@ rivt User Manual
    rivt.md
    examples.md
    rivt-doc.md
-   rivt-tools.md
    rivt-search.md
+   rivt-tools.md
    rivt-online.md
 
 

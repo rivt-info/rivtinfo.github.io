@@ -7,7 +7,7 @@
 :align: left
 ```
 
-# **rivt exampled**
+# **rivt examples**
 
 ## toy example input
 

@@ -13,7 +13,7 @@ when writing, organizing and sharing engineering documents. **rivtlib** is an
 open source Python library for processing **rivt**. The minimum software needed
 to write rivt documents is Python 3.8 and libraries.
 
-<a href="rivt-doc.html">rivt-doc</a> is an installable, open source editing and
+<a href="rivt-doc.html"><b>rivt-doc</b></a> is an installable, open source editing and
 publishing framework that requires additional open source programs.
 
 ## rivt files
@@ -22,14 +22,14 @@ A rivt file is a utf-8 Python file that includes the import statement:
 
 *import rivtlib.rivtapi as rv*
  
-which exposes the single-letter API functions referred to as: repo, insert,
-values and tools. Each function takes a triple quoted string as argument.
+which exposes the single-letter API functions repo, insert, values and tools.
+Each function takes a triple quoted string as argument.
 
 <pre style="background:  #cfdde2">
-rv.R(str) - repository and report information 
-rv.I(str) - static text, images, tables and math
-rv.V(str) - equations
-rv.T(str) - Python functions and scripts
+rv.R(str) - repo: repository and report information 
+rv.I(str) - insert: static text, images and tables
+rv.V(str) - values: equations
+rv.T(str) - tools: Python functions and scripts
 </pre>
 
 When running in an IDE (e.g. VSCode), functions may be run individually
@@ -40,7 +40,7 @@ Document and report files are generated using the rv.writemd() and rv.writepdf()
 functions which generate files in GitHub Flavored Markdown (GFM) and PDF
 formats respectively.
 
-rivt works with documents of all sizes; from single files to extensive reports
+rivt works with documents of all sizes - from single files to extensive reports
 including hundreds of files. Multi-file reports are structured through a
 tri-level folder structure explained here <a href="rivt-doc.html">here</a>.
 
@@ -53,7 +53,7 @@ tri-level folder structure explained here <a href="rivt-doc.html">here</a>.
 
 repo        rv.R("""label | toc; notoc page
 
-                    Report, repository and introductory text
+                    Introductory text and repository and report settings.
 
                     """)
 
