@@ -11,6 +11,7 @@ rivt User Manual
    rivt-doc.md
    rivt-tools.md
    rivt-online.md
+   rivt-search.md
 
 
 Indices and tables

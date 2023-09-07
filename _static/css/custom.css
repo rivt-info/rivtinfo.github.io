@@ -23,3 +23,7 @@ a.external-link {
 a.external-link:hover {
     color: red;
 }
+
+a.underline {
+    text-decoration: underline;
+}

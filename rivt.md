@@ -8,19 +8,13 @@
 
 # **rivt**
 
-**rivt** is an engineering markdown language processed by the Python library,
-**rivtlib**. The language is designed to prioritize clarity, efficiency and
-access when writing, organizing and sharing engineering documents. **rivtlib**
-is MIT open source.
+**rivt** is a markdown language that prioritizes clarity, efficiency and access
+when writing, organizing and sharing engineering documents. **rivtlib** is an
+open source Python library for processing **rivt**. The minimum software needed
+to write rivt documents is Python 3.8 and libraries.
 
-The minimum software needed is:
-
-- Python 3.8 or higher 
-- **rivtlib** + Python dependencies
-
-**rivt-doc** is an installable, open source editing and publishing framework
-that requires additional open source dependencies. Details are provided
-here (<project:rivt-doc.md>).
+:underline: `<project:rivt-doc.md>` is an installable, open source editing and
+publishing framework that requires additional open source programs.
 
 ## rivt files
 
@@ -28,8 +22,8 @@ A rivt file is a utf-8 Python file that includes the import statement:
 
 *import rivtlib.rivtapi as rv*
  
-and exposes four single-letter API functions: repo, insert, values and tools.
-Each function takes a triple quoted string as argument.
+which exposes the single-letter API functions referred to as: repo, insert,
+values and tools. Each function takes a triple quoted string as argument.
 
 <pre style="background:  #cfdde2">
 rv.R(str) - repository and report information 
@@ -40,15 +34,15 @@ rv.T(str) - Python functions and scripts
 
 When running in an IDE (e.g. VSCode), functions may be run individually
 with the standard cell decorator (# %%). Interactive output is formatted as
-utf-8 text for speed and compatiblility with virtually any platform.
+utf-8 text for speed and general compatiblility.
 
-Documents and reports are generated using the rv.writemd() and rv.writepdf()
+Document and report files are generated using the rv.writemd() and rv.writepdf()
 functions which generate files in GitHub Flavored Markdown (GFM) and PDF
 formats respectively.
 
-rivt works with single file documents and extensive reports including hundreds
-of files. Multi-file reports are structured through a tri-level folder
-structure explained here (<project:rivt-doc.md>).
+rivt works with documents of all sizes; from single files to extensive reports
+including hundreds of files. Multi-file reports are structured through a
+tri-level folder structure explained here :underline: `<project:rivt-doc.md>`.
 
 ## API functions
 
@@ -169,7 +163,7 @@ Repo function rv.R(). rv.R is followed by any of the other three methods in any
 number or order. The first line of each function is a label followed by section
 parameters. Each function defines a new section with the label as the title.
 The labels may be converted into editing references that do not start a new
-sectiojn by prepending a double hyphen --.
+section by prepending a double hyphen.
 
 File format conventions follow the Python formatter pep8, and linter ruff.
 Method names start in column one. All other lines must be indented 4 spaces to
