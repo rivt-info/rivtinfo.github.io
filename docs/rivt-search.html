@@ -52,9 +52,9 @@
 <style>
 .button {
   background-color: #005580; 
-  border: 2 px solid black;
+  border: 3 px solid black;
   color: white;
-  padding: 15px 32px;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -66,30 +66,24 @@
 <script> function searchRivt(){var strng1 = document.getElementById("terms");var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 13) && e.ctrlKey){document.getElementById("searchBtn").click();}});</script>
 <script> function searchOrg(){var strng1 = document.getElementById("terms");var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 13) && e.ctrlKey){document.getElementById("searchBtn").click();}});</script>
 </head>
-<hr>
 <section id="search-github">
 <h2>Search GitHub<a class="headerlink" href="#search-github" title="Link to this heading">¶</a></h2>
-<hr>
 <p>Full text <strong>rivt</strong> search across README files</p>
 <p>Enter search terms separated by a + sign</p>
 <p><input type="text" id="terms" name="terms" size=80 style="height:40px;font-size:14pt; font-weight: bold"><br></p>
 <p>Example: concrete+beam+bridge  [<strong>rivt</strong> term is inserted by program]</p>
 <p>[ctrl+R or F5] to clear search terms</p>
 <p><button class="button" id="searchBtn" onclick="searchRivt()">Search [ ctrl+enter ]</button></p>
-<hr>
 </section>
 <section id="search-github-organization">
 <h2>Search GitHub Organization<a class="headerlink" href="#search-github-organization" title="Link to this heading">¶</a></h2>
-<p><input type="text" id="terms" name="terms" size=40 style="height:40px;font-size:14pt; font-weight: bold"><br></p>
-<hr>
+<p><input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: bold"> Enter Organization<br></p>
 <p><input type="text" id="terms" name="terms" size=80 style="height:40px;font-size:14pt; font-weight: bold"><br></p>
 <p><button class="button" id="searchBtn" onclick="searchOrg()">Search [ ctrl+enter ]</button></p>
-<hr>
 </section>
 <section id="search-github-account">
 <h2>Search GitHub Account<a class="headerlink" href="#search-github-account" title="Link to this heading">¶</a></h2>
-<p><input type="text" id="terms" name="terms" size=40 style="height:40px;font-size:14pt; font-weight: bold"><br></p>
-<hr>
+<p><input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: bold">Enter Account<br></p>
 <p><input type="text" id="terms" name="terms" size=80 style="height:40px;font-size:14pt; font-weight: bold"><br></p>
 <p><button class="button" id="searchBtn" onclick="searchRivt()">Search [ ctrl+enter ]</button></p>
 </section>
