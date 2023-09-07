@@ -40,7 +40,7 @@ rv.T(str) - Python functions and scripts
 </pre>
 
 When running in an IDE (e.g. VSCode), functions may be run individually
-with the standard cell decorator (# %%). Interactive output is formatted as
+with the standard cell decorator - # %%. Interactive output is formatted as
 utf-8 text for speed and general compatiblility.
 
 Document and report files are generated using the rv.writemd() and rv.writepdf()
