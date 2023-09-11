@@ -1,9 +1,12 @@
 
-<div style="text-align: center>
-<a href=""https://www.rivt-doc.net/index.html"><img src="_static/img/riv02.png" alt="rivt logo" width="125" ></a>
-</div>
+```{image} _static/img/riv02.png
+:alt: rivt logo
+:target: https://www.rivt-doc.net/index.html
+:width: 125px
+:align: center
+```
 
-# **rivt2**
+# **rivt**
 
 **rivt** is a markdown language that prioritizes clarity, efficiency and access
 when writing, organizing and sharing engineering documents. **rivtlib** is an
