@@ -3,7 +3,7 @@
 :alt: rivt logo
 :target: https://www.rivt-doc.net/index.html
 :width: 125px
-:align: left
+:align: center
 ```
 
 # **rivt-search**

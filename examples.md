@@ -4,12 +4,12 @@
 :alt: rivt logo
 :target: https://www.rivt-doc.net/index.html
 :width: 125px
-:align: left
+:align: center
 ```
 
 # **rivt Examples**
 
-## toy input
+## Toy Example
 
 <pre style="background: #e6ecdf">
 import rivt.rivtapi as rv
@@ -150,7 +150,7 @@ rv.X("""any text
 </pre>
 
 
-### output - text
+### output (text)
 
 import rivt.rivtapi as rv
 
@@ -290,12 +290,12 @@ rv.X("""any text
 </pre>
 
 
-### output - markdown
+### output (markdown)
 
 some markdown
 
 
-### output - pdf file
+### output (PDF)
 
 [PDF output from example](./_static/attach/rivt-toy-example.pdf)
 
@@ -307,3 +307,5 @@ xyz
 ## Seismic Strengthening
 
 xyz
+
+## replit (interactive)
