@@ -1,10 +1,7 @@
 
-```{image} _static/img/riv02.png
-:alt: rivt logo
-:target: https://www.rivt-doc.net/index.html
-:width: 125px
-:align: center
-```
+<div style="text-align: center>
+<a href=""https://www.rivt-doc.net/index.html"><img src="_static/img/riv02.png" alt="rivt logo" width="125" ></a>
+</div>
 
 # **rivt**
 
