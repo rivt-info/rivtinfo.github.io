@@ -1,21 +1,16 @@
 
-```{image} _static/img/riv02.png
-:alt: rivt logo
-:target: https://www.rivt-doc.net/index.html
-:width: 75px
-:align: center
-```
-Line of text
+
+Line of text {{ key1 }}
 
 # **rivt**
 
 **rivt** is a markdown language for writing, organizing and sharing engineering
-documents. It prioritizes clarity, efficiency and access. **rivtlib** is
-an open source Python library for processing **rivt**. The minimum software
-needed to write rivt documents is Python 3.8 and related Python libraries.
-
+documents. It prioritizes clarity, efficiency and access. **rivtlib** is an
+open source Python library for processing **rivt**. The minimum software needed
+to write rivt documents is Python 3.8 and related Python libraries. 
 <a href="rivt-doc.html">rivt-doc</a> is an installable, open source editing and
-publishing framework that requires additional open source programs.
+publishing framework built around rivt that requires additional open source
+programs.
 
 ## rivt files
 
