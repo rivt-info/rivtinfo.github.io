@@ -4,7 +4,7 @@ rivt User Manual
 
 .. toctree::
    :maxdepth: 3
-   :caption: Contents:
+   :hidden:
 
    rivt.md
    examples.md
