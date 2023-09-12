@@ -2,6 +2,8 @@
 **rivt User Manual**
 ======================
 
+
+
 .. toctree::
    :maxdepth: 3
    :hidden:
@@ -13,16 +15,22 @@
    rivt-tools.md
    rivt-online.md
 
-
 -----------------------------------
+
+|
 
 **rivt** is a markdown language for writing, organizing and sharing engineering
 documents. It prioritizes clarity, efficiency and access. **rivtlib** is an
 open source Python library for processing **rivt**. The minimum software needed
-to write rivt documents is Python 3.8 and related Python libraries. 
-`rivt-doc<"rivt-doc.html">` is an open source editing and
-publishing framework built around rivt that requires additional open source
-programs.
+to write rivt documents is Python 3.8 and related Python libraries.
+**rivt-doc** is an open source editing and publishing framework for rivt that
+requires additional open source programs.
+
+|
 
 -------------------------------------
+
+
+
+
  
