@@ -2,14 +2,14 @@
 myst:
     substitutions:
         "key1": |
-            ```{image} _static/img/riv02.png
+            ```{image} _static/img/riv02-low.png
             :alt: rivt logo
             :target: https://www.rivt-doc.net/index.html
             :width: 65px
             ```
 ---
 
-# **rivt** {{ key1 }} 
+# {{ key1 }}  **rivt** 
 
 
 **rivt** is a markdown language for writing, organizing and sharing engineering
