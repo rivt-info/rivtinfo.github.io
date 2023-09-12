@@ -24,16 +24,6 @@ source_suffix = ['.rst', '.md']
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
-myst_substitutions = {
-    "key1": """|
-    {image} _static/img/riv02.png
-    :alt: rivt logo
-    :target: https://www.rivt-doc.net/index.html
-    :width: 75px
-    :align: center
-    """
-}
-
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
