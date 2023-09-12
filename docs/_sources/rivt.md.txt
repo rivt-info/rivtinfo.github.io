@@ -13,10 +13,11 @@ myst:
 
 
 **rivt** is a markdown language for writing, organizing and sharing engineering
-documents. It prioritizes clarity, efficiency and access. **rivtlib** is an
-open source Python library for processing **rivt**. The minimum software needed
-to write rivt documents is Python 3.8 and related Python libraries. 
-<a href="rivt-doc.html">rivt-doc</a> is an open source editing and
+documents. It prioritizes clarity, efficiency and access.
+[rivtlib](https://rivt-code.net) is an open source Python library for
+processing **rivt**. The minimum software needed to write rivt documents is
+Python 3.8 and related Python libraries.
+[rivt-doc](https://github.com/rivt-doc) is an open source editing and
 publishing framework built around rivt that requires additional open source
 programs.
 
