@@ -9,7 +9,7 @@ myst:
             ```
 ---
 
-# **rivt-doc** {{ key4 }} 
+# **rivt-search** {{ key4 }} 
 
 <head>
 <style>
