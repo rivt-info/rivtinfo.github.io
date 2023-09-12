@@ -5,7 +5,7 @@ myst:
             ```{image} _static/img/search01.png
             :alt: rivt-search logo
             :target: https://github.com/search
-            :width: 60px
+            :width: 65px
             ```
 ---
 

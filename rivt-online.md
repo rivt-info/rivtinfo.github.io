@@ -4,12 +4,12 @@ myst:
         "key5": |
             ```{image} _static/img/rvtonline02.png
             :alt: rivt-online logo
-            :target: https://www.rivt-doc.net/index.html
-            :width: 60px
+            :target: https://rivt-online.net
+            :width: 65px
             ```
 ---
 
-# **rivt-online** {{ key5 }} 
+# {{ key5 }} **rivt-online** 
 
 - VS Code
 - Texlive 

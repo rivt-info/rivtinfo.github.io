@@ -5,7 +5,7 @@ myst:
             ```{image} _static/img/riv02.png
             :alt: rivt logo
             :target: https://www.rivt-doc.net/index.html
-            :width: 60px
+            :width: 65px
             ```
 ---
 
@@ -13,7 +13,7 @@ myst:
 
 
 **rivt** is a markdown language for writing, organizing and sharing engineering
-documents. It prioritizes clarity, efficiency and access.
+documents. It emphasizes clarity, efficiency and access.
 [rivtlib](https://rivt-code.net) is an open source Python library for
 processing **rivt**. The minimum software needed to write rivt documents is
 Python 3.8 and related Python libraries.
