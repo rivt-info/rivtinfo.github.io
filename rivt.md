@@ -5,11 +5,11 @@ myst:
             ```{image} _static/img/riv02.png
             :alt: rivt logo
             :target: https://www.rivt-doc.net/index.html
-            :width: 75px
+            :width: 60px
             ```
 ---
 
-# rivt {{ key1 }} 
+# **rivt** {{ key1 }} 
 
 
 **rivt** is a markdown language for writing, organizing and sharing engineering

@@ -1,13 +1,15 @@
+---
+myst:
+    substitutions:
+        "key2": |
+            ```{image} _static/img/riv02.png
+            :alt: rivt logo
+            :target: https://www.rivt-doc.net/index.html
+            :width: 60px
+            ```
+---
 
-
-```{image} _static/img/riv02.png
-:alt: rivt logo
-:target: https://www.rivt-doc.net/index.html
-:width: 125px
-:align: center
-```
-
-# **rivt Examples**
+# **rivt examples** {{ key2 }} 
 
 ## Toy Example
 
@@ -150,7 +152,9 @@ rv.X("""any text
 </pre>
 
 
-### output (text)
+### Text output
+
+<pre style="background: #e6ecdf">
 
 import rivt.rivtapi as rv
 
@@ -290,12 +294,12 @@ rv.X("""any text
 </pre>
 
 
-### output (markdown)
+### Markdown output
 
 some markdown
 
 
-### output (PDF)
+### PDF output
 
 [PDF output from example](./_static/attach/rivt-toy-example.pdf)
 

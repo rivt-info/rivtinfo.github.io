@@ -1,15 +1,15 @@
 ---
 myst:
     substitutions:
-        "key2": |
+        "key3": |
             ```{image} _static/img/riv-doc02.png
             :alt: rivt-doc logo
             :target: https://www.rivt-doc.net/index.html
-            :width: 75px
+            :width: 60px
             ```
 ---
 
-# rivt-doc {{ key2 }} 
+# **rivt-doc** {{ key3 }} 
 
 - VS Code
 - Texlive 

@@ -1,5 +1,5 @@
 
-**rivt User Manualx**
+**rivt User Manual**
 ======================
 
 .. toctree::
