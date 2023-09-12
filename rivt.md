@@ -9,9 +9,8 @@ myst:
             ```
 ---
 
-{{ key1 }} **rivt**
+# rivt {{ key1 }} 
 
-# rivt
 
 **rivt** is a markdown language for writing, organizing and sharing engineering
 documents. It prioritizes clarity, efficiency and access. **rivtlib** is an
