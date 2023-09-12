@@ -17,7 +17,7 @@ release = '0.1'
 
 myst_enable_extensions = ['substitution']
 
-extensions = ['myst_parser', 'sphinx.ext.githubpages']
+extensions = ['myst_parser', 'sphinx.ext.githubpages', "sphinxcontrib.jquery"]
 
 source_suffix = ['.rst', '.md']
 
