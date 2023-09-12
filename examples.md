@@ -11,7 +11,7 @@ myst:
 
 # **rivt examples** {{ key2 }} 
 
-## Toy Example
+## **Toy Example**
 
 <pre style="background: #e6ecdf">
 import rivt.rivtapi as rv

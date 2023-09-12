@@ -15,35 +15,38 @@ myst:
 **rivt** is a markdown language for writing, organizing and sharing engineering
 documents. It emphasizes clarity, efficiency and access.
 [rivtlib](https://rivt-code.net) is an open source Python library for
-processing **rivt**. The minimum software needed to write rivt documents is
-Python 3.8 and related Python libraries.
-[rivt-doc](https://github.com/rivt-doc) is an open source editing and
+processing **rivt**. [rivt-doc](rivt-doc.html) is an open source editing and
 publishing framework built around rivt that requires additional open source
 programs.
 
 ## **rivt files**
 
-A rivt file is a utf-8 Python file that includes the import statement *import
-rivtlib.rivtapi as rv* ,which exposes four API functions. Each function takes a
-triple quoted string as argument.
+A **rivt** file is a utf-8 Python file that includes the import statement 
+
+<pre style="background: #e6ecdf">  import rivtlib.rivtapi as rv </pre> 
+
+which exposes four API functions. Each function takes a triple quoted string as
+argument.
 
 <pre style="background:  #cfdde2">
-rv.R(str) - repo: repository and report information 
+rv.R(str) - rivt: repository and report settings
 rv.I(str) - insert: static text, images and tables
 rv.V(str) - values: equations
 rv.T(str) - tools: Python functions and scripts
 </pre>
 
-When running in an IDE (e.g. VSCode), functions may be run individually with
-the standard cell decorator <pre style="background: #cfdde2"> # %% </pre>.
-Interactive output is formatted as utf-8 text for speed and general
-compatiblility.
+When running in an IDE (e.g. VSCode), API functions may be run individually
+with the standard cell decorator 
+
+<pre style="background: #cfdde2"> # %% </pre>
+
+Interactive output is formatted as utf-8 text for speed and compatiblility.
 
 Document and report files are generated using the rv.writemd() and rv.writepdf()
-functions which generate files in GitHub Flavored Markdown (GFM) and PDF
+functions which generate output files in GitHub Flavored Markdown (GFM) and PDF
 formats respectively.
 
-rivt works with single files and extensive reports including hundreds of files.
+rivt works with single files and with extensive reports with hundreds of files.
 Multi-file reports are structured through a tri-level folder structure
 explained here <a href="rivt-doc.html">here</a>.
 
@@ -56,7 +59,7 @@ explained here <a href="rivt-doc.html">here</a>.
 
 repo        rv.R("""label | toc; notoc page
 
-                    Introductory text and repository and report settings.
+                    Introductory text and rivt file settings.
 
                     """)
 
