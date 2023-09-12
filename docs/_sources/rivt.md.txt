@@ -20,7 +20,7 @@ to write rivt documents is Python 3.8 and related Python libraries.
 publishing framework built around rivt that requires additional open source
 programs.
 
-## rivt files
+## **rivt files**
 
 A rivt file is a utf-8 Python file that includes the import statement *import
 rivtlib.rivtapi as rv* ,which exposes four API functions. Each function takes a
@@ -46,7 +46,7 @@ rivt works with single files and extensive reports including hundreds of files.
 Multi-file reports are structured through a tri-level folder structure
 explained here <a href="rivt-doc.html">here</a>.
 
-## API functions
+## **API functions**
 
 <pre style="background:  #cfdde2">
 ========= ========================================================
@@ -101,23 +101,23 @@ Method names start in column one. All other lines must be indented 4 spaces to
 facilitate section folding, bookmarks and legibility. The first line of each
 rivt function defines the section title and parameters.
 
-## rivt syntax
+## **rivt syntax**
 
-rivt syntax includes arbitrary unicode text including rivt commands and tags. A
-rivt command reads or writes external files and is denoted by || at the
-beginning of a line. Command parameters are separated by |. In the summary
-below parameter options are desginated with semi-colons and list parameters
-with commas.
-
+rivt syntax includes arbitrary unicode text, rivt commands and tags. A rivt
+command reads or writes external files and is denoted by || at the beginning of
+a line. Command parameters are separated by |. In the summary below parameter
+options are desginated with semi-colons and commas separate a parameter list.
 Tags format a line or block of text and are denoted with _[tag] at the end of a
 line. Block tags start a block of text with _[[tag]] and end with _[[q]]. The
-"=" and ":=" tags used in the Value method are exceptions.
+form of "=" and ":=" tags used in the Value method are exceptions.
 
-### commands
+### **commands**
 <pre style="background: #dce8ef">
 ==================================================== ==============
     command syntax                                          API 
 ==================================================== ==============
+
+|| text | rel file path | rivt; plain                      R I V
 
 || init | rel file path                                      R
 
@@ -125,14 +125,12 @@ line. Block tags start a block of text with _[[tag]] and end with _[[q]]. The
 
 || image  | rel file path, .. | .50, ..                      I
 
-|| table  | rel file path | 60,r; l; c                       I
+|| table  | rel file path | 60,r;l;c                         I
 
 || declare | rel file path |  print; noprint                 V
-
-|| text | rel file path | rivt; plain                      R I V
 </pre>
 
-### tags
+### **tags**
 
 <pre style="background: #dce8ef">
 ============================ ================================= ==========
