@@ -25,7 +25,8 @@ templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 myst_substitutions = {
-    "key1": """{image} _static/img/riv02.png
+    "key1": """|
+    {image} _static/img/riv02.png
     :alt: rivt logo
     :target: https://www.rivt-doc.net/index.html
     :width: 75px
@@ -38,4 +39,4 @@ myst_substitutions = {
 
 html_theme = 'insegel'
 html_static_path = ['_static', ]
-html_logo = "riv02.png"
+html_logo = "riv1.png"
