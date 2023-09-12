@@ -1,12 +1,15 @@
+---
+myst:
+    substitutions:
+        "key5": |
+            ```{image} _static/img/rivtonline02.png
+            :alt: rivt-online logo
+            :target: https://www.rivt-doc.net/index.html
+            :width: 60px
+            ```
+---
 
-```{image} _static/img/rvtonline02.png
-:alt: rivt logo
-:target: https://www.rivt-doc.net/index.html
-:width: 125px
-:align: center
-```
-
-# **rivt-online**
+# **rivt-online** {{ key5 }} 
 
 - VS Code
 - Texlive 

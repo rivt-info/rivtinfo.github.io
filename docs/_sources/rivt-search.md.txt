@@ -1,12 +1,15 @@
+---
+myst:
+    substitutions:
+        "key4": |
+            ```{image} _static/img/search01.png
+            :alt: rivt-search logo
+            :target: https://www.rivt-doc.net/index.html
+            :width: 60px
+            ```
+---
 
-```{image} _static/img/search01.png
-:alt: rivt logo
-:target: https://www.rivt-doc.net/index.html
-:width: 125px
-:align: center
-```
-
-# **rivt-search**
+# **rivt-doc** {{ key4 }} 
 
 <head>
 <style>
@@ -36,9 +39,9 @@ Full text **rivt** document search across README files
 
 Enter search terms separated by a + sign
 
-<input type="text" id="terms" name="terms" size=80 style="height:40px;font-size:14pt; font-weight: bold"><br>
+<input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: bold"><br>
 
-Example: concrete+beam+bridge  [**rivt** term is inserted by program]
+Example: concrete+beam+bridge  [**rivt** term is inserted by the search function]
 
 [ctrl+R or F5] to clear search terms
 
@@ -50,16 +53,8 @@ Example: concrete+beam+bridge  [**rivt** term is inserted by program]
 <input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: bold"> Enter Organization<br>
 
 
-<input type="text" id="terms" name="terms" size=80 style="height:40px;font-size:14pt; font-weight: bold"><br>
+<input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: bold"><br>
 
 <button class="button" id="searchBtn" onclick="searchOrg()">Search [ ctrl+enter ]</button>
 
 
-## GitHub Account
-
-<input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: bold"> Enter Account<br>
-
-
-<input type="text" id="terms" name="terms" size=80 style="height:40px;font-size:14pt; font-weight: bold"><br>
-
-<button class="button" id="searchBtn" onclick="searchRivt()">Search [ ctrl+enter ]</button>

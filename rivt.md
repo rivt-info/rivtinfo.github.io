@@ -16,18 +16,15 @@ myst:
 documents. It prioritizes clarity, efficiency and access. **rivtlib** is an
 open source Python library for processing **rivt**. The minimum software needed
 to write rivt documents is Python 3.8 and related Python libraries. 
-<a href="rivt-doc.html">rivt-doc</a> is an installable, open source editing and
+<a href="rivt-doc.html">rivt-doc</a> is an open source editing and
 publishing framework built around rivt that requires additional open source
 programs.
 
 ## rivt files
 
-A rivt file is a utf-8 Python file that includes the import statement:
-
-*import rivtlib.rivtapi as rv*
- 
-which exposes the single-letter API functions repo, insert, values and tools.
-Each function takes a triple quoted string as argument.
+A rivt file is a utf-8 Python file that includes the import statement *import
+rivtlib.rivtapi as rv* ,which exposes four API functions. Each function takes a
+triple quoted string as argument.
 
 <pre style="background:  #cfdde2">
 rv.R(str) - repo: repository and report information 
@@ -36,17 +33,18 @@ rv.V(str) - values: equations
 rv.T(str) - tools: Python functions and scripts
 </pre>
 
-When running in an IDE (e.g. VSCode), functions may be run individually
-with the standard cell decorator - # %%. Interactive output is formatted as
-utf-8 text for speed and general compatiblility.
+When running in an IDE (e.g. VSCode), functions may be run individually with
+the standard cell decorator <pre style="background: #cfdde2"> # %% </pre>.
+Interactive output is formatted as utf-8 text for speed and general
+compatiblility.
 
 Document and report files are generated using the rv.writemd() and rv.writepdf()
 functions which generate files in GitHub Flavored Markdown (GFM) and PDF
 formats respectively.
 
-rivt works with documents of all sizes - from single files to extensive reports
-including hundreds of files. Multi-file reports are structured through a
-tri-level folder structure explained here <a href="rivt-doc.html">here</a>.
+rivt works with single files and extensive reports including hundreds of files.
+Multi-file reports are structured through a tri-level folder structure
+explained here <a href="rivt-doc.html">here</a>.
 
 ## API functions
 

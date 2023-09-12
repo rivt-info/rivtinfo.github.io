@@ -54,30 +54,30 @@
 documents. It prioritizes clarity, efficiency and access. <strong>rivtlib</strong> is an
 open source Python library for processing <strong>rivt</strong>. The minimum software needed
 to write rivt documents is Python 3.8 and related Python libraries.
-<a href="rivt-doc.html">rivt-doc</a> is an installable, open source editing and
+<a href="rivt-doc.html">rivt-doc</a> is an open source editing and
 publishing framework built around rivt that requires additional open source
 programs.</p>
 <section id="rivt-files">
 <h2>rivt files<a class="headerlink" href="#rivt-files" title="Link to this heading">¶</a></h2>
-<p>A rivt file is a utf-8 Python file that includes the import statement:</p>
-<p><em>import rivtlib.rivtapi as rv</em></p>
-<p>which exposes the single-letter API functions repo, insert, values and tools.
-Each function takes a triple quoted string as argument.</p>
+<p>A rivt file is a utf-8 Python file that includes the import statement <em>import
+rivtlib.rivtapi as rv</em> ,which exposes four API functions. Each function takes a
+triple quoted string as argument.</p>
 <pre style="background:  #cfdde2">
 rv.R(str) - repo: repository and report information 
 rv.I(str) - insert: static text, images and tables
 rv.V(str) - values: equations
 rv.T(str) - tools: Python functions and scripts
 </pre>
-<p>When running in an IDE (e.g. VSCode), functions may be run individually
-with the standard cell decorator - # %%. Interactive output is formatted as
-utf-8 text for speed and general compatiblility.</p>
+<p>When running in an IDE (e.g. VSCode), functions may be run individually with
+the standard cell decorator <pre style="background: #cfdde2"> # %% </pre>.
+Interactive output is formatted as utf-8 text for speed and general
+compatiblility.</p>
 <p>Document and report files are generated using the rv.writemd() and rv.writepdf()
 functions which generate files in GitHub Flavored Markdown (GFM) and PDF
 formats respectively.</p>
-<p>rivt works with documents of all sizes - from single files to extensive reports
-including hundreds of files. Multi-file reports are structured through a
-tri-level folder structure explained here <a href="rivt-doc.html">here</a>.</p>
+<p>rivt works with single files and extensive reports including hundreds of files.
+Multi-file reports are structured through a tri-level folder structure
+explained here <a href="rivt-doc.html">here</a>.</p>
 </section>
 <section id="api-functions">
 <h2>API functions<a class="headerlink" href="#api-functions" title="Link to this heading">¶</a></h2>
@@ -254,10 +254,9 @@ _[[l]]                          LaTeX                             I V
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="rivt-search.html"><strong>rivt-search</strong></a><ul>
+<li class="toctree-l1"><a class="reference internal" href="rivt-search.html"><strong>rivt-doc</strong> </a><ul>
 <li class="toctree-l2"><a class="reference internal" href="rivt-search.html#github">GitHub</a></li>
 <li class="toctree-l2"><a class="reference internal" href="rivt-search.html#github-organization">GitHub Organization</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rivt-search.html#github-account">GitHub Account</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="rivt-tools.html"><strong>rivt-tools</strong></a><ul>
@@ -268,7 +267,7 @@ _[[l]]                          LaTeX                             I V
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="rivt-online.html"><strong>rivt-online</strong></a><ul>
+<li class="toctree-l1"><a class="reference internal" href="rivt-online.html"><strong>rivt-online</strong> </a><ul>
 <li class="toctree-l2"><a class="reference internal" href="rivt-online.html#rivt-installation">rivt installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="rivt-online.html#vscode-profiles">VSCode profiles</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="rivt-online.html#api-function-snippets">API function snippets</a></li>
