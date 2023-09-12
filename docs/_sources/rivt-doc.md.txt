@@ -4,7 +4,7 @@ myst:
         "key3": |
             ```{image} _static/img/riv-doc02.png
             :alt: rivt-doc logo
-            :target: https://www.rivt-doc.net/index.html
+            :target: https://github.com/rivt-doc
             :width: 60px
             ```
 ---
