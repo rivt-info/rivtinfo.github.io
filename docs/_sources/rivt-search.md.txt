@@ -16,7 +16,7 @@ myst:
 .button {
   background-color: #cfdde2; 
   border: 3 px solid black;
-  color: white;
+  color: black;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;

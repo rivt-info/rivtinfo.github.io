@@ -2,7 +2,7 @@
 myst:
     substitutions:
         "key5": |
-            ```{image} _static/img/rivtonline02.png
+            ```{image} _static/img/rvtonline02.png
             :alt: rivt-online logo
             :target: https://www.rivt-doc.net/index.html
             :width: 60px
