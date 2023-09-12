@@ -2,14 +2,14 @@
 myst:
     substitutions:
         "key1": |
-            '''{image} _static/img/riv02.png
+            ```{image} _static/img/riv02.png
             :alt: rivt logo
             :target: https://www.rivt-doc.net/index.html
             :width: 75px
-            '''
+            ```
 ---
 
-Line of textxx {{ key1 }}
+Line of textx {{ key1 }}
 
 # **rivt**
 
