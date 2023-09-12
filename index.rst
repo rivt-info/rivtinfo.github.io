@@ -1,6 +1,6 @@
 
-rivt User Manual
-================
+**rivt User Manual**
+====================
 
 .. toctree::
    :maxdepth: 3
@@ -13,9 +13,3 @@ rivt User Manual
    rivt-tools.md
    rivt-online.md
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`search`
