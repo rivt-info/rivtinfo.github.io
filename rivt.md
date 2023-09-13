@@ -18,19 +18,19 @@ The minimum software needed to write **rivt** documents is Python 3.8,
 **rivtlib** and several other Python libraries. The programs are open source.
 [rivt-doc](/rivt-doc.md) is an open source editing and publishing framework
 built with additional open source programs. **rivt** works with single files
-and extensive reports with hundreds of files. Multi-file reports are structured
-through a tri-level folder structure explained [here](/rivt-doc.md).
+and extensive reports with hundreds of files. Multi-file reports are organized
+in a tri-level folder structure explained [here](/rivt-doc.md).
 
-## rivt files<hr>
+## rivt Files
 
 A **rivt** file is a utf-8 Python file that includes the import statement: 
 
-<pre style="background:#e6ecdf; color: #000000">import rivtlib.rivtapi as rv</pre> 
+<pre style="background:#e6ecdf;color:#000000">import rivtlib.rivtapi as rv</pre> 
 
 which exposes four API functions. Each function takes a triple quoted string as
 argument, which may include arbitrary text.
 
-<pre style="background: #cfdde2; color: #000000">
+<pre style="background: #cfdde2;color:#000000">
 ============= ========== =================================
 API function   name           purpose
 ============= ========== =================================
@@ -43,18 +43,18 @@ rv.T(str)      tools       Python functions and scripts
 When running in an IDE (e.g. VSCode), API functions may be grouped in cells and
 run interactively using the standard cell decorator:
 
-<pre style="background:#e6ecdf; color: #000000; color: #000000"># %%</pre>
+<pre style="background:#e6ecdf;color:#000000"># %%</pre>
 
 Interactive output is formatted as utf-8 text for speed and compatiblility.
 Document and report files are generated using the the two functions
 
-<pre style="background:#e6ecdf; color: #000000">rv.writemd() 
+<pre style="background:#e6ecdf;color:#000000">rv.writemd() 
 rv.writepdf() </pre>
 
 which generate output files in GitHub Flavored Markdown
 (GFM) and PDF formats respectively.
 
-## API functions<hr>
+## API Functions
 
 The first line of each function is a label followed by parameters. Each
 function typically defines a new section using the label as the title. The
@@ -113,7 +113,7 @@ which facilitates section folding, bookmarks and legibility. API functions can
 occur with any order or frequency except for *rivtinit* which occurs only once
 as the initial function.
 
-## rivt syntax<hr>
+## rivt Syntax
 
 **rivt** markup includes arbitrary unicode text, rivt commands and rivt tags.
 [restructuredText](https://docutils.sourceforge.io/docs/user/rst/quickref.html)
