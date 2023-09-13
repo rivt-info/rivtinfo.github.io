@@ -21,8 +21,7 @@ built with additional open source programs. **rivt** works with single files
 and extensive reports with hundreds of files. Multi-file reports are structured
 through a tri-level folder structure explained [here](/rivt-doc.md).
 
-## rivt files
-<hr>
+## rivt files<hr>
 
 A **rivt** file is a utf-8 Python file that includes the import statement: 
 
@@ -131,27 +130,27 @@ are separated with commas.
 
 <pre style="background:#dce8ef; color: #000000">
 ==================================================== ==============
-    command syntax                                          API 
+    command syntax                                         API 
 ==================================================== ==============
 
-|| text | rel file path | rivt; plain                      R I V
+|| text | rel file path | rivt; plain                     R I V
 
-|| init | rel file path                                      R
+|| init | rel file path                                     R
 
-|| append | rel file path                                    R
+|| append | rel file path                                   R
 
-|| image  | rel file path, .. | .50, ..                      I
+|| image  | rel file path, .. | .50, ..                     I
 
-|| table  | rel file path | 60,r;l;c                         I
+|| table  | rel file path | 60,r;l;c                        I
 
-|| declare | rel file path |  print; noprint                 V
+|| declare | rel file path |  print; noprint                V
 </pre>
 
 ### tags
 
-Tags format a line or block of text and are denoted with _[tag] at the end of a
-line. Block tags start a block of text with _[[tag]] and end with _[[q]]. The
-form of "=" and ":=" tags used in the Value method are exceptions.
+Line tags format a line of text and are denoted with _[tag], typically at the
+end of a line. The "=" and ":=" tags used in the Value method are unique
+exceptions. 
 
 <pre style="background:#dce8ef; color: #000000">
 ============================ ================================= ==========
@@ -176,10 +175,15 @@ _[page]                         new page                          I V
 _[address, label]               url or internal reference         I V
 a = 1.2 | unit, alt | descrip   declare =                           V
 a := b + c | unit, alt | n,n    assign :=                           V
+</pre>
 
-============================ ================================= ==========
-   block tags                        description                   API
-============================ ================================ ===========
+Block tags format a text block and start a block with _[[tag]] and
+end with _[[q]].
+
+<pre style="background:#dce8ef; color: #000000">
+============================ ================================ ==========
+   block tags                        description                 API
+============================ ================================ ==========
 _[[b]]                          bold                            R I V
 _[[c]]                          center                          R I V
 _[[i]]                          italic                          R I V

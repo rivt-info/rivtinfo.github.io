@@ -60,8 +60,7 @@ built with additional open source programs. <strong>rivt</strong> works with sin
 and extensive reports with hundreds of files. Multi-file reports are structured
 through a tri-level folder structure explained <a class="reference internal" href="rivt-doc.html"><span class="std std-doc">here</span></a>.</p>
 <section id="rivt-files">
-<h2>rivt files<a class="headerlink" href="#rivt-files" title="Link to this heading">¶</a></h2>
-<hr>
+<h2>rivt files<hr><a class="headerlink" href="#rivt-files" title="Link to this heading">¶</a></h2>
 <p>A <strong>rivt</strong> file is a utf-8 Python file that includes the import statement:</p>
 <pre style="background:#e6ecdf; color: #000000">import rivtlib.rivtapi as rv</pre> 
 <p>which exposes four API functions. Each function takes a triple quoted string as
@@ -156,27 +155,27 @@ parameter options are separated with semi-colons and parameter list elements
 are separated with commas.</p>
 <pre style="background:#dce8ef; color: #000000">
 ==================================================== ==============
-    command syntax                                          API 
+    command syntax                                         API 
 ==================================================== ==============
 
-|| text | rel file path | rivt; plain                      R I V
+|| text | rel file path | rivt; plain                     R I V
 
-|| init | rel file path                                      R
+|| init | rel file path                                     R
 
-|| append | rel file path                                    R
+|| append | rel file path                                   R
 
-|| image  | rel file path, .. | .50, ..                      I
+|| image  | rel file path, .. | .50, ..                     I
 
-|| table  | rel file path | 60,r;l;c                         I
+|| table  | rel file path | 60,r;l;c                        I
 
-|| declare | rel file path |  print; noprint                 V
+|| declare | rel file path |  print; noprint                V
 </pre>
 </section>
 <section id="tags">
 <h3>tags<a class="headerlink" href="#tags" title="Link to this heading">¶</a></h3>
-<p>Tags format a line or block of text and are denoted with _[tag] at the end of a
-line. Block tags start a block of text with _[[tag]] and end with _[[q]]. The
-form of “=” and “:=” tags used in the Value method are exceptions.</p>
+<p>Line tags format a line of text and are denoted with _[tag], typically at the
+end of a line. The “=” and “:=” tags used in the Value method are unique
+exceptions.</p>
 <pre style="background:#dce8ef; color: #000000">
 ============================ ================================= ==========
    line tags                        description                   API
@@ -200,10 +199,13 @@ _[page]                         new page                          I V
 _[address, label]               url or internal reference         I V
 a = 1.2 | unit, alt | descrip   declare =                           V
 a := b + c | unit, alt | n,n    assign :=                           V
-
-============================ ================================= ==========
-   block tags                        description                   API
-============================ ================================ ===========
+</pre>
+<p>Block tags format a text block and start a block with _[[tag]] and
+end with _[[q]].</p>
+<pre style="background:#dce8ef; color: #000000">
+============================ ================================ ==========
+   block tags                        description                 API
+============================ ================================ ==========
 _[[b]]                          bold                            R I V
 _[[c]]                          center                          R I V
 _[[i]]                          italic                          R I V
@@ -235,7 +237,7 @@ _[[l]]                          LaTeX                             I V
   
     <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">  <strong>rivt</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#rivt-files">rivt files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rivt-files">rivt files<hr></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#api-functions">API functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#rivt-syntax">rivt syntax</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#commands">commands</a></li>
@@ -246,20 +248,20 @@ _[[l]]                          LaTeX                             I V
 </li>
 <li class="toctree-l1"><a class="reference internal" href="examples.html"> <strong>rivt Examples</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="examples.html#toy-example">toy example</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="examples.html#text-output"><strong>text output</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="examples.html#markdown-output"><strong>markdown output</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="examples.html#pdf-output"><strong>PDF output</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#text-output">text output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#markdown-output">markdown output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#pdf-output">PDF output</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="examples.html#solar-canopy"><strong>solar canopy</strong></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="examples.html#id1"><strong>text output</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#solar-canopy">solar canopy</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#id1">text output</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="examples.html#seismic-strengthening"><strong>seismic strengthening</strong></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="examples.html#id2"><strong>text output</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#seismic-strengthening">seismic strengthening</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#id2">text output</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="examples.html#replit-interactive"><strong>replit (interactive)</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#replit-interactive">replit (interactive)</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="rivt-doc.html"><strong>rivt-doc</strong> </a><ul>

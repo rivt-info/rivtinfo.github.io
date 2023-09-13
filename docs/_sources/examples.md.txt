@@ -295,7 +295,7 @@ rv.X("""any text
 </pre>
 
 
-### **markdown output**
+### markdown output
 
 some markdown
 
