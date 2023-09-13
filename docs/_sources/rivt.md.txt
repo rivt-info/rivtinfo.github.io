@@ -21,7 +21,9 @@ built with additional open source programs. **rivt** works with single files
 and extensive reports with hundreds of files. Multi-file reports are structured
 through a tri-level folder structure explained [here](/rivt-doc.md).
 
-## **rivt files**
+## rivt files
+
+<hr>
 
 A **rivt** file is a utf-8 Python file that includes the import statement: 
 
@@ -54,7 +56,9 @@ rv.writepdf() </pre>
 which generate output files in GitHub Flavored Markdown
 (GFM) and PDF formats respectively.
 
-## **API functions**
+## API functions
+
+<hr>
 
 The first line of each function is a label followed by parameters. Each
 function typically defines a new section using the label as the title. The
@@ -67,7 +71,7 @@ double hyphen.
  name                   API  function definition
 ========= ========================================================
 
-rivtinit   rv.R("""label | toc; notoc page
+rivtinit   rv.R("""label | toc; notoc, start page
 
                 Introductory text and rivt file settings.
 
@@ -113,13 +117,15 @@ which facilitates section folding, bookmarks and legibility. API functions can
 occur with any order or frequency except for *rivtinit* which occurs only once
 as the initial function.
 
-## **rivt syntax**
+## rivt syntax
+
+<hr>
 
 **rivt** markup includes arbitrary unicode text, rivt commands and rivt tags.
 [restructuredText](https://docutils.sourceforge.io/docs/user/rst/quickref.html)
 markup may also be included. 
 
-### **commands**
+### commands
 
 A command reads or writes external files and is denoted by || at the beginning
 of a line. Command parameters are separated by |. In the summary below,
@@ -144,7 +150,7 @@ are separated with commas.
 || declare | rel file path |  print; noprint                 V
 </pre>
 
-### **tags**
+### tags
 
 Tags format a line or block of text and are denoted with _[tag] at the end of a
 line. Block tags start a block of text with _[[tag]] and end with _[[q]]. The

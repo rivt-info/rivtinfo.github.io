@@ -60,7 +60,8 @@ built with additional open source programs. <strong>rivt</strong> works with sin
 and extensive reports with hundreds of files. Multi-file reports are structured
 through a tri-level folder structure explained <a class="reference internal" href="rivt-doc.html"><span class="std std-doc">here</span></a>.</p>
 <section id="rivt-files">
-<h2><strong>rivt files</strong><a class="headerlink" href="#rivt-files" title="Link to this heading">¶</a></h2>
+<h2>rivt files<a class="headerlink" href="#rivt-files" title="Link to this heading">¶</a></h2>
+<hr>
 <p>A <strong>rivt</strong> file is a utf-8 Python file that includes the import statement:</p>
 <pre style="background:#e6ecdf; color: #000000">import rivtlib.rivtapi as rv</pre> 
 <p>which exposes four API functions. Each function takes a triple quoted string as
@@ -85,7 +86,8 @@ rv.writepdf() </pre>
 (GFM) and PDF formats respectively.</p>
 </section>
 <section id="api-functions">
-<h2><strong>API functions</strong><a class="headerlink" href="#api-functions" title="Link to this heading">¶</a></h2>
+<h2>API functions<a class="headerlink" href="#api-functions" title="Link to this heading">¶</a></h2>
+<hr>
 <p>The first line of each function is a label followed by parameters. Each
 function typically defines a new section using the label as the title. The
 labels may be converted to references, with no section break, by prepending a
@@ -95,7 +97,7 @@ double hyphen.</p>
  name                   API  function definition
 ========= ========================================================
 
-rivtinit   rv.R("""label | toc; notoc page
+rivtinit   rv.R("""label | toc; notoc, start page
 
                 Introductory text and rivt file settings.
 
@@ -141,12 +143,13 @@ occur with any order or frequency except for <em>rivtinit</em> which occurs only
 as the initial function.</p>
 </section>
 <section id="rivt-syntax">
-<h2><strong>rivt syntax</strong><a class="headerlink" href="#rivt-syntax" title="Link to this heading">¶</a></h2>
+<h2>rivt syntax<a class="headerlink" href="#rivt-syntax" title="Link to this heading">¶</a></h2>
+<hr>
 <p><strong>rivt</strong> markup includes arbitrary unicode text, rivt commands and rivt tags.
 <a class="reference external" href="https://docutils.sourceforge.io/docs/user/rst/quickref.html">restructuredText</a>
 markup may also be included.</p>
 <section id="commands">
-<h3><strong>commands</strong><a class="headerlink" href="#commands" title="Link to this heading">¶</a></h3>
+<h3>commands<a class="headerlink" href="#commands" title="Link to this heading">¶</a></h3>
 <p>A command reads or writes external files and is denoted by || at the beginning
 of a line. Command parameters are separated by |. In the summary below,
 parameter options are separated with semi-colons and parameter list elements
@@ -170,7 +173,7 @@ are separated with commas.</p>
 </pre>
 </section>
 <section id="tags">
-<h3><strong>tags</strong><a class="headerlink" href="#tags" title="Link to this heading">¶</a></h3>
+<h3>tags<a class="headerlink" href="#tags" title="Link to this heading">¶</a></h3>
 <p>Tags format a line or block of text and are denoted with _[tag] at the end of a
 line. Block tags start a block of text with _[[tag]] and end with _[[q]]. The
 form of “=” and “:=” tags used in the Value method are exceptions.</p>
@@ -232,11 +235,11 @@ _[[l]]                          LaTeX                             I V
   
     <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">  <strong>rivt</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#rivt-files"><strong>rivt files</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#api-functions"><strong>API functions</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#rivt-syntax"><strong>rivt syntax</strong></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#commands"><strong>commands</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tags"><strong>tags</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rivt-files">rivt files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#api-functions">API functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rivt-syntax">rivt syntax</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#commands">commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tags">tags</a></li>
 </ul>
 </li>
 </ul>
