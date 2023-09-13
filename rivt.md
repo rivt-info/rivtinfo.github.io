@@ -21,7 +21,10 @@ built with additional open source programs. **rivt** works with single files
 and extensive reports with hundreds of files. Multi-file reports are organized
 in a tri-level folder structure explained [here](/rivt-doc.md).
 
+<hr>
+
 ## rivt Files
+<hr>
 
 A **rivt** file is a utf-8 Python file that includes the import statement: 
 
