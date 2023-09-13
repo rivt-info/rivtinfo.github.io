@@ -9,12 +9,12 @@ myst:
             ```
 ---
 
-# **rivt-doc** {{ key3 }} 
+#  {{ key3 }} **rivt-doc**
 
 - VS Code
 - Texlive 
 
-## **installation**
+## installation<hr>
 
 - VSCode + extensions 
 - LaTeX 
@@ -24,9 +24,9 @@ rivt-doc is available for every OS platform and installs either in a single
 portable folder via a zip file or as a set of system programs. It also runs in
 the cloud using GitHub CodeSpaces or other cloud service providers.
 
-## **folders**
+## folders<hr>
 
-<pre style="background:  #cfdde2">
+<pre style="background:#cfdde2;color:#000000">
 [rivtdoc]-Report-Label/               
     ├── .git
     ├── units.py                        (input: unit over-ride)
@@ -75,14 +75,16 @@ the cloud using GitHub CodeSpaces or other cloud service providers.
             └── data1.xls
 </pre>
 
-## VSCode Profiles
+## VSCode<hr>
 
-The rivt VSCode profile includes shortcuts for common editing functions and
-snippets for API functions and commands.
 
-### Shortcuts
+### profiles
 
-<pre style="background:  #cfdde2">
+The rivt VSCode profile includes extensions, snippets and shortcuts for common editing functions.
+
+### shortcuts
+
+<pre style="background:#cfdde2;color:#000000">
 ==============  ===========================================================
 Keystroke                   Description
 ==============  ===========================================================
@@ -116,7 +118,7 @@ ctl+shift+z          commit current editor
 ctl+shift+x          post to remote   
 </pre>
 
-### API function snippets
+### snippets
 
 
 | **snippet**

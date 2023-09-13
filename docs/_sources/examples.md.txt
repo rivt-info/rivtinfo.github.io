@@ -11,8 +11,7 @@ myst:
 
 #  {{ key2 }} **rivt Examples**
 
-## toy example
-<hr>
+## toy example<hr>
 
 <pre style="background:#e6ecdf;color:#000000">
 import rivt.rivtapi as rv
@@ -305,8 +304,7 @@ some markdown
 [PDF output from example](./_static/attach/rivt-toy-example.pdf)
 
 
-## solar canopy
-<hr>
+## solar canopy<hr>
 
 xyz
 
@@ -314,8 +312,7 @@ xyz
 
 ccc
 
-## seismic strengthening
-<hr>
+## seismic strengthening<hr>
 
 xyz
 
@@ -323,4 +320,4 @@ xyz
 
 ccc
 
-## replit (interactive)
+## replit (interactive)<hr>

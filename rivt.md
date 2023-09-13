@@ -41,9 +41,9 @@ rv.T(str)      tools       Python functions and scripts
 </pre>
 
 When running in an IDE (e.g. VSCode), API functions may be grouped in cells and
-run individual using the standard cell decorator:
+run interactively using the standard cell decorator:
 
-<pre style="background:#cfdde2; color: #000000; color: #000000"># %%</pre>
+<pre style="background:#e6ecdf; color: #000000; color: #000000"># %%</pre>
 
 Interactive output is formatted as utf-8 text for speed and compatiblility.
 Document and report files are generated using the the two functions
@@ -54,8 +54,7 @@ rv.writepdf() </pre>
 which generate output files in GitHub Flavored Markdown
 (GFM) and PDF formats respectively.
 
-## API functions
-<hr>
+## API functions<hr>
 
 The first line of each function is a label followed by parameters. Each
 function typically defines a new section using the label as the title. The
@@ -64,23 +63,23 @@ double hyphen.
 
 
 <pre style="background: #cfdde2; color: #000000">
-========= ========================================================
- name                   API  function definition
-========= ========================================================
+========== ========================================================
+  name                   API  function definition
+========== ========================================================
 
-rivtinit   rv.R("""label | toc; notoc, start page
+rivtinit    rv.R("""label | toc; notoc, start page
 
-                Introductory text and rivt file settings.
-
-                """)
-
-insert     rv.I("""label | background color  
-
-                Text, static tables and images
+                rivt file settings and text
 
                 """)
 
-values     rv.V("""label | sub; nosub 
+insert      rv.I("""label | background color  
+
+                Static tables, images and text
+
+                """)
+
+values      rv.V("""label | sub; nosub 
 
                 Equations and text
                 
@@ -94,10 +93,10 @@ tools       rv.T("""label | lines; nolines
 
 exclude     rv.X("""any text
 
-                    Any function changed to X is not evaluated is used for
+                    Any function changed to X is not evaluated. Used for
                     comments and debugging.
 
-                    """)
+                """)
 
 write-md    rv.writemd()
         
@@ -114,8 +113,7 @@ which facilitates section folding, bookmarks and legibility. API functions can
 occur with any order or frequency except for *rivtinit* which occurs only once
 as the initial function.
 
-## rivt syntax
-<hr>
+## rivt syntax<hr>
 
 **rivt** markup includes arbitrary unicode text, rivt commands and rivt tags.
 [restructuredText](https://docutils.sourceforge.io/docs/user/rst/quickref.html)
@@ -123,8 +121,8 @@ markup may also be included.
 
 ### commands
 
-A command reads or writes external files and is denoted by || at the beginning
-of a line. Command parameters are separated by |. In the summary below,
+A command reads or writes external files and is denoted by *||* at the beginning
+of a line. Command parameters are separated by *|*. In the summary below,
 parameter options are separated with semi-colons and parameter list elements
 are separated with commas.
 
@@ -148,8 +146,8 @@ are separated with commas.
 
 ### tags
 
-Line tags format a line of text and are denoted with _[tag], typically at the
-end of a line. The "=" and ":=" tags used in the Value method are unique
+Line tags format a line of text and are denoted with *_[tag]*, typically at the
+end of a line. The *=* and *:=* tags used in the Value method are unique
 exceptions. 
 
 <pre style="background:#dce8ef; color: #000000">
@@ -177,8 +175,8 @@ a = 1.2 | unit, alt | descrip   declare =                           V
 a := b + c | unit, alt | n,n    assign :=                           V
 </pre>
 
-Block tags format a text block and start a block with _[[tag]] and
-end with _[[q]].
+Block tags format a text block and start a block with *_[[tag]]* and
+end with *_[[q]]*.
 
 <pre style="background:#dce8ef; color: #000000">
 ============================ ================================ ==========
