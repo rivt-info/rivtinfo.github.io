@@ -10,6 +10,8 @@ framework for **rivt**. The programs are open source.
 
 .. toctree::
    :maxdepth: 3
+   :includehidden:
+   :hidden:
 
    rivt.md
    examples.md

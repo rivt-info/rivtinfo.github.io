@@ -1,14 +1,15 @@
+---
+myst:
+    substitutions:
+        "key6": |
+            ```{image} _static/img/rivt-tools01.png
+            :alt: rivt-tools logo
+            :target: https://github.com/search
+            :width: 50px
+            ```
+---
 
-```{image} _static/img/rivt-tools01.png
-:alt: rivt logo
-:target: https://www.rivt-doc.net/index.html
-:width: 125px
-:align: left
-```
-
-**<p style="text-align: left;"><a href="index.html"> HOME </a></p>**
-
-# **rivt-tools**
+# {{ key6 }} **rivt-tools**
 
 - VS Code
 - Texlive 

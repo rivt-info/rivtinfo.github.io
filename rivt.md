@@ -128,7 +128,7 @@ as the initial function.
 <hr>
 
 **rivt** markup includes arbitrary unicode text, rivt commands and rivt tags.
-[restructuredText](https://docutils.sourceforge.io/docs/user/rst/quickref.html) is used as a base for **rivt** and some of the reST markup language may also be used. 
+It uses [restructuredText](https://docutils.sourceforge.io/docs/user/rst/quickref.html) as a base and some reST markup may be used. 
 
 ### commands
 
