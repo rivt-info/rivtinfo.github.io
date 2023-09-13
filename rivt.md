@@ -4,7 +4,7 @@ myst:
         "key1": |
             ```{image} _static/img/riv02.png
             :alt: rivt logo
-            :target: "rivt syntax"
+            :target: ../rivt.md#rivt-syntax
             :width: 45px
             ```
 ---
@@ -14,12 +14,15 @@ myst:
 **rivt** is a markdown language for writing, organizing and sharing engineering
 documents. It emphasizes clarity, efficiency and access.
 [rivtlib](https://rivt-code.net) is a Python library for processing **rivt**.
+
 The minimum software needed to write **rivt** documents is Python 3.8,
-**rivtlib** and several other Python libraries. The programs are open source.
+**rivtlib** and several other Python libraries. 
 [rivt-doc](/rivt-doc.md) is an open source editing and publishing framework
-built with additional open source programs. **rivt** works with single files
-and extensive reports with hundreds of files. Multi-file reports are organized
-in a tri-level folder structure explained [here](/rivt-doc.md).
+using additional programs. All of the programs are open source.
+
+**rivt** works with single files and extensive reports with hundreds of files.
+Multi-file reports are organized in a tri-level folder structure explained
+[here](../rivt-doc.md#folders).
 
 <hr>
 
@@ -57,7 +60,10 @@ rv.writepdf() </pre>
 which generate output files in GitHub Flavored Markdown
 (GFM) and PDF formats respectively.
 
+<hr>
+
 ## API Functions
+<hr>
 
 The first line of each function is a label followed by parameters. Each
 function typically defines a new section using the label as the title. The
@@ -116,16 +122,18 @@ which facilitates section folding, bookmarks and legibility. API functions can
 occur with any order or frequency except for *rivtinit* which occurs only once
 as the initial function.
 
+<hr>
+
 ## rivt Syntax
+<hr>
 
 **rivt** markup includes arbitrary unicode text, rivt commands and rivt tags.
-[restructuredText](https://docutils.sourceforge.io/docs/user/rst/quickref.html)
-markup may also be included. 
+[restructuredText](https://docutils.sourceforge.io/docs/user/rst/quickref.html) is used as a base for **rivt** and some of the reST markup language may also be used. 
 
 ### commands
 
-A command reads or writes external files and is denoted by *||* at the beginning
-of a line. Command parameters are separated by *|*. In the summary below,
+A command reads or writes external files and is denoted by || at the beginning
+of a line. Command parameters are separated by |. In the summary below,
 parameter options are separated with semi-colons and parameter list elements
 are separated with commas.
 

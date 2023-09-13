@@ -4,7 +4,7 @@ myst:
         "key3": |
             ```{image} _static/img/riv-doc02.png
             :alt: rivt-doc logo
-            :target: https://github.com/rivt-doc
+            :target: https://github.com/rivt-doc.html
             :width: 60px
             ```
 ---
@@ -14,7 +14,10 @@ myst:
 - VS Code
 - Texlive 
 
-## installation<hr>
+<hr>
+
+## installation
+<hr>
 
 - VSCode + extensions 
 - LaTeX 
@@ -24,7 +27,10 @@ rivt-doc is available for every OS platform and installs either in a single
 portable folder via a zip file or as a set of system programs. It also runs in
 the cloud using GitHub CodeSpaces or other cloud service providers.
 
-## folders<hr>
+<hr>
+
+## folders
+<hr>
 
 <pre style="background:#cfdde2;color:#000000">
 [rivtdoc]-Report-Label/               
@@ -75,8 +81,10 @@ the cloud using GitHub CodeSpaces or other cloud service providers.
             └── data1.xls
 </pre>
 
-## VSCode<hr>
+<hr>
 
+## VSCode
+<hr>
 
 ### profiles
 

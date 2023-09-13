@@ -2,10 +2,9 @@
 ======================
 
 `rivt <rivt.html>`__ is a markdown language for writing, organizing and sharing
-engineering documents. `rivtlib <rivt-code.net>`_ is a Python library for
-processing **rivt**. The programs are open source. `rivt-doc <rivt-doc.html>`__
-is an editing and publishing framework for rivt built with additional open
-source programs.
+engineering documents and `rivtlib <rivt-code.net>`_ is a Python library for
+processing **rivt**. `rivt-doc <rivt-doc.html>`__ is an editing and publishing
+framework for **rivt**. The programs are open source.
 
 -------------------------------------
 
