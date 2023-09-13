@@ -1,4 +1,7 @@
 **rivt User Manual**
+=====================
+
+**version 0.0.1**
 
 --------------------------------------
 
@@ -11,7 +14,6 @@ framework for **rivt**. The programs are open source.
 
 .. toctree::
    :maxdepth: 3
-   :hidden:
    :includehidden:
 
    rivt.md
