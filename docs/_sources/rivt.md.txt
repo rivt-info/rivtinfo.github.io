@@ -15,14 +15,13 @@ myst:
 documents. It emphasizes clarity, efficiency and access.
 [rivtlib](https://rivt-code.net) is a Python library for processing **rivt**.
 The minimum software needed to write **rivt** documents is Python 3.8,
-**rivtlib** and several other Python libraries. All programs are open source.
+**rivtlib** and several other Python libraries. The programs are open source.
 [rivt-doc](/rivt-doc.md) is an open source editing and publishing framework
 built with additional open source programs. **rivt** works with single files
 and extensive reports with hundreds of files. Multi-file reports are structured
 through a tri-level folder structure explained [here](/rivt-doc.md).
 
 ## rivt files
-
 <hr>
 
 A **rivt** file is a utf-8 Python file that includes the import statement: 
@@ -57,7 +56,6 @@ which generate output files in GitHub Flavored Markdown
 (GFM) and PDF formats respectively.
 
 ## API functions
-
 <hr>
 
 The first line of each function is a label followed by parameters. Each
@@ -118,7 +116,6 @@ occur with any order or frequency except for *rivtinit* which occurs only once
 as the initial function.
 
 ## rivt syntax
-
 <hr>
 
 **rivt** markup includes arbitrary unicode text, rivt commands and rivt tags.

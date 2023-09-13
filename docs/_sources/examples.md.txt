@@ -4,16 +4,17 @@ myst:
         "key2": |
             ```{image} _static/img/riv02.png
             :alt: rivt logo
-            :target: https://www.rivt-doc.net/index.html
+            :target: "toy example"
             :width: 60px
             ```
 ---
 
-# **rivt examples** {{ key2 }} 
+#  {{ key2 }} **rivt Examples**
 
-## **Toy Example**
+## toy example
+<hr>
 
-<pre style="background: #e6ecdf">
+<pre style="background:#e6ecdf;color:#000000">
 import rivt.rivtapi as rv
 
 rv.R("""Introduction | notoc, 1
@@ -152,9 +153,9 @@ rv.X("""any text
 </pre>
 
 
-### **text output**
+### text output
 
-<pre style="background: #e6ecdf">
+<pre style="background: #e6ecdf;color:#000000">
 
 import rivt.rivtapi as rv
 
@@ -299,25 +300,27 @@ rv.X("""any text
 some markdown
 
 
-### **PDF output**
+### PDF output
 
 [PDF output from example](./_static/attach/rivt-toy-example.pdf)
 
 
-## **Solar Canopy**
+## solar canopy
+<hr>
 
 xyz
 
-### **text output**
+### text output
 
 ccc
 
-## **Seismic Strengthening**
+## seismic strengthening
+<hr>
 
 xyz
 
-### **text output**
+### text output
 
 ccc
 
-## **replit (interactive)**
+## replit (interactive)
