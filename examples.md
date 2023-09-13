@@ -308,8 +308,16 @@ some markdown
 
 xyz
 
+### **text output**
+
+ccc
+
 ## **Seismic Strengthening**
 
 xyz
+
+### **text output**
+
+ccc
 
 ## **replit (interactive)**
