@@ -16,6 +16,7 @@ release = '0.1'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 myst_enable_extensions = ['substitution']
+myst_heading_anchors = 3
 
 extensions = ['myst_parser', 'sphinx.ext.githubpages', "sphinxcontrib.jquery"]
 
