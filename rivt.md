@@ -4,7 +4,7 @@ myst:
         "key1": |
             ```{image} _static/img/riv02.png
             :alt: rivt logo
-            :target: ../rivt.md#-rivt-syntax
+            :target: /rivt.md#rivt-syntax
             :width: 45px
             ```
 ---
@@ -22,7 +22,7 @@ using additional programs. All of the programs are open source.
 
 **rivt** works with single files and extensive reports with hundreds of files.
 Multi-file reports are organized in a tri-level folder structure explained
-[here](/rivt-doc.md#-folder-structure).
+[here](/rivt-doc.md#folder-structure).
 
 <hr>
 
