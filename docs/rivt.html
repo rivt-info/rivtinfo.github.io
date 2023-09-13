@@ -49,101 +49,109 @@
         <div id="main-content" role="main">
           
   <section id="rivt">
-<h1><span class="section-number">1. </span><a class="reference external" href="https://www.rivt-doc.net/index.html"><img alt="rivt logo" src="_images/riv02-low.png" style="width: 65px;" /></a>  <strong>rivt</strong><a class="headerlink" href="#rivt" title="Link to this heading">¶</a></h1>
+<h1><span class="section-number">1. </span><a class="reference external" href="rivtsyntax"><img alt="rivt logo" src="_images/riv02.png" style="width: 45px;" /></a>  <strong>rivt</strong><a class="headerlink" href="#rivt" title="Link to this heading">¶</a></h1>
 <p><strong>rivt</strong> is a markdown language for writing, organizing and sharing engineering
 documents. It emphasizes clarity, efficiency and access.
-<a class="reference external" href="https://rivt-code.net">rivtlib</a> is an open source Python library for
-processing <strong>rivt</strong>. <a class="reference internal" href="#rivt-doc.html"><span class="xref myst">rivt-doc</span></a> is an open source editing and
-publishing framework built around rivt that requires additional open source
-programs.</p>
+<a class="reference external" href="https://rivt-code.net">rivtlib</a> is a Python library for processing <strong>rivt</strong>.
+The minimum software needed to write <strong>rivt</strong> documents is Python 3.8,
+<strong>rivtlib</strong> and several other Python libraries. All programs are open source.
+<a class="reference internal" href="rivt-doc.html"><span class="std std-doc">rivt-doc</span></a> is an open source editing and publishing framework
+built with additional open source programs. <strong>rivt</strong> works with single files
+and extensive reports with hundreds of files. Multi-file reports are structured
+through a tri-level folder structure explained <a class="reference internal" href="rivt-doc.html"><span class="std std-doc">here</span></a>.</p>
 <section id="rivt-files">
 <h2><span class="section-number">1.1. </span><strong>rivt files</strong><a class="headerlink" href="#rivt-files" title="Link to this heading">¶</a></h2>
-<p>A <strong>rivt</strong> file is a utf-8 Python file that includes the import statement</p>
-<pre style="background: #e6ecdf">  import rivtlib.rivtapi as rv </pre> 
+<p>A <strong>rivt</strong> file is a utf-8 Python file that includes the import statement:</p>
+<pre style="background:#e6ecdf; color: #000000">import rivtlib.rivtapi as rv</pre> 
 <p>which exposes four API functions. Each function takes a triple quoted string as
-argument.</p>
-<pre style="background:  #cfdde2">
-rv.R(str) - rivt: repository and report settings
-rv.I(str) - insert: static text, images and tables
-rv.V(str) - values: equations
-rv.T(str) - tools: Python functions and scripts
+argument, which may include arbitrary text.</p>
+<pre style="background: #cfdde2; color: #000000">
+============= ========== =================================
+API function   name           purpose
+============= ========== =================================
+rv.R(str)      rivtinit    repository and report settings
+rv.I(str)      insert      static text, images and tables
+rv.V(str)      values      equations
+rv.T(str)      tools       Python functions and scripts
 </pre>
-<p>When running in an IDE (e.g. VSCode), API functions may be run individually
-with the standard cell decorator</p>
-<pre style="background: #cfdde2"> # %% </pre>
-<p>Interactive output is formatted as utf-8 text for speed and compatiblility.</p>
-<p>Document and report files are generated using the rv.writemd() and rv.writepdf()
-functions which generate output files in GitHub Flavored Markdown (GFM) and PDF
-formats respectively.</p>
-<p>rivt works with single files and with extensive reports with hundreds of files.
-Multi-file reports are structured through a tri-level folder structure
-explained here <a href="rivt-doc.html">here</a>.</p>
+<p>When running in an IDE (e.g. VSCode), API functions may be grouped in cells and
+run individual using the standard cell decorator:</p>
+<pre style="background:#cfdde2; color: #000000; color: #000000"># %%</pre>
+<p>Interactive output is formatted as utf-8 text for speed and compatiblility.
+Document and report files are generated using the the two functions</p>
+<pre style="background:#e6ecdf; color: #000000">rv.writemd() 
+rv.writepdf() </pre>
+<p>which generate output files in GitHub Flavored Markdown
+(GFM) and PDF formats respectively.</p>
 </section>
 <section id="api-functions">
 <h2><span class="section-number">1.2. </span><strong>API functions</strong><a class="headerlink" href="#api-functions" title="Link to this heading">¶</a></h2>
-<pre style="background:  #cfdde2">
+<p>The first line of each function is a label followed by parameters. Each
+function typically defines a new section using the label as the title. The
+labels may be converted to references, with no section break, by prepending a
+double hyphen.</p>
+<pre style="background: #cfdde2; color: #000000">
 ========= ========================================================
- name                       function
+ name                   API  function definition
 ========= ========================================================
 
-repo        rv.R("""label | toc; notoc page
+rivtinit   rv.R("""label | toc; notoc page
 
-                    Introductory text and rivt file settings.
+                Introductory text and rivt file settings.
 
-                    """)
+                """)
 
-insert      rv.I("""label | color  
+insert     rv.I("""label | background color  
 
-                    Text, static tables and images
+                Text, static tables and images
 
-                    """)
+                """)
 
-values      rv.V("""label | sub; nosub 
+values     rv.V("""label | sub; nosub 
 
-                    Equations and text
+                Equations and text
                 
-                    """)
+                """)
 
 tools       rv.T("""label | lines; nolines
 
-                    Python code
+                Python code
 
-                    """)
+                """)
 
-exclude     rv.X("""any 
+exclude     rv.X("""any text
 
-                    Any function changed to X is not evaluated and can be used for
+                    Any function changed to X is not evaluated is used for
                     comments and debugging.
 
                     """)
 
 write-md    rv.writemd()
-(wm)        writes markdown document
+        
+            writes markdown document file (default is a GitHub README.md)
 
 write-pdf   rv.writepdf()
-(wp)        writes markdown and PDF document
+    
+            writes markdown and PDF document files
 </pre>
-<p>The first line of each function is a label followed by section parameters. Each
-function defines a new section with the label as the title. The labels may be
-converted into editing references that do not start a new section by prepending
-a double hyphen.</p>
 <p>File format conventions follow the Python formatter pep8, and linter ruff.
-Method names start in column one. All other lines must be indented 4 spaces to
-facilitate section folding, bookmarks and legibility. The first line of each
-rivt function defines the section title and parameters.</p>
+Method names start in column one. All other content must be indented 4 spaces
+which facilitates section folding, bookmarks and legibility. API functions can
+occur with any order or frequency except for <em>rivtinit</em> which occurs only once
+as the initial function.</p>
 </section>
 <section id="rivt-syntax">
 <h2><span class="section-number">1.3. </span><strong>rivt syntax</strong><a class="headerlink" href="#rivt-syntax" title="Link to this heading">¶</a></h2>
-<p>rivt syntax includes arbitrary unicode text, rivt commands and tags. A rivt
-command reads or writes external files and is denoted by || at the beginning of
-a line. Command parameters are separated by |. In the summary below parameter
-options are desginated with semi-colons and commas separate a parameter list.
-Tags format a line or block of text and are denoted with _[tag] at the end of a
-line. Block tags start a block of text with _[[tag]] and end with _[[q]]. The
-form of “=” and “:=” tags used in the Value method are exceptions.</p>
+<p><strong>rivt</strong> markup includes arbitrary unicode text, rivt commands and rivt tags.
+<a class="reference external" href="https://docutils.sourceforge.io/docs/user/rst/quickref.html">restructuredText</a>
+markup may also be included.</p>
 <section id="commands">
 <h3><span class="section-number">1.3.1. </span><strong>commands</strong><a class="headerlink" href="#commands" title="Link to this heading">¶</a></h3>
-<pre style="background: #dce8ef">
+<p>A command reads or writes external files and is denoted by || at the beginning
+of a line. Command parameters are separated by |. In the summary below,
+parameter options are separated with semi-colons and parameter list elements
+are separated with commas.</p>
+<pre style="background:#dce8ef; color: #000000">
 ==================================================== ==============
     command syntax                                          API 
 ==================================================== ==============
@@ -163,7 +171,10 @@ form of “=” and “:=” tags used in the Value method are exceptions.</p>
 </section>
 <section id="tags">
 <h3><span class="section-number">1.3.2. </span><strong>tags</strong><a class="headerlink" href="#tags" title="Link to this heading">¶</a></h3>
-<pre style="background: #dce8ef">
+<p>Tags format a line or block of text and are denoted with _[tag] at the end of a
+line. Block tags start a block of text with _[[tag]] and end with _[[q]]. The
+form of “=” and “:=” tags used in the Value method are exceptions.</p>
+<pre style="background:#dce8ef; color: #000000">
 ============================ ================================= ==========
    line tags                        description                   API
 ============================ ================================ ===========
@@ -243,8 +254,8 @@ _[[l]]                          LaTeX                             I V
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="rivt-doc.html">3. <strong>rivt-doc</strong> </a><ul>
-<li class="toctree-l2"><a class="reference internal" href="rivt-doc.html#rivt-doc-installation">3.1. rivt-doc installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rivt-doc.html#folder-structure">3.2. folder structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rivt-doc.html#installation">3.1. <strong>installation</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="rivt-doc.html#folders">3.2. <strong>folders</strong></a></li>
 <li class="toctree-l2"><a class="reference internal" href="rivt-doc.html#vscode-profiles">3.3. VSCode Profiles</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="rivt-doc.html#shortcuts">3.3.1. Shortcuts</a></li>
 <li class="toctree-l3"><a class="reference internal" href="rivt-doc.html#api-function-snippets">3.3.2. API function snippets</a></li>

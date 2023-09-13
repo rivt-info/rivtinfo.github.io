@@ -14,7 +14,7 @@ myst:
 - VS Code
 - Texlive 
 
-## rivt-doc installation
+## **installation**
 
 - VSCode + extensions 
 - LaTeX 
@@ -24,7 +24,7 @@ rivt-doc is available for every OS platform and installs either in a single
 portable folder via a zip file or as a set of system programs. It also runs in
 the cloud using GitHub CodeSpaces or other cloud service providers.
 
-## folder structure
+## **folders**
 
 <pre style="background:  #cfdde2">
 [rivtdoc]-Report-Label/               
