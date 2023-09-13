@@ -152,7 +152,7 @@ rv.X("""any text
 </pre>
 
 
-### Text output
+### **text output**
 
 <pre style="background: #e6ecdf">
 
@@ -294,22 +294,22 @@ rv.X("""any text
 </pre>
 
 
-### Markdown output
+### **markdown output**
 
 some markdown
 
 
-### PDF output
+### **PDF output**
 
 [PDF output from example](./_static/attach/rivt-toy-example.pdf)
 
 
-## Solar Canopy
+## **Solar Canopy**
 
 xyz
 
-## Seismic Strengthening
+## **Seismic Strengthening**
 
 xyz
 
-## replit (interactive)
+## **replit (interactive)**
