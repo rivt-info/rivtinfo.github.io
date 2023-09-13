@@ -306,21 +306,27 @@ some markdown
 
 [PDF output from example](./_static/attach/rivt-toy-example.pdf)
 
+<hr>
 
-## solar canopy<hr>
-
+## solar canopy
+<hr>
 xyz
 
 ### text output
 
 ccc
 
-## seismic strengthening<hr>
+<hr>
+
+## seismic strengthening
+<hr>
 
 xyz
 
 ### text output
 
 ccc
+<hr>
 
-## replit (interactive)<hr>
+## replit (interactive)
+<hr>

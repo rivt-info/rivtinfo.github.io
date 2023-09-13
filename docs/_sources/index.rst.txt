@@ -1,5 +1,6 @@
 **rivt User Manual**
-======================
+
+--------------------------------------
 
 `rivt <rivt.html>`__ is a markdown language for writing, organizing and sharing
 engineering documents and `rivtlib <rivt-code.net>`_ is a Python library for
