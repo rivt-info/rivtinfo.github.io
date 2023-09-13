@@ -5,11 +5,11 @@ myst:
             ```{image} _static/img/search01.png
             :alt: rivt-search logo
             :target: https://github.com/search
-            :width: 65px
+            :width: 50px
             ```
 ---
 
-# **rivt-search** {{ key4 }} 
+# {{ key4 }} **rivt-search** 
 
 <head>
 <style>
