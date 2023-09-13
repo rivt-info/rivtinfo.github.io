@@ -68,19 +68,24 @@
 <script> function searchRivt(){var strng1 = document.getElementById("terms"); var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 13) && e.ctrlKey){document.getElementById("searchBtn").click();}});</script>
 <script> function searchOrg(){var strng1 = document.getElementById("terms");var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 13) && e.ctrlKey){document.getElementById("searchBtn").click();}});</script>
 </head>
+<hr>
 <section id="github">
-<h2><strong>GitHub</strong><a class="headerlink" href="#github" title="Link to this heading">¶</a></h2>
+<h2>GitHub<a class="headerlink" href="#github" title="Link to this heading">¶</a></h2>
+<hr>
 <p>Full text <strong>rivt</strong> document search across README files</p>
 <p>Enter search terms separated by a + sign</p>
-<p><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: bold"><br></p>
 <p>Example: concrete+beam+bridge  [<strong>rivt</strong> term is inserted by the search function]</p>
+<p><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: bold"><br></p>
 <p>[ctrl+R or F5] to clear search terms</p>
 <p><button class="button" id="searchBtn" onclick="searchRivt()">Search [ ctrl+enter ]</button></p>
+<hr>
 </section>
 <section id="github-organization">
-<h2><strong>GitHub Organization</strong><a class="headerlink" href="#github-organization" title="Link to this heading">¶</a></h2>
+<h2>GitHub Organization<a class="headerlink" href="#github-organization" title="Link to this heading">¶</a></h2>
+<hr>
+<p>Search within a GitHub organization</p>
 <p><input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: bold"> Enter Organization<br></p>
-<p><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: bold"><br></p>
+<p><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: bold"> Search Terms<br></p>
 <p><button class="button" id="searchBtn" onclick="searchOrg()">Search [ ctrl+enter ]</button></p>
 </section>
 </section>
@@ -145,8 +150,8 @@
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#"><strong>rivt-search</strong> </a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#github"><strong>GitHub</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#github-organization"><strong>GitHub Organization</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#github">GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#github-organization">GitHub Organization</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="rivt-tools.html"><strong>rivt-tools</strong></a><ul>

@@ -4,7 +4,7 @@ myst:
         "key1": |
             ```{image} _static/img/riv02.png
             :alt: rivt logo
-            :target: /rivt.md#rivt-syntax
+            :target: /rivt.html#rivt-syntax
             :width: 50px
             ```
 ---
