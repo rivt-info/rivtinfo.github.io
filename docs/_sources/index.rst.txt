@@ -11,7 +11,6 @@ source programs.
 
 .. toctree::
    :maxdepth: 3
-   :numbered:
 
    rivt.md
    examples.md
