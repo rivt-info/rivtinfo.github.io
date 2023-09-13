@@ -5,7 +5,7 @@ myst:
             ```{image} _static/img/riv02.png
             :alt: rivt logo
             :target: "toy example"
-            :width: 60px
+            :width: 50px
             ```
 ---
 

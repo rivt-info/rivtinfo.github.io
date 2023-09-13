@@ -5,7 +5,7 @@ myst:
             ```{image} _static/img/riv-doc02.png
             :alt: rivt-doc logo
             :target: https://github.com/rivt-doc.html
-            :width: 60px
+            :width: 50px
             ```
 ---
 
