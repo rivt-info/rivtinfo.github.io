@@ -1,7 +1,7 @@
-**rivt User Manual**
-=====================
+**rivt**
+========
 
-**version 0.0.12**
+**User Manual**
 
 --------------------------------------
 
@@ -18,6 +18,7 @@ framework for **rivt**. The programs are open source.
    
    rivt.md
    examples.md
+   rivt-syntax.md
    rivt-doc.md
    rivt-search.md
    rivt-tools.md

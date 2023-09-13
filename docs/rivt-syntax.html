@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#2D2D2D" />
   
-  <title>rivt :: rivt-tools</title>
+  <title>rivt :: rivt-syntax</title>
   
 
   <link rel="icon" type="image/png" sizes="32x32" href="_static/img/favicon-32x32.png">
@@ -48,56 +48,77 @@
       <div id="main-content-container">
         <div id="main-content" role="main">
           
-  <section id="rivt-tools">
-<h1><a class="reference external" href="https://github.com/search"><img alt="rivt-tools logo" src="_images/rivt-tools01.png" style="width: 50px;" /></a> <strong>rivt-tools</strong><a class="headerlink" href="#rivt-tools" title="Link to this heading">¶</a></h1>
-<ul class="simple">
-<li><p>VS Code</p></li>
-<li><p>Texlive</p></li>
-</ul>
-<section id="rivt-installation">
-<h2>rivt installation<a class="headerlink" href="#rivt-installation" title="Link to this heading">¶</a></h2>
-<p>The minimum software needed to run is:</p>
-<ul class="simple">
-<li><p>Python 3.8 or higher</p></li>
-<li><p>rivt library + Python dependencies</p></li>
-</ul>
-<p>A complete rivt system additionally includes:</p>
-<ul class="simple">
-<li><p>VSCode + extensions</p></li>
-<li><p>LaTeX</p></li>
-<li><p>Github account</p></li>
-</ul>
-<p>rivt-sys installs the complete rivt system in a portable folder via a zip file,
-and is available for every OS platform. rivt also runs in the cloud using
-GitHub CodeSpaces or other cloud service providers. Installation details are
-provided in the <a class="reference external" href="https://www.rivt-sys.net%3E">rivt User Manual</a></p>
-</section>
-<section id="vscode-profiles">
-<h2>VSCode profiles<a class="headerlink" href="#vscode-profiles" title="Link to this heading">¶</a></h2>
-<p>The rivt VSCode profile includes shortcuts for common editing functions and
-snippets for API functions and commands.</p>
-<section id="api-function-snippets">
-<h3>API function snippets<a class="headerlink" href="#api-function-snippets" title="Link to this heading">¶</a></h3>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head text-center"><p><strong>snippet</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-center"><p>ini</p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p>app</p></td>
-</tr>
-<tr class="row-even"><td class="text-center"><p>img</p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p>tbl</p></td>
-</tr>
-<tr class="row-even"><td class="text-center"><p>dec</p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p>txt</p></td>
-</tr>
-</tbody>
-</table>
+  <section id="rivt-syntax">
+<h1><a class="reference external" href="https://github.com/rivt-doc.html"><img alt="rivt logo" src="_images/riv02.png" style="width: 50px;" /></a> <strong>rivt-syntax</strong><a class="headerlink" href="#rivt-syntax" title="Link to this heading">¶</a></h1>
+<p><strong>rivt</strong> markup includes arbitrary unicode text, rivt commands and rivt tags.
+It uses <a class="reference external" href="https://docutils.sourceforge.io/docs/user/rst/quickref.html">restructuredText</a> as a base and some reST markup may be used.</p>
+<hr>
+<section id="commands">
+<h2>commands<a class="headerlink" href="#commands" title="Link to this heading">¶</a></h2>
+<hr>
+<p>A command reads or writes external files and is denoted by || at the beginning
+of a line. Command parameters are separated by |. In the summary below,
+parameter options are separated with semi-colons and parameter list elements
+are separated with commas.</p>
+<pre style="background:#dce8ef; color: #000000">
+==================================================== ==============
+    command syntax                                         API 
+==================================================== ==============
+
+|| text | rel file path | rivt; plain                     R I V
+
+|| init | rel file path                                     R
+
+|| append | rel file path                                   R
+
+|| image  | rel file path, .. | .50, ..                     I
+
+|| table  | rel file path | 60,r;l;c                        I
+
+|| declare | rel file path |  print; noprint                V
+</pre>
+<section id="tags">
+<h3>tags<a class="headerlink" href="#tags" title="Link to this heading">¶</a></h3>
+<p>Line tags format a line of text and are denoted with <em>_[tag]</em>, typically at the
+end of a line. The <em>=</em> and <em>:=</em> tags used in the Value method are unique
+exceptions.</p>
+<pre style="background:#dce8ef; color: #000000">
+============================ ================================= ==========
+   line tags                        description                   API
+============================ ================================ ===========
+text _[b]                       bold                            R I V 
+text _[c]                       center                          R I V  
+text _[i]                       italic                          R I V  
+text _[bc]                      bold center                     R I V  
+text _[bi]                      bold italic                     R I V
+text _[r]                       right justify                   R I V
+text _[u]                       underline                       R I V   
+text _[l]                       LaTeX math                        I V
+text _[s]                       sympy math                        I V
+text _[bs]                      bold sympy math                   I V
+text _[e]                       equation label, autonumber        I V
+text _[f]                       figure caption, autonumber        I V
+text _[t]                       table title, autonumber           I V
+text _[#]                       footnote, autonumber              I V
+text _[d]                       footnote description              I V
+_[page]                         new page                          I V
+_[address, label]               url or internal reference         I V
+a = 1.2 | unit, alt | descrip   declare =                           V
+a := b + c | unit, alt | n,n    assign :=                           V
+</pre>
+<p>Block tags format a text block and start a block with <em>_[[tag]]</em> and
+end with <em>_[[q]]</em>.</p>
+<pre style="background:#dce8ef; color: #000000">
+============================ ================================ ==========
+   block tags                        description                 API
+============================ ================================ ==========
+_[[b]]                          bold                            R I V
+_[[c]]                          center                          R I V
+_[[i]]                          italic                          R I V
+_[[p]]                          plain                           R I V
+_[[q]]                          quit block                      R I V
+_[[l]]                          LaTeX                             I V
+</pre>
 </section>
 </section>
 </section>
@@ -149,9 +170,9 @@ snippets for API functions and commands.</p>
 <li class="toctree-l2"><a class="reference internal" href="examples.html#replit-interactive">replit (interactive)</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="rivt-syntax.html"> <strong>rivt-syntax</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="rivt-syntax.html#commands">commands</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="rivt-syntax.html#tags">tags</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"> <strong>rivt-syntax</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#commands">commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tags">tags</a></li>
 </ul>
 </li>
 </ul>
@@ -173,10 +194,10 @@ snippets for API functions and commands.</p>
 <li class="toctree-l2"><a class="reference internal" href="rivt-search.html#github-organization">GitHub Organization</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#"> <strong>rivt-tools</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#rivt-installation">rivt installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#vscode-profiles">VSCode profiles</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#api-function-snippets">API function snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rivt-tools.html"> <strong>rivt-tools</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rivt-tools.html#rivt-installation">rivt installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rivt-tools.html#vscode-profiles">VSCode profiles</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="rivt-tools.html#api-function-snippets">API function snippets</a></li>
 </ul>
 </li>
 </ul>
@@ -206,7 +227,7 @@ snippets for API functions and commands.</p>
             
                 <li class="footer-element">
                     
-                        <a href="_sources/rivt-tools.md.txt" rel="nofollow"> source</a>
+                        <a href="_sources/rivt-syntax.md.txt" rel="nofollow"> source</a>
                     
                 </li>
             
