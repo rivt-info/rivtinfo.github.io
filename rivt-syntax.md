@@ -11,38 +11,48 @@ myst:
 
 #  {{ key3a }} **rivt-syntax**
 
-**rivt** markup includes arbitrary unicode text, rivt commands and rivt tags.
-It uses [restructuredText](https://docutils.sourceforge.io/docs/user/rst/quickref.html) as a base and some reST markup may be used. 
+**rivt** markup is based on
+[restructuredText](https://docutils.sourceforge.io/docs/user/rst/quickref.html).
+and includes arbitrary unicode text, rivt commands and rivt tags. Any text that
+is not part of the defined syntax is processed as plain text, formatted and
+output.
 
 <hr>
 
 ## commands
 <hr>
 
-A command reads or writes external files and is denoted by || at the beginning
-of a line. Command parameters are separated by |. In the summary below,
-parameter options are separated with semi-colons and parameter list elements
-are separated with commas.
+Commands read or write external files and are marked by double bars (||) at the
+beginning of a line. Command parameters are separated by single bars (|). In the summary
+below, parameter options are separated with semi-colons, parameter list
+elements are separated with commas and optoins are in parenthesis.
 
-<pre style="background:#dce8ef; color: #000000">
-==================================================== ==============
-    command syntax                                         API 
-==================================================== ==============
+```{list-table} example
+:header-rows: 1
+:name: test
 
-|| text | rel file path | rivt; plain                     R I V
+* - [command syntax](rivt-syntax.md#tags)                                          
+  - API 
+* - || text | rel file path | rivt; plain                     
+  - R I V
+```
 
-|| init | rel file path                                     R
 
-|| append | rel file path                                   R
+|| init | rel file path,                                      R
 
-|| image  | rel file path, .. | .50, ..                     I
+|| append | rel file path,                                    R
 
-|| table  | rel file path | 60,r;l;c                        I
+|| image  | rel file path \, (2nd image) | width \, (width),      I
 
-|| declare | rel file path |  print; noprint                V
-</pre>
+|| table  | rel file path | max col width \, align,             I
 
-### tags
+|| declare | rel file path |  print; noprint,                 V
+
+
+<hr>
+
+## tags
+<hr>
 
 Line tags format a line of text and are denoted with *_[tag]*, typically at the
 end of a line. The *=* and *:=* tags used in the Value method are unique

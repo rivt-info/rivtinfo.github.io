@@ -38,7 +38,7 @@
       </div>
       <div id="project-container">
         
-        rivt - ver. 0.0.11
+        rivt - ver. 0.1.11
         
       </div>
     </header>
@@ -52,13 +52,13 @@
 <h1><a class="reference external" href="/rivt.html#rivt-syntax"><img alt="rivt logo" src="_images/riv02.png" style="width: 50px;" /></a>  <strong>rivt</strong><a class="headerlink" href="#rivt" title="Link to this heading">¶</a></h1>
 <p><strong>rivt</strong> is a markdown language for writing, organizing and sharing engineering
 documents. It emphasizes clarity, efficiency and access.
-<a class="reference external" href="https://rivt-code.net">rivtlib</a> is a Python library for processing <strong>rivt</strong>.</p>
-<p>The minimum software needed to write <strong>rivt</strong> documents is Python 3.8,
-<strong>rivtlib</strong> and several other Python libraries.
-<a class="reference internal" href="rivt-doc.html"><span class="std std-doc">rivt-doc</span></a> is an open source editing and publishing framework
-using additional programs. All of the programs are open source.</p>
-<p><strong>rivt</strong> works with single files and extensive reports with hundreds of files.
-Multi-file reports are organized in a tri-level folder structure explained
+<a class="reference external" href="https://rivt-code.net">rivtlib</a> is a Python library for processing <strong>rivt</strong>.
+The minimum software needed to write <strong>rivt</strong> documents is Python 3.8, and
+other Python libraries including <strong>rivtlib</strong>.</p>
+<p><a class="reference internal" href="rivt-doc.html"><span class="std std-doc">rivt-doc</span></a> is an open source editing and publishing framework
+using additional programs. All of the programs are open source. <strong>rivt</strong> works
+with single files and extensive reports with hundreds of files. Multi-file
+reports are organized in a tri-level folder structure explained
 <a class="reference internal" href="rivt-doc.html#folder-structure"><span class="std std-ref">here</span></a>.</p>
 <hr>
 <section id="rivt-files">
@@ -77,24 +77,27 @@ rv.I(str)      insert      static text, images and tables
 rv.V(str)      values      equations
 rv.T(str)      tools       Python functions and scripts
 </pre>
-<p>When running in an IDE (e.g. VSCode), API functions may be grouped in cells and
-run interactively using the standard cell decorator:</p>
+<p>When running in an IDE (e.g. VSCode) the file may be executed interactively.
+Interactive output is formatted as utf-8 text for speed and compatiblility. API
+functions may be grouped and executed step-wise using the standard cell decorator:</p>
 <pre style="background:#e6ecdf;color:#000000"># %%</pre>
-<p>Interactive output is formatted as utf-8 text for speed and compatiblility.
-Document and report files are generated using the the two functions</p>
+<p>Complete document and report files are generated using the functions</p>
 <pre style="background:#e6ecdf;color:#000000">rv.writemd() 
 rv.writepdf() </pre>
-<p>which generate output files in GitHub Flavored Markdown
+<p>which write output files in GitHub Flavored Markdown
 (GFM) and PDF formats respectively.</p>
 <hr>
 </section>
 <section id="api-functions">
 <h2>API Functions<a class="headerlink" href="#api-functions" title="Link to this heading">¶</a></h2>
 <hr>
-<p>The first line of each function is a label followed by parameters. Each
-function typically defines a new section using the label as the title. The
-labels may be converted to references, with no section break, by prepending a
-double hyphen.</p>
+<p>Each API function defines a document section. The first line of each function
+includes a section label that converts to a section title, followed by section
+formatting parameters. The titles and section breaks may be suppressed by
+prepending a double hyphen.</p>
+<p>The section body can contain any utf-8 text. Commands and tags applicable to
+each function are defined <a class="reference internal" href="rivt-syntax.html#commands"><span class="std std-ref">here</span></a> and
+<a class="reference internal" href="rivt-syntax.html#tags"><span class="std std-ref">here</span></a></p>
 <pre style="background: #cfdde2; color: #000000">
 ========== ========================================================
   name                   API  function definition
@@ -139,11 +142,11 @@ write-pdf   rv.writepdf()
     
             writes markdown and PDF document files
 </pre>
-<p>File format conventions follow the Python formatter pep8, and linter ruff.
-Method names start in column one. All other content must be indented 4 spaces
-which facilitates section folding, bookmarks and legibility. API functions can
-occur with any order or frequency except for <em>rivtinit</em> which occurs only once
-as the initial function.</p>
+<p>File format conventions follow the Python formatter pep8 and linter ruff. API
+function names start in column one. All other content is indented 4 spaces
+to facilitate section folding, bookmarking and legibility. API functions can
+be written in any order and frequency except for <em>rivtinit</em>, which occurs only once
+as the initial function in the file.</p>
 <hr>
 </section>
 </section>
@@ -172,6 +175,11 @@ as the initial function.</p>
 <li class="toctree-l2"><a class="reference internal" href="#api-functions">API Functions</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="rivt-syntax.html"> <strong>rivt-syntax</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rivt-syntax.html#commands">commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rivt-syntax.html#tags">tags</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="examples.html"> <strong>rivt Examples</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="examples.html#toy-example">Toy Example</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="examples.html#text-output">text output</a></li>
@@ -190,13 +198,6 @@ as the initial function.</p>
 <li class="toctree-l2"><a class="reference internal" href="examples.html#replit-interactive">replit (interactive)</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="rivt-syntax.html"> <strong>rivt-syntax</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="rivt-syntax.html#commands">commands</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="rivt-syntax.html#tags">tags</a></li>
-</ul>
-</li>
-</ul>
-</li>
 <li class="toctree-l1"><a class="reference internal" href="rivt-doc.html"> <strong>rivt-doc</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="rivt-doc.html#installation">installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="rivt-doc.html#folder-structure">folder structure</a></li>
@@ -207,11 +208,6 @@ as the initial function.</p>
 <li class="toctree-l3"><a class="reference internal" href="rivt-doc.html#command-snippets">command snippets</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="rivt-search.html"> <strong>rivt-search</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="rivt-search.html#github">GitHub</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rivt-search.html#github-organization">GitHub Organization</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="rivt-tools.html"> <strong>rivt-tools</strong></a><ul>
@@ -228,6 +224,11 @@ as the initial function.</p>
 <li class="toctree-l3"><a class="reference internal" href="rivt-online.html#api-function-snippets">API function snippets</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="rivt-search.html"> <strong>rivt-search</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rivt-search.html#github">GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rivt-search.html#github-organization">GitHub Organization</a></li>
 </ul>
 </li>
 </ul>

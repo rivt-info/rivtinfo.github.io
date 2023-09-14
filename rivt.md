@@ -14,14 +14,13 @@ myst:
 **rivt** is a markdown language for writing, organizing and sharing engineering
 documents. It emphasizes clarity, efficiency and access.
 [rivtlib](https://rivt-code.net) is a Python library for processing **rivt**.
+The minimum software needed to write **rivt** documents is Python 3.8, and
+other Python libraries including **rivtlib**. 
 
-The minimum software needed to write **rivt** documents is Python 3.8,
-**rivtlib** and several other Python libraries. 
 [rivt-doc](/rivt-doc.md) is an open source editing and publishing framework
-using additional programs. All of the programs are open source.
-
-**rivt** works with single files and extensive reports with hundreds of files.
-Multi-file reports are organized in a tri-level folder structure explained
+using additional programs. All of the programs are open source. **rivt** works
+with single files and extensive reports with hundreds of files. Multi-file
+reports are organized in a tri-level folder structure explained
 [here](/rivt-doc.md#folder-structure).
 
 <hr>
@@ -46,18 +45,18 @@ rv.V(str)      values      equations
 rv.T(str)      tools       Python functions and scripts
 </pre>
 
-When running in an IDE (e.g. VSCode), API functions may be grouped in cells and
-run interactively using the standard cell decorator:
+When running in an IDE (e.g. VSCode) the file may be executed interactively.
+Interactive output is formatted as utf-8 text for speed and compatiblility. API
+functions may be grouped and executed step-wise using the standard cell decorator:
 
 <pre style="background:#e6ecdf;color:#000000"># %%</pre>
 
-Interactive output is formatted as utf-8 text for speed and compatiblility.
-Document and report files are generated using the the two functions
+Complete document and report files are generated using the functions
 
 <pre style="background:#e6ecdf;color:#000000">rv.writemd() 
 rv.writepdf() </pre>
 
-which generate output files in GitHub Flavored Markdown
+which write output files in GitHub Flavored Markdown
 (GFM) and PDF formats respectively.
 
 <hr>
@@ -65,10 +64,14 @@ which generate output files in GitHub Flavored Markdown
 ## API Functions
 <hr>
 
-The first line of each function is a label followed by parameters. Each
-function typically defines a new section using the label as the title. The
-labels may be converted to references, with no section break, by prepending a
-double hyphen.
+Each API function defines a document section. The first line of each function
+includes a section label that converts to a section title, followed by section
+formatting parameters. The titles and section breaks may be suppressed by
+prepending a double hyphen.
+
+The section body can contain any utf-8 text. Commands and tags applicable to
+each function are defined [here](/rivt-syntax.md#commands) and
+[here](/rivt-syntax.md#tags)
 
 
 <pre style="background: #cfdde2; color: #000000">
@@ -116,11 +119,11 @@ write-pdf   rv.writepdf()
             writes markdown and PDF document files
 </pre>
 
-File format conventions follow the Python formatter pep8, and linter ruff.
-Method names start in column one. All other content must be indented 4 spaces
-which facilitates section folding, bookmarks and legibility. API functions can
-occur with any order or frequency except for *rivtinit* which occurs only once
-as the initial function.
+File format conventions follow the Python formatter pep8 and linter ruff. API
+function names start in column one. All other content is indented 4 spaces
+to facilitate section folding, bookmarking and legibility. API functions can
+be written in any order and frequency except for *rivtinit*, which occurs only once
+as the initial function in the file.
 
 <hr>
 
