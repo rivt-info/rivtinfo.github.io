@@ -21,23 +21,14 @@ a_2=b_2+c_2-d_2+e_2
 
 ## **rivt**
 
-<span style="background:#e6ecdf;color:#000000">rivt</span>
-  
-  : open source [markdown language](/syntax.md) for writing, organizing and sharing engineering documents
-
-rivt-doc
-  
-  : open source editing and publishing [framework](/rdoc.md)
-
-rivtlib
-  : Python library for processing [rivt](https://rivt-code.net)
-
-DTerm 2
-  
-  : Definition 2a
-  
-  : Definition 2b
-
+[rivt](/syntax.md) 
+  <pre>
+  open source markdown language for writing, organizing and sharing
+  engineering documents</pre>
+[rivt-doc](/rdoc.md)
+  <pre>
+  open source editing and publishing framework for rivtlib
+  Python library for processing</pre> 
 
 
 ## **Python**

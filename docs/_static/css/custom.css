@@ -7,9 +7,6 @@ img.align-center {
     display: block;
 }
 
-a.underline {
-    text-decoration: underline;
-}
 
 a {
     color: #005580;
@@ -18,13 +15,6 @@ a {
 
 }
 
-dt {
-    font-weight: bold;
+a.underline {
     text-decoration: underline;
-    background-color: beige;
-}
-
-dd {
-    margin: 0;
-    padding: 0 0 0.5em 0;
 }
