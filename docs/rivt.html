@@ -100,48 +100,62 @@ prepending a double hyphen.</p>
 each function are defined <a class="reference internal" href="syntax.html#commands"><span class="std std-ref">here</span></a> and
 <a class="reference internal" href="syntax.html#tags"><span class="std std-ref">here</span></a></p>
 <pre style="background: #cfdde2; color: #000000">
-========== ========================================================
-  name                   API  function definition
-========== ========================================================
+============ ========================================================
+  name                   API function definition
+============ ========================================================
 
-rivtinit    rv.R("""label | toc; notoc, start page
+rivtinit      rv.R("""label | toc; notoc, start page
 
-                rivt file settings and text
-
-                """)
-
-insert      rv.I("""label | background color  
-
-                Static tables, images and text
+                  rivt settings, and text to be formatted and output to the
+                  terminal.
 
                 """)
 
-values      rv.V("""label | sub; nosub 
+insert        rv.I("""label | background color  
 
-                Equations and text
+                  Static tables, images and text that are formmatted and output
+                  to the terminal.
+
+                """)
+
+values        rv.V("""label | sub; nosub 
+
+                  Equations and text that are evaluated, formatted and output to the terminal.
                 
                 """)
 
-tools       rv.T("""label | lines; nolines
+tools         rv.T("""label | line; noline | print; noprint
 
-                Python code
-
-                """)
-
-exclude     rv.X("""any text
-
-                    Any function changed to X is not evaluated. Used for
-                    comments and debugging.
+                  Python code evaluated in the rivt namespace.
 
                 """)
 
-write-md    rv.writemd()
+exclude       rv.X("""any text
+
+                  Any function changed to X is not processed. Used for
+                  comments and debugging.
+
+                """)
+
+write-md      rv.writemd()
         
-            writes a markdown document file (default is a GitHub README.md)
+              Writes a markdown document file (default is a GitHub README.md)
 
-write-pdf   rv.writepdf()
+write-pdf     rv.writepdf()
     
-            writes a markdown and PDF document file
+              Writes a markdown (default is a GitHub README.md) 
+              and PDF document file (default uses rivt file name.)
+
+all-readme    rv.readme()
+
+              Collects, in order, all README.md document files in the project
+              and writes them into a single README.md in the root project
+              folder, making the project full-text searchable on GitHub. Note
+              that file links in the document README will typically not resolve
+              when compiled into the project README. This is by design. It
+              makes the full-project README faster to search. For convenience
+              links are inserted back to the original document README.
+          
 </pre>
 <p>The API function names start in column one. All other content is indented 4
 spaces to facilitate section folding, bookmarking and legibility. API functions
@@ -180,20 +194,20 @@ that follows pep8 and ruff conventions.</p>
 <li class="toctree-l2"><a class="reference internal" href="#api-functions"><strong>API functions</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="syntax.html"> rivt syntax</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="syntax.html"> Syntax</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="syntax.html#commands"><strong>commands</strong></a></li>
 <li class="toctree-l2"><a class="reference internal" href="syntax.html#tags"><strong>tags</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="examples.html"> rivt examples</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="examples.html"> Examples</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="examples.html#simple"><strong>Simple</strong></a></li>
 <li class="toctree-l2"><a class="reference internal" href="examples.html#solar-canopy"><strong>Solar canopy</strong></a></li>
 <li class="toctree-l2"><a class="reference internal" href="examples.html#seismic-strengthening"><strong>Seismic Strengthening</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="rsearch.html"> <strong>rivt-search</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="rsearch.html#github"><strong>GitHub</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="rsearch.html#github-organizations"><strong>GitHub Organizations</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rsearch.html"> <strong>GitHub Search</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rsearch.html#organizations"><strong>Organizations</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="rsearch.html#search-tips"><strong>Search Tips</strong></a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="rdoc.html"> <strong>rivt-doc</strong></a><ul>

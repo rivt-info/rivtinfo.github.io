@@ -23,9 +23,10 @@ myst:
 - LaTeX 
 - Github account
 
-rivt-doc is available for every OS platform and installs either in a single
-portable folder via a zip file or as a set of system programs. It also runs in
-the cloud using GitHub CodeSpaces or other cloud service providers.
+rivt-doc is available for every OS platform and installs either into a single
+portable folder via a zip file, or as a collection of system programs. It also
+runs in the cloud at **rivt-online** and may be installed on GitHub CodeSpaces
+or other cloud service providers.
 
 <hr>
 
@@ -33,7 +34,7 @@ the cloud using GitHub CodeSpaces or other cloud service providers.
 <hr>
 
 <pre style="background:#cfdde2;color:#000000">
-[rivtdoc]-Report-Label/               
+[rivt]-Report-Label/               
     ├── .git
     ├── units.py                        (inputs: unit over-ride)
     ├── README.md                       (outputs: toc and summary) 
@@ -58,7 +59,6 @@ the cloud using GitHub CodeSpaces or other cloud service providers.
             ├── attachment.pdf
             ├── functions.py
             └── fig1.png
-        ├── [rivt]-doc-label3.py            (inputs: rivt file)   
         └── README.md                       (outputs: GFM doc)
     └── [private]/                      (private files)
         ├── [temp]/                         (outputs: temp files)

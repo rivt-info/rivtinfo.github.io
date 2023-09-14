@@ -76,48 +76,62 @@ each function are defined [here](/syntax.md#commands) and
 
 
 <pre style="background: #cfdde2; color: #000000">
-========== ========================================================
-  name                   API  function definition
-========== ========================================================
+============ ========================================================
+  name                   API function definition
+============ ========================================================
 
-rivtinit    rv.R("""label | toc; notoc, start page
+rivtinit      rv.R("""label | toc; notoc, start page
 
-                rivt file settings and text
-
-                """)
-
-insert      rv.I("""label | background color  
-
-                Static tables, images and text
+                  rivt settings, and text to be formatted and output to the
+                  terminal.
 
                 """)
 
-values      rv.V("""label | sub; nosub 
+insert        rv.I("""label | background color  
 
-                Equations and text
+                  Static tables, images and text that are formmatted and output
+                  to the terminal.
+
+                """)
+
+values        rv.V("""label | sub; nosub 
+
+                  Equations and text that are evaluated, formatted and output to the terminal.
                 
                 """)
 
-tools       rv.T("""label | lines; nolines
+tools         rv.T("""label | line; noline | print; noprint
 
-                Python code
-
-                """)
-
-exclude     rv.X("""any text
-
-                    Any function changed to X is not evaluated. Used for
-                    comments and debugging.
+                  Python code evaluated in the rivt namespace.
 
                 """)
 
-write-md    rv.writemd()
+exclude       rv.X("""any text
+
+                  Any function changed to X is not processed. Used for
+                  comments and debugging.
+
+                """)
+
+write-md      rv.writemd()
         
-            writes a markdown document file (default is a GitHub README.md)
+              Writes a markdown document file (default is a GitHub README.md)
 
-write-pdf   rv.writepdf()
+write-pdf     rv.writepdf()
     
-            writes a markdown and PDF document file
+              Writes a markdown (default is a GitHub README.md) 
+              and PDF document file (default uses rivt file name.)
+
+all-readme    rv.readme()
+
+              Collects, in order, all README.md document files in the project
+              and writes them into a single README.md in the root project
+              folder, making the project full-text searchable on GitHub. Note
+              that file links in the document README will typically not resolve
+              when compiled into the project README. This is by design. It
+              makes the full-project README faster to search. For convenience
+              links are inserted back to the original document README.
+          
 </pre>
 
 The API function names start in column one. All other content is indented 4

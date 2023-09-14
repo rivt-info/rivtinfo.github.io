@@ -13,7 +13,7 @@ myst:
   table    { background:#dce8ef; color: #000000; }
 </style>
 
-#  {{ key3a }} rivt syntax
+#  {{ key3a }} Syntax
 
 **rivt** markup uses a syntax of commands and tags. Any text not defined with
 commands or tags is passed through as output. Commands and tags are processed

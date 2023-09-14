@@ -9,7 +9,7 @@ myst:
             ```
 ---
 
-#  {{ key2 }} rivt examples
+#  {{ key2 }} Examples
 
 <hr>
 

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#2D2D2D" />
   
-  <title>rivt :: rivt-search</title>
+  <title>rivt :: GitHub Search</title>
   
 
   <link rel="icon" type="image/png" sizes="32x32" href="_static/img/favicon-32x32.png">
@@ -48,8 +48,8 @@
       <div id="main-content-container">
         <div id="main-content" role="main">
           
-  <section id="rivt-search">
-<h1><a class="reference external" href="https://github.com/search"><img alt="rivt-search logo" src="_images/search01.png" style="width: 60px;" /></a> <strong>rivt-search</strong><a class="headerlink" href="#rivt-search" title="Link to this heading">¶</a></h1>
+  <section id="github-search">
+<h1><a class="reference external" href="https://github.com/search"><img alt="rivt-search logo" src="_images/search01.png" style="width: 60px;" /></a> <strong>GitHub Search</strong><a class="headerlink" href="#github-search" title="Link to this heading">¶</a></h1>
 <head>
 <style>
 .button {
@@ -69,28 +69,27 @@
 </script>
 <script> function searchOrg(){var strng1 = document.getElementById("terms");var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 13) && e.ctrlKey){document.getElementById("searchBtn").click();}});
 </script>
-<script> function clearRivt(){var strng1 = document.getElementById("terms");var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 82) && e.ctrlKey){document.getElementById("clearBtn").click();}});
+<script> function clearRivt(){var strng1 = document.getElementById("terms");var strng2 = document.getElementById("terms").value="";document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 82) && e.ctrlKey){document.getElementById("clearBtn").click();}});
 </script>
 </head>
-<hr>
-<section id="github">
-<h2><strong>GitHub</strong><a class="headerlink" href="#github" title="Link to this heading">¶</a></h2>
-<hr>
 <p>Full text <strong>rivt</strong> document search across GitHub README files</p>
-<p>Example: concrete+beam+bridge</p>
+<p>Example: solar+steel+frame</p>
 <p><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal"><br></p>
 <p><button class="button" id="searchBtn" onclick="searchRivt()">Search [ Ctrl+Enter ]</button>
 <button class="button" id="clearBtn" onclick="clearRivt()">Clear [ Ctrl+R ]</button></p>
 <hr>
-</section>
-<section id="github-organizations">
-<h2><strong>GitHub Organizations</strong><a class="headerlink" href="#github-organizations" title="Link to this heading">¶</a></h2>
+<section id="organizations">
+<h2><strong>Organizations</strong><a class="headerlink" href="#organizations" title="Link to this heading">¶</a></h2>
 <hr>
 <p>Full text <strong>rivt</strong> document search across GitHub README files in Organizations</p>
 <p><input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: normal"> Enter Organizations (comma separated)<br></p>
 <p><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal"> Search Terms<br></p>
 <p><button class="button" id="searchBtn" onclick="searchOrg()">Search [ Ctrl+Enter ]</button>
 <button class="button" id="clearBtn" onclick="clearRivt()">Clear [ Ctrl+R ]</button></p>
+</section>
+<section id="search-tips">
+<h2><strong>Search Tips</strong><a class="headerlink" href="#search-tips" title="Link to this heading">¶</a></h2>
+<p>Some text.</p>
 </section>
 </section>
 
@@ -123,20 +122,20 @@
 <li class="toctree-l2"><a class="reference internal" href="rivt.html#api-functions"><strong>API functions</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="syntax.html"> rivt syntax</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="syntax.html"> Syntax</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="syntax.html#commands"><strong>commands</strong></a></li>
 <li class="toctree-l2"><a class="reference internal" href="syntax.html#tags"><strong>tags</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="examples.html"> rivt examples</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="examples.html"> Examples</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="examples.html#simple"><strong>Simple</strong></a></li>
 <li class="toctree-l2"><a class="reference internal" href="examples.html#solar-canopy"><strong>Solar canopy</strong></a></li>
 <li class="toctree-l2"><a class="reference internal" href="examples.html#seismic-strengthening"><strong>Seismic Strengthening</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#"> <strong>rivt-search</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#github"><strong>GitHub</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#github-organizations"><strong>GitHub Organizations</strong></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"> <strong>GitHub Search</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#organizations"><strong>Organizations</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#search-tips"><strong>Search Tips</strong></a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="rdoc.html"> <strong>rivt-doc</strong></a><ul>

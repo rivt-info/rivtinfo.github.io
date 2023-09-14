@@ -11,142 +11,40 @@ myst:
 
 # {{ key7 }} Definitions
 
-ATerm *with Markdown*
-  : Definition 
+\begin{gather*}
+a_1=b_1+c_1\\
+a_2=b_2+c_2-d_2+e_2
+\end{gather*}
 
-BTerm 2
-  : Definition 2a
-  : Definition 2b
-  : Definition 2b
-CTerm 3
-  :     A code block
+
+## **rivt**
+
+rivt
+  : an open source [markdown language](/syntax.md) for writing, organizing and sharing engineering documents
+
+rivt-doc
+  : an open source editing and publishing [framework](/rdoc.md)
+
+rivt-lib
+  : a Python library for processing [rivt](https://rivt-code.net)
 
 DTerm 2
   : Definition 2a
   : Definition 2b
 
 
-\begin{gather*}
-a_1=b_1+c_1\\
-a_2=b_2+c_2-d_2+e_2
-\end{gather*}
-
-**rivt** is a markdown language for writing, organizing and sharing engineering
-documents. It emphasizes clarity, efficiency and access.
-[rivtlib](https://rivt-code.net) is a Python library for processing **rivt**.
-The minimum software needed to write **rivt** documents is Python 3.8, and
-other Python libraries including **rivtlib**. 
-
-[rivt-doc](/rdoc.md) is an open source editing and publishing framework
-using additional programs. All of the programs are open source. **rivt** works
-with single files and extensive reports with hundreds of files. Multi-file
-reports are organized in a tri-level folder structure explained
-[here](/rdoc.md#folders).
-
-<hr>
-
-## **rivt**
-<hr>
-
-A **rivt** file is a utf-8 Python file that includes the import statement: 
-
-<pre style="background:#e6ecdf;color:#000000">import rivtlib.rivtapi as rv</pre> 
-
-which exposes four API functions. Each function takes a triple quoted string as
-argument, which may include arbitrary text.
-
-<pre style="background: #cfdde2;color:#000000">
-============= ========== =================================
-API function   name           purpose
-============= ========== =================================
-rv.R(str)      rivtinit    repository and report settings
-rv.I(str)      insert      static text, images and tables
-rv.V(str)      values      equations
-rv.T(str)      tools       Python functions and scripts
-</pre>
-
-When running in an IDE (e.g. VSCode) the file may be executed interactively.
-Interactive output is formatted as utf-8 text for speed and compatiblility. API
-functions may be grouped and executed step-wise using the standard cell decorator:
-
-<pre style="background:#e6ecdf;color:#000000"># %%</pre>
-
-Complete document and report files are generated using the functions
-
-<pre style="background:#e6ecdf;color:#000000">rv.writemd() 
-rv.writepdf() </pre>
-
-which write output files in GitHub Flavored Markdown
-(GFM) and PDF formats respectively.
-
-<hr>
 
 ## **Python**
-<hr>
 
-Each API function defines a document section. The first line of each function
-includes a section label that converts to a section title, followed by section
-formatting parameters. The titles and section breaks may be suppressed by
-prepending a double hyphen.
+namespace
+  : a [name](https://en.wikipedia.org/wiki/Namespace) that provides a scope to the identifiers (the names of types, functions, variables, etc) inside it. Namespaces are used to organize code into logical groups and to prevent name collisions that can occur especially when your code base includes multiple libraries.
 
-The section body can contain any utf-8 text. Commands and tags applicable to
-each function are defined [here](/syntax.md#commands) and
-[here](/syntax.md#tags)
+rivt-doc
+  : an open source editing and publishing [framework](/rdoc.md)
 
+rivt-lib
+  : a Python library for processing [rivt](https://rivt-code.net)
 
-<pre style="background: #cfdde2; color: #000000">
-========== ========================================================
-  name                   API  function definition
-========== ========================================================
-
-rivtinit    rv.R("""label | toc; notoc, start page
-
-                rivt file settings and text
-
-                """)
-
-insert      rv.I("""label | background color  
-
-                Static tables, images and text
-
-                """)
-
-values      rv.V("""label | sub; nosub 
-
-                Equations and text
-                
-                """)
-
-tools       rv.T("""label | lines; nolines
-
-                Python code
-
-                """)
-
-exclude     rv.X("""any text
-
-                    Any function changed to X is not evaluated. Used for
-                    comments and debugging.
-
-                """)
-
-write-md    rv.writemd()
-        
-            writes markdown document file (default is a GitHub README.md)
-
-write-pdf   rv.writepdf()
-    
-            writes markdown and PDF document files
-</pre>
-
-File format conventions follow the Python formatter pep8 and linter ruff. API
-function names start in column one. All other content is indented 4 spaces
-to facilitate section folding, bookmarking and legibility. API functions can
-be written in any order and frequency except for *rivtinit*, which occurs only once
-as the initial function in the file.
-
-<hr>
-
-
-
-
+DTerm 2
+  : Definition 2a
+  : Definition 2b
