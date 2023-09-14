@@ -13,17 +13,17 @@ myst:
   table    { background:#dce8ef; color: #000000; }
 </style>
 
-#  {{ key3a }} Syntax
+#  {{ key3a }} **Syntax**
 
-**rivt** markup uses a syntax of commands and tags. Any text not defined with
-commands or tags is passed through as output. Commands and tags are processed
-in part by the *docutils* library using 
+**rivt** markup uses a syntax of commands for file operations and tags for text
+formatting. Any text not defined with commands or tags is passed through as
+output. Commands and tags are processed in part by the *docutils* library and 
 [restructuredText](https://docutils.sourceforge.io/docs/user/rst/quickref.html).
 
 
 <hr>
 
-## **commands**
+## Commands
 <hr>
 
 Commands read and write external files and are marked by double bars (||) at

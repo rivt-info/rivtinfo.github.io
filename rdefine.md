@@ -11,7 +11,7 @@ myst:
 
 
 
-# {{ key7 }} Definitions
+# {{ key7 }} **Definitions**
 
 \begin{gather*}
 a_1=b_1+c_1\\
@@ -19,19 +19,17 @@ a_2=b_2+c_2-d_2+e_2
 \end{gather*}
 
 
-## **rivt**
+## rivt
 
 [rivt](/syntax.md) 
-  <pre>
-  open source markdown language for writing, organizing and sharing
+  <pre>  open source markdown language for writing, organizing and sharing
   engineering documents</pre>
 [rivt-doc](/rdoc.md)
-  <pre>
-  open source editing and publishing framework for rivtlib
+  <pre>  open source editing and publishing framework for rivtlib
   Python library for processing</pre> 
 
 
-## **Python**
+## Python
 
 namespace 
   
