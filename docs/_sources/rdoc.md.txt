@@ -11,26 +11,9 @@ myst:
 
 #  {{ key3 }} **rivt-doc**
 
-- VS Code
-- Texlive 
-
 <hr>
 
-## installation
-<hr>
-
-- VSCode + extensions 
-- LaTeX 
-- Github account
-
-rivt-doc is available for every OS platform and installs either into a single
-portable folder via a zip file, or as a collection of system programs. It also
-runs in the cloud at **rivt-online** and may be installed on GitHub CodeSpaces
-or other cloud service providers.
-
-<hr>
-
-## folders
+## Folders
 <hr>
 
 <pre style="background:#cfdde2;color:#000000">
@@ -81,9 +64,10 @@ or other cloud service providers.
             └── data1.xls
 </pre>
 
+
 <hr>
 
-## VSCode
+## **VSCode**
 <hr>
 
 ### profiles
@@ -141,6 +125,20 @@ ctl+shift+x          post to remote
 
 ### command snippets
 
+
+<hr>
+
+## Installation
+<hr>
+
+- VSCode + extensions 
+- LaTeX 
+- Github account
+
+rivt-doc is available for every OS platform and installs either into a single
+portable folder via a zip file, or as a collection of system programs. It also
+runs in the cloud at **rivt-online** and may be installed on GitHub CodeSpaces
+or other cloud service providers.
 
 
 
