@@ -18,14 +18,34 @@ myst:
 ## rivt
 <hr>
 
+[**doc**](/syntax.md) 
+
+  <pre style="background:transparent;color:#000000"> open source markdown language for writing, organizing and sharing engineering documents</pre>
+
+[**division**](/syntax.md) 
+
+  <pre style="background:transparent;color:#000000"> open source markdown language for writing, organizing and sharing engineering documents</pre>
+
+[**report**](/syntax.md) 
+
+  <pre style="background:transparent;color:#000000"> open source markdown language for writing, organizing and sharing engineering documents</pre>
+
+[**section**](/syntax.md) 
+
+  <pre style="background:#cfdde2;color:#000000"> open source markdown language for writing, organizing and sharing engineering documents</pre>
+
 [**rivt**](/syntax.md) 
 
   <pre style="background:#cfdde2;color:#000000"> open source markdown language for writing, organizing and sharing engineering documents</pre>
 
 [**rivt-doc**](/rdoc.md)
 
-  <pre style="background:#cfdde2;color:#000000"> open source editing and
-  publishing framework for rivtlib Python library for processing</pre>
+  <pre style="background:#cfdde2;color:#000000">  open source editing and publishing framework for rivtlib Python library for processing</pre>
+
+[**rivtprivate**](/rdoc.md)
+
+  <pre style="background:#cfdde2;color:#000000"> open source editing and publishing framework for rivtlib Python library for processing</pre>
+
 
 
 <hr>
@@ -55,6 +75,10 @@ DTerm 2
   : Definition 2a
   
   : Definition 2b
+
+
+## GitHub
+
 
 
 \begin{gather*}
