@@ -18,3 +18,7 @@ a {
 a.underline {
     text-decoration: underline;
 }
+
+pre {
+    display: inline
+}

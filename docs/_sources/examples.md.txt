@@ -9,11 +9,11 @@ myst:
             ```
 ---
 
-#  {{ key2 }} Examples
+#  {{ key2 }} **Examples**
 
 <hr>
 
-## **Simple**
+## Simple
 <hr>
 
 <pre style="background:#e6ecdf;color:#000000">
@@ -308,7 +308,7 @@ some markdown
 
 <hr>
 
-## **Solar canopy**
+## Solar Canopy
 <hr>
 xyz
 
@@ -318,7 +318,7 @@ ccc
 
 <hr>
 
-## **Seismic Strengthening**
+## Seismic Strengthening
 <hr>
 
 xyz
