@@ -26,7 +26,7 @@ reports are organized in a tri-level folder structure explained
 
 <hr>
 
-## **rivt files**
+## Files
 <hr>
 
 A **rivt** file is a utf-8 Python file that includes the import statement: 
@@ -62,7 +62,7 @@ which write output files in GitHub Flavored Markdown
 
 <hr>
 
-## **API functions**
+## API Functions
 <hr>
 
 Each API function defines a document section. The first line of each function
