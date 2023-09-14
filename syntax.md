@@ -15,7 +15,7 @@ myst:
   table    { background:#dce8ef; color: #000000; }
 </style>
 
-#  {{ key3a }} **rivt-syntax**
+#  {{ key3a }} rivt-syntax
 
 **rivt** markup is based on
 [restructuredText](https://docutils.sourceforge.io/docs/user/rst/quickref.html)
@@ -24,7 +24,7 @@ defined with commands or tags is processed as plain text, formatted and output.
 
 <hr>
 
-## commands
+## **commands**
 <hr>
 
 Commands read and write external files and are marked by double bars (||) at
@@ -90,7 +90,7 @@ project.
 
 <hr>
 
-## tags
+## **tags**
 <hr>
 
 Line tags format a line of text and are denoted with *_[tag]*, typically at the
