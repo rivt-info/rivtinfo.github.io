@@ -9,6 +9,8 @@ myst:
             ```
 ---
 
+
+
 # {{ key7 }} Definitions
 
 \begin{gather*}
@@ -19,7 +21,7 @@ a_2=b_2+c_2-d_2+e_2
 
 ## **rivt**
 
-rivt
+<span style="background:#e6ecdf;color:#000000">rivt</span>
   
   : open source [markdown language](/syntax.md) for writing, organizing and sharing engineering documents
 
