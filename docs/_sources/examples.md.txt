@@ -318,7 +318,7 @@ ccc
 
 <hr>
 
-## **Seismic strengthening**
+## **Seismic Strengthening**
 <hr>
 
 xyz

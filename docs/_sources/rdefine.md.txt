@@ -11,7 +11,6 @@ myst:
 
 # {{ key7 }} Definitions
 
-
 ATerm *with Markdown*
   : Definition 
 

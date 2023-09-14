@@ -39,8 +39,8 @@ the folder organization is [here](rdoc.md#folders)
 ```{list-table}
 :header-rows: 1
 
-* - **command** 
-  - **API** 
+* - command 
+  - API 
 * - || [text](syntax.md#text) | relative path | rivt; plain                     
   - R I V
 * - || [init](syntax.md#init) | relative path

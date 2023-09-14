@@ -5,11 +5,12 @@
 
 --------------------------------------
 
-`rivt <rivt.html>`__ is an MIT license markdown language for writing,
+`rivt <rivt.html>`__ is an `MIT licensed
+<https://opensource.org/license/mit/>` markdown language for writing,
 organizing and sharing engineering documents.
 
-`rivtlib <https://rivt-code.net>`__ is an MIT license Python library for
-processing **rivt** files.
+**rivtlib** `[GitHub]<https://rivt-code.net>`__ is an MIT licensed Python
+library for processing **rivt** files.
 
 `rivt-doc <rdoc.html>`__ is an open source editing and publishing framework for
 **rivt**. 
