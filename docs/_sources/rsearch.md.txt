@@ -45,11 +45,9 @@ myst:
 
 Full text **rivt** document search across GitHub README files
 
-Enter search terms separated by a + sign
+Example: concrete+beam+bridge
 
-Example: concrete+beam+bridge  [**rivt** term is inserted by the search function]
-
-<input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: bold"><br>
+<input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal"><br>
 
 <button class="button" id="searchBtn" onclick="searchRivt()">Search [ Ctrl+Enter ]</button>
 <button class="button" id="clearBtn" onclick="clearRivt()">Clear [ Ctrl+R ]</button>
@@ -60,10 +58,10 @@ Example: concrete+beam+bridge  [**rivt** term is inserted by the search function
 
 Full text **rivt** document search across GitHub README files in Organizations
 
-<input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: bold"> Enter Organizations (commas separated)<br>
+<input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: normal"> Enter Organizations (comma separated)<br>
 
 
-<input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: bold"> Search Terms<br>
+<input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal"> Search Terms<br>
 
 <button class="button" id="searchBtn" onclick="searchOrg()">Search [ Ctrl+Enter ]</button>
 <button class="button" id="clearBtn" onclick="clearRivt()">Clear [ Ctrl+R ]</button>
