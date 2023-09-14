@@ -9,7 +9,7 @@ myst:
             ```
 ---
 
-:tocdepth: 2
+:tocdepth: 1
 
 #  {{ key3 }} **rivt-doc**
 

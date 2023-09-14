@@ -9,7 +9,7 @@ myst:
             ```
 ---
 
-:tocdepth: 2
+:tocdepth: 1
 
 <style type="text/css">
   table    { background:#dce8ef; color: #000000; }
