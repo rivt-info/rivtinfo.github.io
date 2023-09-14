@@ -13,23 +13,26 @@ myst:
 
 # {{ key7 }} **Definitions**
 
-\begin{gather*}
-a_1=b_1+c_1\\
-a_2=b_2+c_2-d_2+e_2
-\end{gather*}
-
+<hr>
 
 ## rivt
+<hr>
 
-[rivt](/syntax.md) 
-  <pre>  open source markdown language for writing, organizing and sharing
-  engineering documents</pre>
-[rivt-doc](/rdoc.md)
-  <pre>  open source editing and publishing framework for rivtlib
-  Python library for processing</pre> 
+[**rivt**](/syntax.md) 
 
+  <pre style="background:#cfdde2;color:#000000"> open source markdown language for writing, organizing and sharing engineering documents</pre>
+
+[**rivt-doc**](/rdoc.md)
+
+  <pre style="background:#cfdde2;color:#000000"> open source editing and
+  publishing framework for rivtlib Python library for processing</pre>
+
+
+<hr>
 
 ## Python
+
+<hr>
 
 namespace 
   
@@ -52,3 +55,9 @@ DTerm 2
   : Definition 2a
   
   : Definition 2b
+
+
+\begin{gather*}
+a_1=b_1+c_1\\
+a_2=b_2+c_2-d_2+e_2
+\end{gather*}
