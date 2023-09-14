@@ -1,6 +1,6 @@
 ---
 myst:
-    substitutions:
+  substitutions:
         "key1": |
             ```{image} _static/img/riv02.png
             :alt: rivt logo
@@ -9,7 +9,9 @@ myst:
             ```
 ---
 
-:tocdepth: 1
+```
+:tocdepth: 2
+```
 
 # {{ key1 }} rivt
 
