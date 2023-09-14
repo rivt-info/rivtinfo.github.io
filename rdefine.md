@@ -11,6 +11,27 @@ myst:
 
 # {{ key7 }} Definitions
 
+
+ATerm *with Markdown*
+  : Definition 
+
+BTerm 2
+  : Definition 2a
+  : Definition 2b
+  : Definition 2b
+CTerm 3
+  :     A code block
+
+DTerm 2
+  : Definition 2a
+  : Definition 2b
+
+
+\begin{gather*}
+a_1=b_1+c_1\\
+a_2=b_2+c_2-d_2+e_2
+\end{gather*}
+
 **rivt** is a markdown language for writing, organizing and sharing engineering
 documents. It emphasizes clarity, efficiency and access.
 [rivtlib](https://rivt-code.net) is a Python library for processing **rivt**.
