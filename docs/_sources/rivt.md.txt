@@ -14,8 +14,9 @@ myst:
 **rivt** is a markdown language for writing, organizing and sharing engineering
 documents. It emphasizes clarity, efficiency and access.
 [rivtlib](https://rivt-code.net) is a Python library for processing **rivt**.
-The minimum software needed to write **rivt** documents is Python 3.8, and
-other Python libraries including **rivtlib**. 
+It reads **rivt** files and outputs formatted documents in a serveral different
+formats. The minimum software needed to write **rivt** documents is Python 3.8,
+and other Python libraries including **rivtlib**.
 
 [rivt-doc](/rdoc.md) is an open source editing and publishing framework
 using additional programs. All of the programs are open source. **rivt** works
@@ -112,20 +113,20 @@ exclude     rv.X("""any text
 
 write-md    rv.writemd()
         
-            writes markdown document file (default is a GitHub README.md)
+            writes a markdown document file (default is a GitHub README.md)
 
 write-pdf   rv.writepdf()
     
-            writes markdown and PDF document files
+            writes a markdown and PDF document file
 </pre>
 
-File format conventions follow the Python formatter pep8 and linter ruff. API
-function names start in column one. All other content is indented 4 spaces
-to facilitate section folding, bookmarking and legibility. API functions can
-be written in any order and frequency except for *rivtinit*, which occurs only once
-as the initial function in the file.
+The API function names start in column one. All other content is indented 4
+spaces to facilitate section folding, bookmarking and legibility. API functions
+can be written in any order and frequency except for *rivtinit*, which occurs
+only once as the initial function in the file. A **rivt** file is a Python file
+that follows pep8 and ruff conventions.
 
-<hr>
+
 
 
 

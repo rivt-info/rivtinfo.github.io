@@ -13,12 +13,13 @@ myst:
   table    { background:#dce8ef; color: #000000; }
 </style>
 
-#  {{ key3a }} rivt-syntax
+#  {{ key3a }} rivt syntax
 
-**rivt** markup is based on
-[restructuredText](https://docutils.sourceforge.io/docs/user/rst/quickref.html)
-and includes arbitrary unicode, rivt commands and rivt tags. Any text not
-defined with commands or tags is processed as plain text, formatted and output.
+**rivt** markup uses a syntax of commands and tags. Any text not defined with
+commands or tags is passed through as output. Commands and tags are processed
+in part by the *docutils* library using 
+[restructuredText](https://docutils.sourceforge.io/docs/user/rst/quickref.html).
+
 
 <hr>
 
@@ -33,12 +34,12 @@ parenthesis.
 
 File locations are specified using shortened relative paths that include the
 name of the file and the name of its containing folder. Further information on
-the folder organization for a rivt project is [here](rdoc.md#folders)
+the folder organization is [here](rdoc.md#folders)
 
-```{list-table} Command Syntax
+```{list-table}
 :header-rows: 1
 
-* - **command syntax** 
+* - **command** 
   - **API** 
 * - || [text](syntax.md#text) | relative path | rivt; plain                     
   - R I V
@@ -57,8 +58,8 @@ the folder organization for a rivt project is [here](rdoc.md#folders)
 
 ### **text**
 
-The text command inserts and formats text from external files into the rivt
-file. Text files may be plain text or text with rivt tags.
+The text command inserts and formats text from external files. Text files may
+be plain text or text with rivt tags.
 
 ### **init**
 
@@ -95,43 +96,101 @@ Line tags format a line of text and are denoted with *_[tag]*, typically at the
 end of a line. The *=* and *:=* tags used in the Value method are unique
 exceptions. 
 
-<pre style="background:#dce8ef; color: #000000">
-============================ ================================= ==========
-   line tags                        description                   API
-============================ ================================ ===========
-text _[b]                       bold                            R I V 
-text _[c]                       center                          R I V  
-text _[i]                       italic                          R I V  
-text _[bc]                      bold center                     R I V  
-text _[bi]                      bold italic                     R I V
-text _[r]                       right justify                   R I V
-text _[u]                       underline                       R I V   
-text _[l]                       LaTeX math                        I V
-text _[s]                       sympy math                        I V
-text _[bs]                      bold sympy math                   I V
-text _[e]                       equation label, autonumber        I V
-text _[f]                       figure caption, autonumber        I V
-text _[t]                       table title, autonumber           I V
-text _[#]                       footnote, autonumber              I V
-text _[d]                       footnote description              I V
-_[page]                         new page                          I V
-_[address, label]               url or internal reference         I V
-a = 1.2 | unit, alt | descrip   declare =                           V
-a := b + c | unit, alt | n,n    assign :=                           V
-</pre>
+```{list-table} 
+:header-rows: 1
 
-Block tags format a text block and start a block with *_[[tag]]* and
-end with *_[[q]]*.
+* - line tags
+  - description
+  - API
+* - text _[b]
+  - bold
+  - R I V 
+* - text _[c]
+  - center
+  - R I V  
+* - text _[i]
+  - italic
+  - R I V  
+* - text _[bc]
+  - bold center
+  - R I V  
+* - text _[bi]
+  - bold italic
+  - R I V
+* - text _[r]
+  - right justify
+  - R I V
+* - text _[u]
+  - underline
+  - R I V   
+* - text _[l]
+  - LaTeX math
+  - I V
+* - text _[s]
+  - sympy math
+  - I V
+* - text _[bs]
+  - bold sympy math
+  - I V
+* - text _[e]
+  - equation label, autonumber
+  - I V
+* - text _[f]
+  - figure caption, autonumber
+  - I V
+* - text _[t]
+  - table title, autonumber
+  - I V
+* - text _[#]
+  - footnote, autonumber
+  - I V
+* - text _[d]
+  - footnote description
+  - I V
+* - _[page]
+  - new page
+  - I V
+* - _[address, label]
+  - url or internal reference
+  - I V
+* - a = 1.2 | unit, alt | descrip
+  - declare =
+  - V
+* - a := b + c | unit, alt | n,n
+  - assign :=
+  - V
+```
 
-<pre style="background:#dce8ef; color: #000000">
-============================ ================================ ==========
-   block tags                        description                 API
-============================ ================================ ==========
-_[[b]]                          bold                            R I V
-_[[c]]                          center                          R I V
-_[[i]]                          italic                          R I V
-_[[p]]                          plain                           R I V
-_[[q]]                          quit block                      R I V
-_[[l]]                          LaTeX                             I V
-</pre>
+Block tags start a text block with *_[[tag]]* and end with *_[[q]]*.
 
+```{list-table} 
+:header-rows: 1
+
+* - block tags
+  - description
+  - API
+
+* - _[[b]]
+  - bold
+  - R I V
+
+* - _[[c]]
+  - center
+  - R I V
+
+* - _[[i]]
+  - italic
+  - R I V
+
+* - _[[p]]
+  - plain
+  - R I V
+
+* - _[[q]]
+  - quit block
+  - R I V
+
+* - _[[l]]
+  - LaTeX
+  - I V
+```

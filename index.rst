@@ -8,10 +8,10 @@ ver. 0.1.01
 engineering documents. `rivtlib <https://rivt-code.net>`_ is a Python library
 for processing **rivt** files.
 
-`rivt-doc <rivt-doc.html>`__ is an editing and publishing framework for
+`rivt-doc <rdoc.html>`__ is an editing and publishing framework for
 **rivt**. The programs are open source.
 
-`rivt-search <rivt-search.html>`_ is a web interface for finding relevant rivt
+`rivt-search <rsearch.html>`_ is a web interface for finding relevant rivt
 files on GitHub 
 
 -------------------------------------
@@ -26,7 +26,8 @@ files on GitHub
    rdoc.md
    tools.md
    online.md
-   search.md
+   rsearch.md
+   rglossary.md
 
    
 

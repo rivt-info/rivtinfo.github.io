@@ -1,7 +1,7 @@
 ---
 myst:
   substitutions:
-        "key1": |
+        "key7": |
             ```{image} _static/img/riv02.png
             :alt: rivt logo
             :target: /rivt.html#syntax
@@ -9,14 +9,13 @@ myst:
             ```
 ---
 
-# {{ key1 }} rivt
+# {{ key7 }} Glossary
 
 **rivt** is a markdown language for writing, organizing and sharing engineering
 documents. It emphasizes clarity, efficiency and access.
 [rivtlib](https://rivt-code.net) is a Python library for processing **rivt**.
-It reads **rivt** files and outputs formatted documents in a serveral different
-formats. The minimum software needed to write **rivt** documents is Python 3.8,
-and other Python libraries including **rivtlib**.
+The minimum software needed to write **rivt** documents is Python 3.8, and
+other Python libraries including **rivtlib**. 
 
 [rivt-doc](/rdoc.md) is an open source editing and publishing framework
 using additional programs. All of the programs are open source. **rivt** works
@@ -113,20 +112,20 @@ exclude     rv.X("""any text
 
 write-md    rv.writemd()
         
-            writes a markdown document file (default is a GitHub README.md)
+            writes markdown document file (default is a GitHub README.md)
 
 write-pdf   rv.writepdf()
     
-            writes a markdown and PDF document file
+            writes markdown and PDF document files
 </pre>
 
-The API function names start in column one. All other content is indented 4
-spaces to facilitate section folding, bookmarking and legibility. API functions
-can be written in any order and frequency except for *rivtinit*, which occurs
-only once as the initial function in the file. A **rivt** file is a Python file
-that follows pep8 and ruff conventions.
+File format conventions follow the Python formatter pep8 and linter ruff. API
+function names start in column one. All other content is indented 4 spaces
+to facilitate section folding, bookmarking and legibility. API functions can
+be written in any order and frequency except for *rivtinit*, which occurs only once
+as the initial function in the file.
 
-
+<hr>
 
 
 

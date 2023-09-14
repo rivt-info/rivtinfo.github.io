@@ -9,11 +9,11 @@ myst:
             ```
 ---
 
-#  {{ key2 }} **rivt Examples**
+#  {{ key2 }} rivt examples
 
 <hr>
 
-## Toy Example
+## *simple*
 <hr>
 
 <pre style="background:#e6ecdf;color:#000000">
@@ -308,7 +308,7 @@ some markdown
 
 <hr>
 
-## solar canopy
+## **solar canopy**
 <hr>
 xyz
 
@@ -318,7 +318,7 @@ ccc
 
 <hr>
 
-## seismic strengthening
+## **seismic strengthening**
 <hr>
 
 xyz
@@ -328,5 +328,5 @@ xyz
 ccc
 <hr>
 
-## replit (interactive)
+## **replit (interactive)**
 <hr>
