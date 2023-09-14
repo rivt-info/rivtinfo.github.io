@@ -49,7 +49,7 @@
         <div id="main-content" role="main">
           
   <section id="rivt-search">
-<h1><a class="reference external" href="https://github.com/search"><img alt="rivt-search logo" src="_images/search01.png" style="width: 50px;" /></a> <strong>rivt-search</strong><a class="headerlink" href="#rivt-search" title="Link to this heading">¶</a></h1>
+<h1><a class="reference external" href="https://github.com/search"><img alt="rivt-search logo" src="_images/search01.png" style="width: 60px;" /></a> <strong>rivt-search</strong><a class="headerlink" href="#rivt-search" title="Link to this heading">¶</a></h1>
 <head>
 <style>
 .button {
@@ -69,26 +69,29 @@
 </script>
 <script> function searchOrg(){var strng1 = document.getElementById("terms");var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 13) && e.ctrlKey){document.getElementById("searchBtn").click();}});
 </script>
+<script> function clearRivt(){var strng1 = document.getElementById("terms");var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 82) && e.ctrlKey){document.getElementById("clearBtn").click();}});
+</script>
 </head>
 <hr>
 <section id="github">
-<h2>GitHub<a class="headerlink" href="#github" title="Link to this heading">¶</a></h2>
+<h2><strong>GitHub</strong><a class="headerlink" href="#github" title="Link to this heading">¶</a></h2>
 <hr>
-<p>Full text <strong>rivt</strong> document search across README files</p>
+<p>Full text <strong>rivt</strong> document search across GitHub README files</p>
 <p>Enter search terms separated by a + sign</p>
 <p>Example: concrete+beam+bridge  [<strong>rivt</strong> term is inserted by the search function]</p>
 <p><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: bold"><br></p>
-<p>[ctrl+R or F5] to clear search terms</p>
-<p><button class="button" id="searchBtn" onclick="searchRivt()">Search [ ctrl+enter ]</button></p>
+<p><button class="button" id="searchBtn" onclick="searchRivt()">Search [ Ctrl+Enter ]</button>
+<button class="button" id="clearBtn" onclick="clearRivt()">Clear [ Ctrl+R ]</button></p>
 <hr>
 </section>
-<section id="github-organization">
-<h2>GitHub Organization<a class="headerlink" href="#github-organization" title="Link to this heading">¶</a></h2>
+<section id="github-organizations">
+<h2><strong>GitHub Organizations</strong><a class="headerlink" href="#github-organizations" title="Link to this heading">¶</a></h2>
 <hr>
-<p>Search within a GitHub organization</p>
-<p><input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: bold"> Enter Organization<br></p>
+<p>Full text <strong>rivt</strong> document search across GitHub README files in Organizations</p>
+<p><input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: bold"> Enter Organizations (commas separated)<br></p>
 <p><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: bold"> Search Terms<br></p>
-<p><button class="button" id="searchBtn" onclick="searchOrg()">Search [ ctrl+enter ]</button></p>
+<p><button class="button" id="searchBtn" onclick="searchOrg()">Search [ Ctrl+Enter ]</button>
+<button class="button" id="clearBtn" onclick="clearRivt()">Clear [ Ctrl+R ]</button></p>
 </section>
 </section>
 
@@ -111,6 +114,11 @@
   
   
     <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="rdefine.html"> Definitions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rdefine.html#rivt"><strong>rivt</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="rdefine.html#python"><strong>Python</strong></a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="rivt.html"> rivt</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="rivt.html#rivt-files"><strong>rivt files</strong></a></li>
 <li class="toctree-l2"><a class="reference internal" href="rivt.html#api-functions"><strong>API functions</strong></a></li>
@@ -127,6 +135,11 @@
 <li class="toctree-l2"><a class="reference internal" href="examples.html#seismic-strengthening"><strong>Seismic Strengthening</strong></a></li>
 </ul>
 </li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"> <strong>rivt-search</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#github"><strong>GitHub</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#github-organizations"><strong>GitHub Organizations</strong></a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="rdoc.html"> <strong>rivt-doc</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="rdoc.html#installation">installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="rdoc.html#folders">folders</a></li>
@@ -141,16 +154,6 @@
 <li class="toctree-l1"><a class="reference internal" href="online.html"> <strong>rivt-online</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="online.html#rivt-installation">rivt installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="online.html#vscode-profiles">VSCode profiles</a></li>
-</ul>
-</li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#"> <strong>rivt-search</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#github">GitHub</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#github-organization">GitHub Organization</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="rdefine.html"> Definitions</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="rdefine.html#rivt"><strong>rivt</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="rdefine.html#python"><strong>Python</strong></a></li>
 </ul>
 </li>
 </ul>

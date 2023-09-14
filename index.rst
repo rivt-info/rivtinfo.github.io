@@ -23,14 +23,15 @@ files on GitHub.
    :maxdepth: 2
    :hidden:
    
+   rdefine.md
    rivt.md
    syntax.md
    examples.md
+   rsearch.md
    rdoc.md
    tools.md
    online.md
-   rsearch.md
-   rdefine.md
+
 
    
 

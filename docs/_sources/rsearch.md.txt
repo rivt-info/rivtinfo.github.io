@@ -5,7 +5,7 @@ myst:
             ```{image} _static/img/search01.png
             :alt: rivt-search logo
             :target: https://github.com/search
-            :width: 50px
+            :width: 60px
             ```
 ---
 
@@ -33,14 +33,17 @@ myst:
 <script> function searchOrg(){var strng1 = document.getElementById("terms");var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 13) && e.ctrlKey){document.getElementById("searchBtn").click();}});
 </script>
 
+<script> function clearRivt(){var strng1 = document.getElementById("terms");var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 82) && e.ctrlKey){document.getElementById("clearBtn").click();}});
+</script>
+
 </head>
 
 <hr>
 
-## GitHub
+## **GitHub**
 <hr>
 
-Full text **rivt** document search across README files
+Full text **rivt** document search across GitHub README files
 
 Enter search terms separated by a + sign
 
@@ -48,22 +51,20 @@ Example: concrete+beam+bridge  [**rivt** term is inserted by the search function
 
 <input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: bold"><br>
 
-[ctrl+R or F5] to clear search terms
-
-<button class="button" id="searchBtn" onclick="searchRivt()">Search [ ctrl+enter ]</button>
-
+<button class="button" id="searchBtn" onclick="searchRivt()">Search [ Ctrl+Enter ]</button>
+<button class="button" id="clearBtn" onclick="clearRivt()">Clear [ Ctrl+R ]</button>
 <hr>
 
-## GitHub Organization
+## **GitHub Organizations**
 <hr>
 
-Search within a GitHub organization
+Full text **rivt** document search across GitHub README files in Organizations
 
-<input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: bold"> Enter Organization<br>
+<input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: bold"> Enter Organizations (commas separated)<br>
 
 
 <input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: bold"> Search Terms<br>
 
-<button class="button" id="searchBtn" onclick="searchOrg()">Search [ ctrl+enter ]</button>
-
+<button class="button" id="searchBtn" onclick="searchOrg()">Search [ Ctrl+Enter ]</button>
+<button class="button" id="clearBtn" onclick="clearRivt()">Clear [ Ctrl+R ]</button>
 
