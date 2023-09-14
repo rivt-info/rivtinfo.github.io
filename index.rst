@@ -17,7 +17,7 @@ files on GitHub
 -------------------------------------
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 3
    :hidden:
    
    rivt.md

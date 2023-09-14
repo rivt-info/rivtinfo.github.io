@@ -9,6 +9,8 @@ myst:
             ```
 ---
 
+:tocdepth: 2
+
 <style type="text/css">
   table    { background:#dce8ef; color: #000000; }
 </style>
@@ -66,7 +68,7 @@ The init command specifies the name of the configuration file which is read
 from the rivt-doc folder. Report formatting can be easily modified by
 specifying a different init file.
 
-### **append
+### **append**
 
 The append command attaches PDF files to the end of the doc.
 
