@@ -9,10 +9,6 @@ myst:
             ```
 ---
 
-```
-:tocdepth: 2
-```
-
 #  {{ key3 }} **rivt-doc**
 
 - VS Code

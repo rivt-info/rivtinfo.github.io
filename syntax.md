@@ -9,10 +9,6 @@ myst:
             ```
 ---
 
-```
-:tocdepth: 2
-```
-
 <style type="text/css">
   table    { background:#dce8ef; color: #000000; }
 </style>
