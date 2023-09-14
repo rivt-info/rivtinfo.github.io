@@ -9,7 +9,7 @@ myst:
             ```
 ---
 
-# {{ key7 }} Glossary
+# {{ key7 }} Definitions
 
 **rivt** is a markdown language for writing, organizing and sharing engineering
 documents. It emphasizes clarity, efficiency and access.
@@ -25,7 +25,7 @@ reports are organized in a tri-level folder structure explained
 
 <hr>
 
-## **rivt files**
+## **rivt**
 <hr>
 
 A **rivt** file is a utf-8 Python file that includes the import statement: 
@@ -61,7 +61,7 @@ which write output files in GitHub Flavored Markdown
 
 <hr>
 
-## **API functions**
+## **Python**
 <hr>
 
 Each API function defines a document section. The first line of each function

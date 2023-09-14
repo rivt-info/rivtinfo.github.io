@@ -13,7 +13,7 @@ myst:
 
 <hr>
 
-## *simple*
+## **Simple**
 <hr>
 
 <pre style="background:#e6ecdf;color:#000000">
@@ -308,7 +308,7 @@ some markdown
 
 <hr>
 
-## **solar canopy**
+## **Solar canopy**
 <hr>
 xyz
 
@@ -318,7 +318,7 @@ ccc
 
 <hr>
 
-## **seismic strengthening**
+## **Seismic strengthening**
 <hr>
 
 xyz
@@ -326,7 +326,3 @@ xyz
 ### text output
 
 ccc
-<hr>
-
-## **replit (interactive)**
-<hr>

@@ -1,6 +1,7 @@
 **rivt User Manual**
 =====================
-ver. 0.1.01
+
+**write | organize | share**
 
 --------------------------------------
 
@@ -27,7 +28,7 @@ files on GitHub
    tools.md
    online.md
    rsearch.md
-   rglossary.md
+   rdefine.md
 
    
 

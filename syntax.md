@@ -112,10 +112,10 @@ exceptions.
   - italic
   - R I V  
 * - text _[bc]
-  - bold center
+  - bold-center
   - R I V  
 * - text _[bi]
-  - bold italic
+  - bold-italic
   - R I V
 * - text _[r]
   - right justify
@@ -130,7 +130,7 @@ exceptions.
   - sympy math
   - I V
 * - text _[bs]
-  - bold sympy math
+  - bold-sympy math
   - I V
 * - text _[e]
   - equation label, autonumber
