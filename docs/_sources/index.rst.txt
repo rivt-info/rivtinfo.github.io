@@ -17,16 +17,16 @@ files on GitHub
 -------------------------------------
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :hidden:
    
    rivt.md
-   rivt-syntax.md
+   syntax.md
    examples.md
-   rivt-doc.md
-   rivt-tools.md
-   rivt-online.md
-   rivt-search.md
+   rdoc.md
+   tools.md
+   online.md
+   search.md
 
    
 

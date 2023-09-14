@@ -49,17 +49,17 @@
         <div id="main-content" role="main">
           
   <section id="rivt">
-<h1><a class="reference external" href="/rivt.html#rivt-syntax"><img alt="rivt logo" src="_images/riv02.png" style="width: 50px;" /></a>  <strong>rivt</strong><a class="headerlink" href="#rivt" title="Link to this heading">¶</a></h1>
+<h1><a class="reference external" href="/rivt.html#syntax"><img alt="rivt logo" src="_images/riv02.png" style="width: 50px;" /></a>  <strong>rivt</strong><a class="headerlink" href="#rivt" title="Link to this heading">¶</a></h1>
 <p><strong>rivt</strong> is a markdown language for writing, organizing and sharing engineering
 documents. It emphasizes clarity, efficiency and access.
 <a class="reference external" href="https://rivt-code.net">rivtlib</a> is a Python library for processing <strong>rivt</strong>.
 The minimum software needed to write <strong>rivt</strong> documents is Python 3.8, and
 other Python libraries including <strong>rivtlib</strong>.</p>
-<p><a class="reference internal" href="rivt-doc.html"><span class="std std-doc">rivt-doc</span></a> is an open source editing and publishing framework
+<p><a class="reference internal" href="rdoc.html"><span class="std std-doc">rivt-doc</span></a> is an open source editing and publishing framework
 using additional programs. All of the programs are open source. <strong>rivt</strong> works
 with single files and extensive reports with hundreds of files. Multi-file
 reports are organized in a tri-level folder structure explained
-<a class="reference internal" href="rivt-doc.html#folder-structure"><span class="std std-ref">here</span></a>.</p>
+<a class="reference internal" href="rdoc.html#folder-structure"><span class="std std-ref">here</span></a>.</p>
 <hr>
 <section id="rivt-files">
 <h2>rivt Files<a class="headerlink" href="#rivt-files" title="Link to this heading">¶</a></h2>
@@ -96,8 +96,8 @@ includes a section label that converts to a section title, followed by section
 formatting parameters. The titles and section breaks may be suppressed by
 prepending a double hyphen.</p>
 <p>The section body can contain any utf-8 text. Commands and tags applicable to
-each function are defined <a class="reference internal" href="rivt-syntax.html#commands"><span class="std std-ref">here</span></a> and
-<a class="reference internal" href="rivt-syntax.html#tags"><span class="std std-ref">here</span></a></p>
+each function are defined <a class="reference internal" href="syntax.html#commands"><span class="std std-ref">here</span></a> and
+<a class="reference internal" href="syntax.html#tags"><span class="std std-ref">here</span></a></p>
 <pre style="background: #cfdde2; color: #000000">
 ========== ========================================================
   name                   API  function definition
@@ -175,9 +175,17 @@ as the initial function in the file.</p>
 <li class="toctree-l2"><a class="reference internal" href="#api-functions">API Functions</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="rivt-syntax.html"> <strong>rivt-syntax</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="rivt-syntax.html#commands">commands</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rivt-syntax.html#tags">tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="syntax.html"> <strong>rivt-syntax</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="syntax.html#commands">commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="syntax.html#text">text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="syntax.html#init">init</a></li>
+<li class="toctree-l3"><a class="reference internal" href="syntax.html#append-command">append command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="syntax.html#image-command">image command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="syntax.html#table-command">table command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="syntax.html#declare-command">declare command</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="syntax.html#tags">tags</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="examples.html"> <strong>rivt Examples</strong></a><ul>
@@ -198,39 +206,35 @@ as the initial function in the file.</p>
 <li class="toctree-l2"><a class="reference internal" href="examples.html#replit-interactive">replit (interactive)</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="rivt-doc.html"> <strong>rivt-doc</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="rivt-doc.html#installation">installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rivt-doc.html#folder-structure">folder structure</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rivt-doc.html#vscode">VSCode</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="rivt-doc.html#profiles">profiles</a></li>
-<li class="toctree-l3"><a class="reference internal" href="rivt-doc.html#shortcuts">shortcuts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="rivt-doc.html#snippets">snippets</a></li>
-<li class="toctree-l3"><a class="reference internal" href="rivt-doc.html#command-snippets">command snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rdoc.html"> <strong>rivt-doc</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rdoc.html#installation">installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rdoc.html#folder-structure">folder structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rdoc.html#vscode">VSCode</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="rdoc.html#profiles">profiles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdoc.html#shortcuts">shortcuts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdoc.html#snippets">snippets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdoc.html#command-snippets">command snippets</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="rivt-tools.html"> <strong>rivt-tools</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="rivt-tools.html#rivt-installation">rivt installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rivt-tools.html#vscode-profiles">VSCode profiles</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="rivt-tools.html#api-function-snippets">API function snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools.html"> <strong>rivt-tools</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tools.html#rivt-installation">rivt installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools.html#vscode-profiles">VSCode profiles</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tools.html#api-function-snippets">API function snippets</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="rivt-online.html"> <strong>rivt-online</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="rivt-online.html#rivt-installation">rivt installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rivt-online.html#vscode-profiles">VSCode profiles</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="rivt-online.html#api-function-snippets">API function snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="online.html"> <strong>rivt-online</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="online.html#rivt-installation">rivt installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="online.html#vscode-profiles">VSCode profiles</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="online.html#api-function-snippets">API function snippets</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="rivt-search.html"> <strong>rivt-search</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="rivt-search.html#github">GitHub</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rivt-search.html#github-organization">GitHub Organization</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="search.html">Search Page</a></li>
 </ul>
 
   

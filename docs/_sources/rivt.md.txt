@@ -4,7 +4,7 @@ myst:
         "key1": |
             ```{image} _static/img/riv02.png
             :alt: rivt logo
-            :target: /rivt.html#rivt-syntax
+            :target: /rivt.html#syntax
             :width: 50px
             ```
 ---
@@ -17,11 +17,11 @@ documents. It emphasizes clarity, efficiency and access.
 The minimum software needed to write **rivt** documents is Python 3.8, and
 other Python libraries including **rivtlib**. 
 
-[rivt-doc](/rivt-doc.md) is an open source editing and publishing framework
+[rivt-doc](/rdoc.md) is an open source editing and publishing framework
 using additional programs. All of the programs are open source. **rivt** works
 with single files and extensive reports with hundreds of files. Multi-file
 reports are organized in a tri-level folder structure explained
-[here](/rivt-doc.md#folder-structure).
+[here](/rdoc.md#folder-structure).
 
 <hr>
 
@@ -70,8 +70,8 @@ formatting parameters. The titles and section breaks may be suppressed by
 prepending a double hyphen.
 
 The section body can contain any utf-8 text. Commands and tags applicable to
-each function are defined [here](/rivt-syntax.md#commands) and
-[here](/rivt-syntax.md#tags)
+each function are defined [here](/syntax.md#commands) and
+[here](/syntax.md#tags)
 
 
 <pre style="background: #cfdde2; color: #000000">

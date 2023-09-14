@@ -4,18 +4,21 @@ myst:
         "key3a": |
             ```{image} _static/img/riv02.png
             :alt: rivt logo
-            :target: https://github.com/rivt-doc.html
+            :target: https://github.com/docs.html
             :width: 50px
             ```
 ---
+
+<style type="text/css">
+  table    { background:#dce8ef; color: #000000; }
+</style>
 
 #  {{ key3a }} **rivt-syntax**
 
 **rivt** markup is based on
 [restructuredText](https://docutils.sourceforge.io/docs/user/rst/quickref.html).
 and includes arbitrary unicode text, rivt commands and rivt tags. Any text that
-is not part of the defined syntax is processed as plain text, formatted and
-output.
+is not defined syntax is processed as plain text, formatted and output.
 
 <hr>
 
@@ -23,30 +26,48 @@ output.
 <hr>
 
 Commands read or write external files and are marked by double bars (||) at the
-beginning of a line. Command parameters are separated by single bars (|). In the summary
+beginning of a line. Command parameters are separated by a single bar (|). In the summary
 below, parameter options are separated with semi-colons, parameter list
 elements are separated with commas and optoins are in parenthesis.
 
-```{list-table} example
+```{list-table} Command Syntax
 :header-rows: 1
-:name: test
+:name: commands
 
-* - [command syntax](rivt-syntax.md#tags)                                          
-  - API 
-* - || text | rel file path | rivt; plain                     
+* - **command syntax** 
+  - **API** 
+* - || [text](syntax.md#text) | relative path | rivt; plain                     
   - R I V
+* - || [init](syntax.md#init) | relative path
+  - R
+* - || append | relative path | cover.pdf
+  - R
+* - || image  | relative path, (2nd path) | width, (width)
+  - I
+* - || table  | relative path | max col width, align
+  - I
+* - || declare | relative path |  print; noprint
+  - V
 ```
 
 
-|| init | rel file path,                                      R
+### text 
+sadfasdf
 
-|| append | rel file path,                                    R
+### init
+asdfasfadfs
 
-|| image  | rel file path \, (2nd image) | width \, (width),      I
+### append command
+asdfasfasdfasdf
 
-|| table  | rel file path | max col width \, align,             I
+### image command
 
-|| declare | rel file path |  print; noprint,                 V
+
+### table command
+
+
+### declare command
+
 
 
 <hr>
