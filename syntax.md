@@ -5,7 +5,7 @@ myst:
             ```{image} _static/img/riv02.png
             :alt: rivt logo
             :target: https://github.com/docs.html
-            :width: 50px
+            :width: 60px
             ```
 ---
 
@@ -16,23 +16,27 @@ myst:
 #  {{ key3a }} **rivt-syntax**
 
 **rivt** markup is based on
-[restructuredText](https://docutils.sourceforge.io/docs/user/rst/quickref.html).
-and includes arbitrary unicode text, rivt commands and rivt tags. Any text that
-is not defined syntax is processed as plain text, formatted and output.
+[restructuredText](https://docutils.sourceforge.io/docs/user/rst/quickref.html)
+and includes arbitrary unicode, rivt commands and rivt tags. Any text not
+defined with commands or tags is processed as plain text, formatted and output.
 
 <hr>
 
 ## commands
 <hr>
 
-Commands read or write external files and are marked by double bars (||) at the
-beginning of a line. Command parameters are separated by a single bar (|). In the summary
-below, parameter options are separated with semi-colons, parameter list
-elements are separated with commas and optoins are in parenthesis.
+Commands read and write external files and are marked by double bars (||) at
+the beginning of a line. Command parameters are separated by a single bar (|).
+In the summary below parameter options are separated with semi-colons,
+parameter list elements are separated with commas, and options are in
+parenthesis.
+
+File locations are specified using shortened relative paths that include the
+name of the file and the name of its containing folder. Further information on
+the folder organization for a rivt project is [here](rdoc.md#folders)
 
 ```{list-table} Command Syntax
 :header-rows: 1
-:name: commands
 
 * - **command syntax** 
   - **API** 
@@ -40,33 +44,45 @@ elements are separated with commas and optoins are in parenthesis.
   - R I V
 * - || [init](syntax.md#init) | relative path
   - R
-* - || append | relative path | cover.pdf
+* - || [append](syntax.md#append) | relative path | cover.pdf
   - R
-* - || image  | relative path, (2nd path) | width, (width)
+* - || [image](syntax.md#image)  | relative path, (2nd path) | width, (width)
   - I
-* - || table  | relative path | max col width, align
+* - || [table](syntax.md#table)  | relative path | max col width, align
   - I
-* - || declare | relative path |  print; noprint
+* - || [declare](syntax.md#declare) | relative path |  print; noprint
   - V
 ```
 
 
-### text 
-sadfasdf
+### **text**
 
-### init
-asdfasfadfs
+The text command inserts and formats text from external files into the rivt
+file. Text files may be plain text or text with rivt tags.
 
-### append command
-asdfasfasdfasdf
+### **init**
 
-### image command
+The init command specifies the name of the configuration file which is read
+from the rivt-doc folder. Report formatting can be easily modified by
+specifying a different init file.
 
+### **append
 
-### table command
+The append command attaches PDF files to the end of the doc.
 
+### **image**
 
-### declare command
+The image command inserts and formats image data from png or jpg files.
+
+### **table**
+
+The table command inserts and formats tabular data from csv or xls files.
+
+### **declare**
+
+The declare command imports values from a csv file written by rivt when
+processing assigned and declared values from another doc in the same
+project.
 
 
 

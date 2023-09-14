@@ -29,7 +29,7 @@ the cloud using GitHub CodeSpaces or other cloud service providers.
 
 <hr>
 
-## folder structure
+## folders
 <hr>
 
 <pre style="background:#cfdde2;color:#000000">

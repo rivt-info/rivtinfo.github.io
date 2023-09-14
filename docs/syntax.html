@@ -52,19 +52,23 @@
   table    { background:#dce8ef; color: #000000; }
 </style>
 <section id="rivt-syntax">
-<h1><a class="reference external" href="https://github.com/docs.html"><img alt="rivt logo" src="_images/riv02.png" style="width: 50px;" /></a> <strong>rivt-syntax</strong><a class="headerlink" href="#rivt-syntax" title="Link to this heading">¶</a></h1>
+<h1><a class="reference external" href="https://github.com/docs.html"><img alt="rivt logo" src="_images/riv02.png" style="width: 60px;" /></a> <strong>rivt-syntax</strong><a class="headerlink" href="#rivt-syntax" title="Link to this heading">¶</a></h1>
 <p><strong>rivt</strong> markup is based on
-<a class="reference external" href="https://docutils.sourceforge.io/docs/user/rst/quickref.html">restructuredText</a>.
-and includes arbitrary unicode text, rivt commands and rivt tags. Any text that
-is not defined syntax is processed as plain text, formatted and output.</p>
+<a class="reference external" href="https://docutils.sourceforge.io/docs/user/rst/quickref.html">restructuredText</a>
+and includes arbitrary unicode, rivt commands and rivt tags. Any text not
+defined with commands or tags is processed as plain text, formatted and output.</p>
 <hr>
 <section id="commands">
 <h2>commands<a class="headerlink" href="#commands" title="Link to this heading">¶</a></h2>
 <hr>
-<p>Commands read or write external files and are marked by double bars (||) at the
-beginning of a line. Command parameters are separated by a single bar (|). In the summary
-below, parameter options are separated with semi-colons, parameter list
-elements are separated with commas and optoins are in parenthesis.</p>
+<p>Commands read and write external files and are marked by double bars (||) at
+the beginning of a line. Command parameters are separated by a single bar (|).
+In the summary below parameter options are separated with semi-colons,
+parameter list elements are separated with commas, and options are in
+parenthesis.</p>
+<p>File locations are specified using shortened relative paths that include the
+name of the file and the name of its containing folder. Further information on
+the folder organization for a rivt project is <a class="reference internal" href="rdoc.html#folders"><span class="std std-ref">here</span></a></p>
 <table class="docutils align-default" id="id1">
 <caption><span class="caption-text">Command Syntax</span><a class="headerlink" href="#id1" title="Link to this table">¶</a></caption>
 <thead>
@@ -79,40 +83,48 @@ elements are separated with commas and optoins are in parenthesis.</p>
 <tr class="row-odd"><td><p>|| <a class="reference internal" href="#init"><span class="std std-ref">init</span></a> | relative path</p></td>
 <td><p>R</p></td>
 </tr>
-<tr class="row-even"><td><p>|| append | relative path | cover.pdf</p></td>
+<tr class="row-even"><td><p>|| <a class="reference internal" href="#append"><span class="std std-ref">append</span></a> | relative path | cover.pdf</p></td>
 <td><p>R</p></td>
 </tr>
-<tr class="row-odd"><td><p>|| image  | relative path, (2nd path) | width, (width)</p></td>
+<tr class="row-odd"><td><p>|| <a class="reference internal" href="#image"><span class="std std-ref">image</span></a>  | relative path, (2nd path) | width, (width)</p></td>
 <td><p>I</p></td>
 </tr>
-<tr class="row-even"><td><p>|| table  | relative path | max col width, align</p></td>
+<tr class="row-even"><td><p>|| <a class="reference internal" href="#table"><span class="std std-ref">table</span></a>  | relative path | max col width, align</p></td>
 <td><p>I</p></td>
 </tr>
-<tr class="row-odd"><td><p>|| declare | relative path |  print; noprint</p></td>
+<tr class="row-odd"><td><p>|| <a class="reference internal" href="#declare"><span class="std std-ref">declare</span></a> | relative path |  print; noprint</p></td>
 <td><p>V</p></td>
 </tr>
 </tbody>
 </table>
 <section id="text">
-<h3>text<a class="headerlink" href="#text" title="Link to this heading">¶</a></h3>
-<p>sadfasdf</p>
+<h3><strong>text</strong><a class="headerlink" href="#text" title="Link to this heading">¶</a></h3>
+<p>The text command inserts and formats text from external files into the rivt
+file. Text files may be plain text or text with rivt tags.</p>
 </section>
 <section id="init">
-<h3>init<a class="headerlink" href="#init" title="Link to this heading">¶</a></h3>
-<p>asdfasfadfs</p>
+<h3><strong>init</strong><a class="headerlink" href="#init" title="Link to this heading">¶</a></h3>
+<p>The init command specifies the name of the configuration file which is read
+from the rivt-doc folder. Report formatting can be easily modified by
+specifying a different init file.</p>
 </section>
-<section id="append-command">
-<h3>append command<a class="headerlink" href="#append-command" title="Link to this heading">¶</a></h3>
-<p>asdfasfasdfasdf</p>
+<section id="append">
+<h3>**append<a class="headerlink" href="#append" title="Link to this heading">¶</a></h3>
+<p>The append command attaches PDF files to the end of the doc.</p>
 </section>
-<section id="image-command">
-<h3>image command<a class="headerlink" href="#image-command" title="Link to this heading">¶</a></h3>
+<section id="image">
+<h3><strong>image</strong><a class="headerlink" href="#image" title="Link to this heading">¶</a></h3>
+<p>The image command inserts and formats image data from png or jpg files.</p>
 </section>
-<section id="table-command">
-<h3>table command<a class="headerlink" href="#table-command" title="Link to this heading">¶</a></h3>
+<section id="table">
+<h3><strong>table</strong><a class="headerlink" href="#table" title="Link to this heading">¶</a></h3>
+<p>The table command inserts and formats tabular data from csv or xls files.</p>
 </section>
-<section id="declare-command">
-<h3>declare command<a class="headerlink" href="#declare-command" title="Link to this heading">¶</a></h3>
+<section id="declare">
+<h3><strong>declare</strong><a class="headerlink" href="#declare" title="Link to this heading">¶</a></h3>
+<p>The declare command imports values from a csv file written by rivt when
+processing assigned and declared values from another doc in the same
+project.</p>
 <hr>
 </section>
 </section>
@@ -182,18 +194,18 @@ _[[l]]                          LaTeX                             I V
   
     <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="rivt.html">  <strong>rivt</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="rivt.html#rivt-files">rivt Files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rivt.html#api-functions">API Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rivt.html#rivt-files">rivt files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rivt.html#api-functions">API functions</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#"> <strong>rivt-syntax</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#commands">commands</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#text">text</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#init">init</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#append-command">append command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#image-command">image command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#table-command">table command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#declare-command">declare command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#text"><strong>text</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#init"><strong>init</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#append">**append</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#image"><strong>image</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#table"><strong>table</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#declare"><strong>declare</strong></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#tags">tags</a></li>
@@ -219,7 +231,7 @@ _[[l]]                          LaTeX                             I V
 </li>
 <li class="toctree-l1"><a class="reference internal" href="rdoc.html"> <strong>rivt-doc</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="rdoc.html#installation">installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rdoc.html#folder-structure">folder structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rdoc.html#folders">folders</a></li>
 <li class="toctree-l2"><a class="reference internal" href="rdoc.html#vscode">VSCode</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="rdoc.html#profiles">profiles</a></li>
 <li class="toctree-l3"><a class="reference internal" href="rdoc.html#shortcuts">shortcuts</a></li>

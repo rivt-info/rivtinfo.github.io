@@ -5,7 +5,7 @@ myst:
             ```{image} _static/img/riv02.png
             :alt: rivt logo
             :target: /rivt.html#syntax
-            :width: 50px
+            :width: 60px
             ```
 ---
 
@@ -21,11 +21,11 @@ other Python libraries including **rivtlib**.
 using additional programs. All of the programs are open source. **rivt** works
 with single files and extensive reports with hundreds of files. Multi-file
 reports are organized in a tri-level folder structure explained
-[here](/rdoc.md#folder-structure).
+[here](/rdoc.md#folders).
 
 <hr>
 
-## rivt Files
+## rivt files
 <hr>
 
 A **rivt** file is a utf-8 Python file that includes the import statement: 
@@ -61,7 +61,7 @@ which write output files in GitHub Flavored Markdown
 
 <hr>
 
-## API Functions
+## API functions
 <hr>
 
 Each API function defines a document section. The first line of each function
