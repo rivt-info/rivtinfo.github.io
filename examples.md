@@ -23,6 +23,7 @@ myst:
   pre code {
     background:#e6ecdf;
     color:#000000;
+    white-space:pre-wrap;
   }
 
 </style>
