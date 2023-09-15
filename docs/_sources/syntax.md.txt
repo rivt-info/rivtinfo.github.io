@@ -33,8 +33,8 @@ parameter list elements are separated with commas, and options are in
 parenthesis.
 
 File locations are specified using shortened relative paths that include the
-name of the file and the name of its containing folder. Further information on
-the folder organization is [here](rdoc.md#folders)
+name of the file and the name of its containing folder. Folder organization is
+described [here](rivt.md#folders)
 
 ```{list-table}
 :header-rows: 1

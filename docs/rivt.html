@@ -66,7 +66,7 @@ and other Python libraries including <strong>rivtlib</strong>.</p>
 using additional programs. All of the programs are open source. <strong>rivt</strong> works
 with single files and extensive reports with hundreds of files. Multi-file
 reports are organized in a tri-level folder structure explained
-<a class="reference internal" href="rdoc.html#folders"><span class="std std-ref">here</span></a>.</p>
+<a class="reference internal" href="#folders">here</a>.</p>
 <hr>
 <section id="files">
 <h2>Files<a class="headerlink" href="#files" title="Link to this heading">¶</a></h2>
@@ -168,6 +168,58 @@ spaces to facilitate section folding, bookmarking and legibility. API functions
 can be written in any order and frequency except for <em>rivtinit</em>, which occurs
 only once as the initial function in the file. A <strong>rivt</strong> file is a Python file
 that follows pep8 and ruff conventions.</p>
+<hr>
+</section>
+<section id="folders">
+<h2>Folders<a class="headerlink" href="#folders" title="Link to this heading">¶</a></h2>
+<hr>
+<pre style="background:#cfdde2;color:#000000">
+[rivt]-Report-Label/               
+    ├── .git
+    ├── units.py                        (inputs: unit over-ride)
+    ├── README.md                       (outputs: toc and summary) 
+    ├── rivt01.ini                      (inputs: config file)
+    ├── [doc0101]-div-label/            (division label)
+        ├── [data0101]/                     (inputs: data files)
+            ├── data1.csv                   
+            ├── paper1.pdf
+            └── functions1.py                   
+        ├── [rivt]-doc-label1.py            (input: rivt file)
+        └── README.md                       (output: GFM doc)
+    ├── [doc0102]/                      (division file)
+        ├── data[0102]/                     (inputs: data files)
+            ├── data1.csv
+            ├── fig1.png
+            └── fig2.png
+        ├── [rivt]-doc-label2.py            (input: rivt file)
+        └── README.md                       (output: GFM doc)
+    ├── [doc0201]-div-label/            (division label)
+        ├── [data0201]/                     (inputs: data files)
+            ├── data1.csv
+            ├── attachment.pdf
+            ├── functions.py
+            └── fig1.png
+        └── README.md                       (outputs: GFM doc)
+    └── [private]/                      (private files)
+        ├── [temp]/                         (outputs: temp files)
+        ├── [report]/                       (report files)
+            ├── 0101-Doc Label1.pdf         (outputs: PDF docs)
+            ├── 0102-Doc Label2.pdf
+            ├── 0201-Doc Label3.pdf
+            └── Report Label.pdf            
+        ├── images/                         (inputs: optional data folders ...)
+            ├── fig1.png
+            └── fig2.png
+        ├── text/    
+            ├── text1.txt
+            └── text2.txt
+        ├── append/    
+            ├── report1.pdf
+            └── report2.pdf
+        └── tables/
+            ├── data1.csv
+            └── data1.xls
+</pre>
 </section>
 </section>
 
@@ -193,6 +245,7 @@ that follows pep8 and ruff conventions.</p>
 <li class="toctree-l1 current"><a class="current reference internal" href="#"> <strong>rivt</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#files">Files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#api-functions">API Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#folders">Folders</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="syntax.html"> <strong>Syntax</strong></a><ul>
@@ -212,8 +265,8 @@ that follows pep8 and ruff conventions.</p>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="rdoc.html"> <strong>rivt-doc</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="rdoc.html#folders">Folders</a></li>
 <li class="toctree-l2"><a class="reference internal" href="rdoc.html#vscode"><strong>VSCode</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="rdoc.html#github">GitHub</a></li>
 <li class="toctree-l2"><a class="reference internal" href="rdoc.html#installation">Installation</a></li>
 </ul>
 </li>

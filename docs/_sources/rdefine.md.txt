@@ -83,7 +83,7 @@ DTerm 2
 
 ## GitHub
 
-\begin{gather*}
-a_1=b_1+c_1\\
-a_2=b_2+c_2-d_2+e_2
-\end{gather*}
+repository
+
+repo
+
