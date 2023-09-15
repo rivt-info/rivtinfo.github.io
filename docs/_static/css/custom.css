@@ -14,6 +14,7 @@ a {
     font-weight: normal;
 }
 
-a:hover {
+
+a.underline {
     text-decoration: underline
 }
