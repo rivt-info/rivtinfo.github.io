@@ -14,11 +14,3 @@ a {
     font-weight: normal;
 
 }
-
-a.underline {
-    text-decoration: underline;
-}
-
-pre {
-    display: inline
-}

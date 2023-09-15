@@ -9,6 +9,13 @@ myst:
             ```
 ---
 
+<style>
+  pre {
+    background: #e6ecdf;
+    color:#000000;
+  }
+</style>
+
 # {{ key1 }} **rivt**
 
 **rivt** is a markdown language for writing, organizing and sharing engineering
@@ -31,7 +38,7 @@ reports are organized in a tri-level folder structure explained
 
 A **rivt** file is a utf-8 Python file that includes the import statement: 
 
-<pre style="background:#e6ecdf;color:#000000">import rivtlib.rivtapi as rv</pre> 
+<pre>import rivtlib.rivtapi as rv</pre> 
 
 which exposes four API functions. Each function takes a triple quoted string as
 argument, which may include arbitrary text.
@@ -50,11 +57,11 @@ When running in an IDE (e.g. VSCode) the file may be executed interactively.
 Interactive output is formatted as utf-8 text for speed and compatiblility. API
 functions may be grouped and executed step-wise using the standard cell decorator:
 
-<pre style="background:#e6ecdf;color:#000000"># %%</pre>
+<pre># %%</pre>
 
 Complete document and report files are generated using the functions
 
-<pre style="background:#e6ecdf;color:#000000">rv.writemd() 
+<pre>rv.writemd() 
 rv.writepdf() </pre>
 
 which write output files in GitHub Flavored Markdown

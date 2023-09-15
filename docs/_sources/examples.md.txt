@@ -16,7 +16,14 @@ myst:
 ## Simple
 <hr>
 
-<pre style="background:#e6ecdf;color:#000000">
+<style>
+  pre {
+    background: #e6ecdf;
+    color:#000000;
+  }
+</style>
+
+<pre>
 import rivt.rivtapi as rv
 
 rv.R("""Introduction | notoc, 1
@@ -157,7 +164,7 @@ rv.X("""any text
 
 ### text output
 
-<pre style="background: #e6ecdf;color:#000000">
+<pre>
 
 import rivt.rivtapi as rv
 

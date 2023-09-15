@@ -8,8 +8,12 @@ myst:
             :width: 60px
             ```
 ---
-
-
+<style>
+  code {
+    background: transparent;
+    color:#000000;
+  }
+</style>
 
 # {{ key7 }} **Definitions**
 
@@ -20,31 +24,31 @@ myst:
 
 [**doc**](/syntax.md) 
 
-  <pre style="background:transparent;color:#000000"> open source markdown language for writing, organizing and sharing engineering documents</pre>
+  <code> open source markdown language for writing, organizing and sharing engineering documents</code>
 
 [**division**](/syntax.md) 
 
-  <pre style="background:transparent;color:#000000"> open source markdown language for writing, organizing and sharing engineering documents</pre>
+  <code> open source markdown language for writing, organizing and sharing engineering documents</code>
 
 [**report**](/syntax.md) 
 
-  <pre style="background:transparent;color:#000000"> open source markdown language for writing, organizing and sharing engineering documents</pre>
+  <code> open source markdown language for writing, organizing and sharing engineering documents</pre>
 
 [**section**](/syntax.md) 
 
-  <pre style="background:#cfdde2;color:#000000"> open source markdown language for writing, organizing and sharing engineering documents</pre>
+  <code>  open source markdown language for writing, organizing and sharing engineering documents</code>
 
 [**rivt**](/syntax.md) 
 
-  <pre style="background:#cfdde2;color:#000000"> open source markdown language for writing, organizing and sharing engineering documents</pre>
+  <code> open source markdown language for writing, organizing and sharing engineering documents</code>
 
 [**rivt-doc**](/rdoc.md)
 
-  <pre style="background:#cfdde2;color:#000000">  open source editing and publishing framework for rivtlib Python library for processing</pre>
+  <code>  open source editing and publishing framework for rivtlib Python library for processing xxxxxxxxxxx asefasfda sadlfkas fsaf sadlkfjs dfsldj sdflkjsd fsf sadlkmjs dfasdflkjsa asd fa  </code>
 
 [**rivtprivate**](/rdoc.md)
 
-  <pre style="background:#cfdde2;color:#000000"> open source editing and publishing framework for rivtlib Python library for processing</pre>
+  <code> open source editing and publishing framework for rivtlib Python library for processing</code>
 
 
 
