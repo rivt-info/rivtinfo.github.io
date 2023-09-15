@@ -49,7 +49,7 @@ Example: solar+steel+frame
 <button class="button" id="clearBtn" onclick="clearRivt()">Clear [ Ctrl+R ]</button>
 <hr>
 
-## **Organizations**
+## Organizations
 <hr>
 
 Full text **rivt** document search across GitHub README files in Organizations
@@ -62,6 +62,6 @@ Full text **rivt** document search across GitHub README files in Organizations
 <button class="button" id="searchBtn" onclick="searchOrg()">Search [ Ctrl+Enter ]</button>
 <button class="button" id="clearBtn" onclick="clearRivt()">Clear [ Ctrl+R ]</button>
 
-## **Search Tips**
+## Search Tips
 
 Some text.

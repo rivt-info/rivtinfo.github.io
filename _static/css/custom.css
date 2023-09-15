@@ -10,7 +10,7 @@ img.align-center {
 
 a {
     color: #005580;
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: normal;
 }
 

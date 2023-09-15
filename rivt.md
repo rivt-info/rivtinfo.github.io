@@ -16,7 +16,7 @@ myst:
   }
 </style>
 
-# {{ key1 }} **rivt**
+# {{ key1 }} [**rivt**](#rdefine)
 
 **rivt** is a markdown language for writing, organizing and sharing engineering
 documents. It emphasizes clarity, efficiency and access.
