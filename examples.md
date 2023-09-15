@@ -9,6 +9,25 @@ myst:
             ```
 ---
 
+<style>
+  code {
+    background: #e6ecdf;
+    color:#000000;
+  }
+
+  pre {
+    background:#cfdde2;
+    color:#000000;
+  }
+
+  pre code {
+    background:#e6ecdf;
+    display: block;
+    color:#000000;
+    padding: 15px;
+  }
+</style>
+
 #  {{ key2 }} **Examples**
 
 <hr>
@@ -16,14 +35,9 @@ myst:
 ## Simple
 <hr>
 
-<style>
-  pre {
-    background: #e6ecdf;
-    color:#000000;
-  }
-</style>
 
 <pre>
+<code>
 import rivt.rivtapi as rv
 
 rv.R("""Introduction | notoc, 1
@@ -124,43 +138,9 @@ rv.V("""The Values method |  sub; nosub
     project.
 
     """)
-
-rv.T("""The Tools method | color 
-
-    # The Tools method processes Python code in the rivt namespace and prints
-    # the code and result of any print statement in the doc. New functions 
-    # may be written explicitly or imported from other files. Line comments 
-    # are printed. Triple quotes cannot be used. Use raw strings instead.
-    
-    # Four Python libraries, if installed, are imported by rivt and available as: 
-    # pyplot -> plt
-    # numpy -> np
-    # pandas -> pd
-    # sympy -> sy
-    
-    # Python code:
-    
-    def f1(x,y): z = x + y
-        print(z)
-        return Z
-
-    with open('file.csv', 'r') as f: 
-        input = f.readlines()
-    
-    var = range(10)
-    with open('fileout.csv', 'w') as f: 
-        f.write(var)
-        
-    """)
-
-rv.X("""any text
-
-    Changing a function to X skips evaluation of that function and may be used
-    for review comments and debugging.
-
-    """) 
+ 
+</code>
 </pre>
-
 
 ### text output
 

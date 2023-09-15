@@ -19,6 +19,12 @@ myst:
     background:#cfdde2;
     color:#000000;
   }
+
+    pre code {
+    background: #e6ecdf;
+    display: block;
+    color:#000000;
+  }
 </style>
 
 # {{ key1 }} [**rivt**](#rdefine)
