@@ -10,7 +10,10 @@ img.align-center {
 
 a {
     color: #005580;
-    text-decoration: underline;
+    text-decoration: none;
     font-weight: normal;
+}
 
+a:hover {
+    text-decoration: underline
 }
