@@ -22,10 +22,9 @@ myst:
 
   pre code {
     background:#e6ecdf;
-    display: block;
     color:#000000;
-    padding: 15px;
   }
+
 </style>
 
 #  {{ key2 }} **Examples**
@@ -35,8 +34,7 @@ myst:
 ## Simple
 <hr>
 
-
-<pre>
+<pre style="background:#e6ecdf">
 <code>
 import rivt.rivtapi as rv
 
@@ -138,7 +136,6 @@ rv.V("""The Values method |  sub; nosub
     project.
 
     """)
- 
 </code>
 </pre>
 
