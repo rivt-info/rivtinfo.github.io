@@ -31,16 +31,14 @@ myst:
 
 **rivt** is a markdown language for writing, organizing and sharing engineering
 documents. It emphasizes clarity, efficiency and access.
-[rivtlib](https://rivt-code.net) is a Python library for processing **rivt**.
-It reads **rivt** files and outputs formatted documents in a serveral different
-formats. The minimum software needed to write **rivt** documents is Python 3.8,
-and other Python libraries including **rivtlib**.
+[rivtlib](https://rivt-code.net) is a Python library for processing rivt.
+From a rivt file it outputs formatted documents in a serveral different
+formats. The minimum software needed to write rivt documents is Python 3.8
+with Python science libraries, including **rivtlib**.
 
-[rivt-doc](/rdoc.md) is an open source editing and publishing framework
-using additional programs. All of the programs are open source. **rivt** works
-with single files and extensive reports with hundreds of files. Multi-file
-reports are organized in a tri-level folder structure explained
-[here](#folders).
+[rivt-doc](/rdoc.md) is an editing and publishing framework for rivt
+using additional open source programs. **rivt** works
+with single files, and with extensive reports using hundreds of files. 
 
 <hr>
 
@@ -104,7 +102,8 @@ insert        rv.I("""label | background color
 
 values        rv.V("""label | sub; nosub 
 
-                  Equations and text that are evaluated, formatted and output to the terminal.
+                  Equations and text that are evaluated, formatted and output
+                  to the terminal.
                 
                 """)
 
@@ -156,29 +155,30 @@ that follows pep8 and ruff conventions.
 <pre>
 [rivt]-Report-Label/               
     ├── .git
-    ├── units.py                        (inputs: unit over-ride)
-    ├── README.md                       (outputs: toc and summary) 
-    ├── rivt01.ini                      (inputs: config file)
-    ├── [doc0101]-div-label/            (division label)
+    ├── units.py                        (input: unit over-ride)
+    ├── README.md                       (output: toc and summary) 
+    ├── rivt01.ini                      (input: config file)
+    ├── [doc0101]-div-label/            (first division - first file)
         ├── [data0101]/                     (inputs: data files)
             ├── data1.csv                   
             ├── paper1.pdf
             └── functions1.py                   
         ├── [rivt]-doc-label1.py            (input: rivt file)
         └── README.md                       (output: GFM doc)
-    ├── [doc0102]/                      (division file)
+    ├── [doc0102]/                      (first division - second file)
         ├── data[0102]/                     (inputs: data files)
             ├── data1.csv
             ├── fig1.png
             └── fig2.png
         ├── [rivt]-doc-label2.py            (input: rivt file)
         └── README.md                       (output: GFM doc)
-    ├── [doc0201]-div-label/            (division label)
+    ├── [doc0201]-div-label/            (second division - first file)
         ├── [data0201]/                     (inputs: data files)
             ├── data1.csv
             ├── attachment.pdf
             ├── functions.py
             └── fig1.png
+        ├── [rivt]-doc-label3.py            (input: rivt file)
         └── README.md                       (outputs: GFM doc)
     └── [private]/                      (private files)
         ├── [temp]/                         (outputs: temp files)
@@ -187,7 +187,7 @@ that follows pep8 and ruff conventions.
             ├── 0102-Doc Label2.pdf
             ├── 0201-Doc Label3.pdf
             └── Report Label.pdf            
-        ├── images/                         (inputs: optional data folders ...)
+        ├── images/                         (inputs: optional private data)
             ├── fig1.png
             └── fig2.png
         ├── text/    

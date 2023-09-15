@@ -64,4 +64,8 @@ Full text **rivt** document search across GitHub README files in Organizations
 
 ## Search Tips
 
-Some text.
+- The GitHub search interface is [here](https://github.com/search).
+
+- GitHub README searches only index the root directory README. The rivt function <code> rv.readme() </code> writes every README in a project into the root README so rivt projects on GitHub can be fully searched.
+
+- The rivt search box automatically adds the rivt search term.
