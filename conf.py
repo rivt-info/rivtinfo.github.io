@@ -19,7 +19,7 @@ myst_enable_extensions = ['substitution', 'deflist', 'html_image', 'amsmath']
 myst_heading_anchors = 3
 
 extensions = ['myst_parser', 'sphinx.ext.githubpages',
-              "sphinxcontrib.jquery", ]
+              "sphinxcontrib.jquery", 'sphinx_copybutton']
 
 source_suffix = ['.rst', '.md']
 
