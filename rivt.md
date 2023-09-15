@@ -47,7 +47,7 @@ reports are organized in a tri-level folder structure explained
 ## Files
 <hr>
 
-A **rivt** file is a utf-8 Python file that includes the import statement:
+A **rivt** file is a utf-8 Python file that includes the import statement
 <code>import rivtlib.rivtapi as rv</code> which exposes four API functions.
 Each function takes a triple quoted string as argument, which may include
 arbitrary text.

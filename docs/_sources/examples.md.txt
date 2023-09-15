@@ -16,7 +16,7 @@ myst:
   }
 
   pre {
-    background:#cfdde2;
+    background: #e6ecdf;
     color:#000000;
   }
 
@@ -25,7 +25,6 @@ myst:
     color:#000000;
     white-space:pre-wrap;
   }
-
 </style>
 
 #  {{ key2 }} **Examples**
@@ -35,8 +34,10 @@ myst:
 ## Simple
 <hr>
 
-<pre style="background:#e6ecdf">
-<code>
+```{code-block}
+:linenos:
+:emphasize-lines: 5,15,20
+
 import rivt.rivtapi as rv
 
 rv.R("""Introduction | notoc, 1
@@ -67,7 +68,6 @@ rv.R("""Introduction | notoc, 1
     || append | append/report1.pdf
     || append | append/report2.pdf
 
-    
     """)
 
 rv.I("""The Insert method | default 
@@ -137,12 +137,12 @@ rv.V("""The Values method |  sub; nosub
     project.
 
     """)
-</code>
-</pre>
+```
+
 
 ### text output
 
-<pre>
+<pre style="background: #cfdde2; color: #000000">
 
 import rivt.rivtapi as rv
 
