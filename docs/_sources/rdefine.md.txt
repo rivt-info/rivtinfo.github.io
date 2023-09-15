@@ -32,7 +32,7 @@ myst:
 
 [**report**](/syntax.md) 
 
-  <code> open source markdown language for writing, organizing and sharing engineering documents</pre>
+  <code> open source markdown language for writing, organizing and sharing engineering documents asdfasf sdflkjsadf sd fsaedlfk fsadlf sa</code>
 
 [**section**](/syntax.md) 
 
@@ -44,7 +44,7 @@ myst:
 
 [**rivt-doc**](/rdoc.md)
 
-  <code>  open source editing and publishing framework for rivtlib Python library for processing xxxxxxxxxxx asefasfda sadlfkas fsaf sadlkfjs dfsldj sdflkjsd fsf sadlkmjs dfasdflkjsa asd fa  </code>
+  <code>  open source editing and publishing framework for rivtlib Python library for processing xxxxxxxxxxx asefasfda sadlfkas fsaf sadlkfjs dfsldj sdflkjsd fsf sadlkmjs dfasdflkjsa asd fa </code>
 
 [**rivtprivate**](/rdoc.md)
 
