@@ -73,105 +73,105 @@
 <section id="simple">
 <h2>Simple<a class="headerlink" href="#simple" title="Link to this heading">¶</a></h2>
 <hr>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">import</span> <span class="nn">rivt.rivtapi</span> <span class="k">as</span> <span class="nn">rv</span>
-<span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="n">rv</span><span class="o">.</span><span class="n">R</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Introduction | notoc, 1</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="linenos"> 1</span>    <span class="kn">import</span> <span class="nn">rivt.rivtapi</span> <span class="k">as</span> <span class="nn">rv</span>
+</span><span class="linenos"> 2</span>
+<span class="linenos"> 3</span>    <span class="n">rv</span><span class="o">.</span><span class="n">R</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Introduction | notoc, 1</span>
 <span class="linenos"> 4</span>
-<span class="hll"><span class="linenos"> 5</span><span class="s2">    The Repo method (short for repository and report) is the first method of a</span>
-</span><span class="linenos"> 6</span><span class="s2">    rivt file which specifies document configuration settings.</span>
+<span class="linenos"> 5</span><span class="s2">        The Repo method (short for repository and report) is the first method of a</span>
+<span class="linenos"> 6</span><span class="s2">        rivt file which specifies document configuration settings.</span>
 <span class="linenos"> 7</span>
-<span class="linenos"> 8</span><span class="s2">    The first line of any method is the heading line, which starts a new</span>
-<span class="linenos"> 9</span><span class="s2">    document section. If the section heading is preceded by two dashes (--) it</span>
-<span class="linenos">10</span><span class="s2">    becomes a section reference and a new section is not started. The toc</span>
-<span class="linenos">11</span><span class="s2">    parameter specifies whether a document table of contents is generated (not</span>
-<span class="linenos">12</span><span class="s2">    to be confused with a report table of contents). The page number is the</span>
-<span class="linenos">13</span><span class="s2">    starting page number for the doc when processed as a stand alone document.</span>
+<span class="linenos"> 8</span><span class="s2">        The first line of any method is the heading line, which starts a new</span>
+<span class="linenos"> 9</span><span class="s2">        document section. If the section heading is preceded by two dashes (--) it</span>
+<span class="linenos">10</span><span class="s2">        becomes a section reference and a new section is not started. The toc</span>
+<span class="linenos">11</span><span class="s2">        parameter specifies whether a document table of contents is generated (not</span>
+<span class="linenos">12</span><span class="s2">        to be confused with a report table of contents). The page number is the</span>
+<span class="linenos">13</span><span class="s2">        starting page number for the doc when processed as a stand alone document.</span>
 <span class="linenos">14</span>
-<span class="hll"><span class="linenos">15</span><span class="s2">    The init command specifies the name of the configuration file which is read</span>
-</span><span class="linenos">16</span><span class="s2">    from the rivt-doc folder. Report formatting can be easily modified by</span>
-<span class="linenos">17</span><span class="s2">    specifying a different init file.</span>
+<span class="linenos">15</span><span class="s2">        The init command specifies the name of the configuration file which is read</span>
+<span class="linenos">16</span><span class="s2">        from the rivt-doc folder. Report formatting can be easily modified by</span>
+<span class="linenos">17</span><span class="s2">        specifying a different init file.</span>
 <span class="linenos">18</span>
-<span class="linenos">19</span><span class="s2">    ||init | rivt01.ini</span>
-<span class="hll"><span class="linenos">20</span>
-</span><span class="linenos">21</span><span class="s2">    The text command inserts text from an external file. Text files may be</span>
-<span class="linenos">22</span><span class="s2">    plain text or include rivt tags.</span>
+<span class="linenos">19</span><span class="s2">        ||init | rivt01.ini</span>
+<span class="linenos">20</span>
+<span class="linenos">21</span><span class="s2">        The text command inserts text from an external file. Text files may be</span>
+<span class="linenos">22</span><span class="s2">        plain text or include rivt tags.</span>
 <span class="linenos">23</span>
-<span class="linenos">24</span><span class="s2">    ||text | private/text/proj.txt | plain</span>
-<span class="linenos">25</span><span class="s2">    </span>
-<span class="linenos">26</span><span class="s2">    The append command attaches PDF files to the end of the doc.</span>
+<span class="linenos">24</span><span class="s2">        ||text | private/text/proj.txt | plain</span>
+<span class="linenos">25</span><span class="s2">        </span>
+<span class="linenos">26</span><span class="s2">        The append command attaches PDF files to the end of the doc.</span>
 <span class="linenos">27</span>
-<span class="linenos">28</span><span class="s2">    || append | append/report1.pdf</span>
-<span class="linenos">29</span><span class="s2">    || append | append/report2.pdf</span>
+<span class="linenos">28</span><span class="s2">        || append | append/report1.pdf</span>
+<span class="linenos">29</span><span class="s2">        || append | append/report2.pdf</span>
 <span class="linenos">30</span>
-<span class="linenos">31</span><span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+<span class="linenos">31</span><span class="s2">        &quot;&quot;&quot;</span><span class="p">)</span>
 <span class="linenos">32</span>
-<span class="linenos">33</span><span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;The Insert method | default </span>
-<span class="linenos">34</span>
-<span class="linenos">35</span><span class="s2">    The Insert method formats static information e.g. images and text. The</span>
-<span class="linenos">36</span><span class="s2">    color command specifies a background color for the section.</span>
+<span class="hll"><span class="linenos">33</span>    <span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;The Insert method | default </span>
+</span><span class="linenos">34</span>
+<span class="linenos">35</span><span class="s2">        The Insert method formats static information e.g. images and text. The</span>
+<span class="linenos">36</span><span class="s2">        color command specifies a background color for the section.</span>
 <span class="linenos">37</span>
-<span class="linenos">38</span><span class="s2">    The text command inserts and formats text from external files into the</span>
-<span class="linenos">39</span><span class="s2">    rivt file. Text files may be plain text or text with rivt tags.</span>
+<span class="linenos">38</span><span class="s2">        The text command inserts and formats text from external files into the</span>
+<span class="linenos">39</span><span class="s2">        rivt file. Text files may be plain text or text with rivt tags.</span>
 <span class="linenos">40</span>
-<span class="linenos">41</span><span class="s2">    ||text | data0101/describe.txt | rivt     </span>
+<span class="linenos">41</span><span class="s2">        ||text | data0101/describe.txt | rivt     </span>
 <span class="linenos">42</span>
-<span class="linenos">43</span><span class="s2">    The table command inserts and formats tabular data from csv or xls files.</span>
-<span class="linenos">44</span><span class="s2">    </span>
-<span class="linenos">45</span><span class="s2">    The _[t] tag formats and autonumbers table titles.</span>
+<span class="linenos">43</span><span class="s2">        The table command inserts and formats tabular data from csv or xls files.</span>
+<span class="linenos">44</span><span class="s2">        </span>
+<span class="linenos">45</span><span class="s2">        The _[t] tag formats and autonumbers table titles.</span>
 <span class="linenos">46</span>
-<span class="linenos">47</span><span class="s2">    A table title  _[t]</span>
-<span class="linenos">48</span><span class="s2">    || table | data0101/file.csv | 60,r</span>
+<span class="linenos">47</span><span class="s2">        A table title  _[t]</span>
+<span class="linenos">48</span><span class="s2">        || table | data0101/file.csv | 60,r</span>
 <span class="linenos">49</span>
-<span class="linenos">50</span><span class="s2">    The image command inserts and formats image data from png or jpg files.</span>
+<span class="linenos">50</span><span class="s2">        The image command inserts and formats image data from png or jpg files.</span>
 <span class="linenos">51</span>
-<span class="linenos">52</span><span class="s2">    The _[f] tag formats and autonumbers figures.</span>
-<span class="linenos">53</span><span class="s2">        </span>
-<span class="linenos">54</span><span class="s2">    A figure caption _[f]</span>
-<span class="linenos">55</span><span class="s2">    || image | data0101/f1.png | 50</span>
+<span class="linenos">52</span><span class="s2">        The _[f] tag formats and autonumbers figures.</span>
+<span class="linenos">53</span><span class="s2">            </span>
+<span class="linenos">54</span><span class="s2">        A figure caption _[f]</span>
+<span class="linenos">55</span><span class="s2">        || image | data0101/f1.png | 50</span>
 <span class="linenos">56</span>
-<span class="linenos">57</span><span class="s2">    Two images may be placed side by side as follows:</span>
+<span class="linenos">57</span><span class="s2">        Two images may be placed side by side as follows:</span>
 <span class="linenos">58</span>
-<span class="linenos">59</span><span class="s2">    The first figure caption  _[f]</span>
-<span class="linenos">60</span><span class="s2">    The second figure caption  _[f]</span>
-<span class="linenos">61</span><span class="s2">    || image | private/image/f2.png, private/image/f3.png | 45,35</span>
-<span class="linenos">62</span><span class="s2">    </span>
-<span class="linenos">63</span><span class="s2">    The tags _[x] and _[s] format LaTeX and sympy equations:</span>
+<span class="linenos">59</span><span class="s2">        The first figure caption  _[f]</span>
+<span class="linenos">60</span><span class="s2">        The second figure caption  _[f]</span>
+<span class="linenos">61</span><span class="s2">        || image | private/image/f2.png, private/image/f3.png | 45,35</span>
+<span class="linenos">62</span><span class="s2">        </span>
+<span class="linenos">63</span><span class="s2">        The tags _[x] and _[s] format LaTeX and sympy equations:</span>
 <span class="linenos">64</span>
-<span class="linenos">65</span><span class="s2">    \gamma = </span><span class="se">\f</span><span class="s2">rac</span><span class="si">{5}</span><span class="s2">{x+y} + 3  _[x] </span>
+<span class="linenos">65</span><span class="s2">        \gamma = </span><span class="se">\f</span><span class="s2">rac</span><span class="si">{5}</span><span class="s2">{x+y} + 3  _[x] </span>
 <span class="linenos">66</span>
-<span class="linenos">67</span><span class="s2">    x = 32 + (y/2)  _[s]</span>
+<span class="linenos">67</span><span class="s2">        x = 32 + (y/2)  _[s]</span>
 <span class="linenos">68</span>
-<span class="linenos">69</span><span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+<span class="linenos">69</span><span class="s2">        &quot;&quot;&quot;</span><span class="p">)</span>
 <span class="linenos">70</span>
-<span class="linenos">71</span><span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;The Values method |  sub; nosub </span>
-<span class="linenos">72</span>
-<span class="linenos">73</span><span class="s2">    The Values method assigns values to variables and evaluates equations. The</span>
-<span class="linenos">74</span><span class="s2">    sub; nosub setting specifies whether the equations are printed a second</span>
-<span class="linenos">75</span><span class="s2">    time with substituted numerical values.</span>
+<span class="hll"><span class="linenos">71</span>    <span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;The Values method |  sub; nosub </span>
+</span><span class="linenos">72</span>
+<span class="linenos">73</span><span class="s2">        The Values method assigns values to variables and evaluates equations. The</span>
+<span class="linenos">74</span><span class="s2">        sub; nosub setting specifies whether the equations are printed a second</span>
+<span class="linenos">75</span><span class="s2">        time with substituted numerical values.</span>
 <span class="linenos">76</span>
-<span class="linenos">77</span><span class="s2">    A table tag provides a table title and number.  </span>
-<span class="linenos">78</span><span class="s2">    </span>
-<span class="linenos">79</span><span class="s2">    The equal tag declares a value. A sequence of declared values terminated</span>
-<span class="linenos">80</span><span class="s2">    with a blank line are formatted as a table.</span>
-<span class="linenos">81</span><span class="s2">    </span>
-<span class="linenos">82</span><span class="s2">    Example of assignment list _[t]</span>
-<span class="linenos">83</span><span class="s2">    f1 = 10.1 * LBF | N | a force</span>
-<span class="linenos">84</span><span class="s2">    d1 = 12.1 * IN | CM | a length</span>
+<span class="linenos">77</span><span class="s2">        A table tag provides a table title and number.  </span>
+<span class="linenos">78</span><span class="s2">        </span>
+<span class="linenos">79</span><span class="s2">        The equal tag declares a value. A sequence of declared values terminated</span>
+<span class="linenos">80</span><span class="s2">        with a blank line are formatted as a table.</span>
+<span class="linenos">81</span><span class="s2">        </span>
+<span class="linenos">82</span><span class="s2">        Example of assignment list _[t]</span>
+<span class="linenos">83</span><span class="s2">        f1 = 10.1 * LBF | N | a force</span>
+<span class="linenos">84</span><span class="s2">        d1 = 12.1 * IN | CM | a length</span>
 <span class="linenos">85</span>
-<span class="linenos">86</span><span class="s2">    An equation tag provides an equation description and number. A colon-equal</span>
-<span class="linenos">87</span><span class="s2">    tag assigns a value and specifies the result units and printed output</span>
-<span class="linenos">88</span><span class="s2">    decimal places in the result and equation.</span>
+<span class="linenos">86</span><span class="s2">        An equation tag provides an equation description and number. A colon-equal</span>
+<span class="linenos">87</span><span class="s2">        tag assigns a value and specifies the result units and printed output</span>
+<span class="linenos">88</span><span class="s2">        decimal places in the result and equation.</span>
 <span class="linenos">89</span>
-<span class="linenos">90</span><span class="s2">    Example equation - Area of circle  _[e]</span>
-<span class="linenos">91</span><span class="s2">    a1 := 3.14(d1/2)^2 | IN^2, CM^2 | 1,2</span>
+<span class="linenos">90</span><span class="s2">        Example equation - Area of circle  _[e]</span>
+<span class="linenos">91</span><span class="s2">        a1 := 3.14(d1/2)^2 | IN^2, CM^2 | 1,2</span>
 <span class="linenos">92</span>
-<span class="linenos">93</span><span class="s2">    || declare | data0102/values0102.csv</span>
-<span class="linenos">94</span><span class="s2">    </span>
-<span class="linenos">95</span><span class="s2">    The declare command imports values from a csv file written by rivt when</span>
-<span class="linenos">96</span><span class="s2">    processing assigned and declared values from another doc in the same</span>
-<span class="linenos">97</span><span class="s2">    project.</span>
+<span class="linenos">93</span><span class="s2">        || declare | data0102/values0102.csv</span>
+<span class="linenos">94</span><span class="s2">        </span>
+<span class="linenos">95</span><span class="s2">        The declare command imports values from a csv file written by rivt when</span>
+<span class="linenos">96</span><span class="s2">        processing assigned and declared values from another doc in the same</span>
+<span class="linenos">97</span><span class="s2">        project.</span>
 <span class="linenos">98</span>
-<span class="linenos">99</span><span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+<span class="linenos">99</span><span class="s2">        &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <section id="text-output">
