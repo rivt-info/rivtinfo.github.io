@@ -89,7 +89,7 @@ project.
 
 <hr>
 
-## **tags**
+## Tags
 <hr>
 
 Line tags format a line of text and are denoted with *_[tag]*, typically at the

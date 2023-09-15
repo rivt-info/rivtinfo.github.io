@@ -13,7 +13,7 @@ myst:
 
 <hr>
 
-## **VSCode**
+## VSCode
 <hr>
 
 ### profiles
