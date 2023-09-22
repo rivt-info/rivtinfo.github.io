@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2D2D2D" />
+  
+  <title>rivt :: GitHub Search</title>
+  
+
+  <link rel="icon" type="image/png" sizes="32x32" href="_static/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="_static/img/favicon-16x16.png">
+  <link rel="index" title="Index" href="genindex.html"/>
+
+  <link rel="stylesheet" href="_static/css/insegel.css"/>
+  <link rel="stylesheet" href="_static/css/custom.css"/>
+
+  <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+      <script type="text/javascript" src="_static/documentation_options.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/sphinx_highlight.js"></script>
+      <script type="text/javascript" src="_static/clipboard.min.js"></script>
+      <script type="text/javascript" src="_static/copybutton.js"></script>
+  
+
+  <script src="https://email.tl.fortawesome.com/c/eJxNjUEOgyAQAF8jR7Kw6wIHDh7sP1Cw2mgxgmn6-3JsMqc5zEQfE8dkxOY1KKMUOI3ACFKRJpSW2AAp7ontYIaxI6i7XPJVwyeVfCQ550Os3jLrGSNOLgbdAy6s0PBk2TFNjEbsfq31LB0OnX407pJa5v2faRadwSW63mn5KuLyR9j2tgx3zecanl-55R_-jjPs"></script> 
+</head>
+
+<body>
+  <div id="insegel-container">
+    <header>
+      <div id="logo-container">
+          
+          <h1>rivt</h1>
+          
+      </div>
+      <div id="project-container">
+        
+        <h1>Documentation</h1>
+        
+      </div>
+    </header>
+
+    <div id="content-container">
+
+      <div id="main-content-container">
+        <div id="main-content" role="main">
+          
+  <section id="github-search">
+<h1><a class="reference external" href="https://github.com/search"><img alt="rivt-search logo" src="_images/search01.png" style="width: 60px;" /></a> <strong>GitHub Search</strong><a class="headerlink" href="#github-search" title="Link to this heading">¶</a></h1>
+<head>
+<style>
+.button {
+  background-color: #cfdde2; 
+  border: 3 px solid black;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+<script> function searchRivt(){var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 13) && e.ctrlKey){document.getElementById("searchBtn").click();}});
+</script>
+<script> function searchOrg(){var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 13) && e.ctrlKey){document.getElementById("searchBtn").click();}});
+</script>
+<script> function clearRivt(){document.getElementById("terms").value="";document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 82) && e.ctrlKey){document.getElementById("clearBtn").click();}})};
+</script>
+</head>
+<p>Full text <strong>rivt</strong> document search across GitHub README files</p>
+<p>Example: solar+steel+frame</p>
+<p><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal"><br></p>
+<p><button class="button" id="searchBtn" onclick="searchRivt()">Search [ Ctrl+Enter ]</button>
+<button class="button" id="clearBtn" onclick="clearRivt()">Clear [ Ctrl+R ]</button></p>
+<hr>
+<section id="organizations">
+<h2>Organizations<a class="headerlink" href="#organizations" title="Link to this heading">¶</a></h2>
+<hr>
+<p>Full text <strong>rivt</strong> document search across GitHub README files in Organizations</p>
+<p><input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: normal"> Enter Organizations (comma separated)<br></p>
+<p><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal"> Search Terms<br></p>
+<p><button class="button" id="searchBtn" onclick="searchOrg()">Search [ Ctrl+Enter ]</button>
+<button class="button" id="clearBtn" onclick="clearRivt()">Clear [ Ctrl+R ]</button></p>
+</section>
+<section id="search-tips">
+<h2>Search Tips<a class="headerlink" href="#search-tips" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>The GitHub search interface is <a class="reference external" href="https://github.com/search">here</a>.</p></li>
+<li><p>GitHub README searches only index the root directory README. The rivt function <code> rv.readme() </code> writes every README in a project into the root README so rivt projects on GitHub can be fully searched.</p></li>
+<li><p>The rivt search box automatically adds the rivt search term.</p></li>
+</ul>
+</section>
+</section>
+
+
+        </div>
+      </div>
+
+      <div id="side-menu-container">
+
+        <div id="search" role="search">
+        <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+            <input type="text" name="q" placeholder="Search..." />
+            <input type="hidden" name="check_keywords" value="yes" />
+            <input type="hidden" name="area" value="default" />
+        </form>
+</div>
+
+        <div id="side-menu" role="navigation">
+
+          
+  
+    
+  
+  
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="rivt.html"><span class="xref myst"><strong>rivt</strong></span></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rivt.html#files">Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rivt.html#api-functions">API Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rivt.html#folders">Folders</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="syntax.html"> <strong>Syntax</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="syntax.html#commands">Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syntax.html#tags">Tags</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html"> <strong>Examples</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#simple">Simple</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#solar-canopy">Solar Canopy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#seismic-strengthening">Seismic Strengthening</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"> <strong>GitHub Search</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#organizations">Organizations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#search-tips">Search Tips</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="rdoc.html"> <strong>rivt-doc</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rdoc.html#vscode">VSCode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rdoc.html#github">GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rdoc.html#installation">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tools.html"> <strong>rivt-tools</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tools.html#rivt-installation">rivt installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools.html#vscode-profiles">VSCode profiles</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="online.html"> <strong>rivt-online</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="online.html#rivt-installation">rivt installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="online.html#vscode-profiles">VSCode profiles</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="rdefine.html"> <strong>Definitions</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rdefine.html#rivt">rivt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rdefine.html#python">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rdefine.html#github">GitHub</a></li>
+</ul>
+</li>
+</ul>
+
+  
+
+
+        </div>
+
+        
+
+      </div>
+
+    </div>
+
+<footer>
+    <div id="footer-info">
+        <ul id="build-details">
+            
+                <li class="footer-element">
+                    
+                        <a href="_sources/rsearch.md.txt" rel="nofollow"> source</a>
+                    
+                </li>
+            
+
+            
+
+            
+        </ul>
+
+        
+            <div id="copyright">
+                &copy; 2023 StructureLabs
+            </div>
+        
+
+        <div id="credit">
+            created with <a href="http://sphinx-doc.org/">Sphinx</a> and <a href="https://github.com/Autophagy/insegel">Insegel</a>
+
+        </div>
+    </div>
+
+    <a id="menu-toggle" class="fa fa-bars" aria-hidden="true"></a>
+
+    <script type="text/javascript">
+      $("#menu-toggle").click(function() {
+        $("#menu-toggle").toggleClass("toggled");
+        $("#side-menu-container").slideToggle(300);
+      });
+    </script>
+
+</footer> 
+
+</div>
+
+</body>
+</html>
