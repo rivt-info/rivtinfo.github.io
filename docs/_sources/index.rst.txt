@@ -5,17 +5,17 @@
 
 --------------------------------------
 
-`rivt <rivt.html>`__ is a markdown for writing, organizing and sharing 
+`rivt <rivt.html>`__ - markdown for writing, organizing and sharing 
 engineering documents.
 
-`rivtlib <https://rivt-code.net>`__  is a Python library for 
+`rivtlib <https://rivt-code.net>`__  - Python library for 
 processing rivt files
 (`MIT license <https://opensource.org/license/mit/>`__).
 
-`rivt-doc <rdoc.html>`__ is an open source editing and publishing framework for
+`rivt-doc <rdoc.html>`__ - open source editing and publishing framework for
 rivt. 
 
-`rivt-search <rsearch.html>`__ is an interface for finding relevant rivt
+`rivt-search <rsearch.html>`__ - search interface for finding rivt
 files on GitHub.
 
 -------------------------------------
