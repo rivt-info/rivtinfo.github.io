@@ -15,8 +15,10 @@ release = '0.1'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-myst_enable_extensions = ['substitution', 'deflist', 'html_image', 'amsmath']
 myst_heading_anchors = 3
+
+myst_enable_extensions = ['substitution', 'deflist', 
+                          'html_image', 'amsmath']
 
 extensions = ['myst_parser', 'sphinx.ext.githubpages',
               "sphinxcontrib.jquery", 'sphinx_copybutton']
@@ -31,7 +33,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 html_theme = 'insegel'
 html_static_path = ['_static', ]
-html_logo = "riv01a.png"
+html_logo_url = "_static/riv01a.png"
 html_theme_options = {
     'navigation_depth': 2
 }
