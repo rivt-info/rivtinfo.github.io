@@ -3,7 +3,6 @@
 
 **write | organize | share**
 
---------------------------------------
 `rivt <rivt.html>`__ - markdown for writing, organizing and sharing 
 engineering documents.
 
@@ -16,6 +15,7 @@ rivt documents. (`open source <https://opensource.org/license/mit/>`__)
 
 `rivt-search <rsearch.html>`__ - search interface for finding rivt
 files on GitHub.
+
 -------------------------------------
 
 .. toctree::
