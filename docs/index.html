@@ -33,6 +33,16 @@
   <div id="insegel-container">
     
     <header>
+    
+        <a id="menu-toggle" class="fa fa-bars" aria-hidden="true"></a>
+
+        <script type="text/javascript">
+          $("#menu-toggle").click(function() {
+            $("#menu-toggle").toggleClass("toggled");
+            $("#side-menu-container").slideToggle(300);
+          });
+        </script>
+      
       <div id="logo-container">
           <a href="https://rivt-doc.net"><img src="_static/img/riv02.png"></a>
       </div>
@@ -128,6 +138,7 @@ files on GitHub.</p>
 
         </div>
       </div>
+    
     </div>
 
 <footer>
@@ -153,15 +164,6 @@ files on GitHub.</p>
         
 
     </div>
-
-    <a id="menu-toggle" class="fa fa-bars" aria-hidden="true"></a>
-
-    <script type="text/javascript">
-      $("#menu-toggle").click(function() {
-        $("#menu-toggle").toggleClass("toggled");
-        $("#side-menu-container").slideToggle(300);
-      });
-    </script>
 
 </footer> 
 
