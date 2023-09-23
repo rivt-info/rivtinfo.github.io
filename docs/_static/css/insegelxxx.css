@@ -377,17 +377,6 @@ header {
   display: flex;
 }
 
-}
-header a#menu-toggle {
-  display: none;
-  opacity: 1;
-  font-size: 32px;
-  cursor: pointer;
-}
-header a#menu-toggle.toggled {
-  color: #DADADA;
-}
-
 
 header #logo-container {
   width: 300px;
@@ -429,7 +418,16 @@ footer #footer-info {
   display: flex;
   justify-content: space-between;
   width: 100%;
-
+}
+footer a#menu-toggle {
+  display: none;
+  opacity: 1;
+  font-size: 32px;
+  cursor: pointer;
+}
+footer a#menu-toggle.toggled {
+  color: #DADADA;
+}
 footer ul#build-details {
   list-style: none;
   display: flex;
