@@ -26,6 +26,14 @@
       <script type="text/javascript" src="_static/copybutton.js"></script>
       <script type="text/javascript" src="_static/searchtools.js"></script>
   
+          <script type="text/javascript">
+          $("#menu-toggle").click(function() {
+            $("#menu-toggle").toggleClass("toggled");
+            $("#side-menu-container").slideToggle(300);
+          });
+        </script>
+        
+  
     <script src="_static/language_data.js"></script>
 
   <script src="https://email.tl.fortawesome.com/c/eJxNjUEOgyAQAF8jR7Kw6wIHDh7sP1Cw2mgxgmn6-3JsMqc5zEQfE8dkxOY1KKMUOI3ACFKRJpSW2AAp7ontYIaxI6i7XPJVwyeVfCQ550Os3jLrGSNOLgbdAy6s0PBk2TFNjEbsfq31LB0OnX407pJa5v2faRadwSW63mn5KuLyR9j2tgx3zecanl-55R_-jjPs"></script>
@@ -41,14 +49,9 @@
     
         <a id="menu-toggle" class="fa fa-bars" aria-hidden="true"></a>
 
-        <script type="text/javascript">
-          $("#menu-toggle").click(function() {
-            $("#menu-toggle").toggleClass("toggled");
-            $("#side-menu-container").slideToggle(300);
-          });
-        </script>
-      
+
       <div id="logo-container">
+      
           <a href="https://rivt-doc.net"><img src="_static/img/riv02.png"></a>
       </div>
     </header>
