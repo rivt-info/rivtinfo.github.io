@@ -33,7 +33,6 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 html_theme = 'insegel'
 html_static_path = ['_static', ]
-html_logo = "riv02.png"
 html_theme_options = {
     'navigation_depth': 2
 }
