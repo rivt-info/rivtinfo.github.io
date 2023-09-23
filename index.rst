@@ -9,11 +9,11 @@
 engineering documents.
 
 `rivtlib <https://rivt-code.net>`__  - Python library for 
-processing rivt files
-(`MIT license <https://opensource.org/license/mit/>`__).
+processing rivt files.
+(`MIT license <https://opensource.org/license/mit/>`__)
 
-`rivt-doc <rdoc.html>`__ - open source editing and publishing framework for
-rivt. 
+`rivt-doc <rdoc.html>`__ - framework for editing and publishing
+rivt documents. (`open source <https://opensource.org/license/mit/>`__)  
 
 `rivt-search <rsearch.html>`__ - search interface for finding rivt
 files on GitHub.
