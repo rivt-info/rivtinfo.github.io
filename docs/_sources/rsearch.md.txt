@@ -38,6 +38,10 @@ myst:
 
 </head>
 
+<hr>
+
+## GitHub
+<hr>
 
 Full text **rivt** document search across GitHub README files
 
@@ -49,7 +53,7 @@ Example: solar+steel+frame
 <button class="button" id="clearBtn" onclick="clearRivt()">Clear [ Ctrl+R ]</button>
 <hr>
 
-## Organizations
+## GitHUb Organizations
 <hr>
 
 Full text **rivt** document search across GitHub README files in Organizations

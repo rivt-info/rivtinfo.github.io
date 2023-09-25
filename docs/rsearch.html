@@ -66,14 +66,19 @@
 <script> function clearRivt(){document.getElementById("terms").value="";document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 82) && e.ctrlKey){document.getElementById("clearBtn").click();}})};
 </script>
 </head>
+<hr>
+<section id="github">
+<h2>GitHub<a class="headerlink" href="#github" title="Link to this heading">¶</a></h2>
+<hr>
 <p>Full text <strong>rivt</strong> document search across GitHub README files</p>
 <p>Example: solar+steel+frame</p>
 <p><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal"><br></p>
 <p><button class="button" id="searchBtn" onclick="searchRivt()">Search [ Ctrl+Enter ]</button>
 <button class="button" id="clearBtn" onclick="clearRivt()">Clear [ Ctrl+R ]</button></p>
 <hr>
-<section id="organizations">
-<h2>Organizations<a class="headerlink" href="#organizations" title="Link to this heading">¶</a></h2>
+</section>
+<section id="github-organizations">
+<h2>GitHUb Organizations<a class="headerlink" href="#github-organizations" title="Link to this heading">¶</a></h2>
 <hr>
 <p>Full text <strong>rivt</strong> document search across GitHub README files in Organizations</p>
 <p><input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: normal"> Enter Organizations (comma separated)<br></p>
@@ -127,7 +132,8 @@
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#"> <strong>GitHub Search</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#organizations">Organizations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#github">GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#github-organizations">GitHUb Organizations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#search-tips">Search Tips</a></li>
 </ul>
 </li>
