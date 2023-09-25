@@ -3,18 +3,18 @@
 
 **write | organize | share**
 
-`rivt <rivt.html>`__ - markdown for writing, organizing and sharing 
-engineering documents.
+`rivt <rivt.html>`__ - engineering document markdown.
 
-`rivtlib <https://rivt-code.net>`__  - Python library for 
-processing rivt files.
+`rivtlib <https://rivt-code.net>`__  - Python library processes rivt files.
 (`MIT license <https://opensource.org/license/mit/>`__)
 
-`rivt-doc <rdoc.html>`__ - framework for editing and publishing
-rivt documents. (`open source <https://opensource.org/license/mit/>`__)  
+`rivt-doc <rdoc.html>`__ - editing and publishing framework. 
+(`open source <https://opensource.org/license/mit/>`__)  
 
-`rivt-search <rsearch.html>`__ - search interface for finding rivt
-files on GitHub.
+`rivt-search <rsearch.html>`__ - interface for rivt search on GitHub.
+
+`rivt-online <https://rivt-online.net>`__ - rivt-doc online (subscription - under
+construction).
 
 -------------------------------------
 
