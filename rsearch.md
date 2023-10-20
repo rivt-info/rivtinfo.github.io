@@ -56,9 +56,9 @@ Example: solar+steel+frame
 ## GitHUb Organizations
 <hr>
 
-Full text **rivt** document search across GitHub README files in Organizations
+Full text **rivt** document search across GitHub Organization README files
 
-<input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: normal"> Enter Organizations (comma separated)<br>
+<input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: normal"> Organizations (comma separated)<br>
 
 
 <input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal"> Search Terms<br>
