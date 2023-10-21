@@ -42,3 +42,6 @@ html_theme_options = {
     "navbar_end": ["navbar-icon-links"],
     "navbar_persistent": ["search-button"]
 }
+html_sidebars = {
+    "**": ["sidebar-nav-bs"]
+}
