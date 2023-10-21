@@ -53,7 +53,11 @@ html_theme_options = {
     "navbar_start": ["navbar-logo"],
     "navbar_center": ["navbar-nav"],
     "navbar_end": ["navbar-icon-links"],
-    "navbar_persistent": ["search-button"]
+    "navbar_persistent": ["search-button"],
+    "logo": {
+        "text": "rivt",
+        "image_dark": "_static/img/rivt01a.png",
+    },
 }
 
 html_sidebars = {
