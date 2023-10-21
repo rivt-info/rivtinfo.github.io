@@ -6,6 +6,18 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
+# -- Path setup --------------------------------------------------------------
+import os
+import sys
+from pathlib import Path
+from typing import Any, Dict
+
+import pydata_sphinx_theme
+from sphinx.application import Sphinx
+
+sys.path.append(str(Path(".").resolve()))
+
+# -- Project information -----------------------------------------------------
 
 project = 'rivt'
 copyright = '2023 StructureLabs'
@@ -14,7 +26,6 @@ release = '0.1'
 
 
 # -- General configuration ---------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 myst_heading_anchors = 3
 
@@ -37,13 +48,16 @@ html_theme = 'pydata_sphinx_theme'
 html_static_path = ['_static', ]
 html_logo = "_static/img/rivt01a.png"
 html_theme_options = {
-    "show_nav_level": 2,
+    "show_toc_level": 2,
     "navbar_align": "left",
     "navbar_start": ["navbar-logo"],
     "navbar_center": ["navbar-nav"],
     "navbar_end": ["navbar-icon-links"],
     "navbar_persistent": ["search-button"]
 }
+
 html_sidebars = {
-    "**": ["sidebar-nav-bs"]
+    "**": [
+        "sidebar-nav-bs"
+    ],
 }
