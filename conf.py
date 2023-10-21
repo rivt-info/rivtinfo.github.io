@@ -49,7 +49,7 @@ html_static_path = ['_static', ]
 html_logo = "_static/img/rivt01a.png"
 html_theme_options = {
     "show_toc_level": 2,
-    "navbar_align": "center",
+    "navbar_align": "content",
     "navbar_start": ["navbar-logo"],
     "navbar_center": ["navbar-nav"],
     "navbar_end": ["navbar-icon-links"],
