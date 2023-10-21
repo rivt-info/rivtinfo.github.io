@@ -20,7 +20,6 @@ construction).
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
    
    rivt.md
    syntax.md
