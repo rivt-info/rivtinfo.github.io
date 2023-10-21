@@ -1,5 +1,4 @@
 {
-    "python.formatting.provider": "autopep8",
     "cSpell.enabled": false,
     "inline-bookmarks.default.words.blue": "rv.R",
     "inline-bookmarks.default.words.green": "rv.I",
