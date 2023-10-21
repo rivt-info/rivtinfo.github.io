@@ -22,4 +22,5 @@
     "ShortcutMenuBar.openSettings": true,
     "ShortcutMenuBar.quickOpen": false,
     "editor.formatOnSave": true,
+    "esbonio.sphinx.confDir": "",
 }
