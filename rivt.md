@@ -1,4 +1,13 @@
 
+```{toctree}
+:maxdepth: 2
+:caption: Contributor guide
+
+rdoc
+syntax
+tools
+```
+
 <style>
   code {
     background: #e6ecdf;
@@ -16,6 +25,8 @@
     color:#000000;
   }
 </style>
+
+
 
 # [**rivt**](#rdefine)
 
