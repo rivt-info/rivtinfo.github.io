@@ -1,13 +1,4 @@
----
-myst:
-  substitutions:
-        "key7": |
-            ```{image} _static/img/riv02.png
-            :alt: rivt logo
-            :target: /rivt.html#syntax
-            :width: 60px
-            ```
----
+
 <style>
   code {
     background: transparent;
@@ -15,38 +6,38 @@ myst:
   }
 </style>
 
-# {{ key7 }} **Definitions**
+# **Definitions**
 
 <hr>
 
 ## rivt
 <hr>
 
-[**doc**](/syntax.md) 
+[**doc**](/write.md) 
 
   <code>open source markdown language for writing, organizing and sharing engineering documents</code>
 
-[**division**](/syntax.md) 
+[**division**](/write.md) 
 
   <code>open source markdown language for writing, organizing and sharing engineering documents</code>
 
-[**report**](/syntax.md) 
+[**report**](/write.md) 
 
   <code>open source markdown language for writing, organizing and sharing engineering documents asdfasf sdflkjsadf sd fsaedlfk fsadlf sa</code>
 
-[**section**](/syntax.md) 
+[**section**](/write.md) 
 
   <code>open source markdown language for writing, organizing and sharing engineering documents</code>
 
-[**rivt**](/syntax.md) 
+[**rivt**](/write.md) 
 
   <code>open source markdown language for writing, organizing and sharing engineering documents</code>
 
-[**rivt-doc**](/rdoc.md)
+[**rivt-doc**](/organize.md)
 
   <code>open source editing and publishing framework for rivtlib Python library for processing xxxxxxxxxxx asefasfda sadlfkas fsaf sadlkfjs dfsldj sdflkjsd fsf sadlkmjs dfasdflkjsa asd fa </code>
 
-[**rivtprivate**](/rdoc.md)
+[**rivtprivate**](/organize.md)
 
   <code>containing folder for private files and </code>
 
@@ -57,7 +48,7 @@ myst:
 ## Python
 <hr>
 
-[**namespace**](/rdoc.md)
+[**namespace**](/organize.md)
 
   <code> a [name](https://en.wikipedia.org/wiki/Namespace) that provides a scope for
   functions, variables, etc. Namespaces are used to organize code into logical
@@ -71,10 +62,10 @@ myst:
 ## GitHub
 <hr>
 
-[**repository**](/rdoc.md)
+[**repository**](/organize.md)
 
   <code>open source editing and publishing framework for rivtlib Python library</code>
 
-[**repo**](/rdoc.md)
+[**repo**](/organize.md)
 
   <code>short for repository</code>

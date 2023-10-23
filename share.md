@@ -1,15 +1,5 @@
----
-myst:
-    substitutions:
-        "key4": |
-            ```{image} _static/img/search01.png
-            :alt: rivt-search logo
-            :target: https://github.com/search
-            :width: 60px
-            ```
----
 
-# {{ key4 }} **GitHub Search** 
+# **Share** 
 
 <head>
 <style>
@@ -53,7 +43,7 @@ Example: solar+steel+frame
 <button class="button" id="clearBtn" onclick="clearRivt()">Clear [ Ctrl+R ]</button>
 <hr>
 
-## GitHUb Organizations
+## GitHub Organizations
 <hr>
 
 Full text **rivt** document search across GitHub Organization README files
