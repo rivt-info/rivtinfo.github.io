@@ -1,14 +1,16 @@
-# **rivt**   
+# **rivt**
 
-[write](write.md)  - engineering markdown
+**User Manual**
 
-`organize <./organize.html>`_  - documents and reports
+[write](write.md) rivt markdown
 
-`share <./share.html>`_  - publish and search
+[organize](organize.md) documents
+
+[share](share.md) report templates
 
 ----
 
-`rivt-online <./online.html>`_  - underconstruction
+[rivt-online](online.html) - underconstruction
 
 `MIT open source license <https://opensource.org/license/mit/>`_
 
