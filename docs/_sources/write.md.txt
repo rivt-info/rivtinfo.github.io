@@ -165,7 +165,6 @@ described [here](/organize.md#folders)
 
 ```{list-table}
 :header-rows: 1
-
 * - command 
   - API 
 * - || [text](#text) | relative path | rivt; plain                     
