@@ -8,16 +8,10 @@
 
 
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 3
 :hidden:
 write
 organize
 find
 install
 ```
-
-
-
-
-
-
