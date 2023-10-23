@@ -348,93 +348,85 @@ document.write(`
 <script> function clearRivt(){document.getElementById("terms").value="";document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 82) && e.ctrlKey){document.getElementById("clearBtn").click();}})};
 </script>
 </head>
+<p>The intention of rivt is to have the first</p>
 <hr>
-<section id="purpose">
-<h2>Purpose<a class="headerlink" href="#purpose" title="Link to this heading">#</a></h2>
+<section id="folder-structure">
+<h2>Folder Structure<a class="headerlink" href="#folder-structure" title="Link to this heading">#</a></h2>
 <hr>
-<p>Calculation and drawing documents provide detailed road maps for engineering
-projects. Their clarity and completeness affect cost, quality and timeliness.
-<strong>rivt</strong> is a tool for improving clarity and completeness by applying open
-source software principles to engineering design documents. Engineering
-professions have an opportunity to produce reusable calculation libraries that
-can evolve and improve with open-source contributions over time.</p>
-<p>Because many engineering technologies in the 21st century are evolving slowly,
-standards may see little or no change for decades. Productive engineering work
-now lies, not so much in technological innovation, but in understanding and
-combining various established technologies.</p>
-<p>Engineering documents are the mechanism for working out how to make these
-combinations successful. Enabling cut and paste editing of text, figures,
-formulas, calculation, graphs and tabulated data from existing documents
-enables several improvements. Engineers can explore more options. They can
-converge on effective design solutions faster. And they can explore unfamiliar
-technologies more efficiently. When large numbers of the profession participate
-the document quality evolves rapidly.</p>
-<p>Many engineering caclulation programs are available, but they include barriers
-to sharing and reuse (see table). In general they include incompatibility
-between programs, high initial and continuing software upgrade costs, and
-limited formatting and version control features.</p>
-<p>Nearly identical engineering documents are now being repeatedly written simply
-because a general, generic format was unavailable. <strong>rivt</strong> was developed to
-promote professio-wide document evolution and reuse.</p>
-<figure class="align-default" id="id3">
-<a class="reference internal image-reference" href="_images/table1.png"><img alt="Comparative Table of Engineering Calculation Programs" src="_images/table1.png" style="width: 1050.0px; height: 223.0px;" /></a>
-<figcaption>
-<p><span class="caption-text">Comparative Table of Engineering Calculation Programs</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<hr>
-</section>
-<section id="folders">
-<h2>Folders<a class="headerlink" href="#folders" title="Link to this heading">#</a></h2>
-<hr>
+<p><strong>rivtlib</strong> can process single rivt files, but typically it is used to generate
+reports. rivt documents are organized into divisions (folders) and documents
+(files). Reprort section names are taken from the the file and folder names but
+may be overridden by a configuration file.</p>
+<p>Document inputs and outputs may be stored in or directed to publically
+shareable or private foldrers. Reports is formatted with divisions,
+subdivisions and sections.</p>
+<p>Fixed folder and file prefixes are shown in [ ]. Report and document headings
+are taken from the folder and file labels.</p>
 <pre>
-[rivt]-Report-Label/               
-    ├── .git
-    ├── units.py                        (input: unit over-ride)
-    ├── README.md                       (output: toc and summary) 
-    ├── rivt01.ini                      (input: config file)
-    ├── [doc0101]-div-label/            (first division - first file)
-        ├── [data0101]/                     (inputs: data files)
-            ├── data1.csv                   
-            ├── paper1.pdf
-            └── functions1.py                   
-        ├── [rivt]-doc-label1.py            (input: rivt file)
-        └── README.md                       (output: GFM doc)
-    ├── [doc0102]/                      (first division - second file)
-        ├── data[0102]/                     (inputs: data files)
-            ├── data1.csv
-            ├── fig1.png
-            └── fig2.png
-        ├── [rivt]-doc-label2.py            (input: rivt file)
-        └── README.md                       (output: GFM doc)
-    ├── [doc0201]-div-label/            (second division - first file)
-        ├── [data0201]/                     (inputs: data files)
-            ├── data1.csv
+[rivt]_Report-Label/               
+    ├── [div01]-div-label/            (division folder)
+        ├── [data01]/                 (resource data)
+            ├── data.csv                   
             ├── attachment.pdf
-            ├── functions.py
-            └── fig1.png
-        ├── [rivt]-doc-label3.py            (input: rivt file)
-        └── README.md                       (outputs: GFM doc)
-    └── [private]/                      (private files)
-        ├── [temp]/                         (outputs: temp files)
-        ├── [report]/                       (report files)
-            ├── 0101-Doc Label1.pdf         (outputs: PDF docs)
-            ├── 0102-Doc Label2.pdf
-            ├── 0201-Doc Label3.pdf
-            └── Report Label.pdf            
-        ├── images/                         (inputs: optional private data)
-            ├── fig1.png
-            └── fig2.png
-        ├── text/    
-            ├── text1.txt
-            └── text2.txt
-        ├── append/    
-            ├── report1.pdf
-            └── report2.pdf
-        └── tables/
-            ├── data1.csv
-            └── data1.xls
+            └── fig.png            
+             functions.py                   
+        ├── [riv01]-label1.py         (rivt file)
+        └── [riv02]-label2.py         (rivt file)   
+    ├── [div02]-div-label/            (division folder)
+        ├── [data02]/                 (resource data)
+            ├── data.csv
+            └── fig.png
+        └── [riv01]_label3.py         (rivt file)
+    ├── [data-private]/                 
+        ├── [data]/                   (private data)                   
+            ├── data.csv
+            ├── attachment.pdf
+            └── fig.png        
+        ├── [functions]/              (private functions)                   
+            ├── [data]/
+            ├── [output]/
+            └── function.py                
+        ├── [rivt-docs]/              (private output documents)
+            ├── [pdf]/                      
+                ├── doc0101-label1.pdf      
+                ├── doc0102-label2.pdf
+                ├── doc0201-label3.pdf
+                └── Report-Label.pdf 
+            ├── [text]/                    
+                ├── doc0101-label1.txt      
+                └── doc0201-label3.txt       
+            ├── doc0101-label1.md            
+            └── doc0201-label3.md
+        ├── [temp]/
+            └── doc0201-label3.tex 
+    ├── [functions]/                  (public functions)                   
+        ├── [data]/
+        ├── [output]/
+        ├── function1.py
+        └── function2.py                
+    ├── [rivt-docs]/                  (public output documents)
+        ├── [pdf]/                      
+            ├── doc0101-label1.pdf      
+            ├── doc0102-label2.pdf
+            ├── doc0201-label3.pdf
+            └── Report-Label.pdf 
+        ├── [text]/                    
+            ├── doc0101-label1.txt      
+            ├── doc0102-label2.txt
+            └── doc0201-label3.txt           
+    ├── .gitignore
+    ├── config.ini                    (config file)
+    ├── doc0101-label1.md             (public output documents) 
+    ├── doc0102-label2.md
+    ├── doc0201-label3.md
+    └── README.txt                    (cumulative documents - searchable) 
 </pre>
+<section id="make-folders">
+<h3>Make Folders<a class="headerlink" href="#make-folders" title="Link to this heading">#</a></h3>
+<p>A starter report folder structure can be generated in the folder where the
+following command is executed:</p>
+<p><em>python -m rivtlib.toy-report</em></p>
+</section>
 </section>
 <section id="examples">
 <h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Link to this heading">#</a></h2>
@@ -788,8 +780,10 @@ xyz
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose">Purpose</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#folders">Folders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#folder-structure">Folder Structure</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#make-folders">Make Folders</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples"><strong>Examples</strong></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#simple">Simple</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#text-output">text output</a></li>
