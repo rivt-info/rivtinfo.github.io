@@ -1,7 +1,7 @@
 ---
 myst:
     substitutions:
-        "key5": |
+        "key1": |
             ```{image} _static/img/rc-dark2.png
             :alt: rivt-online logo
             :target: https://rivt-online.net
@@ -9,7 +9,7 @@ myst:
             ```
 ---
 
-# {{ key5 }} **rivt-online** 
+# {{ key1 }} **rivt-Online** 
 
 - VS Code
 - Texlive 

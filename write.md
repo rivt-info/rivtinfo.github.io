@@ -1,3 +1,12 @@
+```{toctree}
+:maxdepth: 2
+:caption: Contents
+write.md
+organize.md
+share.md
+definitions.md
+online.md
+```
 
 # **Write**
 
@@ -22,9 +31,6 @@
 <style type="text/css">
   table    { background:#dce8ef; color: #000000; }
 </style>
-
-
-# **write**
 
 **rivt** is a markdown language for writing, organizing and sharing 
 engineering documents. 
