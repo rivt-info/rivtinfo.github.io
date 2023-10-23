@@ -1,12 +1,8 @@
-```{toctree}
-:maxdepth: 2
-:caption: Contents
-
-organize
-share
-definitions
-online
-```
+html_sidebars = {
+    "**": [
+        "sidebar-nav-bs"
+    ],
+}
 
 
 <style>
