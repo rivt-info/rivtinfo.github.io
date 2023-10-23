@@ -21,10 +21,10 @@
   table    { background:#dce8ef; color: #000000; }
 </style>
 
-# [**rivt**](#definitions)
+# **write**
 
 **rivt** is a markdown language for writing, organizing and sharing 
-engineering documents. It emphasizes clarity, efficiency and access.
+engineering documents. 
 
 [rivtlib](https://rivt-code.net) is a Python library for processing rivt files.  It outputs formatted documents in a serveral different
 formats. The minimum software needed to write rivt documents is Python 3.8
