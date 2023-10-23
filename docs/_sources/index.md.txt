@@ -3,21 +3,22 @@
 
 **write | organize | share**
 
-`write <write.html>`__ - engineering markdown.
+[write](write.md) - engineering markdown.
 
-`organize <organize.html>`__ - editing framework. 
-(`open source <https://opensource.org/license/mit/>`__)  
+[organize](organize.md) - report framework. 
 
-`share <rsearch.html>`__ - Github search interface.
+[share](share.md) - Github search interface.
 
 `rivt-online <https://rivt-online.net>`__ - online rivt-doc (subscription - under
 construction).
+
+(`open source <https://opensource.org/license/mit/>`__)  
 
 -------------------------------------
 
 ```{toctree}
 :maxdepth: 2
-:caption: Contributor guide
+:caption: Contents
 
 write
 organize

@@ -1,3 +1,13 @@
+```{toctree}
+:maxdepth: 2
+:caption: Contents
+
+organize
+share
+definitions
+online
+```
+
 
 <style>
   code {
@@ -165,7 +175,7 @@ parenthesis.
 
 File locations are specified using shortene, relative paths that include the
 name of the file and the name of its containing folder. Folder organization is
-described [here](/organize#folders)
+described [here](/organize.md#folders)
 
 
 ```{list-table}
