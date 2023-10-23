@@ -10,9 +10,9 @@
 
 ----
 
-[rivt-online](online.html) - underconstruction
+[rivt-online](online.md) - underconstruction
 
-`MIT open source license <https://opensource.org/license/mit/>`_
+[MIT open source license](https://opensource.org/license/mit/)
 
 
 ```{toctree}
