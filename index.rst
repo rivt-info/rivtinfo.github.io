@@ -22,11 +22,11 @@
    :caption: Contents
    :hidden:
 
-   write
    organize
    share
    definitions
    online
+   write
 
 
 
