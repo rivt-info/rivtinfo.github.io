@@ -1,9 +1,3 @@
-html_sidebars = {
-    "**": [
-        "sidebar-nav-bs"
-    ],
-}
-
 
 <style>
   code {

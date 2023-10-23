@@ -58,9 +58,7 @@ html_theme_options = {
 }
 
 html_sidebars = {
-    "**": [
-        "sidebar-nav-bs"
-    ],
+    "**": ["sidebar-nav-bs"]
 }
 
 # -- Options for HTML output -------------------------------------------------
