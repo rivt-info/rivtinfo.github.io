@@ -51,7 +51,7 @@ html_theme_options = {
     "navbar_center": ["navbar-nav"],
     "navbar_end": ["navbar-icon-links"],
     "navbar_persistent": ["search-button"],
-    "navigation_depth": 2,
+    "navigation_depth": 3,
     "logo": {
         "text": "rivt",
         "image_dark": "_static/img/riv-dark8.png",
