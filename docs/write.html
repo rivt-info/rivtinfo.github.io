@@ -228,7 +228,7 @@ document.write(`
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
-      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+      <div class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -289,6 +289,18 @@ document.write(`
     
   </div>
   
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="organize.html"><strong>organize</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="search.html">Search Page</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
   </div>
@@ -338,11 +350,18 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <p>‘’’{toctree}
-:maxdepth: 2
-organize.md
-search.md
-‘’’</p>
+  <div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="organize.html"><strong>organize</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="organize.html#vscode">VSCode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="organize.html#folders">Folders</a></li>
+<li class="toctree-l2"><a class="reference internal" href="organize.html#github">GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="organize.html#installation">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="search.html">Search Page</a></li>
+</ul>
+</div>
 <style>
   code {
     background: #e6ecdf;
