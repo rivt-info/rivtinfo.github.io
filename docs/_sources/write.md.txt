@@ -159,7 +159,7 @@ that follows pep8 and ruff conventions.
 <hr>
 
 
-# **Syntax**
+## **Syntax**
 
 **rivt** markup uses a syntax of commands for file operations and tags for text
 formatting. Any text not defined with commands or tags is passed through as
@@ -231,7 +231,6 @@ The table command inserts and formats tabular data from csv or xls files.
 The declare command imports values from a csv file written by rivt when
 processing assigned and declared values from another doc in the same
 project.
-
 
 
 <hr>
@@ -342,11 +341,11 @@ Block tags start a text block with *_[[tag]]* and end with *_[[q]]*.
   - I V
 ```
 
-# **Examples**
+## **Examples**
 
 <hr>
 
-## Simple
+### Simple
 <hr>
 
 ```{code-block}

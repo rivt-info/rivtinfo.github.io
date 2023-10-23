@@ -1,5 +1,4 @@
-**rivt**   write | organize | share
-
+# **rivt**   
 
 **User Manual Content**
 
