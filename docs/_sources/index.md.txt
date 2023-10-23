@@ -1,14 +1,15 @@
-# **rivt**
+# **rivt** User Manual
 
-## User Manual
+## [write](write.md) 
 
-### [write](write.md) rivt markdown
+## [terms](terms.md)
 
-### [organize](organize.md) documents
+## [organize](organize.md) 
 
-### [share](share.md) report templates
+## [find](find.md) 
 
-----
+## engineering documents and templates
+
 
 [MIT open source license](https://opensource.org/license/mit/)
 
@@ -18,9 +19,8 @@
 :hidden:
 write
 organize
-share
-terms
-online
+find
+install
 ```
 
 

@@ -9,7 +9,7 @@ myst:
             ```
 ---
 
-# {{ key1 }} **rivt-Online** 
+# {{ key1 }} **Install** 
 
 - VS Code
 - Texlive 
