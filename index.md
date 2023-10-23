@@ -21,7 +21,7 @@
 write
 organize
 share
-definitions
+terms
 online
 ```
 

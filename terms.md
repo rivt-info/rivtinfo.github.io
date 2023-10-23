@@ -1,9 +1,9 @@
 
-# **Definitions**
+# **Terms**
 
 <style>
   code {
-    background: transparent;
+    background: #e6ecdf;
     color:#000000;
   }
 </style>
