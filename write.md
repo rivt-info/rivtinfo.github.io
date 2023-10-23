@@ -294,8 +294,7 @@ Block tags start a text block with *_[[tag]]* and end with *_[[q]]*.
 ### Simple
 <hr>
 
-```{code-block}
-:linenos:
+<pre style="background: #cfdde2; color: #000000">
 
 import rivtlib.rivtapi as rv
 
@@ -396,7 +395,7 @@ rv.V("""The Values method |  sub; nosub
     project.
 
     """)
-```
+</pre>
 
 
 ### text output
