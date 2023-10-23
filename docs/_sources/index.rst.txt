@@ -15,12 +15,13 @@
 
 `rivt-online <./online.html>`_  - underconstruction
 
-`MIT open source license <https://opensource.org/license/mit/>`
+`MIT open source license <https://opensource.org/license/mit/>`_
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents
-   
+   :hidden:
+
    write
    organize
    share

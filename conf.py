@@ -45,11 +45,13 @@ html_theme = 'pydata_sphinx_theme'
 html_static_path = ['_static', ]
 html_logo = "_static/img/rivt01a.png"
 html_theme_options = {
+    "show_nav_level": 2,
     "navbar_align": "content",
     "navbar_start": ["navbar-logo"],
     "navbar_center": ["navbar-nav"],
     "navbar_end": ["navbar-icon-links"],
     "navbar_persistent": ["search-button"],
+    "navigation_depth": 2,
     "logo": {
         "text": "rivt",
         "image_dark": "_static/img/riv-dark8.png",
