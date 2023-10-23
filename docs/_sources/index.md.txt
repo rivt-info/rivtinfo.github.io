@@ -1,7 +1,6 @@
 # **rivt** User Manual
 
-## [write](write.md), [organize](organize.md) and [find](find.md) engineering
-documents and templates
+## [write](write.md), [organize](organize.md) and [find](find.md) engineering documents and templates
 
 ### [terms](terms.md)
 
