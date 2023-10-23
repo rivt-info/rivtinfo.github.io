@@ -1,6 +1,6 @@
-# **rivt**
+# rivt
 
-**User Manual**
+## User Manual
 
 [write](write.md) rivt markdown
 
