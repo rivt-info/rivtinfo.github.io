@@ -4,7 +4,7 @@
 
 ## [organize](organize.md), [modify](modify.md),  and [publish](publish.md) engineering documents and templates
 
-### [terms](terms.md)
+### [definitions](terms.md)
 
 [MIT open source license](https://opensource.org/license/mit/)
 

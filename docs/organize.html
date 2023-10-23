@@ -46,7 +46,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'organize';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Write" href="modify.html" />
+    <link rel="next" title="Modify" href="modify.html" />
     <link rel="prev" title="rivt User Manual" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -155,14 +155,14 @@
 
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="modify.html">
-                        Write
+                        Modify
                       </a>
                     </li>
                 
 
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="publish.html">
-                        Find
+                        Publish
                       </a>
                     </li>
                 
@@ -248,14 +248,14 @@ document.write(`
 
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="modify.html">
-                        Write
+                        Modify
                       </a>
                     </li>
                 
 
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="publish.html">
-                        Find
+                        Publish
                       </a>
                     </li>
                 
@@ -326,6 +326,28 @@ document.write(`
                   
   <section id="organize">
 <h1>Organize<a class="headerlink" href="#organize" title="Link to this heading">#</a></h1>
+<head>
+<style>
+.button {
+  background-color: #cfdde2; 
+  border: 3 px solid black;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+<script> function searchRivt(){var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 13) && e.ctrlKey){document.getElementById("searchBtn").click();}});
+</script>
+<script> function searchOrg(){var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 13) && e.ctrlKey){document.getElementById("searchBtn").click();}});
+</script>
+<script> function clearRivt(){document.getElementById("terms").value="";document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 82) && e.ctrlKey){document.getElementById("clearBtn").click();}})};
+</script>
+</head>
 <p><a class="reference internal" href="modify.html"><span class="std std-doc">rivt</span></a> is a markdown language for organizing, modifying and publishing
 engineering documents.</p>
 <p><a class="reference external" href="https://rivt-code.net">rivtlib</a> is a Python library for processing <strong>rivt</strong>
@@ -700,7 +722,35 @@ xyz
 <section id="id2">
 <h3>text output<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
 <p>ccc</p>
+<hr>
 </section>
+</section>
+<section id="github">
+<h2>GitHub<a class="headerlink" href="#github" title="Link to this heading">#</a></h2>
+<hr>
+<p>Full text <strong>rivt</strong> document search across GitHub README files</p>
+<p>Example: solar+steel+frame</p>
+<p><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal"><br></p>
+<p><button class="button" id="searchBtn" onclick="searchRivt()">Search [ Ctrl+Enter ]</button>
+<button class="button" id="clearBtn" onclick="clearRivt()">Clear [ Ctrl+R ]</button></p>
+<hr>
+</section>
+<section id="github-organizations">
+<h2>GitHub Organizations<a class="headerlink" href="#github-organizations" title="Link to this heading">#</a></h2>
+<hr>
+<p>Full text <strong>rivt</strong> document search across GitHub Organization README files</p>
+<p><input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: normal"> Organizations (comma separated)<br></p>
+<p><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal"> Search Terms<br></p>
+<p><button class="button" id="searchBtn" onclick="searchOrg()">Search [ Ctrl+Enter ]</button>
+<button class="button" id="clearBtn" onclick="clearRivt()">Clear [ Ctrl+R ]</button></p>
+</section>
+<section id="search-tips">
+<h2>Search Tips<a class="headerlink" href="#search-tips" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>The GitHub search interface is <a class="reference external" href="https://github.com/search">here</a>.</p></li>
+<li><p>GitHub README searches only index the root directory README. The rivt function <code> rv.readme() </code> writes every README in a project into the root README so rivt projects on GitHub can be fully searched.</p></li>
+<li><p>The rivt search box automatically adds the rivt search term.</p></li>
+</ul>
 </section>
 </section>
 
@@ -728,7 +778,7 @@ xyz
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Write</p>
+        <p class="prev-next-title">Modify</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -764,6 +814,9 @@ xyz
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">text output</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github">GitHub</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github-organizations">GitHub Organizations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#search-tips">Search Tips</a></li>
 </ul>
   </nav></div>
 

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Find &#8212; rivt 0.1 documentation</title>
+    <title>Publish &#8212; rivt 0.1 documentation</title>
   
   
   
@@ -47,7 +47,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Install" href="install.html" />
-    <link rel="prev" title="Write" href="modify.html" />
+    <link rel="prev" title="Modify" href="modify.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -155,14 +155,14 @@
 
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="modify.html">
-                        Write
+                        Modify
                       </a>
                     </li>
                 
 
                     <li class="nav-item current active">
                       <a class="nav-link nav-internal" href="#">
-                        Find
+                        Publish
                       </a>
                     </li>
                 
@@ -248,14 +248,14 @@ document.write(`
 
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="modify.html">
-                        Write
+                        Modify
                       </a>
                     </li>
                 
 
                     <li class="nav-item current active">
                       <a class="nav-link nav-internal" href="#">
-                        Find
+                        Publish
                       </a>
                     </li>
                 
@@ -307,7 +307,7 @@ document.write(`
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page">Find</li>
+    <li class="breadcrumb-item active" aria-current="page">Publish</li>
   </ul>
 </nav>
 </div>
@@ -324,57 +324,60 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="find">
-<h1>Find<a class="headerlink" href="#find" title="Link to this heading">#</a></h1>
-<head>
-<style>
-.button {
-  background-color: #cfdde2; 
-  border: 3 px solid black;
-  color: black;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-</style>
-<script> function searchRivt(){var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 13) && e.ctrlKey){document.getElementById("searchBtn").click();}});
-</script>
-<script> function searchOrg(){var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 13) && e.ctrlKey){document.getElementById("searchBtn").click();}});
-</script>
-<script> function clearRivt(){document.getElementById("terms").value="";document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 82) && e.ctrlKey){document.getElementById("clearBtn").click();}})};
-</script>
-</head>
+  <section id="publish">
+<h1>Publish<a class="headerlink" href="#publish" title="Link to this heading">#</a></h1>
 <hr>
-<section id="github">
-<h2>GitHub<a class="headerlink" href="#github" title="Link to this heading">#</a></h2>
+<section id="folders">
+<h2>Folders<a class="headerlink" href="#folders" title="Link to this heading">#</a></h2>
 <hr>
-<p>Full text <strong>rivt</strong> document search across GitHub README files</p>
-<p>Example: solar+steel+frame</p>
-<p><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal"><br></p>
-<p><button class="button" id="searchBtn" onclick="searchRivt()">Search [ Ctrl+Enter ]</button>
-<button class="button" id="clearBtn" onclick="clearRivt()">Clear [ Ctrl+R ]</button></p>
-<hr>
-</section>
-<section id="github-organizations">
-<h2>GitHub Organizations<a class="headerlink" href="#github-organizations" title="Link to this heading">#</a></h2>
-<hr>
-<p>Full text <strong>rivt</strong> document search across GitHub Organization README files</p>
-<p><input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: normal"> Organizations (comma separated)<br></p>
-<p><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal"> Search Terms<br></p>
-<p><button class="button" id="searchBtn" onclick="searchOrg()">Search [ Ctrl+Enter ]</button>
-<button class="button" id="clearBtn" onclick="clearRivt()">Clear [ Ctrl+R ]</button></p>
-</section>
-<section id="search-tips">
-<h2>Search Tips<a class="headerlink" href="#search-tips" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>The GitHub search interface is <a class="reference external" href="https://github.com/search">here</a>.</p></li>
-<li><p>GitHub README searches only index the root directory README. The rivt function <code> rv.readme() </code> writes every README in a project into the root README so rivt projects on GitHub can be fully searched.</p></li>
-<li><p>The rivt search box automatically adds the rivt search term.</p></li>
-</ul>
+<pre>
+[rivt]-Report-Label/               
+    ├── .git
+    ├── units.py                        (input: unit over-ride)
+    ├── README.md                       (output: toc and summary) 
+    ├── rivt01.ini                      (input: config file)
+    ├── [doc0101]-div-label/            (first division - first file)
+        ├── [data0101]/                     (inputs: data files)
+            ├── data1.csv                   
+            ├── paper1.pdf
+            └── functions1.py                   
+        ├── [rivt]-doc-label1.py            (input: rivt file)
+        └── README.md                       (output: GFM doc)
+    ├── [doc0102]/                      (first division - second file)
+        ├── data[0102]/                     (inputs: data files)
+            ├── data1.csv
+            ├── fig1.png
+            └── fig2.png
+        ├── [rivt]-doc-label2.py            (input: rivt file)
+        └── README.md                       (output: GFM doc)
+    ├── [doc0201]-div-label/            (second division - first file)
+        ├── [data0201]/                     (inputs: data files)
+            ├── data1.csv
+            ├── attachment.pdf
+            ├── functions.py
+            └── fig1.png
+        ├── [rivt]-doc-label3.py            (input: rivt file)
+        └── README.md                       (outputs: GFM doc)
+    └── [private]/                      (private files)
+        ├── [temp]/                         (outputs: temp files)
+        ├── [report]/                       (report files)
+            ├── 0101-Doc Label1.pdf         (outputs: PDF docs)
+            ├── 0102-Doc Label2.pdf
+            ├── 0201-Doc Label3.pdf
+            └── Report Label.pdf            
+        ├── images/                         (inputs: optional private data)
+            ├── fig1.png
+            └── fig2.png
+        ├── text/    
+            ├── text1.txt
+            └── text2.txt
+        ├── append/    
+            ├── report1.pdf
+            └── report2.pdf
+        └── tables/
+            ├── data1.csv
+            └── data1.xls
+</pre>
 </section>
 </section>
 
@@ -394,7 +397,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Write</p>
+        <p class="prev-next-title">Modify</p>
       </div>
     </a>
     <a class="right-next"
@@ -421,9 +424,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github">GitHub</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github-organizations">GitHub Organizations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#search-tips">Search Tips</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#folders">Folders</a></li>
 </ul>
   </nav></div>
 
