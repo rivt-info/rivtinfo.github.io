@@ -1,8 +1,3 @@
-```{toctree}
-:maxdepth: 2
-organize.md
-search.md
-```
 
 <style>
   code {
