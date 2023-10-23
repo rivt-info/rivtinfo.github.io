@@ -23,6 +23,11 @@
    :hidden:
 
    write.md
+   organize.md
+   share.md
+   definitions.md
+   online.md
+
 
 
 

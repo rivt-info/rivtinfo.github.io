@@ -1,13 +1,5 @@
 
-
-```{toctree}
-:maxdepth: 2
-:caption: Contents
-organize.md
-share.md
-definitions.md
-online.md
-```
+# **Write**
 
 <style>
   code {
