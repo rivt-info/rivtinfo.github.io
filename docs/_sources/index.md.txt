@@ -1,6 +1,8 @@
+**organize | modify | publish**
+
 # **rivt** User Manual
 
-## [write](write.md), [organize](organize.md) and [find](find.md) engineering documents and templates
+## [organize](organize.md), [modify](modify.md),  and [publish](publish.md) engineering documents and templates
 
 ### [terms](terms.md)
 
@@ -10,8 +12,8 @@
 ```{toctree}
 :maxdepth: 3
 :hidden:
-write
 organize
-find
+modify
+publish
 install
 ```

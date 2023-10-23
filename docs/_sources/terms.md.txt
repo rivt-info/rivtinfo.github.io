@@ -1,37 +1,28 @@
 
 # Terms
 
-<style>
-  code {
-    background: #e6ecdf;
-    color:#000000;
-  }
-</style>
-
-
-
 <hr>
 
 ## rivt
 <hr>
 
-[**doc**](/write.md) 
+[**doc**](/organize.md) 
 
   open source markdown language for writing, organizing and sharing engineering documents
 
-[**division**](/write.md) 
+[**division**](/organize.md) 
 
   open source markdown language for writing, organizing and sharing engineering documents
 
-[**report**](/write.md) 
+[**report**](/organize.md) 
 
   open source markdown language for writing, organizing and sharing engineering documents asdfasf sdflkjsadf sd fsaedlfk fsadlf sa
 
-[**section**](/write.md) 
+[**section**](/organize.md) 
 
   open source markdown language for writing, organizing and sharing engineering documents
 
-[**rivt**](/write.md) 
+[**rivt**](/organize.md) 
 
   open source markdown language for writing, organizing and sharing engineering documents
 
