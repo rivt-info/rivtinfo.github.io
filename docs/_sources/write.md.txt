@@ -173,19 +173,19 @@ described [here](/organize.md#folders)
 * - The text command inserts and formats plain text files or files with rivt tags. 
   - 
 * - || **append** | relative path | cover.pdf
-  - R
+  -   R
 * - The append command attaches PDF files to the end of the doc.
   - 
 * - || **image**  | relative path, (2nd path) | width, (width)
-  - I
+  -   I
 * - The image command inserts and formats png or jpg files.
   -  
 * - || **table** | relative path | max col width, align
-  - I
+  -   I
 * - The table command inserts and formats tabular data from csv or xls files.
   - 
 * - || **declare** | relative path |  print; noprint
-  - V
+  -   V
 * - The declare command imports values from a csv file written by rivt. Used for passing calculation results between documents. 
   - 
 ```
