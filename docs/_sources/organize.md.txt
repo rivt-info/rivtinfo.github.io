@@ -29,18 +29,6 @@
 </head>
 
 
-[rivt](/modify.md) is a markdown language for organizing, modifying and publishing
-engineering documents.
-
-[rivtlib](https://rivt-code.net) is a Python library for processing **rivt**
-files. It outputs formatted documents in a serveral different formats. The
-minimum software needed to write rivt documents is Python 3.8 with Python
-science libraries.
-
-[rivt-doc](/organize.md) is an editing and publishing framework for rivt using
-additional open source programs. **rivt** works with both single file documents
-and extensive reports with hundreds of files.
-
 <hr>
 
 ## Purpose

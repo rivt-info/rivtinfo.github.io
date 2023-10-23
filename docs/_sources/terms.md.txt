@@ -1,5 +1,5 @@
 
-# Terms
+# Definitions
 
 <hr>
 
@@ -34,7 +34,21 @@
 
   containing folder for private files and 
 
+[**rivt**](/modify.md) 
 
+markdown language for organizing, modifying and publishing engineering documents.
+
+[**rivtlib**](https://rivt-code.net) 
+
+Python library for processing **rivt** files. It outputs formatted documents in
+a serveral different formats. The minimum software needed to write rivt
+documents is Python 3.8 with Python science libraries.
+
+[**rivt-doc**](/organize.md) 
+
+an editing and publishing framework for rivt using additional open source
+programs. **rivt** works with both single file documents and extensive reports
+with hundreds of files.
 
 <hr>
 
@@ -49,7 +63,6 @@
   code base includes multiple libraries. In Python, namespaces are defined by
   the individual modules.
   
-
 <hr>
 
 ## GitHub
