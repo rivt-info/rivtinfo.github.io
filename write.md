@@ -57,8 +57,8 @@ Flavored Markdown (GFM) and PDF.
 
 ```{list-table}
 :header-rows: 1
-* - API function 
-  - name``
+* - API 
+  - name
   - purpose
 * - **rv.R(str)**
   - rivtinit
