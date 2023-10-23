@@ -56,7 +56,7 @@ html_theme_options = {
     "navbar_persistent": ["search-button"],
     "logo": {
         "text": "rivt",
-        "image_dark": "_static/img/riv-dark7.png",
+        "image_dark": "_static/img/riv-dark8.png",
     },
 }
 
