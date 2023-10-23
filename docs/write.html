@@ -451,9 +451,6 @@ can be written in any order and frequency except for <em>rivtinit</em>, which oc
 only once as the initial function in the file. A <strong>rivt</strong> file is a Python file
 that follows pep8 and ruff conventions.</p>
 <hr>
-</section>
-<section id="syntax">
-<h2><strong>Syntax</strong><a class="headerlink" href="#syntax" title="Link to this heading">#</a></h2>
 <p><strong>rivt</strong> markup uses a syntax of commands for file operations and tags for text
 formatting. Any text not defined with commands or tags is passed through as
 output. Commands and tags are processed in part by the <em>docutils</em> library and
@@ -478,11 +475,12 @@ described <a class="reference internal" href="organize.html#folders"><span class
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>|| <a class="reference internal" href="#text">text</a> | relative path | rivt; plain</p></td>
+<tr class="row-even"><td><p>|| <strong>text</strong>| relative path | rivt; plain</p></td>
 <td><p>R I V</p></td>
 </tr>
-<tr class="row-odd"><td><p>|| <a class="reference internal" href="#init">init</a> | relative path</p></td>
-<td><p>R</p></td>
+<tr class="row-odd"><td><p>the text command inserts and formats text from external files. Files may
+be plain text or text with rivt tags.</p></td>
+<td></td>
 </tr>
 <tr class="row-even"><td><p>|| <a class="reference internal" href="#append">append</a> | relative path | cover.pdf</p></td>
 <td><p>R</p></td>
@@ -498,11 +496,6 @@ described <a class="reference internal" href="organize.html#folders"><span class
 </tr>
 </tbody>
 </table>
-<section id="text">
-<h3><strong>text</strong><a class="headerlink" href="#text" title="Link to this heading">#</a></h3>
-<p>The text command inserts and formats text from external files. Text files may
-be plain text or text with rivt tags.</p>
-</section>
 <section id="init">
 <h3><strong>init</strong><a class="headerlink" href="#init" title="Link to this heading">#</a></h3>
 <p>The init command specifies the name of the configuration file which is read
@@ -982,9 +975,7 @@ xyz
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#files">Files</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api-functions">API Functions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#syntax"><strong>Syntax</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#commands">Commands</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#text"><strong>text</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#init"><strong>init</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#append"><strong>append</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#image"><strong>image</strong></a></li>

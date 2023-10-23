@@ -142,8 +142,6 @@ that follows pep8 and ruff conventions.
 <hr>
 
 
-## **Syntax**
-
 **rivt** markup uses a syntax of commands for file operations and tags for text
 formatting. Any text not defined with commands or tags is passed through as
 output. Commands and tags are processed in part by the *docutils* library and 
@@ -170,10 +168,11 @@ described [here](/organize.md#folders)
 :header-rows: 1
 * - command 
   - API 
-* - || [text](#text) | relative path | rivt; plain                     
+* - || **text**| relative path | rivt; plain                     
   - R I V
-* - || [init](#init) | relative path
-  - R
+* - the text command inserts and formats text from external files. Files may
+be plain text or text with rivt tags.
+  - 
 * - || [append](#append) | relative path | cover.pdf
   - R
 * - || [image](#image)  | relative path, (2nd path) | width, (width)
@@ -184,11 +183,6 @@ described [here](/organize.md#folders)
   - V
 ```
 
-
-### **text**
-
-The text command inserts and formats text from external files. Text files may
-be plain text or text with rivt tags.
 
 ### **init**
 
