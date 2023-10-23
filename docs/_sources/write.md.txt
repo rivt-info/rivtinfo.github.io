@@ -1,10 +1,8 @@
+'''{toctree}
+:maxdepth: 2
+organize.md
+search.md
 '''
-{toctree}
-
-organize
-search
-'''
-
 
 <style>
   code {
