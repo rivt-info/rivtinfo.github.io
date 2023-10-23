@@ -1,3 +1,10 @@
+'''
+{toctree}
+
+organize
+search
+'''
+
 
 <style>
   code {
