@@ -1,9 +1,7 @@
-**rivt** User Manual
-
-write | organize | share
+**rivt**   write | organize | share
 
 
-**Content**
+**User Manual Content**
 
 ```{toctree}
 :maxdepth: 2
