@@ -342,26 +342,28 @@ document.write(`
     display: block;
     color:#000000;
   }
-</style>
-<style type="text/css">
-  table    { background:#dce8ef; color: #000000; }
-</style>
-<p><strong>rivt</strong> is a markdown language for writing, organizing and sharing
-engineering documents.</p>
-<p><a class="reference external" href="https://rivt-code.net">rivtlib</a> is a Python library for processing rivt files.  It outputs formatted documents in a serveral different
+
+**rivt** is a markdown language for writing, organizing and sharing 
+engineering documents. 
+
+[rivtlib](https://rivt-code.net) is a Python library for processing rivt files.  It outputs formatted documents in a serveral different
 formats. The minimum software needed to write rivt documents is Python 3.8
-with Python science libraries, including <strong>rivtlib</strong>.</p>
-<p><a class="reference internal" href="organize.html"><span class="std std-doc">rivt-doc</span></a> is an editing and publishing framework for rivt
-using additional open source programs. <strong>rivt</strong> works
-with single files, and with extensive reports using hundreds of files.</p>
+with Python science libraries, including **rivtlib**.
+
+[rivt-doc](/organize.md) is an editing and publishing framework for rivt
+using additional open source programs. **rivt** works
+with single files, and with extensive reports using hundreds of files. 
+
 <hr>
-<section id="files">
-<h2>Files<a class="headerlink" href="#files" title="Link to this heading">#</a></h2>
+
+## Files
 <hr>
-<p>A <strong>rivt</strong> file is a utf-8 Python file that includes the import statement
+
+A **rivt** file is a utf-8 Python file that includes the import statement
 <code>import rivtlib.rivtapi as rv</code> which exposes four API functions.
 Each function takes a triple quoted string as argument, which may include
-arbitrary text.</p>
+arbitrary text.
+
 <pre>
 ============= ========== =================================
 API function   name           purpose
@@ -377,7 +379,6 @@ functions may be grouped and executed step-wise using the standard cell decorato
 rv.writemd()</code> and <code> rv.writepdf()</code> which write output files in GitHub Flavored Markdown
 (GFM) and PDF formats respectively.</p>
 <hr>
-</section>
 <section id="api-functions">
 <h2>API Functions<a class="headerlink" href="#api-functions" title="Link to this heading">#</a></h2>
 <hr>
@@ -982,7 +983,6 @@ xyz
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#files">Files</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api-functions">API Functions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#syntax"><strong>Syntax</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#commands">Commands</a><ul class="visible nav section-nav flex-column">

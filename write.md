@@ -17,12 +17,6 @@
     display: block;
     color:#000000;
   }
-</style>
-
-<style type="text/css">
-  table    { background:#dce8ef; color: #000000; }
-</style>
-
 
 **rivt** is a markdown language for writing, organizing and sharing 
 engineering documents. 
