@@ -1,5 +1,5 @@
 
-# **Terms**
+# Terms
 
 <style>
   code {

@@ -1,5 +1,5 @@
 
-# **Write**
+# Write
 
 <style>
   code {
@@ -22,20 +22,6 @@
 <style type="text/css">
   table    { background:#dce8ef; color: #000000; }
 </style>
-
------
-
-`write <./write.html>`_  - rivt engineering markdown
-
-`organize <./organize.html>`_  - documents and reports
-
-`share <./share.html>`_  - publish and search
-
-----
-
-`rivt-online <./online.html>`_  - underconstruction
-
-`MIT open source license <https://opensource.org/license/mit/>`_
 
 
 **rivt** is a markdown language for writing, organizing and sharing 

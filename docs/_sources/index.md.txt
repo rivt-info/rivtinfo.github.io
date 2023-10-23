@@ -1,16 +1,14 @@
-# rivt
+# **rivt**
 
 ## User Manual
 
-[write](write.md) rivt markdown
+### [write](write.md) rivt markdown
 
-[organize](organize.md) documents
+### [organize](organize.md) documents
 
-[share](share.md) report templates
+### [share](share.md) report templates
 
 ----
-
-[rivt-online](online.md) - underconstruction
 
 [MIT open source license](https://opensource.org/license/mit/)
 
