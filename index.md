@@ -1,21 +1,8 @@
-**rivt User Manual**
-
+**rivt**
 
 **write | organize | share**
 
------
-
-`write <./write.html>`_  - rivt engineering markdown
-
-`organize <./organize.html>`_  - documents and reports
-
-`share <./share.html>`_  - publish and search
-
-----
-
-`rivt-online <./online.html>`_  - underconstruction
-
-`MIT open source license <https://opensource.org/license/mit/>`_
+**User Manual**
 
 ```{toctree}
 :maxdepth: 2
