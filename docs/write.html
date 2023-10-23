@@ -468,13 +468,39 @@ parenthesis.</p>
 <p>File locations are specified using shortene, relative paths that include the
 name of the file and the name of its containing folder. Folder organization is
 described <a class="reference internal" href="organize.html#folders"><span class="std std-ref">here</span></a></p>
-<section id="append">
-<h3><strong>append</strong><a class="headerlink" href="#append" title="Link to this heading">#</a></h3>
-</section>
-<section id="image">
-<h3><strong>image</strong><a class="headerlink" href="#image" title="Link to this heading">#</a></h3>
-<p>The image command inserts and formats image data from png or jpg files.</p>
-</section>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>command</p></th>
+<th class="head"><p>API</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>|| <strong>text</strong> | relative path | rivt; plain</p></td>
+<td><p>R I V</p></td>
+</tr>
+<tr class="row-odd"><td><p>The text command inserts and formats plain text files or files with rivt tags.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>|| <strong>append</strong> | relative path | cover.pdf</p></td>
+<td><p>R</p></td>
+</tr>
+<tr class="row-odd"><td><p>The append command attaches PDF files to the end of the doc.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>|| <strong>image</strong>  | relative path, (2nd path) | width, (width)</p></td>
+<td><p>I</p></td>
+</tr>
+<tr class="row-odd"><td><p>The image command inserts and formats png or jpg files.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>|| <a class="reference internal" href="#table">table</a>  | relative path | max col width, align</p></td>
+<td><p>I</p></td>
+</tr>
+<tr class="row-odd"><td><p>|| <a class="reference internal" href="#declare">declare</a> | relative path |  print; noprint</p></td>
+<td><p>V</p></td>
+</tr>
+</tbody>
+</table>
 <section id="table">
 <h3><strong>table</strong><a class="headerlink" href="#table" title="Link to this heading">#</a></h3>
 <p>The table command inserts and formats tabular data from csv or xls files.</p>
@@ -941,8 +967,6 @@ xyz
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#files">Files</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api-functions">API Functions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#commands">Commands</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#append"><strong>append</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#image"><strong>image</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#table"><strong>table</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#declare"><strong>declare</strong></a></li>
 </ul>

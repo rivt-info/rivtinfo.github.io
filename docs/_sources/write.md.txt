@@ -170,30 +170,22 @@ described [here](/organize.md#folders)
   - API 
 * - || **text** | relative path | rivt; plain                     
   - R I V
-* - the text command inserts and formats text from external files. Files may
-be plain text or text with rivt tags.
+* - The text command inserts and formats plain text files or files with rivt tags. 
   - 
-* - || [append](#append) | relative path | cover.pdf
+* - || **append** | relative path | cover.pdf
   - R
 * - The append command attaches PDF files to the end of the doc.
-
-* - || [image](#image)  | relative path, (2nd path) | width, (width)
+  - 
+* - || **image**  | relative path, (2nd path) | width, (width)
   - I
+* - The image command inserts and formats png or jpg files.
+  -  
 * - || [table](#table)  | relative path | max col width, align
   - I
 * - || [declare](#declare) | relative path |  print; noprint
   - V
 ```
 
-
-
-### **append**
-
-
-
-### **image**
-
-The image command inserts and formats image data from png or jpg files.
 
 ### **table**
 
