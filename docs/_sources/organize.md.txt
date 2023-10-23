@@ -1,7 +1,6 @@
 
 # **Organize**
 
-
 `rivtlib <https://rivt-code.net>`__  - Python library.
 (`MIT <https://opensource.org/license/mit/>`__)
 
