@@ -180,23 +180,15 @@ described [here](/organize.md#folders)
   - I
 * - The image command inserts and formats png or jpg files.
   -  
-* - || [table](#table)  | relative path | max col width, align
+* - || **table** | relative path | max col width, align
   - I
-* - || [declare](#declare) | relative path |  print; noprint
+* - The table command inserts and formats tabular data from csv or xls files.
+  - 
+* - || **declare** | relative path |  print; noprint
   - V
+* - The declare command imports values from a csv file written by rivt. Used for passing calculation results between documents. 
+  - 
 ```
-
-
-### **table**
-
-The table command inserts and formats tabular data from csv or xls files.
-
-### **declare**
-
-The declare command imports values from a csv file written by rivt when
-processing assigned and declared values from another doc in the same
-project.
-
 
 <hr>
 
