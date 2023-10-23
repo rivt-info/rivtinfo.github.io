@@ -168,13 +168,15 @@ described [here](/organize.md#folders)
 :header-rows: 1
 * - command 
   - API 
-* - || **text**| relative path | rivt; plain                     
+* - || **text** | relative path | rivt; plain                     
   - R I V
 * - the text command inserts and formats text from external files. Files may
 be plain text or text with rivt tags.
   - 
 * - || [append](#append) | relative path | cover.pdf
   - R
+* - The append command attaches PDF files to the end of the doc.
+
 * - || [image](#image)  | relative path, (2nd path) | width, (width)
   - I
 * - || [table](#table)  | relative path | max col width, align
@@ -184,15 +186,10 @@ be plain text or text with rivt tags.
 ```
 
 
-### **init**
-
-The init command specifies the name of the configuration file which is read
-from the rivt-doc folder. Report formatting can be easily modified by
-specifying a different init file.
 
 ### **append**
 
-The append command attaches PDF files to the end of the doc.
+
 
 ### **image**
 
