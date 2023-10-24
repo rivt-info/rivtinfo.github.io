@@ -37,14 +37,14 @@ existing documents becomes possible, including:
 - plots
 - tabulated data 
 
-engineers could explore more options, converge on effective design solutions
-faster, and explore unfamiliar technologies more efficiently. As document
-contributions accumulate, quality and breadth could evolve rapidly.
+engineers could explore more options, accelerate convergence on effective
+design solutions, and explore unfamiliar technologies more efficiently. As
+document contributions accumulate, quality and breadth would evolve rapidly.
 
-Engineering calculation programs are widely available but they all include
-barriers to sharing and reuse (see table). In general they are incompatible
-with each other, have high initial and continuing upgrade costs, and their 
-reporting and version control features are limited.
+Engineering calculation programs are widely available but they include barriers
+to sharing and reuse (see table). In general they are incompatible with each
+other, have high initial and continuing upgrade costs, and their reporting and
+version control features are limited.
 
 As a result, nearly identical engineering documents are repeatedly written
 simply because resuable documents and templates were unavailable. **rivt** was
@@ -52,15 +52,13 @@ developed to promote profession-wide document development and reuse.
 
 ```{figure} _static/img/table1.png
 :scale: 100 %
+figwidth: image
 :alt: Comparative Table of Engineering Calculation Programs
 
 Comparative Table of Engineering Calculation Programs
 ```
 
-[MIT open source license](https://opensource.org/license/mit/)
-
-
-
+**rivt** uses the [MIT open source license](https://opensource.org/license/mit/)
 
 ```{toctree}
 :maxdepth: 3
