@@ -1,6 +1,6 @@
 
 
-```{figure} _static/img/riv-dark9a.png
+```{figure} _static/img/riv-dark9b.png
 :scale: 40 %
 :figwidth: image
 :align: center
