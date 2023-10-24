@@ -33,7 +33,8 @@
 
 ### **rivt**
 
-  open source markdown language for writing, organizing and sharing engineering documents
+  open source markdown language for organizing, modifying and publishing
+  engineering documents
 
 [**rivtlib**](https://rivt-code.net) 
 
