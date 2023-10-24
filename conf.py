@@ -21,6 +21,10 @@ source_suffix = ['.rst', '.md']
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
+html_context = {
+    # ...
+    "default_mode": "auto"
+}
 html_theme = 'pydata_sphinx_theme'
 html_static_path = ['_static', ]
 html_logo = "_static/img/rivt01a.png"
@@ -31,7 +35,7 @@ html_theme_options = {
     "navbar_align": "content",
     "navbar_start": ["navbar-logo"],
     "navbar_center": ["navbar-nav"],
-    "navbar_end": ["navbar-icon-links"],
+    "navbar_end": ["navbar-icon-links", "theme-switcher"],
     "navbar_persistent": ["search-button"],
     "logo": {
         "text": "rivt",
