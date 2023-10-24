@@ -1,4 +1,9 @@
-# FAQ
+# FAQ and Definitions
+
+<hr>
+
+## FAQ
+<hr>
 
 #### **Q** ABCD
 
@@ -7,14 +12,14 @@
 
 
 
+<hr>
 
-
-
-# Definitions
+## Definitions
+<hr>
 
 #### doc
 
-  output file (document) after processing a rivt file
+  the output file (document) after processing a rivt file
 
 #### division
 
