@@ -13,13 +13,14 @@
 
 <hr>
 
-## [organize](organize.md), [modify](modify.md), [publish](publish.md) engineering documents and templates
+## [FAQ and Definitions](terms.md)
+
+<hr>
+
+### [organize](organize.md), [modify](modify.md), [publish](publish.md) engineering documents and templates
 
 <hr> 
 
-### [FAQ and Definitions](terms.md)
-
-<hr>
 
 ### Why [**rivt**](terms.md#rivt)?
 
@@ -28,15 +29,15 @@ completeness affect cost, quality and timeliness of built projects.
 [rivt](terms.md#rivt) is a software tool designed to improve engineering
 documents by applying open source software principles. These principles provide
 engineering professions an opportunity to produce large, reusable calculation
-libraries that improve in clarity and completeness over time by building on many contributions.
+libraries that improve clarity and completeness over time by building on many contributions.
 
-Because many 21st century engineering technologies are changing slowly, design
+Often 21st century engineering technologies are fully developed and design
 methods may see little or no change for decades. Productive engineering work
-now lies, not so much in technological innovation, but in understanding and
-combining various established design methodologies and technologies to the
-needs of a particular project.
+then lies, not so much in technological innovation, but in understanding and
+combining and adapting various established design methodologies and
+technologies to the needs of a particular project.
 
-Engineering documents are the mechanism for working out successful
+Engineering documents are the mechanism for working out these successful
 combinations. If universal "cut and paste" editing of large libraries of
 existing documents becomes possible, including:
 
