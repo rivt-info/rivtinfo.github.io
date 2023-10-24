@@ -45,12 +45,12 @@ html_theme_options = {
         {
             "rel": "icon",
             "sizes": "16x16",
-            "href": "_static/img/riv16.ico",
+            "href": "_static/img/favicon-16x16.png",
         },
         {
             "rel": "icon",
             "sizes": "32x32",
-            "href": "_static/img/riv32.ico",
+            "href": "_static/img/favicon-32x32.png",
         },
     ]
 }

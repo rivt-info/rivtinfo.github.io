@@ -1,11 +1,20 @@
+## FAQ
 
-# Definitions
+### **Q** ABCD
 
-## rivt-doc
+### **A** 123
 
-[**doc**](/organize.md) 
 
-  open source markdown language for writing, organizing and sharing engineering documents
+
+
+
+
+
+## Definitions
+
+### doc
+
+  output file (document) after processing a rivt file
 
 [**division**](/organize.md) 
 
@@ -27,11 +36,11 @@
 
   open source editing and publishing framework for rivtlib Python library for processing xxxxxxxxxxx asefasfda sadlfkas fsaf sadlkfjs dfsldj sdflkjsd fsf sadlkmjs dfasdflkjsa asd fa 
 
-[**rivtprivate**](/organize.md)
+### rivt-private
 
-  containing folder for private files and 
+  folders containing private files not uploaded when sharing templates
 
-### **rivt**
+### rivt
 
   open source markdown language for organizing, modifying and publishing
   engineering documents

@@ -28,8 +28,8 @@ out a precise route to a destination. Their clarity and completeness dramaticall
 affect cost, quality and timeliness of built projects. **rivt** is a software
 tool designed to improve engineering documents using open source software
 principles and the collective wisdom of the engineering professions. It
-provides an opportunity for engineering professions to develop shared and
-reusable calculation libraries whose clarity and completeness can continuously
+provides an opportunity for the professions to develop shared and
+reusable document libraries where clarity and completeness can continuously
 improve by building on numerous contributions.
 
 Many 21st century engineering technologies are fully developed, and design
