@@ -33,7 +33,7 @@ The intention of rivt is to have the first
 
 <hr>
 
-## Folder Structure
+## Folders
 <hr>
 
 **rivtlib** can process single rivt files, but typically it is used to generate
@@ -53,6 +53,8 @@ subdivisions and sections.
 
 Fixed folder and file prefixes are shown in [ ]. Report and document headings
 are taken from the folder and file labels. 
+
+
 
 <pre>
 [rivt]_Report-Label/               

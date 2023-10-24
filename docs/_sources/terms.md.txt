@@ -1,10 +1,7 @@
 
 # Definitions
 
-<hr>
-
-## rivt
-<hr>
+## rivt-doc
 
 [**doc**](/organize.md) 
 
@@ -34,9 +31,9 @@
 
   containing folder for private files and 
 
-[**rivt**](/modify.md) 
+### **rivt**
 
-markdown language for organizing, modifying and publishing engineering documents.
+  open source markdown language for writing, organizing and sharing engineering documents
 
 [**rivtlib**](https://rivt-code.net) 
 

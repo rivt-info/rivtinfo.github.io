@@ -1,48 +1,54 @@
 
 # **rivt** User Manual
 
-## [organize](organize.md), [modify](modify.md), [publish](publish.md) engineering documents and templates
+<hr>
 
+## [FAQ and Definitions](terms.md)
+
+<hr> 
+
+### [organize](organize.md), [modify](modify.md), [publish](publish.md) engineering documents and templates
 
 <hr>
 
-### Why rivt?
+### Why **rivt**?
 
 Calculations and drawings are detailed road maps. Their clarity and
-completeness affect cost, quality and timeliness of building engineered
-projects. [rivt](terms.md#rivt) is a tool for improving both, by applying open
-source software principles to design documents. Using open source principles
-engineering professions have an opportunity to produce reusable calculation
-libraries that can evolve and improve over time.
+completeness affect cost, quality and timeliness of built projects.
+[rivt](terms.md#rivt) is a software tool designed to improve engineering
+documents by applying open source software principles. These principles provide
+engineering professions an opportunity to produce largre, reusable calculation
+libraries that evolve and improve in clarity and completeness over time.
 
 Because many 21st century engineering technologies are changing slowly, design
 methods may see little or no change for decades. Productive engineering work
 now lies, not so much in technological innovation, but in understanding and
-combining various established design methodologies and technologies.
+combining various established design methodologies and technologies to the
+needs of a particular project.
 
 Engineering documents are the mechanism for working out successful
-combinations. Cut and paste editing, from existing documents, of:
+combinations. If universal "cut and paste" editing of large libraries of
+existing documents becomes possible, including:
 
 - explanatory text
-- drawings
+- images
 - formulas
 - calculations
 - plots
 - tabulated data 
 
-will improve the design document process. Engineers could explore more options,
-converge on effective design solutions faster, and explore unfamiliar
-technologies more efficiently. With many contributions document quality and
-breadth will evolve rapidly.
+engineers could explore more options, converge on effective design solutions
+faster, and explore unfamiliar technologies more efficiently. As document
+contributions accumulate, quality and breadth could evolve rapidly.
 
 Engineering calculation programs are widely available but they all include
 barriers to sharing and reuse (see table). In general they are incompatible
-with each other, have high initial and continuing upgrade costs, and limited
-reporting and version control features.
+with each other, have high initial and continuing upgrade costs, and their 
+reporting and version control features are limited.
 
 As a result, nearly identical engineering documents are repeatedly written
-simply because resuable documents and templates are unavailable. **rivt** was
-developed to promote profession-wide document evolution and reuse.
+simply because resuable documents and templates were unavailable. **rivt** was
+developed to promote profession-wide document development and reuse.
 
 ```{figure} _static/img/table1.png
 :scale: 100 %
@@ -50,27 +56,6 @@ developed to promote profession-wide document evolution and reuse.
 
 Comparative Table of Engineering Calculation Programs
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### [definitions](terms.md)
 
 [MIT open source license](https://opensource.org/license/mit/)
 
