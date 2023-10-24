@@ -30,17 +30,17 @@ tool designed to improve engineering documents using open source software
 principles and the collective wisdom of the engineering professions. It
 provides an opportunity for engineering professions to develop shared and
 reusable calculation libraries whose clarity and completeness can continuously
-improve, by building on numerous contributions.
+improve by building on numerous contributions.
 
-Many 21st century engineering technologies are fully developed and design
+Many 21st century engineering technologies are fully developed, and design
 methods may see little or no change for decades. Productive engineering work
-then lies, not so much in technological innovation, but in understanding and
-combining and adapting various established design methodologies and
-technologies to the needs of a particular project.
+lies not so much in new technological innovation, but in combining and
+adapting various established design methodologies and technologies to the needs
+of a particular project.
 
 Engineering documents are the mechanism for working out these successful
-combinations. If universal "cut and paste" editing of large libraries of
-existing documents becomes possible, including:
+combinations. If universal "cut and paste" editing of large existing libraries
+becomes possible, including:
 
 - explanatory text
 - images
@@ -49,9 +49,10 @@ existing documents becomes possible, including:
 - plots
 - tabulated data 
 
-engineers could explore more options, accelerate convergence to effective
-design solutions, and explore unfamiliar technologies more efficiently. As
-document contributions accumulate, quality and breadth would evolve rapidly.
+engineers will be able to explore more options, accelerate convergence to
+effective design solutions, and become familiar with a broader set of
+technologies. As document contributions accumulate, quality and breadth will
+evolve rapidly.
 
 Engineering calculation programs are widely available but they include barriers
 to sharing and reuse (see table). In general they are incompatible with each
@@ -60,7 +61,8 @@ version control features are limited.
 
 As a result, nearly identical engineering documents are repeatedly written
 simply because resuable documents and templates were unavailable. **rivt** was
-developed to promote profession-wide document development and reuse.
+developed to promote profession-wide document development, improvement and
+reuse.
 
 ```{figure} _static/img/table1.png
 :scale: 80 %
