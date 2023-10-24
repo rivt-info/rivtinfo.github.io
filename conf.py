@@ -41,6 +41,18 @@ html_theme_options = {
         "text": "rivt",
         "image_dark": "_static/img/riv-dark8.png",
     },
+    "favicons": [
+        {
+            "rel": "icon",
+            "sizes": "16x16",
+            "href": "_static/img/riv16.ico",
+        },
+        {
+            "rel": "icon",
+            "sizes": "32x32",
+            "href": "_static/img/riv32.ico",
+        },
+    ]
 }
 
 html_sidebars = {

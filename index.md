@@ -22,12 +22,14 @@
 
 ### Why [**rivt**](terms.md#rivt)?
 
-Calculations and drawings are detailed road maps. Their clarity and
-completeness affect cost, quality and timeliness of built projects.
-[rivt](terms.md#rivt) is a software tool designed to improve engineering
-documents by applying open source software principles. These principles provide
-engineering professions an opportunity to produce large, reusable calculation
-libraries that improve clarity and completeness over time by building on many contributions.
+Calculations and drawings are similar to detailed trip instructions that map
+out the route to a destination. Their clarity and completeness dramatically
+affect cost, quality and timeliness of built projects. **rivt** is a software
+tool designed to improve engineering documents using open source software
+principles and the collective wisdom of the engineering professions. It
+provides an opportunity for engineering professions to develop shared and
+reusable calculation libraries whose clarity and completeness can continuously
+improve, by building on many contributions.
 
 Often 21st century engineering technologies are fully developed and design
 methods may see little or no change for decades. Productive engineering work
