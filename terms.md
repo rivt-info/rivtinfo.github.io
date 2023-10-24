@@ -1,22 +1,22 @@
-## FAQ
+# FAQ
 
-### **Q** ABCD
+#### **Q** ABCD
 
-### **A** 123
-
-
+#### **A** 123
 
 
 
 
 
-## Definitions
 
-### doc
+
+# Definitions
+
+#### doc
 
   output file (document) after processing a rivt file
 
-[**division**](/organize.md) 
+#### division
 
   open source markdown language for writing, organizing and sharing engineering documents
 
