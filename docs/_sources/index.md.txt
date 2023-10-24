@@ -1,12 +1,10 @@
 
 
-```{figure} _static/img/riv-dark9e.png
+```{figure} _static/img/riv-dark9g.png
 :scale: 50 %
 :figwidth: image
 :align: center
 :alt: rivt logo
-
-**rivt**
 ```
 
 # User Manual
