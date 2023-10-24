@@ -27,13 +27,14 @@ maps reduce the chance of getting lost or making wrong turns. **rivt** improves
 document clarity and completeness - which improves cost, quality and
 timeliness.
 
-Because land changes slowly, road maps only need updates, not re-creation. Many
+Because land changes slowly road maps only need updates, not re-creation. Many
 engineering technologies also change slowly. Assembling engineering documents
-from existing ones saves time and reduces errors.
+from existing ones saves time and reduces errors. Engineering is about
+integration. Integrating known scientific ideas or technologies to solve a
+problem or financial budgets to produce a result. 
 
-Engineering is about integrating established design methods. At the document
-level this approach needs fluid "cut and paste" editing from existing
-documents, including:
+At the document level integration means easy "cut and paste" editing to
+integrate all of the ways engineers describe the world into new documents:
 
 - text
 - images
@@ -42,20 +43,21 @@ documents, including:
 - plots
 - data 
 
-This **rivt** capability, when implemented across large document libraries,
-allows engineers to explore more options, become familiar with technologies and
-find better solutions. The open source software model permits and encourages
-continuous small contributions to such libraries.
+**rivt** has this capability to mix and match from existing documents and data
+sources. When implemented across large document libraries it allows engineers
+to explore more options, become familiar with technologies and find better
+solutions. The open source software model it is built on permits and encourages
+continuous contributions to such libraries.
 
-Engineering documents include confidential client and project information
-dispersed among generic descriptions and calculations. **rivt** allows private
-designation of specific inputs and outputs, and automatically generates
-documents of different types for projects or public libraries.
+In addition, engineering documents include confidential client and project
+information interspersed among the generic descriptions and calculations.
+**rivt** allows designation of specific inputs and outputs as private, and
+automatically generates separate project or public documents for different
+purposes.
 
 Engineering document software is widely available but it presents barriers to
 sharing and reuse (see table). It has high initial cost, continuous upgrade
-costs, limited report formatting and version control, and is mutually
-incompatible.
+costs, limited report formatting and version control, and mutual incompatibility.
 
 Consequentially, nearly identical engineering documents are repeatedly written
 from scratch, simply because reusable documents and templates are unavailable.
