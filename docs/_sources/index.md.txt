@@ -16,10 +16,12 @@
 
 <hr>
 
-### [organize](organize.md), [modify](modify.md), [publish](publish.md) engineering documents and templates
+### [organize](organize.md), 
+### [modify](modify.md), 
+### [publish](publish.md) 
+### engineering documents and templates
 
 <hr> 
-
 
 ### Why [**rivt**](terms.md#rivt)?
 
