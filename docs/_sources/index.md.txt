@@ -1,26 +1,34 @@
 
-# [rivt](terms.md#rivt)
 
-## **User Manual**
+```{figure} _static/img/riv-dark8.png
+:scale: 80 %
+:figwidth: image
+:align: center
+:alt: rivt logo
+
+**rivt**
+```
+
+# User Manual
 
 <hr>
 
-### [FAQ and Definitions](terms.md)
+## [organize](organize.md), [modify](modify.md), [publish](publish.md) engineering documents and templates
 
 <hr> 
 
-### [organize](organize.md), [modify](modify.md), [publish](publish.md) engineering documents and templates
+### [FAQ and Definitions](terms.md)
 
 <hr>
 
-### Why **rivt**?
+### Why [**rivt**](terms.md#rivt)?
 
 Calculations and drawings are detailed road maps. Their clarity and
 completeness affect cost, quality and timeliness of built projects.
 [rivt](terms.md#rivt) is a software tool designed to improve engineering
 documents by applying open source software principles. These principles provide
-engineering professions an opportunity to produce largre, reusable calculation
-libraries that evolve and improve in clarity and completeness over time.
+engineering professions an opportunity to produce large, reusable calculation
+libraries that improve in clarity and completeness over time by building on many contributions.
 
 Because many 21st century engineering technologies are changing slowly, design
 methods may see little or no change for decades. Productive engineering work
