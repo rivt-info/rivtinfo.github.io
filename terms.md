@@ -3,14 +3,18 @@
 <hr>
 
 ## FAQ
+
 <hr>
 
-#### **Q** ABCD
+**Q** Abcde
 
-#### **A** 123
+**A** Xyz
 
+<hr>
 
+**Q** Abcde
 
+**A** Xyz
 
 <hr>
 
@@ -25,11 +29,11 @@
 
   open source markdown language for writing, organizing and sharing engineering documents
 
-[**report**](/organize.md) 
+#### report
 
   open source markdown language for writing, organizing and sharing engineering documents asdfasf sdflkjsadf sd fsaedlfk fsadlf sa
 
-[**section**](/organize.md) 
+#### section 
 
   open source markdown language for writing, organizing and sharing engineering documents
 
