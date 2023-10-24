@@ -1,9 +1,11 @@
 
-# **rivt** User Manual
+# [rivt](terms.md#rivt)
+
+## **User Manual**
 
 <hr>
 
-## [FAQ and Definitions](terms.md)
+### [FAQ and Definitions](terms.md)
 
 <hr> 
 
