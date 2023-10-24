@@ -51,7 +51,7 @@ simply because resuable documents and templates were unavailable. **rivt** was
 developed to promote profession-wide document development and reuse.
 
 ```{figure} _static/img/table1.png
-:scale: 100 %
+:scale: 80 %
 :figwidth: image
 :alt: Comparative Table of Engineering Calculation Programs
 
