@@ -53,6 +53,7 @@ developed to promote profession-wide document development and reuse.
 ```{figure} _static/img/table1.png
 :scale: 80 %
 :figwidth: image
+:align: left
 :alt: Comparative Table of Engineering Calculation Programs
 
 Comparative Table of Engineering Calculation Programs
