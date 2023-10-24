@@ -8,63 +8,54 @@
 :alt: rivt logo
 ```
 
-# User Manual
+# rivt User Manual
 
 <hr>
 
-## [organize](organize.md)
-## [modify](modify.md)
-## [publish](publish.md) 
+## [organize](organize.md) -- [modify](modify.md) -- [publish](publish.md) 
 
 <hr> 
 
 ### Why [**rivt**](terms.md#rivt)?
 
-**rivt** is open source software for organizing, modifying and publishing
-engineering documents. It was written, as most open source software, to scratch
-and itch.
+**rivt** is open source software for writing, organizing, modifying, and
+publishing engineering documents. It minimizes writing - and maximizes reuse of
+existing documents.
 
-Calculations and drawings are similar to detailed trip instructions that map
-out a precise route to a destination. Their clarity and completeness
-dramatically affect cost, quality and timeliness of built projects. **rivt**
-was written to improve the production of engineering documents by using open
-source software principles and the collective wisdom of the engineering
-professions. 
+Engineering documents (e.g. calculations and drawings) are like maps to a
+destination. Good maps reduce the chance of getting lost or making wrong turns.
+**rivt** improves clarity and completeness which improves cost, quality and
+timeliness of projects.
 
-It provides an opportunity for the professions to develop shared and reusable
-document libraries that will save time and improve clarity and completeness by
-integrating many small improvements over time.
+Because land changes slowly, new road maps only need to update existing maps.
+Similarly, many engineering technologies change slowly. Updates save time and
+reduce errors. Engineering work today depends on integrating established
+methods into a new project or design. 
 
-Many 21st century engineering technologies are fully developed. Design methods
-may see little or no change for decades. Productive engineering work lies more
-in combining and adapting various established design methodologies and
-technologies to the needs of a particular project than in major new
-technological innovation.
+At the software level this requires easily connecting existing documents, or
+parts of documents, in new ways. **rivt** adds universal "cut and paste"
+editing of:
 
-Engineering documents are the mechanism for working out these successful
-combinations. Universal "cut and paste" editing of: 
-
-- explanatory text
+- text
 - images
 - formulas
 - calculations
 - plots
-- tabulated data 
+- data 
 
-across large existing libraries would bring some welcome change. Engineers will
-explore more options, accelerate convergence to effective design solutions, and
-become familiar with a broader set of technologies. As document contributions
-accumulate, quality and breadth will evolve rapidly.
+When this updating capability is implemented across large diverse libraries,
+engineers will explore more options, become familiar with technologies and find
+better solutions. As document contributions accumulate, quality and breadth
+continuously improves.
 
-Engineering calculation programs are widely available but they include barriers
-to sharing and reuse (see table). In general they are incompatible with each
-other, have high initial and upgrade costs, and their reporting and version
-control features are limited.
+Today, engineering document programs are widely available but present barriers
+to sharing and reuse (see table). They are mutually incompatible, have high
+initial and upgrade costs, and report formatting and version control features
+are limited.
 
-As a result, nearly identical engineering documents are repeatedly written
-simply because resuable documents and templates were unavailable. **rivt** was
-developed to promote profession-wide document development, improvement and
-reuse.
+Consequentially, nearly identical engineering documents are repeatedly written
+from scratch, simply because reusable documents and templates are unavailable.
+**rivt** was developed to change this world.
 
 ```{figure} _static/img/table1.png
 :scale: 80 %
