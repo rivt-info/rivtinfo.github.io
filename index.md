@@ -1,6 +1,7 @@
 
 
 ```{figure} _static/img/riv-dark9e.png
+:class: dark-light
 :scale: 40 %
 :figwidth: image
 :align: center
@@ -23,15 +24,15 @@
 ### Why [**rivt**](terms.md#rivt)?
 
 Calculations and drawings are similar to detailed trip instructions that map
-out the route to a destination. Their clarity and completeness dramatically
+out a precise route to a destination. Their clarity and completeness dramatically
 affect cost, quality and timeliness of built projects. **rivt** is a software
 tool designed to improve engineering documents using open source software
 principles and the collective wisdom of the engineering professions. It
 provides an opportunity for engineering professions to develop shared and
 reusable calculation libraries whose clarity and completeness can continuously
-improve, by building on many contributions.
+improve, by building on numerous contributions.
 
-Often 21st century engineering technologies are fully developed and design
+Many 21st century engineering technologies are fully developed and design
 methods may see little or no change for decades. Productive engineering work
 then lies, not so much in technological innovation, but in understanding and
 combining and adapting various established design methodologies and
