@@ -27,7 +27,7 @@ html_context = {
 }
 html_theme = 'pydata_sphinx_theme'
 html_static_path = ['_static', ]
-html_logo = "_static/img/rivt01a.png"
+html_logo = "_static/img/rivt01b.png"
 html_theme_options = {
     "show_nav_level": 2,
     "show_toc_level": 3,
@@ -39,7 +39,7 @@ html_theme_options = {
     "navbar_persistent": ["search-button"],
     "logo": {
         "text": "rivt",
-        "image_dark": "_static/img/riv-dark8.png",
+        "image_dark": "_static/img/rivt01b.png",
     },
 }
 
