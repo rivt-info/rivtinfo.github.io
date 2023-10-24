@@ -1,7 +1,7 @@
 
 
-```{figure} _static/img/riv-dark8.png
-:scale: 80 %
+```{figure} _static/img/riv-dark9.png
+:scale: 50 %
 :figwidth: image
 :align: center
 :alt: rivt logo
@@ -47,7 +47,7 @@ existing documents becomes possible, including:
 - plots
 - tabulated data 
 
-engineers could explore more options, accelerate convergence on effective
+engineers could explore more options, accelerate convergence to effective
 design solutions, and explore unfamiliar technologies more efficiently. As
 document contributions accumulate, quality and breadth would evolve rapidly.
 
