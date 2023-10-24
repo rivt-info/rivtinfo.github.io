@@ -1,7 +1,7 @@
 
 
 ```{figure} _static/img/riv-dark9e.png
-:scale: 45 %
+:scale: 40 %
 :figwidth: image
 :align: center
 :alt: rivt logo
