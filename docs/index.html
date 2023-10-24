@@ -7,7 +7,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <link href="_static/favicon-32x32.png" sizes="32x32" rel="icon" type="image/png">
+    <link href="_static/favicon-16x16.png" sizes="16x16" rel="icon" type="image/png">
     <title>User Manual &#8212; rivt 0.1 documentation</title>
   
   
@@ -30,8 +31,6 @@
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="icon" sizes="16x16" type="image/png" href="_static/_static/img/favicon-16x16.png" />
-    <link rel="icon" sizes="32x32" type="image/png" href="_static/_static/img/favicon-32x32.png" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
@@ -169,6 +168,13 @@
                 
 
                     <li class="nav-item">
+                      <a class="nav-link nav-internal" href="terms.html">
+                        FAQ
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
                       <a class="nav-link nav-internal" href="install.html">
                          Install
                       </a>
@@ -273,6 +279,13 @@ document.write(`
                 
 
                     <li class="nav-item">
+                      <a class="nav-link nav-internal" href="terms.html">
+                        FAQ
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
                       <a class="nav-link nav-internal" href="install.html">
                          Install
                       </a>
@@ -331,40 +344,36 @@ document.write(`
 <section id="user-manual">
 <h1>User Manual<a class="headerlink" href="#user-manual" title="Link to this heading">#</a></h1>
 <hr>
-<section id="faq-and-definitions">
-<h2><a class="reference internal" href="terms.html"><span class="std std-doc">FAQ and Definitions</span></a><a class="headerlink" href="#faq-and-definitions" title="Link to this heading">#</a></h2>
-<hr>
 <section id="organize">
-<h3><a class="reference internal" href="organize.html"><span class="std std-doc">organize</span></a>,<a class="headerlink" href="#organize" title="Link to this heading">#</a></h3>
+<h2><a class="reference internal" href="organize.html"><span class="std std-doc">organize</span></a><a class="headerlink" href="#organize" title="Link to this heading">#</a></h2>
 </section>
 <section id="modify">
-<h3><a class="reference internal" href="modify.html"><span class="std std-doc">modify</span></a>,<a class="headerlink" href="#modify" title="Link to this heading">#</a></h3>
+<h2><a class="reference internal" href="modify.html"><span class="std std-doc">modify</span></a><a class="headerlink" href="#modify" title="Link to this heading">#</a></h2>
 </section>
 <section id="publish">
-<h3><a class="reference internal" href="publish.html"><span class="std std-doc">publish</span></a><a class="headerlink" href="#publish" title="Link to this heading">#</a></h3>
-</section>
-<section id="engineering-documents-and-templates">
-<h3>engineering documents and templates<a class="headerlink" href="#engineering-documents-and-templates" title="Link to this heading">#</a></h3>
+<h2><a class="reference internal" href="publish.html"><span class="std std-doc">publish</span></a><a class="headerlink" href="#publish" title="Link to this heading">#</a></h2>
 <hr> 
-</section>
 <section id="why-rivt">
 <h3>Why <a class="reference internal" href="terms.html#rivt"><span class="std std-ref"><strong>rivt</strong></span></a>?<a class="headerlink" href="#why-rivt" title="Link to this heading">#</a></h3>
+<p><strong>rivt</strong> is open source software for organizing, modifying and publishing
+engineering documents. It was written, as most open source software, to scratch
+and itch.</p>
 <p>Calculations and drawings are similar to detailed trip instructions that map
-out a precise route to a destination. Their clarity and completeness dramatically
-affect cost, quality and timeliness of built projects. <strong>rivt</strong> is a software
-tool designed to improve engineering documents using open source software
-principles and the collective wisdom of the engineering professions. It
-provides an opportunity for the professions to develop shared and
-reusable document libraries where clarity and completeness can continuously
-improve by building on numerous contributions.</p>
-<p>Many 21st century engineering technologies are fully developed, and design
-methods may see little or no change for decades. Productive engineering work
-lies not so much in new technological innovation, but in combining and
-adapting various established design methodologies and technologies to the needs
-of a particular project.</p>
+out a precise route to a destination. Their clarity and completeness
+dramatically affect cost, quality and timeliness of built projects. <strong>rivt</strong>
+was written to improve the production of engineering documents by using open
+source software principles and the collective wisdom of the engineering
+professions.</p>
+<p>It provides an opportunity for the professions to develop shared and reusable
+document libraries that will save time and improve clarity and completeness by
+integrating many small improvements over time.</p>
+<p>Many 21st century engineering technologies are fully developed. Design methods
+may see little or no change for decades. Productive engineering work lies more
+in combining and adapting various established design methodologies and
+technologies to the needs of a particular project than in major new
+technological innovation.</p>
 <p>Engineering documents are the mechanism for working out these successful
-combinations. If universal “cut and paste” editing of large existing libraries
-becomes possible, including:</p>
+combinations. Universal “cut and paste” editing of:</p>
 <ul class="simple">
 <li><p>explanatory text</p></li>
 <li><p>images</p></li>
@@ -373,14 +382,14 @@ becomes possible, including:</p>
 <li><p>plots</p></li>
 <li><p>tabulated data</p></li>
 </ul>
-<p>engineers will be able to explore more options, accelerate convergence to
-effective design solutions, and become familiar with a broader set of
-technologies. As document contributions accumulate, quality and breadth will
-evolve rapidly.</p>
+<p>across large existing libraries would bring some welcome change. Engineers will
+explore more options, accelerate convergence to effective design solutions, and
+become familiar with a broader set of technologies. As document contributions
+accumulate, quality and breadth will evolve rapidly.</p>
 <p>Engineering calculation programs are widely available but they include barriers
 to sharing and reuse (see table). In general they are incompatible with each
-other, have high initial and continuing upgrade costs, and their reporting and
-version control features are limited.</p>
+other, have high initial and upgrade costs, and their reporting and version
+control features are limited.</p>
 <p>As a result, nearly identical engineering documents are repeatedly written
 simply because resuable documents and templates were unavailable. <strong>rivt</strong> was
 developed to promote profession-wide document development, improvement and
@@ -432,11 +441,9 @@ reuse.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#faq-and-definitions"><span class="xref myst">FAQ and Definitions</span></a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#organize"><span class="xref myst">organize</span>,</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modify"><span class="xref myst">modify</span>,</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#publish"><span class="xref myst">publish</span></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#engineering-documents-and-templates">engineering documents and templates</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#organize"><span class="xref myst">organize</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modify"><span class="xref myst">modify</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publish"><span class="xref myst">publish</span></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-rivt">Why <span class="xref myst"><strong>rivt</strong></span>?</a></li>
 </ul>
 </li>
@@ -483,7 +490,7 @@ reuse.</p>
       
         <div class="footer-item">
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.5.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
     <br/>
   </p>
 </div>

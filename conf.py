@@ -14,7 +14,7 @@ myst_enable_extensions = ['substitution', 'deflist',
                           'html_image', 'amsmath']
 
 extensions = ['myst_parser', 'sphinx.ext.githubpages',
-              "sphinxcontrib.jquery", 'sphinx_copybutton']
+              "sphinxcontrib.jquery", 'sphinx_copybutton', 'sphinx_favicon']
 
 source_suffix = ['.rst', '.md']
 
@@ -26,7 +26,7 @@ html_context = {
     "default_mode": "auto"
 }
 html_theme = 'pydata_sphinx_theme'
-html_static_path = ['_static', ]
+html_static_path = ['_static', '_static/img/']
 html_logo = "_static/img/riv-dark8.png"
 html_theme_options = {
     "show_nav_level": 2,
@@ -40,24 +40,17 @@ html_theme_options = {
     "logo": {
         "text": "rivt",
         "image_dark": "_static/img/riv-dark8.png",
-    },
-    "favicons": [
-        {
-            "rel": "icon",
-            "sizes": "16x16",
-            "href": "_static/img/favicon-16x16.png",
-        },
-        {
-            "rel": "icon",
-            "sizes": "32x32",
-            "href": "_static/img/favicon-32x32.png",
-        },
-    ]
+    }
 }
 
 html_sidebars = {
     "**": ["sidebar-nav-bs"]
 }
+
+favicons = [
+    {"href": "favicon-32x32.png"},
+    {"href": "favicon-16x16.png"},
+]
 
 
 # For the full list of built-in configuration values, see the documentation:

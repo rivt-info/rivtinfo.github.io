@@ -12,37 +12,37 @@
 
 <hr>
 
-## [FAQ and Definitions](terms.md)
-
-<hr>
-
-### [organize](organize.md), 
-### [modify](modify.md), 
-### [publish](publish.md) 
-### engineering documents and templates
+## [organize](organize.md)
+## [modify](modify.md)
+## [publish](publish.md) 
 
 <hr> 
 
 ### Why [**rivt**](terms.md#rivt)?
 
-Calculations and drawings are similar to detailed trip instructions that map
-out a precise route to a destination. Their clarity and completeness dramatically
-affect cost, quality and timeliness of built projects. **rivt** is a software
-tool designed to improve engineering documents using open source software
-principles and the collective wisdom of the engineering professions. It
-provides an opportunity for the professions to develop shared and
-reusable document libraries where clarity and completeness can continuously
-improve by building on numerous contributions.
+**rivt** is open source software for organizing, modifying and publishing
+engineering documents. It was written, as most open source software, to scratch
+and itch.
 
-Many 21st century engineering technologies are fully developed, and design
-methods may see little or no change for decades. Productive engineering work
-lies not so much in new technological innovation, but in combining and
-adapting various established design methodologies and technologies to the needs
-of a particular project.
+Calculations and drawings are similar to detailed trip instructions that map
+out a precise route to a destination. Their clarity and completeness
+dramatically affect cost, quality and timeliness of built projects. **rivt**
+was written to improve the production of engineering documents by using open
+source software principles and the collective wisdom of the engineering
+professions. 
+
+It provides an opportunity for the professions to develop shared and reusable
+document libraries that will save time and improve clarity and completeness by
+integrating many small improvements over time.
+
+Many 21st century engineering technologies are fully developed. Design methods
+may see little or no change for decades. Productive engineering work lies more
+in combining and adapting various established design methodologies and
+technologies to the needs of a particular project than in major new
+technological innovation.
 
 Engineering documents are the mechanism for working out these successful
-combinations. If universal "cut and paste" editing of large existing libraries
-becomes possible, including:
+combinations. Universal "cut and paste" editing of: 
 
 - explanatory text
 - images
@@ -51,15 +51,15 @@ becomes possible, including:
 - plots
 - tabulated data 
 
-engineers will be able to explore more options, accelerate convergence to
-effective design solutions, and become familiar with a broader set of
-technologies. As document contributions accumulate, quality and breadth will
-evolve rapidly.
+across large existing libraries would bring some welcome change. Engineers will
+explore more options, accelerate convergence to effective design solutions, and
+become familiar with a broader set of technologies. As document contributions
+accumulate, quality and breadth will evolve rapidly.
 
 Engineering calculation programs are widely available but they include barriers
 to sharing and reuse (see table). In general they are incompatible with each
-other, have high initial and continuing upgrade costs, and their reporting and
-version control features are limited.
+other, have high initial and upgrade costs, and their reporting and version
+control features are limited.
 
 As a result, nearly identical engineering documents are repeatedly written
 simply because resuable documents and templates were unavailable. **rivt** was
@@ -83,5 +83,6 @@ Comparative Table of Engineering Calculation Programs
 organize
 modify
 publish
+terms
 install
 ```

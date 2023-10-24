@@ -1,8 +1,4 @@
-# FAQ and Definitions
-
-<hr>
-
-## FAQ
+# FAQ
 
 <hr>
 
@@ -20,6 +16,8 @@
 
 ## Definitions
 <hr>
+
+### text
 
 #### doc
 
