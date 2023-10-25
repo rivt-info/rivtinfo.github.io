@@ -11,25 +11,24 @@
 
 <hr>
 
-## [organize](organize.md) ... [modify](modify.md) ... [publish](publish.md) 
+## [organize](organize.md) .. [modify](modify.md) .. [publish](publish.md) 
 
 <hr> 
 
 ### Why [**rivt**](terms.md#rivt)?
 
-**rivt** is open source software for writing, organizing, modifying, and
-publishing engineering documents. It maximizes document reuse and minimizes
-new writing.
+**rivt** is open source software for publishing engineering documents that
+minimize new writing and maximize reuse of existing material. 
 
 Engineering documents (e.g. calculations and drawings) are like road maps. Good
-maps reduce the chance of getting lost or making wrong turns. Through document
-reuse and public sharing, **rivt** improves clarity and completeness - which
-improves cost, quality and timeliness.
+maps reduce the chance of getting lost or making wrong turns. Because land
+changes slowly road maps only need updates for new roads, not re-creation from
+scratch. Updating is faster and less error prone. Many engineering technologies
+are also changing slowly. Assembling from existing documents saves time and
+reduces errors, compared to writing them from scratch.
 
-Because land changes slowly road maps only need updates, not re-creation. Many
-engineering technologies are also change slowly. Organizing new engineering
-documents using parts of existing ones saves time and reduces errors. **rivt**
-makes it easy to "cut and paste" all of the methods engineers use to communicate:
+**rivt** is designed for document sharing and reuse. It's easy to "cut and
+paste" all of the methods engineers use to communicate their ideas:
 
 - text
 - images
@@ -38,25 +37,20 @@ makes it easy to "cut and paste" all of the methods engineers use to communicate
 - plots
 - data 
 
-**rivt** has the capability to recombine parts from existing documents,
-including data from a wide variety of external sources, into new documents. It
-allows engineers to explore more options, become familiar with technologies and
-find better solutions. The open source software model it is built on permits
-and encourages continuous, incremental contributions to such libraries.
+**rivt** allows engineers to explore more options, become familiar with
+technologies, and find better solutions. The open source software model it
+builds on encourages continuous, additive, improvements.
 
-Engineering documents include confidential client and project information,
-interspersed in generic descriptions and calculations. **rivt** allows
-designation of certain inputs and outputs as private and automatically
-generates separate documents for project or public "template" purposes.
+Engineering documents sometimes include confidential information. **rivt** can
+designate specified inputs and outputs as private, and automatically generate
+separate documents for private or "shared template" purposes.
 
-Engineering document software is widely available but it presents barriers to
+Engineering document software is widely available but presents barriers to
 sharing and reuse (see table). It has high initial cost, continuous upgrade
 costs, limited report formatting, limited version control, and mutual
-incompatibility.
-
-Consequentially nearly identical engineering documents are repeatedly written
-from scratch, simply because reusable documents and templates are unavailable.
-**rivt** was developed to change this world.
+incompatibility. Consequentially nearly identical engineering documents are
+repeatedly written from scratch, simply because reusable documents and
+templates are unavailable. **rivt** was developed to change this world.
 
 ```{figure} _static/img/table1.png
 :scale: 80 %
