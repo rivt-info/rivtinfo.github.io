@@ -31,7 +31,6 @@ html_theme = 'sphinx_book_theme'
 html_static_path = ['_static', '_static/img/']
 html_logo = "_static/img/riv-dark8c.png"
 html_theme_options = {
-    "announcement": "rivt v0.1",
     "home_page_in_toc": True,
     "show_navbar_depth": 3,
     "navbar_align": "content",

@@ -71,4 +71,5 @@ modify
 publish
 terms
 install
+changelog
 ```
