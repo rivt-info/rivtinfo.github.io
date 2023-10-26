@@ -68,10 +68,18 @@ Comparative Table of Engineering Calculation Programs
 :maxdepth: 3
 :hidden:
 
-organize
-modify
-publish
-terms
-install
-changelog
+organize/find
+organize/folders
+organize/setup
+modify/collaborate
+modify/edit
+publish/docs
+publish/github
+faq/faq
+faq/terms
+download/changes
+download/portable
+download/system
+examples/example1
+examples/example2
 ```
