@@ -26,7 +26,7 @@ html_context = {
     "default_mode": "auto"
 }
 html_sidebars = {
-    "**": ["sbt-sidebar-nav.html", "search-field.html", "navbar-logo.html"]}
+    "**": ["navbar-logo.html", "search-field.html", "sbt-sidebar-nav.html"]}
 html_theme = 'sphinx_book_theme'
 html_static_path = ['_static', '_static/img/']
 html_logo = "_static/img/riv-dark8c.png"
