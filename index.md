@@ -11,11 +11,11 @@
 # rivt User Manual
 
 
-[organize](organize.md) .. [modify](modify.md) .. [publish](publish.md) 
+## [organize](organize.md) .. [modify](modify.md) .. [publish](publish.md) 
 
 --------
 
-Why **rivt**?
+### Why [**rivt**](terms.md#rivt)?
 
 **rivt** is open source software for publishing engineering documents with
 minimum new writing and maximum reuse of existing material. 
