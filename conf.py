@@ -36,7 +36,7 @@ html_theme_options = {
     "home_page_in_toc": True,
     "navbar_align": "content",
     "navbar_start": ["navbar-logo"],
-    "navbar_center": ["navbar-nav"],
+    "navbar_center": [],
     "navbar_end": ["navbar-icon-links"],
     "primary_sidebar_end": ["indices.html"],
     "logo": {
