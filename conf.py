@@ -44,11 +44,6 @@ html_theme_options = {
         "image_dark": "_static/img/riv-dark8c.png",
     }
 }
-
-html_sidebars = {
-    "**": ["sidebar-nav-bs"]
-}
-
 favicons = [
     {"href": "favicon-32x32.png"},
     {"href": "favicon-16x16.png"},
