@@ -1,21 +1,21 @@
 
-```{figure} _static/img/riv-dark9e.png
-:class: dark-light
-:scale: 40 %
-:figwidth: image
-:align: center
-:alt: rivt logo
-```
+.. figure:: _static/img/riv-dark9e.png
+    :class: dark-light
+    :scale: 40 %
+    :figwidth: image
+    :align: center
+    :alt: rivt logo
 
-# rivt User Manual
 
-<hr>
+================
+rivt User Manual
+================
 
-## [organize](organize.md) .. [modify](modify.md) .. [publish](publish.md) 
+organize <organize.md> .. [modify](modify.md) .. [publish](publish.md) 
 
-<hr> 
+--------
 
-### Why [**rivt**](terms.md#rivt)?
+Why **rivt**?
 
 **rivt** is open source software for publishing engineering documents that
 minimize new writing and maximize reuse of existing material. 
@@ -52,23 +52,24 @@ incompatibility. Consequentially nearly identical engineering documents are
 repeatedly written from scratch, simply because reusable documents and
 templates are unavailable. **rivt** was developed to change this world.
 
-```{figure} _static/img/table1.png
-:scale: 80 %
-:figwidth: image
-:align: left
-:alt: Comparative Table of Engineering Calculation Programs
+.. figure:: _static/img/table1.png
+    :scale: 80 %
+    :figwidth: image
+    :align: left
+    :alt: Comparative Table of Engineering Calculation Programs
 
-Comparative Table of Engineering Calculation Programs
-```
+    Comparative Table of Engineering Calculation Programs
 
-**rivt** uses the [MIT open source license](https://opensource.org/license/mit/)
 
-```{toctree}
-:maxdepth: 3
-:hidden:
-organize
-modify
-publish
-terms
-install
-```
+**rivt** uses the MIT open source license <https://opensource.org/license/mit/>
+
+.. toctree::
+    :maxdepth: 3
+    :hidden:
+
+    organize
+    modify
+    publish
+    terms
+    install
+
