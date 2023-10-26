@@ -65,6 +65,7 @@ templates are unavailable. **rivt** was developed to change this world.
 
 .. toctree::
     :maxdepth: 3
+    :hidden:
 
     organize
     modify

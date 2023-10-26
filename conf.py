@@ -41,6 +41,7 @@ html_theme_options = {
     "navbar_persistent": ["search-button"],
     "primary_sidebar_end": ["indices.html"],
     "logo": {
+        "text": "rivt",
         "image_dark": "_static/img/riv-dark8c.png",
     }
 }
