@@ -38,7 +38,7 @@ html_theme_options = {
     "navigation_depth": 3,
     "navbar_align": "content",
     "navbar_start": ["navbar-logo"],
-    "navbar_center": ["navbar-nav"],
+    "navbar_center": [],
     "navbar_end": ["navbar-icon-links"],
     "primary_sidebar_end": ["indices.html"],
     "logo": {
