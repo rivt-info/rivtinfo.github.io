@@ -8,7 +8,7 @@
 ```
 
 
-# rivt User Manual
+# **rivt User Manual**
 
 <hr>
 
