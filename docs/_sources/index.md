@@ -10,10 +10,11 @@
 
 # rivt User Manual
 
+<hr>
 
 ## [organize](organize.md) .. [modify](modify.md) .. [publish](publish.md) 
 
---------
+<hr>
 
 ### Why [**rivt**](terms.md#rivt)?
 
