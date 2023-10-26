@@ -24,8 +24,9 @@ minimum new writing and maximum reuse of existing material.
 Engineering documents (e.g. calculations and drawings) are like road maps. Good
 maps reduce the chance of getting lost or making wrong turns. Road maps only
 need updates when new roads are built, not re-creation from scratch. Many
-engineering technologies are changing slowly and ssembling from existing
-documents saves time and reduces errors, compared to writing them from scratch.
+engineering technologies are changing slowly and assembling documents from
+existing material saves time and reduces errors, compared to writing from
+scratch.
 
 **rivt** is designed for document sharing and reuse. In **rivt** it's easy to
 edit and recombine arbitrary document components, including:
