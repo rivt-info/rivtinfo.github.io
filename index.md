@@ -24,11 +24,11 @@ minimum new writing and maximum reuse of existing material.
 Engineering documents (e.g. calculations and drawings) are like road maps. Good
 maps reduce the chance of getting lost or making wrong turns. Road maps only
 need updates when new roads are built, not re-creation from scratch. Many
-engineering technologies are also changing slowly. Assembling from existing
+engineering technologies are changing slowly and ssembling from existing
 documents saves time and reduces errors, compared to writing them from scratch.
 
-**rivt** is designed for document sharing and reuse. It's easy to "cut and
-paste" all of the methods engineers use to communicate their ideas:
+**rivt** is designed for document sharing and reuse. In **rivt** it's easy to
+edit and recombine arbitrary document components, including:
 
 - text
 - images
@@ -46,11 +46,11 @@ designate specified inputs and outputs as private, and automatically generate
 separate documents for private or "shared template" purposes.
 
 Engineering document software is widely available but presents barriers to
-sharing and reuse (see table). It has high initial cost, continuous upgrade
-costs, limited report formatting, limited version control, and mutual
-incompatibility. Consequentially nearly identical engineering documents are
-repeatedly written from scratch, simply because reusable documents and
-templates are unavailable. **rivt** was developed to change this.
+sharing and reuse (see table). The barriers include high initial cost,
+continuous upgrade costs, limited report formatting, limited version control,
+and mutual incompatibility. Consequentially nearly identical engineering
+documents are repeatedly written from scratch, simply because reusable
+documents and templates are unavailable. **rivt** was developed to change this.
 
 ```{figure} _static/img/table1.png
 :scale: 80 %
