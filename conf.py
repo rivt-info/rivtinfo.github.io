@@ -26,7 +26,7 @@ html_context = {
     "default_mode": "auto"
 }
 html_sidebars = {
-    "**": ["navbar-logo.html", "search-field.html", "sbt-sidebar-nav.html"]}
+    "**": ["search-field.html", "sbt-sidebar-nav.html"]}
 html_theme = 'sphinx_book_theme'
 html_static_path = ['_static', '_static/img/']
 html_logo = "_static/img/riv-dark8c.png"
@@ -40,7 +40,6 @@ html_theme_options = {
     "navbar_start": ["navbar-logo"],
     "navbar_center": ["navbar-nav"],
     "navbar_end": ["navbar-icon-links"],
-    "navbar_persistent": ["search-button"],
     "primary_sidebar_end": ["indices.html"],
     "logo": {
         "image_dark": "_static/img/riv-dark8c.png",
