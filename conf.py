@@ -32,10 +32,7 @@ html_static_path = ['_static', '_static/img/']
 html_logo = "_static/img/riv-dark8c.png"
 html_theme_options = {
     "home_page_in_toc": True,
-    "show_nav_level": 2,
-    "show_toc_level": 3,
-    "show_navbar_depth": 2,
-    "navigation_depth": 3,
+    "show_navbar_depth": 3,
     "navbar_align": "content",
     "navbar_start": ["navbar-logo"],
     "navbar_center": [],
