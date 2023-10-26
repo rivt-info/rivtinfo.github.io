@@ -65,21 +65,51 @@ Comparative Table of Engineering Calculation Programs
 **rivt** uses the [MIT open source license](https://opensource.org/license/mit/)
 
 ```{toctree}
-:maxdepth: 3
+:maxdepth: 2
 :hidden:
-
+:caption: Organize
 organize/find
 organize/folders
 organize/setup
+````
+
+```{toctree}
+:maxdepth: 2
+:hidden:
+:caption: Modify
 modify/collaborate
 modify/edit
+```
+
+```{toctree}
+:maxdepth: 2
+:hidden:
+:caption: Publish
 publish/docs
 publish/github
+```
+
+```{toctree}
+:maxdepth: 2
+:hidden:
+:caption: FAQ
 faq/faq
 faq/terms
+```
+
+```{toctree}
+:maxdepth: 2
+:hidden:
+:caption: Download
 download/changes
 download/portable
 download/system
+```
+
+```{toctree}
+:maxdepth: 2
+:hidden:
+:caption: Examples
 examples/example1
 examples/example2
 ```
