@@ -67,7 +67,7 @@ Comparative Table of Engineering Calculation Programs
 ```{toctree}
 :maxdepth: 1
 :hidden:
-:caption: **Organize**
+:caption: Organize
 organize/find
 organize/folders
 organize/setup
