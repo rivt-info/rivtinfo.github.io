@@ -12,7 +12,7 @@
 
 <hr>
 
-## [organize](organize.md) .. [modify](modify.md) .. [publish](publish.md) 
+## [organize](organize.md) - [modify](modify.md) - [publish](publish.md) 
 
 <hr>
 
