@@ -108,82 +108,84 @@ output to stdout when a rivt file is run from a terminal.
                         Command Overview
 ================================================================================
 
+::
 
-rv.R("""run function label | pass;redact | color;none
-
-    The Run function processes shell commands.
+    rv.R("""run function label | pass;redact | color;none
     
-    | run |
-    
-    | capture | 
-    
-    | edit |
-    
-    """)
-
-
-rv.I("""Insert Function Label | pass;redact | color;none
-                        
-    The Insert function formats static file objects including equations,
-    images, tables and text.
-            
-    | append label | /append/path/.pdf | number; nonumber       
-
-    | equation label (_[s,l]) | /text/path/.tex;txt(:start-end) | bold; plain
-    
-    | image label (_[i]) | /image/path/.jpg;.png;.svg | size, color
-
-    | table title (_[t]) | /tables/path/.csv;.xls (:start-end) | width, align
-
-    | text label | /text/path/.txt(:start-end) | plain; rivt
-
-    """)
-
-
-rv.V("""Values Function Label | pass;redact | color;none
-            
-    The Values function evaluates lookup tables, variables and equations from files.
-
-    | image label (_[i])| /image/path/.jpg;.png;.svg | size, color
-
-    | table title (_[t])| /tables/path/.csv;.xls (:start-end) | [cols]
-
-    | value label (_[v])| /values/path/.csv(:start-end) | 
-
-    | equation label (_[e]) | /values/path/.txt(:start-end) | ref; noref
-
-    """)
-  
-
-rv.T("""Tools function label | pass;redact | color;none
-
-        The Tools function imports and evaluates functions.
-                
-        | function label (_[f]) | /scripts/path/.py | function name; file
+        The Run function processes shell commands.
         
-        f1(x)
-
-    """)
-
-
-rv.X("""  |   |
-
-    The X function prevents evaluation of the function. Any API function may be
-    changed to X for flow control, testing, debugging and comments.
-
-    """)
-
-rv.W("""Write function label | pass;redact | color;none
-
-    The Write function generates a formatted doc file from a rivt file as text,
-    HTML and PDF. It generates reports based on config file settings as
-    README.txt, HTML and PDF.
-
-    | output
+        | run |
+        
+        | capture | 
+        
+        | edit |
+        
+        """)
     
-    | files
+    
+    rv.I("""Insert Function Label | pass;redact | color;none
+                            
+        The Insert function formats static file objects including equations,
+        images, tables and text.
+                
+        | append label | /append/path/.pdf | number; nonumber       
+    
+        | equation label (_[s,l]) | /text/path/.tex;txt(:start-end) | bold; plain
+        
+        | image label (_[i]) | /image/path/.jpg;.png;.svg | size, color
+    
+        | table title (_[t]) | /tables/path/.csv;.xls (:start-end) | width, align
+    
+        | text label | /text/path/.txt(:start-end) | plain; rivt
+    
+        """)
+    
+    
+    rv.V("""Values Function Label | pass;redact | color;none
+                
+        The Values function evaluates lookup tables, variables and equations from files.
+    
+        | image label (_[i])| /image/path/.jpg;.png;.svg | size, color
+    
+        | table title (_[t])| /tables/path/.csv;.xls (:start-end) | [cols]
+    
+        | value label (_[v])| /values/path/.csv(:start-end) | 
+    
+        | equation label (_[e]) | /values/path/.txt(:start-end) | ref; noref
+    
+        """)
+      
+    
+    rv.T("""Tools function label | pass;redact | color;none
+    
+            The Tools function imports and evaluates functions.
+                    
+            | function label (_[f]) | /scripts/path/.py | function name; file
+            
+            f1(x)
+    
+        """)
+    
+    
+    rv.X("""  |   |
+    
+        The X function prevents evaluation of the function. Any API function may be
+        changed to X for flow control, testing, debugging and comments.
+    
+        """)
+    
+    rv.W("""Write function label | pass;redact | color;none
+    
+        The Write function generates a formatted doc file from a rivt file as text,
+        HTML and PDF. It generates reports based on config file settings as
+        README.txt, HTML and PDF.
+    
+        | output
+        
+        | files
+    
+        """)
 
-    """)
 
 Folders: document organization 
 ------------------------------
