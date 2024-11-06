@@ -412,8 +412,8 @@ of the input order. Each function also, optionally, defines a doc section.
         """)
 
 
-VSCode rivt profile
--------------------
+VSCode profile
+-----------------------------------------------------------------------------
 
 ============== ==============================================================
 Snippets/Keys            description
