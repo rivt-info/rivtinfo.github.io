@@ -418,7 +418,6 @@ VSCode profile
 ============== ==============================================================
 Snippets/Keys            description
 ============== ==============================================================
-
 run                 API Run function
 ins                 API Insert function   
 val                 API Values function
@@ -450,6 +449,7 @@ ctl+shift+a         commit all
 ctl+shift+z         commit the current editor
 ctl+shift+x         post to remote   
 ============== ==============================================================
+
 
 
 ============================================== ===============================
