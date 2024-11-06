@@ -226,81 +226,81 @@ organize the data allow for separation of public and private data.
 
 ::
 
-[rivt]-Project-Name/               
-    ├── [append]/            
-        ├── app01/  
-        └── app02/  
-            ├── attach3.pdf                   
-            └── attach4.pdf
-    ├── [images]/            
-        ├── img01/  
-        └── img02/  
-            ├── image3.jpg                   
-            └── image4.jpg
-    ├── [scripts]/
-        ├── py01/                 
-        └── py02/  
-            ├── function3.py
-            └── function4.py               
-        ├── run01/  
-        └── run02/  
-            ├── script3.bat
-            └── script4.sh  
-    ├── [tables]/            
-        ├── tbl01/  
-        └── tbl02/  
-            ├── table3.csv                   
-            └── table4.csv
-    ├── [text]/            
-        ├── tex01/  
-        ├── tex02/  
-            ├── latex3.tex
-            └── latex4.tex
-        ├── txt01/  
-        └── txt02/  
-            ├── text3.txt                   
-            └── text4.txt
-    ├── [values]/                 
-        ├── dat01/  
-        ├── dat02/  
-            ├── table3.csv                   
-            └── table4.csv
-        ├── equ01/                      
-        ├── equ02/                    
-            ├── equation1.txt      
-            └── equation2.txt       
-        ├── val01/                    
-        └── val02/                    
-            ├── values3.csv      
-            └── values4.csv       
-    ├── [write]/                        (output files)    
-        ├── [html]/                     
-            └── riv0101-codes.html      (html files)
-                riv0202-frames.html
-                Project-Name.html       (html report) 
-        ├── [pdf]/                      
-            └── riv0101-codes.pdf       (pdf files)        
-                riv0202-frames.pdf
-                Project-Name.pdf        (pdf report)        
-        ├── [temp]/                     (temp files)     
-            └── temp-files.tex
-        └── [text]/                     
-            └── riv0101-codes.txt       (text output)
-                riv0201-frames.txt
-        └── [xrivt-redacted]/            
-            └── README.txt              (redacted report)
-                xriv0101-codes.py       (redacted files)
-                xriv0102-loads.py
-                xriv0201-walls.py       
-    └── config.ini                      (rivt config file)
-        README.txt                      (searchable report in public repo)
-        riv0000-report.py               (rivt input files)
-        riv0101-codes.py
-        riv0102-loads.py
-        riv0201-walls.py
-        riv0202-frames.py
-
-
+    [rivt]-Project-Name/               
+        ├── [append]/            
+            ├── app01/  
+            └── app02/  
+                ├── attach3.pdf                   
+                └── attach4.pdf
+        ├── [images]/            
+            ├── img01/  
+            └── img02/  
+                ├── image3.jpg                   
+                └── image4.jpg
+        ├── [scripts]/
+            ├── py01/                 
+            └── py02/  
+                ├── function3.py
+                └── function4.py               
+            ├── run01/  
+            └── run02/  
+                ├── script3.bat
+                └── script4.sh  
+        ├── [tables]/            
+            ├── tbl01/  
+            └── tbl02/  
+                ├── table3.csv                   
+                └── table4.csv
+        ├── [text]/            
+            ├── tex01/  
+            ├── tex02/  
+                ├── latex3.tex
+                └── latex4.tex
+            ├── txt01/  
+            └── txt02/  
+                ├── text3.txt                   
+                └── text4.txt
+        ├── [values]/                 
+            ├── dat01/  
+            ├── dat02/  
+                ├── table3.csv                   
+                └── table4.csv
+            ├── equ01/                      
+            ├── equ02/                    
+                ├── equation1.txt      
+                └── equation2.txt       
+            ├── val01/                    
+            └── val02/                    
+                ├── values3.csv      
+                └── values4.csv       
+        ├── [write]/                        (output files)    
+            ├── [html]/                     
+                └── riv0101-codes.html      (html files)
+                    riv0202-frames.html
+                    Project-Name.html       (html report) 
+            ├── [pdf]/                      
+                └── riv0101-codes.pdf       (pdf files)        
+                    riv0202-frames.pdf
+                    Project-Name.pdf        (pdf report)        
+            ├── [temp]/                     (temp files)     
+                └── temp-files.tex
+            └── [text]/                     
+                └── riv0101-codes.txt       (text output)
+                    riv0201-frames.txt
+            └── [xrivt-redacted]/            
+                └── README.txt              (redacted report)
+                    xriv0101-codes.py       (redacted files)
+                    xriv0102-loads.py
+                    xriv0201-walls.py       
+        └── config.ini                      (rivt config file)
+            README.txt                      (searchable report in public repo)
+            riv0000-report.py               (rivt input files)
+            riv0101-codes.py
+            riv0102-loads.py
+            riv0201-walls.py
+            riv0202-frames.py
+    
+    
 
 Example rivt file
 -----------------------------------------------------------------------------
