@@ -51,7 +51,6 @@ The 6 API functions implement:
 https://rivtdocs.net for futher details.
 
 
-
 Tags: formatting
 -----------------
 
@@ -86,7 +85,6 @@ text _[#]               line        footnote (autonumber)       V,I
 text _[d]               line        footnote description        V,I   
 _[page]                 line        new page                    V,I
 ===================== ========= ========================== ==================
-
 
 
 Commands: file processing
@@ -224,6 +222,8 @@ the *write* folder. rivt reports are collections of docs specified in the
 config.ini. Resource files are stored in user-defined sub-folders which
 organize the data allow for separation of public and private data.
 
+::
+
 [rivt]-Project-Name/               
     ├── [append]/            
         ├── app01/  
@@ -297,6 +297,7 @@ organize the data allow for separation of public and private data.
         riv0102-loads.py
         riv0201-walls.py
         riv0202-frames.py
+
 
 
 Example rivt file
