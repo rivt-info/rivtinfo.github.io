@@ -3,15 +3,14 @@ import sys
 from pathlib import Path
 sys.path.append(str(Path(".").resolve()))
 
-project = 'rivt'
+project = 'rivt-info'
 copyright = '2023 StructureLabs'
 author = 'rholland'
 release = '0.1'
 
 myst_heading_anchors = 3
 
-myst_enable_extensions = ['substitution', 'deflist',
-                          'html_image', 'amsmath']
+myst_enable_extensions = ['substitution', 'deflist','html_image', 'amsmath']
 
 extensions = ['myst_parser', 'sphinx.ext.githubpages',
               "sphinxcontrib.jquery", 'sphinx_copybutton', 'sphinx_favicon']
@@ -51,9 +50,5 @@ favicons = [
 
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
-
-# -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-
-# -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
