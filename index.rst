@@ -20,10 +20,9 @@ rivt User Manual and API
 
 **rivtlib** is a Python `open source <https://opensource.org/license/mit/>`_
 library for writing and publishing engineering documents using the **rivt**
-markup language described here `rivt User Manual <https://rivt-doc.net>`_.
-**rivt** is designed to simplify recombining and editing existing documents. The
-following sections document the **rivtlib.py** code at `GitHub
-<https://github.com/rivtlib/rivtlib.github.io/tree/main/src/rivtlib>`_
+markup language described here. **rivt** is designed to simplify recombining and
+editing existing documents. The **rivtlib.py** code is documented at
+`https://rivtlib.net`
 
 Engineering documents (e.g. calculations and drawings) are like road maps. Good
 maps reduce the chance of getting lost or making wrong turns. Road maps only
@@ -66,35 +65,31 @@ documents and templates are unavailable. **rivt** was developed to change this.
 **Comparative Table of Engineering Calculation Programs**
 
 
-.. {toctree}::
+.. toctree::
     :maxdepth: 2
-    :hidden:
     :caption: Write
+    
     setup.md
+    system.md
     organize.md
+    edit.md
     find.md
 
-.. {toctree}::
+.. toctree::
     :maxdepth: 2
-    :hidden:
     :caption: Publish
+    
     docs
     github
 
-
-.. {toctree}::
+.. toctree::
     :maxdepth: 2
-    :hidden:
-    :caption: Examples
-    example1
-    example2
-
-.. {toctree}::
-    :maxdepth: 2
-    :hidden:
-    :caption: FAQ
+    :caption: FAQ - Examples
+    
     faq
     terms
+    example1
+    example2
     changes
 
 
