@@ -1,25 +1,29 @@
 
-```{figure} _static/img/riv-dark9e.png
-:class: dark-light
-:scale: 40 %
-:figwidth: image
-:align: center
-:alt: rivt logo
-```
+.. figure::  _static/img/riv-dark9e.png
+    :class: dark-light
+    :scale: 40 %
+    :figwidth: image
+    :align: center
+    :alt: rivt logo
 
 
-# **rivt User Manual**
+.. raw:: html
 
-<hr>
+    <embed>
+        <h1 style="font-size:2em; text-align:center"> rivt.info </h1>
+        <hr width="100%" size="6" color="LightGrey" noshade>
+    </embed>
 
-## [organize](organize.md) - [modify](modify.md) - [publish](publish.md) 
 
-<hr>
+rivt User Manual and API
+------------------------
 
-### Why [**rivt**](terms.md#rivt)?
-
-**rivt** is open source software for publishing engineering documents with
-minimum new writing and maximum reuse of existing material. 
+**rivtlib** is a Python `open source <https://opensource.org/license/mit/>`_
+library for writing and publishing engineering documents using the **rivt**
+markup language described here `rivt User Manual <https://rivt-doc.net>`_.
+**rivt** is designed to simplify recombining and editing existing documents. The
+following sections document the **rivtlib.py** code at `GitHub
+<https://github.com/rivtlib/rivtlib.github.io/tree/main/src/rivtlib>`_
 
 Engineering documents (e.g. calculations and drawings) are like road maps. Good
 maps reduce the chance of getting lost or making wrong turns. Road maps only
@@ -31,12 +35,12 @@ scratch.
 **rivt** is designed for document sharing and reuse. In **rivt** it's easy to
 edit and recombine arbitrary document components, including:
 
-- text
-- images
-- formulas
-- calculations
-- plots
-- data 
+    - text
+    - images
+    - formulas
+    - calculations
+    - plots
+    - data 
 
 **rivt** allows engineers to explore more options, become familiar with
 technologies, and find better solutions. The open source software model it
@@ -53,64 +57,51 @@ and mutual incompatibility. Consequentially nearly identical engineering
 documents are repeatedly written from scratch, simply because reusable
 documents and templates are unavailable. **rivt** was developed to change this.
 
-```{figure} _static/img/table1.png
-:scale: 80 %
-:figwidth: image
-:align: left
-:alt: Comparative Table of Engineering Calculation Programs
+.. figure:: _static/img/table1.png
+    :scale: 80 %
+    :figwidth: image
+    :align: left
+    :alt: Comparative Table of Engineering Calculation Programs
 
-Comparative Table of Engineering Calculation Programs
-```
+**Comparative Table of Engineering Calculation Programs**
 
-**rivt** uses the [MIT open source license](https://opensource.org/license/mit/)
 
-```{toctree}
-:maxdepth: 1
-:hidden:
-:caption: Organize
-organize/find
-organize/folders
-organize/setup
-````
+.. {toctree}::
+    :maxdepth: 1
+    :hidden:
+    :caption: Write
+    setup.md
+    organize.md
+    find.md
 
-```{toctree}
-:maxdepth: 1
-:hidden:
-:caption: Modify
-modify/collaborate
-modify/edit
-```
+.. {toctree}::
+    :maxdepth: 1
+    :hidden:
+    :caption: Publish
+    docs
+    github
 
-```{toctree}
-:maxdepth: 1
-:hidden:
-:caption: Publish
-publish/docs
-publish/github
-```
 
-```{toctree}
-:maxdepth: 1
-:hidden:
-:caption: Examples
-examples/example1
-examples/example2
-```
+.. {toctree}::
+    :maxdepth: 1
+    :hidden:
+    :caption: Examples
+    example1
+    example2
 
-```{toctree}
-:maxdepth: 1
-:hidden:
-:caption: FAQ
-faq/faq
-faq/terms
-```
+.. {toctree}::
+    :maxdepth: 1
+    :hidden:
+    :caption: FAQ
+    faq
+    terms
 
-```{toctree}
-:maxdepth: 1
-:hidden:
-:caption: Download
-download/changes
-download/portable
-download/system
-```
+.. {toctree}::
+    :maxdepth: 1
+    :hidden:
+    :caption: Download
+    changes
+    portable
+    system
+
 

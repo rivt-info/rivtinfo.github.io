@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
     <link href="_static/favicon-32x32.png" sizes="32x32" rel="icon" type="image/png">
     <link href="_static/favicon-16x16.png" sizes="16x16" rel="icon" type="image/png">
-    <title>&lt;no title&gt; &#8212; rivt-info 0.1 documentation</title>
+    <title>rivt User Manual and API &#8212; rivt-info 0.1 documentation</title>
   
   
   
@@ -137,10 +137,6 @@
   
 
   
-    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
-      <span class="fa-solid fa-outdent"></span>
-    </button>
-  
 </div>
 
     </header>
@@ -188,7 +184,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1 current active">
                 <a class="reference internal" href="#">
-                    <no title>
+                    rivt User Manual and API
                 </a>
             </li>
         </ul>
@@ -318,9 +314,7 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
+
 </div></div>
       
     </div>
@@ -331,19 +325,11 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>rivt User Manual and API</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -353,20 +339,19 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p><code class="docutils literal notranslate"><span class="pre">`{figure}</span> <span class="pre">_static/img/riv-dark9e.png</span>
-<span class="pre">:class:</span> <span class="pre">dark-light</span>
-<span class="pre">:scale:</span> <span class="pre">40</span> <span class="pre">%</span>
-<span class="pre">:figwidth:</span> <span class="pre">image</span>
-<span class="pre">:align:</span> <span class="pre">center</span>
-<span class="pre">:alt:</span> <span class="pre">rivt</span> <span class="pre">logo</span>
-<span class="pre">`</span></code></p>
-<p># <strong>rivt User Manual</strong></p>
-<p>&lt;hr&gt;</p>
-<p>## [organize](organize.md) - [modify](modify.md) - [publish](publish.md)</p>
-<p>&lt;hr&gt;</p>
-<p>### Why [<strong>rivt</strong>](terms.md#rivt)?</p>
-<p><strong>rivt</strong> is open source software for publishing engineering documents with
-minimum new writing and maximum reuse of existing material.</p>
+  <figure class="align-center" style="width: 328px">
+<a class="dark-light reference internal image-reference" href="_images/riv-dark9e.png"><img alt="rivt logo" class="dark-light" src="_images/riv-dark9e.png" style="width: 131.20000000000002px; height: 108.4px;" /></a>
+</figure>
+<embed>
+    <h1 style="font-size:2em; text-align:center"> rivt.info </h1>
+    <hr width="100%" size="6" color="LightGrey" noshade>
+</embed><section id="rivt-user-manual-and-api">
+<h1>rivt User Manual and API<a class="headerlink" href="#rivt-user-manual-and-api" title="Permalink to this heading">#</a></h1>
+<p><strong>rivtlib</strong> is a Python <a class="reference external" href="https://opensource.org/license/mit/">open source</a>
+library for writing and publishing engineering documents using the <strong>rivt</strong>
+markup language described here <a class="reference external" href="https://rivt-doc.net">rivt User Manual</a>.
+<strong>rivt</strong> is designed to simplify recombining and editing existing documents. The
+following sections document the <strong>rivtlib.py</strong> code at <a class="reference external" href="https://github.com/rivtlib/rivtlib.github.io/tree/main/src/rivtlib">GitHub</a></p>
 <p>Engineering documents (e.g. calculations and drawings) are like road maps. Good
 maps reduce the chance of getting lost or making wrong turns. Road maps only
 need updates when new roads are built, not re-creation from scratch. Many
@@ -375,7 +360,8 @@ existing material saves time and reduces errors, compared to writing from
 scratch.</p>
 <p><strong>rivt</strong> is designed for document sharing and reuse. In <strong>rivt</strong> it’s easy to
 edit and recombine arbitrary document components, including:</p>
-<ul class="simple">
+<blockquote>
+<div><ul class="simple">
 <li><p>text</p></li>
 <li><p>images</p></li>
 <li><p>formulas</p></li>
@@ -383,6 +369,7 @@ edit and recombine arbitrary document components, including:</p>
 <li><p>plots</p></li>
 <li><p>data</p></li>
 </ul>
+</div></blockquote>
 <p><strong>rivt</strong> allows engineers to explore more options, become familiar with
 technologies, and find better solutions. The open source software model it
 builds on encourages continuous, additive, improvements.</p>
@@ -395,58 +382,11 @@ continuous upgrade costs, limited report formatting, limited version control,
 and mutual incompatibility. Consequentially nearly identical engineering
 documents are repeatedly written from scratch, simply because reusable
 documents and templates are unavailable. <strong>rivt</strong> was developed to change this.</p>
-<p><a href="#id1"><span class="problematic" id="id2">``</span></a><a href="#id3"><span class="problematic" id="id4">`</span></a>{figure} _static/img/table1.png
-:scale: 80 %
-:figwidth: image
-:align: left
-:alt: Comparative Table of Engineering Calculation Programs</p>
-<p>Comparative Table of Engineering Calculation Programs
-<a href="#id5"><span class="problematic" id="id6">``</span></a><a href="#id7"><span class="problematic" id="id8">`</span></a></p>
-<p><strong>rivt</strong> uses the [MIT open source license](<a class="reference external" href="https://opensource.org/license/mit/">https://opensource.org/license/mit/</a>)</p>
-<p><code class="docutils literal notranslate"><span class="pre">`{toctree}</span>
-<span class="pre">:maxdepth:</span> <span class="pre">1</span>
-<span class="pre">:hidden:</span>
-<span class="pre">:caption:</span> <span class="pre">Organize</span>
-<span class="pre">organize/find</span>
-<span class="pre">organize/folders</span>
-<span class="pre">organize/setup</span>
-<span class="pre">``</span></code></p>
-<p><code class="docutils literal notranslate"><span class="pre">`{toctree}</span>
-<span class="pre">:maxdepth:</span> <span class="pre">1</span>
-<span class="pre">:hidden:</span>
-<span class="pre">:caption:</span> <span class="pre">Modify</span>
-<span class="pre">modify/collaborate</span>
-<span class="pre">modify/edit</span>
-<span class="pre">`</span></code></p>
-<p><code class="docutils literal notranslate"><span class="pre">`{toctree}</span>
-<span class="pre">:maxdepth:</span> <span class="pre">1</span>
-<span class="pre">:hidden:</span>
-<span class="pre">:caption:</span> <span class="pre">Publish</span>
-<span class="pre">publish/docs</span>
-<span class="pre">publish/github</span>
-<span class="pre">`</span></code></p>
-<p><code class="docutils literal notranslate"><span class="pre">`{toctree}</span>
-<span class="pre">:maxdepth:</span> <span class="pre">1</span>
-<span class="pre">:hidden:</span>
-<span class="pre">:caption:</span> <span class="pre">Examples</span>
-<span class="pre">examples/example1</span>
-<span class="pre">examples/example2</span>
-<span class="pre">`</span></code></p>
-<p><code class="docutils literal notranslate"><span class="pre">`{toctree}</span>
-<span class="pre">:maxdepth:</span> <span class="pre">1</span>
-<span class="pre">:hidden:</span>
-<span class="pre">:caption:</span> <span class="pre">FAQ</span>
-<span class="pre">faq/faq</span>
-<span class="pre">faq/terms</span>
-<span class="pre">`</span></code></p>
-<p><code class="docutils literal notranslate"><span class="pre">`{toctree}</span>
-<span class="pre">:maxdepth:</span> <span class="pre">1</span>
-<span class="pre">:hidden:</span>
-<span class="pre">:caption:</span> <span class="pre">Download</span>
-<span class="pre">download/changes</span>
-<span class="pre">download/portable</span>
-<span class="pre">download/system</span>
-<span class="pre">`</span></code></p>
+<figure class="align-left" style="width: 1050px">
+<a class="reference internal image-reference" href="_images/table1.png"><img alt="Comparative Table of Engineering Calculation Programs" src="_images/table1.png" style="width: 840.0px; height: 178.4px;" /></a>
+</figure>
+<p><strong>Comparative Table of Engineering Calculation Programs</strong></p>
+</section>
 
 
                 </article>
@@ -465,22 +405,6 @@ documents and templates are unavailable. <strong>rivt</strong> was developed to 
             </div>
             
             
-              
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-  </nav></div>
-
-</div></div>
               
             
           </div>
