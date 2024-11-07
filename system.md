@@ -9,7 +9,7 @@ myst:
             ```
 ---
 
-## **System Install** 
+## System Install*
 
 - VS Code
 - Texlive 

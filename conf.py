@@ -22,7 +22,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 html_static_path = ['_static', '_static/img/']
 html_context = {"default_mode": "auto"}
 html_theme = 'sphinx_book_theme'
-html_logo = "_static/img/rivtpy64.png"
+html_logo = "_static/img/riv-dark9.png"
 html_sidebars = {"**": ["sbt-sidebar-nav.html"]}
 
 html_theme_options = {
@@ -38,7 +38,7 @@ html_theme_options = {
     "footer_start": ["copyright"],
     "footer_end": [],
     "logo": {
-        "image_dark": "_static/img/riv-dark9e.png",
+        "image_dark": "_static/img/riv-dark8c.png",
     }
 }
 
