@@ -67,7 +67,7 @@ documents and templates are unavailable. **rivt** was developed to change this.
 
 
 .. {toctree}::
-    :maxdepth: 1
+    :maxdepth: 2
     :hidden:
     :caption: Write
     setup.md
@@ -75,7 +75,7 @@ documents and templates are unavailable. **rivt** was developed to change this.
     find.md
 
 .. {toctree}::
-    :maxdepth: 1
+    :maxdepth: 2
     :hidden:
     :caption: Publish
     docs
@@ -83,25 +83,19 @@ documents and templates are unavailable. **rivt** was developed to change this.
 
 
 .. {toctree}::
-    :maxdepth: 1
+    :maxdepth: 2
     :hidden:
     :caption: Examples
     example1
     example2
 
 .. {toctree}::
-    :maxdepth: 1
+    :maxdepth: 2
     :hidden:
     :caption: FAQ
     faq
     terms
-
-.. {toctree}::
-    :maxdepth: 1
-    :hidden:
-    :caption: Download
     changes
-    portable
-    system
+
 
 
