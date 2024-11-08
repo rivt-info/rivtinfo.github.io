@@ -12,11 +12,10 @@
     <embed>
         <h1 style="font-size:2em; text-align:center"> rivt.info </h1>
         <hr width="100%" size="6" color="LightGrey" noshade>
-        <h1 style="font-size:2em; text-align:left"> rivt Manual / API </h1>
     </embed>
 
-test1
------
+Manual / API
+------------
 
 **rivtlib** is a Python `open source <https://opensource.org/license/mit/>`_
 library for writing and publishing engineering documents using the **rivt**

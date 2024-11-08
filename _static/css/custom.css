@@ -18,3 +18,7 @@ a {
 a.underline {
     text-decoration: underline
 }
+
+h1 {
+    font-size: 30px
+}

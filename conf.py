@@ -20,6 +20,9 @@ templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 html_static_path = ['_static', '_static/img/']
+html_css_files = [
+    'css/custom.css',
+]
 html_context = {"default_mode": "auto"}
 html_theme = 'sphinx_book_theme'
 html_logo = "_static/img/riv-dark9.png"
@@ -39,7 +42,6 @@ html_theme_options = {
     "footer_end": [],
     "logo": {
         "image_dark": "_static/img/riv-dark8c.png",
-        "html_title": "."
     }
 }
 
