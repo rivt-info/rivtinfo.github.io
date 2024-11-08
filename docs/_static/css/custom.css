@@ -19,8 +19,8 @@ a.underline {
     text-decoration: underline
 }
 
-a:visited {
-  color: #5f93ad;
+a.visited {
+	color: #5f93ad;
 }
 
 h1 {
