@@ -40,9 +40,10 @@ html_theme_options = {
     "primary_sidebar_end": ["indices.html"],
     "footer_start": ["copyright"],
     "footer_end": [],
+    "linkcolor":"#5f93ad",
     "logo": {
+        "image_light": "_static/img/riv-dark8c.png",
         "image_dark": "_static/img/riv-dark8c.png",
-        "image_light": "_static/img/riv-dark8c.png"
     }
 }
 
