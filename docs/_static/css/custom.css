@@ -9,7 +9,7 @@ img.align-center {
 
 
 a {
-    color: #005580;
+    color: #5f93ad;
     text-decoration: underline;
     font-weight: normal;
 }
@@ -17,6 +17,10 @@ a {
 
 a.underline {
     text-decoration: underline
+}
+
+a:visited {
+  color: #5f93ad;
 }
 
 h1 {

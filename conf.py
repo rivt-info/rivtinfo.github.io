@@ -42,6 +42,7 @@ html_theme_options = {
     "footer_end": [],
     "logo": {
         "image_dark": "_static/img/riv-dark8c.png",
+        "image_light": "_static/img/riv-dark8c.png"
     }
 }
 
