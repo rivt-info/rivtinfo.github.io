@@ -39,6 +39,7 @@ html_theme_options = {
     "footer_end": [],
     "logo": {
         "image_dark": "_static/img/riv-dark8c.png",
+        "html_title": "."
     }
 }
 
