@@ -29,18 +29,13 @@ html_logo = "_static/img/riv-dark9.png"
 html_sidebars = {"**": ["sbt-sidebar-nav.html"]}
 
 html_theme_options = {
+    "home_page_in_toc": True,
     "show_nav_level": 2,
     "show_toc_level": 3,
     "navigation_depth": 3,
-    "navbar_align": "content",
-    "navbar_persistent": ["search-button"],
-    "navbar_start": ["navbar-logo"],
-    "navbar_center": ["navbar-nav"],
-    "navbar_end": ["navbar-icon-links"],
-    "primary_sidebar_end": ["indices.html"],
     "footer_start": ["copyright"],
     "footer_end": [],
-    "linkcolor":"#5f93ad",
+    "linkcolor": "#5f93ad",
     "logo": {
         "image_light": "_static/img/riv-dark8c.png",
         "image_dark": "_static/img/riv-dark8c.png",
