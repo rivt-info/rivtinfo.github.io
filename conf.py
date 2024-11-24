@@ -25,8 +25,7 @@ html_css_files = [
 ]
 html_context = {"default_mode": "auto"}
 html_theme = 'sphinx_book_theme'
-html_logo = "_static/img/riv-dark9.png"
-html_sidebars = {"**": ["sbt-sidebar-nav.html"]}
+html_logo = "_static/img/rivt37ta.png"
 
 html_theme_options = {
     "home_page_in_toc": True,
@@ -37,8 +36,8 @@ html_theme_options = {
     "footer_end": [],
     "linkcolor": "#5f93ad",
     "logo": {
-        "image_light": "_static/img/riv-dark8c.png",
-        "image_dark": "_static/img/riv-dark8c.png",
+        "image_light": "_static/img/rivt37ta.png",
+        "image_dark": "_static/img/rivt37ta.png",
     }
 }
 
@@ -47,10 +46,6 @@ favicons = [
     {"href": "favicon-16x16.png"},
 ]
 
-# For the full list of built-in configuration values, see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
