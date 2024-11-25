@@ -15,35 +15,6 @@
     </embed>
 
 
-.. toctree::
-    :maxdepth: 2
-    :caption: Write
-    
-    setup.md
-    system.md
-    organize.md
-    edit.md
-    find.md
-
-.. toctree::
-    :maxdepth: 2
-    :caption: Publish
-    
-    docs.md
-    github.md
-
-.. toctree::
-    :maxdepth: 2
-    :caption: FAQ - Examples
-    
-    faq.md
-    terms.md
-    example1.md
-    example2.md
-    changes.md
-
-
-
 Manual / API
 ------------
 
