@@ -9,7 +9,29 @@ following command is executed:
 
 .. toctree::
     :maxdepth: 1
-    :caption: More
+    :hidden:
     
+    setup.md
     system.md
     organize.md
+    edit.md
+    find.md
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Publish
+    :hidden:
+    
+    docs.md
+    github.md
+
+.. toctree::
+    :maxdepth: 2
+    :caption: FAQ - Examples
+    :hidden:
+    
+    faq.md
+    terms.md
+    example1.md
+    example2.md
+    changes.md
