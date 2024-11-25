@@ -22,18 +22,25 @@ Manual / API
 with an emphasis on template reuse.
 
 Engineering document software is widely available but presents barriers to
-sharing and reuse. Barriers include high initial and upgrade cost, limited
-editing and version control, and incompatibility. This leads to similar
-engineering documents repeatedly written from scratch. The table below compares
-features related to document reuse.  
+sharing and reuse. Barriers include high initial and upgrade costs,
+incompatibility between versions, programs, and operating systems, and limited
+version control. This leads to similar engineering documents repeatedly
+written from scratch. The table below summarizes features addressed by rivt. 
 
-**Compare Engineering Document and Calculation Programs**
+**Compare Engineering Document Programs**
 
-.. figure:: _static/img/table1.png
-    :scale: 80 %
-    :figwidth: image
-    :align: left
-    :alt: Comparative Table of Engineering Calculation Programs
+========= ======== ====== ========== ======= ===== ====== ====== ====== ======== 
+Feature   Subscrip Open   Versions   Version Text  Local  Local  Inter. Collated  
+--------- -------- ------ ---------- ------- ----- ------ ------ ------ --------
+Program   Fee      Source Compatible Control Input All OS Mobile Collab Reports
+========= ======== ====== ========== ======= ===== ====== ====== ====== ========
+rivt      no       no     no         no      no    no     no     no     no 
+Matlab    yes      no     no         no      no    no     no     no     no 
+Mathcad   yes      no     no         no      no    no     no     no     no 
+Mathemat. yes      no     no         no      no    no     no     no     no 
+Online    yes      no     no         no      no    no     no     no     no 
+Jupyter   no       no     no         no      no    no     no     no     no 
+
 
 
 
