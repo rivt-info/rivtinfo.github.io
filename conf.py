@@ -24,7 +24,6 @@ html_static_path = ['_static', '_static/img/']
 html_context = {"default_mode": "auto"}
 html_theme = 'pydata_sphinx_theme'
 html_theme_options = {
-    "home_page_in_toc": True,
     "show_nav_level": 2,
     "show_toc_level": 3,
     "navigation_depth": 3,

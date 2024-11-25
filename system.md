@@ -1,13 +1,3 @@
----
-myst:
-    substitutions:
-        "key1": |
-            ```{image} _static/img/rc-dark2.png
-            :alt: rivt-online logo
-            :target: https://rivt-online.net
-            :width: 65px
-            ```
----
 
 ## System Install
 

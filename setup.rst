@@ -7,11 +7,9 @@ following command is executed:
 *python -m rivtlib.toy-report*
 
 
-
 .. toctree::
     :maxdepth: 1
-    :caption: Write
+    :caption: More
     
-    setup.md
     system.md
     organize.md
