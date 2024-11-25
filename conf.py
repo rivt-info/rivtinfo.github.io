@@ -20,12 +20,9 @@ templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 html_static_path = ['_static', '_static/img/']
-html_css_files = [
-    'css/custom.css',
-]
 html_context = {"default_mode": "auto"}
 html_theme = 'sphinx_book_theme'
-html_logo = "_static/img/rivt37ta.png"
+html_logo = "_static/img/rivt53b.png"
 
 html_theme_options = {
     "home_page_in_toc": True,
@@ -34,10 +31,9 @@ html_theme_options = {
     "navigation_depth": 3,
     "footer_start": ["copyright"],
     "footer_end": [],
-    "linkcolor": "#5f93ad",
     "logo": {
-        "image_light": "_static/img/rivt37ta.png",
-        "image_dark": "_static/img/rivt37ta.png",
+        "image_light": "_static/img/rivt53b.png",
+        "image_dark": "_static/img/rivt53b.png",
     }
 }
 

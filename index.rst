@@ -1,5 +1,5 @@
 
-.. figure::  _static/img/riv-dark9x.png
+.. figure::  _static/img/riv-53a.png
     :class: dark-light
     :scale: 40 %
     :figwidth: image
