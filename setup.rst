@@ -9,6 +9,7 @@ following command is executed:
 
 .. toctree::
     :maxdepth: 1
+    :caption: Introduction
     :hidden:
     
     setup.rst
