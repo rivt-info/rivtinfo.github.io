@@ -29,18 +29,18 @@ below summarizes the features addressed by rivt to address this wasted effort.
 
 **Engineering Document Programs - Compared**
 
-========= ========= ====== ========== ======== =====  ====== ====== ======= ========= 
-Features|  Subscrip  Open   Compat.    Version  Text   Local  Local  Online  Collated  
---------- --------- ------ ---------- --------  ----- ------ ------ ------- ---------
-Programs   Fee      Source  Versions   Control  Input  OS-All Mobile Collab  Reports
-========= ========= ====== ========== ======== =====  ====== ====== ======= ========= 
-rivt       no        yes    yes        yes      yes    yes    yes    yes     yes 
-Matlab     yes       no     no         no       no     no     no     no      no 
-Mathcad    yes       no     no         no       no     no     no     no      no 
-Mathemat.  yes       no     no         no       no     no     no     no      no 
-Online     yes       no     no         no       no     no     no     no      no 
-Jupyter    no        yes    yes        no       no     yes    yes    yes     no
-========= ========= ====== ========== ======== =====  ====== ====== ======= ========= 
+========= ========= ======= ========= ======== ====== ======= ======= ======= =========
+Features   Subscrip  Open    Compat.   Version  Text   Local   Local   Online  Collated  
+--------- --------- ------- --------- -------- ------ ------- ------- ------- --------
+Programs   Fee       Source  Versions  Control  Input  OS-All  Mobile  Collab  Reports
+========= ========= ======= ========= ======== ====== ======= ======= ======= ========= 
+rivt       no        yes     yes        yes      yes    yes     yes    yes     yes 
+Matlab     yes       no      no         no       no     no      no     no      no 
+Mathcad    yes       no      no         no       no     no      no     no      no 
+Mathemat.  yes       no      no         no       no     no      no     no      no 
+Online     yes       no      no         no       no     no      no     no      no 
+Jupyter    no        yes     yes        no       no     yes     yes    yes     no
+========= ========= ======= ========= ======== ====== ======= ======= ======= ========= 
 
 
 
