@@ -1,7 +1,7 @@
 
 .. figure::  _static/img/rivt53a.png
     :class: dark-light
-    :scale: 40 %
+    :scale: 30 %
     :figwidth: image
     :align: center
     :alt: rivt logo
