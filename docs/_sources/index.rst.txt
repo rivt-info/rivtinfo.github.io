@@ -27,13 +27,14 @@ editing and version control, and incompatibility. This leads to similar
 engineering documents repeatedly written from scratch. The table below compares
 features related to document reuse.  
 
+**Compare Engineering Document and Calculation Programs**
+
 .. figure:: _static/img/table1.png
     :scale: 80 %
     :figwidth: image
     :align: left
     :alt: Comparative Table of Engineering Calculation Programs
 
-**Comparative Table of Engineering Document and Calculation Programs**
 
 
 .. toctree::
@@ -47,7 +48,7 @@ features related to document reuse.
     find.md
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     :caption: Publish
     :hidden:
     
@@ -55,7 +56,7 @@ features related to document reuse.
     github.md
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     :caption: FAQ - Examples
     :hidden:
     

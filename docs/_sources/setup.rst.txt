@@ -18,7 +18,7 @@ following command is executed:
     find.md
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     :caption: Publish
     :hidden:
     
@@ -26,7 +26,7 @@ following command is executed:
     github.md
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     :caption: FAQ - Examples
     :hidden:
     
