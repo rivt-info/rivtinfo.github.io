@@ -19,6 +19,7 @@ source_suffix = ['.rst', '.md']
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
+html_css_files = ['css/custom.css',]
 html_static_path = ['_static', '_static/img/']
 html_context = {"default_mode": "auto"}
 html_theme = 'sphinx_book_theme'
@@ -30,8 +31,8 @@ html_theme_options = {
     "footer_start": ["copyright"],
     "footer_end": [],
     "logo": {
-        "image_light": "_static/img/rivt53c.png",
-        "image_dark": "_static/img/rivt53c.png",
+        "image_light": "_static/img/rivt53d.png",
+        "image_dark": "_static/img/rivt53d.png",
     }
 }
 

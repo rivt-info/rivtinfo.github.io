@@ -1,4 +1,4 @@
-/* For overriding purposes */
+/* overrides */
 
 img.align-center {
     margin-left: auto;
@@ -20,7 +20,7 @@ a.underline {
 }
 
 a.visited {
-	color: #5f93ad;
+    color: #5f93ad;
 }
 
 h1 {
