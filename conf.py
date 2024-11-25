@@ -31,8 +31,8 @@ html_theme_options = {
     "footer_start": ["copyright"],
     "footer_end": [],
     "logo": {
-        "image_light": "_static/img/rivt53i.png",
-        "image_dark": "_static/img/rivt53i.png",
+        "image_light": "_static/img/rivt53g.png",
+        "image_dark": "_static/img/rivt53g.png",
     }
 }
 
