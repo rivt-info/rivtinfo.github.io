@@ -22,7 +22,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 html_css_files = ['css/custom.css',]
 html_static_path = ['_static', '_static/img/']
 html_context = {"default_mode": "auto"}
-html_theme = 'sphinx_book_theme'
+html_theme = 'pydata_sphinx_theme'
 html_theme_options = {
     "home_page_in_toc": True,
     "show_nav_level": 2,
