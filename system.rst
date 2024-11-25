@@ -31,16 +31,14 @@ snippets for API functions and commands.
 
 ### API function snippets
 
-
-| **snippet**
-| :---------:
-|     ini    
-|     app    
-|     img    
-|     tbl    
-|     dec    
-|     txt   
-
+ snippet
+=========
+    ini    
+    app    
+    img    
+    tbl    
+    dec    
+    txt   
 
 
 
