@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="_static/favicon-32x32.png" sizes="122x88" rel="icon" type="image/png">
     <link href="_static/favicon-16x16.png" sizes="122x88" rel="icon" type="image/png">
-    <title>Folders &#8212; rivt.info 0.1 documentation</title>
+    <title>&lt;no title&gt; &#8212; rivt.info 0.1 documentation</title>
   
   
   
@@ -136,9 +136,9 @@
 <nav>
   <ul class="bd-navbar-elements navbar-nav">
     
-<li class="nav-item ">
+<li class="nav-item current active">
   <a class="nav-link nav-internal" href="setup.html">
-    Start Report
+    <no title>
   </a>
 </li>
 
@@ -150,9 +150,9 @@
 </li>
 
 
-<li class="nav-item current active">
+<li class="nav-item ">
   <a class="nav-link nav-internal" href="#">
-    Folders
+    <no title>
   </a>
 </li>
 
@@ -229,9 +229,9 @@
 <nav>
   <ul class="bd-navbar-elements navbar-nav">
     
-<li class="nav-item ">
+<li class="nav-item current active">
   <a class="nav-link nav-internal" href="setup.html">
-    Start Report
+    <no title>
   </a>
 </li>
 
@@ -243,9 +243,9 @@
 </li>
 
 
-<li class="nav-item current active">
+<li class="nav-item ">
   <a class="nav-link nav-internal" href="#">
-    Folders
+    <no title>
   </a>
 </li>
 
@@ -276,7 +276,13 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"></div>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">More</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="system.html">System Install</a></li>
+
+
+</ul>
+</div>
 </nav></div>
     </div>
   
@@ -310,7 +316,10 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Folders</span></li>
+    
+    <li class="breadcrumb-item"><a href="setup.html" class="nav-link">&lt;no title&gt;</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">&lt;no title&gt;</span></li>
   </ul>
 </nav>
 </div>
@@ -327,8 +336,7 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="folders">
-<h1>Folders<a class="headerlink" href="#folders" title="Link to this heading">#</a></h1>
+  <p># Folders</p>
 <p><strong>rivtlib</strong> can process single rivt files, but typically it is used to generate
 reports. rivt documents are organized into divisions (folders) and documents
 (files). Reprort section names are taken from the the file and folder names but
@@ -338,66 +346,65 @@ shareable or private foldrers. Reports is formatted with divisions,
 subdivisions and sections.</p>
 <p>Fixed folder and file prefixes are shown in [ ]. Report and document headings
 are taken from the folder and file labels.</p>
-<pre>
-[rivt]_Report-Label/               
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[rivt]_Report-Label/
     ├── [div01]-div-label/            (division folder)
         ├── [data01]/                 (resource data)
-            ├── data.csv                   
+            ├── data.csv
             ├── attachment1.pdf
-            ├── fig.png            
-            └── functions.py                   
+            ├── fig.png
+            └── functions.py
         ├── [riv01]-label1.py         (rivt file)
-        └── [riv02]-label2.py         (rivt file)   
+        └── [riv02]-label2.py         (rivt file)
     ├── [div02]-div-label/            (division folder)
         ├── [data02]/                 (resource data)
             ├── data.csv
             └── fig.png
         └── [riv01]_label3.py         (rivt file)
-    ├── [data-private]/                 
-        ├── [data]/                   (private data)                   
+    ├── [data-private]/
+        ├── [data]/                   (private data)
             ├── data.csv
             ├── attachment.pdf
-            └── fig.png        
-        ├── [functions]/              (private functions)                   
+            └── fig.png
+        ├── [functions]/              (private functions)
             ├── [data]/
             ├── [output]/
-            └── function.py                
+            └── function.py
         ├── [rivt-docs]/              (private output documents)
-            ├── [pdf]/                      
-                ├── doc0101-label1.pdf      
+            ├── [pdf]/
+                ├── doc0101-label1.pdf
                 ├── doc0102-label2.pdf
                 ├── doc0201-label3.pdf
-                └── Report-Label.pdf 
-            ├── [text]/                    
-                ├── doc0101-label1.txt      
-                └── doc0201-label3.txt       
-            ├── doc0101-label1.md            
+                └── Report-Label.pdf
+            ├── [text]/
+                ├── doc0101-label1.txt
+                └── doc0201-label3.txt
+            ├── doc0101-label1.md
             └── doc0201-label3.md
         ├── [temp]/
-            └── doc0201-label3.tex 
-    ├── [functions]/                  (public functions)                   
+            └── doc0201-label3.tex
+    ├── [functions]/                  (public functions)
         ├── [data]/
         ├── [output]/
         ├── function1.py
-        └── function2.py                
+        └── function2.py
     ├── [rivt-docs]/                  (public output documents)
-        ├── [pdf]/                      
-            ├── doc0101-label1.pdf      
+        ├── [pdf]/
+            ├── doc0101-label1.pdf
             ├── doc0102-label2.pdf
             ├── doc0201-label3.pdf
-            └── Report-Label.pdf 
-        ├── [text]/                    
-            ├── doc0101-label1.txt      
+            └── Report-Label.pdf
+        ├── [text]/
+            ├── doc0101-label1.txt
             ├── doc0102-label2.txt
-            └── doc0201-label3.txt           
+            └── doc0201-label3.txt
     ├── .gitignore
     ├── config.ini                    (config file)
-    ├── doc0101-label1.md             (public output documents) 
+    ├── doc0101-label1.md             (public output documents)
     ├── doc0102-label2.md
     ├── doc0201-label3.md
-    └── README.txt                    (cumulative documents - searchable) 
-</pre>
-</section>
+    └── README.txt                    (cumulative documents - searchable)
+</pre></div>
+</div>
 
 
                 </article>
@@ -430,9 +437,21 @@ are taken from the folder and file labels.</p>
 
 
   <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
 
   <div class="tocsection sourcelink">
-    <a href="_sources/organize.md.txt">
+    <a href="_sources/organize.rst.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>
