@@ -20,18 +20,19 @@ Manual / API
 **rivt** is a markup language and framework for writing and publishing documents
 with an emphasis on template reuse.
 
-Engineering document software is widely available but always presents barriers
-to wide sharing and reuse. These include high initial and upgrade costs,
-incompatibility between versions, programs, and operating systems, and limited
-version control. This leads to similar engineering documents that are repeatedly
-written from scratch in different formats for different programs. The table
-below summarizes the features addressed by rivt to address this wasted effort.
+Software for engineering documents is widely available but always presents
+barriers to resuing and sharing the source files. They include high initial and
+upgrade costs, incompatibility between versions, programs, and operating
+systems, and limited version control. This leads to similar engineering
+documents being repeatedly written from scratch for different programs. The
+table below summarizes the features addressed by **rivt** that address this wasted
+effort.
 
 **Engineering Document Programs - Compared**
 
 ========= ========= ======= ========= ======== ====== ======= ======= ======= =========
 Features   Subscrip  Open    Compat.   Version  Text   Local   Local   Online  Collated  
---------- --------- ------- --------- -------- ------ ------- ------- ------- --------
+--------- --------- ------- --------- -------- ------ ------- ------- ------- ---------
 Programs   Fee       Source  Versions  Control  Input  OS-All  Mobile  Collab  Reports
 ========= ========= ======= ========= ======== ====== ======= ======= ======= ========= 
 rivt       no        yes     yes        yes      yes    yes     yes    yes     yes 
