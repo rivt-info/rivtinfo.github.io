@@ -1,8 +1,7 @@
 
-.. figure::  _static/img/rivt53a.png
+.. image::  _static/img/rivt53a.png
     :class: dark-light
     :scale: 25 %
-    :figwidth: image
     :align: center
     :alt: rivt logo
 
@@ -27,12 +26,12 @@ incompatibility between versions, programs, and operating systems, and limited
 version control. This leads to similar engineering documents repeatedly
 written from scratch. The table below summarizes features addressed by rivt. 
 
-**Compare Engineering Document Programs**
+**Engineering Document Programs - Compared**
 
 ========= ======== ====== ========== ======= ===== ====== ====== ====== ======== 
-Features  Subscrip Open   Compatible Version Text  Local  Local  Online Collated  
+Features/  Subscrip Open   Compatible Version Text  Local  Local  Online Collated  
 --------- -------- ------ ---------- ------- ----- ------ ------ ------ --------
-/Program  Fee      Source Versions   Control Input All OS Mobile Collab Reports
+Programs  Fee      Source Versions   Control Input All OS Mobile Collab Reports
 ========= ======== ====== ========== ======= ===== ====== ====== ====== ========
 rivt      no       no     no         no      no    no     no     no     no 
 Matlab    yes      no     no         no      no    no     no     no     no 
