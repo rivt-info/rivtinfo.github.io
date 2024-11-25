@@ -11,9 +11,9 @@ following command is executed:
     :maxdepth: 1
     :hidden:
     
-    setup.md
+    setup.rst
     system.md
-    organize.md
+    organize.rst
     edit.md
     find.md
 

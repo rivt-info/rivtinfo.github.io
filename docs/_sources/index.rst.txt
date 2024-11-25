@@ -40,9 +40,9 @@ features related to document reuse.
     :maxdepth: 1
     :hidden:
     
-    setup.md
+    setup.rst
     system.md
-    organize.md
+    organize.rst
     edit.md
     find.md
 
