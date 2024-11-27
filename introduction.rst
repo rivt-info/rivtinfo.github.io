@@ -1,22 +1,29 @@
 
-# Start Report
+# Introduction
 
 A starter report folder structure can be generated in the folder where the
 following command is executed:
 
 *python -m rivtlib.toy-report*
 
-
 .. toctree::
     :maxdepth: 1
     :caption: Introduction
     :hidden:
     
-    setup.rst
-    system.md
+    introduction.rst
+    install.rst
+
+.. toctree::
+    :maxdepth: 1
+    :caption: Write
+    :hidden:
+
+    sections
     organize.rst
     edit.md
     find.md
+
 
 .. toctree::
     :maxdepth: 1

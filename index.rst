@@ -17,16 +17,16 @@
 Manual / API
 ------------
 
-**rivt** is a markup language and framework for writing and publishing documents
-with an emphasis on template reuse.
+**rivt** is a markup language and framework for writing and publishing
+engineering documents with an emphasis on template reuse.
 
-Software for engineering documents is widely available but always presents
-barriers to resuing and sharing the source files. They include high initial and
-upgrade costs, incompatibility between versions, programs, and operating
-systems, and limited version control. This leads to similar engineering
-documents being repeatedly written from scratch for different programs. The
-table below summarizes the features addressed by **rivt** that address this wasted
-effort.
+Software for engineering documents is already widely available but there are
+always barriers to sharing and resuing the document source files. They include
+high initial software and update costs, and incompatibility between various
+programs, their software updates and limited operating system platforms. This
+leads to similar engineering documents being repeatedly written from scratch for
+different programs. The table below summarizes the features addressed by
+**rivt** that address this wasted effort.
 
 **Engineering Document Programs - Compared**
 
@@ -35,7 +35,7 @@ Program   Subscrip Open   Compat.  Version Text  Local  Local  Online Collated
 --------- -------- ------ -------- ------- ----- ------ ------ ------ --------
 Features  Fee      Source Versions Control Input All-OS Mobile Collab Reports
 ========= ======== ====== ======== ======= ===== ====== ====== ====== ======== 
-rivt      no       yes    yes      yes     yes   yes    yes    yes    yes 
+**rivt**  **no**   yes    yes      yes     yes   yes    yes    yes    yes 
 Matlab    yes      no     no       no      no    no     no     no     no 
 Mathcad   yes      no     no       no      no    no     no     no     no 
 Mathemat. yes      no     no       no      no    no     no     no     no 
@@ -47,13 +47,20 @@ Jupyter   no       yes    yes      no      no    yes    yes    yes    no
 
 .. toctree::
     :maxdepth: 1
+    :caption: Introduction
     :hidden:
     
+    introduction.rst
     setup.rst
     system.md
+ 
+.. toctree::
+    :maxdepth: 1
+    :caption: Write
+    :hidden:
+
     organize.rst
     edit.md
-    find.md
 
 .. toctree::
     :maxdepth: 1
@@ -62,6 +69,7 @@ Jupyter   no       yes    yes      no      no    yes    yes    yes    no
     
     docs.md
     github.md
+    find.md
 
 .. toctree::
     :maxdepth: 1
