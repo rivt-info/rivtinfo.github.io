@@ -17,31 +17,25 @@
 
 .. toctree::
     :maxdepth: 1
-    :caption: Introduction
     
     introduction.rst
     install.rst
     
 .. toctree::
     :maxdepth: 1
-    :caption: Edit
 
     edit.md
     organize.rst
 
 .. toctree::
     :maxdepth: 1
-    :caption: Publish
 
     github.md
     find.md
 
 .. toctree::
     :maxdepth: 1
-    :caption: FAQ - Examples
     
     faq.md
     terms.md
     example1.md
-    example2.md
-    changes.md
