@@ -35,8 +35,9 @@ Jupyter    yes       yes        no         no      yes      yes     no
     :maxdepth: 1
     :caption: Introduction
     
-    introduction.rst
+    intro.rst
     install.rst
+
 
 .. toctree::
     :maxdepth: 1
@@ -52,6 +53,7 @@ Jupyter    yes       yes        no         no      yes      yes     no
     :caption: Publish
     
     github.md
+
 
 .. toctree::
     :maxdepth: 1

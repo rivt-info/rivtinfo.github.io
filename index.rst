@@ -18,7 +18,7 @@
 .. toctree::
     :maxdepth: 1
     
-    introduction.rst
+    intro.rst
     install.rst
     
 .. toctree::
