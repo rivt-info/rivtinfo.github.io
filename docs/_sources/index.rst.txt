@@ -25,7 +25,6 @@
 .. toctree::
     :maxdepth: 1
     :caption: Edit
-    :hidden:
 
     edit.md
     organize.rst
@@ -33,7 +32,6 @@
 .. toctree::
     :maxdepth: 1
     :caption: Publish
-    :hidden:
 
     github.md
     find.md
@@ -41,7 +39,6 @@
 .. toctree::
     :maxdepth: 1
     :caption: FAQ - Examples
-    :hidden:
     
     faq.md
     terms.md
