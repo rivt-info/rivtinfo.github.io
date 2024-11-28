@@ -42,7 +42,7 @@ Mathcad   yes      no        no       no      no       no     no      no     no
 Mathemat. yes      no        no       no      no       no     no      no     no 
 Online    yes      no        no       no      no       no     no      yes    no 
 Jupyter   no       yes       yes      no      no       yes    yes     yes    no
-========= ======== ====== ======== ======= ===== ====== ====== ====== ======== 
+========= ======== ======= ======== ======== ======= ======= ======= ======= ========  
 
 
 
