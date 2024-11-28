@@ -17,13 +17,13 @@
 rivt info
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     
     intro.rst
     install.rst
     
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
 
     folders.rst
     edit.rst
