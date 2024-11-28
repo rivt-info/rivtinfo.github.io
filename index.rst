@@ -27,15 +27,3 @@
     edit.md
     organize.rst
 
-.. toctree::
-    :maxdepth: 1
-
-    github.md
-    find.md
-
-.. toctree::
-    :maxdepth: 1
-    
-    faq.md
-    terms.md
-    example1.md

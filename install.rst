@@ -48,3 +48,26 @@ API function snippets
     txt  
 ========= 
 
+.. toctree::
+    :maxdepth: 1
+
+    intro.rst
+    
+.. toctree::
+    :maxdepth: 1
+
+    edit.md
+    organize.rst
+
+.. toctree::
+    :maxdepth: 1
+
+    github.md
+    find.md
+
+.. toctree::
+    :maxdepth: 1
+    
+    faq.md
+    terms.md
+    example1.md
