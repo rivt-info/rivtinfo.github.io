@@ -31,3 +31,28 @@ Online     no        no         no         no      no       yes     no
 Jupyter    yes       yes        no         no      yes      yes     no
 **rivt**   **yes**  **yes**    **yes**   **yes**   **yes**  **yes** **yes** 
 =========  ======== ========== ========= ========= ======== ======= =======  
+
+
+.. toctree::
+    :maxdepth: 1
+
+    install.rst
+    
+.. toctree::
+    :maxdepth: 1
+
+    edit.md
+    organize.rst
+
+.. toctree::
+    :maxdepth: 1
+
+    github.md
+    find.md
+
+.. toctree::
+    :maxdepth: 1
+    
+    faq.md
+    terms.md
+    example1.md
