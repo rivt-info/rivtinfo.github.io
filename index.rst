@@ -31,9 +31,9 @@ address this wasted effort.
 
 **Comparison - Engineering Document Programs**
 
-========= ======== ======= ======== ======== ======= ======= ======= ======= =========
+========= ======== ======= ======== ======== ======= ======= ======= ======= ========
 Program   Subscrip Open    Compat.  Version  Text    Local   Local   Online  Collated  
---------- -------- ------- -------- -------- ------- ------  ------- ------- --------
+--------- -------- ------- -------- -------- ------- ------- ------- ------- --------
 Features  Fee      Source  Versions Control  Input   All-OS  Mobile  Collab  Reports
 ========= ======== ======= ======== ======== ======= ======= ======= ======= ======== 
 **rivt**  **no**   **yes** **yes**  **yes**  **yes** **yes** **yes** **yes** **yes** 
