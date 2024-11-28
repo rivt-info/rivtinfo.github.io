@@ -12,14 +12,13 @@ myst_heading_anchors = 3
 
 extensions = ['myst_parser', 'sphinx.ext.githubpages',
               "sphinxcontrib.jquery", 'sphinx_copybutton', 'sphinx_favicon']
-
 myst_enable_extensions = ['substitution', 'deflist', 'attrs_block',
                           'html_image', 'amsmath']
-
 source_suffix = ['.rst', '.md']
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
-html_sidebars = {"pagename": []}
+
+html_sidebars = {"**": []}
 html_css_files = ['css/custom.css',]
 html_static_path = ['_static', '_static/img/']
 html_context = {"default_mode": "auto"}
