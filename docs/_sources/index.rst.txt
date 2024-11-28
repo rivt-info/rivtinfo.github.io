@@ -16,25 +16,25 @@
 
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 0
     
     introduction.rst
     install.rst
     
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 0
 
     edit.md
     organize.rst
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 0
 
     github.md
     find.md
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 0
     
     faq.md
     terms.md
