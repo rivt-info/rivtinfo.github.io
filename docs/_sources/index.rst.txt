@@ -27,5 +27,4 @@ rivt info
 
     folders.rst
     edit.rst
-    organize.rst
 
