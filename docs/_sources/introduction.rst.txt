@@ -34,7 +34,6 @@ Jupyter    yes       yes        no         no      yes      yes     no
 .. toctree::
     :maxdepth: 1
     :caption: Introduction
-    :hidden:
     
     introduction.rst
     install.rst
@@ -42,7 +41,6 @@ Jupyter    yes       yes        no         no      yes      yes     no
 .. toctree::
     :maxdepth: 1
     :caption: Write
-    :hidden:
 
     folders.rst
     edit.md
@@ -52,14 +50,12 @@ Jupyter    yes       yes        no         no      yes      yes     no
 .. toctree::
     :maxdepth: 1
     :caption: Publish
-    :hidden:
     
     github.md
 
 .. toctree::
     :maxdepth: 1
     :caption: FAQ - Examples
-    :hidden:
     
     faq.md
     terms.md
