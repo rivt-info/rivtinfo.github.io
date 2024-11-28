@@ -1,13 +1,13 @@
 
 Installation
-------------
+============
 
 - VS Code
 - Texlive 
 
 
 rivt
-====
+----
 
 
 The minimum software needed to run is:
@@ -28,14 +28,14 @@ provided in the [rivt User Manual](https://www.rivt-sys.net>)
 
 
 VSCode profiles
-=================
+----------------
 
 The rivt VSCode profile includes shortcuts for common editing functions and
 snippets for API functions and commands.
 
 
 API function snippets
-======================
+----------------------
 
 =========
  snippet
