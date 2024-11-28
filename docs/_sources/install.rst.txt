@@ -1,5 +1,5 @@
 
-System Install
+Installation
 ==============
 
 - VS Code
@@ -7,7 +7,7 @@ System Install
 
 
 rivt installation
-==================
+-----------------
 
 
 The minimum software needed to run is:
@@ -28,14 +28,16 @@ provided in the [rivt User Manual](https://www.rivt-sys.net>)
 
 
 VSCode profiles
-================
+---------------
 
 The rivt VSCode profile includes shortcuts for common editing functions and
 snippets for API functions and commands.
 
 
-### API function snippets
+API function snippets
+---------------------
 
+=========
  snippet
 =========
     ini    
@@ -43,7 +45,8 @@ snippets for API functions and commands.
     img    
     tbl    
     dec    
-    txt   
+    txt  
+========= 
 
 
 

@@ -1,5 +1,5 @@
 Folders
--------
+=======
 
 A starter report folder structure can be generated in the folder where the
 following command is executed:
@@ -20,6 +20,10 @@ subdivisions and sections.
 
 Fixed folder and file prefixes are shown in [ ]. Report and document headings
 are taken from the folder and file labels. 
+
+
+Folder structure
+----------------
 
 
 ::

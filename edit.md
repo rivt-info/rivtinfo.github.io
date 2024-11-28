@@ -1,6 +1,6 @@
 
 Edit
-----
+====
 
 
 A **rivt** file is a Python file (utf-8 ) with the import statement
@@ -56,7 +56,7 @@ output. Commands and tags are processed in part by the *docutils* library and
 
 
 Commands
-========
+--------
 
 Commands read and write external files and are marked by double bars (||) at
 the beginning of a line. Command parameters are separated by a single bar (|).
@@ -85,7 +85,7 @@ described [here](/organize.md#folders)
 
 
 Tags
-====
+----
 
 Line tags format a line of text and are denoted with *_[tag]*, typically at the
 end of a line. The *=* and *:=* tags used in the Value method are unique
@@ -191,7 +191,7 @@ Block tags start a text block with *_[[tag]]* and end with *_[[q]]*.
 
 
 Profiles
-========
+--------
 
 The rivt VSCode profile includes extensions, snippets and shortcuts for common editing functions.
 
@@ -230,7 +230,7 @@ ctl+shift+x          post to remote
 
 
 snippets
-========
+--------
 
 | **snippet**
 | :---------:
@@ -243,13 +243,13 @@ snippets
 
 
 command snippets
-================
+----------------
 
 some text
 
 
 GitHub
-======
+------
 
 some text
 
