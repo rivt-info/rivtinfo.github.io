@@ -24,6 +24,6 @@
 .. toctree::
     :maxdepth: 1
 
-    edit.md
+    edit.rst
     organize.rst
 
