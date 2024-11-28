@@ -1,4 +1,10 @@
-# Folders
+Folders
+-------
+
+A starter report folder structure can be generated in the folder where the
+following command is executed:
+
+*python -m rivtlib.toy-report*
 
 **rivtlib** can process single rivt files, but typically it is used to generate
 reports. rivt documents are organized into divisions (folders) and documents
