@@ -1,6 +1,8 @@
 
-Introduction
+Start
 ------------
+
+some text
 
 Overview
 ========
@@ -29,38 +31,3 @@ Online     no        no         no         no      no       yes     no
 Jupyter    yes       yes        no         no      yes      yes     no
 **rivt**   **yes**  **yes**    **yes**   **yes**   **yes**  **yes** **yes** 
 =========  ======== ========== ========= ========= ======== ======= =======  
-
-
-.. toctree::
-    :maxdepth: 1
-    :caption: Introduction
-    
-    intro.rst
-    install.rst
-
-
-.. toctree::
-    :maxdepth: 1
-    :caption: Write
-
-    folders.rst
-    edit.md
-    find.md
-
-
-.. toctree::
-    :maxdepth: 1
-    :caption: Publish
-    
-    github.md
-
-
-.. toctree::
-    :maxdepth: 1
-    :caption: FAQ - Examples
-    
-    faq.md
-    terms.md
-    example1.md
-    example2.md
-    changes.md
