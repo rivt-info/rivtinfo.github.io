@@ -18,30 +18,30 @@ Manual / API
 ------------
 
 **rivt** is a markup language and framework for writing and publishing
-engineering documents with an emphasis on template reuse.
+engineering documents, with an emphasis on template reuse.
 
-Software for engineering documents is already widely available but there are
-always barriers to sharing and resuing the document source files. They include
-high initial software and update costs, and incompatibility between various
-programs, their software updates and limited operating system platforms. This
-leads to similar engineering documents being repeatedly written from scratch for
-different programs. The table below summarizes the features addressed by
-**rivt** that address this wasted effort.
+Software for engineering documents is already widely available but they come
+with barriers to modifying and resuing source files. These include high initial
+software and update costs, incompatibility between various programs and their
+software updates, and limited operating system support. This leads to similar
+engineering documents being repeatedly written from scratch for different
+programs. The table below summarizes the features addressed by **rivt** that
+address this wasted effort.
 
 
 **Comparison - Engineering Document Programs**
 
-========= ======== ====== ======== ======= ===== ====== ====== ====== ========
-Program   Subscrip Open   Compat.  Version Text  Local  Local  Online Collated  
---------- -------- ------ -------- ------- ----- ------ ------ ------ --------
-Features  Fee      Source Versions Control Input All-OS Mobile Collab Reports
-========= ======== ====== ======== ======= ===== ====== ====== ====== ======== 
-**rivt**  **no**   yes    yes      yes     yes   yes    yes    yes    yes 
-Matlab    yes      no     no       no      no    no     no     no     no 
-Mathcad   yes      no     no       no      no    no     no     no     no 
-Mathemat. yes      no     no       no      no    no     no     no     no 
-Online    yes      no     no       no      no    no     no     yes    no 
-Jupyter   no       yes    yes      no      no    yes    yes    yes    no
+========= ======== ======= ======== ======== ======= ======= ======= ====== =========
+Program   Subscrip Open    Compat.  Version  Text    Local   Local   Online  Collated  
+--------- -------- ------- -------- -------- ------- ------  ------- ------  --------
+Features  Fee      Source  Versions Control  Input   All-OS  Mobile  Collab  Reports
+========= ======== ======= ======== ======== ======= ======= ======= ======= ======== 
+**rivt**  **no**   **yes**  **yes** **yes**  **yes** **yes** **yes** **yes** **yes** 
+Matlab    yes      no        no       no      no       no     no      no     no 
+Mathcad   yes      no        no       no      no       no     no      no     no 
+Mathemat. yes      no        no       no      no       no     no      no     no 
+Online    yes      no        no       no      no       no     no      yes    no 
+Jupyter   no       yes       yes      no      no       yes    yes     yes    no
 ========= ======== ====== ======== ======= ===== ====== ====== ====== ======== 
 
 
@@ -51,9 +51,8 @@ Jupyter   no       yes    yes      no      no    yes    yes    yes    no
     :caption: Introduction
     
     introduction.rst
-    setup.rst
-    system.md
- 
+    install.rst
+    
 .. toctree::
     :maxdepth: 1
     :caption: Write
@@ -66,8 +65,7 @@ Jupyter   no       yes    yes      no      no    yes    yes    yes    no
     :maxdepth: 1
     :caption: Publish
     :hidden:
-    
-    docs.md
+
     github.md
     find.md
 

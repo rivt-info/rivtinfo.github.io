@@ -52,7 +52,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Modify Documents" href="edit.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="system.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="install.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -138,14 +138,14 @@
   <ul class="bd-navbar-elements navbar-nav">
     
 <li class="nav-item current active">
-  <a class="nav-link nav-internal" href="setup.html">
+  <a class="nav-link nav-internal" href="introduction.html">
     <no title>
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="system.html">
+  <a class="nav-link nav-internal" href="install.html">
     <no title>
   </a>
 </li>
@@ -166,8 +166,8 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="find.html">
-    Organize
+  <a class="nav-link nav-internal" href="github.html">
+    Publish to Github
   </a>
 </li>
 
@@ -178,15 +178,8 @@
                 <ul id="pst-nav-more-links" class="dropdown-menu">
                     
 <li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="docs.html">
-    Documents
-  </a>
-</li>
-
-
-<li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="github.html">
-    Publish to Github
+  <a class="nav-link dropdown-item nav-internal" href="find.html">
+    Organize
   </a>
 </li>
 
@@ -302,14 +295,14 @@
   <ul class="bd-navbar-elements navbar-nav">
     
 <li class="nav-item current active">
-  <a class="nav-link nav-internal" href="setup.html">
+  <a class="nav-link nav-internal" href="introduction.html">
     <no title>
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="system.html">
+  <a class="nav-link nav-internal" href="install.html">
     <no title>
   </a>
 </li>
@@ -330,22 +323,15 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="find.html">
-    Organize
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="docs.html">
-    Documents
-  </a>
-</li>
-
-
-<li class="nav-item ">
   <a class="nav-link nav-internal" href="github.html">
     Publish to Github
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="find.html">
+    Organize
   </a>
 </li>
 
@@ -411,14 +397,13 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Write</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="edit.html">Modify Documents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="find.html">Organize</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Publish</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="docs.html">Documents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="github.html">Publish to Github</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">FAQ - Examples</span></p>
@@ -464,7 +449,7 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="setup.html" class="nav-link">&lt;no title&gt;</a></li>
+    <li class="breadcrumb-item"><a href="introduction.html" class="nav-link">&lt;no title&gt;</a></li>
     
     <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">&lt;no title&gt;</span></li>
   </ul>
@@ -552,6 +537,54 @@ are taken from the folder and file labels.</p>
     └── README.txt                    (cumulative documents - searchable)
 </pre></div>
 </div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[rivt]-Report-Label/
+    ├── .git
+    ├── units.py                        (input: unit over-ride)
+    ├── README.md                       (output: toc and summary)
+    ├── rivt01.ini                      (input: config file)
+    ├── [doc0101]-div-label/            (first division - first file)
+        ├── [data0101]/                     (inputs: data files)
+            ├── data1.csv
+            ├── paper1.pdf
+            └── functions1.py
+        ├── [rivt]-doc-label1.py            (input: rivt file)
+        └── README.md                       (output: GFM doc)
+    ├── [doc0102]/                      (first division - second file)
+        ├── data[0102]/                     (inputs: data files)
+            ├── data1.csv
+            ├── fig1.png
+            └── fig2.png
+        ├── [rivt]-doc-label2.py            (input: rivt file)
+        └── README.md                       (output: GFM doc)
+    ├── [doc0201]-div-label/            (second division - first file)
+        ├── [data0201]/                     (inputs: data files)
+            ├── data1.csv
+            ├── attachment.pdf
+            ├── functions.py
+            └── fig1.png
+        ├── [rivt]-doc-label3.py            (input: rivt file)
+        └── README.md                       (outputs: GFM doc)
+    └── [private]/                      (private files)
+        ├── [temp]/                         (outputs: temp files)
+        ├── [report]/                       (report files)
+            ├── 0101-Doc Label1.pdf         (outputs: PDF docs)
+            ├── 0102-Doc Label2.pdf
+            ├── 0201-Doc Label3.pdf
+            └── Report Label.pdf
+        ├── images/                         (inputs: optional private data)
+            ├── fig1.png
+            └── fig2.png
+        ├── text/
+            ├── text1.txt
+            └── text2.txt
+        ├── append/
+            ├── report1.pdf
+            └── report2.pdf
+        └── tables/
+            ├── data1.csv
+            └── data1.xls
+</pre></div>
+</div>
 
 
                 </article>
@@ -564,7 +597,7 @@ are taken from the folder and file labels.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="system.html"
+       href="install.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">

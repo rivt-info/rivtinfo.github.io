@@ -48,11 +48,11 @@
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'system';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'introduction';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="organize.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="setup.html" />
+    <link rel="next" title="&lt;no title&gt;" href="install.html" />
+    <link rel="prev" title="Manual / API" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -138,14 +138,14 @@
   <ul class="bd-navbar-elements navbar-nav">
     
 <li class="nav-item current active">
-  <a class="nav-link nav-internal" href="setup.html">
+  <a class="nav-link nav-internal" href="#">
     <no title>
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="#">
+  <a class="nav-link nav-internal" href="install.html">
     <no title>
   </a>
 </li>
@@ -166,8 +166,8 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="find.html">
-    Organize
+  <a class="nav-link nav-internal" href="github.html">
+    Publish to Github
   </a>
 </li>
 
@@ -178,15 +178,8 @@
                 <ul id="pst-nav-more-links" class="dropdown-menu">
                     
 <li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="docs.html">
-    Documents
-  </a>
-</li>
-
-
-<li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="github.html">
-    Publish to Github
+  <a class="nav-link dropdown-item nav-internal" href="find.html">
+    Organize
   </a>
 </li>
 
@@ -302,14 +295,14 @@
   <ul class="bd-navbar-elements navbar-nav">
     
 <li class="nav-item current active">
-  <a class="nav-link nav-internal" href="setup.html">
+  <a class="nav-link nav-internal" href="#">
     <no title>
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="#">
+  <a class="nav-link nav-internal" href="install.html">
     <no title>
   </a>
 </li>
@@ -330,22 +323,15 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="find.html">
-    Organize
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="docs.html">
-    Documents
-  </a>
-</li>
-
-
-<li class="nav-item ">
   <a class="nav-link nav-internal" href="github.html">
     Publish to Github
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="find.html">
+    Organize
   </a>
 </li>
 
@@ -411,14 +397,13 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Write</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="edit.html">Modify Documents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="find.html">Organize</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Publish</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="docs.html">Documents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="github.html">Publish to Github</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">FAQ - Examples</span></p>
@@ -463,9 +448,6 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    
-    <li class="breadcrumb-item"><a href="setup.html" class="nav-link">&lt;no title&gt;</a></li>
-    
     <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">&lt;no title&gt;</span></li>
   </ul>
 </nav>
@@ -483,40 +465,18 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p>## System Install</p>
-<ul class="simple">
-<li><p>VS Code</p></li>
-<li><p>Texlive</p></li>
-</ul>
-<p>## rivt installation</p>
-<p>The minimum software needed to run is:</p>
-<ul class="simple">
-<li><p>Python 3.8 or higher</p></li>
-<li><p>rivt library + Python dependencies</p></li>
-</ul>
-<p>A complete rivt system additionally includes:</p>
-<ul class="simple">
-<li><p>VSCode + extensions</p></li>
-<li><p>LaTeX</p></li>
-<li><p>Github account</p></li>
-</ul>
-<p>rivt-sys installs the complete rivt system in a portable folder via a zip file,
-and is available for every OS platform. rivt also runs in the cloud using
-GitHub CodeSpaces or other cloud service providers. Installation details are
-provided in the [rivt User Manual](<a class="reference external" href="https://www.rivt-sys.net">https://www.rivt-sys.net</a>&gt;)</p>
-<p>## VSCode profiles</p>
-<p>The rivt VSCode profile includes shortcuts for common editing functions and
-snippets for API functions and commands.</p>
-<p>### API function snippets</p>
-<blockquote>
-<div><p>snippet</p>
-</div></blockquote>
-<blockquote>
-<div><p>img
-tbl
-dec
-txt</p>
-</div></blockquote>
+  <p># Introduction</p>
+<p>A starter report folder structure can be generated in the folder where the
+following command is executed:</p>
+<p><em>python -m rivtlib.toy-report</em></p>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
 
 
                 </article>
@@ -529,16 +489,16 @@ txt</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="setup.html"
+       href="index.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">Manual / API</p>
       </div>
     </a>
     <a class="right-next"
-       href="organize.html"
+       href="install.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
@@ -564,7 +524,7 @@ txt</p>
     <i class="fa-solid fa-list"></i> On this page
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="simple visible nav section-nav flex-column">
+    <ul class="visible nav section-nav flex-column">
 </ul>
 
   </nav></div>
@@ -572,7 +532,7 @@ txt</p>
   <div class="sidebar-secondary-item">
 
   <div class="tocsection sourcelink">
-    <a href="_sources/system.rst.txt">
+    <a href="_sources/introduction.rst.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>

@@ -19,7 +19,6 @@ following command is executed:
     :caption: Write
     :hidden:
 
-    sections
     organize.rst
     edit.md
     find.md
@@ -30,7 +29,6 @@ following command is executed:
     :caption: Publish
     :hidden:
     
-    docs.md
     github.md
 
 .. toctree::
