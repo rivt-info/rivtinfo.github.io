@@ -25,6 +25,7 @@ rivt info
 .. toctree::
     :maxdepth: 1
 
+    folders.rst
     edit.rst
     organize.rst
 
