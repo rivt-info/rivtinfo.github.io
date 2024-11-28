@@ -1,10 +1,14 @@
 
-## System Install
+System Install
+==============
 
 - VS Code
 - Texlive 
 
-## rivt installation
+
+rivt installation
+==================
+
 
 The minimum software needed to run is:
 
@@ -23,7 +27,8 @@ GitHub CodeSpaces or other cloud service providers. Installation details are
 provided in the [rivt User Manual](https://www.rivt-sys.net>)
 
 
-## VSCode profiles
+VSCode profiles
+================
 
 The rivt VSCode profile includes shortcuts for common editing functions and
 snippets for API functions and commands.

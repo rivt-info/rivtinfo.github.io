@@ -16,17 +16,16 @@ to address this wasted effort.
 
 **Comparison - Engineering Document Programs**
 
-========= ======== ======= ======== ======== ======= ======= ======= ======= ========
-Features  Subscrip Open    Compat.  Version  Text    Local   Local   Online  Collated  
-Programs  Fee      Source  Versions Control  Input   All-OS  Mobile  Collab  Reports
-========= ======== ======= ======== ======== ======= ======= ======= ======= ======== 
-Matlab    yes      no        no       no      no       no     no      no     no 
-Mathcad   yes      no        no       no      no       no     no      no     no 
-Mathemat. yes      no        no       no      no       no     no      no     no 
-Online    yes      no        no       no      no       no     no      yes    no 
-Jupyter   no       yes       yes      no      no       yes    yes     yes    no
-**rivt**  **no**   **yes** **yes**  **yes**  **yes** **yes** **yes** **yes** **yes** 
-========= ======== ======= ======== ======== ======= ======= ======= ======= ======== 
+=========  ======== ========== ========= ========= ======== ======= ======= 
+Features   O-Source  Comp.(1)  Ver. Ctrl  Text (2)  All-OS  Online  Reports  
+=========  ======== ========== ========= ========= ======== ======= ======= 
+Matlab     no        no         no         no      no       no      no 
+Mathcad    no        no         no         no      no       no      no 
+Mathemat.  no        no         no         no      no       no      no 
+Online     no        no         no         no      no       yes     no 
+Jupyter    yes       yes        no         no      yes      yes     no
+**rivt**   **yes**  **yes**    **yes**   **yes**   **yes**  **yes** **yes** 
+=========  ======== ========== ========= ========= ======== ======= =======  
 
 
 .. toctree::
@@ -42,7 +41,7 @@ Jupyter   no       yes       yes      no      no       yes    yes     yes    no
     :caption: Write
     :hidden:
 
-    organize.rst
+    folders.rst
     edit.md
     find.md
 
