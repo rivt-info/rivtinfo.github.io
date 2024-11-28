@@ -6,19 +6,18 @@ Introduction
 engineering documents, with an emphasis on template reuse.
 
 Software for engineering documents is already widely available but they come
-with barriers to modifying and resuing source files. These include high initial
-software and update costs, incompatibility between various programs and their
-software updates, and limited operating system support. This leads to similar
-engineering documents being repeatedly written from scratch for different
-programs. The table below summarizes the features addressed by **rivt** that
-address this wasted effort.
+with barriers to modifying, sharing and resuing source files. These include high
+initial software and update costs, incompatibility between various programs and
+upgrades, and limited operating system support. Therefore, similar engineering
+documents need to be repeatedly written from scratch to accomodate different
+software programs. The table below summarizes the features addressed by **rivt**
+to address this wasted effort.
 
 
 **Comparison - Engineering Document Programs**
 
 ========= ======== ======= ======== ======== ======= ======= ======= ======= ========
 Features  Subscrip Open    Compat.  Version  Text    Local   Local   Online  Collated  
---------- -------- ------- -------- -------- ------- ------- ------- ------- --------
 Programs  Fee      Source  Versions Control  Input   All-OS  Mobile  Collab  Reports
 ========= ======== ======= ======== ======== ======= ======= ======= ======= ======== 
 Matlab    yes      no        no       no      no       no     no      no     no 
