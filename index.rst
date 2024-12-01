@@ -32,4 +32,11 @@ The rivtzip framework is here `rivt.zip <https://github.com/rivtlib-net/rivtzip>
 
     folders.rst
     edit.rst
+    publish.rst
+
+.. toctree::
+    :maxdepth: 1
+
+    terms.rst
+    find.md
 
