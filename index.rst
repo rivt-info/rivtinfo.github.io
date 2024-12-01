@@ -37,6 +37,7 @@ The rivtzip framework is here `rivt.zip <https://github.com/rivtlib-net/rivtzip>
 .. toctree::
     :maxdepth: 1
 
-    terms.rst
     find.md
-
+    terms.rst
+    faq.md
+    
