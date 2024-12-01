@@ -14,12 +14,11 @@
     </embed>
 
 
-User Manual
-===========
+rivt User Manual
+================
 
-The rivtlib source code is here `rivtlib.net <https://www.rivtlib.net/>`_ 
-
-The rivtzip framework is here `rivt.zip <https://github.com/rivtlib-net/rivtzip>`_ 
+The rivtlib source code is here `rivtlib.net <https://www.rivtlib.net/>`_  The
+rivtzip framework is here `rivt.zip <https://github.com/rivtlib-net/rivtzip>`_ 
 
 .. toctree::
     :maxdepth: 1

@@ -18,11 +18,11 @@ source_suffix = ['.rst', '.md']
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
+html_theme = 'pydata_sphinx_theme'
 html_sidebars = {"**": []}
 html_css_files = ['css/custom.css',]
 html_static_path = ['_static', '_static/img/']
 html_context = {"default_mode": "auto"}
-html_theme = 'pydata_sphinx_theme'
 html_theme_options = {
     "show_nav_level": 2,
     "show_toc_level": 3,
