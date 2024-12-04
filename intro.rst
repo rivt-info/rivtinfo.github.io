@@ -16,7 +16,7 @@ wasteful and frustrating work.
 **Comparison of Engineering Document Programs**
 
 =========  ======== =========== =========== ======== ======== ======= ======= ======= 
-Features   O-Source  Compat.[1]  Vers. Ctrl  Text[2]  All-OS  Online  Local  Reports  
+Features   O-Source  Compat.[1]  Vers. Ctrl  Text[2]  All-OS  Online  Local   Reports  
 =========  ======== =========== =========== ======== ======== ======= ======= ======= 
 Matlab     no        no          no          no      no       no      yes      no 
 Mathcad    no        no          no          no      no       no      yes      no 
