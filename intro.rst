@@ -63,17 +63,17 @@ The rivtlib library is part of the open source **rivtzip** framework and is
 distributed under the MIT license. **rivtzip** is an open source framework for
 publishing rivt documents. The framework can be downloaded as portable Windows
 zip files, or installed through OS specific shell scripts (https://rivt.zip). It
-includes five established technologies
+includes five established technologies:
 
-    - VSCode and extensions - document editing and processing
+- **VSCode and extensions** - document editing and processing
 
-    - Python and libraries - analysis and formatting
-        
-    - Latex - typesetting
-        
-    - Git, GitHub - version control
+- **Python and libraries** - analysis and formatting
+    
+- **Latex** - typesetting
+    
+- **Git, GitHub** - version control
 
-    - QCAD - diagramming
+- **QCAD** - diagramming
 
 
 
