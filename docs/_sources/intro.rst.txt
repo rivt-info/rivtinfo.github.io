@@ -15,18 +15,19 @@ wasteful and frustrating work.
 
 **Comparison of Engineering Document Programs**
 
-=========  ======== =========== ========== ======== ======== ======= ======= ======= 
+=========  ======== =========== =========== ======== ======== ======= ======= ======= 
 Features   O-Source  Compat.[1]  Vers. Ctrl  Text[2]  All-OS  Online  Local  Reports  
-=========  ======== =========== ========== ======== ======== ======= ======= ======= 
+=========  ======== =========== =========== ======== ======== ======= ======= ======= 
 Matlab     no        no          no          no      no       no      yes      no 
 Mathcad    no        no          no          no      no       no      yes      no 
 Mathemat.  no        no          no          no      no       no      yes      no 
 Online     no        no          no          no      no       yes     no       no 
 Jupyter    yes       yes         no          no      yes      yes     yes      no
-**rivt**   **yes**  **yes**     **yes**    **yes**  **yes**  **yes** **yes** **yes** 
-=========  ======== =========== ========== ======== ======== ======= ======= =======  
+**rivt**   **yes**  **yes**     **yes**     **yes**  **yes**  **yes** **yes** **yes** 
+=========  ======== =========== =========== ======== ======== ======= ======= =======  
 
 [1] Backward and forward file compatiblilty
+
 [2] Readable text input files
 
 
