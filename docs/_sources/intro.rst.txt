@@ -38,7 +38,7 @@ Summary
 documents based on restructured text Python libraries. It is designed to make it
 easy to share and reuse engineering document templates.  
 
-A rivt file is a Python file (*.py*) that imports the **rivtlib** library:: 
+A rivt file is a Python file (.py) that imports the **rivtlib** library:: 
 
     import rivtlib.rivtapi as rv
 
@@ -57,23 +57,23 @@ where **rS** is a triple quoted string that follows rivt markup syntax.
 
 **rivtlib** is a Python library that generates **rivt docs** and **reports**. A
 **rivt doc** (document) is a text, HTML or PDF file output from a rivt file. A
-**rivt report** (report) is a collated collection of rivt docs.
+**rivt report** is a collated collection of rivt docs.
 
-rivtlib is part of the open source **rivtzip** framework and is distributed
-under the MIT license. **rivtzip** is an open source framework for publishing
-rivt documents. The framework can be downloaded as portable Windows zip files,
-or installed through OS specific shell scripts (https://rivt.zip). It includes
-five established technologies::
+The rivtlib library is part of the open source **rivtzip** framework and is
+distributed under the MIT license. **rivtzip** is an open source framework for
+publishing rivt documents. The framework can be downloaded as portable Windows
+zip files, or installed through OS specific shell scripts (https://rivt.zip). It
+includes five established technologies
 
-    VSCode and extensions - document editing and processing
+    - VSCode and extensions - document editing and processing
 
-    Python and libraries - analysis and formatting
+    - Python and libraries - analysis and formatting
         
-    Latex - typesetting
+    - Latex - typesetting
         
-    Git, GitHub - version control
+    - Git, GitHub - version control
 
-    QCAD - diagramming
+    - QCAD - diagramming
 
 
 
