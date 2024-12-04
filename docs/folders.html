@@ -51,8 +51,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'folders';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Edit" href="edit.html" />
-    <link rel="prev" title="rivt templates" href="find.html" />
+    <link rel="next" title="VSCode" href="vscode.html" />
+    <link rel="prev" title="rivt Templates" href="find.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -158,7 +158,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="find.html">
-    rivt templates
+    rivt Templates
   </a>
 </li>
 
@@ -176,6 +176,13 @@
                 <ul id="pst-nav-more-links" class="dropdown-menu">
                     
 <li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="vscode.html">
+    VSCode
+  </a>
+</li>
+
+
+<li class=" ">
   <a class="nav-link dropdown-item nav-internal" href="edit.html">
     Edit
   </a>
@@ -183,8 +190,15 @@
 
 
 <li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="publish.html">
+    Write
+  </a>
+</li>
+
+
+<li class=" ">
   <a class="nav-link dropdown-item nav-internal" href="example.html">
-    <no title>
+    Example 1
   </a>
 </li>
 
@@ -301,7 +315,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="find.html">
-    rivt templates
+    rivt Templates
   </a>
 </li>
 
@@ -314,6 +328,13 @@
 
 
 <li class="nav-item ">
+  <a class="nav-link nav-internal" href="vscode.html">
+    VSCode
+  </a>
+</li>
+
+
+<li class="nav-item ">
   <a class="nav-link nav-internal" href="edit.html">
     Edit
   </a>
@@ -321,8 +342,15 @@
 
 
 <li class="nav-item ">
+  <a class="nav-link nav-internal" href="publish.html">
+    Write
+  </a>
+</li>
+
+
+<li class="nav-item ">
   <a class="nav-link nav-internal" href="example.html">
-    <no title>
+    Example 1
   </a>
 </li>
 
@@ -534,6 +562,115 @@ are taken from the folder and file labels.</p>
 </pre></div>
 </div>
 </section>
+<section id="folders-document-organization">
+<h2>Folders: document organization<a class="headerlink" href="#folders-document-organization" title="Link to this heading">#</a></h2>
+<p><strong>rivt</strong> implements a file and folder structure to simplify file sharing and
+control. The privacy level of document inputs and outputs may be may be set at
+the file or API function level. Each rivt file (and doc) is idenfiifed by a
+unique rivt file prefix with the form rivddss-filename where dd is a two digit
+division number and ss is a two digit subdivision number e.g., riv0203-loads.py
+is the third subdivision of division two. Editing the rivt number also changes
+the report organization.</p>
+<p>Report and document headings are taken from folder and file names unless
+overridden in the config file. An example folder structure is shown below.
+Required file names or prefixes are shown in [ ].</p>
+<p>Source files for rivt docs are stored in 6 folders:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">append</span>
+<span class="o">-</span> <span class="n">images</span>
+<span class="o">-</span> <span class="n">scripts</span>
+<span class="o">-</span> <span class="n">tables</span>
+<span class="o">-</span> <span class="n">text</span>
+<span class="o">-</span> <span class="n">values</span>
+</pre></div>
+</div>
+<p>Output is written to the write folder with 4 sub-folders:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">html</span>
+<span class="o">-</span> <span class="n">pdf</span>
+<span class="o">-</span> <span class="n">text</span>
+<span class="o">-</span> <span class="n">temp</span>
+<span class="o">-</span> <span class="n">xrivt</span>
+</pre></div>
+</div>
+<p>Doc files are the text, PDF or HTML output of a rivt file that are stored in
+the <em>write</em> folder. rivt reports are collections of docs specified in the
+config.ini. Resource files are stored in user-defined sub-folders which
+organize the data allow for separation of public and private data.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[rivt]-Project-Name/
+    ├── [append]/
+        ├── app01/
+        └── app02/
+            ├── attach3.pdf
+            └── attach4.pdf
+    ├── [images]/
+        ├── img01/
+        └── img02/
+            ├── image3.jpg
+            └── image4.jpg
+    ├── [scripts]/
+        ├── py01/
+        └── py02/
+            ├── function3.py
+            └── function4.py
+        ├── run01/
+        └── run02/
+            ├── script3.bat
+            └── script4.sh
+    ├── [tables]/
+        ├── tbl01/
+        └── tbl02/
+            ├── table3.csv
+            └── table4.csv
+    ├── [text]/
+        ├── tex01/
+        ├── tex02/
+            ├── latex3.tex
+            └── latex4.tex
+        ├── txt01/
+        └── txt02/
+            ├── text3.txt
+            └── text4.txt
+    ├── [values]/
+        ├── dat01/
+        ├── dat02/
+            ├── table3.csv
+            └── table4.csv
+        ├── equ01/
+        ├── equ02/
+            ├── equation1.txt
+            └── equation2.txt
+        ├── val01/
+        └── val02/
+            ├── values3.csv
+            └── values4.csv
+    ├── [write]/                        (output files)
+        ├── [html]/
+            └── riv0101-codes.html      (html files)
+                riv0202-frames.html
+                Project-Name.html       (html report)
+        ├── [pdf]/
+            └── riv0101-codes.pdf       (pdf files)
+                riv0202-frames.pdf
+                Project-Name.pdf        (pdf report)
+        ├── [temp]/                     (temp files)
+            └── temp-files.tex
+        └── [text]/
+            └── riv0101-codes.txt       (text output)
+                riv0201-frames.txt
+        └── [xrivt-redacted]/
+            └── README.txt              (redacted report)
+                xriv0101-codes.py       (redacted files)
+                xriv0102-loads.py
+                xriv0201-walls.py
+    └── config.ini                      (rivt config file)
+        README.txt                      (searchable report in public repo)
+        riv0000-report.py               (rivt input files)
+        riv0101-codes.py
+        riv0102-loads.py
+        riv0201-walls.py
+        riv0202-frames.py
+</pre></div>
+</div>
+</section>
 </section>
 
 
@@ -552,15 +689,15 @@ are taken from the folder and file labels.</p>
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">rivt templates</p>
+        <p class="prev-next-title">rivt Templates</p>
       </div>
     </a>
     <a class="right-next"
-       href="edit.html"
+       href="vscode.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Edit</p>
+        <p class="prev-next-title">VSCode</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -584,6 +721,7 @@ are taken from the folder and file labels.</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#folder-structure">Folder structure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#folders-document-organization">Folders: document organization</a></li>
 </ul>
   </nav></div>
 

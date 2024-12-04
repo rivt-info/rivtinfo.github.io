@@ -1,5 +1,5 @@
 
-rivt templates
+rivt Templates
 ==============
 
 

@@ -304,7 +304,7 @@ organize the data allow for separation of public and private data.
 
 Example rivt file
 -----------------------------------------------------------------------------
-API functions start in column 1. rivt-strings are indented 4 spaces (for
+API functions start in column one. rivt-strings are indented four spaces (for
 legibility and code folding).A rivt doc is assembled by each function in order
 of the input order. Each function also, optionally, defines a doc section.
 

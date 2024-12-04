@@ -15,13 +15,13 @@
 
 
 
-**rivtlib** source code is here `rivtlib.net <https://www.rivtlib.net/>`_.  The
+**rivtlib** source code is here `rivtlib.net <https://www.rivtlib.net/>`_.  
 **rivtzip** installation framework is here `rivt.zip
 <https://github.com/rivtlib-net/rivtzip>`_. 
 
 
-rivt User Manual
-================
+User Manual
+============
 
 .. toctree::
     :maxdepth: 1
@@ -42,6 +42,7 @@ rivt User Manual
     :caption: Write
 
     folders.rst
+    vscode.rst
     edit.rst
 
 .. toctree::
