@@ -23,21 +23,36 @@ rivt User Manual
 
 .. toctree::
     :maxdepth: 1
+    :caption: Setup
     
     intro.rst
     install.rst
+
+.. toctree::
+    :maxdepth: 1
+    :caption: Templates
+
+    github.rst
+    find.rst
     
 .. toctree::
     :maxdepth: 1
+    :caption: Write
 
     folders.rst
     edit.rst
-    publish.rst
 
 .. toctree::
     :maxdepth: 1
+    :caption: Publish
 
-    find.md
-    terms.rst
-    faq.md
+    publish.rst
+    example.rst
+
+.. toctree::
+    :maxdepth: 1
+    :caption: Terms
+
+    define.rst
+    faq.rst 
     

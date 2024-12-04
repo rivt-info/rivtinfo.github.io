@@ -1,6 +1,6 @@
 
-Intro
------
+Overview
+========
 
 **rivt** is a markup language for writing and publishing engineering documents
 with an emphasis on template reuse. Software for engineering documents is
@@ -30,9 +30,6 @@ Jupyter    yes       yes         no          no      yes      yes     yes      n
 
 [2] Readable text input files
 
-
-Summary
--------
 
 **rivt** is a lightweight, open source, markup language for writing engineering
 documents based on restructured text Python libraries. It is designed to make it

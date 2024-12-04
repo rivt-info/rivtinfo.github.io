@@ -1,10 +1,12 @@
 Folders
 =======
 
-A starter report folder structure can be generated in the folder where the
-following command is executed:
+Folders are needed for organizing reports. A starter report folder structure can
+be generated in the folder where the following command is executed:
 
-*python -m rivtlib.toy-report*
+*python -m rivtlib.folder-template*
+
+This constructions 
 
 **rivtlib** can process single rivt files, but typically it is used to generate
 reports. rivt documents are organized into divisions (folders) and documents
@@ -24,7 +26,6 @@ are taken from the folder and file labels.
 
 Folder structure
 ----------------
-
 
 ::
 
