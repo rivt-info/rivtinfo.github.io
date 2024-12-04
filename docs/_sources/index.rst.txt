@@ -25,7 +25,7 @@ rivt User Manual
     :maxdepth: 1
     :caption: Setup
     
-    intro.rst
+    overview.rst
     install.rst
 
 .. toctree::
