@@ -4,14 +4,13 @@ Overview
 
 **rivt** is a markup language for writing and publishing engineering documents
 with an emphasis on template reuse. Software for engineering documents is
-already widely available but it comes with barriers to sharing and modifying
-source files. These include high initial and update costs, incompatibility
-between various programs and upgrades, and limited operating system support.
+already widely available but there are barriers to sharing and modifying source
+files. These include high initial and update costs, incompatibility between
+various programs and upgrades, and limited operating system support.
 Consequently, similar engineering documents need to be repeatedly written from
-scratch to accomodate different software programs. 
-
-The table below summarizes the features addressed by **rivt** to address this
-wasteful and frustrating work.
+scratch to accomodate different software programs. The table below summarizes
+the features included in **rivt** to address this wasteful and frustrating
+situation.
 
 **Comparison of Engineering Document Programs**
 
@@ -31,11 +30,7 @@ Jupyter    yes       yes         no          no      yes      yes     yes      n
 [2] Readable text input files
 
 
-**rivt** is a lightweight, open source, markup language for writing engineering
-documents based on restructured text Python libraries. It is designed to make it
-easy to share and reuse engineering document templates.  
-
-A rivt file is a Python file (.py) that imports the **rivtlib** library:: 
+A **rivt** file is a Python file (.py) that imports the **rivtlib** library:: 
 
     import rivtlib.rivtapi as rv
 
