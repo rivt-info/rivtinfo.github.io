@@ -48,10 +48,10 @@
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'overview';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '1-overview';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Install" href="install.html" />
+    <link rel="next" title="Install" href="2-install.html" />
     <link rel="prev" title="User Manual" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -143,82 +143,25 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="install.html">
+  <a class="nav-link nav-internal" href="2-install.html">
     Install
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="github.html">
+  <a class="nav-link nav-internal" href="3-github.html">
     GitHub
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="find.html">
+  <a class="nav-link nav-internal" href="4-search.html">
     rivt Templates
   </a>
 </li>
 
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="folders.html">
-    Folders
-  </a>
-</li>
-
-            <li class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links">
-                    More
-                </button>
-                <ul id="pst-nav-more-links" class="dropdown-menu">
-                    
-<li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="vscode.html">
-    VSCode
-  </a>
-</li>
-
-
-<li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="edit.html">
-    Edit
-  </a>
-</li>
-
-
-<li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="publish.html">
-    Write
-  </a>
-</li>
-
-
-<li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="example.html">
-    Example
-  </a>
-</li>
-
-
-<li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="define.html">
-    Definitions
-  </a>
-</li>
-
-
-<li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="faq.html">
-    FAQ
-  </a>
-</li>
-
-                </ul>
-            </li>
-            
   </ul>
 </nav></div>
       
@@ -300,71 +243,22 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="install.html">
+  <a class="nav-link nav-internal" href="2-install.html">
     Install
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="github.html">
+  <a class="nav-link nav-internal" href="3-github.html">
     GitHub
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="find.html">
+  <a class="nav-link nav-internal" href="4-search.html">
     rivt Templates
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="folders.html">
-    Folders
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="vscode.html">
-    VSCode
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="edit.html">
-    Edit
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="publish.html">
-    Write
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="example.html">
-    Example
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="define.html">
-    Definitions
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="faq.html">
-    FAQ
   </a>
 </li>
 
@@ -441,13 +335,13 @@
 <h1>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h1>
 <p><strong>rivt</strong> is a markup language for writing and publishing engineering documents
 with an emphasis on template reuse. Software for engineering documents is
-already widely available but it comes with barriers to sharing and modifying
-source files. These include high initial and update costs, incompatibility
-between various programs and upgrades, and limited operating system support.
+already widely available but there are barriers to sharing and modifying source
+files. These include high initial and update costs, incompatibility between
+various programs and upgrades, and limited operating system support.
 Consequently, similar engineering documents need to be repeatedly written from
-scratch to accomodate different software programs.</p>
-<p>The table below summarizes the features addressed by <strong>rivt</strong> to address this
-wasteful and frustrating work.</p>
+scratch to accomodate different software programs. The table below summarizes
+the features included in <strong>rivt</strong> to address this wasteful and frustrating
+situation.</p>
 <p><strong>Comparison of Engineering Document Programs</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -528,10 +422,7 @@ wasteful and frustrating work.</p>
 </div>
 <p>[1] Backward and forward file compatiblilty</p>
 <p>[2] Readable text input files</p>
-<p><strong>rivt</strong> is a lightweight, open source, markup language for writing engineering
-documents based on restructured text Python libraries. It is designed to make it
-easy to share and reuse engineering document templates.</p>
-<p>A rivt file is a Python file (.py) that imports the <strong>rivtlib</strong> library:</p>
+<p>A <strong>rivt</strong> file is a Python file (.py) that imports the <strong>rivtlib</strong> library:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">rivtlib.rivtapi</span> <span class="k">as</span> <span class="nn">rv</span>
 </pre></div>
 </div>
@@ -582,7 +473,7 @@ includes five established technologies:</p>
       </div>
     </a>
     <a class="right-next"
-       href="install.html"
+       href="2-install.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
@@ -604,7 +495,7 @@ includes five established technologies:</p>
   <div class="sidebar-secondary-item">
 
   <div class="tocsection sourcelink">
-    <a href="_sources/overview.rst.txt">
+    <a href="_sources/1-overview.rst.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>

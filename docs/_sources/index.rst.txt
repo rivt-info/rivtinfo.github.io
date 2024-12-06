@@ -27,15 +27,15 @@ User Manual
     :maxdepth: 1
     :caption: Setup
     
-    overview.rst
-    install.rst
+    1-overview.rst
+    2-install.rst
 
 .. toctree::
     :maxdepth: 1
     :caption: Templates
 
-    github.rst
-    find.rst
+    3-github.rst
+    4-search.rst
     
 .. toctree::
     :maxdepth: 1
