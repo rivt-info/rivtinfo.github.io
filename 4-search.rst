@@ -1,6 +1,6 @@
 
-rivt Templates
-==============
+Search
+=======
 
 
 .. raw:: html
