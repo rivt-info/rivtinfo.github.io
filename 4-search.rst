@@ -45,11 +45,10 @@ Example: **solar+steel+frame** is passed to GitHub as **rivt+solar+steel+frame**
 Search GitHub Organizations
 ---------------------------
 
+    Organizations (comma separated)
+
 .. raw:: html    
     
-    <hr>
-    
-    Organizations (comma separated)<br>
     <input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: normal">
 
     <hr>
