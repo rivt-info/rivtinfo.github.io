@@ -2,16 +2,16 @@
 Search
 =======
 
-This page provides convenient search of **rivt** files across GitHub.  It searches the full text in
-**rivt** root README file, which typically contains the full rivt report.
+This page provides a convenient search function for **rivt** files across
+GitHub.  The searches cover the full text in te **rivt** root README file, which
+typically contains a full rivt report. For searching with advanced functions,
+use the GitHub search interface [here](https://github.com/search).
 
-[C] Clear [ Ctrl+R ]
+[S] Search GitHub (Ctrl+Enter)
 
-[S] Search [ Ctrl+Enter ]
+[C] Clear input (Ctrl+R)
 
-Example: solar+steel+frame is passed to GitHub as rivt+solar+steel+frame
-
-For search with advanced functions, the GitHub search interface is [here](https://github.com/search).
+Example: **solar+steel+frame** is passed to GitHub as **rivt+solar+steel+frame**
 
 
 .. raw:: html
@@ -44,9 +44,11 @@ For search with advanced functions, the GitHub search interface is [here](https:
     <hr>
 
 
-    GitHub Organizations
+    GitHub Organizations (comma separated)
 
-    <input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: normal"> Organizations (comma separated)<br>
+    <hr>
+
+    <input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: normal">
 
     <hr>
 
