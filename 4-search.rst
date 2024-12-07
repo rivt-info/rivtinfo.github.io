@@ -3,16 +3,18 @@ Search
 =======
 
 This page provides a convenient search function for **rivt** files across
-GitHub.  The searches cover the full text in te **rivt** root README file, which
-typically contains a full rivt report. For searching with advanced functions,
-use the GitHub search interface [here](https://github.com/search).
+GitHub.  The search covers the full text in the **rivt** root README file, which
+typically contains the full rivt report. For advanced function searching
+use the GitHub search interface `here <https://github.com/search>`_.
 
 [S] Search GitHub (Ctrl+Enter)
 
 [C] Clear input (Ctrl+R)
 
-Example: **solar+steel+frame** is passed to GitHub as **rivt+solar+steel+frame**
+Search GitHub
+-------------
 
+Example: **solar+steel+frame** is passed to GitHub as **rivt+solar+steel+frame**
 
 .. raw:: html
 
@@ -39,22 +41,20 @@ Example: **solar+steel+frame** is passed to GitHub as **rivt+solar+steel+frame**
     <button class="button" id="searchBtn" onclick="searchRivt()">S</button><button class="button" id="clearBtn" onclick="clearRivt()">C</button><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal"><br>
 
 
+
+Search GitHub Organizations
+---------------------------
+
+    
+.. raw:: html    
+    
+    **Organizations**
     <hr>
-
-    <hr>
-
-
-    GitHub Organizations (comma separated)
-
-    <hr>
-
     <input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: normal">
 
     <hr>
 
     Search Terms
-    
     <hr>
-
     <button class="button" id="searchBtn" onclick="searchOrg()">S</button> <button class="button" id="clearBtn" onclick="clearRivt()">C</button><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal">
 
