@@ -453,34 +453,29 @@
                   
   <section id="search">
 <h1>Search<a class="headerlink" href="#search" title="Link to this heading">#</a></h1>
-<p>This page provides search of <strong>rivt</strong> files across GitHub.  It searches text in
-<strong>rivt</strong> README files.</p>
-<section id="github">
-<h2>GitHub<a class="headerlink" href="#github" title="Link to this heading">#</a></h2>
-<p>Clear [ Ctrl+R ]</p>
-<p>Search [ Ctrl+Enter ]</p>
-<p>Example: solar+steel+frame</p>
+<p>This page provides convenient search of <strong>rivt</strong> files across GitHub.  It searches the full text in
+<strong>rivt</strong> root README file, which typically contains the full rivt report.</p>
+<p>[C] Clear [ Ctrl+R ]</p>
+<p>[S] Search [ Ctrl+Enter ]</p>
+<p>Example: solar+steel+frame is passed to GitHub as rivt+solar+steel+frame</p>
+<p>For search with advanced functions, the GitHub search interface is [here](<a class="github reference external" href="https://github.com/search">search</a>).</p>
 <head>
 
 <style>
 .button {
 background-color: #6f6968; border: 3 px solid white; color: white; padding: 4px 10px;
 text-align: center; text-decoration: none; display: inline-block; font-size: 16px;
-margin: 4px 2px; cursor: pointer;
-}
-</style>
+margin: 4px 2px; cursor: pointer;} </style>
 
-<script> function searchRivt(){var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;
-window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 13) && e.ctrlKey){document.getElementById("searchBtn").click();}});
-</script>
+<script>
+function searchRivt(){var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;
+window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 13) && e.ctrlKey){document.getElementById("searchBtn").click();}});</script>
 
 <script> function searchOrg(){var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;
-window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 13) && e.ctrlKey){document.getElementById("searchBtn").click();}});
-</script>
+window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 13) && e.ctrlKey){document.getElementById("searchBtn").click();}});</script>
 
 <script> function clearRivt(){document.getElementById("terms").value="";
-document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 82) && e.ctrlKey){document.getElementById("clearBtn").click();}})};
-</script>
+document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 82) && e.ctrlKey){document.getElementById("clearBtn").click();}})};</script>
 
 </head>
 
@@ -492,28 +487,17 @@ document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyC
 <hr>
 
 
-
 GitHub Organizations
----------------------
-
-Full text **rivt** document search across GitHub Organization README files
 
 <input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: normal"> Organizations (comma separated)<br>
 
 <hr>
 
+Search Terms
+
 <hr>
 
 <button class="button" id="searchBtn" onclick="searchOrg()">S</button> <button class="button" id="clearBtn" onclick="clearRivt()">C</button><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal"></section>
-<section id="search-tips">
-<h2>Search Tips<a class="headerlink" href="#search-tips" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>The GitHub search interface is [here](<a class="github reference external" href="https://github.com/search">search</a>).</p></li>
-<li><p>GitHub README searches only index the root directory README. The rivt function &lt;code&gt; rv.readme() &lt;/code&gt; writes every README in a project into the root README so rivt projects on GitHub can be fully searched.</p></li>
-<li><p>The rivt search box automatically adds the rivt search term.</p></li>
-</ul>
-</section>
-</section>
 
 
                 </article>
@@ -553,19 +537,6 @@ Full text **rivt** document search across GitHub Organization README files
                 <dialog id="pst-secondary-sidebar-modal"></dialog>
                 <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
-
-  <div class="sidebar-secondary-item">
-<div
-    id="pst-page-navigation-heading-2"
-    class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> On this page
-  </div>
-  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github">GitHub</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#search-tips">Search Tips</a></li>
-</ul>
-  </nav></div>
 
   <div class="sidebar-secondary-item">
 

@@ -8,11 +8,8 @@
 
 .. raw:: html
 
-    <embed>
-        <h1 style="font-size:2em; text-align:center"> rivt.info </h1>
-        <hr width="100%" size="6" color="LightGrey" noshade>
-    </embed>
-
+    <h1 style="font-size:2em; text-align:center"> rivt.info </h1>
+    <hr width="100%" size="6" color="LightGrey" noshade>
 
 
 **rivtlib** source code is here `rivtlib.net <https://www.rivtlib.net/>`_.  
