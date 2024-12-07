@@ -45,7 +45,7 @@ Example: **solar+steel+frame** is passed to GitHub as **rivt+solar+steel+frame**
 Search GitHub Organizations
 ---------------------------
 
-    Organizations (comma separated)
+Organizations (comma separated)
 
 .. raw:: html    
     
