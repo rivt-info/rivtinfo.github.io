@@ -48,7 +48,7 @@ User Manual
 
 .. toctree::
     :maxdepth: 1
-    :caption: Publish
+    :caption: Compile
 
     9-publish.rst
     10-example.rst
