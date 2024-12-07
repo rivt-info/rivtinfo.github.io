@@ -48,7 +48,7 @@ Search GitHub Organizations
     
 .. raw:: html    
     
-    Organizations
+    **Organizations**
     <hr>
     <input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: normal">
 
