@@ -1,4 +1,19 @@
 
+Search
+=======
+
+This page provides search of **rivt** files across GitHub.  It searches text in
+**rivt** README files.
+
+GitHub
+------
+
+Clear [ Ctrl+R ]
+
+Search [ Ctrl+Enter ]
+
+Example: solar+steel+frame
+
 
 .. raw:: html
 
@@ -26,45 +41,29 @@
     
     </head>
 
+    <button class="button" id="searchBtn" onclick="searchRivt()">S</button><button class="button" id="clearBtn" onclick="clearRivt()">C</button><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal"><br>
 
 
-Search
-=======
+    <hr>
 
-This page provides search of **rivt** files across GitHub.  It searches text in
-**rivt** README files.
-
-
-
-GitHub
-------
-
-Example: solar+steel+frame
-
-<input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal"><br>
-
-<button class="button" id="searchBtn" onclick="searchRivt()">Search [ Ctrl+Enter ]</button>
-
-|
-
-<button class="button" id="clearBtn" onclick="clearRivt()">Clear [ Ctrl+R ]</button>
+    <hr>
 
 
 
-GitHub Organizations
----------------------
+    GitHub Organizations
+    ---------------------
 
-Full text **rivt** document search across GitHub Organization README files
+    Full text **rivt** document search across GitHub Organization README files
 
-<input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: normal"> Organizations (comma separated)<br>
+    <input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: normal"> Organizations (comma separated)<br>
 
-|
+    <hr>
 
-<input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal"> Search Terms<br>
+    <hr>
 
-<button class="button" id="searchBtn" onclick="searchOrg()">Search [ Ctrl+Enter ]</button>
+    <button class="button" id="searchBtn" onclick="searchOrg()">S</button> <button class="button" id="clearBtn" onclick="clearRivt()">C</button><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal">
 
-<button class="button" id="clearBtn" onclick="clearRivt()">Clear [ Ctrl+R ]</button>
+
 
 
 
