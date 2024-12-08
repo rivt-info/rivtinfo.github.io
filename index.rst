@@ -51,4 +51,5 @@ User Manual
 
     11-terms.rst
     12-faq.rst 
+    13-changes.rst
     
