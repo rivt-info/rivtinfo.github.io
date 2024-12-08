@@ -22,30 +22,25 @@ User Manual
 
 .. toctree::
     :maxdepth: 1
-    :caption: Setup
+    :caption: Overview
     
-    1-overview.rst
+    1-start.rst
     2-install.rst
-
-.. toctree::
-    :maxdepth: 1
-    :caption: Templates
-
-    3-github.rst
-    4-search.rst
+    3-search.rst
+    4-github.rst
     
 .. toctree::
     :maxdepth: 1
     :caption: Write
 
-    5-folders.rst
-    6-vscode.rst
+    5-vscode.rst
+    6-folders.rst
     7-edit.rst
     8-replit.rst
 
 .. toctree::
     :maxdepth: 1
-    :caption: Compile
+    :caption: Publish
 
     9-publish.rst
     10-example.rst

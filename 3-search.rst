@@ -2,10 +2,10 @@
 Search
 =======
 
-This page provides a convenient search function for **rivt** files across
-GitHub.  The search covers the full text in the **rivt** root README file, which
-typically contains the full rivt report. For advanced function searching
-use the GitHub search interface `here <https://github.com/search>`_.
+This page provides a convenient search interface for **rivt** files distributed
+across GitHub.  The search covers the full text in the **rivt** root README
+file, which typically contains the full rivt report. For advanced searching use
+the GitHub search interface `here <https://github.com/search>`_.
 
 [S] Search GitHub (Ctrl+Enter)
 
