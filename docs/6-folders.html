@@ -453,83 +453,85 @@
                   
   <section id="folders">
 <h1>Folders<a class="headerlink" href="#folders" title="Link to this heading">#</a></h1>
-<p>Folders are needed for organizing reports. A starter report folder structure can
-be generated in the folder where the following command is executed:</p>
+<p>The rivt folder structure organizes documents for reports and sharing. A starter
+report folder structure can be taken from an existing project or generated
+with:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">rivtlib</span><span class="o">.</span><span class="n">folder</span><span class="o">-</span><span class="n">template</span>
 </pre></div>
 </div>
-<p><strong>rivt</strong> implements a file and folder structure to simplify file sharing and
-control. The privacy level of document inputs and outputs may be may be set at
-the file or API function level. Each rivt file (and doc) is idenfiifed by a
-unique rivt file prefix with the form rivddss-filename where dd is a two digit
-division number and ss is a two digit subdivision number e.g., riv0203-loads.py
-is the third subdivision of division two. Editing the rivt number also changes
-the report organization.</p>
 <p>Report and document headings are taken from folder and file names unless
 overridden in the config file. An example folder structure is shown below.
-Required file names or prefixes are shown in [ ].</p>
-<p>Source files for rivt docs are stored in 6 folders:</p>
-<ul class="simple">
-<li><p>append</p></li>
-<li><p>images</p></li>
-<li><p>scripts</p></li>
-<li><p>tables</p></li>
-<li><p>text</p></li>
-<li><p>values</p></li>
-</ul>
-<p>Output is written to the write folder with 4 sub-folders:</p>
-<ul class="simple">
-<li><p>html</p></li>
-<li><p>pdf</p></li>
-<li><p>text</p></li>
-<li><p>temp</p></li>
-<li><p>xrivt</p></li>
-</ul>
-<p>Doc files are the text, PDF or HTML output of a rivt file that are stored in
-the <em>write</em> folder. rivt reports are collections of docs specified in the
-config.ini. Resource files are stored in user-defined sub-folders which
-organize the data allow for separation of public and private data.</p>
-<p>Fixed folder and file prefixes are shown in [ ]. Report and document headings
-are taken from the folder and file labels.</p>
-<section id="folder-structure">
-<h2>Folder structure<a class="headerlink" href="#folder-structure" title="Link to this heading">#</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[rivt]_Report-Label/
-    ├── [div01]-div-label/           (division folder)
-        ├── [data01]/                (resource folder)
+Folder and file prefixes up to the underscore are fixed. The rivt input and
+resource files are organized in divisions. Output files are published to
+subfolders under the <em>rivtdocs</em> folder. Output (doc) files can be text, PDF,
+MarkDown or HTML. rivt reports are collections of docs specified in the
+config.ini.</p>
+<p>A separate <em>rivtpub</em> output folder (see below) is generated for use as a
+shareable template.  Components of a rivt project that are private (not
+shared) are specified in the rivt file and are not included in <em>rivtpub</em>.</p>
+<p>Each rivt file is idenfifed by a prefix with the form rivddss-filename where dd
+is a two digit division number and ss is a two digit subdivision number e.g.,
+riv0203-loads.py is the third subdivision of division two. Editing the rivt
+number will change the report organization.</p>
+<section id="rivt-folders">
+<h2>rivt folders<a class="headerlink" href="#rivt-folders" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>rivt_Report-Label/
+    ├── div01_div-label/            (division 1 inputs)
+        ├── dat01_source/           (resource folder)
             ├── data.csv
             ├── attachment1.pdf
             ├── fig.png
             └── functions.py
-        ├── [riv01]-label1.py        (rivt file)
-        └── [riv02]-label2.py
-    ├── [div02]-div-label/           (division folder)
-        ├── [data02]/                (resource folder)
+        ├── riv01_label1.py         (rivt file)
+        └── riv02_label2.py
+    ├── [div02_div-label/           (division 2 inputs)
+        ├── dat02_source/           (resource folder)
             ├── data.csv
             └── fig.png
-        └── [riv01]_label3.py        (rivt file)
-    ├── [rivt-docs]/                 (documents)
-        ├── [pdf]/
-            ├── doc0101-label1.pdf
-            ├── doc0102-label2.pdf
-            ├── doc0201-label3.pdf
+        └── riv01_label3.py         (rivt file)
+    ├── rivtdocs_/                  (document output)
+        ├── pdf_/
+            ├── doc0101_label1.pdf
+            ├── doc0102_label2.pdf
+            ├── doc0201_label3.pdf
             └── Report-Label.pdf
-        ├── [text]/
-            ├── doc0101-label1.txt
-            ├── doc0102-label2.txt
-            └── doc0201-label3.txt
-        ├── [md]/
-            ├── doc0101-label1.md
-            ├── doc0102-label2.txt
-            └── doc0201-label3.md
-        ├── [html]/
-            ├── doc0101-label1.html
-            ├── doc0102-label2.html
-            └── doc0201-label3.html
-        ├── [temp]/
-            └── doc0201-label3.tex
-    ├── .gitignore
-    ├── config.ini                   (config file)
-    └── README.md                    (collated doc - searchable)
+        ├── text_/
+            ├── doc0101_label1.txt
+            ├── doc0102_label2.txt
+            └── doc0201_label3.txt
+        ├── md_/
+            ├── doc0101_label1.md
+            ├── doc0102_label2.md
+            └── doc0201_label3.md
+        ├── html_/
+            ├── doc0101_label1.html
+            ├── doc0102_label2.html
+            └── doc0201_label3.html
+        ├── temp_/
+            └── doc0201_label3.tex
+    ├── config.ini                   (report config file)
+    ├── cover-page.pdf               (report cover page)
+    └── README.txt                   (searchable collated doc)
+</pre></div>
+</div>
+</section>
+<section id="rivtpub-folders-output">
+<h2>rivtpub folders (output)<a class="headerlink" href="#rivtpub-folders-output" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>rivtpub_Report-Label/
+    ├── div01_div-label/            (division 1 outputs)
+        ├── dat01_source/           (resource folder)
+            ├── data.csv
+            ├── attachment1.pdf
+            ├── fig.png
+            └── functions.py
+        ├── riv01_label1.py         (rivt file)
+        └── riv02_label2.py
+    ├── [div02_div-label/           (division 2 outputs)
+        ├── dat02_source/           (resource folder)
+            ├── data.csv
+            └── fig.png
+        └── riv01_label3.py         (rivt file)
+    └── README.txt                  (searchable collated doc)
 </pre></div>
 </div>
 </section>
@@ -582,7 +584,8 @@ are taken from the folder and file labels.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#folder-structure">Folder structure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-folders">rivt folders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivtpub-folders-output">rivtpub folders (output)</a></li>
 </ul>
   </nav></div>
 
