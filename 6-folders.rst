@@ -33,60 +33,75 @@ rivt folders
 
     rivt_Report-Label/               
         ├── div01_div-label/            (division 1 inputs)
-            ├── dat01_source/           (resource folder)
-                ├── data.csv                   
-                ├── attachment1.pdf
-                ├── fig.png            
-                └── functions.py                   
-            ├── riv01_label1.py         (rivt file)
-            └── riv02_label2.py   
+            ├── r0101_label1.py         (rivt file)
+            └── r0102_label2.py   
         ├── [div02_div-label/           (division 2 inputs)
-            ├── dat02_source/           (resource folder)
-                ├── data.csv
-                └── fig.png
-            └── riv01_label3.py         (rivt file)
-        ├── rivtdocs_/                  (document output)
+            └── r0201_label3.py         (rivt file)
+        ├── docs/                       (document output)
             ├── pdf_/                      
-                ├── doc0101_label1.pdf      
-                ├── doc0102_label2.pdf
-                ├── doc0201_label3.pdf
+                ├── d0101_label1.pdf      
+                ├── d0102_label2.pdf
+                ├── d0201_label3.pdf
                 └── Report-Label.pdf 
             ├── text_/                    
-                ├── doc0101_label1.txt      
-                ├── doc0102_label2.txt
-                └── doc0201_label3.txt       
+                ├── d0101_label1.txt      
+                ├── d0102_label2.txt
+                └── d0201_label3.txt       
             ├── md_/                    
-                ├── doc0101_label1.md      
-                ├── doc0102_label2.md
-                └── doc0201_label3.md       
+                ├── d0101_label1.md      
+                ├── d0102_label2.md
+                └── d0201_label3.md       
             ├── html_/                    
-                ├── doc0101_label1.html
-                ├── doc0102_label2.html
-                └── doc0201_label3.html        
+                ├── d0101_label1.html
+                ├── d0102_label2.html
+                └── d0201_label3.html        
             ├── temp_/
-                └── doc0201_label3.tex 
+                └── d0201_label3.tex
+        ├── riv01/                        (input source files)         
+            ├── ins
+                ├── fig1.png            
+                └── attach1.pdf
+            ├── run
+            ├── too
+                ├── func1.py                   
+                └── func2.py
+            └── val
+        ├── riv02/                    
+            ├── ins
+            └── val
+                ├── data.csv                   
+                └── standard.txt
         ├── config.ini                   (report config file)
         ├── cover-page.pdf               (report cover page)
         └── README.txt                   (searchable collated doc) 
 
 
-rivtpub folders (output)
-------------------------
+rivtpub output
+---------------
 
 ::
 
+
     rivtpub_Report-Label/               
-        ├── div01_div-label/            (division 1 outputs)
-            ├── dat01_source/           (resource folder)
+        ├── div01_div-label/           
+            ├── r0101_label1.py         
+            └── r0102_label2.py   
+        ├── [div02_div-label/           
+            └── r0201_label3.py         
+         ├── riv01/                    
+            ├── ins
+                ├── fig1.png            
+                └── attach1.pdf
+            ├── run
+            ├── too
+                ├── func1.py                   
+                └── func2.py
+            └── val
+        ├── riv02/                    
+            ├── ins
+            └── val
                 ├── data.csv                   
-                ├── attachment1.pdf
-                ├── fig.png            
-                └── functions.py                   
-            ├── riv01_label1.py         (rivt file)
-            └── riv02_label2.py   
-        ├── [div02_div-label/           (division 2 outputs)
-            ├── dat02_source/           (resource folder)
-                ├── data.csv
-                └── fig.png
-            └── riv01_label3.py         (rivt file)
-        └── README.txt                  (searchable collated doc) 
+                └── standard.txt
+        ├── config.ini    
+        ├── cover-page.pdf
+        └── README.txt    

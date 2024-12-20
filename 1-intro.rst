@@ -1,16 +1,17 @@
 
-Start
+Intro
 =====
 
 **rivt** is a markup language for writing and publishing engineering documents
-with an emphasis on template reuse. Software for engineering documents is
-already widely available but there are barriers to sharing and modifying source
-files. These include high initial and update costs, incompatibility between
-various programs and upgrades, and limited operating system support.
-Consequently, similar engineering documents need to be repeatedly written from
-scratch to accomodate different software programs. The table below summarizes
-the features included in **rivt** to address this wasteful and frustrating
-situation.
+with an emphasis on template sharing and reuse. Software for engineering
+documents is already widely available but there are barriers to sharing and
+modifying source files. These include high initial software and update costs,
+incompatibility between various programs and upgrades, and limited operating
+system support. This results in a need to repeatedly rewrite similar
+engineering documents to accomodate different software programs. It also
+restricts the sharing of ideas and calculations methods. The table below
+summarizes the features included in **rivt** intended to address these
+frustrating limitations.
 
 **Comparison of Engineering Document Programs**
 
@@ -51,11 +52,10 @@ where **rS** is a triple quoted string that follows rivt markup syntax.
 **rivt doc** (document) is a text, HTML or PDF file output from a rivt file. A
 **rivt report** is a collated collection of rivt docs.
 
-The rivtlib library is part of the open source **rivtzip** framework and is
-distributed under the MIT license. **rivtzip** is an open source framework for
-publishing rivt documents. The framework can be downloaded as portable Windows
-zip files, or installed through OS specific shell scripts (https://rivt.zip). It
-includes five established technologies:
+**rivtlib** is distributed under the MIT license and is part of an open source
+editing and publishing framework, **rivtzip** - The framework can be downloaded
+as portable Windows zip files, or installed through OS specific shell scripts
+(https://rivt.zip). The framework includes five established technologies:
 
 - **VSCode and extensions** - document editing and processing
 

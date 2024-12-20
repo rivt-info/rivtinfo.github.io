@@ -24,7 +24,7 @@ User Manual
     :maxdepth: 1
     :caption: Overview
     
-    1-start.rst
+    1-Intro.rst
     2-install.rst
     3-search.rst
     4-github.rst
