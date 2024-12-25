@@ -9,7 +9,7 @@ modifying source files. These include high initial software and update costs,
 incompatibility between various programs and upgrades, and limited operating
 system support. This results in a need to repeatedly rewrite similar
 engineering documents to accomodate different software programs. It also
-restricts the sharing of ideas and calculations methods. 
+restricts sharing of technical and calculation details. 
 
 In addition, many engineering documents are assembled from a variety of
 modeling, calculation, standards and other published and programatic sources.
@@ -44,7 +44,7 @@ and exposes 6 API functions ::
 
     rv.R(rS) - (Run) Run shell scripts 
     rv.I(rS) - (Insert) Insert text, images, tables and math equations 
-    rv.V(rS) - (Values) Evaluate tables, values and equations 
+    rv.V(rS) - (Values) Evaluate tables and equations 
     rv.T(rS) - (Tools) Execute Python functions 
     rv.X(rS) - (eXclude) Skip rivt-string processing 
     rv.W(rS) - (Write) Write formatted rivt documents 
@@ -52,16 +52,20 @@ and exposes 6 API functions ::
     
 where **rS** is a triple quoted string that follows rivt markup syntax.
 
-**rivtlib** is a Python library that generates **rivt docs** and **reports**. A
-**rivt doc** (document) is a text, HTML or PDF file output from a rivt file. A
-**rivt report** is a collated collection of rivt docs.
+**rivtlib** is a Python library that generates **rivt docs** and **reports**.
 
-**rivtlib** is distributed under the MIT license and is part of an open source
-editing and publishing framework, **rivtzip** - The framework can be downloaded
-as portable Windows zip files, or installed through OS specific shell scripts
-(https://rivt.zip). The framework includes five established technologies:
+A **rivt doc** (document) is a text, HTML or PDF file output from a rivt file. 
 
-- **VSCode and extensions** - document editing and processing
+A **rivt report** is a collated collection of rivt docs.
+
+**rivtzip** is a portable, free and open source editing and publishing framework.
+
+**rivtlib** is distributed under the MIT license and is included in **rivtzip**
+which can be downloaded as portable Windows zip files, or installed through OS
+specific shell scripts (https://rivt.zip). The rivtzip framework includes five
+established technologies:
+
+- **VSCode and extensions** - editing and processing
 
 - **Python and libraries** - analysis and formatting
     
