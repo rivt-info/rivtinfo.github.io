@@ -6,7 +6,7 @@ The rivt folder structure organizes documents for reports and sharing. An
 initial folder structure can be taken from an existing project or generated
 with::
 
-    python -m rivtlib --folders
+    python -m rivtfolders
 
 Report and document headings are taken from folder and file names unless
 overridden in the config file. An example folder structure is shown below.
@@ -20,10 +20,11 @@ A separate *rivtpub* output folder (see below) is generated for use as a
 shareable template.  Components of a rivt project that are private (not
 shared) are specified in the rivt file and are not included in *rivtpub*.
 
-Each rivt file is idenfifed by a prefix with the form rivddss-filename where dd
-is a two digit division number and ss is a two digit subdivision number e.g.,
-riv0203-loads.py is the third subdivision of division two. Editing the rivt
-number will change the report organization. 
+Each rivt file is idenfifed by a document prefix with the form rddnn-filename
+where dd is a two digit division number and nn is a two digit subdivision number
+e.g., riv0203-loads.py is the third subdivision of division two. rivt files are
+processed and published in document order. Editing the rivt number will change
+the report organization. 
 
 
 rivt folders
@@ -31,49 +32,45 @@ rivt folders
 
 ::
 
-    rivt_Report-Label/               
-        ├── div01_div-label/            (division 1 inputs)
-            ├── r0101_label1.py         (rivt file)
-            └── r0102_label2.py   
-        ├── [div02_div-label/           (division 2 inputs)
-            └── r0201_label3.py         (rivt file)
+    rivt-Report-Label/               
+        ├── d01_div-label/            (division 1 inputs)
+            ├── r0101-label1.py         (rivt file)
+            └── r0102-label2.py   
+        ├── d02_div-label/           (division 2 inputs)
+            └── r0201-label3.py         (rivt file)
         ├── docs/                       (document output)
             ├── pdf_/                      
-                ├── d0101_label1.pdf      
-                ├── d0102_label2.pdf
-                ├── d0201_label3.pdf
+                ├── d0101-label1.pdf      
+                ├── d0102-label2.pdf
+                ├── d0201=label3.pdf
                 └── Report-Label.pdf 
             ├── text_/                    
-                ├── d0101_label1.txt      
-                ├── d0102_label2.txt
-                └── d0201_label3.txt       
-            ├── md_/                    
-                ├── d0101_label1.md      
-                ├── d0102_label2.md
-                └── d0201_label3.md       
+                ├── d0101-label1.txt      
+                ├── d0102-label2.txt
+                └── d0201-label3.txt          
             ├── html_/                    
-                ├── d0101_label1.html
-                ├── d0102_label2.html
-                └── d0201_label3.html        
+                ├── d0101-label1.html
+                ├── d0102-label2.html
+                └── d0201-label3.html        
             ├── temp_/
-                └── d0201_label3.tex
-        ├── riv01/                        (input source files)         
+                └── d0201-label3.tex
+        ├── r01/                        (source files)         
             ├── ins
                 ├── fig1.png            
                 └── attach1.pdf
             ├── run
-            ├── too
+                └── sap.cmd
+            ├── tool
                 ├── func1.py                   
                 └── func2.py
             └── val
-        ├── riv02/                    
-            ├── ins
-            └── val
-                ├── data.csv                   
-                └── standard.txt
+                └── val0101.csv
+        ├── r02/                    
+            ├── data.csv                   
+            └── standard.txt
         ├── config.ini                   (report config file)
         ├── cover-page.pdf               (report cover page)
-        └── README.txt                   (searchable collated doc) 
+        └── README.txt                   (searchable report) 
 
 
 rivtpub output
@@ -103,5 +100,4 @@ rivtpub output
                 ├── data.csv                   
                 └── standard.txt
         ├── config.ini    
-        ├── cover-page.pdf
-        └── README.txt    
+        └── README.txt  
