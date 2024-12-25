@@ -2,11 +2,11 @@
 Folders
 =======
 
-The rivt folder structure organizes documents for reports and sharing. A starter
-report folder structure can be taken from an existing project or generated
+The rivt folder structure organizes documents for reports and sharing. An
+initial folder structure can be taken from an existing project or generated
 with::
 
-    python -m rivtlib.folder-template
+    python -m rivtlib --folders
 
 Report and document headings are taken from folder and file names unless
 overridden in the config file. An example folder structure is shown below.

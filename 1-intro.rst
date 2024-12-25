@@ -9,14 +9,18 @@ modifying source files. These include high initial software and update costs,
 incompatibility between various programs and upgrades, and limited operating
 system support. This results in a need to repeatedly rewrite similar
 engineering documents to accomodate different software programs. It also
-restricts the sharing of ideas and calculations methods. The table below
-summarizes the features included in **rivt** intended to address these
-frustrating limitations.
+restricts the sharing of ideas and calculations methods. 
+
+In addition, many engineering documents are assembled from a variety of
+modeling, calculation, standards and other published and programatic sources.
+**rivt** is designed to organize inputs from various sources into a single
+document. The table below summarizes **rivt** features intended to address these
+lonigstnding and frustrating limitations.
 
 **Comparison of Engineering Document Programs**
 
 =========  ======== =========== =========== ======== ======== ======= ======= ======= 
-Features   O-Source  Compat.[1]  Vers. Ctrl  Text[2]  All-OS  Online  Local   Reports  
+Features   O-Source  Compat.[1]  Vers. Ctrl  Text[2]  All-OS  Remote  Local   Reports  
 =========  ======== =========== =========== ======== ======== ======= ======= ======= 
 Matlab     no        no          no          no      no       no      yes      no 
 Mathcad    no        no          no          no      no       no      yes      no 
