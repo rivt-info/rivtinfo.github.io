@@ -33,26 +33,26 @@ rivt folders
 ::
 
     rivt-Report-Label/               
-        ├── d01_div-label/            (division 1 inputs)
-            ├── r0101-label1.py         (rivt file)
-            └── r0102-label2.py   
-        ├── d02_div-label/           (division 2 inputs)
-            └── r0201-label3.py         (rivt file)
-        ├── docs/                       (document output)
-            ├── pdf_/                      
-                ├── d0101-label1.pdf      
-                ├── d0102-label2.pdf
-                ├── d0201=label3.pdf
+        ├── d01-div-label/              (division 1 files)
+            ├── r0101-label1.py         (rivt subdivsion file)
+            └── r0102-label2.py         (rivt subdivsion file)
+        ├── d02-div-label/              (division 2 files)
+            └── r0201-label3.py         (rivt subdivision file)
+        ├── rivt-docs/                       (document output)
+            ├── rivt-pdf_/                      
+                ├── rivt0101-label1.pdf      
+                ├── rivt0102-label2.pdf
+                ├── rivt201-label3.pdf
                 └── Report-Label.pdf 
-            ├── text_/                    
-                ├── d0101-label1.txt      
-                ├── d0102-label2.txt
-                └── d0201-label3.txt          
-            ├── html_/                    
-                ├── d0101-label1.html
-                ├── d0102-label2.html
-                └── d0201-label3.html        
-            ├── temp_/
+            ├── rivt-text_/                    
+                ├── rivt0101-label1.txt      
+                ├── rivt0102-label2.txt
+                └── rivt0201-label3.txt          
+            ├── rivt-html_/                    
+                ├── rivt0101-label1.html
+                ├── rivt0102-label2.html
+                └── rivt0201-label3.html        
+            ├── rivt-temp_/
                 └── d0201-label3.tex
         ├── r01/                        (source files)         
             ├── ins
