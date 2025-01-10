@@ -33,12 +33,12 @@ rivt folders
 ::
 
     rivt-Report-Label/               
-        ├── d01-div-label/              (division 1 files)
-            ├── r0101-label1.py         (rivt subdivsion file)
-            └── r0102-label2.py         (rivt subdivsion file)
-        ├── d02-div-label/              (division 2 files)
-            └── r0201-label3.py         (rivt subdivision file)
-        ├── rivt-docs/                       (document output)
+        ├── d01-div-label/                  (division 1 files)
+            ├── r0101-label1.py             (rivt subdivsion file)
+            └── r0102-label2.py             (rivt subdivsion file)
+        ├── d02-div-label/                  (division 2 files)
+            └── r0201-label3.py             (rivt subdivision file)
+        ├── rivt-docs/                      (document output)
             ├── rivt-pdf_/                      
                 ├── rivt0101-label1.pdf      
                 ├── rivt0102-label2.pdf
@@ -54,7 +54,7 @@ rivt folders
                 └── rivt0201-label3.html        
             ├── rivt-temp_/
                 └── d0201-label3.tex
-        ├── r01/                        (source files)         
+        ├── r01/                            (source files)         
             ├── ins
                 ├── fig1.png            
                 └── attach1.pdf
@@ -66,15 +66,15 @@ rivt folders
             └── val
                 └── val0101.csv
         ├── r02/                    
-            ├── data.csv                   
-            └── standard.txt
+            ├── data1.csv                   
+            └── standards.txt
         ├── config.ini                   (report config file)
         ├── cover-page.pdf               (report cover page)
         └── README.txt                   (searchable report) 
 
 
-rivtpub output
----------------
+rivtpub output folders
+----------------------
 
 ::
 
@@ -90,7 +90,8 @@ rivtpub output
                 ├── fig1.png            
                 └── attach1.pdf
             ├── run
-            ├── too
+                └── sap.cmd
+            ├── tool
                 ├── func1.py                   
                 └── func2.py
             └── val
