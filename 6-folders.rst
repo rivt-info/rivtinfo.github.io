@@ -102,3 +102,123 @@ rivtpub output folders
                 └── standard.txt
         ├── config.ini    
         └── README.txt  
+
+
+
+
+
+
+Folders: document organization 
+------------------------------
+
+**rivt** implements a file and folder structure to simplify file sharing and
+control. The privacy level of document inputs and outputs may be may be set at
+the file or API function level. Each rivt file (and doc) is idenfiifed by a
+unique rivt file prefix with the form rivddss-filename where dd is a two digit
+division number and ss is a two digit subdivision number e.g., riv0203-loads.py
+is the third subdivision of division two. Editing the rivt number also changes
+the report organization.
+
+Report and document headings are taken from folder and file names unless
+overridden in the config file. An example folder structure is shown below.
+Required file names or prefixes are shown in [ ].
+
+Source files for rivt docs are stored in 6 folders::
+
+    - append
+    - images
+    - scripts
+    - tables
+    - text
+    - values
+
+Output is written to the write folder with 4 sub-folders::
+
+    - html
+    - pdf
+    - text
+    - temp
+    - xrivt
+
+Doc files are the text, PDF or HTML output of a rivt file that are stored in
+the *write* folder. rivt reports are collections of docs specified in the
+config.ini. Resource files are stored in user-defined sub-folders which
+organize the data allow for separation of public and private data.
+
+::
+
+    [rivt]-Project-Name/               
+        ├── [append]/            
+            ├── app01/  
+            └── app02/  
+                ├── attach3.pdf                   
+                └── attach4.pdf
+        ├── [images]/            
+            ├── img01/  
+            └── img02/  
+                ├── image3.jpg                   
+                └── image4.jpg
+        ├── [scripts]/
+            ├── py01/                 
+            └── py02/  
+                ├── function3.py
+                └── function4.py               
+            ├── run01/  
+            └── run02/  
+                ├── script3.bat
+                └── script4.sh  
+        ├── [tables]/            
+            ├── tbl01/  
+            └── tbl02/  
+                ├── table3.csv                   
+                └── table4.csv
+        ├── [text]/            
+            ├── tex01/  
+            ├── tex02/  
+                ├── latex3.tex
+                └── latex4.tex
+            ├── txt01/  
+            └── txt02/  
+                ├── text3.txt                   
+                └── text4.txt
+        ├── [values]/                 
+            ├── dat01/  
+            ├── dat02/  
+                ├── table3.csv                   
+                └── table4.csv
+            ├── equ01/                      
+            ├── equ02/                    
+                ├── equation1.txt      
+                └── equation2.txt       
+            ├── val01/                    
+            └── val02/                    
+                ├── values3.csv      
+                └── values4.csv       
+        ├── [write]/                        (output files)    
+            ├── [html]/                     
+                └── riv0101-codes.html      (html files)
+                    riv0202-frames.html
+                    Project-Name.html       (html report) 
+            ├── [pdf]/                      
+                └── riv0101-codes.pdf       (pdf files)        
+                    riv0202-frames.pdf
+                    Project-Name.pdf        (pdf report)        
+            ├── [temp]/                     (temp files)     
+                └── temp-files.tex
+            └── [text]/                     
+                └── riv0101-codes.txt       (text output)
+                    riv0201-frames.txt
+            └── [xrivt-redacted]/            
+                └── README.txt              (redacted report)
+                    xriv0101-codes.py       (redacted files)
+                    xriv0102-loads.py
+                    xriv0201-walls.py       
+        └── config.ini                      (rivt config file)
+            README.txt                      (searchable report in public repo)
+            riv0000-report.py               (rivt input files)
+            riv0101-codes.py
+            riv0102-loads.py
+            riv0201-walls.py
+            riv0202-frames.py
+    
+    
