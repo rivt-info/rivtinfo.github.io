@@ -5,22 +5,24 @@ Intro
 **rivt** is a markup language for writing and publishing engineering documents
 with an emphasis on template sharing and reuse. Software for engineering
 documents is already widely available but there are barriers to sharing and
-modifying source files. These include high initial software and update costs,
-incompatibility between various programs and upgrades, and limited operating
-system support. This results in a need to repeatedly rewrite similar
-engineering documents to accomodate different software programs. It also
-restricts sharing of technical and calculation details. 
+modifying source files between programs and versions. These include high
+software and update costs, and incompatibility between programs, upgrades and
+operating systems. The current situation requires repeated unproductive
+rewrites of similar engineering documents to accomodate different software
+programs. Sharing calculation details for new or improved technologies is also
+restricted by these barriers.
 
-In addition, many engineering documents are assembled from a variety of
-modeling, calculation, standards and other published and programatic sources.
-**rivt** is designed to organize inputs from various sources into a single
-document. The table below summarizes **rivt** features intended to address these
-lonigstnding and frustrating limitations.
+In addition, existing programs are generally not designed to produce collated
+reports. Engineering documents are assembled from a variety of modeling,
+calculation, standards and other published and programatic sources. **rivt** is
+designed to organize inputs from various sources into a single document. The
+table below summarizes **rivt** features intended to address these lonigstnding
+and frustrating limitations.
 
-**Comparison of Engineering Document Programs**
+**Comparison of Programs**
 
 =========  ======== =========== =========== ======== ======== ======= ======= ======= 
-Features   O-Source  Compat.[1]  Vers. Ctrl  Text[2]  All-OS  Remote  Local   Reports  
+Features    Opn Src  Compat.[1]  Vers. Ctrl  Text[2]  All-OS  Remote  Local   Reports  
 =========  ======== =========== =========== ======== ======== ======= ======= ======= 
 Matlab     no        no          no          no      no       no      yes      no 
 Mathcad    no        no          no          no      no       no      yes      no 
@@ -30,7 +32,7 @@ Jupyter    yes       yes         no          no      yes      yes     yes      n
 **rivt**   **yes**  **yes**     **yes**     **yes**  **yes**  **yes** **yes** **yes** 
 =========  ======== =========== =========== ======== ======== ======= ======= =======  
 
-[1] Backward and forward file compatiblilty
+[1] Forward, backward file compatiblilty
 
 [2] Readable text input files
 

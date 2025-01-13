@@ -2,7 +2,6 @@
 Edit
 ====
 
-
 A **rivt** file is a Python file (utf-8 ) with the import statement
 
 *import rivtlib.rivtapi as rv*
@@ -75,31 +74,31 @@ Tags
 
 **Line tags** format a line of text denoted with *_[tag]* at the end of a line. 
 
-================ ===================== ===================================
-Scope             Tag                   Description
----------------- --------------------- -----------------------------------
-rv.I, rv.V        text _[c]             center text
-rv.I, rv.V        text _[r]             right justify text
-rv.I, rv.V        text _[bc]            bold center text
-rv.I, rv.V        text _[bi]            bold italic text
-rv.I, rv.V        text _[s]             format Python math 
-rv.I, rv.V        text _[bs]            format bold Python math
-rv.I, rv.V        label _[e]            label and autonumber equation
-rv.I, rv.V        label _[f]            label and autonumber figure
-rv.I, rv.V        label _[t]            label and autonumber table
-rv.I, rv.V        text _[#]             autonumber footnote
-rv.I, rv.V        text _[d]             footnote description
-rv.I, rv.V        _[address, label]     url, internal reference
-rv.I, rv.V        _[page]               new page
-================ ===================== ===================================
+================ ======================= ===================================
+Scope             Tag                      Description
+---------------- ----------------------- -----------------------------------
+rv.I, rv.V        text **_[c]**             center text
+rv.I, rv.V        text **_[r]**             right justify text
+rv.I, rv.V        text **_[bc]**            bold center text
+rv.I, rv.V        text **_[bi]**            bold italic text
+rv.I, rv.V        equation **_[s]**         format Python math 
+rv.I, rv.V        equation **_[l]**         format LaTeX math 
+rv.I, rv.V        label **_[e]**            label and autonumber equation
+rv.I, rv.V        label **_[f]**            label and autonumber figure
+rv.I, rv.V        label **_[t]**            label and autonumber table
+rv.I, rv.V        text **_[#]**             autonumber footnote
+rv.I, rv.V        text **_[d]**             footnote description
+rv.I, rv.V        **_[address, label]**     url, internal reference
+rv.I, rv.V        **_[page]**               new page
+================ ======================= ===================================
 
 **Value tags** trigger evaluation of mathmatical statements in rv.V
 
 ======= ======== ==========================================================  
 Scope     Tag                   Example
 ------- -------- ----------------------------------------------------------
-rv.V       =      a = (2*IN + 3*IN)*1.2*FT | description  (declare)   
-rv.V       :=     b := 112.5*LBF | description (assign)    
+rv.V     **=**      a = (2*IN + 3*IN)*1.2*FT | description  (declare)   
+rv.V     **:=**     b := 112.5*LBF | description (assign)    
 ======= ======== ==========================================================  
 
 **Block tags** format a block of text. They start with _[[tag]] and end with
@@ -108,12 +107,12 @@ _[[q]].
 ========== ============= ===============================
 Scope          Tag                   Description
 ---------- ------------- -------------------------------
-rv.I          _[[b]]           start bold text block
-rv.I          _[[c]]           start center text block
-rv.I          _[[i]]           start italic text block
-rv.I          _[[l]]           start latex block
-rv.I          _[[p]]           start plain text block
-rv.I          _[[q]]           end block
+rv.I        **_[[b]]**       start bold text block
+rv.I        **_[[c]]**       start center text block
+rv.I        **_[[i]]**       start italic text block
+rv.I        **_[[l]]**       start latex block
+rv.I        **_[[p]]**       start plain text block
+rv.I        **_[[q]]**       end block
 ========== ============= ===============================
 
 
@@ -124,7 +123,7 @@ Command Overview
 
 ::
 
-    rv.R("""run function label | pass;redact | color;none
+    rv.R("""run function label | priv; pub | color;none
     
         The Run function processes shell commands.
         
@@ -137,7 +136,7 @@ Command Overview
         """)
     
     
-    rv.I("""Insert Function Label | pass;redact | color;none
+    rv.I("""Insert Function Label | priv; pub | color; none
                             
         The Insert function formats static file objects including equations,
         images, tables and text.
@@ -155,9 +154,10 @@ Command Overview
         """)
     
     
-    rv.V("""Values Function Label | pass;redact | color;none
+    rv.V("""Values Function Label | priv; pub | color; none
                 
-        The Values function evaluates lookup tables, variables and equations from files.
+        The Values function evaluates lookup tables, variables and equations
+        from files.
     
         | image label (_[i])| /image/path/.jpg;.png;.svg | size, color
     
@@ -170,7 +170,7 @@ Command Overview
         """)
       
     
-    rv.T("""Tools function label | pass;redact | color;none
+    rv.T("""Tools function label | priv; pub | color; none
     
             The Tools function imports and evaluates functions.
                     
@@ -181,18 +181,18 @@ Command Overview
         """)
     
     
-    rv.X("""  |   |
+    rv.X(""" label  | priv; pub  | color;none
     
-        The X function prevents evaluation of the function. Any API function may be
-        changed to X for flow control, testing, debugging and comments.
+        The X function prevents evaluation of the function. Any API function
+        may be changed to X for flow control, testing, debugging and comments.
     
         """)
     
-    rv.W("""Write function label | pass;redact | color;none
+    rv.W("""Write function label | priv; pub | color; none
     
-        The Write function generates a formatted doc file from a rivt file as text,
-        HTML and PDF. It generates reports based on config file settings as
-        README.txt, HTML and PDF.
+        The Write function generates a formatted doc file from a rivt file as
+        text, HTML and PDF. It generates reports based on config file settings
+        as README.txt, HTML and PDF.
     
         | output
         
