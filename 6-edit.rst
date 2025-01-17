@@ -23,10 +23,11 @@ API         Name          Purpose
 **rv.I**    Insert        Insert static resources 
 **rv.V**    Value         Calculate values
 **rv.T**    Tool          Python functions
+**rv.W**    Write         Write docs and reports
 =========== ============ =========================
 
 Each API function defines a document section. The first line of each function
-includes a section label that becomes a section title, followed by formatting
+includes a section label that can be a section title, followed by formatting
 parameters. New sections may be suppressed by prepending a double hyphen to the
 label.
 
@@ -62,27 +63,29 @@ folder structure. Folder organization is described [here](/organize.md#folders)
 Scope                       Command                          File description
 ------------ ----------------------------------------------- -------------------
 rv.I          || **append** | rel. pth | num; nonum          attach PDF (.pdf)
-rv.I, rv.V    || **text** | rel. pth | rivt; plain           plain, rivt (.txt)
-rv.I, rv.V    || **image**  | rel. pth (,p2) | width1 (,w2)  image (.png .jpg)
+rv.I          || **text** | rel. pth | rivt; plain           plain, rivt (.txt)
+rv.I, rv.V    || **image**  | rel. pth (,p2) | size1 (,s2)   image (.png .jpg)
 rv.I, rv.V    || **table** | rel. pth | col width,           table (.csv .xls)
-rv.V          || **declare** | rel. pth | print; noprint     rivt values (.txt)
+rv.V          || **declare** | rel. pth | table; notable     rivt values (.txt)
+rv.W          || **write** | rel. pth | table; notable       .pdf, .txt, .html
 ============ =============================================== ===================
 
 
 Tags
 ----
 
-**Line tags** format a line of text denoted with *_[tag]* at the end of a line. 
+**Line tags** format a line of text denoted with *_[tag]* at the end of a line.
+**Value tags** trigger evaluation of mathmatical statements in rv.V. **Block
+tags** format a block of text. They start with _[[tag]] and end with _[[q]].
 
 ================ ======================= ===================================
-Scope             Tag                      Description
+Scope             Line Tag                    Description
 ---------------- ----------------------- -----------------------------------
 rv.I, rv.V        text **_[c]**             center text
 rv.I, rv.V        text **_[r]**             right justify text
 rv.I, rv.V        text **_[bc]**            bold center text
 rv.I, rv.V        text **_[bi]**            bold italic text
-rv.I, rv.V        equation **_[s]**         format Python math 
-rv.I, rv.V        equation **_[l]**         format LaTeX math 
+rv.I, rv.V        equation **_[s]**         format Python (sympy) math 
 rv.I, rv.V        label **_[e]**            label and autonumber equation
 rv.I, rv.V        label **_[f]**            label and autonumber figure
 rv.I, rv.V        label **_[t]**            label and autonumber table
@@ -92,20 +95,19 @@ rv.I, rv.V        **_[address, label]**     url, internal reference
 rv.I, rv.V        **_[page]**               new page
 ================ ======================= ===================================
 
-**Value tags** trigger evaluation of mathmatical statements in rv.V
+----------------------------------------------------------------------------
 
-======= ======== ==========================================================  
-Scope     Tag                   Example
-------- -------- ----------------------------------------------------------
-rv.V     **=**      a = (2*IN + 3*IN)*1.2*FT | description  (declare)   
-rv.V     **:=**     b := 112.5*LBF | description (assign)    
-======= ======== ==========================================================  
+======= =========== ========================================================  
+Scope    Value Tag                   Example
+------- ----------- --------------------------------------------------------
+rv.V     **:=**       b := 112.5*LBF | description (declare)    
+rv.V     **=**        a = (2*IN + 3*IN)*b | description  (assign)   
+======= =========== ========================================================  
 
-**Block tags** format a block of text. They start with _[[tag]] and end with
-_[[q]].
+-----------------------------------------------------------------------------
 
 ========== ============= ===============================
-Scope          Tag                   Description
+Scope        Block Tag         Description
 ---------- ------------- -------------------------------
 rv.I        **_[[b]]**       start bold text block
 rv.I        **_[[c]]**       start center text block
@@ -117,8 +119,8 @@ rv.I        **_[[q]]**       end block
 
 
 
-Command Overview
--------------------
+Tag and Command Examples
+--------------------------
 
 
 ::
