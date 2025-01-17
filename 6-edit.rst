@@ -53,8 +53,8 @@ Commands read and write external files. They are start with double vertical
 bars (||) at the beginning of a line. Command parameters are separated by a
 single bar (|).
 
-In the summary tables below, parameter options are separated with semi-colons
-and list elements are separated with commas (options in paranthesis).
+In the summary tables below, options are separated with semi-colons and list
+elements are separated with commas (options in paranthesis).
 
 File locations are specified using short, relative paths based on the rivt
 folder structure. Folder organization is described [here](/organize.md#folders)
@@ -67,9 +67,9 @@ rv.I          || **text** | rel. pth | rivt; plain           plain, rivt (.txt)
 rv.I, rv.V    || **image**  | rel. pth (,p2) | size1 (,s2)   image (.png .jpg)
 rv.I, rv.V    || **table** | rel. pth | col width,           table (.csv .xls)
 rv.V          || **declare** | rel. pth | table; notable     rivt values (.txt)
-rv.W          || **write** | rel. pth | table; notable       .pdf, .txt, .html
+rv.W          || **write** | docs  |  pdf; txt, html         .pdf, .txt, .html
+rv.W          || **report** | docs |  rel. path              .pdf, .txt, .html
 ============ =============================================== ===================
-
 
 Tags
 ----
@@ -90,19 +90,10 @@ rv.I, rv.V        label **_[e]**            label and autonumber equation
 rv.I, rv.V        label **_[f]**            label and autonumber figure
 rv.I, rv.V        label **_[t]**            label and autonumber table
 rv.I, rv.V        text **_[#]**             autonumber footnote
-rv.I, rv.V        text **_[d]**             footnote description
+rv.I, rv.V        descrip **_[d]**          footnote description
 rv.I, rv.V        **_[address, label]**     url, internal reference
 rv.I, rv.V        **_[page]**               new page
 ================ ======================= ===================================
-
-----------------------------------------------------------------------------
-
-======= =========== ========================================================  
-Scope    Value Tag                   Example
-------- ----------- --------------------------------------------------------
-rv.V     **:=**       b := 112.5*LBF | description (declare)    
-rv.V     **=**        a = (2*IN + 3*IN)*b | description  (assign)   
-======= =========== ========================================================  
 
 -----------------------------------------------------------------------------
 
@@ -117,6 +108,14 @@ rv.I        **_[[p]]**       start plain text block
 rv.I        **_[[q]]**       end block
 ========== ============= ===============================
 
+----------------------------------------------------------------------------
+
+======= =========== ========================================================  
+Scope    Value Tag                   Example
+------- ----------- --------------------------------------------------------
+rv.V     **:=**       b := 112.5*LBF | description (declare)    
+rv.V     **=**        a = (2*IN + 3*IN)*b | description  (assign)   
+======= =========== ========================================================  
 
 
 Tag and Command Examples
