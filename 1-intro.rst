@@ -16,14 +16,16 @@ In addition, existing programs are generally not designed to produce collated
 reports. Engineering reports are typically assembled from a variety of
 modeling, calculation, standards and other published documents. **rivt** is
 designed to organize inputs from various sources into a single organized
-document. The table below summarizes the **rivt** features that address
-these longstnding and frustrating limitations to collaboration and shared,
-incremental improvements.
+document. 
 
-**Comparison of Programs**
+The table below summarizes the **rivt** features that address these
+longstanding and frustrating limitations to collaboration and efficient
+publishing.
+
+**Comparison of Program Features**
 
 =========  ======== =========== ========== ======== ======== ======= ======== ======= 
-Features    Opn Src  Compat.[1]  Vers.[2]  Text[3]   All-OS  Remote   Local   Reports  
+Program     Opn Src  Compat.[1]  Vers.[2]  Text[3]   All-OS  Remote   Local   Reports  
 =========  ======== =========== ========== ======== ======== ======= ======== ======= 
 Matlab     no        no          no          no      no       no      yes      no 
 Mathcad    no        no          no          no      no       no      yes      no 
@@ -39,6 +41,8 @@ Jupyter    yes       yes         no          no      yes      yes     yes      n
 
 [3] Readable text input files
 
+Definitions
+===========
 
 A **rivt** file is a Python file (.py) that imports the **rivtlib** api:: 
 
@@ -57,14 +61,11 @@ which exposes 6 API functions ::
     
 where **rS** is a triple quoted string incorporationg rivt markup syntax.
 
-Definitions
-===========
-
 **rivtlib** is a Python library that generates **rivt docs** and **reports**.
 
-A **rivt file** (document) is a Python file that imports the **rivtlib** api.
+A **rivt file** is a Python file that imports the **rivtlib** api.
 
-A **rivt doc** (document) is a text, HTML or PDF file output of a rivt file. 
+A **rivt doc** (document) is a text, HTML or PDF file output from a rivt file. 
 
 A **rivt report** is a collated collection of rivt docs.
 
@@ -74,18 +75,18 @@ Distribution
 ============
 
 **rivtlib** is distributed under the MIT license and can be installed through
-PyPI or by inclusion in **rivtzip**, which can be downloaded as portable, Windows
+PyPI or **rivtzip**, which is downloaded as portable, Windows
 zip files. The rivtzip framework includes five established technologies:
 
-- **VSCode and extensions** - editing and processing
+- **VSCode and extensions** - for editing and processing
 
-- **Python and libraries** - analysis and formatting
+- **Python and libraries** - for analysis and formatting
     
-- **Latex** - typesetting
+- **Latex** - for typesetting
     
-- **Git, GitHub** - version control
+- **Git, GitHub** - for version control
 
-- **QCAD** - diagramming
+- **QCAD** - for diagramming
 
 
 
