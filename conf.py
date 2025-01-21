@@ -7,8 +7,8 @@ copyright = '2023 StructureLabs'
 author = 'rholland'
 release = '0.1'
 
-extensions = ['sphinx.ext.githubpages', "sphinxcontrib.jquery",
-              'sphinx_copybutton',
+extensions = ['sphinx.ext.githubpages',
+              "sphinxcontrib.jquery", 'sphinx_copybutton',
               'sphinx_favicon', 'sphinx.ext.duration',
               'sphinx.ext.doctest', 'sphinx.ext.autodoc']
 
@@ -28,8 +28,8 @@ html_theme_options = {
     "footer_start": ["copyright"],
     "footer_end": [],
     "logo": {
-        "image_dark": "_static/img/rivtpy64.png",
-        "image_light": "_static/img/rivtpy64.png",
+        "image_dark": "_static/img/rivt53c.png",
+        "image_light": "_static/img/rivt53c.png",
     }
 }
 
