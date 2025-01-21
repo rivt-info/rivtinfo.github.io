@@ -18,18 +18,23 @@ snippets for API functions and commands.
 API function snippets
 ----------------------
 
-=========
+xxx
+
+========= =======
  snippet
-=========
-    ini    
-    app    
-    img    
-    tbl    
-    dec    
-    txt  
-========= 
+========= =======
+    ini    x
+    app    x
+    img    x
+    tbl    x
+    dec    x
+    txt    x
+========= =======
+
+
 
 Publish to Github
 -----------------
 
 **rivt** uses the `MIT open source license <https://opensource.org/license/mit/>`_
+
