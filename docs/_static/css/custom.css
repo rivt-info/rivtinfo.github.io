@@ -1,9 +1,5 @@
 /* overrides */
 
-html {
-    --pst-font-size-base: 25px;
-}
-
 img.align-center {
     margin-left: auto;
     margin-right: auto;
@@ -13,7 +9,7 @@ img.align-center {
 
 
 a {
-    color: #5f93ad;
+    color: #005580;
     text-decoration: underline;
     font-weight: normal;
 }
@@ -21,16 +17,4 @@ a {
 
 a.underline {
     text-decoration: underline
-}
-
-a.visited {
-    color: #5f93ad;
-}
-
-h1 {
-    font-size: 30px
-}
-
-h2 {
-    font-size: 25px
 }
