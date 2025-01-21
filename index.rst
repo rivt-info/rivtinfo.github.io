@@ -15,13 +15,24 @@
     </embed>
 
 
-**rivtlib.py Documentation**
+**rivt User Documentation**
 
-**rivtlib** is a Python `open source <https://opensource.org/license/mit/>`_
-library for writing and publishing engineering documents, with an emphasis on
-document reuse. It implements the **rivt** markup language and API described
-here `rivt User Manual <https://rivt-doc.net>`_.  The **rivtlib.py** source code
-is here `GitHub <https://github.com/rivtlib/rivtlib.github.io/tree/main/src/rivtlib>`_
+**rivt** is a markup language and framework for writing and publishing
+engineering documents, with an emphasis on template sharing and reuse.
+
+A **rivt file** is a Python file that imports the **rivtlib** api.
+
+A **rivt doc** (document) is a text, HTML or PDF file output from a rivt file. 
+
+A **rivt report** is a collated collection of rivt docs.
+
+`rivtlib.py <https://rivtlib.net>`_ is a Python library that generates 
+**rivt docs** and **reports**. The **rivtlib.py** source code is here 
+`GitHub <https://github.com/rivtlib-net/rivtlib>`_
+
+**rivtzip** is a portable, free and open source editing and publishing
+framework for **rivt**.
+
 
 
 .. toctree::
