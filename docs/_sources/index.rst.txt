@@ -17,12 +17,13 @@
 
 **rivt User Documentation**
 
-**rivt** is a markup language and framework for writing and publishing
-engineering documents, with an emphasis on template sharing and reuse.
+**rivt** is a markup language and open source framework for writing and
+publishing engineering documents, with an emphasis on template sharing and
+reuse.
 
 A **rivt file** is a Python file that imports the **rivtlib** api.
 
-A **rivt doc** (document) is a text, HTML or PDF file output from a rivt file. 
+A **rivt doc** (document) is text, HTML or PDF file output from a rivt file. 
 
 A **rivt report** is a collated collection of rivt docs.
 

@@ -1,5 +1,9 @@
 /* overrides */
 
+html {
+    --pst-font-size-base: 20px;
+}
+
 img.align-center {
     margin-left: auto;
     margin-right: auto;
