@@ -1,5 +1,5 @@
 
-.. figure::  _static/img/rivtpy3.png
+.. figure::  _static/img/rivt53b.png
     :class: dark-light
     :scale: 40 %
     :figwidth: image
@@ -9,7 +9,7 @@
 .. raw:: html
 
     <embed>
-        <h1 style="font-size:2em; text-align:center"> rivtlib.net </h1>
+        <h1 style="font-size:2em; text-align:center"> rivt.info </h1>
         
         <hr width="100%" size="6" color="LightGrey" noshade>
     </embed>

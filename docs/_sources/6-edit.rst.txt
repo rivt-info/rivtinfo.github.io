@@ -77,16 +77,15 @@ Tags
 ----
 
 **Line tags** format a line of text denoted with *_[tag]* at the end of a line.
-**Value tags** trigger evaluation of mathmatical statements in rv.V. **Block
-tags** format a block of text. They start with _[[tag]] and end with _[[q]].
+**Value tags** trigger evaluation of mathmatical statements in the rv.V
+function. **Block tags** format a multi-line block of text. They start with
+_[[tag]] and end with _[[q]].
 
 ================ ======================= ===================================
 Scope             Line Tag                    Description
 ---------------- ----------------------- -----------------------------------
 rv.I, rv.V        text **_[c]**             center text
 rv.I, rv.V        text **_[r]**             right justify text
-rv.I, rv.V        text **_[bc]**            bold center text
-rv.I, rv.V        text **_[bi]**            bold italic text
 rv.I, rv.V        equation **_[s]**         format Python (sympy) math 
 rv.I, rv.V        label **_[e]**            label and autonumber equation
 rv.I, rv.V        label **_[f]**            label and autonumber figure
@@ -105,6 +104,8 @@ Scope        Block Tag         Description
 rv.I        **_[[b]]**       start bold text block
 rv.I        **_[[c]]**       start center text block
 rv.I        **_[[i]]**       start italic text block
+rv.I        **_[[bi]]**      start bold indent text block
+rv.I        **_[[ii]]**      start italic indent block
 rv.I        **_[[l]]**       start latex block
 rv.I        **_[[p]]**       start plain text block
 rv.I        **_[[q]]**       end block
