@@ -20,7 +20,8 @@ html_theme = 'pydata_sphinx_theme'
 html_context = {"default_mode": "light"}
 html_sidebars = {"**": []}
 html_static_path = ['_static', '_static/img/']
-html_logo = "_static/img/rivtpy64.png"
+html_logo = "_static/img/rivt53d.png"
+html_css_files = ['css/custom.css',]
 html_theme_options = {
     "show_nav_level": 2,
     "show_toc_level": 3,
