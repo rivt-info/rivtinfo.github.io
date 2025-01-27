@@ -27,91 +27,6 @@ e.g., riv0203-loads.py is the third subdivision of division two. rivt files are
 processed and published in document order. Editing the rivt number will change
 the report organization. 
 
-
-rivt folders
-------------
-
-::
-
-    rivt-Report-Label/               
-        ├── d01-div-label/                  (division 1 files)
-            ├── r0101-label1.py             (rivt subdivsion file)
-            └── r0102-label2.py             (rivt subdivsion file)
-        ├── d02-div-label/                  (division 2 files)
-            └── r0201-label3.py             (rivt subdivision file)
-        ├── rivt-docs/                      (document output)
-            ├── rivt-pdf_/                      
-                ├── rivt0101-label1.pdf      
-                ├── rivt0102-label2.pdf
-                ├── rivt201-label3.pdf
-                └── Report-Label.pdf 
-            ├── rivt-text_/                    
-                ├── rivt0101-label1.txt      
-                ├── rivt0102-label2.txt
-                └── rivt0201-label3.txt          
-            ├── rivt-html_/                    
-                ├── rivt0101-label1.html
-                ├── rivt0102-label2.html
-                └── rivt0201-label3.html        
-            ├── rivt-temp_/
-                └── d0201-label3.tex
-        ├── r01/                            (source files)         
-            ├── ins
-                ├── fig1.png            
-                └── attach1.pdf
-            ├── run
-                └── sap.cmd
-            ├── tool
-                ├── func1.py                   
-                └── func2.py
-            └── val
-                └── val0101.csv
-        ├── r02/                    
-            ├── data1.csv                   
-            └── standards.txt
-        ├── config.ini                   (report config file)
-        ├── cover-page.pdf               (report cover page)
-        └── README.txt                   (searchable report) 
-
-
-rivtpub output folders
-----------------------
-
-::
-
-
-    rivtpub_Report-Label/               
-        ├── div01_div-label/           
-            ├── r0101_label1.py         
-            └── r0102_label2.py   
-        ├── [div02_div-label/           
-            └── r0201_label3.py         
-         ├── riv01/                    
-            ├── ins
-                ├── fig1.png            
-                └── attach1.pdf
-            ├── run
-                └── sap.cmd
-            ├── tool
-                ├── func1.py                   
-                └── func2.py
-            └── val
-        ├── riv02/                    
-            ├── ins
-            └── val
-                ├── data.csv                   
-                └── standard.txt
-        ├── config.ini    
-        └── README.txt  
-
-
-
-
-
-
-Folders: document organization 
-------------------------------
-
 **rivt** implements a file and folder structure to simplify file sharing and
 control. The privacy level of document inputs and outputs may be may be set at
 the file or API function level. Each rivt file (and doc) is idenfiifed by a
@@ -146,80 +61,53 @@ the *write* folder. rivt reports are collections of docs specified in the
 config.ini. Resource files are stored in user-defined sub-folders which
 organize the data allow for separation of public and private data.
 
+
+rivt folders
+--------------
+
 ::
 
-    [rivt]-Project-Name/               
-        ├── [append]/            
-            ├── app01/  
-            └── app02/  
-                ├── attach3.pdf                   
-                └── attach4.pdf
-        ├── [images]/            
-            ├── img01/  
-            └── img02/  
-                ├── image3.jpg                   
-                └── image4.jpg
-        ├── [scripts]/
-            ├── py01/                 
-            └── py02/  
-                ├── function3.py
-                └── function4.py               
-            ├── run01/  
-            └── run02/  
-                ├── script3.bat
-                └── script4.sh  
-        ├── [tables]/            
-            ├── tbl01/  
-            └── tbl02/  
-                ├── table3.csv                   
-                └── table4.csv
-        ├── [text]/            
-            ├── tex01/  
-            ├── tex02/  
-                ├── latex3.tex
-                └── latex4.tex
-            ├── txt01/  
-            └── txt02/  
-                ├── text3.txt                   
-                └── text4.txt
-        ├── [values]/                 
-            ├── dat01/  
-            ├── dat02/  
-                ├── table3.csv                   
-                └── table4.csv
-            ├── equ01/                      
-            ├── equ02/                    
-                ├── equation1.txt      
-                └── equation2.txt       
-            ├── val01/                    
-            └── val02/                    
-                ├── values3.csv      
-                └── values4.csv       
-        ├── [write]/                        (output files)    
-            ├── [html]/                     
-                └── riv0101-codes.html      (html files)
-                    riv0202-frames.html
-                    Project-Name.html       (html report) 
-            ├── [pdf]/                      
-                └── riv0101-codes.pdf       (pdf files)        
-                    riv0202-frames.pdf
-                    Project-Name.pdf        (pdf report)        
-            ├── [temp]/                     (temp files)     
-                └── temp-files.tex
-            └── [text]/                     
-                └── riv0101-codes.txt       (text output)
-                    riv0201-frames.txt
-            └── [xrivt-redacted]/            
-                └── README.txt              (redacted report)
-                    xriv0101-codes.py       (redacted files)
-                    xriv0102-loads.py
-                    xriv0201-walls.py       
-        └── config.ini                      (rivt config file)
-            README.txt                      (searchable report in public repo)
-            riv0000-report.py               (rivt input files)
-            riv0101-codes.py
-            riv0102-loads.py
-            riv0201-walls.py
-            riv0202-frames.py
-    
-    
+
+    rivt-Report-Label/               
+        ├── d01-div-label/                  (division 1 files)
+            ├── ins01/                      (insert files)
+                ├── fig1.png            
+                └── attach1.pdf
+            └── val01/                      (values files)
+                └── val0101.csv
+            ├── r0101-label1.py             (rivt file)
+            └── r0102-label2.py             (rivt file)
+        ├── d02-div-label/                  (division 2 files)
+            ├── ins01/      
+                ├── data1.csv                   
+                └── standards.txt
+            └── r0201-label3.py             (rivt file)
+        ├── rivt-docs/                      (document output)
+            ├── rivt-pdf/                      
+                ├── rivt0101-label1.pdf      
+                ├── rivt0102-label2.pdf
+                ├── rivt201-label3.pdf
+                └── Report-Label.pdf 
+            ├── rivt-xpdf/                      
+                ├── rivt0101-label1.pdf      
+                ├── rivt0102-label2.pdf
+                ├── rivt201-label3.pdf
+                └── Report-Label.pdf 
+            ├── rivt-text/                    
+                ├── rivt0101-label1.txt      
+                ├── rivt0102-label2.txt
+                └── rivt0201-label3.txt          
+            ├── rivt-html/                    
+                ├── rivt0101-label1.html
+                ├── rivt0102-label2.html
+                └── rivt0201-label3.html        
+            ├── rivt-temp/
+                └── d0201-label3.tex             
+        ├── tools/                           (functions and shell files)
+            ├── func1.py                   
+            └── sap.cmd
+            └── func2.py                  
+        ├── rivt-config.ini                 (report config file)
+        ├── cover-page.pdf                  (report cover page)
+        └── README.txt                      (report - GitHub searchable) 
+

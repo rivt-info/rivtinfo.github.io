@@ -98,18 +98,19 @@ rv.I, rv.V        **_[page]**               new page
 
 -----------------------------------------------------------------------------
 
-========== ============= ===============================
+========== =============== ===============================
 Scope        Block Tag         Description
----------- ------------- -------------------------------
+---------- --------------- -------------------------------
+rv.V        title _[[a]]     start assign value block
 rv.I        **_[[b]]**       start bold text block
 rv.I        **_[[c]]**       start center text block
 rv.I        **_[[i]]**       start italic text block
-rv.I        **_[[bi]]**      start bold indent text block
+rv.I        **_[[ib]]**      start bold indent text block
 rv.I        **_[[ii]]**      start italic indent block
 rv.I        **_[[l]]**       start latex block
 rv.I        **_[[p]]**       start plain text block
 rv.I        **_[[q]]**       end block
-========== ============= ===============================
+========== =============== ===============================
 
 ----------------------------------------------------------------------------
 
