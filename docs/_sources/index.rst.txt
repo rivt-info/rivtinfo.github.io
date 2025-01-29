@@ -38,10 +38,11 @@ framework for **rivt**.
 
 .. toctree::
     :maxdepth: 1
+    :caption: Contents
 
     1-intro.rst
     2-install.rst
-    3-search.rst
-    4-vscode.rst
-    5-folders.rst
-    6-edit.rst
+    3-vscode.rst
+    4-folders.rst
+    5-edit.rst
+    6-publish.rst

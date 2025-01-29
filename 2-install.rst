@@ -1,6 +1,6 @@
-
-Install
-=======
+==========
+2-Install
+==========
 
 rivtzip installs the complete rivt system in a portable folder via a zip file,
 and is available for every OS platform. rivt also runs in the cloud using

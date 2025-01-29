@@ -1,7 +1,6 @@
-.. _5-folders:
-
-Folders
-=======
+==========
+4-Folders
+==========
 
 The rivt folder structure organizes documents for reports and sharing. An
 initial folder structure can be taken from an existing project or generated

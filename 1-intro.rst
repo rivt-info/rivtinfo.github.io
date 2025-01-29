@@ -1,6 +1,6 @@
-
-Intro
-=====
+========
+1-Intro
+========
 
 **rivt** is a markup language and framework for writing and publishing
 engineering documents with an emphasis on template sharing and reuse. Software
