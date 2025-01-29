@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="_static/favicon-32x32.png" sizes="151x143" rel="icon" type="image/png">
     <link href="_static/favicon-16x16.png" sizes="151x143" rel="icon" type="image/png">
-    <title>Search &#8212; rivt.info 0.1 documentation</title>
+    <title>Publish &#8212; rivt.info 0.1 documentation</title>
   
   
   
@@ -48,11 +48,9 @@
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = '3-search';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '6-publish';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="VSCode" href="4-vscode.html" />
-    <link rel="prev" title="Install" href="2-install.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -148,44 +146,6 @@
   </a>
 </li>
 
-
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="#">
-    Search
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="4-vscode.html">
-    VSCode
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="5-folders.html">
-    Folders
-  </a>
-</li>
-
-            <li class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button"
-                data-bs-toggle="dropdown" aria-expanded="false"
-                aria-controls="pst-nav-more-links">
-                    More
-                </button>
-                <ul id="pst-nav-more-links" class="dropdown-menu">
-                    
-<li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="6-edit.html">
-    Edit
-  </a>
-</li>
-
-                </ul>
-            </li>
-            
   </ul>
 </nav></div>
       
@@ -243,6 +203,8 @@
       
       
       
+        
+      
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
         
@@ -269,34 +231,6 @@
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="2-install.html">
     Install
-  </a>
-</li>
-
-
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="#">
-    Search
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="4-vscode.html">
-    VSCode
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="5-folders.html">
-    Folders
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="6-edit.html">
-    Edit
   </a>
 </li>
 
@@ -357,7 +291,7 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Search</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Publish</span></li>
   </ul>
 </nav>
 </div>
@@ -374,89 +308,9 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="search">
-<h1>Search<a class="headerlink" href="#search" title="Link to this heading">#</a></h1>
-<p>This page provides a convenient search interface for <strong>rivt</strong> files distributed
-across GitHub.  The search covers the full text in the <strong>rivt</strong> root README
-file, which typically contains the full rivt report. For advanced searching use
-the GitHub search interface <a class="reference external" href="https://github.com/search">here</a>.</p>
-<p>[S] Search GitHub (Ctrl+Enter)</p>
-<p>[C] Clear input (Ctrl+R)</p>
-<section id="search-github">
-<h2>Search GitHub<a class="headerlink" href="#search-github" title="Link to this heading">#</a></h2>
-<p>Example: <strong>solar+steel+frame</strong> is passed to GitHub as <strong>rivt+solar+steel+frame</strong></p>
-<head>
-
-<style>
-.button {
-background-color: #6f6968; border: 3 px solid white; color: white; padding: 4px 10px;
-text-align: center; text-decoration: none; display: inline-block; font-size: 16px;
-margin: 4px 2px; cursor: pointer;} </style>
-
-<script>
-function searchRivt(){var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;
-window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 13) && e.ctrlKey){document.getElementById("searchBtn").click();}});</script>
-
-<script> function searchOrg(){var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;
-window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 13) && e.ctrlKey){document.getElementById("searchBtn").click();}});</script>
-
-<script> function clearRivt(){document.getElementById("terms").value="";
-document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 82) && e.ctrlKey){document.getElementById("clearBtn").click();}})};</script>
-
-</head>
-
-<button class="button" id="searchBtn" onclick="searchRivt()">S</button><button class="button" id="clearBtn" onclick="clearRivt()">C</button><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal"><br></section>
-<section id="search-github-organizations">
-<h2>Search GitHub Organizations<a class="headerlink" href="#search-github-organizations" title="Link to this heading">#</a></h2>
-<p>Organizations (comma separated)</p>
-<input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: normal">
-
-<hr>
-
-Search Terms<br>
-<button class="button" id="searchBtn" onclick="searchOrg()">S</button> <button class="button" id="clearBtn" onclick="clearRivt()">C</button><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal"></section>
-</section>
-<section id="github">
-<h1>GitHub<a class="headerlink" href="#github" title="Link to this heading">#</a></h1>
-<p>The primary purpose of GitHub is to facilitate the version control and issue
-tracking aspects of software development. Labels, milestones, responsibility
-assignment, and a search engine are available for issue tracking. For version
-control, Git (and, by extension, GitHub) allows pull requests to propose changes
-to the source code. Users who can review the proposed changes can see a diff
-between the requested changes and approve them. In Git terminology, this action
-is called “committing” and one instance of it is a “commit.” A history of all
-commits is kept and can be viewed at a later time.</p>
-<section id="features">
-<h2>Features<a class="headerlink" href="#features" title="Link to this heading">#</a></h2>
-<p>GitHub supports the following formats and features:</p>
-<ul class="simple">
-<li><p>Documentation,including automatically rendered README files in a variety of
-Markdown-like file formats (see README § On GitHub)</p></li>
-<li><p>Pages, a static web hosting service for blogs, project documentation,
-and books.</p></li>
-<li><p>Wikis, with some repositories consisting solely of wiki content. These
-include curated lists of recommended software which have become known as
-awesome lists.</p></li>
-<li><p>GitHub Actions, which allows building continuous integration and
-continuous deployment pipelines for testing, releasing and deploying software
-without the use of third-party websites/platforms</p></li>
-<li><p>GitHub Codespaces, an online IDE providing users with a virtual machine
-intended to be a work environment to build and test code</p></li>
-<li><p>Graphs: pulse, contributors, commits, code frequency, punch card, network,
-members</p></li>
-<li><p>Email notifications</p></li>
-<li><p>Discussions</p></li>
-<li><p>Nested task-lists within files</p></li>
-<li><p>Visualization of geospatial data</p></li>
-<li><p>image preview in many formats</p></li>
-<li><p>Security Alerts of known Common Vulnerabilities and Exposures in different
-packages</p></li>
-<li><p>GitHub’s Terms of Service do not require public software projects hosted on
-GitHub to meet the Open Source Definition. The terms of service state, “By
-setting your repositories to be viewed publicly, you agree to allow others to
-view and fork your repositories.”</p></li>
-</ul>
-</section>
+  <section id="publish">
+<h1>Publish<a class="headerlink" href="#publish" title="Link to this heading">#</a></h1>
+<p>abc</p>
 </section>
 
 
@@ -469,24 +323,6 @@ view and fork your repositories.”</p></li>
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="2-install.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Install</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="4-vscode.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">VSCode</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
@@ -499,31 +335,10 @@ view and fork your repositories.”</p></li>
 
 
   <div class="sidebar-secondary-item">
-<div
-    id="pst-page-navigation-heading-2"
-    class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> On this page
-  </div>
-  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Search</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#search-github">Search GitHub</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#search-github-organizations">Search GitHub Organizations</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#github">GitHub</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#features">Features</a></li>
-</ul>
-</li>
-</ul>
-
-  </nav></div>
-
-  <div class="sidebar-secondary-item">
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/3-search.rst.txt"
+      <li><a href="_sources/6-publish.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div></div>

@@ -48,11 +48,9 @@
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = '5-folders';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '4-folders';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Edit" href="6-edit.html" />
-    <link rel="prev" title="VSCode" href="4-vscode.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -148,44 +146,6 @@
   </a>
 </li>
 
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="3-search.html">
-    Search
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="4-vscode.html">
-    VSCode
-  </a>
-</li>
-
-
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="#">
-    Folders
-  </a>
-</li>
-
-            <li class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button"
-                data-bs-toggle="dropdown" aria-expanded="false"
-                aria-controls="pst-nav-more-links">
-                    More
-                </button>
-                <ul id="pst-nav-more-links" class="dropdown-menu">
-                    
-<li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="6-edit.html">
-    Edit
-  </a>
-</li>
-
-                </ul>
-            </li>
-            
   </ul>
 </nav></div>
       
@@ -243,6 +203,8 @@
       
       
       
+        
+      
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
         
@@ -269,34 +231,6 @@
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="2-install.html">
     Install
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="3-search.html">
-    Search
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="4-vscode.html">
-    VSCode
-  </a>
-</li>
-
-
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="#">
-    Folders
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="6-edit.html">
-    Edit
   </a>
 </li>
 
@@ -397,80 +331,6 @@ where dd is a two digit division number and nn is a two digit subdivision number
 e.g., riv0203-loads.py is the third subdivision of division two. rivt files are
 processed and published in document order. Editing the rivt number will change
 the report organization.</p>
-<section id="rivt-folders">
-<h2>rivt folders<a class="headerlink" href="#rivt-folders" title="Link to this heading">#</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>rivt-Report-Label/
-    ├── d01-div-label/                  (division 1 files)
-        ├── r0101-label1.py             (rivt subdivsion file)
-        └── r0102-label2.py             (rivt subdivsion file)
-    ├── d02-div-label/                  (division 2 files)
-        └── r0201-label3.py             (rivt subdivision file)
-    ├── rivt-docs/                      (document output)
-        ├── rivt-pdf_/
-            ├── rivt0101-label1.pdf
-            ├── rivt0102-label2.pdf
-            ├── rivt201-label3.pdf
-            └── Report-Label.pdf
-        ├── rivt-text_/
-            ├── rivt0101-label1.txt
-            ├── rivt0102-label2.txt
-            └── rivt0201-label3.txt
-        ├── rivt-html_/
-            ├── rivt0101-label1.html
-            ├── rivt0102-label2.html
-            └── rivt0201-label3.html
-        ├── rivt-temp_/
-            └── d0201-label3.tex
-    ├── r01/                            (source files)
-        ├── ins
-            ├── fig1.png
-            └── attach1.pdf
-        ├── run
-            └── sap.cmd
-        ├── tool
-            ├── func1.py
-            └── func2.py
-        └── val
-            └── val0101.csv
-    ├── r02/
-        ├── data1.csv
-        └── standards.txt
-    ├── config.ini                   (report config file)
-    ├── cover-page.pdf               (report cover page)
-    └── README.txt                   (searchable report)
-</pre></div>
-</div>
-</section>
-<section id="rivtpub-output-folders">
-<h2>rivtpub output folders<a class="headerlink" href="#rivtpub-output-folders" title="Link to this heading">#</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>rivtpub_Report-Label/
-    ├── div01_div-label/
-        ├── r0101_label1.py
-        └── r0102_label2.py
-    ├── [div02_div-label/
-        └── r0201_label3.py
-     ├── riv01/
-        ├── ins
-            ├── fig1.png
-            └── attach1.pdf
-        ├── run
-            └── sap.cmd
-        ├── tool
-            ├── func1.py
-            └── func2.py
-        └── val
-    ├── riv02/
-        ├── ins
-        └── val
-            ├── data.csv
-            └── standard.txt
-    ├── config.ini
-    └── README.txt
-</pre></div>
-</div>
-</section>
-<section id="folders-document-organization">
-<h2>Folders: document organization<a class="headerlink" href="#folders-document-organization" title="Link to this heading">#</a></h2>
 <p><strong>rivt</strong> implements a file and folder structure to simplify file sharing and
 control. The privacy level of document inputs and outputs may be may be set at
 the file or API function level. Each rivt file (and doc) is idenfiifed by a
@@ -502,79 +362,50 @@ Required file names or prefixes are shown in [ ].</p>
 the <em>write</em> folder. rivt reports are collections of docs specified in the
 config.ini. Resource files are stored in user-defined sub-folders which
 organize the data allow for separation of public and private data.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[rivt]-Project-Name/
-    ├── [append]/
-        ├── app01/
-        └── app02/
-            ├── attach3.pdf
-            └── attach4.pdf
-    ├── [images]/
-        ├── img01/
-        └── img02/
-            ├── image3.jpg
-            └── image4.jpg
-    ├── [scripts]/
-        ├── py01/
-        └── py02/
-            ├── function3.py
-            └── function4.py
-        ├── run01/
-        └── run02/
-            ├── script3.bat
-            └── script4.sh
-    ├── [tables]/
-        ├── tbl01/
-        └── tbl02/
-            ├── table3.csv
-            └── table4.csv
-    ├── [text]/
-        ├── tex01/
-        ├── tex02/
-            ├── latex3.tex
-            └── latex4.tex
-        ├── txt01/
-        └── txt02/
-            ├── text3.txt
-            └── text4.txt
-    ├── [values]/
-        ├── dat01/
-        ├── dat02/
-            ├── table3.csv
-            └── table4.csv
-        ├── equ01/
-        ├── equ02/
-            ├── equation1.txt
-            └── equation2.txt
-        ├── val01/
-        └── val02/
-            ├── values3.csv
-            └── values4.csv
-    ├── [write]/                        (output files)
-        ├── [html]/
-            └── riv0101-codes.html      (html files)
-                riv0202-frames.html
-                Project-Name.html       (html report)
-        ├── [pdf]/
-            └── riv0101-codes.pdf       (pdf files)
-                riv0202-frames.pdf
-                Project-Name.pdf        (pdf report)
-        ├── [temp]/                     (temp files)
-            └── temp-files.tex
-        └── [text]/
-            └── riv0101-codes.txt       (text output)
-                riv0201-frames.txt
-        └── [xrivt-redacted]/
-            └── README.txt              (redacted report)
-                xriv0101-codes.py       (redacted files)
-                xriv0102-loads.py
-                xriv0201-walls.py
-    └── config.ini                      (rivt config file)
-        README.txt                      (searchable report in public repo)
-        riv0000-report.py               (rivt input files)
-        riv0101-codes.py
-        riv0102-loads.py
-        riv0201-walls.py
-        riv0202-frames.py
+<section id="rivt-folders">
+<h2>rivt folders<a class="headerlink" href="#rivt-folders" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>rivt-Report-Label/
+    ├── d01-div-label/                  (division 1 files)
+        ├── ins01/                      (insert files)
+            ├── fig1.png
+            └── attach1.pdf
+        └── val01/                      (values files)
+            └── val0101.csv
+        ├── r0101-label1.py             (rivt file)
+        └── r0102-label2.py             (rivt file)
+    ├── d02-div-label/                  (division 2 files)
+        ├── ins01/
+            ├── data1.csv
+            └── standards.txt
+        └── r0201-label3.py             (rivt file)
+    ├── rivt-docs/                      (document output)
+        ├── rivt-pdf/
+            ├── rivt0101-label1.pdf
+            ├── rivt0102-label2.pdf
+            ├── rivt201-label3.pdf
+            └── Report-Label.pdf
+        ├── rivt-xpdf/
+            ├── rivt0101-label1.pdf
+            ├── rivt0102-label2.pdf
+            ├── rivt201-label3.pdf
+            └── Report-Label.pdf
+        ├── rivt-text/
+            ├── rivt0101-label1.txt
+            ├── rivt0102-label2.txt
+            └── rivt0201-label3.txt
+        ├── rivt-html/
+            ├── rivt0101-label1.html
+            ├── rivt0102-label2.html
+            └── rivt0201-label3.html
+        ├── rivt-temp/
+            └── d0201-label3.tex
+    ├── tools/                           (functions and shell files)
+        ├── func1.py
+        └── sap.cmd
+        └── func2.py
+    ├── rivt-config.ini                 (report config file)
+    ├── cover-page.pdf                  (report cover page)
+    └── README.txt                      (report - GitHub searchable)
 </pre></div>
 </div>
 </section>
@@ -590,24 +421,6 @@ organize the data allow for separation of public and private data.</p>
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="4-vscode.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">VSCode</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="6-edit.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Edit</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
@@ -628,8 +441,6 @@ organize the data allow for separation of public and private data.</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-folders">rivt folders</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivtpub-output-folders">rivtpub output folders</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#folders-document-organization">Folders: document organization</a></li>
 </ul>
   </nav></div>
 
@@ -637,7 +448,7 @@ organize the data allow for separation of public and private data.</p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/5-folders.rst.txt"
+      <li><a href="_sources/4-folders.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div></div>
