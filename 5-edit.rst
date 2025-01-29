@@ -82,8 +82,8 @@ rv.V        || **EVAL** | rel. pth |  table; notable        .csv, .txt, .xls
 Scope                        Commands                          Notes / Options
 ----------- ---------------------------------------------- ---------------------
 rv.I        || **APPEND** | rel. pth | num; nonum           .pdf
-rv.W        || **REPORT** | docs | pdf; tex; txt; html      tex is a latex pdf
 rv.W        || **WRITE** | docs | pdf; tex; txt; html       pdf is a text pdf
+rv.W        || **REPORT** | docs | pdf; tex; txt; html      tex is a latex pdf
 =========== ============================================== =====================
 
 Tags
@@ -97,35 +97,36 @@ on the last line.
 ================ ======================= =======================================
 Scope             Line Tags                    Description
 ---------------- ----------------------- ---------------------------------------
-rv.I, rv.V        text _[**C**]            center text
-rv.I, rv.V        text _[**B**]            center bold text
-rv.I, rv.V        equation **_[S]**        format Python (sympy) math 
-rv.I, rv.V        label **_[E]**           label, autonumber, verbose equation
-rv.I, rv.V        caption **_[F]**         label, autonumber image [1]
-rv.I, rv.V        title **_[T]**           label and autonumber table
+rv.I, rv.V        **_[PAGE]**              new page
+rv.I, rv.V        text _[**C**]            center text 
+rv.I, rv.V        caption **_[F]**         autonumber image [1]
+rv.I, rv.V        title **_[T]**           autonumber table
 rv.I, rv.V        text **_[#]**            autonumber footnote
 rv.I, rv.V        descrip **_[D]**         footnote description
-rv.I, rv.V        **_[address, label]**    url, internal reference
-rv.I, rv.V        **_[PAGE]**              new page
+rv.V              label **_[E]**           autonumber, format equation
 rv.V              **=**                    evaluate: a = 1+1 | unit | reference
+rv.I              text _[**B**]            center bold text (latex pdf)
+rv.I              equation **_[S]**        format Python math 
+rv.I              equation **_[N]**        format, autonumber Python math 
+rv.I              **_[address, label]**    url, internal reference (latex pdf)
 ================ ======================= =======================================
 
-[1] the figure tag is attached to a caption parameter in the **image** command
+[1] Figure tag is attached to caption parameter in the **IMAGE** command
 
 
-========== ================== ===============================
-Scope        Block Tags         Description
----------- ------------------ -------------------------------
-rv.V        _[[**E**]]           start evaluation block
-rv.I        _[[**B**]]           start bold text block
-rv.I        **_[[C]]**           start center text block
-rv.I        **_[[I]]**           start italic text block
-rv.I        **_[[O]]**           start bold indent text block
-rv.I        **_[[T]]**           start italic indent block
-rv.I        **_[[L]]**           start latex block
-rv.I        **_[[P]]**           start plain text block
-rv.I        **_[[Q]]**           end block
-========== ================== ===============================
+========== =============== =====================================================
+Scope        Block Tags      Description
+---------- --------------- -----------------------------------------------------
+rv.V        _[[**E**]]       start evaluation block 
+rv.I        _[[**P**]]       start plain text block
+rv.I        _[[**B**]]       start bold text block  (latex pdf)
+rv.I        **_[[C]]**       start center text block (latex pdf)
+rv.I        **_[[I]]**       start italic text block (latex pdf)
+rv.I        **_[[O]]**       start bold indent text block (latex pdf)
+rv.I        **_[[T]]**       start italic indent block (latex pdf)
+rv.I        **_[[L]]**       start latex block (latex pdf)
+rv.I        **_[[Q]]**       end block
+========== =============== =====================================================
   
 
 Examples
