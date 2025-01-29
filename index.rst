@@ -38,7 +38,6 @@ framework for **rivt**.
 
 .. toctree::
     :maxdepth: 1
-    :caption: Python Modules
 
     1-intro.rst
     2-install.rst
