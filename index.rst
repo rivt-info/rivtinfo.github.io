@@ -25,12 +25,9 @@ reuse.
     - A **rivt file** is a Python file that imports the **rivtlib** package.
     - A **rivt doc** (document) is a text, HTML or PDF output file. 
     - A **rivt report** is a collated collection of rivt docs.
-    - `rivtlib <https://rivtlib.net>`_ is a Python library that generates 
-        **rivt docs** and **reports**. The **rivtlib.py** source code is here 
-        `GitHub <https://github.com/rivtlib-net/rivtlib>`_
-    - **rivtzip** is a portable, free and open source editing and publishing
-        framework for **rivt**.
-
+    - **rivtlib** is a `Python library <https://rivtlib.net>`_ that generates **rivt docs** and **reports**. 
+    - The **rivtlib** source code is `here <https://github.com/rivtlib-net/rivtlib>`_
+    - **rivtzip** is a portable, open source editing and publishing framework.
 
 .. toctree::
     :maxdepth: 1
