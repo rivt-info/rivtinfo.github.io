@@ -1,17 +1,12 @@
 6. Search
 ==========
 
-This page provides a convenient search interface for **rivt** files distributed
-across GitHub.  The search covers the full text in the **rivt** root README
-file, which typically contains the full rivt report. For advanced searching use
-the GitHub search interface `here <https://github.com/search>`_.
+This section provides a convenient search interface for **rivt** files
+distributed across GitHub. It searches the full text of the **rivt** root
+README file which contains the rivt report in text form. For advanced searching
+the GitHub interface is `here <https://github.com/search>`_.
 
-[S] Search GitHub (Ctrl+Enter)
-
-[C] Clear input (Ctrl+R)
-
-Search GitHub
--------------
+[S] Search GitHub (Ctrl+Enter)   [C] Clear input (Ctrl+R)
 
 Example: **solar+steel+frame** is passed to GitHub as **rivt+solar+steel+frame**
 
@@ -39,12 +34,9 @@ Example: **solar+steel+frame** is passed to GitHub as **rivt+solar+steel+frame**
 
     <button class="button" id="searchBtn" onclick="searchRivt()">S</button><button class="button" id="clearBtn" onclick="clearRivt()">C</button><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal"><br>
 
+    <hr>
 
-
-Search GitHub Organizations
----------------------------
-
-Organizations (comma separated)
+Search within GitHub organizations (comma separated)
 
 .. raw:: html    
     
@@ -55,60 +47,6 @@ Organizations (comma separated)
     Search Terms<br>
     <button class="button" id="searchBtn" onclick="searchOrg()">S</button> <button class="button" id="clearBtn" onclick="clearRivt()">C</button><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal">
 
-
-
-GitHub
--------
-
-The primary purpose of GitHub is to facilitate the version control and issue
-tracking aspects of software development. Labels, milestones, responsibility
-assignment, and a search engine are available for issue tracking. For version
-control, Git (and, by extension, GitHub) allows pull requests to propose changes
-to the source code. Users who can review the proposed changes can see a diff
-between the requested changes and approve them. In Git terminology, this action
-is called "committing" and one instance of it is a "commit." A history of all
-commits is kept and can be viewed at a later time.
-
-
-GitHub supports the following formats and features:
-
-- Documentation,including automatically rendered README files in a variety of
-  Markdown-like file formats (see README § On GitHub)
-
-- Pages, a static web hosting service for blogs, project documentation,
-  and books.
-
-- Wikis, with some repositories consisting solely of wiki content. These
-  include curated lists of recommended software which have become known as
-  awesome lists.
-
-- GitHub Actions, which allows building continuous integration and
-  continuous deployment pipelines for testing, releasing and deploying software
-  without the use of third-party websites/platforms
-
-- GitHub Codespaces, an online IDE providing users with a virtual machine
-  intended to be a work environment to build and test code
-
-- Graphs: pulse, contributors, commits, code frequency, punch card, network,
-  members
-
-- Email notifications
-
-- Discussions
-
-- Nested task-lists within files
-
-- Visualization of geospatial data
-
-- image preview in many formats
-
-- Security Alerts of known Common Vulnerabilities and Exposures in different
-  packages
-
-- GitHub's Terms of Service do not require public software projects hosted on
-  GitHub to meet the Open Source Definition. The terms of service state, "By
-  setting your repositories to be viewed publicly, you agree to allow others to
-  view and fork your repositories."
 
 
 Definitions
