@@ -1,4 +1,4 @@
-4. Folders
+3. Folders
 ==========
 
 The rivt folder structure organizes documents for reports and sharing. An

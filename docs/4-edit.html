@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="_static/favicon-32x32.png" sizes="151x143" rel="icon" type="image/png">
     <link href="_static/favicon-16x16.png" sizes="151x143" rel="icon" type="image/png">
-    <title>5. Edit &#8212; rivt.info 0.1 documentation</title>
+    <title>4. Edit &#8212; rivt.info 0.1 documentation</title>
   
   
   
@@ -48,11 +48,11 @@
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = '5-edit';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '4-edit';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Publish" href="6-publish.html" />
-    <link rel="prev" title="4. Folders" href="4-folders.html" />
+    <link rel="next" title="5. Publish" href="5-publish.html" />
+    <link rel="prev" title="3. Folders" href="3-folders.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -150,22 +150,22 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="3-vscode.html">
-    VSCode
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="4-folders.html">
-    4. Folders
+  <a class="nav-link nav-internal" href="3-folders.html">
+    3. Folders
   </a>
 </li>
 
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="#">
-    5. Edit
+    4. Edit
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="5-publish.html">
+    5. Publish
   </a>
 </li>
 
@@ -178,8 +178,8 @@
                 <ul id="pst-nav-more-links" class="dropdown-menu">
                     
 <li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="6-publish.html">
-    Publish
+  <a class="nav-link dropdown-item nav-internal" href="6-search.html">
+    6. Search
   </a>
 </li>
 
@@ -274,29 +274,29 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="3-vscode.html">
-    VSCode
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="4-folders.html">
-    4. Folders
+  <a class="nav-link nav-internal" href="3-folders.html">
+    3. Folders
   </a>
 </li>
 
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="#">
-    5. Edit
+    4. Edit
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="6-publish.html">
-    Publish
+  <a class="nav-link nav-internal" href="5-publish.html">
+    5. Publish
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="6-search.html">
+    6. Search
   </a>
 </li>
 
@@ -357,7 +357,7 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">5. Edit</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">4. Edit</span></li>
   </ul>
 </nav>
 </div>
@@ -375,10 +375,10 @@
                 <article class="bd-article">
                   
   <section id="edit">
-<h1>5. Edit<a class="headerlink" href="#edit" title="Link to this heading">#</a></h1>
+<h1>4. Edit<a class="headerlink" href="#edit" title="Link to this heading">#</a></h1>
 <p>A <strong>rivt</strong> file is a Python file (utf-8 ) that includes the import statement</p>
 <p><em>import rivtlib.rivtapi as rv</em></p>
-<p>which provides four primary API functions and formatting commands and tags.</p>
+<p>providing four primary API functions (7 total).</p>
 <section id="api">
 <h2>API<a class="headerlink" href="#api" title="Link to this heading">#</a></h2>
 <p>The API functions take a triple quoted string as the argument. When running in
@@ -617,6 +617,224 @@ on the last line.</p>
 </section>
 <section id="examples">
 <h1>Examples<a class="headerlink" href="#examples" title="Link to this heading">#</a></h1>
+<section id="example-1">
+<h2>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h2>
+<p>API functions start in column one. rivt-strings are indented four spaces (for
+legibility and code folding).A rivt doc is assembled by each function in order
+of the input order. Each function also, optionally, defines a doc section.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">rivtlib.rivtapi</span> <span class="k">as</span> <span class="nn">rv</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">R</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Run function | pass; redact | nocolor; color code</span>
+
+<span class="s2">    The Run function processes shell commands.</span>
+
+<span class="s2">    Each API function defines a new document section. The first line is a</span>
+<span class="s2">    heading line which includes the section heading, a parameter for redacting</span>
+<span class="s2">    sections in a mirror file intended for public sharing, and a parameter for</span>
+<span class="s2">    the background color for the section. If the section heading is preceded by</span>
+<span class="s2">    two dashes (--) the section is continued from the prior section without</span>
+<span class="s2">    introducting a new number.</span>
+
+<span class="s2">    File formatting follows pep8 and ruff. API functions start in column one.</span>
+<span class="s2">    All other lines are indented 4 spaces to facilitate section folding,</span>
+<span class="s2">    bookmarks and legibility.</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Insert function | pass; redact | nocolor</span>
+
+<span class="s2">    The Insert function formats static objects including images, tables,</span>
+<span class="s2">    equations and text.</span>
+
+<span class="s2">    ||text | data01/describe.txt | rivt</span>
+
+<span class="s2">    The table command inserts and formats tabular data from csv or xls files.</span>
+<span class="s2">    The _[t] tag formats and autonumbers table titles.</span>
+
+<span class="s2">    A table title  _[t]</span>
+<span class="s2">    || table | data/file.csv | 60,r</span>
+
+<span class="s2">    The image command inserts and formats image data from png or jpg files. The</span>
+<span class="s2">    _[f] tag formats and autonumbers figures.</span>
+
+<span class="s2">    A figure caption _[f]</span>
+<span class="s2">    || image | data/f1.png | 50</span>
+
+<span class="s2">    Two images may be placed side by side as follows:</span>
+
+<span class="s2">    The first figure caption  _[f]</span>
+<span class="s2">    The second figure caption  _[f]</span>
+<span class="s2">    || image | private/image/f2.png, private/image/f3.png | 45,35</span>
+
+<span class="s2">    The tags _[x] and _[s] format LaTeX and sympy equations:</span>
+
+<span class="s2">    \gamma = </span><span class="se">\f</span><span class="s2">rac</span><span class="si">{5}</span><span class="s2">{x+y} + 3  _[x]</span>
+
+<span class="s2">    x = 32 + (y/2)  _[s]</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Values function |  pass; redact | nocolor</span>
+
+<span class="s2">    The Values fucntion evaluates variables and equations.</span>
+
+<span class="s2">    The equal tag declares a value. A sequence of declared values terminated</span>
+<span class="s2">    with a blank line is formatted as a table.</span>
+
+<span class="s2">    Example of assignment list _[t]</span>
+<span class="s2">    f1 = 10.1 * LBF |LBF, N| a force value</span>
+<span class="s2">    d1 = 12.1 * IN  |IN, CM| a length value</span>
+
+<span class="s2">    An equation tag provides an equation description and number. A colon-equal</span>
+<span class="s2">    tag assigns a value and specifies the result units and the output decimal</span>
+<span class="s2">    places printed in the result and equation.</span>
+
+<span class="s2">    Example equation - Area of circle  _[e]</span>
+<span class="s2">    a1 := 3.14(d1/2)^2 | IN^2, CM^2 | 1,2</span>
+
+<span class="s2">    || declare | data01/values02.csv</span>
+
+<span class="s2">    The declare command imports values from the csv file written by rivt when</span>
+<span class="s2">    processing values in other documents.</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">T</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Tools function | pass; redact | nocolor</span>
+
+<span class="s2">    The Tools function processes Python code.</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+
+<span class="n">rv</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Any text</span>
+
+<span class="s2">    Changing a function to X skips evaluation of that function. Its purposes</span>
+<span class="s2">    include review commenting and debugging.</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">W</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Write function | pass; redact | nocolor</span>
+
+<span class="s2">    The Write function generates docs and reports.</span>
+
+<span class="s2">    | docs |</span>
+
+<span class="s2">    | report |</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="example-2">
+<h2>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h2>
+<p>API functions start in column one. rivt-strings are indented four spaces (for
+legibility and code folding).A rivt doc is assembled by each function in order
+of the input order. Each function also, optionally, defines a doc section.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">rivtlib.rivtapi</span> <span class="k">as</span> <span class="nn">rv</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">R</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Run function | pass; redact | nocolor; color code</span>
+
+<span class="s2">    The Run function processes shell commands.</span>
+
+<span class="s2">    Each API function defines a new document section. The first line is a</span>
+<span class="s2">    heading line which includes the section heading, a parameter for redacting</span>
+<span class="s2">    sections in a mirror file intended for public sharing, and a parameter for</span>
+<span class="s2">    the background color for the section. If the section heading is preceded by</span>
+<span class="s2">    two dashes (--) the section is continued from the prior section without</span>
+<span class="s2">    introducting a new number.</span>
+
+<span class="s2">    File formatting follows pep8 and ruff. API functions start in column one.</span>
+<span class="s2">    All other lines are indented 4 spaces to facilitate section folding,</span>
+<span class="s2">    bookmarks and legibility.</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Insert function | pass; redact | nocolor</span>
+
+<span class="s2">    The Insert function formats static objects including images, tables,</span>
+<span class="s2">    equations and text.</span>
+
+<span class="s2">    ||text | data01/describe.txt | rivt</span>
+
+<span class="s2">    The table command inserts and formats tabular data from csv or xls files.</span>
+<span class="s2">    The _[t] tag formats and autonumbers table titles.</span>
+
+<span class="s2">    A table title  _[t]</span>
+<span class="s2">    || table | data/file.csv | 60,r</span>
+
+<span class="s2">    The image command inserts and formats image data from png or jpg files. The</span>
+<span class="s2">    _[f] tag formats and autonumbers figures.</span>
+
+<span class="s2">    A figure caption _[f]</span>
+<span class="s2">    || image | data/f1.png | 50</span>
+
+<span class="s2">    Two images may be placed side by side as follows:</span>
+
+<span class="s2">    The first figure caption  _[f]</span>
+<span class="s2">    The second figure caption  _[f]</span>
+<span class="s2">    || image | private/image/f2.png, private/image/f3.png | 45,35</span>
+
+<span class="s2">    The tags _[x] and _[s] format LaTeX and sympy equations:</span>
+
+<span class="s2">    \gamma = </span><span class="se">\f</span><span class="s2">rac</span><span class="si">{5}</span><span class="s2">{x+y} + 3  _[x]</span>
+
+<span class="s2">    x = 32 + (y/2)  _[s]</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Values function |  pass; redact | nocolor</span>
+
+<span class="s2">    The Values fucntion evaluates variables and equations.</span>
+
+<span class="s2">    The equal tag declares a value. A sequence of declared values terminated</span>
+<span class="s2">    with a blank line is formatted as a table.</span>
+
+<span class="s2">    Example of assignment list _[t]</span>
+<span class="s2">    f1 = 10.1 * LBF |LBF, N| a force value</span>
+<span class="s2">    d1 = 12.1 * IN  |IN, CM| a length value</span>
+
+<span class="s2">    An equation tag provides an equation description and number. A colon-equal</span>
+<span class="s2">    tag assigns a value and specifies the result units and the output decimal</span>
+<span class="s2">    places printed in the result and equation.</span>
+
+<span class="s2">    Example equation - Area of circle  _[e]</span>
+<span class="s2">    a1 := 3.14(d1/2)^2 | IN^2, CM^2 | 1,2</span>
+
+<span class="s2">    || declare | data01/values02.csv</span>
+
+<span class="s2">    The declare command imports values from the csv file written by rivt when</span>
+<span class="s2">    processing values in other documents.</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">T</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Tools function | pass; redact | nocolor</span>
+
+<span class="s2">    The Tools function processes Python code.</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+
+<span class="n">rv</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Any text</span>
+
+<span class="s2">    Changing a function to X skips evaluation of that function. Its purposes</span>
+<span class="s2">    include review commenting and debugging.</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">W</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Write function | pass; redact | nocolor</span>
+
+<span class="s2">    The Write function generates docs and reports.</span>
+
+<span class="s2">    | docs |</span>
+
+<span class="s2">    | report |</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="id1">
+<h2>Example 1<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">R</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Run Function label | xch; noxch | win; linux; osx</span>
 
 <span class="s2"># The Run function processes shell commands.</span>
@@ -685,6 +903,115 @@ on the last line.</p>
 </pre></div>
 </div>
 </section>
+<section id="id2">
+<h2>Example 2<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>API functions start in column one. rivt-strings are indented four spaces (for
+legibility and code folding).A rivt doc is assembled by each function in order
+of the input order. Each function also, optionally, defines a doc section.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">rivtlib.rivtapi</span> <span class="k">as</span> <span class="nn">rv</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">R</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Run function | pass; redact | nocolor; color code</span>
+
+<span class="s2">    The Run function processes shell commands.</span>
+
+<span class="s2">    Each API function defines a new document section. The first line is a</span>
+<span class="s2">    heading line which includes the section heading, a parameter for redacting</span>
+<span class="s2">    sections in a mirror file intended for public sharing, and a parameter for</span>
+<span class="s2">    the background color for the section. If the section heading is preceded by</span>
+<span class="s2">    two dashes (--) the section is continued from the prior section without</span>
+<span class="s2">    introducting a new number.</span>
+
+<span class="s2">    File formatting follows pep8 and ruff. API functions start in column one.</span>
+<span class="s2">    All other lines are indented 4 spaces to facilitate section folding,</span>
+<span class="s2">    bookmarks and legibility.</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Insert function | pass; redact | nocolor</span>
+
+<span class="s2">    The Insert function formats static objects including images, tables,</span>
+<span class="s2">    equations and text.</span>
+
+<span class="s2">    ||text | data01/describe.txt | rivt</span>
+
+<span class="s2">    The table command inserts and formats tabular data from csv or xls files.</span>
+<span class="s2">    The _[t] tag formats and autonumbers table titles.</span>
+
+<span class="s2">    A table title  _[t]</span>
+<span class="s2">    || table | data/file.csv | 60,r</span>
+
+<span class="s2">    The image command inserts and formats image data from png or jpg files. The</span>
+<span class="s2">    _[f] tag formats and autonumbers figures.</span>
+
+<span class="s2">    A figure caption _[f]</span>
+<span class="s2">    || image | data/f1.png | 50</span>
+
+<span class="s2">    Two images may be placed side by side as follows:</span>
+
+<span class="s2">    The first figure caption  _[f]</span>
+<span class="s2">    The second figure caption  _[f]</span>
+<span class="s2">    || image | private/image/f2.png, private/image/f3.png | 45,35</span>
+
+<span class="s2">    The tags _[x] and _[s] format LaTeX and sympy equations:</span>
+
+<span class="s2">    \gamma = </span><span class="se">\f</span><span class="s2">rac</span><span class="si">{5}</span><span class="s2">{x+y} + 3  _[x]</span>
+
+<span class="s2">    x = 32 + (y/2)  _[s]</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Values function |  pass; redact | nocolor</span>
+
+<span class="s2">    The Values fucntion evaluates variables and equations.</span>
+
+<span class="s2">    The equal tag declares a value. A sequence of declared values terminated</span>
+<span class="s2">    with a blank line is formatted as a table.</span>
+
+<span class="s2">    Example of assignment list _[t]</span>
+<span class="s2">    f1 = 10.1 * LBF |LBF, N| a force value</span>
+<span class="s2">    d1 = 12.1 * IN  |IN, CM| a length value</span>
+
+<span class="s2">    An equation tag provides an equation description and number. A colon-equal</span>
+<span class="s2">    tag assigns a value and specifies the result units and the output decimal</span>
+<span class="s2">    places printed in the result and equation.</span>
+
+<span class="s2">    Example equation - Area of circle  _[e]</span>
+<span class="s2">    a1 := 3.14(d1/2)^2 | IN^2, CM^2 | 1,2</span>
+
+<span class="s2">    || declare | data01/values02.csv</span>
+
+<span class="s2">    The declare command imports values from the csv file written by rivt when</span>
+<span class="s2">    processing values in other documents.</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">T</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Tools function | pass; redact | nocolor</span>
+
+<span class="s2">    The Tools function processes Python code.</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+
+<span class="n">rv</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Any text</span>
+
+<span class="s2">    Changing a function to X skips evaluation of that function. Its purposes</span>
+<span class="s2">    include review commenting and debugging.</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">W</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Write function | pass; redact | nocolor</span>
+
+<span class="s2">    The Write function generates docs and reports.</span>
+
+<span class="s2">    | docs |</span>
+
+<span class="s2">    | report |</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
 
 
                 </article>
@@ -697,20 +1024,20 @@ on the last line.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="4-folders.html"
+       href="3-folders.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">4. Folders</p>
+        <p class="prev-next-title">3. Folders</p>
       </div>
     </a>
     <a class="right-next"
-       href="6-publish.html"
+       href="5-publish.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Publish</p>
+        <p class="prev-next-title">5. Publish</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -733,14 +1060,20 @@ on the last line.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">5. Edit</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">4. Edit</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api">API</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#syntax">Syntax</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#commands">Commands</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tags">Tags</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">Examples</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">Examples</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Example 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Example 2</a></li>
+</ul>
+</li>
 </ul>
 
   </nav></div>
@@ -749,7 +1082,7 @@ on the last line.</p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/5-edit.rst.txt"
+      <li><a href="_sources/4-edit.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div></div>

@@ -4,35 +4,35 @@
 **rivt** is a markup language and framework for writing and publishing
 engineering documents with an emphasis on template sharing and reuse. Software
 for engineering documents is already widely available but there are barriers to
-sharing and modifying source files between programs and versions. These include
-high software and update costs, and incompatibility between programs, upgrades
-and operating systems. The current situation requires repeated unproductive
-rewrites of similar engineering documents to accomodate different software
-programs. Sharing calculation details for new and developing technologies is
-also restricted by these barriers.
+sharing and modifying source files between programs and versions. The barriers
+include high software and update costs, and incompatibility between programs,
+upgrades and operating systems. The current situation requires repeated
+unproductive rewrites of similar engineering documents to accomodate different
+software programs. Sharing calculation details for new and developing
+technologies is also restricted by these barriers.
 
 In addition, existing programs are generally not designed to produce collated
 reports. Engineering reports are typically assembled from a variety of
-modeling, calculation, standards and other published documents. **rivt** is
-designed to organize inputs from various sources into a single organized
-document. 
+modeling, calculations, standards and other published documents that need to be
+organized and compiled. **rivt** is designed to compile inputs from various
+sources into a single organized document.
 
 The table below summarizes the **rivt** features that address these
-longstanding and frustrating limitations to collaboration and efficient
+longstanding and frustrating limitations to efficient collaboration and
 publishing.
 
 **Comparison of Program Features**
 
-=========  ======== =========== ========== ======== ======== ======= ======== ======= 
-Program     Opn Src  Compat.[1]  Vers.[2]  Text[3]   All-OS  Remote   Local   Reports  
-=========  ======== =========== ========== ======== ======== ======= ======== ======= 
+========== ========= ========== ========== ======== ======== ======= ======== ======== 
+Program    Open Src  Compat.[1]  Vers.[2]  Text[3]  All-OS   Remote   Local   Reports  
+========== ========= ========== ========== ======== ======== ======= ======== ======== 
 Matlab     no        no          no          no      no       no      yes      no 
 Mathcad    no        no          no          no      no       no      yes      no 
 Mathemat.  no        no          no          no      no       no      yes      no 
 Online     no        no          no          no      no       yes     no       no 
 Jupyter    yes       yes         no          no      yes      yes     yes      no
-**rivt**   **yes**  **yes**     **yes**     **yes**  **yes** **yes** **yes**  **yes** 
-=========  ======== =========== ========== ======== ======== ======= ======== =======  
+**rivt**   **yes**   **yes**    **yes**    **yes**  **yes**  **yes** **yes**  **yes** 
+========== ========= ========== ========== ======== ======== ======= ======== ========  
 
 [1] Forward, backward file compatiblilty
 

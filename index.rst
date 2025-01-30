@@ -42,7 +42,7 @@ framework for **rivt**.
 
     1-intro.rst
     2-install.rst
-    3-vscode.rst
-    4-folders.rst
-    5-edit.rst
-    6-publish.rst
+    3-folders.rst
+    4-edit.rst
+    5-publish.rst
+    6-search.rst
