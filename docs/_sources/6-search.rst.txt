@@ -58,7 +58,7 @@ Organizations (comma separated)
 
 
 GitHub
-======
+-------
 
 The primary purpose of GitHub is to facilitate the version control and issue
 tracking aspects of software development. Labels, milestones, responsibility
@@ -69,9 +69,6 @@ between the requested changes and approve them. In Git terminology, this action
 is called "committing" and one instance of it is a "commit." A history of all
 commits is kept and can be viewed at a later time.
 
-
-Features
---------
 
 GitHub supports the following formats and features:
 

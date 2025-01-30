@@ -14,18 +14,6 @@ The rivt VSCode profile includes shortcuts for common editing functions and
 snippets for API functions and commands.
 
 
-Publish to Github
------------------
-
-**rivt** uses the `MIT open source license <https://opensource.org/license/mit/>`_
-
-VSCode
-======
-
-
-The rivt VSCode profile includes extensions, snippets and shortcuts for common
-editing functions.
-
 VSCode Profiles
 ----------------
 

@@ -127,10 +127,6 @@ rv.I        **_[[L]]**       start latex block (latex pdf)
 rv.I        **_[[Q]]**       end block
 ========== =============== =====================================================
   
-Examples
-==========
-
-Some examples
 
 Example 1
 ---------
