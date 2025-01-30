@@ -14,24 +14,6 @@ The rivt VSCode profile includes shortcuts for common editing functions and
 snippets for API functions and commands.
 
 
-API function snippets
-----------------------
-
-xxx
-
-========= =======
- snippet
-========= =======
-    ini    x
-    app    x
-    img    x
-    tbl    x
-    dec    x
-    txt    x
-========= =======
-
-
-
 Publish to Github
 -----------------
 
@@ -41,57 +23,13 @@ VSCode
 ======
 
 
-snippets
---------
+The rivt VSCode profile includes extensions, snippets and shortcuts for common
+editing functions.
 
-text
-
-
-command snippets
+VSCode Profiles
 ----------------
 
-some text
-
-
-
-VSCode profile
-
-============== ==============================================================
-Snippets/Keys            description
-============== ==============================================================
-run                 API Run function
-ins                 API Insert function   
-val                 API Values function
-too                 API Tools function
-wri                 API Write function
-alt+q               rewrap paragraph with hard line feeds (80 default)
-alt+p               open file under cursor
-alt+.               select correct spelling under cursor
-alt+8               insert date
-alt+9               insert time
-ctl+1               focus on first editor
-ctl+2               focus on next editor
-ctl+3               focus on previous editor
-ctl+8               focus on explorer pane
-ctl+9               focus on github pane    
-ctl+alt+x           reload window
-ctl+alt+[           reload window
-ctl+alt+]           unfold all code
-ctl+alt+u           unfold all code
-ctl+alt+f           fold code level 2 (rivt sections visible)
-ctl+alt+a           fold code - all levels
-ctl+alt+t           toggle local fold
-ctl+alt+e           toggle explorer sort order
-ctl+alt+s           toggle spell check
-ctl+alt+g           next editor group
-ctl+shift+u         open URL under cursor in browser
-ctl+shift+s         open GitHub README search for rivt
-ctl+shift+a         commit all 
-ctl+shift+z         commit the current editor
-ctl+shift+x         post to remote   
-============== ==============================================================
-
-
+Tables.
 
 ============================================== ===============================
 Extensions                                       description
@@ -166,12 +104,44 @@ yzane.markdown-pdf                                  markdown to pdf
 yzhang.markdown-all-in-one                          markdown tools
 ============================================== ===============================
 
+---------------------------------------------------------------------------
 
+============== ==============================================================
+Snippets/Keys            description
+============== ==============================================================
+run                 API Run function
+ins                 API Insert function   
+val                 API Values function
+too                 API Tools function
+wri                 API Write function
+alt+q               rewrap paragraph with hard line feeds (80 default)
+alt+p               open file under cursor
+alt+.               select correct spelling under cursor
+alt+8               insert date
+alt+9               insert time
+ctl+1               focus on first editor
+ctl+2               focus on next editor
+ctl+3               focus on previous editor
+ctl+8               focus on explorer pane
+ctl+9               focus on github pane    
+ctl+alt+x           reload window
+ctl+alt+[           reload window
+ctl+alt+]           unfold all code
+ctl+alt+u           unfold all code
+ctl+alt+f           fold code level 2 (rivt sections visible)
+ctl+alt+a           fold code - all levels
+ctl+alt+t           toggle local fold
+ctl+alt+e           toggle explorer sort order
+ctl+alt+s           toggle spell check
+ctl+alt+g           next editor group
+ctl+shift+u         open URL under cursor in browser
+ctl+shift+s         open GitHub README search for rivt
+ctl+shift+a         commit all 
+ctl+shift+z         commit the current editor
+ctl+shift+x         post to remote   
+============== ==============================================================
 
-Profiles
---------
-
-The rivt VSCode profile includes extensions, snippets and shortcuts for common editing functions.
+------------------------------------------------------------------------
 
 ============== ===========================================================
 Keystroke                   Description
@@ -204,8 +174,6 @@ ctl+shift+z          commit current editor
 ctl+shift+x          post to remote   
 ============== ===========================================================
 
-
-VSCode profile
 -----------------------------------------------------------------------------
 
 ============== ==============================================================

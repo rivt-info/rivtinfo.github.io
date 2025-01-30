@@ -21,8 +21,8 @@ The table below summarizes the **rivt** features that address these
 longstanding and frustrating limitations to efficient collaboration and
 publishing.
 
-**Comparison of Program Features**
-
+Table: Comparison of Program Features
+-------------------------------------
 ========== ========= ========== ========== ======== ======== ======= ======== ======== 
 Program    Open Src  Compat.[1]  Vers.[2]  Text[3]  All-OS   Remote   Local   Reports  
 ========== ========= ========== ========== ======== ======== ======= ======== ======== 
@@ -41,7 +41,7 @@ Jupyter    yes       yes         no          no      yes      yes     yes      n
 [3] Readable text input files
 
 Definitions
-===========
+-----------
 
 A **rivt** file is a Python file (.py) that imports the **rivtlib** api:: 
 
@@ -70,8 +70,8 @@ A **rivt report** is a collated collection of rivt docs.
 
 **rivtzip** is a portable, free and open source editing and publishing framework.
 
-Distribution
-============
+Licenses
+--------
 
 **rivtlib** is distributed under the MIT license and can be installed through
 PyPI or **rivtzip**, which is downloaded as portable, Windows

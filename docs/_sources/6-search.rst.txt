@@ -1,4 +1,3 @@
-
 6. Search
 ==========
 
@@ -173,10 +172,8 @@ repo
 short for repository
 
 
-
 FAQ
 ===
-
 
 
 Questions
