@@ -40,6 +40,7 @@ Jupyter    yes       yes         no          no      yes      yes     yes      n
 
 [3] Readable text input files
 
+
 Definitions
 -----------
 
@@ -70,8 +71,80 @@ A **rivt report** is a collated collection of rivt docs.
 
 **rivtzip** is a portable, free and open source editing and publishing framework.
 
-Licenses
---------
+
+doc
+~~~
+the output file (document) after processing a rivt file
+
+division
+~~~~~~~~
+open source markdown language for writing, organizing and sharing engineering documents
+
+report
+~~~~~~~~
+open source markdown language for writing, organizing and sharing engineering documents asdfasf sdflkjsadf sd fsaedlfk fsadlf sa
+
+section 
+~~~~~~~~
+open source markdown language for writing, organizing and sharing engineering documents
+
+open source editing and publishing framework for rivtlib Python library for processing 
+
+rivtpub
+~~~~~~~~
+project folder containing private files not uploaded when sharing templates
+
+rivt
+~~~~~~~~
+open source markdown language for organizing, modifying and publishing
+engineering documents
+
+rivtlib
+~~~~~~~~
+Python library for processing **rivt** files. It outputs formatted documents in
+a serveral different formats. 
+
+rivtzip
+~~~~~~~~
+an editing and publishing framework for rivt using additional open source
+programs. **rivt** works with both single file documents and extensive reports
+with hundreds of files.
+
+namespace
+~~~~~~~~~~
+a `name <https://en.wikipedia.org/wiki/Namespace>`_ that provides a scope for
+functions, variables, etc. Namespaces are used to organize code into logical
+groups and to prevent name collisions that can occur especially when your code
+base includes multiple libraries. In Python, namespaces are defined by the
+individual modules.
+  
+GitHub
+~~~~~~~~
+version control
+
+repo
+~~~~~~~~
+short for repository
+
+
+FAQ
+---
+
+
+Questions
+~~~~~~~~~~
+
+1.0 - Which open source licenses apply to rivtzip? `A1.0`_  
+
+
+2.0 - aslkfas fdasdf asdflk sdfljk asdflk jasdlf sadf asdflk sdflkj sdflkj saf `A2.0`_  
+
+
+Answers
+~~~~~~~~
+
+.. _A1.0: 
+
 
 **rivtlib** is distributed under the MIT license and can be installed through
 PyPI or **rivtzip**, which is downloaded as portable, Windows
@@ -86,6 +159,13 @@ zip files. The rivtzip framework includes five established technologies:
 - **Git, GitHub** - for version control
 
 - **QCAD** - for diagramming
+
+
+
+
+.. _A2.0: 
+
+the answer to question 2.0 
 
 
 
