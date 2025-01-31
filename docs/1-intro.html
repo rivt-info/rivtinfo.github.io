@@ -478,6 +478,14 @@ publishing.</p>
 </section>
 <section id="definitions">
 <h2>Definitions<a class="headerlink" href="#definitions" title="Link to this heading">#</a></h2>
+<p>A <strong>rivt file</strong> is a Python file that imports the <strong>rivtlib</strong> package.</p>
+<p>A <strong>rivt doc</strong> (document) is a text, HTML or PDF output file.</p>
+<p>A <strong>rivt report</strong> is a collated collection of rivt docs.</p>
+<p><strong>rivtlib</strong> is a <a class="reference external" href="https://rivtlib.net">Python library</a> that generates
+<strong>rivt docs</strong> and <strong>reports</strong>.</p>
+<p>The <strong>rivtlib</strong> source code is <a class="reference external" href="https://github.com/rivtlib-net/rivtlib">here</a></p>
+<p><strong>rivtzip</strong> is a portable, open source editing and publishing framework.</p>
+<hr class="docutils" />
 <p>A <strong>rivt</strong> file is a Python file (.py) that imports the <strong>rivtlib</strong> api:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">rivtlib.api</span> <span class="k">as</span> <span class="nn">rv</span>
 </pre></div>
@@ -491,12 +499,9 @@ publishing.</p>
 <span class="n">rv</span><span class="o">.</span><span class="n">W</span><span class="p">(</span><span class="n">rS</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">Write</span><span class="p">)</span> <span class="n">Write</span> <span class="n">formatted</span> <span class="n">rivt</span> <span class="n">documents</span>
 </pre></div>
 </div>
-<p>where <strong>rS</strong> is a triple quoted string incorporationg rivt markup syntax.</p>
-<p><strong>rivtlib</strong> is a Python library that generates <strong>rivt docs</strong> and <strong>reports</strong>.</p>
-<p>A <strong>rivt file</strong> is a Python file that imports the <strong>rivtlib</strong> api.</p>
-<p>A <strong>rivt doc</strong> (document) is a text, HTML or PDF file output from a rivt file.</p>
-<p>A <strong>rivt report</strong> is a collated collection of rivt docs.</p>
-<p><strong>rivtzip</strong> is a portable, free and open source editing and publishing framework.</p>
+</section>
+<section id="terms">
+<h2>Terms<a class="headerlink" href="#terms" title="Link to this heading">#</a></h2>
 <section id="doc">
 <h3>doc<a class="headerlink" href="#doc" title="Link to this heading">#</a></h3>
 <p>the output file (document) after processing a rivt file</p>
@@ -562,7 +567,7 @@ individual modules.</p>
 <h3>Answers<a class="headerlink" href="#answers" title="Link to this heading">#</a></h3>
 <p id="a1-0"><strong>rivtlib</strong> is distributed under the MIT license and can be installed through
 PyPI or <strong>rivtzip</strong>, which is downloaded as portable, Windows
-zip files. The rivtzip framework includes five established technologies:</p>
+zip files. The rivtzip framework includes five open source projects:</p>
 <ul class="simple">
 <li><p><strong>VSCode and extensions</strong> - for editing and processing</p></li>
 <li><p><strong>Python and libraries</strong> - for analysis and formatting</p></li>
@@ -623,7 +628,8 @@ zip files. The rivtzip framework includes five established technologies:</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-comparison-of-program-features">Table: Comparison of Program Features</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#terms">Terms</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#doc">doc</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#division">division</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#report">report</a></li>

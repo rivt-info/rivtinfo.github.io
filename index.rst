@@ -15,6 +15,15 @@
     </embed>
 
 
+User Documentation
+====================
+
+**rivt** is a markup language and open source framework for writing and
+publishing engineering documents, with an emphasis on template sharing and
+reuse. **rivtlib** is a `Python library <https://rivtlib.net>`_ that processes
+**rivt** files. **rivtzip** is a portable editing framework incorporating
+**rivtlib**.
+
 .. toctree::
     :maxdepth: 1
     :caption: Contents
@@ -25,19 +34,3 @@
     4-edit.rst
     5-publish.rst
     6-search.rst
-
-
-User Documentation
-====================
-
-**rivt** is a markup language and open source framework for writing and
-publishing engineering documents, with an emphasis on template sharing and
-reuse.
-
-    - A **rivt file** is a Python file that imports the **rivtlib** package.
-    - A **rivt doc** (document) is a text, HTML or PDF output file. 
-    - A **rivt report** is a collated collection of rivt docs.
-    - **rivtlib** is a `Python library <https://rivtlib.net>`_ that generates **rivt docs** and **reports**. 
-    - The **rivtlib** source code is `here <https://github.com/rivtlib-net/rivtlib>`_
-    - **rivtzip** is a portable, open source editing and publishing framework.
-

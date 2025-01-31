@@ -44,6 +44,23 @@ Jupyter    yes       yes         no          no      yes      yes     yes      n
 Definitions
 -----------
 
+
+A **rivt file** is a Python file that imports the **rivtlib** package.
+
+A **rivt doc** (document) is a text, HTML or PDF output file. 
+
+A **rivt report** is a collated collection of rivt docs.
+
+**rivtlib** is a `Python library <https://rivtlib.net>`_ that generates 
+**rivt docs** and **reports**. 
+
+The **rivtlib** source code is `here <https://github.com/rivtlib-net/rivtlib>`_
+
+**rivtzip** is a portable, open source editing and publishing framework.
+
+--------------------------------------------------------------------------------
+
+
 A **rivt** file is a Python file (.py) that imports the **rivtlib** api:: 
 
     import rivtlib.api as rv
@@ -58,19 +75,8 @@ which exposes 6 API functions ::
     rv.X(rS) - (eXclude) Skip rivt-string processing 
     rv.W(rS) - (Write) Write formatted rivt documents 
 
-    
-where **rS** is a triple quoted string incorporationg rivt markup syntax.
-
-**rivtlib** is a Python library that generates **rivt docs** and **reports**.
-
-A **rivt file** is a Python file that imports the **rivtlib** api.
-
-A **rivt doc** (document) is a text, HTML or PDF file output from a rivt file. 
-
-A **rivt report** is a collated collection of rivt docs.
-
-**rivtzip** is a portable, free and open source editing and publishing framework.
-
+Terms
+-----
 
 doc
 ~~~
@@ -148,7 +154,7 @@ Answers
 
 **rivtlib** is distributed under the MIT license and can be installed through
 PyPI or **rivtzip**, which is downloaded as portable, Windows
-zip files. The rivtzip framework includes five established technologies:
+zip files. The rivtzip framework includes five open source projects:
 
 - **VSCode and extensions** - for editing and processing
 
