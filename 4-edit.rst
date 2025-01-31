@@ -33,7 +33,7 @@ API         Name             Purpose
 Each API function defines a document section. API functions may be used in any
 order or frequency. 
 
-**Syntax**
+Syntax
 ~~~~~~~~~~~
 
 The first line of each function includes a section label (that also may be a
@@ -49,7 +49,7 @@ formatting. Any text not defined by commands or tags is passed through as
 COMMANDS and TAGS are based on the 
 `docutils Python lbrary <https://docutils.sourceforge.io/>`_.
 
-**Commands**
+Commands
 ~~~~~~~~~~~~~
 
 Commands read and write external files. They start in the first column with
@@ -85,7 +85,7 @@ rv.W        || **WRITE** | docs | pdf; tex; txt; html       pdf is a text pdf
 rv.W        || **REPORT** | docs | pdf; tex; txt; html      tex is a latex pdf
 =========== ============================================== =====================
 
-**Tags**
+Tags
 ~~~~~~~~~
 
 **Line tags** are denoted with _[**TAG**] at the end of a line. They format and
@@ -131,7 +131,7 @@ rv.I        **_[[Q]]**       end block
 **Examples**
 ------------
 
-**Example 1**
+Example 1
 ~~~~~~~~~~~~~~
 
 API functions start in column one. rivt-strings are indented four spaces (for
@@ -241,7 +241,7 @@ of the input order. Each function also, optionally, defines a doc section.
     
         """)
 
-**Example 2**
+Example 2
 ~~~~~~~~~~~~~~
 
 API functions start in column one. rivt-strings are indented four spaces (for
