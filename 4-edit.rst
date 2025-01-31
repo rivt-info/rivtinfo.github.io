@@ -34,7 +34,7 @@ Each API function defines a document section. API functions may be used in any
 order or frequency. 
 
 **Syntax**
------------
+~~~~~~~~~~~
 
 The first line of each function includes a section label (that also may be a
 section title) followed by formatting parameters. New sections may be labeled
@@ -50,7 +50,7 @@ COMMANDS and TAGS are based on the
 `docutils Python lbrary <https://docutils.sourceforge.io/>`_.
 
 **Commands**
-------------
+~~~~~~~~~~~~~
 
 Commands read and write external files. They start in the first column with
 double vertical bars ( || ) followed by the command name and parameters. Parameters are
@@ -86,7 +86,7 @@ rv.W        || **REPORT** | docs | pdf; tex; txt; html      tex is a latex pdf
 =========== ============================================== =====================
 
 **Tags**
----------
+~~~~~~~~~
 
 **Line tags** are denoted with _[**TAG**] at the end of a line. They format and
 evaluate a line of text. **Block tags** format and evaluate a multi-line block
@@ -128,8 +128,11 @@ rv.I        **_[[Q]]**       end block
 ========== =============== =====================================================
   
 
+**Examples**
+------------
+
 **Example 1**
---------------
+~~~~~~~~~~~~~~
 
 API functions start in column one. rivt-strings are indented four spaces (for
 legibility and code folding).A rivt doc is assembled by each function in order
@@ -239,7 +242,7 @@ of the input order. Each function also, optionally, defines a doc section.
         """)
 
 **Example 2**
----------------
+~~~~~~~~~~~~~~
 
 API functions start in column one. rivt-strings are indented four spaces (for
 legibility and code folding).A rivt doc is assembled by each function in order
