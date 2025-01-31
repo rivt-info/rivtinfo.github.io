@@ -15,6 +15,18 @@
     </embed>
 
 
+.. toctree::
+    :maxdepth: 1
+    :caption: Contents
+
+    1-intro.rst
+    2-install.rst
+    3-folders.rst
+    4-edit.rst
+    5-publish.rst
+    6-search.rst
+
+
 User Documentation
 ====================
 
@@ -29,13 +41,3 @@ reuse.
     - The **rivtlib** source code is `here <https://github.com/rivtlib-net/rivtlib>`_
     - **rivtzip** is a portable, open source editing and publishing framework.
 
-.. toctree::
-    :maxdepth: 1
-    :caption: Contents
-
-    1-intro.rst
-    2-install.rst
-    3-folders.rst
-    4-edit.rst
-    5-publish.rst
-    6-search.rst
