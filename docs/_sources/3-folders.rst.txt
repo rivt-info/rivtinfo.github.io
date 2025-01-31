@@ -1,5 +1,5 @@
-3. Folders
-==========
+**3. Folders**
+==============
 
 The rivt folder structure organizes documents for reports and sharing. An
 initial folder structure can be taken from an existing project or generated
@@ -60,8 +60,8 @@ config.ini. Resource files are stored in user-defined sub-folders which
 organize the data allow for separation of public and private data.
 
 
-rivt folders
---------------
+**rivt folders**
+----------------
 
 ::
 

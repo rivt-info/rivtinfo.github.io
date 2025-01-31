@@ -1,10 +1,10 @@
-5. Publish
-===========
+**5. Publish**
+===============
 
 publish x
 
-Publish to Github
------------------
+**Publish to Github**
+----------------------
 
 The primary purpose of GitHub is to facilitate the version control and issue
 tracking aspects of software development. Labels, milestones, responsibility

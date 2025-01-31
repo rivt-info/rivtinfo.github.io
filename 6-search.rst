@@ -1,14 +1,16 @@
-6. Search
-==========
+**6. Search**
+=============
 
 This section provides a convenient search interface for **rivt** files
 distributed across GitHub. It searches the full text of the **rivt** root
 README file which contains the rivt report in text form. For advanced searching
-the GitHub interface is `here <https://github.com/search>`_.
+use the GitHub interface  `here <https://github.com/search>`_.
 
-[S] Search GitHub (Ctrl+Enter)   [C] Clear input (Ctrl+R)
 
-Example: **solar+steel+frame** is passed to GitHub as **rivt+solar+steel+frame**
+
+[
+
+**Search Terms**  ( [S] Search GitHub (Ctrl+Enter) __ [C] Clear input (Ctrl+R) )
 
 .. raw:: html
 
@@ -36,14 +38,19 @@ Example: **solar+steel+frame** is passed to GitHub as **rivt+solar+steel+frame**
 
     <hr>
 
-Restrict search within GitHub organizations (comma separated)
+Example: **solar+steel+frame** is passed to GitHub as **rivt+solar+steel+frame**
+
+
+Restrict search within listed GitHub organizations (comma separated)
+
+**Organizations**
 
 .. raw:: html    
     
-    <input type="text" id="terms" name="terms" size=30 style="height:40px;font-size:14pt; font-weight: normal">
+    <input type="text" id="terms" name="terms" size=40 style="height:38px;font-size:14pt; font-weight: normal">
 
     <hr>
 
-    Organization Search Terms<br>
+    <b>Search Terms</b><br><br>
     <button class="button" id="searchBtn" onclick="searchOrg()">S</button> <button class="button" id="clearBtn" onclick="clearRivt()">C</button><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal">
 

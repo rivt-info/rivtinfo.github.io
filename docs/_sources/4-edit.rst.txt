@@ -1,5 +1,5 @@
-4. Edit
-=========
+**4. Edit**
+============
 
 A **rivt** file is a Python file (utf-8 ) that includes the import statement
 
@@ -7,8 +7,8 @@ A **rivt** file is a Python file (utf-8 ) that includes the import statement
 
 providing four primary API functions (7 total). 
 
-API
----
+**API**
+-------
 
 The API functions take a triple quoted string as the argument. When running in
 an IDE (e.g. VSCode) the file may be executed interactively. Interactive output
@@ -33,8 +33,8 @@ API         Name             Purpose
 Each API function defines a document section. API functions may be used in any
 order or frequency. 
 
-Syntax
-------
+**Syntax**
+-----------
 
 The first line of each function includes a section label (that also may be a
 section title) followed by formatting parameters. New sections may be labeled
@@ -49,8 +49,8 @@ formatting. Any text not defined by commands or tags is passed through as
 COMMANDS and TAGS are based on the 
 `docutils Python lbrary <https://docutils.sourceforge.io/>`_.
 
-Commands
---------
+**Commands**
+------------
 
 Commands read and write external files. They start in the first column with
 double vertical bars ( || ) followed by the command name and parameters. Parameters are
@@ -85,8 +85,8 @@ rv.W        || **WRITE** | docs | pdf; tex; txt; html       pdf is a text pdf
 rv.W        || **REPORT** | docs | pdf; tex; txt; html      tex is a latex pdf
 =========== ============================================== =====================
 
-Tags
-----
+**Tags**
+---------
 
 **Line tags** are denoted with _[**TAG**] at the end of a line. They format and
 evaluate a line of text. **Block tags** format and evaluate a multi-line block
@@ -128,8 +128,8 @@ rv.I        **_[[Q]]**       end block
 ========== =============== =====================================================
   
 
-Example 1
----------
+**Example 1**
+--------------
 
 API functions start in column one. rivt-strings are indented four spaces (for
 legibility and code folding).A rivt doc is assembled by each function in order
@@ -238,8 +238,8 @@ of the input order. Each function also, optionally, defines a doc section.
     
         """)
 
-Example 2
----------
+**Example 2**
+---------------
 
 API functions start in column one. rivt-strings are indented four spaces (for
 legibility and code folding).A rivt doc is assembled by each function in order
