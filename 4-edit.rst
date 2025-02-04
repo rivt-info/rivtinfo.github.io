@@ -25,15 +25,15 @@ API         Name             Purpose
 **rv.I**    Insert          Insert static resources 
 **rv.V**    Value           Calculate values
 **rv.T**    Tool            Python functions
-**rv.X**    Exclude         Skip rivt function (editing)
-**rv.W**    Write           Write docs or reports
-**rv.Q**    Quit            Exit program
+rv.X        Exclude         Skip rivt function (editing)
+rv.W        Write           Write docs or reports
+rv.Q        Quit            Exit program
 =========== ============ ===================================
 
-Each API function defines a document section. API functions may be used in any
+Each API function defines a document section which may be arranged in any
 order or frequency. 
 
-Syntax
+**Syntax**
 ~~~~~~~~~~~
 
 The first line of each function includes a section label (that also may be a
@@ -49,7 +49,7 @@ formatting. Any text not defined by commands or tags is passed through as
 COMMANDS and TAGS are based on the 
 `docutils Python lbrary <https://docutils.sourceforge.io/>`_.
 
-Commands
+**Commands**
 ~~~~~~~~~~~~~
 
 Commands read and write external files. They start in the first column with
@@ -59,79 +59,81 @@ separated by a single bar ( | ) and are of the form:
 **|| COMMAND | relative file path | param1, param2**
 
 In the tables below parameter options are separated with semi-colons and list
-elements are separated with commas. File locations are specified using paths
-relative to the rivt file location and folder structure. Folder organization is
-described `here <5-folders.html>`_.
+elements are separated with commas. Options are in parenthesis. File locations
+are specified using paths relative to the rivt file location and folder
+structure. Folder organization is described `here <5-folders.html>`_.
 
-**Read Commands**
+**Read File Commands**
 
-=========== ============================================== =====================  
-Scope                       Commands                          File options
------------ ---------------------------------------------- ---------------------
-rv.I, rv.V  || **IMAGE**  | rel. pth | caption, scale       .png, .jpg
-rv.I, rv.V  || **IMG2**  | rel. pth | cap1, cap2, sc1, sc2  .png, .jpg
-rv.I, rv.V  || **TABLE** | rel. pth | col width, l;c;r      .csv, .txt, .xls
-rv.I        || **TEXT** | rel. pth |  plain; rivt           .txt
-rv.V        || **EVAL** | rel. pth |  table; notable        .csv, .txt, .xls
-=========== ============================================== =====================
+=========== ======================================================= ==================
+Scope                       Commands                                 File options
+----------- ------------------------------------------------------- ------------------
+rv.I; rv.V   || **TABLE** | rel. pth | col width, l;c;r, (_T)       .csv, .txt, .xls
+rv.I; rv.V   || **IMG**  | rel. pth | caption, scale, (_F)          .png, .jpg
+rv.I; rv.V   || **IMG2**  | rel. pth | cap1, cap2, sc1, sc2, (_F)   .png, .jpg
+rv.V         || **VCFG** | rel. pth | rel. pth | dec1, dec2         .csv
+rv.V         || **VALS** | rel. pth |  2                            .csv
+rv.I         || **TEXT** | rel. pth |  plain; rivt                  .txt
+rv.I         || **APPEND** | rel. pth | num; nonum                  .pdf
+=========== ======================================================= ==================
 
-**Write Commands**
+**Write File Commands**
 
-=========== ============================================== =====================  
-Scope                        Commands                          Notes / Options
------------ ---------------------------------------------- ---------------------
-rv.I        || **APPEND** | rel. pth | num; nonum           .pdf
-rv.W        || **WRITE** | docs | pdf; tex; txt; html       pdf is a text pdf
-rv.W        || **REPORT** | docs | pdf; tex; txt; html      tex is a latex pdf
-=========== ============================================== =====================
+=========== ============================================ =======================
+Scope                        Commands                        Notes / Options
+----------- -------------------------------------------- -----------------------
+rv.W        || **WRITE** | docs | pdf; tex; txt; html      pdf is text pdf
+rv.W        || **REPORT** | docs | pdf; tex; txt; html     tex is latex pdf
+rv.V         a **=** 1+1 | unit | reference (_[E])         **=** is command tag
+=========== ============================================ =======================
 
-Tags
-~~~~~~~~~
+**Tags**
+~~~~~~~~
 
-**Line tags** are denoted with _[**TAG**] at the end of a line. They format and
-evaluate a line of text. **Block tags** format and evaluate a multi-line block
-of text. They begin with _[[**TAG**]] in the first line and end with _[[**Q**]]
-on the last line.
+**Tags** are added at the end of lines. **Line tags** are denoted with
+_[**TAG**]. They format and evaluate a line of text. **Block tags** are denoted
+with _[[**TAG**]] on the first line. They evaluate a multi-line text block and
+end with _[[**Q**]] on the last line of the block.
 
 ================ ======================= =======================================
 Scope             Line Tags                    Description
 ---------------- ----------------------- ---------------------------------------
-rv.I, rv.V        **_[PAGE]**              new page
-rv.I, rv.V        text _[**C**]            center text 
-rv.I, rv.V        caption **_[F]**         autonumber image [1]
-rv.I, rv.V        title **_[T]**           autonumber table
-rv.I, rv.V        text **_[#]**            autonumber footnote
-rv.I, rv.V        descrip **_[D]**         footnote description
-rv.V              label **_[E]**           autonumber, format equation
-rv.V              **=**                    evaluate: a = 1+1 | unit | reference
-rv.I              text _[**B**]            center bold text (latex pdf)
-rv.I              equation **_[S]**        format Python math 
-rv.I              equation **_[N]**        format, autonumber Python math 
-rv.I              **_[address, label]**    url, internal reference (latex pdf)
+rv.I; rv.V             _[**PAGE**]         new page
+rv.I; rv.V           text _[**C**]         center text 
+rv.I; rv.V        caption _[**F**]         autonumber, format image [1]
+rv.I; rv.V          title _[**T**]         autonumber, format table [2]
+rv.V                label _[**E**]         autonumber, format equation [3]
+rv.I             equation _[**N**]         autonumber, format Python math 
+rv.I             equation _[**S**]         format Python math 
+rv.I                 text _[**#**]         autonumber footnote
+rv.I              descrip _[**D**]         footnote description
+rv.I              --------_[**H**]         horizontal line
+rv.I                 text _[**B**]         center bold text (latex pdf)
+rv.I              _[**address, label**]    url, internal reference (latex pdf)
 ================ ======================= =======================================
 
-[1] Figure tag is attached to caption parameter in the **IMAGE** command
+[1] Figure tag may be attached to **IMAGE** command
+[2] Table tag may be attached to **TABLE** command
 
-
-========== =============== =====================================================
+=========== =============== =====================================================
 Scope        Block Tags      Description
----------- --------------- -----------------------------------------------------
-rv.V        _[[**E**]]       start evaluation block 
-rv.I        _[[**P**]]       start plain text block
-rv.I        _[[**B**]]       start bold text block  (latex pdf)
-rv.I        **_[[C]]**       start center text block (latex pdf)
-rv.I        **_[[I]]**       start italic text block (latex pdf)
-rv.I        **_[[O]]**       start bold indent text block (latex pdf)
-rv.I        **_[[T]]**       start italic indent block (latex pdf)
-rv.I        **_[[L]]**       start latex block (latex pdf)
-rv.I        **_[[Q]]**       end block
-========== =============== =====================================================
+----------- --------------- -----------------------------------------------------
+rv.I; rv.V   _[[**Q**]]       end block
+rv.V;        _[[**V**]]       start values block
+rv.I         _[[**P**]]       start plain text block
+rv.I         _[[**N**]]       start indent text block 
+rv.I         _[[**B**]]       start bold text block  (latex pdf)
+rv.I         _[[**I**]]       start italic text block (latex pdf)
+rv.I         _[[**O**]]       start indent bold text block (latex pdf)
+rv.I         _[[**T**]]       start indent italic block (latex pdf)
+rv.I         _[[**L**]]       start latex block (latex pdf)
+=========== =============== =====================================================
   
 
 **Examples**
 ------------
 
-Example 1
+**Example 1**
 ~~~~~~~~~~~~~~
 
 API functions start in column one. rivt-strings are indented four spaces (for
@@ -241,7 +243,7 @@ of the input order. Each function also, optionally, defines a doc section.
     
         """)
 
-Example 2
+**Example 2**
 ~~~~~~~~~~~~~~
 
 API functions start in column one. rivt-strings are indented four spaces (for
