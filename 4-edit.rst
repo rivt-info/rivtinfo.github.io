@@ -53,80 +53,84 @@ COMMANDS and TAGS are based on the
 ~~~~~~~~~~~~~
 
 Commands read and write external files. They start in the first column with
-double vertical bars ( || ) followed by the command name and parameters. Parameters are
-separated by a single bar ( | ) and are of the form: 
+vertical bars. A double bar is used for write commands ( || ) and a single bar
+for reads. The bar is followed by the command name and parameters separated by
+a single bar ( | ) as follows:
 
-**|| COMMAND | relative file path | param1, param2**
+**| READ COMMAND | relative file path | param1, param2**
+
+**|| WRITE COMMAND | relative file path | param1, param2**
 
 In the tables below parameter options are separated with semi-colons and list
 elements are separated with commas. Options are in parenthesis. File locations
 are specified using paths relative to the rivt file location and folder
 structure. Folder organization is described `here <5-folders.html>`_.
 
-**Read File Commands**
+**READ**
 
 =========== ======================================================= ==================
-Scope                       Commands                                 File options
+Scope                       Command                                  File Types
 ----------- ------------------------------------------------------- ------------------
-rv.I; rv.V   || **TABLE** | rel. pth | col width, l;c;r, (_T)       .csv, .txt, .xls
-rv.I; rv.V   || **IMG**  | rel. pth | caption, scale, (_F)          .png, .jpg
-rv.I; rv.V   || **IMG2**  | rel. pth | cap1, cap2, sc1, sc2, (_F)   .png, .jpg
-rv.V         || **VCFG** | rel. pth | rel. pth | dec1, dec2         .csv
-rv.V         || **VALS** | rel. pth |  2                            .csv
-rv.I         || **TEXT** | rel. pth |  plain; rivt                  .txt
-rv.I         || **APPEND** | rel. pth | num; nonum                  .pdf
+rv.V         **| VCFG |** rel. pth | rel. pth | dec1, dec2          .csv
+rv.V         **| VALS |** rel. pth |  dec1                          .csv
+rv.I         **| APPEND |** rel. pth | num; nonum                   .pdf
+rv.I         **| TEXT |** rel. pth |  plain; rivt; literal; latex   .txt, .tex
+rv.I  rv.V   **| TABLE |** rel. pth | col width, l; c; r            .csv, .txt, .xlsx
+rv.I  rv.V   **| IMG |** rel. pth | caption, scale, -; (**[_F]**)   .png, .jpg
+rv.I  rv.V   **| IMG2 |** rel. pth | c1, c2, s1, s2, -; (**[_F]**)  .png, .jpg
 =========== ======================================================= ==================
 
-**Write File Commands**
+**WRITE**
 
-=========== ============================================ =======================
-Scope                        Commands                        Notes / Options
------------ -------------------------------------------- -----------------------
-rv.W        || **WRITE** | docs | pdf; tex; txt; html      pdf is text pdf
-rv.W        || **REPORT** | docs | pdf; tex; txt; html     tex is latex pdf
-rv.V         a **=** 1+1 | unit | reference (_[E])         **=** is command tag
-=========== ============================================ =======================
+=========== ============================================= ======================
+Scope                        Command                         Notes 
+----------- --------------------------------------------- ----------------------
+rv.V         a **=** 1+1 | unit | reference                **=** is command tag
+rv.V        **|| EVAL |** default | dec1                    .csv
+rv.W        **|| WRITE |** docs | tpdf; txt; html; lpdf     tpdf is text-pdf
+rv.W        **|| REPORT |** docs | tpdf; txt; html; lpdf    lpdf is latex-pdf
+=========== ============================================= ======================
 
 **Tags**
 ~~~~~~~~
 
-**Tags** are added at the end of lines. **Line tags** are denoted with
-_[**TAG**]. They format and evaluate a line of text. **Block tags** are denoted
-with _[[**TAG**]] on the first line. They evaluate a multi-line text block and
-end with _[[**Q**]] on the last line of the block.
+**Tags** are added at the end of lines and format a line of text. **Line tags**
+are denoted with _[**TAG**] or __[**TAG**]. Tags with double underscores only
+format for latex-pdf and html docs, and are ignored for other types of docs .
+**Block tags** are denoted with _[[**TAG**]] or __[[**TAG**]] on the first line.
+They evaluate a multi-line text block and end with _[[**Q**]] on the last line
+of the block.
 
 ================ ======================= =======================================
 Scope             Line Tags                    Description
 ---------------- ----------------------- ---------------------------------------
-rv.I; rv.V             _[**PAGE**]         new page
-rv.I; rv.V           text _[**C**]         center text 
-rv.I; rv.V        caption _[**F**]         autonumber, format image [1]
-rv.I; rv.V          title _[**T**]         autonumber, format table [2]
-rv.V                label _[**E**]         autonumber, format equation [3]
+rv.I  rv.V             _[**PAGE**]         new page
+rv.I  rv.V           text _[**C**]         center text 
+rv.I  rv.V        caption _[**F**]         autonumber, format image [1]
+rv.I  rv.V          title _[**T**]         autonumber, format table
+rv.I  rv.V          label _[**E**]         autonumber, format equation
 rv.I             equation _[**N**]         autonumber, format Python math 
 rv.I             equation _[**S**]         format Python math 
 rv.I                 text _[**#**]         autonumber footnote
 rv.I              descrip _[**D**]         footnote description
 rv.I              --------_[**H**]         horizontal line
-rv.I                 text _[**B**]         center bold text (latex pdf)
-rv.I              _[**address, label**]    url, internal reference (latex pdf)
+rv.I                 text __[**B**]        center bold text (latex pdf)
+rv.I              url, label __[**K**]     url, internal reference (latex pdf)
 ================ ======================= =======================================
 
-[1] Figure tag may be attached to **IMAGE** command
-[2] Table tag may be attached to **TABLE** command
+[1] Figure tag may be attached to **IMG** command
 
 =========== =============== =====================================================
 Scope        Block Tags      Description
 ----------- --------------- -----------------------------------------------------
-rv.I; rv.V   _[[**Q**]]       end block
-rv.V;        _[[**V**]]       start values block
-rv.I         _[[**P**]]       start plain text block
-rv.I         _[[**N**]]       start indent text block 
-rv.I         _[[**B**]]       start bold text block  (latex pdf)
-rv.I         _[[**I**]]       start italic text block (latex pdf)
-rv.I         _[[**O**]]       start indent bold text block (latex pdf)
-rv.I         _[[**T**]]       start indent italic block (latex pdf)
-rv.I         _[[**L**]]       start latex block (latex pdf)
+rv.I         _[[**Q**]]        end block
+rv.I         _[[**P**]]        start plain text block
+rv.I         _[[**N**]]        start indent text block 
+rv.I         __[[**I**]]       start italic text block (latex pdf)
+rv.I         __[[**B**]]       start bold text block  (latex pdf)
+rv.I         __[[**O**]]       start code block (latex pdf)
+rv.I         __[[**L**]]       start latex block (latex pdf)
+rv.I         __[[**T**]]       start indent italic block (latex pdf)
 =========== =============== =====================================================
   
 
