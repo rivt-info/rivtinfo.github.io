@@ -73,11 +73,11 @@ Scope                       Command                                  File Types
 ----------- ------------------------------------------------------- ------------------
 rv.V         **| VCFG |** rel. pth | rel. pth | dec1, dec2          .csv
 rv.V         **| VALS |** rel. pth |  dec1                          .csv
-rv.I         **| APPEND |** rel. pth | num; nonum                   .pdf
 rv.I         **| TEXT |** rel. pth |  plain; rivt; literal; latex   .txt, .tex
 rv.I  rv.V   **| TABLE |** rel. pth | col width, l; c; r            .csv, .txt, .xlsx
 rv.I  rv.V   **| IMG |** rel. pth | caption, scale, -; (**[_F]**)   .png, .jpg
 rv.I  rv.V   **| IMG2 |** rel. pth | c1, c2, s1, s2, -; (**[_F]**)  .png, .jpg
+rv.I         **| APPEND |** rel. pth | num; nonum                   .pdf (pdf, html)
 =========== ======================================================= ==================
 
 **WRITE**
@@ -86,9 +86,9 @@ rv.I  rv.V   **| IMG2 |** rel. pth | c1, c2, s1, s2, -; (**[_F]**)  .png, .jpg
 Scope                        Command                         Notes 
 ----------- --------------------------------------------- ----------------------
 rv.V         a **=** 1+1 | unit | reference                **=** is command tag
-rv.V        **|| EVAL |** default | dec1                    .csv
-rv.W        **|| WRITE |** docs | tpdf; txt; html; lpdf     tpdf is text-pdf
-rv.W        **|| REPORT |** docs | tpdf; txt; html; lpdf    lpdf is latex-pdf
+rv.V        **|| EVAL |** default | dec1                    write block to .csv
+rv.W        **|| WRITE |** docs | tpdf; txt; html; lpdf     tpdf = text-pdf
+rv.W        **|| REPORT |** docs | tpdf; txt; html; lpdf    lpdf = latex-pdf
 =========== ============================================= ======================
 
 **Tags**
@@ -114,8 +114,8 @@ rv.I             equation _[**S**]         format Python math
 rv.I                 text _[**#**]         autonumber footnote
 rv.I              descrip _[**D**]         footnote description
 rv.I              --------_[**H**]         horizontal line
-rv.I                 text __[**B**]        center bold text (latex pdf)
-rv.I              url, label __[**K**]     url, internal reference (latex pdf)
+rv.I                 text __[**B**]        center bold text (pdf, html)
+rv.I              url, label __[**K**]     url, internal reference (pdf, html)
 ================ ======================= =======================================
 
 [1] Figure tag may be attached to **IMG** command
@@ -124,11 +124,11 @@ rv.I              url, label __[**K**]     url, internal reference (latex pdf)
 Scope        Block Tags      Description
 ----------- --------------- -----------------------------------------------------
 rv.I         _[[**Q**]]        end block
-rv.I         _[[**P**]]        start plain text block
+rv.I         _[[**P**]]        start text block
 rv.I         _[[**N**]]        start indent text block 
+rv.I         _[[**O**]]        start literal (code) block
 rv.I         __[[**I**]]       start italic text block (latex pdf)
 rv.I         __[[**B**]]       start bold text block  (latex pdf)
-rv.I         __[[**O**]]       start code block (latex pdf)
 rv.I         __[[**L**]]       start latex block (latex pdf)
 rv.I         __[[**T**]]       start indent italic block (latex pdf)
 =========== =============== =====================================================
