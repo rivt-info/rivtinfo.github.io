@@ -114,7 +114,7 @@ rv.I             equation _[**S**]         format Python math
 rv.I                 text _[**#**]         autonumber footnote
 rv.I              descrip _[**D**]         footnote description
 rv.I              --------_[**H**]         horizontal line
-rv.I                 text __[**B**]        center bold text (pdf, html)
+rv.I                 text __[**B**]        center bold text (lpdf, html)
 rv.I              url, label __[**K**]     url, internal reference (pdf, html)
 ================ ======================= =======================================
 
@@ -127,10 +127,10 @@ rv.I         _[[**Q**]]        end block
 rv.I         _[[**P**]]        start text block
 rv.I         _[[**N**]]        start indent text block 
 rv.I         _[[**O**]]        start literal (code) block
-rv.I         __[[**I**]]       start italic text block (latex pdf)
-rv.I         __[[**B**]]       start bold text block  (latex pdf)
-rv.I         __[[**L**]]       start latex block (latex pdf)
-rv.I         __[[**T**]]       start indent italic block (latex pdf)
+rv.I         __[[**L**]]       start latex block (lpdf)
+rv.I         __[[**I**]]       start italic text block (lpdf)
+rv.I         __[[**B**]]       start bold text block  (lpdf)
+rv.I         __[[**T**]]       start indent italic block (lpdf)
 =========== =============== =====================================================
   
 
