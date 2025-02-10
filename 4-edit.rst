@@ -96,7 +96,7 @@ rv.W        **|| REPORT |** docs | tpdf; txt; html; lpdf    lpdf = latex-pdf
 
 **Tags** are added at the end of lines and format a line of text. **Line tags**
 are denoted with _[**TAG**] or __[**TAG**]. Tags with double underscores only
-format for latex-pdf and html docs, and are ignored for other types of docs .
+format for latex-pdf and html docs, and are skipped for other doc types.
 **Block tags** are denoted with _[[**TAG**]] or __[[**TAG**]] on the first line.
 They evaluate a multi-line text block and end with _[[**Q**]] on the last line
 of the block.
