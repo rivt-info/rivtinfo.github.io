@@ -71,12 +71,11 @@ structure. Folder organization is described `here <5-folders.html>`_.
 =========== ======================================================= ==================
 Scope                       Command                                  File Types
 ----------- ------------------------------------------------------- ------------------
-rv.V         **| VCFG |** rel. pth | rel. pth | dec1, dec2          .csv
 rv.V         **| VALS |** rel. pth |  dec1                          .csv
-rv.I         **| TEXT |** rel. pth |  plain; rivt; literal; latex   .txt, .tex
 rv.I  rv.V   **| TABLE |** rel. pth | col width, l; c; r            .csv, .txt, .xlsx
 rv.I  rv.V   **| IMG |** rel. pth | caption, scale, -; (**[_F]**)   .png, .jpg
 rv.I  rv.V   **| IMG2 |** rel. pth | c1, c2, s1, s2, -; (**[_F]**)  .png, .jpg
+rv.I         **| TEXT |** rel. pth |  plain; rivt; literal; latex   .txt, .tex
 rv.I         **| APPEND |** rel. pth | num; nonum                   .pdf (pdf, html)
 =========== ======================================================= ==================
 
@@ -86,7 +85,6 @@ rv.I         **| APPEND |** rel. pth | num; nonum                   .pdf (pdf, h
 Scope                        Command                         Notes 
 ----------- --------------------------------------------- ----------------------
 rv.V         a **=** 1+1 | unit | reference                **=** is command tag
-rv.V        **|| EVAL |** default | dec1                    write block to .csv
 rv.W        **|| WRITE |** docs | tpdf; txt; html; lpdf     tpdf = text-pdf
 rv.W        **|| REPORT |** docs | tpdf; txt; html; lpdf    lpdf = latex-pdf
 =========== ============================================= ======================
@@ -104,18 +102,18 @@ of the block.
 ================ ======================= =======================================
 Scope             Line Tags                    Description
 ---------------- ----------------------- ---------------------------------------
-rv.I  rv.V             _[**PAGE**]         new page
-rv.I  rv.V           text _[**C**]         center text 
-rv.I  rv.V        caption _[**F**]         autonumber, format image [1]
-rv.I  rv.V          title _[**T**]         autonumber, format table
-rv.I  rv.V          label _[**E**]         autonumber, format equation
-rv.I             equation _[**N**]         autonumber, format Python math 
-rv.I             equation _[**S**]         format Python math 
-rv.I                 text _[**#**]         autonumber footnote
-rv.I              descrip _[**D**]         footnote description
-rv.I              --------_[**H**]         horizontal line
-rv.I                 text __[**B**]        center bold text (lpdf, html)
-rv.I              url, label __[**K**]     url, internal reference (pdf, html)
+rv.I  rv.V                    _[**G**]      new page
+rv.I  rv.V               text _[**C**]      center text 
+rv.I  rv.V            caption _[**F**]      autonumber, format image [1]
+rv.I  rv.V              title _[**T**]      autonumber, format table
+rv.I  rv.V              label _[**E**]      autonumber, format equation
+rv.I                 equation _[**N**]      autonumber, format Python math 
+rv.I                 equation _[**S**]      format Python math 
+rv.I                     text _[**#**]      autonumber footnote
+rv.I                  descrip _[**D**]      footnote description
+rv.I                  --------_[**H**]      horizontal line
+rv.I               url, label _[**K**]      link 
+rv.I                    text __[**B**]      center bold text (lpdf, html)
 ================ ======================= =======================================
 
 [1] Figure tag may be attached to **IMG** command
@@ -123,14 +121,15 @@ rv.I              url, label __[**K**]     url, internal reference (pdf, html)
 =========== =============== =====================================================
 Scope        Block Tags      Description
 ----------- --------------- -----------------------------------------------------
-rv.I         _[[**Q**]]        end block
-rv.I         _[[**P**]]        start text block
-rv.I         _[[**N**]]        start indent text block 
-rv.I         _[[**O**]]        start literal (code) block
-rv.I         __[[**L**]]       start latex block (lpdf)
-rv.I         __[[**I**]]       start italic text block (lpdf)
-rv.I         __[[**B**]]       start bold text block  (lpdf)
-rv.I         __[[**T**]]       start indent italic block (lpdf)
+rv.I          _[[**Q**]]       end block
+rv.I          _[[**P**]]       start text block
+rv.I          _[[**N**]]       start indent text block
+rv.I          _[[**V**]]       start value table block
+rv.I          _[[**O**]]       start literal (code) block
+rv.I         __[[**L**]]       start latex block (lpdf, html)
+rv.I         __[[**I**]]       start italic text block (lpdf, html)
+rv.I         __[[**B**]]       start bold text block  (lpdf, html)
+rv.I         __[[**T**]]       start indent italic block (lpdf, html)
 =========== =============== =====================================================
   
 

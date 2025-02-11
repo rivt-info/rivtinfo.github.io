@@ -119,8 +119,8 @@
     
     
     
-    <img src="_static/rivhome2.png" class="logo__image only-light" alt="rivt.info 0.1 documentation - Home"/>
-    <img src="_static/rivhome2.png" class="logo__image only-dark pst-js-only" alt="rivt.info 0.1 documentation - Home"/>
+    <img src="_static/rivhome3.png" class="logo__image only-light" alt="rivt.info 0.1 documentation - Home"/>
+    <img src="_static/rivhome3.png" class="logo__image only-dark pst-js-only" alt="rivt.info 0.1 documentation - Home"/>
   
   
 </a></div>
@@ -410,25 +410,25 @@ and PDF.</p>
 <td><p>Tool</p></td>
 <td><p>Python functions</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>rv.X</strong></p></td>
+<tr class="row-even"><td><p>rv.X</p></td>
 <td><p>Exclude</p></td>
 <td><p>Skip rivt function (editing)</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>rv.W</strong></p></td>
+<tr class="row-odd"><td><p>rv.W</p></td>
 <td><p>Write</p></td>
 <td><p>Write docs or reports</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>rv.Q</strong></p></td>
+<tr class="row-even"><td><p>rv.Q</p></td>
 <td><p>Quit</p></td>
 <td><p>Exit program</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>Each API function defines a document section. API functions may be used in any
+<p>Each API function defines a document section which may be arranged in any
 order or frequency.</p>
 <section id="syntax">
-<h3>Syntax<a class="headerlink" href="#syntax" title="Link to this heading">#</a></h3>
+<h3><strong>Syntax</strong><a class="headerlink" href="#syntax" title="Link to this heading">#</a></h3>
 <p>The first line of each function includes a section label (that also may be a
 section title) followed by formatting parameters. New sections may be labeled
 as separate or integrated with preceding sections. The section body can contain
@@ -441,173 +441,181 @@ COMMANDS and TAGS are based on the
 <a class="reference external" href="https://docutils.sourceforge.io/">docutils Python lbrary</a>.</p>
 </section>
 <section id="commands">
-<h3>Commands<a class="headerlink" href="#commands" title="Link to this heading">#</a></h3>
+<h3><strong>Commands</strong><a class="headerlink" href="#commands" title="Link to this heading">#</a></h3>
 <p>Commands read and write external files. They start in the first column with
-double vertical bars ( || ) followed by the command name and parameters. Parameters are
-separated by a single bar ( | ) and are of the form:</p>
-<p><strong>|| COMMAND | relative file path | param1, param2</strong></p>
+vertical bars. A double bar is used for write commands ( || ) and a single bar
+for reads. The bar is followed by the command name and parameters separated by
+a single bar ( | ) as follows:</p>
+<p><strong>| READ COMMAND | relative file path | param1, param2</strong></p>
+<p><strong>|| WRITE COMMAND | relative file path | param1, param2</strong></p>
 <p>In the tables below parameter options are separated with semi-colons and list
-elements are separated with commas. File locations are specified using paths
-relative to the rivt file location and folder structure. Folder organization is
-described <a class="reference external" href="5-folders.html">here</a>.</p>
-<p><strong>Read Commands</strong></p>
+elements are separated with commas. Options are in parenthesis. File locations
+are specified using paths relative to the rivt file location and folder
+structure. Folder organization is described <a class="reference external" href="5-folders.html">here</a>.</p>
+<p><strong>READ</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>Scope</p></td>
-<td><p>Commands</p></td>
-<td><p>File options</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I, rv.V</p></td>
-<td><p>|| <strong>IMAGE</strong>  | rel. pth | caption, scale</p></td>
-<td><p>.png, .jpg</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I, rv.V</p></td>
-<td><p>|| <strong>IMG2</strong>  | rel. pth | cap1, cap2, sc1, sc2</p></td>
-<td><p>.png, .jpg</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I, rv.V</p></td>
-<td><p>|| <strong>TABLE</strong> | rel. pth | col width, l;c;r</p></td>
-<td><p>.csv, .txt, .xls</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>|| <strong>TEXT</strong> | rel. pth |  plain; rivt</p></td>
-<td><p>.txt</p></td>
+<td><p>Command</p></td>
+<td><p>File Types</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.V</p></td>
-<td><p>|| <strong>EVAL</strong> | rel. pth |  table; notable</p></td>
-<td><p>.csv, .txt, .xls</p></td>
+<td><p><strong>| VALS |</strong> rel. pth |  dec1</p></td>
+<td><p>.csv</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.I  rv.V</p></td>
+<td><p><strong>| TABLE |</strong> rel. pth | col width, l; c; r</p></td>
+<td><p>.csv, .txt, .xlsx</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.I  rv.V</p></td>
+<td><p><strong>| IMG |</strong> rel. pth | caption, scale, -; (<strong>[_F]</strong>)</p></td>
+<td><p>.png, .jpg</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.I  rv.V</p></td>
+<td><p><strong>| IMG2 |</strong> rel. pth | c1, c2, s1, s2, -; (<strong>[_F]</strong>)</p></td>
+<td><p>.png, .jpg</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.I</p></td>
+<td><p><strong>| TEXT |</strong> rel. pth |  plain; rivt; literal; latex</p></td>
+<td><p>.txt, .tex</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.I</p></td>
+<td><p><strong>| APPEND |</strong> rel. pth | num; nonum</p></td>
+<td><p>.pdf (pdf, html)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p><strong>Write Commands</strong></p>
+<p><strong>WRITE</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>Scope</p></td>
-<td><p>Commands</p></td>
-<td><p>Notes / Options</p></td>
+<td><p>Command</p></td>
+<td><p>Notes</p></td>
 </tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p>|| <strong>APPEND</strong> | rel. pth | num; nonum</p></td>
-<td><p>.pdf</p></td>
+<tr class="row-even"><td><p>rv.V</p></td>
+<td><p>a <strong>=</strong> 1+1 | unit | reference</p></td>
+<td><p><strong>=</strong> is command tag</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.W</p></td>
-<td><p>|| <strong>WRITE</strong> | docs | pdf; tex; txt; html</p></td>
-<td><p>pdf is a text pdf</p></td>
+<td><p><strong>|| WRITE |</strong> docs | tpdf; txt; html; lpdf</p></td>
+<td><p>tpdf = text-pdf</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.W</p></td>
-<td><p>|| <strong>REPORT</strong> | docs | pdf; tex; txt; html</p></td>
-<td><p>tex is a latex pdf</p></td>
+<td><p><strong>|| REPORT |</strong> docs | tpdf; txt; html; lpdf</p></td>
+<td><p>lpdf = latex-pdf</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 </section>
 <section id="tags">
-<h3>Tags<a class="headerlink" href="#tags" title="Link to this heading">#</a></h3>
-<p><strong>Line tags</strong> are denoted with _[<strong>TAG</strong>] at the end of a line. They format and
-evaluate a line of text. <strong>Block tags</strong> format and evaluate a multi-line block
-of text. They begin with _[[<strong>TAG</strong>]] in the first line and end with _[[<strong>Q</strong>]]
-on the last line.</p>
+<h3><strong>Tags</strong><a class="headerlink" href="#tags" title="Link to this heading">#</a></h3>
+<p><strong>Tags</strong> are added at the end of lines and format a line of text. <strong>Line tags</strong>
+are denoted with _[<strong>TAG</strong>] or __[<strong>TAG</strong>]. Tags with double underscores only
+format for latex-pdf and html docs, and are skipped for other doc types.
+<strong>Block tags</strong> are denoted with _[[<strong>TAG</strong>]] or __[[<strong>TAG</strong>]] on the first line.
+They evaluate a multi-line text block and end with _[[<strong>Q</strong>]] on the last line
+of the block.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>Scope</p></td>
 <td><p>Line Tags</p></td>
 <td><p>Description</p></td>
 </tr>
-<tr class="row-even"><td><p>rv.I, rv.V</p></td>
-<td><p><strong>_[PAGE]</strong></p></td>
+<tr class="row-even"><td><p>rv.I  rv.V</p></td>
+<td><p>_[<strong>G</strong>]</p></td>
 <td><p>new page</p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.I, rv.V</p></td>
+<tr class="row-odd"><td><p>rv.I  rv.V</p></td>
 <td><p>text _[<strong>C</strong>]</p></td>
 <td><p>center text</p></td>
 </tr>
-<tr class="row-even"><td><p>rv.I, rv.V</p></td>
-<td><p>caption <strong>_[F]</strong></p></td>
-<td><p>autonumber image [1]</p></td>
+<tr class="row-even"><td><p>rv.I  rv.V</p></td>
+<td><p>caption _[<strong>F</strong>]</p></td>
+<td><p>autonumber, format image [1]</p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.I, rv.V</p></td>
-<td><p>title <strong>_[T]</strong></p></td>
-<td><p>autonumber table</p></td>
+<tr class="row-odd"><td><p>rv.I  rv.V</p></td>
+<td><p>title _[<strong>T</strong>]</p></td>
+<td><p>autonumber, format table</p></td>
 </tr>
-<tr class="row-even"><td><p>rv.I, rv.V</p></td>
-<td><p>text <strong>_[#]</strong></p></td>
-<td><p>autonumber footnote</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I, rv.V</p></td>
-<td><p>descrip <strong>_[D]</strong></p></td>
-<td><p>footnote description</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.V</p></td>
-<td><p>label <strong>_[E]</strong></p></td>
+<tr class="row-even"><td><p>rv.I  rv.V</p></td>
+<td><p>label _[<strong>E</strong>]</p></td>
 <td><p>autonumber, format equation</p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.V</p></td>
-<td><p><strong>=</strong></p></td>
-<td><p>evaluate: a = 1+1 | unit | reference</p></td>
+<tr class="row-odd"><td><p>rv.I</p></td>
+<td><p>equation _[<strong>N</strong>]</p></td>
+<td><p>autonumber, format Python math</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I</p></td>
-<td><p>text _[<strong>B</strong>]</p></td>
-<td><p>center bold text (latex pdf)</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>equation <strong>_[S]</strong></p></td>
+<td><p>equation _[<strong>S</strong>]</p></td>
 <td><p>format Python math</p></td>
 </tr>
+<tr class="row-odd"><td><p>rv.I</p></td>
+<td><p>text _[<strong>#</strong>]</p></td>
+<td><p>autonumber footnote</p></td>
+</tr>
 <tr class="row-even"><td><p>rv.I</p></td>
-<td><p>equation <strong>_[N]</strong></p></td>
-<td><p>format, autonumber Python math</p></td>
+<td><p>descrip _[<strong>D</strong>]</p></td>
+<td><p>footnote description</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I</p></td>
-<td><p><strong>_[address, label]</strong></p></td>
-<td><p>url, internal reference (latex pdf)</p></td>
+<td><p>——–_[<strong>H</strong>]</p></td>
+<td><p>horizontal line</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.I</p></td>
+<td><p>url, label _[<strong>K</strong>]</p></td>
+<td><p>link</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.I</p></td>
+<td><p>text __[<strong>B</strong>]</p></td>
+<td><p>center bold text (lpdf, html)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>[1] Figure tag is attached to caption parameter in the <strong>IMAGE</strong> command</p>
+<p>[1] Figure tag may be attached to <strong>IMG</strong> command</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>Scope</p></td>
 <td><p>Block Tags</p></td>
 <td><p>Description</p></td>
 </tr>
-<tr class="row-even"><td><p>rv.V</p></td>
-<td><p>_[[<strong>E</strong>]]</p></td>
-<td><p>start evaluation block</p></td>
+<tr class="row-even"><td><p>rv.I</p></td>
+<td><p>_[[<strong>Q</strong>]]</p></td>
+<td><p>end block</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I</p></td>
 <td><p>_[[<strong>P</strong>]]</p></td>
-<td><p>start plain text block</p></td>
+<td><p>start text block</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I</p></td>
-<td><p>_[[<strong>B</strong>]]</p></td>
-<td><p>start bold text block  (latex pdf)</p></td>
+<td><p>_[[<strong>N</strong>]]</p></td>
+<td><p>start indent text block</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I</p></td>
-<td><p><strong>_[[C]]</strong></p></td>
-<td><p>start center text block (latex pdf)</p></td>
+<td><p>_[[<strong>V</strong>]]</p></td>
+<td><p>start value table block</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I</p></td>
-<td><p><strong>_[[I]]</strong></p></td>
-<td><p>start italic text block (latex pdf)</p></td>
+<td><p>_[[<strong>O</strong>]]</p></td>
+<td><p>start literal (code) block</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I</p></td>
-<td><p><strong>_[[O]]</strong></p></td>
-<td><p>start bold indent text block (latex pdf)</p></td>
+<td><p>__[[<strong>L</strong>]]</p></td>
+<td><p>start latex block (lpdf, html)</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I</p></td>
-<td><p><strong>_[[T]]</strong></p></td>
-<td><p>start italic indent block (latex pdf)</p></td>
+<td><p>__[[<strong>I</strong>]]</p></td>
+<td><p>start italic text block (lpdf, html)</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I</p></td>
-<td><p><strong>_[[L]]</strong></p></td>
-<td><p>start latex block (latex pdf)</p></td>
+<td><p>__[[<strong>B</strong>]]</p></td>
+<td><p>start bold text block  (lpdf, html)</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I</p></td>
-<td><p><strong>_[[Q]]</strong></p></td>
-<td><p>end block</p></td>
+<td><p>__[[<strong>T</strong>]]</p></td>
+<td><p>start indent italic block (lpdf, html)</p></td>
 </tr>
 </tbody>
 </table>
@@ -617,7 +625,7 @@ on the last line.</p>
 <section id="examples">
 <h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Link to this heading">#</a></h2>
 <section id="example-1">
-<h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
+<h3><strong>Example 1</strong><a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
 <p>API functions start in column one. rivt-strings are indented four spaces (for
 legibility and code folding).A rivt doc is assembled by each function in order
 of the input order. Each function also, optionally, defines a doc section.</p>
@@ -725,7 +733,7 @@ of the input order. Each function also, optionally, defines a doc section.</p>
 </div>
 </section>
 <section id="example-2">
-<h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
+<h3><strong>Example 2</strong><a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
 <p>API functions start in column one. rivt-strings are indented four spaces (for
 legibility and code folding).A rivt doc is assembled by each function in order
 of the input order. Each function also, optionally, defines a doc section.</p>
@@ -883,14 +891,14 @@ of the input order. Each function also, optionally, defines a doc section.</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api"><strong>API</strong></a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#syntax">Syntax</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#commands">Commands</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tags">Tags</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#syntax"><strong>Syntax</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#commands"><strong>Commands</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tags"><strong>Tags</strong></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples"><strong>Examples</strong></a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1"><strong>Example 1</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2"><strong>Example 2</strong></a></li>
 </ul>
 </li>
 </ul>

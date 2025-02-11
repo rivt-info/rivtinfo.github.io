@@ -29,8 +29,8 @@ html_theme_options = {
     "footer_start": ["copyright"],
     "footer_end": [],
     "logo": {
-        "image_dark": "_static/img/rivhome2.png",
-        "image_light": "_static/img/rivhome2.png",
+        "image_dark": "_static/img/rivhome3.png",
+        "image_light": "_static/img/rivhome3.png",
     }
 }
 
