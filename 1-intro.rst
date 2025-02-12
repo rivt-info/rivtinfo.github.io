@@ -7,7 +7,7 @@ for engineering documents is already widely available but there are barriers to
 sharing and modifying source files between programs and versions. The barriers
 include high software and update costs, and incompatibility between programs,
 upgrades and operating systems. The current situation requires repeated
-unproductive rewrites of similar engineering documents to accomodate different
+unproductive rewrites of similar engineering documents to accommodate different
 software programs. Sharing calculation details for new and developing
 technologies is also restricted by these barriers.
 

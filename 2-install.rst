@@ -1,10 +1,10 @@
 **2. Install**
 ===============
 
-rivtzip installs the complete rivt system in a portable folder via a zip file,
-and is available for every OS platform. rivt also runs in the cloud using
-GitHub CodeSpaces or other cloud service providers. Installation details are
-provided in the [rivt User Manual](https://www.rivt-sys.net>)
+**rivtzip** is a collection of three zip files that installs the rivt framework
+in a portable folder or usb drive. It is available for every OS platform. rivt
+also runs in the cloud and on mobile devices using GitHub CodeSpaces or other
+cloud service providers.
 
 
 **VSCode Profiles**
@@ -17,7 +17,7 @@ snippets for API functions and commands.
 ============================================== ===============================
 Extensions                                       description
 ============================================== ===============================
-BUTTONS                                             .
+**BUTTONS**                                         ---
 tombonnike.vscode-status-bar-format-toggle          format button
 gsppvo.vscode-commandbar                            command buttons
 AdamAnand.adamstool                                 command buttons
@@ -26,7 +26,7 @@ Ho-Wan.setting-toggle                               toggle settings
 yasukotelin.toggle-panel                            toggle panel
 fabiospampinato.vscode-commands                     user command buttons
 jerrygoyal.shortcut-menu-bar                        menu bar
-EDITING                                             .
+**EDITING**                                         ---
 henryclayton.context-menu-toggle-comments           toggle comments
 TroelsDamgaard.reflow-paragraph                     wrap paragraph
 streetsidesoftware.code-spell-checker               spell check
@@ -35,7 +35,7 @@ njpwerner.autodocstring                             insert doc string
 oijaz.unicode-latex                                 unicode symbols from latex
 jsynowiec.vscode-insertdatestring                   insert date string
 janisdd.vscode-edit-csv                             csv editor
-VIEWS                                               .
+**VIEWS**                                           ---
 GrapeCity.gc-excelviewer                            excel viewer
 SimonSiefke.svg-preview                             svg viewer
 tomoki1207.pdf                                      pdf viewer
@@ -44,7 +44,7 @@ Fr43nk.seito-openfile                               open file from path
 vikyd.vscode-fold-level                             line folding tool
 file-icons.file-icons                               icon library
 tintinweb.vscode-inline-bookmarks                   inline bookmarks
-MANAGEMENT                                          .
+**MANAGEMENT**                                      ---
 alefragnani.project-manager                         folder, project management
 Anjali.clipboard-history                            clipboard history
 dionmunk.vscode-notes                               notepad
@@ -54,7 +54,7 @@ lyzerk.linecounter                                  count lines in files
 sandcastle.vscode-open                              open files in default app
 zjffun.snippetsmanager                              snippet manager
 spmeesseman.vscode-taskexplorer                     task explorer
-GITHUB                                              .
+**GITHUB**                                          ---
 GitHub.codespaces                                   run files in codespaces
 GitHub.remotehub                                    run remote files
 ettoreciprian.vscode-websearch                      search github within VSCode
@@ -64,7 +64,7 @@ github.vscode-github-actions                        github actions
 GitHub.vscode-pull-request-github                   github pull request
 k9982874.github-gist-explorer                       gist explorer
 vsls-contrib.gistfs                                 gist tools
-PYTHON                                              .
+**PYTHON**                                          ---
 ms-python.autopep8                                  python pep8 formatting
 ms-python.isort                                     python sort imports
 donjayamanne.python-environment-manager             python library list
@@ -75,7 +75,7 @@ ms-toolsai.jupyter-keymap                           jupyter tools
 ms-toolsai.jupyter-renderers                        jupyter tools
 ms-toolsai.vscode-jupyter-cell-tags                 jupyter tools
 ms-toolsai.vscode-jupyter-slideshow                 jupyter tools
-LANGUAGES                                           .
+**LANGUAGES**                                       ---
 qwtel.sqlite-viewer                                 sqlite tools
 RDebugger.r-debugger                                R tools
 REditorSupport.r                                    R tools

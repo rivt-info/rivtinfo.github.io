@@ -71,7 +71,7 @@ structure. Folder organization is described `here <5-folders.html>`_.
 =========== ======================================================= ==================
 Scope                       Command                                  File Types
 ----------- ------------------------------------------------------- ------------------
-rv.V         **| VALS |** rel. pth |  dec1                          .csv
+rv.V         **| VREAD |** rel. pth |  dec1                          .csv
 rv.I  rv.V   **| TABLE |** rel. pth | col width, l; c; r            .csv, .txt, .xlsx
 rv.I  rv.V   **| IMG |** rel. pth | caption, scale, -; (**[_F]**)   .png, .jpg
 rv.I  rv.V   **| IMG2 |** rel. pth | c1, c2, s1, s2, -; (**[_F]**)  .png, .jpg
