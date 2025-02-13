@@ -71,8 +71,8 @@ structure. Folder organization is described `here <5-folders.html>`_.
 =========== ======================================================= ==================
 Scope                       Command                                  File Types
 ----------- ------------------------------------------------------- ------------------
-rv.V         **| VREAD |** rel. pth |  dec1                          .csv
-rv.I  rv.V   **| TABLE |** rel. pth | col width, l; c; r            .csv, .txt, .xlsx
+rv.V         **| VALREAD |** rel. pth |  [rows]                     .csv
+rv.I  rv.V   **| TABLE |** rel. pth | col width, l;c;r, [rows]      .csv, .txt, .xlsx
 rv.I  rv.V   **| IMG |** rel. pth | caption, scale, -; (**[_F]**)   .png, .jpg
 rv.I  rv.V   **| IMG2 |** rel. pth | c1, c2, s1, s2, -; (**[_F]**)  .png, .jpg
 rv.I         **| TEXT |** rel. pth |  plain; rivt; literal; latex   .txt, .tex
@@ -92,12 +92,12 @@ rv.W        **|| REPORT |** docs | tpdf; txt; html; lpdf    lpdf = latex-pdf
 **Tags**
 ~~~~~~~~
 
-**Tags** are added at the end of lines and format a line of text. **Line tags**
-are denoted with _[**TAG**] or __[**TAG**]. Tags with double underscores only
-format for latex-pdf and html docs, and are skipped for other doc types.
-**Block tags** are denoted with _[[**TAG**]] or __[[**TAG**]] on the first line.
-They evaluate a multi-line text block and end with _[[**Q**]] on the last line
-of the block.
+**Tags** format a line of text and are added at the end of the line. **Line**
+tags are denoted with _[**TAG**] (note: some tags apply only to pdf output).
+Tags with double underscores format for latex-pdf and html docs, and are
+skipped for other doc types. **Block** tags are denoted with _[[**TAG**]] on
+the first line. They evaluate a multi-line text block and end with _[[**Q**]]
+on the last line of the block.
 
 ================ ======================= =======================================
 Scope             Line Tags                    Description
@@ -113,7 +113,7 @@ rv.I                     text _[**#**]      autonumber footnote
 rv.I                  descrip _[**D**]      footnote description
 rv.I                  --------_[**H**]      horizontal line
 rv.I               url, label _[**K**]      link 
-rv.I                    text __[**B**]      center bold text (lpdf, html)
+rv.I                    text  _[**B**]      center bold text (lpdf, html)
 ================ ======================= =======================================
 
 [1] Figure tag may be attached to **IMG** command
@@ -121,14 +121,13 @@ rv.I                    text __[**B**]      center bold text (lpdf, html)
 =========== =============== =====================================================
 Scope        Block Tags      Description
 ----------- --------------- -----------------------------------------------------
-rv.I          _[[**Q**]]       end block
-rv.I          _[[**P**]]       start text block
-rv.I          _[[**N**]]       start indent text block
-rv.I          _[[**V**]]       start value table block
+rv.V          _[[**V**]]       start value table block
+rv.I rv.V     _[[**Q**]]       end block
+rv.I          _[[**N**]]       start indent block
 rv.I          _[[**O**]]       start literal (code) block
 rv.I         __[[**L**]]       start latex block (lpdf, html)
-rv.I         __[[**I**]]       start italic text block (lpdf, html)
-rv.I         __[[**B**]]       start bold text block  (lpdf, html)
+rv.I         __[[**I**]]       start italic block (lpdf, html)
+rv.I         __[[**B**]]       start bold block  (lpdf, html)
 rv.I         __[[**T**]]       start indent italic block (lpdf, html)
 =========== =============== =====================================================
   
