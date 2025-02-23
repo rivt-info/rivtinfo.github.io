@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="_static/favicon-32x32.png" sizes="151x143" rel="icon" type="image/png">
     <link href="_static/favicon-16x16.png" sizes="151x143" rel="icon" type="image/png">
-    <title>4. Edit &#8212; rivt.info 0.1 documentation</title>
+    <title>2. Examples &#8212; rivt.info 0.1 documentation</title>
   
   
   
@@ -48,11 +48,11 @@
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = '4-edit';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '2-examples';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="5. Publish" href="5-publish.html" />
-    <link rel="prev" title="3. Folders" href="3-folders.html" />
+    <link rel="next" title="3. Install" href="3-install.html" />
+    <link rel="prev" title="1. Intro" href="1-intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -142,30 +142,30 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="2-install.html">
-    2. Install
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="3-folders.html">
-    3. Folders
-  </a>
-</li>
-
-
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="#">
-    4. Edit
+    2. Examples
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="5-publish.html">
-    5. Publish
+  <a class="nav-link nav-internal" href="3-install.html">
+    3. Install
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="4-folders.html">
+    4. Folders
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="5-edit.html">
+    5. Edit
   </a>
 </li>
 
@@ -178,8 +178,15 @@
                 <ul id="pst-nav-more-links" class="dropdown-menu">
                     
 <li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="6-search.html">
-    6. Search
+  <a class="nav-link dropdown-item nav-internal" href="6-publish.html">
+    6. Publish
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="7-search.html">
+    7. Search
   </a>
 </li>
 
@@ -266,37 +273,44 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="2-install.html">
-    2. Install
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="3-folders.html">
-    3. Folders
-  </a>
-</li>
-
-
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="#">
-    4. Edit
+    2. Examples
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="5-publish.html">
-    5. Publish
+  <a class="nav-link nav-internal" href="3-install.html">
+    3. Install
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="6-search.html">
-    6. Search
+  <a class="nav-link nav-internal" href="4-folders.html">
+    4. Folders
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="5-edit.html">
+    5. Edit
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="6-publish.html">
+    6. Publish
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="7-search.html">
+    7. Search
   </a>
 </li>
 
@@ -357,7 +371,7 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>4. Edit</strong></span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>2. Examples</strong></span></li>
   </ul>
 </nav>
 </div>
@@ -374,258 +388,10 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="edit">
-<h1><strong>4. Edit</strong><a class="headerlink" href="#edit" title="Link to this heading">#</a></h1>
-<p>A <strong>rivt</strong> file is a Python file (utf-8 ) that includes the import statement</p>
-<p><em>import rivtlib.rivtapi as rv</em></p>
-<p>providing four primary API functions (7 total).</p>
-<section id="api">
-<h2><strong>API</strong><a class="headerlink" href="#api" title="Link to this heading">#</a></h2>
-<p>The API functions take a triple quoted string as the argument. When running in
-an IDE (e.g. VSCode) the file may be executed interactively. Interactive output
-is formatted as utf-8 text for speed and flexibility. API functions may be
-grouped and executed step-wise using the standard cell decorator <em># %%</em>.
-Document and report files are generated by the functions <em>rv.write_public()</em>
-and <em>rv.write_private()</em> which output files in GitHub Flavored Markdown (GFM)
-and PDF.</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<tbody>
-<tr class="row-odd"><td><p>API</p></td>
-<td><p>Name</p></td>
-<td><p>Purpose</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>rv.R</strong></p></td>
-<td><p>Run</p></td>
-<td><p>Run external programs</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>rv.I</strong></p></td>
-<td><p>Insert</p></td>
-<td><p>Insert static resources</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>rv.V</strong></p></td>
-<td><p>Value</p></td>
-<td><p>Calculate values</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>rv.T</strong></p></td>
-<td><p>Tool</p></td>
-<td><p>Python functions</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.X</p></td>
-<td><p>Exclude</p></td>
-<td><p>Skip rivt function (editing)</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.W</p></td>
-<td><p>Write</p></td>
-<td><p>Write docs or reports</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.Q</p></td>
-<td><p>Quit</p></td>
-<td><p>Exit program</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>Each API function defines a document section which may be arranged in any
-order or frequency.</p>
-<section id="syntax">
-<h3><strong>Syntax</strong><a class="headerlink" href="#syntax" title="Link to this heading">#</a></h3>
-<p>The first line of each function includes a section label (that also may be a
-section title) followed by formatting parameters. New sections may be labeled
-as separate or integrated with preceding sections. The section body can contain
-any utf-8 text. Commands and tags applicable to each function are defined
-[here](#commands) and [here](#tags).</p>
-<p><strong>rivt</strong> syntax uses <strong>COMMANDS</strong> for file operations and <strong>TAGS</strong> for text
-formatting. Any text not defined by commands or tags is passed through as
-<a class="reference external" href="https://docutils.sourceforge.io/docs/user/rst/quickref.html">restructuredText</a>.
-COMMANDS and TAGS are based on the
-<a class="reference external" href="https://docutils.sourceforge.io/">docutils Python lbrary</a>.</p>
-</section>
-<section id="commands">
-<h3><strong>Commands</strong><a class="headerlink" href="#commands" title="Link to this heading">#</a></h3>
-<p>Commands read and write external files. They start in the first column with
-vertical bars. A double bar is used for write commands ( || ) and a single bar
-for reads. The bar is followed by the command name and parameters separated by
-a single bar ( | ) as follows:</p>
-<p><strong>| READ COMMAND | relative file path | param1, param2</strong></p>
-<p><strong>|| WRITE COMMAND | relative file path | param1, param2</strong></p>
-<p>In the tables below parameter options are separated with semi-colons and list
-elements are separated with commas. Options are in parenthesis. File locations
-are specified using paths relative to the rivt file location and folder
-structure. Folder organization is described <a class="reference external" href="5-folders.html">here</a>.</p>
-<p><strong>READ</strong></p>
-<div class="pst-scrollable-table-container"><table class="table">
-<tbody>
-<tr class="row-odd"><td><p>Scope</p></td>
-<td><p>Command</p></td>
-<td><p>File Types</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.V</p></td>
-<td><p><strong>| VREAD |</strong> rel. pth |  dec1</p></td>
-<td><p>.csv</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I  rv.V</p></td>
-<td><p><strong>| TABLE |</strong> rel. pth | col width, l; c; r</p></td>
-<td><p>.csv, .txt, .xlsx</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I  rv.V</p></td>
-<td><p><strong>| IMG |</strong> rel. pth | caption, scale, -; (<strong>[_F]</strong>)</p></td>
-<td><p>.png, .jpg</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I  rv.V</p></td>
-<td><p><strong>| IMG2 |</strong> rel. pth | c1, c2, s1, s2, -; (<strong>[_F]</strong>)</p></td>
-<td><p>.png, .jpg</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p><strong>| TEXT |</strong> rel. pth |  plain; rivt; literal; latex</p></td>
-<td><p>.txt, .tex</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p><strong>| APPEND |</strong> rel. pth | num; nonum</p></td>
-<td><p>.pdf (pdf, html)</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><strong>WRITE</strong></p>
-<div class="pst-scrollable-table-container"><table class="table">
-<tbody>
-<tr class="row-odd"><td><p>Scope</p></td>
-<td><p>Command</p></td>
-<td><p>Notes</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.V</p></td>
-<td><p>a <strong>=</strong> 1+1 | unit | reference</p></td>
-<td><p><strong>=</strong> is command tag</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.W</p></td>
-<td><p><strong>|| WRITE |</strong> docs | tpdf; txt; html; lpdf</p></td>
-<td><p>tpdf = text-pdf</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.W</p></td>
-<td><p><strong>|| REPORT |</strong> docs | tpdf; txt; html; lpdf</p></td>
-<td><p>lpdf = latex-pdf</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="tags">
-<h3><strong>Tags</strong><a class="headerlink" href="#tags" title="Link to this heading">#</a></h3>
-<p><strong>Tags</strong> are added at the end of lines and format a line of text. <strong>Line tags</strong>
-are denoted with _[<strong>TAG</strong>] or __[<strong>TAG</strong>]. Tags with double underscores only
-format for latex-pdf and html docs, and are skipped for other doc types.
-<strong>Block tags</strong> are denoted with _[[<strong>TAG</strong>]] or __[[<strong>TAG</strong>]] on the first line.
-They evaluate a multi-line text block and end with _[[<strong>Q</strong>]] on the last line
-of the block.</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<tbody>
-<tr class="row-odd"><td><p>Scope</p></td>
-<td><p>Line Tags</p></td>
-<td><p>Description</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I  rv.V</p></td>
-<td><p>_[<strong>G</strong>]</p></td>
-<td><p>new page</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I  rv.V</p></td>
-<td><p>text _[<strong>C</strong>]</p></td>
-<td><p>center text</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I  rv.V</p></td>
-<td><p>caption _[<strong>F</strong>]</p></td>
-<td><p>autonumber, format image [1]</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I  rv.V</p></td>
-<td><p>title _[<strong>T</strong>]</p></td>
-<td><p>autonumber, format table</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I  rv.V</p></td>
-<td><p>label _[<strong>E</strong>]</p></td>
-<td><p>autonumber, format equation</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>equation _[<strong>N</strong>]</p></td>
-<td><p>autonumber, format Python math</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p>equation _[<strong>S</strong>]</p></td>
-<td><p>format Python math</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>text _[<strong>#</strong>]</p></td>
-<td><p>autonumber footnote</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p>descrip _[<strong>D</strong>]</p></td>
-<td><p>footnote description</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>——–_[<strong>H</strong>]</p></td>
-<td><p>horizontal line</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p>url, label _[<strong>K</strong>]</p></td>
-<td><p>link</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>text __[<strong>B</strong>]</p></td>
-<td><p>center bold text (lpdf, html)</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>[1] Figure tag may be attached to <strong>IMG</strong> command</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<tbody>
-<tr class="row-odd"><td><p>Scope</p></td>
-<td><p>Block Tags</p></td>
-<td><p>Description</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p>_[[<strong>Q</strong>]]</p></td>
-<td><p>end block</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>_[[<strong>P</strong>]]</p></td>
-<td><p>start text block</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p>_[[<strong>N</strong>]]</p></td>
-<td><p>start indent text block</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>_[[<strong>V</strong>]]</p></td>
-<td><p>start value table block</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p>_[[<strong>O</strong>]]</p></td>
-<td><p>start literal (code) block</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>__[[<strong>L</strong>]]</p></td>
-<td><p>start latex block (lpdf, html)</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p>__[[<strong>I</strong>]]</p></td>
-<td><p>start italic text block (lpdf, html)</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>__[[<strong>B</strong>]]</p></td>
-<td><p>start bold text block  (lpdf, html)</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p>__[[<strong>T</strong>]]</p></td>
-<td><p>start indent italic block (lpdf, html)</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-</section>
-<section id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Link to this heading">#</a></h2>
-<section id="example-1">
-<h3><strong>Example 1</strong><a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
+  <section id="examples">
+<h1><strong>2. Examples</strong><a class="headerlink" href="#examples" title="Link to this heading">#</a></h1>
+<section id="ex-1">
+<h2><strong>Ex. 1</strong><a class="headerlink" href="#ex-1" title="Link to this heading">#</a></h2>
 <p>API functions start in column one. rivt-strings are indented four spaces (for
 legibility and code folding).A rivt doc is assembled by each function in order
 of the input order. Each function also, optionally, defines a doc section.</p>
@@ -732,8 +498,8 @@ of the input order. Each function also, optionally, defines a doc section.</p>
 </pre></div>
 </div>
 </section>
-<section id="example-2">
-<h3><strong>Example 2</strong><a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
+<section id="ex-2">
+<h2><strong>Ex. 2</strong><a class="headerlink" href="#ex-2" title="Link to this heading">#</a></h2>
 <p>API functions start in column one. rivt-strings are indented four spaces (for
 legibility and code folding).A rivt doc is assembled by each function in order
 of the input order. Each function also, optionally, defines a doc section.</p>
@@ -839,7 +605,6 @@ of the input order. Each function also, optionally, defines a doc section.</p>
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-</section>
 </section>
 </section>
 
@@ -854,20 +619,20 @@ of the input order. Each function also, optionally, defines a doc section.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="3-folders.html"
+       href="1-intro.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>3. Folders</strong></p>
+        <p class="prev-next-title"><strong>1. Intro</strong></p>
       </div>
     </a>
     <a class="right-next"
-       href="5-publish.html"
+       href="3-install.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>5. Publish</strong></p>
+        <p class="prev-next-title"><strong>3. Install</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -890,17 +655,8 @@ of the input order. Each function also, optionally, defines a doc section.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api"><strong>API</strong></a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#syntax"><strong>Syntax</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#commands"><strong>Commands</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tags"><strong>Tags</strong></a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples"><strong>Examples</strong></a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1"><strong>Example 1</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2"><strong>Example 2</strong></a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ex-1"><strong>Ex. 1</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ex-2"><strong>Ex. 2</strong></a></li>
 </ul>
   </nav></div>
 
@@ -908,7 +664,7 @@ of the input order. Each function also, optionally, defines a doc section.</p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/4-edit.rst.txt"
+      <li><a href="_sources/2-examples.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div></div>

@@ -1,4 +1,4 @@
-**2. Install**
+**3. Install**
 ===============
 
 **rivtzip** is a collection of three zip files that installs the rivt framework

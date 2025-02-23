@@ -1,4 +1,4 @@
-**3. Folders**
+**4. Folders**
 ==============
 
 The rivt folder structure is designed to produce reports and open source
@@ -8,10 +8,11 @@ or generated from the command line with::
     python -m rivtfolders
 
 An example folder structure is shown below. **rivt** implements a file and
-folder structure to simplify file sharing and control. Each rivt file (and doc) is idenfiifed by a unique rivt file prefix with
-the form rivddss-filename where dd is a two digit division number and ss is a
-two digit subdivision number e.g., riv0203-loads.py is the third subdivision of
-division two. Editing the rivt number also changes the report organization.
+folder structure to simplify file sharing and control. Each rivt file (and doc)
+is idenfiifed by a unique rivt file prefix with the form rivddss-filename where
+dd is a two digit division number and ss is a two digit subdivision number
+e.g., riv0203-loads.py is the third subdivision of division two. Editing the
+rivt number also changes the report organization.
 
 **rivt** input files are organized in numbered divisions. Output files (docs)
 are written to the *docs* folder. rivt reports are collections of docs and are
