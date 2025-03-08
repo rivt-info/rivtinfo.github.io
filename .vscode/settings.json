@@ -1,8 +1,4 @@
 {
-    "inline-bookmarks.default.words.blue": "rv.R",
-    "inline-bookmarks.default.words.green": "rv.I",
-    "inline-bookmarks.default.words.purple": "rv.V",
-    "inline-bookmarks.default.words.red": "rv.T",
     "inline-bookmarks.view.showVisibleFilesOnly": true,
     "insertDateString.format": "MM-DD-YYYY hh:mm:ss",
     "insertDateString.formatDate": "MM-DD-YYYY",

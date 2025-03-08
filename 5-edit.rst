@@ -19,14 +19,14 @@ GitHub Flavored Markdown (GFM) and PDF.
 
 =========== ============ ===================================
 API         Name             Purpose
------------ ------------ -----------------------------------
+=========== ============ ===================================
 **rv.R**    Run             Run external programs
 **rv.I**    Insert          Insert static resources 
 **rv.V**    Value           Calculate values
 **rv.T**    Tool            Python functions
-rv.X        Exclude         Skip rivt function (editing)
 rv.W        Write           Write docs or reports and exit
-rv.Q        Quit            Exit rivt
+rv.X        Exclude         Skip rivt function (editing)
+rv.Q        Quit            Exit rivt (editing)
 =========== ============ ===================================
 
 Each API function defines a document section which may be arranged in any
@@ -44,7 +44,7 @@ any utf-8 text. Commands and tags applicable to each function are defined
 
 **rivt** syntax includes **COMMANDS** for file operations and **TAGS** for text
 formatting. Any text not defined by commands or tags is passed through as
-`restructuredText <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_. COMMANDS and
+`restructuredText <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_. 
 
 
 **Commands**
@@ -55,9 +55,9 @@ or two vertical bars. A double bar is used for write commands (||) and a single
 bar (|) for read commands. The command bar is followed by the command name,
 relative file path and parameters, all separated by a single bar:
 
-**| A READ COMMAND | relative file path | params**
+**|A READ COMMAND| relative file path | params**
 
-**|| A WRITE COMMAND | relative file path | params**
+**||A WRITE COMMAND| relative file path | params**
 
 In the syntax description below parameter options are separated with
 semi-colons and list elements by commas. Optional parameters are in
@@ -67,26 +67,26 @@ organization is described `here <5-folders.html>`_.
 
 **READ**
 
-====== ======================================================= =================
-Scope                       Command                                  File Types
------- ------------------------------------------------------- -----------------
-rv.V    **| VALREAD |** rel. pth |  [rows]                     .csv
-rv.I    **| TABLE |** rel. pth | col width, l;c;r, [rows]      .csv, .txt, .xlsx
-rv.I    **| IMG |** rel. pth | caption, scale, - ;**[_F]**     .png, .jpg
-rv.I    **| IMG2 |** rel. pth | c1, c2, s1, s2, -;**[_F]**     .png, .jpg
-rv.I    **| TEXT |** rel. pth |  plain; rivt; literal; latex   .txt, .tex
-rv.I    **| APPEND |** rel. pth | num; nonum                   .pdf
-====== ======================================================= =================
+========= ======================================================== ================
+Scope                       Command                                 File Types
+========= ======================================================== ================
+rv.V       **|VALUES|** rel. pth | title, [rows], -;_[V]            .csv
+rv.I rv.V  **|IMG|** rel. pth | caption, scale, -;_[F]              .png,.jpg
+rv.I rv.V  **|IMG2|** rel. pth | c1, c2, s1, s2, -;_[F]             .png,.jpg
+rv.I       **|TABLE|** rel. pth | title, col w, l;c;r, [r], -;_[T]  .csv,.txt,.xlsx
+rv.I       **|TEXT|** rel. pth |  plain; rivt; literal; latex       .txt,.tex
+========= ======================================================== ================
 
 **WRITE**
 
-=========== =============================================== ======================
+=========== =============================================== ====================
 Scope                        Command                         Notes 
------------ ----------------------------------------------- ----------------------
-rv.V         a **=** 1+1 | reference | units | decimals      **=** is command tag
-rv.W        **|| DOC |** docs | (pdf, txt, html, pdf2)       pdf2 uses rst2pdf
-rv.W        **|| REPORT |** docs | (pdf, txt, html, pdf2)    pdf uses latex pdf
-=========== =============================================== ======================
+=========== =============================================== ====================
+rv.V         a := 1+1 | reference | units | decimals         := a command tag
+rv.W         **||DOC|** docs | pdf; txt; html; pdf2          pdf2 uses rst2pdf
+rv.W         **||REPORT|** docs | pdf; txt; html; pdf2       pdf uses latex pdf
+rv.W         **||APPEND|** rel. pth | num; nonum             .pdf,.txt
+=========== =============================================== ====================
 
 **Tags**
 ~~~~~~~~
@@ -98,33 +98,34 @@ on the last line of the block (note: some tags only format pdf and html output).
 
 ================ ======================= =======================================
 Scope             Line Tags                    Description
----------------- ----------------------- ---------------------------------------
-rv.I  rv.V                    _[**G**]      new page
-rv.I  rv.V               text _[**C**]      center text 
-rv.I  rv.V            caption _[**F**]      autonumber, format image [1]
-rv.I  rv.V              title _[**T**]      autonumber, format table
-rv.I  rv.V              label _[**E**]      autonumber, format equation
-rv.I                 equation _[**N**]      autonumber, format Python math 
-rv.I                 equation _[**S**]      format Python math 
-rv.I                     text _[**#**]      autonumber footnote
-rv.I                  descrip _[**D**]      footnote description
-rv.I                  --------_[**H**]      horizontal line
-rv.I               url, label _[**K**]      link 
-rv.I                    text  _[**B**]      center bold text (lpdf, html)
+================ ======================= =======================================
+rv.V                    label **_[E]**      format, autonumber equation
+rv.V                    label **_[V]**      format, autonumber values [1]
+rv.I  rv.V            caption **_[F]**      format, autonumber image [1]
+rv.I  rv.V                    **_[P]**      new page
+rv.I  rv.V               text **_[C]**      center text 
+rv.I  rv.V               text **_[B]**      center bold text (pdf, pdf2, html)
+rv.I  rv.V                  --------        horizontal line (4 or more - )
+rv.I                    title **_[T]**      format, autonumber table [1]
+rv.I                 equation **_[N]**      format, autonumber symbol equation 
+rv.I                 equation **_[S]**      format symbol math 
+rv.I                     text **_[#]**      autonumber footnote
+rv.I                  descrip **_[D]**      footnote description
+rv.I               url, label **_[U]**      url link 
 ================ ======================= =======================================
 
-[1] Figure tag may be included **IMG** command
+    [1] tags may added to a command label or title as a parameter
 
-=========== =============== =====================================================
+=========== =============== ====================================================
 Scope        Block Tags      Description
------------ --------------- -----------------------------------------------------
-rv.V          _[[**V**]]       start value-format block
-rv.I rv.V     _[[**Q**]]       end block
-rv.I          _[[**N**]]       start indent block
-rv.I          _[[**O**]]       start literal (code) block
-rv.I         __[[**L**]]       start latex block (lpdf, html)
-rv.I         __[[**I**]]       start italic block (lpdf, html)
-rv.I         __[[**B**]]       start bold block  (lpdf, html)
-rv.I         __[[**T**]]       start indent italic block (lpdf, html)
-=========== =============== =====================================================
+=========== =============== ====================================================
+rv.V          **_[[V]]**       start values format block, autonumber
+rv.I rv.V     **_[[Q]]**       end block
+rv.I          **_[[S]]**       start indent block
+rv.I          **_[[C]]**       start code (literal) block
+rv.I          **_[[L]]**       start latex block (lpdf, html)
+rv.I          **_[[O]]**       start italic (oblique) block (lpdf, html)
+rv.I          **_[[B]]**       start bold block  (lpdf, html)
+rv.I          **_[[I]]**       start indent italic block (lpdf, html)
+=========== =============== ====================================================
   
