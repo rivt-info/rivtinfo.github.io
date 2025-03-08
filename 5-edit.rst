@@ -99,15 +99,14 @@ on the last line of the block (note: some tags only format pdf and html output).
 ================ ======================= =======================================
 Scope             Line Tags                    Description
 ================ ======================= =======================================
-rv.V                    label **_[E]**      format, autonumber equation
-rv.V                    label **_[V]**      format, autonumber values [1]
-rv.I  rv.V            caption **_[F]**      format, autonumber image [1]
-rv.I  rv.V                    **_[P]**      new page
+rv.V                    label **_[V]**      autonumber values [1]
+rv.I  rv.V            caption **_[F]**      autonumber image [1]
+rv.I  rv.V              label **_[E]**      autonumber equation
 rv.I  rv.V               text **_[C]**      center text 
 rv.I  rv.V               text **_[B]**      center bold text (pdf, pdf2, html)
 rv.I  rv.V                  --------        horizontal line (4 or more - )
-rv.I                    title **_[T]**      format, autonumber table [1]
-rv.I                 equation **_[N]**      format, autonumber symbol equation 
+rv.I  rv.V                    **_[P]**      new page
+rv.I                    title **_[T]**      autonumber table [1]
 rv.I                 equation **_[S]**      format symbol math 
 rv.I                     text **_[#]**      autonumber footnote
 rv.I                  descrip **_[D]**      footnote description
