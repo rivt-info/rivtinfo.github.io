@@ -29,8 +29,8 @@ rv.X        Exclude         Skip rivt function (editing)
 rv.Q        Quit            Exit rivt (editing)
 =========== ============ ===================================
 
-Each API function defines a document section which may be arranged in any
-order or frequency. 
+Each API function defines a document sections. Sections may be arranged in any
+order or frequency.
 
 **Syntax**
 ~~~~~~~~~~~
