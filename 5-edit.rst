@@ -69,15 +69,15 @@ the first line. They evaluate a multi-line text block and end with _[[**Q**]]
 on the last line of the block (note: some tags only format pdf and html output).
 
 
-========= ========================================================= ================
+========== ========================================================= ================
 Scope                      Read Commands                              File Types
-========= ========================================================= ================
-rv.V       **|VALUES|** rel. pth | title, [rows], -;_[V]            .csv
-rv.I rv.V  **|IMG|** rel. pth | caption, scale, -;_[F]              .png,.jpg
-rv.I rv.V  **|IMG2|** rel. pth | c1, c2, s1, s2, -;_[F]             .png,.jpg
-rv.I       **|TABLE|** rel. pth | title, col w, l;c;r, [r], -;_[T]  .csv,.txt,.xlsx
-rv.I       **|TEXT|** rel. pth | plain; tags; literal; latex; code  .txt,.tex
-========= ========================================================= ================
+========== ========================================================= ================
+rv.V       **|VALUES|** rel. pth | title, [rows], -;_[V]              .csv
+rv.I, rv.V **|IMG|** rel. pth | caption, scale, -;_[F]                .png,.jpg
+rv.I, rv.V **|IMG2|** rel. pth | c1, c2, s1, s2, -;_[F]               .png,.jpg
+rv.I       **|TABLE|** rel. pth | title, col w, l;c;r, [r], -;_[T]    .csv,.txt,.xlsx
+rv.I       **|TEXT|** rel. pth | [[block tag]]                        .txt,.tex
+========== ========================================================= ================
 
 =========== =============================================== ====================
 Scope                        Write Commands                         Notes 
@@ -92,12 +92,12 @@ rv.W         **||APPEND|** rel. pth | num; nonum             .pdf,.txt
 Scope             Line Tags                    Description
 ================ ======================= =======================================
 rv.V                    label **_[V]**      autonumber values table [1]
-rv.I  rv.V            caption **_[F]**      autonumber image [1]
-rv.I  rv.V              label **_[E]**      autonumber equation
-rv.I  rv.V               text **_[C]**      center text 
-rv.I  rv.V               text **_[B]**      center bold text (pdf, pdf2, html)
-rv.I  rv.V                    **_[P]**      new page
-rv.I  rv.V                  --------        horizontal line (4 or more - )
+rv.I, rv.V            caption **_[F]**      autonumber image [1]
+rv.I, rv.V              label **_[E]**      autonumber equation
+rv.I, rv.V               text **_[C]**      center text 
+rv.I, rv.V               text **_[B]**      center bold text (pdf, pdf2, html)
+rv.I, rv.V                    **_[P]**      new page
+rv.I, rv.V                  --------        horizontal line (4 or more - )
 rv.I                    title **_[T]**      autonumber table [1]
 rv.I                 equation **_[S]**      format symbol math 
 rv.I                     text **_[#]**      autonumber footnote
