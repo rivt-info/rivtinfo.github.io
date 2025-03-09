@@ -47,59 +47,51 @@ formatting. Any text not defined by commands or tags is passed through as
 `restructuredText <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_. 
 
 
-**Commands**
-~~~~~~~~~~~~~
+**COMMANDS**
 
-Commands read and write external files. They start in the first column with one
-or two vertical bars. A double bar is used for write commands (||) and a single
-bar (|) for read commands. The command bar is followed by the command name,
-relative file path and parameters, all separated by a single bar:
 
-**|A READ COMMAND| relative file path | params**
-
-**||A WRITE COMMAND| relative file path | params**
+Commands read and write external files. They start in the first column with a
+vertical bars. A double bar is used for write commands (||) and a single bar
+(|) for read commands. The command bar is followed by the command name,
+the relative file path and parameters, each separated by a single bar:
 
 In the syntax description below parameter options are separated with
-semi-colons and list elements by commas. Optional parameters are in
-parenthesis. File locations are specified using paths relative to the rivt file
-location and the folder structure. File alias are also implemented. Folder
-organization is described `here <5-folders.html>`_.
+semi-colons and elements by commas. File locations are specified using paths
+relative to the rivt file location. Using the standard folder structure is
+strongly recommended. Folder organization is described `here <5-folders.html>`_.
 
-**READ**
 
-========= ======================================================== ================
-Scope                       Command                                 File Types
-========= ======================================================== ================
-rv.V       **|VALUES|** rel. pth | title, [rows], -;_[V]            .csv
-rv.I rv.V  **|IMG|** rel. pth | caption, scale, -;_[F]              .png,.jpg
-rv.I rv.V  **|IMG2|** rel. pth | c1, c2, s1, s2, -;_[F]             .png,.jpg
-rv.I       **|TABLE|** rel. pth | title, col w, l;c;r, [r], -;_[T]  .csv,.txt,.xlsx
-rv.I       **|TEXT|** rel. pth | plain; tags; literal; latex; code  .txt,.tex
-========= ======================================================== ================
-
-**WRITE**
-
-=========== =============================================== ====================
-Scope                        Command                         Notes 
-=========== =============================================== ====================
-rv.V         a := 1+1 | reference | units | decimals         := a command tag
-rv.W         **||DOC|** docs | pdf; txt; html; pdf2          pdf2 uses rst2pdf
-rv.W         **||REPORT|** docs | pdf; txt; html; pdf2       pdf uses latex pdf
-rv.W         **||APPEND|** rel. pth | num; nonum             .pdf,.txt
-=========== =============================================== ====================
-
-**Tags**
-~~~~~~~~
+**TAGS**
 
 **Line** tags format a line of text,are added at the end of the line and
 are denoted with _[**TAG**]. **Block** tags are denoted with _[[**TAG**]] on
 the first line. They evaluate a multi-line text block and end with _[[**Q**]]
 on the last line of the block (note: some tags only format pdf and html output).
 
+
+========= ========================================================= ================
+Scope                      Read Commands                              File Types
+========= ========================================================= ================
+rv.V       **|VALUES|** rel. pth | title, [rows], -;_[V]            .csv
+rv.I rv.V  **|IMG|** rel. pth | caption, scale, -;_[F]              .png,.jpg
+rv.I rv.V  **|IMG2|** rel. pth | c1, c2, s1, s2, -;_[F]             .png,.jpg
+rv.I       **|TABLE|** rel. pth | title, col w, l;c;r, [r], -;_[T]  .csv,.txt,.xlsx
+rv.I       **|TEXT|** rel. pth | plain; tags; literal; latex; code  .txt,.tex
+========= ========================================================= ================
+
+=========== =============================================== ====================
+Scope                        Write Commands                         Notes 
+=========== =============================================== ====================
+rv.V         a := 1+1 | reference | units | decimals         := a command tag
+rv.W         **||DOC|** rel. pth | pdf; txt; html; pdf2      pdf2 uses rst2pdf
+rv.W         **||REPORT|** rel. pth | pdf; txt; html; pdf2   pdf uses latex
+rv.W         **||APPEND|** rel. pth | num; nonum             .pdf,.txt
+=========== =============================================== ====================
+
 ================ ======================= =======================================
 Scope             Line Tags                    Description
 ================ ======================= =======================================
-rv.V                    label **_[V]**      autonumber values [1]
+rv.V                    label **_[V]**      autonumber values table [1]
 rv.I  rv.V            caption **_[F]**      autonumber image [1]
 rv.I  rv.V              label **_[E]**      autonumber equation
 rv.I  rv.V               text **_[C]**      center text 
@@ -110,21 +102,21 @@ rv.I                    title **_[T]**      autonumber table [1]
 rv.I                 equation **_[S]**      format symbol math 
 rv.I                     text **_[#]**      autonumber footnote
 rv.I                  descrip **_[D]**      footnote description
-rv.I               url, label **_[U]**      url link 
+rv.I               url, label **_[U]**      url link (pdf, pdf2, html)
 ================ ======================= =======================================
 
-    [1] tags may added to a command label or title as a parameter
+[1] tags may be added to the command as a parameter
 
 =========== =============== ====================================================
 Scope        Block Tags      Description
 =========== =============== ====================================================
-rv.V          **_[[V]]**       start values format block, autonumber
+rv.V          **_[[V]]**       values format block, autonumber
 rv.I rv.V     **_[[Q]]**       end block
-rv.I          **_[[S]]**       start indent block
-rv.I          **_[[C]]**       start code (literal) block
-rv.I          **_[[L]]**       start latex block (lpdf, html)
-rv.I          **_[[O]]**       start italic (oblique) block (lpdf, html)
-rv.I          **_[[B]]**       start bold block  (lpdf, html)
-rv.I          **_[[I]]**       start indent italic block (lpdf, html)
+rv.I          **_[[S]]**       indent block
+rv.I          **_[[C]]**       code (literal) block
+rv.I          **_[[L]]**       latex block (lpdf, html)
+rv.I          **_[[O]]**       italic (oblique) block (lpdf, html)
+rv.I          **_[[B]]**       bold block  (lpdf, html)
+rv.I          **_[[I]]**       indent italic block (lpdf, html)
 =========== =============== ====================================================
   
