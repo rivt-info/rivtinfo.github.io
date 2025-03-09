@@ -104,8 +104,8 @@ rv.I  rv.V            caption **_[F]**      autonumber image [1]
 rv.I  rv.V              label **_[E]**      autonumber equation
 rv.I  rv.V               text **_[C]**      center text 
 rv.I  rv.V               text **_[B]**      center bold text (pdf, pdf2, html)
-rv.I  rv.V                  --------        horizontal line (4 or more - )
 rv.I  rv.V                    **_[P]**      new page
+rv.I  rv.V                  --------        horizontal line (4 or more - )
 rv.I                    title **_[T]**      autonumber table [1]
 rv.I                 equation **_[S]**      format symbol math 
 rv.I                     text **_[#]**      autonumber footnote
