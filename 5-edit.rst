@@ -25,8 +25,8 @@ API         Name             Purpose
 **rv.V**    Value           Calculate values
 **rv.T**    Tool            Python functions
 rv.W        Write           Write docs or reports and exit
-rv.X        Exclude         Skip rivt function (editing)
-rv.Q        Quit            Exit rivt (editing)
+rv.X        Exclude         Skip rivt function (development)
+rv.Q        Quit            Exit rivt (development)
 =========== ============ ===================================
 
 Each API function defines a document sections. Sections may be arranged in any
