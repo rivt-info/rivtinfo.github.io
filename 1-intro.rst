@@ -1,70 +1,56 @@
 **1. Intro**
 =============
 
-**rivt** is a markup language and framework for writing and publishing
-engineering documents with an emphasis on template sharing and reuse. Software
-for engineering documents is already widely available but there are barriers to
-sharing and modifying source files between programs and versions. The barriers
-include high software and update costs, and incompatibility between programs,
-upgrades and operating systems. The current situation requires repeated
-unproductive rewrites of similar engineering documents to accommodate different
-software programs. Sharing calculation details for new and developing
-technologies is also restricted by these barriers.
+**rivt** is a markup language for writing and publishing engineering documents,
+with an emphasis on file sharing and collated reports.
 
-In addition, existing programs are generally not designed to produce collated
-reports. Engineering reports are typically assembled from a variety of
-modeling, calculations, standards and other published documents that need to be
-organized and compiled. **rivt** is designed to compile inputs from various
-sources into a single organized document.
+Engineering documents typically include text, tables, diagrams, equations and
+calculations. Although engineering document software that can handle this wide
+variety of objects is available, there are barriers to sharing document source
+files and assembling reports. 
 
-The table below summarizes the **rivt** features that address these
-longstanding and frustrating limitations to efficient collaboration and
-publishing.
+The barriers include high initial and update costs for each of the incompatible
+programs, incompatible updates within program types, and operating system
+constraints. Given these constraints, an engineering document source file will
+generally have limited distribution, since documents need to be rewritten in
+each program type. Also, sharing details and insights around new and developing
+technologies is restricted because of the program acauisition and rewrite
+overhead. Finally, existing programs are not designed to easily produce collated
+reports from multiple document sources, which leads to significant collating
+and publishing efforts. 
 
-Table: Comparison of Program Features
--------------------------------------
-========== ========= ========== ========== ======== ======== ======= ======== ======== 
-Program    Open Src  Compat.[1]  Vers.[2]  Text[3]  All-OS   Remote   Local   Reports  
-========== ========= ========== ========== ======== ======== ======= ======== ======== 
-Matlab     no        no          no          no      no       no      yes      no 
-Mathcad    no        no          no          no      no       no      yes      no 
-Mathemat.  no        no          no          no      no       no      yes      no 
-Online     no        no          no          no      no       yes     no       no 
-Jupyter    yes       yes         no          no      yes      yes     yes      no
-**rivt**   **yes**   **yes**    **yes**    **yes**  **yes**  **yes** **yes**  **yes** 
-========== ========= ========== ========== ======== ======== ======= ======== ========  
+Engineering reports are typically assembled from a variety of modeling,
+calculation, standard codes and other inputs. Thye need to be organized and
+integrated into a single document. **rivt** is designed to work with many
+generic engineering software output types, and to automate report assembly. The
+table below compares **rivt** features with other programs.
+
+**Table: Comparison of Program Features**
+
+=========== ========= ========== ========== ======== ======== ======= ======== ======== 
+Program     Open Src  Compat.[1]  Vers.[2]  Text[3]  All-OS   Remote   Local   Reports  
+=========== ========= ========== ========== ======== ======== ======= ======== ======== 
+Matlab      no        no          no          no      no       no      yes      no 
+Mathcad     no        no          no          no      no       no      yes      no 
+Mathemat.   no        no          no          no      no       no      yes      no 
+Cloud Prg.  no        no          no          no      yes      yes     no       no 
+Jupyter     yes       yes         no          no      yes      yes     yes      no
+**rivt**    **yes**   **yes**    **yes**    **yes**  **yes**  **yes** **yes**  **yes** 
+=========== ========= ========== ========== ======== ======== ======= ======== ========  
 
 [1] Forward, backward file compatiblilty
 
-[2] Versioning for document files
+[2] Extensive versioning for document files
 
-[3] Readable text input files
+[3] Readable and editable text input files
 
 
 **Definitions**
----------------
+----------------
 
-
-A **rivt file** is a Python file that imports the **rivtlib** package.
-
-A **rivt doc** (document) is a text, HTML or PDF output file. 
-
-A **rivt report** is a collated collection of rivt docs.
-
-**rivtlib** is a `Python library <https://rivtlib.net>`_ that generates 
-**rivt docs** and **reports**. 
-
-The **rivtlib** source code is `here <https://github.com/rivtlib-net/rivtlib>`_
-
-**rivtzip** is a portable, open source editing and publishing framework.
-
---------------------------------------------------------------------------------
-
-
-A **rivt** file is a Python file (.py) that imports the **rivtlib** api:: 
+A **rivt** file is a text file (.py) that imports the **rivtlib** api:: 
 
     import rivtlib.api as rv
-
 
 which exposes 6 API functions ::
 
@@ -72,8 +58,9 @@ which exposes 6 API functions ::
     rv.I(rS) - (Insert) Insert text, images, tables and math equations 
     rv.V(rS) - (Values) Evaluate tables and equations 
     rv.T(rS) - (Tools) Execute Python functions 
-    rv.X(rS) - (eXclude) Skip rivt-string processing 
     rv.W(rS) - (Write) Write formatted rivt documents 
+    rv.X(rS) - (eXclude) Skip rivt-string processing (interactive editing) 
+    rv.Q()   - (Quit) Stop file processing (interactive editing)    
 
 
 
@@ -117,8 +104,22 @@ zip files. The rivtzip framework includes five open source projects:
 the answer to question 2.0 
 
 
+
 **Terms**
 ----------
+
+    - A **rivt file** is a text file (.py) that imports the **rivtlib** package.
+
+    - A **rivt doc** (document) is a text, HTML or PDF file output of a **rivt** file. 
+
+    - A **rivt report** is a collated collection of **rivt docs**.
+
+    - **rivtlib** is a `Python library <https://rivtlib.net>`_ that generates **rivt docs** and **reports** from a **rivt** file.
+
+    - **rivtedit** is a an open source editing and publishing framework built around `VScode <https://vscode.com>`_.
+
+    - **rivtzip** is a portable, single folder version of **rivtedit**.
+
 
 doc
 ~~~
