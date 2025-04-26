@@ -1,5 +1,5 @@
 
-.. figure::  _static/img/rivt53b.png
+.. figure::  _static/img/home1.png
     :class: dark-light
     :scale: 40 %
     :figwidth: image

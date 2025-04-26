@@ -5,25 +5,20 @@
 with an emphasis on file sharing and collated reports.
 
 Engineering documents typically include text, tables, diagrams, equations and
-calculations. Although engineering document software that can handle this wide
-variety of objects is available, there are barriers to sharing document source
-files and assembling reports. 
+calculations. Even though software exists for this use, there are implementation
+issues that reduce their usefulness. 
 
-The barriers include high initial and update costs for each of the incompatible
-programs, incompatible updates within program types, and operating system
-constraints. Given these constraints, an engineering document source file will
-generally have limited distribution, since documents need to be rewritten in
-each program type. Also, sharing details and insights around new and developing
-technologies is restricted because of the program acauisition and rewrite
-overhead. Finally, existing programs are not designed to easily produce collated
-reports from multiple document sources, which leads to significant collating
-and publishing efforts. 
+These include high initial and update costs combined with incompatibilities
+between programs, program updates and operating systems. Given these
+constraints, a typical document source will generally have limited distribution.
+Also, sharing details and insights around new and developing technologies is
+restricted because of the program acqusition and rewrite costs. Finally,
+existing programs are not designed to easily produce organized reports.
 
-Engineering reports are typically assembled from a variety of modeling,
-calculation, standard codes and other inputs. Thye need to be organized and
-integrated into a single document. **rivt** is designed to work with many
-generic engineering software output types, and to automate report assembly. The
-table below compares **rivt** features with other programs.
+Engineering reports are typically assembled from a variety of model outputs,
+calculations, and design codes. **rivt** is designed to integrate many output
+types and automate report assembly. The table below compares **rivt** features
+with other programs.
 
 **Table: Comparison of Program Features**
 

@@ -390,25 +390,22 @@
                   
   <section id="intro">
 <h1><strong>1. Intro</strong><a class="headerlink" href="#intro" title="Link to this heading">#</a></h1>
-<p><strong>rivt</strong> is a markup language and framework for writing and publishing
-engineering documents with an emphasis on template sharing and reuse. Software
-for engineering documents is already widely available but there are barriers to
-sharing and modifying source files between programs and versions. The barriers
-include high software and update costs, and incompatibility between programs,
-upgrades and operating systems. The current situation requires repeated
-unproductive rewrites of similar engineering documents to accommodate different
-software programs. Sharing calculation details for new and developing
-technologies is also restricted by these barriers.</p>
-<p>In addition, existing programs are generally not designed to produce collated
-reports. Engineering reports are typically assembled from a variety of
-modeling, calculations, standards and other published documents that need to be
-organized and compiled. <strong>rivt</strong> is designed to compile inputs from various
-sources into a single organized document.</p>
-<p>The table below summarizes the <strong>rivt</strong> features that address these
-longstanding and frustrating limitations to efficient collaboration and
-publishing.</p>
-<section id="table-comparison-of-program-features">
-<h2>Table: Comparison of Program Features<a class="headerlink" href="#table-comparison-of-program-features" title="Link to this heading">#</a></h2>
+<p><strong>rivt</strong> is a markup language for writing and publishing engineering documents,
+with an emphasis on file sharing and collated reports.</p>
+<p>Engineering documents typically include text, tables, diagrams, equations and
+calculations. Even though software exists for this use, there are implementation
+issues that reduce their usefulness.</p>
+<p>These include high initial and update costs combined with incompatibilities
+between programs, program updates and operating systems. Given these
+constraints, a typical document source will generally have limited distribution.
+Also, sharing details and insights around new and developing technologies is
+restricted because of the program acqusition and rewrite costs. Finally,
+existing programs are not designed to easily produce organized reports.</p>
+<p>Engineering reports are typically assembled from a variety of model outputs,
+calculations, and design codes. <strong>rivt</strong> is designed to integrate many output
+types and automate report assembly. The table below compares <strong>rivt</strong> features
+with other programs.</p>
+<p><strong>Table: Comparison of Program Features</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Program</p></th>
@@ -453,12 +450,12 @@ publishing.</p>
 <td><p>yes</p></td>
 <td><p>no</p></td>
 </tr>
-<tr class="row-odd"><td><p>Online</p></td>
+<tr class="row-odd"><td><p>Cloud Prg.</p></td>
 <td><p>no</p></td>
 <td><p>no</p></td>
 <td><p>no</p></td>
 <td><p>no</p></td>
-<td><p>no</p></td>
+<td><p>yes</p></td>
 <td><p>yes</p></td>
 <td><p>no</p></td>
 <td><p>no</p></td>
@@ -487,20 +484,11 @@ publishing.</p>
 </table>
 </div>
 <p>[1] Forward, backward file compatiblilty</p>
-<p>[2] Versioning for document files</p>
-<p>[3] Readable text input files</p>
-</section>
+<p>[2] Extensive versioning for document files</p>
+<p>[3] Readable and editable text input files</p>
 <section id="definitions">
 <h2><strong>Definitions</strong><a class="headerlink" href="#definitions" title="Link to this heading">#</a></h2>
-<p>A <strong>rivt file</strong> is a Python file that imports the <strong>rivtlib</strong> package.</p>
-<p>A <strong>rivt doc</strong> (document) is a text, HTML or PDF output file.</p>
-<p>A <strong>rivt report</strong> is a collated collection of rivt docs.</p>
-<p><strong>rivtlib</strong> is a <a class="reference external" href="https://rivtlib.net">Python library</a> that generates
-<strong>rivt docs</strong> and <strong>reports</strong>.</p>
-<p>The <strong>rivtlib</strong> source code is <a class="reference external" href="https://github.com/rivtlib-net/rivtlib">here</a></p>
-<p><strong>rivtzip</strong> is a portable, open source editing and publishing framework.</p>
-<hr class="docutils" />
-<p>A <strong>rivt</strong> file is a Python file (.py) that imports the <strong>rivtlib</strong> api:</p>
+<p>A <strong>rivt</strong> file is a text file (.py) that imports the <strong>rivtlib</strong> api:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">rivtlib.api</span> <span class="k">as</span> <span class="nn">rv</span>
 </pre></div>
 </div>
@@ -509,8 +497,9 @@ publishing.</p>
 <span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="n">rS</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">Insert</span><span class="p">)</span> <span class="n">Insert</span> <span class="n">text</span><span class="p">,</span> <span class="n">images</span><span class="p">,</span> <span class="n">tables</span> <span class="ow">and</span> <span class="n">math</span> <span class="n">equations</span>
 <span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="n">rS</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">Values</span><span class="p">)</span> <span class="n">Evaluate</span> <span class="n">tables</span> <span class="ow">and</span> <span class="n">equations</span>
 <span class="n">rv</span><span class="o">.</span><span class="n">T</span><span class="p">(</span><span class="n">rS</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">Tools</span><span class="p">)</span> <span class="n">Execute</span> <span class="n">Python</span> <span class="n">functions</span>
-<span class="n">rv</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="n">rS</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">eXclude</span><span class="p">)</span> <span class="n">Skip</span> <span class="n">rivt</span><span class="o">-</span><span class="n">string</span> <span class="n">processing</span>
 <span class="n">rv</span><span class="o">.</span><span class="n">W</span><span class="p">(</span><span class="n">rS</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">Write</span><span class="p">)</span> <span class="n">Write</span> <span class="n">formatted</span> <span class="n">rivt</span> <span class="n">documents</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="n">rS</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">eXclude</span><span class="p">)</span> <span class="n">Skip</span> <span class="n">rivt</span><span class="o">-</span><span class="n">string</span> <span class="n">processing</span> <span class="p">(</span><span class="n">interactive</span> <span class="n">editing</span><span class="p">)</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">Q</span><span class="p">()</span>   <span class="o">-</span> <span class="p">(</span><span class="n">Quit</span><span class="p">)</span> <span class="n">Stop</span> <span class="n">file</span> <span class="n">processing</span> <span class="p">(</span><span class="n">interactive</span> <span class="n">editing</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
@@ -538,6 +527,16 @@ zip files. The rivtzip framework includes five open source projects:</p>
 </section>
 <section id="terms">
 <h2><strong>Terms</strong><a class="headerlink" href="#terms" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><p>A <strong>rivt file</strong> is a text file (.py) that imports the <strong>rivtlib</strong> package.</p></li>
+<li><p>A <strong>rivt doc</strong> (document) is a text, HTML or PDF file output of a <strong>rivt</strong> file.</p></li>
+<li><p>A <strong>rivt report</strong> is a collated collection of <strong>rivt docs</strong>.</p></li>
+<li><p><strong>rivtlib</strong> is a <a class="reference external" href="https://rivtlib.net">Python library</a> that generates <strong>rivt docs</strong> and <strong>reports</strong> from a <strong>rivt</strong> file.</p></li>
+<li><p><strong>rivtedit</strong> is a an open source editing and publishing framework built around <a class="reference external" href="https://vscode.com">VScode</a>.</p></li>
+<li><p><strong>rivtzip</strong> is a portable, single folder version of <strong>rivtedit</strong>.</p></li>
+</ul>
+</div></blockquote>
 <section id="doc">
 <h3>doc<a class="headerlink" href="#doc" title="Link to this heading">#</a></h3>
 <p>the output file (document) after processing a rivt file</p>
@@ -641,7 +640,6 @@ individual modules.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-comparison-of-program-features">Table: Comparison of Program Features</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions"><strong>Definitions</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#faq"><strong>FAQ</strong></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#questions">Questions</a></li>
