@@ -20,7 +20,6 @@ html_theme = 'pydata_sphinx_theme'
 html_context = {"default_mode": "light"}
 html_sidebars = {"**": []}
 html_static_path = ['_static', '_static/img']
-html_logo = "_static/img/home1.png"
 html_css_files = ['css/custom.css',]
 html_theme_options = {
     "show_nav_level": 2,
@@ -29,8 +28,8 @@ html_theme_options = {
     "footer_start": ["copyright"],
     "footer_end": [],
     "logo": {
-        "image_dark": "_static/img/rivhome3.png",
-        "image_light": "_static/img/rivhome3.png",
+        "image_dark": "_static/img/rhome1.png",
+        "image_light": "_static/img/home1.png",
     }
 }
 
