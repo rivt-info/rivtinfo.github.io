@@ -18,18 +18,17 @@
 Welcome to rivt
 ====================
 
-**rivt** is a markup language and document processing 
-framework for writing engineering reports. It uses plain text input,
-which can be easily shared and modified. It may be installed through 
-its separate components or  downloaded as a single portable 
-zip file (`rivtzip <https://rivtzip.net>`_).
+**rivt** is a document processing framework and markup language for writing
+engineering reports. Because it uses plain text input, reports can be easily
+shared and modified. It may be installed as individual components or downloaded
+as a single portable zip file (`rivtzip <https://rivtzip.net>`_).
 
 The open source **rivt** framework includes:
 
 * `VSCode and extensions <https://code.visualstudio.com>`_  for editing and processing.
 
-* `Python and libraries <https://www.python.org/>`_  for analysis and formatting. 
-  `rivtlib <https://rivtlib.net>`_ is the Python library that provides an API and markup processing.
+* `Python and libraries <https://www.python.org/>`_  for analysis and formatting, including 
+  `rivtlib <https://rivtlib.net>`_  - the Python library that provides a **rivt** API and markup processing.
 
 
 Table of Contents
