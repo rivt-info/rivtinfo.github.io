@@ -29,7 +29,7 @@ html_theme_options = {
     "footer_start": ["copyright"],
     "footer_end": [],
     "logo": {
-        "image_dark": "_static/img/rhome1.png",
+        "image_dark": "_static/img/home1.png",
         "image_light": "_static/img/home1.png",
     }
 }
