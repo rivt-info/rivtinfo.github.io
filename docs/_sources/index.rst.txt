@@ -25,19 +25,19 @@ shared and modified. **rivt** may be installed from its separate components or
 downloaded as a single portable zip file.
 
 
-rivt Framework
+Framework
 ----------------
 
-The open source rivt framework includes:
+The open source framework for rivt includes:
 
 
-`VSCode and extensions <https://code.visualstudio.com>`_  for editing and processing
+* `VSCode and extensions <https://code.visualstudio.com>`_  for editing and processing.
 
-`Python and libraries <https://www.python.org/>`_  for analysis and formatting
+* `Python and libraries <https://www.python.org/>`_  for analysis and formatting. 
+  `rivtlib <https://rivtlib.net>`_ is  the Python library that provides an API and markup processing.
 
-`rivtlib <https://rivtlib.net>`_ is the Python library that processes rivt markup 
+* `rivtzip <https://rivtzip.net>`_ is a portable single file installation of the framework
 
-`rivtzip <https://rivtzip.net>`_ is a portable single file version of the **rivt** framework
 
 
 Table of Contents
