@@ -24,12 +24,7 @@ and publishing reports using plain text input which can be easily
 shared and modified. **rivt** may be installed from its separate components or 
 downloaded as a single portable zip file.
 
-
-Framework
-----------------
-
-The open source framework for rivt includes:
-
+The **rivt** open source framework includes:
 
 * `VSCode and extensions <https://code.visualstudio.com>`_  for editing and processing.
 
