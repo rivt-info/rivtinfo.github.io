@@ -22,7 +22,7 @@ Welcome to rivt
 framework for writing engineering reports. It uses plain text input,
 which can be easily shared and modified. It may be installed through 
 its separate components or  downloaded as a single portable 
-zip file (`rivtzip <https://rivtzip.net>`)_.
+zip file (`rivtzip <https://rivtzip.net>`_).
 
 The **rivt** open source framework includes:
 
