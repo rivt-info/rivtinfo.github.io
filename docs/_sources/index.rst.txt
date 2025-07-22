@@ -24,7 +24,7 @@ which can be easily shared and modified. It may be installed through
 its separate components or  downloaded as a single portable 
 zip file (`rivtzip <https://rivtzip.net>`_).
 
-The **rivt** open source framework includes:
+The open source **rivt** framework includes:
 
 * `VSCode and extensions <https://code.visualstudio.com>`_  for editing and processing.
 
