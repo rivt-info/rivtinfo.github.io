@@ -19,10 +19,10 @@ Welcome to rivt
 ====================
 
 **rivt** is a markup language and document processing 
-framework for writing engineering reports. Its focus is on organizing 
-and publishing reports using plain text input which can be easily
-shared and modified. **rivt** may be installed from its separate components or 
-downloaded as a single portable zip file (`rivtzip <https://rivtzip.net>`)_.
+framework for writing engineering reports. Its using plain text input 
+which can be easily shared and modified. **rivt** may be installed from 
+its separate components or  downloaded as a single portable 
+zip file (`rivtzip <https://rivtzip.net>`)_.
 
 The **rivt** open source framework includes:
 
