@@ -17,6 +17,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 source_suffix = ['.rst', '.md']
 
 html_theme = 'pydata_sphinx_theme'
+html_show_sourcelink = False
 html_context = {"default_mode": "light"}
 html_sidebars = {"**": []}
 html_static_path = ['_static', '_static/img']

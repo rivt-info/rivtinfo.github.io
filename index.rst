@@ -25,8 +25,8 @@ shared and modified. **rivt** may be installed from its separate components or
 downloaded as a single portable zip file.
 
 
-**rivt framework**
----------------------
+rivt Framework
+----------------
 
 The open source rivt framework includes:
 
@@ -40,9 +40,11 @@ The open source rivt framework includes:
 `rivtzip <https://rivtzip.net>`_ is a portable single file version of the **rivt** framework
 
 
+Table of Contents
+------------------
+
 .. toctree::
     :maxdepth: 1
-    :caption: User Manual Contents
 
     1-intro.rst
     2-examples.rst
