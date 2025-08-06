@@ -13,9 +13,6 @@ also runs in the cloud and on mobile devices using GitHub CodeSpaces or other
 cloud service providers.
 
 
-**Examples**
-=============
-
 **Ex. 1**
 -----------
 
