@@ -1,4 +1,4 @@
-**7. Search**
+**6. Search**
 =============
 
 This section provides a convenient search interface for **rivt** files

@@ -1,4 +1,4 @@
-**6. Publish**
+**6. Docs*
 ===============
 
 publish x
