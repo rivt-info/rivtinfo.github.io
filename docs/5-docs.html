@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="_static/favicon-32x32.png" sizes="151x143" rel="icon" type="image/png">
     <link href="_static/favicon-16x16.png" sizes="151x143" rel="icon" type="image/png">
-    <title>7. Search &#8212; rivt.info 0.1 documentation</title>
+    <title>6. Publish &#8212; rivt.info 0.1 documentation</title>
   
   
   
@@ -48,10 +48,11 @@
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = '7-search';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '5-docs';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="6. Publish" href="6-publish.html" />
+    <link rel="next" title="7. Search" href="6-search.html" />
+    <link rel="prev" title="5. Edit" href="4-markup.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -142,29 +143,29 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="2-examples.html">
-    2. Examples
+  <a class="nav-link nav-internal" href="2-install.html">
+    2. Install
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="3-install.html">
-    3. Install
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="4-folders.html">
+  <a class="nav-link nav-internal" href="3-folders.html">
     4. Folders
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="5-edit.html">
+  <a class="nav-link nav-internal" href="4-markup.html">
     5. Edit
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
+    6. Publish
   </a>
 </li>
 
@@ -177,14 +178,7 @@
                 <ul id="pst-nav-more-links" class="dropdown-menu">
                     
 <li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="6-publish.html">
-    6. Publish
-  </a>
-</li>
-
-
-<li class=" current active">
-  <a class="nav-link dropdown-item nav-internal" href="#">
+  <a class="nav-link dropdown-item nav-internal" href="6-search.html">
     7. Search
   </a>
 </li>
@@ -235,6 +229,10 @@
   
 
   
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
 </div>
 
     </header>
@@ -269,42 +267,35 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="2-examples.html">
-    2. Examples
+  <a class="nav-link nav-internal" href="2-install.html">
+    2. Install
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="3-install.html">
-    3. Install
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="4-folders.html">
+  <a class="nav-link nav-internal" href="3-folders.html">
     4. Folders
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="5-edit.html">
+  <a class="nav-link nav-internal" href="4-markup.html">
     5. Edit
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="6-publish.html">
-    6. Publish
   </a>
 </li>
 
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="#">
+    6. Publish
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="6-search.html">
     7. Search
   </a>
 </li>
@@ -366,7 +357,7 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>7. Search</strong></span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>6. Publish</strong></span></li>
   </ul>
 </nav>
 </div>
@@ -383,45 +374,50 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="search">
-<h1><strong>7. Search</strong><a class="headerlink" href="#search" title="Link to this heading">#</a></h1>
-<p>This section provides a convenient search interface for <strong>rivt</strong> files
-distributed across GitHub. It searches the full text of the <strong>rivt</strong> root
-README file which contains the rivt report in text form. For advanced searching
-use the GitHub interface  <a class="reference external" href="https://github.com/search">here</a>.</p>
-<p>[</p>
-<p><strong>Search Terms</strong>  ( [S] Search GitHub (Ctrl+Enter) __ [C] Clear input (Ctrl+R) )</p>
-<head>
-
-<style>
-.button {
-background-color: #6f6968; border: 3 px solid white; color: white; padding: 4px 10px;
-text-align: center; text-decoration: none; display: inline-block; font-size: 16px;
-margin: 4px 2px; cursor: pointer;} </style>
-
-<script>
-function searchRivt(){var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;
-window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 13) && e.ctrlKey){document.getElementById("searchBtn").click();}});</script>
-
-<script> function searchOrg(){var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;
-window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 13) && e.ctrlKey){document.getElementById("searchBtn").click();}});</script>
-
-<script> function clearRivt(){document.getElementById("terms").value="";
-document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 82) && e.ctrlKey){document.getElementById("clearBtn").click();}})};</script>
-
-</head>
-
-<button class="button" id="searchBtn" onclick="searchRivt()">S</button><button class="button" id="clearBtn" onclick="clearRivt()">C</button><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal"><br>
-
-<hr><p>Example: <strong>solar+steel+frame</strong> is passed to GitHub as <strong>rivt+solar+steel+frame</strong></p>
-<p>Restrict search within listed GitHub organizations (comma separated)</p>
-<p><strong>Organizations</strong></p>
-<input type="text" id="terms" name="terms" size=40 style="height:38px;font-size:14pt; font-weight: normal">
-
-<hr>
-
-<b>Search Terms</b><br><br>
-<button class="button" id="searchBtn" onclick="searchOrg()">S</button> <button class="button" id="clearBtn" onclick="clearRivt()">C</button><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal"></section>
+  <section id="publish">
+<h1><strong>6. Publish</strong><a class="headerlink" href="#publish" title="Link to this heading">#</a></h1>
+<p>publish x</p>
+<section id="publish-to-github">
+<h2><strong>Publish to Github</strong><a class="headerlink" href="#publish-to-github" title="Link to this heading">#</a></h2>
+<p>The primary purpose of GitHub is to facilitate the version control and issue
+tracking aspects of software development. Labels, milestones, responsibility
+assignment, and a search engine are available for issue tracking. For version
+control, Git (and, by extension, GitHub) allows pull requests to propose changes
+to the source code. Users who can review the proposed changes can see a diff
+between the requested changes and approve them. In Git terminology, this action
+is called “committing” and one instance of it is a “commit.” A history of all
+commits is kept and can be viewed at a later time.</p>
+<p>GitHub supports the following formats and features:</p>
+<ul class="simple">
+<li><p>Documentation,including automatically rendered README files in a variety of
+Markdown-like file formats (see README § On GitHub)</p></li>
+<li><p>Pages, a static web hosting service for blogs, project documentation,
+and books.</p></li>
+<li><p>Wikis, with some repositories consisting solely of wiki content. These
+include curated lists of recommended software which have become known as
+awesome lists.</p></li>
+<li><p>GitHub Actions, which allows building continuous integration and
+continuous deployment pipelines for testing, releasing and deploying software
+without the use of third-party websites/platforms</p></li>
+<li><p>GitHub Codespaces, an online IDE providing users with a virtual machine
+intended to be a work environment to build and test code</p></li>
+<li><p>Graphs: pulse, contributors, commits, code frequency, punch card, network,
+members</p></li>
+<li><p>Email notifications</p></li>
+<li><p>Discussions</p></li>
+<li><p>Nested task-lists within files</p></li>
+<li><p>Visualization of geospatial data</p></li>
+<li><p>image preview in many formats</p></li>
+<li><p>Security Alerts of known Common Vulnerabilities and Exposures in different
+packages</p></li>
+<li><p>GitHub’s Terms of Service do not require public software projects hosted on
+GitHub to meet the Open Source Definition. The terms of service state, “By
+setting your repositories to be viewed publicly, you agree to allow others to
+view and fork your repositories.”</p></li>
+</ul>
+<p><strong>rivt</strong> uses the <a class="reference external" href="https://opensource.org/license/mit/">MIT open source license</a></p>
+</section>
+</section>
 
 
                 </article>
@@ -434,13 +430,22 @@ document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyC
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="6-publish.html"
+       href="4-markup.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>6. Publish</strong></p>
+        <p class="prev-next-title"><strong>5. Edit</strong></p>
       </div>
+    </a>
+    <a class="right-next"
+       href="6-search.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>7. Search</strong></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -448,6 +453,24 @@ document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyC
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publish-to-github"><strong>Publish to Github</strong></a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

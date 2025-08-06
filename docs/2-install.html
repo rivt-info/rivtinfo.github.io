@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="_static/favicon-32x32.png" sizes="151x143" rel="icon" type="image/png">
     <link href="_static/favicon-16x16.png" sizes="151x143" rel="icon" type="image/png">
-    <title>3. Install &#8212; rivt.info 0.1 documentation</title>
+    <title>2. Install &#8212; rivt.info 0.1 documentation</title>
   
   
   
@@ -48,11 +48,11 @@
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = '3-install';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '2-install';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="4. Folders" href="4-folders.html" />
-    <link rel="prev" title="2. Examples" href="2-examples.html" />
+    <link rel="next" title="4. Folders" href="3-folders.html" />
+    <link rel="prev" title="1. Intro" href="1-intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -142,30 +142,30 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="2-examples.html">
-    2. Examples
-  </a>
-</li>
-
-
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="#">
-    3. Install
+    2. Install
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="4-folders.html">
+  <a class="nav-link nav-internal" href="3-folders.html">
     4. Folders
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="5-edit.html">
+  <a class="nav-link nav-internal" href="4-markup.html">
     5. Edit
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="5-docs.html">
+    6. Publish
   </a>
 </li>
 
@@ -178,14 +178,7 @@
                 <ul id="pst-nav-more-links" class="dropdown-menu">
                     
 <li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="6-publish.html">
-    6. Publish
-  </a>
-</li>
-
-
-<li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="7-search.html">
+  <a class="nav-link dropdown-item nav-internal" href="6-search.html">
     7. Search
   </a>
 </li>
@@ -273,43 +266,36 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="2-examples.html">
-    2. Examples
-  </a>
-</li>
-
-
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="#">
-    3. Install
+    2. Install
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="4-folders.html">
+  <a class="nav-link nav-internal" href="3-folders.html">
     4. Folders
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="5-edit.html">
+  <a class="nav-link nav-internal" href="4-markup.html">
     5. Edit
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="6-publish.html">
+  <a class="nav-link nav-internal" href="5-docs.html">
     6. Publish
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="7-search.html">
+  <a class="nav-link nav-internal" href="6-search.html">
     7. Search
   </a>
 </li>
@@ -371,7 +357,7 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>3. Install</strong></span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>2. Install</strong></span></li>
   </ul>
 </nav>
 </div>
@@ -389,11 +375,235 @@
                 <article class="bd-article">
                   
   <section id="install">
-<h1><strong>3. Install</strong><a class="headerlink" href="#install" title="Link to this heading">#</a></h1>
+<h1><strong>2. Install</strong><a class="headerlink" href="#install" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p><a class="reference external" href="https://code.visualstudio.com">VSCode and extensions</a>  for editing and processing.</p></li>
+<li><p><a class="reference external" href="https://www.python.org/">Python and libraries</a>  for analysis and formatting, including
+<a class="reference external" href="https://rivtlib.net">rivtlib</a>  - the Python library that provides a <strong>rivt</strong> API and markup processing.</p></li>
+</ul>
 <p><strong>rivtzip</strong> is a collection of three zip files that installs the rivt framework
 in a portable folder or usb drive. It is available for every OS platform. rivt
 also runs in the cloud and on mobile devices using GitHub CodeSpaces or other
 cloud service providers.</p>
+</section>
+<section id="examples">
+<h1><strong>Examples</strong><a class="headerlink" href="#examples" title="Link to this heading">#</a></h1>
+<section id="ex-1">
+<h2><strong>Ex. 1</strong><a class="headerlink" href="#ex-1" title="Link to this heading">#</a></h2>
+<p>API functions start in column one. rivt-strings are indented four spaces (for
+legibility and code folding).A rivt doc is assembled by each function in order
+of the input order. Each function also, optionally, defines a doc section.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rivtapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">R</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Run function | pass; redact | nocolor; color code</span>
+
+<span class="s2">    The Run function processes shell commands.</span>
+
+<span class="s2">    Each API function defines a new document section. The first line is a</span>
+<span class="s2">    heading line which includes the section heading, a parameter for redacting</span>
+<span class="s2">    sections in a mirror file intended for public sharing, and a parameter for</span>
+<span class="s2">    the background color for the section. If the section heading is preceded by</span>
+<span class="s2">    two dashes (--) the section is continued from the prior section without</span>
+<span class="s2">    introducting a new number.</span>
+
+<span class="s2">    File formatting follows pep8 and ruff. API functions start in column one.</span>
+<span class="s2">    All other lines are indented 4 spaces to facilitate section folding,</span>
+<span class="s2">    bookmarks and legibility.</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Insert function | pass; redact | nocolor</span>
+
+<span class="s2">    The Insert function formats static objects including images, tables,</span>
+<span class="s2">    equations and text.</span>
+
+<span class="s2">    ||text | data01/describe.txt | rivt</span>
+
+<span class="s2">    The table command inserts and formats tabular data from csv or xls files.</span>
+<span class="s2">    The _[t] tag formats and autonumbers table titles.</span>
+
+<span class="s2">    A table title  _[t]</span>
+<span class="s2">    || table | data/file.csv | 60,r</span>
+
+<span class="s2">    The image command inserts and formats image data from png or jpg files. The</span>
+<span class="s2">    _[f] tag formats and autonumbers figures.</span>
+
+<span class="s2">    A figure caption _[f]</span>
+<span class="s2">    || image | data/f1.png | 50</span>
+
+<span class="s2">    Two images may be placed side by side as follows:</span>
+
+<span class="s2">    The first figure caption  _[f]</span>
+<span class="s2">    The second figure caption  _[f]</span>
+<span class="s2">    || image | private/image/f2.png, private/image/f3.png | 45,35</span>
+
+<span class="s2">    The tags _[x] and _[s] format LaTeX and sympy equations:</span>
+
+<span class="s2">    \gamma = </span><span class="se">\f</span><span class="s2">rac</span><span class="si">{5}</span><span class="s2">{x+y} + 3  _[x]</span>
+
+<span class="s2">    x = 32 + (y/2)  _[s]</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Values function |  pass; redact | nocolor</span>
+
+<span class="s2">    The Values fucntion evaluates variables and equations.</span>
+
+<span class="s2">    The equal tag declares a value. A sequence of declared values terminated</span>
+<span class="s2">    with a blank line is formatted as a table.</span>
+
+<span class="s2">    Example of assignment list _[t]</span>
+<span class="s2">    f1 = 10.1 * LBF |LBF, N| a force value</span>
+<span class="s2">    d1 = 12.1 * IN  |IN, CM| a length value</span>
+
+<span class="s2">    An equation tag provides an equation description and number. A colon-equal</span>
+<span class="s2">    tag assigns a value and specifies the result units and the output decimal</span>
+<span class="s2">    places printed in the result and equation.</span>
+
+<span class="s2">    Example equation - Area of circle  _[e]</span>
+<span class="s2">    a1 := 3.14(d1/2)^2 | IN^2, CM^2 | 1,2</span>
+
+<span class="s2">    || declare | data01/values02.csv</span>
+
+<span class="s2">    The declare command imports values from the csv file written by rivt when</span>
+<span class="s2">    processing values in other documents.</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">T</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Tools function | pass; redact | nocolor</span>
+
+<span class="s2">    The Tools function processes Python code.</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+
+<span class="n">rv</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Any text</span>
+
+<span class="s2">    Changing a function to X skips evaluation of that function. Its purposes</span>
+<span class="s2">    include review commenting and debugging.</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">W</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Write function | pass; redact | nocolor</span>
+
+<span class="s2">    The Write function generates docs and reports.</span>
+
+<span class="s2">    | docs |</span>
+
+<span class="s2">    | report |</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="ex-2">
+<h2><strong>Ex. 2</strong><a class="headerlink" href="#ex-2" title="Link to this heading">#</a></h2>
+<p>API functions start in column one. rivt-strings are indented four spaces (for
+legibility and code folding).A rivt doc is assembled by each function in order
+of the input order. Each function also, optionally, defines a doc section.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rivtapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">R</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Run function | pass; redact | nocolor; color code</span>
+
+<span class="s2">    The Run function processes shell commands.</span>
+
+<span class="s2">    Each API function defines a new document section. The first line is a</span>
+<span class="s2">    heading line which includes the section heading, a parameter for redacting</span>
+<span class="s2">    sections in a mirror file intended for public sharing, and a parameter for</span>
+<span class="s2">    the background color for the section. If the section heading is preceded by</span>
+<span class="s2">    two dashes (--) the section is continued from the prior section without</span>
+<span class="s2">    introducting a new number.</span>
+
+<span class="s2">    File formatting follows pep8 and ruff. API functions start in column one.</span>
+<span class="s2">    All other lines are indented 4 spaces to facilitate section folding,</span>
+<span class="s2">    bookmarks and legibility.</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Insert function | pass; redact | nocolor</span>
+
+<span class="s2">    The Insert function formats static objects including images, tables,</span>
+<span class="s2">    equations and text.</span>
+
+<span class="s2">    ||text | data01/describe.txt | rivt</span>
+
+<span class="s2">    The table command inserts and formats tabular data from csv or xls files.</span>
+<span class="s2">    The _[t] tag formats and autonumbers table titles.</span>
+
+<span class="s2">    A table title  _[t]</span>
+<span class="s2">    || table | data/file.csv | 60,r</span>
+
+<span class="s2">    The image command inserts and formats image data from png or jpg files. The</span>
+<span class="s2">    _[f] tag formats and autonumbers figures.</span>
+
+<span class="s2">    A figure caption _[f]</span>
+<span class="s2">    || image | data/f1.png | 50</span>
+
+<span class="s2">    Two images may be placed side by side as follows:</span>
+
+<span class="s2">    The first figure caption  _[f]</span>
+<span class="s2">    The second figure caption  _[f]</span>
+<span class="s2">    || image | private/image/f2.png, private/image/f3.png | 45,35</span>
+
+<span class="s2">    The tags _[x] and _[s] format LaTeX and sympy equations:</span>
+
+<span class="s2">    \gamma = </span><span class="se">\f</span><span class="s2">rac</span><span class="si">{5}</span><span class="s2">{x+y} + 3  _[x]</span>
+
+<span class="s2">    x = 32 + (y/2)  _[s]</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Values function |  pass; redact | nocolor</span>
+
+<span class="s2">    The Values fucntion evaluates variables and equations.</span>
+
+<span class="s2">    The equal tag declares a value. A sequence of declared values terminated</span>
+<span class="s2">    with a blank line is formatted as a table.</span>
+
+<span class="s2">    Example of assignment list _[t]</span>
+<span class="s2">    f1 = 10.1 * LBF |LBF, N| a force value</span>
+<span class="s2">    d1 = 12.1 * IN  |IN, CM| a length value</span>
+
+<span class="s2">    An equation tag provides an equation description and number. A colon-equal</span>
+<span class="s2">    tag assigns a value and specifies the result units and the output decimal</span>
+<span class="s2">    places printed in the result and equation.</span>
+
+<span class="s2">    Example equation - Area of circle  _[e]</span>
+<span class="s2">    a1 := 3.14(d1/2)^2 | IN^2, CM^2 | 1,2</span>
+
+<span class="s2">    || declare | data01/values02.csv</span>
+
+<span class="s2">    The declare command imports values from the csv file written by rivt when</span>
+<span class="s2">    processing values in other documents.</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">T</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Tools function | pass; redact | nocolor</span>
+
+<span class="s2">    The Tools function processes Python code.</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+
+<span class="n">rv</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Any text</span>
+
+<span class="s2">    Changing a function to X skips evaluation of that function. Its purposes</span>
+<span class="s2">    include review commenting and debugging.</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">W</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Write function | pass; redact | nocolor</span>
+
+<span class="s2">    The Write function generates docs and reports.</span>
+
+<span class="s2">    | docs |</span>
+
+<span class="s2">    | report |</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
 <section id="vscode-profiles">
 <h2><strong>VSCode Profiles</strong><a class="headerlink" href="#vscode-profiles" title="Link to this heading">#</a></h2>
 <p>The rivt VSCode profile includes shortcuts for common editing functions and
@@ -1120,16 +1330,16 @@ snippets for API functions and commands.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="2-examples.html"
+       href="1-intro.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>2. Examples</strong></p>
+        <p class="prev-next-title"><strong>1. Intro</strong></p>
       </div>
     </a>
     <a class="right-next"
-       href="4-folders.html"
+       href="3-folders.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
@@ -1156,8 +1366,15 @@ snippets for API functions and commands.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>2. Install</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#examples"><strong>Examples</strong></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ex-1"><strong>Ex. 1</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ex-2"><strong>Ex. 2</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vscode-profiles"><strong>VSCode Profiles</strong></a></li>
 </ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>
