@@ -34,3 +34,8 @@ a:visited {
 a.underline {
     text-decoration: underline
 }
+
+.indented-section {
+    margin-left: 2em;
+    /* Adjust the value for desired indentation */
+}

@@ -1,7 +1,7 @@
 
 .. figure::  _static/img/rivdark55c.png
     :class: dark-light
-    :scale: 30 %
+    :scale: 20 %
     :align: center
     :alt: rivt logo
 
@@ -18,6 +18,8 @@ utf8-text, PDF or HTML.
 
 Table of Contents
 ------------------
+
+.. rst-class:: indented-section
 
 .. toctree::
     :maxdepth: 1
