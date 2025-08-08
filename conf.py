@@ -24,11 +24,10 @@ html_static_path = ['_static', '_static/img']
 html_css_files = ['css/custom.css',]
 html_theme_options = {
     "show_nav_level": 2,
-    "show_toc_level": 3,
-    "navigation_depth": 3,
+    "show_toc_level": 2,
+    "navigation_depth": 2,
     "footer_start": ["copyright"],
     "footer_end": [],
-    "home_page_in_toc": True,
     "logo": {
         "image_dark": "_static/img/rivhome11c.png",
         "image_light": "_static/img/rivhome11c.png",

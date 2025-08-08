@@ -20,8 +20,10 @@ Table of Contents
 ------------------
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
+    :caption: Contents
 
+    self
     Introduction.rst
     Installation.rst
     Markup.rst
