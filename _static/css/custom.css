@@ -2,7 +2,7 @@
 
 html {
     --pst-font-size-base: 16px;
-    --pst-font-size-h1: 18px;
+    --pst-font-size-h1: 16px;
     --pst-font-size-h2: 16px;
     --pst-font-size-h3: 16px;
     --pst-font-size-h4: 14px;
@@ -23,26 +23,26 @@ img.align-center {
 }
 
 
-a.link {
+.link {
     color: hwb(200 15% 27%);
     text-decoration: none;
     font-weight: 400;
 }
 
-a.visited {
+.visited {
     color: hwb(200 15% 27%);
     text-decoration: none;
     font-weight: 400;
 
 }
 
-a.right-next {
+.right-next {
     color: hwb(200 15% 27%);
     font-weight: 300;
     /* Replace with a color name or hex code */
 }
 
-a.left-prev {
+.left-prev {
     color: hwb(200 15% 27%);
     font-weight: 300;
     /* Replace with a color name or hex code */
