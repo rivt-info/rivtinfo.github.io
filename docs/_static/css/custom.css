@@ -18,15 +18,9 @@ img.align-center {
 }
 
 
-a {
-    color: hwb(200 5% 42%);
-    text-decoration: underline;
-    font-weight: normal;
-}
-
 a:link,
 a:visited {
-    color: hwb(200 5% 42%);
+    color: hwb(200 15% 27%);
     text-decoration: underline;
     font-weight: normal;
 }
@@ -38,4 +32,9 @@ a.underline {
 .indented-section {
     margin-left: 2em;
     /* Adjust the value for desired indentation */
+}
+
+.bd-docs-nav .pagination-next a {
+    color: hwb(200 15% 27%);
+    /* Replace with a color name or hex code */
 }

@@ -19,13 +19,6 @@ utf8-text, PDF or HTML.
 Table of Contents
 ------------------
 
-.. rst-class:: indented-section
-
-    this is a test of indent
-
-
-    
-
 .. toctree::
     :maxdepth: 1
 
