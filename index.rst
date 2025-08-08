@@ -9,14 +9,17 @@ rivt
 ======
 
 is an open source markup language and framework for writing and publishing
-engineering documents. Markup syntax is described in :doc:`Markup <Markup>`.
-The framework is described in :doc:`Installation <Installation>` and
-:doc:`Folders <Folders>`. **rivt** input files are plain text Python and documents
+engineering documents. Markup syntax is described in :doc:`here <Markup>`.
+The framework is described :doc:`here <Installation>` and
+:doc:`here <Folders>`. Input files are plain text Python and documents
 may be output as utf8-text, PDF or HTML.
+
+
+Table of Contents
+------------------
 
 .. toctree::
     :maxdepth: 1
-    :caption: Contents
 
     self
     Introduction.rst
