@@ -20,7 +20,7 @@ Table of Contents
 ------------------
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
 
     Introduction.rst
     Installation.rst
