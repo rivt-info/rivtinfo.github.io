@@ -5,8 +5,8 @@
     :align: center
     :alt: rivt logo
 
-rivt
-======
+**rivt**
+=========
 
 is an open source markup language and framework for writing and publishing
 engineering documents. Markup syntax is described :doc:`here <Markup>`.

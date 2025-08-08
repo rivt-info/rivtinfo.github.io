@@ -23,13 +23,22 @@ img.align-center {
 }
 
 
-.link {
+a {
     color: hwb(200 15% 27%);
     text-decoration: none;
     font-weight: 400;
 }
 
-.visited {
+html[data-theme="light"] a {
+    color: hwb(200 15% 27%);
+}
+
+html[data-theme="dark"] a {
+    color: hwb(200 15% 27%);
+}
+
+
+a.visited {
     color: hwb(200 15% 27%);
     text-decoration: none;
     font-weight: 400;
