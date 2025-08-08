@@ -15,8 +15,8 @@
     </embed>
 
 
-Welcome to rivt
-====================
+rivt
+=======
 
 **rivt** is an open source markup language and document framework for writing
 engineering calculations and reports. It uses plain text Python based input that is easily
