@@ -7,19 +7,24 @@
 
 .. raw:: html
 
-    <embed>
-        <hr width="100%" size="5" color="LightGrey" noshade>
-    </embed>
 
 
 rivt
 ====================
 
 **rivt** is an open source markup language and document framework for writing
-engineering calculations and reports. It uses plain text Python based input that is easily
-shared and version controlled. 
+engineering calculations and reports. It uses plain text Python input
+which is easily shared and version controlled.
 
-The framework is described in sections 2 and 3. The markup syntax is described in section 4.
+Framework
+-----------------
+
+The framework is described in sections 2 and 3. 
+
+Makeup
+-----------------
+
+The markup syntax is described in section 4.
 
 
 Table of Contents
