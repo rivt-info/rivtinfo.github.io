@@ -24,13 +24,13 @@ img.align-center {
 
 
 a {
-    color: hwb(200 15% 27%);
+    color: hwb(200 11% 41%);
     text-decoration: none;
     font-weight: 400;
 }
 
 html[data-theme="light"] a {
-    color: hwb(200 15% 27%);
+    color: hwb(200 13% 47%);
 }
 
 html[data-theme="dark"] a {
