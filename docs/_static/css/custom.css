@@ -27,7 +27,7 @@ a:link,
 a:visited {
     color: hwb(200 15% 27%);
     text-decoration: underline;
-    font-weight: normal;
+    font-weight: 400;
 }
 
 a.underline {
