@@ -23,6 +23,7 @@ html_sidebars = {"**": ["sidebar-nav-bs.html"]}
 html_static_path = ['_static', '_static/img']
 html_css_files = ['css/custom.css',]
 html_theme_options = {
+    "home_page_in_toc": True,
     "navbar_align": "left",
     "show_nav_level": 1,
     "show_toc_level": 2,
