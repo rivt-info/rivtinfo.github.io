@@ -19,6 +19,7 @@ utf8-text, PDF or HTML.
     :maxdepth: 1
     :caption: Contents
 
+    self
     Introduction.rst
     Installation.rst
     Markup.rst
