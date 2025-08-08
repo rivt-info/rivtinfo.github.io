@@ -16,15 +16,12 @@ rivt
 engineering calculations and reports. It uses plain text Python input
 which is easily shared and version controlled.
 
-Framework
------------------
+Markup and Framework
+-----------------------
 
-The framework is described in sections 2 and 3. 
+The markup syntax is described in section 4. The framework is described in
+sections 2 and 3.
 
-Makeup
------------------
-
-The markup syntax is described in section 4.
 
 
 Table of Contents
