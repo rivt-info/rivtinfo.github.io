@@ -19,12 +19,12 @@ source_suffix = ['.rst', '.md']
 html_theme = 'pydata_sphinx_theme'
 html_show_sourcelink = False
 html_context = {"default_mode": "light"}
-html_sidebars = {"**": ["search-field.html", "sidebar-nav-bs.html"]}
+html_sidebars = {"**": ["sidebar-nav-bs.html"]}
 html_static_path = ['_static', '_static/img']
 html_css_files = ['css/custom.css',]
 html_theme_options = {
     "navbar_align": "left",
-    "show_nav_level": 2,
+    "show_nav_level": 1,
     "show_toc_level": 2,
     "navigation_depth": 2,
     "footer_start": ["copyright"],

@@ -15,15 +15,10 @@ framework is described in :doc:`Installation <Installation>` and :doc:`Folders <
 **rivt** input files are plain text Python. Documents can be output as
 utf8-text, PDF or HTML.
 
-
-Table of Contents
-------------------
-
 .. toctree::
     :maxdepth: 2
     :caption: Contents
 
-    self
     Introduction.rst
     Installation.rst
     Markup.rst
