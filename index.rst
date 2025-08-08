@@ -6,15 +6,15 @@
     :alt: rivt logo
 
 rivt
-====================
+======
 
 is an open source markup language and framework for writing and publishing
 engineering documents. Markup syntax is described in :doc:`Markup <Markup>`.
 The framework is described in :doc:`Installation <Installation>` and
 :doc:`Folders <Folders>`.
 
-**rivt** Files are plain text Python which can be shared and
-version controlled. Documents can be output as utf8-text, PDF or HTML.
+**rivt** input files are plain text Python. Documents can be output as
+utf8-text, PDF or HTML.
 
 
 Table of Contents
