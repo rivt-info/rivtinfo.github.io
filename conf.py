@@ -3,7 +3,7 @@ from pathlib import Path
 sys.path.append(str(Path(".").resolve()))
 
 project = 'rivt.info'
-copyright = '2023 StructureLabs'
+copyright = '2023 StructureLabs LLC'
 author = 'rholland'
 release = '0.1'
 
@@ -28,6 +28,7 @@ html_theme_options = {
     "navigation_depth": 3,
     "footer_start": ["copyright"],
     "footer_end": [],
+    "home_page_in_toc": True,
     "logo": {
         "image_dark": "_static/img/rivhome11c.png",
         "image_light": "_static/img/rivhome11c.png",
