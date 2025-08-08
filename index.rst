@@ -3,7 +3,7 @@
     :class: dark-light
     :scale: 30 %
     :figwidth: image
-    :align: center
+    :align: left
     :alt: rivt logo
 
 .. raw:: html
