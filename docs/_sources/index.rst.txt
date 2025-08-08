@@ -2,8 +2,7 @@
 .. figure::  _static/img/rivdark55c.png
     :class: dark-light
     :scale: 30 %
-    :figwidth: image
-    :align: left
+    :align: center
     :alt: rivt logo
 
 .. raw:: html
