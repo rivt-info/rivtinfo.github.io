@@ -12,16 +12,10 @@
 rivt
 ====================
 
-**rivt** is an open source markup language and document framework for writing
-engineering calculations and reports. It uses plain text Python input
-which is easily shared and version controlled.
-
-Markup and Framework
------------------------
-
-The markup syntax is described in section 4. The framework is described in
-sections 2 and 3.
-
+**rivt** is an open source markup language and framework for writing
+engineering documents. It uses plain text Python input that is easily shared
+and version controlled. Markup syntax is described in section 4 and rhe framework 
+in sectionss 2 and 3.
 
 
 Table of Contents

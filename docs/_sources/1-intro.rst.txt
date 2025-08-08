@@ -1,8 +1,9 @@
 **1. Intro**
 =============
 
-**rivt** is a markup language for writing and publishing engineering documents,
-with an emphasis on file sharing and collated reports.
+**rivt** is a markup language for writing and formatting engineering documents,
+with an emphasis on rivt file sharing and integration of existing engineering
+software tools.
 
 Engineering documents typically include text, tables, diagrams, equations and
 calculations. Even though software exists for this use, there are implementation
