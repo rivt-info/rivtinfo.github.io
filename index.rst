@@ -9,14 +9,12 @@
 .. raw:: html
 
     <embed>
-        <h1 style="font-size:2em; text-align:center"> rivt.info </h1>
-        
         <hr width="100%" size="5" color="LightGrey" noshade>
     </embed>
 
 
 rivt
-=======
+====================
 
 **rivt** is an open source markup language and document framework for writing
 engineering calculations and reports. It uses plain text Python based input that is easily
