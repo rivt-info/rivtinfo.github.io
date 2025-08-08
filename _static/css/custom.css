@@ -2,7 +2,7 @@
 
 html {
     --pst-font-size-base: 16px;
-    --pst-font-size-h1: 22px;
+    --pst-font-size-h1: 20px;
     --pst-font-size-h2: 20px;
     --pst-font-size-h3: 18px;
     --pst-font-size-h4: 16px;
@@ -17,6 +17,11 @@ img.align-center {
     display: block;
 }
 
+.indented-section {
+    margin-left: 2em;
+    /* Adjust the value for desired indentation */
+}
+
 
 a:link,
 a:visited {
@@ -29,10 +34,6 @@ a.underline {
     text-decoration: underline
 }
 
-.indented-section {
-    margin-left: 2em;
-    /* Adjust the value for desired indentation */
-}
 
 a:right-next {
     color: hwb(200 15% 27%);
