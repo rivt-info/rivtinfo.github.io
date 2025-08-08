@@ -18,4 +18,5 @@
     "editor.formatOnSave": true,
     "esbonio.sphinx.confDir": "",
     "iis.configDir": "",
+    "gutterpreview.imagePreviewMaxHeight": 10,
 }

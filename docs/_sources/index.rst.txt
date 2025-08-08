@@ -1,5 +1,5 @@
 
-.. figure::  _static/img/rivt54c.png
+.. figure::  _static/img/rivdark55c.png
     :class: dark-light
     :scale: 40 %
     :figwidth: image
@@ -36,4 +36,5 @@ Table of Contents
     3-folders.rst
     4-markup.rst
     5-docs.rst
-    6-search.rst
+    6-report.rst
+    7-search.rst
