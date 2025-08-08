@@ -23,24 +23,20 @@ img.align-center {
 }
 
 
-a:link,
-a:visited {
+a.link,
+a.visited,
+a.underline {
     color: hwb(200 15% 27%);
     text-decoration: underline;
     font-weight: 400;
 }
 
-a.underline {
-    text-decoration: underline
-}
-
-
-a:right-next {
+a.right-next {
     color: hwb(200 15% 27%);
     /* Replace with a color name or hex code */
 }
 
-a:left-prev {
+a.left-prev {
     color: hwb(200 15% 27%);
     /* Replace with a color name or hex code */
 }
