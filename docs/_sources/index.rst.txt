@@ -16,7 +16,7 @@ framework is described in :doc:`Installation <Installation>` and :doc:`Folders <
 utf8-text, PDF or HTML.
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     :caption: Contents
 
     Introduction.rst

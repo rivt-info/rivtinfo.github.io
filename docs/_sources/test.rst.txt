@@ -1,11 +1,5 @@
-**Introduction**
+**Test**
 ==================
-
-.. toctree::
-    :maxdepth: 1
-
-    test.rst
-
 
 **rivt** is a markup language for writing and formatting engineering documents,
 with an emphasis on rivt file sharing and integration of existing engineering
