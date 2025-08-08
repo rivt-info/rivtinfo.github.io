@@ -26,7 +26,7 @@ a {
 
 a:link,
 a:visited {
-    color: #005580;
+    color: hwb(200 5% 42%);
     text-decoration: underline;
     font-weight: normal;
 }
