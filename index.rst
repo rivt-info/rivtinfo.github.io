@@ -5,26 +5,16 @@
     :align: center
     :alt: rivt logo
 
-.. toctree::
-    :maxdepth: 1
-    :hidden:
-
-    Intro.rst
-    Install.rst
-    Markup.rst
-    Docs.rst
-    Folders.rst
-    Report.rst
-    Search.rst
-
-
 rivt
 ====================
 
-**rivt** is an open source markup language and framework for writing
-engineering documents. **rivt** files are plain text Python which can be shared
-and version controlled. **rivt** markup syntax is described in the :doc:`Markup <Markup>` section and the
-framework in sections 2 and 3.
+is an open source markup language and framework for writing and publishing
+engineering documents. Markup syntax is described in :doc:`Markup <Markup>`.
+The framework is described in :doc:`Installation <Installation>` and
+:doc:`Folders <Folders>`.
+
+**rivt** Files are plain text Python which can be shared and
+version controlled. Documents can be output as utf8-text, PDF or HTML.
 
 
 Table of Contents
@@ -33,8 +23,8 @@ Table of Contents
 .. toctree::
     :maxdepth: 1
 
-    Intro.rst
-    Install.rst
+    Introduction.rst
+    Installation.rst
     Markup.rst
     Docs.rst
     Folders.rst

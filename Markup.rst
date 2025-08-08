@@ -1,4 +1,4 @@
-**4. Markup**
+**Markup**
 ==============
 
 A **rivt** file is a Python file (utf-8 ) that includes the import statement

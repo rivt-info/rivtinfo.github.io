@@ -1,4 +1,4 @@
-**3. Folders**
+**Folders**
 ==============
 
 The rivt folder structure is designed to produce reports and open source

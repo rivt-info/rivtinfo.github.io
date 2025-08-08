@@ -1,5 +1,5 @@
-**2. Install**
-===============
+**Installation**
+===================
 
 * `VSCode and extensions <https://code.visualstudio.com>`_  for editing and processing.
 
