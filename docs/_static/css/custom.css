@@ -19,7 +19,7 @@ img.align-center {
 
 
 a {
-    color: #005580;
+    color: hwb(200 5% 42%);
     text-decoration: underline;
     font-weight: normal;
 }
