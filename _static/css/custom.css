@@ -23,12 +23,17 @@ img.align-center {
 }
 
 
-a.link,
-a.visited,
-a.underline {
+a.link {
     color: hwb(200 15% 27%);
-    text-decoration: underline;
+    text-decoration: none;
     font-weight: 400;
+}
+
+a.visited {
+    color: hwb(200 15% 27%);
+    text-decoration: none;
+    font-weight: 400;
+
 }
 
 a.right-next {
