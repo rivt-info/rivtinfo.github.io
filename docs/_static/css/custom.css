@@ -2,7 +2,7 @@
 
 html {
     --pst-font-size-base: 16px;
-    --pst-font-size-h1: 24px;
+    --pst-font-size-h1: 22px;
     --pst-font-size-h2: 20px;
     --pst-font-size-h3: 18px;
     --pst-font-size-h4: 16px;
@@ -34,7 +34,12 @@ a.underline {
     /* Adjust the value for desired indentation */
 }
 
-.bd-docs-nav .pagination-next a {
+a:right-next {
+    color: hwb(200 15% 27%);
+    /* Replace with a color name or hex code */
+}
+
+a:left-prev {
     color: hwb(200 15% 27%);
     /* Replace with a color name or hex code */
 }
