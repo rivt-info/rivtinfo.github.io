@@ -23,6 +23,7 @@ html_sidebars = {"**": []}
 html_static_path = ['_static', '_static/img']
 html_css_files = ['css/custom.css',]
 html_theme_options = {
+    "navbar_align": "left",
     "show_nav_level": 2,
     "show_toc_level": 2,
     "navigation_depth": 2,
