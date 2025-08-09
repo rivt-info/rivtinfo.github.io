@@ -11,12 +11,16 @@
 `Q4.0`_ aslkfas fdasdf asdflk sdfljk asdflk jasdlf sadf asdflk sdflkj sdflkj saf 
 
 
-**ANSWERS**
+
+**Answers**
 -------------
 
 .. _Q1.0: 
 
-**A1.0** **rivtlib** is distributed under the MIT license and can be installed through
+**A1.0** 
+---------
+
+**rivtlib** is distributed under the MIT license and can be installed through
 PyPI or **rivtzip**, which is downloaded as portable, Windows
 zip files. The rivtzip framework includes five open source projects:
 
@@ -35,12 +39,18 @@ zip files. The rivtzip framework includes five open source projects:
 
 .. _Q2.0: 
 
-**A2.0** the answer to question 2.0 
+**A2.0** 
+---------
+
+the answer to question 2.0 
 
 
 .. _Q3.0: 
 
-**A3.0** **rivtlib** is distributed under the MIT license and can be installed through
+**A3.0** 
+---------
+
+**rivtlib** is distributed under the MIT license and can be installed through
 PyPI or **rivtzip**, which is downloaded as portable, Windows
 zip files. The rivtzip framework includes five open source projects:
 
@@ -56,7 +66,10 @@ zip files. The rivtzip framework includes five open source projects:
 
 .. _Q4.0: 
 
-**A4.0** **rivtlib** is distributed under the MIT license and can be installed through
+**A4.0** 
+---------
+
+**rivtlib** is distributed under the MIT license and can be installed through
 PyPI or **rivtzip**, which is downloaded as portable, Windows
 zip files. The rivtzip framework includes five open source projects:
 
