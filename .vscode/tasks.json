@@ -25,5 +25,18 @@
         "panel": "new"
       }
     },
+    {
+      "label": "generate pages",
+      "type": "shell",
+      "command": "gendocs",
+      "windows": {
+        "command": "gendocs"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "close": true
+      }
+    },
   ]
 }

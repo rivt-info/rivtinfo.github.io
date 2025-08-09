@@ -5,179 +5,48 @@
     :maxdepth: 1
     :hidden:
 
-    ./filesintro/test.rst
+    ./filesintro/terms.rst
+    ./filesintro/API.rst
+    ./filesintro/FAQ.rst
 
 
-**rivt** is a markup language for writing and formatting engineering documents,
-with an emphasis on rivt file sharing and integration of existing engineering
-software tools.
+**rivt** was developed out of personal frustration with the lack of software
+that would efficiently leverage prior work when assembling engineering reports and
+calculations. Engineering documents typically include text, tables, diagrams, equations and
+calculations. Although software exists that combine these elements, there
+are serious implementation issues that blunt their usefulness as tools for
+reuse of existing designs and reports.
 
-Engineering documents typically include text, tables, diagrams, equations and
-calculations. Even though software exists for this use, there are implementation
-issues that reduce their usefulness. 
+The issues with current software can be summarized as follows: 
 
-These include high initial and update costs combined with incompatibilities
-between programs, program updates and operating systems. Given these
-constraints, a typical document source will generally have limited distribution.
-Also, sharing details and insights around new and developing technologies is
-restricted because of the program acquisition and rewrite costs. Finally,
-existing programs are not designed to easily produce organized reports.
+- each has a relatively small market share
+- it frequently breaks forward compatibility with new versions
+- update costs are high
+- it is not designed for file version control 
+- it is not designed to produce organized reports
+- it is not designed for collaborative work
+  
 
-Engineering reports are typically assembled from a variety of model outputs,
-calculations, and design codes. **rivt** is designed to integrate many output
-types and automate report assembly. The table below compares **rivt** features
-with other programs.
+**Table: Comparison of Engineering Document Software Features**
 
-
-**Table: Comparison of Program Features**
-
-============ ======== ========= ======== ========== ======== ========
-Program      Reports   Vers.[1] Text[2]  Compat.[3]  All-OS   Collab  
-============ ======== ========= ======== ========== ======== ======== 
+============ ========= ======== ======== ========= ======= =========== 
+Program      Rep [1]_  Ver [2]_ Txt [3]_ Comp [4]_ OS [5]_ Col [6]_  
+============ ========= ======== ======== ========= ======= =========== 
 Matlab         no       no         no      no          no       no   
 Mathcad        no       no         no      no          no       no   
 Mathematica    no       no         no      no          no       no   
 Cloud SaaS     no       no         no      no          yes      yes  
 Jupyter        no       no         no      yes         yes      yes  
-**rivt**      **yes**  **yes**   **yes**  **yes**    **yes**  **yes**
-============ ======== ========= ======== ========== ======== ========
+**rivt**      **yes**  **yes**   **yes**  **yes**  **yes**  **yes**
+============ ========= ======== ======== ========= ======= =========== 
+
+.. [1] Report generation
+.. [2] Version control
+.. [3] Text input files
+.. [4] Compatibility with future versions
+.. [5] Operating system independent
+.. [6] Collaborative work
 
 
-[1] Version control 
-
-[2] Plain text input 
-
-[3] Forward and backward compatibility
-
-
-**Definitions**
-----------------
-
-A **rivt** file is a text file (.py) that imports the **rivtlib** api:: 
-
-    import rivtlib.api as rv
-
-which exposes 6 API functions ::
-
-    rv.R(rS) - (Run) Run shell scripts 
-    rv.I(rS) - (Insert) Insert text, images, tables and math equations 
-    rv.V(rS) - (Values) Evaluate tables and equations 
-    rv.T(rS) - (Tools) Execute Python functions 
-    rv.W(rS) - (Write) Write formatted rivt documents 
-    rv.X(rS) - (eXclude) Skip rivt-string processing (interactive editing) 
-    rv.Q()   - (Quit) Stop file processing (interactive editing)    
-
-
-
-**FAQ**
--------
-
-Questions
-~~~~~~~~~~
-
-1.0 - Which open source licenses apply to rivtzip? `A1.0`_  
-
-
-2.0 - aslkfas fdasdf asdflk sdfljk asdflk jasdlf sadf asdflk sdflkj sdflkj saf `A2.0`_  
-
-
-Answers
-~~~~~~~~
-
-.. _A1.0: 
-
-
-**rivtlib** is distributed under the MIT license and can be installed through
-PyPI or **rivtzip**, which is downloaded as portable, Windows
-zip files. The rivtzip framework includes five open source projects:
-
-- **VSCode and extensions** - for editing and processing
-
-- **Python and libraries** - for analysis and formatting
-    
-- **Latex** - for typesetting
-    
-- **Git, GitHub** - for version control
-
-- **QCAD** - for diagramming
-
-
-
-
-.. _A2.0: 
-
-the answer to question 2.0 
-
-
-
-**Terms**
-----------
-
-    - A **rivt file** is a text file (.py) that imports the **rivtlib** package.
-
-    - A **rivt doc** (document) is a text, HTML or PDF file output of a **rivt** file. 
-
-    - A **rivt report** is a collated collection of **rivt docs**.
-
-    - **rivtlib** is a `Python library <https://rivtlib.net>`_ that generates **rivt docs** and **reports** from a **rivt** file.
-
-    - **rivtedit** is a an open source editing and publishing framework built around `VScode <https://vscode.com>`_.
-
-    - **rivtzip** is a portable, single folder version of **rivtedit**.
-
-
-doc
-~~~
-the output file (document) after processing a rivt file
-
-division
-~~~~~~~~
-open source markdown language for writing, organizing and sharing engineering documents
-
-report
-~~~~~~~~
-open source markdown language for writing, organizing and sharing engineering documents asdfasf sdflkjsadf sd fsaedlfk fsadlf sa
-
-section 
-~~~~~~~~
-open source markdown language for writing, organizing and sharing engineering documents
-
-open source editing and publishing framework for rivtlib Python library for processing 
-
-rivtpub
-~~~~~~~~
-project folder containing private files not uploaded when sharing templates
-
-rivt
-~~~~~~~~
-open source markdown language for organizing, modifying and publishing
-engineering documents
-
-rivtlib
-~~~~~~~~
-Python library for processing **rivt** files. It outputs formatted documents in
-a serveral different formats. 
-
-rivtzip
-~~~~~~~~
-an editing and publishing framework for rivt using additional open source
-programs. **rivt** works with both single file documents and extensive reports
-with hundreds of files.
-
-namespace
-~~~~~~~~~~
-a `name <https://en.wikipedia.org/wiki/Namespace>`_ that provides a scope for
-functions, variables, etc. Namespaces are used to organize code into logical
-groups and to prevent name collisions that can occur especially when your code
-base includes multiple libraries. In Python, namespaces are defined by the
-individual modules.
-  
-GitHub
-~~~~~~~~
-version control
-
-repo
-~~~~~~~~
-short for repository
 
 

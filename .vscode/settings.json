@@ -2,9 +2,17 @@
     "inline-bookmarks.view.showVisibleFilesOnly": true,
     "insertDateString.format": "MM-DD-YYYY hh:mm:ss",
     "insertDateString.formatDate": "MM-DD-YYYY",
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "terminal.integrated.profiles.windows": {
+        "Command Prompt": {
+            "path": "cmd.exe",
+            "args": []
+        }
+    },
     "cSpell.words": [
         "rivt",
     ],
+    "cSpell.suggestionMenuType": "quickFix",
     "workbench.colorTheme": "Visual Studio Dark",
     "workbench.colorCustomizations": {
         "tab.activeBackground": "#2a2570",
@@ -12,7 +20,6 @@
     },
     "editor.formatOnSave": true,
     "gutterpreview.imagePreviewMaxHeight": 10,
-    "cSpell.suggestionMenuType": "quickFix",
     "ShortcutMenuBar.beautify": false,
     "ShortcutMenuBar.navigateBack": false,
     "ShortcutMenuBar.navigateForward": false,
