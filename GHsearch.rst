@@ -1,17 +1,25 @@
 **GitHub Search**
 =================
 
-Below is a search interface for **rivt** files
-distributed across GitHub. The search covers the full text of the **rivt** root
-README file which contains a text rivt report. For advanced searching
+This page is a search interface for **rivt** files
+distributed across GitHub. The search covers the full text of the **rivt**
+README file which contains a rivt text report. For advanced searching
 use the GitHub interface  `here <https://github.com/search>`_.
 
 
 
+::
+
+          Buttons
+
+    [S] Search GitHub (Ctrl+Enter)     
+    [C] Clear input (Ctrl+R)
+
+    Example: solar+steel+frame is passed to GitHub as rivt+solar+steel+frame
+
 **Global Search Terms**  
 ------------------------
 
-[S] Search GitHub (Ctrl+Enter) __ [C] Clear input (Ctrl+R)
 
 .. raw:: html
 
@@ -39,12 +47,8 @@ use the GitHub interface  `here <https://github.com/search>`_.
 
     <hr>
 
-Example: **solar+steel+frame** is passed to GitHub as **rivt+solar+steel+frame**
 
-
-
-
-**Organization Search Terms**  
+**Organization Search**  
 ------------------------------
 
 Restrict search within listed GitHub organizations (comma separated)
@@ -56,6 +60,6 @@ Restrict search within listed GitHub organizations (comma separated)
 
     <hr>
 
-    <b>Search Terms</b><br><br>
+    <b>Organization Restricted Search Terms</b><br><br>
     <button class="button" id="searchBtn" onclick="searchOrg()">S</button> <button class="button" id="clearBtn" onclick="clearRivt()">C</button><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal">
 
