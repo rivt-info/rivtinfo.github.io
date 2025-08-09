@@ -28,5 +28,5 @@ may be output as formatted utf8-text, PDF or HTML.
     Docs.rst
     Folders.rst
     Report.rst
-    Search.rst
+    GHsearch.rst
 

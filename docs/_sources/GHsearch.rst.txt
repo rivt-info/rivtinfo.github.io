@@ -1,5 +1,5 @@
-**Search**
-=============
+**GithHub Search**
+=================
 
 Below is a search interface for **rivt** files
 distributed across GitHub. The search covers the full text of the **rivt** root
