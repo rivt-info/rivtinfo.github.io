@@ -2,9 +2,6 @@
 ========
 
 
-Questions
------------
-
 `Q1.0`_  Which open source licenses apply to rivtzip?   
 
 `Q2.0`_  aslkfas fdasdf asdflk sdfljk asdflk jasdlf sadf aflkj sdflkj saf 
@@ -14,8 +11,8 @@ Questions
 `Q4.0`_ aslkfas fdasdf asdflk sdfljk asdflk jasdlf sadf asdflk sdflkj sdflkj saf 
 
 
-Answers
---------
+**ANSWERS**
+-------------
 
 .. _Q1.0: 
 
