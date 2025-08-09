@@ -1,6 +1,13 @@
 **Markup**
 ==============
 
+.. toctree::
+    :maxdepth: 1
+    :hidden:
+
+    ./filesmark/example1.rst
+    ./filesmark/example2.rst
+
 A **rivt** file is a Python file (utf-8 ) that includes the import statement
 
 *import rivtlib.rivtapi as rv*

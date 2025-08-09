@@ -11,8 +11,8 @@
 is an open source markup language and framework for writing and publishing
 engineering documents. Markup syntax is described :doc:`here <Markup>`.
 The framework is described :doc:`here <Installation>` and
-:doc:`here <Folders>`. Input files are plain text Python and documents
-may be output as utf8-text, PDF or HTML.
+:doc:`here <Folders>`. Input is plain text Python files and output documents
+may be utf8-text, PDF or HTML.
 
 
 **Contents**

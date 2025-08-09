@@ -5,7 +5,7 @@
     :maxdepth: 1
     :hidden:
 
-    test.rst
+    ./filesintro/test.rst
 
 
 **rivt** is a markup language for writing and formatting engineering documents,
