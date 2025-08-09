@@ -1,6 +1,8 @@
 **FAQ**
 ========
 
+**Questions**
+-------------
 
 `Q1.0`_  Which open source licenses apply to rivtzip?   
 
