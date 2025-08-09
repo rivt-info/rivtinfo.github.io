@@ -15,7 +15,7 @@ The framework is described :doc:`here <Installation>` and
 may be output as utf8-text, PDF or HTML.
 
 
-**Table of Contents**
+**Contents**
 -----------------------
 
 .. toctree::

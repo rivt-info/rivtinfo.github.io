@@ -4,19 +4,75 @@
     "insertDateString.formatDate": "MM-DD-YYYY",
     "cSpell.words": [
         "rivt",
-        "rivt-doc",
-        "rivt-tools"
     ],
     "workbench.colorTheme": "Visual Studio Dark",
     "workbench.colorCustomizations": {
         "tab.activeBackground": "#2a2570",
         "tab.inactiveBackground": "#505052"
     },
-    "ShortcutMenuBar.showCommands": true,
+    "editor.formatOnSave": true,
+    "gutterpreview.imagePreviewMaxHeight": 10,
+    "cSpell.suggestionMenuType": "quickFix",
+    "ShortcutMenuBar.beautify": false,
+    "ShortcutMenuBar.navigateBack": false,
+    "ShortcutMenuBar.navigateForward": false,
+    "ShortcutMenuBar.openFilesList": false,
+    "ShortcutMenuBar.toggleWordWrap": true,
+    "ShortcutMenuBar.saveAll": true,
+    "ShortcutMenuBar.showCommands": false,
     "ShortcutMenuBar.openSettings": true,
     "ShortcutMenuBar.quickOpen": false,
-    "editor.formatOnSave": true,
-    "esbonio.sphinx.confDir": "",
-    "iis.configDir": "",
-    "gutterpreview.imagePreviewMaxHeight": 10,
-}
+    "actionButtons": {
+        "defaultColor": "#ff0034",
+        "reloadButton": "♻️",
+        "loadNpmCommands": false,
+        "commands": [
+            {
+                "name": "Note",
+                "color": "white",
+                "useVsCodeApi": false,
+                "command": "code note.txt && exit",
+            },
+            {
+                "name": "Setting",
+                "color": "white",
+                "useVsCodeApi": true,
+                "command": "workbench.action.openSettings2",
+            },
+            {
+                "name": "KeyBind",
+                "color": "white",
+                "useVsCodeApi": true,
+                "command": "workbench.action.openGlobalKeybindings",
+            },
+            {
+                "name": "ToggleSpell",
+                "color": "white",
+                "useVsCodeApi": true,
+                "command": "cSpell.toggleEnableSpellChecker",
+            },
+            {
+                "name": "GoTo",
+                "color": "white",
+                "useVsCodeApi": true,
+                "command": "workbench.action.gotoLine",
+            },
+            {
+                "name": "FoldAll",
+                "color": "orange",
+                "useVsCodeApi": true,
+                "command": "editor.foldLevel2"
+            },
+            {
+                "name": "Unfold",
+                "color": "orange",
+                "useVsCodeApi": true,
+                "command": "editor.unfoldAll"
+            },
+            {
+                "name": "ExplorerSort",
+                "color": "yellow",
+                "useVsCodeApi": true,
+                "command": "settings.cycle.explorerSort2",
+            },
+        }

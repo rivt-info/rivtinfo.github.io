@@ -33,7 +33,7 @@
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=6b8675d1" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=d86d60ce" />
   
   <!-- So that users can add custom icons -->
   <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -428,7 +428,7 @@ issues that reduce their usefulness.</p>
 between programs, program updates and operating systems. Given these
 constraints, a typical document source will generally have limited distribution.
 Also, sharing details and insights around new and developing technologies is
-restricted because of the program acqusition and rewrite costs. Finally,
+restricted because of the program acquisition and rewrite costs. Finally,
 existing programs are not designed to easily produce organized reports.</p>
 <p>Engineering reports are typically assembled from a variety of model outputs,
 calculations, and design codes. <strong>rivt</strong> is designed to integrate many output
@@ -438,14 +438,12 @@ with other programs.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Program</p></th>
-<th class="head"><p>Open Src</p></th>
-<th class="head"><p>Compat.[1]</p></th>
-<th class="head"><p>Vers.[2]</p></th>
-<th class="head"><p>Text[3]</p></th>
-<th class="head"><p>All-OS</p></th>
-<th class="head"><p>Remote</p></th>
-<th class="head"><p>Local</p></th>
 <th class="head"><p>Reports</p></th>
+<th class="head"><p>Vers.[1]</p></th>
+<th class="head"><p>Text[2]</p></th>
+<th class="head"><p>Compat.[3]</p></th>
+<th class="head"><p>All-OS</p></th>
+<th class="head"><p>Collab</p></th>
 </tr>
 </thead>
 <tbody>
@@ -456,8 +454,6 @@ with other programs.</p>
 <td><p>no</p></td>
 <td><p>no</p></td>
 <td><p>no</p></td>
-<td><p>yes</p></td>
-<td><p>no</p></td>
 </tr>
 <tr class="row-odd"><td><p>Mathcad</p></td>
 <td><p>no</p></td>
@@ -466,42 +462,32 @@ with other programs.</p>
 <td><p>no</p></td>
 <td><p>no</p></td>
 <td><p>no</p></td>
-<td><p>yes</p></td>
+</tr>
+<tr class="row-even"><td><p>Mathematica</p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
 <td><p>no</p></td>
 </tr>
-<tr class="row-even"><td><p>Mathemat.</p></td>
-<td><p>no</p></td>
-<td><p>no</p></td>
-<td><p>no</p></td>
-<td><p>no</p></td>
-<td><p>no</p></td>
-<td><p>no</p></td>
-<td><p>yes</p></td>
-<td><p>no</p></td>
-</tr>
-<tr class="row-odd"><td><p>Cloud Prg.</p></td>
+<tr class="row-odd"><td><p>Cloud SaaS</p></td>
 <td><p>no</p></td>
 <td><p>no</p></td>
 <td><p>no</p></td>
 <td><p>no</p></td>
 <td><p>yes</p></td>
 <td><p>yes</p></td>
-<td><p>no</p></td>
-<td><p>no</p></td>
 </tr>
 <tr class="row-even"><td><p>Jupyter</p></td>
-<td><p>yes</p></td>
-<td><p>yes</p></td>
 <td><p>no</p></td>
 <td><p>no</p></td>
-<td><p>yes</p></td>
-<td><p>yes</p></td>
-<td><p>yes</p></td>
 <td><p>no</p></td>
+<td><p>yes</p></td>
+<td><p>yes</p></td>
+<td><p>yes</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>rivt</strong></p></td>
-<td><p><strong>yes</strong></p></td>
-<td><p><strong>yes</strong></p></td>
 <td><p><strong>yes</strong></p></td>
 <td><p><strong>yes</strong></p></td>
 <td><p><strong>yes</strong></p></td>
@@ -512,9 +498,9 @@ with other programs.</p>
 </tbody>
 </table>
 </div>
-<p>[1] Forward, backward file compatiblilty</p>
-<p>[2] Extensive versioning for document files</p>
-<p>[3] Readable and editable text input files</p>
+<p>[1] Version control</p>
+<p>[2] Plain text input</p>
+<p>[3] Forward and backward compatibility</p>
 <section id="definitions">
 <h2><strong>Definitions</strong><a class="headerlink" href="#definitions" title="Link to this heading">#</a></h2>
 <p>A <strong>rivt</strong> file is a text file (.py) that imports the <strong>rivtlib</strong> api:</p>

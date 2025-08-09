@@ -20,7 +20,7 @@ These include high initial and update costs combined with incompatibilities
 between programs, program updates and operating systems. Given these
 constraints, a typical document source will generally have limited distribution.
 Also, sharing details and insights around new and developing technologies is
-restricted because of the program acqusition and rewrite costs. Finally,
+restricted because of the program acquisition and rewrite costs. Finally,
 existing programs are not designed to easily produce organized reports.
 
 Engineering reports are typically assembled from a variety of model outputs,
@@ -28,24 +28,26 @@ calculations, and design codes. **rivt** is designed to integrate many output
 types and automate report assembly. The table below compares **rivt** features
 with other programs.
 
+
 **Table: Comparison of Program Features**
 
-=========== ========= ========== ========== ======== ======== ======= ======== ======== 
-Program     Open Src  Compat.[1]  Vers.[2]  Text[3]  All-OS   Remote   Local   Reports  
-=========== ========= ========== ========== ======== ======== ======= ======== ======== 
-Matlab      no        no          no          no      no       no      yes      no 
-Mathcad     no        no          no          no      no       no      yes      no 
-Mathemat.   no        no          no          no      no       no      yes      no 
-Cloud Prg.  no        no          no          no      yes      yes     no       no 
-Jupyter     yes       yes         no          no      yes      yes     yes      no
-**rivt**    **yes**   **yes**    **yes**    **yes**  **yes**  **yes** **yes**  **yes** 
-=========== ========= ========== ========== ======== ======== ======= ======== ========  
+============ ======== ========= ======== ========== ======== ========
+Program      Reports   Vers.[1] Text[2]  Compat.[3]  All-OS   Collab  
+============ ======== ========= ======== ========== ======== ======== 
+Matlab         no       no         no      no          no       no   
+Mathcad        no       no         no      no          no       no   
+Mathematica    no       no         no      no          no       no   
+Cloud SaaS     no       no         no      no          yes      yes  
+Jupyter        no       no         no      yes         yes      yes  
+**rivt**      **yes**  **yes**   **yes**  **yes**    **yes**  **yes**
+============ ======== ========= ======== ========== ======== ========
 
-[1] Forward, backward file compatiblilty
 
-[2] Extensive versioning for document files
+[1] Version control 
 
-[3] Readable and editable text input files
+[2] Plain text input 
+
+[3] Forward and backward compatibility
 
 
 **Definitions**

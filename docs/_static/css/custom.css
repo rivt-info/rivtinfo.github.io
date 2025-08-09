@@ -25,7 +25,7 @@ img.align-center {
 
 a {
     color: hwb(200 11% 41%);
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: 400;
 }
 
@@ -40,7 +40,7 @@ html[data-theme="dark"] a {
 
 a.visited {
     color: hwb(200 15% 27%);
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: 400;
 
 }
