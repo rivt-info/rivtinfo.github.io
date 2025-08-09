@@ -1,4 +1,4 @@
-**GithHub Search**
+**GitHub Search**
 =================
 
 Below is a search interface for **rivt** files
