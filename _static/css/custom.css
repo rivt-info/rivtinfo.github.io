@@ -58,9 +58,9 @@ a.visited {
 }
 
 hr {
-    height: 2px;
+    height: 3px;
     /* Adjust thickness as needed */
-    background-color: hwb(200 36% 33%);
+    background-color: hwb(200 24% 16%);
     /* Example: red color */
     border: none;
 }
