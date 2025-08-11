@@ -10,13 +10,12 @@
     ./filesintro/FAQ.rst
 
 
-**rivt** was developed out of frustration with engineering document software
-that could not efficiently reuse prior work. Engineering documents typically
+**rivt** was developed out of a need for document software that could
+efficiently reuse prior engineering work. Engineering documents typically
 include text, tables, diagrams, equations and calculations from a variety of
-sources. Often these sources are standard codes and references. Although
-document software exists that can combine these document elements, there are
-serious implementation issues that reduce its usefulness. The issues with
-current software can be summarized as follows:
+sources. Although document software exists that can combine these elements,
+there are implementation issues that reduce their usefulness. They can be
+summarized as follows:
 
 - each has a relatively small market share
 - they ignore forward compatibility 
@@ -25,11 +24,11 @@ current software can be summarized as follows:
 - not designed for collaborative work and version control
 - they do not produce organized reports
   
-**rivt** is an open source solution designed to address these issues.
+**rivt** is an open source solution designed to address these limitations.
 
 _______________________________________
 
-**Table: Summary of Engineering Document Software Features**
+**Table: Engineering Document Software - Comparison**
 
 ============ ========= ======== ======== ========= ======= =========== 
 Program      Rep [1]_  Ver [2]_ Txt [3]_ Comp [4]_ OS [5]_ Col [6]_  
@@ -37,7 +36,7 @@ Program      Rep [1]_  Ver [2]_ Txt [3]_ Comp [4]_ OS [5]_ Col [6]_
 Matlab         no       no         no      no          no       no   
 Mathcad        no       no         no      no          no       no   
 Mathematica    no       no         no      no          no       no   
-Cloud SaaS     no       no         no      no          yes      yes  
+Cloud SaaS     some     some       no      no          yes      some  
 Jupyter        no       no         no      yes         yes      yes  
 **rivt**      **yes**  **yes**   **yes**  **yes**  **yes**  **yes**
 ============ ========= ======== ======== ========= ======= =========== 
