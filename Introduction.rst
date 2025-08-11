@@ -19,13 +19,13 @@ serious implementation issues that reduce its usefulness. The issues with
 current software can be summarized as follows:
 
 - each has a relatively small market share
-- not cross-platform
-- ignore forward compatibility 
+- they ignore forward compatibility 
 - version update costs are high
+- not cross-platform
 - not designed for collaborative work and version control
 - do not produce organized reports
   
-**rivt** is designed to address these issues.
+**rivt** is an open source solution designed to address these issues.
 
 _______________________________________
 

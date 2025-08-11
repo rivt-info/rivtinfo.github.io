@@ -56,3 +56,11 @@ a.visited {
     font-weight: 300;
     /* Replace with a color name or hex code */
 }
+
+hr {
+    height: 2px;
+    /* Adjust thickness as needed */
+    background-color: hwb(200 15% 27%);
+    /* Example: red color */
+    border: none;
+}
