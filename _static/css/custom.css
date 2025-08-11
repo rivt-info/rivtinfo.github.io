@@ -60,7 +60,7 @@ a.visited {
 hr {
     height: 2px;
     /* Adjust thickness as needed */
-    background-color: hwb(200 15% 27%);
+    background-color: hwb(200 36% 33%);
     /* Example: red color */
     border: none;
 }
