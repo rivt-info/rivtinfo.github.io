@@ -14,7 +14,7 @@
 efficiently reuse prior engineering work. Engineering documents typically
 include text, tables, diagrams, equations and calculations from a variety of
 sources. Although document software exists that can combine these elements,
-there are implementation issues that reduce their usefulness. They can be
+many implementation issues reduce their usefulness. They can be
 summarized as follows:
 
 - each has a relatively small market share
@@ -24,7 +24,7 @@ summarized as follows:
 - not designed for collaborative work and version control
 - they do not produce organized reports
   
-**rivt** is an open source solution designed to address these limitations.
+**rivt** is an open source solution that intends to address these limitations.
 
 _______________________________________
 
