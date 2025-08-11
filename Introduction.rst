@@ -23,7 +23,7 @@ current software can be summarized as follows:
 - version update costs are high
 - not cross-platform
 - not designed for collaborative work and version control
-- do not produce organized reports
+- they do not produce organized reports
   
 **rivt** is an open source solution designed to address these issues.
 
