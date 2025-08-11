@@ -10,21 +10,20 @@
     ./filesintro/FAQ.rst
 
 
-**rivt** was developed out of personal frustration with existing software that
-could not efficiently leverage prior work when writing and assembling
-engineering reports. Engineering documents typically include text, tables,
-diagrams, equations and calculations. Although software exists that combine
-these elements, there are serious implementation issues that blunt their
-usefulness as tools for reuse of pre-existing designs and reports.
-
-The issues with current software can be summarized as follows: 
+**rivt** was developed out of personal frustration with the lack of engineering
+document software that efficiently leveraged prior work. Engineering documents
+typically include text, tables, diagrams, equations and calculations from a
+variety of sources. Although document software exists that combine these
+elements, there are serious implementation issues that blunt their usefulness.
+The issues with current software can be summarized as follows:
 
 - each has a relatively small market share
-- frequently breaks forward compatibility 
-- update costs are high
-- not designed for file version control 
-- not designed to produce organized reports
-- not designed for collaborative work
+- they are not crossplatform
+- they ignore forward compatibility 
+- version update costs are high
+- they are not designed for file version control 
+- they are not designed to produce organized reports
+- they are not designed for collaborative work
   
 
 **Table: Comparison of Engineering Document Software Features**
@@ -44,7 +43,7 @@ Jupyter        no       no         no      yes         yes      yes
 .. [2] Version control
 .. [3] Plain text input files
 .. [4] Compatibility with future versions
-.. [5] Operating system independent
+.. [5] Crossplatform
 .. [6] Collaborative work
 
 
