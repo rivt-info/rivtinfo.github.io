@@ -157,15 +157,15 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../Markup.html">
-    Markup
+  <a class="nav-link nav-internal" href="../Folders.html">
+    Folders
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../Docs.html">
-    Docs
+  <a class="nav-link nav-internal" href="../Markup.html">
+    Markup
   </a>
 </li>
 
@@ -178,8 +178,8 @@
                 <ul id="pst-nav-more-links" class="dropdown-menu">
                     
 <li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="../Folders.html">
-    Folders
+  <a class="nav-link dropdown-item nav-internal" href="../Docs.html">
+    Docs
   </a>
 </li>
 
@@ -192,8 +192,8 @@
 
 
 <li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="../GHsearch.html">
-    GitHub Search
+  <a class="nav-link dropdown-item nav-internal" href="../GitHub.html">
+    GitHub
   </a>
 </li>
 
@@ -291,6 +291,13 @@
 
 
 <li class="nav-item ">
+  <a class="nav-link nav-internal" href="../Folders.html">
+    Folders
+  </a>
+</li>
+
+
+<li class="nav-item ">
   <a class="nav-link nav-internal" href="../Markup.html">
     Markup
   </a>
@@ -305,13 +312,6 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../Folders.html">
-    Folders
-  </a>
-</li>
-
-
-<li class="nav-item ">
   <a class="nav-link nav-internal" href="../Report.html">
     Report
   </a>
@@ -319,8 +319,8 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../GHsearch.html">
-    GitHub Search
+  <a class="nav-link nav-internal" href="../GitHub.html">
+    GitHub
   </a>
 </li>
 
@@ -417,28 +417,27 @@
                   
   <section id="api">
 <h1><strong>API</strong><a class="headerlink" href="#api" title="Link to this heading">#</a></h1>
-<p>A <strong>rivt</strong> file is a text file (.py) that imports the <strong>rivtlib</strong> api:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.api</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
+<p>A <strong>rivt</strong> file is a Python text file (.py) importing the <strong>rivtlib</strong> API:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
 </pre></div>
 </div>
-<p>which exposes 6 API functions</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">R</span><span class="p">(</span><span class="n">rS</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">Run</span><span class="p">)</span> <span class="n">Run</span> <span class="n">shell</span> <span class="n">scripts</span>
-<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="n">rS</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">Insert</span><span class="p">)</span> <span class="n">Insert</span> <span class="n">text</span><span class="p">,</span> <span class="n">images</span><span class="p">,</span> <span class="n">tables</span> <span class="ow">and</span> <span class="n">math</span> <span class="n">equations</span>
+<p>that provides 7 API functions:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">R</span><span class="p">(</span><span class="n">rS</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">Run</span> <span class="n">Script</span><span class="p">)</span> <span class="n">Run</span> <span class="n">shell</span> <span class="n">scripts</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="n">rS</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">Insert</span><span class="p">)</span> <span class="n">Insert</span> <span class="n">static</span> <span class="n">text</span><span class="p">,</span> <span class="n">images</span><span class="p">,</span> <span class="n">tables</span> <span class="ow">and</span> <span class="n">equations</span>
 <span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="n">rS</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">Values</span><span class="p">)</span> <span class="n">Evaluate</span> <span class="n">tables</span> <span class="ow">and</span> <span class="n">equations</span>
-<span class="n">rv</span><span class="o">.</span><span class="n">T</span><span class="p">(</span><span class="n">rS</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">Tools</span><span class="p">)</span> <span class="n">Execute</span> <span class="n">Python</span> <span class="n">functions</span>
-<span class="n">rv</span><span class="o">.</span><span class="n">D</span><span class="p">(</span><span class="n">rS</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">Write</span><span class="p">)</span> <span class="n">Write</span> <span class="n">formatted</span> <span class="n">rivt</span> <span class="n">documents</span>
-<span class="n">rv</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="n">rS</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">eXclude</span><span class="p">)</span> <span class="n">Skip</span> <span class="n">rivt</span><span class="o">-</span><span class="n">string</span> <span class="n">processing</span> <span class="p">(</span><span class="n">interactive</span> <span class="n">editing</span><span class="p">)</span>
-<span class="n">rv</span><span class="o">.</span><span class="n">Q</span><span class="p">()</span>   <span class="o">-</span> <span class="p">(</span><span class="n">Quit</span><span class="p">)</span> <span class="n">Stop</span> <span class="n">file</span> <span class="n">processing</span> <span class="p">(</span><span class="n">interactive</span> <span class="n">editing</span><span class="p">)</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">T</span><span class="p">(</span><span class="n">rS</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">Tools</span><span class="p">)</span> <span class="n">Execute</span> <span class="n">Python</span> <span class="n">functions</span> <span class="ow">and</span> <span class="n">scripts</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">D</span><span class="p">(</span><span class="n">rS</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">Doc</span> <span class="n">Write</span><span class="p">)</span> <span class="n">Write</span> <span class="n">formatted</span> <span class="n">rivt</span> <span class="n">docs</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">S</span><span class="p">(</span><span class="n">rS</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">Skip</span> <span class="n">String</span><span class="p">)</span> <span class="n">Skip</span> <span class="n">evaluation</span> <span class="n">of</span> <span class="n">rivt</span><span class="o">-</span><span class="n">string</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">Q</span><span class="p">(</span><span class="n">rS</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">Quit</span><span class="p">)</span> <span class="n">Stop</span> <span class="n">processing</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>A <strong>rivt file</strong> is a text file (.py) that imports the <strong>rivtlib</strong> package.</p></li>
-<li><p>A <strong>rivt doc</strong> (document) is a text, HTML or PDF file output of a <strong>rivt</strong> file.</p></li>
-<li><p>A <strong>rivt report</strong> is a collated collection of <strong>rivt docs</strong>.</p></li>
-<li><p><strong>rivtlib</strong> is a <a class="reference external" href="https://rivtlib.net">Python library</a> that generates <strong>rivt docs</strong> and <strong>reports</strong> from a <strong>rivt</strong> file.</p></li>
-<li><p><strong>rivtedit</strong> is a an open source editing and publishing framework built around <a class="reference external" href="https://vscode.com">VScode</a>.</p></li>
-<li><p><strong>rivtzip</strong> is a portable, single folder version of <strong>rivtedit</strong>.</p></li>
-</ul>
+<p>Each RIVT API function evaluates its triple-quoted string argument
+(rivt-string) to a formatted utf-8 text string and outputs it to the terminal.
+They format to a doc section unless the sectioning is explicitly suppressed.
+RIVT API functions may be run as cells in interactive notebook evaluations.</p>
+<p>The other three API functions are used to control document evaluation and doc
+output format. When the <strong>Doc Write</strong> function is called the entire rivt
+file is evaluated and a doc is output in the specified format.</p>
 </section>
 
 
