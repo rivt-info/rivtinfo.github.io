@@ -11,13 +11,13 @@
 is an open source markup language and framework for writing and publishing
 engineering documents. 
 
-**rivt** inputs are :doc:`text files <Markup>` (.py). 
+**rivt** inputs are :doc:`markup <Markup>` text files (.py). 
 
-**rivt** outputs are are formatted :doc:`documents (docs) <Docs>` that may be
-specified as utf8-text, PDF or HTML.
+**rivt** outputs are :doc:`document (doc) <Docs>` files formatted as utf8-text,
+PDF or HTML. 
 
-The open source framework for **rivt** is described :doc:`here <Installation>` and
-:doc:`here <Folders>`.
+The open source framework for **rivt** is described in the :doc:`Installation
+<Installation>` and :doc:`Folders <Folders>` sections.
 
 
 **Contents**
@@ -32,6 +32,6 @@ The open source framework for **rivt** is described :doc:`here <Installation>` a
     Folders.rst
     Markup.rst
     Docs.rst
-    Report.rst
+    Reports.rst
     GitHub.rst
 

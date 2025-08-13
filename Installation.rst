@@ -5,19 +5,42 @@
     :maxdepth: 2
     :hidden:
 
-    ./filesinstall/vscprofile.rst
+    ./filesinstall/vscode.rst
+    ./filesinstall/python.rst
 
 
-* `VSCode and extensions <https://code.visualstudio.com>`_  for editing and processing.
 
-* `Python and libraries <https://www.python.org/>`_  for analysis and formatting, including 
-  `rivtlib <https://rivtlib.net>`_  - the Python library that provides a **rivt** API and markup processing.
+**rivt** may be installed in three different ways, depending on neds and
+preferences:
+
+- **rivt uv** - uv managed installation in a virtual, isolated environment. 
+
+- **rivt zip** - a portable (frozen) installation of the rivt framework from a single file that can be run from a USB drive or any folder on your computer. 
+
+- **rivt system** - a system-wide installation using open source installers for each component of the framework.
 
 
-**rivtzip** is a collection of three zip files that installs the rivt framework
-in a portable folder or usb drive. It is available for every OS platform. rivt
-also runs in the cloud and on mobile devices using GitHub CodeSpaces or other
-cloud service providers.
+rivt Framework 
+------------------ 
+
+Each component of the framework is distributed under its own open source
+license. **rivtlib** is distributed under the MIT license. 
+
+The basic rivt framweork includes:
+
+    **VSCode** and **Extensions** - document editing and processing
+
+    **Python** and **Libraries** - analysis and formatting
+
+    **Git** and **GitHUb**- version control
+
+Optional components include:
+
+    **Latex** - typesetting
+
+    **QCAD** - diagramming
+
+
 
 
 

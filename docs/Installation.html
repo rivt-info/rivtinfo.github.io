@@ -51,7 +51,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Installation';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="VSCode Profiles" href="filesinstall/vscprofile.html" />
+    <link rel="next" title="VSCode" href="filesinstall/vscode.html" />
     <link rel="prev" title="FAQ" href="filesintro/FAQ.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -185,8 +185,8 @@
 
 
 <li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="Report.html">
-    Report
+  <a class="nav-link dropdown-item nav-internal" href="Reports.html">
+    Reports
   </a>
 </li>
 
@@ -242,6 +242,10 @@
     </div>
   
 
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
   
 </div>
 
@@ -312,8 +316,8 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="Report.html">
-    Report
+  <a class="nav-link nav-internal" href="Reports.html">
+    Reports
   </a>
 </li>
 
@@ -352,7 +356,8 @@
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="filesinstall/vscprofile.html"><strong>VSCode Profiles</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="filesinstall/vscode.html"><strong>VSCode</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="filesinstall/python.html">Python</a></li>
 </ul>
 </div>
 </nav></div>
@@ -414,15 +419,29 @@
 <h1><strong>Installation</strong><a class="headerlink" href="#installation" title="Link to this heading">#</a></h1>
 <div class="toctree-wrapper compound">
 </div>
+<p><strong>rivt</strong> may be installed in three different ways, depending on neds and
+preferences:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://code.visualstudio.com">VSCode and extensions</a>  for editing and processing.</p></li>
-<li><p><a class="reference external" href="https://www.python.org/">Python and libraries</a>  for analysis and formatting, including
-<a class="reference external" href="https://rivtlib.net">rivtlib</a>  - the Python library that provides a <strong>rivt</strong> API and markup processing.</p></li>
+<li><p><strong>rivt uv</strong> - uv managed installation in a virtual, isolated environment.</p></li>
+<li><p><strong>rivt zip</strong> - a portable (frozen) installation of the rivt framework from a single file that can be run from a USB drive or any folder on your computer.</p></li>
+<li><p><strong>rivt system</strong> - a system-wide installation using open source installers for each component of the framework.</p></li>
 </ul>
-<p><strong>rivtzip</strong> is a collection of three zip files that installs the rivt framework
-in a portable folder or usb drive. It is available for every OS platform. rivt
-also runs in the cloud and on mobile devices using GitHub CodeSpaces or other
-cloud service providers.</p>
+<section id="rivt-framework">
+<h2>rivt Framework<a class="headerlink" href="#rivt-framework" title="Link to this heading">#</a></h2>
+<p>Each component of the framework is distributed under its own open source
+license. <strong>rivtlib</strong> is distributed under the MIT license.</p>
+<p>The basic rivt framweork includes:</p>
+<blockquote>
+<div><p><strong>VSCode</strong> and <strong>Extensions</strong> - document editing and processing</p>
+<p><strong>Python</strong> and <strong>Libraries</strong> - analysis and formatting</p>
+<p><strong>Git</strong> and <strong>GitHUb</strong>- version control</p>
+</div></blockquote>
+<p>Optional components include:</p>
+<blockquote>
+<div><p><strong>Latex</strong> - typesetting</p>
+<p><strong>QCAD</strong> - diagramming</p>
+</div></blockquote>
+</section>
 </section>
 
 
@@ -445,11 +464,11 @@ cloud service providers.</p>
       </div>
     </a>
     <a class="right-next"
-       href="filesinstall/vscprofile.html"
+       href="filesinstall/vscode.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>VSCode Profiles</strong></p>
+        <p class="prev-next-title"><strong>VSCode</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -459,6 +478,24 @@ cloud service providers.</p>
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-framework">rivt Framework</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

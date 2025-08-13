@@ -1,5 +1,5 @@
-**Open-rivt**
-==============
+**Public rivt**
+=================
 
 The primary purpose of GitHub is to facilitate the version control and issue
 tracking aspects of software development. Labels, milestones, responsibility

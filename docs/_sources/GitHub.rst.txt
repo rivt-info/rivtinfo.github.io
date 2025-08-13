@@ -5,8 +5,9 @@
     :maxdepth: 1
     :hidden:
 
+    ./fileshub/publicrivt.rst
     ./fileshub/ghsearch.rst
-    ./fileshub/openrivt.rst
+   
 
 
 
