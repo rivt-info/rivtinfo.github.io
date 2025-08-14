@@ -14,10 +14,10 @@ engineering documents.
 **rivt** inputs are :doc:`markup <Markup>` text files (.py). 
 
 **rivt** outputs are :doc:`document (doc) <Docs>` files formatted as utf8-text,
-PDF or HTML. 
+PDF or HTML. This site is an example of rivt HTML
 
-The open source framework for **rivt** is described in the :doc:`Installation
-<Installation>` and :doc:`Folders <Folders>` sections.
+The open source framework for **rivt** is described in the 
+:doc:`Installation <Installation>` and :doc:`Folders <Folders>` sections.
 
 
 **Contents**
