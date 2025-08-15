@@ -11,11 +11,11 @@
 
 
 **rivt** was motivated by an interest in software that could efficiently reuse
-prior engineering design calculations and documents. Engineering documents
-typically include text, tables, diagrams, equations and calculations from a
-variety of sources. Although document software that combines these elements is
-available, implementation issues reduce their usefulness with regard to reuse.
-The deficiencies can be summarized as:
+engineering design calculations and documents. Engineering documents typically
+include text, tables, diagrams, equations and calculations from a variety of
+sources. Although document software that combines these elements is available,
+implementation issues reduce their usefulness with regard to reuse. The
+deficiencies can be summarized as:
 
 - each program has a relatively small market share
 - they generally ignore forward compatibility 

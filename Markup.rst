@@ -8,6 +8,11 @@
     ./filesmark/example1.rst
     ./filesmark/example2.rst
 
+**rivt markup**  wraps and extends the restructured text language. It adds two
+additional markup elements - tags and commands - and provides a simplified
+backend and default settings for writing the same rivt file as different
+document types (text, PDF and HTML)
+
 
 **Syntax**
 ~~~~~~~~~~~
