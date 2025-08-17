@@ -1,6 +1,9 @@
 **1.1 - API**
 ==============
 
+.. toctree::
+    :maxdepth: 3
+    :hidden:
 
 A **rivt** file is a Python text file (.py) importing the **rivtlib** API:: 
 

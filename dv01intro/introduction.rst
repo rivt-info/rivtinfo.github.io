@@ -26,7 +26,7 @@ deficiencies can be summarized as:
   
 **rivt** addresses these limitations.
 
-_______________________________________
+_______________________________________________________________
 
 **Table: Engineering Document Software Comparison**
 

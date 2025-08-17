@@ -1,6 +1,11 @@
 
-**Terms**
-==========
+**1.2 - Terms**
+=================
+
+.. toctree::
+    :maxdepth: 3
+    :hidden:
+
 
 
 basic framework

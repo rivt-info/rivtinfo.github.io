@@ -1,5 +1,11 @@
-**FAQ**
-========
+**1.3 - FAQ**
+===============
+
+.. toctree::
+    :maxdepth: 3
+    :hidden:
+
+
 
 **Questions**
 -------------
@@ -23,7 +29,7 @@
 
 .. _Q1.0: 
 
-    **rivtlib** is distributed under the MIT license and can be installed through
+    **rivtlib** xx is distributed under the MIT license and can be installed through
     PyPI or **rivtzip**, which is downloaded as portable, Windows
     zip files. The rivtzip framework includes five open source projects:
 

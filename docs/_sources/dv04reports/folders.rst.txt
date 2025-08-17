@@ -22,6 +22,9 @@ set at the file or section level. A separate *osdocs* (open source docs) folder
 is used to write the subset of file inputs intended for open sharing on GitHub
 (or other version control systems).
 
+**rivt files**
+-----------------
+
 Each **rivt** file is identified with a document prefix of the form
 rddnn-filename where dd is a two digit division number and nn is a two digit
 subdivision or file number e.g., riv0203-loads.py is the third subdivision (doc
