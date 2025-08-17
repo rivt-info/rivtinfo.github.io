@@ -11,27 +11,28 @@
 is an open source markup language and framework for writing and publishing
 engineering documents. 
 
-**rivt** inputs are :doc:`markup <Markup>` text files (.py). 
+**rivt** inputs are :doc:`text files <dv03markup/markup>` (.py). 
 
-**rivt** outputs are :doc:`document (doc) <Docs>` files formatted as utf8-text,
-PDF or HTML. This site is an example of rivt HTML
+**rivt** outputs are :doc:`doc files <dv04docs/documents>` 
+(documents) formatted as utf8-text, PDF or HTML files. The same input is used 
+for each type of output. Groups of docs are  organized as reports.  This site 
+is an example of a rivt HTML report.
 
 The open source framework for **rivt** is described in the 
-:doc:`Installation <Installation>` and :doc:`Folders <Folders>` sections.
+:doc:`Installation <dv02install/install>` and 
+:doc:`Reports <dv05reports/reports>` sections.
 
 
-**Contents**
------------------------
 
 .. toctree::
     :maxdepth: 1
+    :caption: Divisions
 
     self
-    Introduction.rst
-    Installation.rst
-    Folders.rst
-    Markup.rst
-    Docs.rst
-    Reports.rst
-    GitHub.rst
+    dv01intro/introduction.rst
+    dv02install/install.rst
+    dv03markup/markup.rst
+    dv04docs/documents.rst
+    dv05reports/reports.rst
+    dv06github/github.rst
 

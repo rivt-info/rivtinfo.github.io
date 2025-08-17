@@ -15,6 +15,8 @@ extensions = ['sphinx.ext.githubpages',
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 source_suffix = ['.rst', '.md']
+locale_dirs = ['locale/en'] # Path to your .po files
+gettext_compact = False # Important for themes to pick up translations
 
 html_theme = 'pydata_sphinx_theme'
 html_show_sourcelink = False
