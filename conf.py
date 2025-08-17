@@ -32,7 +32,6 @@ html_theme_options = {
     "collapse_navigation": True ,
     "header_links_before_dropdown": 6,
     "navbar_align": "left",
-    "show_nav_level": 0,
     "show_toc_level": 2,
     "navigation_depth": 2,
     "footer_start": ["copyright"],
@@ -48,7 +47,6 @@ catalog = "messages"
 
 # Get the translation object
 _ = get_translation(catalog)
-
 
 favicons = [
     {"href": "favicon-32x32.png"},
