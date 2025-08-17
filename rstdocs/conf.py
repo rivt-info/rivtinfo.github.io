@@ -19,7 +19,7 @@ source_suffix = ['.rst', '.md']
 master_doc = 'index'
 templates_path = ['_templates']
 language = 'en'
-locale_dirs = [os.path.relpath('rstdocs/_staticsrc/locale/', start=os.curdir)] 
+locale_dirs = ['_staticsrc/locale/'] 
 gettext_compact = False # Important for themes to pick up translations
 
 html_theme = 'pydata_sphinx_theme'

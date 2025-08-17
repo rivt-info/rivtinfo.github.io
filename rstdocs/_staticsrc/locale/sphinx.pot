@@ -101,7 +101,7 @@ msgstr ""
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/components/page-toc.html:8
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/sections/header.html:43
 msgid "On this page"
-msgstr "Doc Sections"
+msgstr "Sections"
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/components/prev-next.html:6
 msgid "previous page"
