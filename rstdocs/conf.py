@@ -19,7 +19,7 @@ source_suffix = ['.rst', '.md']
 master_doc = 'index'
 templates_path = ['_templates']
 language = 'en'
-locale_dirs = [os.path.relpath('_staticsrc/locale/', start=os.curdir)] 
+locale_dirs = [os.path.relpath('rstdocs/_staticsrc/locale/', start=os.curdir)] 
 gettext_compact = False # Important for themes to pick up translations
 
 html_theme = 'pydata_sphinx_theme'
@@ -52,12 +52,12 @@ favicons = [
     {
         "rel": "icon",
         "sizes": "16x16",
-        "href": "_staticsrc/img/favicon-16x16.png",
+        "href": "favicon-16x16.png",
     },
     {
         "rel": "icon",
         "sizes": "32x32",
-        "href": "_staticsrc/img/favicon-32x32.png",
+        "href": "favicon-32x32.png",
     },
 
 ]
