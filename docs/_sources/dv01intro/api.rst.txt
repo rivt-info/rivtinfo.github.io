@@ -23,19 +23,23 @@ rv.S        Skip              Skip section
 rv.Q        Quit              Exit rivt 
 =========== =============== ===================================
 
-test  
------
 
-The first four functions (**R I V T**) are content functions - they generate
-doc content. Content functions evaluate the triple-quoted string argument
-(**rivt-string**) to a formatted utf-8 text string and outputs it to the terminal.
-The output is a doc section, unless the section heading is explicitly
+**1.1.1 - Content API Functions**
+-----------------------------------
+
+The first four functions (**R I V T**) are functions that generate doc content.
+Content functions evaluate the triple-quoted string argument
+(**rivt-string**) and format utf-8 text strings as outputs to the terminal.
+The output is a doc section unless the section heading is explicitly
 suppressed. 
 
-The last three functions (**D S Q**) are process functions - they process
-sections without generating content. When the **Doc** function is called the
-entire rivt file is evaluated and a doc is output in the specified format -
-text, PDF or HTML.
+
+**1.1.2 - Process API Functions**
+-----------------------------------
+
+The last three functions (**D S Q**) process sections without generating 
+content. When the **Doc** function is called the entire rivt file is 
+evaluated and a doc is output to a specified format - text, PDF or HTML.
 
 API functions may be run interactively as cells in a notebook IDE (e.g.
 VSCode), using the standard cell decorator *# %%*. They are evaluated top to

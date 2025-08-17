@@ -10,9 +10,6 @@
     faq.rst
 
 
-Motivation 
-------------------
-
 **rivt** was motivated by an interest in software that could efficiently reuse
 engineering design calculations and documents. Engineering documents typically
 include text, tables, diagrams, equations and calculations from a variety of
@@ -29,20 +26,19 @@ deficiencies can be summarized as:
   
 **rivt** addresses these limitations.
 
-_______________________________________________________________
+**Table - Software Comparison**
+--------------------------------
 
-**Table: Engineering Document Software Comparison**
-
-============ ========= ======== ======== ========= ======= =========== 
-Program      Rep [1]_  Ver [2]_ Txt [3]_ Comp [4]_ OS [5]_ Col [6]_  
-============ ========= ======== ======== ========= ======= =========== 
+============ ========= ======== ======== ========= ======= ============ 
+Program      Rep [1]_  Ver [2]_ Txt [3]_ Comp [4]_ OS [5]_ Collab [6]_  
+============ ========= ======== ======== ========= ======= ============ 
 Matlab         no       no         no      no          no       no   
 Mathcad        no       no         no      no          no       no   
 Mathematica    no       no         no      no          no       no   
 Cloud SaaS     some     some       no      no          yes      some  
 Jupyter        no       no         no      yes         yes      yes  
 **rivt**      **yes**  **yes**   **yes**  **yes**  **yes**  **yes**
-============ ========= ======== ======== ========= ======= =========== 
+============ ========= ======== ======== ========= ======= ============ 
 
 .. [1] Report generation
 .. [2] Version control

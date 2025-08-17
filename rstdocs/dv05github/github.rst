@@ -12,4 +12,3 @@
 
 
 some text about GitHub
-``

@@ -29,19 +29,19 @@
 
 .. _Q1.0: 
 
-    **rivtlib** xx is distributed under the MIT license and can be installed through
-    PyPI or **rivtzip**, which is downloaded as portable, Windows
-    zip files. The rivtzip framework includes five open source projects:
+**rivtlib** xx is distributed under the MIT license and can be installed through
+PyPI or **rivtzip**, which is downloaded as portable, Windows
+zip files. The rivtzip framework includes five open source projects:
 
-    - **VSCode and extensions** - for editing and processing
+- **VSCode and extensions** - for editing and processing
 
-    - **Python and libraries** - for analysis and formatting
-        
-    - **Latex** - for typesetting
-        
-    - **Git, GitHub** - for version control
+- **Python and libraries** - for analysis and formatting
+    
+- **Latex** - for typesetting
+    
+- **Git, GitHub** - for version control
 
-    - **QCAD** - for diagramming
+- **QCAD** - for diagramming
 
 
 
@@ -50,7 +50,7 @@
 
 .. _Q2.0: 
 
-    the answer to question 2.0 
+the answer to question 2.0 
 
 
 .. _Q3.0: 
