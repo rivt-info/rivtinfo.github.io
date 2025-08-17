@@ -1,26 +1,28 @@
-# English translations for PROJECT.
-# Copyright (C) 2024 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# English translations for pydata-sphinx-theme.
+# Copyright (C) 2023 PyData developers
+# This file is distributed under the same license as the pydata-sphinx-theme
+# project.
 #
+# Translators:
+# Tetsuo Koyama <tkoyama010@gmail.com>, 2024
 msgid ""
 msgstr ""
 
 #: docs/conf.py:111
 msgid "Click to expand"
-msgstr ""
+msgstr "クリックして拡大"
 
 #: docs/conf.py:112
 msgid "Click to collapse"
-msgstr ""
+msgstr "クリックして折りたたむ"
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/layout.html:48
 msgid "Skip to main content"
-msgstr ""
+msgstr "本文へスキップ"
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/layout.html:60
 msgid "Back to top"
-msgstr ""
+msgstr "トップに戻る"
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/components/search-button-field.html:6
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/components/search-button-field.html:8
@@ -28,93 +30,93 @@ msgstr ""
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/search.html:5
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/search.html:28
 msgid "Search"
-msgstr ""
+msgstr "検索"
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/search.html:8
 msgid "Error"
-msgstr ""
+msgstr "エラー"
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/search.html:9
 msgid "Please activate JavaScript to enable the search functionality."
-msgstr ""
+msgstr "検索機能を有効にするにはJavaScriptを有効にしてください。"
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/components/breadcrumbs.html:6
 msgid "Breadcrumb"
-msgstr ""
+msgstr "パンくずリスト"
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/components/breadcrumbs.html:10
 msgid "Home"
-msgstr ""
+msgstr "ホーム"
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/components/copyright.html:5
 #, python-format
 msgid "Copyright %(copyright)s"
-msgstr ""
+msgstr "© Copyright %(copyright)s."
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/components/copyright.html:8
 #, python-format
 msgid "© Copyright %(copyright)s."
-msgstr ""
+msgstr "© Copyright %(copyright)s."
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/components/edit-this-page.html:10
 #, python-format
 msgid "Edit on %(provider)s"
-msgstr ""
+msgstr "%(provider)s の編集"
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/components/edit-this-page.html:12
 msgid "Edit"
-msgstr ""
+msgstr "編集"
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/components/indices.html:4
 msgid "Indices"
-msgstr ""
+msgstr "インデックス"
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/components/indices.html:11
 msgid "General Index"
-msgstr ""
+msgstr "総合インデックス"
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/components/indices.html:15
 msgid "Global Module Index"
-msgstr ""
+msgstr "グローバルモジュールインデックス"
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/components/indices.html:19
 msgid "Python Module Index"
-msgstr ""
+msgstr "Pythonモジュールインデックス"
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/components/last-updated.html:4
 #, python-format
 msgid "Last updated on %(last_updated)s."
-msgstr ""
+msgstr "最終更新日は %(last_updated)s です。"
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/components/page-toc.html:8
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/sections/header.html:43
-msgid "Sections"
-msgstr ""
+msgid "On this page"
+msgstr "このページでは"
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/components/prev-next.html:6
 msgid "previous page"
-msgstr ""
+msgstr "前のページ"
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/components/prev-next.html:9
 msgid "previous"
-msgstr ""
+msgstr "前"
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/components/prev-next.html:17
 msgid "next page"
-msgstr ""
+msgstr "次ページ"
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/components/prev-next.html:19
 msgid "next"
-msgstr ""
+msgstr "次"
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/components/sidebar-nav-bs.html:3
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/components/sidebar-nav-bs.html:4
 msgid "Section Navigation"
-msgstr ""
+msgstr "セクションナビゲーション"
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/components/sourcelink.html:5
 msgid "Show Source"
-msgstr ""
+msgstr "ソースを表示"
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/components/sphinx-version.html:4
 #, python-format
@@ -122,6 +124,8 @@ msgid ""
 "Created using <a href=\"https://www.sphinx-doc.org/\">Sphinx</a> "
 "%(sphinx_version)s."
 msgstr ""
+"<a href=\"https://www.sphinx-doc.org/\">Sphinx</a> %(sphinx_version)s "
+"を使用して作成されました。"
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/components/theme-switcher.html:3
 msgid "Color mode"
@@ -129,11 +133,11 @@ msgstr ""
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/components/theme-switcher.html:4
 msgid "Light"
-msgstr ""
+msgstr "ライト"
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/components/theme-switcher.html:5
 msgid "Dark"
-msgstr ""
+msgstr "ダーク"
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/components/theme-switcher.html:6
 msgid "System Settings"
@@ -145,45 +149,39 @@ msgid ""
 "Built with the <a href=\"%(PST_url)s\">PyData Sphinx Theme</a> "
 "%(theme_version)s."
 msgstr ""
+"<a href=\"https://pydata-sphinx-"
+"theme.readthedocs.io/en/stable/index.html\">PyData Sphinx Theme</a> "
+"%(theme_version)s で構築されています。"
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/sections/announcement.html:4
 msgid "Version warning"
-msgstr ""
+msgstr "バージョン警告"
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/sections/announcement.html:6
 msgid "Announcement"
-msgstr ""
+msgstr "アナウンス"
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/sections/header.html:3
 msgid "Site navigation"
-msgstr ""
+msgstr "サイトナビゲーション"
 
 #~ msgid "Breadcrumbs"
-#~ msgstr ""
+#~ msgstr "パンくずリスト"
 
 #~ msgid "GitHub"
-#~ msgstr ""
+#~ msgstr "GitHub"
 
 #~ msgid "GitLab"
-#~ msgstr ""
+#~ msgstr "GitLab"
 
 #~ msgid "Bitbucket"
-#~ msgstr ""
+#~ msgstr "Bitbucket"
 
 #~ msgid "Twitter"
-#~ msgstr ""
+#~ msgstr "Twitter"
 
 #~ msgid "Site Navigation"
-#~ msgstr ""
+#~ msgstr "サイトナビゲーション"
 
 #~ msgid "© <a href=\"%(path)s\">Copyright</a> %(copyright)s."
-#~ msgstr ""
-
-#~ msgid "light/dark"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Built with the <a href=\"https://pydata-"
-#~ "sphinx-theme.readthedocs.io/en/stable/index.html\">PyData "
-#~ "Sphinx Theme</a> %(theme_version)s."
-#~ msgstr ""
+#~ msgstr "© <a href=\"%(path)s\">Copyright</a> %(copyright)s."

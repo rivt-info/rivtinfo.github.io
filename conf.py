@@ -1,6 +1,8 @@
 import sys
+import os
 from pathlib import Path
 sys.path.append(str(Path(".").resolve()))
+from sphinx.locale import get_translation
 
 project = 'rivt.info'
 copyright = '2023 StructureLabs LLC'
@@ -17,7 +19,7 @@ source_suffix = ['.rst', '.md']
 master_doc = 'index'
 templates_path = ['_templates']
 language = 'en'
-locale_dirs = ['_static/locales'] # Path to your .po files
+locale_dirs = [os.path.relpath('_static/locale/', start=os.curdir)] # Path to your .po files
 gettext_compact = False # Important for themes to pick up translations
 
 html_theme = 'pydata_sphinx_theme'
@@ -27,6 +29,7 @@ html_sidebars = {"**": ["sidebar-nav-bs.html"]}
 html_static_path = ['_static', '_static/img']
 html_css_files = ['css/custom.css',]
 html_theme_options = {
+    "header_links_before_dropdown": 6,
     "navbar_align": "left",
     "show_nav_level": 3,
     "show_toc_level": 2,
@@ -38,6 +41,13 @@ html_theme_options = {
         "image_light": "_static/img/rivhome11c.png",
     }
 }
+
+# Specify the message catalog name
+catalog = "messages"
+
+# Get the translation object
+_ = get_translation(catalog)
+
 
 favicons = [
     {"href": "favicon-32x32.png"},
