@@ -26,7 +26,7 @@ html_theme = 'pydata_sphinx_theme'
 html_show_sourcelink = False
 html_context = {"default_mode": "light"}
 html_sidebars = {"**": ["sidebar-nav-bs.html"]}
-html_static_path = ['_static', '_static/img']
+html_static_path = ['_staticsrc', '_staticsrc/img']
 html_css_files = ['css/custom.css',]
 html_theme_options = {
     "collapse_navigation": True ,
@@ -37,8 +37,8 @@ html_theme_options = {
     "footer_start": ["copyright"],
     "footer_end": [],
     "logo": {
-        "image_dark": "_static/img/rivhome11c.png",
-        "image_light": "_static/img/rivhome11c.png",
+        "image_dark": "rivhome11c.png",
+        "image_light": "rivhome11c.png",
     }
 }
 
@@ -49,6 +49,15 @@ catalog = "messages"
 _ = get_translation(catalog)
 
 favicons = [
-    {"href": "favicon-32x32.png"},
-    {"href": "favicon-16x16.png"},
+    {
+        "rel": "icon",
+        "sizes": "16x16",
+        "href": "_staticsrc/img/favicon-16x16.png",
+    },
+    {
+        "rel": "icon",
+        "sizes": "32x32",
+        "href": "_staticsrc/img/favicon-32x32.png",
+    },
+
 ]

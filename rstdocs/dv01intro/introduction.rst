@@ -5,9 +5,9 @@
     :maxdepth: 2
     :hidden:
 
-    API.rst
+    api.rst
     terms.rst
-    FAQ.rst
+    faq.rst
 
 
 Motivation 

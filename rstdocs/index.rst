@@ -1,5 +1,5 @@
 
-.. figure::  _static/img/rivdark55c.png
+.. figure::  _staticsrc/img/rivdark55c.png
     :class: dark-light
     :scale: 20 %
     :align: center
