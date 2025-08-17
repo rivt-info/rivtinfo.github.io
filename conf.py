@@ -12,10 +12,12 @@ extensions = ['sphinx.ext.githubpages',
               'sphinx_favicon', 'sphinx.ext.duration',
               'sphinx.ext.doctest', 'sphinx.ext.autodoc']
 
-templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 source_suffix = ['.rst', '.md']
-locale_dirs = ['locale/en'] # Path to your .po files
+master_doc = 'index'
+templates_path = ['_templates']
+language = 'en'
+locale_dirs = ['_static/locales'] # Path to your .po files
 gettext_compact = False # Important for themes to pick up translations
 
 html_theme = 'pydata_sphinx_theme'
@@ -26,7 +28,7 @@ html_static_path = ['_static', '_static/img']
 html_css_files = ['css/custom.css',]
 html_theme_options = {
     "navbar_align": "left",
-    "show_nav_level": 1,
+    "show_nav_level": 3,
     "show_toc_level": 2,
     "navigation_depth": 2,
     "footer_start": ["copyright"],

@@ -6,6 +6,8 @@
 The rivt VSCode profile includes shortcuts for common editing functions and
 snippets for API functions and commands.
 
+**2.1.1 - Extensions**   
+---------------------------
 
 ============================================== ===============================
 Extensions                                       description
@@ -80,7 +82,9 @@ yzane.markdown-pdf                                  markdown to pdf
 yzhang.markdown-all-in-one                          markdown tools
 ============================================== ===============================
 
----------------------------------------------------------------------------
+
+**2.1.2 - Snippets/Keys**
+--------------------------
 
 ============== ==============================================================
 Snippets/Keys            description

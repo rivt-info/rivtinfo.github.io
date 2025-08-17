@@ -13,14 +13,14 @@ engineering documents.
 
 **rivt** inputs are :doc:`text files <dv03markup/markup>` (.py). 
 
-**rivt** outputs are :doc:`doc files <dv04docs/documents>` 
+**rivt** outputs are :doc:`doc files <dv04reports/documents>` 
 (documents) formatted as utf8-text, PDF or HTML files. The same input is used 
 for each type of output. Groups of docs are  organized as reports.  This site 
 is an example of a rivt HTML report.
 
 The open source framework for **rivt** is described in the 
 :doc:`Installation <dv02install/install>` and 
-:doc:`Reports <dv05reports/reports>` sections.
+:doc:`Reports <dv04reports/reports>` sections.
 
 
 
@@ -32,7 +32,6 @@ The open source framework for **rivt** is described in the
     dv01intro/introduction.rst
     dv02install/install.rst
     dv03markup/markup.rst
-    dv04docs/documents.rst
-    dv05reports/reports.rst
-    dv06github/github.rst
+    dv04reports/reports.rst
+    dv05github/github.rst
 
