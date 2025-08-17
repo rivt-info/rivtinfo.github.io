@@ -18,9 +18,8 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 source_suffix = ['.rst', '.md']
 master_doc = 'index'
 templates_path = ['_templates']
-language = 'en'
-locale_dirs = ['_staticsrc/locale/'] 
-gettext_compact = False # Important for themes to pick up translations
+locale_dirs = ['_locale'] 
+
 
 html_theme = 'pydata_sphinx_theme'
 html_show_sourcelink = False
@@ -42,11 +41,7 @@ html_theme_options = {
     }
 }
 
-# Specify the message catalog name
-catalog = "messages"
 
-# Get the translation object
-_ = get_translation(catalog)
 
 favicons = [
     {

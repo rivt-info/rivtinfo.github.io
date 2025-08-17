@@ -1,22 +1,10 @@
-# Translations template for pydata-sphinx-theme.
-# Copyright (C) 2024 PyData developers
-# This file is distributed under the same license as the pydata-sphinx-theme
-# project.
+# English translations for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: pydata-sphinx-theme 0.16.1.dev0\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-12-06 15:54+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.16.0\n"
 
 #: docs/conf.py:111
 msgid "Click to expand"
@@ -100,8 +88,8 @@ msgstr ""
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/components/page-toc.html:8
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/sections/header.html:43
-msgid "On this page"
-msgstr "Sections"
+msgid "On This Page"
+msgstr ""
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/components/prev-next.html:6
 msgid "previous page"
@@ -169,3 +157,33 @@ msgstr ""
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/sections/header.html:3
 msgid "Site navigation"
 msgstr ""
+
+#~ msgid "Breadcrumbs"
+#~ msgstr ""
+
+#~ msgid "GitHub"
+#~ msgstr ""
+
+#~ msgid "GitLab"
+#~ msgstr ""
+
+#~ msgid "Bitbucket"
+#~ msgstr ""
+
+#~ msgid "Twitter"
+#~ msgstr ""
+
+#~ msgid "Site Navigation"
+#~ msgstr ""
+
+#~ msgid "© <a href=\"%(path)s\">Copyright</a> %(copyright)s."
+#~ msgstr ""
+
+#~ msgid "light/dark"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Built with the <a href=\"https://pydata-"
+#~ "sphinx-theme.readthedocs.io/en/stable/index.html\">PyData "
+#~ "Sphinx Theme</a> %(theme_version)s."
+#~ msgstr ""
