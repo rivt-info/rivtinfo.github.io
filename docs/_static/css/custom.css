@@ -1,0 +1,66 @@
+/* overrides */
+
+html {
+    --pst-font-size-base: 16px;
+    --pst-font-size-h1: 18px;
+    --pst-font-size-h2: 16px;
+    --pst-font-size-h3: 16px;
+    --pst-font-size-h4: 14px;
+    --pst-font-size-h5: 12px;
+    --pst-font-size-h6: 10px;
+}
+
+img.align-center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+}
+
+.indented-section {
+    margin-left: 2em;
+    /* Adjust the value for desired indentation */
+}
+
+
+a {
+    color: hwb(200 11% 41%);
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+html[data-theme="light"] a {
+    color: hwb(200 13% 47%);
+}
+
+html[data-theme="dark"] a {
+    color: hwb(200 15% 27%);
+}
+
+
+a.visited {
+    color: hwb(200 15% 27%);
+    text-decoration: underline;
+    font-weight: 400;
+
+}
+
+.right-next {
+    color: hwb(200 15% 27%);
+    font-weight: 300;
+    /* Replace with a color name or hex code */
+}
+
+.left-prev {
+    color: hwb(200 15% 27%);
+    font-weight: 300;
+    /* Replace with a color name or hex code */
+}
+
+hr {
+    height: 3px;
+    /* Adjust thickness as needed */
+    background-color: hwb(200 15% 27%);
+    /* Example: red color */
+    border: none;
+}

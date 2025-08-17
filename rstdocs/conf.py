@@ -19,12 +19,12 @@ source_suffix = ['.rst', '.md']
 master_doc = 'index'
 templates_path = ['_templates']
 language = 'en'
-locale_dirs = [os.path.relpath('_static/locale/', start=os.curdir)] 
+locale_dirs = [os.path.relpath('_staticsrc/locale/', start=os.curdir)] 
 gettext_compact = False # Important for themes to pick up translations
 
 html_theme = 'pydata_sphinx_theme'
 html_show_sourcelink = False
-html_context = {"default_mode": "light"}
+html_context = {"default_mode": "dark"}
 html_sidebars = {"**": ["sidebar-nav-bs.html"]}
 html_static_path = ['_staticsrc', '_staticsrc/img']
 html_css_files = ['css/custom.css',]

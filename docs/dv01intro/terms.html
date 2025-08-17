@@ -1,0 +1,637 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" data-theme="dark">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" sizes="16x16" href="../_static/_staticsrc/img/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="../_static/_staticsrc/img/favicon-32x32.png" type="image/png">
+    <title>1.2 - Terms &#8212; rivt.info 0.1 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "dark";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "dark";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=85ff283f" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/jquery.js?v=5d32c60e"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="../_static/documentation_options.js?v=2709fde1"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'dv01intro/terms';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="1.3 - FAQ" href="faq.html" />
+    <link rel="prev" title="1.1 - API" href="api.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="dark">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+    
+    <img src="../_static/rivhome11c.png" class="logo__image only-dark" alt="rivt.info 0.1 documentation - Home"/>
+    <img src="../_static/rivhome11c.png" class="logo__image only-light pst-js-only" alt="rivt.info 0.1 documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../index.html">
+    rivt
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="introduction.html">
+    1 - Introduction
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../dv02install/install.html">
+    2 - Installation
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../dv03markup/markup.html">
+    3 - Markup
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../dv04reports/reports.html">
+    4 - Reports
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../dv05github/github.html">
+    5 - GitHub
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../index.html">
+    rivt
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="introduction.html">
+    1 - Introduction
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../dv02install/install.html">
+    2 - Installation
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../dv03markup/markup.html">
+    3 - Markup
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../dv04reports/reports.html">
+    4 - Reports
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../dv05github/github.html">
+    5 - GitHub
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links" aria-label="Docs">
+    <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
+    <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="api.html"><strong>1.1 - API</strong></a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#"><strong>1.2 - Terms</strong></a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html"><strong>1.3 - FAQ</strong></a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="introduction.html" class="nav-link"><strong>1 - Introduction</strong></a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>1.2 - Terms</strong></span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="terms">
+<h1><strong>1.2 - Terms</strong><a class="headerlink" href="#terms" title="Link to this heading">#</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<section id="basic-framework">
+<h2>basic framework<a class="headerlink" href="#basic-framework" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>includes Python and libraries, VSCode and extensions and Git and GitHub.</p>
+</div></blockquote>
+</section>
+<section id="division">
+<h2>division<a class="headerlink" href="#division" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>a set of grouped docs in a report organized in a folder</p>
+</div></blockquote>
+</section>
+<section id="doc">
+<h2>doc<a class="headerlink" href="#doc" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>formatted output document file specified by a rivt file</p>
+</div></blockquote>
+</section>
+<section id="docutils">
+<h2>docutils<a class="headerlink" href="#docutils" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>a Python package that processes restructured text files into HTML,
+LaTeX, and other formats.</p>
+</div></blockquote>
+</section>
+<section id="extended-framework">
+<h2>extended framework<a class="headerlink" href="#extended-framework" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>includes basic framework plus Latex and QCAD</p>
+</div></blockquote>
+</section>
+<section id="github">
+<h2>github<a class="headerlink" href="#github" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p><a class="reference external" href="https://en.wikipedia.org/wiki/Namespace">GitHub</a>  is a platform that
+allows developers to create, store, manage, and share their code.</p>
+</div></blockquote>
+</section>
+<section id="isolated-doc">
+<h2>isolated doc<a class="headerlink" href="#isolated-doc" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>a doc produced by a rivt file that does not have a report prefix and all
+resource files are located in the same folder as the rivt file</p>
+</div></blockquote>
+</section>
+<section id="markup-language">
+<h2>markup language<a class="headerlink" href="#markup-language" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>a text system that specifies document structure and formatting</p>
+</div></blockquote>
+</section>
+<section id="namespace">
+<h2>namespace<a class="headerlink" href="#namespace" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>provides scope for functions and variables. In Python,
+<a class="reference external" href="https://en.wikipedia.org/wiki/Namespace">namespaces</a> are defined by
+the individual modules.</p>
+</div></blockquote>
+</section>
+<section id="public-rivt">
+<h2>public rivt<a class="headerlink" href="#public-rivt" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>project folder containing private files not uploaded when sharing templates</p>
+</div></blockquote>
+</section>
+<section id="repo">
+<h2>repo<a class="headerlink" href="#repo" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>shorthand for a GitHub or other repository</p>
+</div></blockquote>
+</section>
+<section id="report">
+<h2>report<a class="headerlink" href="#report" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>collated collection of docs</p>
+</div></blockquote>
+</section>
+<section id="repository">
+<h2>repository<a class="headerlink" href="#repository" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>a storage location for software packages</p>
+</div></blockquote>
+</section>
+<section id="restructured-text">
+<h2>restructured text<a class="headerlink" href="#restructured-text" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>a lightweight markup language designed to be processed by
+documentation-processing software such as Docutils, and
+readable by humans.</p>
+</div></blockquote>
+</section>
+<section id="rivt">
+<h2>rivt<a class="headerlink" href="#rivt" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>an open source markup language and framework for writing and
+publishing engineering documents.</p>
+</div></blockquote>
+</section>
+<section id="rivt-file">
+<h2>rivt file<a class="headerlink" href="#rivt-file" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>text file (.py) that imports the rivtlib package</p>
+</div></blockquote>
+</section>
+<section id="rivt-markup">
+<h2>rivt markup<a class="headerlink" href="#rivt-markup" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>a text system that specifies document structure and formatting using
+tags, commands and restructured text markup.</p>
+</div></blockquote>
+</section>
+<section id="rivt-zip">
+<h2>rivt.zip<a class="headerlink" href="#rivt-zip" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>single folder portable installation of rivt</p>
+</div></blockquote>
+</section>
+<section id="rivtlib">
+<h2>rivtlib<a class="headerlink" href="#rivtlib" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p><a class="reference external" href="https://rivtlib.net">Python package</a> that generates docs and reports
+from a rivt file.</p>
+</div></blockquote>
+</section>
+<section id="section">
+<h2>section<a class="headerlink" href="#section" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>part of a rivt doc</p>
+</div></blockquote>
+</section>
+<section id="subdivision">
+<h2>subdivision<a class="headerlink" href="#subdivision" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>in the context of a report a subdivision is a doc</p>
+</div></blockquote>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="api.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><strong>1.1 - API</strong></p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="faq.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>1.3 - FAQ</strong></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-framework">basic framework</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#division">division</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#doc">doc</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docutils">docutils</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extended-framework">extended framework</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github">github</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#isolated-doc">isolated doc</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#markup-language">markup language</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#namespace">namespace</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#public-rivt">public rivt</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#repo">repo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#report">report</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#repository">repository</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#restructured-text">restructured text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt">rivt</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-file">rivt file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-markup">rivt markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-zip">rivt.zip</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivtlib">rivtlib</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section">section</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subdivision">subdivision</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2023 StructureLabs LLC.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+  </body>
+</html>
