@@ -10,6 +10,9 @@
     FAQ.rst
 
 
+Motivation 
+------------------
+
 **rivt** was motivated by an interest in software that could efficiently reuse
 engineering design calculations and documents. Engineering documents typically
 include text, tables, diagrams, equations and calculations from a variety of

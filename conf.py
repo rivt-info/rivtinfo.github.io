@@ -29,9 +29,10 @@ html_sidebars = {"**": ["sidebar-nav-bs.html"]}
 html_static_path = ['_static', '_static/img']
 html_css_files = ['css/custom.css',]
 html_theme_options = {
+    "collapse_navigation": True ,
     "header_links_before_dropdown": 6,
     "navbar_align": "left",
-    "show_nav_level": 2,
+    "show_nav_level": 0,
     "show_toc_level": 2,
     "navigation_depth": 2,
     "footer_start": ["copyright"],
