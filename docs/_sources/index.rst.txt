@@ -20,7 +20,7 @@ is an example of a rivt HTML report.
 
 The open source framework for **rivt** is described in the 
 :doc:`Installation <dv02install/install>` and 
-:doc:`Reports <dv04reports/reports>` sections.
+:doc:`Reports <dv04reports/reports>` divisions.
 
 
 
