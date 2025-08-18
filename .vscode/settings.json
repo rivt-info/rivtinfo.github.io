@@ -1,7 +1,4 @@
 {
-    "inline-bookmarks.view.showVisibleFilesOnly": true,
-    "insertDateString.format": "MM-DD-YYYY hh:mm:ss",
-    "insertDateString.formatDate": "MM-DD-YYYY",
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
     "terminal.integrated.profiles.windows": {
         "Command Prompt": {
@@ -23,12 +20,12 @@
     "ShortcutMenuBar.beautify": false,
     "ShortcutMenuBar.navigateBack": false,
     "ShortcutMenuBar.navigateForward": false,
-    "ShortcutMenuBar.openFilesList": false,
-    "ShortcutMenuBar.toggleWordWrap": true,
+    "ShortcutMenuBar.openFilesList": true,
+    "ShortcutMenuBar.toggleWordWrap": false,
     "ShortcutMenuBar.saveAll": true,
-    "ShortcutMenuBar.showCommands": false,
     "ShortcutMenuBar.openSettings": true,
     "ShortcutMenuBar.quickOpen": false,
+    "ShortcutMenuBar.showCommands": false,
     "actionButtons": {
         "defaultColor": "#ff0034",
         "reloadButton": "♻️",

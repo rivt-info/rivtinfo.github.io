@@ -32,8 +32,10 @@
 <link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=59bde0e9" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=85ff283f" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -48,6 +50,12 @@
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'dv01intro/faq';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -388,54 +396,27 @@
 </div>
 <section id="questions">
 <h2><strong>Questions</strong><a class="headerlink" href="#questions" title="Link to this heading">#</a></h2>
-<dl class="simple">
-<dt><a class="reference internal" href="#q1-0">Q1.0</a></dt><dd><p>Which open source licenses apply to rivtzip?</p>
-</dd>
-<dt><a class="reference internal" href="#q2-0">Q2.0</a></dt><dd><p>aslkfas fdasdf asdflk sdfljk asdflk jasdlf sadf aflkj sdflkj saf</p>
-</dd>
-<dt><a class="reference internal" href="#q3-0">Q3.0</a></dt><dd><p>Which open source licenses apply to rivtzip?</p>
-</dd>
-<dt><a class="reference internal" href="#q4-0">Q4.0</a></dt><dd><p>aslkfas fdasdf asdflk sdfljk asdflk jasdlf sadf asdflk sdflkj sdflkj saf</p>
-</dd>
-</dl>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Which open source licenses apply to the compnents of rivt?</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>rivtlib</strong> is distributed under the MIT license and can be
+installed through PyPI or <strong>rivtzip</strong>, which is downloaded as portable,
+Windows zip files. The rivtzip framework includes five open source projects:</p>
+<ul class="simple">
+<li><p class="sd-card-text"><strong>VSCode and extensions</strong> - for editing and processing</p></li>
+<li><p class="sd-card-text"><strong>Python and libraries</strong> - for analysis and formatting</p></li>
+<li><p class="sd-card-text"><strong>Latex</strong> - for typesetting</p></li>
+<li><p class="sd-card-text"><strong>Git, GitHub</strong> - for version control</p></li>
+<li><p class="sd-card-text"><strong>QCAD</strong> - for diagramming</p></li>
+</ul>
+</div>
+</details><p>aslkfas fdasdf asdflk sdfljk asdflk jasdlf sadf aflkj sdflkj saf</p>
+<p>Which open source licenses apply to rivtzip?</p>
+<p>aslkfas fdasdf asdflk sdfljk asdflk jasdlf sadf asdflk sdflkj sdflkj saf</p>
 </section>
-<section id="answers">
-<h2><strong>Answers</strong><a class="headerlink" href="#answers" title="Link to this heading">#</a></h2>
-<blockquote id="q1-0">
-<div><p>A1.0 - <strong>rivtlib</strong> xx is distributed under the MIT license and can be installed through
-PyPI or <strong>rivtzip</strong>, which is downloaded as portable, Windows
-zip files. The rivtzip framework includes five open source projects:</p>
-<ul class="simple">
-<li><p><strong>VSCode and extensions</strong> - for editing and processing</p></li>
-<li><p><strong>Python and libraries</strong> - for analysis and formatting</p></li>
-<li><p><strong>Latex</strong> - for typesetting</p></li>
-<li><p><strong>Git, GitHub</strong> - for version control</p></li>
-<li><p><strong>QCAD</strong> - for diagramming</p></li>
-</ul>
-</div></blockquote>
-<blockquote id="q2-0">
-<div><p>A2.0 - the answer to question 2.0</p>
-</div></blockquote>
-<blockquote id="q3-0">
-<div><p>A3.0 - <strong>rivtlib</strong> is distributed under the MIT license and can be installed through
-PyPI or <strong>rivtzip</strong>, which is downloaded as portable, Windows
-zip files. The rivtzip framework includes five open source projects:</p>
-<ul class="simple">
-<li><p><strong>VSCode and extensions</strong> - for editing and processing</p></li>
-<li><p><strong>Python and libraries</strong> - for analysis and formatting</p></li>
-<li><p><strong>Latex</strong> - for typesetting</p></li>
-</ul>
-</div></blockquote>
-<blockquote id="q4-0">
-<div><p>A4.0 - <strong>rivtlib</strong> is distributed under the MIT license and can be installed through
-PyPI or <strong>rivtzip</strong>, which is downloaded as portable, Windows
-zip files. The rivtzip framework includes five open source projects:</p>
-<ul class="simple">
-<li><p><strong>Latex</strong> - for typesetting</p></li>
-<li><p><strong>Git, GitHub</strong> - for version control</p></li>
-<li><p><strong>QCAD</strong> - for diagramming</p></li>
-</ul>
-</div></blockquote>
+<section id="submit-question">
+<h2><strong>Submit Question</strong><a class="headerlink" href="#submit-question" title="Link to this heading">#</a></h2>
+<p>test</p>
 </section>
 </section>
 
@@ -487,7 +468,7 @@ zip files. The rivtzip framework includes five open source projects:</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#questions"><strong>Questions</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#answers"><strong>Answers</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submit-question"><strong>Submit Question</strong></a></li>
 </ul>
   </nav></div>
 

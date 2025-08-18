@@ -32,8 +32,10 @@
 <link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=59bde0e9" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=85ff283f" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -48,6 +50,12 @@
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'dv01intro/terms';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -444,67 +452,88 @@ of the rivt framework, such as installation, markup, reports, or GitHub.</p>
 <section id="g">
 <h2><strong>G</strong><a class="headerlink" href="#g" title="Link to this heading">#</a></h2>
 <blockquote>
-<div><dl class="simple">
+<div><ul class="simple">
+<li><dl class="simple">
 <dt>github</dt><dd><p>a platform that allows developers to create, store, manage,
 and share their code</p>
 </dd>
 </dl>
+</li>
+</ul>
 </div></blockquote>
 </section>
 <section id="m">
 <h2><strong>M</strong><a class="headerlink" href="#m" title="Link to this heading">#</a></h2>
 <blockquote>
-<div><dl class="simple">
+<div><ul class="simple">
+<li><dl class="simple">
 <dt>markup language</dt><dd><p>a text system that specifies document structure and formatting</p>
 </dd>
+</dl>
+</li>
+<li><dl class="simple">
 <dt>namespace<span class="classifier">Python</span></dt><dd><p>provides <a class="reference external" href="https://en.wikipedia.org/wiki/Namespace">scope</a>
 for functions and variables</p>
 </dd>
+</dl>
+</li>
+<li><dl class="simple">
 <dt>public rivt<span class="classifier">rivt</span></dt><dd><p>project folder containing private files not uploaded when
 sharing templates</p>
 </dd>
 </dl>
+</li>
+</ul>
 </div></blockquote>
 </section>
 <section id="r">
 <h2><strong>R</strong><a class="headerlink" href="#r" title="Link to this heading">#</a></h2>
-<blockquote>
-<div><dl class="simple">
-<dt>repo</dt><dd><p>shorthand for a GitHub or other repository</p>
-</dd>
-<dt>report<span class="classifier">rivt</span></dt><dd><p>collated collection of docs</p>
-</dd>
-<dt>repository</dt><dd><p>a storage location for software packages</p>
-</dd>
-<dt>restructured text<span class="classifier">Python</span></dt><dd><p>a lightweight markup language designed to be processed by
-documentation-processing software such as Docutils, and
+<ul>
+<li><p><strong>repo</strong></p>
+<p>short for a GitHub or other repository</p>
+</li>
+<li><p><strong>report</strong> : rivt</p>
+<p>collated collection of docs</p>
+</li>
+<li><p><strong>repository</strong></p>
+<p>a storage location for software packages</p>
+</li>
+<li><p><strong>restructured text</strong> : Python</p>
+<p>a lightweight markup language designed to be processed by
+document software such as Docutils and rivt, and
 readable by humans.</p>
-</dd>
-<dt>rivt<span class="classifier">rivt</span></dt><dd><p>an open source markup language and framework for writing and
+</li>
+<li><p><strong>rivt</strong> : rivt</p>
+<p>an open source markup language and framework for writing and
 publishing engineering documents.</p>
-</dd>
-<dt>rivt file<span class="classifier">rivt</span></dt><dd><p>text file (.py) that imports the rivtlib package</p>
-</dd>
-<dt>rivt markup<span class="classifier">rivt</span></dt><dd><p>a text system that specifies document structure and formatting using
+</li>
+<li><p>rivt file : rivt</p></li>
+</ul>
+<p>text file (.py) that imports the rivtlib package</p>
+<ul class="simple">
+<li><p>rivt markup : rivt</p></li>
+</ul>
+<p>a text system that specifies document structure and formatting using
 tags, commands and restructured text markup.</p>
-</dd>
-<dt>rivt.zip<span class="classifier">rivt</span></dt><dd><p>single folder portable installation of rivt</p>
-</dd>
-<dt>rivtlib<span class="classifier">rivt</span></dt><dd><p><a class="reference external" href="https://rivtlib.net">Python package</a> that generates docs and reports
+<ul class="simple">
+<li><p>rivt.zip : rivt</p></li>
+</ul>
+<p>single folder portable installation of rivt</p>
+<ul class="simple">
+<li><p>rivtlib : rivt</p></li>
+</ul>
+<p><a class="reference external" href="https://rivtlib.net">Python package</a> that generates docs and reports
 from a rivt file.</p>
-</dd>
-</dl>
-</div></blockquote>
 </section>
 <section id="s">
 <h2><strong>S</strong><a class="headerlink" href="#s" title="Link to this heading">#</a></h2>
 <blockquote>
 <div><dl class="simple">
-<dt>section</dt><dd><p>part of a rivt doc</p>
+<dt>section<span class="classifier">rivt</span></dt><dd><p>part of a rivt doc</p>
 </dd>
 <dt>subdivision</dt><dd><p>in the context of a report a subdivision is a doc</p>
 </dd>
-<dt>standalone doc</dt><dd><p>a doc produced by a rivt file that does not have a report prefix and all
+<dt>standalone doc<span class="classifier">rivt</span></dt><dd><p>a doc produced by a rivt file that does not have a report prefix and all
 resource files are located in the same folder as the rivt file</p>
 </dd>
 </dl>

@@ -42,66 +42,72 @@
 
 **G**
 --------
-    github
+    - github
         a platform that allows developers to create, store, manage, 
         and share their code
 
 **M**
 --------
-    markup language
+    - markup language
         a text system that specifies document structure and formatting
 
-    namespace : Python
+    - namespace : Python
         provides `scope <https://en.wikipedia.org/wiki/Namespace>`_
         for functions and variables 
         
-    public rivt : rivt
+    - public rivt : rivt
         project folder containing private files not uploaded when 
         sharing templates
 
 **R**
 --------
-    repo
-        shorthand for a GitHub or other repository
+  
+- **repo**
+  
+  short for a GitHub or other repository
 
-    report : rivt
-        collated collection of docs
+- **report** : rivt
 
-    repository
-        a storage location for software packages
+  collated collection of docs
 
-    restructured text : Python
-        a lightweight markup language designed to be processed by 
-        documentation-processing software such as Docutils, and 
-        readable by humans.
+- **repository**
+  
+  a storage location for software packages
 
-    rivt : rivt
-        an open source markup language and framework for writing and 
-        publishing engineering documents. 
+- **restructured text** : Python
 
-    rivt file : rivt
-        text file (.py) that imports the rivtlib package
+  a lightweight markup language designed to be processed by 
+  document software such as Docutils and rivt, and 
+  readable by humans.
 
-    rivt markup : rivt
-        a text system that specifies document structure and formatting using 
-        tags, commands and restructured text markup. 
+- **rivt** : rivt
+  
+  an open source markup language and framework for writing and 
+  publishing engineering documents. 
 
-    rivt.zip : rivt
-        single folder portable installation of rivt
+- rivt file : rivt
+text file (.py) that imports the rivtlib package
 
-    rivtlib : rivt
-        `Python package <https://rivtlib.net>`_ that generates docs and reports 
-        from a rivt file.
+- rivt markup : rivt
+a text system that specifies document structure and formatting using 
+tags, commands and restructured text markup. 
+
+- rivt.zip : rivt
+single folder portable installation of rivt
+
+- rivtlib : rivt
+`Python package <https://rivtlib.net>`_ that generates docs and reports 
+from a rivt file.
 
 **S**
 --------
-    section 
+    section : rivt
         part of a rivt doc
 
     subdivision
         in the context of a report a subdivision is a doc
 
-    standalone doc
+    standalone doc : rivt
         a doc produced by a rivt file that does not have a report prefix and all 
         resource files are located in the same folder as the rivt file
 

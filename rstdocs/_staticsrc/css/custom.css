@@ -64,14 +64,3 @@ hr {
     /* Example: red color */
     border: none;
 }
-
-.bd-breadcrumbs {
-    position: sticky;
-    top: 0;
-    /* Adjust this value as needed */
-    z-index: 1000;
-    /* Ensure the breadcrumbs appear above other elements */
-    padding-top: 10px;
-    /* Adjust padding as needed */
-    padding-bottom: 10px;
-}
