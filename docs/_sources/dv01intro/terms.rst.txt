@@ -6,98 +6,111 @@
     :maxdepth: 3
     :hidden:
 
+**A**
+--------
 
 
-basic framework
------------------
-    includes Python and libraries, VSCode and extensions and Git and GitHub. 
+ 
+**B**
+--------
+    - basic framework : rivt
+        includes Python and libraries, VSCode and extensions and Git and GitHub.
+        asdfsdafdasdfasdf   dasdflsd sd fskdf saldj sadflk sadflsadkf 
 
-division
------------------
-    a set of grouped docs in a report organized in a folder
+**C**
+--------
+        
+**D**
+--------
+    - doc : rivt
+            formatted output document file specified by a rivt file
 
-doc
------------------
-    formatted output document file specified by a rivt file
 
-docutils
------------------
-    a Python package that processes restructured text files into HTML, 
-    LaTeX, and other formats.
+    - docutils : python
+        a Python package that processes restructured text files into HTML, 
+        LaTeX, and other formats.
+    
+    - division : rivt
+        a section of the rivt documentation that describes a specific aspect 
+        of the rivt framework, such as installation, markup, reports, or GitHub.
 
-extended framework
---------------------
-    includes basic framework plus Latex and QCAD
+**E**
+--------
+    - extended framework : rivt
+        includes basic framework plus Latex and QCAD
 
-github
------------------
-    `GitHub <https://en.wikipedia.org/wiki/Namespace>`_  is a platform that 
-    allows developers to create, store, manage, and share their code.
 
-isolated doc
------------------
-    a doc produced by a rivt file that does not have a report prefix and all 
-    resource files are located in the same folder as the rivt file
+**G**
+--------
+    github
+        a platform that allows developers to create, store, manage, 
+        and share their code
 
-markup language
------------------
-    a text system that specifies document structure and formatting
+**M**
+--------
+    markup language
+        a text system that specifies document structure and formatting
 
-namespace 
------------------ 
-    provides scope for functions and variables. In Python, 
-    `namespaces <https://en.wikipedia.org/wiki/Namespace>`_ are defined by 
-    the individual modules.
-  
-public rivt
------------------
-    project folder containing private files not uploaded when sharing templates
+    namespace : Python
+        provides `scope <https://en.wikipedia.org/wiki/Namespace>`_
+        for functions and variables 
+        
+    public rivt : rivt
+        project folder containing private files not uploaded when 
+        sharing templates
 
-repo
------------------
-    shorthand for a GitHub or other repository
+**R**
+--------
+    repo
+        shorthand for a GitHub or other repository
 
-report
------------------
-    collated collection of docs
+    report : rivt
+        collated collection of docs
 
-repository
------------------
-     a storage location for software packages
+    repository
+        a storage location for software packages
 
-restructured text
------------------
-    a lightweight markup language designed to be processed by 
-    documentation-processing software such as Docutils, and 
-    readable by humans.
+    restructured text : Python
+        a lightweight markup language designed to be processed by 
+        documentation-processing software such as Docutils, and 
+        readable by humans.
 
-rivt
------------------
-    an open source markup language and framework for writing and 
-    publishing engineering documents. 
+    rivt : rivt
+        an open source markup language and framework for writing and 
+        publishing engineering documents. 
 
-rivt file
------------------
-    text file (.py) that imports the rivtlib package
+    rivt file : rivt
+        text file (.py) that imports the rivtlib package
 
-rivt markup
------------------
-    a text system that specifies document structure and formatting using 
-    tags, commands and restructured text markup. 
+    rivt markup : rivt
+        a text system that specifies document structure and formatting using 
+        tags, commands and restructured text markup. 
 
-rivt.zip
------------------    
-    single folder portable installation of rivt
+    rivt.zip : rivt
+        single folder portable installation of rivt
 
-rivtlib 
------------------ 
-    `Python package <https://rivtlib.net>`_ that generates docs and reports 
-    from a rivt file.
+    rivtlib : rivt
+        `Python package <https://rivtlib.net>`_ that generates docs and reports 
+        from a rivt file.
 
-section 
------------------
-     part of a rivt doc
+**S**
+--------
+    section 
+        part of a rivt doc
 
-subdivision
------------------
-    in the context of a report a subdivision is a doc
+    subdivision
+        in the context of a report a subdivision is a doc
+
+    standalone doc
+        a doc produced by a rivt file that does not have a report prefix and all 
+        resource files are located in the same folder as the rivt file
+
+**T**
+------
+    template
+        a rivt file that is used as a starting point for a new doc or report
+
+    text file
+        a file that contains human-readable characters, such as letters, numbers, 
+        and symbols, typically encoded in UTF-8 format.
+    
