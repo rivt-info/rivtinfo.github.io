@@ -34,7 +34,8 @@ aslkfas fdasdf asdflk sdfljk asdflk jasdlf sadf asdflk sdflkj sdflkj saf
 
 
 
-**Submit Question**
----------------------
+**Submit A Question**
+----------------------
 
-test
+`email questions <mailto:support@example.com>`_
+
