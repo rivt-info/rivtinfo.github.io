@@ -9,10 +9,11 @@ copyright = '2023 StructureLabs LLC'
 author = 'rholland'
 release = '0.1'
 
-extensions = ['sphinx.ext.githubpages',
+extensions = ['sphinx.ext.githubpages','sphinx_togglebutton',
               "sphinxcontrib.jquery", 'sphinx_copybutton',
               'sphinx_favicon', 'sphinx.ext.duration',
-              'sphinx.ext.doctest', 'sphinx.ext.autodoc']
+              'sphinx.ext.doctest', 'sphinx.ext.autodoc',
+              'sphinx_design']
 
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 source_suffix = ['.rst', '.md']
