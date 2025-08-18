@@ -111,7 +111,7 @@
 - rivtlib : rivt
 
   Python `package <https://rivtlib.net>`_ that generates docs and reports 
-  from a rivt file.
+  from a rivt file
 
 **S**
 --------
@@ -130,5 +130,5 @@
 
 - text file : Python
   a file that contains human-readable characters, such as letters, numbers, 
-  and symbols, typically encoded in UTF-8 format.
+  and symbols, typically encoded in UTF-8 format
     
