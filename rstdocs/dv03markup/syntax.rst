@@ -1,0 +1,103 @@
+**3.1 - Syntax**
+================
+
+.. toctree::
+    :maxdepth: 1
+    :hidden:
+
+    example1.rst
+    example2.rst
+
+**rivt markup**  wraps and extends restructured text markup. It adds two
+additional markup elements - tags and commands - and provide simplified
+backend and default settings for writing the same rivt file as different
+document types (text, PDF and HTML).
+
+
+**Syntax**
+~~~~~~~~~~~
+
+The first line of each function includes a section label (that also may be a
+section title) followed by formatting parameters. New sections may be labeled
+as separate or integrated with preceding sections. The section body can contain
+any utf-8 text. Commands and tags applicable to each function are defined
+[here](#commands) and [here](#tags).
+
+**rivt** syntax includes **COMMANDS** for file operations and **TAGS** for text
+formatting. Any text not defined by commands or tags is passed through as
+`restructuredText <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_. 
+
+
+**COMMANDS**
+
+
+Commands read and write external files. They start in the first column with a
+vertical bars. A double bar is used for write commands (||) and a single bar
+(|) for read commands. The command bar is followed by the command name,
+the relative file path and parameters, each separated by a single bar:
+
+In the syntax description below parameter options are separated with
+semi-colons and elements by commas. File locations are specified using paths
+relative to the rivt file location. Using the standard folder structure is
+strongly recommended. Folder organization is described `here <5-folders.html>`_.
+
+
+**TAGS**
+
+**Line** tags format a line of text,are added at the end of the line and
+are denoted with _[**TAG**]. **Block** tags are denoted with _[[**TAG**]] on
+the first line. They evaluate a multi-line text block and end with _[[**Q**]]
+on the last line of the block (note: some tags only format pdf and html output).
+
+
+========== ========================================================= ================
+Scope                      Read Commands                              File Types
+========== ========================================================= ================
+rv.V       **|VALUES|** rel. pth | title, [rows], -;_[V]              .csv
+rv.I, rv.V **|IMG|** rel. pth | caption, scale, -;_[F]                .png,.jpg
+rv.I, rv.V **|IMG2|** rel. pth | c1, c2, s1, s2, -;_[F]               .png,.jpg
+rv.I       **|TABLE|** rel. pth | title, col w, l;c;r, [r], -;_[T]    .csv,.txt,.xlsx
+rv.I       **|TEXT|** rel. pth | [[block tag]]                        .txt,.tex
+========== ========================================================= ================
+
+=========== =============================================== ====================
+Scope                        Write Commands                         Notes 
+=========== =============================================== ====================
+rv.V         a := 1+1 | reference | units | decimals         := a command tag
+rv.W         **||DOC|** rel. pth | pdf; txt; html; pdf2      pdf2 uses rst2pdf
+rv.W         **||REPORT|** rel. pth | pdf; txt; html; pdf2   pdf uses latex
+rv.W         **||APPEND|** rel. pth | num; nonum             .pdf,.txt
+=========== =============================================== ====================
+
+================ ======================= =======================================
+Scope             Line Tags                    Description
+================ ======================= =======================================
+rv.V                    label **_[V]**      autonumber values table [1]
+rv.I, rv.V            caption **_[F]**      autonumber image [1]
+rv.I, rv.V              label **_[E]**      autonumber equation
+rv.I, rv.V               text **_[C]**      center text 
+rv.I, rv.V               text **_[B]**      center bold text (pdf, pdf2, html)
+rv.I, rv.V                    **_[P]**      new page
+rv.I, rv.V                  --------        horizontal line (4 or more - )
+rv.I                    title **_[T]**      autonumber table [1]
+rv.I                 equation **_[S]**      format symbol math 
+rv.I                     text **_[#]**      autonumber footnote
+rv.I                  descrip **_[D]**      footnote description
+rv.I               url, label **_[U]**      url link (pdf, pdf2, html)
+================ ======================= =======================================
+
+[1] tags may be added to the command as a parameter
+
+=========== =============== ====================================================
+Scope        Block Tags      Description
+=========== =============== ====================================================
+rv.V          **_[[V]]**       values format block, autonumber
+rv.I rv.V     **_[[Q]]**       end block
+rv.I          **_[[S]]**       indent block
+rv.I          **_[[C]]**       code (literal) block
+rv.I          **_[[L]]**       latex block (lpdf, html)
+rv.I          **_[[O]]**       italic (oblique) block (lpdf, html)
+rv.I          **_[[B]]**       bold block  (lpdf, html)
+rv.I          **_[[I]]**       indent italic block (lpdf, html)
+=========== =============== ====================================================
+  

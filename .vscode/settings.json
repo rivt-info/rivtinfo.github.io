@@ -26,6 +26,23 @@
     "ShortcutMenuBar.openSettings": true,
     "ShortcutMenuBar.quickOpen": false,
     "ShortcutMenuBar.showCommands": false,
+    "settings.cycle": [
+        {
+            "id": "explorerSort2", // must be unique
+            "overrideWorkspaceSettings": false,
+            "values": [
+                {
+                    "explorer.sortOrder": "name"
+                },
+                {
+                    "explorer.sortOrder": "type"
+                },
+                {
+                    "explorer.sortOrder": "modified"
+                },
+            ],
+        },
+    ],
     "actionButtons": {
         "defaultColor": "#ff0034",
         "reloadButton": "♻️",

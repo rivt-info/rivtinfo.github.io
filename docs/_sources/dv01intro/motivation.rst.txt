@@ -1,4 +1,4 @@
-**1 - Introduction**
+**1.1 - Motivation**
 =======================
 
 .. toctree::
@@ -10,27 +10,31 @@
     faq.rst
 
 
-**rivt** was motivated by an interest in software that could efficiently reuse
+rivt development is motivated by an interest in software that can efficiently reuse
 engineering design calculations and documents. Engineering documents typically
 include text, tables, diagrams, equations and calculations from a variety of
-sources. Although document software that combines these elements is available,
-implementation issues reduce their usefulness with regard to reuse. The
-deficiencies can be summarized as:
+sources. Although document software combining these elements is available,
+document reused is limited. *rivt is designed to address these limitations.* 
+
+The deficiencies can be summarized as:
 
 - each program has a relatively small market share
-- they generally ignore forward compatibility 
-- version update costs are high
-- they are not cross-platform
-- they are not designed for collaboration and version control
-- they do not produce organized reports
+- forward incompatibility - newer documents cannot be reused without upgrading
+- high version update costs
+- limited cross-platform
+- limited collaboration and version control
+- limited report generation
   
-**rivt** addresses these limitations.
+The table below provides comparisons with several available software programs.
 
-**Table - Software Comparison**
---------------------------------
+
+.. rst-class:: center
+    
+Software Comparison
+
 
 ============ ========= ======== ======== ========= ======= ============ 
-Program      Rep [1]_  Ver [2]_ Txt [3]_ Comp [4]_ OS [5]_ Collab [6]_  
+Program      Rep [1]_  Ver [2]_ Txt [3]_ Comp [4]_ CP [5]_ Collab [6]_  
 ============ ========= ======== ======== ========= ======= ============ 
 Matlab         no       no         no      no          no       no   
 Mathcad        no       no         no      no          no       no   
@@ -40,12 +44,13 @@ Jupyter        no       no         no      yes         yes      yes
 **rivt**      **yes**  **yes**   **yes**  **yes**  **yes**  **yes**
 ============ ========= ======== ======== ========= ======= ============ 
 
+
 .. [1] Report generation
 .. [2] Version control
 .. [3] Plain text input files
 .. [4] Forward and backward compatibility
 .. [5] Cross-platform
-.. [6] Supports collaboration
+.. [6] Collaboration support
 
 
 
