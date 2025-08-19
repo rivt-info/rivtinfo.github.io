@@ -12,7 +12,7 @@ The same rivt input is used for different output types.
 
 The open source framework for rivt is described in the 
 :doc:`Installation <dv02install/methods>` and :doc:`Reports <dv04reports/types>` 
-divisions. Reports are organized groupings of docs.  This site is an example 
+divisions. Reports are organized groups of docs.  This site is an example 
 of a rivt HTML report.
 
 
