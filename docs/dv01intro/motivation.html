@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=83949667" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=a4ec519e" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -220,6 +220,10 @@
   
 
   
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="Sections">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
 </div>
 
     </header>
@@ -307,13 +311,9 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#"><strong>1.1 - Motivation</strong></a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="api.html"><strong>1.2 - API</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="terms.html"><strong>1.2 - Terms</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="faq.html"><strong>1.3 - FAQ</strong></a></li>
-</ul>
-</details></li>
-<li class="toctree-l1"><a class="reference internal" href="api.html"><strong>1.2 - API</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>1.1 - Motivation</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">1.2 - API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terms.html">1.2 - Terms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html"><strong>1.3 - FAQ</strong></a></li>
 </ul>
 </div>
@@ -377,8 +377,8 @@
                   
   <section id="motivation">
 <h1><strong>1.1 - Motivation</strong><a class="headerlink" href="#motivation" title="Link to this heading">#</a></h1>
-<div class="toctree-wrapper compound">
-</div>
+<section id="background">
+<h2>[ 1 ] - Background<a class="headerlink" href="#background" title="Link to this heading">#</a></h2>
 <p>rivt development is motivated by a need for software that efficiently reuses
 engineering documents. Engineering documents typically
 include text, tables, diagrams, equations and calculations from a variety of
@@ -394,7 +394,9 @@ document reuse is limited. <em>rivt is designed to address these limitations.</e
 <li><p>limited report generation</p></li>
 </ul>
 <p>The table below provides comparisons with several available software programs.</p>
-<p class="center">Software Comparison</p>
+</section>
+<section class="center" id="table-software-comparison">
+<h2>[ 2 ] - Table: Software Comparison<a class="headerlink" href="#table-software-comparison" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Program</p></th>
@@ -485,6 +487,7 @@ document reuse is limited. <em>rivt is designed to address these limitations.</e
 </aside>
 </aside>
 </section>
+</section>
 
 
                 </article>
@@ -510,7 +513,7 @@ document reuse is limited. <em>rivt is designed to address these limitations.</e
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>1.2 - API</strong></p>
+        <p class="prev-next-title">1.2 - API</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -520,6 +523,25 @@ document reuse is limited. <em>rivt is designed to address these limitations.</e
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Sections
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">[ 1 ] - Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-software-comparison">[ 2 ] - Table: Software Comparison</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

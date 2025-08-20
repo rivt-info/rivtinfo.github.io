@@ -1,13 +1,20 @@
-**1.2 - API**
+1.2 - API
 ==============
 
-.. toctree::
-    :maxdepth: 3
-    :hidden:
+[ 1 ] - Import
+---------------
 
 A **rivt** file is a Python text file (.py) importing the **rivtlib** API:: 
 
     import rivtlib.rvapi as rv
+
+API functions may be run interactively as cells in a notebook IDE (e.g.
+VSCode), using the standard cell decorator *# %%*. They are evaluated top to
+bottom, similar to a Python script, and may be combined in any order as long as
+variables and expressions are previously defined.
+
+[ 2 ] - API functions
+----------------------
 
 The rvapi.py module provides 7 API functions:
 
@@ -24,27 +31,22 @@ rv.Q        Quit              Exit rivt
 =========== =============== ===================================
 
 
-**1.1.1 - Content API Functions**
+[ 3 ] - Content Functions
 -----------------------------------
 
-The first four functions (**R I V T**) are functions that generate doc content.
-Content functions evaluate the triple-quoted string argument
-(**rivt-string**) and format utf-8 text strings as outputs to the terminal.
-The output is a doc section unless the section heading is explicitly
-suppressed. 
+The first four functions (**R I V T**) generate content.
+They evaluate the triple-quoted string argument
+(**rivt-string**) and output utf-8 text to the terminal.
 
 
-**1.1.2 - Process API Functions**
+[ 4 ] - Process Functions
 -----------------------------------
 
-The last three functions (**D S Q**) process sections without generating 
-content. When the **Doc** function is called the entire rivt file is 
-evaluated and a doc is output to a specified format - text, PDF or HTML.
+The last three functions (**D S Q**) process sections or files. The *Doc* 
+function processes the file and writes it to a text, PDF or HTML file. The  
+*Skip* and *Quit* functions are typically used in interactive 
+editing and processing.
 
-API functions may be run interactively as cells in a notebook IDE (e.g.
-VSCode), using the standard cell decorator *# %%*. They are evaluated top to
-bottom, similar to a Python script, and may be combined in any order as long as
-variables and expressions are previously defined.
 
-The syntax for each rivt-string is 
+
 

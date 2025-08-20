@@ -1,5 +1,5 @@
-**Example 1**
-==============
+3.1 Example 1
+===================
 
 API functions start in column one. rivt-strings are indented four spaces (for
 legibility and code folding).A rivt doc is assembled by each function in order

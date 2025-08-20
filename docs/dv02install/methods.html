@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="../_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="../_static/favicon-32x32.png" type="image/png">
-    <title>2.1 - Methods &#8212; rivt.info 0.1 documentation</title>
+    <title>2.1. Install Methods &#8212; rivt.info 0.1 documentation</title>
   
   
   
@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=83949667" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=a4ec519e" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -59,7 +59,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'dv02install/methods';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="2.1 - VSCode" href="vscode.html" />
+    <link rel="next" title="2.2 - Python" href="python.html" />
     <link rel="prev" title="2 - Installation" href="install.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -311,11 +311,7 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#"><strong>2.1 - Methods</strong></a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="vscode.html">2.1 - VSCode</a></li>
-<li class="toctree-l2"><a class="reference internal" href="python.html">2.2 - Python</a></li>
-</ul>
-</details></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">2.1. Install Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="python.html">2.2 - Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="vscode.html">2.1 - VSCode</a></li>
 </ul>
@@ -361,7 +357,7 @@
     
     <li class="breadcrumb-item"><a href="install.html" class="nav-link">2 - Installation</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>2.1 - Methods</strong></span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">2.1. Install Methods</span></li>
   </ul>
 </nav>
 </div>
@@ -378,32 +374,37 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="methods">
-<h1><strong>2.1 - Methods</strong><a class="headerlink" href="#methods" title="Link to this heading">#</a></h1>
-<div class="toctree-wrapper compound">
-</div>
-<p><strong>rivt</strong> may be installed in three different ways, depending on needs and
-preferences:</p>
-<ul class="simple">
-<li><p><strong>rivt uv</strong> - uv managed installation in a virtual, isolated environment.</p></li>
-<li><p><strong>rivt zip</strong> - a portable (frozen) installation of the rivt framework from a single file that can be run from a USB drive or any folder on your computer.</p></li>
-<li><p><strong>rivt system</strong> - a system-wide installation using open source installers for each component of the framework.</p></li>
-</ul>
-<section id="rivt-framework">
-<h2>rivt Framework<a class="headerlink" href="#rivt-framework" title="Link to this heading">#</a></h2>
-<p>Each component of the framework is distributed under its own open source
-license. <strong>rivtlib</strong> is distributed under the MIT license.</p>
+  <section id="install-methods">
+<h1>2.1. Install Methods<a class="headerlink" href="#install-methods" title="Link to this heading">#</a></h1>
+<section id="framework-installation">
+<h2>[ 1 ] - Framework Installation<a class="headerlink" href="#framework-installation" title="Link to this heading">#</a></h2>
 <p>The basic rivt framweork includes:</p>
-<blockquote>
-<div><p><strong>VSCode</strong> and <strong>Extensions</strong> - document editing and processing</p>
-<p><strong>Python</strong> and <strong>Libraries</strong> - analysis and formatting</p>
-<p><strong>Git</strong> and <strong>GitHUb</strong>- version control</p>
-</div></blockquote>
-<p>Optional components include:</p>
-<blockquote>
-<div><p><strong>Latex</strong> - typesetting</p>
-<p><strong>QCAD</strong> - diagramming</p>
-</div></blockquote>
+<ul class="simple">
+<li><p><em>VSCode</em> with extensions for document editing, processing and collaborating</p></li>
+<li><p><em>Python</em> and libraries for analysis and formatting</p></li>
+<li><p><em>Git</em> and GitHub for version control</p></li>
+</ul>
+<p>The extended rivt framework includes:</p>
+<ul class="simple">
+<li><p><em>Latex</em> for highly controlled typesetting</p></li>
+<li><p><em>QCAD</em> for diagramming</p></li>
+</ul>
+<p>The rivt framework may be installed in three ways: as a uv manaaged install, as
+a portable zip file and as a system install. Each method has its advantages.</p>
+</section>
+<section id="uv-install">
+<h2>[ 2 ] - uv install<a class="headerlink" href="#uv-install" title="Link to this heading">#</a></h2>
+<p>uv managed installation in a virtual, isolated environment.</p>
+</section>
+<section id="zip-install">
+<h2>[ 3 ] - Zip install<a class="headerlink" href="#zip-install" title="Link to this heading">#</a></h2>
+<p>a portable (frozen) installation of the rivt framework from a single file
+that can be run from a USB drive or any folder on your computer.</p>
+</section>
+<section id="system-install">
+<h2>[ 4 ] - System install<a class="headerlink" href="#system-install" title="Link to this heading">#</a></h2>
+<p>a system-wide installation using open source installers for each
+component of the framework.</p>
 </section>
 </section>
 
@@ -427,11 +428,11 @@ license. <strong>rivtlib</strong> is distributed under the MIT license.</p>
       </div>
     </a>
     <a class="right-next"
-       href="vscode.html"
+       href="python.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">2.1 - VSCode</p>
+        <p class="prev-next-title">2.2 - Python</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -454,7 +455,10 @@ license. <strong>rivtlib</strong> is distributed under the MIT license.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-framework">rivt Framework</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#framework-installation">[ 1 ] - Framework Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uv-install">[ 2 ] - uv install</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zip-install">[ 3 ] - Zip install</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#system-install">[ 4 ] - System install</a></li>
 </ul>
   </nav></div>
 

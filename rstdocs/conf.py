@@ -32,8 +32,8 @@ html_theme_options = {
     "collapse_navigation": True ,
     "header_links_before_dropdown": 6,
     "navbar_align": "left",
-    "show_toc_level": 2,
-    "navigation_depth": 2,
+    "show_toc_level": 1,
+    "navigation_depth": 1,
     "footer_start": ["copyright"],
     "footer_end": [],
     "logo": {

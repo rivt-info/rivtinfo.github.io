@@ -1,8 +1,8 @@
 2 - Installation
--------------------   
+==================   
    
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 1
 
     methods.rst
     python.rst

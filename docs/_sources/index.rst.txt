@@ -7,11 +7,12 @@
 
 **rivt** is an open source markup language and framework for writing and publishing
 engineering documents. Inputs are :doc:`text files <dv03markup/syntax>` (.py). 
-Outputs are utf8-text, PDF or HTML :doc:`document files <dv04reports/types>` (docs). The same rivt input is used for different output types. 
+Outputs are utf8-text, PDF or HTML :doc:`document files <dv04reports/types>` (docs). 
+The same rivt input is used for different output types. 
 
 The open source framework for rivt is described in the 
 :doc:`Installation <dv02install/methods>` and :doc:`Reports <dv04reports/types>` 
-divisions. Reports are groups of docs organized in divisions.  This site i
+divisions. Reports are groups of docs organized within divisions.  This site i
 s an example of a rivt HTML report.
 
 
@@ -23,7 +24,7 @@ s an example of a rivt HTML report.
 .. rst-class:: center
 
 **Divisions**
-=============
+================
 
 
 .. toctree::

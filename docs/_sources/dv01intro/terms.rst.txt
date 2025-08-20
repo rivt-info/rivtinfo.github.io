@@ -1,10 +1,6 @@
 
-**1.2 - Terms**
+1.2 - Terms
 =================
-
-.. toctree::
-    :maxdepth: 3
-    :hidden:
 
 **A**
 --------

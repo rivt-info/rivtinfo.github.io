@@ -1,4 +1,4 @@
-**3.1 - Syntax**
+3.1 - Syntax
 ================
 
 
@@ -8,8 +8,8 @@ backend and default settings for writing the same rivt file as different
 document types (text, PDF and HTML).
 
 
-**Syntax**
-~~~~~~~~~~~
+Syntax
+--------
 
 The first line of each function includes a section label (that also may be a
 section title) followed by formatting parameters. New sections may be labeled
@@ -22,7 +22,8 @@ formatting. Any text not defined by commands or tags is passed through as
 `restructuredText <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_. 
 
 
-**COMMANDS**
+COMMANDS
+-----------
 
 
 Commands read and write external files. They start in the first column with a
@@ -36,7 +37,8 @@ relative to the rivt file location. Using the standard folder structure is
 strongly recommended. Folder organization is described `here <5-folders.html>`_.
 
 
-**TAGS**
+TAGS
+--------
 
 **Line** tags format a line of text,are added at the end of the line and
 are denoted with _[**TAG**]. **Block** tags are denoted with _[[**TAG**]] on

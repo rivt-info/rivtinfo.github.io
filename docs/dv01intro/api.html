@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=83949667" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=a4ec519e" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -311,15 +311,9 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="motivation.html"><strong>1.1 - Motivation</strong></a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#"><strong>1.2 - API</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="terms.html"><strong>1.2 - Terms</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="faq.html"><strong>1.3 - FAQ</strong></a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#"><strong>1.2 - API</strong></a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
-</ul>
-</details></li>
+<li class="toctree-l1"><a class="reference internal" href="motivation.html"><strong>1.1 - Motivation</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">1.2 - API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terms.html">1.2 - Terms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html"><strong>1.3 - FAQ</strong></a></li>
 </ul>
 </div>
@@ -364,10 +358,7 @@
     
     <li class="breadcrumb-item"><a href="introduction.html" class="nav-link">1 - Introduction</a></li>
     
-    
-    <li class="breadcrumb-item"><a href="motivation.html" class="nav-link"><strong>1.1 - Motivation</strong></a></li>
-    
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>1.2 - API</strong></span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">1.2 - API</span></li>
   </ul>
 </nav>
 </div>
@@ -385,13 +376,20 @@
                 <article class="bd-article">
                   
   <section id="api">
-<h1><strong>1.2 - API</strong><a class="headerlink" href="#api" title="Link to this heading">#</a></h1>
-<div class="toctree-wrapper compound">
-</div>
+<h1>1.2 - API<a class="headerlink" href="#api" title="Link to this heading">#</a></h1>
+<section id="import">
+<h2>[ 1 ] - Import<a class="headerlink" href="#import" title="Link to this heading">#</a></h2>
 <p>A <strong>rivt</strong> file is a Python text file (.py) importing the <strong>rivtlib</strong> API:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
 </pre></div>
 </div>
+<p>API functions may be run interactively as cells in a notebook IDE (e.g.
+VSCode), using the standard cell decorator <em># %%</em>. They are evaluated top to
+bottom, similar to a Python script, and may be combined in any order as long as
+variables and expressions are previously defined.</p>
+</section>
+<section id="api-functions">
+<h2>[ 2 ] - API functions<a class="headerlink" href="#api-functions" title="Link to this heading">#</a></h2>
 <p>The rvapi.py module provides 7 API functions:</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -432,24 +430,19 @@
 </tbody>
 </table>
 </div>
-<section id="content-api-functions">
-<h2><strong>1.1.1 - Content API Functions</strong><a class="headerlink" href="#content-api-functions" title="Link to this heading">#</a></h2>
-<p>The first four functions (<strong>R I V T</strong>) are functions that generate doc content.
-Content functions evaluate the triple-quoted string argument
-(<strong>rivt-string</strong>) and format utf-8 text strings as outputs to the terminal.
-The output is a doc section unless the section heading is explicitly
-suppressed.</p>
 </section>
-<section id="process-api-functions">
-<h2><strong>1.1.2 - Process API Functions</strong><a class="headerlink" href="#process-api-functions" title="Link to this heading">#</a></h2>
-<p>The last three functions (<strong>D S Q</strong>) process sections without generating
-content. When the <strong>Doc</strong> function is called the entire rivt file is
-evaluated and a doc is output to a specified format - text, PDF or HTML.</p>
-<p>API functions may be run interactively as cells in a notebook IDE (e.g.
-VSCode), using the standard cell decorator <em># %%</em>. They are evaluated top to
-bottom, similar to a Python script, and may be combined in any order as long as
-variables and expressions are previously defined.</p>
-<p>The syntax for each rivt-string is</p>
+<section id="content-functions">
+<h2>[ 3 ] - Content Functions<a class="headerlink" href="#content-functions" title="Link to this heading">#</a></h2>
+<p>The first four functions (<strong>R I V T</strong>) generate content.
+They evaluate the triple-quoted string argument
+(<strong>rivt-string</strong>) and output utf-8 text to the terminal.</p>
+</section>
+<section id="process-functions">
+<h2>[ 4 ] - Process Functions<a class="headerlink" href="#process-functions" title="Link to this heading">#</a></h2>
+<p>The last three functions (<strong>D S Q</strong>) process sections or files. The <em>Doc</em>
+function processes the file and writes it to a text, PDF or HTML file. The
+<em>Skip</em> and <em>Quit</em> functions are typically used in interactive
+editing and processing.</p>
 </section>
 </section>
 
@@ -477,7 +470,7 @@ variables and expressions are previously defined.</p>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>1.2 - Terms</strong></p>
+        <p class="prev-next-title">1.2 - Terms</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -500,8 +493,10 @@ variables and expressions are previously defined.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#content-api-functions"><strong>1.1.1 - Content API Functions</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#process-api-functions"><strong>1.1.2 - Process API Functions</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import">[ 1 ] - Import</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api-functions">[ 2 ] - API functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#content-functions">[ 3 ] - Content Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#process-functions">[ 4 ] - Process Functions</a></li>
 </ul>
   </nav></div>
 

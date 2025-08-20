@@ -1,14 +1,8 @@
 **1.1 - Motivation**
 =======================
 
-.. toctree::
-    :maxdepth: 3
-    :hidden:
-
-    api.rst
-    terms.rst
-    faq.rst
-
+[ 1 ] - Background
+---------------------
 
 rivt development is motivated by a need for software that efficiently reuses
 engineering documents. Engineering documents typically
@@ -30,8 +24,9 @@ The table below provides comparisons with several available software programs.
 
 .. rst-class:: center
     
-Software Comparison
 
+[ 2 ] - Table: Software Comparison
+-----------------------------------
 
 ============ ========= ======== ======== ========= ======= ============ 
 Program      Rep [1]_  Ver [2]_ Txt [3]_ Comp [4]_ CP [5]_ Collab [6]_  
