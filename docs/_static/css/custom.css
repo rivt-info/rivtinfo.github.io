@@ -21,11 +21,6 @@ html {
 
 }
 
-
-.bd-sidebar {
-    margin-top: 3em !important;
-}
-
 .toctree-l1>a {
     font-size: 1em;
     font-weight: normal;
@@ -43,9 +38,15 @@ html {
 
 .indented-section {
     margin-left: 2em;
-    /* Adjust the value for desired indentation */
 }
 
+.bd-sidebar {
+    margin-top: 4em !important;
+}
+
+.bd-secondary-sidebar {
+    margin-top: 4em !important;
+}
 
 a {
     color: hwb(200 11% 41%);

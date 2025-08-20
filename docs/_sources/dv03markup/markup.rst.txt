@@ -7,3 +7,5 @@
     syntax.rst
     tags.rst
     commands.rst
+    example1.rst
+    example2.rst
