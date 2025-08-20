@@ -1,81 +1,93 @@
 /* overrides */
 
+img.align-center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+}
+
+
 html {
     --pst-font-weight-heading: normal;
-    /* Affects headings (h1-h6) */
     --pst-font-weight-base: normal;
-    /* Affects body text */
     --pst-font-size-base: 16px;
     --pst-font-size-h1: 18px;
-    --pst-font-size-h2: 16px;
+    --pst-font-size-h2: 18px;
     --pst-font-size-h3: 14px;
     --pst-font-size-h4: 14px;
     --pst-font-size-h5: 12px;
     --pst-font-size-h6: 10px;
-    /*--pst-font-size-toc: 1em;
-    --pst-font-size-toc-level-1: 1em;*/
+
+}
 
 
-    img.align-center {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        display: block;
-    }
+.toctree-l1>a {
+    font-size: .7em;
+    font-weight: normal;
+    /* Adjust as needed */
+}
 
-    .indented-section {
-        margin-left: 2em;
-        /* Adjust the value for desired indentation */
-    }
+.toctree-l2>a {
+    font-size: .7em;
+    font-weight: normal;
 
+    /* Adjust for nested levels */
+}
 
-    a {
-        color: hwb(200 11% 41%);
-        text-decoration: underline;
-        font-weight: 400;
-    }
-
-    html[data-theme="light"] a {
-        color: hwb(200 13% 47%);
-    }
-
-    html[data-theme="dark"] a {
-        color: hwb(200 15% 27%);
-    }
+.indented-section {
+    margin-left: 2em;
+    /* Adjust the value for desired indentation */
+}
 
 
-    a.visited {
-        color: hwb(200 15% 27%);
-        text-decoration: underline;
-        font-weight: 400;
+a {
+    color: hwb(200 11% 41%);
+    text-decoration: underline;
+    font-weight: 400;
+}
 
-    }
+html[data-theme="light"] a {
+    color: hwb(200 13% 47%);
+}
 
-    .right-next {
-        color: hwb(200 15% 27%);
-        font-weight: 300;
-        /* Replace with a color name or hex code */
-    }
-
-    .left-prev {
-        color: hwb(200 15% 27%);
-        font-weight: 300;
-        /* Replace with a color name or hex code */
-    }
-
-    .center {
-        text-align: center;
-    }
+html[data-theme="dark"] a {
+    color: hwb(200 15% 27%);
+}
 
 
-    .left {
-        text-align: left;
-    }
+a.visited {
+    color: hwb(200 15% 27%);
+    text-decoration: underline;
+    font-weight: 400;
 
-    hr {
-        height: 3px;
-        /* Adjust thickness as needed */
-        background-color: hwb(200 15% 27%);
-        /* Example: red color */
-        border: none;
-    }
+}
+
+.right-next {
+    color: hwb(200 15% 27%);
+    font-weight: 300;
+    /* Replace with a color name or hex code */
+}
+
+.left-prev {
+    color: hwb(200 15% 27%);
+    font-weight: 300;
+    /* Replace with a color name or hex code */
+}
+
+.center {
+    text-align: center;
+}
+
+
+.left {
+    text-align: left;
+}
+
+hr {
+    height: 3px;
+    /* Adjust thickness as needed */
+    background-color: hwb(200 15% 27%);
+    /* Example: red color */
+    border: none;
+}
