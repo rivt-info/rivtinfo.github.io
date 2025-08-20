@@ -1,8 +1,8 @@
 4 - Reports
--------------------   
+=============== 
    
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 3
 
     types.rst
     folders.rst

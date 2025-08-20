@@ -1,12 +1,6 @@
 **3.2 - Tags**
 ================
 
-.. toctree::
-    :maxdepth: 1
-    :hidden:
-
-    example1.rst
-    example2.rst
 
 **rivt markup**  wraps and extends restructured text markup. It adds two
 additional markup elements - tags and commands - and provide simplified

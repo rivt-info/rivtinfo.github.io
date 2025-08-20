@@ -1,8 +1,8 @@
 5 - Github
--------------------   
+=============== 
    
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 3
 
     gitcmd.rst
     publicrivt.rst
