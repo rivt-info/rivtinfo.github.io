@@ -10,11 +10,11 @@
     faq.rst
 
 
-rivt development is motivated by an interest in software that can efficiently reuse
-engineering design calculations and documents. Engineering documents typically
+rivt development is motivated by a need for software that efficiently reuses
+engineering documents. Engineering documents typically
 include text, tables, diagrams, equations and calculations from a variety of
 sources. Although document software combining these elements is available,
-document reused is limited. *rivt is designed to address these limitations.* 
+document reuse is limited. *rivt is designed to address these limitations.* 
 
 The deficiencies can be summarized as:
 
