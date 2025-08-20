@@ -23,13 +23,13 @@ html {
 
 
 .toctree-l1>a {
-    font-size: .7em;
+    font-size: 1em;
     font-weight: normal;
     /* Adjust as needed */
 }
 
 .toctree-l2>a {
-    font-size: 1em;
+    font-size: .7em;
     font-weight: normal;
 
     /* Adjust for nested levels */
