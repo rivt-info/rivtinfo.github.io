@@ -22,6 +22,10 @@ html {
 }
 
 
+.bd-sidebar {
+    margin-top: 3em !important;
+}
+
 .toctree-l1>a {
     font-size: 1em;
     font-weight: normal;
