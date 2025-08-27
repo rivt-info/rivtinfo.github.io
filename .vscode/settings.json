@@ -15,6 +15,7 @@
         "tab.activeBackground": "#2a2570",
         "tab.inactiveBackground": "#505052"
     },
+    "git.postCommitCommand": "sync",
     "editor.formatOnSave": true,
     "gutterpreview.imagePreviewMaxHeight": 10,
     "ShortcutMenuBar.beautify": false,
