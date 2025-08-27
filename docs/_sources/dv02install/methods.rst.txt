@@ -18,7 +18,7 @@ The extended rivt framework includes:
 
 - *QCAD* for diagramming
 
-The rivt framework may be installed in three ways: as a uv manaaged install, as
+The rivt framework may be installed in three ways: as a uv managed install, as
 a portable zip file and as a system install. Each method has its advantages.
 
 [ 2 ] - uv install 
