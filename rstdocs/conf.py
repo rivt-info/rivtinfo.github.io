@@ -29,6 +29,7 @@ html_sidebars = {"**": ["sidebar-nav-bs.html"]}
 html_static_path = ['_staticsrc', '_staticsrc/img']
 html_css_files = ['css/custom.css',]
 html_theme_options = {
+    "navbar_start": ["navbar-logo", "index-link"],
     "collapse_navigation": True ,
     "header_links_before_dropdown": 6,
     "navbar_align": "left",
