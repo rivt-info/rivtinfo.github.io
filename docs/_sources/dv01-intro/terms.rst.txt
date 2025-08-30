@@ -60,8 +60,56 @@
   a platform that allows developers to create, store, manage, 
   and share their code
 
-**M**
---------
+
+
+[08] **H**
+------------
+
+- **github**
+  
+  a platform that allows developers to create, store, manage, 
+  and share their code
+
+  
+[09] **I**
+------------
+
+- **github**
+  
+  a platform that allows developers to create, store, manage, 
+  and share their code
+
+
+
+[10] **J**
+------------
+
+- **github**
+  
+  a platform that allows developers to create, store, manage, 
+  and share their code
+
+
+[11] **K**
+------------
+
+- **github**
+  
+  a platform that allows developers to create, store, manage, 
+  and share their code  
+
+[12] **L**
+------------
+
+- **latex** : rivt
+  
+  a document preparation system used for typesetting technical and 
+  scientific documents. 
+
+
+
+[13] **M**
+-------------
 
 - **markup language**
   
@@ -77,8 +125,37 @@
   project folder containing private files not uploaded when 
   sharing templates
 
-**R**
---------
+
+[14] **N**
+-------------
+
+x
+
+
+[15] **O**  
+----------- 
+
+x
+
+
+
+[16] **P**
+------------
+
+X
+
+
+[17] **q**
+-------------
+
+- **qcad** : rivt
+  
+  a computer-aided design (CAD) software application for 2D design and 
+  drafting.
+
+
+[18] **R**
+-----------
   
 - **repo**
   
@@ -121,8 +198,8 @@
   Python `package <https://rivtlib.net>`_ that generates docs and reports 
   from a rivt file
 
-**S**
---------
+[19] **S**
+-----------
 
 - **section** : rivt
     
@@ -133,8 +210,8 @@
   a doc produced by a rivt file that does not have a report prefix and with 
   resource files located in the same folder as the rivt file
 
-**T**
-------
+[20] **T**
+------------
 - **template**
   
   a rivt file that is used as a starting point for a new doc or report
@@ -143,4 +220,40 @@
   
   a file that contains human-readable characters, such as letters, numbers, 
   and symbols, typically encoded in UTF-8 format
-    
+
+[21] **U**
+------------
+
+
+[22] **V**
+------------
+
+
+- **VSCode** : rivt
+  
+  a source code editor developed by Microsoft for Windows, Linux and macOS
+  with support for debugging, syntax highlighting, intelligent code 
+  completion, snippets, code refactoring, and embedded Git. 
+
+[23] **W**
+------------
+
+X
+
+
+[24] **X**
+------------
+
+x
+
+
+[25] **Y**
+------------
+
+x
+
+
+[26] **Z**
+------------
+
+x

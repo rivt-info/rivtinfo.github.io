@@ -19,14 +19,15 @@ The deficiencies can be summarized as:
 - limited collaboration and version control
 - limited report generation
   
-The table below provides comparisons with several available software programs.
+The table below provides feature comparisons with several available software
+programs.
 
 
 .. rst-class:: center
     
 
-[02] - Table: Software Comparison
------------------------------------
+[02] - Table: Features
+--------------------------
 
 ============ ========= ======== ======== ========= ======= ============ 
 Program      Rep [1]_  Ver [2]_ Txt [3]_ Comp [4]_ CP [5]_ Collab [6]_  

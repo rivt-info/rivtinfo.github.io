@@ -5,7 +5,7 @@
 [01] - email
 ---------------
 
-`email <mailto:support@example.com>`_
+`email support <mailto:support@example.com>`_
 
 
 [02] - Q1
