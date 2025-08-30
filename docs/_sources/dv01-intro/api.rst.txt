@@ -1,5 +1,4 @@
-
- **1.2** API
+**1.2**  API
 ================
 
 
@@ -14,6 +13,7 @@ API functions may be run interactively as cells in a notebook IDE (e.g.
 VSCode), using the standard cell decorator *# %%*. They are evaluated top to
 bottom, similar to a Python script, and may be combined in any order as long as
 variables and expressions are previously defined.
+
 
 [02] - API functions
 ----------------------
@@ -48,7 +48,4 @@ The last three functions (**D S Q**) process sections or files. The *Doc*
 function processes the file and writes it to a text, PDF or HTML file. The  
 *Skip* and *Quit* functions are typically used in interactive 
 editing and processing.
-
-
-
 
