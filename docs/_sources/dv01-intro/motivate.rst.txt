@@ -1,8 +1,8 @@
 **1.1**  Motivation
 =======================
 
-[01] - Background
----------------------
+**[01]**  Background
+-------------------------
 
 rivt development is motivated by a need for software that efficiently reuses
 engineering documents. Engineering documents typically
@@ -26,19 +26,19 @@ programs.
 .. rst-class:: center
     
 
-[02] - Table: Features
---------------------------
+**[02]**  Table: Features
+------------------------------
 
-============ ========= ======== ======== ========= ======= ============ 
-Program      Rep [1]_  Ver [2]_ Txt [3]_ Comp [4]_ CP [5]_ Collab [6]_  
-============ ========= ======== ======== ========= ======= ============ 
+============ ========= ======== ======== ========= ========= ============= 
+Program      Rep [1]_  Ver [2]_ Txt [3]_ Comp [4]_ CP [5]_    Collab [6]_  
+============ ========= ======== ======== ========= ========= ============= 
 Matlab         no       no         no      no          no       no   
 Mathcad        no       no         no      no          no       no   
 Mathematica    no       no         no      no          no       no   
 Cloud SaaS     some     some       no      no          yes      some  
 Jupyter        no       no         no      yes         yes      yes  
-**rivt**      **yes**  **yes**   **yes**  **yes**  **yes**  **yes**
-============ ========= ======== ======== ========= ======= ============ 
+**rivt**      **yes**  **yes**   **yes**  **yes**   **yes**    **yes**
+============ ========= ======== ======== ========= ========= ============= 
 
 
 .. [1] Report generation
