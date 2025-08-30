@@ -1,13 +1,13 @@
 **1.2** Terms
 =================
 
-**A**
---------
+[01] **A**
+-----------
 
 
  
-**B**
---------
+[02] **B**
+------------
 
 - **basic framework** : rivt
   
@@ -15,12 +15,12 @@
   asdfsdafdasdfasdf   dasdflsd sd fskdf saldj sadflk sadflsadkf 
 
 
-**C**
---------
+[03] **C**
+------------
         
 
-**D**
---------
+[04] **D**
+-------------
 
 - **doc** : rivt
   
@@ -36,16 +36,24 @@
   a section of the rivt documentation that describes a specific aspect 
   of the rivt framework, such as installation, markup, reports, or GitHub.
 
-**E**
---------
+[05] **E**
+------------
 
 - **extended framework** : rivt
   
   includes basic framework plus Latex and QCAD
 
 
-**G**
---------
+[06] **F**
+------------
+
+- **github**
+  
+  a platform that allows developers to create, store, manage, 
+  and share their code
+
+[07] **G**
+------------
 
 - **github**
   

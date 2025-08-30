@@ -25,7 +25,7 @@ The table below provides comparisons with several available software programs.
 .. rst-class:: center
     
 
-[ 02] - Table: Software Comparison
+[02] - Table: Software Comparison
 -----------------------------------
 
 ============ ========= ======== ======== ========= ======= ============ 
