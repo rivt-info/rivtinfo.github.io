@@ -14,7 +14,7 @@ The output is formatted utf8-text, PDF or HTML
 
 The rivt framework is described in the :doc:`Installation <dv02-install/methods>` 
 and :doc:`Reports <dv04-reports/types>` divisions. *Reports* are groups of *docs* 
-organized within *divisions*.  This site is an example of a rivt HTML *report*.
+organized within *divisions*.  This site is an example of a HTML *report*.
 
 
 

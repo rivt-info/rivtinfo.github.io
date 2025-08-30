@@ -1,7 +1,9 @@
-1.2 - API
-==============
 
-[ 1 ] - Import
+ **1.2** API
+================
+
+
+[01] - Import
 ---------------
 
 A **rivt** file is a Python text file (.py) importing the **rivtlib** API:: 
@@ -13,7 +15,7 @@ VSCode), using the standard cell decorator *# %%*. They are evaluated top to
 bottom, similar to a Python script, and may be combined in any order as long as
 variables and expressions are previously defined.
 
-[ 2 ] - API functions
+[02] - API functions
 ----------------------
 
 The rvapi.py module provides 7 API functions:
@@ -31,7 +33,7 @@ rv.Q        Quit              Exit rivt
 =========== =============== ===================================
 
 
-[ 3 ] - Content Functions
+[03] - Content Functions
 -----------------------------------
 
 The first four functions (**R I V T**) generate content.
@@ -39,7 +41,7 @@ They evaluate the triple-quoted string argument
 (**rivt-string**) and output utf-8 text to the terminal.
 
 
-[ 4 ] - Process Functions
+[04] - Process Functions
 -----------------------------------
 
 The last three functions (**D S Q**) process sections or files. The *Doc* 
