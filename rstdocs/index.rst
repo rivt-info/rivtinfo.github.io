@@ -5,15 +5,16 @@
     :align: center
     :alt: rivt logo
 
-**rivt** is an open source markup language and framework for writing and
-publishing engineering documents. Inputs are :doc:`rivt files <dv03markup/syntax>`
-that others may edit. The same *rivt files* are used for different output types 
-( :doc:`docs <dv04reports/types>` ). *Docs* can be utf8-text, PDF or HTML.
 
-The rivt framework is described in the 
-:doc:`Installation <dv02install/methods>` and :doc:`Reports <dv04reports/types>` 
-divisions. Reports are groups of *docs* organized within divisions.  This 
-site is an example of a rivt HTML *report*.
+**rivt** is an open source framework for writing and distributing
+engineering documents. A *rivt file* is written in  
+:doc:`rivt markup <dv03-markup/syntax>` within a Python file (.py).  
+The output is formatted utf8-text, PDF or HTML
+:doc:`documents <dv04-reports/types>` (*docs*) and *reports*. 
+
+The rivt framework is described in the :doc:`Installation <dv02-install/methods>` 
+and :doc:`Reports <dv04-reports/types>` divisions. *Reports* are groups of *docs* 
+organized within *divisions*.  This site is an example of a rivt HTML *report*.
 
 
 
@@ -30,11 +31,11 @@ site is an example of a rivt HTML *report*.
 .. toctree::
     :maxdepth: 1
 
-    dv01intro/introduction.rst
-    dv02install/install.rst
-    dv03markup/markup.rst
-    dv04reports/reports.rst
-    dv05github/github.rst
+    dv01-intro/intro.rst
+    dv02-install/install.rst
+    dv03-markup/markup.rst
+    dv04-reports/reports.rst
+    dv05-github/github.rst
 
 
 

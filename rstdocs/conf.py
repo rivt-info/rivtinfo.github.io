@@ -7,7 +7,7 @@ from sphinx.locale import get_translation
 project = 'rivt.info'
 copyright = '2023 StructureLabs LLC'
 author = 'rholland'
-release = '0.1'
+release = '0.3.0'
 
 extensions = ['sphinx.ext.githubpages','sphinx_togglebutton',
               "sphinxcontrib.jquery", 'sphinx_copybutton',
