@@ -2,14 +2,14 @@
 =================
 
 
-[01] - email
----------------
+**[01]**  email
+--------------------
 
 `email support <mailto:support@example.com>`_
 
 
-[02] - Q1
-------------
+**[02]**  Q1
+-----------------
 
 .. dropdown:: Which open source licenses apply to the compnents of rivt?  
 
@@ -24,8 +24,8 @@
     - **QCAD** - for diagramming
 
 
-[03] - Q2
-------------
+**[03]**  Q2
+--------------
 
 .. dropdown:: Which open source licenses apply to the compnents of rivt?  
 
