@@ -30,8 +30,8 @@ html_sidebars = {"**": ["sidebar-nav-bs.html"]}
 html_static_path = ['_static', '_static/img']
 html_css_files = ['css/custom.css',]
 html_theme_options = {
-    "pygment_light_style": "tango",  
-    "pygment_dark_style": "github-dark",   
+    "pygments_light_style": "tango",  
+    "pygments_dark_style": "github-dark",   
     "navbar_start": ["navbar-logo", "index_link"],
     "collapse_navigation": True ,
     "header_links_before_dropdown": 6,
