@@ -7,14 +7,12 @@
 
 
 **rivt** is an open source framework for writing and distributing
-engineering documents. A *rivt file* is written in  
-:doc:`rivt markup <dv03-markup/syntax>` within a Python file (.py).  
-The output is formatted utf8-text, PDF or HTML
-:doc:`documents <dv04-reports/types>` (*docs*) and *reports*. 
+engineering documents. **rivt** input uses :doc:`rivt markup <dv03-markup/syntax>` 
+within a Python file (.py).  rivt output is a formatted utf8-text, PDF or HTML
+:doc:`file <dv04-reports/types>` (*doc*) or *report*. 
 
 The rivt framework is described in the :doc:`Installation <dv02-install/methods>` 
-and :doc:`Reports <dv04-reports/types>` divisions. *Reports* are groups of *docs* 
-organized within *divisions*.  This site is an example of a HTML *report*.
+and :doc:`Reports <dv04-reports/types>`. This site is an example of a HTML *report*.
 
 
 
