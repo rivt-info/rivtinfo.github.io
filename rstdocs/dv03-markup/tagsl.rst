@@ -4,9 +4,9 @@
 **Line** tags format a line of text. They are added at the end of the line and
 are denoted with _[**TAG**]. Some tags will only format pdf and html output.
 
-____________________________________________
-KEY
-----
+
+**KEY**
+--------
 **tag**: description
 
 

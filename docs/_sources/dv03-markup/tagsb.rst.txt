@@ -5,9 +5,9 @@
 multi-line text block and end with _[[**Q**]] on the last line of the block
 (note: some tags only format pdf and html output).
 
-____________________________________________
-KEY
-----
+
+**KEY**
+---------
 **tag**: description
 
 ::
