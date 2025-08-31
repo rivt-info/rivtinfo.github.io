@@ -1,7 +1,6 @@
 
 .. code-block:: python
 
-
     import rivtlib.rivtapi as rv
 
     rv.R("""Run function | pass; redact | nocolor; color code
