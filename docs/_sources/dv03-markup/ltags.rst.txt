@@ -1,17 +1,18 @@
 **3.2** Line Tags
 ===================
 
-**Line** tags format a line of text,are added at the end of the line and
-are denoted with _[**TAG**]. Some tags only format pdf and html output.
+**Line** tags format a line of text. They are added at the end of the line and
+are denoted with _[**TAG**]. Some tags will only format pdf and html output.
 
 KEY
 ----
+**tag**: description
 
 ::
 
-    tag: description
     syntax 
     function scope
+    output type
 
 
 **_[B]** :  center, bold
@@ -21,6 +22,7 @@ KEY
 
     text _[B]
     rv.I, rv.V
+    pdf, html
 
 
 **_[C]** :   center 
@@ -30,6 +32,7 @@ KEY
 
     text _[C]
     rv.I, rv.V
+    text, pdf, html
 
 
 **_[D]** :  footnote description
