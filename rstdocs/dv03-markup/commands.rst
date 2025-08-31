@@ -36,12 +36,7 @@ relative to the rivt file location. Using the standard folder structure is
 strongly recommended. Folder organization is described `here <5-folders.html>`_.
 
 
-**TAGS**
 
-**Line** tags format a line of text,are added at the end of the line and
-are denoted with _[**TAG**]. **Block** tags are denoted with _[[**TAG**]] on
-the first line. They evaluate a multi-line text block and end with _[[**Q**]]
-on the last line of the block (note: some tags only format pdf and html output).
 
 
 ========== ========================================================= ================

@@ -59,7 +59,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'dv03-markup/syntax';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="3.2 Tags" href="tags.html" />
+    <link rel="next" title="3.2 Line Tags" href="ltags.html" />
     <link rel="prev" title="3. Markup" href="markup.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -316,7 +316,8 @@
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>3.1</strong> Syntax</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tags.html"><strong>3.2</strong> Tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ltags.html"><strong>3.2</strong> Line Tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="btags.html"><strong>3.3</strong> Block Tags</a></li>
 <li class="toctree-l1"><a class="reference internal" href="commands.html"><strong>3.3</strong> Commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="example1.html"><strong>3.4</strong> Example 1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quick.html"><strong>3.5</strong> Quick Look-up</a></li>
@@ -400,8 +401,15 @@ any utf-8 text. Commands and tags applicable to each function are defined
 formatting. Any text not defined by commands or tags is passed through as
 <a class="reference external" href="https://docutils.sourceforge.io/docs/user/rst/quickref.html">restructuredText</a>.</p>
 </section>
+<section id="tags">
+<h2>Tags<a class="headerlink" href="#tags" title="Link to this heading">#</a></h2>
+<p><strong>Line</strong> tags format a line of text,are added at the end of the line and
+are denoted with _[<strong>TAG</strong>]. <strong>Block</strong> tags are denoted with _[[<strong>TAG</strong>]] on
+the first line. They evaluate a multi-line text block and end with _[[<strong>Q</strong>]]
+on the last line of the block (note: some tags only format pdf and html output).</p>
+</section>
 <section id="commands">
-<h2>COMMANDS<a class="headerlink" href="#commands" title="Link to this heading">#</a></h2>
+<h2>Commands<a class="headerlink" href="#commands" title="Link to this heading">#</a></h2>
 <p>Commands read and write external files. They start in the first column with a
 vertical bars. A double bar is used for write commands (||) and a single bar
 (|) for read commands. The command bar is followed by the command name,
@@ -433,11 +441,11 @@ strongly recommended. Folder organization is described <a class="reference exter
       </div>
     </a>
     <a class="right-next"
-       href="tags.html"
+       href="ltags.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>3.2</strong> Tags</p>
+        <p class="prev-next-title"><strong>3.2</strong> Line Tags</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -461,7 +469,8 @@ strongly recommended. Folder organization is described <a class="reference exter
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Syntax</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#commands">COMMANDS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tags">Tags</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#commands">Commands</a></li>
 </ul>
   </nav></div>
 

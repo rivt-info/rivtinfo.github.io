@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="../_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="../_static/favicon-32x32.png" type="image/png">
-    <title>3.3 Commands &#8212; rivt.info 0.3.0 documentation</title>
+    <title>3.2 Line Tags &#8212; rivt.info 0.3.0 documentation</title>
   
   
   
@@ -56,11 +56,11 @@
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'dv03-markup/commands';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'dv03-markup/ltags';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="3.4 Example 1" href="example1.html" />
-    <link rel="prev" title="3.3 Block Tags" href="btags.html" />
+    <link rel="next" title="3.3 Block Tags" href="btags.html" />
+    <link rel="prev" title="3.1 Syntax" href="syntax.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -316,9 +316,9 @@
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="syntax.html"><strong>3.1</strong> Syntax</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ltags.html"><strong>3.2</strong> Line Tags</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>3.2</strong> Line Tags</a></li>
 <li class="toctree-l1"><a class="reference internal" href="btags.html"><strong>3.3</strong> Block Tags</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>3.3</strong> Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commands.html"><strong>3.3</strong> Commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="example1.html"><strong>3.4</strong> Example 1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quick.html"><strong>3.5</strong> Quick Look-up</a></li>
 </ul>
@@ -364,7 +364,7 @@
     
     <li class="breadcrumb-item"><a href="markup.html" class="nav-link"><strong>3.</strong> Markup</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>3.3</strong> Commands</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>3.2</strong> Line Tags</span></li>
   </ul>
 </nav>
 </div>
@@ -381,192 +381,57 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="commands">
-<h1><strong>3.3</strong> Commands<a class="headerlink" href="#commands" title="Link to this heading">#</a></h1>
-<p><strong>rivt markup</strong>  wraps and extends restructured text markup. It adds two
-additional markup elements - tags and commands - and provide simplified
-backend and default settings for writing the same rivt file as different
-document types (text, PDF and HTML).</p>
-<section id="syntax">
-<h2><strong>Syntax</strong><a class="headerlink" href="#syntax" title="Link to this heading">#</a></h2>
-<p>The first line of each function includes a section label (that also may be a
-section title) followed by formatting parameters. New sections may be labeled
-as separate or integrated with preceding sections. The section body can contain
-any utf-8 text. Commands and tags applicable to each function are defined
-[here](#commands) and [here](#tags).</p>
-<p><strong>rivt</strong> syntax includes <strong>COMMANDS</strong> for file operations and <strong>TAGS</strong> for text
-formatting. Any text not defined by commands or tags is passed through as
-<a class="reference external" href="https://docutils.sourceforge.io/docs/user/rst/quickref.html">restructuredText</a>.</p>
-<p><strong>COMMANDS</strong></p>
-<p>Commands read and write external files. They start in the first column with a
-vertical bars. A double bar is used for write commands (||) and a single bar
-(|) for read commands. The command bar is followed by the command name,
-the relative file path and parameters, each separated by a single bar:</p>
-<p>In the syntax description below parameter options are separated with
-semi-colons and elements by commas. File locations are specified using paths
-relative to the rivt file location. Using the standard folder structure is
-strongly recommended. Folder organization is described <a class="reference external" href="5-folders.html">here</a>.</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Scope</p></th>
-<th class="head"><p>Read Commands</p></th>
-<th class="head"><p>File Types</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>rv.V</p></td>
-<td><p><strong>|VALUES|</strong> rel. pth | title, [rows], -;_[V]</p></td>
-<td><p>.csv</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I, rv.V</p></td>
-<td><p><strong>|IMG|</strong> rel. pth | caption, scale, -;_[F]</p></td>
-<td><p>.png,.jpg</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I, rv.V</p></td>
-<td><p><strong>|IMG2|</strong> rel. pth | c1, c2, s1, s2, -;_[F]</p></td>
-<td><p>.png,.jpg</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p><strong>|TABLE|</strong> rel. pth | title, col w, l;c;r, [r], -;_[T]</p></td>
-<td><p>.csv,.txt,.xlsx</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p><strong>|TEXT|</strong> rel. pth | [[block tag]]</p></td>
-<td><p>.txt,.tex</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Scope</p></th>
-<th class="head"><p>Write Commands</p></th>
-<th class="head"><p>Notes</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>rv.V</p></td>
-<td><p>a := 1+1 | reference | units | decimals</p></td>
-<td><p>:= a command tag</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.W</p></td>
-<td><p><strong>||DOC|</strong> rel. pth | pdf; txt; html; pdf2</p></td>
-<td><p>pdf2 uses rst2pdf</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.W</p></td>
-<td><p><strong>||REPORT|</strong> rel. pth | pdf; txt; html; pdf2</p></td>
-<td><p>pdf uses latex</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.W</p></td>
-<td><p><strong>||APPEND|</strong> rel. pth | num; nonum</p></td>
-<td><p>.pdf,.txt</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Scope</p></th>
-<th class="head"><p>Line Tags</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>rv.V</p></td>
-<td><p>label <strong>_[V]</strong></p></td>
-<td><p>autonumber values table [1]</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I, rv.V</p></td>
-<td><p>caption <strong>_[F]</strong></p></td>
-<td><p>autonumber image [1]</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I, rv.V</p></td>
-<td><p>label <strong>_[E]</strong></p></td>
-<td><p>autonumber equation</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I, rv.V</p></td>
-<td><p>text <strong>_[C]</strong></p></td>
-<td><p>center text</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I, rv.V</p></td>
-<td><p>text <strong>_[B]</strong></p></td>
-<td><p>center bold text (pdf, pdf2, html)</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I, rv.V</p></td>
-<td><p><strong>_[P]</strong></p></td>
-<td><p>new page</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I, rv.V</p></td>
-<td></td>
-<td><p>horizontal line (4 or more - )</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>title <strong>_[T]</strong></p></td>
-<td><p>autonumber table [1]</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p>equation <strong>_[S]</strong></p></td>
-<td><p>format symbol math</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>text <strong>_[#]</strong></p></td>
-<td><p>autonumber footnote</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p>descrip <strong>_[D]</strong></p></td>
-<td><p>footnote description</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>url, label <strong>_[U]</strong></p></td>
-<td><p>url link (pdf, pdf2, html)</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>[1] tags may be added to the command as a parameter</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Scope</p></th>
-<th class="head"><p>Block Tags</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>rv.V</p></td>
-<td><p><strong>_[[V]]</strong></p></td>
-<td><p>values format block, autonumber</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I rv.V</p></td>
-<td><p><strong>_[[Q]]</strong></p></td>
-<td><p>end block</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p><strong>_[[S]]</strong></p></td>
-<td><p>indent block</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p><strong>_[[C]]</strong></p></td>
-<td><p>code (literal) block</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p><strong>_[[L]]</strong></p></td>
-<td><p>latex block (lpdf, html)</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p><strong>_[[O]]</strong></p></td>
-<td><p>italic (oblique) block (lpdf, html)</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p><strong>_[[B]]</strong></p></td>
-<td><p>bold block  (lpdf, html)</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p><strong>_[[I]]</strong></p></td>
-<td><p>indent italic block (lpdf, html)</p></td>
-</tr>
-</tbody>
-</table>
-</div>
+  <section id="line-tags">
+<h1><strong>3.2</strong> Line Tags<a class="headerlink" href="#line-tags" title="Link to this heading">#</a></h1>
+<p><strong>Line</strong> tags format a line of text,are added at the end of the line and
+are denoted with _[<strong>TAG</strong>]. Some tags only format pdf and html output.</p>
+<section id="b-center-bold">
+<h2><strong>_[B]</strong> :  center, bold<a class="headerlink" href="#b-center-bold" title="Link to this heading">#</a></h2>
+<p><em>text</em> <strong>_[B]</strong>  | rv.I, rv.V</p>
+</section>
+<section id="c-center">
+<h2><strong>_[C]</strong> :   center<a class="headerlink" href="#c-center" title="Link to this heading">#</a></h2>
+<p><em>text</em> <strong>_[C]</strong></p>
+</section>
+<section id="d-footnote-description">
+<h2><strong>_[D]</strong> :  footnote description<a class="headerlink" href="#d-footnote-description" title="Link to this heading">#</a></h2>
+<p><em>description</em> <strong>_[D]</strong></p>
+</section>
+<section id="e-autonumber-label-equation">
+<h2><strong>_[E]</strong> : autonumber, label equation<a class="headerlink" href="#e-autonumber-label-equation" title="Link to this heading">#</a></h2>
+<p><em>equation description</em> <strong>_[E]</strong></p>
+</section>
+<section id="f-autonumber-label-figure">
+<h2><strong>_[F]</strong> : autonumber, label figure<a class="headerlink" href="#f-autonumber-label-figure" title="Link to this heading">#</a></h2>
+<p>figure caption <strong>_[F]</strong></p>
+</section>
+<section id="v-autonumber-label-values-table">
+<h2><strong>_[V]</strong> : autonumber, label values table<a class="headerlink" href="#v-autonumber-label-values-table" title="Link to this heading">#</a></h2>
+<p><em>table title</em> <strong>_[V]</strong></p>
+</section>
+<section id="p-new-page">
+<h2><strong>_[P]</strong> : new page<a class="headerlink" href="#p-new-page" title="Link to this heading">#</a></h2>
+<p><strong>_[P]</strong></p>
+</section>
+<section id="s">
+<h2><strong>_[S]</strong><a class="headerlink" href="#s" title="Link to this heading">#</a></h2>
+<p>equation <strong>_[S]</strong>   :   format symbol math</p>
+</section>
+<section id="t-autonumber-label-table">
+<h2><strong>_[T]</strong>  autonumber, label table<a class="headerlink" href="#t-autonumber-label-table" title="Link to this heading">#</a></h2>
+<p><em>table title</em> <strong>_[T]</strong></p>
+</section>
+<section id="autonumber-footnote">
+<h2><strong>_[#]</strong> :   autonumber footnote<a class="headerlink" href="#autonumber-footnote" title="Link to this heading">#</a></h2>
+<p>text <strong>_[#]</strong></p>
+</section>
+<section id="u-url-link">
+<h2><strong>_[U]</strong> :  url link<a class="headerlink" href="#u-url-link" title="Link to this heading">#</a></h2>
+<p>url, label <strong>_[U]</strong></p>
+</section>
+<section id="line">
+<h2><strong>line</strong><a class="headerlink" href="#line" title="Link to this heading">#</a></h2>
+<p>for horizontal line 4 or more dashes (—-)</p>
 </section>
 </section>
 
@@ -581,20 +446,20 @@ strongly recommended. Folder organization is described <a class="reference exter
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="btags.html"
+       href="syntax.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>3.3</strong> Block Tags</p>
+        <p class="prev-next-title"><strong>3.1</strong> Syntax</p>
       </div>
     </a>
     <a class="right-next"
-       href="example1.html"
+       href="btags.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>3.4</strong> Example 1</p>
+        <p class="prev-next-title"><strong>3.3</strong> Block Tags</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -617,7 +482,18 @@ strongly recommended. Folder organization is described <a class="reference exter
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#syntax"><strong>Syntax</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-center-bold"><strong>_[B]</strong> :  center, bold</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-center"><strong>_[C]</strong> :   center</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-footnote-description"><strong>_[D]</strong> :  footnote description</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e-autonumber-label-equation"><strong>_[E]</strong> : autonumber, label equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#f-autonumber-label-figure"><strong>_[F]</strong> : autonumber, label figure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#v-autonumber-label-values-table"><strong>_[V]</strong> : autonumber, label values table</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-new-page"><strong>_[P]</strong> : new page</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#s"><strong>_[S]</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-autonumber-label-table"><strong>_[T]</strong>  autonumber, label table</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#autonumber-footnote"><strong>_[#]</strong> :   autonumber footnote</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#u-url-link"><strong>_[U]</strong> :  url link</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#line"><strong>line</strong></a></li>
 </ul>
   </nav></div>
 
