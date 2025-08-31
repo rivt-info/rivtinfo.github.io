@@ -6,51 +6,51 @@ are denoted with _[**TAG**]. **Block** tags are denoted with _[[**TAG**]] on
 the first line. They evaluate a multi-line text block and end with _[[**Q**]]
 on the last line of the block (note: some tags only format pdf and html output).
 
-**_[B]**
----------
-*text* **_[B]**    :  center bold text (pdf, pdf2, html)
+**_[B]** :  center, bold
+------------------------------------------------
+*text* **_[B]**    
 
-**_[C]**
----------
-*text* **_[C]**   :   center text 
+**_[C]** :   center 
+---------------------------
+*text* **_[C]**  
 
-**_[D]**
----------    
-*description* **_[D]**  :    footnote description
+**_[D]** :  footnote description
+-----------------------------------    
+*description* **_[D]** 
 
-**_[E]**
----------
-*equation description* **_[E]**  :    autonumber equation
+**_[E]** : autonumber, label equation
+-----------------------------------------
+*equation description* **_[E]**  
 
-**_[F]** : autonumber and label figure 
+**_[F]** : autonumber, label figure 
 -----------------------------------------
 figure caption **_[F]**   
 
-**_[V]** : autonumber and label values table 
+**_[V]** : autonumber, label values table 
 -----------------------------------------------
 *table title* **_[V]**   
 
 
-**_[P]**
----------
-**_[P]**  :    new page
+**_[P]** : new page
+-----------------------
+**_[P]**  
 
 
 **_[S]**
 ---------
 equation **_[S]**   :   format symbol math 
 
-**_[T]**  autonumber and label table
+**_[T]**  autonumber, label table
 ------------------------------------------
 *table title* **_[T]** 
 
-**_[#]**
----------
-text **_[#]**   :   autonumber footnote
+**_[#]** :   autonumber footnote
+------------------------------------
+text **_[#]**   
 
-**_[U]**
----------
-url, label **_[U]**  :    url link (pdf, pdf2, html)
+**_[U]** :  url link 
+------------------------
+url, label **_[U]**  
 
 **line**
 ---------------------   
