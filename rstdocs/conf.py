@@ -26,7 +26,7 @@ html_theme = 'pydata_sphinx_theme'
 html_show_sourcelink = False
 html_context = {"default_mode": "dark"}
 html_sidebars = {"**": ["sidebar-nav-bs.html"]}
-html_static_path = ['_static', '_static/img', '_static/example']
+html_static_path = ['_static', '_static/img']
 html_css_files = ['css/custom.css',]
 html_theme_options = {
     "navbar_start": ["navbar-logo", "index_link"],
