@@ -20,8 +20,7 @@ source_suffix = ['.rst', '.md']
 master_doc = 'index'
 templates_path = ['_templates']
 locale_dirs = ['_locale'] 
-pygment_light_style = "default"  
-pygment_dark_style = "monokai"   
+
 
 
 html_theme = 'pydata_sphinx_theme'
@@ -31,6 +30,8 @@ html_sidebars = {"**": ["sidebar-nav-bs.html"]}
 html_static_path = ['_static', '_static/img']
 html_css_files = ['css/custom.css',]
 html_theme_options = {
+    "pygment_light_style": "tango",  
+    "pygment_dark_style": "monokai",   
     "navbar_start": ["navbar-logo", "index_link"],
     "collapse_navigation": True ,
     "header_links_before_dropdown": 6,
