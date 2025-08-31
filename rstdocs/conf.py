@@ -20,6 +20,8 @@ source_suffix = ['.rst', '.md']
 master_doc = 'index'
 templates_path = ['_templates']
 locale_dirs = ['_locale'] 
+pygment_light_style = "default"  
+pygment_dark_style = "monokai"   
 
 
 html_theme = 'pydata_sphinx_theme'
