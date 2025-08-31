@@ -1,4 +1,4 @@
-::
+.. code-block:: python
 
 
     import rivtlib.rivtapi as rv
