@@ -7,6 +7,7 @@ are denoted with _[**TAG**]. Some tags will only format pdf and html output.
 KEY
 ----
 **tag**: description
+____________________________________________
 
 ::
 
