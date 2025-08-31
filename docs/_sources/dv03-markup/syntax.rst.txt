@@ -1,5 +1,10 @@
-3.1 - Syntax
+**3.1** Syntax
 ================
+
+
+API functions start in column one. rivt-strings are indented four spaces (for
+legibility and code folding).A rivt doc is assembled by each function in order
+of the input order. Each function also, optionally, defines a doc section.
 
 
 **rivt markup**  wraps and extends restructured text markup. It adds two

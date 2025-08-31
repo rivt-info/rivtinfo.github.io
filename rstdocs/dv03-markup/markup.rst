@@ -1,5 +1,5 @@
-3 - Markup
-=============   
+**3.** Markup
+==================
    
 .. toctree::
     :maxdepth: 1
@@ -8,4 +8,4 @@
     tags.rst
     commands.rst
     example1.rst
-    example2.rst
+ 
