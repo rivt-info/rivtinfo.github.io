@@ -385,9 +385,16 @@
 <h1><strong>3.2</strong> Line Tags<a class="headerlink" href="#line-tags" title="Link to this heading">#</a></h1>
 <p><strong>Line</strong> tags format a line of text,are added at the end of the line and
 are denoted with _[<strong>TAG</strong>]. Some tags only format pdf and html output.</p>
+<section id="key">
+<h2>KEY<a class="headerlink" href="#key" title="Link to this heading">#</a></h2>
+<p>tag: description
+syntax
+function scope</p>
+</section>
 <section id="b-center-bold">
 <h2><strong>_[B]</strong> :  center, bold<a class="headerlink" href="#b-center-bold" title="Link to this heading">#</a></h2>
-<p><em>text</em> <strong>_[B]</strong>  | rv.I, rv.V</p>
+<p><em>text</em> <strong>_[B]</strong>
+rv.I, rv.V</p>
 </section>
 <section id="c-center">
 <h2><strong>_[C]</strong> :   center<a class="headerlink" href="#c-center" title="Link to this heading">#</a></h2>
@@ -397,17 +404,13 @@ are denoted with _[<strong>TAG</strong>]. Some tags only format pdf and html out
 <h2><strong>_[D]</strong> :  footnote description<a class="headerlink" href="#d-footnote-description" title="Link to this heading">#</a></h2>
 <p><em>description</em> <strong>_[D]</strong></p>
 </section>
-<section id="e-autonumber-label-equation">
-<h2><strong>_[E]</strong> : autonumber, label equation<a class="headerlink" href="#e-autonumber-label-equation" title="Link to this heading">#</a></h2>
+<section id="e-number-label-equation">
+<h2><strong>_[E]</strong> : number, label equation<a class="headerlink" href="#e-number-label-equation" title="Link to this heading">#</a></h2>
 <p><em>equation description</em> <strong>_[E]</strong></p>
 </section>
-<section id="f-autonumber-label-figure">
-<h2><strong>_[F]</strong> : autonumber, label figure<a class="headerlink" href="#f-autonumber-label-figure" title="Link to this heading">#</a></h2>
+<section id="f-number-label-figure">
+<h2><strong>_[F]</strong> : number, label figure<a class="headerlink" href="#f-number-label-figure" title="Link to this heading">#</a></h2>
 <p>figure caption <strong>_[F]</strong></p>
-</section>
-<section id="v-autonumber-label-values-table">
-<h2><strong>_[V]</strong> : autonumber, label values table<a class="headerlink" href="#v-autonumber-label-values-table" title="Link to this heading">#</a></h2>
-<p><em>table title</em> <strong>_[V]</strong></p>
 </section>
 <section id="p-new-page">
 <h2><strong>_[P]</strong> : new page<a class="headerlink" href="#p-new-page" title="Link to this heading">#</a></h2>
@@ -417,21 +420,25 @@ are denoted with _[<strong>TAG</strong>]. Some tags only format pdf and html out
 <h2><strong>_[S]</strong><a class="headerlink" href="#s" title="Link to this heading">#</a></h2>
 <p>equation <strong>_[S]</strong>   :   format symbol math</p>
 </section>
-<section id="t-autonumber-label-table">
-<h2><strong>_[T]</strong>  autonumber, label table<a class="headerlink" href="#t-autonumber-label-table" title="Link to this heading">#</a></h2>
+<section id="t-number-label-table">
+<h2><strong>_[T]</strong>  number, label table<a class="headerlink" href="#t-number-label-table" title="Link to this heading">#</a></h2>
 <p><em>table title</em> <strong>_[T]</strong></p>
 </section>
-<section id="autonumber-footnote">
-<h2><strong>_[#]</strong> :   autonumber footnote<a class="headerlink" href="#autonumber-footnote" title="Link to this heading">#</a></h2>
+<section id="number-footnote">
+<h2><strong>_[#]</strong> :  number footnote<a class="headerlink" href="#number-footnote" title="Link to this heading">#</a></h2>
 <p>text <strong>_[#]</strong></p>
 </section>
 <section id="u-url-link">
 <h2><strong>_[U]</strong> :  url link<a class="headerlink" href="#u-url-link" title="Link to this heading">#</a></h2>
 <p>url, label <strong>_[U]</strong></p>
 </section>
-<section id="line">
-<h2><strong>line</strong><a class="headerlink" href="#line" title="Link to this heading">#</a></h2>
-<p>for horizontal line 4 or more dashes (—-)</p>
+<section id="v-number-label-values-table">
+<h2><strong>_[V]</strong> : number, label values table<a class="headerlink" href="#v-number-label-values-table" title="Link to this heading">#</a></h2>
+<p><em>table title</em> <strong>_[V]</strong></p>
+</section>
+<section id="horizontal-line">
+<h2><strong>horizontal line</strong><a class="headerlink" href="#horizontal-line" title="Link to this heading">#</a></h2>
+<p>4 or more dashes on empty line(—-)</p>
 </section>
 </section>
 
@@ -482,18 +489,19 @@ are denoted with _[<strong>TAG</strong>]. Some tags only format pdf and html out
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key">KEY</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-center-bold"><strong>_[B]</strong> :  center, bold</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-center"><strong>_[C]</strong> :   center</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-footnote-description"><strong>_[D]</strong> :  footnote description</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e-autonumber-label-equation"><strong>_[E]</strong> : autonumber, label equation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#f-autonumber-label-figure"><strong>_[F]</strong> : autonumber, label figure</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#v-autonumber-label-values-table"><strong>_[V]</strong> : autonumber, label values table</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e-number-label-equation"><strong>_[E]</strong> : number, label equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#f-number-label-figure"><strong>_[F]</strong> : number, label figure</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-new-page"><strong>_[P]</strong> : new page</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#s"><strong>_[S]</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-autonumber-label-table"><strong>_[T]</strong>  autonumber, label table</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#autonumber-footnote"><strong>_[#]</strong> :   autonumber footnote</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-number-label-table"><strong>_[T]</strong>  number, label table</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#number-footnote"><strong>_[#]</strong> :  number footnote</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#u-url-link"><strong>_[U]</strong> :  url link</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#line"><strong>line</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#v-number-label-values-table"><strong>_[V]</strong> : number, label values table</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#horizontal-line"><strong>horizontal line</strong></a></li>
 </ul>
   </nav></div>
 

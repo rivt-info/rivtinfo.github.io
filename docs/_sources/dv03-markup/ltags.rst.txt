@@ -4,9 +4,17 @@
 **Line** tags format a line of text,are added at the end of the line and
 are denoted with _[**TAG**]. Some tags only format pdf and html output.
 
+KEY
+----
+tag: description
+syntax 
+function scope
+
+
 **_[B]** :  center, bold
 ------------------------------------------------
-*text* **_[B]**  | rv.I, rv.V
+*text* **_[B]**  
+rv.I, rv.V
 
 **_[C]** :   center 
 ---------------------------
@@ -16,17 +24,13 @@ are denoted with _[**TAG**]. Some tags only format pdf and html output.
 -----------------------------------    
 *description* **_[D]** 
 
-**_[E]** : autonumber, label equation
+**_[E]** : number, label equation
 -----------------------------------------
 *equation description* **_[E]**  
 
-**_[F]** : autonumber, label figure 
+**_[F]** : number, label figure 
 -----------------------------------------
 figure caption **_[F]**   
-
-**_[V]** : autonumber, label values table 
------------------------------------------------
-*table title* **_[V]**   
 
 **_[P]** : new page
 -----------------------
@@ -36,11 +40,11 @@ figure caption **_[F]**
 ---------
 equation **_[S]**   :   format symbol math 
 
-**_[T]**  autonumber, label table
+**_[T]**  number, label table
 ------------------------------------------
 *table title* **_[T]** 
 
-**_[#]** :   autonumber footnote
+**_[#]** :  number footnote
 ------------------------------------
 text **_[#]**   
 
@@ -48,6 +52,10 @@ text **_[#]**
 ------------------------
 url, label **_[U]**  
 
-**line**
+**_[V]** : number, label values table 
+-----------------------------------------------
+*table title* **_[V]**   
+
+**horizontal line**
 ---------------------   
-for horizontal line 4 or more dashes (----)
+4 or more dashes on empty line(----)
