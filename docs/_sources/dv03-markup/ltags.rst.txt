@@ -6,9 +6,10 @@ are denoted with _[**TAG**]. Some tags only format pdf and html output.
 
 KEY
 ----
-tag: description
-syntax 
-function scope
+::
+    tag: description
+    syntax 
+    function scope
 
 
 **_[B]** :  center, bold
