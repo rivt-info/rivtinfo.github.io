@@ -2,4 +2,4 @@
 ===================
    
    
-.. include:: _examples/example1.txt
+.. include:: _static/example/example1.txt
