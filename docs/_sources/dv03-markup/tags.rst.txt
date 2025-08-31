@@ -6,46 +6,47 @@ are denoted with _[**TAG**]. **Block** tags are denoted with _[[**TAG**]] on
 the first line. They evaluate a multi-line text block and end with _[[**Q**]]
 on the last line of the block (note: some tags only format pdf and html output).
 
-
-**_[V]**
+**_[B]**
 ---------
-table title **_[V]**   :   autonumber values table 
-
-**_[F]**
----------
-figure caption **_[F]**   :  autonumber and label figure 
-
-**_[E]**
----------
-equation descroption **_[E]**  :    autonumber equation
+*text* **_[B]**    :  center bold text (pdf, pdf2, html)
 
 **_[C]**
 ---------
-text **_[C]**   :   center text 
+*text* **_[C]**   :   center text 
 
-**_[B]**
+**_[D]**
+---------    
+*description* **_[D]**  :    footnote description
+
+**_[E]**
 ---------
-text **_[B]**    :  center bold text (pdf, pdf2, html)
+*equation description* **_[E]**  :    autonumber equation
+
+**_[F]** : autonumber and label figure 
+-----------------------------------------
+figure caption **_[F]**   
+
+**_[V]** : autonumber and label values table 
+-----------------------------------------------
+*table title* **_[V]**   
+
 
 **_[P]**
 ---------
 **_[P]**  :    new page
 
-**_[T]**
----------
-title **_[T]**  :    autonumber table [1]
 
 **_[S]**
 ---------
 equation **_[S]**   :   format symbol math 
 
+**_[T]**  autonumber and label table
+------------------------------------------
+*table title* **_[T]** 
+
 **_[#]**
 ---------
 text **_[#]**   :   autonumber footnote
-
-**_[D]**
----------    
-description **_[D]**  :    footnote description
 
 **_[U]**
 ---------
