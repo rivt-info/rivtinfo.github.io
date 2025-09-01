@@ -13,15 +13,11 @@ are denoted with _[**TAG**]. Some tags will only format pdf and html output.
 
     <hr>
 
+.. topic:: *text* _[TAG]
 
-**tag**: description
-
-
-::
-
-    syntax 
-    function scope
-    output type
+    - syntax 
+    - function scope
+    - output type
 
 
 
@@ -32,11 +28,10 @@ _[B] :  center, bold
 
     <hr>
 
-::
+.. topic:: *text* _[B]
 
-    *text* _[B]
-    rv.I, rv.V
-    pdf, html
+    - rv.I, rv.V
+    - pdf, html
 
 
 _[C] :   center 
@@ -46,11 +41,10 @@ _[C] :   center
 
     <hr>
 
-::
+.. topic:: *text* _[C]
 
-    *text* _[C]
-    rv.I, rv.V
-    text, pdf, html
+    - rv.I, rv.V
+    - pdf, html
 
 
 _[D] :  footnote description
