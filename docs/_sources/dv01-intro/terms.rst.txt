@@ -24,16 +24,16 @@ basic framework  : rivt
 [04]  D 
 ----------------
 
-doc : rivt
+:: doc : rivt
   
-  A formatted document file specified by a rivt file
+A formatted document file specified by a rivt file
   
-docutils : python
+:: docutils : python
   
-  A Python package that processes restructured text files into HTML, 
-  LaTeX, and other formats.
+A Python package that processes restructured text files into HTML, 
+LaTeX, and other formats.
 
-division  : rivt
+division : rivt
 
   A section of the rivt documentation that describes a specific aspect 
   of the rivt framework, such as installation, markup, reports, or GitHub.
