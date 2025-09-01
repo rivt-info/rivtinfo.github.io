@@ -8,8 +8,13 @@ are denoted with _[**TAG**]. Some tags will only format pdf and html output.
 
 **KEY**
 --------
-**tag**: description
 
+.. raw:: html
+
+    <hr>
+
+
+**tag**: description
 
 
 ::
@@ -17,10 +22,6 @@ are denoted with _[**TAG**]. Some tags will only format pdf and html output.
     syntax 
     function scope
     output type
-
-.. raw:: html
-
-    <hr>
 
 
 
@@ -115,4 +116,4 @@ url, label **_[U]**
 
 **horizontal line**
 ---------------------   
-4 or more dashes on empty line(----)
+5 or more underscores on an empty line(_____)

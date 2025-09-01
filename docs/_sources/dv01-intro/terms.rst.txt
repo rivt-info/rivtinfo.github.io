@@ -4,12 +4,16 @@
 **KEY**
 ---------
 
+.. raw:: html
+
+    <hr>
+
+
+
   term : *context*
 
 Definiitions of terms in a context. Contexts include: rivt,
 python, docutils, restructured text, github and os (operating systems).
-
-____________________________________________
 
 
 A 
@@ -34,6 +38,7 @@ D
     <hr>
 
 
+
   doc : *rivt*
   
 A formatted document file output by rivt. The file is a text, PDF or HTML file.
@@ -50,10 +55,6 @@ An ordered group of rivt docs that make up part of a report.
 E 
 ---------------
 
-.. raw:: html
-
-    <hr>
-
 
 F 
 ---------------
@@ -61,6 +62,7 @@ F
 .. raw:: html
 
     <hr>
+
 
   framework : *rivt*
   
