@@ -10,31 +10,32 @@
 [02]  B 
 ---------------
 
--  basic framework  : rivt
+basic framework  : rivt
   
-  includes Python and libraries, VSCode and extensions and Git and GitHub.
-  asdfsdafdasdfasdf   dasdflsd sd fskdf saldj sadflk sadflsadkf 
+  A rivt framework that includes Python and libraries, VSCode and extensions
+  and Git and GitHub. asdfsdafdasdfasdf dasdflsd sd fskdf saldj sadflk
+  sadflsadkf
 
 
 [03]  C 
 ---------------
         
 
-**[04]**  D 
+[04]  D 
 ----------------
 
--  doc  : rivt
+doc : rivt
   
-  formatted output document file specified by a rivt file
-
--  docutils  : python
-
-  a Python package that processes restructured text files into HTML, 
+  A formatted document file specified by a rivt file
+  
+docutils : python
+  
+  A Python package that processes restructured text files into HTML, 
   LaTeX, and other formats.
 
--  division  : rivt
+division  : rivt
 
-  a section of the rivt documentation that describes a specific aspect 
+  A section of the rivt documentation that describes a specific aspect 
   of the rivt framework, such as installation, markup, reports, or GitHub.
 
 **[05]**  E 
