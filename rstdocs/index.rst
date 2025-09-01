@@ -6,13 +6,13 @@
     :alt: rivt logo
 
 
-**rivt** is an open source framework for writing and distributing
-engineering documents. **rivt** input uses :doc:`rivt markup <dv03-markup/syntax>` 
-within a Python file (.py).  rivt output is a formatted utf8-text, PDF or HTML
-:doc:`file <dv04-reports/types>` (*doc*) or *report*. 
+**rivt** is an open source framework for writing and distributing engineering 
+documents. The framework is described in the :doc:`Installation <dv02-install/methods>`. 
+Input is :doc:`rivt markup <dv03-markup/syntax>` within a Python file (.py).  
+Output is formatted utf8-text, PDF or HTML :doc:`doc files <dv04-reports/types>` 
+or :doc:`reports <dv04-reports/types>`.  This site is an example of a HTML report.
 
-The rivt framework is described in the :doc:`Installation <dv02-install/methods>` 
-and :doc:`Reports <dv04-reports/types>`. This site is an example of a HTML *report*.
+
 
 
 
