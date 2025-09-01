@@ -1,13 +1,13 @@
-**1.3**  Terms
+1.3  Terms
 ====================
 
 
-**[01]**  A 
+[01]  A 
 --------------
 
 
  
-**[02]**  B 
+[02]  B 
 ---------------
 
 -  basic framework  : rivt
@@ -16,7 +16,7 @@
   asdfsdafdasdfasdf   dasdflsd sd fskdf saldj sadflk sadflsadkf 
 
 
-**[03]**  C 
+[03]  C 
 ---------------
         
 
