@@ -1,20 +1,23 @@
 1.3  Terms
 ====================
 
+**KEY**
+---------
+
+  term : *context*
+
+Definiitions of terms in a context. Contexts used here include: rivt,
+python, docutils, restructured text and os (operating systems)
+
+____________________________________________
+
 
 [01]  A 
 --------------
 
-
  
 [02]  B 
 ---------------
-
-basic framework  : rivt
-  
-  A rivt framework that includes Python and libraries, VSCode and extensions
-  and Git and GitHub. asdfsdafdasdfasdf dasdflsd sd fskdf saldj sadflk
-  sadflsadkf
 
 
 [03]  C 
@@ -24,35 +27,33 @@ basic framework  : rivt
 [04]  D 
 ----------------
 
-  doc : rivt
+  doc : *rivt*
   
-A formatted document file specified by a rivt file
-  
-  docutils : python
+A formatted document file output by rivt, typically a text, PDF or HTML file.
+
+  docutils : *python*
   
 A Python package that processes restructured text files into HTML, 
 LaTeX, and other formats.
 
-  division : rivt
+  division : *rivt*
 
-A section of the rivt documentation that describes a specific aspect 
-of the rivt framework, such as installation, markup, reports, or GitHub.
+An ordered group of rivt docs that make up a report.
 
 **[05]**  E 
 ---------------
-
--  extended framework  : rivt
-  
-  includes basic framework plus Latex and QCAD
 
 
 **[06]**  F 
 ---------------
 
--  github 
+  framework : **rivt**
   
-  a platform that allows developers to create, store, manage, 
-  and share their code
+
+There are two types of rivt frameworks that includes Python and libraries, VSCode and extensions
+and Git and GitHub. asdfsdafdasdfasdf dasdflsd sd fskdf saldj sadflk
+sadflsadkf
+
 
 **[07]**  G 
 ---------------
