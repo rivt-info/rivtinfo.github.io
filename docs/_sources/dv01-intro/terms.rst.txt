@@ -15,6 +15,10 @@ ____________________________________________
 A 
 --------------
 
+.. raw:: html
+
+    <hr>
+
  
 B 
 ---------------
@@ -24,6 +28,11 @@ C
         
 D 
 ----------------
+
+.. raw:: html
+
+    <hr>
+
 
   doc : *rivt*
   
@@ -41,9 +50,17 @@ An ordered group of rivt docs that make up part of a report.
 E 
 ---------------
 
+.. raw:: html
+
+    <hr>
+
 
 F 
 ---------------
+
+.. raw:: html
+
+    <hr>
 
   framework : *rivt*
   

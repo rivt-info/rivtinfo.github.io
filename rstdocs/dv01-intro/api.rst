@@ -1,9 +1,12 @@
 1.2 API
 ================
 
+[01] Import rivtlib
+---------------------------
 
-**[01]**  Import
--------------------
+.. raw:: html
+
+    <hr>
 
 A **rivt** file is a Python text file (.py) importing the **rivtlib** API:: 
 
@@ -15,8 +18,12 @@ bottom, similar to a Python script, and may be combined in any order as long as
 variables and expressions are previously defined.
 
 
-**[02]**  API functions
+[02] API functions
 ----------------------------
+
+.. raw:: html
+
+    <hr>
 
 The rvapi.py module provides 7 API functions:
 

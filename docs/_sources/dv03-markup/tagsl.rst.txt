@@ -1,5 +1,6 @@
-**3.2** Line Tags
+3.2 Line Tags
 ===================
+
 
 **Line** tags format a line of text. They are added at the end of the line and
 are denoted with _[**TAG**]. Some tags will only format pdf and html output.
@@ -17,11 +18,18 @@ are denoted with _[**TAG**]. Some tags will only format pdf and html output.
     function scope
     output type
 
-____________________________________________
+.. raw:: html
+
+    <hr>
+
 
 
 _[B] :  center, bold
 -------------------------------------------
+
+.. raw:: html
+
+    <hr>
 
 ::
 
@@ -32,6 +40,10 @@ _[B] :  center, bold
 
 _[C] :   center 
 -------------------------------------------
+
+.. raw:: html
+
+    <hr>
 
 ::
 
