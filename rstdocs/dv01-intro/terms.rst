@@ -8,13 +8,10 @@
 
     <hr>
 
-
-
-  term : *context*
-
-Definiitions of terms in a context. Contexts include: rivt,
-python, docutils, restructured text, github and os (operating systems).
-
+.. topic:: term : *context*
+  
+  Definiitions of terms in a context. Contexts include: rivt,
+  python, docutils, restructured text, github and os (operating systems).
 
 A 
 --------------
@@ -37,24 +34,25 @@ D
 
     <hr>
 
+.. topic:: doc : *rivt*
 
+  A formatted document file output by rivt. The file is a text, PDF or HTML file.
 
-  doc : *rivt*
-  
-A formatted document file output by rivt. The file is a text, PDF or HTML file.
+.. topic:: docutils : *python*  
 
-  docutils : *python*
-  
-A Python package that processes restructured text files into HTML, 
-LaTeX, and other formats.
+  A Python package that processes restructured text files into HTML, 
+  LaTeX, and other formats.
 
-  division : *rivt*
+.. topic:: division : *rivt*
 
-An ordered group of rivt docs that make up part of a report.
+  An ordered group of rivt docs that make up part of a report.
 
 E 
 ---------------
 
+.. raw:: html
+
+    <hr>
 
 F 
 ---------------
@@ -64,16 +62,16 @@ F
     <hr>
 
 
-  framework : *rivt*
+.. topic::  framework : *rivt*
   
-The rivt framework includes:
-  - Python and libraries
-  - VSCode and extensions
-  - Git
-  
-The extended framework includes:
-  - LaTeX
-  - QCAD
+  The rivt framework includes:
+    - Python and libraries
+    - VSCode and extensions
+    - Git
+    
+  The extended framework includes:
+    - LaTeX
+    - QCAD
 
   figure : *rivt*
 
