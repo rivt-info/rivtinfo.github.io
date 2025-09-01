@@ -13,11 +13,10 @@ are denoted with _[**TAG**]. Some tags will only format pdf and html output.
 
     <hr>
 
-.. topic:: *text* _[TAG]
+.. topic::  syntax
 
-    - syntax 
     - function scope
-    - output type
+    - applicable output
 
 
 
