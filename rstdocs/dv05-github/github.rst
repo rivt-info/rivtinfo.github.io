@@ -1,4 +1,4 @@
-5 - Github
+5. Github
 =============== 
    
 .. toctree::
