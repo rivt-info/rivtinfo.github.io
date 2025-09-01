@@ -7,7 +7,7 @@
   term : *context*
 
 Definiitions of terms in a context. Contexts used here include: rivt,
-python, docutils, restructured text and os (operating systems)
+python, docutils, restructured text, github and os (operating systems).
 
 ____________________________________________
 
@@ -38,24 +38,42 @@ LaTeX, and other formats.
 
   division : *rivt*
 
-An ordered group of rivt docs that make up a report.
+An ordered group of rivt docs that make up part of a report.
 
-**[05]**  E 
+[05]  E 
 ---------------
 
 
-**[06]**  F 
+[06]  F 
 ---------------
 
   framework : **rivt**
   
-
-There are two types of rivt frameworks that includes Python and libraries, VSCode and extensions
+There are two rivt frameworks: basic and extended.  that includes Python and libraries, VSCode and extensions
 and Git and GitHub. asdfsdafdasdfasdf dasdflsd sd fskdf saldj sadflk
 sadflsadkf
 
 
-**[07]**  G 
+[07]  G 
+---------------
+
+  github 
+  
+  a platform that allows developers to create, store, manage, 
+  and share their code
+
+
+
+[08]  H 
+---------------
+
+-  github 
+  
+  a platform that allows developers to create, store, manage, 
+  and share their code
+
+  
+[09]  I 
 ---------------
 
 -  github 
@@ -65,16 +83,7 @@ sadflsadkf
 
 
 
-**[08]**  H 
----------------
-
--  github 
-  
-  a platform that allows developers to create, store, manage, 
-  and share their code
-
-  
-**[09]**  I 
+[10]  J 
 ---------------
 
 -  github 
@@ -83,17 +92,7 @@ sadflsadkf
   and share their code
 
 
-
-**[10]**  J 
----------------
-
--  github 
-  
-  a platform that allows developers to create, store, manage, 
-  and share their code
-
-
-**[11]**  K 
+[11]  K 
 ---------------
 
 -  github 
@@ -101,7 +100,7 @@ sadflsadkf
   a platform that allows developers to create, store, manage, 
   and share their code  
 
-**[12]**  L 
+[12]  L 
 ---------------
 
 -  latex  : rivt
@@ -111,7 +110,7 @@ sadflsadkf
 
 
 
-**[13]**  M 
+[13]  M 
 ----------------
 
 -  markup language 

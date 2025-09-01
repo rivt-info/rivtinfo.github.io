@@ -25,7 +25,7 @@ _[B] :  center, bold
 
 ::
 
-    text _[B]
+    *text* _[B]
     rv.I, rv.V
     pdf, html
 
@@ -35,7 +35,7 @@ _[C] :   center
 
 ::
 
-    text _[C]
+    *text* _[C]
     rv.I, rv.V
     text, pdf, html
 
@@ -45,7 +45,7 @@ _[C] :   center
 
 ::
 
-    text _[D]
+    *text* _[D]
     rv.I, rv.V
     text, pdf, html
 
@@ -55,7 +55,7 @@ _[C] :   center
 
 ::
 
-    label _[C]
+    *label* _[C]
     rv.I, rv.V
     text, pdf, html
 
@@ -66,18 +66,24 @@ _[C] :   center
 
 ::
 
-    label _[C]
+    *label* _[C]
     rv.I, rv.V
     text, pdf, html
 
 
 **_[P]** : new page
------------------------
-**_[P]**  
+-----------------------------------------
 
-**_[S]**
----------
-equation **_[S]**   :   format symbol math 
+
+**_[S]** : sympy equation
+-----------------------------------------
+
+::
+
+    *equation* _[S]
+    rv.I, rv.V
+    text, pdf, html
+
 
 **_[T]**  number, label table
 ------------------------------------------
