@@ -12,19 +12,17 @@ python, docutils, restructured text, github and os (operating systems).
 ____________________________________________
 
 
-[01]  A 
+A 
 --------------
 
  
-[02]  B 
+B 
 ---------------
 
-
-[03]  C 
+C 
 ---------------
         
-
-[04]  D 
+D 
 ----------------
 
   doc : *rivt*
@@ -40,11 +38,11 @@ LaTeX, and other formats.
 
 An ordered group of rivt docs that make up part of a report.
 
-[05]  E 
+E 
 ---------------
 
 
-[06]  F 
+F 
 ---------------
 
   framework : *rivt*
@@ -54,19 +52,19 @@ The rivt framework includes:
   - VSCode and extensions
   - Git
   
-The extended rivt framework includes:
+The extended framework includes:
   - LaTeX
   - QCAD
 
   figure : *rivt*
 
-An imported image file  (.png, jpg) with optional caption.
+An imported image file  (.png, .jpg) with optional caption.
 
   footnote : *rivt*
 
 A pair of tags defining the location and definition af an endnote.
   
-[07]  G 
+G 
 ---------------
 
   github 
@@ -76,7 +74,7 @@ A pair of tags defining the location and definition af an endnote.
 
 
 
-[08]  H 
+H 
 ---------------
 
 -  github 
@@ -85,7 +83,7 @@ A pair of tags defining the location and definition af an endnote.
   and share their code
 
   
-[09]  I 
+I 
 ---------------
 
 -  github 
@@ -95,7 +93,7 @@ A pair of tags defining the location and definition af an endnote.
 
 
 
-[10]  J 
+J 
 ---------------
 
 -  github 
@@ -104,7 +102,7 @@ A pair of tags defining the location and definition af an endnote.
   and share their code
 
 
-[11]  K 
+K 
 ---------------
 
 -  github 
@@ -112,17 +110,16 @@ A pair of tags defining the location and definition af an endnote.
   a platform that allows developers to create, store, manage, 
   and share their code  
 
-[12]  L 
+L 
 ---------------
 
--  latex  : rivt
+  LaTeX : *os*
   
-  a document preparation system used for typesetting technical and 
-  scientific documents. 
+A software system for typesetting documents, based on TeX.
 
 
 
-[13]  M 
+M 
 ----------------
 
 -  markup language 
@@ -140,26 +137,26 @@ A pair of tags defining the location and definition af an endnote.
   sharing templates
 
 
-**[14]**  N 
+N 
 ----------------
 
 x
 
 
-**[15]**  O   
+O   
 -------------- 
 
 x
 
 
 
-**[16]**  P 
+P 
 ---------------
 
 X
 
 
-**[17]**  q 
+Q 
 ----------------
 
 -  qcad  : rivt
@@ -168,7 +165,7 @@ X
   drafting.
 
 
-**[18]**  R 
+R 
 --------------
   
 -  repo 
@@ -212,7 +209,7 @@ X
   Python `package <https://rivtlib.net>`_ that generates docs and reports 
   from a rivt file
 
-**[19]**  S 
+S 
 --------------
 
 -  section  : rivt
@@ -224,7 +221,7 @@ X
   a doc produced by a rivt file that does not have a report prefix and with 
   resource files located in the same folder as the rivt file
 
-**[20]**  T 
+T 
 ---------------
 -  template 
   
@@ -235,39 +232,39 @@ X
   a file that contains human-readable characters, such as letters, numbers, 
   and symbols, typically encoded in UTF-8 format
 
-**[21]**  U 
+U 
 ---------------
 
 
-**[22]**  V 
+V 
 ---------------
 
 
--  VSCode  : rivt
+  VSCode  : rivt
   
-  a source code editor developed by Microsoft for Windows, Linux and macOS
-  with support for debugging, syntax highlighting, intelligent code 
-  completion, snippets, code refactoring, and embedded Git. 
+A source code editor developed by Microsoft for Windows, Linux and macOS
+with support for debugging, syntax highlighting, intelligent code 
+completion, snippets, code refactoring, and embedded Git. 
 
-**[23]**  W 
+W 
 ---------------
 
 X
 
 
-**[24]**  X 
+X 
 ---------------
 
 x
 
 
-**[25]**  Y 
+Y 
 ---------------
 
 x
 
 
-**[26]**  Z 
+Z 
 ---------------
 
 x
