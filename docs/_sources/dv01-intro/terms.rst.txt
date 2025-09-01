@@ -6,7 +6,7 @@
 
   term : *context*
 
-Definiitions of terms in a context. Contexts used here include: rivt,
+Definiitions of terms in a context. Contexts include: rivt,
 python, docutils, restructured text, github and os (operating systems).
 
 ____________________________________________
@@ -29,7 +29,7 @@ ____________________________________________
 
   doc : *rivt*
   
-A formatted document file output by rivt, typically a text, PDF or HTML file.
+A formatted document file output by rivt. The file is a text, PDF or HTML file.
 
   docutils : *python*
   
@@ -47,13 +47,25 @@ An ordered group of rivt docs that make up part of a report.
 [06]  F 
 ---------------
 
-  framework : **rivt**
+  framework : *rivt*
   
-There are two rivt frameworks: basic and extended.  that includes Python and libraries, VSCode and extensions
-and Git and GitHub. asdfsdafdasdfasdf dasdflsd sd fskdf saldj sadflk
-sadflsadkf
+The rivt framework includes:
+  - Python and libraries
+  - VSCode and extensions
+  - Git
+  
+The extended rivt framework includes:
+  - LaTeX
+  - QCAD
 
+  figure : *rivt*
 
+An imported image file  (.png, jpg) with optional caption.
+
+  footnote : *rivt*
+
+A pair of tags defining the location and definition af an endnote.
+  
 [07]  G 
 ---------------
 

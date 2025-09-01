@@ -40,7 +40,7 @@ _[C] :   center
     text, pdf, html
 
 
-**_[D]** :  footnote description
+_[D] :  footnote description
 -------------------------------------------    
 
 ::
@@ -50,7 +50,7 @@ _[C] :   center
     text, pdf, html
 
 
-**_[E]** : number, label equation
+_[E] : number, label equation
 -----------------------------------------
 
 ::
@@ -61,7 +61,7 @@ _[C] :   center
 
 
 
-**_[F]** : number, label figure 
+_[F] : number, label figure 
 -----------------------------------------
 
 ::
