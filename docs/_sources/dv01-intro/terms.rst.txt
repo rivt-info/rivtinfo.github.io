@@ -150,44 +150,60 @@ L
 M 
 ----------------
 
--  markup language 
+.. raw:: html
+
+    <hr>
+
+.. topic::  markup  : *rivt*
   
   a text system that specifies document structure and formatting
 
--  namespace  : Python
+.. topic::  namespace  : *Python*
   
   provides `scope <https://en.wikipedia.org/wiki/Namespace>`_
   for functions and variables 
     
--  public rivt  : rivt
-  
-  project folder containing private files not uploaded when 
-  sharing templates
+
 
 
 N 
 ----------------
 
-x
+.. raw:: html
+
+    <hr>
+
 
 
 O   
 -------------- 
 
-x
+.. raw:: html
 
+    <hr>
 
 
 P 
 ---------------
 
-X
+.. raw:: html
+
+    <hr>
+
+.. topic::  public rivt  : rivt
+  
+  project folder containing private files not uploaded when 
+  sharing templates
 
 
 Q 
 ----------------
 
--  qcad  : rivt
+.. raw:: html
+
+    <hr>
+
+.. topic:: qcad  : rivt
   
   a computer-aided design (CAD) software application for 2D design and 
   drafting.
@@ -195,44 +211,49 @@ Q
 
 R 
 --------------
-  
--  repo 
+
+.. raw:: html
+
+    <hr>
+
+
+.. topic:: repo 
   
   short for a GitHub or other repository
 
--  report  : rivt
+.. topic::  report  : rivt
 
   collated collection of docs
 
--  repository 
+.. topic:: repository 
   
   a storage location for software packages
 
--  restructured text  : Python
+.. topic::  restructured text  : Python
 
   a lightweight markup language designed to be processed by 
   document software such as Docutils and rivt, and 
   readable by humans.
 
--  rivt  : rivt
+.. topic::  rivt  : rivt
   
   an open source markup language and framework for writing and 
   publishing engineering documents. 
 
--  rivt file  : rivt
+.. topic:: rivt file  : rivt
   
   text file (.py) that imports the rivtlib package
 
--  rivt markup  : rivt
+.. topic::  rivt markup  : rivt
   
   a text system that specifies document structure and formatting using 
   tags, commands and restructured text markup. 
 
--  rivt.zip  : rivt
+.. topic::  rivt.zip  : rivt
   
   single folder portable installation of rivt
 
--  rivtlib  : rivt
+.. topic::  rivtlib  : rivt
 
   Python `package <https://rivtlib.net>`_ that generates docs and reports 
   from a rivt file
@@ -240,22 +261,32 @@ R
 S 
 --------------
 
--  section  : rivt
+.. raw:: html
+
+    <hr>
+
+.. topic:: section  : rivt
     
   part of a rivt doc
 
--  standalone doc  : rivt
+.. topic:: standalone doc  : rivt
   
   a doc produced by a rivt file that does not have a report prefix and with 
   resource files located in the same folder as the rivt file
 
 T 
 ---------------
--  template 
+
+.. raw:: html
+
+    <hr>
+
+
+.. topic:: template 
   
   a rivt file that is used as a starting point for a new doc or report
 
--  text file  : Python
+.. topic:: text file  : Python
   
   a file that contains human-readable characters, such as letters, numbers, 
   and symbols, typically encoded in UTF-8 format
@@ -263,36 +294,55 @@ T
 U 
 ---------------
 
+.. raw:: html
+
+    <hr>
+
 
 V 
 ---------------
 
+.. raw:: html
 
-  VSCode  : rivt
+    <hr>
+
+
+.. topic::  VSCode  : *rivt*
   
-A source code editor developed by Microsoft for Windows, Linux and macOS
-with support for debugging, syntax highlighting, intelligent code 
-completion, snippets, code refactoring, and embedded Git. 
+  A source code editor developed by Microsoft for Windows, Linux and macOS
+  with support for debugging, syntax highlighting, intelligent code 
+  completion, snippets, code refactoring, and embedded Git. 
 
 W 
 ---------------
 
-X
+.. raw:: html
+
+    <hr>
+
 
 
 X 
 ---------------
 
-x
+.. raw:: html
+
+    <hr>
+
 
 
 Y 
 ---------------
+.. raw:: html
 
-x
+    <hr>
+
 
 
 Z 
 ---------------
 
-x
+.. raw:: html
+
+    <hr>
+
