@@ -318,9 +318,9 @@
 <li class="toctree-l1"><a class="reference internal" href="syntax.html"><strong>3.1</strong> Syntax</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">3.2 Line Tags</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tagsb.html"><strong>3.3</strong> Block Tags</a></li>
-<li class="toctree-l1"><a class="reference internal" href="commands.html"><strong>3.3</strong> Commands</a></li>
-<li class="toctree-l1"><a class="reference internal" href="example1.html"><strong>3.4</strong> Example 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commands.html"><strong>3.4</strong> Commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quick.html"><strong>3.5</strong> Quick Look-up</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example1.html"><strong>3.6</strong> Example 1</a></li>
 </ul>
 </div>
 </nav></div>
@@ -384,12 +384,13 @@
   <section id="line-tags">
 <h1>3.2 Line Tags<a class="headerlink" href="#line-tags" title="Link to this heading">#</a></h1>
 <p><strong>Line</strong> tags format a line of text and are denoted with _[<strong>TAG</strong>]. In most
-cases they are added at the end of the line. Tags have a function and output
+cases they are added at the end of a line. Tags have a function and output
 scope.</p>
-<section id="key-tag-description">
-<h2><strong>KEY</strong> -  _[TAG] : description<a class="headerlink" href="#key-tag-description" title="Link to this heading">#</a></h2>
+<section id="key">
+<h2><strong>KEY</strong><a class="headerlink" href="#key" title="Link to this heading">#</a></h2>
+<p>_[TAG] : description</p>
 <hr><aside class="topic">
-<p class="topic-title">syntax</p>
+<p class="topic-title">line syntax</p>
 <ul class="simple">
 <li><p>function scope</p></li>
 <li><p>applicable output</p></li>
@@ -419,9 +420,8 @@ scope.</p>
 <section id="d-footnote-description">
 <h2>_[D] :  footnote description<a class="headerlink" href="#d-footnote-description" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title"><em>text</em> _[C]</p>
-<p><em>text</em> _[D]
-rv.I, rv.V
+<p class="topic-title"><em>text</em> _[D]</p>
+<p>rv.I, rv.V
 text, pdf, html</p>
 </aside>
 </section>
@@ -437,7 +437,7 @@ text, pdf, html</p>
 <section id="f-number-label-figure">
 <h2>_[F] : number, label figure<a class="headerlink" href="#f-number-label-figure" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">caption _[F]</p>
+<p class="topic-title"><em>caption</em> _[F]</p>
 <p>rv.I, rv.V
 pdf, html</p>
 </aside>
@@ -453,7 +453,7 @@ pdf, html</p>
 <section id="s-sympy-equation">
 <h2>_[S] : sympy equation<a class="headerlink" href="#s-sympy-equation" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">equation _[S]</p>
+<p class="topic-title"><em>equation</em> _[S]</p>
 <p>rv.I, rv.V
 text, pdf, html</p>
 </aside>
@@ -461,7 +461,7 @@ text, pdf, html</p>
 <section id="t-number-label-table">
 <h2>_[T]  number, label table<a class="headerlink" href="#t-number-label-table" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">title _[T]</p>
+<p class="topic-title"><em>title</em> _[T]</p>
 <p>rv.I, rv.V
 text, pdf, html</p>
 </aside>
@@ -469,7 +469,7 @@ text, pdf, html</p>
 <section id="u-url-link">
 <h2>_[U] :  url link<a class="headerlink" href="#u-url-link" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">text _[U]</p>
+<p class="topic-title"><em>text</em> _[U]</p>
 <p>rv.I, rv.V
 text, pdf, html</p>
 </aside>
@@ -477,7 +477,7 @@ text, pdf, html</p>
 <section id="v-number-label-values-table">
 <h2>_[V] : number, label values table<a class="headerlink" href="#v-number-label-values-table" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">text _[V]</p>
+<p class="topic-title"><em>text</em> _[V]</p>
 <p>rv.I, rv.V
 text, pdf, html</p>
 </aside>
@@ -485,7 +485,7 @@ text, pdf, html</p>
 <section id="numbered-footnote">
 <h2>_[#] :  numbered footnote<a class="headerlink" href="#numbered-footnote" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">text _[#] text</p>
+<p class="topic-title"><em>text</em> _[#] text</p>
 <p>rv.I, rv.V
 text, pdf, html</p>
 </aside>
@@ -547,7 +547,7 @@ text, pdf, html</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-tag-description"><strong>KEY</strong> -  _[TAG] : description</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key"><strong>KEY</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-center-bold">_[B] :  center, bold</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-center">_[C] :   center</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-footnote-description">_[D] :  footnote description</a></li>

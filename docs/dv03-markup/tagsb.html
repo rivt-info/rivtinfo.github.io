@@ -59,7 +59,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'dv03-markup/tagsb';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="3.3 Commands" href="commands.html" />
+    <link rel="next" title="3.4 Commands" href="commands.html" />
     <link rel="prev" title="3.2 Line Tags" href="tagsl.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -318,9 +318,9 @@
 <li class="toctree-l1"><a class="reference internal" href="syntax.html"><strong>3.1</strong> Syntax</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tagsl.html">3.2 Line Tags</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>3.3</strong> Block Tags</a></li>
-<li class="toctree-l1"><a class="reference internal" href="commands.html"><strong>3.3</strong> Commands</a></li>
-<li class="toctree-l1"><a class="reference internal" href="example1.html"><strong>3.4</strong> Example 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commands.html"><strong>3.4</strong> Commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quick.html"><strong>3.5</strong> Quick Look-up</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example1.html"><strong>3.6</strong> Example 1</a></li>
 </ul>
 </div>
 </nav></div>
@@ -383,52 +383,125 @@
                   
   <section id="block-tags">
 <h1><strong>3.3</strong> Block Tags<a class="headerlink" href="#block-tags" title="Link to this heading">#</a></h1>
-<p><em>Block*</em> tags are denoted with _[[<strong>TAG</strong>]] on the first line. They evaluate a
-multi-line text block and end with _[[<strong>Q</strong>]] on the last line of the block
-(note: some tags only format pdf and html output).</p>
+<p><strong>Block</strong> tags format a block of text and are denoted with _[[TAG]] on the
+first line and end with _[[Q]] after the last line. Tags have a function
+and output scope.</p>
 <section id="key">
 <h2><strong>KEY</strong><a class="headerlink" href="#key" title="Link to this heading">#</a></h2>
-<p><strong>tag</strong>: description</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">syntax</span>
-
-<span class="n">function</span> <span class="n">scope</span>
-<span class="n">output</span> <span class="nb">type</span>
-</pre></div>
-</div>
+<p>_[[TAG]] : description</p>
+<hr><aside class="topic">
+<p class="topic-title">first line - block syntax</p>
+<p>block example</p>
+<ul class="simple">
+<li><p>function scope</p></li>
+<li><p>applicable output</p></li>
+</ul>
+</aside>
 </section>
-<hr class="docutils" />
-<section id="v-numbered-values-format-block">
-<h2><strong>_[[V]]</strong> :  numbered values format block<a class="headerlink" href="#v-numbered-values-format-block" title="Link to this heading">#</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">V</span><span class="p">]]</span> <span class="n">Block</span> <span class="n">Title</span>
-<span class="n">value1</span>
-<span class="n">value2</span>
-<span class="o">...</span>
-<span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
-
-<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">,</span> <span class="n">rv</span><span class="o">.</span><span class="n">V</span>
-<span class="n">text</span><span class="p">,</span> <span class="n">pdf</span><span class="p">,</span> <span class="n">html</span>
-</pre></div>
-</div>
+<section id="v-evaluate-values">
+<h2>_[[V]] :  evaluate values<a class="headerlink" href="#v-evaluate-values" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">_[[V]] <em>title</em></p>
+<p>_[[V]] title
+value1
+value2
+…
+_[[Q]]</p>
+<ul class="simple">
+<li><p>rv.I, rv.V</p></li>
+<li><p>text, pdf, html</p></li>
+</ul>
+</aside>
 </section>
-<section id="q-end-block">
-<h2><strong>_[[Q]]</strong> : end block<a class="headerlink" href="#q-end-block" title="Link to this heading">#</a></h2>
+<section id="n-indent">
+<h2>_[[N]] :  indent<a class="headerlink" href="#n-indent" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">_[[N]]</p>
+<p>_[[N]] title
+value1
+value2
+…
+_[[Q]]</p>
+<ul class="simple">
+<li><p>rv.I, rv.V</p></li>
+<li><p>text, pdf, html</p></li>
+</ul>
+</aside>
 </section>
-<section id="n-indent-block">
-<h2><strong>_[[N]]</strong> : indent block<a class="headerlink" href="#n-indent-block" title="Link to this heading">#</a></h2>
-<p><strong>_[[C]]</strong></p>
-<p><strong>_[[L]]</strong></p>
-<p><strong>_[[O]]</strong></p>
-<p><strong>_[[B]]</strong></p>
-<p><strong>_[[I]]</strong></p>
+<section id="t-topic">
+<h2>_[[T]] : topic<a class="headerlink" href="#t-topic" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">_[[T]] <em>topic</em></p>
+<p>_[[N]] topic
+text
+text
+…
+_[[Q]]</p>
+<ul class="simple">
+<li><p>rv.I, rv.V</p></li>
+<li><p>text, pdf, html</p></li>
+</ul>
+</aside>
 </section>
-<section id="t-topic-block">
-<h2><strong>_[[T]]</strong> : topic block<a class="headerlink" href="#t-topic-block" title="Link to this heading">#</a></h2>
-<p>rv.I          <strong>_[[S]]</strong>       indent block
-rv.I          <strong>_[[C]]</strong>       code (literal) block
-rv.I          <strong>_[[L]]</strong>       latex block (lpdf, html)
-rv.I          <strong>_[[O]]</strong>       italic (oblique) block (lpdf, html)
-rv.I          <strong>_[[B]]</strong>       bold block  (lpdf, html)
-rv.I          <strong>_[[I]]</strong>       indent italic block (lpdf, html)</p>
+<section id="i-indent-italic">
+<h2>_[[I]] : indent italic<a class="headerlink" href="#i-indent-italic" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">_[[I]]</p>
+<p>_[[I]]
+text
+text
+…
+_[[Q]]</p>
+<ul class="simple">
+<li><p>rv.I, rv.V</p></li>
+<li><p>text, pdf, html</p></li>
+</ul>
+</aside>
+</section>
+<section id="b-indent-bold">
+<h2>_[[B]] : indent bold<a class="headerlink" href="#b-indent-bold" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">_[[B]]</p>
+<p>_[[B]]
+text
+text
+…
+_[[Q]]</p>
+<ul class="simple">
+<li><p>rv.I, rv.V</p></li>
+<li><p>text, pdf, html</p></li>
+</ul>
+</aside>
+</section>
+<section id="c-code-or-literal">
+<h2>_[[C]] : code or literal<a class="headerlink" href="#c-code-or-literal" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">_[[C]] <em>language</em></p>
+<p>_[[C]]
+text
+text
+…
+_[[Q]]</p>
+<ul class="simple">
+<li><p>rv.I, rv.V</p></li>
+<li><p>text, pdf, html</p></li>
+</ul>
+</aside>
+</section>
+<section id="l-latex">
+<h2>_[[L]] : LaTeX<a class="headerlink" href="#l-latex" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">_[[L]]
+_[[L]]
+text
+text
+…
+_[[Q]]</p>
+<ul class="simple">
+<li><p>rv.I, rv.V</p></li>
+<li><p>text, pdf, html</p></li>
+</ul>
+</aside>
 </section>
 </section>
 
@@ -456,7 +529,7 @@ rv.I          <strong>_[[I]]</strong>       indent italic block (lpdf, html)</p>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>3.3</strong> Commands</p>
+        <p class="prev-next-title"><strong>3.4</strong> Commands</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -480,10 +553,13 @@ rv.I          <strong>_[[I]]</strong>       indent italic block (lpdf, html)</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key"><strong>KEY</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#v-numbered-values-format-block"><strong>_[[V]]</strong> :  numbered values format block</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#q-end-block"><strong>_[[Q]]</strong> : end block</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#n-indent-block"><strong>_[[N]]</strong> : indent block</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-topic-block"><strong>_[[T]]</strong> : topic block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#v-evaluate-values">_[[V]] :  evaluate values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#n-indent">_[[N]] :  indent</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-topic">_[[T]] : topic</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-indent-italic">_[[I]] : indent italic</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-indent-bold">_[[B]] : indent bold</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-code-or-literal">_[[C]] : code or literal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#l-latex">_[[L]] : LaTeX</a></li>
 </ul>
   </nav></div>
 

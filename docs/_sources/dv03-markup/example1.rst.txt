@@ -1,4 +1,4 @@
-**3.4** Example 1
+**3.6** Example 1
 ===================
 
 simple example 5

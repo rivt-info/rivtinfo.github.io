@@ -8,6 +8,6 @@
     tagsl.rst
     tagsb.rst
     commands.rst
-    example1.rst
     quick.rst
+    example1.rst
  

@@ -2,18 +2,20 @@
 ===================
 
 **Line** tags format a line of text and are denoted with _[**TAG**]. In most
-cases they are added at the end of the line. Tags have a function and output
+cases they are added at the end of a line. Tags have a function and output
 scope.
 
 
-**KEY** -  _[TAG] : description
----------------------------------
+**KEY**  
+--------------------------------------------
+
+_[TAG] : description
 
 .. raw:: html
 
     <hr>
 
-.. topic::  syntax
+.. topic::  line syntax
 
     - function scope
     - applicable output
@@ -49,9 +51,8 @@ _[D] :  footnote description
 
     <hr>
 
-.. topic:: *text* _[C]
+.. topic:: *text* _[D]
 
-    *text* _[D]
     rv.I, rv.V
     text, pdf, html
 
@@ -75,7 +76,7 @@ _[F] : number, label figure
 
     <hr>
 
-.. topic:: caption _[F]
+.. topic:: *caption* _[F]
 
     rv.I, rv.V
     pdf, html
@@ -101,7 +102,7 @@ _[S] : sympy equation
 
     <hr>
 
-.. topic:: equation _[S]
+.. topic:: *equation* _[S]
 
     rv.I, rv.V
     text, pdf, html
@@ -113,7 +114,7 @@ _[T]  number, label table
 
     <hr>
 
-.. topic:: title _[T]
+.. topic:: *title* _[T]
 
     rv.I, rv.V
     text, pdf, html
@@ -125,7 +126,7 @@ _[U] :  url link
 
     <hr>
 
-.. topic:: text _[U]
+.. topic:: *text* _[U]
     
     rv.I, rv.V
     text, pdf, html
@@ -137,7 +138,7 @@ _[V] : number, label values table
 
     <hr>
 
-.. topic:: text _[V]
+.. topic:: *text* _[V]
     
     rv.I, rv.V
     text, pdf, html
@@ -149,7 +150,7 @@ _[#] :  numbered footnote
 
     <hr>
 
-.. topic:: text _[#] text
+.. topic:: *text* _[#] text
     
     rv.I, rv.V
     text, pdf, html

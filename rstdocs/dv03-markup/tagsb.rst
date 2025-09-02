@@ -1,72 +1,152 @@
 **3.3** Block Tags
 ===================
 
-*Block** tags are denoted with _[[**TAG**]] on the first line. They evaluate a
-multi-line text block and end with _[[**Q**]] on the last line of the block
-(note: some tags only format pdf and html output).
+**Block** tags format a block of text and are denoted with _[[TAG]] on the
+first line and end with _[[Q]] after the last line. Tags have a function
+and output scope.
 
 
-**KEY**
----------
-**tag**: description
+**KEY**  
+--------------------------------------------
 
-::
+_[[TAG]] : description
 
-    syntax 
-    
-    function scope
-    output type
+.. raw:: html
 
-____________________________________________
+    <hr>
 
+.. topic:: first line - block syntax 
 
+    block example
 
-**_[[V]]** :  numbered values format block 
-------------------------------------------------
+    - function scope
+    - applicable output
 
-::
+_[[V]] :  evaluate values
+----------------------------------------------
 
-    _[[V]] Block Title
+.. raw:: html
+
+    <hr>
+
+.. topic::  _[[V]] *title*
+
+    _[[V]] title
     value1
     value2
     ...
     _[[Q]]
 
-    rv.I, rv.V
-    text, pdf, html
+    - rv.I, rv.V
+    - text, pdf, html
 
+_[[N]] :  indent
+----------------------------------------------
 
+.. raw:: html
 
+    <hr>
 
-**_[[Q]]** : end block
+.. topic::  _[[N]]
+
+    _[[N]] title
+    value1
+    value2
+    ...
+    _[[Q]]
+
+    - rv.I, rv.V
+    - text, pdf, html
+
+_[[T]] : topic
 ------------------------------------------------
 
+.. raw:: html
 
+    <hr>
 
+.. topic::  _[[T]] *topic*
 
-**_[[N]]** : indent block
+    _[[N]] topic
+    text
+    text
+    ...
+    _[[Q]]
+
+    - rv.I, rv.V
+    - text, pdf, html
+
+_[[I]] : indent italic
 ------------------------------------------------
 
+.. raw:: html
 
-**_[[C]]**
+    <hr>
 
-**_[[L]]**
+.. topic::  _[[I]] 
 
-**_[[O]]**
+    _[[I]]
+    text
+    text
+    ...
+    _[[Q]]
 
-**_[[B]]**
+    - rv.I, rv.V
+    - text, pdf, html
 
-**_[[I]]**
-
-**_[[T]]** : topic block
+_[[B]] : indent bold
 ------------------------------------------------
 
-rv.I          **_[[S]]**       indent block
-rv.I          **_[[C]]**       code (literal) block
-rv.I          **_[[L]]**       latex block (lpdf, html)
-rv.I          **_[[O]]**       italic (oblique) block (lpdf, html)
-rv.I          **_[[B]]**       bold block  (lpdf, html)
-rv.I          **_[[I]]**       indent italic block (lpdf, html)
+.. raw:: html
+
+    <hr>
+
+.. topic::  _[[B]] 
+
+    _[[B]]
+    text
+    text
+    ...
+    _[[Q]]
+
+    - rv.I, rv.V
+    - text, pdf, html
+
+_[[C]] : code or literal
+------------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic::  _[[C]] *language*
+
+    _[[C]]
+    text
+    text
+    ...
+    _[[Q]]
+
+    - rv.I, rv.V
+    - text, pdf, html
+
+_[[L]] : LaTeX
+------------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic::  _[[L]] 
+    _[[L]]
+    text
+    text
+    ...
+    _[[Q]]
+
+    - rv.I, rv.V
+    - text, pdf, html
+
 
   
     
