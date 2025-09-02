@@ -8,10 +8,9 @@
 
     <hr>
 
-.. topic:: term : *context*
+.. topic:: term : *context* (rivt, python, docutils, github, os)
   
-  Definiitions of terms in a context. Contexts include: rivt,
-  python, docutils, restructured text, github and os (operating systems).
+  Definiition
 
 A 
 --------------
@@ -69,7 +68,6 @@ F
 
     <hr>
 
-
 .. topic::  framework : *rivt*
   
   The rivt framework includes:
@@ -81,13 +79,13 @@ F
     - LaTeX
     - QCAD
 
-  figure : *rivt*
+.. topic::  figure : *rivt*
 
-An imported image file  (.png, .jpg) with optional caption.
+  An imported image file  (.png, .jpg) with optional caption.
 
-  footnote : *rivt*
+.. topic::  footnote : *rivt*
 
-A pair of tags defining the location and definition af an endnote.
+  A pair of tags defining the location and definition af an endnote.
   
 G 
 ---------------
@@ -96,11 +94,10 @@ G
 
     <hr>
 
-  github 
+.. topic:: github : *github* 
   
-  a platform that allows developers to create, store, manage, 
-  and share their code
-
+  A platform that allows developers to create, store, manage, 
+  and share their code.
 
 
 H 
@@ -122,26 +119,31 @@ I
 J 
 ---------------
 
--  github 
-  
-  a platform that allows developers to create, store, manage, 
-  and share their code
+.. raw:: html
+
+    <hr>
 
 
 K 
 ---------------
 
--  github 
-  
-  a platform that allows developers to create, store, manage, 
-  and share their code  
+.. raw:: html
+
+    <hr>
+
 
 L 
 ---------------
 
-  LaTeX : *os*
+
+.. raw:: html
+
+    <hr>
+
+
+.. topic::  LaTeX : *os*
   
-A software system for typesetting documents, based on TeX.
+  A software system for typesetting documents, based on TeX.
 
 
 
