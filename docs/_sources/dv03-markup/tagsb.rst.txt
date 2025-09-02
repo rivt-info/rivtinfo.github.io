@@ -31,11 +31,12 @@ _[[V]] :  evaluate values
 
 .. topic::  _[[V]] *title*
 
-    _[[V]] title
-    value1
-    value2
-    ...
-    _[[Q]]
+    ::
+        _[[V]] title
+        value1
+        value2
+        ...
+        _[[Q]]
 
     - rv.I, rv.V
     - text, pdf, html
@@ -49,11 +50,12 @@ _[[N]] :  indent
 
 .. topic::  _[[N]]
 
-    _[[N]] title
-    value1
-    value2
-    ...
-    _[[Q]]
+    ::
+        _[[N]] title
+        value1
+        value2
+        ...
+        _[[Q]]
 
     - rv.I, rv.V
     - text, pdf, html
