@@ -1,13 +1,13 @@
 3.2 Line Tags
 ===================
 
+**Line** tags format a line of text and are denoted with _[**TAG**]. In most
+cases they are added at the end of the line. Tags have a function and output
+scope.
 
-**Line** tags format a line of text. They are added at the end of the line and
-are denoted with _[**TAG**]. Some tags will only format pdf and html output.
 
-
-**KEY**
---------
+**KEY** -  _[TAG] : description
+---------------------------------
 
 .. raw:: html
 
@@ -17,8 +17,6 @@ are denoted with _[**TAG**]. Some tags will only format pdf and html output.
 
     - function scope
     - applicable output
-
-
 
 _[B] :  center, bold
 -------------------------------------------
@@ -32,7 +30,6 @@ _[B] :  center, bold
     - rv.I, rv.V
     - pdf, html
 
-
 _[C] :   center 
 -------------------------------------------
 
@@ -45,68 +42,125 @@ _[C] :   center
     - rv.I, rv.V
     - pdf, html
 
-
 _[D] :  footnote description
 -------------------------------------------    
 
-::
+.. raw:: html
+
+    <hr>
+
+.. topic:: *text* _[C]
 
     *text* _[D]
     rv.I, rv.V
     text, pdf, html
 
-
 _[E] : number, label equation
 -----------------------------------------
 
-::
+.. raw:: html
+
+    <hr>
+
+.. topic:: *text* _[C]
 
     *label* _[C]
     rv.I, rv.V
     text, pdf, html
-
-
 
 _[F] : number, label figure 
 -----------------------------------------
 
-::
+.. raw:: html
 
-    *label* _[C]
+    <hr>
+
+.. topic:: caption _[F]
+
+    rv.I, rv.V
+    pdf, html
+
+
+_[P] : new page
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: _[P]
+
+    rv.I, rv.V
+    pdf, html
+
+
+_[S] : sympy equation
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: equation _[S]
+
     rv.I, rv.V
     text, pdf, html
 
-
-**_[P]** : new page
------------------------------------------
-
-
-**_[S]** : sympy equation
------------------------------------------
-
-::
-
-    *equation* _[S]
-    rv.I, rv.V
-    text, pdf, html
-
-
-**_[T]**  number, label table
+_[T]  number, label table
 ------------------------------------------
-*table title* **_[T]** 
 
-**_[#]** :  number footnote
-------------------------------------
-text **_[#]**   
+.. raw:: html
 
-**_[U]** :  url link 
-------------------------
-url, label **_[U]**  
+    <hr>
 
-**_[V]** : number, label values table 
------------------------------------------------
-*table title* **_[V]**   
+.. topic:: title _[T]
+
+    rv.I, rv.V
+    text, pdf, html
+
+_[U] :  url link 
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: text _[U]
+    
+    rv.I, rv.V
+    text, pdf, html
+
+_[V] : number, label values table 
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: text _[V]
+    
+    rv.I, rv.V
+    text, pdf, html
+
+_[#] :  numbered footnote
+----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: text _[#] text
+    
+    rv.I, rv.V
+    text, pdf, html
 
 **horizontal line**
----------------------   
-5 or more underscores on an empty line(_____)
+--------------------------------------- 
+.. raw:: html
+
+    <hr>
+
+.. topic::  more than 5 underscores  _____
+
+    rv.I, rv.V
+    text, pdf, html

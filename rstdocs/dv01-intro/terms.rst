@@ -24,9 +24,17 @@ A
 B 
 ---------------
 
+.. raw:: html
+
+    <hr>
+
 C 
 ---------------
-        
+
+.. raw:: html
+
+    <hr>
+
 D 
 ----------------
 
@@ -84,6 +92,10 @@ A pair of tags defining the location and definition af an endnote.
 G 
 ---------------
 
+.. raw:: html
+
+    <hr>
+
   github 
   
   a platform that allows developers to create, store, manage, 
@@ -94,20 +106,17 @@ G
 H 
 ---------------
 
--  github 
-  
-  a platform that allows developers to create, store, manage, 
-  and share their code
+.. raw:: html
+
+    <hr>
 
   
 I 
 ---------------
 
--  github 
-  
-  a platform that allows developers to create, store, manage, 
-  and share their code
+.. raw:: html
 
+    <hr>
 
 
 J 

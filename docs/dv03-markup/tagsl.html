@@ -383,10 +383,11 @@
                   
   <section id="line-tags">
 <h1>3.2 Line Tags<a class="headerlink" href="#line-tags" title="Link to this heading">#</a></h1>
-<p><strong>Line</strong> tags format a line of text. They are added at the end of the line and
-are denoted with _[<strong>TAG</strong>]. Some tags will only format pdf and html output.</p>
-<section id="key">
-<h2><strong>KEY</strong><a class="headerlink" href="#key" title="Link to this heading">#</a></h2>
+<p><strong>Line</strong> tags format a line of text and are denoted with _[<strong>TAG</strong>]. In most
+cases they are added at the end of the line. Tags have a function and output
+scope.</p>
+<section id="key-tag-description">
+<h2><strong>KEY</strong> -  _[TAG] : description<a class="headerlink" href="#key-tag-description" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">syntax</p>
 <ul class="simple">
@@ -417,58 +418,85 @@ are denoted with _[<strong>TAG</strong>]. Some tags will only format pdf and htm
 </section>
 <section id="d-footnote-description">
 <h2>_[D] :  footnote description<a class="headerlink" href="#d-footnote-description" title="Link to this heading">#</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">*</span><span class="n">text</span><span class="o">*</span> <span class="n">_</span><span class="p">[</span><span class="n">D</span><span class="p">]</span>
-<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">,</span> <span class="n">rv</span><span class="o">.</span><span class="n">V</span>
-<span class="n">text</span><span class="p">,</span> <span class="n">pdf</span><span class="p">,</span> <span class="n">html</span>
-</pre></div>
-</div>
+<hr><aside class="topic">
+<p class="topic-title"><em>text</em> _[C]</p>
+<p><em>text</em> _[D]
+rv.I, rv.V
+text, pdf, html</p>
+</aside>
 </section>
 <section id="e-number-label-equation">
 <h2>_[E] : number, label equation<a class="headerlink" href="#e-number-label-equation" title="Link to this heading">#</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">*</span><span class="n">label</span><span class="o">*</span> <span class="n">_</span><span class="p">[</span><span class="n">C</span><span class="p">]</span>
-<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">,</span> <span class="n">rv</span><span class="o">.</span><span class="n">V</span>
-<span class="n">text</span><span class="p">,</span> <span class="n">pdf</span><span class="p">,</span> <span class="n">html</span>
-</pre></div>
-</div>
+<hr><aside class="topic">
+<p class="topic-title"><em>text</em> _[C]</p>
+<p><em>label</em> _[C]
+rv.I, rv.V
+text, pdf, html</p>
+</aside>
 </section>
 <section id="f-number-label-figure">
 <h2>_[F] : number, label figure<a class="headerlink" href="#f-number-label-figure" title="Link to this heading">#</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">*</span><span class="n">label</span><span class="o">*</span> <span class="n">_</span><span class="p">[</span><span class="n">C</span><span class="p">]</span>
-<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">,</span> <span class="n">rv</span><span class="o">.</span><span class="n">V</span>
-<span class="n">text</span><span class="p">,</span> <span class="n">pdf</span><span class="p">,</span> <span class="n">html</span>
-</pre></div>
-</div>
+<hr><aside class="topic">
+<p class="topic-title">caption _[F]</p>
+<p>rv.I, rv.V
+pdf, html</p>
+</aside>
 </section>
 <section id="p-new-page">
-<h2><strong>_[P]</strong> : new page<a class="headerlink" href="#p-new-page" title="Link to this heading">#</a></h2>
+<h2>_[P] : new page<a class="headerlink" href="#p-new-page" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">_[P]</p>
+<p>rv.I, rv.V
+pdf, html</p>
+</aside>
 </section>
 <section id="s-sympy-equation">
-<h2><strong>_[S]</strong> : sympy equation<a class="headerlink" href="#s-sympy-equation" title="Link to this heading">#</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">*</span><span class="n">equation</span><span class="o">*</span> <span class="n">_</span><span class="p">[</span><span class="n">S</span><span class="p">]</span>
-<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">,</span> <span class="n">rv</span><span class="o">.</span><span class="n">V</span>
-<span class="n">text</span><span class="p">,</span> <span class="n">pdf</span><span class="p">,</span> <span class="n">html</span>
-</pre></div>
-</div>
+<h2>_[S] : sympy equation<a class="headerlink" href="#s-sympy-equation" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">equation _[S]</p>
+<p>rv.I, rv.V
+text, pdf, html</p>
+</aside>
 </section>
 <section id="t-number-label-table">
-<h2><strong>_[T]</strong>  number, label table<a class="headerlink" href="#t-number-label-table" title="Link to this heading">#</a></h2>
-<p><em>table title</em> <strong>_[T]</strong></p>
-</section>
-<section id="number-footnote">
-<h2><strong>_[#]</strong> :  number footnote<a class="headerlink" href="#number-footnote" title="Link to this heading">#</a></h2>
-<p>text <strong>_[#]</strong></p>
+<h2>_[T]  number, label table<a class="headerlink" href="#t-number-label-table" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">title _[T]</p>
+<p>rv.I, rv.V
+text, pdf, html</p>
+</aside>
 </section>
 <section id="u-url-link">
-<h2><strong>_[U]</strong> :  url link<a class="headerlink" href="#u-url-link" title="Link to this heading">#</a></h2>
-<p>url, label <strong>_[U]</strong></p>
+<h2>_[U] :  url link<a class="headerlink" href="#u-url-link" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">text _[U]</p>
+<p>rv.I, rv.V
+text, pdf, html</p>
+</aside>
 </section>
 <section id="v-number-label-values-table">
-<h2><strong>_[V]</strong> : number, label values table<a class="headerlink" href="#v-number-label-values-table" title="Link to this heading">#</a></h2>
-<p><em>table title</em> <strong>_[V]</strong></p>
+<h2>_[V] : number, label values table<a class="headerlink" href="#v-number-label-values-table" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">text _[V]</p>
+<p>rv.I, rv.V
+text, pdf, html</p>
+</aside>
+</section>
+<section id="numbered-footnote">
+<h2>_[#] :  numbered footnote<a class="headerlink" href="#numbered-footnote" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">text _[#] text</p>
+<p>rv.I, rv.V
+text, pdf, html</p>
+</aside>
 </section>
 <section id="horizontal-line">
 <h2><strong>horizontal line</strong><a class="headerlink" href="#horizontal-line" title="Link to this heading">#</a></h2>
-<p>5 or more underscores on an empty line(_____)</p>
+<hr><aside class="topic">
+<p class="topic-title">more than 5 underscores  _____</p>
+<p>rv.I, rv.V
+text, pdf, html</p>
+</aside>
 </section>
 </section>
 
@@ -519,18 +547,18 @@ are denoted with _[<strong>TAG</strong>]. Some tags will only format pdf and htm
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key"><strong>KEY</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-tag-description"><strong>KEY</strong> -  _[TAG] : description</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-center-bold">_[B] :  center, bold</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-center">_[C] :   center</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-footnote-description">_[D] :  footnote description</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e-number-label-equation">_[E] : number, label equation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#f-number-label-figure">_[F] : number, label figure</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-new-page"><strong>_[P]</strong> : new page</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#s-sympy-equation"><strong>_[S]</strong> : sympy equation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-number-label-table"><strong>_[T]</strong>  number, label table</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#number-footnote"><strong>_[#]</strong> :  number footnote</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#u-url-link"><strong>_[U]</strong> :  url link</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#v-number-label-values-table"><strong>_[V]</strong> : number, label values table</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-new-page">_[P] : new page</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#s-sympy-equation">_[S] : sympy equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-number-label-table">_[T]  number, label table</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#u-url-link">_[U] :  url link</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#v-number-label-values-table">_[V] : number, label values table</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#numbered-footnote">_[#] :  numbered footnote</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#horizontal-line"><strong>horizontal line</strong></a></li>
 </ul>
   </nav></div>

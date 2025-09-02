@@ -10,9 +10,10 @@
 documents. The framework is described in :doc:`Installation <dv02-install/methods>`.  
 Input is :doc:`rivt markup <dv03-markup/syntax>` within a Python file (.py).  
 Output is formatted utf8-text, PDF or HTML :doc:`doc <dv04-reports/types>` 
-or :doc:`report <dv04-reports/types>` files.  This site is an example of a HTML report.
+or :doc:`report <dv04-reports/types>` files.  
 
-
+This site is an example of a HTML report. This is an example of a small rivt
+file and and resulting pdf doc output.
 
 
 
