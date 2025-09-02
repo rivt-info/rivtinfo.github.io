@@ -398,13 +398,13 @@ and output scope.</p>
 </ul>
 </aside>
 </section>
-<section id="v-evaluate-values">
-<h2>_[[V]] :  evaluate values<a class="headerlink" href="#v-evaluate-values" title="Link to this heading">#</a></h2>
+<section id="b-indent-bold">
+<h2>_[[B]] : indent bold<a class="headerlink" href="#b-indent-bold" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">_[[V]] <em>title</em></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">V</span><span class="p">]]</span> <span class="n">title</span>
-<span class="n">value1</span>
-<span class="n">value2</span>
+<p class="topic-title">_[[B]]</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">B</span><span class="p">]]</span>
+<span class="n">text</span>
+<span class="n">text</span>
 <span class="o">...</span>
 <span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
 </pre></div>
@@ -415,13 +415,64 @@ and output scope.</p>
 </ul>
 </aside>
 </section>
+<section id="c-code-or-literal">
+<h2>_[[C]] : code or literal<a class="headerlink" href="#c-code-or-literal" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">_[[C]] <em>language</em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">C</span><span class="p">]]</span>
+<span class="n">text</span>
+<span class="n">text</span>
+<span class="o">...</span>
+<span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>rv.I, rv.V</p></li>
+<li><p>text, pdf, html</p></li>
+</ul>
+</aside>
+</section>
+<section id="i-indent-italic">
+<h2>_[[I]] : indent italic<a class="headerlink" href="#i-indent-italic" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">_[[I]]</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">I</span><span class="p">]]</span>
+<span class="n">text</span>
+<span class="n">text</span>
+<span class="o">...</span>
+<span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>rv.I, rv.V</p></li>
+<li><p>text, pdf, html</p></li>
+</ul>
+</aside>
+</section>
+<section id="l-latex">
+<h2>_[[L]] : LaTeX<a class="headerlink" href="#l-latex" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">_[[L]]</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">L</span><span class="p">]]</span>
+<span class="n">text</span>
+<span class="n">text</span>
+<span class="o">...</span>
+<span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>rv.I, rv.V</p></li>
+<li><p>pdf, html</p></li>
+</ul>
+</aside>
+</section>
 <section id="n-indent">
 <h2>_[[N]] :  indent<a class="headerlink" href="#n-indent" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[N]]</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">N</span><span class="p">]]</span> <span class="n">title</span>
-<span class="n">value1</span>
-<span class="n">value2</span>
+<span class="n">text</span>
+<span class="n">text</span>
 <span class="o">...</span>
 <span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
 </pre></div>
@@ -436,71 +487,30 @@ and output scope.</p>
 <h2>_[[T]] : topic<a class="headerlink" href="#t-topic" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[T]] <em>topic</em></p>
-<p>_[[N]] topic
-text
-text
-…
-_[[Q]]</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">N</span><span class="p">]]</span> <span class="n">topic</span>
+<span class="n">text</span>
+<span class="n">text</span>
+<span class="o">...</span>
+<span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
+</pre></div>
+</div>
 <ul class="simple">
 <li><p>rv.I, rv.V</p></li>
 <li><p>text, pdf, html</p></li>
 </ul>
 </aside>
 </section>
-<section id="i-indent-italic">
-<h2>_[[I]] : indent italic<a class="headerlink" href="#i-indent-italic" title="Link to this heading">#</a></h2>
+<section id="v-values">
+<h2>_[[V]] : values<a class="headerlink" href="#v-values" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">_[[I]]</p>
-<p>_[[I]]
-text
-text
-…
-_[[Q]]</p>
-<ul class="simple">
-<li><p>rv.I, rv.V</p></li>
-<li><p>text, pdf, html</p></li>
-</ul>
-</aside>
-</section>
-<section id="b-indent-bold">
-<h2>_[[B]] : indent bold<a class="headerlink" href="#b-indent-bold" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[[B]]</p>
-<p>_[[B]]
-text
-text
-…
-_[[Q]]</p>
-<ul class="simple">
-<li><p>rv.I, rv.V</p></li>
-<li><p>text, pdf, html</p></li>
-</ul>
-</aside>
-</section>
-<section id="c-code-or-literal">
-<h2>_[[C]] : code or literal<a class="headerlink" href="#c-code-or-literal" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[[C]] <em>language</em></p>
-<p>_[[C]]
-text
-text
-…
-_[[Q]]</p>
-<ul class="simple">
-<li><p>rv.I, rv.V</p></li>
-<li><p>text, pdf, html</p></li>
-</ul>
-</aside>
-</section>
-<section id="l-latex">
-<h2>_[[L]] : LaTeX<a class="headerlink" href="#l-latex" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[[L]]
-_[[L]]
-text
-text
-…
-_[[Q]]</p>
+<p class="topic-title">_[[V]] <em>title</em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">V</span><span class="p">]]</span> <span class="n">topic</span>
+<span class="n">values1</span>
+<span class="n">values2</span>
+<span class="o">...</span>
+<span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
+</pre></div>
+</div>
 <ul class="simple">
 <li><p>rv.I, rv.V</p></li>
 <li><p>text, pdf, html</p></li>
@@ -557,13 +567,13 @@ _[[Q]]</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key"><strong>KEY</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#v-evaluate-values">_[[V]] :  evaluate values</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#n-indent">_[[N]] :  indent</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-topic">_[[T]] : topic</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-indent-italic">_[[I]] : indent italic</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-indent-bold">_[[B]] : indent bold</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-code-or-literal">_[[C]] : code or literal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-indent-italic">_[[I]] : indent italic</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#l-latex">_[[L]] : LaTeX</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#n-indent">_[[N]] :  indent</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-topic">_[[T]] : topic</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#v-values">_[[V]] : values</a></li>
 </ul>
   </nav></div>
 
