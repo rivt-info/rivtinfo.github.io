@@ -317,7 +317,7 @@
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="motivate.html">1.1  Motivation</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">1.2 API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="terms.html">1.3  Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terms.html">1.3 Terms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">1.4 FAQ</a></li>
 </ul>
 </div>
@@ -383,19 +383,19 @@
 <h1>1.2 API<a class="headerlink" href="#api" title="Link to this heading">#</a></h1>
 <section id="import-rivtlib">
 <h2>[01] Import rivtlib<a class="headerlink" href="#import-rivtlib" title="Link to this heading">#</a></h2>
-<hr><p>A <strong>rivt</strong> file is a Python text file (.py) importing the <strong>rivtlib</strong> API:</p>
+<hr><p>Python combines new functions and libraries using import statements
+and namespaces. A <strong>rivt</strong> file is a Python file (.py) that imports the
+<strong>rivtlib</strong> library and assigns the namespace <em>rv</em>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
 </pre></div>
 </div>
-<p>API functions may be run interactively as cells in a notebook IDE (e.g.
-VSCode), using the standard cell decorator <em># %%</em>. They are evaluated top to
-bottom, similar to a Python script, and may be combined in any order as long as
-variables and expressions are previously defined.</p>
+<p>rivtlib exposes 7 API functions which may be run interactively as notebook
+cells in an IDE (e.g. VSCode) or as a script. A rivt file, as a Python file,
+is evaluated top to bottom.</p>
 </section>
 <section id="api-functions">
 <h2>[02] API functions<a class="headerlink" href="#api-functions" title="Link to this heading">#</a></h2>
-<hr><p>The rvapi.py module provides 7 API functions:</p>
-<div class="pst-scrollable-table-container"><table class="table">
+<hr><div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>API</p></th>
 <th class="head"><p>Name</p></th>
@@ -403,44 +403,72 @@ variables and expressions are previously defined.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><strong>rv.R</strong></p></td>
+<tr class="row-even"><td><p><strong>rv.R(rs)</strong></p></td>
 <td><p>Run</p></td>
 <td><p>Run shell commands</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>rv.I</strong></p></td>
+<tr class="row-odd"><td><p><strong>rv.I(rs)</strong></p></td>
 <td><p>Insert</p></td>
 <td><p>Insert static resources</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>rv.V</strong></p></td>
+<tr class="row-even"><td><p><strong>rv.V(rs)</strong></p></td>
 <td><p>Values</p></td>
 <td><p>Calculate values</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>rv.T</strong></p></td>
+<tr class="row-odd"><td><p><strong>rv.T(rs)</strong></p></td>
 <td><p>Tools</p></td>
 <td><p>Run Python functions</p></td>
 </tr>
-<tr class="row-even"><td><p>rv.D</p></td>
+<tr class="row-even"><td><p>rv.D(rs)</p></td>
 <td><p>Docs</p></td>
 <td><p>Write docs</p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.S</p></td>
+<tr class="row-odd"><td><p>rv.S(rs)</p></td>
 <td><p>Skip</p></td>
 <td><p>Skip section</p></td>
 </tr>
-<tr class="row-even"><td><p>rv.Q</p></td>
+<tr class="row-even"><td><p>rv.Q(rs)</p></td>
 <td><p>Quit</p></td>
 <td><p>Exit rivt</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>The first four functions (<strong>R I V T</strong>) generate content.
-They evaluate a triple-quoted string argument
-(<em>rivt-string</em>) and output utf-8 text to the terminal.</p>
-<p>The last three functions (<strong>D S Q</strong>) process sections or files. The <em>Doc</em>
-function processes the file and writes it to a text, PDF or HTML file. The
-<em>Skip</em> and <em>Quit</em> functions are typically used in interactive
-editing and processing.</p>
+<p>API functions may be arbitrarily ordered in rivt file. They evaluate a
+<em>rivt string</em> (a triple-quoted string argument - rS) and output formatted utf-8
+text to the terminal.</p>
+<p>The first four functions in the table (<strong>R I V T</strong>) generate doc content. The
+last three functions (<strong>D S Q</strong>) process files or sections. The <em>Doc</em> function
+writes a doc as a text, PDF or HTML file. The <em>Skip</em> and <em>Quit</em> functions are
+used primarily in interactive editing and processing.</p>
+</section>
+<section id="rivt-string">
+<h2>[03] rivt-string<a class="headerlink" href="#rivt-string" title="Link to this heading">#</a></h2>
+<p>An API function starts in the first column. The <em>rivt string</em> begins with a
+header that specifies section labeling and processing. Section content follows
+the header on a new line and is indented four spaces for legibility and section
+folding.</p>
+<p>Section content includes rivt-markup tags and commands and may include
+arbitrary utf-8 text. See <a class="reference internal" href="../dv03-markup/markup.html"><span class="doc">Markup</span></a> for further
+details.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | print parameter, public parameter</span>
+
+<span class="s2">    section content</span>
+<span class="s2">    ...</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="docs">
+<h2>[04] Docs<a class="headerlink" href="#docs" title="Link to this heading">#</a></h2>
+<p>Docs are formatted output files specified by the <em>Doc</em> function. Doc types
+include text (.txt), HTML (.html) and two types of PDF (.pdf) referred to as
+<em>rpdf</em> and <em>tpdf</em>.  Each output type is generated from the same <em>rivt file</em>.</p>
+<p>A PDF doc produced using <em>rpdf</em> is formatted by the rst2pdf library, a susbset
+of the larger ReportLab library. Its advantage includes a much smaller library
+size and it is the default PDF Doc for the rivt framework. A PDF doc produced
+using <em>tpdf</em> requires a separate installation of the large texlive LaTeX library.</p>
 </section>
 </section>
 
@@ -468,7 +496,7 @@ editing and processing.</p>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">1.3  Terms</p>
+        <p class="prev-next-title">1.3 Terms</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -493,6 +521,8 @@ editing and processing.</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import-rivtlib">[01] Import rivtlib</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api-functions">[02] API functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-string">[03] rivt-string</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docs">[04] Docs</a></li>
 </ul>
   </nav></div>
 

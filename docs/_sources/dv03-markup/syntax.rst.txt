@@ -1,6 +1,20 @@
 **3.1** Syntax
 ================
 
+The first line of each function includes a section label (that also may be a
+section title) followed by formatting parameters. New sections may be labeled
+as separate or integrated with preceding sections. The section body can contain
+any utf-8 text. Commands and tags applicable to each function are defined
+[here](#commands) and [here](#tags).
+
+**rivt** syntax includes **COMMANDS** for file operations and **TAGS** for text
+formatting. Any text not defined by commands or tags is passed through as
+`restructuredText <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`
+
+**rivt markup**  wraps and extends restructured text markup. It adds two
+additional markup elements - tags and commands - and provide simplified
+backend and default settings for writing the same rivt file as different
+document types (text, PDF and HTML).
 
 API functions start in column one. rivt-strings are indented four spaces (for
 legibility and code folding).A rivt doc is assembled by each function in order

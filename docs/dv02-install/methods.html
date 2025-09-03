@@ -409,6 +409,22 @@ that can be run from a USB drive or any folder on your computer.</p>
 <h2>[ 4 ] - System install<a class="headerlink" href="#system-install" title="Link to this heading">#</a></h2>
 <p>a system-wide installation using open source installers for each
 component of the framework.</p>
+<p>rivtlib is generally run in an IDE. If run from the command line the command
+takes one of two forms depending on whether the file is part of a report. If
+part of a report the form is:</p>
+<blockquote>
+<div><p>python -m rivtlib rddnn-filename.py</p>
+</div></blockquote>
+<p>where <em>rvddnn-</em> is the doc number and <em>dd</em> and <em>nn</em> are integers identifying the
+report division and subdivision respectively. Resource files need to be in the
+standard folders. If the file is a standalone document, and not part of a larger
+report, then resource files are assumed to be in the current folder or subfolder
+and the command is:</p>
+<blockquote>
+<div><p>python -m rivtlib filename.py</p>
+</div></blockquote>
+<p>In this case output files will also be in the current file folder. See e <strong>rivt
+User Manual</strong> at <a class="reference external" href="https://rivt.info">https://rivt.info</a> for details.</p>
 </section>
 </section>
 

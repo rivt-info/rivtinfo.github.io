@@ -383,6 +383,18 @@
                   
   <section id="syntax">
 <h1><strong>3.1</strong> Syntax<a class="headerlink" href="#syntax" title="Link to this heading">#</a></h1>
+<p>The first line of each function includes a section label (that also may be a
+section title) followed by formatting parameters. New sections may be labeled
+as separate or integrated with preceding sections. The section body can contain
+any utf-8 text. Commands and tags applicable to each function are defined
+[here](#commands) and [here](#tags).</p>
+<p><strong>rivt</strong> syntax includes <strong>COMMANDS</strong> for file operations and <strong>TAGS</strong> for text
+formatting. Any text not defined by commands or tags is passed through as
+<cite>restructuredText &lt;https://docutils.sourceforge.io/docs/user/rst/quickref.html&gt;</cite></p>
+<p><strong>rivt markup</strong>  wraps and extends restructured text markup. It adds two
+additional markup elements - tags and commands - and provide simplified
+backend and default settings for writing the same rivt file as different
+document types (text, PDF and HTML).</p>
 <p>API functions start in column one. rivt-strings are indented four spaces (for
 legibility and code folding).A rivt doc is assembled by each function in order
 of the input order. Each function also, optionally, defines a doc section.</p>

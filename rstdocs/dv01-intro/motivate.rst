@@ -8,19 +8,19 @@
 engineering document reuse. Engineering documents typically include text,
 tables, diagrams, equations and calculations from a variety of sources.
 Although document software combining these elements is available, document
-reuse on a wide scale for these programs is limited.
+reuse on a wide scale for this software is limited.
 
-The limitations that **rivt** is designed to address can be summarized as:
+The limitations that **rivt** addresses can be summarized as:
 
-- adoption is divided among many incompatible programs
-- documents become inaccessible without continual program updates
+- use is divided among incompatible programs
+- older documents are inaccessible without frequent software updates
 - update costs are high
-- there is limited cross-platform availability
+- software is not cross-platform 
 - collaboration and version control is limited
 - report generation is limited
   
 The table below provides a feature comparison between representative
-programs.
+software.
 
 
 .. rst-class:: center
