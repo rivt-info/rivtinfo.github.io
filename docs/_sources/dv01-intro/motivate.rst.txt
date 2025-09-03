@@ -7,12 +7,10 @@
 **rivt** development is motivated by a need for software that simplifies
 engineering document reuse. Engineering documents typically include text,
 tables, diagrams, equations and calculations from a variety of sources.
-Although document software combining these elements is available, document
-reuse on a wide scale for this software is limited.
+Although software combining these elements is available, document reuse on a
+wide scale is limited. The limitations can be summarized as:
 
-The limitations that **rivt** addresses can be summarized as:
-
-- use is divided among incompatible programs
+- use is divided among many incompatible programs
 - older documents are inaccessible without frequent software updates
 - update costs are high
 - software is not cross-platform 
@@ -20,7 +18,7 @@ The limitations that **rivt** addresses can be summarized as:
 - report generation is limited
   
 The table below provides a feature comparison between representative
-software.
+software. **rivt** is designed to address these limitations.
 
 
 .. rst-class:: center
