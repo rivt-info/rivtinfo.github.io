@@ -1,7 +1,7 @@
 1.1  Motivation
 =======================
 
-**[01]**  Background
+[01]  Background
 -------------------------
 
 **rivt** development is motivated by a need for software that simplifies
@@ -24,8 +24,8 @@ relevant features between representative software.
 .. rst-class:: center
     
 
-**[02]**  Table: Features
-------------------------------
+[02]  Table 1 - Feature Comparison
+----------------------------------------
 
 ============ ========= ======== ======== ========= ========= ============= 
 Program      Rep [1]_  Ver [2]_ Txt [3]_ Comp [4]_  CP [5]_   Collab [6]_  
@@ -38,6 +38,8 @@ Jupyter        no       no         no      yes         yes      yes
 **rivt**      **yes**  **yes**   **yes**  **yes**   **yes**    **yes**
 ============ ========= ======== ======== ========= ========= ============= 
 
+
+.. rst-class:: left
 
 .. [1] Report generation
 .. [2] Version control
