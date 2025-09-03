@@ -383,15 +383,14 @@
 <h1>1.2 API<a class="headerlink" href="#api" title="Link to this heading">#</a></h1>
 <section id="import-rivtlib">
 <h2>[01] Import rivtlib<a class="headerlink" href="#import-rivtlib" title="Link to this heading">#</a></h2>
-<hr><p>Python combines new functions and libraries using import statements
-and namespaces. A <strong>rivt</strong> file is a Python file (.py) that imports the
-<strong>rivtlib</strong> library and assigns the namespace <em>rv</em>:</p>
+<hr><p>Python combines new functions and libraries using <em>import</em> statements
+and <em>namespaces</em>. A <strong>rivt</strong> file is a Python file (.py) that <em>imports</em> the
+<strong>rivtlib</strong> library and assigns the <em>namespace</em> <strong>rv</strong>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
 </pre></div>
 </div>
 <p>rivtlib exposes 7 API functions which may be run interactively as notebook
-cells in an IDE (e.g. VSCode) or as a script. A rivt file, as a Python file,
-is evaluated top to bottom.</p>
+cells in an IDE (e.g. VSCode) or as a Python script.</p>
 </section>
 <section id="api-functions">
 <h2>[02] API functions<a class="headerlink" href="#api-functions" title="Link to this heading">#</a></h2>
@@ -434,20 +433,20 @@ is evaluated top to bottom.</p>
 </tbody>
 </table>
 </div>
-<p>API functions may be arbitrarily ordered in rivt file. They evaluate a
-<em>rivt string</em> (a triple-quoted string argument - rS) and output formatted utf-8
-text to the terminal.</p>
-<p>The first four functions in the table (<strong>R I V T</strong>) generate doc content. The
-last three functions (<strong>D S Q</strong>) process files or sections. The <em>Doc</em> function
-writes a doc as a text, PDF or HTML file. The <em>Skip</em> and <em>Quit</em> functions are
-used primarily in interactive editing and processing.</p>
+<p>API functions may be arbitrarily ordered. Each function evaluates a <em>rivt
+string</em> (a triple-quoted string argument, rS).</p>
+<p>The first four functions in the table (<strong>R I V T</strong>) output formatted utf-8 text
+to the terminal and generate <em>doc</em> content.</p>
+<p>The last three functions (<strong>D S Q</strong>) process files or sections. The <em>Docs</em>
+function writes a doc as a text, PDF or HTML file. The <em>Skip</em> and <em>Quit</em>
+functions are used primarily in interactive editing and processing.</p>
 </section>
 <section id="rivt-string">
 <h2>[03] rivt-string<a class="headerlink" href="#rivt-string" title="Link to this heading">#</a></h2>
-<p>An API function starts in the first column. The <em>rivt string</em> begins with a
-header that specifies section labeling and processing. Section content follows
-the header on a new line and is indented four spaces for legibility and section
-folding.</p>
+<p>An API function starts in the first column. Its <em>rivt string</em> argument is
+enclosed in triple quotes and begins with a header that specifies section
+labeling and processing. The section content follows the header on subsequent
+lines and is indented four spaces for legibility and section folding.</p>
 <p>Section content includes rivt-markup tags and commands and may include
 arbitrary utf-8 text. See <a class="reference internal" href="../dv03-markup/markup.html"><span class="doc">Markup</span></a> for further
 details.</p>
@@ -462,14 +461,15 @@ details.</p>
 </section>
 <section id="docs">
 <h2>[04] Docs<a class="headerlink" href="#docs" title="Link to this heading">#</a></h2>
-<p>Docs are formatted output files specified by the <em>Doc</em> function. Doc types
-include text (.txt), HTML (.html) and two types of PDF (.pdf) referred to as
-<em>rpdf</em> and <em>tpdf</em>.  Each output type is generated from the same <em>rivt file</em>.</p>
-<p>A PDF doc produced using <em>rpdf</em> is formatted by the rst2pdf library, a susbset
-of the larger ReportLab library. Its advantage includes a much smaller library
-size and it is the default PDF Doc for the rivt framework. A PDF doc produced
-using <em>tpdf</em> requires a separate installation of the large texlive LaTeX
-library.</p>
+<p>Docs are formatted output files specified by the <em>Doc</em> function. Docs include
+text (.txt), HTML (.html) and PDF (.pdf) files. Each output type is generated
+from the same <em>rivt file</em>.</p>
+<p>PDF files are produced in two ways, referred to as <em>rpdf</em> and <em>tpdf</em>.An <em>rpdf</em>
+doc is formatted using the rst2pdf library, a susbset of the larger ReportLab
+library. Its advantage includes a much smaller library size and it is the
+default PDF Doc for the rivt framework. A PDF doc produced using <em>tpdf</em>
+requires a separate installation of the large texlive LaTeX library. Its
+advantage is extensive control over the Doc appearance.</p>
 </section>
 </section>
 

@@ -10,7 +10,7 @@
 
 .. topic:: term : *context* (rivt, python, docutils, github, os)
   
-  Definiition
+  Definition
 
 A 
 --------------
@@ -255,7 +255,7 @@ R
 
 .. topic::  rivtlib  : rivt
 
-  Python `package <https://rivtlib.net>`_ that generates docs and reports 
+  `Python package <https://rivtlib.dev>`_ that generates docs and reports 
   from a rivt file
 
 S 

@@ -17,7 +17,7 @@ or :doc:`report <dv04-reports/types>` files. This site is an example of a HTML
 report. 
 
 The rivt framework is described in :doc:`Installation <dv02-install/methods>`.
-This ... is an example of a small rivt file and the resulting PDF doc output.
+This ... is a small rivt file example and PDF doc output.
 
 .. raw:: html 
     
