@@ -41,12 +41,12 @@ Jupyter        no       no         no      yes         yes      yes
 
 .. rst-class:: left
 
-.. [1] Report generation
-.. [2] Version control
-.. [3] Plain text input files
-.. [4] Forward and backward compatibility
-.. [5] Cross-platform
-.. [6] Collaboration support
+    .. [1] Report generation
+    .. [2] Version control
+    .. [3] Plain text input files
+    .. [4] Forward and backward compatibility
+    .. [5] Cross-platform
+    .. [6] Collaboration support
 
 
 
