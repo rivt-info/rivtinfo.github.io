@@ -17,15 +17,22 @@ wide scale is limited. The limitations can be summarized as:
 - collaboration and version control is limited
 - report generation is limited
   
+
+
+
+
+    
+
+[02] Feature Comparison
+----------------------------------------
+
 **rivt** is designed to address these limitations. The table below compares
 relevant features between representative software.
 
-
 .. rst-class:: center
-    
 
-[02]  Table 1 - Feature Comparison
-----------------------------------------
+
+Table 1 - **Feature Comparison**
 
 ============ ========= ======== ======== ========= ========= ============= 
 Program      Rep [1]_  Ver [2]_ Txt [3]_ Comp [4]_  CP [5]_   Collab [6]_  
