@@ -11,23 +11,18 @@ Although software combining these elements is available, document reuse on a
 wide scale is limited. The limitations can be summarized as:
 
 - use is divided among many incompatible programs
-- older documents are inaccessible without frequent software updates
+- newer documents are inaccessible without frequent software updates
 - update costs are high
-- software is not cross-platform 
+- software is limited to specific platforms
 - collaboration and version control is limited
 - report generation is limited
   
-
-
-
-
-    
 
 [02] Feature Comparison
 ----------------------------------------
 
 **rivt** is designed to address these limitations. The table below compares
-relevant features between representative software.
+relevant features of representative software.
 
 .. rst-class:: center
 
