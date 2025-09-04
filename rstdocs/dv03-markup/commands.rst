@@ -1,39 +1,60 @@
 **3.4** Commands
 ===================
 
+Commands read and write files and assign values to variables. They typically
+start in the first column with double vertical bars. The command bar is
+followed by the command name, the relative file path and any applicable
+parameters.There are two exceptions to this pattern - the assignment (=) and
+definition (:=) commands.
 
-**rivt markup**  wraps and extends restructured text markup. It adds two
-additional markup elements - tags and commands - and provide simplified
-backend and default settings for writing the same rivt file as different
-document types (text, PDF and HTML).
+In the syntax descriptoin below, parameters are separated by commas and
+parameter options are separated by colons.
+
+**KEY**  
+--------------------------------------------
+
+||command | : description
+
+.. raw:: html
+
+    <hr>
+
+.. topic::  command syntax
+
+    - function scope
+    - applicable output types
 
 
-**Syntax**
-~~~~~~~~~~~
+||APPEND| :  append a PDF file
+-------------------------------------------
 
-The first line of each function includes a section label (that also may be a
-section title) followed by formatting parameters. New sections may be labeled
-as separate or integrated with preceding sections. The section body can contain
-any utf-8 text. Commands and tags applicable to each function are defined
-[here](#commands) and [here](#tags).
+.. raw:: html
 
-**rivt** syntax includes **COMMANDS** for file operations and **TAGS** for text
-formatting. Any text not defined by commands or tags is passed through as
-`restructuredText <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_. 
+    <hr>
+
+.. topic:: ||APPEND| rel. pth | num; nonum 
+
+    - rv.D
+    - PDF, HTML
+
+||DOC| :  write a doc file
+-------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: ||DOC| rel. pth | rpdf; txt; html; tpdf
+
+    - rv.D
+    - PDF, HTML
 
 
-**COMMANDS**
 
 
-Commands read and write external files. They start in the first column with a
-vertical bars. A double bar is used for write commands (||) and a single bar
-(|) for read commands. The command bar is followed by the command name,
-the relative file path and parameters, each separated by a single bar:
+rv.V         a := 1+1 | reference | units | decimals         := a command tag
 
-In the syntax description below parameter options are separated with
-semi-colons and elements by commas. File locations are specified using paths
-relative to the rivt file location. Using the standard folder structure is
-strongly recommended. Folder organization is described `here <5-folders.html>`_.
+
 
 
 
@@ -49,44 +70,6 @@ rv.I       **|TABLE|** rel. pth | title, col w, l;c;r, [r], -;_[T]    .csv,.txt,
 rv.I       **|TEXT|** rel. pth | [[block tag]]                        .txt,.tex
 ========== ========================================================= ================
 
-=========== =============================================== ====================
-Scope                        Write Commands                         Notes 
-=========== =============================================== ====================
-rv.V         a := 1+1 | reference | units | decimals         := a command tag
-rv.W         **||DOC|** rel. pth | pdf; txt; html; pdf2      pdf2 uses rst2pdf
-rv.W         **||REPORT|** rel. pth | pdf; txt; html; pdf2   pdf uses latex
-rv.W         **||APPEND|** rel. pth | num; nonum             .pdf,.txt
-=========== =============================================== ====================
 
-================ ======================= =======================================
-Scope             Line Tags                    Description
-================ ======================= =======================================
-rv.V                    label **_[V]**      autonumber values table [1]
-rv.I, rv.V            caption **_[F]**      autonumber image [1]
-rv.I, rv.V              label **_[E]**      autonumber equation
-rv.I, rv.V               text **_[C]**      center text 
-rv.I, rv.V               text **_[B]**      center bold text (pdf, pdf2, html)
-rv.I, rv.V                    **_[P]**      new page
-rv.I, rv.V                  --------        horizontal line (4 or more - )
-rv.I                    title **_[T]**      autonumber table [1]
-rv.I                 equation **_[S]**      format symbol math 
-rv.I                     text **_[#]**      autonumber footnote
-rv.I                  descrip **_[D]**      footnote description
-rv.I               url, label **_[U]**      url link (pdf, pdf2, html)
-================ ======================= =======================================
 
-[1] tags may be added to the command as a parameter
-
-=========== =============== ====================================================
-Scope        Block Tags      Description
-=========== =============== ====================================================
-rv.V          **_[[V]]**       values format block, autonumber
-rv.I rv.V     **_[[Q]]**       end block
-rv.I          **_[[S]]**       indent block
-rv.I          **_[[C]]**       code (literal) block
-rv.I          **_[[L]]**       latex block (lpdf, html)
-rv.I          **_[[O]]**       italic (oblique) block (lpdf, html)
-rv.I          **_[[B]]**       bold block  (lpdf, html)
-rv.I          **_[[I]]**       indent italic block (lpdf, html)
-=========== =============== ====================================================
   

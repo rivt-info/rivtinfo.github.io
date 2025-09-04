@@ -161,7 +161,7 @@ _[#] :  numbered footnote
 
     <hr>
 
-.. topic::  more than 5 underscores  _____
+.. topic::  5 or more underscores  _____
 
     rv.I, rv.V
     text, pdf, html

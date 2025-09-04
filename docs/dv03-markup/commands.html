@@ -315,7 +315,7 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="syntax.html"><strong>3.1</strong> Syntax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="syntax.html">3.1 Syntax</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tagsl.html">3.2 Line Tags</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tagsb.html"><strong>3.3</strong> Block Tags</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>3.4</strong> Commands</a></li>
@@ -383,29 +383,44 @@
                   
   <section id="commands">
 <h1><strong>3.4</strong> Commands<a class="headerlink" href="#commands" title="Link to this heading">#</a></h1>
-<p><strong>rivt markup</strong>  wraps and extends restructured text markup. It adds two
-additional markup elements - tags and commands - and provide simplified
-backend and default settings for writing the same rivt file as different
-document types (text, PDF and HTML).</p>
-<section id="syntax">
-<h2><strong>Syntax</strong><a class="headerlink" href="#syntax" title="Link to this heading">#</a></h2>
-<p>The first line of each function includes a section label (that also may be a
-section title) followed by formatting parameters. New sections may be labeled
-as separate or integrated with preceding sections. The section body can contain
-any utf-8 text. Commands and tags applicable to each function are defined
-[here](#commands) and [here](#tags).</p>
-<p><strong>rivt</strong> syntax includes <strong>COMMANDS</strong> for file operations and <strong>TAGS</strong> for text
-formatting. Any text not defined by commands or tags is passed through as
-<a class="reference external" href="https://docutils.sourceforge.io/docs/user/rst/quickref.html">restructuredText</a>.</p>
-<p><strong>COMMANDS</strong></p>
-<p>Commands read and write external files. They start in the first column with a
-vertical bars. A double bar is used for write commands (||) and a single bar
-(|) for read commands. The command bar is followed by the command name,
-the relative file path and parameters, each separated by a single bar:</p>
-<p>In the syntax description below parameter options are separated with
-semi-colons and elements by commas. File locations are specified using paths
-relative to the rivt file location. Using the standard folder structure is
-strongly recommended. Folder organization is described <a class="reference external" href="5-folders.html">here</a>.</p>
+<p>Commands read and write files and assign values to variables. They typically
+start in the first column with double vertical bars. The command bar is
+followed by the command name, the relative file path and any applicable
+parameters.There are two exceptions to this pattern - the assignment (=) and
+definition (:=) commands.</p>
+<p>In the syntax descriptoin below, parameters are separated by commas and
+parameter options are separated by colons.</p>
+<section id="key">
+<h2><strong>KEY</strong><a class="headerlink" href="#key" title="Link to this heading">#</a></h2>
+<p>||command | : description</p>
+<hr><aside class="topic">
+<p class="topic-title">command syntax</p>
+<ul class="simple">
+<li><p>function scope</p></li>
+<li><p>applicable output types</p></li>
+</ul>
+</aside>
+</section>
+<section id="append-append-a-pdf-file">
+<h2>||APPEND| :  append a PDF file<a class="headerlink" href="#append-append-a-pdf-file" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">||APPEND| rel. pth | num; nonum</p>
+<ul class="simple">
+<li><p>rv.D</p></li>
+<li><p>PDF, HTML</p></li>
+</ul>
+</aside>
+</section>
+<section id="doc-write-a-doc-file">
+<h2>||DOC| :  write a doc file<a class="headerlink" href="#doc-write-a-doc-file" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">||DOC| rel. pth | rpdf; txt; html; tpdf</p>
+<ul class="simple">
+<li><p>rv.D</p></li>
+<li><p>PDF, HTML</p></li>
+</ul>
+</aside>
+<p>rv.V         a := 1+1 | reference | units | decimals         := a command tag</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Scope</p></th>
@@ -433,136 +448,6 @@ strongly recommended. Folder organization is described <a class="reference exter
 <tr class="row-even"><td><p>rv.I</p></td>
 <td><p><strong>|TEXT|</strong> rel. pth | [[block tag]]</p></td>
 <td><p>.txt,.tex</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Scope</p></th>
-<th class="head"><p>Write Commands</p></th>
-<th class="head"><p>Notes</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>rv.V</p></td>
-<td><p>a := 1+1 | reference | units | decimals</p></td>
-<td><p>:= a command tag</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.W</p></td>
-<td><p><strong>||DOC|</strong> rel. pth | pdf; txt; html; pdf2</p></td>
-<td><p>pdf2 uses rst2pdf</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.W</p></td>
-<td><p><strong>||REPORT|</strong> rel. pth | pdf; txt; html; pdf2</p></td>
-<td><p>pdf uses latex</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.W</p></td>
-<td><p><strong>||APPEND|</strong> rel. pth | num; nonum</p></td>
-<td><p>.pdf,.txt</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Scope</p></th>
-<th class="head"><p>Line Tags</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>rv.V</p></td>
-<td><p>label <strong>_[V]</strong></p></td>
-<td><p>autonumber values table [1]</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I, rv.V</p></td>
-<td><p>caption <strong>_[F]</strong></p></td>
-<td><p>autonumber image [1]</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I, rv.V</p></td>
-<td><p>label <strong>_[E]</strong></p></td>
-<td><p>autonumber equation</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I, rv.V</p></td>
-<td><p>text <strong>_[C]</strong></p></td>
-<td><p>center text</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I, rv.V</p></td>
-<td><p>text <strong>_[B]</strong></p></td>
-<td><p>center bold text (pdf, pdf2, html)</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I, rv.V</p></td>
-<td><p><strong>_[P]</strong></p></td>
-<td><p>new page</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I, rv.V</p></td>
-<td></td>
-<td><p>horizontal line (4 or more - )</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>title <strong>_[T]</strong></p></td>
-<td><p>autonumber table [1]</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p>equation <strong>_[S]</strong></p></td>
-<td><p>format symbol math</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>text <strong>_[#]</strong></p></td>
-<td><p>autonumber footnote</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p>descrip <strong>_[D]</strong></p></td>
-<td><p>footnote description</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>url, label <strong>_[U]</strong></p></td>
-<td><p>url link (pdf, pdf2, html)</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>[1] tags may be added to the command as a parameter</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Scope</p></th>
-<th class="head"><p>Block Tags</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>rv.V</p></td>
-<td><p><strong>_[[V]]</strong></p></td>
-<td><p>values format block, autonumber</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I rv.V</p></td>
-<td><p><strong>_[[Q]]</strong></p></td>
-<td><p>end block</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p><strong>_[[S]]</strong></p></td>
-<td><p>indent block</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p><strong>_[[C]]</strong></p></td>
-<td><p>code (literal) block</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p><strong>_[[L]]</strong></p></td>
-<td><p>latex block (lpdf, html)</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p><strong>_[[O]]</strong></p></td>
-<td><p>italic (oblique) block (lpdf, html)</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p><strong>_[[B]]</strong></p></td>
-<td><p>bold block  (lpdf, html)</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p><strong>_[[I]]</strong></p></td>
-<td><p>indent italic block (lpdf, html)</p></td>
 </tr>
 </tbody>
 </table>
@@ -617,7 +502,9 @@ strongly recommended. Folder organization is described <a class="reference exter
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#syntax"><strong>Syntax</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key"><strong>KEY</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#append-append-a-pdf-file">||APPEND| :  append a PDF file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#doc-write-a-doc-file">||DOC| :  write a doc file</a></li>
 </ul>
   </nav></div>
 
