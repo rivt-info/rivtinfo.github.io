@@ -1,19 +1,20 @@
 **3.4** Commands
 ===================
 
-Commands read and write external files and assign values to variables. They
-typically start in the first column with double vertical bars. The command bar
-is followed by the command name, the relative file path and any applicable
-parameters.There are two exceptions to this pattern - the assignment (=) and
-definition (:=) commands.
+*rivt commands* are used to read and write external files and assign values to
+variables. They typically start in the first column with double vertical bars
+followed by the command name, the relative file path and parameters.There are
+two exceptions to this pattern - the assignment (=) and definition (:=)
+commands are used to evaluate equations.
 
 In the syntax description below, parameters are separated by commas and
-their options are separated by colons.
+parameter options are separated by semi-colons. Commands have a function and
+output scope.
 
 **KEY**  
 --------------------------------------------
 
-| COMMAND | : description
+|| COMMAND | : description
 
 .. raw:: html
 

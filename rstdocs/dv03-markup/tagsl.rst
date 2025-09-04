@@ -1,9 +1,8 @@
 3.2 Line Tags
 ===================
 
-**Line** tags format a line of text and are denoted with _[**TAG**]. In most
-cases they are added at the end of a line. Tags have a function and output
-scope.
+*rivt line tags* are used to format a line of text and are denoted with
+_[**TAG**], usually at the end of a line. Tags have a function and output scope.
 
 
 **KEY**  
