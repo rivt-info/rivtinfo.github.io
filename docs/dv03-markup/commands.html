@@ -383,75 +383,125 @@
                   
   <section id="commands">
 <h1><strong>3.4</strong> Commands<a class="headerlink" href="#commands" title="Link to this heading">#</a></h1>
-<p>Commands read and write files and assign values to variables. They typically
-start in the first column with double vertical bars. The command bar is
-followed by the command name, the relative file path and any applicable
+<p>Commands read and write external files and assign values to variables. They
+typically start in the first column with double vertical bars. The command bar
+is followed by the command name, the relative file path and any applicable
 parameters.There are two exceptions to this pattern - the assignment (=) and
 definition (:=) commands.</p>
-<p>In the syntax descriptoin below, parameters are separated by commas and
-parameter options are separated by colons.</p>
+<p>In the syntax description below, parameters are separated by commas and
+their options are separated by colons.</p>
 <section id="key">
 <h2><strong>KEY</strong><a class="headerlink" href="#key" title="Link to this heading">#</a></h2>
-<p>||command | : description</p>
+<div class="line-block">
+<div class="line">COMMAND | : description</div>
+</div>
 <hr><aside class="topic">
 <p class="topic-title">command syntax</p>
 <ul class="simple">
+<li><p>input or output file types</p></li>
 <li><p>function scope</p></li>
-<li><p>applicable output types</p></li>
+<li><p>applicable doc types</p></li>
 </ul>
 </aside>
 </section>
 <section id="append-append-a-pdf-file">
-<h2>||APPEND| :  append a PDF file<a class="headerlink" href="#append-append-a-pdf-file" title="Link to this heading">#</a></h2>
+<h2>|| APPEND | :  append a PDF file<a class="headerlink" href="#append-append-a-pdf-file" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">||APPEND| rel. pth | num; nonum</p>
+<p class="topic-title">|| APPEND | relative path | num; nonum</p>
 <ul class="simple">
+<li><p>reads PDF files</p></li>
 <li><p>rv.D</p></li>
 <li><p>PDF, HTML</p></li>
 </ul>
 </aside>
 </section>
 <section id="doc-write-a-doc-file">
-<h2>||DOC| :  write a doc file<a class="headerlink" href="#doc-write-a-doc-file" title="Link to this heading">#</a></h2>
+<h2>|| DOC | :  write a doc file<a class="headerlink" href="#doc-write-a-doc-file" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">||DOC| rel. pth | rpdf; txt; html; tpdf</p>
+<p class="topic-title">|| DOC | relative path | rpdf; txt; html; tpdf</p>
 <ul class="simple">
+<li><p>writes PDF or HTML files</p></li>
 <li><p>rv.D</p></li>
+<li><p>PDF, HTML, text</p></li>
+</ul>
+</aside>
+</section>
+<section id="img-read-and-insert-image-file">
+<h2>|| IMG | :  read and insert image file<a class="headerlink" href="#img-read-and-insert-image-file" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">|| IMG | relative path | caption, scale,;_[F]</p>
+<ul class="simple">
+<li><p>reads PNG and JPEG files (.png, jpg)</p></li>
+<li><p>rv.I, rv.V</p></li>
 <li><p>PDF, HTML</p></li>
 </ul>
 </aside>
-<p>rv.V         a := 1+1 | reference | units | decimals         := a command tag</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Scope</p></th>
-<th class="head"><p>Read Commands</p></th>
-<th class="head"><p>File Types</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>rv.V</p></td>
-<td><p><strong>|VALUES|</strong> rel. pth | title, [rows], -;_[V]</p></td>
-<td><p>.csv</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I, rv.V</p></td>
-<td><p><strong>|IMG|</strong> rel. pth | caption, scale, -;_[F]</p></td>
-<td><p>.png,.jpg</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I, rv.V</p></td>
-<td><p><strong>|IMG2|</strong> rel. pth | c1, c2, s1, s2, -;_[F]</p></td>
-<td><p>.png,.jpg</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p><strong>|TABLE|</strong> rel. pth | title, col w, l;c;r, [r], -;_[T]</p></td>
-<td><p>.csv,.txt,.xlsx</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p><strong>|TEXT|</strong> rel. pth | [[block tag]]</p></td>
-<td><p>.txt,.tex</p></td>
-</tr>
-</tbody>
-</table>
-</div>
+</section>
+<section id="img2-read-and-insert-image">
+<h2>|| IMG2 | :  read and insert image<a class="headerlink" href="#img2-read-and-insert-image" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">|| IMG2 | relative path | cap1, cap2, sca1, sca2,;_[F]</p>
+<ul class="simple">
+<li><p>reads PNG and JPEG files (.png, jpg)</p></li>
+<li><p>rv.I, rv.V</p></li>
+<li><p>PDF, HTML</p></li>
+</ul>
+</aside>
+</section>
+<section id="values-read-and-insert-image">
+<h2>|| VALUES | :  read and insert image<a class="headerlink" href="#values-read-and-insert-image" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">|| IMG2 | relative path | title, [rows], -;_[V]</p>
+<ul class="simple">
+<li><p>reads values.txt file</p></li>
+<li><p>rv.I, rv.V</p></li>
+<li><p>PDF, HTML</p></li>
+</ul>
+</aside>
+</section>
+<section id="table-read-and-insert-image">
+<h2>|| TABLE | :  read and insert image<a class="headerlink" href="#table-read-and-insert-image" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">|| IMG2 | relative path | title, col w, l;c;r, [r], -;_[T]</p>
+<ul class="simple">
+<li><p>reads CSV, TEXT and EXCEL files (.csv, .txt, xlsx)</p></li>
+<li><p>rv.I, rv.V</p></li>
+<li><p>PDF, HTML</p></li>
+</ul>
+</aside>
+</section>
+<section id="text-read-and-insert-image">
+<h2>|| TEXT | :  read and insert image<a class="headerlink" href="#text-read-and-insert-image" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">|| IMG2 | relative path | _[[block tag]]</p>
+<ul class="simple">
+<li><p>reads TEXT and TEX files (.txt, .tex)</p></li>
+<li><p>rv.I, rv.V</p></li>
+<li><p>PDF, HTML</p></li>
+</ul>
+</aside>
+</section>
+<section id="assign-value">
+<h2>=  :  assign value<a class="headerlink" href="#assign-value" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">a = 10*IN | unit1, unit2 | description</p>
+<ul class="simple">
+<li><p>assigns value to a variable</p></li>
+<li><p>rv.V</p></li>
+<li><p>PDF, HTML</p></li>
+</ul>
+</aside>
+</section>
+<section id="define-equation">
+<h2>:=  :  define equation<a class="headerlink" href="#define-equation" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">a := b * 10 | unit1, unit2 | var-deci, eq-deci</p>
+<ul class="simple">
+<li><p>defines variable in terms of expression</p></li>
+<li><p>rv.V</p></li>
+<li><p>PDF, HTML</p></li>
+</ul>
+</aside>
 </section>
 </section>
 
@@ -503,8 +553,15 @@ parameter options are separated by colons.</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key"><strong>KEY</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#append-append-a-pdf-file">||APPEND| :  append a PDF file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#doc-write-a-doc-file">||DOC| :  write a doc file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#append-append-a-pdf-file">|| APPEND | :  append a PDF file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#doc-write-a-doc-file">|| DOC | :  write a doc file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img-read-and-insert-image-file">|| IMG | :  read and insert image file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img2-read-and-insert-image">|| IMG2 | :  read and insert image</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#values-read-and-insert-image">|| VALUES | :  read and insert image</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-read-and-insert-image">|| TABLE | :  read and insert image</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-read-and-insert-image">|| TEXT | :  read and insert image</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-value">=  :  assign value</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#define-equation">:=  :  define equation</a></li>
 </ul>
   </nav></div>
 
