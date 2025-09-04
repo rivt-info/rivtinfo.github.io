@@ -31,6 +31,7 @@ This ... is a small rivt file example and PDF doc output.
 
 .. toctree::
     :maxdepth: 1
+    :hidden:
 
     dv01-intro/intro.rst
     dv02-install/install.rst
