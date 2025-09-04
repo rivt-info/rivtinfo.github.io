@@ -1,6 +1,8 @@
 **3.** Markup
 ==================
-   
+
+.. include:: ./dv03-summary.rst
+
 .. toctree::
     :maxdepth: 1
 

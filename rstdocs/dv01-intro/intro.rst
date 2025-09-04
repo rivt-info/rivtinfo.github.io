@@ -1,6 +1,8 @@
 1. Introduction
 =====================
-   
+
+.. include:: ./dv01-summary.rst
+
 .. toctree::
     :maxdepth: 1
 

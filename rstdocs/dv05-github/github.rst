@@ -1,6 +1,8 @@
 5. Github
 =============== 
-   
+
+.. include:: ./dv05-summary.rst
+
 .. toctree::
     :maxdepth: 3
 

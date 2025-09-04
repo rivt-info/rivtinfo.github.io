@@ -1,6 +1,8 @@
 4. Reports
 =============== 
-   
+
+.. include:: ./dv04-summary.rst
+
 .. toctree::
     :maxdepth: 2
 
