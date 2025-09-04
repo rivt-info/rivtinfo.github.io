@@ -5,6 +5,7 @@
 
 .. toctree::
     :maxdepth: 1
+    :hidden:
 
     motivate.rst
     api.rst
