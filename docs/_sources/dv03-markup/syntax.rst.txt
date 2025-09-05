@@ -1,11 +1,54 @@
 3.1 Syntax
 ================
 
-The first line of each function includes a section label (that also may be a
-section title) followed by formatting parameters. New sections may be labeled
-as separate or integrated with preceding sections. The section body can contain
-any utf-8 text. Commands and tags applicable to each function are defined
+[01] Overview
+--------------
+
+The basic syntax of a *rivt string* is utf-8 characters preceded by a header.
+Character strings that are not tags or commands are passed, unchanged, to an
+intermediate .rst file. This allows for restructuredText commands to be
+embedded in a *rivt string* for formatting PDF and HTML docs. Most
+restructuredText syntax is stripped out when a *text doc* is written.
+
+
+[02] Header 
+--------------
+
+The first line of a *rivt-string* is a header that specifies a section label
+and two formatting parameters. If the section label is preceeded by two
+dashes (--) a new section is not created and the section content is merged with the
+prior section.
+  
+.. code-block:: python
+
+    rv._("""Section Label | print; noprint, public; private
+
+        section content
+        ...
+        
+        """)
+
+The parameters specifiy whether the section contents are formatted and output
+to docs and whether the section is written to a public rivt file.
+
+
+New sections may be labeled as separate or
+integrated with preceding sections. The section body can contain any utf-8
+text. Commands and tags applicable to each function are defined
 [here](#commands) and [here](#tags).
+
+.. code-block:: python
+
+    rv._("""Section Label | print; noprint, public; private
+
+        section content
+        ...
+        
+        """)
+
+
+[03] Section Content
+----------------------
 
 **rivt** syntax includes **COMMANDS** for file operations and **TAGS** for text
 formatting. Any text not defined by commands or tags is passed through as
@@ -25,16 +68,6 @@ of the input order. Each function also, optionally, defines a doc section.
 additional markup elements - tags and commands - and provide simplified
 backend and default settings for writing the same rivt file as different
 document types (text, PDF and HTML).
-
-
-Syntax
---------
-
-The first line of each function includes a section label (that also may be a
-section title) followed by formatting parameters. New sections may be labeled
-as separate or integrated with preceding sections. The section body can contain
-any utf-8 text. Commands and tags applicable to each function are defined
-[here](#commands) and [here](#tags).
 
 **rivt** syntax includes **COMMANDS** for file operations and **TAGS** for text
 formatting. Any text not defined by commands or tags is passed through as
@@ -74,21 +107,3 @@ relative to the rivt file location. Using the standard folder structure is
 strongly recommended. Folder organization is described `here <5-folders.html>`_.
 
 
-**rivt markup**  wraps and extends restructured text markup. It adds two
-additional markup elements - tags and commands - and provide simplified
-backend and default settings for writing the same rivt file as different
-document types (text, PDF and HTML).
-
-
-**Syntax**
-~~~~~~~~~~~
-
-The first line of each function includes a section label (that also may be a
-section title) followed by formatting parameters. New sections may be labeled
-as separate or integrated with preceding sections. The section body can contain
-any utf-8 text. Commands and tags applicable to each function are defined
-[here](#commands) and [here](#tags).
-
-**rivt** syntax includes **COMMANDS** for file operations and **TAGS** for text
-formatting. Any text not defined by commands or tags is passed through as
-`restructuredText <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_. 

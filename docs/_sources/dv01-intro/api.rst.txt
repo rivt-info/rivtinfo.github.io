@@ -61,7 +61,7 @@ details.
 
 .. code-block:: python
 
-    rv._("""Section Label | print parameter, public parameter
+    rv._("""Header
 
         section content
         ...
