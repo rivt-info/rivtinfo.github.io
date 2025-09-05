@@ -5,7 +5,10 @@
     :align: center
     :alt: rivt logo
     
-    rivt
+.. raw:: html
+
+    <p style="text-align:center; fontsize:1.3rem">rivt</p>
+
 
 **rivt** is an open source framework for writing and distributing engineering
 documents. 
