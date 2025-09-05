@@ -7,7 +7,7 @@
     
 .. raw:: html
 
-    <p style="text-align:center; fontsize:1.5rem">rivt</p>
+    <p style="text-align: center; fontsize: 2rem;">rivt</p>
 
 
 **rivt** is an open source framework for writing and distributing engineering
@@ -16,9 +16,8 @@ documents.
 Document input is :doc:`rivt markup <dv03-markup/syntax>` within a Python file
 (.py).
 
-Output is formatted as utf8-text, HTML or PDF :doc:`document <dv04-reports/types>` 
-or :doc:`report <dv04-reports/types>` files. This site is an example of a HTML
-report. 
+Output is formatted as utf8-text, HTML or PDF documents. This site is an
+example of an HTML **rivt** report.
 
 The rivt framework is described in :doc:`Installation <dv02-install/methods>`.
 
