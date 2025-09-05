@@ -7,7 +7,7 @@
     
 .. raw:: html
 
-    <p style="text-align: center; fontsize: 2rem;">rivt</p>
+    <p style="text-align: center; font-size: 1.5rem;">rivt</p>
 
 
 **rivt** is an open source framework for writing and distributing engineering
