@@ -36,7 +36,7 @@ You can search for rivt files on GitHub here.
 
     dv01-intro/intro.rst
     dv02-install/install.rst
-    dv03-markup/markup.rst
+    dv03-markup/dv03-summary.rst
     dv04-reports/reports.rst
     dv05-collab/collab.rst
 

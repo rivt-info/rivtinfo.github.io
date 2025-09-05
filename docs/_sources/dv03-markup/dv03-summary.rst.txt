@@ -1,3 +1,6 @@
+**3.** Markup
+==================
+
 The basic syntax of a *rivt string* is a string of utf-8 characters preceded by
 a header. The *rivt string* is enclosed within one of 7 API functions that
 start in column one. Each function may also define a *doc section*. 
@@ -16,5 +19,17 @@ rv.Q(rs)           Quit              Exit rivt
 
 Text that is not a *tag* or *command* is passed to an intermediate .rst file.
 This facilitates extending *rivt markup* by embedding 
-`restructuredText <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_.
-formatting commands in a *rivt string*.
+`restructuredText <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_
+commands in a *rivt string*.
+
+
+.. toctree::
+    :maxdepth: 1
+    :hidden:
+
+    syntax.rst
+    tagsl.rst
+    tagsb.rst
+    commands.rst
+    quick.rst
+    example1.rst
