@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="../_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="../_static/favicon-32x32.png" type="image/png">
-    <title>2.1. Install Methods &#8212; rivt.info 0.3.0 documentation</title>
+    <title>rivt-uv &#8212; rivt.info 0.3.0 documentation</title>
   
   
   
@@ -56,11 +56,11 @@
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'dv02-install/methods';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'dv02-install/rivtuv';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="2.2 - Python" href="python.html" />
-    <link rel="prev" title="2. Installation" href="install.html" />
+    <link rel="next" title="3. Markup" href="../dv03-markup/dv03-summary.html" />
+    <link rel="prev" title="2.1 rivt-sys installation" href="rivtsys.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -155,7 +155,7 @@
 
 
 <li class="nav-item current active">
-  <a class="nav-link nav-internal" href="install.html">
+  <a class="nav-link nav-internal" href="dv02-summary.html">
     2. Installation
   </a>
 </li>
@@ -224,10 +224,6 @@
   
 
   
-    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="Sections">
-      <span class="fa-solid fa-outdent"></span>
-    </button>
-  
 </div>
 
     </header>
@@ -262,7 +258,7 @@
 
 
 <li class="nav-item current active">
-  <a class="nav-link nav-internal" href="install.html">
+  <a class="nav-link nav-internal" href="dv02-summary.html">
     2. Installation
   </a>
 </li>
@@ -315,9 +311,11 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">2.1. Install Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="python.html">2.2 - Python</a></li>
-<li class="toctree-l1"><a class="reference internal" href="vscode.html">2.1 - VSCode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vscode.html">2.3 - VSCode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rivtzip.html">rivt-zip</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rivtsys.html">2.1 rivt-sys installation</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">rivt-uv</a></li>
 </ul>
 </div>
 </nav></div>
@@ -359,9 +357,9 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="install.html" class="nav-link">2. Installation</a></li>
+    <li class="breadcrumb-item"><a href="dv02-summary.html" class="nav-link">2. Installation</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">2.1. Install Methods</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">rivt-uv</span></li>
   </ul>
 </nav>
 </div>
@@ -378,54 +376,11 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="install-methods">
-<h1>2.1. Install Methods<a class="headerlink" href="#install-methods" title="Link to this heading">#</a></h1>
-<section id="framework-installation">
-<h2>[ 1 ] - Framework Installation<a class="headerlink" href="#framework-installation" title="Link to this heading">#</a></h2>
-<p>The basic rivt framweork includes:</p>
-<ul class="simple">
-<li><p><em>VSCode</em> with extensions for document editing, processing and collaborating</p></li>
-<li><p><em>Python</em> and libraries for analysis and formatting</p></li>
-<li><p><em>Git</em> and GitHub for version control</p></li>
-</ul>
-<p>The extended rivt framework includes:</p>
-<ul class="simple">
-<li><p><em>Latex</em> for highly controlled typesetting</p></li>
-<li><p><em>QCAD</em> for diagramming</p></li>
-</ul>
-<p>The rivt framework may be installed in three ways: as a uv managed install, as
-a portable zip file and as a system install. Each method has its advantages.</p>
-</section>
-<section id="uv-install">
-<h2>[ 2 ] - uv install<a class="headerlink" href="#uv-install" title="Link to this heading">#</a></h2>
-<p>uv managed installation in a virtual, isolated environment.</p>
-</section>
-<section id="zip-install">
-<h2>[ 3 ] - Zip install<a class="headerlink" href="#zip-install" title="Link to this heading">#</a></h2>
-<p>a portable (frozen) installation of the rivt framework from a single file
-that can be run from a USB drive or any folder on your computer.</p>
-</section>
-<section id="system-install">
-<h2>[ 4 ] - System install<a class="headerlink" href="#system-install" title="Link to this heading">#</a></h2>
-<p>a system-wide installation using open source installers for each
-component of the framework.</p>
-<p>rivtlib is generally run in an IDE. If run from the command line the command
-takes one of two forms depending on whether the file is part of a report. If
-part of a report the form is:</p>
-<blockquote>
-<div><p>python -m rivtlib rddnn-filename.py</p>
-</div></blockquote>
-<p>where <em>rvddnn-</em> is the doc number and <em>dd</em> and <em>nn</em> are integers identifying the
-report division and subdivision respectively. Resource files need to be in the
-standard folders. If the file is a standalone document, and not part of a larger
-report, then resource files are assumed to be in the current folder or subfolder
-and the command is:</p>
-<blockquote>
-<div><p>python -m rivtlib filename.py</p>
-</div></blockquote>
-<p>In this case output files will also be in the current file folder. See e <strong>rivt
-User Manual</strong> at <a class="reference external" href="https://rivt.info">https://rivt.info</a> for details.</p>
-</section>
+  <section id="rivt-uv">
+<h1>rivt-uv<a class="headerlink" href="#rivt-uv" title="Link to this heading">#</a></h1>
+<p>rivt-uv</p>
+<p>rivt-uv requires the installation of uv, a python package manager, which then
+facilitates a single command installation of rivt</p>
 </section>
 
 
@@ -439,20 +394,20 @@ User Manual</strong> at <a class="reference external" href="https://rivt.info">h
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="install.html"
+       href="rivtsys.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">2. Installation</p>
+        <p class="prev-next-title">2.1 rivt-sys installation</p>
       </div>
     </a>
     <a class="right-next"
-       href="python.html"
+       href="../dv03-markup/dv03-summary.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">2.2 - Python</p>
+        <p class="prev-next-title"><strong>3.</strong> Markup</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -462,27 +417,6 @@ User Manual</strong> at <a class="reference external" href="https://rivt.info">h
             </div>
             
             
-              
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-<div
-    id="pst-page-navigation-heading-2"
-    class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Sections
-  </div>
-  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#framework-installation">[ 1 ] - Framework Installation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uv-install">[ 2 ] - uv install</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zip-install">[ 3 ] - Zip install</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#system-install">[ 4 ] - System install</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>

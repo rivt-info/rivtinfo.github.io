@@ -155,7 +155,7 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dv02-install/install.html">
+  <a class="nav-link nav-internal" href="../dv02-install/dv02-summary.html">
     2. Installation
   </a>
 </li>
@@ -262,7 +262,7 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dv02-install/install.html">
+  <a class="nav-link nav-internal" href="../dv02-install/dv02-summary.html">
     2. Installation
   </a>
 </li>
@@ -320,7 +320,7 @@
 <li class="toctree-l1"><a class="reference internal" href="tagsb.html">3.3 Block Tags</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">3.4 Commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quick.html">3.5 Quick Look-up</a></li>
-<li class="toctree-l1"><a class="reference internal" href="example1.html"><strong>3.6</strong> Example 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/example1.html">Example 1</a></li>
 </ul>
 </div>
 </nav></div>
@@ -385,9 +385,9 @@
 <h1>3.4 Commands<a class="headerlink" href="#commands" title="Link to this heading">#</a></h1>
 <p><em>rivt commands</em> read and write external files and assign values to
 variables. They typically start in the first column with double vertical bars
-followed by the command name, the relative file path and parameters.There are
-two exceptions to this pattern - the assignment (=) and definition (:=)
-commands are used to evaluate equations.</p>
+followed by the command name, the relative file path and parameters.</p>
+<p>There are two exceptions to this pattern - the assignment ( = ) and definition
+( := ) commands which are used to evaluate equations.</p>
 <p>In the syntax description below parameter options are separated with
 semi-colons and elements by commas. File locations are specified using paths
 relative to the rivt file location. Using the standard folder structure is
@@ -440,8 +440,8 @@ output scope.</p>
 </ul>
 </aside>
 </section>
-<section id="img2-read-and-insert-image">
-<h2>|| IMG2 | :  read and insert image<a class="headerlink" href="#img2-read-and-insert-image" title="Link to this heading">#</a></h2>
+<section id="img2-read-and-insert-image-side-by-side">
+<h2>|| IMG2 | :  read and insert image side by side<a class="headerlink" href="#img2-read-and-insert-image-side-by-side" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">|| IMG2 | relative path | cap1 _[F], cap2 _[F], sca1, sca2</p>
 <ul class="simple">
@@ -451,34 +451,23 @@ output scope.</p>
 </ul>
 </aside>
 </section>
-<section id="values-read-and-insert-image">
-<h2>|| VALUES | :  read and insert image<a class="headerlink" href="#values-read-and-insert-image" title="Link to this heading">#</a></h2>
+<section id="text-read-and-text-file">
+<h2>|| TEXT | :  read and text file<a class="headerlink" href="#text-read-and-text-file" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">|| IMG2 | relative path | title _[V], [rows]</p>
-<ul class="simple">
-<li><p>reads values.txt file</p></li>
-<li><p>rv.I, rv.V</p></li>
-<li><p>PDF, HTML</p></li>
-</ul>
-</aside>
-</section>
-<section id="table-read-and-insert-image">
-<h2>|| TABLE | :  read and insert image<a class="headerlink" href="#table-read-and-insert-image" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">|| IMG2 | relative path | title _[T], col w, l;c;r, [r]</p>
-<ul class="simple">
-<li><p>reads CSV, TEXT and EXCEL files (.csv, .txt, xlsx)</p></li>
-<li><p>rv.I, rv.V</p></li>
-<li><p>PDF, HTML</p></li>
-</ul>
-</aside>
-</section>
-<section id="text-read-and-insert-image">
-<h2>|| TEXT | :  read and insert image<a class="headerlink" href="#text-read-and-insert-image" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">|| IMG2 | relative path | _[[block tag]]</p>
+<p class="topic-title">|| text | relative path | _[[block tag]]</p>
 <ul class="simple">
 <li><p>reads TEXT and TEX files (.txt, .tex)</p></li>
+<li><p>rv.I, rv.V</p></li>
+<li><p>PDF, HTML</p></li>
+</ul>
+</aside>
+</section>
+<section id="values-read-and-evaluate-values">
+<h2>|| VALUES | :  read and evaluate values<a class="headerlink" href="#values-read-and-evaluate-values" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">|| VALUES | relative path | title _[V], [rows]</p>
+<ul class="simple">
+<li><p>reads values.txt file</p></li>
 <li><p>rv.I, rv.V</p></li>
 <li><p>PDF, HTML</p></li>
 </ul>
@@ -498,9 +487,9 @@ output scope.</p>
 <section id="define-equation">
 <h2>:=  :  define equation<a class="headerlink" href="#define-equation" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">a := b * 10 | unit1, unit2 | var-deci, eq-deci</p>
+<p class="topic-title">b := a * 10 | unit1, unit2 | var-deci, eq-deci</p>
 <ul class="simple">
-<li><p>defines variable in terms of expression</p></li>
+<li><p>defines a variable in terms of expression</p></li>
 <li><p>rv.V</p></li>
 <li><p>PDF, HTML</p></li>
 </ul>
@@ -559,10 +548,9 @@ output scope.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#append-append-a-pdf-file">|| APPEND | :  append a PDF file</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#doc-write-a-doc-file">|| DOC | :  write a doc file</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img-read-and-insert-image-file">|| IMG | :  read and insert image file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img2-read-and-insert-image">|| IMG2 | :  read and insert image</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#values-read-and-insert-image">|| VALUES | :  read and insert image</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-read-and-insert-image">|| TABLE | :  read and insert image</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-read-and-insert-image">|| TEXT | :  read and insert image</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img2-read-and-insert-image-side-by-side">|| IMG2 | :  read and insert image side by side</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-read-and-text-file">|| TEXT | :  read and text file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#values-read-and-evaluate-values">|| VALUES | :  read and evaluate values</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-value">=  :  assign value</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#define-equation">:=  :  define equation</a></li>
 </ul>

@@ -3,9 +3,10 @@
 
 *rivt commands* read and write external files and assign values to
 variables. They typically start in the first column with double vertical bars
-followed by the command name, the relative file path and parameters.There are
-two exceptions to this pattern - the assignment (=) and definition (:=)
-commands are used to evaluate equations.
+followed by the command name, the relative file path and parameters.
+
+There are two exceptions to this pattern - the assignment ( = ) and definition
+( := ) commands which are used to evaluate equations.
 
 In the syntax description below parameter options are separated with
 semi-colons and elements by commas. File locations are specified using paths
@@ -71,8 +72,8 @@ output scope.
     - rv.I, rv.V
     - PDF, HTML
 
-|| IMG2 | :  read and insert image
--------------------------------------------
+|| IMG2 | :  read and insert image side by side
+--------------------------------------------------
 
 .. raw:: html
 
@@ -84,44 +85,32 @@ output scope.
     - rv.I, rv.V
     - PDF, HTML
 
-|| VALUES | :  read and insert image
+|| TEXT | :  read and text file
+------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: || text | relative path | _[[block tag]]
+
+    - reads TEXT and TEX files (.txt, .tex)
+    - rv.I, rv.V
+    - PDF, HTML
+
+|| VALUES | :  read and evaluate values
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: || IMG2 | relative path | title _[V], [rows]
+.. topic:: || VALUES | relative path | title _[V], [rows]
 
     - reads values.txt file
     - rv.I, rv.V
     - PDF, HTML
 
-|| TABLE | :  read and insert image
--------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: || IMG2 | relative path | title _[T], col w, l;c;r, [r]
-
-    - reads CSV, TEXT and EXCEL files (.csv, .txt, xlsx)
-    - rv.I, rv.V
-    - PDF, HTML
-
-|| TEXT | :  read and insert image
--------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: || IMG2 | relative path | _[[block tag]]
-
-    - reads TEXT and TEX files (.txt, .tex)
-    - rv.I, rv.V
-    - PDF, HTML
 
 =  :  assign value
 -------------------------------------------
@@ -143,9 +132,9 @@ output scope.
 
     <hr>
 
-.. topic:: a := b * 10 | unit1, unit2 | var-deci, eq-deci  
+.. topic:: b := a * 10 | unit1, unit2 | var-deci, eq-deci  
 
-    - defines variable in terms of expression
+    - defines a variable in terms of expression
     - rv.V
     - PDF, HTML
 

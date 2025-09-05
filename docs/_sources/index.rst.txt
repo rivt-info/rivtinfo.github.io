@@ -19,7 +19,7 @@ Document input is :doc:`rivt markup <dv03-markup/syntax>` within a Python file
 Output is formatted as utf8-text, HTML or PDF documents. This site is an
 example of an HTML **rivt** report.
 
-The rivt framework is described in :doc:`Installation <dv02-install/methods>`.
+The rivt framework is described in :doc:`Installation <dv02-install/dv02-summary>`.
 
 This is a small rivt example.
 
@@ -35,7 +35,7 @@ You can search for rivt files on GitHub here.
     :caption: Divisions
 
     dv01-intro/intro.rst
-    dv02-install/install.rst
+    dv02-install/dv02-summary.rst
     dv03-markup/dv03-summary.rst
     dv04-reports/reports.rst
     dv05-collab/collab.rst

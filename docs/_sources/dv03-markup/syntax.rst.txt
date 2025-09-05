@@ -1,12 +1,13 @@
 3.1 Syntax
 ================
 
-[01] Header 
---------------
+**[01]** Header 
+------------------
 
 The first line of a *rivt-string* is a header containing a *section label* and
-two control *parameters*. The *section label* is the title for a new section. When
-preceeded by two dashes (--) the section is merged with the prior section.
+two *parameters*. The *section label* is the title for the new section. When
+preceeded by two dashes (--) the section output is merged with the prior
+section output without starting a new *doc section*.
   
 .. code-block:: python
 
@@ -17,9 +18,14 @@ preceeded by two dashes (--) the section is merged with the prior section.
         
         """)
 
-The *parameters* specifiy whether the *section content* is output to *docs*,
-and whether the section is written to a *public file*. The paramters only
-need to be specified when different from the defaults.
+The *parameters* are separated from the *section label* by a vertical bar
+specify 
+
+- whether the *section content* is output to *docs*
+- whether the section is written to a *public file* 
+  
+The parameters only need to be specified when different from the defaults shown
+below.
 
 ============= ============================
 API function    default header parameters       
@@ -34,8 +40,8 @@ rv.Q             noprint, private
 ============= ============================
 
 
-[02] Section Content
-----------------------
+**[02]** Section Content
+-----------------------------
 
 Section content is indented four spaces (for legibility and code folding) and
 includes *commands* for file operations and *tags* for text formatting. Any

@@ -155,7 +155,7 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dv02-install/install.html">
+  <a class="nav-link nav-internal" href="../dv02-install/dv02-summary.html">
     2. Installation
   </a>
 </li>
@@ -262,7 +262,7 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dv02-install/install.html">
+  <a class="nav-link nav-internal" href="../dv02-install/dv02-summary.html">
     2. Installation
   </a>
 </li>
@@ -320,7 +320,7 @@
 <li class="toctree-l1"><a class="reference internal" href="tagsb.html">3.3 Block Tags</a></li>
 <li class="toctree-l1"><a class="reference internal" href="commands.html">3.4 Commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quick.html">3.5 Quick Look-up</a></li>
-<li class="toctree-l1"><a class="reference internal" href="example1.html"><strong>3.6</strong> Example 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/example1.html">Example 1</a></li>
 </ul>
 </div>
 </nav></div>
@@ -384,10 +384,11 @@
   <section id="syntax">
 <h1>3.1 Syntax<a class="headerlink" href="#syntax" title="Link to this heading">#</a></h1>
 <section id="header">
-<h2>[01] Header<a class="headerlink" href="#header" title="Link to this heading">#</a></h2>
+<h2><strong>[01]</strong> Header<a class="headerlink" href="#header" title="Link to this heading">#</a></h2>
 <p>The first line of a <em>rivt-string</em> is a header containing a <em>section label</em> and
-two control <em>parameters</em>. The <em>section label</em> is the title for a new section. When
-preceeded by two dashes (–) the section is merged with the prior section.</p>
+two <em>parameters</em>. The <em>section label</em> is the title for the new section. When
+preceeded by two dashes (–) the section output is merged with the prior
+section output without starting a new <em>doc section</em>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | print; noprint, public; private</span>
 
 <span class="s2">    section content</span>
@@ -396,9 +397,14 @@ preceeded by two dashes (–) the section is merged with the prior section.</p>
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The <em>parameters</em> specifiy whether the <em>section content</em> is output to <em>docs</em>,
-and whether the section is written to a <em>public file</em>. The paramters only
-need to be specified when different from the defaults.</p>
+<p>The <em>parameters</em> are separated from the <em>section label</em> by a vertical bar
+specify</p>
+<ul class="simple">
+<li><p>whether the <em>section content</em> is output to <em>docs</em></p></li>
+<li><p>whether the section is written to a <em>public file</em></p></li>
+</ul>
+<p>The parameters only need to be specified when different from the defaults shown
+below.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>API function</p></th>
@@ -432,7 +438,7 @@ need to be specified when different from the defaults.</p>
 </div>
 </section>
 <section id="section-content">
-<h2>[02] Section Content<a class="headerlink" href="#section-content" title="Link to this heading">#</a></h2>
+<h2><strong>[02]</strong> Section Content<a class="headerlink" href="#section-content" title="Link to this heading">#</a></h2>
 <p>Section content is indented four spaces (for legibility and code folding) and
 includes <em>commands</em> for file operations and <em>tags</em> for text formatting. Any
 text not defined by <em>commands</em> or <em>tags</em> is passed through unchanged to
@@ -517,8 +523,8 @@ with * for italics and ** for bold.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#header">[01] Header</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-content">[02] Section Content</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#header"><strong>[01]</strong> Header</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-content"><strong>[02]</strong> Section Content</a></li>
 </ul>
   </nav></div>
 

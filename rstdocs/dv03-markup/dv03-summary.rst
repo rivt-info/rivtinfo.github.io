@@ -1,9 +1,21 @@
 **3.** Markup
 ==================
 
-The basic syntax of a *rivt string* is a string of utf-8 characters preceded by
-a header. The *rivt string* is enclosed within one of 7 API functions that
-start in column one. Each function may also define a *doc section*. 
+The basic syntax of a *rivt string* is utf-8 text preceded by
+a header. 
+
+  
+.. code-block:: python
+
+    rv._("""Section Label | print; noprint, public; private
+
+        section content (utf-8 text)
+        ...
+        
+        """)
+
+A *rivt string* is the argument to each of the 7 API functions. Each function
+starts in column one and may define a *doc section*.
 
 =============== =============== ===================================
 API              Name             Purpose
@@ -32,4 +44,4 @@ commands in a *rivt string*.
     tagsb.rst
     commands.rst
     quick.rst
-    example1.rst
+    examples/example1.rst

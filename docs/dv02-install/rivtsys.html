@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="../_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="../_static/favicon-32x32.png" type="image/png">
-    <title>3.6 Example 1 &#8212; rivt.info 0.3.0 documentation</title>
+    <title>2.1 rivt-sys installation &#8212; rivt.info 0.3.0 documentation</title>
   
   
   
@@ -56,11 +56,11 @@
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'dv03-markup/example1';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'dv02-install/rivtsys';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="4. Reports" href="../dv04-reports/reports.html" />
-    <link rel="prev" title="3.5 Quick Look-up" href="quick.html" />
+    <link rel="next" title="rivt-uv" href="rivtuv.html" />
+    <link rel="prev" title="rivt-zip" href="rivtzip.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -154,15 +154,15 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dv02-install/install.html">
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="dv02-summary.html">
     2. Installation
   </a>
 </li>
 
 
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="dv03-summary.html">
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../dv03-markup/dv03-summary.html">
     3. Markup
   </a>
 </li>
@@ -224,6 +224,10 @@
   
 
   
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="Sections">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
 </div>
 
     </header>
@@ -257,15 +261,15 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dv02-install/install.html">
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="dv02-summary.html">
     2. Installation
   </a>
 </li>
 
 
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="dv03-summary.html">
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../dv03-markup/dv03-summary.html">
     3. Markup
   </a>
 </li>
@@ -311,12 +315,11 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="syntax.html">3.1 Syntax</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tagsl.html">3.2 Line Tags</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tagsb.html">3.3 Block Tags</a></li>
-<li class="toctree-l1"><a class="reference internal" href="commands.html">3.4 Commands</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quick.html">3.5 Quick Look-up</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>3.6</strong> Example 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python.html">2.2 - Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vscode.html">2.3 - VSCode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rivtzip.html">rivt-zip</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">2.1 rivt-sys installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rivtuv.html">rivt-uv</a></li>
 </ul>
 </div>
 </nav></div>
@@ -358,9 +361,9 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="dv03-summary.html" class="nav-link"><strong>3.</strong> Markup</a></li>
+    <li class="breadcrumb-item"><a href="dv02-summary.html" class="nav-link">2. Installation</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>3.6</strong> Example 1</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">2.1 rivt-sys installation</span></li>
   </ul>
 </nav>
 </div>
@@ -377,111 +380,21 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="example-1">
-<h1><strong>3.6</strong> Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h1>
-<p>simple example - div 03</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rivtapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
-
-<span class="n">rv</span><span class="o">.</span><span class="n">R</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Run function | pass; redact | nocolor; color code</span>
-
-<span class="s2">    The Run function processes shell commands.</span>
-
-<span class="s2">    Each API function defines a new document section. The first line is a</span>
-<span class="s2">    heading line which includes the section heading, a parameter for redacting</span>
-<span class="s2">    sections in a mirror file intended for public sharing, and a parameter for</span>
-<span class="s2">    the background color for the section. If the section heading is preceded by</span>
-<span class="s2">    two dashes (--) the section is continued from the prior section without</span>
-<span class="s2">    introducting a new number.</span>
-
-<span class="s2">    File formatting follows pep8 and ruff. API functions start in column one.</span>
-<span class="s2">    All other lines are indented 4 spaces to facilitate section folding,</span>
-<span class="s2">    bookmarks and legibility.</span>
-
-<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
-
-<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Insert function | pass; redact | nocolor</span>
-
-<span class="s2">    The Insert function formats static objects including images, tables,</span>
-<span class="s2">    equations and text.</span>
-
-<span class="s2">    ||text | data01/describe.txt | rivt</span>
-
-<span class="s2">    The table command inserts and formats tabular data from csv or xls files.</span>
-<span class="s2">    The _[t] tag formats and autonumbers table titles.</span>
-
-<span class="s2">    A table title  _[t]</span>
-<span class="s2">    || table | data/file.csv | 60,r</span>
-
-<span class="s2">    The image command inserts and formats image data from png or jpg files. The</span>
-<span class="s2">    _[f] tag formats and autonumbers figures.</span>
-
-<span class="s2">    A figure caption _[f]</span>
-<span class="s2">    || image | data/f1.png | 50</span>
-
-<span class="s2">    Two images may be placed side by side as follows:</span>
-
-<span class="s2">    The first figure caption  _[f]</span>
-<span class="s2">    The second figure caption  _[f]</span>
-<span class="s2">    || image | private/image/f2.png, private/image/f3.png | 45,35</span>
-
-<span class="s2">    The tags _[x] and _[s] format LaTeX and sympy equations:</span>
-
-<span class="s2">    \gamma = </span><span class="se">\f</span><span class="s2">rac</span><span class="si">{5}</span><span class="s2">{x+y} + 3  _[x]</span>
-
-<span class="s2">    x = 32 + (y/2)  _[s]</span>
-
-<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
-
-<span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Values function |  pass; redact | nocolor</span>
-
-<span class="s2">    The Values fucntion evaluates variables and equations.</span>
-
-<span class="s2">    The equal tag declares a value. A sequence of declared values terminated</span>
-<span class="s2">    with a blank line is formatted as a table.</span>
-
-<span class="s2">    Example of assignment list _[t]</span>
-<span class="s2">    f1 = 10.1 * LBF |LBF, N| a force value</span>
-<span class="s2">    d1 = 12.1 * IN  |IN, CM| a length value</span>
-
-<span class="s2">    An equation tag provides an equation description and number. A colon-equal</span>
-<span class="s2">    tag assigns a value and specifies the result units and the output decimal</span>
-<span class="s2">    places printed in the result and equation.</span>
-
-<span class="s2">    Example equation - Area of circle  _[e]</span>
-<span class="s2">    a1 := 3.14(d1/2)^2 | IN^2, CM^2 | 1,2</span>
-
-<span class="s2">    || declare | data01/values02.csv</span>
-
-<span class="s2">    The declare command imports values from the csv file written by rivt when</span>
-<span class="s2">    processing values in other documents.</span>
-
-<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
-
-<span class="n">rv</span><span class="o">.</span><span class="n">T</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Tools function | pass; redact | nocolor</span>
-
-<span class="s2">    The Tools function processes Python code.</span>
-
-<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
-
-
-<span class="n">rv</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Any text</span>
-
-<span class="s2">    Changing a function to X skips evaluation of that function. Its purposes</span>
-<span class="s2">    include review commenting and debugging.</span>
-
-<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
-
-<span class="n">rv</span><span class="o">.</span><span class="n">D</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Doc function | pass; redact | nocolor</span>
-
-<span class="s2">    The Write function generates docs and reports.</span>
-
-<span class="s2">    | docs |</span>
-
-<span class="s2">    | report |</span>
-
-<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
+  <section id="rivt-sys-installation">
+<h1>2.1 rivt-sys installation<a class="headerlink" href="#rivt-sys-installation" title="Link to this heading">#</a></h1>
+<p><em>rivt-sys</em> is a user controlled installation of the <em>rivt framework</em>.</p>
+<section id="rivt-sys-required">
+<h2>[01] rivt-sys - required<a class="headerlink" href="#rivt-sys-required" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Install <a class="reference external" href="https://www.python.org">Python</a></p></li>
+<li><p>pip install rivtlib</p></li>
+<li><p>Install <a class="reference external" href="https://code.visualstudio.com/">VSCode</a></p></li>
+<li><p>Download and install the VSCode-rivt extension list</p></li>
+</ol>
+</section>
+<section id="rivt-sys-optional">
+<h2>[02] rivt-sys - optional<a class="headerlink" href="#rivt-sys-optional" title="Link to this heading">#</a></h2>
+</section>
 </section>
 
 
@@ -495,20 +408,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="quick.html"
+       href="rivtzip.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">3.5 Quick Look-up</p>
+        <p class="prev-next-title">rivt-zip</p>
       </div>
     </a>
     <a class="right-next"
-       href="../dv04-reports/reports.html"
+       href="rivtuv.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">4. Reports</p>
+        <p class="prev-next-title">rivt-uv</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -518,6 +431,25 @@
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Sections
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-sys-required">[01] rivt-sys - required</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-sys-optional">[02] rivt-sys - optional</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
