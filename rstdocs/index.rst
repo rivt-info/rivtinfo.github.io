@@ -4,7 +4,8 @@
     :scale: 20 %
     :align: center
     :alt: rivt logo
-
+    
+    rivt
 
 **rivt** is an open source framework for writing and distributing engineering
 documents. 
@@ -18,10 +19,10 @@ report.
 
 The rivt framework is described in :doc:`Installation <dv02-install/methods>`.
 
-This ... is a small rivt file example and PDF doc output.
+This is a small rivt example.
 
+You can search for rivt files on GitHub here.
 
-**Divisions**
 
 .. raw:: html
 
@@ -29,6 +30,7 @@ This ... is a small rivt file example and PDF doc output.
 
 .. toctree::
     :maxdepth: 1
+    :caption: Divisions
 
     dv01-intro/intro.rst
     dv02-install/install.rst

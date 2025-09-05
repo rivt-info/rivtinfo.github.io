@@ -6,7 +6,7 @@
 
 The basic syntax of a *rivt string* is a string of utf-8 characters preceded by
 a header. The *rivt string* is enclosed within one of 7 API functions that
-start in column one. Each function may also define a *doc* section. 
+start in column one. Each function may also define a *doc section*. 
 
 =============== =============== ===================================
 API              Name             Purpose
@@ -21,8 +21,9 @@ rv.Q(rs)           Quit              Exit rivt
 =============== =============== ===================================
 
 Text that is not a *tag* or *command* is passed to an intermediate .rst file.
-This allows for embedding *restructuredText* commands for formatting PDF and
-HTML docs.
+This facilitates extending *rivt markup* by embedding 
+`restructuredText <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_.
+formatting commands in a *rivt string*.
 
 [02] Header 
 --------------
@@ -41,8 +42,8 @@ preceeded by two dashes (--) the section is merged with the prior section.
         """)
 
 The *parameters* specifiy whether the *section content* is output to *docs*,
-and whether the section is written to a *public rivt file*. The paramters only
-need to be specified where different from the defaults.
+and whether the section is written to a *public file*. The paramters only
+need to be specified when different from the defaults.
 
 ============= ============================
 API function    default header parameters       
@@ -62,8 +63,18 @@ rv.Q             noprint, private
 
 Section content is indented four spaces (for legibility and code folding) and
 includes *commands* for file operations and *tags* for text formatting. Any
-text not defined by commands or tags is passed through as formatted text or 
-`restructuredText <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_.
+text not defined by *commands* or *tags* is passed through unchanged to
+intermediate files for further processing, or formatted to utf-8 *docs*.
+
+
+.. code-block:: python
+
+    rv._("""Section Label | print; noprint, public; private
+
+        section content
+        ...
+        
+        """)
 
 *rivt markup* wraps and extends *restructuredText* and adds two additional
 markup elements - *tags* and *commands* - that simplify improve legiblity and use.
