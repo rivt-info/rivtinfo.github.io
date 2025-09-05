@@ -436,7 +436,8 @@ need to be specified when different from the defaults.</p>
 <p>Section content is indented four spaces (for legibility and code folding) and
 includes <em>commands</em> for file operations and <em>tags</em> for text formatting. Any
 text not defined by <em>commands</em> or <em>tags</em> is passed through unchanged to
-intermediate files for further processing, or formatted to utf-8 <em>docs</em>.</p>
+intermediate files for further PDF and HTML processing, or formatted to a utf-8
+<em>doc</em>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | print; noprint, public; private</span>
 
 <span class="s2">    section content</span>
@@ -445,16 +446,16 @@ intermediate files for further processing, or formatted to utf-8 <em>docs</em>.<
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><em>rivt markup</em> wraps and extends <em>restructuredText</em> and adds two additional
-markup elements - <em>tags</em> and <em>commands</em> - that simplify improve legiblity and use.
-They generate different doc types (text, PDF and HTML) using the same rivt file.</p>
+<p><em>rivt markup</em> wraps and extends <em>restructuredText</em> and adds the additional
+markup elements - <em>tags</em> and <em>commands</em>. They simplify use and improve
+legiblity. For example, the same rivt file can generate  text, PDF or HTML docs.</p>
 <p><strong>Tags</strong></p>
-<p><em>Line tags</em> format a line of text and are denoted with _[<strong>TAG</strong>], typically
-added at the end of the line and</p>
-<p><em>Block tags</em> evaluate a multi-line text block that starts with _[[<strong>TAG</strong>]]
-and ends with _[[<strong>Q</strong>]].</p>
+<p><a class="reference internal" href="tagsl.html"><span class="doc">Line tags</span></a> format a line of text and are denoted
+with _[<strong>TAG</strong>], typically added at the end of the line.</p>
+<p><a class="reference internal" href="tagsb.html"><span class="doc">Block tags</span></a> evaluate a multi-line text block that starts
+with _[[<strong>TAG</strong>]] and ends with _[[<strong>Q</strong>]].</p>
 <p><strong>Commands</strong></p>
-<p><em>Commands</em> read and write files and assign values to variables. They start in the
+<p><a class="reference internal" href="commands.html"><span class="doc">Commands</span></a> read and write files and assign values to variables. They start in the
 first column with double vertical bars, followed by the command name, the
 relative file path and parameters. The exceptions are the assign (=) and define
 (:=) commands, related to equations.</p>

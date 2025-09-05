@@ -40,7 +40,8 @@ rv.Q             noprint, private
 Section content is indented four spaces (for legibility and code folding) and
 includes *commands* for file operations and *tags* for text formatting. Any
 text not defined by *commands* or *tags* is passed through unchanged to
-intermediate files for further processing, or formatted to utf-8 *docs*.
+intermediate files for further PDF and HTML processing, or formatted to a utf-8
+*doc*.
 
 
 .. code-block:: python
@@ -52,21 +53,21 @@ intermediate files for further processing, or formatted to utf-8 *docs*.
         
         """)
 
-*rivt markup* wraps and extends *restructuredText* and adds two additional
-markup elements - *tags* and *commands* - that simplify improve legiblity and use.
-They generate different doc types (text, PDF and HTML) using the same rivt file.
+*rivt markup* wraps and extends *restructuredText* and adds the additional
+markup elements - *tags* and *commands*. They simplify use and improve
+legiblity. For example, the same rivt file can generate  text, PDF or HTML docs.
 
 **Tags**
 
-*Line tags* format a line of text and are denoted with _[**TAG**], typically
-added at the end of the line and
+:doc:`Line tags <tagsl>` format a line of text and are denoted
+with _[**TAG**], typically added at the end of the line.
 
-*Block tags* evaluate a multi-line text block that starts with _[[**TAG**]]
-and ends with _[[**Q**]]. 
+:doc:`Block tags <tagsb>` evaluate a multi-line text block that starts
+with _[[**TAG**]] and ends with _[[**Q**]].
 
 **Commands**
 
-*Commands* read and write files and assign values to variables. They start in the
+:doc:`Commands <commands>` read and write files and assign values to variables. They start in the
 first column with double vertical bars, followed by the command name, the
 relative file path and parameters. The exceptions are the assign (=) and define
 (:=) commands, related to equations.
