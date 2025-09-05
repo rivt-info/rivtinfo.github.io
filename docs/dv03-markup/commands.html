@@ -176,8 +176,8 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dv05-github/github.html">
-    5. Github
+  <a class="nav-link nav-internal" href="../dv05-collab/collab.html">
+    5. Collaboration
   </a>
 </li>
 
@@ -283,8 +283,8 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dv05-github/github.html">
-    5. Github
+  <a class="nav-link nav-internal" href="../dv05-collab/collab.html">
+    5. Collaboration
   </a>
 </li>
 
@@ -383,11 +383,15 @@
                   
   <section id="commands">
 <h1><strong>3.4</strong> Commands<a class="headerlink" href="#commands" title="Link to this heading">#</a></h1>
-<p><em>rivt commands</em> are used to read and write external files and assign values to
+<p><em>rivt commands</em> read and write external files and assign values to
 variables. They typically start in the first column with double vertical bars
 followed by the command name, the relative file path and parameters.There are
 two exceptions to this pattern - the assignment (=) and definition (:=)
 commands are used to evaluate equations.</p>
+<p>In the syntax description below parameter options are separated with
+semi-colons and elements by commas. File locations are specified using paths
+relative to the rivt file location. Using the standard folder structure is
+strongly recommended. Folder organization is described <a class="reference external" href="5-folders.html">here</a>.</p>
 <p>In the syntax description below, parameters are separated by commas and
 parameter options are separated by semi-colons. Commands have a function and
 output scope.</p>
@@ -428,7 +432,7 @@ output scope.</p>
 <section id="img-read-and-insert-image-file">
 <h2>|| IMG | :  read and insert image file<a class="headerlink" href="#img-read-and-insert-image-file" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">|| IMG | relative path | caption, scale,;_[F]</p>
+<p class="topic-title">|| IMG | relative path | caption _[F], scale</p>
 <ul class="simple">
 <li><p>reads PNG and JPEG files (.png, jpg)</p></li>
 <li><p>rv.I, rv.V</p></li>
@@ -439,7 +443,7 @@ output scope.</p>
 <section id="img2-read-and-insert-image">
 <h2>|| IMG2 | :  read and insert image<a class="headerlink" href="#img2-read-and-insert-image" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">|| IMG2 | relative path | cap1, cap2, sca1, sca2,;_[F]</p>
+<p class="topic-title">|| IMG2 | relative path | cap1 _[F], cap2 _[F], sca1, sca2</p>
 <ul class="simple">
 <li><p>reads PNG and JPEG files (.png, jpg)</p></li>
 <li><p>rv.I, rv.V</p></li>
@@ -450,7 +454,7 @@ output scope.</p>
 <section id="values-read-and-insert-image">
 <h2>|| VALUES | :  read and insert image<a class="headerlink" href="#values-read-and-insert-image" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">|| IMG2 | relative path | title, [rows], -;_[V]</p>
+<p class="topic-title">|| IMG2 | relative path | title _[V], [rows]</p>
 <ul class="simple">
 <li><p>reads values.txt file</p></li>
 <li><p>rv.I, rv.V</p></li>
@@ -461,7 +465,7 @@ output scope.</p>
 <section id="table-read-and-insert-image">
 <h2>|| TABLE | :  read and insert image<a class="headerlink" href="#table-read-and-insert-image" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">|| IMG2 | relative path | title, col w, l;c;r, [r], -;_[T]</p>
+<p class="topic-title">|| IMG2 | relative path | title _[T], col w, l;c;r, [r]</p>
 <ul class="simple">
 <li><p>reads CSV, TEXT and EXCEL files (.csv, .txt, xlsx)</p></li>
 <li><p>rv.I, rv.V</p></li>

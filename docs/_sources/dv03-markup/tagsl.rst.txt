@@ -1,8 +1,8 @@
 3.2 Line Tags
 ===================
 
-*rivt line tags* are used to format a line of text and are denoted with
-_[**TAG**], usually at the end of a line. Tags have a function and output scope.
+*line tags* format a line of text and are denoted with _[TAG], usually at the
+end of the line. Tags have a function and output scope.
 
 
 **KEY**  
@@ -80,6 +80,41 @@ _[F] : number, label figure
     rv.I, rv.V
     pdf, html
 
+_[LD] :  doc link 
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *text* _[LD] doc link *text*
+    
+    rv.I, rv.V
+    text, pdf, html
+
+_[LR] :  report link 
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *text* _[LR] report link *text*
+    
+    rv.I, rv.V
+    text, pdf, html
+
+_[LU] :  url link 
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *text* _[LU] url link *text*
+    
+    rv.I, rv.V
+    text, pdf, html
 
 _[P] : new page
 -----------------------------------------
@@ -118,17 +153,6 @@ _[T]  number, label table
     rv.I, rv.V
     text, pdf, html
 
-_[U] :  url link 
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *text* _[U]
-    
-    rv.I, rv.V
-    text, pdf, html
 
 _[V] : number, label values table 
 -----------------------------------------

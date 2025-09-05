@@ -1,11 +1,16 @@
 **3.4** Commands
 ===================
 
-*rivt commands* are used to read and write external files and assign values to
+*rivt commands* read and write external files and assign values to
 variables. They typically start in the first column with double vertical bars
 followed by the command name, the relative file path and parameters.There are
 two exceptions to this pattern - the assignment (=) and definition (:=)
 commands are used to evaluate equations.
+
+In the syntax description below parameter options are separated with
+semi-colons and elements by commas. File locations are specified using paths
+relative to the rivt file location. Using the standard folder structure is
+strongly recommended. Folder organization is described `here <5-folders.html>`_.
 
 In the syntax description below, parameters are separated by commas and
 parameter options are separated by semi-colons. Commands have a function and
@@ -60,7 +65,7 @@ output scope.
 
     <hr>
 
-.. topic:: || IMG | relative path | caption, scale,;_[F]
+.. topic:: || IMG | relative path | caption _[F], scale
 
     - reads PNG and JPEG files (.png, jpg)
     - rv.I, rv.V
@@ -73,7 +78,7 @@ output scope.
 
     <hr>
 
-.. topic:: || IMG2 | relative path | cap1, cap2, sca1, sca2,;_[F] 
+.. topic:: || IMG2 | relative path | cap1 _[F], cap2 _[F], sca1, sca2 
 
     - reads PNG and JPEG files (.png, jpg)
     - rv.I, rv.V
@@ -86,7 +91,7 @@ output scope.
 
     <hr>
 
-.. topic:: || IMG2 | relative path | title, [rows], -;_[V] 
+.. topic:: || IMG2 | relative path | title _[V], [rows]
 
     - reads values.txt file
     - rv.I, rv.V
@@ -99,7 +104,7 @@ output scope.
 
     <hr>
 
-.. topic:: || IMG2 | relative path | title, col w, l;c;r, [r], -;_[T]
+.. topic:: || IMG2 | relative path | title _[T], col w, l;c;r, [r]
 
     - reads CSV, TEXT and EXCEL files (.csv, .txt, xlsx)
     - rv.I, rv.V

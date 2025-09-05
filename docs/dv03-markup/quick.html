@@ -176,8 +176,8 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dv05-github/github.html">
-    5. Github
+  <a class="nav-link nav-internal" href="../dv05-collab/collab.html">
+    5. Collaboration
   </a>
 </li>
 
@@ -279,8 +279,8 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dv05-github/github.html">
-    5. Github
+  <a class="nav-link nav-internal" href="../dv05-collab/collab.html">
+    5. Collaboration
   </a>
 </li>
 
@@ -382,57 +382,46 @@
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Scope</p></th>
-<th class="head"><p>Read Commands</p></th>
+<th class="head"><p>Commands</p></th>
 <th class="head"><p>File Types</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>rv.V</p></td>
-<td><p><strong>|VALUES|</strong> rel. pth | title, [rows], -;_[V]</p></td>
-<td><p>.csv</p></td>
+<tr class="row-even"><td><p>rv.D</p></td>
+<td><p>||APPEND| rel. pth | num; nonum</p></td>
+<td><p>pdf,html,txt</p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.I, rv.V</p></td>
-<td><p><strong>|IMG|</strong> rel. pth | caption, scale, -;_[F]</p></td>
-<td><p>.png,.jpg</p></td>
+<tr class="row-odd"><td><p>rv.D</p></td>
+<td><p>||DOC| rel. pth | pdf; txt; html; pdf2</p></td>
+<td><p>pdf, html,txt</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I, rv.V</p></td>
-<td><p><strong>|IMG2|</strong> rel. pth | c1, c2, s1, s2, -;_[F]</p></td>
-<td><p>.png,.jpg</p></td>
+<td><p>|| IMG | rel. pth | caption _[F], scale</p></td>
+<td><p>png,.jpg</p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p><strong>|TABLE|</strong> rel. pth | title, col w, l;c;r, [r], -;_[T]</p></td>
-<td><p>.csv,.txt,.xlsx</p></td>
+<tr class="row-odd"><td><p>rv.I, rv.V</p></td>
+<td><p>|| IMG2 | rel. pth | c1 _[F], c2 _[F], s1, s2</p></td>
+<td><p>png,.jpg</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I</p></td>
-<td><p><strong>|TEXT|</strong> rel. pth | [[block tag]]</p></td>
-<td><p>.txt,.tex</p></td>
+<td><p>|| TABLE | rel. pth | title _[T], width, l;c;r, [r]</p></td>
+<td><p>csv,txt,xlsx</p></td>
 </tr>
-</tbody>
-</table>
-</div>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Scope</p></th>
-<th class="head"><p>Write Commands</p></th>
-<th class="head"><p>Notes</p></th>
+<tr class="row-odd"><td><p>rv.I</p></td>
+<td><p>||TEXT| rel. pth | _[[block tag]]</p></td>
+<td><p>txt,tex</p></td>
 </tr>
-</thead>
-<tbody>
 <tr class="row-even"><td><p>rv.V</p></td>
-<td><p>a := 1+1 | reference | units | decimals</p></td>
-<td><p>:= a command tag</p></td>
+<td><p>|| VALUES | rel. pth | title _[V], [rows]</p></td>
+<td><p>csv</p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.W</p></td>
-<td><p><strong>||DOC|</strong> rel. pth | pdf; txt; html; pdf2</p></td>
-<td><p>pdf2 uses rst2pdf</p></td>
+<tr class="row-odd"><td><p>rv.V</p></td>
+<td><p>a = 1 + 1 | units | description</p></td>
+<td><p>assign value</p></td>
 </tr>
-<tr class="row-even"><td><p>rv.W</p></td>
-<td><p><strong>||REPORT|</strong> rel. pth | pdf; txt; html; pdf2</p></td>
-<td><p>pdf uses latex</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.W</p></td>
-<td><p><strong>||APPEND|</strong> rel. pth | num; nonum</p></td>
-<td><p>.pdf,.txt</p></td>
+<tr class="row-even"><td><p>rv.V</p></td>
+<td><p>b := a + 3 | units | decimals</p></td>
+<td><p>define value</p></td>
 </tr>
 </tbody>
 </table>
@@ -441,101 +430,113 @@
 <thead>
 <tr class="row-odd"><th class="head"><p>Scope</p></th>
 <th class="head"><p>Line Tags</p></th>
-<th class="head"><p>Description</p></th>
+<th class="head"><p>Description (doc scope)</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>rv.V</p></td>
-<td><p>label <strong>_[V]</strong></p></td>
-<td><p>autonumber values table [1]</p></td>
+<tr class="row-even"><td><p>rv.I, rv.V</p></td>
+<td><p><em>text</em> _[B]</p></td>
+<td><p>center bold text (pdf, html)</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I, rv.V</p></td>
-<td><p>caption <strong>_[F]</strong></p></td>
-<td><p>autonumber image [1]</p></td>
+<td><p><em>text</em> _[C]</p></td>
+<td><p>center text (all)</p></td>
 </tr>
-<tr class="row-even"><td><p>rv.I, rv.V</p></td>
-<td><p>label <strong>_[E]</strong></p></td>
-<td><p>autonumber equation</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I, rv.V</p></td>
-<td><p>text <strong>_[C]</strong></p></td>
-<td><p>center text</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I, rv.V</p></td>
-<td><p>text <strong>_[B]</strong></p></td>
-<td><p>center bold text (pdf, pdf2, html)</p></td>
+<tr class="row-even"><td><p>rv.I</p></td>
+<td><p><em>description</em> _[D]</p></td>
+<td><p>footnote description (all)</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I, rv.V</p></td>
-<td><p><strong>_[P]</strong></p></td>
-<td><p>new page</p></td>
+<td><p><em>label</em> _[E]</p></td>
+<td><p>equation label (all)</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I, rv.V</p></td>
+<td><p><em>caption</em> _[F]</p></td>
+<td><p>autonumber image (all) [1]</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.I</p></td>
+<td><p>text _[LD] <em>doc link</em></p></td>
+<td><p>doc link (all)</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.I</p></td>
+<td><p>text _[LR] <em>report link</em></p></td>
+<td><p>report link (all)</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.I</p></td>
+<td><p>text _[LU] <em>url</em></p></td>
+<td><p>url link (all)</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.I, rv.V</p></td>
+<td><p>_[P]</p></td>
+<td><p>new page (all)</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.I</p></td>
+<td><p><em>equation</em> _[S]</p></td>
+<td><p>format symbol math (all)</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.I</p></td>
+<td><p><em>title</em> _[T]</p></td>
+<td><p>table label (all) [1]</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.V</p></td>
+<td><p><em>label</em> _[V]</p></td>
+<td><p>values table label (all) [1]</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.I</p></td>
+<td><p>text _[#] text</p></td>
+<td><p>footnote (all)</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.I, rv.V</p></td>
 <td></td>
-<td><p>horizontal line (4 or more - )</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>title <strong>_[T]</strong></p></td>
-<td><p>autonumber table [1]</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p>equation <strong>_[S]</strong></p></td>
-<td><p>format symbol math</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>text <strong>_[#]</strong></p></td>
-<td><p>autonumber footnote</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p>descrip <strong>_[D]</strong></p></td>
-<td><p>footnote description</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>url, label <strong>_[U]</strong></p></td>
-<td><p>url link (pdf, pdf2, html)</p></td>
+<td><p>horizontal line (5 or more -)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>[1] tags may be added to the command as a parameter</p>
+<p>[1] tag may be added to the command parameter</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Scope</p></th>
 <th class="head"><p>Block Tags</p></th>
-<th class="head"><p>Description</p></th>
+<th class="head"><p>Description (doc scope)</p></th>
 </tr>
 </thead>
 <tbody>
+<tr class="row-even"><td><p>rv.I</p></td>
+<td><p>_[[B]]</p></td>
+<td><p>bold (pdf, html)</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.I, rv.</p></td>
+<td><p>_[[C]] <em>lang</em></p></td>
+<td><p>code, literal (all)</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.I</p></td>
+<td><p>_[[I]]</p></td>
+<td><p>indent italic (pdf, html)</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.I</p></td>
+<td><p>_[[L]]</p></td>
+<td><p>latex (pdf, html)</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.I, rv.V</p></td>
+<td><p>_[[S]]</p></td>
+<td><p>indent (all)</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.I</p></td>
+<td><p>_[[O]]</p></td>
+<td><p>italic, oblique (pdf, html)</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.I, rv.V</p></td>
+<td><p>_[[Q]]</p></td>
+<td><p>quit (all)</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.I, rv.V</p></td>
+<td><p>_[[T]]</p></td>
+<td><p>topic (all)</p></td>
+</tr>
 <tr class="row-even"><td><p>rv.V</p></td>
-<td><p><strong>_[[V]]</strong></p></td>
-<td><p>values format block, autonumber</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I rv.V</p></td>
-<td><p><strong>_[[Q]]</strong></p></td>
-<td><p>end block</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p><strong>_[[S]]</strong></p></td>
-<td><p>indent block</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p><strong>_[[C]]</strong></p></td>
-<td><p>code (literal) block</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p><strong>_[[L]]</strong></p></td>
-<td><p>latex block (lpdf, html)</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p><strong>_[[O]]</strong></p></td>
-<td><p>italic (oblique) block (lpdf, html)</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p><strong>_[[B]]</strong></p></td>
-<td><p>bold block  (lpdf, html)</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p><strong>_[[I]]</strong></p></td>
-<td><p>indent italic block (lpdf, html)</p></td>
+<td><p>_[[V]] <em>title</em></p></td>
+<td><p>values label (all)</p></td>
 </tr>
 </tbody>
 </table>

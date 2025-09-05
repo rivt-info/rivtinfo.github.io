@@ -1,5 +1,5 @@
-5. Github
-=============== 
+5. Collaboration
+=================== 
 
 .. include:: ./dv05-summary.rst
 

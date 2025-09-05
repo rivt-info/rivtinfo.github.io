@@ -1,7 +1,7 @@
 **3.3** Block Tags
 ===================
 
-**Block** tags format a block of text and are denoted with _[[TAG]] on the
+**Block** tags format a block of text that begin with _[[TAG]] on the
 first line and end with _[[Q]] after the last line. Tags have a function
 and output scope.
 
@@ -15,7 +15,7 @@ _[[TAG]] : description
 
     <hr>
 
-.. topic:: first line - block syntax 
+.. topic:: start block syntax 
 
     block example
 

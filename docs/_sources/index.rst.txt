@@ -30,14 +30,5 @@ This ... is a small rivt file example and PDF doc output.
     dv02-install/install.rst
     dv03-markup/markup.rst
     dv04-reports/reports.rst
-    dv05-github/github.rst
-
-
-
-
-
-
-
-
-
+    dv05-collab/collab.rst
 
