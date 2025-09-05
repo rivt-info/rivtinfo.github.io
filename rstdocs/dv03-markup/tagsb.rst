@@ -1,4 +1,4 @@
-**3.3** Block Tags
+3.3 Block Tags
 ===================
 
 **Block** tags format a block of text that begin with _[[TAG]] on the

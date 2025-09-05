@@ -1,4 +1,4 @@
-**3.4** Commands
+3.4 Commands
 ===================
 
 *rivt commands* read and write external files and assign values to

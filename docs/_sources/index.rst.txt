@@ -21,10 +21,14 @@ The rivt framework is described in :doc:`Installation <dv02-install/methods>`.
 This ... is a small rivt file example and PDF doc output.
 
 
+**Divisions**
+
+.. raw:: html
+
+    <hr>
 
 .. toctree::
     :maxdepth: 1
-    :hidden:
 
     dv01-intro/intro.rst
     dv02-install/install.rst

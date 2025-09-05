@@ -1,4 +1,4 @@
-**3.5** Quick Look-up
+3.5 Quick Look-up
 =======================
 
 
