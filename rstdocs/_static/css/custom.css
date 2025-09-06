@@ -12,13 +12,18 @@ html {
     --pst-font-weight-heading: normal;
     --pst-font-weight-base: normal;
     --pst-font-size-base: 16px;
-    --pst-font-size-h1: 17px;
+    --pst-font-size-h1: 16px;
     --pst-font-size-h2: 16px;
     --pst-font-size-h3: 14px;
     --pst-font-size-h4: 14px;
     --pst-font-size-h5: 14px;
     --pst-font-size-h6: 14px;
 
+}
+
+.topic-title {
+    font-size: 14px;
+    font-weight: normal;
 }
 
 .toctree-l1>a {
@@ -101,9 +106,4 @@ hr {
     background-color: hwb(200 15% 27%);
     /* Example: red color */
     border: none;
-}
-
-.topic-title {
-    font-size: .9em;
-    font-weight: normal;
 }
