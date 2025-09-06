@@ -13,14 +13,14 @@
 **rivt** is an open source Python program for writing and distributing
 engineering documents.
 
-Documents are written with :doc:`rivt markup <dv03-markup/syntax>` inside a
-Python file (.py) - referred to as a *rivt file*.
+Documents are written in :doc:`rivt markup <dv03-markup/syntax>` inside a
+Python file (.py), referred to as a *rivt file*.
 
 Output documents (*docs*) are formatted text, HTML or PDF files - all written
-from the same *rivt file*. This site is an example of an HTML **rivt** report.
+from the same *rivt file*. This site is an example of an HTML *rivt report*.
 
 For improved productivity, **rivt** is designed to work in an open source
-framework - described :doc:`here <dv02-install/dv02-summary>`.
+framework described :doc:`here <dv02-install/dv02-summary>`.
 
 :doc:`This </dv01-intro/smallex>` is a small **rivt** example.
 
