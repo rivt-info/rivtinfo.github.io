@@ -21,6 +21,11 @@ html {
 
 }
 
+div.admonition {
+    font-size: 0.9em;
+}
+
+
 .topic-title {
     font-size: 14px;
     font-weight: normal;
