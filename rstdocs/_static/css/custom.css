@@ -21,14 +21,9 @@ html {
 
 }
 
-div.admonition {
-    font-size: 0.9em;
-}
-
-
-.topic-title {
-    font-size: 14px;
-    font-weight: normal;
+div.topic>p.topic-title {
+    font-style: normal;
+    font-size: 15px;
 }
 
 .toctree-l1>a {
@@ -62,11 +57,7 @@ div.admonition {
     margin-top: 4em !important;
 }
 
-a {
-    color: hwb(200 11% 41%);
-    text-decoration: underline;
-    font-weight: 400;
-}
+
 
 html[data-theme="light"] a {
     color: hwb(200 13% 47%);
@@ -76,6 +67,11 @@ html[data-theme="dark"] a {
     color: hwb(200 15% 27%);
 }
 
+a {
+    color: hwb(200 11% 41%);
+    text-decoration: underline;
+    font-weight: 400;
+}
 
 a.visited {
     color: hwb(200 15% 27%);
