@@ -1,5 +1,5 @@
-2.1 rivt-sys installation
-==========================
+2.1 rivt-sys 
+==============
 
 *rivt-sys* is a user controlled installation of the *rivt framework*. 
 

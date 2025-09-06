@@ -1,8 +1,8 @@
-**3.** Markup
+3. Markup
 ==================
 
-The basic syntax of a *rivt string* is utf-8 text preceded by
-a header. 
+The overall syntax of a *rivt string* is lines of text enclosed in triple
+quotes and preceded by a header.
 
   
 .. code-block:: python
@@ -29,10 +29,11 @@ rv.S(rs)           Skip              Skip section
 rv.Q(rs)           Quit              Exit rivt 
 =============== =============== ===================================
 
-Text that is not a *tag* or *command* is passed to an intermediate .rst file.
-This facilitates extending *rivt markup* by embedding 
-`restructuredText <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_
-commands in a *rivt string*.
+Text that is not a *tag* or *command* is passed to an intermediate .rst file
+that is subsequently formatted to a PDF or HTML doc. This facilitates extending
+*rivt markup* by embedding `restructuredText
+<https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_ commands in a
+*rivt string*.
 
 
 .. toctree::
