@@ -20,18 +20,19 @@ The framework may be installed in several different ways. The choice of
 installation method depends on the need for control and integration.
 
 
-#. :doc:`rivt-sys </dv02-install/rivtsys>` - *rivt-sys* is a user 
-    controlled installation of the *rivt framework*. 
+#. :doc:`rivt-sys </dv02-install/rivtsys>` 
+    a user controlled installation of the *rivt framework* 
 
-#. :doc:`rivt-zip </dv02-install/rivtzip>` - *rivt-zip* is a portable version of 
-    the rivt framework including Python, VSCode and all of the required 
-    libraries and extensions. 
+#. :doc:`rivt-zip </dv02-install/rivtzip>`
+    a single folder portable version of the rivt framework including 
+    Python, VSCode and all of the required libraries and extensions
 
 
-#. :doc:`rivt-uv </dv02-install/rivtuv>` - *rivt-uv* requires the installation of 
-    uv, a Python package manager, which then facilitates a single command 
-    installation of rivt in an isolated environment that can be deleted with 
-    a single command. The recommended installation method for most users is rivt-uv.
+#. :doc:`rivt-uv </dv02-install/rivtuv>` - 
+    a single command installation of rivtlib in an isolated environment that 
+    can also be fully deleted with a single command. *rivt-uv* requires the 
+    installation of uv, a Python package manager. This is the recommended 
+    installation method for most users.
 
 
 .. toctree::
