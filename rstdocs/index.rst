@@ -22,9 +22,9 @@ example of an HTML **rivt** report.
 **rivt** is designed to work in an open source framework described 
 :doc:`here  <dv02-install/dv02-summary>`.
 
-:doc:`This </dv01-intro/smallex>` is a small rivt example.
+:doc:`This </dv01-intro/smallex>` is a small **rivt** example.
 
-You can search for rivt files on GitHub :doc:`here <dv05-collab/ghsearch>`.
+You can search for **rivt** files on GitHub :doc:`here <dv05-collab/ghsearch>`.
 
 
 .. raw:: html
