@@ -102,3 +102,7 @@ hr {
     /* Example: red color */
     border: none;
 }
+
+.topic-title {
+    font-size: 1.1rem
+}
