@@ -6,12 +6,12 @@ components.
 
 .. topic:: A *rivt* installation includes:
 
-    #. **Python** and with the *rivt package*
+    #. **Python** with the *rivt package* and additional libraries
 
 .. topic:: A *rivt framework* installation includes:
 
     #. *rivt*
-    #. **VSCode** and *rivt markup extensions* for editing and execution
+    #. **VSCode** and *rivt markup extensions* for editing and Python integration
 
 .. topic:: A *rivt extended framework* installation includes:
 
