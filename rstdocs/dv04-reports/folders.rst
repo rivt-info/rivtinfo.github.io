@@ -1,90 +1,152 @@
-**4.2 - Folders**
-==================
+4.2 - Files and Folders
+============================
 
-The rivt folder structure is designed to produce reports and open source
-templates. A starting folder structure can be copied from an existing project,
-or generated from the command line with::
+**[01]** rivt files
+---------------------
 
-    python -m rivtfolders
+A *rivt file* is the basic unit of a rivt report. Its output is a *rivt doc*
+which is a subdivision in the report heirarchy. Each *rivt file* is
+identified with a *doc* prefix number of the form:: 
 
-An example folder structure is shown below. **rivt** implements a file and
-folder structure to simplify file sharing and control. Each rivt file (and doc)
-is idenfiifed by a unique rivt file prefix with the form rivddss-filename where
-dd is a two digit division number and ss is a two digit subdivision number
-e.g., riv0203-loads.py is the third subdivision of division two. Editing the
-rivt number also changes the report organization.
+    rvddss-file-name.py 
+    
+where dd is a two digit division number and ss is a two digit subdivision
+number e.g., rv0203-loads.py. Editing the doc number changes the report
+organization.
 
-**rivt** input files are organized in numbered divisions. Output files (docs)
-are written to the *docs* folder. rivt reports are collections of docs and are
-also written to the *docs* folder. Doc files may be published as text, latex
-pdf, text pdf or HTML documents. The privacy level of document inputs may be
-set at the file or section level. A separate *osdocs* (open source docs) folder
-is used to write the subset of file inputs intended for open sharing on GitHub
-(or other version control systems).
+**[02]** rivt folders
+----------------------
 
-**rivt files**
------------------
+An example *rivt folder structure* for reports is shown below. *rivt files* are
+organized into numbered division folders of the form:
 
-Each **rivt** file is identified with a document prefix of the form
-rddnn-filename where dd is a two digit division number and nn is a two digit
-subdivision or file number e.g., riv0203-loads.py is the third subdivision (doc
-file) of division two. rivt files are processed and published in document
-order. Editing the rivt number will change the report organization. rivt
-resource files (images, tables etc.) are stored in the sub-folders *insdd,
-valdd* and *tools*. The folder names correspond to the associated function API.
-**rivt** reports are collections of docs.
+    dvdd-division-name
 
-Report and document titles are taken from folder and file names unless
-overridden in the rivt-config file. An example folder structure is shown below
-where fixed file names or prefixes are shown in [ ].
+where dd is the two digit division number.
+
+Resource files used in *rivt files* are organized in the *source* folder.
+
+Output files (docs) are written to the *reports* folder. Report and document
+titles are taken from folder and file names unless over-rides are specified in
+the rivt-config.ini file.
+
+An example folder structure is shown below. Fixed prefixes are shown in [ ]. A
+single vertical bar identifies a file or folder that is produced by the user.
+Files or folders identified 
 
 
-**rivt folders**
-----------------
+**[03]** Report folder structure
+---------------------------------
 
 ::
 
-
-    [rivt]-Report-Label/               
-        ├── [d01]-div-label/                (division 1 files)
-            ├── [ins01]/                    (insert files)
-                ├── fig1.png            
-                └── attach1.pdf
-            └── [val01]/                    (values files)
-                └── val0101.csv
-            ├── r0101-label1.py             (rivt file)
-            └── r0102-label2.py             (rivt file)
-        ├── [d02]-div-label/                (division 2 files)
-            ├── [ins01]/      
+    [rivt]-Report-Label/           ======== Project Folder =========
+        ├── [dv01-]divlabel/                   div 01 folder
+            ├── [rv0101-]doclabel1.py               | rivt file
+            └── [rv0102-]doclabel2.py               | rivt file
+        ├── [dv02-]divlabel/                   div 02 folder
+            ├── [rv0101-]doclabel3.py               | rivt file
+            └── [rv0102-]doclabel4.py               | rivt file         
+        ├── [public]/                     ==== rivt files - public sections ====
+            ├── dv01-divlabel1/                 || div 01 files
+                ├── rv0101-doclabel1.py        
+                └── rv0102-doclabel2.py  
+            ├── dv02-divlabel2/                 || div 02 files
+                ├── rv0101-doclabel3.py      
+                └── rv0102-doclabel4.py
+            └── README.txt                      || GitHub searchable report              
+        ├── [reports]/                     ==== Reports and Docs ====
+            ├── [html]/                           || HTML reports and docs
+                ├── [docs]/                       || HTML site
+                        ├── _images
+                        ├── _sources
+                        └── _static
+                        ├── dv01-divlabel1\       || HTML docs
+                            ├── rv0101-doclabel1.html
+                            └── rv0102-doclabel2.html
+                        ├── dv02-divlabel2\                            
+                            ├── rv0201-doclabel3.html                       
+                            └── rv0202-doclabel4.html
+                        ├── index.html 
+                        └── README.txt            || GitHub searchable report                      
+                ├── [srcdocs]                     || HTML reST files
+                        ├── _locale
+                        ├── _static
+                        └── _templates
+                        ├── dv01-divlabel1\
+                            ├── rv0101-doclabel1.rst
+                            └── rv0102-doclabel2.rst
+                        ├── dv02-divlabel2\                            
+                            ├── rv0201-doclabel3.rst                        
+                            └── rv0202-doclabel4.rst 
+                        ├── conf.py 
+                        ├── index.rst 
+                        └── README.txt            || GitHub searchable report 
+                ├── conf.py 
+                ├── index.rst 
+                └── genhtml.cmd               
+            ├── [rpdf]/                           || rPDF report and docs             
+                ├── [srcdocs]                     || rPDF reST files
+                    ├── fonts\
+                    └── rstpdf-style\
+                    ├── dv01-divlabel1\
+                        ├── rv0101-doclabel1.rst
+                        └── rv0102-doclabel2.rst
+                    ├── dv02-divlabel2\                            
+                        ├── rv0201-doclabel3.rst                        
+                        └── rv0202-doclabel4.rst
+                ├── dv01-divlabel1\               || rPDF docs   
+                    ├── rv0101-doclabel1.pdf
+                    └── rv0102-doclabel2.pdf
+                ├── dv02-divlabel2\                            
+                    ├── rv0201-doclabel3.pdf                       
+                    └── rv0202-doclabel4.pdf
+                ├── README.txt                    || GitHub searchable report 
+                └── Report-Label.pdf              || rPDF report
+            ├── [tpdf]/                           || tPDF report and docs
+                ├── [srcdocs]                     || tPDF reST files
+                    ├── texpdf-style\
+                    ├── dv01-divlabel1\
+                        ├── rv0101-doclabel1.rst
+                        └── rv0102-doclabel2.rst
+                    ├── dv02-divlabel2\                            
+                        ├── rv0201-doclabel3.rst                        
+                        └── rv0202-doclabel4.rst
+                ├── dv01-divlabel1\               || tPDF docs
+                    ├── rv0101-doclabel1.pdf
+                    └── rv0102-doclabel2.pdf
+                ├── dv02-divlabel2\                            
+                    ├── rv0201-doclabel3.pdf                       
+                    └── rv0202-doclabel4.pdf
+                ├── [temp]/
+                    └── d0201-label3.tex  
+                ├── README.txt                    || GitHub searchable report 
+                └── Report-Label.pdf              || tPDF report
+            ├── [text]/                           || text report and docs
+                ├── dv01-divlabel1\
+                    ├── rv0101-label1.txt      
+                    └── rv0102-label2.txt
+                ├── dv02-divlabel1\
+                    ├── rv0201-label3.txt
+                    └── rv0202-label4.txt
+                └── rivt-Report-Label.txt                                    
+        ├── [source]                      ==== Source files for rivt files ====      
+            ├── [rt01]/                         | div 01 Run and Tool files 
+                ├── data1.csv                
+                └── standards.txt
+            ├── [rt02]/                         | div 02 Run and Tool files 
                 ├── data1.csv                   
                 └── standards.txt
-            └── r0201-label3.py             (rivt file)
-        ├── [docs]/                    (document output)
-            ├── xpdf/                      
-                ├── rivt0101-label1.pdf      
-                ├── rivt0102-label2.pdf
-                ├── rivt201-label3.pdf
-                └── Report-Label.pdf 
-            ├── lpdf/                      
-                ├── rivt0101-label1.pdf      
-                ├── rivt0102-label2.pdf
-                ├── rivt201-label3.pdf
-                └── Report-Label.pdf 
-            ├── text/                    
-                ├── rivt0101-label1.txt      
-                ├── rivt0102-label2.txt
-                └── rivt0201-label3.txt          
-            ├── html/                    
-                ├── rivt0101-label1.html
-                ├── rivt0102-label2.html
-                └── rivt0201-label3.html        
-            ├── temp/
-                └── d0201-label3.tex             
-        ├── [tools]/                        (function and shell files)
-            ├── func1.py                   
-            └── sap.cmd
-            └── func2.py                  
-        ├── [rivt-config.ini]               (config file)
-        ├── cover-page.pdf                  (report cover page)
-        └── README.txt                      (text report - GitHub searchable) 
-
+            ├── [i01]/                          | div 01 Insert files 
+                ├── data1.csv
+                ├── cover-page.pdf                       
+                └── standards.txt
+            ├── [i02]/                          | div 02 Insert files 
+                ├── data1.csv                   
+                └── standards.txt
+            ├── [v01]/                        ||| div 01 Value files 
+                ├── val0101-2.csv                 
+                └── val0102-3.csv
+            ├── [v02]/                        ||| div 02 Value files 
+                └── othervals.csv
+        └── README.txt                      || GitHub searchable report 

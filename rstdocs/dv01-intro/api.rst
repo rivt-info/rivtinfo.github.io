@@ -1,8 +1,8 @@
 1.1 API
 ================
 
-[01] Import rivtlib
----------------------------
+**[01]** import rivtlib
+------------------------------
 
 .. raw:: html
 
@@ -14,10 +14,10 @@ and *namespaces*. A **rivt** file is a Python file (.py) that *imports* the
 
     import rivtlib.rvapi as rv
 
-rivtlib exposes 7 API functions which may be run interactively as notebook
-cells in an IDE (e.g. VSCode) or as a Python script. 
+rivtlib exposes 7 API functions which may be run in a script or interactively
+as notebook cells in an IDE (e.g. VSCode).
 
-[02] API functions
+**[02]** API functions
 ----------------------------
 
 .. raw:: html

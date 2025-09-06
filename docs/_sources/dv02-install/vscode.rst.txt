@@ -1,4 +1,4 @@
-2.3 - VSCode
+2.5 - VSCode
 ===================
 
 rivtlib is generally run in an IDE. If run from the command line the command

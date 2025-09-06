@@ -38,6 +38,5 @@ You can search for **rivt** files on GitHub :doc:`here <dv05-collab/ghsearch>`.
     dv01-intro/dv01-summary.rst
     dv02-install/dv02-summary.rst
     dv03-markup/dv03-summary.rst
-    dv04-reports/reports.rst
-    dv05-collab/collab.rst
-
+    dv04-reports/dv04-summary.rst
+    dv05-collab/dv05-summary.rst
