@@ -6,7 +6,7 @@
 
 A *rivt file* is the basic unit of a rivt report. Its output is a *rivt doc*
 which is a subdivision in the report heirarchy. Each *rivt file* is
-identified with a *doc* prefix number of the form:: 
+identified with a *doc* prefix number of the form: 
 
     rvddss-file-name.py 
     
