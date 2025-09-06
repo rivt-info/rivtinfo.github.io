@@ -16,7 +16,7 @@ engineering documents.
 Document input is :doc:`rivt markup <dv03-markup/syntax>` within a Python file
 (.py).
 
-Output is utf8-text, HTML or PDF documents. This site is an
+Output is formatted text, HTML or PDF documents. This site is an
 example of an HTML **rivt** report.
 
 **rivt** is designed to work in an open source framework described 
