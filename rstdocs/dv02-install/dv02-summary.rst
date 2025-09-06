@@ -2,36 +2,37 @@
 ==================   
 
 
-The rivt framework includes:
+A *rivt* installation includes:
 
-**VSCode** with extensions for document editing and collaboration
+- *Python* and all of the required libraries.
 
-**Python** and libraries for analysis and formatting
+A *rivt framework* installation includes:
 
-The framework is often extended to include:
+- *rivt*
+- *VSCode* with extensions for document editing and collaboration
 
-**Git** and **GitHub** for version control and collaboration
+A *rivt extended framework* installation includes:
 
-**LaTeX** for precise typesetting
+- *rivt framework*
+- *Git* and **GitHub** for version control and collaboration
+- *LaTeX* for precise typesetting
+- *QCAD* for diagramming
 
-**QCAD** for diagramming
+Installations may be done in several different ways depending on individual needs for
+control and integration. These include:
 
-The framework may be installed in several different ways. The choice of
-installation method depends on the need for control and integration.
+#. :doc:`rivt-sys </dv02-install/rivtsys>` :
+    a user controlled installation of the *rivt and extended framework* 
 
-
-#. :doc:`rivt-sys </dv02-install/rivtsys>` 
-    a user controlled installation of the *rivt framework* 
-
-#. :doc:`rivt-zip </dv02-install/rivtzip>`
-    a single folder portable version of the rivt framework including 
+#. :doc:`rivt-zip </dv02-install/rivtzip>` :
+    a single folder portable version of the *rivt framework* including 
     Python, VSCode and all of the required libraries and extensions
 
 
-#. :doc:`rivt-uv </dv02-install/rivtuv>` - 
-    a single command installation of rivtlib in an isolated environment that 
+#. :doc:`rivt-uv </dv02-install/rivtuv>` :
+    a single command installation of *rivt* in an isolated environment that 
     can also be fully deleted with a single command. *rivt-uv* requires the 
-    installation of uv, a Python package manager. This is the recommended 
+    installation of *uv*, a Python package manager. This is the recommended 
     installation method for most users.
 
 
