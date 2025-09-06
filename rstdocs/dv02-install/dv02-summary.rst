@@ -35,7 +35,7 @@ control and integration. These include:
     can be installed and deleted with a single command. *rivt-uv* requires the 
     installation of *uv*, a Python package manager. This is the recommended 
     installation method for most users. **VSCode** and its *rivt-markup* 
-    extensions are installed separately to complete the *rivt framework*.
+    extensions are installed separately to complete a *rivt framework*.
 
 
 .. toctree::
