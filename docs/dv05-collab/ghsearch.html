@@ -382,7 +382,11 @@
 distributed across GitHub. The search covers the full text of the <strong>rivt</strong>
 README file (the rivt text report). For advanced searching
 use the GitHub interface  <a class="reference external" href="https://github.com/search">here</a>.</p>
-<p><strong>Buttons:</strong></p>
+<aside class="topic">
+<p class="topic-title">Buttons</p>
+<p><strong>[S]</strong> Search GitHub &lt;Ctrl+Enter&gt;</p>
+<p><strong>[C]</strong> Clear input &lt;Ctrl+R&gt;</p>
+</aside>
 <hr class="docutils" />
 <section id="global-search-terms">
 <h2><strong>Global Search Terms</strong><a class="headerlink" href="#global-search-terms" title="Link to this heading">#</a></h2>
@@ -411,18 +415,16 @@ document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyC
 
 <br>
 
-[S] Search GitHub (Ctrl+Enter)
-
-[C]** Clear input (Ctrl+R)
 <hr></section>
 <section id="organization-search">
 <h2><strong>Organization Search</strong><a class="headerlink" href="#organization-search" title="Link to this heading">#</a></h2>
-<p>Restrict search within the following comma separated GitHub organizations:</p>
+<p>Restrict search to the following comma separated GitHub organizations:</p>
 <input type="text" id="terms" name="terms" size=40 style="height:38px;font-size:14pt; font-weight: normal">
 
 <br>
+<br>
 
-<b>Organization(s) Search Terms</b><br><br>
+<b>Organization(s) Search Terms</b><br>
 <button class="button" id="searchBtn" onclick="searchOrg()">S</button> <button class="button" id="clearBtn" onclick="clearRivt()">C</button><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal"></section>
 </section>
 

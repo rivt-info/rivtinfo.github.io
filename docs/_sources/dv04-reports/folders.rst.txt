@@ -14,6 +14,8 @@ where dd is a two digit division number and ss is a two digit subdivision
 number e.g., rv0203-loads.py. Editing the doc number changes the report
 organization.
 
+Resource files used in *rivt files* are organized in the *source* folder.
+
 **[02]** rivt folders
 ----------------------
 
@@ -24,21 +26,27 @@ organized into numbered division folders of the form:
 
 where dd is the two digit division number.
 
-Resource files used in *rivt files* are organized in the *source* folder.
+*Docs* are written to the *reports* folder. A *report* is an organized assembly
+of *docs*.
 
-Output files (docs) are written to the *reports* folder. Report and document
-titles are taken from folder and file names unless over-rides are specified in
-the rivt-config.ini file.
-
-An example folder structure is shown below. Fixed prefixes are shown in [ ]. A
-single vertical bar identifies a file or folder that is produced by the user.
-Files or folders identified 
+Report and document titles are taken from folder and file names unless
+over-rides are specified in the rivt-config.ini file.
 
 
 **[03]** Report folder structure
 ---------------------------------
 
-::
+An example folder structure is shown below. 
+
+
+.. topic:: Annotation notes:
+
+    - Prefixes are shown in brackets ([]). 
+    - A single vertical bar (|) identifies a file or folder produced by the user. 
+    - A double bar (||) identifies a file or folder written by rivt
+
+:: 
+
 
     [rivt]-Report-Label/           ======== Project Folder =========
         ├── [dv01-]divlabel/                   div 01 folder

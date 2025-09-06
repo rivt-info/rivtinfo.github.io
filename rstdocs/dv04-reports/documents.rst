@@ -1,4 +1,4 @@
-**4.1 - Publish Docs**
+4.1 - Publish Docs
 ========================
 
 publish x

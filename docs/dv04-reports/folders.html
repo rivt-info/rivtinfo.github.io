@@ -316,8 +316,8 @@
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">4.2 - Files and Folders</a></li>
-<li class="toctree-l1"><a class="reference internal" href="documents.html"><strong>4.1 - Publish Docs</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="settings.html"><strong>4.3 - Publish Reports</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="documents.html">4.1 - Publish Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">4.3 - Configuration Files</a></li>
 </ul>
 </div>
 </nav></div>
@@ -391,6 +391,7 @@ identified with a <em>doc</em> prefix number of the form:</p>
 <p>where dd is a two digit division number and ss is a two digit subdivision
 number e.g., rv0203-loads.py. Editing the doc number changes the report
 organization.</p>
+<p>Resource files used in <em>rivt files</em> are organized in the <em>source</em> folder.</p>
 </section>
 <section id="rivt-folders">
 <h2><strong>[02]</strong> rivt folders<a class="headerlink" href="#rivt-folders" title="Link to this heading">#</a></h2>
@@ -400,16 +401,22 @@ organized into numbered division folders of the form:</p>
 <div><p>dvdd-division-name</p>
 </div></blockquote>
 <p>where dd is the two digit division number.</p>
-<p>Resource files used in <em>rivt files</em> are organized in the <em>source</em> folder.</p>
-<p>Output files (docs) are written to the <em>reports</em> folder. Report and document
-titles are taken from folder and file names unless over-rides are specified in
-the rivt-config.ini file.</p>
-<p>An example folder structure is shown below. Fixed prefixes are shown in [ ]. A
-single vertical bar identifies a file or folder that is produced by the user.
-Files or folders identified</p>
+<p><em>Docs</em> are written to the <em>reports</em> folder. A <em>report</em> is an organized assembly
+of <em>docs</em>.</p>
+<p>Report and document titles are taken from folder and file names unless
+over-rides are specified in the rivt-config.ini file.</p>
 </section>
 <section id="report-folder-structure">
 <h2><strong>[03]</strong> Report folder structure<a class="headerlink" href="#report-folder-structure" title="Link to this heading">#</a></h2>
+<p>An example folder structure is shown below.</p>
+<aside class="topic">
+<p class="topic-title">Annotation notes:</p>
+<ul class="simple">
+<li><p>Prefixes are shown in brackets ([]).</p></li>
+<li><p>A single vertical bar (|) identifies a file or folder produced by the user.</p></li>
+<li><p>A double bar (||) identifies a file or folder written by rivt</p></li>
+</ul>
+</aside>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[rivt]-Report-Label/           ======== Project Folder =========
     ├── [dv01-]divlabel/                   div 01 folder
         ├── [rv0101-]doclabel1.py               | rivt file
@@ -549,7 +556,7 @@ Files or folders identified</p>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>4.1 - Publish Docs</strong></p>
+        <p class="prev-next-title">4.1 - Publish Docs</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

@@ -7,10 +7,11 @@ README file (the rivt text report). For advanced searching
 use the GitHub interface  `here <https://github.com/search>`_.
 
 
-**Buttons:** 
+.. topic:: Buttons
 
-
-
+    **[S]** Search GitHub <Ctrl+Enter>
+    
+    **[C]** Clear input <Ctrl+R>
 
 
 ______________________________________________
@@ -46,16 +47,13 @@ ______________________________________________
 
     <br>
 
-    [S] Search GitHub (Ctrl+Enter) 
-    
-    [C]** Clear input (Ctrl+R)
     <hr>
 
 
 **Organization Search**  
 ------------------------------
 
-Restrict search within the following comma separated GitHub organizations: 
+Restrict search to the following comma separated GitHub organizations: 
 
 
 .. raw:: html    
@@ -63,7 +61,8 @@ Restrict search within the following comma separated GitHub organizations:
     <input type="text" id="terms" name="terms" size=40 style="height:38px;font-size:14pt; font-weight: normal">
 
     <br>
+    <br>
 
-    <b>Organization(s) Search Terms</b><br><br>
+    <b>Organization(s) Search Terms</b><br>
     <button class="button" id="searchBtn" onclick="searchOrg()">S</button> <button class="button" id="clearBtn" onclick="clearRivt()">C</button><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal">
 
