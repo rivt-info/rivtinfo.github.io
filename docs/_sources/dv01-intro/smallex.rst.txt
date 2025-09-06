@@ -1,2 +1,2 @@
-Small example
+1.4 Small example
 =================

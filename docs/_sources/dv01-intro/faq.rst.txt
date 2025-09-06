@@ -1,4 +1,4 @@
-1.4 FAQ
+1.3 FAQ
 =================
 
 .. dropdown:: Which open source license applies to the rivt framework?  
