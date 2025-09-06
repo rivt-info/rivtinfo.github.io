@@ -21,9 +21,9 @@ html {
 
 }
 
-div.topic>p.topic-title {
-    font-style: normal;
-    font-size: 15px;
+p.topic-title {
+    font-weight: normal;
+    font-size: .9em;
 }
 
 .toctree-l1>a {
