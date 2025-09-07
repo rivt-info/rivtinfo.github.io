@@ -20,8 +20,9 @@ The output from a file is a *doc* file. It can be text, HTML or PDF - all
 written from the same *rivt file*. This site is an example of an HTML *rivt
 report* assembled from *docs*.
 
-For better productivity, **rivt** is designed to work in an open source
-framework described :doc:`here <dv02-install/dv02-summary>`.
+**rivt** is designed to work in an open source framework that takes advantage
+of editing, versioning and other engineering software. The framework is
+described :doc:`here <dv02-install/dv02-summary>`.
 
 :doc:`This </dv01-intro/smallex>` is a small **rivt** example. Larger examples
 are here. You can search for more *rivt files* on GitHub 
