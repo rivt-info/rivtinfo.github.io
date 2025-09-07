@@ -14,17 +14,18 @@
 engineering documents.
 
 Documents are written in :doc:`rivt markup <dv03-markup/syntax>` inside a
-Python file (.py), referred to as a *rivt file*.
+Python file (.py) referred to as a *rivt file*.
 
-Output documents (*docs*) are formatted text, HTML or PDF files - all written
-from the same *rivt file*. This site is an example of an HTML *rivt report*.
+The output from a file is a *doc* file. It can be text, HTML or PDF - all
+written from the same *rivt file*. This site is an example of an HTML *rivt
+report* assembled from *docs*.
 
-For improved productivity, **rivt** is designed to work in an open source
+For better productivity, **rivt** is designed to work in an open source
 framework described :doc:`here <dv02-install/dv02-summary>`.
 
-:doc:`This </dv01-intro/smallex>` is a small **rivt** example.
-
-You can search for *rivt files* on GitHub :doc:`here <dv05-collab/ghsearch>`.
+:doc:`This </dv01-intro/smallex>` is a small **rivt** example. Larger examples
+are here. You can search for more *rivt files* on GitHub 
+:doc:`here<dv05-collab/ghsearch>`.
 
 
 .. raw:: html
