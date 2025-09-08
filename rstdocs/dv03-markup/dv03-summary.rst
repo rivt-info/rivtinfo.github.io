@@ -1,8 +1,8 @@
 3. Markup
 ==================
 
-The overall syntax of a *rivt string* is lines of text enclosed in triple
-quotes and preceded by a header.
+The general syntax of a *rivt string* is text enclosed in triple
+quotes where the first line is a section header.
 
   
 .. code-block:: python

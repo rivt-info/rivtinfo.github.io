@@ -22,7 +22,7 @@ html {
 }
 
 p.topic-title {
-    font-weight: bold;
+    font-weight: normal;
     font-size: 1em;
 }
 
@@ -32,7 +32,7 @@ p.topic-title {
 }
 
 .toctree-l2>a {
-    font-size: 0.9em;
+    font-size: 1.3em;
     font-weight: normal;
 }
 

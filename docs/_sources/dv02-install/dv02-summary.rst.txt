@@ -1,7 +1,7 @@
 2. Installation
 ==================   
 
-The following terms apply to **rivt** and its framework installations: 
+The following terms apply to **rivt** and its framework installation: 
 
 **[01]** Installation Terms
 ----------------------------------
@@ -107,7 +107,7 @@ VSCode and all of the required libraries and extensions. *VSCode* and its
 framework**.
 
 
-**[04]** Install the *extended rivt framework*
+**[04]** Install *extended rivt framework*
 --------------------------------------------------
 
 .. raw:: html
