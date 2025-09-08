@@ -15,7 +15,7 @@ html {
     --pst-font-size-h1: 18px;
     --pst-font-size-h2: 16px;
     --pst-font-size-h3: 16px;
-    --pst-font-size-h4: 14px;
+    --pst-font-size-h4: 16px;
     --pst-font-size-h5: 14px;
     --pst-font-size-h6: 14px;
 
@@ -23,7 +23,7 @@ html {
 
 p.topic-title {
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .toctree-l1>a {
@@ -32,7 +32,7 @@ p.topic-title {
 }
 
 .toctree-l2>a {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: normal;
 }
 

@@ -1,7 +1,7 @@
 2. Installation
 ==================   
 
-The following terms apply to **rivt** and framework installations: 
+The following terms apply to **rivt** and its framework installations: 
 
 **[01]** Installation Terms
 ----------------------------------
@@ -37,7 +37,7 @@ The following terms apply to **rivt** and framework installations:
 
  
 
-.. topic:: extended rivt framework 
+.. topic:: extended rivt framework: 
 
     The *extended rivt framework* includes the following additional open source
     programs and services:
