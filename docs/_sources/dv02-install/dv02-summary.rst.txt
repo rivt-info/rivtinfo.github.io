@@ -3,16 +3,15 @@
 
 The following terms apply to **rivt** and framework installations: 
 
-**[01]** Installation terms
+**[01]** Installation Terms
 ----------------------------------
 
 .. topic:: rivt:
 
-    In addition to the `rivtlib library <https://www.rivt.info>`_, *rivt*
-    includes :doc:`these additional packages </dv02-install/python>`. 
-    When rivt is installed any text editor may be used to write and publish 
+    *rivt* is a Python project. In addition to the `rivtlib package <https://www.rivt.info>`_, 
+    *rivt* includes :doc:`additional packages </dv02-install/python>`. 
+    After *rivt* is installed any text editor may be used to write, edit and publish 
     *rivt docs and reports*.
-
 
 
 .. raw:: html
@@ -56,27 +55,28 @@ The following terms apply to **rivt** and framework installations:
 
 **Method 1 - uv**
 
-    This is the recommended method for most users.
+This is the recommended method for most users.
 
 #. Install `uv <https://docs.astral.sh/uv/getting-started/installation/#pypi>`_. 
    The recommended method for Windows is: 
 
-.. code-block:: 
+    .. code-block:: 
 
-   winget install --id=astral-sh.uv  -e 
+    winget install --id=astral-sh.uv  -e 
 
-#. Install by in a subfolder by running the following shell command. This
+#. Install *rivt* in a subfolder by running the following shell command. This
    installs *rivt* in an isolated environment that can be deleted by deleting the
-   rivt folder.
+   rivt folder. You can download the command file 
+   :download:`here </_downloads/rivt.cmd>`.
 
-.. code-block::
+    .. code-block::
 
-    init uv rivt
-    cd rivt
-    uv add "git+https://github.com/rivtlib-dev/rivtlib.git#subdirectory=src"
+        init uv rivt
+        cd rivt
+        uv add "git+https://github.com/rivtlib-dev/rivtlib.git#subdirectory=src"
 
 
-You can download the command file :download:`here </_downloads/rivt.cmd>`.
+
 
 .. raw:: html
 
