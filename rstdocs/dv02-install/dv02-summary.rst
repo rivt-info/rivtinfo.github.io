@@ -1,23 +1,40 @@
 2. Installation
 ==================   
 
-The following terms apply to installing **rivt** and its framework components:
+The following terms apply to **rivt** and framework installations: 
 
-.. topic:: A *rivt installation* includes:
+**[01]** Installation terms
+----------------------------------
 
-    #. **Python** with the **rivt package** and additional libraries
+.. topic:: rivt project:
 
-.. topic:: A *rivt framework* installation includes:
+    In addition to the `rivtlib library <https://www.rivt.info>`_, *rivt*
+    includes :doc:`these </dv02-install/python>` additional packages and
+    libraries. Any text editor may be used to write and publish *rivt files,
+    docs and reports*.
 
-    #. **rivt**
-    #. **VSCode** and **rivt markup extensions** for editing and Python integration
 
-.. topic:: A *rivt extended framework* installation includes:
+.. topic:: rivt framework:
 
-    #. A **rivt framework**
-    #. **Git** with a **GitHub** account for version control and collaboration
-    #. **LaTeX** for precise typesetting
-    #. **QCAD** for diagramming
+    The *rivt framework* includes *rivt*, `VSCode
+    <https://code.visualstudio.com/>`_ and 
+    `VSCode extensions <https://marketplace.visualstudio.com/vscode>`_ 
+    for productive writing and editing.
+
+
+.. topic:: extended rivt framework 
+
+    The *extended rivt framework* includes the following additional open source
+    programs and services.
+
+    #. `Git <https://git-scm.com>`_ and a `GitHub <hhttps://github.com>`_ account for version control and collaboration
+    #. `LaTeX <https://www.tug.org/texlive/>`_ for precise typesetting
+    #. `QCAD <https://qcad.io/en/>`_ for diagramming
+
+
+**[02]** *rivt* installation
+----------------------------------
+
 
 Several methods are available for these installations, depending on individual
 needs for control and integration. These include:

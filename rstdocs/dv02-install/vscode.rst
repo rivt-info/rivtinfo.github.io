@@ -21,7 +21,7 @@ User Manual** at https://rivt.info for details.
 The rivt VSCode profile includes shortcuts for common editing functions and
 snippets for API functions and commands.
 
-**2.1.1 - Extensions**   
+**[01]** VSCode Extensions
 ---------------------------
 
 ============================================== ===============================
