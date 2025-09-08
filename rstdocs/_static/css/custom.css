@@ -32,12 +32,12 @@ p.topic-title {
 }
 
 .toctree-l2>a {
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: normal;
 }
 
 .toctree-l3>a {
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: normal;
 }
 
@@ -55,6 +55,7 @@ p.topic-title {
 
 .bd-secondary-sidebar {
     margin-top: 4em !important;
+    font-size: 16px;
 }
 
 
