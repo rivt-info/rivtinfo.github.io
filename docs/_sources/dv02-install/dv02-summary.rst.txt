@@ -6,6 +6,11 @@ The following terms apply to **rivt** and framework installations:
 **[01]** Installation Terms
 ----------------------------------
 
+.. raw:: html
+
+    <hr>
+
+
 .. topic:: rivt:
 
     *rivt* is a Python project. In addition to the `rivtlib package <https://www.rivt.info>`_, 
@@ -13,12 +18,10 @@ The following terms apply to **rivt** and framework installations:
     After *rivt* is installed any text editor may be used to write, edit and publish 
     *rivt docs and reports*.
 
-
 .. raw:: html
 
-    <hr>
+    <br>
 
- 
 
 .. topic:: rivt framework:
 
@@ -30,7 +33,7 @@ The following terms apply to **rivt** and framework installations:
 
 .. raw:: html
 
-    <hr>
+    <br>
 
  
 
@@ -44,14 +47,12 @@ The following terms apply to **rivt** and framework installations:
     #. `QCAD <https://qcad.io/en/>`_ for diagramming
 
 
+**[02]** Install *rivt*
+----------------------------------
+
 .. raw:: html
 
     <hr>
-
- 
-
-**[02]** Install *rivt*
-----------------------------------
 
 **Method 1 - uv**
 
@@ -60,46 +61,59 @@ This is the recommended method for most users.
 #. Install `uv <https://docs.astral.sh/uv/getting-started/installation/#pypi>`_. 
    The recommended method for Windows is: 
 
-    .. code-block:: 
-
-    winget install --id=astral-sh.uv  -e 
+        winget install --id=astral-sh.uv  -e 
 
 #. Install *rivt* in a subfolder by running the following shell command. This
    installs *rivt* in an isolated environment that can be deleted by deleting the
    rivt folder. You can download the command file 
    :download:`here </_downloads/rivt.cmd>`.
 
-    .. code-block::
-
         init uv rivt
         cd rivt
         uv add "git+https://github.com/rivtlib-dev/rivtlib.git#subdirectory=src"
 
 
-
-
 .. raw:: html
 
-    <hr>
+    <br>
+
 
 **Method 2 - System**
 
 Use Python installers and *pip* to install the necessary packages listed here: 
 
 
-**[03]** Install the *rivt framework*
+**[03]** Install *rivt framework*
 ------------------------------------------
 
-- :doc:`rivt-zip </dv02-install/rivtzip>` :
-    a single folder portable version of a **rivt framework** including 
-    Python, VSCode and all of the required libraries and extensions.
-**VSCode** and its *rivt-markup* 
-    extensions are installed separately to complete a **rivt framework**.
+.. raw:: html
+
+    <hr>
 
 
-**[03]** Install the *extended rivt framework*
+**Method 1 - VSCode**
+
+#. Install *rivt*
+
+#. Install `VSCode <https://code.visualstudio.com/>`_ and 
+   `VSCode extensions <https://marketplace.visualstudio.com/vscode>`_.  
+   Extensions can be installed with this script.
+
+
+**Method 2 - rivt.zip**
+
+A single folder portable version of a **rivt framework** including Python,
+VSCode and all of the required libraries and extensions. *VSCode* and its
+*rivt-markup* extensions are installed separately to complete a **rivt
+framework**.
+
+
+**[04]** Install the *extended rivt framework*
 --------------------------------------------------
 
+.. raw:: html
+
+    <hr>
 
 
 
