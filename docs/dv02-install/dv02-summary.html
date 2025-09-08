@@ -59,7 +59,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'dv02-install/dv02-summary';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="2.1 rivt-sys" href="rivtsys.html" />
+    <link rel="next" title="2.4 - Python and Dependencies" href="python.html" />
     <link rel="prev" title="1.4 Small example" href="../dv01-intro/smallex.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -315,9 +315,6 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="rivtsys.html">2.1 rivt-sys</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rivtzip.html">2.2 rivt-zip</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rivtuv.html">2.3 rivt-uv</a></li>
 <li class="toctree-l1"><a class="reference internal" href="python.html">2.4 - Python and Dependencies</a></li>
 <li class="toctree-l1"><a class="reference internal" href="vscode.html">2.5 - VSCode</a></li>
 </ul>
@@ -383,55 +380,73 @@
 <section id="installation-terms">
 <h2><strong>[01]</strong> Installation terms<a class="headerlink" href="#installation-terms" title="Link to this heading">#</a></h2>
 <aside class="topic">
-<p class="topic-title">rivt project:</p>
+<p class="topic-title">rivt:</p>
 <p>In addition to the <a class="reference external" href="https://www.rivt.info">rivtlib library</a>, <em>rivt</em>
-includes <a class="reference internal" href="python.html"><span class="doc">these</span></a> additional packages and
-libraries. Any text editor may be used to write and publish <em>rivt files,
-docs and reports</em>.</p>
+includes <a class="reference internal" href="python.html"><span class="doc">these additional packages</span></a>.
+When rivt is installed any text editor may be used to write and publish
+<em>rivt docs and reports</em>.</p>
 </aside>
-<aside class="topic">
+<hr><aside class="topic">
 <p class="topic-title">rivt framework:</p>
 <p>The <em>rivt framework</em> includes <em>rivt</em>, <a class="reference external" href="https://code.visualstudio.com/">VSCode</a> and
 <a class="reference external" href="https://marketplace.visualstudio.com/vscode">VSCode extensions</a>
 for productive writing and editing.</p>
 </aside>
-<aside class="topic">
+<hr><aside class="topic">
 <p class="topic-title">extended rivt framework</p>
 <p>The <em>extended rivt framework</em> includes the following additional open source
-programs and services.</p>
+programs and services:</p>
 <ol class="arabic simple">
 <li><p><a class="reference external" href="https://git-scm.com">Git</a> and a <a class="reference external" href="hhttps://github.com">GitHub</a> account for version control and collaboration</p></li>
 <li><p><a class="reference external" href="https://www.tug.org/texlive/">LaTeX</a> for precise typesetting</p></li>
 <li><p><a class="reference external" href="https://qcad.io/en/">QCAD</a> for diagramming</p></li>
 </ol>
 </aside>
+<hr></section>
+<section id="install-rivt">
+<h2><strong>[02]</strong> Install <em>rivt</em><a class="headerlink" href="#install-rivt" title="Link to this heading">#</a></h2>
+<p><strong>Method 1 - uv</strong></p>
+<blockquote>
+<div><p>This is the recommended method for most users.</p>
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Install <a class="reference external" href="https://docs.astral.sh/uv/getting-started/installation/#pypi">uv</a>.
+The recommended method for Windows is:</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">winget</span> <span class="n">install</span> <span class="o">--</span><span class="nb">id</span><span class="o">=</span><span class="n">astral</span><span class="o">-</span><span class="n">sh</span><span class="o">.</span><span class="n">uv</span>  <span class="o">-</span><span class="n">e</span>
+</pre></div>
+</div>
+<ol class="arabic simple">
+<li><p>Install by in a subfolder by running the following shell command. This
+installs <em>rivt</em> in an isolated environment that can be deleted by deleting the
+rivt folder.</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">init</span> <span class="n">uv</span> <span class="n">rivt</span>
+<span class="n">cd</span> <span class="n">rivt</span>
+<span class="n">uv</span> <span class="n">add</span> <span class="s2">&quot;git+https://github.com/rivtlib-dev/rivtlib.git#subdirectory=src&quot;</span>
+</pre></div>
+</div>
+<p>You can download the command file <a class="reference download internal" download="" href="../_downloads/6e017b8c8c3ba4fa748d3b45345ccd65/rivt.cmd"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
+<hr><p><strong>Method 2 - System</strong></p>
+<p>Use Python installers and <em>pip</em> to install the necessary packages listed here:</p>
 </section>
-<section id="rivt-installation">
-<h2><strong>[02]</strong> <em>rivt</em> installation<a class="headerlink" href="#rivt-installation" title="Link to this heading">#</a></h2>
-<p>Several methods are available for these installations, depending on individual
-needs for control and integration. These include:</p>
+<section id="install-the-rivt-framework">
+<h2><strong>[03]</strong> Install the <em>rivt framework</em><a class="headerlink" href="#install-the-rivt-framework" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><dl class="simple">
-<dt><a class="reference internal" href="rivtsys.html"><span class="doc">rivt-sys</span></a><span class="classifier">a user controlled installation of</span></dt><dd><p>the various <strong>rivt framework components</strong>.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><a class="reference internal" href="rivtzip.html"><span class="doc">rivt-zip</span></a> :</dt><dd><p>a single folder portable version of a <strong>rivt framework</strong> including
+<dt><span class="xref std std-doc">rivt-zip</span> :</dt><dd><p>a single folder portable version of a <strong>rivt framework</strong> including
 Python, VSCode and all of the required libraries and extensions.</p>
 </dd>
 </dl>
 </li>
-<li><dl class="simple">
-<dt><a class="reference internal" href="rivtuv.html"><span class="doc">rivt-uv</span></a> :</dt><dd><p>a <strong>rivt</strong> system install in an isolated environment that
-can be installed and deleted with a single command. <strong>rivt-uv</strong> requires the
-installation of <strong>uv</strong>, a Python package manager. This is the recommended
-installation method for most users. <strong>VSCode</strong> and its <em>rivt-markup</em>
-extensions are installed separately to complete a <strong>rivt framework</strong>.</p>
+</ul>
+<dl class="simple">
+<dt><strong>VSCode</strong> and its <em>rivt-markup</em></dt><dd><p>extensions are installed separately to complete a <strong>rivt framework</strong>.</p>
 </dd>
 </dl>
-</li>
-</ul>
+</section>
+<section id="install-the-extended-rivt-framework">
+<h2><strong>[03]</strong> Install the <em>extended rivt framework</em><a class="headerlink" href="#install-the-extended-rivt-framework" title="Link to this heading">#</a></h2>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -457,11 +472,11 @@ extensions are installed separately to complete a <strong>rivt framework</strong
       </div>
     </a>
     <a class="right-next"
-       href="rivtsys.html"
+       href="python.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">2.1 rivt-sys</p>
+        <p class="prev-next-title">2.4 - Python and Dependencies</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -485,7 +500,9 @@ extensions are installed separately to complete a <strong>rivt framework</strong
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-terms"><strong>[01]</strong> Installation terms</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-installation"><strong>[02]</strong> <em>rivt</em> installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-rivt"><strong>[02]</strong> Install <em>rivt</em></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-the-rivt-framework"><strong>[03]</strong> Install the <em>rivt framework</em></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-the-extended-rivt-framework"><strong>[03]</strong> Install the <em>extended rivt framework</em></a></li>
 </ul>
   </nav></div>
 
