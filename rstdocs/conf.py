@@ -32,7 +32,7 @@ html_css_files = ['css/custom.css',]
 html_theme_options = {
     "pygments_light_style": "tango",  
     "pygments_dark_style": "github-dark",   
-    "navbar_start": ["navbar-logo", "index_link"],
+    "navbar_start": ["navbar-logo"],
     "collapse_navigation": True ,
     "header_links_before_dropdown": 6,
     "navbar_align": "left",
