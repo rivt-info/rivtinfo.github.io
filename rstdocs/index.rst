@@ -14,8 +14,6 @@
 
     <hr>
 
-Home
-=======
 
 **rivt** is an open source Python project for writing and distributing
 engineering documents. Documents are written in 
@@ -39,9 +37,11 @@ are here. A search interface for *rivt files* on GitHub is
 
     <hr>
 
+rivt User Manual
+==================
+
 .. toctree::
     :maxdepth: 1
-    :caption: Divisions
 
     dv01-intro/dv01-summary.rst
     dv02-install/dv02-summary.rst
