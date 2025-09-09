@@ -14,8 +14,8 @@
 
     <hr>
 
-.. Home
-   =======
+Home
+=======
 
 **rivt** is an open source Python project for writing and distributing
 engineering documents. Documents are written in 
