@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=90315992" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=e763e739" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -385,7 +385,7 @@
 variables. They typically start in the first column with double vertical bars
 followed by the command name, the relative file path and parameters.</p>
 <p>There are two exceptions to this pattern - the assignment ( = ) and definition
-( := ) commands which are used to evaluate equations.</p>
+( := ) commands which are used to assign values and evaluate equations.</p>
 <p>In the syntax description below parameter options are separated with
 semi-colons and elements by commas. File locations are specified using paths
 relative to the rivt file location. Using the standard folder structure is
@@ -416,8 +416,8 @@ output scope.</p>
 </ul>
 </aside>
 </section>
-<section id="doc-write-a-doc-file">
-<h2>|| DOC | :  write a doc file<a class="headerlink" href="#doc-write-a-doc-file" title="Link to this heading">#</a></h2>
+<section id="doc-write-doc-file">
+<h2>|| DOC | :  write doc file<a class="headerlink" href="#doc-write-doc-file" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">|| DOC | relative path | rpdf; txt; html; tpdf</p>
 <ul class="simple">
@@ -427,8 +427,8 @@ output scope.</p>
 </ul>
 </aside>
 </section>
-<section id="img-read-and-insert-image-file">
-<h2>|| IMG | :  read and insert image file<a class="headerlink" href="#img-read-and-insert-image-file" title="Link to this heading">#</a></h2>
+<section id="img-insert-image-file">
+<h2>|| IMG | :  insert image file<a class="headerlink" href="#img-insert-image-file" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">|| IMG | relative path | caption _[F], scale</p>
 <ul class="simple">
@@ -438,8 +438,8 @@ output scope.</p>
 </ul>
 </aside>
 </section>
-<section id="img2-read-and-insert-image-side-by-side">
-<h2>|| IMG2 | :  read and insert image side by side<a class="headerlink" href="#img2-read-and-insert-image-side-by-side" title="Link to this heading">#</a></h2>
+<section id="img2-insert-image-side-by-side">
+<h2>|| IMG2 | :  insert image side by side<a class="headerlink" href="#img2-insert-image-side-by-side" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">|| IMG2 | relative path | cap1 _[F], cap2 _[F], sca1, sca2</p>
 <ul class="simple">
@@ -449,8 +449,8 @@ output scope.</p>
 </ul>
 </aside>
 </section>
-<section id="text-read-and-text-file">
-<h2>|| TEXT | :  read and text file<a class="headerlink" href="#text-read-and-text-file" title="Link to this heading">#</a></h2>
+<section id="text-insert-text-file">
+<h2>|| TEXT | :  insert text file<a class="headerlink" href="#text-insert-text-file" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">|| text | relative path | _[[block tag]]</p>
 <ul class="simple">
@@ -460,8 +460,8 @@ output scope.</p>
 </ul>
 </aside>
 </section>
-<section id="values-read-and-evaluate-values">
-<h2>|| VALUES | :  read and evaluate values<a class="headerlink" href="#values-read-and-evaluate-values" title="Link to this heading">#</a></h2>
+<section id="values-insert-and-evaluate-values">
+<h2>|| VALUES | :  insert and evaluate values<a class="headerlink" href="#values-insert-and-evaluate-values" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">|| VALUES | relative path | title _[V], [rows]</p>
 <ul class="simple">
@@ -544,11 +544,11 @@ output scope.</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key"><strong>KEY</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#append-append-a-pdf-file">|| APPEND | :  append a PDF file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#doc-write-a-doc-file">|| DOC | :  write a doc file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img-read-and-insert-image-file">|| IMG | :  read and insert image file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img2-read-and-insert-image-side-by-side">|| IMG2 | :  read and insert image side by side</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-read-and-text-file">|| TEXT | :  read and text file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#values-read-and-evaluate-values">|| VALUES | :  read and evaluate values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#doc-write-doc-file">|| DOC | :  write doc file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img-insert-image-file">|| IMG | :  insert image file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img2-insert-image-side-by-side">|| IMG2 | :  insert image side by side</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-insert-text-file">|| TEXT | :  insert text file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#values-insert-and-evaluate-values">|| VALUES | :  insert and evaluate values</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-value">=  :  assign value</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#define-equation">:=  :  define equation</a></li>
 </ul>

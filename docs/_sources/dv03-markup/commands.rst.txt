@@ -6,7 +6,7 @@ variables. They typically start in the first column with double vertical bars
 followed by the command name, the relative file path and parameters.
 
 There are two exceptions to this pattern - the assignment ( = ) and definition
-( := ) commands which are used to evaluate equations.
+( := ) commands which are used to assign values and evaluate equations.
 
 In the syntax description below parameter options are separated with
 semi-colons and elements by commas. File locations are specified using paths
@@ -46,7 +46,7 @@ output scope.
     - rv.D
     - PDF, HTML
 
-|| DOC | :  write a doc file
+|| DOC | :  write doc file
 -------------------------------------------
 
 .. raw:: html
@@ -59,7 +59,7 @@ output scope.
     - rv.D
     - PDF, HTML, text
 
-|| IMG | :  read and insert image file
+|| IMG | :  insert image file
 -------------------------------------------
 
 .. raw:: html
@@ -72,7 +72,7 @@ output scope.
     - rv.I, rv.V
     - PDF, HTML
 
-|| IMG2 | :  read and insert image side by side
+|| IMG2 | :  insert image side by side
 --------------------------------------------------
 
 .. raw:: html
@@ -85,7 +85,7 @@ output scope.
     - rv.I, rv.V
     - PDF, HTML
 
-|| TEXT | :  read and text file
+|| TEXT | :  insert text file
 ------------------------------------------
 
 .. raw:: html
@@ -98,7 +98,7 @@ output scope.
     - rv.I, rv.V
     - PDF, HTML
 
-|| VALUES | :  read and evaluate values
+|| VALUES | :  insert and evaluate values
 -------------------------------------------
 
 .. raw:: html

@@ -4,7 +4,8 @@
 VSCode and GitHub have a number of tools that faciliate collaboration when
 writing and sharing rivt files.
 
-[01] GitHub
+**[01]** GitHub
+------------------
 
 GitHub repos facilitate rivt file sharing and discovery.
 

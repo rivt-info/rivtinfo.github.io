@@ -18,6 +18,7 @@ html {
     --pst-font-size-h4: 16px;
     --pst-font-size-h5: 14px;
     --pst-font-size-h6: 14px;
+    --pst-font-size-milli: 14px;
 }
 
 p.topic-title {
