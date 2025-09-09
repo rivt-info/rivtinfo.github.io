@@ -57,14 +57,14 @@ The following terms apply to **rivt** and its framework installation:
 
 This is the recommended method for most users.
 
-#. Install `uv <https://docs.astral.sh/uv/getting-started/installation/#pypi>`_. 
+1. Install `uv <https://docs.astral.sh/uv/getting-started/installation/#pypi>`_. 
    The recommended method for Windows is: 
 
 .. code-block::
       
     winget install --id=astral-sh.uv  -e 
 
-#. Install *rivt* in a subfolder by running the following shell command. This
+2. Install *rivt* in a subfolder by running the following shell command. This
    installs *rivt* in an isolated environment that can be deleted by deleting the
    rivt folder. You can download the command file 
    :download:`here </_downloads/rivt.cmd>`.
