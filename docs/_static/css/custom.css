@@ -55,6 +55,9 @@ p.topic-title {
 
 .bd-sidebar-secondary {
     margin-top: 4em !important;
+}
+
+.bd-sidebar-secondary .sidebar-toc-nav li a {
     font-size: 2em !important;
 }
 
