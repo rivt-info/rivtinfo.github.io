@@ -45,6 +45,10 @@ p.topic-title {
     margin-left: 1em;
 }
 
+.bd-page-content h1:first-of-type {
+    display: none;
+}
+
 .bd-toc-item a {
     font-size: 1.1em;
 }
