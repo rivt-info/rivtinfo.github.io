@@ -9,9 +9,6 @@
 
     <p style="text-align: center; font-size: 1.5rem;">rivt</p>
 
-.. rst-class:: center
-
-    rivt
 
 =============================
 
