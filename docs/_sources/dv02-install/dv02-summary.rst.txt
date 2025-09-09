@@ -60,20 +60,20 @@ This is the recommended method for most users.
 #. Install `uv <https://docs.astral.sh/uv/getting-started/installation/#pypi>`_. 
    The recommended method for Windows is: 
 
-    .. code-block::
+.. code-block::
       
-        winget install --id=astral-sh.uv  -e 
+    winget install --id=astral-sh.uv  -e 
 
 #. Install *rivt* in a subfolder by running the following shell command. This
    installs *rivt* in an isolated environment that can be deleted by deleting the
    rivt folder. You can download the command file 
    :download:`here </_downloads/rivt.cmd>`.
 
-    .. code-block::
+.. code-block::
 
-        init uv rivt
-        cd rivt
-        uv add "git+https://github.com/rivtlib-dev/rivtlib.git#subdirectory=src"
+    init uv rivt
+    cd rivt
+    uv add "git+https://github.com/rivtlib-dev/rivtlib.git#subdirectory=src"
 
 
 .. raw:: html
