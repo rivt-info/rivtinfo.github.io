@@ -1,7 +1,7 @@
 1. Introduction
 =======================
 
-**rivt** is motivated by a need for software that simplifies engineering
+**rivt** meets a need for software that simplifies engineering
 document reuse. Engineering documents typically include text, tables, diagrams,
 equations and calculations from a variety of sources. Although software
 combining these elements is available, engineering document reuse on a wide

@@ -13,7 +13,7 @@ The following terms apply to **rivt** and its framework installation:
 
 .. topic:: *rivt*
 
-    *rivt* is a Python project. In addition to the `rivtlib package <https://www.rivt.info>`_, 
+    *rivt* is a Python project. In addition to the `rivtlib <https://www.rivt.info>`_, 
     it includes :doc:`these packages </dv02-install/python>`. 
     After *rivt* is installed any text editor may be used to write, edit and publish 
     *rivt docs and reports*.
@@ -66,8 +66,8 @@ This is the recommended method for most users.
 
 2. Install *rivt* in a subfolder by running the following shell command. This
    installs *rivt* in an isolated environment that can be deleted by deleting the
-   rivt folder. You can download the command file 
-   :download:`here </_downloads/rivt.cmd>`.
+   rivt folder. The command file is downloaded 
+   :download:`here </_downloads/rivt-install.cmd>`.
 
 .. code-block::
 
