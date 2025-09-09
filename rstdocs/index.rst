@@ -9,6 +9,8 @@
 
     <p style="text-align: center; font-size: 1.5rem;">rivt</p>
 
+Home
+=============
 
 **rivt** is an open source Python project for writing and distributing
 engineering documents. Documents are written in 
