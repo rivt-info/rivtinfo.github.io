@@ -57,7 +57,7 @@ p.topic-title {
     margin-top: 4em !important;
 }
 
-.page-toc.bd-toc-nav {
+.bd-sidebar-secondary-item.page-toc.bd-toc-item {
     font-size: 2em !important;
 }
 
