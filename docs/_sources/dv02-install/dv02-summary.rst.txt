@@ -3,7 +3,7 @@
 
 The following terms apply to **rivt** and its framework installation: 
 
-**[01]** Installation Terms
+**[01]** Types
 ----------------------------------
 
 .. raw:: html
