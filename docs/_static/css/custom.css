@@ -53,12 +53,14 @@ p.topic-title {
     margin-top: 4em !important;
 }
 
+.bd-sidebar-secondary .page-toc h3 {
+    font-size: 1.2rem;
+}
+
 .bd-secondary-sidebar {
     margin-top: 4em !important;
     font-size: 1.3rem !important;
 }
-
-
 
 html[data-theme="light"] a {
     color: hwb(200 13% 47%);

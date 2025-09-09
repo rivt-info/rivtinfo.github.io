@@ -11,7 +11,7 @@ The following terms apply to **rivt** and its framework installation:
     <hr>
 
 
-.. topic:: rivt:
+.. topic:: *rivt*
 
     *rivt* is a Python project. In addition to the `rivtlib package <https://www.rivt.info>`_, 
     it includes :doc:`these packages </dv02-install/python>`. 
@@ -23,7 +23,7 @@ The following terms apply to **rivt** and its framework installation:
     <br>
 
 
-.. topic:: rivt framework:
+.. topic:: *rivt framework*
 
     For productive writing and collaboration the *rivt framework* includes *rivt*, 
     `VSCode <https://code.visualstudio.com/>`_ and 
@@ -36,7 +36,7 @@ The following terms apply to **rivt** and its framework installation:
 
  
 
-.. topic:: extended rivt framework: 
+.. topic:: *extended rivt framework*
 
     The *extended rivt framework* includes the following additional open source
     programs and services:
