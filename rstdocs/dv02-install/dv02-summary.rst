@@ -60,7 +60,7 @@ This is the recommended method for most users.
 #. Install `uv <https://docs.astral.sh/uv/getting-started/installation/#pypi>`_. 
    The recommended method for Windows is: 
 
-    ::
+    .. code-block::
       
         winget install --id=astral-sh.uv  -e 
 
@@ -69,8 +69,8 @@ This is the recommended method for most users.
    rivt folder. You can download the command file 
    :download:`here </_downloads/rivt.cmd>`.
 
-    ::
-        
+    .. code-block::
+
         init uv rivt
         cd rivt
         uv add "git+https://github.com/rivtlib-dev/rivtlib.git#subdirectory=src"
