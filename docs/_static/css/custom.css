@@ -18,7 +18,7 @@ html {
     --pst-font-size-h4: 16px;
     --pst-font-size-h5: 14px;
     --pst-font-size-h6: 14px;
-    --pst-page
+    --pst-page-navigation-heading-2: 16px;
 }
 
 p.topic-title {
@@ -57,7 +57,7 @@ p.topic-title {
     margin-top: 4em !important;
 }
 
-.bd-sidebar-secondary-item li a {
+.bd-toc-nav page-toc {
     font-size: 2em !important;
 }
 
@@ -85,13 +85,11 @@ a.visited {
 .right-next {
     color: hwb(200 15% 27%);
     font-weight: 300;
-    /* Replace with a color name or hex code */
 }
 
 .left-prev {
     color: hwb(200 15% 27%);
     font-weight: 300;
-    /* Replace with a color name or hex code */
 }
 
 .center {
@@ -105,8 +103,6 @@ a.visited {
 
 hr {
     height: 3px;
-    /* Adjust thickness as needed */
     background-color: hwb(200 15% 27%);
-    /* Example: red color */
     border: none;
 }
