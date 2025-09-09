@@ -411,7 +411,9 @@ programs and services:</p>
 <li><p>Install <a class="reference external" href="https://docs.astral.sh/uv/getting-started/installation/#pypi">uv</a>.
 The recommended method for Windows is:</p>
 <blockquote>
-<div><p>winget install –id=astral-sh.uv  -e</p>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">winget</span> <span class="n">install</span> <span class="o">--</span><span class="nb">id</span><span class="o">=</span><span class="n">astral</span><span class="o">-</span><span class="n">sh</span><span class="o">.</span><span class="n">uv</span>  <span class="o">-</span><span class="n">e</span>
+</pre></div>
+</div>
 </div></blockquote>
 </li>
 <li><p>Install <em>rivt</em> in a subfolder by running the following shell command. This
@@ -419,9 +421,11 @@ installs <em>rivt</em> in an isolated environment that can be deleted by deletin
 rivt folder. You can download the command file
 <a class="reference download internal" download="" href="../_downloads/6e017b8c8c3ba4fa748d3b45345ccd65/rivt.cmd"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <blockquote>
-<div><p>init uv rivt
-cd rivt
-uv add “git+https://github.com/rivtlib-dev/rivtlib.git#subdirectory=src”</p>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">init</span> <span class="n">uv</span> <span class="n">rivt</span>
+<span class="n">cd</span> <span class="n">rivt</span>
+<span class="n">uv</span> <span class="n">add</span> <span class="s2">&quot;git+https://github.com/rivtlib-dev/rivtlib.git#subdirectory=src&quot;</span>
+</pre></div>
+</div>
 </div></blockquote>
 </li>
 </ol>
