@@ -12,6 +12,7 @@
 
 .. raw:: html
 
+    <br>
     <hr>
 
 
@@ -36,6 +37,7 @@ are here. A search interface for *rivt files* on GitHub is
 .. raw:: html
 
     <hr>
+    <br>
 
 rivt User Manual
 ==================
