@@ -440,7 +440,7 @@ function writes a doc as a text, PDF or HTML file. The <em>Skip</em> and <em>Qui
 functions are used primarily in interactive editing and processing.</p>
 </section>
 <section id="rivt-string">
-<h2>[03] rivt-string<a class="headerlink" href="#rivt-string" title="Link to this heading">#</a></h2>
+<h2><strong>[03]</strong> rivt string<a class="headerlink" href="#rivt-string" title="Link to this heading">#</a></h2>
 <p>An API function starts in the first column. Its <em>rivt string</em> argument is
 enclosed in triple quotes and begins with a header that specifies section
 labeling and processing. The section content follows the header on subsequent
@@ -458,7 +458,7 @@ details.</p>
 </div>
 </section>
 <section id="docs">
-<h2>[04] Docs<a class="headerlink" href="#docs" title="Link to this heading">#</a></h2>
+<h2><strong>[04]</strong> Docs<a class="headerlink" href="#docs" title="Link to this heading">#</a></h2>
 <p>Docs are formatted output files specified by the <em>Doc</em> function. Docs include
 text (.txt), HTML (.html) and PDF (.pdf) files. Each output type is generated
 from the same <em>rivt file</em>.</p>
@@ -468,6 +468,17 @@ library. Its advantage includes a much smaller library size and it is the
 default PDF Doc for the rivt framework. A PDF doc produced using <em>tpdf</em>
 requires a separate installation of the large texlive LaTeX library. Its
 advantage is extensive control over the Doc appearance.</p>
+</section>
+<section id="command-line">
+<h2><strong>[05]</strong> Command Line<a class="headerlink" href="#command-line" title="Link to this heading">#</a></h2>
+<p>rivtlib is generally run in an IDE. If run from the command line the command
+takes one of two forms depending on whether the file is part of a report. If
+part of a report the form is:</p>
+<blockquote>
+<div><p>python -m rivtlib rvddss-filename.py</p>
+</div></blockquote>
+<p>where <em>rvddss-</em> is the doc number and*dd* and <em>ss</em> are integers identifying the
+report division and subdivision respectively.</p>
 </section>
 </section>
 
@@ -520,8 +531,9 @@ advantage is extensive control over the Doc appearance.</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import-rivtlib"><strong>[01]</strong> import rivtlib</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api-functions"><strong>[02]</strong> API functions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-string">[03] rivt-string</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docs">[04] Docs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-string"><strong>[03]</strong> rivt string</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docs"><strong>[04]</strong> Docs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#command-line"><strong>[05]</strong> Command Line</a></li>
 </ul>
   </nav></div>
 

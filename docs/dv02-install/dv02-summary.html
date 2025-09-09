@@ -59,7 +59,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'dv02-install/dv02-summary';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="2.4 - Python and Dependencies" href="python.html" />
+    <link rel="next" title="2.1 - Python and Dependencies" href="python.html" />
     <link rel="prev" title="1.4 Small example" href="../dv01-intro/smallex.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -313,8 +313,8 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="python.html">2.4 - Python and Dependencies</a></li>
-<li class="toctree-l1"><a class="reference internal" href="vscode.html">2.5 - VSCode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python.html">2.1 - Python and Dependencies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vscode.html">2.2 - VSCode</a></li>
 </ul>
 </div>
 </nav></div>
@@ -374,28 +374,26 @@
                   
   <section id="installation">
 <h1>2. Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h1>
-<p>The following terms apply to <strong>rivt</strong> and its framework installation:</p>
-<section id="types">
-<h2><strong>[01]</strong> Types<a class="headerlink" href="#types" title="Link to this heading">#</a></h2>
+<section id="installation-types">
+<h2><strong>[01]</strong> Installation types<a class="headerlink" href="#installation-types" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title"><em>rivt</em></p>
 <p><em>rivt</em> is a Python project. In addition to the <a class="reference external" href="https://www.rivt.info">rivtlib</a>,
-it includes <a class="reference internal" href="python.html"><span class="doc">these packages</span></a>.
-After <em>rivt</em> is installed any text editor may be used to write, edit and publish
-<em>rivt docs and reports</em>.</p>
+it includes <a class="reference internal" href="python.html"><span class="doc">these packages</span></a>.  <em>rivt docs and reports</em>
+may be written and published using a text editor.</p>
 </aside>
 <br><aside class="topic">
-<p class="topic-title"><em>rivt framework</em></p>
-<p>For productive writing and collaboration the <em>rivt framework</em> includes <em>rivt</em>,
-<a class="reference external" href="https://code.visualstudio.com/">VSCode</a> and
-<a class="reference external" href="https://marketplace.visualstudio.com/vscode">VSCode extensions</a>.</p>
+<p class="topic-title"><em>VSCode framework</em></p>
+<p>The <em>VSCode framework</em> includes productiviy tools for writing and
+collaborating on <em>rivt files</em>. It includes <a class="reference external" href="https://code.visualstudio.com/">VSCode</a>
+and <a class="reference external" href="https://marketplace.visualstudio.com/vscode">extensions</a>.</p>
 </aside>
 <br><aside class="topic">
-<p class="topic-title"><em>extended rivt framework</em></p>
-<p>The <em>extended rivt framework</em> includes the following additional open source
+<p class="topic-title"><em>complete framework</em></p>
+<p>The <em>complete framework</em> adds the following additional open source
 programs and services:</p>
 <ol class="arabic simple">
-<li><p><a class="reference external" href="https://git-scm.com">Git</a> and a <a class="reference external" href="hhttps://github.com">GitHub</a> account for version control and collaboration</p></li>
+<li><p><a class="reference external" href="https://git-scm.com">Git</a> and <a class="reference external" href="hhttps://github.com">GitHub</a> for version control and collaboration</p></li>
 <li><p><a class="reference external" href="https://www.tug.org/texlive/">LaTeX</a> for precise typesetting</p></li>
 <li><p><a class="reference external" href="https://qcad.io/en/">QCAD</a> for diagramming</p></li>
 </ol>
@@ -412,11 +410,11 @@ The recommended method for Windows is:</p></li>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">winget</span> <span class="n">install</span> <span class="o">--</span><span class="nb">id</span><span class="o">=</span><span class="n">astral</span><span class="o">-</span><span class="n">sh</span><span class="o">.</span><span class="n">uv</span>  <span class="o">-</span><span class="n">e</span>
 </pre></div>
 </div>
-<ol class="arabic simple" start="2">
-<li><p>Install <em>rivt</em> in a subfolder by running the following shell command. This
-installs <em>rivt</em> in an isolated environment that can be deleted by deleting the
-rivt folder. The command file is downloaded
-<a class="reference download internal" download="" href="../_downloads/d1584fa3f6092072833945a85e5048ff/rivt-install.cmd"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p></li>
+<ol class="arabic simple">
+<li><p>Run the following commands or download and run this
+<a class="reference download internal" download="" href="../_downloads/d1584fa3f6092072833945a85e5048ff/rivt-install.cmd"><code class="xref download docutils literal notranslate"><span class="pre">command</span> <span class="pre">file</span></code></a>. This creates a
+subfolder named rivt (it can be renamed in the init command) and installs
+rivt from GitHub in the subfolder.</p></li>
 </ol>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">init</span> <span class="n">uv</span> <span class="n">rivt</span>
 <span class="n">cd</span> <span class="n">rivt</span>
@@ -426,8 +424,8 @@ rivt folder. The command file is downloaded
 <br><p><strong>Method 2 - System</strong></p>
 <p>Use Python installers and <em>pip</em> to install the packages here.</p>
 </section>
-<section id="install-rivt-framework">
-<h2><strong>[03]</strong> Install <em>rivt framework</em><a class="headerlink" href="#install-rivt-framework" title="Link to this heading">#</a></h2>
+<section id="install-vscode-framework">
+<h2><strong>[03]</strong> Install <em>VSCode framework</em><a class="headerlink" href="#install-vscode-framework" title="Link to this heading">#</a></h2>
 <hr><p><strong>Method 1 - VSCode</strong></p>
 <ol class="arabic simple">
 <li><p>Install <em>rivt</em></p></li>
@@ -441,9 +439,12 @@ VSCode and all of the required libraries and extensions. <em>VSCode</em> and its
 <em>rivt-markup</em> extensions are installed separately to complete a <strong>rivt
 framework</strong>.</p>
 </section>
-<section id="install-extended-rivt-framework">
-<h2><strong>[04]</strong> Install <em>extended rivt framework</em><a class="headerlink" href="#install-extended-rivt-framework" title="Link to this heading">#</a></h2>
-<hr><div class="toctree-wrapper compound">
+<section id="install-complete-framework">
+<h2><strong>[04]</strong> Install <em>complete  framework</em><a class="headerlink" href="#install-complete-framework" title="Link to this heading">#</a></h2>
+<hr><p><a class="reference external" href="https://git-scm.com">Git</a> and a <a class="reference external" href="hhttps://github.com">GitHub</a></p>
+<p><a class="reference external" href="https://www.tug.org/texlive/">LaTeX</a></p>
+<p><a class="reference external" href="https://qcad.io/en/">QCAD</a></p>
+<div class="toctree-wrapper compound">
 </div>
 </section>
 </section>
@@ -472,7 +473,7 @@ framework</strong>.</p>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">2.4 - Python and Dependencies</p>
+        <p class="prev-next-title">2.1 - Python and Dependencies</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -495,10 +496,10 @@ framework</strong>.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types"><strong>[01]</strong> Types</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-types"><strong>[01]</strong> Installation types</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-rivt"><strong>[02]</strong> Install <em>rivt</em></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-rivt-framework"><strong>[03]</strong> Install <em>rivt framework</em></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-extended-rivt-framework"><strong>[04]</strong> Install <em>extended rivt framework</em></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-vscode-framework"><strong>[03]</strong> Install <em>VSCode framework</em></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-complete-framework"><strong>[04]</strong> Install <em>complete  framework</em></a></li>
 </ul>
   </nav></div>
 

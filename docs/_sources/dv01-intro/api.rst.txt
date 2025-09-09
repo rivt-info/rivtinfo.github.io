@@ -47,7 +47,7 @@ function writes a doc as a text, PDF or HTML file. The *Skip* and *Quit*
 functions are used primarily in interactive editing and processing.
 
 
-[03] rivt-string
+**[03]** rivt string
 ----------------------------
 
 An API function starts in the first column. Its *rivt string* argument is
@@ -69,7 +69,7 @@ details.
         """)
 
 
-[04] Docs
+**[04]** Docs
 ----------------------------
 
 Docs are formatted output files specified by the *Doc* function. Docs include
@@ -82,3 +82,15 @@ library. Its advantage includes a much smaller library size and it is the
 default PDF Doc for the rivt framework. A PDF doc produced using *tpdf*
 requires a separate installation of the large texlive LaTeX library. Its
 advantage is extensive control over the Doc appearance.
+
+**[05]** Command Line 
+------------------------
+
+rivtlib is generally run in an IDE. If run from the command line the command
+takes one of two forms depending on whether the file is part of a report. If
+part of a report the form is:
+
+    python -m rivtlib rvddss-filename.py
+
+where *rvddss-* is the doc number and*dd* and *ss* are integers identifying the
+report division and subdivision respectively. 

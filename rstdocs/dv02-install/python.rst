@@ -1,4 +1,4 @@
-2.4 - Python and Dependencies
+2.1 - Python and Dependencies
 ==============================
 
 

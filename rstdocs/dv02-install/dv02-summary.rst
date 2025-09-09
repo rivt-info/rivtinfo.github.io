@@ -1,9 +1,8 @@
 2. Installation
 ==================   
 
-The following terms apply to **rivt** and its framework installation: 
 
-**[01]** Types
+**[01]** Installation types
 ----------------------------------
 
 .. raw:: html
@@ -14,34 +13,31 @@ The following terms apply to **rivt** and its framework installation:
 .. topic:: *rivt*
 
     *rivt* is a Python project. In addition to the `rivtlib <https://www.rivt.info>`_, 
-    it includes :doc:`these packages </dv02-install/python>`. 
-    After *rivt* is installed any text editor may be used to write, edit and publish 
-    *rivt docs and reports*.
+    it includes :doc:`these packages </dv02-install/python>`.  *rivt docs and reports*
+    may be written and published using a text editor.
 
 .. raw:: html
 
     <br>
 
 
-.. topic:: *rivt framework*
+.. topic:: *VSCode framework*
 
-    For productive writing and collaboration the *rivt framework* includes *rivt*, 
-    `VSCode <https://code.visualstudio.com/>`_ and 
-    `VSCode extensions <https://marketplace.visualstudio.com/vscode>`_.
+    The *VSCode framework* includes productiviy tools for writing and
+    collaborating on *rivt files*. It includes `VSCode <https://code.visualstudio.com/>`_
+    and `extensions <https://marketplace.visualstudio.com/vscode>`_.
 
 
 .. raw:: html
 
     <br>
 
- 
+.. topic:: *complete framework*
 
-.. topic:: *extended rivt framework*
-
-    The *extended rivt framework* includes the following additional open source
+    The *complete framework* adds the following additional open source
     programs and services:
 
-    #. `Git <https://git-scm.com>`_ and a `GitHub <hhttps://github.com>`_ account for version control and collaboration
+    #. `Git <https://git-scm.com>`_ and `GitHub <hhttps://github.com>`_ for version control and collaboration
     #. `LaTeX <https://www.tug.org/texlive/>`_ for precise typesetting
     #. `QCAD <https://qcad.io/en/>`_ for diagramming
 
@@ -64,10 +60,10 @@ This is the recommended method for most users.
       
     winget install --id=astral-sh.uv  -e 
 
-2. Install *rivt* in a subfolder by running the following shell command. This
-   installs *rivt* in an isolated environment that can be deleted by deleting the
-   rivt folder. The command file is downloaded 
-   :download:`here </_downloads/rivt-install.cmd>`.
+1. Run the following commands or download and run this
+   :download:`command file </_downloads/rivt-install.cmd>`. This creates a
+   subfolder named rivt (it can be renamed in the init command) and installs 
+   rivt from GitHub in the subfolder.
 
 .. code-block::
 
@@ -86,7 +82,7 @@ This is the recommended method for most users.
 Use Python installers and *pip* to install the packages here. 
 
 
-**[03]** Install *rivt framework*
+**[03]** Install *VSCode framework*
 ------------------------------------------
 
 .. raw:: html
@@ -111,12 +107,19 @@ VSCode and all of the required libraries and extensions. *VSCode* and its
 framework**.
 
 
-**[04]** Install *extended rivt framework*
+**[04]** Install *complete  framework*
 --------------------------------------------------
 
 .. raw:: html
 
     <hr>
+
+
+`Git <https://git-scm.com>`_ and a `GitHub <hhttps://github.com>`_ 
+
+`LaTeX <https://www.tug.org/texlive/>`_ 
+
+`QCAD <https://qcad.io/en/>`_ 
 
 
 
