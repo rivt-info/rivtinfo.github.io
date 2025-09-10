@@ -10,7 +10,7 @@ and evaluate equations.
 In the syntax description below parameter options are separated with
 semi-colons and parameter elements by commas. 
 
-Most commands have a *relative path* parameter with three modes::
+Most commands have a *relative path* parameter with three modes:
 
     *rvdefault* : when this value is provided *rivt* looks for the file in the
     rivt file division resource directory. For example if the rivt file is in
@@ -24,7 +24,8 @@ Most commands have a *relative path* parameter with three modes::
     *v02* is specified the *v02* folder in the *source* folder is searched.
 
 
- Project folder organization is described `here <5-folders.html>`_
+Project folder organization is described `here <5-folders.html>`_
+
 
 **KEY**  
 -------------
