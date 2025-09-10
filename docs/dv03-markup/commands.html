@@ -381,9 +381,9 @@
                   
   <section id="commands">
 <h1>3.4 Commands<a class="headerlink" href="#commands" title="Link to this heading">#</a></h1>
-<p><em>rivt commands</em> read and write external files and assign values to
-variables. They typically start in the first column with double vertical bars
-followed by the command name, the relative file path and parameters.</p>
+<p><em>rivt commands</em> read and write external files and assign values to variables.
+They typically start in the first column with a vertical bar ( | ) followed by
+the command name and parameters.</p>
 <p>There are two exceptions to this pattern - the assignment ( = ) and definition
 ( := ) commands which are used to assign values and evaluate equations.</p>
 <p>In the syntax description below parameter options are separated with
@@ -395,75 +395,92 @@ parameter options are separated by semi-colons. Commands have a function and
 output scope.</p>
 <section id="key">
 <h2><strong>KEY</strong><a class="headerlink" href="#key" title="Link to this heading">#</a></h2>
-<p>|| COMMAND | : description</p>
 <hr><aside class="topic">
-<p class="topic-title">command syntax</p>
-<ul class="simple">
+<p class="topic-title">| COMMAND | parameters</p>
+<blockquote>
+<div><ul class="simple">
 <li><p>input or output file types</p></li>
 <li><p>function scope</p></li>
 <li><p>applicable doc types</p></li>
 </ul>
+</div></blockquote>
+<div class="line-block">
+<div class="line">APPEND |   append a PDF file</div>
+</div>
 </aside>
-</section>
-<section id="append-append-a-pdf-file">
-<h2>|| APPEND | :  append a PDF file<a class="headerlink" href="#append-append-a-pdf-file" title="Link to this heading">#</a></h2>
+<hr class="docutils" />
 <hr><aside class="topic">
-<p class="topic-title">|| APPEND | relative path | num; nonum</p>
-<ul class="simple">
+<p class="topic-title">| APPEND | relative path | filename | num; nonum</p>
+<blockquote>
+<div><ul class="simple">
 <li><p>reads PDF files</p></li>
 <li><p>rv.D</p></li>
 <li><p>PDF, HTML</p></li>
 </ul>
+</div></blockquote>
+<div class="line-block">
+<div class="line">DOC | :  write doc file</div>
+</div>
 </aside>
-</section>
-<section id="doc-write-doc-file">
-<h2>|| DOC | :  write doc file<a class="headerlink" href="#doc-write-doc-file" title="Link to this heading">#</a></h2>
+<hr class="docutils" />
 <hr><aside class="topic">
-<p class="topic-title">|| DOC | relative path | rpdf; txt; html; tpdf</p>
-<ul class="simple">
+<p class="topic-title">| DOC | relative path | filename | rpdf; txt; html; tpdf</p>
+<blockquote>
+<div><ul class="simple">
 <li><p>writes PDF or HTML files</p></li>
 <li><p>rv.D</p></li>
 <li><p>PDF, HTML, text</p></li>
 </ul>
+</div></blockquote>
+<div class="line-block">
+<div class="line">IMG | :  insert image file</div>
+</div>
 </aside>
-</section>
-<section id="img-insert-image-file">
-<h2>|| IMG | :  insert image file<a class="headerlink" href="#img-insert-image-file" title="Link to this heading">#</a></h2>
+<hr class="docutils" />
 <hr><aside class="topic">
-<p class="topic-title">|| IMG | relative path | caption _[F], scale</p>
-<ul class="simple">
+<p class="topic-title">| IMG | relative path | filename | caption _[F], scale</p>
+<blockquote>
+<div><ul class="simple">
 <li><p>reads PNG and JPEG files (.png, jpg)</p></li>
 <li><p>rv.I, rv.V</p></li>
 <li><p>PDF, HTML</p></li>
 </ul>
+</div></blockquote>
+<div class="line-block">
+<div class="line">IMG2 | :  insert images side by side</div>
+</div>
 </aside>
-</section>
-<section id="img2-insert-image-side-by-side">
-<h2>|| IMG2 | :  insert image side by side<a class="headerlink" href="#img2-insert-image-side-by-side" title="Link to this heading">#</a></h2>
+<hr class="docutils" />
 <hr><aside class="topic">
-<p class="topic-title">|| IMG2 | relative path | cap1 _[F], cap2 _[F], sca1, sca2</p>
-<ul class="simple">
+<p class="topic-title">| IMG2 | rel path | fname1, fname2 | cap1 _[F], cap2 _[F], sc1, sc2</p>
+<blockquote>
+<div><ul class="simple">
 <li><p>reads PNG and JPEG files (.png, jpg)</p></li>
 <li><p>rv.I, rv.V</p></li>
 <li><p>PDF, HTML</p></li>
 </ul>
+</div></blockquote>
+<div class="line-block">
+<div class="line">TEXT | :  insert text file</div>
+</div>
 </aside>
-</section>
-<section id="text-insert-text-file">
-<h2>|| TEXT | :  insert text file<a class="headerlink" href="#text-insert-text-file" title="Link to this heading">#</a></h2>
+<hr class="docutils" />
 <hr><aside class="topic">
-<p class="topic-title">|| text | relative path | _[[block tag]]</p>
-<ul class="simple">
+<p class="topic-title">| text | relative path | filename | _[[block tag]]</p>
+<blockquote>
+<div><ul class="simple">
 <li><p>reads TEXT and TEX files (.txt, .tex)</p></li>
 <li><p>rv.I, rv.V</p></li>
 <li><p>PDF, HTML</p></li>
 </ul>
+</div></blockquote>
+<div class="line-block">
+<div class="line">VALUES | :  insert and evaluate values</div>
+</div>
 </aside>
-</section>
-<section id="values-insert-and-evaluate-values">
-<h2>|| VALUES | :  insert and evaluate values<a class="headerlink" href="#values-insert-and-evaluate-values" title="Link to this heading">#</a></h2>
+<hr class="docutils" />
 <hr><aside class="topic">
-<p class="topic-title">|| VALUES | relative path | title _[V], [rows]</p>
+<p class="topic-title">| VALUES | relative path | filename | title _[V], [rows]</p>
 <ul class="simple">
 <li><p>reads values.txt file</p></li>
 <li><p>rv.I, rv.V</p></li>
@@ -474,7 +491,7 @@ output scope.</p>
 <section id="assign-value">
 <h2>=  :  assign value<a class="headerlink" href="#assign-value" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">a = 10*IN | unit1, unit2 | description</p>
+<p class="topic-title">a = 10*IN | unit1, unit2 | filename | description</p>
 <ul class="simple">
 <li><p>assigns value to a variable</p></li>
 <li><p>rv.V</p></li>
@@ -485,7 +502,7 @@ output scope.</p>
 <section id="define-equation">
 <h2>:=  :  define equation<a class="headerlink" href="#define-equation" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">b := a * 10 | unit1, unit2 | var-deci, eq-deci</p>
+<p class="topic-title">b := a * 10 | unit1, unit2, var-deci, eq-deci</p>
 <ul class="simple">
 <li><p>defines a variable in terms of expression</p></li>
 <li><p>rv.V</p></li>
@@ -543,12 +560,6 @@ output scope.</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key"><strong>KEY</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#append-append-a-pdf-file">|| APPEND | :  append a PDF file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#doc-write-doc-file">|| DOC | :  write doc file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img-insert-image-file">|| IMG | :  insert image file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img2-insert-image-side-by-side">|| IMG2 | :  insert image side by side</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-insert-text-file">|| TEXT | :  insert text file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#values-insert-and-evaluate-values">|| VALUES | :  insert and evaluate values</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-value">=  :  assign value</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#define-equation">:=  :  define equation</a></li>
 </ul>
