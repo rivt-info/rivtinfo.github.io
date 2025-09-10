@@ -13,9 +13,8 @@ semi-colons and parameter elements by commas.
 Most commands have a *relative path* parameter with three modes:
 
     *rvdefault* : when this value is provided *rivt* looks for the file in the
-    rivt file division resource directory. For example if the rivt file is in
-    division 1 and the API function is *Insert* the folder *i01* in *source* is
-    searched.
+    division source directory. For example if the rivt file is in division 1
+    and the API function is *Insert* the folder *i01* in *source* is searched.
 
     *rvlocal* : when this value is provided *rivt* looks for the file in the
     rivt file directory.
@@ -24,7 +23,7 @@ Most commands have a *relative path* parameter with three modes:
     *v02* is specified the *v02* folder in the *source* folder is searched.
 
 
-Project folder organization is described `here <5-folders.html>`_
+Project folder organization is described :doc:`here </dv04-reports/folders>`
 
 
 **KEY**  
@@ -56,7 +55,7 @@ Project folder organization is described `here <5-folders.html>`_
     - rv.D
     - PDF, HTML
 
-**DOC** - write doc file
+**DOC** - writes doc file
 -------------------------------------------
 
 .. raw:: html
@@ -64,11 +63,14 @@ Project folder organization is described `here <5-folders.html>`_
     <hr>
 
 
-.. topic:: | DOC | relative path | filename | rpdf; txt; html; tpdf
+.. topic:: | DOC | relative path |  txt; html; rpdf; tpdf
 
-    - writes PDF or HTML files
+    - writes text, PDF or HTML files
     - rv.D
     - PDF, HTML, text
+  
+    Exits after writing doc file
+
 
 **IMG** - insert image file
 -------------------------------------------
