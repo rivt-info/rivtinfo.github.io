@@ -8,8 +8,9 @@ assignment ( = ) and definition ( := ) commands which are used to assign values
 and evaluate equations.
 
 In the syntax description below parameter options are separated with
-semi-colons and elements by commas. Most commands have a *relative path*
-parameter when has three modes:
+semi-colons and parameter elements by commas. 
+
+Most commands have a *relative path* parameter with three modes::
 
     *rvdefault* : when this value is provided *rivt* looks for the file in the
     rivt file division resource directory. For example if the rivt file is in
@@ -21,6 +22,7 @@ parameter when has three modes:
 
     specified source : a specific folder may also be provided. For example if
     *v02* is specified the *v02* folder in the *source* folder is searched.
+
 
  Project folder organization is described `here <5-folders.html>`_
 
