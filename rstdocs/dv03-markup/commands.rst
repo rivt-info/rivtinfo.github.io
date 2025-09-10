@@ -2,20 +2,27 @@
 ===================
 
 *rivt commands* read and write external files and assign values to variables.
-They typically start in the first column with a vertical bar ( | ) followed by 
-the command name and parameters.
-
-There are two exceptions to this pattern - the assignment ( = ) and definition
-( := ) commands which are used to assign values and evaluate equations.
+They typically start in the first column with a vertical bar ( | ) followed by
+the command name and parameters. The exceptions to this pattern are the
+assignment ( = ) and definition ( := ) commands which are used to assign values
+and evaluate equations.
 
 In the syntax description below parameter options are separated with
-semi-colons and elements by commas. File locations are specified using paths
-relative to the rivt file location. Using the standard folder structure is
-strongly recommended. Folder organization is described `here <5-folders.html>`_.
+semi-colons and elements by commas. Most commands have a *relative path*
+parameter when has three modes:
 
-In the syntax description below, parameters are separated by commas and
-parameter options are separated by semi-colons. Commands have a function and
-output scope.
+    *rvdefault* : when this value is provided *rivt* looks for the file in the
+    rivt file division resource directory. For example if the rivt file is in
+    division 1 and the API function is *Insert* the folder *i01* in *source* is
+    searched.
+
+    *rvlocal* : when this value is provided *rivt* looks for the file in the
+    rivt file directory.
+
+    specified source : a specific folder may also be provided. For example if
+    *v02* is specified the *v02* folder in the *source* folder is searched.
+
+ Project folder organization is described `here <5-folders.html>`_
 
 **KEY**  
 -------------
@@ -99,7 +106,7 @@ output scope.
     - rv.I, rv.V
     - PDF, HTML
 
-**VALUES** - insert and evaluate values
+**VALUES** - insert values
 -------------------------------------------
 
 .. raw:: html
@@ -112,7 +119,7 @@ output scope.
     - rv.I, rv.V
     - PDF, HTML
 
-**=  :** - assign value
+**=** - assign value
 -------------------------------------------
 
 .. raw:: html

@@ -383,16 +383,25 @@
 <h1>3.4 Commands<a class="headerlink" href="#commands" title="Link to this heading">#</a></h1>
 <p><em>rivt commands</em> read and write external files and assign values to variables.
 They typically start in the first column with a vertical bar ( | ) followed by
-the command name and parameters.</p>
-<p>There are two exceptions to this pattern - the assignment ( = ) and definition
-( := ) commands which are used to assign values and evaluate equations.</p>
+the command name and parameters. The exceptions to this pattern are the
+assignment ( = ) and definition ( := ) commands which are used to assign values
+and evaluate equations.</p>
 <p>In the syntax description below parameter options are separated with
-semi-colons and elements by commas. File locations are specified using paths
-relative to the rivt file location. Using the standard folder structure is
-strongly recommended. Folder organization is described <a class="reference external" href="5-folders.html">here</a>.</p>
-<p>In the syntax description below, parameters are separated by commas and
-parameter options are separated by semi-colons. Commands have a function and
-output scope.</p>
+semi-colons and elements by commas. Most commands have a <em>relative path</em>
+parameter when has three modes:</p>
+<blockquote>
+<div><blockquote>
+<div><p><em>rvdefault</em> : when this value is provided <em>rivt</em> looks for the file in the
+rivt file division resource directory. For example if the rivt file is in
+division 1 and the API function is <em>Insert</em> the folder <em>i01</em> in <em>source</em> is
+searched.</p>
+<p><em>rvlocal</em> : when this value is provided <em>rivt</em> looks for the file in the
+rivt file directory.</p>
+<p>specified source : a specific folder may also be provided. For example if
+<em>v02</em> is specified the <em>v02</em> folder in the <em>source</em> folder is searched.</p>
+</div></blockquote>
+<p>Project folder organization is described <a class="reference external" href="5-folders.html">here</a></p>
+</div></blockquote>
 <section id="key">
 <h2><strong>KEY</strong><a class="headerlink" href="#key" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
@@ -459,8 +468,8 @@ output scope.</p>
 </ul>
 </aside>
 </section>
-<section id="values-insert-and-evaluate-values">
-<h2><strong>VALUES</strong> - insert and evaluate values<a class="headerlink" href="#values-insert-and-evaluate-values" title="Link to this heading">#</a></h2>
+<section id="values-insert-values">
+<h2><strong>VALUES</strong> - insert values<a class="headerlink" href="#values-insert-values" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| VALUES | relative path | filename | title _[V], [rows]</p>
 <ul class="simple">
@@ -471,7 +480,7 @@ output scope.</p>
 </aside>
 </section>
 <section id="assign-value">
-<h2><strong>=  :</strong> - assign value<a class="headerlink" href="#assign-value" title="Link to this heading">#</a></h2>
+<h2><strong>=</strong> - assign value<a class="headerlink" href="#assign-value" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">a = 10*IN | unit1, unit2 | description</p>
 <ul class="simple">
@@ -547,8 +556,8 @@ output scope.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img-insert-image-file"><strong>IMG</strong> - insert image file</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img2-insert-images-side-by-side"><strong>IMG2</strong> - insert images side by side</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-insert-text-file"><strong>TEXT</strong> - insert text file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#values-insert-and-evaluate-values"><strong>VALUES</strong> - insert and evaluate values</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-value"><strong>=  :</strong> - assign value</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#values-insert-values"><strong>VALUES</strong> - insert values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-value"><strong>=</strong> - assign value</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#define-equation"><strong>:=</strong> - define equation</a></li>
 </ul>
   </nav></div>
