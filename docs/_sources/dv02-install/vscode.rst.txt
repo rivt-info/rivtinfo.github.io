@@ -1,5 +1,5 @@
-2.2 - VSCode
-===================
+2.2 - VSCode and Extensions
+=============================
 
 The rivt VSCode profile includes shortcuts for common editing functions and
 snippets for API functions and commands.

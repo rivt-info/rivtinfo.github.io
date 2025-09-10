@@ -1,21 +1,22 @@
 1. Introduction
 =======================
 
-**rivt** meets a need for software that simplifies engineering
-document reuse. Engineering documents typically include text, tables, diagrams,
-equations and calculations from a variety of sources. Although software
-combining these elements is available, engineering document reuse on a wide
-scale is limited. The limitations can be summarized as:
+**rivt** is software that simplifies engineering document reuse. Writing
+engineering documents typically involves text, tables, diagrams, equations and
+calculations from a variety of sources. Although software combining these
+elements is available, picking up an arbitrary engineering document and
+efficiently reusing it is generally impossible. The limitations preventing
+it include:
 
-- use is divided among many incompatible programs
+- document production is divided among many incompatible programs
 - newer documents are inaccessible without frequently updating software
 - update costs are high
 - software is limited to specific platforms
 - collaboration and version control is limited
-- report generation is limited
+- report generation features are limited
   
-**rivt** is designed to address these limitations. The table below compares
-representative software in terms of features that affect reuse.
+**rivt** addresses these limitations. The table below compares
+representative software for features that affect ease of reuse.
 
 .. rst-class:: center
 

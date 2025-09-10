@@ -31,6 +31,10 @@
     #. *LaTeX* for precise typesetting.
     #. *QCAD* for diagramming.
 
+.. raw:: html
+
+    <br>
+
 .. topic:: *rivt.zip*
 
     A single folder, portable version of *rivt* integrated with *VSCode*.
@@ -80,7 +84,7 @@ The installation can be deleted by simply deleting the folder.
 
 Use `Python installers <https://www.python.org/downloads/>`_ and 
 `pip <https://pypi.org/project/pip/>`_ to install packages from 
-`PyPI <https://pypi.org/>_`.  The requirements.txt file is here. 
+`PyPI <https://pypi.org/>`_.  The requirements.txt file is here. 
 
 
 
@@ -106,14 +110,14 @@ The *rivt framework* includes installation of the following programs:
 **[04]** Download *rivt.zip*
 --------------------------------------------------
 
-*rivt.zip* is a single folder, portable version of a *rivt* and *VSCode*
+*rivt.zip* is a portable, single folder version of *rivt* and *VSCode*
 including libraries and extensions. It can be downloaded here.
 
 The advantages of this setup include:
 
 #. No installation steps - just unzip.
 #. Can be moved anywhere.
-#. Ensured compatiblity between libraries. 
+#. Ensured compatiblity and integration between libraries. 
 
 Disadvantages include:
 
