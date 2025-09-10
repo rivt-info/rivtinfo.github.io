@@ -378,25 +378,26 @@
 <h2><strong>[01]</strong> Installation types<a class="headerlink" href="#installation-types" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title"><em>rivt</em></p>
-<p><em>rivt</em> is a Python project. In addition to the <a class="reference external" href="https://www.rivt.info">rivtlib</a>,
-it includes <a class="reference internal" href="python.html"><span class="doc">these packages</span></a>.  <em>rivt docs and reports</em>
-may be written and published using a text editor.</p>
+<p><em>rivt</em> is a Python project that includes <a class="reference external" href="https://www.rivt.info">rivtlib</a>
+and other <a class="reference internal" href="python.html"><span class="doc">Python packages</span></a>.  After <em>rivt</em>
+is installed <em>rivt docs and reports</em> may be edited and published
+using a text editor.</p>
 </aside>
 <br><aside class="topic">
-<p class="topic-title"><em>VSCode framework</em></p>
-<p>The <em>VSCode framework</em> includes productiviy tools for writing and
-collaborating on <em>rivt files</em>. It includes <a class="reference external" href="https://code.visualstudio.com/">VSCode</a>
-and <a class="reference external" href="https://marketplace.visualstudio.com/vscode">extensions</a>.</p>
-</aside>
-<br><aside class="topic">
-<p class="topic-title"><em>complete framework</em></p>
-<p>The <em>complete framework</em> adds the following additional open source
-programs and services:</p>
+<p class="topic-title"><em>rivt framework</em></p>
+<p>The <em>rivt framework</em> includes <em>rivt</em> and additional programs installed
+separately. It includes important productiviy tools for editing, document
+control and diagramming.</p>
 <ol class="arabic simple">
-<li><p><a class="reference external" href="https://git-scm.com">Git</a> and <a class="reference external" href="hhttps://github.com">GitHub</a> for version control and collaboration</p></li>
-<li><p><a class="reference external" href="https://www.tug.org/texlive/">LaTeX</a> for precise typesetting</p></li>
-<li><p><a class="reference external" href="https://qcad.io/en/">QCAD</a> for diagramming</p></li>
+<li><p><em>VSCode and extensions</em> for editing and collaboration.</p></li>
+<li><p><em>Git and GitHub</em> for version control and document sharing.</p></li>
+<li><p><em>LaTeX</em> for precise typesetting.</p></li>
+<li><p><em>QCAD</em> for diagramming.</p></li>
 </ol>
+</aside>
+<aside class="topic">
+<p class="topic-title"><em>rivt.zip</em></p>
+<p>A single folder, portable version of <em>rivt</em> integrated with <em>VSCode</em>.</p>
 </aside>
 </section>
 <section id="install-rivt">
@@ -405,45 +406,56 @@ programs and services:</p>
 <p>This is the recommended method for most users.</p>
 <ol class="arabic simple">
 <li><p>Install <a class="reference external" href="https://docs.astral.sh/uv/getting-started/installation/#pypi">uv</a>.
-The recommended method for Windows is:</p></li>
+The recommended method for installing <em>uv</em> on Windows is:</p></li>
 </ol>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">winget</span> <span class="n">install</span> <span class="o">--</span><span class="nb">id</span><span class="o">=</span><span class="n">astral</span><span class="o">-</span><span class="n">sh</span><span class="o">.</span><span class="n">uv</span>  <span class="o">-</span><span class="n">e</span>
 </pre></div>
 </div>
-<ol class="arabic simple">
-<li><p>Run the following commands or download and run this
-<a class="reference download internal" download="" href="../_downloads/d1584fa3f6092072833945a85e5048ff/rivt-install.cmd"><code class="xref download docutils literal notranslate"><span class="pre">command</span> <span class="pre">file</span></code></a>. This creates a
-subfolder named rivt (it can be renamed in the init command) and installs
-rivt from GitHub in the subfolder.</p></li>
-</ol>
+<p>After installing uv run the following commands</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">init</span> <span class="n">uv</span> <span class="n">rivt</span>
 <span class="n">cd</span> <span class="n">rivt</span>
 <span class="n">uv</span> <span class="n">add</span> <span class="s2">&quot;git+https://github.com/rivtlib-dev/rivtlib.git#subdirectory=src&quot;</span>
 </pre></div>
 </div>
-<br><p><strong>Method 2 - System</strong></p>
-<p>Use Python installers and <em>pip</em> to install the packages here.</p>
-</section>
-<section id="install-vscode-framework">
-<h2><strong>[03]</strong> Install <em>VSCode framework</em><a class="headerlink" href="#install-vscode-framework" title="Link to this heading">#</a></h2>
-<hr><p><strong>Method 1 - VSCode</strong></p>
+<p>or download and run this <a class="reference download internal" download="" href="../_downloads/d1584fa3f6092072833945a85e5048ff/rivt-install.cmd"><code class="xref download docutils literal notranslate"><span class="pre">command</span> <span class="pre">file</span></code></a>.
+This series of commands</p>
 <ol class="arabic simple">
-<li><p>Install <em>rivt</em></p></li>
-<li><p>Install <a class="reference external" href="https://code.visualstudio.com/">VSCode</a> and
-<a class="reference external" href="https://marketplace.visualstudio.com/vscode">VSCode extensions</a>.
-Extensions can be installed with this script.</p></li>
+<li><p>creates a subfolder named rivt and initializes it. Any folder name can be used.</p></li>
+<li><p>changes the working directory to the subfolder just created.</p></li>
+<li><p>installs <em>rivt</em> in the subfolder.</p></li>
 </ol>
-<p><strong>Method 2 - rivt.zip</strong></p>
-<p>A single folder portable version of a <strong>rivt framework</strong> including Python,
-VSCode and all of the required libraries and extensions. <em>VSCode</em> and its
-<em>rivt-markup</em> extensions are installed separately to complete a <strong>rivt
-framework</strong>.</p>
+<p>The installation can be deleted by simply deleting the folder.</p>
+<br><p><strong>Method 2 - System</strong></p>
+<p>Use <a class="reference external" href="https://www.python.org/downloads/">Python installers</a> and
+<a class="reference external" href="https://pypi.org/project/pip/">pip</a> to install packages from
+<cite>PyPI &lt;https://pypi.org/&gt;_</cite>.  The requirements.txt file is here.</p>
 </section>
-<section id="install-complete-framework">
-<h2><strong>[04]</strong> Install <em>complete  framework</em><a class="headerlink" href="#install-complete-framework" title="Link to this heading">#</a></h2>
-<hr><p><a class="reference external" href="https://git-scm.com">Git</a> and a <a class="reference external" href="hhttps://github.com">GitHub</a></p>
-<p><a class="reference external" href="https://www.tug.org/texlive/">LaTeX</a></p>
-<p><a class="reference external" href="https://qcad.io/en/">QCAD</a></p>
+<section id="install-rivt-framework">
+<h2><strong>[03]</strong> Install <em>rivt framework</em><a class="headerlink" href="#install-rivt-framework" title="Link to this heading">#</a></h2>
+<hr><p>The <em>rivt framework</em> includes installation of the following programs:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://code.visualstudio.com/">VSCode</a> and
+<a class="reference external" href="https://marketplace.visualstudio.com/vscode">VSCode extensions</a>.</p></li>
+<li><p><a class="reference external" href="https://git-scm.com">Git</a> and set up a <a class="reference external" href="hhttps://github.com">GitHub</a></p></li>
+<li><p><a class="reference external" href="https://www.tug.org/texlive/">LaTeX</a></p></li>
+<li><p><a class="reference external" href="https://qcad.io/en/">QCAD</a></p></li>
+</ol>
+</section>
+<section id="download-rivt-zip">
+<h2><strong>[04]</strong> Download <em>rivt.zip</em><a class="headerlink" href="#download-rivt-zip" title="Link to this heading">#</a></h2>
+<p><em>rivt.zip</em> is a single folder, portable version of a <em>rivt</em> and <em>VSCode</em>
+including libraries and extensions. It can be downloaded here.</p>
+<p>The advantages of this setup include:</p>
+<ol class="arabic simple">
+<li><p>No installation steps - just unzip.</p></li>
+<li><p>Can be moved anywhere.</p></li>
+<li><p>Ensured compatiblity between libraries.</p></li>
+</ol>
+<p>Disadvantages include:</p>
+<ol class="arabic simple">
+<li><p>Cannot be updated. However new releases are planned monthly.</p></li>
+<li><p>Not as easily integrated with other programs.</p></li>
+</ol>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -498,8 +510,8 @@ framework</strong>.</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-types"><strong>[01]</strong> Installation types</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-rivt"><strong>[02]</strong> Install <em>rivt</em></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-vscode-framework"><strong>[03]</strong> Install <em>VSCode framework</em></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-complete-framework"><strong>[04]</strong> Install <em>complete  framework</em></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-rivt-framework"><strong>[03]</strong> Install <em>rivt framework</em></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-rivt-zip"><strong>[04]</strong> Download <em>rivt.zip</em></a></li>
 </ul>
   </nav></div>
 

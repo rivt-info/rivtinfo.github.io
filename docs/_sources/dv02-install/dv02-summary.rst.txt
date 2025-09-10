@@ -9,38 +9,32 @@
 
     <hr>
 
-
 .. topic:: *rivt*
 
-    *rivt* is a Python project. In addition to the `rivtlib <https://www.rivt.info>`_, 
-    it includes :doc:`these packages </dv02-install/python>`.  *rivt docs and reports*
-    may be written and published using a text editor.
+    *rivt* is a Python project that includes `rivtlib <https://www.rivt.info>`_
+    and other :doc:`Python packages </dv02-install/python>`.  After *rivt* 
+    is installed *rivt docs and reports* may be edited and published 
+    using a text editor.
 
 .. raw:: html
 
     <br>
 
+.. topic:: *rivt framework*
 
-.. topic:: *VSCode framework*
+    The *rivt framework* includes *rivt* and additional programs installed
+    separately. It includes important productiviy tools for editing, document
+    control and diagramming.
+    
+    #. *VSCode and extensions* for editing and collaboration.
+    #. *Git and GitHub* for version control and document sharing.
+    #. *LaTeX* for precise typesetting.
+    #. *QCAD* for diagramming.
 
-    The *VSCode framework* includes productiviy tools for writing and
-    collaborating on *rivt files*. It includes `VSCode <https://code.visualstudio.com/>`_
-    and `extensions <https://marketplace.visualstudio.com/vscode>`_.
+.. topic:: *rivt.zip*
 
-
-.. raw:: html
-
-    <br>
-
-.. topic:: *complete framework*
-
-    The *complete framework* adds the following additional open source
-    programs and services:
-
-    #. `Git <https://git-scm.com>`_ and `GitHub <hhttps://github.com>`_ for version control and collaboration
-    #. `LaTeX <https://www.tug.org/texlive/>`_ for precise typesetting
-    #. `QCAD <https://qcad.io/en/>`_ for diagramming
-
+    A single folder, portable version of *rivt* integrated with *VSCode*.
+    
 
 **[02]** Install *rivt*
 ----------------------------------
@@ -54,16 +48,13 @@
 This is the recommended method for most users.
 
 1. Install `uv <https://docs.astral.sh/uv/getting-started/installation/#pypi>`_. 
-   The recommended method for Windows is: 
+   The recommended method for installing *uv* on Windows is: 
 
 .. code-block::
       
     winget install --id=astral-sh.uv  -e 
 
-1. Run the following commands or download and run this
-   :download:`command file </_downloads/rivt-install.cmd>`. This creates a
-   subfolder named rivt (it can be renamed in the init command) and installs 
-   rivt from GitHub in the subfolder.
+After installing uv run the following commands 
 
 .. code-block::
 
@@ -71,56 +62,63 @@ This is the recommended method for most users.
     cd rivt
     uv add "git+https://github.com/rivtlib-dev/rivtlib.git#subdirectory=src"
 
+or download and run this :download:`command file </_downloads/rivt-install.cmd>`. 
+This series of commands 
+
+#. creates a subfolder named rivt and initializes it. Any folder name can be used.
+#. changes the working directory to the subfolder just created.
+#. installs *rivt* in the subfolder.
+
+The installation can be deleted by simply deleting the folder.
+   
 
 .. raw:: html
 
     <br>
 
-
 **Method 2 - System**
 
-Use Python installers and *pip* to install the packages here. 
+Use `Python installers <https://www.python.org/downloads/>`_ and 
+`pip <https://pypi.org/project/pip/>`_ to install packages from 
+`PyPI <https://pypi.org/>_`.  The requirements.txt file is here. 
 
 
-**[03]** Install *VSCode framework*
+
+**[03]** Install *rivt framework*
 ------------------------------------------
 
 .. raw:: html
 
     <hr>
 
+The *rivt framework* includes installation of the following programs:
 
-**Method 1 - VSCode**
-
-#. Install *rivt*
-
-#. Install `VSCode <https://code.visualstudio.com/>`_ and 
+#. `VSCode <https://code.visualstudio.com/>`_ and 
    `VSCode extensions <https://marketplace.visualstudio.com/vscode>`_.  
-   Extensions can be installed with this script.
+
+#. `Git <https://git-scm.com>`_ and set up a `GitHub <hhttps://github.com>`_ 
+
+#. `LaTeX <https://www.tug.org/texlive/>`_ 
+
+#. `QCAD <https://qcad.io/en/>`_ 
 
 
-**Method 2 - rivt.zip**
-
-A single folder portable version of a **rivt framework** including Python,
-VSCode and all of the required libraries and extensions. *VSCode* and its
-*rivt-markup* extensions are installed separately to complete a **rivt
-framework**.
-
-
-**[04]** Install *complete  framework*
+**[04]** Download *rivt.zip*
 --------------------------------------------------
 
-.. raw:: html
+*rivt.zip* is a single folder, portable version of a *rivt* and *VSCode*
+including libraries and extensions. It can be downloaded here.
 
-    <hr>
+The advantages of this setup include:
 
+#. No installation steps - just unzip.
+#. Can be moved anywhere.
+#. Ensured compatiblity between libraries. 
 
-`Git <https://git-scm.com>`_ and a `GitHub <hhttps://github.com>`_ 
+Disadvantages include:
 
-`LaTeX <https://www.tug.org/texlive/>`_ 
-
-`QCAD <https://qcad.io/en/>`_ 
-
+#. Cannot be updated. However new releases are planned monthly.
+#. Not as easily integrated with other programs. 
 
 
 .. toctree::
