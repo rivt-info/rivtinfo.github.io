@@ -397,88 +397,70 @@ output scope.</p>
 <h2><strong>KEY</strong><a class="headerlink" href="#key" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| COMMAND | parameters</p>
-<blockquote>
-<div><ul class="simple">
+<ul class="simple">
 <li><p>input or output file types</p></li>
 <li><p>function scope</p></li>
 <li><p>applicable doc types</p></li>
 </ul>
-</div></blockquote>
-<div class="line-block">
-<div class="line">APPEND |   append a PDF file</div>
-</div>
 </aside>
-<hr class="docutils" />
+</section>
+<section id="append-append-a-pdf-file">
+<h2><strong>APPEND</strong> - append a PDF file<a class="headerlink" href="#append-append-a-pdf-file" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| APPEND | relative path | filename | num; nonum</p>
-<blockquote>
-<div><ul class="simple">
+<ul class="simple">
 <li><p>reads PDF files</p></li>
 <li><p>rv.D</p></li>
 <li><p>PDF, HTML</p></li>
 </ul>
-</div></blockquote>
-<div class="line-block">
-<div class="line">DOC | :  write doc file</div>
-</div>
 </aside>
-<hr class="docutils" />
+</section>
+<section id="doc-write-doc-file">
+<h2><strong>DOC</strong> - write doc file<a class="headerlink" href="#doc-write-doc-file" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| DOC | relative path | filename | rpdf; txt; html; tpdf</p>
-<blockquote>
-<div><ul class="simple">
+<ul class="simple">
 <li><p>writes PDF or HTML files</p></li>
 <li><p>rv.D</p></li>
 <li><p>PDF, HTML, text</p></li>
 </ul>
-</div></blockquote>
-<div class="line-block">
-<div class="line">IMG | :  insert image file</div>
-</div>
 </aside>
-<hr class="docutils" />
+</section>
+<section id="img-insert-image-file">
+<h2><strong>IMG</strong> - insert image file<a class="headerlink" href="#img-insert-image-file" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| IMG | relative path | filename | caption _[F], scale</p>
-<blockquote>
-<div><ul class="simple">
+<ul class="simple">
 <li><p>reads PNG and JPEG files (.png, jpg)</p></li>
 <li><p>rv.I, rv.V</p></li>
 <li><p>PDF, HTML</p></li>
 </ul>
-</div></blockquote>
-<div class="line-block">
-<div class="line">IMG2 | :  insert images side by side</div>
-</div>
 </aside>
-<hr class="docutils" />
+</section>
+<section id="img2-insert-images-side-by-side">
+<h2><strong>IMG2</strong> - insert images side by side<a class="headerlink" href="#img2-insert-images-side-by-side" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| IMG2 | rel path | fname1, fname2 | cap1 _[F], cap2 _[F], sc1, sc2</p>
-<blockquote>
-<div><ul class="simple">
+<ul class="simple">
 <li><p>reads PNG and JPEG files (.png, jpg)</p></li>
 <li><p>rv.I, rv.V</p></li>
 <li><p>PDF, HTML</p></li>
 </ul>
-</div></blockquote>
-<div class="line-block">
-<div class="line">TEXT | :  insert text file</div>
-</div>
 </aside>
-<hr class="docutils" />
+</section>
+<section id="text-insert-text-file">
+<h2><strong>TEXT</strong> - insert text file<a class="headerlink" href="#text-insert-text-file" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| text | relative path | filename | _[[block tag]]</p>
-<blockquote>
-<div><ul class="simple">
+<ul class="simple">
 <li><p>reads TEXT and TEX files (.txt, .tex)</p></li>
 <li><p>rv.I, rv.V</p></li>
 <li><p>PDF, HTML</p></li>
 </ul>
-</div></blockquote>
-<div class="line-block">
-<div class="line">VALUES | :  insert and evaluate values</div>
-</div>
 </aside>
-<hr class="docutils" />
+</section>
+<section id="values-insert-and-evaluate-values">
+<h2><strong>VALUES</strong> - insert and evaluate values<a class="headerlink" href="#values-insert-and-evaluate-values" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| VALUES | relative path | filename | title _[V], [rows]</p>
 <ul class="simple">
@@ -489,9 +471,9 @@ output scope.</p>
 </aside>
 </section>
 <section id="assign-value">
-<h2>=  :  assign value<a class="headerlink" href="#assign-value" title="Link to this heading">#</a></h2>
+<h2><strong>=  :</strong> - assign value<a class="headerlink" href="#assign-value" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">a = 10*IN | unit1, unit2 | filename | description</p>
+<p class="topic-title">a = 10*IN | unit1, unit2 | description</p>
 <ul class="simple">
 <li><p>assigns value to a variable</p></li>
 <li><p>rv.V</p></li>
@@ -500,9 +482,9 @@ output scope.</p>
 </aside>
 </section>
 <section id="define-equation">
-<h2>:=  :  define equation<a class="headerlink" href="#define-equation" title="Link to this heading">#</a></h2>
+<h2><strong>:=</strong> - define equation<a class="headerlink" href="#define-equation" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">b := a * 10 | unit1, unit2, var-deci, eq-deci</p>
+<p class="topic-title">b := a * 10 | unit1, unit2 | reference</p>
 <ul class="simple">
 <li><p>defines a variable in terms of expression</p></li>
 <li><p>rv.V</p></li>
@@ -560,8 +542,14 @@ output scope.</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key"><strong>KEY</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-value">=  :  assign value</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#define-equation">:=  :  define equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#append-append-a-pdf-file"><strong>APPEND</strong> - append a PDF file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#doc-write-doc-file"><strong>DOC</strong> - write doc file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img-insert-image-file"><strong>IMG</strong> - insert image file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img2-insert-images-side-by-side"><strong>IMG2</strong> - insert images side by side</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-insert-text-file"><strong>TEXT</strong> - insert text file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#values-insert-and-evaluate-values"><strong>VALUES</strong> - insert and evaluate values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-value"><strong>=  :</strong> - assign value</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#define-equation"><strong>:=</strong> - define equation</a></li>
 </ul>
   </nav></div>
 

@@ -32,7 +32,7 @@ output scope.
     - applicable doc types
 
 
- | APPEND |   append a PDF file
+**APPEND** - append a PDF file
 -------------------------------------------
 
 .. raw:: html
@@ -46,7 +46,7 @@ output scope.
     - rv.D
     - PDF, HTML
 
- | DOC | :  write doc file
+**DOC** - write doc file
 -------------------------------------------
 
 .. raw:: html
@@ -60,7 +60,7 @@ output scope.
     - rv.D
     - PDF, HTML, text
 
- | IMG | :  insert image file
+**IMG** - insert image file
 -------------------------------------------
 
 .. raw:: html
@@ -73,7 +73,7 @@ output scope.
     - rv.I, rv.V
     - PDF, HTML
 
- | IMG2 | :  insert images side by side
+**IMG2** - insert images side by side
 --------------------------------------------------
 
 .. raw:: html
@@ -86,7 +86,7 @@ output scope.
     - rv.I, rv.V
     - PDF, HTML
 
- | TEXT | :  insert text file
+**TEXT** - insert text file
 ------------------------------------------
 
 .. raw:: html
@@ -99,7 +99,7 @@ output scope.
     - rv.I, rv.V
     - PDF, HTML
 
- | VALUES | :  insert and evaluate values
+**VALUES** - insert and evaluate values
 -------------------------------------------
 
 .. raw:: html
@@ -112,27 +112,27 @@ output scope.
     - rv.I, rv.V
     - PDF, HTML
 
-=  :  assign value
+**=  :** - assign value
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: a = 10*IN | unit1, unit2 | filename | description
+.. topic:: a = 10*IN | unit1, unit2 | description
 
     - assigns value to a variable
     - rv.V
     - PDF, HTML
 
-:=  :  define equation
+**:=** - define equation
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: b := a * 10 | unit1, unit2, var-deci, eq-deci 
+.. topic:: b := a * 10 | unit1, unit2 | reference
 
     - defines a variable in terms of expression
     - rv.V
