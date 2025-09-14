@@ -1,5 +1,5 @@
-3.4 Values Tags
-===================
+3.4 **V** alues Tags
+======================
 
 *line tags* format a line of text and are denoted with _[TAG], usually at the
 end of the line. *Block tags* format a block of text that begin with _[[TAG]]
