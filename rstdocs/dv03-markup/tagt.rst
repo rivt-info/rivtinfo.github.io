@@ -20,7 +20,7 @@ _[[TAG]] : tag description
     types of output
 
 
-_[[PYTHON]] : Python code block
+_[[PYTHON]] : Python code
 ------------------------------------------------
 
 .. raw:: html
@@ -40,7 +40,7 @@ _[[PYTHON]] : Python code block
    text, pdf, html
 
 
-_[[FORTRAN]] : Fortran code block
+_[[FORTRAN]] : Fortran code
 ------------------------------------------------
 
 .. raw:: html
@@ -60,7 +60,7 @@ _[[FORTRAN]] : Fortran code block
     text, pdf, html
 
 
-_[[RUBY]] : Ruby code block
+_[[RUBY]] : Ruby code
 ------------------------------------------------
 
 .. raw:: html
@@ -81,7 +81,7 @@ _[[RUBY]] : Ruby code block
 
 
 
-_[[HTML]] : HTML code block 
+_[[HTML]] : HTML code
 ------------------------------------------------
 
 .. raw:: html
@@ -101,7 +101,7 @@ _[[HTML]] : HTML code block
     text, pdf, html
 
 
-_[[LATEX]] : LaTeX code block 
+_[[LATEX]] : LaTeX code
 ------------------------------------------------
 
 .. raw:: html
