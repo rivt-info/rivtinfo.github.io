@@ -9,7 +9,7 @@
 
     <hr>
 
-.. topic:: rivt :ref:`rivt-spot`
+.. topic:: rivt see (:ref:`rivt-spot`)
 
     *rivt* is a Python project that includes `rivtlib <https://www.rivt.info>`_
     and other :doc:`Python packages </dv02-install/python>`.  After *rivt* 
@@ -20,7 +20,7 @@
 
     <br>
 
-.. topic:: rivt framework :ref:`rivtframe-spot`
+.. topic:: rivt framework see (:ref:`rivtframe-spot`)
 
     The *rivt framework* includes *rivt* and additional programs installed
     separately. It includes important productiviy tools for editing, document
@@ -35,7 +35,7 @@
 
     <br>
 
-.. topic:: rivt.zip :ref:`rivtzip-spot`
+.. topic:: rivt.zip see (:ref:`rivtzip-spot`)
 
     A single folder, portable version of *rivt* integrated with *VSCode*.
     
