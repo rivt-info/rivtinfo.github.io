@@ -36,40 +36,9 @@ Project folder organization is described :doc:`here </dv04-reports/folders>`
 
 .. topic:: | COMMAND | parameters
 
-    - input or output file types
-    - function scope
-    - applicable doc types
+   input or output file types
+   applicable doc types
 
-
-**APPEND** - append a PDF file
--------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-
-.. topic:: | APPEND | relative path | filename | num; nonum 
-
-    - reads PDF files
-    - rv.D
-    - PDF, HTML
-
-**DOC** - writes doc file
--------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-
-.. topic:: | DOC | relative path |  txt; html; rpdf; tpdf
-
-    - writes text, PDF or HTML files
-    - rv.D
-    - PDF, HTML, text
-  
-    Exits after writing doc file
 
 
 **IMG** - insert image file
@@ -98,18 +67,6 @@ Project folder organization is described :doc:`here </dv04-reports/folders>`
     - rv.I, rv.V
     - PDF, HTML
 
-**TEXT** - insert text file
-------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: | text | relative path | filename | _[[block tag]]
-
-    - reads TEXT and TEX files (.txt, .tex)
-    - rv.I, rv.V
-    - PDF, HTML
 
 **VALUES** - insert values
 -------------------------------------------
