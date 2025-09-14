@@ -29,7 +29,7 @@ rv.S(rs)           Skip              Skip section
 rv.Q(rs)           Quit              Exit rivt 
 =============== =============== ===================================
 
-Text that is not a *tag* or *command* is passed to an intermediate .rst file
+Text that is not a *tag* or *command* is passed to an intermediate *.rst*a file
 that is subsequently formatted to a PDF or HTML doc. This facilitates extending
 *rivt markup* by embedding `restructuredText
 <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_ commands in a
@@ -41,8 +41,14 @@ that is subsequently formatted to a PDF or HTML doc. This facilitates extending
     :hidden:
 
     syntax.rst
-    tagsl.rst
-    tagsb.rst
-    commands.rst
+    tagr.rst
+    tagi.rst
+    tagv.rst
+    tagt.rst
+    cmdr.rst
+    cmdi.rst
+    cmdv.rst
+    cmdt.rst
+    cmdprc.rst
     quick.rst
-    examples/example1.rst
+    example1.rst

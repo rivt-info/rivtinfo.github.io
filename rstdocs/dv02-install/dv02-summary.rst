@@ -131,5 +131,4 @@ Disadvantages include:
 
     python.rst
     vscode.rst
-    
-  
+      

@@ -1,12 +1,12 @@
-Example 1
-==========
+3.12 Example
+===============
 
 
 .. code-block:: python
 
     import rivtlib.rivtapi as rv
 
-    rv.R("""Run function | pass; redact | nocolor; color code
+    rv.R("""Run function | noprint, private
 
         The Run function processes shell commands.
 
@@ -23,30 +23,30 @@ Example 1
 
         """)
 
-    rv.I("""Insert function | pass; redact | nocolor 
+    rv.I("""Insert function | print, private
 
         The Insert function formats static objects including images, tables,
         equations and text.
 
-        ||text | data01/describe.txt | rivt     
+        |text | data01/describe.txt | rivt     
 
         The table command inserts and formats tabular data from csv or xls files.
         The _[t] tag formats and autonumbers table titles.
 
         A table title  _[t]
-        || table | data/file.csv | 60,r
+        | table | data/file.csv | 60,r
 
         The image command inserts and formats image data from png or jpg files. The
         _[f] tag formats and autonumbers figures.
             
         A figure caption _[f]
-        || image | data/f1.png | 50
+        | image | data/f1.png | 50
 
         Two images may be placed side by side as follows:
 
         The first figure caption  _[f]
         The second figure caption  _[f]
-        || image | private/image/f2.png, private/image/f3.png | 45,35
+        | image | private/image/f2.png, private/image/f3.png | 45,35
         
         The tags _[x] and _[s] format LaTeX and sympy equations:
 
@@ -74,7 +74,7 @@ Example 1
         Example equation - Area of circle  _[e]
         a1 := 3.14(d1/2)^2 | IN^2, CM^2 | 1,2
 
-        || declare | data01/values02.csv
+        | declare | data01/values02.csv
         
         The declare command imports values from the csv file written by rivt when
         processing values in other documents. 
@@ -88,7 +88,7 @@ Example 1
         """)
 
 
-    rv.X("""Any text 
+    rv.S("""Any text 
 
         Changing a function to X skips evaluation of that function. Its purposes
         include review commenting and debugging.

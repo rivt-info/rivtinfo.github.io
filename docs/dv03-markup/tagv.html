@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="../_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="../_static/favicon-32x32.png" type="image/png">
-    <title>3.3 Block Tags &#8212; Home</title>
+    <title>3.4 Values Tags &#8212; Home</title>
   
   
   
@@ -56,11 +56,11 @@
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'dv03-markup/tagsb';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'dv03-markup/tagv';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="3.4 Commands" href="commands.html" />
-    <link rel="prev" title="3.2 Line Tags" href="tagsl.html" />
+    <link rel="next" title="3.5 Tools Tags" href="tagt.html" />
+    <link rel="prev" title="3.3 Insert Tags" href="tagi.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -314,11 +314,17 @@
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="syntax.html">3.1 Syntax</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tagsl.html">3.2 Line Tags</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">3.3 Block Tags</a></li>
-<li class="toctree-l1"><a class="reference internal" href="commands.html">3.4 Commands</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quick.html">3.5 Quick Look-up</a></li>
-<li class="toctree-l1"><a class="reference internal" href="examples/example1.html">Example 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tagr.html">3.6 Run Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tagi.html">3.3 Insert Tags</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">3.4 Values Tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tagt.html">3.5 Tools Tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cmdr.html">3.5 Run Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cmdi.html">3.4 Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cmdv.html">3.8 Value Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cmdt.html">3.9 Tool Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cmdprc.html">3.10 Process Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick.html">3.11 Quick Look-up</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example1.html">3.12 Example</a></li>
 </ul>
 </div>
 </nav></div>
@@ -362,7 +368,7 @@
     
     <li class="breadcrumb-item"><a href="dv03-summary.html" class="nav-link">3. Markup</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">3.3 Block Tags</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">3.4 Values Tags</span></li>
   </ul>
 </nav>
 </div>
@@ -379,22 +385,120 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="block-tags">
-<h1>3.3 Block Tags<a class="headerlink" href="#block-tags" title="Link to this heading">#</a></h1>
-<p><strong>Block</strong> tags format a block of text that begin with _[[TAG]] on the
-first line and end with _[[Q]] after the last line. Tags have a function
-and output scope.</p>
+  <section id="values-tags">
+<h1>3.4 Values Tags<a class="headerlink" href="#values-tags" title="Link to this heading">#</a></h1>
+<p><em>line tags</em> format a line of text and are denoted with _[TAG], usually at the
+end of the line. <em>Block tags</em> format a block of text that begin with _[[TAG]]
+on the first line and end with _[[Q]] after the last line.</p>
 <section id="key">
 <h2><strong>KEY</strong><a class="headerlink" href="#key" title="Link to this heading">#</a></h2>
-<p>_[[TAG]] : description</p>
+<p>_[TAG] : line tag description
+_[[TAG]] : block tag description</p>
 <hr><aside class="topic">
-<p class="topic-title">start block syntax</p>
-<p>block example</p>
-<ul class="simple">
-<li><p>function scope</p></li>
-<li><p>applicable output</p></li>
-</ul>
+<p class="topic-title">syntax</p>
+<p>types of output</p>
 </aside>
+</section>
+<section id="b-center-bold">
+<h2>_[B] :  center, bold<a class="headerlink" href="#b-center-bold" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title"><em>text</em> _[B]</p>
+<p>pdf, html</p>
+</aside>
+</section>
+<section id="c-center">
+<h2>_[C] :   center<a class="headerlink" href="#c-center" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title"><em>text</em> _[C]</p>
+<p>pdf, html</p>
+</aside>
+</section>
+<section id="d-footnote-description">
+<h2>_[D] :  footnote description<a class="headerlink" href="#d-footnote-description" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title"><em>text</em> _[D]</p>
+<p>text, pdf, html</p>
+</aside>
+</section>
+<section id="e-number-label-equation">
+<h2>_[E] : number, label equation<a class="headerlink" href="#e-number-label-equation" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title"><em>text</em> _[C]</p>
+<p>text, pdf, html</p>
+</aside>
+</section>
+<section id="f-number-label-figure">
+<h2>_[F] : number, label figure<a class="headerlink" href="#f-number-label-figure" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title"><em>caption</em> _[F]</p>
+<p>pdf, html</p>
+</aside>
+</section>
+<section id="ld-doc-link">
+<h2>_[LD] :  doc link<a class="headerlink" href="#ld-doc-link" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title"><em>text</em> _[LD] doc link <em>text</em></p>
+<p>text, pdf, html</p>
+</aside>
+</section>
+<section id="lr-report-link">
+<h2>_[LR] :  report link<a class="headerlink" href="#lr-report-link" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title"><em>text</em> _[LR] report link <em>text</em></p>
+<p>text, pdf, html</p>
+</aside>
+</section>
+<section id="lu-url-link">
+<h2>_[LU] :  url link<a class="headerlink" href="#lu-url-link" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title"><em>text</em> _[LU] url link <em>text</em></p>
+<p>text, pdf, html</p>
+</aside>
+</section>
+<section id="p-new-page">
+<h2>_[P] : new page<a class="headerlink" href="#p-new-page" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">_[P]</p>
+<p>pdf, html</p>
+</aside>
+</section>
+<section id="s-sympy-equation">
+<h2>_[S] : sympy equation<a class="headerlink" href="#s-sympy-equation" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title"><em>equation</em> _[S]</p>
+<p>text, pdf, html</p>
+</aside>
+</section>
+<section id="t-number-label-table">
+<h2>_[T]  number, label table<a class="headerlink" href="#t-number-label-table" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title"><em>title</em> _[T]</p>
+<p>text, pdf, html</p>
+</aside>
+</section>
+<section id="v-number-label-values-table">
+<h2>_[V] : number, label values table<a class="headerlink" href="#v-number-label-values-table" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title"><em>text</em> _[V]</p>
+<p>text, pdf, html</p>
+</aside>
+</section>
+<section id="numbered-footnote">
+<h2>_[#] :  numbered footnote<a class="headerlink" href="#numbered-footnote" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title"><em>text</em> _[#] text</p>
+<p>text, pdf, html</p>
+</aside>
+</section>
+<section id="horizontal-line">
+<h2><strong>horizontal line</strong><a class="headerlink" href="#horizontal-line" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">5 or more underscores  _____</p>
+<p>text, pdf, html</p>
+</aside>
+</section>
+<section id="block-tags">
+<h2><strong>[02]</strong> Block Tags<a class="headerlink" href="#block-tags" title="Link to this heading">#</a></h2>
 </section>
 <section id="b-indent-bold">
 <h2>_[[B]] : indent bold<a class="headerlink" href="#b-indent-bold" title="Link to this heading">#</a></h2>
@@ -407,10 +511,7 @@ and output scope.</p>
 <span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>rv.I, rv.V</p></li>
-<li><p>text, pdf, html</p></li>
-</ul>
+<p>text, pdf, html</p>
 </aside>
 </section>
 <section id="c-code-or-literal">
@@ -424,10 +525,7 @@ and output scope.</p>
 <span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>rv.I, rv.V</p></li>
-<li><p>text, pdf, html</p></li>
-</ul>
+<p>text, pdf, html</p>
 </aside>
 </section>
 <section id="i-indent-italic">
@@ -441,10 +539,7 @@ and output scope.</p>
 <span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>rv.I, rv.V</p></li>
-<li><p>text, pdf, html</p></li>
-</ul>
+<p>text, pdf, html</p>
 </aside>
 </section>
 <section id="l-latex">
@@ -458,10 +553,7 @@ and output scope.</p>
 <span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>rv.I, rv.V</p></li>
-<li><p>pdf, html</p></li>
-</ul>
+<p>pdf, html</p>
 </aside>
 </section>
 <section id="n-indent">
@@ -475,10 +567,7 @@ and output scope.</p>
 <span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>rv.I, rv.V</p></li>
-<li><p>text, pdf, html</p></li>
-</ul>
+<p>text, pdf, html</p>
 </aside>
 </section>
 <section id="t-topic">
@@ -492,10 +581,91 @@ and output scope.</p>
 <span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>rv.I, rv.V</p></li>
-<li><p>text, pdf, html</p></li>
-</ul>
+<p>text, pdf, html</p>
+</aside>
+</section>
+<section id="id1">
+<h2>_[[B]] : indent bold<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">_[[B]]</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">B</span><span class="p">]]</span>
+<span class="n">text</span>
+<span class="n">text</span>
+<span class="o">...</span>
+<span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
+</pre></div>
+</div>
+<p>text, pdf, html</p>
+</aside>
+</section>
+<section id="id2">
+<h2>_[[C]] : code or literal<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">_[[C]] <em>language</em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">C</span><span class="p">]]</span>
+<span class="n">text</span>
+<span class="n">text</span>
+<span class="o">...</span>
+<span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
+</pre></div>
+</div>
+<p>text, pdf, html</p>
+</aside>
+</section>
+<section id="id3">
+<h2>_[[I]] : indent italic<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">_[[I]]</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">I</span><span class="p">]]</span>
+<span class="n">text</span>
+<span class="n">text</span>
+<span class="o">...</span>
+<span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
+</pre></div>
+</div>
+<p>text, pdf, html</p>
+</aside>
+</section>
+<section id="id4">
+<h2>_[[L]] : LaTeX<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">_[[L]]</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">L</span><span class="p">]]</span>
+<span class="n">text</span>
+<span class="n">text</span>
+<span class="o">...</span>
+<span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
+</pre></div>
+</div>
+<p>pdf, html</p>
+</aside>
+</section>
+<section id="id5">
+<h2>_[[N]] :  indent<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">_[[N]]</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">N</span><span class="p">]]</span> <span class="n">title</span>
+<span class="n">text</span>
+<span class="n">text</span>
+<span class="o">...</span>
+<span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
+</pre></div>
+</div>
+<p>text, pdf, html</p>
+</aside>
+</section>
+<section id="id6">
+<h2>_[[T]] : topic<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">_[[T]] <em>topic</em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">N</span><span class="p">]]</span> <span class="n">topic</span>
+<span class="n">text</span>
+<span class="n">text</span>
+<span class="o">...</span>
+<span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
+</pre></div>
+</div>
+<p>text, pdf, html</p>
 </aside>
 </section>
 <section id="v-values">
@@ -528,20 +698,20 @@ and output scope.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="tagsl.html"
+       href="tagi.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">3.2 Line Tags</p>
+        <p class="prev-next-title">3.3 Insert Tags</p>
       </div>
     </a>
     <a class="right-next"
-       href="commands.html"
+       href="tagt.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">3.4 Commands</p>
+        <p class="prev-next-title">3.5 Tools Tags</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -565,12 +735,33 @@ and output scope.</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key"><strong>KEY</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-center-bold">_[B] :  center, bold</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-center">_[C] :   center</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-footnote-description">_[D] :  footnote description</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e-number-label-equation">_[E] : number, label equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#f-number-label-figure">_[F] : number, label figure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ld-doc-link">_[LD] :  doc link</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lr-report-link">_[LR] :  report link</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lu-url-link">_[LU] :  url link</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-new-page">_[P] : new page</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#s-sympy-equation">_[S] : sympy equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-number-label-table">_[T]  number, label table</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#v-number-label-values-table">_[V] : number, label values table</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#numbered-footnote">_[#] :  numbered footnote</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#horizontal-line"><strong>horizontal line</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#block-tags"><strong>[02]</strong> Block Tags</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-indent-bold">_[[B]] : indent bold</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-code-or-literal">_[[C]] : code or literal</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-indent-italic">_[[I]] : indent italic</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#l-latex">_[[L]] : LaTeX</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#n-indent">_[[N]] :  indent</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-topic">_[[T]] : topic</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">_[[B]] : indent bold</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">_[[C]] : code or literal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">_[[I]] : indent italic</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">_[[L]] : LaTeX</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">_[[N]] :  indent</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">_[[T]] : topic</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#v-values">_[[V]] : values</a></li>
 </ul>
   </nav></div>

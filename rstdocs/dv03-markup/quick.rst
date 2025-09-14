@@ -1,20 +1,8 @@
-3.5 Quick Look-up
+3.11 Quick Look-up
 =======================
 
-
-=========== ===================================================== ==============
-Scope                      Commands                                File Types
-=========== ===================================================== ==============
-rv.D         ||APPEND| rel. pth | num; nonum                       pdf,html,txt
-rv.D         ||DOC| rel. pth | pdf; txt; html; pdf2                pdf, html,txt
-rv.I, rv.V   || IMG | rel. pth | caption _[F], scale               png,.jpg
-rv.I, rv.V   || IMG2 | rel. pth | c1 _[F], c2 _[F], s1, s2         png,.jpg
-rv.I         || TABLE | rel. pth | title _[T], width, l;c;r, [r]   csv,txt,xlsx
-rv.I         ||TEXT| rel. pth | _[[block tag]]                     txt,tex
-rv.V         || VALUES | rel. pth | title _[V], [rows]             csv
-rv.V         a = 1 + 1 | units | description                       assign value 
-rv.V         b := a + 3 | units | decimals                         define value
-=========== ===================================================== ==============
+**[01]** Line tags
+----------------------
 
 ================ ========================== ====================================
 Scope             Line Tags                    Description (doc scope)
@@ -35,7 +23,10 @@ rv.I                   text _[#] text         footnote (all)
 rv.I, rv.V                  --------          horizontal line (5 or more -)
 ================ ========================== ====================================
 
-[1] tag may be added to the command parameter
+[1] tag may be added to a command parameter
+
+**[02]** Block tags
+----------------------
 
 =========== ===================== ==============================================
 Scope        Block Tags              Description (doc scope)
@@ -49,5 +40,26 @@ rv.I          _[[O]]                italic, oblique (pdf, html)
 rv.I, rv.V    _[[Q]]                quit (all)
 rv.I, rv.V    _[[T]]                topic (all)
 rv.V          _[[V]] *title*        values label (all)
+
+
+
+
+
 =========== ===================== ==============================================
   
+**[03]** Commands
+-------------------
+
+=========== ===================================================== ==============
+Scope                      Commands                                File Types
+=========== ===================================================== ==============
+rv.D         ||APPEND| rel. pth | num; nonum                       pdf,html,txt
+rv.D         ||DOC| rel. pth | pdf; txt; html; pdf2                pdf, html,txt
+rv.I, rv.V   || IMG | rel. pth | caption _[F], scale               png,.jpg
+rv.I, rv.V   || IMG2 | rel. pth | c1 _[F], c2 _[F], s1, s2         png,.jpg
+rv.I         || TABLE | rel. pth | title _[T], width, l;c;r, [r]   csv,txt,xlsx
+rv.I         ||TEXT| rel. pth | _[[block tag]]                     txt,tex
+rv.V         || VALUES | rel. pth | title _[V], [rows]             csv
+rv.V         a = 1 + 1 | units | description                       assign value 
+rv.V         b := a + 3 | units | decimals                         define value
+=========== ===================================================== ==============

@@ -65,15 +65,15 @@ legiblity. For example, the same rivt file can generate  text, PDF or HTML docs.
 
 **Tags**
 
-:doc:`Line tags <tagsl>` format a line of text and are denoted
+*Line tags* format a line of text and are denoted
 with _[**TAG**], typically added at the end of the line.
 
-:doc:`Block tags <tagsb>` evaluate a multi-line text block that starts
+*Block tags* evaluate a multi-line text block that starts
 with _[[**TAG**]] and ends with _[[**Q**]].
 
 **Commands**
 
-:doc:`Commands <commands>` read and write files and assign values to variables. They start in the
+*Commands* read and write files and assign values to variables. They start in the
 first column with double vertical bars, followed by the command name, the
 relative file path and parameters. The exceptions are the assign (=) and define
 (:=) commands, related to equations.

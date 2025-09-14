@@ -1,23 +1,26 @@
-3.2 Line Tags
+3.3 Insert Tags
 ===================
 
 *line tags* format a line of text and are denoted with _[TAG], usually at the
-end of the line. Tags have a function and output scope.
+end of the line. *Block tags* format a block of text that begin with _[[TAG]]
+on the first line and end with _[[Q]] after the last line. 
 
 
 **KEY**  
 --------------------------------------------
 
-_[TAG] : description
+_[TAG] : line tag description
+_[[TAG]] : block tag description
 
 .. raw:: html
 
     <hr>
 
-.. topic::  line syntax
+.. topic::  syntax
 
-    - function scope
-    - applicable output
+    types of output
+
+
 
 _[B] :  center, bold
 -------------------------------------------
@@ -28,7 +31,6 @@ _[B] :  center, bold
 
 .. topic:: *text* _[B]
 
-    - rv.I, rv.V
     - pdf, html
 
 _[C] :   center 
@@ -40,7 +42,6 @@ _[C] :   center
 
 .. topic:: *text* _[C]
 
-    - rv.I, rv.V
     - pdf, html
 
 _[D] :  footnote description
@@ -52,7 +53,6 @@ _[D] :  footnote description
 
 .. topic:: *text* _[D]
 
-    rv.I, rv.V
     text, pdf, html
 
 _[E] : number, label equation
@@ -64,8 +64,6 @@ _[E] : number, label equation
 
 .. topic:: *text* _[C]
 
-    *label* _[C]
-    rv.I, rv.V
     text, pdf, html
 
 _[F] : number, label figure 
@@ -77,7 +75,6 @@ _[F] : number, label figure
 
 .. topic:: *caption* _[F]
 
-    rv.I, rv.V
     pdf, html
 
 _[LD] :  doc link 
@@ -89,7 +86,6 @@ _[LD] :  doc link
 
 .. topic:: *text* _[LD] doc link *text*
     
-    rv.I, rv.V
     text, pdf, html
 
 _[LR] :  report link 
@@ -101,7 +97,6 @@ _[LR] :  report link
 
 .. topic:: *text* _[LR] report link *text*
     
-    rv.I, rv.V
     text, pdf, html
 
 _[LU] :  url link 
@@ -113,7 +108,6 @@ _[LU] :  url link
 
 .. topic:: *text* _[LU] url link *text*
     
-    rv.I, rv.V
     text, pdf, html
 
 _[P] : new page
@@ -125,7 +119,6 @@ _[P] : new page
 
 .. topic:: _[P]
 
-    rv.I, rv.V
     pdf, html
 
 
@@ -138,7 +131,6 @@ _[S] : sympy equation
 
 .. topic:: *equation* _[S]
 
-    rv.I, rv.V
     text, pdf, html
 
 _[T]  number, label table
@@ -150,7 +142,6 @@ _[T]  number, label table
 
 .. topic:: *title* _[T]
 
-    rv.I, rv.V
     text, pdf, html
 
 
@@ -163,7 +154,7 @@ _[V] : number, label values table
 
 .. topic:: *text* _[V]
     
-    rv.I, rv.V
+
     text, pdf, html
 
 _[#] :  numbered footnote
@@ -175,7 +166,6 @@ _[#] :  numbered footnote
 
 .. topic:: *text* _[#] text
     
-    rv.I, rv.V
     text, pdf, html
 
 **horizontal line**
@@ -186,5 +176,124 @@ _[#] :  numbered footnote
 
 .. topic::  5 or more underscores  _____
 
-    rv.I, rv.V
     text, pdf, html
+
+
+**[02]** Block Tags
+---------------------
+
+_[[B]] : indent bold
+------------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic::  _[[B]] 
+
+    ::
+        
+        _[[B]]
+        text
+        text
+        ...
+        _[[Q]]
+
+    text, pdf, html
+
+_[[C]] : code or literal
+------------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic::  _[[C]] *language*
+
+    ::
+        
+        _[[C]]
+        text
+        text
+        ...
+        _[[Q]]
+
+    text, pdf, html
+
+_[[I]] : indent italic
+------------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic::  _[[I]] 
+
+    ::
+        
+        _[[I]]
+        text
+        text
+        ...
+        _[[Q]]
+
+    text, pdf, html
+
+_[[L]] : LaTeX
+------------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic::  _[[L]] 
+    
+    ::
+        
+        _[[L]]
+        text
+        text
+        ...
+        _[[Q]]
+
+    pdf, html
+
+_[[N]] :  indent
+----------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic::  _[[N]]
+
+    ::
+
+        _[[N]] title
+        text
+        text
+        ...
+        _[[Q]]
+
+    text, pdf, html
+
+_[[T]] : topic
+------------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic::  _[[T]] *topic*
+
+    ::
+        
+        _[[N]] topic
+        text
+        text
+        ...
+        _[[Q]]
+
+
+    text, pdf, html
+
