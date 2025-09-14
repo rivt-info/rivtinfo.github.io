@@ -9,7 +9,7 @@
 
     <hr>
 
-.. topic:: *rivt*
+.. topic:: rivt :ref:`rivt-spot`
 
     *rivt* is a Python project that includes `rivtlib <https://www.rivt.info>`_
     and other :doc:`Python packages </dv02-install/python>`.  After *rivt* 
@@ -20,7 +20,7 @@
 
     <br>
 
-.. topic:: *rivt framework*
+.. topic:: rivt framework :ref:`rivtframe-spot`
 
     The *rivt framework* includes *rivt* and additional programs installed
     separately. It includes important productiviy tools for editing, document
@@ -35,10 +35,11 @@
 
     <br>
 
-.. topic:: *rivt.zip*
+.. topic:: rivt.zip :ref:`rivtzip-spot`
 
     A single folder, portable version of *rivt* integrated with *VSCode*.
     
+.. _rivt-spot:
 
 **[02]** Install *rivt*
 ----------------------------------
@@ -49,7 +50,7 @@
 
 **Method 1 - uv**
 
-This is the recommended method for most users.
+This method is recommended for most users.
 
 1. Install `uv <https://docs.astral.sh/uv/getting-started/installation/#pypi>`_. 
    The recommended method for installing *uv* on Windows is: 
@@ -87,6 +88,7 @@ Use `Python installers <https://www.python.org/downloads/>`_ and
 `PyPI <https://pypi.org/>`_.  The requirements.txt file is here. 
 
 
+.. _rivtframe-spot:
 
 **[03]** Install *rivt framework*
 ------------------------------------------
@@ -106,6 +108,7 @@ The *rivt framework* includes installation of the following programs:
 
 #. `QCAD <https://qcad.io/en/>`_ 
 
+.. _rivtzip-spot:
 
 **[04]** Download *rivt.zip*
 --------------------------------------------------

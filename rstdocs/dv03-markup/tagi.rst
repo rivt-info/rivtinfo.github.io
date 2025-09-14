@@ -284,12 +284,12 @@ _[[T]] : topic
 
    text, pdf, html
 
-_ : **horizontal line**
+_ : horizontal line
 --------------------------------------- 
 .. raw:: html
 
     <hr>
 
-.. topic::  underscores  ___ (>4)
+.. topic::  4 or more underscores  ___ 
 
     text, pdf, html
