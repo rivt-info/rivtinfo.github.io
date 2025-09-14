@@ -1,4 +1,4 @@
-3.6 Run Tags
+3.2 Run Tags
 ===================
 
 *line tags* format a line of text and are denoted with _[TAG], usually at the
@@ -70,12 +70,12 @@ _[[LINUX]] : shell commands
 
 .. topic::  _[[LINUX]] *optional description*
 
-    ::
+   ::
         
-      _[[B]]
-      script
-      script
-      ...
-      _[[Q]]
+     _[[B]]
+     script
+     script
+     ...
+     _[[Q]]
  
    text, pdf, html

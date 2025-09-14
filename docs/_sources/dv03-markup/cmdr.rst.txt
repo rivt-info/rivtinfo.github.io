@@ -1,4 +1,4 @@
-3.5 Run Commands
+3.6 Run Commands
 ===================
 
 *rivt commands* read and write external files and assign values to variables.
