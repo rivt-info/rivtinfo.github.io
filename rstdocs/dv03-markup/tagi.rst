@@ -1,5 +1,5 @@
-3.3 Insert Tags
-===================
+3.3 **I** nsert Tags
+=====================
 
 *line tags* format a line of text and are denoted with _[TAG], usually at the
 end of the line. *Block tags* format a block of text that begin with _[[TAG]]
