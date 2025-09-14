@@ -1,5 +1,5 @@
-3.6 Run Commands
-===================
+3.6 **R** un Commands
+=======================
 
 *rivt commands* read and write external files and assign values to variables.
 They typically start in the first column with a vertical bar ( | ) followed by

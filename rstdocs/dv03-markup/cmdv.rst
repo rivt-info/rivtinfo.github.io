@@ -1,5 +1,5 @@
-3.8 Value Commands
-===================
+3.8 **V** alue Commands
+=========================
 
 *rivt commands* read and write external files and assign values to variables.
 They typically start in the first column with a vertical bar ( | ) followed by

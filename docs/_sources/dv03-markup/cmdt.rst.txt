@@ -1,5 +1,5 @@
-3.9 Tool Commands
-===================
+3.9 **T** ool Commands
+=======================
 
 *rivt commands* read and write external files and assign values to variables.
 They typically start in the first column with a vertical bar ( | ) followed by
