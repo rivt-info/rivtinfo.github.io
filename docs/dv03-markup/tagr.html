@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="../_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="../_static/favicon-32x32.png" type="image/png">
-    <title>3.6 Run Commands &#8212; Home</title>
+    <title>3.6 Run Tags &#8212; Home</title>
   
   
   
@@ -314,7 +314,7 @@
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="syntax.html">3.1 Syntax</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">3.6 Run Commands</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">3.6 Run Tags</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tagi.html">3.3 Insert Tags</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tagv.html">3.4 Values Tags</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tagt.html">3.5 Tools Tags</a></li>
@@ -368,7 +368,7 @@
     
     <li class="breadcrumb-item"><a href="dv03-summary.html" class="nav-link">3. Markup</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">3.6 Run Commands</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">3.6 Run Tags</span></li>
   </ul>
 </nav>
 </div>
@@ -385,22 +385,52 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="run-commands">
-<h1>3.6 Run Commands<a class="headerlink" href="#run-commands" title="Link to this heading">#</a></h1>
+  <section id="run-tags">
+<h1>3.6 Run Tags<a class="headerlink" href="#run-tags" title="Link to this heading">#</a></h1>
 <p><em>line tags</em> format a line of text and are denoted with _[TAG], usually at the
-end of the line. Tags have a function and output scope.</p>
+end of the line. <em>Block tags</em> format a block of text that begin with _[[TAG]]
+on the first line and end with _[[Q]] after the last line.</p>
 <section id="key">
 <h2><strong>KEY</strong><a class="headerlink" href="#key" title="Link to this heading">#</a></h2>
-<p>_[[TAG]] : block tag description</p>
+<p>_[TAG] : tag description
+_[[TAG]] : tag description</p>
 <hr><aside class="topic">
 <p class="topic-title">syntax</p>
 <p>types of output</p>
 </aside>
 </section>
-<section id="win-indent-bold">
-<h2>_[[WIN]] : indent bold<a class="headerlink" href="#win-indent-bold" title="Link to this heading">#</a></h2>
+<section id="win-batch-commands">
+<h2>_[[WIN]] : batch commands<a class="headerlink" href="#win-batch-commands" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">_[[B]]</p>
+<p class="topic-title">_[[WIN]] <em>optional description</em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">WIN</span><span class="p">]]</span>
+<span class="n">script</span>
+<span class="n">script</span>
+<span class="o">...</span>
+<span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
+</pre></div>
+</div>
+<p>text, pdf, html</p>
+</aside>
+</section>
+<section id="macos-shell-commands">
+<h2>_[[MACOS]] : shell commands<a class="headerlink" href="#macos-shell-commands" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">_[[MACOS]] <em>optional description</em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">MACOS</span><span class="p">]]</span>
+<span class="n">script</span>
+<span class="n">script</span>
+<span class="o">...</span>
+<span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
+</pre></div>
+</div>
+<p>text, pdf, html</p>
+</aside>
+</section>
+<section id="linux-shell-commands">
+<h2>_[[LINUX]] : shell commands<a class="headerlink" href="#linux-shell-commands" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">_[[LINUX]] <em>optional description</em></p>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">B</span><span class="p">]]</span>
 <span class="n">script</span>
@@ -410,34 +440,6 @@ end of the line. Tags have a function and output scope.</p>
 </pre></div>
 </div>
 </div></blockquote>
-<p>text, pdf, html</p>
-</aside>
-</section>
-<section id="macos-indent-bold">
-<h2>_[[MACOS]] : indent bold<a class="headerlink" href="#macos-indent-bold" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[[B]]</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">B</span><span class="p">]]</span>
-<span class="n">script</span>
-<span class="n">script</span>
-<span class="o">...</span>
-<span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
-</pre></div>
-</div>
-<p>text, pdf, html</p>
-</aside>
-</section>
-<section id="linux-indent-bold">
-<h2>_[[LINUX]] : indent bold<a class="headerlink" href="#linux-indent-bold" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[[B]]</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">B</span><span class="p">]]</span>
-<span class="n">script</span>
-<span class="n">script</span>
-<span class="o">...</span>
-<span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
-</pre></div>
-</div>
 <p>text, pdf, html</p>
 </aside>
 </section>
@@ -491,9 +493,9 @@ end of the line. Tags have a function and output scope.</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key"><strong>KEY</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#win-indent-bold">_[[WIN]] : indent bold</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#macos-indent-bold">_[[MACOS]] : indent bold</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linux-indent-bold">_[[LINUX]] : indent bold</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#win-batch-commands">_[[WIN]] : batch commands</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#macos-shell-commands">_[[MACOS]] : shell commands</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linux-shell-commands">_[[LINUX]] : shell commands</a></li>
 </ul>
   </nav></div>
 

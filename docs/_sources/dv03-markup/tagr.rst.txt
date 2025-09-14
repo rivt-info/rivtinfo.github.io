@@ -1,14 +1,16 @@
-3.6 Run Commands
+3.6 Run Tags
 ===================
 
 *line tags* format a line of text and are denoted with _[TAG], usually at the
-end of the line. Tags have a function and output scope.
+end of the line. *Block tags* format a block of text that begin with _[[TAG]]
+on the first line and end with _[[Q]] after the last line. 
 
 
 **KEY**  
 --------------------------------------------
 
-_[[TAG]] : block tag description
+_[TAG] : tag description
+_[[TAG]] : tag description
 
 .. raw:: html
 
@@ -19,61 +21,61 @@ _[[TAG]] : block tag description
     types of output
 
 
-_[[WIN]] : indent bold
+_[[WIN]] : batch commands
 ------------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic::  _[[B]] 
+.. topic::  _[[WIN]] *optional description*
 
-    ::
-        
-        _[[B]]
-        script
-        script
-        ...
-        _[[Q]]
+   ::
+    
+     _[[WIN]]
+     script
+     script
+     ...
+     _[[Q]]
 
    text, pdf, html
 
 
-_[[MACOS]] : indent bold
+_[[MACOS]] : shell commands
 ------------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic::  _[[B]] 
+.. topic::  _[[MACOS]] *optional description*
 
-    ::
-        
-        _[[B]]
-        script
-        script
-        ...
-        _[[Q]]
+   ::
+    
+     _[[MACOS]]
+     script
+     script
+     ...
+     _[[Q]]
 
-    text, pdf, html
+   text, pdf, html
 
 
-_[[LINUX]] : indent bold
+_[[LINUX]] : shell commands
 ------------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic::  _[[B]] 
+.. topic::  _[[LINUX]] *optional description*
 
     ::
         
-        _[[B]]
-        script
-        script
-        ...
-        _[[Q]]
-
-    text, pdf, html
+      _[[B]]
+      script
+      script
+      ...
+      _[[Q]]
+ 
+   text, pdf, html
