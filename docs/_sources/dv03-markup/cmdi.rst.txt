@@ -1,4 +1,4 @@
-3.7 **I**nsert Commands
+3.7 **I** nsert Commands
 =========================
 
 *rivt commands* read and write external files and assign values to variables.
@@ -80,41 +80,3 @@ Project folder organization is described :doc:`here </dv04-reports/folders>`
     - rv.I, rv.V
     - PDF, HTML
 
-**VALUES** - insert values
--------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: | VALUES | relative path | filename | title _[V], [rows]
-
-    - reads values.txt file
-    - rv.I, rv.V
-    - PDF, HTML
-
-**=** - assign value
--------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: a = 10*IN | unit1, unit2 | description
-
-    - assigns value to a variable
-    - rv.V
-    - PDF, HTML
-
-**:=** - define equation
--------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: b := a * 10 | unit1, unit2 | reference
-
-    - defines a variable in terms of expression
-    - rv.V
-    - PDF, HTML

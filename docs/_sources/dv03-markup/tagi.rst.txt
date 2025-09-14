@@ -31,7 +31,7 @@ _[B] :  center, bold
 
 .. topic:: *text* _[B]
 
-    - pdf, html
+   pdf, html
 
 _[C] :   center 
 -------------------------------------------
@@ -42,7 +42,7 @@ _[C] :   center
 
 .. topic:: *text* _[C]
 
-    - pdf, html
+   pdf, html
 
 _[D] :  footnote description
 -------------------------------------------    
@@ -166,21 +166,8 @@ _[#] :  numbered footnote
 
 .. topic:: *text* _[#] text
     
-    text, pdf, html
+   text, pdf, html
 
-**horizontal line**
---------------------------------------- 
-.. raw:: html
-
-    <hr>
-
-.. topic::  5 or more underscores  _____
-
-    text, pdf, html
-
-
-**[02]** Block Tags
----------------------
 
 _[[B]] : indent bold
 ------------------------------------------------
@@ -288,12 +275,21 @@ _[[T]] : topic
 
     ::
         
-        _[[N]] topic
+        _[[T]] topic
         text
         text
         ...
         _[[Q]]
 
 
-    text, pdf, html
+   text, pdf, html
 
+_ : **horizontal line**
+--------------------------------------- 
+.. raw:: html
+
+    <hr>
+
+.. topic::  underscores  ___ (>4)
+
+    text, pdf, html
