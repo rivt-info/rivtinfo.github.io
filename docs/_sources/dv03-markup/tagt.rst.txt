@@ -29,7 +29,7 @@ _[[PYTHON]] : Python code
     <hr>
 
 
-.. code-block:: python
+.. code-block:: text
      
       _[[PYTHON]] description
       code
@@ -47,7 +47,7 @@ _[[RUBY]] : Ruby code
 
     <hr>
 
-.. code-block:: ruby  
+.. code-block:: text 
         
      _[[RUBY]] description
      code
@@ -67,7 +67,7 @@ _[[HTML]] : HTML code
     <hr>
 
 
-.. code-block:: html
+.. code-block:: text
         
      _[[HTML]]
      code
@@ -85,7 +85,7 @@ _[[LATEX]] : LaTeX code
 
     <hr>
 
-.. code-block:: tex
+.. code-block:: text
         
     _[[LATEX]]
     code

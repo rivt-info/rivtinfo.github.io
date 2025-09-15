@@ -37,7 +37,7 @@ _[[WIN]] : batch commands
   ...
    _[[Q]]
 
-text, pdf, html
+  text, pdf, html
 
 
 _[[MACOS]] : shell commands
@@ -55,7 +55,7 @@ _[[MACOS]] : shell commands
   ...
    _[[Q]]
 
-text, pdf, html
+  text, pdf, html
 
 
 _[[LINUX]] : shell commands
@@ -73,4 +73,4 @@ _[[LINUX]] : shell commands
   ...
    _[[Q]]
 
-text, pdf, html
+  text, pdf, html
