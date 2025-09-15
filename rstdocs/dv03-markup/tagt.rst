@@ -27,9 +27,8 @@ _[[PYTHON]] : Python code
 
     <hr>
 
-.. topic::  _[[PYTHON]] 
 
-  ::
+  .. code-block:: python
      
       _[[PYTHON]]
       code
@@ -37,7 +36,7 @@ _[[PYTHON]] : Python code
       ...
       _[[Q]]
 
-   text, pdf, html
+text, pdf, html
 
 
 _[[RUBY]] : Ruby code
