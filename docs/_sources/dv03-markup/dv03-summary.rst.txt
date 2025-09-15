@@ -2,7 +2,8 @@
 ==================
 
 The general syntax of a *rivt string* is text enclosed in triple quotes, where
-the first line is a section header and subsequent lines are indented 4 spaces.
+the first line is a section header and subsequent lines are section content
+indented 4 spaces.
 
   
 .. code-block:: python

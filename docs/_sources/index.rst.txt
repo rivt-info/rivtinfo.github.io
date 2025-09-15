@@ -26,8 +26,8 @@ A *rivt file* outputs a formatted *doc* file as text, HTML or PDF. Organized
 report*.
 
 *rivt* is an open source framework that integrates with other engineering
-tools and llbraries. The framework is described :doc:`here
-<dv02-install/dv02-summary>`.
+tools and llbraries. The framework is described 
+:doc:`here <dv02-install/dv02-summary>`.
 
 :doc:`This </dv01-intro/smallex>` is a small *rivt* example. Larger examples
 are here. A search interface for *rivt files* on GitHub is

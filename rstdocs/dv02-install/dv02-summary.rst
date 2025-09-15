@@ -116,16 +116,16 @@ The *rivt framework* includes installation of the following programs:
 *rivt.zip* is a portable, single folder version of *rivt* and *VSCode*
 including libraries and extensions. It can be downloaded here.
 
-The advantages of this setup include:
+The advantages of this installation method include:
 
-#. No installation steps - just unzip.
-#. Can be moved anywhere.
-#. Ensured compatiblity and integration between libraries. 
+#. No steps - just unzip and use.
+#. Can be moved anywhere as a unified folder.
+#. Ensures compatiblity and integration between libraries. 
 
 Disadvantages include:
 
-#. Cannot be updated. However new releases are planned monthly.
-#. Not as easily integrated with other programs. 
+#. The installation itself cannot be updated. New releases are planned monthly.
+#. Integration with other programs can be more difficult.
 
 
 .. toctree::

@@ -1,31 +1,37 @@
 3.1 Syntax
 ================
 
+The general syntax of a rivt string is text enclosed in triple quotes, where
+the first line is a section header and subsequent lines are section content
+indented 4 spaces.
+
 **[01]** Header 
 ------------------
 
-The first line of a *rivt-string* is a header containing a *section label* and
-two *parameters*. The *section label* is the title for the new section. When
-preceeded by two dashes (--) the section output is merged with the prior
-section output without starting a new *doc section*.
+The first line of a *rivt-string* is a header with a *section label* and two
+*parameters* separated by a vertical bar. The *section label* is the title for
+the new section and the *parameters* specify write settings for the section. A
+section is a numbered, bookmarked and linked section in a *doc*.
   
 .. code-block:: python
 
-    rv._("""Section Label | print; noprint, public; private
+    rv._("""Section Label | write; nowrite, public; private
 
         section content
         ...
         
         """)
 
-The *parameters* are separated from the *section label* by a vertical bar
-specify 
 
-- whether the *section content* is output to *docs*
+When the *section label* is preceeded by two dashes (--) the section output is
+merged with the prior section output and does not start a new *doc section*.
+
+The two write parameters specify
+
+- whether the section output is written to the *docs*
 - whether the section is written to a *public file* 
   
-The parameters only need to be specified when different from the defaults shown
-below.
+They only need to be specified when different from defaults.
 
 ============= ============================
 API function    default header parameters       
@@ -44,7 +50,7 @@ rv.Q             noprint, private
 -----------------------------
 
 Section content is indented four spaces (for legibility and code folding) and
-includes *commands* for file operations and *tags* for text formatting. Any
+includes *tags* for text formatting and *commands* for file operations. Any
 text not defined by *commands* or *tags* is passed through unchanged to
 intermediate files for further PDF and HTML processing, or formatted to a utf-8
 *doc*.
@@ -59,11 +65,11 @@ intermediate files for further PDF and HTML processing, or formatted to a utf-8
         
         """)
 
-*rivt markup* wraps and extends *restructuredText* and adds the additional
-markup elements - *tags* and *commands*. They simplify use and improve
-legiblity. For example, the same rivt file can generate  text, PDF or HTML docs.
+*rivt markup* includes *tag* and *command* elements and wraps and extends
+*restructuredText*. It provides a unified markup that can generate text, PDF or
+HTML docs from the same file.
 
-**Tags**
+:doc:`Tags </dv03-markup/quick>`
 
 *Line tags* format a line of text and are denoted
 with _[**TAG**], typically added at the end of the line.
@@ -71,24 +77,24 @@ with _[**TAG**], typically added at the end of the line.
 *Block tags* evaluate a multi-line text block that starts
 with _[[**TAG**]] and ends with _[[**Q**]].
 
-**Commands**
+:doc:`Commands </dv03-markup/quick>`
 
-*Commands* read and write files and assign values to variables. They start in the
-first column with double vertical bars, followed by the command name, the
-relative file path and parameters. The exceptions are the assign (=) and define
-(:=) commands, related to equations.
+*Commands* read and write files and assign values to variables. They start in
+the first column with a vertical bar, followed by the command name, the
+relative file path, file path and parameters. The exceptions are the assign (=)
+and define (:=) commands, related to equations.
 
-*RestructuredText*
+`RestructuredText <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_
 
 Text in a *rivt string* not defined by *commands* or *tags* is passed through
-to a *restructuredText (reST)* file used to write PDF and HTML *docs*. In
-addition, *commands* and *tags* are often converted to *reST* when processing a
-*rivt file*. Most *restructuredText* syntax is stripped out
-when writting a *text doc*.
+to the intermediate *restructuredText (reST)* file that is used to write PDF
+and HTML *docs*. In general *commands* and *tags* are often converted to
+*reST* when processing a *rivt file* and stripped when writting a *text doc*.
 
 
-Common *restructuredText* useful in a *rivt string* include surrounding test
-with * for italics and ** for bold.
+Common *restructuredText* that is useful in a *rivt string* include: 
+
+- surrounding test with * for italics and ** for bold.
 
 
 
