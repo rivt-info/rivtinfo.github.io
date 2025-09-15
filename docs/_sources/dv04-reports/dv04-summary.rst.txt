@@ -2,16 +2,24 @@
 =============== 
 
 
-*rivt files* output PDF, HTML or text *docs* that are typically organized into
-*rivt reports*. The *reports* are assembled from a *rivt folder structure**. A
-*rivt file* may also be treated as a *single doc*
+*rivt files* output formatted *docs* that can be organized into *rivt reports*.
+*rivt reports* are assembled from a *rivt folder structure** and a *doc number*
+prefix in the *rivt file* name. The *doc number* prefix has the form:
+
+        rvddss-file-name.py
+    
+where dd is a two digit division number and ss is a two digit subdivision
+number e.g., rv0203-loads.py. Editing the doc number changes the report
+organization and default locations of sources used in a doc.
+
+A *rivt file* may also be treated as a *single doc*
+
 
 **[01]** rivt folders
 ----------------------
 
-The folder structure includes rivt files, external source documents, settings
-and separation of files into public and private categories to facilitate open
-source sharing.
+The folder structure organizes rivt files, external source documents, settings
+and public and private categories that facilitate open source sharing.
 
 
     [rivt]-Report-Label/          Project Folder 
@@ -21,12 +29,6 @@ source sharing.
     ├── [reports]/                reports and docs
     ├── [source]                  source files      
     └── README.txt                text report
-
-
-
- by 
-
-
 
 Resource files used in *rivt files* are organized in the *source* folder.
 
@@ -56,6 +58,17 @@ Report and document titles are taken from folder and file names unless
 over-rides are specified in the rivt-config.ini file.
 
 
+::
+
+    [rivt]-Report-Label/          Project Folder 
+    ├── [dv01-]divlabel/          division folder
+    ├── [dv02-]divlabel/          division folder                   
+    ├── [public]/                 public rivt files
+    ├── [reports]/                reports and docs
+    ├── [source]                  source files      
+    └── README.txt                text report 
+
+
 .. toctree::
     :maxdepth: 1
     :hidden:
@@ -64,11 +77,3 @@ over-rides are specified in the rivt-config.ini file.
     documents.rst
     settings.rst
 
-
-        [rivt]-Report-Label/          Project Folder 
-        ├── [dv01-]divlabel/          division folder
-        ├── [dv02-]divlabel/          division folder                   
-        ├── [public]/                 public rivt files
-        ├── [reports]/                reports and docs
-        ├── [source]                  source files      
-        └── README.txt                text report 

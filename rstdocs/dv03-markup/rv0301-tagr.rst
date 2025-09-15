@@ -1,4 +1,4 @@
-3.2 Tags in [R]un
+3.1 Tags in [R]un
 ===================
 
 *line tags* format a line of text and are denoted with _[TAG], usually at the

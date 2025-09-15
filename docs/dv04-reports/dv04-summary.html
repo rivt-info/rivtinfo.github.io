@@ -60,7 +60,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="4.1 - Files and Folders" href="folders.html" />
-    <link rel="prev" title="3.12 Example" href="../dv03-markup/example1.html" />
+    <link rel="prev" title="3.12 Example" href="../dv03-markup/rv0311-example1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -160,7 +160,7 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dv03-markup/dv03-summary.html">
+  <a class="nav-link nav-internal" href="../dv03-markup/_dv03-markup.html">
     3. Markup
   </a>
 </li>
@@ -267,7 +267,7 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dv03-markup/dv03-summary.html">
+  <a class="nav-link nav-internal" href="../dv03-markup/_dv03-markup.html">
     3. Markup
   </a>
 </li>
@@ -375,16 +375,21 @@
                   
   <section id="reports">
 <h1>4. Reports<a class="headerlink" href="#reports" title="Link to this heading">#</a></h1>
-<p><em>rivt files</em> output PDF, HTML or text <em>docs</em> that are typically organized into
-<em>rivt reports</em>. The <em>reports</em> are assembled from a <em>rivt folder structure*</em>. A
-<em>rivt file</em> may also be treated as a <em>single doc</em></p>
+<p><em>rivt files</em> output formatted <em>docs</em> that can be organized into <em>rivt reports</em>.
+<em>rivt reports</em> are assembled from a <em>rivt folder structure*</em> and a <em>doc number</em>
+prefix in the <em>rivt file</em> name. The <em>doc number</em> prefix has the form:</p>
+<blockquote>
+<div><p>rvddss-file-name.py</p>
+</div></blockquote>
+<p>where dd is a two digit division number and ss is a two digit subdivision
+number e.g., rv0203-loads.py. Editing the doc number changes the report
+organization and default locations of sources used in a doc.</p>
+<p>A <em>rivt file</em> may also be treated as a <em>single doc</em></p>
 <section id="rivt-folders">
 <h2><strong>[01]</strong> rivt folders<a class="headerlink" href="#rivt-folders" title="Link to this heading">#</a></h2>
-<p>The folder structure includes rivt files, external source documents, settings
-and separation of files into public and private categories to facilitate open
-source sharing.</p>
+<p>The folder structure organizes rivt files, external source documents, settings
+and public and private categories that facilitate open source sharing.</p>
 <blockquote>
-<div><blockquote>
 <div><p>[rivt]-Report-Label/          Project Folder
 ├── [dv01-]divlabel/          division folder
 ├── [dv02-]divlabel/          division folder
@@ -392,8 +397,6 @@ source sharing.</p>
 ├── [reports]/                reports and docs
 ├── [source]                  source files
 └── README.txt                text report</p>
-</div></blockquote>
-<p>by</p>
 </div></blockquote>
 <p>Resource files used in <em>rivt files</em> are organized in the <em>source</em> folder.</p>
 </section>
@@ -417,6 +420,15 @@ organized into numbered division folders of the form:</p>
 of <em>docs</em>.</p>
 <p>Report and document titles are taken from folder and file names unless
 over-rides are specified in the rivt-config.ini file.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[rivt]-Report-Label/          Project Folder
+├── [dv01-]divlabel/          division folder
+├── [dv02-]divlabel/          division folder
+├── [public]/                 public rivt files
+├── [reports]/                reports and docs
+├── [source]                  source files
+└── README.txt                text report
+</pre></div>
+</div>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -433,7 +445,7 @@ over-rides are specified in the rivt-config.ini file.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../dv03-markup/example1.html"
+       href="../dv03-markup/rv0311-example1.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
