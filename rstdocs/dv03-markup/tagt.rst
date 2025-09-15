@@ -1,4 +1,4 @@
-3.5 **T** ools Tags
+3.5 Tags in [T]ools
 =====================
 
 *line tags* format a line of text and are denoted with _[TAG], usually at the
@@ -29,35 +29,15 @@ _[[PYTHON]] : Python code
 
 .. topic::  _[[PYTHON]] 
 
-    ::
-        
-        _[[PYTHON]]
-        code
-        code
-        ...
-        _[[Q]]
+  ::
+     
+      _[[PYTHON]]
+      code
+      code
+      ...
+      _[[Q]]
 
    text, pdf, html
-
-
-_[[FORTRAN]] : Fortran code
-------------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic::  _[[FORTRAN]]  description
-
-    ::
-        
-        _[[FORTRAN]]
-        code
-        code
-        ...
-        _[[Q]]
-
-    text, pdf, html
 
 
 _[[RUBY]] : Ruby code
@@ -69,15 +49,15 @@ _[[RUBY]] : Ruby code
 
 .. topic::  _[[RUBY]] description
 
-    ::
+   ::
         
-        _[[RUBY]]
-        code
-        code
-        ...
-        _[[Q]]
-
-    text, pdf, html
+     _[[RUBY]]
+     code
+     code
+     ...
+     _[[Q]]
+   
+   text, pdf, html
 
 
 
@@ -90,15 +70,15 @@ _[[HTML]] : HTML code
 
 .. topic::  _[[HTML]] description
 
-    ::
+   ::
         
-        _[[HTML]]
-        code
-        code
-        ...
-        _[[Q]]
-
-    text, pdf, html
+     _[[HTML]]
+     code
+     code
+     ...
+     _[[Q]]
+   
+   text, pdf, html
 
 
 _[[LATEX]] : LaTeX code

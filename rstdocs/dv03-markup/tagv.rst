@@ -1,4 +1,4 @@
-3.4 **V** alues Tags
+3.4 Tags in [V]alues
 ======================
 
 *line tags* format a line of text and are denoted with _[TAG], usually at the

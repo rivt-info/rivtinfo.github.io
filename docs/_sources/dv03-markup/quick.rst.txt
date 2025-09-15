@@ -1,29 +1,31 @@
 3.11 Quick Summary
 =======================
 
+
 **[01]** Line tags
 ----------------------
 
 ================ ========================== ====================================
 Scope             Line Tags                    Description (doc scope)
 ================ ========================== ====================================
+rv.I                 _____                    horizontal line, >4 underscores 
+rv.I, .V             _[P]                     new page (all)
 rv.I              *description* _[D]          footnote description (all)
 rv.I              text _[#] text              footnote (all)
 rv.I              text _[LD] *doc link*       doc link (all)
 rv.I              text _[LR] *report link*    report link (all)
 rv.I, .T          text _[LU] *url*            url link (all)
-rv.I                 *equation* _[S]          format symbol math (all) 
-rv.I                       _____              horizontal line (>5) 
-rv.I, .V                      _[P]            new page (all)
-rv.I, .V               *text* _[B]            center bold text (pdf, html)
-rv.I, .V               *text* _[C]            center text (all)
-rv.I, .V              *label* _[E]            equation label (all)
-rv.I, .V              *caption* _[F]          image label (all) [1]
-rv.I, .V              *title* _[T]            table label (all) [1]
-rv.V                    *title* _[V]          values table label (all) [1]
+rv.I, .V          *equation* _[S]             format symbol math (all) 
+rv.I, .V          *text* _[B]                 center bold text (pdf, html)
+rv.I, .V          *text* _[C]                 center text (all)
+rv.I, .V          *label* _[E]                equation label (all)
+rv.I, .V          *caption* _[F]              image label (all) [1]
+rv.I, .V          *title* _[T]                table label (all) [1]
+rv.V              *title* _[V]                values table label (all) [1]
 ================ ========================== ====================================
 
-[1] tag may be added to a command parameter
+[1] tag may be added to caption and title parameters in *commands*
+
 
 **[02]** Block tags
 ----------------------
@@ -50,26 +52,28 @@ rv.T          _[[OPENSEES]] *description*     OpenSeesscript (all)
 rv.T          _[[LATEX]] *description*        LaTeX commands (all)
 rv.T          _[[HTML]] *description*         HTML commands (all)
 ============ ============================= ======================================
-  
+
+
 **[03]** Commands
 -------------------
 
-======= ===== ==================================================== ==============
-Scope    R/W                  Command                                file types
-======= ===== ==================================================== ==============
-rv.R      R   | LINUX | path | fname                                sh
-rv.R      R   | MACOS | path | fname                                sh
-rv.R      R   | WIN | path | fname                                  bat,cmd
-rv.I      R   | TABLE | path | fname | title, width, l;c;r          csv,txt,xlsx
-rv.I      R   | TEXT | path | fname | _[[block tag]]                txt,tex,rst
-rv.I,.V   R   | IMAGE | path | fname |  caption, scale              png,jpg
-rv.I,.V   R   | IMAGE2 | path | fname | c1, c2, s1, s2              png,jpg
-rv.V      R   | VALUES | path | fname | title, [rows]               csv
-rv.V      R    a = 1 + 1 | unit1, unit2, decimal | descrip          "assign" 
-rv.V      R    b := a + 3 | unit1, unit2, decimal | ref             "define" 
-rv.T      R   | HTML | path | fname                                   html
-rv.T      R   | LATEX | path | fname                                  tex
-rv.T      R   | PYTHON| path | fname                                  py
-rv.D      R   | APPEND | path | fname                                 pdf
-rv.D      W   | DOC| path | fname | rpdf; tpdf; txt; html          pdf,txt, html
-======= ===== ==================================================== ==============
+======== ===== ==================================================== ================
+Scope     R/W                  Command                                file types
+======== ===== ==================================================== ================
+rv.R       R   | LINUX | path | fname                                sh
+rv.R       R   | MACOS | path | fname                                sh
+rv.R       R   | WIN | path | fname                                  bat, cmd
+rv.I       R   | TEXT | path | fname | title                         txt, tex, rst
+rv.I, .V   R   | TABLE | path | fname | title, width, l;c;r          csv, txt, xlsx
+rv.I, .V   R   | IMAGE | path | fname |  caption, scale              png, jpg
+rv.I, .V   R   | IMAGE2 | path | fname | c1, c2, s1, s2              png, jpg
+rv.V       R   | VALUES | path | fname | title, [rows]               csv
+rv.V       W    a = 1 + 1 | unit1, unit2, decimal | descrip          assign value
+rv.V       W    b := a + 3 | unit1, unit2, decimal | ref             define value
+rv.T       R   | HTML | path | fname                                 html
+rv.T       R   | LATEX | path | fname                                tex
+rv.T       R   | PYTHON | path | fname                                py
+rv.T       R   | QCAD   | path | fname                                py
+rv.D       R   | APPEND | path | fname                               pdf
+rv.D       W   | DOC | path | fname | rpdf; tpdf; txt; html          pdf, txt, html
+======== ===== ==================================================== ================

@@ -1,5 +1,5 @@
-3.9 **T** ool Commands
-=======================
+3.9 Commands in [T]ools
+========================
 
 *rivt commands* read and write external files and assign values to variables.
 They typically start in the first column with a vertical bar ( | ) followed by
@@ -8,22 +8,18 @@ assignment ( = ) and definition ( := ) commands which are used to assign values
 and evaluate equations.
 
 In the syntax description below parameter options are separated with
-semi-colons and parameter elements by commas. 
+semi-colons and parameter elements by commas. Path names can be directly
+specified (relative to the project *source folder*) or specified with an alias:
 
-Most commands have a *relative path* parameter with three modes:
-
-    *rvdefault* : when this value is provided *rivt* looks for the file in the
-    division source directory. For example if the rivt file is in division 1
+    *rvdefault* : this alias directs *rivtlib* to look for the file in the
+    source folder. For example if the *rivt file* is in division 1
     and the API function is *Insert* the folder *i01* in *source* is searched.
 
-    *rvlocal* : when this value is provided *rivt* looks for the file in the
-    rivt file directory.
+    *rvlocal* : this alias directs *rivtlib* to look for the file in the *rivt
+    file* directory. It is used when a *single doc*, ratherh than a *report
+    doc* is processed.
 
-    specified source : a specific folder may also be provided. For example if
-    *v02* is specified the *v02* folder in the *source* folder is searched.
-
-
-Project folder organization is described :doc:`here </dv04-reports/folders>`
+The *rivt project* folder structure is described :doc:`here </dv04-reports/folders>`
 
 
 **KEY**  
@@ -37,11 +33,9 @@ Project folder organization is described :doc:`here </dv04-reports/folders>`
 .. topic:: | COMMAND | parameters
 
     - input or output file types
-    - function scope
     - applicable doc types
 
-
-**APPEND** - append a PDF file
+**PYTHON** - Python functions and scripts
 -------------------------------------------
 
 .. raw:: html
@@ -49,13 +43,12 @@ Project folder organization is described :doc:`here </dv04-reports/folders>`
     <hr>
 
 
-.. topic:: | APPEND | relative path | filename | num; nonum 
+.. topic:: | PYTHON | path | filename
 
-    - reads PDF files
-    - rv.D
-    - PDF, HTML
+   reads .py files
 
-**DOC** - writes doc file
+
+**HTML** - HTML markup
 -------------------------------------------
 
 .. raw:: html
@@ -63,89 +56,30 @@ Project folder organization is described :doc:`here </dv04-reports/folders>`
     <hr>
 
 
-.. topic:: | DOC | relative path |  txt; html; rpdf; tpdf
+.. topic:: | MACOS | path | filename  
 
-    - writes text, PDF or HTML files
-    - rv.D
-    - PDF, HTML, text
-  
-    Exits after writing doc file
+   reads .html files
 
 
-**IMG** - insert image file
+**LATEX** - LaTeX code
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | IMG | relative path | filename | caption _[F], scale
+.. topic:: | LATEX | path | filename 
 
-    - reads PNG and JPEG files (.png, jpg)
-    - rv.I, rv.V
-    - PDF, HTML
+   reads .tex file
 
-**IMG2** - insert images side by side
---------------------------------------------------
 
-.. raw:: html
-
-    <hr>
-
-.. topic:: | IMG2 | rel path | fname1, fname2 | cap1 _[F], cap2 _[F], sc1, sc2 
-
-    - reads PNG and JPEG files (.png, jpg)
-    - rv.I, rv.V
-    - PDF, HTML
-
-**TEXT** - insert text file
-------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: | text | relative path | filename | _[[block tag]]
-
-    - reads TEXT and TEX files (.txt, .tex)
-    - rv.I, rv.V
-    - PDF, HTML
-
-**VALUES** - insert values
+**QCAD** - QCAD script
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | VALUES | relative path | filename | title _[V], [rows]
+.. topic:: | QCAD | path | filename 
 
-    - reads values.txt file
-    - rv.I, rv.V
-    - PDF, HTML
-
-**=** - assign value
--------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: a = 10*IN | unit1, unit2 | description
-
-    - assigns value to a variable
-    - rv.V
-    - PDF, HTML
-
-**:=** - define equation
--------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: b := a * 10 | unit1, unit2 | reference
-
-    - defines a variable in terms of expression
-    - rv.V
-    - PDF, HTML
+   reads .js file

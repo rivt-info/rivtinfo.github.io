@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="../_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="../_static/favicon-32x32.png" type="image/png">
-    <title>3.9 T ool Commands &#8212; Home</title>
+    <title>3.9 Commands in [T]ools &#8212; Home</title>
   
   
   
@@ -60,7 +60,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="3.10 Process Commands" href="cmdprc.html" />
-    <link rel="prev" title="3.8 V alue Commands" href="cmdv.html" />
+    <link rel="prev" title="3.8 Commands in [V]alues" href="cmdv.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -314,14 +314,14 @@
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="syntax.html">3.1 Syntax</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tagr.html">3.2 <strong>R</strong> un Tags</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tagi.html">3.3 <strong>I</strong> nsert Tags</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tagv.html">3.4 <strong>V</strong> alues Tags</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tagt.html">3.5 <strong>T</strong> ools Tags</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cmdr.html">3.6 <strong>R</strong> un Commands</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cmdi.html">3.7 <strong>I</strong> nsert Commands</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cmdv.html">3.8 <strong>V</strong> alue Commands</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">3.9 <strong>T</strong> ool Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tagr.html">3.2 Tags in [R]un</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tagi.html">3.3 Tags in [I]nsert</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tagv.html">3.4 Tags in [V]alues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tagt.html">3.5 Tags in [T]ools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cmdr.html">3.6 Commands in [R]un</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cmdi.html">3.7 Commands in [I]nsert</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cmdv.html">3.8 Commands in [V]alues</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">3.9 Commands in [T]ools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cmdprc.html">3.10 <strong>Process</strong> Commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quick.html">3.11 Quick Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="example1.html">3.12 Example</a></li>
@@ -368,7 +368,7 @@
     
     <li class="breadcrumb-item"><a href="dv03-summary.html" class="nav-link">3. Markup</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">3.9 <strong>T</strong> ool Commands</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">3.9 Commands in [T]ools</span></li>
   </ul>
 </nav>
 </div>
@@ -385,124 +385,61 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="t-ool-commands">
-<h1>3.9 <strong>T</strong> ool Commands<a class="headerlink" href="#t-ool-commands" title="Link to this heading">#</a></h1>
+  <section id="commands-in-t-ools">
+<h1>3.9 Commands in [T]ools<a class="headerlink" href="#commands-in-t-ools" title="Link to this heading">#</a></h1>
 <p><em>rivt commands</em> read and write external files and assign values to variables.
 They typically start in the first column with a vertical bar ( | ) followed by
 the command name and parameters. The exceptions to this pattern are the
 assignment ( = ) and definition ( := ) commands which are used to assign values
 and evaluate equations.</p>
 <p>In the syntax description below parameter options are separated with
-semi-colons and parameter elements by commas.</p>
-<p>Most commands have a <em>relative path</em> parameter with three modes:</p>
+semi-colons and parameter elements by commas. Path names can be directly
+specified (relative to the project <em>source folder</em>) or specified with an alias:</p>
 <blockquote>
-<div><p><em>rvdefault</em> : when this value is provided <em>rivt</em> looks for the file in the
-division source directory. For example if the rivt file is in division 1
+<div><p><em>rvdefault</em> : this alias directs <em>rivtlib</em> to look for the file in the
+source folder. For example if the <em>rivt file</em> is in division 1
 and the API function is <em>Insert</em> the folder <em>i01</em> in <em>source</em> is searched.</p>
-<p><em>rvlocal</em> : when this value is provided <em>rivt</em> looks for the file in the
-rivt file directory.</p>
-<p>specified source : a specific folder may also be provided. For example if
-<em>v02</em> is specified the <em>v02</em> folder in the <em>source</em> folder is searched.</p>
+<p><em>rvlocal</em> : this alias directs <em>rivtlib</em> to look for the file in the <em>rivt
+file</em> directory. It is used when a <em>single doc</em>, ratherh than a <em>report
+doc</em> is processed.</p>
 </div></blockquote>
-<p>Project folder organization is described <a class="reference internal" href="../dv04-reports/folders.html"><span class="doc">here</span></a></p>
+<p>The <em>rivt project</em> folder structure is described <a class="reference internal" href="../dv04-reports/folders.html"><span class="doc">here</span></a></p>
 <section id="key">
 <h2><strong>KEY</strong><a class="headerlink" href="#key" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| COMMAND | parameters</p>
 <ul class="simple">
 <li><p>input or output file types</p></li>
-<li><p>function scope</p></li>
 <li><p>applicable doc types</p></li>
 </ul>
 </aside>
 </section>
-<section id="append-append-a-pdf-file">
-<h2><strong>APPEND</strong> - append a PDF file<a class="headerlink" href="#append-append-a-pdf-file" title="Link to this heading">#</a></h2>
+<section id="python-python-functions-and-scripts">
+<h2><strong>PYTHON</strong> - Python functions and scripts<a class="headerlink" href="#python-python-functions-and-scripts" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| APPEND | relative path | filename | num; nonum</p>
-<ul class="simple">
-<li><p>reads PDF files</p></li>
-<li><p>rv.D</p></li>
-<li><p>PDF, HTML</p></li>
-</ul>
+<p class="topic-title">| PYTHON | path | filename</p>
+<p>reads .py files</p>
 </aside>
 </section>
-<section id="doc-writes-doc-file">
-<h2><strong>DOC</strong> - writes doc file<a class="headerlink" href="#doc-writes-doc-file" title="Link to this heading">#</a></h2>
+<section id="html-html-markup">
+<h2><strong>HTML</strong> - HTML markup<a class="headerlink" href="#html-html-markup" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| DOC | relative path |  txt; html; rpdf; tpdf</p>
-<ul class="simple">
-<li><p>writes text, PDF or HTML files</p></li>
-<li><p>rv.D</p></li>
-<li><p>PDF, HTML, text</p></li>
-</ul>
-<p>Exits after writing doc file</p>
+<p class="topic-title">| MACOS | path | filename</p>
+<p>reads .html files</p>
 </aside>
 </section>
-<section id="img-insert-image-file">
-<h2><strong>IMG</strong> - insert image file<a class="headerlink" href="#img-insert-image-file" title="Link to this heading">#</a></h2>
+<section id="latex-latex-code">
+<h2><strong>LATEX</strong> - LaTeX code<a class="headerlink" href="#latex-latex-code" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| IMG | relative path | filename | caption _[F], scale</p>
-<ul class="simple">
-<li><p>reads PNG and JPEG files (.png, jpg)</p></li>
-<li><p>rv.I, rv.V</p></li>
-<li><p>PDF, HTML</p></li>
-</ul>
+<p class="topic-title">| LATEX | path | filename</p>
+<p>reads .tex file</p>
 </aside>
 </section>
-<section id="img2-insert-images-side-by-side">
-<h2><strong>IMG2</strong> - insert images side by side<a class="headerlink" href="#img2-insert-images-side-by-side" title="Link to this heading">#</a></h2>
+<section id="qcad-qcad-script">
+<h2><strong>QCAD</strong> - QCAD script<a class="headerlink" href="#qcad-qcad-script" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| IMG2 | rel path | fname1, fname2 | cap1 _[F], cap2 _[F], sc1, sc2</p>
-<ul class="simple">
-<li><p>reads PNG and JPEG files (.png, jpg)</p></li>
-<li><p>rv.I, rv.V</p></li>
-<li><p>PDF, HTML</p></li>
-</ul>
-</aside>
-</section>
-<section id="text-insert-text-file">
-<h2><strong>TEXT</strong> - insert text file<a class="headerlink" href="#text-insert-text-file" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">| text | relative path | filename | _[[block tag]]</p>
-<ul class="simple">
-<li><p>reads TEXT and TEX files (.txt, .tex)</p></li>
-<li><p>rv.I, rv.V</p></li>
-<li><p>PDF, HTML</p></li>
-</ul>
-</aside>
-</section>
-<section id="values-insert-values">
-<h2><strong>VALUES</strong> - insert values<a class="headerlink" href="#values-insert-values" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">| VALUES | relative path | filename | title _[V], [rows]</p>
-<ul class="simple">
-<li><p>reads values.txt file</p></li>
-<li><p>rv.I, rv.V</p></li>
-<li><p>PDF, HTML</p></li>
-</ul>
-</aside>
-</section>
-<section id="assign-value">
-<h2><strong>=</strong> - assign value<a class="headerlink" href="#assign-value" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">a = 10*IN | unit1, unit2 | description</p>
-<ul class="simple">
-<li><p>assigns value to a variable</p></li>
-<li><p>rv.V</p></li>
-<li><p>PDF, HTML</p></li>
-</ul>
-</aside>
-</section>
-<section id="define-equation">
-<h2><strong>:=</strong> - define equation<a class="headerlink" href="#define-equation" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">b := a * 10 | unit1, unit2 | reference</p>
-<ul class="simple">
-<li><p>defines a variable in terms of expression</p></li>
-<li><p>rv.V</p></li>
-<li><p>PDF, HTML</p></li>
-</ul>
+<p class="topic-title">| QCAD | path | filename</p>
+<p>reads .js file</p>
 </aside>
 </section>
 </section>
@@ -523,7 +460,7 @@ rivt file directory.</p>
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">3.8 <strong>V</strong> alue Commands</p>
+        <p class="prev-next-title">3.8 Commands in [V]alues</p>
       </div>
     </a>
     <a class="right-next"
@@ -555,14 +492,10 @@ rivt file directory.</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key"><strong>KEY</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#append-append-a-pdf-file"><strong>APPEND</strong> - append a PDF file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#doc-writes-doc-file"><strong>DOC</strong> - writes doc file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img-insert-image-file"><strong>IMG</strong> - insert image file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img2-insert-images-side-by-side"><strong>IMG2</strong> - insert images side by side</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-insert-text-file"><strong>TEXT</strong> - insert text file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#values-insert-values"><strong>VALUES</strong> - insert values</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-value"><strong>=</strong> - assign value</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#define-equation"><strong>:=</strong> - define equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-python-functions-and-scripts"><strong>PYTHON</strong> - Python functions and scripts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-html-markup"><strong>HTML</strong> - HTML markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex-latex-code"><strong>LATEX</strong> - LaTeX code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qcad-qcad-script"><strong>QCAD</strong> - QCAD script</a></li>
 </ul>
   </nav></div>
 

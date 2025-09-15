@@ -1,4 +1,4 @@
-3.6 **R** un Commands
+3.6 Commands in [R]un
 =======================
 
 *rivt commands* read and write external files and assign values to variables.
@@ -8,22 +8,18 @@ assignment ( = ) and definition ( := ) commands which are used to assign values
 and evaluate equations.
 
 In the syntax description below parameter options are separated with
-semi-colons and parameter elements by commas. 
+semi-colons and parameter elements by commas. Path names can be directly
+specified (relative to the project *source folder*) or specified with an alias:
 
-Most commands have a *relative path* parameter with three modes:
-
-    *rvdefault* : when this value is provided *rivt* looks for the file in the
-    division source directory. For example if the rivt file is in division 1
+    *rvdefault* : this alias directs *rivtlib* to look for the file in the
+    source folder. For example if the *rivt file* is in division 1
     and the API function is *Insert* the folder *i01* in *source* is searched.
 
-    *rvlocal* : when this value is provided *rivt* looks for the file in the
-    rivt file directory.
+    *rvlocal* : this alias directs *rivtlib* to look for the file in the *rivt
+    file* directory. It is used when a *single doc*, ratherh than a *report
+    doc* is processed.
 
-    specified source : a specific folder may also be provided. For example if
-    *v02* is specified the *v02* folder in the *source* folder is searched.
-
-
-Project folder organization is described :doc:`here </dv04-reports/folders>`
+The *rivt project* folder structure is described :doc:`here </dv04-reports/folders>`
 
 
 **KEY**  
@@ -48,7 +44,7 @@ Project folder organization is described :doc:`here </dv04-reports/folders>`
     <hr>
 
 
-.. topic:: | WIN | relative path | filename
+.. topic:: | WIN | path | filename
 
    reads .txt, .cmd, .bat  files
 
@@ -60,7 +56,7 @@ Project folder organization is described :doc:`here </dv04-reports/folders>`
     <hr>
 
 
-.. topic:: | MACOS | relative path | filename  
+.. topic:: | MACOS | path | filename  
 
    reads .sh files
 
@@ -71,7 +67,7 @@ Project folder organization is described :doc:`here </dv04-reports/folders>`
 
     <hr>
 
-.. topic:: | LINUX | relative path | filename 
+.. topic:: | LINUX | path | filename 
 
    reads .sh files
 

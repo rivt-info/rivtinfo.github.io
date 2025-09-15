@@ -1,5 +1,5 @@
-3.7 **I** nsert Commands
-=========================
+3.7 Commands in [I]nsert
+==========================
 
 *rivt commands* read and write external files and assign values to variables.
 They typically start in the first column with a vertical bar ( | ) followed by
@@ -8,22 +8,18 @@ assignment ( = ) and definition ( := ) commands which are used to assign values
 and evaluate equations.
 
 In the syntax description below parameter options are separated with
-semi-colons and parameter elements by commas. 
+semi-colons and parameter elements by commas. Path names can be directly
+specified (relative to the project *source folder*) or specified with an alias:
 
-Most commands have a *relative path* parameter with three modes:
-
-    *rvdefault* : when this value is provided *rivt* looks for the file in the
-    division source directory. For example if the rivt file is in division 1
+    *rvdefault* : this alias directs *rivtlib* to look for the file in the
+    source folder. For example if the *rivt file* is in division 1
     and the API function is *Insert* the folder *i01* in *source* is searched.
 
-    *rvlocal* : when this value is provided *rivt* looks for the file in the
-    rivt file directory.
+    *rvlocal* : this alias directs *rivtlib* to look for the file in the *rivt
+    file* directory. It is used when a *single doc*, ratherh than a *report
+    doc* is processed.
 
-    specified source : a specific folder may also be provided. For example if
-    *v02* is specified the *v02* folder in the *source* folder is searched.
-
-
-Project folder organization is described :doc:`here </dv04-reports/folders>`
+The *rivt project* folder structure is described :doc:`here </dv04-reports/folders>`
 
 
 **KEY**  
@@ -41,31 +37,42 @@ Project folder organization is described :doc:`here </dv04-reports/folders>`
 
 
 
-**IMG** - insert image file
+**IMAGE** - insert image file
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | IMG | relative path | filename | caption _[F], scale
+.. topic:: | IMAGE | path | filename | caption _[F], scale
 
     - reads PNG and JPEG files (.png, jpg)
-    - rv.I, rv.V
     - PDF, HTML
 
-**IMG2** - insert images side by side
+**IMAGE2** - insert images side by side
 --------------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | IMG2 | rel path | fname1, fname2 | cap1 _[F], cap2 _[F], sc1, sc2 
+.. topic:: | IMAGE2 | path | fname1, fname2 | cap1 _[F], cap2 _[F], sc1, sc2 
 
     - reads PNG and JPEG files (.png, jpg)
-    - rv.I, rv.V
     - PDF, HTML
+
+**TABLE** - inserts table file
+------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: | TABLE | path | filename | title _[T]
+
+    - reads text, csv and EXCEL files (.txt, .csv, .xls)
+    - PDF, HTML, text
+
 
 **TEXT** - insert text file
 ------------------------------------------
@@ -74,9 +81,8 @@ Project folder organization is described :doc:`here </dv04-reports/folders>`
 
     <hr>
 
-.. topic:: | text | relative path | filename | _[[block tag]]
+.. topic:: | text | path | filename | title _[T]
 
-    - reads TEXT and TEX files (.txt, .tex)
-    - rv.I, rv.V
-    - PDF, HTML
+    - reads text, text and reST files (.txt, .tex, .rst)
+    - PDF, HTML, text
 

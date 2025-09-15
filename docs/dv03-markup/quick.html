@@ -314,14 +314,14 @@
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="syntax.html">3.1 Syntax</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tagr.html">3.2 <strong>R</strong> un Tags</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tagi.html">3.3 <strong>I</strong> nsert Tags</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tagv.html">3.4 <strong>V</strong> alues Tags</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tagt.html">3.5 <strong>T</strong> ools Tags</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cmdr.html">3.6 <strong>R</strong> un Commands</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cmdi.html">3.7 <strong>I</strong> nsert Commands</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cmdv.html">3.8 <strong>V</strong> alue Commands</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cmdt.html">3.9 <strong>T</strong> ool Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tagr.html">3.2 Tags in [R]un</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tagi.html">3.3 Tags in [I]nsert</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tagv.html">3.4 Tags in [V]alues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tagt.html">3.5 Tags in [T]ools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cmdr.html">3.6 Commands in [R]un</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cmdi.html">3.7 Commands in [I]nsert</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cmdv.html">3.8 Commands in [V]alues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cmdt.html">3.9 Commands in [T]ools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cmdprc.html">3.10 <strong>Process</strong> Commands</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">3.11 Quick Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="example1.html">3.12 Example</a></li>
@@ -398,6 +398,14 @@
 </thead>
 <tbody>
 <tr class="row-even"><td><p>rv.I</p></td>
+<td></td>
+<td><p>horizontal line, &gt;4 underscores</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.I, .V</p></td>
+<td><p>_[P]</p></td>
+<td><p>new page (all)</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.I</p></td>
 <td><p><em>description</em> _[D]</p></td>
 <td><p>footnote description (all)</p></td>
 </tr>
@@ -417,17 +425,9 @@
 <td><p>text _[LU] <em>url</em></p></td>
 <td><p>url link (all)</p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
+<tr class="row-odd"><td><p>rv.I, .V</p></td>
 <td><p><em>equation</em> _[S]</p></td>
 <td><p>format symbol math (all)</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td></td>
-<td><p>horizontal line (&gt;5)</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I, .V</p></td>
-<td><p>_[P]</p></td>
-<td><p>new page (all)</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I, .V</p></td>
 <td><p><em>text</em> _[B]</p></td>
@@ -456,7 +456,7 @@
 </tbody>
 </table>
 </div>
-<p>[1] tag may be added to a command parameter</p>
+<p>[1] tag may be added to caption and title parameters in <em>commands</em></p>
 </section>
 <section id="block-tags">
 <h2><strong>[02]</strong> Block tags<a class="headerlink" href="#block-tags" title="Link to this heading">#</a></h2>
@@ -577,39 +577,39 @@
 <div class="line">WIN | path | fname</div>
 </div>
 </td>
-<td><p>bat,cmd</p></td>
+<td><p>bat, cmd</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I</p></td>
+<td><p>R</p></td>
+<td><div class="line-block">
+<div class="line">TEXT | path | fname | title</div>
+</div>
+</td>
+<td><p>txt, tex, rst</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.I, .V</p></td>
 <td><p>R</p></td>
 <td><div class="line-block">
 <div class="line">TABLE | path | fname | title, width, l;c;r</div>
 </div>
 </td>
-<td><p>csv,txt,xlsx</p></td>
+<td><p>csv, txt, xlsx</p></td>
 </tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p>R</p></td>
-<td><div class="line-block">
-<div class="line">TEXT | path | fname | _[[block tag]]</div>
-</div>
-</td>
-<td><p>txt,tex,rst</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I,.V</p></td>
+<tr class="row-odd"><td><p>rv.I, .V</p></td>
 <td><p>R</p></td>
 <td><div class="line-block">
 <div class="line">IMAGE | path | fname |  caption, scale</div>
 </div>
 </td>
-<td><p>png,jpg</p></td>
+<td><p>png, jpg</p></td>
 </tr>
-<tr class="row-even"><td><p>rv.I,.V</p></td>
+<tr class="row-even"><td><p>rv.I, .V</p></td>
 <td><p>R</p></td>
 <td><div class="line-block">
 <div class="line">IMAGE2 | path | fname | c1, c2, s1, s2</div>
 </div>
 </td>
-<td><p>png,jpg</p></td>
+<td><p>png, jpg</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V</p></td>
 <td><p>R</p></td>
@@ -620,14 +620,14 @@
 <td><p>csv</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.V</p></td>
-<td><p>R</p></td>
+<td><p>W</p></td>
 <td><p>a = 1 + 1 | unit1, unit2, decimal | descrip</p></td>
-<td><p>“assign”</p></td>
+<td><p>assign value</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V</p></td>
-<td><p>R</p></td>
+<td><p>W</p></td>
 <td><p>b := a + 3 | unit1, unit2, decimal | ref</p></td>
-<td><p>“define”</p></td>
+<td><p>define value</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.T</p></td>
 <td><p>R</p></td>
@@ -648,12 +648,20 @@
 <tr class="row-even"><td><p>rv.T</p></td>
 <td><p>R</p></td>
 <td><div class="line-block">
-<div class="line">PYTHON| path | fname</div>
+<div class="line">PYTHON | path | fname</div>
 </div>
 </td>
 <td><p>py</p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.D</p></td>
+<tr class="row-odd"><td><p>rv.T</p></td>
+<td><p>R</p></td>
+<td><div class="line-block">
+<div class="line">QCAD   | path | fname</div>
+</div>
+</td>
+<td><p>py</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.D</p></td>
 <td><p>R</p></td>
 <td><div class="line-block">
 <div class="line">APPEND | path | fname</div>
@@ -661,13 +669,13 @@
 </td>
 <td><p>pdf</p></td>
 </tr>
-<tr class="row-even"><td><p>rv.D</p></td>
+<tr class="row-odd"><td><p>rv.D</p></td>
 <td><p>W</p></td>
 <td><div class="line-block">
-<div class="line">DOC| path | fname | rpdf; tpdf; txt; html</div>
+<div class="line">DOC | path | fname | rpdf; tpdf; txt; html</div>
 </div>
 </td>
-<td><p>pdf,txt, html</p></td>
+<td><p>pdf, txt, html</p></td>
 </tr>
 </tbody>
 </table>

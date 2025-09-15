@@ -39,7 +39,7 @@ over-rides are specified in the rivt-config.ini file.
 An example folder structure is shown below. 
 
 
-.. topic:: Annotation notes:
+.. topic:: Key to annotation:
 
     - Prefixes are shown in brackets ([]). 
     - A single vertical bar (|) identifies a file or folder produced by the user. 

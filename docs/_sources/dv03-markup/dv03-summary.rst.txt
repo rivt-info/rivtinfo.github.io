@@ -36,6 +36,17 @@ that is subsequently formatted to a PDF or HTML doc. This facilitates extending
 <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_ commands in a
 *rivt string*.
 
+**Tags**
+
+*line tags* format a line of text and are denoted with _[TAG], usually at the
+end of the line. *Block tags* format a block of text that begin with _[[TAG]]
+on the first line and end with _[[Q]] after the last line. 
+
+**Commands**
+
+*rivt commands* read and write external files and assign values to variables.
+They typically start in the first column with a vertical bar ( | ) followed by
+the command name, file path and parameters. 
 
 .. toctree::
     :maxdepth: 1
