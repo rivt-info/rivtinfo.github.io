@@ -10,6 +10,7 @@ on the first line and end with _[[Q]] after the last line.
 --------------------------------------------
 
 _[TAG] : line tag description
+
 _[[TAG]] : block tag description
 
 .. raw:: html

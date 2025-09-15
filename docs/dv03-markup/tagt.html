@@ -392,8 +392,8 @@ end of the line. <em>Block tags</em> format a block of text that begin with _[[T
 on the first line and end with _[[Q]] after the last line.</p>
 <section id="key">
 <h2><strong>KEY</strong><a class="headerlink" href="#key" title="Link to this heading">#</a></h2>
-<p>_[TAG] : tag description
-_[[TAG]] : tag description</p>
+<p>_[TAG] : line tag description</p>
+<p>_[[TAG]] : block tag description</p>
 <hr><aside class="topic">
 <p class="topic-title">syntax</p>
 <p>types of output</p>
@@ -401,7 +401,7 @@ _[[TAG]] : tag description</p>
 </section>
 <section id="python-python-code">
 <h2>_[[PYTHON]] : Python code<a class="headerlink" href="#python-python-code" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">PYTHON</span><span class="p">]]</span>
+<hr><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">PYTHON</span><span class="p">]]</span> <span class="n">description</span>
 <span class="n">code</span>
 <span class="n">code</span>
 <span class="o">...</span>
@@ -412,45 +412,38 @@ _[[TAG]] : tag description</p>
 </section>
 <section id="ruby-ruby-code">
 <h2>_[[RUBY]] : Ruby code<a class="headerlink" href="#ruby-ruby-code" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[[RUBY]] description</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">RUBY</span><span class="p">]]</span>
+<hr><div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="o">[[</span><span class="no">RUBY</span><span class="o">]]</span><span class="w"> </span><span class="n">description</span>
 <span class="n">code</span>
 <span class="n">code</span>
 <span class="o">...</span>
-<span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
+<span class="n">_</span><span class="o">[[</span><span class="n">Q</span><span class="o">]]</span>
 </pre></div>
 </div>
 <p>text, pdf, html</p>
-</aside>
 </section>
 <section id="html-html-code">
 <h2>_[[HTML]] : HTML code<a class="headerlink" href="#html-html-code" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[[HTML]] description</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">HTML</span><span class="p">]]</span>
-<span class="n">code</span>
-<span class="n">code</span>
-<span class="o">...</span>
-<span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
+<hr><div class="highlight-html notranslate"><div class="highlight"><pre><span></span> _[[HTML]]
+ code
+ code
+ ...
+ _[[Q]]
+
+pdf, html
 </pre></div>
 </div>
-<p>text, pdf, html</p>
-</aside>
 </section>
 <section id="latex-latex-code">
 <h2>_[[LATEX]] : LaTeX code<a class="headerlink" href="#latex-latex-code" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[[LATEX]] description</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">LATEX</span><span class="p">]]</span>
-<span class="n">code</span>
-<span class="n">code</span>
-<span class="o">...</span>
-<span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
+<hr><div class="highlight-tex notranslate"><div class="highlight"><pre><span></span><span class="nb">_</span>[[LATEX]]
+code
+code
+...
+<span class="nb">_</span>[[Q]]
+
+pdf, html
 </pre></div>
 </div>
-<p>text, pdf, html</p>
-</aside>
 </section>
 </section>
 

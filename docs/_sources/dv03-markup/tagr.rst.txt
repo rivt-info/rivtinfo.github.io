@@ -9,8 +9,9 @@ on the first line and end with _[[Q]] after the last line.
 **KEY**  
 --------------------------------------------
 
-_[TAG] : tag description
-_[[TAG]] : tag description
+_[TAG] : line tag description
+
+_[[TAG]] : block tag description
 
 .. raw:: html
 
@@ -28,17 +29,15 @@ _[[WIN]] : batch commands
 
     <hr>
 
-.. topic::  _[[WIN]] *optional description*
-
-   ::
+.. code-block:: text
     
-     _[[WIN]]
-     script
-     script
-     ...
-     _[[Q]]
+  _[[WIN]] *optional description*
+  script
+  script
+  ...
+   _[[Q]]
 
-   text, pdf, html
+text, pdf, html
 
 
 _[[MACOS]] : shell commands
@@ -48,17 +47,15 @@ _[[MACOS]] : shell commands
 
     <hr>
 
-.. topic::  _[[MACOS]] *optional description*
-
-   ::
+.. code-block:: text
     
-     _[[MACOS]]
-     script
-     script
-     ...
-     _[[Q]]
+  _[[MACOS]] *optional description*
+  script
+  script
+  ...
+   _[[Q]]
 
-   text, pdf, html
+text, pdf, html
 
 
 _[[LINUX]] : shell commands
@@ -68,14 +65,12 @@ _[[LINUX]] : shell commands
 
     <hr>
 
-.. topic::  _[[LINUX]] *optional description*
+.. code-block:: text
+    
+  _[[LINUX]] *optional description*
+  script
+  script
+  ...
+   _[[Q]]
 
-   ::
-        
-     _[[B]]
-     script
-     script
-     ...
-     _[[Q]]
- 
-   text, pdf, html
+text, pdf, html

@@ -8,8 +8,9 @@ on the first line and end with _[[Q]] after the last line.
 **KEY**  
 --------------------------------------------
 
-_[TAG] : tag description
-_[[TAG]] : tag description
+_[TAG] : line tag description
+
+_[[TAG]] : block tag description
 
 .. raw:: html
 
@@ -30,7 +31,7 @@ _[[PYTHON]] : Python code
 
 .. code-block:: python
      
-      _[[PYTHON]]
+      _[[PYTHON]] description
       code
       code
       ...
@@ -46,17 +47,15 @@ _[[RUBY]] : Ruby code
 
     <hr>
 
-.. topic::  _[[RUBY]] description
-
-   ::
+.. code-block:: ruby  
         
-     _[[RUBY]]
+     _[[RUBY]] description
      code
      code
      ...
      _[[Q]]
    
-   text, pdf, html
+text, pdf, html
 
 
 
@@ -67,9 +66,8 @@ _[[HTML]] : HTML code
 
     <hr>
 
-.. topic::  _[[HTML]] description
 
-   ::
+.. code-block:: html
         
      _[[HTML]]
      code
@@ -77,7 +75,7 @@ _[[HTML]] : HTML code
      ...
      _[[Q]]
    
-   text, pdf, html
+    pdf, html
 
 
 _[[LATEX]] : LaTeX code
@@ -87,14 +85,12 @@ _[[LATEX]] : LaTeX code
 
     <hr>
 
-.. topic::  _[[LATEX]] description
-
-    ::
+.. code-block:: tex
         
-        _[[LATEX]]
-        code
-        code
-        ...
-        _[[Q]]
+    _[[LATEX]]
+    code
+    code
+    ...
+    _[[Q]]
 
-    text, pdf, html
+    pdf, html
