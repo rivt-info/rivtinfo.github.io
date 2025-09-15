@@ -1,9 +1,11 @@
 3. Markup
 ==================
 
-The general syntax of a *rivt string* is text enclosed in triple quotes. A
-*rivt string* is the argument to each of the 7 API functions. Each function
-starts in column one and defines a *doc section*.
+*rivt markup* provides a unified language using *tags* and *commands* that
+generates text, PDF or HTML *docs* from the same file. The *markup* is enclosed
+in a *rivt string* which includes a header line followed by lines of text, all
+enclosed in triple quotes. A *rivt string* is the argument to each of the 7
+*rivt* API functions. 
 
 =============== =============== ===================================
 API Funct          Name             Purpose
@@ -17,11 +19,9 @@ API Funct          Name             Purpose
 *rv.Q(rs)*        Quit              Exit rivt 
 =============== =============== ===================================
 
-**[01]** rivt string
-----------------------
-
-The first line in the string is a *section header*. Subsequent lines are
-section content and are indented 4 spaces.
+Each function starts in column one and defines a *doc section*. The first line
+in the *rivt string* is a *section header*. Subsequent lines define the *section
+content* and are indented 4 spaces.
 
 .. code-block:: python
 
@@ -65,15 +65,19 @@ Sections are numbered, bookmarked and linked when output to *doc*. If the
 *section label* is preceeded by two dashes (*--section label*) the section
 output is merged with the prior section, instead of starting a new one.
 
-**[02]** Tags and Commands
+
+**[02]** Section Content 
+--------------------------
+
+
+**[03]** Tags and Commands
 ----------------------------
 
 Section content is indented four spaces (for legibility and code folding) and
 includes *tags* for text formatting and *commands* for file operations. Any
 text not defined by *commands* or *tags* is passed through unchanged to
 intermediate files for further PDF and HTML processing, or formatted to a utf-8
-*doc*. *rivt markup* wraps and extends *restructuredText* and provides a
-unified markup that can generate text, PDF or HTML docs from the same file.
+*doc*. 
 
 :doc:`Tags </dv03-markup/rv0310-quick>`
 
@@ -101,8 +105,7 @@ in a *rivt string* include:
 - surrounding text with * for italics and ** for bold.
 
 
-*rivt markup* includes sets of *tags* and *commands* for each API function.
-When writing PDF and HTML *docs*, text that is not a *tag* or *command* is
+treML *docs*, text that is not a *tag* or *command* is
 passed to an intermediate *.rst* file which allows for embedding
 `restructuredText markup
 <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_ in a *rivt

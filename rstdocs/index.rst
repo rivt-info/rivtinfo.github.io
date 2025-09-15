@@ -29,9 +29,9 @@ report*.
 tools and llbraries. The framework is described 
 :doc:`here <dv02-install/dv02-summary>`.
 
-:doc:`This </dv01-intro/smallex>` is a small *rivt* example. Larger examples
-are here. A search interface for *rivt files* on GitHub is
-:doc:`here <dv05-collab/ghsearch>`.
+:doc:`This </dv01-intro/smallex>` is a small *rivt file* example. Larger
+examples are here. A search interface for discovering *rivt files* on 
+:doc:`GitHub is here <dv05-collab/ghsearch>`.
 
 
 .. raw:: html
