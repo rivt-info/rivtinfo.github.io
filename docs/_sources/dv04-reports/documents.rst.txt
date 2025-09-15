@@ -2,8 +2,8 @@
 ========================
 
 
-**[01]** rivt files
----------------------
+**[01]** rivt files and folders
+--------------------------------
 
 folder aliases
 
@@ -18,9 +18,6 @@ number e.g., rv0203-loads.py. Editing the doc number changes the report
 organization.
 
 Resource files used in *rivt files* are organized in the *source* folder.
-
-**[02]** rivt folders
-----------------------
 
 An example *rivt folder structure* for reports is shown below. *rivt files* are
 organized into numbered division folders of the form:
@@ -45,4 +42,4 @@ An example folder structure is shown below.
 publish x
 
 
-**rivt** uses the `MIT open source license <https://opensource.org/license/mit/>`_
+

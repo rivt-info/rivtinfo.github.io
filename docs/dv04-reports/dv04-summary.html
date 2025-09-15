@@ -375,22 +375,38 @@
                   
   <section id="reports">
 <h1>4. Reports<a class="headerlink" href="#reports" title="Link to this heading">#</a></h1>
-<p>A <em>rivt doc</em> is the output of a <em>rivt file</em>, the basic unit of a <em>rivt report</em>.
-A <em>doc</em> may be a text, PDF or HTML file. Usually a <em>doc</em> is part of a
-collection of <em>docs</em> orgaanized in a structured folder heirarchy that together
-produce a <em>report</em>.</p>
-<p>Within the context of a report Its output is a <em>rivt doc</em> which is a subdivision in the report
-heirarchy. Each <em>rivt file</em> is identified with a <em>doc</em> prefix number of the
-form:</p>
+<p><em>rivt files</em> output PDF, HTML or text <em>docs</em> that are typically organized into
+<em>rivt reports</em>. The <em>reports</em> are assembled from a <em>rivt folder structure*</em>. A
+<em>rivt file</em> may also be treated as a <em>single doc</em></p>
+<section id="rivt-folders">
+<h2><strong>[01]</strong> rivt folders<a class="headerlink" href="#rivt-folders" title="Link to this heading">#</a></h2>
+<p>The folder structure includes rivt files, external source documents, settings
+and separation of files into public and private categories to facilitate open
+source sharing.</p>
+<blockquote>
+<div><blockquote>
+<div><p>[rivt]-Report-Label/          Project Folder
+├── [dv01-]divlabel/          division folder
+├── [dv02-]divlabel/          division folder
+├── [public]/                 public rivt files
+├── [reports]/                reports and docs
+├── [source]                  source files
+└── README.txt                text report</p>
+</div></blockquote>
+<p>by</p>
+</div></blockquote>
+<p>Resource files used in <em>rivt files</em> are organized in the <em>source</em> folder.</p>
+</section>
+<section id="rivt-files">
+<h2><strong>[02]</strong> rivt files<a class="headerlink" href="#rivt-files" title="Link to this heading">#</a></h2>
+<p>A <em>doc</em> may be a text, PDF or HTML file. Each <em>rivt file</em> is identified with a
+<em>doc</em> number of the form:</p>
 <blockquote>
 <div><p>rvddss-file-name.py</p>
 </div></blockquote>
 <p>where dd is a two digit division number and ss is a two digit subdivision
-number e.g., rv0203-loads.py. Editing the doc number changes the report
-organization.</p>
-<p>Resource files used in <em>rivt files</em> are organized in the <em>source</em> folder.</p>
-<section id="rivt-folders">
-<h2><strong>[02]</strong> rivt folders<a class="headerlink" href="#rivt-folders" title="Link to this heading">#</a></h2>
+number e.g., rv0203-loads.py. The <em>doc numbers</em> are used to insert sources and
+assemble reports. Editing the doc number changes the report organization.</p>
 <p>An example <em>rivt folder structure</em> for reports is shown below. <em>rivt files</em> are
 organized into numbered division folders of the form:</p>
 <blockquote>
@@ -401,10 +417,6 @@ organized into numbered division folders of the form:</p>
 of <em>docs</em>.</p>
 <p>Report and document titles are taken from folder and file names unless
 over-rides are specified in the rivt-config.ini file.</p>
-</section>
-<section id="report-folder-structure">
-<h2><strong>[03]</strong> Report folder structure<a class="headerlink" href="#report-folder-structure" title="Link to this heading">#</a></h2>
-<p>An example folder structure is shown below.</p>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -457,8 +469,8 @@ over-rides are specified in the rivt-config.ini file.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-folders"><strong>[02]</strong> rivt folders</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#report-folder-structure"><strong>[03]</strong> Report folder structure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-folders"><strong>[01]</strong> rivt folders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-files"><strong>[02]</strong> rivt files</a></li>
 </ul>
   </nav></div>
 

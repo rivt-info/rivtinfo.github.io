@@ -2,25 +2,45 @@
 =============== 
 
 
-A *rivt doc* is the output of a *rivt file*, the basic unit of a *rivt report*.
-A *doc* may be a text, PDF or HTML file. Usually a *doc* is part of a
-collection of *docs* orgaanized in a structured folder heirarchy that together
-produce a *report*.
+*rivt files* output PDF, HTML or text *docs* that are typically organized into
+*rivt reports*. The *reports* are assembled from a *rivt folder structure**. A
+*rivt file* may also be treated as a *single doc*
 
-Within the context of a report Its output is a *rivt doc* which is a subdivision in the report
-heirarchy. Each *rivt file* is identified with a *doc* prefix number of the
-form:
+**[01]** rivt folders
+----------------------
+
+The folder structure includes rivt files, external source documents, settings
+and separation of files into public and private categories to facilitate open
+source sharing.
+
+
+    [rivt]-Report-Label/          Project Folder 
+    ├── [dv01-]divlabel/          division folder
+    ├── [dv02-]divlabel/          division folder                   
+    ├── [public]/                 public rivt files
+    ├── [reports]/                reports and docs
+    ├── [source]                  source files      
+    └── README.txt                text report
+
+
+
+ by 
+
+
+
+Resource files used in *rivt files* are organized in the *source* folder.
+
+**[02]** rivt files
+----------------------
+
+A *doc* may be a text, PDF or HTML file. Each *rivt file* is identified with a
+*doc* number of the form:
 
     rvddss-file-name.py 
     
 where dd is a two digit division number and ss is a two digit subdivision
-number e.g., rv0203-loads.py. Editing the doc number changes the report
-organization.
-
-Resource files used in *rivt files* are organized in the *source* folder.
-
-**[02]** rivt folders
-----------------------
+number e.g., rv0203-loads.py. The *doc numbers* are used to insert sources and
+assemble reports. Editing the doc number changes the report organization.
 
 An example *rivt folder structure* for reports is shown below. *rivt files* are
 organized into numbered division folders of the form:
@@ -36,11 +56,6 @@ Report and document titles are taken from folder and file names unless
 over-rides are specified in the rivt-config.ini file.
 
 
-**[03]** Report folder structure
----------------------------------
-
-An example folder structure is shown below. 
-
 .. toctree::
     :maxdepth: 1
     :hidden:
@@ -48,3 +63,12 @@ An example folder structure is shown below.
     folders.rst
     documents.rst
     settings.rst
+
+
+        [rivt]-Report-Label/          Project Folder 
+        ├── [dv01-]divlabel/          division folder
+        ├── [dv02-]divlabel/          division folder                   
+        ├── [public]/                 public rivt files
+        ├── [reports]/                reports and docs
+        ├── [source]                  source files      
+        └── README.txt                text report 

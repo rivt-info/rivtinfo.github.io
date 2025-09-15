@@ -3,7 +3,8 @@
 
 .. dropdown:: Which open source license applies to the rivt framework?  
 
-    **rivtlib** is distributed under the MIT license 
+    **rivtlib** is distributed under the 
+    `MIT open source license <https://opensource.org/license/mit/>`_
     
     **VSCode and extensions** - for editing and processing
     
