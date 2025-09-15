@@ -28,7 +28,7 @@ _[[PYTHON]] : Python code
     <hr>
 
 
-  .. code-block:: python
+.. code-block:: python
      
       _[[PYTHON]]
       code
