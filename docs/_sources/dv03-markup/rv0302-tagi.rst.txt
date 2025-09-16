@@ -21,6 +21,9 @@ _[[TAG]] : block tag description
 
     types of output
 
+.. raw:: html
+
+    <hr>
 
 
 **[01]** _[B] :  center, bold
@@ -67,7 +70,7 @@ _[[TAG]] : block tag description
 
     text, pdf, html
 
-_[F] : number, label figure 
+**[05]** _[F] : number, label figure 
 -----------------------------------------
 
 .. raw:: html
@@ -78,7 +81,7 @@ _[F] : number, label figure
 
     pdf, html
 
-_[LD] :  doc link 
+**[06]** _[LD] :  doc link 
 -----------------------------------------
 
 .. raw:: html
@@ -89,7 +92,7 @@ _[LD] :  doc link
     
     text, pdf, html
 
-_[LR] :  report link 
+**[07]** _[LR] :  report link 
 -----------------------------------------
 
 .. raw:: html
@@ -100,7 +103,7 @@ _[LR] :  report link
     
     text, pdf, html
 
-_[LU] :  url link 
+**[08]** _[LU] :  url link 
 -----------------------------------------
 
 .. raw:: html
@@ -111,7 +114,7 @@ _[LU] :  url link
     
     text, pdf, html
 
-_[P] : new page
+**[09]** _[P] : new page
 -----------------------------------------
 
 .. raw:: html
@@ -123,7 +126,7 @@ _[P] : new page
     pdf, html
 
 
-_[S] : sympy equation
+**[10]** _[S] : sympy equation
 -----------------------------------------
 
 .. raw:: html
@@ -134,7 +137,7 @@ _[S] : sympy equation
 
     text, pdf, html
 
-_[T]  number, label table
+**[11]** _[T]  label table
 ------------------------------------------
 
 .. raw:: html
@@ -146,8 +149,8 @@ _[T]  number, label table
     text, pdf, html
 
 
-_[V] : number, label values table 
------------------------------------------
+**[12]** _[V] : label values table 
+------------------------------------------
 
 .. raw:: html
 
@@ -158,7 +161,7 @@ _[V] : number, label values table
 
     text, pdf, html
 
-_[#] :  numbered footnote
+**[13]** _[#] :  numbered footnote
 ----------------------------------------
 
 .. raw:: html
@@ -170,7 +173,7 @@ _[#] :  numbered footnote
    text, pdf, html
 
 
-_[[B]] : indent bold
+**[14]** _[[B]] : indent bold
 ------------------------------------------------
 
 .. raw:: html
@@ -189,7 +192,7 @@ _[[B]] : indent bold
 
     text, pdf, html
 
-_[[C]] : code or literal
+**[15]** _[[C]] : code or literal
 ------------------------------------------------
 
 .. raw:: html
@@ -208,7 +211,7 @@ _[[C]] : code or literal
 
     text, pdf, html
 
-_[[I]] : indent italic
+**[16]** _[[I]] : indent italic
 ------------------------------------------------
 
 .. raw:: html
@@ -227,7 +230,7 @@ _[[I]] : indent italic
 
     text, pdf, html
 
-_[[L]] : LaTeX
+**[17]** _[[L]] : LaTeX
 ------------------------------------------------
 
 .. raw:: html
@@ -246,7 +249,7 @@ _[[L]] : LaTeX
 
     pdf, html
 
-_[[N]] :  indent
+**[18]** _[[N]] :  indent
 ----------------------------------------------
 
 .. raw:: html
@@ -265,7 +268,7 @@ _[[N]] :  indent
 
     text, pdf, html
 
-_[[T]] : topic
+**[19]** _[[T]] : topic
 ------------------------------------------------
 
 .. raw:: html
@@ -285,7 +288,7 @@ _[[T]] : topic
 
    text, pdf, html
 
-_ : horizontal line
+**[20]** _ : horizontal line
 --------------------------------------- 
 .. raw:: html
 

@@ -21,6 +21,10 @@ _[[TAG]] : block tag description
 
     types of output
 
+.. raw:: html
+
+    <hr>
+    
 
 **[01]** _[#] :  numbered footnote
 ----------------------------------------
