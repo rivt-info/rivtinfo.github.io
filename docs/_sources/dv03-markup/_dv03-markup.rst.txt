@@ -1,11 +1,10 @@
 3. Markup
 ==================
 
-*rivt markup* provides a unified language using *tags* and *commands* that
-generates text, PDF or HTML *docs* from the same file. The *markup* is enclosed
-in a *rivt string* which includes a header line followed by lines of text, all
-enclosed in triple quotes. A *rivt string* is the argument to each of the 7
-*rivt* API functions. 
+*rivt markup* provides a unified language that generates text, PDF or HTML
+*docs* from the same file. The *markup* is enclosed in a *rivt string* which
+includes a header line followed by lines of text, all enclosed in triple
+quotes. A *rivt string* is the argument to each of the 7 *rivt* API functions.
 
 =============== =============== ===================================
 API Funct          Name             Purpose
@@ -20,7 +19,7 @@ API Funct          Name             Purpose
 =============== =============== ===================================
 
 Each function starts in column one and defines a *doc section*. The first line
-in the *rivt string* is a *section header*. Subsequent lines define the *section
+in the *rivt string* is a *section header*. Subsequent lines define *section
 content* and are indented 4 spaces.
 
 .. code-block:: python
@@ -69,66 +68,12 @@ output is merged with the prior section, instead of starting a new one.
 **[02]** Section Content 
 --------------------------
 
-
-**[03]** Tags and Commands
-----------------------------
-
 Section content is indented four spaces (for legibility and code folding) and
-includes *tags* for text formatting and *commands* for file operations. Any
-text not defined by *commands* or *tags* is passed through unchanged to
-intermediate files for further PDF and HTML processing, or formatted to a utf-8
-*doc*. 
-
-:doc:`Tags </dv03-markup/rv0310-quick>`
-
-*rivt tags* come *Line tags* format a line of text and are denoted
-with _[**TAG**], typically added at the end of the line.
-
-*Block tags* evaluate a multi-line text block that starts
-with _[[**TAG**]] and ends with _[[**Q**]].
-
-:doc:`Commands </dv03-markup/rv0310-quick>`
-
-*Commands* read and write files and assign values to variables. They start in
-the first column with a vertical bar, followed by the command name, the
-relative file path, file path and parameters. The exceptions are the assign (=)
-and define (:=) commands, related to equations.
-
-`RestructuredText <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_
-
-Text in a *rivt string* not defined by *commands* or *tags* is passed through
-to the intermediate *restructuredText (reST)* file that is used to write PDF
-and HTML *docs*. In addition, *commands* and *tags* are generally converted to
-*reST* when processing a *rivt file*. Common *restructuredText* that is useful
-in a *rivt string* include:
-
-- surrounding text with * for italics and ** for bold.
+includes *tags* for text formatting and *commands* for file operations.
+*commands* and *tags* are generally converted to *reST* when processing a *rivt
+file*. *Text docs* are formatted separately.
 
 
-treML *docs*, text that is not a *tag* or *command* is
-passed to an intermediate *.rst* file which allows for embedding
-`restructuredText markup
-<https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_ in a *rivt
-string*.
-
-**Tags**
-
-*line tags* format a line of text and are denoted with _[TAG], usually at the
-end of the line. *Block tags* format a block of text that begin with _[[TAG]]
-on the first line and end with _[[Q]] after the last line. 
-
-**Commands**
-
-*rivt commands* read and write external files and assign values to variables.
-They typically start in the first column with a vertical bar ( | ) followed by
-the command name, file path and parameters. 
-
-
-
-The general syntax of a *rivt string* is text enclosed in triple quotes. The
-first line is a section header. Subsequent lines are indented 4 spaces and
-define the section content.
-  
 .. code-block:: python
 
     rv._("""Section Label | write; nowrite, public; private
@@ -138,19 +83,40 @@ define the section content.
         
         """)
 
+Text in a *rivt string* not defined by *commands* or *tags* is passed through
+to an intermediate `RestructuredText file 
+<https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_ used to
+write PDF and HTML *docs*.  Embedded *restructuredText* that commonly used
+in a *rivt string* includes:
 
-For the Values API the header options are
-
-.. code-block:: python
-
-    rv._("""Section Label | rvsource; rvlocal, public; private
-
-        section content
-        ...
-        
-        """)
+- surrounding text with * for italics or ** for bold.
 
 
+**[03]** Tags and Commands
+----------------------------
+
+:doc:`Tags </dv03-markup/rv0310-quick>`
+
+*line tags* format a line of text and are denoted with _[TAG], usually at the
+end of the line. *Block tags* format a block of text that begin with _[[TAG]]
+on the first line and end with _[[Q]] after the last line. 
+
+*rivt tags* come *Line tags* format a line of text and are denoted
+with _[**TAG**], typically added at the end of the line.
+
+*Block tags* evaluate a multi-line text block that starts
+with _[[**TAG**]] and ends with _[[**Q**]].
+
+:doc:`Commands </dv03-markup/rv0310-quick>`
+
+*rivt commands* read and write external files and assign values to variables.
+They typically start in the first column with a vertical bar ( | ) followed by
+the command name, file path and parameters. 
+
+*Commands* read and write files and assign values to variables. They start in
+the first column with a vertical bar, followed by the command name, the
+relative file path, file path and parameters. The exceptions are the assign (=)
+and define (:=) commands, related to equations.
 
 
 .. toctree::
