@@ -37,7 +37,7 @@ The *rivt project* folder structure is described :doc:`here </dv04-reports/folde
 
 
 
-**IMAGE** - insert image file
+**IMAGE** - insert image
 -------------------------------------------
 
 .. raw:: html
@@ -49,7 +49,7 @@ The *rivt project* folder structure is described :doc:`here </dv04-reports/folde
     - reads PNG and JPEG files (.png, jpg)
     - PDF, HTML
 
-**IMAGE2** - insert images side by side
+**IMAGE2** - insert adjacent images 
 --------------------------------------------------
 
 .. raw:: html
@@ -61,7 +61,7 @@ The *rivt project* folder structure is described :doc:`here </dv04-reports/folde
     - reads PNG and JPEG files (.png, jpg)
     - PDF, HTML
 
-**TABLE** - inserts table file
+**TABLE** - insert table 
 ------------------------------------------
 
 .. raw:: html
@@ -74,7 +74,7 @@ The *rivt project* folder structure is described :doc:`here </dv04-reports/folde
     - PDF, HTML, text
 
 
-**TEXT** - insert text file
+**TEXT** - insert text
 ------------------------------------------
 
 .. raw:: html

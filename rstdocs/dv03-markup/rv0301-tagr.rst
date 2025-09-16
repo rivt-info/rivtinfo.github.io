@@ -22,7 +22,7 @@ _[[TAG]] : block tag description
     types of output
 
 
-_[[WIN]] : batch commands
+**[01]** _[[WIN]] : batch
 ------------------------------------------------
 
 .. raw:: html
@@ -32,15 +32,15 @@ _[[WIN]] : batch commands
 .. code-block:: text
     
   _[[WIN]] *optional description*
-  script
-  script
+  batch command
+  batch command
   ...
    _[[Q]]
 
   text, pdf, html
 
 
-_[[MACOS]] : shell commands
+**[02]** _[[MACOS]] : shell
 ------------------------------------------------
 
 .. raw:: html
@@ -50,15 +50,15 @@ _[[MACOS]] : shell commands
 .. code-block:: text
     
   _[[MACOS]] *optional description*
-  script
-  script
+  shell command
+  shell command
   ...
    _[[Q]]
 
   text, pdf, html
 
 
-_[[LINUX]] : shell commands
+**[03]** _[[LINUX]] : shell 
 ------------------------------------------------
 
 .. raw:: html
@@ -68,8 +68,8 @@ _[[LINUX]] : shell commands
 .. code-block:: text
     
   _[[LINUX]] *optional description*
-  script
-  script
+  shell command
+  shell command
   ...
    _[[Q]]
 

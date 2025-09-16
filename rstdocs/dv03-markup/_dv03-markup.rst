@@ -3,7 +3,7 @@
 
 *rivt markup* provides a unified language that generates text, PDF or HTML
 *docs* from the same file. The *markup* is enclosed in a *rivt string* which
-includes a header line followed by lines of text, all enclosed in triple
+includes a header line followed by lines of text enclosed in triple
 quotes. A *rivt string* is the argument to each of the 7 *rivt* API functions.
 
 =============== =============== ===================================

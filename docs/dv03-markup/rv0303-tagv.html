@@ -391,36 +391,29 @@ end of the line. <em>Block tags</em> format a block of text that begin with _[[T
 on the first line and end with _[[Q]] after the last line.</p>
 <section id="key">
 <h2><strong>KEY</strong><a class="headerlink" href="#key" title="Link to this heading">#</a></h2>
-<p>_[TAG] : line tag description
-_[[TAG]] : block tag description</p>
+<p>_[TAG] : line tag description</p>
+<p>_[[TAG]] : block tag description</p>
 <hr><aside class="topic">
 <p class="topic-title">syntax</p>
 <p>types of output</p>
 </aside>
 </section>
-<section id="b-center-bold">
-<h2>_[B] :  center, bold<a class="headerlink" href="#b-center-bold" title="Link to this heading">#</a></h2>
+<section id="numbered-footnote">
+<h2><strong>[01]</strong> _[#] :  numbered footnote<a class="headerlink" href="#numbered-footnote" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title"><em>text</em> _[B]</p>
-<p>pdf, html</p>
-</aside>
-</section>
-<section id="c-center">
-<h2>_[C] :   center<a class="headerlink" href="#c-center" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title"><em>text</em> _[C]</p>
-<p>pdf, html</p>
+<p class="topic-title"><em>text</em> _[#] text</p>
+<p>text, pdf, html</p>
 </aside>
 </section>
 <section id="d-footnote-description">
-<h2>_[D] :  footnote description<a class="headerlink" href="#d-footnote-description" title="Link to this heading">#</a></h2>
+<h2><strong>[02]</strong> _[D] :  footnote description<a class="headerlink" href="#d-footnote-description" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title"><em>text</em> _[D]</p>
 <p>text, pdf, html</p>
 </aside>
 </section>
 <section id="e-number-label-equation">
-<h2>_[E] : number, label equation<a class="headerlink" href="#e-number-label-equation" title="Link to this heading">#</a></h2>
+<h2><strong>[03]</strong> _[E] : number, label equation<a class="headerlink" href="#e-number-label-equation" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title"><em>text</em> _[C]</p>
 <p>text, pdf, html</p>
@@ -482,34 +475,10 @@ _[[TAG]] : block tag description</p>
 <p>text, pdf, html</p>
 </aside>
 </section>
-<section id="numbered-footnote">
-<h2>_[#] :  numbered footnote<a class="headerlink" href="#numbered-footnote" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title"><em>text</em> _[#] text</p>
-<p>text, pdf, html</p>
-</aside>
-</section>
-<section id="horizontal-line">
-<h2><strong>horizontal line</strong><a class="headerlink" href="#horizontal-line" title="Link to this heading">#</a></h2>
+<section id="line">
+<h2><strong>[00]</strong> line<a class="headerlink" href="#line" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">5 or more underscores  _____</p>
-<p>text, pdf, html</p>
-</aside>
-</section>
-<section id="block-tags">
-<h2><strong>[02]</strong> Block Tags<a class="headerlink" href="#block-tags" title="Link to this heading">#</a></h2>
-</section>
-<section id="b-indent-bold">
-<h2>_[[B]] : indent bold<a class="headerlink" href="#b-indent-bold" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[[B]]</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">B</span><span class="p">]]</span>
-<span class="n">text</span>
-<span class="n">text</span>
-<span class="o">...</span>
-<span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
-</pre></div>
-</div>
 <p>text, pdf, html</p>
 </aside>
 </section>
@@ -518,20 +487,6 @@ _[[TAG]] : block tag description</p>
 <hr><aside class="topic">
 <p class="topic-title">_[[C]] <em>language</em></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">C</span><span class="p">]]</span>
-<span class="n">text</span>
-<span class="n">text</span>
-<span class="o">...</span>
-<span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
-</pre></div>
-</div>
-<p>text, pdf, html</p>
-</aside>
-</section>
-<section id="i-indent-italic">
-<h2>_[[I]] : indent italic<a class="headerlink" href="#i-indent-italic" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[[I]]</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">I</span><span class="p">]]</span>
 <span class="n">text</span>
 <span class="n">text</span>
 <span class="o">...</span>
@@ -555,106 +510,8 @@ _[[TAG]] : block tag description</p>
 <p>pdf, html</p>
 </aside>
 </section>
-<section id="n-indent">
-<h2>_[[N]] :  indent<a class="headerlink" href="#n-indent" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[[N]]</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">N</span><span class="p">]]</span> <span class="n">title</span>
-<span class="n">text</span>
-<span class="n">text</span>
-<span class="o">...</span>
-<span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
-</pre></div>
-</div>
-<p>text, pdf, html</p>
-</aside>
-</section>
 <section id="t-topic">
 <h2>_[[T]] : topic<a class="headerlink" href="#t-topic" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[[T]] <em>topic</em></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">N</span><span class="p">]]</span> <span class="n">topic</span>
-<span class="n">text</span>
-<span class="n">text</span>
-<span class="o">...</span>
-<span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
-</pre></div>
-</div>
-<p>text, pdf, html</p>
-</aside>
-</section>
-<section id="id1">
-<h2>_[[B]] : indent bold<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[[B]]</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">B</span><span class="p">]]</span>
-<span class="n">text</span>
-<span class="n">text</span>
-<span class="o">...</span>
-<span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
-</pre></div>
-</div>
-<p>text, pdf, html</p>
-</aside>
-</section>
-<section id="id2">
-<h2>_[[C]] : code or literal<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[[C]] <em>language</em></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">C</span><span class="p">]]</span>
-<span class="n">text</span>
-<span class="n">text</span>
-<span class="o">...</span>
-<span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
-</pre></div>
-</div>
-<p>text, pdf, html</p>
-</aside>
-</section>
-<section id="id3">
-<h2>_[[I]] : indent italic<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[[I]]</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">I</span><span class="p">]]</span>
-<span class="n">text</span>
-<span class="n">text</span>
-<span class="o">...</span>
-<span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
-</pre></div>
-</div>
-<p>text, pdf, html</p>
-</aside>
-</section>
-<section id="id4">
-<h2>_[[L]] : LaTeX<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[[L]]</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">L</span><span class="p">]]</span>
-<span class="n">text</span>
-<span class="n">text</span>
-<span class="o">...</span>
-<span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
-</pre></div>
-</div>
-<p>pdf, html</p>
-</aside>
-</section>
-<section id="id5">
-<h2>_[[N]] :  indent<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[[N]]</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">N</span><span class="p">]]</span> <span class="n">title</span>
-<span class="n">text</span>
-<span class="n">text</span>
-<span class="o">...</span>
-<span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
-</pre></div>
-</div>
-<p>text, pdf, html</p>
-</aside>
-</section>
-<section id="id6">
-<h2>_[[T]] : topic<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[T]] <em>topic</em></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">N</span><span class="p">]]</span> <span class="n">topic</span>
@@ -734,10 +591,9 @@ _[[TAG]] : block tag description</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key"><strong>KEY</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-center-bold">_[B] :  center, bold</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-center">_[C] :   center</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-footnote-description">_[D] :  footnote description</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e-number-label-equation">_[E] : number, label equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#numbered-footnote"><strong>[01]</strong> _[#] :  numbered footnote</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-footnote-description"><strong>[02]</strong> _[D] :  footnote description</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e-number-label-equation"><strong>[03]</strong> _[E] : number, label equation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#f-number-label-figure">_[F] : number, label figure</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ld-doc-link">_[LD] :  doc link</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lr-report-link">_[LR] :  report link</a></li>
@@ -746,21 +602,10 @@ _[[TAG]] : block tag description</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#s-sympy-equation">_[S] : sympy equation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-number-label-table">_[T]  number, label table</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#v-number-label-values-table">_[V] : number, label values table</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#numbered-footnote">_[#] :  numbered footnote</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#horizontal-line"><strong>horizontal line</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#block-tags"><strong>[02]</strong> Block Tags</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-indent-bold">_[[B]] : indent bold</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#line"><strong>[00]</strong> line</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-code-or-literal">_[[C]] : code or literal</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-indent-italic">_[[I]] : indent italic</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#l-latex">_[[L]] : LaTeX</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#n-indent">_[[N]] :  indent</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-topic">_[[T]] : topic</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">_[[B]] : indent bold</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">_[[C]] : code or literal</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">_[[I]] : indent italic</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">_[[L]] : LaTeX</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">_[[N]] :  indent</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">_[[T]] : topic</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#v-values">_[[V]] : values</a></li>
 </ul>
   </nav></div>

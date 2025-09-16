@@ -23,7 +23,7 @@ _[[TAG]] : block tag description
 
 
 
-_[B] :  center, bold
+**[01]** _[B] :  center, bold
 -------------------------------------------
 
 .. raw:: html
@@ -34,7 +34,7 @@ _[B] :  center, bold
 
    pdf, html
 
-_[C] :   center 
+**[02]** _[C] :   center 
 -------------------------------------------
 
 .. raw:: html
@@ -45,7 +45,7 @@ _[C] :   center
 
    pdf, html
 
-_[D] :  footnote description
+**[03]** _[D] :  footnote description
 -------------------------------------------    
 
 .. raw:: html
@@ -56,7 +56,7 @@ _[D] :  footnote description
 
     text, pdf, html
 
-_[E] : number, label equation
+**[04]** _[E] : number, label equation
 -----------------------------------------
 
 .. raw:: html

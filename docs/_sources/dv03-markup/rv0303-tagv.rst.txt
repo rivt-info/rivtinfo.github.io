@@ -10,6 +10,7 @@ on the first line and end with _[[Q]] after the last line.
 --------------------------------------------
 
 _[TAG] : line tag description
+
 _[[TAG]] : block tag description
 
 .. raw:: html
@@ -21,30 +22,18 @@ _[[TAG]] : block tag description
     types of output
 
 
-
-_[B] :  center, bold
--------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *text* _[B]
-
-   pdf, html
-
-_[C] :   center 
--------------------------------------------
+**[01]** _[#] :  numbered footnote
+----------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: *text* _[C]
+.. topic:: *text* _[#] text
+    
+    text, pdf, html
 
-    pdf, html
-
-_[D] :  footnote description
+**[02]** _[D] :  footnote description
 -------------------------------------------    
 
 .. raw:: html
@@ -55,7 +44,7 @@ _[D] :  footnote description
 
     text, pdf, html
 
-_[E] : number, label equation
+**[03]** _[E] : number, label equation
 -----------------------------------------
 
 .. raw:: html
@@ -157,18 +146,8 @@ _[V] : number, label values table
 
     text, pdf, html
 
-_[#] :  numbered footnote
-----------------------------------------
 
-.. raw:: html
-
-    <hr>
-
-.. topic:: *text* _[#] text
-    
-    text, pdf, html
-
-**horizontal line**
+**[00]** line
 --------------------------------------- 
 .. raw:: html
 
@@ -179,29 +158,6 @@ _[#] :  numbered footnote
     text, pdf, html
 
 
-**[02]** Block Tags
----------------------
-
-
-_[[B]] : indent bold
-------------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic::  _[[B]] 
-
-    ::
-        
-        _[[B]]
-        text
-        text
-        ...
-        _[[Q]]
-
-    text, pdf, html
-
 _[[C]] : code or literal
 ------------------------------------------------
 
@@ -221,24 +177,6 @@ _[[C]] : code or literal
 
     text, pdf, html
 
-_[[I]] : indent italic
-------------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic::  _[[I]] 
-
-    ::
-        
-        _[[I]]
-        text
-        text
-        ...
-        _[[Q]]
-
-    text, pdf, html
 
 _[[L]] : LaTeX
 ------------------------------------------------
@@ -259,140 +197,6 @@ _[[L]] : LaTeX
 
     pdf, html
 
-_[[N]] :  indent
-----------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic::  _[[N]]
-
-    ::
-
-        _[[N]] title
-        text
-        text
-        ...
-        _[[Q]]
-
-    text, pdf, html
-
-_[[T]] : topic
-------------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic::  _[[T]] *topic*
-
-    ::
-        
-        _[[N]] topic
-        text
-        text
-        ...
-        _[[Q]]
-
-
-    text, pdf, html
-
-
-_[[B]] : indent bold
-------------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic::  _[[B]] 
-
-    ::
-        
-        _[[B]]
-        text
-        text
-        ...
-        _[[Q]]
-
-    text, pdf, html
-
-_[[C]] : code or literal
-------------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic::  _[[C]] *language*
-
-    ::
-        
-        _[[C]]
-        text
-        text
-        ...
-        _[[Q]]
-
-    text, pdf, html
-
-_[[I]] : indent italic
-------------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic::  _[[I]] 
-
-    ::
-        
-        _[[I]]
-        text
-        text
-        ...
-        _[[Q]]
-
-    text, pdf, html
-
-_[[L]] : LaTeX
-------------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic::  _[[L]] 
-    
-    ::
-        
-        _[[L]]
-        text
-        text
-        ...
-        _[[Q]]
-
-    pdf, html
-
-_[[N]] :  indent
-----------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic::  _[[N]]
-
-    ::
-
-        _[[N]] title
-        text
-        text
-        ...
-        _[[Q]]
-
-    text, pdf, html
 
 _[[T]] : topic
 ------------------------------------------------

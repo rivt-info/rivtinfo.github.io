@@ -36,7 +36,7 @@ The *rivt project* folder structure is described :doc:`here </dv04-reports/folde
 
 
 
-**WIN** - command script
+**[01]** | WIN | - command script
 -------------------------------------------
 
 .. raw:: html
@@ -48,7 +48,7 @@ The *rivt project* folder structure is described :doc:`here </dv04-reports/folde
 
    reads .txt, .cmd, .bat  files
 
-**MACOS** - shell script
+**[02]** | MACOS | - shell script
 -------------------------------------------
 
 .. raw:: html
@@ -60,7 +60,7 @@ The *rivt project* folder structure is described :doc:`here </dv04-reports/folde
 
    reads .sh files
 
-**LINUX** - shell script
+**[03]** | LINUX | - shell script
 -------------------------------------------
 
 .. raw:: html
