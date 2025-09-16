@@ -58,18 +58,18 @@ rv.T          _[[HTML]] *description*         HTML commands (all)
 -------------------
 
 ========= ==================================================== ==================
-Scope                Read/Write . Command                         file types
+Scope           (Read/Write)  | Command | parameters             file types
 ========= ==================================================== ==================
-rv.R       R . | LINUX | path | fname                                sh
-rv.R       R . | MACOS | path | fname                                sh
-rv.R       R . | WIN | path | fname                                  bat, cmd
+rv.R       (Rd) | LINUX | path | fname                                sh
+rv.R       (Rd) | MACOS | path | fname                                sh
+rv.R       (Rd) | WIN | path | fname                                  bat, cmd
 rv.I       R . | TEXT | path | fname | title                     txt, tex, rst
 rv.I, .V   R . | TABLE | path | fname | title, width, l;c;r      csv, txt, xlsx
 rv.I, .V   R . | IMAGE | path | fname |  caption, scale              png, jpg
 rv.I, .V   R . | IMAGE2 | path | fname | c1, c2, s1, s2              png, jpg
 rv.V       R . | VALUES | path | fname | title, [rows]               csv
-rv.V       W .  a = 1 + 1  | unit1, unit2, decimal | descrip      assign value
-rv.V       W .  b := a + 3 | unit1, unit2, decimal | ref          define value
+rv.V       (Wr)  a = 1 + 1  | unit1, unit2, decimal | descrip      assign value
+rv.V       (Wr)  b := a + 3 | unit1, unit2, decimal | ref          define value
 rv.T       R . | HTML | path | fname                                  html
 rv.T       R . | LATEX | path | fname                                tex
 rv.T       R . | PYTHON | path | fname                                py
