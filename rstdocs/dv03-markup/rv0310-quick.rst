@@ -60,10 +60,10 @@ rv.T          _[[HTML]] *description*         HTML commands (all)
 ======== ===== ==================================================== ================
 Scope     R/W                  Command                                file types
 ======== ===== ==================================================== ================
-rv.R       R   | LINUX | path | fname                                sh
-rv.R       R   | MACOS | path | fname                                sh
-rv.R       R   | WIN | path | fname                                  bat, cmd
-rv.I       R   | TEXT | path | fname | title                         txt, tex, rst
+rv.R       R   || LINUX | path | fname                                sh
+rv.R       R   || MACOS | path | fname                                sh
+rv.R       R   || WIN | path | fname                                  bat, cmd
+rv.I       R   || TEXT | path | fname | title                         txt, tex, rst
 rv.I, .V   R   | TABLE | path | fname | title, width, l;c;r          csv, txt, xlsx
 rv.I, .V   R   | IMAGE | path | fname |  caption, scale              png, jpg
 rv.I, .V   R   | IMAGE2 | path | fname | c1, c2, s1, s2              png, jpg
