@@ -24,7 +24,7 @@ _[[TAG]] : block tag description
 .. raw:: html
 
     <hr>
-    
+
 
 **[01]** _[#] :  numbered footnote
 ----------------------------------------
@@ -48,18 +48,18 @@ _[[TAG]] : block tag description
 
     text, pdf, html
 
-**[03]** _[E] : number, label equation
+**[03]** _[E] : label equation
 -----------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: *text* _[C]
+.. topic:: *text* _[E]
 
     text, pdf, html
 
-_[F] : number, label figure 
+**[04]** _[F] : number, label figure 
 -----------------------------------------
 
 .. raw:: html
@@ -70,7 +70,7 @@ _[F] : number, label figure
 
     pdf, html
 
-_[LD] :  doc link 
+**[05]** _[LD] :  doc link 
 -----------------------------------------
 
 .. raw:: html
@@ -81,7 +81,7 @@ _[LD] :  doc link
     
     text, pdf, html
 
-_[LR] :  report link 
+**[06]** _[LR] :  report link 
 -----------------------------------------
 
 .. raw:: html
@@ -92,7 +92,7 @@ _[LR] :  report link
     
     text, pdf, html
 
-_[LU] :  url link 
+**[07]** _[LU] :  url link 
 -----------------------------------------
 
 .. raw:: html
@@ -103,7 +103,7 @@ _[LU] :  url link
     
     text, pdf, html
 
-_[P] : new page
+**[08]** _[P] : new page
 -----------------------------------------
 
 .. raw:: html
@@ -115,7 +115,7 @@ _[P] : new page
     pdf, html
 
 
-_[S] : sympy equation
+**[09]** _[S] : sympy equation
 -----------------------------------------
 
 .. raw:: html
@@ -126,7 +126,7 @@ _[S] : sympy equation
 
     text, pdf, html
 
-_[T]  number, label table
+**[10]** _[T]  label table
 ------------------------------------------
 
 .. raw:: html
@@ -138,7 +138,7 @@ _[T]  number, label table
     text, pdf, html
 
 
-_[V] : number, label values table 
+**[11]** _[V] : label values table 
 -----------------------------------------
 
 .. raw:: html
@@ -151,18 +151,18 @@ _[V] : number, label values table
     text, pdf, html
 
 
-**[00]** line
+**[12]** __ : line
 --------------------------------------- 
 .. raw:: html
 
     <hr>
 
-.. topic::  5 or more underscores  _____
+.. topic::  more than 4 underscores  ____
 
     text, pdf, html
 
 
-_[[C]] : code or literal
+**[13]** _[[C]] : code or literal
 ------------------------------------------------
 
 .. raw:: html
@@ -182,7 +182,7 @@ _[[C]] : code or literal
     text, pdf, html
 
 
-_[[L]] : LaTeX
+**[14]** _[[L]] : LaTeX
 ------------------------------------------------
 
 .. raw:: html
@@ -202,7 +202,7 @@ _[[L]] : LaTeX
     pdf, html
 
 
-_[[T]] : topic
+**[15]** _[[T]] : topic
 ------------------------------------------------
 
 .. raw:: html
@@ -224,7 +224,7 @@ _[[T]] : topic
 
   
 
-_[[V]] : values
+**[16]** _[[V]] : values
 ------------------------------------------------
 
 .. raw:: html

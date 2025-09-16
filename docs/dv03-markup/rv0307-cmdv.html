@@ -410,9 +410,9 @@ doc</em> is processed.</p>
 <p>input or output file types
 applicable doc types</p>
 </aside>
-</section>
-<section id="image-insert-image-file">
-<h2><strong>IMAGE</strong> - insert image file<a class="headerlink" href="#image-insert-image-file" title="Link to this heading">#</a></h2>
+<hr></section>
+<section id="image">
+<h2><strong>[01]</strong> | IMAGE |<a class="headerlink" href="#image" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| IMAGE | path | filename | caption _[F], scale</p>
 <ul class="simple">
@@ -421,8 +421,8 @@ applicable doc types</p>
 </ul>
 </aside>
 </section>
-<section id="image2-insert-images-side-by-side">
-<h2><strong>IMAGE2</strong> - insert images side by side<a class="headerlink" href="#image2-insert-images-side-by-side" title="Link to this heading">#</a></h2>
+<section id="image2-adjacent-images">
+<h2><strong>[02]</strong> | IMAGE2 | - adjacent images<a class="headerlink" href="#image2-adjacent-images" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| IMAGE2 | path | fname1, fname2 | cap1 _[F], cap2 _[F], sc1, sc2</p>
 <ul class="simple">
@@ -431,8 +431,8 @@ applicable doc types</p>
 </ul>
 </aside>
 </section>
-<section id="table-inserts-table-file">
-<h2><strong>TABLE</strong> - inserts table file<a class="headerlink" href="#table-inserts-table-file" title="Link to this heading">#</a></h2>
+<section id="table">
+<h2><strong>[03]</strong> | TABLE |<a class="headerlink" href="#table" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| TABLE | path | filename | title _[T]</p>
 <ul class="simple">
@@ -441,18 +441,8 @@ applicable doc types</p>
 </ul>
 </aside>
 </section>
-<section id="text-insert-text-file">
-<h2><strong>TEXT</strong> - insert text file<a class="headerlink" href="#text-insert-text-file" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">| text | path | filename | title _[T]</p>
-<ul class="simple">
-<li><p>reads text, text and reST files (.txt, .tex, .rst)</p></li>
-<li><p>PDF, HTML, text</p></li>
-</ul>
-</aside>
-</section>
-<section id="values-insert-values">
-<h2><strong>VALUES</strong> - insert values<a class="headerlink" href="#values-insert-values" title="Link to this heading">#</a></h2>
+<section id="values">
+<h2><strong>[04]</strong> | VALUES |<a class="headerlink" href="#values" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| VALUES | relative path | filename | title _[V], [rows]</p>
 <ul class="simple">
@@ -462,7 +452,7 @@ applicable doc types</p>
 </aside>
 </section>
 <section id="assign-value">
-<h2><strong>=</strong> - assign value<a class="headerlink" href="#assign-value" title="Link to this heading">#</a></h2>
+<h2><strong>[05]</strong> <strong>=</strong> - assign value<a class="headerlink" href="#assign-value" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">a = 10*IN | unit1, unit2, decimals | description</p>
 <ul class="simple">
@@ -472,7 +462,7 @@ applicable doc types</p>
 </aside>
 </section>
 <section id="define-equation">
-<h2><strong>:=</strong> - define equation<a class="headerlink" href="#define-equation" title="Link to this heading">#</a></h2>
+<h2><strong>[06]</strong> <strong>:=</strong> - define equation<a class="headerlink" href="#define-equation" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">b := a * 10 | unit1, unit2, decimals | reference</p>
 <ul class="simple">
@@ -531,13 +521,12 @@ applicable doc types</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key"><strong>KEY</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#image-insert-image-file"><strong>IMAGE</strong> - insert image file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#image2-insert-images-side-by-side"><strong>IMAGE2</strong> - insert images side by side</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-inserts-table-file"><strong>TABLE</strong> - inserts table file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-insert-text-file"><strong>TEXT</strong> - insert text file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#values-insert-values"><strong>VALUES</strong> - insert values</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-value"><strong>=</strong> - assign value</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#define-equation"><strong>:=</strong> - define equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#image"><strong>[01]</strong> | IMAGE |</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#image2-adjacent-images"><strong>[02]</strong> | IMAGE2 | - adjacent images</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table"><strong>[03]</strong> | TABLE |</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#values"><strong>[04]</strong> | VALUES |</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-value"><strong>[05]</strong> <strong>=</strong> - assign value</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#define-equation"><strong>[06]</strong> <strong>:=</strong> - define equation</a></li>
 </ul>
   </nav></div>
 

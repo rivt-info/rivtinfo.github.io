@@ -21,7 +21,7 @@ _[[TAG]] : block tag description
     types of output
 
 
-_[[PYTHON]] : Python code
+**[01]** _[[PYTHON]] : Python code
 ------------------------------------------------
 
 .. raw:: html
@@ -40,7 +40,7 @@ _[[PYTHON]] : Python code
 text, pdf, html
 
 
-_[[RUBY]] : Ruby code
+**[02]** _[[RUBY]] : Ruby code
 ------------------------------------------------
 
 .. raw:: html
@@ -59,7 +59,7 @@ text, pdf, html
 
 
 
-_[[HTML]] : HTML code
+**[03]** _[[HTML]] : HTML code
 ------------------------------------------------
 
 .. raw:: html
@@ -78,7 +78,7 @@ _[[HTML]] : HTML code
     pdf, html
 
 
-_[[LATEX]] : LaTeX code
+**[04]** _[[LATEX]] : LaTeX code
 ------------------------------------------------
 
 .. raw:: html

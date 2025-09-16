@@ -36,7 +36,12 @@ The *rivt project* folder structure is described :doc:`here </dv04-reports/folde
    applicable doc types
 
 
-**IMAGE** - insert image file
+.. raw:: html
+
+    <hr>
+
+
+**[01]** | IMAGE | 
 -------------------------------------------
 
 .. raw:: html
@@ -48,7 +53,7 @@ The *rivt project* folder structure is described :doc:`here </dv04-reports/folde
     - reads PNG and JPEG files (.png, jpg)
     - PDF, HTML
 
-**IMAGE2** - insert images side by side
+**[02]** | IMAGE2 | - adjacent images 
 --------------------------------------------------
 
 .. raw:: html
@@ -60,7 +65,7 @@ The *rivt project* folder structure is described :doc:`here </dv04-reports/folde
     - reads PNG and JPEG files (.png, jpg)
     - PDF, HTML
 
-**TABLE** - inserts table file
+**[03]** | TABLE | 
 ------------------------------------------
 
 .. raw:: html
@@ -73,20 +78,7 @@ The *rivt project* folder structure is described :doc:`here </dv04-reports/folde
     - PDF, HTML, text
 
 
-**TEXT** - insert text file
-------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: | text | path | filename | title _[T]
-
-    - reads text, text and reST files (.txt, .tex, .rst)
-    - PDF, HTML, text
-
-
-**VALUES** - insert values
+**[04]** | VALUES | 
 -------------------------------------------
 
 .. raw:: html
@@ -98,7 +90,7 @@ The *rivt project* folder structure is described :doc:`here </dv04-reports/folde
     - reads values.txt file
     - PDF, HTML
 
-**=** - assign value
+**[05]** **=** - assign value
 -------------------------------------------
 
 .. raw:: html
@@ -110,7 +102,7 @@ The *rivt project* folder structure is described :doc:`here </dv04-reports/folde
     - assigns value to a variable
     - PDF, HTML
 
-**:=** - define equation
+**[06]** **:=** - define equation
 -------------------------------------------
 
 .. raw:: html

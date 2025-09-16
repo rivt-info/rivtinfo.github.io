@@ -288,12 +288,12 @@ _[[TAG]] : block tag description
 
    text, pdf, html
 
-**[20]** _ : horizontal line
+**[20]** __ : horizontal line
 --------------------------------------- 
 .. raw:: html
 
     <hr>
 
-.. topic::  4 or more underscores  ___ 
+.. topic::  more than 4 underscores  ___ 
 
     text, pdf, html

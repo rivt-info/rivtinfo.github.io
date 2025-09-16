@@ -35,7 +35,13 @@ The *rivt project* folder structure is described :doc:`here </dv04-reports/folde
     - input or output file types
     - applicable doc types
 
-**PYTHON** - Python functions and scripts
+
+.. raw:: html
+
+    <hr>
+
+
+**[01]** | PYTHON | functions 
 -------------------------------------------
 
 .. raw:: html
@@ -48,7 +54,7 @@ The *rivt project* folder structure is described :doc:`here </dv04-reports/folde
    reads .py files
 
 
-**HTML** - HTML markup
+**[02]** | HTML | markup
 -------------------------------------------
 
 .. raw:: html
@@ -56,12 +62,12 @@ The *rivt project* folder structure is described :doc:`here </dv04-reports/folde
     <hr>
 
 
-.. topic:: | MACOS | path | filename  
+.. topic:: | HTML | path | filename  
 
    reads .html files
 
 
-**LATEX** - LaTeX code
+**[03]** | LATEX | code
 -------------------------------------------
 
 .. raw:: html
@@ -73,7 +79,7 @@ The *rivt project* folder structure is described :doc:`here </dv04-reports/folde
    reads .tex file
 
 
-**QCAD** - QCAD script
+**[04]** | QCAD | script
 -------------------------------------------
 
 .. raw:: html
