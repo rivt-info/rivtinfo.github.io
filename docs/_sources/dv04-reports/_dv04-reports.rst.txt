@@ -29,7 +29,7 @@ The files include *rivt files*, external source documents, settings,
 and public/private files. The top level structure is shown below. The full
 structure is shown :doc:`here</dv04-reports/rv0402-folders>`
 
-.. code-block:: text
+.. code-block:: console
 
     [rivt]-Project-Label/      Project Folder 
     ├── [dv01-]divlabel/          division folder
