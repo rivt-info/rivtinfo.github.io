@@ -1,24 +1,32 @@
 4.2 - Files and Folders
 ============================
 
-**[01]** Project Folders 
--------------------------------
+**[01]** rivt files
+--------------------
 
 A *rivt file* is the basic unit of a rivt report. Its output is a *rivt doc*, a
 subdivision in a report heirarchy. Each *rivt* and *doc* file is identified
 with a *doc number* of the form:
 
+.. code-block:: bash
+
     [rvddss]-file-name.py 
-    
+
+
 .. topic:: Note: 
 
     - Fixed prefixes are shown in brackets ([]). 
     - A single vertical bar (|) identifies files provided by the author. 
     - A double bar (||) identifies a file or folder written by rivt 
 
+
+
+**[02]** Project Folders 
+-------------------------------
+
 The top level folder structure is:
 
-.. code-block::
+.. code-block:: bash
 
     [rivt]-Project-Label/          Project Folder 
     ├── [dv01-]divlabel/          division folder
@@ -28,11 +36,17 @@ The top level folder structure is:
     ├── [source]/                 source files      
     └── README.txt                text report 
 
+*rivt files* are organized into numbered division folders of the form:
 
-When expanded it looks like this:
+.. code-block:: bash
 
+    [dvdd-]division-name
 
-.. code-block:: 
+where dd is a two digit division number. 
+
+An expanded folder structure looks like this:
+
+.. code-block:: bash
 
 
     [rivt]-Project-Label/                 # Project Folder
@@ -149,24 +163,3 @@ When expanded it looks like this:
         └── README.txt                       # GitHub searchable report 
 
 
-
-**[02]** Folder Functions
--------------------------------
-
-An example *rivt folder structure* for reports is shown below. *rivt files* are
-organized into numbered division folders of the form:
-
-    dvdd-division-name
-
-where dd is the two digit division number.
-
-*Docs* are written to the *reports* folder. A *report* is an organized assembly
-of *docs*.
-
-Report and document titles are taken from folder and file names unless
-over-rides are specified in the rivt-config.ini file.
-
-An example folder structure is shown below. 
-
-**[03]** Single Docs
--------------------------------

@@ -15,6 +15,8 @@ The assembly and organization of a *rivt report* is inferred from:
 
 A *rivt file* name has a *doc number* prefix:
 
+.. code-block:: bash
+    
     [rvddss-]file-name.py
     
 where dd and ss are a two digit division and subdivision numbers respectively.

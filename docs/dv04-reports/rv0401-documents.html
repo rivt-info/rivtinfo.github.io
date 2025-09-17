@@ -377,18 +377,19 @@
 <p><em>rivt files</em> and <em>source files</em> are typically stored in rivt <em>project folders</em>
 and subfolders. <em>Reports</em> are assembled from and written to files in the
 <em>project folder</em> which has the top level structure of:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[rivt]-Project-Label/          Project Folder
-├── [dv01-]divlabel/          division folder
-├── [dv02-]divlabel/          division folder
-
-...
-
-├── [public]/                 public rivt files
-├── [reports]/                reports and docs
-├── [source]/                 source files
-└── README.txt                text report
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">code</span><span class="o">-</span><span class="n">block</span><span class="p">::</span> <span class="n">bash</span>
 </pre></div>
 </div>
+<blockquote>
+<div><p>[rivt]-Project-Label/          Project Folder
+├── [dv01-]divlabel/          division folder
+├── [dv02-]divlabel/          division folder</p>
+<p>…</p>
+<p>├── [public]/                 public rivt files
+├── [reports]/                reports and docs
+├── [source]/                 source files
+└── README.txt                text report</p>
+</div></blockquote>
 <p>A complete example of a <em>project folder</em> is <a class="reference internal" href="rv0402-folders.html"><span class="doc">here</span></a></p>
 <p><em>rivt files</em> are processed one at a time. Sources used in a <em>doc</em> are read
 from <em>source</em> subfolders. <em>Docs</em> that are part of <em>reports</em> are written to

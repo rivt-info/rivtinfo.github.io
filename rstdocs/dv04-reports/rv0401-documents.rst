@@ -5,6 +5,8 @@
 and subfolders. *Reports* are assembled from and written to files in the
 *project folder* which has the top level structure of::
 
+.. code-block:: bash
+    
     [rivt]-Project-Label/          Project Folder 
     ├── [dv01-]divlabel/          division folder
     ├── [dv02-]divlabel/          division folder
