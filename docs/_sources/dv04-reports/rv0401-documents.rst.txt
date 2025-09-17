@@ -1,7 +1,7 @@
 4.2 - Documents 
 ========================
 
-*rivt files* and *source files* are typically stored in rivt *project folders*
+*rivt files* and *source files* are typically stored in *rivt project folders*
 and subfolders. *Reports* are assembled from and written to files in the
 *project folder* which has the top level structure of:
 
@@ -19,7 +19,7 @@ and subfolders. *Reports* are assembled from and written to files in the
         └── README.txt                text report 
 
 
-A complete example of a *project folder* is :doc:`here </dv04-reports/rv0402-folders>`
+A expanded example of a *project folder* is :doc:`here </dv04-reports/rv0402-folders>`
 
 *rivt files* are processed one at a time. Sources used in a *doc* are read
 from *source* subfolders. *Docs* that are part of *reports* are written to
