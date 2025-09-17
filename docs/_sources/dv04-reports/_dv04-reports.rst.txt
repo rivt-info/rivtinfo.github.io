@@ -1,10 +1,10 @@
 4. Reports
 =============== 
 
-*rivt report* assembly and organization is inferred from:
+The assembly and organization of a *rivt report* is inferred from:
 
 #. The *rivt file* and *doc* name
-#. The *rivt folder* name and structure
+#. The *project folder* names
 
 .. topic:: Note: 
     
@@ -29,7 +29,7 @@ The files include *rivt files*, external source documents, settings,
 and public/private files. The top level structure is shown below. The full
 structure is shown :doc:`here</dv04-reports/rv0402-folders>`
 
-::
+.. code-block:: text
 
     [rivt]-Project-Label/      Project Folder 
     ├── [dv01-]divlabel/          division folder
