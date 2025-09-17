@@ -3,7 +3,7 @@
 
 *rivt files* and *source files* are typically stored in rivt *project folders*
 and subfolders. *Reports* are assembled from and written to files in the
-*project folder* which has the top level structure of::
+*project folder* which has the top level structure of:
 
 .. code-block:: bash
  
