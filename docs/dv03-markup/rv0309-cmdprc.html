@@ -167,14 +167,14 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dv04-reports/dv04-summary.html">
+  <a class="nav-link nav-internal" href="../dv04-reports/_dv04-reports.html">
     4. Reports
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dv05-collab/dv05-summary.html">
+  <a class="nav-link nav-internal" href="../dv05-collab/_dv05-collab.html">
     5. Collaboration
   </a>
 </li>
@@ -274,14 +274,14 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dv04-reports/dv04-summary.html">
+  <a class="nav-link nav-internal" href="../dv04-reports/_dv04-reports.html">
     4. Reports
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dv05-collab/dv05-summary.html">
+  <a class="nav-link nav-internal" href="../dv05-collab/_dv05-collab.html">
     5. Collaboration
   </a>
 </li>
@@ -386,24 +386,22 @@
                   
   <section id="process-commands">
 <h1>3.10 <strong>Process</strong> Commands<a class="headerlink" href="#process-commands" title="Link to this heading">#</a></h1>
-<p><em>rivt commands</em> read and write external files and assign values to variables.
-They typically start in the first column with a vertical bar ( | ) followed by
-the command name and parameters. The exceptions to this pattern are the
-assignment ( = ) and definition ( := ) commands which are used to assign values
-and evaluate equations.</p>
-<p>In the syntax description below parameter options are separated with
-semi-colons and parameter elements by commas.</p>
+<p><em>Process commands</em> control the process of generating and assembling <em>docs</em>. They
+do not directly generate <em>doc</em> content.</p>
 <p>Most commands have a <em>relative path</em> parameter with three modes:</p>
 <blockquote>
-<div><p><em>rvdefault</em> : when this value is provided <em>rivt</em> looks for the file in the
+<div><p><em>rvsource</em> : when this value is provided <em>rivt</em> looks for the file in the
 division source directory. For example if the rivt file is in division 1
-and the API function is <em>Insert</em> the folder <em>i01</em> in <em>source</em> is searched.</p>
-<p><em>rvlocal</em> : when this value is provided <em>rivt</em> looks for the file in the
-rivt file directory.</p>
-<p>specified source : a specific folder may also be provided. For example if
-<em>v02</em> is specified the <em>v02</em> folder in the <em>source</em> folder is searched.</p>
+and the API function is <em>Insert</em> the subfolder <em>i01</em> in the <em>source</em> folder
+is searched.</p>
+<p><em>rvlocal</em> : when this value is provided <em>rivt</em> looks for the source file in
+the rivt file directory.</p>
+<p>specified source : a specific folder in the <em>source</em> subfolder may be
+provided. For example if <em>v02</em> is specified the <em>v02</em> folder in the
+<em>source</em> folder is searched.</p>
 </div></blockquote>
-<p>Project folder organization is described <a class="reference internal" href="../dv04-reports/folders.html"><span class="doc">here</span></a></p>
+<p>Project folder organization is described
+<a class="reference internal" href="../dv04-reports/rv0401-folders.html"><span class="doc">here.</span></a></p>
 <section id="key">
 <h2><strong>KEY</strong><a class="headerlink" href="#key" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
@@ -413,19 +411,19 @@ rivt file directory.</p>
 <li><p>applicable doc types</p></li>
 </ul>
 </aside>
-</section>
-<section id="append-append-a-pdf-file">
-<h2><strong>APPEND</strong> - append a PDF file<a class="headerlink" href="#append-append-a-pdf-file" title="Link to this heading">#</a></h2>
+<hr></section>
+<section id="append-append-pdf-file">
+<h2><strong>[01]</strong> | APPEND  | - append PDF file<a class="headerlink" href="#append-append-pdf-file" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| APPEND | relative path | filename | num; nonum</p>
-<p>reads PDF files
+<p class="topic-title">| APPEND | path | filename | before; after</p>
+<p>appends PDF file to <em>doc</em>
 PDF, HTML</p>
 </aside>
 </section>
-<section id="doc-writes-doc-file">
-<h2><strong>DOC</strong> - writes doc file<a class="headerlink" href="#doc-writes-doc-file" title="Link to this heading">#</a></h2>
+<section id="doc-write-doc-file">
+<h2><strong>[02]</strong> | DOC |  - write doc file<a class="headerlink" href="#doc-write-doc-file" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| DOC | relative path |  txt; html; rpdf; tpdf</p>
+<p class="topic-title">| DOC | path |  txt; html; rpdf; tpdf</p>
 <ul class="simple">
 <li><p>writes text, PDF or HTML files</p></li>
 <li><p>PDF, HTML, text</p></li>
@@ -483,8 +481,8 @@ PDF, HTML</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key"><strong>KEY</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#append-append-a-pdf-file"><strong>APPEND</strong> - append a PDF file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#doc-writes-doc-file"><strong>DOC</strong> - writes doc file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#append-append-pdf-file"><strong>[01]</strong> | APPEND  | - append PDF file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#doc-write-doc-file"><strong>[02]</strong> | DOC |  - write doc file</a></li>
 </ul>
   </nav></div>
 

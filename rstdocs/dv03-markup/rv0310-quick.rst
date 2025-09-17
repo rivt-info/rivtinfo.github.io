@@ -63,17 +63,17 @@ Scope           (Read/Write)  | Command | parameters             file types
 rv.R       (Rd) | LINUX | path | fname                                sh
 rv.R       (Rd) | MACOS | path | fname                                sh
 rv.R       (Rd) | WIN | path | fname                                  bat, cmd
-rv.I       R . | TEXT | path | fname | title                     txt, tex, rst
-rv.I, .V   R . | TABLE | path | fname | title, width, l;c;r      csv, txt, xlsx
-rv.I, .V   R . | IMAGE | path | fname |  caption, scale              png, jpg
-rv.I, .V   R . | IMAGE2 | path | fname | c1, c2, s1, s2              png, jpg
-rv.V       R . | VALUES | path | fname | title, [rows]               csv
+rv.I       (Rd) | TEXT | path | fname | title                     txt, tex, rst
+rv.I, .V   (Rd) | TABLE | path | fname | title, width, l;c;r      csv, txt, xlsx
+rv.I, .V   (Rd) | IMAGE | path | fname |  caption, scale              png, jpg
+rv.I, .V   (Rd) | IMAGE2 | path | fname | c1, c2, s1, s2              png, jpg
+rv.V       (Rd) | VALUES | path | fname | title, [rows]               csv
 rv.V       (Wr)  a = 1 + 1  | unit1, unit2, decimal | descrip      assign value
 rv.V       (Wr)  b := a + 3 | unit1, unit2, decimal | ref          define value
-rv.T       R . | HTML | path | fname                                  html
-rv.T       R . | LATEX | path | fname                                tex
-rv.T       R . | PYTHON | path | fname                                py
-rv.T       R . | QCAD   | path | fname                                py
-rv.D       W . | APPEND | path | fname                               pdf
-rv.D       W . | DOC | path | fname | rpdf; tpdf; txt; html      pdf, txt, html
+rv.T       (Rd) | HTML | path | fname                                  html
+rv.T       (Rd) | LATEX | path | fname                                tex
+rv.T       (Rd) | PYTHON | path | fname                                py
+rv.T       (Rd) | QCAD   | path | fname                                js
+rv.D       (Wr) | APPEND | path | fname                               pdf
+rv.D       (Wr) | DOC | path | fname | rpdf; tpdf; txt; html      pdf, txt, html
 ========= ==================================================== ==================

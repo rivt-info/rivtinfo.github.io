@@ -167,14 +167,14 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dv04-reports/dv04-summary.html">
+  <a class="nav-link nav-internal" href="../dv04-reports/_dv04-reports.html">
     4. Reports
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dv05-collab/dv05-summary.html">
+  <a class="nav-link nav-internal" href="../dv05-collab/_dv05-collab.html">
     5. Collaboration
   </a>
 </li>
@@ -274,14 +274,14 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dv04-reports/dv04-summary.html">
+  <a class="nav-link nav-internal" href="../dv04-reports/_dv04-reports.html">
     4. Reports
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dv05-collab/dv05-summary.html">
+  <a class="nav-link nav-internal" href="../dv05-collab/_dv05-collab.html">
     5. Collaboration
   </a>
 </li>
@@ -383,13 +383,12 @@
                   
   <section id="markup">
 <h1>3. Markup<a class="headerlink" href="#markup" title="Link to this heading">#</a></h1>
-<p><em>rivt markup</em> provides a unified language that generates text, PDF or HTML
-<em>docs</em> from the same file. The <em>markup</em> is enclosed in a <em>rivt string</em> which
-includes a header line followed by lines of text enclosed in triple
-quotes. A <em>rivt string</em> is the argument to each of the 7 <em>rivt</em> API functions.</p>
+<p><em>rivt markup</em>,  within a <em>rivt string</em>, provides a common language to generate
+text, PDF or HTML <em>docs</em> from the same <em>rivt file</em>. <em>rivt strings</em> are the
+argument to <em>rivt</em> API functions.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="head"><p>API Funct</p></th>
+<tr class="row-odd"><th class="head"><p>API Function</p></th>
 <th class="head"><p>Name</p></th>
 <th class="head"><p>Purpose</p></th>
 </tr>
@@ -401,7 +400,7 @@ quotes. A <em>rivt string</em> is the argument to each of the 7 <em>rivt</em> AP
 </tr>
 <tr class="row-odd"><td><p><em>rv.I(rs)</em></p></td>
 <td><p>Insert</p></td>
-<td><p>Insert static resources</p></td>
+<td><p>Insert static sources</p></td>
 </tr>
 <tr class="row-even"><td><p><em>rv.V(rs)</em></p></td>
 <td><p>Values</p></td>
@@ -426,10 +425,10 @@ quotes. A <em>rivt string</em> is the argument to each of the 7 <em>rivt</em> AP
 </tbody>
 </table>
 </div>
-<p>Each function starts in column one and defines a <em>doc section</em>. The first line
-in the <em>rivt string</em> is a <em>section header</em>. Subsequent lines define <em>section
-content</em> and are indented 4 spaces.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | print; noprint, public; private</span>
+<p>Each API function starts in the first column (Python syntax) and defines a <em>doc
+section</em>. The first line in a <em>rivt string</em> is a <em>section header</em>. Subsequent
+lines are indented 4 spaces and include <em>tags</em> and <em>commands</em>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | write; nowrite, public; private; (rvsource, rvlocal)</span>
 
 <span class="s2">    section content (utf-8 text)</span>
 <span class="s2">    ...</span>
@@ -439,17 +438,13 @@ content</em> and are indented 4 spaces.</p>
 </div>
 <section id="header">
 <h2><strong>[01]</strong> Header<a class="headerlink" href="#header" title="Link to this heading">#</a></h2>
-<p>The header starts with a <em>section label</em> followed by a vertical separator bar
-and two write <em>parameters</em>, The <em>section label</em> is typically the section
-title and the write <em>parameters</em> specify, for the case of API R,I,T or D:</p>
+<p>A header starts with a <em>section label</em> followed by a vertical separator bar and
+<em>parameters</em> that override the section write behavior. The <em>section label</em> is
+typically the section title, and the write <em>parameters</em> specify:</p>
 <ul class="simple">
 <li><p>whether the section output is written to the <em>doc</em></p></li>
-<li><p>whether the section is written to a <em>public rivt file</em></p></li>
-</ul>
-<p>and for the case of V:</p>
-<ul class="simple">
-<li><p>whether the <em>value file</em> is written to the <em>local</em> or <em>source folder</em>.</p></li>
-<li><p>whether the section is written to a <em>public rivt file</em></p></li>
+<li><p>whether the function and <em>rivt string</em> are written to a <em>public rivt file</em></p></li>
+<li><p>where the <em>value file</em> is written (rv.V only)</p></li>
 </ul>
 <p>They only need to be specified when different from defaults.</p>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -463,10 +458,10 @@ title and the write <em>parameters</em> specify, for the case of API R,I,T or D:
 <td><p>nowrite, private</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>print, private</p></td>
+<td><p>write, private</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.V</p></td>
-<td><p>rvsource, private</p></td>
+<td><p>write, private, rvsource</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.T</p></td>
 <td><p>nowrite, private</p></td>
@@ -490,9 +485,7 @@ output is merged with the prior section, instead of starting a new one.</p>
 <section id="section-content">
 <h2><strong>[02]</strong> Section Content<a class="headerlink" href="#section-content" title="Link to this heading">#</a></h2>
 <p>Section content is indented four spaces (for legibility and code folding) and
-includes <em>tags</em> for text formatting and <em>commands</em> for file operations.
-<em>commands</em> and <em>tags</em> are generally converted to <em>reST</em> when processing a <em>rivt
-file</em>. <em>Text docs</em> are formatted separately.</p>
+includes <em>tags</em> for text formatting and <em>commands</em> for file operations.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | write; nowrite, public; private</span>
 
 <span class="s2">    section content</span>
@@ -502,12 +495,11 @@ file</em>. <em>Text docs</em> are formatted separately.</p>
 </pre></div>
 </div>
 <p>Text in a <em>rivt string</em> not defined by <em>commands</em> or <em>tags</em> is passed through
-to an intermediate <a class="reference external" href="https://docutils.sourceforge.io/docs/user/rst/quickref.html">RestructuredText file</a> used to
-write PDF and HTML <em>docs</em>.  Embedded <em>restructuredText</em> that commonly used
-in a <em>rivt string</em> includes:</p>
-<ul class="simple">
-<li><p>surrounding text with * for italics or ** for bold.</p></li>
-</ul>
+to an intermediate <a class="reference external" href="https://docutils.sourceforge.io/docs/user/rst/quickref.html">RestructuredText file</a> used to publish
+PDF and HTML <em>docs</em>. <em>commands</em> and <em>tags</em> are also converted to <em>reST</em> when
+processing a <em>rivt file</em>. This allows for embedded <em>restructured text</em>, e.g.
+surrounding text with * for italics or ** for bold. <em>Text docs</em> are formatted
+separately.</p>
 </section>
 <section id="tags-and-commands">
 <h2><strong>[03]</strong> Tags and Commands<a class="headerlink" href="#tags-and-commands" title="Link to this heading">#</a></h2>

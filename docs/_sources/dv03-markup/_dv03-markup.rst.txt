@@ -1,16 +1,15 @@
 3. Markup
 ==================
 
-*rivt markup* provides a unified language that generates text, PDF or HTML
-*docs* from the same file. The *markup* is enclosed in a *rivt string* which
-includes a header line followed by lines of text enclosed in triple
-quotes. A *rivt string* is the argument to each of the 7 *rivt* API functions.
+*rivt markup*,  within a *rivt string*, provides a common language to generate
+text, PDF or HTML *docs* from the same *rivt file*. *rivt strings* are the
+argument to *rivt* API functions. 
 
 =============== =============== ===================================
-API Funct          Name             Purpose
+API Function        Name             Purpose
 =============== =============== ===================================
 *rv.R(rs)*        Run               Run shell commands
-*rv.I(rs)*        Insert            Insert static resources 
+*rv.I(rs)*        Insert            Insert static sources 
 *rv.V(rs)*        Values            Calculate values
 *rv.T(rs)*        Tools             Functions and scripts
 *rv.D(rs)*        Docs              Write docs 
@@ -18,47 +17,44 @@ API Funct          Name             Purpose
 *rv.Q(rs)*        Quit              Exit rivt 
 =============== =============== ===================================
 
-Each function starts in column one and defines a *doc section*. The first line
-in the *rivt string* is a *section header*. Subsequent lines define *section
-content* and are indented 4 spaces.
+Each API function starts in the first column (Python syntax) and defines a *doc
+section*. The first line in a *rivt string* is a *section header*. Subsequent
+lines are indented 4 spaces and include *tags* and *commands*.
 
 .. code-block:: python
 
-    rv._("""Section Label | print; noprint, public; private
+    rv._("""Section Label | write; nowrite, public; private; (rvsource, rvlocal)
 
         section content (utf-8 text)
         ...
         
         """)
 
+
 **[01]** Header 
 ------------------
 
-The header starts with a *section label* followed by a vertical separator bar
-and two write *parameters*, The *section label* is typically the section
-title and the write *parameters* specify, for the case of API R,I,T or D:
+A header starts with a *section label* followed by a vertical separator bar and
+*parameters* that override the section write behavior. The *section label* is
+typically the section title, and the write *parameters* specify:
 
-- whether the section output is written to the *doc*
-- whether the section is written to a *public rivt file* 
-
-and for the case of V:
-
-- whether the *value file* is written to the *local* or *source folder*.
-- whether the section is written to a *public rivt file* 
+- whether the section output is written to the *doc* 
+- whether the function and *rivt string* are written to a *public rivt file* 
+- where the *value file* is written (rv.V only)
 
 They only need to be specified when different from defaults.
 
-============= ============================
+============= ==============================
 API function    default write parameters       
-============= ============================
+============= ==============================
 rv.R             nowrite, private
-rv.I             print, private
-rv.V             rvsource, private
+rv.I             write, private
+rv.V             write, private, rvsource
 rv.T             nowrite, private
 rv.D             nowrite, private
 rv.S             nowrite, private
 rv.Q             nowrite, private
-============= ============================
+============= ==============================
 
 Sections are numbered, bookmarked and linked when output to *doc*. If the
 *section label* is preceeded by two dashes (*--section label*) the section
@@ -70,8 +66,7 @@ output is merged with the prior section, instead of starting a new one.
 
 Section content is indented four spaces (for legibility and code folding) and
 includes *tags* for text formatting and *commands* for file operations.
-*commands* and *tags* are generally converted to *reST* when processing a *rivt
-file*. *Text docs* are formatted separately.
+
 
 
 .. code-block:: python
@@ -84,12 +79,12 @@ file*. *Text docs* are formatted separately.
         """)
 
 Text in a *rivt string* not defined by *commands* or *tags* is passed through
-to an intermediate `RestructuredText file 
-<https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_ used to
-write PDF and HTML *docs*.  Embedded *restructuredText* that commonly used
-in a *rivt string* includes:
-
-- surrounding text with * for italics or ** for bold.
+to an intermediate `RestructuredText file
+<https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_ used to publish
+PDF and HTML *docs*. *commands* and *tags* are also converted to *reST* when
+processing a *rivt file*. This allows for embedded *restructured text*, e.g.
+surrounding text with * for italics or ** for bold. *Text docs* are formatted
+separately.
 
 
 **[03]** Tags and Commands

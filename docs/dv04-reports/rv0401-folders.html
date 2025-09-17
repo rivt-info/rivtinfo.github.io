@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="../_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="../_static/favicon-32x32.png" type="image/png">
-    <title>4.3 - Configuration Files &#8212; Home</title>
+    <title>4.1 - Files and Folders &#8212; Home</title>
   
   
   
@@ -56,11 +56,11 @@
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'dv04-reports/settings';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'dv04-reports/rv0401-folders';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="5. Collaboration" href="../dv05-collab/dv05-summary.html" />
-    <link rel="prev" title="4.2 - Publish Docs" href="documents.html" />
+    <link rel="next" title="4.2 - Reports" href="rv0402-documents.html" />
+    <link rel="prev" title="4. Reports" href="_dv04-reports.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -167,14 +167,14 @@
 
 
 <li class="nav-item current active">
-  <a class="nav-link nav-internal" href="dv04-summary.html">
+  <a class="nav-link nav-internal" href="_dv04-reports.html">
     4. Reports
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dv05-collab/dv05-summary.html">
+  <a class="nav-link nav-internal" href="../dv05-collab/_dv05-collab.html">
     5. Collaboration
   </a>
 </li>
@@ -221,6 +221,10 @@
     </div>
   
 
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="Sections">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
   
 </div>
 
@@ -270,14 +274,14 @@
 
 
 <li class="nav-item current active">
-  <a class="nav-link nav-internal" href="dv04-summary.html">
+  <a class="nav-link nav-internal" href="_dv04-reports.html">
     4. Reports
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dv05-collab/dv05-summary.html">
+  <a class="nav-link nav-internal" href="../dv05-collab/_dv05-collab.html">
     5. Collaboration
   </a>
 </li>
@@ -309,9 +313,9 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="folders.html">4.1 - Files and Folders</a></li>
-<li class="toctree-l1"><a class="reference internal" href="documents.html">4.2 - Publish Docs</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">4.3 - Configuration Files</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">4.1 - Files and Folders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv0402-documents.html">4.2 - Reports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv0403-settings.html">4.3 - Configuration Files</a></li>
 </ul>
 </div>
 </nav></div>
@@ -353,9 +357,9 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="dv04-summary.html" class="nav-link">4. Reports</a></li>
+    <li class="breadcrumb-item"><a href="_dv04-reports.html" class="nav-link">4. Reports</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">4.3 - Configuration Files</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">4.1 - Files and Folders</span></li>
   </ul>
 </nav>
 </div>
@@ -372,9 +376,167 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="configuration-files">
-<h1>4.3 - Configuration Files<a class="headerlink" href="#configuration-files" title="Link to this heading">#</a></h1>
-<p>abc</p>
+  <section id="files-and-folders">
+<h1>4.1 - Files and Folders<a class="headerlink" href="#files-and-folders" title="Link to this heading">#</a></h1>
+<section id="doc-folders">
+<h2><strong>[01]</strong> Doc Folders<a class="headerlink" href="#doc-folders" title="Link to this heading">#</a></h2>
+<p>A <em>rivt file</em> is the basic unit of a rivt report. Its output is a <em>rivt doc</em>
+which is a subdivision in the report heirarchy. Each <em>rivt file</em> is
+identified with a <em>doc number</em> of the form:</p>
+<blockquote>
+<div><p>[rvddss]-file-name.py</p>
+</div></blockquote>
+<aside class="topic">
+<p class="topic-title">Note:</p>
+<ul class="simple">
+<li><p>Fixed prefixes are shown in brackets ([]).</p></li>
+<li><p>A single vertical bar (|) identifies a file or folder produced by the user.</p></li>
+<li><p>A double bar (||) identifies a file or folder written by rivt</p></li>
+</ul>
+</aside>
+<p>The top level collapsed folder structure looks like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[rivt]-Report-Label/          Project Folder
+├── [dv01-]divlabel/          division folder
+├── [dv02-]divlabel/          division folder
+├── [public]/                 public rivt files
+├── [reports]/                reports and docs
+├── [source]/                 source files
+└── README.txt                text report
+</pre></div>
+</div>
+<p>When expanded it looks like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[rivt]-Report-Label/                 # Project Folder
+    ├── [dv01-]divlabel/                  # div 01 folder
+        ├── [rv0101-]doclabel1.py               | rivt file
+        └── [rv0102-]doclabel2.py               | rivt file
+    ├── [dv02-]divlabel/                  # div 02 folder
+        ├── [rv0101-]doclabel3.py               | rivt file
+        └── [rv0102-]doclabel4.py               | rivt file
+    ├── [public]/                         # rivt files - public sections
+        ├── dv01-divlabel1/                   || div 01 files - public
+            ├── rv0101-doclabel1.py
+            └── rv0102-doclabel2.py
+        ├── dv02-divlabel2/                   || div 02 files - public
+            ├── rv0101-doclabel3.py
+            └── rv0102-doclabel4.py
+        └── README.txt                        || GitHub searchable report
+    ├── [reports]/                        # Reports and Docs
+        ├── [html]/                       # HTML sites and docs
+            ├── [docs]/                       || HTML site
+                    ├── _images
+                    ├── _sources
+                    └── _static
+                    ├── dv01-divlabel1\       || HTML docs
+                        ├── rv0101-doclabel1.html
+                        └── rv0102-doclabel2.html
+                    ├── dv02-divlabel2\
+                        ├── rv0201-doclabel3.html
+                        └── rv0202-doclabel4.html
+                    ├── index.html
+                    └── README.txt            || GitHub searchable report
+            ├── [srcdocs]                     || HTML reST files
+                    ├── _locale                | settings
+                    ├── _static                | settings
+                    └── _templates             | settings
+                    ├── dv01-divlabel1\
+                        ├── rv0101-doclabel1.rst
+                        └── rv0102-doclabel2.rst
+                    ├── dv02-divlabel2\
+                        ├── rv0201-doclabel3.rst
+                        └── rv0202-doclabel4.rst
+                    ├── conf.py
+                    ├── index.rst
+                    └── README.txt
+            ├── conf.py                         | config file
+            ├── index.rst                       | index file
+            └── genhtml.cmd                     | build commands
+        ├── [rpdf]/                           # rPDF report and docs
+            ├── [srcdocs]                      || rPDF reST files
+                ├── fonts\                      | fonts
+                └── style\                      | settings
+                ├── dv01-divlabel1\
+                    ├── rv0101-doclabel1.rst
+                    └── rv0102-doclabel2.rst
+                ├── dv02-divlabel2\
+                    ├── rv0201-doclabel3.rst
+                    └── rv0202-doclabel4.rst
+            ├── dv01-divlabel1\                  || rPDF docs
+                ├── rv0101-doclabel1.pdf
+                └── rv0102-doclabel2.pdf
+            ├── dv02-divlabel2\
+                ├── rv0201-doclabel3.pdf
+                └── rv0202-doclabel4.pdf
+            ├── README.txt                       || GitHub searchable report
+            ├── Report-Label.pdf                 || rPDF report
+            └── genrpdf.cmd                      | build commands
+        ├── [tpdf]/                           # tPDF report and docs
+            ├── [srcdocs]                        || tPDF reST files
+                ├── texpdf-style\
+                ├── dv01-divlabel1\
+                    ├── rv0101-doclabel1.rst
+                    └── rv0102-doclabel2.rst
+                ├── dv02-divlabel2\
+                    ├── rv0201-doclabel3.rst
+                    └── rv0202-doclabel4.rst
+            ├── dv01-divlabel1\               # tPDF docs
+                ├── rv0101-doclabel1.pdf
+                └── rv0102-doclabel2.pdf
+            ├── dv02-divlabel2\
+                ├── rv0201-doclabel3.pdf
+                └── rv0202-doclabel4.pdf
+            ├── [temp]/
+                └── d0201-label3.tex
+            ├── README.txt                   || GitHub searchable report
+            ├── Report-Label.pdf             || tPDF report
+            └── gentpdf.cmd                  | build commands
+        ├── [text]/                          || text report and docs
+            ├── dv01-divlabel1\
+                ├── rv0101-label1.txt
+                └── rv0102-label2.txt
+            ├── dv02-divlabel1\
+                ├── rv0201-label3.txt
+                └── rv0202-label4.txt
+            └── rivt-Report-Label.txt
+    ├── [source]                          # Sources for rivt files
+        ├── [rt01]/                         | div 01 Run and Tool files
+            ├── data1.csv
+            └── standards.txt
+        ├── [rt02]/                         | div 02 Run and Tool files
+            ├── data1.csv
+            └── standards.txt
+        ├── [i01]/                          | div 01 Insert files
+            ├── data1.csv
+            ├── cover-page.pdf
+            └── standards.txt
+        ├── [i02]/                          | div 02 Insert files
+            ├── data1.csv
+            └── standards.txt
+        ├── [v01]/                          | div 01 Value files
+            ├── val0101-2.csv
+            └── val0102-3.csv
+        ├── [v02]/                          | div 02 Value files
+            └── othervals.csv
+    └── README.txt                       # GitHub searchable report
+</pre></div>
+</div>
+</section>
+<section id="folder-functions">
+<h2><strong>[02]</strong> Folder Functions<a class="headerlink" href="#folder-functions" title="Link to this heading">#</a></h2>
+<p>An example <em>rivt folder structure</em> for reports is shown below. <em>rivt files</em> are
+organized into numbered division folders of the form:</p>
+<blockquote>
+<div><p>dvdd-division-name</p>
+</div></blockquote>
+<p>where dd is the two digit division number.</p>
+<p><em>Docs</em> are written to the <em>reports</em> folder. A <em>report</em> is an organized assembly
+of <em>docs</em>.</p>
+<p>Report and document titles are taken from folder and file names unless
+over-rides are specified in the rivt-config.ini file.</p>
+<p>An example folder structure is shown below.</p>
+</section>
+<section id="single-docs">
+<h2><strong>[03]</strong> Single Docs<a class="headerlink" href="#single-docs" title="Link to this heading">#</a></h2>
+</section>
 </section>
 
 
@@ -388,20 +550,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="documents.html"
+       href="_dv04-reports.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">4.2 - Publish Docs</p>
+        <p class="prev-next-title">4. Reports</p>
       </div>
     </a>
     <a class="right-next"
-       href="../dv05-collab/dv05-summary.html"
+       href="rv0402-documents.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">5. Collaboration</p>
+        <p class="prev-next-title">4.2 - Reports</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -411,6 +573,26 @@
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Sections
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#doc-folders"><strong>[01]</strong> Doc Folders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#folder-functions"><strong>[02]</strong> Folder Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#single-docs"><strong>[03]</strong> Single Docs</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

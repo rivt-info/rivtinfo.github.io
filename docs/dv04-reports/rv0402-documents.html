@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="../_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="../_static/favicon-32x32.png" type="image/png">
-    <title>5.2 - GitHub Search &#8212; Home</title>
+    <title>4.2 - Reports &#8212; Home</title>
   
   
   
@@ -56,10 +56,11 @@
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'dv05-collab/ghsearch';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'dv04-reports/rv0402-documents';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="5.1 - Public vs Private" href="publicrivt.html" />
+    <link rel="next" title="4.3 - Configuration Files" href="rv0403-settings.html" />
+    <link rel="prev" title="4.1 - Files and Folders" href="rv0401-folders.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -165,15 +166,15 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dv04-reports/dv04-summary.html">
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="_dv04-reports.html">
     4. Reports
   </a>
 </li>
 
 
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="dv05-summary.html">
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../dv05-collab/_dv05-collab.html">
     5. Collaboration
   </a>
 </li>
@@ -220,10 +221,6 @@
     </div>
   
 
-  
-    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="Sections">
-      <span class="fa-solid fa-outdent"></span>
-    </button>
   
 </div>
 
@@ -272,15 +269,15 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dv04-reports/dv04-summary.html">
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="_dv04-reports.html">
     4. Reports
   </a>
 </li>
 
 
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="dv05-summary.html">
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../dv05-collab/_dv05-collab.html">
     5. Collaboration
   </a>
 </li>
@@ -312,8 +309,9 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="publicrivt.html">5.1 - Public vs Private</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">5.2 - GitHub Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv0401-folders.html">4.1 - Files and Folders</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">4.2 - Reports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv0403-settings.html">4.3 - Configuration Files</a></li>
 </ul>
 </div>
 </nav></div>
@@ -355,9 +353,9 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="dv05-summary.html" class="nav-link">5. Collaboration</a></li>
+    <li class="breadcrumb-item"><a href="_dv04-reports.html" class="nav-link">4. Reports</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">5.2 - GitHub Search</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">4.2 - Reports</span></li>
   </ul>
 </nav>
 </div>
@@ -374,56 +372,69 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="github-search">
-<h1>5.2 - GitHub Search<a class="headerlink" href="#github-search" title="Link to this heading">#</a></h1>
-<p>This page is a search interface for <strong>rivt</strong> files
-distributed across GitHub. The search covers the full text of the <strong>rivt</strong>
-README file (the rivt text report). For advanced searching
-use the GitHub interface  <a class="reference external" href="https://github.com/search">here</a>.</p>
-<aside class="topic">
-<p class="topic-title">Buttons</p>
-<p><strong>[S]</strong> Search GitHub &lt;Ctrl+Enter&gt;</p>
-<p><strong>[C]</strong> Clear input &lt;Ctrl+R&gt;</p>
-</aside>
-<hr class="docutils" />
-<section id="global-search-terms">
-<h2><strong>Global Search Terms</strong><a class="headerlink" href="#global-search-terms" title="Link to this heading">#</a></h2>
-<p><strong>Example</strong>: solar+steel+frame is passed to GitHub as rivt+solar+steel+frame</p>
-<head>
+  <section id="reports">
+<h1>4.2 - Reports<a class="headerlink" href="#reports" title="Link to this heading">#</a></h1>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#! python</span>
 
-<style>
-.button {
-background-color: #6f6968; border: 3 px solid white; color: white; padding: 4px 10px;
-text-align: center; text-decoration: none; display: inline-block; font-size: 16px;
-margin: 4px 2px; cursor: pointer;} </style>
+<span class="kn">from</span><span class="w"> </span><span class="nn">rivtlib.rvreport</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>  <span class="c1"># noqa: F403</span>
 
-<script>
-function searchRivt(){var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;
-window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 13) && e.ctrlKey){document.getElementById("searchBtn").click();}});</script>
+<span class="sd">&quot;&quot;&quot; generate a rivt report</span>
 
-<script> function searchOrg(){var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;
-window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 13) && e.ctrlKey){document.getElementById("searchBtn").click();}});</script>
+<span class="sd">Sample report generating and config file. The report generating file must</span>
+<span class="sd">located in rivtdocs/reports/. The report output file is written to the same</span>
+<span class="sd">folder. Duplicate report file names are incremented, not overwritten.</span>
 
-<script> function clearRivt(){document.getElementById("terms").value="";
-document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 82) && e.ctrlKey){document.getElementById("clearBtn").click();}})};</script>
+<span class="sd">Run this Python file to generate a rivt report. Copy and rename the file to</span>
+<span class="sd">save custom report settings. See rivtdocs/styles/rivt.ini for additional</span>
+<span class="sd">settings.</span>
 
-</head>
+<span class="sd">A flag determines whether the report is assembled from existing doc files or</span>
+<span class="sd">whether docs are regenerated prior to assembly. (see &quot;report type and paths&quot;</span>
+<span class="sd">below). If a rivt or doc file is specified for inclusion and not found a</span>
+<span class="sd">warning is given but the report is still assembled.</span>
 
-<button class="button" id="searchBtn" onclick="searchRivt()">S</button><button class="button" id="clearBtn" onclick="clearRivt()">C</button><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal"><br>
+<span class="sd">A rivt report organizes rivt folders into divisions, and rivt doc files as</span>
+<span class="sd">subdivisions. rivt doc numbers define this structure. Default titles for</span>
+<span class="sd">subdivisions and divisions are generated by stripping the doc or div number</span>
+<span class="sd">from the file or folder name and replacing underscores with spaces. The default</span>
+<span class="sd">titles may be overridden (see &quot;optional rename&quot; below). &quot;&quot;&quot;</span>
 
-<br>
+<span class="c1"># ==================================</span>
+<span class="c1"># report type</span>
+<span class="c1"># ==================================</span>
+<span class="n">rptype</span> <span class="o">=</span> <span class="s2">&quot;rstpdf&quot;</span>  <span class="c1"># report type [html; rstpdf; texpdf; text]</span>
+<span class="n">rvrun</span> <span class="o">=</span> <span class="kc">False</span>  <span class="c1"># regenerate docs [True; False]</span>
 
-<hr></section>
-<section id="organization-search">
-<h2><strong>Organization Search</strong><a class="headerlink" href="#organization-search" title="Link to this heading">#</a></h2>
-<p>Restrict search to the following comma separated GitHub organizations:</p>
-<input type="text" id="terms" name="terms" size=40 style="height:38px;font-size:14pt; font-weight: normal">
+<span class="c1"># ==================================</span>
+<span class="c1"># report cover settings</span>
+<span class="c1"># ==================================</span>
+<span class="c1"># cover pages are located in rivtdocs/styles</span>
+<span class="n">rptitle</span> <span class="o">=</span> <span class="s2">&quot;Solar Canopy Calculations&quot;</span>
+<span class="n">rpsubtitle</span> <span class="o">=</span> <span class="s2">&quot;Larkspur, Ca&quot;</span>
+<span class="n">rpauthor</span> <span class="o">=</span> <span class="s2">&quot;rhh&quot;</span>
+<span class="n">rpdate</span> <span class="o">=</span> <span class="s2">&quot;&lt;datetime&gt;&quot;</span>
+<span class="n">rptoc</span> <span class="o">=</span> <span class="kc">True</span>  <span class="c1"># add table of contents, &quot;&quot; to omit</span>
+<span class="n">rpcover</span> <span class="o">=</span> <span class="s2">&quot;cover1.pdf&quot;</span>  <span class="c1"># cover page [name.rst; name.pdf], &quot;&quot; to omit</span>
 
-<br>
-<br>
+<span class="c1"># ==================================</span>
+<span class="c1"># include docs / rename titles</span>
+<span class="c1"># ==================================</span>
+<span class="c1"># include these divisions in report</span>
+<span class="n">dv01</span> <span class="o">=</span> <span class="s2">&quot;Codes and Loads&quot;</span>  <span class="c1"># override division title</span>
+<span class="n">dv02</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># use default division title from folder name</span>
+<span class="n">dv03</span> <span class="o">=</span> <span class="s2">&quot;Foundation&quot;</span>
 
-<b>Organization(s) Search Terms</b><br>
-<button class="button" id="searchBtn" onclick="searchOrg()">S</button> <button class="button" id="clearBtn" onclick="clearRivt()">C</button><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal"></section>
+<span class="c1"># include these docs in report</span>
+<span class="n">rv0101</span> <span class="o">=</span> <span class="s2">&quot;Codes&quot;</span>  <span class="c1"># override doc (subdivision) title in report</span>
+<span class="n">rv0102</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># use default subdivision title from file name</span>
+<span class="n">rv0201</span> <span class="o">=</span> <span class="s2">&quot;Steel Frame&quot;</span>
+<span class="n">rv0202</span> <span class="o">=</span> <span class="s2">&quot;Solar Panels&quot;</span>
+<span class="n">rv0301</span> <span class="o">=</span> <span class="s2">&quot;Slab&quot;</span>
+<span class="n">rv0302</span> <span class="o">=</span> <span class="s2">&quot;Walls&quot;</span>
+
+<span class="n">genreport</span><span class="p">()</span>  <span class="c1"># noqa: F405</span>
+</pre></div>
+</div>
 </section>
 
 
@@ -437,13 +448,22 @@ document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyC
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="publicrivt.html"
+       href="rv0401-folders.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">5.1 - Public vs Private</p>
+        <p class="prev-next-title">4.1 - Files and Folders</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="rv0403-settings.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">4.3 - Configuration Files</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -451,25 +471,6 @@ document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyC
             </div>
             
             
-              
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-<div
-    id="pst-page-navigation-heading-2"
-    class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Sections
-  </div>
-  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#global-search-terms"><strong>Global Search Terms</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#organization-search"><strong>Organization Search</strong></a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>

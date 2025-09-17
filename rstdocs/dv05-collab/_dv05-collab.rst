@@ -69,5 +69,5 @@ GitHub supports the following formats and features:
 .. toctree::
     :maxdepth: 3
 
-    publicrivt.rst
-    ghsearch.rst
+    rv0501-publicrivt.rst
+    rv0502-ghsearch.rst

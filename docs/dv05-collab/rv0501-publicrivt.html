@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="../_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="../_static/favicon-32x32.png" type="image/png">
-    <title>5. Collaboration &#8212; Home</title>
+    <title>5.1 - Public vs Private &#8212; Home</title>
   
   
   
@@ -56,11 +56,11 @@
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'dv05-collab/dv05-summary';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'dv05-collab/rv0501-publicrivt';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="5.1 - Public vs Private" href="publicrivt.html" />
-    <link rel="prev" title="4.3 - Configuration Files" href="../dv04-reports/settings.html" />
+    <link rel="next" title="5.2 - GitHub Search" href="rv0502-ghsearch.html" />
+    <link rel="prev" title="5. Collaboration" href="_dv05-collab.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -167,14 +167,14 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dv04-reports/dv04-summary.html">
+  <a class="nav-link nav-internal" href="../dv04-reports/_dv04-reports.html">
     4. Reports
   </a>
 </li>
 
 
 <li class="nav-item current active">
-  <a class="nav-link nav-internal" href="#">
+  <a class="nav-link nav-internal" href="_dv05-collab.html">
     5. Collaboration
   </a>
 </li>
@@ -221,10 +221,6 @@
     </div>
   
 
-  
-    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="Sections">
-      <span class="fa-solid fa-outdent"></span>
-    </button>
   
 </div>
 
@@ -274,14 +270,14 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dv04-reports/dv04-summary.html">
+  <a class="nav-link nav-internal" href="../dv04-reports/_dv04-reports.html">
     4. Reports
   </a>
 </li>
 
 
 <li class="nav-item current active">
-  <a class="nav-link nav-internal" href="#">
+  <a class="nav-link nav-internal" href="_dv05-collab.html">
     5. Collaboration
   </a>
 </li>
@@ -312,9 +308,9 @@
         <div class="sidebar-primary-item">
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
-    <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="publicrivt.html">5.1 - Public vs Private</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ghsearch.html">5.2 - GitHub Search</a></li>
+    <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">5.1 - Public vs Private</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv0502-ghsearch.html">5.2 - GitHub Search</a></li>
 </ul>
 </div>
 </nav></div>
@@ -355,7 +351,10 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">5. Collaboration</span></li>
+    
+    <li class="breadcrumb-item"><a href="_dv05-collab.html" class="nav-link">5. Collaboration</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">5.1 - Public vs Private</span></li>
   </ul>
 </nav>
 </div>
@@ -372,66 +371,9 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="collaboration">
-<h1>5. Collaboration<a class="headerlink" href="#collaboration" title="Link to this heading">#</a></h1>
-<p>VSCode and GitHub have a number of tools that faciliate collaboration when
-writing and sharing rivt files.</p>
-<section id="github">
-<h2><strong>[01]</strong> GitHub<a class="headerlink" href="#github" title="Link to this heading">#</a></h2>
-<p>GitHub repos facilitate rivt file sharing and discovery.</p>
-<p>The primary purpose of GitHub is to facilitate the version control and issue
-tracking aspects of software development. Labels, milestones, responsibility
-assignment, and a search engine are available for issue tracking. For version
-control, Git (and, by extension, GitHub) allows pull requests to propose changes
-to the source code. Users who can review the proposed changes can see a diff
-between the requested changes and approve them. In Git terminology, this action
-is called “committing” and one instance of it is a “commit.” A history of all
-commits is kept and can be viewed at a later time.</p>
-<p>GitHub supports the following formats and features:</p>
-<ul class="simple">
-<li><p>Documentation,including automatically rendered README files in a variety of
-Markdown-like file formats (see README § On GitHub)</p></li>
-<li><p>Pages, a static web hosting service for blogs, project documentation,
-and books.</p></li>
-<li><p>Wikis, with some repositories consisting solely of wiki content. These
-include curated lists of recommended software which have become known as
-awesome lists.</p></li>
-<li><p>GitHub Actions, which allows building continuous integration and
-continuous deployment pipelines for testing, releasing and deploying software
-without the use of third-party websites/platforms</p></li>
-<li><p>GitHub Codespaces, an online IDE providing users with a virtual machine
-intended to be a work environment to build and test code</p></li>
-<li><p>Graphs: pulse, contributors, commits, code frequency, punch card, network,
-members</p></li>
-<li><p>Email notifications</p></li>
-<li><p>Discussions</p></li>
-<li><p>Nested task-lists within files</p></li>
-<li><p>Visualization of geospatial data</p></li>
-<li><p>image preview in many formats</p></li>
-<li><p>Security Alerts of known Common Vulnerabilities and Exposures in different
-packages</p></li>
-<li><p>GitHub’s Terms of Service do not require public software projects hosted on
-GitHub to meet the Open Source Definition. The terms of service state, “By
-setting your repositories to be viewed publicly, you agree to allow others to
-view and fork your repositories.”</p></li>
-</ul>
-<blockquote>
-<div><p>Collaboration in VS Code is primarily facilitated by the Visual Studio Live
-Share extension. This extension enables real-time collaborative development,
-allowing multiple developers to work on the same codebase simultaneously,
-share debugging sessions, and interact within the same environment.</p>
-</div></blockquote>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="publicrivt.html">5.1 - Public vs Private</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ghsearch.html">5.2 - GitHub Search</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="ghsearch.html#global-search-terms"><strong>Global Search Terms</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="ghsearch.html#organization-search"><strong>Organization Search</strong></a></li>
-</ul>
-</li>
-</ul>
-</div>
-</section>
+  <section id="public-vs-private">
+<h1>5.1 - Public vs Private<a class="headerlink" href="#public-vs-private" title="Link to this heading">#</a></h1>
+<p>Public rivt files are generated by settings in the rivt file section header.</p>
 </section>
 
 
@@ -445,20 +387,20 @@ share debugging sessions, and interact within the same environment.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../dv04-reports/settings.html"
+       href="_dv05-collab.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">4.3 - Configuration Files</p>
+        <p class="prev-next-title">5. Collaboration</p>
       </div>
     </a>
     <a class="right-next"
-       href="publicrivt.html"
+       href="rv0502-ghsearch.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">5.1 - Public vs Private</p>
+        <p class="prev-next-title">5.2 - GitHub Search</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -468,24 +410,6 @@ share debugging sessions, and interact within the same environment.</p>
             </div>
             
             
-              
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-<div
-    id="pst-page-navigation-heading-2"
-    class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Sections
-  </div>
-  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github"><strong>[01]</strong> GitHub</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>

@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="../_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="../_static/favicon-32x32.png" type="image/png">
-    <title>4. Reports &#8212; Home</title>
+    <title>4.3 - Configuration Files &#8212; Home</title>
   
   
   
@@ -56,11 +56,11 @@
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'dv04-reports/dv04-summary';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'dv04-reports/rv0403-settings';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="4.1 - Files and Folders" href="folders.html" />
-    <link rel="prev" title="3.12 Example" href="../dv03-markup/rv0311-example1.html" />
+    <link rel="next" title="5. Collaboration" href="../dv05-collab/_dv05-collab.html" />
+    <link rel="prev" title="4.2 - Reports" href="rv0402-documents.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -167,14 +167,14 @@
 
 
 <li class="nav-item current active">
-  <a class="nav-link nav-internal" href="#">
+  <a class="nav-link nav-internal" href="_dv04-reports.html">
     4. Reports
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dv05-collab/dv05-summary.html">
+  <a class="nav-link nav-internal" href="../dv05-collab/_dv05-collab.html">
     5. Collaboration
   </a>
 </li>
@@ -221,10 +221,6 @@
     </div>
   
 
-  
-    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="Sections">
-      <span class="fa-solid fa-outdent"></span>
-    </button>
   
 </div>
 
@@ -274,14 +270,14 @@
 
 
 <li class="nav-item current active">
-  <a class="nav-link nav-internal" href="#">
+  <a class="nav-link nav-internal" href="_dv04-reports.html">
     4. Reports
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dv05-collab/dv05-summary.html">
+  <a class="nav-link nav-internal" href="../dv05-collab/_dv05-collab.html">
     5. Collaboration
   </a>
 </li>
@@ -312,10 +308,10 @@
         <div class="sidebar-primary-item">
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
-    <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="folders.html">4.1 - Files and Folders</a></li>
-<li class="toctree-l1"><a class="reference internal" href="documents.html">4.2 - Publish Docs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="settings.html">4.3 - Configuration Files</a></li>
+    <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="rv0401-folders.html">4.1 - Files and Folders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv0402-documents.html">4.2 - Reports</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">4.3 - Configuration Files</a></li>
 </ul>
 </div>
 </nav></div>
@@ -356,7 +352,10 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">4. Reports</span></li>
+    
+    <li class="breadcrumb-item"><a href="_dv04-reports.html" class="nav-link">4. Reports</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">4.3 - Configuration Files</span></li>
   </ul>
 </nav>
 </div>
@@ -373,65 +372,9 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="reports">
-<h1>4. Reports<a class="headerlink" href="#reports" title="Link to this heading">#</a></h1>
-<p><em>rivt files</em> output formatted <em>docs</em> that can be organized into <em>rivt reports</em>.
-<em>rivt reports</em> are assembled from a <em>rivt folder structure*</em> and a <em>doc number</em>
-prefix in the <em>rivt file</em> name. The <em>doc number</em> prefix has the form:</p>
-<blockquote>
-<div><p>rvddss-file-name.py</p>
-</div></blockquote>
-<p>where dd is a two digit division number and ss is a two digit subdivision
-number e.g., rv0203-loads.py. Editing the doc number changes the report
-organization and default locations of sources used in a doc.</p>
-<p>A <em>rivt file</em> may also be treated as a <em>single doc</em></p>
-<section id="rivt-folders">
-<h2><strong>[01]</strong> rivt folders<a class="headerlink" href="#rivt-folders" title="Link to this heading">#</a></h2>
-<p>The folder structure organizes rivt files, external source documents, settings
-and public and private categories that facilitate open source sharing.</p>
-<blockquote>
-<div><p>[rivt]-Report-Label/          Project Folder
-├── [dv01-]divlabel/          division folder
-├── [dv02-]divlabel/          division folder
-├── [public]/                 public rivt files
-├── [reports]/                reports and docs
-├── [source]                  source files
-└── README.txt                text report</p>
-</div></blockquote>
-<p>Resource files used in <em>rivt files</em> are organized in the <em>source</em> folder.</p>
-</section>
-<section id="rivt-files">
-<h2><strong>[02]</strong> rivt files<a class="headerlink" href="#rivt-files" title="Link to this heading">#</a></h2>
-<p>A <em>doc</em> may be a text, PDF or HTML file. Each <em>rivt file</em> is identified with a
-<em>doc</em> number of the form:</p>
-<blockquote>
-<div><p>rvddss-file-name.py</p>
-</div></blockquote>
-<p>where dd is a two digit division number and ss is a two digit subdivision
-number e.g., rv0203-loads.py. The <em>doc numbers</em> are used to insert sources and
-assemble reports. Editing the doc number changes the report organization.</p>
-<p>An example <em>rivt folder structure</em> for reports is shown below. <em>rivt files</em> are
-organized into numbered division folders of the form:</p>
-<blockquote>
-<div><p>dvdd-division-name</p>
-</div></blockquote>
-<p>where dd is the two digit division number.</p>
-<p><em>Docs</em> are written to the <em>reports</em> folder. A <em>report</em> is an organized assembly
-of <em>docs</em>.</p>
-<p>Report and document titles are taken from folder and file names unless
-over-rides are specified in the rivt-config.ini file.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[rivt]-Report-Label/          Project Folder
-├── [dv01-]divlabel/          division folder
-├── [dv02-]divlabel/          division folder
-├── [public]/                 public rivt files
-├── [reports]/                reports and docs
-├── [source]                  source files
-└── README.txt                text report
-</pre></div>
-</div>
-<div class="toctree-wrapper compound">
-</div>
-</section>
+  <section id="configuration-files">
+<h1>4.3 - Configuration Files<a class="headerlink" href="#configuration-files" title="Link to this heading">#</a></h1>
+<p>abc</p>
 </section>
 
 
@@ -445,20 +388,20 @@ over-rides are specified in the rivt-config.ini file.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../dv03-markup/rv0311-example1.html"
+       href="rv0402-documents.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">3.12 Example</p>
+        <p class="prev-next-title">4.2 - Reports</p>
       </div>
     </a>
     <a class="right-next"
-       href="folders.html"
+       href="../dv05-collab/_dv05-collab.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">4.1 - Files and Folders</p>
+        <p class="prev-next-title">5. Collaboration</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -468,25 +411,6 @@ over-rides are specified in the rivt-config.ini file.</p>
             </div>
             
             
-              
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-<div
-    id="pst-page-navigation-heading-2"
-    class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Sections
-  </div>
-  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-folders"><strong>[01]</strong> rivt folders</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-files"><strong>[02]</strong> rivt files</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>

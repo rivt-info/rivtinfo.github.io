@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="../_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="../_static/favicon-32x32.png" type="image/png">
-    <title>4.1 - Files and Folders &#8212; Home</title>
+    <title>5.2 - GitHub Search &#8212; Home</title>
   
   
   
@@ -56,11 +56,10 @@
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'dv04-reports/folders';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'dv05-collab/rv0502-ghsearch';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="4.2 - Publish Docs" href="documents.html" />
-    <link rel="prev" title="4. Reports" href="dv04-summary.html" />
+    <link rel="prev" title="5.1 - Public vs Private" href="rv0501-publicrivt.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -166,15 +165,15 @@
 </li>
 
 
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="dv04-summary.html">
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../dv04-reports/_dv04-reports.html">
     4. Reports
   </a>
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dv05-collab/dv05-summary.html">
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="_dv05-collab.html">
     5. Collaboration
   </a>
 </li>
@@ -273,15 +272,15 @@
 </li>
 
 
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="dv04-summary.html">
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../dv04-reports/_dv04-reports.html">
     4. Reports
   </a>
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dv05-collab/dv05-summary.html">
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="_dv05-collab.html">
     5. Collaboration
   </a>
 </li>
@@ -313,9 +312,8 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">4.1 - Files and Folders</a></li>
-<li class="toctree-l1"><a class="reference internal" href="documents.html">4.2 - Publish Docs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="settings.html">4.3 - Configuration Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv0501-publicrivt.html">5.1 - Public vs Private</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">5.2 - GitHub Search</a></li>
 </ul>
 </div>
 </nav></div>
@@ -357,9 +355,9 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="dv04-summary.html" class="nav-link">4. Reports</a></li>
+    <li class="breadcrumb-item"><a href="_dv05-collab.html" class="nav-link">5. Collaboration</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">4.1 - Files and Folders</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">5.2 - GitHub Search</span></li>
   </ul>
 </nav>
 </div>
@@ -376,158 +374,56 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="files-and-folders">
-<h1>4.1 - Files and Folders<a class="headerlink" href="#files-and-folders" title="Link to this heading">#</a></h1>
-<section id="rivt-files">
-<h2><strong>[01]</strong> rivt files<a class="headerlink" href="#rivt-files" title="Link to this heading">#</a></h2>
-<p>A <em>rivt file</em> is the basic unit of a rivt report. Its output is a <em>rivt doc</em>
-which is a subdivision in the report heirarchy. Each <em>rivt file</em> is
-identified with a <em>doc</em> prefix number of the form:</p>
-<blockquote>
-<div><p>rvddss-file-name.py</p>
-</div></blockquote>
-<p>where dd is a two digit division number and ss is a two digit subdivision
-number e.g., rv0203-loads.py. Editing the doc number changes the report
-organization.</p>
-<p>Resource files used in <em>rivt files</em> are organized in the <em>source</em> folder.</p>
-</section>
-<section id="rivt-folders">
-<h2><strong>[02]</strong> rivt folders<a class="headerlink" href="#rivt-folders" title="Link to this heading">#</a></h2>
-<p>An example <em>rivt folder structure</em> for reports is shown below. <em>rivt files</em> are
-organized into numbered division folders of the form:</p>
-<blockquote>
-<div><p>dvdd-division-name</p>
-</div></blockquote>
-<p>where dd is the two digit division number.</p>
-<p><em>Docs</em> are written to the <em>reports</em> folder. A <em>report</em> is an organized assembly
-of <em>docs</em>.</p>
-<p>Report and document titles are taken from folder and file names unless
-over-rides are specified in the rivt-config.ini file.</p>
-</section>
-<section id="report-folder-structure">
-<h2><strong>[03]</strong> Report folder structure<a class="headerlink" href="#report-folder-structure" title="Link to this heading">#</a></h2>
-<p>An example folder structure is shown below.</p>
+  <section id="github-search">
+<h1>5.2 - GitHub Search<a class="headerlink" href="#github-search" title="Link to this heading">#</a></h1>
+<p>This page is a search interface for <strong>rivt</strong> files
+distributed across GitHub. The search covers the full text of the <strong>rivt</strong>
+README file (the rivt text report). For advanced searching
+use the GitHub interface  <a class="reference external" href="https://github.com/search">here</a>.</p>
 <aside class="topic">
-<p class="topic-title">Key to annotation:</p>
-<ul class="simple">
-<li><p>Prefixes are shown in brackets ([]).</p></li>
-<li><p>A single vertical bar (|) identifies a file or folder produced by the user.</p></li>
-<li><p>A double bar (||) identifies a file or folder written by rivt</p></li>
-</ul>
+<p class="topic-title">Buttons</p>
+<p><strong>[S]</strong> Search GitHub &lt;Ctrl+Enter&gt;</p>
+<p><strong>[C]</strong> Clear input &lt;Ctrl+R&gt;</p>
 </aside>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[rivt]-Report-Label/           ======== Project Folder =========
-    ├── [dv01-]divlabel/                   div 01 folder
-        ├── [rv0101-]doclabel1.py               | rivt file
-        └── [rv0102-]doclabel2.py               | rivt file
-    ├── [dv02-]divlabel/                   div 02 folder
-        ├── [rv0101-]doclabel3.py               | rivt file
-        └── [rv0102-]doclabel4.py               | rivt file
-    ├── [public]/                     ==== rivt files - public sections ====
-        ├── dv01-divlabel1/                 || div 01 files
-            ├── rv0101-doclabel1.py
-            └── rv0102-doclabel2.py
-        ├── dv02-divlabel2/                 || div 02 files
-            ├── rv0101-doclabel3.py
-            └── rv0102-doclabel4.py
-        └── README.txt                      || GitHub searchable report
-    ├── [reports]/                     ==== Reports and Docs ====
-        ├── [html]/                           || HTML reports and docs
-            ├── [docs]/                       || HTML site
-                    ├── _images
-                    ├── _sources
-                    └── _static
-                    ├── dv01-divlabel1\       || HTML docs
-                        ├── rv0101-doclabel1.html
-                        └── rv0102-doclabel2.html
-                    ├── dv02-divlabel2\
-                        ├── rv0201-doclabel3.html
-                        └── rv0202-doclabel4.html
-                    ├── index.html
-                    └── README.txt            || GitHub searchable report
-            ├── [srcdocs]                     || HTML reST files
-                    ├── _locale
-                    ├── _static
-                    └── _templates
-                    ├── dv01-divlabel1\
-                        ├── rv0101-doclabel1.rst
-                        └── rv0102-doclabel2.rst
-                    ├── dv02-divlabel2\
-                        ├── rv0201-doclabel3.rst
-                        └── rv0202-doclabel4.rst
-                    ├── conf.py
-                    ├── index.rst
-                    └── README.txt            || GitHub searchable report
-            ├── conf.py
-            ├── index.rst
-            └── genhtml.cmd
-        ├── [rpdf]/                           || rPDF report and docs
-            ├── [srcdocs]                     || rPDF reST files
-                ├── fonts\
-                └── rstpdf-style\
-                ├── dv01-divlabel1\
-                    ├── rv0101-doclabel1.rst
-                    └── rv0102-doclabel2.rst
-                ├── dv02-divlabel2\
-                    ├── rv0201-doclabel3.rst
-                    └── rv0202-doclabel4.rst
-            ├── dv01-divlabel1\               || rPDF docs
-                ├── rv0101-doclabel1.pdf
-                └── rv0102-doclabel2.pdf
-            ├── dv02-divlabel2\
-                ├── rv0201-doclabel3.pdf
-                └── rv0202-doclabel4.pdf
-            ├── README.txt                    || GitHub searchable report
-            └── Report-Label.pdf              || rPDF report
-        ├── [tpdf]/                           || tPDF report and docs
-            ├── [srcdocs]                     || tPDF reST files
-                ├── texpdf-style\
-                ├── dv01-divlabel1\
-                    ├── rv0101-doclabel1.rst
-                    └── rv0102-doclabel2.rst
-                ├── dv02-divlabel2\
-                    ├── rv0201-doclabel3.rst
-                    └── rv0202-doclabel4.rst
-            ├── dv01-divlabel1\               || tPDF docs
-                ├── rv0101-doclabel1.pdf
-                └── rv0102-doclabel2.pdf
-            ├── dv02-divlabel2\
-                ├── rv0201-doclabel3.pdf
-                └── rv0202-doclabel4.pdf
-            ├── [temp]/
-                └── d0201-label3.tex
-            ├── README.txt                    || GitHub searchable report
-            └── Report-Label.pdf              || tPDF report
-        ├── [text]/                           || text report and docs
-            ├── dv01-divlabel1\
-                ├── rv0101-label1.txt
-                └── rv0102-label2.txt
-            ├── dv02-divlabel1\
-                ├── rv0201-label3.txt
-                └── rv0202-label4.txt
-            └── rivt-Report-Label.txt
-    ├── [source]                      ==== Source files for rivt files ====
-        ├── [rt01]/                         | div 01 Run and Tool files
-            ├── data1.csv
-            └── standards.txt
-        ├── [rt02]/                         | div 02 Run and Tool files
-            ├── data1.csv
-            └── standards.txt
-        ├── [i01]/                          | div 01 Insert files
-            ├── data1.csv
-            ├── cover-page.pdf
-            └── standards.txt
-        ├── [i02]/                          | div 02 Insert files
-            ├── data1.csv
-            └── standards.txt
-        ├── [v01]/                        ||| div 01 Value files
-            ├── val0101-2.csv
-            └── val0102-3.csv
-        ├── [v02]/                        ||| div 02 Value files
-            └── othervals.csv
-    └── README.txt                      || GitHub searchable report
-</pre></div>
-</div>
-</section>
+<hr class="docutils" />
+<section id="global-search-terms">
+<h2><strong>Global Search Terms</strong><a class="headerlink" href="#global-search-terms" title="Link to this heading">#</a></h2>
+<p><strong>Example</strong>: solar+steel+frame is passed to GitHub as rivt+solar+steel+frame</p>
+<head>
+
+<style>
+.button {
+background-color: #6f6968; border: 3 px solid white; color: white; padding: 4px 10px;
+text-align: center; text-decoration: none; display: inline-block; font-size: 16px;
+margin: 4px 2px; cursor: pointer;} </style>
+
+<script>
+function searchRivt(){var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;
+window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 13) && e.ctrlKey){document.getElementById("searchBtn").click();}});</script>
+
+<script> function searchOrg(){var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;
+window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 13) && e.ctrlKey){document.getElementById("searchBtn").click();}});</script>
+
+<script> function clearRivt(){document.getElementById("terms").value="";
+document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 82) && e.ctrlKey){document.getElementById("clearBtn").click();}})};</script>
+
+</head>
+
+<button class="button" id="searchBtn" onclick="searchRivt()">S</button><button class="button" id="clearBtn" onclick="clearRivt()">C</button><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal"><br>
+
+<br>
+
+<hr></section>
+<section id="organization-search">
+<h2><strong>Organization Search</strong><a class="headerlink" href="#organization-search" title="Link to this heading">#</a></h2>
+<p>Restrict search to the following comma separated GitHub organizations:</p>
+<input type="text" id="terms" name="terms" size=40 style="height:38px;font-size:14pt; font-weight: normal">
+
+<br>
+<br>
+
+<b>Organization(s) Search Terms</b><br>
+<button class="button" id="searchBtn" onclick="searchOrg()">S</button> <button class="button" id="clearBtn" onclick="clearRivt()">C</button><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal"></section>
 </section>
 
 
@@ -541,22 +437,13 @@ over-rides are specified in the rivt-config.ini file.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="dv04-summary.html"
+       href="rv0501-publicrivt.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">4. Reports</p>
+        <p class="prev-next-title">5.1 - Public vs Private</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="documents.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">4.2 - Publish Docs</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -577,9 +464,8 @@ over-rides are specified in the rivt-config.ini file.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-files"><strong>[01]</strong> rivt files</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-folders"><strong>[02]</strong> rivt folders</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#report-folder-structure"><strong>[03]</strong> Report folder structure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#global-search-terms"><strong>Global Search Terms</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#organization-search"><strong>Organization Search</strong></a></li>
 </ul>
   </nav></div>
 

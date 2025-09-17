@@ -11,7 +11,7 @@ In the syntax description below parameter options are separated with
 semi-colons and parameter elements by commas. Path names can be directly
 specified (relative to the project *source folder*) or specified with an alias:
 
-    *rvdefault* : this alias directs *rivtlib* to look for the file in the
+    *rvsource* : this alias directs *rivtlib* to look for the file in the
     source folder. For example if the *rivt file* is in division 1
     and the API function is *Insert* the folder *i01* in *source* is searched.
 
@@ -19,7 +19,8 @@ specified (relative to the project *source folder*) or specified with an alias:
     file* directory. It is used when a *single doc*, ratherh than a *report
     doc* is processed.
 
-The *rivt project* folder structure is described :doc:`here </dv04-reports/folders>`
+The *rivt project* folder structure is described 
+:doc:`here. </dv04-reports/rv0401-folders>`
 
 
 **KEY**  

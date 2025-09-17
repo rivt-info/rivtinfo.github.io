@@ -31,7 +31,7 @@ tools and llbraries. The framework is described
 
 :doc:`This </dv01-intro/smallex>` is a small *rivt file* example. Larger
 examples are here. A search interface for discovering *rivt files* on 
-:doc:`GitHub is here <dv05-collab/ghsearch>`.
+:doc:`GitHub is here <dv05-collab/rv0502-ghsearch>`.
 
 
 .. raw:: html
@@ -48,5 +48,5 @@ rivt User Manual
     dv01-intro/dv01-summary.rst
     dv02-install/dv02-summary.rst
     dv03-markup/_dv03-markup.rst
-    dv04-reports/dv04-summary.rst
-    dv05-collab/dv05-summary.rst
+    dv04-reports/_dv04-reports.rst
+    dv05-collab/_dv05-collab.rst
