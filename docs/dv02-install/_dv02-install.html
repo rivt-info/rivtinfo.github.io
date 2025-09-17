@@ -451,20 +451,19 @@ downloaded and run from a
 <li><p>run a small test program built into <em>rivtlib</em>.
 The last line can be omitted to skip this step.</p></li>
 </ol>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">@echo on</span>
-<span class="go">REM install rivt from GitHub</span>
-<span class="go">uv pip install git+https://github.com/rivtlib-dev/rivtlib#subdirectory=src</span>
-<span class="go">REM copy test file to base directory</span>
-<span class="go">copy.venv\Lib\site-packages\rivtlib\scripts\rv0000-simple-doc.py</span>
-<span class="go">REM run test case</span>
-<span class="go">python rv0000-simple-doc.py</span>
+<div class="highlight-batch notranslate"><div class="highlight"><pre><span></span><span class="p">@</span><span class="k">echo</span> on
+<span class="c1">REM install rivt from GitHub</span>
+uv pip install git+https://github.com/rivtlib-dev/rivtlib#subdirectory=src
+<span class="c1">REM copy test file to base directory</span>
+<span class="k">copy</span>.venv\Lib\site-packages\rivtlib\scripts\rv0000-simple-doc.py
+<span class="c1">REM run test case</span>
+python rv0000-simple-doc.py
 </pre></div>
 </div>
 </section>
 <section id="install-rivt-system">
 <span id="rivt-system"></span><h2><strong>[03]</strong> Install <em>rivt-system</em><a class="headerlink" href="#install-rivt-system" title="Link to this heading">#</a></h2>
-<hr><br><p><strong>Method 2 - System</strong></p>
-<p>Use <a class="reference external" href="https://www.python.org/downloads/">Python installers</a> and
+<hr><br><p>Use <a class="reference external" href="https://www.python.org/downloads/">Python installers</a> and
 <a class="reference external" href="https://pypi.org/project/pip/">pip</a> to install packages from
 <a class="reference external" href="https://pypi.org/">PyPI</a>.  The requirements.txt file is here.</p>
 </section>

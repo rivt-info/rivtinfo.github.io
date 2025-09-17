@@ -58,14 +58,8 @@
 
     <hr>
 
-
-
-
 This method for installing *rivt* is recommended for most users. The procedure
 for Windows is shown below. Other OS installs are similar.
-
-
-
 
 **Step 1. Install uv**
 
@@ -109,7 +103,6 @@ can also be run to remove an existing environment and install a clean one. They
     .venv/scripts/activate
 
 
-
 **Step 3. Install rivt** 
 
 Within the *rivt-test1* environment type the following set of commands
@@ -121,7 +114,7 @@ downloaded and run from a
 #. run a small test program built into *rivtlib*.  
    The last line can be omitted to skip this step. 
 
-.. code-block:: console
+.. code-block:: batch
 
     @echo on
     REM install rivt from GitHub
@@ -145,7 +138,6 @@ downloaded and run from a
 
     <br>
 
-**Method 2 - System**
 
 Use `Python installers <https://www.python.org/downloads/>`_ and 
 `pip <https://pypi.org/project/pip/>`_ to install packages from 
