@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="../_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="../_static/favicon-32x32.png" type="image/png">
-    <title>4.1 - Files and Folders &#8212; Home</title>
+    <title>4.2 - Files and Folders &#8212; Home</title>
   
   
   
@@ -56,11 +56,11 @@
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'dv04-reports/rv0401-folders';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'dv04-reports/rv0402-folders';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="4.2 - Reports" href="rv0402-documents.html" />
-    <link rel="prev" title="4. Reports" href="_dv04-reports.html" />
+    <link rel="next" title="4.3 - Configuration Files" href="rv0403-settings.html" />
+    <link rel="prev" title="4.2 - Documents" href="rv0401-documents.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -313,8 +313,8 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">4.1 - Files and Folders</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rv0402-documents.html">4.2 - Reports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv0401-documents.html">4.2 - Documents</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">4.2 - Files and Folders</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0403-settings.html">4.3 - Configuration Files</a></li>
 </ul>
 </div>
@@ -359,7 +359,7 @@
     
     <li class="breadcrumb-item"><a href="_dv04-reports.html" class="nav-link">4. Reports</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">4.1 - Files and Folders</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">4.2 - Files and Folders</span></li>
   </ul>
 </nav>
 </div>
@@ -377,12 +377,12 @@
                 <article class="bd-article">
                   
   <section id="files-and-folders">
-<h1>4.1 - Files and Folders<a class="headerlink" href="#files-and-folders" title="Link to this heading">#</a></h1>
-<section id="doc-folders">
-<h2><strong>[01]</strong> Doc Folders<a class="headerlink" href="#doc-folders" title="Link to this heading">#</a></h2>
-<p>A <em>rivt file</em> is the basic unit of a rivt report. Its output is a <em>rivt doc</em>
-which is a subdivision in the report heirarchy. Each <em>rivt file</em> is
-identified with a <em>doc number</em> of the form:</p>
+<h1>4.2 - Files and Folders<a class="headerlink" href="#files-and-folders" title="Link to this heading">#</a></h1>
+<section id="project-folders">
+<h2><strong>[01]</strong> Project Folders<a class="headerlink" href="#project-folders" title="Link to this heading">#</a></h2>
+<p>A <em>rivt file</em> is the basic unit of a rivt report. Its output is a <em>rivt doc</em>, a
+subdivision in a report heirarchy. Each <em>rivt</em> and <em>doc</em> file is identified
+with a <em>doc number</em> of the form:</p>
 <blockquote>
 <div><p>[rvddss]-file-name.py</p>
 </div></blockquote>
@@ -390,12 +390,12 @@ identified with a <em>doc number</em> of the form:</p>
 <p class="topic-title">Note:</p>
 <ul class="simple">
 <li><p>Fixed prefixes are shown in brackets ([]).</p></li>
-<li><p>A single vertical bar (|) identifies a file or folder produced by the user.</p></li>
+<li><p>A single vertical bar (|) identifies files provided by the author.</p></li>
 <li><p>A double bar (||) identifies a file or folder written by rivt</p></li>
 </ul>
 </aside>
-<p>The top level collapsed folder structure looks like this:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[rivt]-Report-Label/          Project Folder
+<p>The top level folder structure is:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[rivt]-Project-Label/          Project Folder
 ├── [dv01-]divlabel/          division folder
 ├── [dv02-]divlabel/          division folder
 ├── [public]/                 public rivt files
@@ -405,7 +405,7 @@ identified with a <em>doc number</em> of the form:</p>
 </pre></div>
 </div>
 <p>When expanded it looks like this:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[rivt]-Report-Label/                 # Project Folder
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[rivt]-Project-Label/                 # Project Folder
     ├── [dv01-]divlabel/                  # div 01 folder
         ├── [rv0101-]doclabel1.py               | rivt file
         └── [rv0102-]doclabel2.py               | rivt file
@@ -550,20 +550,20 @@ over-rides are specified in the rivt-config.ini file.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="_dv04-reports.html"
+       href="rv0401-documents.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">4. Reports</p>
+        <p class="prev-next-title">4.2 - Documents</p>
       </div>
     </a>
     <a class="right-next"
-       href="rv0402-documents.html"
+       href="rv0403-settings.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">4.2 - Reports</p>
+        <p class="prev-next-title">4.3 - Configuration Files</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -586,7 +586,7 @@ over-rides are specified in the rivt-config.ini file.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#doc-folders"><strong>[01]</strong> Doc Folders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-folders"><strong>[01]</strong> Project Folders</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#folder-functions"><strong>[02]</strong> Folder Functions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#single-docs"><strong>[03]</strong> Single Docs</a></li>
 </ul>

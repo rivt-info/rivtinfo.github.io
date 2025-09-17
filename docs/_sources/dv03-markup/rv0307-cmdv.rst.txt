@@ -20,7 +20,7 @@ specified (relative to the project *source folder*) or specified with an alias:
     doc* is processed.
 
 The *rivt project* folder structure is described 
-:doc:`here. </dv04-reports/rv0401-folders>`
+:doc:`here. </dv04-reports/rv0402-folders>`
 
 
 **KEY**  

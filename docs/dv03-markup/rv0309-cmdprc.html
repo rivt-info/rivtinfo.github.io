@@ -387,21 +387,21 @@
   <section id="process-commands">
 <h1>3.10 <strong>Process</strong> Commands<a class="headerlink" href="#process-commands" title="Link to this heading">#</a></h1>
 <p><em>Process commands</em> control the process of generating and assembling <em>docs</em>. They
-do not directly generate <em>doc</em> content.</p>
-<p>Most commands have a <em>relative path</em> parameter with three modes:</p>
+do not directly generate content.</p>
+<p>Commands with a <em>path</em> parameter use three path aliases:</p>
 <blockquote>
-<div><p><em>rvsource</em> : when this value is provided <em>rivt</em> looks for the file in the
-division source directory. For example if the rivt file is in division 1
+<div><p><em>rvsource</em> : when this alias is provided <em>rivtlib</em> looks for the file in the
+division source directory. For example, if the rivt file is in division 1
 and the API function is <em>Insert</em> the subfolder <em>i01</em> in the <em>source</em> folder
 is searched.</p>
 <p><em>rvlocal</em> : when this value is provided <em>rivt</em> looks for the source file in
 the rivt file directory.</p>
 <p>specified source : a specific folder in the <em>source</em> subfolder may be
-provided. For example if <em>v02</em> is specified the <em>v02</em> folder in the
-<em>source</em> folder is searched.</p>
+provided. For example if the alias <em>i02</em> is specified the <em>i02</em> folder in
+the <em>source</em> folder is searched.</p>
 </div></blockquote>
 <p>Project folder organization is described
-<a class="reference internal" href="../dv04-reports/rv0401-folders.html"><span class="doc">here.</span></a></p>
+<a class="reference internal" href="../dv04-reports/rv0402-folders.html"><span class="doc">here.</span></a></p>
 <section id="key">
 <h2><strong>KEY</strong><a class="headerlink" href="#key" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
@@ -420,10 +420,10 @@ provided. For example if <em>v02</em> is specified the <em>v02</em> folder in th
 PDF, HTML</p>
 </aside>
 </section>
-<section id="doc-write-doc-file">
-<h2><strong>[02]</strong> | DOC |  - write doc file<a class="headerlink" href="#doc-write-doc-file" title="Link to this heading">#</a></h2>
+<section id="docs-write-doc-file">
+<h2><strong>[02]</strong> | DOCS |  - write doc file<a class="headerlink" href="#docs-write-doc-file" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| DOC | path |  txt; html; rpdf; tpdf</p>
+<p class="topic-title">| DOCS | path |  txt; html; rpdf; tpdf</p>
 <ul class="simple">
 <li><p>writes text, PDF or HTML files</p></li>
 <li><p>PDF, HTML, text</p></li>
@@ -482,7 +482,7 @@ PDF, HTML</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key"><strong>KEY</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#append-append-pdf-file"><strong>[01]</strong> | APPEND  | - append PDF file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#doc-write-doc-file"><strong>[02]</strong> | DOC |  - write doc file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docs-write-doc-file"><strong>[02]</strong> | DOCS |  - write doc file</a></li>
 </ul>
   </nav></div>
 

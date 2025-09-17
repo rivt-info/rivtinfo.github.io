@@ -10,9 +10,9 @@ API Function        Name             Purpose
 =============== =============== ===================================
 *rv.R(rs)*        Run               Run shell commands
 *rv.I(rs)*        Insert            Insert static sources 
-*rv.V(rs)*        Values            Calculate values
-*rv.T(rs)*        Tools             Functions and scripts
-*rv.D(rs)*        Docs              Write docs 
+*rv.V(rs)*        Value             Calculate values
+*rv.T(rs)*        Tool              Functions and scripts
+*rv.D(rs)*        Doc               Write docs 
 *rv.S(rs)*        Skip              Skip section
 *rv.Q(rs)*        Quit              Exit rivt 
 =============== =============== ===================================

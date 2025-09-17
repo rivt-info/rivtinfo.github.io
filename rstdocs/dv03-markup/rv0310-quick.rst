@@ -75,5 +75,5 @@ rv.T       (Rd) | LATEX | path | fname                                tex
 rv.T       (Rd) | PYTHON | path | fname                                py
 rv.T       (Rd) | QCAD   | path | fname                                js
 rv.D       (Wr) | APPEND | path | fname                               pdf
-rv.D       (Wr) | DOC | path | fname | rpdf; tpdf; txt; html      pdf, txt, html
+rv.D       (Wr) | DOCS | path | fname | rpdf; tpdf; txt; html      pdf, txt, html
 ========= ==================================================== ==================

@@ -2,12 +2,12 @@
 ===========================
 
 *Process commands* control the process of generating and assembling *docs*. They
-do not directly generate *doc* content.
+do not directly generate content.
 
-Most commands have a *relative path* parameter with three modes:
+Commands with a *path* parameter use three path aliases:
 
-    *rvsource* : when this value is provided *rivt* looks for the file in the
-    division source directory. For example if the rivt file is in division 1
+    *rvsource* : when this alias is provided *rivtlib* looks for the file in the
+    division source directory. For example, if the rivt file is in division 1
     and the API function is *Insert* the subfolder *i01* in the *source* folder
     is searched.
 
@@ -15,12 +15,12 @@ Most commands have a *relative path* parameter with three modes:
     the rivt file directory.
 
     specified source : a specific folder in the *source* subfolder may be
-    provided. For example if *v02* is specified the *v02* folder in the
-    *source* folder is searched.
+    provided. For example if the alias *i02* is specified the *i02* folder in
+    the *source* folder is searched.
 
 
 Project folder organization is described 
-:doc:`here. </dv04-reports/rv0401-folders>`
+:doc:`here. </dv04-reports/rv0402-folders>`
 
 
 **KEY**  
@@ -54,8 +54,8 @@ Project folder organization is described
 
    appends PDF file to *doc*
    PDF, HTML
-
-**[02]** | DOC |  - write doc file
+ 
+**[02]** | DOCS |  - write doc file
 -------------------------------------------
 
 .. raw:: html
@@ -63,7 +63,7 @@ Project folder organization is described
     <hr>
 
 
-.. topic:: | DOC | path |  txt; html; rpdf; tpdf
+.. topic:: | DOCS | path |  txt; html; rpdf; tpdf
 
     - writes text, PDF or HTML files
     - PDF, HTML, text

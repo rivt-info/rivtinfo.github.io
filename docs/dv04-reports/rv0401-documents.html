@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="../_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="../_static/favicon-32x32.png" type="image/png">
-    <title>4.2 - Reports &#8212; Home</title>
+    <title>4.2 - Documents &#8212; Home</title>
   
   
   
@@ -56,11 +56,11 @@
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'dv04-reports/rv0402-documents';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'dv04-reports/rv0401-documents';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="4.3 - Configuration Files" href="rv0403-settings.html" />
-    <link rel="prev" title="4.1 - Files and Folders" href="rv0401-folders.html" />
+    <link rel="next" title="4.2 - Files and Folders" href="rv0402-folders.html" />
+    <link rel="prev" title="4. Reports" href="_dv04-reports.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -309,8 +309,8 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="rv0401-folders.html">4.1 - Files and Folders</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">4.2 - Reports</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">4.2 - Documents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv0402-folders.html">4.2 - Files and Folders</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0403-settings.html">4.3 - Configuration Files</a></li>
 </ul>
 </div>
@@ -355,7 +355,7 @@
     
     <li class="breadcrumb-item"><a href="_dv04-reports.html" class="nav-link">4. Reports</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">4.2 - Reports</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">4.2 - Documents</span></li>
   </ul>
 </nav>
 </div>
@@ -372,8 +372,55 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="reports">
-<h1>4.2 - Reports<a class="headerlink" href="#reports" title="Link to this heading">#</a></h1>
+  <section id="documents">
+<h1>4.2 - Documents<a class="headerlink" href="#documents" title="Link to this heading">#</a></h1>
+<p><em>rivt files</em> and <em>source files</em> are typically stored in rivt <em>project folders</em>
+and subfolders. <em>Reports</em> are assembled from and written to files in the
+<em>project folder</em> which has the top level structure of:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[rivt]-Project-Label/          Project Folder
+├── [dv01-]divlabel/          division folder
+├── [dv02-]divlabel/          division folder
+
+...
+
+├── [public]/                 public rivt files
+├── [reports]/                reports and docs
+├── [source]/                 source files
+└── README.txt                text report
+</pre></div>
+</div>
+<p>A complete example of a <em>project folder</em> is <a class="reference internal" href="rv0402-folders.html"><span class="doc">here</span></a></p>
+<p><em>rivt files</em> are processed one at a time. Sources used in a <em>doc</em> are read
+from <em>source</em> subfolders. <em>Docs</em> that are part of <em>reports</em> are written to
+subfolders of the <em>reports</em> folder.</p>
+<p><strong>[01]</strong> Single Docs</p>
+<p>For a simple document that will not be part of a report, a <em>single doc</em> may
+also be published using only the local folder, without reference to the project
+folder. In this case all of the source files are read from, and <em>docs</em> are
+written to, the same folder as the <em>rivt file</em>.</p>
+<p>A <em>single doc</em> is published by including the following:</p>
+<ol class="arabic simple">
+<li><p>For all <em>commands</em> with a path, including | DOCS | ,the path is specified
+as <em>rvlocal</em>.</p></li>
+<li><p>For the <em>Value</em> API function (<em>rv.V</em>) add the <em>rvlocal</em> parameter to any
+other write parameters. Separate parameters with a comma.</p></li>
+<li><p>Ensure that any source files for the <em>doc</em> are in the local folder.</p></li>
+</ol>
+<p>Any <em>rivt file</em> can be converted to a <em>single doc</em> using the above steps. The
+text, PDF and HTML <em>docs</em> will be written to the local file using standard
+format settings built into <em>rivtlib</em>. The formatting is simpler than <em>report
+formatting</em> - which may be modified by the author on a per report basis.</p>
+<p><strong>[02]</strong> Reports</p>
+<p><em>Reports</em> are assembled from <em>docs</em>, which are produced by <em>rivt files</em> - each
+<em>rivt file</em> produces one <em>doc</em>. A typical workflow for writing <em>reports</em> is to
+start with a similar <em>report</em> and then edit it file by file to produce a group
+of <em>docs</em>.</p>
+<p>A <em>report</em> is generated by editing and running a script with a number of
+settings that specify <em>doc</em> assembly and naming overrides. A setting is
+provided to regenerate all <em>docs</em> before <em>report</em> assembly. The <em>report</em>
+written to a subfolder of the <em>reports</em> folder.</p>
+<p>A typical report generating script is shown below. Note that many aspects of
+report appearance are already determined at the <em>doc</em> level.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#! python</span>
 
 <span class="kn">from</span><span class="w"> </span><span class="nn">rivtlib.rvreport</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>  <span class="c1"># noqa: F403</span>
@@ -448,20 +495,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rv0401-folders.html"
+       href="_dv04-reports.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">4.1 - Files and Folders</p>
+        <p class="prev-next-title">4. Reports</p>
       </div>
     </a>
     <a class="right-next"
-       href="rv0403-settings.html"
+       href="rv0402-folders.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">4.3 - Configuration Files</p>
+        <p class="prev-next-title">4.2 - Files and Folders</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

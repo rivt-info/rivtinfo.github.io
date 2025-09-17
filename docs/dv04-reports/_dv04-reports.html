@@ -59,7 +59,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'dv04-reports/_dv04-reports';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="4.1 - Files and Folders" href="rv0401-folders.html" />
+    <link rel="next" title="4.2 - Documents" href="rv0401-documents.html" />
     <link rel="prev" title="3.12 Example" href="../dv03-markup/rv0311-example1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -309,8 +309,8 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="rv0401-folders.html">4.1 - Files and Folders</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rv0402-documents.html">4.2 - Reports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv0401-documents.html">4.2 - Documents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv0402-folders.html">4.2 - Files and Folders</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0403-settings.html">4.3 - Configuration Files</a></li>
 </ul>
 </div>
@@ -371,38 +371,44 @@
                   
   <section id="reports">
 <h1>4. Reports<a class="headerlink" href="#reports" title="Link to this heading">#</a></h1>
-<p><em>rivt reports</em> are organized from a collection of <em>docs</em> generated from <em>rivt
-files</em>. The structure of a <em>report</em> is inferred from</p>
+<p><em>rivt report</em> assembly and organization is inferred from:</p>
 <ol class="arabic simple">
-<li><p>The <em>rivt</em> file name</p></li>
-<li><p>The <em>rivt folder structure</em></p></li>
+<li><p>The <em>rivt file</em> and <em>doc</em> name</p></li>
+<li><p>The <em>rivt folder</em> name and structure</p></li>
 </ol>
 <aside class="topic">
 <p class="topic-title">Note:</p>
-<p>Brackets identify the fixed part of the file or folder labels -
-they are not included in an actual label.</p>
+<p>In the examples below, brackets identify the fixed part of the file or
+folder name and are not included in the actual name.</p>
 </aside>
-<p>A <em>rivt file</em> name has a <em>doc number</em> prefix of the form:</p>
+<p><strong>Files and Docs</strong></p>
+<p>A <em>rivt file</em> name has a <em>doc number</em> prefix:</p>
 <blockquote>
-<div><p>[rvddss]-file-name.py</p>
+<div><p>[rvddss-]file-name.py</p>
 </div></blockquote>
-<p>where dd is a two digit division number and ss is a two digit subdivision
-number e.g., rv0203-loads.py. Each <em>rivt file</em> genearates a <em>doc</em> as a
-subdivision in a <em>report</em>. Editing the <em>doc number</em> changes the report
-organization and default locations of sources used in a doc.</p>
-<p>A <em>rivt file</em> may also generate a <em>single doc</em> that uses only local files and
-is indenpendent of the folder structure.</p>
-<p>The <em>rivt folder structure organizes</em> rivt files, external source documents,
-settings and public/private files. The first level structure is shown below.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[rivt]-Report-Label/          Project Folder
+<p>where dd and ss are a two digit division and subdivision numbers respectively.
+e.g., rv0203-loads.py is rivt file 3 in division folder 2. Each <em>rivt file</em>
+outputs a <em>doc file</em> with the same <em>doc number</em> prefix. The <em>doc number</em> and
+<em>project folder structure</em> are used to assemble and organize reports.</p>
+<p><strong>Project Folders</strong></p>
+<p><em>rivt project folders</em> organize files used to generate <em>docs</em> and <em>reports</em>.
+The files include <em>rivt files</em>, external source documents, settings,
+and public/private files. The top level structure is shown below. The full
+structure is shown <a class="reference internal" href="rv0402-folders.html"><span class="doc">here</span></a></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[rivt]-Project-Label/      Project Folder
 ├── [dv01-]divlabel/          division folder
 ├── [dv02-]divlabel/          division folder
+
+...
+
 ├── [public]/                 public rivt files
 ├── [reports]/                reports and docs
 ├── [source]/                 source files
 └── README.txt                text report
 </pre></div>
 </div>
+<p>A <em>rivt file</em> may also generate a <em>single doc</em> that reads from and writes to the
+local <em>rivt file</em> folder, independent of the <em>project folders</em>.</p>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -427,11 +433,11 @@ settings and public/private files. The first level structure is shown below.</p>
       </div>
     </a>
     <a class="right-next"
-       href="rv0401-folders.html"
+       href="rv0401-documents.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">4.1 - Files and Folders</p>
+        <p class="prev-next-title">4.2 - Documents</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

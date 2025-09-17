@@ -29,9 +29,9 @@ API              Name             Purpose
 =============== =============== ===================================
 **rv.R(rs)**       Run               Run shell commands
 **rv.I(rs)**       Insert            Insert static resources 
-**rv.V(rs)**       Values            Calculate values
-**rv.T(rs)**       Tools             Run Python functions
-rv.D(rs)           Docs              Write docs 
+**rv.V(rs)**       Value             Calculate values
+**rv.T(rs)**       Tool              Run Python functions
+rv.D(rs)           Doc               Write docs 
 rv.S(rs)           Skip              Skip section
 rv.Q(rs)           Quit              Exit rivt 
 =============== =============== ===================================

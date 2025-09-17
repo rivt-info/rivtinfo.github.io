@@ -1,27 +1,26 @@
-4.1 - Files and Folders
+4.2 - Files and Folders
 ============================
 
-**[01]** Doc Folders 
+**[01]** Project Folders 
 -------------------------------
 
-A *rivt file* is the basic unit of a rivt report. Its output is a *rivt doc*
-which is a subdivision in the report heirarchy. Each *rivt file* is
-identified with a *doc number* of the form: 
+A *rivt file* is the basic unit of a rivt report. Its output is a *rivt doc*, a
+subdivision in a report heirarchy. Each *rivt* and *doc* file is identified
+with a *doc number* of the form:
 
     [rvddss]-file-name.py 
     
 .. topic:: Note: 
 
-
     - Fixed prefixes are shown in brackets ([]). 
-    - A single vertical bar (|) identifies a file or folder produced by the user. 
+    - A single vertical bar (|) identifies files provided by the author. 
     - A double bar (||) identifies a file or folder written by rivt 
 
-The top level collapsed folder structure looks like this:
+The top level folder structure is:
 
 .. code-block::
 
-    [rivt]-Report-Label/          Project Folder 
+    [rivt]-Project-Label/          Project Folder 
     ├── [dv01-]divlabel/          division folder
     ├── [dv02-]divlabel/          division folder                   
     ├── [public]/                 public rivt files
@@ -36,7 +35,7 @@ When expanded it looks like this:
 .. code-block:: 
 
 
-    [rivt]-Report-Label/                 # Project Folder
+    [rivt]-Project-Label/                 # Project Folder
         ├── [dv01-]divlabel/                  # div 01 folder
             ├── [rv0101-]doclabel1.py               | rivt file
             └── [rv0102-]doclabel2.py               | rivt file
