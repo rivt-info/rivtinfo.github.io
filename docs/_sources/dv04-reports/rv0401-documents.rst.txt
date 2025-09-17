@@ -6,17 +6,17 @@ and subfolders. *Reports* are assembled from and written to files in the
 *project folder* which has the top level structure of::
 
 .. code-block:: bash
-    
-    [rivt]-Project-Label/          Project Folder 
-    ├── [dv01-]divlabel/          division folder
-    ├── [dv02-]divlabel/          division folder
-    
-    ...
+ 
+    [rivt]-Project-Label/             Project Folder 
+        ├── [dv01-]divlabel/          division folder
+        ├── [dv02-]divlabel/          division folder
+        
+        ...
 
-    ├── [public]/                 public rivt files
-    ├── [reports]/                reports and docs
-    ├── [source]/                 source files      
-    └── README.txt                text report 
+        ├── [public]/                 public rivt files
+        ├── [reports]/                reports and docs
+        ├── [source]/                 source files      
+        └── README.txt                text report 
 
 
 A complete example of a *project folder* is :doc:`here </dv04-reports/rv0402-folders>`

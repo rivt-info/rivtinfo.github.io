@@ -4,13 +4,17 @@
 **[01]** rivt files
 --------------------
 
-A *rivt file* is the basic unit of a rivt report. Its output is a *rivt doc*, a
-subdivision in a report heirarchy. Each *rivt* and *doc* file is identified
+A *rivt file* is the basic unit of a rivt report. Its output is a *rivt doc* - a
+subdivision in a *report heirarchy*. Each *rivt* and *doc* file is identified
 with a *doc number* of the form:
 
 .. code-block:: bash
 
     [rvddss]-file-name.py 
+
+
+**[02]** Project Folders 
+-------------------------------
 
 
 .. topic:: Note: 
@@ -20,21 +24,18 @@ with a *doc number* of the form:
     - A double bar (||) identifies a file or folder written by rivt 
 
 
-
-**[02]** Project Folders 
--------------------------------
-
 The top level folder structure is:
 
 .. code-block:: bash
 
     [rivt]-Project-Label/          Project Folder 
-    ├── [dv01-]divlabel/          division folder
-    ├── [dv02-]divlabel/          division folder                   
-    ├── [public]/                 public rivt files
-    ├── [reports]/                reports and docs
-    ├── [source]/                 source files      
-    └── README.txt                text report 
+        ├── [dv01-]divlabel/          division folder
+        ├── [dv02-]divlabel/          division folder                   
+        ├── [public]/                 public rivt files
+        ├── [reports]/                reports and docs
+        ├── [source]/                 source files      
+        └── README.txt                text report 
+
 
 *rivt files* are organized into numbered division folders of the form:
 

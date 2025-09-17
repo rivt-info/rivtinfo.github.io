@@ -380,12 +380,15 @@
 <h1>4.2 - Files and Folders<a class="headerlink" href="#files-and-folders" title="Link to this heading">#</a></h1>
 <section id="rivt-files">
 <h2><strong>[01]</strong> rivt files<a class="headerlink" href="#rivt-files" title="Link to this heading">#</a></h2>
-<p>A <em>rivt file</em> is the basic unit of a rivt report. Its output is a <em>rivt doc</em>, a
-subdivision in a report heirarchy. Each <em>rivt</em> and <em>doc</em> file is identified
+<p>A <em>rivt file</em> is the basic unit of a rivt report. Its output is a <em>rivt doc</em> - a
+subdivision in a <em>report heirarchy</em>. Each <em>rivt</em> and <em>doc</em> file is identified
 with a <em>doc number</em> of the form:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rvddss<span class="o">]</span>-file-name.py
 </pre></div>
 </div>
+</section>
+<section id="project-folders">
+<h2><strong>[02]</strong> Project Folders<a class="headerlink" href="#project-folders" title="Link to this heading">#</a></h2>
 <aside class="topic">
 <p class="topic-title">Note:</p>
 <ul class="simple">
@@ -394,17 +397,14 @@ with a <em>doc number</em> of the form:</p>
 <li><p>A double bar (||) identifies a file or folder written by rivt</p></li>
 </ul>
 </aside>
-</section>
-<section id="project-folders">
-<h2><strong>[02]</strong> Project Folders<a class="headerlink" href="#project-folders" title="Link to this heading">#</a></h2>
 <p>The top level folder structure is:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt<span class="o">]</span>-Project-Label/<span class="w">          </span>Project<span class="w"> </span>Folder
-├──<span class="w"> </span><span class="o">[</span>dv01-<span class="o">]</span>divlabel/<span class="w">          </span>division<span class="w"> </span>folder
-├──<span class="w"> </span><span class="o">[</span>dv02-<span class="o">]</span>divlabel/<span class="w">          </span>division<span class="w"> </span>folder
-├──<span class="w"> </span><span class="o">[</span>public<span class="o">]</span>/<span class="w">                 </span>public<span class="w"> </span>rivt<span class="w"> </span>files
-├──<span class="w"> </span><span class="o">[</span>reports<span class="o">]</span>/<span class="w">                </span>reports<span class="w"> </span>and<span class="w"> </span>docs
-├──<span class="w"> </span><span class="o">[</span>source<span class="o">]</span>/<span class="w">                 </span><span class="nb">source</span><span class="w"> </span>files
-└──<span class="w"> </span>README.txt<span class="w">                </span>text<span class="w"> </span>report
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>dv01-<span class="o">]</span>divlabel/<span class="w">          </span>division<span class="w"> </span>folder
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>dv02-<span class="o">]</span>divlabel/<span class="w">          </span>division<span class="w"> </span>folder
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>public<span class="o">]</span>/<span class="w">                 </span>public<span class="w"> </span>rivt<span class="w"> </span>files
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>reports<span class="o">]</span>/<span class="w">                </span>reports<span class="w"> </span>and<span class="w"> </span>docs
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>source<span class="o">]</span>/<span class="w">                 </span><span class="nb">source</span><span class="w"> </span>files
+<span class="w">    </span>└──<span class="w"> </span>README.txt<span class="w">                </span>text<span class="w"> </span>report
 </pre></div>
 </div>
 <p><em>rivt files</em> are organized into numbered division folders of the form:</p>
