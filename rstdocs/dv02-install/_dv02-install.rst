@@ -51,7 +51,7 @@
 
 .. _rivt-uv:
 
-**[02]** Install *uv-rivt*
+**[02]** Install *rivt-uv*
 ----------------------------------
 
 .. raw:: html
@@ -88,7 +88,7 @@ can also be run to remove an existing environment and install a clean one. They
 #. remove any prior existing environment and directory
 #. create a new environment and activates it
 
-.. code-block:: console
+.. code-block:: bash
 
     @echo on
     REM go to home directory
@@ -134,7 +134,7 @@ downloaded and run from a
 
 .. _rivt-system:
 
-**[03]** Install *system-rivt*
+**[03]** Install *rivt-system*
 ----------------------------------
 
 .. raw:: html

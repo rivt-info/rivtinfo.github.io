@@ -402,8 +402,8 @@ control and diagramming.</p>
 <p>A single folder, portable version of <em>rivt</em> integrated with <em>VSCode</em>.</p>
 </aside>
 <hr></section>
-<section id="install-uv-rivt">
-<span id="rivt-uv"></span><h2><strong>[02]</strong> Install <em>uv-rivt</em><a class="headerlink" href="#install-uv-rivt" title="Link to this heading">#</a></h2>
+<section id="install-rivt-uv">
+<span id="rivt-uv"></span><h2><strong>[02]</strong> Install <em>rivt-uv</em><a class="headerlink" href="#install-rivt-uv" title="Link to this heading">#</a></h2>
 <hr><p>This method for installing <em>rivt</em> is recommended for most users. The procedure
 for Windows is shown below. Other OS installs are similar.</p>
 <p><strong>Step 1. Install uv</strong></p>
@@ -422,23 +422,23 @@ can also be run to remove an existing environment and install a clean one. They<
 <li><p>remove any prior existing environment and directory</p></li>
 <li><p>create a new environment and activates it</p></li>
 </ol>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">@echo on</span>
-<span class="go">REM go to home directory</span>
-<span class="go">cd %HOMEPATH%\</span>
-<span class="go">REM double check deactivation for dev purposes</span>
-<span class="go">uv deactivate</span>
-<span class="go">REM ensure check that the old install is deleted</span>
-<span class="go">rmdir /s /q rivt-test1</span>
-<span class="go">REM clean cache for dev purposes</span>
-<span class="go">uv cache clean</span>
-<span class="go">REM set up venv</span>
-<span class="go">mkdir rivt-test1</span>
-<span class="go">REM change directory</span>
-<span class="go">cd rivt-test1</span>
-<span class="go">REM make venv</span>
-<span class="go">uv venv</span>
-<span class="go">REM activate venv</span>
-<span class="go">.venv/scripts/activate</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>@echo<span class="w"> </span>on
+REM<span class="w"> </span>go<span class="w"> </span>to<span class="w"> </span>home<span class="w"> </span>directory
+<span class="nb">cd</span><span class="w"> </span>%HOMEPATH%<span class="se">\</span>
+REM<span class="w"> </span>double<span class="w"> </span>check<span class="w"> </span>deactivation<span class="w"> </span><span class="k">for</span><span class="w"> </span>dev<span class="w"> </span>purposes
+uv<span class="w"> </span>deactivate
+REM<span class="w"> </span>ensure<span class="w"> </span>check<span class="w"> </span>that<span class="w"> </span>the<span class="w"> </span>old<span class="w"> </span>install<span class="w"> </span>is<span class="w"> </span>deleted
+rmdir<span class="w"> </span>/s<span class="w"> </span>/q<span class="w"> </span>rivt-test1
+REM<span class="w"> </span>clean<span class="w"> </span>cache<span class="w"> </span><span class="k">for</span><span class="w"> </span>dev<span class="w"> </span>purposes
+uv<span class="w"> </span>cache<span class="w"> </span>clean
+REM<span class="w"> </span><span class="nb">set</span><span class="w"> </span>up<span class="w"> </span>venv
+mkdir<span class="w"> </span>rivt-test1
+REM<span class="w"> </span>change<span class="w"> </span>directory
+<span class="nb">cd</span><span class="w"> </span>rivt-test1
+REM<span class="w"> </span>make<span class="w"> </span>venv
+uv<span class="w"> </span>venv
+REM<span class="w"> </span>activate<span class="w"> </span>venv
+.venv/scripts/activate
 </pre></div>
 </div>
 <p><strong>Step 3. Install rivt</strong></p>
@@ -461,8 +461,8 @@ The last line can be omitted to skip this step.</p></li>
 </pre></div>
 </div>
 </section>
-<section id="install-system-rivt">
-<span id="rivt-system"></span><h2><strong>[03]</strong> Install <em>system-rivt</em><a class="headerlink" href="#install-system-rivt" title="Link to this heading">#</a></h2>
+<section id="install-rivt-system">
+<span id="rivt-system"></span><h2><strong>[03]</strong> Install <em>rivt-system</em><a class="headerlink" href="#install-rivt-system" title="Link to this heading">#</a></h2>
 <hr><br><p><strong>Method 2 - System</strong></p>
 <p>Use <a class="reference external" href="https://www.python.org/downloads/">Python installers</a> and
 <a class="reference external" href="https://pypi.org/project/pip/">pip</a> to install packages from
@@ -547,8 +547,8 @@ including libraries and extensions. It can be downloaded here.</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-types"><strong>[01]</strong> Installation types</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-uv-rivt"><strong>[02]</strong> Install <em>uv-rivt</em></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-system-rivt"><strong>[03]</strong> Install <em>system-rivt</em></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-rivt-uv"><strong>[02]</strong> Install <em>rivt-uv</em></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-rivt-system"><strong>[03]</strong> Install <em>rivt-system</em></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-rivt-framework"><strong>[04]</strong> Install <em>rivt framework</em></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-rivt-zip"><strong>[04]</strong> Install <em>rivt.zip</em></a></li>
 </ul>
