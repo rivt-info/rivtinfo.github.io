@@ -422,22 +422,22 @@ can also be run to remove an existing environment and install a clean one. They<
 <li><p>remove any prior existing environment and directory</p></li>
 <li><p>create a new environment and activates it</p></li>
 </ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>@echo<span class="w"> </span>on
-REM<span class="w"> </span>go<span class="w"> </span>to<span class="w"> </span>home<span class="w"> </span>directory
-<span class="nb">cd</span><span class="w"> </span>%HOMEPATH%<span class="se">\</span>
-REM<span class="w"> </span>double<span class="w"> </span>check<span class="w"> </span>deactivation<span class="w"> </span><span class="k">for</span><span class="w"> </span>dev<span class="w"> </span>purposes
-uv<span class="w"> </span>deactivate
-REM<span class="w"> </span>ensure<span class="w"> </span>check<span class="w"> </span>that<span class="w"> </span>the<span class="w"> </span>old<span class="w"> </span>install<span class="w"> </span>is<span class="w"> </span>deleted
-rmdir<span class="w"> </span>/s<span class="w"> </span>/q<span class="w"> </span>rivt-test1
-REM<span class="w"> </span>clean<span class="w"> </span>cache<span class="w"> </span><span class="k">for</span><span class="w"> </span>dev<span class="w"> </span>purposes
-uv<span class="w"> </span>cache<span class="w"> </span>clean
-REM<span class="w"> </span><span class="nb">set</span><span class="w"> </span>up<span class="w"> </span>venv
-mkdir<span class="w"> </span>rivt-test1
-REM<span class="w"> </span>change<span class="w"> </span>directory
-<span class="nb">cd</span><span class="w"> </span>rivt-test1
-REM<span class="w"> </span>make<span class="w"> </span>venv
-uv<span class="w"> </span>venv
-REM<span class="w"> </span>activate<span class="w"> </span>venv
+<div class="highlight-batch notranslate"><div class="highlight"><pre><span></span><span class="p">@</span><span class="k">echo</span> on
+<span class="c1">REM go to home directory</span>
+<span class="k">cd</span> <span class="nv">%HOMEPATH%</span>\
+<span class="c1">REM double check deactivation for dev purposes</span>
+uv deactivate
+<span class="c1">REM ensure check that the old install is deleted</span>
+<span class="k">rmdir</span> /s /q rivt-test1
+<span class="c1">REM clean cache for dev purposes</span>
+uv cache clean
+<span class="c1">REM set up venv</span>
+<span class="k">mkdir</span> rivt-test1
+<span class="c1">REM change directory</span>
+<span class="k">cd</span> rivt-test1
+<span class="c1">REM make venv</span>
+uv venv
+<span class="c1">REM activate venv</span>
 .venv/scripts/activate
 </pre></div>
 </div>

@@ -88,7 +88,7 @@ can also be run to remove an existing environment and install a clean one. They
 #. remove any prior existing environment and directory
 #. create a new environment and activates it
 
-.. code-block:: bash
+.. code-block:: batch
 
     @echo on
     REM go to home directory
