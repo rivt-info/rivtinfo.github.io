@@ -9,18 +9,23 @@
 
     <hr>
 
-.. topic:: *rivt* (see :ref:`rivt-spot`)
+.. topic:: *rivt* 
 
     *rivt* is a Python project that includes `rivtlib <https://www.rivt.info>`_
     and other :doc:`Python packages </dv02-install/python>`.  When *rivt* 
     is installed *rivt docs and reports* may be edited and published 
     using a text editor.
 
+    See :ref:`rivt-uv <rivt-uv>` for uv install
+    
+    See :ref:`rivt-system <rivt-system>` for system install  
+
 .. raw:: html
 
-    <br>
+    <hr>
 
-.. topic:: *rivt framework* (see :ref:`rivtframe-spot`)
+
+.. topic:: *rivt framework* 
 
     The *rivt framework* includes *rivt* and additional programs installed
     separately. It includes important productiviy tools for editing, document
@@ -33,23 +38,33 @@
 
 .. raw:: html
 
-    <br>
+    <hr>
 
-.. topic:: *rivt.zip* (see :ref:`rivtzip-spot`)
+.. topic:: *rivt.zip* 
 
     A single folder, portable version of *rivt* integrated with *VSCode*.
-    
-.. _rivt-spot:
 
-**[02]** Install uv *rivt*
+.. raw:: html
+
+    <hr>
+
+
+.. _rivt-uv:
+
+**[02]** Install *uv-rivt*
 ----------------------------------
 
 .. raw:: html
 
     <hr>
 
+
+
+
 This method for installing *rivt* is recommended for most users. The procedure
 for Windows is shown below. Other OS installs are similar.
+
+
 
 
 **Step 1. Install uv**
@@ -117,7 +132,9 @@ downloaded and run from a
     python rv0000-simple-doc.py
 
 
-**[03]** Install System *rivt*
+.. _rivt-system:
+
+**[03]** Install *system-rivt*
 ----------------------------------
 
 .. raw:: html
@@ -135,7 +152,6 @@ Use `Python installers <https://www.python.org/downloads/>`_ and
 `PyPI <https://pypi.org/>`_.  The requirements.txt file is here. 
 
 
-.. _rivtframe-spot:
 
 **[04]** Install *rivt framework*
 ------------------------------------------
@@ -155,7 +171,6 @@ The *rivt framework* includes installation of the following programs:
 
 #. `QCAD <https://qcad.io/en/>`_ 
 
-.. _rivtzip-spot:
 
 **[04]** Install *rivt.zip*
 --------------------------------------------------
