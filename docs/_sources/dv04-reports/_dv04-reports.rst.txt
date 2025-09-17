@@ -15,7 +15,7 @@ The assembly and organization of a *rivt report* is inferred from:
 
 A *rivt file* name has a *doc number* prefix:
 
-        [rvddss-]file-name.py
+    [rvddss-]file-name.py
     
 where dd and ss are a two digit division and subdivision numbers respectively.
 e.g., rv0203-loads.py is rivt file 3 in division folder 2. Each *rivt file*
@@ -29,7 +29,7 @@ The files include *rivt files*, external source documents, settings,
 and public/private files. The top level structure is shown below. The full
 structure is shown :doc:`here</dv04-reports/rv0402-folders>`
 
-.. code-block:: markdown
+.. code-block:: bash
 
     [rivt]-Project-Label/             Project Folder 
         ├── [dv01-]divlabel/          division folder
