@@ -8,13 +8,14 @@ argument to *rivt* API functions.
 =============== =============== ===================================
 API Function        Name             Purpose
 =============== =============== ===================================
-*rv.R(rs)*        Run               Run shell commands
-*rv.I(rs)*        Insert            Insert static sources 
-*rv.V(rs)*        Value             Calculate values
-*rv.T(rs)*        Tool              Functions and scripts
-*rv.D(rs)*        Doc               Write docs 
-*rv.S(rs)*        Skip              Skip section
-*rv.Q(rs)*        Quit              Exit rivt 
+rv.R(rs)         Run               Run shell commands
+rv.I(rs)         Insert            Insert static sources 
+rv.V(rs)         Value             Calculate values
+rv.T(rs)         Tool              Functions and scripts
+rv.D(rs)         Doc               Write docs
+rv.M(rs)         Meta              Meta data for rivt file 
+rv.S(rs)         Skip              Skip section
+rv.Q(rs)         Quit              Exit rivt 
 =============== =============== ===================================
 
 Each API function starts in the first column (Python syntax) and defines a *doc
@@ -90,7 +91,7 @@ separately.
 **[03]** Tags and Commands
 ----------------------------
 
-:doc:`Tags </dv03-markup/rv0310-quick>`
+:doc:`Tags </dv03-markup/rv0312-quick>`
 
 *line tags* format a line of text and are denoted with _[TAG], usually at the
 end of the line. *Block tags* format a block of text that begin with _[[TAG]]
@@ -102,7 +103,7 @@ with _[**TAG**], typically added at the end of the line.
 *Block tags* evaluate a multi-line text block that starts
 with _[[**TAG**]] and ends with _[[**Q**]].
 
-:doc:`Commands </dv03-markup/rv0310-quick>`
+:doc:`Commands </dv03-markup/rv0312-quick>`
 
 *rivt commands* read and write external files and assign values to variables.
 They typically start in the first column with a vertical bar ( | ) followed by
@@ -110,8 +111,8 @@ the command name, file path and parameters.
 
 *Commands* read and write files and assign values to variables. They start in
 the first column with a vertical bar, followed by the command name, the
-relative file path, file path and parameters. The exceptions are the assign (=)
-and define (:=) commands, related to equations.
+relative file path, file path and parameters. The exceptions are the equations
+assign (=) and define (:=) commands.
 
 
 .. toctree::
@@ -122,10 +123,11 @@ and define (:=) commands, related to equations.
     rv0302-tagi.rst
     rv0303-tagv.rst
     rv0304-tagt.rst
-    rv0305-cmdr.rst
-    rv0306-cmdi.rst
-    rv0307-cmdv.rst
-    rv0308-cmdt.rst
-    rv0309-cmdprc.rst
-    rv0310-quick.rst
+    rv0305-tagm.rst
+    rv0306-cmdr.rst
+    rv0307-cmdi.rst
+    rv0308-cmdv.rst
+    rv0309-cmdt.rst
+    rv0310-cmdd.rst
     rv0311-example1.rst
+    rv0312-quick.rst

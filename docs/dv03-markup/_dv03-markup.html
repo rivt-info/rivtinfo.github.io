@@ -317,13 +317,14 @@
 <li class="toctree-l1"><a class="reference internal" href="rv0302-tagi.html">3.3 Tags in [I]nsert</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0303-tagv.html">3.4 Tags in [V]alues</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0304-tagt.html">3.5 Tags in [T]ools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rv0305-cmdr.html">3.6 Commands in [R]un</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rv0306-cmdi.html">3.7 Commands in [I]nsert</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rv0307-cmdv.html">3.8 Commands in [V]alues</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rv0308-cmdt.html">3.9 Commands in [T]ools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rv0309-cmdprc.html">3.10 <strong>Process</strong> Commands</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rv0310-quick.html">3.11 Quick Summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv0305-tagm.html">3.05 Tags in [M]eta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv0306-cmdr.html">3.6 Commands in [R]un</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv0307-cmdi.html">3.7 Commands in [I]nsert</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv0308-cmdv.html">3.8 Commands in [V]alues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv0309-cmdt.html">3.9 Commands in [T]ools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv0310-cmdd.html">3.10 Commands in [D]oc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0311-example1.html">3.12 Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv0312-quick.html">3.11 Quick Summary</a></li>
 </ul>
 </div>
 </nav></div>
@@ -394,31 +395,35 @@ argument to <em>rivt</em> API functions.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><em>rv.R(rs)</em></p></td>
+<tr class="row-even"><td><p>rv.R(rs)</p></td>
 <td><p>Run</p></td>
 <td><p>Run shell commands</p></td>
 </tr>
-<tr class="row-odd"><td><p><em>rv.I(rs)</em></p></td>
+<tr class="row-odd"><td><p>rv.I(rs)</p></td>
 <td><p>Insert</p></td>
 <td><p>Insert static sources</p></td>
 </tr>
-<tr class="row-even"><td><p><em>rv.V(rs)</em></p></td>
+<tr class="row-even"><td><p>rv.V(rs)</p></td>
 <td><p>Value</p></td>
 <td><p>Calculate values</p></td>
 </tr>
-<tr class="row-odd"><td><p><em>rv.T(rs)</em></p></td>
+<tr class="row-odd"><td><p>rv.T(rs)</p></td>
 <td><p>Tool</p></td>
 <td><p>Functions and scripts</p></td>
 </tr>
-<tr class="row-even"><td><p><em>rv.D(rs)</em></p></td>
+<tr class="row-even"><td><p>rv.D(rs)</p></td>
 <td><p>Doc</p></td>
 <td><p>Write docs</p></td>
 </tr>
-<tr class="row-odd"><td><p><em>rv.S(rs)</em></p></td>
+<tr class="row-odd"><td><p>rv.M(rs)</p></td>
+<td><p>Meta</p></td>
+<td><p>Meta data for rivt file</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.S(rs)</p></td>
 <td><p>Skip</p></td>
 <td><p>Skip section</p></td>
 </tr>
-<tr class="row-even"><td><p><em>rv.Q(rs)</em></p></td>
+<tr class="row-odd"><td><p>rv.Q(rs)</p></td>
 <td><p>Quit</p></td>
 <td><p>Exit rivt</p></td>
 </tr>
@@ -503,7 +508,7 @@ separately.</p>
 </section>
 <section id="tags-and-commands">
 <h2><strong>[03]</strong> Tags and Commands<a class="headerlink" href="#tags-and-commands" title="Link to this heading">#</a></h2>
-<p><a class="reference internal" href="rv0310-quick.html"><span class="doc">Tags</span></a></p>
+<p><a class="reference internal" href="rv0312-quick.html"><span class="doc">Tags</span></a></p>
 <p><em>line tags</em> format a line of text and are denoted with _[TAG], usually at the
 end of the line. <em>Block tags</em> format a block of text that begin with _[[TAG]]
 on the first line and end with _[[Q]] after the last line.</p>
@@ -511,14 +516,14 @@ on the first line and end with _[[Q]] after the last line.</p>
 with _[<strong>TAG</strong>], typically added at the end of the line.</p>
 <p><em>Block tags</em> evaluate a multi-line text block that starts
 with _[[<strong>TAG</strong>]] and ends with _[[<strong>Q</strong>]].</p>
-<p><a class="reference internal" href="rv0310-quick.html"><span class="doc">Commands</span></a></p>
+<p><a class="reference internal" href="rv0312-quick.html"><span class="doc">Commands</span></a></p>
 <p><em>rivt commands</em> read and write external files and assign values to variables.
 They typically start in the first column with a vertical bar ( | ) followed by
 the command name, file path and parameters.</p>
 <p><em>Commands</em> read and write files and assign values to variables. They start in
 the first column with a vertical bar, followed by the command name, the
-relative file path, file path and parameters. The exceptions are the assign (=)
-and define (:=) commands, related to equations.</p>
+relative file path, file path and parameters. The exceptions are the equations
+assign (=) and define (:=) commands.</p>
 <div class="toctree-wrapper compound">
 </div>
 </section>

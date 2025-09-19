@@ -381,13 +381,12 @@
 <h1>1.1 API<a class="headerlink" href="#api" title="Link to this heading">#</a></h1>
 <section id="import-rivtlib">
 <h2><strong>[01]</strong> import rivtlib<a class="headerlink" href="#import-rivtlib" title="Link to this heading">#</a></h2>
-<hr><p>Python combines new functions and libraries using <em>import</em> statements
-and <em>namespaces</em>. A <strong>rivt</strong> file is a Python file (.py) that <em>imports</em> the
-<strong>rivtlib</strong> library and assigns the <em>namespace</em> <strong>rv</strong>:</p>
+<hr><p>A <em>rivt file</em> is a Python file (.py) that <em>imports</em> the <strong>rivtlib</strong> library
+into the <em>namespace</em> <strong>rv</strong>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
 </pre></div>
 </div>
-<p>rivtlib exposes 7 API functions which may be run in a script or interactively
+<p>rivtlib includes 8 API functions which may be run in a script or interactively
 as notebook cells in an IDE (e.g. VSCode).</p>
 </section>
 <section id="api-functions">
@@ -400,19 +399,19 @@ as notebook cells in an IDE (e.g. VSCode).</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><strong>rv.R(rs)</strong></p></td>
+<tr class="row-even"><td><p>rv.R(rs)</p></td>
 <td><p>Run</p></td>
 <td><p>Run shell commands</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>rv.I(rs)</strong></p></td>
+<tr class="row-odd"><td><p>rv.I(rs)</p></td>
 <td><p>Insert</p></td>
 <td><p>Insert static resources</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>rv.V(rs)</strong></p></td>
+<tr class="row-even"><td><p>rv.V(rs)</p></td>
 <td><p>Value</p></td>
 <td><p>Calculate values</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>rv.T(rs)</strong></p></td>
+<tr class="row-odd"><td><p>rv.T(rs)</p></td>
 <td><p>Tool</p></td>
 <td><p>Run Python functions</p></td>
 </tr>
@@ -420,28 +419,31 @@ as notebook cells in an IDE (e.g. VSCode).</p>
 <td><p>Doc</p></td>
 <td><p>Write docs</p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.S(rs)</p></td>
+<tr class="row-odd"><td><p>rv.M(rs)</p></td>
+<td><p>Meta</p></td>
+<td><p>Meta data</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.S(rs)</p></td>
 <td><p>Skip</p></td>
 <td><p>Skip section</p></td>
 </tr>
-<tr class="row-even"><td><p>rv.Q(rs)</p></td>
+<tr class="row-odd"><td><p>rv.Q(rs)</p></td>
 <td><p>Quit</p></td>
 <td><p>Exit rivt</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>API functions may be arbitrarily ordered. Each function evaluates a <em>rivt
-string</em> (a triple-quoted string argument, rS).</p>
-<p>The first four functions in the table (<strong>R I V T</strong>) output formatted utf-8 text
-to the terminal and generate <em>doc</em> content.</p>
-<p>The last three functions (<strong>D S Q</strong>) process files or sections. The <em>Docs</em>
-function writes a doc as a text, PDF or HTML file. The <em>Skip</em> and <em>Quit</em>
-functions are used primarily in interactive editing and processing.</p>
+<p>Each function evaluates a triple-quoted string argument (rS). The first four
+functions (<em>R I V T</em>) output formatted utf-8 text to the terminal and generate
+<em>doc</em> content.</p>
+<p>The last four functions (<em>D M S Q</em>) are related to processing. The <em>Doc</em>
+function writes text, PDF or HTML <em>doc</em> files. The <em>Meta</em> The <em>Skip</em> and <em>Quit</em>
+functions are used for interactive editing, debuggings and version control.</p>
 </section>
-<section id="rivt-string">
-<h2><strong>[03]</strong> rivt string<a class="headerlink" href="#rivt-string" title="Link to this heading">#</a></h2>
-<p>An API function starts in the first column. Its <em>rivt string</em> argument is
+<section id="api-argument">
+<h2><strong>[03]</strong> API argument<a class="headerlink" href="#api-argument" title="Link to this heading">#</a></h2>
+<p>An API function starts in the first column. Its argument is a <em>rivt string</em>
 enclosed in triple quotes and begins with a header that specifies section
 labeling and processing. The section content follows the header on subsequent
 lines and is indented four spaces for legibility and section folding.</p>
@@ -471,12 +473,10 @@ advantage is extensive control over the Doc appearance.</p>
 </section>
 <section id="command-line">
 <h2><strong>[05]</strong> Command Line<a class="headerlink" href="#command-line" title="Link to this heading">#</a></h2>
-<p>rivtlib is generally run in an IDE. If run from the command line the command
-takes one of two forms depending on whether the file is part of a report. If
-part of a report the form is:</p>
-<blockquote>
-<div><p>python -m rivtlib rvddss-filename.py</p>
-</div></blockquote>
+<p>rivtlib is generally run in an IDE. If run from the command line the command is</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>rvddss-filename.py
+</pre></div>
+</div>
 <p>where <em>rvddss-</em> is the doc number and*dd* and <em>ss</em> are integers identifying the
 report division and subdivision respectively.</p>
 </section>
@@ -531,7 +531,7 @@ report division and subdivision respectively.</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import-rivtlib"><strong>[01]</strong> import rivtlib</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api-functions"><strong>[02]</strong> API functions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-string"><strong>[03]</strong> rivt string</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api-argument"><strong>[03]</strong> API argument</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docs"><strong>[04]</strong> Docs</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#command-line"><strong>[05]</strong> Command Line</a></li>
 </ul>

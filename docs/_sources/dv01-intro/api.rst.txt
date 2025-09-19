@@ -8,13 +8,12 @@
 
     <hr>
 
-Python combines new functions and libraries using *import* statements
-and *namespaces*. A **rivt** file is a Python file (.py) that *imports* the
-**rivtlib** library and assigns the *namespace* **rv**::
+A *rivt file* is a Python file (.py) that *imports* the **rivtlib** library
+into the *namespace* **rv**::
 
     import rivtlib.rvapi as rv
 
-rivtlib exposes 7 API functions which may be run in a script or interactively
+rivtlib includes 8 API functions which may be run in a script or interactively
 as notebook cells in an IDE (e.g. VSCode).
 
 **[02]** API functions
@@ -27,30 +26,28 @@ as notebook cells in an IDE (e.g. VSCode).
 =============== =============== ===================================
 API              Name             Purpose
 =============== =============== ===================================
-**rv.R(rs)**       Run               Run shell commands
-**rv.I(rs)**       Insert            Insert static resources 
-**rv.V(rs)**       Value             Calculate values
-**rv.T(rs)**       Tool              Run Python functions
+rv.R(rs)           Run               Run shell commands
+rv.I(rs)           Insert            Insert static resources 
+rv.V(rs)           Value             Calculate values
+rv.T(rs)           Tool              Run Python functions
 rv.D(rs)           Doc               Write docs 
+rv.M(rs)           Meta              Meta data 
 rv.S(rs)           Skip              Skip section
 rv.Q(rs)           Quit              Exit rivt 
 =============== =============== ===================================
 
-API functions may be arbitrarily ordered. Each function evaluates a *rivt
-string* (a triple-quoted string argument, rS). 
+Each function evaluates a triple-quoted string argument (rS). The first four
+functions (*R I V T*) output formatted utf-8 text to the terminal and generate
+*doc* content.
 
-The first four functions in the table (**R I V T**) output formatted utf-8 text
-to the terminal and generate *doc* content. 
+The last four functions (*D M S Q*) are related to processing. The *Doc*
+function writes text, PDF or HTML *doc* files. The *Meta* The *Skip* and *Quit*
+functions are used for interactive editing, debuggings and version control.
 
-The last three functions (**D S Q**) process files or sections. The *Docs*
-function writes a doc as a text, PDF or HTML file. The *Skip* and *Quit*
-functions are used primarily in interactive editing and processing.
-
-
-**[03]** rivt string
+**[03]** API argument
 ----------------------------
 
-An API function starts in the first column. Its *rivt string* argument is
+An API function starts in the first column. Its argument is a *rivt string* 
 enclosed in triple quotes and begins with a header that specifies section
 labeling and processing. The section content follows the header on subsequent
 lines and is indented four spaces for legibility and section folding.
@@ -86,11 +83,11 @@ advantage is extensive control over the Doc appearance.
 **[05]** Command Line 
 ------------------------
 
-rivtlib is generally run in an IDE. If run from the command line the command
-takes one of two forms depending on whether the file is part of a report. If
-part of a report the form is:
+rivtlib is generally run in an IDE. If run from the command line the command is
 
-    python -m rivtlib rvddss-filename.py
+.. code-block:: bash
+
+    python rvddss-filename.py
 
 where *rvddss-* is the doc number and*dd* and *ss* are integers identifying the
 report division and subdivision respectively. 

@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="../_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="../_static/favicon-32x32.png" type="image/png">
-    <title>3.5 Tags in [T]ools &#8212; Home</title>
+    <title>3.8 Commands in [V]alues &#8212; Home</title>
   
   
   
@@ -56,11 +56,11 @@
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'dv03-markup/rv0304-tagt';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'dv03-markup/rv0308-cmdv';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="3.05 Tags in [M]eta" href="rv0305-tagm.html" />
-    <link rel="prev" title="3.4 Tags in [V]alues" href="rv0303-tagv.html" />
+    <link rel="next" title="3.9 Commands in [T]ools" href="rv0309-cmdt.html" />
+    <link rel="prev" title="3.7 Commands in [I]nsert" href="rv0307-cmdi.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -316,11 +316,11 @@
 <li class="toctree-l1"><a class="reference internal" href="rv0301-tagr.html">3.1 Tags in [R]un</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0302-tagi.html">3.3 Tags in [I]nsert</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0303-tagv.html">3.4 Tags in [V]alues</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">3.5 Tags in [T]ools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv0304-tagt.html">3.5 Tags in [T]ools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0305-tagm.html">3.05 Tags in [M]eta</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0306-cmdr.html">3.6 Commands in [R]un</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0307-cmdi.html">3.7 Commands in [I]nsert</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rv0308-cmdv.html">3.8 Commands in [V]alues</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">3.8 Commands in [V]alues</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0309-cmdt.html">3.9 Commands in [T]ools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0310-cmdd.html">3.10 Commands in [D]oc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0311-example1.html">3.12 Example</a></li>
@@ -368,7 +368,7 @@
     
     <li class="breadcrumb-item"><a href="_dv03-markup.html" class="nav-link">3. Markup</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">3.5 Tags in [T]ools</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">3.8 Commands in [V]alues</span></li>
   </ul>
 </nav>
 </div>
@@ -385,65 +385,93 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="tags-in-t-ools">
-<h1>3.5 Tags in [T]ools<a class="headerlink" href="#tags-in-t-ools" title="Link to this heading">#</a></h1>
-<p><em>line tags</em> format a line of text and are denoted with _[TAG], usually at the
-end of the line. <em>Block tags</em> format a block of text that begin with _[[TAG]]
-on the first line and end with _[[Q]] after the last line.</p>
+  <section id="commands-in-v-alues">
+<h1>3.8 Commands in [V]alues<a class="headerlink" href="#commands-in-v-alues" title="Link to this heading">#</a></h1>
+<p><em>rivt commands</em> read and write external files and assign values to variables.
+They typically start in the first column with a vertical bar ( | ) followed by
+the command name and parameters. The exceptions to this pattern are the
+assignment ( = ) and definition ( := ) commands which are used to assign values
+and evaluate equations.</p>
+<p>In the syntax description below parameter options are separated with
+semi-colons and parameter elements by commas. Path names can be directly
+specified (relative to the project <em>source folder</em>) or specified with an alias:</p>
+<blockquote>
+<div><p><em>rvsource</em> : this alias directs <em>rivtlib</em> to look for the file in the
+source folder. For example if the <em>rivt file</em> is in division 1
+and the API function is <em>Insert</em> the folder <em>i01</em> in <em>source</em> is searched.</p>
+<p><em>rvlocal</em> : this alias directs <em>rivtlib</em> to look for the file in the <em>rivt
+file</em> directory. It is used when a <em>single doc</em>, ratherh than a <em>report
+doc</em> is processed.</p>
+</div></blockquote>
+<p>The <em>rivt project</em> folder structure is described
+<a class="reference internal" href="../dv04-reports/rv0402-folders.html"><span class="doc">here.</span></a></p>
 <section id="key">
 <h2><strong>KEY</strong><a class="headerlink" href="#key" title="Link to this heading">#</a></h2>
-<p>_[TAG] : line tag description</p>
-<p>_[[TAG]] : block tag description</p>
 <hr><aside class="topic">
-<p class="topic-title">syntax</p>
-<p>types of output</p>
+<p class="topic-title">| COMMAND | parameters</p>
+<p>input or output file types
+applicable doc types</p>
+</aside>
+<hr></section>
+<section id="image">
+<h2><strong>[01]</strong> | IMAGE |<a class="headerlink" href="#image" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">| IMAGE | path | filename | caption _[F], scale</p>
+<ul class="simple">
+<li><p>reads PNG and JPEG files (.png, jpg)</p></li>
+<li><p>PDF, HTML</p></li>
+</ul>
 </aside>
 </section>
-<section id="python-python-code">
-<h2><strong>[01]</strong> _[[PYTHON]] : Python code<a class="headerlink" href="#python-python-code" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[PYTHON]] description
-code
-code
-...
-_[[Q]]
-</pre></div>
-</div>
-<p>text, pdf, html</p>
+<section id="image2-adjacent-images">
+<h2><strong>[02]</strong> | IMAGE2 | - adjacent images<a class="headerlink" href="#image2-adjacent-images" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">| IMAGE2 | path | fname1, fname2 | cap1 _[F], cap2 _[F], sc1, sc2</p>
+<ul class="simple">
+<li><p>reads PNG and JPEG files (.png, jpg)</p></li>
+<li><p>PDF, HTML</p></li>
+</ul>
+</aside>
 </section>
-<section id="ruby-ruby-code">
-<h2><strong>[02]</strong> _[[RUBY]] : Ruby code<a class="headerlink" href="#ruby-ruby-code" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[RUBY]] description
-code
-code
-...
-_[[Q]]
-</pre></div>
-</div>
-<p>text, pdf, html</p>
+<section id="table">
+<h2><strong>[03]</strong> | TABLE |<a class="headerlink" href="#table" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">| TABLE | path | filename | title _[T]</p>
+<ul class="simple">
+<li><p>reads text, csv and EXCEL files (.txt, .csv, .xls)</p></li>
+<li><p>PDF, HTML, text</p></li>
+</ul>
+</aside>
 </section>
-<section id="html-html-code">
-<h2><strong>[03]</strong> _[[HTML]] : HTML code<a class="headerlink" href="#html-html-code" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span> _[[HTML]]
- code
- code
- ...
- _[[Q]]
-
-pdf, html
-</pre></div>
-</div>
+<section id="values">
+<h2><strong>[04]</strong> | VALUES |<a class="headerlink" href="#values" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">| VALUES | relative path | filename | title _[V], [rows]</p>
+<ul class="simple">
+<li><p>reads values.txt file</p></li>
+<li><p>PDF, HTML</p></li>
+</ul>
+</aside>
 </section>
-<section id="latex-latex-code">
-<h2><strong>[04]</strong> _[[LATEX]] : LaTeX code<a class="headerlink" href="#latex-latex-code" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[LATEX]]
-code
-code
-...
-_[[Q]]
-
-pdf, html
-</pre></div>
-</div>
+<section id="assign-value">
+<h2><strong>[05]</strong> <strong>=</strong> - assign value<a class="headerlink" href="#assign-value" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">a = 10*IN | unit1, unit2, decimals | description</p>
+<ul class="simple">
+<li><p>assigns value to a variable</p></li>
+<li><p>PDF, HTML</p></li>
+</ul>
+</aside>
+</section>
+<section id="define-equation">
+<h2><strong>[06]</strong> <strong>:=</strong> - define equation<a class="headerlink" href="#define-equation" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">b := a * 10 | unit1, unit2, decimals | reference</p>
+<ul class="simple">
+<li><p>defines a variable in terms of expression</p></li>
+<li><p>PDF, HTML</p></li>
+</ul>
+</aside>
 </section>
 </section>
 
@@ -458,20 +486,20 @@ pdf, html
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rv0303-tagv.html"
+       href="rv0307-cmdi.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">3.4 Tags in [V]alues</p>
+        <p class="prev-next-title">3.7 Commands in [I]nsert</p>
       </div>
     </a>
     <a class="right-next"
-       href="rv0305-tagm.html"
+       href="rv0309-cmdt.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">3.05 Tags in [M]eta</p>
+        <p class="prev-next-title">3.9 Commands in [T]ools</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -495,10 +523,12 @@ pdf, html
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key"><strong>KEY</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-python-code"><strong>[01]</strong> _[[PYTHON]] : Python code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ruby-ruby-code"><strong>[02]</strong> _[[RUBY]] : Ruby code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-html-code"><strong>[03]</strong> _[[HTML]] : HTML code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex-latex-code"><strong>[04]</strong> _[[LATEX]] : LaTeX code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#image"><strong>[01]</strong> | IMAGE |</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#image2-adjacent-images"><strong>[02]</strong> | IMAGE2 | - adjacent images</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table"><strong>[03]</strong> | TABLE |</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#values"><strong>[04]</strong> | VALUES |</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-value"><strong>[05]</strong> <strong>=</strong> - assign value</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#define-equation"><strong>[06]</strong> <strong>:=</strong> - define equation</a></li>
 </ul>
   </nav></div>
 

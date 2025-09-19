@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="../_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="../_static/favicon-32x32.png" type="image/png">
-    <title>3.10 Process Commands &#8212; Home</title>
+    <title>3.6 Commands in [R]un &#8212; Home</title>
   
   
   
@@ -56,11 +56,11 @@
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'dv03-markup/rv0309-cmdprc';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'dv03-markup/rv0306-cmdr';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="3.11 Quick Summary" href="rv0310-quick.html" />
-    <link rel="prev" title="3.9 Commands in [T]ools" href="rv0308-cmdt.html" />
+    <link rel="next" title="3.7 Commands in [I]nsert" href="rv0307-cmdi.html" />
+    <link rel="prev" title="3.05 Tags in [M]eta" href="rv0305-tagm.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -317,13 +317,14 @@
 <li class="toctree-l1"><a class="reference internal" href="rv0302-tagi.html">3.3 Tags in [I]nsert</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0303-tagv.html">3.4 Tags in [V]alues</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0304-tagt.html">3.5 Tags in [T]ools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rv0305-cmdr.html">3.6 Commands in [R]un</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rv0306-cmdi.html">3.7 Commands in [I]nsert</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rv0307-cmdv.html">3.8 Commands in [V]alues</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rv0308-cmdt.html">3.9 Commands in [T]ools</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">3.10 <strong>Process</strong> Commands</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rv0310-quick.html">3.11 Quick Summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv0305-tagm.html">3.05 Tags in [M]eta</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">3.6 Commands in [R]un</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv0307-cmdi.html">3.7 Commands in [I]nsert</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv0308-cmdv.html">3.8 Commands in [V]alues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv0309-cmdt.html">3.9 Commands in [T]ools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv0310-cmdd.html">3.10 Commands in [D]oc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0311-example1.html">3.12 Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv0312-quick.html">3.11 Quick Summary</a></li>
 </ul>
 </div>
 </nav></div>
@@ -367,7 +368,7 @@
     
     <li class="breadcrumb-item"><a href="_dv03-markup.html" class="nav-link">3. Markup</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">3.10 <strong>Process</strong> Commands</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">3.6 Commands in [R]un</span></li>
   </ul>
 </nav>
 </div>
@@ -384,51 +385,52 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="process-commands">
-<h1>3.10 <strong>Process</strong> Commands<a class="headerlink" href="#process-commands" title="Link to this heading">#</a></h1>
-<p><em>Process commands</em> control the process of generating and assembling <em>docs</em>. They
-do not directly generate content.</p>
-<p>Commands with a <em>path</em> parameter use three path aliases:</p>
+  <section id="commands-in-r-un">
+<h1>3.6 Commands in [R]un<a class="headerlink" href="#commands-in-r-un" title="Link to this heading">#</a></h1>
+<p><em>rivt commands</em> read and write external files and assign values to variables.
+They typically start in the first column with a vertical bar ( | ) followed by
+the command name and parameters. The exceptions to this pattern are the
+assignment ( = ) and definition ( := ) commands which are used to assign values
+and evaluate equations.</p>
+<p>In the syntax description below parameter options are separated with
+semi-colons and parameter elements by commas. Path names can be directly
+specified (relative to the project <em>source folder</em>) or specified with an alias:</p>
 <blockquote>
-<div><p><em>rvsource</em> : when this alias is provided <em>rivtlib</em> looks for the file in the
-division source directory. For example, if the rivt file is in division 1
-and the API function is <em>Insert</em> the subfolder <em>i01</em> in the <em>source</em> folder
-is searched.</p>
-<p><em>rvlocal</em> : when this value is provided <em>rivt</em> looks for the source file in
-the rivt file directory.</p>
-<p>specified source : a specific folder in the <em>source</em> subfolder may be
-provided. For example if the alias <em>i02</em> is specified the <em>i02</em> folder in
-the <em>source</em> folder is searched.</p>
+<div><p><em>rvsource</em> : this alias directs <em>rivtlib</em> to look for the file in the
+source folder. For example if the <em>rivt file</em> is in division 1
+and the API function is <em>Insert</em> the folder <em>i01</em> in <em>source</em> is searched.</p>
+<p><em>rvlocal</em> : this alias directs <em>rivtlib</em> to look for the file in the <em>rivt
+file</em> directory. It is used when a <em>single doc</em>, ratherh than a <em>report
+doc</em> is processed.</p>
 </div></blockquote>
-<p>Project folder organization is described
+<p>The <em>rivt project</em> folder structure is described
 <a class="reference internal" href="../dv04-reports/rv0402-folders.html"><span class="doc">here.</span></a></p>
 <section id="key">
 <h2><strong>KEY</strong><a class="headerlink" href="#key" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| COMMAND | parameters</p>
-<ul class="simple">
-<li><p>input or output file types</p></li>
-<li><p>applicable doc types</p></li>
-</ul>
-</aside>
-<hr></section>
-<section id="append-append-pdf-file">
-<h2><strong>[01]</strong> | APPEND  | - append PDF file<a class="headerlink" href="#append-append-pdf-file" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">| APPEND | path | filename | before; after</p>
-<p>appends PDF file to <em>doc</em>
-PDF, HTML</p>
+<p>input file types</p>
 </aside>
 </section>
-<section id="docs-write-doc-file">
-<h2><strong>[02]</strong> | DOCS |  - write doc file<a class="headerlink" href="#docs-write-doc-file" title="Link to this heading">#</a></h2>
+<section id="win-command-script">
+<h2><strong>[01]</strong> | WIN | - command script<a class="headerlink" href="#win-command-script" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| DOCS | path |  txt; html; rpdf; tpdf</p>
-<ul class="simple">
-<li><p>writes text, PDF or HTML files</p></li>
-<li><p>PDF, HTML, text</p></li>
-</ul>
-<p>Exits after writing doc file</p>
+<p class="topic-title">| WIN | path | filename</p>
+<p>reads .txt, .cmd, .bat  files</p>
+</aside>
+</section>
+<section id="macos-shell-script">
+<h2><strong>[02]</strong> | MACOS | - shell script<a class="headerlink" href="#macos-shell-script" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">| MACOS | path | filename</p>
+<p>reads .sh files</p>
+</aside>
+</section>
+<section id="linux-shell-script">
+<h2><strong>[03]</strong> | LINUX | - shell script<a class="headerlink" href="#linux-shell-script" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">| LINUX | path | filename</p>
+<p>reads .sh files</p>
 </aside>
 </section>
 </section>
@@ -444,20 +446,20 @@ PDF, HTML</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rv0308-cmdt.html"
+       href="rv0305-tagm.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">3.9 Commands in [T]ools</p>
+        <p class="prev-next-title">3.05 Tags in [M]eta</p>
       </div>
     </a>
     <a class="right-next"
-       href="rv0310-quick.html"
+       href="rv0307-cmdi.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">3.11 Quick Summary</p>
+        <p class="prev-next-title">3.7 Commands in [I]nsert</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -481,8 +483,9 @@ PDF, HTML</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key"><strong>KEY</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#append-append-pdf-file"><strong>[01]</strong> | APPEND  | - append PDF file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docs-write-doc-file"><strong>[02]</strong> | DOCS |  - write doc file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#win-command-script"><strong>[01]</strong> | WIN | - command script</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#macos-shell-script"><strong>[02]</strong> | MACOS | - shell script</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linux-shell-script"><strong>[03]</strong> | LINUX | - shell script</a></li>
 </ul>
   </nav></div>
 
