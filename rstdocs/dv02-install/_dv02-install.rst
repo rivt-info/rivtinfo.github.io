@@ -12,8 +12,8 @@
 .. topic:: *rivt* 
 
     *rivt* is a Python project that includes `rivtlib <https://www.rivt.info>`_
-    and other :doc:`Python packages </dv02-install/python>`.  When *rivt* 
-    is installed *rivt docs and reports* may be edited and published 
+    and other :doc:`Python packages </dv02-install/python>`.  After *rivt* 
+    is installed, *rivt docs and reports* may be edited and published 
     using a text editor.
 
     See :ref:`rivt-uv <rivt-uv>` for uv install
