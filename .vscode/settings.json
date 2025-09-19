@@ -17,6 +17,7 @@
     },
     "workbench.panel.defaultLocation": "right",
     "git.postCommitCommand": "sync",
+    "git.autofetch": true,
     "editor.formatOnSave": true,
     "gutterpreview.imagePreviewMaxHeight": 10,
     "ShortcutMenuBar.beautify": false,

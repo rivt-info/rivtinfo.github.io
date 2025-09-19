@@ -1,8 +1,8 @@
-3.10 **Process** Commands
+3.10 Commands in [D]oc
 ===========================
 
-*Process commands* control the process of generating and assembling *docs*. They
-do not directly generate content.
+*rv.D* is a *process fucntion* that controls the process of generating and
+assembling *docs*. Typically it does not directly generate content.
 
 Commands with a *path* parameter use three path aliases:
 
