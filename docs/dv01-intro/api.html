@@ -435,19 +435,20 @@ as notebook cells in an IDE (e.g. VSCode).</p>
 </table>
 </div>
 <p>Each function evaluates a triple-quoted string argument (rS). The first four
-functions (<em>R I V T</em>) output formatted utf-8 text to the terminal and generate
-<em>doc</em> content.</p>
-<p>The last four functions (<em>D M S Q</em>) are related to processing. The <em>Doc</em>
-function writes text, PDF or HTML <em>doc</em> files. The <em>Meta</em> The <em>Skip</em> and <em>Quit</em>
-functions are used for interactive editing, debuggings and version control.</p>
+functions (<em>R I V T</em>) output formatted utf-8 text to the terminal and can
+generate <em>doc</em> content.</p>
+<p>The last four functions (<em>D M S Q</em>) are related to processing and management.
+The <em>Doc</em> function writes text, PDF or HTML <em>doc</em> files. The <em>Meta</em> function
+contains information related to file sharing. The <em>Skip</em> and <em>Quit</em> functions
+are used for interactive editing and debugging.</p>
 </section>
 <section id="api-argument">
 <h2><strong>[03]</strong> API argument<a class="headerlink" href="#api-argument" title="Link to this heading">#</a></h2>
 <p>An API function starts in the first column. Its argument is a <em>rivt string</em>
-enclosed in triple quotes and begins with a header that specifies section
-labeling and processing. The section content follows the header on subsequent
-lines and is indented four spaces for legibility and section folding.</p>
-<p>Section content includes rivt-markup tags and commands and may include
+(rS) enclosed in triple quotes. The first line is a header that specifies
+overalll section labeling and processing. The header is followed by the section
+content. Content is indented four spaces for legibility and section folding.</p>
+<p>Section content includes <em>rivt tags and commands</em> may include
 arbitrary utf-8 text. See <a class="reference internal" href="../dv03-markup/_dv03-markup.html"><span class="doc">Markup</span></a> for further
 details.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Header</span>
@@ -464,21 +465,23 @@ details.</p>
 <p>Docs are formatted output files specified by the <em>Doc</em> function. Docs include
 text (.txt), HTML (.html) and PDF (.pdf) files. Each output type is generated
 from the same <em>rivt file</em>.</p>
-<p>PDF files are produced in two ways, referred to as <em>rpdf</em> and <em>tpdf</em>.An <em>rpdf</em>
-doc is formatted using the rst2pdf library, a susbset of the larger ReportLab
-library. Its advantage includes a much smaller library size and it is the
-default PDF Doc for the rivt framework. A PDF doc produced using <em>tpdf</em>
+<p>PDF files are produced in two ways, referred to as <em>rpdf</em> and <em>tpdf</em>. An <em>rpdf</em>
+doc is formatted using the <em>rst2pdf</em> library, a susbset of the larger
+<em>ReportLab</em> library. It is the default <em>rivt PDF doc</em>. Its advantage is a much
+smaller library compared to other PDF libraries. A <em>rivt LaTeX doc</em> (<em>tpdf</em>)
 requires a separate installation of the large texlive LaTeX library. Its
-advantage is extensive control over the Doc appearance.</p>
+advantage is extensive control over <em>doc</em> formatting and appearance.</p>
 </section>
 <section id="command-line">
 <h2><strong>[05]</strong> Command Line<a class="headerlink" href="#command-line" title="Link to this heading">#</a></h2>
-<p>rivtlib is generally run in an IDE. If run from the command line the command is</p>
+<p>rivtlib is generally run interactilvey in an IDE. If run from the command line
+the command is</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>rvddss-filename.py
 </pre></div>
 </div>
 <p>where <em>rvddss-</em> is the doc number and*dd* and <em>ss</em> are integers identifying the
-report division and subdivision respectively.</p>
+report division and subdivision respectively. See
+<a class="reference internal" href="../dv04-reports/rv0402-folders.html"><span class="doc">here</span></a> for further details.</p>
 </section>
 </section>
 

@@ -1,14 +1,13 @@
 1. Introduction
 =======================
 
-*rivt* is a software project that faciliates community improvement and reuse of
+*rivt* is a software project that faciliates reuse and community improvement of
 engineering documents. Writing engineering documents typically involves text,
 tables, diagrams, equations and calculations from a variety of sources.
-Although software combining these elements is available, reusing a typical
-engineering document, or parts of it, is generally difficult because of the
-following limitations:
+Although software combining these elements is available, reusing an arbitrary
+document is generally difficult because of the following limitations:
 
-- document production is divided among many incompatible programs
+- documents are divided among many incompatible programs
 - newer documents are inaccessible without frequently updating software
 - update costs are high
 - software is limited to specific platforms
@@ -21,7 +20,7 @@ below compares it with other representative software:
 .. rst-class:: center
 
 
-Table 1 - **Reuse Features Comparison**
+Table 1 - **Reuseable Features Comparison**
 
 ============ ========= ======== ======== ========= ========= ============= 
 Program      Rep [1]_  Ver [2]_ Txt [3]_ Comp [4]_  CP [5]_   Collab [6]_  
