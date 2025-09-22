@@ -9,159 +9,35 @@ on the first line and end with _[[Q]] after the last line.
 **KEY**  
 --------------------------------------------
 
+
 _[TAG] : line tag description
 
+.. raw:: html
+
+    <hr>
+
+.. topic::  syntax : description
+
+   example
+
+types of output
+
+
 _[[TAG]] : block tag description
-
+        
 .. raw:: html
 
     <hr>
 
-.. topic::  syntax
+.. topic::  syntax : description
 
-    types of output
+    example
 
-.. raw:: html
+types of output
 
-    <hr>
 
 
-**[01]** _[B] :  center, bold
--------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *text* _[B]
-
-   pdf, html
-
-**[02]** _[C] :   center 
--------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *text* _[C]
-
-   pdf, html
-
-**[03]** _[D] :  footnote description
--------------------------------------------    
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *text* _[D]
-
-    text, pdf, html
-
-**[04]** _[E] : number, label equation
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *text* _[C]
-
-    text, pdf, html
-
-**[05]** _[F] : number, label figure 
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *caption* _[F]
-
-    pdf, html
-
-**[06]** _[LD] :  doc link 
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *text* _[LD] doc link *text*
-    
-    text, pdf, html
-
-**[07]** _[LR] :  report link 
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *text* _[LR] report link *text*
-    
-    text, pdf, html
-
-**[08]** _[LU] :  url link 
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *text* _[LU] url link *text*
-    
-    text, pdf, html
-
-**[09]** _[P] : new page
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: _[P]
-
-    pdf, html
-
-
-**[10]** _[S] : sympy equation
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *equation* _[S]
-
-    text, pdf, html
-
-**[11]** _[T]  label table
-------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *title* _[T]
-
-    text, pdf, html
-
-
-**[12]** _[V] : label values table 
-------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *text* _[V]
-    
-
-    text, pdf, html
-
-**[13]** _[#] :  numbered footnote
+**[01]** _[#] :  numbered endnote
 ----------------------------------------
 
 .. raw:: html
@@ -170,10 +46,192 @@ _[[TAG]] : block tag description
 
 .. topic:: *text* _[#] text
     
-   text, pdf, html
+   end of text with auto endnote. _[#]
+
+text, pdf, html
+
+**[02]** _[D] :  footnote text
+-------------------------------------------    
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *endnote* _[D]
+
+   endnote - assigned in order _[D]
+
+text, pdf, html
 
 
-**[14]** _[[B]] : indent bold
+**[03]** _[B] :  center, bold
+-------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *text* _[B]
+
+    This text will be bold and centered _[B]
+
+pdf, html
+
+
+**[04]** _[C] :   center 
+-------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *text* _[C]
+
+    This text will be centered _[C]
+
+pdf, html
+
+
+**[05]** _[E] : label equation
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *equation label* _[E]
+
+   An autonumbered equation label _[E]
+
+text, pdf, html
+
+
+**[06]** _[F] : label figure 
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>   
+
+.. topic:: *caption* _[F]
+
+   An autonumbered figure label _[E]
+
+text, pdf, html
+
+
+**[07]** _[LS] :  section link 
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *text* _[LD] doc link
+    
+    text at end of line _[LD] section number, link label
+
+text, pdf, html
+
+
+**[08]** _[LR] :  doc link 
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *text* _[LR] doc link 
+    
+    text at end of line _[LR] doc-file-name, link label
+
+text, pdf, html
+
+
+**[09]** _[LU] :  url link 
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *text* _[LU] url link  
+    
+    text at end of line _[LU] urlname, link label
+
+text, pdf, html
+
+
+**[10]** _[P] : new page
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: _[P]
+
+    this will start a new page _[P]
+
+text, pdf, html
+
+
+**[11]** _[S] : sympy equation
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *equation* _[S]
+
+    f(x) = sin(x) + y/5 _[S]
+
+text, pdf, html
+
+
+**[12]** _[T]  label table
+------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *title* _[T]
+
+   An autonumbered table title _[T]
+
+text, pdf, html
+
+
+**[13]** _[V] : label values table 
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *title* _[V]
+    
+   An autonumbered value table title _[V]
+
+text, pdf, html
+
+
+**[14]** __ : line
+--------------------------------------- 
+.. raw:: html
+
+    <hr>
+
+.. topic:: 4 or more underscores ____ 
+
+   ____    
+    
+text, pdf, html
+
+
+**[15]** _[[B]] : indent bold
 ------------------------------------------------
 
 .. raw:: html
@@ -190,9 +248,90 @@ _[[TAG]] : block tag description
         ...
         _[[Q]]
 
-    text, pdf, html
+text, pdf, html
 
-**[15]** _[[C]] : code or literal
+
+**[16]** _[[C]] : code or literal text
+------------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic::  _[[C]] *language*
+
+    ::
+        
+        _[[C]] python
+        print("some text")
+        b = 3 + 5
+        ...
+        _[[Q]]
+
+text, pdf, html
+
+
+**[17]** _[[L]] : LaTeX
+------------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic::  _[[L]] 
+    
+    ::
+        
+        _[[L]]
+        \frac{\alpha}{\beta}
+        \sum_{n=1}^{10} n
+        ...
+        _[[Q]]
+
+pdf, html
+
+
+**[18]** _[[T]] : topic
+------------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic::  _[[T]] *topic*
+
+    ::
+        
+        _[[T]] this a topic title : after colon will be italic
+        This is a topic description.
+        ...
+        _[[Q]]
+
+
+text, pdf, html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**[19]** _[[C]] : code or literal
 ------------------------------------------------
 
 .. raw:: html
@@ -211,7 +350,7 @@ _[[TAG]] : block tag description
 
     text, pdf, html
 
-**[16]** _[[I]] : indent italic
+**[20]** _[[I]] : indent italic
 ------------------------------------------------
 
 .. raw:: html
@@ -230,7 +369,7 @@ _[[TAG]] : block tag description
 
     text, pdf, html
 
-**[17]** _[[L]] : LaTeX
+**[21]** _[[L]] : LaTeX
 ------------------------------------------------
 
 .. raw:: html
@@ -249,7 +388,7 @@ _[[TAG]] : block tag description
 
     pdf, html
 
-**[18]** _[[N]] :  indent
+**[22]** _[[N]] :  indent
 ----------------------------------------------
 
 .. raw:: html
@@ -268,7 +407,7 @@ _[[TAG]] : block tag description
 
     text, pdf, html
 
-**[19]** _[[T]] : topic
+**[23]** _[[T]] : topic
 ------------------------------------------------
 
 .. raw:: html
@@ -286,14 +425,4 @@ _[[TAG]] : block tag description
         _[[Q]]
 
 
-   text, pdf, html
-
-**[20]** __ : horizontal line
---------------------------------------- 
-.. raw:: html
-
-    <hr>
-
-.. topic::  more than 4 underscores  ___ 
-
-    text, pdf, html
+text, pdf, html

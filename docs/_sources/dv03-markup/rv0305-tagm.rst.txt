@@ -16,9 +16,11 @@ _[[TAG]] : block tag description
 
     <hr>
 
-.. topic::  syntax
+.. topic::  tag
 
-    types of output
+   syntax
+
+types of output
 
 
 **[01]** _[[META]] : author

@@ -9,24 +9,35 @@ on the first line and end with _[[Q]] after the last line.
 **KEY**  
 --------------------------------------------
 
+
 _[TAG] : line tag description
 
+.. raw:: html
+
+    <hr>
+
+.. topic::  syntax : description
+
+   example
+
+types of output
+
+
 _[[TAG]] : block tag description
-
+        
 .. raw:: html
 
     <hr>
 
-.. topic::  syntax
+.. topic::  syntax : description
 
-    types of output
+    example
 
-.. raw:: html
-
-    <hr>
+types of output
 
 
-**[01]** _[#] :  numbered footnote
+
+**[01]** _[#] :  numbered endnote
 ----------------------------------------
 
 .. raw:: html
@@ -35,18 +46,22 @@ _[[TAG]] : block tag description
 
 .. topic:: *text* _[#] text
     
-    text, pdf, html
+   end of text with auto endnote. _[#]
 
-**[02]** _[D] :  footnote description
+text, pdf, html
+
+**[02]** _[D] :  footnote text
 -------------------------------------------    
 
 .. raw:: html
 
     <hr>
 
-.. topic:: *text* _[D]
+.. topic:: *endnote* _[D]
 
-    text, pdf, html
+   endnote - assigned in order _[D]
+
+text, pdf, html
 
 **[03]** _[E] : label equation
 -----------------------------------------
@@ -55,42 +70,50 @@ _[[TAG]] : block tag description
 
     <hr>
 
-.. topic:: *text* _[E]
+.. topic:: *equation label* _[E]
 
-    text, pdf, html
+   An autonumbered equation label _[E]
 
-**[04]** _[F] : number, label figure 
+text, pdf, html
+
+**[04]** _[F] : label figure 
 -----------------------------------------
 
 .. raw:: html
 
-    <hr>
+    <hr>   
 
 .. topic:: *caption* _[F]
 
-    pdf, html
+   An autonumbered figure label _[E]
 
-**[05]** _[LD] :  doc link 
+text, pdf, html
+
+**[05]** _[LS] :  section link 
 -----------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: *text* _[LD] doc link *text*
+.. topic:: *text* _[LD] doc link
     
-    text, pdf, html
+    text at end of line _[LD] section number, link label
 
-**[06]** _[LR] :  report link 
+text, pdf, html
+
+**[06]** _[LR] :  doc link 
 -----------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: *text* _[LR] report link *text*
+.. topic:: *text* _[LR] doc link 
     
-    text, pdf, html
+    text at end of line _[LR] doc-file-name, link label
+
+text, pdf, html
 
 **[07]** _[LU] :  url link 
 -----------------------------------------
@@ -99,9 +122,11 @@ _[[TAG]] : block tag description
 
     <hr>
 
-.. topic:: *text* _[LU] url link *text*
+.. topic:: *text* _[LU] url link  
     
-    text, pdf, html
+    text at end of line _[LU] urlname, link label
+
+text, pdf, html
 
 **[08]** _[P] : new page
 -----------------------------------------
@@ -112,7 +137,9 @@ _[[TAG]] : block tag description
 
 .. topic:: _[P]
 
-    pdf, html
+    this will start a new page _[P]
+
+text, pdf, html
 
 
 **[09]** _[S] : sympy equation
@@ -124,7 +151,9 @@ _[[TAG]] : block tag description
 
 .. topic:: *equation* _[S]
 
-    text, pdf, html
+    f(x) = sin(x) + y/5 _[S]
+
+text, pdf, html
 
 **[10]** _[T]  label table
 ------------------------------------------
@@ -135,34 +164,25 @@ _[[TAG]] : block tag description
 
 .. topic:: *title* _[T]
 
-    text, pdf, html
+   An autonumbered table title _[T]
+
+text, pdf, html
 
 
-**[11]** _[V] : label values table 
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *text* _[V]
-    
-
-    text, pdf, html
-
-
-**[12]** __ : line
+**[11]** __ : line
 --------------------------------------- 
 .. raw:: html
 
     <hr>
 
-.. topic::  more than 4 underscores  ____
+.. topic:: 4 or more underscores ____ 
 
-    text, pdf, html
+   ____    
+    
+text, pdf, html
 
 
-**[13]** _[[C]] : code or literal
+**[12]** _[[C]] : code or literal text
 ------------------------------------------------
 
 .. raw:: html
@@ -173,16 +193,16 @@ _[[TAG]] : block tag description
 
     ::
         
-        _[[C]]
-        text
-        text
+        _[[C]] python
+        print("some text")
+        b = 3 + 5
         ...
         _[[Q]]
 
-    text, pdf, html
+text, pdf, html
 
 
-**[14]** _[[L]] : LaTeX
+**[13]** _[[L]] : LaTeX
 ------------------------------------------------
 
 .. raw:: html
@@ -194,15 +214,15 @@ _[[TAG]] : block tag description
     ::
         
         _[[L]]
-        text
-        text
+        \frac{\alpha}{\beta}
+        \sum_{n=1}^{10} n
         ...
         _[[Q]]
 
-    pdf, html
+pdf, html
 
 
-**[15]** _[[T]] : topic
+**[14]** _[[T]] : topic
 ------------------------------------------------
 
 .. raw:: html
@@ -213,18 +233,16 @@ _[[TAG]] : block tag description
 
     ::
         
-        _[[N]] topic
-        text
-        text
+        _[[T]] this a topic title : after colon will be italic
+        This is a topic description.
         ...
         _[[Q]]
 
-
-    text, pdf, html
+text, pdf, html
 
   
 
-**[16]** _[[V]] : values
+**[15]** _[[V]] : values
 ------------------------------------------------
 
 .. raw:: html
@@ -235,11 +253,10 @@ _[[TAG]] : block tag description
 
     ::
         
-        _[[V]] topic
-        values1
-        values2
+        _[[V]] First Floor Framing
+        I_1 = 100 | IN^3, CM^3, 2 | moment of intertia
+        L_1 = 10*1.5 | FT, M, 2| beam length
         ...
         _[[Q]]
 
-    - rv.I, rv.V
-    - text, pdf, html  
+text, pdf, html  

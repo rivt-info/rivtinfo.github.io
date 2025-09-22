@@ -393,154 +393,159 @@ on the first line and end with _[[Q]] after the last line.</p>
 <section id="key">
 <h2><strong>KEY</strong><a class="headerlink" href="#key" title="Link to this heading">#</a></h2>
 <p>_[TAG] : line tag description</p>
+<hr><aside class="topic">
+<p class="topic-title">syntax : description</p>
+<p>example</p>
+</aside>
+<p>types of output</p>
 <p>_[[TAG]] : block tag description</p>
 <hr><aside class="topic">
-<p class="topic-title">syntax</p>
-<p>types of output</p>
+<p class="topic-title">syntax : description</p>
+<p>example</p>
 </aside>
-<hr></section>
-<section id="numbered-footnote">
-<h2><strong>[01]</strong> _[#] :  numbered footnote<a class="headerlink" href="#numbered-footnote" title="Link to this heading">#</a></h2>
+<p>types of output</p>
+</section>
+<section id="numbered-endnote">
+<h2><strong>[01]</strong> _[#] :  numbered endnote<a class="headerlink" href="#numbered-endnote" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title"><em>text</em> _[#] text</p>
-<p>text, pdf, html</p>
+<p>end of text with auto endnote. _[#]</p>
 </aside>
+<p>text, pdf, html</p>
 </section>
-<section id="d-footnote-description">
-<h2><strong>[02]</strong> _[D] :  footnote description<a class="headerlink" href="#d-footnote-description" title="Link to this heading">#</a></h2>
+<section id="d-footnote-text">
+<h2><strong>[02]</strong> _[D] :  footnote text<a class="headerlink" href="#d-footnote-text" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title"><em>text</em> _[D]</p>
-<p>text, pdf, html</p>
+<p class="topic-title"><em>endnote</em> _[D]</p>
+<p>endnote - assigned in order _[D]</p>
 </aside>
+<p>text, pdf, html</p>
 </section>
 <section id="e-label-equation">
 <h2><strong>[03]</strong> _[E] : label equation<a class="headerlink" href="#e-label-equation" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title"><em>text</em> _[E]</p>
-<p>text, pdf, html</p>
+<p class="topic-title"><em>equation label</em> _[E]</p>
+<p>An autonumbered equation label _[E]</p>
 </aside>
+<p>text, pdf, html</p>
 </section>
-<section id="f-number-label-figure">
-<h2><strong>[04]</strong> _[F] : number, label figure<a class="headerlink" href="#f-number-label-figure" title="Link to this heading">#</a></h2>
+<section id="f-label-figure">
+<h2><strong>[04]</strong> _[F] : label figure<a class="headerlink" href="#f-label-figure" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title"><em>caption</em> _[F]</p>
-<p>pdf, html</p>
+<p>An autonumbered figure label _[E]</p>
 </aside>
-</section>
-<section id="ld-doc-link">
-<h2><strong>[05]</strong> _[LD] :  doc link<a class="headerlink" href="#ld-doc-link" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title"><em>text</em> _[LD] doc link <em>text</em></p>
 <p>text, pdf, html</p>
-</aside>
 </section>
-<section id="lr-report-link">
-<h2><strong>[06]</strong> _[LR] :  report link<a class="headerlink" href="#lr-report-link" title="Link to this heading">#</a></h2>
+<section id="ls-section-link">
+<h2><strong>[05]</strong> _[LS] :  section link<a class="headerlink" href="#ls-section-link" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title"><em>text</em> _[LR] report link <em>text</em></p>
-<p>text, pdf, html</p>
+<p class="topic-title"><em>text</em> _[LD] doc link</p>
+<p>text at end of line _[LD] section number, link label</p>
 </aside>
+<p>text, pdf, html</p>
+</section>
+<section id="lr-doc-link">
+<h2><strong>[06]</strong> _[LR] :  doc link<a class="headerlink" href="#lr-doc-link" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title"><em>text</em> _[LR] doc link</p>
+<p>text at end of line _[LR] doc-file-name, link label</p>
+</aside>
+<p>text, pdf, html</p>
 </section>
 <section id="lu-url-link">
 <h2><strong>[07]</strong> _[LU] :  url link<a class="headerlink" href="#lu-url-link" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title"><em>text</em> _[LU] url link <em>text</em></p>
-<p>text, pdf, html</p>
+<p class="topic-title"><em>text</em> _[LU] url link</p>
+<p>text at end of line _[LU] urlname, link label</p>
 </aside>
+<p>text, pdf, html</p>
 </section>
 <section id="p-new-page">
 <h2><strong>[08]</strong> _[P] : new page<a class="headerlink" href="#p-new-page" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[P]</p>
-<p>pdf, html</p>
+<p>this will start a new page _[P]</p>
 </aside>
+<p>text, pdf, html</p>
 </section>
 <section id="s-sympy-equation">
 <h2><strong>[09]</strong> _[S] : sympy equation<a class="headerlink" href="#s-sympy-equation" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title"><em>equation</em> _[S]</p>
-<p>text, pdf, html</p>
+<p>f(x) = sin(x) + y/5 _[S]</p>
 </aside>
+<p>text, pdf, html</p>
 </section>
 <section id="t-label-table">
 <h2><strong>[10]</strong> _[T]  label table<a class="headerlink" href="#t-label-table" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title"><em>title</em> _[T]</p>
-<p>text, pdf, html</p>
+<p>An autonumbered table title _[T]</p>
 </aside>
-</section>
-<section id="v-label-values-table">
-<h2><strong>[11]</strong> _[V] : label values table<a class="headerlink" href="#v-label-values-table" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title"><em>text</em> _[V]</p>
 <p>text, pdf, html</p>
-</aside>
 </section>
 <section id="line">
-<h2><strong>[12]</strong> __ : line<a class="headerlink" href="#line" title="Link to this heading">#</a></h2>
+<h2><strong>[11]</strong> __ : line<a class="headerlink" href="#line" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">more than 4 underscores  ____</p>
-<p>text, pdf, html</p>
+<p class="topic-title">4 or more underscores ____</p>
 </aside>
+<p>text, pdf, html</p>
 </section>
-<section id="c-code-or-literal">
-<h2><strong>[13]</strong> _[[C]] : code or literal<a class="headerlink" href="#c-code-or-literal" title="Link to this heading">#</a></h2>
+<section id="c-code-or-literal-text">
+<h2><strong>[12]</strong> _[[C]] : code or literal text<a class="headerlink" href="#c-code-or-literal-text" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[C]] <em>language</em></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">C</span><span class="p">]]</span>
-<span class="n">text</span>
-<span class="n">text</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">C</span><span class="p">]]</span> <span class="n">python</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;some text&quot;</span><span class="p">)</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">5</span>
 <span class="o">...</span>
 <span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
 </pre></div>
 </div>
-<p>text, pdf, html</p>
 </aside>
+<p>text, pdf, html</p>
 </section>
 <section id="l-latex">
-<h2><strong>[14]</strong> _[[L]] : LaTeX<a class="headerlink" href="#l-latex" title="Link to this heading">#</a></h2>
+<h2><strong>[13]</strong> _[[L]] : LaTeX<a class="headerlink" href="#l-latex" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[L]]</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">L</span><span class="p">]]</span>
-<span class="n">text</span>
-<span class="n">text</span>
+\<span class="n">frac</span><span class="p">{</span>\<span class="n">alpha</span><span class="p">}{</span>\<span class="n">beta</span><span class="p">}</span>
+\<span class="n">sum_</span><span class="p">{</span><span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">}</span><span class="o">^</span><span class="p">{</span><span class="mi">10</span><span class="p">}</span> <span class="n">n</span>
 <span class="o">...</span>
 <span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
 </pre></div>
 </div>
-<p>pdf, html</p>
 </aside>
+<p>pdf, html</p>
 </section>
 <section id="t-topic">
-<h2><strong>[15]</strong> _[[T]] : topic<a class="headerlink" href="#t-topic" title="Link to this heading">#</a></h2>
+<h2><strong>[14]</strong> _[[T]] : topic<a class="headerlink" href="#t-topic" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[T]] <em>topic</em></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">N</span><span class="p">]]</span> <span class="n">topic</span>
-<span class="n">text</span>
-<span class="n">text</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">T</span><span class="p">]]</span> <span class="n">this</span> <span class="n">a</span> <span class="n">topic</span> <span class="n">title</span> <span class="p">:</span> <span class="n">after</span> <span class="n">colon</span> <span class="n">will</span> <span class="n">be</span> <span class="n">italic</span>
+<span class="n">This</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">topic</span> <span class="n">description</span><span class="o">.</span>
 <span class="o">...</span>
 <span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
 </pre></div>
 </div>
-<p>text, pdf, html</p>
 </aside>
+<p>text, pdf, html</p>
 </section>
 <section id="v-values">
-<h2><strong>[16]</strong> _[[V]] : values<a class="headerlink" href="#v-values" title="Link to this heading">#</a></h2>
+<h2><strong>[15]</strong> _[[V]] : values<a class="headerlink" href="#v-values" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[V]] <em>title</em></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">V</span><span class="p">]]</span> <span class="n">topic</span>
-<span class="n">values1</span>
-<span class="n">values2</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">V</span><span class="p">]]</span> <span class="n">First</span> <span class="n">Floor</span> <span class="n">Framing</span>
+<span class="n">I_1</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">|</span> <span class="n">IN</span><span class="o">^</span><span class="mi">3</span><span class="p">,</span> <span class="n">CM</span><span class="o">^</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span> <span class="o">|</span> <span class="n">moment</span> <span class="n">of</span> <span class="n">intertia</span>
+<span class="n">L_1</span> <span class="o">=</span> <span class="mi">10</span><span class="o">*</span><span class="mf">1.5</span> <span class="o">|</span> <span class="n">FT</span><span class="p">,</span> <span class="n">M</span><span class="p">,</span> <span class="mi">2</span><span class="o">|</span> <span class="n">beam</span> <span class="n">length</span>
 <span class="o">...</span>
 <span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>rv.I, rv.V</p></li>
-<li><p>text, pdf, html</p></li>
-</ul>
 </aside>
+<p>text, pdf, html</p>
 </section>
 </section>
 
@@ -592,22 +597,21 @@ on the first line and end with _[[Q]] after the last line.</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key"><strong>KEY</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#numbered-footnote"><strong>[01]</strong> _[#] :  numbered footnote</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-footnote-description"><strong>[02]</strong> _[D] :  footnote description</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#numbered-endnote"><strong>[01]</strong> _[#] :  numbered endnote</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-footnote-text"><strong>[02]</strong> _[D] :  footnote text</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e-label-equation"><strong>[03]</strong> _[E] : label equation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#f-number-label-figure"><strong>[04]</strong> _[F] : number, label figure</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ld-doc-link"><strong>[05]</strong> _[LD] :  doc link</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lr-report-link"><strong>[06]</strong> _[LR] :  report link</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#f-label-figure"><strong>[04]</strong> _[F] : label figure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ls-section-link"><strong>[05]</strong> _[LS] :  section link</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lr-doc-link"><strong>[06]</strong> _[LR] :  doc link</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lu-url-link"><strong>[07]</strong> _[LU] :  url link</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-new-page"><strong>[08]</strong> _[P] : new page</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#s-sympy-equation"><strong>[09]</strong> _[S] : sympy equation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-label-table"><strong>[10]</strong> _[T]  label table</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#v-label-values-table"><strong>[11]</strong> _[V] : label values table</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#line"><strong>[12]</strong> __ : line</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-code-or-literal"><strong>[13]</strong> _[[C]] : code or literal</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#l-latex"><strong>[14]</strong> _[[L]] : LaTeX</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-topic"><strong>[15]</strong> _[[T]] : topic</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#v-values"><strong>[16]</strong> _[[V]] : values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#line"><strong>[11]</strong> __ : line</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-code-or-literal-text"><strong>[12]</strong> _[[C]] : code or literal text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#l-latex"><strong>[13]</strong> _[[L]] : LaTeX</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-topic"><strong>[14]</strong> _[[T]] : topic</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#v-values"><strong>[15]</strong> _[[V]] : values</a></li>
 </ul>
   </nav></div>
 
