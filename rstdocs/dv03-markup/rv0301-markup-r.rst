@@ -18,7 +18,7 @@ file types
 
 
 
-**[01]** _[[WIN]] : batch
+**[02]** _[[WIN]] : batch
 ------------------------------------
 
 .. raw:: html
@@ -36,7 +36,7 @@ file types
 text, pdf, html
 
 
-**[02]** _[[MACOS]] : shell
+**[03]** _[[MACOS]] : shell
 --------------------------------------
 
 .. raw:: html
@@ -54,7 +54,7 @@ text, pdf, html
 text, pdf, html
 
 
-**[03]** _[[LINUX]] : shell 
+**[04]** _[[LINUX]] : shell 
 ---------------------------------
 
 .. raw:: html
@@ -73,7 +73,7 @@ text, pdf, html
 
 
 
-**[04]** COMMAND KEY
+**[05]** COMMAND KEY
 ----------------------
 
 .. raw:: html
@@ -89,7 +89,7 @@ file types
 
 
 
-**[05]** | WIN | - command script
+**[06]** | WIN | - command script
 -------------------------------------------
 
 .. raw:: html
@@ -104,7 +104,7 @@ file types
 reads .txt, .cmd, .bat  files
 
 
-**[06]** | MACOS | - shell script
+**[07]** | MACOS | - shell script
 -------------------------------------------
 
 .. raw:: html
@@ -120,7 +120,7 @@ reads .txt, .cmd, .bat  files
 reads .sh files
 
 
-**[07]** | LINUX | - shell script
+**[08]** | LINUX | - shell script
 -------------------------------------------
 
 .. raw:: html

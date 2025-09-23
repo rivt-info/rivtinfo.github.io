@@ -2,9 +2,8 @@
 ========================
 
 
-**TAG KEY**  
+**[01]** TAG KEY
 --------------------------------------
-
 
 _[TAG] : line tag description
 
@@ -33,24 +32,8 @@ types of output
 
 
 
-**COMMAND KEY**  
-------------------
 
-.. raw:: html
-
-    <hr>
-
-
-.. topic:: | COMMAND | parameters
-
-  example
-
-file types
-
-
-
-
-**[01]** _[#] :  numbered endnote
+**[02]** _[#] :  numbered endnote
 ----------------------------------------
 
 .. raw:: html
@@ -63,7 +46,7 @@ file types
 
 text, pdf, html
 
-**[02]** _[D] :  footnote text
+**[03]** _[D] :  footnote text
 -------------------------------------------    
 
 .. raw:: html
@@ -77,7 +60,7 @@ text, pdf, html
 text, pdf, html
 
 
-**[03]** _[B] :  center, bold
+**[04]** _[B] :  center, bold
 -------------------------------------------
 
 .. raw:: html
@@ -91,7 +74,7 @@ text, pdf, html
 pdf, html
 
 
-**[04]** _[C] :   center 
+**[05]** _[C] :   center 
 -------------------------------------------
 
 .. raw:: html
@@ -105,7 +88,7 @@ pdf, html
 pdf, html
 
 
-**[05]** _[E] : label equation
+**[06]** _[E] : label equation
 -----------------------------------------
 
 .. raw:: html
@@ -119,7 +102,7 @@ pdf, html
 text, pdf, html
 
 
-**[06]** _[F] : label figure 
+**[07]** _[F] : label figure 
 -----------------------------------------
 
 .. raw:: html
@@ -133,7 +116,7 @@ text, pdf, html
 text, pdf, html
 
 
-**[07]** _[LS] :  section link 
+**[08]** _[LS] :  section link 
 -----------------------------------------
 
 .. raw:: html
@@ -147,7 +130,7 @@ text, pdf, html
 text, pdf, html
 
 
-**[08]** _[LR] :  doc link 
+**[09]** _[LR] :  doc link 
 -----------------------------------------
 
 .. raw:: html
@@ -161,7 +144,7 @@ text, pdf, html
 text, pdf, html
 
 
-**[09]** _[LU] :  url link 
+**[10]** _[LU] :  url link 
 -----------------------------------------
 
 .. raw:: html
@@ -175,7 +158,7 @@ text, pdf, html
 text, pdf, html
 
 
-**[10]** _[P] : new page
+**[11]** _[P] : new page
 -----------------------------------------
 
 .. raw:: html
@@ -189,7 +172,7 @@ text, pdf, html
 text, pdf, html
 
 
-**[11]** _[S] : sympy equation
+**[12]** _[S] : sympy equation
 -----------------------------------------
 
 .. raw:: html
@@ -203,7 +186,7 @@ text, pdf, html
 text, pdf, html
 
 
-**[12]** _[T]  label table
+**[13]** _[T]  label table
 ------------------------------------------
 
 .. raw:: html
@@ -217,7 +200,7 @@ text, pdf, html
 text, pdf, html
 
 
-**[13]** _[V] : label values table 
+**[14]** _[V] : label values table 
 -----------------------------------------
 
 .. raw:: html
@@ -231,7 +214,7 @@ text, pdf, html
 text, pdf, html
 
 
-**[14]** __ : line
+**[15]** __ : line
 --------------------------------------- 
 .. raw:: html
 
@@ -244,7 +227,7 @@ text, pdf, html
 text, pdf, html
 
 
-**[15]** _[[B]] : indent bold
+**[16]** _[[B]] : indent bold
 ------------------------------------------------
 
 .. raw:: html
@@ -264,7 +247,7 @@ text, pdf, html
 text, pdf, html
 
 
-**[16]** _[[C]] : code or literal text
+**[17]** _[[C]] : code or literal text
 ------------------------------------------------
 
 .. raw:: html
@@ -284,7 +267,7 @@ text, pdf, html
 text, pdf, html
 
 
-**[17]** _[[L]] : LaTeX
+**[18]** _[[L]] : LaTeX
 ------------------------------------------------
 
 .. raw:: html
@@ -304,7 +287,7 @@ text, pdf, html
 pdf, html
 
 
-**[18]** _[[T]] : topic
+**[19]** _[[T]] : topic
 ------------------------------------------------
 
 .. raw:: html
@@ -325,7 +308,7 @@ text, pdf, html
 
 
 
-**[19]** _[[C]] : code or literal
+**[20]** _[[C]] : code or literal
 ------------------------------------------------
 
 .. raw:: html
@@ -345,7 +328,7 @@ text, pdf, html
 text, pdf, html
 
 
-**[20]** _[[I]] : indent italic
+**[21]** _[[I]] : indent italic
 ------------------------------------------------
 
 .. raw:: html
@@ -365,7 +348,7 @@ text, pdf, html
 text, pdf, html
 
 
-**[21]** _[[L]] : LaTeX
+**[22]** _[[L]] : LaTeX
 ------------------------------------------------
 
 .. raw:: html
@@ -384,7 +367,7 @@ text, pdf, html
 
     pdf, html
 
-**[22]** _[[N]] :  indent
+**[23]** _[[N]] :  indent
 ----------------------------------------------
 
 .. raw:: html
@@ -404,7 +387,7 @@ text, pdf, html
 text, pdf, html
 
 
-**[23]** _[[T]] : topic
+**[24]** _[[T]] : topic
 ------------------------------------------------
 
 .. raw:: html
@@ -425,7 +408,22 @@ text, pdf, html
 text, pdf, html
 
 
-**[24]** | IMAGE | 
+**[25]** COMMAND KEY
+----------------------
+
+.. raw:: html
+
+    <hr>
+
+
+.. topic:: | COMMAND | parameters
+
+  example
+
+file types
+
+
+**[26]** | IMAGE | 
 -------------------------------------------
 
 .. raw:: html
@@ -441,7 +439,7 @@ reads PNG and JPEG files (.png, jpg)
 PDF, HTML
 
 
-**[25]** | IMAGE2 | - adjacent images 
+**[27]** | IMAGE2 | - adjacent images 
 --------------------------------------------------
 
 .. raw:: html
@@ -457,7 +455,7 @@ reads PNG and JPEG files (.png, jpg)
 PDF, HTML
 
 
-**[26]** | TABLE | 
+**[28]** | TABLE | 
 ------------------------------------------
 
 .. raw:: html
@@ -473,7 +471,7 @@ reads text, csv and EXCEL files (.txt, .csv, .xls)
 PDF, HTML, text
 
 
-**[27]** | TEXT | 
+**[29]** | TEXT | 
 ------------------------------------------
 
 .. raw:: html
