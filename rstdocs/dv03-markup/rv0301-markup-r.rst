@@ -17,22 +17,6 @@ _[[TAG]] : block tag description
 file types
 
 
-**COMMAND KEY**  
-------------------
-
-.. raw:: html
-
-    <hr>
-
-
-.. topic:: | COMMAND | parameters
-
-  example
-
-file types
-
-
-
 
 **[01]** _[[WIN]] : batch
 ------------------------------------
@@ -71,7 +55,7 @@ file types
 
 
 **[03]** _[[LINUX]] : shell 
------------------------------------------
+---------------------------------
 
 .. raw:: html
 
@@ -89,7 +73,23 @@ file types
 
 
 
-**[04]** | WIN | - command script
+**[04]** COMMAND KEY
+----------------------
+
+.. raw:: html
+
+    <hr>
+
+
+.. topic:: | COMMAND | parameters
+
+  example
+
+file types
+
+
+
+**[05]** | WIN | - command script
 -------------------------------------------
 
 .. raw:: html
@@ -99,9 +99,13 @@ file types
 
 .. topic:: | WIN | path | filename
 
-   reads .txt, .cmd, .bat  files
+  | WIN | rvsource | file.cmd
 
-**[05]** | MACOS | - shell script
+
+reads .txt, .cmd, .bat  files
+
+
+**[06]** | MACOS | - shell script
 -------------------------------------------
 
 .. raw:: html
@@ -111,9 +115,13 @@ file types
 
 .. topic:: | MACOS | path | filename  
 
-   reads .sh files
 
-**[06]** | LINUX | - shell script
+  | MACOS | rvsource | file.sh
+
+
+reads .sh files
+
+**[07]** | LINUX | - shell script
 -------------------------------------------
 
 .. raw:: html
@@ -122,5 +130,8 @@ file types
 
 .. topic:: | LINUX | path | filename 
 
-   reads .sh files
+  | LINUX | rvsource | file.sh   
+
+
+reads .sh files
 
