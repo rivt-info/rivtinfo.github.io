@@ -1,7 +1,7 @@
 3.1  rv. **R** - Run
 ======================
 
-**TAG KEY**  
+**[01]** TAG KEY
 ----------------------------------
 
 _[[TAG]] : block tag description
@@ -33,7 +33,7 @@ file types
   ...
    _[[Q]]
 
-  text, pdf, html
+text, pdf, html
 
 
 **[02]** _[[MACOS]] : shell
@@ -51,7 +51,7 @@ file types
   ...
    _[[Q]]
 
-  text, pdf, html
+text, pdf, html
 
 
 **[03]** _[[LINUX]] : shell 
@@ -69,7 +69,7 @@ file types
   ...
    _[[Q]]
 
-  text, pdf, html
+text, pdf, html
 
 
 
@@ -101,7 +101,6 @@ file types
 
   | WIN | rvsource | file.cmd
 
-
 reads .txt, .cmd, .bat  files
 
 
@@ -118,8 +117,8 @@ reads .txt, .cmd, .bat  files
 
   | MACOS | rvsource | file.sh
 
-
 reads .sh files
+
 
 **[07]** | LINUX | - shell script
 -------------------------------------------
@@ -131,7 +130,6 @@ reads .sh files
 .. topic:: | LINUX | path | filename 
 
   | LINUX | rvsource | file.sh   
-
 
 reads .sh files
 
