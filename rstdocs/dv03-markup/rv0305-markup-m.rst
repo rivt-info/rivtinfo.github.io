@@ -1,4 +1,4 @@
-3.05 **rv.M** - Meta
+3.05 rv. **M** - Meta
 ===========================
 
 *line tags* format a line of text and are denoted with _[TAG], usually at the
