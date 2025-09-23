@@ -16,6 +16,9 @@ _[[TAG]] : block tag description
 
 file types
 
+.. raw:: html
+
+    <hr>
 
 
 **[02]** _[[WIN]] : batch
