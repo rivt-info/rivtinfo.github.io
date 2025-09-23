@@ -5,24 +5,24 @@
 **[01]** Line tags
 ----------------------
 
-================ ========================== ====================================
+============= ========================== =======================================
 Scope             Line Tags                    Description (doc scope)
-================ ========================== ====================================
-rv.I                 _____                    horizontal line, >4 underscores 
-rv.I, .V             _[P]                     new page (all)
-rv.I              *description* _[D]          footnote description (all)
-rv.I              text _[#] text              footnote (all)
-rv.I              text _[L] *doc link*        doc link (all)
-rv.I              text _[R] *report link*     report link (all)
-rv.I, .T          text _[U] *url*             url link (all)
-rv.I, .V          *equation* _[S]             format symbol math (all) 
-rv.I, .V          *text* _[B]                 center bold text (pdf, html)
-rv.I, .V          *text* _[C]                 center text (all)
-rv.I, .V          *label* _[E]                equation label (all)
-rv.I, .V          *caption* _[F]              image label (all) [1]
-rv.I, .V          *title* _[T]                table label (all) [1]
-rv.V              *title* _[V]                values table label (all) [1]
-================ ========================== ====================================
+============= ========================== =======================================
+I, V              _____                    horizontal line, >4 underscores 
+I, V              _[P]                     new page (all)
+I              *description* _[D]          endnote description (all)
+I              text _[#] text              endnote (all)
+I              text _[L] *doc link*        doc link (all)
+I              text _[R] *report link*     report link (all)
+I, T           text _[U] *url*             url link (all)
+I, V           *equation* _[S]             format symbol math (all) 
+I              *text* _[B]                 center bold text (pdf, html)
+I              *text* _[C]                 center text (all)
+I, V           *label* _[E]                equation label (all)
+I, V           *caption* _[F]              image label (all) [1]
+I, V           *title* _[T]                table label (all) [1]
+V              *title* _[V]                values table label (all) [1]
+============= ========================== =======================================
 
 [1] tag may be added to caption and title parameters in *commands*
 
@@ -30,9 +30,9 @@ rv.V              *title* _[V]                values table label (all) [1]
 **[02]** Block tags
 ----------------------
 
-============ ============================= ======================================
+============ ============================= =====================================
 Scope        Block Tags                    Description (doc scope)
-============ ============================= ======================================
+============ ============================= =====================================
 R             _[[WIN]] *description*          Windows command script (all)
 R             _[[MACOS]] *description*        Mac shell script (all)
 R             _[[LINUX]] *description*        Linux shell script (all)
@@ -53,29 +53,29 @@ T             _[[LATEX]] *description*        LaTeX commands (all)
 T             _[[HTML]] *description*         HTML commands (all)
 M             _[[AUTH]] *description*         author data (all)
 M             _[[FORK]] *description*         fork data (all)
-============ ============================= ======================================
+============ ============================= =====================================
 
 
 **[03]** Commands
 -------------------
 
-========= ==================================================== ==================
+========= ==================================================== =================
 Scope           (Read/Write)  | Command | parameters             file types
-========= ==================================================== ==================
-rv.R       (Rd) | LINUX | path | fname                                sh
-rv.R       (Rd) | MACOS | path | fname                                sh
-rv.R       (Rd) | WIN | path | fname                                  bat, cmd
-rv.I       (Rd) | TEXT | path | fname | title                     txt, tex, rst
-rv.I, .V   (Rd) | TABLE | path | fname | title, width, l;c;r      csv, txt, xlsx
-rv.I, .V   (Rd) | IMAGE | path | fname |  caption, scale              png, jpg
-rv.I, .V   (Rd) | IMAGE2 | path | fname | c1, c2, s1, s2              png, jpg
-rv.V       (Rd) | VALUES | path | fname | title, [rows]               csv
-rv.V       (Wr)  a = 1 + 1  | unit1, unit2, decimal | descrip      assign value
-rv.V       (Wr)  b := a + 3 | unit1, unit2, decimal | ref          define value
-rv.T       (Rd) | HTML | path | fname                                  html
-rv.T       (Rd) | LATEX | path | fname                                tex
-rv.T       (Rd) | PYTHON | path | fname                                py
-rv.T       (Rd) | QCAD   | path | fname                                js
-rv.D       (Wr) | APPEND | path | fname                               pdf
-rv.D       (Wr) | DOCS | path | fname | rpdf; tpdf; txt; html      pdf, txt, html
-========= ==================================================== ==================
+========= ==================================================== =================
+R          (Rd) | LINUX | path | fname                                sh
+R          (Rd) | MACOS | path | fname                                sh
+R          (Rd) | WIN | path | fname                                  bat, cmd
+I          (Rd) | TEXT | path | fname | title                    txt, tex, rst
+I, V       (Rd) | TABLE | path | fname | title, width, l;c;r     csv, txt, xlsx
+I, V       (Rd) | IMAGE | path | fname |  caption, scale              png, jpg
+I, V       (Rd) | IMAGE2 | path | fname | c1, c2, s1, s2              png, jpg
+V          (Rd) | VALUES | path | fname | title, [rows]               csv
+V          (Wr)  a = 1 + 1  | unit1, unit2, decimal | descrip     assign value
+V          (Wr)  b := a + 3 | unit1, unit2, decimal | ref         define value
+T          (Rd) | HTML | path | fname                                 html
+T          (Rd) | LATEX | path | fname                                tex
+T          (Rd) | PYTHON | path | fname                               py
+T          (Rd) | QCAD   | path | fname                               js
+D          (Wr) | APPEND | path | fname                               pdf
+D          (Wr) | DOCS | path | fname | rpdf; tpdf; txt; html    pdf, txt, html
+========= ==================================================== =================
