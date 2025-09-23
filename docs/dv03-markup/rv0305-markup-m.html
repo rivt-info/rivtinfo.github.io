@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="../_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="../_static/favicon-32x32.png" type="image/png">
-    <title>3. Markup &#8212; Home</title>
+    <title>3.05 rv.M - Meta &#8212; Home</title>
   
   
   
@@ -56,11 +56,11 @@
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'dv03-markup/_dv03-markup';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'dv03-markup/rv0305-markup-m';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="3.1 rv.R - Run" href="rv0301-markup-r.html" />
-    <link rel="prev" title="2.2 - VSCode and Extensions" href="../dv02-install/vscode.html" />
+    <link rel="next" title="3.6 rv.D - Doc" href="rv0306-markup-d.html" />
+    <link rel="prev" title="3.5 rv.T - Tools" href="rv0304-markup-t.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -160,7 +160,7 @@
 
 
 <li class="nav-item current active">
-  <a class="nav-link nav-internal" href="#">
+  <a class="nav-link nav-internal" href="_dv03-markup.html">
     3. Markup
   </a>
 </li>
@@ -267,7 +267,7 @@
 
 
 <li class="nav-item current active">
-  <a class="nav-link nav-internal" href="#">
+  <a class="nav-link nav-internal" href="_dv03-markup.html">
     3. Markup
   </a>
 </li>
@@ -312,12 +312,12 @@
         <div class="sidebar-primary-item">
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
-    <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+    <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="rv0301-markup-r.html">3.1  <strong>rv.R</strong> - Run</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0302-markup-i.html">3.3 <strong>rv.I</strong> - Insert</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0303-markup-v.html">3.4 <strong>rv.V</strong> - Values</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0304-markup-t.html">3.5 <strong>rv.T</strong> - Tools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rv0305-markup-m.html">3.05 <strong>rv.M</strong> - Meta</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">3.05 <strong>rv.M</strong> - Meta</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0306-markup-d.html">3.6 <strong>rv.D</strong> - Doc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0307-quick.html">3.11 Quick Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0308-example1.html">3.12 Example</a></li>
@@ -361,7 +361,10 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">3. Markup</span></li>
+    
+    <li class="breadcrumb-item"><a href="_dv03-markup.html" class="nav-link">3. Markup</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">3.05 <strong>rv.M</strong> - Meta</span></li>
   </ul>
 </nav>
 </div>
@@ -378,164 +381,45 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="markup">
-<h1>3. Markup<a class="headerlink" href="#markup" title="Link to this heading">#</a></h1>
-<p><em>rivt markup</em>,  within a <em>rivt string</em>, provides a common language to generate
-text, PDF or HTML <em>docs</em> from the same <em>rivt file</em>. <em>rivt strings</em> are the
-argument to <em>rivt</em> API functions.</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>API Function</p></th>
-<th class="head"><p>Name</p></th>
-<th class="head"><p>Purpose</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>rv.R(rs)</p></td>
-<td><p>Run</p></td>
-<td><p>Run shell commands</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I(rs)</p></td>
-<td><p>Insert</p></td>
-<td><p>Insert static sources</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.V(rs)</p></td>
-<td><p>Value</p></td>
-<td><p>Calculate values</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.T(rs)</p></td>
-<td><p>Tool</p></td>
-<td><p>Functions and scripts</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.D(rs)</p></td>
-<td><p>Doc</p></td>
-<td><p>Write docs</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.M(rs)</p></td>
-<td><p>Meta</p></td>
-<td><p>Meta data for rivt file</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.S(rs)</p></td>
-<td><p>Skip</p></td>
-<td><p>Skip section</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.Q(rs)</p></td>
-<td><p>Quit</p></td>
-<td><p>Exit rivt</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>Each API function starts in the first column (Python syntax) and defines a <em>doc
-section</em>. The first line in a <em>rivt string</em> is a <em>section header</em>. Subsequent
-lines are indented 4 spaces and include <em>tags</em> and <em>commands</em>.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | write; nowrite, public; private; (rvsource, rvlocal)</span>
-
-<span class="s2">    section content (utf-8 text)</span>
-<span class="s2">    ...</span>
-
-<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-<section id="header">
-<h2><strong>[01]</strong> Header<a class="headerlink" href="#header" title="Link to this heading">#</a></h2>
-<p>A header starts with a <em>section label</em> followed by a vertical separator bar and
-<em>parameters</em> that override the section write behavior. The <em>section label</em> is
-typically the section title, and the write <em>parameters</em> specify:</p>
-<ul class="simple">
-<li><p>whether the section output is written to the <em>doc</em></p></li>
-<li><p>whether the API with its <em>rivt string</em> is written to a <em>public rivt file</em></p></li>
-<li><p>for <em>rv.V</em> only - where the <em>value file</em> is written</p></li>
-</ul>
-<p>They only need to be specified when different from defaults.</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>API function</p></th>
-<th class="head"><p>default write parameters</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>rv.R</p></td>
-<td><p>nowrite, private</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>write, private</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.V</p></td>
-<td><p>write, private, rvsource</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.T</p></td>
-<td><p>nowrite, private</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.D</p></td>
-<td><p>nowrite, private</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.M</p></td>
-<td><p>nowrite, private</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.S</p></td>
-<td><p>nowrite, private</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.Q</p></td>
-<td><p>nowrite, private</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>Sections are numbered, bookmarked and linked when output to <em>doc</em>. If the
-<em>section label</em> is preceeded by two dashes (<em>–section label</em>) the section
-output is merged with the prior section, instead of starting a new one.</p>
-</section>
-<section id="section-content">
-<h2><strong>[02]</strong> Section Content<a class="headerlink" href="#section-content" title="Link to this heading">#</a></h2>
-<p>Section content is indented four spaces (for legibility and code folding) and
-includes <em>tags</em> for text formatting and <em>commands</em> for file operations.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | write; nowrite, public; private</span>
-
-<span class="s2">    section content</span>
-<span class="s2">    ...</span>
-
-<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Text in a <em>rivt string</em> not defined by <em>commands</em> or <em>tags</em> is passed through
-to an intermediate <a class="reference external" href="https://docutils.sourceforge.io/docs/user/rst/quickref.html">RestructuredText file</a> used to publish
-PDF and HTML <em>docs</em>. <em>commands</em> and <em>tags</em> are also converted to <em>reST</em> when
-processing a <em>rivt file</em>. This allows for embedded <em>restructured text</em>, e.g.
-surrounding text with * for italics or ** for bold. <em>Text docs</em> are formatted
-separately.</p>
-</section>
-<section id="tags-and-commands">
-<h2><strong>[03]</strong> Tags and Commands<a class="headerlink" href="#tags-and-commands" title="Link to this heading">#</a></h2>
-<p><a class="reference internal" href="rv0307-quick.html"><span class="doc">Tags</span></a></p>
+  <section id="rv-m-meta">
+<h1>3.05 <strong>rv.M</strong> - Meta<a class="headerlink" href="#rv-m-meta" title="Link to this heading">#</a></h1>
 <p><em>line tags</em> format a line of text and are denoted with _[TAG], usually at the
 end of the line. <em>Block tags</em> format a block of text that begin with _[[TAG]]
 on the first line and end with _[[Q]] after the last line.</p>
-<p><em>rivt tags</em> come <em>Line tags</em> format a line of text and are denoted
-with _[<strong>TAG</strong>], typically added at the end of the line.</p>
-<p><em>Block tags</em> evaluate a multi-line text block that starts
-with _[[<strong>TAG</strong>]] and ends with _[[<strong>Q</strong>]].</p>
-<p><a class="reference internal" href="rv0307-quick.html"><span class="doc">Commands</span></a></p>
-<p><em>rivt commands</em> read and write external files and assign values to variables.
-They typically start in the first column with a vertical bar ( | ) followed by
-the command name and parameters. The exceptions to this pattern are the
-assignment ( = ) and definition ( := ) commands which are used to assign values
-and evaluate equations.</p>
-<p>Parameter options are separated with commas and parameter elements by
-semicolons. Path names can be directly specified (relative to the project
-<em>source folder</em>) or specified with an alias:</p>
-<blockquote>
-<div><p><em>rvsource</em> : this alias directs <em>rivtlib</em> to look for the file in the
-source folder. For example if the <em>rivt file</em> is in division 1
-and the API function is <em>Insert</em> the folder <em>i01</em> in <em>source</em> is searched.</p>
-<p><em>rvlocal</em> : this alias directs <em>rivtlib</em> to look for the file in the <em>rivt
-file</em> directory. It is used when a <em>single doc</em>, ratherh than a <em>report
-doc</em> is processed.</p>
-</div></blockquote>
-<p>The <em>rivt project</em> folders are described
-<a class="reference internal" href="../dv04-reports/rv0402-folders.html"><span class="doc">here.</span></a></p>
-<div class="toctree-wrapper compound">
+<section id="key">
+<h2><strong>KEY</strong><a class="headerlink" href="#key" title="Link to this heading">#</a></h2>
+<p>_[[TAG]] : block tag description</p>
+<hr><aside class="topic">
+<p class="topic-title">tag</p>
+<p>syntax</p>
+</aside>
+<p>types of output</p>
+</section>
+<section id="auth-author">
+<h2><strong>[01]</strong> _[[AUTH]] : Author<a class="headerlink" href="#auth-author" title="Link to this heading">#</a></h2>
+<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[AUTH]] Authors
+authors: Sarah, Jon
+version: 0.3.1
+email: sarah@email.com, jon@email.com
+repo: github.com/jonstuff/rivt-example
+license: https://opensource.org/license/mit/
+_[[Q]]
+</pre></div>
 </div>
+<p>text, pdf, html</p>
+</section>
+<section id="fork-contributor">
+<h2><strong>[02]</strong> _[[FORK]] : Contributor<a class="headerlink" href="#fork-contributor" title="Link to this heading">#</a></h2>
+<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[FORK]] Contributor 1
+contribs: Lisa
+version: 0.0.4
+email: lisa@email.com
+repo: github.com/lisastuff/rivt-files
+license: https://opensource.org/license/mit/
+_[[Q]]
+</pre></div>
+</div>
+<p>text, pdf, html</p>
 </section>
 </section>
 
@@ -550,20 +434,20 @@ doc</em> is processed.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../dv02-install/vscode.html"
+       href="rv0304-markup-t.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">2.2 - VSCode and Extensions</p>
+        <p class="prev-next-title">3.5 <strong>rv.T</strong> - Tools</p>
       </div>
     </a>
     <a class="right-next"
-       href="rv0301-markup-r.html"
+       href="rv0306-markup-d.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">3.1  <strong>rv.R</strong> - Run</p>
+        <p class="prev-next-title">3.6 <strong>rv.D</strong> - Doc</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -586,9 +470,9 @@ doc</em> is processed.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#header"><strong>[01]</strong> Header</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-content"><strong>[02]</strong> Section Content</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tags-and-commands"><strong>[03]</strong> Tags and Commands</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key"><strong>KEY</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#auth-author"><strong>[01]</strong> _[[AUTH]] : Author</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fork-contributor"><strong>[02]</strong> _[[FORK]] : Contributor</a></li>
 </ul>
   </nav></div>
 

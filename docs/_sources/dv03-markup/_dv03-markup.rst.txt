@@ -40,8 +40,8 @@ A header starts with a *section label* followed by a vertical separator bar and
 typically the section title, and the write *parameters* specify:
 
 - whether the section output is written to the *doc* 
-- whether the function and *rivt string* are written to a *public rivt file* 
-- where the *value file* is written (rv.V only)
+- whether the API with its *rivt string* is written to a *public rivt file* 
+- for *rv.V* only - where the *value file* is written
 
 They only need to be specified when different from defaults.
 
@@ -53,6 +53,7 @@ rv.I             write, private
 rv.V             write, private, rvsource
 rv.T             nowrite, private
 rv.D             nowrite, private
+rv.M             nowrite, private
 rv.S             nowrite, private
 rv.Q             nowrite, private
 ============= ==============================
@@ -91,7 +92,7 @@ separately.
 **[03]** Tags and Commands
 ----------------------------
 
-:doc:`Tags </dv03-markup/rv0312-quick>`
+:doc:`Tags </dv03-markup/rv0307-quick>`
 
 *line tags* format a line of text and are denoted with _[TAG], usually at the
 end of the line. *Block tags* format a block of text that begin with _[[TAG]]
@@ -103,31 +104,40 @@ with _[**TAG**], typically added at the end of the line.
 *Block tags* evaluate a multi-line text block that starts
 with _[[**TAG**]] and ends with _[[**Q**]].
 
-:doc:`Commands </dv03-markup/rv0312-quick>`
+:doc:`Commands </dv03-markup/rv0307-quick>`
+
 
 *rivt commands* read and write external files and assign values to variables.
 They typically start in the first column with a vertical bar ( | ) followed by
-the command name, file path and parameters. 
+the command name and parameters. The exceptions to this pattern are the
+assignment ( = ) and definition ( := ) commands which are used to assign values
+and evaluate equations. 
 
-*Commands* read and write files and assign values to variables. They start in
-the first column with a vertical bar, followed by the command name, the
-relative file path, file path and parameters. The exceptions are the equations
-assign (=) and define (:=) commands.
+Parameter options are separated with commas and parameter elements by
+semicolons. Path names can be directly specified (relative to the project
+*source folder*) or specified with an alias:
+
+    *rvsource* : this alias directs *rivtlib* to look for the file in the
+    source folder. For example if the *rivt file* is in division 1
+    and the API function is *Insert* the folder *i01* in *source* is searched.
+
+    *rvlocal* : this alias directs *rivtlib* to look for the file in the *rivt
+    file* directory. It is used when a *single doc*, ratherh than a *report
+    doc* is processed.
+
+The *rivt project* folders are described 
+:doc:`here. </dv04-reports/rv0402-folders>`
 
 
 .. toctree::
     :maxdepth: 1
     :hidden:
 
-    rv0301-tagr.rst
-    rv0302-tagi.rst
-    rv0303-tagv.rst
-    rv0304-tagt.rst
-    rv0305-tagm.rst
-    rv0306-cmdr.rst
-    rv0307-cmdi.rst
-    rv0308-cmdv.rst
-    rv0309-cmdt.rst
-    rv0310-cmdd.rst
-    rv0311-example1.rst
-    rv0312-quick.rst
+    rv0301-markup-r.rst
+    rv0302-markup-i.rst
+    rv0303-markup-v.rst
+    rv0304-markup-t.rst
+    rv0305-markup-m.rst
+    rv0306-markup-d.rst
+    rv0307-quick.rst
+    rv0308-example1.rst
