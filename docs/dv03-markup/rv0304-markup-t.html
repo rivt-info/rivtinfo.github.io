@@ -383,9 +383,8 @@
                   
   <section id="rv-t-tools">
 <h1>3.4 rv. <strong>T</strong> - Tools<a class="headerlink" href="#rv-t-tools" title="Link to this heading">#</a></h1>
-<section id="key">
-<h2><strong>KEY</strong><a class="headerlink" href="#key" title="Link to this heading">#</a></h2>
-<p>_[TAG] : line tag description</p>
+<section id="tag-key">
+<h2><strong>[01]</strong> TAG KEY<a class="headerlink" href="#tag-key" title="Link to this heading">#</a></h2>
 <p>_[[TAG]] : block tag description</p>
 <hr><aside class="topic">
 <p class="topic-title">syntax</p>
@@ -393,7 +392,7 @@
 </aside>
 </section>
 <section id="python-python-code">
-<h2><strong>[01]</strong> _[[PYTHON]] : Python code<a class="headerlink" href="#python-python-code" title="Link to this heading">#</a></h2>
+<h2><strong>[02]</strong> _[[PYTHON]] : Python code<a class="headerlink" href="#python-python-code" title="Link to this heading">#</a></h2>
 <hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[PYTHON]] description
 code
 code
@@ -404,7 +403,7 @@ _[[Q]]
 <p>text, pdf, html</p>
 </section>
 <section id="ruby-ruby-code">
-<h2><strong>[02]</strong> _[[RUBY]] : Ruby code<a class="headerlink" href="#ruby-ruby-code" title="Link to this heading">#</a></h2>
+<h2><strong>[03]</strong> _[[RUBY]] : Ruby code<a class="headerlink" href="#ruby-ruby-code" title="Link to this heading">#</a></h2>
 <hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[RUBY]] description
 code
 code
@@ -415,7 +414,7 @@ _[[Q]]
 <p>text, pdf, html</p>
 </section>
 <section id="html-html-code">
-<h2><strong>[03]</strong> _[[HTML]] : HTML code<a class="headerlink" href="#html-html-code" title="Link to this heading">#</a></h2>
+<h2><strong>[04]</strong> _[[HTML]] : HTML code<a class="headerlink" href="#html-html-code" title="Link to this heading">#</a></h2>
 <hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span> _[[HTML]]
  code
  code
@@ -427,7 +426,7 @@ pdf, html
 </div>
 </section>
 <section id="latex-latex-code">
-<h2><strong>[04]</strong> _[[LATEX]] : LaTeX code<a class="headerlink" href="#latex-latex-code" title="Link to this heading">#</a></h2>
+<h2><strong>[05]</strong> _[[LATEX]] : LaTeX code<a class="headerlink" href="#latex-latex-code" title="Link to this heading">#</a></h2>
 <hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[LATEX]]
 code
 code
@@ -438,29 +437,37 @@ pdf, html
 </pre></div>
 </div>
 </section>
+<section id="command-key">
+<h2><strong>[06]</strong> COMMAND KEY<a class="headerlink" href="#command-key" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">| COMMAND | parameters</p>
+<p>example</p>
+</aside>
+<p>file types</p>
+</section>
 <section id="python-functions">
-<h2><strong>[01]</strong> | PYTHON | functions<a class="headerlink" href="#python-functions" title="Link to this heading">#</a></h2>
+<h2><strong>[07]</strong> | PYTHON | functions<a class="headerlink" href="#python-functions" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| PYTHON | path | filename</p>
 <p>reads .py files</p>
 </aside>
 </section>
 <section id="html-markup">
-<h2><strong>[02]</strong> | HTML | markup<a class="headerlink" href="#html-markup" title="Link to this heading">#</a></h2>
+<h2><strong>[08]</strong> | HTML | markup<a class="headerlink" href="#html-markup" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| HTML | path | filename</p>
 <p>reads .html files</p>
 </aside>
 </section>
 <section id="latex-code">
-<h2><strong>[03]</strong> | LATEX | code<a class="headerlink" href="#latex-code" title="Link to this heading">#</a></h2>
+<h2><strong>[09]</strong> | LATEX | code<a class="headerlink" href="#latex-code" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| LATEX | path | filename</p>
 <p>reads .tex file</p>
 </aside>
 </section>
 <section id="qcad-script">
-<h2><strong>[04]</strong> | QCAD | script<a class="headerlink" href="#qcad-script" title="Link to this heading">#</a></h2>
+<h2><strong>[10]</strong> | QCAD | script<a class="headerlink" href="#qcad-script" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| QCAD | path | filename</p>
 <p>reads .js file</p>
@@ -515,15 +522,16 @@ pdf, html
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key"><strong>KEY</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-python-code"><strong>[01]</strong> _[[PYTHON]] : Python code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ruby-ruby-code"><strong>[02]</strong> _[[RUBY]] : Ruby code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-html-code"><strong>[03]</strong> _[[HTML]] : HTML code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex-latex-code"><strong>[04]</strong> _[[LATEX]] : LaTeX code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-functions"><strong>[01]</strong> | PYTHON | functions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-markup"><strong>[02]</strong> | HTML | markup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex-code"><strong>[03]</strong> | LATEX | code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qcad-script"><strong>[04]</strong> | QCAD | script</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tag-key"><strong>[01]</strong> TAG KEY</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-python-code"><strong>[02]</strong> _[[PYTHON]] : Python code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ruby-ruby-code"><strong>[03]</strong> _[[RUBY]] : Ruby code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-html-code"><strong>[04]</strong> _[[HTML]] : HTML code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex-latex-code"><strong>[05]</strong> _[[LATEX]] : LaTeX code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#command-key"><strong>[06]</strong> COMMAND KEY</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-functions"><strong>[07]</strong> | PYTHON | functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-markup"><strong>[08]</strong> | HTML | markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex-code"><strong>[09]</strong> | LATEX | code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qcad-script"><strong>[10]</strong> | QCAD | script</a></li>
 </ul>
   </nav></div>
 

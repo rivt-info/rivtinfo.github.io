@@ -2,10 +2,8 @@
 =======================
 
 
-**KEY**  
+**[01]** TAG KEY
 --------------------------------------------
-
-_[TAG] : line tag description
 
 _[[TAG]] : block tag description
 
@@ -18,7 +16,7 @@ _[[TAG]] : block tag description
     types of output
 
 
-**[01]** _[[PYTHON]] : Python code
+**[02]** _[[PYTHON]] : Python code
 ------------------------------------------------
 
 .. raw:: html
@@ -37,7 +35,7 @@ _[[TAG]] : block tag description
 text, pdf, html
 
 
-**[02]** _[[RUBY]] : Ruby code
+**[03]** _[[RUBY]] : Ruby code
 ------------------------------------------------
 
 .. raw:: html
@@ -56,7 +54,7 @@ text, pdf, html
 
 
 
-**[03]** _[[HTML]] : HTML code
+**[04]** _[[HTML]] : HTML code
 ------------------------------------------------
 
 .. raw:: html
@@ -75,7 +73,7 @@ text, pdf, html
     pdf, html
 
 
-**[04]** _[[LATEX]] : LaTeX code
+**[05]** _[[LATEX]] : LaTeX code
 ------------------------------------------------
 
 .. raw:: html
@@ -93,9 +91,23 @@ text, pdf, html
     pdf, html
 
 
+**[06]** COMMAND KEY
+----------------------
+
+.. raw:: html
+
+    <hr>
 
 
-**[01]** | PYTHON | functions 
+.. topic:: | COMMAND | parameters
+
+  example
+
+file types
+
+
+
+**[07]** | PYTHON | functions 
 -------------------------------------------
 
 .. raw:: html
@@ -108,7 +120,7 @@ text, pdf, html
    reads .py files
 
 
-**[02]** | HTML | markup
+**[08]** | HTML | markup
 -------------------------------------------
 
 .. raw:: html
@@ -121,7 +133,7 @@ text, pdf, html
    reads .html files
 
 
-**[03]** | LATEX | code
+**[09]** | LATEX | code
 -------------------------------------------
 
 .. raw:: html
@@ -133,7 +145,7 @@ text, pdf, html
    reads .tex file
 
 
-**[04]** | QCAD | script
+**[10]** | QCAD | script
 -------------------------------------------
 
 .. raw:: html

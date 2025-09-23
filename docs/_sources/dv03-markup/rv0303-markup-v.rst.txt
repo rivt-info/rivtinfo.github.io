@@ -265,8 +265,23 @@ text, pdf, html
 text, pdf, html  
 
 
+**[16]** COMMAND KEY
+----------------------
 
-**[16]** | IMAGE | 
+.. raw:: html
+
+    <hr>
+
+
+.. topic:: | COMMAND | parameters
+
+  example
+
+file types
+
+
+
+**[17]** | IMG | - insert image
 -------------------------------------------
 
 .. raw:: html
@@ -278,7 +293,7 @@ text, pdf, html
     - reads PNG and JPEG files (.png, jpg)
     - PDF, HTML
 
-**[17]** | IMAGE2 | - adjacent images 
+**[18]** | IMG2 | - adjacent images 
 --------------------------------------------------
 
 .. raw:: html
@@ -290,7 +305,7 @@ text, pdf, html
     - reads PNG and JPEG files (.png, jpg)
     - PDF, HTML
 
-**[18]** | TABLE | 
+**[19]** | TABLE | 
 ------------------------------------------
 
 .. raw:: html
@@ -303,7 +318,7 @@ text, pdf, html
     - PDF, HTML, text
 
 
-**[19]** | VALUES | 
+**[20]** | VALUES | 
 -------------------------------------------
 
 .. raw:: html
@@ -315,7 +330,7 @@ text, pdf, html
     - reads values.txt file
     - PDF, HTML
 
-**[20]** **=** - assign value
+**[21]** **=** - assign value
 -------------------------------------------
 
 .. raw:: html
@@ -327,7 +342,7 @@ text, pdf, html
     - assigns value to a variable
     - PDF, HTML
 
-**[21]** **:=** - define equation
+**[22]** **:=** - define equation
 -------------------------------------------
 
 .. raw:: html

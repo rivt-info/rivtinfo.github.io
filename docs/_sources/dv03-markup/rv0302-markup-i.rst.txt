@@ -409,14 +409,14 @@ text, pdf, html
 file types
 
 
-**[26]** | IMAGE | - insert image
+**[26]** | IMG | - insert image
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | IMAGE | path | filename | caption _[F], scale
+.. topic:: | IMG | path | filename | caption _[F], scale
 
     example
 
@@ -425,14 +425,14 @@ reads PNG and JPEG files (.png, jpg)
 text, PDF, HTML
 
 
-**[27]** | IMAGE2 | - adjacent images 
+**[27]** | IMG2 | - adjacent images 
 --------------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | IMAGE2 | path | fname1, fname2 | cap1 _[F], cap2 _[F], sc1, sc2 
+.. topic:: | IMG2 | path | fname1, fname2 | cap1 _[F], cap2 _[F], sc1, sc2 
 
     example
 
