@@ -115,7 +115,7 @@ text, pdf, html
 text, pdf, html
 
 
-**[08]** _[LS] :  section link 
+**[08]** _[L] :  section link 
 -----------------------------------------
 
 .. raw:: html
@@ -129,35 +129,7 @@ text, pdf, html
 text, pdf, html
 
 
-**[09]** _[LR] :  doc link 
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *text* _[LR] doc link 
-    
-    text at end of line _[LR] doc-file-name, link label
-
-text, pdf, html
-
-
-**[10]** _[LU] :  url link 
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *text* _[LU] url link  
-    
-    text at end of line _[LU] urlname, link label
-
-text, pdf, html
-
-
-**[11]** _[P] : new page
+**[09]** _[P] : new page
 -----------------------------------------
 
 .. raw:: html
@@ -171,7 +143,22 @@ text, pdf, html
 text, pdf, html
 
 
-**[12]** _[S] : sympy equation
+
+**[10]** _[R] :  report link 
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *text* _[R] report link 
+    
+    text at end of line _[R] doc-file-name, link label
+
+text, pdf, html
+
+
+**[11]** _[S] : sympy equation
 -----------------------------------------
 
 .. raw:: html
@@ -185,7 +172,7 @@ text, pdf, html
 text, pdf, html
 
 
-**[13]** _[T]  label table
+**[12]** _[T]  label table
 ------------------------------------------
 
 .. raw:: html
@@ -199,16 +186,16 @@ text, pdf, html
 text, pdf, html
 
 
-**[14]** _[V] : label values table 
+**[13]** _[U] :  url link 
 -----------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: *title* _[V]
+.. topic:: *text* _[U] url link  
     
-   An autonumbered value table title _[V]
+    text at end of line _[U] urlname, link label
 
 text, pdf, html
 
@@ -422,7 +409,7 @@ text, pdf, html
 file types
 
 
-**[26]** | IMAGE | 
+**[26]** | IMAGE | - insert image
 -------------------------------------------
 
 .. raw:: html
@@ -435,7 +422,7 @@ file types
 
 reads PNG and JPEG files (.png, jpg)
 
-PDF, HTML
+text, PDF, HTML
 
 
 **[27]** | IMAGE2 | - adjacent images 
@@ -451,10 +438,10 @@ PDF, HTML
 
 reads PNG and JPEG files (.png, jpg)
 
-PDF, HTML
+text, PDF, HTML
 
 
-**[28]** | TABLE | 
+**[28]** | TABLE | - format table
 ------------------------------------------
 
 .. raw:: html
@@ -470,7 +457,7 @@ reads text, csv and EXCEL files (.txt, .csv, .xls)
 PDF, HTML, text
 
 
-**[29]** | TEXT | 
+**[29]** | TEXT | - format text
 ------------------------------------------
 
 .. raw:: html

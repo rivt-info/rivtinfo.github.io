@@ -2,9 +2,8 @@
 ========================
 
 
-**TAG KEY**  
+**[01]** TAG KEY
 --------------------------------------
-
 
 _[TAG] : line tag description
 
@@ -21,10 +20,6 @@ types of output
 
 _[[TAG]] : block tag description
         
-.. raw:: html
-
-    <hr>
-
 .. topic::  syntax : description
 
     example
@@ -32,24 +27,13 @@ _[[TAG]] : block tag description
 types of output
 
 
-
-**COMMAND KEY**  
-------------------
-
 .. raw:: html
 
     <hr>
 
 
-.. topic:: | COMMAND | parameters
 
-  example
-
-file types
-
-
-
-**[01]** _[#] :  numbered endnote
+**[02]** _[#] :  numbered endnote
 ----------------------------------------
 
 .. raw:: html
@@ -62,7 +46,7 @@ file types
 
 text, pdf, html
 
-**[02]** _[D] :  footnote text
+**[03]** _[D] :  endnote text
 -------------------------------------------    
 
 .. raw:: html
@@ -75,7 +59,7 @@ text, pdf, html
 
 text, pdf, html
 
-**[03]** _[E] : label equation
+**[04]** _[E] : label equation
 -----------------------------------------
 
 .. raw:: html
@@ -88,7 +72,7 @@ text, pdf, html
 
 text, pdf, html
 
-**[04]** _[F] : label figure 
+**[05]** _[F] : label figure 
 -----------------------------------------
 
 .. raw:: html
@@ -101,46 +85,21 @@ text, pdf, html
 
 text, pdf, html
 
-**[05]** _[LS] :  section link 
+**[08]** _[L] :  section link 
 -----------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: *text* _[LD] doc link
+.. topic:: *text* _[L] doc link
     
-    text at end of line _[LD] section number, link label
+    text at end of line _[L] section number, link label
 
 text, pdf, html
 
-**[06]** _[LR] :  doc link 
------------------------------------------
 
-.. raw:: html
-
-    <hr>
-
-.. topic:: *text* _[LR] doc link 
-    
-    text at end of line _[LR] doc-file-name, link label
-
-text, pdf, html
-
-**[07]** _[LU] :  url link 
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *text* _[LU] url link  
-    
-    text at end of line _[LU] urlname, link label
-
-text, pdf, html
-
-**[08]** _[P] : new page
+**[09]** _[P] : new page
 -----------------------------------------
 
 .. raw:: html
@@ -154,7 +113,22 @@ text, pdf, html
 text, pdf, html
 
 
-**[09]** _[S] : sympy equation
+
+**[10]** _[R] :  report link 
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *text* _[R] report link 
+    
+    text at end of line _[R] doc-file-name, link label
+
+text, pdf, html
+
+
+**[11]** _[S] : sympy equation
 -----------------------------------------
 
 .. raw:: html
@@ -167,7 +141,8 @@ text, pdf, html
 
 text, pdf, html
 
-**[10]** _[T]  label table
+
+**[12]** _[T]  label table
 ------------------------------------------
 
 .. raw:: html
@@ -181,16 +156,32 @@ text, pdf, html
 text, pdf, html
 
 
-**[11]** __ : line
---------------------------------------- 
+**[13]** _[U] :  url link 
+-----------------------------------------
+
 .. raw:: html
 
     <hr>
 
-.. topic:: 4 or more underscores ____ 
-
-   ____    
+.. topic:: *text* _[U] url link  
     
+    text at end of line _[U] urlname, link label
+
+text, pdf, html
+
+
+
+**[14]** _[V] : label values table 
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *title* _[V]
+    
+   An autonumbered value table title _[V]
+
 text, pdf, html
 
 
