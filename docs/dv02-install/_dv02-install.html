@@ -455,10 +455,8 @@ steps:</p>
 <ol class="arabic simple">
 <li><p>install <em>rivt</em> in the <em>uv</em> environment.</p></li>
 <li><p>creates an <em>example1</em> folder</p></li>
-<li><p>downloads an example <em>rivt file</em> into the <em>example1</em> folder</p></li>
+<li><p>downloads a  <em>rivt file</em> into the <em>example1</em> folder</p></li>
 </ol>
-<p>The commands may be downloaded in the file
-<a class="reference download internal" download="" href="../_downloads/d1584fa3f6092072833945a85e5048ff/rivt-install.cmd"><code class="xref download docutils literal notranslate"><span class="pre">rivt-install</span> <span class="pre">file</span></code></a>.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>@echo<span class="w"> </span>on
 REM<span class="w"> </span>run<span class="w"> </span>rivt-install,<span class="w"> </span>download<span class="w"> </span>example1
 REM<span class="w"> </span>install<span class="w"> </span>rivt<span class="w"> </span>from<span class="w"> </span>GitHub
@@ -467,6 +465,16 @@ REM<span class="w"> </span>download<span class="w"> </span>example<span class="w
 mkdir<span class="w"> </span>example1
 <span class="nb">cd</span><span class="w"> </span>example1
 curl<span class="w"> </span>https://github.com/rivt-info/rivt-simple-single-doc<span class="w"> </span>-O<span class="w"> </span>-L
+</pre></div>
+</div>
+<p>The commands are executed by running the file downloaded in Step 2:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rivt-install.cmd
+</pre></div>
+</div>
+<p>The commands may also be downloaded here -
+<a class="reference download internal" download="" href="../_downloads/d1584fa3f6092072833945a85e5048ff/rivt-install.cmd"><code class="xref download docutils literal notranslate"><span class="pre">rivt-install.cmd</span></code></a>.</p>
+<p>Within the <em>example1</em> folder run the rivt file as:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>rv0000-simple-single-doc.py
 </pre></div>
 </div>
 </section>

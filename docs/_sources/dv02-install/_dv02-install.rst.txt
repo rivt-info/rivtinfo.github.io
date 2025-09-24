@@ -118,10 +118,7 @@ steps:
 
 #. install *rivt* in the *uv* environment.
 #. creates an *example1* folder
-#. downloads an example *rivt file* into the *example1* folder
-   
-The commands may be downloaded in the file
-:download:`rivt-install file </_downloads/rivt-install.cmd>`.
+#. downloads a  *rivt file* into the *example1* folder
 
 .. code-block:: bash
 
@@ -133,6 +130,21 @@ The commands may be downloaded in the file
     mkdir example1
     cd example1
     curl https://github.com/rivt-info/rivt-simple-single-doc -O -L
+
+The commands are executed by running the file downloaded in Step 2:
+
+.. code-block:: bash
+      
+    rivt-install.cmd
+
+The commands may also be downloaded here -
+:download:`rivt-install.cmd </_downloads/rivt-install.cmd>`.
+
+Within the *example1* folder run the rivt file as:
+
+.. code-block:: bash
+      
+    python rv0000-simple-single-doc.py
 
 
 .. _rivt-system:
