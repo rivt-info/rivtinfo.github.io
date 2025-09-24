@@ -409,31 +409,32 @@ for Windows is shown below. Other OS installs are similar.</p>
 <p><strong>Step 1. Install uv</strong></p>
 <p>Install <a class="reference external" href="https://docs.astral.sh/uv/getting-started/installation/#pypi">uv</a>.
 The recommended method for installing <em>uv</em> on Windows is:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">winget install --id=astral-sh.uv  -e</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>winget<span class="w"> </span>install<span class="w"> </span>--id<span class="o">=</span>astral-sh.uv<span class="w">  </span>-e
 </pre></div>
 </div>
 <p><strong>Step 2. Create rivt environment</strong> After installing <em>uv</em>, running the
 following commands will set up and activate an isolated <em>rivt</em> environment
 (omit the explanatory REM lines). The commands execute the following steps:</p>
 <ol class="arabic simple">
-<li><p>names the <em>uv</em> environment in the first SET command.</p></li>
+<li><p>names the <em>uv</em> environment in the first SET command</p></li>
+<li><p>changes to the %HOMEPATH% (User) folder</p></li>
 <li><p>removes any prior existing environment, cache and folders.</p></li>
-<li><p>downloads a rivt install file.</p></li>
+<li><p>downloads the rivt install file.</p></li>
 <li><p>creates a new environment and activates it.</p></li>
 </ol>
-<p>The commands may be downloaded and run from the
-<a class="reference download internal" download="" href="../_downloads/fbba7843191b5c636109314de90fb96e/rivt-uv.cmd"><code class="xref download docutils literal notranslate"><span class="pre">rivt-uv.cmd</span> <span class="pre">file</span></code></a>.</p>
+<p>The commands may be downloaded in the file
+<a class="reference download internal" download="" href="../_downloads/fbba7843191b5c636109314de90fb96e/rivt-uv.cmd"><code class="xref download docutils literal notranslate"><span class="pre">rivt-uv.cmd</span></code></a>.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>@echo<span class="w"> </span>on
 REM<span class="w"> </span>clear<span class="w"> </span>existing<span class="w"> </span>project,<span class="w"> </span>download<span class="w"> </span>rivt-install,<span class="w"> </span>create<span class="w"> </span>new<span class="w"> </span>venv
 REM<span class="w"> </span><span class="nb">set</span><span class="w"> </span>rivt<span class="w"> </span>folder
 SET<span class="w"> </span><span class="nv">rvfolder</span><span class="o">=</span>rivt-doc1
 REM<span class="w"> </span>go<span class="w"> </span>to<span class="w"> </span>home<span class="w"> </span>directory
 <span class="nb">cd</span><span class="w"> </span>%HOMEPATH%
-REM<span class="w"> </span>double<span class="w"> </span>check<span class="w"> </span>deactivation<span class="w"> </span><span class="k">for</span><span class="w"> </span>dev<span class="w"> </span>purposes
+REM<span class="w"> </span>double<span class="w"> </span>check<span class="w"> </span>deactivation
 uv<span class="w"> </span>deactivate
 REM<span class="w"> </span>double<span class="w"> </span>check<span class="w"> </span>that<span class="w"> </span>old<span class="w"> </span>project<span class="w"> </span>is<span class="w"> </span>deleted
 rmdir<span class="w"> </span>/s<span class="w"> </span>/q<span class="w"> </span>%rvfolder%
-REM<span class="w"> </span>clean<span class="w"> </span>cache<span class="w"> </span><span class="k">for</span><span class="w"> </span>dev<span class="w"> </span>purposes
+REM<span class="w"> </span>clean<span class="w"> </span>uv<span class="w"> </span>cache
 uv<span class="w"> </span>cache<span class="w"> </span>clean
 REM<span class="w"> </span><span class="nb">set</span><span class="w"> </span>up<span class="w"> </span>venv
 mkdir<span class="w"> </span>%rvfolder%
@@ -448,14 +449,15 @@ REM<span class="w"> </span>activate<span class="w"> </span>venv
 </pre></div>
 </div>
 <p><strong>Step 3. Install rivt</strong></p>
-<p>Within the <em>uv</em> environment running the following set of commands installs
-<em>rivt</em> and an example <em>rivt file</em>. The commands execute the following steps:</p>
+<p>Within the activated <em>uv</em> environment running the following set of commands
+installs <em>rivt</em> and an example <em>rivt file</em>. The commands execute the following
+steps:</p>
 <ol class="arabic simple">
 <li><p>install <em>rivt</em> in the <em>uv</em> environment.</p></li>
 <li><p>creates an <em>example1</em> folder</p></li>
 <li><p>downloads an example <em>rivt file</em> into the <em>example1</em> folder</p></li>
 </ol>
-<p>The commands may be downloaded and run from the
+<p>The commands may be downloaded in the file
 <a class="reference download internal" download="" href="../_downloads/d1584fa3f6092072833945a85e5048ff/rivt-install.cmd"><code class="xref download docutils literal notranslate"><span class="pre">rivt-install</span> <span class="pre">file</span></code></a>.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>@echo<span class="w"> </span>on
 REM<span class="w"> </span>run<span class="w"> </span>rivt-install,<span class="w"> </span>download<span class="w"> </span>example1

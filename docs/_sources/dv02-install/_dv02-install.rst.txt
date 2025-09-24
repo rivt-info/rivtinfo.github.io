@@ -66,7 +66,7 @@ for Windows is shown below. Other OS installs are similar.
 Install `uv <https://docs.astral.sh/uv/getting-started/installation/#pypi>`_. 
 The recommended method for installing *uv* on Windows is: 
 
-.. code-block:: console
+.. code-block:: bash
       
     winget install --id=astral-sh.uv  -e 
 
@@ -75,13 +75,14 @@ The recommended method for installing *uv* on Windows is:
 following commands will set up and activate an isolated *rivt* environment
 (omit the explanatory REM lines). The commands execute the following steps:
 
-#. names the *uv* environment in the first SET command.
+#. names the *uv* environment in the first SET command
+#. changes to the %HOMEPATH% (User) folder
 #. removes any prior existing environment, cache and folders.
-#. downloads a rivt install file.
+#. downloads the rivt install file.
 #. creates a new environment and activates it.
 
-The commands may be downloaded and run from the 
-:download:`rivt-uv.cmd file </_downloads/rivt-uv.cmd>`. 
+The commands may be downloaded in the file
+:download:`rivt-uv.cmd </_downloads/rivt-uv.cmd>`. 
 
 .. code-block:: bash
     
@@ -91,11 +92,11 @@ The commands may be downloaded and run from the
     SET rvfolder=rivt-doc1
     REM go to home directory
     cd %HOMEPATH%
-    REM double check deactivation for dev purposes
+    REM double check deactivation
     uv deactivate
     REM double check that old project is deleted
     rmdir /s /q %rvfolder%
-    REM clean cache for dev purposes
+    REM clean uv cache
     uv cache clean
     REM set up venv
     mkdir %rvfolder%
@@ -111,14 +112,15 @@ The commands may be downloaded and run from the
 
 **Step 3. Install rivt** 
 
-Within the *uv* environment running the following set of commands installs
-*rivt* and an example *rivt file*. The commands execute the following steps:
+Within the activated *uv* environment running the following set of commands
+installs *rivt* and an example *rivt file*. The commands execute the following
+steps:
 
 #. install *rivt* in the *uv* environment.
 #. creates an *example1* folder
 #. downloads an example *rivt file* into the *example1* folder
    
-The commands may be downloaded and run from the 
+The commands may be downloaded in the file
 :download:`rivt-install file </_downloads/rivt-install.cmd>`.
 
 .. code-block:: bash
