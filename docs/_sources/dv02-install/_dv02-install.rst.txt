@@ -12,7 +12,7 @@
 .. topic:: *rivt* 
 
     *rivt* is a Python project that includes `rivtlib <https://www.rivt.info>`_
-    and other :doc:`Python packages </dv02-install/python>`.  After *rivt* 
+    and other :doc:`Python packages </dv02-install/python>`.  When *rivt* 
     is installed, *rivt docs and reports* may be edited and published 
     using a text editor.
 
@@ -71,32 +71,38 @@ The recommended method for installing *uv* on Windows is:
     winget install --id=astral-sh.uv  -e 
 
 
-**Step 2. Create rivt environment** 
+**Step 2. Create rivt environment** After installing *uv*, running the
+following commands will set up and activate an isolated *rivt* environment
+(omit the explanatory REM lines). The commands execute the following steps:
 
-After installing *uv*, run the following commands to set up and activate and
-isolated *rivt* environment called *rivt-test1* (omit the explanatory lines 
-that begin with REM). The commands may also be downloaded and run from a
-:download:`command file </_downloads/rivt-venv.cmd>`. This set of commands 
-can also be run to remove an existing environment and install a clean one. They
+#. names the *uv* environment in the first SET command.
+#. removes any prior existing environment, cache and folders.
+#. downloads a rivt install file.
+#. creates a new environment and activates it.
 
-#. remove any prior existing environment and directory
-#. create a new environment and activates it
+The commands may be downloaded and run from the 
+:download:`rivt-uv.cmd file </_downloads/rivt-uv.cmd>`. 
 
-.. code-block:: batch
-
+.. code-block:: bash
+    
     @echo on
+    REM clear existing project, download rivt-install, create new venv
+    REM set rivt folder
+    SET rvfolder=rivt-doc1
     REM go to home directory
-    cd %HOMEPATH%\
+    cd %HOMEPATH%
     REM double check deactivation for dev purposes
     uv deactivate
-    REM ensure check that the old install is deleted
-    rmdir /s /q rivt-test1 
+    REM double check that old project is deleted
+    rmdir /s /q %rvfolder%
     REM clean cache for dev purposes
     uv cache clean
     REM set up venv
-    mkdir rivt-test1
+    mkdir %rvfolder%
     REM change directory
-    cd rivt-test1
+    cd %rvfolder%
+    REM download rivt install file
+    curl  https://github.com/rivt-info/rivt-win-install/blob/main/rivt-install.cmd -O  
     REM make venv
     uv venv
     REM activate venv
@@ -105,24 +111,26 @@ can also be run to remove an existing environment and install a clean one. They
 
 **Step 3. Install rivt** 
 
-Within the *rivt-test1* environment type the following set of commands
-(omit the explanatory lines that begin with REM). The commands may also be
-downloaded and run from a 
-:download:`command file </_downloads/rivt-install.cmd>`. They
+Within the *uv* environment running the following set of commands installs
+*rivt* and an example *rivt file*. The commands execute the following steps:
 
-#. install *rivt* in the *rivt-test1* environment.
-#. run a small test program built into *rivtlib*.  
-   The last line can be omitted to skip this step. 
+#. install *rivt* in the *uv* environment.
+#. creates an *example1* folder
+#. downloads an example *rivt file* into the *example1* folder
+   
+The commands may be downloaded and run from the 
+:download:`rivt-install file </_downloads/rivt-install.cmd>`.
 
-.. code-block:: batch
+.. code-block:: bash
 
     @echo on
+    REM run rivt-install, download example1
     REM install rivt from GitHub
     uv pip install git+https://github.com/rivtlib-dev/rivtlib#subdirectory=src
-    REM copy test file to base directory
-    copy.venv\Lib\site-packages\rivtlib\scripts\rv0000-simple-doc.py
-    REM run test case
-    python rv0000-simple-doc.py
+    REM download example project
+    mkdir example1
+    cd example1
+    curl https://github.com/rivt-info/rivt-simple-single-doc -O -L
 
 
 .. _rivt-system:

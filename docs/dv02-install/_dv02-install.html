@@ -379,7 +379,7 @@
 <hr><aside class="topic">
 <p class="topic-title"><em>rivt</em></p>
 <p><em>rivt</em> is a Python project that includes <a class="reference external" href="https://www.rivt.info">rivtlib</a>
-and other <a class="reference internal" href="python.html"><span class="doc">Python packages</span></a>.  After <em>rivt</em>
+and other <a class="reference internal" href="python.html"><span class="doc">Python packages</span></a>.  When <em>rivt</em>
 is installed, <em>rivt docs and reports</em> may be edited and published
 using a text editor.</p>
 <p>See <a class="reference internal" href="#rivt-uv"><span class="std std-ref">rivt-uv</span></a> for uv install</p>
@@ -412,52 +412,59 @@ The recommended method for installing <em>uv</em> on Windows is:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">winget install --id=astral-sh.uv  -e</span>
 </pre></div>
 </div>
-<p><strong>Step 2. Create rivt environment</strong></p>
-<p>After installing <em>uv</em>, run the following commands to set up and activate and
-isolated <em>rivt</em> environment called <em>rivt-test1</em> (omit the explanatory lines
-that begin with REM). The commands may also be downloaded and run from a
-<a class="reference download internal" download="" href="../_downloads/4e8cf39529ce067b9c6a4ad699ef9180/rivt-venv.cmd"><code class="xref download docutils literal notranslate"><span class="pre">command</span> <span class="pre">file</span></code></a>. This set of commands
-can also be run to remove an existing environment and install a clean one. They</p>
+<p><strong>Step 2. Create rivt environment</strong> After installing <em>uv</em>, running the
+following commands will set up and activate an isolated <em>rivt</em> environment
+(omit the explanatory REM lines). The commands execute the following steps:</p>
 <ol class="arabic simple">
-<li><p>remove any prior existing environment and directory</p></li>
-<li><p>create a new environment and activates it</p></li>
+<li><p>names the <em>uv</em> environment in the first SET command.</p></li>
+<li><p>removes any prior existing environment, cache and folders.</p></li>
+<li><p>downloads a rivt install file.</p></li>
+<li><p>creates a new environment and activates it.</p></li>
 </ol>
-<div class="highlight-batch notranslate"><div class="highlight"><pre><span></span><span class="p">@</span><span class="k">echo</span> on
-<span class="c1">REM go to home directory</span>
-<span class="k">cd</span> <span class="nv">%HOMEPATH%</span>\
-<span class="c1">REM double check deactivation for dev purposes</span>
-uv deactivate
-<span class="c1">REM ensure check that the old install is deleted</span>
-<span class="k">rmdir</span> /s /q rivt-test1
-<span class="c1">REM clean cache for dev purposes</span>
-uv cache clean
-<span class="c1">REM set up venv</span>
-<span class="k">mkdir</span> rivt-test1
-<span class="c1">REM change directory</span>
-<span class="k">cd</span> rivt-test1
-<span class="c1">REM make venv</span>
-uv venv
-<span class="c1">REM activate venv</span>
+<p>The commands may be downloaded and run from the
+<a class="reference download internal" download="" href="../_downloads/fbba7843191b5c636109314de90fb96e/rivt-uv.cmd"><code class="xref download docutils literal notranslate"><span class="pre">rivt-uv.cmd</span> <span class="pre">file</span></code></a>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>@echo<span class="w"> </span>on
+REM<span class="w"> </span>clear<span class="w"> </span>existing<span class="w"> </span>project,<span class="w"> </span>download<span class="w"> </span>rivt-install,<span class="w"> </span>create<span class="w"> </span>new<span class="w"> </span>venv
+REM<span class="w"> </span><span class="nb">set</span><span class="w"> </span>rivt<span class="w"> </span>folder
+SET<span class="w"> </span><span class="nv">rvfolder</span><span class="o">=</span>rivt-doc1
+REM<span class="w"> </span>go<span class="w"> </span>to<span class="w"> </span>home<span class="w"> </span>directory
+<span class="nb">cd</span><span class="w"> </span>%HOMEPATH%
+REM<span class="w"> </span>double<span class="w"> </span>check<span class="w"> </span>deactivation<span class="w"> </span><span class="k">for</span><span class="w"> </span>dev<span class="w"> </span>purposes
+uv<span class="w"> </span>deactivate
+REM<span class="w"> </span>double<span class="w"> </span>check<span class="w"> </span>that<span class="w"> </span>old<span class="w"> </span>project<span class="w"> </span>is<span class="w"> </span>deleted
+rmdir<span class="w"> </span>/s<span class="w"> </span>/q<span class="w"> </span>%rvfolder%
+REM<span class="w"> </span>clean<span class="w"> </span>cache<span class="w"> </span><span class="k">for</span><span class="w"> </span>dev<span class="w"> </span>purposes
+uv<span class="w"> </span>cache<span class="w"> </span>clean
+REM<span class="w"> </span><span class="nb">set</span><span class="w"> </span>up<span class="w"> </span>venv
+mkdir<span class="w"> </span>%rvfolder%
+REM<span class="w"> </span>change<span class="w"> </span>directory
+<span class="nb">cd</span><span class="w"> </span>%rvfolder%
+REM<span class="w"> </span>download<span class="w"> </span>rivt<span class="w"> </span>install<span class="w"> </span>file
+curl<span class="w">  </span>https://github.com/rivt-info/rivt-win-install/blob/main/rivt-install.cmd<span class="w"> </span>-O
+REM<span class="w"> </span>make<span class="w"> </span>venv
+uv<span class="w"> </span>venv
+REM<span class="w"> </span>activate<span class="w"> </span>venv
 .venv/scripts/activate
 </pre></div>
 </div>
 <p><strong>Step 3. Install rivt</strong></p>
-<p>Within the <em>rivt-test1</em> environment type the following set of commands
-(omit the explanatory lines that begin with REM). The commands may also be
-downloaded and run from a
-<a class="reference download internal" download="" href="../_downloads/d1584fa3f6092072833945a85e5048ff/rivt-install.cmd"><code class="xref download docutils literal notranslate"><span class="pre">command</span> <span class="pre">file</span></code></a>. They</p>
+<p>Within the <em>uv</em> environment running the following set of commands installs
+<em>rivt</em> and an example <em>rivt file</em>. The commands execute the following steps:</p>
 <ol class="arabic simple">
-<li><p>install <em>rivt</em> in the <em>rivt-test1</em> environment.</p></li>
-<li><p>run a small test program built into <em>rivtlib</em>.
-The last line can be omitted to skip this step.</p></li>
+<li><p>install <em>rivt</em> in the <em>uv</em> environment.</p></li>
+<li><p>creates an <em>example1</em> folder</p></li>
+<li><p>downloads an example <em>rivt file</em> into the <em>example1</em> folder</p></li>
 </ol>
-<div class="highlight-batch notranslate"><div class="highlight"><pre><span></span><span class="p">@</span><span class="k">echo</span> on
-<span class="c1">REM install rivt from GitHub</span>
-uv pip install git+https://github.com/rivtlib-dev/rivtlib#subdirectory=src
-<span class="c1">REM copy test file to base directory</span>
-<span class="k">copy</span>.venv\Lib\site-packages\rivtlib\scripts\rv0000-simple-doc.py
-<span class="c1">REM run test case</span>
-python rv0000-simple-doc.py
+<p>The commands may be downloaded and run from the
+<a class="reference download internal" download="" href="../_downloads/d1584fa3f6092072833945a85e5048ff/rivt-install.cmd"><code class="xref download docutils literal notranslate"><span class="pre">rivt-install</span> <span class="pre">file</span></code></a>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>@echo<span class="w"> </span>on
+REM<span class="w"> </span>run<span class="w"> </span>rivt-install,<span class="w"> </span>download<span class="w"> </span>example1
+REM<span class="w"> </span>install<span class="w"> </span>rivt<span class="w"> </span>from<span class="w"> </span>GitHub
+uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>git+https://github.com/rivtlib-dev/rivtlib#subdirectory<span class="o">=</span>src
+REM<span class="w"> </span>download<span class="w"> </span>example<span class="w"> </span>project
+mkdir<span class="w"> </span>example1
+<span class="nb">cd</span><span class="w"> </span>example1
+curl<span class="w"> </span>https://github.com/rivt-info/rivt-simple-single-doc<span class="w"> </span>-O<span class="w"> </span>-L
 </pre></div>
 </div>
 </section>
