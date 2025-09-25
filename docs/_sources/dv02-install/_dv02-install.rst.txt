@@ -71,8 +71,8 @@ The recommended method for installing *uv* on Windows is:
     winget install --id=astral-sh.uv  -e 
 
 
-**Step 2. Create rivt environment** After installing *uv*, running the
-following commands will set up and activate an isolated *rivt* environment
+**Step 2. Create rivt environment** After installing *uv*, run the
+following commands to set up and activate an isolated *rivt* environment
 (omit the explanatory REM lines). The commands execute the following steps:
 
 #. names the *uv* environment in the first SET command
@@ -81,7 +81,7 @@ following commands will set up and activate an isolated *rivt* environment
 #. downloads the rivt install file.
 #. creates a new environment and activates it.
 
-The commands may be downloaded in the file
+The commands may be downloaded and run from the command file
 :download:`rivt-uv.cmd </_downloads/rivt-uv.cmd>`. 
 
 .. code-block:: bash
@@ -110,8 +110,8 @@ The commands may be downloaded in the file
 
 **Step 3. Install rivt** 
 
-Within the activated *uv* environment running the following set of commands
-installs *rivt* and an example *rivt file*. The commands execute the following
+Within the activated *uv* environment run the following set of commands
+to install *rivt* and an example *rivt file*. The commands execute the following
 steps:
 
 #. install *rivt* in the *uv* environment.
@@ -134,7 +134,7 @@ steps:
     curl https://github.com/rivt-info/rivt-simple-single-doc/blob/main/beam.png?raw=true -O -L
     REM run example with (no quotes )"python rv0000-simple-single-doc.py"
 
-The commands are executed by running the file downloaded in Step 2:
+The commands may be executed by running the command file downloaded in Step 2:
 
 .. code-block:: bash
       

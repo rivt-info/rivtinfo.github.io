@@ -412,8 +412,8 @@ The recommended method for installing <em>uv</em> on Windows is:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>winget<span class="w"> </span>install<span class="w"> </span>--id<span class="o">=</span>astral-sh.uv<span class="w">  </span>-e
 </pre></div>
 </div>
-<p><strong>Step 2. Create rivt environment</strong> After installing <em>uv</em>, running the
-following commands will set up and activate an isolated <em>rivt</em> environment
+<p><strong>Step 2. Create rivt environment</strong> After installing <em>uv</em>, run the
+following commands to set up and activate an isolated <em>rivt</em> environment
 (omit the explanatory REM lines). The commands execute the following steps:</p>
 <ol class="arabic simple">
 <li><p>names the <em>uv</em> environment in the first SET command</p></li>
@@ -422,7 +422,7 @@ following commands will set up and activate an isolated <em>rivt</em> environmen
 <li><p>downloads the rivt install file.</p></li>
 <li><p>creates a new environment and activates it.</p></li>
 </ol>
-<p>The commands may be downloaded in the file
+<p>The commands may be downloaded and run from the command file
 <a class="reference download internal" download="" href="../_downloads/fbba7843191b5c636109314de90fb96e/rivt-uv.cmd"><code class="xref download docutils literal notranslate"><span class="pre">rivt-uv.cmd</span></code></a>.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>@echo<span class="w"> </span>on
 REM<span class="w"> </span>clear<span class="w"> </span>existing<span class="w"> </span>project,<span class="w"> </span>download<span class="w"> </span>rivt-install,<span class="w"> </span>create<span class="w"> </span>new<span class="w"> </span>venv
@@ -448,8 +448,8 @@ cmd<span class="w"> </span>/k
 </pre></div>
 </div>
 <p><strong>Step 3. Install rivt</strong></p>
-<p>Within the activated <em>uv</em> environment running the following set of commands
-installs <em>rivt</em> and an example <em>rivt file</em>. The commands execute the following
+<p>Within the activated <em>uv</em> environment run the following set of commands
+to install <em>rivt</em> and an example <em>rivt file</em>. The commands execute the following
 steps:</p>
 <ol class="arabic simple">
 <li><p>install <em>rivt</em> in the <em>uv</em> environment.</p></li>
@@ -471,7 +471,7 @@ curl<span class="w"> </span>https://github.com/rivt-info/rivt-simple-single-doc/
 REM<span class="w"> </span>run<span class="w"> </span>example<span class="w"> </span>with<span class="w"> </span><span class="o">(</span>no<span class="w"> </span>quotes<span class="w"> </span><span class="o">)</span><span class="s2">&quot;python rv0000-simple-single-doc.py&quot;</span>
 </pre></div>
 </div>
-<p>The commands are executed by running the file downloaded in Step 2:</p>
+<p>The commands may be executed by running the command file downloaded in Step 2:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rivt-install.cmd
 </pre></div>
 </div>
