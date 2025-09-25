@@ -71,15 +71,20 @@ The recommended method for installing *uv* on Windows is:
     winget install --id=astral-sh.uv  -e 
 
 
-**Step 2. Create rivt environment** After installing *uv*, run the
-following commands to set up and activate an isolated *rivt* environment
-(omit the explanatory REM lines). The commands execute the following steps:
+**Step 2. Create rivt environment and install rivtlib** 
+
+After installing *uv*, run the following commands to set up and activate an
+isolated *rivt* environment (omit the explanatory REM lines). The commands
+execute the following steps:
 
 #. names the *uv* environment in the first SET command
 #. changes to the %HOMEPATH% (User) folder
 #. removes any prior existing environment, cache and folders.
 #. downloads the rivt install file.
 #. creates a new environment and activates it.
+#. installs *rivt* in the *uv* environment.
+#. creates an *example1* folder
+#. downloads a  *rivt file* and *sources* into the *example1* folder
 
 The commands may be downloaded and run from the command file
 :download:`rivt-uv.cmd </_downloads/rivt-uv.cmd>`. 
@@ -106,25 +111,8 @@ The commands may be downloaded and run from the command file
     curl  https://raw.githubusercontent.com/rivt-info/rivt-win-install/refs/heads/main/rivt-install.cmd -O   
     REM make venv
     uv venv
-    cmd /k
-
-**Step 3. Install rivt** 
-
-Within the activated *uv* environment run the following set of commands
-to install *rivt* and an example *rivt file*. The commands execute the following
-steps:
-
-#. install *rivt* in the *uv* environment.
-#. creates an *example1* folder
-#. downloads a  *rivt file* into the *example1* folder
-
-.. code-block:: bash
-
-    @echo on
-    REM run this file - rivt-install
-    REM activates venv, installs rivt, downloads example
     REM activate venv
-    .venv/scripts/activate
+    call .venv/scripts/activate
     REM install rivt from GitHub
     uv pip install git+https://github.com/rivtlib-dev/rivtlib
     REM download example project into new folder
@@ -133,15 +121,7 @@ steps:
     curl https://raw.githubusercontent.com/rivt-info/rivt-simple-single-doc/refs/heads/main/rv0000-simple-single-doc.py -O
     curl https://github.com/rivt-info/rivt-simple-single-doc/blob/main/beam.png?raw=true -O -L
     REM run example with (no quotes )"python rv0000-simple-single-doc.py"
-
-The commands may be executed by running the command file downloaded in Step 2:
-
-.. code-block:: bash
-      
-    rivt-install.cmd
-
-The commands may also be downloaded here -
-:download:`rivt-install.cmd </_downloads/rivt-install.cmd>`.
+    cmd /k
 
 Within the *example1* folder run the rivt file as:
 

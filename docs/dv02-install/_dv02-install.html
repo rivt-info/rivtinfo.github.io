@@ -412,15 +412,19 @@ The recommended method for installing <em>uv</em> on Windows is:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>winget<span class="w"> </span>install<span class="w"> </span>--id<span class="o">=</span>astral-sh.uv<span class="w">  </span>-e
 </pre></div>
 </div>
-<p><strong>Step 2. Create rivt environment</strong> After installing <em>uv</em>, run the
-following commands to set up and activate an isolated <em>rivt</em> environment
-(omit the explanatory REM lines). The commands execute the following steps:</p>
+<p><strong>Step 2. Create rivt environment and install rivtlib</strong></p>
+<p>After installing <em>uv</em>, run the following commands to set up and activate an
+isolated <em>rivt</em> environment (omit the explanatory REM lines). The commands
+execute the following steps:</p>
 <ol class="arabic simple">
 <li><p>names the <em>uv</em> environment in the first SET command</p></li>
 <li><p>changes to the %HOMEPATH% (User) folder</p></li>
 <li><p>removes any prior existing environment, cache and folders.</p></li>
 <li><p>downloads the rivt install file.</p></li>
 <li><p>creates a new environment and activates it.</p></li>
+<li><p>installs <em>rivt</em> in the <em>uv</em> environment.</p></li>
+<li><p>creates an <em>example1</em> folder</p></li>
+<li><p>downloads a  <em>rivt file</em> and <em>sources</em> into the <em>example1</em> folder</p></li>
 </ol>
 <p>The commands may be downloaded and run from the command file
 <a class="reference download internal" download="" href="../_downloads/fbba7843191b5c636109314de90fb96e/rivt-uv.cmd"><code class="xref download docutils literal notranslate"><span class="pre">rivt-uv.cmd</span></code></a>.</p>
@@ -444,23 +448,8 @@ REM<span class="w"> </span>download<span class="w"> </span>rivt<span class="w"> 
 curl<span class="w">  </span>https://raw.githubusercontent.com/rivt-info/rivt-win-install/refs/heads/main/rivt-install.cmd<span class="w"> </span>-O
 REM<span class="w"> </span>make<span class="w"> </span>venv
 uv<span class="w"> </span>venv
-cmd<span class="w"> </span>/k
-</pre></div>
-</div>
-<p><strong>Step 3. Install rivt</strong></p>
-<p>Within the activated <em>uv</em> environment run the following set of commands
-to install <em>rivt</em> and an example <em>rivt file</em>. The commands execute the following
-steps:</p>
-<ol class="arabic simple">
-<li><p>install <em>rivt</em> in the <em>uv</em> environment.</p></li>
-<li><p>creates an <em>example1</em> folder</p></li>
-<li><p>downloads a  <em>rivt file</em> into the <em>example1</em> folder</p></li>
-</ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>@echo<span class="w"> </span>on
-REM<span class="w"> </span>run<span class="w"> </span>this<span class="w"> </span>file<span class="w"> </span>-<span class="w"> </span>rivt-install
-REM<span class="w"> </span>activates<span class="w"> </span>venv,<span class="w"> </span>installs<span class="w"> </span>rivt,<span class="w"> </span>downloads<span class="w"> </span>example
 REM<span class="w"> </span>activate<span class="w"> </span>venv
-.venv/scripts/activate
+call<span class="w"> </span>.venv/scripts/activate
 REM<span class="w"> </span>install<span class="w"> </span>rivt<span class="w"> </span>from<span class="w"> </span>GitHub
 uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>git+https://github.com/rivtlib-dev/rivtlib
 REM<span class="w"> </span>download<span class="w"> </span>example<span class="w"> </span>project<span class="w"> </span>into<span class="w"> </span>new<span class="w"> </span>folder
@@ -469,14 +458,9 @@ mkdir<span class="w"> </span>example1
 curl<span class="w"> </span>https://raw.githubusercontent.com/rivt-info/rivt-simple-single-doc/refs/heads/main/rv0000-simple-single-doc.py<span class="w"> </span>-O
 curl<span class="w"> </span>https://github.com/rivt-info/rivt-simple-single-doc/blob/main/beam.png?raw<span class="o">=</span><span class="nb">true</span><span class="w"> </span>-O<span class="w"> </span>-L
 REM<span class="w"> </span>run<span class="w"> </span>example<span class="w"> </span>with<span class="w"> </span><span class="o">(</span>no<span class="w"> </span>quotes<span class="w"> </span><span class="o">)</span><span class="s2">&quot;python rv0000-simple-single-doc.py&quot;</span>
+cmd<span class="w"> </span>/k
 </pre></div>
 </div>
-<p>The commands may be executed by running the command file downloaded in Step 2:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rivt-install.cmd
-</pre></div>
-</div>
-<p>The commands may also be downloaded here -
-<a class="reference download internal" download="" href="../_downloads/d1584fa3f6092072833945a85e5048ff/rivt-install.cmd"><code class="xref download docutils literal notranslate"><span class="pre">rivt-install.cmd</span></code></a>.</p>
 <p>Within the <em>example1</em> folder run the rivt file as:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>rv0000-simple-single-doc.py
 </pre></div>
