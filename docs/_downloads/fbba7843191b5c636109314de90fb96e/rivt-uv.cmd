@@ -20,3 +20,4 @@ REM make venv
 uv venv
 REM activate venv
 .venv/scripts/activate
+cmd /k
