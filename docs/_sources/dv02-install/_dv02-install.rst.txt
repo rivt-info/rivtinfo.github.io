@@ -92,23 +92,21 @@ The commands may be downloaded in the file
     SET rvfolder=rivt-doc1
     REM go to home directory
     cd %HOMEPATH%
-    REM double check deactivation
+    REM double check deactivation for dev purposes
     uv deactivate
     REM double check that old project is deleted
     rmdir /s /q %rvfolder%
-    REM clean uv cache
+    REM clean cache for dev purposes
     uv cache clean
     REM set up venv
     mkdir %rvfolder%
     REM change directory
     cd %rvfolder%
     REM download rivt install file
-    curl  https://github.com/rivt-info/rivt-win-install/blob/main/rivt-install.cmd -O  
+    curl  https://raw.githubusercontent.com/rivt-info/rivt-win-install/refs/heads/main/rivt-install.cmd -O   
     REM make venv
     uv venv
-    REM activate venv
-    .venv/scripts/activate
-
+    cmd /k
 
 **Step 3. Install rivt** 
 
@@ -123,13 +121,18 @@ steps:
 .. code-block:: bash
 
     @echo on
-    REM run rivt-install, download example1
+    REM run this file - rivt-install
+    REM activates venv, installs rivt, downloads example
+    REM activate venv
+    .venv/scripts/activate
     REM install rivt from GitHub
     uv pip install git+https://github.com/rivtlib-dev/rivtlib
-    REM download example project
+    REM download example project into new folder
     mkdir example1
     cd example1
-    curl https://github.com/rivt-info/rivt-simple-single-doc -O -L
+    curl https://raw.githubusercontent.com/rivt-info/rivt-simple-single-doc/refs/heads/main/rv0000-simple-single-doc.py -O
+    curl https://github.com/rivt-info/rivt-simple-single-doc/blob/main/beam.png?raw=true -O -L
+    REM run example with (no quotes )"python rv0000-simple-single-doc.py"
 
 The commands are executed by running the file downloaded in Step 2:
 

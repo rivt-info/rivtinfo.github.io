@@ -18,6 +18,4 @@ REM download rivt install file
 curl  https://raw.githubusercontent.com/rivt-info/rivt-win-install/refs/heads/main/rivt-install.cmd -O   
 REM make venv
 uv venv
-REM activate venv
-.venv/scripts/activate
 cmd /k
