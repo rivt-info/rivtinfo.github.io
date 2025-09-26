@@ -74,8 +74,8 @@ The recommended method for installing *uv* on Windows is:
 **Step 2. Create rivt environment and install rivtlib** 
 
 After installing *uv*, run the following commands to set up and activate an
-isolated *rivt* environment (omit the explanatory REM lines). The commands
-execute the following steps:
+isolated *rivt* environment in the users *Home* directory (omit the explanatory
+REM lines). The commands execute the following steps:
 
 #. names the *uv* environment in the first SET command
 #. changes to the %HOMEPATH% (User) folder
@@ -92,16 +92,17 @@ The commands may be downloaded and run from the command file
 .. code-block:: bash
     
     @echo on
-    REM clear existing project, download rivt-install, create new venv
+    REM (1) clear any existing project, (2) create new venv
+    REM (3) install rivt, (4) download example
     REM set rivt folder
     SET rvfolder=rivt-doc1
     REM go to home directory
     cd %HOMEPATH%
-    REM double check deactivation for dev purposes
+    REM double check deactivation
     uv deactivate
     REM double check that old project is deleted
     rmdir /s /q %rvfolder%
-    REM clean cache for dev purposes
+    REM (1) clean cache 
     uv cache clean
     REM set up venv
     mkdir %rvfolder%
@@ -109,21 +110,21 @@ The commands may be downloaded and run from the command file
     cd %rvfolder%
     REM download rivt install file
     curl  https://raw.githubusercontent.com/rivt-info/rivt-win-install/refs/heads/main/rivt-install.cmd -O   
-    REM make venv
+    REM (2) make venv
     uv venv
     REM activate venv
     call .venv/scripts/activate
-    REM install rivt from GitHub
+    REM (3) install rivt from GitHub
     uv pip install git+https://github.com/rivtlib-dev/rivtlib
     REM download example project into new folder
     mkdir example1
-    cd example1
+    cd (4) example1
     curl https://raw.githubusercontent.com/rivt-info/rivt-simple-single-doc/refs/heads/main/rv0000-simple-single-doc.py -O
     curl https://github.com/rivt-info/rivt-simple-single-doc/blob/main/beam.png?raw=true -O -L
     REM run example with (no quotes )"python rv0000-simple-single-doc.py"
     cmd /k
 
-Within the *example1* folder run the rivt file as:
+Within the *example1* folder run the rivt file:
 
 .. code-block:: bash
       
