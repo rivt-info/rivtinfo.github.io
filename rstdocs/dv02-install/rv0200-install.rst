@@ -1,35 +1,38 @@
 2. Installation
 ==================   
 
-
-**[01]** Installation types
-----------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *rivt* 
-
     *rivt* is a Python project that includes `rivtlib <https://www.rivt.info>`_
-    and other :doc:`Python packages </dv02-install/rv0201-python>`.  When *rivt* 
-    is installed, *rivt docs and reports* may be edited and published 
-    using a text editor.
-
-    See :ref:`rivt-uv <rivt-uv>` for uv install
+    and other :doc:`Python packages </dv02-install/rv0201-python>`. After
+    *rivt* is installed *docs and reports* may be edited and published using a
+    text editor. *rivt* is designed to work with other open source programs and
+    tools that add features and capability.
     
-    See :ref:`rivt-system <rivt-system>` for system install  
+    There are four methods for installing *rivt* and auxiliary programs.
+
+.. topic:: 1. *rivt-uv* 
+
+    *uv* is a `Python package manager <https://docs.astral.sh/uv/>`_ and
+    installer that simplifies installing isolated Python environments. See
+    :ref:`Install rivt-uv <rivt-uv>` for installation procedures.
 
 .. raw:: html
 
     <hr>
 
+.. topic:: 2. *rivt-system* 
 
-.. topic:: *rivt framework* 
+    *rivt* may be installed at the system level using standalone installers.
+    See :ref:`rivt-system <rivt-system>` for system installation procedures.
 
-    The *rivt framework* includes *rivt* and additional programs installed
-    separately. It includes important productiviy tools for editing, document
-    control and diagramming.
+.. raw:: html
+
+    <hr>
+
+.. topic:: 3. *rivt-framework* 
+
+    The *rivt-framework* includes *rivt* and additional integrated programs and
+    tools with their own installers. It includes important productivity tools
+    for editing, document control and diagramming.
     
     #. *VSCode and extensions* for editing and collaboration.
     #. *Git and GitHub* for version control and document sharing.
@@ -40,18 +43,16 @@
 
     <hr>
 
-.. topic:: *rivt.zip* 
+.. topic:: 4. *rivt.zip* 
 
-    A single folder, portable version of *rivt* integrated with *VSCode*.
+    *rivt.zip* is a portable, single folder, version of *rivt* integrated with
+    *VSCode*.
 
-.. raw:: html
-
-    <hr>
 
 
 .. _rivt-uv:
 
-**[02]** Install *rivt-uv*
+**[01]** Install *rivt-uv*
 ----------------------------------
 
 .. raw:: html
@@ -131,35 +132,28 @@ Within the *example1* folder run the rivt file:
 
 .. _rivt-system:
 
-**[03]** Install *rivt-system*
+**[02]** Install *rivt-system*
 ----------------------------------
 
-.. raw:: html
+*rivt* may be installed at the system level. 
 
-    <hr>   
+#. Install Python using `Python installers <https://www.python.org/downloads/>`_ 
 
-.. raw:: html
+#. Install *rivtlib* and dependencies using `pip <https://pypi.org/project/pip/>`_ 
 
-    <br>
-
-
-Use `Python installers <https://www.python.org/downloads/>`_ and 
-`pip <https://pypi.org/project/pip/>`_ to install packages from 
-`PyPI <https://pypi.org/>`_.  The requirements.txt file is here. 
+A list of the dependencies and *requirements.txt* file is 
+:doc:`here </dv02-install/rv0201-python>`.
 
 
-
-**[04]** Install *rivt framework*
+**[03]** Install *rivt-framework*
 ------------------------------------------
 
-.. raw:: html
 
-    <hr>
-
-The *rivt framework* includes installation of the following programs:
+The *rivt-framework* includes installation of the following programs:
 
 #. `VSCode <https://code.visualstudio.com/>`_ and 
-   `VSCode extensions <https://marketplace.visualstudio.com/vscode>`_.  
+   `VSCode extensions <https://marketplace.visualstudio.com/vscode>`_. 
+   *rivt* extensions and snippets are :doc:`here </dv02-install/rv0202-vscode>`.
 
 #. `Git <https://git-scm.com>`_ and set up a `GitHub <hhttps://github.com>`_ 
 
