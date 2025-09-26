@@ -12,7 +12,7 @@
 .. topic:: *rivt* 
 
     *rivt* is a Python project that includes `rivtlib <https://www.rivt.info>`_
-    and other :doc:`Python packages </dv02-install/python>`.  When *rivt* 
+    and other :doc:`Python packages </dv02-install/rv0201-python>`.  When *rivt* 
     is installed, *rivt docs and reports* may be edited and published 
     using a text editor.
 
@@ -190,6 +190,6 @@ Disadvantages include:
     :maxdepth: 1
     :hidden:
 
-    python.rst
-    vscode.rst
+    rv0201-python.rst
+    rv0202-vscode.rst
       

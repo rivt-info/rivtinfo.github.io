@@ -48,7 +48,7 @@ Jupyter        no       no         no      yes         yes      yes
     :maxdepth: 1
     :hidden:
 
-    api.rst
-    terms.rst
-    faq.rst
-    smallex.rst
+    rv0101-api.rst
+    rv0102-terms.rst
+    rv0103-faq.rst
+    rv0104-smallex.rst

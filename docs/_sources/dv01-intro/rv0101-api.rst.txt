@@ -54,7 +54,7 @@ overalll section labeling and processing. The header is followed by the section
 content. Content is indented four spaces for legibility and section folding.
 
 Section content includes *rivt tags and commands* may include
-arbitrary utf-8 text. See :doc:`Markup </dv03-markup/_dv03-markup>` for further
+arbitrary utf-8 text. See :doc:`Markup </dv03-markup/rv0300-markup>` for further
 details.
 
 .. code-block:: python
