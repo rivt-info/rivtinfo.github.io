@@ -119,7 +119,7 @@ The commands may be downloaded and run from the command file
     cd (4) example1
     curl https://raw.githubusercontent.com/rivt-info/rivt-simple-single-doc/refs/heads/main/rv0000-simple-single-doc.py -O
     curl https://github.com/rivt-info/rivt-simple-single-doc/blob/main/beam.png?raw=true -O -L
-    REM run example with (no quotes )"python rv0000-simple-single-doc.py"
+    REM run example with (no quotes) "python rv0000-simple-single-doc.py"
     cmd /k
 
 Within the *example1* folder run the rivt file:
