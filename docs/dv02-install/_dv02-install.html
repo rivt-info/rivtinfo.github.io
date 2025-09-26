@@ -445,14 +445,12 @@ REM<span class="w"> </span><span class="nb">set</span><span class="w"> </span>up
 mkdir<span class="w"> </span>%rvfolder%
 REM<span class="w"> </span>change<span class="w"> </span>directory
 <span class="nb">cd</span><span class="w"> </span>%rvfolder%
-REM<span class="w"> </span>download<span class="w"> </span>rivt<span class="w"> </span>install<span class="w"> </span>file
-curl<span class="w">  </span>https://raw.githubusercontent.com/rivt-info/rivt-win-install/refs/heads/main/rivt-install.cmd<span class="w"> </span>-O
 REM<span class="w"> </span><span class="o">(</span><span class="m">2</span><span class="o">)</span><span class="w"> </span>make<span class="w"> </span>venv
 uv<span class="w"> </span>venv
 REM<span class="w"> </span>activate<span class="w"> </span>venv
 call<span class="w"> </span>.venv/scripts/activate
 REM<span class="w"> </span><span class="o">(</span><span class="m">3</span><span class="o">)</span><span class="w"> </span>install<span class="w"> </span>rivt<span class="w"> </span>from<span class="w"> </span>GitHub
-uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>git+https://github.com/rivtlib-dev/rivtlib
+uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>git+https://github.com/rivtlib-dev/rivtlib.git@main
 REM<span class="w"> </span>download<span class="w"> </span>example<span class="w"> </span>project<span class="w"> </span>into<span class="w"> </span>new<span class="w"> </span>folder
 mkdir<span class="w"> </span>example1
 <span class="nb">cd</span><span class="w"> </span><span class="o">(</span><span class="m">4</span><span class="o">)</span><span class="w"> </span>example1

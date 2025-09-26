@@ -108,14 +108,12 @@ The commands may be downloaded and run from the command file
     mkdir %rvfolder%
     REM change directory
     cd %rvfolder%
-    REM download rivt install file
-    curl  https://raw.githubusercontent.com/rivt-info/rivt-win-install/refs/heads/main/rivt-install.cmd -O   
     REM (2) make venv
     uv venv
     REM activate venv
     call .venv/scripts/activate
     REM (3) install rivt from GitHub
-    uv pip install git+https://github.com/rivtlib-dev/rivtlib
+    uv pip install git+https://github.com/rivtlib-dev/rivtlib.git@main
     REM download example project into new folder
     mkdir example1
     cd (4) example1
