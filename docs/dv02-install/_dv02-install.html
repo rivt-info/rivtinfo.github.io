@@ -451,9 +451,9 @@ REM<span class="w"> </span>activate<span class="w"> </span>venv
 call<span class="w"> </span>.venv/scripts/activate
 REM<span class="w"> </span><span class="o">(</span><span class="m">3</span><span class="o">)</span><span class="w"> </span>install<span class="w"> </span>rivt<span class="w"> </span>from<span class="w"> </span>GitHub
 uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>git+https://github.com/rivtlib-dev/rivtlib.git@main
-REM<span class="w"> </span>download<span class="w"> </span>example<span class="w"> </span>project<span class="w"> </span>into<span class="w"> </span>new<span class="w"> </span>folder
+REM<span class="w"> </span><span class="o">(</span><span class="m">4</span><span class="o">)</span><span class="w"> </span>download<span class="w"> </span>example<span class="w"> </span>project<span class="w"> </span>into<span class="w"> </span>new<span class="w"> </span>folder
 mkdir<span class="w"> </span>example1
-<span class="nb">cd</span><span class="w"> </span><span class="o">(</span><span class="m">4</span><span class="o">)</span><span class="w"> </span>example1
+<span class="nb">cd</span><span class="w"> </span>example1
 curl<span class="w"> </span>https://raw.githubusercontent.com/rivt-info/rivt-simple-single-doc/refs/heads/main/rv0000-simple-single-doc.py<span class="w"> </span>-O
 curl<span class="w"> </span>https://github.com/rivt-info/rivt-simple-single-doc/blob/main/beam.png?raw<span class="o">=</span><span class="nb">true</span><span class="w"> </span>-O<span class="w"> </span>-L
 REM<span class="w"> </span>run<span class="w"> </span>example<span class="w"> </span>with<span class="w"> </span><span class="o">(</span>no<span class="w"> </span>quotes<span class="o">)</span><span class="w"> </span><span class="s2">&quot;python rv0000-simple-single-doc.py&quot;</span>
