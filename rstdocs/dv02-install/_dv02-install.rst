@@ -113,7 +113,7 @@ The commands may be downloaded and run from the command file
     REM activate venv
     call .venv/scripts/activate
     REM (3) install rivt from GitHub
-    uv pip install git+https://github.com/rivtlib-dev/rivtlib.git@main
+    uv pip install git+https://github.com/rivtlib-dev/rivtlib#subdirectory=src
     REM download example project into new folder
     mkdir example1
     cd (4) example1
