@@ -1,7 +1,7 @@
 3. Markup
 ==================
 
-*rivt* uses *rivt markup* to provide a readable, common language that generates
+*rivt markup* provides a readable, common language that generates
 text, PDF or HTML *docs* from the same *rivt file*. *rivt markup" is used
 within a *rivt string*. A *rivt string* is the utf-8 text argument to a *rivt*
 API function.
