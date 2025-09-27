@@ -2,12 +2,13 @@
 ==================   
 
 *rivt* is a Python project. It includes :doc:`rivtlib </dv01-intro/rv0101-api>`
-and another two dozen  :doc:`Python packages </dv02-install/rv0201-python>`. After
-*rivt* is installed *docs and reports* may be edited and published using a
-text editor. *rivt* is designed to work with other open source programs and
-tools that add features and capability.
+and another two dozen  :doc:`Python packages </dv02-install/rv0201-python>`. When
+*rivt* is installed, *rivt docs and reports* may be edited and published using a
+text editor. 
 
-There are four methods for installing *rivt* and auxiliary programs.
+*rivt* is also designed to work with auxiliary open source programs and tools that
+add editing and analysis capabilities. There are four installation methods for
+*rivt* and its auxiliary programs.
 
 .. topic:: 1. *rivt-uv* 
 
@@ -59,7 +60,7 @@ There are four methods for installing *rivt* and auxiliary programs.
 
     <hr>
 
-This method for installing *rivt* is recommended for most users. The procedure
+This *rivt* installation method is recommended for most users. The procedure
 for Windows is shown below. Other OS installs are similar.
 
 **Step 1. Install uv**
@@ -76,19 +77,21 @@ The recommended method for installing *uv* on Windows is:
 
 After installing *uv*, run the following commands to set up and activate an
 isolated *rivt* environment in the users *Home* directory (omit the explanatory
-REM lines). The commands execute the following steps:
-
-#. names the *uv* environment in the first SET command
-#. changes to the %HOMEPATH% (User) folder
-#. removes any prior existing environment, cache and folders.
-#. downloads the rivt install file.
-#. creates a new environment and activates it.
-#. installs *rivt* in the *uv* environment.
-#. creates an *example1* folder
-#. downloads a  *rivt file* and *sources* into the *example1* folder
-
-The commands may be downloaded and run from the command file
+REM lines). The commands may be downloaded and run from the command file
 :download:`rivt-uv.cmd </_downloads/rivt-uv.cmd>`. 
+
+They execute the following steps:
+
+#. name the *uv* environment in the first SET command
+#. switch to the %HOMEPATH% (User) folder
+#. remove any prior existing environment, cache and folders.
+#. download the rivt install file.
+#. create a new environment and activates it.
+#. install *rivt* in the *uv* environment.
+#. create an *example1* folder
+#. download an example  *rivt file* and *sources* into the *example1* folder
+
+
 
 .. code-block:: bash
     

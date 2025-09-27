@@ -375,11 +375,12 @@
   <section id="installation">
 <h1>2. Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h1>
 <p><em>rivt</em> is a Python project. It includes <a class="reference internal" href="../dv01-intro/rv0101-api.html"><span class="doc">rivtlib</span></a>
-and another two dozen  <a class="reference internal" href="rv0201-python.html"><span class="doc">Python packages</span></a>. After
-<em>rivt</em> is installed <em>docs and reports</em> may be edited and published using a
-text editor. <em>rivt</em> is designed to work with other open source programs and
-tools that add features and capability.</p>
-<p>There are four methods for installing <em>rivt</em> and auxiliary programs.</p>
+and another two dozen  <a class="reference internal" href="rv0201-python.html"><span class="doc">Python packages</span></a>. When
+<em>rivt</em> is installed, <em>rivt docs and reports</em> may be edited and published using a
+text editor.</p>
+<p><em>rivt</em> is also designed to work with auxiliary open source programs and tools that
+add editing and analysis capabilities. There are four installation methods for
+<em>rivt</em> and its auxiliary programs.</p>
 <aside class="topic">
 <p class="topic-title">1. <em>rivt-uv</em></p>
 <p><em>uv</em> is a <a class="reference external" href="https://docs.astral.sh/uv/">Python package manager</a> and
@@ -410,7 +411,7 @@ for editing, document control and diagramming.</p>
 </aside>
 <section id="install-rivt-uv">
 <span id="rivt-uv"></span><h2><strong>[01]</strong> Install <em>rivt-uv</em><a class="headerlink" href="#install-rivt-uv" title="Link to this heading">#</a></h2>
-<hr><p>This method for installing <em>rivt</em> is recommended for most users. The procedure
+<hr><p>This <em>rivt</em> installation method is recommended for most users. The procedure
 for Windows is shown below. Other OS installs are similar.</p>
 <p><strong>Step 1. Install uv</strong></p>
 <p>Install <a class="reference external" href="https://docs.astral.sh/uv/getting-started/installation/#pypi">uv</a>.
@@ -421,19 +422,19 @@ The recommended method for installing <em>uv</em> on Windows is:</p>
 <p><strong>Step 2. Create rivt environment and install rivtlib</strong></p>
 <p>After installing <em>uv</em>, run the following commands to set up and activate an
 isolated <em>rivt</em> environment in the users <em>Home</em> directory (omit the explanatory
-REM lines). The commands execute the following steps:</p>
-<ol class="arabic simple">
-<li><p>names the <em>uv</em> environment in the first SET command</p></li>
-<li><p>changes to the %HOMEPATH% (User) folder</p></li>
-<li><p>removes any prior existing environment, cache and folders.</p></li>
-<li><p>downloads the rivt install file.</p></li>
-<li><p>creates a new environment and activates it.</p></li>
-<li><p>installs <em>rivt</em> in the <em>uv</em> environment.</p></li>
-<li><p>creates an <em>example1</em> folder</p></li>
-<li><p>downloads a  <em>rivt file</em> and <em>sources</em> into the <em>example1</em> folder</p></li>
-</ol>
-<p>The commands may be downloaded and run from the command file
+REM lines). The commands may be downloaded and run from the command file
 <a class="reference download internal" download="" href="../_downloads/fbba7843191b5c636109314de90fb96e/rivt-uv.cmd"><code class="xref download docutils literal notranslate"><span class="pre">rivt-uv.cmd</span></code></a>.</p>
+<p>They execute the following steps:</p>
+<ol class="arabic simple">
+<li><p>name the <em>uv</em> environment in the first SET command</p></li>
+<li><p>switch to the %HOMEPATH% (User) folder</p></li>
+<li><p>remove any prior existing environment, cache and folders.</p></li>
+<li><p>download the rivt install file.</p></li>
+<li><p>create a new environment and activates it.</p></li>
+<li><p>install <em>rivt</em> in the <em>uv</em> environment.</p></li>
+<li><p>create an <em>example1</em> folder</p></li>
+<li><p>download an example  <em>rivt file</em> and <em>sources</em> into the <em>example1</em> folder</p></li>
+</ol>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>@echo<span class="w"> </span>on
 REM<span class="w"> </span><span class="o">(</span><span class="m">1</span><span class="o">)</span><span class="w"> </span>clear<span class="w"> </span>any<span class="w"> </span>existing<span class="w"> </span>project,<span class="w"> </span><span class="o">(</span><span class="m">2</span><span class="o">)</span><span class="w"> </span>create<span class="w"> </span>new<span class="w"> </span>venv
 REM<span class="w"> </span><span class="o">(</span><span class="m">3</span><span class="o">)</span><span class="w"> </span>install<span class="w"> </span>rivt,<span class="w"> </span><span class="o">(</span><span class="m">4</span><span class="o">)</span><span class="w"> </span>download<span class="w"> </span>example
