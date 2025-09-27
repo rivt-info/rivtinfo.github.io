@@ -1,13 +1,13 @@
 2. Installation
 ==================   
 
-    *rivt* is a Python project that includes `rivtlib <https://www.rivt.info>`_
-    and other :doc:`Python packages </dv02-install/rv0201-python>`. After
-    *rivt* is installed *docs and reports* may be edited and published using a
-    text editor. *rivt* is designed to work with other open source programs and
-    tools that add features and capability.
-    
-    There are four methods for installing *rivt* and auxiliary programs.
+*rivt* is a Python project that includes `rivtlib <https://www.rivt.info>`_
+with other :doc:`Python packages </dv02-install/rv0201-python>`. After
+*rivt* is installed *docs and reports* may be edited and published using a
+text editor. *rivt* is designed to work with other open source programs and
+tools that add features and capability.
+
+There are four methods for installing *rivt* and auxiliary programs.
 
 .. topic:: 1. *rivt-uv* 
 
