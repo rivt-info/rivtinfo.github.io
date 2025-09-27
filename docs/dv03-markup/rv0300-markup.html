@@ -380,9 +380,10 @@
                   
   <section id="markup">
 <h1>3. Markup<a class="headerlink" href="#markup" title="Link to this heading">#</a></h1>
-<p><em>rivt markup</em>,  within a <em>rivt string</em>, provides a common language to generate
-text, PDF or HTML <em>docs</em> from the same <em>rivt file</em>. <em>rivt strings</em> are the
-argument to <em>rivt</em> API functions.</p>
+<p><em>rivt</em> uses <em>rivt markup</em> to provide a readable, common language that generates
+text, PDF or HTML <em>docs</em> from the same <em>rivt file</em>. <em>rivt markup” is used
+within a *rivt string</em>. A <em>rivt string</em> is the utf-8 text argument to a <em>rivt</em>
+API function.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>API Function</p></th>
@@ -426,9 +427,9 @@ argument to <em>rivt</em> API functions.</p>
 </tbody>
 </table>
 </div>
-<p>Each API function starts in the first column (Python syntax) and defines a <em>doc
-section</em>. The first line in a <em>rivt string</em> is a <em>section header</em>. Subsequent
-lines are indented 4 spaces and include <em>tags</em> and <em>commands</em>.</p>
+<p>Each API function starts in the first column (standard Python syntax) and defines
+a <em>doc section</em>. The first line in a <em>rivt string</em> is a <em>section header</em>.
+Subsequent lines are indented 4 spaces and include <em>tags</em> and <em>commands</em>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | write; nowrite, public; private; (rvsource, rvlocal)</span>
 
 <span class="s2">    section content (utf-8 text)</span>

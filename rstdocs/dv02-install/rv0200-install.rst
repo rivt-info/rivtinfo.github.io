@@ -1,8 +1,8 @@
 2. Installation
 ==================   
 
-*rivt* is a Python project that includes `rivtlib <https://www.rivt.info>`_
-with other :doc:`Python packages </dv02-install/rv0201-python>`. After
+*rivt* is a Python project. It includes `:doc:rivtlib </dv01-intro/rv0101-api>`
+and another two dozen  :doc:`Python packages </dv02-install/rv0201-python>`. After
 *rivt* is installed *docs and reports* may be edited and published using a
 text editor. *rivt* is designed to work with other open source programs and
 tools that add features and capability.

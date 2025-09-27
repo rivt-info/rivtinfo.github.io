@@ -1,9 +1,10 @@
 3. Markup
 ==================
 
-*rivt markup*,  within a *rivt string*, provides a common language to generate
-text, PDF or HTML *docs* from the same *rivt file*. *rivt strings* are the
-argument to *rivt* API functions. 
+*rivt* uses *rivt markup* to provide a readable, common language that generates
+text, PDF or HTML *docs* from the same *rivt file*. *rivt markup" is used
+within a *rivt string*. A *rivt string* is the utf-8 text argument to a *rivt*
+API function.
 
 =============== =============== ===================================
 API Function        Name             Purpose
@@ -18,9 +19,9 @@ rv.S(rs)         Skip              Skip section
 rv.Q(rs)         Quit              Exit rivt 
 =============== =============== ===================================
 
-Each API function starts in the first column (Python syntax) and defines a *doc
-section*. The first line in a *rivt string* is a *section header*. Subsequent
-lines are indented 4 spaces and include *tags* and *commands*.
+Each API function starts in the first column (standard Python syntax) and defines
+a *doc section*. The first line in a *rivt string* is a *section header*.
+Subsequent lines are indented 4 spaces and include *tags* and *commands*.
 
 .. code-block:: python
 
