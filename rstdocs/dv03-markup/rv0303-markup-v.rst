@@ -170,22 +170,7 @@ text, pdf, html
 text, pdf, html
 
 
-
-**[14]** _[V] : label values table 
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *title* _[V]
-    
-   An autonumbered value table title _[V]
-
-text, pdf, html
-
-
-**[12]** _[[C]] : code or literal text
+**[14]** _[[C]] : code or literal text
 ------------------------------------------------
 
 .. raw:: html
@@ -205,7 +190,7 @@ text, pdf, html
 text, pdf, html
 
 
-**[13]** _[[L]] : LaTeX
+**[15]** _[[L]] : LaTeX
 ------------------------------------------------
 
 .. raw:: html
@@ -225,7 +210,7 @@ text, pdf, html
 pdf, html
 
 
-**[14]** _[[T]] : topic
+**[16]** _[[T]] : topic
 ------------------------------------------------
 
 .. raw:: html
@@ -243,29 +228,8 @@ pdf, html
 
 text, pdf, html
 
-  
 
-**[15]** _[[V]] : values
-------------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic::  _[[V]] *title*
-
-    ::
-        
-        _[[V]] First Floor Framing
-        I_1 = 100 | IN^3, CM^3, 2 | moment of intertia
-        L_1 = 10*1.5 | FT, M, 2| beam length
-        ...
-        _[[Q]]
-
-text, pdf, html  
-
-
-**[16]** COMMAND KEY
+**[17]** COMMAND KEY
 ----------------------
 
 .. raw:: html
@@ -281,7 +245,7 @@ file types
 
 
 
-**[17]** | IMG | - insert image
+**[18]** | IMG | - insert image
 -------------------------------------------
 
 .. raw:: html
@@ -293,7 +257,7 @@ file types
     - reads PNG and JPEG files (.png, jpg)
     - PDF, HTML
 
-**[18]** | IMG2 | - adjacent images 
+**[19]** | IMG2 | - adjacent images 
 --------------------------------------------------
 
 .. raw:: html
@@ -305,7 +269,7 @@ file types
     - reads PNG and JPEG files (.png, jpg)
     - PDF, HTML
 
-**[19]** | TABLE | 
+**[20]** | TABLE | 
 ------------------------------------------
 
 .. raw:: html
@@ -318,7 +282,7 @@ file types
     - PDF, HTML, text
 
 
-**[20]** | VALUES | 
+**[21]** | VALUES | 
 -------------------------------------------
 
 .. raw:: html
@@ -330,26 +294,43 @@ file types
     - reads values.txt file
     - PDF, HTML
 
-**[21]** **=** - assign value
+**[22]** | TEXT | - format text
+------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: | text | path | filename | title _[T]
+
+
+    example
+
+reads text, text and reST files (.txt, .tex, .rst)
+
+PDF, HTML, text
+
+
+**[23]** **:=** - define value
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: a = 10*IN | unit1, unit2, decimals | description
+.. topic:: a := 2*10*IN | unit1, unit2, decimals | description
 
     - assigns value to a variable
     - PDF, HTML
 
-**[22]** **:=** - define equation
+**[24]** **<=** - assign equation value
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: b := a * 10 | unit1, unit2, decimals | reference
+.. topic:: b <= a * 10 | unit1, unit2, decimals | reference
 
     - defines a variable in terms of expression
     - PDF, HTML

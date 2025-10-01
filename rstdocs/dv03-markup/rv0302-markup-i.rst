@@ -416,9 +416,10 @@ file types
 
     <hr>
 
-.. topic:: | IMG | path | filename | caption _[F], scale
+.. topic:: | IMG | path | filename | scale, caption (_[F])
 
-    example
+    | IMG | rvsource | file1.png | .50, Map _[F]
+
 
 reads PNG and JPEG files (.png, jpg)
 
@@ -432,9 +433,10 @@ text, PDF, HTML
 
     <hr>
 
-.. topic:: | IMG2 | path | fname1, fname2 | cap1 _[F], cap2 _[F], sc1, sc2 
+.. topic:: | IMG2 | path | fname1, fname2 | cap1 (_[F]), cap2 (_[F]), sc1, sc2 
 
-    example
+    | IMG | rvsource | file1.png, file2.png | .50, .40, Map, Plan
+
 
 reads PNG and JPEG files (.png, jpg)
 
@@ -448,9 +450,10 @@ text, PDF, HTML
 
     <hr>
 
-.. topic:: | TABLE | path | filename | title _[T]
+.. topic:: | TABLE | path | filename | title (_[T])
 
-    example
+    | TABLE | rvsource | file1.csv | Forces _[T]
+
 
 reads text, csv and EXCEL files (.txt, .csv, .xls)
 
