@@ -467,10 +467,9 @@ PDF, HTML, text
 
     <hr>
 
-.. topic:: | text | path | filename | title _[T]
+.. topic:: | text | path | filename | normal, literal
 
-
-    example
+    | TABLE | rvsource | file1.txt | normal
 
 reads text, text and reST files (.txt, .tex, .rst)
 

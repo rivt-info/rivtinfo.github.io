@@ -244,7 +244,6 @@ text, pdf, html
 file types
 
 
-
 **[18]** | IMG | - insert image
 -------------------------------------------
 
@@ -252,10 +251,15 @@ file types
 
     <hr>
 
-.. topic:: | IMAGE | path | filename | caption _[F], scale
+.. topic:: | IMG | path | filename | scale, caption (_[F])
 
-    - reads PNG and JPEG files (.png, jpg)
-    - PDF, HTML
+    | IMG | rvsource | file1.png | .50, Map _[F]
+
+
+reads PNG and JPEG files (.png, jpg)
+
+text, PDF, HTML
+
 
 **[19]** | IMG2 | - adjacent images 
 --------------------------------------------------
@@ -264,51 +268,62 @@ file types
 
     <hr>
 
-.. topic:: | IMAGE2 | path | fname1, fname2 | cap1 _[F], cap2 _[F], sc1, sc2 
+.. topic:: | IMG2 | path | fname1, fname2 | cap1 (_[F]), cap2 (_[F]), sc1, sc2 
 
-    - reads PNG and JPEG files (.png, jpg)
-    - PDF, HTML
+    | IMG | rvsource | file1.png, file2.png | .50, .40, Map, Plan
 
-**[20]** | TABLE | 
+
+reads PNG and JPEG files (.png, jpg)
+
+text, PDF, HTML
+
+
+**[20]** | TABLE | - format table
 ------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | TABLE | path | filename | title _[T]
+.. topic:: | TABLE | path | filename | title (_[T])
 
-    - reads text, csv and EXCEL files (.txt, .csv, .xls)
-    - PDF, HTML, text
+    | TABLE | rvsource | file1.csv | Forces _[T]
 
 
-**[21]** | VALUES | 
+reads text, csv and EXCEL files (.txt, .csv, .xls)
+
+PDF, HTML, text
+
+
+**[21]** | TEXT | - format text
+------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: | text | path | filename | normal, literal
+
+    | TABLE | rvsource | file1.txt | normal
+
+reads text, text and reST files (.txt, .tex, .rst)
+
+PDF, HTML, text
+
+**[22]** **<=** - assign equation value
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | VALUES | relative path | filename | title _[V], [rows]
+.. topic:: b <= a * 10 | unit1, unit2, decimals | reference
 
-    - reads values.txt file
-    - PDF, HTML
-
-**[22]** | TEXT | - format text
-------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: | text | path | filename | title _[T]
-
-
-    example
-
-reads text, text and reST files (.txt, .tex, .rst)
-
-PDF, HTML, text
+    b_1 <= E_1 * 12.1*IN^2 | KIP, kN, 2 | Std. 123
+  
+  assigns a variable to an equation value
+  
+  text, PDF, HTML
 
 
 **[23]** **:=** - define value
@@ -318,19 +333,10 @@ PDF, HTML, text
 
     <hr>
 
-.. topic:: a := 2*10*IN | unit1, unit2, decimals | description
+.. topic:: c := 5*unit1 | unit1, unit2, decimals | description
 
-    - assigns value to a variable
-    - PDF, HTML
-
-**[24]** **<=** - assign equation value
--------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: b <= a * 10 | unit1, unit2, decimals | reference
-
-    - defines a variable in terms of expression
-    - PDF, HTML
+    D_1 = 10*IN | IN, M, 3 | beam depth
+  
+  defines the value of a variable 
+  
+  text, PDF, HTML
