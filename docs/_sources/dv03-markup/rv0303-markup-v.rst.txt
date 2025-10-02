@@ -5,6 +5,10 @@
 **[01]** TAG KEY
 --------------------------------------
 
+*line tags* format a line of text and are denoted with _[TAG], usually at the
+end of the line. *Block tags* format a block of text that begin with _[[TAG]]
+on the first line and end with _[[Q]] after the last line. 
+
 _[TAG] : line tag description
 
 .. raw:: html
@@ -170,22 +174,7 @@ text, pdf, html
 text, pdf, html
 
 
-
-**[14]** _[V] : label values table 
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *title* _[V]
-    
-   An autonumbered value table title _[V]
-
-text, pdf, html
-
-
-**[12]** _[[C]] : code or literal text
+**[14]** _[[C]] : code or literal text
 ------------------------------------------------
 
 .. raw:: html
@@ -205,7 +194,7 @@ text, pdf, html
 text, pdf, html
 
 
-**[13]** _[[L]] : LaTeX
+**[15]** _[[L]] : LaTeX
 ------------------------------------------------
 
 .. raw:: html
@@ -225,7 +214,7 @@ text, pdf, html
 pdf, html
 
 
-**[14]** _[[T]] : topic
+**[16]** _[[T]] : topic
 ------------------------------------------------
 
 .. raw:: html
@@ -243,30 +232,26 @@ pdf, html
 
 text, pdf, html
 
-  
 
-**[15]** _[[V]] : values
-------------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic::  _[[V]] *title*
-
-    ::
-        
-        _[[V]] First Floor Framing
-        I_1 = 100 | IN^3, CM^3, 2 | moment of intertia
-        L_1 = 10*1.5 | FT, M, 2| beam length
-        ...
-        _[[Q]]
-
-text, pdf, html  
-
-
-**[16]** COMMAND KEY
+**[17]** COMMAND KEY
 ----------------------
+
+*Command* parameter options are separated with commas and parameter elements by
+semicolons. Path names can be directly specified relative to the project
+*source folder* or specified with an alias:
+
+    *rvsource* : this alias directs *rivtlib* to look for the file in the
+    default *source* folder. For example if the *rivt file* is in Division 1 and
+    the API function is *Insert* the *i01* subfolder in the *source* folder is
+    searched.
+
+    *rvlocal* : this alias directs *rivtlib* to look for the file in the *rivt
+    file* directory. It is used when a *single doc*, rather than a *report
+    doc* is processed.
+
+The *rivt report* folders are described 
+:doc:`here. </dv04-reports/rv0402-folders>`
+
 
 .. raw:: html
 
@@ -280,76 +265,99 @@ text, pdf, html
 file types
 
 
-
-**[17]** | IMG | - insert image
+**[18]** | IMG | - insert image
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | IMAGE | path | filename | caption _[F], scale
+.. topic:: | IMG | path | filename | scale, caption (_[F])
 
-    - reads PNG and JPEG files (.png, jpg)
-    - PDF, HTML
+    | IMG | rvsource | file1.png | .50, Map _[F]
 
-**[18]** | IMG2 | - adjacent images 
+
+reads PNG and JPEG files (.png, jpg)
+
+text, PDF, HTML
+
+
+**[19]** | IMG2 | - adjacent images 
 --------------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | IMAGE2 | path | fname1, fname2 | cap1 _[F], cap2 _[F], sc1, sc2 
+.. topic:: | IMG2 | path | fname1, fname2 | cap1 (_[F]), cap2 (_[F]), sc1, sc2 
 
-    - reads PNG and JPEG files (.png, jpg)
-    - PDF, HTML
+    | IMG | rvsource | file1.png, file2.png | .50, .40, Map, Plan
 
-**[19]** | TABLE | 
+
+reads PNG and JPEG files (.png, jpg)
+
+text, PDF, HTML
+
+
+**[20]** | TABLE | - format table
 ------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | TABLE | path | filename | title _[T]
+.. topic:: | TABLE | path | filename | title (_[T])
 
-    - reads text, csv and EXCEL files (.txt, .csv, .xls)
-    - PDF, HTML, text
+    | TABLE | rvsource | file1.csv | Forces _[T]
 
 
-**[20]** | VALUES | 
+reads text, csv and EXCEL files (.txt, .csv, .xls)
+
+PDF, HTML, text
+
+
+**[21]** | TEXT | - format text
+------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: | text | path | filename | normal, literal
+
+    | TABLE | rvsource | file1.txt | normal
+
+reads text, text and reST files (.txt, .tex, .rst)
+
+PDF, HTML, text
+
+**[22]** **<=** - assign equation value
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | VALUES | relative path | filename | title _[V], [rows]
+.. topic:: b <= a * 10 | unit1, unit2, decimals | reference
 
-    - reads values.txt file
-    - PDF, HTML
+    b_1 <= E_1 * 12.1*IN^2 | KIP, kN, 2 | Std. 123
+  
+  assigns a variable to an equation value
+  
+  text, PDF, HTML
 
-**[21]** **=** - assign value
+
+**[23]** **:=** - define value
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: a = 10*IN | unit1, unit2, decimals | description
+.. topic:: c := 5*unit1 | unit1, unit2, decimals | description
 
-    - assigns value to a variable
-    - PDF, HTML
-
-**[22]** **:=** - define equation
--------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: b := a * 10 | unit1, unit2, decimals | reference
-
-    - defines a variable in terms of expression
-    - PDF, HTML
+    D_1 = 10*IN | IN, M, 3 | beam depth
+  
+  defines the value of a variable 
+  
+  text, PDF, HTML

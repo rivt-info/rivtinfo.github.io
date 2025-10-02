@@ -319,7 +319,7 @@
 <li class="toctree-l1"><a class="reference internal" href="rv0304-markup-t.html">3.4 rv. <strong>T</strong> - Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0305-markup-m.html">3.5 rv. <strong>M</strong> - Meta</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0306-markup-d.html">3.6 rv. <strong>D</strong> - Doc</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rv0307-quick.html">3.7 Quick Summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv0307-quick.html">3.7 Quick Lookup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0308-example1.html">3.8 Example 1</a></li>
 </ul>
 </div>
@@ -385,6 +385,9 @@
 <h1>3.2 rv. <strong>I</strong> - Insert<a class="headerlink" href="#rv-i-insert" title="Link to this heading">#</a></h1>
 <section id="tag-key">
 <h2><strong>[01]</strong> TAG KEY<a class="headerlink" href="#tag-key" title="Link to this heading">#</a></h2>
+<p><em>line tags</em> format a line of text and are denoted with _[TAG], usually at the
+end of the line. <em>Block tags</em> format a block of text that begin with _[[TAG]]
+on the first line and end with _[[Q]] after the last line.</p>
 <p>_[TAG] : line tag description</p>
 <hr><aside class="topic">
 <p class="topic-title">syntax : description</p>
@@ -628,6 +631,20 @@
 </section>
 <section id="command-key">
 <h2><strong>[25]</strong> COMMAND KEY<a class="headerlink" href="#command-key" title="Link to this heading">#</a></h2>
+<p><em>Command</em> parameter options are separated with commas and parameter elements by
+semicolons. Path names can be directly specified relative to the project
+<em>source folder</em> or specified with an alias:</p>
+<blockquote>
+<div><p><em>rvsource</em> : this alias directs <em>rivtlib</em> to look for the file in the
+default <em>source</em> folder. For example if the <em>rivt file</em> is in Division 1 and
+the API function is <em>Insert</em> the <em>i01</em> subfolder in the <em>source</em> folder is
+searched.</p>
+<p><em>rvlocal</em> : this alias directs <em>rivtlib</em> to look for the file in the <em>rivt
+file</em> directory. It is used when a <em>single doc</em>, rather than a <em>report
+doc</em> is processed.</p>
+</div></blockquote>
+<p>The <em>rivt report</em> folders are described
+<a class="reference internal" href="../dv04-reports/rv0402-folders.html"><span class="doc">here.</span></a></p>
 <hr><aside class="topic">
 <p class="topic-title">| COMMAND | parameters</p>
 <p>example</p>
@@ -637,8 +654,10 @@
 <section id="img-insert-image">
 <h2><strong>[26]</strong> | IMG | - insert image<a class="headerlink" href="#img-insert-image" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| IMG | path | filename | caption _[F], scale</p>
-<p>example</p>
+<p class="topic-title">| IMG | path | filename | scale, caption (_[F])</p>
+<div class="line-block">
+<div class="line">IMG | rvsource | file1.png | .50, Map _[F]</div>
+</div>
 </aside>
 <p>reads PNG and JPEG files (.png, jpg)</p>
 <p>text, PDF, HTML</p>
@@ -646,8 +665,10 @@
 <section id="img2-adjacent-images">
 <h2><strong>[27]</strong> | IMG2 | - adjacent images<a class="headerlink" href="#img2-adjacent-images" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| IMG2 | path | fname1, fname2 | cap1 _[F], cap2 _[F], sc1, sc2</p>
-<p>example</p>
+<p class="topic-title">| IMG2 | path | fname1, fname2 | cap1 (_[F]), cap2 (_[F]), sc1, sc2</p>
+<div class="line-block">
+<div class="line">IMG | rvsource | file1.png, file2.png | .50, .40, Map, Plan</div>
+</div>
 </aside>
 <p>reads PNG and JPEG files (.png, jpg)</p>
 <p>text, PDF, HTML</p>
@@ -655,8 +676,10 @@
 <section id="table-format-table">
 <h2><strong>[28]</strong> | TABLE | - format table<a class="headerlink" href="#table-format-table" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| TABLE | path | filename | title _[T]</p>
-<p>example</p>
+<p class="topic-title">| TABLE | path | filename | title (_[T])</p>
+<div class="line-block">
+<div class="line">TABLE | rvsource | file1.csv | Forces _[T]</div>
+</div>
 </aside>
 <p>reads text, csv and EXCEL files (.txt, .csv, .xls)</p>
 <p>PDF, HTML, text</p>
@@ -664,8 +687,10 @@
 <section id="text-format-text">
 <h2><strong>[29]</strong> | TEXT | - format text<a class="headerlink" href="#text-format-text" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| text | path | filename | title _[T]</p>
-<p>example</p>
+<p class="topic-title">| text | path | filename | normal, literal</p>
+<div class="line-block">
+<div class="line">TABLE | rvsource | file1.txt | normal</div>
+</div>
 </aside>
 <p>reads text, text and reST files (.txt, .tex, .rst)</p>
 <p>PDF, HTML, text</p>

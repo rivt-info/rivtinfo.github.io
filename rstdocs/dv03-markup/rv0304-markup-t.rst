@@ -5,6 +5,9 @@
 **[01]** TAG KEY
 --------------------------------------------
 
+*Block tags* format a block of text that begin with _[[TAG]]
+on the first line and end with _[[Q]] after the last line. 
+
 _[[TAG]] : block tag description
 
 .. raw:: html
@@ -93,6 +96,23 @@ text, pdf, html
 
 **[06]** COMMAND KEY
 ----------------------
+
+*Command* parameter options are separated with commas and parameter elements by
+semicolons. Path names can be directly specified relative to the project
+*source folder* or specified with an alias:
+
+    *rvsource* : this alias directs *rivtlib* to look for the file in the
+    default *source* folder. For example if the *rivt file* is in Division 1 and
+    the API function is *Insert* the *i01* subfolder in the *source* folder is
+    searched.
+
+    *rvlocal* : this alias directs *rivtlib* to look for the file in the *rivt
+    file* directory. It is used when a *single doc*, rather than a *report
+    doc* is processed.
+
+The *rivt report* folders are described 
+:doc:`here. </dv04-reports/rv0402-folders>`
+
 
 .. raw:: html
 

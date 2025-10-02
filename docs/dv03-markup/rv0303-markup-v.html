@@ -319,7 +319,7 @@
 <li class="toctree-l1"><a class="reference internal" href="rv0304-markup-t.html">3.4 rv. <strong>T</strong> - Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0305-markup-m.html">3.5 rv. <strong>M</strong> - Meta</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0306-markup-d.html">3.6 rv. <strong>D</strong> - Doc</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rv0307-quick.html">3.7 Quick Summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv0307-quick.html">3.7 Quick Lookup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0308-example1.html">3.8 Example 1</a></li>
 </ul>
 </div>
@@ -385,6 +385,9 @@
 <h1>3.3 rv. <strong>V</strong> - Values<a class="headerlink" href="#rv-v-values" title="Link to this heading">#</a></h1>
 <section id="tag-key">
 <h2><strong>[01]</strong> TAG KEY<a class="headerlink" href="#tag-key" title="Link to this heading">#</a></h2>
+<p><em>line tags</em> format a line of text and are denoted with _[TAG], usually at the
+end of the line. <em>Block tags</em> format a block of text that begin with _[[TAG]]
+on the first line and end with _[[Q]] after the last line.</p>
 <p>_[TAG] : line tag description</p>
 <hr><aside class="topic">
 <p class="topic-title">syntax : description</p>
@@ -478,16 +481,8 @@
 </aside>
 <p>text, pdf, html</p>
 </section>
-<section id="v-label-values-table">
-<h2><strong>[14]</strong> _[V] : label values table<a class="headerlink" href="#v-label-values-table" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title"><em>title</em> _[V]</p>
-<p>An autonumbered value table title _[V]</p>
-</aside>
-<p>text, pdf, html</p>
-</section>
 <section id="c-code-or-literal-text">
-<h2><strong>[12]</strong> _[[C]] : code or literal text<a class="headerlink" href="#c-code-or-literal-text" title="Link to this heading">#</a></h2>
+<h2><strong>[14]</strong> _[[C]] : code or literal text<a class="headerlink" href="#c-code-or-literal-text" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[C]] <em>language</em></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">C</span><span class="p">]]</span> <span class="n">python</span>
@@ -501,7 +496,7 @@
 <p>text, pdf, html</p>
 </section>
 <section id="l-latex">
-<h2><strong>[13]</strong> _[[L]] : LaTeX<a class="headerlink" href="#l-latex" title="Link to this heading">#</a></h2>
+<h2><strong>[15]</strong> _[[L]] : LaTeX<a class="headerlink" href="#l-latex" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[L]]</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">L</span><span class="p">]]</span>
@@ -515,7 +510,7 @@
 <p>pdf, html</p>
 </section>
 <section id="t-topic">
-<h2><strong>[14]</strong> _[[T]] : topic<a class="headerlink" href="#t-topic" title="Link to this heading">#</a></h2>
+<h2><strong>[16]</strong> _[[T]] : topic<a class="headerlink" href="#t-topic" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[T]] <em>topic</em></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">T</span><span class="p">]]</span> <span class="n">this</span> <span class="n">a</span> <span class="n">topic</span> <span class="n">title</span> <span class="p">:</span> <span class="n">after</span> <span class="n">colon</span> <span class="n">will</span> <span class="n">be</span> <span class="n">italic</span>
@@ -527,22 +522,22 @@
 </aside>
 <p>text, pdf, html</p>
 </section>
-<section id="v-values">
-<h2><strong>[15]</strong> _[[V]] : values<a class="headerlink" href="#v-values" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[[V]] <em>title</em></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">V</span><span class="p">]]</span> <span class="n">First</span> <span class="n">Floor</span> <span class="n">Framing</span>
-<span class="n">I_1</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">|</span> <span class="n">IN</span><span class="o">^</span><span class="mi">3</span><span class="p">,</span> <span class="n">CM</span><span class="o">^</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span> <span class="o">|</span> <span class="n">moment</span> <span class="n">of</span> <span class="n">intertia</span>
-<span class="n">L_1</span> <span class="o">=</span> <span class="mi">10</span><span class="o">*</span><span class="mf">1.5</span> <span class="o">|</span> <span class="n">FT</span><span class="p">,</span> <span class="n">M</span><span class="p">,</span> <span class="mi">2</span><span class="o">|</span> <span class="n">beam</span> <span class="n">length</span>
-<span class="o">...</span>
-<span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
-</pre></div>
-</div>
-</aside>
-<p>text, pdf, html</p>
-</section>
 <section id="command-key">
-<h2><strong>[16]</strong> COMMAND KEY<a class="headerlink" href="#command-key" title="Link to this heading">#</a></h2>
+<h2><strong>[17]</strong> COMMAND KEY<a class="headerlink" href="#command-key" title="Link to this heading">#</a></h2>
+<p><em>Command</em> parameter options are separated with commas and parameter elements by
+semicolons. Path names can be directly specified relative to the project
+<em>source folder</em> or specified with an alias:</p>
+<blockquote>
+<div><p><em>rvsource</em> : this alias directs <em>rivtlib</em> to look for the file in the
+default <em>source</em> folder. For example if the <em>rivt file</em> is in Division 1 and
+the API function is <em>Insert</em> the <em>i01</em> subfolder in the <em>source</em> folder is
+searched.</p>
+<p><em>rvlocal</em> : this alias directs <em>rivtlib</em> to look for the file in the <em>rivt
+file</em> directory. It is used when a <em>single doc</em>, rather than a <em>report
+doc</em> is processed.</p>
+</div></blockquote>
+<p>The <em>rivt report</em> folders are described
+<a class="reference internal" href="../dv04-reports/rv0402-folders.html"><span class="doc">here.</span></a></p>
 <hr><aside class="topic">
 <p class="topic-title">| COMMAND | parameters</p>
 <p>example</p>
@@ -550,63 +545,69 @@
 <p>file types</p>
 </section>
 <section id="img-insert-image">
-<h2><strong>[17]</strong> | IMG | - insert image<a class="headerlink" href="#img-insert-image" title="Link to this heading">#</a></h2>
+<h2><strong>[18]</strong> | IMG | - insert image<a class="headerlink" href="#img-insert-image" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| IMAGE | path | filename | caption _[F], scale</p>
-<ul class="simple">
-<li><p>reads PNG and JPEG files (.png, jpg)</p></li>
-<li><p>PDF, HTML</p></li>
-</ul>
+<p class="topic-title">| IMG | path | filename | scale, caption (_[F])</p>
+<div class="line-block">
+<div class="line">IMG | rvsource | file1.png | .50, Map _[F]</div>
+</div>
 </aside>
+<p>reads PNG and JPEG files (.png, jpg)</p>
+<p>text, PDF, HTML</p>
 </section>
 <section id="img2-adjacent-images">
-<h2><strong>[18]</strong> | IMG2 | - adjacent images<a class="headerlink" href="#img2-adjacent-images" title="Link to this heading">#</a></h2>
+<h2><strong>[19]</strong> | IMG2 | - adjacent images<a class="headerlink" href="#img2-adjacent-images" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| IMAGE2 | path | fname1, fname2 | cap1 _[F], cap2 _[F], sc1, sc2</p>
-<ul class="simple">
-<li><p>reads PNG and JPEG files (.png, jpg)</p></li>
-<li><p>PDF, HTML</p></li>
-</ul>
+<p class="topic-title">| IMG2 | path | fname1, fname2 | cap1 (_[F]), cap2 (_[F]), sc1, sc2</p>
+<div class="line-block">
+<div class="line">IMG | rvsource | file1.png, file2.png | .50, .40, Map, Plan</div>
+</div>
+</aside>
+<p>reads PNG and JPEG files (.png, jpg)</p>
+<p>text, PDF, HTML</p>
+</section>
+<section id="table-format-table">
+<h2><strong>[20]</strong> | TABLE | - format table<a class="headerlink" href="#table-format-table" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">| TABLE | path | filename | title (_[T])</p>
+<div class="line-block">
+<div class="line">TABLE | rvsource | file1.csv | Forces _[T]</div>
+</div>
+</aside>
+<p>reads text, csv and EXCEL files (.txt, .csv, .xls)</p>
+<p>PDF, HTML, text</p>
+</section>
+<section id="text-format-text">
+<h2><strong>[21]</strong> | TEXT | - format text<a class="headerlink" href="#text-format-text" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">| text | path | filename | normal, literal</p>
+<div class="line-block">
+<div class="line">TABLE | rvsource | file1.txt | normal</div>
+</div>
+</aside>
+<p>reads text, text and reST files (.txt, .tex, .rst)</p>
+<p>PDF, HTML, text</p>
+</section>
+<section id="assign-equation-value">
+<h2><strong>[22]</strong> <strong>&lt;=</strong> - assign equation value<a class="headerlink" href="#assign-equation-value" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">b &lt;= a * 10 | unit1, unit2, decimals | reference</p>
+<blockquote>
+<div><p>b_1 &lt;= E_1 * 12.1*IN^2 | KIP, kN, 2 | Std. 123</p>
+</div></blockquote>
+<p>assigns a variable to an equation value</p>
+<p>text, PDF, HTML</p>
 </aside>
 </section>
-<section id="table">
-<h2><strong>[19]</strong> | TABLE |<a class="headerlink" href="#table" title="Link to this heading">#</a></h2>
+<section id="define-value">
+<h2><strong>[23]</strong> <strong>:=</strong> - define value<a class="headerlink" href="#define-value" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| TABLE | path | filename | title _[T]</p>
-<ul class="simple">
-<li><p>reads text, csv and EXCEL files (.txt, .csv, .xls)</p></li>
-<li><p>PDF, HTML, text</p></li>
-</ul>
-</aside>
-</section>
-<section id="values">
-<h2><strong>[20]</strong> | VALUES |<a class="headerlink" href="#values" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">| VALUES | relative path | filename | title _[V], [rows]</p>
-<ul class="simple">
-<li><p>reads values.txt file</p></li>
-<li><p>PDF, HTML</p></li>
-</ul>
-</aside>
-</section>
-<section id="assign-value">
-<h2><strong>[21]</strong> <strong>=</strong> - assign value<a class="headerlink" href="#assign-value" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">a = 10*IN | unit1, unit2, decimals | description</p>
-<ul class="simple">
-<li><p>assigns value to a variable</p></li>
-<li><p>PDF, HTML</p></li>
-</ul>
-</aside>
-</section>
-<section id="define-equation">
-<h2><strong>[22]</strong> <strong>:=</strong> - define equation<a class="headerlink" href="#define-equation" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">b := a * 10 | unit1, unit2, decimals | reference</p>
-<ul class="simple">
-<li><p>defines a variable in terms of expression</p></li>
-<li><p>PDF, HTML</p></li>
-</ul>
+<p class="topic-title">c := 5*unit1 | unit1, unit2, decimals | description</p>
+<blockquote>
+<div><p>D_1 = 10*IN | IN, M, 3 | beam depth</p>
+</div></blockquote>
+<p>defines the value of a variable</p>
+<p>text, PDF, HTML</p>
 </aside>
 </section>
 </section>
@@ -669,18 +670,16 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#s-sympy-equation"><strong>[11]</strong> _[S] : sympy equation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-label-table"><strong>[12]</strong> _[T]  label table</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#u-url-link"><strong>[13]</strong> _[U] :  url link</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#v-label-values-table"><strong>[14]</strong> _[V] : label values table</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-code-or-literal-text"><strong>[12]</strong> _[[C]] : code or literal text</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#l-latex"><strong>[13]</strong> _[[L]] : LaTeX</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-topic"><strong>[14]</strong> _[[T]] : topic</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#v-values"><strong>[15]</strong> _[[V]] : values</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#command-key"><strong>[16]</strong> COMMAND KEY</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img-insert-image"><strong>[17]</strong> | IMG | - insert image</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img2-adjacent-images"><strong>[18]</strong> | IMG2 | - adjacent images</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table"><strong>[19]</strong> | TABLE |</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#values"><strong>[20]</strong> | VALUES |</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-value"><strong>[21]</strong> <strong>=</strong> - assign value</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#define-equation"><strong>[22]</strong> <strong>:=</strong> - define equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-code-or-literal-text"><strong>[14]</strong> _[[C]] : code or literal text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#l-latex"><strong>[15]</strong> _[[L]] : LaTeX</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-topic"><strong>[16]</strong> _[[T]] : topic</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#command-key"><strong>[17]</strong> COMMAND KEY</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img-insert-image"><strong>[18]</strong> | IMG | - insert image</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img2-adjacent-images"><strong>[19]</strong> | IMG2 | - adjacent images</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-format-table"><strong>[20]</strong> | TABLE | - format table</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-format-text"><strong>[21]</strong> | TEXT | - format text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-equation-value"><strong>[22]</strong> <strong>&lt;=</strong> - assign equation value</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#define-value"><strong>[23]</strong> <strong>:=</strong> - define value</a></li>
 </ul>
   </nav></div>
 

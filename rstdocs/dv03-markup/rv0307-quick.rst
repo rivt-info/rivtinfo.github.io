@@ -8,22 +8,22 @@
 ============= ========================== =======================================
 Scope             Line Tags                    Description (doc output)
 ============= ========================== =======================================
-I, V           *equation*    _[S]          format symbol math (all) 
-I, V           *label*       _[E]          equation label (all)
-I, V           *caption*     _[F]          image label (all) [1]
-I, V           *title*       _[T]          table label (all) [1]
-I, V             _____                     horizontal line, > 5 underscores 
-I, V                         _[P]          new page (all)
-I              *description* _[D]          endnote description (all)
 I              *text*        _[B]          center bold text (pdf, html)
+I              *description* _[D]          endnote description (all)
 I              *text*        _[C]          center text (all)
 I              text _[#] text              endnote (all)
 I              text _[L] *doc link*        doc link (all)
 I              text _[R] *report link*     report link (all)
 I              text _[U] *url*             url link (all)
+I, V           *equation*    _[S]          format symbol math (all) 
+I, V           *label*       _[E]          equation label (all)
+I, V           *caption*     _[F]          image label (all) [1]
+I, V           *title*       _[T]          table label (all) [1]
+I, V             _____   or  _[H]          horizontal line, >5 underscores (all)
+I, V                         _[P]          new page (all)
 ============= ========================== =======================================
 
-[1] tag may be added as parameters in IMG and TABLE commands
+[1] tag may be added to parameter in IMG and TABLE commands
 
 
 **[02]** Block tags
@@ -32,16 +32,14 @@ I              text _[U] *url*             url link (all)
 ============ ============================= =====================================
 Scope          Block Tags                    Description (doc scope)
 ============ ============================= =====================================
-M             _[[AUTH]] *description*         author data (all)
-M             _[[FORK]] *description*         fork data (all)
-I             _[[C]] *language*               code, literal (all)
-I             _[[N]]                          indent (all)
 I             _[[B]]                          indent bold (pdf, html)
 I             _[[I]]                          indent italic (pdf, html)
 I             _[[O]]                          italic, oblique (pdf, html)
 I             _[[L]]                          LaTeX (pdf, html)
-all           _[[Q]]                          quit (all)
-all           _[[T]]                          topic (all)
+I             _[[N]]                          indent (all)
+I             _[[C]] *language*               code, literal (all)
+M             _[[AUTH]] *description*         author data (all)
+M             _[[FORK]] *description*         fork data (all)
 R             _[[WIN]] *description*          Windows command script (all)
 R             _[[MACOS]] *description*        Mac shell script (all)
 R             _[[LINUX]] *description*        Linux shell script (all)
@@ -51,6 +49,8 @@ T             _[[QCAD]] *description*         QCAD script (pdf,html)
 T             _[[OPENSEES]] *description*     OpenSeesscript (all)
 T             _[[LATEX]] *description*        LaTeX commands (all)
 T             _[[HTML]] *description*         HTML commands (all)
+all           _[[T]] *topic*                  topic (all)
+all           _[[Q]]                          quit (all)
 ============ ============================= =====================================
 
 

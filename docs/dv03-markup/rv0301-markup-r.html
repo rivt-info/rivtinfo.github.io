@@ -319,7 +319,7 @@
 <li class="toctree-l1"><a class="reference internal" href="rv0304-markup-t.html">3.4 rv. <strong>T</strong> - Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0305-markup-m.html">3.5 rv. <strong>M</strong> - Meta</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0306-markup-d.html">3.6 rv. <strong>D</strong> - Doc</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rv0307-quick.html">3.7 Quick Summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv0307-quick.html">3.7 Quick Lookup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv0308-example1.html">3.8 Example 1</a></li>
 </ul>
 </div>
@@ -385,6 +385,8 @@
 <h1>3.1  rv. <strong>R</strong> - Run<a class="headerlink" href="#rv-r-run" title="Link to this heading">#</a></h1>
 <section id="tag-key">
 <h2><strong>[01]</strong> TAG KEY<a class="headerlink" href="#tag-key" title="Link to this heading">#</a></h2>
+<p><em>Block tags</em> format a block of text that begin with _[[TAG]]
+on the first line and end with _[[Q]] after the last line.</p>
 <p>_[[TAG]] : block tag description</p>
 <hr><aside class="topic">
 <p class="topic-title">syntax : description</p>
@@ -427,6 +429,20 @@ shell command
 </section>
 <section id="command-key">
 <h2><strong>[05]</strong> COMMAND KEY<a class="headerlink" href="#command-key" title="Link to this heading">#</a></h2>
+<p><em>Command</em> parameter options are separated with commas and parameter elements by
+semicolons. Path names can be directly specified relative to the project
+<em>source folder</em> or specified with an alias:</p>
+<blockquote>
+<div><p><em>rvsource</em> : this alias directs <em>rivtlib</em> to look for the file in the
+default <em>source</em> folder. For example if the <em>rivt file</em> is in Division 1 and
+the API function is <em>Insert</em> the <em>i01</em> subfolder in the <em>source</em> folder is
+searched.</p>
+<p><em>rvlocal</em> : this alias directs <em>rivtlib</em> to look for the file in the <em>rivt
+file</em> directory. It is used when a <em>single doc</em>, rather than a <em>report
+doc</em> is processed.</p>
+</div></blockquote>
+<p>The <em>rivt report</em> folders are described
+<a class="reference internal" href="../dv04-reports/rv0402-folders.html"><span class="doc">here.</span></a></p>
 <hr><aside class="topic">
 <p class="topic-title">| COMMAND | parameters</p>
 <p>example</p>
@@ -436,7 +452,7 @@ shell command
 <section id="win-command-script">
 <h2><strong>[06]</strong> | WIN | - command script<a class="headerlink" href="#win-command-script" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| WIN | path | filename</p>
+<p class="topic-title">| WIN | relative path | filename</p>
 <div class="line-block">
 <div class="line">WIN | rvsource | file.cmd</div>
 </div>
@@ -446,7 +462,7 @@ shell command
 <section id="macos-shell-script">
 <h2><strong>[07]</strong> | MACOS | - shell script<a class="headerlink" href="#macos-shell-script" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| MACOS | path | filename</p>
+<p class="topic-title">| MACOS | relative path | filename</p>
 <div class="line-block">
 <div class="line">MACOS | rvsource | file.sh</div>
 </div>
@@ -456,7 +472,7 @@ shell command
 <section id="linux-shell-script">
 <h2><strong>[08]</strong> | LINUX | - shell script<a class="headerlink" href="#linux-shell-script" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| LINUX | path | filename</p>
+<p class="topic-title">| LINUX | relative path | filename</p>
 <div class="line-block">
 <div class="line">LINUX | rvsource | file.sh</div>
 </div>
