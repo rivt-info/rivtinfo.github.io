@@ -389,10 +389,16 @@ and subfolders. <em>Reports</em> are assembled from and written to files in the
 <span class="w">    </span>└──<span class="w"> </span>README.txt<span class="w">                </span>text<span class="w"> </span>report
 </pre></div>
 </div>
-<p>A expanded example of a <em>project folder</em> is <a class="reference internal" href="rv0402-folders.html"><span class="doc">here</span></a></p>
+<p>A expanded example of a <em>report folder</em> is <a class="reference internal" href="rv0402-folders.html"><span class="doc">here</span></a></p>
 <p><em>rivt files</em> are processed one at a time. Sources used in a <em>doc</em> are read
 from <em>source</em> subfolders. <em>Docs</em> that are part of <em>reports</em> are written to
 subfolders of the <em>reports</em> folder.</p>
+<p>PDF files are produced in two ways, referred to as <em>rpdf</em> and <em>tpdf</em>. An <em>rpdf</em>
+doc is formatted using the <em>rst2pdf</em> library, a susbset of the larger
+<em>ReportLab</em> library. It is the default <em>rivt PDF doc</em>. Its advantage is a much
+smaller library compared to other PDF libraries. A <em>rivt LaTeX doc</em> (<em>tpdf</em>)
+requires a separate installation of the large texlive LaTeX library. Its
+advantage is extensive control over <em>doc</em> formatting and appearance.</p>
 <p><strong>[01]</strong> Single Docs</p>
 <p>For a simple document that will not be part of a report, a <em>single doc</em> may
 also be published using only the local folder, without reference to the project

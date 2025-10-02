@@ -19,11 +19,19 @@ and subfolders. *Reports* are assembled from and written to files in the
         └── README.txt                text report 
 
 
-A expanded example of a *project folder* is :doc:`here </dv04-reports/rv0402-folders>`
+A expanded example of a *report folder* is :doc:`here </dv04-reports/rv0402-folders>`
 
 *rivt files* are processed one at a time. Sources used in a *doc* are read
 from *source* subfolders. *Docs* that are part of *reports* are written to
 subfolders of the *reports* folder.
+
+
+PDF files are produced in two ways, referred to as *rpdf* and *tpdf*. An *rpdf*
+doc is formatted using the *rst2pdf* library, a susbset of the larger
+*ReportLab* library. It is the default *rivt PDF doc*. Its advantage is a much
+smaller library compared to other PDF libraries. A *rivt LaTeX doc* (*tpdf*)
+requires a separate installation of the large texlive LaTeX library. Its
+advantage is extensive control over *doc* formatting and appearance.
 
 
 **[01]** Single Docs

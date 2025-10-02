@@ -28,7 +28,7 @@ The top level folder structure is:
 
 .. code-block:: bash
 
-    [rivt]-Project-Label/          Project Folder 
+    [rivt]-Report-Label/          Report Folder 
         ├── [dv01-]divlabel/          division folder
         ├── [dv02-]divlabel/          division folder                   
         ├── [public]/                 public rivt files
@@ -50,7 +50,7 @@ An expanded folder structure looks like this:
 .. code-block:: bash
 
 
-    [rivt]-Project-Label/                 # Project Folder
+    [rivt]-Report-Label/                 # Report Folder
         ├── [dv01-]divlabel/                  # div 01 folder
             ├── [rv0101-]doclabel1.py               | rivt file
             └── [rv0102-]doclabel2.py               | rivt file

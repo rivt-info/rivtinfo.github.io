@@ -50,6 +50,8 @@ Jupyter        no       no         no      yes         yes      yes
     :hidden:
 
     rv0101-api.rst
-    rv0102-terms.rst
-    rv0103-faq.rst
-    rv0104-smallex.rst
+    rv0102-compile.rst
+    rv0103-terms.rst
+    rv0104-faq.rst
+    rv0105-smallex1.rst
+    rv0106-smallex2.rst

@@ -29,8 +29,8 @@ an example of an HTML report.
 framework*. The framework is described 
 :doc:`here. <dv02-install/rv0200-install>`
 
-:doc:`This <dv01-intro/rv0104-smallex>` is a small single *doc* example.
-:doc:`This <dv01-intro/rv0104-smallex>` is a small *report* example. A
+:doc:`This <dv01-intro/rv0105-smallex1>` is a small single *doc* example.
+:doc:`This <dv01-intro/rv0106-smallex2>` is a small *report* example. A
 search interface for discovering *rivt files* on 
 :doc:`GitHub is here <dv05-collab/rv0502-ghsearch>`.
 

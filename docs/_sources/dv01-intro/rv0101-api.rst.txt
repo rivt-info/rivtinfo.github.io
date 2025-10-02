@@ -8,13 +8,13 @@
 
     <hr>
 
-A *rivt file* is a Python file (.py) that *imports* the **rivtlib** library
-into the *namespace* **rv**::
+A *rivt file* is a Python file (.py) that imports the *rivtlib* library
+into the *rv namespace*::
 
     import rivtlib.rvapi as rv
 
-rivtlib includes 8 API functions which may be run in a script or interactively
-as notebook cells in an IDE (e.g. VSCode).
+*rivtlib* includes 8 API functions which may be run in a script or interactively
+as notebook cells in *VSCode* or other IDE.
 
 **[02]** API functions
 ----------------------------
@@ -37,25 +37,21 @@ rv.Q(rs)           Quit              Exit rivt
 =============== =============== ===================================
 
 Each function evaluates a triple-quoted string argument (rS). The first four
-functions (*R I V T*) output formatted utf-8 text to the terminal and can
+functions (**R I V T**) output formatted utf-8 text to the terminal and can
 generate *doc* content.
 
-The last four functions (*D M S Q*) are related to processing and management.
-The *Doc* function writes text, PDF or HTML *doc* files. The *Meta* function
-contains information related to file sharing. The *Skip* and *Quit* functions
-are used for interactive editing and debugging.
+The last four functions (**D M S Q**) are related to processing and output. The
+*Doc* function writes text, PDF or HTML *doc* files. The *Meta* function
+contains *rivt file* author and version information. The *Skip* and *Quit*
+functions are used for interactive editing and debugging.
 
-**[03]** API argument
+**[03]** rivt strings
 ----------------------------
 
-An API function starts in the first column. Its argument is a *rivt string*
-(rS) enclosed in triple quotes. The first line is a header that specifies
-overalll section labeling and processing. The header is followed by the section
-content. Content is indented four spaces for legibility and section folding.
-
-Section content includes *rivt tags and commands* may include
-arbitrary utf-8 text. See :doc:`Markup </dv03-markup/rv0300-markup>` for further
-details.
+An API function starts in the first column and takes a *rivt string* (rS)
+argument enclosed in triple quotes. The first line is a header that specifies
+overall section labeling and processing. The header is followed by the section
+content, indented four spaces for legibility and section folding.
 
 .. code-block:: python
 
@@ -63,34 +59,21 @@ details.
 
         section content
         ...
+        ...
         
         """)
+
+Section content includes arbitrary utf-8 text and may include *rivt tags and
+commands*. See :doc:`Markup </dv03-markup/rv0300-markup>` for further details.
+
+
 
 
 **[04]** Docs
 ----------------------------
 
-Docs are formatted output files specified by the *Doc* function. Docs include
-text (.txt), HTML (.html) and PDF (.pdf) files. Each output type is generated
-from the same *rivt file*.
+*rivt files* are compiled into *docs* that are formatted as text (.txt), HTML
+(.html) and PDF (.pdf) files. Each output type is generated from the same *rivt
+file*. Output types are specified in the 
+:doc:`Doc function </dv03-markup/rv0306-markup-d>` (*rv.D*).
 
-PDF files are produced in two ways, referred to as *rpdf* and *tpdf*. An *rpdf*
-doc is formatted using the *rst2pdf* library, a susbset of the larger
-*ReportLab* library. It is the default *rivt PDF doc*. Its advantage is a much
-smaller library compared to other PDF libraries. A *rivt LaTeX doc* (*tpdf*)
-requires a separate installation of the large texlive LaTeX library. Its
-advantage is extensive control over *doc* formatting and appearance.
-
-**[05]** Command Line 
-------------------------
-
-rivtlib is generally run interactilvey in an IDE. If run from the command line
-the command is
-
-.. code-block:: bash
-
-    python rvddss-filename.py
-
-where *rvddss-* is the doc number and*dd* and *ss* are integers identifying the
-report division and subdivision respectively. See 
-:doc:`here </dv04-reports/rv0402-folders>` for further details.
