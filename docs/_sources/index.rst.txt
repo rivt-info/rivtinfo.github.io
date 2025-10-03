@@ -18,7 +18,7 @@
 
 *rivt* is an open source Python project for writing and distributing
 engineering documents. Documents are written in 
-:doc:`rivt markup <dv03-markup/rv0300-markup>` within a Python file (.py).
+:doc:`rivt markup <dv03-markup/rv00-markup>` within a Python file (.py).
 
 A *rivt file* is a Python file that imports the package *rivtlib*. The
 *rivtlib* API outputs a formatted *rivt doc* as text, HTML or PDF from the same
@@ -27,12 +27,12 @@ an example of an HTML report.
 
 *rivt* also integrates well with other open source programs in a *rivt
 framework*. The framework is described 
-:doc:`here. <dv02-install/rv0200-install>`
+:doc:`here. <dv02-install/rv00-install>`
 
-:doc:`This <dv01-intro/rv0105-smallex1>` is a small single *doc* example.
-:doc:`This <dv01-intro/rv0106-smallex2>` is a small *report* example. A
+:doc:`This <dv01-intro/rv05-smallex1>` is a small single *doc* example.
+:doc:`This <dv01-intro/rv06-smallex2>` is a small *report* example. A
 search interface for discovering *rivt files* on 
-:doc:`GitHub is here <dv05-collab/rv0502-ghsearch>`.
+:doc:`GitHub is here <dv05-collab/rv02-ghsearch>`.
 
 
 .. raw:: html
@@ -46,8 +46,8 @@ rivt User Manual
 .. toctree::
     :maxdepth: 1
 
-    dv01-intro/rv0100-intro.rst
-    dv02-install/rv0200-install.rst
-    dv03-markup/rv0300-markup.rst
-    dv04-reports/rv0400-reports.rst
-    dv05-collab/rv0500-collab.rst
+    dv01-intro/rv00-intro.rst
+    dv02-install/rv00-install.rst
+    dv03-markup/rv00-markup.rst
+    dv04-reports/rv00-reports.rst
+    dv05-collab/rv00-collab.rst
