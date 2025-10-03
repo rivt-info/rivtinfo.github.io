@@ -1,6 +1,11 @@
 2.1 - Python and Dependencies
 ==============================
 
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
 
 ================================== =============================================
 Dependencies                                      description

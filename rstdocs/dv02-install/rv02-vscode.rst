@@ -7,6 +7,11 @@ snippets for API functions and commands.
 **[01]** VSCode Extensions
 ---------------------------
 
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
 ============================================== ===============================
 Extensions                                       description
 ============================================== ===============================

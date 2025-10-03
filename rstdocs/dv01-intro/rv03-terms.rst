@@ -1,45 +1,55 @@
 1.3 Terms
 ====================
 
-**KEY**
----------
-
 .. raw:: html
 
     <hr>
 
+
+**[1]** KEY
+---------------
+
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
 .. topic:: term : *context* (rivt, python, docutils, GitHub, os)
   
-  Definition
+   Definition
 
-A 
+
+**[2]** A 
 --------------
 
 .. raw:: html
 
     <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
- 
-B 
+**[3]** B 
 ---------------
 
 .. raw:: html
 
     <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
-C 
+**[4]** C 
 ---------------
 
 .. raw:: html
 
     <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
-D 
+**[5]** D 
 ----------------
 
 .. raw:: html
 
     <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 .. topic:: doc : rivt
 

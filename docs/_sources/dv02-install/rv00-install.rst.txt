@@ -1,14 +1,20 @@
 2. Installation
 ==================   
 
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+
 *rivt* is a Python project. It includes :doc:`rivtlib </dv01-intro/rv01-api>`
 and another two dozen  :doc:`Python packages </dv02-install/rv01-python>`. When
 *rivt* is installed, *rivt docs and reports* may be edited and published using a
 text editor. 
 
-*rivt* is also designed to work with auxiliary open source programs and tools that
-add editing and analysis capabilities. There are four installation methods for
-*rivt* and its auxiliary programs.
+*rivt* is also designed to work with auxiliary open source programs and tools
+that add editing and analysis capabilities. There are four installation methods
+for *rivt* and its auxiliary programs.
 
 .. topic:: 1. *rivt-uv* 
 
@@ -51,8 +57,13 @@ add editing and analysis capabilities. There are four installation methods for
 
 .. _rivt-uv:
 
-**[01]** Install *rivt-uv*
+**[1]** Install *rivt-uv*
 ----------------------------------
+
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 .. raw:: html
 
@@ -133,8 +144,13 @@ Within the *example1* folder run the rivt file:
 
 .. _rivt-system:
 
-**[02]** Install *rivt-system*
+**[2]** Install *rivt-system*
 ----------------------------------
+
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 *rivt* may be installed at the system level. 
 
@@ -146,8 +162,13 @@ A list of the dependencies and *requirements.txt* file is
 :doc:`here </dv02-install/rv01-python>`.
 
 
-**[03]** Install *rivt-framework*
+**[3]** Install *rivt-framework*
 ------------------------------------------
+
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 
 The *rivt-framework* includes installation of the following programs:
@@ -163,8 +184,13 @@ The *rivt-framework* includes installation of the following programs:
 #. `QCAD <https://qcad.io/en/>`_ 
 
 
-**[04]** Install *rivt.zip*
+**[4]** Install *rivt.zip*
 --------------------------------------------------
+
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 *rivt.zip* is a portable, single folder version of *rivt* and *VSCode*
 including libraries and extensions. It can be downloaded here.

@@ -1,6 +1,12 @@
 1.4 FAQ
 =================
 
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+
 .. dropdown:: Which open source license applies to the rivt framework?  
 
     **rivtlib** is distributed under the 

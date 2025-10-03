@@ -1,8 +1,13 @@
 1.2 Compile *Docs*
 ==================
 
-**[01]** Command Line 
+**[1]** Command Line 
 ------------------------
+
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 *rivtlib* is generally run interactively in an IDE. If run from the command line
 the command is

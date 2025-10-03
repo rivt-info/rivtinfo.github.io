@@ -1,6 +1,11 @@
 **1.** Introduction
 =========================
 
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
 *rivt* is an open source software project that faciliates the reuse and
 improvement of engineering documents. Writing engineering documents typically
 involves combining text, tables, diagrams, equations and calculations from a
