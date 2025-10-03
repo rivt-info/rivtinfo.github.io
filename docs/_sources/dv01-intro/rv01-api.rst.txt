@@ -17,7 +17,8 @@ into the *rv namespace*::
 *rivtlib* includes 8 API functions which may be run in a script or interactively
 as notebook cells in *VSCode* or other *IDE*.
 
-**[2]** API functions 
+
+**[2]** API Functions 
 ------------------------------------------------------------------------ 
 
 .. raw:: html
@@ -47,8 +48,14 @@ The last four functions (**D M S Q**) are related to processing and output. The
 contains *rivt file* author and version information. The *Skip* and *Quit*
 functions are used for interactive editing and debugging.
 
-**3** <i> rivt Strings
+
+**[3]** rivt Strings
 ----------------------------
+
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 An API function starts in the first column and takes a *rivt string* (rS)
 argument enclosed in triple quotes. The first line is a header that specifies
@@ -69,10 +76,13 @@ Section content includes arbitrary utf-8 text and may include *rivt tags and
 commands*. See :doc:`Markup </dv03-markup/rv00-markup>` for further details.
 
 
-
-
-**4** <i>  Docs
+**[4]**  Docs
 ----------------------------
+
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 *rivt files* are compiled into *docs* that are formatted as text (.txt), HTML
 (.html) and PDF (.pdf) files. Each output type is generated from the same *rivt
