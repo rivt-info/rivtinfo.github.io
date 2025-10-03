@@ -1,8 +1,8 @@
 **1.1** API
 ================
 
-**[1]** import rivtlib ``|                                            <i>``
--------------------------------------------------------------------------------
+**[1]** import rivtlib 
+--------------------------------------------------------------------- <i>
 
 .. raw:: html
 
@@ -16,8 +16,8 @@ into the *rv namespace*::
 *rivtlib* includes 8 API functions which may be run in a script or interactively
 as notebook cells in *VSCode* or other *IDE*.
 
-**[2]** API functions ``|                                            <i>``
--------------------------------------------------------------------------------
+**[2]** API functions 
+------------------------------------------------------------------------ <i>
 
 .. raw:: html
 
