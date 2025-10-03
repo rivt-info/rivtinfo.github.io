@@ -7,10 +7,7 @@
 .. raw:: html
 
     <hr>
-
-+------------------------------------+
-|                              | <i> |
-+------------------------------------+
+    <p style="text-align: right;"><i></p>
 
 A *rivt file* is a Python file (.py) that imports the *rivtlib* library
 into the *rv namespace*::
@@ -26,10 +23,7 @@ as notebook cells in *VSCode* or other *IDE*.
 .. raw:: html
 
     <hr>
-
-+------------------------------------------------------+
-|                                                | <i> |
-+------------------------------------------------------+
+    <p style="text-align: right;"> <i> </p>
 
 =============== =============== ===================================
 API              Name             Purpose
