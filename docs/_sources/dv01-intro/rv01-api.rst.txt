@@ -1,7 +1,7 @@
 1.1 API
 ================
 
-[i] **01** import rivtlib
+**01** [i] import rivtlib
 ------------------------------
 
 .. raw:: html
@@ -16,7 +16,7 @@ into the *rv namespace*::
 *rivtlib* includes 8 API functions which may be run in a script or interactively
 as notebook cells in *VSCode* or other IDE.
 
-[i] **02** API functions
+**02** [i]  API functions
 ----------------------------
 
 .. raw:: html
@@ -45,7 +45,7 @@ The last four functions (**D M S Q**) are related to processing and output. The
 contains *rivt file* author and version information. The *Skip* and *Quit*
 functions are used for interactive editing and debugging.
 
-[i] **03** rivt Strings
+**03** [i] rivt Strings
 ----------------------------
 
 An API function starts in the first column and takes a *rivt string* (rS)
@@ -69,7 +69,7 @@ commands*. See :doc:`Markup </dv03-markup/rv00-markup>` for further details.
 
 
 
-[i] **04** Docs
+**04** [i]  Docs
 ----------------------------
 
 *rivt files* are compiled into *docs* that are formatted as text (.txt), HTML
