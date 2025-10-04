@@ -23,7 +23,7 @@ html {
 
 #api {
     display: inline;
-    text-align: right;
+    float: right;
 }
 
 
