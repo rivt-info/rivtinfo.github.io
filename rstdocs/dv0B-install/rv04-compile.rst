@@ -1,6 +1,10 @@
 **B.4 Compile Docs**
 ==========================
 
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
 
 **[1]** Command Line 
 ------------------------
@@ -8,7 +12,6 @@
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 *rivtlib* is generally run interactively in an IDE. If run from the command line
 the command is

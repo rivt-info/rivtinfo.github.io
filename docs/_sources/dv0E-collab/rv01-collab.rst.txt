@@ -1,6 +1,9 @@
 **E.1 Collaboration**
 =======================
 
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
 
 **[1]** GitHub
 ------------------
@@ -8,7 +11,6 @@
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 VSCode and GitHub have a number of tools that faciliate collaboration when
 writing and sharing rivt files.
@@ -62,13 +64,16 @@ GitHub supports the following formats and features:
   setting your repositories to be viewed publicly, you agree to allow others to
   view and fork your repositories."
 
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
   [02] VSCode
   ============
 
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
  Collaboration in VS Code is primarily facilitated by the Visual Studio Live
  Share extension. This extension enables real-time collaborative development,

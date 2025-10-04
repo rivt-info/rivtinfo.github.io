@@ -1,6 +1,10 @@
 **C.1 Markup**
 ==================
 
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
 
 **[1]** rivt String
 ----------------------------------
@@ -8,7 +12,6 @@
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 
 *rivt markup* provides a readable, common language that generates text, PDF or
@@ -48,6 +51,9 @@ rv.S(rs)         Skip              Skip section
 rv.Q(rs)         Quit              Exit rivtlib
 =============== =============== ===================================
 
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
 
 **[2]** Header 
 ------------------
@@ -55,7 +61,6 @@ rv.Q(rs)         Quit              Exit rivtlib
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 A header starts with a *section label* followed by a vertical separator bar and
 *parameters* that override the section write behavior. 
@@ -95,6 +100,10 @@ rv.S             nowrite, private
 rv.Q             nowrite, private
 ============= ==============================
 
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
 
 **[3]** Section Content 
 --------------------------
@@ -102,7 +111,6 @@ rv.Q             nowrite, private
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 Section content is indented four spaces (for legibility and code folding) and
 includes *tags* for text formatting and *commands* for file operations.
@@ -126,6 +134,9 @@ or ** for bold.
 
 *Text docs* are formatted separately.
 
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
 
 **[4]** Tags and Commands
 ----------------------------
@@ -133,7 +144,6 @@ or ** for bold.
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 :doc:`Tags </dv0C-markup/rv08-quick>`
 

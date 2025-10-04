@@ -1,7 +1,10 @@
 **C.9 Example 1**
 ====================
 
+.. raw:: html
 
+    <p id="api">&lt;i&gt;</p>
+    
 .. code-block:: python
 
     import rivtlib.rivtapi as rv

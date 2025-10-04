@@ -2,7 +2,9 @@
 **D.3 Reports**
 ================== 
 
+.. raw:: html
 
+    <p id="api">&lt;i&gt;</p>
 
 **[1]** Files and Docs
 --------------------------------------------------------------------- 
@@ -10,8 +12,6 @@
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
 
 The assembly and organization of a *rivt report* is inferred from:
 
@@ -36,6 +36,9 @@ where ss is a two digit subdivision number. e.g., rv03-loads.py is subdivision
 *doc number* prefix. The *doc number* and *project folder structure* are used
 to assemble and organize reports.
 
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
 
 **[2]** Project Folders
 --------------------------------------------------------------------- 
@@ -43,7 +46,6 @@ to assemble and organize reports.
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 *rivt project folders* organize files used to generate *docs* and *reports*.
 The files include *rivt files*, external source documents, settings,
@@ -67,14 +69,16 @@ structure is shown :doc:`here</dv0D-documents/rv02-folders>`
 A *rivt file* may also generate a *single doc* that reads from and writes to the
 local *rivt file* folder, independent of the *project folders*.
 
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
 **[3]** Reports
 ----------------------------------------------------------
 
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
 
 *Reports* are assembled from *docs* produced by *rivt files* - each *rivt file*
 produces one *doc*. Each *doc* is a *subdivision* of a report.

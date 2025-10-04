@@ -1,5 +1,9 @@
-**C.6 rv.T - Tools**
+**C.6 Tools - rv.T**
 =======================
+
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
 
 
 **[1]** TAG KEY
@@ -8,7 +12,6 @@
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 *Block tags* format a block of text that begin with _[[TAG]]
 on the first line and end with _[[Q]] after the last line. 
@@ -30,7 +33,6 @@ _[[TAG]] : block tag description
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 .. code-block:: text
      
@@ -49,7 +51,6 @@ text, pdf, html
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 .. code-block:: text 
         
@@ -69,7 +70,6 @@ text, pdf, html
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 .. code-block:: text
         
@@ -88,7 +88,6 @@ text, pdf, html
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 .. code-block:: text
         
@@ -107,7 +106,6 @@ text, pdf, html
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 *Command* parameter options are separated with commas and parameter elements by
 semicolons. Path names can be directly specified relative to the project

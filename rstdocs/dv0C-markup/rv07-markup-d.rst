@@ -1,5 +1,9 @@
-**C.7 rv.D - Doc**
+**C.7 Doc - rv.D**
 ===========================
+
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
 
 
 **[1]** KEY  
@@ -8,7 +12,6 @@
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 
 .. topic:: | COMMAND | parameters
@@ -21,6 +24,9 @@
 
     <hr>
 
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
 
 **[2]** | APPEND  | - append PDF file
 -------------------------------------------
@@ -28,7 +34,6 @@
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 
 .. topic:: | APPEND | path | filename | before; after
@@ -36,13 +41,17 @@
    appends PDF file to *doc*
    PDF, HTML
  
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
+
 **[3]** | DOCS |  - write doc file
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 .. topic:: | DOCS | path |  txt; html; rpdf; tpdf
 

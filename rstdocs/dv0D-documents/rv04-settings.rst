@@ -2,6 +2,9 @@
 **D.4 Configuration Files**
 ===================================
 
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
 
 **[1]** Config Files
 --------------------------------------------------------------------- 
@@ -9,4 +12,3 @@
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>

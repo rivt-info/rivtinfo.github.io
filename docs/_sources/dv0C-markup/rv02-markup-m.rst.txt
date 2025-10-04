@@ -1,5 +1,9 @@
-**C.2 rv.M - Meta Data**
+**C.2 Meta Data - rv.M**
 ===========================
+
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
 
 
 **[1]** TAG KEY  
@@ -8,7 +12,6 @@
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 *Block tags* format a block of text that begin with _[[TAG]]
 on the first line and end with _[[Q]] after the last line. 
@@ -25,6 +28,9 @@ _[[TAG]] : block tag description
 
 types of output
 
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
 
 **[2]** _[[AUTH]] : Author 
 ------------------------------------------------
@@ -32,7 +38,6 @@ types of output
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 .. code-block:: text
      
@@ -46,13 +51,16 @@ types of output
 
 text, pdf, html
 
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
 **[3]** _[[FORK]] : Contributor 
 ------------------------------------------------
 
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 .. code-block:: text
 

@@ -1,13 +1,16 @@
 **E.3 - GitHub Search**
 ========================
 
+.. raw:: html
+
+    <p id="api">&lt;t&gt;</p>
+
 **[1]** GitHub Global Search
 --------------------------------
 
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;t&gt; </p>
 
 
 This page is a search interface for **rivt** files on GitHub. The search covers
@@ -54,7 +57,9 @@ For advanced searching use the `GitHub interface <https://github.com/search>`_.
 
     <br>
 
+.. raw:: html
 
+    <p id="api">&lt;t&gt;</p>
 
 **[2]** GitHub Organization Search
 ---------------------------------------
@@ -62,8 +67,6 @@ For advanced searching use the `GitHub interface <https://github.com/search>`_.
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;t&gt; </p>
-
 Restrict search to the following comma separated GitHub organizations: 
 
 .. raw:: html    

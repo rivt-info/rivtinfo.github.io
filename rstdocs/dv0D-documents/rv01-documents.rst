@@ -1,6 +1,9 @@
 **D.1 Documents**
 ========================
 
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
 
 **[1]** Docs
 --------------------------------------------------------------------- 
@@ -8,7 +11,6 @@
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 *rivt files* are typically stored in *division* folders unless they are *single
 docs*. *Reports* are assembled from and written to files in the *report* folder
@@ -41,6 +43,9 @@ smaller required library compared to other PDF libraries. A *rivt LaTeX doc*
 (approx. 2GB). Its advantage is additional control over *doc* formatting and
 appearance.
 
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
 
 **[2]** Single Docs
 ----------------------------------------------------------
@@ -48,7 +53,6 @@ appearance.
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 For a simple document that will not be part of a report, a *single doc* may
 also be published using only the local folder, without reference to the project

@@ -1,6 +1,9 @@
 **B.3 VSCode and Extensions**
 =================================
 
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
 
 **[1]** Install *rivt.zip*
 --------------------------------------------------
@@ -8,11 +11,13 @@
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 The rivt VSCode profile includes shortcuts for common editing functions and
 snippets for API functions and commands.
 
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
 
 **[2]** VSCode Extensions
 ---------------------------
@@ -20,7 +25,6 @@ snippets for API functions and commands.
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 ============================================== ===============================
 Extensions                                       description
@@ -95,13 +99,18 @@ yzane.markdown-pdf                                  markdown to pdf
 yzhang.markdown-all-in-one                          markdown tools
 ============================================== ===============================
 
+
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
+
 **[3]** Snippets/Keys
 ---------------------------
 
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 ============== ==============================================================
 Snippets/Keys            description

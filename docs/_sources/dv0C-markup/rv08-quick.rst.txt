@@ -1,6 +1,9 @@
 **C.8 Quick Lookup**
 =======================
 
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
 
 **[01]** Line tags
 ----------------------
@@ -30,6 +33,9 @@ I, V                         _[P]          new page (all)
 
 [1] tag may be added to parameter in IMG and TABLE commands
 
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
 
 **[02]** Block tags
 ----------------------
@@ -37,7 +43,6 @@ I, V                         _[P]          new page (all)
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 ============ ============================= =====================================
 Scope          Block Tags                    Description (doc scope)
@@ -63,6 +68,9 @@ all           _[[T]] *topic*                  topic (all)
 all           _[[Q]]                          quit (all)
 ============ ============================= =====================================
 
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
 
 **[3]** Commands
 -------------------
@@ -70,7 +78,6 @@ all           _[[Q]]                          quit (all)
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 ========= ===================================================== =================
 Scope           | Command | parameters                              file types
@@ -93,6 +100,9 @@ T            | PYTHON | rel path | fname                               py
 T            | QCAD   | rel path | fname                               js
 ========= ===================================================== =================
 
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
 
 **[4]** Folders
 -------------------
@@ -100,8 +110,6 @@ T            | QCAD   | rel path | fname                               js
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
 
 **Collapsed Folders**
 

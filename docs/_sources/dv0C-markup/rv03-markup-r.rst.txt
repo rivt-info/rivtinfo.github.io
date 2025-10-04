@@ -1,5 +1,9 @@
-**C.3  rv.R - Run**
+**C.3 Run - rv.R**
 ==========================
+
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
 
 
 **[1]** TAG KEY
@@ -8,7 +12,6 @@
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 *Block tags* format a block of text that begin with _[[TAG]]
 on the first line and end with _[[Q]] after the last line. 
@@ -30,6 +33,10 @@ file types
 
     <hr>
 
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
 
 **[2]** _[[WIN]] : batch
 ------------------------------------
@@ -48,8 +55,11 @@ file types
 
 text, pdf, html
 
+.. raw:: html
 
-**[03]** _[[MACOS]] : shell
+    <p id="api">&lt;i&gt;</p>
+
+**[3]** _[[MACOS]] : shell
 --------------------------------------
 
 .. raw:: html
@@ -66,8 +76,11 @@ text, pdf, html
 
 text, pdf, html
 
+.. raw:: html
 
-**[04]** _[[LINUX]] : shell 
+    <p id="api">&lt;i&gt;</p>
+
+**[4]** _[[LINUX]] : shell 
 ---------------------------------
 
 .. raw:: html
@@ -84,9 +97,11 @@ text, pdf, html
 
 text, pdf, html
 
+.. raw:: html
 
+    <p id="api">&lt;i&gt;</p>
 
-**[05]** COMMAND KEY
+**[5]** COMMAND KEY
 ----------------------
 
 *Command* parameter options are separated with commas and parameter elements by
@@ -117,9 +132,12 @@ The *rivt report* folders are described
 
 file types
 
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
 
 
-**[06]** | WIN | - command script
+**[6]** | WIN | - command script
 -------------------------------------------
 
 .. raw:: html
@@ -133,8 +151,11 @@ file types
 
 reads .txt, .cmd, .bat  files
 
+.. raw:: html
 
-**[07]** | MACOS | - shell script
+    <p id="api">&lt;i&gt;</p>
+
+**[7]** | MACOS | - shell script
 -------------------------------------------
 
 .. raw:: html
@@ -149,8 +170,11 @@ reads .txt, .cmd, .bat  files
 
 reads .sh files
 
+.. raw:: html
 
-**[08]** | LINUX | - shell script
+    <p id="api">&lt;i&gt;</p>
+
+**[8]** | LINUX | - shell script
 -------------------------------------------
 
 .. raw:: html

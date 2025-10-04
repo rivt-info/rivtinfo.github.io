@@ -59,7 +59,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'dv0C-markup/rv01-markup';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="C.2 rv.M - Meta Data" href="rv02-markup-m.html" />
+    <link rel="next" title="C.2 Meta Data - rv.M" href="rv02-markup-m.html" />
     <link rel="prev" title="B.4 Compile Docs" href="../dv0B-install/rv04-compile.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -313,12 +313,12 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="rv02-markup-m.html"><strong>C.2 rv.M - Meta Data</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rv03-markup-r.html"><strong>C.3  rv.R - Run</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rv04-markup-i.html"><strong>C.4 rv.I - Insert</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rv05-markup-v.html"><strong>C.5 rv.V - Values</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rv06-markup-t.html"><strong>C.6 rv.T - Tools</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rv07-markup-d.html"><strong>C.7 rv.D - Doc</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv02-markup-m.html"><strong>C.2 Meta Data - rv.M</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv03-markup-r.html"><strong>C.3 Run - rv.R</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv04-markup-i.html"><strong>C.4 Insert - rv.I</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv05-markup-v.html"><strong>C.5 Values - rv.V</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv06-markup-t.html"><strong>C.6 Tools - rv.T</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv07-markup-d.html"><strong>C.7 Doc - rv.D</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv08-quick.html"><strong>C.8 Quick Lookup</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rv09-example1.html"><strong>C.9 Example 1</strong></a></li>
 </ul>
@@ -380,10 +380,9 @@
                   
   <section id="c-1-markup">
 <h1><strong>C.1 Markup</strong><a class="headerlink" href="#c-1-markup" title="Link to this heading">#</a></h1>
-<section id="rivt-string">
+<p id="api">&lt;i&gt;</p><section id="rivt-string">
 <h2><strong>[1]</strong> rivt String<a class="headerlink" href="#rivt-string" title="Link to this heading">#</a></h2>
-<hr>
-<p style="text-align: right;"> &lt;i&gt; </p><p><em>rivt markup</em> provides a readable, common language that generates text, PDF or
+<hr><p><em>rivt markup</em> provides a readable, common language that generates text, PDF or
 HTML <em>docs</em> from the same <em>rivt file</em>. It is used in a <em>rivt string</em> - a
 utf-8 text string argument to a <em>rivtlib</em> API function.</p>
 <p>The first line in a <em>rivt string</em> is a <em>section header</em> that defines a section
@@ -446,11 +445,10 @@ exception of <em>rv.M</em>, which is the first function in a <em>doc</em> if use
 </tbody>
 </table>
 </div>
-</section>
+<p id="api">&lt;i&gt;</p></section>
 <section id="header">
 <h2><strong>[2]</strong> Header<a class="headerlink" href="#header" title="Link to this heading">#</a></h2>
-<hr>
-<p style="text-align: right;"> &lt;i&gt; </p><p>A header starts with a <em>section label</em> followed by a vertical separator bar and
+<hr><p>A header starts with a <em>section label</em> followed by a vertical separator bar and
 <em>parameters</em> that override the section write behavior.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | hide;print, public;private; (rvsource, rvlocal)</span>
 
@@ -505,11 +503,10 @@ linked when output to <em>doc</em>. The write <em>parameters</em> specify:</p>
 </tbody>
 </table>
 </div>
-</section>
+<p id="api">&lt;i&gt;</p></section>
 <section id="section-content">
 <h2><strong>[3]</strong> Section Content<a class="headerlink" href="#section-content" title="Link to this heading">#</a></h2>
-<hr>
-<p style="text-align: right;"> &lt;i&gt; </p><p>Section content is indented four spaces (for legibility and code folding) and
+<hr><p>Section content is indented four spaces (for legibility and code folding) and
 includes <em>tags</em> for text formatting and <em>commands</em> for file operations.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | write; nowrite, public; private</span>
 
@@ -526,11 +523,10 @@ contain a <em>command</em> or <em>tag</em> it is passed through as is. This allo
 embedded <em>restructured text</em>, e.g. surrounding text with *  for italics
 or ** for bold.</p>
 <p><em>Text docs</em> are formatted separately.</p>
-</section>
+<p id="api">&lt;i&gt;</p></section>
 <section id="tags-and-commands">
 <h2><strong>[4]</strong> Tags and Commands<a class="headerlink" href="#tags-and-commands" title="Link to this heading">#</a></h2>
-<hr>
-<p style="text-align: right;"> &lt;i&gt; </p><p><a class="reference internal" href="rv08-quick.html"><span class="doc">Tags</span></a></p>
+<hr><p><a class="reference internal" href="rv08-quick.html"><span class="doc">Tags</span></a></p>
 <p><em>Line tags</em> format a line of text and are denoted with <strong>_[TAG]</strong>, usually at
 the end of the line.</p>
 <p><em>Block tags</em> format a block of text that begin with <strong>_[[TAG]]</strong>
@@ -570,7 +566,7 @@ values to equation results and define variables.</p>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>C.2 rv.M - Meta Data</strong></p>
+        <p class="prev-next-title"><strong>C.2 Meta Data - rv.M</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

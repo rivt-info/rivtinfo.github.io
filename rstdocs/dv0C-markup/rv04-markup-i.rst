@@ -1,6 +1,9 @@
-**C.4 rv.I - Insert**
+**C.4 Insert - rv.I**
 ========================
 
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
 
 **[1]** TAG KEY
 --------------------------------------
@@ -8,7 +11,6 @@
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 *line tags* format a line of text and are denoted with _[TAG], usually at the
 end of the line. *Block tags* format a block of text that begin with _[[TAG]]
