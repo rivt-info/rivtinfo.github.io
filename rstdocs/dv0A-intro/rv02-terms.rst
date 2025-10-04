@@ -1,6 +1,9 @@
 **A.2 Terms**
 =====================
 
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
 
 **[1]** KEY
 ---------------
@@ -8,7 +11,6 @@
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 .. topic:: term : *context* (rivt, python, docutils, GitHub, os)
   
@@ -21,7 +23,7 @@
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
+
 
 **[3]** B 
 ---------------
@@ -29,7 +31,7 @@
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
+
 
 **[4]** C 
 ---------------
@@ -37,7 +39,7 @@
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
+
 
 **[5]** D 
 ----------------
@@ -45,7 +47,6 @@
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 .. topic:: doc : rivt
 

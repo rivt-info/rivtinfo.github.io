@@ -3,6 +3,9 @@
 
 .. raw:: html
 
+    <p id="api">&lt;i&gt;</p>
+
+.. raw:: html
+
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
     

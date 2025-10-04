@@ -376,10 +376,9 @@
                   
   <section id="a-1-introduction">
 <h1><strong>A.1 Introduction</strong><a class="headerlink" href="#a-1-introduction" title="Link to this heading">#</a></h1>
-<section id="summary">
+<p id="api">&lt;i&gt;</p><section id="summary">
 <h2><strong>[1]</strong> Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
-<hr>
-<p style="text-align: right;"> &lt;i&gt; </p><p><em>rivt</em> is an open source software project that faciliates the reuse and
+<hr><p><em>rivt</em> is an open source software project that faciliates the reuse and
 improvement of engineering documents. Writing engineering documents typically
 involves combining text, tables, diagrams, equations and calculations from a
 variety of sources. Although software combining these elements is available,
@@ -485,22 +484,20 @@ summarizes how it addresses these limitations:</p>
 <p>Collaboration support</p>
 </aside>
 </aside>
-</section>
+<p id="api">&lt;i&gt;</p></section>
 <section id="import-rivtlib">
 <h2><strong>[2]</strong> import rivtlib<a class="headerlink" href="#import-rivtlib" title="Link to this heading">#</a></h2>
-<hr>
-<p style="text-align: right;"> &lt;i&gt; </p><p>A <em>rivt file</em> is a Python file (.py) that imports the <em>rivtlib</em> library
+<hr><p>A <em>rivt file</em> is a Python file (.py) that imports the <em>rivtlib</em> library
 into the <em>rv namespace</em>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
 </pre></div>
 </div>
 <p><em>rivtlib</em> includes 8 API functions which may be run in a script or interactively
 as notebook cells in <em>VSCode</em> or other <em>IDE</em>.</p>
-</section>
+<p id="api">&lt;i&gt;</p></section>
 <section id="api-functions">
 <h2><strong>[3]</strong> API Functions<a class="headerlink" href="#api-functions" title="Link to this heading">#</a></h2>
-<hr>
-<p style="text-align: right;"> &lt;i&gt; </p><div class="pst-scrollable-table-container"><table class="table">
+<hr><div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>API</p></th>
 <th class="head"><p>Name</p></th>
@@ -550,11 +547,10 @@ generate <em>doc</em> content.</p>
 <em>Doc</em> function writes text, PDF or HTML <em>doc</em> files. The <em>Meta</em> function
 contains <em>rivt file</em> author and version information. The <em>Skip</em> and <em>Quit</em>
 functions are used for interactive editing and debugging.</p>
-</section>
+<p id="api">&lt;i&gt;</p></section>
 <section id="rivt-strings">
 <h2><strong>[4]</strong> rivt Strings<a class="headerlink" href="#rivt-strings" title="Link to this heading">#</a></h2>
-<hr>
-<p style="text-align: right;"> &lt;i&gt; </p><p>An API function starts in the first column and takes a <em>rivt string</em> (rS)
+<hr><p>An API function starts in the first column and takes a <em>rivt string</em> (rS)
 argument enclosed in triple quotes. The first line is a header that specifies
 overall section labeling and processing. The header is followed by the section
 content, indented four spaces for legibility and section folding.</p>
@@ -569,11 +565,10 @@ content, indented four spaces for legibility and section folding.</p>
 </div>
 <p>Section content includes arbitrary utf-8 text and may include <em>rivt tags and
 commands</em>. See <a class="reference internal" href="../dv0C-markup/rv01-markup.html"><span class="doc">Markup</span></a> for further details.</p>
-</section>
+<p id="api">&lt;i&gt;</p></section>
 <section id="docs">
 <h2><strong>[5]</strong>  Docs<a class="headerlink" href="#docs" title="Link to this heading">#</a></h2>
-<hr>
-<p style="text-align: right;"> &lt;i&gt; </p><p><em>rivt files</em> are compiled into <em>docs</em> that are formatted as text (.txt), HTML
+<hr><p><em>rivt files</em> are compiled into <em>docs</em> that are formatted as text (.txt), HTML
 (.html) and PDF (.pdf) files. Each output type is generated from the same <em>rivt
 file</em>. Output types are specified in the
 <a class="reference internal" href="../dv0C-markup/rv07-markup-d.html"><span class="doc">Doc function</span></a> (<em>rv.D</em>).</p>

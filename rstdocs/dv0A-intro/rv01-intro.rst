@@ -2,6 +2,9 @@
 **A.1 Introduction**
 =================================================================
 
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
 
 **[1]** Summary
 --------------------------------------------------------------------- 
@@ -9,7 +12,6 @@
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 *rivt* is an open source software project that faciliates the reuse and
 improvement of engineering documents. Writing engineering documents typically
@@ -54,6 +56,9 @@ Jupyter        no       no         no      yes         yes      yes
     .. [5] Cross-platform
     .. [6] Collaboration support
 
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
 
 **[2]** import rivtlib 
 --------------------------------------------------------------------- 
@@ -61,7 +66,6 @@ Jupyter        no       no         no      yes         yes      yes
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 A *rivt file* is a Python file (.py) that imports the *rivtlib* library
 into the *rv namespace*::
@@ -71,6 +75,9 @@ into the *rv namespace*::
 *rivtlib* includes 8 API functions which may be run in a script or interactively
 as notebook cells in *VSCode* or other *IDE*.
 
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
 
 **[3]** API Functions 
 ------------------------------------------------------------------------ 
@@ -78,7 +85,6 @@ as notebook cells in *VSCode* or other *IDE*.
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 =============== =============== ===================================
 API              Name             Purpose
@@ -102,6 +108,9 @@ The last four functions (**D M S Q**) are related to processing and output. The
 contains *rivt file* author and version information. The *Skip* and *Quit*
 functions are used for interactive editing and debugging.
 
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
 
 **[4]** rivt Strings
 ----------------------------
@@ -109,7 +118,6 @@ functions are used for interactive editing and debugging.
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 An API function starts in the first column and takes a *rivt string* (rS)
 argument enclosed in triple quotes. The first line is a header that specifies
@@ -129,14 +137,16 @@ content, indented four spaces for legibility and section folding.
 Section content includes arbitrary utf-8 text and may include *rivt tags and
 commands*. See :doc:`Markup </dv0C-markup/rv01-markup>` for further details.
 
+.. raw:: html
 
+    <p id="api">&lt;i&gt;</p>
+    
 **[5]**  Docs
 ----------------------------
 
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 *rivt files* are compiled into *docs* that are formatted as text (.txt), HTML
 (.html) and PDF (.pdf) files. Each output type is generated from the same *rivt
