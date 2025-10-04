@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="../_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="../_static/favicon-32x32.png" type="image/png">
-    <title>3.8 Example 1 &#8212; Home</title>
+    <title>4. Reports &#8212; Home</title>
   
   
   
@@ -56,11 +56,9 @@
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'dvC0-markup/rv08-example1';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'dvD0-documents/rv03-reports';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="E.1 Collaboration" href="../dvE0-collab/rv01-collab.html" />
-    <link rel="prev" title="3.6 rv. D - Doc" href="rv06-markup-d.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -159,9 +157,16 @@
 </li>
 
 
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="rv01-markup.html">
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../dvC0-markup/rv01-markup.html">
     C.1 Markup
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rv01-documents.html">
+    D.1 - Documents
   </a>
 </li>
 
@@ -225,8 +230,10 @@
       
       
       
+        
+      
       <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
         
 
   
@@ -255,9 +262,16 @@
 </li>
 
 
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="rv01-markup.html">
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../dvC0-markup/rv01-markup.html">
     C.1 Markup
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rv01-documents.html">
+    D.1 - Documents
   </a>
 </li>
 
@@ -289,21 +303,6 @@
       </div>
     
   </div>
-  
-    <div class="sidebar-primary-items__start sidebar-primary__section">
-        <div class="sidebar-primary-item">
-<nav class="bd-docs-nav bd-links" aria-label="Docs">
-    <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
-    <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="rv02-markup-i.html">3.2 rv. <strong>I</strong> - Insert</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rv04-markup-t.html">3.4 rv. <strong>T</strong> - Tools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rv05-markup-m.html">3.5 rv. <strong>M</strong> - Meta</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rv06-markup-d.html">3.6 rv. <strong>D</strong> - Doc</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">3.8 Example 1</a></li>
-</ul>
-</div>
-</nav></div>
-    </div>
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
@@ -340,10 +339,7 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    
-    <li class="breadcrumb-item"><a href="rv01-markup.html" class="nav-link"><strong>C.1</strong> Markup</a></li>
-    
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">3.8 Example 1</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">4. Reports</span></li>
   </ul>
 </nav>
 </div>
@@ -360,109 +356,47 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="example-1">
-<h1>3.8 Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h1>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rivtapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
-
-<span class="n">rv</span><span class="o">.</span><span class="n">R</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Run function | noprint, private</span>
-
-<span class="s2">    The Run function processes shell commands.</span>
-
-<span class="s2">    Each API function defines a new document section. The first line is a</span>
-<span class="s2">    heading line which includes the section heading, a parameter for redacting</span>
-<span class="s2">    sections in a mirror file intended for public sharing, and a parameter for</span>
-<span class="s2">    the background color for the section. If the section heading is preceded by</span>
-<span class="s2">    two dashes (--) the section is continued from the prior section without</span>
-<span class="s2">    introducting a new number.</span>
-
-<span class="s2">    File formatting follows pep8 and ruff. API functions start in column one.</span>
-<span class="s2">    All other lines are indented 4 spaces to facilitate section folding,</span>
-<span class="s2">    bookmarks and legibility.</span>
-
-<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
-
-<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Insert function | print, private</span>
-
-<span class="s2">    The Insert function formats static objects including images, tables,</span>
-<span class="s2">    equations and text.</span>
-
-<span class="s2">    |text | data01/describe.txt | rivt</span>
-
-<span class="s2">    The table command inserts and formats tabular data from csv or xls files.</span>
-<span class="s2">    The _[t] tag formats and autonumbers table titles.</span>
-
-<span class="s2">    A table title  _[t]</span>
-<span class="s2">    | table | data/file.csv | 60,r</span>
-
-<span class="s2">    The image command inserts and formats image data from png or jpg files. The</span>
-<span class="s2">    _[f] tag formats and autonumbers figures.</span>
-
-<span class="s2">    A figure caption _[f]</span>
-<span class="s2">    | image | data/f1.png | 50</span>
-
-<span class="s2">    Two images may be placed side by side as follows:</span>
-
-<span class="s2">    The first figure caption  _[f]</span>
-<span class="s2">    The second figure caption  _[f]</span>
-<span class="s2">    | image | private/image/f2.png, private/image/f3.png | 45,35</span>
-
-<span class="s2">    The tags _[x] and _[s] format LaTeX and sympy equations:</span>
-
-<span class="s2">    \gamma = </span><span class="se">\f</span><span class="s2">rac</span><span class="si">{5}</span><span class="s2">{x+y} + 3  _[x]</span>
-
-<span class="s2">    x = 32 + (y/2)  _[s]</span>
-
-<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
-
-<span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Values function |  pass; redact | nocolor</span>
-
-<span class="s2">    The Values fucntion evaluates variables and equations.</span>
-
-<span class="s2">    The equal tag declares a value. A sequence of declared values terminated</span>
-<span class="s2">    with a blank line is formatted as a table.</span>
-
-<span class="s2">    Example of assignment list _[t]</span>
-<span class="s2">    f1 = 10.1 * LBF |LBF, N| a force value</span>
-<span class="s2">    d1 = 12.1 * IN  |IN, CM| a length value</span>
-
-<span class="s2">    An equation tag provides an equation description and number. A colon-equal</span>
-<span class="s2">    tag assigns a value and specifies the result units and the output decimal</span>
-<span class="s2">    places printed in the result and equation.</span>
-
-<span class="s2">    Example equation - Area of circle  _[e]</span>
-<span class="s2">    a1 := 3.14(d1/2)^2 | IN^2, CM^2 | 1,2</span>
-
-<span class="s2">    | declare | data01/values02.csv</span>
-
-<span class="s2">    The declare command imports values from the csv file written by rivt when</span>
-<span class="s2">    processing values in other documents.</span>
-
-<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
-
-<span class="n">rv</span><span class="o">.</span><span class="n">T</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Tools function | pass; redact | nocolor</span>
-
-<span class="s2">    The Tools function processes Python code.</span>
-
-<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
-
-
-<span class="n">rv</span><span class="o">.</span><span class="n">S</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Any text</span>
-
-<span class="s2">    Changing a function to X skips evaluation of that function. Its purposes</span>
-<span class="s2">    include review commenting and debugging.</span>
-
-<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
-
-<span class="n">rv</span><span class="o">.</span><span class="n">D</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Doc function | pass; redact | nocolor</span>
-
-<span class="s2">    The Write function generates docs and reports.</span>
-
-<span class="s2">    | docs |</span>
-
-<span class="s2">    | report |</span>
-
-<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+  <section id="reports">
+<h1>4. Reports<a class="headerlink" href="#reports" title="Link to this heading">#</a></h1>
+<p>The assembly and organization of a <em>rivt report</em> is inferred from:</p>
+<ol class="arabic simple">
+<li><p>The <em>rivt file</em> and <em>doc</em> name</p></li>
+<li><p>The <em>project folder</em> names</p></li>
+</ol>
+<aside class="topic">
+<p class="topic-title">Note:</p>
+<p>In the examples below, brackets identify the fixed part of the file or
+folder name and are not included in the actual name.</p>
+</aside>
+<p><strong>Files and Docs</strong></p>
+<p>A <em>rivt file</em> name has a <em>doc number</em> prefix:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rvss-<span class="o">]</span>file-name.py
 </pre></div>
+</div>
+<p>where ss is a two digit subdivision number. e.g., rv03-loads.py is subdivision
+3 within a division folder. Each <em>rivt file</em> outputs a <em>doc file</em> with the same
+<em>doc number</em> prefix. The <em>doc number</em> and <em>project folder structure</em> are used
+to assemble and organize reports.</p>
+<p><strong>Project Folders</strong></p>
+<p><em>rivt project folders</em> organize files used to generate <em>docs</em> and <em>reports</em>.
+The files include <em>rivt files</em>, external source documents, settings,
+and public/private files. The top level structure is shown below. The full
+structure is shown <span class="xref std std-doc">here</span></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt<span class="o">]</span>-Project-Label/<span class="w">             </span>Project<span class="w"> </span>Folder
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>dv01-<span class="o">]</span>divlabel/<span class="w">          </span>division<span class="w"> </span>folder
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>dv02-<span class="o">]</span>divlabel/<span class="w">          </span>division<span class="w"> </span>folder
+
+<span class="w">    </span>...
+
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>public<span class="o">]</span>/<span class="w">                 </span>public<span class="w"> </span>rivt<span class="w"> </span>files
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>reports<span class="o">]</span>/<span class="w">                </span>reports<span class="w"> </span>and<span class="w"> </span>docs
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>source<span class="o">]</span>/<span class="w">                 </span><span class="nb">source</span><span class="w"> </span>files
+<span class="w">    </span>└──<span class="w"> </span>README.txt<span class="w">                </span>text<span class="w"> </span>report
+</pre></div>
+</div>
+<p>A <em>rivt file</em> may also generate a <em>single doc</em> that reads from and writes to the
+local <em>rivt file</em> folder, independent of the <em>project folders</em>.</p>
+<div class="toctree-wrapper compound">
 </div>
 </section>
 
@@ -476,24 +410,6 @@
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="rv06-markup-d.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">3.6 rv. <strong>D</strong> - Doc</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="../dvE0-collab/rv01-collab.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>E.1</strong> Collaboration</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               

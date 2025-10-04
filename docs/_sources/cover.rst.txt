@@ -48,5 +48,5 @@ rivt User Manual
     dvA0-intro/rv01-intro.rst
     dvB0-install/rv01-install.rst
     dvC0-markup/rv01-markup.rst
-    dvD0-reports/rv01-reports.rst
+    dvD0-documents/rv01-documents.rst
     dvE0-collab/rv01-collab.rst

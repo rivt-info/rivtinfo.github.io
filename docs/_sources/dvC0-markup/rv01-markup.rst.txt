@@ -1,6 +1,21 @@
 **C.1** Markup
 ==================
 
+.. raw:: html
+
+    <hr>
+    <hr>
+
+
+**[1]** rivt String
+----------------------------------
+
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+
 *rivt markup* provides a readable, common language that generates text, PDF or
 HTML *docs* from the same *rivt file*. It is used in a *rivt string* - a
 utf-8 text string argument to a *rivtlib* API function.
@@ -39,8 +54,13 @@ rv.Q(rs)         Quit              Exit rivtlib
 =============== =============== ===================================
 
 
-**[01]** Header 
+**[2]** Header 
 ------------------
+
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 A header starts with a *section label* followed by a vertical separator bar and
 *parameters* that override the section write behavior. 
@@ -81,8 +101,13 @@ rv.Q             nowrite, private
 ============= ==============================
 
 
-**[02]** Section Content 
+**[3]** Section Content 
 --------------------------
+
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 Section content is indented four spaces (for legibility and code folding) and
 includes *tags* for text formatting and *commands* for file operations.
@@ -107,8 +132,13 @@ or ** for bold.
 *Text docs* are formatted separately.
 
 
-**[03]** Tags and Commands
+**[4]** Tags and Commands
 ----------------------------
+
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 :doc:`Tags </dv03-markup/rv07-quick>`
 
@@ -131,11 +161,11 @@ values to equation results and define variables.
     :maxdepth: 1
     :hidden:
 
-    rv01-markup-r.rst
-    rv02-markup-i.rst
-    rv03-markup-v.rst
-    rv04-markup-t.rst
-    rv05-markup-m.rst
-    rv06-markup-d.rst
-    rv07-quick.rst
-    rv08-example1.rst
+    rv02-markup-m.rst
+    rv03-markup-r.rst
+    rv04-markup-i.rst
+    rv05-markup-v.rst
+    rv06-markup-t.rst
+    rv07-markup-d.rst
+    rv08-quick.rst
+    rv09-example1.rst

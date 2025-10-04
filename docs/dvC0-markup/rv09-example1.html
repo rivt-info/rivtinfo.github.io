@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="../_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="../_static/favicon-32x32.png" type="image/png">
-    <title>D.1 - Documents &#8212; Home</title>
+    <title>3.8 Example 1 &#8212; Home</title>
   
   
   
@@ -56,9 +56,11 @@
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'dvD0-reports/rv01-documents';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'dvC0-markup/rv09-example1';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="D.1 - Documents" href="../dvD0-documents/rv01-documents.html" />
+    <link rel="prev" title="3.7 Quick Lookup" href="rv08-quick.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -157,9 +159,16 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dvC0-markup/rv01-markup.html">
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="rv01-markup.html">
     C.1 Markup
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../dvD0-documents/rv01-documents.html">
+    D.1 - Documents
   </a>
 </li>
 
@@ -253,9 +262,16 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../dvC0-markup/rv01-markup.html">
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="rv01-markup.html">
     C.1 Markup
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../dvD0-documents/rv01-documents.html">
+    D.1 - Documents
   </a>
 </li>
 
@@ -292,7 +308,17 @@
         <div class="sidebar-primary-item">
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
-    <div class="bd-toc-item navbar-nav"></div>
+    <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="rv02-markup-m.html">3.5 rv. <strong>M</strong> - Meta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv03-markup-r.html">3.1  rv. <strong>R</strong> - Run</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv04-markup-i.html">3.2 rv. <strong>I</strong> - Insert</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv05-markup-v.html">3.3 rv. <strong>V</strong> - Values</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv06-markup-t.html">3.4 rv. <strong>T</strong> - Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv07-markup-d.html">3.6 rv. <strong>D</strong> - Doc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv08-quick.html">3.7 Quick Lookup</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">3.8 Example 1</a></li>
+</ul>
+</div>
 </nav></div>
     </div>
   
@@ -331,7 +357,10 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>D.1</strong> - Documents</span></li>
+    
+    <li class="breadcrumb-item"><a href="rv01-markup.html" class="nav-link"><strong>C.1</strong> Markup</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">3.8 Example 1</span></li>
   </ul>
 </nav>
 </div>
@@ -348,122 +377,108 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="d-1-documents">
-<h1><strong>D.1</strong> - Documents<a class="headerlink" href="#d-1-documents" title="Link to this heading">#</a></h1>
-<p><em>rivt files</em> are typically stored in <em>division</em> folders unless they are <em>single
-docs</em>. <em>Reports</em> are assembled from and written to files in the <em>report</em> folder
-which has the top level structure of:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt<span class="o">]</span>-Report-Label/<span class="w">              </span>Report<span class="w"> </span>Folder
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>dv01-<span class="o">]</span>divlabel/<span class="w">          </span>division<span class="w"> </span>folder
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>dv02-<span class="o">]</span>divlabel/<span class="w">          </span>division<span class="w"> </span>folder
+  <section id="example-1">
+<h1>3.8 Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h1>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rivtapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
 
-<span class="w">    </span>...
+<span class="n">rv</span><span class="o">.</span><span class="n">R</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Run function | noprint, private</span>
 
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>public<span class="o">]</span>/<span class="w">                 </span>public<span class="w"> </span>rivt<span class="w"> </span>files
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>report<span class="o">]</span>/<span class="w">                </span>reports<span class="w"> </span>and<span class="w"> </span>docs
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>source<span class="o">]</span>/<span class="w">                 </span><span class="nb">source</span><span class="w"> </span>files
-<span class="w">    </span>└──<span class="w"> </span>README.txt<span class="w">                </span>text<span class="w"> </span>report
-</pre></div>
-</div>
-<p><em>rivt files</em> are processed sequentially. Calculated values and programatically
-generated objects can be passed between files. Sources used in a <em>doc</em> are read
-from the <em>source</em> folder. Further explanation of the <em>report folder</em> is
-<span class="xref std std-doc">here</span></p>
-<p>PDF files are produced in two ways, referred to as <em>rpdf</em> and <em>tpdf</em>. An <em>rpdf</em>
-doc is formatted using the <em>rst2pdf</em> library, a susbset of the larger
-<em>ReportLab</em> library. It is the default <em>rivt PDF doc</em>. Its advantage is a much
-smaller required library compared to other PDF libraries. A <em>rivt LaTeX doc</em>
-(<em>tpdf</em>) requires separate installation of the large texlive LaTeX library (~
-2GB). Its advantage is additional control over <em>doc</em> formatting and appearance.</p>
-<p><strong>[01]</strong> Single Docs</p>
-<p>For a simple document that will not be part of a report, a <em>single doc</em> may
-also be published using only the local folder, without reference to the project
-folder. In this case all of the files are read from and written to the same
-folder as the <em>rivt file</em>.</p>
-<p>A <em>single doc</em> is published by including the following:</p>
-<ol class="arabic simple">
-<li><p>The <em>command</em> path is specified with the alias <em>rvlocal</em>.</p></li>
-<li><p>For the <em>Value</em> API function (<em>rv.V</em>) add <em>rvlocal</em> to header parameters.
-Separate parameters with a comma.</p></li>
-<li><p>Ensure that <em>doc</em> source files are in the local folder.</p></li>
-</ol>
-<p>Any <em>rivt file</em> can be converted to a <em>single doc</em> using the above steps. The
-text, PDF and HTML <em>docs</em> will be written to the local file using standard
-format settings built into <em>rivtlib</em>.</p>
-<p><em>Single docs</em> provide less formatting control but require less setup and are
-useful for quick <em>doc</em> production.</p>
-<p><strong>[02]</strong> Reports</p>
-<p><em>Reports</em> are assembled from <em>docs</em> produced by <em>rivt files</em> - each <em>rivt file</em>
-produces one <em>doc</em>. Each <em>doc</em> is a <em>subdivision</em> of a report.</p>
-<p>A typical workflow for writing <em>reports</em> is to start with a similar <em>report</em>
-and then edit it file by file to produce the group of <em>docs</em> needed for the
-<em>report</em>.</p>
-<p>The <em>report</em> is generated by editing and running a Python script with settings
-that specify <em>doc</em> assembly parameters and default overrides. A setting is
-provided to either regenerate all <em>docs</em> before <em>report</em> assembly or to
-assemble from previously generated <em>docs</em>. The <em>report</em> is assembled and
-written to a subfolder that depends on the specified format of the report.</p>
-<p>A typical report generating script is shown below. Many aspects of
-the <em>report</em> appearance are determined at the <em>doc</em> generating level.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#! python</span>
+<span class="s2">    The Run function processes shell commands.</span>
 
-<span class="kn">from</span><span class="w"> </span><span class="nn">rivtlib.rvreport</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>  <span class="c1"># noqa: F403</span>
+<span class="s2">    Each API function defines a new document section. The first line is a</span>
+<span class="s2">    heading line which includes the section heading, a parameter for redacting</span>
+<span class="s2">    sections in a mirror file intended for public sharing, and a parameter for</span>
+<span class="s2">    the background color for the section. If the section heading is preceded by</span>
+<span class="s2">    two dashes (--) the section is continued from the prior section without</span>
+<span class="s2">    introducting a new number.</span>
 
-<span class="sd">&quot;&quot;&quot; generate a rivt report</span>
+<span class="s2">    File formatting follows pep8 and ruff. API functions start in column one.</span>
+<span class="s2">    All other lines are indented 4 spaces to facilitate section folding,</span>
+<span class="s2">    bookmarks and legibility.</span>
 
-<span class="sd">Sample report generating and config file. The report generating file must</span>
-<span class="sd">located in rivtdocs/reports/. The report output file is written to the same</span>
-<span class="sd">folder. Duplicate report file names are incremented, not overwritten.</span>
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 
-<span class="sd">Run this Python file to generate a rivt report. Copy and rename the file to</span>
-<span class="sd">save custom report settings. See rivtdocs/styles/rivt.ini for additional</span>
-<span class="sd">settings.</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Insert function | print, private</span>
 
-<span class="sd">A flag determines whether the report is assembled from existing doc files or</span>
-<span class="sd">whether docs are regenerated prior to assembly. (see &quot;report type and paths&quot;</span>
-<span class="sd">below). If a rivt or doc file is specified for inclusion and not found a</span>
-<span class="sd">warning is given but the report is still assembled.</span>
+<span class="s2">    The Insert function formats static objects including images, tables,</span>
+<span class="s2">    equations and text.</span>
 
-<span class="sd">A rivt report organizes rivt folders into divisions, and rivt doc files as</span>
-<span class="sd">subdivisions. rivt doc numbers define this structure. Default titles for</span>
-<span class="sd">subdivisions and divisions are generated by stripping the doc or div number</span>
-<span class="sd">from the file or folder name and replacing underscores with spaces. The default</span>
-<span class="sd">titles may be overridden (see &quot;optional rename&quot; below). &quot;&quot;&quot;</span>
+<span class="s2">    |text | data01/describe.txt | rivt</span>
 
-<span class="c1"># ==================================</span>
-<span class="c1"># report type</span>
-<span class="c1"># ==================================</span>
-<span class="n">rptype</span> <span class="o">=</span> <span class="s2">&quot;rstpdf&quot;</span>  <span class="c1"># report type [html; rstpdf; texpdf; text]</span>
-<span class="n">rvrun</span> <span class="o">=</span> <span class="kc">False</span>  <span class="c1"># regenerate docs [True; False]</span>
+<span class="s2">    The table command inserts and formats tabular data from csv or xls files.</span>
+<span class="s2">    The _[t] tag formats and autonumbers table titles.</span>
 
-<span class="c1"># ==================================</span>
-<span class="c1"># report cover settings</span>
-<span class="c1"># ==================================</span>
-<span class="c1"># cover pages are located in rivtdocs/styles</span>
-<span class="n">rptitle</span> <span class="o">=</span> <span class="s2">&quot;Solar Canopy Calculations&quot;</span>
-<span class="n">rpsubtitle</span> <span class="o">=</span> <span class="s2">&quot;Larkspur, Ca&quot;</span>
-<span class="n">rpauthor</span> <span class="o">=</span> <span class="s2">&quot;rhh&quot;</span>
-<span class="n">rpdate</span> <span class="o">=</span> <span class="s2">&quot;&lt;datetime&gt;&quot;</span>
-<span class="n">rptoc</span> <span class="o">=</span> <span class="kc">True</span>  <span class="c1"># add table of contents, &quot;&quot; to omit</span>
-<span class="n">rpcover</span> <span class="o">=</span> <span class="s2">&quot;cover1.pdf&quot;</span>  <span class="c1"># cover page [name.rst; name.pdf], &quot;&quot; to omit</span>
+<span class="s2">    A table title  _[t]</span>
+<span class="s2">    | table | data/file.csv | 60,r</span>
 
-<span class="c1"># ==================================</span>
-<span class="c1"># include docs / rename titles</span>
-<span class="c1"># ==================================</span>
-<span class="c1"># include these divisions in report</span>
-<span class="n">dv01</span> <span class="o">=</span> <span class="s2">&quot;Codes and Loads&quot;</span>  <span class="c1"># override division title</span>
-<span class="n">dv02</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># use default division title from folder name</span>
-<span class="n">dv03</span> <span class="o">=</span> <span class="s2">&quot;Foundation&quot;</span>
+<span class="s2">    The image command inserts and formats image data from png or jpg files. The</span>
+<span class="s2">    _[f] tag formats and autonumbers figures.</span>
 
-<span class="c1"># include these docs in report</span>
-<span class="n">rv0101</span> <span class="o">=</span> <span class="s2">&quot;Codes&quot;</span>  <span class="c1"># override doc (subdivision) title in report</span>
-<span class="n">rv0102</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># use default subdivision title from file name</span>
-<span class="n">rv0201</span> <span class="o">=</span> <span class="s2">&quot;Steel Frame&quot;</span>
-<span class="n">rv0202</span> <span class="o">=</span> <span class="s2">&quot;Solar Panels&quot;</span>
-<span class="n">rv0301</span> <span class="o">=</span> <span class="s2">&quot;Slab&quot;</span>
-<span class="n">rv0302</span> <span class="o">=</span> <span class="s2">&quot;Walls&quot;</span>
+<span class="s2">    A figure caption _[f]</span>
+<span class="s2">    | image | data/f1.png | 50</span>
 
-<span class="n">genreport</span><span class="p">()</span>  <span class="c1"># noqa: F405</span>
+<span class="s2">    Two images may be placed side by side as follows:</span>
+
+<span class="s2">    The first figure caption  _[f]</span>
+<span class="s2">    The second figure caption  _[f]</span>
+<span class="s2">    | image | private/image/f2.png, private/image/f3.png | 45,35</span>
+
+<span class="s2">    The tags _[x] and _[s] format LaTeX and sympy equations:</span>
+
+<span class="s2">    \gamma = </span><span class="se">\f</span><span class="s2">rac</span><span class="si">{5}</span><span class="s2">{x+y} + 3  _[x]</span>
+
+<span class="s2">    x = 32 + (y/2)  _[s]</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Values function |  pass; redact | nocolor</span>
+
+<span class="s2">    The Values fucntion evaluates variables and equations.</span>
+
+<span class="s2">    The equal tag declares a value. A sequence of declared values terminated</span>
+<span class="s2">    with a blank line is formatted as a table.</span>
+
+<span class="s2">    Example of assignment list _[t]</span>
+<span class="s2">    f1 = 10.1 * LBF |LBF, N| a force value</span>
+<span class="s2">    d1 = 12.1 * IN  |IN, CM| a length value</span>
+
+<span class="s2">    An equation tag provides an equation description and number. A colon-equal</span>
+<span class="s2">    tag assigns a value and specifies the result units and the output decimal</span>
+<span class="s2">    places printed in the result and equation.</span>
+
+<span class="s2">    Example equation - Area of circle  _[e]</span>
+<span class="s2">    a1 := 3.14(d1/2)^2 | IN^2, CM^2 | 1,2</span>
+
+<span class="s2">    | declare | data01/values02.csv</span>
+
+<span class="s2">    The declare command imports values from the csv file written by rivt when</span>
+<span class="s2">    processing values in other documents.</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">T</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Tools function | pass; redact | nocolor</span>
+
+<span class="s2">    The Tools function processes Python code.</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+
+<span class="n">rv</span><span class="o">.</span><span class="n">S</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Any text</span>
+
+<span class="s2">    Changing a function to X skips evaluation of that function. Its purposes</span>
+<span class="s2">    include review commenting and debugging.</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">D</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Doc function | pass; redact | nocolor</span>
+
+<span class="s2">    The Write function generates docs and reports.</span>
+
+<span class="s2">    | docs |</span>
+
+<span class="s2">    | report |</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
@@ -478,6 +493,24 @@ the <em>report</em> appearance are determined at the <em>doc</em> generating lev
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="rv08-quick.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">3.7 Quick Lookup</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../dvD0-documents/rv01-documents.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>D.1</strong> - Documents</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
