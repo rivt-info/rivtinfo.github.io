@@ -213,3 +213,4 @@ Disadvantages include:
 
     rv02-python.rst
     rv03-vscode.rst
+    rv04-compile.rst

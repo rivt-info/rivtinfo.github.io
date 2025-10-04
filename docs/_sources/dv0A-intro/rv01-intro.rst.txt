@@ -150,6 +150,5 @@ file*. Output types are specified in the
 
     rv02-terms.rst
     rv03-faq.rst
-    rv04-compile.rst
-    rv05-smallex1.rst
-    rv06-smallex2.rst
+    rv04-smallex1.rst
+    rv05-smallex2.rst
