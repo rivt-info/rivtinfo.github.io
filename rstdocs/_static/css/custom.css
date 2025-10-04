@@ -21,8 +21,9 @@ html {
     --pst-font-size-milli: 16px;
 }
 
-p.no-break {
+p.no-break-right {
     display: inline;
+    text-align: right;
 }
 
 p.topic-title {
