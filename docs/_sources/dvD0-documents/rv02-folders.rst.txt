@@ -1,8 +1,22 @@
-4.2 - Files and Folders
+**4.2** Files and Folders
 ============================
 
-**[01]** rivt files
+.. raw:: html
+
+    <hr>
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+
+
+**[1]** rivt files
 --------------------
+
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
 
 The output of a *rivt file* is a *rivt doc* formatted as a text, PDF or HTML
 file. A *rivt report* is assembled from a set of *rivt docs*. *rivt* and
@@ -15,8 +29,14 @@ file. A *rivt report* is assembled from a set of *rivt docs*. *rivt* and
 where *ss* is a two digit subdivision number.
 
 
-**[02]** Report Folders 
+**[2]** Report Folders 
 -------------------------------
+
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
 
 *rivt files* are stored in numbered division folders of the form 
 

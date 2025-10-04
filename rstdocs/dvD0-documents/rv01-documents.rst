@@ -1,6 +1,21 @@
 **D.1** - Documents 
 ========================
 
+.. raw:: html
+
+    <hr>
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+
+**[1]** Docs
+--------------------------------------------------------------------- 
+
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
 *rivt files* are typically stored in *division* folders unless they are *single
 docs*. *Reports* are assembled from and written to files in the *report* folder
 which has the top level structure of:
@@ -22,7 +37,7 @@ which has the top level structure of:
 *rivt files* are processed sequentially. Calculated values and programatically
 generated objects can be passed between files. Sources used in a *doc* are read
 from the *source* folder. Further explanation of the *report folder* is 
-:doc:`here </dv04-reports/rv02-folders>`
+:doc:`here </dvD0-documents/rv02-folders>`
 
 PDF files are produced in two ways, referred to as *rpdf* and *tpdf*. An *rpdf*
 doc is formatted using the *rst2pdf* library, a susbset of the larger
@@ -32,7 +47,13 @@ smaller required library compared to other PDF libraries. A *rivt LaTeX doc*
 2GB). Its advantage is additional control over *doc* formatting and appearance.
 
 
-**[01]** Single Docs
+**[2]** Single Docs
+----------------------------------------------------------
+
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 For a simple document that will not be part of a report, a *single doc* may
 also be published using only the local folder, without reference to the project
@@ -53,7 +74,14 @@ format settings built into *rivtlib*.
 *Single docs* provide less formatting control but require less setup and are
 useful for quick *doc* production.
 
-**[02]** Reports
+**[3]** Reports
+----------------------------------------------------------
+
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
 
 *Reports* are assembled from *docs* produced by *rivt files* - each *rivt file*
 produces one *doc*. Each *doc* is a *subdivision* of a report.
@@ -132,9 +160,4 @@ the *report* appearance are determined at the *doc* generating level.
     rv0302 = "Walls"
 
     genreport()  # noqa: F405
-
-
-
-
-
 

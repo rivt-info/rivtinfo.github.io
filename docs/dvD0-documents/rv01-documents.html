@@ -222,6 +222,10 @@
   
 
   
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="Sections">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
 </div>
 
     </header>
@@ -366,7 +370,12 @@
                   
   <section id="d-1-documents">
 <h1><strong>D.1</strong> - Documents<a class="headerlink" href="#d-1-documents" title="Link to this heading">#</a></h1>
-<p><em>rivt files</em> are typically stored in <em>division</em> folders unless they are <em>single
+<hr>
+<hr>
+<p style="text-align: right;"> &lt;i&gt; </p><section id="docs">
+<h2><strong>[1]</strong> Docs<a class="headerlink" href="#docs" title="Link to this heading">#</a></h2>
+<hr>
+<p style="text-align: right;"> &lt;i&gt; </p><p><em>rivt files</em> are typically stored in <em>division</em> folders unless they are <em>single
 docs</em>. <em>Reports</em> are assembled from and written to files in the <em>report</em> folder
 which has the top level structure of:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt<span class="o">]</span>-Report-Label/<span class="w">              </span>Report<span class="w"> </span>Folder
@@ -384,15 +393,18 @@ which has the top level structure of:</p>
 <p><em>rivt files</em> are processed sequentially. Calculated values and programatically
 generated objects can be passed between files. Sources used in a <em>doc</em> are read
 from the <em>source</em> folder. Further explanation of the <em>report folder</em> is
-<span class="xref std std-doc">here</span></p>
+<a class="reference internal" href="rv02-folders.html"><span class="doc">here</span></a></p>
 <p>PDF files are produced in two ways, referred to as <em>rpdf</em> and <em>tpdf</em>. An <em>rpdf</em>
 doc is formatted using the <em>rst2pdf</em> library, a susbset of the larger
 <em>ReportLab</em> library. It is the default <em>rivt PDF doc</em>. Its advantage is a much
 smaller required library compared to other PDF libraries. A <em>rivt LaTeX doc</em>
 (<em>tpdf</em>) requires separate installation of the large texlive LaTeX library (~
 2GB). Its advantage is additional control over <em>doc</em> formatting and appearance.</p>
-<p><strong>[01]</strong> Single Docs</p>
-<p>For a simple document that will not be part of a report, a <em>single doc</em> may
+</section>
+<section id="single-docs">
+<h2><strong>[2]</strong> Single Docs<a class="headerlink" href="#single-docs" title="Link to this heading">#</a></h2>
+<hr>
+<p style="text-align: right;"> &lt;i&gt; </p><p>For a simple document that will not be part of a report, a <em>single doc</em> may
 also be published using only the local folder, without reference to the project
 folder. In this case all of the files are read from and written to the same
 folder as the <em>rivt file</em>.</p>
@@ -408,8 +420,11 @@ text, PDF and HTML <em>docs</em> will be written to the local file using standar
 format settings built into <em>rivtlib</em>.</p>
 <p><em>Single docs</em> provide less formatting control but require less setup and are
 useful for quick <em>doc</em> production.</p>
-<p><strong>[02]</strong> Reports</p>
-<p><em>Reports</em> are assembled from <em>docs</em> produced by <em>rivt files</em> - each <em>rivt file</em>
+</section>
+<section id="reports">
+<h2><strong>[3]</strong> Reports<a class="headerlink" href="#reports" title="Link to this heading">#</a></h2>
+<hr>
+<p style="text-align: right;"> &lt;i&gt; </p><p><em>Reports</em> are assembled from <em>docs</em> produced by <em>rivt files</em> - each <em>rivt file</em>
 produces one <em>doc</em>. Each <em>doc</em> is a <em>subdivision</em> of a report.</p>
 <p>A typical workflow for writing <em>reports</em> is to start with a similar <em>report</em>
 and then edit it file by file to produce the group of <em>docs</em> needed for the
@@ -483,6 +498,7 @@ the <em>report</em> appearance are determined at the <em>doc</em> generating lev
 </pre></div>
 </div>
 </section>
+</section>
 
 
                 </article>
@@ -518,6 +534,26 @@ the <em>report</em> appearance are determined at the <em>doc</em> generating lev
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Sections
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docs"><strong>[1]</strong> Docs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#single-docs"><strong>[2]</strong> Single Docs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reports"><strong>[3]</strong> Reports</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

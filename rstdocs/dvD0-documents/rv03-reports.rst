@@ -1,5 +1,21 @@
-4. Reports
-=============== 
+**4.3** Reports
+================== 
+
+.. raw:: html
+
+    <hr>
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+
+**[1]** Files and Docs
+--------------------------------------------------------------------- 
+
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
 
 The assembly and organization of a *rivt report* is inferred from:
 
@@ -11,7 +27,7 @@ The assembly and organization of a *rivt report* is inferred from:
    In the examples below, brackets identify the fixed part of the file or
    folder name and are not included in the actual name.
 
-**Files and Docs**
+
 
 A *rivt file* name has a *doc number* prefix:
 
@@ -24,7 +40,14 @@ where ss is a two digit subdivision number. e.g., rv03-loads.py is subdivision
 *doc number* prefix. The *doc number* and *project folder structure* are used
 to assemble and organize reports.
 
-**Project Folders**
+
+**[2]** Project Folders
+--------------------------------------------------------------------- 
+
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 *rivt project folders* organize files used to generate *docs* and *reports*.
 The files include *rivt files*, external source documents, settings,
