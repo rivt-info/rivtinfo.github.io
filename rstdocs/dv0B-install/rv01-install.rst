@@ -65,7 +65,7 @@ for *rivt* and its auxiliary programs.
 
 .. raw:: html
 
-    <p class="no-break-right" >&lt;i&gt;</p>
+    <p class="no-break-right">&lt;i&gt;</p>
 
 
 .. _rivt-uv:
@@ -78,7 +78,7 @@ for *rivt* and its auxiliary programs.
 
     <hr>
 
-This *rivt* installation method is recommended for most users. The procedure
+This *rivt-uv* installation method is recommended for most users. The procedure
 for Windows is shown below. Other OS installs are similar.
 
 **Step 1. Install uv**
