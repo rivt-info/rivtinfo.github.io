@@ -48,7 +48,7 @@ to assemble and organize reports.
 *rivt project folders* organize files used to generate *docs* and *reports*.
 The files include *rivt files*, external source documents, settings,
 and public/private files. The top level structure is shown below. The full
-structure is shown :doc:`here</dvD0-documents/rv02-folders>`
+structure is shown :doc:`here</dv0D-documents/rv02-folders>`
 
 .. code-block:: bash
 

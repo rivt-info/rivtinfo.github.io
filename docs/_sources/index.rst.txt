@@ -28,8 +28,8 @@ an example of an HTML report.
 *rivt* integrates well with other open source programs in a *rivt
 framework* described  :doc:`here. <dv0B-install/rv01-install>`
 
-:doc:`This <dv0A-intro/rv05-smallex1>` is a small single *doc* example.
-:doc:`This <dv0A-intro/rv06-smallex2>` is a small *report* example. A
+:doc:`This <dv0A-intro/rv04-smallex1>` is a small single *doc* example.
+:doc:`This <dv0A-intro/rv05-smallex2>` is a small *report* example. A
 search interface for discovering *rivt files* on *GitHub* is
 :doc:`here <dv0E-collab/rv03-ghsearch>`.
 
