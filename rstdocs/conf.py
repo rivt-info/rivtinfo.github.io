@@ -15,7 +15,7 @@ extensions = ['sphinx.ext.githubpages','sphinx_togglebutton',
               'sphinx.ext.doctest', 'sphinx.ext.autodoc',
               'sphinx_design']
 
-master_doc = 'cover'
+master_doc = 'index'
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 source_suffix = ['.rst', '.md']
 templates_path = ['_templates']
