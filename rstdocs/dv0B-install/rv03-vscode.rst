@@ -1,4 +1,4 @@
-**B.3 - VSCode and Extensions**
+**B.3 VSCode and Extensions**
 =================================
 
 

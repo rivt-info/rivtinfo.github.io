@@ -1,4 +1,4 @@
-**B.2**  Python and Dependencies
+**B.2  Python and Dependencies**
 ===================================
 
 **[1]** Install *rivt.zip*
