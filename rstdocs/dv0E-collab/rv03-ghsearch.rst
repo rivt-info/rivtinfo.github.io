@@ -67,6 +67,7 @@ For advanced searching use the `GitHub interface <https://github.com/search>`_.
 .. raw:: html
 
     <hr>
+    
 Restrict search to the following comma separated GitHub organizations: 
 
 .. raw:: html    
