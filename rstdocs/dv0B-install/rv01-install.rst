@@ -27,7 +27,7 @@ for *rivt* and its auxiliary programs.
 
     *uv* is a `Python package manager <https://docs.astral.sh/uv/>`_ and
     installer that simplifies installing isolated Python environments. See
-    :ref:`Install rivt-uv <rivt-uv>` for installation procedures.
+    :ref:`Install rivt-uv <rivt-uv>` for procedure.
 
 .. raw:: html
 
@@ -36,7 +36,7 @@ for *rivt* and its auxiliary programs.
 .. topic:: 2. *rivt-system* 
 
     *rivt* may be installed at the system level using standalone installers.
-    See :ref:`rivt-system <rivt-system>` for system installation procedures.
+    See :ref:`rivt-system <rivt-system>` for procedure.
 
 .. raw:: html
 
@@ -62,11 +62,12 @@ for *rivt* and its auxiliary programs.
     *rivt.zip* is a portable, single folder, version of *rivt* integrated with
     *VSCode*.
 
-.. _rivt-uv:
 
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
+
+.. _rivt-uv:
 
 **[2]** Install *rivt-uv*
 ----------------------------------
@@ -145,12 +146,11 @@ Within the *example1* folder run the rivt file:
       
     python rv00-simple-single-doc.py
 
-
-.. _rivt-system:
-
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
+
+.. _rivt-system:
 
 **[3]** Install *rivt-system*
 ----------------------------------
