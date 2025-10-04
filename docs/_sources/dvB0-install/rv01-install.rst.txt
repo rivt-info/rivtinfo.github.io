@@ -2,14 +2,12 @@
 
     <hr>
 
-
-**B.1** Installation
-=======================   
+**B.1 INSTALL**
+=================================  
 
 .. raw:: html
 
     <hr>
-
 
 **[1]** rivt Project
 ----------------------------------
@@ -19,8 +17,8 @@
     <hr>
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-*rivt* is a Python project. It includes :doc:`rivtlib </dv01-intro/rv01-api>`
-and another two dozen  :doc:`Python packages </dv02-install/rv01-python>`. When
+*rivt* is a Python project. It includes :doc:`rivtlib </dvA0-intro/rv01-intro>`
+and another two dozen  :doc:`Python packages </dvB0-install/rv02-python>`. When
 *rivt* is installed, *rivt docs and reports* may be edited and published using a
 text editor. 
 
