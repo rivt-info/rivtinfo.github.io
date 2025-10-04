@@ -1,13 +1,25 @@
+.. raw:: html
+
+    <hr>
+
 **E.1** Collaboration
 =======================
 
-VSCode and GitHub have a number of tools that faciliate collaboration when
-writing and sharing rivt files.
+.. raw:: html
 
-**[01]** GitHub
+    <hr>
+
+
+**[1]** GitHub
 ------------------
 
-GitHub repos facilitate rivt file sharing and discovery.
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+VSCode and GitHub have a number of tools that faciliate collaboration when
+writing and sharing rivt files.
 
 The primary purpose of GitHub is to facilitate the version control and issue
 tracking aspects of software development. Labels, milestones, responsibility

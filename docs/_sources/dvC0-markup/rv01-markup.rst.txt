@@ -1,10 +1,15 @@
+.. raw:: html
+
+    <hr>
+
+
 **C.1** Markup
 ==================
 
 .. raw:: html
 
     <hr>
-    <hr>
+
 
 
 **[1]** rivt String

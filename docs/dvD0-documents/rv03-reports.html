@@ -59,6 +59,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'dvD0-documents/rv03-reports';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="D.4 Configuration Files" href="rv04-settings.html" />
+    <link rel="prev" title="4.2 Files and Folders" href="rv02-folders.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -164,7 +166,7 @@
 </li>
 
 
-<li class="nav-item ">
+<li class="nav-item current active">
   <a class="nav-link nav-internal" href="rv01-documents.html">
     D.1 - Documents
   </a>
@@ -234,10 +236,8 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -273,7 +273,7 @@
 </li>
 
 
-<li class="nav-item ">
+<li class="nav-item current active">
   <a class="nav-link nav-internal" href="rv01-documents.html">
     D.1 - Documents
   </a>
@@ -307,6 +307,19 @@
       </div>
     
   </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links" aria-label="Docs">
+    <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
+    <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="rv02-folders.html"><strong>4.2</strong> Files and Folders</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>4.3</strong> Reports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv04-settings.html"><strong>D.4</strong> Configuration Files</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
@@ -343,6 +356,9 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
+    
+    <li class="breadcrumb-item"><a href="rv01-documents.html" class="nav-link"><strong>D.1</strong> - Documents</a></li>
+    
     <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>4.3</strong> Reports</span></li>
   </ul>
 </nav>
@@ -360,11 +376,9 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="reports">
+  <hr><section id="reports">
 <h1><strong>4.3</strong> Reports<a class="headerlink" href="#reports" title="Link to this heading">#</a></h1>
-<hr>
-<hr>
-<p style="text-align: right;"> &lt;i&gt; </p><section id="files-and-docs">
+<hr><section id="files-and-docs">
 <h2><strong>[1]</strong> Files and Docs<a class="headerlink" href="#files-and-docs" title="Link to this heading">#</a></h2>
 <hr>
 <p style="text-align: right;"> &lt;i&gt; </p><p>The assembly and organization of a <em>rivt report</em> is inferred from:</p>
@@ -392,7 +406,7 @@ to assemble and organize reports.</p>
 <p style="text-align: right;"> &lt;i&gt; </p><p><em>rivt project folders</em> organize files used to generate <em>docs</em> and <em>reports</em>.
 The files include <em>rivt files</em>, external source documents, settings,
 and public/private files. The top level structure is shown below. The full
-structure is shown <span class="xref std std-doc">here</span></p>
+structure is shown <a class="reference internal" href="rv02-folders.html"><span class="doc">here</span></a></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt<span class="o">]</span>-Project-Label/<span class="w">             </span>Project<span class="w"> </span>Folder
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>dv01-<span class="o">]</span>divlabel/<span class="w">          </span>division<span class="w"> </span>folder
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>dv02-<span class="o">]</span>divlabel/<span class="w">          </span>division<span class="w"> </span>folder
@@ -407,7 +421,82 @@ structure is shown <span class="xref std std-doc">here</span></p>
 </div>
 <p>A <em>rivt file</em> may also generate a <em>single doc</em> that reads from and writes to the
 local <em>rivt file</em> folder, independent of the <em>project folders</em>.</p>
-<div class="toctree-wrapper compound">
+</section>
+<section id="id1">
+<h2><strong>[3]</strong> Reports<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<hr>
+<p style="text-align: right;"> &lt;i&gt; </p><p><em>Reports</em> are assembled from <em>docs</em> produced by <em>rivt files</em> - each <em>rivt file</em>
+produces one <em>doc</em>. Each <em>doc</em> is a <em>subdivision</em> of a report.</p>
+<p>A typical workflow for writing <em>reports</em> is to start with a similar <em>report</em>
+and then edit it file by file to produce the group of <em>docs</em> needed for the
+<em>report</em>.</p>
+<p>The <em>report</em> is generated by editing and running a Python script with settings
+that specify <em>doc</em> assembly parameters and default overrides. A setting is
+provided to either regenerate all <em>docs</em> before <em>report</em> assembly or to
+assemble from previously generated <em>docs</em>. The <em>report</em> is assembled and
+written to a subfolder that depends on the specified format of the report.</p>
+<p>A typical report generating script is shown below. Many aspects of
+the <em>report</em> appearance are determined at the <em>doc</em> generating level.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#! python</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">rivtlib.rvreport</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>  <span class="c1"># noqa: F403</span>
+
+<span class="sd">&quot;&quot;&quot; generate a rivt report</span>
+
+<span class="sd">Sample report generating and config file. The report generating file must</span>
+<span class="sd">located in rivtdocs/reports/. The report output file is written to the same</span>
+<span class="sd">folder. Duplicate report file names are incremented, not overwritten.</span>
+
+<span class="sd">Run this Python file to generate a rivt report. Copy and rename the file to</span>
+<span class="sd">save custom report settings. See rivtdocs/styles/rivt.ini for additional</span>
+<span class="sd">settings.</span>
+
+<span class="sd">A flag determines whether the report is assembled from existing doc files or</span>
+<span class="sd">whether docs are regenerated prior to assembly. (see &quot;report type and paths&quot;</span>
+<span class="sd">below). If a rivt or doc file is specified for inclusion and not found a</span>
+<span class="sd">warning is given but the report is still assembled.</span>
+
+<span class="sd">A rivt report organizes rivt folders into divisions, and rivt doc files as</span>
+<span class="sd">subdivisions. rivt doc numbers define this structure. Default titles for</span>
+<span class="sd">subdivisions and divisions are generated by stripping the doc or div number</span>
+<span class="sd">from the file or folder name and replacing underscores with spaces. The default</span>
+<span class="sd">titles may be overridden (see &quot;optional rename&quot; below). &quot;&quot;&quot;</span>
+
+<span class="c1"># ==================================</span>
+<span class="c1"># report type</span>
+<span class="c1"># ==================================</span>
+<span class="n">rptype</span> <span class="o">=</span> <span class="s2">&quot;rstpdf&quot;</span>  <span class="c1"># report type [html; rstpdf; texpdf; text]</span>
+<span class="n">rvrun</span> <span class="o">=</span> <span class="kc">False</span>  <span class="c1"># regenerate docs [True; False]</span>
+
+<span class="c1"># ==================================</span>
+<span class="c1"># report cover settings</span>
+<span class="c1"># ==================================</span>
+<span class="c1"># cover pages are located in rivtdocs/styles</span>
+<span class="n">rptitle</span> <span class="o">=</span> <span class="s2">&quot;Solar Canopy Calculations&quot;</span>
+<span class="n">rpsubtitle</span> <span class="o">=</span> <span class="s2">&quot;Larkspur, Ca&quot;</span>
+<span class="n">rpauthor</span> <span class="o">=</span> <span class="s2">&quot;rhh&quot;</span>
+<span class="n">rpdate</span> <span class="o">=</span> <span class="s2">&quot;&lt;datetime&gt;&quot;</span>
+<span class="n">rptoc</span> <span class="o">=</span> <span class="kc">True</span>  <span class="c1"># add table of contents, &quot;&quot; to omit</span>
+<span class="n">rpcover</span> <span class="o">=</span> <span class="s2">&quot;cover1.pdf&quot;</span>  <span class="c1"># cover page [name.rst; name.pdf], &quot;&quot; to omit</span>
+
+<span class="c1"># ==================================</span>
+<span class="c1"># include docs / rename titles</span>
+<span class="c1"># ==================================</span>
+<span class="c1"># include these divisions in report</span>
+<span class="n">dv01</span> <span class="o">=</span> <span class="s2">&quot;Codes and Loads&quot;</span>  <span class="c1"># override division title</span>
+<span class="n">dv02</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># use default division title from folder name</span>
+<span class="n">dv03</span> <span class="o">=</span> <span class="s2">&quot;Foundation&quot;</span>
+
+<span class="c1"># include these docs in report</span>
+<span class="n">rv0101</span> <span class="o">=</span> <span class="s2">&quot;Codes&quot;</span>  <span class="c1"># override doc (subdivision) title in report</span>
+<span class="n">rv0102</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># use default subdivision title from file name</span>
+<span class="n">rv0201</span> <span class="o">=</span> <span class="s2">&quot;Steel Frame&quot;</span>
+<span class="n">rv0202</span> <span class="o">=</span> <span class="s2">&quot;Solar Panels&quot;</span>
+<span class="n">rv0301</span> <span class="o">=</span> <span class="s2">&quot;Slab&quot;</span>
+<span class="n">rv0302</span> <span class="o">=</span> <span class="s2">&quot;Walls&quot;</span>
+
+<span class="n">genreport</span><span class="p">()</span>  <span class="c1"># noqa: F405</span>
+</pre></div>
 </div>
 </section>
 </section>
@@ -422,6 +511,24 @@ local <em>rivt file</em> folder, independent of the <em>project folders</em>.</p
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="rv02-folders.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><strong>4.2</strong> Files and Folders</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="rv04-settings.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>D.4</strong> Configuration Files</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -443,6 +550,7 @@ local <em>rivt file</em> folder, independent of the <em>project folders</em>.</p
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#files-and-docs"><strong>[1]</strong> Files and Docs</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-folders"><strong>[2]</strong> Project Folders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><strong>[3]</strong> Reports</a></li>
 </ul>
   </nav></div>
 

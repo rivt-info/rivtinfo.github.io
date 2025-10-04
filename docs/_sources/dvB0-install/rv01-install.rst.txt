@@ -1,9 +1,13 @@
+.. raw:: html
+
+    <hr>
+
+
 **B.1** Installation
 =======================   
 
 .. raw:: html
 
-    <hr>
     <hr>
 
 
