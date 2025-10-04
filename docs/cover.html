@@ -6,7 +6,10 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Search - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
+    <title>rivt User Manual &#8212; Home</title>
   
   
   
@@ -53,12 +56,10 @@
     <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'search';</script>
-  <script src="_static/searchtools.js"></script>
-  <script src="_static/language_data.js"></script>
-  <script src="searchindex.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'cover';</script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="A.1 Introduction" href="dvA0-intro/rv01-intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -80,7 +81,7 @@
   <dialog id="pst-search-dialog">
     
 <form class="bd-search d-flex align-items-center"
-      action="#"
+      action="search.html"
       method="get">
   <i class="fa-solid fa-magnifying-glass"></i>
   <input type="search"
@@ -116,7 +117,7 @@
     
   
 
-<a class="navbar-brand logo" href="cover.html">
+<a class="navbar-brand logo" href="#">
   
   
   
@@ -313,42 +314,45 @@
               <div class="bd-header-article d-print-none"></div>
               
               
-  <div class="bd-search-container">
-    <h1>Search</h1>
-    <noscript>
-      <div class="admonition error">
-        <p class="admonition-title">Error</p>
-        <p>Please activate JavaScript to enable the search functionality.</p>
-      </div>
-    </noscript>
-    
-<form class="bd-search d-flex align-items-center"
-      action="#"
-      method="get">
-  <i class="fa-solid fa-magnifying-glass"></i>
-  <input type="search"
-         class="form-control"
-         name="q"
-         placeholder="Search the docs ..."
-         aria-label="Search the docs ..."
-         autocomplete="off"
-         autocorrect="off"
-         autocapitalize="off"
-         spellcheck="false"/>
-  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-    <div id="search-results"></div>
-  </div>
-  <script>
-    // Activate the search field on page load
-    let searchInput = document.querySelector("form.bd-search input");
-    if (searchInput) {
-        searchInput.focus();
-        searchInput.select();
-        console.log("[PST]: Set focus on search field.");
-    }
-  </script>
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <figure class="align-center">
+<a class="dark-light reference internal image-reference" href="_images/rivdark55c.png"><img alt="rivt logo" class="dark-light" src="_images/rivdark55c.png" style="width: 120.2px; height: 89.80000000000001px;" />
+</a>
+</figure>
+<p style="text-align: center; font-size: 1.5rem;">rivt</p><br>
+<hr><p><em>rivt</em> is an open source Python project for writing and distributing
+engineering documents. Documents are written in
+<a class="reference internal" href="dvC0-markup/rv01-markup.html"><span class="doc">rivt markup</span></a> within a Python file (.py).</p>
+<p>A <em>rivt file</em> is a Python file that imports the package <em>rivtlib</em>. The
+<em>rivtlib</em> API outputs a formatted <em>rivt doc</em> as text, HTML or PDF from the same
+<em>rivt file</em>. The API also organizes <em>docs</em> into a <em>rivt report</em>. This site is
+an example of an HTML report.</p>
+<p><em>rivt</em> also integrates well with other open source programs in a <em>rivt
+framework</em>. The framework is described  <span class="xref std std-doc">here.</span></p>
+<p><a class="reference internal" href="dvA0-intro/rv05-smallex1.html"><span class="doc">This</span></a> is a small single <em>doc</em> example.
+<a class="reference internal" href="dvA0-intro/rv06-smallex2.html"><span class="doc">This</span></a> is a small <em>report</em> example. A
+search interface for discovering <em>rivt files</em> on is
+<span class="xref std std-doc">GitHub here</span>.</p>
+<hr>
+<br><section id="rivt-user-manual">
+<h1>rivt User Manual<a class="headerlink" href="#rivt-user-manual" title="Link to this heading">#</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="dvA0-intro/rv01-intro.html"><strong>A.1</strong> Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dvB0-install/rv01-install.html"><strong>B.1</strong> Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dvC0-markup/rv01-markup.html"><strong>C.1</strong> Markup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dvE0-collab/rv01-collab.html"><strong>E.1</strong> Collaboration</a></li>
+</ul>
+</div>
+</section>
 
+
+                </article>
+              
               
               
               
@@ -356,6 +360,15 @@
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="right-next"
+       href="dvA0-intro/rv01-intro.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>A.1</strong> Introduction</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               

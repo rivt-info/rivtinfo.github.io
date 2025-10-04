@@ -15,9 +15,9 @@ extensions = ['sphinx.ext.githubpages','sphinx_togglebutton',
               'sphinx.ext.doctest', 'sphinx.ext.autodoc',
               'sphinx_design']
 
+master_doc = 'cover'
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 source_suffix = ['.rst', '.md']
-master_doc = 'index'
 templates_path = ['_templates']
 locale_dirs = ['_locale'] 
 
@@ -46,9 +46,6 @@ html_theme_options = {
         "image_light": "rivhome11c.png",
     }
 }
-
-
-
 favicons = [
     {
         "rel": "icon",
