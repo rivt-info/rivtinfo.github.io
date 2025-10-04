@@ -1,11 +1,13 @@
+.. raw:: html
+
+    <hr>
+
 **A.1** Introduction
 =========================
 
 .. raw:: html
 
     <hr>
-    <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 
 **[1]** Summary
