@@ -13,7 +13,6 @@
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 *rivt* is a Python project. It includes :doc:`rivtlib </dv0A-intro/rv01-intro>`
 and two dozen  :doc:`Python packages </dv0B-install/rv02-python>`. When
@@ -164,7 +163,6 @@ Within the *example1* folder run the rivt file:
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 *rivt* may be installed at the system level. 
 
@@ -211,7 +209,6 @@ The *rivt-framework* includes installation of the following programs:
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 *rivt.zip* is a portable, single folder version of *rivt* and *VSCode*
 including libraries and extensions. It can be downloaded here.
