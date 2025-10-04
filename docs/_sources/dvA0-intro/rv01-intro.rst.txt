@@ -153,7 +153,6 @@ file*. Output types are specified in the
     :maxdepth: 1
     :hidden:
 
-    rv01-intro.rst
     rv02-compile.rst
     rv03-terms.rst
     rv04-faq.rst
