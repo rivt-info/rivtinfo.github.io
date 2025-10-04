@@ -1,6 +1,5 @@
-**D.3 - GitHub Search**
+**E.3 - GitHub Search**
 ========================
-
 
 **[1]** GitHub Global Search
 --------------------------------
