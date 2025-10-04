@@ -21,10 +21,11 @@ html {
     --pst-font-size-milli: 16px;
 }
 
-.no-break-right {
+#api {
     display: inline;
     text-align: right;
 }
+
 
 .topic-title {
     font-weight: normal;

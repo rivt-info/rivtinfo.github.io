@@ -4,7 +4,7 @@
 
 .. raw:: html
 
-    <p class="no-break-right" >&lt;i&gt;</p>
+    <p id="api">&lt;i&gt;</p>
 
 
 **[1]** rivt Project
@@ -65,7 +65,7 @@ for *rivt* and its auxiliary programs.
 
 .. raw:: html
 
-    <p class="no-break-right">&lt;i&gt;</p>
+    <p id="api">&lt;i&gt;</p>
 
 
 .. _rivt-uv:
@@ -153,7 +153,7 @@ Within the *example1* folder run the rivt file:
 
 .. raw:: html
 
-    <span style="text-align: right;display: inline"> &lt;i&gt; </span>
+    <p id="api">&lt;i&gt;</p>
 
 .. _rivt-system:
 
@@ -175,7 +175,7 @@ A list of the dependencies and *requirements.txt* file is
 
 .. raw:: html
 
-    <p style="text-align: right;"> &lt;i&gt; </p>
+    <p id="api">&lt;i&gt;</p>
 
 **[4]** Install *rivt-framework*
 ------------------------------------------
@@ -183,7 +183,6 @@ A list of the dependencies and *requirements.txt* file is
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 
 The *rivt-framework* includes installation of the following programs:
@@ -201,7 +200,7 @@ The *rivt-framework* includes installation of the following programs:
 
 .. raw:: html
 
-    <p class="no-break-right" >&lt;i&gt;</p>
+    <p id="api">&lt;i&gt;</p>
 
 
 **[5]** Install *rivt.zip*
