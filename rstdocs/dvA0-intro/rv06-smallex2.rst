@@ -1,4 +1,4 @@
-**A.6** Small example 2
+**A.6 Small example 2**
 =========================
 
 .. raw:: html

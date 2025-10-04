@@ -1,9 +1,14 @@
-3.2 rv. **I** - Insert
+**C.4 rv.I - Insert**
 ========================
 
 
-**[01]** TAG KEY
+**[1]** TAG KEY
 --------------------------------------
+
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 *line tags* format a line of text and are denoted with _[TAG], usually at the
 end of the line. *Block tags* format a block of text that begin with _[[TAG]]
@@ -36,12 +41,14 @@ types of output
     <hr>
 
 
-**[02]** _[#] :  numbered endnote
+**[2]** _[#] :  numbered endnote
 ----------------------------------------
 
 .. raw:: html
 
     <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
 
 .. topic:: *text* _[#] text
     
@@ -49,12 +56,13 @@ types of output
 
 text, pdf, html
 
-**[03]** _[D] :  footnote text
+**[3]** _[D] :  footnote text
 -------------------------------------------    
 
 .. raw:: html
 
     <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 .. topic:: *endnote* _[D]
 
@@ -63,12 +71,13 @@ text, pdf, html
 text, pdf, html
 
 
-**[04]** _[B] :  center, bold
+**[4]** _[B] :  center, bold
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 .. topic:: *text* _[B]
 
@@ -77,7 +86,7 @@ text, pdf, html
 pdf, html
 
 
-**[05]** _[C] :   center 
+**[5]** _[C] :   center 
 -------------------------------------------
 
 .. raw:: html

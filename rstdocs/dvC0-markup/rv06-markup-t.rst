@@ -1,9 +1,14 @@
-3.4 rv. **T** - Tools
+**C.6 rv.T - Tools**
 =======================
 
 
-**[01]** TAG KEY
+**[1]** TAG KEY
 --------------------------------------------
+
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 *Block tags* format a block of text that begin with _[[TAG]]
 on the first line and end with _[[Q]] after the last line. 
@@ -19,13 +24,13 @@ _[[TAG]] : block tag description
     types of output
 
 
-**[02]** _[[PYTHON]] : Python code
+**[2]** _[[PYTHON]] : Python code
 ------------------------------------------------
 
 .. raw:: html
 
     <hr>
-
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 .. code-block:: text
      
@@ -38,12 +43,13 @@ _[[TAG]] : block tag description
 text, pdf, html
 
 
-**[03]** _[[RUBY]] : Ruby code
+**[3]** _[[RUBY]] : Ruby code
 ------------------------------------------------
 
 .. raw:: html
 
     <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 .. code-block:: text 
         
@@ -57,13 +63,13 @@ text, pdf, html
 
 
 
-**[04]** _[[HTML]] : HTML code
+**[4]** _[[HTML]] : HTML code
 ------------------------------------------------
 
 .. raw:: html
 
     <hr>
-
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 .. code-block:: text
         
@@ -82,6 +88,7 @@ text, pdf, html
 .. raw:: html
 
     <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 .. code-block:: text
         
@@ -97,6 +104,11 @@ text, pdf, html
 **[06]** COMMAND KEY
 ----------------------
 
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
 *Command* parameter options are separated with commas and parameter elements by
 semicolons. Path names can be directly specified relative to the project
 *source folder* or specified with an alias:
@@ -110,8 +122,7 @@ semicolons. Path names can be directly specified relative to the project
     file* directory. It is used when a *single doc*, rather than a *report
     doc* is processed.
 
-The *rivt report* folders are described 
-:doc:`here. </dv04-reports/rv02-folders>`
+The *rivt report* folders are described :doc:`here. </dvD0-documents/rv02-folders>`
 
 
 .. raw:: html

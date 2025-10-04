@@ -2,10 +2,6 @@
 **B.1 Install**
 =================================  
 
-.. raw:: html
-
-    <hr>
-
 **[1]** rivt Project
 ----------------------------------
 
@@ -72,9 +68,6 @@ for *rivt* and its auxiliary programs.
     <hr>
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-.. raw:: html
-
-    <hr>
 
 This *rivt* installation method is recommended for most users. The procedure
 for Windows is shown below. Other OS installs are similar.
@@ -166,7 +159,7 @@ Within the *example1* folder run the rivt file:
 #. Install *rivtlib* and dependencies using `pip <https://pypi.org/project/pip/>`_ 
 
 A list of the dependencies and *requirements.txt* file is 
-:doc:`here </dv02-install/rv01-python>`.
+:doc:`here </dvB0-install/rv01-install>`.
 
 
 **[4]** Install *rivt-framework*
@@ -182,7 +175,7 @@ The *rivt-framework* includes installation of the following programs:
 
 #. `VSCode <https://code.visualstudio.com/>`_ and 
    `VSCode extensions <https://marketplace.visualstudio.com/vscode>`_. 
-   *rivt* extensions and snippets are :doc:`here </dv02-install/rv02-vscode>`.
+   *rivt* extensions and snippets are :doc:`here </dvB0-install/rv03-vscode>`.
 
 #. `Git <https://git-scm.com>`_ and set up a `GitHub <hhttps://github.com>`_ 
 

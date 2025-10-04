@@ -1,12 +1,5 @@
-**4.2** Files and Folders
+**D.2 Files and Folders**
 ============================
-
-.. raw:: html
-
-    <hr>
-    <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
 
 
 **[1]** rivt files
@@ -58,7 +51,7 @@ and then fully expanded. Note that::
     - Double vertical bar (||) identifies files written by *rivtlib* 
 
 
-**Collapsed Report Folders**
+**Collapsed Folders**
 
 .. code-block:: bash
 
@@ -73,7 +66,7 @@ and then fully expanded. Note that::
         └── README.txt                | GitHub searchable report 
 
 
-**Expanded Report Folders**
+**Expanded Folders**
 
 
 .. code-block:: bash

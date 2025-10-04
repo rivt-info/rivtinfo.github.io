@@ -1,9 +1,14 @@
-3.1  rv. **R** - Run
-======================
+**C.3  rv.R - Run**
+==========================
 
 
-**[01]** TAG KEY
+**[1]** TAG KEY
 ----------------------------------
+
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 *Block tags* format a block of text that begin with _[[TAG]]
 on the first line and end with _[[Q]] after the last line. 
@@ -26,7 +31,7 @@ file types
     <hr>
 
 
-**[02]** _[[WIN]] : batch
+**[2]** _[[WIN]] : batch
 ------------------------------------
 
 .. raw:: html

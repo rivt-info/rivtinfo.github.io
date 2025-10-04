@@ -1,9 +1,14 @@
-3.3 rv. **V** - Values
+**C.5 rv.V - Values**
 ========================
 
 
-**[01]** TAG KEY
+**[1]** TAG KEY
 --------------------------------------
+
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 *line tags* format a line of text and are denoted with _[TAG], usually at the
 end of the line. *Block tags* format a block of text that begin with _[[TAG]]
@@ -37,8 +42,13 @@ types of output
 
 
 
-**[02]** _[#] :  numbered endnote
+**[2]** _[#] :  numbered endnote
 ----------------------------------------
+
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 .. raw:: html
 
@@ -50,8 +60,14 @@ types of output
 
 text, pdf, html
 
-**[03]** _[D] :  endnote text
+
+**[3]** _[D] :  endnote text
 -------------------------------------------    
+
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 .. raw:: html
 

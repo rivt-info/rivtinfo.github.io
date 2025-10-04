@@ -26,12 +26,12 @@ A *rivt file* is a Python file that imports the package *rivtlib*. The
 an example of an HTML report.
 
 *rivt* also integrates well with other open source programs in a *rivt
-framework*. The framework is described  :doc:`here. <dvA0-install/rv01-install>`
+framework*. The framework is described  :doc:`here. <dvB0-install/rv01-install>`
 
 :doc:`This <dvA0-intro/rv05-smallex1>` is a small single *doc* example.
 :doc:`This <dvA0-intro/rv06-smallex2>` is a small *report* example. A
 search interface for discovering *rivt files* on is
-:doc:`GitHub here <dvA0-collab/rv02-ghsearch>`.
+:doc:`GitHub here <dvE0-collab/rv03-ghsearch>`.
 
 
 .. raw:: html

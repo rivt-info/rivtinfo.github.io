@@ -1,10 +1,14 @@
-3.5 rv. **M** - Meta
+**C.2 rv.M - Meta Data**
 ===========================
 
 
-
-**TAG KEY**  
+**[1]** TAG KEY  
 --------------------------------------------
+
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 *Block tags* format a block of text that begin with _[[TAG]]
 on the first line and end with _[[Q]] after the last line. 
@@ -22,13 +26,13 @@ _[[TAG]] : block tag description
 types of output
 
 
-**[01]** _[[AUTH]] : Author 
+**[2]** _[[AUTH]] : Author 
 ------------------------------------------------
 
 .. raw:: html
 
     <hr>
-
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 .. code-block:: text
      
@@ -42,12 +46,13 @@ types of output
 
 text, pdf, html
 
-**[02]** _[[FORK]] : Contributor 
+**[3]** _[[FORK]] : Contributor 
 ------------------------------------------------
 
 .. raw:: html
 
     <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 .. code-block:: text
 

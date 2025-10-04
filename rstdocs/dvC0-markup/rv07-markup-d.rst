@@ -1,17 +1,14 @@
-3.6 rv. **D** - Doc
+**C.7 rv.D - Doc**
 ===========================
 
 
-Project folder organization is described 
-:doc:`here. </dv04-reports/rv02-folders>`
-
-
-**KEY**  
+**[1]** KEY  
 -------------
 
 .. raw:: html
 
     <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 
 .. topic:: | COMMAND | parameters
@@ -25,12 +22,13 @@ Project folder organization is described
     <hr>
 
 
-**[01]** | APPEND  | - append PDF file
+**[2]** | APPEND  | - append PDF file
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 
 .. topic:: | APPEND | path | filename | before; after
@@ -38,13 +36,13 @@ Project folder organization is described
    appends PDF file to *doc*
    PDF, HTML
  
-**[02]** | DOCS |  - write doc file
+**[3]** | DOCS |  - write doc file
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
-
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 .. topic:: | DOCS | path |  txt; html; rpdf; tpdf
 
