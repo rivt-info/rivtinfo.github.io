@@ -4,7 +4,7 @@
 
 .. raw:: html
 
-    <p style="text-align: right;"> &lt;i&gt; </p>
+    <span style="text-align: right;display: inline"> &lt;i&gt; </span>
 
 
 **[1]** rivt Project
@@ -65,7 +65,7 @@ for *rivt* and its auxiliary programs.
 
 .. raw:: html
 
-    <p style="text-align: right;"> &lt;i&gt; </p>
+    <span style="text-align: right;display: inline"> &lt;i&gt; </span>
 
 
 .. _rivt-uv:
@@ -153,7 +153,7 @@ Within the *example1* folder run the rivt file:
 
 .. raw:: html
 
-    <p style="text-align: right;"> &lt;i&gt; </p>
+    <span style="text-align: right;display: inline"> &lt;i&gt; </span>
 
 .. _rivt-system:
 
@@ -201,7 +201,7 @@ The *rivt-framework* includes installation of the following programs:
 
 .. raw:: html
 
-    <p style="text-align: right;"> &lt;i&gt; </p>
+    <span style="text-align: right;display: inline"> &lt;i&gt; </span>
 
 **[5]** Install *rivt.zip*
 --------------------------------------------------
