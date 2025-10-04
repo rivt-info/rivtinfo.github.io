@@ -21,10 +21,15 @@ html {
     --pst-font-size-milli: 16px;
 }
 
+p.no-break {
+    display: inline;
+}
+
 p.topic-title {
     font-weight: normal;
     font-size: 1em;
 }
+
 
 .toctree-l1>a {
     font-size: 0.9em;
