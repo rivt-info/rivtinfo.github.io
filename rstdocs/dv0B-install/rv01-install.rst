@@ -2,6 +2,11 @@
 **B.1 Install**
 =================================  
 
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+
 **[1]** rivt Project
 ----------------------------------
 
@@ -58,7 +63,14 @@ for *rivt* and its auxiliary programs.
     *rivt.zip* is a portable, single folder, version of *rivt* integrated with
     *VSCode*.
 
+
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+
 .. _rivt-uv:
+
 
 **[2]** Install *rivt-uv*
 ----------------------------------
@@ -66,8 +78,6 @@ for *rivt* and its auxiliary programs.
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
 
 This *rivt* installation method is recommended for most users. The procedure
 for Windows is shown below. Other OS installs are similar.
@@ -142,6 +152,10 @@ Within the *example1* folder run the rivt file:
     python rv00-simple-single-doc.py
 
 
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
 .. _rivt-system:
 
 **[3]** Install *rivt-system*
@@ -161,6 +175,9 @@ Within the *example1* folder run the rivt file:
 A list of the dependencies and *requirements.txt* file is 
 :doc:`here </dv0B-install/rv01-install>`.
 
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 **[4]** Install *rivt-framework*
 ------------------------------------------
@@ -183,6 +200,10 @@ The *rivt-framework* includes installation of the following programs:
 
 #. `QCAD <https://qcad.io/en/>`_ 
 
+
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 **[5]** Install *rivt.zip*
 --------------------------------------------------
