@@ -1,8 +1,5 @@
-.. raw:: html
 
-    <hr>
-
-**B.1 INSTALL**
+**B.1 Install**
 =================================  
 
 .. raw:: html

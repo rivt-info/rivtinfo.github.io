@@ -1,13 +1,6 @@
-.. raw:: html
 
-    <hr>
-
-**D.4** Configuration Files
+**D.4 Configuration Files**
 ===================================
-
-.. raw:: html
-
-    <hr>
 
 
 **[1]** Config Files
