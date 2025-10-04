@@ -62,14 +62,11 @@ for *rivt* and its auxiliary programs.
     *rivt.zip* is a portable, single folder, version of *rivt* integrated with
     *VSCode*.
 
+.. _rivt-uv:
 
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
-
-
-.. _rivt-uv:
-
 
 **[2]** Install *rivt-uv*
 ----------------------------------
@@ -108,8 +105,6 @@ They execute the following steps:
 #. install *rivt* in the *uv* environment.
 #. create an *example1* folder
 #. download an example  *rivt file* and *sources* into the *example1* folder
-
-
 
 .. code-block:: bash
     
@@ -151,11 +146,11 @@ Within the *example1* folder run the rivt file:
     python rv00-simple-single-doc.py
 
 
+.. _rivt-system:
+
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
-
-.. _rivt-system:
 
 **[3]** Install *rivt-system*
 ----------------------------------
@@ -183,7 +178,6 @@ A list of the dependencies and *requirements.txt* file is
 .. raw:: html
 
     <hr>
-
 
 The *rivt-framework* includes installation of the following programs:
 
