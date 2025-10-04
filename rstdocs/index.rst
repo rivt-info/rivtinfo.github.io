@@ -25,8 +25,9 @@ A *rivt file* is a Python file that imports the package *rivtlib*. The
 *rivt file*. The API also organizes *docs* into a *rivt report*. This site is
 an example of an HTML report.
 
-*rivt* integrates well with other open source programs in a *rivt
-framework* described  :doc:`here. <dv0B-install/rv01-install>`
+*rivt* integrates well with other open source programs. A *rivt framework*
+described :doc:`here. <dv0B-install/rv01-install>` includes programs integrated
+with *rivt* through extensions and scripts.
 
 :doc:`This <dv0A-intro/rv04-smallex1>` is a small single *doc* example.
 :doc:`This <dv0A-intro/rv05-smallex2>` is a small *report* example. A

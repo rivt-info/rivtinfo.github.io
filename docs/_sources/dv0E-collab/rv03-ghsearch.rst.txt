@@ -7,7 +7,7 @@
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
+    <p style="text-align: right;"> &lt;t&gt; </p>
 
 
 This page is a search interface for **rivt** files on GitHub. The search covers
@@ -62,7 +62,7 @@ For advanced searching use the `GitHub interface <https://github.com/search>`_.
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
+    <p style="text-align: right;"> &lt;t&gt; </p>
 
 Restrict search to the following comma separated GitHub organizations: 
 
