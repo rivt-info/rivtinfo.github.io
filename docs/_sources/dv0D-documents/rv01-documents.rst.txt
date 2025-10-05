@@ -5,16 +5,17 @@
 
     <p id="api">&lt;i&gt;</p>
 
-**[1]** Docs
+**[1]** rivt Files and Docs
 --------------------------------------------------------------------- 
 
 .. raw:: html
 
     <hr>
 
-*rivt files* are typically stored in *division* folders unless they are *single
-docs*. *Reports* are assembled from and written to files in the *report* folder
-which has the top level structure of:
+*rivt files* are typically part of a *report* and are stored in *division*
+folders unless they are :ref:`single docs <singledoc>`. Each *rivt file* writes
+a *doc*. *Reports* are assembled from and written to files in the *report*
+folder which has the top level structure of:
 
 .. code-block:: bash
  
@@ -25,27 +26,29 @@ which has the top level structure of:
         ...
 
         ├── [public]/                 public rivt files
-        ├── [report]/                reports and docs
+        ├── [report]/                 reports and docs
         ├── [source]/                 source files      
         └── README.txt                text report 
 
+The *doc* title is taken from the *rivt file name* and written to the *report*
+folder.  Further explanation of the *report folder* is 
+:doc:`here</dv0D-documents/rv02-folders>`
 
-*rivt files* are processed sequentially. Calculated values and programatically
-generated objects can be passed between files. Sources used in a *doc* are read
-from the *source* folder. Further explanation of the *report folder* is 
-:doc:`here </dv0D-documents/rv02-folders>`
+PDF *doc* files are produced by two different libraries, referred to as *rpdf*
+and *tpdf*. An *rpdf* doc is formatted using the *rst2pdf* library, a susbset
+of the larger *ReportLab* library. Its advantage is a much smaller required
+library compared to other PDF libraries and it is the default *rivt PDF doc*.
 
-PDF files are produced in two ways, referred to as *rpdf* and *tpdf*. An *rpdf*
-doc is formatted using the *rst2pdf* library, a susbset of the larger
-*ReportLab* library. It is the default *rivt PDF doc*. Its advantage is a much
-smaller required library compared to other PDF libraries. A *rivt LaTeX doc*
-(*tpdf*) requires separate installation of the large texlive LaTeX library
-(approx. 2GB). Its advantage is additional control over *doc* formatting and
-appearance.
+A *rivt LaTeX doc* (*tpdf*) requires separate installation of the
+large texlive LaTeX library (approx. 3GB). Its advantage is additional control
+over *doc* formatting and appearance.
 
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
+
+
+.. _singledoc:
 
 **[2]** Single Docs
 ----------------------------------------------------------
@@ -55,23 +58,23 @@ appearance.
     <hr>
 
 For a simple document that will not be part of a report, a *single doc* may
-also be published using only the local folder, without reference to the project
-folder. In this case all of the files are read from and written to the same
+also be published using the local folder, without referencing the *report
+folders*. In this case all of the files are read from and written to the same
 folder as the *rivt file*. 
 
 A *single doc* is published by including the following:
 
 #. The *command* path is specified with the alias *rvlocal*.
-#. For the *Value* API function (*rv.V*) add *rvlocal* to header parameters. 
-   Separate parameters with a comma.
 #. Ensure that *doc* source files are in the local folder.
+#. For a *Value* API function (*rv.V*) add *rvlocal* to header parameters. 
+   Separate parameters with a comma.
 
 Any *rivt file* can be converted to a *single doc* using the above steps. The
 text, PDF and HTML *docs* will be written to the local file using standard
 format settings built into *rivtlib*. 
 
-*Single docs* provide less formatting control but require less setup and are
-useful for quick *doc* production.
+*Single docs* provide less formatting control but also require less setup and are
+useful for simple *docs*.
 
 .. toctree::
     :maxdepth: 1

@@ -34,7 +34,16 @@ A *rivt file* name has a *doc number* prefix:
 where ss is a two digit subdivision number. e.g., rv03-loads.py is subdivision
 3 within a division folder. Each *rivt file* outputs a *doc file* with the same
 *doc number* prefix. The *doc number* and *project folder structure* are used
-to assemble and organize reports.
+to assemble and organize reports. 
+
+Sources used in a *doc* are read from the *source*
+folder. 
+
+The *division label* is taken from *division folder label* and the *division
+name* is taken from the first *rivt file name* in the division.
+
+Calculated values and generated files can be passed between files. Report *rivt
+files* are processed sequentially.
 
 .. raw:: html
 
