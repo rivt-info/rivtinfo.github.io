@@ -38,7 +38,7 @@ where *ss* is a two digit subdivision number.
 
 .. code-block:: bash
 
-    [dvdd-]division-label
+    [dvdd-]division-name
 
 where dd is a two digit alpha-numeric division label.
 

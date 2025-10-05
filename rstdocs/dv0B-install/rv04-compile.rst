@@ -18,7 +18,7 @@ the command is
 
 .. code-block:: bash
 
-    python rvddss-filename.py
+    python rvss-filename.py
 
 where *rvddss-* is the doc number and*dd* and *ss* are integers identifying the
 report division and subdivision respectively. See 
