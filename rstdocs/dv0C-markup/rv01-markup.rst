@@ -13,7 +13,6 @@
 
     <hr>
 
-
 *rivt markup* provides a readable, common language that generates text, PDF or
 HTML *docs* from the same *rivt file*. It is used in a *rivt string* - a
 utf-8 text string argument to a *rivtlib* API function.
@@ -75,7 +74,6 @@ A header starts with a *section label* followed by a vertical separator bar and
         
         """)
 
-
 The *section label* is the section title. If the *section label* is preceeded
 by two dashes (*--section label*) the section output is merged with the prior
 section, instead of starting a new one. Sections are numbered, bookmarked and
@@ -125,14 +123,12 @@ includes *tags* for text formatting and *commands* for file operations.
         """)
 
 
-As a section is processed, line by line, it is passed to a 
+A section is processed, line by line, to a
 `RestructuredText string <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_,
-which is then further processed to an HTML or PDF file. If a line does not 
+and then further processed to an HTML or PDF file. If a line does not 
 contain a *command* or *tag* it is passed through as is. This allows for 
-embedded *restructured text*, e.g. surrounding text with *  for italics 
-or ** for bold. 
-
-*Text docs* are formatted separately.
+including *restructured text* directly, e.g. surrounding text with * for italics 
+or ** for bold. *Text docs* are formatted separately.
 
 .. raw:: html
 

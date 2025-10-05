@@ -26,7 +26,6 @@
     <hr>
     <p style="text-align: right;"> &lt;t&gt; </p>
 
-
 .. dropdown:: Which open source license applies to the rivt framework?  
 
     **rivtlib** is distributed under the 
@@ -45,8 +44,8 @@
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
-    
-**[2]** VSCode
+
+**[3]** VSCode
 -------------------------------------------------------------
 .. raw:: html
 

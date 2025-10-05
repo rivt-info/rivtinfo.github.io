@@ -33,7 +33,7 @@ summarizes how it addresses these limitations:
 .. rst-class:: center
 
 
-Table 1 - **Reuse Features Comparison**
+Table 1 - **Reuse Features**
 
 ============ ========= ======== ======== ========= ========= ============= 
 Program      Rep [1]_  Ver [2]_ Txt [3]_ Comp [4]_  CP [5]_   Collab [6]_  
@@ -56,6 +56,7 @@ Jupyter        no       no         no      yes         yes      yes
     .. [5] Cross-platform
     .. [6] Collaboration support
 
+
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
@@ -67,24 +68,15 @@ Jupyter        no       no         no      yes         yes      yes
 
     <hr>
 
-A *rivt file* is a Python file (.py) that imports the *rivtlib* library
-into the *rv namespace*::
+A *rivt file* is a Python plain text file (.py) that imports the *rivtlib*
+library into the *rv namespace*:
+
+.. code-block:: python
 
     import rivtlib.rvapi as rv
 
-*rivtlib* includes 8 API functions which may be run in a script or interactively
-as notebook cells in *VSCode* or other *IDE*.
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[3]** API Functions 
------------------------------------------------------------------------- 
-
-.. raw:: html
-
-    <hr>
+*rivtlib* includes 8 API functions run as a script or interactively as notebook
+cells in *VSCode* or other *IDE*.
 
 =============== =============== ===================================
 API              Name             Purpose
@@ -99,30 +91,29 @@ rv.S(rs)           Skip              Skip section
 rv.Q(rs)           Quit              Exit rivt 
 =============== =============== ===================================
 
-Each function evaluates a triple-quoted string argument (rS). The first four
-functions (**R I V T**) output formatted utf-8 text to the terminal and can
-generate *doc* content.
-
-The last four functions (**D M S Q**) are related to processing and output. The
-*Doc* function writes text, PDF or HTML *doc* files. The *Meta* function
-contains *rivt file* author and version information. The *Skip* and *Quit*
-functions are used for interactive editing and debugging.
 
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
 
-**[4]** rivt Strings
-----------------------------
+**[3]** rivt Strings and Docs
+------------------------------------------------------------------------ 
 
 .. raw:: html
 
     <hr>
 
+The first four functions (**R I V T**) output formatted utf-8 text to the
+terminal and can generate *doc* content. The last four functions (**D M S Q**)
+are related to processing and output. The *Doc* function writes text, PDF or
+HTML *doc* files. The *Meta* function contains *rivt file* author and version
+information. The *Skip* and *Quit* functions are used for interactive editing
+and debugging.
+
 An API function starts in the first column and takes a *rivt string* (rS)
 argument enclosed in triple quotes. The first line is a header that specifies
-overall section labeling and processing. The header is followed by the section
-content, indented four spaces for legibility and section folding.
+overall section labeling and processing, followed by the section
+content. Content is indented four spaces for legibility and section folding.
 
 .. code-block:: python
 
@@ -134,25 +125,11 @@ content, indented four spaces for legibility and section folding.
         
         """)
 
-Section content includes arbitrary utf-8 text and may include *rivt tags and
-commands*. See :doc:`Markup </dv0C-markup/rv01-markup>` for further details.
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-    
-**[5]**  Docs
-----------------------------
-
-.. raw:: html
-
-    <hr>
-
-*rivt files* are compiled into *docs* that are formatted as text (.txt), HTML
-(.html) and PDF (.pdf) files. Each output type is generated from the same *rivt
-file*. Output types are specified in the 
-:doc:`Doc function </dv0C-markup/rv07-markup-d>` (*rv.D*).
-
+Section content includes *rivt markup* - a plain text, light weight language
+that generates *docs* from the same *rivt file* in different formats. See
+:doc:`Markup</dv0C-markup/rv01-markup>` for further details. *rivt files* are
+compiled into *docs* that are formatted as text (.txt), HTML (.html) or PDF
+(.pdf) files.
 
 .. toctree::
     :maxdepth: 1

@@ -34,30 +34,43 @@ where *ss* is a two digit subdivision number.
     <hr>
 
 
-*rivt files* are stored in numbered division folders of the form 
+*rivt files* are stored in numbered division folders of the form,
 
 .. code-block:: bash
 
     [dvdd-]division-name
 
-where dd is a two digit division number. 
+where dd is a two digit alpha-numeric division label.
 
-*Doc* resource files provided by the author are stored in the *source* folder.
-*rivtlib* writes *docs* to the *report* folder. *rivt files* intended for open
-source sharing are written to the *public* folder.
+The division label and rivt number together make up the *doc number* used to
+organize a report. If leading characters are 0 they are stripped. For example
+if the *rivt file name* and *division folder* are: 
 
-The full *report* folder structure is shown below, first in a collapsed form
-and then fully expanded. Note that::
+.. code-block:: bash
+
+    dv0A-divisionfolder
+    rv01-rivtfile.py 
+   
+    
+then the *doc number* used in the report will be: 
+
+.. code-block:: bash
+
+    A.1
+
+Resource files used for *rivt* are provided by the report author and are stored
+in the *source* folder. *Docs* are wrtittne to the *report* folder. *rivt
+files* marked for open source sharing are written to the *public* folder. The
+full *report* folder structure (both collapsed and expanded) is shown below.
+
+**Key**::
 
     - Required folder and file prefixes are shown in brackets ([]). 
     - Single vertical bar (|) identifies files provided by the *report* author. 
     - Double vertical bar (||) identifies files written by *rivtlib* 
 
 
-**Collapsed Folders**
-
 .. code-block:: bash
-
 
     [rivt]-Report-Label/              Report Name
         ├── [dv01-]divlabel/          | division folder
@@ -69,10 +82,6 @@ and then fully expanded. Note that::
         └── README.txt                | GitHub searchable report 
 
 
-**Expanded Folders**
-
-
-.. code-block:: bash
 
     [rivt]-Report-Label/                          # Report Folder Name
         ├── [dv01-]divlabel/                      # div 01 folder

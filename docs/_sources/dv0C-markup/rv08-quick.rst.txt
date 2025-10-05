@@ -14,20 +14,20 @@
     <p style="text-align: right;"> &lt;i&gt; </p>
 
 ============= ========================== =======================================
-Scope             Line Tags                    Description (doc output)
+Scope             Line Tags                    Description (doc scope)
 ============= ========================== =======================================
-I              *text*        _[B]          center bold text (pdf, html)
-I              *description* _[D]          endnote description (all)
-I              *text*        _[C]          center text (all)
 I              text _[#] text              endnote (all)
-I              text _[L] *doc link*        doc link (all)
-I              text _[R] *report link*     report link (all)
-I              text _[U] *url*             url link (all)
-I, V           *equation*    _[S]          format symbol math (all) 
-I, V           *label*       _[E]          equation label (all)
-I, V           *caption*     _[F]          image label (all) [1]
-I, V           *title*       _[T]          table label (all) [1]
-I, V             _____   or  _[H]          horizontal line, >5 underscores (all)
+I              text _[L] doc link          doc link (all)
+I              text _[R] report link       report link (all)
+I              text _[U] url               url link (all)
+I              text          _[B]          center bold text (pdf, html)
+I              description   _[D]          endnote description (all)
+I              text          _[C]          center text (all)
+I, V           equation      _[S]          format symbol math (all) 
+I, V           label         _[E]          equation label (all)
+I, V           caption       _[F]          image label (all) [1]
+I, V           title         _[T]          table label (all) [1]
+I, V             _____   or  _[H]          horizontal line >4 underscores (all)
 I, V                         _[P]          new page (all)
 ============= ========================== =======================================
 
@@ -89,7 +89,7 @@ I, V         | TABLE | rel path | fname | title, width, l;c;r     csv, txt, xlsx
 I, V         | IMG | rel path | fname |  caption, scale              png, jpg
 I, V         | IMG2 | rel path | fname | c1, c2, s1, s2              png, jpg
 V            | VALUES | rel path | fname | title, [rows]               csv
-V            a := 1*unit1 | unit1, unit2, decimal | descrip        define value
+V            a := 1*IN  | unit1, unit2, decimal | descrip          define value
 V            b <= a + 3 | unit1, unit2, decimal | ref              assign value
 R            | LINUX | rel path | fname                                sh
 R            | MACOS | rel path | fname                                sh
