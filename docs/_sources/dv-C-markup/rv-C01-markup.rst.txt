@@ -13,9 +13,9 @@
 
     <hr>
 
-*rivt markup* provides a readable, plain text language that generates formatted
-text, PDF or HTML *docs* from the same *rivt file*. The markup is processed in
-a *rivt string* - a utf-8 text string argument to a *rivtlib* 
+:term:`rivt markup` provides a readable, plain text language that generates
+formatted text, PDF or HTML :term:`docs` from the same *rivt file*. The markup
+is processed in a *rivt string* - a utf-8 text string argument to a 
 :doc:`API function</dv-A-intro/rv-A01-intro>`.
 
 The API function and header start in the first column (standard Python syntax),
@@ -32,7 +32,7 @@ folding in IDEs.
         
         """)
 
-The *rivt string* begins with a *section header* that includes a "section
+The :term:`rivt string` begins with a *section header* that includes a "section
 label" and parameters that define the section behavior. 
 
 .. raw:: html
@@ -108,7 +108,7 @@ includes *tags* for text formatting and *commands* for file operations.
         """)
 
 
-A section is processed, line by line, to a
+A section is processed line by line to a
 `RestructuredText string <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_,
 and then further processed to an HTML or PDF file. If a line does not 
 contain a *command* or *tag* it is passed through as is. This allows for 
@@ -138,7 +138,19 @@ on the first line and end with **_[[Q]]** after the last line.
 
 *rivt commands* read and write external files and assign values to variables.
 They typically start in the first column with a vertical bar ( | ) followed by
-the command name and parameters. The exceptions to this pattern are the
+the command name and parameters. 
+
+.. code-block:: bash  
+    
+    | COMMAND | relative path | filename | parameters
+
+*Commands* specify the file location and processing parameters. Parameter
+options are separated by commas. File paths are specified relative to the
+report *source folder* or with the alias *rvlocal* to specify the local
+directory. *rvlocal* is typically used for *single docs*. The standard *rivt
+report* folder structure is described :doc:`here. </dv-D-documents/rv-D02-folders>`
+
+The exceptions to this pattern are the
 assignment (**<=** ) and definition (**:=**) commands, which are used to assign
 values to equation results and define variables.
 

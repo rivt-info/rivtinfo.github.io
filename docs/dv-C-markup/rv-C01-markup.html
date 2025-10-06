@@ -382,9 +382,9 @@
 <h1><strong>C.1 Markup</strong><a class="headerlink" href="#c-1-markup" title="Link to this heading">#</a></h1>
 <p id="api">&lt;i&gt;</p><section id="rivt-string">
 <h2><strong>[1]</strong> rivt String<a class="headerlink" href="#rivt-string" title="Link to this heading">#</a></h2>
-<hr><p><em>rivt markup</em> provides a readable, plain text language that generates formatted
-text, PDF or HTML <em>docs</em> from the same <em>rivt file</em>. The markup is processed in
-a <em>rivt string</em> - a utf-8 text string argument to a <em>rivtlib</em>
+<hr><p><a class="reference internal" href="../dv-A-intro/rv-A02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> provides a readable, plain text language that generates
+formatted text, PDF or HTML <a class="reference internal" href="../dv-A-intro/rv-A02-terms.html#term-docs"><span class="xref std std-term">docs</span></a> from the same <em>rivt file</em>. The markup
+is processed in a <em>rivt string</em> - a utf-8 text string argument to a
 <a class="reference internal" href="../dv-A-intro/rv-A01-intro.html"><span class="doc">API function</span></a>.</p>
 <p>The API function and header start in the first column (standard Python syntax),
 with subsequent lines indented 4 spaces for improved readability and section
@@ -398,7 +398,7 @@ folding in IDEs.</p>
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The <em>rivt string</em> begins with a <em>section header</em> that includes a “section
+<p>The <a class="reference internal" href="../dv-A-intro/rv-A02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> begins with a <em>section header</em> that includes a “section
 label” and parameters that define the section behavior.</p>
 <p id="api">&lt;i&gt;</p></section>
 <section id="header">
@@ -471,7 +471,7 @@ includes <em>tags</em> for text formatting and <em>commands</em> for file operat
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>A section is processed, line by line, to a
+<p>A section is processed line by line to a
 <a class="reference external" href="https://docutils.sourceforge.io/docs/user/rst/quickref.html">RestructuredText string</a>,
 and then further processed to an HTML or PDF file. If a line does not
 contain a <em>command</em> or <em>tag</em> it is passed through as is. This allows for
@@ -488,7 +488,16 @@ on the first line and end with <strong>_[[Q]]</strong> after the last line.</p>
 <p><a class="reference internal" href="rv-C08-quick.html"><span class="doc">Commands</span></a></p>
 <p><em>rivt commands</em> read and write external files and assign values to variables.
 They typically start in the first column with a vertical bar ( | ) followed by
-the command name and parameters. The exceptions to this pattern are the
+the command name and parameters.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="p">|</span><span class="w"> </span>COMMAND<span class="w"> </span><span class="p">|</span><span class="w"> </span>relative<span class="w"> </span>path<span class="w"> </span><span class="p">|</span><span class="w"> </span>filename<span class="w"> </span><span class="p">|</span><span class="w"> </span>parameters
+</pre></div>
+</div>
+<p><em>Commands</em> specify the file location and processing parameters. Parameter
+options are separated by commas. File paths are specified relative to the
+report <em>source folder</em> or with the alias <em>rvlocal</em> to specify the local
+directory. <em>rvlocal</em> is typically used for <em>single docs</em>. The standard <em>rivt
+report</em> folder structure is described <a class="reference internal" href="../dv-D-documents/rv-D02-folders.html"><span class="doc">here.</span></a></p>
+<p>The exceptions to this pattern are the
 assignment (<strong>&lt;=</strong> ) and definition (<strong>:=</strong>) commands, which are used to assign
 values to equation results and define variables.</p>
 <div class="toctree-wrapper compound">

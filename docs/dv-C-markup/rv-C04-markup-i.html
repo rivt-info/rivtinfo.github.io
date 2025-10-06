@@ -634,22 +634,13 @@ on the first line and end with _[[Q]] after the last line.</p>
 </section>
 <section id="command-key">
 <h2><strong>[25]</strong> COMMAND KEY<a class="headerlink" href="#command-key" title="Link to this heading">#</a></h2>
-<p><em>Command</em> parameter options are separated with commas and parameter elements by
-semicolons. Path names can be directly specified relative to the project
-<em>source folder</em> or specified with an alias:</p>
-<blockquote>
-<div><p><em>rvsource</em> : this alias directs <em>rivtlib</em> to look for the file in the
-default <em>source</em> folder. For example if the <em>rivt file</em> is in Division 1 and
-the API function is <em>Insert</em> the <em>i01</em> subfolder in the <em>source</em> folder is
-searched.</p>
-<p><em>rvlocal</em> : this alias directs <em>rivtlib</em> to look for the file in the <em>rivt
-file</em> directory. It is used when a <em>single doc</em>, rather than a <em>report
-doc</em> is processed.</p>
-</div></blockquote>
-<p>The <em>rivt report</em> folders are described
-<a class="reference internal" href="../dv-D-documents/rv-D02-folders.html"><span class="doc">here.</span></a></p>
+<p><em>Commands</em> specify the file location and processing parameters. Parameter
+options are separated by commas. File paths are specified relative to the
+report <em>source folder</em> or with the alias <em>rvlocal</em> to specify the local
+directory. <em>rvlocal</em> is typically used for <em>single docs</em>. The standard <em>rivt
+report</em> folder structure is described <a class="reference internal" href="../dv-D-documents/rv-D02-folders.html"><span class="doc">here.</span></a></p>
 <hr><aside class="topic">
-<p class="topic-title">| COMMAND | parameters</p>
+<p class="topic-title">| COMMAND | relative path | filename | parameters</p>
 <p>example</p>
 </aside>
 <p>file types</p>
@@ -659,11 +650,12 @@ doc</em> is processed.</p>
 <hr><aside class="topic">
 <p class="topic-title">| IMG | path | filename | scale, caption (_[F])</p>
 <div class="line-block">
-<div class="line">IMG | rvsource | file1.png | .50, Map _[F]</div>
+<div class="line">IMG | img1 | file1.png | .50, Map _[F]</div>
 </div>
+<p>Where <em>img1</em> references the <em>i-img1</em> subfolder of the <em>source</em> folder.</p>
 </aside>
 <p>reads PNG and JPEG files (.png, jpg)</p>
-<p>text, PDF, HTML</p>
+<p>text (file ref. only), PDF, HTML</p>
 </section>
 <section id="img2-adjacent-images">
 <h2><strong>[27]</strong> | IMG2 | - adjacent images<a class="headerlink" href="#img2-adjacent-images" title="Link to this heading">#</a></h2>

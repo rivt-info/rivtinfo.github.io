@@ -107,6 +107,7 @@ They execute the following steps:
 #. download an example  *rivt file* and *sources* into the *example1* folder
 
 .. code-block:: bash
+    :linenos:
     
     @echo on
     REM (1) clear any existing project, (2) create new venv

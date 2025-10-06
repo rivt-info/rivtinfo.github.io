@@ -412,29 +412,18 @@ text, pdf, html
 **[25]** COMMAND KEY
 ----------------------
 
-*Command* parameter options are separated with commas and parameter elements by
-semicolons. Path names can be directly specified relative to the project
-*source folder* or specified with an alias:
-
-    *rvsource* : this alias directs *rivtlib* to look for the file in the
-    default *source* folder. For example if the *rivt file* is in Division 1 and
-    the API function is *Insert* the *i01* subfolder in the *source* folder is
-    searched.
-
-    *rvlocal* : this alias directs *rivtlib* to look for the file in the *rivt
-    file* directory. It is used when a *single doc*, rather than a *report
-    doc* is processed.
-
-The *rivt report* folders are described 
-:doc:`here. </dv-D-documents/rv-D02-folders>`
-
+*Commands* specify the file location and processing parameters. Parameter
+options are separated by commas. File paths are specified relative to the
+report *source folder* or with the alias *rvlocal* to specify the local
+directory. *rvlocal* is typically used for *single docs*. The standard *rivt
+report* folder structure is described :doc:`here. </dv-D-documents/rv-D02-folders>`
 
 .. raw:: html
 
     <hr>
 
 
-.. topic:: | COMMAND | parameters
+.. topic:: | COMMAND | relative path | filename | parameters
 
   example
 
@@ -450,12 +439,13 @@ file types
 
 .. topic:: | IMG | path | filename | scale, caption (_[F])
 
-    | IMG | rvsource | file1.png | .50, Map _[F]
+    | IMG | img1 | file1.png | .50, Map _[F]
 
+    Where *img1* references the *i-img1* subfolder of the *source* folder. 
 
 reads PNG and JPEG files (.png, jpg)
 
-text, PDF, HTML
+text (file ref. only), PDF, HTML
 
 
 **[27]** | IMG2 | - adjacent images 
