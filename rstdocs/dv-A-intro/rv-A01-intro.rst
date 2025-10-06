@@ -13,10 +13,11 @@
     <hr>
 
 *rivt* is an open source software project that faciliates the reuse and
-improvement of engineering documents. Writing engineering documents typically
-involves combining text, tables, diagrams, equations and calculations from a
-variety of sources. Although software combining these elements is available,
-reusing a document is generally difficult because of the following limitations:
+continual improvement of engineering documents. Writing engineering documents
+typically involves combining text, tables, diagrams, equations and calculations
+from a variety of sources. Although software combining these elements is
+available, shared document reuse is generally difficult because of the following
+limitations:
 
 - documents are divided among many incompatible programs
 - documents are inaccessible without frequently updating software
@@ -103,11 +104,10 @@ rv.Q(rs)           Quit              Exit rivt
     <hr>
 
 The first four functions (**R I V T**) output formatted utf-8 text to the
-terminal and can generate *doc* content. The *Doc* function writes text, PDF or
-HTML *doc* files. The *Meta* function contains *rivt file* author and version
-information. The *Skip* and *Quit* functions are used for interactive editing
-and debugging.
-
+terminal and can generate *doc* content. The *Run* function executes shell
+commands. The *Insert* function adds static tables, images, equations and
+text. The *Values* function evaluates equations. The *Tools* function runs
+*Python* scripts.
 
 The last four functions (**D M S Q**) are related to processing and output. The
 *Doc* function writes text, PDF or HTML *doc* files. The *Meta* function
