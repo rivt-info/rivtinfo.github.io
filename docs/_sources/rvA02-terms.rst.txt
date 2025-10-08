@@ -45,7 +45,7 @@
 
   rivt file
   rivt files
-    A Python file that imports *rivtlib* and includes rivt markup.  
+    A Python file that imports *rivtlib* and includes *rivt markup*.  
 
   rivt file number 
     Prefix of rivt file name used to organize a report. It has the form 
@@ -88,7 +88,7 @@
 
   report folder
   report folders
-    The folder structure for producing a report, described :doc:`here. <rvD02-folders>`
+    The folder structure for producing a report is described :doc:`here. <rvD02-folders>`
 
 
 **[2]** Python Terms
