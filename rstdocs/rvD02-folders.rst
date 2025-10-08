@@ -67,8 +67,8 @@ Example *report* folder structures are shown below.
 
     - Required folder and file prefixes names are shown in brackets []. 
     - Single vertical bar (|) identifies files provided by the *report* author. 
-    - Double vertical bar (||) identifies files written by *rivtlib* 
-    - Three vertical bars (|||) mix of author and *rivtlib* written files
+    - Double vertical bar (||)| identifies files written by *rivtlib* 
+    - Four vertical bars (||||) mix of author and *rivtlib* written files
 
 
 .. code-block:: bash
@@ -79,8 +79,8 @@ Example *report* folder structures are shown below.
         ├── [log]/                      || log files
         ├── [public]/                   || public rivt files
         ├── [report]/                   || reports and docs
-        ├── [src]/                      ||| doc source files
-        ├── [style]/                    ||| doc style files
+        ├── [src]/                      |||| doc source files
+        ├── [style]/                    |||| doc style files
         ├── [rv101-]doclabel1.py        | rivt file
         ├── [rv102-]doclabel2.py        | rivt file
         ├── [rv201-]doclabel3.py        | rivt file
@@ -145,7 +145,7 @@ Example *report* folder structures are shown below.
                 ├── rv-202-label4.txt
                 └── README.txt              || GitHub searchable text report                     
             └── rivt-report.py              | report generating script
-        ├── [src]                        | source files               
+        ├── [src]                           | doc source files               
             ├── image/                        
                 ├── fig1.png
                 └── fig2.jpg
