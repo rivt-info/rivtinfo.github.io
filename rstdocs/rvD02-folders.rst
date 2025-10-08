@@ -145,7 +145,7 @@ Example *report* folder structures are shown below.
                 ├── rv-202-label4.txt
                 └── README.txt              || GitHub searchable text report                     
             └── rivt-report.py              | report generating script
-        ├── [src]                           ||||| doc source files               
+        ├── [src]                           |||| doc source files               
             ├── image/                        
                 ├── fig1.png
                 └── fig2.jpg
