@@ -6,7 +6,10 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Search - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
+    <title>C.9 Example 1 &#8212; Home</title>
   
   
   
@@ -53,12 +56,11 @@
     <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'search';</script>
-  <script src="_static/searchtools.js"></script>
-  <script src="_static/language_data.js"></script>
-  <script src="searchindex.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'rvC09-example1';</script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="D.1 Documents" href="rvD01-documents.html" />
+    <link rel="prev" title="C.8 Quick Lookup" href="rvC08-quick.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -80,7 +82,7 @@
   <dialog id="pst-search-dialog">
     
 <form class="bd-search d-flex align-items-center"
-      action="#"
+      action="search.html"
       method="get">
   <i class="fa-solid fa-magnifying-glass"></i>
   <input type="search"
@@ -157,7 +159,7 @@
 </li>
 
 
-<li class="nav-item ">
+<li class="nav-item current active">
   <a class="nav-link nav-internal" href="rvC01-markup.html">
     C.1 Markup
   </a>
@@ -230,10 +232,8 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -262,7 +262,7 @@
 </li>
 
 
-<li class="nav-item ">
+<li class="nav-item current active">
   <a class="nav-link nav-internal" href="rvC01-markup.html">
     C.1 Markup
   </a>
@@ -304,6 +304,24 @@
     
   </div>
   
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links" aria-label="Docs">
+    <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
+    <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="rvC02-markup-m.html"><strong>C.2 Meta Data - rv.M</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC03-markup-r.html"><strong>C.3 Run - rv.R</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC04-markup-i.html"><strong>C.4 Insert - rv.I</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC05-markup-v.html"><strong>C.5 Values - rv.V</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC06-markup-t.html"><strong>C.6 Tools - rv.T</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC07-markup-d.html"><strong>C.7 Doc - rv.D</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC08-quick.html"><strong>C.8 Quick Lookup</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>C.9 Example 1</strong></a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
       <div class="sidebar-primary-item">
@@ -324,45 +342,150 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none"></div>
-              
-              
-  <div class="bd-search-container">
-    <h1>Search</h1>
-    <noscript>
-      <div class="admonition error">
-        <p class="admonition-title">Error</p>
-        <p>Please activate JavaScript to enable the search functionality.</p>
-      </div>
-    </noscript>
-    
-<form class="bd-search d-flex align-items-center"
-      action="#"
-      method="get">
-  <i class="fa-solid fa-magnifying-glass"></i>
-  <input type="search"
-         class="form-control"
-         name="q"
-         placeholder="Search the docs ..."
-         aria-label="Search the docs ..."
-         autocomplete="off"
-         autocorrect="off"
-         autocapitalize="off"
-         spellcheck="false"/>
-  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-    <div id="search-results"></div>
-  </div>
-  <script>
-    // Activate the search field on page load
-    let searchInput = document.querySelector("form.bd-search input");
-    if (searchInput) {
-        searchInput.focus();
-        searchInput.select();
-        console.log("[PST]: Set focus on search field.");
-    }
-  </script>
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
 
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="rvC01-markup.html" class="nav-link"><strong>C.1 Markup</strong></a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>C.9 Example 1</strong></span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="c-9-example-1">
+<h1><strong>C.9 Example 1</strong><a class="headerlink" href="#c-9-example-1" title="Link to this heading">#</a></h1>
+<p id="api">&lt;i&gt;</p><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rivtapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">R</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Run function | noprint, private</span>
+
+<span class="s2">    The Run function processes shell commands.</span>
+
+<span class="s2">    Each API function defines a new document section. The first line is a</span>
+<span class="s2">    heading line which includes the section heading, a parameter for redacting</span>
+<span class="s2">    sections in a mirror file intended for public sharing, and a parameter for</span>
+<span class="s2">    the background color for the section. If the section heading is preceded by</span>
+<span class="s2">    two dashes (--) the section is continued from the prior section without</span>
+<span class="s2">    introducting a new number.</span>
+
+<span class="s2">    File formatting follows pep8 and ruff. API functions start in column one.</span>
+<span class="s2">    All other lines are indented 4 spaces to facilitate section folding,</span>
+<span class="s2">    bookmarks and legibility.</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Insert function | print, private</span>
+
+<span class="s2">    The Insert function formats static objects including images, tables,</span>
+<span class="s2">    equations and text.</span>
+
+<span class="s2">    |text | data01/describe.txt | rivt</span>
+
+<span class="s2">    The table command inserts and formats tabular data from csv or xls files.</span>
+<span class="s2">    The _[t] tag formats and autonumbers table titles.</span>
+
+<span class="s2">    A table title  _[t]</span>
+<span class="s2">    | table | data/file.csv | 60,r</span>
+
+<span class="s2">    The image command inserts and formats image data from png or jpg files. The</span>
+<span class="s2">    _[f] tag formats and autonumbers figures.</span>
+
+<span class="s2">    A figure caption _[f]</span>
+<span class="s2">    | image | data/f1.png | 50</span>
+
+<span class="s2">    Two images may be placed side by side as follows:</span>
+
+<span class="s2">    The first figure caption  _[f]</span>
+<span class="s2">    The second figure caption  _[f]</span>
+<span class="s2">    | image | private/image/f2.png, private/image/f3.png | 45,35</span>
+
+<span class="s2">    The tags _[x] and _[s] format LaTeX and sympy equations:</span>
+
+<span class="s2">    \gamma = </span><span class="se">\f</span><span class="s2">rac</span><span class="si">{5}</span><span class="s2">{x+y} + 3  _[x]</span>
+
+<span class="s2">    x = 32 + (y/2)  _[s]</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Values function |  pass; redact | nocolor</span>
+
+<span class="s2">    The Values fucntion evaluates variables and equations.</span>
+
+<span class="s2">    The equal tag declares a value. A sequence of declared values terminated</span>
+<span class="s2">    with a blank line is formatted as a table.</span>
+
+<span class="s2">    Example of assignment list _[t]</span>
+<span class="s2">    f1 = 10.1 * LBF |LBF, N| a force value</span>
+<span class="s2">    d1 = 12.1 * IN  |IN, CM| a length value</span>
+
+<span class="s2">    An equation tag provides an equation description and number. A colon-equal</span>
+<span class="s2">    tag assigns a value and specifies the result units and the output decimal</span>
+<span class="s2">    places printed in the result and equation.</span>
+
+<span class="s2">    Example equation - Area of circle  _[e]</span>
+<span class="s2">    a1 := 3.14(d1/2)^2 | IN^2, CM^2 | 1,2</span>
+
+<span class="s2">    | declare | data01/values02.csv</span>
+
+<span class="s2">    The declare command imports values from the csv file written by rivt when</span>
+<span class="s2">    processing values in other documents.</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">T</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Tools function | pass; redact | nocolor</span>
+
+<span class="s2">    The Tools function processes Python code.</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+
+<span class="n">rv</span><span class="o">.</span><span class="n">S</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Any text</span>
+
+<span class="s2">    Changing a function to X skips evaluation of that function. Its purposes</span>
+<span class="s2">    include review commenting and debugging.</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">D</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Doc function | pass; redact | nocolor</span>
+
+<span class="s2">    The Write function generates docs and reports.</span>
+
+<span class="s2">    | docs |</span>
+
+<span class="s2">    | report |</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+
+
+                </article>
+              
               
               
               
@@ -370,6 +493,24 @@
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="rvC08-quick.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><strong>C.8 Quick Lookup</strong></p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="rvD01-documents.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>D.1 Documents</strong></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               

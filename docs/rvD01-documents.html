@@ -6,7 +6,10 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Search - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
+    <title>D.1 Documents &#8212; Home</title>
   
   
   
@@ -53,12 +56,11 @@
     <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'search';</script>
-  <script src="_static/searchtools.js"></script>
-  <script src="_static/language_data.js"></script>
-  <script src="searchindex.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'rvD01-documents';</script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="D.2 Files and Folders" href="rvD02-folders.html" />
+    <link rel="prev" title="C.9 Example 1" href="rvC09-example1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -80,7 +82,7 @@
   <dialog id="pst-search-dialog">
     
 <form class="bd-search d-flex align-items-center"
-      action="#"
+      action="search.html"
       method="get">
   <i class="fa-solid fa-magnifying-glass"></i>
   <input type="search"
@@ -164,8 +166,8 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvD01-documents.html">
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
     D.1 Documents
   </a>
 </li>
@@ -220,6 +222,10 @@
   
 
   
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="Sections">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
 </div>
 
     </header>
@@ -230,10 +236,8 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -269,8 +273,8 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvD01-documents.html">
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
     D.1 Documents
   </a>
 </li>
@@ -304,6 +308,19 @@
     
   </div>
   
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links" aria-label="Docs">
+    <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
+    <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="rvD02-folders.html"><strong>D.2 Files and Folders</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvD03-reports.html"><strong>D.3 Reports</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvD04-settings.html"><strong>D.4 Configuration Files</strong></a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
       <div class="sidebar-primary-item">
@@ -324,45 +341,97 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none"></div>
-              
-              
-  <div class="bd-search-container">
-    <h1>Search</h1>
-    <noscript>
-      <div class="admonition error">
-        <p class="admonition-title">Error</p>
-        <p>Please activate JavaScript to enable the search functionality.</p>
-      </div>
-    </noscript>
-    
-<form class="bd-search d-flex align-items-center"
-      action="#"
-      method="get">
-  <i class="fa-solid fa-magnifying-glass"></i>
-  <input type="search"
-         class="form-control"
-         name="q"
-         placeholder="Search the docs ..."
-         aria-label="Search the docs ..."
-         autocomplete="off"
-         autocorrect="off"
-         autocapitalize="off"
-         spellcheck="false"/>
-  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-    <div id="search-results"></div>
-  </div>
-  <script>
-    // Activate the search field on page load
-    let searchInput = document.querySelector("form.bd-search input");
-    if (searchInput) {
-        searchInput.focus();
-        searchInput.select();
-        console.log("[PST]: Set focus on search field.");
-    }
-  </script>
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
 
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>D.1 Documents</strong></span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="d-1-documents">
+<h1><strong>D.1 Documents</strong><a class="headerlink" href="#d-1-documents" title="Link to this heading">#</a></h1>
+<p id="api">&lt;i&gt;</p><section id="rivt-files-and-docs">
+<h2><strong>[1]</strong> rivt Files and Docs<a class="headerlink" href="#rivt-files-and-docs" title="Link to this heading">#</a></h2>
+<hr><p><em>rivt files</em> are typically part of a <em>report</em> and are stored in <em>division</em>
+folders unless they are <a class="reference internal" href="rvA02-terms.html#term-single-docs"><span class="xref std std-term">single docs</span></a>. Each <em>rivt file</em> writes
+a <em>doc</em>. <em>Reports</em> are assembled from and written to files in the <em>report</em>
+folder which has the top level structure of:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt<span class="o">]</span>-Report-Label/<span class="w">              </span>Report<span class="w"> </span>Folder
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>dv01-<span class="o">]</span>divlabel/<span class="w">          </span>division<span class="w"> </span>folder
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>dv02-<span class="o">]</span>divlabel/<span class="w">          </span>division<span class="w"> </span>folder
+
+<span class="w">    </span>...
+
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>public<span class="o">]</span>/<span class="w">                 </span>public<span class="w"> </span>rivt<span class="w"> </span>files
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>report<span class="o">]</span>/<span class="w">                 </span>reports<span class="w"> </span>and<span class="w"> </span>docs
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>source<span class="o">]</span>/<span class="w">                 </span><span class="nb">source</span><span class="w"> </span>files
+<span class="w">    </span>└──<span class="w"> </span>README.txt<span class="w">                </span>text<span class="w"> </span>report
+</pre></div>
+</div>
+<p>The <a class="reference internal" href="rvA02-terms.html#term-doc"><span class="xref std std-term">doc</span></a> title is taken from the <em>rivt file name</em> and written to the <em>report</em>
+folder.  Further explanation of the <em>report folder</em> is
+<a class="reference internal" href="rvD02-folders.html"><span class="doc">here</span></a></p>
+<p>PDF <em>doc</em> files are produced by two different libraries, referred to as <em>rpdf</em>
+and <em>tpdf</em>. An <em>rpdf</em> doc is formatted using the <em>rst2pdf</em> library, a susbset
+of the larger <em>ReportLab</em> library. Its advantage is a much smaller required
+library compared to other PDF libraries and it is the default <em>rivt PDF doc</em>.</p>
+<p>A <em>rivt LaTeX doc</em> (<em>tpdf</em>) requires separate installation of the
+large texlive LaTeX library (approx. 3GB). Its advantage is additional control
+over <em>doc</em> formatting and appearance.</p>
+<p id="api">&lt;i&gt;</p></section>
+<section id="single-docs">
+<h2><strong>[2]</strong> Single Docs<a class="headerlink" href="#single-docs" title="Link to this heading">#</a></h2>
+<hr><p>For a single rivt file document that will not be part of a report,
+a <a class="reference internal" href="rvA02-terms.html#term-single-doc"><span class="xref std std-term">single doc</span></a> may be published using the local folder, without
+referencing  the <em>report folders</em>. In this case all of the files are
+read from and written to the same folder as the <em>rivt file</em>.</p>
+<p>A <em>single doc</em> is published by including the following:</p>
+<ol class="arabic simple">
+<li><p>The <em>command</em> path is specified with the alias <em>rvlocal</em>.</p></li>
+<li><p><em>doc</em> source files are stored in the local folder.</p></li>
+<li><dl class="simple">
+<dt><em>Value</em> API functions (<em>rv.V</em>) have an extra <em>rvlocal</em> added to the</dt><dd><p>header parameters.</p>
+</dd>
+</dl>
+</li>
+</ol>
+<p>Any <em>rivt file</em> can be converted to a <em>single doc</em> using the above steps. The
+text, PDF and HTML <em>docs</em> will be written to the local file using style
+settings built into <em>rivtlib</em>. <em>Single docs</em> provide less formatting control
+but also require less setup.</p>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+</section>
+
+
+                </article>
+              
               
               
               
@@ -370,12 +439,49 @@
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="rvC09-example1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><strong>C.9 Example 1</strong></p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="rvD02-folders.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>D.2 Files and Folders</strong></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Sections
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-files-and-docs"><strong>[1]</strong> rivt Files and Docs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#single-docs"><strong>[2]</strong> Single Docs</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

@@ -18,7 +18,7 @@
 
 *rivt* is an open source Python project for writing and distributing
 engineering documents. Documents are written in 
-:doc:`rivt markup <dv-C-markup/rv-C01-markup>` within a Python file (.py).
+:doc:`rivt markup <rvC01-markup>` within a Python file (.py).
 
 A *rivt file* is a Python file that imports the package *rivtlib*. The
 *rivtlib* API outputs a formatted *rivt doc* as text, HTML or PDF from the same
@@ -27,12 +27,12 @@ an example of an HTML report.
 
 *rivt* integrates well with other open source programs. A *rivt framework* that
 includes open source programs integrated with *rivt* through extensions
-and scripts is described :doc:`here. <dv-B-install/rv-B01-install>`.
+and scripts is described :doc:`here. <rvB01-install>`.
 
-:doc:`This <dv-A-intro/rv-A04-smallex1>` is a small single *doc* example.
-:doc:`This <dv-A-intro/rv-A05-smallex2>` is a small *report* example. A
+:doc:`This <rvA04-smallex1>` is a small single *doc* example.
+:doc:`This <rvA05-smallex2>` is a small *report* example. A
 search interface for discovering *rivt files* on *GitHub* is
-:doc:`here <dv-E-collab/rv-E03-ghsearch>`.
+:doc:`here <rvE03-ghsearch>`.
 
 
 .. raw:: html
@@ -43,8 +43,8 @@ search interface for discovering *rivt files* on *GitHub* is
     :maxdepth: 1
     :hidden:
 
-    dv-A-intro/rv-A01-intro.rst
-    dv-B-install/rv-B01-install.rst
-    dv-C-markup/rv-C01-markup.rst
-    dv-D-documents/rv-D01-documents.rst
-    dv-E-collab/rv-E01-collab.rst
+    rvA01-intro.rst
+    rvB01-install.rst
+    rvC01-markup.rst
+    rvD01-documents.rst
+    rvE01-collab.rst

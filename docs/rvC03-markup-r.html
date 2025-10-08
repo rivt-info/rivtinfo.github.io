@@ -6,7 +6,10 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Search - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
+    <title>C.3 Run - rv.R &#8212; Home</title>
   
   
   
@@ -53,12 +56,11 @@
     <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'search';</script>
-  <script src="_static/searchtools.js"></script>
-  <script src="_static/language_data.js"></script>
-  <script src="searchindex.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'rvC03-markup-r';</script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="C.4 Insert - rv.I" href="rvC04-markup-i.html" />
+    <link rel="prev" title="C.2 Meta Data - rv.M" href="rvC02-markup-m.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -80,7 +82,7 @@
   <dialog id="pst-search-dialog">
     
 <form class="bd-search d-flex align-items-center"
-      action="#"
+      action="search.html"
       method="get">
   <i class="fa-solid fa-magnifying-glass"></i>
   <input type="search"
@@ -157,7 +159,7 @@
 </li>
 
 
-<li class="nav-item ">
+<li class="nav-item current active">
   <a class="nav-link nav-internal" href="rvC01-markup.html">
     C.1 Markup
   </a>
@@ -220,6 +222,10 @@
   
 
   
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="Sections">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
 </div>
 
     </header>
@@ -230,10 +236,8 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -262,7 +266,7 @@
 </li>
 
 
-<li class="nav-item ">
+<li class="nav-item current active">
   <a class="nav-link nav-internal" href="rvC01-markup.html">
     C.1 Markup
   </a>
@@ -304,6 +308,24 @@
     
   </div>
   
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links" aria-label="Docs">
+    <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
+    <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="rvC02-markup-m.html"><strong>C.2 Meta Data - rv.M</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>C.3 Run - rv.R</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC04-markup-i.html"><strong>C.4 Insert - rv.I</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC05-markup-v.html"><strong>C.5 Values - rv.V</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC06-markup-t.html"><strong>C.6 Tools - rv.T</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC07-markup-d.html"><strong>C.7 Doc - rv.D</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC08-quick.html"><strong>C.8 Quick Lookup</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC09-example1.html"><strong>C.9 Example 1</strong></a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
       <div class="sidebar-primary-item">
@@ -324,45 +346,129 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none"></div>
-              
-              
-  <div class="bd-search-container">
-    <h1>Search</h1>
-    <noscript>
-      <div class="admonition error">
-        <p class="admonition-title">Error</p>
-        <p>Please activate JavaScript to enable the search functionality.</p>
-      </div>
-    </noscript>
-    
-<form class="bd-search d-flex align-items-center"
-      action="#"
-      method="get">
-  <i class="fa-solid fa-magnifying-glass"></i>
-  <input type="search"
-         class="form-control"
-         name="q"
-         placeholder="Search the docs ..."
-         aria-label="Search the docs ..."
-         autocomplete="off"
-         autocorrect="off"
-         autocapitalize="off"
-         spellcheck="false"/>
-  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-    <div id="search-results"></div>
-  </div>
-  <script>
-    // Activate the search field on page load
-    let searchInput = document.querySelector("form.bd-search input");
-    if (searchInput) {
-        searchInput.focus();
-        searchInput.select();
-        console.log("[PST]: Set focus on search field.");
-    }
-  </script>
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
 
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="rvC01-markup.html" class="nav-link"><strong>C.1 Markup</strong></a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>C.3 Run - rv.R</strong></span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="c-3-run-rv-r">
+<h1><strong>C.3 Run - rv.R</strong><a class="headerlink" href="#c-3-run-rv-r" title="Link to this heading">#</a></h1>
+<p id="api">&lt;i&gt;</p><section id="tag-key">
+<h2><strong>[1]</strong> TAG KEY<a class="headerlink" href="#tag-key" title="Link to this heading">#</a></h2>
+<hr><p><strong>[#]</strong> _[[TAG]] : <a class="reference internal" href="rvA02-terms.html#term-block-tag"><span class="xref std std-term">block tag</span></a> description</p>
+<hr><aside class="topic">
+<p class="topic-title">syntax : description</p>
+<p>example</p>
+</aside>
+<p>file types</p>
+<hr><p id="api">&lt;i&gt;</p></section>
+<section id="win-batch-commands">
+<h2><strong>[2]</strong> _[[WIN]] : batch commands<a class="headerlink" href="#win-batch-commands" title="Link to this heading">#</a></h2>
+<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[WIN]] *optional description*
+batch command
+batch command
+...
+ _[[Q]]
+</pre></div>
+</div>
+<p>text, pdf, html</p>
+<p id="api">&lt;i&gt;</p></section>
+<section id="macos-shell-commands">
+<h2><strong>[3]</strong> _[[MACOS]] : shell commands<a class="headerlink" href="#macos-shell-commands" title="Link to this heading">#</a></h2>
+<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[MACOS]] *optional description*
+shell command
+shell command
+...
+ _[[Q]]
+</pre></div>
+</div>
+<p>text, pdf, html</p>
+<p id="api">&lt;i&gt;</p></section>
+<section id="linux-shell-commands">
+<h2><strong>[4]</strong> _[[LINUX]] : shell commands<a class="headerlink" href="#linux-shell-commands" title="Link to this heading">#</a></h2>
+<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[LINUX]] *optional description*
+shell command
+shell command
+...
+ _[[Q]]
+</pre></div>
+</div>
+<p>text, pdf, html</p>
+<p id="api">&lt;i&gt;</p></section>
+<section id="command-key">
+<h2><strong>[5]</strong> COMMAND KEY<a class="headerlink" href="#command-key" title="Link to this heading">#</a></h2>
+<hr><p id="api">&lt;i&gt;</p><p><strong>[#]</strong> | Command | : description</p>
+<hr><aside class="topic">
+<p class="topic-title">| COMMAND | rel path | filename | parameters</p>
+<p>example</p>
+</aside>
+<p>file types</p>
+<p id="api">&lt;i&gt;</p></section>
+<section id="win-command-script">
+<h2><strong>[6]</strong> | WIN | - command script<a class="headerlink" href="#win-command-script" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">| WIN | relative path | filename</p>
+<div class="line-block">
+<div class="line">WIN | run | file.cmd</div>
+</div>
+</aside>
+<p>reads .txt, .cmd, .bat  files</p>
+<p id="api">&lt;i&gt;</p></section>
+<section id="macos-shell-script">
+<h2><strong>[7]</strong> | MACOS | - shell script<a class="headerlink" href="#macos-shell-script" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">| MACOS | relative path | filename</p>
+<div class="line-block">
+<div class="line">MACOS | rel path | file.sh</div>
+</div>
+</aside>
+<p>reads .sh files</p>
+<p id="api">&lt;i&gt;</p></section>
+<section id="linux-shell-script">
+<h2><strong>[8]</strong> | LINUX | - shell script<a class="headerlink" href="#linux-shell-script" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">| LINUX | relative path | filename</p>
+<div class="line-block">
+<div class="line">LINUX | rel path | file.sh</div>
+</div>
+</aside>
+<p>reads .sh files</p>
+</section>
+</section>
+
+
+                </article>
+              
               
               
               
@@ -370,12 +476,55 @@
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="rvC02-markup-m.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><strong>C.2 Meta Data - rv.M</strong></p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="rvC04-markup-i.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>C.4 Insert - rv.I</strong></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Sections
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tag-key"><strong>[1]</strong> TAG KEY</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#win-batch-commands"><strong>[2]</strong> _[[WIN]] : batch commands</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#macos-shell-commands"><strong>[3]</strong> _[[MACOS]] : shell commands</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linux-shell-commands"><strong>[4]</strong> _[[LINUX]] : shell commands</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#command-key"><strong>[5]</strong> COMMAND KEY</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#win-command-script"><strong>[6]</strong> | WIN | - command script</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#macos-shell-script"><strong>[7]</strong> | MACOS | - shell script</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linux-shell-script"><strong>[8]</strong> | LINUX | - shell script</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

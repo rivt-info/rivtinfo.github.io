@@ -6,7 +6,10 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Search - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
+    <title>E.1 Collaboration &#8212; Home</title>
   
   
   
@@ -53,12 +56,11 @@
     <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'search';</script>
-  <script src="_static/searchtools.js"></script>
-  <script src="_static/language_data.js"></script>
-  <script src="searchindex.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'rvE01-collab';</script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="E.2 Public rivt Files" href="rvE02-publicrivt.html" />
+    <link rel="prev" title="D.4 Configuration Files" href="rvD04-settings.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -80,7 +82,7 @@
   <dialog id="pst-search-dialog">
     
 <form class="bd-search d-flex align-items-center"
-      action="#"
+      action="search.html"
       method="get">
   <i class="fa-solid fa-magnifying-glass"></i>
   <input type="search"
@@ -171,8 +173,8 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvE01-collab.html">
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
     E.1 Collaboration
   </a>
 </li>
@@ -220,6 +222,10 @@
   
 
   
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="Sections">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
 </div>
 
     </header>
@@ -230,10 +236,8 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -276,8 +280,8 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvE01-collab.html">
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
     E.1 Collaboration
   </a>
 </li>
@@ -304,6 +308,18 @@
     
   </div>
   
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links" aria-label="Docs">
+    <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
+    <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="rvE02-publicrivt.html"><strong>E.2 Public rivt Files</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvE03-ghsearch.html"><strong>E.3 - GitHub Search</strong></a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
       <div class="sidebar-primary-item">
@@ -324,45 +340,107 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none"></div>
-              
-              
-  <div class="bd-search-container">
-    <h1>Search</h1>
-    <noscript>
-      <div class="admonition error">
-        <p class="admonition-title">Error</p>
-        <p>Please activate JavaScript to enable the search functionality.</p>
-      </div>
-    </noscript>
-    
-<form class="bd-search d-flex align-items-center"
-      action="#"
-      method="get">
-  <i class="fa-solid fa-magnifying-glass"></i>
-  <input type="search"
-         class="form-control"
-         name="q"
-         placeholder="Search the docs ..."
-         aria-label="Search the docs ..."
-         autocomplete="off"
-         autocorrect="off"
-         autocapitalize="off"
-         spellcheck="false"/>
-  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-    <div id="search-results"></div>
-  </div>
-  <script>
-    // Activate the search field on page load
-    let searchInput = document.querySelector("form.bd-search input");
-    if (searchInput) {
-        searchInput.focus();
-        searchInput.select();
-        console.log("[PST]: Set focus on search field.");
-    }
-  </script>
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
 
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>E.1 Collaboration</strong></span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="e-1-collaboration">
+<h1><strong>E.1 Collaboration</strong><a class="headerlink" href="#e-1-collaboration" title="Link to this heading">#</a></h1>
+<p id="api">&lt;i&gt;</p><section id="github">
+<h2><strong>[1]</strong> GitHub<a class="headerlink" href="#github" title="Link to this heading">#</a></h2>
+<hr><p>VSCode and GitHub have a number of tools that faciliate collaboration when
+writing and sharing rivt files.</p>
+<p>The primary purpose of GitHub is to facilitate the version control and issue
+tracking aspects of software development. Labels, milestones, responsibility
+assignment, and a search engine are available for issue tracking. For version
+control, Git (and, by extension, GitHub) allows pull requests to propose changes
+to the source code. Users who can review the proposed changes can see a diff
+between the requested changes and approve them. In Git terminology, this action
+is called “committing” and one instance of it is a “commit.” A history of all
+commits is kept and can be viewed at a later time.</p>
+<p>GitHub supports the following formats and features:</p>
+<ul class="simple">
+<li><p>Documentation,including automatically rendered README files in a variety of
+Markdown-like file formats (see README § On GitHub)</p></li>
+<li><p>Pages, a static web hosting service for blogs, project documentation,
+and books.</p></li>
+<li><p>Wikis, with some repositories consisting solely of wiki content. These
+include curated lists of recommended software which have become known as
+awesome lists.</p></li>
+<li><p>GitHub Actions, which allows building continuous integration and
+continuous deployment pipelines for testing, releasing and deploying software
+without the use of third-party websites/platforms</p></li>
+<li><p>GitHub Codespaces, an online IDE providing users with a virtual machine
+intended to be a work environment to build and test code</p></li>
+<li><p>Graphs: pulse, contributors, commits, code frequency, punch card, network,
+members</p></li>
+<li><p>Email notifications</p></li>
+<li><p>Discussions</p></li>
+<li><p>Nested task-lists within files</p></li>
+<li><p>Visualization of geospatial data</p></li>
+<li><p>image preview in many formats</p></li>
+<li><p>Security Alerts of known Common Vulnerabilities and Exposures in different
+packages</p></li>
+<li><p>GitHub’s Terms of Service do not require public software projects hosted on
+GitHub to meet the Open Source Definition. The terms of service state, “By
+setting your repositories to be viewed publicly, you agree to allow others to
+view and fork your repositories.”</p></li>
+</ul>
+<p id="api">&lt;i&gt;</p></section>
+<section id="vscode">
+<h2><strong>[2]</strong> VSCode<a class="headerlink" href="#vscode" title="Link to this heading">#</a></h2>
+   <hr>
+
+Collaboration in VS Code is primarily facilitated by the Visual Studio Live
+Share extension. This extension enables real-time collaborative development,
+allowing multiple developers to work on the same codebase simultaneously,
+share debugging sessions, and interact within the same environment.<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rvE02-publicrivt.html"><strong>E.2 Public rivt Files</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rvE02-publicrivt.html#id1"><strong>[1]</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="rvE03-ghsearch.html"><strong>E.3 - GitHub Search</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rvE03-ghsearch.html#github-global-search"><strong>[1]</strong> GitHub Global Search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rvE03-ghsearch.html#github-organization-search"><strong>[2]</strong> GitHub Organization Search</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
               
               
               
@@ -370,12 +448,49 @@
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="rvD04-settings.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><strong>D.4 Configuration Files</strong></p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="rvE02-publicrivt.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>E.2 Public rivt Files</strong></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Sections
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github"><strong>[1]</strong> GitHub</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vscode"><strong>[2]</strong> VSCode</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
