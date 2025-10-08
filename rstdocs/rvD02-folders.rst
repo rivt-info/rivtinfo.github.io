@@ -65,58 +65,45 @@ Example *report* folder structures are shown below.
 
 **Key**::
 
-    - Required folder and file [prefixes] are shown in brackets []. 
+    - Required folder and file prefixes names are shown in brackets []. 
     - Single vertical bar (|) identifies files provided by the *report* author. 
     - Double vertical bar (||) identifies files written by *rivtlib* 
-    - Three vertical bars (|||) mix of author and *rivtlib* files
+    - Three vertical bars (|||) mix of author and *rivtlib* written files
 
 
 .. code-block:: bash
 
-    Collapsed folders without division folders
+    Collapsed folders
 
     [rivt]-Report-Label/                Report Folder Name
-        ├── [rv-101-]doclabel1.py       | rivt file
-        ├── [rv-102-]doclabel2.py       | rivt file
-        ├── [rv-201-]doclabel3.py       | rivt file
-        ├── [rv-202-]doclabel4.py       | rivt file  
+        ├── [log]/                      || log files
         ├── [public]/                   || public rivt files
         ├── [report]/                   || reports and docs
-        ├── [source]/                   ||| source files
+        ├── [src]/                      ||| doc source files
+        ├── [style]/                    ||| doc style files
+        ├── [rv101-]doclabel1.py        | rivt file
+        ├── [rv102-]doclabel2.py        | rivt file
+        ├── [rv201-]doclabel3.py        | rivt file
+        ├── [rv202-]doclabel4.py        | rivt file  
         └── README.txt                  | GitHub searchable text report 
 
-    Collapsed folders with division folders
+    Expanded folders
 
-    [rivt]-Report-Label/                Report Folder Name
-        ├── [dv-]1-divlabel/                          
-            ├── [rv-101-]doclabel1.py   | rivt file
-            └── [rv-102-]doclabel2.py   | rivt file
-        ├── [dv-]2-divlabel/ 
-            ├── [rv-201-]doclabel3.py   | rivt file
-            └── [rv-202-]doclabel4.py   | rivt file  
-        ├── [public]/                   || public rivt files
-        ├── [report]/                   || reports and docs
-        ├── [source]/                   ||| source files
-        └── README.txt                  | GitHub searchable text report 
-
-
-    Expanded report folder with division folders
-
-    [rivt]-Report-Label/                Report Folder Name
-        ├── [dv-]1-divlabel/                          
-            ├── [rv-101-]doclabel1.py   | rivt file
-            └── [rv-102-]doclabel2.py   | rivt file
-        ├── [dv-]2-divlabel/ 
-            ├── [rv-201-]doclabel3.py   | rivt file
-            └── [rv-202-]doclabel4.py   | rivt file        
+    [rivt]-Report-Label/                Report Folder Name                
+        ├── [rv101-]doclabel1.py        | rivt file
+        ├── [rv102-]doclabel2.py        | rivt file
+        ├── [rv201-]doclabel3.py        | rivt file
+        ├── [rv202-]doclabel4.py        | rivt file        
+        ├── [log]/                      || log files
+            ├── rv101-log.txt   
+            └── rv102-log.txt   
         ├── [public]/                   || public rivt files                      
-            ├── rv-101-doclabel1.py   
-            └── rv-102-doclabel2.py   
+            ├── rv-101-doclabel1.py     
             ├── rv-201-doclabel3.py   
             └── rv-202-doclabel4.py   
-        ├── [report]/                      || Reports and Docs
-            ├── [html]/                    || ------ HTML 
-                ├── [docs]/                || HTML site        
+        ├── [report]/                   || Reports and Docs
+            ├── [html]/    
+                ├── [docs]/             || HTML site        
                     ├── _images/
                     ├── _sources/
                     ├── _static/           
@@ -129,71 +116,74 @@ Example *report* folder structures are shown below.
                 ├── rv-102-doclabel2.rst                          
                 ├── rv-201-doclabel3.rst                        
                 └── rv-202-doclabel4.rst                             
-            ├── [rst2pdf]/                  || ------ rst2pdf    
+            ├── [rst2pdf]/                  || rst2pdf    
                 ├── [src]/                          
                     ├── rv-101-doclabel1.rst
                     ├── rv-102-doclabel2.rst                           
                     ├── rv-201-doclabel3.rst                        
                     └── rv-202-doclabel4.rst              
-                ├── rv-101-doclabel1.pdf    || rst2pdf PDF files
+                ├── rv-101-doclabel1.pdf    || PDF files
                 ├── rv-102-doclabel2.pdf                         
                 ├── rv-201-doclabel3.pdf                       
                 ├── rv-202-doclabel4.pdf
-                └── Report-Label.pdf        || rst2pdf PDF report
-            ├── [texpdf]/                   || ------ texpdf
+                └── Report-Label.pdf        || PDF report
+            ├── [texpdf]/                   || texpdf
                 ├── [src]/                          
                     ├── rv-101-doclabel1.rst
                     ├── rv-102-doclabel2.rst                        
                     ├── rv-201-doclabel3.rst                        
                     └── rv-202-doclabel4.rst               
-                ├── rv-101-doclabel1.pdf    || texpdf PDF files
+                ├── rv-101-doclabel1.pdf    || PDF files
                 ├── rv-102-doclabel2.pdf                          
                 ├── rv-201-doclabel3.pdf                       
                 ├── rv-202-doclabel4.pdf
-                └── Report-Label.pdf        || tex2pdf PDF report  
-            ├── [text]/                     || ------- text
+                └── Report-Label.pdf        || PDF report  
+            ├── [text]/                     || text
                 ├── rv-101-label1.txt      
                 ├── rv-102-label2.txt
                 ├── rv-201-label3.txt
                 ├── rv-202-label4.txt
                 └── README.txt              || GitHub searchable text report                     
-            └── rivt-report.py              | report generator
-        ├── [source]                  | source files 
-            ├── [html]/               | html settings
+            └── rivt-report.py              | report generating script
+        ├── [src]                        | source files               
+            ├── image/                        
+                ├── fig1.png
+                └── fig2.jpg
+            ├── pdf/                  
+                ├── cover-page.pdf                       
+                └── attach1.pdf
+            ├──  run/                       
+                ├── opensees.cmd                
+                └── opensees.sh   
+            ├── text/            
+                ├── boiler.txt
+                └── paragraph.rst
+            ├── tools/            
+                ├── plot.py                               
+                └── loads.py
+            ├── values/            
+                ├── v101-2.csv       
+                ├── v102-3.csv         
+                └── newvals.csv        
+            ├── [temp]/
+                └── rv01-label3.tex
+        ├── [style]                         | doc style files 
+            ├── [html]/               
                 ├── _locale/                 
                 ├── _static/                        
                 ├── _templates/                     
                 ├── conf.py                         
                 ├── genhtml.cmd                     
-                └── index.rst              
-            ├── [i-ins1]/             | Insert files 
-                ├── data1.csv
-                ├── cover-page.pdf                       
-                ├── data1.csv                   
-                └── standards.txt
-            ├── [r-run1]/              | Run files
-                ├── data1.csv                
-                ├── standards.txt
-                ├── data1.csv                   
-                └── standards.txt
-            ├── [rst2pdf]/            | rst2pdf settings
+                └── index.rst
+            ├── [rst2pdf]/            
                 ├── fonts/              
                 ├── style/                 
                 ├── Report-Cover.pdf           
-                └── genrst2pdf.cmd      
-            ├── [t-tool1]/             | Tool files
-                ├── plot.py                               
-                └── imh.txt
-            ├── [v-val1]/              ||| Value files
-                ├── v101-2.csv         || exported values 
-                ├── v102-3.csv         || exported values
-                └── newvals.csv        | values to import
-            ├── [temp]/
-                └── rv01-label3.tex
-            ├── [texpdf]/             | tex2pdf settings  
+                └── genrst2pdf.cmd
+            ├── [texpdf]/             
                 ├── gentexpdf.cmd             
                 ├── Report-cover.pdf                     
                 └── rivt.sty              
-            ├── [text]/               | text settings
-                └── rv-text.ini 
+            └── [text]/               
+                └── rv-text.ini                  
         └── README.txt                 || GitHub searchable text report 
