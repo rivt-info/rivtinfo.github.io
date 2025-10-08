@@ -65,11 +65,15 @@
   commands 
     *rivt commands* read and write external files and assign values to
     variables. They typically start in the first column with a 
-    vertical bar ( | ) followed by the file path, name and parameters: 
-    ``| COMMAND | rel path | filename | parameters``. The relative path is 
-    a subfolder of the *source* folder, or the alias *rvlocal* if 
-    the rivt file is for a *single doc* where the sources are stored in the same 
-    folder as the *rivt file*. 
+    vertical bar ( | ) followed by the file path, name and parameters:
+
+    .. code-block:: bash
+
+      | COMMAND | rel path | filename | parameters
+    
+    For *reports* the relative path is a subfolder of the *source* folder. If 
+    the file is a  *single doc* the alias *rvlocal* specifies that the 
+    sources are stored in the same folder as the *rivt file*. 
 
   single doc 
   single docs 
@@ -84,7 +88,7 @@
 
   report folder
   report folders
-  The folder structure for producing a report, described :doc:`here. <rvD02-folders>`
+    The folder structure for producing a report, described :doc:`here. <rvD02-folders>`
 
 
 **[2]** Python Terms
@@ -103,11 +107,12 @@
 
   restructured text
     A lightweight markup language designed to be processed by document software 
-    such as Docutils and rivt, and readable by humans.
+    including `docutils, <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_ 
+    Sphinx and rivt.
 
   namespace
-    provides `scope <https://en.wikipedia.org/wiki/Namespace>`_ for functions 
-    and variables 
+    Provides `scope <https://en.wikipedia.org/wiki/Namespace>`_ for functions 
+    and variables. 
 
 
 **[3]** GitHub Terms
@@ -120,9 +125,6 @@
 .. glossary::
   :sorted: 
 
-  docutils1
-    A Python package that processes `restructured text <https://docutils.sourceforge.io/>`_
-    files into HTML, LaTeX, and other formats.
 
   repository 
     a storage location for software packages
@@ -139,6 +141,9 @@
 .. glossary::
   :sorted: 
 
-  docutils2
-    A Python package that processes `restructured text <https://docutils.sourceforge.io/>`_
-    files into HTML, LaTeX, and other formats.
+  profile
+    Allows users to customize their VS Code environment for different workflows, 
+    projects, or tasks. This feature provides a way to manage distinct 
+    configurations of settings, extensions, keyboard shortcuts, snippets, 
+    and tasks.
+
