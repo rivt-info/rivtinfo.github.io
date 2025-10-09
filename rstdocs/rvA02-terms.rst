@@ -82,21 +82,25 @@
     rather than the *source* subfolder. In this case command files and *docs* are
     are read and written to the *rivt file* folder.
 
+
   report
   reports
     A report is a group of compiled *docs* organized by rivt file number. 
+
 
   report folder
   report folders
     The folder structure for producing a report is described :doc:`here. <rvD02-folders>`
 
+
   section parameter 
   section parameters 
-    Comma separated parameters in *header* that specify sectoin processing.
+    Comma separated parameters in *header* that specify section processing.
 
 
   section content
     Refers to a *rivt string* or a formatted *rivt string*.
+
 
   execution history
     list of section headers appended to the end of a doc or report.

@@ -66,7 +66,7 @@ label* is the section title.
 - *public*: copies *section content* to *public rivt file* 
 - *merge*: merges formatted *section content* to previous section
 - *history*: writes *section label* to :term:`execution history`
-- *source*: writes values to local rivt file folder instead of the *src/output* folder
+- *source*: writes values to *local rivt folder* instead of the *src/output* folder
 
 The table below summarizes the parameter settings with the default setting shown
 first. A parameter only needs to be specified if different from the default. 
