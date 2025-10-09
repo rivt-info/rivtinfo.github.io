@@ -113,8 +113,12 @@
     The content of a *rivt string* minus the *header*. 
 
 
-  execution history
-    list of section headers appended to the end of a doc or report.
+  API history 
+    List of API excecution history appended to the end of a doc or
+    report. For complete execution history see *rivt log file*.
+
+  rivt log file
+    *rivt file* execution log written to log folder. 
 
 **[2]** Python Terms
 -----------------------------
