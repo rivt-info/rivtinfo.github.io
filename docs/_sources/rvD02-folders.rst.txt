@@ -81,71 +81,71 @@ Example *report* folder structures are shown below.
         ├── [report]/                   || reports and docs
         ├── [src]/                      |||| doc source files
         ├── [style]/                    | doc style files
-        ├── [rv101-]doclabel1.py        | rivt file
-        ├── [rv102-]doclabel2.py        | rivt file
-        ├── [rv201-]doclabel3.py        | rivt file
-        ├── [rv202-]doclabel4.py        | rivt file  
+        ├── [rv101-]filename1.py        | rivt file
+        ├── [rv102-]filename2.py        | rivt file
+        ├── [rv201-]filename3.py        | rivt file
+        ├── [rv202-]filename4.py        | rivt file  
         └── README.txt                  | GitHub searchable text report 
 
     Expanded folders
 
     [rivt]-Report-Label/                Report Folder Name                
-        ├── [rv101-]doclabel1.py        | rivt file
-        ├── [rv102-]doclabel2.py        | rivt file
-        ├── [rv201-]doclabel3.py        | rivt file
-        ├── [rv202-]doclabel4.py        | rivt file        
+        ├── [rv101-]filename1.py        | rivt file
+        ├── [rv102-]filename2.py        | rivt file
+        ├── [rv201-]filename3.py        | rivt file
+        ├── [rv202-]filename4.py        | rivt file        
         ├── [log]/                      || log files
             ├── rv101-log.txt   
             └── rv102-log.txt   
         ├── [public]/                   || public rivt files                      
-            ├── rv-101-doclabel1.py     
-            ├── rv-201-doclabel3.py   
-            └── rv-202-doclabel4.py   
+            ├── rv-101-filename1.py     ||  
+            ├── rv-201-filename3.py     ||
+            └── rv-202-filename4.py     || 
         ├── [report]/                   || Reports and Docs
             ├── [html]/    
-                ├── [docs]/             || HTML site        
-                    ├── _images/
-                    ├── _sources/
-                    ├── _static/           
-                    ├── rv-101-doclabel1.html
-                    ├── rv-102-doclabel2.html                           
-                    ├── rv-201-doclabel3.html                       
-                    ├── rv-201-doclabel4.html
-                    └── index.html                       
-                ├── rv-101-doclabel1.rst
-                ├── rv-102-doclabel2.rst                          
-                ├── rv-201-doclabel3.rst                        
-                └── rv-202-doclabel4.rst                             
-            ├── [rst2pdf]/                  || rst2pdf    
+                ├── [docs]/                   || HTML     
+                    ├── _images/              || 
+                    ├── _sources/             ||
+                    ├── _static/              ||   
+                    ├── rv101-filename1.html  || HTML files
+                    ├── rv102-filename2.html  ||                           
+                    ├── rv201-filename3.html  ||                     
+                    ├── rv201-filename4.html  ||
+                    └── index.html            || HTML site           
+                ├── rv101-filename1.rst  
+                ├── rv102-filename2.rst  
+                ├── rv201-filename3.rst  
+                └── rv202-filename4.rst  
+            ├── [rst2pdf]/                    || rst2pdf    
                 ├── [src]/                          
-                    ├── rv-101-doclabel1.rst
-                    ├── rv-102-doclabel2.rst                           
-                    ├── rv-201-doclabel3.rst                        
-                    └── rv-202-doclabel4.rst              
-                ├── rv-101-doclabel1.pdf    || PDF files
-                ├── rv-102-doclabel2.pdf                         
-                ├── rv-201-doclabel3.pdf                       
-                ├── rv-202-doclabel4.pdf
-                └── Report-Label.pdf        || PDF report
-            ├── [texpdf]/                   || texpdf
+                    ├── rv101-filename1.rst
+                    ├── rv102-filename2.rst                           
+                    ├── rv201-filename3.rst                        
+                    └── rv202-filename4.rst              
+                ├── rv101-dfilename1.pdf        || PDF files
+                ├── rv102-filename2.pdf         ||                 
+                ├── rv201-filename3.pdf         ||               
+                ├── rv202-filename4.pdf         ||
+                └── Report-Label.pdf            || PDF report
+            ├── [texpdf]/                       || texpdf
                 ├── [src]/                          
-                    ├── rv-101-doclabel1.rst
-                    ├── rv-102-doclabel2.rst                        
-                    ├── rv-201-doclabel3.rst                        
-                    └── rv-202-doclabel4.rst               
-                ├── rv-101-doclabel1.pdf    || PDF files
-                ├── rv-102-doclabel2.pdf                          
-                ├── rv-201-doclabel3.pdf                       
-                ├── rv-202-doclabel4.pdf
-                └── Report-Label.pdf        || PDF report  
-            ├── [text]/                     || text
-                ├── rv-101-label1.txt      
-                ├── rv-102-label2.txt
-                ├── rv-201-label3.txt
-                ├── rv-202-label4.txt
-                └── README.txt              || GitHub searchable text report                     
-            └── rivt-report.py              | report generating script
-        ├── [src]                           |||| doc source files               
+                    ├── rv101-filename1.rst
+                    ├── rv102-filename2.rst                        
+                    ├── rv201-filename3.rst                        
+                    └── rv202-filename4.rst               
+                ├── rv101-filename1.pdf         || PDF files
+                ├── rv102-filename2.pdf                          
+                ├── rv201-filename3.pdf                       
+                ├── rv202-filename4.pdf
+                └── Report-Label.pdf            || PDF report  
+            ├── [text]/                         || text
+                ├── rv101-filename1.txt         ||
+                ├── rv102-filename2.txt         || 
+                ├── rv201-filename3.txt         ||
+                ├── rv202-filename4.txt         ||
+                └── README.txt                  || GitHub searchable text report                     
+            └── rivt-report.py                  | report generating script
+        ├── [src]                               |||| doc source files               
             ├── image/                        
                 ├── fig1.png
                 └── fig2.jpg
@@ -155,6 +155,9 @@ Example *report* folder structures are shown below.
             ├──  run/                       
                 ├── opensees.cmd                
                 └── opensees.sh   
+            ├── tables/            
+                ├── data1.csv       
+                └── download1.csv  
             ├── text/            
                 ├── boiler.txt
                 └── paragraph.rst
@@ -167,7 +170,7 @@ Example *report* folder structures are shown below.
                 └── newvals.csv        
             ├── [temp]/
                 └── rv01-label3.tex
-        ├── [style]                         | doc style files 
+        ├── [style]                             | doc style files 
             ├── [html]/               
                 ├── _locale/                 
                 ├── _static/                        
@@ -186,4 +189,4 @@ Example *report* folder structures are shown below.
                 └── rivt.sty              
             └── [text]/               
                 └── rv-text.ini                  
-        └── README.txt                 || GitHub searchable text report 
+        └── README.txt                          || GitHub searchable text report 
