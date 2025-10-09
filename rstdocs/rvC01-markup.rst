@@ -52,7 +52,7 @@ label* is the section title.
 
 .. code-block:: python
 
-    rv._("""Section Label | hide;print, public;private; (rvsource, rvlocal)
+    rv._("""Section Label | hide;print, public;private;
 
         section content (utf-8 text)
         ...
@@ -66,22 +66,23 @@ label* is the section title.
     - public: copies *section content* to *public rivt file* 
     - merge: merges formatted *section content* to previous section
     - history: writes *section label* to :term:`execution history`
+    - local: writes values to local rivt file folder instead of src folder
 
 The table below summarizes the parameter settings with the default setting shown
 first. A parameter only needs to be specified if different from the default. 
 
- ============== ================ ================= ================ ==================== 
-  API function        print            public            merge            history                            
- ============== ================ ================= ================ ==================== 
-  rv.R           noprint, print   private, public   nomerge, merge   history, nohistory                 
-  rv.I           print, noprint   private, public   nomerge, merge   history, nohistory                 
-  rv.V           print, noprint   private, public   nomerge, merge   history, nohistory                 
-  rv.T           noprint, print   private, public   nomerge, merge   history, nohistory                 
-  rv.D           noprint, print   private, public   nomerge, merge   history, nohistory                 
-  rv.M           noprint, print   private, public   nomerge, merge   history, nohistory                 
-  rv.S           noprint, print   private, public   nomerge, merge   history, nohistory                 
-  rv.Q           noprint, print   private, public   nomerge, merge   history, nohistory                                                                                                                                                                                                                                    
- ============== ================ ================= ================ ==================== 
+ ====== ============= ================= ================ ============== ================
+  API         print        public            merge          history       source                      
+ ====== ============= ================= ================ ============== ================
+  rv.R   hide, print   private, public   section, merge   record, skip                 
+  rv.I   print, hide   private, public   section, merge   record, skip
+  rv.V   print, hide   private, public   section, merge   record, skip   source, local                               
+  rv.T   hide, print   private, public   section, merge   record, skip                 
+  rv.D   hide, print   private, public   section, merge   record, skip                 
+  rv.M   hide, print   private, public   section, merge   record, skip                 
+  rv.S   hide, print   private, public   section, merge   record, skip                 
+  rv.Q   hide, print   private, public   section, merge   record, skip                                                                                                                                                                                                                                    
+ ====== ============= ================= ================ ============== 
 
 
 .. raw:: html

@@ -146,29 +146,32 @@ Example *report* folder structures are shown below.
                 └── README.txt                  || GitHub searchable text report                     
             └── rivt-report.py                  | report generating script
         ├── [src]                               |||| doc source files               
-            ├── image/                        
+            ├── image/                          |                 
                 ├── fig1.png
                 └── fig2.jpg
-            ├── pdf/                  
+            ├── pdf/                            |
                 ├── cover-page.pdf                       
                 └── attach1.pdf
-            ├──  run/                       
+            ├──  run/                           |
                 ├── opensees.cmd                
                 └── opensees.sh   
-            ├── tables/            
+            ├── tables/                         |
                 ├── data1.csv       
                 └── download1.csv  
-            ├── text/            
+            ├── text/                           |
                 ├── boiler.txt
                 └── paragraph.rst
-            ├── tools/            
+            ├── tools/                          |
                 ├── plot.py                               
                 └── loads.py
-            ├── values/            
+            ├── [output]/                       |
+                ├── tablepy.csv                               
+                └── imagepy.png
+            ├── [values]/                       |
                 ├── v101-2.csv       
                 ├── v102-3.csv         
                 └── newvals.csv        
-            ├── [temp]/
+            ├── [temp]/                         |
                 └── rv01-label3.tex
         ├── [style]                             | doc style files 
             ├── [html]/               
