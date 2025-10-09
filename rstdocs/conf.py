@@ -22,7 +22,7 @@ templates_path = ['_templates']
 locale_dirs = ['_locale'] 
 
 
-html_title = "Home"
+html_title = "rivt"
 html_theme = 'pydata_sphinx_theme'
 html_show_sourcelink = False
 html_context = {"default_mode": "dark"}
