@@ -10,13 +10,7 @@
     <p style="text-align: center; font-size: 1.5rem;">rivt</p>
 
 
-.. raw:: html
-
-    <br>
-    <hr>
-
-
-abc
+    
 -----------------
 
 *rivt* is an open source Python project for writing and distributing
