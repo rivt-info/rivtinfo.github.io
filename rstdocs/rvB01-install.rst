@@ -13,14 +13,13 @@
 
     <hr>
 
-*rivt* is a Python project. It includes :doc:`rivtlib <rvA01-intro>`
-and two dozen  :doc:`Python packages <rvB02-python>`. When
-*rivt* is installed *rivt docs and reports* may be edited and published using a
-text editor. 
+*rivt* is a Python project. It includes :doc:`rivtlib <rvA01-intro>` and two
+dozen :doc:`Python packages <rvB02-python>`. After *rivt* is installed *rivt
+docs and reports* may be edited and published using a text editor.
 
 *rivt* is also designed to work with other open source programs and tools
-that add editing and analysis capabilities. There are four installation methods
-for *rivt* and auxiliary programs.
+in integrated frameworks that add editing and analysis capabilities. There are 
+four installation methods with varying degrees of system integration and extention.
 
 .. topic:: 1. *rivt-uv* 
 
@@ -58,8 +57,8 @@ for *rivt* and auxiliary programs.
 
 .. topic:: 4. *rivt.zip* 
 
-    *rivt.zip* is a portable, single folder, version of *rivt* integrated with
-    *VSCode*.
+    *rivt.zip* is a single folder, isolated, portable version of *rivt*
+    integrated with *VSCode*.
 
 
 .. raw:: html
