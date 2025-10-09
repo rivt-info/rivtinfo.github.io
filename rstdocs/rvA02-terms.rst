@@ -22,44 +22,54 @@
     A formatted document file output by rivt. The file is a text, 
     PDF or HTML file.
 
+
   doc number 
     Prefix of a rivt and doc file name and used to organize a report. 
     It has the form *rvDss-filename.py* where D is a capital alphanumeric 
     division number and ss is the subdivision number.
-  
+
+
   division 
     A group of related rivt files organized in a report and labeled in
     the rivt file name. Optionally organized in a division folder.
+
 
   rivt markup  
     A light weight markup that wraps restructuredText and outputs reports in
     text, PDF and HTML. Markup is included in string arguments to rivt 
     API functions. 
 
+
   rivtlib
     Python package that generates docs and reports from 
     a `rivt file. <https://rivtlib.dev>`_
 
+
   rivt string
     Triple quoted string argument to an API function.
+
 
   rivt file
   rivt files
     A Python file that imports *rivtlib* and includes *rivt markup*.  
+
 
   rivt file number 
     Prefix of rivt file name used to organize a report. It has the form 
     *rvDss-filename.py* where D is a capital alphanumeric division number 
     and ss is the subdivision number.
 
+
   line tag
   line tags
     A line tag has the form **_[TAG]** and formats a line of text. 
+
 
   block tag
   block tags
     A block tag formats a block of text that begins with **_[[TAG]]**
     and terminates with **_[[Q]]**. 
+
 
   command
   commands 
@@ -74,6 +84,7 @@
     For *reports* the relative path is a subfolder of the *source* folder. If 
     the file is a  *single doc* the alias *rvlocal* specifies that the 
     sources are stored in the same folder as the *rivt file*. 
+
 
   single doc 
   single docs 
@@ -95,11 +106,11 @@
 
   section parameter 
   section parameters 
-    Comma separated parameters in *header* that specify section processing.
+    Comma separated parameters in a *header* that specify the section processing.
 
 
   section content
-    Refers to a *rivt string* or a formatted *rivt string*.
+    The content of a *rivt string* minus the *header*. 
 
 
   execution history
