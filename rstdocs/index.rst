@@ -1,4 +1,7 @@
 
+Home
+======================
+
 .. figure::  _static/img/rivdark55c.png
     :class: dark-light
     :scale: 20 %
@@ -9,7 +12,6 @@
 
    <br>
    <hr>
-
 
 *rivt* is an open source Python project for writing and distributing
 engineering documents. Documents are written in 
