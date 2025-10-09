@@ -10,7 +10,6 @@ Home
     
 .. raw:: html
 
-   <br>
    <hr>
 
 *rivt* is an open source Python project for writing and distributing
@@ -40,6 +39,7 @@ search interface for discovering *rivt files* on *GitHub* is
     :maxdepth: 1
     :hidden:
 
+    index.rst
     rvA01-intro.rst
     rvB01-install.rst
     rvC01-markup.rst
