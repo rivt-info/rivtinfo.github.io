@@ -60,7 +60,7 @@ label* is the section title.
         
         """)
  
- Section parameters* specify the following settings:
+*Section parameters* specify the following settings:
 
     - print: formats :term:`section content` to *doc* 
     - public: copies *section content* to *public rivt file* 
@@ -82,7 +82,7 @@ first. A parameter only needs to be specified if different from the default.
   rv.M   hide, print   private, public   section, merge   record, skip                 
   rv.S   hide, print   private, public   section, merge   record, skip                 
   rv.Q   hide, print   private, public   section, merge   record, skip                                                                                                                                                                                                                                    
- ====== ============= ================= ================ ============== 
+ ====== ============= ================= ================ ============== ================
 
 
 .. raw:: html

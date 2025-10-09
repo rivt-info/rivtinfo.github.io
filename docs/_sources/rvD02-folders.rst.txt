@@ -156,7 +156,8 @@ Example *report* folder structures are shown below.
                 ├── opensees.cmd                
                 └── opensees.sh   
             ├── tables/                         |
-                ├── data1.csv       
+                ├── data1.csv
+                ├── newvals.csv        
                 └── download1.csv  
             ├── text/                           |
                 ├── boiler.txt
@@ -164,14 +165,13 @@ Example *report* folder structures are shown below.
             ├── tools/                          |
                 ├── plot.py                               
                 └── loads.py
-            ├── [output]/                       |
+            ├── [output]/                       ||
                 ├── tablepy.csv                               
                 └── imagepy.png
-            ├── [values]/                       |
+            ├── [values]/                       ||
                 ├── v101-2.csv       
-                ├── v102-3.csv         
-                └── newvals.csv        
-            ├── [temp]/                         |
+                └──  v102-3.csv                
+            ├── [temp]/                         ||
                 └── rv01-label3.tex
         ├── [style]                             | doc style files 
             ├── [html]/               
