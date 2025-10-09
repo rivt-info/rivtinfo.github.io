@@ -8,11 +8,7 @@
 .. raw:: html
 
    <br>
-   <br>
-
-
- **rivt**   
-====================
+   <hr>
 
 
 *rivt* is an open source Python project for writing and distributing

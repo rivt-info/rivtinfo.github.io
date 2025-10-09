@@ -41,7 +41,7 @@ html_theme_options = {
     "footer_start": ["copyright"],
     "footer_end": [],
     "logo": {
-        "text": "Home",
+        "text": "rivt",
         "image_dark": "rivhome11c.png",
         "image_light": "rivhome11c.png",
     }
