@@ -9,7 +9,7 @@
     "fsdeploy.nodes": [
         {
             "source": "C:/git/git-rivtinfo.github.io",
-            "target": "C:/Users/rodhh/OneDrive/StL-Proj2/2025/rivtlib.github.io",
+            "target": "C:/Users/rodhh/OneDrive/StL-rivt/rivtinfo.github.io",
             "include": "**/*.*",
             "exclude": "**/.git",
             "deleteTargetOnDeploy": true,
@@ -17,7 +17,7 @@
         },
         {
             "source": "C:/git/git-rivtinfo.github.io",
-            "target": "E:/OneDrive/StL-Proj2/2025/rivtlib.github.io",
+            "target": "E:/OneDrive/StL-rivt/rivtinfo.github.io",
             "include": "**/*.*",
             "exclude": "**/.git",
             "deleteTargetOnDeploy": true,

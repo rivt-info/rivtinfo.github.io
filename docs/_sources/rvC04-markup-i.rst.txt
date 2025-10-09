@@ -14,7 +14,7 @@
 
 *line tags* format a line of text and are denoted with _[TAG], usually at the
 end of the line. *Block tags* format a block of text that begin with _[[TAG]]
-on the first line and end with _[[Q]] after the last line. 
+on the first line and end with _[[Q]] after the last line.
 
 _[TAG] : line tag description
 

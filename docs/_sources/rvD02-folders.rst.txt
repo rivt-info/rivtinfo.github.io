@@ -38,9 +38,9 @@ using *doc numbers*. If the *rivt file* names are:
 
 .. code-block:: bash
 
-    rvA01-rivtfile.py
-    rv105-rivtfile.py
-    rv212-rivtfile.py  
+    rvA01-filename.py
+    rv105-filename.py
+    rv212-filename.py  
 
 the *report numbers* used in the report would be: 
 
