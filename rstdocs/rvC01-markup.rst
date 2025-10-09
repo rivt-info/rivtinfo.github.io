@@ -47,7 +47,8 @@ label" and parameters that define the section behavior.
     <hr>
 
 A header starts with a *section label* followed by a vertical separator bar and
-*parameters* that override the section write behavior. 
+*section parameters* that override the section default behavior. The *section
+label* is the section title.
 
 .. code-block:: python
 
@@ -58,30 +59,30 @@ A header starts with a *section label* followed by a vertical separator bar and
         ...
         
         """)
+ 
+ Section parameters* specify the following settings:
 
-The *section label* is the section title. If the *section label* is preceeded
-by two dashes (*--section label*) the section output is merged with the prior
-section, instead of starting a new one. Sections are numbered, bookmarked and
-linked when output to *doc*. The write *parameters* specify:
+    - print: formats :term:`section content` to *doc* 
+    - public: copies *section content* to *public rivt file* 
+    - merge: merges formatted *section content* to previous section
+    - history: writes *section label* to :term:`execution history`
 
-- whether the section output is written to the *doc* 
-- whether the API with its *rivt string* is written to a *public rivt file* 
-- where the *value file* is exported (for *rv.V* only)
+The table below summarizes the parameter settings with the default setting shown
+first. A parameter only needs to be specified if different from the default. 
 
-They only need to be specified when different from defaults.
+ ============== ================ ================= ================ ==================== 
+  API function        print            public            merge            history                            
+ ============== ================ ================= ================ ==================== 
+  rv.R           noprint, print   private, public   nomerge, merge   history, nohistory                 
+  rv.I           print, noprint   private, public   nomerge, merge   history, nohistory                 
+  rv.V           print, noprint   private, public   nomerge, merge   history, nohistory                 
+  rv.T           noprint, print   private, public   nomerge, merge   history, nohistory                 
+  rv.D           noprint, print   private, public   nomerge, merge   history, nohistory                 
+  rv.M           noprint, print   private, public   nomerge, merge   history, nohistory                 
+  rv.S           noprint, print   private, public   nomerge, merge   history, nohistory                 
+  rv.Q           noprint, print   private, public   nomerge, merge   history, nohistory                                                                                                                                                                                                                                    
+ ============== ================ ================= ================ ==================== 
 
-============= ==============================
-API function    default write parameters       
-============= ==============================
-rv.R             nowrite, private
-rv.I             write, private
-rv.V             write, private, rvsource
-rv.T             nowrite, private
-rv.D             nowrite, private
-rv.M             nowrite, private
-rv.S             nowrite, private
-rv.Q             nowrite, private
-============= ==============================
 
 .. raw:: html
 

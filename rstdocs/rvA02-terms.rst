@@ -90,6 +90,16 @@
   report folders
     The folder structure for producing a report is described :doc:`here. <rvD02-folders>`
 
+section parameter 
+section parameters 
+  Comma separated parameters in *header* that specify sectoin processing.
+
+
+section content
+  Refers to a *rivt string* or a formatted *rivt string*.
+
+execution history
+  list of section headers appended to the end of a doc or report.
 
 **[2]** Python Terms
 -----------------------------
