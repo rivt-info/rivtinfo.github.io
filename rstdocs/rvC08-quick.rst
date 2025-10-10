@@ -81,7 +81,7 @@ all           _[[Q]]                          quit (all)
     <hr>
 
 ======= ==================================================== ===== ==================
-Scope           | Command | path |parameters                R/W     file types
+Scope           | Command | path | parameters                 R/W     file types
 ======= ==================================================== ===== ==================
 R         | LINUX | relative path | popen; run                R     sh
 R         | MACOS | relative path | popen; run                R     sh
@@ -128,7 +128,7 @@ D         | DOCS | relative path | pdf; pdftex; text; html    W     pdf, html, t
         ├── [rv202-]filename4.py        | rivt file  
         ├── [log]/                      || log folder
         ├── [public]/                   || public rivt folder
-        ├── [report]/                   || reports folder
+        ├── [publish]/                  || reports folder
         ├── [src]/                      |||| source folder
         └── README.txt                  | GitHub searchable text report 
 
@@ -147,7 +147,7 @@ D         | DOCS | relative path | pdf; pdftex; text; html    W     pdf, html, t
             ├── rv-101-filename1.py            ||  
             ├── rv-201-filename3.py            ||
             └── rv-202-filename4.py            || 
-        ├── [report]/                          || Reports and Docs
+        ├── [publish]/                         || Reports and Docs
             ├── [html]/    
                 ├── [docs]/                    || HTML     
                     ├── _images/               || 

@@ -152,7 +152,7 @@ typical *rivt report* folder structure is described :doc:`here. <rvD02-folders>`
 
 
 ======= ==================================================== ===== ==================
-Scope           | Command | path |parameters                R/W     file types
+Scope           | Command | path | parameters                  R/W     file types
 ======= ==================================================== ===== ==================
 R         | LINUX | relative path | popen; run                R     sh
 R         | MACOS | relative path | popen; run                R     sh

@@ -82,7 +82,7 @@ An example *report* folder structure is shown below.
         ├── [rv202-]filename4.py        | rivt file  
         ├── [log]/                      || log folder
         ├── [public]/                   || public rivt folder
-        ├── [report]/                   || reports folder
+        ├── [publish]/                  || reports folder
         ├── [src]/                      |||| source folder
         └── README.txt                  | GitHub searchable text report 
 
@@ -101,7 +101,7 @@ An example *report* folder structure is shown below.
             ├── rv-101-filename1.py            ||  
             ├── rv-201-filename3.py            ||
             └── rv-202-filename4.py            || 
-        ├── [report]/                          || Reports and Docs
+        ├── [publish]/                         || Reports and Docs
             ├── [html]/    
                 ├── [docs]/                    || HTML     
                     ├── _images/               || 
