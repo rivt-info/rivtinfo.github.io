@@ -27,5 +27,6 @@ mkdir example1
 cd example1
 curl https://raw.githubusercontent.com/rivt-info/rivt-simple-doc/refs/heads/main/rv000-simple-doc.py -O
 curl https://github.com/rivt-info/rivt-simple-doc/blob/main/beam.png?raw=true -O -L
+curl https://github.com/rivt-info/rivt-simple-doc/blob/main/beam1-v.csv?raw=true -O -L
 REM run example (no quotes) "python rv000-simple-doc.py"
 cmd /k
