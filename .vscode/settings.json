@@ -123,5 +123,14 @@
         "statusBar.background": "#172335",
     },
     "workbench.panel.defaultLocation": "right",
-    "iis.configDir": ""
+    "cSpell.enabled": false,
+    "python.defaultInterpreterPath": "c:\\Python313\\python.exe",
+    "explorer.sortOrder": "type",
+    "workbench.sideBar.location": "right",
+    "editor.minimap.enabled": false,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "editor.rulers": [
+        80
+    ]
 }
