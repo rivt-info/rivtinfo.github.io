@@ -1,4 +1,4 @@
-**A.4 Small example 1**
+**A.5 Small report example**
 =========================
 
 .. raw:: html
@@ -8,3 +8,4 @@
 .. raw:: html
 
     <hr>
+    

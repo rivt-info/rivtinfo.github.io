@@ -86,3 +86,4 @@ also offer less formatting control.
     rvD02-folders.rst
     rvD03-reports.rst
     rvD04-settings.rst
+    rvD05-reportexp.rst
