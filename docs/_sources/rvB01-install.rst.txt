@@ -13,19 +13,19 @@
 
     <hr>
 
-*rivt* is a Python project. It includes :doc:`rivtlib <rvA01-intro>` and two
-dozen :doc:`Python packages <rvB02-python>`. After *rivt* is installed *rivt
-docs and reports* may be edited and published using a text editor.
+*rivt* is a Python project that includes :term:`rivtlib` and about two
+dozen :doc:`Python packages <rvB02-python>`. After *rivt* is installed 
+:term:`docs` and :term:`reports` may be edited and published using a text editor.
 
 *rivt* is also designed to work with other open source programs and tools
-in integrated frameworks that add editing and analysis capabilities. There are 
-four installation methods with varying degrees of system integration and extention.
+in an integrated framework that adds editing and analysis capabilities. There are 
+four installation methods with varying degrees of system and program integration.
 
 .. topic:: 1. *rivt-uv* 
 
     *uv* is a `Python package manager <https://docs.astral.sh/uv/>`_ and
     installer that simplifies installing isolated Python environments. See
-    :ref:`Install rivt-uv <rivt-uv>` for procedure.
+    :ref:`rivt-uv <rivt-uv>` for procedure.
 
 .. raw:: html
 
@@ -51,6 +51,8 @@ four installation methods with varying degrees of system integration and extenti
     #. *LaTeX* for precise typesetting.
     #. *QCAD* for diagramming.
 
+    See :ref:`rivt-framework <rivt-framework>` for procedure.
+
 .. raw:: html
 
     <hr>
@@ -59,6 +61,9 @@ four installation methods with varying degrees of system integration and extenti
 
     *rivt.zip* is a single folder, isolated, portable version of *rivt*
     integrated with *VSCode*.
+
+
+    See :ref:`rivt-zip <rivt-zip>` for procedure.
 
 
 .. raw:: html
@@ -171,6 +176,9 @@ A list of the dependencies and *requirements.txt* file is
 
     <p id="api">&lt;i&gt;</p>
 
+
+.. _rivt-framework:
+
 **[4]** Install *rivt-framework*
 ------------------------------------------
 
@@ -195,6 +203,8 @@ The *rivt-framework* includes installation of the following programs:
 
     <p id="api">&lt;i&gt;</p>
 
+
+.. _rivt-zip:
 
 **[5]** Install *rivt.zip*
 --------------------------------------------------
