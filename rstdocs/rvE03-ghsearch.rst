@@ -1,4 +1,4 @@
-**E.3 - GitHub Search**
+**E.3 GitHub Search**
 =========================
 
 .. raw:: html
