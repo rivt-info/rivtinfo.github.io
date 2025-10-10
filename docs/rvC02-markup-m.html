@@ -392,15 +392,14 @@ dictionaries, lists and variables. Other text in this section is ignored.</p>
 <p id="api">&lt;m&gt;</p></section>
 <section id="dictionaries">
 <h2><strong>[2]</strong> Dictionaries<a class="headerlink" href="#dictionaries" title="Link to this heading">#</a></h2>
-<hr><p><em>rv_authD</em> provides information about the document itself.</p>
+<hr><p><em>rv_authD</em> amd rv_forknD provide information about the document itself.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># default</span>
 <span class="n">rv_authD</span> <span class="o">=</span> <span class="p">{</span>
         <span class="s2">&quot;authors&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;0.0.&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;0.0.0&quot;</span><span class="p">,</span>
         <span class="s2">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
         <span class="s2">&quot;repo&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
         <span class="s2">&quot;license&quot;</span><span class="p">:</span> <span class="s2">&quot;https://opensource.org/license/mit/&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;fork1&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">],</span>
         <span class="p">}</span>
 
 <span class="c1"># example</span>
@@ -408,33 +407,41 @@ dictionaries, lists and variables. Other text in this section is ignored.</p>
         <span class="s2">&quot;authors&quot;</span><span class="p">:</span> <span class="s2">&quot;rholland&quot;</span><span class="p">,</span>
         <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;0.6.1&quot;</span><span class="p">,</span>
         <span class="s2">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;rod.h.holland@gmail.com&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;repo&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/rivt-info/rivt-simple-single-doc&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;repo&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/rivt-info/rivt-simple-doc&quot;</span><span class="p">,</span>
         <span class="s2">&quot;license&quot;</span><span class="p">:</span> <span class="s2">&quot;https://opensource.org/license/mit/&quot;</span><span class="p">,</span>
         <span class="s2">&quot;fork1&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">],</span>
+        <span class="p">}</span>
+
+<span class="c1"># default</span>
+<span class="n">rv_fork1D</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;authors&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;0.0.0&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;repo&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
         <span class="p">}</span>
 </pre></div>
 </div>
 <p id="api">&lt;i&gt;</p></section>
 <section id="lists">
 <h2><strong>[3]</strong> Lists<a class="headerlink" href="#lists" title="Link to this heading">#</a></h2>
-<p><em>r*v_headerL</em> specfies the contents and order of the doc header.</p>
+<p><em>rv_headerL</em> specfies the contents and order of the doc header.</p>
 <hr><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># default</span>
 <span class="n">rv_headerL</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;date&quot;</span><span class="p">,</span> <span class="s2">&quot;time&quot;</span><span class="p">,</span> <span class="s2">&quot;file&quot;</span><span class="p">,</span> <span class="s2">&quot;version&quot;</span><span class="p">]</span>
 
 <span class="c1">#example</span>
-<span class="n">rv_headerL</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;date&quot;</span><span class="p">,</span> <span class="s2">&quot;time&quot;</span><span class="p">,</span> <span class="s2">&quot;file&quot;</span><span class="p">,</span> <span class="s2">&quot;version&quot;</span><span class="p">]</span>
+<span class="n">rv_headerL</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;date&quot;</span><span class="p">,</span> <span class="s2">&quot;file&quot;</span><span class="p">,</span> <span class="s2">&quot;authors&quot;</span><span class="p">,</span> <span class="s2">&quot;version&quot;</span><span class="p">]</span>
 </pre></div>
 </div>
 </section>
 <section id="variables">
 <h2><strong>[3]</strong> Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h2>
-<p><em>rv_localB</em> overrides the default report structure and specifies that <em>values</em>
-and <em>logs</em> are written to the local rivt file.</p>
+<p><em>rv_localB</em> overrides the default report structure and specifies that the <em>values</em>
+and <em>logs</em> files are written to the local rivt folder.</p>
 <hr><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># default</span>
-<span class="n">rv_localB</span> <span class="o">=</span> <span class="n">true</span>
+<span class="n">rv_localB</span> <span class="o">=</span> <span class="n">false</span>
 
 <span class="c1"># example</span>
-<span class="n">rv_localB</span> <span class="o">=</span> <span class="n">false</span>
+<span class="n">rv_localB</span> <span class="o">=</span> <span class="n">true</span>
 </pre></div>
 </div>
 </section>

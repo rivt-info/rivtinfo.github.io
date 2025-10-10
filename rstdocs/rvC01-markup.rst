@@ -138,23 +138,39 @@ and terminates with **_[[Q]]**.
 
 :doc:`Commands <rvC08-quick>`
 
-*rivt commands* read and write external files and assign values to variables.
-They typically start in the first column with a vertical bar ( | ) followed by
-the file path, name and parameters. 
+*rivt commands* read and write external files.  They typically start in the 
+first column with a vertical bar ( | ) followed by the file path, name and parameters. 
+The exceptions to this pattern are the assignment  (**<=** ) and definition (**:=**) 
+commands, which are used to assign values to equation results and define variables.
 
 .. code-block:: bash  
     
-    | COMMAND | relative path | filename | parameters
+    | COMMAND | relative path | parameters
 
-*Commands* specify the file location and processing parameters. Parameter
-options are separated by commas. File paths are specified relative to the
-report *source folder* or with the alias *rvlocal* to specify the local
-directory. *rvlocal* is typically used for *single docs*. The standard *rivt
-report* folder structure is described :doc:`here. <rvD02-folders>`
+File paths are specified relative to the *report folder* or *rivt file* folder.  The 
+typical *rivt report* folder structure is described :doc:`here. <rvD02-folders>`
 
-The exceptions to this pattern are the assignment (**<=** ) and definition
-(**:=**) commands, which are used to assign values to equation results and
-define variables.
+
+======= ================================================= ===== ==================
+Scope           | Command | parameters                     R/W     file types
+======= ================================================= ===== ==================
+R         | LINUX | relative path                           R     sh
+R         | MACOS | relative path                           R     sh
+R         | WIN | relative path                             R     bat, cmd
+I, V      | TEXT | relative path | normal; literal          R     txt, tex, rst
+I, V      | TABLE | relative path | title, width, l;c;r     R     csv, txt, xlsx
+I, V      | IMG | relative path |  caption, scale           R     png, jpg
+I, V      | IMG2 | relative path | c1, c2, s1, s2           R     png, jpg
+V         | VALUES | relative path | title, [rows]          R     csv
+V         a := 1*IN  | unit1, unit2, decimal | descrip      W     define value
+V         b <= a + 3 | unit1, unit2, decimal | ref          W     assign value
+T         | HTML | relative path                            R     html
+T         | LATEX | relative path                           R     tex
+T         | PYTHON | relative path                          R     py
+T         | QCAD   | relative path                          R     js
+D         | APPEND | relative path | page;nopage            W     pdf, html
+D         | DOCS | relative path | rpdf; tpdf; txt; html    W     pdf, txt, htm
+======= ================================================= ===== ==================
 
 
 .. toctree::

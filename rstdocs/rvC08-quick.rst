@@ -79,26 +79,26 @@ all           _[[Q]]                          quit (all)
 
     <hr>
 
-========= ===================================================== =================
-Scope           | Command | parameters                              file types
-========= ===================================================== =================
-D            | APPEND | rel path | fname | page;nopage               pdf, html
-D            | DOCS | rel path | fname | rpdf; tpdf; txt; html    pdf, txt, html
-I, V         | TEXT | rel path | fname | normal; literal          txt, tex, rst
-I, V         | TABLE | rel path | fname | title, width, l;c;r     csv, txt, xlsx
-I, V         | IMG | rel path | fname |  caption, scale              png, jpg
-I, V         | IMG2 | rel path | fname | c1, c2, s1, s2              png, jpg
-V            | VALUES | rel path | fname | title, [rows]               csv
-V            a := 1*IN  | unit1, unit2, decimal | descrip          define value
-V            b <= a + 3 | unit1, unit2, decimal | ref              assign value
-R            | LINUX | rel path | fname                                sh
-R            | MACOS | rel path | fname                                sh
-R            | WIN | rel path | fname                                  bat, cmd
-T            | HTML | rel path | fname                                 html
-T            | LATEX | rel path | fname                                tex
-T            | PYTHON | rel path | fname                               py
-T            | QCAD   | rel path | fname                               js
-========= ===================================================== =================
+======= ================================================= ===== ==================
+Scope           | Command | parameters                     R/W     file types
+======= ================================================= ===== ==================
+R         | LINUX | relative path                           R     sh
+R         | MACOS | relative path                           R     sh
+R         | WIN | relative path                             R     bat, cmd
+I, V      | TEXT | relative path | normal; literal          R     txt, tex, rst
+I, V      | TABLE | relative path | title, width, l;c;r     R     csv, txt, xlsx
+I, V      | IMG | relative path |  caption, scale           R     png, jpg
+I, V      | IMG2 | relative path | c1, c2, s1, s2           R     png, jpg
+V         | VALUES | relative path | title, [rows]          R     csv
+V         a := 1*IN  | unit1, unit2, decimal | descrip      W     define value
+V         b <= a + 3 | unit1, unit2, decimal | ref          W     assign value
+T         | HTML | relative path                            R     html
+T         | LATEX | relative path                           R     tex
+T         | PYTHON | relative path                          R     py
+T         | QCAD   | relative path                          R     js
+D         | APPEND | relative path | page;nopage            W     pdf, html
+D         | DOCS | relative path | rpdf; tpdf; txt; html    W     pdf, txt, htm
+======= ================================================= ===== ==================
 
 .. raw:: html
 

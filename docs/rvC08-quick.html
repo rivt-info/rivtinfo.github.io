@@ -550,115 +550,132 @@
 <div class="line">Command | parameters</div>
 </div>
 </th>
+<th class="head"><p>R/W</p></th>
 <th class="head"><p>file types</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>D</p></td>
+<tr class="row-even"><td><p>R</p></td>
 <td><div class="line-block">
-<div class="line">APPEND | rel path | fname | page;nopage</div>
+<div class="line">LINUX | relative path</div>
 </div>
 </td>
-<td><p>pdf, html</p></td>
-</tr>
-<tr class="row-odd"><td><p>D</p></td>
-<td><div class="line-block">
-<div class="line">DOCS | rel path | fname | rpdf; tpdf; txt; html</div>
-</div>
-</td>
-<td><p>pdf, txt, html</p></td>
-</tr>
-<tr class="row-even"><td><p>I, V</p></td>
-<td><div class="line-block">
-<div class="line">TEXT | rel path | fname | normal; literal</div>
-</div>
-</td>
-<td><p>txt, tex, rst</p></td>
-</tr>
-<tr class="row-odd"><td><p>I, V</p></td>
-<td><div class="line-block">
-<div class="line">TABLE | rel path | fname | title, width, l;c;r</div>
-</div>
-</td>
-<td><p>csv, txt, xlsx</p></td>
-</tr>
-<tr class="row-even"><td><p>I, V</p></td>
-<td><div class="line-block">
-<div class="line">IMG | rel path | fname |  caption, scale</div>
-</div>
-</td>
-<td><p>png, jpg</p></td>
-</tr>
-<tr class="row-odd"><td><p>I, V</p></td>
-<td><div class="line-block">
-<div class="line">IMG2 | rel path | fname | c1, c2, s1, s2</div>
-</div>
-</td>
-<td><p>png, jpg</p></td>
-</tr>
-<tr class="row-even"><td><p>V</p></td>
-<td><div class="line-block">
-<div class="line">VALUES | rel path | fname | title, [rows]</div>
-</div>
-</td>
-<td><p>csv</p></td>
-</tr>
-<tr class="row-odd"><td><p>V</p></td>
-<td><p>a := 1*IN  | unit1, unit2, decimal | descrip</p></td>
-<td><p>define value</p></td>
-</tr>
-<tr class="row-even"><td><p>V</p></td>
-<td><p>b &lt;= a + 3 | unit1, unit2, decimal | ref</p></td>
-<td><p>assign value</p></td>
+<td><p>R</p></td>
+<td><p>sh</p></td>
 </tr>
 <tr class="row-odd"><td><p>R</p></td>
 <td><div class="line-block">
-<div class="line">LINUX | rel path | fname</div>
+<div class="line">MACOS | relative path</div>
 </div>
 </td>
+<td><p>R</p></td>
 <td><p>sh</p></td>
 </tr>
 <tr class="row-even"><td><p>R</p></td>
 <td><div class="line-block">
-<div class="line">MACOS | rel path | fname</div>
+<div class="line">WIN | relative path</div>
 </div>
 </td>
-<td><p>sh</p></td>
-</tr>
-<tr class="row-odd"><td><p>R</p></td>
-<td><div class="line-block">
-<div class="line">WIN | rel path | fname</div>
-</div>
-</td>
+<td><p>R</p></td>
 <td><p>bat, cmd</p></td>
+</tr>
+<tr class="row-odd"><td><p>I, V</p></td>
+<td><div class="line-block">
+<div class="line">TEXT | relative path | normal; literal</div>
+</div>
+</td>
+<td><p>R</p></td>
+<td><p>txt, tex, rst</p></td>
+</tr>
+<tr class="row-even"><td><p>I, V</p></td>
+<td><div class="line-block">
+<div class="line">TABLE | relative path | title, width, l;c;r</div>
+</div>
+</td>
+<td><p>R</p></td>
+<td><p>csv, txt, xlsx</p></td>
+</tr>
+<tr class="row-odd"><td><p>I, V</p></td>
+<td><div class="line-block">
+<div class="line">IMG | relative path |  caption, scale</div>
+</div>
+</td>
+<td><p>R</p></td>
+<td><p>png, jpg</p></td>
+</tr>
+<tr class="row-even"><td><p>I, V</p></td>
+<td><div class="line-block">
+<div class="line">IMG2 | relative path | c1, c2, s1, s2</div>
+</div>
+</td>
+<td><p>R</p></td>
+<td><p>png, jpg</p></td>
+</tr>
+<tr class="row-odd"><td><p>V</p></td>
+<td><div class="line-block">
+<div class="line">VALUES | relative path | title, [rows]</div>
+</div>
+</td>
+<td><p>R</p></td>
+<td><p>csv</p></td>
+</tr>
+<tr class="row-even"><td><p>V</p></td>
+<td><p>a := 1*IN  | unit1, unit2, decimal | descrip</p></td>
+<td><p>W</p></td>
+<td><p>define value</p></td>
+</tr>
+<tr class="row-odd"><td><p>V</p></td>
+<td><p>b &lt;= a + 3 | unit1, unit2, decimal | ref</p></td>
+<td><p>W</p></td>
+<td><p>assign value</p></td>
 </tr>
 <tr class="row-even"><td><p>T</p></td>
 <td><div class="line-block">
-<div class="line">HTML | rel path | fname</div>
+<div class="line">HTML | relative path</div>
 </div>
 </td>
+<td><p>R</p></td>
 <td><p>html</p></td>
 </tr>
 <tr class="row-odd"><td><p>T</p></td>
 <td><div class="line-block">
-<div class="line">LATEX | rel path | fname</div>
+<div class="line">LATEX | relative path</div>
 </div>
 </td>
+<td><p>R</p></td>
 <td><p>tex</p></td>
 </tr>
 <tr class="row-even"><td><p>T</p></td>
 <td><div class="line-block">
-<div class="line">PYTHON | rel path | fname</div>
+<div class="line">PYTHON | relative path</div>
 </div>
 </td>
+<td><p>R</p></td>
 <td><p>py</p></td>
 </tr>
 <tr class="row-odd"><td><p>T</p></td>
 <td><div class="line-block">
-<div class="line">QCAD   | rel path | fname</div>
+<div class="line">QCAD   | relative path</div>
 </div>
 </td>
+<td><p>R</p></td>
 <td><p>js</p></td>
+</tr>
+<tr class="row-even"><td><p>D</p></td>
+<td><div class="line-block">
+<div class="line">APPEND | relative path | page;nopage</div>
+</div>
+</td>
+<td><p>W</p></td>
+<td><p>pdf, html</p></td>
+</tr>
+<tr class="row-odd"><td><p>D</p></td>
+<td><div class="line-block">
+<div class="line">DOCS | relative path | rpdf; tpdf; txt; html</div>
+</div>
+</td>
+<td><p>W</p></td>
+<td><p>pdf, txt, htm</p></td>
 </tr>
 </tbody>
 </table>
