@@ -19,10 +19,10 @@ folder*.
 
 **Folder Key**
 
-- Required folder and file prefixes names are shown in brackets []. 
-- Single vertical bar (|) identifies files provided by the report author. 
-- Double vertical bar (||) identifies files written by rivtlib 
-- Four vertical bars (||||) mix of author and rivtlib written files
+- Required folder and file prefixes names are shown in brackets [ ]. 
+- Single vertical bar ( | ) identifies files provided by the report author. 
+- Double vertical bar ( || ) identifies files written by rivtlib 
+- Four vertical bars ( |||| ) mix of author and rivtlib written files
 
 
 .. code-block:: bash
