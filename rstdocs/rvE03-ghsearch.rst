@@ -53,8 +53,6 @@ the `GitHub interface <https://github.com/search>`_.
 
     <br>
 
-    <br>
-
 .. raw:: html
 
     <p id="api">&lt;t&gt;</p>
