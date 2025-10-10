@@ -65,24 +65,24 @@ label* is the section title.
 - *print*: formats :term:`section content` to *doc* 
 - *public*: copies *section content* to *public rivt file* 
 - *merge*: merges formatted *section content* to previous section
-- *history*: writes *section label and parameters* to :term:`API history`
-- *source*: writes values to *local rivt folder* instead of the *src/output* folder
+- *history*: writes *section label and parameters* to :term:`api-history` file
 
-The table below summarizes the parameter settings with the default setting shown
-first. A parameter only needs to be specified if different from the default. 
+The table below summarizes the section parameter settings, with the default
+setting shown first. A parameter only needs to be specified if different from
+the default.
 
-====== ============= ================= ================ ============== ================
-API         print        public            merge          history       source                      
-====== ============= ================= ================ ============== ================
+====== ============= ================= ================ ============== 
+API         print        public            merge          history                         
+====== ============= ================= ================ ============== 
 rv.R   hide, print   private, public   section, merge    record, skip                 
 rv.I   print, hide   private, public   section, merge    record, skip
-rv.V   print, hide   private, public   section, merge    record, skip   source, local                               
+rv.V   print, hide   private, public   section, merge    record, skip                                
 rv.T   hide, print   private, public   section, merge    record, skip                 
 rv.D   hide, print   private, public   section, merge    record, skip                 
 rv.M   hide, print   private, public   section, merge    record, skip                 
 rv.S   hide, print   private, public   section, merge    record, skip                 
 rv.Q   hide, print   private, public   section, merge    record, skip                                                                                                                                                                                                                                    
-====== ============= ================= ================ ============== ================
+====== ============= ================= ================ ============== 
 
 
 .. raw:: html

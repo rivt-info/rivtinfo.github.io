@@ -113,12 +113,13 @@
     The content of a *rivt string* minus the *header*. 
 
 
-  API history 
-    List of API excecution history appended to the end of a doc or
-    report. For complete execution history see *rivt log file*.
+  api-history 
+    API excecution history written to log folder as the file *rvDss-api.rst*. For the complete 
+    execution history see the rivt log file *rvDss-log.txt*.
+
 
   rivt log file
-    *rivt file* execution log written to log folder. 
+    *rivt file* execution log written to the *log folder* as *rvDss-log.txt*.
 
 **[2]** Python Terms
 -----------------------------

@@ -59,7 +59,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'rvC01-markup';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="C.2 Meta Data - rv.M" href="rvC02-markup-m.html" />
+    <link rel="next" title="C.2 Metadata - rv.M" href="rvC02-markup-m.html" />
     <link rel="prev" title="B.4 Compile Docs" href="rvB04-compile.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -313,7 +313,7 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="rvC02-markup-m.html"><strong>C.2 Meta Data - rv.M</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC02-markup-m.html"><strong>C.2 Metadata - rv.M</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC03-markup-r.html"><strong>C.3 Run - rv.R</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC04-markup-i.html"><strong>C.4 Insert - rv.I</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC05-markup-v.html"><strong>C.5 Values - rv.V</strong></a></li>
@@ -420,11 +420,11 @@ label</em> is the section title.</p>
 <li><p><em>print</em>: formats <a class="reference internal" href="rvA02-terms.html#term-section-content"><span class="xref std std-term">section content</span></a> to <em>doc</em></p></li>
 <li><p><em>public</em>: copies <em>section content</em> to <em>public rivt file</em></p></li>
 <li><p><em>merge</em>: merges formatted <em>section content</em> to previous section</p></li>
-<li><p><em>history</em>: writes <em>section label and parameters</em> to <a class="reference internal" href="rvA02-terms.html#term-API-history"><span class="xref std std-term">API history</span></a></p></li>
-<li><p><em>source</em>: writes values to <em>local rivt folder</em> instead of the <em>src/output</em> folder</p></li>
+<li><p><em>history</em>: writes <em>section label and parameters</em> to <a class="reference internal" href="rvA02-terms.html#term-api-history"><span class="xref std std-term">api-history</span></a> file</p></li>
 </ul>
-<p>The table below summarizes the parameter settings with the default setting shown
-first. A parameter only needs to be specified if different from the default.</p>
+<p>The table below summarizes the section parameter settings, with the default
+setting shown first. A parameter only needs to be specified if different from
+the default.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>API</p></th>
@@ -432,7 +432,6 @@ first. A parameter only needs to be specified if different from the default.</p>
 <th class="head"><p>public</p></th>
 <th class="head"><p>merge</p></th>
 <th class="head"><p>history</p></th>
-<th class="head"><p>source</p></th>
 </tr>
 </thead>
 <tbody>
@@ -441,56 +440,48 @@ first. A parameter only needs to be specified if different from the default.</p>
 <td><p>private, public</p></td>
 <td><p>section, merge</p></td>
 <td><p>record, skip</p></td>
-<td></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I</p></td>
 <td><p>print, hide</p></td>
 <td><p>private, public</p></td>
 <td><p>section, merge</p></td>
 <td><p>record, skip</p></td>
-<td></td>
 </tr>
 <tr class="row-even"><td><p>rv.V</p></td>
 <td><p>print, hide</p></td>
 <td><p>private, public</p></td>
 <td><p>section, merge</p></td>
 <td><p>record, skip</p></td>
-<td><p>source, local</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.T</p></td>
 <td><p>hide, print</p></td>
 <td><p>private, public</p></td>
 <td><p>section, merge</p></td>
 <td><p>record, skip</p></td>
-<td></td>
 </tr>
 <tr class="row-even"><td><p>rv.D</p></td>
 <td><p>hide, print</p></td>
 <td><p>private, public</p></td>
 <td><p>section, merge</p></td>
 <td><p>record, skip</p></td>
-<td></td>
 </tr>
 <tr class="row-odd"><td><p>rv.M</p></td>
 <td><p>hide, print</p></td>
 <td><p>private, public</p></td>
 <td><p>section, merge</p></td>
 <td><p>record, skip</p></td>
-<td></td>
 </tr>
 <tr class="row-even"><td><p>rv.S</p></td>
 <td><p>hide, print</p></td>
 <td><p>private, public</p></td>
 <td><p>section, merge</p></td>
 <td><p>record, skip</p></td>
-<td></td>
 </tr>
 <tr class="row-odd"><td><p>rv.Q</p></td>
 <td><p>hide, print</p></td>
 <td><p>private, public</p></td>
 <td><p>section, merge</p></td>
 <td><p>record, skip</p></td>
-<td></td>
 </tr>
 </tbody>
 </table>
@@ -566,7 +557,7 @@ define variables.</p>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>C.2 Meta Data - rv.M</strong></p>
+        <p class="prev-next-title"><strong>C.2 Metadata - rv.M</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
