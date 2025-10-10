@@ -72,16 +72,16 @@ setting shown first. A parameter only needs to be specified if different from
 the default.
 
 ====== ============= ================= ================ ============== 
-API         print        public            merge          history                         
+API         print        public            merge          history       
 ====== ============= ================= ================ ============== 
-rv.R   hide, print   private, public   section, merge    record, skip                 
-rv.I   print, hide   private, public   section, merge    record, skip
-rv.V   print, hide   private, public   section, merge    record, skip                                
-rv.T   hide, print   private, public   section, merge    record, skip                 
-rv.D   hide, print   private, public   section, merge    record, skip                 
-rv.M   hide, print   private, public   section, merge    record, skip                 
-rv.S   hide, print   private, public   section, merge    record, skip                 
-rv.Q   hide, print   private, public   section, merge    record, skip                                                                                                                                                                                                                                    
+rv.R   hide, print   private, public   section, merge    record, skip 
+rv.I   print, hide   private, public   section, merge    record, skip 
+rv.V   print, hide   private, public   section, merge    record, skip  
+rv.T   hide, print   private, public   section, merge    record, skip  
+rv.D   hide, print   private, public   section, merge    record, skip  
+rv.M   hide, print   private, public   section, merge    record, skip  
+rv.S   hide, print   private, public   section, merge    record, skip  
+rv.Q   hide, print   private, public   section, merge    record, skip 
 ====== ============= ================= ================ ============== 
 
 
@@ -151,26 +151,25 @@ File paths are specified relative to the *report folder* or *rivt file* folder. 
 typical *rivt report* folder structure is described :doc:`here. <rvD02-folders>`
 
 
-======= ================================================= ===== ==================
-Scope           | Command | parameters                     R/W     file types
-======= ================================================= ===== ==================
-R         | LINUX | relative path                           R     sh
-R         | MACOS | relative path                           R     sh
-R         | WIN | relative path                             R     bat, cmd
-I, V      | TEXT | relative path | normal; literal          R     txt, tex, rst
-I, V      | TABLE | relative path | title, width, l;c;r     R     csv, txt, xlsx
-I, V      | IMG | relative path |  caption, scale           R     png, jpg
-I, V      | IMG2 | relative path | c1, c2, s1, s2           R     png, jpg
-V         | VALUES | relative path | title, [rows]          R     csv
-V         a := 1*IN  | unit1, unit2, decimal | descrip      W     define value
-V         b <= a + 3 | unit1, unit2, decimal | ref          W     assign value
-T         | HTML | relative path                            R     html
-T         | LATEX | relative path                           R     tex
-T         | PYTHON | relative path                          R     py
-T         | QCAD   | relative path                          R     js
-D         | APPEND | relative path | page;nopage            W     pdf, html
-D         | DOCS | relative path | rpdf; tpdf; txt; html    W     pdf, txt, htm
-======= ================================================= ===== ==================
+======= ==================================================== ===== ==================
+Scope           | Command | path |parameters                R/W     file types
+======= ==================================================== ===== ==================
+R         | LINUX | relative path | popen; run                R     sh
+R         | MACOS | relative path | popen; run                R     sh
+R         | WIN | relative path   | popen; run                R     bat, cmd
+I, V      | TEXT | relative path | normal; literal            R     txt, tex, rst
+I, V      | TABLE | relative path | title, width, l;c;r       R     csv, txt, xlsx
+I, V      | IMG | relative path |  caption, scale             R     png, jpg
+I, V      | IMG2 | relative path | c1, c2, s1, s2             R     png, jpg
+V         | VALUES | relative path | title                    R     csv
+V         a := 1*IN  | unit1, unit2, decimal | description    W     define value
+V         b <= a + 3*FT | unit1, unit2, decimal | reference   W     assign value
+T         | HTML | relative path | html; file                 R     html
+T         | LATEX | relative path | pdftex, file              R     tex
+T         | PYTHON | relative path | rivt; external           R     py
+D         | APPEND | relative path | cover_page_title         W     pdf, html
+D         | DOCS | relative path | pdf; pdftex; text; html    W     pdf, html, txt
+======= ==================================================== ===== ==================
 
 
 .. toctree::

@@ -1,8 +1,6 @@
 import sys
-import os
 from pathlib import Path
 sys.path.append(str(Path(".").resolve()))
-from sphinx.locale import get_translation
 
 project = 'rivt.info'
 copyright = '2023 StructureLabs LLC'

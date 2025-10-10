@@ -5,7 +5,7 @@
 
     <p id="api">&lt;i&gt;</p>
 
-**[01]** Line tags
+**[1]** Line tags
 ----------------------
 
 .. raw:: html
@@ -23,7 +23,8 @@ I              text _[U] url               url link (all)
 I              text          _[B]          center bold text (pdf, html)
 I              description   _[D]          endnote description (all)
 I              text          _[C]          center text (all)
-I, V           equation      _[S]          format symbol math (all) 
+I, V           equation      _[S]          format sympy math (all) 
+I, V           equation      _[M]          format LaTeX math (all) 
 I, V           label         _[E]          equation label (all)
 I, V           caption       _[F]          image label (all) [1]
 I, V           title         _[T]          table label (all) [1]
@@ -37,7 +38,7 @@ I, V                         _[P]          new page (all)
 
     <p id="api">&lt;i&gt;</p>
 
-**[02]** Block tags
+**[2]** Block tags
 ----------------------
 
 .. raw:: html
@@ -62,7 +63,7 @@ T             _[[PYTHON]] *description*       Python functions (all)
 T             _[[RUBY]] *description*         Ruby script (all)
 T             _[[QCAD]] *description*         QCAD script (pdf,html)
 T             _[[OPENSEES]] *description*     OpenSeesscript (all)
-T             _[[LATEX]] *description*        LaTeX commands (all)
+T             _[[LATEX]] *description*        LaTeX commands (pdf,html)
 T             _[[HTML]] *description*         HTML commands (all)
 all           _[[T]] *topic*                  topic (all)
 all           _[[Q]]                          quit (all)
@@ -79,26 +80,26 @@ all           _[[Q]]                          quit (all)
 
     <hr>
 
-======= ================================================= ===== ==================
-Scope           | Command | parameters                     R/W     file types
-======= ================================================= ===== ==================
-R         | LINUX | relative path                           R     sh
-R         | MACOS | relative path                           R     sh
-R         | WIN | relative path                             R     bat, cmd
-I, V      | TEXT | relative path | normal; literal          R     txt, tex, rst
-I, V      | TABLE | relative path | title, width, l;c;r     R     csv, txt, xlsx
-I, V      | IMG | relative path |  caption, scale           R     png, jpg
-I, V      | IMG2 | relative path | c1, c2, s1, s2           R     png, jpg
-V         | VALUES | relative path | title, [rows]          R     csv
-V         a := 1*IN  | unit1, unit2, decimal | descrip      W     define value
-V         b <= a + 3 | unit1, unit2, decimal | ref          W     assign value
-T         | HTML | relative path                            R     html
-T         | LATEX | relative path                           R     tex
-T         | PYTHON | relative path                          R     py
-T         | QCAD   | relative path                          R     js
-D         | APPEND | relative path | page;nopage            W     pdf, html
-D         | DOCS | relative path | rpdf; tpdf; txt; html    W     pdf, txt, htm
-======= ================================================= ===== ==================
+======= ==================================================== ===== ==================
+Scope           | Command | path |parameters                R/W     file types
+======= ==================================================== ===== ==================
+R         | LINUX | relative path | popen; run                R     sh
+R         | MACOS | relative path | popen; run                R     sh
+R         | WIN | relative path   | popen; run                R     bat, cmd
+I, V      | TEXT | relative path | normal; literal            R     txt, tex, rst
+I, V      | TABLE | relative path | title, width, l;c;r       R     csv, txt, xlsx
+I, V      | IMG | relative path |  caption, scale             R     png, jpg
+I, V      | IMG2 | relative path | c1, c2, s1, s2             R     png, jpg
+V         | VALUES | relative path | title                    R     csv
+V         a := 1*IN  | unit1, unit2, decimal | description    W     define value
+V         b <= a + 3*FT | unit1, unit2, decimal | reference   W     assign value
+T         | HTML | relative path | html; file                 R     html
+T         | LATEX | relative path | pdftex, file              R     tex
+T         | PYTHON | relative path | rivt; external           R     py
+D         | APPEND | relative path | cover_page_title         W     pdf, html
+D         | DOCS | relative path | pdf; pdftex; text; html    W     pdf, html, txt
+======= ==================================================== ===== ==================
+
 
 .. raw:: html
 
@@ -107,145 +108,152 @@ D         | DOCS | relative path | rpdf; tpdf; txt; html    W     pdf, txt, htm
 **[4]** Folders
 -------------------
 
+
+**Key**
+
+- Required folder and file prefixes names are shown in brackets []. 
+- Single vertical bar (|) identifies files provided by the report author. 
+- Double vertical bar (||) identifies files written by rivtlib 
+- Four vertical bars (||||) mix of author and rivtlib written files
+
+
+.. code-block:: bash
+
+    Collapsed folders
+
+    [rivt]-Report-Label/                Report Folder Name
+        ├── [rv101-]filename1.py        | rivt file
+        ├── [rv102-]filename2.py        | rivt file
+        ├── [rv201-]filename3.py        | rivt file
+        ├── [rv202-]filename4.py        | rivt file  
+        ├── [log]/                      || log folder
+        ├── [public]/                   || public rivt folder
+        ├── [report]/                   || reports folder
+        ├── [src]/                      |||| source folder
+        └── README.txt                  | GitHub searchable text report 
+
+    Expanded folders
+
+    [rivt]-Report-Label/                       Report Folder Name                
+        ├── [rv101-]filename1.py               | rivt file
+        ├── [rv102-]filename2.py               | rivt file
+        ├── [rv201-]filename3.py               | rivt file
+        ├── [rv202-]filename4.py               | rivt file        
+        ├── [log]/                             || log files
+            ├── rv101-api.rst   
+            ├── rv101-log.txt   
+            └── rv102-log.txt   
+        ├── [public]/                          || public rivt files                      
+            ├── rv-101-filename1.py            ||  
+            ├── rv-201-filename3.py            ||
+            └── rv-202-filename4.py            || 
+        ├── [report]/                          || Reports and Docs
+            ├── [html]/    
+                ├── [docs]/                    || HTML     
+                    ├── _images/               || 
+                    ├── _sources/              ||
+                    ├── _static/               ||   
+                    ├── rv101-filename1.html   || HTML files
+                    ├── rv102-filename2.html   ||                           
+                    ├── rv201-filename3.html   ||                     
+                    ├── rv201-filename4.html   ||
+                    └── index.html             || HTML site           
+                ├── rv101-filename1.rst  
+                ├── rv102-filename2.rst  
+                ├── rv201-filename3.rst  
+                └── rv202-filename4.rst  
+            ├── [pdf]/                         || pdf report  
+                ├── [src]/                          
+                    ├── rv101-filename1.rst
+                    ├── rv102-filename2.rst                           
+                    ├── rv201-filename3.rst                        
+                    └── rv202-filename4.rst              
+                ├── rv101-filename1.pdf         || PDF from rst2pdf files
+                ├── rv102-filename2.pdf         ||                 
+                ├── rv201-filename3.pdf         ||               
+                ├── rv202-filename4.pdf         ||
+                └── Report-Label.pdf            || PDF from rst2pdf report
+            ├── [pdftex]/                       || pdftex report
+                ├── [src]/                          
+                    ├── rv101-filename1.rst
+                    ├── rv102-filename2.rst                        
+                    ├── rv201-filename3.rst                        
+                    └── rv202-filename4.rst               
+                ├── rv101-filename1.pdf         || PDF from LaTeX files
+                ├── rv102-filename2.pdf                          
+                ├── rv201-filename3.pdf                       
+                ├── rv202-filename4.pdf
+                └── Report-Label.pdf            || PDF from LaTeX report  
+            ├── [text]/                         || text report
+                ├── rv101-filename1.txt         ||
+                ├── rv102-filename2.txt         || 
+                ├── rv201-filename3.txt         ||
+                ├── rv202-filename4.txt         ||
+                └── README.txt                  || GitHub searchable text report                     
+            └── rivt-report.py                  | report generating script
+        ├── [src]                               |||| doc source files               
+            ├── data/                           | author created folder
+                ├── data1.csv
+                ├── newvals.csv        
+                └── download1.csv  
+            ├── image/                          | author created folder                
+                ├── fig1.png
+                └── fig2.jpg
+            ├── [style]/                        | doc style files 
+                ├── [html]/                     | html style files
+                    ├── _locale/                 
+                    ├── _static/                        
+                    ├── _templates/                     
+                    ├── conf.py                         
+                    ├── genhtml.cmd                     
+                    └── index.rst
+                ├── [pdf]/                       | rst2pdf style files
+                    ├── fonts/              
+                    ├── style/                 
+                    ├── Report-Cover.pdf           
+                    └── genrst2pdf.cmd
+                ├── [pdftex]/                    | pdftex style files
+                    ├── gentexpdf.cmd             
+                    ├── Report-cover.pdf                     
+                    └── rivt.sty              
+                ├── [text]/                      | text ini file
+                    └── rv-text.ini        
+            ├── [temp]/                          || temp files
+                └── rv01-label3.tex
+            ├── [tools]/                         |||| functions and output
+                ├── plot.py                               
+                └── loads.py
+                ├── tablepy.csv                               
+                └── imagepy.png          
+            ├── [values]/                        |||| stored values
+                ├── new-units.py       
+                ├── add-values-v.csv       
+                ├── v101-2.csv
+                └── v102-3.csv                
+        └── README.txt                           || GitHub searchable text report 
+
+
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
+**[5]** Default Header Settings
+------------------------------------
+
 .. raw:: html
 
     <hr>
 
-**Collapsed Folders**
 
-.. code-block:: bash
-
-
-    [rivt]-Report-Label/              Report Name
-        ├── [dv01-]divlabel/          | division folder
-        ├── [dv02-]divlabel/          | division folder                   
-        ├── [public]/                 || public rivt files
-        ├── [report]/                 || reports and docs
-        ├── [source]/                 | source files
-        ├── rivt-report.py            | report generator
-        └── README.txt                | GitHub searchable report 
-
-
-**Expanded Folders**
-
-
-.. code-block:: bash
-
-    [rivt]-Report-Label/                          # Report Folder Name
-        ├── [dv01-]divlabel/                      # div 01 folder
-            ├── [rv01-]doclabel1.py               | rivt file
-            └── [rv02-]doclabel2.py               | rivt file
-        ├── [dv02-]divlabel/                      # div 02 folder
-            ├── [rv01-]doclabel3.py               | rivt file
-            └── [rv02-]doclabel4.py               | rivt file         
-        ├── [public]/                             || public rivt files
-            ├── dv01-divlabel1/                   
-                ├── rv01-doclabel1.py        
-                └── rv02-doclabel2.py  
-            ├── dv02-divlabel2/                   
-                ├── rv01-doclabel3.py      
-                └── rv02-doclabel4.py             
-        ├── [report]/                              || Reports and Docs
-            ├── [html]/                            || HTML site
-                ├── [docs]/                       
-                    ├── _images/
-                    ├── _sources/
-                    └── _static/
-                    ├── dv01-divlabel1/           
-                        ├── rv01-doclabel1.html
-                        └── rv02-doclabel2.html
-                    ├── dv02-divlabel2/                            
-                        ├── rv01-doclabel3.html                       
-                        └── rv02-doclabel4.html
-                    ├── index.html 
-                    └── README.txt                 || GitHub searchable report                      
-                ├── [src]/                         
-                    ├── dv01-divlabel1/
-                        ├── rv01-doclabel1.rst
-                        └── rv02-doclabel2.rst
-                    ├── dv02-divlabel2/                            
-                        ├── rv01-doclabel3.rst                        
-                        └── rv02-doclabel4.rst                             
-            ├── [rst2pdf]/                         || rst2pdf report and docs             
-                ├── [src]/                          
-                    ├── dv01-divlabel1/
-                        ├── rv01-doclabel1.rst
-                        └── rv02-doclabel2.rst
-                    ├── dv02-divlabel2/                            
-                        ├── rv01-doclabel3.rst                        
-                        └── rv02-doclabel4.rst
-                ├── dv01-divlabel1/                
-                    ├── rv01-doclabel1.pdf
-                    └── rv02-doclabel2.pdf
-                ├── dv02-divlabel2/                            
-                    ├── rv01-doclabel3.pdf                       
-                    └── rv02-doclabel4.pdf
-                ├── README.txt                     || GitHub searchable report
-                └── Report-Label.pdf               || PDF report
-            ├── [texpdf]/                          || texpdf report and docs
-                ├── [src]/                          
-                    ├── dv01-divlabel1/
-                        ├── rv01-doclabel1.rst
-                        └── rv02-doclabel2.rst
-                    ├── dv02-divlabel2/                            
-                        ├── rv01-doclabel3.rst                        
-                        └── rv02-doclabel4.rst
-                ├── dv01-divlabel1/                 
-                    ├── rv01-doclabel1.pdf
-                    └── rv02-doclabel2.pdf
-                ├── dv02-divlabel2/                            
-                    ├── rv01-doclabel3.pdf                       
-                    └── rv02-doclabel4.pdf
-                ├── [temp]/
-                    └── rv01-label3.tex
-                ├── README.txt                     || GitHub searchable report
-                └── Report-Label.pdf               || PDF report  
-            ├── [text]/                            || text report and docs
-                ├── dv01-divlabel1/
-                    ├── rv01-label1.txt      
-                    └── rv02-label2.txt
-                ├── dv02-divlabel1/
-                    ├── rv01-label3.txt
-                    └── rv02-label4.txt
-                └── README.txt                      || GitHub searchable report                     
-        ├── [source]                                | source files 
-            ├── [html]\
-                ├── _locale/                        | settings
-                ├── _static/                        | settings
-                ├── _templates/                     | settings                              # html config
-                ├── conf.py                         | config file
-                └── genhtml.cmd                     | build commands
-                └── index.rst                       | intro page
-            ├── [rst2pdf]/
-                ├── fonts/                          | fonts
-                ├── style/                          | settings 
-                ├── Report-Cover.pdf                | report cover 
-                └── genrst2pdf.cmd                  | build commands                        
-            ├── [texpdf]/
-                ├── gentexpdf.cmd                   | build commands
-                ├── Report-cover.pdf                | report cover               
-                └── rivt.sty                        | settings
-            ├── [text]/                   
-                └── rv-text.ini                    
-            ├── [i01]/                              | div 01 Insert files 
-                ├── data1.csv
-                ├── cover-page.pdf                       
-                └── standards.txt
-            ├── [i02]/                              | div 02 Insert files 
-                ├── data1.csv                   
-                └── standards.txt
-            ├── [rt01]/                             | div 01 Run and Tool files 
-                ├── data1.csv                
-                └── standards.txt
-            ├── [rt02]/                             | div 02 Run and Tool files 
-                ├── data1.csv                   
-                └── standards.txt
-            ├── [v01]/                              | div 01 Value files 
-                ├── val0101-2.csv                 
-                └── val0102-3.csv
-            ├── [v02]/                              | div 02 Value files 
-                └── othervals.csv
-        └── README.txt                              # GitHub searchable report 
-
-
-
+====== ============= ================= ================ ============== 
+API         print        public            merge          history       
+====== ============= ================= ================ ============== 
+rv.R   hide, print   private, public   section, merge    record, skip 
+rv.I   print, hide   private, public   section, merge    record, skip 
+rv.V   print, hide   private, public   section, merge    record, skip  
+rv.T   hide, print   private, public   section, merge    record, skip  
+rv.D   hide, print   private, public   section, merge    record, skip  
+rv.M   hide, print   private, public   section, merge    record, skip  
+rv.S   hide, print   private, public   section, merge    record, skip  
+rv.Q   hide, print   private, public   section, merge    record, skip 
+====== ============= ================= ================ ============== 
