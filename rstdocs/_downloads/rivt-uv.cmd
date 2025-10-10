@@ -1,4 +1,5 @@
 @echo on
+REM Windows 10 and above - cmd file
 REM (1) clear any existing project, (2) create new venv
 REM (3) install rivt, (4) download example
 REM set rivt folder
@@ -15,8 +16,6 @@ REM set up venv
 mkdir %rvfolder%
 REM change directory
 cd %rvfolder%
-REM download rivt install file
-curl  https://raw.githubusercontent.com/rivt-info/rivt-win-install/refs/heads/main/rivt-install.cmd -O   
 REM (2) make venv
 uv venv
 REM activate venv
@@ -26,7 +25,7 @@ uv pip install git+https://github.com/rivtlib-dev/rivtlib.git@main
 REM (4) download example project into new folder
 mkdir example1
 cd example1
-curl https://raw.githubusercontent.com/rivt-info/rivt-simple-single-doc/refs/heads/main/rv0000-simple-single-doc.py -O
-curl https://github.com/rivt-info/rivt-simple-single-doc/blob/main/beam.png?raw=true -O -L
-REM run example with (no quotes) "python rv0000-simple-single-doc.py"
+curl https://raw.githubusercontent.com/rivt-info/rivt-simple-doc/refs/heads/main/rv000-simple-doc.py -O
+curl https://github.com/rivt-info/rivt-simple-doc/blob/main/beam.png?raw=true -O -L
+REM run example (no quotes) "python rv000-simple-doc.py"
 cmd /k

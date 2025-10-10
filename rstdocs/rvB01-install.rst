@@ -114,6 +114,7 @@ They execute the following steps:
     :linenos:
     
     @echo on
+    REM Windows 10 and above - cmd file
     REM (1) clear any existing project, (2) create new venv
     REM (3) install rivt, (4) download example
     REM set rivt folder
@@ -139,16 +140,16 @@ They execute the following steps:
     REM (4) download example project into new folder
     mkdir example1
     cd example1
-    curl https://raw.githubusercontent.com/rivt-info/rivt-simple-single-doc/refs/heads/main/rv0000-simple-single-doc.py -O
-    curl https://github.com/rivt-info/rivt-simple-single-doc/blob/main/beam.png?raw=true -O -L
-    REM run example (no quotes) "python rv00-simple-single-doc.py"
+    curl https://raw.githubusercontent.com/rivt-info/rivt-simple-doc/refs/heads/main/rv000-simple-doc.py -O
+    curl https://github.com/rivt-info/rivt-simple-doc/blob/main/beam.png?raw=true -O -L
+    REM run example (no quotes) "python rv000-simple-doc.py"
     cmd /k
 
 Within the *example1* folder run the rivt file:
 
 .. code-block:: bash
       
-    python rv00-simple-single-doc.py
+    python rv000-simple-doc.py
 
 .. raw:: html
 
