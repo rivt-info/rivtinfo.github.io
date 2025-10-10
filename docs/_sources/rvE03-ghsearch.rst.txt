@@ -14,14 +14,10 @@
 
 This page is a search interface for **rivt** files on GitHub. The search covers
 the full text of the **rivt** README.txt file in the *repo* directory. The
-README file contains the *rivt report*. 
+README file contains the *rivt report*. For advanced searching use 
+the `GitHub interface <https://github.com/search>`_.
 
-For advanced searching use the `GitHub interface <https://github.com/search>`_.
-
-
-.. topic:: Buttons
-
-    **[S]** Search GitHub <Ctrl+Enter> | **[C]** Clear input <Ctrl+R>
+    **[ S ]** Search GitHub <Ctrl+Enter>  **[ C ]** Clear input <Ctrl+R>
 
 **Example**: solar+steel+frame is passed to GitHub as rivt+solar+steel+frame
 
