@@ -17,6 +17,14 @@ report folder*, unless they are published as stand-alone *docs*. Each *rivt
 file* writes a *doc*. *Reports* are generated from *docs* in the *publish
 folder*.
 
+**Folder Key**
+
+- Required folder and file prefixes names are shown in brackets []. 
+- Single vertical bar (|) identifies files provided by the report author. 
+- Double vertical bar (||) identifies files written by rivtlib 
+- Four vertical bars (||||) mix of author and rivtlib written files
+
+
 .. code-block:: bash
 
     [rivt]-Report-Label/                Report Folder Name
@@ -39,11 +47,11 @@ folder.  Further explanation of the *rivt report folder* is :doc:`here<rvD02-fol
 PDF *doc* files are produced by two different libraries, referred to as *pdf*
 and *pdftex*. A *pdf* doc is formatted using the *rst2pdf* library, a susbset
 of the larger *ReportLab* library. Its advantage is a much smaller 
-library compared to LateX libraries. It is the default *rivt PDF doc*.
+library compared to LaTeX libraries. It is the default PDF *doc*.
 
-A *rivt LaTeX doc* (*pdftex*) requires separate installation of the
-large texlive LaTeX library (approx. 3GB). Its advantage is additional control
-over *doc* formatting and appearance.
+A LaTeX *pdftex doc* requires separate installation of the large *texlive*
+LaTeX library (approx. 3GB). Its advantage is additional control over *doc*
+formatting and appearance.
 
 .. raw:: html
 

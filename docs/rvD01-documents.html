@@ -381,6 +381,13 @@
 report folder</em>, unless they are published as stand-alone <em>docs</em>. Each <em>rivt
 file</em> writes a <em>doc</em>. <em>Reports</em> are generated from <em>docs</em> in the <em>publish
 folder</em>.</p>
+<p><strong>Folder Key</strong></p>
+<ul class="simple">
+<li><p>Required folder and file prefixes names are shown in brackets [].</p></li>
+<li><p>Single vertical bar (|) identifies files provided by the report author.</p></li>
+<li><p>Double vertical bar (||) identifies files written by rivtlib</p></li>
+<li><p>Four vertical bars (||||) mix of author and rivtlib written files</p></li>
+</ul>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt<span class="o">]</span>-Report-Label/<span class="w">                </span>Report<span class="w"> </span>Folder<span class="w"> </span>Name
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename1.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv102-<span class="o">]</span>filename2.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
@@ -401,10 +408,10 @@ folder.  Further explanation of the <em>rivt report folder</em> is <a class="ref
 <p>PDF <em>doc</em> files are produced by two different libraries, referred to as <em>pdf</em>
 and <em>pdftex</em>. A <em>pdf</em> doc is formatted using the <em>rst2pdf</em> library, a susbset
 of the larger <em>ReportLab</em> library. Its advantage is a much smaller
-library compared to LateX libraries. It is the default <em>rivt PDF doc</em>.</p>
-<p>A <em>rivt LaTeX doc</em> (<em>pdftex</em>) requires separate installation of the
-large texlive LaTeX library (approx. 3GB). Its advantage is additional control
-over <em>doc</em> formatting and appearance.</p>
+library compared to LaTeX libraries. It is the default PDF <em>doc</em>.</p>
+<p>A LaTeX <em>pdftex doc</em> requires separate installation of the large <em>texlive</em>
+LaTeX library (approx. 3GB). Its advantage is additional control over <em>doc</em>
+formatting and appearance.</p>
 <p id="api">&lt;i&gt;</p></section>
 <section id="stand-alone-docs">
 <h2><strong>[2]</strong> Stand-alone Docs<a class="headerlink" href="#stand-alone-docs" title="Link to this heading">#</a></h2>
