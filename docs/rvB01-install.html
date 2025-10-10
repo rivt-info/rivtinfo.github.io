@@ -463,16 +463,15 @@ REM lines). The commands may be downloaded and run from the command file
 <span class="linenos">21</span>REM<span class="w"> </span>activate<span class="w"> </span>venv
 <span class="linenos">22</span>call<span class="w"> </span>.venv/scripts/activate
 <span class="linenos">23</span>REM<span class="w"> </span><span class="o">(</span><span class="m">3</span><span class="o">)</span><span class="w"> </span>install<span class="w"> </span>rivt<span class="w"> </span>from<span class="w"> </span>GitHub
-<span class="linenos">24</span>uv<span class="w"> </span>python<span class="w"> </span>install
-<span class="linenos">25</span>uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>git+https://github.com/rivtlib-dev/rivtlib.git@main
-<span class="linenos">26</span>REM<span class="w"> </span><span class="o">(</span><span class="m">4</span><span class="o">)</span><span class="w"> </span>download<span class="w"> </span>example<span class="w"> </span>project<span class="w"> </span>into<span class="w"> </span>new<span class="w"> </span>folder
-<span class="linenos">27</span>mkdir<span class="w"> </span>example1
-<span class="linenos">28</span><span class="nb">cd</span><span class="w"> </span>example1
-<span class="linenos">29</span>curl<span class="w"> </span>https://raw.githubusercontent.com/rivt-info/rivt-simple-doc/refs/heads/main/rv000-simple-doc.py<span class="w"> </span>-O
-<span class="linenos">30</span>curl<span class="w"> </span>https://github.com/rivt-info/rivt-simple-doc/blob/main/beam.png?raw<span class="o">=</span><span class="nb">true</span><span class="w"> </span>-O<span class="w"> </span>-L
-<span class="linenos">31</span>curl<span class="w"> </span>https://github.com/rivt-info/rivt-simple-doc/blob/main/beam1-v.csv?raw<span class="o">=</span><span class="nb">true</span><span class="w"> </span>-O<span class="w"> </span>-L
-<span class="linenos">32</span>REM<span class="w"> </span>run<span class="w"> </span>example<span class="w"> </span><span class="o">(</span>no<span class="w"> </span>quotes<span class="o">)</span><span class="w"> </span><span class="s2">&quot;python rv000-simple-doc.py&quot;</span>
-<span class="linenos">33</span>cmd<span class="w"> </span>/k
+<span class="linenos">24</span>uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>git+https://github.com/rivtlib-dev/rivtlib.git@main
+<span class="linenos">25</span>REM<span class="w"> </span><span class="o">(</span><span class="m">4</span><span class="o">)</span><span class="w"> </span>download<span class="w"> </span>example<span class="w"> </span>project<span class="w"> </span>into<span class="w"> </span>new<span class="w"> </span>folder
+<span class="linenos">26</span>mkdir<span class="w"> </span>example1
+<span class="linenos">27</span><span class="nb">cd</span><span class="w"> </span>example1
+<span class="linenos">28</span>curl<span class="w"> </span>https://raw.githubusercontent.com/rivt-info/rivt-simple-doc/refs/heads/main/rv000-simple-doc.py<span class="w"> </span>-O
+<span class="linenos">29</span>curl<span class="w"> </span>https://github.com/rivt-info/rivt-simple-doc/blob/main/beam.png?raw<span class="o">=</span><span class="nb">true</span><span class="w"> </span>-O<span class="w"> </span>-L
+<span class="linenos">30</span>curl<span class="w"> </span>https://github.com/rivt-info/rivt-simple-doc/blob/main/beam1-v.csv?raw<span class="o">=</span><span class="nb">true</span><span class="w"> </span>-O<span class="w"> </span>-L
+<span class="linenos">31</span>REM<span class="w"> </span>run<span class="w"> </span>example<span class="w"> </span><span class="o">(</span>no<span class="w"> </span>quotes<span class="o">)</span><span class="w"> </span><span class="s2">&quot;python rv000-simple-doc.py&quot;</span>
+<span class="linenos">32</span>cmd<span class="w"> </span>/k
 </pre></div>
 </div>
 <p>Within the <em>example1</em> folder run the rivt file:</p>

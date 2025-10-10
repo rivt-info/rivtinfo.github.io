@@ -21,7 +21,6 @@ uv venv
 REM activate venv
 call .venv/scripts/activate
 REM (3) install rivt from GitHub
-uv python install
 uv pip install git+https://github.com/rivtlib-dev/rivtlib.git@main
 REM (4) download example project into new folder
 mkdir example1
