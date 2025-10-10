@@ -33,7 +33,7 @@ summarizes how it addresses these limitations:
 .. rst-class:: center
 
 
-Table 1 - **Reuse Features**
+Table 1 - **Features**
 
 ============ ========= ======== ======== ========= ========= ============= 
 Program      Rep [1]_  Ver [2]_ Txt [3]_ Comp [4]_  CP [5]_   Collab [6]_  
