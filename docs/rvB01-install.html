@@ -441,39 +441,40 @@ REM lines). The commands may be downloaded and run from the command file
 <li><p>download an example  <em>rivt file</em> and <em>sources</em> into the <em>example1</em> folder</p></li>
 </ol>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span>@echo<span class="w"> </span>on
-<span class="linenos"> 2</span>REM<span class="w"> </span><span class="o">(</span><span class="m">1</span><span class="o">)</span><span class="w"> </span>clear<span class="w"> </span>any<span class="w"> </span>existing<span class="w"> </span>project,<span class="w"> </span><span class="o">(</span><span class="m">2</span><span class="o">)</span><span class="w"> </span>create<span class="w"> </span>new<span class="w"> </span>venv
-<span class="linenos"> 3</span>REM<span class="w"> </span><span class="o">(</span><span class="m">3</span><span class="o">)</span><span class="w"> </span>install<span class="w"> </span>rivt,<span class="w"> </span><span class="o">(</span><span class="m">4</span><span class="o">)</span><span class="w"> </span>download<span class="w"> </span>example
-<span class="linenos"> 4</span>REM<span class="w"> </span><span class="nb">set</span><span class="w"> </span>rivt<span class="w"> </span>folder
-<span class="linenos"> 5</span>SET<span class="w"> </span><span class="nv">rvfolder</span><span class="o">=</span>rivt-doc1
-<span class="linenos"> 6</span>REM<span class="w"> </span>go<span class="w"> </span>to<span class="w"> </span>home<span class="w"> </span>directory
-<span class="linenos"> 7</span><span class="nb">cd</span><span class="w"> </span>%HOMEPATH%
-<span class="linenos"> 8</span>REM<span class="w"> </span>double<span class="w"> </span>check<span class="w"> </span>deactivation
-<span class="linenos"> 9</span>uv<span class="w"> </span>deactivate
-<span class="linenos">10</span>REM<span class="w"> </span>double<span class="w"> </span>check<span class="w"> </span>that<span class="w"> </span>old<span class="w"> </span>project<span class="w"> </span>is<span class="w"> </span>deleted
-<span class="linenos">11</span>rmdir<span class="w"> </span>/s<span class="w"> </span>/q<span class="w"> </span>%rvfolder%
-<span class="linenos">12</span>REM<span class="w"> </span><span class="o">(</span><span class="m">1</span><span class="o">)</span><span class="w"> </span>clean<span class="w"> </span>cache
-<span class="linenos">13</span>uv<span class="w"> </span>cache<span class="w"> </span>clean
-<span class="linenos">14</span>REM<span class="w"> </span><span class="nb">set</span><span class="w"> </span>up<span class="w"> </span>venv
-<span class="linenos">15</span>mkdir<span class="w"> </span>%rvfolder%
-<span class="linenos">16</span>REM<span class="w"> </span>change<span class="w"> </span>directory
-<span class="linenos">17</span><span class="nb">cd</span><span class="w"> </span>%rvfolder%
-<span class="linenos">18</span>REM<span class="w"> </span><span class="o">(</span><span class="m">2</span><span class="o">)</span><span class="w"> </span>make<span class="w"> </span>venv
-<span class="linenos">19</span>uv<span class="w"> </span>venv
-<span class="linenos">20</span>REM<span class="w"> </span>activate<span class="w"> </span>venv
-<span class="linenos">21</span>call<span class="w"> </span>.venv/scripts/activate
-<span class="linenos">22</span>REM<span class="w"> </span><span class="o">(</span><span class="m">3</span><span class="o">)</span><span class="w"> </span>install<span class="w"> </span>rivt<span class="w"> </span>from<span class="w"> </span>GitHub
-<span class="linenos">23</span>uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>git+https://github.com/rivtlib-dev/rivtlib.git@main
-<span class="linenos">24</span>REM<span class="w"> </span><span class="o">(</span><span class="m">4</span><span class="o">)</span><span class="w"> </span>download<span class="w"> </span>example<span class="w"> </span>project<span class="w"> </span>into<span class="w"> </span>new<span class="w"> </span>folder
-<span class="linenos">25</span>mkdir<span class="w"> </span>example1
-<span class="linenos">26</span><span class="nb">cd</span><span class="w"> </span>example1
-<span class="linenos">27</span>curl<span class="w"> </span>https://raw.githubusercontent.com/rivt-info/rivt-simple-single-doc/refs/heads/main/rv0000-simple-single-doc.py<span class="w"> </span>-O
-<span class="linenos">28</span>curl<span class="w"> </span>https://github.com/rivt-info/rivt-simple-single-doc/blob/main/beam.png?raw<span class="o">=</span><span class="nb">true</span><span class="w"> </span>-O<span class="w"> </span>-L
-<span class="linenos">29</span>REM<span class="w"> </span>run<span class="w"> </span>example<span class="w"> </span><span class="o">(</span>no<span class="w"> </span>quotes<span class="o">)</span><span class="w"> </span><span class="s2">&quot;python rv00-simple-single-doc.py&quot;</span>
-<span class="linenos">30</span>cmd<span class="w"> </span>/k
+<span class="linenos"> 2</span>REM<span class="w"> </span>Windows<span class="w"> </span><span class="m">10</span><span class="w"> </span>and<span class="w"> </span>above<span class="w"> </span>-<span class="w"> </span>cmd<span class="w"> </span>file
+<span class="linenos"> 3</span>REM<span class="w"> </span><span class="o">(</span><span class="m">1</span><span class="o">)</span><span class="w"> </span>clear<span class="w"> </span>any<span class="w"> </span>existing<span class="w"> </span>project,<span class="w"> </span><span class="o">(</span><span class="m">2</span><span class="o">)</span><span class="w"> </span>create<span class="w"> </span>new<span class="w"> </span>venv
+<span class="linenos"> 4</span>REM<span class="w"> </span><span class="o">(</span><span class="m">3</span><span class="o">)</span><span class="w"> </span>install<span class="w"> </span>rivt,<span class="w"> </span><span class="o">(</span><span class="m">4</span><span class="o">)</span><span class="w"> </span>download<span class="w"> </span>example
+<span class="linenos"> 5</span>REM<span class="w"> </span><span class="nb">set</span><span class="w"> </span>rivt<span class="w"> </span>folder
+<span class="linenos"> 6</span>SET<span class="w"> </span><span class="nv">rvfolder</span><span class="o">=</span>rivt-doc1
+<span class="linenos"> 7</span>REM<span class="w"> </span>go<span class="w"> </span>to<span class="w"> </span>home<span class="w"> </span>directory
+<span class="linenos"> 8</span><span class="nb">cd</span><span class="w"> </span>%HOMEPATH%
+<span class="linenos"> 9</span>REM<span class="w"> </span>double<span class="w"> </span>check<span class="w"> </span>deactivation
+<span class="linenos">10</span>uv<span class="w"> </span>deactivate
+<span class="linenos">11</span>REM<span class="w"> </span>double<span class="w"> </span>check<span class="w"> </span>that<span class="w"> </span>old<span class="w"> </span>project<span class="w"> </span>is<span class="w"> </span>deleted
+<span class="linenos">12</span>rmdir<span class="w"> </span>/s<span class="w"> </span>/q<span class="w"> </span>%rvfolder%
+<span class="linenos">13</span>REM<span class="w"> </span><span class="o">(</span><span class="m">1</span><span class="o">)</span><span class="w"> </span>clean<span class="w"> </span>cache
+<span class="linenos">14</span>uv<span class="w"> </span>cache<span class="w"> </span>clean
+<span class="linenos">15</span>REM<span class="w"> </span><span class="nb">set</span><span class="w"> </span>up<span class="w"> </span>venv
+<span class="linenos">16</span>mkdir<span class="w"> </span>%rvfolder%
+<span class="linenos">17</span>REM<span class="w"> </span>change<span class="w"> </span>directory
+<span class="linenos">18</span><span class="nb">cd</span><span class="w"> </span>%rvfolder%
+<span class="linenos">19</span>REM<span class="w"> </span><span class="o">(</span><span class="m">2</span><span class="o">)</span><span class="w"> </span>make<span class="w"> </span>venv
+<span class="linenos">20</span>uv<span class="w"> </span>venv
+<span class="linenos">21</span>REM<span class="w"> </span>activate<span class="w"> </span>venv
+<span class="linenos">22</span>call<span class="w"> </span>.venv/scripts/activate
+<span class="linenos">23</span>REM<span class="w"> </span><span class="o">(</span><span class="m">3</span><span class="o">)</span><span class="w"> </span>install<span class="w"> </span>rivt<span class="w"> </span>from<span class="w"> </span>GitHub
+<span class="linenos">24</span>uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>git+https://github.com/rivtlib-dev/rivtlib.git@main
+<span class="linenos">25</span>REM<span class="w"> </span><span class="o">(</span><span class="m">4</span><span class="o">)</span><span class="w"> </span>download<span class="w"> </span>example<span class="w"> </span>project<span class="w"> </span>into<span class="w"> </span>new<span class="w"> </span>folder
+<span class="linenos">26</span>mkdir<span class="w"> </span>example1
+<span class="linenos">27</span><span class="nb">cd</span><span class="w"> </span>example1
+<span class="linenos">28</span>curl<span class="w"> </span>https://raw.githubusercontent.com/rivt-info/rivt-simple-doc/refs/heads/main/rv000-simple-doc.py<span class="w"> </span>-O
+<span class="linenos">29</span>curl<span class="w"> </span>https://github.com/rivt-info/rivt-simple-doc/blob/main/beam.png?raw<span class="o">=</span><span class="nb">true</span><span class="w"> </span>-O<span class="w"> </span>-L
+<span class="linenos">30</span>REM<span class="w"> </span>run<span class="w"> </span>example<span class="w"> </span><span class="o">(</span>no<span class="w"> </span>quotes<span class="o">)</span><span class="w"> </span><span class="s2">&quot;python rv000-simple-doc.py&quot;</span>
+<span class="linenos">31</span>cmd<span class="w"> </span>/k
 </pre></div>
 </div>
 <p>Within the <em>example1</em> folder run the rivt file:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>rv00-simple-single-doc.py
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>rv000-simple-doc.py
 </pre></div>
 </div>
 <p id="api">&lt;i&gt;</p></section>
