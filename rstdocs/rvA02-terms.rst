@@ -53,12 +53,23 @@
   rivt files
     A Python file that imports *rivtlib* and includes *rivt markup*.  
 
+  rivt file
+  rivt files
+    A Python file that imports *rivtlib* and includes *rivt markup*.  
 
   rivt file number 
-    Prefix of rivt file name used to organize a report. It has the form 
+    Prefix of rivt file name used to organize a report (rvDss-). It has the form 
     *rvDss-filename.py* where D is a capital alphanumeric division number 
     and ss is the subdivision number.
 
+
+  rivt folder
+    A folder containing a rivt file and all of its resources in the same folder. 
+    Generally used 
+
+  rivt report folder  
+    A folder containing multiple rivt files to be organized in a report 
+    and resources organized in subfolders
 
   line tag
   line tags

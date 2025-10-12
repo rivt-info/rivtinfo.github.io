@@ -89,34 +89,34 @@ An example *report* folder structure is shown below.
     Expanded folders
 
     [rivt]-Report-Label/                       Report Folder Name                
-        ├── [rv101-]filename1.py               | rivt file
-        ├── [rv102-]filename2.py               | rivt file
-        ├── [rv201-]filename3.py               | rivt file
-        ├── [rv202-]filename4.py               | rivt file        
-        ├── [log]/                             || log files
+        ├── [rv101-]filename1.py                | rivt file
+        ├── [rv102-]filename2.py                | rivt file
+        ├── [rv201-]filename3.py                | rivt file
+        ├── [rv202-]filename4.py                | rivt file        
+        ├── [log]/                              || log files
             ├── rv101-api.rst   
             ├── rv101-log.txt   
             └── rv102-log.txt   
-        ├── [public]/                          || public rivt files                      
-            ├── rv-101-filename1.py            ||  
-            ├── rv-201-filename3.py            ||
-            └── rv-202-filename4.py            || 
-        ├── [publish]/                         || Reports and Docs
+        ├── [public]/                           || public rivt files                      
+            ├── rv-101-filename1.py             ||  
+            ├── rv-201-filename3.py             ||
+            └── rv-202-filename4.py             || 
+        ├── [publish]/                          || Reports and Docs
             ├── [html]/    
-                ├── [docs]/                    || HTML     
-                    ├── _images/               || 
-                    ├── _sources/              ||
-                    ├── _static/               ||   
-                    ├── rv101-filename1.html   || HTML files
-                    ├── rv102-filename2.html   ||                           
-                    ├── rv201-filename3.html   ||                     
-                    ├── rv201-filename4.html   ||
-                    └── index.html             || HTML site           
+                ├── [docs]/                     || HTML     
+                    ├── _images/                || 
+                    ├── _sources/               ||
+                    ├── _static/                ||   
+                    ├── rv101-filename1.html    || HTML files
+                    ├── rv102-filename2.html    ||                           
+                    ├── rv201-filename3.html    ||                     
+                    ├── rv201-filename4.html    ||
+                    └── index.html              || HTML site           
                 ├── rv101-filename1.rst  
                 ├── rv102-filename2.rst  
                 ├── rv201-filename3.rst  
                 └── rv202-filename4.rst  
-            ├── [pdf]/                         || pdf report  
+            ├── [pdf]/                          || pdf report  
                 ├── [src]/                          
                     ├── rv101-filename1.rst
                     ├── rv102-filename2.rst                           
@@ -143,7 +143,9 @@ An example *report* folder structure is shown below.
                 ├── rv102-filename2.txt         || 
                 ├── rv201-filename3.txt         ||
                 ├── rv202-filename4.txt         ||
-                └── README.txt                  || GitHub searchable text report                     
+                └── README.txt                  || GitHub searchable text report
+            ├── [temp]/                         || temp files
+                └── rv01-label3.tex                     
             └── rivt-report.py                  | report generating script
         ├── [src]                               |||| doc source files               
             ├── data/                           | author created folder
@@ -153,7 +155,7 @@ An example *report* folder structure is shown below.
             ├── image/                          | author created folder                
                 ├── fig1.png
                 └── fig2.jpg
-            ├── [style]/                        | doc style files 
+            ├── [Style]/                        | doc style files 
                 ├── [html]/                     | html style files
                     ├── _locale/                 
                     ├── _static/                        
@@ -172,14 +174,12 @@ An example *report* folder structure is shown below.
                     └── rivt.sty              
                 ├── [text]/                      | text ini file
                     └── rv-text.ini        
-            ├── [temp]/                          || temp files
-                └── rv01-label3.tex
-            ├── [tools]/                         |||| functions and output
+            ├── [Tools]/                         |||| functions and output
                 ├── plot.py                               
                 └── loads.py
                 ├── tablepy.csv                               
                 └── imagepy.png          
-            ├── [values]/                        |||| stored values
+            ├── [Values]/                        |||| stored values
                 ├── new-units.py       
                 ├── add-values-v.csv       
                 ├── v101-2.csv
