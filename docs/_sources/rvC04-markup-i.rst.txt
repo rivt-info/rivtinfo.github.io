@@ -272,7 +272,7 @@ outputs: text, pdf, html
 outputs: text, pdf, html
 
 
-**[15]** _[[B]] : indent bold
+**[15]** _[[B]] : bold indent
 ------------------------------------------------
 
 .. raw:: html
@@ -371,27 +371,7 @@ outputs: text, pdf, html
 outputs: pdf, html
 
 
-**[20]** _[[L]] : LaTeX
-------------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic::  _[[L]] 
-    
-    ::
-        
-        _[[L]]
-        text
-        text
-        ...
-        _[[Q]]
-
-outputs: pdf, html
-
-
-**[21]** _[[N]] :  indent
+**[20]** _[[N]] :  indent
 ----------------------------------------------
 
 .. raw:: html
@@ -411,7 +391,7 @@ outputs: pdf, html
 outputs: text, pdf, html
 
 
-**[22]** _[[T]] : topic
+**[21]** _[[T]] : topic
 ------------------------------------------------
 
 .. raw:: html
@@ -428,91 +408,88 @@ outputs: text, pdf, html
         ...
         _[[Q]]
 
-
 outputs: text, pdf, html
 
 
-**[23]** **COMMAND KEY**
+**[22]** **COMMAND KEY**
 ---------------------------
-
-
 
 .. raw:: html
 
     <hr>
 
-
-.. topic:: | COMMAND | relative path | filename | parameters
+.. topic:: | COMMAND | relative path | parameters
 
   example
 
 outputs: types of outputs
 
 
-**[24]** | IMG | - insert image
+**[23]** | IMG | - insert image
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | IMG | path | filename | scale, caption (_[F])
+.. topic:: | IMG | relative path | scale, caption (_[F])
 
-    | IMG | img1 | file1.png | .50, Map _[F]
+    | IMG | src/file1.png | .50, Map _[F]
 
-    Where *img1* references the *i-img1* subfolder of the *source* folder. 
-
-reads PNG and JPEG files (.png, jpg)
+The command reads PNG and JPEG files (.png, jpg). The file path is relative to
+the report folder. 
 
 outputs: PDF, HTML
 
 
-**[25]** | IMG2 | - adjacent images 
+**[24]** | IMG2 | - adjacent images 
 --------------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | IMG2 | path | fname1, fname2 | cap1 (_[F]), cap2 (_[F]), sc1, sc2 
+.. topic:: | IMG2 | rel path1, rel path2| sc1, sc2, cap1 (_[F]), cap2 (_[F])  
 
-    | IMG | rvsource | file1.png, file2.png | .50, .40, Map, Plan
+    | IMG | src/file1.png, src/file2.png | .50, .40, Map, Plan
 
-
-reads PNG and JPEG files (.png, jpg)
+The command reads PNG and JPEG files (.png, jpg). The file path is relative to
+the report folder. 
 
 outputs: PDF, HTML
 
 
-**[26]** | TABLE | - format table
+**[25]** | TABLE | - format table
 ------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | TABLE | path | filename | title (_[T])
+.. topic:: | TABLE | rel path | title (_[T])
 
-    | TABLE | rvsource | file1.csv | Forces _[T]
+    | TABLE | src/file1.csv | Forces _[T]
 
-
-reads text, csv and EXCEL files (.txt, .csv, .xls)
+The command reads reads text, csv and EXCEL files (.txt, .csv, .xls). The file
+path is relative to the report folder.
 
 outputs: text, PDF HTML
 
 
-**[27]** | TEXT | - format text
+**[26]** | TEXT | - format text
 ------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | text | path | filename | normal, literal
+.. topic:: | text | rel path | normal, literal
 
-    | TABLE | rvsource | file1.txt | normal
+    | TABLE | src/file1.txt  | normal
 
-reads text, text and reST files (.txt, .tex, .rst)
+The command reads text and reST files (.txt, .tex, .rst). The parameters
+specify whether the text is wrapped or treated as a literal. The file path is
+relative to the report folder.
 
 outputs: text, PDF HTML
 

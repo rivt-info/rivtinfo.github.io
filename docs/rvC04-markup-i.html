@@ -509,8 +509,8 @@ line and end with _[[Q]] after the last line.</p>
 </aside>
 <p>outputs: text, pdf, html</p>
 </section>
-<section id="b-indent-bold">
-<h2><strong>[15]</strong> _[[B]] : indent bold<a class="headerlink" href="#b-indent-bold" title="Link to this heading">#</a></h2>
+<section id="b-bold-indent">
+<h2><strong>[15]</strong> _[[B]] : bold indent<a class="headerlink" href="#b-bold-indent" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[B]]</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">B</span><span class="p">]]</span>
@@ -580,22 +580,8 @@ _[[Q]]</p>
 </aside>
 <p>outputs: pdf, html</p>
 </section>
-<section id="id1">
-<h2><strong>[20]</strong> _[[L]] : LaTeX<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[[L]]</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">L</span><span class="p">]]</span>
-<span class="n">text</span>
-<span class="n">text</span>
-<span class="o">...</span>
-<span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
-</pre></div>
-</div>
-</aside>
-<p>outputs: pdf, html</p>
-</section>
 <section id="n-indent">
-<h2><strong>[21]</strong> _[[N]] :  indent<a class="headerlink" href="#n-indent" title="Link to this heading">#</a></h2>
+<h2><strong>[20]</strong> _[[N]] :  indent<a class="headerlink" href="#n-indent" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[N]]</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">N</span><span class="p">]]</span> <span class="n">title</span>
@@ -609,7 +595,7 @@ _[[Q]]</p>
 <p>outputs: text, pdf, html</p>
 </section>
 <section id="t-topic">
-<h2><strong>[22]</strong> _[[T]] : topic<a class="headerlink" href="#t-topic" title="Link to this heading">#</a></h2>
+<h2><strong>[21]</strong> _[[T]] : topic<a class="headerlink" href="#t-topic" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[T]] <em>topic</em></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">T</span><span class="p">]]</span> <span class="n">topic</span>
@@ -623,56 +609,60 @@ _[[Q]]</p>
 <p>outputs: text, pdf, html</p>
 </section>
 <section id="command-key">
-<h2><strong>[23]</strong> <strong>COMMAND KEY</strong><a class="headerlink" href="#command-key" title="Link to this heading">#</a></h2>
+<h2><strong>[22]</strong> <strong>COMMAND KEY</strong><a class="headerlink" href="#command-key" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| COMMAND | relative path | filename | parameters</p>
+<p class="topic-title">| COMMAND | relative path | parameters</p>
 <p>example</p>
 </aside>
 <p>outputs: types of outputs</p>
 </section>
 <section id="img-insert-image">
-<h2><strong>[24]</strong> | IMG | - insert image<a class="headerlink" href="#img-insert-image" title="Link to this heading">#</a></h2>
+<h2><strong>[23]</strong> | IMG | - insert image<a class="headerlink" href="#img-insert-image" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| IMG | path | filename | scale, caption (_[F])</p>
+<p class="topic-title">| IMG | relative path | scale, caption (_[F])</p>
 <div class="line-block">
-<div class="line">IMG | img1 | file1.png | .50, Map _[F]</div>
+<div class="line">IMG | src/file1.png | .50, Map _[F]</div>
 </div>
-<p>Where <em>img1</em> references the <em>i-img1</em> subfolder of the <em>source</em> folder.</p>
 </aside>
-<p>reads PNG and JPEG files (.png, jpg)</p>
+<p>The command reads PNG and JPEG files (.png, jpg). The file path is relative to
+the report folder.</p>
 <p>outputs: PDF, HTML</p>
 </section>
 <section id="img2-adjacent-images">
-<h2><strong>[25]</strong> | IMG2 | - adjacent images<a class="headerlink" href="#img2-adjacent-images" title="Link to this heading">#</a></h2>
+<h2><strong>[24]</strong> | IMG2 | - adjacent images<a class="headerlink" href="#img2-adjacent-images" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| IMG2 | path | fname1, fname2 | cap1 (_[F]), cap2 (_[F]), sc1, sc2</p>
+<p class="topic-title">| IMG2 | rel path1, rel path2| sc1, sc2, cap1 (_[F]), cap2 (_[F])</p>
 <div class="line-block">
-<div class="line">IMG | rvsource | file1.png, file2.png | .50, .40, Map, Plan</div>
+<div class="line">IMG | src/file1.png, src/file2.png | .50, .40, Map, Plan</div>
 </div>
 </aside>
-<p>reads PNG and JPEG files (.png, jpg)</p>
+<p>The command reads PNG and JPEG files (.png, jpg). The file path is relative to
+the report folder.</p>
 <p>outputs: PDF, HTML</p>
 </section>
 <section id="table-format-table">
-<h2><strong>[26]</strong> | TABLE | - format table<a class="headerlink" href="#table-format-table" title="Link to this heading">#</a></h2>
+<h2><strong>[25]</strong> | TABLE | - format table<a class="headerlink" href="#table-format-table" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| TABLE | path | filename | title (_[T])</p>
+<p class="topic-title">| TABLE | rel path | title (_[T])</p>
 <div class="line-block">
-<div class="line">TABLE | rvsource | file1.csv | Forces _[T]</div>
+<div class="line">TABLE | src/file1.csv | Forces _[T]</div>
 </div>
 </aside>
-<p>reads text, csv and EXCEL files (.txt, .csv, .xls)</p>
+<p>The command reads reads text, csv and EXCEL files (.txt, .csv, .xls). The file
+path is relative to the report folder.</p>
 <p>outputs: text, PDF HTML</p>
 </section>
 <section id="text-format-text">
-<h2><strong>[27]</strong> | TEXT | - format text<a class="headerlink" href="#text-format-text" title="Link to this heading">#</a></h2>
+<h2><strong>[26]</strong> | TEXT | - format text<a class="headerlink" href="#text-format-text" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| text | path | filename | normal, literal</p>
+<p class="topic-title">| text | rel path | normal, literal</p>
 <div class="line-block">
-<div class="line">TABLE | rvsource | file1.txt | normal</div>
+<div class="line">TABLE | src/file1.txt  | normal</div>
 </div>
 </aside>
-<p>reads text, text and reST files (.txt, .tex, .rst)</p>
+<p>The command reads text and reST files (.txt, .tex, .rst). The parameters
+specify whether the text is wrapped or treated as a literal. The file path is
+relative to the report folder.</p>
 <p>outputs: text, PDF HTML</p>
 </section>
 </section>
@@ -738,19 +728,18 @@ _[[Q]]</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#m-math-equation"><strong>[12]</strong> _[M] : math equation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-table-label"><strong>[13]</strong> _[T] : table label</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-new-page"><strong>[14]</strong> _[P] : new page</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-indent-bold"><strong>[15]</strong> _[[B]] : indent bold</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-bold-indent"><strong>[15]</strong> _[[B]] : bold indent</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-code-or-literal-text"><strong>[16]</strong> _[[C]] : code or literal text</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#l-latex"><strong>[17]</strong> _[[L]] : LaTeX</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e-endnote-text"><strong>[18]</strong> _[[E]] : endnote text</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-indent-italic"><strong>[19]</strong> _[[I]] : indent italic</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><strong>[20]</strong> _[[L]] : LaTeX</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#n-indent"><strong>[21]</strong> _[[N]] :  indent</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-topic"><strong>[22]</strong> _[[T]] : topic</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#command-key"><strong>[23]</strong> <strong>COMMAND KEY</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img-insert-image"><strong>[24]</strong> | IMG | - insert image</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img2-adjacent-images"><strong>[25]</strong> | IMG2 | - adjacent images</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-format-table"><strong>[26]</strong> | TABLE | - format table</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-format-text"><strong>[27]</strong> | TEXT | - format text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#n-indent"><strong>[20]</strong> _[[N]] :  indent</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-topic"><strong>[21]</strong> _[[T]] : topic</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#command-key"><strong>[22]</strong> <strong>COMMAND KEY</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img-insert-image"><strong>[23]</strong> | IMG | - insert image</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img2-adjacent-images"><strong>[24]</strong> | IMG2 | - adjacent images</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-format-table"><strong>[25]</strong> | TABLE | - format table</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-format-text"><strong>[26]</strong> | TEXT | - format text</a></li>
 </ul>
   </nav></div>
 
