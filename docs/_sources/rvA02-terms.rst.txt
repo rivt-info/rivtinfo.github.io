@@ -48,11 +48,6 @@
   rivt string
     Triple quoted string argument to an API function.
 
-
-  rivt file
-  rivt files
-    A Python file that imports *rivtlib* and includes *rivt markup*.  
-
   rivt file
   rivt files
     A Python file that imports *rivtlib* and includes *rivt markup*.  
@@ -61,7 +56,6 @@
     Prefix of rivt file name used to organize a report (rvDss-). It has the form 
     *rvDss-filename.py* where D is a capital alphanumeric division number 
     and ss is the subdivision number.
-
 
   rivt folder
     A folder containing a rivt file and all of its resources in the same folder. 
@@ -75,12 +69,10 @@
   line tags
     A line tag has the form **_[TAG]** and formats a line of text. 
 
-
   block tag
   block tags
     A block tag formats a block of text that begins with **_[[TAG]]**
     and terminates with **_[[Q]]**. 
-
 
   command
   commands 
@@ -96,7 +88,6 @@
     the file is a  *single doc* the alias *rvlocal* specifies that the 
     sources are stored in the same folder as the *rivt file*. 
 
-
   single doc 
   single docs 
     A document that is not part of a report. It may be
@@ -104,11 +95,9 @@
     rather than the *source* subfolder. In this case command files and *docs* are
     are read and written to the *rivt file* folder.
 
-
   report
   reports
-    A report is a group of compiled *docs* organized by rivt file number. 
-
+    A group of compiled *docs* organized by rivt file number. 
 
   report folder
   report folders

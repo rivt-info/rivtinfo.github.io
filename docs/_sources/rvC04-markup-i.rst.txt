@@ -12,9 +12,9 @@
 
     <hr>
 
-*line tags* format a line of text and are denoted with _[TAG], usually at the
-end of the line. *Block tags* format a block of text that begin with _[[TAG]]
-on the first line and end with _[[Q]] after the last line.
+*line tags* format a line of text and are denoted with _[TAG] at the end of the
+line. *Block tags* format a block of text that begin with _[[TAG]] on the first
+line and end with _[[Q]] after the last line.
 
 _[TAG] : line tag description
 
@@ -26,7 +26,7 @@ _[TAG] : line tag description
 
    example
 
-types of output
+outputs: types of output
 
 
 _[[TAG]] : block tag description
@@ -35,7 +35,7 @@ _[[TAG]] : block tag description
 
     example
 
-types of output
+outputs: types of output
 
 
 .. raw:: html
@@ -43,8 +43,8 @@ types of output
     <hr>
 
 
-**[2]** _[#] :  numbered endnote
-----------------------------------------
+**[2]** _[#] :  endnote number
+-------------------------------------
 
 .. raw:: html
 
@@ -52,25 +52,24 @@ types of output
     <p style="text-align: right;"> &lt;i&gt; </p>
 
 
-.. topic:: *text* _[#] text
+.. topic:: *text* _[#] 
     
    end of text with auto endnote. _[#]
 
-text, pdf, html
+outputs: text, pdf, html
 
-**[3]** _[D] :  footnote text
--------------------------------------------    
 
+**[3]** __ : horizontal line
+--------------------------------------- 
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
-.. topic:: *endnote* _[D]
+.. topic:: 4 or more underscores ____ 
 
-   endnote - assigned in order _[D]
-
-text, pdf, html
+    ____    
+    
+outputs: text, pdf, html
 
 
 **[4]** _[B] :  center, bold
@@ -85,7 +84,7 @@ text, pdf, html
 
     This text will be bold and centered _[B]
 
-pdf, html
+outputs: pdf, html
 
 
 **[5]** _[C] :   center 
@@ -99,10 +98,10 @@ pdf, html
 
     This text will be centered _[C]
 
-pdf, html
+outputs: text, pdf, html
 
 
-**[06]** _[E] : label equation
+**[6]** _[E] : label equation
 -----------------------------------------
 
 .. raw:: html
@@ -113,10 +112,10 @@ pdf, html
 
    An autonumbered equation label _[E]
 
-text, pdf, html
+outputs: text, pdf, html
 
 
-**[07]** _[F] : label figure 
+**[7]** _[F] : label figure 
 -----------------------------------------
 
 .. raw:: html
@@ -127,53 +126,10 @@ text, pdf, html
 
    An autonumbered figure label _[E]
 
-text, pdf, html
+outputs: text, pdf, html
 
 
-**[08]** _[L] :  section link 
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *text* _[LD] doc link
-    
-    text at end of line _[LD] section number, link label
-
-text, pdf, html
-
-
-**[09]** _[P] : new page
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: _[P]
-
-    this will start a new page _[P]
-
-text, pdf, html
-
-
-
-**[10]** _[R] :  report link 
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *text* _[R] report link 
-    
-    text at end of line _[R] doc-file-name, link label
-
-text, pdf, html
-
-
-**[11]** _[S] : sympy equation
+**[8]** _[M] : math equation
 -----------------------------------------
 
 .. raw:: html
@@ -184,10 +140,11 @@ text, pdf, html
 
     f(x) = sin(x) + y/5 _[S]
 
-text, pdf, html
+
+outputs: text, pdf, html
 
 
-**[12]** _[T]  label table
+**[9]** _[T]  table label
 ------------------------------------------
 
 .. raw:: html
@@ -198,10 +155,42 @@ text, pdf, html
 
    An autonumbered table title _[T]
 
-text, pdf, html
+outputs: text, pdf, html
 
 
-**[13]** _[U] :  url link 
+**[10]** _[L] :  link *sections* 
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *text* _[L] doc link
+    
+    *text* _[L] section number, link label
+
+Links *sections* within a *doc*
+
+outputs: text, pdf, html
+
+
+**[11]** _[D] :  link *docs*
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *text* _[D] report link 
+    
+    text at end of line _[D] doc-file-name, link label
+
+Links *docs* within a report
+
+outputs: text, pdf, html
+
+
+**[12]** _[U] :  link *urls*
 -----------------------------------------
 
 .. raw:: html
@@ -212,23 +201,24 @@ text, pdf, html
     
     text at end of line _[U] urlname, link label
 
-text, pdf, html
+outputs: text, pdf, html
 
 
-**[15]** __ : line
---------------------------------------- 
+**[13]** _[P] : new page
+-----------------------------------------
+
 .. raw:: html
 
     <hr>
 
-.. topic:: 4 or more underscores ____ 
+.. topic:: _[P]
 
-   ____    
-    
-text, pdf, html
+    this will start a new page _[P]
+
+outputs: text, pdf, html
 
 
-**[16]** _[[B]] : indent bold
+**[14]** _[[B]] : indent bold
 ------------------------------------------------
 
 .. raw:: html
@@ -245,10 +235,10 @@ text, pdf, html
         ...
         _[[Q]]
 
-text, pdf, html
+outputs: text, pdf, html
 
 
-**[17]** _[[C]] : code or literal text
+**[15]** _[[C]] : code or literal text
 ------------------------------------------------
 
 .. raw:: html
@@ -265,10 +255,10 @@ text, pdf, html
         ...
         _[[Q]]
 
-text, pdf, html
+outputs: text, pdf, html
 
 
-**[18]** _[[L]] : LaTeX
+**[16]** _[[L]] : LaTeX
 ------------------------------------------------
 
 .. raw:: html
@@ -285,10 +275,10 @@ text, pdf, html
         ...
         _[[Q]]
 
-pdf, html
+outputs: pdf, html
 
 
-**[19]** _[[T]] : topic
+**[17]** _[[T]] : topic
 ------------------------------------------------
 
 .. raw:: html
@@ -305,11 +295,11 @@ pdf, html
         _[[Q]]
 
 
-text, pdf, html
+outputs: text, pdf, html
 
 
 
-**[20]** _[[C]] : code or literal
+**[18]** _[[C]] : code or literal
 ------------------------------------------------
 
 .. raw:: html
@@ -326,10 +316,29 @@ text, pdf, html
         ...
         _[[Q]]
 
-text, pdf, html
+outputs: text, pdf, html
 
 
-**[21]** _[[I]] : indent italic
+**[19]** _[[E]] :  endnote text
+-------------------------------------------    
+
+.. raw:: html
+
+    <hr>
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+.. topic:: _[[E]] 
+    ::
+   
+        _[[E]]
+        this is an endnote - assigned in order of
+        of endnote line tags [#]
+        _[[Q]] 
+
+outputs: text, pdf, html
+
+
+**[20]** _[[I]] : indent italic
 ------------------------------------------------
 
 .. raw:: html
@@ -346,10 +355,10 @@ text, pdf, html
         ...
         _[[Q]]
 
-text, pdf, html
+outputs: pdf, html
 
 
-**[22]** _[[L]] : LaTeX
+**[21]** _[[L]] : LaTeX
 ------------------------------------------------
 
 .. raw:: html
@@ -366,9 +375,10 @@ text, pdf, html
         ...
         _[[Q]]
 
-    pdf, html
+outputs: pdf, html
 
-**[23]** _[[N]] :  indent
+
+**[22]** _[[N]] :  indent
 ----------------------------------------------
 
 .. raw:: html
@@ -385,10 +395,10 @@ text, pdf, html
         ...
         _[[Q]]
 
-text, pdf, html
+outputs: text, pdf, html
 
 
-**[24]** _[[T]] : topic
+**[23]** _[[T]] : topic
 ------------------------------------------------
 
 .. raw:: html
@@ -406,10 +416,10 @@ text, pdf, html
         _[[Q]]
 
 
-text, pdf, html
+outputs: text, pdf, html
 
 
-**[25]** **COMMAND KEY**
+**[24]** **COMMAND KEY**
 ---------------------------
 
 
@@ -423,10 +433,10 @@ text, pdf, html
 
   example
 
-file types
+outputs: types of outputs
 
 
-**[26]** | IMG | - insert image
+**[25]** | IMG | - insert image
 -------------------------------------------
 
 .. raw:: html
@@ -441,10 +451,10 @@ file types
 
 reads PNG and JPEG files (.png, jpg)
 
-text (file ref. only), PDF, HTML
+outputs: PDF, HTML
 
 
-**[27]** | IMG2 | - adjacent images 
+**[26]** | IMG2 | - adjacent images 
 --------------------------------------------------
 
 .. raw:: html
@@ -458,10 +468,10 @@ text (file ref. only), PDF, HTML
 
 reads PNG and JPEG files (.png, jpg)
 
-text, PDF, HTML
+outputs: PDF, HTML
 
 
-**[28]** | TABLE | - format table
+**[27]** | TABLE | - format table
 ------------------------------------------
 
 .. raw:: html
@@ -475,10 +485,10 @@ text, PDF, HTML
 
 reads text, csv and EXCEL files (.txt, .csv, .xls)
 
-PDF, HTML, text
+outputs: text, PDF HTML
 
 
-**[29]** | TEXT | - format text
+**[28]** | TEXT | - format text
 ------------------------------------------
 
 .. raw:: html
@@ -491,5 +501,5 @@ PDF, HTML, text
 
 reads text, text and reST files (.txt, .tex, .rst)
 
-PDF, HTML, text
+outputs: text, PDF HTML
 

@@ -385,39 +385,37 @@
 <h1><strong>C.4 Insert - rv.I</strong><a class="headerlink" href="#c-4-insert-rv-i" title="Link to this heading">#</a></h1>
 <p id="api">&lt;i&gt;</p><section id="tag-key">
 <h2><strong>[1]</strong> <strong>TAG KEY</strong><a class="headerlink" href="#tag-key" title="Link to this heading">#</a></h2>
-<hr><p><em>line tags</em> format a line of text and are denoted with _[TAG], usually at the
-end of the line. <em>Block tags</em> format a block of text that begin with _[[TAG]]
-on the first line and end with _[[Q]] after the last line.</p>
+<hr><p><em>line tags</em> format a line of text and are denoted with _[TAG] at the end of the
+line. <em>Block tags</em> format a block of text that begin with _[[TAG]] on the first
+line and end with _[[Q]] after the last line.</p>
 <p>_[TAG] : line tag description</p>
 <hr><aside class="topic">
 <p class="topic-title">syntax : description</p>
 <p>example</p>
 </aside>
-<p>types of output</p>
+<p>outputs: types of output</p>
 <p>_[[TAG]] : block tag description</p>
 <aside class="topic">
 <p class="topic-title">syntax : description</p>
 <p>example</p>
 </aside>
-<p>types of output</p>
+<p>outputs: types of output</p>
 <hr></section>
-<section id="numbered-endnote">
-<h2><strong>[2]</strong> _[#] :  numbered endnote<a class="headerlink" href="#numbered-endnote" title="Link to this heading">#</a></h2>
+<section id="endnote-number">
+<h2><strong>[2]</strong> _[#] :  endnote number<a class="headerlink" href="#endnote-number" title="Link to this heading">#</a></h2>
 <hr>
 <p style="text-align: right;"> &lt;i&gt; </p><aside class="topic">
-<p class="topic-title"><em>text</em> _[#] text</p>
+<p class="topic-title"><em>text</em> _[#]</p>
 <p>end of text with auto endnote. _[#]</p>
 </aside>
-<p>text, pdf, html</p>
+<p>outputs: text, pdf, html</p>
 </section>
-<section id="d-footnote-text">
-<h2><strong>[3]</strong> _[D] :  footnote text<a class="headerlink" href="#d-footnote-text" title="Link to this heading">#</a></h2>
-<hr>
-<p style="text-align: right;"> &lt;i&gt; </p><aside class="topic">
-<p class="topic-title"><em>endnote</em> _[D]</p>
-<p>endnote - assigned in order _[D]</p>
+<section id="horizontal-line">
+<h2><strong>[3]</strong> __ : horizontal line<a class="headerlink" href="#horizontal-line" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">4 or more underscores ____</p>
 </aside>
-<p>text, pdf, html</p>
+<p>outputs: text, pdf, html</p>
 </section>
 <section id="b-center-bold">
 <h2><strong>[4]</strong> _[B] :  center, bold<a class="headerlink" href="#b-center-bold" title="Link to this heading">#</a></h2>
@@ -426,7 +424,7 @@ on the first line and end with _[[Q]] after the last line.</p>
 <p class="topic-title"><em>text</em> _[B]</p>
 <p>This text will be bold and centered _[B]</p>
 </aside>
-<p>pdf, html</p>
+<p>outputs: pdf, html</p>
 </section>
 <section id="c-center">
 <h2><strong>[5]</strong> _[C] :   center<a class="headerlink" href="#c-center" title="Link to this heading">#</a></h2>
@@ -434,81 +432,76 @@ on the first line and end with _[[Q]] after the last line.</p>
 <p class="topic-title"><em>text</em> _[C]</p>
 <p>This text will be centered _[C]</p>
 </aside>
-<p>pdf, html</p>
+<p>outputs: text, pdf, html</p>
 </section>
 <section id="e-label-equation">
-<h2><strong>[06]</strong> _[E] : label equation<a class="headerlink" href="#e-label-equation" title="Link to this heading">#</a></h2>
+<h2><strong>[6]</strong> _[E] : label equation<a class="headerlink" href="#e-label-equation" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title"><em>equation label</em> _[E]</p>
 <p>An autonumbered equation label _[E]</p>
 </aside>
-<p>text, pdf, html</p>
+<p>outputs: text, pdf, html</p>
 </section>
 <section id="f-label-figure">
-<h2><strong>[07]</strong> _[F] : label figure<a class="headerlink" href="#f-label-figure" title="Link to this heading">#</a></h2>
+<h2><strong>[7]</strong> _[F] : label figure<a class="headerlink" href="#f-label-figure" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title"><em>caption</em> _[F]</p>
 <p>An autonumbered figure label _[E]</p>
 </aside>
-<p>text, pdf, html</p>
+<p>outputs: text, pdf, html</p>
 </section>
-<section id="l-section-link">
-<h2><strong>[08]</strong> _[L] :  section link<a class="headerlink" href="#l-section-link" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title"><em>text</em> _[LD] doc link</p>
-<p>text at end of line _[LD] section number, link label</p>
-</aside>
-<p>text, pdf, html</p>
-</section>
-<section id="p-new-page">
-<h2><strong>[09]</strong> _[P] : new page<a class="headerlink" href="#p-new-page" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[P]</p>
-<p>this will start a new page _[P]</p>
-</aside>
-<p>text, pdf, html</p>
-</section>
-<section id="r-report-link">
-<h2><strong>[10]</strong> _[R] :  report link<a class="headerlink" href="#r-report-link" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title"><em>text</em> _[R] report link</p>
-<p>text at end of line _[R] doc-file-name, link label</p>
-</aside>
-<p>text, pdf, html</p>
-</section>
-<section id="s-sympy-equation">
-<h2><strong>[11]</strong> _[S] : sympy equation<a class="headerlink" href="#s-sympy-equation" title="Link to this heading">#</a></h2>
+<section id="m-math-equation">
+<h2><strong>[8]</strong> _[M] : math equation<a class="headerlink" href="#m-math-equation" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title"><em>equation</em> _[S]</p>
 <p>f(x) = sin(x) + y/5 _[S]</p>
 </aside>
-<p>text, pdf, html</p>
+<p>outputs: text, pdf, html</p>
 </section>
-<section id="t-label-table">
-<h2><strong>[12]</strong> _[T]  label table<a class="headerlink" href="#t-label-table" title="Link to this heading">#</a></h2>
+<section id="t-table-label">
+<h2><strong>[9]</strong> _[T]  table label<a class="headerlink" href="#t-table-label" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title"><em>title</em> _[T]</p>
 <p>An autonumbered table title _[T]</p>
 </aside>
-<p>text, pdf, html</p>
+<p>outputs: text, pdf, html</p>
 </section>
-<section id="u-url-link">
-<h2><strong>[13]</strong> _[U] :  url link<a class="headerlink" href="#u-url-link" title="Link to this heading">#</a></h2>
+<section id="l-link-sections">
+<h2><strong>[10]</strong> _[L] :  link <em>sections</em><a class="headerlink" href="#l-link-sections" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title"><em>text</em> _[L] doc link</p>
+<p><em>text</em> _[L] section number, link label</p>
+</aside>
+<p>Links <em>sections</em> within a <em>doc</em></p>
+<p>outputs: text, pdf, html</p>
+</section>
+<section id="d-link-docs">
+<h2><strong>[11]</strong> _[D] :  link <em>docs</em><a class="headerlink" href="#d-link-docs" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title"><em>text</em> _[D] report link</p>
+<p>text at end of line _[D] doc-file-name, link label</p>
+</aside>
+<p>Links <em>docs</em> within a report</p>
+<p>outputs: text, pdf, html</p>
+</section>
+<section id="u-link-urls">
+<h2><strong>[12]</strong> _[U] :  link <em>urls</em><a class="headerlink" href="#u-link-urls" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title"><em>text</em> _[U] url link</p>
 <p>text at end of line _[U] urlname, link label</p>
 </aside>
-<p>text, pdf, html</p>
+<p>outputs: text, pdf, html</p>
 </section>
-<section id="line">
-<h2><strong>[15]</strong> __ : line<a class="headerlink" href="#line" title="Link to this heading">#</a></h2>
+<section id="p-new-page">
+<h2><strong>[13]</strong> _[P] : new page<a class="headerlink" href="#p-new-page" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">4 or more underscores ____</p>
+<p class="topic-title">_[P]</p>
+<p>this will start a new page _[P]</p>
 </aside>
-<p>text, pdf, html</p>
+<p>outputs: text, pdf, html</p>
 </section>
 <section id="b-indent-bold">
-<h2><strong>[16]</strong> _[[B]] : indent bold<a class="headerlink" href="#b-indent-bold" title="Link to this heading">#</a></h2>
+<h2><strong>[14]</strong> _[[B]] : indent bold<a class="headerlink" href="#b-indent-bold" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[B]]</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">B</span><span class="p">]]</span>
@@ -519,10 +512,10 @@ on the first line and end with _[[Q]] after the last line.</p>
 </pre></div>
 </div>
 </aside>
-<p>text, pdf, html</p>
+<p>outputs: text, pdf, html</p>
 </section>
 <section id="c-code-or-literal-text">
-<h2><strong>[17]</strong> _[[C]] : code or literal text<a class="headerlink" href="#c-code-or-literal-text" title="Link to this heading">#</a></h2>
+<h2><strong>[15]</strong> _[[C]] : code or literal text<a class="headerlink" href="#c-code-or-literal-text" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[C]] <em>language</em></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">C</span><span class="p">]]</span> <span class="n">python</span>
@@ -533,10 +526,10 @@ on the first line and end with _[[Q]] after the last line.</p>
 </pre></div>
 </div>
 </aside>
-<p>text, pdf, html</p>
+<p>outputs: text, pdf, html</p>
 </section>
 <section id="l-latex">
-<h2><strong>[18]</strong> _[[L]] : LaTeX<a class="headerlink" href="#l-latex" title="Link to this heading">#</a></h2>
+<h2><strong>[16]</strong> _[[L]] : LaTeX<a class="headerlink" href="#l-latex" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[L]]</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">L</span><span class="p">]]</span>
@@ -547,10 +540,10 @@ on the first line and end with _[[Q]] after the last line.</p>
 </pre></div>
 </div>
 </aside>
-<p>pdf, html</p>
+<p>outputs: pdf, html</p>
 </section>
 <section id="t-topic">
-<h2><strong>[19]</strong> _[[T]] : topic<a class="headerlink" href="#t-topic" title="Link to this heading">#</a></h2>
+<h2><strong>[17]</strong> _[[T]] : topic<a class="headerlink" href="#t-topic" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[T]] <em>topic</em></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">T</span><span class="p">]]</span> <span class="n">this</span> <span class="n">a</span> <span class="n">topic</span> <span class="n">title</span> <span class="p">:</span> <span class="n">after</span> <span class="n">colon</span> <span class="n">will</span> <span class="n">be</span> <span class="n">italic</span>
@@ -560,10 +553,10 @@ on the first line and end with _[[Q]] after the last line.</p>
 </pre></div>
 </div>
 </aside>
-<p>text, pdf, html</p>
+<p>outputs: text, pdf, html</p>
 </section>
 <section id="c-code-or-literal">
-<h2><strong>[20]</strong> _[[C]] : code or literal<a class="headerlink" href="#c-code-or-literal" title="Link to this heading">#</a></h2>
+<h2><strong>[18]</strong> _[[C]] : code or literal<a class="headerlink" href="#c-code-or-literal" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[C]] <em>language</em></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">C</span><span class="p">]]</span>
@@ -574,10 +567,25 @@ on the first line and end with _[[Q]] after the last line.</p>
 </pre></div>
 </div>
 </aside>
-<p>text, pdf, html</p>
+<p>outputs: text, pdf, html</p>
+</section>
+<section id="e-endnote-text">
+<h2><strong>[19]</strong> _[[E]] :  endnote text<a class="headerlink" href="#e-endnote-text" title="Link to this heading">#</a></h2>
+<hr>
+<p style="text-align: right;"> &lt;i&gt; </p><aside class="topic">
+<p class="topic-title">_[[E]]
+::</p>
+<blockquote>
+<div><p>_[[E]]
+this is an endnote - assigned in order of
+of endnote line tags [#]
+_[[Q]]</p>
+</div></blockquote>
+</aside>
+<p>outputs: text, pdf, html</p>
 </section>
 <section id="i-indent-italic">
-<h2><strong>[21]</strong> _[[I]] : indent italic<a class="headerlink" href="#i-indent-italic" title="Link to this heading">#</a></h2>
+<h2><strong>[20]</strong> _[[I]] : indent italic<a class="headerlink" href="#i-indent-italic" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[I]]</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">I</span><span class="p">]]</span>
@@ -588,10 +596,10 @@ on the first line and end with _[[Q]] after the last line.</p>
 </pre></div>
 </div>
 </aside>
-<p>text, pdf, html</p>
+<p>outputs: pdf, html</p>
 </section>
 <section id="id1">
-<h2><strong>[22]</strong> _[[L]] : LaTeX<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<h2><strong>[21]</strong> _[[L]] : LaTeX<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[L]]</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">L</span><span class="p">]]</span>
@@ -601,11 +609,11 @@ on the first line and end with _[[Q]] after the last line.</p>
 <span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
 </pre></div>
 </div>
-<p>pdf, html</p>
 </aside>
+<p>outputs: pdf, html</p>
 </section>
 <section id="n-indent">
-<h2><strong>[23]</strong> _[[N]] :  indent<a class="headerlink" href="#n-indent" title="Link to this heading">#</a></h2>
+<h2><strong>[22]</strong> _[[N]] :  indent<a class="headerlink" href="#n-indent" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[N]]</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">N</span><span class="p">]]</span> <span class="n">title</span>
@@ -616,10 +624,10 @@ on the first line and end with _[[Q]] after the last line.</p>
 </pre></div>
 </div>
 </aside>
-<p>text, pdf, html</p>
+<p>outputs: text, pdf, html</p>
 </section>
 <section id="id2">
-<h2><strong>[24]</strong> _[[T]] : topic<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<h2><strong>[23]</strong> _[[T]] : topic<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[T]] <em>topic</em></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">T</span><span class="p">]]</span> <span class="n">topic</span>
@@ -630,18 +638,18 @@ on the first line and end with _[[Q]] after the last line.</p>
 </pre></div>
 </div>
 </aside>
-<p>text, pdf, html</p>
+<p>outputs: text, pdf, html</p>
 </section>
 <section id="command-key">
-<h2><strong>[25]</strong> <strong>COMMAND KEY</strong><a class="headerlink" href="#command-key" title="Link to this heading">#</a></h2>
+<h2><strong>[24]</strong> <strong>COMMAND KEY</strong><a class="headerlink" href="#command-key" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| COMMAND | relative path | filename | parameters</p>
 <p>example</p>
 </aside>
-<p>file types</p>
+<p>outputs: types of outputs</p>
 </section>
 <section id="img-insert-image">
-<h2><strong>[26]</strong> | IMG | - insert image<a class="headerlink" href="#img-insert-image" title="Link to this heading">#</a></h2>
+<h2><strong>[25]</strong> | IMG | - insert image<a class="headerlink" href="#img-insert-image" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| IMG | path | filename | scale, caption (_[F])</p>
 <div class="line-block">
@@ -650,10 +658,10 @@ on the first line and end with _[[Q]] after the last line.</p>
 <p>Where <em>img1</em> references the <em>i-img1</em> subfolder of the <em>source</em> folder.</p>
 </aside>
 <p>reads PNG and JPEG files (.png, jpg)</p>
-<p>text (file ref. only), PDF, HTML</p>
+<p>outputs: PDF, HTML</p>
 </section>
 <section id="img2-adjacent-images">
-<h2><strong>[27]</strong> | IMG2 | - adjacent images<a class="headerlink" href="#img2-adjacent-images" title="Link to this heading">#</a></h2>
+<h2><strong>[26]</strong> | IMG2 | - adjacent images<a class="headerlink" href="#img2-adjacent-images" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| IMG2 | path | fname1, fname2 | cap1 (_[F]), cap2 (_[F]), sc1, sc2</p>
 <div class="line-block">
@@ -661,10 +669,10 @@ on the first line and end with _[[Q]] after the last line.</p>
 </div>
 </aside>
 <p>reads PNG and JPEG files (.png, jpg)</p>
-<p>text, PDF, HTML</p>
+<p>outputs: PDF, HTML</p>
 </section>
 <section id="table-format-table">
-<h2><strong>[28]</strong> | TABLE | - format table<a class="headerlink" href="#table-format-table" title="Link to this heading">#</a></h2>
+<h2><strong>[27]</strong> | TABLE | - format table<a class="headerlink" href="#table-format-table" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| TABLE | path | filename | title (_[T])</p>
 <div class="line-block">
@@ -672,10 +680,10 @@ on the first line and end with _[[Q]] after the last line.</p>
 </div>
 </aside>
 <p>reads text, csv and EXCEL files (.txt, .csv, .xls)</p>
-<p>PDF, HTML, text</p>
+<p>outputs: text, PDF HTML</p>
 </section>
 <section id="text-format-text">
-<h2><strong>[29]</strong> | TEXT | - format text<a class="headerlink" href="#text-format-text" title="Link to this heading">#</a></h2>
+<h2><strong>[28]</strong> | TEXT | - format text<a class="headerlink" href="#text-format-text" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| text | path | filename | normal, literal</p>
 <div class="line-block">
@@ -683,7 +691,7 @@ on the first line and end with _[[Q]] after the last line.</p>
 </div>
 </aside>
 <p>reads text, text and reST files (.txt, .tex, .rst)</p>
-<p>PDF, HTML, text</p>
+<p>outputs: text, PDF HTML</p>
 </section>
 </section>
 
@@ -735,33 +743,33 @@ on the first line and end with _[[Q]] after the last line.</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tag-key"><strong>[1]</strong> <strong>TAG KEY</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#numbered-endnote"><strong>[2]</strong> _[#] :  numbered endnote</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-footnote-text"><strong>[3]</strong> _[D] :  footnote text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#endnote-number"><strong>[2]</strong> _[#] :  endnote number</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#horizontal-line"><strong>[3]</strong> __ : horizontal line</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-center-bold"><strong>[4]</strong> _[B] :  center, bold</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-center"><strong>[5]</strong> _[C] :   center</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e-label-equation"><strong>[06]</strong> _[E] : label equation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#f-label-figure"><strong>[07]</strong> _[F] : label figure</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#l-section-link"><strong>[08]</strong> _[L] :  section link</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-new-page"><strong>[09]</strong> _[P] : new page</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#r-report-link"><strong>[10]</strong> _[R] :  report link</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#s-sympy-equation"><strong>[11]</strong> _[S] : sympy equation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-label-table"><strong>[12]</strong> _[T]  label table</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#u-url-link"><strong>[13]</strong> _[U] :  url link</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#line"><strong>[15]</strong> __ : line</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-indent-bold"><strong>[16]</strong> _[[B]] : indent bold</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-code-or-literal-text"><strong>[17]</strong> _[[C]] : code or literal text</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#l-latex"><strong>[18]</strong> _[[L]] : LaTeX</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-topic"><strong>[19]</strong> _[[T]] : topic</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-code-or-literal"><strong>[20]</strong> _[[C]] : code or literal</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-indent-italic"><strong>[21]</strong> _[[I]] : indent italic</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><strong>[22]</strong> _[[L]] : LaTeX</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#n-indent"><strong>[23]</strong> _[[N]] :  indent</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><strong>[24]</strong> _[[T]] : topic</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#command-key"><strong>[25]</strong> <strong>COMMAND KEY</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img-insert-image"><strong>[26]</strong> | IMG | - insert image</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img2-adjacent-images"><strong>[27]</strong> | IMG2 | - adjacent images</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-format-table"><strong>[28]</strong> | TABLE | - format table</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-format-text"><strong>[29]</strong> | TEXT | - format text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e-label-equation"><strong>[6]</strong> _[E] : label equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#f-label-figure"><strong>[7]</strong> _[F] : label figure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#m-math-equation"><strong>[8]</strong> _[M] : math equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-table-label"><strong>[9]</strong> _[T]  table label</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#l-link-sections"><strong>[10]</strong> _[L] :  link <em>sections</em></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-link-docs"><strong>[11]</strong> _[D] :  link <em>docs</em></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#u-link-urls"><strong>[12]</strong> _[U] :  link <em>urls</em></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-new-page"><strong>[13]</strong> _[P] : new page</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-indent-bold"><strong>[14]</strong> _[[B]] : indent bold</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-code-or-literal-text"><strong>[15]</strong> _[[C]] : code or literal text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#l-latex"><strong>[16]</strong> _[[L]] : LaTeX</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-topic"><strong>[17]</strong> _[[T]] : topic</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-code-or-literal"><strong>[18]</strong> _[[C]] : code or literal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e-endnote-text"><strong>[19]</strong> _[[E]] :  endnote text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-indent-italic"><strong>[20]</strong> _[[I]] : indent italic</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><strong>[21]</strong> _[[L]] : LaTeX</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#n-indent"><strong>[22]</strong> _[[N]] :  indent</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><strong>[23]</strong> _[[T]] : topic</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#command-key"><strong>[24]</strong> <strong>COMMAND KEY</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img-insert-image"><strong>[25]</strong> | IMG | - insert image</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img2-adjacent-images"><strong>[26]</strong> | IMG2 | - adjacent images</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-format-table"><strong>[27]</strong> | TABLE | - format table</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-format-text"><strong>[28]</strong> | TEXT | - format text</a></li>
 </ul>
   </nav></div>
 
