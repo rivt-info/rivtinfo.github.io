@@ -86,11 +86,11 @@ Scope           | Command | path | parameters                 R/W     file types
 R         | LINUX | relative path | popen; run                R     sh
 R         | MACOS | relative path | popen; run                R     sh
 R         | WIN | relative path   | popen; run                R     bat, cmd
-I, V      | TEXT | relative path | normal; literal            R     txt, tex, rst
-I, V      | TABLE | relative path | title, width, l;c;r       R     csv, txt, xlsx
 I, V      | IMG | relative path |  caption, scale             R     png, jpg
 I, V      | IMG2 | relative path | c1, c2, s1, s2             R     png, jpg
-V         | VALUES | relative path | title                    R     csv
+I, V      | TEXT | relative path | normal; literal            R     txt, tex, rst
+I, V      | TABLE | relative path | width, l;c;r, title       R     csv, txt, xlsx
+V         | VALUES | relative path | hide; visible            R     csv
 V         a := 1*IN  | unit1, unit2, decimal | description    W     define value
 V         b <= a + 3*FT | unit1, unit2, decimal | reference   W     assign value
 T         | HTML | relative path | html; file                 R     html

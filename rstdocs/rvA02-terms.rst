@@ -91,9 +91,9 @@
   single doc 
   single docs 
     A document that is not part of a report. It may be
-    published using the local folder alias (*rvlocal*) for the relative path 
-    rather than the *source* subfolder. In this case command files and *docs* are
-    are read and written to the *rivt file* folder.
+    published using the local folder  rather than the *src* subfolder. In 
+    this case command files and *docs*  are read and written to 
+    the *rivt file* folder.
 
   report
   reports
@@ -101,22 +101,19 @@
 
   report folder
   report folders
-    The folder structure for producing a report is described :doc:`here. <rvD02-folders>`
-
+    The folder structure for producing a report is described 
+    :doc:`here. <rvD02-folders>`
 
   section parameter 
   section parameters 
     Comma separated parameters in a *header* that specify the section processing.
 
-
   section content
     The content of a *rivt string* minus the *header*. 
 
-
   api-history 
-    API excecution history written to log folder as the file *rvDss-api.rst*. For the complete 
-    execution history see the rivt log file *rvDss-log.txt*.
-
+    API excecution history written to log folder as the file *rvDss-api.rst*. 
+    For the complete execution history see the rivt log file *rvDss-log.txt*.
 
   rivt log file
     *rivt file* execution log written to the *log folder* as *rvDss-log.txt*.

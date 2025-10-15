@@ -416,8 +416,26 @@ line and end with _[[Q]] after the last line.</p>
 </aside>
 <p>outputs: text, pdf, html</p>
 <p style="text-align: right;"> &lt;i&gt; </p></section>
+<section id="a-ascii-math">
+<h2><strong>[4]</strong> _[A] : ASCII math<a class="headerlink" href="#a-ascii-math" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title"><em>equation</em> _[A]</p>
+<p>f(x,y) = sin(x)**2 + y/5 _[A]</p>
+</aside>
+<p>Math expression will be formated in ASCII text.</p>
+<p>outputs: text, pdf, html</p>
+<p style="text-align: right;"> &lt;i&gt; </p></section>
+<section id="l-latex-math">
+<h2><strong>[5]</strong> _[L] : LaTeX math<a class="headerlink" href="#l-latex-math" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title"><em>equation</em> _[L]</p>
+<p>frac{1}{sqrt{x}} _[L]</p>
+</aside>
+<p>Math expression will be formated in LaTeX, even if LaTeX is not installed.</p>
+<p>outputs: pdf, html</p>
+<p style="text-align: right;"> &lt;i&gt; </p></section>
 <section id="b-bold-center">
-<h2><strong>[4]</strong> _[B] : bold, center<a class="headerlink" href="#b-bold-center" title="Link to this heading">#</a></h2>
+<h2><strong>[6]</strong> _[B] : bold, center<a class="headerlink" href="#b-bold-center" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title"><em>text</em> _[B]</p>
 <p><em>This text will be bold and centered</em> _[B]</p>
@@ -425,7 +443,7 @@ line and end with _[[Q]] after the last line.</p>
 <p>outputs: pdf, html</p>
 <p style="text-align: right;"> &lt;i&gt; </p></section>
 <section id="c-center">
-<h2><strong>[5]</strong> _[C] :  center<a class="headerlink" href="#c-center" title="Link to this heading">#</a></h2>
+<h2><strong>[7]</strong> _[C] :  center<a class="headerlink" href="#c-center" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title"><em>text</em> _[C]</p>
 <p><em>This text will be centered</em> _[C]</p>
@@ -433,7 +451,7 @@ line and end with _[[Q]] after the last line.</p>
 <p>outputs: text, pdf, html</p>
 <p style="text-align: right;"> &lt;i&gt; </p></section>
 <section id="e-equation-label">
-<h2><strong>[6]</strong> _[E] : equation label<a class="headerlink" href="#e-equation-label" title="Link to this heading">#</a></h2>
+<h2><strong>[8]</strong> _[E] : equation label<a class="headerlink" href="#e-equation-label" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title"><em>equation label</em> _[E]</p>
 <p><em>Label assigned an equation number</em>  _[E]</p>
@@ -441,24 +459,24 @@ line and end with _[[Q]] after the last line.</p>
 <p>outputs: text, pdf, html</p>
 <p style="text-align: right;"> &lt;i&gt; </p></section>
 <section id="f-figure-label">
-<h2><strong>[7]</strong> _[F] : figure label<a class="headerlink" href="#f-figure-label" title="Link to this heading">#</a></h2>
+<h2><strong>[9]</strong> _[F] : figure label<a class="headerlink" href="#f-figure-label" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title"><em>caption</em> _[F]</p>
 <p><em>Caption assigned a figure number</em> _[F]</p>
 </aside>
 <p>outputs: text, pdf, html</p>
 <p style="text-align: right;"> &lt;i&gt; </p></section>
-<section id="l-latex-math">
-<h2><strong>[8]</strong> _[L] : LaTeX math<a class="headerlink" href="#l-latex-math" title="Link to this heading">#</a></h2>
+<section id="t-table-label">
+<h2><strong>[10]</strong> _[T] : table label<a class="headerlink" href="#t-table-label" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title"><em>equation</em> _[L]</p>
-<p><em>frac{1}{sqrt{x}}</em> _[L]</p>
+<p class="topic-title"><em>title</em> _[T]</p>
+<p><em>An autonumbered table title</em> _[T]</p>
 </aside>
-<p>Math expression will be formated in LaTeX, even if LaTeX is not installed.</p>
-<p>outputs: pdf, html</p>
+<p>Table title will be assigned a table number.</p>
+<p>outputs: text, pdf, html</p>
 <p style="text-align: right;"> &lt;i&gt; </p></section>
 <section id="d-link-docs">
-<h2><strong>[9]</strong> _[D] : link docs<a class="headerlink" href="#d-link-docs" title="Link to this heading">#</a></h2>
+<h2><strong>[11]</strong> _[D] : link docs<a class="headerlink" href="#d-link-docs" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title"><em>text</em> _[D] report link</p>
 <p><em>text at end of line</em> _[D] doc-file-name, link label</p>
@@ -467,7 +485,7 @@ line and end with _[[Q]] after the last line.</p>
 <p>outputs: text, pdf, html</p>
 <p style="text-align: right;"> &lt;i&gt; </p></section>
 <section id="s-link-sections">
-<h2><strong>[10]</strong> _[S] : link sections<a class="headerlink" href="#s-link-sections" title="Link to this heading">#</a></h2>
+<h2><strong>[12]</strong> _[S] : link sections<a class="headerlink" href="#s-link-sections" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title"><em>text</em> _[S] doc link</p>
 <p><em>text</em> _[S] section number, link label</p>
@@ -476,29 +494,11 @@ line and end with _[[Q]] after the last line.</p>
 <p>outputs: text, pdf, html</p>
 <p style="text-align: right;"> &lt;i&gt; </p></section>
 <section id="u-link-urls">
-<h2><strong>[11]</strong> _[U] : link urls<a class="headerlink" href="#u-link-urls" title="Link to this heading">#</a></h2>
+<h2><strong>[13]</strong> _[U] : link urls<a class="headerlink" href="#u-link-urls" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title"><em>text</em> _[U] url link</p>
 <p><em>text at end of line</em> _[U] urlname, link label</p>
 </aside>
-<p>outputs: text, pdf, html</p>
-<p style="text-align: right;"> &lt;i&gt; </p></section>
-<section id="m-math-equation">
-<h2><strong>[12]</strong> _[M] : math equation<a class="headerlink" href="#m-math-equation" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title"><em>equation</em> _[M]</p>
-<p><em>f(x,y) = sin(x) + y/5</em> _[M]</p>
-</aside>
-<p>Math expression will be formated in ASCII text.</p>
-<p>outputs: text, pdf, html</p>
-<p style="text-align: right;"> &lt;i&gt; </p></section>
-<section id="t-table-label">
-<h2><strong>[13]</strong> _[T] : table label<a class="headerlink" href="#t-table-label" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title"><em>title</em> _[T]</p>
-<p><em>An autonumbered table title</em> _[T]</p>
-</aside>
-<p>Table title will be assigned a table number.</p>
 <p>outputs: text, pdf, html</p>
 <p style="text-align: right;"> &lt;i&gt; </p></section>
 <section id="p-new-page">
@@ -550,6 +550,7 @@ line and end with _[[Q]] after the last line.</p>
 </pre></div>
 </div>
 </aside>
+<p>Formats LaTeX, which needs to be installed.</p>
 <p>outputs: pdf, html</p>
 <p style="text-align: right;"> &lt;i&gt; </p></section>
 <section id="e-endnote-text">
@@ -557,12 +558,13 @@ line and end with _[[Q]] after the last line.</p>
 <hr><aside class="topic">
 <p class="topic-title">_[[E]]</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">E</span><span class="p">]]</span>
-<span class="n">this</span> <span class="ow">is</span> <span class="n">an</span> <span class="n">endnote</span> <span class="o">-</span> <span class="n">assigned</span> <span class="ow">in</span> <span class="n">order</span> <span class="n">of</span>
-<span class="n">of</span> <span class="n">endnote</span> <span class="n">line</span> <span class="n">tags</span> <span class="p">[</span><span class="c1">#]</span>
+<span class="n">this</span> <span class="ow">is</span> <span class="n">an</span> <span class="n">endnote</span> <span class="o">-</span> <span class="n">assigned</span> <span class="n">to</span> <span class="n">an</span> <span class="n">endnote</span> <span class="n">tag</span> <span class="p">[</span><span class="c1">#] in order of</span>
+<span class="n">of</span> <span class="n">processing</span><span class="o">.</span>
 <span class="n">_</span><span class="p">[[</span><span class="n">Q</span><span class="p">]]</span>
 </pre></div>
 </div>
 </aside>
+<p>Formats an endnote.</p>
 <p>outputs: text, pdf, html</p>
 <p style="text-align: right;"> &lt;i&gt; </p></section>
 <section id="i-indent-italic">
@@ -577,6 +579,7 @@ line and end with _[[Q]] after the last line.</p>
 </pre></div>
 </div>
 </aside>
+<p>Indents four spaces and italicizes block.</p>
 <p>outputs: pdf, html</p>
 <p style="text-align: right;"> &lt;i&gt; </p></section>
 <section id="n-indent">
@@ -591,13 +594,14 @@ line and end with _[[Q]] after the last line.</p>
 </pre></div>
 </div>
 </aside>
+<p>Indents four spaces.</p>
 <p>outputs: text, pdf, html</p>
 <p style="text-align: right;"> &lt;i&gt; </p></section>
 <section id="t-topic">
 <h2><strong>[21]</strong> _[[T]] : topic<a class="headerlink" href="#t-topic" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">_[[T]] <em>topic</em></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">T</span><span class="p">]]</span> <span class="n">topic</span>
+<p class="topic-title">_[[T]] <em>topic title</em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">T</span><span class="p">]]</span> <span class="n">topic</span> <span class="n">title</span>
 <span class="n">text</span>
 <span class="n">text</span>
 <span class="o">...</span>
@@ -605,7 +609,8 @@ line and end with _[[Q]] after the last line.</p>
 </pre></div>
 </div>
 </aside>
-<p>outputs: text, pdf, html</p>
+<p>Formats a colored highlight block with a title.</p>
+<p>outputs: pdf, html</p>
 <p style="text-align: right;"> &lt;i&gt; </p></section>
 <section id="command-key">
 <h2><strong>[22]</strong> <strong>COMMAND KEY</strong><a class="headerlink" href="#command-key" title="Link to this heading">#</a></h2>
@@ -623,7 +628,7 @@ line and end with _[[Q]] after the last line.</p>
 <div class="line">IMG | src/file1.png | .50, Map _[F]</div>
 </div>
 </aside>
-<p>The command reads PNG and JPEG files (.png, jpg). The file path is relative to
+<p>Reads PNG and JPEG files (.png, jpg). The file path is relative to
 the report folder.</p>
 <p>outputs: PDF, HTML</p>
 <p style="text-align: right;"> &lt;i&gt; </p></section>
@@ -635,33 +640,35 @@ the report folder.</p>
 <div class="line">IMG | src/file1.png, src/file2.png | .50, .40, Map, Plan</div>
 </div>
 </aside>
-<p>The command reads PNG and JPEG files (.png, jpg). The file path is relative to
-the report folder.</p>
+<p>Reads PNG and JPEG files (.png, jpg) and places them side by side in the
+document. The file path is relative to the report folder.</p>
 <p>outputs: PDF, HTML</p>
 <p style="text-align: right;"> &lt;i&gt; </p></section>
 <section id="table-format-table">
 <h2><strong>[25]</strong> | TABLE | : format table<a class="headerlink" href="#table-format-table" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| TABLE | rel path | title (_[T])</p>
+<p class="topic-title">| TABLE | relative path | width, l;c;r, title  (_[T])</p>
 <div class="line-block">
-<div class="line">TABLE | src/file1.csv | Forces _[T]</div>
+<div class="line">TABLE | src/file1.csv | 30, c, Forces _[T]</div>
 </div>
 </aside>
-<p>The command reads reads text, csv and EXCEL files (.txt, .csv, .xls). The file
-path is relative to the report folder.</p>
-<p>outputs: text, PDF HTML</p>
+<p>Reads text, csv and EXCEL files (.txt, .csv, .xls) and outputs formatted
+tables. The file path is relative to the report folder. The width parameter
+specifies the maximum column width. The l,c,r parameter specifies cell
+justification (left, center, right).</p>
+<p>outputs: text, PDF, HTML</p>
 <p style="text-align: right;"> &lt;i&gt; </p></section>
 <section id="text-format-text">
 <h2><strong>[26]</strong> | TEXT | : format text<a class="headerlink" href="#text-format-text" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| text | rel path | normal, literal</p>
+<p class="topic-title">| text | rel path | normal; literal</p>
 <div class="line-block">
 <div class="line">TABLE | src/file1.txt  | normal</div>
 </div>
 </aside>
-<p>The command reads text and reST files (.txt, .tex, .rst). The parameters
-specify whether the text is wrapped or treated as a literal. The file path is
-relative to the report folder.</p>
+<p>Reads text and reST files (.txt, .tex, .rst). The parameters specify whether
+the text is wrapped or treated as a literal. The file path is relative to the
+report folder.</p>
 <p>outputs: text, PDF HTML</p>
 </section>
 </section>
@@ -716,16 +723,16 @@ relative to the report folder.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tag-key"><strong>[1]</strong> <strong>TAG KEY</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#endnote-number"><strong>[2]</strong> _[#] : endnote number</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#horizontal-line"><strong>[3]</strong> __ : horizontal line</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-bold-center"><strong>[4]</strong> _[B] : bold, center</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-center"><strong>[5]</strong> _[C] :  center</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e-equation-label"><strong>[6]</strong> _[E] : equation label</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#f-figure-label"><strong>[7]</strong> _[F] : figure label</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#l-latex-math"><strong>[8]</strong> _[L] : LaTeX math</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-link-docs"><strong>[9]</strong> _[D] : link docs</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#s-link-sections"><strong>[10]</strong> _[S] : link sections</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#u-link-urls"><strong>[11]</strong> _[U] : link urls</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#m-math-equation"><strong>[12]</strong> _[M] : math equation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-table-label"><strong>[13]</strong> _[T] : table label</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-ascii-math"><strong>[4]</strong> _[A] : ASCII math</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#l-latex-math"><strong>[5]</strong> _[L] : LaTeX math</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-bold-center"><strong>[6]</strong> _[B] : bold, center</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-center"><strong>[7]</strong> _[C] :  center</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e-equation-label"><strong>[8]</strong> _[E] : equation label</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#f-figure-label"><strong>[9]</strong> _[F] : figure label</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-table-label"><strong>[10]</strong> _[T] : table label</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-link-docs"><strong>[11]</strong> _[D] : link docs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#s-link-sections"><strong>[12]</strong> _[S] : link sections</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#u-link-urls"><strong>[13]</strong> _[U] : link urls</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-new-page"><strong>[14]</strong> _[P] : new page</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-bold-indent"><strong>[15]</strong> _[[B]] : bold indent</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-code-or-literal-text"><strong>[16]</strong> _[[C]] : code or literal text</a></li>

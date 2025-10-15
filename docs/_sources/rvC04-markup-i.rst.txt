@@ -81,7 +81,47 @@ outputs: text, pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[4]** _[B] : bold, center
+
+**[4]** _[A] : ASCII math
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *equation* _[A]
+
+    f(x,y) = sin(x)**2 + y/5 _[A]
+
+Math expression will be formated in ASCII text.
+
+outputs: text, pdf, html
+
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+**[5]** _[L] : LaTeX math 
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *equation* _[L]
+
+    \frac{1}{\sqrt{x}} _[L]
+
+Math expression will be formated in LaTeX, even if LaTeX is not installed.
+
+outputs: pdf, html
+
+
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+**[6]** _[B] : bold, center
 -------------------------------------------
 
 .. raw:: html
@@ -98,7 +138,7 @@ outputs: pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[5]** _[C] :  center 
+**[7]** _[C] :  center 
 -------------------------------------------
 
 .. raw:: html
@@ -115,7 +155,7 @@ outputs: text, pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[6]** _[E] : equation label 
+**[8]** _[E] : equation label 
 -----------------------------------------
 
 .. raw:: html
@@ -132,7 +172,7 @@ outputs: text, pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[7]** _[F] : figure label 
+**[9]** _[F] : figure label 
 -----------------------------------------
 
 .. raw:: html
@@ -149,100 +189,8 @@ outputs: text, pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[8]** _[L] : LaTeX math 
------------------------------------------
 
-.. raw:: html
-
-    <hr>
-
-.. topic:: *equation* _[L]
-
-    *\frac{1}{\sqrt{x}}* _[L]
-
-Math expression will be formated in LaTeX, even if LaTeX is not installed.
-
-outputs: pdf, html
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[9]** _[D] : link docs
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *text* _[D] report link 
-    
-    *text at end of line* _[D] doc-file-name, link label
-
-Links *docs* within a report
-
-outputs: text, pdf, html
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[10]** _[S] : link sections
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *text* _[S] doc link
-    
-    *text* _[S] section number, link label
-
-Links *sections* within a *doc*
-
-outputs: text, pdf, html
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[11]** _[U] : link urls
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *text* _[U] url link  
-    
-    *text at end of line* _[U] urlname, link label
-
-outputs: text, pdf, html
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[12]** _[M] : math equation
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *equation* _[M]
-
-    *f(x,y) = sin(x) + y/5* _[M]
-
-Math expression will be formated in ASCII text.
-
-outputs: text, pdf, html
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[13]** _[T] : table label
+**[10]** _[T] : table label
 ------------------------------------------
 
 .. raw:: html
@@ -261,6 +209,61 @@ outputs: text, pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
+**[11]** _[D] : link docs
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *text* _[D] report link 
+    
+    *text at end of line* _[D] doc-file-name, link label
+
+Links *docs* within a report
+
+outputs: text, pdf, html
+
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+**[12]** _[S] : link sections
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *text* _[S] doc link
+    
+    *text* _[S] section number, link label
+
+Links *sections* within a *doc*
+
+outputs: text, pdf, html
+
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+**[13]** _[U] : link urls
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *text* _[U] url link  
+    
+    *text at end of line* _[U] urlname, link label
+
+outputs: text, pdf, html
+
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
 **[14]** _[P] : new page
 -----------------------------------------
 
@@ -271,7 +274,6 @@ outputs: text, pdf, html
 .. topic:: _[P]
 
      _[P]
-
 
 This starts a new page.
 
@@ -344,6 +346,8 @@ outputs: text, pdf, html
         ...
         _[[Q]]
 
+Formats LaTeX, which needs to be installed.
+
 outputs: pdf, html
 
 .. raw:: html
@@ -363,9 +367,11 @@ outputs: pdf, html
     ::
    
         _[[E]]
-        this is an endnote - assigned in order of
-        of endnote line tags [#]
+        this is an endnote - assigned to an endnote tag [#] in order of
+        of processing.
         _[[Q]] 
+
+Formats an endnote.
 
 outputs: text, pdf, html
 
@@ -390,6 +396,8 @@ outputs: text, pdf, html
         ...
         _[[Q]]
 
+Indents four spaces and italicizes block.
+
 outputs: pdf, html
 
 .. raw:: html
@@ -413,6 +421,8 @@ outputs: pdf, html
         ...
         _[[Q]]
 
+Indents four spaces.
+
 outputs: text, pdf, html
 
 .. raw:: html
@@ -426,17 +436,19 @@ outputs: text, pdf, html
 
     <hr>
 
-.. topic::  _[[T]] *topic*
+.. topic::  _[[T]] *topic title*
 
     ::
         
-        _[[T]] topic
+        _[[T]] topic title
         text
         text
         ...
         _[[Q]]
 
-outputs: text, pdf, html
+Formats a colored highlight block with a title.
+
+outputs: pdf, html
 
 .. raw:: html
 
@@ -470,7 +482,7 @@ outputs: types of outputs
 
     | IMG | src/file1.png | .50, Map _[F]
 
-The command reads PNG and JPEG files (.png, jpg). The file path is relative to
+Reads PNG and JPEG files (.png, jpg). The file path is relative to
 the report folder. 
 
 outputs: PDF, HTML
@@ -490,8 +502,8 @@ outputs: PDF, HTML
 
     | IMG | src/file1.png, src/file2.png | .50, .40, Map, Plan
 
-The command reads PNG and JPEG files (.png, jpg). The file path is relative to
-the report folder. 
+Reads PNG and JPEG files (.png, jpg) and places them side by side in the
+document. The file path is relative to the report folder.
 
 outputs: PDF, HTML
 
@@ -502,18 +514,21 @@ outputs: PDF, HTML
 **[25]** | TABLE | : format table
 ------------------------------------------
 
+
 .. raw:: html
 
     <hr>
 
-.. topic:: | TABLE | rel path | title (_[T])
+.. topic:: | TABLE | relative path | width, l;c;r, title  (_[T])
 
-    | TABLE | src/file1.csv | Forces _[T]
+    | TABLE | src/file1.csv | 30, c, Forces _[T]
 
-The command reads reads text, csv and EXCEL files (.txt, .csv, .xls). The file
-path is relative to the report folder.
+Reads text, csv and EXCEL files (.txt, .csv, .xls) and outputs formatted
+tables. The file path is relative to the report folder. The width parameter
+specifies the maximum column width. The l,c,r parameter specifies cell
+justification (left, center, right).
 
-outputs: text, PDF HTML
+outputs: text, PDF, HTML
 
 .. raw:: html
 
@@ -526,13 +541,13 @@ outputs: text, PDF HTML
 
     <hr>
 
-.. topic:: | text | rel path | normal, literal
+.. topic:: | text | rel path | normal; literal
 
     | TABLE | src/file1.txt  | normal
 
-The command reads text and reST files (.txt, .tex, .rst). The parameters
-specify whether the text is wrapped or treated as a literal. The file path is
-relative to the report folder.
+Reads text and reST files (.txt, .tex, .rst). The parameters specify whether
+the text is wrapped or treated as a literal. The file path is relative to the
+report folder.
 
 outputs: text, PDF HTML
 

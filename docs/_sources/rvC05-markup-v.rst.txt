@@ -1,19 +1,21 @@
 **C.5 Values - rv.V**
 ========================
 
+
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
 
-
-**[1]** TAG KEY
+**[1]** **TAG KEY**
 --------------------------------------
 
 .. raw:: html
 
     <hr>
 
-
+*line tags* format a line of text and are denoted with _[TAG] at the end of the
+line. *Block tags* format a block of text that begin with _[[TAG]] on the first
+line and end with _[[Q]] after the last line.
 
 _[TAG] : line tag description
 
@@ -25,7 +27,7 @@ _[TAG] : line tag description
 
    example
 
-types of output
+outputs: types of output
 
 
 _[[TAG]] : block tag description
@@ -34,53 +36,111 @@ _[[TAG]] : block tag description
 
     example
 
-types of output
+outputs: types of output
 
 
 .. raw:: html
 
     <hr>
 
-
-
-**[2]** _[#] :  numbered endnote
-----------------------------------------
-
 .. raw:: html
 
-    <hr>
     <p style="text-align: right;"> &lt;i&gt; </p>
 
+**[2]** _[#] : endnote number
+-------------------------------------
+
 .. raw:: html
 
     <hr>
 
-.. topic:: *text* _[#] text
+
+.. topic:: *text* _[#] 
     
-   end of text with auto endnote. _[#]
+   end of line - text is wrapped when formatted. _[#]
 
-text, pdf, html
-
-
-**[3]** _[D] :  endnote text
--------------------------------------------    
+outputs: text, pdf, html
 
 .. raw:: html
 
-    <hr>
     <p style="text-align: right;"> &lt;i&gt; </p>
 
+**[3]** __ : horizontal line
+--------------------------------------- 
 .. raw:: html
 
     <hr>
 
-.. topic:: *endnote* _[D]
+.. topic:: 4 or more underscores ____ 
 
-   endnote - assigned in order _[D]
+    ___________  
 
-text, pdf, html
+    
+outputs: text, pdf, html
 
-**[04]** _[E] : label equation
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+
+**[4]** _[A] : ASCII math
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *equation* _[A]
+
+    f(x,y) = sin(x)**2 + y/5 _[A]
+
+Math expression will be formated in ASCII text.
+
+outputs: text, pdf, html
+
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+**[5]** _[L] : LaTeX math 
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *equation* _[L]
+
+    \frac{1}{\sqrt{x}} _[L]
+
+Math expression will be formated in LaTeX, even if LaTeX is not installed.
+
+outputs: pdf, html
+
+
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+
+**[6]** _[C] :  center 
+-------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *text* _[C]
+
+    *This text will be centered* _[C]
+
+outputs: text, pdf, html
+
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+**[7]** _[E] : equation label 
 -----------------------------------------
 
 .. raw:: html
@@ -89,11 +149,15 @@ text, pdf, html
 
 .. topic:: *equation label* _[E]
 
-   An autonumbered equation label _[E]
+   *Label assigned an equation number*  _[E]
 
-text, pdf, html
+outputs: text, pdf, html
 
-**[05]** _[F] : label figure 
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+**[8]** _[F] : figure label 
 -----------------------------------------
 
 .. raw:: html
@@ -102,68 +166,16 @@ text, pdf, html
 
 .. topic:: *caption* _[F]
 
-   An autonumbered figure label _[E]
+   *Caption assigned a figure number* _[F]
 
-text, pdf, html
-
-**[08]** _[L] :  section link 
------------------------------------------
+outputs: text, pdf, html
 
 .. raw:: html
 
-    <hr>
-
-.. topic:: *text* _[L] doc link
-    
-    text at end of line _[L] section number, link label
-
-text, pdf, html
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 
-**[09]** _[P] : new page
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: _[P]
-
-    this will start a new page _[P]
-
-text, pdf, html
-
-
-
-**[10]** _[R] :  report link 
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *text* _[R] report link 
-    
-    text at end of line _[R] doc-file-name, link label
-
-text, pdf, html
-
-
-**[11]** _[S] : sympy equation
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *equation* _[S]
-
-    f(x) = sin(x) + y/5 _[S]
-
-text, pdf, html
-
-
-**[12]** _[T]  label table
+**[9]** _[T] : table label
 ------------------------------------------
 
 .. raw:: html
@@ -172,12 +184,55 @@ text, pdf, html
 
 .. topic:: *title* _[T]
 
-   An autonumbered table title _[T]
+   *An autonumbered table title* _[T]
 
-text, pdf, html
+Table title will be assigned a table number.
 
+outputs: text, pdf, html
 
-**[13]** _[U] :  url link 
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+**[10]** _[D] : link docs
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *text* _[D] report link 
+    
+    *text at end of line* _[D] doc-file-name, link label
+
+Links *docs* within a report
+
+outputs: text, pdf, html
+
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+**[11]** _[S] : link sections
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *text* _[S] doc link
+    
+    *text* _[S] section number, link label
+
+Links *sections* within a *doc*
+
+outputs: text, pdf, html
+
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+**[12]** _[U] : link urls
 -----------------------------------------
 
 .. raw:: html
@@ -186,9 +241,32 @@ text, pdf, html
 
 .. topic:: *text* _[U] url link  
     
-    text at end of line _[U] urlname, link label
+    *text at end of line* _[U] urlname, link label
 
-text, pdf, html
+outputs: text, pdf, html
+
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+**[13]** _[P] : new page
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: _[P]
+
+     _[P]
+
+This starts a new page.
+
+outputs: text, pdf, html
+
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 
 **[14]** _[[C]] : code or literal text
@@ -208,8 +286,11 @@ text, pdf, html
         ...
         _[[Q]]
 
-text, pdf, html
+outputs: text, pdf, html
 
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 **[15]** _[[L]] : LaTeX
 ------------------------------------------------
@@ -228,113 +309,190 @@ text, pdf, html
         ...
         _[[Q]]
 
-pdf, html
+Formats LaTeX, which needs to be installed.
+
+outputs: pdf, html
+
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+**[16]** _[[E]] : endnote text
+-------------------------------------------    
+
+.. raw:: html
+
+    <hr>
 
 
-**[16]** _[[T]] : topic
+.. topic:: _[[E]] 
+    
+    ::
+   
+        _[[E]]
+        this is an endnote - assigned to an endnote tag [#] in order of
+        of processing.
+        _[[Q]] 
+
+Formats an endnote.
+
+outputs: text, pdf, html
+
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+
+**[17]** _[[T]] : topic
 ------------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic::  _[[T]] *topic*
+.. topic::  _[[T]] *topic title*
 
     ::
         
-        _[[T]] this a topic title : after colon will be italic
-        This is a topic description.
+        _[[T]] topic title
+        text
+        text
         ...
         _[[Q]]
 
-text, pdf, html
+Formats a colored highlight block with a title.
 
+outputs: pdf, html
 
-**[17]** COMMAND KEY
-----------------------
+.. raw:: html
 
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
-
+**[18]** _[[V]] : values
+------------------------------------------------
 
 .. raw:: html
 
     <hr>
 
+.. topic::  _[[V]] 
 
-.. topic:: | COMMAND | parameters
+    ::
+        
+        _[[T]] topic title
+        a := 1*IN  | IN, M, 2 | thickness
+        b := 10*IN  | IN, M, 2 | length
+        _[[Q]]
+
+Reads values from a block and writes values to a file *vnum-s.csv* where *num*
+is the *doc number* and *s* is the section number.
+
+outputs: text, pdf, html
+
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+**[19]** **COMMAND KEY**
+---------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: | COMMAND | relative path | parameters
 
   example
 
-file types
+outputs: types of outputs
 
+.. raw:: html
 
-**[18]** | IMG | - insert image
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+**[20]** | IMG | : insert image
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | IMG | path | filename | scale, caption (_[F])
+.. topic:: | IMG | relative path | scale, caption (_[F])
 
-    | IMG | rvsource | file1.png | .50, Map _[F]
+    | IMG | src/file1.png | .50, Map _[F]
 
+Reads PNG and JPEG files (.png, jpg). The file path is relative to
+the report folder. 
 
-reads PNG and JPEG files (.png, jpg)
+outputs: PDF, HTML
 
-text, PDF, HTML
+.. raw:: html
 
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[19]** | IMG2 | - adjacent images 
+**[21]** | IMG2 | : adjacent images 
 --------------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | IMG2 | path | fname1, fname2 | cap1 (_[F]), cap2 (_[F]), sc1, sc2 
+.. topic:: | IMG2 | rel path1, rel path2| sc1, sc2, cap1 (_[F]), cap2 (_[F])  
 
-    | IMG | rvsource | file1.png, file2.png | .50, .40, Map, Plan
+    | IMG | src/file1.png, src/file2.png | .50, .40, Map, Plan
 
+Reads PNG and JPEG files (.png, jpg) and places them side by side in the
+document. The file path is relative to the report folder.
 
-reads PNG and JPEG files (.png, jpg)
+outputs: PDF, HTML
 
-text, PDF, HTML
+.. raw:: html
 
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[20]** | TABLE | - format table
+**[22]** | TABLE | : format table
 ------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | TABLE | path | filename | title (_[T])
+.. topic:: | TABLE | relative path | width, l;c;r, title  (_[T])
 
-    | TABLE | rvsource | file1.csv | Forces _[T]
+    | TABLE | src/file1.csv | 30, c, Forces _[T]
 
+Reads text, csv and EXCEL files (.txt, .csv, .xls) and outputs formatted
+tables. The file path is relative to the report folder. The width parameter
+specifies the maximum column width. The l,c,r parameter specifies cell
+justification (left, center, right).
 
-reads text, csv and EXCEL files (.txt, .csv, .xls)
+outputs: text, PDF, HTML
 
-PDF, HTML, text
+.. raw:: html
 
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[21]** | TEXT | - format text
+**[23]** | VALUE | : format values
 ------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | text | path | filename | normal, literal
+.. topic:: | VALUE | rel path | hide; insert
 
-    | TABLE | rvsource | file1.txt | normal
+    | VALUE | src/file1.csv  | hide; insert
 
-reads text, text and reST files (.txt, .tex, .rst)
+Reads a value file (.csv). The file path is relative to the report folder. The
+insert parameter specifies whether the value table is visible in the doc.  
 
-PDF, HTML, text
+outputs: text, PDF HTML
 
-**[22]** **<=** - assign equation value
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+**[24]** **<=** : assign equation value
 -------------------------------------------
 
 .. raw:: html
@@ -345,12 +503,16 @@ PDF, HTML, text
 
     b_1 <= E_1 * 12.1*IN^2 | KIP, kN, 2 | Std. 123
   
-  assigns a variable to an equation value
+Assigns a variable to an equation value and writes the value to a file
+*vnum-s.csv* where *num* is the *doc number* and *s* is the section number.
   
-  text, PDF, HTML
+outputs: text, PDF, HTML
 
+.. raw:: html
 
-**[23]** **:=** - define value
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+**[25]** **:=** : define value
 -------------------------------------------
 
 .. raw:: html
@@ -361,6 +523,7 @@ PDF, HTML, text
 
     D_1 = 10*IN | IN, M, 3 | beam depth
   
-  defines the value of a variable 
+Defines a variable value and writes values to a file *vnum-s.csv* where *num*
+is the *doc number* and *s* is the section number.
   
-  text, PDF, HTML
+outputs: text, PDF, HTML
