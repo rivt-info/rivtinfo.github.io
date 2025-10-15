@@ -46,7 +46,6 @@ outputs: types of output
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-
 **[2]** _[#] :  endnote number
 -------------------------------------
 
@@ -161,7 +160,7 @@ outputs: text, pdf, html
 
     \frac{1}{\sqrt{x}} _[L]
 
-This math expression will be formated in LaTeX.
+This math expression will be formated in LaTeX, even if LaTeX is not installed.
 
 outputs: pdf, html
 
@@ -184,6 +183,9 @@ Links *docs* within a report
 
 outputs: text, pdf, html
 
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 **[10]** _[S] : link sections
 -----------------------------------------
@@ -204,7 +206,6 @@ outputs: text, pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-
 **[11]** _[U] : link urls
 -----------------------------------------
 
@@ -218,6 +219,9 @@ outputs: text, pdf, html
 
 outputs: text, pdf, html
 
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 **[12]** _[M] : math equation
 -----------------------------------------
@@ -257,7 +261,6 @@ outputs: text, pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-
 **[14]** _[P] : new page
 -----------------------------------------
 
@@ -271,6 +274,9 @@ outputs: text, pdf, html
 
 outputs: text, pdf, html
 
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 **[15]** _[[B]] : bold indent
 ------------------------------------------------
@@ -291,6 +297,9 @@ outputs: text, pdf, html
 
 outputs: text, pdf, html
 
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 **[16]** _[[C]] : code or literal text
 ------------------------------------------------
@@ -311,6 +320,9 @@ outputs: text, pdf, html
 
 outputs: text, pdf, html
 
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 **[17]** _[[L]] : LaTeX
 ------------------------------------------------
@@ -331,6 +343,9 @@ outputs: text, pdf, html
 
 outputs: pdf, html
 
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 **[18]** _[[E]] : endnote text
 -------------------------------------------    
@@ -338,9 +353,10 @@ outputs: pdf, html
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
+
 
 .. topic:: _[[E]] 
+    
     ::
    
         _[[E]]
@@ -350,6 +366,9 @@ outputs: pdf, html
 
 outputs: text, pdf, html
 
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 **[19]** _[[I]] : indent italic
 ------------------------------------------------
@@ -370,6 +389,9 @@ outputs: text, pdf, html
 
 outputs: pdf, html
 
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 **[20]** _[[N]] :  indent
 ----------------------------------------------
@@ -390,6 +412,9 @@ outputs: pdf, html
 
 outputs: text, pdf, html
 
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 **[21]** _[[T]] : topic
 ------------------------------------------------
@@ -410,6 +435,9 @@ outputs: text, pdf, html
 
 outputs: text, pdf, html
 
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 **[22]** **COMMAND KEY**
 ---------------------------
@@ -424,6 +452,9 @@ outputs: text, pdf, html
 
 outputs: types of outputs
 
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 **[23]** | IMG | - insert image
 -------------------------------------------
@@ -441,6 +472,9 @@ the report folder.
 
 outputs: PDF, HTML
 
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 **[24]** | IMG2 | - adjacent images 
 --------------------------------------------------
@@ -458,6 +492,9 @@ the report folder.
 
 outputs: PDF, HTML
 
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 **[25]** | TABLE | - format table
 ------------------------------------------
@@ -475,6 +512,9 @@ path is relative to the report folder.
 
 outputs: text, PDF HTML
 
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 **[26]** | TEXT | - format text
 ------------------------------------------
