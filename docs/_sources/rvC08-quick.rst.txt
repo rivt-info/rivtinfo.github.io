@@ -16,15 +16,14 @@
 ============= ========================== =======================================
 Scope             Line Tags                    Description (doc scope)
 ============= ========================== =======================================
-I              text _[#] text              endnote (all)
-I              text _[L] doc link          doc link (all)
+I              text _[#]                   endnote number (all)
+I              text _[D] doc link          doc link (all)
 I              text _[R] report link       report link (all)
 I              text _[U] url               url link (all)
 I              text          _[B]          center bold text (pdf, html)
-I              description   _[D]          endnote description (all)
 I              text          _[C]          center text (all)
-I, V           equation      _[S]          format sympy math (all) 
-I, V           equation      _[M]          format LaTeX math (all) 
+I, V           equation      _[M]          format ASCII math (all) 
+I, V           equation      _[l]          format LaTeX math (PDF, HTML) 
 I, V           label         _[E]          equation label (all)
 I, V           caption       _[F]          image label (all) [1]
 I, V           title         _[T]          table label (all) [1]
@@ -46,13 +45,14 @@ I, V                         _[P]          new page (all)
     <hr>
 
 ============ ============================= =====================================
-Scope          Block Tags                    Description (doc scope)
+API Scope         Block Tags                   Description (doc type scope)
 ============ ============================= =====================================
 I             _[[B]]                          indent bold (pdf, html)
 I             _[[I]]                          indent italic (pdf, html)
 I             _[[O]]                          italic, oblique (pdf, html)
 I             _[[L]]                          LaTeX (pdf, html)
 I             _[[N]]                          indent (all)
+I             _[[E]]                          endnote description (all)
 I             _[[C]] *language*               code, literal (all)
 M             _[[AUTH]] *description*         author data (all)
 M             _[[FORK]] *description*         fork data (all)

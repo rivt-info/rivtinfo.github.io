@@ -14,7 +14,7 @@
     <hr>
 
 
-**[#]** _[[TAG]] : :term:`block tag` description
+_[[TAG]] : :term:`block tag` description
         
 .. raw:: html
 

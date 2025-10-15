@@ -71,10 +71,9 @@ outputs: text, pdf, html
 
     <hr>
 
-.. topic:: 4 or more underscores ____ 
+.. topic:: _[H] or 4 or more underscores
 
-    ___________  
-
+    ___________  or _[H]
     
 outputs: text, pdf, html
 
