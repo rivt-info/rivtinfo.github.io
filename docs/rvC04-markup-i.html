@@ -403,8 +403,7 @@ line and end with _[[Q]] after the last line.</p>
 <hr><p style="text-align: right;"> &lt;i&gt; </p></section>
 <section id="endnote-number">
 <h2><strong>[2]</strong> _[#] :  endnote number<a class="headerlink" href="#endnote-number" title="Link to this heading">#</a></h2>
-<hr>
-<p style="text-align: right;"> &lt;i&gt; </p><aside class="topic">
+<hr><aside class="topic">
 <p class="topic-title"><em>text</em> _[#]</p>
 <p>end of line - text is wrapped when formatted. _[#]</p>
 </aside>
@@ -417,33 +416,32 @@ line and end with _[[Q]] after the last line.</p>
 </aside>
 <p>outputs: text, pdf, html</p>
 <p style="text-align: right;"> &lt;i&gt; </p></section>
-<section id="b-center-bold">
-<h2><strong>[4]</strong> _[B] :  center, bold<a class="headerlink" href="#b-center-bold" title="Link to this heading">#</a></h2>
-<hr>
-<p style="text-align: right;"> &lt;i&gt; </p><aside class="topic">
+<section id="b-bold-center">
+<h2><strong>[4]</strong> _[B] :  bold, center<a class="headerlink" href="#b-bold-center" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
 <p class="topic-title"><em>text</em> _[B]</p>
 <p>This text will be bold and centered _[B]</p>
 </aside>
 <p>outputs: pdf, html</p>
 <p style="text-align: right;"> &lt;i&gt; </p></section>
 <section id="c-center">
-<h2><strong>[5]</strong> _[C] :   center<a class="headerlink" href="#c-center" title="Link to this heading">#</a></h2>
+<h2><strong>[5]</strong> _[C] :  center<a class="headerlink" href="#c-center" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title"><em>text</em> _[C]</p>
 <p>This text will be centered _[C]</p>
 </aside>
 <p>outputs: text, pdf, html</p>
 <p style="text-align: right;"> &lt;i&gt; </p></section>
-<section id="e-label-equation">
-<h2><strong>[6]</strong> _[E] : label equation<a class="headerlink" href="#e-label-equation" title="Link to this heading">#</a></h2>
+<section id="e-equation-label">
+<h2><strong>[6]</strong> _[E] : equation label<a class="headerlink" href="#e-equation-label" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title"><em>equation label</em> _[E]</p>
 <p>This label will be assigned an equation number  _[E]</p>
 </aside>
 <p>outputs: text, pdf, html</p>
 <p style="text-align: right;"> &lt;i&gt; </p></section>
-<section id="f-label-figure">
-<h2><strong>[7]</strong> _[F] : label figure<a class="headerlink" href="#f-label-figure" title="Link to this heading">#</a></h2>
+<section id="f-figure-label">
+<h2><strong>[7]</strong> _[F] : figure label<a class="headerlink" href="#f-figure-label" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title"><em>caption</em> _[F]</p>
 <p>This caption will be assigned a figure number _[F]</p>
@@ -459,8 +457,34 @@ line and end with _[[Q]] after the last line.</p>
 <p>This math expression will be formated in LaTeX.</p>
 <p>outputs: pdf, html</p>
 <p style="text-align: right;"> &lt;i&gt; </p></section>
+<section id="d-link-docs">
+<h2><strong>[9]</strong> _[D] : link docs<a class="headerlink" href="#d-link-docs" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title"><em>text</em> _[D] report link</p>
+<p>text at end of line _[D] doc-file-name, link label</p>
+</aside>
+<p>Links <em>docs</em> within a report</p>
+<p>outputs: text, pdf, html</p>
+</section>
+<section id="s-link-sections">
+<h2><strong>[10]</strong> _[S] : link sections<a class="headerlink" href="#s-link-sections" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title"><em>text</em> _[S] doc link</p>
+<p><em>text</em> _[S] section number, link label</p>
+</aside>
+<p>Links <em>sections</em> within a <em>doc</em></p>
+<p>outputs: text, pdf, html</p>
+<p style="text-align: right;"> &lt;i&gt; </p></section>
+<section id="u-link-urls">
+<h2><strong>[11]</strong> _[U] : link urls<a class="headerlink" href="#u-link-urls" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title"><em>text</em> _[U] url link</p>
+<p>text at end of line _[U] urlname, link label</p>
+</aside>
+<p>outputs: text, pdf, html</p>
+</section>
 <section id="m-math-equation">
-<h2><strong>[9]</strong> _[M] : math equation<a class="headerlink" href="#m-math-equation" title="Link to this heading">#</a></h2>
+<h2><strong>[12]</strong> _[M] : math equation<a class="headerlink" href="#m-math-equation" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title"><em>equation</em> _[M]</p>
 <p>f(x,y) = sin(x) + y/5 _[M]</p>
@@ -469,7 +493,7 @@ line and end with _[[Q]] after the last line.</p>
 <p>outputs: text, pdf, html</p>
 <p style="text-align: right;"> &lt;i&gt; </p></section>
 <section id="t-table-label">
-<h2><strong>[10]</strong> _[T] : table label<a class="headerlink" href="#t-table-label" title="Link to this heading">#</a></h2>
+<h2><strong>[13]</strong> _[T] : table label<a class="headerlink" href="#t-table-label" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title"><em>title</em> _[T]</p>
 <p>An autonumbered table title _[T]</p>
@@ -477,32 +501,6 @@ line and end with _[[Q]] after the last line.</p>
 <p>This table title will be assigned a table number.</p>
 <p>outputs: text, pdf, html</p>
 <p style="text-align: right;"> &lt;i&gt; </p></section>
-<section id="l-link-sections">
-<h2><strong>[11]</strong> _[L] : link <em>sections</em><a class="headerlink" href="#l-link-sections" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title"><em>text</em> _[L] doc link</p>
-<p><em>text</em> _[L] section number, link label</p>
-</aside>
-<p>Links <em>sections</em> within a <em>doc</em></p>
-<p>outputs: text, pdf, html</p>
-<p style="text-align: right;"> &lt;i&gt; </p></section>
-<section id="d-link-docs">
-<h2><strong>[12]</strong> _[D] : link <em>docs</em><a class="headerlink" href="#d-link-docs" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title"><em>text</em> _[D] report link</p>
-<p>text at end of line _[D] doc-file-name, link label</p>
-</aside>
-<p>Links <em>docs</em> within a report</p>
-<p>outputs: text, pdf, html</p>
-</section>
-<section id="u-link-urls">
-<h2><strong>[13]</strong> _[U] : link <em>urls</em><a class="headerlink" href="#u-link-urls" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title"><em>text</em> _[U] url link</p>
-<p>text at end of line _[U] urlname, link label</p>
-</aside>
-<p>outputs: text, pdf, html</p>
-</section>
 <section id="p-new-page">
 <h2><strong>[14]</strong> _[P] : new page<a class="headerlink" href="#p-new-page" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
@@ -729,16 +727,16 @@ _[[Q]]</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tag-key"><strong>[1]</strong> <strong>TAG KEY</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#endnote-number"><strong>[2]</strong> _[#] :  endnote number</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#horizontal-line"><strong>[3]</strong> __ : horizontal line</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-center-bold"><strong>[4]</strong> _[B] :  center, bold</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-center"><strong>[5]</strong> _[C] :   center</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e-label-equation"><strong>[6]</strong> _[E] : label equation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#f-label-figure"><strong>[7]</strong> _[F] : label figure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-bold-center"><strong>[4]</strong> _[B] :  bold, center</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-center"><strong>[5]</strong> _[C] :  center</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e-equation-label"><strong>[6]</strong> _[E] : equation label</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#f-figure-label"><strong>[7]</strong> _[F] : figure label</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#l-latex-math"><strong>[8]</strong> _[L] : LaTeX math</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#m-math-equation"><strong>[9]</strong> _[M] : math equation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-table-label"><strong>[10]</strong> _[T] : table label</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#l-link-sections"><strong>[11]</strong> _[L] : link <em>sections</em></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-link-docs"><strong>[12]</strong> _[D] : link <em>docs</em></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#u-link-urls"><strong>[13]</strong> _[U] : link <em>urls</em></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-link-docs"><strong>[9]</strong> _[D] : link docs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#s-link-sections"><strong>[10]</strong> _[S] : link sections</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#u-link-urls"><strong>[11]</strong> _[U] : link urls</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#m-math-equation"><strong>[12]</strong> _[M] : math equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-table-label"><strong>[13]</strong> _[T] : table label</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-new-page"><strong>[14]</strong> _[P] : new page</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-indent-bold"><strong>[15]</strong> _[[B]] : indent bold</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-code-or-literal-text"><strong>[16]</strong> _[[C]] : code or literal text</a></li>

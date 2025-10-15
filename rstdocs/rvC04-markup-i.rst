@@ -53,7 +53,6 @@ outputs: types of output
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 
 .. topic:: *text* _[#] 
@@ -83,13 +82,12 @@ outputs: text, pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[4]** _[B] :  center, bold
+**[4]** _[B] :  bold, center
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 .. topic:: *text* _[B]
 
@@ -101,7 +99,7 @@ outputs: pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[5]** _[C] :   center 
+**[5]** _[C] :  center 
 -------------------------------------------
 
 .. raw:: html
@@ -118,7 +116,7 @@ outputs: text, pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[6]** _[E] : label equation
+**[6]** _[E] : equation label 
 -----------------------------------------
 
 .. raw:: html
@@ -135,7 +133,7 @@ outputs: text, pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[7]** _[F] : label figure 
+**[7]** _[F] : figure label 
 -----------------------------------------
 
 .. raw:: html
@@ -171,7 +169,57 @@ outputs: pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[9]** _[M] : math equation
+**[9]** _[D] : link docs
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *text* _[D] report link 
+    
+    text at end of line _[D] doc-file-name, link label
+
+Links *docs* within a report
+
+outputs: text, pdf, html
+
+
+**[10]** _[S] : link sections
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *text* _[S] doc link
+    
+    *text* _[S] section number, link label
+
+Links *sections* within a *doc*
+
+outputs: text, pdf, html
+
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+
+**[11]** _[U] : link urls
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *text* _[U] url link  
+    
+    text at end of line _[U] urlname, link label
+
+outputs: text, pdf, html
+
+
+**[12]** _[M] : math equation
 -----------------------------------------
 
 .. raw:: html
@@ -190,7 +238,7 @@ outputs: text, pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[10]** _[T] : table label
+**[13]** _[T] : table label
 ------------------------------------------
 
 .. raw:: html
@@ -208,54 +256,6 @@ outputs: text, pdf, html
 .. raw:: html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[11]** _[L] : link *sections* 
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *text* _[L] doc link
-    
-    *text* _[L] section number, link label
-
-Links *sections* within a *doc*
-
-outputs: text, pdf, html
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[12]** _[D] : link *docs*
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *text* _[D] report link 
-    
-    text at end of line _[D] doc-file-name, link label
-
-Links *docs* within a report
-
-outputs: text, pdf, html
-
-
-**[13]** _[U] : link *urls*
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *text* _[U] url link  
-    
-    text at end of line _[U] urlname, link label
-
-outputs: text, pdf, html
 
 
 **[14]** _[P] : new page
