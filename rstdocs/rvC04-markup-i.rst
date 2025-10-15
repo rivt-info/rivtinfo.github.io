@@ -42,6 +42,10 @@ outputs: types of output
 
     <hr>
 
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
 
 **[2]** _[#] :  endnote number
 -------------------------------------
@@ -54,10 +58,13 @@ outputs: types of output
 
 .. topic:: *text* _[#] 
     
-   end of text with auto endnote. _[#]
+   end of line - text is wrapped when formatted. _[#]
 
 outputs: text, pdf, html
 
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 **[3]** __ : horizontal line
 --------------------------------------- 
@@ -67,10 +74,14 @@ outputs: text, pdf, html
 
 .. topic:: 4 or more underscores ____ 
 
-    ____    
+    ___________  
+
     
 outputs: text, pdf, html
 
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 **[4]** _[B] :  center, bold
 -------------------------------------------
@@ -86,6 +97,9 @@ outputs: text, pdf, html
 
 outputs: pdf, html
 
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 **[5]** _[C] :   center 
 -------------------------------------------
@@ -100,6 +114,9 @@ outputs: pdf, html
 
 outputs: text, pdf, html
 
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 **[6]** _[E] : label equation
 -----------------------------------------
@@ -110,10 +127,13 @@ outputs: text, pdf, html
 
 .. topic:: *equation label* _[E]
 
-   An autonumbered equation label _[E]
+   This label will be assigned an equation number  _[E]
 
 outputs: text, pdf, html
 
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
 
 **[7]** _[F] : label figure 
 -----------------------------------------
@@ -124,27 +144,53 @@ outputs: text, pdf, html
 
 .. topic:: *caption* _[F]
 
-   An autonumbered figure label _[E]
+   This caption will be assigned a figure number _[F]
 
 outputs: text, pdf, html
 
+.. raw:: html
 
-**[8]** _[M] : math equation
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+**[8]** _[L] : LaTeX math 
 -----------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: *equation* _[S]
+.. topic:: *equation* _[L]
 
-    f(x) = sin(x) + y/5 _[S]
+    \frac{1}{\sqrt{x}} _[L]
 
+This math expression will be formated in LaTeX.
+
+outputs: pdf, html
+
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+**[9]** _[M] : math equation
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *equation* _[M]
+
+    f(x,y) = sin(x) + y/5 _[M]
+
+This math expression will be formated in ASCII text.
 
 outputs: text, pdf, html
 
+.. raw:: html
 
-**[9]** _[T]  table label
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+**[10]** _[T] : table label
 ------------------------------------------
 
 .. raw:: html
@@ -155,10 +201,15 @@ outputs: text, pdf, html
 
    An autonumbered table title _[T]
 
+This table title will be assigned a table number.
+
 outputs: text, pdf, html
 
+.. raw:: html
 
-**[10]** _[L] :  link *sections* 
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+**[11]** _[L] : link *sections* 
 -----------------------------------------
 
 .. raw:: html
@@ -173,8 +224,11 @@ Links *sections* within a *doc*
 
 outputs: text, pdf, html
 
+.. raw:: html
 
-**[11]** _[D] :  link *docs*
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+**[12]** _[D] : link *docs*
 -----------------------------------------
 
 .. raw:: html
@@ -190,7 +244,7 @@ Links *docs* within a report
 outputs: text, pdf, html
 
 
-**[12]** _[U] :  link *urls*
+**[13]** _[U] : link *urls*
 -----------------------------------------
 
 .. raw:: html
@@ -204,7 +258,7 @@ outputs: text, pdf, html
 outputs: text, pdf, html
 
 
-**[13]** _[P] : new page
+**[14]** _[P] : new page
 -----------------------------------------
 
 .. raw:: html
@@ -218,7 +272,7 @@ outputs: text, pdf, html
 outputs: text, pdf, html
 
 
-**[14]** _[[B]] : indent bold
+**[15]** _[[B]] : indent bold
 ------------------------------------------------
 
 .. raw:: html
@@ -238,7 +292,7 @@ outputs: text, pdf, html
 outputs: text, pdf, html
 
 
-**[15]** _[[C]] : code or literal text
+**[16]** _[[C]] : code or literal text
 ------------------------------------------------
 
 .. raw:: html
@@ -258,7 +312,7 @@ outputs: text, pdf, html
 outputs: text, pdf, html
 
 
-**[16]** _[[L]] : LaTeX
+**[17]** _[[L]] : LaTeX
 ------------------------------------------------
 
 .. raw:: html
@@ -278,48 +332,7 @@ outputs: text, pdf, html
 outputs: pdf, html
 
 
-**[17]** _[[T]] : topic
-------------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic::  _[[T]] *topic*
-
-    ::
-        
-        _[[T]] this a topic title : after colon will be italic
-        This is a topic description.
-        ...
-        _[[Q]]
-
-
-outputs: text, pdf, html
-
-
-
-**[18]** _[[C]] : code or literal
-------------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic::  _[[C]] *language*
-
-    ::
-        
-        _[[C]]
-        text
-        text
-        ...
-        _[[Q]]
-
-outputs: text, pdf, html
-
-
-**[19]** _[[E]] :  endnote text
+**[18]** _[[E]] : endnote text
 -------------------------------------------    
 
 .. raw:: html
@@ -338,7 +351,7 @@ outputs: text, pdf, html
 outputs: text, pdf, html
 
 
-**[20]** _[[I]] : indent italic
+**[19]** _[[I]] : indent italic
 ------------------------------------------------
 
 .. raw:: html
@@ -358,7 +371,7 @@ outputs: text, pdf, html
 outputs: pdf, html
 
 
-**[21]** _[[L]] : LaTeX
+**[20]** _[[L]] : LaTeX
 ------------------------------------------------
 
 .. raw:: html
@@ -378,7 +391,7 @@ outputs: pdf, html
 outputs: pdf, html
 
 
-**[22]** _[[N]] :  indent
+**[21]** _[[N]] :  indent
 ----------------------------------------------
 
 .. raw:: html
@@ -398,7 +411,7 @@ outputs: pdf, html
 outputs: text, pdf, html
 
 
-**[23]** _[[T]] : topic
+**[22]** _[[T]] : topic
 ------------------------------------------------
 
 .. raw:: html
@@ -419,7 +432,7 @@ outputs: text, pdf, html
 outputs: text, pdf, html
 
 
-**[24]** **COMMAND KEY**
+**[23]** **COMMAND KEY**
 ---------------------------
 
 
@@ -436,7 +449,7 @@ outputs: text, pdf, html
 outputs: types of outputs
 
 
-**[25]** | IMG | - insert image
+**[24]** | IMG | - insert image
 -------------------------------------------
 
 .. raw:: html
@@ -454,7 +467,7 @@ reads PNG and JPEG files (.png, jpg)
 outputs: PDF, HTML
 
 
-**[26]** | IMG2 | - adjacent images 
+**[25]** | IMG2 | - adjacent images 
 --------------------------------------------------
 
 .. raw:: html
@@ -471,7 +484,7 @@ reads PNG and JPEG files (.png, jpg)
 outputs: PDF, HTML
 
 
-**[27]** | TABLE | - format table
+**[26]** | TABLE | - format table
 ------------------------------------------
 
 .. raw:: html
@@ -488,7 +501,7 @@ reads text, csv and EXCEL files (.txt, .csv, .xls)
 outputs: text, PDF HTML
 
 
-**[28]** | TEXT | - format text
+**[27]** | TEXT | - format text
 ------------------------------------------
 
 .. raw:: html
