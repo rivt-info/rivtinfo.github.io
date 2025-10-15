@@ -46,7 +46,7 @@ outputs: types of output
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[2]** _[#] :  endnote number
+**[2]** _[#] : endnote number
 -------------------------------------
 
 .. raw:: html
@@ -81,7 +81,7 @@ outputs: text, pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[4]** _[B] :  bold, center
+**[4]** _[B] : bold, center
 -------------------------------------------
 
 .. raw:: html
@@ -90,7 +90,7 @@ outputs: text, pdf, html
 
 .. topic:: *text* _[B]
 
-    This text will be bold and centered _[B]
+    *This text will be bold and centered* _[B]
 
 outputs: pdf, html
 
@@ -107,7 +107,7 @@ outputs: pdf, html
 
 .. topic:: *text* _[C]
 
-    This text will be centered _[C]
+    *This text will be centered* _[C]
 
 outputs: text, pdf, html
 
@@ -124,7 +124,7 @@ outputs: text, pdf, html
 
 .. topic:: *equation label* _[E]
 
-   This label will be assigned an equation number  _[E]
+   *Label assigned an equation number*  _[E]
 
 outputs: text, pdf, html
 
@@ -141,7 +141,7 @@ outputs: text, pdf, html
 
 .. topic:: *caption* _[F]
 
-   This caption will be assigned a figure number _[F]
+   *Caption assigned a figure number* _[F]
 
 outputs: text, pdf, html
 
@@ -158,9 +158,9 @@ outputs: text, pdf, html
 
 .. topic:: *equation* _[L]
 
-    \frac{1}{\sqrt{x}} _[L]
+    *\frac{1}{\sqrt{x}}* _[L]
 
-This math expression will be formated in LaTeX, even if LaTeX is not installed.
+Math expression will be formated in LaTeX, even if LaTeX is not installed.
 
 outputs: pdf, html
 
@@ -177,7 +177,7 @@ outputs: pdf, html
 
 .. topic:: *text* _[D] report link 
     
-    text at end of line _[D] doc-file-name, link label
+    *text at end of line* _[D] doc-file-name, link label
 
 Links *docs* within a report
 
@@ -215,7 +215,7 @@ outputs: text, pdf, html
 
 .. topic:: *text* _[U] url link  
     
-    text at end of line _[U] urlname, link label
+    *text at end of line* _[U] urlname, link label
 
 outputs: text, pdf, html
 
@@ -232,9 +232,9 @@ outputs: text, pdf, html
 
 .. topic:: *equation* _[M]
 
-    f(x,y) = sin(x) + y/5 _[M]
+    *f(x,y) = sin(x) + y/5* _[M]
 
-This math expression will be formated in ASCII text.
+Math expression will be formated in ASCII text.
 
 outputs: text, pdf, html
 
@@ -251,9 +251,9 @@ outputs: text, pdf, html
 
 .. topic:: *title* _[T]
 
-   An autonumbered table title _[T]
+   *An autonumbered table title* _[T]
 
-This table title will be assigned a table number.
+Table title will be assigned a table number.
 
 outputs: text, pdf, html
 
@@ -270,7 +270,10 @@ outputs: text, pdf, html
 
 .. topic:: _[P]
 
-    this will start a new page _[P]
+     _[P]
+
+
+This starts a new page.
 
 outputs: text, pdf, html
 
@@ -295,7 +298,7 @@ outputs: text, pdf, html
         ...
         _[[Q]]
 
-outputs: text, pdf, html
+outputs: pdf, html
 
 .. raw:: html
 
@@ -393,7 +396,7 @@ outputs: pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[20]** _[[N]] :  indent
+**[20]** _[[N]] : indent
 ----------------------------------------------
 
 .. raw:: html
@@ -456,7 +459,7 @@ outputs: types of outputs
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[23]** | IMG | - insert image
+**[23]** | IMG | : insert image
 -------------------------------------------
 
 .. raw:: html
@@ -476,7 +479,7 @@ outputs: PDF, HTML
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[24]** | IMG2 | - adjacent images 
+**[24]** | IMG2 | : adjacent images 
 --------------------------------------------------
 
 .. raw:: html
@@ -496,7 +499,7 @@ outputs: PDF, HTML
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[25]** | TABLE | - format table
+**[25]** | TABLE | : format table
 ------------------------------------------
 
 .. raw:: html
@@ -516,7 +519,7 @@ outputs: text, PDF HTML
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[26]** | TEXT | - format text
+**[26]** | TEXT | : format text
 ------------------------------------------
 
 .. raw:: html
