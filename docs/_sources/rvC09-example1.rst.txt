@@ -1,4 +1,4 @@
-**C.9 Example 1**
+**C.9 Example**
 ====================
 
 .. raw:: html
