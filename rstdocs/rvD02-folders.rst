@@ -179,7 +179,7 @@ An example *report* folder structure is shown below.
                 └── loads.py
                 ├── tablepy.csv                               
                 └── imagepy.png          
-            ├── [Values]/                        |||| stored values
+            ├── [Values]/                        |||| values files
                 ├── new-units.py       
                 ├── add-values-v.csv       
                 ├── v101-2.csv

@@ -80,9 +80,9 @@ all           _[[Q]]                          quit (all)
 
     <hr>
 
-======= ==================================================== ===== ==================
-Scope           | Command | path | parameters                 R/W     file types
-======= ==================================================== ===== ==================
+======= ==================================================== ===== ================
+Scope           | Command | path | parameters                 R/W      types
+======= ==================================================== ===== ================
 R         | LINUX | relative path | popen; run                R     sh
 R         | MACOS | relative path | popen; run                R     sh
 R         | WIN | relative path   | popen; run                R     bat, cmd
@@ -98,8 +98,7 @@ T         | LATEX | relative path | pdftex, file              R     tex
 T         | PYTHON | relative path | rivt; external           R     py
 D         | APPEND | relative path | cover_page_title         W     pdf, html
 D         | DOCS | relative path | pdf; pdftex; text; html    W     pdf, html, txt
-======= ==================================================== ===== ==================
-
+======= ==================================================== ===== ================
 
 .. raw:: html
 
@@ -108,14 +107,12 @@ D         | DOCS | relative path | pdf; pdftex; text; html    W     pdf, html, t
 **[4]** Folders
 -------------------
 
-
 **Folder Key**
 
 - Required folder and file prefix names are shown in brackets [ ]. 
 - Single vertical bar ( | ) identifies files provided by the report author. 
 - Double vertical bar ( || ) identifies files written by rivtlib 
 - Four vertical bars ( |||| ) are a mix of author and rivtlib written files
-
 
 .. code-block:: bash
 
@@ -130,7 +127,7 @@ D         | DOCS | relative path | pdf; pdftex; text; html    W     pdf, html, t
         ├── [public]/                   || public rivt folder
         ├── [publish]/                  || reports folder
         ├── [src]/                      |||| source folder
-        └── README.txt                  | GitHub searchable text report 
+        └── README.txt                  || GitHub searchable text report 
 
     Expanded folders
 

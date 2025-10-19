@@ -21,8 +21,14 @@ _[[TAG]] : block tag description
 
 .. topic::  syntax
 
-    types of output
+    example
 
+output types
+
+
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
 
 **[2]** _[[PYTHON]] : Python code
 ------------------------------------------------
@@ -33,16 +39,25 @@ _[[TAG]] : block tag description
 
 .. code-block:: text
      
-      _[[PYTHON]] description
+      _[[PYTHON]] rvnamespace; user-namespace
       code
       code
       ...
       _[[Q]]
 
-text, pdf, html
+Executable code is run and functions are stored. If the parameter is
+*rvnamespace* the module is imported into the rivt file namespace.
+Alternatively the module is imported into a user specified namespace.
 
+Functions are evaluated using the "=" command in the Value API function.
 
-**[3]** _[[RUBY]] : Ruby code
+outputs: text, pdf, html
+
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
+**[3]** _[[RST]] : reStructuredText code
 ------------------------------------------------
 
 .. raw:: html
@@ -51,15 +66,17 @@ text, pdf, html
 
 .. code-block:: text 
         
-     _[[RUBY]] description
+     _[[RST]] description
      code
      code
      ...
      _[[Q]]
    
-text, pdf, html
+outputs: pdf, html
 
+.. raw:: html
 
+    <p id="api">&lt;i&gt;</p>
 
 **[4]** _[[HTML]] : HTML code
 ------------------------------------------------
@@ -70,16 +87,23 @@ text, pdf, html
 
 .. code-block:: text
         
-     _[[HTML]]
+     _[[HTML]] pdf;nopdf
      code
      code
      ...
      _[[Q]]
-   
-    pdf, html
 
+If the parameter is "pdf" a PDF formatted file is output. The file name is
+derived from the rivt doc and section number. It may then be appended to a PDF
+*doc*.
 
-**[05]** _[[LATEX]] : LaTeX code
+outputs: pdf, html
+
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
+**[5]** _[[LATEX]] : LaTeX code
 ------------------------------------------------
 
 .. raw:: html
@@ -94,76 +118,125 @@ text, pdf, html
     ...
     _[[Q]]
 
-    pdf, html
+pdf, html
 
+.. raw:: html
 
-**[06]** COMMAND KEY
+    <p id="api">&lt;i&gt;</p>
+
+**[6]** COMMAND KEY
 ----------------------
 
 .. raw:: html
 
     <hr>
 
-
-
-.. raw:: html
-
-    <hr>
-
-
 .. topic:: | COMMAND | parameters
 
-  example
+    example
 
-file types
+output file types
 
+.. raw:: html
 
+    <p id="api">&lt;i&gt;</p>
 
-**[07]** | PYTHON | functions 
+**[7]** | PYTHON | script and functions 
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
+.. topic:: | PYTHON | relative path |  user-namespace; rvnamespace
+   
+    | PYTHON | src/tools/module.py | tool1
 
-.. topic:: | PYTHON | path | filename
+Imports .py files. Executable code is run and functions are stored. If the
+parameter is *rvnamespace* the module is imported into the rivt file namespace.
+Alternatively the module is imported into a user specified namespace.
 
-   reads .py files
+Functions are evaluated using the "=" command in the Value API function.
 
+outputs: text, pdf, html
 
-**[08]** | HTML | markup
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
+**[8]** | HTML | markup
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
+.. topic:: | HTML | relative path | pdf;nopdf, newpage;samepage
 
-.. topic:: | HTML | path | filename  
+    | HTML | src/tools/page1.html | pdf, newpage
 
-   reads .html files
+Reads .html, .htm files. If the parameter is "pdf" a PDF formatted file is
+output. The file name is derived from the rivt doc and section number. It may
+then be appended to a PDF *doc*. The page parameter specifies whether a new
+page is started.
 
+outputs: pdf, html
 
-**[09]** | LATEX | code
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
+**[9]** | RST | reStructuredText
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | LATEX | path | filename 
+.. topic:: | RST | relative path | newpage;samepage
 
-   reads .tex file
+    | RST | src/tools/page1.rst | samepage
 
+Reads .rst files. The file name is derived from the rivt doc and section
+number.  The page parameter specifies whether a new page is started.
 
-**[10]** | QCAD | script
+outputs: pdf, html
+
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
+**[10]** | LATEX | markup
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | QCAD | path | filename 
+.. topic:: | LATEX | relative path | newpage;samepage
 
-   reads .js file
+    | LATEX | src/tools/page1.tex | newpage
+
+Reads .tex files. The file name is derived from the rivt doc and section
+number.  The page parameter specifies whether a new page is started.
+
+outputs: pdf, html
+
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
+**[11]** | QCAD | script
+-------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: | QCAD | relative path | newpage;samepage
+
+    | QCAD | relative path | newpage
+
+reads .js file
+
+outputs: pdf, html

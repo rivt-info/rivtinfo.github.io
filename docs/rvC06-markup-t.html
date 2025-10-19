@@ -388,90 +388,131 @@
 <hr><p>_[[TAG]] : block tag description</p>
 <hr><aside class="topic">
 <p class="topic-title">syntax</p>
-<p>types of output</p>
+<p>example</p>
 </aside>
-</section>
+<p>output types</p>
+<p id="api">&lt;i&gt;</p></section>
 <section id="python-python-code">
 <h2><strong>[2]</strong> _[[PYTHON]] : Python code<a class="headerlink" href="#python-python-code" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[PYTHON]] description
+<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[PYTHON]] rvnamespace; user-namespace
 code
 code
 ...
 _[[Q]]
 </pre></div>
 </div>
-<p>text, pdf, html</p>
-</section>
-<section id="ruby-ruby-code">
-<h2><strong>[3]</strong> _[[RUBY]] : Ruby code<a class="headerlink" href="#ruby-ruby-code" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[RUBY]] description
+<p>Executable code is run and functions are stored. If the parameter is
+<em>rvnamespace</em> the module is imported into the rivt file namespace.
+Alternatively the module is imported into a user specified namespace.</p>
+<p>Functions are evaluated using the “=” command in the Value API function.</p>
+<p>outputs: text, pdf, html</p>
+<p id="api">&lt;i&gt;</p></section>
+<section id="rst-restructuredtext-code">
+<h2><strong>[3]</strong> _[[RST]] : reStructuredText code<a class="headerlink" href="#rst-restructuredtext-code" title="Link to this heading">#</a></h2>
+<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[RST]] description
 code
 code
 ...
 _[[Q]]
 </pre></div>
 </div>
-<p>text, pdf, html</p>
-</section>
+<p>outputs: pdf, html</p>
+<p id="api">&lt;i&gt;</p></section>
 <section id="html-html-code">
 <h2><strong>[4]</strong> _[[HTML]] : HTML code<a class="headerlink" href="#html-html-code" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span> _[[HTML]]
- code
- code
- ...
- _[[Q]]
-
-pdf, html
+<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[HTML]] pdf;nopdf
+code
+code
+...
+_[[Q]]
 </pre></div>
 </div>
-</section>
+<p>If the parameter is “pdf” a PDF formatted file is output. The file name is
+derived from the rivt doc and section number. It may then be appended to a PDF
+<em>doc</em>.</p>
+<p>outputs: pdf, html</p>
+<p id="api">&lt;i&gt;</p></section>
 <section id="latex-latex-code">
-<h2><strong>[05]</strong> _[[LATEX]] : LaTeX code<a class="headerlink" href="#latex-latex-code" title="Link to this heading">#</a></h2>
+<h2><strong>[5]</strong> _[[LATEX]] : LaTeX code<a class="headerlink" href="#latex-latex-code" title="Link to this heading">#</a></h2>
 <hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[LATEX]]
 code
 code
 ...
 _[[Q]]
-
-pdf, html
 </pre></div>
 </div>
-</section>
+<p>pdf, html</p>
+<p id="api">&lt;i&gt;</p></section>
 <section id="command-key">
-<h2><strong>[06]</strong> COMMAND KEY<a class="headerlink" href="#command-key" title="Link to this heading">#</a></h2>
-<hr><hr><aside class="topic">
+<h2><strong>[6]</strong> COMMAND KEY<a class="headerlink" href="#command-key" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
 <p class="topic-title">| COMMAND | parameters</p>
 <p>example</p>
 </aside>
-<p>file types</p>
-</section>
-<section id="python-functions">
-<h2><strong>[07]</strong> | PYTHON | functions<a class="headerlink" href="#python-functions" title="Link to this heading">#</a></h2>
+<p>output file types</p>
+<p id="api">&lt;i&gt;</p></section>
+<section id="python-script-and-functions">
+<h2><strong>[7]</strong> | PYTHON | script and functions<a class="headerlink" href="#python-script-and-functions" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| PYTHON | path | filename</p>
-<p>reads .py files</p>
+<p class="topic-title">| PYTHON | relative path |  user-namespace; rvnamespace</p>
+<div class="line-block">
+<div class="line">PYTHON | src/tools/module.py | tool1</div>
+</div>
 </aside>
-</section>
+<p>Imports .py files. Executable code is run and functions are stored. If the
+parameter is <em>rvnamespace</em> the module is imported into the rivt file namespace.
+Alternatively the module is imported into a user specified namespace.</p>
+<p>Functions are evaluated using the “=” command in the Value API function.</p>
+<p>outputs: text, pdf, html</p>
+<p id="api">&lt;i&gt;</p></section>
 <section id="html-markup">
-<h2><strong>[08]</strong> | HTML | markup<a class="headerlink" href="#html-markup" title="Link to this heading">#</a></h2>
+<h2><strong>[8]</strong> | HTML | markup<a class="headerlink" href="#html-markup" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| HTML | path | filename</p>
-<p>reads .html files</p>
+<p class="topic-title">| HTML | relative path | pdf;nopdf, newpage;samepage</p>
+<div class="line-block">
+<div class="line">HTML | src/tools/page1.html | pdf, newpage</div>
+</div>
 </aside>
-</section>
-<section id="latex-code">
-<h2><strong>[09]</strong> | LATEX | code<a class="headerlink" href="#latex-code" title="Link to this heading">#</a></h2>
+<p>Reads .html, .htm files. If the parameter is “pdf” a PDF formatted file is
+output. The file name is derived from the rivt doc and section number. It may
+then be appended to a PDF <em>doc</em>. The page parameter specifies whether a new
+page is started.</p>
+<p>outputs: pdf, html</p>
+<p id="api">&lt;i&gt;</p></section>
+<section id="rst-restructuredtext">
+<h2><strong>[9]</strong> | RST | reStructuredText<a class="headerlink" href="#rst-restructuredtext" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| LATEX | path | filename</p>
-<p>reads .tex file</p>
+<p class="topic-title">| RST | relative path | newpage;samepage</p>
+<div class="line-block">
+<div class="line">RST | src/tools/page1.rst | samepage</div>
+</div>
 </aside>
-</section>
+<p>Reads .rst files. The file name is derived from the rivt doc and section
+number.  The page parameter specifies whether a new page is started.</p>
+<p>outputs: pdf, html</p>
+<p id="api">&lt;i&gt;</p></section>
+<section id="latex-markup">
+<h2><strong>[10]</strong> | LATEX | markup<a class="headerlink" href="#latex-markup" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">| LATEX | relative path | newpage;samepage</p>
+<div class="line-block">
+<div class="line">LATEX | src/tools/page1.tex | newpage</div>
+</div>
+</aside>
+<p>Reads .tex files. The file name is derived from the rivt doc and section
+number.  The page parameter specifies whether a new page is started.</p>
+<p>outputs: pdf, html</p>
+<p id="api">&lt;i&gt;</p></section>
 <section id="qcad-script">
-<h2><strong>[10]</strong> | QCAD | script<a class="headerlink" href="#qcad-script" title="Link to this heading">#</a></h2>
+<h2><strong>[11]</strong> | QCAD | script<a class="headerlink" href="#qcad-script" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| QCAD | path | filename</p>
-<p>reads .js file</p>
+<p class="topic-title">| QCAD | relative path | newpage;samepage</p>
+<div class="line-block">
+<div class="line">QCAD | relative path | newpage</div>
+</div>
 </aside>
+<p>reads .js file</p>
+<p>outputs: pdf, html</p>
 </section>
 </section>
 
@@ -524,14 +565,15 @@ pdf, html
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tag-key"><strong>[1]</strong> TAG KEY</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-python-code"><strong>[2]</strong> _[[PYTHON]] : Python code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ruby-ruby-code"><strong>[3]</strong> _[[RUBY]] : Ruby code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rst-restructuredtext-code"><strong>[3]</strong> _[[RST]] : reStructuredText code</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-html-code"><strong>[4]</strong> _[[HTML]] : HTML code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex-latex-code"><strong>[05]</strong> _[[LATEX]] : LaTeX code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#command-key"><strong>[06]</strong> COMMAND KEY</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-functions"><strong>[07]</strong> | PYTHON | functions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-markup"><strong>[08]</strong> | HTML | markup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex-code"><strong>[09]</strong> | LATEX | code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qcad-script"><strong>[10]</strong> | QCAD | script</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex-latex-code"><strong>[5]</strong> _[[LATEX]] : LaTeX code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#command-key"><strong>[6]</strong> COMMAND KEY</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-script-and-functions"><strong>[7]</strong> | PYTHON | script and functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-markup"><strong>[8]</strong> | HTML | markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rst-restructuredtext"><strong>[9]</strong> | RST | reStructuredText</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex-markup"><strong>[10]</strong> | LATEX | markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qcad-script"><strong>[11]</strong> | QCAD | script</a></li>
 </ul>
   </nav></div>
 
