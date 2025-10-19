@@ -1,4 +1,4 @@
-**A.4 Doc Example**
+**A.4 Example**
 =========================
 
 .. raw:: html

@@ -1,4 +1,4 @@
-**A.5 Report Example**
+**D.5 Example**
 =========================
 
 .. raw:: html
