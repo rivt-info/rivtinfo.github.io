@@ -583,9 +583,24 @@ is the <em>doc number</em> and <em>s</em> is the section number.</p>
 <p>example</p>
 </aside>
 <p>outputs: types of outputs</p>
-<p style="text-align: right;"> &lt;i&gt; </p></section>
+<p style="text-align: right;"> &lt;i&gt; </p><p id="api">&lt;i&gt;</p></section>
+<section id="func-python-functions">
+<h2><strong>[20]</strong> | FUNC | Python functions<a class="headerlink" href="#func-python-functions" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">| FUNC | relative path |  user-namespace; rvnamespace</p>
+<div class="line-block">
+<div class="line">FUNC | src/tools/functions.py | f1</div>
+</div>
+</aside>
+<p>Imports .py files. Functions (methods) are stored. If the parameter is
+<em>rvnamespace</em> the module is imported into the rivt file namespace.
+Otherwise the module is imported into a user specified namespace.</p>
+<p>Functions are evaluated using the assigne (&lt;=) command in the <em>Value API
+function</em>.</p>
+<p>outputs: text, pdf, html</p>
+</section>
 <section id="img-insert-image">
-<h2><strong>[20]</strong> | IMG | : insert image<a class="headerlink" href="#img-insert-image" title="Link to this heading">#</a></h2>
+<h2><strong>[21]</strong> | IMG | : insert image<a class="headerlink" href="#img-insert-image" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| IMG | relative path | scale, caption (_[F])</p>
 <div class="line-block">
@@ -597,7 +612,7 @@ the report folder.</p>
 <p>outputs: PDF, HTML</p>
 <p style="text-align: right;"> &lt;i&gt; </p></section>
 <section id="img2-adjacent-images">
-<h2><strong>[21]</strong> | IMG2 | : adjacent images<a class="headerlink" href="#img2-adjacent-images" title="Link to this heading">#</a></h2>
+<h2><strong>[22]</strong> | IMG2 | : adjacent images<a class="headerlink" href="#img2-adjacent-images" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| IMG2 | rel path1, rel path2| sc1, sc2, cap1 (_[F]), cap2 (_[F])</p>
 <div class="line-block">
@@ -609,7 +624,7 @@ document. The file path is relative to the report folder.</p>
 <p>outputs: PDF, HTML</p>
 <p style="text-align: right;"> &lt;i&gt; </p></section>
 <section id="table-format-table">
-<h2><strong>[22]</strong> | TABLE | : format table<a class="headerlink" href="#table-format-table" title="Link to this heading">#</a></h2>
+<h2><strong>[23]</strong> | TABLE | : format table<a class="headerlink" href="#table-format-table" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| TABLE | relative path | width, l;c;r, title  (_[T])</p>
 <div class="line-block">
@@ -622,8 +637,8 @@ specifies the maximum column width. The l,c,r parameter specifies cell
 justification (left, center, right).</p>
 <p>outputs: text, PDF, HTML</p>
 <p style="text-align: right;"> &lt;i&gt; </p></section>
-<section id="value-format-values">
-<h2><strong>[23]</strong> | VALUE | : format values<a class="headerlink" href="#value-format-values" title="Link to this heading">#</a></h2>
+<section id="values-format-values">
+<h2><strong>[24]</strong> | VALUES | : format values<a class="headerlink" href="#values-format-values" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| VALUE | rel path | hide; insert</p>
 <div class="line-block">
@@ -635,17 +650,19 @@ insert parameter specifies whether the value table is visible in the doc.</p>
 <p>outputs: text, PDF HTML</p>
 <p style="text-align: right;"> &lt;i&gt; </p></section>
 <section id="assign-equation-value">
-<h2><strong>[24]</strong> <strong>&lt;=</strong> : assign equation value<a class="headerlink" href="#assign-equation-value" title="Link to this heading">#</a></h2>
+<h2><strong>[25]</strong> <strong>&lt;=</strong> : assign equation value<a class="headerlink" href="#assign-equation-value" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">b &lt;= a * 10 | unit1, unit2, decimals | reference</p>
 <p>b_1 &lt;= E_1 * 12.1*IN^2 | KIP, kN, 2 | Std. 123</p>
 </aside>
-<p>Assigns a variable to an equation value and writes the value to a file
-<em>vnum-s.csv</em> where <em>num</em> is the <em>doc number</em> and <em>s</em> is the section number.</p>
+<p>Assigns a variable or variables to an equation or function value and writes the
+values to a file <em>vnum-s.csv</em> where <em>num</em> is the <em>doc number</em> and <em>s</em> is the
+section number. The file is written to the folder <em>src/values</em> unless
+<em>rvsource</em> is set to <em>True</em> in the <em>Meta API function</em>.</p>
 <p>outputs: text, PDF, HTML</p>
 <p style="text-align: right;"> &lt;i&gt; </p></section>
 <section id="define-value">
-<h2><strong>[25]</strong> <strong>:=</strong> : define value<a class="headerlink" href="#define-value" title="Link to this heading">#</a></h2>
+<h2><strong>[26]</strong> <strong>:=</strong> : define value<a class="headerlink" href="#define-value" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">c := 5*unit1 | unit1, unit2, decimals | description</p>
 <p>D_1 = 10*IN | IN, M, 3 | beam depth</p>
@@ -722,12 +739,13 @@ is the <em>doc number</em> and <em>s</em> is the section number.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-topic"><strong>[17]</strong> _[[T]] : topic</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#v-values"><strong>[18]</strong> _[[V]] : values</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#command-key"><strong>[19]</strong> <strong>COMMAND KEY</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img-insert-image"><strong>[20]</strong> | IMG | : insert image</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img2-adjacent-images"><strong>[21]</strong> | IMG2 | : adjacent images</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-format-table"><strong>[22]</strong> | TABLE | : format table</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#value-format-values"><strong>[23]</strong> | VALUE | : format values</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-equation-value"><strong>[24]</strong> <strong>&lt;=</strong> : assign equation value</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#define-value"><strong>[25]</strong> <strong>:=</strong> : define value</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#func-python-functions"><strong>[20]</strong> | FUNC | Python functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img-insert-image"><strong>[21]</strong> | IMG | : insert image</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img2-adjacent-images"><strong>[22]</strong> | IMG2 | : adjacent images</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-format-table"><strong>[23]</strong> | TABLE | : format table</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#values-format-values"><strong>[24]</strong> | VALUES | : format values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-equation-value"><strong>[25]</strong> <strong>&lt;=</strong> : assign equation value</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#define-value"><strong>[26]</strong> <strong>:=</strong> : define value</a></li>
 </ul>
   </nav></div>
 

@@ -409,7 +409,33 @@ outputs: types of outputs
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[20]** | IMG | : insert image
+
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
+**[20]** | FUNC | Python functions 
+-------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: | FUNC | relative path |  user-namespace; rvnamespace
+   
+    | FUNC | src/tools/functions.py | f1
+
+Imports .py files. Functions (methods) are stored. If the parameter is
+*rvnamespace* the module is imported into the rivt file namespace.
+Otherwise the module is imported into a user specified namespace.
+
+Functions are evaluated using the assigne (<=) command in the *Value API
+function*.
+
+outputs: text, pdf, html
+
+
+**[21]** | IMG | : insert image
 -------------------------------------------
 
 .. raw:: html
@@ -429,7 +455,7 @@ outputs: PDF, HTML
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[21]** | IMG2 | : adjacent images 
+**[22]** | IMG2 | : adjacent images 
 --------------------------------------------------
 
 .. raw:: html
@@ -449,7 +475,7 @@ outputs: PDF, HTML
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[22]** | TABLE | : format table
+**[23]** | TABLE | : format table
 ------------------------------------------
 
 .. raw:: html
@@ -471,7 +497,7 @@ outputs: text, PDF, HTML
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[23]** | VALUE | : format values
+**[24]** | VALUES | : format values
 ------------------------------------------
 
 .. raw:: html
@@ -491,7 +517,7 @@ outputs: text, PDF HTML
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[24]** **<=** : assign equation value
+**[25]** **<=** : assign equation value
 -------------------------------------------
 
 .. raw:: html
@@ -502,8 +528,10 @@ outputs: text, PDF HTML
 
     b_1 <= E_1 * 12.1*IN^2 | KIP, kN, 2 | Std. 123
   
-Assigns a variable to an equation value and writes the value to a file
-*vnum-s.csv* where *num* is the *doc number* and *s* is the section number.
+Assigns a variable or variables to an equation or function value and writes the
+values to a file *vnum-s.csv* where *num* is the *doc number* and *s* is the
+section number. The file is written to the folder *src/values* unless
+*rvsource* is set to *True* in the *Meta API function*.
   
 outputs: text, PDF, HTML
 
@@ -511,7 +539,7 @@ outputs: text, PDF, HTML
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[25]** **:=** : define value
+**[26]** **:=** : define value
 -------------------------------------------
 
 .. raw:: html

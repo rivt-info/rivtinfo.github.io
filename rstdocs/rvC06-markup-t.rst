@@ -1,6 +1,10 @@
 **C.6 Tools - rv.T**
 =======================
 
+Files processed by the *Tools API function* are read and written to the
+*src/tools* folder unless the *rvsource* variable is set to *True* in the *Meta
+API function*.
+
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
@@ -39,17 +43,15 @@ output types
 
 .. code-block:: text
      
-      _[[PYTHON]] rvnamespace; user-namespace
+      _[[PYTHON]] wait;nowait
       code
       code
       ...
       _[[Q]]
 
-Executable code is run and functions are stored. If the parameter is
-*rvnamespace* the module is imported into the rivt file namespace.
-Alternatively the module is imported into a user specified namespace.
-
-Functions are evaluated using the "=" command in the Value API function.
+Executes Python script in the *rivt namespace*. If the parameter is *wait* the
+*rivt file* waits for the script to complete. If the parameter is *nowait*
+execution continues without waiting.
 
 outputs: text, pdf, html
 
@@ -112,7 +114,7 @@ outputs: pdf, html
 
 .. code-block:: text
         
-    _[[LATEX]]
+    _[[LATEX]] description
     code
     code
     ...
@@ -141,22 +143,20 @@ output file types
 
     <p id="api">&lt;i&gt;</p>
 
-**[7]** | PYTHON | script and functions 
+**[7]** | PYTHON | Python script
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | PYTHON | relative path |  user-namespace; rvnamespace
+.. topic:: | SCRIPT | rel path | wait;nowait
    
-    | PYTHON | src/tools/module.py | tool1
+    | PYTHON | src/tools/script1.py | nowait
 
-Imports .py files. Executable code is run and functions are stored. If the
-parameter is *rvnamespace* the module is imported into the rivt file namespace.
-Alternatively the module is imported into a user specified namespace.
-
-Functions are evaluated using the "=" command in the Value API function.
+Executes Python code in the *rivt namespace*. If the parameter is *wait* the
+*rivt file* waits for the script to complete. If the parameter is *nowait*
+execution continues without waiting.
 
 outputs: text, pdf, html
 
@@ -171,11 +171,11 @@ outputs: text, pdf, html
 
     <hr>
 
-.. topic:: | HTML | relative path | pdf;nopdf, newpage;samepage
+.. topic:: | HTML | relative path | pdf;nopdf
 
-    | HTML | src/tools/page1.html | pdf, newpage
+    | HTML | src/tools/page1.html | pdf
 
-Reads .html, .htm files. If the parameter is "pdf" a PDF formatted file is
+Reads .html and .htm files. If the parameter is "pdf" a PDF formatted file is
 output. The file name is derived from the rivt doc and section number. It may
 then be appended to a PDF *doc*. The page parameter specifies whether a new
 page is started.

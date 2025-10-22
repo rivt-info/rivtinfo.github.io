@@ -14,24 +14,24 @@
     <p style="text-align: right;"> &lt;i&gt; </p>
 
 ============= ========================== =======================================
-Scope             Line Tags                    Description (doc scope)
+API Scope             Line Tags                Description (doc type scope)
 ============= ========================== =======================================
-I              text _[#]                   endnote number (all)
-I              text _[D] doc link          doc link (all)
-I              text _[R] report link       report link (all)
-I              text _[U] url               url link (all)
-I              text          _[B]          center bold text (pdf, html)
-I              text          _[C]          center text (all)
-I, V           equation      _[M]          format ASCII math (all) 
-I, V           equation      _[l]          format LaTeX math (PDF, HTML) 
+I, V           text _[#]                   endnote number (all)
+I, V           text _[S] section link      link section within doc (all)
+I, V           text _[D] report link       link doc within report (all)
+I, V           text _[U] url               external url link (all)
+I, V           text          _[C]          center text (all)
+I, V           text          _[R]          right justify text (all)
+I, V           equation      _[L]          format LaTeX math (pdf, html) 
+I, V           equation      _[A]          format ASCII math (all) 
 I, V           label         _[E]          equation label (all)
-I, V           caption       _[F]          image label (all) [1]
+I, V           caption       _[I]          image label (all) [1]
 I, V           title         _[T]          table label (all) [1]
 I, V             _____   or  _[H]          horizontal line >4 underscores (all)
 I, V                         _[P]          new page (all)
 ============= ========================== =======================================
 
-[1] tag may be added to parameter in IMG and TABLE commands
+[1] tag may be added to the label parameter in IMG and TABLE commands
 
 .. raw:: html
 
@@ -44,30 +44,29 @@ I, V                         _[P]          new page (all)
 
     <hr>
 
-============ ============================= =====================================
-API Scope         Block Tags                   Description (doc type scope)
-============ ============================= =====================================
-I             _[[B]]                          indent bold (pdf, html)
-I             _[[I]]                          indent italic (pdf, html)
-I             _[[O]]                          italic, oblique (pdf, html)
-I             _[[L]]                          LaTeX (pdf, html)
-I             _[[N]]                          indent (all)
-I             _[[E]]                          endnote description (all)
-I             _[[C]] *language*               code, literal (all)
-M             _[[AUTH]] *description*         author data (all)
-M             _[[FORK]] *description*         fork data (all)
-R             _[[WIN]] *description*          Windows command script (all)
-R             _[[MACOS]] *description*        Mac shell script (all)
-R             _[[LINUX]] *description*        Linux shell script (all)
-T             _[[PYTHON]] *description*       Python functions (all)
-T             _[[RUBY]] *description*         Ruby script (all)
-T             _[[QCAD]] *description*         QCAD script (pdf,html)
-T             _[[OPENSEES]] *description*     OpenSeesscript (all)
-T             _[[LATEX]] *description*        LaTeX commands (pdf,html)
-T             _[[HTML]] *description*         HTML commands (all)
-all           _[[T]] *topic*                  topic (all)
-all           _[[Q]]                          quit (all)
-============ ============================= =====================================
+============ ====================================== =============================
+API Scope         Block Tags                        Description (doc type scope)
+============ ====================================== =============================
+M             _[[AUTH]] optional label              author data (all)
+R             _[[WIN]] *wait;nowait*                Windows command script (all)
+R             _[[MACOS]] *wait;nowait*              Mac shell script (all)
+R             _[[LINUX]] *wait;nowait*              Linux shell script (all)
+I             _[[BI]]                               bold indent (pdf, html)
+I             _[[II]]                               italic indent (pdf, html)
+I             _[[4]]                                indent spaces (all)
+I, V          _[[NOTE]] optional label              endnote description (all)
+I, V          _[[TEXT]] *language*                  standard, literal, code (all)
+V             _[[FUNC]] userspace, *rvnamespace*    Python function (all)
+V             _[[PYTHON]] *wait;nowait*             Python script (all)
+T             _[[HTML]] *pdf;nopdf*                 HTML commands (pdf,html)
+T             _[[LATEX]] optional label             LaTeX commands (pdf,html)
+T             _[[RST]] optional label               reStructuredText (pdf,html)
+T             _[[OPENSEES]] *wait;nowait*           OpenSees script (all)
+T             _[[QCAD]] *wait;nowait*               QCAD script (all)
+T             _[[RUBY]] *wait;nowait*               Ruby script (all)
+all           _[[TOPIC]] topic                      topic (all)
+all           _[[QUIT]]                             quit (all)
+============ ====================================== =============================
 
 .. raw:: html
 
@@ -83,29 +82,65 @@ all           _[[Q]]                          quit (all)
 ======= ==================================================== ===== ================
 Scope           | Command | path | parameters                 R/W      types
 ======= ==================================================== ===== ================
-R         | LINUX | relative path | popen; run                R     sh
-R         | MACOS | relative path | popen; run                R     sh
-R         | WIN | relative path   | popen; run                R     bat, cmd
+R         | LINUX | relative path | *wait;nowait*             R     sh
+R         | MACOS | relative path | *wait;nowait*             R     sh
+R         | WIN | relative path   | *wait;nowait*             R     bat, cmd
 I, V      | IMG | relative path |  caption, scale             R     png, jpg
 I, V      | IMG2 | relative path | c1, c2, s1, s2             R     png, jpg
-I, V      | TEXT | relative path | normal; literal            R     txt, tex, rst
 I, V      | TABLE | relative path | width, l;c;r, title       R     csv, txt, xlsx
-V         | VALUES | relative path | hide; visible            R     csv
+I, V      | TEXT | relative path |  *literal, standard*       R     txt
+V         | FUNC | relative path | *hide;visible*             R     csv
+V         | VALUE | relative path | *hide;visible*            R     csv
+V         | PYTHON | relative path | userspace;*rvnamespace*  R     py
 V         a := 1*IN  | unit1, unit2, decimal | description    W     define value
 V         b <= a + 3*FT | unit1, unit2, decimal | reference   W     assign value
-T         | HTML | relative path | html; file                 R     html
-T         | LATEX | relative path | pdftex, file              R     tex
-T         | PYTHON | relative path | rivt; external           R     py
-D         | APPEND | relative path | cover_page_title         W     pdf, html
-D         | DOCS | relative path | pdf; pdftex; text; html    W     pdf, html, txt
+V         c <= func1(a,b) | unit1, unit2, decimal | ref       W     assign value
+T         | HTML | relative path | *pdf;nopdf*                R     html
+T         | LATEX | relative path | *pdftex;tex*              R     tex
+T         | RST | relative path | *pdf;html;both*             R     rst
+T         | OPENSEES | relative path | *wait;nowait*          R     py
+T         | QCAD | relative path | *wait;nowait*              R     js
+T         | RUBY | relative path | *wait;nowait*              R     rb
+D         | APPEND | relative path | cover_page_title         W     pdf
+D         | PUBLISH | relative path | *pdf;pdftex;text;html*  W     pdf, html, txt
 ======= ==================================================== ===== ================
 
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
 
-**[4]** Folders
+**[4]** Default Header Settings
+------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+
+====== ============= ================= ================ ============== 
+API         print        public            merge          history       
+====== ============= ================= ================ ============== 
+rv.R   hide, print   private, public   section, merge    record, skip 
+rv.I   print, hide   private, public   section, merge    record, skip 
+rv.V   print, hide   private, public   section, merge    record, skip  
+rv.T   hide, print   private, public   section, merge    record, skip  
+rv.D   hide, print   private, public   section, merge    record, skip  
+rv.M   hide, print   private, public   section, merge    record, skip  
+rv.S   hide, print   private, public   section, merge    record, skip  
+rv.Q   hide, print   private, public   section, merge    record, skip 
+====== ============= ================= ================ ============== 
+
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
+**[5]** Folders
 -------------------
+
+.. raw:: html
+
+    <hr>
+
 
 **Folder Key**
 
@@ -230,27 +265,3 @@ D         | DOCS | relative path | pdf; pdftex; text; html    W     pdf, html, t
         └── README.txt                           || GitHub searchable text report 
 
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[5]** Default Header Settings
-------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-
-====== ============= ================= ================ ============== 
-API         print        public            merge          history       
-====== ============= ================= ================ ============== 
-rv.R   hide, print   private, public   section, merge    record, skip 
-rv.I   print, hide   private, public   section, merge    record, skip 
-rv.V   print, hide   private, public   section, merge    record, skip  
-rv.T   hide, print   private, public   section, merge    record, skip  
-rv.D   hide, print   private, public   section, merge    record, skip  
-rv.M   hide, print   private, public   section, merge    record, skip  
-rv.S   hide, print   private, public   section, merge    record, skip  
-rv.Q   hide, print   private, public   section, merge    record, skip 
-====== ============= ================= ================ ============== 

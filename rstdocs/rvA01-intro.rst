@@ -141,5 +141,5 @@ compiled into *docs* that are formatted as text (.txt), HTML (.html) or PDF
 
     rvA02-terms.rst
     rvA03-faq.rst
-    rvA04-docexp.rst
+    rvA04-docex.rst
     

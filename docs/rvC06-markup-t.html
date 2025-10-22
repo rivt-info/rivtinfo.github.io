@@ -383,6 +383,9 @@
                   
   <section id="c-6-tools-rv-t">
 <h1><strong>C.6 Tools - rv.T</strong><a class="headerlink" href="#c-6-tools-rv-t" title="Link to this heading">#</a></h1>
+<p>Files processed by the <em>Tools API function</em> are read and written to the
+<em>src/tools</em> folder unless the <em>rvsource</em> variable is set to <em>True</em> in the <em>Meta
+API function</em>.</p>
 <p id="api">&lt;i&gt;</p><section id="tag-key">
 <h2><strong>[1]</strong> TAG KEY<a class="headerlink" href="#tag-key" title="Link to this heading">#</a></h2>
 <hr><p>_[[TAG]] : block tag description</p>
@@ -394,17 +397,16 @@
 <p id="api">&lt;i&gt;</p></section>
 <section id="python-python-code">
 <h2><strong>[2]</strong> _[[PYTHON]] : Python code<a class="headerlink" href="#python-python-code" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[PYTHON]] rvnamespace; user-namespace
+<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[PYTHON]] wait;nowait
 code
 code
 ...
 _[[Q]]
 </pre></div>
 </div>
-<p>Executable code is run and functions are stored. If the parameter is
-<em>rvnamespace</em> the module is imported into the rivt file namespace.
-Alternatively the module is imported into a user specified namespace.</p>
-<p>Functions are evaluated using the “=” command in the Value API function.</p>
+<p>Executes Python script in the <em>rivt namespace</em>. If the parameter is <em>wait</em> the
+<em>rivt file</em> waits for the script to complete. If the parameter is <em>nowait</em>
+execution continues without waiting.</p>
 <p>outputs: text, pdf, html</p>
 <p id="api">&lt;i&gt;</p></section>
 <section id="rst-restructuredtext-code">
@@ -434,7 +436,7 @@ derived from the rivt doc and section number. It may then be appended to a PDF
 <p id="api">&lt;i&gt;</p></section>
 <section id="latex-latex-code">
 <h2><strong>[5]</strong> _[[LATEX]] : LaTeX code<a class="headerlink" href="#latex-latex-code" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[LATEX]]
+<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[LATEX]] description
 code
 code
 ...
@@ -451,29 +453,28 @@ _[[Q]]
 </aside>
 <p>output file types</p>
 <p id="api">&lt;i&gt;</p></section>
-<section id="python-script-and-functions">
-<h2><strong>[7]</strong> | PYTHON | script and functions<a class="headerlink" href="#python-script-and-functions" title="Link to this heading">#</a></h2>
+<section id="python-python-script">
+<h2><strong>[7]</strong> | PYTHON | Python script<a class="headerlink" href="#python-python-script" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| PYTHON | relative path |  user-namespace; rvnamespace</p>
+<p class="topic-title">| SCRIPT | rel path | wait;nowait</p>
 <div class="line-block">
-<div class="line">PYTHON | src/tools/module.py | tool1</div>
+<div class="line">PYTHON | src/tools/script1.py | nowait</div>
 </div>
 </aside>
-<p>Imports .py files. Executable code is run and functions are stored. If the
-parameter is <em>rvnamespace</em> the module is imported into the rivt file namespace.
-Alternatively the module is imported into a user specified namespace.</p>
-<p>Functions are evaluated using the “=” command in the Value API function.</p>
+<p>Executes Python code in the <em>rivt namespace</em>. If the parameter is <em>wait</em> the
+<em>rivt file</em> waits for the script to complete. If the parameter is <em>nowait</em>
+execution continues without waiting.</p>
 <p>outputs: text, pdf, html</p>
 <p id="api">&lt;i&gt;</p></section>
 <section id="html-markup">
 <h2><strong>[8]</strong> | HTML | markup<a class="headerlink" href="#html-markup" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| HTML | relative path | pdf;nopdf, newpage;samepage</p>
+<p class="topic-title">| HTML | relative path | pdf;nopdf</p>
 <div class="line-block">
-<div class="line">HTML | src/tools/page1.html | pdf, newpage</div>
+<div class="line">HTML | src/tools/page1.html | pdf</div>
 </div>
 </aside>
-<p>Reads .html, .htm files. If the parameter is “pdf” a PDF formatted file is
+<p>Reads .html and .htm files. If the parameter is “pdf” a PDF formatted file is
 output. The file name is derived from the rivt doc and section number. It may
 then be appended to a PDF <em>doc</em>. The page parameter specifies whether a new
 page is started.</p>
@@ -569,7 +570,7 @@ number.  The page parameter specifies whether a new page is started.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-html-code"><strong>[4]</strong> _[[HTML]] : HTML code</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex-latex-code"><strong>[5]</strong> _[[LATEX]] : LaTeX code</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#command-key"><strong>[6]</strong> COMMAND KEY</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-script-and-functions"><strong>[7]</strong> | PYTHON | script and functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-python-script"><strong>[7]</strong> | PYTHON | Python script</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-markup"><strong>[8]</strong> | HTML | markup</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rst-restructuredtext"><strong>[9]</strong> | RST | reStructuredText</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex-markup"><strong>[10]</strong> | LATEX | markup</a></li>

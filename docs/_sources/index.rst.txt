@@ -33,8 +33,8 @@ an example of an HTML report.
 *rivt* integrates well with other open source programs. An integrated 
 *rivt framework* is described :doc:`here. <rvB01-install>`.
 
-:doc:`This <rvA04-docexp>` is a small single *doc* example.
-:doc:`This <rvD05-reportexp>` is a small *report* example. A
+:doc:`This <rvA04-docex>` is a small single *doc* example.
+:doc:`This <rvD05-reportex>` is a small *report* example. A
 search interface for discovering *rivt files* on *GitHub* is
 :doc:`here <rvE03-ghsearch>`.
 

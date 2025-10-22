@@ -31,7 +31,7 @@
         The Insert function formats static objects including images, tables,
         equations and text.
 
-        |text | data01/describe.txt | rivt     
+        | text | data01/describe.txt | rivt     
 
         The table command inserts and formats tabular data from csv or xls files.
         The _[t] tag formats and autonumbers table titles.

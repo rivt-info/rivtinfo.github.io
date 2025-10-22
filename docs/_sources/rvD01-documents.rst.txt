@@ -85,5 +85,5 @@ also offer less formatting control.
 
     rvD02-folders.rst
     rvD03-reports.rst
-    rvD04-settings.rst
-    rvD05-reportexp.rst
+    rvD04-setting.rst
+    rvD05-reportex.rst
