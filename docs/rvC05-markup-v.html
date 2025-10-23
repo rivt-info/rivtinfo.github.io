@@ -648,12 +648,37 @@ justification (left, center, right).</p>
 <p>Reads a value file (.csv). The file path is relative to the report folder. The
 insert parameter specifies whether the value table is visible in the doc.</p>
 <p>outputs: text, PDF HTML</p>
+<p id="api">&lt;i&gt;</p></section>
+<section id="python-python-script">
+<h2><strong>[25]</strong> | PYTHON | Python script<a class="headerlink" href="#python-python-script" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">| SCRIPT | rel path | wait;nowait</p>
+<div class="line-block">
+<div class="line">PYTHON | src/tools/script1.py | nowait</div>
+</div>
+</aside>
+<p>Executes Python code in the <em>rivt namespace</em>. If the parameter is <em>wait</em> the
+<em>rivt file</em> waits for the script to complete. If the parameter is <em>nowait</em>
+execution continues without waiting.</p>
+<p>outputs: text, pdf, html</p>
 <p style="text-align: right;"> &lt;i&gt; </p></section>
 <section id="assign-equation-value">
-<h2><strong>[25]</strong> <strong>&lt;=</strong> : assign equation value<a class="headerlink" href="#assign-equation-value" title="Link to this heading">#</a></h2>
+<h2><strong>[26]</strong> <strong>&lt;=</strong> : assign equation value<a class="headerlink" href="#assign-equation-value" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">b &lt;= a * 10 | unit1, unit2, decimals | reference</p>
-<p>b_1 &lt;= E_1 * 12.1*IN^2 | KIP, kN, 2 | Std. 123</p>
+<p>b_1 &lt;= E_1 * 12.1*IN^2 | KIP, KN, 2 | Std. 123</p>
+</aside>
+<p>Assigns a variable or variables to an equation or function value and writes the
+values to a file <em>vnum-s.csv</em> where <em>num</em> is the <em>doc number</em> and <em>s</em> is the
+section number. The file is written to the folder <em>src/values</em> unless
+<em>rvsource</em> is set to <em>True</em> in the <em>Meta API function</em>.</p>
+<p>outputs: text, PDF, HTML</p>
+</section>
+<section id="id1">
+<h2><strong>[26]</strong> <strong>&lt;=</strong> : assign equation value<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">c &lt;= func1(a,b) | unit1, unit2, decimals | reference</p>
+<p>c &lt;= func1(a,b) | KIP, KN, 2 | Std. A-1</p>
 </aside>
 <p>Assigns a variable or variables to an equation or function value and writes the
 values to a file <em>vnum-s.csv</em> where <em>num</em> is the <em>doc number</em> and <em>s</em> is the
@@ -662,7 +687,7 @@ section number. The file is written to the folder <em>src/values</em> unless
 <p>outputs: text, PDF, HTML</p>
 <p style="text-align: right;"> &lt;i&gt; </p></section>
 <section id="define-value">
-<h2><strong>[26]</strong> <strong>:=</strong> : define value<a class="headerlink" href="#define-value" title="Link to this heading">#</a></h2>
+<h2><strong>[27]</strong> <strong>:=</strong> : define value<a class="headerlink" href="#define-value" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">c := 5*unit1 | unit1, unit2, decimals | description</p>
 <p>D_1 = 10*IN | IN, M, 3 | beam depth</p>
@@ -744,8 +769,10 @@ is the <em>doc number</em> and <em>s</em> is the section number.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img2-adjacent-images"><strong>[22]</strong> | IMG2 | : adjacent images</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-format-table"><strong>[23]</strong> | TABLE | : format table</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#values-format-values"><strong>[24]</strong> | VALUES | : format values</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-equation-value"><strong>[25]</strong> <strong>&lt;=</strong> : assign equation value</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#define-value"><strong>[26]</strong> <strong>:=</strong> : define value</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-python-script"><strong>[25]</strong> | PYTHON | Python script</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-equation-value"><strong>[26]</strong> <strong>&lt;=</strong> : assign equation value</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><strong>[26]</strong> <strong>&lt;=</strong> : assign equation value</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#define-value"><strong>[27]</strong> <strong>:=</strong> : define value</a></li>
 </ul>
   </nav></div>
 

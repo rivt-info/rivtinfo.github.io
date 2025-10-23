@@ -513,11 +513,34 @@ insert parameter specifies whether the value table is visible in the doc.
 
 outputs: text, PDF HTML
 
+
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
+**[25]** | PYTHON | Python script
+-------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: | SCRIPT | rel path | wait;nowait
+   
+    | PYTHON | src/tools/script1.py | nowait
+
+Executes Python code in the *rivt namespace*. If the parameter is *wait* the
+*rivt file* waits for the script to complete. If the parameter is *nowait*
+execution continues without waiting.
+
+outputs: text, pdf, html
+
+
 .. raw:: html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[25]** **<=** : assign equation value
+**[26]** **<=** : assign equation value
 -------------------------------------------
 
 .. raw:: html
@@ -526,7 +549,26 @@ outputs: text, PDF HTML
 
 .. topic:: b <= a * 10 | unit1, unit2, decimals | reference
 
-    b_1 <= E_1 * 12.1*IN^2 | KIP, kN, 2 | Std. 123
+    b_1 <= E_1 * 12.1*IN^2 | KIP, KN, 2 | Std. 123
+  
+Assigns a variable or variables to an equation or function value and writes the
+values to a file *vnum-s.csv* where *num* is the *doc number* and *s* is the
+section number. The file is written to the folder *src/values* unless
+*rvsource* is set to *True* in the *Meta API function*.
+  
+outputs: text, PDF, HTML
+
+
+**[26]** **<=** : assign equation value
+-------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: c <= func1(a,b) | unit1, unit2, decimals | reference
+
+    c <= func1(a,b) | KIP, KN, 2 | Std. A-1
   
 Assigns a variable or variables to an equation or function value and writes the
 values to a file *vnum-s.csv* where *num* is the *doc number* and *s* is the
@@ -539,7 +581,7 @@ outputs: text, PDF, HTML
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[26]** **:=** : define value
+**[27]** **:=** : define value
 -------------------------------------------
 
 .. raw:: html

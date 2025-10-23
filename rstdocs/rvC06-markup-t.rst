@@ -139,32 +139,12 @@ pdf, html
 
 output file types
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[7]** | PYTHON | Python script
--------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: | SCRIPT | rel path | wait;nowait
-   
-    | PYTHON | src/tools/script1.py | nowait
-
-Executes Python code in the *rivt namespace*. If the parameter is *wait* the
-*rivt file* waits for the script to complete. If the parameter is *nowait*
-execution continues without waiting.
-
-outputs: text, pdf, html
 
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
 
-**[8]** | HTML | markup
+**[7]** | HTML | markup
 -------------------------------------------
 
 .. raw:: html
@@ -186,7 +166,7 @@ outputs: pdf, html
 
     <p id="api">&lt;i&gt;</p>
 
-**[9]** | RST | reStructuredText
+**[8]** | RST | reStructuredText
 -------------------------------------------
 
 .. raw:: html
@@ -206,7 +186,7 @@ outputs: pdf, html
 
     <p id="api">&lt;i&gt;</p>
 
-**[10]** | LATEX | markup
+**[9]** | LATEX | markup
 -------------------------------------------
 
 .. raw:: html
@@ -226,7 +206,7 @@ outputs: pdf, html
 
     <p id="api">&lt;i&gt;</p>
 
-**[11]** | QCAD | script
+**[10]** | QCAD | script
 -------------------------------------------
 
 .. raw:: html
