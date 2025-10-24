@@ -39,6 +39,11 @@
     text, PDF and HTML. Markup is included in string arguments to rivt 
     API functions. 
 
+  header
+  headers
+    The first line of a  *rivt string*. It includes a section title, followed 
+    by comma separated parameters that include
+
 
   rivtlib
     Python package that generates docs and reports from 

@@ -16,20 +16,20 @@
 ============= ============================= =======================================
 API Scope             Line Tags              Description (doc scope)
 ============= ============================= =======================================
-I, V              text _[#]                  endnote number (all)
-I, V              text _[C]                  center text (all)
-I, V              text _[R]                  right justify text (all)
-I, V              math _[L]                  format LaTeX math (all) 
-I, V              math _[A]                  format ASCII math (all) 
-I, V             label _[E]                  equation label (all)
-I, V           caption _[I]                  image label (all) [1]
-I, V             title _[T]                  table label (all) [1]
-I, V              text _[P]                  new page (all)
-I, V              text _[H]                  dividing line (all)
-I, V              _____                      dividing line - >4 underscores (all)
-I, V           text word _[S] section link   link section within doc (all)
-I, V           text word _[D] report link    link doc within report (all)
-I, V           text word _[U] external url   external url link (all)
+rv.I, V           text _[#]                  endnote number (all)
+rv.I, V           text _[C]                  center text (all)
+rv.I, V           text _[R]                  right justify text (all)
+rv.I, V           math _[L]                  format LaTeX math (all) 
+rv.I, V           math _[A]                  format ASCII math (all) 
+rv.I, V          label _[E]                  equation label (all)
+rv.I, V        caption _[I]                  image label (all) [1]
+rv.I, V          title _[T]                  table label (all) [1]
+rv.I, V           text _[P]                  new page (all)
+rv.I, V           text _[H]                  dividing line (all)
+rv.I, V           _____                      dividing line - >4 underscores (all)
+rv.I, V        text word _[S] section link   link section within doc (all)
+rv.I, V        text word _[D] report link    link doc within report (all)
+rv.I, V        text word _[U] external url   external url link (all)
 ============= ============================= =======================================
 
 [1] tag may be added to the label parameter in IMG and TABLE commands
@@ -48,26 +48,23 @@ I, V           text word _[U] external url   external url link (all)
 ============ ====================================== =============================
 API Scope         Block Tags                        Description (doc scope)
 ============ ====================================== =============================
-M             _[[AUTH]] optional label              author data (all)
-R             _[[WIN]] *wait;nowait*                Windows command script (all)
-R             _[[MACOS]] *wait;nowait*              Mac shell script (all)
-R             _[[LINUX]] *wait;nowait*              Linux shell script (all)
-I, V          _[[ITALIC]] spaces (4 default)        Italic indent - (all)
-I, V          _[[NOTE]] optional label              Endnote description (all)
-I, V          _[[TEXT]] optional language           *literal*, code (all)
-V             _[[VALUES]] optonal title (_[T])      Define values(all)
-V             _[[PYTHON]] *rvnamespace*;userspace    Python script (all)
-T             _[[OPENSEES]] *wait;nowait*            OpenSees script (all)
-T             _[[QCAD]] *wait;nowait*                QCAD script (all)
-T             _[[RUBY]] *wait;nowait*                Ruby script (all)
-T             _[[LATEX]] optional label              LaTeX markup (pdf, html)[1]
-T             _[[HTML]] optional label               HTML markup (html)
-T             _[[RST]] optional label                reStructuredText (pdf,html)
-all           _[[TOPIC]] topic                       topic (all)
+rv.M          _[[AUTH]] optional label               author data (all)
+rv.R          _[[WIN]] *wait;nowait*                 Windows command script (all)
+rv.R          _[[MACOS]] *wait;nowait*               Mac shell script (all)
+rv.R          _[[LINUX]] *wait;nowait*               Linux shell script (all)
+rv.I, V       _[[TOPIC]] topic                       topic (all)
+rv.I, V       _[[ITALIC]] spaces (4 default)         Italic indent - (all)
+rv.I, V       _[[NOTE]] optional label               Endnote description (all)
+rv.I, V       _[[TEXT]] optional language            *literal*, code (all)
+rv.V          _[[VALUES]] optonal title (_[T])       Define values(all)
+rv.T          _[[PYTHON]] *rvnamespace*;userspace    Python script (all)
+rv.T          _[[LATEX]] optional label              LaTeX markup (pdf)[1]
+rv.T          _[[HTML]] optional label               HTML markup (html)
+rv.T          _[[RST]] optional label                reStructuredText (pdf,html)
 all           _[[END]]  optional label               End block (all)
 ============ ====================================== =============================
 
-[1] LaTeX processing requires the installation of TexLive
+[1] LaTeX processing requires the installation of *Texlive*
 
 .. raw:: html
 
@@ -81,28 +78,25 @@ all           _[[END]]  optional label               End block (all)
     <hr>
 
 ========== ====================================================== ===== ==================
-API Scope           | Command | path | parameters                  R/W      types
+API Scope           | Command | path | parameters                  R/W   input types
 ========== ====================================================== ===== ==================
-R          || LINUX | relative path | *wait;nowait*                 R     *sh*
-R          ||MACOS | relative path | *wait;nowait*                 R     *sh*
-R          || WIN | relative path   | *wait;nowait*                 R     *bat, cmd*
-I, V       \| IMG | relative path |  caption, scale                 R     *png, jpg*
-I, V       \| IMG2 | relative path | c1, c2, s1, s2                 R     *png, jpg*
-I, V       \| TABLE | relative path | width, l;c;r, title           R     *csv, txt, xlsx*
-I, V       \| TEXT | relative path |  *normal;literal* ;code        R     *txt, code*
-V          \| VALUES | relative path | *visible;hide* (_[T])        R     *csv*
-V          \| PYTHON | relative path | *rvnamespace*; userspace     R     *py*
-V           a := 1*IN  | unit1, unit2, decimal | description        W     define value
-V           b <= a + 3*FT | unit1, unit2, decimal | reference       W     assign value
-V           c <= func1(a,b) | unit1, unit2, decimal | ref           W     assign value
-T          \| HTML | relative path | *pdf;nopdf*                    R     *html*
-T          \| LATEX | relative path | *tex;pdftex*                  R     *tex*
-T          \| RST | relative path | *pdf;html;both*                 R     *rst*
-T          \| OPENSEES | relative path | *wait;nowait*              R     *py*
-T          \| QCAD | relative path | *wait;nowait*                  R     *js*
-T          \| RUBY | relative path | *wait;nowait*                  R     *rb*
-D          \| APPEND | relative path | cover_page_title             W     *pdf*
-D          \| PUBLISH | relative path | *pdf;pdftex;text;html*      W     *pdf, html, txt*
+rv.R        \| LINUX | relative path | *wait;nowait*                 R   *sh*
+rv.R        \| MACOS | relative path | *wait;nowait*                 R   *sh*
+rv.R        \| WIN | relative path   | *wait;nowait*                 R   *bat, cmd*
+rv.I, V     \| IMAGE | relative path |  scale, caption (_[I])        R   *png, jpg*
+rv.I, V     \| IMAGE2 | relative path | s1, s2, c1, c2 (_[I])        R   *png, jpg*
+rv.I, V     \| TABLE | relative path | width, l;c;r, title           R   *csv, txt, xlsx*
+rv.I, V     \| TEXT | relative path |  *normal;literal* ;code        R   *txt, code*
+rv.V        \| VALUES | relative path | *visible;hide* (_[T])        R   *csv*
+rv.V        a := 1*IN  | unit1, unit2, decimal | description         W   define value
+rv.V        b <= a + 3*FT | unit1, unit2, decimal | ref (_[E])       W   assign value
+rv.V        c <= func1(a,b) | unit1, unit2, decimal | ref (_[E])     W   assign value
+rv.T        \| PYTHON | relative path | *rvnamespace*; userspace     R   *py*
+rv.T        \| HTML | relative path | *html*                         R   *html*
+rv.T        \| LATEX | relative path | *pdf*                         R   *tex*
+rv.T        \| RST | relative path | *pdf;html;both*                 R   *rst*
+rv.D        \| APPEND | relative path | cover_page_title             W   *pdf*
+rv.D        \| PUBLISH | relative path | *pdf;pdftex;text;html*      W   *pdf, html, txt*
 ========== ====================================================== ===== ==================
 
 .. raw:: html
@@ -116,11 +110,11 @@ D          \| PUBLISH | relative path | *pdf;pdftex;text;html*      W     *pdf, 
 
     <hr>
 
-The default setting is listed first.
+The paramaters for :term:`headers` include the following ca. The default setting is listed first.
 
-====== ============= ================= ================ 
-API         print        public            merge         
-====== ============= ================= ================ 
+========== ============= ================= ================ 
+API Scope        print        public            merge         
+========== ============= ================= ================ 
 rv.M   hide; print   private; public    section; merge    
 rv.R   hide; print   private; public    section; merge   
 rv.I   print; hide   private; public    section; merge   
