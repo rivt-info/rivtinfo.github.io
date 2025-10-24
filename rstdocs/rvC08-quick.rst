@@ -89,9 +89,8 @@ I, V      | IMG | relative path |  caption, scale             R     png, jpg
 I, V      | IMG2 | relative path | c1, c2, s1, s2             R     png, jpg
 I, V      | TABLE | relative path | width, l;c;r, title       R     csv, txt, xlsx
 I, V      | TEXT | relative path |  *literal, standard*       R     txt
-V         | FUNC | relative path | *hide;visible*             R     csv
 V         | VALUE | relative path | *hide;visible*            R     csv
-V         | PYTHON | relative path | userspace;*rvnamespace*  R     py
+V         | PYTHON | relative path | userspace; *rvnamespace* R     py
 V         a := 1*IN  | unit1, unit2, decimal | description    W     define value
 V         b <= a + 3*FT | unit1, unit2, decimal | reference   W     assign value
 V         c <= func1(a,b) | unit1, unit2, decimal | ref       W     assign value
