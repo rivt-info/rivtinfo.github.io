@@ -12,12 +12,12 @@
 
     <hr>
 
-*rivt* is an open source software project that faciliates reuse and
-continual improvement of engineering documents. Writing engineering documents
-typically involves combining text, tables, diagrams, equations and calculations
-from a variety of sources. Although software combining these elements is
-available, shared document reuse is generally difficult because of
-limitations in the software:
+*rivt* is an open source software project that faciliates reuse and shared
+improvement of engineering documents. Engineering documents typically combine
+text, tables, diagrams, equations and calculations from a variety of sources.
+Although writing software combining these elements is available, document reuse
+is generally difficult because of limitations in the software and its
+distribution:
 
 - documents are divided among many incompatible programs
 - documents are inaccessible without frequently updating software
@@ -27,13 +27,13 @@ limitations in the software:
 - report generation features are limited
 - collaboration features are limited
 
-The table below compares *rivt* with other software and
-summarizes how it addresses these limitations:
+The table below summarizes these limitations and compares *rivt* with other
+software programs.
 
 .. rst-class:: center
 
 
-Table 1 - **Features**
+Table 1 - **Reuse Limitations - Comparison**
 
 ============ ========= ======== ======== ========= ========= ============= 
 Program      Rep [1]_  Ver [2]_ Txt [3]_ Comp [4]_  CP [5]_   Collab [6]_  
@@ -51,7 +51,7 @@ Jupyter        no       no         no      yes         yes      yes
 
     .. [1] Report generation
     .. [2] Version control
-    .. [3] Control of plain text input files
+    .. [3] Plain text input files
     .. [4] Forward and backward compatibility
     .. [5] Cross-platform
     .. [6] Collaboration support
@@ -104,20 +104,22 @@ rv.Q(rs)           Quit              Exit rivt
     <hr>
 
 The first four functions (**R I V T**) output formatted utf-8 text to the
-terminal and can generate *doc* content. The *Run* function executes shell
-commands. The *Insert* function adds static tables, images, equations and
-text. The *Values* function evaluates equations. The *Tools* function runs
-*Python* scripts.
+terminal and may generate *doc* content. The *Run API* executes shell commands.
+The *Insert API* adds static table, image, equation and text content. The
+*Value API* evaluates equations and functions. The *Tool API* extends *rivt* by
+importing raw HTML and LaTeX and executing *Python scripts* inside or out of
+the *rivt namespace*.
 
 The last four functions (**D M S Q**) are related to processing and output. The
-*Doc* function writes text, PDF or HTML *doc* files. The *Meta* function
-contains *rivt file* author and version information. The *Skip* and *Quit*
-functions are used for interactive editing and debugging.
+*Doc* function writes formatted text, PDF or HTML *doc* files. The *Meta*
+function contains *rivt file* author and version information and sets
+processing variables. The *Skip* and *Quit* functions are used for interactive
+editing and debugging.
 
 An API function starts in the first column and takes a *rivt string* (rS)
 argument enclosed in triple quotes. The first line is a header that specifies
-overall section labeling and processing, followed by the section
-content. Content is indented four spaces for legibility and section folding.
+section labeling and processing. It is followed by the section content,
+indented four spaces for legibility and section folding.
 
 .. code-block:: python
 
@@ -130,10 +132,8 @@ content. Content is indented four spaces for legibility and section folding.
         """)
 
 Section content includes *rivt markup* - a plain text, light weight language
-that generates *docs* from the same *rivt file* in different formats. See
-:doc:`Markup</rvC01-markup>` for further details. *rivt files* are
-compiled into *docs* that are formatted as text (.txt), HTML (.html) or PDF
-(.pdf) files.
+that generates *docs* as formatted text (.txt), HTML (.html) or PDF (.pdf)
+files. See :doc:`Markup</rvC01-markup>` for further details.
 
 .. toctree::
     :maxdepth: 1

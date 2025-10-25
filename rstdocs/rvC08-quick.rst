@@ -32,7 +32,7 @@ rv.I, V        text word _[D] report link    link doc within report (all)
 rv.I, V        text word _[U] external url   external url link (all)
 ============= ============================= =======================================
 
-[1] tag may be added to the label parameter in IMG and TABLE commands
+[1] tag may be added to the label parameter in IMAGE and TABLE commands
 
 .. raw:: html
 
@@ -52,12 +52,13 @@ rv.M          _[[AUTH]] optional label               author data (all)
 rv.R          _[[WIN]] *wait;nowait*                 Windows command script (all)
 rv.R          _[[MACOS]] *wait;nowait*               Mac shell script (all)
 rv.R          _[[LINUX]] *wait;nowait*               Linux shell script (all)
-rv.I, V       _[[TOPIC]] topic                       topic (all)
+rv.I, V       _[[INDENT]] spaces (4 default)         Indent (all)
 rv.I, V       _[[ITALIC]] spaces (4 default)         Italic indent - (all)
 rv.I, V       _[[NOTE]] optional label               Endnote description (all)
 rv.I, V       _[[TEXT]] optional language            *literal*, code (all)
+rv.I, V       _[[TOPIC]] topic                       Topic (all)
 rv.V          _[[VALUES]] optonal title (_[T])       Define values(all)
-rv.T          _[[PYTHON]] *rvnamespace*;userspace    Python script (all)
+rv.T          _[[PYTHON]] *rv-namespace*;userspace   Python script (all)
 rv.T          _[[LATEX]] optional label              LaTeX markup (pdf)[1]
 rv.T          _[[HTML]] optional label               HTML markup (html)
 rv.T          _[[RST]] optional label                reStructuredText (pdf,html)
@@ -91,7 +92,7 @@ rv.V        \| VALUES | relative path | *visible;hide* (_[T])        R   *csv*
 rv.V        a := 1*IN  | unit1, unit2, decimal | description         W   define value
 rv.V        b <= a + 3*FT | unit1, unit2, decimal | ref (_[E])       W   assign value
 rv.V        c <= func1(a,b) | unit1, unit2, decimal | ref (_[E])     W   assign value
-rv.T        \| PYTHON | relative path | *rvnamespace*; userspace     R   *py*
+rv.T        \| PYTHON | relative path | *rv-namespace*; userspace    R   *py*
 rv.T        \| HTML | relative path | *html*                         R   *html*
 rv.T        \| LATEX | relative path | *pdf*                         R   *tex*
 rv.T        \| RST | relative path | *pdf;html;both*                 R   *rst*
@@ -112,18 +113,18 @@ rv.D        \| PUBLISH | relative path | *pdf;pdftex;text;html*      W   *pdf, h
 
 The paramaters for :term:`headers` include the following ca. The default setting is listed first.
 
-========== ============= ================= ================ 
-API Scope        print        public            merge         
-========== ============= ================= ================ 
-rv.M   hide; print   private; public    section; merge    
-rv.R   hide; print   private; public    section; merge   
-rv.I   print; hide   private; public    section; merge   
-rv.V   print; hide   private; public    section; merge    
-rv.T   hide; print   private; public    section; merge    
-rv.D   hide; print   private; public    section; merge    
-rv.S   hide; print   private; public    section; merge    
-rv.Q   hide; print   private; public    section; merge   
-====== ============= ================= ================  
+========== ============= ================= ================= 
+API           print        public            merge         
+========== ============= ================= ================= 
+rv.M        hide; print   private; public    section; merge    
+rv.R        hide; print   private; public    section; merge   
+rv.I        print; hide   private; public    section; merge   
+rv.V        print; hide   private; public    section; merge    
+rv.T        hide; print   private; public    section; merge    
+rv.D        hide; print   private; public    section; merge    
+rv.S        hide; print   private; public    section; merge    
+rv.Q        hide; print   private; public    section; merge   
+========== ============= ================= =================  
 
 .. raw:: html
 

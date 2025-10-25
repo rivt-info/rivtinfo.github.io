@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
-    <title>C.6 Tools - rv.T &#8212; rivt</title>
+    <title>C.6 Tool - rv.T &#8212; rivt</title>
   
   
   
@@ -317,7 +317,7 @@
 <li class="toctree-l1"><a class="reference internal" href="rvC03-markup-r.html"><strong>C.3 Run - rv.R</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC04-markup-i.html"><strong>C.4 Insert - rv.I</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC05-markup-v.html"><strong>C.5 Values - rv.V</strong></a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>C.6 Tools - rv.T</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>C.6 Tool - rv.T</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC07-markup-d.html"><strong>C.7 Doc - rv.D</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC08-quick.html"><strong>C.8 Quick Lookup</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC09-example1.html"><strong>C.9 Example</strong></a></li>
@@ -364,7 +364,7 @@
     
     <li class="breadcrumb-item"><a href="rvC01-markup.html" class="nav-link"><strong>C.1 Markup</strong></a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>C.6 Tools - rv.T</strong></span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>C.6 Tool - rv.T</strong></span></li>
   </ul>
 </nav>
 </div>
@@ -381,11 +381,12 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="c-6-tools-rv-t">
-<h1><strong>C.6 Tools - rv.T</strong><a class="headerlink" href="#c-6-tools-rv-t" title="Link to this heading">#</a></h1>
+  <section id="c-6-tool-rv-t">
+<h1><strong>C.6 Tool - rv.T</strong><a class="headerlink" href="#c-6-tool-rv-t" title="Link to this heading">#</a></h1>
 <p>Files processed by the <em>Tools API function</em> are read and written to the
 <em>src/tools</em> folder unless the <em>rvsource</em> variable is set to <em>True</em> in the <em>Meta
-API function</em>.</p>
+API function</em>. In that case files are read and written to the <em>rivt file</em> folder.</p>
+<p>The <em>Tool API function</em> does not use <em>line tags</em>.</p>
 <p id="api">&lt;i&gt;</p><section id="tag-key">
 <h2><strong>[1]</strong> TAG KEY<a class="headerlink" href="#tag-key" title="Link to this heading">#</a></h2>
 <hr><p>_[[TAG]] : block tag description</p>
@@ -395,56 +396,55 @@ API function</em>.</p>
 </aside>
 <p>output types</p>
 <p id="api">&lt;i&gt;</p></section>
-<section id="python-python-code">
-<h2><strong>[2]</strong> _[[PYTHON]] : Python code<a class="headerlink" href="#python-python-code" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[PYTHON]] wait;nowait
-code
-code
-...
-_[[Q]]
-</pre></div>
-</div>
-<p>Executes Python script in the <em>rivt namespace</em>. If the parameter is <em>wait</em> the
-<em>rivt file</em> waits for the script to complete. If the parameter is <em>nowait</em>
-execution continues without waiting.</p>
-<p>outputs: text, pdf, html</p>
-<p id="api">&lt;i&gt;</p></section>
 <section id="rst-restructuredtext-code">
-<h2><strong>[3]</strong> _[[RST]] : reStructuredText code<a class="headerlink" href="#rst-restructuredtext-code" title="Link to this heading">#</a></h2>
+<h2><strong>[2]</strong> _[[RST]] : reStructuredText code<a class="headerlink" href="#rst-restructuredtext-code" title="Link to this heading">#</a></h2>
 <hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[RST]] description
 code
 code
 ...
-_[[Q]]
+_[[QUIT]]
 </pre></div>
 </div>
 <p>outputs: pdf, html</p>
 <p id="api">&lt;i&gt;</p></section>
 <section id="html-html-code">
-<h2><strong>[4]</strong> _[[HTML]] : HTML code<a class="headerlink" href="#html-html-code" title="Link to this heading">#</a></h2>
+<h2><strong>[3]</strong> _[[HTML]] : HTML code<a class="headerlink" href="#html-html-code" title="Link to this heading">#</a></h2>
 <hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[HTML]] pdf;nopdf
 code
 code
 ...
-_[[Q]]
+_[[QUIT]]
 </pre></div>
 </div>
-<p>If the parameter is “pdf” a PDF formatted file is output. The file name is
-derived from the rivt doc and section number. It may then be appended to a PDF
-<em>doc</em>.</p>
+<p>If the parameter is pdf a PDF file is output. It may be added as a
+source of the HTML <em>doc</em>. The file name is derived from the rivt doc and section
+number.</p>
 <p>outputs: pdf, html</p>
 <p id="api">&lt;i&gt;</p></section>
 <section id="latex-latex-code">
-<h2><strong>[5]</strong> _[[LATEX]] : LaTeX code<a class="headerlink" href="#latex-latex-code" title="Link to this heading">#</a></h2>
+<h2><strong>[4]</strong> _[[LATEX]] : LaTeX code<a class="headerlink" href="#latex-latex-code" title="Link to this heading">#</a></h2>
 <hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[LATEX]] description
 code
 code
 ...
-_[[Q]]
+_[[QUIT]]
 </pre></div>
 </div>
-<p>pdf, html</p>
-<p id="api">&lt;i&gt;</p></section>
+<p>outputs: pdf, html</p>
+<p id="api">&lt;i&gt;</p><p id="api">&lt;i&gt;</p></section>
+<section id="python-python-code">
+<h2><strong>[5]</strong> _[[PYTHON]] : Python code<a class="headerlink" href="#python-python-code" title="Link to this heading">#</a></h2>
+<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[PYTHON]] *rv-namespace*; user namespace
+code
+code
+...
+_[[QUIT]]
+</pre></div>
+</div>
+<p>Executes Python script in the <em>rivt namespace</em> or a user specified namespace.
+File paths are constucted relative to the <em>rivt file</em> folder.</p>
+<p>outputs: text, pdf, html</p>
+</section>
 <section id="command-key">
 <h2><strong>[6]</strong> COMMAND KEY<a class="headerlink" href="#command-key" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
@@ -453,54 +453,55 @@ _[[Q]]
 </aside>
 <p>output file types</p>
 <p id="api">&lt;i&gt;</p></section>
-<section id="html-markup">
-<h2><strong>[7]</strong> | HTML | markup<a class="headerlink" href="#html-markup" title="Link to this heading">#</a></h2>
+<section id="rst-restructuredtext-markup">
+<h2><strong>[7]</strong> | RST | reStructuredText markup<a class="headerlink" href="#rst-restructuredtext-markup" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| HTML | relative path | pdf;nopdf</p>
+<p class="topic-title">| RST | relative path | description</p>
+<div class="line-block">
+<div class="line">RST | src/tools/page1.rst | a sidebar</div>
+</div>
+</aside>
+<p>Reads <em>.rst</em> files and outputs PDF or HTML markup. The description is for author
+reference only.</p>
+<p>outputs: pdf, html</p>
+<p id="api">&lt;i&gt;</p></section>
+<section id="html-html-markup">
+<h2><strong>[7]</strong> | HTML | HTML markup<a class="headerlink" href="#html-html-markup" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">| HTML | relative path | <em>pdf;nopdf</em></p>
 <div class="line-block">
 <div class="line">HTML | src/tools/page1.html | pdf</div>
 </div>
 </aside>
-<p>Reads .html and .htm files. If the parameter is “pdf” a PDF formatted file is
-output. The file name is derived from the rivt doc and section number. It may
-then be appended to a PDF <em>doc</em>. The page parameter specifies whether a new
-page is started.</p>
+<p>Reads .html and .htm files and outputs HTML markup. If the parameter is <em>pdf</em> a
+separate PDF file is output from the formatted HTML and may be appended to a
+PDF report. The file name is derived from the rivt doc and section number.</p>
 <p>outputs: pdf, html</p>
 <p id="api">&lt;i&gt;</p></section>
-<section id="rst-restructuredtext">
-<h2><strong>[8]</strong> | RST | reStructuredText<a class="headerlink" href="#rst-restructuredtext" title="Link to this heading">#</a></h2>
+<section id="latex-latex-markup">
+<h2><strong>[8]</strong> | LATEX | LaTeX markup<a class="headerlink" href="#latex-latex-markup" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| RST | relative path | newpage;samepage</p>
+<p class="topic-title">| LATEX | relative path | <em>pdf;nopdf</em></p>
 <div class="line-block">
-<div class="line">RST | src/tools/page1.rst | samepage</div>
+<div class="line">LATEX | src/tools/page1.tex | nopdf</div>
 </div>
 </aside>
-<p>Reads .rst files. The file name is derived from the rivt doc and section
-number.  The page parameter specifies whether a new page is started.</p>
+<p>Reads .tex files. If the parameter is <em>pdf</em> a separate PDF file is output from
+the formatted LaTeX and may be appended to an HTML report. The file name is
+derived from the rivt doc and section number.</p>
 <p>outputs: pdf, html</p>
 <p id="api">&lt;i&gt;</p></section>
-<section id="latex-markup">
-<h2><strong>[9]</strong> | LATEX | markup<a class="headerlink" href="#latex-markup" title="Link to this heading">#</a></h2>
+<section id="python-python-script">
+<h2><strong>[28]</strong> | PYTHON | Python script<a class="headerlink" href="#python-python-script" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| LATEX | relative path | newpage;samepage</p>
+<p class="topic-title">| SCRIPT | rel path |</p>
 <div class="line-block">
-<div class="line">LATEX | src/tools/page1.tex | newpage</div>
+<div class="line">PYTHON | src/tools/script1.py | <em>rv-namespace</em>; user namespace</div>
 </div>
 </aside>
-<p>Reads .tex files. The file name is derived from the rivt doc and section
-number.  The page parameter specifies whether a new page is started.</p>
-<p>outputs: pdf, html</p>
-<p id="api">&lt;i&gt;</p></section>
-<section id="qcad-script">
-<h2><strong>[10]</strong> | QCAD | script<a class="headerlink" href="#qcad-script" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">| QCAD | relative path | newpage;samepage</p>
-<div class="line-block">
-<div class="line">QCAD | relative path | newpage</div>
-</div>
-</aside>
-<p>reads .js file</p>
-<p>outputs: pdf, html</p>
+<p>Executes Python code in the <em>rivt namespace</em> or user specified namespace. File
+paths are constucted relative to the <em>rivt file</em> folder.</p>
+<p>outputs: text, pdf, html</p>
 </section>
 </section>
 
@@ -552,15 +553,15 @@ number.  The page parameter specifies whether a new page is started.</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tag-key"><strong>[1]</strong> TAG KEY</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-python-code"><strong>[2]</strong> _[[PYTHON]] : Python code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rst-restructuredtext-code"><strong>[3]</strong> _[[RST]] : reStructuredText code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-html-code"><strong>[4]</strong> _[[HTML]] : HTML code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex-latex-code"><strong>[5]</strong> _[[LATEX]] : LaTeX code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rst-restructuredtext-code"><strong>[2]</strong> _[[RST]] : reStructuredText code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-html-code"><strong>[3]</strong> _[[HTML]] : HTML code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex-latex-code"><strong>[4]</strong> _[[LATEX]] : LaTeX code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-python-code"><strong>[5]</strong> _[[PYTHON]] : Python code</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#command-key"><strong>[6]</strong> COMMAND KEY</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-markup"><strong>[7]</strong> | HTML | markup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rst-restructuredtext"><strong>[8]</strong> | RST | reStructuredText</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex-markup"><strong>[9]</strong> | LATEX | markup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qcad-script"><strong>[10]</strong> | QCAD | script</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rst-restructuredtext-markup"><strong>[7]</strong> | RST | reStructuredText markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-html-markup"><strong>[7]</strong> | HTML | HTML markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex-latex-markup"><strong>[8]</strong> | LATEX | LaTeX markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-python-script"><strong>[28]</strong> | PYTHON | Python script</a></li>
 </ul>
   </nav></div>
 

@@ -15,7 +15,7 @@
 
 :term:`rivt markup` provides a readable, plain text language that generates
 formatted text, PDF or HTML :term:`docs` from the same *rivt file*. The markup
-is processed in a *rivt string* - a utf-8 text string argument to a 
+is processed in a *rivt string* - a utf-8 text string argument of a 
 :doc:`API function<rvA01-intro>`.
 
 The API function and header start in the first column (standard Python syntax),
@@ -24,7 +24,7 @@ folding in IDEs.
 
 .. code-block:: python
 
-    rv._("""Section Label | hide;print, public;private; (rvsource, rvlocal)
+    rv._("""Section Label | print;hide, private;public, section;merge
 
         section content (utf-8 text)
         ...
@@ -49,6 +49,35 @@ label" and parameters that define the section behavior.
 A header starts with a *section label* followed by a vertical separator bar and
 *section parameters* that override the section default behavior. The *section
 label* is the section title.
+ 
+*Section parameters* specify the following settings:
+
+- *print*: formats :term:`section content` to *doc* 
+- *hide*: evaluates the content but does not print the formatted content
+
+- *public*: copies *section content* to *public rivt file* 
+- *merge*: merges formatted *section content* to previous section
+
+*history*: writes *section label and parameters* to :term:`api-history` file
+
+The table below summarizes the section parameter settings, with the default
+setting shown first. A parameter only needs to be specified if different from
+the default.
+
+========== ============= ================= ================= 
+API           print        public            merge         
+========== ============= ================= ================= 
+rv.M        hide; print   private; public    section; merge    
+rv.R        hide; print   private; public    section; merge   
+rv.I        print; hide   private; public    section; merge   
+rv.V        print; hide   private; public    section; merge    
+rv.T        hide; print   private; public    section; merge    
+rv.D        hide; print   private; public    section; merge    
+rv.S        hide; print   private; public    section; merge    
+rv.Q        hide; print   private; public    section; merge   
+========== ============= ================= =================  
+
+Examples of *header* settings are shown below.
 
 .. code-block:: python
 
@@ -59,30 +88,14 @@ label* is the section title.
         ...
         
         """)
- 
-*Section parameters* specify the following settings:
 
-- *print*: formats :term:`section content` to *doc* 
-- *public*: copies *section content* to *public rivt file* 
-- *merge*: merges formatted *section content* to previous section
-- *history*: writes *section label and parameters* to :term:`api-history` file
 
-The table below summarizes the section parameter settings, with the default
-setting shown first. A parameter only needs to be specified if different from
-the default.
 
-====== ============= ================= ================ ============== 
-API         print        public            merge          history       
-====== ============= ================= ================ ============== 
-rv.R   hide, print   private, public   section, merge    record, skip 
-rv.I   print, hide   private, public   section, merge    record, skip 
-rv.V   print, hide   private, public   section, merge    record, skip  
-rv.T   hide, print   private, public   section, merge    record, skip  
-rv.D   hide, print   private, public   section, merge    record, skip  
-rv.M   hide, print   private, public   section, merge    record, skip  
-rv.S   hide, print   private, public   section, merge    record, skip  
-rv.Q   hide, print   private, public   section, merge    record, skip 
-====== ============= ================= ================ ============== 
+
+
+
+
+
 
 
 .. raw:: html

@@ -1,6 +1,8 @@
 **C.3 Run - rv.R**
 ==========================
 
+Only block tags are used in *rv.R*.
+
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
@@ -44,7 +46,7 @@ file types
 
 .. code-block:: text
     
-  _[[WIN]] *optional description*
+  _[[WIN]] *nowait;waiting*
   batch command
   batch command
   ...
@@ -65,7 +67,7 @@ text, pdf, html
 
 .. code-block:: text
     
-  _[[MACOS]] *optional description*
+  _[[MACOS]] *nowait;waiting*
   shell command
   shell command
   ...
@@ -86,7 +88,7 @@ text, pdf, html
 
 .. code-block:: text
     
-  _[[LINUX]] *optional description*
+  _[[LINUX]] *nowait;waiting*
   shell command
   shell command
   ...
@@ -118,7 +120,7 @@ text, pdf, html
     <hr>
 
 
-.. topic:: | COMMAND | rel path | filename | parameters
+.. topic:: | COMMAND | relative path | parameters
 
   example
 
@@ -137,9 +139,12 @@ file types
     <hr>
 
 
-.. topic:: | WIN | relative path | filename
+.. topic:: | WIN | relative path | nowait;wait
 
-  | WIN | run | file.cmd
+  | WIN | src/run/file.cmd | nowait
+
+
+
 
 reads .txt, .cmd, .bat  files
 
@@ -155,10 +160,9 @@ reads .txt, .cmd, .bat  files
     <hr>
 
 
-.. topic:: | MACOS | relative path | filename  
+.. topic:: | MACOS | relative path | nowait;wait
 
-
-  | MACOS | rel path | file.sh
+  | MACOS | src/run/file.cmd | nowait
 
 reads .sh files
 
@@ -173,9 +177,9 @@ reads .sh files
 
     <hr>
 
-.. topic:: | LINUX | relative path | filename 
+.. topic:: | LINUX | relative path | nowait;wait
 
-  | LINUX | rel path | file.sh   
+  | LINUX | src/run/file.cmd | nowait
 
 reads .sh files
 

@@ -13,13 +13,15 @@
 
     <hr>
 
-*rivt* is a Python project that includes :term:`rivtlib` and about two
-dozen :doc:`Python packages <rvB02-python>`. After *rivt* is installed 
-:term:`docs` and :term:`reports` may be edited and published using a text editor.
+*rivt* is a Python project that includes :term:`rivtlib` and approximately two
+dozen :doc:`Python packages <rvB02-python>`. After *rivt* is installed,
+:term:`docs` and :term:`reports` may be edited and published using a text
+editor.
 
-*rivt* is also designed to work with other open source programs and tools
-in an integrated framework that adds editing and analysis capabilities. There are 
-four installation methods with varying degrees of system and program integration.
+*rivt* is designed to work with other open source programs and tools in an
+integrated framework that adds extends editing and analysis capabilities. There
+are four installation methods for *rivt* and its framework, each with varying
+degrees of system and program integration.
 
 .. topic:: 1. *rivt-uv* 
 
@@ -220,13 +222,13 @@ including libraries and extensions. It can be downloaded here.
 
 The advantages of this installation method include:
 
-#. No steps - just unzip and use.
+#. No installaion steps - just unzip and use.
 #. Can be moved anywhere as a unified folder.
 #. Ensures compatiblity and integration between libraries. 
 
 Disadvantages include:
 
-#. The installation itself cannot be updated. New releases are planned monthly.
+#. The installled framework cannot be updated. New releases are planned monthly.
 #. Integration with other programs can be more difficult.
 
 
@@ -236,4 +238,3 @@ Disadvantages include:
 
     rvB02-python.rst
     rvB03-vscode.rst
-    rvB04-compile.rst

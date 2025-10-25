@@ -60,7 +60,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="C.8 Quick Lookup" href="rvC08-quick.html" />
-    <link rel="prev" title="C.6 Tools - rv.T" href="rvC06-markup-t.html" />
+    <link rel="prev" title="C.6 Tool - rv.T" href="rvC06-markup-t.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -317,7 +317,7 @@
 <li class="toctree-l1"><a class="reference internal" href="rvC03-markup-r.html"><strong>C.3 Run - rv.R</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC04-markup-i.html"><strong>C.4 Insert - rv.I</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC05-markup-v.html"><strong>C.5 Values - rv.V</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC06-markup-t.html"><strong>C.6 Tools - rv.T</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC06-markup-t.html"><strong>C.6 Tool - rv.T</strong></a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>C.7 Doc - rv.D</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC08-quick.html"><strong>C.8 Quick Lookup</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC09-example1.html"><strong>C.9 Example</strong></a></li>
@@ -383,34 +383,38 @@
                   
   <section id="c-7-doc-rv-d">
 <h1><strong>C.7 Doc - rv.D</strong><a class="headerlink" href="#c-7-doc-rv-d" title="Link to this heading">#</a></h1>
+<p>The <em>Doc API function</em> writes formatted document files from rivt strings. Tags
+are not used in this function.</p>
 <p id="api">&lt;i&gt;</p><section id="key">
 <h2><strong>[1]</strong> KEY<a class="headerlink" href="#key" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| COMMAND | parameters</p>
-<ul class="simple">
-<li><p>input or output file types</p></li>
-<li><p>applicable doc types</p></li>
-</ul>
+<p class="topic-title">| COMMAND | path | parameters</p>
+<p>example</p>
 </aside>
-<hr><p id="api">&lt;i&gt;</p></section>
+<p>output types</p>
+<p id="api">&lt;i&gt;</p></section>
 <section id="append-append-pdf-file">
 <h2><strong>[2]</strong> | APPEND  | - append PDF file<a class="headerlink" href="#append-append-pdf-file" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| APPEND | path | filename | before; after</p>
-<p>appends PDF file to <em>doc</em>
-PDF, HTML</p>
+<p class="topic-title">| APPEND | relative path | <em>before;after</em></p>
+<div class="line-block">
+<div class="line">APPEND | src/appendix1.pdf | after</div>
+</div>
 </aside>
+<p>Appends PDF file to PDF <em>doc</em>. The <em>before</em> parameter may be used for cover
+pages.</p>
+<p>outputs:  PDF</p>
 <p id="api">&lt;i&gt;</p></section>
-<section id="docs-write-doc-file">
-<h2><strong>[3]</strong> | DOCS |  - write doc file<a class="headerlink" href="#docs-write-doc-file" title="Link to this heading">#</a></h2>
+<section id="publish-write-doc-file">
+<h2><strong>[3]</strong> | PUBLISH |  - write doc file<a class="headerlink" href="#publish-write-doc-file" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| DOCS | path |  txt; html; rpdf; tpdf</p>
-<ul class="simple">
-<li><p>writes text, PDF or HTML files</p></li>
-<li><p>PDF, HTML, text</p></li>
-</ul>
-<p>Exits after writing doc file</p>
+<p class="topic-title">| DOCS | relative path |  <em>txt;html;pdf;tpdf</em></p>
+<div class="line-block">
+<div class="line">PUBLISH | /reports | pdf</div>
+</div>
 </aside>
+<p>The     <em>rivt</em> exits after writing the <em>doc</em> file.</p>
+<p>outputs: PDF, HTML, text</p>
 </section>
 </section>
 
@@ -430,7 +434,7 @@ PDF, HTML</p>
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>C.6 Tools - rv.T</strong></p>
+        <p class="prev-next-title"><strong>C.6 Tool - rv.T</strong></p>
       </div>
     </a>
     <a class="right-next"
@@ -463,7 +467,7 @@ PDF, HTML</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key"><strong>[1]</strong> KEY</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#append-append-pdf-file"><strong>[2]</strong> | APPEND  | - append PDF file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docs-write-doc-file"><strong>[3]</strong> | DOCS |  - write doc file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publish-write-doc-file"><strong>[3]</strong> | PUBLISH |  - write doc file</a></li>
 </ul>
   </nav></div>
 

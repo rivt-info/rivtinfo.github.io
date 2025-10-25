@@ -317,7 +317,7 @@
 <li class="toctree-l1"><a class="reference internal" href="rvC03-markup-r.html"><strong>C.3 Run - rv.R</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC04-markup-i.html"><strong>C.4 Insert - rv.I</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC05-markup-v.html"><strong>C.5 Values - rv.V</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC06-markup-t.html"><strong>C.6 Tools - rv.T</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC06-markup-t.html"><strong>C.6 Tool - rv.T</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC07-markup-d.html"><strong>C.7 Doc - rv.D</strong></a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>C.8 Quick Lookup</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC09-example1.html"><strong>C.9 Example</strong></a></li>
@@ -453,7 +453,7 @@
 </tbody>
 </table>
 </div>
-<p>[1] tag may be added to the label parameter in IMG and TABLE commands</p>
+<p>[1] tag may be added to the label parameter in IMAGE and TABLE commands</p>
 <p id="api">&lt;i&gt;</p></section>
 <section id="block-tags">
 <h2><strong>[2]</strong> Block tags<a class="headerlink" href="#block-tags" title="Link to this heading">#</a></h2>
@@ -482,8 +482,8 @@
 <td><p>Linux shell script (all)</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I, V</p></td>
-<td><p>_[[TOPIC]] topic</p></td>
-<td><p>topic (all)</p></td>
+<td><p>_[[INDENT]] spaces (4 default)</p></td>
+<td><p>Indent (all)</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I, V</p></td>
 <td><p>_[[ITALIC]] spaces (4 default)</p></td>
@@ -497,27 +497,31 @@
 <td><p>_[[TEXT]] optional language</p></td>
 <td><p><em>literal</em>, code (all)</p></td>
 </tr>
-<tr class="row-even"><td><p>rv.V</p></td>
+<tr class="row-even"><td><p>rv.I, V</p></td>
+<td><p>_[[TOPIC]] topic</p></td>
+<td><p>Topic (all)</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.V</p></td>
 <td><p>_[[VALUES]] optonal title (_[T])</p></td>
 <td><p>Define values(all)</p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.T</p></td>
-<td><p>_[[PYTHON]] <em>rvnamespace</em>;userspace</p></td>
+<tr class="row-even"><td><p>rv.T</p></td>
+<td><p>_[[PYTHON]] <em>rv-namespace</em>;userspace</p></td>
 <td><p>Python script (all)</p></td>
 </tr>
-<tr class="row-even"><td><p>rv.T</p></td>
+<tr class="row-odd"><td><p>rv.T</p></td>
 <td><p>_[[LATEX]] optional label</p></td>
 <td><p>LaTeX markup (pdf)[1]</p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.T</p></td>
+<tr class="row-even"><td><p>rv.T</p></td>
 <td><p>_[[HTML]] optional label</p></td>
 <td><p>HTML markup (html)</p></td>
 </tr>
-<tr class="row-even"><td><p>rv.T</p></td>
+<tr class="row-odd"><td><p>rv.T</p></td>
 <td><p>_[[RST]] optional label</p></td>
 <td><p>reStructuredText (pdf,html)</p></td>
 </tr>
-<tr class="row-odd"><td><p>all</p></td>
+<tr class="row-even"><td><p>all</p></td>
 <td><p>_[[END]]  optional label</p></td>
 <td><p>End block (all)</p></td>
 </tr>
@@ -596,7 +600,7 @@
 <td><p>assign value</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.T</p></td>
-<td><p>| PYTHON | relative path | <em>rvnamespace</em>; userspace</p></td>
+<td><p>| PYTHON | relative path | <em>rv-namespace</em>; userspace</p></td>
 <td><p>R</p></td>
 <td><p><em>py</em></p></td>
 </tr>
@@ -632,6 +636,58 @@
 <section id="default-header-settings">
 <h2><strong>[4]</strong> Default Header Settings<a class="headerlink" href="#default-header-settings" title="Link to this heading">#</a></h2>
 <hr><p>The paramaters for <a class="reference internal" href="rvA02-terms.html#term-headers"><span class="xref std std-term">headers</span></a> include the following ca. The default setting is listed first.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>API</p></th>
+<th class="head"><p>print</p></th>
+<th class="head"><p>public</p></th>
+<th class="head"><p>merge</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>rv.M</p></td>
+<td><p>hide; print</p></td>
+<td><p>private; public</p></td>
+<td><p>section; merge</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.R</p></td>
+<td><p>hide; print</p></td>
+<td><p>private; public</p></td>
+<td><p>section; merge</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.I</p></td>
+<td><p>print; hide</p></td>
+<td><p>private; public</p></td>
+<td><p>section; merge</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.V</p></td>
+<td><p>print; hide</p></td>
+<td><p>private; public</p></td>
+<td><p>section; merge</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.T</p></td>
+<td><p>hide; print</p></td>
+<td><p>private; public</p></td>
+<td><p>section; merge</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.D</p></td>
+<td><p>hide; print</p></td>
+<td><p>private; public</p></td>
+<td><p>section; merge</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.S</p></td>
+<td><p>hide; print</p></td>
+<td><p>private; public</p></td>
+<td><p>section; merge</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.Q</p></td>
+<td><p>hide; print</p></td>
+<td><p>private; public</p></td>
+<td><p>section; merge</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <p id="api">&lt;i&gt;</p></section>
 <section id="folders">
 <h2><strong>[5]</strong> Folders<a class="headerlink" href="#folders" title="Link to this heading">#</a></h2>

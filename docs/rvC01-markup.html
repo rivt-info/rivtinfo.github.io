@@ -60,7 +60,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="C.2 Metadata - rv.M" href="rvC02-markup-m.html" />
-    <link rel="prev" title="B.4 Compile Docs" href="rvB04-compile.html" />
+    <link rel="prev" title="B.3 VSCode Settings" href="rvB03-vscode.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -317,7 +317,7 @@
 <li class="toctree-l1"><a class="reference internal" href="rvC03-markup-r.html"><strong>C.3 Run - rv.R</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC04-markup-i.html"><strong>C.4 Insert - rv.I</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC05-markup-v.html"><strong>C.5 Values - rv.V</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC06-markup-t.html"><strong>C.6 Tools - rv.T</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC06-markup-t.html"><strong>C.6 Tool - rv.T</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC07-markup-d.html"><strong>C.7 Doc - rv.D</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC08-quick.html"><strong>C.8 Quick Lookup</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC09-example1.html"><strong>C.9 Example</strong></a></li>
@@ -384,12 +384,12 @@
 <h2><strong>[1]</strong> rivt String<a class="headerlink" href="#rivt-string" title="Link to this heading">#</a></h2>
 <hr><p><a class="reference internal" href="rvA02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> provides a readable, plain text language that generates
 formatted text, PDF or HTML <a class="reference internal" href="rvA02-terms.html#term-docs"><span class="xref std std-term">docs</span></a> from the same <em>rivt file</em>. The markup
-is processed in a <em>rivt string</em> - a utf-8 text string argument to a
+is processed in a <em>rivt string</em> - a utf-8 text string argument of a
 <a class="reference internal" href="rvA01-intro.html"><span class="doc">API function</span></a>.</p>
 <p>The API function and header start in the first column (standard Python syntax),
 with subsequent lines indented 4 spaces for improved readability and section
 folding in IDEs.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | hide;print, public;private; (rvsource, rvlocal)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | print;hide, private;public, section;merge</span>
 
 <span class="s2">    section content (utf-8 text)</span>
 <span class="s2">    ...</span>
@@ -406,22 +406,14 @@ label” and parameters that define the section behavior.</p>
 <hr><p>A header starts with a <em>section label</em> followed by a vertical separator bar and
 <em>section parameters</em> that override the section default behavior. The <em>section
 label</em> is the section title.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | hide;print, public;private;</span>
-
-<span class="s2">    section content (utf-8 text)</span>
-<span class="s2">    ...</span>
-<span class="s2">    ...</span>
-
-<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
 <p><em>Section parameters</em> specify the following settings:</p>
 <ul class="simple">
 <li><p><em>print</em>: formats <a class="reference internal" href="rvA02-terms.html#term-section-content"><span class="xref std std-term">section content</span></a> to <em>doc</em></p></li>
+<li><p><em>hide</em>: evaluates the content but does not print the formatted content</p></li>
 <li><p><em>public</em>: copies <em>section content</em> to <em>public rivt file</em></p></li>
 <li><p><em>merge</em>: merges formatted <em>section content</em> to previous section</p></li>
-<li><p><em>history</em>: writes <em>section label and parameters</em> to <a class="reference internal" href="rvA02-terms.html#term-api-history"><span class="xref std std-term">api-history</span></a> file</p></li>
 </ul>
+<p><em>history</em>: writes <em>section label and parameters</em> to <a class="reference internal" href="rvA02-terms.html#term-api-history"><span class="xref std std-term">api-history</span></a> file</p>
 <p>The table below summarizes the section parameter settings, with the default
 setting shown first. A parameter only needs to be specified if different from
 the default.</p>
@@ -431,60 +423,61 @@ the default.</p>
 <th class="head"><p>print</p></th>
 <th class="head"><p>public</p></th>
 <th class="head"><p>merge</p></th>
-<th class="head"><p>history</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>rv.R</p></td>
-<td><p>hide, print</p></td>
-<td><p>private, public</p></td>
-<td><p>section, merge</p></td>
-<td><p>record, skip</p></td>
+<tr class="row-even"><td><p>rv.M</p></td>
+<td><p>hide; print</p></td>
+<td><p>private; public</p></td>
+<td><p>section; merge</p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>print, hide</p></td>
-<td><p>private, public</p></td>
-<td><p>section, merge</p></td>
-<td><p>record, skip</p></td>
+<tr class="row-odd"><td><p>rv.R</p></td>
+<td><p>hide; print</p></td>
+<td><p>private; public</p></td>
+<td><p>section; merge</p></td>
 </tr>
-<tr class="row-even"><td><p>rv.V</p></td>
-<td><p>print, hide</p></td>
-<td><p>private, public</p></td>
-<td><p>section, merge</p></td>
-<td><p>record, skip</p></td>
+<tr class="row-even"><td><p>rv.I</p></td>
+<td><p>print; hide</p></td>
+<td><p>private; public</p></td>
+<td><p>section; merge</p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.T</p></td>
-<td><p>hide, print</p></td>
-<td><p>private, public</p></td>
-<td><p>section, merge</p></td>
-<td><p>record, skip</p></td>
+<tr class="row-odd"><td><p>rv.V</p></td>
+<td><p>print; hide</p></td>
+<td><p>private; public</p></td>
+<td><p>section; merge</p></td>
 </tr>
-<tr class="row-even"><td><p>rv.D</p></td>
-<td><p>hide, print</p></td>
-<td><p>private, public</p></td>
-<td><p>section, merge</p></td>
-<td><p>record, skip</p></td>
+<tr class="row-even"><td><p>rv.T</p></td>
+<td><p>hide; print</p></td>
+<td><p>private; public</p></td>
+<td><p>section; merge</p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.M</p></td>
-<td><p>hide, print</p></td>
-<td><p>private, public</p></td>
-<td><p>section, merge</p></td>
-<td><p>record, skip</p></td>
+<tr class="row-odd"><td><p>rv.D</p></td>
+<td><p>hide; print</p></td>
+<td><p>private; public</p></td>
+<td><p>section; merge</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.S</p></td>
-<td><p>hide, print</p></td>
-<td><p>private, public</p></td>
-<td><p>section, merge</p></td>
-<td><p>record, skip</p></td>
+<td><p>hide; print</p></td>
+<td><p>private; public</p></td>
+<td><p>section; merge</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.Q</p></td>
-<td><p>hide, print</p></td>
-<td><p>private, public</p></td>
-<td><p>section, merge</p></td>
-<td><p>record, skip</p></td>
+<td><p>hide; print</p></td>
+<td><p>private; public</p></td>
+<td><p>section; merge</p></td>
 </tr>
 </tbody>
 </table>
+</div>
+<p>Examples of <em>header</em> settings are shown below.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | hide;print, public;private;</span>
+
+<span class="s2">    section content (utf-8 text)</span>
+<span class="s2">    ...</span>
+<span class="s2">    ...</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
 </div>
 <p id="api">&lt;i&gt;</p></section>
 <section id="section-content">
@@ -668,12 +661,12 @@ typical <em>rivt report</em> folder structure is described <a class="reference i
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rvB04-compile.html"
+       href="rvB03-vscode.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>B.4 Compile Docs</strong></p>
+        <p class="prev-next-title"><strong>B.3 VSCode Settings</strong></p>
       </div>
     </a>
     <a class="right-next"

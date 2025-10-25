@@ -317,7 +317,7 @@
 <li class="toctree-l1"><a class="reference internal" href="rvC03-markup-r.html"><strong>C.3 Run - rv.R</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC04-markup-i.html"><strong>C.4 Insert - rv.I</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC05-markup-v.html"><strong>C.5 Values - rv.V</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC06-markup-t.html"><strong>C.6 Tools - rv.T</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC06-markup-t.html"><strong>C.6 Tool - rv.T</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC07-markup-d.html"><strong>C.7 Doc - rv.D</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC08-quick.html"><strong>C.8 Quick Lookup</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC09-example1.html"><strong>C.9 Example</strong></a></li>
@@ -385,10 +385,10 @@
 <h1><strong>C.2 Metadata - rv.M</strong><a class="headerlink" href="#c-2-metadata-rv-m" title="Link to this heading">#</a></h1>
 <p id="api">&lt;i&gt;</p><section id="definitions">
 <h2><strong>[1]</strong> Definitions<a class="headerlink" href="#definitions" title="Link to this heading">#</a></h2>
-<hr><p>If the <em>Metadata</em> function is used, it must be the first function in the rivt
-file. The function provides <em>rivt metadata</em> for processing a <em>doc</em> and
-overriding defaults. Metadata is specified in the form of pre-defined Python
-dictionaries, lists and variables. Other text in this section is ignored.</p>
+<hr><p>If the <em>Metadata</em> function is used, it must be the first <em>API function</em> in the
+rivt file. The function provides <em>rivt metadata</em> for processing a <em>doc</em> and
+overriding defaults. Metadata is specified as dictionaries, lists and
+variables.</p>
 <p id="api">&lt;m&gt;</p></section>
 <section id="dictionaries">
 <h2><strong>[2]</strong> Dictionaries<a class="headerlink" href="#dictionaries" title="Link to this heading">#</a></h2>
@@ -409,13 +409,12 @@ dictionaries, lists and variables. Other text in this section is ignored.</p>
         <span class="s2">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;rod.h.holland@gmail.com&quot;</span><span class="p">,</span>
         <span class="s2">&quot;repo&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/rivt-info/rivt-simple-doc&quot;</span><span class="p">,</span>
         <span class="s2">&quot;license&quot;</span><span class="p">:</span> <span class="s2">&quot;https://opensource.org/license/mit/&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;fork1&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;fork&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;rv_fork1D&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">],</span>
         <span class="p">}</span>
 
-<span class="c1"># default</span>
 <span class="n">rv_fork1D</span> <span class="o">=</span> <span class="p">{</span>
         <span class="s2">&quot;authors&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;0.0.0&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;0.1.0&quot;</span><span class="p">,</span>
         <span class="s2">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
         <span class="s2">&quot;repo&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
         <span class="p">}</span>
@@ -428,13 +427,13 @@ dictionaries, lists and variables. Other text in this section is ignored.</p>
 <hr><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># default</span>
 <span class="n">rv_headerL</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;date&quot;</span><span class="p">,</span> <span class="s2">&quot;time&quot;</span><span class="p">,</span> <span class="s2">&quot;file&quot;</span><span class="p">,</span> <span class="s2">&quot;version&quot;</span><span class="p">]</span>
 
-<span class="c1">#example</span>
+<span class="c1"># example</span>
 <span class="n">rv_headerL</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;date&quot;</span><span class="p">,</span> <span class="s2">&quot;file&quot;</span><span class="p">,</span> <span class="s2">&quot;authors&quot;</span><span class="p">,</span> <span class="s2">&quot;version&quot;</span><span class="p">]</span>
 </pre></div>
 </div>
-</section>
+<p id="api">&lt;i&gt;</p></section>
 <section id="variables">
-<h2><strong>[3]</strong> Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h2>
+<h2><strong>[4]</strong> Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h2>
 <p><em>rv_localB</em> overrides the default report structure and specifies that the <em>values</em>
 and <em>logs</em> files are written to the local rivt folder.</p>
 <hr><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># default</span>
@@ -497,7 +496,7 @@ and <em>logs</em> files are written to the local rivt folder.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions"><strong>[1]</strong> Definitions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dictionaries"><strong>[2]</strong> Dictionaries</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lists"><strong>[3]</strong> Lists</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables"><strong>[3]</strong> Variables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables"><strong>[4]</strong> Variables</a></li>
 </ul>
   </nav></div>
 

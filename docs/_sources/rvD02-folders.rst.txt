@@ -50,30 +50,31 @@ the *report numbers* used in the report would be:
     1.5
     2.12
 
-where leading zeroes are dropped and *docs* are sorted alpha-numerically in a
+where leading zeroes are dropped and *docs* are sorted alpha-numerically in the
 *report*.
 
 
 **[3]**  Folder Structure
 -------------------------------
 
-*Source files* provided by a report author are stored in the *source* folder.
-*Docs* are written to the *report* folder. *rivt files* flagged for open source
-sharing are written to the *public* folder. 
+*Source files* provided by a report author are stored in the *src* folder.
+*Docs* are written to the *publish* folder. *rivt files* marked for open source
+sharing are written to the *public* folder. Process files generated during *doc*
+formatting are written to the *log* folder.
 
 An example *report* folder structure is shown below.
 
 **Folder Key**
 
 - Required folder and file prefix names are shown in brackets [ ]. 
-- Single vertical bar ( | ) identifies files provided by the report author. 
-- Double vertical bar ( || ) identifies files written by rivtlib 
+- A single vertical bar ( | ) identifies files provided by the report author. 
+- Double vertical bars ( || ) identifies files written by rivtlib 
 - Four vertical bars ( |||| ) are a mix of author and rivtlib written files
 
 
 .. code-block:: bash
 
-     Collapsed folders
+    Collapsed Folders
 
     [rivt]-Report-Label/                Report Folder Name
         ├── [rv101-]filename1.py        | rivt file
@@ -84,9 +85,9 @@ An example *report* folder structure is shown below.
         ├── [public]/                   || public rivt folder
         ├── [publish]/                  || reports folder
         ├── [src]/                      |||| source folder
-        └── README.txt                  | GitHub searchable text report 
+        └── README.txt                  | Searchable text report 
 
-    Expanded folders
+    Expanded Folders
 
     [rivt]-Report-Label/                       Report Folder Name                
         ├── [rv101-]filename1.py                | rivt file
@@ -97,53 +98,53 @@ An example *report* folder structure is shown below.
             ├── rv101-api.rst   
             ├── rv101-log.txt   
             └── rv102-log.txt   
-        ├── [public]/                           || public rivt files                      
+        ├── [public]/                           || Public rivt files                      
             ├── rv-101-filename1.py             ||  
             ├── rv-201-filename3.py             ||
             └── rv-202-filename4.py             || 
         ├── [publish]/                          || Reports and Docs
             ├── [html]/    
-                ├── [docs]/                     || HTML     
-                    ├── _images/                || 
+                ├── [docs]/                     || HTML Docs    
+                    ├── _images/                || HTML source
                     ├── _sources/               ||
                     ├── _static/                ||   
-                    ├── rv101-filename1.html    || HTML files
+                    ├── rv101-filename1.html    || HTML file
                     ├── rv102-filename2.html    ||                           
                     ├── rv201-filename3.html    ||                     
                     ├── rv201-filename4.html    ||
                     └── index.html              || HTML site           
-                ├── rv101-filename1.rst  
-                ├── rv102-filename2.rst  
-                ├── rv201-filename3.rst  
-                └── rv202-filename4.rst  
-            ├── [pdf]/                          || pdf report  
-                ├── [src]/                          
-                    ├── rv101-filename1.rst
-                    ├── rv102-filename2.rst                           
-                    ├── rv201-filename3.rst                        
-                    └── rv202-filename4.rst              
-                ├── rv101-filename1.pdf         || PDF from rst2pdf files
-                ├── rv102-filename2.pdf         ||                 
-                ├── rv201-filename3.pdf         ||               
-                ├── rv202-filename4.pdf         ||
-                └── Report-Label.pdf            || PDF from rst2pdf report
-            ├── [pdftex]/                       || pdftex report
-                ├── [src]/                          
-                    ├── rv101-filename1.rst
-                    ├── rv102-filename2.rst                        
-                    ├── rv201-filename3.rst                        
-                    └── rv202-filename4.rst               
-                ├── rv101-filename1.pdf         || PDF from LaTeX files
-                ├── rv102-filename2.pdf                          
-                ├── rv201-filename3.pdf                       
-                ├── rv202-filename4.pdf
-                └── Report-Label.pdf            || PDF from LaTeX report  
+                ├── rv101-filename1.rst         || reStructuredText file
+                ├── rv102-filename2.rst         || 
+                ├── rv201-filename3.rst         || 
+                └── rv202-filename4.rst         || 
+            ├── [pdf]/                          || PDF report  
+                ├── [docs]/                     ||     
+                    ├── rv101-filename1.pdf     || PDF file
+                    ├── rv102-filename2.pdf     ||                           
+                    ├── rv201-filename3.pdf     ||                     
+                    ├── rv201-filename4.pdf     ||
+                    └── Report-Label.pdf        || PDF from rst2pdf report       
+                ├── rv101-filename1.rst         || reStructuredText file
+                ├── rv102-filename2.rst         || 
+                ├── rv201-filename3.rst         || 
+                └── rv202-filename4.rst         || 
+            ├── [pdftex]/                       || PDFtex report
+                ├── [docs]/                     ||     
+                    ├── rv101-filename1.pdf     || PDF file
+                    ├── rv102-filename2.pdf     ||                           
+                    ├── rv201-filename3.pdf     ||                     
+                    ├── rv201-filename4.pdf     ||
+                    └── Report-Label.pdf        || PDF from LaTeX report       
+                ├── rv101-filename1.rst         || reStructuredText file
+                ├── rv102-filename2.rst         || 
+                ├── rv201-filename3.rst         || 
+                └── rv202-filename4.rst         || 
             ├── [text]/                         || text report
                 ├── rv101-filename1.txt         ||
                 ├── rv102-filename2.txt         || 
                 ├── rv201-filename3.txt         ||
                 ├── rv202-filename4.txt         ||
-                └── README.txt                  || GitHub searchable text report
+                └── README.txt                  || Searchable text report
             ├── [temp]/                         || temp files
                 └── rv01-label3.tex                     
             └── rivt-report.py                  | report generating script
@@ -155,7 +156,7 @@ An example *report* folder structure is shown below.
             ├── image/                          | author created folder                
                 ├── fig1.png
                 └── fig2.jpg
-            ├── [Style]/                        | doc style files 
+            ├── [Styles]/                       | doc style files 
                 ├── [html]/                     | html style files
                     ├── _locale/                 
                     ├── _static/                        
@@ -174,14 +175,13 @@ An example *report* folder structure is shown below.
                     └── rivt.sty              
                 ├── [text]/                      | text ini file
                     └── rv-text.ini        
-            ├── [Tools]/                         |||| functions and output
-                ├── plot.py                               
-                └── loads.py
-                ├── tablepy.csv                               
-                └── imagepy.png          
+            ├── [Tools]/                         |||| scripts, input, output
+                ├── plot.py                      | Python script or function                         
+                ├── tablepy.csv                  | input read by Python                 
+                └── imagepy.png                  || Python output
             ├── [Values]/                        |||| values files
-                ├── new-units.py       
-                ├── add-values-v.csv       
-                ├── v101-2.csv
-                └── v102-3.csv                
-        └── README.txt                           || GitHub searchable text report 
+                ├── [new-units.py]               | new units from author
+                ├── added-values-v.csv           | new values from author
+                ├── v101-2.csv                   || written by rivt
+                └── v102-3.csv                   || written by rivt
+        └── README.txt                           || Searchable text report 

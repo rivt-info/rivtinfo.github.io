@@ -13,10 +13,10 @@
 
     <hr>
 
-If the *Metadata* function is used, it must be the first function in the rivt
-file. The function provides *rivt metadata* for processing a *doc* and
-overriding defaults. Metadata is specified in the form of pre-defined Python
-dictionaries, lists and variables. Other text in this section is ignored.
+If the *Metadata* function is used, it must be the first *API function* in the
+rivt file. The function provides *rivt metadata* for processing a *doc* and
+overriding defaults. Metadata is specified as dictionaries, lists and
+variables.
 
 .. raw:: html
 
@@ -49,13 +49,12 @@ dictionaries, lists and variables. Other text in this section is ignored.
             "email": "rod.h.holland@gmail.com",
             "repo": "https://github.com/rivt-info/rivt-simple-doc",
             "license": "https://opensource.org/license/mit/",
-            "fork1": ["", "", "", ""],
+            "fork": ["rv_fork1D", "", "", ""],
             }
     
-    # default
     rv_fork1D = {
             "authors": "",
-            "version": "0.0.0",
+            "version": "0.1.0",
             "email": "",
             "repo": "",
             }
@@ -78,10 +77,14 @@ dictionaries, lists and variables. Other text in this section is ignored.
     # default
     rv_headerL = ["date", "time", "file", "version"]
     
-    #example
+    # example
     rv_headerL = ["date", "file", "authors", "version"]
 
-**[3]** Variables
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
+**[4]** Variables
 ------------------------------------------------
 
 *rv_localB* overrides the default report structure and specifies that the *values*

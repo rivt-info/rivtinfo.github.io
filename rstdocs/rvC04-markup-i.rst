@@ -54,9 +54,13 @@ outputs: types of output
     <hr>
 
 
-.. topic:: *text* _[#] 
+.. topic:: text _[#] 
     
-   end of line - text is wrapped when formatted. _[#]
+   Text is wrapped when formatted. _[#]
+
+This tag assigns an endnote number to the text. Endnotes are defined with the
+block tag _[[NOTE]] and are listed at the end of the *doc*. Numbers are
+assigned in the order they are processed.
 
 outputs: text, pdf, html
 
@@ -64,16 +68,20 @@ outputs: text, pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[3]** __ : horizontal line
---------------------------------------- 
+**[3]** _[H] or ______ : horizontal line
+------------------------------------------- 
 .. raw:: html
 
     <hr>
 
 .. topic:: _[H] or 4 or more underscores
 
-    ___________  or _[H]
+    ___________     
+    
 
+    or some text _[H]
+
+Draws a horizontal line the width of the page.
     
 outputs: text, pdf, html
 
@@ -93,7 +101,7 @@ outputs: text, pdf, html
 
     f(x,y) = sin(x)**2 + y/5 _[A]
 
-Math expression will be formated in ASCII text.
+The math expression will be formated in ASCII text.
 
 outputs: text, pdf, html
 
@@ -112,7 +120,7 @@ outputs: text, pdf, html
 
     \frac{1}{\sqrt{x}} _[L]
 
-Math expression will be formated in LaTeX, even if LaTeX is not installed.
+The LaTeX math expression will be formatted in PDF and HTML.
 
 outputs: pdf, html
 
@@ -121,33 +129,18 @@ outputs: pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[6]** _[B] : bold, center
+**[6]** _[C] :  center 
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: *text* _[B]
+.. topic:: text _[C]
 
-    *This text will be bold and centered* _[B]
+    This text will be centered _[C]
 
-outputs: pdf, html
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[7]** _[C] :  center 
--------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: *text* _[C]
-
-    *This text will be centered* _[C]
+Center text within the page margins.
 
 outputs: text, pdf, html
 
@@ -155,16 +148,18 @@ outputs: text, pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[8]** _[E] : equation label 
+**[7]** _[E] : equation label 
 -----------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: *equation label* _[E]
+.. topic:: equation label _[E]
 
-   *Label assigned an equation number*  _[E]
+   Equation label  _[E]
+
+Labels and numbers equation.
 
 outputs: text, pdf, html
 
@@ -172,16 +167,18 @@ outputs: text, pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[9]** _[F] : figure label 
+**[8]** _[I] : image label 
 -----------------------------------------
 
 .. raw:: html
 
     <hr>   
 
-.. topic:: *caption* _[F]
+.. topic:: *caption* _[I]
 
-   *Caption assigned a figure number* _[F]
+   Image label _[I]
+
+Labels and numbers images.
 
 outputs: text, pdf, html
 
@@ -190,7 +187,7 @@ outputs: text, pdf, html
     <p style="text-align: right;"> &lt;i&gt; </p>
 
 
-**[10]** _[T] : table label
+**[9]** _[T] : table label
 ------------------------------------------
 
 .. raw:: html
@@ -199,9 +196,29 @@ outputs: text, pdf, html
 
 .. topic:: *title* _[T]
 
-   *An autonumbered table title* _[T]
+   Table Title _[T]
 
-Table title will be assigned a table number.
+Labels and numbers tables.
+
+outputs: text, pdf, html
+
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+**[10]** _[S] : link sections
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: *text* _[S] 
+    
+    text at end of line _[s] section number, link label
+
+Links *sections* within a *doc*. Text will be continued and wrapped when
+formatted.
 
 outputs: text, pdf, html
 
@@ -216,11 +233,12 @@ outputs: text, pdf, html
 
     <hr>
 
-.. topic:: *text* _[D] report link 
+.. topic:: *text* _[D] doc link
     
-    *text at end of line* _[D] doc-file-name, link label
+    text at end of line _[S] doc number, link label
 
-Links *docs* within a report
+Links *docs* within a *report*. Text will be continued and wrapped when
+formatted.
 
 outputs: text, pdf, html
 
@@ -228,18 +246,18 @@ outputs: text, pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[12]** _[S] : link sections
+**[12]** _[U] : external url
 -----------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: *text* _[S] doc link
+.. topic:: text _[U] url link  
     
-    *text* _[S] section number, link label
+    text at end of line _[U] urlname, link label
 
-Links *sections* within a *doc*
+External url link. Text will be continued and wrapped when formatted.
 
 outputs: text, pdf, html
 
@@ -247,16 +265,18 @@ outputs: text, pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[13]** _[U] : link urls
+**[13]** _[P] : new page
 -----------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: *text* _[U] url link  
-    
-    *text at end of line* _[U] urlname, link label
+.. topic:: text _[P]
+
+     end of line. _[P]
+
+Starts a new page. Pages indicated with double dashed line in text output.
 
 outputs: text, pdf, html
 
@@ -264,64 +284,25 @@ outputs: text, pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[14]** _[P] : new page
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: _[P]
-
-     _[P]
-
-This starts a new page.
-
-outputs: text, pdf, html
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[15]** _[[B]] : bold indent
+**[14]** _[[TEXT]] : literal text or code
 ------------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic::  _[[B]] 
+.. topic::  _[[TEXT]] language or *literal*
 
     ::
         
-        _[[B]]
-        text
-        text
-        ...
-        _[[Q]]
-
-outputs: pdf, html
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[16]** _[[C]] : code or literal text
-------------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic::  _[[C]] *language*
-
-    ::
-        
-        _[[C]] python
+        _[[TEXT]] python
         print("some text")
         b = 3 + 5
         ...
-        _[[Q]]
+        _[[QUIT]]
+
+This block formats text as literal or code. The parameters specify formatting
+and syntax coloring. Languages include: - *python* - *bash* - *sh* - *cmd*
 
 outputs: text, pdf, html
 
@@ -329,7 +310,7 @@ outputs: text, pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[17]** _[[L]] : LaTeX
+**[15]** _[[LATEX]] : LaTeX
 ------------------------------------------------
 
 .. raw:: html
@@ -344,7 +325,7 @@ outputs: text, pdf, html
         \frac{\alpha}{\beta}
         \sum_{n=1}^{10} n
         ...
-        _[[Q]]
+        _[[QUIT]]
 
 Formats LaTeX, which needs to be installed.
 
@@ -354,7 +335,7 @@ outputs: pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[18]** _[[E]] : endnote text
+**[16]** _[[NOTE]] : endnote text
 -------------------------------------------    
 
 .. raw:: html
@@ -362,16 +343,16 @@ outputs: pdf, html
     <hr>
 
 
-.. topic:: _[[E]] 
+.. topic:: _[[NOTE]] 
     
     ::
    
-        _[[E]]
+        _[[NOTE]]
         this is an endnote - assigned to an endnote tag [#] in order of
         of processing.
-        _[[Q]] 
+        _[[QUIT]] 
 
-Formats an endnote.
+Formats and numbers an endnote in order of processing.
 
 outputs: text, pdf, html
 
@@ -379,24 +360,24 @@ outputs: text, pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[19]** _[[I]] : indent italic
+**[17]** _[[ITALIC]] : indent italic
 ------------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic::  _[[I]] 
+.. topic::  _[[I]] spaces
 
     ::
         
-        _[[I]]
+        _[[ITALIC]] 4
         text
         text
         ...
-        _[[Q]]
+        _[[QUIT]]
 
-Indents four spaces and italicizes block.
+Indents the specified number spaces and italicizes block.
 
 outputs: pdf, html
 
@@ -404,49 +385,51 @@ outputs: pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[20]** _[[N]] : indent
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+**[18]** _[[INDENT]] : indent text
 ----------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic::  _[[N]]
+.. topic::  _[[INDENT]] spaces
 
     ::
 
-        _[[N]] title
+        _[[INDENT]] 4
         text
         text
         ...
-        _[[Q]]
+        _[[QUIT]]
 
-Indents four spaces.
-
-outputs: text, pdf, html
+Indents text four spaces.
 
 .. raw:: html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[21]** _[[T]] : topic
+**[19]** _[[TOPIC]] : topic
 ------------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic::  _[[T]] *topic title*
+.. topic::  _[[TOPIC]] topic title
 
     ::
         
-        _[[T]] topic title
+        _[[TOPIC]] topic title
         text
         text
         ...
-        _[[Q]]
+        _[[QUIT]]
 
-Formats a colored highlight block with a title.
+Formats a highlighted block.
 
 outputs: pdf, html
 
@@ -454,7 +437,7 @@ outputs: pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[22]** **COMMAND KEY**
+**[20]** **COMMAND KEY**
 ---------------------------
 
 .. raw:: html
@@ -465,25 +448,24 @@ outputs: pdf, html
 
   example
 
+Commands read and write files. The relative path is relative to the *rivt file*.
+
 outputs: types of outputs
 
-.. raw:: html
 
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[23]** | IMG | : insert image
+**[21]** | IMAGE | : insert image
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | IMG | relative path | scale, caption (_[F])
+.. topic:: | IMAGE | relative path | scale, caption (_[I])
 
-    | IMG | src/file1.png | .50, Map _[F]
+    | IMG | src/file1.png | .50, Map _[I]
 
-Reads PNG and JPEG files (.png, jpg). The file path is relative to
-the report folder. 
+Reads PNG and JPEG files (.png, jpg) and inserts them in the *doc*. The *Image
+tag* may be added to the captions. 
 
 outputs: PDF, HTML
 
@@ -491,19 +473,19 @@ outputs: PDF, HTML
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[24]** | IMG2 | : adjacent images 
+**[22]** | IMAGE2 | : insert adjacent images 
 --------------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | IMG2 | rel path1, rel path2| sc1, sc2, cap1 (_[F]), cap2 (_[F])  
+.. topic:: | IMAGE2 | rel path1, rel path2| sc1, sc2, cap1 (_[I]), cap2 (_[I])  
 
-    | IMG | src/file1.png, src/file2.png | .50, .40, Map, Plan
+    | IMAGE2 | src/file1.png, src/file2.png | .50, .40, Map _[I], Plan _[I]
 
-Reads PNG and JPEG files (.png, jpg) and places them side by side in the
-document. The file path is relative to the report folder.
+Reads PNG and JPEG files (.png, jpg) and inserts them side by side in the
+document. The *Image tag* may be added to the captions.
 
 outputs: PDF, HTML
 
@@ -511,9 +493,8 @@ outputs: PDF, HTML
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[25]** | TABLE | : format table
+**[23]** | TABLE | : format table
 ------------------------------------------
-
 
 .. raw:: html
 
@@ -524,9 +505,9 @@ outputs: PDF, HTML
     | TABLE | src/file1.csv | 30, c, Forces _[T]
 
 Reads text, csv and EXCEL files (.txt, .csv, .xls) and outputs formatted
-tables. The file path is relative to the report folder. The width parameter
-specifies the maximum column width. The l,c,r parameter specifies cell
-justification (left, center, right).
+tables. The width parameter specifies the maximum column width. The l,c,r
+parameter specifies cell justification (left, center, right). The *Table tag*
+may be added to the caption.
 
 outputs: text, PDF, HTML
 
@@ -541,13 +522,17 @@ outputs: text, PDF, HTML
 
     <hr>
 
-.. topic:: | text | rel path | normal; literal
+.. topic:: | TEXT | relative path | *literal*; code 
 
-    | TABLE | src/file1.txt  | normal
+    | TEXT | src/file1.py  | python
 
-Reads text and reST files (.txt, .tex, .rst). The parameters specify whether
-the text is wrapped or treated as a literal. The file path is relative to the
-report folder.
+Reads and formats text and code files. The parameters specify formatting and
+syntax coloring.  Languages include:
 
-outputs: text, PDF HTML
+    - *python*
+    - *bash*
+    - *sh*
+    - *cmd*
+
+outputs: text, PDF, HTML
 
