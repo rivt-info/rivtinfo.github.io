@@ -134,7 +134,7 @@ spaces for legibility and section folding.
 
 Section text includes :term:`rivt markup` - a plain text language that
 generates *doc* files formatted as text, HTML or PDF. *rivt markup* includes
-:term:`line tags`,:term:`block tags`  and :term:`commands` summarized 
+:term:`line tags`, :term:`block tags` and :term:`commands` summarized 
 :doc:`here <rvD02-folders>`.  See :doc:`Markup</rvC01-markup>` for further 
 details. 
 
