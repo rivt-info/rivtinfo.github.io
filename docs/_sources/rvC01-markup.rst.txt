@@ -52,7 +52,7 @@ label* is the section title.
  
 *Section parameters* specify the following settings:
 
-- *print*: formats :term:`section content` to *doc* 
+- *print*: formats :term:`section text` to *doc* 
 - *hide*: evaluates the content but does not print the formatted content
 
 - *public*: copies *section content* to *public rivt file* 
@@ -94,21 +94,21 @@ Examples of *header* settings are shown below.
     <p id="api">&lt;i&gt;</p>
 
 
-**[3]** Section Content 
+**[3]** Section Text 
 --------------------------
 
 .. raw:: html
 
     <hr>
 
-Section content is indented four spaces (for legibility and code folding) and
+Section text is indented four spaces (for legibility and code folding) and
 includes *tags* for text formatting and *commands* for file operations.
 
 .. code-block:: python
 
     rv._("""Section Label | write; nowrite, public; private
 
-        section content
+        section text
         ...
         
         """)
@@ -154,9 +154,7 @@ results and define variables.
 
 File paths are specified relative to the *report folder* or *rivt file* folder.  
 The  typical *rivt report* folder structure is described 
-:doc:`here. <rvD02-folders>` Tags and commands are summarized 
-:doc:`here reference<rvC08-quick>`.
-
+:doc:`here. <rvD02-folders>`
 
 .. toctree::
     :maxdepth: 1

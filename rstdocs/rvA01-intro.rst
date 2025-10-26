@@ -116,24 +116,28 @@ function contains *rivt file* author and version information and sets
 processing variables. The *Skip* and *Quit* functions are used for interactive
 editing and debugging.
 
-An API function starts in the first column and takes a *rivt string* (rS)
-argument enclosed in triple quotes. The first line is a header that specifies
-section labeling and processing. It is followed by the section content,
-indented four spaces for legibility and section folding.
+An API function starts in the first column and takes a single 
+:term:`rivt string` (rS) argument. The first line of a *rivt string* is a 
+header that specifies section labeling and processing. The 
+:term:`section header` is followed by the section text, indented four 
+spaces for legibility and section folding.
 
 .. code-block:: python
 
     rv._("""Header
 
-        section content
+        section text
         ...
         ...
         
         """)
 
-Section content includes *rivt markup* - a plain text, light weight language
-that generates *docs* as formatted text (.txt), HTML (.html) or PDF (.pdf)
-files. See :doc:`Markup</rvC01-markup>` for further details.
+Section text includes :term:`rivt markup` - a plain text language that
+generates *doc* files formatted as text, HTML or PDF. *rivt markup* includes
+:term:`line tags`,:term:`block tags`  and :term:`commands` summarized 
+:doc:`here <rvD02-folders>`.  See :doc:`Markup</rvC01-markup>` for further 
+details. 
+
 
 .. toctree::
     :maxdepth: 1

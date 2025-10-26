@@ -39,8 +39,10 @@
     text, PDF and HTML. Markup is included in string arguments to rivt 
     API functions. 
 
+  
   header
   headers
+  section header
     The first line of a  *rivt string*. It includes a section title, followed 
     by comma separated parameters that include
 
@@ -113,7 +115,7 @@
   section parameters 
     Comma separated parameters in a *header* that specify the section processing.
 
-  section content
+  section text
     The content of a *rivt string* minus the *header*. 
 
   api-history 

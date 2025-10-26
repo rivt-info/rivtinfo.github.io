@@ -551,22 +551,25 @@ the <em>rivt namespace</em>.</p>
 function contains <em>rivt file</em> author and version information and sets
 processing variables. The <em>Skip</em> and <em>Quit</em> functions are used for interactive
 editing and debugging.</p>
-<p>An API function starts in the first column and takes a <em>rivt string</em> (rS)
-argument enclosed in triple quotes. The first line is a header that specifies
-section labeling and processing. It is followed by the section content,
-indented four spaces for legibility and section folding.</p>
+<p>An API function starts in the first column and takes a single
+<a class="reference internal" href="rvA02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> (rS) argument. The first line of a <em>rivt string</em> is a
+header that specifies section labeling and processing. The
+<a class="reference internal" href="rvA02-terms.html#term-section-header"><span class="xref std std-term">section header</span></a> is followed by the section text, indented four
+spaces for legibility and section folding.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Header</span>
 
-<span class="s2">    section content</span>
+<span class="s2">    section text</span>
 <span class="s2">    ...</span>
 <span class="s2">    ...</span>
 
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Section content includes <em>rivt markup</em> - a plain text, light weight language
-that generates <em>docs</em> as formatted text (.txt), HTML (.html) or PDF (.pdf)
-files. See <a class="reference internal" href="rvC01-markup.html"><span class="doc">Markup</span></a> for further details.</p>
+<p>Section text includes <a class="reference internal" href="rvA02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> - a plain text language that
+generates <em>doc</em> files formatted as text, HTML or PDF. <em>rivt markup</em> includes
+<a class="reference internal" href="rvA02-terms.html#term-line-tags"><span class="xref std std-term">line tags</span></a>,:term:<cite>block tags</cite>  and <a class="reference internal" href="rvA02-terms.html#term-commands"><span class="xref std std-term">commands</span></a> summarized
+<a class="reference internal" href="rvD02-folders.html"><span class="doc">here</span></a>.  See <a class="reference internal" href="rvC01-markup.html"><span class="doc">Markup</span></a> for further
+details.</p>
 <div class="toctree-wrapper compound">
 </div>
 </section>
