@@ -57,11 +57,6 @@ where leading zeroes are dropped and *docs* are sorted alpha-numerically in the
 **[3]**  Folder Structure
 -------------------------------
 
-*Source files* provided by a report author are stored in the *src* folder.
-*Docs* are written to the *publish* folder. *rivt files* marked for open source
-sharing are written to the *public* folder. Process files generated during *doc*
-formatting are written to the *log* folder.
-
 An example *report* folder structure is shown below.
 
 **Folder Key**
@@ -72,11 +67,17 @@ An example *report* folder structure is shown below.
 - Four vertical bars ( |||| ) are a mix of author and rivtlib written files
 
 
+*Source files* provided by a report author are stored in the *src* folder.
+*Docs* are written to the *publish* folder. *rivt files* marked for open source
+sharing are written to the *public* folder. Process files generated during *doc*
+formatting are written to the *log* folder.
+
+
 .. code-block:: bash
 
     Collapsed Folders
 
-    [rivt]-Report-Label/                Report Folder Name
+    [rivt-]Report-Label/                Report Folder Name
         ├── [rv101-]filename1.py        | rivt file
         ├── [rv102-]filename2.py        | rivt file
         ├── [rv201-]filename3.py        | rivt file
@@ -85,7 +86,7 @@ An example *report* folder structure is shown below.
         ├── [public]/                   || public rivt folder
         ├── [publish]/                  || reports folder
         ├── [src]/                      |||| source folder
-        └── README.txt                  | Searchable text report 
+        └── README.txt                  || Searchable text report 
 
     Expanded Folders
 
@@ -95,16 +96,16 @@ An example *report* folder structure is shown below.
         ├── [rv201-]filename3.py                | rivt file
         ├── [rv202-]filename4.py                | rivt file        
         ├── [log]/                              || log files
-            ├── rv101-api.rst   
-            ├── rv101-log.txt   
-            └── rv102-log.txt   
+            ├── rv101-api.rst                   ||
+            ├── rv101-log.txt                   ||
+            └── rv102-log.txt                   ||
         ├── [public]/                           || Public rivt files                      
             ├── rv-101-filename1.py             ||  
             ├── rv-201-filename3.py             ||
             └── rv-202-filename4.py             || 
         ├── [publish]/                          || Reports and Docs
-            ├── [html]/    
-                ├── [docs]/                     || HTML Docs    
+            ├── [html]/                         || HTML Docs    
+                ├── [docs]/                     ||  
                     ├── _images/                || HTML source
                     ├── _sources/               ||
                     ├── _static/                ||   
@@ -146,42 +147,43 @@ An example *report* folder structure is shown below.
                 ├── rv202-filename4.txt         ||
                 └── README.txt                  || Searchable text report
             ├── [temp]/                         || temp files
-                └── rv01-label3.tex                     
+                └── rv01-label3.tex             ||        
             └── rivt-report.py                  | report generating script
         ├── [src]                               |||| doc source files               
             ├── data/                           | author created folder
-                ├── data1.csv
-                ├── newvals.csv        
-                └── download1.csv  
+                ├── data1.csv                   |
+                ├── newvals.csv                 |
+                └── download1.csv               |
             ├── image/                          | author created folder                
-                ├── fig1.png
-                └── fig2.jpg
+                ├── fig1.png                    |
+                └── fig2.jpg                    |
             ├── [Styles]/                       | doc style files 
                 ├── [html]/                     | html style files
-                    ├── _locale/                 
-                    ├── _static/                        
-                    ├── _templates/                     
-                    ├── conf.py                         
-                    ├── genhtml.cmd                     
-                    └── index.rst
-                ├── [pdf]/                       | rst2pdf style files
-                    ├── fonts/              
-                    ├── style/                 
-                    ├── Report-Cover.pdf           
-                    └── genrst2pdf.cmd
-                ├── [pdftex]/                    | pdftex style files
-                    ├── gentexpdf.cmd             
-                    ├── Report-cover.pdf                     
-                    └── rivt.sty              
-                ├── [text]/                      | text ini file
-                    └── rv-text.ini        
-            ├── [Tools]/                         |||| scripts, input, output
-                ├── plot.py                      | Python script or function                         
-                ├── tablepy.csv                  | input read by Python                 
-                └── imagepy.png                  || Python output
-            ├── [Values]/                        |||| values files
-                ├── [new-units.py]               | new units from author
-                ├── added-values-v.csv           | new values from author
-                ├── v101-2.csv                   || written by rivt
-                └── v102-3.csv                   || written by rivt
-        └── README.txt                           || Searchable text report 
+                    ├── _locale/                | 
+                    ├── _locale/                |
+                    ├── _static/                |        
+                    ├── _templates/             |        
+                    ├── conf.py                 |        
+                    ├── genhtml.cmd             |        
+                    └── index.rst               |
+                ├── [pdf]/                      | rst2pdf style files
+                    ├── fonts/                  |        
+                    ├── style/                  |        
+                    ├── Report-Cover.pdf        |            
+                    └── genrst2pdf.cmd          |        
+                ├── [pdftex]/                   | pdftex style files
+                    ├── gentexpdf.cmd           |  
+                    ├── Report-cover.pdf        |             
+                    └── rivt.sty                |
+                ├── [text]/                     | text ini file
+                    └── rv-text.ini             | 
+            ├── [Tools]/                        |||| scripts, input, output
+                ├── plot.py                     | Python script or function                         
+                ├── tablepy.csv                 | input read by Python                 
+                └── imagepy.png                 || Python output
+            ├── [Values]/                       |||| values files
+                ├── [new-units.py]              | new units from author
+                ├── added-values-v.csv          | new values from author
+                ├── v101-2.csv                  || written by rivt
+                └── v102-3.csv                  || written by rivt
+        └── README.txt                          || Searchable text report 

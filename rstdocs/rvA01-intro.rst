@@ -79,16 +79,16 @@ library into the *rv namespace*:
 as notebook cells in *VSCode* or other *IDE*.
 
 =============== =============== ===================================
-API              Name             Purpose
+API Function        Name             Purpose
 =============== =============== ===================================
-rv.R(rs)           Run               Run shell commands
-rv.I(rs)           Insert            Insert static resources 
-rv.V(rs)           Value             Calculate values
-rv.T(rs)           Tool              Run Python functions
-rv.D(rs)           Doc               Write docs 
-rv.M(rs)           Meta              Meta data 
-rv.S(rs)           Skip              Skip section
-rv.Q(rs)           Quit              Exit rivt 
+rv.M(rS)           Meta              Meta data 
+rv.R(rS)           Run               Run shell commands
+rv.I(rS)           Insert            Insert static resources 
+rv.V(rS)           Value             Calculate values
+rv.T(rS)           Tool              Run Python functions
+rv.D(rS)           Doc               Write docs 
+rv.S(rS)           Skip              Skip section
+rv.Q(rS)           Quit              Exit rivt 
 =============== =============== ===================================
 
 
