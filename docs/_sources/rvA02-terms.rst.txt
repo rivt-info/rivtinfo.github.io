@@ -109,7 +109,7 @@
   report folder
   report folders
     The folder structure for producing a report is described 
-    :doc:`here. <rvD02-folders>`
+    :doc:`here. <rvD03-folders>`
 
   section parameter 
   section parameters 
@@ -124,6 +124,9 @@
 
   rivt log file
     *rivt file* execution log written to the *log folder* as *rvDss-log.txt*.
+
+  report script
+    A Python script that assembles *docs* into a *report*.
 
 **[2]** Python Terms
 -----------------------------

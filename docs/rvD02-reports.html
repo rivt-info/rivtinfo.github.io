@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
-    <title>D.3 Reports &#8212; rivt</title>
+    <title>D.2 Reports &#8212; rivt</title>
   
   
   
@@ -56,11 +56,11 @@
     <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'rvD03-reports';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'rvD02-reports';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="D.4 Configuration Files" href="rvD04-setting.html" />
-    <link rel="prev" title="D.2 Files and Folders" href="rvD02-folders.html" />
+    <link rel="next" title="D.3 Files and Folders" href="rvD03-folders.html" />
+    <link rel="prev" title="D.1 Documents" href="rvD01-documents.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -313,8 +313,8 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="rvD02-folders.html"><strong>D.2 Files and Folders</strong></a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>D.3 Reports</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>D.2 Reports</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvD03-folders.html"><strong>D.3 Files and Folders</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvD04-setting.html"><strong>D.4 Configuration Files</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvD05-reportex.html"><strong>D.5 Example</strong></a></li>
 </ul>
@@ -360,7 +360,7 @@
     
     <li class="breadcrumb-item"><a href="rvD01-documents.html" class="nav-link"><strong>D.1 Documents</strong></a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>D.3 Reports</strong></span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>D.2 Reports</strong></span></li>
   </ul>
 </nav>
 </div>
@@ -377,41 +377,59 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="d-3-reports">
-<h1><strong>D.3 Reports</strong><a class="headerlink" href="#d-3-reports" title="Link to this heading">#</a></h1>
-<p id="api">&lt;i&gt;</p><section id="files-and-docs">
-<h2><strong>[1]</strong> Files and Docs<a class="headerlink" href="#files-and-docs" title="Link to this heading">#</a></h2>
-<hr><p>The assembly and organization of a <em>rivt report</em> is inferred from:</p>
-<ol class="arabic simple">
-<li><p>The <em>rivt file</em> and <em>doc</em> name</p></li>
-<li><p>The <em>project folder</em> names</p></li>
-</ol>
+  <section id="d-2-reports">
+<h1><strong>D.2 Reports</strong><a class="headerlink" href="#d-2-reports" title="Link to this heading">#</a></h1>
+<p id="api">&lt;i&gt;</p><p><em>rivt reports</em> are assembled using <em>doc numbers</em> to organize the report into
+divisions and subdivisions. Each <em>rivt file</em> has a prefix that specifies the
+division label and subdivision number of the published <em>doc</em>.  The default
+<em>subdivision</em> name is taken from the <em>rivt file</em> name but may be overridden in
+the <em>API Meta function</em>. <em>Division</em> names are specified in the
+<a class="reference internal" href="rvA02-terms.html#term-report-script"><span class="xref std std-term">report script</span></a>.</p>
 <aside class="topic">
 <p class="topic-title">Note:</p>
-<p>In the examples below, brackets identify the fixed part of the file or
-folder name and are not included in the actual name.</p>
+<p>In the file and folder examples below, brackets identify the required
+prefix for a file or folder name.</p>
 </aside>
-<p>A <em>rivt file</em> name has a <em>doc number</em> prefix:</p>
+<section id="files">
+<h2><strong>[1]</strong> Files<a class="headerlink" href="#files" title="Link to this heading">#</a></h2>
+<hr><p><strong>rivt files - input</strong></p>
+<p>A <em>rivt file name</em> has a <em>doc number</em> prefix followed by the <em>doc name</em>, where
+<em>ss</em> is a two digit subdivision number and <em>D</em> is a capital alphanumeric
+division number. For example:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rvDss-<span class="o">]</span>file-name.py
+
+rvC02-Beam-Loads.py
 </pre></div>
 </div>
-<p>where ss is a two digit subdivision number. e.g., rvC03-loads.py is subdivision
-3 within division C. Each <em>rivt file</em> outputs a <em>doc file</em> with the same
-<em>doc number</em> prefix. The <em>doc number</em> and <em>project folder structure</em> are used
-to assemble and organize reports.</p>
-<p>Sources used in a <em>doc</em> are read from the <em>source</em>
-folder.</p>
-<p>The <em>division label</em> is taken from <em>division folder label</em> and the <em>division
-name</em> is taken from the first <em>rivt file name</em> in the division.</p>
-<p>Calculated values and generated files can be passed between files. Report <em>rivt
-files</em> are processed sequentially.</p>
+<p>is subdivision 2 with the default name “Beam Loads” in division C.</p>
+<p><strong>Run file - input</strong></p>
+<p><strong>Insert file - input</strong></p>
+<p><strong>Value file - input and output</strong></p>
+<p>A <em>value file</em> is a <em>csv</em> file that defines variable values. They are imported
+using the | VALUE | command in the <em>rv.V API function</em>. Values defined in a
+_[[VALUES]] block and by equations are written to a file in the values
+subfolder using the <em>doc</em> and <em>section</em> number. The file may be read by other
+<em>rivt files</em>.</p>
+<p><strong>Tool file - input</strong></p>
+<p><strong>Doc file - output</strong></p>
+<p>Each <em>rivt file</em> outputs a <em>doc file</em> with the same <em>doc name and number</em> and
+the selected <em>doc type</em> suffix. <em>Doc</em> files are written to the <em>publish folder</em>
+as text, PDF or HTML files.</p>
+<p><strong>Report file - output</strong></p>
+<p>A <em>report file</em> is generated by the Python <em>report script</em> and written to the
+designated <em>publish folder</em>. The <em>report file</em> is taken from the <em>report
+folder</em> unless specified in the <em>report script</em>.</p>
+<p><strong>Log file - ouput</strong></p>
+<p><em>Log files</em> are written to the <em>log folder</em>. They include a backup of the rivt
+file, a listing of the execution steps when processing the <em>rivt file</em>, and a
+separate file listing each API function call.</p>
 <p id="api">&lt;i&gt;</p></section>
-<section id="project-folders">
-<h2><strong>[2]</strong> Project Folders<a class="headerlink" href="#project-folders" title="Link to this heading">#</a></h2>
+<section id="folders">
+<h2><strong>[2]</strong> Folders<a class="headerlink" href="#folders" title="Link to this heading">#</a></h2>
 <hr><p><em>rivt project folders</em> organize files that generate <em>docs</em> and <em>reports</em>.
 The files include <em>rivt files</em>, external source documents, settings,
 and public/private files. The top level structure is shown below. The full
-structure is shown <a class="reference internal" href="rvD02-folders.html"><span class="doc">here</span></a></p>
+structure is shown <a class="reference internal" href="rvD03-folders.html"><span class="doc">here</span></a></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt<span class="o">]</span>-Project-Label/<span class="w">             </span>Project<span class="w"> </span>Folder
 <span class="w">    </span>├──
 <span class="w">    </span>├──
@@ -515,20 +533,20 @@ the <em>report</em> appearance are determined at when generating <em>docs</em>.<
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rvD02-folders.html"
+       href="rvD01-documents.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>D.2 Files and Folders</strong></p>
+        <p class="prev-next-title"><strong>D.1 Documents</strong></p>
       </div>
     </a>
     <a class="right-next"
-       href="rvD04-setting.html"
+       href="rvD03-folders.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>D.4 Configuration Files</strong></p>
+        <p class="prev-next-title"><strong>D.3 Files and Folders</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -551,8 +569,8 @@ the <em>report</em> appearance are determined at when generating <em>docs</em>.<
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#files-and-docs"><strong>[1]</strong> Files and Docs</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-folders"><strong>[2]</strong> Project Folders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#files"><strong>[1]</strong> Files</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#folders"><strong>[2]</strong> Folders</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reports"><strong>[3]</strong> Reports</a></li>
 </ul>
   </nav></div>

@@ -59,7 +59,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'rvD01-documents';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="D.2 Files and Folders" href="rvD02-folders.html" />
+    <link rel="next" title="D.2 Reports" href="rvD02-reports.html" />
     <link rel="prev" title="C.9 Example" href="rvC09-example1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -313,8 +313,8 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="rvD02-folders.html"><strong>D.2 Files and Folders</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvD03-reports.html"><strong>D.3 Reports</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvD02-reports.html"><strong>D.2 Reports</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvD03-folders.html"><strong>D.3 Files and Folders</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvD04-setting.html"><strong>D.4 Configuration Files</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvD05-reportex.html"><strong>D.5 Example</strong></a></li>
 </ul>
@@ -378,10 +378,10 @@
 <h1><strong>D.1 Documents</strong><a class="headerlink" href="#d-1-documents" title="Link to this heading">#</a></h1>
 <p id="api">&lt;i&gt;</p><section id="rivt-files-and-docs">
 <h2><strong>[1]</strong> rivt Files and Docs<a class="headerlink" href="#rivt-files-and-docs" title="Link to this heading">#</a></h2>
-<hr><p><em>rivt files</em> are typically part of a <em>report</em> and reference files in the <em>rivt
-report folder</em>, unless they are published as stand-alone <em>docs</em>. Each <em>rivt
-file</em> writes a <em>doc</em>. <em>Reports</em> are generated from <em>docs</em> in the <em>publish
-folder</em>.</p>
+<hr><p>Each <em>rivt file</em> outputs a corresponding formatted <em>doc</em> written to the
+<em>publish folder</em> unless they are published as a stand-alone <em>doc</em> as specified
+in the <em>rv.M API</em> function. <em>rivt files</em> are typically assembled into a
+<em>report</em>. Further <em>report folder</em> details are <a class="reference internal" href="rvD03-folders.html"><span class="doc">here</span></a></p>
 <p><strong>Folder Key</strong></p>
 <ul class="simple">
 <li><p>Required folder and file prefix names are shown in brackets [ ].</p></li>
@@ -397,37 +397,35 @@ folder</em>.</p>
 <span class="w">    </span>...
 <span class="w">    </span>...
 
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>log<span class="o">]</span>/<span class="w">                      </span><span class="o">||</span><span class="w"> </span>log<span class="w"> </span>files<span class="w"> </span>folder
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>public<span class="o">]</span>/<span class="w">                   </span><span class="o">||</span><span class="w"> </span>public<span class="w"> </span>rivt<span class="w"> </span>files<span class="w"> </span>folder
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>publish<span class="o">]</span>/<span class="w">                  </span><span class="o">||</span><span class="w"> </span>doc<span class="w"> </span>and<span class="w"> </span>reports<span class="w"> </span>folder
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>src<span class="o">]</span>/<span class="w">                      </span><span class="o">||||</span><span class="w"> </span><span class="nb">source</span><span class="w"> </span>files<span class="w"> </span>folder
-<span class="w">    </span>└──<span class="w"> </span>README.txt<span class="w">                  </span><span class="p">|</span><span class="w"> </span>GitHub<span class="w"> </span>searchable<span class="w"> </span>text<span class="w"> </span>report
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>log<span class="o">]</span>/<span class="w">                      </span><span class="o">||</span><span class="w"> </span>Log<span class="w"> </span>files<span class="w"> </span>folder
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>public<span class="o">]</span>/<span class="w">                   </span><span class="o">||</span><span class="w"> </span>Public<span class="w"> </span>rivt<span class="w"> </span>files<span class="w"> </span>folder
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>publish<span class="o">]</span>/<span class="w">                  </span><span class="o">||</span><span class="w"> </span>Docs<span class="w"> </span>and<span class="w"> </span>reports<span class="w"> </span>folder
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>src<span class="o">]</span>/<span class="w">                      </span><span class="o">||||</span><span class="w"> </span>Source<span class="w"> </span>files<span class="w"> </span>folder
+<span class="w">    </span>└──<span class="w"> </span>README.txt<span class="w">                  </span><span class="o">||</span><span class="w"> </span>Searchable<span class="w"> </span>text<span class="w"> </span>report
 </pre></div>
 </div>
-<p>The <a class="reference internal" href="rvA02-terms.html#term-doc"><span class="xref std std-term">doc</span></a> file name is taken from the <em>rivt file name</em> and written to the <em>publish</em>
-folder.  Further explanation of the <em>rivt report folder</em> is <a class="reference internal" href="rvD02-folders.html"><span class="doc">here</span></a></p>
 <p>PDF <em>doc</em> files are produced by two different libraries, referred to as <em>pdf</em>
 and <em>pdftex</em>. A <em>pdf</em> doc is formatted using the <em>rst2pdf</em> library, a susbset
-of the larger <em>ReportLab</em> library. Its advantage is a much smaller
-library compared to LaTeX libraries. It is the default PDF <em>doc</em>.</p>
-<p>A LaTeX <em>pdftex doc</em> requires separate installation of the large <em>texlive</em>
-LaTeX library (approx. 3GB). Its advantage is additional control over <em>doc</em>
-formatting and appearance.</p>
+of the larger <em>ReportLab</em> library. It is the default PDF <em>doc</em>. Its advantage
+is a small library that is part of <em>rivt</em>.</p>
+<p>A LaTeX <em>pdftex doc</em> requires separate installation of the much larger
+<em>texlive</em> LaTeX library (approx. 3GB). Its advantage is additional control over
+<em>doc</em> formatting and appearance.</p>
 <p id="api">&lt;i&gt;</p></section>
 <section id="stand-alone-docs">
 <h2><strong>[2]</strong> Stand-alone Docs<a class="headerlink" href="#stand-alone-docs" title="Link to this heading">#</a></h2>
 <hr><p>A single document that will not be part of a report, may be published using the
 local folder rivt folder for reading and writing files, without referencing the
-<em>rivt report folder</em> structure.</p>
-<p>A stand-alone <em>doc</em> is published using the following settings:</p>
+<em>rivt report folder</em> structure. A stand-alone <em>doc</em> is published using the
+following settings:</p>
 <ol class="arabic simple">
-<li><p>The path in <em>commands</em> is specified with the standard “./” current folder syntax.</p></li>
 <li><p>The <em>rv_local</em> variable in the <em>Meta API</em> is set to “True”.</p></li>
+<li><p>The <em>COMMAND</em> path is specified with the standard “./” current folder syntax.</p></li>
 </ol>
-<p>Any <em>rivt file</em> can be converted to a stand-alone <em>doc</em> using the above steps.
-The text, PDF and HTML <em>docs</em> will be written to the local file using simple
-style settings built into <em>rivtlib</em>. Stand-alone <em>docs</em> require less setup but
-also offer less formatting control.</p>
+<p>A <em>rivt file</em> can be converted to a stand-alone <em>doc</em> using the above steps.
+The text, PDF and HTML <em>docs</em> will be written to the local file folder using
+simple style settings built into <em>rivtlib</em>. Stand-alone <em>docs</em> require less
+setup but also offer less formatting control.</p>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -453,11 +451,11 @@ also offer less formatting control.</p>
       </div>
     </a>
     <a class="right-next"
-       href="rvD02-folders.html"
+       href="rvD02-reports.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>D.2 Files and Folders</strong></p>
+        <p class="prev-next-title"><strong>D.2 Reports</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

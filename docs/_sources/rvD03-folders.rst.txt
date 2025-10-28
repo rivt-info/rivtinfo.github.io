@@ -1,4 +1,4 @@
-**D.2 Files and Folders**
+**D.3 Files and Folders**
 ============================
 
 .. raw:: html

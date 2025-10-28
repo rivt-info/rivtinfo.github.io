@@ -12,10 +12,10 @@
 
     <hr>
 
-*rivt files* are typically part of a *report* and reference files in the *rivt
-report folder*, unless they are published as stand-alone *docs*. Each *rivt
-file* writes a *doc*. *Reports* are generated from *docs* in the *publish
-folder*.
+Each *rivt file* outputs a corresponding formatted *doc* written to the
+*publish folder* unless they are published as a stand-alone *doc* as specified
+in the *rv.M API* function. *rivt files* are typically assembled into a
+*report*. Further *report folder* details are :doc:`here<rvD03-folders>`
 
 **Folder Key**
 
@@ -23,6 +23,7 @@ folder*.
 - Single vertical bar ( | ) identifies files provided by the report author. 
 - Double vertical bar ( || ) identifies files written by rivtlib 
 - Four vertical bars ( |||| ) are a mix of author and rivtlib written files
+
 
 
 .. code-block:: bash
@@ -35,23 +36,20 @@ folder*.
         ...
         ...
 
-        ├── [log]/                      || log files folder
-        ├── [public]/                   || public rivt files folder
-        ├── [publish]/                  || doc and reports folder
-        ├── [src]/                      |||| source files folder
-        └── README.txt                  | GitHub searchable text report 
-
-The :term:`doc` file name is taken from the *rivt file name* and written to the *publish*
-folder.  Further explanation of the *rivt report folder* is :doc:`here<rvD02-folders>`
+        ├── [log]/                      || Log files folder
+        ├── [public]/                   || Public rivt files folder
+        ├── [publish]/                  || Docs and reports folder
+        ├── [src]/                      |||| Source files folder
+        └── README.txt                  || Searchable text report 
 
 PDF *doc* files are produced by two different libraries, referred to as *pdf*
 and *pdftex*. A *pdf* doc is formatted using the *rst2pdf* library, a susbset
-of the larger *ReportLab* library. Its advantage is a much smaller 
-library compared to LaTeX libraries. It is the default PDF *doc*.
+of the larger *ReportLab* library. It is the default PDF *doc*. Its advantage
+is a small library that is part of *rivt*.
 
-A LaTeX *pdftex doc* requires separate installation of the large *texlive*
-LaTeX library (approx. 3GB). Its advantage is additional control over *doc*
-formatting and appearance.
+A LaTeX *pdftex doc* requires separate installation of the much larger
+*texlive* LaTeX library (approx. 3GB). Its advantage is additional control over
+*doc* formatting and appearance.
 
 .. raw:: html
 
@@ -67,23 +65,22 @@ formatting and appearance.
 
 A single document that will not be part of a report, may be published using the
 local folder rivt folder for reading and writing files, without referencing the
-*rivt report folder* structure.
+*rivt report folder* structure. A stand-alone *doc* is published using the
+following settings:
 
-A stand-alone *doc* is published using the following settings:
-
-#. The path in *commands* is specified with the standard "./" current folder syntax. 
 #. The *rv_local* variable in the *Meta API* is set to "True".
+#. The *COMMAND* path is specified with the standard "./" current folder syntax. 
   
-Any *rivt file* can be converted to a stand-alone *doc* using the above steps.
-The text, PDF and HTML *docs* will be written to the local file using simple
-style settings built into *rivtlib*. Stand-alone *docs* require less setup but
-also offer less formatting control.
+A *rivt file* can be converted to a stand-alone *doc* using the above steps.
+The text, PDF and HTML *docs* will be written to the local file folder using
+simple style settings built into *rivtlib*. Stand-alone *docs* require less
+setup but also offer less formatting control.
 
 .. toctree::
     :maxdepth: 1
     :hidden:
 
-    rvD02-folders.rst
-    rvD03-reports.rst
+    rvD02-reports.rst
+    rvD03-folders.rst
     rvD04-setting.rst
     rvD05-reportex.rst

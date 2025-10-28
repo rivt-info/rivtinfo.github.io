@@ -13,9 +13,9 @@
 
     <hr>
 
-:term:`rivt markup` provides a readable, plain text language that generates
+:term:`rivt markup` is a readable, plain text language that generates
 formatted text, PDF or HTML :term:`docs` from the same *rivt file*. The markup
-is processed in a *rivt string* - a utf-8 text string argument of a 
+is included in a *rivt string* - a utf-8 text string argument of a 
 :doc:`API function<rvA01-intro>`.
 
 The API function and header start in the first column (standard Python syntax),
@@ -26,7 +26,7 @@ folding in IDEs.
 
     rv._("""Section Label | print;hide, private;public, section;merge
 
-        section content (utf-8 text)
+        section text (utf-8 text)
         ...
         ...
         
@@ -154,7 +154,7 @@ results and define variables.
 
 File paths are specified relative to the *report folder* or *rivt file* folder.  
 The  typical *rivt report* folder structure is described 
-:doc:`here. <rvD02-folders>`
+:doc:`here. <rvD03-folders>`
 
 .. toctree::
     :maxdepth: 1
