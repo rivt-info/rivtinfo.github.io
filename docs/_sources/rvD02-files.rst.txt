@@ -190,7 +190,12 @@ file* with an added hyphen between "rv" and the docnumber e.g.
     <hr>
 
 The *rivt report folder* organizes *logs*, *public rivt files*, *sources*,
-*docs* and *reports*. The top level folders are shown below. 
+*docs* and *reports*. Top level folders are shown below. 
+
+.. topic:: Note:
+
+    When a *rivt file* is processed, required folders are created if missing.
+
 
 **Folder Key**
 
@@ -212,11 +217,6 @@ The *rivt report folder* organizes *logs*, *public rivt files*, *sources*,
         ├── [publish]/                  || reports folder
         ├── [src]/                      |||| source folder
         └── README.txt                  || Searchable text report 
-
-.. topic:: Note:
-
-    When a *rivt file* is processed, the required folders are checked. If a
-    required folder is missing it is created. 
 
 The full report folder structure is :ref:`here. <full-report-folder>`
 
