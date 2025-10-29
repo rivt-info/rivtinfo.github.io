@@ -72,30 +72,36 @@ An example *report* folder structure is shown below.
 sharing are written to the *public* folder. Process files generated during *doc*
 formatting are written to the *log* folder.
 
+**Collapsed Folders**
 
 .. code-block:: bash
 
-    Collapsed Folders
 
     [rivt-]Report-Label/                Report Folder Name
         ├── [rv101-]filename1.py        | rivt file
         ├── [rv102-]filename2.py        | rivt file
         ├── [rv201-]filename3.py        | rivt file
         ├── [rv202-]filename4.py        | rivt file  
-        ├── [log]/                      || log folder
+        ├── [logs]/                     || log folder
         ├── [public]/                   || public rivt folder
         ├── [publish]/                  || reports folder
         ├── [src]/                      |||| source folder
         └── README.txt                  || Searchable text report 
 
-    Expanded Folders
+
+
+.. _full-report-folder:
+
+**Expanded Folders**
+
+.. code-block:: bash
 
     [rivt]-Report-Label/                       Report Folder Name                
         ├── [rv101-]filename1.py                | rivt file
         ├── [rv102-]filename2.py                | rivt file
         ├── [rv201-]filename3.py                | rivt file
         ├── [rv202-]filename4.py                | rivt file        
-        ├── [log]/                              || log files
+        ├── [logs]/                              || log files
             ├── rv101-api.rst                   ||
             ├── rv101-log.txt                   ||
             └── rv102-log.txt                   ||

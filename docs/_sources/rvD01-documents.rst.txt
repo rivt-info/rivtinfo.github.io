@@ -5,7 +5,7 @@
 
     <p id="api">&lt;i&gt;</p>
 
-**[1]** rivt Files and Docs
+**[1]** rivt Files
 --------------------------------------------------------------------- 
 
 .. raw:: html
@@ -16,7 +16,7 @@ Each :term:`rivt file` outputs a corresponding formatted :term:`doc` written to
 the *publish folder* unless it is published as a :term:`stand-alone doc`. 
 
 PDF *doc* files are produced by two different libraries, referred to as *pdf*
-and *pdftex*. A *pdf* doc is formatted using the *rst2pdf* library, a susbset
+and *pdftex*. A *pdf* doc is formatted using the *rst2pdf* library, a subset
 of the larger *ReportLab* library. It is the default PDF *doc*. Its advantage
 is a small library that is part of *rivt*.
 
@@ -35,7 +35,8 @@ A LaTeX *pdftex doc* requires separate installation of the much larger
 
     <hr>
 
-*rivt files* are typically assembled into a *report*. The top level folder
+A *report* is assembled from multiple *docs* using the *doc numbers* to
+organize the *docs* into divsions and subdivisions. The top level folder
 structure for a *report* is shown below. Further *report folder* details are
 :doc:`here. <rvD03-folders>`
 
@@ -56,7 +57,7 @@ structure for a *report* is shown below. Further *report folder* details are
         ...
         ...
 
-        ├── [log]/                      || Log files folder
+        ├── [logs]/                      || Log files folder
         ├── [public]/                   || Public rivt files folder
         ├── [publish]/                  || Docs and reports folder
         ├── [src]/                      |||| Source files folder
@@ -74,12 +75,12 @@ structure for a *report* is shown below. Further *report folder* details are
 
     <hr>
 
-A single document that will not be part of a report, may be published using the
-local folder rivt folder for reading and writing files, without referencing the
-*rivt report folder* structure. A stand-alone *doc* is published using the
+A document that will not be part of a report may be formatted using the
+rivt file folder for reading and writing files, without referencing the
+*rivt report folders*. A stand-alone *doc* is published using the
 following settings:
 
-#. The *rv_local* variable in the *Meta API* is set to "True".
+#. The *rv_local* variable is set to "True" in the *Meta API*.
 #. The *COMMAND* path is specified with the standard "./" current folder syntax. 
   
 A *rivt file* can be converted to a stand-alone *doc* using the above steps.
@@ -91,7 +92,7 @@ setup but also offer less formatting control.
     :maxdepth: 1
     :hidden:
 
-    rvD02-reports.rst
+    rvD02-files.rst
     rvD03-folders.rst
     rvD04-setting.rst
     rvD05-reportex.rst

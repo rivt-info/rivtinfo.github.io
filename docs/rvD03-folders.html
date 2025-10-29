@@ -60,7 +60,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="D.4 Configuration Files" href="rvD04-setting.html" />
-    <link rel="prev" title="D.2 Reports" href="rvD02-reports.html" />
+    <link rel="prev" title="D.2 Files" href="rvD02-files.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -313,7 +313,7 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="rvD02-reports.html"><strong>D.2 Reports</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvD02-files.html"><strong>D.2 Files</strong></a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>D.3 Files and Folders</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvD04-setting.html"><strong>D.4 Configuration Files</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvD05-reportex.html"><strong>D.5 Example</strong></a></li>
@@ -421,27 +421,26 @@ rv212-filename.py
 <em>Docs</em> are written to the <em>publish</em> folder. <em>rivt files</em> marked for open source
 sharing are written to the <em>public</em> folder. Process files generated during <em>doc</em>
 formatting are written to the <em>log</em> folder.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Collapsed<span class="w"> </span>Folders
-
-<span class="o">[</span>rivt-<span class="o">]</span>Report-Label/<span class="w">                </span>Report<span class="w"> </span>Folder<span class="w"> </span>Name
+<p><strong>Collapsed Folders</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt-<span class="o">]</span>Report-Label/<span class="w">                </span>Report<span class="w"> </span>Folder<span class="w"> </span>Name
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename1.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv102-<span class="o">]</span>filename2.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv201-<span class="o">]</span>filename3.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv202-<span class="o">]</span>filename4.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>log<span class="o">]</span>/<span class="w">                      </span><span class="o">||</span><span class="w"> </span>log<span class="w"> </span>folder
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>logs<span class="o">]</span>/<span class="w">                     </span><span class="o">||</span><span class="w"> </span>log<span class="w"> </span>folder
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>public<span class="o">]</span>/<span class="w">                   </span><span class="o">||</span><span class="w"> </span>public<span class="w"> </span>rivt<span class="w"> </span>folder
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>publish<span class="o">]</span>/<span class="w">                  </span><span class="o">||</span><span class="w"> </span>reports<span class="w"> </span>folder
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>src<span class="o">]</span>/<span class="w">                      </span><span class="o">||||</span><span class="w"> </span><span class="nb">source</span><span class="w"> </span>folder
 <span class="w">    </span>└──<span class="w"> </span>README.txt<span class="w">                  </span><span class="o">||</span><span class="w"> </span>Searchable<span class="w"> </span>text<span class="w"> </span>report
-
-Expanded<span class="w"> </span>Folders
-
-<span class="o">[</span>rivt<span class="o">]</span>-Report-Label/<span class="w">                       </span>Report<span class="w"> </span>Folder<span class="w"> </span>Name
+</pre></div>
+</div>
+<p id="full-report-folder"><strong>Expanded Folders</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt<span class="o">]</span>-Report-Label/<span class="w">                       </span>Report<span class="w"> </span>Folder<span class="w"> </span>Name
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename1.py<span class="w">                </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv102-<span class="o">]</span>filename2.py<span class="w">                </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv201-<span class="o">]</span>filename3.py<span class="w">                </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv202-<span class="o">]</span>filename4.py<span class="w">                </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>log<span class="o">]</span>/<span class="w">                              </span><span class="o">||</span><span class="w"> </span>log<span class="w"> </span>files
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>logs<span class="o">]</span>/<span class="w">                              </span><span class="o">||</span><span class="w"> </span>log<span class="w"> </span>files
 <span class="w">        </span>├──<span class="w"> </span>rv101-api.rst<span class="w">                   </span><span class="o">||</span>
 <span class="w">        </span>├──<span class="w"> </span>rv101-log.txt<span class="w">                   </span><span class="o">||</span>
 <span class="w">        </span>└──<span class="w"> </span>rv102-log.txt<span class="w">                   </span><span class="o">||</span>
@@ -549,12 +548,12 @@ Expanded<span class="w"> </span>Folders
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rvD02-reports.html"
+       href="rvD02-files.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>D.2 Reports</strong></p>
+        <p class="prev-next-title"><strong>D.2 Files</strong></p>
       </div>
     </a>
     <a class="right-next"

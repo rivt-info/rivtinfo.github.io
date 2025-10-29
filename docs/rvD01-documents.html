@@ -59,7 +59,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'rvD01-documents';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="D.2 Reports" href="rvD02-reports.html" />
+    <link rel="next" title="D.2 Files" href="rvD02-files.html" />
     <link rel="prev" title="C.9 Example" href="rvC09-example1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -313,7 +313,7 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="rvD02-reports.html"><strong>D.2 Reports</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvD02-files.html"><strong>D.2 Files</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvD03-folders.html"><strong>D.3 Files and Folders</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvD04-setting.html"><strong>D.4 Configuration Files</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvD05-reportex.html"><strong>D.5 Example</strong></a></li>
@@ -376,12 +376,12 @@
                   
   <section id="d-1-docs">
 <h1><strong>D.1 Docs</strong><a class="headerlink" href="#d-1-docs" title="Link to this heading">#</a></h1>
-<p id="api">&lt;i&gt;</p><section id="rivt-files-and-docs">
-<h2><strong>[1]</strong> rivt Files and Docs<a class="headerlink" href="#rivt-files-and-docs" title="Link to this heading">#</a></h2>
+<p id="api">&lt;i&gt;</p><section id="rivt-files">
+<h2><strong>[1]</strong> rivt Files<a class="headerlink" href="#rivt-files" title="Link to this heading">#</a></h2>
 <hr><p>Each <a class="reference internal" href="rvA02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> outputs a corresponding formatted <a class="reference internal" href="rvA02-terms.html#term-doc"><span class="xref std std-term">doc</span></a> written to
 the <em>publish folder</em> unless it is published as a <a class="reference internal" href="rvA02-terms.html#term-stand-alone-doc"><span class="xref std std-term">stand-alone doc</span></a>.</p>
 <p>PDF <em>doc</em> files are produced by two different libraries, referred to as <em>pdf</em>
-and <em>pdftex</em>. A <em>pdf</em> doc is formatted using the <em>rst2pdf</em> library, a susbset
+and <em>pdftex</em>. A <em>pdf</em> doc is formatted using the <em>rst2pdf</em> library, a subset
 of the larger <em>ReportLab</em> library. It is the default PDF <em>doc</em>. Its advantage
 is a small library that is part of <em>rivt</em>.</p>
 <p>A LaTeX <em>pdftex doc</em> requires separate installation of the much larger
@@ -390,7 +390,8 @@ is a small library that is part of <em>rivt</em>.</p>
 <p id="api">&lt;i&gt;</p></section>
 <section id="report-docs">
 <h2><strong>[2]</strong> Report Docs<a class="headerlink" href="#report-docs" title="Link to this heading">#</a></h2>
-<hr><p><em>rivt files</em> are typically assembled into a <em>report</em>. The top level folder
+<hr><p>A <em>report</em> is assembled from multiple <em>docs</em> using the <em>doc numbers</em> to
+organize the <em>docs</em> into divsions and subdivisions. The top level folder
 structure for a <em>report</em> is shown below. Further <em>report folder</em> details are
 <a class="reference internal" href="rvD03-folders.html"><span class="doc">here.</span></a></p>
 <p><strong>Folder Key</strong></p>
@@ -408,7 +409,7 @@ structure for a <em>report</em> is shown below. Further <em>report folder</em> d
 <span class="w">    </span>...
 <span class="w">    </span>...
 
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>log<span class="o">]</span>/<span class="w">                      </span><span class="o">||</span><span class="w"> </span>Log<span class="w"> </span>files<span class="w"> </span>folder
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>logs<span class="o">]</span>/<span class="w">                      </span><span class="o">||</span><span class="w"> </span>Log<span class="w"> </span>files<span class="w"> </span>folder
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>public<span class="o">]</span>/<span class="w">                   </span><span class="o">||</span><span class="w"> </span>Public<span class="w"> </span>rivt<span class="w"> </span>files<span class="w"> </span>folder
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>publish<span class="o">]</span>/<span class="w">                  </span><span class="o">||</span><span class="w"> </span>Docs<span class="w"> </span>and<span class="w"> </span>reports<span class="w"> </span>folder
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>src<span class="o">]</span>/<span class="w">                      </span><span class="o">||||</span><span class="w"> </span>Source<span class="w"> </span>files<span class="w"> </span>folder
@@ -418,12 +419,12 @@ structure for a <em>report</em> is shown below. Further <em>report folder</em> d
 <p id="api">&lt;i&gt;</p></section>
 <section id="stand-alone-docs">
 <h2><strong>[3]</strong> Stand-alone Docs<a class="headerlink" href="#stand-alone-docs" title="Link to this heading">#</a></h2>
-<hr><p>A single document that will not be part of a report, may be published using the
-local folder rivt folder for reading and writing files, without referencing the
-<em>rivt report folder</em> structure. A stand-alone <em>doc</em> is published using the
+<hr><p>A document that will not be part of a report may be formatted using the
+rivt file folder for reading and writing files, without referencing the
+<em>rivt report folders</em>. A stand-alone <em>doc</em> is published using the
 following settings:</p>
 <ol class="arabic simple">
-<li><p>The <em>rv_local</em> variable in the <em>Meta API</em> is set to “True”.</p></li>
+<li><p>The <em>rv_local</em> variable is set to “True” in the <em>Meta API</em>.</p></li>
 <li><p>The <em>COMMAND</em> path is specified with the standard “./” current folder syntax.</p></li>
 </ol>
 <p>A <em>rivt file</em> can be converted to a stand-alone <em>doc</em> using the above steps.
@@ -455,11 +456,11 @@ setup but also offer less formatting control.</p>
       </div>
     </a>
     <a class="right-next"
-       href="rvD02-reports.html"
+       href="rvD02-files.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>D.2 Reports</strong></p>
+        <p class="prev-next-title"><strong>D.2 Files</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -482,7 +483,7 @@ setup but also offer less formatting control.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-files-and-docs"><strong>[1]</strong> rivt Files and Docs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-files"><strong>[1]</strong> rivt Files</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#report-docs"><strong>[2]</strong> Report Docs</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stand-alone-docs"><strong>[3]</strong> Stand-alone Docs</a></li>
 </ul>
