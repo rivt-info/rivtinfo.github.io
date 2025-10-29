@@ -6,7 +6,7 @@
 
     <p id="api">&lt;i&gt;</p>
 
-**[1]** Folders 
+**[1]** Folder Names
 -------------------------------
 
 .. raw:: html
@@ -34,7 +34,7 @@ where leading zeroes are dropped and *docs* are sorted alpha-numerically into
 divisions and subdivisions in the *report*.
 
 
-**[2]**  Report Folder
+**[2]**  Report Folders
 -------------------------------
 
 An example *report* folder structure is shown below.

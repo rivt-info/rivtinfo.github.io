@@ -35,7 +35,7 @@
     "ShortcutMenuBar.navigateForward": false,
     "ShortcutMenuBar.openFilesList": true,
     "ShortcutMenuBar.toggleWordWrap": false,
-    "ShortcutMenuBar.saveAll": true,
+    "ShortcutMenuBar.saveAll": false,
     "ShortcutMenuBar.openSettings": true,
     "ShortcutMenuBar.quickOpen": false,
     "ShortcutMenuBar.showCommands": false,

@@ -6,7 +6,7 @@
 
     <p id="api">&lt;i&gt;</p>
 
-**[1]** Files 
+**[1]** File Types 
 --------------------------------------------------------------------- 
 
 .. raw:: html
@@ -135,14 +135,15 @@ re-executed along with other format settings.
 
 A public rivt file is a copy of the *rivt file* that includes all of the
 sections marked as *public* in the *header*. It has the same name as the *rivt
-file*
+file* with an added hyphen between "rv" and the docnumber e.g.
+*rv-Dss-filename.py*
 
 **Log file**
 
     *origin*: program output
     *folder*: logs/ 
 
-*Log files* are written to the *log folder*. They include 
+*Log files* are written to the *log folder*. They include: 
 
 - a backup of the rivt file
 - a file listing the execution steps when processing the *rivt file* 
