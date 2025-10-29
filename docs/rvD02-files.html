@@ -382,11 +382,7 @@
 <p id="api">&lt;i&gt;</p><section id="file-types">
 <h2><strong>[1]</strong> File Types<a class="headerlink" href="#file-types" title="Link to this heading">#</a></h2>
 <hr><p><strong>rivt file</strong></p>
-<blockquote>
-<div><p><strong>origin</strong>: author input</p>
-<p><strong>folder</strong>: <em>/report</em></p>
-</div></blockquote>
-<p><em>rivt files</em> are prepared by the author. Each <em>rivt file</em> has a prefix that
+<p><em>rivt files</em> are written by the author. Each <em>rivt file</em> has a prefix that
 specifies the division label and subdivision number of the published <em>doc</em>.
 <em>rivt reports</em> are assembled using <em>doc numbers</em> that organize the report into
 divisions and subdivisions. The d*subdivision* name is taken from the
@@ -405,84 +401,87 @@ Hyphens are stripped from file name.</p>
 <p class="topic-title">Note:</p>
 <p>The following files are read and written by <em>rivtlib</em> when processing a
 <em>rivt file</em>.  Files are labeled by origin and folder.</p>
+<p><strong>origin</strong>: author input</p>
+<p><strong>folder</strong>: <em>rivt-report-folder-name</em></p>
 </aside>
 <p><strong>Run file</strong></p>
+<p>A <em>run file</em> is a shell or command script executed using the | RUN |
+command.</p>
 <blockquote>
 <div><p><strong>origin</strong>: author input</p>
 <p><strong>folder</strong>: <em>src/</em>  - or a user created subfolder of /src</p>
-<p><strong>API function</strong>:  <em>rv.R API</em></p>
+<p><strong>API function</strong>:  <em>rv.R</em></p>
 </div></blockquote>
-<p>A <em>run file</em> is a shell or command script executed using the | RUN |
-command.</p>
 <p><strong>Insert file</strong></p>
+<p>An <em>insert file</em> is an image, table or text file executed using
+the | IMAGE | , | TABLE | , or | TEXT | command.</p>
 <blockquote>
 <div><p><strong>origin</strong>: author input</p>
 <p><strong>folder</strong>: <em>src/</em> - or a user created subfolder of /src</p>
-<p><strong>API function</strong>:  <em>rv.I API</em></p>
+<p><strong>API function</strong>:  <em>rv.I</em></p>
 </div></blockquote>
-<p>An <em>insert file</em> is an image, table or text file executed using
-the | IMAGE | , | TABLE | , or | TEXT | command.</p>
 <p><strong>Value file</strong></p>
-<blockquote>
-<div><p>Read</p>
-<p><strong>origin</strong>: author input</p>
-<p><strong>folder</strong>: <em>src/Values</em>  -  or a user created subfolder of /src</p>
-<p><strong>API function</strong>:  <em>rv.V API</em></p>
-<p>Write</p>
-<p><strong>origin</strong>: program output</p>
-<p><strong>folder</strong>: <em>src/Values</em></p>
-<p><strong>API function</strong>:  <em>rv.V API</em></p>
-</div></blockquote>
 <p>A <em>value file</em> is a <em>csv</em> file that defines variable values. It is imported
 using the | VALUE | command. Values defined by equations and a _[[VALUES]]
 block are written to a file with the name composed of the <em>doc</em> and <em>section</em>
 number. The file may be read by other <em>rivt files</em>.</p>
+<blockquote>
+<div><p>Read</p>
+<p><strong>origin</strong>: author input</p>
+<p><strong>folder</strong>: <em>src/Values</em>  -  or a user created subfolder of /src</p>
+<p><strong>API function</strong>:  <em>rv.V</em></p>
+<p>Write</p>
+<p><strong>origin</strong>: program output</p>
+<p><strong>folder</strong>: <em>src/Values</em></p>
+<p><strong>API function</strong>:  <em>rv.V</em></p>
+</div></blockquote>
 <p><strong>Tool file</strong></p>
+<p>A <em>tool file</em> can be executed using the | PYTHON | , | HTML | , | RST |
+or | LATEX | command. It may be used for analysis and generation of text, tables,
+images and other content.  Executing a tool file may:</p>
+<ul>
+<li><p>define functions and classes for use in the <em>rivt file</em></p></li>
+<li><p>generate images, tables and text for inclusion in the <em>doc</em></p></li>
+<li><p>insert markup text into the <em>doc</em></p>
 <blockquote>
 <div><p>Read</p>
 <p><strong>origin</strong>: author input</p>
 <p><strong>folder</strong>: <em>src/Tools</em>  or a user created subfolder of /src</p>
-<p><strong>API function</strong>:  <em>rv.T API</em></p>
+<p><strong>API function</strong>:  <em>rv.T</em></p>
 <p>Write</p>
 <p><strong>origin</strong>: program output</p>
 <p><strong>folder</strong>: <em>src/Tools</em></p>
-<p><strong>API function</strong>:  <em>rv.T API</em></p>
+<p><strong>API function</strong>:  <em>rv.T</em></p>
 </div></blockquote>
-<p>A <em>tool file</em> can be executed using the | PYTHON | , | HTML | , | RST |
-or | LATEX | command. It may be used for analysis and generation of text, tables,
-images and other content.  Executing a tool file may:</p>
-<ul class="simple">
-<li><p>define functions and classes for use in the <em>rivt file</em></p></li>
-<li><p>generate images, tables and text for inclusion in the <em>doc</em></p></li>
-<li><p>insert markup text into the <em>doc</em></p></li>
+</li>
 </ul>
 <p><strong>Doc file</strong></p>
-<blockquote>
-<div><p><strong>origin</strong>: program output</p>
-<p><strong>folder</strong>: <em>src/</em> - or a user created subfolder of /src</p>
-<p><strong>API function</strong>:  <em>rv.D API</em></p>
-</div></blockquote>
 <p>Each <em>rivt file</em> outputs a <em>doc file</em> with the same <em>doc name and number</em> and
 the selected <em>doc type</em> suffix. <em>Doc</em> files are written to the <em>publish folder</em>
 as text, PDF or HTML files using | PUBLISH | command.</p>
 <p>PDF files may be prepended or appended to the <em>doc</em> using the | APPEND |
 command.</p>
+<blockquote>
+<div><p><strong>origin</strong>: program output</p>
+<p><strong>folder</strong>: <em>src/</em> - or a user created subfolder of /src</p>
+<p><strong>API function</strong>:  <em>rv.D</em></p>
+</div></blockquote>
 <p><strong>Report file</strong></p>
+<p>A <em>report file</em> is generated by the Python <em>report script</em> and is written to
+the designated <em>publish subfolder</em>. The <em>report file name</em> is taken from the
+<em>report folder name</em> unless specified in the <em>report script</em>.</p>
 <blockquote>
 <div><p><strong>origin</strong>: program output</p>
 <p><strong>folder</strong>: <em>/publish/</em> subfolder</p>
 </div></blockquote>
-<p>A <em>report file</em> is generated by the Python <em>report script</em> and is written to
-the designated <em>publish subfolder</em>. The <em>report file name</em> is taken from the
-<em>report folder name</em> unless specified in the <em>report script</em>.</p>
 <p><strong>Report script</strong></p>
+<p>The <em>report script</em> is a Python file that assembles the <em>report</em>. It specifies
+the <em>docs</em> that should be included, whether the <em>rivt files</em> should be
+re-executed and other format settings.</p>
 <blockquote>
 <div><p><strong>origin</strong>: author input</p>
 <p><strong>folder</strong>: <em>/publish</em></p>
 </div></blockquote>
-<p>The <em>report script</em> is a Python file that assembles the <em>report</em>. It specifies
-the <em>docs</em> that should be included, whether the <em>rivt files</em> should be
-re-executed along with other format settings.</p>
 <p><strong>Public rivt file</strong></p>
 <blockquote>
 <div><p><strong>origin</strong>: program output</p>
@@ -493,15 +492,16 @@ sections marked as <em>public</em> in the <em>header</em>. It has the same name 
 file</em> with an added hyphen between “rv” and the docnumber e.g.
 <em>rv-Dss-filename.py</em></p>
 <p><strong>Log file</strong></p>
+<p><em>Log files</em> are written to the <em>log folder</em>. They include:</p>
+<ul>
+<li><p>a backup of the rivt file</p></li>
+<li><p>a file listing the execution steps when processing the <em>rivt file</em></p></li>
+<li><p>a file listing each API function call with the header.</p>
 <blockquote>
 <div><p><strong>origin</strong>: program output</p>
 <p><strong>folder</strong>: <em>/logs</em></p>
 </div></blockquote>
-<p><em>Log files</em> are written to the <em>log folder</em>. They include:</p>
-<ul class="simple">
-<li><p>a backup of the rivt file</p></li>
-<li><p>a file listing the execution steps when processing the <em>rivt file</em></p></li>
-<li><p>a file listing each API function call with the header.</p></li>
+</li>
 </ul>
 <p id="api">&lt;i&gt;</p></section>
 <section id="folders">
