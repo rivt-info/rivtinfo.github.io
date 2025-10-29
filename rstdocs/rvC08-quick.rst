@@ -16,6 +16,8 @@
 ============= ============================= =======================================
 API Scope             Line Tags              Description (doc scope)
 ============= ============================= =======================================
+rv.V          function _[D]                  add doc string to function log (all)
+rv.V          function _[F]                  add code to function log (all)  
 rv.I, V           text _[#]                  endnote number (all)
 rv.I, V           text _[C]                  center text (all)
 rv.I, V           text _[R]                  right justify text (all)
@@ -78,27 +80,27 @@ all           _[[END]]  optional label               End block (all)
 
     <hr>
 
-========== ====================================================== ===== ==================
-API Scope           | Command | path | parameters                  R/W   input types
-========== ====================================================== ===== ==================
-rv.R        \| LINUX | relative path | *wait;nowait*                 R   *sh*
-rv.R        \| MACOS | relative path | *wait;nowait*                 R   *sh*
-rv.R        \| WIN | relative path   | *wait;nowait*                 R   *bat, cmd*
-rv.I, V     \| IMAGE | relative path |  scale, caption (_[I])        R   *png, jpg*
-rv.I, V     \| IMAGE2 | relative path | s1, s2, c1, c2 (_[I])        R   *png, jpg*
-rv.I, V     \| TABLE | relative path | width, l;c;r, title           R   *csv, txt, xlsx*
-rv.I, V     \| TEXT | relative path |  *normal;literal* ;code        R   *txt, code*
-rv.V        \| VALUES | relative path | *visible;hide* (_[T])        R   *csv*
-rv.V        a := 1*IN  | unit1, unit2, decimal | description         W   define value
-rv.V        b <= a + 3*FT | unit1, unit2, decimal | ref (_[E])       W   assign value
-rv.V        c <= func1(a,b) | unit1, unit2, decimal | ref (_[E])     W   assign value
-rv.T        \| PYTHON | relative path | *rv-namespace*; userspace    R   *py*
-rv.T        \| HTML | relative path | *html*                         R   *html*
-rv.T        \| LATEX | relative path | *pdf*                         R   *tex*
-rv.T        \| RST | relative path | *pdf;html;both*                 R   *rst*
-rv.D        \| APPEND | relative path | cover_page_title             W   *pdf*
-rv.D        \| PUBLISH | relative path | *pdf;pdftex;text;html*      W   *pdf, html, txt*
-========== ====================================================== ===== ==================
+========== ======================================================== ===== ==================
+API Scope           | Command | path | parameters                    R/W   input types
+========== ======================================================== ===== ==================
+rv.R        \| LINUX | relative path | *wait;nowait*                 R     *sh*
+rv.R        \| MACOS | relative path | *wait;nowait*                 R     *sh*
+rv.R        \| WIN | relative path   | *wait;nowait*                 R     *bat, cmd*
+rv.I, V     \| IMAGE | relative path |  scale, caption (_[I])        R     *png, jpg*
+rv.I, V     \| IMAGE2 | relative path | s1, s2, c1, c2 (_[I])        R     *png, jpg*
+rv.I, V     \| TABLE | relative path | width, l;c;r, title           R     *csv, txt, xlsx*
+rv.I, V     \| TEXT | relative path |  *normal;literal* ;code        R     *txt, code*
+rv.V        \| VALUES | relative path | *visible;hide* (_[T])        R     *csv*
+rv.V       a := 1*IN  | unit1, unit2, decimal | description          W     define value
+rv.V       b <= a + 3*FT | unit1, unit2, decimal | ref (_[E])        W     assign value
+rv.V       c ^= func1(a,b) | unit1, unit2, decimal | ref (_[D]_[F])  W     assign value
+rv.T        \| PYTHON | relative path | *rv-namespace*; userspace    R     *py*
+rv.T        \| HTML | relative path | *html*                         R     *html*
+rv.T        \| LATEX | relative path | *pdf*                         R     *tex*
+rv.T        \| RST | relative path | *pdf;html;both*                 R     *rst*
+rv.D        \| APPEND | relative path | cover_page_title             W     *pdf*
+rv.D        \| PUBLISH | relative path | *pdf;pdftex;text;html*      W     *pdf, html, txt*
+========== ======================================================== ===== ==================
 
 .. raw:: html
 
