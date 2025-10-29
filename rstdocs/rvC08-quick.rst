@@ -111,19 +111,20 @@ rv.D        \| PUBLISH | relative path | *pdf;pdftex;text;html*      W   *pdf, h
 
     <hr>
 
-The paramaters for :term:`headers` include the following ca. The default setting is listed first.
+The paramaters for :term:`headers` include the following. The default setting
+is listed first.
 
 ========== ============= ================= ================= 
 API           print        public            merge         
 ========== ============= ================= ================= 
-rv.M        hide; print   private; public    section; merge    
-rv.R        hide; print   private; public    section; merge   
-rv.I        print; hide   private; public    section; merge   
-rv.V        print; hide   private; public    section; merge    
-rv.T        hide; print   private; public    section; merge    
-rv.D        hide; print   private; public    section; merge    
-rv.S        hide; print   private; public    section; merge    
-rv.Q        hide; print   private; public    section; merge   
+rv.M        hide; show    private; public    merge; section
+rv.R        hide; show    private; public    merge; section
+rv.I        show; hide    private; public    section; merge   
+rv.V        show; hide    private; public    section; merge    
+rv.T        hide; show    private; public    merge; section
+rv.D        hide; show    private; public    merge; section
+rv.S        hide; show    private; public    merge; section
+rv.Q        hide; show    private; public    merge; section
 ========== ============= ================= =================  
 
 .. raw:: html
