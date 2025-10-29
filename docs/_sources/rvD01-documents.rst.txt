@@ -1,4 +1,4 @@
-**D.1 Documents**
+**D.1 Docs**
 ========================
 
 .. raw:: html
@@ -12,10 +12,32 @@
 
     <hr>
 
-Each *rivt file* outputs a corresponding formatted *doc* written to the
-*publish folder* unless they are published as a stand-alone *doc* as specified
-in the *rv.M API* function. *rivt files* are typically assembled into a
-*report*. Further *report folder* details are :doc:`here<rvD03-folders>`
+Each :term:`rivt file` outputs a corresponding formatted :term:`doc` written to
+the *publish folder* unless it is published as a :term:`stand-alone doc`. 
+
+PDF *doc* files are produced by two different libraries, referred to as *pdf*
+and *pdftex*. A *pdf* doc is formatted using the *rst2pdf* library, a susbset
+of the larger *ReportLab* library. It is the default PDF *doc*. Its advantage
+is a small library that is part of *rivt*.
+
+A LaTeX *pdftex doc* requires separate installation of the much larger
+*texlive* LaTeX library (approx. 3GB). Its advantage is additional control over
+*doc* formatting and appearance.
+
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
+**[2]** Report Docs
+----------------------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+*rivt files* are typically assembled into a *report*. The top level folder
+structure for a *report* is shown below. Further *report folder* details are
+:doc:`here. <rvD03-folders>`
 
 **Folder Key**
 
@@ -23,8 +45,6 @@ in the *rv.M API* function. *rivt files* are typically assembled into a
 - Single vertical bar ( | ) identifies files provided by the report author. 
 - Double vertical bar ( || ) identifies files written by rivtlib 
 - Four vertical bars ( |||| ) are a mix of author and rivtlib written files
-
-
 
 .. code-block:: bash
 
@@ -42,21 +62,12 @@ in the *rv.M API* function. *rivt files* are typically assembled into a
         ├── [src]/                      |||| Source files folder
         └── README.txt                  || Searchable text report 
 
-PDF *doc* files are produced by two different libraries, referred to as *pdf*
-and *pdftex*. A *pdf* doc is formatted using the *rst2pdf* library, a susbset
-of the larger *ReportLab* library. It is the default PDF *doc*. Its advantage
-is a small library that is part of *rivt*.
-
-A LaTeX *pdftex doc* requires separate installation of the much larger
-*texlive* LaTeX library (approx. 3GB). Its advantage is additional control over
-*doc* formatting and appearance.
 
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
 
-
-**[2]** Stand-alone Docs
+**[3]** Stand-alone Docs
 ----------------------------------------------------------
 
 .. raw:: html

@@ -3,7 +3,7 @@
 
 .. raw:: html
 
-    <p id="api">&lt;i&gt;</p>
+    <p id="api">&lt;t&gt;</p>
 
 
 **[1]** rivt Terms
@@ -20,7 +20,8 @@
   doc
   docs
     A formatted document file output by rivt. The file is a text, 
-    PDF or HTML file.
+    PDF or HTML file with the same name as the *rivt file* and the selected
+    file type suffix.
 
 
   doc number 
@@ -128,6 +129,15 @@
   report script
     A Python script that assembles *docs* into a *report*.
 
+  stand-alone doc
+    A single document that is not part of a report. It uses
+    the local rivt file folder for reading and writing files. *doc* 
+    styling control is limited compared to a *report*.
+    
+.. raw:: html
+
+    <p id="api">&lt;t&gt;</p>
+
 **[2]** Python Terms
 -----------------------------
 
@@ -151,6 +161,10 @@
     Provides `scope <https://en.wikipedia.org/wiki/Namespace>`_ for functions 
     and variables. 
 
+.. raw:: html
+
+    <p id="api">&lt;t&gt;</p>
+
 
 **[3]** GitHub Terms
 -----------------------------
@@ -166,6 +180,9 @@
   repository 
     a storage location for software packages
 
+.. raw:: html
+
+    <p id="api">&lt;t&gt;</p>
 
   
 **[4]** VSCode Terms

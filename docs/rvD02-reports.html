@@ -60,7 +60,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="D.3 Files and Folders" href="rvD03-folders.html" />
-    <link rel="prev" title="D.1 Documents" href="rvD01-documents.html" />
+    <link rel="prev" title="D.1 Docs" href="rvD01-documents.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -168,7 +168,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="rvD01-documents.html">
-    D.1 Documents
+    D.1 Docs
   </a>
 </li>
 
@@ -275,7 +275,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="rvD01-documents.html">
-    D.1 Documents
+    D.1 Docs
   </a>
 </li>
 
@@ -358,7 +358,7 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="rvD01-documents.html" class="nav-link"><strong>D.1 Documents</strong></a></li>
+    <li class="breadcrumb-item"><a href="rvD01-documents.html" class="nav-link"><strong>D.1 Docs</strong></a></li>
     
     <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>D.2 Reports</strong></span></li>
   </ul>
@@ -379,29 +379,29 @@
                   
   <section id="d-2-reports">
 <h1><strong>D.2 Reports</strong><a class="headerlink" href="#d-2-reports" title="Link to this heading">#</a></h1>
-<p id="api">&lt;i&gt;</p><p><em>rivt reports</em> are assembled using <em>doc numbers</em> to organize the report into
-divisions and subdivisions. Each <em>rivt file</em> has a prefix that specifies the
-division label and subdivision number of the published <em>doc</em>.  The default
-<em>subdivision</em> name is taken from the <em>rivt file</em> name but may be overridden in
-the <em>API Meta function</em>. <em>Division</em> names are specified in the
-<a class="reference internal" href="rvA02-terms.html#term-report-script"><span class="xref std std-term">report script</span></a>.</p>
-<aside class="topic">
+<p id="api">&lt;i&gt;</p><section id="files">
+<h2><strong>[1]</strong> Files<a class="headerlink" href="#files" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
 <p class="topic-title">Note:</p>
 <p>In the file and folder examples below, brackets identify the required
 prefix for a file or folder name.</p>
 </aside>
-<section id="files">
-<h2><strong>[1]</strong> Files<a class="headerlink" href="#files" title="Link to this heading">#</a></h2>
-<hr><p><strong>rivt files - input</strong></p>
-<p>A <em>rivt file name</em> has a <em>doc number</em> prefix followed by the <em>doc name</em>, where
-<em>ss</em> is a two digit subdivision number and <em>D</em> is a capital alphanumeric
-division number. For example:</p>
+<p><strong>rivt files - input</strong></p>
+<p><em>rivt reports</em> are assembled using <em>doc numbers</em> that organize the report into
+divisions and subdivisions. Each <em>rivt file</em> has a prefix that specifies the
+division label and subdivision number of the published <em>doc</em>. The default
+<em>subdivision</em> name is taken from the <em>rivt file</em> name that follows the <em>doc
+number</em>. The file name may be overridden in the <em>API Meta function</em>. <em>Division</em>
+names are specified in the <a class="reference internal" href="rvA02-terms.html#term-report-script"><span class="xref std std-term">report script</span></a>.</p>
+<p>The <em>doc number</em> prefix includes a single digit capital alphanumeric division
+label <em>D</em> followed by a two digit subdivision number <em>ss</em>. For example:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rvDss-<span class="o">]</span>file-name.py
 
 rvC02-Beam-Loads.py
 </pre></div>
 </div>
-<p>is subdivision 2 with the default name “Beam Loads” in division C.</p>
+<p>where the subdivision is 2 in division C and with the default doc name is “Beam
+Loads”</p>
 <p><strong>Run file - input</strong></p>
 <p><strong>Insert file - input</strong></p>
 <p><strong>Value file - input and output</strong></p>
@@ -426,25 +426,8 @@ separate file listing each API function call.</p>
 <p id="api">&lt;i&gt;</p></section>
 <section id="folders">
 <h2><strong>[2]</strong> Folders<a class="headerlink" href="#folders" title="Link to this heading">#</a></h2>
-<hr><p><em>rivt project folders</em> organize files that generate <em>docs</em> and <em>reports</em>.
-The files include <em>rivt files</em>, external source documents, settings,
-and public/private files. The top level structure is shown below. The full
-structure is shown <a class="reference internal" href="rvD03-folders.html"><span class="doc">here</span></a></p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt<span class="o">]</span>-Project-Label/<span class="w">             </span>Project<span class="w"> </span>Folder
-<span class="w">    </span>├──
-<span class="w">    </span>├──
-
-<span class="w">    </span>...
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>log<span class="o">]</span>/<span class="w">                    </span><span class="nb">source</span><span class="w"> </span>files
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>public<span class="o">]</span>/<span class="w">                 </span>public<span class="w"> </span>rivt<span class="w"> </span>files
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>report<span class="o">]</span>/<span class="w">                 </span>reports<span class="w"> </span>and<span class="w"> </span>docs
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>source<span class="o">]</span>/<span class="w">                 </span><span class="nb">source</span><span class="w"> </span>files
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>style<span class="o">]</span>/<span class="w">                  </span><span class="nb">source</span><span class="w"> </span>files
-<span class="w">    </span>└──<span class="w"> </span>README.txt<span class="w">                </span>text<span class="w"> </span>report
-</pre></div>
-</div>
-<p>A <em>rivt file</em> may also generate a <em>single doc</em> that reads from and writes to the
-local <em>rivt file</em> folder, independent of the <em>project folders</em>.</p>
+<hr><p>The <em>rivt report folder</em> organizes files that generate <em>docs</em> and <em>reports</em>.
+The report folder structure is shown <a class="reference internal" href="rvD03-folders.html"><span class="doc">here</span></a></p>
 <p id="api">&lt;i&gt;</p></section>
 <section id="reports">
 <h2><strong>[3]</strong> Reports<a class="headerlink" href="#reports" title="Link to this heading">#</a></h2>
@@ -538,7 +521,7 @@ the <em>report</em> appearance are determined at when generating <em>docs</em>.<
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>D.1 Documents</strong></p>
+        <p class="prev-next-title"><strong>D.1 Docs</strong></p>
       </div>
     </a>
     <a class="right-next"

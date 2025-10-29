@@ -20,7 +20,7 @@ A *rivt file* name has the form:
 
 where the prefix is the :term:`doc number`. *D* is a capital alphanumeric 
 division label and *ss* is a two digit subdivision number. The output 
-of a *rivt file* is a :term:`doc` file with the same file name. 
+of a *rivt file* is a :term:`doc`. 
 
 .. raw:: html
 
@@ -54,7 +54,7 @@ where leading zeroes are dropped and *docs* are sorted alpha-numerically in the
 *report*.
 
 
-**[3]**  Folder Structure
+**[3]**  Report Folder
 -------------------------------
 
 An example *report* folder structure is shown below.

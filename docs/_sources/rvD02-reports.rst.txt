@@ -6,19 +6,6 @@
 
     <p id="api">&lt;i&gt;</p>
 
-*rivt reports* are assembled using *doc numbers* to organize the report into
-divisions and subdivisions. Each *rivt file* has a prefix that specifies the
-division label and subdivision number of the published *doc*.  The default
-*subdivision* name is taken from the *rivt file* name but may be overridden in
-the *API Meta function*. *Division* names are specified in the 
-:term:`report script`.
-
-.. topic:: Note: 
-
-    In the file and folder examples below, brackets identify the required
-    prefix for a file or folder name. 
-
-
 **[1]** Files 
 --------------------------------------------------------------------- 
 
@@ -26,11 +13,22 @@ the *API Meta function*. *Division* names are specified in the
 
     <hr>
     
+.. topic:: Note: 
+
+    In the file and folder examples below, brackets identify the required
+    prefix for a file or folder name. 
+
 **rivt files - input**
 
-A *rivt file name* has a *doc number* prefix followed by the *doc name*, where
-*ss* is a two digit subdivision number and *D* is a capital alphanumeric
-division number. For example:
+*rivt reports* are assembled using *doc numbers* that organize the report into
+divisions and subdivisions. Each *rivt file* has a prefix that specifies the
+division label and subdivision number of the published *doc*. The default
+*subdivision* name is taken from the *rivt file* name that follows the *doc
+number*. The file name may be overridden in the *API Meta function*. *Division*
+names are specified in the :term:`report script`.
+
+The *doc number* prefix includes a single digit capital alphanumeric division
+label *D* followed by a two digit subdivision number *ss*. For example:
 
 .. code-block:: bash
     
@@ -38,7 +36,8 @@ division number. For example:
     
     rvC02-Beam-Loads.py
 
-is subdivision 2 with the default name "Beam Loads" in division C. 
+where the subdivision is 2 in division C and with the default doc name is "Beam
+Loads"
 
 
 **Run file - input**
@@ -88,28 +87,9 @@ separate file listing each API function call.
 
     <hr>
 
-*rivt project folders* organize files that generate *docs* and *reports*.
-The files include *rivt files*, external source documents, settings,
-and public/private files. The top level structure is shown below. The full
-structure is shown :doc:`here<rvD03-folders>`
+The *rivt report folder* organizes files that generate *docs* and *reports*.
+The report folder structure is shown :doc:`here<rvD03-folders>`
 
-.. code-block:: bash
-
-    [rivt]-Project-Label/             Project Folder 
-        ├── 
-        ├── 
-
-        ...
-        ├── [log]/                    source files 
-        ├── [public]/                 public rivt files
-        ├── [report]/                 reports and docs
-        ├── [source]/                 source files 
-        ├── [style]/                  source files 
-        └── README.txt                text report 
-
-
-A *rivt file* may also generate a *single doc* that reads from and writes to the
-local *rivt file* folder, independent of the *project folders*.
 
 .. raw:: html
 
