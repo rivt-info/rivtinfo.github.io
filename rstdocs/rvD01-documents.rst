@@ -5,7 +5,7 @@
 
     <p id="api">&lt;i&gt;</p>
 
-**[1]** rivt Files
+**[1]** rivt Docs
 --------------------------------------------------------------------- 
 
 .. raw:: html
@@ -13,16 +13,17 @@
     <hr>
 
 Each :term:`rivt file` outputs a corresponding formatted :term:`doc` written to
-the *publish folder* unless it is published as a :term:`stand-alone doc`. 
+the *publish* folder unless it is published as a :term:`stand-alone doc`. 
 
-PDF *doc* files are produced by two different libraries, referred to as *pdf*
-and *pdftex*. A *pdf* doc is formatted using the *rst2pdf* library, a subset
-of the larger *ReportLab* library. It is the default PDF *doc*. Its advantage
-is a small library that is part of *rivt*.
+*Docs* may be text, HTML or PDF. PDF *doc* files are produced by two different
+libraries, referred to as *pdf* and *pdftex*. A *pdf* doc is formatted using
+the *rst2pdf* library, a subset of the larger *ReportLab* library. It is the
+default PDF *doc*. Its advantage is a small library that has been incorporated
+into *rivt*.
 
-A LaTeX *pdftex doc* requires separate installation of the much larger
-*texlive* LaTeX library (approx. 3GB). Its advantage is additional control over
-*doc* formatting and appearance.
+A *pdftex doc* requires separate installation of the much larger *texlive*
+LaTeX library (approx. 3GB). Its advantage is additional control over *doc*
+formatting and appearance.
 
 .. raw:: html
 
