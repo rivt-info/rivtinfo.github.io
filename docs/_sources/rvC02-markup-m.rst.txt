@@ -94,7 +94,7 @@ file. The *rv_authD* is always included.
 .. raw:: html
 
     <hr>
-    
+
 *rv_localB* overrides the default report structure and specifies that the *values*
 and *logs* files are written to the local rivt folder.
 
@@ -106,4 +106,12 @@ and *logs* files are written to the local rivt folder.
      # example - folder setting override
      rv_localB = true
 
+*rv_docnameS* overrides the default doc title derived from the rivt file name.
 
+..  code-block:: python
+
+    # default - doc name override
+     rv_docnameS = "" # does not override default name
+     
+     # example - folder setting override
+     rv_docnameS = "My Document Title"

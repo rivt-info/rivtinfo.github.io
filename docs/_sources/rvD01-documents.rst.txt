@@ -82,7 +82,7 @@ rivt file folder for reading and writing files, without referencing the
 following settings:
 
 #. The *rv_local* variable is set to "True" in the *Meta API*.
-#. The *COMMAND* path is specified with the standard "./" current folder syntax. 
+#. The *COMMAND* path is just the file name. 
   
 A *rivt file* can be converted to a stand-alone *doc* using the above steps.
 The text, PDF and HTML *docs* will be written to the local file folder using
