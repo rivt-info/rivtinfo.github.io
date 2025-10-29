@@ -12,11 +12,6 @@
 .. raw:: html
 
     <hr>
-    
-.. topic:: Note: 
-
-    The following files are read and written by *rivtlib* when processing a 
-    *rivt file*.  Files are labeled by origin and folder.
 
 **rivt file**
 
@@ -41,6 +36,11 @@ label *D*, followed by a two digit subdivision number *ss*. For example:
 
 where the default doc name is "Beam Loads" in subdivision 2 of division C.
 Hyphens are stripped from file name.
+
+.. topic:: Note: 
+
+    The following files are read and written by *rivtlib* when processing a 
+    *rivt file*.  Files are labeled by origin and folder.
 
 **Run file**
 

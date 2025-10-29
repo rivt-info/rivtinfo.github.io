@@ -1,32 +1,12 @@
-**D.3 Files and Folders**
+**D.3 Folders**
 ============================
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[1]** rivt Files
---------------------
-
-.. raw:: html
-
-    <hr>
-
-A *rivt file* name has the form:
-
-.. code-block:: bash
-
-    rvDss-file-label.py 
-
-where the prefix is the :term:`doc number`. *D* is a capital alphanumeric 
-division label and *ss* is a two digit subdivision number. The output 
-of a *rivt file* is a :term:`doc`. 
 
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
 
-**[2]** Report Folders 
+**[1]** Folders 
 -------------------------------
 
 .. raw:: html
@@ -50,11 +30,11 @@ the *report numbers* used in the report would be:
     1.5
     2.12
 
-where leading zeroes are dropped and *docs* are sorted alpha-numerically in the
-*report*.
+where leading zeroes are dropped and *docs* are sorted alpha-numerically into
+divisions and subdivisions in the *report*.
 
 
-**[3]**  Report Folder
+**[2]**  Report Folder
 -------------------------------
 
 An example *report* folder structure is shown below.
