@@ -44,6 +44,8 @@ Hyphens are stripped from file name.
 
     **folder**: *rivt-report-folder-name* 
 
+    Refer to :doc:`markup <rvC01-markup>` for *command* details. 
+
 **Run file**
 
 A *run file* is a shell or command script executed using the | RUN |
@@ -92,9 +94,9 @@ number. The file may be read by other *rivt files*.
 
 **Tool file**
 
-A *tool file* can be executed using the | PYTHON | , | HTML | , | RST | 
-or | LATEX | command. It may be used for analysis and generation of text, tables,
-images and other content.  Executing a tool file may:
+*Tool files* can be executed by | PYTHON | , | HTML | , | RST | 
+or | LATEX | commands. They may be used for analysis and generation of text, 
+tables, images and other formatted content.  Executing a tool file may:
 
 - define functions and classes for use in the *rivt file*
 - generate images, tables and text for inclusion in the *doc*
@@ -187,9 +189,15 @@ file* with an added hyphen between "rv" and the docnumber e.g.
 
     <hr>
 
-The *rivt report folder* organizes *log*, *public rivt files*, *sources*,
-*docs* and *reports*. The top level folders are shown below. Brackets identify
-the required prefix for a file or folder name.
+The *rivt report folder* organizes *logs*, *public rivt files*, *sources*,
+*docs* and *reports*. The top level folders are shown below. 
+
+**Folder Key**
+
+- Required folder and file prefix names are shown in brackets [ ]. 
+- Single vertical bar ( | ) identifies files provided by the report author. 
+- Double vertical bar ( || ) identifies files written by rivtlib 
+- Four vertical bars ( |||| ) are a mix of author and rivtlib written files
 
 
 .. code-block:: bash

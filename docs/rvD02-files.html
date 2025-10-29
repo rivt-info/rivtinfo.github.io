@@ -403,6 +403,7 @@ Hyphens are stripped from file name.</p>
 <em>rivt file</em>.  Files are labeled by origin and folder.</p>
 <p><strong>origin</strong>: author input</p>
 <p><strong>folder</strong>: <em>rivt-report-folder-name</em></p>
+<p>Refer to <a class="reference internal" href="rvC01-markup.html"><span class="doc">markup</span></a> for <em>command</em> details.</p>
 </aside>
 <p><strong>Run file</strong></p>
 <p>A <em>run file</em> is a shell or command script executed using the | RUN |
@@ -436,9 +437,9 @@ number. The file may be read by other <em>rivt files</em>.</p>
 <p><strong>API function</strong>:  <em>rv.V</em></p>
 </div></blockquote>
 <p><strong>Tool file</strong></p>
-<p>A <em>tool file</em> can be executed using the | PYTHON | , | HTML | , | RST |
-or | LATEX | command. It may be used for analysis and generation of text, tables,
-images and other content.  Executing a tool file may:</p>
+<p><em>Tool files</em> can be executed by | PYTHON | , | HTML | , | RST |
+or | LATEX | commands. They may be used for analysis and generation of text,
+tables, images and other formatted content.  Executing a tool file may:</p>
 <ul>
 <li><p>define functions and classes for use in the <em>rivt file</em></p></li>
 <li><p>generate images, tables and text for inclusion in the <em>doc</em></p></li>
@@ -506,9 +507,15 @@ file</em> with an added hyphen between “rv” and the docnumber e.g.
 <p id="api">&lt;i&gt;</p></section>
 <section id="folders">
 <h2><strong>[2]</strong> Folders<a class="headerlink" href="#folders" title="Link to this heading">#</a></h2>
-<hr><p>The <em>rivt report folder</em> organizes <em>log</em>, <em>public rivt files</em>, <em>sources</em>,
-<em>docs</em> and <em>reports</em>. The top level folders are shown below. Brackets identify
-the required prefix for a file or folder name.</p>
+<hr><p>The <em>rivt report folder</em> organizes <em>logs</em>, <em>public rivt files</em>, <em>sources</em>,
+<em>docs</em> and <em>reports</em>. The top level folders are shown below.</p>
+<p><strong>Folder Key</strong></p>
+<ul class="simple">
+<li><p>Required folder and file prefix names are shown in brackets [ ].</p></li>
+<li><p>Single vertical bar ( | ) identifies files provided by the report author.</p></li>
+<li><p>Double vertical bar ( || ) identifies files written by rivtlib</p></li>
+<li><p>Four vertical bars ( |||| ) are a mix of author and rivtlib written files</p></li>
+</ul>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt-<span class="o">]</span>Report-Label/<span class="w">                </span>Report<span class="w"> </span>Folder<span class="w"> </span>Name
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename1.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv102-<span class="o">]</span>filename2.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
