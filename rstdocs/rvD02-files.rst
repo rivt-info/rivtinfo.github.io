@@ -16,6 +16,7 @@
 **rivt file**
 
     *origin*: author input
+
     *folder*: report folder
 
 *rivt files* are prepared by the author. Each *rivt file* has a prefix that
@@ -44,31 +45,35 @@ Hyphens are stripped from file name.
 
 **Run file**
 
-    *origin*: author input
-    *folder*: src/    or user specified subfolder of /src
-    *API function*:  *rv.R API*
+    **origin**: author input
+
+    **folder**: *src/*    or user specified subfolder of /src
+
+    **API function**:  *rv.R API*
 
 A *run file* is a shell or command script executed using the | RUN |
 command.
 
 **Insert file**
 
-    *origin*: author input
-    *folder*: src/    or user specified subfolder of /src
-    *API function*:  *rv.I API*
+    **origin**: author input
+
+    **folder**: *src/*    or user specified subfolder of /src
+
+    **API function**:  *rv.I API*
 
 An *insert file* is an image, table or text file executed using 
 the | IMAGE | , | TABLE | , or | TEXT | command.
 
 **Value file**
 
-    *origin*: author input
-    *folder*: src/Values   or user specified subfolder of /src
-    *API function*:  *rv.V API* 
+    **origin**: author input
+    **folder**: *src/Values*   or user specified subfolder of /src
+    **API function**:  *rv.V API* 
 
-    *origin*: program output
-    *folder*: src/Values    
-    *API function*:  *rv.V API* 
+    **origin**: program output
+    **folder**: src/Values    
+    **API function**:  *rv.V API* 
 
 A *value file* is a *csv* file that defines variable values. It is imported
 using the \| VALUE \| command. 
