@@ -86,7 +86,7 @@ rv.R(rS)           Run               Run shell commands
 rv.I(rS)           Insert            Insert static resources 
 rv.V(rS)           Value             Calculate values
 rv.T(rS)           Tool              Run Python functions
-rv.D(rS)           Doc               Write docs 
+rv.D(rS)           Doc               Publish docs 
 rv.S(rS)           Skip              Skip section
 rv.Q(rS)           Quit              Exit rivt 
 =============== =============== ===================================
