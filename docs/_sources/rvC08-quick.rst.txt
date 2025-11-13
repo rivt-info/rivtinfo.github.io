@@ -113,21 +113,30 @@ rv.D        \| PUBLISH | relative path | *pdf;pdftex;text;html*      W     *pdf,
 
     <hr>
 
-The paramaters for :term:`headers` include the following. The default setting
-is listed first.
+:term:`Header` paramaters include the following:
 
-========== ============= ================= ================= 
-API           print        public            merge         
-========== ============= ================= ================= 
-rv.M        hide; show    private; public    merge; section
-rv.R        hide; show    private; public    merge; section
-rv.I        show; hide    private; public    section; merge   
-rv.V        show; hide    private; public    section; merge    
-rv.T        hide; show    private; public    merge; section
-rv.D        hide; show    private; public    merge; section
-rv.S        hide; show    private; public    merge; section
-rv.Q        hide; show    private; public    merge; section
-========== ============= ================= =================  
+- private/public : determines whether the API markup is written to a public
+    rivt file intended for sharing. 
+
+- show/hide : determines whether the API markup is shown in the output doc.
+
+- section/merge : determines whether the API markup starts a new section
+    in the output doc or is merged into the previous section.   
+
+The default setting for each API is listed first in bold.
+ 
+========== ===================== ================= =====================
+API          private/public        show/hide           section/merge         
+========== ===================== ================= ===================== 
+rv.M        **private**; public   **hide**; show     **merge**; section
+rv.R        **private**; public   **hide**; show     **merge**; section
+rv.I        **private**; public   **show**; hide     **section**; merge   
+rv.V        **private**; public   **show**; hide     **section**; merge    
+rv.T        **private**; public   **hide**; show     **merge**; section
+rv.D        **private**; public   **hide**; show     **merge**; section
+rv.S        **private**; public   **hide**; show     **merge**; section
+rv.Q        **private**; public   **hide**; show     **merge**; section
+========== ===================== ================= ===================== 
 
 .. raw:: html
 
