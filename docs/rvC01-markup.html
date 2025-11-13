@@ -405,72 +405,90 @@ label” and parameters that define the section behavior.</p>
 <h2><strong>[2]</strong> Header<a class="headerlink" href="#header" title="Link to this heading">#</a></h2>
 <hr><p>A header starts with a <em>section label</em> followed by a vertical separator bar and
 <em>section parameters</em> that override the section default behavior. The <em>section
-label</em> is the section title.</p>
-<p><em>Section parameters</em> specify the following settings:</p>
+label</em> is the section title. <a class="reference internal" href="rvA02-terms.html#term-header"><span class="xref std std-term">Header</span></a> paramaters include the following:</p>
 <ul class="simple">
-<li><p><em>print</em>: formats <a class="reference internal" href="rvA02-terms.html#term-section-text"><span class="xref std std-term">section text</span></a> to <em>doc</em></p></li>
-<li><p><em>hide</em>: evaluates the content but does not print the formatted content</p></li>
-<li><p><em>public</em>: copies <em>section content</em> to <em>public rivt file</em></p></li>
-<li><p><em>merge</em>: merges formatted <em>section content</em> to previous section</p></li>
+<li><dl class="simple">
+<dt>private/public<span class="classifier">determines whether the API markup is written to a public</span></dt><dd><p>rivt file intended for sharing. The public files are written to the
+<em>public folder</em>.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>show/hide<span class="classifier">determines whether the API markup is formatted and shown</span></dt><dd><p>in the output doc.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>section/merge<span class="classifier">determines whether the API markup starts a new section</span></dt><dd><p>in the output doc or is merged into the previous section.</p>
+</dd>
+</dl>
+</li>
 </ul>
-<p><em>history</em>: writes <em>section label and parameters</em> to <a class="reference internal" href="rvA02-terms.html#term-api-history"><span class="xref std std-term">api-history</span></a> file</p>
-<p>The table below summarizes the section parameter settings, with the default
-setting shown first. A parameter only needs to be specified if different from
-the default.</p>
+<p>The default setting for each API is listed first in bold.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>API</p></th>
-<th class="head"><p>print</p></th>
-<th class="head"><p>public</p></th>
-<th class="head"><p>merge</p></th>
+<th class="head"><p>private/public</p></th>
+<th class="head"><p>show/hide</p></th>
+<th class="head"><p>section/merge</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>rv.M</p></td>
-<td><p>hide; print</p></td>
-<td><p>private; public</p></td>
-<td><p>section; merge</p></td>
+<td><p><strong>private</strong>; public</p></td>
+<td><p><strong>hide</strong>; show</p></td>
+<td><p><strong>merge</strong>; section</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.R</p></td>
-<td><p>hide; print</p></td>
-<td><p>private; public</p></td>
-<td><p>section; merge</p></td>
+<td><p><strong>private</strong>; public</p></td>
+<td><p><strong>hide</strong>; show</p></td>
+<td><p><strong>merge</strong>; section</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I</p></td>
-<td><p>print; hide</p></td>
-<td><p>private; public</p></td>
-<td><p>section; merge</p></td>
+<td><p><strong>private</strong>; public</p></td>
+<td><p><strong>show</strong>; hide</p></td>
+<td><p><strong>section</strong>; merge</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V</p></td>
-<td><p>print; hide</p></td>
-<td><p>private; public</p></td>
-<td><p>section; merge</p></td>
+<td><p><strong>private</strong>; public</p></td>
+<td><p><strong>show</strong>; hide</p></td>
+<td><p><strong>section</strong>; merge</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.T</p></td>
-<td><p>hide; print</p></td>
-<td><p>private; public</p></td>
-<td><p>section; merge</p></td>
+<td><p><strong>private</strong>; public</p></td>
+<td><p><strong>hide</strong>; show</p></td>
+<td><p><strong>merge</strong>; section</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.D</p></td>
-<td><p>hide; print</p></td>
-<td><p>private; public</p></td>
-<td><p>section; merge</p></td>
+<td><p><strong>private</strong>; public</p></td>
+<td><p><strong>hide</strong>; show</p></td>
+<td><p><strong>merge</strong>; section</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.S</p></td>
-<td><p>hide; print</p></td>
-<td><p>private; public</p></td>
-<td><p>section; merge</p></td>
+<td><p><strong>private</strong>; public</p></td>
+<td><p><strong>hide</strong>; show</p></td>
+<td><p><strong>merge</strong>; section</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.Q</p></td>
-<td><p>hide; print</p></td>
-<td><p>private; public</p></td>
-<td><p>section; merge</p></td>
+<td><p><strong>private</strong>; public</p></td>
+<td><p><strong>hide</strong>; show</p></td>
+<td><p><strong>merge</strong>; section</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <p>Examples of <em>header</em> settings are shown below.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | hide;print, public;private;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;A New Section | private, show, section</span>
+
+<span class="s2">    section content (utf-8 text)</span>
+<span class="s2">    ...</span>
+<span class="s2">    ...</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>As defaults are specified, the following is equivalent -</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;A New Section</span>
 
 <span class="s2">    section content (utf-8 text)</span>
 <span class="s2">    ...</span>
@@ -482,8 +500,8 @@ the default.</p>
 <p id="api">&lt;i&gt;</p></section>
 <section id="section-text">
 <h2><strong>[3]</strong> Section Text<a class="headerlink" href="#section-text" title="Link to this heading">#</a></h2>
-<hr><p>Section text is indented four spaces (for legibility and code folding) and
-includes <em>tags</em> for text formatting and <em>commands</em> for file operations.</p>
+<hr><p>Section text is indented four spaces for legibility and code folding. It
+includes <em>rivt tags</em> for text formatting and <em>rivt commands</em> for file operations.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | write; nowrite, public; private</span>
 
 <span class="s2">    section text</span>
@@ -492,12 +510,15 @@ includes <em>tags</em> for text formatting and <em>commands</em> for file operat
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>A section is processed line by line to a
+<p>A section is processed line by line to formatted text and a
 <a class="reference external" href="https://docutils.sourceforge.io/docs/user/rst/quickref.html">RestructuredText string</a>,
 and then further processed to an HTML or PDF file. If a line does not
-contain a <em>command</em> or <em>tag</em> it is passed through as is. This allows for
-including <em>restructured text</em> directly, e.g. surrounding text with * for italics
-or ** for bold. <em>Text docs</em> are formatted separately.</p>
+contain a <em>command</em> or <em>tag</em> it is passed through as is, which allows for
+including <em>restructured text</em> directly. For example surrounding text
+with * for italics  or ** for bold. <em>Text docs</em> are formatted separately.</p>
+<p>In addition the <em>Tools API function</em> (rv.T) supports inserting raw Python,
+HTML, LaTex and resTructuredText that is isolated from the primary textual
+content of the file which improves readability.</p>
 <p id="api">&lt;i&gt;</p></section>
 <section id="tags-and-commands">
 <h2><strong>[4]</strong> Tags and Commands<a class="headerlink" href="#tags-and-commands" title="Link to this heading">#</a></h2>

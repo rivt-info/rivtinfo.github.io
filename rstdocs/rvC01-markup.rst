@@ -48,46 +48,60 @@ label" and parameters that define the section behavior.
 
 A header starts with a *section label* followed by a vertical separator bar and
 *section parameters* that override the section default behavior. The *section
-label* is the section title.
+label* is the section title. :term:`Header` paramaters include the following:
+
+- private/public : determines whether the API markup is written to a public
+    rivt file intended for sharing. The public files are written to the 
+    *public folder*.
+
+- show/hide : determines whether the API markup is formatted and shown 
+    in the output doc.
+
+- section/merge : determines whether the API markup starts a new section
+    in the output doc or is merged into the previous section.   
+
+The default setting for each API is listed first in bold.
  
-*Section parameters* specify the following settings:
+========== ===================== ================= =====================
+API          private/public        show/hide           section/merge         
+========== ===================== ================= ===================== 
+rv.M        **private**; public   **hide**; show     **merge**; section
+rv.R        **private**; public   **hide**; show     **merge**; section
+rv.I        **private**; public   **show**; hide     **section**; merge   
+rv.V        **private**; public   **show**; hide     **section**; merge    
+rv.T        **private**; public   **hide**; show     **merge**; section
+rv.D        **private**; public   **hide**; show     **merge**; section
+rv.S        **private**; public   **hide**; show     **merge**; section
+rv.Q        **private**; public   **hide**; show     **merge**; section
+========== ===================== ================= ===================== 
 
-- *print*: formats :term:`section text` to *doc* 
-- *hide*: evaluates the content but does not print the formatted content
-
-- *public*: copies *section content* to *public rivt file* 
-- *merge*: merges formatted *section content* to previous section
-
-*history*: writes *section label and parameters* to :term:`api-history` file
-
-The table below summarizes the section parameter settings, with the default
-setting shown first. A parameter only needs to be specified if different from
-the default.
-
-========== ============= ================= ================= 
-API           print        public            merge         
-========== ============= ================= ================= 
-rv.M        hide; print   private; public    section; merge    
-rv.R        hide; print   private; public    section; merge   
-rv.I        print; hide   private; public    section; merge   
-rv.V        print; hide   private; public    section; merge    
-rv.T        hide; print   private; public    section; merge    
-rv.D        hide; print   private; public    section; merge    
-rv.S        hide; print   private; public    section; merge    
-rv.Q        hide; print   private; public    section; merge   
-========== ============= ================= =================  
 
 Examples of *header* settings are shown below.
 
 .. code-block:: python
 
-    rv._("""Section Label | hide;print, public;private;
+    rv.I("""A New Section | private, show, section
 
         section content (utf-8 text)
         ...
         ...
         
         """)
+
+As defaults are specified, the following is equivalent - 
+
+.. code-block:: python
+
+    rv.I("""A New Section
+
+        section content (utf-8 text)
+        ...
+        ...
+        
+        """)
+
+
+
 
 .. raw:: html
 
@@ -101,8 +115,8 @@ Examples of *header* settings are shown below.
 
     <hr>
 
-Section text is indented four spaces (for legibility and code folding) and
-includes *tags* for text formatting and *commands* for file operations.
+Section text is indented four spaces for legibility and code folding. It 
+includes *rivt tags* for text formatting and *rivt commands* for file operations.
 
 .. code-block:: python
 
@@ -114,12 +128,16 @@ includes *tags* for text formatting and *commands* for file operations.
         """)
 
 
-A section is processed line by line to a
+A section is processed line by line to formatted text and a
 `RestructuredText string <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_,
 and then further processed to an HTML or PDF file. If a line does not 
-contain a *command* or *tag* it is passed through as is. This allows for 
-including *restructured text* directly, e.g. surrounding text with * for italics 
-or ** for bold. *Text docs* are formatted separately.
+contain a *command* or *tag* it is passed through as is, which allows for 
+including *restructured text* directly. For example surrounding text 
+with * for italics  or ** for bold. *Text docs* are formatted separately.
+
+In addition the *Tools API function* (rv.T) supports inserting raw Python,
+HTML, LaTex and resTructuredText that is isolated from the primary textual
+content of the file which improves readability.
 
 .. raw:: html
 

@@ -58,7 +58,7 @@ structure for a *report* is shown below. Further *report folder* details are
         ...
         ...
 
-        ├── [logs]/                      || Log files folder
+        ├── [logs]/                     || Log files folder
         ├── [public]/                   || Public rivt files folder
         ├── [publish]/                  || Docs and reports folder
         ├── [src]/                      |||| Source files folder
