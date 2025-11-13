@@ -60,7 +60,7 @@ the following:
 - section/merge : determines whether the API markup starts a new section
     in the output doc or is merged into the previous section.   
 
-Defaults do not need to be specified in the *header*.The default setting for
+Defaults do not need to be specified in the *header*. The default setting for
 each API is listed first in bold.
  
 ========== ===================== ================= =====================
