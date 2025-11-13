@@ -115,15 +115,16 @@ rv.D        \| PUBLISH | relative path | *pdf;pdftex;text;html*      W     *pdf,
 
 :term:`Header` paramaters include the following:
 
-- private/public : determines whether the API markup is written to a 
-    *public rivt file* intended for sharing. 
+- private/public : determines whether the API markup is copied to the
+    *rivt file* in the */public* folder intended for sharing. 
 
 - show/hide : determines whether the API markup is shown in the output doc.
 
 - section/merge : determines whether the API markup starts a new doc section 
     or merges it with the previous section.   
 
-The default setting for each API is listed first in bold.
+Defaults do not need to be specified in the *header*.The default setting for
+each API is listed first in bold.
  
 ========== ===================== ================= =====================
 API          private/public        show/hide           section/merge         

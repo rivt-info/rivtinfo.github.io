@@ -46,13 +46,13 @@ label" and parameters that define the section behavior.
 
     <hr>
 
-A header starts with a *section label* followed by a vertical separator bar and
-*section parameters* that override the section default behavior. The *section
-label* is the section title. :term:`Header` paramaters include the following:
+A :term:`section header` starts with a *section label* followed by a vertical
+separator bar and *section parameters* that override the section default
+behavior. The *section label* is the section title. *Header* paramaters include
+the following:
 
-- private/public : determines whether the API markup is written to a public
-    rivt file intended for sharing. The public files are written to the 
-    *public folder*.
+- private/public : determines whether the API markup is copied to the
+    *rivt file* in the */public* folder intended for sharing. 
 
 - show/hide : determines whether the API markup is formatted and shown 
     in the output doc.
@@ -60,7 +60,8 @@ label* is the section title. :term:`Header` paramaters include the following:
 - section/merge : determines whether the API markup starts a new section
     in the output doc or is merged into the previous section.   
 
-The default setting for each API is listed first in bold.
+Defaults do not need to be specified in the *header*.The default setting for
+each API is listed first in bold.
  
 ========== ===================== ================= =====================
 API          private/public        show/hide           section/merge         
