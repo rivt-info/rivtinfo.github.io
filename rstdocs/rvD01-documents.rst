@@ -5,15 +5,46 @@
 
     <p id="api">&lt;i&gt;</p>
 
-**[1]** rivt Docs
---------------------------------------------------------------------- 
+
+**[1]** rivt Files
+-----------------------------
+
+.. raw:: html
+
+    <hr>
+
+Each :term:`rivt file` outputs a corresponding formatted :term:`doc`. A *rivt
+report* is organized using the rivt *doc numbers*. If the *rivt file* names are:
+
+.. code-block:: bash
+
+    rvA01-filename.py
+    rv105-filename.py
+    rv212-filename.py  
+
+the *report numbers* would be: 
+
+- A.1 (division A, subdivision 1)
+- 1.5 (division 1, subdivision 5)
+- 2.12 (division 2, subdivision 12)
+
+Note that leading zeroes are dropped.  *Docs* are sorted alpha-numerically into
+divisions and subdivisions in the *report*.
+
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
+
+**[2]** Docs
+-----------------------------
 
 .. raw:: html
 
     <hr>
 
 Each :term:`rivt file` outputs a corresponding formatted :term:`doc` written to
-the *publish* folder unless it is published as a :term:`stand-alone doc`. 
+the *publish* folder unless it is a :term:`stand-alone doc`. 
 
 *Docs* may be text, HTML or PDF. PDF *doc* files are produced by two different
 libraries, referred to as *pdf* and *pdftex*. A *pdf* doc is formatted using
@@ -29,46 +60,6 @@ formatting and appearance.
 
     <p id="api">&lt;i&gt;</p>
 
-**[2]** Report Docs
-----------------------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-A *report* is assembled from multiple *docs* using the *doc numbers* to
-organize the *docs* into divsions and subdivisions. The top level folder
-structure for a *report* is shown below. Further *report folder* details are
-:doc:`here. <rvD03-folders>`
-
-**Folder Key**
-
-- Required folder and file prefix names are shown in brackets [ ]. 
-- Single vertical bar ( | ) identifies files provided by the report author. 
-- Double vertical bar ( || ) identifies files written by rivtlib 
-- Four vertical bars ( |||| ) are a mix of author and rivtlib written files
-
-.. code-block:: bash
-
-    [rivt]-Report-Label/                Report Folder Name
-        ├── [rv101-]filename1.py        | rivt file
-        ├── [rv102-]filename2.py        | rivt file
-        ├── [rv201-]filename3.py        | rivt file
-
-        ...
-        ...
-
-        ├── [logs]/                     || Log files folder
-        ├── [public]/                   || Public rivt files folder
-        ├── [publish]/                  || Docs and reports folder
-        ├── [src]/                      |||| Source files folder
-        └── README.txt                  || Searchable text report 
-
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
 **[3]** Stand-alone Docs
 ----------------------------------------------------------
 
@@ -76,15 +67,17 @@ structure for a *report* is shown below. Further *report folder* details are
 
     <hr>
 
-A document that will not be part of a report may be formatted using the
-rivt file folder for reading and writing files, without referencing the
-*rivt report folders*. A stand-alone *doc* is published using the
+A document that will not be part of a :ref:`report <report-describe>` may use 
+the rivt file folder for reading and writing files, without referencing 
+the *rivt report folders*. A stand-alone *doc* is published using the 
 following settings:
 
 #. The *rv_local* variable is set to "True" in the *Meta API*.
-#. The *COMMAND* path is just the file name. 
+#. Any *COMMAND* relative path is just the file name. 
   
-A *rivt file* can be converted to a stand-alone *doc* using the above steps.
+A *rivt file* may be converted to a stand-alone *doc* by making those two
+adjustments. 
+
 The text, PDF and HTML *docs* will be written to the local file folder using
 simple style settings built into *rivtlib*. Stand-alone *docs* require less
 setup but also offer less formatting control.

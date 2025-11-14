@@ -6,7 +6,7 @@
 
     <p id="api">&lt;i&gt;</p>
 
-**[1]** Folder Names
+**[1]** File Names
 -------------------------------
 
 .. raw:: html

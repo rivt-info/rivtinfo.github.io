@@ -151,7 +151,7 @@ rv.D        \| PUBLISH | relative path | *pdf;pdftex;text;html*      W     *pdf,
 **Folder Key**
 
 - Explicit names and prefixes are shown in brackets [ ]. 
-- Author provided files are marked with a single vertical bar ( | ).  
+- Author files read by rivtlib are marked with a single vertical bar ( | ).   
 - Files written by rivtlib are marked with double vertical bars ( || ).
 
 

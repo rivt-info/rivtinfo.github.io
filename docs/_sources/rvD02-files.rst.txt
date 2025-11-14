@@ -189,8 +189,8 @@ file* with an added hyphen between "rv" and the docnumber e.g.
 
     <hr>
 
-The *rivt report folder* organizes *logs*, *public rivt files*, *sources*,
-*docs* and *reports*. Top level folders are shown below. 
+The *rivt report folder* organizes *outputs*, *public rivt files*, *sources*,
+and *docs and reports*. 
 
 .. topic:: Note:
 
@@ -200,15 +200,14 @@ The *rivt report folder* organizes *logs*, *public rivt files*, *sources*,
 **Folder Key**
 
 - Explicit names and prefixes are shown in brackets [ ]. 
-- Author provided files are marked with a single vertical bar ( | ).  
+- Author files read by rivtlib are marked with a single vertical bar ( | ).  
 - Files written by rivtlib are marked with double vertical bars ( || ).
 
+**Top Level Folders**
 
 .. code-block:: bash
 
-    **Top Level Folders**
-
-    [rivt]-Report-Label/                Report Folder Name
+    [rivt]-Report-Label/            Report Folder Name
         ├── [rv101-]filename1.py        | rivt file
         ├── [rv102-]filename2.py        | rivt file
         ├── [rv201-]filename3.py        | rivt file
@@ -235,10 +234,12 @@ The full report folder structure is :ref:`here. <report-folders>`
 
     <hr>
 
-A :term:`report` is assembled from mutliple *docs* organized by division
-and subdivsion. Each *doc* is a subdivion of a *report*. A typical workflow for
-writing *reports* is to start with a similar *report* and edit the *rivt files*
-and *report script* that produces the *report*
+.. _report-describe:
+
+A :term:`report` is assembled from mutliple *docs* organized by division and
+subdivsion numbers. Each *doc* is a subdivision of a *report*. A typical workflow
+for writing *reports* is to start with a similar *report* and edit the *rivt
+files* and *report script* that produces the *report*.
 
 The Python *report script* includes settings that specify assembly parameters
 and override defaults. These include:
