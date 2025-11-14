@@ -154,9 +154,10 @@ rv.D        \| PUBLISH | relative path | *pdf;pdftex;text;html*      W     *pdf,
 - Author provided files are marked with a single vertical bar ( | ).  
 - Files written by rivtlib are marked with double vertical bars ( || ).
 
-.. code-block:: bash
 
-    **Top Level Folders**
+**Top Level Folders**
+
+.. code-block:: bash
 
     [rivt]-Report-Label/                Report Folder Name
         ├── [rv101-]filename1.py        | rivt file
@@ -173,9 +174,9 @@ rv.D        \| PUBLISH | relative path | *pdf;pdftex;text;html*      W     *pdf,
         └── README.txt                  || searchable text report 
 
 
+**Expanded Folders**
+
 .. code-block:: bash
-        
-    **Expanded Folders**
 
     [rivt]-Report-Label/                Report Folder Name                
         ├── [rv101-]filename1.py               | rivt files

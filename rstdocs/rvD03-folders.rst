@@ -64,8 +64,6 @@ formatting are written to the *log* folder.
 
 .. code-block:: bash
 
-    **Top Level Folders**
-
     [rivt]-Report-Label/                Report Folder Name
         ├── [rv101-]filename1.py        | rivt file
         ├── [rv102-]filename2.py        | rivt file
@@ -83,10 +81,10 @@ formatting are written to the *log* folder.
 
 .. _report-folders:
 
+**Expanded Folders**
 
 .. code-block:: bash
 
-    **Expanded Folders**
 
     [rivt]-Report-Label/                 Report Folder Name                
         ├── [rv101-]filename1.py               | rivt files
