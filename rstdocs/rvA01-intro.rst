@@ -16,7 +16,7 @@
 engineering documents. Reuse and sharing provides opportunities for continual
 improvement. Although a number of document programs are curently available,
 reuse and sharing is generally difficult because of limitations in the
-software:
+software and its distribution:
 
 - documents are divided among many incompatible programs
 - document formats become obsolete an inaccessible
@@ -81,12 +81,14 @@ A :term:`rivt file` is a Python plain text file (.py) that imports the
 *rivtlib* includes 6 primary and 2 auxilliary API functions that may be run as
 a script or interactively as notebook cells in *VSCode* or other *IDE*.
 
-Engineering documents typically combine text, tables, diagrams, models and
-calculations to describe and justify decisions and designs. The *rivt API* is
-designed to simplify the document organization andpublishing through the use of
-half a dozen API functions that process :term:`rivt markup`. Each *rivt file*
-outputs a formatted rivt :term:`doc` as a text, PDF or HTML document. Reports
-are organized assemblies of *docs*.
+Engineering documents and reports typically combine text, tables, diagrams,
+models and calculations to describe and justify decisions and designs. The
+*rivt API* is designed to simplify the document organization and publishing
+process through the use of half a dozen API functions that process 
+:term:`rivt markup`, along with a pre-defined :ref:`folder structure <report-folders>`. 
+
+Each *rivt file* outputs a formatted rivt :term:`doc` as a text, PDF or HTML
+document. Reports are organized assemblies of *docs*.
 
 .. raw:: html
 
