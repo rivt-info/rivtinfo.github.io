@@ -199,26 +199,30 @@ The *rivt report folder* organizes *logs*, *public rivt files*, *sources*,
 
 **Folder Key**
 
-- Required folder and file prefix names are shown in brackets [ ]. 
-- Single vertical bar ( | ) identifies files provided by the report author. 
-- Double vertical bar ( || ) identifies files written by rivtlib 
-- Four vertical bars ( |||| ) are a mix of author and rivtlib written files
+- Explicit names and prefixes are shown in brackets [ ]. 
+- Author provided files are marked with a single vertical bar ( | ).  
+- Files written by rivtlib are marked with double vertical bars ( || ).
 
 
 .. code-block:: bash
 
-    [rivt-]Report-Label/                Report Folder Name
+    **Top Level Folders**
+
+    [rivt]-Report-Label/                Report Folder Name
         ├── [rv101-]filename1.py        | rivt file
         ├── [rv102-]filename2.py        | rivt file
         ├── [rv201-]filename3.py        | rivt file
-        ├── [rv202-]filename4.py        | rivt file  
-        ├── [logs]/                     || log folder
-        ├── [public]/                   || public rivt folder
-        ├── [publish]/                  || reports folder
-        ├── [src]/                      |||| source folder
-        └── README.txt                  || Searchable text report 
+        ├── [rv202-]filename4.py        | rivt file 
 
-The full report folder structure is :ref:`here. <full-report-folder>`
+        ...
+
+        ├── [out]/                      || output folder
+        ├── [public]/                   || public rivt file folder
+        ├── [publish]/                  || reports folder
+        ├── [src]/                      |  doc source folder
+        └── README.txt                  || searchable text report 
+
+The full report folder structure is :ref:`here. <report-folders>`
 
 .. raw:: html
 

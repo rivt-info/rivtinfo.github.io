@@ -515,24 +515,28 @@ file</em> with an added hyphen between “rv” and the docnumber e.g.
 </aside>
 <p><strong>Folder Key</strong></p>
 <ul class="simple">
-<li><p>Required folder and file prefix names are shown in brackets [ ].</p></li>
-<li><p>Single vertical bar ( | ) identifies files provided by the report author.</p></li>
-<li><p>Double vertical bar ( || ) identifies files written by rivtlib</p></li>
-<li><p>Four vertical bars ( |||| ) are a mix of author and rivtlib written files</p></li>
+<li><p>Explicit names and prefixes are shown in brackets [ ].</p></li>
+<li><p>Author provided files are marked with a single vertical bar ( | ).</p></li>
+<li><p>Files written by rivtlib are marked with double vertical bars ( || ).</p></li>
 </ul>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt-<span class="o">]</span>Report-Label/<span class="w">                </span>Report<span class="w"> </span>Folder<span class="w"> </span>Name
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>**Top<span class="w"> </span>Level<span class="w"> </span>Folders**
+
+<span class="o">[</span>rivt<span class="o">]</span>-Report-Label/<span class="w">                </span>Report<span class="w"> </span>Folder<span class="w"> </span>Name
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename1.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv102-<span class="o">]</span>filename2.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv201-<span class="o">]</span>filename3.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv202-<span class="o">]</span>filename4.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>logs<span class="o">]</span>/<span class="w">                     </span><span class="o">||</span><span class="w"> </span>log<span class="w"> </span>folder
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>public<span class="o">]</span>/<span class="w">                   </span><span class="o">||</span><span class="w"> </span>public<span class="w"> </span>rivt<span class="w"> </span>folder
+
+<span class="w">    </span>...
+
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>out<span class="o">]</span>/<span class="w">                      </span><span class="o">||</span><span class="w"> </span>output<span class="w"> </span>folder
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>public<span class="o">]</span>/<span class="w">                   </span><span class="o">||</span><span class="w"> </span>public<span class="w"> </span>rivt<span class="w"> </span>file<span class="w"> </span>folder
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>publish<span class="o">]</span>/<span class="w">                  </span><span class="o">||</span><span class="w"> </span>reports<span class="w"> </span>folder
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>src<span class="o">]</span>/<span class="w">                      </span><span class="o">||||</span><span class="w"> </span><span class="nb">source</span><span class="w"> </span>folder
-<span class="w">    </span>└──<span class="w"> </span>README.txt<span class="w">                  </span><span class="o">||</span><span class="w"> </span>Searchable<span class="w"> </span>text<span class="w"> </span>report
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>src<span class="o">]</span>/<span class="w">                      </span><span class="p">|</span><span class="w">  </span>doc<span class="w"> </span><span class="nb">source</span><span class="w"> </span>folder
+<span class="w">    </span>└──<span class="w"> </span>README.txt<span class="w">                  </span><span class="o">||</span><span class="w"> </span>searchable<span class="w"> </span>text<span class="w"> </span>report
 </pre></div>
 </div>
-<p>The full report folder structure is <a class="reference internal" href="rvD03-folders.html#full-report-folder"><span class="std std-ref">here.</span></a></p>
+<p>The full report folder structure is <a class="reference internal" href="rvD03-folders.html#id1"><span class="std std-ref">here.</span></a></p>
 <p id="api">&lt;i&gt;</p></section>
 <section id="reports">
 <h2><strong>[3]</strong> Reports<a class="headerlink" href="#reports" title="Link to this heading">#</a></h2>

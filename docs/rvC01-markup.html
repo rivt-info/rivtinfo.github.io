@@ -401,12 +401,12 @@ folding in IDEs.</p>
 <p>The <a class="reference internal" href="rvA02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> begins with a <em>section header</em> that includes a “section
 label” and parameters that define the section behavior.</p>
 <p id="api">&lt;i&gt;</p></section>
-<section id="header">
-<h2><strong>[2]</strong> Header<a class="headerlink" href="#header" title="Link to this heading">#</a></h2>
-<hr><p>A <a class="reference internal" href="rvA02-terms.html#term-section-header"><span class="xref std std-term">section header</span></a> starts with a <em>section label</em> followed by a vertical
-separator bar and <em>section parameters</em> that override the section default
-behavior. The <em>section label</em> is the section title. <em>Header</em> paramaters include
-the following:</p>
+<section id="api-header">
+<h2><strong>[2]</strong> API Header<a class="headerlink" href="#api-header" title="Link to this heading">#</a></h2>
+<hr><p>An <a class="reference internal" href="rvA02-terms.html#term-API-header"><span class="xref std std-term">API header</span></a> starts with a <em>section label</em> followed by a vertical
+separator bar and comma separtaed <em>section parameters</em> that may override the
+default behavior. The <em>section label</em> is the section title. <em>Header</em>
+paramaters include the following:</p>
 <ul class="simple">
 <li><dl class="simple">
 <dt>private/public<span class="classifier">determines whether the API markup is copied to the</span></dt><dd><p><em>rivt file</em> in the <em>/public</em> folder intended for sharing.</p>
@@ -424,8 +424,8 @@ the following:</p>
 </dl>
 </li>
 </ul>
-<p>Defaults do not need to be specified in the <em>header</em>. The default setting for
-each API is listed first in bold.</p>
+<p>Default settings do not need to be specified in the <em>header</em>. In the table
+below, the default setting for each API is listed first in bold.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>API</p></th>
@@ -488,7 +488,8 @@ each API is listed first in bold.</p>
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>As defaults are specified, the following is equivalent -</p>
+<p>As defaults are specified in the prior example, the following syntax is
+equivalent:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;A New Section</span>
 
 <span class="s2">    section content (utf-8 text)</span>
@@ -593,7 +594,7 @@ The  typical <em>rivt report</em> folder structure is described
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-string"><strong>[1]</strong> rivt String</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#header"><strong>[2]</strong> Header</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api-header"><strong>[2]</strong> API Header</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-text"><strong>[3]</strong> Section Text</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tags-and-commands"><strong>[4]</strong> Tags and Commands</a></li>
 </ul>

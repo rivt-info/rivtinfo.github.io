@@ -41,11 +41,14 @@
     API functions. 
 
   
+  API header
+    The first line of a  *rivt string*. It includes a section title, followed 
+    by comma separated parameters.
+    
   header
   headers
-  section header
     The first line of a  *rivt string*. It includes a section title, followed 
-    by comma separated parameters that include
+    by comma separated parameters.
 
 
   rivtlib

@@ -39,17 +39,17 @@ label" and parameters that define the section behavior.
 
     <p id="api">&lt;i&gt;</p>
 
-**[2]** Header 
+**[2]** API Header 
 ------------------
 
 .. raw:: html
 
     <hr>
 
-A :term:`section header` starts with a *section label* followed by a vertical
-separator bar and *section parameters* that override the section default
-behavior. The *section label* is the section title. *Header* paramaters include
-the following:
+An :term:`API header` starts with a *section label* followed by a vertical
+separator bar and comma separtaed *section parameters* that may override the
+default behavior. The *section label* is the section title. *Header*
+paramaters include the following:
 
 - private/public : determines whether the API markup is copied to the
     *rivt file* in the */public* folder intended for sharing. 
@@ -60,8 +60,9 @@ the following:
 - section/merge : determines whether the API markup starts a new section
     in the output doc or is merged into the previous section.   
 
-Defaults do not need to be specified in the *header*. The default setting for
-each API is listed first in bold.
+
+Default settings do not need to be specified in the *header*. In the table
+below, the default setting for each API is listed first in bold.
  
 ========== ===================== ================= =====================
 API          private/public        show/hide           section/merge         
@@ -89,7 +90,8 @@ Examples of *header* settings are shown below.
         
         """)
 
-As defaults are specified, the following is equivalent - 
+As defaults are specified in the prior example, the following syntax is
+equivalent:
 
 .. code-block:: python
 

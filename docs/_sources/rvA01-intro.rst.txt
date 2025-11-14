@@ -119,7 +119,7 @@ editing and debugging.
 An API function starts in the first column and takes a single 
 :term:`rivt string` (rS) argument. The first line of a *rivt string* is a 
 header that specifies section labeling and processing. The 
-:term:`section header` is followed by the section text, indented four 
+:term:`header` is followed by the section text, indented four 
 spaces for legibility and section folding.
 
 .. code-block:: python
