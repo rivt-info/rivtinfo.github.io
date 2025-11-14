@@ -21,7 +21,7 @@ Home
 
    <hr>
 
-*rivt* is an open source Python project for writing and distributing
+*rivt* is an open source Python project for writing and sharing
 engineering documents. Documents are written in 
 :doc:`rivt markup <rvC01-markup>` within a Python file (.py).
 
