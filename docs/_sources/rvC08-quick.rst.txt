@@ -12,8 +12,8 @@
 
     <hr>
 
-The *Metadata* API function is always the first *API function* if used.The
-function provides metadata for *doc* processing and overriding defaults.
+The *Meta* API function sets and overrides processing parameters for the *doc*.
+It is always the first *API function* if used.
 
 - *rv_authD* 
     Specifies the author, version, email, repository and license information
@@ -81,7 +81,7 @@ function provides metadata for *doc* processing and overriding defaults.
 
     <hr>
 
-:term:`API header` paramaters include the following:
+:term:`API headers` determine overall section processing.
 
 - private/public 
     Determines whether the API markup is copied to the *rivt file* in the
@@ -122,6 +122,9 @@ rv.Q        **private**; public   **hide**; show     **merge**; section
     <hr>
     <p style="text-align: right;"> &lt;i&gt; </p>
 
+
+Tags format lines and blocks of text.
+
 **Line Tags**
 
 ============= ============================= =======================================
@@ -138,8 +141,8 @@ rv.I, V          title _[T]                  table number and title (all)[1]
 rv.I, V           text _[S] section link     link section within doc (all)
 rv.I, V           text _[D] report link      link doc within report (all)
 rv.I, V           text _[U] external url     external url link (all)
-rv.I, V           \-\-\-\-\-                 insert line >4 underscores (all)[2]
-rv.I, V           =\=\=\=\=                  insert page >4 underscores (all)[2]
+rv.I, V           \-\-\-\-\-                 >4 dashes inserts line (all)[2]
+rv.I, V           \=\=\=\=\=                 >4 underscores inserts page (all)[2]
 ============= ============================= =======================================
 
 [1] tag may be added to the label parameter in the IMAGE and TABLE commands
@@ -182,6 +185,8 @@ all         _[[END]]                                End block (all)
 
     <hr>
 
+Commands read, write and format files.
+
 ========== ======================================================== ===== ==================
 API Scope           | Command | path | parameters                    R/W   input types
 ========== ======================================================== ===== ==================
@@ -217,6 +222,8 @@ would not apply and will be disregarded.
 .. raw:: html
 
     <hr>
+
+Folders organize files in standard locations to generate *docs* and *reports*
 
 **Folder Key**
 
@@ -254,19 +261,23 @@ would not apply and will be disregarded.
         ├── [rv201-]filename3.py               
         ├── [rv202-]filename4.py               
         ├── [out]/                             || output files
+            ├── [hide]/                             || hide files
+                ├── m103-1.txt                      
+                ├── t202-5.txt   
+                ├── t103-4.py                         
+                └── opensees1.txt     
             ├── [logs]/                             || log files
                 ├── rv101-api.txt   
                 ├── rv101-log.txt   
                 └── rv102-log.txt   
             ├── [temp]/                             || temp files
                 └── rv101-label3.tex
-            ├── t103-4.py                      || doc processing outputs
-            ├── t202-5.htm   
-            ├── m201-1.txt
-            ├── table1.csv                               
-            ├── image1.png          
-            ├── v101-2.csv
-            └── v102-3.csv                
+            ├── [tool]/                             || tool files
+                ├── table1.csv                                               
+                └── image1.png      
+            └── [values]/                           || value files
+                ├── v101-2.csv
+                └── v102-3.csv          
         ├── [public]/                          || public rivt files                      
             ├── rv-101-filename1.py              
             ├── rv-201-filename3.py  

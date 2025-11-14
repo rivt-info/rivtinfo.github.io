@@ -385,8 +385,8 @@
 <h1><strong>C.8 Quick Lookup</strong><a class="headerlink" href="#c-8-quick-lookup" title="Link to this heading">#</a></h1>
 <p id="api">&lt;i&gt;</p><section id="meta-api-settings">
 <h2><strong>[1]</strong> Meta API Settings<a class="headerlink" href="#meta-api-settings" title="Link to this heading">#</a></h2>
-<hr><p>The <em>Metadata</em> API function is always the first <em>API function</em> if used.The
-function provides metadata for <em>doc</em> processing and overriding defaults.</p>
+<hr><p>The <em>Meta</em> API function sets and overrides processing parameters for the <em>doc</em>.
+It is always the first <em>API function</em> if used.</p>
 <ul class="simple">
 <li><dl class="simple">
 <dt><em>rv_authD</em></dt><dd><p>Specifies the author, version, email, repository and license information
@@ -451,7 +451,7 @@ and lists the forks. <em>rv_forknD</em> specifies data for the forked file. The
 <p id="api">&lt;i&gt;</p></section>
 <section id="api-headers">
 <h2><strong>[2]</strong> API Headers<a class="headerlink" href="#api-headers" title="Link to this heading">#</a></h2>
-<hr><p><a class="reference internal" href="rvA02-terms.html#term-API-header"><span class="xref std std-term">API header</span></a> paramaters include the following:</p>
+<hr><p><a class="reference internal" href="rvA02-terms.html#term-API-headers"><span class="xref std std-term">API headers</span></a> determine overall section processing.</p>
 <ul class="simple">
 <li><dl class="simple">
 <dt>private/public</dt><dd><p>Determines whether the API markup is copied to the <em>rivt file</em> in the
@@ -529,7 +529,8 @@ If default settings apply they do not need to be specified in the <em>header</em
 <section id="tags">
 <h2><strong>[3]</strong> Tags<a class="headerlink" href="#tags" title="Link to this heading">#</a></h2>
 <hr>
-<p style="text-align: right;"> &lt;i&gt; </p><p><strong>Line Tags</strong></p>
+<p style="text-align: right;"> &lt;i&gt; </p><p>Tags format lines and blocks of text.</p>
+<p><strong>Line Tags</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>API Scope</p></th>
@@ -584,11 +585,11 @@ If default settings apply they do not need to be specified in the <em>header</em
 </tr>
 <tr class="row-odd"><td><p>rv.I, V</p></td>
 <td><p>-----</p></td>
-<td><p>insert line &gt;4 underscores (all)[2]</p></td>
+<td><p>&gt;4 dashes inserts line (all)[2]</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I, V</p></td>
 <td><p>=====</p></td>
-<td><p>insert page &gt;4 underscores (all)[2]</p></td>
+<td><p>&gt;4 underscores inserts page (all)[2]</p></td>
 </tr>
 </tbody>
 </table>
@@ -671,7 +672,8 @@ If default settings apply they do not need to be specified in the <em>header</em
 <p id="api">&lt;i&gt;</p></section>
 <section id="commands">
 <h2><strong>[4]</strong> Commands<a class="headerlink" href="#commands" title="Link to this heading">#</a></h2>
-<hr><div class="pst-scrollable-table-container"><table class="table">
+<hr><p>Commands read, write and format files.</p>
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>API Scope</p></th>
 <th class="head"><div class="line-block">
@@ -776,7 +778,8 @@ would not apply and will be disregarded.</p>
 <p id="api">&lt;i&gt;</p></section>
 <section id="folders">
 <h2><strong>[5]</strong> Folders<a class="headerlink" href="#folders" title="Link to this heading">#</a></h2>
-<hr><p><strong>Folder Key</strong></p>
+<hr><p>Folders organize files in standard locations to generate <em>docs</em> and <em>reports</em></p>
+<p><strong>Folder Key</strong></p>
 <ul class="simple">
 <li><p>Explicit names and prefixes are shown in brackets [ ].</p></li>
 <li><p>Author files read by rivtlib are marked with a single vertical bar ( | ).</p></li>
@@ -805,19 +808,23 @@ would not apply and will be disregarded.</p>
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv201-<span class="o">]</span>filename3.py
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv202-<span class="o">]</span>filename4.py
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>out<span class="o">]</span>/<span class="w">                             </span><span class="o">||</span><span class="w"> </span>output<span class="w"> </span>files
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>hide<span class="o">]</span>/<span class="w">                             </span><span class="o">||</span><span class="w"> </span>hide<span class="w"> </span>files
+<span class="w">            </span>├──<span class="w"> </span>m103-1.txt
+<span class="w">            </span>├──<span class="w"> </span>t202-5.txt
+<span class="w">            </span>├──<span class="w"> </span>t103-4.py
+<span class="w">            </span>└──<span class="w"> </span>opensees1.txt
 <span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>logs<span class="o">]</span>/<span class="w">                             </span><span class="o">||</span><span class="w"> </span>log<span class="w"> </span>files
 <span class="w">            </span>├──<span class="w"> </span>rv101-api.txt
 <span class="w">            </span>├──<span class="w"> </span>rv101-log.txt
 <span class="w">            </span>└──<span class="w"> </span>rv102-log.txt
 <span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>temp<span class="o">]</span>/<span class="w">                             </span><span class="o">||</span><span class="w"> </span>temp<span class="w"> </span>files
 <span class="w">            </span>└──<span class="w"> </span>rv101-label3.tex
-<span class="w">        </span>├──<span class="w"> </span>t103-4.py<span class="w">                      </span><span class="o">||</span><span class="w"> </span>doc<span class="w"> </span>processing<span class="w"> </span>outputs
-<span class="w">        </span>├──<span class="w"> </span>t202-5.htm
-<span class="w">        </span>├──<span class="w"> </span>m201-1.txt
-<span class="w">        </span>├──<span class="w"> </span>table1.csv
-<span class="w">        </span>├──<span class="w"> </span>image1.png
-<span class="w">        </span>├──<span class="w"> </span>v101-2.csv
-<span class="w">        </span>└──<span class="w"> </span>v102-3.csv
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>tool<span class="o">]</span>/<span class="w">                             </span><span class="o">||</span><span class="w"> </span>tool<span class="w"> </span>files
+<span class="w">            </span>├──<span class="w"> </span>table1.csv
+<span class="w">            </span>└──<span class="w"> </span>image1.png
+<span class="w">        </span>└──<span class="w"> </span><span class="o">[</span>values<span class="o">]</span>/<span class="w">                           </span><span class="o">||</span><span class="w"> </span>value<span class="w"> </span>files
+<span class="w">            </span>├──<span class="w"> </span>v101-2.csv
+<span class="w">            </span>└──<span class="w"> </span>v102-3.csv
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>public<span class="o">]</span>/<span class="w">                          </span><span class="o">||</span><span class="w"> </span>public<span class="w"> </span>rivt<span class="w"> </span>files
 <span class="w">        </span>├──<span class="w"> </span>rv-101-filename1.py
 <span class="w">        </span>├──<span class="w"> </span>rv-201-filename3.py

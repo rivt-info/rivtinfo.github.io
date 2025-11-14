@@ -86,25 +86,29 @@ formatting are written to the *log* folder.
 .. code-block:: bash
 
 
-    [rivt]-Report-Label/                 Report Folder Name                
+    [rivt]-Report-Label/                Report Folder Name                
         ├── [rv101-]filename1.py               | rivt files
         ├── [rv102-]filename2.py               
         ├── [rv201-]filename3.py               
         ├── [rv202-]filename4.py               
         ├── [out]/                             || output files
+            ├── [hide]/                             || hide files
+                ├── m103-1.txt                      
+                ├── t202-5.txt   
+                ├── t103-4.py                         
+                └── opensees1.txt     
             ├── [logs]/                             || log files
                 ├── rv101-api.txt   
                 ├── rv101-log.txt   
                 └── rv102-log.txt   
             ├── [temp]/                             || temp files
                 └── rv101-label3.tex
-            ├── t103-4.py                      || doc processing outputs
-            ├── t202-5.htm   
-            ├── m201-1.txt
-            ├── table1.csv                               
-            ├── image1.png          
-            ├── v101-2.csv
-            └── v102-3.csv                
+            ├── [tool]/                             || tool files
+                ├── table1.csv                                               
+                └── image1.png      
+            └── [values]/                           || value files
+                ├── v101-2.csv
+                └── v102-3.csv          
         ├── [public]/                          || public rivt files                      
             ├── rv-101-filename1.py              
             ├── rv-201-filename3.py  

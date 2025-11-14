@@ -40,8 +40,8 @@
     text, PDF and HTML. Markup is included in string arguments to rivt 
     API functions. 
 
-  
   API header
+  API headers
     The first line of a  *rivt string*. It includes a section title, followed 
     by comma separated parameters.
     
