@@ -255,6 +255,7 @@ Folders organize files in standard locations to generate *docs* and *reports*
 
 .. code-block:: bash
 
+
     [rivt]-Report-Label/                Report Folder Name                
         ├── [rv101-]filename1.py               | rivt files
         ├── [rv102-]filename2.py               
@@ -333,7 +334,7 @@ Folders organize files in standard locations to generate *docs* and *reports*
             ├── image/                              | author created folder                
                 ├── fig1.png
                 └── fig2.jpg
-            [publish]/
+            [gen]/
                 ├── gen-html.cmd                    | html generating script
                 ├── gen-pdf.cmd                     | pdf generating script
                 ├── gen-pdftex.cmd                  | LaTeX generating script
@@ -364,4 +365,3 @@ Folders organize files in standard locations to generate *docs* and *reports*
                 ├── new-units.py       
                 └── add-values-v.csv       
         └── README.txt                         || searchable text report 
-

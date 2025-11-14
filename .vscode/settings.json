@@ -6,26 +6,18 @@
             "args": []
         }
     },
+    "fsdeploy.deployOnSave": true,
+    "fsdeploy.deployWorkspaceOnSave": false,
     "fsdeploy.nodes": [
         {
             "source": "C:/git/git-rivtinfo.github.io",
-            "target": "C:/Users/rodhh/OneDrive/StL-rivt/rivtinfo.github.io",
+            "target": "C:/Users/rodhh/OneDrive/StL-rivt/rivt-info/rivtinfo.github.io",
             "include": "**/*.*",
             "exclude": "**/.git",
             "deleteTargetOnDeploy": true,
             "name": "yoga laptop"
-        },
-        {
-            "source": "C:/git/git-rivtinfo.github.io",
-            "target": "E:/OneDrive/StL-rivt/rivtinfo.github.io",
-            "include": "**/*.*",
-            "exclude": "**/.git",
-            "deleteTargetOnDeploy": true,
-            "name": "6870k"
         }
     ],
-    "fsdeploy.deployOnSave": true,
-    "fsdeploy.deployWorkspaceOnSave": false,
     "git.postCommitCommand": "sync",
     "git.autofetch": true,
     "editor.formatOnSave": true,
@@ -35,7 +27,7 @@
     "ShortcutMenuBar.navigateForward": false,
     "ShortcutMenuBar.openFilesList": true,
     "ShortcutMenuBar.toggleWordWrap": false,
-    "ShortcutMenuBar.saveAll": false,
+    "ShortcutMenuBar.saveAll": true,
     "ShortcutMenuBar.openSettings": true,
     "ShortcutMenuBar.quickOpen": false,
     "ShortcutMenuBar.showCommands": false,
@@ -132,5 +124,6 @@
     "git.confirmSync": false,
     "editor.rulers": [
         80
-    ]
+    ],
+    "iis.configDir": ""
 }

@@ -50,11 +50,9 @@
     The first line of a  *rivt string*. It includes a section title, followed 
     by comma separated parameters.
 
-
   rivtlib
     Python package that generates docs and reports from 
     a `rivt file. <https://rivtlib.dev>`_
-
 
   rivt string
     Triple quoted string argument to an API function.

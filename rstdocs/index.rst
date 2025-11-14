@@ -25,7 +25,7 @@ Home
 engineering documents. Documents are written in 
 :doc:`rivt markup <rvC01-markup>` within a Python file (.py).
 
-A *rivt file* is a Python file that imports the package *rivtlib*. The
+A *rivt file* is a file that imports the Python package *rivtlib*. The
 *rivtlib* API outputs a formatted *rivt doc* as text, HTML or PDF from the same
 *rivt file*. The API also organizes *docs* into a *rivt report*. This site is
 an example of an HTML report.

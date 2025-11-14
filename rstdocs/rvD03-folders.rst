@@ -46,6 +46,25 @@ divisions and subdivisions in the *report*.
 
     <hr>
 
+Reports are organized under a single report folder with the prefix **rivt-**.
+*rivt files* and the report text file are stored in the *report folder*. Also
+stored in the folder are four sub-folders.
+
+- out
+   The **out** folder stores output files including *logs*, *values*, 
+   *hidden* sections, and *tool* outputs.
+
+- public 
+    The **public** folder stores exported rivt files intended for 
+    upload to a public repository.
+
+- publish
+    The **publish** folder stores *docs* and *reports*
+
+- src
+    The **src** folder stores source, style and generating files for *docs* 
+    and *reports*
+
 An example *report* folder structure is shown below.
 
 **Folder Key**
@@ -54,11 +73,6 @@ An example *report* folder structure is shown below.
 - Files provided by the report author are marked with a single vertical bar ( | ).  
 - Files written by rivtlib are marked with double vertical bars ( || ).
 
-
-*Source files* provided by a report author are stored in the *src* folder.
-*Docs* are written to the *publish* folder. *rivt files* marked for open source
-sharing are written to the *public* folder. Process files generated during *doc*
-formatting are written to the *log* folder.
 
 **Top Level Folders**
 
@@ -164,7 +178,7 @@ formatting are written to the *log* folder.
             ├── image/                              | author created folder                
                 ├── fig1.png
                 └── fig2.jpg
-            [publish]/
+            [gen]/
                 ├── gen-html.cmd                    | html generating script
                 ├── gen-pdf.cmd                     | pdf generating script
                 ├── gen-pdftex.cmd                  | LaTeX generating script
