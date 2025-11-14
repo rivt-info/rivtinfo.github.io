@@ -14,10 +14,9 @@
 
 *rivt* is an open source software project that simplifies reuse and sharing of
 engineering documents. Reuse and sharing provides opportunities for continual
-improvement. Engineering documents typically combine text, tables, diagrams,
-models and calculations to describe and justify decisions and designs. Although
-a number of document programs are curently available, reuse and sharing is
-generally difficult because of limitations in the software:
+improvement. Although a number of document programs are curently available,
+reuse and sharing is generally difficult because of limitations in the
+software:
 
 - documents are divided among many incompatible programs
 - document formats become obsolete an inaccessible
@@ -58,70 +57,91 @@ Jupyter        no       no         no      yes         yes      yes
     .. [6] Collaboration support
 
 
+
+
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
 
-**[2]** import rivtlib 
+
+**[2]** rivt Files
 --------------------------------------------------------------------- 
 
 .. raw:: html
 
     <hr>
 
-A *rivt file* is a Python plain text file (.py) that imports the *rivtlib*
-library into the *rv namespace*:
+A :term:`rivt file` is a Python plain text file (.py) that imports the 
+:term:`rivtlib` library into the :term:`rv-namespace`:
 
 .. code-block:: python
 
     import rivtlib.rvapi as rv
 
-*rivtlib* includes 8 API functions that may be run as a script or interactively
-as notebook cells in *VSCode* or other *IDE*.
+*rivtlib* includes 6 primary and 2 auxilliary API functions that may be run as
+a script or interactively as notebook cells in *VSCode* or other *IDE*.
 
-=============== =============== ===================================
-API Function        Name             Purpose
-=============== =============== ===================================
-rv.M(rS)           Meta              Meta data 
-rv.R(rS)           Run               Run shell commands
-rv.I(rS)           Insert            Insert static resources 
-rv.V(rS)           Value             Calculate values
-rv.T(rS)           Tool              Run Python functions
-rv.D(rS)           Doc               Publish docs 
-rv.S(rS)           Skip              Skip section
-rv.Q(rS)           Quit              Exit rivt 
-=============== =============== ===================================
-
+Engineering documents typically combine text, tables, diagrams, models and
+calculations to describe and justify decisions and designs. The *rivt API* is
+designed to simplify the document organization andpublishing through the use of
+half a dozen API functions that process :term:`rivt markup`. Each *rivt file*
+outputs a formatted rivt :term:`doc` as a text, PDF or HTML document. Reports
+are organized assemblies of *docs*.
 
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
 
-**[3]** rivt Strings and Docs
+
+**[3]** rivt API 
+--------------------------------------------------------------------- 
+
+.. raw:: html
+
+    <hr>
+
+=============== =============== ===================================
+API Function        Name             Purpose
+=============== =============== ===================================
+rv.R(rS)           Run               Run shell commands
+rv.I(rS)           Insert            Insert static resources 
+rv.V(rS)           Value             Calculate values
+rv.T(rS)           Tool              Run Python functions
+rv.M(rS)           Meta              Meta data 
+rv.D(rS)           Doc               Publish docs 
+rv.S(rS)           Skip              Skip section
+rv.Q(rS)           Quit              Exit rivt 
+=============== =============== ===================================
+
+The first four API functions (**R I V T**) output formatted utf-8 text to the
+terminal and generate *doc* content. The *Run API* executes shell commands.
+The *Insert API* adds static table, image, equation and text content. The
+*Value API* evaluates equations and functions. The *Tool API* extends *rivt* by
+processing raw HTML, LaTeX, reStructuredText and Python scripts.
+
+The last four API functions (**M D S Q**) are related to processing and output.
+The *Meta* function contains *rivt file* author and version information and
+sets processing variables. The *Doc* function controls publishing formatted
+dcouments (*doc* files) as text, PDF or HTML . The *Skip* and *Quit* functions
+are used for interactive editing and debugging.
+
+Each function takes a single triple quoted string argument.
+
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
+**[4]** rivt Strings
 ------------------------------------------------------------------------ 
 
 .. raw:: html
 
     <hr>
 
-The first four functions (**R I V T**) output formatted utf-8 text to the
-terminal and may generate *doc* content. The *Run API* executes shell commands.
-The *Insert API* adds static table, image, equation and text content. The
-*Value API* evaluates equations and functions. The *Tool API* extends *rivt* by
-importing raw HTML and LaTeX and executing *Python scripts* inside or out of
-the *rivt namespace*.
-
-The last four functions (**D M S Q**) are related to processing and output. The
-*Doc* function writes formatted text, PDF or HTML *doc* files. The *Meta*
-function contains *rivt file* author and version information and sets
-processing variables. The *Skip* and *Quit* functions are used for interactive
-editing and debugging.
-
 An API function starts in the first column and takes a single 
-:term:`rivt string` (rS) argument. The first line of a *rivt string* is a 
-header that specifies section labeling and processing. The 
-:term:`header` is followed by the section text, indented four 
-spaces for legibility and section folding.
+:term:`rivt string` (rS) argument. The first line of a *rivt string* is a header
+that specifies section labeling and processing. The :term:`header` is followed 
+byvthe section text, indented four spaces for legibility and section folding.
 
 .. code-block:: python
 

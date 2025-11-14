@@ -379,10 +379,9 @@
 <h2><strong>[1]</strong> Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
 <hr><p><em>rivt</em> is an open source software project that simplifies reuse and sharing of
 engineering documents. Reuse and sharing provides opportunities for continual
-improvement. Engineering documents typically combine text, tables, diagrams,
-models and calculations to describe and justify decisions and designs. Although
-a number of document programs are curently available, reuse and sharing is
-generally difficult because of limitations in the software:</p>
+improvement. Although a number of document programs are curently available,
+reuse and sharing is generally difficult because of limitations in the
+software:</p>
 <ul class="simple">
 <li><p>documents are divided among many incompatible programs</p></li>
 <li><p>document formats become obsolete an inaccessible</p></li>
@@ -486,16 +485,25 @@ software programs.</p>
 </aside>
 </aside>
 <p id="api">&lt;i&gt;</p></section>
-<section id="import-rivtlib">
-<h2><strong>[2]</strong> import rivtlib<a class="headerlink" href="#import-rivtlib" title="Link to this heading">#</a></h2>
-<hr><p>A <em>rivt file</em> is a Python plain text file (.py) that imports the <em>rivtlib</em>
-library into the <em>rv namespace</em>:</p>
+<section id="rivt-files">
+<h2><strong>[2]</strong> rivt Files<a class="headerlink" href="#rivt-files" title="Link to this heading">#</a></h2>
+<hr><p>A <a class="reference internal" href="rvA02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> is a Python plain text file (.py) that imports the
+<a class="reference internal" href="rvA02-terms.html#term-rivtlib"><span class="xref std std-term">rivtlib</span></a> library into the <a class="reference internal" href="rvA02-terms.html#term-rv-namespace"><span class="xref std std-term">rv-namespace</span></a>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
 </pre></div>
 </div>
-<p><em>rivtlib</em> includes 8 API functions that may be run as a script or interactively
-as notebook cells in <em>VSCode</em> or other <em>IDE</em>.</p>
-<div class="pst-scrollable-table-container"><table class="table">
+<p><em>rivtlib</em> includes 6 primary and 2 auxilliary API functions that may be run as
+a script or interactively as notebook cells in <em>VSCode</em> or other <em>IDE</em>.</p>
+<p>Engineering documents typically combine text, tables, diagrams, models and
+calculations to describe and justify decisions and designs. The <em>rivt API</em> is
+designed to simplify the document organization andpublishing through the use of
+half a dozen API functions that process <a class="reference internal" href="rvA02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a>. Each <em>rivt file</em>
+outputs a formatted rivt <a class="reference internal" href="rvA02-terms.html#term-doc"><span class="xref std std-term">doc</span></a> as a text, PDF or HTML document. Reports
+are organized assemblies of <em>docs</em>.</p>
+<p id="api">&lt;i&gt;</p></section>
+<section id="rivt-api">
+<h2><strong>[3]</strong> rivt API<a class="headerlink" href="#rivt-api" title="Link to this heading">#</a></h2>
+<hr><div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>API Function</p></th>
 <th class="head"><p>Name</p></th>
@@ -503,25 +511,25 @@ as notebook cells in <em>VSCode</em> or other <em>IDE</em>.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>rv.M(rS)</p></td>
-<td><p>Meta</p></td>
-<td><p>Meta data</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.R(rS)</p></td>
+<tr class="row-even"><td><p>rv.R(rS)</p></td>
 <td><p>Run</p></td>
 <td><p>Run shell commands</p></td>
 </tr>
-<tr class="row-even"><td><p>rv.I(rS)</p></td>
+<tr class="row-odd"><td><p>rv.I(rS)</p></td>
 <td><p>Insert</p></td>
 <td><p>Insert static resources</p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.V(rS)</p></td>
+<tr class="row-even"><td><p>rv.V(rS)</p></td>
 <td><p>Value</p></td>
 <td><p>Calculate values</p></td>
 </tr>
-<tr class="row-even"><td><p>rv.T(rS)</p></td>
+<tr class="row-odd"><td><p>rv.T(rS)</p></td>
 <td><p>Tool</p></td>
 <td><p>Run Python functions</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.M(rS)</p></td>
+<td><p>Meta</p></td>
+<td><p>Meta data</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.D(rS)</p></td>
 <td><p>Doc</p></td>
@@ -538,25 +546,24 @@ as notebook cells in <em>VSCode</em> or other <em>IDE</em>.</p>
 </tbody>
 </table>
 </div>
-<p id="api">&lt;i&gt;</p></section>
-<section id="rivt-strings-and-docs">
-<h2><strong>[3]</strong> rivt Strings and Docs<a class="headerlink" href="#rivt-strings-and-docs" title="Link to this heading">#</a></h2>
-<hr><p>The first four functions (<strong>R I V T</strong>) output formatted utf-8 text to the
-terminal and may generate <em>doc</em> content. The <em>Run API</em> executes shell commands.
+<p>The first four API functions (<strong>R I V T</strong>) output formatted utf-8 text to the
+terminal and generate <em>doc</em> content. The <em>Run API</em> executes shell commands.
 The <em>Insert API</em> adds static table, image, equation and text content. The
 <em>Value API</em> evaluates equations and functions. The <em>Tool API</em> extends <em>rivt</em> by
-importing raw HTML and LaTeX and executing <em>Python scripts</em> inside or out of
-the <em>rivt namespace</em>.</p>
-<p>The last four functions (<strong>D M S Q</strong>) are related to processing and output. The
-<em>Doc</em> function writes formatted text, PDF or HTML <em>doc</em> files. The <em>Meta</em>
-function contains <em>rivt file</em> author and version information and sets
-processing variables. The <em>Skip</em> and <em>Quit</em> functions are used for interactive
-editing and debugging.</p>
-<p>An API function starts in the first column and takes a single
-<a class="reference internal" href="rvA02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> (rS) argument. The first line of a <em>rivt string</em> is a
-header that specifies section labeling and processing. The
-<a class="reference internal" href="rvA02-terms.html#term-header"><span class="xref std std-term">header</span></a> is followed by the section text, indented four
-spaces for legibility and section folding.</p>
+processing raw HTML, LaTeX, reStructuredText and Python scripts.</p>
+<p>The last four API functions (<strong>M D S Q</strong>) are related to processing and output.
+The <em>Meta</em> function contains <em>rivt file</em> author and version information and
+sets processing variables. The <em>Doc</em> function controls publishing formatted
+dcouments (<em>doc</em> files) as text, PDF or HTML . The <em>Skip</em> and <em>Quit</em> functions
+are used for interactive editing and debugging.</p>
+<p>Each function takes a single triple quoted string argument.</p>
+<p id="api">&lt;i&gt;</p></section>
+<section id="rivt-strings">
+<h2><strong>[4]</strong> rivt Strings<a class="headerlink" href="#rivt-strings" title="Link to this heading">#</a></h2>
+<hr><p>An API function starts in the first column and takes a single
+<a class="reference internal" href="rvA02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> (rS) argument. The first line of a <em>rivt string</em> is a header
+that specifies section labeling and processing. The <a class="reference internal" href="rvA02-terms.html#term-header"><span class="xref std std-term">header</span></a> is followed
+byvthe section text, indented four spaces for legibility and section folding.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Header</span>
 
 <span class="s2">    section text</span>
@@ -624,8 +631,9 @@ details.</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary"><strong>[1]</strong> Summary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import-rivtlib"><strong>[2]</strong> import rivtlib</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-strings-and-docs"><strong>[3]</strong> rivt Strings and Docs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-files"><strong>[2]</strong> rivt Files</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-api"><strong>[3]</strong> rivt API</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-strings"><strong>[4]</strong> rivt Strings</a></li>
 </ul>
   </nav></div>
 

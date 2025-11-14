@@ -136,7 +136,12 @@
     A single document that is not part of a report. It uses
     the local rivt file folder for reading and writing files. *doc* 
     styling control is limited compared to a *report*.
-    
+
+  rv-namespace
+  rv-space
+    Alias name for the global rivt file namespace. Other user namespaces may be 
+    specified
+
 .. raw:: html
 
     <p id="api">&lt;t&gt;</p>
