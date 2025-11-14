@@ -389,18 +389,28 @@
 function provides metadata for <em>doc</em> processing and overriding defaults.</p>
 <ul class="simple">
 <li><dl class="simple">
-<dt><em>rv_authD</em> specifies the author, version, email, repository and license</dt><dd><p>information and lists the forks. <em>rv_forknD</em> specifies data for the forked
-file. The <em>rv_authD</em> is always included.</p>
+<dt><em>rv_authD</em></dt><dd><p>Specifies the author, version, email, repository and license information
+and lists the forks. <em>rv_forknD</em> specifies data for the forked file. The
+<em>rv_authD</em> is always included.</p>
 </dd>
 </dl>
 </li>
 <li><dl class="simple">
-<dt><em>rv_localB</em> overrides the default report structure and specifies that the</dt><dd><p><em>values</em> and <em>ouput</em> files are written to the rivt file folder.</p>
+<dt><em>rv_localB</em></dt><dd><p>Overrides the default report structure and specifies that the <em>values</em> and
+<em>ouput</em> files are written to the rivt file folder.</p>
 </dd>
 </dl>
 </li>
-<li><p><em>rv_docnameS</em> overrides the default doc title derived from the rivt file name.</p></li>
-<li><p><em>rv_headerL</em> specfies the contents and order of doc page headings.</p></li>
+<li><dl class="simple">
+<dt><em>rv_docnameS</em></dt><dd><p>overrides the default doc title derived from the rivt file name.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><em>rv_headerL</em></dt><dd><p>specfies the contents and order of <em>doc</em> page headings.</p>
+</dd>
+</dl>
+</li>
 </ul>
 <p><strong>Examples</strong></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># default - author settings</span>
@@ -442,15 +452,21 @@ file. The <em>rv_authD</em> is always included.</p>
 <section id="api-headers">
 <h2><strong>[2]</strong> API Headers<a class="headerlink" href="#api-headers" title="Link to this heading">#</a></h2>
 <hr><p><a class="reference internal" href="rvA02-terms.html#term-API-header"><span class="xref std std-term">API header</span></a> paramaters include the following:</p>
-<ul>
+<ul class="simple">
 <li><dl class="simple">
-<dt>private/public<span class="classifier">determines whether the API markup is copied to the</span></dt><dd><p><em>rivt file</em> in the <em>/public</em> folder for upload to a <em>public repo</em>.</p>
+<dt>private/public</dt><dd><p>Determines whether the API markup is copied to the <em>rivt file</em> in the
+<em>/public</em> folder for upload to a <em>public repo</em>.</p>
 </dd>
 </dl>
 </li>
-<li><p>show/hide : determines whether the API markup output is shown in the <em>doc</em>.</p></li>
-<li><dl>
-<dt>section/merge<span class="classifier">determines whether the API markup starts a new <em>doc</em> section</span></dt><dd><p>or merges it with the previous section.</p>
+<li><dl class="simple">
+<dt>show/hide</dt><dd><p>Determines whether the API markup output is shown in the <em>doc</em>.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>section/merge</dt><dd><p>Determines whether the API markup starts a new <em>doc</em> section or merges it
+with the previous section.</p>
 </dd>
 </dl>
 </li>
@@ -567,17 +583,18 @@ If default settings apply they do not need to be specified in the <em>header</em
 <td><p>external url link (all)</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I, V</p></td>
-<td></td>
-<td><p>insert line &gt;4 underscores (all)</p></td>
+<td><p>-----</p></td>
+<td><p>insert line &gt;4 underscores (all)[2]</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I, V</p></td>
-<td></td>
-<td><p>insert page &gt;4 underscores (all)</p></td>
+<td><p>=====</p></td>
+<td><p>insert page &gt;4 underscores (all)[2]</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <p>[1] tag may be added to the label parameter in the IMAGE and TABLE commands</p>
+<p>[2] must start in first indented column (absolute column 4)</p>
 <p><strong>Block Tags</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>

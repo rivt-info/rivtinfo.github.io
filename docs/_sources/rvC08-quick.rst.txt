@@ -15,16 +15,20 @@
 The *Metadata* API function is always the first *API function* if used.The
 function provides metadata for *doc* processing and overriding defaults.
 
-- *rv_authD* specifies the author, version, email, repository and license
-    information and lists the forks. *rv_forknD* specifies data for the forked
-    file. The *rv_authD* is always included.
+- *rv_authD* 
+    Specifies the author, version, email, repository and license information
+    and lists the forks. *rv_forknD* specifies data for the forked file. The
+    *rv_authD* is always included.
 
-- *rv_localB* overrides the default report structure and specifies that the 
-    *values* and *ouput* files are written to the rivt file folder.
+- *rv_localB* 
+    Overrides the default report structure and specifies that the *values* and
+    *ouput* files are written to the rivt file folder.
 
-- *rv_docnameS* overrides the default doc title derived from the rivt file name.
+- *rv_docnameS* 
+    overrides the default doc title derived from the rivt file name.
 
-- *rv_headerL* specfies the contents and order of doc page headings.
+- *rv_headerL*
+    specfies the contents and order of *doc* page headings.
 
 
 **Examples**
@@ -79,13 +83,16 @@ function provides metadata for *doc* processing and overriding defaults.
 
 :term:`API header` paramaters include the following:
 
-- private/public : determines whether the API markup is copied to the 
-    *rivt file* in the */public* folder for upload to a *public repo*.
+- private/public 
+    Determines whether the API markup is copied to the *rivt file* in the
+    */public* folder for upload to a *public repo*.
 
-- show/hide : determines whether the API markup output is shown in the *doc*.
+- show/hide
+    Determines whether the API markup output is shown in the *doc*.
 
-- section/merge : determines whether the API markup starts a new *doc* section 
-    or merges it with the previous section.   
+- section/merge
+    Determines whether the API markup starts a new *doc* section or merges it
+    with the previous section.
 
 In the table below, the default setting for each API is listed first, in bold.
 If default settings apply they do not need to be specified in the *header*. 
@@ -131,11 +138,13 @@ rv.I, V          title _[T]                  table number and title (all)[1]
 rv.I, V           text _[S] section link     link section within doc (all)
 rv.I, V           text _[D] report link      link doc within report (all)
 rv.I, V           text _[U] external url     external url link (all)
-rv.I, V           -----                      insert line >4 underscores (all)
-rv.I, V           =====                      insert page >4 underscores (all)
+rv.I, V           \-\-\-\-\-                 insert line >4 underscores (all)[2]
+rv.I, V           =\=\=\=\=                  insert page >4 underscores (all)[2]
 ============= ============================= =======================================
 
 [1] tag may be added to the label parameter in the IMAGE and TABLE commands
+
+[2] must start in first indented column (absolute column 4)
 
 
 **Block Tags**
