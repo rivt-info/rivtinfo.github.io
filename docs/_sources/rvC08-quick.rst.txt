@@ -61,11 +61,11 @@ rv.I, V           math _[A]                  format ASCII math (all)
 rv.I, V          label _[E]                  equation number and label (all)
 rv.I, V        caption _[I]                  image number and caption (all) [1]
 rv.I, V          title _[T]                  table number and title (all) [1]
-rv.I, V           text _[P]                  new page (all)
 rv.I, V           text _[S] section link     link section within doc (all)
 rv.I, V           text _[D] report link      link doc within report (all)
 rv.I, V           text _[U] external url     external url link (all)
-rv.I, V           _____                      line >4 underscores (all)
+rv.I, V           -----                      insert line >4 underscores (all)
+rv.I, V           =====                      insert page >4 underscores (all)
 ============= ============================= =======================================
 
 [1] tag may be added to the label parameter in the IMAGE and TABLE commands
