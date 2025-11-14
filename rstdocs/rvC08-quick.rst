@@ -5,7 +5,72 @@
 
     <p id="api">&lt;i&gt;</p>
 
-**[1]** API Headers
+**[1]** Meta API Settings
+--------------------------
+
+.. raw:: html
+
+    <hr>
+
+The *Metadata* API function is always the first *API function* if used.The
+function provides metadata for *doc* processing and overriding defaults.
+
+- *rv_authD* specifies the author, version, email, repository and license
+    information and lists the forks. *rv_forknD* specifies data for the forked
+    file. The *rv_authD* is always included.
+
+- *rv_localB* overrides the default report structure and specifies that the 
+    *values* and *ouput* files are written to the rivt file folder.
+
+- *rv_docnameS* overrides the default doc title derived from the rivt file name.
+
+- *rv_headerL* specfies the contents and order of doc page headings.
+
+
+**Examples**
+
+..  code-block:: python
+
+    # default - author settings
+    rv_authD = {
+            "authors": "",
+            "version": "0.0.0",
+            "email": "",
+            "repo": "",
+            "license": "https://opensource.org/license/mit/",
+            "forks": ["rv_fork1D", "", "", ""],
+            }
+    
+    rv_fork1D = {
+            "authors": "",
+            "version": "0.0.0",
+            "email": "",
+            "repo": "",
+
+     # default - folder setting
+     rv_localB = false
+     
+     # example - folder setting override
+     rv_localB = true
+
+    # default - doc name override
+     rv_docnameS = "" # does not override default name
+     
+     # example - folder setting override
+     rv_docnameS = "My Document Title"
+
+    # default - header list
+    rv_headerL = ["date", "time", "file", "version"]
+    
+    # example - header list
+    rv_headerL = ["date", "file", "authors", "version"]
+
+
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
+**[2]** API Headers
 --------------------
 
 .. raw:: html
@@ -14,17 +79,17 @@
 
 :term:`API header` paramaters include the following:
 
-- private/public : determines whether the API markup is copied to the
-    *rivt file* in the */public* folder intended for sharing. 
+- private/public : determines whether the API markup is copied to the 
+    *rivt file* in the */public* folder for upload to a *public repo*.
 
-- show/hide : determines whether the API markup is shown in the output doc.
+- show/hide : determines whether the API markup output is shown in the *doc*.
 
-- section/merge : determines whether the API markup starts a new doc section 
+- section/merge : determines whether the API markup starts a new *doc* section 
     or merges it with the previous section.   
 
-Default settings do not need to be specified in the *header*. In the table
-below, the default setting for each API is listed first in bold.
- 
+In the table below, the default setting for each API is listed first, in bold.
+If default settings apply they do not need to be specified in the *header*. 
+
 ========== ===================== ================= =====================
 API          private/public        show/hide           section/merge         
 ========== ===================== ================= ===================== 
@@ -42,13 +107,15 @@ rv.Q        **private**; public   **hide**; show     **merge**; section
 
     <p id="api">&lt;i&gt;</p>
 
-**[2]** Line tags
+**[3]** Tags
 ----------------------
 
 .. raw:: html
 
     <hr>
     <p style="text-align: right;"> &lt;i&gt; </p>
+
+**Line Tags**
 
 ============= ============================= =======================================
 API Scope             Line Tags              Description (doc scope)
@@ -59,8 +126,8 @@ rv.I, V           text _[R]                  right justify text (all)
 rv.I, V           math _[L]                  format LaTeX math (all) 
 rv.I, V           math _[A]                  format ASCII math (all) 
 rv.I, V          label _[E]                  equation number and label (all)
-rv.I, V        caption _[I]                  image number and caption (all) [1]
-rv.I, V          title _[T]                  table number and title (all) [1]
+rv.I, V        caption _[I]                  image number and caption (all)[1]
+rv.I, V          title _[T]                  table number and title (all)[1]
 rv.I, V           text _[S] section link     link section within doc (all)
 rv.I, V           text _[D] report link      link doc within report (all)
 rv.I, V           text _[U] external url     external url link (all)
@@ -70,16 +137,8 @@ rv.I, V           =====                      insert page >4 underscores (all)
 
 [1] tag may be added to the label parameter in the IMAGE and TABLE commands
 
-.. raw:: html
 
-    <p id="api">&lt;i&gt;</p>
-
-**[3]** Block tags
-----------------------
-
-.. raw:: html
-
-    <hr>
+**Block Tags**
 
 ========== ======================================= ==============================
 API Scope         Block Tags                        Description (doc scope)
@@ -117,17 +176,17 @@ all         _[[END]]                                End block (all)
 ========== ======================================================== ===== ==================
 API Scope           | Command | path | parameters                    R/W   input types
 ========== ======================================================== ===== ==================
-rv.R        \| LINUX | relative path | *wait;nowait*                 R     *sh*
-rv.R        \| MACOS | relative path | *wait;nowait*                 R     *sh*
-rv.R        \| WIN | relative path   | *wait;nowait*                 R     *bat, cmd*
-rv.I, V     \| IMAGE | relative path |  scale, caption (_[I])        R     *png, jpg*
-rv.I, V     \| IMAGE2 | relative path | s1, s2, c1, c2 (_[I])        R     *png, jpg*
+rv.R        \| LINUX | relative path | *wait;nowait*                 R     *.sh*
+rv.R        \| MACOS | relative path | *wait;nowait*                 R     *.sh*
+rv.R        \| WIN | relative path   | *wait;nowait*                 R     *.bat, .cmd*
+rv.I, V     \| IMAGE | relative path |  scale, caption (_[I])        R     *.png, .jpg*
+rv.I, V     \| IMAGE2 | relative path | s1, s2, c1, c2 (_[I])        R     *.png, jpg*
 rv.I, V     \| TABLE | relative path | width, l;c;r, title           R     *csv, txt, xlsx*
 rv.I, V     \| TEXT | relative path |  *normal;literal* ;code        R     *txt, code*
 rv.V        \| VALUES | relative path | *visible;hide* (_[T])        R     *csv*
-rv.V       a := 1*IN  | unit1, unit2, decimal | description          W     define value
-rv.V       b <= a + 3*FT | unit1, unit2, decimal | ref (_[E])        W     assign value
-rv.V       c <= func1(a,b) | unit1, unit2, decimal | ref (_[E])      W     assign value
+rv.V       a := 1*IN  | unit1, unit2, decimal | descrip (_[E])[1]    W     define a value
+rv.V       b <= a + 3*FT | unit1, unit2, decimal | descrip (_[E])    W     assign a value
+rv.V       c <= func1(x,y) | unit1, unit2, decimal | descrip (_[E])  W     assign a value
 rv.T        \| PYTHON | relative path | *rv-namespace*; userspace    R     *py*
 rv.T        \| HTML | relative path | *html*                         R     *html*
 rv.T        \| LATEX | relative path | *pdf*                         R     *tex*
@@ -136,6 +195,8 @@ rv.D        \| APPEND | relative path | cover_page_title             W     *pdf*
 rv.D        \| PUBLISH | relative path | *pdf;pdftex;text;html*      W     *pdf, html, txt*
 ========== ======================================================== ===== ==================
 
+[1] Values are usually defined in a block where the equation tag (_[E]) 
+would not apply and will be disregarded.
 
 .. raw:: html
 
