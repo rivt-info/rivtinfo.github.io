@@ -168,7 +168,6 @@ rv.V        _[[VALUES]] table title (_[T])          Define values(all)
 rv.T        _[[PYTHON]] label, *rv-space*;newspace  Python script (all)
 rv.T        _[[LATEX]] label                        LaTeX markup (pdf)[1]
 rv.T        _[[HTML]] label                         HTML markup (html)
-rv.T        _[[RST]] label                          reStructuredText (pdf,html)
 all         _[[END]]                                End block (all)
 ========== ======================================= ==============================
 

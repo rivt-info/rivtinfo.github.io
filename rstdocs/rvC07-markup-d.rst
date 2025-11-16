@@ -4,31 +4,20 @@
 The *Doc API function* writes formatted document files from rivt strings. Tags
 are not used in this function. 
 
-.. raw:: html
+**Summary**
 
-    <p id="api">&lt;i&gt;</p>
-
-
-**[1]** KEY  
--------------
-
-.. raw:: html
-
-    <hr>
-
-
-.. topic:: | COMMAND | path | parameters
-
-    example 
-
-output types
-
+======================================================== ===== ==================
+         | Command | path | parameters                    R/W   input types
+======================================================== ===== ==================
+ \| APPEND | relative path | cover_page_title             W     *pdf*
+ \| PUBLISH | relative path | *pdf;pdftex;text;html*      W     *pdf, html, txt*
+======================================================== ===== ==================
 
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
 
-**[2]** | APPEND  | - append PDF file
+**[1]** | APPEND  | - append PDF file
 -------------------------------------------
 
 .. raw:: html
@@ -51,7 +40,7 @@ outputs:  PDF
     <p id="api">&lt;i&gt;</p>
 
 
-**[3]** | PUBLISH |  - write doc file
+**[2]** | PUBLISH |  - write doc file
 -------------------------------------------
 
 .. raw:: html

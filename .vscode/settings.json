@@ -10,7 +10,7 @@
     "fsdeploy.deployWorkspaceOnSave": false,
     "fsdeploy.nodes": [
         {
-            "source": "C:/git/git-rivtinfo.github.io",
+            "source": "C:/git/rivtinfo.github.io-git",
             "target": "C:/Users/rodhh/OneDrive/StL-rivt/rivt-info/rivtinfo.github.io",
             "include": "**/*.*",
             "exclude": "**/.git",

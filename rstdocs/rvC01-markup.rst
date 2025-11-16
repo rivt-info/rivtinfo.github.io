@@ -177,6 +177,62 @@ File paths are specified relative to the *report folder* or *rivt file* folder.
 The  typical *rivt report* folder structure is described 
 :doc:`here. <rvD03-folders>`
 
+
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
+
+**[5]** Syntax Key
+----------------------------------
+
+.. raw:: html
+
+    <hr>
+
+_[TAG] : :term:`line tag` description
+
+
+.. topic::  syntax : description
+
+   example
+
+outputs: types of output
+
+
+.. raw:: html
+
+    <hr>
+
+
+_[[TAG]] : :term:`block tag` description
+        
+
+.. topic::  syntax : description
+
+  example
+
+file types
+
+.. raw:: html
+
+    <hr>
+
+**[#]** | Command | : description
+
+
+.. topic:: | COMMAND | relative path | parameters
+
+  example
+
+file types
+
+.. raw:: html
+
+    <hr>
+
+
+
 .. toctree::
     :maxdepth: 1
     :hidden:

@@ -314,7 +314,7 @@
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="rvC02-markup-m.html"><strong>C.2 Metadata - rv.M</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC03-markup-r.html"><strong>C.3 Run - rv.R</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC03-markup-r.html"><strong>C.3 Run API - rv.R</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC04-markup-i.html"><strong>C.4 Insert - rv.I</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC05-markup-v.html"><strong>C.5 Values - rv.V</strong></a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>C.6 Tool - rv.T</strong></a></li>
@@ -386,29 +386,63 @@
 <p>Files processed by the <em>Tools API function</em> are read and written to the
 <em>src/tools</em> folder unless the <em>rvsource</em> variable is set to <em>True</em> in the <em>Meta
 API function</em>. In that case files are read and written to the <em>rivt file</em> folder.</p>
-<p>The <em>Tool API function</em> does not use <em>line tags</em>.</p>
-<p id="api">&lt;i&gt;</p><section id="tag-key">
-<h2><strong>[1]</strong> TAG KEY<a class="headerlink" href="#tag-key" title="Link to this heading">#</a></h2>
-<hr><p>_[[TAG]] : block tag description</p>
-<hr><aside class="topic">
-<p class="topic-title">syntax</p>
-<p>example</p>
-</aside>
-<p>output types</p>
-<p id="api">&lt;i&gt;</p></section>
-<section id="rst-restructuredtext-code">
-<h2><strong>[2]</strong> _[[RST]] : reStructuredText code<a class="headerlink" href="#rst-restructuredtext-code" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[RST]] description
-code
-code
-...
-_[[QUIT]]
-</pre></div>
+<p><strong>Summary</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Block Tags</p></th>
+<th class="head"><p>Description (doc scope)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>_[[PYTHON]] label, <em>rv-space</em>;newspace</p></td>
+<td><p>Python script (all)</p></td>
+</tr>
+<tr class="row-odd"><td><p>_[[LATEX]] label</p></td>
+<td><p>LaTeX markup (pdf)[1]</p></td>
+</tr>
+<tr class="row-even"><td><p>_[[HTML]] label</p></td>
+<td><p>HTML markup (html)</p></td>
+</tr>
+<tr class="row-odd"><td><p>_[[END]]</p></td>
+<td><p>End block (all)</p></td>
+</tr>
+</tbody>
+</table>
 </div>
-<p>outputs: pdf, html</p>
-<p id="api">&lt;i&gt;</p></section>
-<section id="html-html-code">
-<h2><strong>[3]</strong> _[[HTML]] : HTML code<a class="headerlink" href="#html-html-code" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><div class="line-block">
+<div class="line">Command | path | parameters</div>
+</div>
+</th>
+<th class="head"><p>R/W</p></th>
+<th class="head"><p>input types</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>| PYTHON | relative path | <em>rv-namespace</em>; userspace</p></td>
+<td><p>R</p></td>
+<td><p><em>py</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>| HTML | relative path | <em>html</em></p></td>
+<td><p>R</p></td>
+<td><p><em>html</em></p></td>
+</tr>
+<tr class="row-even"><td><p>| LATEX | relative path | <em>pdf</em></p></td>
+<td><p>R</p></td>
+<td><p><em>tex</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>| RST | relative path | <em>pdf;html;both</em></p></td>
+<td><p>R</p></td>
+<td><p><em>rst</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>[1] Values are usually defined in a block where the equation tag (_[E])
+would not apply and will be disregarded.</p>
+<p id="api">&lt;i&gt;</p><section id="html-html-code">
+<h2><strong>[1]</strong> _[[HTML]] : HTML code<a class="headerlink" href="#html-html-code" title="Link to this heading">#</a></h2>
 <hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[HTML]] pdf;nopdf
 code
 code
@@ -422,7 +456,7 @@ number.</p>
 <p>outputs: pdf, html</p>
 <p id="api">&lt;i&gt;</p></section>
 <section id="latex-latex-code">
-<h2><strong>[4]</strong> _[[LATEX]] : LaTeX code<a class="headerlink" href="#latex-latex-code" title="Link to this heading">#</a></h2>
+<h2><strong>[2]</strong> _[[LATEX]] : LaTeX code<a class="headerlink" href="#latex-latex-code" title="Link to this heading">#</a></h2>
 <hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[LATEX]] description
 code
 code
@@ -433,7 +467,7 @@ _[[QUIT]]
 <p>outputs: pdf, html</p>
 <p id="api">&lt;i&gt;</p><p id="api">&lt;i&gt;</p></section>
 <section id="python-python-code">
-<h2><strong>[5]</strong> _[[PYTHON]] : Python code<a class="headerlink" href="#python-python-code" title="Link to this heading">#</a></h2>
+<h2><strong>[3]</strong> _[[PYTHON]] : Python code<a class="headerlink" href="#python-python-code" title="Link to this heading">#</a></h2>
 <hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[PYTHON]] *rv-namespace*; user namespace
 code
 code
@@ -444,17 +478,9 @@ _[[QUIT]]
 <p>Executes Python script in the <em>rivt namespace</em> or a user specified namespace.
 File paths are constucted relative to the <em>rivt file</em> folder.</p>
 <p>outputs: text, pdf, html</p>
-</section>
-<section id="command-key">
-<h2><strong>[6]</strong> COMMAND KEY<a class="headerlink" href="#command-key" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">| COMMAND | parameters</p>
-<p>example</p>
-</aside>
-<p>output file types</p>
 <p id="api">&lt;i&gt;</p></section>
 <section id="rst-restructuredtext-markup">
-<h2><strong>[7]</strong> | RST | reStructuredText markup<a class="headerlink" href="#rst-restructuredtext-markup" title="Link to this heading">#</a></h2>
+<h2><strong>[4]</strong> | RST | reStructuredText markup<a class="headerlink" href="#rst-restructuredtext-markup" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| RST | relative path | description</p>
 <div class="line-block">
@@ -466,7 +492,7 @@ reference only.</p>
 <p>outputs: pdf, html</p>
 <p id="api">&lt;i&gt;</p></section>
 <section id="html-html-markup">
-<h2><strong>[7]</strong> | HTML | HTML markup<a class="headerlink" href="#html-html-markup" title="Link to this heading">#</a></h2>
+<h2><strong>[5]</strong> | HTML | HTML markup<a class="headerlink" href="#html-html-markup" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| HTML | relative path | <em>pdf;nopdf</em></p>
 <div class="line-block">
@@ -479,7 +505,7 @@ PDF report. The file name is derived from the rivt doc and section number.</p>
 <p>outputs: pdf, html</p>
 <p id="api">&lt;i&gt;</p></section>
 <section id="latex-latex-markup">
-<h2><strong>[8]</strong> | LATEX | LaTeX markup<a class="headerlink" href="#latex-latex-markup" title="Link to this heading">#</a></h2>
+<h2><strong>[6]</strong> | LATEX | LaTeX markup<a class="headerlink" href="#latex-latex-markup" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| LATEX | relative path | <em>pdf;nopdf</em></p>
 <div class="line-block">
@@ -492,7 +518,7 @@ derived from the rivt doc and section number.</p>
 <p>outputs: pdf, html</p>
 <p id="api">&lt;i&gt;</p></section>
 <section id="python-python-script">
-<h2><strong>[28]</strong> | PYTHON | Python script<a class="headerlink" href="#python-python-script" title="Link to this heading">#</a></h2>
+<h2><strong>[7]</strong> | PYTHON | Python script<a class="headerlink" href="#python-python-script" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| SCRIPT | rel path |</p>
 <div class="line-block">
@@ -552,16 +578,13 @@ paths are constucted relative to the <em>rivt file</em> folder.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tag-key"><strong>[1]</strong> TAG KEY</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rst-restructuredtext-code"><strong>[2]</strong> _[[RST]] : reStructuredText code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-html-code"><strong>[3]</strong> _[[HTML]] : HTML code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex-latex-code"><strong>[4]</strong> _[[LATEX]] : LaTeX code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-python-code"><strong>[5]</strong> _[[PYTHON]] : Python code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#command-key"><strong>[6]</strong> COMMAND KEY</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rst-restructuredtext-markup"><strong>[7]</strong> | RST | reStructuredText markup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-html-markup"><strong>[7]</strong> | HTML | HTML markup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex-latex-markup"><strong>[8]</strong> | LATEX | LaTeX markup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-python-script"><strong>[28]</strong> | PYTHON | Python script</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-html-code"><strong>[1]</strong> _[[HTML]] : HTML code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex-latex-code"><strong>[2]</strong> _[[LATEX]] : LaTeX code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-python-code"><strong>[3]</strong> _[[PYTHON]] : Python code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rst-restructuredtext-markup"><strong>[4]</strong> | RST | reStructuredText markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-html-markup"><strong>[5]</strong> | HTML | HTML markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex-latex-markup"><strong>[6]</strong> | LATEX | LaTeX markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-python-script"><strong>[7]</strong> | PYTHON | Python script</a></li>
 </ul>
   </nav></div>
 

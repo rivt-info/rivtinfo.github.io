@@ -5,59 +5,36 @@ Files processed by the *Tools API function* are read and written to the
 *src/tools* folder unless the *rvsource* variable is set to *True* in the *Meta
 API function*. In that case files are read and written to the *rivt file* folder.
 
-The *Tool API function* does not use *line tags*.
+**Summary**
 
-.. raw:: html
+======================================= ==============================
+       Block Tags                        Description (doc scope)
+======================================= ==============================
+ _[[PYTHON]] label, *rv-space*;newspace  Python script (all)
+ _[[LATEX]] label                        LaTeX markup (pdf)[1]
+ _[[HTML]] label                         HTML markup (html)
+ _[[END]]                                End block (all)
+======================================= ==============================
 
-    <p id="api">&lt;i&gt;</p>
 
+======================================================== ===== =================
+         | Command | path | parameters                    R/W   input types
+======================================================== ===== =================
+ \| PYTHON | relative path | *rv-namespace*; userspace    R     *py*
+ \| HTML | relative path | *html*                         R     *html*
+ \| LATEX | relative path | *pdf*                         R     *tex*
+ \| RST | relative path | *pdf;html;both*                 R     *rst*
+======================================================== ===== =================
 
-**[1]** TAG KEY
---------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-_[[TAG]] : block tag description
-
-.. raw:: html
-
-    <hr>
-
-.. topic::  syntax
-
-    example
-
-output types
+[1] Values are usually defined in a block where the equation tag (_[E]) 
+would not apply and will be disregarded.
 
 
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
 
-**[2]** _[[RST]] : reStructuredText code
-------------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. code-block:: text 
-        
-     _[[RST]] description
-     code
-     code
-     ...
-     _[[QUIT]]
-   
-outputs: pdf, html
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[3]** _[[HTML]] : HTML code
+**[1]** _[[HTML]] : HTML code
 ------------------------------------------------
 
 .. raw:: html
@@ -82,7 +59,7 @@ outputs: pdf, html
 
     <p id="api">&lt;i&gt;</p>
 
-**[4]** _[[LATEX]] : LaTeX code
+**[2]** _[[LATEX]] : LaTeX code
 ------------------------------------------------
 
 .. raw:: html
@@ -108,7 +85,7 @@ outputs: pdf, html
 
     <p id="api">&lt;i&gt;</p>
 
-**[5]** _[[PYTHON]] : Python code
+**[3]** _[[PYTHON]] : Python code
 ------------------------------------------------
 
 .. raw:: html
@@ -129,24 +106,11 @@ File paths are constucted relative to the *rivt file* folder.
 
 outputs: text, pdf, html
 
-**[6]** COMMAND KEY
-----------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: | COMMAND | parameters
-
-    example
-
-output file types
-
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
 
-**[7]** | RST | reStructuredText markup
+**[4]** | RST | reStructuredText markup
 -------------------------------------------
 
 .. raw:: html
@@ -167,7 +131,7 @@ outputs: pdf, html
 
     <p id="api">&lt;i&gt;</p>
 
-**[7]** | HTML | HTML markup
+**[5]** | HTML | HTML markup
 -------------------------------------------
 
 .. raw:: html
@@ -188,7 +152,7 @@ outputs: pdf, html
 
     <p id="api">&lt;i&gt;</p>
 
-**[8]** | LATEX | LaTeX markup
+**[6]** | LATEX | LaTeX markup
 -------------------------------------------
 
 .. raw:: html
@@ -211,7 +175,7 @@ outputs: pdf, html
 
 
 
-**[28]** | PYTHON | Python script
+**[7]** | PYTHON | Python script
 -------------------------------------------
 
 .. raw:: html

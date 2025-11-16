@@ -1,32 +1,31 @@
-**C.3 Run - rv.R**
+**C.3 Run API - rv.R**
 ==========================
 
-Only block tags are used in *rv.R*.
+**Summary**
+
+======================================= ==============================
+       Block Tags                        Description (doc scope)
+======================================= ==============================
+ _[[AUTH]] label                         author data (all)
+ _[[WIN]] label, *wait;nowait*           Windows command script (all)
+ _[[MACOS]] label, *wait;nowait*         Mac shell script (all)
+ _[[LINUX]] label, *wait;nowait*         Linux shell script (all)
+======================================= ==============================
+
+======================================================== ===== ==================
+         | Command | path | parameters                    R/W   input types
+======================================================== ===== ==================
+ \| LINUX | relative path | *wait;nowait*                 R     *.sh*
+ \| MACOS | relative path | *wait;nowait*                 R     *.sh*
+ \| WIN   | relative path | *wait;nowait*                 R     *.bat, .cmd*
+======================================================== ===== ==================
 
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
 
-
-**[1]** TAG KEY
-----------------------------------
-
-.. raw:: html
-
-    <hr>
-
-
-_[[TAG]] : :term:`block tag` description
-        
-.. raw:: html
-
-    <hr>
-
-.. topic::  syntax : description
-
-  example
-
-file types
+**[1]** **Block Tags**
+------------------------------------
 
 .. raw:: html
 
@@ -100,38 +99,8 @@ text, pdf, html
 
     <p id="api">&lt;i&gt;</p>
 
-**[5]** COMMAND KEY
-----------------------
 
-.. raw:: html
-
-    <hr>
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-
-**[#]** | Command | : description
-
-
-.. raw:: html
-
-    <hr>
-
-
-.. topic:: | COMMAND | relative path | parameters
-
-  example
-
-file types
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-
-**[6]** | WIN | - command script
+**[5]** | WIN | - command script
 -------------------------------------------
 
 .. raw:: html
@@ -144,15 +113,13 @@ file types
   | WIN | src/run/file.cmd | nowait
 
 
-
-
 reads .txt, .cmd, .bat  files
 
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
 
-**[7]** | MACOS | - shell script
+**[6]** | MACOS | - shell script
 -------------------------------------------
 
 .. raw:: html
@@ -170,7 +137,7 @@ reads .sh files
 
     <p id="api">&lt;i&gt;</p>
 
-**[8]** | LINUX | - shell script
+**[7]** | LINUX | - shell script
 -------------------------------------------
 
 .. raw:: html

@@ -1,50 +1,55 @@
 **C.4 Insert - rv.I**
 ========================
 
+**Summary**
+
+============================= =======================================
+        Line Tags              Description (doc scope)
+============================= =======================================
+    text _[#]                  endnote number (all)
+    text _[C]                  center text (all)
+    text _[R]                  right justify text (all)
+    math _[L]                  format LaTeX math (all) 
+    math _[A]                  format ASCII math (all) 
+   label _[E]                  equation number and label (all)
+ caption _[I]                  image number and caption (all)[1]
+   title _[T]                  table number and title (all)[1]
+    text _[S] section link     link section within doc (all)
+    text _[D] report link      link doc within report (all)
+    text _[U] external url     external url link (all)
+    \-\-\-\-\-                 >4 dashes inserts line (all)[2]
+    \=\=\=\=\=                 >4 underscores inserts page (all)[2]
+============================= =======================================
+
+[1] tag may be added to the label parameter in the IMAGE and TABLE commands
+
+[2] must start in first indented column (absolute column 4)
+
+======================================= ==============================
+       Block Tags                        Description (doc scope)
+======================================= ==============================
+ _[[INDENT]] spaces (4 default)          Indent (all)
+ _[[ITALIC]] spaces (4 default)          Italic indent - (all)
+ _[[NOTES]] optional label               Endnote descriptions (all)
+ _[[TEXT]] optional language             *literal*, code (all)
+ _[[TOPIC]] topic                        Topic (all)
+ _[[END]]                                End block (all)
+======================================= ==============================
+
+======================================================== ===== ==================
+         | Command | path | parameters                    R/W   input types
+======================================================== ===== ==================
+ \| IMAGE | relative path |  scale, caption (_[I])        R     *.png, .jpg*
+ \| IMAGE2 | relative path | s1, s2, c1, c2 (_[I])        R     *.png, jpg*
+ \| TABLE | relative path | width, l;c;r, title           R     *csv, txt, xlsx*
+ \| TEXT | relative path |  *normal;literal* ;code        R     *txt, code*
+======================================================== ===== ==================
+
+
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
 
-**[1]** **TAG KEY**
---------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-*line tags* format a line of text and are denoted with _[TAG] at the end of the
-line. *Block tags* format a block of text that begin with _[[TAG]] on the first
-line and end with _[[Q]] after the last line.
-
-_[TAG] : line tag description
-
-.. raw:: html
-
-    <hr>
-
-.. topic::  syntax : description
-
-   example
-
-outputs: types of output
-
-
-_[[TAG]] : block tag description
-        
-.. topic::  syntax : description
-
-    example
-
-outputs: types of output
-
-
-.. raw:: html
-
-    <hr>
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 **[2]** _[#] : endnote number
 -------------------------------------

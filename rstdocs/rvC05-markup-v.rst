@@ -1,46 +1,61 @@
 **C.5 Values - rv.V**
 ========================
 
-.. raw:: html
+**Summary**
 
-    <p id="api">&lt;i&gt;</p>
+============================= =======================================
+        Line Tags              Description (doc scope)
+============================= =======================================
+    text _[#]                  endnote number (all)
+    text _[C]                  center text (all)
+    text _[R]                  right justify text (all)
+    math _[L]                  format LaTeX math (all) 
+    math _[A]                  format ASCII math (all) 
+   label _[E]                  equation number and label (all)
+ caption _[I]                  image number and caption (all)[1]
+   title _[T]                  table number and title (all)[1]
+    text _[S] section link     link section within doc (all)
+    text _[D] report link      link doc within report (all)
+    text _[U] external url     external url link (all)
+    \-\-\-\-\-                 >4 dashes inserts line (all)[2]
+    \=\=\=\=\=                 >4 underscores inserts page (all)[2]
+============================= =======================================
 
-**[1]** **TAG KEY**
---------------------------------------
+[1] tag may be added to the label parameter in the IMAGE and TABLE commands
 
-.. raw:: html
-
-    <hr>
-
-*line tags* format a line of text and are denoted with _[TAG] at the end of the
-line. *Block tags* format a block of text that begin with _[[TAG]] on the first
-line and end with _[[Q]] after the last line.
-
-_[TAG] : line tag description
-
-.. raw:: html
-
-    <hr>
-
-.. topic::  syntax : description
-
-   example
-
-outputs: types of output
+[2] must start in first indented column (absolute column 4)
 
 
-_[[TAG]] : block tag description
-        
-.. topic::  syntax : description
+======================================= ==============================
+       Block Tags                        Description (doc scope)
+======================================= ==============================
+ _[[INDENT]] spaces (4 default)          Indent (all)
+ _[[ITALIC]] spaces (4 default)          Italic indent - (all)
+ _[[NOTES]] optional label               Endnote descriptions (all)
+ _[[TEXT]] optional language             *literal*, code (all)
+ _[[TOPIC]] topic                        Topic (all)
+ _[[VALUES]] table title (_[T])          Define values(all)
+======================================= ==============================
 
-    example
-
-outputs: types of output
+[1] LaTeX processing requires the installation of *Texlive*
 
 
-.. raw:: html
+======================================================== ===== ==================
+         | Command | path | parameters                    R/W   input types
+======================================================== ===== ==================
+ \| IMAGE | relative path |  scale, caption (_[I])        R     *.png, .jpg*
+ \| IMAGE2 | relative path | s1, s2, c1, c2 (_[I])        R     *.png, jpg*
+ \| TABLE | relative path | width, l;c;r, title           R     *csv, txt, xlsx*
+ \| TEXT | relative path |  *normal;literal* ;code        R     *txt, code*
+ \| VALUES | relative path | *visible;hide* (_[T])        R     *csv*
+a := 1*IN  | unit1, unit2, decimal | descrip (_[E])[1]    W     define a value
+b <= a + 3*FT | unit1, unit2, decimal | descrip (_[E])    W     assign a value
+c <= func1(x,y) | unit1, unit2, decimal | descrip (_[E])  W     assign a value
+======================================================== ===== ==================
 
-    <hr>
+[1] Values are usually defined in a block where the equation tag (_[E]) 
+would not apply and will be disregarded.
+
 
 .. raw:: html
 
@@ -434,25 +449,6 @@ Indents text four spaces.
 Formats a highlighted block.
 
 outputs: pdf, html
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[20]** **COMMAND KEY**
----------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: | COMMAND | relative path | parameters
-
-  example
-
-Commands read and write files. The relative path is relative to the *rivt file*.
-
-outputs: types of outputs
 
 
 .. raw:: html
