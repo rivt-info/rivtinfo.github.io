@@ -68,15 +68,15 @@ An example *report* folder structure is shown below.
 
 .. raw:: html
 
-    <p style="border-width:3px; border-style:solid; 
-    border-color:#FF0000;padding: 1em;">
+    <p style="border-width:2px; border-style:solid; 
+    border-color:#29313c;padding: 1em;">
 
     Explicit folder and file names and prefixes are shown in brackets [ ]. <br>
-    
-    Folders (including subfolders) containing author generated files 
+    <br>
+    Folders (including subfolders) that contain author generated files 
     are marked with a single vertical bar ( | ).<br>  
-    
-    Folders (including subfolders) containing rivtlib generated files are 
+    <br>
+    Folders (including subfolders) that contain *rivtlib* generated files are 
     marked with double vertical bars ( || ).</p>
 
 
