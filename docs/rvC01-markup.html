@@ -382,24 +382,24 @@
 <h1><strong>C.1 Markup</strong><a class="headerlink" href="#c-1-markup" title="Link to this heading">#</a></h1>
 <p id="api">&lt;i&gt;</p><section id="rivt-string">
 <h2><strong>[1]</strong> rivt String<a class="headerlink" href="#rivt-string" title="Link to this heading">#</a></h2>
-<hr><p><a class="reference internal" href="rvA02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> is a readable, plain text language that generates
-formatted text, PDF or HTML <a class="reference internal" href="rvA02-terms.html#term-docs"><span class="xref std std-term">docs</span></a> from the same <em>rivt file</em>. The markup
-is included in a <em>rivt string</em> - a utf-8 text string argument of a
-<a class="reference internal" href="rvA01-intro.html"><span class="doc">API function</span></a>.</p>
-<p>The API function and header start in the first column (standard Python syntax),
-with subsequent lines indented 4 spaces for improved readability and section
-folding in IDEs.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | print;hide, private;public, section;merge</span>
+<hr><p>A <a class="reference internal" href="rvA02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a>  is a utf-8 text triple quoted string argument to an
+<a class="reference internal" href="rvA01-intro.html"><span class="doc">API function</span></a>. It may include <a class="reference internal" href="rvA02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a>,
+a readable, plain text language that generates formatted text, PDF or
+HTML <a class="reference internal" href="rvA02-terms.html#term-docs"><span class="xref std std-term">docs</span></a>. The different <em>doc</em> types are generated from the
+same <em>rivt file</em>.</p>
+<p>The first line of a <em>rivt string</em> is a header, followed by lines that are
+indented 4 spaces for improved readability and section folding.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | print;noprint, private;public, section;merge</span>
 
 <span class="s2">    section text (utf-8 text)</span>
-<span class="s2">    ...</span>
+
 <span class="s2">    ...</span>
 
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The <a class="reference internal" href="rvA02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> begins with a <em>section header</em> that includes a “section
-label” and parameters that define the section behavior.</p>
+<p>The <em>rivt string</em> begins with an <em>API header</em> that includes a “section
+label” and section formatting parameters.</p>
 <p id="api">&lt;i&gt;</p></section>
 <section id="api-header">
 <h2><strong>[2]</strong> API Header<a class="headerlink" href="#api-header" title="Link to this heading">#</a></h2>
@@ -407,19 +407,19 @@ label” and parameters that define the section behavior.</p>
 separator bar and comma separtaed <em>section parameters</em> that may override the
 default behavior. The <em>section label</em> is the section title. <em>Header</em>
 paramaters include the following:</p>
-<ul class="simple">
+<ul>
 <li><dl class="simple">
 <dt>private/public<span class="classifier">determines whether the API markup is copied to the</span></dt><dd><p><em>rivt file</em> in the <em>/public</em> folder intended for sharing.</p>
 </dd>
 </dl>
 </li>
-<li><dl class="simple">
-<dt>show/hide<span class="classifier">determines whether the API markup is formatted and shown</span></dt><dd><p>in the output doc.</p>
+<li><dl>
+<dt>print/noprint<span class="classifier">determines whether the <em>rivt string</em> is formatted and printn</span></dt><dd><p>in the doc or just annotated.</p>
 </dd>
 </dl>
 </li>
-<li><dl class="simple">
-<dt>section/merge<span class="classifier">determines whether the API markup starts a new section</span></dt><dd><p>in the output doc or is merged into the previous section.</p>
+<li><dl>
+<dt>section/merge<span class="classifier">determines whether the API starts a new <em>doc</em> section</span></dt><dd><p>or is merged into the previous section.</p>
 </dd>
 </dl>
 </li>
@@ -430,59 +430,59 @@ below, the default setting for each API is listed first in bold.</p>
 <thead>
 <tr class="row-odd"><th class="head"><p>API</p></th>
 <th class="head"><p>private/public</p></th>
-<th class="head"><p>show/hide</p></th>
+<th class="head"><p>print/noprint</p></th>
 <th class="head"><p>section/merge</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>rv.M</p></td>
 <td><p><strong>private</strong>; public</p></td>
-<td><p><strong>hide</strong>; show</p></td>
+<td><p><strong>noprint</strong>; print</p></td>
 <td><p><strong>merge</strong>; section</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.R</p></td>
 <td><p><strong>private</strong>; public</p></td>
-<td><p><strong>hide</strong>; show</p></td>
+<td><p><strong>noprint</strong>; print</p></td>
 <td><p><strong>merge</strong>; section</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I</p></td>
 <td><p><strong>private</strong>; public</p></td>
-<td><p><strong>show</strong>; hide</p></td>
+<td><p><strong>print</strong>; noprint</p></td>
 <td><p><strong>section</strong>; merge</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V</p></td>
 <td><p><strong>private</strong>; public</p></td>
-<td><p><strong>show</strong>; hide</p></td>
+<td><p><strong>print</strong>; noprint</p></td>
 <td><p><strong>section</strong>; merge</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.T</p></td>
 <td><p><strong>private</strong>; public</p></td>
-<td><p><strong>hide</strong>; show</p></td>
+<td><p><strong>noprint</strong>; print</p></td>
 <td><p><strong>merge</strong>; section</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.D</p></td>
 <td><p><strong>private</strong>; public</p></td>
-<td><p><strong>hide</strong>; show</p></td>
+<td><p><strong>noprint</strong>; print</p></td>
 <td><p><strong>merge</strong>; section</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.S</p></td>
 <td><p><strong>private</strong>; public</p></td>
-<td><p><strong>hide</strong>; show</p></td>
+<td><p><strong>noprint</strong>; print</p></td>
 <td><p><strong>merge</strong>; section</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.Q</p></td>
 <td><p><strong>private</strong>; public</p></td>
-<td><p><strong>hide</strong>; show</p></td>
+<td><p><strong>noprint</strong>; print</p></td>
 <td><p><strong>merge</strong>; section</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <p>Examples of <em>header</em> settings are shown below.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;A New Section | private, show, section</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;A New Section | private, print, section</span>
 
 <span class="s2">    section content (utf-8 text)</span>
-<span class="s2">    ...</span>
+
 <span class="s2">    ...</span>
 
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
@@ -493,7 +493,7 @@ equivalent:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;A New Section</span>
 
 <span class="s2">    section content (utf-8 text)</span>
-<span class="s2">    ...</span>
+
 <span class="s2">    ...</span>
 
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>

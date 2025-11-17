@@ -102,32 +102,32 @@ document. Reports are organized assemblies of *docs*.
 
     <hr>
 
-=============== =============== ===================================
+=============== =============== ===========================================
 API Function        Name             Purpose
-=============== =============== ===================================
+=============== =============== ===========================================
+rv.M(rS)           Meta              Meta data 
 rv.R(rS)           Run               Run shell commands
 rv.I(rS)           Insert            Insert static resources 
 rv.V(rS)           Value             Calculate values
-rv.T(rS)           Tool              Run Python functions
-rv.M(rS)           Meta              Meta data 
+rv.T(rS)           Tool              Import Python and Markup functions
 rv.D(rS)           Doc               Publish docs 
 rv.S(rS)           Skip              Skip section
-rv.Q(rS)           Quit              Exit rivt 
-=============== =============== ===================================
+rv.X(rS)           Quit              Exit rivt 
+=============== =============== ===========================================
 
-The first four API functions (**R I V T**) output formatted utf-8 text to the
+Each function takes a single *rivt string* (triple quoted string) argument.
+
+The four content functions (**R I V T**) output formatted utf-8 text to the
 terminal and generate *doc* content. The *Run API* executes shell commands.
-The *Insert API* adds static table, image, equation and text content. The
+The *Insert API* adds table, image, equation and text (static) content. The
 *Value API* evaluates equations and functions. The *Tool API* extends *rivt* by
-processing raw HTML, LaTeX, reStructuredText and Python scripts.
+importing and processing raw HTML, LaTeX, and Python scripts.
 
-The last four API functions (**M D S Q**) are related to processing and output.
-The *Meta* function contains *rivt file* author and version information and
+The four processing functions (**M D S Q**) are related to processing and output.
+The *Meta* function specifies *rivt file* author and version information and
 sets processing variables. The *Doc* function controls publishing formatted
-dcouments (*doc* files) as text, PDF or HTML . The *Skip* and *Quit* functions
+dcouments (*doc* files) as text, PDF or HTML . The *Skip* and *Exit* functions
 are used for interactive editing and debugging.
-
-Each function takes a single triple quoted string argument.
 
 .. raw:: html
 

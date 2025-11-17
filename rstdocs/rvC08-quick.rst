@@ -5,8 +5,63 @@
 
     <p id="api">&lt;i&gt;</p>
 
-**[1]** Meta API Settings
---------------------------
+
+**[1]** API 
+--------------------------------------------------------------------- 
+
+.. raw:: html
+
+    <hr>
+
+The API defines *doc* content and properties.
+
+=============== =============== ========================================
+API Function        Name             Purpose
+=============== =============== ========================================
+rv.M(rS)           Meta              Meta data 
+rv.R(rS)           Run               Run shell commands
+rv.I(rS)           Insert            Insert static resources 
+rv.V(rS)           Value             Calculate values
+rv.T(rS)           Tool              Import Python and Markup functions
+rv.D(rS)           Doc               Publish docs 
+rv.S(rS)           Skip              Skip section
+rv.X(rS)           Quit              Exit rivt 
+=============== =============== ========================================
+
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
+
+**[2]** API Header
+----------------------- 
+
+.. raw:: html
+
+    <hr>
+
+:term:`API headers` determine overall section processing.
+
+========== ===================== ==================== =====================
+API          private/public        print/noprint           section/merge         
+========== ===================== ==================== ===================== 
+rv.M        **private**; public   **noprint**; print   **merge**; section
+rv.R        **private**; public   **noprint**; print   **merge**; section
+rv.I        **private**; public   **print**; noprint   **section**; merge   
+rv.V        **private**; public   **print**; noprint   **section**; merge    
+rv.T        **private**; public   **noprint**; print   **merge**; section
+rv.D        **private**; public   **noprint**; print   **merge**; section
+rv.S        **private**; public   **noprint**; print   **merge**; section
+rv.Q        **private**; public   **noprint**; print   **merge**; section
+========== ===================== ==================== ===================== 
+
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
+
+**[3]** Meta API 
+-------------------
 
 .. raw:: html
 
@@ -74,47 +129,7 @@ It is always the first *API function* if used.
 
     <p id="api">&lt;i&gt;</p>
 
-**[2]** API Headers
---------------------
-
-.. raw:: html
-
-    <hr>
-
-:term:`API headers` determine overall section processing.
-
-- private/public 
-    Determines whether the API markup is copied to the *rivt file* in the
-    */public* folder for upload to a *public repo*.
-
-- show/hide
-    Determines whether the API markup output is shown in the *doc*.
-
-- section/merge
-    Determines whether the API markup starts a new *doc* section or merges it
-    with the previous section.
-
-In the table below, the default setting for each API is listed first, in bold.
-If default settings apply they do not need to be specified in the *header*. 
-
-========== ===================== ================= =====================
-API          private/public        show/hide           section/merge         
-========== ===================== ================= ===================== 
-rv.M        **private**; public   **hide**; show     **merge**; section
-rv.R        **private**; public   **hide**; show     **merge**; section
-rv.I        **private**; public   **show**; hide     **section**; merge   
-rv.V        **private**; public   **show**; hide     **section**; merge    
-rv.T        **private**; public   **hide**; show     **merge**; section
-rv.D        **private**; public   **hide**; show     **merge**; section
-rv.S        **private**; public   **hide**; show     **merge**; section
-rv.Q        **private**; public   **hide**; show     **merge**; section
-========== ===================== ================= ===================== 
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[3]** Tags
+**[4]** Tags
 ----------------------
 
 .. raw:: html
@@ -177,7 +192,7 @@ all         _[[END]]                                End block (all)
 
     <p id="api">&lt;i&gt;</p>
 
-**[4]** Commands
+**[5]** Commands
 -------------------
 
 .. raw:: html

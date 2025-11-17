@@ -512,25 +512,25 @@ document. Reports are organized assemblies of <em>docs</em>.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>rv.R(rS)</p></td>
-<td><p>Run</p></td>
-<td><p>Run shell commands</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I(rS)</p></td>
-<td><p>Insert</p></td>
-<td><p>Insert static resources</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.V(rS)</p></td>
-<td><p>Value</p></td>
-<td><p>Calculate values</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.T(rS)</p></td>
-<td><p>Tool</p></td>
-<td><p>Run Python functions</p></td>
-</tr>
 <tr class="row-even"><td><p>rv.M(rS)</p></td>
 <td><p>Meta</p></td>
 <td><p>Meta data</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.R(rS)</p></td>
+<td><p>Run</p></td>
+<td><p>Run shell commands</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.I(rS)</p></td>
+<td><p>Insert</p></td>
+<td><p>Insert static resources</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.V(rS)</p></td>
+<td><p>Value</p></td>
+<td><p>Calculate values</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.T(rS)</p></td>
+<td><p>Tool</p></td>
+<td><p>Import Python and Markup functions</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.D(rS)</p></td>
 <td><p>Doc</p></td>
@@ -540,24 +540,24 @@ document. Reports are organized assemblies of <em>docs</em>.</p>
 <td><p>Skip</p></td>
 <td><p>Skip section</p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.Q(rS)</p></td>
+<tr class="row-odd"><td><p>rv.X(rS)</p></td>
 <td><p>Quit</p></td>
 <td><p>Exit rivt</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>The first four API functions (<strong>R I V T</strong>) output formatted utf-8 text to the
+<p>Each function takes a single <em>rivt string</em> (triple quoted string) argument.</p>
+<p>The four content functions (<strong>R I V T</strong>) output formatted utf-8 text to the
 terminal and generate <em>doc</em> content. The <em>Run API</em> executes shell commands.
-The <em>Insert API</em> adds static table, image, equation and text content. The
+The <em>Insert API</em> adds table, image, equation and text (static) content. The
 <em>Value API</em> evaluates equations and functions. The <em>Tool API</em> extends <em>rivt</em> by
-processing raw HTML, LaTeX, reStructuredText and Python scripts.</p>
-<p>The last four API functions (<strong>M D S Q</strong>) are related to processing and output.
-The <em>Meta</em> function contains <em>rivt file</em> author and version information and
+importing and processing raw HTML, LaTeX, and Python scripts.</p>
+<p>The four processing functions (<strong>M D S Q</strong>) are related to processing and output.
+The <em>Meta</em> function specifies <em>rivt file</em> author and version information and
 sets processing variables. The <em>Doc</em> function controls publishing formatted
-dcouments (<em>doc</em> files) as text, PDF or HTML . The <em>Skip</em> and <em>Quit</em> functions
+dcouments (<em>doc</em> files) as text, PDF or HTML . The <em>Skip</em> and <em>Exit</em> functions
 are used for interactive editing and debugging.</p>
-<p>Each function takes a single triple quoted string argument.</p>
 <p id="api">&lt;i&gt;</p></section>
 <section id="rivt-strings">
 <h2><strong>[4]</strong> rivt Strings<a class="headerlink" href="#rivt-strings" title="Link to this heading">#</a></h2>

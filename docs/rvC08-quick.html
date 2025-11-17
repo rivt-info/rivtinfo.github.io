@@ -383,8 +383,111 @@
                   
   <section id="c-8-quick-lookup">
 <h1><strong>C.8 Quick Lookup</strong><a class="headerlink" href="#c-8-quick-lookup" title="Link to this heading">#</a></h1>
-<p id="api">&lt;i&gt;</p><section id="meta-api-settings">
-<h2><strong>[1]</strong> Meta API Settings<a class="headerlink" href="#meta-api-settings" title="Link to this heading">#</a></h2>
+<p id="api">&lt;i&gt;</p><section id="api">
+<h2><strong>[1]</strong> API<a class="headerlink" href="#api" title="Link to this heading">#</a></h2>
+<hr><p>The API defines <em>doc</em> content and properties.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>API Function</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Purpose</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>rv.M(rS)</p></td>
+<td><p>Meta</p></td>
+<td><p>Meta data</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.R(rS)</p></td>
+<td><p>Run</p></td>
+<td><p>Run shell commands</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.I(rS)</p></td>
+<td><p>Insert</p></td>
+<td><p>Insert static resources</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.V(rS)</p></td>
+<td><p>Value</p></td>
+<td><p>Calculate values</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.T(rS)</p></td>
+<td><p>Tool</p></td>
+<td><p>Import Python and Markup functions</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.D(rS)</p></td>
+<td><p>Doc</p></td>
+<td><p>Publish docs</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.S(rS)</p></td>
+<td><p>Skip</p></td>
+<td><p>Skip section</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.X(rS)</p></td>
+<td><p>Quit</p></td>
+<td><p>Exit rivt</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p id="api">&lt;i&gt;</p></section>
+<section id="api-header">
+<h2><strong>[2]</strong> API Header<a class="headerlink" href="#api-header" title="Link to this heading">#</a></h2>
+<hr><p><a class="reference internal" href="rvA02-terms.html#term-API-headers"><span class="xref std std-term">API headers</span></a> determine overall section processing.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>API</p></th>
+<th class="head"><p>private/public</p></th>
+<th class="head"><p>print/noprint</p></th>
+<th class="head"><p>section/merge</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>rv.M</p></td>
+<td><p><strong>private</strong>; public</p></td>
+<td><p><strong>noprint</strong>; print</p></td>
+<td><p><strong>merge</strong>; section</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.R</p></td>
+<td><p><strong>private</strong>; public</p></td>
+<td><p><strong>noprint</strong>; print</p></td>
+<td><p><strong>merge</strong>; section</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.I</p></td>
+<td><p><strong>private</strong>; public</p></td>
+<td><p><strong>print</strong>; noprint</p></td>
+<td><p><strong>section</strong>; merge</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.V</p></td>
+<td><p><strong>private</strong>; public</p></td>
+<td><p><strong>print</strong>; noprint</p></td>
+<td><p><strong>section</strong>; merge</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.T</p></td>
+<td><p><strong>private</strong>; public</p></td>
+<td><p><strong>noprint</strong>; print</p></td>
+<td><p><strong>merge</strong>; section</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.D</p></td>
+<td><p><strong>private</strong>; public</p></td>
+<td><p><strong>noprint</strong>; print</p></td>
+<td><p><strong>merge</strong>; section</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.S</p></td>
+<td><p><strong>private</strong>; public</p></td>
+<td><p><strong>noprint</strong>; print</p></td>
+<td><p><strong>merge</strong>; section</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.Q</p></td>
+<td><p><strong>private</strong>; public</p></td>
+<td><p><strong>noprint</strong>; print</p></td>
+<td><p><strong>merge</strong>; section</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p id="api">&lt;i&gt;</p></section>
+<section id="meta-api">
+<h2><strong>[3]</strong> Meta API<a class="headerlink" href="#meta-api" title="Link to this heading">#</a></h2>
 <hr><p>The <em>Meta</em> API function sets and overrides processing parameters for the <em>doc</em>.
 It is always the first <em>API function</em> if used.</p>
 <ul class="simple">
@@ -449,85 +552,8 @@ and lists the forks. <em>rv_forknD</em> specifies data for the forked file. The
 </pre></div>
 </div>
 <p id="api">&lt;i&gt;</p></section>
-<section id="api-headers">
-<h2><strong>[2]</strong> API Headers<a class="headerlink" href="#api-headers" title="Link to this heading">#</a></h2>
-<hr><p><a class="reference internal" href="rvA02-terms.html#term-API-headers"><span class="xref std std-term">API headers</span></a> determine overall section processing.</p>
-<ul class="simple">
-<li><dl class="simple">
-<dt>private/public</dt><dd><p>Determines whether the API markup is copied to the <em>rivt file</em> in the
-<em>/public</em> folder for upload to a <em>public repo</em>.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>show/hide</dt><dd><p>Determines whether the API markup output is shown in the <em>doc</em>.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>section/merge</dt><dd><p>Determines whether the API markup starts a new <em>doc</em> section or merges it
-with the previous section.</p>
-</dd>
-</dl>
-</li>
-</ul>
-<p>In the table below, the default setting for each API is listed first, in bold.
-If default settings apply they do not need to be specified in the <em>header</em>.</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>API</p></th>
-<th class="head"><p>private/public</p></th>
-<th class="head"><p>show/hide</p></th>
-<th class="head"><p>section/merge</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>rv.M</p></td>
-<td><p><strong>private</strong>; public</p></td>
-<td><p><strong>hide</strong>; show</p></td>
-<td><p><strong>merge</strong>; section</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.R</p></td>
-<td><p><strong>private</strong>; public</p></td>
-<td><p><strong>hide</strong>; show</p></td>
-<td><p><strong>merge</strong>; section</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p><strong>private</strong>; public</p></td>
-<td><p><strong>show</strong>; hide</p></td>
-<td><p><strong>section</strong>; merge</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.V</p></td>
-<td><p><strong>private</strong>; public</p></td>
-<td><p><strong>show</strong>; hide</p></td>
-<td><p><strong>section</strong>; merge</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.T</p></td>
-<td><p><strong>private</strong>; public</p></td>
-<td><p><strong>hide</strong>; show</p></td>
-<td><p><strong>merge</strong>; section</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.D</p></td>
-<td><p><strong>private</strong>; public</p></td>
-<td><p><strong>hide</strong>; show</p></td>
-<td><p><strong>merge</strong>; section</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.S</p></td>
-<td><p><strong>private</strong>; public</p></td>
-<td><p><strong>hide</strong>; show</p></td>
-<td><p><strong>merge</strong>; section</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.Q</p></td>
-<td><p><strong>private</strong>; public</p></td>
-<td><p><strong>hide</strong>; show</p></td>
-<td><p><strong>merge</strong>; section</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p id="api">&lt;i&gt;</p></section>
 <section id="tags">
-<h2><strong>[3]</strong> Tags<a class="headerlink" href="#tags" title="Link to this heading">#</a></h2>
+<h2><strong>[4]</strong> Tags<a class="headerlink" href="#tags" title="Link to this heading">#</a></h2>
 <hr>
 <p style="text-align: right;"> &lt;i&gt; </p><p>Tags format lines and blocks of text.</p>
 <p><strong>Line Tags</strong></p>
@@ -667,7 +693,7 @@ If default settings apply they do not need to be specified in the <em>header</em
 <p>[1] LaTeX processing requires the installation of <em>Texlive</em></p>
 <p id="api">&lt;i&gt;</p></section>
 <section id="commands">
-<h2><strong>[4]</strong> Commands<a class="headerlink" href="#commands" title="Link to this heading">#</a></h2>
+<h2><strong>[5]</strong> Commands<a class="headerlink" href="#commands" title="Link to this heading">#</a></h2>
 <hr><p>Commands read, write and format files.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -959,10 +985,11 @@ would not apply and will be disregarded.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#meta-api-settings"><strong>[1]</strong> Meta API Settings</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api-headers"><strong>[2]</strong> API Headers</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tags"><strong>[3]</strong> Tags</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#commands"><strong>[4]</strong> Commands</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api"><strong>[1]</strong> API</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api-header"><strong>[2]</strong> API Header</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#meta-api"><strong>[3]</strong> Meta API</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tags"><strong>[4]</strong> Tags</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#commands"><strong>[5]</strong> Commands</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#folders"><strong>[5]</strong> Folders</a></li>
 </ul>
   </nav></div>

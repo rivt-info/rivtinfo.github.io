@@ -13,34 +13,34 @@
 
     <hr>
 
-:term:`rivt markup` is a readable, plain text language that generates
-formatted text, PDF or HTML :term:`docs` from the same *rivt file*. The markup
-is included in a *rivt string* - a utf-8 text string argument of a 
-:doc:`API function<rvA01-intro>`.
+A :term:`rivt string`  is a utf-8 text triple quoted string argument to an 
+:doc:`API function <rvA01-intro>`. It may include :term:`rivt markup`, 
+a readable, plain text language that generates formatted text, PDF or 
+HTML :term:`docs`. The different *doc* types are generated from the 
+same *rivt file*. 
 
-The API function and header start in the first column (standard Python syntax),
-with subsequent lines indented 4 spaces for improved readability and section
-folding in IDEs.
+The first line of a *rivt string* is a header, followed by lines that are
+indented 4 spaces for improved readability and section folding.
 
 .. code-block:: python
 
-    rv._("""Section Label | print;hide, private;public, section;merge
+    rv._("""Section Label | print;noprint, private;public, section;merge
 
         section text (utf-8 text)
-        ...
+        
         ...
         
         """)
 
-The :term:`rivt string` begins with a *section header* that includes a "section
-label" and parameters that define the section behavior. 
+The *rivt string* begins with an *API header* that includes a "section
+label" and section formatting parameters.
 
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
 
 **[2]** API Header 
-------------------
+-------------------------
 
 .. raw:: html
 
@@ -54,38 +54,38 @@ paramaters include the following:
 - private/public : determines whether the API markup is copied to the
     *rivt file* in the */public* folder intended for sharing. 
 
-- show/hide : determines whether the API markup is formatted and shown 
-    in the output doc.
+- print/noprint : determines whether the *rivt string* is formatted and printn 
+    in the doc or just annotated. 
 
-- section/merge : determines whether the API markup starts a new section
-    in the output doc or is merged into the previous section.   
+- section/merge : determines whether the API starts a new *doc* section
+    or is merged into the previous section.   
 
 
 Default settings do not need to be specified in the *header*. In the table
 below, the default setting for each API is listed first in bold.
  
-========== ===================== ================= =====================
-API          private/public        show/hide           section/merge         
-========== ===================== ================= ===================== 
-rv.M        **private**; public   **hide**; show     **merge**; section
-rv.R        **private**; public   **hide**; show     **merge**; section
-rv.I        **private**; public   **show**; hide     **section**; merge   
-rv.V        **private**; public   **show**; hide     **section**; merge    
-rv.T        **private**; public   **hide**; show     **merge**; section
-rv.D        **private**; public   **hide**; show     **merge**; section
-rv.S        **private**; public   **hide**; show     **merge**; section
-rv.Q        **private**; public   **hide**; show     **merge**; section
-========== ===================== ================= ===================== 
+========== ===================== ==================== =====================
+API          private/public        print/noprint           section/merge         
+========== ===================== ==================== ===================== 
+rv.M        **private**; public   **noprint**; print   **merge**; section
+rv.R        **private**; public   **noprint**; print   **merge**; section
+rv.I        **private**; public   **print**; noprint   **section**; merge   
+rv.V        **private**; public   **print**; noprint   **section**; merge    
+rv.T        **private**; public   **noprint**; print   **merge**; section
+rv.D        **private**; public   **noprint**; print   **merge**; section
+rv.S        **private**; public   **noprint**; print   **merge**; section
+rv.Q        **private**; public   **noprint**; print   **merge**; section
+========== ===================== ==================== ===================== 
 
 
 Examples of *header* settings are shown below.
 
 .. code-block:: python
 
-    rv.I("""A New Section | private, show, section
+    rv.I("""A New Section | private, print, section
 
         section content (utf-8 text)
-        ...
+  
         ...
         
         """)
@@ -98,12 +98,10 @@ equivalent:
     rv.I("""A New Section
 
         section content (utf-8 text)
-        ...
+
         ...
         
         """)
-
-
 
 
 .. raw:: html
