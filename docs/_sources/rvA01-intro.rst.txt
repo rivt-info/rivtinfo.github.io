@@ -64,7 +64,7 @@ Jupyter        no       no         no      yes         yes      yes
     <p id="api">&lt;i&gt;</p>
 
 
-**[2]** rivt Files
+**[2]** rivt file
 --------------------------------------------------------------------- 
 
 .. raw:: html
@@ -72,35 +72,53 @@ Jupyter        no       no         no      yes         yes      yes
     <hr>
 
 A :term:`rivt file` is a Python plain text file (.py) that imports the 
-:term:`rivtlib` library into the :term:`rv-namespace`:
+:term:`rivtlib` library into the :term:`rv-namespace` and defines an API:
 
 .. code-block:: python
 
     import rivtlib.rvapi as rv
 
-*rivtlib* includes 6 primary and 2 auxilliary API functions that may be run as
-a script or interactively as notebook cells in *VSCode* or other *IDE*.
 
-Engineering documents and reports typically combine text, tables, diagrams,
-models and calculations to describe and justify decisions and designs. The
-*rivt API* is designed to simplify the document organization and publishing
-process through the use of half a dozen API functions that process 
-:term:`rivt markup`, along with a pre-defined :ref:`folder structure <report-folders>`. 
-
-Each *rivt file* outputs a formatted rivt :term:`doc` as a text, PDF or HTML
-document. Reports are organized assemblies of *docs*.
+Each *rivt file* outputs a formatted rivt :term:`doc` file as a text, PDF or
+HTML document. Reports are organized assemblies of *docs*.
 
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
 
+Engineering documents and reports typically combine text, tables, diagrams,
+models and calculations to explain and justify designs and decisions. The
+*rivt API* is designed to simplify document organization and publishing
+by implementing a flexible :term:`rivt markup` language and standaard
+:ref:`folder structure <top-folders>`.
 
-**[3]** rivt API 
+**[3]** API 
 --------------------------------------------------------------------- 
 
 .. raw:: html
 
     <hr>
+
+*rivtlib* includes 8 API functions that may be run as a script or interactively
+as notebook cells in *VSCode* or other *IDE*.
+
+The four content functions (**R I V T**) output formatted utf-8 text to the
+terminal and generate formatted *doc* content. 
+
+    The *Run API* executes shell commands. 
+    
+    The *Insert API* adds static table, image, equation and text content. 
+
+    The *Value API* evaluates equations and functions. 
+
+    The *Tool API* extends *rivt* by importing and processing raw HTML, LaTeX,
+    and Python scripts.
+
+The four processing functions (**M D S Q**) are related to processing and output.
+The *Meta* function specifies *rivt file* author and version information and
+sets processing variables. The *Doc* function controls publishing formatted
+dcouments (*doc* files) as text, PDF or HTML . The *Skip* and *Exit* functions
+are used for interactive editing and debugging.
 
 =============== =============== ===========================================
 API Function        Name             Purpose
@@ -115,25 +133,15 @@ rv.S(rS)           Skip              Skip section
 rv.X(rS)           Quit              Exit rivt 
 =============== =============== ===========================================
 
+
 Each function takes a single *rivt string* (triple quoted string) argument.
 
-The four content functions (**R I V T**) output formatted utf-8 text to the
-terminal and generate *doc* content. The *Run API* executes shell commands.
-The *Insert API* adds table, image, equation and text (static) content. The
-*Value API* evaluates equations and functions. The *Tool API* extends *rivt* by
-importing and processing raw HTML, LaTeX, and Python scripts.
-
-The four processing functions (**M D S Q**) are related to processing and output.
-The *Meta* function specifies *rivt file* author and version information and
-sets processing variables. The *Doc* function controls publishing formatted
-dcouments (*doc* files) as text, PDF or HTML . The *Skip* and *Exit* functions
-are used for interactive editing and debugging.
 
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
 
-**[4]** rivt Strings
+**[4]** rivt strings
 ------------------------------------------------------------------------ 
 
 .. raw:: html
@@ -169,4 +177,68 @@ details.
     rvA02-terms.rst
     rvA03-faq.rst
     rvA04-docex.rst
-    
+
+**[5]**  Report Folders
+-------------------------------
+
+.. raw:: html
+
+    <hr>
+
+Reports are organized under a single root report folder with the prefix
+*rivt-*. File paths are relative to root folder. *rivt files* are stored under
+the root along with four primary subfolders:
+
+*out*
+   Stores resource output files written by *rivtlib* including *logs*, *values*, 
+   and *noprint* sections.
+
+*public* 
+    Stores exported *rivt files* intended for upload to a public repository.
+
+*publish*
+    Stores formatted *docs* and *reports*
+
+*src*
+    Stores author provided content, style and generating files for *docs* 
+    and *reports*
+
+An example *report* folder structure is shown below.
+
+.. _top-folders:
+
+**Folder Key**
+
+.. raw:: html
+
+    <p style="border-width:2px; border-style:solid; 
+    border-color:#49b2c3;padding: 1em;">
+
+    Required names or prefixes are shown in brackets [ ]. <br>
+    <br>
+    Folders (including subfolders) that contain author generated files 
+    are marked with a single vertical bar ( | ).<br>  
+    <br>
+    Folders (including subfolders) that contain rivtlib generated files are 
+    marked with double vertical bars ( || ).</p>
+
+
+**Top Level Folders**
+
+.. code-block:: bash
+
+    [rivt]-Report-Label/                Report Folder Name
+        ├── [rv101-]filename1.py        | rivt file
+        ├── [rv102-]filename2.py        | rivt file
+        ├── [rv201-]filename3.py        | rivt file
+        ├── [rv202-]filename4.py        | rivt file 
+
+        ...
+
+        ├── [out]/                      || other output files
+        ├── [public]/                   || public rivt files 
+        ├── [publish]/                  || report and doc files
+        ├── [src]/                      |  source files 
+        └── README.txt                  || searchable text report 
+
+An example folder structure is shown :ref:`here<report-folders>`

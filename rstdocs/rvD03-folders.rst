@@ -71,12 +71,12 @@ An example *report* folder structure is shown below.
     <p style="border-width:2px; border-style:solid; 
     border-color:#49b2c3;padding: 1em;">
 
-    Explicit folder and file names and prefixes are shown in brackets [ ]. <br>
+    Required names or prefixes are shown in brackets [ ]. <br>
     <br>
     Folders (including subfolders) that contain author generated files 
     are marked with a single vertical bar ( | ).<br>  
     <br>
-    Folders (including subfolders) that contain *rivtlib* generated files are 
+    Folders (including subfolders) that contain rivtlib generated files are 
     marked with double vertical bars ( || ).</p>
 
 
@@ -135,7 +135,7 @@ An example *report* folder structure is shown below.
                     ├── _images/                
                     ├── _sources/              
                     ├── _static/                  
-                    ├── rv101-filename1.html         HTML files
+                    ├── rv101-filename1.html         
                     ├── rv102-filename2.html                              
                     ├── rv201-filename3.html                        
                     ├── rv201-filename4.html   
@@ -173,7 +173,7 @@ An example *report* folder structure is shown below.
                 ├── rv202-filename4.txt       
                 └── README.txt                       searchable text report                     
         ├── [src]                              | source files from author               
-            ├── data/                                author created subfolders
+            ├── data/                               author created subfolders
                 ├── data1.csv   
                 └── conc-vals.csv  
             ├── image/                                             
