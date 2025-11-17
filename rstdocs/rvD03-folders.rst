@@ -33,8 +33,6 @@ the *report numbers* used in the report would be:
 where leading zeroes are dropped and *docs* are sorted alpha-numerically into
 divisions and subdivisions in the *report*.
 
-
-
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
@@ -47,36 +45,39 @@ divisions and subdivisions in the *report*.
     <hr>
 
 Reports are organized under a single root report folder with the prefix
-*rivt-*. File paths are relative to root folder. *rivt files** are stored udner
-the root.The four primary subfolders are:
+*rivt-*. File paths are relative to root folder. *rivt files* are stored under
+the root along with four primary subfolders:
 
 *out*
-   Stores output files written by *rivtlib* including *logs*, *values*, 
+   Stores resource output files written by *rivtlib* including *logs*, *values*, 
    and *noprint* sections.
 
 *public* 
-    Stores exported rivt files intended for upload to a public repository.
+    Stores exported *rivt files* intended for upload to a public repository.
 
 *publish*
     Stores formatted *docs* and *reports*
 
 *src*
-    Stores all author provided content and style and generating files for *docs* 
+    Stores author provided content, style and generating files for *docs* 
     and *reports*
 
 An example *report* folder structure is shown below.
 
 **Folder Key**
 
-  Explicit folder and file names and prefixes are shown in brackets [ ]. 
-  
-  
-  Folders (including subfolders) containing author generated files 
-  are marked with a single vertical bar ( | ).  
-  
-  
-  Folders (including subfolders) containing rivtlib generated files are 
-  marked with double vertical bars ( || ).
+.. raw:: html
+
+    <p style="border-width:3px; border-style:solid; 
+    border-color:#FF0000;padding: 1em;">
+
+    Explicit folder and file names and prefixes are shown in brackets [ ]. <br>
+    
+    Folders (including subfolders) containing author generated files 
+    are marked with a single vertical bar ( | ).<br>  
+    
+    Folders (including subfolders) containing rivtlib generated files are 
+    marked with double vertical bars ( || ).</p>
 
 
 **Top Level Folders**
