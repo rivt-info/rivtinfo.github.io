@@ -69,7 +69,7 @@ An example *report* folder structure is shown below.
 .. raw:: html
 
     <p style="border-width:2px; border-style:solid; 
-    border-color:#29313c;padding: 1em;">
+    border-color:#49b2c3;padding: 1em;">
 
     Explicit folder and file names and prefixes are shown in brackets [ ]. <br>
     <br>
