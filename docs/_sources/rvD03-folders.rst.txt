@@ -46,35 +46,36 @@ divisions and subdivisions in the *report*.
 
     <hr>
 
-Reports are organized under a single report folder with the prefix **rivt-**.
-*rivt files* and the report text file are stored in the *report folder*. Also
-stored in the folder are four sub-folders.
+Reports are organized under a single root report folder with the prefix
+*rivt-*. File paths are relative to root folder. *rivt files** are stored udner
+the root.The four primary subfolders are:
 
-- out
-   The **out** folder stores output files including *logs*, *values*, 
-   *hidden* sections, and *tool* outputs.
+*out*
+   Stores output files written by *rivtlib* including *logs*, *values*, 
+   and *noprint* sections.
 
-- public 
-    The **public** folder stores exported rivt files intended for 
-    upload to a public repository.
+*public* 
+    Stores exported rivt files intended for upload to a public repository.
 
-- publish
-    The **publish** folder stores *docs* and *reports*
+*publish*
+    Stores formatted *docs* and *reports*
 
-- src
-    The **src** folder stores source, style and generating files for *docs* 
+*src*
+    Stores all author provided content and style and generating files for *docs* 
     and *reports*
 
 An example *report* folder structure is shown below.
 
 **Folder Key**
 
-- Explicit folder and file names and prefixes are shown in brackets [ ]. 
+  Explicit folder and file names and prefixes are shown in brackets [ ]. 
   
-- Folders (including subfolders) containing author generated files 
+  
+  Folders (including subfolders) containing author generated files 
   are marked with a single vertical bar ( | ).  
   
-- Folders (including subfolders) containing rivtlib generated files are 
+  
+  Folders (including subfolders) containing rivtlib generated files are 
   marked with double vertical bars ( || ).
 
 
@@ -102,7 +103,6 @@ An example *report* folder structure is shown below.
 **Expanded Folders**
 
 .. code-block:: bash
-
 
     [rivt]-Report-Label/                Report Folder Name                
         ├── [rv101-]filename1.py               | rivt input files

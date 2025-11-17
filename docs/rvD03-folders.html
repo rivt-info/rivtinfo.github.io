@@ -399,43 +399,30 @@ divisions and subdivisions in the <em>report</em>.</p>
 <p id="api">&lt;i&gt;</p></section>
 <section id="report-folders">
 <h2><strong>[2]</strong>  Report Folders<a class="headerlink" href="#report-folders" title="Link to this heading">#</a></h2>
-<hr><p>Reports are organized under a single report folder with the prefix <strong>rivt-</strong>.
-<em>rivt files</em> and the report text file are stored in the <em>report folder</em>. Also
-stored in the folder are four sub-folders.</p>
-<ul class="simple">
-<li><dl class="simple">
-<dt>out</dt><dd><p>The <strong>out</strong> folder stores output files including <em>logs</em>, <em>values</em>,
-<em>hidden</em> sections, and <em>tool</em> outputs.</p>
+<hr><p>Reports are organized under a single root report folder with the prefix
+<em>rivt-</em>. File paths are relative to root folder. <em>rivt files*</em> are stored udner
+the root.The four primary subfolders are:</p>
+<dl class="simple">
+<dt><em>out</em></dt><dd><p>Stores output files written by <em>rivtlib</em> including <em>logs</em>, <em>values</em>,
+and <em>noprint</em> sections.</p>
 </dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>public</dt><dd><p>The <strong>public</strong> folder stores exported rivt files intended for
-upload to a public repository.</p>
+<dt><em>public</em></dt><dd><p>Stores exported rivt files intended for upload to a public repository.</p>
 </dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>publish</dt><dd><p>The <strong>publish</strong> folder stores <em>docs</em> and <em>reports</em></p>
+<dt><em>publish</em></dt><dd><p>Stores formatted <em>docs</em> and <em>reports</em></p>
 </dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>src</dt><dd><p>The <strong>src</strong> folder stores source, style and generating files for <em>docs</em>
+<dt><em>src</em></dt><dd><p>Stores all author provided content and style and generating files for <em>docs</em>
 and <em>reports</em></p>
 </dd>
 </dl>
-</li>
-</ul>
 <p>An example <em>report</em> folder structure is shown below.</p>
 <p><strong>Folder Key</strong></p>
-<ul class="simple">
-<li><p>Explicit folder and file names and prefixes are shown in brackets [ ].</p></li>
-<li><p>Folders (including subfolders) containing author generated files
-are marked with a single vertical bar ( | ).</p></li>
-<li><p>Folders (including subfolders) containing rivtlib generated files are
-marked with double vertical bars ( || ).</p></li>
-</ul>
+<blockquote>
+<div><p>Explicit folder and file names and prefixes are shown in brackets [ ].</p>
+<p>Folders (including subfolders) containing author generated files
+are marked with a single vertical bar ( | ).</p>
+<p>Folders (including subfolders) containing rivtlib generated files are
+marked with double vertical bars ( || ).</p>
+</div></blockquote>
 <p><strong>Top Level Folders</strong></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt<span class="o">]</span>-Report-Label/<span class="w">                </span>Report<span class="w"> </span>Folder<span class="w"> </span>Name
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename1.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
