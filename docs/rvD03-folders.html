@@ -431,8 +431,10 @@ and <em>reports</em></p>
 <p><strong>Folder Key</strong></p>
 <ul class="simple">
 <li><p>Explicit folder and file names and prefixes are shown in brackets [ ].</p></li>
-<li><p>Files provided by the report author are marked with a single vertical bar ( | ).</p></li>
-<li><p>Files written by rivtlib are marked with double vertical bars ( || ).</p></li>
+<li><p>Folders (including subfolders) containing author generated files
+are marked with a single vertical bar ( | ).</p></li>
+<li><p>Folders (including subfolders) containing rivtlib generated files are
+marked with double vertical bars ( || ).</p></li>
 </ul>
 <p><strong>Top Level Folders</strong></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt<span class="o">]</span>-Report-Label/<span class="w">                </span>Report<span class="w"> </span>Folder<span class="w"> </span>Name
@@ -443,122 +445,123 @@ and <em>reports</em></p>
 
 <span class="w">    </span>...
 
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>out<span class="o">]</span>/<span class="w">                      </span><span class="o">||</span><span class="w"> </span>output<span class="w"> </span>folder
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>public<span class="o">]</span>/<span class="w">                   </span><span class="o">||</span><span class="w"> </span>public<span class="w"> </span>rivt<span class="w"> </span>file<span class="w"> </span>folder
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>publish<span class="o">]</span>/<span class="w">                  </span><span class="o">||</span><span class="w"> </span>reports<span class="w"> </span>folder
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>src<span class="o">]</span>/<span class="w">                      </span><span class="p">|</span><span class="w">  </span>doc<span class="w"> </span><span class="nb">source</span><span class="w"> </span>folder
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>out<span class="o">]</span>/<span class="w">                      </span><span class="o">||</span><span class="w"> </span>other<span class="w"> </span>output<span class="w"> </span>files
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>public<span class="o">]</span>/<span class="w">                   </span><span class="o">||</span><span class="w"> </span>public<span class="w"> </span>rivt<span class="w"> </span>files
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>publish<span class="o">]</span>/<span class="w">                  </span><span class="o">||</span><span class="w"> </span>report<span class="w"> </span>and<span class="w"> </span>doc<span class="w"> </span>files
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>src<span class="o">]</span>/<span class="w">                      </span><span class="p">|</span><span class="w">  </span><span class="nb">source</span><span class="w"> </span>files
 <span class="w">    </span>└──<span class="w"> </span>README.txt<span class="w">                  </span><span class="o">||</span><span class="w"> </span>searchable<span class="w"> </span>text<span class="w"> </span>report
 </pre></div>
 </div>
 <p id="id1"><strong>Expanded Folders</strong></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt<span class="o">]</span>-Report-Label/<span class="w">                </span>Report<span class="w"> </span>Folder<span class="w"> </span>Name
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename1.py<span class="w">               </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>files
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename1.py<span class="w">               </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>input<span class="w"> </span>files
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv102-<span class="o">]</span>filename2.py
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv201-<span class="o">]</span>filename3.py
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv202-<span class="o">]</span>filename4.py
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>out<span class="o">]</span>/<span class="w">                             </span><span class="o">||</span><span class="w"> </span>output<span class="w"> </span>files
-<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>hide<span class="o">]</span>/<span class="w">                             </span><span class="o">||</span><span class="w"> </span>hide<span class="w"> </span>files
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>out<span class="o">]</span>/<span class="w">                             </span><span class="o">||</span><span class="w"> </span>other<span class="w"> </span>output<span class="w"> </span>files<span class="w"> </span>from<span class="w"> </span>rivt
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>logs<span class="o">]</span>/<span class="w">                              </span>log<span class="w"> </span>files
+<span class="w">            </span>├──<span class="w"> </span>rv101-api.txt
+<span class="w">            </span>├──<span class="w"> </span>rv101-log.txt
+<span class="w">            </span>└──<span class="w"> </span>rv102-log.txt
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>noprint<span class="o">]</span>/<span class="w">                           </span>noprint<span class="w"> </span>sections
 <span class="w">            </span>├──<span class="w"> </span>m103-1.txt
 <span class="w">            </span>├──<span class="w"> </span>t202-5.txt
 <span class="w">            </span>├──<span class="w"> </span>t103-4.py
 <span class="w">            </span>└──<span class="w"> </span>opensees1.txt
-<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>logs<span class="o">]</span>/<span class="w">                             </span><span class="o">||</span><span class="w"> </span>log<span class="w"> </span>files
-<span class="w">            </span>├──<span class="w"> </span>rv101-api.txt
-<span class="w">            </span>├──<span class="w"> </span>rv101-log.txt
-<span class="w">            </span>└──<span class="w"> </span>rv102-log.txt
-<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>temp<span class="o">]</span>/<span class="w">                             </span><span class="o">||</span><span class="w"> </span>temp<span class="w"> </span>files
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>temp<span class="o">]</span>/<span class="w">                              </span>temp<span class="w"> </span>files
 <span class="w">            </span>└──<span class="w"> </span>rv101-label3.tex
-<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>tool<span class="o">]</span>/<span class="w">                             </span><span class="o">||</span><span class="w"> </span>tool<span class="w"> </span>files
-<span class="w">            </span>├──<span class="w"> </span>table1.csv
-<span class="w">            </span>└──<span class="w"> </span>image1.png
-<span class="w">        </span>└──<span class="w"> </span><span class="o">[</span>values<span class="o">]</span>/<span class="w">                           </span><span class="o">||</span><span class="w"> </span>value<span class="w"> </span>files
+<span class="w">        </span>└──<span class="w"> </span><span class="o">[</span>vals<span class="o">]</span>/<span class="w">                              </span>value<span class="w"> </span>output<span class="w"> </span>files
 <span class="w">            </span>├──<span class="w"> </span>v101-2.csv
 <span class="w">            </span>└──<span class="w"> </span>v102-3.csv
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>public<span class="o">]</span>/<span class="w">                          </span><span class="o">||</span><span class="w"> </span>public<span class="w"> </span>rivt<span class="w"> </span>files
 <span class="w">        </span>├──<span class="w"> </span>rv-101-filename1.py
 <span class="w">        </span>├──<span class="w"> </span>rv-201-filename3.py
 <span class="w">        </span>└──<span class="w"> </span>rv-202-filename4.py
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>publish<span class="o">]</span>/<span class="w">                         </span><span class="o">||</span><span class="w"> </span>Reports<span class="w"> </span>and<span class="w"> </span>Docs
-<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>html<span class="o">]</span>/<span class="w">                        </span><span class="o">||</span><span class="w"> </span>HTML<span class="w"> </span>site
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>publish<span class="o">]</span>/<span class="w">                         </span><span class="o">||</span><span class="w"> </span>reports<span class="w"> </span>and<span class="w"> </span>docs
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>html<span class="o">]</span>/<span class="w">                              </span>HTML<span class="w"> </span>site
 <span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>docs<span class="o">]</span>/
 <span class="w">                </span>├──<span class="w"> </span>_images/
 <span class="w">                </span>├──<span class="w"> </span>_sources/
 <span class="w">                </span>├──<span class="w"> </span>_static/
-<span class="w">                </span>├──<span class="w"> </span>rv101-filename1.html<span class="w">        </span><span class="o">||</span><span class="w"> </span>HTML<span class="w"> </span>files
+<span class="w">                </span>├──<span class="w"> </span>rv101-filename1.html<span class="w">         </span>HTML<span class="w"> </span>files
 <span class="w">                </span>├──<span class="w"> </span>rv102-filename2.html
 <span class="w">                </span>├──<span class="w"> </span>rv201-filename3.html
 <span class="w">                </span>├──<span class="w"> </span>rv201-filename4.html
-<span class="w">                </span>└──<span class="w"> </span>index.html<span class="w">                  </span><span class="o">||</span><span class="w"> </span>HTML<span class="w"> </span>site<span class="w"> </span>entry<span class="w"> </span>point
-<span class="w">            </span>├──<span class="w"> </span>rv101-filename1.rst<span class="w">             </span><span class="o">||</span><span class="w"> </span>intermediate<span class="w"> </span>rst<span class="w"> </span>files
+<span class="w">                </span>└──<span class="w"> </span>index.html<span class="w">                   </span>HTML<span class="w"> </span>site<span class="w"> </span>entry<span class="w"> </span>point
+<span class="w">            </span>├──<span class="w"> </span>rv101-filename1.rst<span class="w">              </span>intermediate<span class="w"> </span>rst<span class="w"> </span>files
 <span class="w">            </span>├──<span class="w"> </span>rv102-filename2.rst
 <span class="w">            </span>├──<span class="w"> </span>rv201-filename3.rst
 <span class="w">            </span>└──<span class="w"> </span>rv202-filename4.rst
-<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>pdf<span class="o">]</span>/<span class="w">                         </span><span class="o">||</span><span class="w"> </span>PDF<span class="w"> </span>from<span class="w"> </span>rst2pdf
-<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>src<span class="o">]</span>/<span class="w">                          </span><span class="o">||</span><span class="w"> </span>intermediate<span class="w"> </span>rst<span class="w"> </span>files
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>pdf<span class="o">]</span>/<span class="w">                               </span>PDF<span class="w"> </span>from<span class="w"> </span>rst2pdf
+<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>src<span class="o">]</span>/<span class="w">                           </span>intermediate<span class="w"> </span>rst<span class="w"> </span>files
 <span class="w">                </span>├──<span class="w"> </span>rv101-filename1.rst
 <span class="w">                </span>├──<span class="w"> </span>rv102-filename2.rst
 <span class="w">                </span>├──<span class="w"> </span>rv201-filename3.rst
 <span class="w">                </span>└──<span class="w"> </span>rv202-filename4.rst
-<span class="w">            </span>├──<span class="w"> </span>rv101-filename1.pdf<span class="w">             </span><span class="o">||</span><span class="w"> </span>PDF<span class="w"> </span>docs<span class="w"> </span>from<span class="w"> </span>rst2pdf
+<span class="w">            </span>├──<span class="w"> </span>rv101-filename1.pdf<span class="w">              </span>PDF<span class="w"> </span>docs<span class="w"> </span>from<span class="w"> </span>rst2pdf
 <span class="w">            </span>├──<span class="w"> </span>rv102-filename2.pdf
 <span class="w">            </span>├──<span class="w"> </span>rv201-filename3.pdf
 <span class="w">            </span>├──<span class="w"> </span>rv202-filename4.pdf
-<span class="w">            </span>└──<span class="w"> </span>Report-Label.pdf<span class="w">                </span><span class="o">||</span><span class="w"> </span>PDF<span class="w"> </span>report<span class="w"> </span>from<span class="w"> </span>rst2pdf
-<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>pdftex<span class="o">]</span>/<span class="w">                      </span><span class="o">||</span><span class="w"> </span>PDF<span class="w"> </span>from<span class="w"> </span>LaTeX
-<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>src<span class="o">]</span>/<span class="w">                         </span><span class="o">||</span><span class="w"> </span>intermediate<span class="w"> </span>rst<span class="w"> </span>files
+<span class="w">            </span>└──<span class="w"> </span>Report-Label.pdf<span class="w">                 </span>PDF<span class="w"> </span>report<span class="w"> </span>from<span class="w"> </span>rst2pdf
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>pdftex<span class="o">]</span>/<span class="w">                            </span>PDF<span class="w"> </span>from<span class="w"> </span>LaTeX
+<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>src<span class="o">]</span>/<span class="w">                           </span>intermediate<span class="w"> </span>rst<span class="w"> </span>files
 <span class="w">                </span>├──<span class="w"> </span>rv101-filename1.rst
 <span class="w">                </span>├──<span class="w"> </span>rv102-filename2.rst
 <span class="w">                </span>├──<span class="w"> </span>rv201-filename3.rst
 <span class="w">                </span>└──<span class="w"> </span>rv202-filename4.rst
-<span class="w">            </span>├──<span class="w"> </span>rv101-filename1.pdf<span class="w">             </span><span class="o">||</span><span class="w"> </span>PDF<span class="w"> </span>docs<span class="w"> </span>from<span class="w"> </span>LaTeX
+<span class="w">            </span>├──<span class="w"> </span>rv101-filename1.pdf<span class="w">              </span>PDF<span class="w"> </span>docs<span class="w"> </span>from<span class="w"> </span>LaTeX
 <span class="w">            </span>├──<span class="w"> </span>rv102-filename2.pdf
 <span class="w">            </span>├──<span class="w"> </span>rv201-filename3.pdf
 <span class="w">            </span>├──<span class="w"> </span>rv202-filename4.pdf
-<span class="w">            </span>└──<span class="w"> </span>Report-Label.pdf<span class="w">                </span><span class="o">||</span><span class="w"> </span>PDF<span class="w"> </span>report<span class="w"> </span>from<span class="w"> </span>LaTeX
-<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>text<span class="o">]</span>/<span class="w">                        </span><span class="o">||</span><span class="w"> </span>text<span class="w"> </span>report
-<span class="w">            </span>├──<span class="w"> </span>rv101-filename1.txt<span class="w">             </span><span class="o">||</span><span class="w"> </span>text<span class="w"> </span>docs
+<span class="w">            </span>└──<span class="w"> </span>Report-Label.pdf<span class="w">                 </span>PDF<span class="w"> </span>report<span class="w"> </span>from<span class="w"> </span>LaTeX
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>text<span class="o">]</span>/<span class="w">                              </span>text<span class="w"> </span>report
+<span class="w">            </span>├──<span class="w"> </span>rv101-filename1.txt<span class="w">              </span>text<span class="w"> </span>docs
 <span class="w">            </span>├──<span class="w"> </span>rv102-filename2.txt
 <span class="w">            </span>├──<span class="w"> </span>rv201-filename3.txt
 <span class="w">            </span>├──<span class="w"> </span>rv202-filename4.txt
-<span class="w">            </span>└──<span class="w"> </span>README.txt<span class="w">                      </span><span class="o">||</span><span class="w"> </span>searchable<span class="w"> </span>text<span class="w"> </span>report
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>src<span class="o">]</span><span class="w">                              </span><span class="p">|</span><span class="w"> </span>doc<span class="w"> </span><span class="nb">source</span><span class="w"> </span>files
-<span class="w">        </span>├──<span class="w"> </span>data/<span class="w">                               </span><span class="p">|</span><span class="w"> </span>author<span class="w"> </span>created<span class="w"> </span>folder
+<span class="w">            </span>└──<span class="w"> </span>README.txt<span class="w">                       </span>searchable<span class="w"> </span>text<span class="w"> </span>report
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>src<span class="o">]</span><span class="w">                              </span><span class="p">|</span><span class="w"> </span><span class="nb">source</span><span class="w"> </span>files<span class="w"> </span>from<span class="w"> </span>author
+<span class="w">        </span>├──<span class="w"> </span>data/<span class="w">                                </span>author<span class="w"> </span>created<span class="w"> </span>subfolders
 <span class="w">            </span>├──<span class="w"> </span>data1.csv
-<span class="w">            </span>├──<span class="w"> </span>newvals.csv
-<span class="w">            </span>└──<span class="w"> </span>download1.csv
-<span class="w">        </span>├──<span class="w"> </span>image/<span class="w">                              </span><span class="p">|</span><span class="w"> </span>author<span class="w"> </span>created<span class="w"> </span>folder
+<span class="w">            </span>└──<span class="w"> </span>conc-vals.csv
+<span class="w">        </span>├──<span class="w"> </span>image/
 <span class="w">            </span>├──<span class="w"> </span>fig1.png
 <span class="w">            </span>└──<span class="w"> </span>fig2.jpg
-<span class="w">        </span><span class="o">[</span>gen<span class="o">]</span>/
-<span class="w">            </span>├──<span class="w"> </span>gen-html.cmd<span class="w">                    </span><span class="p">|</span><span class="w"> </span>html<span class="w"> </span>generating<span class="w"> </span>script
-<span class="w">            </span>├──<span class="w"> </span>gen-pdf.cmd<span class="w">                     </span><span class="p">|</span><span class="w"> </span>pdf<span class="w"> </span>generating<span class="w"> </span>script
-<span class="w">            </span>├──<span class="w"> </span>gen-pdftex.cmd<span class="w">                  </span><span class="p">|</span><span class="w"> </span>LaTeX<span class="w"> </span>generating<span class="w"> </span>script
-<span class="w">            </span>├──<span class="w"> </span>rivt-report.py<span class="w">                  </span><span class="p">|</span><span class="w"> </span>report<span class="w"> </span>generating<span class="w"> </span>script
-<span class="w">            </span>└──<span class="w"> </span><span class="o">[</span>style<span class="o">]</span>/<span class="w">                        </span><span class="p">|</span><span class="w"> </span>doc<span class="w"> </span>style<span class="w"> </span>files
-<span class="w">                </span>├──<span class="w"> </span><span class="o">[</span>html<span class="o">]</span>/<span class="w">                     </span><span class="p">|</span><span class="w"> </span>html<span class="w"> </span>style<span class="w"> </span>files
+<span class="w">        </span>├──<span class="w"> </span>scripts/
+<span class="w">            </span>├──<span class="w"> </span>plot.py
+<span class="w">            </span>└──<span class="w"> </span>loads.py
+<span class="w">        </span>├──<span class="w"> </span>output/<span class="w">                              </span>script<span class="w"> </span>and<span class="w"> </span>shell<span class="w"> </span>output
+<span class="w">            </span>├──<span class="w"> </span>table1.csv
+<span class="w">            </span>├──<span class="w"> </span>image1.png
+<span class="w">            </span>└──<span class="w"> </span>opensees1.txt
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>gen<span class="o">]</span>/
+<span class="w">            </span>├──<span class="w"> </span>gen-html.cmd<span class="w">                     </span>html<span class="w"> </span>generating<span class="w"> </span>script
+<span class="w">            </span>├──<span class="w"> </span>gen-pdf.cmd<span class="w">                      </span>pdf<span class="w"> </span>generating<span class="w"> </span>script
+<span class="w">            </span>├──<span class="w"> </span>gen-pdftex.cmd<span class="w">                   </span>LaTeX<span class="w"> </span>generating<span class="w"> </span>script
+<span class="w">            </span>├──<span class="w"> </span>rivt-report.py<span class="w">                   </span>report<span class="w"> </span>generating<span class="w"> </span>script
+<span class="w">            </span>├──<span class="w"> </span>new-units.py<span class="w">                     </span>define<span class="w"> </span>new<span class="w"> </span>units
+<span class="w">            </span>└──<span class="w"> </span><span class="o">[</span>style<span class="o">]</span>/<span class="w">                         </span>style<span class="w"> </span>files<span class="w"> </span><span class="k">for</span><span class="w"> </span>docs
+<span class="w">                </span>├──<span class="w"> </span><span class="o">[</span>html<span class="o">]</span>/<span class="w">                      </span>html<span class="w"> </span>style<span class="w"> </span>files
 <span class="w">                    </span>├──<span class="w"> </span>_locale/
 <span class="w">                    </span>├──<span class="w"> </span>_static/
 <span class="w">                    </span>├──<span class="w"> </span>_templates/
 <span class="w">                    </span>├──<span class="w"> </span>conf.py
 <span class="w">                    </span>├──<span class="w"> </span>genhtml.cmd
 <span class="w">                    </span>└──<span class="w"> </span>index.rst
-<span class="w">                </span>├──<span class="w"> </span><span class="o">[</span>pdf<span class="o">]</span>/<span class="w">                      </span><span class="p">|</span><span class="w"> </span>rst2pdf<span class="w"> </span>style<span class="w"> </span>files
+<span class="w">                </span>├──<span class="w"> </span><span class="o">[</span>pdf<span class="o">]</span>/<span class="w">                       </span>rst2pdf<span class="w"> </span>style<span class="w"> </span>files
 <span class="w">                    </span>├──<span class="w"> </span>fonts/
 <span class="w">                    </span>├──<span class="w"> </span>style/
 <span class="w">                    </span>├──<span class="w"> </span>Report-Cover.pdf
 <span class="w">                    </span>└──<span class="w"> </span>genrst2pdf.cmd
-<span class="w">                </span>├──<span class="w"> </span><span class="o">[</span>pdftex<span class="o">]</span>/<span class="w">                   </span><span class="p">|</span><span class="w"> </span>pdftex<span class="w"> </span>style<span class="w"> </span>files
+<span class="w">                </span>├──<span class="w"> </span><span class="o">[</span>pdftex<span class="o">]</span>/<span class="w">                    </span>pdftex<span class="w"> </span>style<span class="w"> </span>files
 <span class="w">                    </span>├──<span class="w"> </span>gentexpdf.cmd
 <span class="w">                    </span>├──<span class="w"> </span>Report-cover.pdf
 <span class="w">                    </span>└──<span class="w"> </span>rivt.sty
-<span class="w">                </span>├──<span class="w"> </span><span class="o">[</span>text<span class="o">]</span>/<span class="w">                     </span><span class="p">|</span><span class="w"> </span>text<span class="w"> </span>ini<span class="w"> </span>file
+<span class="w">                </span>├──<span class="w"> </span><span class="o">[</span>text<span class="o">]</span>/<span class="w">                      </span>text<span class="w"> </span>ini<span class="w"> </span>file
 <span class="w">                    </span>└──<span class="w"> </span>rv-text.ini
-<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>tools<span class="o">]</span>/<span class="w">                            </span><span class="p">|</span><span class="w"> </span>scripts<span class="w"> </span>and<span class="w"> </span>markup
-<span class="w">            </span>├──<span class="w"> </span>plot.py
-<span class="w">            </span>└──<span class="w"> </span>loads.py
-<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>values<span class="o">]</span>/<span class="w">                           </span><span class="p">|</span><span class="w"> </span>stored<span class="w"> </span>values
-<span class="w">            </span>├──<span class="w"> </span>new-units.py
-<span class="w">            </span>└──<span class="w"> </span>add-values-v.csv
+<span class="w">        </span>└──<span class="w"> </span><span class="o">[</span>vals<span class="o">]</span>/<span class="w">                              </span>value<span class="w"> </span>files
+<span class="w">            </span>├──<span class="w"> </span>steel-vals.csv
+<span class="w">            </span>└──<span class="w"> </span>plastic-vals.csv
 <span class="w">    </span>└──<span class="w"> </span>README.txt<span class="w">                         </span><span class="o">||</span><span class="w"> </span>searchable<span class="w"> </span>text<span class="w"> </span>report
 </pre></div>
 </div>
