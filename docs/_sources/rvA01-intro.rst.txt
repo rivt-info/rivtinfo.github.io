@@ -13,13 +13,13 @@
     <hr>
 
 *rivt* is an open source software project that simplifies reuse and sharing of
-engineering documents. Reuse and sharing provides opportunities for continual
-improvement. Although a number of document programs are curently available,
-reuse and sharing is generally difficult because of limitations in the
-software and its distribution:
+engineering documents. Collaboration on standard documents reduces repetitive
+work and improves quality. Although a number of document software programs are
+available, reuse and sharing is generally difficult because of limitations in
+the software use and its distribution:
 
 - documents are divided among many incompatible programs
-- document formats become obsolete an inaccessible
+- document formats become obsolete and inaccessible
 - frequent software updates are needed
 - update costs are high
 - software is limited to specific platforms
@@ -55,8 +55,6 @@ Jupyter        no       no         no      yes         yes      yes
     .. [4] Forward and backward compatibility
     .. [5] Cross-platform
     .. [6] Collaboration support
-
-
 
 
 .. raw:: html
@@ -141,7 +139,7 @@ Each function takes a single *rivt string* (triple quoted string) argument.
 
     <p id="api">&lt;i&gt;</p>
 
-**[4]** rivt strings
+**[4]** rivt string
 ------------------------------------------------------------------------ 
 
 .. raw:: html
@@ -186,7 +184,7 @@ details.
     <hr>
 
 Reports are organized under a single root report folder with the prefix
-*rivt-*. File paths are relative to root folder. *rivt files* are stored under
+*rivt-*. File paths are relative to the root folder. *rivt files* are stored under
 the root along with four primary subfolders:
 
 *out*
@@ -202,8 +200,6 @@ the root along with four primary subfolders:
 *src*
     Stores author provided content, style and generating files for *docs* 
     and *reports*
-
-An example *report* folder structure is shown below.
 
 .. _top-folders:
 
@@ -241,4 +237,4 @@ An example *report* folder structure is shown below.
         ├── [src]/                      |  source files 
         └── README.txt                  || searchable text report 
 
-An example folder structure is shown :ref:`here<report-folders>`
+An example of a complete folder structure is shown :ref:`here<report-folders>`

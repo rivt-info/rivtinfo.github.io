@@ -1,35 +1,32 @@
 **C.3 Run API - rv.R**
 ==========================
 
-**Summary**
-
-======================================= ==============================
-       Block Tags                        Description (doc scope)
-======================================= ==============================
- _[[AUTH]] label                         author data (all)
- _[[WIN]] label, *wait;nowait*           Windows command script (all)
- _[[MACOS]] label, *wait;nowait*         Mac shell script (all)
- _[[LINUX]] label, *wait;nowait*         Linux shell script (all)
-======================================= ==============================
-
-======================================================== ===== ==================
-         | Command | path | parameters                    R/W   input types
-======================================================== ===== ==================
- \| LINUX | relative path | *wait;nowait*                 R     *.sh*
- \| MACOS | relative path | *wait;nowait*                 R     *.sh*
- \| WIN   | relative path | *wait;nowait*                 R     *.bat, .cmd*
-======================================================== ===== ==================
-
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
 
-**[1]** **Block Tags**
+**[1]** **Summary**
 ------------------------------------
 
 .. raw:: html
 
     <hr>
+
+======================================= ==============================
+       Block Tags                        Description (doc scope)
+======================================= ==============================
+ _[[WIN]] label, *wait;nowait*           Windows command script (all)
+ _[[MACOS]] label, *wait;nowait*         Mac shell script (all)
+ _[[LINUX]] label, *wait;nowait*         Linux shell script (all)
+======================================= ==============================
+
+============================================= ===== ==================
+        | COMMAND | path | parameters          R/W     input types
+============================================= ===== ==================
+ \| LINUX | path | *wait;nowait*                 R     *.sh*
+ \| MACOS | path | *wait;nowait*                 R     *.sh*
+ \| WIN   | path | *wait;nowait*                 R     *.bat, .cmd*
+============================================= ===== ==================
 
 .. raw:: html
 
@@ -45,7 +42,7 @@
 
 .. code-block:: text
     
-  _[[WIN]] *nowait;waiting*
+  _[[WIN]] *nowait;wait*
   batch command
   batch command
   ...
@@ -66,7 +63,7 @@ text, pdf, html
 
 .. code-block:: text
     
-  _[[MACOS]] *nowait;waiting*
+  _[[MACOS]] *nowait;wait*
   shell command
   shell command
   ...
@@ -87,7 +84,7 @@ text, pdf, html
 
 .. code-block:: text
     
-  _[[LINUX]] *nowait;waiting*
+  _[[LINUX]] *nowait;wait*
   shell command
   shell command
   ...

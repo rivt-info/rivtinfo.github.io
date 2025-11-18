@@ -5,22 +5,32 @@
 
     <p id="api">&lt;i&gt;</p>
 
-
-**[1]** Definitions
---------------------------------------------
+**[1]** **Summary**
+------------------------------------
 
 .. raw:: html
 
     <hr>
 
-The *Metadata* API function is always the first *API function* if used. The
-function provides metadata for *doc* processing and overriding defaults.
-Metadata is specified as Python dictionaries, lists and variables and uses the
-convention of a capital variable suffix indicating the data type.
+The *Metadata* API function is the first *API function* if used. The function
+provides *doc* metadata and overrides defaults. Metadata is specified using
+Python dictionaries, lists and strings. It uses the convention (used in
+rivtlib code) of a suffix indicating the data type.
+    
+============================= ===============================================
+    Variable                        Description (doc scope)
+============================= ===============================================
+:term:`rv_authD`                specifies author information
+:term:`rv_fork1D`               specifies author fork information
+:term:`rv_localB`               true; false - specifies if a single doc
+:term:`rv_docnameS`             overrides *doc* name taken from file name
+:term:`rv_headerL`              ordered list of header content
+============================= ===============================================
 
 .. raw:: html
 
     <p id="api">&lt;m&gt;</p>
+
 
 **[2]** Dictionaries
 ------------------------------------------------

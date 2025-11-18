@@ -140,6 +140,25 @@
     Alias name for the global rivt file namespace. Other user namespaces may be 
     specified
 
+  rv_authD
+    Defined in rv.M(). Specifies the author, version, email, repository and license information
+    and lists the forks. *rv_forknD* specifies data for the forked file. The
+    *rv_authD* is always included.
+
+  rv_fork1D 
+    Defined in rv.M(). Example name of a *doc* fork specified in the *forks* 
+    list of rv_authD.
+
+  rv_localB 
+    Defined in rv.M(). Overrides the default report structure and specifies that the *values* and
+    *ouput* files are written to the rivt file folder.
+
+  rv_docnameS
+    Defined in rv.M(). Overrides the default doc title derived from the rivt file name.
+
+  rv_headerL
+    Defined in rv.M(). Specfies the contents and order of *doc* page headings.
+
 .. raw:: html
 
     <p id="api">&lt;t&gt;</p>

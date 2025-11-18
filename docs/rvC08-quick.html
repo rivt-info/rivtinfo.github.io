@@ -486,72 +486,6 @@
 </table>
 </div>
 <p id="api">&lt;i&gt;</p></section>
-<section id="meta-api">
-<h2><strong>[3]</strong> Meta API<a class="headerlink" href="#meta-api" title="Link to this heading">#</a></h2>
-<hr><p>The <em>Meta</em> API function sets and overrides processing parameters for the <em>doc</em>.
-It is always the first <em>API function</em> if used.</p>
-<ul class="simple">
-<li><dl class="simple">
-<dt><em>rv_authD</em></dt><dd><p>Specifies the author, version, email, repository and license information
-and lists the forks. <em>rv_forknD</em> specifies data for the forked file. The
-<em>rv_authD</em> is always included.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><em>rv_localB</em></dt><dd><p>Overrides the default report structure and specifies that the <em>values</em> and
-<em>ouput</em> files are written to the rivt file folder.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><em>rv_docnameS</em></dt><dd><p>overrides the default doc title derived from the rivt file name.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><em>rv_headerL</em></dt><dd><p>specfies the contents and order of <em>doc</em> page headings.</p>
-</dd>
-</dl>
-</li>
-</ul>
-<p><strong>Examples</strong></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># default - author settings</span>
-<span class="n">rv_authD</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="s2">&quot;authors&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;0.0.0&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;repo&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;license&quot;</span><span class="p">:</span> <span class="s2">&quot;https://opensource.org/license/mit/&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;forks&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;rv_fork1D&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">],</span>
-        <span class="p">}</span>
-
-<span class="n">rv_fork1D</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="s2">&quot;authors&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;0.0.0&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;repo&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-
- <span class="c1"># default - folder setting</span>
- <span class="n">rv_localB</span> <span class="o">=</span> <span class="n">false</span>
-
- <span class="c1"># example - folder setting override</span>
- <span class="n">rv_localB</span> <span class="o">=</span> <span class="n">true</span>
-
-<span class="c1"># default - doc name override</span>
- <span class="n">rv_docnameS</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span> <span class="c1"># does not override default name</span>
-
- <span class="c1"># example - folder setting override</span>
- <span class="n">rv_docnameS</span> <span class="o">=</span> <span class="s2">&quot;My Document Title&quot;</span>
-
-<span class="c1"># default - header list</span>
-<span class="n">rv_headerL</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;date&quot;</span><span class="p">,</span> <span class="s2">&quot;time&quot;</span><span class="p">,</span> <span class="s2">&quot;file&quot;</span><span class="p">,</span> <span class="s2">&quot;version&quot;</span><span class="p">]</span>
-
-<span class="c1"># example - header list</span>
-<span class="n">rv_headerL</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;date&quot;</span><span class="p">,</span> <span class="s2">&quot;file&quot;</span><span class="p">,</span> <span class="s2">&quot;authors&quot;</span><span class="p">,</span> <span class="s2">&quot;version&quot;</span><span class="p">]</span>
-</pre></div>
-</div>
-<p id="api">&lt;i&gt;</p></section>
 <section id="tags">
 <h2><strong>[4]</strong> Tags<a class="headerlink" href="#tags" title="Link to this heading">#</a></h2>
 <hr>
@@ -992,7 +926,6 @@ marked with double vertical bars ( || ).</p><p><strong>Top Level Folders</strong
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api"><strong>[1]</strong> API</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api-header"><strong>[2]</strong> API Header</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#meta-api"><strong>[3]</strong> Meta API</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tags"><strong>[4]</strong> Tags</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#commands"><strong>[5]</strong> Commands</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#folders"><strong>[5]</strong> Folders</a></li>
