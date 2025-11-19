@@ -5,34 +5,6 @@
 
     <p id="api">&lt;i&gt;</p>
 
-
-**[1]** API 
---------------------
-
-.. raw:: html
-
-    <hr>
-
-The rivt API defines *doc* content and properties.
-
-=============== =============== =========================================
-API Function        Name             Purpose
-=============== =============== =========================================
-rv.M(rS)           Meta              Meta data 
-rv.R(rS)           Run               Run shell commands
-rv.I(rS)           Insert            Insert static resources 
-rv.V(rS)           Value             Calculate values
-rv.T(rS)           Tool              Import Python and Markup functions
-rv.D(rS)           Doc               Publish docs 
-rv.S(rS)           Skip              Skip section
-rv.X(rS)           Quit              Exit rivt 
-=============== =============== =========================================
-
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
 **[2]** API Headers
 ----------------------- 
 
