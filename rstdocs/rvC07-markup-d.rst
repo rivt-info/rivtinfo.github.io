@@ -1,59 +1,63 @@
 **C.7 Doc - rv.D**
 ===========================
 
-The *Doc API function* writes formatted document files from rivt strings. Tags
-are not used in this function. 
-
-**Summary**
-
-======================================================== ===== ==================
-         | Command | path | parameters                    R/W   input types
-======================================================== ===== ==================
- \| APPEND | relative path | cover_page_title             W     *pdf*
- \| PUBLISH | relative path | *pdf;pdftex;text;html*      W     *pdf, html, txt*
-======================================================== ===== ==================
 
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
 
-**[1]** | APPEND  | - append PDF file
+**[1]** Summary
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
+The *Doc API* publishes formatted document files from rivt strings.
+*Tags* are not used in this function.
 
-.. topic:: | APPEND | relative path | *before;after*
+============================================================================ 
+                  | Command | relative path | parameters                 
+============================================================================ 
+\| APPEND | relative path | *none*;title;separatorfile      
+\| PUBLISH | *pdf;pdftex;text;html* | *none*;title;coverfile   
+============================================================================ 
 
+.. raw:: html
 
-    | APPEND | src/appendix1.pdf | after
+    <p id="api">&lt;i&gt;</p>
 
-Appends PDF file to PDF *doc*. The *before* parameter may be used for cover
-pages.
+**[2]** | APPEND  | - append PDF file
+-------------------------------------------
 
-outputs:  PDF
+.. raw:: html
+
+    <hr>
+
+.. topic:: | APPEND | relative path | *none*;title;cover file 
+
+    | APPEND | src/appendix1.pdf | none
+
+Appends file to *doc* with optional separator page.
+
+outputs:  PDF, HTML, text
  
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
 
-
-**[2]** | PUBLISH |  - write doc file
+**[3]** | PUBLISH |  - write doc file
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | DOCS | relative path |  *txt;html;pdf;tpdf*
+.. topic:: | PUBLISH | *pdf;pdftex;text;html* | *none*;title;coverfile 
 
+    | PUBLISH | doc1.pdf | none
 
-    | PUBLISH | /reports | pdf
-
-The     *rivt* exits after writing the *doc* file.
-
+*rivt* exits after writing the *publish* file.
 
 outputs: PDF, HTML, text
   

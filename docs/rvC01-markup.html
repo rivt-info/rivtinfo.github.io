@@ -387,9 +387,9 @@
 a readable, plain text language that generates formatted text, PDF or
 HTML <a class="reference internal" href="rvA02-terms.html#term-docs"><span class="xref std std-term">docs</span></a>. The different <em>doc</em> types are generated from the
 same <em>rivt file</em>.</p>
-<p>The first line of a <em>rivt string</em> is a header, followed by lines that are
+<p>The first line of a <em>rivt string</em> is a header, followed by text
 indented 4 spaces for improved readability and section folding.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | print;noprint, private;public, section;merge</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | show;hide, private;public, section;merge</span>
 
 <span class="s2">    section text (utf-8 text)</span>
 
@@ -403,18 +403,19 @@ label” and section formatting parameters.</p>
 <p id="api">&lt;i&gt;</p></section>
 <section id="api-header">
 <h2><strong>[2]</strong> API Header<a class="headerlink" href="#api-header" title="Link to this heading">#</a></h2>
-<hr><p>An <a class="reference internal" href="rvA02-terms.html#term-API-header"><span class="xref std std-term">API header</span></a> starts with a <em>section label</em> followed by a vertical
-separator bar and comma separtaed <em>section parameters</em> that may override the
-default behavior. The <em>section label</em> is the section title. <em>Header</em>
-paramaters include the following:</p>
+<hr><p>An <a class="reference internal" href="rvA02-terms.html#term-API-header"><span class="xref std std-term">API header</span></a> starts with a <em>section label</em> followed by comma separated
+<em>section parameters</em> that may override default behavior. The <em>section label</em> is
+the section title and is separated from the <em>section header</em> paramaters by a
+vertical bar. Parameters include the following:</p>
 <ul>
 <li><dl class="simple">
-<dt>private/public<span class="classifier">determines whether the API markup is copied to the</span></dt><dd><p><em>rivt file</em> in the <em>/public</em> folder intended for sharing.</p>
+<dt>private/public<span class="classifier">determines whether the API section text is copied to the</span></dt><dd><p>the <em>/public</em> folder <em>rivt file</em> for sharing.</p>
 </dd>
 </dl>
 </li>
 <li><dl>
-<dt>print/noprint<span class="classifier">determines whether the <em>rivt string</em> is formatted and printn</span></dt><dd><p>in the doc or just annotated.</p>
+<dt>show/hide<span class="classifier">determines whether the <em>rivt string</em> is formatted and printed</span></dt><dd><p>in the doc or just annotated and written to a file for optional inclusion
+as an appendix.</p>
 </dd>
 </dl>
 </li>
@@ -430,56 +431,56 @@ below, the default setting for each API is listed first in bold.</p>
 <thead>
 <tr class="row-odd"><th class="head"><p>API</p></th>
 <th class="head"><p>private/public</p></th>
-<th class="head"><p>print/noprint</p></th>
+<th class="head"><p>show/hide</p></th>
 <th class="head"><p>section/merge</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>rv.M</p></td>
 <td><p><strong>private</strong>; public</p></td>
-<td><p><strong>noprint</strong>; print</p></td>
+<td><p><strong>hide</strong>; show</p></td>
 <td><p><strong>merge</strong>; section</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.R</p></td>
 <td><p><strong>private</strong>; public</p></td>
-<td><p><strong>noprint</strong>; print</p></td>
+<td><p><strong>hide</strong>; show</p></td>
 <td><p><strong>merge</strong>; section</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I</p></td>
 <td><p><strong>private</strong>; public</p></td>
-<td><p><strong>print</strong>; noprint</p></td>
+<td><p><strong>show</strong>; hide</p></td>
 <td><p><strong>section</strong>; merge</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V</p></td>
 <td><p><strong>private</strong>; public</p></td>
-<td><p><strong>print</strong>; noprint</p></td>
+<td><p><strong>show</strong>; hide</p></td>
 <td><p><strong>section</strong>; merge</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.T</p></td>
 <td><p><strong>private</strong>; public</p></td>
-<td><p><strong>noprint</strong>; print</p></td>
+<td><p><strong>hide</strong>; show</p></td>
 <td><p><strong>merge</strong>; section</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.D</p></td>
 <td><p><strong>private</strong>; public</p></td>
-<td><p><strong>noprint</strong>; print</p></td>
+<td><p><strong>hide</strong>; show</p></td>
 <td><p><strong>merge</strong>; section</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.S</p></td>
 <td><p><strong>private</strong>; public</p></td>
-<td><p><strong>noprint</strong>; print</p></td>
+<td><p><strong>hide</strong>; show</p></td>
 <td><p><strong>merge</strong>; section</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.Q</p></td>
 <td><p><strong>private</strong>; public</p></td>
-<td><p><strong>noprint</strong>; print</p></td>
+<td><p><strong>hide</strong>; show</p></td>
 <td><p><strong>merge</strong>; section</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <p>Examples of <em>header</em> settings are shown below.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;A New Section | private, print, section</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;A New Section | private, show, section</span>
 
 <span class="s2">    section content (utf-8 text)</span>
 
@@ -488,11 +489,10 @@ below, the default setting for each API is listed first in bold.</p>
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>As defaults are specified in the prior example, the following syntax is
-equivalent:</p>
+<p>For the <em>Insert API</em> - rv.I(), the following syntax is equivalent:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;A New Section</span>
 
-<span class="s2">    section content (utf-8 text)</span>
+<span class="s2">    section text (utf-8)</span>
 
 <span class="s2">    ...</span>
 
@@ -503,7 +503,8 @@ equivalent:</p>
 <section id="section-text">
 <h2><strong>[3]</strong> Section Text<a class="headerlink" href="#section-text" title="Link to this heading">#</a></h2>
 <hr><p>Section text is indented four spaces for legibility and code folding. It
-includes <em>rivt tags</em> for text formatting and <em>rivt commands</em> for file operations.</p>
+includes <em>rivt tags</em> that format lines of text and <em>rivt commands</em> that operate
+on files.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | write; nowrite, public; private</span>
 
 <span class="s2">    section text</span>
@@ -512,15 +513,14 @@ includes <em>rivt tags</em> for text formatting and <em>rivt commands</em> for f
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>A section is processed line by line to formatted text and a
-<a class="reference external" href="https://docutils.sourceforge.io/docs/user/rst/quickref.html">RestructuredText string</a>,
-and then further processed to an HTML or PDF file. If a line does not
-contain a <em>command</em> or <em>tag</em> it is passed through as is, which allows for
-including <em>restructured text</em> directly. For example surrounding text
-with * for italics  or ** for bold. <em>Text docs</em> are formatted separately.</p>
+<p>A section is processed line by line into formatted text and <a class="reference external" href="https://docutils.sourceforge.io/docs/user/rst/quickref.html">RestructuredText</a>, and then
+further processed to an HTML or PDF file. If a line does not contain a
+<em>command</em> or <em>tag</em> it is passed through as is, which allows for including some
+<em>restructured text</em> directly. For example surrounding words with * for italics
+or ** for bold.</p>
 <p>In addition the <em>Tools API function</em> (rv.T) supports inserting raw Python,
-HTML, LaTex and resTructuredText that is isolated from the primary textual
-content of the file which improves readability.</p>
+HTML and LaTex. Since it can be hid from the primary textual
+content of the file rv.T() improves readability.</p>
 <p id="api">&lt;i&gt;</p></section>
 <section id="tags-and-commands">
 <h2><strong>[4]</strong> Tags and Commands<a class="headerlink" href="#tags-and-commands" title="Link to this heading">#</a></h2>

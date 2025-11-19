@@ -43,16 +43,16 @@ rv.X(rS)           Quit              Exit rivt
 :term:`API headers` determine overall section processing.
 
 ========== ===================== ==================== =====================
-API          private/public        print/noprint           section/merge         
+API          private/public         show/hide           section/merge         
 ========== ===================== ==================== ===================== 
-rv.M        **private**; public   **noprint**; print   **merge**; section
-rv.R        **private**; public   **noprint**; print   **merge**; section
-rv.I        **private**; public   **print**; noprint   **section**; merge   
-rv.V        **private**; public   **print**; noprint   **section**; merge    
-rv.T        **private**; public   **noprint**; print   **merge**; section
-rv.D        **private**; public   **noprint**; print   **merge**; section
-rv.S        **private**; public   **noprint**; print   **merge**; section
-rv.Q        **private**; public   **noprint**; print   **merge**; section
+rv.M        **private**; public   **hide**; show       **merge**; section
+rv.R        **private**; public   **hide**; show       **merge**; section
+rv.I        **private**; public   **show**; hide       **section**; merge   
+rv.V        **private**; public   **show**; hide       **section**; merge    
+rv.T        **private**; public   **hide**; show       **merge**; section
+rv.D        **private**; public   **hide**; show       **merge**; section
+rv.S        **private**; public   **hide**; show       **merge**; section
+rv.Q        **private**; public   **hide**; show       **merge**; section
 ========== ===================== ==================== ===================== 
 
 
@@ -79,8 +79,8 @@ API Scope             Line Tags              Description (doc scope)
 rv.I, V           text _[#]                  endnote number (all)
 rv.I, V           text _[C]                  center text (all)
 rv.I, V           text _[R]                  right justify text (all)
-rv.I, V           math _[L]                  format LaTeX math (all) 
-rv.I, V           math _[A]                  format ASCII math (all) 
+rv.I              math _[L]                  format LaTeX math (all) 
+rv.I              math _[A]                  format ASCII math (all) 
 rv.I, V          label _[E]                  equation number and label (all)
 rv.I, V        caption _[I]                  image number and caption (all)[1]
 rv.I, V          title _[T]                  table number and title (all)[1]
@@ -146,10 +146,9 @@ rv.V        \| VALUES | relative path | *visible;hide* (_[T])        R     *csv*
 rv.V       a := 1*IN  | unit1, unit2, decimal | descrip (_[E])[1]    W     define a value
 rv.V       b <= a + 3*FT | unit1, unit2, decimal | descrip (_[E])    W     assign a value
 rv.V       c <= func1(x,y) | unit1, unit2, decimal | descrip (_[E])  W     assign a value
-rv.T        \| PYTHON | relative path | *rv-namespace*; userspace    R     *py*
-rv.T        \| HTML | relative path | *html*                         R     *html*
-rv.T        \| LATEX | relative path | *pdf*                         R     *tex*
-rv.T        \| RST | relative path | *pdf;html;both*                 R     *rst*
+rv.T        \| PYTHON | relative path | *rv-space*; userspace        R     *py*
+rv.T        \| HTML | relative path | label                          R     *html*
+rv.T        \| LATEX | relative path | label                         R     *tex*
 rv.D        \| APPEND | relative path | cover_page_title             W     *pdf*
 rv.D        \| PUBLISH | relative path | *pdf;pdftex;text;html*      W     *pdf, html, txt*
 ========== ======================================================== ===== ==================
@@ -182,7 +181,7 @@ Folders organize files in standard locations to generate *docs* and *reports*
     Folders (including subfolders) that contain author generated files 
     are marked with a single vertical bar ( | ).<br>  
     <br>
-    Folders (including subfolders) that contain rivtlib generated files are 
+    Folders (including subfolders) that contain *rivtlib* generated files are 
     marked with double vertical bars ( || ).</p>
 
 
@@ -222,7 +221,7 @@ Folders organize files in standard locations to generate *docs* and *reports*
                 ├── rv101-api.txt   
                 ├── rv101-log.txt
                 └── rv102-log.txt    
-            ├── [noprint]/                           noprint sections
+            ├── [hide]/                              hidden
                 ├── m103-1.txt                      
                 ├── t202-5.txt   
                 ├── t103-4.py                         

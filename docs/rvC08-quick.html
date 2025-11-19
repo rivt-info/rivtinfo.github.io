@@ -437,49 +437,49 @@
 <thead>
 <tr class="row-odd"><th class="head"><p>API</p></th>
 <th class="head"><p>private/public</p></th>
-<th class="head"><p>print/noprint</p></th>
+<th class="head"><p>show/hide</p></th>
 <th class="head"><p>section/merge</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>rv.M</p></td>
 <td><p><strong>private</strong>; public</p></td>
-<td><p><strong>noprint</strong>; print</p></td>
+<td><p><strong>hide</strong>; show</p></td>
 <td><p><strong>merge</strong>; section</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.R</p></td>
 <td><p><strong>private</strong>; public</p></td>
-<td><p><strong>noprint</strong>; print</p></td>
+<td><p><strong>hide</strong>; show</p></td>
 <td><p><strong>merge</strong>; section</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I</p></td>
 <td><p><strong>private</strong>; public</p></td>
-<td><p><strong>print</strong>; noprint</p></td>
+<td><p><strong>show</strong>; hide</p></td>
 <td><p><strong>section</strong>; merge</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V</p></td>
 <td><p><strong>private</strong>; public</p></td>
-<td><p><strong>print</strong>; noprint</p></td>
+<td><p><strong>show</strong>; hide</p></td>
 <td><p><strong>section</strong>; merge</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.T</p></td>
 <td><p><strong>private</strong>; public</p></td>
-<td><p><strong>noprint</strong>; print</p></td>
+<td><p><strong>hide</strong>; show</p></td>
 <td><p><strong>merge</strong>; section</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.D</p></td>
 <td><p><strong>private</strong>; public</p></td>
-<td><p><strong>noprint</strong>; print</p></td>
+<td><p><strong>hide</strong>; show</p></td>
 <td><p><strong>merge</strong>; section</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.S</p></td>
 <td><p><strong>private</strong>; public</p></td>
-<td><p><strong>noprint</strong>; print</p></td>
+<td><p><strong>hide</strong>; show</p></td>
 <td><p><strong>merge</strong>; section</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.Q</p></td>
 <td><p><strong>private</strong>; public</p></td>
-<td><p><strong>noprint</strong>; print</p></td>
+<td><p><strong>hide</strong>; show</p></td>
 <td><p><strong>merge</strong>; section</p></td>
 </tr>
 </tbody>
@@ -511,11 +511,11 @@
 <td><p>text _[R]</p></td>
 <td><p>right justify text (all)</p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.I, V</p></td>
+<tr class="row-odd"><td><p>rv.I</p></td>
 <td><p>math _[L]</p></td>
 <td><p>format LaTeX math (all)</p></td>
 </tr>
-<tr class="row-even"><td><p>rv.I, V</p></td>
+<tr class="row-even"><td><p>rv.I</p></td>
 <td><p>math _[A]</p></td>
 <td><p>format ASCII math (all)</p></td>
 </tr>
@@ -697,31 +697,26 @@
 <td><p>assign a value</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.T</p></td>
-<td><p>| PYTHON | relative path | <em>rv-namespace</em>; userspace</p></td>
+<td><p>| PYTHON | relative path | <em>rv-space</em>; userspace</p></td>
 <td><p>R</p></td>
 <td><p><em>py</em></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.T</p></td>
-<td><p>| HTML | relative path | <em>html</em></p></td>
+<td><p>| HTML | relative path | label</p></td>
 <td><p>R</p></td>
 <td><p><em>html</em></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.T</p></td>
-<td><p>| LATEX | relative path | <em>pdf</em></p></td>
+<td><p>| LATEX | relative path | label</p></td>
 <td><p>R</p></td>
 <td><p><em>tex</em></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.T</p></td>
-<td><p>| RST | relative path | <em>pdf;html;both</em></p></td>
-<td><p>R</p></td>
-<td><p><em>rst</em></p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.D</p></td>
+<tr class="row-even"><td><p>rv.D</p></td>
 <td><p>| APPEND | relative path | cover_page_title</p></td>
 <td><p>W</p></td>
 <td><p><em>pdf</em></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.D</p></td>
+<tr class="row-odd"><td><p>rv.D</p></td>
 <td><p>| PUBLISH | relative path | <em>pdf;pdftex;text;html</em></p></td>
 <td><p>W</p></td>
 <td><p><em>pdf, html, txt</em></p></td>
@@ -744,7 +739,7 @@ Required names or prefixes are shown in brackets [ ]. <br>
 Folders (including subfolders) that contain author generated files
 are marked with a single vertical bar ( | ).<br>
 <br>
-Folders (including subfolders) that contain rivtlib generated files are
+Folders (including subfolders) that contain *rivtlib* generated files are
 marked with double vertical bars ( || ).</p><p><strong>Top Level Folders</strong></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt<span class="o">]</span>-Report-Label/<span class="w">                </span>Report<span class="w"> </span>Folder<span class="w"> </span>Name
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename1.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
@@ -775,7 +770,7 @@ marked with double vertical bars ( || ).</p><p><strong>Top Level Folders</strong
 <span class="w">            </span>├──<span class="w"> </span>rv101-api.txt
 <span class="w">            </span>├──<span class="w"> </span>rv101-log.txt
 <span class="w">            </span>└──<span class="w"> </span>rv102-log.txt
-<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>noprint<span class="o">]</span>/<span class="w">                           </span>noprint<span class="w"> </span>sections
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>hide<span class="o">]</span>/<span class="w">                              </span>hidden
 <span class="w">            </span>├──<span class="w"> </span>m103-1.txt
 <span class="w">            </span>├──<span class="w"> </span>t202-5.txt
 <span class="w">            </span>├──<span class="w"> </span>t103-4.py

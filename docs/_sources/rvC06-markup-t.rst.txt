@@ -1,7 +1,6 @@
 **C.6 Tool - rv.T**
 =======================
 
-
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
@@ -13,29 +12,26 @@
 
     <hr>
 
-Files processed by the *Tools API function* are read and written to the *src/* 
-folder unless the *rv_localB* variable is set to *True* in the
-*Meta API function*. In that case files are read and written to the *rivt file*
-folder.
+Files processed by the *Tools API function* are usually read and written to the
+*src/* folder unless the *rv_localB* variable is set to *True* in the *Meta API
+function*. In that case files are read and written to the *rivt file* folder.
 
 ======================================== ==============================
        Block Tags                         Description (doc scope)
 ======================================== ==============================
- _[[PYTHON]] label, *rv-space*;newspace   Python script (all)
- _[[LATEX]] label                         LaTeX markup (pdf)[1]
  _[[HTML]] label                          HTML markup (html)
+ _[[LATEX]] label                         LaTeX markup (pdf)[1]
+ _[[PYTHON]] label, *rv-space*;newspace   Python script (all)
  _[[END]]                                 End block (all)
 ======================================== ==============================
-
 
 =================================================== ===== =================
         | Command | path | parameters                R/W     input types
 =================================================== ===== =================
- \| PYTHON | src/path | *rv-namespace*; userspace     R     *py*
  \| HTML | src/path | label                           R     *html*
  \| LATEX | src/path | label                          R     *tex*
+ \| PYTHON | src/path | *rv-namespace*; userspace     R     *py*
 =================================================== ===== =================
-
 
 .. raw:: html
 
@@ -84,7 +80,6 @@ Inserts TeX into *doc*.  May require installation of LaTeX.
 
 outputs: text, pdf, html
 
-
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
@@ -107,9 +102,7 @@ outputs: text, pdf, html
 Executes Python script in the *rivt namespace* or a user specified namespace.
 File paths in the script are relative to the *rivt file* folder.
 
-
 outputs: text, pdf, html
-
 
 .. raw:: html
 
@@ -124,7 +117,7 @@ outputs: text, pdf, html
 
 .. topic:: | HTML | src/path | label
 
-    | HTML | src/tools/page1.html | label
+    | HTML | src/tools/page1.html | code excerpt
 
 Reads and inserts .html and .htm files into *doc*. 
 
@@ -152,8 +145,6 @@ outputs: text, pdf, html
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
-
-
 
 **[8]** | PYTHON | Python script
 -------------------------------------------

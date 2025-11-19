@@ -36,7 +36,6 @@ formatted text.
 
 [2] must start in first indented column (absolute column 4)
 
-
 ======================================= ==============================
        Block Tags                        Description (doc scope)
 ======================================= ==============================
@@ -49,9 +48,6 @@ _[[VALUES]] table title (_[T])           Define values(all)
 _[[END]]                                 End block (all)
 ======================================= ==============================
 
-[1] LaTeX processing requires the installation of *Texlive*
-
-
 ======================================================== ===== ==================
          | Command | path | parameters                    R/W   input types
 ======================================================== ===== ==================
@@ -60,13 +56,12 @@ _[[END]]                                 End block (all)
  \| TABLE | relative path | width, l;c;r, title           R     *csv, txt, xlsx*
  \| TEXT | relative path |  *normal;literal* ;code        R     *txt, code*
  \| VALUES | relative path | title, *show;hide* (_[T])    R     *csv*
-a := 1*IN  | unit1, unit2, decimal | descrip (_[E])[1]    W     define a value
-b <= a + 3*FT | unit1, unit2, decimal | descrip (_[E])    W     assign a value
-c <= func1(x,y) | unit1, unit2, decimal | descrip (_[E])  W     assign a value
+a := 1*IN  | unit1, unit2, decimal | label (_[E])[1]      W     define value
+b <= a + 3*FT | unit1, unit2, decimal | label (_[E])      W     assign value
+c <= func1(x,y) | unit1, unit2, decimal | label (_[E])    W     assign value
 ======================================================== ===== ==================
 
-[1] Values are usually defined in a block where the equation tag (_[E]) 
-would not apply and will be disregarded.
+[1] The equation tag (_[E]) is ignored when values are defined in a block
 
 
 .. raw:: html

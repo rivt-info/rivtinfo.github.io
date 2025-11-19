@@ -19,12 +19,12 @@ a readable, plain text language that generates formatted text, PDF or
 HTML :term:`docs`. The different *doc* types are generated from the 
 same *rivt file*. 
 
-The first line of a *rivt string* is a header, followed by lines that are
+The first line of a *rivt string* is a header, followed by text 
 indented 4 spaces for improved readability and section folding.
 
 .. code-block:: python
 
-    rv._("""Section Label | print;noprint, private;public, section;merge
+    rv._("""Section Label | show;hide, private;public, section;merge
 
         section text (utf-8 text)
         
@@ -46,16 +46,17 @@ label" and section formatting parameters.
 
     <hr>
 
-An :term:`API header` starts with a *section label* followed by a vertical
-separator bar and comma separtaed *section parameters* that may override the
-default behavior. The *section label* is the section title. *Header*
-paramaters include the following:
+An :term:`API header` starts with a *section label* followed by comma separated
+*section parameters* that may override default behavior. The *section label* is
+the section title and is separated from the *section header* paramaters by a
+vertical bar. Parameters include the following:
 
-- private/public : determines whether the API markup is copied to the
-    *rivt file* in the */public* folder intended for sharing. 
+- private/public : determines whether the API section text is copied to the
+    the */public* folder *rivt file* for sharing. 
 
-- print/noprint : determines whether the *rivt string* is formatted and printn 
-    in the doc or just annotated. 
+- show/hide : determines whether the *rivt string* is formatted and printed 
+    in the doc or just annotated and written to a file for optional inclusion 
+    as an appendix. 
 
 - section/merge : determines whether the API starts a new *doc* section
     or is merged into the previous section.   
@@ -65,16 +66,16 @@ Default settings do not need to be specified in the *header*. In the table
 below, the default setting for each API is listed first in bold.
  
 ========== ===================== ==================== =====================
-API          private/public        print/noprint           section/merge         
+API          private/public         show/hide           section/merge         
 ========== ===================== ==================== ===================== 
-rv.M        **private**; public   **noprint**; print   **merge**; section
-rv.R        **private**; public   **noprint**; print   **merge**; section
-rv.I        **private**; public   **print**; noprint   **section**; merge   
-rv.V        **private**; public   **print**; noprint   **section**; merge    
-rv.T        **private**; public   **noprint**; print   **merge**; section
-rv.D        **private**; public   **noprint**; print   **merge**; section
-rv.S        **private**; public   **noprint**; print   **merge**; section
-rv.Q        **private**; public   **noprint**; print   **merge**; section
+rv.M        **private**; public   **hide**; show       **merge**; section
+rv.R        **private**; public   **hide**; show       **merge**; section
+rv.I        **private**; public   **show**; hide       **section**; merge   
+rv.V        **private**; public   **show**; hide       **section**; merge    
+rv.T        **private**; public   **hide**; show       **merge**; section
+rv.D        **private**; public   **hide**; show       **merge**; section
+rv.S        **private**; public   **hide**; show       **merge**; section
+rv.Q        **private**; public   **hide**; show       **merge**; section
 ========== ===================== ==================== ===================== 
 
 
@@ -82,7 +83,7 @@ Examples of *header* settings are shown below.
 
 .. code-block:: python
 
-    rv.I("""A New Section | private, print, section
+    rv.I("""A New Section | private, show, section
 
         section content (utf-8 text)
   
@@ -90,14 +91,13 @@ Examples of *header* settings are shown below.
         
         """)
 
-As defaults are specified in the prior example, the following syntax is
-equivalent:
+For the *Insert API* - rv.I(), the following syntax is equivalent:
 
 .. code-block:: python
 
     rv.I("""A New Section
 
-        section content (utf-8 text)
+        section text (utf-8)
 
         ...
         
@@ -116,8 +116,9 @@ equivalent:
 
     <hr>
 
-Section text is indented four spaces for legibility and code folding. It 
-includes *rivt tags* for text formatting and *rivt commands* for file operations.
+Section text is indented four spaces for legibility and code folding. It
+includes *rivt tags* that format lines of text and *rivt commands* that operate
+on files.
 
 .. code-block:: python
 
@@ -129,16 +130,16 @@ includes *rivt tags* for text formatting and *rivt commands* for file operations
         """)
 
 
-A section is processed line by line to formatted text and a
-`RestructuredText string <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_,
-and then further processed to an HTML or PDF file. If a line does not 
-contain a *command* or *tag* it is passed through as is, which allows for 
-including *restructured text* directly. For example surrounding text 
-with * for italics  or ** for bold. *Text docs* are formatted separately.
+A section is processed line by line into formatted text and `RestructuredText
+<https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_, and then
+further processed to an HTML or PDF file. If a line does not contain a
+*command* or *tag* it is passed through as is, which allows for including some
+*restructured text* directly. For example surrounding words with * for italics
+or ** for bold. 
 
 In addition the *Tools API function* (rv.T) supports inserting raw Python,
-HTML, LaTex and resTructuredText that is isolated from the primary textual
-content of the file which improves readability.
+HTML and LaTex. Since it can be hid from the primary textual
+content of the file rv.T() improves readability.
 
 .. raw:: html
 

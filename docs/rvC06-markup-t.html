@@ -385,10 +385,9 @@
 <h1><strong>C.6 Tool - rv.T</strong><a class="headerlink" href="#c-6-tool-rv-t" title="Link to this heading">#</a></h1>
 <p id="api">&lt;i&gt;</p><section id="summary">
 <h2><strong>[1]</strong> Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
-<hr><p>Files processed by the <em>Tools API function</em> are read and written to the <em>src/</em>
-folder unless the <em>rv_localB</em> variable is set to <em>True</em> in the
-<em>Meta API function</em>. In that case files are read and written to the <em>rivt file</em>
-folder.</p>
+<hr><p>Files processed by the <em>Tools API function</em> are usually read and written to the
+<em>src/</em> folder unless the <em>rv_localB</em> variable is set to <em>True</em> in the <em>Meta API
+function</em>. In that case files are read and written to the <em>rivt file</em> folder.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Block Tags</p></th>
@@ -396,14 +395,14 @@ folder.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>_[[PYTHON]] label, <em>rv-space</em>;newspace</p></td>
-<td><p>Python script (all)</p></td>
+<tr class="row-even"><td><p>_[[HTML]] label</p></td>
+<td><p>HTML markup (html)</p></td>
 </tr>
 <tr class="row-odd"><td><p>_[[LATEX]] label</p></td>
 <td><p>LaTeX markup (pdf)[1]</p></td>
 </tr>
-<tr class="row-even"><td><p>_[[HTML]] label</p></td>
-<td><p>HTML markup (html)</p></td>
+<tr class="row-even"><td><p>_[[PYTHON]] label, <em>rv-space</em>;newspace</p></td>
+<td><p>Python script (all)</p></td>
 </tr>
 <tr class="row-odd"><td><p>_[[END]]</p></td>
 <td><p>End block (all)</p></td>
@@ -422,17 +421,17 @@ folder.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>| PYTHON | src/path | <em>rv-namespace</em>; userspace</p></td>
-<td><p>R</p></td>
-<td><p><em>py</em></p></td>
-</tr>
-<tr class="row-odd"><td><p>| HTML | src/path | label</p></td>
+<tr class="row-even"><td><p>| HTML | src/path | label</p></td>
 <td><p>R</p></td>
 <td><p><em>html</em></p></td>
 </tr>
-<tr class="row-even"><td><p>| LATEX | src/path | label</p></td>
+<tr class="row-odd"><td><p>| LATEX | src/path | label</p></td>
 <td><p>R</p></td>
 <td><p><em>tex</em></p></td>
+</tr>
+<tr class="row-even"><td><p>| PYTHON | src/path | <em>rv-namespace</em>; userspace</p></td>
+<td><p>R</p></td>
+<td><p><em>py</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -480,7 +479,7 @@ File paths in the script are relative to the <em>rivt file</em> folder.</p>
 <hr><aside class="topic">
 <p class="topic-title">| HTML | src/path | label</p>
 <div class="line-block">
-<div class="line">HTML | src/tools/page1.html | label</div>
+<div class="line">HTML | src/tools/page1.html | code excerpt</div>
 </div>
 </aside>
 <p>Reads and inserts .html and .htm files into <em>doc</em>.</p>

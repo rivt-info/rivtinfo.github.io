@@ -115,11 +115,10 @@ An example *report* folder structure is shown below.
                 ├── rv101-api.txt   
                 ├── rv101-log.txt
                 └── rv102-log.txt    
-            ├── [noprint]/                           noprint sections
+            ├── [hide]/                              hidden sections
                 ├── m103-1.txt                      
                 ├── t202-5.txt   
-                ├── t103-4.py                         
-                └── opensees1.txt           
+                └── t103-4.py                         
             ├── [temp]/                              temp files
                 └── rv101-label3.tex
             └── [vals]/                              value output files
