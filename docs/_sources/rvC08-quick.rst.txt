@@ -34,14 +34,14 @@ The :term:`API headers` determine overall processing of the section.
 ========== ===================== ==================== =====================
 API          private;public         show;hide           section;merge         
 ========== ===================== ==================== ===================== 
-rv.M        **private**;public     **hide**;show       **merge**;section
-rv.R        **private**;public     **hide**;show       **merge**;section
-rv.I        **private**;public     **show**;hide       **section**;merge   
-rv.V        **private**;public     **show**;hide       **section**;merge    
-rv.T        **private**;public     **hide**;show       **merge**;section
-rv.D        **private**;public     **hide**;show       **merge**;section
-rv.S        **private**;public     **hide**;show       **merge**;section
-rv.Q        **private**;public     **hide**;show       **merge**;section
+rv.M        **private**; public     **hide**; show       **merge**;section
+rv.R        **private**; public     **hide**; show       **merge**;section
+rv.I        **private**; public     **show**; hide       **section**;merge   
+rv.V        **private**; public     **show**; hide       **section**;merge    
+rv.T        **private**; public     **hide**; show       **merge**;section
+rv.D        **private**; public     **hide**; show       **merge**;section
+rv.S        **private**; public     **hide**; show       **merge**;section
+rv.Q        **private**; public     **hide**; show       **merge**;section
 ========== ===================== ==================== ===================== 
 
 
