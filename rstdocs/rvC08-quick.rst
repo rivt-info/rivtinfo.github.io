@@ -28,10 +28,10 @@ rv.S(rS)           Skip              Skip section
 rv.X(rS)           Quit              Exit rivt 
 =============== =============== ========================================
 
+
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
-
 
 **[2]** API Headers
 ----------------------- 
@@ -123,7 +123,7 @@ all         _[[END]]                                End block (all)
 
     <p id="api">&lt;i&gt;</p>
 
-**[5]** Commands
+**[4]** Commands
 -------------------
 
 .. raw:: html
