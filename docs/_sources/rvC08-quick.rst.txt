@@ -6,7 +6,6 @@
 
     <p id="api">&lt;i&gt;</p>
 
-
 **[1]** API 
 --------------------
 
@@ -35,13 +34,13 @@ rv.X(rS)           Quit              Exit rivt
     <p id="api">&lt;i&gt;</p>
 
 **[2]** API Headers
------------------------ 
+--------------------
 
 .. raw:: html
 
     <hr>
 
-The :term:`API headers` determine overall section processing.
+The :term:`API headers` determine overall processing of the section.
 
 ========== ===================== ==================== =====================
 API          private;public         show;hide           section;merge         
