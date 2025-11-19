@@ -15,9 +15,9 @@
 
 The rivt API defines *doc* content and properties.
 
-=============== =============== ========================================
+=============== =============== =========================================
 API Function        Name             Purpose
-=============== =============== ========================================
+=============== =============== =========================================
 rv.M(rS)           Meta              Meta data 
 rv.R(rS)           Run               Run shell commands
 rv.I(rS)           Insert            Insert static resources 
@@ -26,7 +26,7 @@ rv.T(rS)           Tool              Import Python and Markup functions
 rv.D(rS)           Doc               Publish docs 
 rv.S(rS)           Skip              Skip section
 rv.X(rS)           Quit              Exit rivt 
-=============== =============== ========================================
+=============== =============== =========================================
 
 
 .. raw:: html
@@ -43,16 +43,16 @@ rv.X(rS)           Quit              Exit rivt
 The :term:`API headers` determine overall section processing.
 
 ========== ===================== ==================== =====================
-API          private/public         show/hide           section/merge         
+API          private;public         show;hide           section;merge         
 ========== ===================== ==================== ===================== 
-rv.M        **private**; public   **hide**; show       **merge**; section
-rv.R        **private**; public   **hide**; show       **merge**; section
-rv.I        **private**; public   **show**; hide       **section**; merge   
-rv.V        **private**; public   **show**; hide       **section**; merge    
-rv.T        **private**; public   **hide**; show       **merge**; section
-rv.D        **private**; public   **hide**; show       **merge**; section
-rv.S        **private**; public   **hide**; show       **merge**; section
-rv.Q        **private**; public   **hide**; show       **merge**; section
+rv.M        **private**;public     **hide**;show       **merge**;section
+rv.R        **private**;public     **hide**;show       **merge**;section
+rv.I        **private**;public     **show**;hide       **section**;merge   
+rv.V        **private**;public     **show**;hide       **section**;merge    
+rv.T        **private**;public     **hide**;show       **merge**;section
+rv.D        **private**;public     **hide**;show       **merge**;section
+rv.S        **private**;public     **hide**;show       **merge**;section
+rv.Q        **private**;public     **hide**;show       **merge**;section
 ========== ===================== ==================== ===================== 
 
 
