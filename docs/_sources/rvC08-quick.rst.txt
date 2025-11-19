@@ -6,8 +6,8 @@
 
     <p id="api">&lt;i&gt;</p>
 
-**[1]** API 
---------------------
+**[1]** API and Headers
+------------------------
 
 .. raw:: html
 
@@ -29,17 +29,6 @@ rv.X(rS)           Quit              Exit rivt
 =============== =============== =========================================
 
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[2]** API Headers
---------------------
-
-.. raw:: html
-
-    <hr>
-
 The :term:`API headers` determine overall processing of the section.
 
 ========== ===================== ==================== =====================
@@ -60,7 +49,7 @@ rv.Q        **private**;public     **hide**;show       **merge**;section
 
     <p id="api">&lt;i&gt;</p>
 
-**[3]** Tags
+**[2]** Tags
 ----------------------
 
 .. raw:: html
@@ -123,7 +112,7 @@ all         _[[END]]                                End block (all)
 
     <p id="api">&lt;i&gt;</p>
 
-**[4]** Commands
+**[3]** Commands
 -------------------
 
 .. raw:: html
@@ -160,7 +149,7 @@ would not apply and will be disregarded.
 
     <p id="api">&lt;i&gt;</p>
 
-**[5]** Folders
+**[4]** Folders
 -------------------
 
 .. raw:: html
