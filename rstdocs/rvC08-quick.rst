@@ -7,13 +7,13 @@
 
 
 **[1]** API 
---------------------------------------------------------------------- 
+--------------------
 
 .. raw:: html
 
     <hr>
 
-The API defines *doc* content and properties.
+The rivt API defines *doc* content and properties.
 
 =============== =============== ========================================
 API Function        Name             Purpose
@@ -40,7 +40,7 @@ rv.X(rS)           Quit              Exit rivt
 
     <hr>
 
-:term:`API headers` determine overall section processing.
+The :term:`API headers` determine overall section processing.
 
 ========== ===================== ==================== =====================
 API          private/public         show/hide           section/merge         
@@ -60,7 +60,7 @@ rv.Q        **private**; public   **hide**; show       **merge**; section
 
     <p id="api">&lt;i&gt;</p>
 
-**[4]** Tags
+**[3]** Tags
 ----------------------
 
 .. raw:: html
