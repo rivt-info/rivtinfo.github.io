@@ -16,12 +16,12 @@
 The *Doc API* publishes formatted document files from rivt strings.
 *Tags* are not used in this function.
 
-============================================================== ================ 
+============================================================== ================= 
         | Command | relative path | parameters                   doc types
-============================================================== ================ 
-\| APPEND | relative path | *none*;title;separatorfile          pdf,html,text
-\| PUBLISH | *pdf;pdftex;html;text* | *none*;title;coverfile    pdf,html,text
-============================================================== ================ 
+============================================================== ================= 
+\| APPEND | relative path | *none*;title;separatorfile          pdf, html, text
+\| PUBLISH | *pdf;pdftex;html;text* | *none*;title;coverfile    pdf, html, text
+============================================================== ================= 
 
 .. raw:: html
 
