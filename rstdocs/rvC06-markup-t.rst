@@ -1,41 +1,48 @@
 **C.6 Tool - rv.T**
 =======================
 
-Files processed by the *Tools API function* are read and written to the
-*src/tools* folder unless the *rvsource* variable is set to *True* in the *Meta
-API function*. In that case files are read and written to the *rivt file* folder.
 
-**Summary**
+.. raw:: html
 
-======================================= ==============================
-       Block Tags                        Description (doc scope)
-======================================= ==============================
- _[[PYTHON]] label, *rv-space*;newspace  Python script (all)
- _[[LATEX]] label                        LaTeX markup (pdf)[1]
- _[[HTML]] label                         HTML markup (html)
- _[[END]]                                End block (all)
-======================================= ==============================
+    <p id="api">&lt;i&gt;</p>
+
+**[1]** Summary
+------------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+Files processed by the *Tools API function* are read and written to the *src/* 
+folder unless the *rv_localB* variable is set to *True* in the
+*Meta API function*. In that case files are read and written to the *rivt file*
+folder.
+
+======================================== ==============================
+       Block Tags                         Description (doc scope)
+======================================== ==============================
+ _[[PYTHON]] label, *rv-space*;newspace   Python script (all)
+ _[[LATEX]] label                         LaTeX markup (pdf)[1]
+ _[[HTML]] label                          HTML markup (html)
+ _[[END]]                                 End block (all)
+======================================== ==============================
 
 
-======================================================== ===== =================
-         | Command | path | parameters                    R/W   input types
-======================================================== ===== =================
- \| PYTHON | relative path | *rv-namespace*; userspace    R     *py*
- \| HTML | relative path | *html*                         R     *html*
- \| LATEX | relative path | *pdf*                         R     *tex*
- \| RST | relative path | *pdf;html;both*                 R     *rst*
-======================================================== ===== =================
-
-[1] Values are usually defined in a block where the equation tag (_[E]) 
-would not apply and will be disregarded.
+=================================================== ===== =================
+        | Command | path | parameters                R/W     input types
+=================================================== ===== =================
+ \| PYTHON | src/path | *rv-namespace*; userspace     R     *py*
+ \| HTML | src/path | label                           R     *html*
+ \| LATEX | src/path | label                          R     *tex*
+=================================================== ===== =================
 
 
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
 
-**[1]** _[[HTML]] : HTML code
-------------------------------------------------
+**[2]** _[[HTML]] : HTML code
+---------------------------------------
 
 .. raw:: html
 
@@ -43,23 +50,21 @@ would not apply and will be disregarded.
 
 .. code-block:: text
         
-     _[[HTML]] pdf;nopdf
+     _[[HTML]] label
      code
      code
      ...
      _[[QUIT]]
 
-If the parameter is pdf a PDF file is output. It may be added as a
-source of the HTML *doc*. The file name is derived from the rivt doc and section
-number.
+Inserts HTML into *doc*. 
 
-outputs: pdf, html
+outputs: text, pdf, html
 
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
 
-**[2]** _[[LATEX]] : LaTeX code
+**[4]** _[[LATEX]] : LaTeX code
 ------------------------------------------------
 
 .. raw:: html
@@ -68,24 +73,23 @@ outputs: pdf, html
 
 .. code-block:: text
         
-    _[[LATEX]] description
+    _[[LATEX]] label
     code
     code
     ...
-    _[[QUIT]]
+    _[[END]]
 
-outputs: pdf, html
+
+Inserts TeX into *doc*.  May require installation of LaTeX.
+
+outputs: text, pdf, html
+
 
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
 
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[3]** _[[PYTHON]] : Python code
+**[5]** _[[PYTHON]] : Python code
 ------------------------------------------------
 
 .. raw:: html
@@ -98,11 +102,31 @@ outputs: pdf, html
       code
       code
       ...
-      _[[QUIT]]
+      _[[END]]
 
 Executes Python script in the *rivt namespace* or a user specified namespace.
-File paths are constucted relative to the *rivt file* folder.
+File paths in the script are relative to the *rivt file* folder.
 
+
+outputs: text, pdf, html
+
+
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
+**[6]** | HTML | HTML markup
+-------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: | HTML | src/path | label
+
+    | HTML | src/tools/page1.html | label
+
+Reads and inserts .html and .htm files into *doc*. 
 
 outputs: text, pdf, html
 
@@ -110,64 +134,20 @@ outputs: text, pdf, html
 
     <p id="api">&lt;i&gt;</p>
 
-**[4]** | RST | reStructuredText markup
+**[7]** | LATEX | LaTeX markup
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | RST | relative path | description
+.. topic:: | LATEX | src/path | label
 
-    | RST | src/tools/page1.rst | a sidebar
+    | LATEX | src/tools/page1.tex | frame analysis
 
-Reads *.rst* files and outputs PDF or HTML markup. The description is for author
-reference only.
+Reads and inserts .tex files into *doc*. May require installation of LaTeX.
 
-outputs: pdf, html
-
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[5]** | HTML | HTML markup
--------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: | HTML | relative path | *pdf;nopdf*
-
-    | HTML | src/tools/page1.html | pdf
-
-Reads .html and .htm files and outputs HTML markup. If the parameter is *pdf* a
-separate PDF file is output from the formatted HTML and may be appended to a
-PDF report. The file name is derived from the rivt doc and section number.
-
-outputs: pdf, html
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[6]** | LATEX | LaTeX markup
--------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: | LATEX | relative path | *pdf;nopdf*
-
-    | LATEX | src/tools/page1.tex | nopdf
-
-Reads .tex files. If the parameter is *pdf* a separate PDF file is output from
-the formatted LaTeX and may be appended to an HTML report. The file name is
-derived from the rivt doc and section number.
-
-outputs: pdf, html
+outputs: text, pdf, html
 
 .. raw:: html
 
@@ -175,18 +155,18 @@ outputs: pdf, html
 
 
 
-**[7]** | PYTHON | Python script
+**[8]** | PYTHON | Python script
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | SCRIPT | rel path | 
+.. topic:: | PYTHON | src/path | *rv-space*; user space
    
-    | PYTHON | src/tools/script1.py | *rv-namespace*; user namespace
+    | PYTHON | src/tools/script1.py | rv-space
 
 Executes Python code in the *rivt namespace* or user specified namespace. File
-paths are constucted relative to the *rivt file* folder.
+paths used in the script are relative to the *rivt file* folder.
 
 outputs: text, pdf, html

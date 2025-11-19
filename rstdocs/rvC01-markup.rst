@@ -216,7 +216,7 @@ file types
 
     <hr>
 
-**[#]** | Command | : description
+**| COMMAND |** :term:`command` descripion
 
 
 .. topic:: | COMMAND | relative path | parameters

@@ -215,6 +215,9 @@ Folders organize files in standard locations to generate *docs* and *reports*
         ├── [rv201-]filename3.py               
         ├── [rv202-]filename4.py               
         ├── [out]/                             || other output files from rivt
+            ├── data/                              output files from programs
+                ├── data1.txt   
+                └── data2.txt                
             ├── [logs]/                              log files
                 ├── rv101-api.txt   
                 ├── rv101-log.txt

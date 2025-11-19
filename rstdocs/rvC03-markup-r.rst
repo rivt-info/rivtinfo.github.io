@@ -5,12 +5,15 @@
 
     <p id="api">&lt;i&gt;</p>
 
-**[1]** **Summary**
+**[1]** Summary
 ------------------------------------
 
 .. raw:: html
 
     <hr>
+
+
+The *Run* API function executes shell commands.
 
 ======================================= ==============================
        Block Tags                        Description (doc scope)

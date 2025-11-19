@@ -3,6 +3,21 @@
 
 **Summary**
 
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
+
+**[1]** Summary
+-------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+The *Insert* API function inserts static resources into the *doc* including
+images, tables and formatted text.
+
 ============================= =======================================
         Line Tags              Description (doc scope)
 ============================= =======================================
@@ -69,25 +84,25 @@ assigned in the order they are processed.
 
 outputs: text, pdf, html
 
+
 .. raw:: html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[3]** _[H] or ______ : horizontal line
-------------------------------------------- 
+
+**[3]** _[C] :  center text
+-------------------------------------------
+
 .. raw:: html
 
     <hr>
 
-.. topic:: _[H] or 4 or more underscores
+.. topic:: text _[C]
 
-    ___________     
-    
+    This text will be centered _[C]
 
-    or some text _[H]
+Center text within the page margins.
 
-Draws a horizontal line the width of the page.
-    
 outputs: text, pdf, html
 
 .. raw:: html
@@ -95,20 +110,21 @@ outputs: text, pdf, html
     <p style="text-align: right;"> &lt;i&gt; </p>
 
 
-**[4]** _[A] : ASCII math
+**[4]** _[R] : right justify text
 -----------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: *equation* _[A]
+.. topic:: *equation* _[L]
 
-    f(x,y) = sin(x)**2 + y/5 _[A]
+    \frac{1}{\sqrt{x}} _[L]
 
-The math expression will be formated in ASCII text.
+The LaTeX math expression will be formatted in PDF and HTML.
 
-outputs: text, pdf, html
+outputs: pdf, html
+
 
 .. raw:: html
 
@@ -134,20 +150,21 @@ outputs: pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[6]** _[C] :  center 
--------------------------------------------
+**[6]** _[A] : ASCII math
+-----------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: text _[C]
+.. topic:: *equation* _[A]
 
-    This text will be centered _[C]
+    f(x,y) = sin(x)**2 + y/5 _[A]
 
-Center text within the page margins.
+The math expression will be formated in ASCII text.
 
 outputs: text, pdf, html
+
 
 .. raw:: html
 
@@ -270,7 +287,28 @@ outputs: text, pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[13]** _[P] : new page
+**[13]** ______ : horizontal line
+------------------------------------------- 
+.. raw:: html
+
+    <hr>
+
+.. topic:: _[H] or 4 or more underscores
+
+    ___________     
+    
+
+    or some text _[H]
+
+Draws a horizontal line the width of the page.
+    
+outputs: text, pdf, html
+
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+**[14]** ======== : new page
 -----------------------------------------
 
 .. raw:: html
@@ -289,83 +327,31 @@ outputs: text, pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[14]** _[[TEXT]] : literal text or code
-------------------------------------------------
+**[15]** _[[INDENT]] : indent text
+----------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic::  _[[TEXT]] language or *literal*
+.. topic::  _[[INDENT]] spaces
 
     ::
-        
-        _[[TEXT]] python
-        print("some text")
-        b = 3 + 5
+
+        _[[INDENT]] 4
+        text
+        text
         ...
         _[[QUIT]]
 
-This block formats text as literal or code. The parameters specify formatting
-and syntax coloring. Languages include: - *python* - *bash* - *sh* - *cmd*
+Indents text four spaces.
 
-outputs: text, pdf, html
 
 .. raw:: html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[15]** _[[LATEX]] : LaTeX
-------------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic::  _[[L]] 
-    
-    ::
-        
-        _[[L]]
-        \frac{\alpha}{\beta}
-        \sum_{n=1}^{10} n
-        ...
-        _[[QUIT]]
-
-Formats LaTeX, which needs to be installed.
-
-outputs: pdf, html
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[16]** _[[NOTE]] : endnote text
--------------------------------------------    
-
-.. raw:: html
-
-    <hr>
-
-
-.. topic:: _[[NOTE]] 
-    
-    ::
-   
-        _[[NOTE]]
-        this is an endnote - assigned to an endnote tag [#] in order of
-        of processing.
-        _[[QUIT]] 
-
-Formats and numbers an endnote in order of processing.
-
-outputs: text, pdf, html
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[17]** _[[ITALIC]] : indent italic
+**[16]** _[[ITALIC]] : indent italic
 ------------------------------------------------
 
 .. raw:: html
@@ -390,28 +376,56 @@ outputs: pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-.. raw:: html
 
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[18]** _[[INDENT]] : indent text
-----------------------------------------------
+**[17]** _[[NOTE]] : endnote text
+-------------------------------------------    
 
 .. raw:: html
 
     <hr>
 
-.. topic::  _[[INDENT]] spaces
+
+.. topic:: _[[NOTE]] 
+    
+    ::
+   
+        _[[NOTE]]
+        this is an endnote - assigned to an endnote tag [#] in order of
+        of processing.
+        _[[QUIT]] 
+
+Formats and numbers an endnote in order of processing.
+
+outputs: text, pdf, html
+
+
+.. raw:: html
+
+    <p style="text-align: right;"> &lt;i&gt; </p>
+
+
+
+**[18]** _[[TEXT]] : literal text or code
+------------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic::  _[[TEXT]] language or *literal*
 
     ::
-
-        _[[INDENT]] 4
-        text
-        text
+        
+        _[[TEXT]] python
+        print("some text")
+        b = 3 + 5
         ...
         _[[QUIT]]
 
-Indents text four spaces.
+This block formats text as literal or code. The parameters specify formatting
+and syntax coloring. Languages include: - *python* - *bash* - *sh* - *cmd*
+
+outputs: text, pdf, html
 
 .. raw:: html
 
@@ -442,23 +456,8 @@ outputs: pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[20]** **COMMAND KEY**
----------------------------
 
-.. raw:: html
-
-    <hr>
-
-.. topic:: | COMMAND | relative path | parameters
-
-  example
-
-Commands read and write files. The relative path is relative to the *rivt file*.
-
-outputs: types of outputs
-
-
-**[21]** | IMAGE | : insert image
+**[20]** | IMAGE | : insert image
 -------------------------------------------
 
 .. raw:: html
@@ -478,7 +477,7 @@ outputs: PDF, HTML
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[22]** | IMAGE2 | : insert adjacent images 
+**[21]** | IMAGE2 | : insert adjacent images 
 --------------------------------------------------
 
 .. raw:: html
@@ -498,7 +497,7 @@ outputs: PDF, HTML
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[23]** | TABLE | : format table
+**[22]** | TABLE | : format table
 ------------------------------------------
 
 .. raw:: html
@@ -520,7 +519,7 @@ outputs: text, PDF, HTML
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[26]** | TEXT | : format text
+**[23]** | TEXT | : format text
 ------------------------------------------
 
 .. raw:: html
