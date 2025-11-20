@@ -68,8 +68,6 @@ API Scope             Line Tags              Description (doc scope)
 rv.I, V           text _[#]                  endnote number (all)
 rv.I, V           text _[C]                  center text (all)
 rv.I, V           text _[R]                  right justify text (all)
-rv.I              math _[L]                  format LaTeX math (all) 
-rv.I              math _[A]                  format ASCII math (all) 
 rv.I, V          label _[E]                  equation number and label (all)
 rv.I, V        caption _[I]                  image number and caption (all)[1]
 rv.I, V          title _[T]                  table number and title (all)[1]
@@ -78,6 +76,8 @@ rv.I, V           text _[D] report link      link doc within report (all)
 rv.I, V           text _[U] external url     external url link (all)
 rv.I, V           \-\-\-\-\-                 >4 dashes inserts line (all)[2]
 rv.I, V           \=\=\=\=\=                 >4 underscores inserts page (all)[2]
+rv.I              math _[L]                  format LaTeX math (all) 
+rv.I              math _[A]                  format ASCII math (all) 
 ============= ============================= =======================================
 
 [1] tag may be added to the label parameter in the IMAGE and TABLE commands
