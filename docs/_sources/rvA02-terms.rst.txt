@@ -80,6 +80,17 @@
     A folder containing multiple rivt files to be organized in a report 
     and resources organized in subfolders
 
+  rivt framework
+  framework
+    The *rivt-framework* includes installation of the following programs:
+
+    #. `VSCode <https://code.visualstudio.com/>`_ and 
+       `VSCode extensions <https://marketplace.visualstudio.com/vscode>`_. 
+       *rivt* extensions and snippets are :doc:`here <rvB03-vscode>`.
+    #. `Git <https://git-scm.com>`_ and set up a `GitHub <hhttps://github.com>`_ 
+    #. `LaTeX <https://www.tug.org/texlive/>`_ 
+    #. `QCAD <https://qcad.io/en/>`_ 
+
   line tag
   line tags
     A line tag has the form **_[TAG]** and formats a line of text. 
@@ -143,7 +154,7 @@
 
   rv-namespace
   rv-space
-    Alias name for the global rivt file namespace. Other user namespaces may be 
+    rivt alias name for the global rivt file namespace. Other user namespaces may be 
     specified
 
   rv_authD

@@ -237,4 +237,4 @@ the root along with four primary subfolders:
         ├── [src]/                      |  source files 
         └── README.txt                  || searchable text report 
 
-An example of a complete folder structure is shown :ref:`here<report-folders>`
+An example of a complete folder structure is shown :ref:`here <report-folders>`.

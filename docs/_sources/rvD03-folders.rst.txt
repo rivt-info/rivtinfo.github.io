@@ -20,9 +20,8 @@ using *doc numbers*. If the *rivt file* names are:
 
     rvA01-filename.py
     rv105-filename.py
-    rv212-filename.py  
 
-the *report numbers* used in the report would be: 
+The *report numbers* used in the published report would be: 
 
 .. code-block:: bash
 
@@ -97,6 +96,9 @@ An example *report* folder structure is shown below.
         ├── [src]/                      |  source files from author
         ├── [stored]/                   || rivt stored files
         └── README.txt                  || searchable text report 
+
+
+.. _report-folders:
 
 
 **Expanded Folders**
