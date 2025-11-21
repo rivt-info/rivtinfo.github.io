@@ -6,20 +6,7 @@
             "args": []
         }
     },
-    "fsdeploy.deployOnSave": true,
-    "fsdeploy.deployWorkspaceOnSave": false,
-    "fsdeploy.nodes": [
-        {
-            "source": "C:/git/rivtinfo.github.io-git",
-            "target": "C:/Users/rodhh/OneDrive/StL-rivt/rivt-info/rivtinfo.github.io",
-            "include": "**/*.*",
-            "exclude": "**/.git",
-            "deleteTargetOnDeploy": true,
-            "name": "yoga laptop"
-        }
-    ],
     "git.postCommitCommand": "sync",
-    "git.autofetch": true,
     "editor.formatOnSave": true,
     "editor.rulers": [
         {
@@ -118,6 +105,7 @@
         "rivtlib"
     ],
     "cSpell.suggestionMenuType": "quickFix",
+    "workbench.sideBar.location": "right",
     "workbench.colorTheme": "Visual Studio Dark",
     "workbench.colorCustomizations": {
         "tab.activeBackground": "#2a2570",
@@ -125,13 +113,43 @@
         "statusBar.background": "#172335",
     },
     "workbench.panel.defaultLocation": "right",
-    "cSpell.enabled": false,
     "python.defaultInterpreterPath": "c:\\Python313\\python.exe",
     "explorer.sortOrder": "type",
-    "workbench.sideBar.location": "right",
+    "editor.hover.enabled": false,
+    "editor.parameterHints.enabled": false,
     "editor.minimap.enabled": false,
+<<<<<<< HEAD
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "editor.hover.enabled": false,
     "editor.parameterHints.enabled": false,
+=======
+    "editor.rulers": [
+        80
+    ],
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "git.autofetch": true,
+    "cSpell.enabled": false,
+    "surround.custom": {
+        // command name must be unique
+        "boldsurround": {
+            // label must be unique
+            "label": "boldsurround",
+            "description": "rst bold",
+            "snippet": "**$TM_SELECTED_TEXT**$0",
+            "languageIds": [
+                "*"
+            ]
+        },
+        // You can add more ...
+    },
+    "extensions.ignoreRecommendations": true,
+>>>>>>> f66ea4fc136e9c9cd2105cebc16d284ee603bc78
 }
