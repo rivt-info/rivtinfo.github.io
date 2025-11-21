@@ -186,10 +186,10 @@ Folders organize files in standard locations to generate *docs* and *reports*
 
         ...
 
-        ├── [out]/                      || other output files
         ├── [public]/                   || public rivt files 
-        ├── [publish]/                  || report and doc files
-        ├── [src]/                      |  source files 
+        ├── [publish]/                  || doc and report files
+        ├── [src]/                      |  source files from author
+        ├── [stored]/                   || rivt stored files
         └── README.txt                  || searchable text report 
 
 
@@ -201,25 +201,7 @@ Folders organize files in standard locations to generate *docs* and *reports*
         ├── [rv101-]filename1.py               | rivt input files
         ├── [rv102-]filename2.py               
         ├── [rv201-]filename3.py               
-        ├── [rv202-]filename4.py               
-        ├── [out]/                             || other output files from rivt
-            ├── data/                              output files from programs
-                ├── data1.txt   
-                └── data2.txt                
-            ├── [logs]/                              log files
-                ├── rv101-api.txt   
-                ├── rv101-log.txt
-                └── rv102-log.txt    
-            ├── [hide]/                              hidden
-                ├── m103-1.txt                      
-                ├── t202-5.txt   
-                ├── t103-4.py                         
-                └── opensees1.txt           
-            ├── [temp]/                              temp files
-                └── rv101-label3.tex
-            └── [vals]/                              value output files
-                ├── v101-2.csv
-                └── v102-3.csv          
+        ├── [rv202-]filename4.py                 
         ├── [public]/                          || public rivt files                      
             ├── rv-101-filename1.py              
             ├── rv-201-filename3.py  
@@ -281,7 +263,7 @@ Folders organize files in standard locations to generate *docs* and *reports*
                 ├── table1.csv                                               
                 ├── image1.png                            
                 └── opensees1.txt    
-            ├── [gen]/
+            ├── [gendoc]/
                 ├── gen-html.cmd                     html generating script
                 ├── gen-pdf.cmd                      pdf generating script
                 ├── gen-pdftex.cmd                   LaTeX generating script
@@ -308,6 +290,23 @@ Folders organize files in standard locations to generate *docs* and *reports*
                         └── rv-text.ini
             └── [vals]/                              value files
                 ├── steel-vals.csv     
-                └── plastic-vals.csv             
+                └── plastic-vals.csv
+        ├── [stored]/                          || stored files from rivt            
+            ├── [hide]/                              hidden                    
+                ├── rv202-5d.txt   
+                ├── rv103-4t.txt                         
+                └── rv301-2r.txt
+            ├── [logs]/                              log files
+                ├── rv101-api.txt   
+                ├── rv101-log.txt
+                └── rv102-log.txtad
+            ├── [meta]/                              meta data files
+                ├── rv101-meta.txt   
+                └── rv102-meta.txt               
+            ├── [temp]/                              temp files
+                └── rv101-label3.tex
+            └── [vals]/                              stored value files
+                ├── v101-2.csv
+                └── v102-3.csv        
         └── README.txt                         || searchable text report 
 

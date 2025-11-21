@@ -19,9 +19,9 @@
 
   doc
   docs
-    A formatted document file output by rivt. The file is a text, 
-    PDF or HTML file with the same name as the *rivt file* and the selected
-    file type suffix.
+    A formatted document file output using the rivtlib package. 
+    A doc is a text, PDF or HTML file with the default name of the *rivt file* 
+    and file type suffix.
 
 
   doc number 
@@ -50,6 +50,12 @@
     The first line of a  *rivt string*. It includes a section title, followed 
     by comma separated parameters.
 
+  rivt doc
+  rivt docs
+    A formatted document file output from a *rivt file* using the rivtlib package. 
+    A doc is a text, PDF or HTML file with the default name of the *rivt file* 
+    and file type suffix.
+  
   rivtlib
     Python package that generates docs and reports from 
     a `rivt file. <https://rivtlib.dev>`_
@@ -174,11 +180,16 @@
 .. glossary::
   :sorted: 
 
+  
+  Python
+    A language
+  
   docutils
     A Python package that processes `restructured text <https://docutils.sourceforge.io/>`_
     files into HTML, LaTeX, and other formats.
 
-  restructured text
+  restructuredtext
+  restructuredtext markup
     A lightweight markup language designed to be processed by document software 
     including `docutils, <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_ 
     Sphinx and rivt.

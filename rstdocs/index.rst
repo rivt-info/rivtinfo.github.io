@@ -22,16 +22,17 @@ Home
    <hr>
 
 *rivt* is an open source Python project for writing and sharing engineering
-documents using *rivt files*
+documents (*rivt docs*).
 
-A *rivt file* is a Python file (.py) that imports the *rivtlib* package and
-outputs a formatted *doc* file as text, HTML or PDF from *rivt markup*.
-*rivtlib* defines an API that implements the *rivt markup* language and wraps
-and extends reStructuredText markup. It also organizes multiple *docs* into a
-report. This site is an example of an HTML report.
+A :term:`rivt doc` is a text, HTML or PDF file published from a :term:`rivt
+file`. A *rivt file* is a :term:`Python` file (.py) that imports the
+:term:`rivtlib` package. *rivtlib* defines an API that implements 
+:term:`rivt markup` and wraps and extends :term:`reStructuredText markup`. It also
+organizes multiple *docs* into a :term:`report`. This site is an example of an
+HTML report.
 
-*rivt* integrates well with other open source programs. An integrated 
-*rivt framework* is described :doc:`here. <rvB01-install>`.
+*rivt* integrates well with other open source programs. A recommended
+:term:`rivt framework` is described :doc:`here. <rvB01-install>`.
 
 :doc:`This <rvA04-docex>` is a small single *doc* example.
 :doc:`This <rvD05-reportex>` is a small *report* example. A
