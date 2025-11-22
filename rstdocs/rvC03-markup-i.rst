@@ -228,7 +228,7 @@ outputs: text, pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[10]** _[S] : link sections
+**[10]** _[S] : section link
 -----------------------------------------
 
 .. raw:: html
@@ -248,7 +248,7 @@ outputs: text, pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[11]** _[D] : link docs
+**[11]** _[D] : doc link
 -----------------------------------------
 
 .. raw:: html
@@ -268,7 +268,7 @@ outputs: text, pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[12]** _[U] : external url
+**[12]** _[U] : url - external
 -----------------------------------------
 
 .. raw:: html
@@ -293,12 +293,11 @@ outputs: text, pdf, html
 
     <hr>
 
-.. topic:: _[H] or 4 or more underscores
+.. topic:: 5 or more underscores
 
     ___________     
     
 
-    or some text _[H]
 
 Draws a horizontal line the width of the page.
     
@@ -315,11 +314,11 @@ outputs: text, pdf, html
 
     <hr>
 
-.. topic:: text _[P]
+.. topic:: 5 or more double dashes
 
-     end of line. _[P]
+     =======
 
-Starts a new page. Pages indicated with double dashed line in text output.
+Starts a new page.
 
 outputs: text, pdf, html
 

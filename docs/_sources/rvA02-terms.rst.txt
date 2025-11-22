@@ -80,9 +80,10 @@
     A folder containing multiple rivt files to be organized in a report 
     and resources organized in subfolders
 
-  rivt framework
-  framework
-    The *rivt-framework* includes installation of the following programs:
+  rivt framework 
+  
+    The recommended *rivt-framework* includes the
+    following programs, installed separately:
 
     #. `VSCode <https://code.visualstudio.com/>`_ and 
        `VSCode extensions <https://marketplace.visualstudio.com/vscode>`_. 

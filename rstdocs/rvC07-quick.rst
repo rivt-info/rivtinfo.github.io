@@ -18,7 +18,6 @@ The rivt API formats *doc* conteent.
 =============== =============== =========================================
 API Function        Name             Purpose
 =============== =============== =========================================
-rv.M(rS)           Meta              Meta data 
 rv.R(rS)           Run               Run shell commands
 rv.I(rS)           Insert            Insert static resources 
 rv.V(rS)           Value             Calculate values
@@ -34,14 +33,13 @@ The :term:`API headers` determine overall processing of the section.
 ========== ===================== ==================== =====================
 API          private;public         show;hide           section;merge         
 ========== ===================== ==================== ===================== 
-rv.M        **private**; public     **hide**; show       **merge**;section
 rv.R        **private**; public     **hide**; show       **merge**;section
 rv.I        **private**; public     **show**; hide       **section**;merge   
 rv.V        **private**; public     **show**; hide       **section**;merge    
 rv.T        **private**; public     **hide**; show       **merge**;section
 rv.D        **private**; public     **hide**; show       **merge**;section
 rv.S        **private**; public     **hide**; show       **merge**;section
-rv.Q        **private**; public     **hide**; show       **merge**;section
+rv.X        **private**; public     **hide**; show       **merge**;section
 ========== ===================== ==================== ===================== 
 
 
@@ -90,7 +88,6 @@ rv.I              math _[A]                  format ASCII math (all)
 ========== ======================================= ==============================
 API Scope         Block Tags                        Description (doc scope)
 ========== ======================================= ==============================
-rv.M        _[[AUTH]] label                         author data (all)
 rv.R        _[[WIN]] label, *wait;nowait*           Windows command script (all)
 rv.R        _[[MACOS]] label, *wait;nowait*         Mac shell script (all)
 rv.R        _[[LINUX]] label, *wait;nowait*         Linux shell script (all)
@@ -103,6 +100,7 @@ rv.V        _[[VALUES]] table title (_[T])          Define values(all)
 rv.T        _[[PYTHON]] label, *rv-space*;newspace  Python script (all)
 rv.T        _[[LATEX]] label                        LaTeX markup (pdf)[1]
 rv.T        _[[HTML]] label                         HTML markup (html)
+rv.D        _[[LAYOUT]] label                       Doc format settings (all)
 all         _[[END]]                                End block (all)
 ========== ======================================= ==============================
 
@@ -250,16 +248,13 @@ Folders organize files in standard locations to generate *docs* and *reports*
                 ├── rv202-filename4.txt       
                 └── README.txt                       searchable text report                     
         ├── [src]                              | source files from author               
-            ├── data/                               author created subfolders
+            ├── data/                               author created subfolder
                 ├── data1.csv   
                 └── conc-vals.csv  
-            ├── image/                                             
+            ├── image/                              author created subfolder                          
                 ├── fig1.png
                 └── fig2.jpg
-            ├── scripts/                            
-                ├── plot.py                               
-                └── loads.py
-            ├── output/                              script and shell output
+            ├── output/                             author created subfolder
                 ├── table1.csv                                               
                 ├── image1.png                            
                 └── opensees1.txt    
@@ -288,6 +283,9 @@ Folders organize files in standard locations to generate *docs* and *reports*
                         └── rivt.sty              
                     ├── [text]/                      text ini file
                         └── rv-text.ini
+            ├── [py]/                                Python scripts and functions
+                    ├── plot.py                               
+                    └── loads.py
             └── [vals]/                              value files
                 ├── steel-vals.csv     
                 └── plastic-vals.csv
@@ -310,3 +308,128 @@ Folders organize files in standard locations to generate *docs* and *reports*
                 └── v102-3.csv        
         └── README.txt                         || searchable text report 
 
+
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
+**[5]** Metadata
+-------------------
+
+.. raw:: html
+
+    <hr>
+
+The *Metadata* API function is the first *API function* if used. The function
+provides *doc* metadata and overrides defaults. Metadata is specified using
+Python dictionaries, lists and strings. It uses the convention (used in
+rivtlib code) of a suffix indicating the data type.
+    
+============================= ===============================================
+    Variable                        Description (doc scope)
+============================= ===============================================
+:term:`rv_authD`                specifies author information
+:term:`rv_fork1D`               specifies author fork information
+:term:`rv_localB`               true; false - specifies if a single doc
+:term:`rv_docnameS`             overrides *doc* name taken from file name
+:term:`rv_headerL`              ordered list of header content
+============================= ===============================================
+
+.. raw:: html
+
+    <p id="api">&lt;m&gt;</p>
+
+
+**[2]** Dictionaries
+------------------------------------------------
+
+*rv_authD* specifies the author, version, email, repository and license
+information and lists the forks. *rv_forknD* specifies data for the forked
+file. The *rv_authD* is always included.
+
+.. raw:: html
+
+    <hr>
+
+..  code-block:: python
+
+    # default - author dictionary
+    rv_authD = {
+            "authors": "",
+            "version": "0.0.0",
+            "email": "",
+            "repo": "",
+            "license": "https://opensource.org/license/mit/",
+            "forks": ["", "", "", ""],
+            }
+
+    # example - author dicitionary
+    rv_authD = {
+            "authors": "rholland",
+            "version": "0.6.1",
+            "email": "rod.h.holland@gmail.com",
+            "repo": "https://github.com/rivt-info/rivt-simple-doc",
+            "license": "https://opensource.org/license/mit/",
+            "forks": ["rv_fork1D", "", "", ""],
+            }
+    
+    #example - fork dictionary
+    rv_fork1D = {
+            "authors": "",
+            "version": "0.1.0",
+            "email": "",
+            "repo": "",
+            }
+
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
+**[3]** Lists
+------------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+*rv_headerL* specfies the contents and order of the doc per page heading.
+
+..  code-block:: python
+
+    # default - header list
+    rv_headerL = ["date", "time", "file", "version"]
+    
+    # example - header list
+    rv_headerL = ["date", "file", "authors", "version"]
+
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
+**[4]** Variables
+------------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+*rv_localB* overrides the default report structure and specifies that the *values*
+and *logs* files are written to the local rivt folder.
+
+..  code-block:: python
+
+     # default - folder setting
+     rv_localB = false
+     
+     # example - folder setting override
+     rv_localB = true
+
+*rv_docnameS* overrides the default doc title derived from the rivt file name.
+
+..  code-block:: python
+
+    # default - doc name override
+     rv_docnameS = "" # does not override default name
+     
+     # example - folder setting override
+     rv_docnameS = "My Document Title"

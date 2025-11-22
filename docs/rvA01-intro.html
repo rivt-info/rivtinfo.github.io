@@ -510,14 +510,11 @@ terminal and generate formatted <em>doc</em> content.</p>
 <div><p>The <em>Run API</em> executes shell commands.</p>
 <p>The <em>Insert API</em> adds static table, image, equation and text content.</p>
 <p>The <em>Value API</em> evaluates equations and functions.</p>
-<p>The <em>Tool API</em> extends <em>rivt</em> by importing and processing raw HTML, LaTeX,
-and Python scripts.</p>
+<p>The <em>Tool API</em> processes HTML, LaTeX, and Python scripts.</p>
 </div></blockquote>
-<p>The four processing functions (<strong>M D S Q</strong>) are related to processing and output.
-The <em>Meta</em> function specifies <em>rivt file</em> author and version information and
-sets processing variables. The <em>Doc</em> function controls publishing formatted
-dcouments (<em>doc</em> files) as text, PDF or HTML . The <em>Skip</em> and <em>Exit</em> functions
-are used for interactive editing and debugging.</p>
+<p>The three processing functions (<strong>D S X</strong>) are related to processing and
+output. The <em>Doc</em> API specifies settings for publishing formatted <a class="reference internal" href="rvA02-terms.html#term-docs"><span class="xref std std-term">docs</span></a>.
+The <em>Skip</em> and <em>Exit</em> functions are used for interactive editing and debugging.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>API Function</p></th>
@@ -526,36 +523,32 @@ are used for interactive editing and debugging.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>rv.M(rS)</p></td>
-<td><p>Meta</p></td>
-<td><p>Meta data</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.R(rS)</p></td>
+<tr class="row-even"><td><p>rv.R(rS)</p></td>
 <td><p>Run</p></td>
 <td><p>Run shell commands</p></td>
 </tr>
-<tr class="row-even"><td><p>rv.I(rS)</p></td>
+<tr class="row-odd"><td><p>rv.I(rS)</p></td>
 <td><p>Insert</p></td>
 <td><p>Insert static resources</p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.V(rS)</p></td>
+<tr class="row-even"><td><p>rv.V(rS)</p></td>
 <td><p>Value</p></td>
 <td><p>Calculate values</p></td>
 </tr>
-<tr class="row-even"><td><p>rv.T(rS)</p></td>
+<tr class="row-odd"><td><p>rv.T(rS)</p></td>
 <td><p>Tool</p></td>
 <td><p>Import Python and Markup functions</p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.D(rS)</p></td>
+<tr class="row-even"><td><p>rv.D(rS)</p></td>
 <td><p>Doc</p></td>
 <td><p>Publish docs</p></td>
 </tr>
-<tr class="row-even"><td><p>rv.S(rS)</p></td>
+<tr class="row-odd"><td><p>rv.S(rS)</p></td>
 <td><p>Skip</p></td>
 <td><p>Skip section</p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.X(rS)</p></td>
-<td><p>Quit</p></td>
+<tr class="row-even"><td><p>rv.X(rS)</p></td>
+<td><p>Exit</p></td>
 <td><p>Exit rivt</p></td>
 </tr>
 </tbody>
@@ -581,7 +574,7 @@ byvthe section text, indented four spaces for legibility and section folding.</p
 <p>Section text includes <a class="reference internal" href="rvA02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> - a plain text language that
 generates <em>doc</em> files formatted as text, HTML or PDF. <em>rivt markup</em> includes
 <a class="reference internal" href="rvA02-terms.html#term-line-tags"><span class="xref std std-term">line tags</span></a>, <a class="reference internal" href="rvA02-terms.html#term-block-tags"><span class="xref std std-term">block tags</span></a> and <a class="reference internal" href="rvA02-terms.html#term-commands"><span class="xref std std-term">commands</span></a> summarized
-<a class="reference internal" href="rvC08-quick.html"><span class="doc">here.</span></a>  See <a class="reference internal" href="rvC01-markup.html"><span class="doc">Markup</span></a> for further
+<span class="xref std std-doc">here.</span>  See <a class="reference internal" href="rvC01-markup.html"><span class="doc">Markup</span></a> for further
 details.</p>
 <div class="toctree-wrapper compound">
 </div>
@@ -589,18 +582,18 @@ details.</p>
 <section id="report-folders">
 <h2><strong>[5]</strong>  Report Folders<a class="headerlink" href="#report-folders" title="Link to this heading">#</a></h2>
 <hr><p>Reports are organized under a single root report folder with the prefix
-<em>rivt-</em>. File paths are relative to the root folder. <em>rivt files</em> are stored under
-the root along with four primary subfolders:</p>
+<em>rivt-</em>. File paths are relative to the root folder. <em>rivt files</em> are
+stored under the root along with four primary subfolders:</p>
 <dl class="simple">
-<dt><em>out</em></dt><dd><p>Stores resource output files written by <em>rivtlib</em> including <em>logs</em>, <em>values</em>,
-and <em>noprint</em> sections.</p>
-</dd>
 <dt><em>public</em></dt><dd><p>Stores exported <em>rivt files</em> intended for upload to a public repository.</p>
 </dd>
 <dt><em>publish</em></dt><dd><p>Stores formatted <em>docs</em> and <em>reports</em></p>
 </dd>
 <dt><em>src</em></dt><dd><p>Stores author provided content, style and generating files for <em>docs</em>
 and <em>reports</em></p>
+</dd>
+<dt><em>stored</em></dt><dd><p>Stores output files managed by <em>rivtlib</em> including <em>logs</em>, <em>values</em>,
+<em>hidden</em>, and <a href="#id13"><span class="problematic" id="id14">*</span></a>metadata.</p>
 </dd>
 </dl>
 <p id="top-folders"><strong>Folder Key</strong></p>
@@ -622,10 +615,10 @@ marked with double vertical bars ( || ).</p><p><strong>Top Level Folders</strong
 
 <span class="w">    </span>...
 
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>out<span class="o">]</span>/<span class="w">                      </span><span class="o">||</span><span class="w"> </span>other<span class="w"> </span>output<span class="w"> </span>files
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>public<span class="o">]</span>/<span class="w">                   </span><span class="o">||</span><span class="w"> </span>public<span class="w"> </span>rivt<span class="w"> </span>files
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>publish<span class="o">]</span>/<span class="w">                  </span><span class="o">||</span><span class="w"> </span>report<span class="w"> </span>and<span class="w"> </span>doc<span class="w"> </span>files
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>src<span class="o">]</span>/<span class="w">                      </span><span class="p">|</span><span class="w">  </span><span class="nb">source</span><span class="w"> </span>files
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>stored<span class="o">]</span>/<span class="w">                   </span><span class="o">||</span><span class="w"> </span>stored<span class="w"> </span>rivt<span class="w"> </span>files
 <span class="w">    </span>└──<span class="w"> </span>README.txt<span class="w">                  </span><span class="o">||</span><span class="w"> </span>searchable<span class="w"> </span>text<span class="w"> </span>report
 </pre></div>
 </div>

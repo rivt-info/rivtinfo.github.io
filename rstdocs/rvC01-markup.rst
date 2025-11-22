@@ -230,7 +230,17 @@ file types
 
     <hr>
 
+.. raw:: html
 
+    <p id="api">&lt;i&gt;</p>
+
+
+**[6]** Metadata
+----------------------------------
+
+.. raw:: html
+
+    <hr>
 
 .. toctree::
     :maxdepth: 1

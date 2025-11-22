@@ -12,8 +12,18 @@
 
     <hr>
 
-The *Doc API* publishes formatted document files from rivt strings.
-*Tags* are not used in this function.
+The *Doc API* publishes formatted document files from rivt API strings.
+
+**Block Tags**
+
+======================================= ==============================
+       Block Tags                        Description (doc scope)
+======================================= ==============================
+ _[[LAYOUT]] label                       Doc format settings (all)
+ _[[END]]                                End block (all)
+======================================= ==============================
+
+**Commands**
 
 ============================================================== ================= 
         | Command | relative path | parameters                   doc types
@@ -22,11 +32,30 @@ The *Doc API* publishes formatted document files from rivt strings.
 \| PUBLISH | *pdf;pdftex;html;text* | *none*;title;coverfile    pdf, html, text
 ============================================================== ================= 
 
+**[2]** _[[INDENT]] : indent text
+----------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic::  _[[LAYOUT]] label
+
+    ::
+
+        _[[LAYOUT]] 4
+        head_template: 
+        foot_template:
+        ...
+        _[[QUIT]]
+
+    The LAYOUT block overrides default style settings.
+
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
 
-**[2]** | APPEND  | - append PDF file
+**[3]** | APPEND  | - append PDF file
 -------------------------------------------
 
 .. raw:: html
@@ -45,7 +74,7 @@ outputs:  PDF, HTML, text
 
     <p id="api">&lt;i&gt;</p>
 
-**[3]** | PUBLISH |  - write doc file
+**[4]** | PUBLISH |  - write doc file
 -------------------------------------------
 
 .. raw:: html

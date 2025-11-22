@@ -109,26 +109,22 @@ terminal and generate formatted *doc* content.
 
     The *Value API* evaluates equations and functions. 
 
-    The *Tool API* extends *rivt* by importing and processing raw HTML, LaTeX,
-    and Python scripts.
+    The *Tool API* processes HTML, LaTeX, and Python scripts.
 
-The four processing functions (**M D S Q**) are related to processing and output.
-The *Meta* function specifies *rivt file* author and version information and
-sets processing variables. The *Doc* function controls publishing formatted
-dcouments (*doc* files) as text, PDF or HTML . The *Skip* and *Exit* functions
-are used for interactive editing and debugging.
+The three processing functions (**D S X**) are related to processing and
+output. The *Doc* API specifies settings for publishing formatted :term:`docs`. 
+The *Skip* and *Exit* functions are used for interactive editing and debugging.
 
 =============== =============== ===========================================
 API Function        Name             Purpose
 =============== =============== ===========================================
-rv.M(rS)           Meta              Meta data 
 rv.R(rS)           Run               Run shell commands
 rv.I(rS)           Insert            Insert static resources 
 rv.V(rS)           Value             Calculate values
 rv.T(rS)           Tool              Import Python and Markup functions
 rv.D(rS)           Doc               Publish docs 
 rv.S(rS)           Skip              Skip section
-rv.X(rS)           Quit              Exit rivt 
+rv.X(rS)           Exit              Exit rivt 
 =============== =============== ===========================================
 
 
@@ -184,12 +180,8 @@ details.
     <hr>
 
 Reports are organized under a single root report folder with the prefix
-*rivt-*. File paths are relative to the root folder. *rivt files* are stored under
-the root along with four primary subfolders:
-
-*out*
-   Stores resource output files written by *rivtlib* including *logs*, *values*, 
-   and *noprint* sections.
+*rivt-*. File paths are relative to the root folder. *rivt files* are 
+stored under the root along with four primary subfolders:
 
 *public* 
     Stores exported *rivt files* intended for upload to a public repository.
@@ -200,6 +192,10 @@ the root along with four primary subfolders:
 *src*
     Stores author provided content, style and generating files for *docs* 
     and *reports*
+
+*stored*
+   Stores output files managed by *rivtlib* including *logs*, *values*, 
+   *hidden*, and *metadata.
 
 .. _top-folders:
 
@@ -231,10 +227,10 @@ the root along with four primary subfolders:
 
         ...
 
-        ├── [out]/                      || other output files
         ├── [public]/                   || public rivt files 
         ├── [publish]/                  || report and doc files
         ├── [src]/                      |  source files 
+        ├── [stored]/                   || stored rivt files
         └── README.txt                  || searchable text report 
 
 An example of a complete folder structure is shown :ref:`here <report-folders>`.

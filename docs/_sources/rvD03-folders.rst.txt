@@ -158,16 +158,13 @@ An example *report* folder structure is shown below.
                 ├── rv202-filename4.txt       
                 └── README.txt                       searchable text report                     
         ├── [src]                              | source files from author               
-            ├── data/                               author created subfolders
+            ├── data/                               author created subfolder
                 ├── data1.csv   
                 └── conc-vals.csv  
-            ├── image/                                             
+            ├── image/                              author created subfolder                          
                 ├── fig1.png
                 └── fig2.jpg
-            ├── scripts/                            
-                ├── plot.py                               
-                └── loads.py
-            ├── output/                              script and shell output
+            ├── output/                             author created subfolder
                 ├── table1.csv                                               
                 ├── image1.png                            
                 └── opensees1.txt    
@@ -196,6 +193,9 @@ An example *report* folder structure is shown below.
                         └── rivt.sty              
                     ├── [text]/                      text ini file
                         └── rv-text.ini
+            ├── [py]/                                Python scripts and functions
+                    ├── plot.py                               
+                    └── loads.py
             └── [vals]/                              value files
                 ├── steel-vals.csv     
                 └── plastic-vals.csv
@@ -217,4 +217,3 @@ An example *report* folder structure is shown below.
                 ├── v101-2.csv
                 └── v102-3.csv        
         └── README.txt                         || searchable text report 
-
