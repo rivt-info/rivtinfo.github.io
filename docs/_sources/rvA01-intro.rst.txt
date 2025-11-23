@@ -12,8 +12,8 @@
 
     <hr>
 
-*rivt* is an open source software project that simplifies reuse and sharing of
-engineering documents. Collaboration on documents reduces repetitive work and
+*rivt* is an open source software project that simplifies reuse of shared 
+engineering documents. Collaboration reduces repetitive work and
 improves quality. Although a number of document software programs are
 available, reuse and sharing is generally difficult because of limitations in
 the terms of software use and distribution:

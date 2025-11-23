@@ -188,9 +188,9 @@ An example *report* folder structure is shown below.
                         ├── style/                 
                         ├── Report-Cover.pdf           
                         └── genrst2pdf.cmd
-                    ├── [pdftex]/                    pdftex style files
-                        ├── gentexpdf.cmd             
-                        ├── Report-cover.pdf                     
+                    ├── [pdftex]/                    pdftex style files            
+                        ├── Report-cover.pdf
+                        ├── gentex2pdf.cmd                      
                         └── rivt.sty              
                     ├── [text]/                      text ini file
                         └── rv-text.ini
