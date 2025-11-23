@@ -27,9 +27,9 @@ Home
 is a text, HTML or PDF file published from a *rivt file*. A *rivt file* is 
 a :term:`Python` file (.py) that includes *rivtlib* and :term:`rivt markup`. 
 
-*rivtlib* defines an API that implements *rivt markup* that wraps and 
-extends :term:`reStructuredText markup`. It also organizes multiple *docs* 
-into a :term:`report`. This site is an example of an HTML report.
+*rivtlib* defines an API for *rivt markup*, which wraps and extends
+:term:`reStructuredText markup`. It also organizes multiple *docs* into a
+:term:`report`. This site is an example of an HTML report.
 
 *rivt* integrates well with other open source programs. The recommended
 :term:`rivt framework` is described :doc:`here. <rvB01-install>`.
