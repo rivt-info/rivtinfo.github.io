@@ -44,22 +44,23 @@ divisions and subdivisions in the *report*.
     <hr>
 
 Reports are organized under a single root report folder with the prefix
-*rivt-*. File paths are relative to root folder. *rivt files* are stored under
-the root along with four primary subfolders:
-
-*out*
-   Stores resource output files written by *rivtlib* including *logs*, *values*, 
-   and *noprint* sections.
+*rivt-*. *rivt files* are stored in the root folder and *rivt markup* file paths
+are relative to the roo.  Resource files are stored in four primary subfolders:
 
 *public* 
-    Stores exported *rivt files* intended for upload to a public repository.
+    Includes *rivt files* written by *rivtlib* intended for upload to 
+    a public repository.
 
 *publish*
-    Stores formatted *docs* and *reports*
+    Includes formatted *docs* and *reports* written by *rivtlib*.
 
 *src*
-    Stores author provided content, style and generating files for *docs* 
-    and *reports*
+    Includes author provided content, style and generating files for *docs* 
+    and *reports*.
+
+*stored*
+   Includes output files written by *rivtlib* including *logs*, *values*, 
+   *hidden*, and *metadata* and *reports*
 
 An example *report* folder structure is shown below.
 

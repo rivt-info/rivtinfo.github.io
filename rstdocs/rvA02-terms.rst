@@ -159,24 +159,15 @@
     specified
 
   rv_authD
-    Defined in rv.M(). Specifies the author, version, email, repository and 
-    license information and lists the forks. *rv_forknD* specifies data for 
-    the forked file. 
+    Metadata that specifies the author, version, email, repository and 
+    license information and lists any forks.
 
-  rv_fork1D 
-    Defined in rv.M(). Example name of a *doc* fork specified in the *forks* 
-    list of rv_authD.
+  rv_forknD 
+    Metadata that specifies author information for the fork. 
 
   rv_localB 
-    Defined in rv.M(). Overrides the default report structure and specifies 
-    that the *values* and *ouput* files are written to the rivt file folder.
-
-  rv_docnameS
-    Defined in rv.M(). Overrides the default doc title derived from 
-    the rivt file name.
-
-  rv_headerL
-    Defined in rv.M(). Specfies the contents and order of *doc* page headings.
+    Metadata that overrides the default report structure and specifies 
+    that all rivt file resources are read from written to the rivt file folder.
 
 .. raw:: html
 
@@ -228,6 +219,11 @@
 
   repository 
     a storage location for software packages
+
+  fork
+    duplicate of a software project's code to create a new, 
+    independent version
+
 
 .. raw:: html
 

@@ -320,32 +320,23 @@ Folders organize files in standard locations to generate *docs* and *reports*
 
     <hr>
 
-The *Metadata* API function is the first *API function* if used. The function
-provides *doc* metadata and overrides defaults. Metadata is specified using
-Python dictionaries, lists and strings. It uses the convention (used in
-rivtlib code) of a suffix indicating the data type.
+*Metadata* is specified before any API functions are called and uses standard
+Python dictionaries, lists and strings. It is specified outside the *rivtlib*
+API functions and provides author information and global file path handling.
     
-============================= ===============================================
-    Variable                        Description (doc scope)
-============================= ===============================================
-:term:`rv_authD`                specifies author information
-:term:`rv_fork1D`               specifies author fork information
-:term:`rv_localB`               true; false - specifies if a single doc
-:term:`rv_docnameS`             overrides *doc* name taken from file name
-:term:`rv_headerL`              ordered list of header content
-============================= ===============================================
+================ ============================================================
+Variable [1]                      Description
+================ ============================================================
+rv_authD          dictionary specifies author information
+rv_fork1D         dictionary specifies author fork information
+rv_localB         true; false [default] - set resource files to local folder
+================ ============================================================
 
-.. raw:: html
-
-    <p id="api">&lt;m&gt;</p>
-
-
-**[2]** Dictionaries
-------------------------------------------------
+[1] variables use *rivtlib* code convention of a suffix indicating data type
 
 *rv_authD* specifies the author, version, email, repository and license
 information and lists the forks. *rv_forknD* specifies data for the forked
-file. The *rv_authD* is always included.
+file. The *rv_authD* dictionary always precedes *rv_forknD*.
 
 .. raw:: html
 
@@ -373,6 +364,11 @@ file. The *rv_authD* is always included.
             "forks": ["rv_fork1D", "", "", ""],
             }
     
+ 
+*rv_forknD* specifies author information for a rivt file :term:`fork`.
+
+..  code-block:: python
+
     #example - fork dictionary
     rv_fork1D = {
             "authors": "",
@@ -385,36 +381,10 @@ file. The *rv_authD* is always included.
 
     <p id="api">&lt;i&gt;</p>
 
-**[3]** Lists
-------------------------------------------------
 
-.. raw:: html
-
-    <hr>
-
-*rv_headerL* specfies the contents and order of the doc per page heading.
-
-..  code-block:: python
-
-    # default - header list
-    rv_headerL = ["date", "time", "file", "version"]
-    
-    # example - header list
-    rv_headerL = ["date", "file", "authors", "version"]
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[4]** Variables
-------------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-*rv_localB* overrides the default report structure and specifies that the *values*
-and *logs* files are written to the local rivt folder.
+*rv_localB* overrides the default report structure and specifies that all
+resource files are read from and written to the *rivt file* folder instead of
+*rivt folders*.  It is intended for simple, *single docs*.
 
 ..  code-block:: python
 
@@ -423,13 +393,3 @@ and *logs* files are written to the local rivt folder.
      
      # example - folder setting override
      rv_localB = true
-
-*rv_docnameS* overrides the default doc title derived from the rivt file name.
-
-..  code-block:: python
-
-    # default - doc name override
-     rv_docnameS = "" # does not override default name
-     
-     # example - folder setting override
-     rv_docnameS = "My Document Title"

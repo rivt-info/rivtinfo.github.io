@@ -13,8 +13,8 @@
     <hr>
 
 *rivt* is an open source software project that simplifies reuse and sharing of
-engineering documents. Collaboration on standard documents reduces repetitive
-work and improves quality. Although a number of document software programs are
+engineering documents. Collaboration on documents reduces repetitive work and
+improves quality. Although a number of document software programs are
 available, reuse and sharing is generally difficult because of limitations in
 the software use and its distribution:
 
@@ -172,6 +172,11 @@ details.
     rvA03-faq.rst
     rvA04-docex.rst
 
+
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
 **[5]**  Report Folders
 -------------------------------
 
@@ -180,21 +185,22 @@ details.
     <hr>
 
 Reports are organized under a single root report folder with the prefix
-*rivt-*. File paths are relative to the root folder. *rivt files* are 
-stored under the root along with four primary subfolders:
+*rivt-*. *rivt files* are stored in the root folder and *rivt markup* file paths
+are relative to the roo.  Resource files are stored in four primary subfolders:
 
 *public* 
-    Stores exported *rivt files* intended for upload to a public repository.
+    Includes *rivt files* written by *rivtlib* intended for upload to 
+    a public repository.
 
 *publish*
-    Stores formatted *docs* and *reports*
+    Includes formatted *docs* and *reports* written by *rivtlib*.
 
 *src*
-    Stores author provided content, style and generating files for *docs* 
-    and *reports*
+    Includes author provided content, style and generating files for *docs* 
+    and *reports*.
 
 *stored*
-   Stores output files managed by *rivtlib* including *logs*, *values*, 
+   Includes output files written by *rivtlib* including *logs*, *values*, 
    *hidden*, and *metadata*.
 
 .. _top-folders:
@@ -233,4 +239,37 @@ stored under the root along with four primary subfolders:
         ├── [stored]/                   || stored rivt files
         └── README.txt                  || searchable text report 
 
-An example of a complete folder structure is shown :ref:`here <report-folders>`.
+An example of a complete folder structure is :ref:`here <report-folders>`.
+
+
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
+**[5]** Metadata
+-------------------
+
+.. raw:: html
+
+    <hr>
+
+*Metadata* is specified before any API functions are called and uses standard
+Python dictionaries, lists and strings. It is specified outside the *rivtlib*
+API functions and provides author information and global file path handling. 
+See :doc:`here <rvC01-markup>` for further details.
+    
+=================== ==========================================================
+    Variable                        Description
+=================== ==========================================================
+:term:`rv_authD`     specifies author information
+:term:`rv_forknD`    specifies author fork information - n is a number
+:term:`rv_localB`    true; false [default] - resource files are local
+=================== ==========================================================
+
+*rv_authD* specifies the author, version, email, repository and license
+information and lists the forks. *rv_forknD* specifies data for the forked
+file. The *rv_authD* is always included.
+
+*rv_localB* overrides the default report structure and specifies that all
+resource files are read from and written to the *rivt file* folder instead of
+*rivt folders*.  It is intended for simple, *single docs*.
