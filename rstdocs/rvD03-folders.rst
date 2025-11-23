@@ -200,19 +200,19 @@ An example *report* folder structure is shown below.
                 └── plastic-vals.csv
         ├── [stored]/                          || stored files from rivt            
             ├── [hide]/                              hidden                    
-                ├── rv202-5d.txt   
-                ├── rv103-4t.txt                         
-                └── rv301-2r.txt
+                ├── rv202-5d-Beams.txt   
+                ├── rv103-4t-Deflection.txt                         
+                └── rv301-2r-OpenSees.txt
             ├── [logs]/                              log files
                 ├── rv101-api.txt   
                 ├── rv101-log.txt
-                └── rv102-log.txtad
+                └── rv102-log.txt
             ├── [meta]/                              meta data files
                 ├── rv101-meta.txt   
                 └── rv102-meta.txt               
             ├── [temp]/                              temp files
-                └── rv101-label3.tex
+                └── rv101-standards.tex
             └── [vals]/                              stored value files
-                ├── v101-2.csv
-                └── v102-3.csv        
+                ├── v101-2-bracket.csv
+                └── v102-3-materials.csv        
         └── README.txt                         || searchable text report 

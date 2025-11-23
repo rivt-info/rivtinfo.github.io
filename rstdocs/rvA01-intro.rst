@@ -15,8 +15,8 @@
 *rivt* is an open source software project that simplifies reuse of shared 
 engineering documents. Collaboration reduces repetitive work and
 improves quality. Although a number of document software programs are
-available, reuse and sharing is generally not possible because of limitations in
-software terms of use and distribution:
+available, reuse and sharing is generally not possible because of limitations 
+in software terms of use and distribution:
 
 - documents come from many incompatible programs
 - document formats become obsolete and inaccessible
@@ -62,7 +62,7 @@ Jupyter        no       no         no      yes         yes      yes
     <p id="api">&lt;i&gt;</p>
 
 
-**[2]** rivt file
+**[2]** rivt File
 --------------------------------------------------------------------- 
 
 .. raw:: html
@@ -135,7 +135,7 @@ Each function takes a single *rivt string* (triple quoted string) argument.
 
     <p id="api">&lt;i&gt;</p>
 
-**[4]** rivt string
+**[4]** rivt String
 ------------------------------------------------------------------------ 
 
 .. raw:: html
@@ -186,7 +186,7 @@ details.
 
 Reports are organized under a single root report folder with the prefix
 *rivt-*. *rivt files* are stored in the root folder and *rivt markup* file paths
-are relative to the roo.  Resource files are stored in four primary subfolders:
+are relative to the root.  Resource files are stored in four primary subfolders:
 
 *public* 
     Includes *rivt files* written by *rivtlib* intended for upload to 
@@ -214,10 +214,10 @@ are relative to the roo.  Resource files are stored in four primary subfolders:
 
     Required names or prefixes are shown in brackets [ ]. <br>
     <br>
-    Folders (including subfolders) that contain author generated files 
+    Folders and subfolders that contain author generated files 
     are marked with a single vertical bar ( | ).<br>  
     <br>
-    Folders (including subfolders) that contain rivtlib generated files are 
+    Folders and subfolders that contain *rivtlib* generated files are 
     marked with double vertical bars ( || ).</p>
 
 

@@ -30,7 +30,8 @@ images, tables and formatted text.
  caption _[I]                  image number and caption (all)[1]
    title _[T]                  table number and title (all)[1]
     text _[S] section link     link section within doc (all)
-    text _[D] report link      link doc within report (all)
+    text _[D] term link            defined term link (all)
+    text _[R] report link      link docs within report (all)
     text _[U] external url     external url link (all)
     \-\-\-\-\-                 >4 dashes inserts line (all)[2]
     \=\=\=\=\=                 >4 underscores inserts page (all)[2]
@@ -46,7 +47,8 @@ images, tables and formatted text.
  _[[INDENT]] spaces (4 default)          Indent (all)
  _[[ITALIC]] spaces (4 default)          Italic indent - (all)
  _[[NOTES]] optional label               Endnote descriptions (all)
- _[[TEXT]] optional language             *literal*, code (all)
+ _[[TEXT]] optional language             *literal*, code language (all)
+ _[[TERMS]] label                        Glossary of terms
  _[[TOPIC]] topic                        Topic (all)
  _[[END]]                                End block (all)
 ======================================= ==============================
