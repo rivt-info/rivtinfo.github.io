@@ -14,15 +14,15 @@
         The Run function processes shell commands.
 
         Each API function defines a new document section. The first line is a
-        heading line which includes the section heading, a parameter for redacting
-        sections in a mirror file intended for public sharing, and a parameter for
-        the background color for the section. If the section heading is preceded by
-        two dashes (--) the section is continued from the prior section without
-        introducting a new number.
+        heading line which includes the section heading, a parameter for
+        redacting sections in a mirror file intended for public sharing, and a
+        parameter for the background color for the section. If the section
+        heading is preceded by two dashes (--) the section is continued from
+        the prior section without introducting a new number.
         
-        File formatting follows pep8 and ruff. API functions start in column one.
-        All other lines are indented 4 spaces to facilitate section folding,
-        bookmarks and legibility.
+        File formatting follows pep8 and ruff. API functions start in column
+        one. All other lines are indented 4 spaces to facilitate section
+        folding, bookmarks and legibility.
 
         """)
 
