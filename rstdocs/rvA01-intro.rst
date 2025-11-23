@@ -160,7 +160,7 @@ byvthe section text, indented four spaces for legibility and section folding.
 Section text includes :term:`rivt markup` - a plain text language that
 generates *doc* files formatted as text, HTML or PDF. *rivt markup* includes
 :term:`line tags`, :term:`block tags` and :term:`commands` summarized 
-:doc:`here. <rvC08-quick>`  See :doc:`Markup</rvC01-markup>` for further 
+:doc:`here. <rvC07-quick>`  See :doc:`Markup</rvC01-markup>` for further 
 details. 
 
 
@@ -195,7 +195,7 @@ stored under the root along with four primary subfolders:
 
 *stored*
    Stores output files managed by *rivtlib* including *logs*, *values*, 
-   *hidden*, and *metadata.
+   *hidden*, and *metadata*.
 
 .. _top-folders:
 

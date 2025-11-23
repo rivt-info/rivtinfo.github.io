@@ -152,7 +152,7 @@ content of the file rv.T() improves readability.
 
     <hr>
 
-:doc:`Tags <rvC08-quick>`
+:doc:`Tags <rvC07-quick>`
 
 A :term:`line tag` formats a line of text and is denoted with **_[TAG]**, usually 
 at the end of the line.
@@ -160,7 +160,7 @@ at the end of the line.
 A :term:`block tag` formats a block of text that begins with **_[[TAG]]**
 and terminates with **_[[Q]]**. 
 
-:doc:`Commands <rvC08-quick>`
+:doc:`Commands <rvC07-quick>`
 
 *rivt commands* read and write external files. They typically start in the
 first column with a vertical bar ( | ) followed by the file path, name and
@@ -230,17 +230,26 @@ file types
 
     <hr>
 
+.. raw:: html
 
+    <p id="api">&lt;i&gt;</p>
+
+
+**[6]** Metadata
+----------------------------------
+
+.. raw:: html
+
+    <hr>
 
 .. toctree::
     :maxdepth: 1
     :hidden:
 
-    rvC02-markup-m.rst
-    rvC03-markup-r.rst
-    rvC04-markup-i.rst
-    rvC05-markup-v.rst
-    rvC06-markup-t.rst
-    rvC07-markup-d.rst
-    rvC08-quick.rst
-    rvC09-example1.rst
+    rvC02-markup-r.rst
+    rvC03-markup-i.rst
+    rvC04-markup-v.rst
+    rvC05-markup-t.rst
+    rvC06-markup-d.rst
+    rvC07-quick.rst
+    rvC08-example1.rst
