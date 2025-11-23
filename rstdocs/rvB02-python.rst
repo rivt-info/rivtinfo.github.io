@@ -5,7 +5,7 @@
 
     <p id="api">&lt;i&gt;</p>
 
-**[1]** Categories 
+**[1]** Requirements
 ----------------------------------------------
 
 .. raw:: html
@@ -13,22 +13,8 @@
     <hr>
 
 *rivt* installs Python libraries for document formatting and engineering
-analysis.
-
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[2]** Requirements
-----------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-The minimum Python version is *3.13.0*. The recommended method for
-installing *rivt* is :doc:`rivt-uv <rvB01-install>`.
+analysis.  The minimum Python version is *3.13.0*. The recommended method for
+installing *rivt* is :doc:`rivtuv <rvB01-install>`.
 
 
 =============================================== ================================

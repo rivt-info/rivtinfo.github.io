@@ -50,6 +50,12 @@
     The first line of a  *rivt string*. It includes a section title, followed 
     by comma separated parameters.
 
+  rivt
+    An open source Python project that includes :term:`rivtlib` and approximately 
+    two dozen :doc:`Python packages <rvB02-python>`. When *rivt* is installed
+    :term:`docs` and :term:`reports` may be edited and published using a text
+    editor.
+  
   rivt doc
   rivt docs
     A formatted document file output from a *rivt file* using the rivtlib package. 
@@ -104,16 +110,17 @@
   command
   commands 
     *rivt commands* read and write external files and assign values to
-    variables. They typically start in the first column with a 
-    vertical bar ( | ) followed by the file path, name and parameters:
+    variables. They start in the initial columns with a 
+    vertical bar ( | ) followed by the file path, name and parameters. The path
+    is relative to the rivt report root folder. If the metadata variable
+    *rv_localB* is set to true resources will be read from and written to the 
+    local *rivt file* folder.
 
     .. code-block:: bash
 
-      | COMMAND | rel path | filename | parameters
+      | COMMAND | relative path | parameters
     
-    For *reports* the relative path is a subfolder of the *source* folder. If 
-    the file is a  *single doc* the alias *rvlocal* specifies that the 
-    sources are stored in the same folder as the *rivt file*. 
+
 
   single doc 
   single docs 

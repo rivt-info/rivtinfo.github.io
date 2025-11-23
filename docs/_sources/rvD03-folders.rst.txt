@@ -170,9 +170,9 @@ An example *report* folder structure is shown below.
                 ├── image1.png                            
                 └── opensees1.txt    
             ├── [gendoc]/
-                ├── gen-html.cmd                     html generating script
-                ├── gen-pdf.cmd                      pdf generating script
-                ├── gen-pdftex.cmd                   LaTeX generating script
+                ├── genhtml.cmd                     html generating script
+                ├── genpdf.cmd                      pdf generating script
+                ├── gentexpdf.cmd                   LaTeX generating script
                 ├── rivt-report.py                   report generating script
                 ├── new-units.py                     define new units
                 └── [style]/                         style files for docs 
@@ -186,11 +186,9 @@ An example *report* folder structure is shown below.
                     ├── [pdf]/                       rst2pdf style files
                         ├── fonts/              
                         ├── style/                 
-                        ├── Report-Cover.pdf           
-                        └── genrst2pdf.cmd
-                    ├── [pdftex]/                    pdftex style files
-                        ├── gentexpdf.cmd             
-                        ├── Report-cover.pdf                     
+                        └── Report-Cover.pdf           
+                    ├── [pdftex]/                    pdftex style files            
+                        ├── Report-cover.pdf                  
                         └── rivt.sty              
                     ├── [text]/                      text ini file
                         └── rv-text.ini

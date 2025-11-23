@@ -1,4 +1,4 @@
-**C.8 Quick Lookup**
+**C.7 Quick Lookup**
 =======================
 
 
@@ -320,9 +320,10 @@ Folders organize files in standard locations to generate *docs* and *reports*
 
     <hr>
 
-*Metadata* is specified before any API functions are called and uses standard
-Python dictionaries, lists and strings. It is specified outside the *rivtlib*
-API functions and provides author information and global file path handling.
+If *Metadata* is provided it is specified before any API functions are called.
+It uses standard Python dictionaries, lists and strings and provides author
+information and global file path handling. It is specified outside the
+*rivtlib* API functions.
     
 ================ ============================================================
 Variable [1]                      Description

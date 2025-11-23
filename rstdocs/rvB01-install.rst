@@ -13,17 +13,17 @@
 
     <hr>
 
-*rivt* is a Python project that includes :term:`rivtlib` and approximately two
-dozen :doc:`Python packages <rvB02-python>`. After *rivt* is installed,
-:term:`docs` and :term:`reports` may be edited and published using a text
-editor.
+*rivt* is an open source Python project that includes :term:`rivtlib` and 
+approximately two dozen :doc:`Python packages <rvB02-python>`. When *rivt* is 
+installed :term:`docs` and :term:`reports` may be edited and published using 
+a text editor.
 
 *rivt* is designed to work with other open source programs and tools in an
 integrated framework that adds extends editing and analysis capabilities. There
 are four installation methods for *rivt* and its framework, each with varying
 degrees of system and program integration.
 
-.. topic:: 1. *rivt-uv* 
+.. topic:: 1. *rivtuv* 
 
     *uv* is a `Python package manager <https://docs.astral.sh/uv/>`_ and
     installer that simplifies installing isolated Python environments. See
@@ -33,7 +33,7 @@ degrees of system and program integration.
 
     <hr>
 
-.. topic:: 2. *rivt-system* 
+.. topic:: 2. *system rivt* 
 
     *rivt* may be installed at the system level using standalone installers.
     See :ref:`rivt-system <rivt-system>` for procedure.
@@ -42,9 +42,9 @@ degrees of system and program integration.
 
     <hr>
 
-.. topic:: 3. *rivt-framework* 
+.. topic:: 3. *rivt framework* 
 
-    The *rivt-framework* includes *rivt* and additional integrated programs and
+    The *rivt framework* includes *rivt* and additional integrated programs and
     tools with their own installers. It includes important productivity tools
     for editing, document control and diagramming.
     
@@ -59,10 +59,10 @@ degrees of system and program integration.
 
     <hr>
 
-.. topic:: 4. *rivt.zip* 
+.. topic:: 4. *rivtzip* 
 
-    *rivt.zip* is a single folder, isolated, portable version of *rivt*
-    integrated with *VSCode*.
+    *rivtzip* is a single folder, portable and isolated version of *rivt* that
+    is integrated with *VSCode*.
 
 
     See :ref:`rivt-zip <rivt-zip>` for procedure.
@@ -74,7 +74,7 @@ degrees of system and program integration.
 
 .. _rivt-uv:
 
-**[2]** Install *rivt-uv*
+**[2]** Install *rivtuv*
 ----------------------------------
 
 .. raw:: html
@@ -99,7 +99,7 @@ The recommended method for installing *uv* on Windows is:
 After installing *uv*, run the following commands to set up and activate an
 isolated *rivt* environment in the users *Home* directory (omit the explanatory
 REM lines). The commands may be downloaded and run from the command file
-:download:`rivt-uv.cmd </_downloads/rivt-uv.cmd>`. 
+:download:`rivtuv.cmd </_downloads/rivtuv.cmd>`. 
 
 They execute the following steps:
 
@@ -160,7 +160,7 @@ Within the *example1* folder run the rivt file:
 
 .. _rivt-system:
 
-**[3]** Install *rivt-system*
+**[3]** Install *system rivt*
 ----------------------------------
 
 .. raw:: html
@@ -183,14 +183,14 @@ A list of the dependencies and *requirements.txt* file is
 
 .. _rivt-framework:
 
-**[4]** Install *rivt-framework*
+**[4]** Install *rivt framework*
 ------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-The *rivt-framework* includes installation of the following programs:
+*rivt framework* includes installation of the following programs:
 
 #. `VSCode <https://code.visualstudio.com/>`_ and 
    `VSCode extensions <https://marketplace.visualstudio.com/vscode>`_. 

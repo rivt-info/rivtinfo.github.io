@@ -12,9 +12,10 @@
 
     <hr>
 
-*Metadata* is specified before any API functions are called and uses standard
-Python dictionaries, lists and strings. It is specified outside the *rivtlib*
-API functions and provides author information and global file path handling.
+If *Metadata* is provided it is specified before any API functions are called.
+It uses standard Python dictionaries, lists and strings and provides author
+information and global file path handling. It is specified outside the
+*rivtlib* API functions.
     
 ================ ============================================================
 Variable [1]                      Description
@@ -268,14 +269,14 @@ The  typical *rivt report* folder structure is described
     <p id="api">&lt;i&gt;</p>
 
 
-**[6]** Syntax Key
+**[6]** Markup Key
 ----------------------------------
 
 .. raw:: html
 
     <hr>
 
-_[TAG] : :term:`line tag` description
+_[TAG] : description of :term:`line tag` 
 
 
 .. topic::  syntax : description
@@ -290,7 +291,7 @@ outputs: types of output
     <hr>
 
 
-_[[TAG]] : :term:`block tag` description
+_[[TAG]] :  description of :term:`block tag`
         
 
 .. topic::  syntax : description
@@ -303,8 +304,7 @@ file types
 
     <hr>
 
-**| COMMAND |** :term:`command` descripion
-
+| COMMAND |  description of :term:`command`
 
 .. topic:: | COMMAND | relative path | parameters
 

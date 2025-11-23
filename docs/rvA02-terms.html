@@ -391,14 +391,14 @@ For the complete execution history see the rivt log file <em>rvDss-log.txt</em>.
 and terminates with <strong>_[[Q]]</strong>.</p>
 </dd>
 <dt id="term-command">command<a class="headerlink" href="#term-command" title="Link to this term">#</a></dt><dt id="term-commands">commands<a class="headerlink" href="#term-commands" title="Link to this term">#</a></dt><dd><p><em>rivt commands</em> read and write external files and assign values to
-variables. They typically start in the first column with a
-vertical bar ( | ) followed by the file path, name and parameters:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="p">|</span><span class="w"> </span>COMMAND<span class="w"> </span><span class="p">|</span><span class="w"> </span>rel<span class="w"> </span>path<span class="w"> </span><span class="p">|</span><span class="w"> </span>filename<span class="w"> </span><span class="p">|</span><span class="w"> </span>parameters
+variables. They start in the initial columns with a
+vertical bar ( | ) followed by the file path, name and parameters. The path
+is relative to the rivt report root folder. If the metadata variable
+<em>rv_localB</em> is set to true resources will be read from and written to the
+local <em>rivt file</em> folder.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="p">|</span><span class="w"> </span>COMMAND<span class="w"> </span><span class="p">|</span><span class="w"> </span>relative<span class="w"> </span>path<span class="w"> </span><span class="p">|</span><span class="w"> </span>parameters
 </pre></div>
 </div>
-<p>For <em>reports</em> the relative path is a subfolder of the <em>source</em> folder. If
-the file is a  <em>single doc</em> the alias <em>rvlocal</em> specifies that the
-sources are stored in the same folder as the <em>rivt file</em>.</p>
 </dd>
 <dt id="term-division">division<a class="headerlink" href="#term-division" title="Link to this term">#</a></dt><dd><p>A group of related rivt files organized in a report and labeled in
 the rivt file name. Optionally organized in a division folder.</p>
@@ -422,6 +422,11 @@ by comma separated parameters.</p>
 <a class="reference internal" href="rvD03-folders.html"><span class="doc">here.</span></a></p>
 </dd>
 <dt id="term-report-script">report script<a class="headerlink" href="#term-report-script" title="Link to this term">#</a></dt><dd><p>A Python script that assembles <em>docs</em> into a <em>report</em>.</p>
+</dd>
+<dt id="term-rivt">rivt<a class="headerlink" href="#term-rivt" title="Link to this term">#</a></dt><dd><p>An open source Python project that includes <a class="reference internal" href="#term-rivtlib"><span class="xref std std-term">rivtlib</span></a> and approximately
+two dozen <a class="reference internal" href="rvB02-python.html"><span class="doc">Python packages</span></a>. When <em>rivt</em> is installed
+<a class="reference internal" href="#term-docs"><span class="xref std std-term">docs</span></a> and <a class="reference internal" href="#term-reports"><span class="xref std std-term">reports</span></a> may be edited and published using a text
+editor.</p>
 </dd>
 <dt id="term-rivt-doc">rivt doc<a class="headerlink" href="#term-rivt-doc" title="Link to this term">#</a></dt><dt id="term-rivt-docs">rivt docs<a class="headerlink" href="#term-rivt-docs" title="Link to this term">#</a></dt><dd><p>A formatted document file output from a <em>rivt file</em> using the rivtlib package.
 A doc is a text, PDF or HTML file with the default name of the <em>rivt file</em>

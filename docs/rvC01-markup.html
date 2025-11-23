@@ -59,7 +59,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'rvC01-markup';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="C.3 Run API - rv.R" href="rvC02-markup-r.html" />
+    <link rel="next" title="C.2 Run API - rv.R" href="rvC02-markup-r.html" />
     <link rel="prev" title="B.3 VSCode Settings" href="rvB03-vscode.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -313,13 +313,13 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="rvC02-markup-r.html"><strong>C.3 Run API - rv.R</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC03-markup-i.html"><strong>C.4 Insert - rv.I</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC04-markup-v.html"><strong>C.5 Values - rv.V</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC05-markup-t.html"><strong>C.6 Tool - rv.T</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC06-markup-d.html"><strong>C.7 Doc - rv.D</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC07-quick.html"><strong>C.8 Quick Lookup</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC08-example1.html"><strong>C.9 Example</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC02-markup-r.html"><strong>C.2 Run API - rv.R</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC03-markup-i.html"><strong>C.3 Insert - rv.I</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC04-markup-v.html"><strong>C.4 Values - rv.V</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC05-markup-t.html"><strong>C.5 Tool - rv.T</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC06-markup-d.html"><strong>C.6 Doc - rv.D</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC07-quick.html"><strong>C.7 Quick Lookup</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC08-example1.html"><strong>C.8 Example</strong></a></li>
 </ul>
 </div>
 </nav></div>
@@ -381,9 +381,10 @@
 <h1><strong>C.1 Markup</strong><a class="headerlink" href="#c-1-markup" title="Link to this heading">#</a></h1>
 <p id="api">&lt;i&gt;</p><section id="metadata">
 <h2><strong>[1]</strong> Metadata<a class="headerlink" href="#metadata" title="Link to this heading">#</a></h2>
-<hr><p><em>Metadata</em> is specified before any API functions are called and uses standard
-Python dictionaries, lists and strings. It is specified outside the <em>rivtlib</em>
-API functions and provides author information and global file path handling.</p>
+<hr><p>If <em>Metadata</em> is provided it is specified before any API functions are called.
+It uses standard Python dictionaries, lists and strings and provides author
+information and global file path handling. It is specified outside the
+<em>rivtlib</em> API functions.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Variable [1]</p></th>
@@ -611,21 +612,23 @@ results and define variables.</p>
 The  typical <em>rivt report</em> folder structure is described
 <a class="reference internal" href="rvD03-folders.html"><span class="doc">here.</span></a></p>
 <p id="api">&lt;i&gt;</p></section>
-<section id="syntax-key">
-<h2><strong>[6]</strong> Syntax Key<a class="headerlink" href="#syntax-key" title="Link to this heading">#</a></h2>
-<hr><p>_[TAG] : <a class="reference internal" href="rvA02-terms.html#term-line-tag"><span class="xref std std-term">line tag</span></a> description</p>
+<section id="markup-key">
+<h2><strong>[6]</strong> Markup Key<a class="headerlink" href="#markup-key" title="Link to this heading">#</a></h2>
+<hr><p>_[TAG] : description of <a class="reference internal" href="rvA02-terms.html#term-line-tag"><span class="xref std std-term">line tag</span></a></p>
 <aside class="topic">
 <p class="topic-title">syntax : description</p>
 <p>example</p>
 </aside>
 <p>outputs: types of output</p>
-<hr><p>_[[TAG]] : <a class="reference internal" href="rvA02-terms.html#term-block-tag"><span class="xref std std-term">block tag</span></a> description</p>
+<hr><p>_[[TAG]] :  description of <a class="reference internal" href="rvA02-terms.html#term-block-tag"><span class="xref std std-term">block tag</span></a></p>
 <aside class="topic">
 <p class="topic-title">syntax : description</p>
 <p>example</p>
 </aside>
 <p>file types</p>
-<hr><p><strong>| COMMAND |</strong> <a class="reference internal" href="rvA02-terms.html#term-command"><span class="xref std std-term">command</span></a> descripion</p>
+<hr><div class="line-block">
+<div class="line">COMMAND |  description of <a class="reference internal" href="rvA02-terms.html#term-command"><span class="xref std std-term">command</span></a></div>
+</div>
 <aside class="topic">
 <p class="topic-title">| COMMAND | relative path | parameters</p>
 <p>example</p>
@@ -660,7 +663,7 @@ The  typical <em>rivt report</em> folder structure is described
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>C.3 Run API - rv.R</strong></p>
+        <p class="prev-next-title"><strong>C.2 Run API - rv.R</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -688,7 +691,7 @@ The  typical <em>rivt report</em> folder structure is described
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api-header"><strong>[3]</strong> API Header</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-text"><strong>[4]</strong> Section Text</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tags-and-commands"><strong>[5]</strong> Tags and Commands</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#syntax-key"><strong>[6]</strong> Syntax Key</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#markup-key"><strong>[6]</strong> Markup Key</a></li>
 </ul>
   </nav></div>
 
