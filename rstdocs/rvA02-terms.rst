@@ -57,7 +57,7 @@
     and file type suffix.
   
   rivtlib
-    Open source `Python package <https://rivtlib.dev>`_ that generates docs 
+    Open source `Python package <https://www.rivtlib.dev>`_ that generates docs 
     and reports from a :term:`rivt file`  
 
   rivt string
