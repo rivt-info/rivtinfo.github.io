@@ -57,8 +57,8 @@
     and file type suffix.
   
   rivtlib
-    Python package that generates docs and reports from 
-    a `rivt file. <https://rivtlib.dev>`_
+    Open source `Python package <https://rivtlib.dev>`_ that generates docs 
+    and reports from a :term:`rivt file`  
 
   rivt string
     Triple quoted string argument to an API function.
@@ -81,7 +81,7 @@
     and resources organized in subfolders
 
   rivt framework 
-  
+
     The recommended *rivt-framework* includes the
     following programs, installed separately:
 
