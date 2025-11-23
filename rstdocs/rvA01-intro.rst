@@ -16,7 +16,7 @@
 engineering documents. Collaboration on documents reduces repetitive work and
 improves quality. Although a number of document software programs are
 available, reuse and sharing is generally difficult because of limitations in
-the software use and its distribution:
+the terms of software use and distribution:
 
 - documents are divided among many incompatible programs
 - document formats become obsolete and inaccessible
@@ -84,11 +84,11 @@ HTML document. Reports are organized assemblies of *docs*.
 
     <p id="api">&lt;i&gt;</p>
 
-Engineering documents and reports typically combine text, tables, diagrams,
-models and calculations to explain and justify designs and decisions. The
-*rivt API* is designed to simplify document organization and publishing
-by implementing a flexible :term:`rivt markup` language and standaard
-:ref:`folder structure <top-folders>`.
+The *rivt API* is designed to simplify document organization and publishing
+by implementing a flexible :term:`rivt markup` language and standard
+:ref:`folder structure <top-folders>`. It is designed to combine text, 
+tables, diagrams, models and calculations that are typically part of engineering
+documents.
 
 **[3]** API 
 --------------------------------------------------------------------- 
@@ -109,7 +109,7 @@ terminal and generate formatted *doc* content.
 
     The *Value API* evaluates equations and functions. 
 
-    The *Tool API* processes HTML, LaTeX, and Python scripts.
+    The *Tool API* imports HTML, LaTeX, and Python scripts.
 
 The three processing functions (**D S X**) are related to processing and
 output. The *Doc* API specifies settings for publishing formatted :term:`docs`. 

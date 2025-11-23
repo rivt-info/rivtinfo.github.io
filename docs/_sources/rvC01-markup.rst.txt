@@ -86,16 +86,6 @@ resource files are read from and written to the *rivt file* folder instead of
      # example - folder setting override
      rv_localB = true
 
-*rv_docnameS* overrides the default doc title derived from the rivt file name.
-
-..  code-block:: python
-
-    # default - doc name override
-     rv_docnameS = "" # does not override default name
-     
-     # example - folder setting override
-     rv_docnameS = "My Document Title"
-
 
 .. raw:: html
 
