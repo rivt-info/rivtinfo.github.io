@@ -16,9 +16,9 @@
 engineering documents. Collaboration reduces repetitive work and
 improves quality. Although a number of document software programs are
 available, reuse and sharing is generally difficult because of limitations in
-the terms of software use and distribution:
+the software terms of use and distribution:
 
-- documents are divided among many incompatible programs
+- documents come from many incompatible programs
 - document formats become obsolete and inaccessible
 - frequent software updates are needed
 - update costs are high
