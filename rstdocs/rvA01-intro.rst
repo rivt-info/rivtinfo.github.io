@@ -15,8 +15,8 @@
 *rivt* is an open source software project that simplifies reuse of shared 
 engineering documents. Collaboration reduces repetitive work and
 improves quality. Although a number of document software programs are
-available, reuse and sharing is generally difficult because of limitations in
-the software terms of use and distribution:
+available, reuse and sharing is generally not possible because of limitations in
+software terms of use and distribution:
 
 - documents come from many incompatible programs
 - document formats become obsolete and inaccessible
@@ -33,7 +33,7 @@ software programs.
 .. rst-class:: center
 
 
-Table 1 - **Document Limitations - Comparison**
+Table 1 - **Limitations Comparison**
 
 ============ ========= ======== ======== ========= ========= ============= 
 Program      Rep [1]_  Ver [2]_ Txt [3]_ Comp [4]_  CP [5]_   Collab [6]_  
@@ -41,7 +41,7 @@ Program      Rep [1]_  Ver [2]_ Txt [3]_ Comp [4]_  CP [5]_   Collab [6]_
 Matlab         no       no         no      no          no       no   
 Mathcad        no       no         no      no          no       no   
 Mathematica    no       no         no      no          no       no   
-Cloud SaaS     some     some       no      no          yes      some  
+Cloud SaaS    limited  limited     no      no          yes      limited  
 Jupyter        no       no         no      yes         yes      yes  
 **rivt**      **yes**  **yes**   **yes**  **yes**   **yes**    **yes**
 ============ ========= ======== ======== ========= ========= ============= 
@@ -50,8 +50,8 @@ Jupyter        no       no         no      yes         yes      yes
 .. rst-class:: left
 
     .. [1] Report generation
-    .. [2] Version control
-    .. [3] Plain text input files
+    .. [2] Native version control
+    .. [3] Plain text, readable input files
     .. [4] Forward and backward compatibility
     .. [5] Cross-platform
     .. [6] Collaboration support

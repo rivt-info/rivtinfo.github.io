@@ -399,12 +399,12 @@ information and global file path handling. It is specified outside the
 <td><p>dictionary specifies author fork information</p></td>
 </tr>
 <tr class="row-even"><td><p>rv_localB</p></td>
-<td><p>true; false [default] - set resource files to local folder</p></td>
+<td><p>true; <strong>[false] default</strong> - set resource files to local folder</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>[1] variables use <em>rivtlib</em> code convention of a suffix indicating data type</p>
+<p>[1] variables use the <em>rivtlib</em> code convention of data type indicated by suffix</p>
 <p><em>rv_authD</em> specifies the author, version, email, repository and license
 information and lists the forks. <em>rv_forknD</em> specifies data for the forked
 file. The <em>rv_authD</em> dictionary always precedes <em>rv_forknD</em>.</p>
@@ -441,11 +441,12 @@ file. The <em>rv_authD</em> dictionary always precedes <em>rv_forknD</em>.</p>
 </div>
 <p id="api">&lt;i&gt;</p><p><em>rv_localB</em> overrides the default report structure and specifies that all
 resource files are read from and written to the <em>rivt file</em> folder instead of
-<em>rivt folders</em>.  It is intended for simple, <em>single docs</em>.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># default - folder setting</span>
+<em>rivt folders</em>. It is intended for relatively simple, single docs. Formatting
+is more limited.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># default setting uses report folders</span>
 <span class="n">rv_localB</span> <span class="o">=</span> <span class="n">false</span>
 
-<span class="c1"># example - folder setting override</span>
+<span class="c1"># resource files are in rivt file folder</span>
 <span class="n">rv_localB</span> <span class="o">=</span> <span class="n">true</span>
 </pre></div>
 </div>

@@ -17,15 +17,15 @@ It uses standard Python dictionaries, lists and strings and provides author
 information and global file path handling. It is specified outside the
 *rivtlib* API functions.
     
-================ ============================================================
+================ ===============================================================
 Variable [1]                      Description
-================ ============================================================
+================ ===============================================================
 rv_authD          dictionary specifies author information
 rv_fork1D         dictionary specifies author fork information
-rv_localB         true; false [default] - set resource files to local folder
-================ ============================================================
+rv_localB         true; **[false] default** - set resource files to local folder
+================ ===============================================================
 
-[1] variables use *rivtlib* code convention of a suffix indicating data type
+[1] variables use the *rivtlib* code convention of data type indicated by suffix
 
 *rv_authD* specifies the author, version, email, repository and license
 information and lists the forks. *rv_forknD* specifies data for the forked
@@ -77,14 +77,15 @@ file. The *rv_authD* dictionary always precedes *rv_forknD*.
 
 *rv_localB* overrides the default report structure and specifies that all
 resource files are read from and written to the *rivt file* folder instead of
-*rivt folders*.  It is intended for simple, *single docs*.
+*rivt folders*. It is intended for relatively simple, single docs. Formatting
+is more limited.
 
 ..  code-block:: python
 
-     # default - folder setting
+     # default setting uses report folders
      rv_localB = false
      
-     # example - folder setting override
+     # resource files are in rivt file folder
      rv_localB = true
 
 
