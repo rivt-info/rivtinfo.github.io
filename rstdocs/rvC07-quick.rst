@@ -20,9 +20,9 @@ API Function        Name             Purpose
 =============== =============== =========================================
 rv.R(rS)           Run               Run shell commands
 rv.I(rS)           Insert            Insert static resources 
-rv.V(rS)           Value             Calculate values
-rv.T(rS)           Tool              Import Python and Markup functions
-rv.D(rS)           Doc               Publish docs 
+rv.V(rS)           Values            Calculate values
+rv.T(rS)           Tools             Python and Markup scripts
+rv.D(rS)           Docs              Publish docs 
 rv.S(rS)           Skip              Skip section
 rv.X(rS)           Quit              Exit rivt 
 =============== =============== =========================================
@@ -31,15 +31,15 @@ rv.X(rS)           Quit              Exit rivt
 The :term:`API headers` determine overall processing of the section.
 
 ========== ===================== ==================== =====================
-API          private;public         show;hide           section;merge         
+API          private;public         print;store           section;merge         
 ========== ===================== ==================== ===================== 
-rv.R        **private**; public     **hide**; show       **merge**;section
-rv.I        **private**; public     **show**; hide       **section**;merge   
-rv.V        **private**; public     **show**; hide       **section**;merge    
-rv.T        **private**; public     **hide**; show       **merge**;section
-rv.D        **private**; public     **hide**; show       **merge**;section
-rv.S        **private**; public     **hide**; show       **merge**;section
-rv.X        **private**; public     **hide**; show       **merge**;section
+rv.R        **private**;public      **store**;print     **merge**;section
+rv.I        **private**;public      **print**;store     **section**;merge   
+rv.V        **private**;public      **print**;store     **section**;merge    
+rv.T        **private**;public      **store**;print     **merge**;section
+rv.D        **private**;public      **store**;print     **merge**;section
+rv.S        **private**;public      **store**;print     **merge**;section
+rv.X        **private**;public      **store**;print     **merge**;section
 ========== ===================== ==================== ===================== 
 
 
@@ -60,23 +60,24 @@ Tags format lines and blocks of text.
 
 **Line Tags**
 
-============= ============================= =======================================
+============= ============================= ======================================
 API Scope             Line Tags              Description (doc scope)
-============= ============================= =======================================
-rv.I, V           text _[#]                  endnote number (all)
+============= ============================= ======================================
+rv.I, V           text _[#]  text            endnote number (all)
 rv.I, V           text _[C]                  center text (all)
 rv.I, V           text _[R]                  right justify text (all)
 rv.I, V          label _[E]                  equation number and label (all)
 rv.I, V        caption _[I]                  image number and caption (all)[1]
 rv.I, V          title _[T]                  table number and title (all)[1]
-rv.I, V           text _[S] section link     link section within doc (all)
-rv.I, V           text _[D] report link      link doc within report (all)
+rv.I, V           text _[D] term link        link to defined term in report (all)
+rv.I, V           text _[S] section link     link to section in doc (all)
+rv.I, V           text _[D] report link      link to doc in report (all)
 rv.I, V           text _[U] external url     external url link (all)
 rv.I, V           \-\-\-\-\-                 >4 dashes inserts line (all)[2]
 rv.I, V           \=\=\=\=\=                 >4 underscores inserts page (all)[2]
 rv.I              math _[L]                  format LaTeX math (all) 
 rv.I              math _[A]                  format ASCII math (all) 
-============= ============================= =======================================
+============= ============================= ======================================
 
 [1] tag may be added to the label parameter in the IMAGE and TABLE commands
 
@@ -93,11 +94,11 @@ rv.R        _[[MACOS]] label, *wait;nowait*         Mac shell script (all)
 rv.R        _[[LINUX]] label, *wait;nowait*         Linux shell script (all)
 rv.I, V     _[[INDENT]] spaces (4 default)          Indent (all)
 rv.I, V     _[[ITALIC]] spaces (4 default)          Italic indent - (all)
-rv.I, V     _[[NOTES]] optional label               Endnote descriptions (all)
+rv.I, V     _[[ENDNOTES]] optional label            Endnote descriptions (all)
 rv.I, V     _[[TEXT]] optional language             *literal*, code (all)
 rv.I, V     _[[TOPIC]] topic                        Topic (all)
 rv.V        _[[VALUES]] table title (_[T])          Define values(all)
-rv.T        _[[PYTHON]] label, *rv-space*;newspace  Python script (all)
+rv.T        _[[PYTHON]] label, *rvspace*;newspace   Python script (all)
 rv.T        _[[LATEX]] label                        LaTeX markup (pdf)[1]
 rv.T        _[[HTML]] label                         HTML markup (html)
 rv.D        _[[LAYOUT]] label                       Doc format settings (all)
@@ -195,7 +196,7 @@ Folders organize files in standard locations to generate *docs* and *reports*
 
 .. code-block:: bash
 
-    [rivt]-Report-Label/                Report Folder Name                
+    [rivt]-Report-Label/                       Report Folder Name                
         ├── [rv101-]filename1.py               | rivt input files
         ├── [rv102-]filename2.py               
         ├── [rv201-]filename3.py               
@@ -290,17 +291,14 @@ Folders organize files in standard locations to generate *docs* and *reports*
                 ├── steel-vals.csv     
                 └── plastic-vals.csv
         ├── [stored]/                          || stored files from rivt            
-            ├── [hide]/                              hidden                    
-                ├── rv202-5d.txt   
-                ├── rv103-4t.txt                         
-                └── rv301-2r.txt
             ├── [logs]/                              log files
                 ├── rv101-api.txt   
                 ├── rv101-log.txt
-                └── rv102-log.txtad
-            ├── [meta]/                              meta data files
-                ├── rv101-meta.txt   
-                └── rv102-meta.txt               
+                └── rv102-log.txt
+            ├── [sect]/                              stored sections                    
+                ├── rv202-5d.txt   
+                ├── rv103-4t.txt                         
+                └── rv301-2r.txt               
             ├── [temp]/                              temp files
                 └── rv101-label3.tex
             └── [vals]/                              stored value files
@@ -320,28 +318,20 @@ Folders organize files in standard locations to generate *docs* and *reports*
 
     <hr>
 
-If *Metadata* is provided it is specified before any API functions are called.
-It uses standard Python dictionaries, lists and strings and provides author
-information and global file path handling. It is specified outside the
-*rivtlib* API functions.
+*Metadata* is stored in the file *rivtmeta.py*. If used, it is imported prior
+to *rivtlib* and provides author information and specifies whether the *rivt
+file* is a single doc or part of report. Metadata is specified using standard
+Python data types. See :doc:`here <rvC01-markup>` for further details.
     
-================ ============================================================
-Variable [1]                      Description
-================ ============================================================
-rv_authD          dictionary specifies author information
-rv_fork1D         dictionary specifies author fork information
-rv_localB         true; false [default] - set resource files to local folder
-================ ============================================================
+=================== ==========================================================
+    Variable                        Description
+=================== ==========================================================
+:term:`rv_authD`     specifies author information
+:term:`rv_localB`    True; False [default] if True resource files are local
+=================== ==========================================================
 
-[1] variables use *rivtlib* code convention of a suffix indicating data type
-
-*rv_authD* specifies the author, version, email, repository and license
-information and lists the forks. *rv_forknD* specifies data for the forked
-file. The *rv_authD* dictionary always precedes *rv_forknD*.
-
-.. raw:: html
-
-    <hr>
+*rv_authD* is a dictionary that pecifies the author, version, email, repository
+and license information and forks. 
 
 ..  code-block:: python
 
@@ -352,7 +342,8 @@ file. The *rv_authD* dictionary always precedes *rv_forknD*.
             "email": "",
             "repo": "",
             "license": "https://opensource.org/license/mit/",
-            "forks": ["", "", "", ""],
+            "fork1": ["author", "version", "email", "repo"],
+            "fork2": ["author", "version", "email", "repo"],
             }
 
     # example - author dicitionary
@@ -362,35 +353,17 @@ file. The *rv_authD* dictionary always precedes *rv_forknD*.
             "email": "rod.h.holland@gmail.com",
             "repo": "https://github.com/rivt-info/rivt-simple-doc",
             "license": "https://opensource.org/license/mit/",
-            "forks": ["rv_fork1D", "", "", ""],
             }
-    
- 
-*rv_forknD* specifies author information for a rivt file :term:`fork`.
-
-..  code-block:: python
-
-    #example - fork dictionary
-    rv_fork1D = {
-            "authors": "",
-            "version": "0.1.0",
-            "email": "",
-            "repo": "",
-            }
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
 
 *rv_localB* overrides the default report structure and specifies that all
 resource files are read from and written to the *rivt file* folder instead of
-*rivt folders*.  It is intended for simple, *single docs*.
+*rivt folders*. It is intended for simple, *single docs* with more limited
+formatting options.
 
 ..  code-block:: python
 
-     # default - folder setting
+     # default setting uses report folders
      rv_localB = false
      
-     # example - folder setting override
+     # resource files are read from and written to the rivt file folder
      rv_localB = true

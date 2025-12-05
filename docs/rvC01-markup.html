@@ -379,80 +379,8 @@
                   
   <section id="c-1-markup">
 <h1><strong>C.1 Markup</strong><a class="headerlink" href="#c-1-markup" title="Link to this heading">#</a></h1>
-<p id="api">&lt;i&gt;</p><section id="metadata">
-<h2><strong>[1]</strong> Metadata<a class="headerlink" href="#metadata" title="Link to this heading">#</a></h2>
-<hr><p>If <em>Metadata</em> is provided it is specified before any API functions are called.
-It uses standard Python dictionaries, lists and strings and provides author
-information and global file path handling. It is specified outside the
-<em>rivtlib</em> API functions.</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Variable [1]</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>rv_authD</p></td>
-<td><p>dictionary specifies author information</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv_fork1D</p></td>
-<td><p>dictionary specifies author fork information</p></td>
-</tr>
-<tr class="row-even"><td><p>rv_localB</p></td>
-<td><p>true; <strong>[false] default</strong> - set resource files to local folder</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>[1] variables use the <em>rivtlib</em> code convention of data type indicated by suffix</p>
-<p><em>rv_authD</em> specifies the author, version, email, repository and license
-information and lists the forks. <em>rv_forknD</em> specifies data for the forked
-file. The <em>rv_authD</em> dictionary always precedes <em>rv_forknD</em>.</p>
-<hr><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># default - author dictionary</span>
-<span class="n">rv_authD</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="s2">&quot;authors&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;0.0.0&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;repo&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;license&quot;</span><span class="p">:</span> <span class="s2">&quot;https://opensource.org/license/mit/&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;forks&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">],</span>
-        <span class="p">}</span>
-
-<span class="c1"># example - author dicitionary</span>
-<span class="n">rv_authD</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="s2">&quot;authors&quot;</span><span class="p">:</span> <span class="s2">&quot;rholland&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;0.6.1&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;rod.h.holland@gmail.com&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;repo&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/rivt-info/rivt-simple-doc&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;license&quot;</span><span class="p">:</span> <span class="s2">&quot;https://opensource.org/license/mit/&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;forks&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;rv_fork1D&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">],</span>
-        <span class="p">}</span>
-</pre></div>
-</div>
-<p><em>rv_forknD</em> specifies author information for a rivt file <a class="reference internal" href="rvA02-terms.html#term-fork"><span class="xref std std-term">fork</span></a>.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#example - fork dictionary</span>
-<span class="n">rv_fork1D</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="s2">&quot;authors&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;0.1.0&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;repo&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-        <span class="p">}</span>
-</pre></div>
-</div>
-<p id="api">&lt;i&gt;</p><p><em>rv_localB</em> overrides the default report structure and specifies that all
-resource files are read from and written to the <em>rivt file</em> folder instead of
-<em>rivt folders</em>. It is intended for relatively simple, single docs. Formatting
-is more limited.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># default setting uses report folders</span>
-<span class="n">rv_localB</span> <span class="o">=</span> <span class="n">false</span>
-
-<span class="c1"># resource files are in rivt file folder</span>
-<span class="n">rv_localB</span> <span class="o">=</span> <span class="n">true</span>
-</pre></div>
-</div>
-<p id="api">&lt;i&gt;</p></section>
-<section id="rivt-string">
-<h2><strong>[2]</strong> rivt String<a class="headerlink" href="#rivt-string" title="Link to this heading">#</a></h2>
+<p id="api">&lt;i&gt;</p><section id="rivt-string">
+<h2><strong>[1]</strong> rivt String<a class="headerlink" href="#rivt-string" title="Link to this heading">#</a></h2>
 <hr><p>A <a class="reference internal" href="rvA02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a>  is a utf-8 text triple quoted string argument to an
 <a class="reference internal" href="rvA01-intro.html"><span class="doc">API function</span></a>. It may include <a class="reference internal" href="rvA02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a>,
 a readable, plain text language that generates formatted text, PDF or
@@ -473,7 +401,7 @@ indented 4 spaces for improved readability and section folding.</p>
 label” and section formatting parameters.</p>
 <p id="api">&lt;i&gt;</p></section>
 <section id="api-header">
-<h2><strong>[3]</strong> API Header<a class="headerlink" href="#api-header" title="Link to this heading">#</a></h2>
+<h2><strong>[2]</strong> API Header<a class="headerlink" href="#api-header" title="Link to this heading">#</a></h2>
 <hr><p>An <a class="reference internal" href="rvA02-terms.html#term-API-header"><span class="xref std std-term">API header</span></a> starts with a <em>section label</em> followed by comma separated
 <em>section parameters</em> that may override default behavior. The <em>section label</em> is
 the section title and is separated from the <em>section header</em> paramaters by a
@@ -485,8 +413,8 @@ vertical bar. Parameters include the following:</p>
 </dl>
 </li>
 <li><dl>
-<dt>show/hide<span class="classifier">determines whether the <em>rivt string</em> is formatted and printed</span></dt><dd><p>in the doc or just annotated and written to a file for optional inclusion
-as an appendix.</p>
+<dt>print/store<span class="classifier">determines whether the <em>rivt string</em> is formatted and printed</span></dt><dd><p>in the doc or just annotated and written to a file for optional inclusion
+as an appendix. eps</p>
 </dd>
 </dl>
 </li>
@@ -497,55 +425,50 @@ as an appendix.</p>
 </li>
 </ul>
 <p>Default settings do not need to be specified in the <em>header</em>. In the table
-below, the default setting for each API is listed first in bold.</p>
+below, the default setting for each API is listed first (in bold).</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>API</p></th>
-<th class="head"><p>private/public</p></th>
-<th class="head"><p>show/hide</p></th>
-<th class="head"><p>section/merge</p></th>
+<th class="head"><p>private;public</p></th>
+<th class="head"><p>print;store</p></th>
+<th class="head"><p>section;merge</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>rv.M</p></td>
-<td><p><strong>private</strong>; public</p></td>
-<td><p><strong>hide</strong>; show</p></td>
-<td><p><strong>merge</strong>; section</p></td>
+<tr class="row-even"><td><p>rv.R</p></td>
+<td><p><strong>private</strong>;public</p></td>
+<td><p><strong>store</strong>;print</p></td>
+<td><p><strong>merge</strong>;section</p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.R</p></td>
-<td><p><strong>private</strong>; public</p></td>
-<td><p><strong>hide</strong>; show</p></td>
-<td><p><strong>merge</strong>; section</p></td>
+<tr class="row-odd"><td><p>rv.I</p></td>
+<td><p><strong>private</strong>;public</p></td>
+<td><p><strong>print</strong>;store</p></td>
+<td><p><strong>section</strong>;merge</p></td>
 </tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p><strong>private</strong>; public</p></td>
-<td><p><strong>show</strong>; hide</p></td>
-<td><p><strong>section</strong>; merge</p></td>
+<tr class="row-even"><td><p>rv.V</p></td>
+<td><p><strong>private</strong>;public</p></td>
+<td><p><strong>print</strong>;store</p></td>
+<td><p><strong>section</strong>;merge</p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.V</p></td>
-<td><p><strong>private</strong>; public</p></td>
-<td><p><strong>show</strong>; hide</p></td>
-<td><p><strong>section</strong>; merge</p></td>
+<tr class="row-odd"><td><p>rv.T</p></td>
+<td><p><strong>private</strong>;public</p></td>
+<td><p><strong>store</strong>;print</p></td>
+<td><p><strong>merge</strong>;section</p></td>
 </tr>
-<tr class="row-even"><td><p>rv.T</p></td>
-<td><p><strong>private</strong>; public</p></td>
-<td><p><strong>hide</strong>; show</p></td>
-<td><p><strong>merge</strong>; section</p></td>
+<tr class="row-even"><td><p>rv.D</p></td>
+<td><p><strong>private</strong>;public</p></td>
+<td><p><strong>store</strong>;print</p></td>
+<td><p><strong>merge</strong>;section</p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.D</p></td>
-<td><p><strong>private</strong>; public</p></td>
-<td><p><strong>hide</strong>; show</p></td>
-<td><p><strong>merge</strong>; section</p></td>
+<tr class="row-odd"><td><p>rv.S</p></td>
+<td><p><strong>private</strong>;public</p></td>
+<td><p><strong>store</strong>;print</p></td>
+<td><p><strong>merge</strong>;section</p></td>
 </tr>
-<tr class="row-even"><td><p>rv.S</p></td>
-<td><p><strong>private</strong>; public</p></td>
-<td><p><strong>hide</strong>; show</p></td>
-<td><p><strong>merge</strong>; section</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.Q</p></td>
-<td><p><strong>private</strong>; public</p></td>
-<td><p><strong>hide</strong>; show</p></td>
-<td><p><strong>merge</strong>; section</p></td>
+<tr class="row-even"><td><p>rv.X</p></td>
+<td><p><strong>private</strong>;public</p></td>
+<td><p><strong>store</strong>;print</p></td>
+<td><p><strong>merge</strong>;section</p></td>
 </tr>
 </tbody>
 </table>
@@ -553,7 +476,7 @@ below, the default setting for each API is listed first in bold.</p>
 <p>Examples of <em>header</em> settings are shown below.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;A New Section | private, show, section</span>
 
-<span class="s2">    section content (utf-8 text)</span>
+<span class="s2">    Section text (utf-8 text)</span>
 
 <span class="s2">    ...</span>
 
@@ -563,7 +486,7 @@ below, the default setting for each API is listed first in bold.</p>
 <p>For the <em>Insert API</em> - rv.I(), the following syntax is equivalent:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;A New Section</span>
 
-<span class="s2">    section text (utf-8)</span>
+<span class="s2">    Section text (utf-8)</span>
 
 <span class="s2">    ...</span>
 
@@ -572,13 +495,13 @@ below, the default setting for each API is listed first in bold.</p>
 </div>
 <p id="api">&lt;i&gt;</p></section>
 <section id="section-text">
-<h2><strong>[4]</strong> Section Text<a class="headerlink" href="#section-text" title="Link to this heading">#</a></h2>
+<h2><strong>[3]</strong> Section Text<a class="headerlink" href="#section-text" title="Link to this heading">#</a></h2>
 <hr><p>Section text is indented four spaces for legibility and code folding. It
 includes <em>rivt tags</em> that format lines of text and <em>rivt commands</em> that operate
 on files.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | write; nowrite, public; private</span>
 
-<span class="s2">    section text</span>
+<span class="s2">    Section text</span>
 <span class="s2">    ...</span>
 
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
@@ -594,12 +517,12 @@ HTML and LaTex. Since it can be hid from the primary textual
 content of the file rv.T() improves readability.</p>
 <p id="api">&lt;i&gt;</p></section>
 <section id="tags-and-commands">
-<h2><strong>[5]</strong> Tags and Commands<a class="headerlink" href="#tags-and-commands" title="Link to this heading">#</a></h2>
+<h2><strong>[4]</strong> Tags and Commands<a class="headerlink" href="#tags-and-commands" title="Link to this heading">#</a></h2>
 <hr><p><a class="reference internal" href="rvC07-quick.html"><span class="doc">Tags</span></a></p>
-<p>A <a class="reference internal" href="rvA02-terms.html#term-line-tag"><span class="xref std std-term">line tag</span></a> formats a line of text and is denoted with <strong>_[TAG]</strong>, usually
-at the end of the line.</p>
-<p>A <a class="reference internal" href="rvA02-terms.html#term-block-tag"><span class="xref std std-term">block tag</span></a> formats a block of text that begins with <strong>_[[TAG]]</strong>
-and terminates with <strong>_[[Q]]</strong>.</p>
+<p>A <a class="reference internal" href="rvA02-terms.html#term-line-tag"><span class="xref std std-term">line tag</span></a> formats a line of text and is denoted with <strong>_[LETTER]</strong>,
+generally placed at the end of the line for readability.</p>
+<p>A <a class="reference internal" href="rvA02-terms.html#term-block-tag"><span class="xref std std-term">block tag</span></a> formats a block of text and begins with <strong>_[[TAGNAME]]</strong>
+and terminates with <strong>_[[END]]</strong>.</p>
 <p><a class="reference internal" href="rvC07-quick.html"><span class="doc">Commands</span></a></p>
 <p><em>rivt commands</em> read and write external files. They typically start in the
 first column with a vertical bar ( | ) followed by the file path, name and
@@ -614,8 +537,10 @@ The  typical <em>rivt report</em> folder structure is described
 <a class="reference internal" href="rvD03-folders.html"><span class="doc">here.</span></a></p>
 <p id="api">&lt;i&gt;</p></section>
 <section id="markup-key">
-<h2><strong>[6]</strong> Markup Key<a class="headerlink" href="#markup-key" title="Link to this heading">#</a></h2>
-<hr><p>_[TAG] : description of <a class="reference internal" href="rvA02-terms.html#term-line-tag"><span class="xref std std-term">line tag</span></a></p>
+<h2><strong>[5]</strong> Markup Key<a class="headerlink" href="#markup-key" title="Link to this heading">#</a></h2>
+<hr><p>Tag and Command syntax for each API type is defined and described using the
+following format.</p>
+<p>_[TAG] : description of <a class="reference internal" href="rvA02-terms.html#term-line-tag"><span class="xref std std-term">line tag</span></a></p>
 <aside class="topic">
 <p class="topic-title">syntax : description</p>
 <p>example</p>
@@ -635,7 +560,64 @@ The  typical <em>rivt report</em> folder structure is described
 <p>example</p>
 </aside>
 <p>file types</p>
-<hr><p id="api">&lt;i&gt;</p><div class="toctree-wrapper compound">
+<hr><p id="api">&lt;i&gt;</p></section>
+<section id="metadata">
+<h2><strong>[6]</strong> Metadata<a class="headerlink" href="#metadata" title="Link to this heading">#</a></h2>
+<hr><p><em>Metadata</em> is stored in the file <em>rivtmeta.py</em>. If used, it is imported prior
+to <em>rivtlib</em> and provides author information and specifies whether the <em>rivt
+file</em> is a single doc or part of report. Metadata is specified using standard
+Python data types. See <a class="reference internal" href="#"><span class="doc">here</span></a> for further details.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="rvA02-terms.html#term-rv_authD"><span class="xref std std-term">rv_authD</span></a></p></td>
+<td><p>specifies author information</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="rvA02-terms.html#term-rv_localB"><span class="xref std std-term">rv_localB</span></a></p></td>
+<td><p>True; False [default] if True resource files are local</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><em>rv_authD</em> is a dictionary that pecifies the author, version, email, repository
+and license information and forks.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># default - author dictionary</span>
+<span class="n">rv_authD</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;authors&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;0.0.0&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;repo&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;license&quot;</span><span class="p">:</span> <span class="s2">&quot;https://opensource.org/license/mit/&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;fork1&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;author&quot;</span><span class="p">,</span> <span class="s2">&quot;version&quot;</span><span class="p">,</span> <span class="s2">&quot;email&quot;</span><span class="p">,</span> <span class="s2">&quot;repo&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;fork2&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;author&quot;</span><span class="p">,</span> <span class="s2">&quot;version&quot;</span><span class="p">,</span> <span class="s2">&quot;email&quot;</span><span class="p">,</span> <span class="s2">&quot;repo&quot;</span><span class="p">],</span>
+        <span class="p">}</span>
+
+<span class="c1"># example - author dicitionary</span>
+<span class="n">rv_authD</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;authors&quot;</span><span class="p">:</span> <span class="s2">&quot;rholland&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;0.6.1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;rod.h.holland@gmail.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;repo&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/rivt-info/rivt-simple-doc&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;license&quot;</span><span class="p">:</span> <span class="s2">&quot;https://opensource.org/license/mit/&quot;</span><span class="p">,</span>
+        <span class="p">}</span>
+</pre></div>
+</div>
+<p><em>rv_localB</em> overrides the default report structure and specifies that all
+resource files are read from and written to the <em>rivt file</em> folder instead of
+<em>rivt folders</em>. It is intended for simple, <em>single docs</em> with more limited
+formatting options.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># default setting uses report folders</span>
+<span class="n">rv_localB</span> <span class="o">=</span> <span class="n">false</span>
+
+<span class="c1"># resource files are read from and written to the rivt file folder</span>
+<span class="n">rv_localB</span> <span class="o">=</span> <span class="n">true</span>
+</pre></div>
+</div>
+<div class="toctree-wrapper compound">
 </div>
 </section>
 </section>
@@ -687,12 +669,12 @@ The  typical <em>rivt report</em> folder structure is described
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metadata"><strong>[1]</strong> Metadata</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-string"><strong>[2]</strong> rivt String</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api-header"><strong>[3]</strong> API Header</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-text"><strong>[4]</strong> Section Text</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tags-and-commands"><strong>[5]</strong> Tags and Commands</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#markup-key"><strong>[6]</strong> Markup Key</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-string"><strong>[1]</strong> rivt String</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api-header"><strong>[2]</strong> API Header</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-text"><strong>[3]</strong> Section Text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tags-and-commands"><strong>[4]</strong> Tags and Commands</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#markup-key"><strong>[5]</strong> Markup Key</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metadata"><strong>[6]</strong> Metadata</a></li>
 </ul>
   </nav></div>
 

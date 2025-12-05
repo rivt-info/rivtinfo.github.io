@@ -97,10 +97,10 @@ documents.
 
     <hr>
 
-*rivtlib* includes 8 API functions that may be run as a script or interactively
+*rivtlib* includes 7 API functions that may be run as a script or interactively
 as notebook cells in *VSCode* or other *IDE*.
 
-The four content functions (**R I V T**) output formatted utf-8 text to the
+Four content functions (**R I V T**) output formatted utf-8 text to the
 terminal and generate formatted *doc* content. 
 
     The *Run API* executes shell commands. 
@@ -111,9 +111,9 @@ terminal and generate formatted *doc* content.
 
     The *Tool API* imports HTML, LaTeX, and Python scripts.
 
-The three processing functions (**D S X**) are related to processing and
-output. The *Doc* API specifies settings for publishing formatted :term:`docs`. 
-The *Skip* and *Exit* functions are used for interactive editing and debugging.
+Three processing functions (**D S X**) control the output format. The *Doc* API
+specifies the publication format :term:`docs`. The *Skip* and *Exit*
+APIs are used for interactive editing and debugging.
 
 =============== =============== ===========================================
 API Function        Name             Purpose
@@ -142,10 +142,10 @@ Each function takes a single *rivt string* (triple quoted string) argument.
 
     <hr>
 
-An API function starts in the first column and takes a single 
-:term:`rivt string` (rS) argument. The first line of a *rivt string* is a header
+An API function starts in the first column and takes a triple quoted
+:term:`rivt string` (rS) argument. The first line of the string is a header
 that specifies section labeling and processing. The :term:`header` is followed 
-byvthe section text, indented four spaces for legibility and section folding.
+by section text indented four spaces for legibility and section folding.
 
 .. code-block:: python
 
@@ -157,7 +157,7 @@ byvthe section text, indented four spaces for legibility and section folding.
         
         """)
 
-Section text includes :term:`rivt markup` - a plain text language that
+Section text includes :term:`rivt markup`, a plain text language that
 generates *doc* files formatted as text, HTML or PDF. *rivt markup* includes
 :term:`line tags`, :term:`block tags` and :term:`commands` summarized 
 :doc:`here. <rvC07-quick>`  See :doc:`Markup</rvC01-markup>` for further 
@@ -253,23 +253,22 @@ An example of a complete folder structure is :ref:`here <report-folders>`.
 
     <hr>
 
-*Metadata* is specified before any API functions are called and uses standard
-Python dictionaries, lists and strings. It is specified outside the *rivtlib*
-API functions and provides author information and global file path handling. 
-See :doc:`here <rvC01-markup>` for further details.
+*Metadata* is stored in the file *rivtmeta.py*. If used, it is imported prior
+to *rivtlib* and provides author information and specifies whether the *rivt
+file* is a single doc or part of report. Metadata is specified using standard
+Python data types. See :doc:`here <rvC01-markup>` for further details.
     
 =================== ==========================================================
     Variable                        Description
 =================== ==========================================================
 :term:`rv_authD`     specifies author information
-:term:`rv_forknD`    specifies author fork information - n is a number
-:term:`rv_localB`    true; false [default] - resource files are local
+:term:`rv_localB`    True; False [default] if True resource files are local
 =================== ==========================================================
 
-*rv_authD* specifies the author, version, email, repository and license
-information and lists the forks. *rv_forknD* specifies data for the forked
-file. The *rv_authD* is always included.
+*rv_authD* is a dictionary that pecifies the author, version, email, repository
+and license information and forks. 
 
 *rv_localB* overrides the default report structure and specifies that all
 resource files are read from and written to the *rivt file* folder instead of
-*rivt folders*.  It is intended for simple, *single docs*.
+*rivt folders*. It is intended for simple, *single docs* with more limited
+formatting options.

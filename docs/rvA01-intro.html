@@ -502,9 +502,9 @@ documents.</p>
 </section>
 <section id="api">
 <h2><strong>[3]</strong> API<a class="headerlink" href="#api" title="Link to this heading">#</a></h2>
-<hr><p><em>rivtlib</em> includes 8 API functions that may be run as a script or interactively
+<hr><p><em>rivtlib</em> includes 7 API functions that may be run as a script or interactively
 as notebook cells in <em>VSCode</em> or other <em>IDE</em>.</p>
-<p>The four content functions (<strong>R I V T</strong>) output formatted utf-8 text to the
+<p>Four content functions (<strong>R I V T</strong>) output formatted utf-8 text to the
 terminal and generate formatted <em>doc</em> content.</p>
 <blockquote>
 <div><p>The <em>Run API</em> executes shell commands.</p>
@@ -512,9 +512,9 @@ terminal and generate formatted <em>doc</em> content.</p>
 <p>The <em>Value API</em> evaluates equations and functions.</p>
 <p>The <em>Tool API</em> imports HTML, LaTeX, and Python scripts.</p>
 </div></blockquote>
-<p>The three processing functions (<strong>D S X</strong>) are related to processing and
-output. The <em>Doc</em> API specifies settings for publishing formatted <a class="reference internal" href="rvA02-terms.html#term-docs"><span class="xref std std-term">docs</span></a>.
-The <em>Skip</em> and <em>Exit</em> functions are used for interactive editing and debugging.</p>
+<p>Three processing functions (<strong>D S X</strong>) control the output format. The <em>Doc</em> API
+specifies the publication format <a class="reference internal" href="rvA02-terms.html#term-docs"><span class="xref std std-term">docs</span></a>. The <em>Skip</em> and <em>Exit</em>
+APIs are used for interactive editing and debugging.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>API Function</p></th>
@@ -558,10 +558,10 @@ The <em>Skip</em> and <em>Exit</em> functions are used for interactive editing a
 <p id="api">&lt;i&gt;</p></section>
 <section id="rivt-string">
 <h2><strong>[4]</strong> rivt String<a class="headerlink" href="#rivt-string" title="Link to this heading">#</a></h2>
-<hr><p>An API function starts in the first column and takes a single
-<a class="reference internal" href="rvA02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> (rS) argument. The first line of a <em>rivt string</em> is a header
+<hr><p>An API function starts in the first column and takes a triple quoted
+<a class="reference internal" href="rvA02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> (rS) argument. The first line of the string is a header
 that specifies section labeling and processing. The <a class="reference internal" href="rvA02-terms.html#term-header"><span class="xref std std-term">header</span></a> is followed
-byvthe section text, indented four spaces for legibility and section folding.</p>
+by section text indented four spaces for legibility and section folding.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Header</span>
 
 <span class="s2">    section text</span>
@@ -571,7 +571,7 @@ byvthe section text, indented four spaces for legibility and section folding.</p
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Section text includes <a class="reference internal" href="rvA02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> - a plain text language that
+<p>Section text includes <a class="reference internal" href="rvA02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a>, a plain text language that
 generates <em>doc</em> files formatted as text, HTML or PDF. <em>rivt markup</em> includes
 <a class="reference internal" href="rvA02-terms.html#term-line-tags"><span class="xref std std-term">line tags</span></a>, <a class="reference internal" href="rvA02-terms.html#term-block-tags"><span class="xref std std-term">block tags</span></a> and <a class="reference internal" href="rvA02-terms.html#term-commands"><span class="xref std std-term">commands</span></a> summarized
 <a class="reference internal" href="rvC07-quick.html"><span class="doc">here.</span></a>  See <a class="reference internal" href="rvC01-markup.html"><span class="doc">Markup</span></a> for further
@@ -627,10 +627,10 @@ marked with double vertical bars ( || ).</p><p><strong>Top Level Folders</strong
 <p id="api">&lt;i&gt;</p></section>
 <section id="metadata">
 <h2><strong>[5]</strong> Metadata<a class="headerlink" href="#metadata" title="Link to this heading">#</a></h2>
-<hr><p><em>Metadata</em> is specified before any API functions are called and uses standard
-Python dictionaries, lists and strings. It is specified outside the <em>rivtlib</em>
-API functions and provides author information and global file path handling.
-See <a class="reference internal" href="rvC01-markup.html"><span class="doc">here</span></a> for further details.</p>
+<hr><p><em>Metadata</em> is stored in the file <em>rivtmeta.py</em>. If used, it is imported prior
+to <em>rivtlib</em> and provides author information and specifies whether the <em>rivt
+file</em> is a single doc or part of report. Metadata is specified using standard
+Python data types. See <a class="reference internal" href="rvC01-markup.html"><span class="doc">here</span></a> for further details.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Variable</p></th>
@@ -641,21 +641,18 @@ See <a class="reference internal" href="rvC01-markup.html"><span class="doc">her
 <tr class="row-even"><td><p><a class="reference internal" href="rvA02-terms.html#term-rv_authD"><span class="xref std std-term">rv_authD</span></a></p></td>
 <td><p>specifies author information</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="rvA02-terms.html#term-rv_forknD"><span class="xref std std-term">rv_forknD</span></a></p></td>
-<td><p>specifies author fork information - n is a number</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="rvA02-terms.html#term-rv_localB"><span class="xref std std-term">rv_localB</span></a></p></td>
-<td><p>true; false [default] - resource files are local</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="rvA02-terms.html#term-rv_localB"><span class="xref std std-term">rv_localB</span></a></p></td>
+<td><p>True; False [default] if True resource files are local</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p><em>rv_authD</em> specifies the author, version, email, repository and license
-information and lists the forks. <em>rv_forknD</em> specifies data for the forked
-file. The <em>rv_authD</em> is always included.</p>
+<p><em>rv_authD</em> is a dictionary that pecifies the author, version, email, repository
+and license information and forks.</p>
 <p><em>rv_localB</em> overrides the default report structure and specifies that all
 resource files are read from and written to the <em>rivt file</em> folder instead of
-<em>rivt folders</em>.  It is intended for simple, <em>single docs</em>.</p>
+<em>rivt folders</em>. It is intended for simple, <em>single docs</em> with more limited
+formatting options.</p>
 </section>
 </section>
 

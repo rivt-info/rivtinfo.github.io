@@ -21,17 +21,17 @@ images, tables and formatted text.
 ============================= =======================================
         Line Tags              Description (doc scope)
 ============================= =======================================
-    text _[#]                  endnote number (all)
+    text _[#] text             endnote number (all)
     text _[C]                  center text (all)
     text _[R]                  right justify text (all)
-    math _[L]                  format LaTeX math (all) 
     math _[A]                  format ASCII math (all) 
+    math _[L]                  format LaTeX math (all) 
    label _[E]                  equation number and label (all)
  caption _[I]                  image number and caption (all)[1]
    title _[T]                  table number and title (all)[1]
-    text _[S] section link     link section within doc (all)
-    text _[D] term link            defined term link (all)
-    text _[R] report link      link docs within report (all)
+    text _[D] term link        link to defined term in report (all)
+    text _[S] section link     link to section in doc (all)
+    text _[R] report link      link to doc in report (all)
     text _[U] external url     external url link (all)
     \-\-\-\-\-                 >4 dashes inserts line (all)[2]
     \=\=\=\=\=                 >4 underscores inserts page (all)[2]
@@ -46,7 +46,7 @@ images, tables and formatted text.
 ======================================= ==============================
  _[[INDENT]] spaces (4 default)          Indent (all)
  _[[ITALIC]] spaces (4 default)          Italic indent - (all)
- _[[NOTES]] optional label               Endnote descriptions (all)
+ _[[ENDNOTES]] optional label            Endnote descriptions (all)
  _[[TEXT]] optional language             *literal*, code language (all)
  _[[TERMS]] label                        Glossary of terms
  _[[TOPIC]] topic                        Topic (all)

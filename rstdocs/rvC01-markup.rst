@@ -5,96 +5,8 @@
 
     <p id="api">&lt;i&gt;</p>
 
-**[1]** Metadata
--------------------
 
-.. raw:: html
-
-    <hr>
-
-If *Metadata* is provided it is specified before any API functions are called.
-It uses standard Python dictionaries, lists and strings and provides author
-information and global file path handling. It is specified outside the
-*rivtlib* API functions.
-    
-================ ===============================================================
-Variable [1]                      Description
-================ ===============================================================
-rv_authD          dictionary specifies author information
-rv_fork1D         dictionary specifies author fork information
-rv_localB         true; **[false] default** - set resource files to local folder
-================ ===============================================================
-
-[1] variables use the *rivtlib* code convention of data type indicated by suffix
-
-*rv_authD* specifies the author, version, email, repository and license
-information and lists the forks. *rv_forknD* specifies data for the forked
-file. The *rv_authD* dictionary always precedes *rv_forknD*.
-
-.. raw:: html
-
-    <hr>
-
-..  code-block:: python
-
-    # default - author dictionary
-    rv_authD = {
-            "authors": "",
-            "version": "0.0.0",
-            "email": "",
-            "repo": "",
-            "license": "https://opensource.org/license/mit/",
-            "forks": ["", "", "", ""],
-            }
-
-    # example - author dicitionary
-    rv_authD = {
-            "authors": "rholland",
-            "version": "0.6.1",
-            "email": "rod.h.holland@gmail.com",
-            "repo": "https://github.com/rivt-info/rivt-simple-doc",
-            "license": "https://opensource.org/license/mit/",
-            "forks": ["rv_fork1D", "", "", ""],
-            }
-    
- 
-*rv_forknD* specifies author information for a rivt file :term:`fork`.
-
-..  code-block:: python
-
-    #example - fork dictionary
-    rv_fork1D = {
-            "authors": "",
-            "version": "0.1.0",
-            "email": "",
-            "repo": "",
-            }
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-
-*rv_localB* overrides the default report structure and specifies that all
-resource files are read from and written to the *rivt file* folder instead of
-*rivt folders*. It is intended for relatively simple, single docs. Formatting
-is more limited.
-
-..  code-block:: python
-
-     # default setting uses report folders
-     rv_localB = false
-     
-     # resource files are in rivt file folder
-     rv_localB = true
-
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-
-**[2]** rivt String
+**[1]** rivt String
 ----------------------------------
 
 .. raw:: html
@@ -127,7 +39,7 @@ label" and section formatting parameters.
 
     <p id="api">&lt;i&gt;</p>
 
-**[3]** API Header 
+**[2]** API Header 
 -------------------------
 
 .. raw:: html
@@ -142,28 +54,27 @@ vertical bar. Parameters include the following:
 - private/public : determines whether the API section text is copied to the
     the */public* folder *rivt file* for sharing. 
 
-- show/hide : determines whether the *rivt string* is formatted and printed 
+- print/store : determines whether the *rivt string* is formatted and printed 
     in the doc or just annotated and written to a file for optional inclusion 
-    as an appendix. 
+    as an appendix. eps
 
 - section/merge : determines whether the API starts a new *doc* section
     or is merged into the previous section.   
 
 
 Default settings do not need to be specified in the *header*. In the table
-below, the default setting for each API is listed first in bold.
+below, the default setting for each API is listed first (in bold).
  
 ========== ===================== ==================== =====================
-API          private/public         show/hide           section/merge         
+API          private;public         print;store           section;merge         
 ========== ===================== ==================== ===================== 
-rv.M        **private**; public   **hide**; show       **merge**; section
-rv.R        **private**; public   **hide**; show       **merge**; section
-rv.I        **private**; public   **show**; hide       **section**; merge   
-rv.V        **private**; public   **show**; hide       **section**; merge    
-rv.T        **private**; public   **hide**; show       **merge**; section
-rv.D        **private**; public   **hide**; show       **merge**; section
-rv.S        **private**; public   **hide**; show       **merge**; section
-rv.Q        **private**; public   **hide**; show       **merge**; section
+rv.R        **private**;public      **store**;print     **merge**;section
+rv.I        **private**;public      **print**;store     **section**;merge   
+rv.V        **private**;public      **print**;store     **section**;merge    
+rv.T        **private**;public      **store**;print     **merge**;section
+rv.D        **private**;public      **store**;print     **merge**;section
+rv.S        **private**;public      **store**;print     **merge**;section
+rv.X        **private**;public      **store**;print     **merge**;section
 ========== ===================== ==================== ===================== 
 
 
@@ -173,7 +84,7 @@ Examples of *header* settings are shown below.
 
     rv.I("""A New Section | private, show, section
 
-        section content (utf-8 text)
+        Section text (utf-8 text)
   
         ...
         
@@ -185,7 +96,7 @@ For the *Insert API* - rv.I(), the following syntax is equivalent:
 
     rv.I("""A New Section
 
-        section text (utf-8)
+        Section text (utf-8)
 
         ...
         
@@ -197,7 +108,7 @@ For the *Insert API* - rv.I(), the following syntax is equivalent:
     <p id="api">&lt;i&gt;</p>
 
 
-**[4]** Section Text 
+**[3]** Section Text 
 --------------------------
 
 .. raw:: html
@@ -212,7 +123,7 @@ on files.
 
     rv._("""Section Label | write; nowrite, public; private
 
-        section text
+        Section text
         ...
         
         """)
@@ -233,7 +144,7 @@ content of the file rv.T() improves readability.
 
     <p id="api">&lt;i&gt;</p>
 
-**[5]** Tags and Commands
+**[4]** Tags and Commands
 ----------------------------
 
 .. raw:: html
@@ -242,11 +153,11 @@ content of the file rv.T() improves readability.
 
 :doc:`Tags <rvC07-quick>`
 
-A :term:`line tag` formats a line of text and is denoted with **_[TAG]**, usually 
-at the end of the line.
+A :term:`line tag` formats a line of text and is denoted with **_[LETTER]**,
+generally placed at the end of the line for readability.
 
-A :term:`block tag` formats a block of text that begins with **_[[TAG]]**
-and terminates with **_[[Q]]**. 
+A :term:`block tag` formats a block of text and begins with **_[[TAGNAME]]**
+and terminates with **_[[END]]**. 
 
 :doc:`Commands <rvC07-quick>`
 
@@ -270,12 +181,16 @@ The  typical *rivt report* folder structure is described
     <p id="api">&lt;i&gt;</p>
 
 
-**[6]** Markup Key
+**[5]** Markup Key
 ----------------------------------
 
 .. raw:: html
 
     <hr>
+
+Tag and Command syntax for each API type is defined and described using the
+following format.
+
 
 _[TAG] : description of :term:`line tag` 
 
@@ -321,6 +236,62 @@ file types
 
     <p id="api">&lt;i&gt;</p>
 
+**[6]** Metadata
+-------------------
+
+.. raw:: html
+
+    <hr>
+
+*Metadata* is stored in the file *rivtmeta.py*. If used, it is imported prior
+to *rivtlib* and provides author information and specifies whether the *rivt
+file* is a single doc or part of report. Metadata is specified using standard
+Python data types. See :doc:`here <rvC01-markup>` for further details.
+    
+=================== ==========================================================
+    Variable                        Description
+=================== ==========================================================
+:term:`rv_authD`     specifies author information
+:term:`rv_localB`    True; False [default] if True resource files are local
+=================== ==========================================================
+
+*rv_authD* is a dictionary that pecifies the author, version, email, repository
+and license information and forks. 
+
+..  code-block:: python
+
+    # default - author dictionary
+    rv_authD = {
+            "authors": "",
+            "version": "0.0.0",
+            "email": "",
+            "repo": "",
+            "license": "https://opensource.org/license/mit/",
+            "fork1": ["author", "version", "email", "repo"],
+            "fork2": ["author", "version", "email", "repo"],
+            }
+
+    # example - author dicitionary
+    rv_authD = {
+            "authors": "rholland",
+            "version": "0.6.1",
+            "email": "rod.h.holland@gmail.com",
+            "repo": "https://github.com/rivt-info/rivt-simple-doc",
+            "license": "https://opensource.org/license/mit/",
+            }
+
+*rv_localB* overrides the default report structure and specifies that all
+resource files are read from and written to the *rivt file* folder instead of
+*rivt folders*. It is intended for simple, *single docs* with more limited
+formatting options.
+
+..  code-block:: python
+
+     # default setting uses report folders
+     rv_localB = false
+     
+     # resource files are read from and written to the rivt file folder
+     rv_localB = true
 
 .. toctree::
     :maxdepth: 1

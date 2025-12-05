@@ -19,14 +19,15 @@ formatted text.
 ============================= =======================================
         Line Tags              Description (doc scope)
 ============================= =======================================
-    text _[#]                  endnote number (all)
+    text _[#] text             endnote number (all)
     text _[C]                  center text (all)
     text _[R]                  right justify text (all)
    label _[E]                  equation number and label (all)
  caption _[I]                  image number and caption (all)[1]
    title _[T]                  table number and title (all)[1]
-    text _[S] section link     link section within doc (all)
-    text _[D] report link      link doc within report (all)
+    text _[D] term link        link to defined term in report (all)
+    text _[S] section link     link to section in doc (all)
+    text _[R] report link      link to doc in report (all)
     text _[U] external url     external url link (all)
     \-\-\-\-\-                 >4 dashes inserts line (all)[2]
     \=\=\=\=\=                 >4 underscores inserts page (all)[2]
