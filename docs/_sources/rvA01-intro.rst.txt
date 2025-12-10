@@ -33,7 +33,7 @@ software programs.
 .. rst-class:: center
 
 
-Table 1 - **Limitations Comparison**
+Table 1 - **Software Comparison**
 
 ============ ========= ======== ======== ========= ========= ============= 
 Program      Rep [1]_  Ver [2]_ Txt [3]_ Comp [4]_  CP [5]_   Collab [6]_  
@@ -70,7 +70,7 @@ Jupyter        no       no         no      yes         yes      yes
     <hr>
 
 A :term:`rivt file` is a Python plain text file (.py) that imports the 
-:term:`rivtlib` library into the :term:`rv-namespace` and defines an API:
+:term:`rivtlib` library and includes *rivt markup*:
 
 .. code-block:: python
 
@@ -111,24 +111,23 @@ terminal and write formatted *docs*.
 
     The *Tool API* imports HTML, LaTeX, and Python scripts.
 
-Three processing functions (**D S X**) control the output format. The *Doc* API
-specifies the publication format of a :term:`doc`. The *Skip* and *Exit*
-APIs are used for interactive editing and debugging.
+Three processing functions (**D S X**) specify the publication format. The
+*doc* API specifies the publication type of the :term:`doc` as text, HTML or
+PDF. The *Skip* and *Exit* APIs are used in interactive editing and debugging.
 
 =============== =============== ===========================================
 API Function        Name             Purpose
 =============== =============== ===========================================
 rv.R(rS)           Run               Run shell commands
 rv.I(rS)           Insert            Insert static resources 
-rv.V(rS)           Value             Calculate values
-rv.T(rS)           Tool              Import Python and Markup functions
+rv.V(rS)           Values            Calculate values
+rv.T(rS)           Tools             Python and markup scripts
 rv.D(rS)           Doc               Publish docs 
 rv.S(rS)           Skip              Skip section
-rv.X(rS)           Exit              Exit rivt 
+rv.X(rS)           Exit              Exit rivt without processing section
 =============== =============== ===========================================
 
-
-Each function takes a single *rivt string* (triple quoted string) argument.
+Each API function takes a single *rivt string* (triple quoted string) argument.
 
 
 .. raw:: html
@@ -153,25 +152,13 @@ by section text indented four spaces for legibility and section folding.
 
         section text
         ...
-        ...
         
         """)
 
-Section text includes :term:`rivt markup`, a plain text language that
-generates *doc* files formatted as text, HTML or PDF. *rivt markup* includes
-:term:`line tags`, :term:`block tags` and :term:`commands` summarized 
-:doc:`here. <rvC07-quick>`  See :doc:`Markup</rvC01-markup>` for further 
-details. 
-
-
-.. toctree::
-    :maxdepth: 1
-    :hidden:
-
-    rvA02-terms.rst
-    rvA03-faq.rst
-    rvA04-docex.rst
-
+Section text is plain text that includes :term:`rivt markup` and
+:term:`reStructuredText`. *rivt markup* includes :term:`line tags`, 
+:term:`block tags` and :term:`commands` summarized :doc:`here. <rvC07-quick>` 
+See :doc:`Markup</rvC01-markup>` for further details.
 
 .. raw:: html
 
@@ -242,33 +229,67 @@ are relative to the root.  Resource files are stored in four primary subfolders:
 An example of a complete folder structure is :ref:`here <report-folders>`.
 
 
+
 .. raw:: html
 
     <p id="api">&lt;i&gt;</p>
 
-**[5]** Metadata
+**[5]** Single *docs*
+---------------------
+
+.. raw:: html
+
+    <hr>
+
+The *rv_localB* variable overrides the default report structure and specifies
+that resource files and *docs* are read from and written to the *rivt file*
+folder. It is intended for simple, standalone *docs* with limited, built-in
+formatting options.
+
+The variable is specified immediately after the import statement as a comment:
+
+.. code:: python
+
+    import rivtlib.rvapi as rv
+
+    # rv_localB = True
+
+
+.. raw:: html
+
+    <p id="api">&lt;i&gt;</p>
+
+**[6]** Metadata
 -------------------
 
 .. raw:: html
 
     <hr>
 
-*Metadata* is stored in the file *rivtmeta.py*. If used, it is imported prior
-to *rivtlib* and provides author information and specifies whether the *rivt
-file* is a single doc or part of report. Metadata is specified using standard
-Python data types. See :doc:`here <rvC01-markup>` for further details.
-    
-=================== ==========================================================
-    Variable                        Description
-=================== ==========================================================
-:term:`rv_authD`     specifies author information
-:term:`rv_localB`    True; False [default] if True resource files are local
-=================== ==========================================================
+*rivt* file metadata can be specified in the *Tools API* as a Python dictionary. 
+*rv_authD* is a dictionary that specifies the author, version, email, repository
+and license information and forks. The data is written to the API log file.
 
-*rv_authD* is a dictionary that pecifies the author, version, email, repository
-and license information and forks. 
+.. code:: python
 
-*rv_localB* overrides the default report structure and specifies that all
-resource files are read from and written to the *rivt file* folder instead of
-*rivt folders*. It is intended for simple, *single docs* with more limited
-formatting options.
+    _[[PYTHON]] Author data
+    rv_authD = {
+    "authors": ["rholland"],
+    "version": "0.7.1",
+    "email": "rod.h.holland@gmail.com",
+    "repo": "https://github.com/rivt-info/rivt-simple-single-doc",
+    "license": "https://opensource.org/license/mit/",
+    "fork1": ["author", "version", "email", "repo"],
+    "fork2": [],
+    }
+    _[[END]]
+
+
+.. toctree::
+    :maxdepth: 1
+    :hidden:
+
+    rvA02-terms.rst
+    rvA03-faq.rst
+    rvA04-docex.rst
+
