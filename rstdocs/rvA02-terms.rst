@@ -124,10 +124,9 @@
 
   single doc 
   single docs 
-    A document that is not part of a report. It may be
-    published using the local folder  rather than the *src* subfolder. In 
-    this case command files and *docs*  are read and written to 
-    the *rivt file* folder.
+    A document that is not part of a report. It is published using the rivt file
+    folder for source files and outputs *src* and *publish* subfolders. It is 
+    used for basic stand alone docs and has limited formatting capabilities.
 
   report
   reports

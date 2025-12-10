@@ -31,15 +31,15 @@ rv.X(rS)           Quit              Exit rivt
 The :term:`API headers` determine overall processing of the section.
 
 ========== ===================== ==================== =====================
-API          private;public         print;store           section;merge         
+API          private;public         include;store        section;merge         
 ========== ===================== ==================== ===================== 
-rv.R        **private**;public      **store**;print     **merge**;section
-rv.I        **private**;public      **print**;store     **section**;merge   
-rv.V        **private**;public      **print**;store     **section**;merge    
-rv.T        **private**;public      **store**;print     **merge**;section
-rv.D        **private**;public      **store**;print     **merge**;section
-rv.S        **private**;public      **store**;print     **merge**;section
-rv.X        **private**;public      **store**;print     **merge**;section
+rv.R        **private**;public     **store**;include     **merge**;section
+rv.I        **private**;public     **include**;store     **section**;merge   
+rv.V        **private**;public     **include**;store     **section**;merge    
+rv.T        **private**;public     **store**;include     **merge**;section
+rv.D        **private**;public     **store**             **merge**
+rv.S        **private**;public     **store**;include     **merge**;section
+rv.X        **private**;public     **store**;include     **merge**;section
 ========== ===================== ==================== ===================== 
 
 
@@ -123,22 +123,22 @@ Commands read, write and format files.
 ========== ======================================================== ===== ==================
 API Scope           | Command | path | parameters                    R/W   input types
 ========== ======================================================== ===== ==================
-rv.R        \| LINUX | relative path | *wait;nowait*                 R     *.sh*
-rv.R        \| MACOS | relative path | *wait;nowait*                 R     *.sh*
-rv.R        \| WIN | relative path   | *wait;nowait*                 R     *.bat, .cmd*
-rv.I, V     \| IMAGE | relative path |  scale, caption (_[I])        R     *.png, .jpg*
-rv.I, V     \| IMAGE2 | relative path | s1, s2, c1, c2 (_[I])        R     *.png, jpg*
-rv.I, V     \| TABLE | relative path | width, l;c;r, title           R     *csv, txt, xlsx*
-rv.I, V     \| TEXT | relative path |  *normal;literal* ;code        R     *txt, code*
-rv.V        \| VALUES | relative path | *visible;hide* (_[T])        R     *csv*
-rv.V       a := 1*IN  | unit1, unit2, decimal | descrip (_[E])[1]    W     define a value
-rv.V       b <= a + 3*FT | unit1, unit2, decimal | descrip (_[E])    W     assign a value
-rv.V       c <= func1(x,y) | unit1, unit2, decimal | descrip (_[E])  W     assign a value
-rv.T        \| PYTHON | relative path | *rv-space*; userspace        R     *py*
-rv.T        \| HTML | relative path | label                          R     *html*
-rv.T        \| LATEX | relative path | label                         R     *tex*
-rv.D        \| APPEND | relative path | cover_page_title             W     *pdf*
-rv.D        \| PUBLISH | relative path | *pdf;pdftex;text;html*      W     *pdf, html, txt*
+rv.R       \| LINUX | relative path | *wait;nowait*                  R     *.sh*
+rv.R       \| MACOS | relative path | *wait;nowait*                  R     *.sh*
+rv.R       \| WIN | relative path   | *wait;nowait*                  R     *.bat, .cmd*
+rv.I,V     \| IMAGE | relative path |  scale, caption (_[I])         R     *.png, .jpg*
+rv.I,V     \| IMAGE2 | relative path | s1, s2, c1, c2 (_[I])         R     *.png, jpg*
+rv.I,V     \| TABLE | relative path | width, l;c;r, title            R     *csv, txt, xlsx*
+rv.I,V     \| TEXT | relative path |  *normal;literal* ;code         R     *txt, code*
+rv.V       \| VALUES | relative path | *visible;hide* (_[T])         R     *csv*
+rv.V       a := 1*IN  | unit1, unit2, decimal | label   (_[E])[1]    W     define a value
+rv.V       b <= a + 3*FT | unit1, unit2, decimal | label  (_[E])     W     assign a value
+rv.V       c <= func1(x,y) | unit1, unit2, decimal | label (_[E])    W     assign a value
+rv.V,T     \| PYTHON | relative path | *rvspace*; userspace          R     *py*
+rv.T       \| HTML | relative path | label                           R     *html*
+rv.T       \| LATEX | relative path | label                          R     *tex*
+rv.D       \| APPEND | relative path | cover_page_title              W     *pdf*
+rv.D       \| PUBLISH | ini rel. path | *rst2pdf;pdftex;text;html*   W     *pdf, html, txt*
 ========== ======================================================== ===== ==================
 
 [1] Values are usually defined in a block where the equation tag (_[E]) 

@@ -101,7 +101,7 @@ documents.
 as notebook cells in *VSCode* or other *IDE*.
 
 Four content functions (**R I V T**) output formatted utf-8 text to the
-terminal and generate formatted *doc* content. 
+terminal and write formatted *docs*. 
 
     The *Run API* executes shell commands. 
     
@@ -112,7 +112,7 @@ terminal and generate formatted *doc* content.
     The *Tool API* imports HTML, LaTeX, and Python scripts.
 
 Three processing functions (**D S X**) control the output format. The *Doc* API
-specifies the publication format :term:`docs`. The *Skip* and *Exit*
+specifies the publication format of a :term:`doc`. The *Skip* and *Exit*
 APIs are used for interactive editing and debugging.
 
 =============== =============== ===========================================
