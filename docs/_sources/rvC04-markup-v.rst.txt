@@ -29,7 +29,7 @@ formatted text.
     text _[R] report link      link to doc in report (all)
     text _[U] external url     external url link (all)
     \-\-\-\-\-                 >4 dashes inserts line (all)[2]
-    \=\=\=\=\=                 >4 underscores inserts page (all)[2]
+    \=\=\=\=\=                 >4 double dashes inserts page (all)[2]
 ============================= =======================================
 
 [1] label tag may be added to TABLE command

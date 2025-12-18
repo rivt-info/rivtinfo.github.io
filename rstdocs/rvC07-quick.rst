@@ -73,7 +73,7 @@ rv.I, V           text _[S] section link     link to section in doc (all)
 rv.I, V           text _[R] report link      link to doc in report (all)
 rv.I, V           text _[U] external url     external url link (all)
 rv.I, V           \-\-\-\-\-                 >4 dashes inserts line (all)[2]
-rv.I, V           \=\=\=\=\=                 >4 underscores inserts page (all)[2]
+rv.I, V           \=\=\=\=\=                 >4 double dashes inserts page (all)[2]
 rv.I              math _[L]                  format LaTeX math (all) 
 rv.I              math _[A]                  format ASCII math (all) 
 ============= ============================= ======================================
