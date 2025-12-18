@@ -87,7 +87,7 @@ Windows:
       
     winget install --id=astral-sh.uv  -e 
 
-macOS:
+macOS and Linux:
 
 .. code-block:: bash
       
@@ -102,8 +102,8 @@ This installs an isolated *rivt* environment and example files in the users
 Windows:  :download:`rivtuv.cmd </_downloads/rivtuv.cmd>` 
 OSX: :download:`rivtuv.sh </_downloads/rivtuv.sh>` 
 
-Additional explanation of the install scripts can be found 
-`here <https://github.com/rivt-info/rivtuv-install/edit/main/>`
+Additional explanation for the install scripts can be found 
+`here <https://github.com/rivt-info/rivtuv-install/edit/main/>`_.
 
 
 .. _rivt-system:
