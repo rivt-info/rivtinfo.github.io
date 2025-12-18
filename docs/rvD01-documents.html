@@ -407,18 +407,16 @@ into <em>rivt</em>.</p>
 LaTeX library (approx. 3GB). Its advantage is additional control over <em>doc</em>
 formatting and appearance.</p>
 <p id="api">&lt;i&gt;</p></section>
-<section id="stand-alone-docs">
-<h2><strong>[3]</strong> Stand-alone Docs<a class="headerlink" href="#stand-alone-docs" title="Link to this heading">#</a></h2>
+<section id="single-docs">
+<h2><strong>[3]</strong> Single docs<a class="headerlink" href="#single-docs" title="Link to this heading">#</a></h2>
 <hr><p>A document that will not be part of a <a class="reference internal" href="rvD02-files.html#report-describe"><span class="std std-ref">report</span></a> may use
-the rivt file folder for reading and writing files, without referencing
-the <em>rivt report folders</em>. A stand-alone <em>doc</em> is published using the
-following settings:</p>
-<ol class="arabic simple">
-<li><p>The <em>rv_local</em> variable is set to “True” in the <em>Meta API</em>.</p></li>
-<li><p>Any <em>COMMAND</em> relative path is just the file name.</p></li>
-</ol>
-<p>A <em>rivt file</em> may be converted to a stand-alone <em>doc</em> by making those two
-adjustments.</p>
+the local rivt file folder for reading and writing files, without referencing
+the <em>rivt report folders</em>. A single <em>doc</em> is formatted by setting the
+<em>rv_local</em> variable in a comment, immediately following the <em>rivtlib</em> import
+statement.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># rv_local=True</span>
+</pre></div>
+</div>
 <p>The text, PDF and HTML <em>docs</em> will be written to the local file folder using
 simple style settings built into <em>rivtlib</em>. Stand-alone <em>docs</em> require less
 setup but also offer less formatting control.</p>
@@ -476,7 +474,7 @@ setup but also offer less formatting control.</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-files"><strong>[1]</strong> rivt Files</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docs"><strong>[2]</strong> Docs</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stand-alone-docs"><strong>[3]</strong> Stand-alone Docs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#single-docs"><strong>[3]</strong> Single docs</a></li>
 </ul>
   </nav></div>
 

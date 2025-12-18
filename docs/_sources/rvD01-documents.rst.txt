@@ -60,23 +60,22 @@ formatting and appearance.
 
     <p id="api">&lt;i&gt;</p>
 
-**[3]** Stand-alone Docs
+**[3]** Single docs
 ----------------------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-A document that will not be part of a :ref:`report <report-describe>` may use 
-the rivt file folder for reading and writing files, without referencing 
-the *rivt report folders*. A stand-alone *doc* is published using the 
-following settings:
-
-#. The *rv_local* variable is set to "True" in the *Meta API*.
-#. Any *COMMAND* relative path is just the file name. 
+A document that will not be part of a :ref:`report <report-describe>` may use
+the local rivt file folder for reading and writing files, without referencing
+the *rivt report folders*. A single *doc* is formatted by setting the
+*rv_local* variable in a comment, immediately following the *rivtlib* import
+statement. 
   
-A *rivt file* may be converted to a stand-alone *doc* by making those two
-adjustments. 
+.. code:: python
+
+    # rv_local=True
 
 The text, PDF and HTML *docs* will be written to the local file folder using
 simple style settings built into *rivtlib*. Stand-alone *docs* require less
