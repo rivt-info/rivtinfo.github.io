@@ -35,7 +35,7 @@ and includes :term:`rivt markup`.
 *rivt* integrates well with other programs. The recommended open source
 :term:`rivt framework` is described :doc:`here. <rvB01-install>`.
 
-Several small *rivt file* and *doc* examples are provided 
+Small *rivt file* and *doc* examples are provided 
 :doc:`here <rvA04-docex>` and :doc:`here <rvD05-reportex>`. 
 A search interface for discovering *rivt files* on *GitHub*
 is :doc:`here <rvE03-ghsearch>`.
