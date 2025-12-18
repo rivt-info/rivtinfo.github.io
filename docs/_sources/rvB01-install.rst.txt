@@ -116,10 +116,10 @@ They execute the following steps:
     
     @echo on
     REM Windows 10 and above - cmd file
-    REM (1) clear any existing project
+    REM (1) clear any existing project and venv
     REM (2) create new venv
-    REM (3) install rivt
-    REM (4) download example
+    REM (3) install rivt from GitHub
+    REM (4) download example file from GitHub
     REM set rivt folder
     SET rvfolder=rivt-doc2
     REM go to home directory
@@ -143,7 +143,7 @@ They execute the following steps:
     REM (4) download example project into new folder
     mkdir example2
     cd example2
-    curl https://raw.githubusercontent.com/rivt-info/rivt-single-doc/refs/heads/main/rv0000-single-doc.py -O
+    curl https://raw.githubusercontent.com/rivt-info/rivt-single-doc/refs/heads/main/rv000-single-doc.py -O
     curl https://raw.githubusercontent.com/rivt-info/rivt-single-doc/refs/heads/main/s-beam1-v.csv -O
     curl https://raw.githubusercontent.com/rivt-info/rivt-single-doc/refs/heads/main/s-sectprop.py -O
     curl https://github.com/rivt-info/rivt-single-doc/blob/main/s-beam.png?raw=true -O -L
