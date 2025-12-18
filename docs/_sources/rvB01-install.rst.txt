@@ -86,75 +86,32 @@ for Windows is shown below. Other OS installs are similar.
 **Step 1. Install uv**
 
 Install `uv <https://docs.astral.sh/uv/getting-started/installation/#pypi>`_. 
-The recommended method for installing *uv* on Windows is: 
+
+The recommended method for installing *uv* on Windows 10 and above is: 
 
 .. code-block:: bash
       
     winget install --id=astral-sh.uv  -e 
 
-
-**Step 2. Create rivt environment and install rivtlib** 
-
-After installing *uv*, run the following commands to set up and activate an
-isolated *rivt* environment in the users *Home* directory (omit the explanatory
-REM lines). The commands may be downloaded and run from the command file
-:download:`rivtuv.cmd </_downloads/rivtuv.cmd>`. 
-
-They execute the following steps:
-
-#. name the *uv* environment in the first SET command
-#. switch to the %HOMEPATH% (User) folder
-#. remove any prior existing environment, cache and folders.
-#. download the rivt install file.
-#. create a new environment and activates it.
-#. install *rivt* in the *uv* environment.
-#. create an *example1* folder
-#. download an example  *rivt file* and *sources* into the *example1* folder
-
-.. code-block:: bash
-    :linenos:
-    
-    @echo on
-    REM Windows 10 and above - cmd file
-    REM (1) clear any existing project and venv
-    REM (2) create new venv
-    REM (3) install rivt from GitHub
-    REM (4) download example file from GitHub
-    REM set rivt folder
-    SET rvfolder=rivt-doc2
-    REM go to home directory
-    cd %HOMEPATH%
-    REM double check deactivation
-    uv deactivate
-    REM double check that old project is deleted
-    rmdir /s /q %rvfolder%
-    REM (1) clean cache 
-    uv cache clean
-    REM set up venv
-    mkdir %rvfolder%
-    REM change directory
-    cd %rvfolder%
-    REM (2) make venv
-    uv venv
-    REM activate venv
-    call .venv/scripts/activate
-    REM (3) install rivt from GitHub
-    uv pip install git+https://github.com/rivtlib-dev/rivtlib.git@main
-    REM (4) download example project into new folder
-    mkdir example2
-    cd example2
-    curl https://raw.githubusercontent.com/rivt-info/rivt-single-doc/refs/heads/main/rv000-single-doc.py -O
-    curl https://raw.githubusercontent.com/rivt-info/rivt-single-doc/refs/heads/main/s-beam1-v.csv -O
-    curl https://raw.githubusercontent.com/rivt-info/rivt-single-doc/refs/heads/main/s-sectprop.py -O
-    curl https://github.com/rivt-info/rivt-single-doc/blob/main/s-beam.png?raw=true -O -L
-    REM run example (no quotes) "python rv000-simple-doc.py"
-    cmd /k
-
-Within the *example1* folder run the rivt file:
+The recommended method for installing *uv* on *macCOS* and *Linux* is:
 
 .. code-block:: bash
       
-    python rv000-simple-doc.py
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+
+**Step 2. Create a rivt environment and install rivtlib** 
+
+After installing *uv*, download and run the following command or shell file.
+This installs an isolated *rivt* environment and example files in the users
+*Home* directory
+
+Windows:  :download:`rivtuv.cmd </_downloads/rivtuv.cmd>` 
+OSX: :download:`rivtuv.sh </_downloads/rivtuv.sh>` 
+
+Additional explanation of the install scripts can be found 
+`here <https://github.com/rivt-info/rivtuv-install/edit/main/>`
+
+
 
 .. raw:: html
 

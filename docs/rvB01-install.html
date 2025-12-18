@@ -419,68 +419,23 @@ is integrated with <em>VSCode</em>.</p>
 <hr><p>The <em>rivtuv</em> installation method is recommended for most users. The procedure
 for Windows is shown below. Other OS installs are similar.</p>
 <p><strong>Step 1. Install uv</strong></p>
-<p>Install <a class="reference external" href="https://docs.astral.sh/uv/getting-started/installation/#pypi">uv</a>.
-The recommended method for installing <em>uv</em> on Windows is:</p>
+<p>Install <a class="reference external" href="https://docs.astral.sh/uv/getting-started/installation/#pypi">uv</a>.</p>
+<p>The recommended method for installing <em>uv</em> on Windows 10 and above is:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>winget<span class="w"> </span>install<span class="w"> </span>--id<span class="o">=</span>astral-sh.uv<span class="w">  </span>-e
 </pre></div>
 </div>
-<p><strong>Step 2. Create rivt environment and install rivtlib</strong></p>
-<p>After installing <em>uv</em>, run the following commands to set up and activate an
-isolated <em>rivt</em> environment in the users <em>Home</em> directory (omit the explanatory
-REM lines). The commands may be downloaded and run from the command file
-<a class="reference download internal" download="" href="_downloads/3883216e7f8a8167bfab705f585bda9c/rivtuv.cmd"><code class="xref download docutils literal notranslate"><span class="pre">rivtuv.cmd</span></code></a>.</p>
-<p>They execute the following steps:</p>
-<ol class="arabic simple">
-<li><p>name the <em>uv</em> environment in the first SET command</p></li>
-<li><p>switch to the %HOMEPATH% (User) folder</p></li>
-<li><p>remove any prior existing environment, cache and folders.</p></li>
-<li><p>download the rivt install file.</p></li>
-<li><p>create a new environment and activates it.</p></li>
-<li><p>install <em>rivt</em> in the <em>uv</em> environment.</p></li>
-<li><p>create an <em>example1</em> folder</p></li>
-<li><p>download an example  <em>rivt file</em> and <em>sources</em> into the <em>example1</em> folder</p></li>
-</ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span>@echo<span class="w"> </span>on
-<span class="linenos"> 2</span>REM<span class="w"> </span>Windows<span class="w"> </span><span class="m">10</span><span class="w"> </span>and<span class="w"> </span>above<span class="w"> </span>-<span class="w"> </span>cmd<span class="w"> </span>file
-<span class="linenos"> 3</span>REM<span class="w"> </span><span class="o">(</span><span class="m">1</span><span class="o">)</span><span class="w"> </span>clear<span class="w"> </span>any<span class="w"> </span>existing<span class="w"> </span>project<span class="w"> </span>and<span class="w"> </span>venv
-<span class="linenos"> 4</span>REM<span class="w"> </span><span class="o">(</span><span class="m">2</span><span class="o">)</span><span class="w"> </span>create<span class="w"> </span>new<span class="w"> </span>venv
-<span class="linenos"> 5</span>REM<span class="w"> </span><span class="o">(</span><span class="m">3</span><span class="o">)</span><span class="w"> </span>install<span class="w"> </span>rivt<span class="w"> </span>from<span class="w"> </span>GitHub
-<span class="linenos"> 6</span>REM<span class="w"> </span><span class="o">(</span><span class="m">4</span><span class="o">)</span><span class="w"> </span>download<span class="w"> </span>example<span class="w"> </span>file<span class="w"> </span>from<span class="w"> </span>GitHub
-<span class="linenos"> 7</span>REM<span class="w"> </span><span class="nb">set</span><span class="w"> </span>rivt<span class="w"> </span>folder
-<span class="linenos"> 8</span>SET<span class="w"> </span><span class="nv">rvfolder</span><span class="o">=</span>rivt-doc2
-<span class="linenos"> 9</span>REM<span class="w"> </span>go<span class="w"> </span>to<span class="w"> </span>home<span class="w"> </span>directory
-<span class="linenos">10</span><span class="nb">cd</span><span class="w"> </span>%HOMEPATH%
-<span class="linenos">11</span>REM<span class="w"> </span>double<span class="w"> </span>check<span class="w"> </span>deactivation
-<span class="linenos">12</span>uv<span class="w"> </span>deactivate
-<span class="linenos">13</span>REM<span class="w"> </span>double<span class="w"> </span>check<span class="w"> </span>that<span class="w"> </span>old<span class="w"> </span>project<span class="w"> </span>is<span class="w"> </span>deleted
-<span class="linenos">14</span>rmdir<span class="w"> </span>/s<span class="w"> </span>/q<span class="w"> </span>%rvfolder%
-<span class="linenos">15</span>REM<span class="w"> </span><span class="o">(</span><span class="m">1</span><span class="o">)</span><span class="w"> </span>clean<span class="w"> </span>cache
-<span class="linenos">16</span>uv<span class="w"> </span>cache<span class="w"> </span>clean
-<span class="linenos">17</span>REM<span class="w"> </span><span class="nb">set</span><span class="w"> </span>up<span class="w"> </span>venv
-<span class="linenos">18</span>mkdir<span class="w"> </span>%rvfolder%
-<span class="linenos">19</span>REM<span class="w"> </span>change<span class="w"> </span>directory
-<span class="linenos">20</span><span class="nb">cd</span><span class="w"> </span>%rvfolder%
-<span class="linenos">21</span>REM<span class="w"> </span><span class="o">(</span><span class="m">2</span><span class="o">)</span><span class="w"> </span>make<span class="w"> </span>venv
-<span class="linenos">22</span>uv<span class="w"> </span>venv
-<span class="linenos">23</span>REM<span class="w"> </span>activate<span class="w"> </span>venv
-<span class="linenos">24</span>call<span class="w"> </span>.venv/scripts/activate
-<span class="linenos">25</span>REM<span class="w"> </span><span class="o">(</span><span class="m">3</span><span class="o">)</span><span class="w"> </span>install<span class="w"> </span>rivt<span class="w"> </span>from<span class="w"> </span>GitHub
-<span class="linenos">26</span>uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>git+https://github.com/rivtlib-dev/rivtlib.git@main
-<span class="linenos">27</span>REM<span class="w"> </span><span class="o">(</span><span class="m">4</span><span class="o">)</span><span class="w"> </span>download<span class="w"> </span>example<span class="w"> </span>project<span class="w"> </span>into<span class="w"> </span>new<span class="w"> </span>folder
-<span class="linenos">28</span>mkdir<span class="w"> </span>example2
-<span class="linenos">29</span><span class="nb">cd</span><span class="w"> </span>example2
-<span class="linenos">30</span>curl<span class="w"> </span>https://raw.githubusercontent.com/rivt-info/rivt-single-doc/refs/heads/main/rv000-single-doc.py<span class="w"> </span>-O
-<span class="linenos">31</span>curl<span class="w"> </span>https://raw.githubusercontent.com/rivt-info/rivt-single-doc/refs/heads/main/s-beam1-v.csv<span class="w"> </span>-O
-<span class="linenos">32</span>curl<span class="w"> </span>https://raw.githubusercontent.com/rivt-info/rivt-single-doc/refs/heads/main/s-sectprop.py<span class="w"> </span>-O
-<span class="linenos">33</span>curl<span class="w"> </span>https://github.com/rivt-info/rivt-single-doc/blob/main/s-beam.png?raw<span class="o">=</span><span class="nb">true</span><span class="w"> </span>-O<span class="w"> </span>-L
-<span class="linenos">34</span>REM<span class="w"> </span>run<span class="w"> </span>example<span class="w"> </span><span class="o">(</span>no<span class="w"> </span>quotes<span class="o">)</span><span class="w"> </span><span class="s2">&quot;python rv000-simple-doc.py&quot;</span>
-<span class="linenos">35</span>cmd<span class="w"> </span>/k
+<p>The recommended method for installing <em>uv</em> on <em>macCOS</em> and <em>Linux</em> is:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-LsSf<span class="w"> </span>https://astral.sh/uv/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>sh
 </pre></div>
 </div>
-<p>Within the <em>example1</em> folder run the rivt file:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>rv000-simple-doc.py
-</pre></div>
-</div>
+<p><strong>Step 2. Create a rivt environment and install rivtlib</strong></p>
+<p>After installing <em>uv</em>, download and run the following command or shell file.
+This installs an isolated <em>rivt</em> environment and example files in the users
+<em>Home</em> directory</p>
+<p>Windows:  <a class="reference download internal" download="" href="_downloads/3883216e7f8a8167bfab705f585bda9c/rivtuv.cmd"><code class="xref download docutils literal notranslate"><span class="pre">rivtuv.cmd</span></code></a>
+OSX: <a class="reference download internal" download="" href="_downloads/8aea5313b4752f6c507744d1c20b200b/rivtuv.sh"><code class="xref download docutils literal notranslate"><span class="pre">rivtuv.sh</span></code></a></p>
+<p>Additional explanation of the install scripts can be found
+<cite>here &lt;https://github.com/rivt-info/rivtuv-install/edit/main/&gt;</cite></p>
 <p id="api">&lt;i&gt;</p></section>
 <section id="install-rivt-system">
 <span id="rivt-system"></span><h2><strong>[3]</strong> Install <em>rivt system</em><a class="headerlink" href="#install-rivt-system" title="Link to this heading">#</a></h2>
