@@ -67,11 +67,10 @@ rv.I, V           text _[#]  text            endnote number (all)
 rv.I, V           text _[C]                  center text (all)
 rv.I, V           text _[R]                  right justify text (all)
 rv.I, V          label _[E]                  equation number and label (all)
-rv.I, V        caption _[I]                  image number and caption (all)[1]
 rv.I, V          title _[T]                  table number and title (all)[1]
 rv.I, V           text _[D] term link        link to defined term in report (all)
 rv.I, V           text _[S] section link     link to section in doc (all)
-rv.I, V           text _[D] report link      link to doc in report (all)
+rv.I, V           text _[R] report link      link to doc in report (all)
 rv.I, V           text _[U] external url     external url link (all)
 rv.I, V           \-\-\-\-\-                 >4 dashes inserts line (all)[2]
 rv.I, V           \=\=\=\=\=                 >4 underscores inserts page (all)[2]
@@ -79,7 +78,7 @@ rv.I              math _[L]                  format LaTeX math (all)
 rv.I              math _[A]                  format ASCII math (all) 
 ============= ============================= ======================================
 
-[1] tag may be added to the label parameter in the IMAGE and TABLE commands
+[1] label tag may be added to TABLE command
 
 [2] must start in first indented column (absolute column 4)
 
@@ -97,7 +96,7 @@ rv.I, V     _[[ITALIC]] spaces (4 default)          Italic indent - (all)
 rv.I, V     _[[ENDNOTES]] optional label            Endnote descriptions (all)
 rv.I, V     _[[TEXT]] optional language             *literal*, code (all)
 rv.I, V     _[[TOPIC]] topic                        Topic (all)
-rv.V        _[[VALUES]] table title (_[T])          Define values(all)
+rv.V        _[[VALUES]] table title, rows (_[T])    Define values(all)
 rv.T        _[[PYTHON]] label, *rvspace*;newspace   Python script (all)
 rv.T        _[[LATEX]] label                        LaTeX markup (pdf)[1]
 rv.T        _[[HTML]] label                         HTML markup (html)
@@ -126,12 +125,14 @@ API Scope           | Command | path | parameters                    R/W   input
 rv.R       \| LINUX | relative path | *wait;nowait*                  R     *.sh*
 rv.R       \| MACOS | relative path | *wait;nowait*                  R     *.sh*
 rv.R       \| WIN | relative path   | *wait;nowait*                  R     *.bat, .cmd*
-rv.I,V     \| IMAGE | relative path |  scale, caption (_[I])         R     *.png, .jpg*
-rv.I,V     \| IMAGE2 | relative path | s1, s2, c1, c2 (_[I])         R     *.png, jpg*
+rv.I,V     \| FIGURE | relative path |  scale, caption               R     *.png, .jpg*
+rv.I,V     \| FIGURE2 | relative path | s1, s2, c1, c2               R     *.png, jpg*
+rv.I,V     \| IMAGE | relative path |  scale                         R     *.png, .jpg*
+rv.I,V     \| IMAGE2 | relative path | scale1, scale2                R     *.png, jpg*
 rv.I,V     \| TABLE | relative path | width, l;c;r, title            R     *csv, txt, xlsx*
 rv.I,V     \| TEXT | relative path |  *normal;literal* ;code         R     *txt, code*
-rv.V       \| VALUES | relative path | *visible;hide* (_[T])         R     *csv*
-rv.V       a := 1*IN  | unit1, unit2, decimal | label   (_[E])[1]    W     define a value
+rv.V       \| VALUES | relative path | title, rows (_[T])[1]         R     *csv*
+rv.V       a := 1*IN  | unit1, unit2, decimal | label   (_[E])       W     define a value
 rv.V       b <= a + 3*FT | unit1, unit2, decimal | label  (_[E])     W     assign a value
 rv.V       c <= func1(x,y) | unit1, unit2, decimal | label (_[E])    W     assign a value
 rv.V,T     \| PYTHON | relative path | *rvspace*; userspace          R     *py*
@@ -141,8 +142,7 @@ rv.D       \| APPEND | relative path | cover_page_title              W     *pdf*
 rv.D       \| PUBLISH | ini rel. path | *rst2pdf;pdftex;text;html*   W     *pdf, html, txt*
 ========== ======================================================== ===== ==================
 
-[1] Values are usually defined in a block where the equation tag (_[E]) 
-would not apply and will be disregarded.
+[1] Values are typically defined in a block that formats to a table
 
 .. raw:: html
 

@@ -405,34 +405,31 @@ formatted text.</p>
 <tr class="row-odd"><td><p>label _[E]</p></td>
 <td><p>equation number and label (all)</p></td>
 </tr>
-<tr class="row-even"><td><p>caption _[I]</p></td>
-<td><p>image number and caption (all)[1]</p></td>
-</tr>
-<tr class="row-odd"><td><p>title _[T]</p></td>
+<tr class="row-even"><td><p>title _[T]</p></td>
 <td><p>table number and title (all)[1]</p></td>
 </tr>
-<tr class="row-even"><td><p>text _[D] term link</p></td>
+<tr class="row-odd"><td><p>text _[D] term link</p></td>
 <td><p>link to defined term in report (all)</p></td>
 </tr>
-<tr class="row-odd"><td><p>text _[S] section link</p></td>
+<tr class="row-even"><td><p>text _[S] section link</p></td>
 <td><p>link to section in doc (all)</p></td>
 </tr>
-<tr class="row-even"><td><p>text _[R] report link</p></td>
+<tr class="row-odd"><td><p>text _[R] report link</p></td>
 <td><p>link to doc in report (all)</p></td>
 </tr>
-<tr class="row-odd"><td><p>text _[U] external url</p></td>
+<tr class="row-even"><td><p>text _[U] external url</p></td>
 <td><p>external url link (all)</p></td>
 </tr>
-<tr class="row-even"><td><p>-----</p></td>
+<tr class="row-odd"><td><p>-----</p></td>
 <td><p>&gt;4 dashes inserts line (all)[2]</p></td>
 </tr>
-<tr class="row-odd"><td><p>=====</p></td>
+<tr class="row-even"><td><p>=====</p></td>
 <td><p>&gt;4 underscores inserts page (all)[2]</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>[1] tag may be added to the label parameter in the IMAGE and TABLE commands</p>
+<p>[1] label tag may be added to TABLE command</p>
 <p>[2] must start in first indented column (absolute column 4)</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -456,7 +453,7 @@ formatted text.</p>
 <tr class="row-even"><td><p>_[[TOPIC]] topic</p></td>
 <td><p>Topic (all)</p></td>
 </tr>
-<tr class="row-odd"><td><p>_[[VALUES]] table title (_[T])</p></td>
+<tr class="row-odd"><td><p>_[[VALUES]] table title, rows (_[T])</p></td>
 <td><p>Define values(all)</p></td>
 </tr>
 <tr class="row-even"><td><p>_[[END]]</p></td>
@@ -476,11 +473,19 @@ formatted text.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>| IMAGE | relative path |  scale, caption (_[I])</p></td>
+<tr class="row-even"><td><p>| FIGURE | relative path |  scale, caption</p></td>
 <td><p>R</p></td>
 <td><p><em>.png, .jpg</em></p></td>
 </tr>
-<tr class="row-odd"><td><p>| IMAGE2 | relative path | s1, s2, c1, c2 (_[I])</p></td>
+<tr class="row-odd"><td><p>| FIGURE2 | relative path | s1, s2, c1, c2</p></td>
+<td><p>R</p></td>
+<td><p><em>.png, jpg</em></p></td>
+</tr>
+<tr class="row-even"><td><p>| IMAGE | relative path |  scale</p></td>
+<td><p>R</p></td>
+<td><p><em>.png, .jpg</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>| IMAGE2 | relative path | scale1, scale2</p></td>
 <td><p>R</p></td>
 <td><p><em>.png, jpg</em></p></td>
 </tr>
@@ -492,7 +497,7 @@ formatted text.</p>
 <td><p>R</p></td>
 <td><p><em>txt, code</em></p></td>
 </tr>
-<tr class="row-even"><td><p>| VALUES | relative path | title, <em>show;hide</em> (_[T])</p></td>
+<tr class="row-even"><td><p>| VALUES | relative path | title, rows   (_[T])</p></td>
 <td><p>R</p></td>
 <td><p><em>csv</em></p></td>
 </tr>

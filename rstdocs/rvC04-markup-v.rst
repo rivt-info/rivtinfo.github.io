@@ -23,7 +23,6 @@ formatted text.
     text _[C]                  center text (all)
     text _[R]                  right justify text (all)
    label _[E]                  equation number and label (all)
- caption _[I]                  image number and caption (all)[1]
    title _[T]                  table number and title (all)[1]
     text _[D] term link        link to defined term in report (all)
     text _[S] section link     link to section in doc (all)
@@ -33,7 +32,7 @@ formatted text.
     \=\=\=\=\=                 >4 underscores inserts page (all)[2]
 ============================= =======================================
 
-[1] tag may be added to the label parameter in the IMAGE and TABLE commands
+[1] label tag may be added to TABLE command
 
 [2] must start in first indented column (absolute column 4)
 
@@ -45,18 +44,20 @@ _[[ITALIC]] spaces (4 default)           Italic indent - (all)
 _[[NOTES]] optional label                Endnote descriptions (all)
 _[[TEXT]] optional language              *literal*, code (all)
 _[[TOPIC]] topic                         Topic (all)
-_[[VALUES]] table title (_[T])           Define values(all)
+_[[VALUES]] table title, rows (_[T])     Define values(all)
 _[[END]]                                 End block (all)
 ======================================= ==============================
 
 ======================================================== ===== ==================
          | Command | path | parameters                    R/W   input types
 ======================================================== ===== ==================
- \| IMAGE | relative path |  scale, caption (_[I])        R     *.png, .jpg*
- \| IMAGE2 | relative path | s1, s2, c1, c2 (_[I])        R     *.png, jpg*
+ \| FIGURE | relative path |  scale, caption              R     *.png, .jpg*
+ \| FIGURE2 | relative path | s1, s2, c1, c2              R     *.png, jpg*
+ \| IMAGE | relative path |  scale                        R     *.png, .jpg*
+ \| IMAGE2 | relative path | scale1, scale2               R     *.png, jpg*
  \| TABLE | relative path | width, l;c;r, title           R     *csv, txt, xlsx*
  \| TEXT | relative path |  *normal;literal* ;code        R     *txt, code*
- \| VALUES | relative path | title, *show;hide* (_[T])    R     *csv*
+ \| VALUES | relative path | title, rows   (_[T])         R     *csv*
 a := 1*IN  | unit1, unit2, decimal | label (_[E])[1]      W     define value
 b <= a + 3*FT | unit1, unit2, decimal | label (_[E])      W     assign value
 c <= func1(x,y) | unit1, unit2, decimal | label (_[E])    W     assign value
