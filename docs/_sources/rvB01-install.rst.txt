@@ -72,8 +72,8 @@ varying degrees of system and program integration.
 
     <hr>
 
-The *rivtuv* installation method is recommended for most users. The procedure
-for Windows is shown below. Other OS installs are similar.
+Until *rivt* is uploaded to PyPI, the *rivtuv* installation method is
+recommended for most users.
 
 **Step 1. Install uv**
 
