@@ -1,12 +1,8 @@
 **B.1 Install**
 =================================  
 
-.. raw:: html
 
-    <p id="api">&lt;i&gt;</p>
-
-
-**[1]** rivt Project
+**[1i]** rivt Project
 ----------------------------------
 
 .. raw:: html
@@ -67,13 +63,9 @@ varying degrees of system and program integration.
     See :ref:`rivtzip <rivt-zip>` for procedure.
 
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
 .. _rivt-uv:
 
-**[2]** Install *rivtuv*
+**[2i]** Install *rivtuv*
 ----------------------------------
 
 .. raw:: html
@@ -87,13 +79,15 @@ for Windows is shown below. Other OS installs are similar.
 
 Install `uv <https://docs.astral.sh/uv/getting-started/installation/#pypi>`_. 
 
-The recommended method for installing *uv* on Windows 10 and above is: 
+The recommended method for installing *uv* is:
+
+Windows:
 
 .. code-block:: bash
       
     winget install --id=astral-sh.uv  -e 
 
-The recommended method for installing *uv* on *macCOS* and *Linux* is:
+macOS:
 
 .. code-block:: bash
       
@@ -112,14 +106,9 @@ Additional explanation of the install scripts can be found
 `here <https://github.com/rivt-info/rivtuv-install/edit/main/>`
 
 
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
 .. _rivt-system:
 
-**[3]** Install *rivt system*
+**[3i]** Install *rivt system*
 ----------------------------------
 
 .. raw:: html
@@ -135,14 +124,10 @@ Additional explanation of the install scripts can be found
 A list of the dependencies and *requirements.txt* file is 
 :doc:`here <rvB01-install>`.
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
 
 .. _rivt-framework:
 
-**[4]** Install *rivt framework*
+**[4i]** Install *rivt framework*
 ------------------------------------------
 
 .. raw:: html
@@ -162,14 +147,9 @@ A list of the dependencies and *requirements.txt* file is
 #. `QCAD <https://qcad.io/en/>`_ 
 
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-
 .. _rivt-zip:
 
-**[5]** Install *rivtzip*
+**[5i]** Install *rivtzip*
 --------------------------------------------------
 
 .. raw:: html
