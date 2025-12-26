@@ -1,12 +1,7 @@
 **D.3 Folders**
 ============================
 
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[1]** File Names
+**[1t]** File Names
 -------------------------------
 
 .. raw:: html
@@ -32,11 +27,7 @@ The *report numbers* used in the published report would be:
 where leading zeroes are dropped and *docs* are sorted alpha-numerically into
 divisions and subdivisions in the *report*.
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[2]**  Report Folders
+**[2t]**  Report Folders
 -------------------------------
 
 .. raw:: html

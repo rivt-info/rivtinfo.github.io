@@ -1,12 +1,8 @@
 **C.4 Values - rv.V**
 ========================
 
-.. raw:: html
 
-    <p id="api">&lt;i&gt;</p>
-
-
-**[1]** Summary
+**[1t]** Summary
 -------------------------
 
 .. raw:: html
@@ -32,9 +28,9 @@ formatted text.
     \=\=\=\=\=                 >4 double dashes inserts page (all)[2]
 ============================= =======================================
 
-[1] label tag may be added to TABLE command
+[1] title tag may be added to TABLE command
 
-[2] must start in first indented column (absolute column 4)
+[2] starts in first indented column (absolute column 4)
 
 ======================================= ==============================
        Block Tags                        Description (doc scope)
@@ -44,7 +40,7 @@ _[[ITALIC]] spaces (4 default)           Italic indent - (all)
 _[[NOTES]] optional label                Endnote descriptions (all)
 _[[TEXT]] optional language              *literal*, code (all)
 _[[TOPIC]] topic                         Topic (all)
-_[[VALUES]] table title, rows (_[T])     Define values(all)
+_[[VALUES]] title, rows (_[T])           Define values(all)
 _[[END]]                                 End block (all)
 ======================================= ==============================
 
@@ -55,10 +51,10 @@ _[[END]]                                 End block (all)
  \| FIGURE2 | relative path | s1, s2, c1, c2              R     *.png, jpg*
  \| IMAGE | relative path |  scale                        R     *.png, .jpg*
  \| IMAGE2 | relative path | scale1, scale2               R     *.png, jpg*
- \| TABLE | relative path | width, l;c;r, title           R     *csv, txt, xlsx*
+ \| TABLE | relative path | title, width, l;c;r,          R     *csv, txt, xlsx*
  \| TEXT | relative path |  *normal;literal* ;code        R     *txt, code*
- \| VALUES | relative path | title, rows   (_[T])         R     *csv*
-a := 1*IN  | unit1, unit2, decimal | label (_[E])[1]      W     define value
+ \| VALUES | relative path | title, rows  (_[T])[1]       R     *csv*
+a := 1*IN  | unit1, unit2, decimal | label (_[E])         W     define value
 b <= a + 3*FT | unit1, unit2, decimal | label (_[E])      W     assign value
 c <= func1(x,y) | unit1, unit2, decimal | label (_[E])    W     assign value
 ======================================================== ===== ==================
@@ -66,11 +62,7 @@ c <= func1(x,y) | unit1, unit2, decimal | label (_[E])    W     assign value
 [1] The equation tag (_[E]) is ignored when values are defined in a block
 
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[2]** _[#] : endnote number
+**[2t]** _[#] : endnote number
 -------------------------------------
 
 .. raw:: html
@@ -87,12 +79,7 @@ assigned in the order they are processed.
 
 outputs: text, pdf, html
 
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[3]** _[C] :  center text
+**[3t]** _[C] :  center text
 -------------------------------------------
 
 .. raw:: html
@@ -107,13 +94,7 @@ Center text within the page margins.
 
 outputs: text, pdf, html
 
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-
-**[4]** _[R] : right justify text
+**[4t]** _[R] : right justify text
 -----------------------------------------
 
 .. raw:: html
@@ -131,12 +112,7 @@ outputs: pdf, html
 
 outputs: text, pdf, html
 
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[5]** _[E] : equation label 
+**[5t]** _[E] : equation label 
 -----------------------------------------
 
 .. raw:: html
@@ -151,12 +127,7 @@ Labels and numbers equation.
 
 outputs: text, pdf, html
 
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[6]** _[I] : image label 
+**[6t]** _[I] : image label 
 -----------------------------------------
 
 .. raw:: html
@@ -171,12 +142,7 @@ Labels and numbers images.
 
 outputs: text, pdf, html
 
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[7]** _[T] : table label
+**[7t]** _[T] : table label
 ------------------------------------------
 
 .. raw:: html
@@ -191,12 +157,7 @@ Labels and numbers tables.
 
 outputs: text, pdf, html
 
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[8]** _[S] : link sections
+**[8t]** _[S] : link sections
 -----------------------------------------
 
 .. raw:: html
@@ -212,12 +173,7 @@ formatted.
 
 outputs: text, pdf, html
 
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[9]** _[D] : link docs
+**[9t]** _[D] : link docs
 -----------------------------------------
 
 .. raw:: html
@@ -233,12 +189,7 @@ formatted.
 
 outputs: text, pdf, html
 
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[10]** _[U] : external url
+**[10t]** _[U] : external url
 -----------------------------------------
 
 .. raw:: html
@@ -253,12 +204,7 @@ External url link. Text will be continued and wrapped when formatted.
 
 outputs: text, pdf, html
 
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[11]** ______ : horizontal line
+**[11t]** ______ : horizontal line
 ------------------------------------------- 
 .. raw:: html
 
@@ -275,11 +221,6 @@ Draws a horizontal line the width of the page.
     
 outputs: text, pdf, html
 
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
 **[12]** ======== : new page
 -----------------------------------------
 
@@ -294,11 +235,6 @@ outputs: text, pdf, html
 Starts a new page. Pages indicated with double dashed line in text output.
 
 outputs: text, pdf, html
-
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 **[13]** _[[INDENT]] : indent text
 ----------------------------------------------
@@ -318,11 +254,6 @@ outputs: text, pdf, html
         _[[QUIT]]
 
 Indents text four spaces.
-
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 **[14]** _[[ITALIC]] : indent italic
 ------------------------------------------------
@@ -345,12 +276,7 @@ Indents the specified number spaces and italicizes block.
 
 outputs: pdf, html
 
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[15]** _[[NOTE]] : endnote text
+**[15t]** _[[NOTE]] : endnote text
 -------------------------------------------    
 
 .. raw:: html
@@ -371,14 +297,7 @@ Formats and numbers an endnote in order of processing.
 
 outputs: text, pdf, html
 
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-
-
-**[16]** _[[TEXT]] : literal text or code
+**[16t]** _[[TEXT]] : literal text or code
 ------------------------------------------------
 
 .. raw:: html
@@ -400,11 +319,7 @@ and syntax coloring. Languages include: - *python* - *bash* - *sh* - *cmd*
 
 outputs: text, pdf, html
 
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[17]** _[[TOPIC]] : topic
+**[17t]** _[[TOPIC]] : topic
 ------------------------------------------------
 
 .. raw:: html
@@ -425,11 +340,7 @@ Formats a highlighted block.
 
 outputs: pdf, html
 
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[18]** _[[VALUES]] : topic
+**[18t]** _[[VALUES]] : topic
 ------------------------------------------------
 
 .. raw:: html
@@ -450,11 +361,7 @@ Defines values and writes them to *out* folder.
 
 outputs: pdf, html
 
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[19]** | IMAGE | : insert image
+**[19t]** | IMAGE | : insert image
 -------------------------------------------
 
 .. raw:: html
@@ -470,11 +377,7 @@ tag* may be added to the captions.
 
 outputs: PDF, HTML
 
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[20]** | IMAGE2 | : insert adjacent images 
+**[20t]** | IMAGE2 | : insert adjacent images 
 --------------------------------------------------
 
 .. raw:: html
@@ -490,11 +393,7 @@ document. The *Image tag* may be added to the captions.
 
 outputs: PDF, HTML
 
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[21]** | TABLE | : format table
+**[21t]** | TABLE | : format table
 ------------------------------------------
 
 .. raw:: html
@@ -512,11 +411,7 @@ may be added to the caption.
 
 outputs: text, PDF, HTML
 
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[22]** | TEXT | : format text
+**[22t]** | TEXT | : format text
 ------------------------------------------
 
 .. raw:: html
@@ -537,15 +432,7 @@ syntax coloring.  Languages include:
 
 outputs: text, PDF, HTML
 
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[23]** | VALUES | : table title
+**[23t]** | VALUES | : table title
 ------------------------------------------------
 
 .. raw:: html
@@ -561,7 +448,7 @@ Defines values and writes them to *out* folder.
 
 outputs: pdf, html
 
-**[24]** **:=** : define value
+**[24t]** **:=** : define value
 -------------------------------------------
 
 .. raw:: html
@@ -578,11 +465,7 @@ number* and *s* is the section number. The file is written to the folder
   
 outputs: text, PDF, HTML
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[25]** **<=** : assign value
+**[25t]** **<=** : assign value
 -------------------------------------------
 
 .. raw:: html

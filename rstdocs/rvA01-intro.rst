@@ -8,26 +8,26 @@
 
     <hr>
 
-*rivt* is an open source software project that simplifies reuse of shared 
-engineering documents. Collaboration reduces repetitive work and
-improves quality. Although a number of document software programs are
-available, reuse and sharing is generally not possible because of limitations 
-in software terms of use and distribution:
+*rivt* is an open source software project that simplifies sharing and reuse of 
+engineering documents. It can reduce repetitive work and improve quality. 
 
-- documents come from many incompatible programs
-- document formats become obsolete and inaccessible
-- frequent software updates are needed
+Engineering documents may include text, images, tables, calculations, computer
+code and models. Although a number of document programs are available, reuse
+and sharing are restricted by software design, terms of use and distribution:
+
+- documents may come from many incompatible programs
+- frequent software updates are needed to maintain document access
 - update costs are high
+- newer document formats become inaccessible without upgrades
 - software is limited to specific platforms
-- version control is limited
+- document version control is limited
 - report generation features are limited
 - collaboration features are limited
 
-The table below summarizes and compares limitations between
-different software programs.
+The table below summarizes and compares limitations between different software
+programs.
 
 .. rst-class:: center
-
 
 Table 1 - **Software Comparison**
 
@@ -96,7 +96,7 @@ The remaining three functions are used for processing and debugging.
     The *Exit API* can be used for interactive debugging.
 
 
-**[3t]** rivt File
+**[3t]** *rivt File*
 --------------------------------------------------------------------- 
 
 .. raw:: html
@@ -120,7 +120,7 @@ by implementing a flexible :term:`rivt markup` language and standard
 tables, diagrams, models and calculations that are typically part of engineering
 documents.
 
-**[4t]** rivt String
+**[4t]** *rivt String*
 ------------------------------------------------------------------------ 
 
 .. raw:: html
@@ -210,7 +210,7 @@ are relative to the root.  Resource files are stored in four primary subfolders:
 
 An example of a complete folder structure is :ref:`here <report-folders>`.
 
-**[6t]** Single *docs*
+**[6t]** *Single docs*
 ------------------------
 
 .. raw:: html

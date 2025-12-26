@@ -87,9 +87,9 @@
     and resources organized in subfolders
 
   rivt framework 
-
+  framework
     The recommended *rivt-framework* includes the
-    following programs, installed separately:
+    following separately installed programs:
 
     #. `VSCode <https://code.visualstudio.com/>`_ and 
        `VSCode extensions <https://marketplace.visualstudio.com/vscode>`_. 

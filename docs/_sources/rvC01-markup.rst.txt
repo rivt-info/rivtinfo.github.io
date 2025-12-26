@@ -1,12 +1,7 @@
 **C.1 Markup**
 ==================
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-
-**[1]** rivt String
+**[1t]** rivt String
 ----------------------------------
 
 .. raw:: html
@@ -35,11 +30,7 @@ indented 4 spaces for improved readability and section folding.
 The *rivt string* begins with an *API header* that includes a "section
 label" and section formatting parameters.
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[2]** API Header 
+**[2t]** API Header 
 -------------------------
 
 .. raw:: html
@@ -102,13 +93,7 @@ For the *Insert API* - rv.I(), the following syntax is equivalent:
         
         """)
 
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-
-**[3]** Section Text 
+**[3t]** Section Text 
 --------------------------
 
 .. raw:: html
@@ -144,14 +129,8 @@ content of the file rv.T() improves readability.
 
     <p id="api">&lt;i&gt;</p>
 
-**[4]** Tags and Commands
+**[4t]** Tags and Commands
 ----------------------------
-
-.. raw:: html
-
-    <hr>
-
-:doc:`Tags <rvC07-quick>`
 
 A :term:`line tag` formats a line of text and is denoted with **_[LETTER]**,
 generally placed at the end of the line for readability.
@@ -175,13 +154,7 @@ File paths are specified relative to the *report folder* or *rivt file* folder.
 The  typical *rivt report* folder structure is described 
 :doc:`here. <rvD03-folders>`
 
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-
-**[5]** Markup Key
+**[5t]** Markup Key
 ----------------------------------
 
 .. raw:: html
@@ -236,7 +209,7 @@ file types
 
     <p id="api">&lt;i&gt;</p>
 
-**[6]** Metadata
+**[6t]** Metadata
 -------------------
 
 .. raw:: html

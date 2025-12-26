@@ -6,7 +6,7 @@
 
     <p id="api">&lt;i&gt;</p>
 
-**[1]** API and Headers
+**[1t]** API and Headers
 ------------------------
 
 .. raw:: html
@@ -47,7 +47,7 @@ rv.X        **private**;public     **store**;include     **merge**;section
 
     <p id="api">&lt;i&gt;</p>
 
-**[2]** Tags
+**[2t]** Tags
 ----------------------
 
 .. raw:: html
@@ -110,7 +110,7 @@ all         _[[END]]                                End block (all)
 
     <p id="api">&lt;i&gt;</p>
 
-**[3]** Commands
+**[3t]** Commands
 -------------------
 
 .. raw:: html
@@ -148,7 +148,7 @@ rv.D       \| PUBLISH | ini rel. path | *rst2pdf;pdftex;text;html*   W     *pdf,
 
     <p id="api">&lt;i&gt;</p>
 
-**[4]** Folders
+**[4t]** Folders
 -------------------
 
 .. raw:: html
@@ -311,7 +311,7 @@ Folders organize files in standard locations to generate *docs* and *reports*
 
     <p id="api">&lt;i&gt;</p>
 
-**[5]** Metadata
+**[5t]** Metadata
 -------------------
 
 .. raw:: html

@@ -2,7 +2,7 @@
 =================================  
 
 
-**[1i]** rivt Project
+**[1t]** rivt Project
 ----------------------------------
 
 .. raw:: html
@@ -65,7 +65,7 @@ varying degrees of system and program integration.
 
 .. _rivt-uv:
 
-**[2i]** Install *rivtuv*
+**[2t]** Install *rivtuv*
 ----------------------------------
 
 .. raw:: html
@@ -108,7 +108,7 @@ Additional explanation for the install scripts can be found
 
 .. _rivt-system:
 
-**[3i]** Install *rivt system*
+**[3t]** Install *rivt system*
 ----------------------------------
 
 .. raw:: html
@@ -127,7 +127,7 @@ A list of the dependencies and *requirements.txt* file is
 
 .. _rivt-framework:
 
-**[4i]** Install *rivt framework*
+**[4t]** Install *rivt framework*
 ------------------------------------------
 
 .. raw:: html
@@ -149,7 +149,7 @@ A list of the dependencies and *requirements.txt* file is
 
 .. _rivt-zip:
 
-**[5i]** Install *rivtzip*
+**[5t]** Install *rivtzip*
 --------------------------------------------------
 
 .. raw:: html

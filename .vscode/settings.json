@@ -115,41 +115,9 @@
     "workbench.panel.defaultLocation": "right",
     "python.defaultInterpreterPath": "c:\\Python313\\python.exe",
     "explorer.sortOrder": "type",
-    "editor.hover.enabled": false,
+    "editor.hover.enabled": "off",
     "editor.parameterHints.enabled": false,
     "editor.minimap.enabled": false,
-<<<<<<< HEAD
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
-    "editor.hover.enabled": false,
-    "editor.parameterHints.enabled": false,
-=======
-    "editor.rulers": [
-        80
-    ],
-    "git.enableSmartCommit": true,
-    "git.confirmSync": false,
-    "github.copilot.enable": {
-        "*": false,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false
-    },
-    "git.autofetch": true,
-    "cSpell.enabled": false,
-    "surround.custom": {
-        // command name must be unique
-        "boldsurround": {
-            // label must be unique
-            "label": "boldsurround",
-            "description": "rst bold",
-            "snippet": "**$TM_SELECTED_TEXT**$0",
-            "languageIds": [
-                "*"
-            ]
-        },
-        // You can add more ...
-    },
-    "extensions.ignoreRecommendations": true,
->>>>>>> f66ea4fc136e9c9cd2105cebc16d284ee603bc78
 }

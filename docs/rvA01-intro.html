@@ -377,23 +377,23 @@
 <h1><strong>A.1 Introduction</strong><a class="headerlink" href="#a-1-introduction" title="Link to this heading">#</a></h1>
 <section id="t-summary">
 <h2><strong>[1t]</strong> Summary<a class="headerlink" href="#t-summary" title="Link to this heading">#</a></h2>
-<hr><p><em>rivt</em> is an open source software project that simplifies reuse of shared
-engineering documents. Collaboration reduces repetitive work and
-improves quality. Although a number of document software programs are
-available, reuse and sharing is generally not possible because of limitations
-in software terms of use and distribution:</p>
+<hr><p><em>rivt</em> is an open source software project that simplifies sharing and reuse of
+engineering documents. It can reduce repetitive work and improve quality.</p>
+<p>Engineering documents may include text, images, tables, calculations, computer
+code and models. Although a number of document programs are available, reuse
+and sharing are restricted by software design, terms of use and distribution:</p>
 <ul class="simple">
-<li><p>documents come from many incompatible programs</p></li>
-<li><p>document formats become obsolete and inaccessible</p></li>
-<li><p>frequent software updates are needed</p></li>
+<li><p>documents may come from many incompatible programs</p></li>
+<li><p>frequent software updates are needed to maintain document access</p></li>
 <li><p>update costs are high</p></li>
+<li><p>newer document formats become inaccessible without upgrades</p></li>
 <li><p>software is limited to specific platforms</p></li>
-<li><p>version control is limited</p></li>
+<li><p>document version control is limited</p></li>
 <li><p>report generation features are limited</p></li>
 <li><p>collaboration features are limited</p></li>
 </ul>
-<p>The table below summarizes and compares limitations between
-different software programs.</p>
+<p>The table below summarizes and compares limitations between different software
+programs.</p>
 <p class="center">Table 1 - <strong>Software Comparison</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -545,7 +545,7 @@ the four of the API functions. Each API function takes a single <em>rivt string<
 </div></blockquote>
 </section>
 <section id="t-rivt-file">
-<h2><strong>[3t]</strong> rivt File<a class="headerlink" href="#t-rivt-file" title="Link to this heading">#</a></h2>
+<h2><strong>[3t]</strong> <em>rivt File</em><a class="headerlink" href="#t-rivt-file" title="Link to this heading">#</a></h2>
 <hr><p>A <a class="reference internal" href="rvA02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> is a Python plain text file (.py) that imports the
 <a class="reference internal" href="rvA02-terms.html#term-rivtlib"><span class="xref std std-term">rivtlib</span></a> library and includes <em>rivt markup</em>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
@@ -560,7 +560,7 @@ tables, diagrams, models and calculations that are typically part of engineering
 documents.</p>
 </section>
 <section id="t-rivt-string">
-<h2><strong>[4t]</strong> rivt String<a class="headerlink" href="#t-rivt-string" title="Link to this heading">#</a></h2>
+<h2><strong>[4t]</strong> <em>rivt String</em><a class="headerlink" href="#t-rivt-string" title="Link to this heading">#</a></h2>
 <hr><p>An API function starts in the first column and takes a triple quoted
 <a class="reference internal" href="rvA02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> (rS) argument. The first line of the string is a header
 that specifies section labeling and processing. The <a class="reference internal" href="rvA02-terms.html#term-header"><span class="xref std std-term">header</span></a> is followed
@@ -622,10 +622,10 @@ marked with double vertical bars ( || ).</p><p><strong>Top Level Folders</strong
 <span class="w">    </span>└──<span class="w"> </span>README.txt<span class="w">                  </span><span class="o">||</span><span class="w"> </span>searchable<span class="w"> </span>text<span class="w"> </span>report
 </pre></div>
 </div>
-<p>An example of a complete folder structure is <a class="reference internal" href="rvD03-folders.html#id1"><span class="std std-ref">here</span></a>.</p>
+<p>An example of a complete folder structure is <a class="reference internal" href="rvD03-folders.html#report-folders"><span class="std std-ref">here</span></a>.</p>
 </section>
 <section id="t-single-docs">
-<h2><strong>[6t]</strong> Single <em>docs</em><a class="headerlink" href="#t-single-docs" title="Link to this heading">#</a></h2>
+<h2><strong>[6t]</strong> <em>Single docs</em><a class="headerlink" href="#t-single-docs" title="Link to this heading">#</a></h2>
 <hr><p>The <em>rv_localB</em> variable overrides the default report structure and specifies
 that resource files and <em>docs</em> are read from and written to the <em>rivt file</em>
 folder. It is intended for simple, standalone <em>docs</em> with limited, built-in
@@ -709,10 +709,10 @@ and license information and forks. The data is written to the API log file.</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-summary"><strong>[1t]</strong> Summary</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rivt-api"><strong>[2t]</strong> rivt API</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rivt-file"><strong>[3t]</strong> rivt File</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rivt-string"><strong>[4t]</strong> rivt String</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rivt-file"><strong>[3t]</strong> <em>rivt File</em></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rivt-string"><strong>[4t]</strong> <em>rivt String</em></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-report-folders"><strong>[5t]</strong>  Report Folders</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-single-docs"><strong>[6t]</strong> Single <em>docs</em></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-single-docs"><strong>[6t]</strong> <em>Single docs</em></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-metadata"><strong>[7t]</strong> Metadata</a></li>
 </ul>
   </nav></div>
