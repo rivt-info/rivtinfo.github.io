@@ -1,11 +1,7 @@
 **A.1 Introduction**
 =================================================================
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[1]** Summary
+**[1t]** Summary
 --------------------------------------------------------------------- 
 
 .. raw:: html
@@ -27,8 +23,8 @@ in software terms of use and distribution:
 - report generation features are limited
 - collaboration features are limited
 
-The table below summarizes these limitations and compares *rivt* with other
-software programs.
+The table below summarizes and compares limitations between
+different software programs.
 
 .. rst-class:: center
 
@@ -57,12 +53,50 @@ Jupyter        no       no         no      yes         yes      yes
     .. [6] Collaboration support
 
 
+**[2t]** rivt API 
+--------------------------------------------------------------------- 
+
 .. raw:: html
 
-    <p id="api">&lt;i&gt;</p>
+    <hr>
+
+*rivtlib* implements 7 API functions. The name *rivt* is an acronym formed from
+the four of the API functions. Each API function takes a single *rivt string*
+(triple quoted string) argument.
+
+=============== =============== ===========================================
+API Function        Name             Purpose
+=============== =============== ===========================================
+rv.R(rS)           Run               Run shell commands
+rv.I(rS)           Insert            Insert static resources 
+rv.V(rS)           Values            Calculate values
+rv.T(rS)           Tools             Python and markup scripts
+rv.D(rS)           Doc               Publish docs 
+rv.S(rS)           Skip              Skip section
+rv.X(rS)           Exit              Exit rivt without processing section
+=============== =============== ===========================================
+
+The text, HTML and PDF output files collectively are referred to as
+:term:`docs`. The following functions generate *doc* content.
+
+    The *Run API* executes shell commands. 
+    
+    The *Insert API* adds static table, image, equation and text content. 
+
+    The *Value API* evaluates equations and functions. 
+
+    The *Tool API* runs HTML, LaTeX, and Python scripts.
+
+The remaining three functions are used for processing and debugging.
+
+    The *Doc API* specifies the publication type and style. 
+    
+    The *Skip API* can be used for interactive debugging and comments.
+
+    The *Exit API* can be used for interactive debugging.
 
 
-**[2]** rivt File
+**[3t]** rivt File
 --------------------------------------------------------------------- 
 
 .. raw:: html
@@ -80,61 +114,13 @@ A :term:`rivt file` is a Python plain text file (.py) that imports the
 Each *rivt file* outputs a formatted rivt :term:`doc` file as a text, PDF or
 HTML document. Reports are organized assemblies of *docs*.
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
 The *rivt API* is designed to simplify document organization and publishing
 by implementing a flexible :term:`rivt markup` language and standard
 :ref:`folder structure <top-folders>`. It is designed to combine text, 
 tables, diagrams, models and calculations that are typically part of engineering
 documents.
 
-**[3]** API 
---------------------------------------------------------------------- 
-
-.. raw:: html
-
-    <hr>
-
-*rivtlib* includes 7 API functions that may be run as a script or interactively
-as notebook cells in *VSCode* or other *IDE*.
-
-Four content functions (**R I V T**) output formatted utf-8 text to the
-terminal and write formatted *docs*. 
-
-    The *Run API* executes shell commands. 
-    
-    The *Insert API* adds static table, image, equation and text content. 
-
-    The *Value API* evaluates equations and functions. 
-
-    The *Tool API* imports HTML, LaTeX, and Python scripts.
-
-Three processing functions (**D S X**) specify the publication format. The
-*doc* API specifies the publication type of the :term:`doc` as text, HTML or
-PDF. The *Skip* and *Exit* APIs are used in interactive editing and debugging.
-
-=============== =============== ===========================================
-API Function        Name             Purpose
-=============== =============== ===========================================
-rv.R(rS)           Run               Run shell commands
-rv.I(rS)           Insert            Insert static resources 
-rv.V(rS)           Values            Calculate values
-rv.T(rS)           Tools             Python and markup scripts
-rv.D(rS)           Doc               Publish docs 
-rv.S(rS)           Skip              Skip section
-rv.X(rS)           Exit              Exit rivt without processing section
-=============== =============== ===========================================
-
-Each API function takes a single *rivt string* (triple quoted string) argument.
-
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[4]** rivt String
+**[4t]** rivt String
 ------------------------------------------------------------------------ 
 
 .. raw:: html
@@ -160,11 +146,7 @@ Section text is plain text that includes :term:`rivt markup` and
 :term:`block tags` and :term:`commands` summarized :doc:`here. <rvC07-quick>` 
 See :doc:`Markup</rvC01-markup>` for further details.
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[5]**  Report Folders
+**[5t]**  Report Folders
 -------------------------------
 
 .. raw:: html
@@ -228,14 +210,8 @@ are relative to the root.  Resource files are stored in four primary subfolders:
 
 An example of a complete folder structure is :ref:`here <report-folders>`.
 
-
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[5]** Single *docs*
----------------------
+**[6t]** Single *docs*
+------------------------
 
 .. raw:: html
 
@@ -254,12 +230,7 @@ The variable is specified immediately after the import statement as a comment:
 
     # rv_localB = True
 
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[6]** Metadata
+**[7t]** Metadata
 -------------------
 
 .. raw:: html
