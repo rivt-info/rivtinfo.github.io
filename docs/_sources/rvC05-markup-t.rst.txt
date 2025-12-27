@@ -1,11 +1,7 @@
 **C.5 Tool - rv.T**
 =======================
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[1]** Summary
+**[1t]** Summary
 ------------------------------------------------
 
 .. raw:: html
@@ -21,23 +17,23 @@ function*. In that case files are read and written to the *rivt file* folder.
 ======================================== ==============================
  _[[HTML]] label                          HTML markup (html)
  _[[LATEX]] label                         LaTeX markup (pdf)[1]
+ _[[RST]] label                           reStructuredText markup (all)
  _[[PYTHON]] label, *rv-space*;newspace   Python script (all)
  _[[END]]                                 End block (all)
 ======================================== ==============================
+
+[1] LaTeX requires an installation of LaTeX.
 
 =================================================== ===== =================
         | Command | path | parameters                R/W     input types
 =================================================== ===== =================
  \| HTML | src/path | label                           R     *html*
  \| LATEX | src/path | label                          R     *tex*
+ \| RST | src/path | label                            R     *rst*
  \| PYTHON | src/path | *rv-namespace*; userspace     R     *py*
 =================================================== ===== =================
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[2]** _[[HTML]] : HTML code
+**[2t]** _[[HTML]] : HTML markup
 ---------------------------------------
 
 .. raw:: html
@@ -47,8 +43,8 @@ function*. In that case files are read and written to the *rivt file* folder.
 .. code-block:: text
         
      _[[HTML]] label
-     code
-     code
+     markup
+     markup
      ...
      _[[QUIT]]
 
@@ -56,11 +52,7 @@ Inserts HTML into *doc*.
 
 outputs: text, pdf, html
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[4]** _[[LATEX]] : LaTeX code
+**[3t]** _[[LATEX]] : LaTeX markup
 ------------------------------------------------
 
 .. raw:: html
@@ -70,8 +62,8 @@ outputs: text, pdf, html
 .. code-block:: text
         
     _[[LATEX]] label
-    code
-    code
+    markup
+    markup
     ...
     _[[END]]
 
@@ -80,11 +72,27 @@ Inserts TeX into *doc*.  May require installation of LaTeX.
 
 outputs: text, pdf, html
 
+**[4t]** _[[RST]] : reStructuredText code
+------------------------------------------------
+
 .. raw:: html
 
-    <p id="api">&lt;i&gt;</p>
+    <hr>
 
-**[5]** _[[PYTHON]] : Python code
+.. code-block:: text
+        
+    _[[RST]] label
+    markup
+    markup
+    ...
+    _[[END]]
+
+
+Inserts TeX into *doc*.  May require installation of LaTeX.
+
+outputs: text, pdf, html
+
+**[5t]** _[[PYTHON]] : Python code
 ------------------------------------------------
 
 .. raw:: html
@@ -104,11 +112,7 @@ File paths in the script are relative to the *rivt file* folder.
 
 outputs: text, pdf, html
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[6]** | HTML | HTML markup
+**[6t]** | HTML | HTML markup
 -------------------------------------------
 
 .. raw:: html
@@ -123,11 +127,7 @@ Reads and inserts .html and .htm files into *doc*.
 
 outputs: text, pdf, html
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[7]** | LATEX | LaTeX markup
+**[7t]** | LATEX | LaTeX markup
 -------------------------------------------
 
 .. raw:: html
@@ -142,11 +142,23 @@ Reads and inserts .tex files into *doc*. May require installation of LaTeX.
 
 outputs: text, pdf, html
 
+**[8t]** | RST | reStructuredText markup
+-------------------------------------------
+
 .. raw:: html
 
-    <p id="api">&lt;i&gt;</p>
+    <hr>
 
-**[8]** | PYTHON | Python script
+.. topic:: | LATEX | src/path | label
+
+    | LATEX | src/tools/page1.tex | frame analysis
+
+Reads and inserts .tex files into *doc*. May require installation of LaTeX.
+
+outputs: text, pdf, html
+
+
+**[9t]** | PYTHON | Python script
 -------------------------------------------
 
 .. raw:: html

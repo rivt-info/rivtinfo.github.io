@@ -130,6 +130,7 @@
 
   report
   reports
+  rivt report
     A group of compiled *docs* organized by rivt file number. 
 
   report folder

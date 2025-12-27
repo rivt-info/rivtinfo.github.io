@@ -382,8 +382,8 @@
                   
   <section id="c-5-tool-rv-t">
 <h1><strong>C.5 Tool - rv.T</strong><a class="headerlink" href="#c-5-tool-rv-t" title="Link to this heading">#</a></h1>
-<p id="api">&lt;i&gt;</p><section id="summary">
-<h2><strong>[1]</strong> Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
+<section id="t-summary">
+<h2><strong>[1t]</strong> Summary<a class="headerlink" href="#t-summary" title="Link to this heading">#</a></h2>
 <hr><p>Files processed by the <em>Tools API function</em> are usually read and written to the
 <em>src/</em> folder unless the <em>rv_localB</em> variable is set to <em>True</em> in the <em>Meta API
 function</em>. In that case files are read and written to the <em>rivt file</em> folder.</p>
@@ -400,15 +400,19 @@ function</em>. In that case files are read and written to the <em>rivt file</em>
 <tr class="row-odd"><td><p>_[[LATEX]] label</p></td>
 <td><p>LaTeX markup (pdf)[1]</p></td>
 </tr>
-<tr class="row-even"><td><p>_[[PYTHON]] label, <em>rv-space</em>;newspace</p></td>
+<tr class="row-even"><td><p>_[[RST]] label</p></td>
+<td><p>reStructuredText markup (all)</p></td>
+</tr>
+<tr class="row-odd"><td><p>_[[PYTHON]] label, <em>rv-space</em>;newspace</p></td>
 <td><p>Python script (all)</p></td>
 </tr>
-<tr class="row-odd"><td><p>_[[END]]</p></td>
+<tr class="row-even"><td><p>_[[END]]</p></td>
 <td><p>End block (all)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
+<p>[1] LaTeX requires an installation of LaTeX.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><div class="line-block">
@@ -428,40 +432,56 @@ function</em>. In that case files are read and written to the <em>rivt file</em>
 <td><p>R</p></td>
 <td><p><em>tex</em></p></td>
 </tr>
-<tr class="row-even"><td><p>| PYTHON | src/path | <em>rv-namespace</em>; userspace</p></td>
+<tr class="row-even"><td><p>| RST | src/path | label</p></td>
+<td><p>R</p></td>
+<td><p><em>rst</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>| PYTHON | src/path | <em>rv-namespace</em>; userspace</p></td>
 <td><p>R</p></td>
 <td><p><em>py</em></p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p id="api">&lt;i&gt;</p></section>
-<section id="html-html-code">
-<h2><strong>[2]</strong> _[[HTML]] : HTML code<a class="headerlink" href="#html-html-code" title="Link to this heading">#</a></h2>
+</section>
+<section id="t-html-html-markup">
+<h2><strong>[2t]</strong> _[[HTML]] : HTML markup<a class="headerlink" href="#t-html-html-markup" title="Link to this heading">#</a></h2>
 <hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[HTML]] label
-code
-code
+markup
+markup
 ...
 _[[QUIT]]
 </pre></div>
 </div>
 <p>Inserts HTML into <em>doc</em>.</p>
 <p>outputs: text, pdf, html</p>
-<p id="api">&lt;i&gt;</p></section>
-<section id="latex-latex-code">
-<h2><strong>[4]</strong> _[[LATEX]] : LaTeX code<a class="headerlink" href="#latex-latex-code" title="Link to this heading">#</a></h2>
+</section>
+<section id="t-latex-latex-markup">
+<h2><strong>[3t]</strong> _[[LATEX]] : LaTeX markup<a class="headerlink" href="#t-latex-latex-markup" title="Link to this heading">#</a></h2>
 <hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[LATEX]] label
-code
-code
+markup
+markup
 ...
 _[[END]]
 </pre></div>
 </div>
 <p>Inserts TeX into <em>doc</em>.  May require installation of LaTeX.</p>
 <p>outputs: text, pdf, html</p>
-<p id="api">&lt;i&gt;</p></section>
-<section id="python-python-code">
-<h2><strong>[5]</strong> _[[PYTHON]] : Python code<a class="headerlink" href="#python-python-code" title="Link to this heading">#</a></h2>
+</section>
+<section id="t-rst-restructuredtext-code">
+<h2><strong>[4t]</strong> _[[RST]] : reStructuredText code<a class="headerlink" href="#t-rst-restructuredtext-code" title="Link to this heading">#</a></h2>
+<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[RST]] label
+markup
+markup
+...
+_[[END]]
+</pre></div>
+</div>
+<p>Inserts TeX into <em>doc</em>.  May require installation of LaTeX.</p>
+<p>outputs: text, pdf, html</p>
+</section>
+<section id="t-python-python-code">
+<h2><strong>[5t]</strong> _[[PYTHON]] : Python code<a class="headerlink" href="#t-python-python-code" title="Link to this heading">#</a></h2>
 <hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[PYTHON]] *rv-namespace*; user namespace
 code
 code
@@ -472,9 +492,9 @@ _[[END]]
 <p>Executes Python script in the <em>rivt namespace</em> or a user specified namespace.
 File paths in the script are relative to the <em>rivt file</em> folder.</p>
 <p>outputs: text, pdf, html</p>
-<p id="api">&lt;i&gt;</p></section>
-<section id="html-html-markup">
-<h2><strong>[6]</strong> | HTML | HTML markup<a class="headerlink" href="#html-html-markup" title="Link to this heading">#</a></h2>
+</section>
+<section id="id1">
+<h2><strong>[6t]</strong> | HTML | HTML markup<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| HTML | src/path | label</p>
 <div class="line-block">
@@ -483,9 +503,9 @@ File paths in the script are relative to the <em>rivt file</em> folder.</p>
 </aside>
 <p>Reads and inserts .html and .htm files into <em>doc</em>.</p>
 <p>outputs: text, pdf, html</p>
-<p id="api">&lt;i&gt;</p></section>
-<section id="latex-latex-markup">
-<h2><strong>[7]</strong> | LATEX | LaTeX markup<a class="headerlink" href="#latex-latex-markup" title="Link to this heading">#</a></h2>
+</section>
+<section id="id2">
+<h2><strong>[7t]</strong> | LATEX | LaTeX markup<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| LATEX | src/path | label</p>
 <div class="line-block">
@@ -494,9 +514,20 @@ File paths in the script are relative to the <em>rivt file</em> folder.</p>
 </aside>
 <p>Reads and inserts .tex files into <em>doc</em>. May require installation of LaTeX.</p>
 <p>outputs: text, pdf, html</p>
-<p id="api">&lt;i&gt;</p></section>
-<section id="python-python-script">
-<h2><strong>[8]</strong> | PYTHON | Python script<a class="headerlink" href="#python-python-script" title="Link to this heading">#</a></h2>
+</section>
+<section id="t-rst-restructuredtext-markup">
+<h2><strong>[8t]</strong> | RST | reStructuredText markup<a class="headerlink" href="#t-rst-restructuredtext-markup" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">| LATEX | src/path | label</p>
+<div class="line-block">
+<div class="line">LATEX | src/tools/page1.tex | frame analysis</div>
+</div>
+</aside>
+<p>Reads and inserts .tex files into <em>doc</em>. May require installation of LaTeX.</p>
+<p>outputs: text, pdf, html</p>
+</section>
+<section id="t-python-python-script">
+<h2><strong>[9t]</strong> | PYTHON | Python script<a class="headerlink" href="#t-python-python-script" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| PYTHON | src/path | <em>rv-space</em>; user space</p>
 <div class="line-block">
@@ -556,13 +587,15 @@ paths used in the script are relative to the <em>rivt file</em> folder.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary"><strong>[1]</strong> Summary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-html-code"><strong>[2]</strong> _[[HTML]] : HTML code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex-latex-code"><strong>[4]</strong> _[[LATEX]] : LaTeX code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-python-code"><strong>[5]</strong> _[[PYTHON]] : Python code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-html-markup"><strong>[6]</strong> | HTML | HTML markup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex-latex-markup"><strong>[7]</strong> | LATEX | LaTeX markup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-python-script"><strong>[8]</strong> | PYTHON | Python script</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-summary"><strong>[1t]</strong> Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-html-html-markup"><strong>[2t]</strong> _[[HTML]] : HTML markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-latex-latex-markup"><strong>[3t]</strong> _[[LATEX]] : LaTeX markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rst-restructuredtext-code"><strong>[4t]</strong> _[[RST]] : reStructuredText code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-python-python-code"><strong>[5t]</strong> _[[PYTHON]] : Python code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><strong>[6t]</strong> | HTML | HTML markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><strong>[7t]</strong> | LATEX | LaTeX markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rst-restructuredtext-markup"><strong>[8t]</strong> | RST | reStructuredText markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-python-python-script"><strong>[9t]</strong> | PYTHON | Python script</a></li>
 </ul>
   </nav></div>
 
