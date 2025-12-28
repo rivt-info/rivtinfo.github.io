@@ -382,9 +382,9 @@
                   
   <section id="c-6-doc-rv-d">
 <h1><strong>C.6 Doc - rv.D</strong><a class="headerlink" href="#c-6-doc-rv-d" title="Link to this heading">#</a></h1>
-<p id="api">&lt;i&gt;</p><section id="summary">
-<h2><strong>[1]</strong> Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
-<hr><p>The <em>Doc API</em> publishes formatted document files from rivt API strings.</p>
+<p id="api">&lt;i&gt;</p><section id="t-summary">
+<h2><strong>[1t]</strong> Summary<a class="headerlink" href="#t-summary" title="Link to this heading">#</a></h2>
+<hr><p>The <em>Doc API</em> publishes formatted <em>docs</em> from the rivt API strings.</p>
 <p><strong>Block Tags</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -413,22 +413,25 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>| APPEND | relative path | <em>none</em>;title;separatorfile</p></td>
+<tr class="row-even"><td><p>| APPEND | relative path | <em>none</em>;title</p></td>
 <td><p>pdf, html, text</p></td>
 </tr>
-<tr class="row-odd"><td><p>| PUBLISH | <em>pdf;pdftex;html;text</em> | <em>none</em>;title;coverfile</p></td>
+<tr class="row-odd"><td><p>| PREPEND | relative path | <em>none</em>;title</p></td>
+<td><p>pdf, html, text</p></td>
+</tr>
+<tr class="row-even"><td><p>| PUBLISH | <em>rivt</em>; rel path | <em>rst2pdf;pdftex;html;text</em></p></td>
 <td><p>pdf, html, text</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 </section>
-<section id="indent-indent-text">
-<h2><strong>[2]</strong> _[[INDENT]] : indent text<a class="headerlink" href="#indent-indent-text" title="Link to this heading">#</a></h2>
+<section id="t-layout-format-settings">
+<h2><strong>[2t]</strong> _[[LAYOUT]] :  format settings<a class="headerlink" href="#t-layout-format-settings" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">_[[LAYOUT]] label</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">LAYOUT</span><span class="p">]]</span> <span class="mi">4</span>
-<span class="n">head_template</span><span class="p">:</span>
+<p class="topic-title">_[[LAYOUT]] optional label</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">LAYOUT</span><span class="p">]]</span>
+<span class="n">pdfheaderL</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">foot_template</span><span class="p">:</span>
 <span class="o">...</span>
 <span class="n">_</span><span class="p">[[</span><span class="n">QUIT</span><span class="p">]]</span>
@@ -436,22 +439,33 @@
 </div>
 <p>The LAYOUT block overrides default style settings.</p>
 </aside>
-<p id="api">&lt;i&gt;</p></section>
-<section id="append-append-pdf-file">
-<h2><strong>[3]</strong> | APPEND  | - append PDF file<a class="headerlink" href="#append-append-pdf-file" title="Link to this heading">#</a></h2>
+</section>
+<section id="t-append-append-pdf-file">
+<h2><strong>[3t]</strong> | APPEND  | - append PDF file<a class="headerlink" href="#t-append-append-pdf-file" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| APPEND | relative path | <em>none</em>;title;cover file</p>
+<p class="topic-title">| APPEND | relative path | <em>none</em>;title</p>
 <div class="line-block">
 <div class="line">APPEND | src/appendix1.pdf | none</div>
 </div>
 </aside>
 <p>Appends file to <em>doc</em> with optional separator page.</p>
 <p>outputs:  PDF, HTML, text</p>
-<p id="api">&lt;i&gt;</p></section>
-<section id="publish-write-doc-file">
-<h2><strong>[4]</strong> | PUBLISH |  - write doc file<a class="headerlink" href="#publish-write-doc-file" title="Link to this heading">#</a></h2>
+</section>
+<section id="t-prepend-prepend-pdf-file">
+<h2><strong>[4t]</strong> | PREPEND  | - prepend PDF file<a class="headerlink" href="#t-prepend-prepend-pdf-file" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| PUBLISH | <em>pdf;pdftex;text;html</em> | <em>none</em>;title;coverfile</p>
+<p class="topic-title">| APPEND | relative path | <em>none</em>;title</p>
+<div class="line-block">
+<div class="line">APPEND | src/appendix1.pdf | none</div>
+</div>
+</aside>
+<p>Appends file to <em>doc</em> with optional separator page.</p>
+<p>outputs:  PDF, HTML, text</p>
+</section>
+<section id="t-publish-write-doc-file">
+<h2><strong>[5t]</strong> | PUBLISH |  - write doc file<a class="headerlink" href="#t-publish-write-doc-file" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">| PUBLISH | <em>rst2pdf;texpd;text;html</em> | <em>none</em>;title</p>
 <div class="line-block">
 <div class="line">PUBLISH | doc1.pdf | none</div>
 </div>
@@ -508,10 +522,11 @@
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary"><strong>[1]</strong> Summary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#indent-indent-text"><strong>[2]</strong> _[[INDENT]] : indent text</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#append-append-pdf-file"><strong>[3]</strong> | APPEND  | - append PDF file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publish-write-doc-file"><strong>[4]</strong> | PUBLISH |  - write doc file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-summary"><strong>[1t]</strong> Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-layout-format-settings"><strong>[2t]</strong> _[[LAYOUT]] :  format settings</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-append-append-pdf-file"><strong>[3t]</strong> | APPEND  | - append PDF file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-prepend-prepend-pdf-file"><strong>[4t]</strong> | PREPEND  | - prepend PDF file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-publish-write-doc-file"><strong>[5t]</strong> | PUBLISH |  - write doc file</a></li>
 </ul>
   </nav></div>
 

@@ -5,14 +5,14 @@
 
     <p id="api">&lt;i&gt;</p>
 
-**[1]** Summary
+**[1t]** Summary
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-The *Doc API* publishes formatted document files from rivt API strings.
+The *Doc API* publishes formatted *docs* from the rivt API strings.
 
 **Block Tags**
 
@@ -23,65 +23,80 @@ The *Doc API* publishes formatted document files from rivt API strings.
  _[[END]]                                End block (all)
 ======================================= ==============================
 
+
+
+
+
 **Commands**
 
 ============================================================== ================= 
         | Command | relative path | parameters                   doc types
 ============================================================== ================= 
-\| APPEND | relative path | *none*;title;separatorfile          pdf, html, text
-\| PUBLISH | *pdf;pdftex;html;text* | *none*;title;coverfile    pdf, html, text
+\| APPEND | relative path | *none*;title                        pdf, html, text
+\| PREPEND | relative path | *none*;title                       pdf, html, text
+\| PUBLISH | *rivt*; rel path | *rst2pdf;pdftex;html;text*       pdf, html, text
 ============================================================== ================= 
 
-**[2]** _[[INDENT]] : indent text
+
+
+
+**[2t]** _[[LAYOUT]] :  format settings
 ----------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic::  _[[LAYOUT]] label
+.. topic::  _[[LAYOUT]] optional label
 
     ::
 
-        _[[LAYOUT]] 4
-        head_template: 
+        _[[LAYOUT]] 
+        pdfheaderL = []
         foot_template:
         ...
         _[[QUIT]]
 
     The LAYOUT block overrides default style settings.
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[3]** | APPEND  | - append PDF file
+**[3t]** | APPEND  | - append PDF file
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | APPEND | relative path | *none*;title;cover file 
+.. topic:: | APPEND | relative path | *none*;title
 
     | APPEND | src/appendix1.pdf | none
 
 Appends file to *doc* with optional separator page.
 
 outputs:  PDF, HTML, text
- 
-.. raw:: html
 
-    <p id="api">&lt;i&gt;</p>
-
-**[4]** | PUBLISH |  - write doc file
+**[4t]** | PREPEND  | - prepend PDF file
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | PUBLISH | *pdf;pdftex;text;html* | *none*;title;coverfile 
+.. topic:: | APPEND | relative path | *none*;title
+
+    | APPEND | src/appendix1.pdf | none
+
+Appends file to *doc* with optional separator page.
+
+outputs:  PDF, HTML, text
+
+**[5t]** | PUBLISH |  - write doc file
+-------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: | PUBLISH | *rst2pdf;texpd;text;html* | *none*;title
 
     | PUBLISH | doc1.pdf | none
 

@@ -12,6 +12,7 @@
 
 - document formatting
 - numerical analysis
+- code simplifcation
 - symbolic processing
 - visualization
 

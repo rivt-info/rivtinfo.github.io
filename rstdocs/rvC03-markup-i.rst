@@ -21,9 +21,9 @@ images, tables and formatted text.
 ============================= =======================================
         Line Tags              Description (doc scope)
 ============================= =======================================
-    text _[#] text             endnote number (all)
-    text _[C]                  center text (all)
-    text _[R]                  right justify text (all)
+    text _[#] text             :ref:`endnote` number (all)
+    text _[C]                  :ref:`center` text (all)
+    text _[R]                  :ref:`right` justify text (all)
     math _[A]                  format ASCII math (all) 
     math _[L]                  format LaTeX math (all) 
    label _[E]                  equation number and label (all)
@@ -62,13 +62,9 @@ images, tables and formatted text.
  \| TEXT | relative path |  *normal;literal* ;code        R     *txt, code*
 ======================================================== ===== ==================
 
+..  _endnote:
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-
-**[2]** _[#] : endnote number
+**[2t]** _[#] : endnote number
 -------------------------------------
 
 .. raw:: html
@@ -86,13 +82,9 @@ assigned in the order they are processed.
 
 outputs: text, pdf, html
 
+..  _center:
 
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-
-**[3]** _[C] :  center text
+**[3t]** _[C] :  center text
 -------------------------------------------
 
 .. raw:: html
@@ -107,12 +99,9 @@ Center text within the page margins.
 
 outputs: text, pdf, html
 
-.. raw:: html
+.. _right:
 
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-
-**[4]** _[R] : right justify text
+**[4t]** _[R] : right justify text
 -----------------------------------------
 
 .. raw:: html
