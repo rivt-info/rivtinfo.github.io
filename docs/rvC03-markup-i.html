@@ -390,24 +390,24 @@ images, tables and formatted text.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Line Tags</p></th>
-<th class="head"><p>Description (doc scope)</p></th>
+<th class="head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>text _[#] text</p></td>
-<td><p><a class="reference internal" href="#endnote"><span class="std std-ref">[2t] _[#] : endnote number</span></a> number (all)</p></td>
+<td><p><a class="reference internal" href="#endnotetag"><span class="std std-ref">[2t] _[#] : endnote number</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>text _[C]</p></td>
-<td><p><a class="reference internal" href="#center"><span class="std std-ref">[3t] _[C] :  center text</span></a> text (all)</p></td>
+<td><p><a class="reference internal" href="#centertag"><span class="std std-ref">[3t] _[C] :  center text</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>text _[R]</p></td>
-<td><p><span class="xref std std-ref">right</span> justify text (all)</p></td>
+<td><p><a class="reference internal" href="#righttag"><span class="std std-ref">[4t] _[R] : right justify text</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>math _[A]</p></td>
-<td><p>format ASCII math (all)</p></td>
+<tr class="row-odd"><td><p>latex math _[L]</p></td>
+<td><p><a class="reference internal" href="#latextag"><span class="std std-ref">[5t] _[L] : LaTeX math</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>math _[L]</p></td>
-<td><p>format LaTeX math (all)</p></td>
+<tr class="row-even"><td><p>ascii math _[A]</p></td>
+<td><p><a class="reference internal" href="#asciitag"><span class="std std-ref">[6] _[A] : ASCII math</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>label _[E]</p></td>
 <td><p>equation number and label (all)</p></td>
@@ -504,7 +504,7 @@ images, tables and formatted text.</p>
 </div>
 </section>
 <section id="t-endnote-number">
-<span id="endnote"></span><h2><strong>[2t]</strong> _[#] : endnote number<a class="headerlink" href="#t-endnote-number" title="Link to this heading">#</a></h2>
+<span id="endnotetag"></span><h2><strong>[2t]</strong> _[#] : endnote number<a class="headerlink" href="#t-endnote-number" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">text _[#]</p>
 <p>Text is wrapped when formatted. _[#]</p>
@@ -515,7 +515,7 @@ assigned in the order they are processed.</p>
 <p>outputs: text, pdf, html</p>
 </section>
 <section id="t-c-center-text">
-<span id="center"></span><h2><strong>[3t]</strong> _[C] :  center text<a class="headerlink" href="#t-c-center-text" title="Link to this heading">#</a></h2>
+<span id="centertag"></span><h2><strong>[3t]</strong> _[C] :  center text<a class="headerlink" href="#t-c-center-text" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">text _[C]</p>
 <p>This text will be centered _[C]</p>
@@ -524,7 +524,7 @@ assigned in the order they are processed.</p>
 <p>outputs: text, pdf, html</p>
 </section>
 <section id="t-r-right-justify-text">
-<h2><strong>[4t]</strong> _[R] : right justify text<a class="headerlink" href="#t-r-right-justify-text" title="Link to this heading">#</a></h2>
+<span id="righttag"></span><h2><strong>[4t]</strong> _[R] : right justify text<a class="headerlink" href="#t-r-right-justify-text" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title"><em>equation</em> _[L]</p>
 <p>frac{1}{sqrt{x}} _[L]</p>
@@ -533,7 +533,7 @@ assigned in the order they are processed.</p>
 <p>outputs: pdf, html</p>
 </section>
 <section id="t-l-latex-math">
-<h2><strong>[5t]</strong> _[L] : LaTeX math<a class="headerlink" href="#t-l-latex-math" title="Link to this heading">#</a></h2>
+<span id="latextag"></span><h2><strong>[5t]</strong> _[L] : LaTeX math<a class="headerlink" href="#t-l-latex-math" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title"><em>equation</em> _[L]</p>
 <p>frac{1}{sqrt{x}} _[L]</p>
@@ -542,7 +542,7 @@ assigned in the order they are processed.</p>
 <p>outputs: pdf, html</p>
 </section>
 <section id="a-ascii-math">
-<h2><strong>[6]</strong> _[A] : ASCII math<a class="headerlink" href="#a-ascii-math" title="Link to this heading">#</a></h2>
+<span id="asciitag"></span><h2><strong>[6]</strong> _[A] : ASCII math<a class="headerlink" href="#a-ascii-math" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title"><em>equation</em> _[A]</p>
 <p>f(x,y) = sin(x)**2 + y/5 _[A]</p>

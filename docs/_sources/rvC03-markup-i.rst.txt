@@ -14,13 +14,13 @@ The *Insert* API function inserts static resources into the *doc* including
 images, tables and formatted text.
 
 ============================= =======================================
-        Line Tags              Description (doc scope)
+        Line Tags              Description 
 ============================= =======================================
-    text _[#] text             :ref:`endnote` number (all)
-    text _[C]                  :ref:`center` text (all)
-    text _[R]                  :ref:`right` justify text (all)
-    math _[A]                  format ASCII math (all) 
-    math _[L]                  format LaTeX math (all) 
+          text _[#] text             :ref:`endnotetag`  
+          text _[C]                  :ref:`centertag` 
+          text _[R]                  :ref:`righttag` 
+    latex math _[L]                  :ref:`latextag` 
+    ascii math _[A]                  :ref:`asciitag`
    label _[E]                  equation number and label (all)
  caption _[I]                  image number and caption (all)[1]
    title _[T]                  table number and title (all)[1]
@@ -57,8 +57,7 @@ images, tables and formatted text.
  \| TEXT | relative path |  *normal;literal* ;code        R     *txt, code*
 ======================================================== ===== ==================
 
-..  _endnote:
-
+..  _endnotetag:
 
 **[2t]** _[#] : endnote number
 -------------------------------------
@@ -78,8 +77,7 @@ assigned in the order they are processed.
 
 outputs: text, pdf, html
 
-..  _center:
-
+..  _centertag:
 
 **[3t]** _[C] :  center text
 -------------------------------------------
@@ -96,11 +94,10 @@ Center text within the page margins.
 
 outputs: text, pdf, html
 
+.. _righttag:
 
 **[4t]** _[R] : right justify text
 -----------------------------------------
-
-.. _right:
 
 .. raw:: html
 
@@ -114,6 +111,7 @@ The LaTeX math expression will be formatted in PDF and HTML.
 
 outputs: pdf, html
 
+.. _latextag:
 
 **[5t]** _[L] : LaTeX math 
 -----------------------------------------
@@ -130,6 +128,7 @@ The LaTeX math expression will be formatted in PDF and HTML.
 
 outputs: pdf, html
 
+.. _asciitag:
 
 **[6]** _[A] : ASCII math
 -----------------------------------------
