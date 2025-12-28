@@ -14,14 +14,14 @@ The *Insert* API function inserts static resources into the *doc* including
 images, tables and formatted text.
 
 ============================= =======================================
-        Line Tags              Description 
+        Line Tags                       Description 
 ============================= =======================================
           text _[#] text             :ref:`endnotetag`  
           text _[C]                  :ref:`centertag` 
           text _[R]                  :ref:`righttag` 
     latex math _[L]                  :ref:`latextag` 
     ascii math _[A]                  :ref:`asciitag`
-   label _[E]                  equation number and label (all)
+equation label _[E]                  :ref:`equatag`
  caption _[I]                  image number and caption (all)[1]
    title _[T]                  table number and title (all)[1]
     text _[D] term link        link to defined term in report (all)
@@ -59,7 +59,7 @@ images, tables and formatted text.
 
 ..  _endnotetag:
 
-**[2t]** _[#] : endnote number
+**[2t]**  endnote number
 -------------------------------------
 
 .. raw:: html
@@ -79,7 +79,7 @@ outputs: text, pdf, html
 
 ..  _centertag:
 
-**[3t]** _[C] :  center text
+**[3t]** center text
 -------------------------------------------
 
 .. raw:: html
@@ -96,7 +96,7 @@ outputs: text, pdf, html
 
 .. _righttag:
 
-**[4t]** _[R] : right justify text
+**[4t]** right justify text
 -----------------------------------------
 
 .. raw:: html
@@ -113,7 +113,7 @@ outputs: pdf, html
 
 .. _latextag:
 
-**[5t]** _[L] : LaTeX math 
+**[5t]** LaTeX math 
 -----------------------------------------
 
 .. raw:: html
@@ -130,7 +130,7 @@ outputs: pdf, html
 
 .. _asciitag:
 
-**[6]** _[A] : ASCII math
+**[6t]** ASCII math
 -----------------------------------------
 
 .. raw:: html
@@ -145,12 +145,9 @@ The math expression will be formated in ASCII text.
 
 outputs: text, pdf, html
 
+.. _equatag:
 
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[7]** _[E] : equation label 
+**[7t]** equation label 
 -----------------------------------------
 
 .. raw:: html

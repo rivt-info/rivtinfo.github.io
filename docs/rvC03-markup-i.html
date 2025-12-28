@@ -395,22 +395,22 @@ images, tables and formatted text.</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>text _[#] text</p></td>
-<td><p><a class="reference internal" href="#endnotetag"><span class="std std-ref">[2t] _[#] : endnote number</span></a></p></td>
+<td><p><a class="reference internal" href="#endnotetag"><span class="std std-ref">[2t]  endnote number</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>text _[C]</p></td>
-<td><p><a class="reference internal" href="#centertag"><span class="std std-ref">[3t] _[C] :  center text</span></a></p></td>
+<td><p><a class="reference internal" href="#centertag"><span class="std std-ref">[3t] center text</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>text _[R]</p></td>
-<td><p><a class="reference internal" href="#righttag"><span class="std std-ref">[4t] _[R] : right justify text</span></a></p></td>
+<td><p><a class="reference internal" href="#righttag"><span class="std std-ref">[4t] right justify text</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>latex math _[L]</p></td>
-<td><p><a class="reference internal" href="#latextag"><span class="std std-ref">[5t] _[L] : LaTeX math</span></a></p></td>
+<td><p><a class="reference internal" href="#latextag"><span class="std std-ref">[5t] LaTeX math</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>ascii math _[A]</p></td>
-<td><p><a class="reference internal" href="#asciitag"><span class="std std-ref">[6] _[A] : ASCII math</span></a></p></td>
+<td><p><a class="reference internal" href="#asciitag"><span class="std std-ref">[6t] ASCII math</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>label _[E]</p></td>
-<td><p>equation number and label (all)</p></td>
+<tr class="row-odd"><td><p>equation label _[E]</p></td>
+<td><p><a class="reference internal" href="#equatag"><span class="std std-ref">[7t] equation label</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>caption _[I]</p></td>
 <td><p>image number and caption (all)[1]</p></td>
@@ -504,7 +504,7 @@ images, tables and formatted text.</p>
 </div>
 </section>
 <section id="t-endnote-number">
-<span id="endnotetag"></span><h2><strong>[2t]</strong> _[#] : endnote number<a class="headerlink" href="#t-endnote-number" title="Link to this heading">#</a></h2>
+<span id="endnotetag"></span><h2><strong>[2t]</strong>  endnote number<a class="headerlink" href="#t-endnote-number" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">text _[#]</p>
 <p>Text is wrapped when formatted. _[#]</p>
@@ -514,8 +514,8 @@ block tag _[[NOTE]] and are listed at the end of the <em>doc</em>. Numbers are
 assigned in the order they are processed.</p>
 <p>outputs: text, pdf, html</p>
 </section>
-<section id="t-c-center-text">
-<span id="centertag"></span><h2><strong>[3t]</strong> _[C] :  center text<a class="headerlink" href="#t-c-center-text" title="Link to this heading">#</a></h2>
+<section id="t-center-text">
+<span id="centertag"></span><h2><strong>[3t]</strong> center text<a class="headerlink" href="#t-center-text" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">text _[C]</p>
 <p>This text will be centered _[C]</p>
@@ -523,8 +523,8 @@ assigned in the order they are processed.</p>
 <p>Center text within the page margins.</p>
 <p>outputs: text, pdf, html</p>
 </section>
-<section id="t-r-right-justify-text">
-<span id="righttag"></span><h2><strong>[4t]</strong> _[R] : right justify text<a class="headerlink" href="#t-r-right-justify-text" title="Link to this heading">#</a></h2>
+<section id="t-right-justify-text">
+<span id="righttag"></span><h2><strong>[4t]</strong> right justify text<a class="headerlink" href="#t-right-justify-text" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title"><em>equation</em> _[L]</p>
 <p>frac{1}{sqrt{x}} _[L]</p>
@@ -532,8 +532,8 @@ assigned in the order they are processed.</p>
 <p>The LaTeX math expression will be formatted in PDF and HTML.</p>
 <p>outputs: pdf, html</p>
 </section>
-<section id="t-l-latex-math">
-<span id="latextag"></span><h2><strong>[5t]</strong> _[L] : LaTeX math<a class="headerlink" href="#t-l-latex-math" title="Link to this heading">#</a></h2>
+<section id="t-latex-math">
+<span id="latextag"></span><h2><strong>[5t]</strong> LaTeX math<a class="headerlink" href="#t-latex-math" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title"><em>equation</em> _[L]</p>
 <p>frac{1}{sqrt{x}} _[L]</p>
@@ -541,17 +541,17 @@ assigned in the order they are processed.</p>
 <p>The LaTeX math expression will be formatted in PDF and HTML.</p>
 <p>outputs: pdf, html</p>
 </section>
-<section id="a-ascii-math">
-<span id="asciitag"></span><h2><strong>[6]</strong> _[A] : ASCII math<a class="headerlink" href="#a-ascii-math" title="Link to this heading">#</a></h2>
+<section id="t-ascii-math">
+<span id="asciitag"></span><h2><strong>[6t]</strong> ASCII math<a class="headerlink" href="#t-ascii-math" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title"><em>equation</em> _[A]</p>
 <p>f(x,y) = sin(x)**2 + y/5 _[A]</p>
 </aside>
 <p>The math expression will be formated in ASCII text.</p>
 <p>outputs: text, pdf, html</p>
-<p style="text-align: right;"> &lt;i&gt; </p></section>
-<section id="e-equation-label">
-<h2><strong>[7]</strong> _[E] : equation label<a class="headerlink" href="#e-equation-label" title="Link to this heading">#</a></h2>
+</section>
+<section id="t-equation-label">
+<span id="equatag"></span><h2><strong>[7t]</strong> equation label<a class="headerlink" href="#t-equation-label" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">equation label _[E]</p>
 <p>Equation label  _[E]</p>
@@ -804,12 +804,12 @@ syntax coloring.  Languages include:</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-summary"><strong>[1t]</strong> Summary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-endnote-number"><strong>[2t]</strong> _[#] : endnote number</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-c-center-text"><strong>[3t]</strong> _[C] :  center text</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-r-right-justify-text"><strong>[4t]</strong> _[R] : right justify text</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-l-latex-math"><strong>[5t]</strong> _[L] : LaTeX math</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-ascii-math"><strong>[6]</strong> _[A] : ASCII math</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e-equation-label"><strong>[7]</strong> _[E] : equation label</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-endnote-number"><strong>[2t]</strong>  endnote number</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-center-text"><strong>[3t]</strong> center text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-right-justify-text"><strong>[4t]</strong> right justify text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-latex-math"><strong>[5t]</strong> LaTeX math</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-ascii-math"><strong>[6t]</strong> ASCII math</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-equation-label"><strong>[7t]</strong> equation label</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-image-label"><strong>[8]</strong> _[I] : image label</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-table-label"><strong>[9]</strong> _[T] : table label</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#s-section-link"><strong>[10]</strong> _[S] : section link</a></li>
