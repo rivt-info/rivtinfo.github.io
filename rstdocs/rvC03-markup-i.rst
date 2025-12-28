@@ -13,25 +13,26 @@
 The *Insert* API function inserts static resources into the *doc* including
 images, tables and formatted text.
 
-============================= =======================================
+=================================== =======================================
         Line Tags                       Description 
-============================= =======================================
-          text _[#] text             :ref:`endnotetag`  
+=================================== =======================================
+          text _[#] text             :ref:`notetag`  
           text _[C]                  :ref:`centertag` 
           text _[R]                  :ref:`righttag` 
     latex math _[L]                  :ref:`latextag` 
     ascii math _[A]                  :ref:`asciitag`
 equation label _[E]                  :ref:`equatag`
-   title _[T]                        :ref:`tabletag` [1]
-    text _[M] term link              :ref:`termtag`
-    text _[S] section link           :ref:`sectiontag`
-    text _[R] report link            :ref:`doctag`
-    text _[U] external url           :ref:`urltag`   
+         title _[T]                  :ref:`tabletag` [1]
+               _[N] section anchor   :ref:`anchortag`
+          text _[M] term link        :ref:`termtag`
+          text _[S] section link     :ref:`sectiontag`
+          text _[D] doc link         :ref:`doctag`
+          text _[U] external url     :ref:`urltag`   
     \-\-\-\-\-                       :ref:`linetag` [2]
     \=\=\=\=\=                       :ref:`pagetag` [2]
-============================= =======================================
+=================================== =======================================
 
-[1] tag may be added to the label parameter in the IMAGE and TABLE commands
+[1] tag may be added to the label parameter in the TABLE commands
 
 [2] must start in first indented column (absolute column 4)
 
@@ -56,7 +57,7 @@ equation label _[E]                  :ref:`equatag`
  \| TEXT | relative path |  *normal;literal* ;code        R     *txt, code*
 ======================================================== ===== ==================
 
-..  _endnotetag:
+..  _notetag:
 
 **[2t]**  endnote number
 -------------------------------------
@@ -66,7 +67,7 @@ equation label _[E]                  :ref:`equatag`
     <hr>
 
 
-.. topic:: text _[#] 
+.. topic:: _[#] 
     
    Text is wrapped when formatted. _[#]
 
@@ -85,9 +86,9 @@ outputs: text, pdf, html
 
     <hr>
 
-.. topic:: text _[C]
+.. topic:: _[C]
 
-    This text will be centered _[C]
+    some text _[C]
 
 Center text within the page margins.
 
@@ -102,9 +103,9 @@ outputs: text, pdf, html
 
     <hr>
 
-.. topic:: equation _[L]
+.. topic:: _[R]
 
-    \frac{1}{\sqrt{x}} _[L]
+    some text _[R]
 
 The LaTeX math expression will be formatted in PDF and HTML.
 
@@ -119,7 +120,7 @@ outputs: pdf, html
 
     <hr>
 
-.. topic:: equation _[L]
+.. topic:: _[L]
 
     \frac{1}{\sqrt{x}} _[L]
 
@@ -136,7 +137,7 @@ outputs: pdf, html
 
     <hr>
 
-.. topic:: equation _[A]
+.. topic:: _[A]
 
     f(x,y) = sin(x)**2 + y/5 _[A]
 
@@ -153,7 +154,7 @@ outputs: text, pdf, html
 
     <hr>
 
-.. topic:: equation label _[E]
+.. topic:: _[E]
 
    equation label  _[E]
 
@@ -170,7 +171,7 @@ outputs: text, pdf, html
 
     <hr>
 
-.. topic:: title _[T]
+.. topic:: Table Title
 
    Table Title _[T]
 
@@ -187,11 +188,29 @@ outputs: text, pdf, html
 
     <hr>
 
-.. topic:: term _[M]
+.. topic:: term in glossary _[M]
 
    term _[M]
 
 term in glossary
+
+outputs: text, pdf, html
+
+.. _anchortag:
+
+**[10t]** link anchor
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic::  _[N] _anchorname
+    
+    _[N] _anchorname
+
+Links *sections* within a *doc*. Text will be continued and wrapped when
+formatted.
 
 outputs: text, pdf, html
 
@@ -224,7 +243,7 @@ outputs: text, pdf, html
 
 .. topic:: *text* _[D] doc link
     
-    text at end of line _[S] doc number, link label
+    text at end of line _[D] doc number, link label
 
 Links *docs* within a *report*. Text will be continued and wrapped when
 formatted.
@@ -272,7 +291,7 @@ outputs: text, pdf, html
 
 .. _pagetag:
 
-**[14]** new page
+**[14t]** new page
 -----------------------------------------
 
 .. raw:: html
@@ -289,7 +308,7 @@ outputs: text, pdf, html
 
 .. _indenttag:
 
-**[15]** indent text block
+**[15t]** indent text block
 ----------------------------------------------
 
 .. raw:: html
@@ -310,7 +329,7 @@ Indents text four spaces.
 
 .. _italictag:
 
-**[16]** indent italic
+**[16t]** indent italic
 ------------------------------------------------
 
 .. raw:: html
@@ -336,7 +355,7 @@ outputs: pdf, html
     <p style="text-align: right;"> &lt;i&gt; </p>
 
 
-**[17]** endnote text
+**[17t]** endnote text
 -------------------------------------------    
 
 .. raw:: html
@@ -357,7 +376,7 @@ Formats and numbers an endnote in order of processing.
 
 outputs: text, pdf, html
 
-**[18]** literal text or code
+**[18t]** literal text or code
 ------------------------------------------------
 
 .. raw:: html
@@ -379,7 +398,7 @@ and syntax coloring. Languages include: - *python* - *bash* - *sh* - *cmd*
 
 outputs: text, pdf, html
 
-**[19]** _[[TOPIC]] : topic
+**[19t]** _[[TOPIC]] : topic
 ------------------------------------------------
 
 .. raw:: html
@@ -405,7 +424,7 @@ outputs: pdf, html
     <p style="text-align: right;"> &lt;i&gt; </p>
 
 
-**[20]** | IMAGE | : insert image
+**[20t]** | IMAGE | : insert image
 -------------------------------------------
 
 .. raw:: html
@@ -425,7 +444,7 @@ outputs: PDF, HTML
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[21]** | IMAGE2 | : insert adjacent images 
+**[21t]** | IMAGE2 | : insert adjacent images 
 --------------------------------------------------
 
 .. raw:: html
@@ -445,7 +464,7 @@ outputs: PDF, HTML
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
-**[22]** | TABLE | : format table
+**[22t]** | TABLE | : format table
 ------------------------------------------
 
 .. raw:: html
