@@ -3,12 +3,7 @@
 
 **Summary**
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-
-**[1]** Summary
+**[1t]** Summary
 -------------------------------------
 
 .. raw:: html
@@ -64,6 +59,7 @@ images, tables and formatted text.
 
 ..  _endnote:
 
+
 **[2t]** _[#] : endnote number
 -------------------------------------
 
@@ -84,6 +80,7 @@ outputs: text, pdf, html
 
 ..  _center:
 
+
 **[3t]** _[C] :  center text
 -------------------------------------------
 
@@ -100,6 +97,7 @@ Center text within the page margins.
 outputs: text, pdf, html
 
 .. _right:
+
 
 **[4t]** _[R] : right justify text
 -----------------------------------------
