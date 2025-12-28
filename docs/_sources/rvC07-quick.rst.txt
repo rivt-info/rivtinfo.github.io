@@ -60,6 +60,29 @@ Tags format lines and blocks of text.
 
 **Line Tags**
 
+=================================== =======================================
+        Line Tags                       Description 
+=================================== =======================================
+          text _[#] text             :ref:`notetag`  
+          text _[C]                  :ref:`centertag` 
+          text _[R]                  :ref:`righttag` 
+    latex math _[L]                  :ref:`latextag` 
+    ascii math _[A]                  :ref:`asciitag`
+equation label _[E]                  :ref:`equatag`
+         title _[T]                  :ref:`tabletag` [1]
+               _[N] section anchor   :ref:`anchortag`
+          text _[M] term link        :ref:`termtag`
+          text _[S] section link     :ref:`sectiontag`
+          text _[D] doc link         :ref:`doctag`
+          text _[U] external url     :ref:`urltag`   
+    \-\-\-\-\-                       :ref:`linetag` [2]
+    \=\=\=\=\=                       :ref:`pagetag` [2]
+=================================== =======================================
+
+[1] tag may be added to the label parameter in the TABLE commands
+
+[2] must start in first indented column (absolute column 4)
+
 ============= ============================= ======================================
 API Scope             Line Tags              Description (doc scope)
 ============= ============================= ======================================
