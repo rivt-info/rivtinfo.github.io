@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
-    <title>C.2 Run API - rv.R &#8212; rivt</title>
+    <title>C.5 Tool - rv.T &#8212; rivt</title>
   
   
   
@@ -56,11 +56,11 @@
     <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'rvC02-markup-r';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'rvC08-markup-t';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="C.3 Insert - rv.I" href="rvC03-markup-i.html" />
-    <link rel="prev" title="C.1 Markup" href="rvC01-markup.html" />
+    <link rel="next" title="C.6 Doc - rv.D" href="rvC09-markup-d.html" />
+    <link rel="prev" title="C.4 Values - rv.V" href="rvC07-markup-v.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -313,13 +313,16 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>C.2 Run API - rv.R</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC03-markup-i.html"><strong>C.3 Insert - rv.I</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC04-markup-v.html"><strong>C.4 Values - rv.V</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC05-markup-t.html"><strong>C.5 Tool - rv.T</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC06-markup-d.html"><strong>C.6 Doc - rv.D</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC07-quick.html"><strong>C.7 Quick Lookup</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC08-example1.html"><strong>C.8 Example</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC02-linetags.html"><strong>C.12 Line Tags</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC03-blocktags.html"><strong>C.3 Block Tags</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC04-commands.html"><strong>C.3 Commands</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC05-markup-r.html"><strong>C.2 Run API - rv.R</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC06-markup-i.html"><strong>C.3 Insert - rv.I</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC07-markup-v.html"><strong>C.4 Values - rv.V</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>C.5 Tool - rv.T</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC09-markup-d.html"><strong>C.6 Doc - rv.D</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC10-api-summary.html"><strong>C.10 API Summary</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC11-example1.html"><strong>C.8 Example</strong></a></li>
 </ul>
 </div>
 </nav></div>
@@ -363,7 +366,7 @@
     
     <li class="breadcrumb-item"><a href="rvC01-markup.html" class="nav-link"><strong>C.1 Markup</strong></a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>C.2 Run API - rv.R</strong></span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>C.5 Tool - rv.T</strong></span></li>
   </ul>
 </nav>
 </div>
@@ -380,11 +383,13 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="c-2-run-api-rv-r">
-<h1><strong>C.2 Run API - rv.R</strong><a class="headerlink" href="#c-2-run-api-rv-r" title="Link to this heading">#</a></h1>
-<p id="api">&lt;i&gt;</p><section id="summary">
-<h2><strong>[1]</strong> Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
-<hr><p>The <em>Run</em> API function executes shell commands.</p>
+  <section id="c-5-tool-rv-t">
+<h1><strong>C.5 Tool - rv.T</strong><a class="headerlink" href="#c-5-tool-rv-t" title="Link to this heading">#</a></h1>
+<section id="t-summary">
+<h2><strong>[1t]</strong> Summary<a class="headerlink" href="#t-summary" title="Link to this heading">#</a></h2>
+<hr><p>Files processed by the <em>Tools API function</em> are usually read and written to the
+<em>src/</em> folder unless the <em>rv_localB</em> variable is set to <em>True</em> in the <em>Meta API
+function</em>. In that case files are read and written to the <em>rivt file</em> folder.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Block Tags</p></th>
@@ -392,22 +397,29 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>_[[WIN]] label, <em>wait;nowait</em></p></td>
-<td><p>Windows command script (all)</p></td>
+<tr class="row-even"><td><p>_[[HTML]] label</p></td>
+<td><p>HTML markup (html)</p></td>
 </tr>
-<tr class="row-odd"><td><p>_[[MACOS]] label, <em>wait;nowait</em></p></td>
-<td><p>Mac shell script (all)</p></td>
+<tr class="row-odd"><td><p>_[[LATEX]] label</p></td>
+<td><p>LaTeX markup (pdf)[1]</p></td>
 </tr>
-<tr class="row-even"><td><p>_[[LINUX]] label, <em>wait;nowait</em></p></td>
-<td><p>Linux shell script (all)</p></td>
+<tr class="row-even"><td><p>_[[RST]] label</p></td>
+<td><p>reStructuredText markup (all)</p></td>
+</tr>
+<tr class="row-odd"><td><p>_[[PYTHON]] label, <em>rv-space</em>;newspace</p></td>
+<td><p>Python script (all)</p></td>
+</tr>
+<tr class="row-even"><td><p>_[[END]]</p></td>
+<td><p>End block (all)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
+<p>[1] LaTeX requires an installation of LaTeX.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><div class="line-block">
-<div class="line">COMMAND | path | parameters</div>
+<div class="line">Command | path | parameters</div>
 </div>
 </th>
 <th class="head"><p>R/W</p></th>
@@ -415,84 +427,25 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>| LINUX | path | <em>wait;nowait</em></p></td>
+<tr class="row-even"><td><p>| HTML | src/path | label</p></td>
 <td><p>R</p></td>
-<td><p><em>.sh</em></p></td>
+<td><p><em>html</em></p></td>
 </tr>
-<tr class="row-odd"><td><p>| MACOS | path | <em>wait;nowait</em></p></td>
+<tr class="row-odd"><td><p>| LATEX | src/path | label</p></td>
 <td><p>R</p></td>
-<td><p><em>.sh</em></p></td>
+<td><p><em>tex</em></p></td>
 </tr>
-<tr class="row-even"><td><p>| WIN   | path | <em>wait;nowait</em></p></td>
+<tr class="row-even"><td><p>| RST | src/path | label</p></td>
 <td><p>R</p></td>
-<td><p><em>.bat, .cmd</em></p></td>
+<td><p><em>rst</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>| PYTHON | src/path | <em>rv-namespace</em>; userspace</p></td>
+<td><p>R</p></td>
+<td><p><em>py</em></p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p id="api">&lt;i&gt;</p></section>
-<section id="win-batch-commands">
-<h2><strong>[2]</strong> _[[WIN]] : batch commands<a class="headerlink" href="#win-batch-commands" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[WIN]] *nowait;wait*
-batch command
-batch command
-...
- _[[Q]]
-</pre></div>
-</div>
-<p>text, pdf, html</p>
-<p id="api">&lt;i&gt;</p></section>
-<section id="macos-shell-commands">
-<h2><strong>[3]</strong> _[[MACOS]] : shell commands<a class="headerlink" href="#macos-shell-commands" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[MACOS]] *nowait;wait*
-shell command
-shell command
-...
- _[[Q]]
-</pre></div>
-</div>
-<p>text, pdf, html</p>
-<p id="api">&lt;i&gt;</p></section>
-<section id="linux-shell-commands">
-<h2><strong>[4]</strong> _[[LINUX]] : shell commands<a class="headerlink" href="#linux-shell-commands" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[LINUX]] *nowait;wait*
-shell command
-shell command
-...
- _[[Q]]
-</pre></div>
-</div>
-<p>text, pdf, html</p>
-<p id="api">&lt;i&gt;</p></section>
-<section id="win-command-script">
-<h2><strong>[5]</strong> | WIN | - command script<a class="headerlink" href="#win-command-script" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">| WIN | relative path | nowait;wait</p>
-<div class="line-block">
-<div class="line">WIN | src/run/file.cmd | nowait</div>
-</div>
-</aside>
-<p>reads .txt, .cmd, .bat  files</p>
-<p id="api">&lt;i&gt;</p></section>
-<section id="macos-shell-script">
-<h2><strong>[6]</strong> | MACOS | - shell script<a class="headerlink" href="#macos-shell-script" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">| MACOS | relative path | nowait;wait</p>
-<div class="line-block">
-<div class="line">MACOS | src/run/file.cmd | nowait</div>
-</div>
-</aside>
-<p>reads .sh files</p>
-<p id="api">&lt;i&gt;</p></section>
-<section id="linux-shell-script">
-<h2><strong>[7]</strong> | LINUX | - shell script<a class="headerlink" href="#linux-shell-script" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">| LINUX | relative path | nowait;wait</p>
-<div class="line-block">
-<div class="line">LINUX | src/run/file.cmd | nowait</div>
-</div>
-</aside>
-<p>reads .sh files</p>
 </section>
 </section>
 
@@ -507,20 +460,20 @@ shell command
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rvC01-markup.html"
+       href="rvC07-markup-v.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>C.1 Markup</strong></p>
+        <p class="prev-next-title"><strong>C.4 Values - rv.V</strong></p>
       </div>
     </a>
     <a class="right-next"
-       href="rvC03-markup-i.html"
+       href="rvC09-markup-d.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>C.3 Insert - rv.I</strong></p>
+        <p class="prev-next-title"><strong>C.6 Doc - rv.D</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -543,13 +496,7 @@ shell command
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary"><strong>[1]</strong> Summary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#win-batch-commands"><strong>[2]</strong> _[[WIN]] : batch commands</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#macos-shell-commands"><strong>[3]</strong> _[[MACOS]] : shell commands</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linux-shell-commands"><strong>[4]</strong> _[[LINUX]] : shell commands</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#win-command-script"><strong>[5]</strong> | WIN | - command script</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#macos-shell-script"><strong>[6]</strong> | MACOS | - shell script</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linux-shell-script"><strong>[7]</strong> | LINUX | - shell script</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-summary"><strong>[1t]</strong> Summary</a></li>
 </ul>
   </nav></div>
 

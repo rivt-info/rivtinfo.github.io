@@ -143,8 +143,8 @@ by section text indented four spaces for legibility and section folding.
 
 Section text is plain text that includes :term:`rivt markup` and
 :term:`reStructuredText`. *rivt markup* includes :term:`line tags`, 
-:term:`block tags` and :term:`commands` summarized :doc:`here. <rvC07-quick>` 
-See :doc:`Markup</rvC01-markup>` for further details.
+:term:`block tags` and :term:`commands`. See :doc:`Markup</rvC01-markup>` 
+for further details.
 
 **[5t]**  Report Folders
 -------------------------------

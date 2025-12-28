@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
-    <title>C.3 Insert - rv.I &#8212; rivt</title>
+    <title>C.3 Block Tags &#8212; rivt</title>
   
   
   
@@ -56,11 +56,11 @@
     <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'rvC03-markup-i';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'rvC03-blocktags';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="C.4 Values - rv.V" href="rvC04-markup-v.html" />
-    <link rel="prev" title="C.2 Run API - rv.R" href="rvC02-markup-r.html" />
+    <link rel="next" title="C.3 Commands" href="rvC04-commands.html" />
+    <link rel="prev" title="C.12 Line Tags" href="rvC02-linetags.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -313,13 +313,16 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="rvC02-markup-r.html"><strong>C.2 Run API - rv.R</strong></a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>C.3 Insert - rv.I</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC04-markup-v.html"><strong>C.4 Values - rv.V</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC05-markup-t.html"><strong>C.5 Tool - rv.T</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC06-markup-d.html"><strong>C.6 Doc - rv.D</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC07-quick.html"><strong>C.7 Quick Lookup</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC08-example1.html"><strong>C.8 Example</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC02-linetags.html"><strong>C.12 Line Tags</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>C.3 Block Tags</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC04-commands.html"><strong>C.3 Commands</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC05-markup-r.html"><strong>C.2 Run API - rv.R</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC06-markup-i.html"><strong>C.3 Insert - rv.I</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC07-markup-v.html"><strong>C.4 Values - rv.V</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC08-markup-t.html"><strong>C.5 Tool - rv.T</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC09-markup-d.html"><strong>C.6 Doc - rv.D</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC10-api-summary.html"><strong>C.10 API Summary</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC11-example1.html"><strong>C.8 Example</strong></a></li>
 </ul>
 </div>
 </nav></div>
@@ -363,7 +366,7 @@
     
     <li class="breadcrumb-item"><a href="rvC01-markup.html" class="nav-link"><strong>C.1 Markup</strong></a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>C.3 Insert - rv.I</strong></span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>C.3 Block Tags</strong></span></li>
   </ul>
 </nav>
 </div>
@@ -380,257 +383,79 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="c-3-insert-rv-i">
-<h1><strong>C.3 Insert - rv.I</strong><a class="headerlink" href="#c-3-insert-rv-i" title="Link to this heading">#</a></h1>
-<p><strong>Summary</strong></p>
+  <section id="c-3-block-tags">
+<h1><strong>C.3 Block Tags</strong><a class="headerlink" href="#c-3-block-tags" title="Link to this heading">#</a></h1>
 <section id="t-summary">
 <h2><strong>[1t]</strong> Summary<a class="headerlink" href="#t-summary" title="Link to this heading">#</a></h2>
-<hr><p>The <em>Insert</em> API function inserts static resources into the <em>doc</em> including
-images, tables and formatted text.</p>
+<hr><p>Format blocks of text.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="head"><p>Line Tags</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>text _[#] text</p></td>
-<td><p><a class="reference internal" href="#notetag"><span class="std std-ref">[2t]  endnote number</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>text _[C]</p></td>
-<td><p><a class="reference internal" href="#centertag"><span class="std std-ref">[3t] center text</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p>text _[R]</p></td>
-<td><p><a class="reference internal" href="#righttag"><span class="std std-ref">[4t] right justify text</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>latex math _[L]</p></td>
-<td><p><a class="reference internal" href="#latextag"><span class="std std-ref">[5t] LaTeX math</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p>ascii math _[A]</p></td>
-<td><p><a class="reference internal" href="#asciitag"><span class="std std-ref">[6t] ASCII math</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>equation label _[E]</p></td>
-<td><p><a class="reference internal" href="#equatag"><span class="std std-ref">[7t] equation label</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p>title _[T]</p></td>
-<td><p><a class="reference internal" href="#tabletag"><span class="std std-ref">[8t] table label</span></a> [1]</p></td>
-</tr>
-<tr class="row-odd"><td><p>_[N] section anchor</p></td>
-<td><p><a class="reference internal" href="#anchortag"><span class="std std-ref">[10t] link anchor</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p>text _[M] term link</p></td>
-<td><p><a class="reference internal" href="#termtag"><span class="std std-ref">[9t] term reference</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>text _[S] section link</p></td>
-<td><p><a class="reference internal" href="#sectiontag"><span class="std std-ref">[9t] section link</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p>text _[D] doc link</p></td>
-<td><p><a class="reference internal" href="#doctag"><span class="std std-ref">[10t] doc link</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>text _[U] external url</p></td>
-<td><p><a class="reference internal" href="#urltag"><span class="std std-ref">[11t] external url</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p>-----</p></td>
-<td><p><a class="reference internal" href="#linetag"><span class="std std-ref">[13] horizontal line</span></a> [2]</p></td>
-</tr>
-<tr class="row-odd"><td><p>=====</p></td>
-<td><p><a class="reference internal" href="#pagetag"><span class="std std-ref">[14t] new page</span></a> [2]</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>[1] tag may be added to the label parameter in the TABLE commands</p>
-<p>[2] must start in first indented column (absolute column 4)</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Block Tags</p></th>
+<tr class="row-odd"><th class="head"><p>API Scope</p></th>
+<th class="head"><p>Block Tags</p></th>
 <th class="head"><p>Description (doc scope)</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>_[[INDENT]] spaces (4 default)</p></td>
-<td><p><a class="reference internal" href="#indenttag"><span class="std std-ref">[15t] indent text block</span></a></p></td>
+<tr class="row-even"><td><p>rv.R</p></td>
+<td><p>_[[WIN]] label, <em>wait;nowait</em></p></td>
+<td><p>Windows command script (all)</p></td>
 </tr>
-<tr class="row-odd"><td><p>_[[ITALIC]] spaces (4 default)</p></td>
-<td><p><a class="reference internal" href="#italictag"><span class="std std-ref">[16t] indent italic</span></a></p></td>
+<tr class="row-odd"><td><p>rv.R</p></td>
+<td><p>_[[MACOS]] label, <em>wait;nowait</em></p></td>
+<td><p>Mac shell script (all)</p></td>
 </tr>
-<tr class="row-even"><td><p>_[[ENDNOTES]] optional label</p></td>
+<tr class="row-even"><td><p>rv.R</p></td>
+<td><p>_[[LINUX]] label, <em>wait;nowait</em></p></td>
+<td><p>Linux shell script (all)</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.I, V</p></td>
+<td><p>_[[INDENT]] spaces (4 default)</p></td>
+<td><p>Indent (all)</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.I, V</p></td>
+<td><p>_[[ITALIC]] spaces (4 default)</p></td>
+<td><p>Italic indent - (all)</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.I, V</p></td>
+<td><p>_[[ENDNOTES]] optional label</p></td>
 <td><p>Endnote descriptions (all)</p></td>
 </tr>
-<tr class="row-odd"><td><p>_[[TEXT]] optional language</p></td>
-<td><p><em>literal</em>, code language (all)</p></td>
+<tr class="row-even"><td><p>rv.I, V</p></td>
+<td><p>_[[TEXT]] optional language</p></td>
+<td><p><em>literal</em>, code (all)</p></td>
 </tr>
-<tr class="row-even"><td><p>_[[TERMS]] label</p></td>
-<td><p>Glossary of terms</p></td>
-</tr>
-<tr class="row-odd"><td><p>_[[TOPIC]] topic</p></td>
+<tr class="row-odd"><td><p>rv.I, V</p></td>
+<td><p>_[[TOPIC]] topic</p></td>
 <td><p>Topic (all)</p></td>
 </tr>
-<tr class="row-even"><td><p>_[[END]]</p></td>
+<tr class="row-even"><td><p>rv.V</p></td>
+<td><p>_[[VALUES]] table title, rows (_[T])</p></td>
+<td><p>Define values(all)</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.T</p></td>
+<td><p>_[[PYTHON]] label, <em>rvspace</em>;newspace</p></td>
+<td><p>Python script (all)</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.T</p></td>
+<td><p>_[[LATEX]] label</p></td>
+<td><p>LaTeX markup (pdf)[1]</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.T</p></td>
+<td><p>_[[HTML]] label</p></td>
+<td><p>HTML markup (html)</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.D</p></td>
+<td><p>_[[LAYOUT]] label</p></td>
+<td><p>Doc format settings (all)</p></td>
+</tr>
+<tr class="row-odd"><td><p>all</p></td>
+<td><p>_[[END]]</p></td>
 <td><p>End block (all)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><div class="line-block">
-<div class="line">Command | path | parameters</div>
-</div>
-</th>
-<th class="head"><p>R/W</p></th>
-<th class="head"><p>input types</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>| IMAGE | relative path |  scale, caption (_[I])</p></td>
-<td><p>R</p></td>
-<td><p><em>.png, .jpg</em></p></td>
-</tr>
-<tr class="row-odd"><td><p>| IMAGE2 | relative path | s1, s2, c1, c2 (_[I])</p></td>
-<td><p>R</p></td>
-<td><p><em>.png, jpg</em></p></td>
-</tr>
-<tr class="row-even"><td><p>| TABLE | relative path | width, l;c;r, title</p></td>
-<td><p>R</p></td>
-<td><p><em>csv, txt, xlsx</em></p></td>
-</tr>
-<tr class="row-odd"><td><p>| TEXT | relative path |  <em>normal;literal</em> ;code</p></td>
-<td><p>R</p></td>
-<td><p><em>txt, code</em></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="t-endnote-number">
-<span id="notetag"></span><h2><strong>[2t]</strong>  endnote number<a class="headerlink" href="#t-endnote-number" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[#]</p>
-<p>Text is wrapped when formatted. _[#]</p>
-</aside>
-<p>This tag assigns an endnote number to the text. Endnotes are defined with the
-block tag _[[NOTE]] and are listed at the end of the <em>doc</em>. Numbers are
-assigned in the order they are processed.</p>
-<p>outputs: text, pdf, html</p>
-</section>
-<section id="t-center-text">
-<span id="centertag"></span><h2><strong>[3t]</strong> center text<a class="headerlink" href="#t-center-text" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[C]</p>
-<p>some text _[C]</p>
-</aside>
-<p>Center text within the page margins.</p>
-<p>outputs: text, pdf, html</p>
-</section>
-<section id="t-right-justify-text">
-<span id="righttag"></span><h2><strong>[4t]</strong> right justify text<a class="headerlink" href="#t-right-justify-text" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[R]</p>
-<p>some text _[R]</p>
-</aside>
-<p>The LaTeX math expression will be formatted in PDF and HTML.</p>
-<p>outputs: pdf, html</p>
-</section>
-<section id="t-latex-math">
-<span id="latextag"></span><h2><strong>[5t]</strong> LaTeX math<a class="headerlink" href="#t-latex-math" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[L]</p>
-<p>frac{1}{sqrt{x}} _[L]</p>
-</aside>
-<p>The LaTeX math expression will be formatted in PDF and HTML.</p>
-<p>outputs: pdf, html</p>
-</section>
-<section id="t-ascii-math">
-<span id="asciitag"></span><h2><strong>[6t]</strong> ASCII math<a class="headerlink" href="#t-ascii-math" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[A]</p>
-<p>f(x,y) = sin(x)**2 + y/5 _[A]</p>
-</aside>
-<p>The math expression will be formated in ASCII text.</p>
-<p>outputs: text, pdf, html</p>
-</section>
-<section id="t-equation-label">
-<span id="equatag"></span><h2><strong>[7t]</strong> equation label<a class="headerlink" href="#t-equation-label" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[E]</p>
-<p>equation label  _[E]</p>
-</aside>
-<p>Labels and numbers equation.</p>
-<p>outputs: text, pdf, html</p>
-</section>
-<section id="t-table-label">
-<span id="tabletag"></span><h2><strong>[8t]</strong> table label<a class="headerlink" href="#t-table-label" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">Table Title</p>
-<p>Table Title _[T]</p>
-</aside>
-<p>Labels and numbers tables.</p>
-<p>outputs: text, pdf, html</p>
-</section>
-<section id="t-term-reference">
-<span id="termtag"></span><h2><strong>[9t]</strong> term reference<a class="headerlink" href="#t-term-reference" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">term in glossary _[M]</p>
-<p>term _[M]</p>
-</aside>
-<p>term in glossary</p>
-<p>outputs: text, pdf, html</p>
-</section>
-<section id="t-link-anchor">
-<span id="anchortag"></span><h2><strong>[10t]</strong> link anchor<a class="headerlink" href="#t-link-anchor" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[N] _anchorname</p>
-<p>_[N] _anchorname</p>
-</aside>
-<p>Links <em>sections</em> within a <em>doc</em>. Text will be continued and wrapped when
-formatted.</p>
-<p>outputs: text, pdf, html</p>
-</section>
-<section id="t-section-link">
-<span id="sectiontag"></span><h2><strong>[9t]</strong> section link<a class="headerlink" href="#t-section-link" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title"><em>text</em> _[S]</p>
-<p>text at end of line _[s] section number, link label</p>
-</aside>
-<p>Links <em>sections</em> within a <em>doc</em>. Text will be continued and wrapped when
-formatted.</p>
-<p>outputs: text, pdf, html</p>
-</section>
-<section id="t-doc-link">
-<span id="doctag"></span><h2><strong>[10t]</strong> doc link<a class="headerlink" href="#t-doc-link" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title"><em>text</em> _[D] doc link</p>
-<p>text at end of line _[D] doc number, link label</p>
-</aside>
-<p>Links <em>docs</em> within a <em>report</em>. Text will be continued and wrapped when
-formatted.</p>
-<p>outputs: text, pdf, html</p>
-</section>
-<section id="t-external-url">
-<span id="urltag"></span><h2><strong>[11t]</strong> external url<a class="headerlink" href="#t-external-url" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">text _[U] url link</p>
-<p>text at end of line _[U] urlname, link label</p>
-</aside>
-<p>External url link. Text will be continued and wrapped when formatted.</p>
-<p>outputs: text, pdf, html</p>
-</section>
-<section id="horizontal-line">
-<span id="linetag"></span><h2><strong>[13]</strong> horizontal line<a class="headerlink" href="#horizontal-line" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">5 or more underscores</p>
-</aside>
-<p>Draws a horizontal line the width of the page.</p>
-<p>outputs: text, pdf, html</p>
-<p style="text-align: right;"> &lt;i&gt; </p></section>
-<section id="t-new-page">
-<span id="pagetag"></span><h2><strong>[14t]</strong> new page<a class="headerlink" href="#t-new-page" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">5 or more double dashes</p>
-</aside>
-<p>Starts a new page.</p>
-<p>outputs: text, pdf, html</p>
+<p>[1] LaTeX processing requires the installation of <em>Texlive</em></p>
 </section>
 <section id="t-indent-text-block">
 <span id="indenttag"></span><h2><strong>[15t]</strong> indent text block<a class="headerlink" href="#t-indent-text-block" title="Link to this heading">#</a></h2>
@@ -705,64 +530,215 @@ and syntax coloring. Languages include: - <em>python</em> - <em>bash</em> - <em>
 </aside>
 <p>Formats a highlighted block.</p>
 <p>outputs: pdf, html</p>
-<p style="text-align: right;"> &lt;i&gt; </p></section>
-<section id="t-image-insert-image">
-<h2><strong>[20t]</strong> | IMAGE | : insert image<a class="headerlink" href="#t-image-insert-image" title="Link to this heading">#</a></h2>
+</section>
+<section id="t-html-html-markup">
+<h2><strong>[2t]</strong> _[[HTML]] : HTML markup<a class="headerlink" href="#t-html-html-markup" title="Link to this heading">#</a></h2>
+<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[HTML]] label
+markup
+markup
+...
+_[[QUIT]]
+</pre></div>
+</div>
+<p>Inserts HTML into <em>doc</em>.</p>
+<p>outputs: text, pdf, html</p>
+</section>
+<section id="t-latex-latex-markup">
+<h2><strong>[3t]</strong> _[[LATEX]] : LaTeX markup<a class="headerlink" href="#t-latex-latex-markup" title="Link to this heading">#</a></h2>
+<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[LATEX]] label
+markup
+markup
+...
+_[[END]]
+</pre></div>
+</div>
+<p>Inserts TeX into <em>doc</em>.  May require installation of LaTeX.</p>
+<p>outputs: text, pdf, html</p>
+</section>
+<section id="t-rst-restructuredtext-code">
+<h2><strong>[4t]</strong> _[[RST]] : reStructuredText code<a class="headerlink" href="#t-rst-restructuredtext-code" title="Link to this heading">#</a></h2>
+<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[RST]] label
+markup
+markup
+...
+_[[END]]
+</pre></div>
+</div>
+<p>Inserts TeX into <em>doc</em>.  May require installation of LaTeX.</p>
+<p>outputs: text, pdf, html</p>
+</section>
+<section id="t-python-python-code">
+<h2><strong>[5t]</strong> _[[PYTHON]] : Python code<a class="headerlink" href="#t-python-python-code" title="Link to this heading">#</a></h2>
+<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[PYTHON]] *rv-namespace*; user namespace
+code
+code
+...
+_[[END]]
+</pre></div>
+</div>
+<p>Executes Python script in the <em>rivt namespace</em> or a user specified namespace.
+File paths in the script are relative to the <em>rivt file</em> folder.</p>
+<p>outputs: text, pdf, html</p>
+</section>
+<section id="win-batch-commands">
+<h2><strong>[2]</strong> _[[WIN]] : batch commands<a class="headerlink" href="#win-batch-commands" title="Link to this heading">#</a></h2>
+<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[WIN]] *nowait;wait*
+batch command
+batch command
+...
+ _[[Q]]
+</pre></div>
+</div>
+<p>text, pdf, html</p>
+<p id="api">&lt;i&gt;</p></section>
+<section id="macos-shell-commands">
+<h2><strong>[3]</strong> _[[MACOS]] : shell commands<a class="headerlink" href="#macos-shell-commands" title="Link to this heading">#</a></h2>
+<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[MACOS]] *nowait;wait*
+shell command
+shell command
+...
+ _[[Q]]
+</pre></div>
+</div>
+<p>text, pdf, html</p>
+<p id="api">&lt;i&gt;</p></section>
+<section id="linux-shell-commands">
+<h2><strong>[4]</strong> _[[LINUX]] : shell commands<a class="headerlink" href="#linux-shell-commands" title="Link to this heading">#</a></h2>
+<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[LINUX]] *nowait;wait*
+shell command
+shell command
+...
+ _[[Q]]
+</pre></div>
+</div>
+<p>text, pdf, html</p>
+</section>
+<section id="id1">
+<h2><strong>[17t]</strong> endnote text<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| IMAGE | relative path | scale, caption (_[I])</p>
-<div class="line-block">
-<div class="line">IMG | src/file1.png | .50, Map _[I]</div>
+<p class="topic-title">_[[NOTE]]</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">NOTE</span><span class="p">]]</span>
+<span class="n">this</span> <span class="ow">is</span> <span class="n">an</span> <span class="n">endnote</span> <span class="o">-</span> <span class="n">assigned</span> <span class="n">to</span> <span class="n">an</span> <span class="n">endnote</span> <span class="n">tag</span> <span class="p">[</span><span class="c1">#] in order of</span>
+<span class="n">of</span> <span class="n">processing</span><span class="o">.</span>
+<span class="n">_</span><span class="p">[[</span><span class="n">QUIT</span><span class="p">]]</span>
+</pre></div>
 </div>
 </aside>
-<p>Reads PNG and JPEG files (.png, jpg) and inserts them in the <em>doc</em>. The <em>Image
-tag</em> may be added to the captions.</p>
-<p>outputs: PDF, HTML</p>
-<p style="text-align: right;"> &lt;i&gt; </p></section>
-<section id="t-image2-insert-adjacent-images">
-<h2><strong>[21t]</strong> | IMAGE2 | : insert adjacent images<a class="headerlink" href="#t-image2-insert-adjacent-images" title="Link to this heading">#</a></h2>
+<p>Formats and numbers an endnote in order of processing.</p>
+<p>outputs: text, pdf, html</p>
+</section>
+<section id="id2">
+<h2><strong>[18t]</strong> literal text or code<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| IMAGE2 | rel path1, rel path2| sc1, sc2, cap1 (_[I]), cap2 (_[I])</p>
-<div class="line-block">
-<div class="line">IMAGE2 | src/file1.png, src/file2.png | .50, .40, Map _[I], Plan _[I]</div>
+<p class="topic-title">_[[TEXT]] language;*literal*</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">TEXT</span><span class="p">]]</span> <span class="n">python</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;some text&quot;</span><span class="p">)</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">5</span>
+<span class="o">...</span>
+<span class="n">_</span><span class="p">[[</span><span class="n">QUIT</span><span class="p">]]</span>
+</pre></div>
 </div>
 </aside>
-<p>Reads PNG and JPEG files (.png, jpg) and inserts them side by side in the
-document. The <em>Image tag</em> may be added to the captions.</p>
-<p>outputs: PDF, HTML</p>
-<p style="text-align: right;"> &lt;i&gt; </p></section>
-<section id="t-table-format-table">
-<h2><strong>[22t]</strong> | TABLE | : format table<a class="headerlink" href="#t-table-format-table" title="Link to this heading">#</a></h2>
+<p>This block formats text as literal or code. The parameters specify formatting
+and syntax coloring. Languages include: - <em>python</em> - <em>bash</em> - <em>sh</em> - <em>cmd</em></p>
+<p>outputs: text, pdf, html</p>
+</section>
+<section id="id3">
+<h2><strong>[19t]</strong> _[[TOPIC]] : topic<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| TABLE | relative path | width, l;c;r, title  (_[T])</p>
-<div class="line-block">
-<div class="line">TABLE | src/file1.csv | 30, c, Forces _[T]</div>
+<p class="topic-title">_[[TOPIC]] topic title</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">TOPIC</span><span class="p">]]</span> <span class="n">topic</span> <span class="n">title</span>
+<span class="n">text</span>
+<span class="n">text</span>
+<span class="o">...</span>
+<span class="n">_</span><span class="p">[[</span><span class="n">QUIT</span><span class="p">]]</span>
+</pre></div>
 </div>
 </aside>
-<p>Reads text, csv and EXCEL files (.txt, .csv, .xls) and outputs formatted
-tables. The width parameter specifies the maximum column width. The l,c,r
-parameter specifies cell justification (left, center, right). The <em>Table tag</em>
-may be added to the caption.</p>
-<p>outputs: text, PDF, HTML</p>
-<p style="text-align: right;"> &lt;i&gt; </p></section>
-<section id="text-format-text">
-<h2><strong>[23]</strong> | TEXT | : format text<a class="headerlink" href="#text-format-text" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">| TEXT | relative path | <em>literal</em>; code</p>
-<div class="line-block">
-<div class="line">TEXT | src/file1.py  | python</div>
+<p>Formats a highlighted block.</p>
+<p>outputs: pdf, html</p>
+</section>
+<section id="id4">
+<h2><strong>[2t]</strong> _[[HTML]] : HTML markup<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[HTML]] label
+markup
+markup
+...
+_[[QUIT]]
+</pre></div>
 </div>
-</aside>
-<p>Reads and formats text and code files. The parameters specify formatting and
-syntax coloring.  Languages include:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><em>python</em></p></li>
-<li><p><em>bash</em></p></li>
-<li><p><em>sh</em></p></li>
-<li><p><em>cmd</em></p></li>
-</ul>
-</div></blockquote>
-<p>outputs: text, PDF, HTML</p>
+<p>Inserts HTML into <em>doc</em>.</p>
+<p>outputs: text, pdf, html</p>
+</section>
+<section id="id5">
+<h2><strong>[3t]</strong> _[[LATEX]] : LaTeX markup<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[LATEX]] label
+markup
+markup
+...
+_[[END]]
+</pre></div>
+</div>
+<p>Inserts TeX into <em>doc</em>.  May require installation of LaTeX.</p>
+<p>outputs: text, pdf, html</p>
+</section>
+<section id="id6">
+<h2><strong>[4t]</strong> _[[RST]] : reStructuredText code<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[RST]] label
+markup
+markup
+...
+_[[END]]
+</pre></div>
+</div>
+<p>Inserts TeX into <em>doc</em>.  May require installation of LaTeX.</p>
+<p>outputs: text, pdf, html</p>
+</section>
+<section id="id7">
+<h2><strong>[5t]</strong> _[[PYTHON]] : Python code<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
+<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[PYTHON]] *rv-namespace*; user namespace
+code
+code
+...
+_[[END]]
+</pre></div>
+</div>
+<p>Executes Python script in the <em>rivt namespace</em> or a user specified namespace.
+File paths in the script are relative to the <em>rivt file</em> folder.</p>
+<p>outputs: text, pdf, html</p>
+</section>
+<section id="id8">
+<h2><strong>[2]</strong> _[[WIN]] : batch commands<a class="headerlink" href="#id8" title="Link to this heading">#</a></h2>
+<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[WIN]] *nowait;wait*
+batch command
+batch command
+...
+ _[[Q]]
+</pre></div>
+</div>
+<p>text, pdf, html</p>
+<p id="api">&lt;i&gt;</p></section>
+<section id="id9">
+<h2><strong>[3]</strong> _[[MACOS]] : shell commands<a class="headerlink" href="#id9" title="Link to this heading">#</a></h2>
+<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[MACOS]] *nowait;wait*
+shell command
+shell command
+...
+ _[[Q]]
+</pre></div>
+</div>
+<p>text, pdf, html</p>
+<p id="api">&lt;i&gt;</p></section>
+<section id="id10">
+<h2><strong>[4]</strong> _[[LINUX]] : shell commands<a class="headerlink" href="#id10" title="Link to this heading">#</a></h2>
+<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[LINUX]] *nowait;wait*
+shell command
+shell command
+...
+ _[[Q]]
+</pre></div>
+</div>
+<p>text, pdf, html</p>
 </section>
 </section>
 
@@ -777,20 +753,20 @@ syntax coloring.  Languages include:</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rvC02-markup-r.html"
+       href="rvC02-linetags.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>C.2 Run API - rv.R</strong></p>
+        <p class="prev-next-title"><strong>C.12 Line Tags</strong></p>
       </div>
     </a>
     <a class="right-next"
-       href="rvC04-markup-v.html"
+       href="rvC04-commands.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>C.4 Values - rv.V</strong></p>
+        <p class="prev-next-title"><strong>C.3 Commands</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -814,29 +790,28 @@ syntax coloring.  Languages include:</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-summary"><strong>[1t]</strong> Summary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-endnote-number"><strong>[2t]</strong>  endnote number</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-center-text"><strong>[3t]</strong> center text</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-right-justify-text"><strong>[4t]</strong> right justify text</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-latex-math"><strong>[5t]</strong> LaTeX math</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-ascii-math"><strong>[6t]</strong> ASCII math</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-equation-label"><strong>[7t]</strong> equation label</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-table-label"><strong>[8t]</strong> table label</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-term-reference"><strong>[9t]</strong> term reference</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-link-anchor"><strong>[10t]</strong> link anchor</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-section-link"><strong>[9t]</strong> section link</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-doc-link"><strong>[10t]</strong> doc link</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-external-url"><strong>[11t]</strong> external url</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#horizontal-line"><strong>[13]</strong> horizontal line</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-new-page"><strong>[14t]</strong> new page</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-indent-text-block"><strong>[15t]</strong> indent text block</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-indent-italic"><strong>[16t]</strong> indent italic</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-endnote-text"><strong>[17t]</strong> endnote text</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-literal-text-or-code"><strong>[18t]</strong> literal text or code</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-topic-topic"><strong>[19t]</strong> _[[TOPIC]] : topic</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-image-insert-image"><strong>[20t]</strong> | IMAGE | : insert image</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-image2-insert-adjacent-images"><strong>[21t]</strong> | IMAGE2 | : insert adjacent images</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-table-format-table"><strong>[22t]</strong> | TABLE | : format table</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-format-text"><strong>[23]</strong> | TEXT | : format text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-html-html-markup"><strong>[2t]</strong> _[[HTML]] : HTML markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-latex-latex-markup"><strong>[3t]</strong> _[[LATEX]] : LaTeX markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rst-restructuredtext-code"><strong>[4t]</strong> _[[RST]] : reStructuredText code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-python-python-code"><strong>[5t]</strong> _[[PYTHON]] : Python code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#win-batch-commands"><strong>[2]</strong> _[[WIN]] : batch commands</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#macos-shell-commands"><strong>[3]</strong> _[[MACOS]] : shell commands</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linux-shell-commands"><strong>[4]</strong> _[[LINUX]] : shell commands</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><strong>[17t]</strong> endnote text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><strong>[18t]</strong> literal text or code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3"><strong>[19t]</strong> _[[TOPIC]] : topic</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4"><strong>[2t]</strong> _[[HTML]] : HTML markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5"><strong>[3t]</strong> _[[LATEX]] : LaTeX markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6"><strong>[4t]</strong> _[[RST]] : reStructuredText code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7"><strong>[5t]</strong> _[[PYTHON]] : Python code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8"><strong>[2]</strong> _[[WIN]] : batch commands</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9"><strong>[3]</strong> _[[MACOS]] : shell commands</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10"><strong>[4]</strong> _[[LINUX]] : shell commands</a></li>
 </ul>
   </nav></div>
 

@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
-    <title>C.5 Tool - rv.T &#8212; rivt</title>
+    <title>C.3 Insert - rv.I &#8212; rivt</title>
   
   
   
@@ -56,11 +56,11 @@
     <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'rvC05-markup-t';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'rvC06-markup-i';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="C.6 Doc - rv.D" href="rvC06-markup-d.html" />
-    <link rel="prev" title="C.4 Values - rv.V" href="rvC04-markup-v.html" />
+    <link rel="next" title="C.4 Values - rv.V" href="rvC07-markup-v.html" />
+    <link rel="prev" title="C.2 Run API - rv.R" href="rvC05-markup-r.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -313,13 +313,16 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="rvC02-markup-r.html"><strong>C.2 Run API - rv.R</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC03-markup-i.html"><strong>C.3 Insert - rv.I</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC04-markup-v.html"><strong>C.4 Values - rv.V</strong></a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>C.5 Tool - rv.T</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC06-markup-d.html"><strong>C.6 Doc - rv.D</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC07-quick.html"><strong>C.7 Quick Lookup</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC08-example1.html"><strong>C.8 Example</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC02-linetags.html"><strong>C.12 Line Tags</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC03-blocktags.html"><strong>C.3 Block Tags</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC04-commands.html"><strong>C.3 Commands</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC05-markup-r.html"><strong>C.2 Run API - rv.R</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>C.3 Insert - rv.I</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC07-markup-v.html"><strong>C.4 Values - rv.V</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC08-markup-t.html"><strong>C.5 Tool - rv.T</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC09-markup-d.html"><strong>C.6 Doc - rv.D</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC10-api-summary.html"><strong>C.10 API Summary</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC11-example1.html"><strong>C.8 Example</strong></a></li>
 </ul>
 </div>
 </nav></div>
@@ -363,7 +366,7 @@
     
     <li class="breadcrumb-item"><a href="rvC01-markup.html" class="nav-link"><strong>C.1 Markup</strong></a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>C.5 Tool - rv.T</strong></span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>C.3 Insert - rv.I</strong></span></li>
   </ul>
 </nav>
 </div>
@@ -380,13 +383,67 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="c-5-tool-rv-t">
-<h1><strong>C.5 Tool - rv.T</strong><a class="headerlink" href="#c-5-tool-rv-t" title="Link to this heading">#</a></h1>
+  <section id="c-3-insert-rv-i">
+<h1><strong>C.3 Insert - rv.I</strong><a class="headerlink" href="#c-3-insert-rv-i" title="Link to this heading">#</a></h1>
+<p><strong>Summary</strong></p>
 <section id="t-summary">
 <h2><strong>[1t]</strong> Summary<a class="headerlink" href="#t-summary" title="Link to this heading">#</a></h2>
-<hr><p>Files processed by the <em>Tools API function</em> are usually read and written to the
-<em>src/</em> folder unless the <em>rv_localB</em> variable is set to <em>True</em> in the <em>Meta API
-function</em>. In that case files are read and written to the <em>rivt file</em> folder.</p>
+<hr><p>The <em>Insert</em> API function inserts static resources into the <em>doc</em> including
+images, tables and formatted text.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Line Tags</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>text _[#] text</p></td>
+<td><p><a class="reference internal" href="rvC02-linetags.html#notetag"><span class="std std-ref">[2t]  endnote number</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>text _[C]</p></td>
+<td><p><a class="reference internal" href="rvC02-linetags.html#centertag"><span class="std std-ref">[3t] center text</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>text _[R]</p></td>
+<td><p><a class="reference internal" href="rvC02-linetags.html#righttag"><span class="std std-ref">[4t] right justify text</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>latex math _[L]</p></td>
+<td><p><a class="reference internal" href="rvC02-linetags.html#latextag"><span class="std std-ref">[5t] LaTeX math</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>ascii math _[A]</p></td>
+<td><p><a class="reference internal" href="rvC02-linetags.html#asciitag"><span class="std std-ref">[6t] ASCII math</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>equation label _[E]</p></td>
+<td><p><a class="reference internal" href="rvC02-linetags.html#equatag"><span class="std std-ref">[7t] equation label</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>title _[T]</p></td>
+<td><p><a class="reference internal" href="rvC02-linetags.html#tabletag"><span class="std std-ref">[8t] table label</span></a> [1]</p></td>
+</tr>
+<tr class="row-odd"><td><p>section anchor _[N]</p></td>
+<td><p><a class="reference internal" href="rvC02-linetags.html#anchortag"><span class="std std-ref">[10t] link anchor</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>text _[M] term link</p></td>
+<td><p><a class="reference internal" href="rvC02-linetags.html#termtag"><span class="std std-ref">[9t] term reference</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>text _[S] section link</p></td>
+<td><p><a class="reference internal" href="rvC02-linetags.html#sectiontag"><span class="std std-ref">[11t] section link</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>text _[D] doc link</p></td>
+<td><p><a class="reference internal" href="rvC02-linetags.html#doctag"><span class="std std-ref">[10t] doc link</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>text _[U] external url</p></td>
+<td><p><a class="reference internal" href="rvC02-linetags.html#urltag"><span class="std std-ref">[11t] external url</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>-----</p></td>
+<td><p><a class="reference internal" href="rvC02-linetags.html#linetag"><span class="std std-ref">[13] horizontal line</span></a> [2]</p></td>
+</tr>
+<tr class="row-odd"><td><p>=====</p></td>
+<td><p><a class="reference internal" href="rvC02-linetags.html#pagetag"><span class="std std-ref">[14t] new page</span></a> [2]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>[1] tag may be added to the label parameter in the TABLE commands</p>
+<p>[2] must start in first indented column (absolute column 4)</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Block Tags</p></th>
@@ -394,17 +451,23 @@ function</em>. In that case files are read and written to the <em>rivt file</em>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>_[[HTML]] label</p></td>
-<td><p>HTML markup (html)</p></td>
+<tr class="row-even"><td><p>_[[INDENT]] spaces (4 default)</p></td>
+<td><p><a class="reference internal" href="rvC03-blocktags.html#indenttag"><span class="std std-ref">[15t] indent text block</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>_[[LATEX]] label</p></td>
-<td><p>LaTeX markup (pdf)[1]</p></td>
+<tr class="row-odd"><td><p>_[[ITALIC]] spaces (4 default)</p></td>
+<td><p><a class="reference internal" href="rvC03-blocktags.html#italictag"><span class="std std-ref">[16t] indent italic</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>_[[RST]] label</p></td>
-<td><p>reStructuredText markup (all)</p></td>
+<tr class="row-even"><td><p>_[[ENDNOTES]] optional label</p></td>
+<td><p>Endnote descriptions (all)</p></td>
 </tr>
-<tr class="row-odd"><td><p>_[[PYTHON]] label, <em>rv-space</em>;newspace</p></td>
-<td><p>Python script (all)</p></td>
+<tr class="row-odd"><td><p>_[[TEXT]] optional language</p></td>
+<td><p><em>literal</em>, code language (all)</p></td>
+</tr>
+<tr class="row-even"><td><p>_[[TERMS]] label</p></td>
+<td><p>Glossary of terms</p></td>
+</tr>
+<tr class="row-odd"><td><p>_[[TOPIC]] topic</p></td>
+<td><p>Topic (all)</p></td>
 </tr>
 <tr class="row-even"><td><p>_[[END]]</p></td>
 <td><p>End block (all)</p></td>
@@ -412,7 +475,6 @@ function</em>. In that case files are read and written to the <em>rivt file</em>
 </tbody>
 </table>
 </div>
-<p>[1] LaTeX requires an installation of LaTeX.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><div class="line-block">
@@ -424,119 +486,25 @@ function</em>. In that case files are read and written to the <em>rivt file</em>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>| HTML | src/path | label</p></td>
+<tr class="row-even"><td><p>| IMAGE | relative path |  scale, caption (_[I])</p></td>
 <td><p>R</p></td>
-<td><p><em>html</em></p></td>
+<td><p><em>.png, .jpg</em></p></td>
 </tr>
-<tr class="row-odd"><td><p>| LATEX | src/path | label</p></td>
+<tr class="row-odd"><td><p>| IMAGE2 | relative path | s1, s2, c1, c2 (_[I])</p></td>
 <td><p>R</p></td>
-<td><p><em>tex</em></p></td>
+<td><p><em>.png, jpg</em></p></td>
 </tr>
-<tr class="row-even"><td><p>| RST | src/path | label</p></td>
+<tr class="row-even"><td><p>| TABLE | relative path | width, l;c;r, title</p></td>
 <td><p>R</p></td>
-<td><p><em>rst</em></p></td>
+<td><p><em>csv, txt, xlsx</em></p></td>
 </tr>
-<tr class="row-odd"><td><p>| PYTHON | src/path | <em>rv-namespace</em>; userspace</p></td>
+<tr class="row-odd"><td><p>| TEXT | relative path |  <em>normal;literal</em> ;code</p></td>
 <td><p>R</p></td>
-<td><p><em>py</em></p></td>
+<td><p><em>txt, code</em></p></td>
 </tr>
 </tbody>
 </table>
 </div>
-</section>
-<section id="t-html-html-markup">
-<h2><strong>[2t]</strong> _[[HTML]] : HTML markup<a class="headerlink" href="#t-html-html-markup" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[HTML]] label
-markup
-markup
-...
-_[[QUIT]]
-</pre></div>
-</div>
-<p>Inserts HTML into <em>doc</em>.</p>
-<p>outputs: text, pdf, html</p>
-</section>
-<section id="t-latex-latex-markup">
-<h2><strong>[3t]</strong> _[[LATEX]] : LaTeX markup<a class="headerlink" href="#t-latex-latex-markup" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[LATEX]] label
-markup
-markup
-...
-_[[END]]
-</pre></div>
-</div>
-<p>Inserts TeX into <em>doc</em>.  May require installation of LaTeX.</p>
-<p>outputs: text, pdf, html</p>
-</section>
-<section id="t-rst-restructuredtext-code">
-<h2><strong>[4t]</strong> _[[RST]] : reStructuredText code<a class="headerlink" href="#t-rst-restructuredtext-code" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[RST]] label
-markup
-markup
-...
-_[[END]]
-</pre></div>
-</div>
-<p>Inserts TeX into <em>doc</em>.  May require installation of LaTeX.</p>
-<p>outputs: text, pdf, html</p>
-</section>
-<section id="t-python-python-code">
-<h2><strong>[5t]</strong> _[[PYTHON]] : Python code<a class="headerlink" href="#t-python-python-code" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[PYTHON]] *rv-namespace*; user namespace
-code
-code
-...
-_[[END]]
-</pre></div>
-</div>
-<p>Executes Python script in the <em>rivt namespace</em> or a user specified namespace.
-File paths in the script are relative to the <em>rivt file</em> folder.</p>
-<p>outputs: text, pdf, html</p>
-</section>
-<section id="id1">
-<h2><strong>[6t]</strong> | HTML | HTML markup<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">| HTML | src/path | label</p>
-<div class="line-block">
-<div class="line">HTML | src/tools/page1.html | code excerpt</div>
-</div>
-</aside>
-<p>Reads and inserts .html and .htm files into <em>doc</em>.</p>
-<p>outputs: text, pdf, html</p>
-</section>
-<section id="id2">
-<h2><strong>[7t]</strong> | LATEX | LaTeX markup<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">| LATEX | src/path | label</p>
-<div class="line-block">
-<div class="line">LATEX | src/tools/page1.tex | frame analysis</div>
-</div>
-</aside>
-<p>Reads and inserts .tex files into <em>doc</em>. May require installation of LaTeX.</p>
-<p>outputs: text, pdf, html</p>
-</section>
-<section id="t-rst-restructuredtext-markup">
-<h2><strong>[8t]</strong> | RST | reStructuredText markup<a class="headerlink" href="#t-rst-restructuredtext-markup" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">| LATEX | src/path | label</p>
-<div class="line-block">
-<div class="line">LATEX | src/tools/page1.tex | frame analysis</div>
-</div>
-</aside>
-<p>Reads and inserts .tex files into <em>doc</em>. May require installation of LaTeX.</p>
-<p>outputs: text, pdf, html</p>
-</section>
-<section id="t-python-python-script">
-<h2><strong>[9t]</strong> | PYTHON | Python script<a class="headerlink" href="#t-python-python-script" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">| PYTHON | src/path | <em>rv-space</em>; user space</p>
-<div class="line-block">
-<div class="line">PYTHON | src/tools/script1.py | rv-space</div>
-</div>
-</aside>
-<p>Executes Python code in the <em>rivt namespace</em> or user specified namespace. File
-paths used in the script are relative to the <em>rivt file</em> folder.</p>
-<p>outputs: text, pdf, html</p>
 </section>
 </section>
 
@@ -551,20 +519,20 @@ paths used in the script are relative to the <em>rivt file</em> folder.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rvC04-markup-v.html"
+       href="rvC05-markup-r.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>C.4 Values - rv.V</strong></p>
+        <p class="prev-next-title"><strong>C.2 Run API - rv.R</strong></p>
       </div>
     </a>
     <a class="right-next"
-       href="rvC06-markup-d.html"
+       href="rvC07-markup-v.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>C.6 Doc - rv.D</strong></p>
+        <p class="prev-next-title"><strong>C.4 Values - rv.V</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -588,14 +556,6 @@ paths used in the script are relative to the <em>rivt file</em> folder.</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-summary"><strong>[1t]</strong> Summary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-html-html-markup"><strong>[2t]</strong> _[[HTML]] : HTML markup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-latex-latex-markup"><strong>[3t]</strong> _[[LATEX]] : LaTeX markup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rst-restructuredtext-code"><strong>[4t]</strong> _[[RST]] : reStructuredText code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-python-python-code"><strong>[5t]</strong> _[[PYTHON]] : Python code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><strong>[6t]</strong> | HTML | HTML markup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><strong>[7t]</strong> | LATEX | LaTeX markup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rst-restructuredtext-markup"><strong>[8t]</strong> | RST | reStructuredText markup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-python-python-script"><strong>[9t]</strong> | PYTHON | Python script</a></li>
 </ul>
   </nav></div>
 

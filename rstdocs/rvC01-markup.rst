@@ -132,13 +132,17 @@ content of the file rv.T() improves readability.
 **[4t]** Tags and Commands
 ----------------------------
 
+:doc:`Line Tags <rvC04-commands>`
+
 A :term:`line tag` formats a line of text and is denoted with **_[LETTER]**,
 generally placed at the end of the line for readability.
+
+:doc:`Block Tags <rvC04-commands>`
 
 A :term:`block tag` formats a block of text and begins with **_[[TAGNAME]]**
 and terminates with **_[[END]]**. 
 
-:doc:`Commands <rvC07-quick>`
+:doc:`Commands <rvC04-commands>`
 
 *rivt commands* read and write external files. They typically start in the
 first column with a vertical bar ( | ) followed by the file path, name and
@@ -270,10 +274,13 @@ formatting options.
     :maxdepth: 1
     :hidden:
 
-    rvC02-markup-r.rst
-    rvC03-markup-i.rst
-    rvC04-markup-v.rst
-    rvC05-markup-t.rst
-    rvC06-markup-d.rst
-    rvC07-quick.rst
-    rvC08-example1.rst
+    rvC02-linetags.rst
+    rvC03-blocktags.rst
+    rvC04-commands.rst    
+    rvC05-markup-r.rst
+    rvC06-markup-i.rst
+    rvC07-markup-v.rst
+    rvC08-markup-t.rst
+    rvC09-markup-d.rst
+    rvC10-api-summary.rst
+    rvC11-example1.rst
