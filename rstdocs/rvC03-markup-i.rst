@@ -250,7 +250,7 @@ outputs: text, pdf, html
 
 ..  _linetag:
 
-**[13]** ______ : horizontal line
+**[13]** horizontal line
 ------------------------------------------- 
 .. raw:: html
 
@@ -272,7 +272,7 @@ outputs: text, pdf, html
 
 .. _pagetag:
 
-**[14]** ======== : new page
+**[14]** new page
 -----------------------------------------
 
 .. raw:: html
