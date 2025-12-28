@@ -96,11 +96,11 @@ Center text within the page margins.
 
 outputs: text, pdf, html
 
-.. _right:
-
 
 **[4t]** _[R] : right justify text
 -----------------------------------------
+
+.. _right:
 
 .. raw:: html
 
