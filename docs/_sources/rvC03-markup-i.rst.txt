@@ -22,14 +22,13 @@ images, tables and formatted text.
     latex math _[L]                  :ref:`latextag` 
     ascii math _[A]                  :ref:`asciitag`
 equation label _[E]                  :ref:`equatag`
- caption _[I]                  image number and caption (all)[1]
-   title _[T]                  table number and title (all)[1]
-    text _[D] term link        link to defined term in report (all)
-    text _[S] section link     link to section in doc (all)
-    text _[R] report link      link to doc in report (all)
-    text _[U] external url     external url link (all)
-    \-\-\-\-\-                 >4 dashes inserts line (all)[2]
-    \=\=\=\=\=                 >4 underscores inserts page (all)[2]
+   title _[T]                        :ref:`tabletag` [1]
+    text _[M] term link              :ref:`termtag`
+    text _[S] section link           :ref:`sectiontag`
+    text _[R] report link            :ref:`doctag`
+    text _[U] external url           :ref:`urltag`   
+    \-\-\-\-\-                       :ref:`linetag` [2]
+    \=\=\=\=\=                       :ref:`pagetag` [2]
 ============================= =======================================
 
 [1] tag may be added to the label parameter in the IMAGE and TABLE commands
@@ -39,8 +38,8 @@ equation label _[E]                  :ref:`equatag`
 ======================================= ==============================
        Block Tags                        Description (doc scope)
 ======================================= ==============================
- _[[INDENT]] spaces (4 default)          Indent (all)
- _[[ITALIC]] spaces (4 default)          Italic indent - (all)
+ _[[INDENT]] spaces (4 default)          :ref:`indenttag`
+ _[[ITALIC]] spaces (4 default)          :ref:`italictag`
  _[[ENDNOTES]] optional label            Endnote descriptions (all)
  _[[TEXT]] optional language             *literal*, code language (all)
  _[[TERMS]] label                        Glossary of terms
@@ -103,7 +102,7 @@ outputs: text, pdf, html
 
     <hr>
 
-.. topic:: *equation* _[L]
+.. topic:: equation _[L]
 
     \frac{1}{\sqrt{x}} _[L]
 
@@ -120,7 +119,7 @@ outputs: pdf, html
 
     <hr>
 
-.. topic:: *equation* _[L]
+.. topic:: equation _[L]
 
     \frac{1}{\sqrt{x}} _[L]
 
@@ -137,7 +136,7 @@ outputs: pdf, html
 
     <hr>
 
-.. topic:: *equation* _[A]
+.. topic:: equation _[A]
 
     f(x,y) = sin(x)**2 + y/5 _[A]
 
@@ -156,44 +155,22 @@ outputs: text, pdf, html
 
 .. topic:: equation label _[E]
 
-   Equation label  _[E]
+   equation label  _[E]
 
 Labels and numbers equation.
 
 outputs: text, pdf, html
 
-.. raw:: html
+.. _tabletag:
 
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[8]** _[I] : image label 
------------------------------------------
-
-.. raw:: html
-
-    <hr>   
-
-.. topic:: *caption* _[I]
-
-   Image label _[I]
-
-Labels and numbers images.
-
-outputs: text, pdf, html
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-
-**[9]** _[T] : table label
+**[8t]** table label
 ------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: *title* _[T]
+.. topic:: title _[T]
 
    Table Title _[T]
 
@@ -201,11 +178,26 @@ Labels and numbers tables.
 
 outputs: text, pdf, html
 
+.. _termtag:
+
+**[9t]** term reference
+------------------------------------------
+
 .. raw:: html
 
-    <p style="text-align: right;"> &lt;i&gt; </p>
+    <hr>
 
-**[10]** _[S] : section link
+.. topic:: term _[M]
+
+   term _[M]
+
+term in glossary
+
+outputs: text, pdf, html
+
+.. _sectiontag:
+
+**[9t]** section link
 -----------------------------------------
 
 .. raw:: html
@@ -221,11 +213,9 @@ formatted.
 
 outputs: text, pdf, html
 
-.. raw:: html
+.. _doctag:
 
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[11]** _[D] : doc link
+**[10t]** doc link
 -----------------------------------------
 
 .. raw:: html
@@ -241,11 +231,9 @@ formatted.
 
 outputs: text, pdf, html
 
-.. raw:: html
+.. _urltag:
 
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[12]** _[U] : url - external
+**[11t]** external url
 -----------------------------------------
 
 .. raw:: html
@@ -260,9 +248,7 @@ External url link. Text will be continued and wrapped when formatted.
 
 outputs: text, pdf, html
 
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
+..  _linetag:
 
 **[13]** ______ : horizontal line
 ------------------------------------------- 
@@ -284,6 +270,8 @@ outputs: text, pdf, html
 
     <p style="text-align: right;"> &lt;i&gt; </p>
 
+.. _pagetag:
+
 **[14]** ======== : new page
 -----------------------------------------
 
@@ -299,18 +287,16 @@ Starts a new page.
 
 outputs: text, pdf, html
 
-.. raw:: html
+.. _indenttag:
 
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[15]** _[[INDENT]] : indent text
+**[15]** indent text block
 ----------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic::  _[[INDENT]] spaces
+.. topic::  _[[INDENT]] number of spaces
 
     ::
 
@@ -322,19 +308,16 @@ outputs: text, pdf, html
 
 Indents text four spaces.
 
+.. _italictag:
 
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[16]** _[[ITALIC]] : indent italic
+**[16]** indent italic
 ------------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic::  _[[I]] spaces
+.. topic::  _[[ITALIC]] spaces
 
     ::
         
@@ -353,7 +336,7 @@ outputs: pdf, html
     <p style="text-align: right;"> &lt;i&gt; </p>
 
 
-**[17]** _[[NOTE]] : endnote text
+**[17]** endnote text
 -------------------------------------------    
 
 .. raw:: html
@@ -374,21 +357,14 @@ Formats and numbers an endnote in order of processing.
 
 outputs: text, pdf, html
 
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-
-
-**[18]** _[[TEXT]] : literal text or code
+**[18]** literal text or code
 ------------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic::  _[[TEXT]] language or *literal*
+.. topic::  _[[TEXT]] language;*literal*
 
     ::
         
@@ -402,10 +378,6 @@ This block formats text as literal or code. The parameters specify formatting
 and syntax coloring. Languages include: - *python* - *bash* - *sh* - *cmd*
 
 outputs: text, pdf, html
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 **[19]** _[[TOPIC]] : topic
 ------------------------------------------------
