@@ -23,6 +23,9 @@ installing *rivt* is :doc:`rivtuv <rvB01-install>`.
 =============================================== ================================
       Dependency                                      description
 =============================================== ================================
+  "pyzo>=4.20.0"                                   lightweight IDE
+  "pyside6>=6.10.1"                                QT bindings
+  "fastcore>=1.8.16"                                format tables                 
   "tabulate>=0.9.0"                                format tables                 
   "pillow>=11.2.1"                                 image processing
   "matplotlib>=3.10.1"                             data visualization

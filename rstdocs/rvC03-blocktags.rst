@@ -1,7 +1,7 @@
 **C.3 Block Tags**
 ========================
 
-**[1t]** Summary
+**[1t]** Block Tag Summary
 -------------------------------------
 
 .. raw:: html
@@ -12,30 +12,88 @@
 Format blocks of text.
 
 ========== ======================================= ==============================
-API Scope         Block Tags                        Description (doc scope)
+API Scope         Block Tags                        Description 
 ========== ======================================= ==============================
-rv.R        _[[WIN]] label, *wait;nowait*           Windows command script (all)
-rv.R        _[[MACOS]] label, *wait;nowait*         Mac shell script (all)
-rv.R        _[[LINUX]] label, *wait;nowait*         Linux shell script (all)
-rv.I, V     _[[INDENT]] spaces (4 default)          Indent (all)
-rv.I, V     _[[ITALIC]] spaces (4 default)          Italic indent - (all)
+rv.R        _[[WIN]] label, *wait;nowait*           :ref:`wintag`
+rv.R        _[[MACOS]] label, *wait;nowait*         :ref:`mactag`
+rv.R        _[[LINUX]] label, *wait;nowait*         :ref:`linuxtag`
+rv.I, V     _[[INDENT]] spaces (4 default)          :ref:`indenttag`
+rv.I, V     _[[ITALIC]] spaces (4 default)          :ref:`italictag`
 rv.I, V     _[[ENDNOTES]] optional label            Endnote descriptions (all)
 rv.I, V     _[[TEXT]] optional language             *literal*, code (all)
 rv.I, V     _[[TOPIC]] topic                        Topic (all)
 rv.V        _[[VALUES]] table title, rows (_[T])    Define values(all)
 rv.T        _[[PYTHON]] label, *rvspace*;newspace   Python script (all)
-rv.T        _[[LATEX]] label                        LaTeX markup (pdf)[1]
+rv.T        _[[LATEX]] label                        LaTeX markup (pdf,html)[1]
 rv.T        _[[HTML]] label                         HTML markup (html)
+rv.T        _[[RST]] label                          RST markup (pdf,html)
 rv.D        _[[LAYOUT]] label                       Doc format settings (all)
 all         _[[END]]                                End block (all)
 ========== ======================================= ==============================
 
 [1] LaTeX processing requires the installation of *Texlive*
 
+.. _wintag:
+
+**[2t]** Windows batch commands
+------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. code-block:: text
+    
+  _[[WIN]] *nowait;wait*
+  batch command
+  batch command
+  ...
+   _[[Q]]
+
+text, pdf, html
+
+.. _mactag:
+
+**[3t]** Mac shell commands
+--------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. code-block:: text
+    
+  _[[MACOS]] *nowait;wait*
+  shell command
+  shell command
+  ...
+   _[[Q]]
+
+text, pdf, html
+
+.. _linuxtag:
+
+**[4t]** Linux shell commands 
+---------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. code-block:: text
+    
+  _[[LINUX]] *nowait;wait*
+  shell command
+  shell command
+  ...
+   _[[Q]]
+
+text, pdf, html
+
 
 .. _indenttag:
 
-**[15t]** indent text block
+**[5t]** indent text block
 ----------------------------------------------
 
 .. raw:: html
@@ -56,7 +114,7 @@ Indents text four spaces.
 
 .. _italictag:
 
-**[16t]** indent italic
+**[6t]** indent italic
 ------------------------------------------------
 
 .. raw:: html
@@ -426,62 +484,3 @@ Executes Python script in the *rivt namespace* or a user specified namespace.
 File paths in the script are relative to the *rivt file* folder.
 
 outputs: text, pdf, html
-
-**[2]** _[[WIN]] : batch commands
-------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. code-block:: text
-    
-  _[[WIN]] *nowait;wait*
-  batch command
-  batch command
-  ...
-   _[[Q]]
-
-text, pdf, html
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[3]** _[[MACOS]] : shell commands
---------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. code-block:: text
-    
-  _[[MACOS]] *nowait;wait*
-  shell command
-  shell command
-  ...
-   _[[Q]]
-
-text, pdf, html
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[4]** _[[LINUX]] : shell commands 
----------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. code-block:: text
-    
-  _[[LINUX]] *nowait;wait*
-  shell command
-  shell command
-  ...
-   _[[Q]]
-
-text, pdf, html

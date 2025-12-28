@@ -1,7 +1,7 @@
 **C.12 Line Tags**
 ========================
 
-**[1t]** Summary
+**[1t]** Line Tag Summary
 -------------------------------------
 
 .. raw:: html
@@ -101,7 +101,7 @@ outputs: pdf, html
 
     \frac{1}{\sqrt{x}} _[L]
 
-The LaTeX math expression will be formatted in PDF and HTML.
+The LaTeX math expression will be formatted in the specified font.
 
 outputs: pdf, html
 

@@ -2,7 +2,7 @@
 =======================
 
 
-**[1t]** Functions
+**[1t]** API Functions
 ------------------------
 
 .. raw:: html
@@ -24,7 +24,7 @@ rv.X(rS)           Quit              Exit rivt
 =============== =============== =========================================
 
 
-**[2t]** Headers
+**[2t]** API Headers
 ------------------------
 
 The :term:`API headers` determine overall processing of the section.
@@ -211,10 +211,34 @@ Folders organize files in standard locations to generate *docs* and *reports*
 
     <hr>
 
-*Metadata* is stored in the file *rivtmeta.py*. If used, it is imported prior
-to *rivtlib* and provides author information and specifies whether the *rivt
-file* is a single doc or part of report. Metadata is specified using standard
-Python data types. See :doc:`here <rvC01-markup>` for further details.
+Two variable settings at the beginning of the file, immediately following the
+import statement, affect doc processing. The variables are defined in
+comments and are not indented.
+
+The first specifies the publishing of a *single doc*. The variable 
+*localB* overrides the default report structure and specifies that all 
+resource files are read from and written to the *rivt file* folder instead of 
+*rivt folders*. It is intended for single *docs* with limited formatting 
+requirements, rather than *docs* intended to be used as part of a report.
+
+The second variable (*docnameS*) overrides the doc name taken from the file name.
+
+..  code-block:: python
+
+     # default setting uses report folders
+     # rv localB = false
+     
+     # resource files are read from and written to the rivt file folder
+     # rv localB = true
+
+     # default setting uses report folders
+     # rv docnameS = new doc name
+
+
+Additional *metadata* is stored in the *api-log.txt* file and may be used in
+doc headers,footers and appendices. Metadata is specified in the Tools API
+using standard Python data types. See :doc:`here <rvC01-markup>` for further
+details.
     
 =================== ==========================================================
     Variable                        Description
@@ -230,33 +254,21 @@ and license information and forks.
 
     # default - author dictionary
     rv_authD = {
-            "authors": "",
-            "version": "0.0.0",
-            "email": "",
-            "repo": "",
-            "license": "https://opensource.org/license/mit/",
-            "fork1": ["author", "version", "email", "repo"],
-            "fork2": ["author", "version", "email", "repo"],
+            "authorS": "",
+            "versionS": "0.0.0",
+            "emailS": "",
+            "repoS": "",
+            "licenseS": "https://opensource.org/license/mit/",
+            "fork1L": ["author", "version", "email", "repo"],
+            "fork2L": ["author", "version", "email", "repo"],
             }
 
     # example - author dicitionary
     rv_authD = {
-            "authors": "rholland",
-            "version": "0.6.1",
-            "email": "rod.h.holland@gmail.com",
-            "repo": "https://github.com/rivt-info/rivt-simple-doc",
-            "license": "https://opensource.org/license/mit/",
+            "authorS": "rholland",
+            "versionS": "0.6.1",
+            "emailS": "rod.h.holland@gmail.com",
+            "repoS": "https://github.com/rivt-info/rivt-simple-doc",
+            "licenseS": "https://opensource.org/license/mit/",
             }
 
-*rv_localB* overrides the default report structure and specifies that all
-resource files are read from and written to the *rivt file* folder instead of
-*rivt folders*. It is intended for simple, *single docs* with more limited
-formatting options.
-
-..  code-block:: python
-
-     # default setting uses report folders
-     rv_localB = false
-     
-     # resource files are read from and written to the rivt file folder
-     rv_localB = true
