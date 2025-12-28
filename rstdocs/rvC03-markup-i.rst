@@ -115,11 +115,7 @@ The LaTeX math expression will be formatted in PDF and HTML.
 outputs: pdf, html
 
 
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-**[5]** _[L] : LaTeX math 
+**[5t]** _[L] : LaTeX math 
 -----------------------------------------
 
 .. raw:: html
@@ -134,10 +130,6 @@ The LaTeX math expression will be formatted in PDF and HTML.
 
 outputs: pdf, html
 
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
 
 **[6]** _[A] : ASCII math
 -----------------------------------------
