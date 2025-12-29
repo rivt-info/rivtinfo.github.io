@@ -410,23 +410,23 @@
 </tr>
 <tr class="row-odd"><td><p>rv.I, V</p></td>
 <td><p>_[[INDENT]] spaces (4 default)</p></td>
-<td><p><a class="reference internal" href="#indenttag"><span class="std std-ref">[5t] indent text block</span></a></p></td>
+<td><p><a class="reference internal" href="#indenttag"><span class="std std-ref">[5t] indent text</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I, V</p></td>
 <td><p>_[[ITALIC]] spaces (4 default)</p></td>
-<td><p><a class="reference internal" href="#italictag"><span class="std std-ref">[6t] indent italic</span></a></p></td>
+<td><p><a class="reference internal" href="#italictag"><span class="std std-ref">[6t] indent italic text</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I, V</p></td>
 <td><p>_[[ENDNOTES]] optional label</p></td>
-<td><p>Endnote descriptions (all)</p></td>
+<td><p><a class="reference internal" href="#notestag"><span class="std std-ref">[7t] endnote text</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I, V</p></td>
 <td><p>_[[TEXT]] optional language</p></td>
-<td><p><em>literal</em>, code (all)</p></td>
+<td><p><a class="reference internal" href="#codetag"><span class="std std-ref">[8t] literal text or code</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I, V</p></td>
 <td><p>_[[TOPIC]] topic</p></td>
-<td><p>Topic (all)</p></td>
+<td><p><a class="reference internal" href="#topictag"><span class="std std-ref">[9t] topic</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.V</p></td>
 <td><p>_[[VALUES]] table title, rows (_[T])</p></td>
@@ -434,23 +434,23 @@
 </tr>
 <tr class="row-odd"><td><p>rv.T</p></td>
 <td><p>_[[PYTHON]] label, <em>rvspace</em>;newspace</p></td>
-<td><p>Python script (all)</p></td>
+<td><p><a class="reference internal" href="#pythontag"><span class="std std-ref">[13t] Python code</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.T</p></td>
 <td><p>_[[LATEX]] label</p></td>
-<td><p>LaTeX markup (pdf,html)[1]</p></td>
+<td><p><a class="reference internal" href="#latexblktag"><span class="std std-ref">[11t] LaTeX markup</span></a> [1]</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.T</p></td>
 <td><p>_[[HTML]] label</p></td>
-<td><p>HTML markup (html)</p></td>
+<td><p><a class="reference internal" href="#htmltag"><span class="std std-ref">[10t] HTML markup</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.T</p></td>
 <td><p>_[[RST]] label</p></td>
-<td><p>RST markup (pdf,html)</p></td>
+<td><p><a class="reference internal" href="#rsttag"><span class="std std-ref">[12t] reStructuredText code</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.D</p></td>
 <td><p>_[[LAYOUT]] label</p></td>
-<td><p>Doc format settings (all)</p></td>
+<td><p><a class="reference internal" href="#layouttag"><span class="std std-ref">[11t] Layout</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>all</p></td>
 <td><p>_[[END]]</p></td>
@@ -467,10 +467,11 @@
 batch command
 batch command
 ...
- _[[Q]]
+ _[[END]]
 </pre></div>
 </div>
-<p>text, pdf, html</p>
+<p>API: Run
+docs: text, pdf, html</p>
 </section>
 <section id="t-mac-shell-commands">
 <span id="mactag"></span><h2><strong>[3t]</strong> Mac shell commands<a class="headerlink" href="#t-mac-shell-commands" title="Link to this heading">#</a></h2>
@@ -478,10 +479,11 @@ batch command
 shell command
 shell command
 ...
- _[[Q]]
+ _[[END]]
 </pre></div>
 </div>
-<p>text, pdf, html</p>
+<p>API: Run
+docs: text, pdf, html</p>
 </section>
 <section id="t-linux-shell-commands">
 <span id="linuxtag"></span><h2><strong>[4t]</strong> Linux shell commands<a class="headerlink" href="#t-linux-shell-commands" title="Link to this heading">#</a></h2>
@@ -489,48 +491,54 @@ shell command
 shell command
 shell command
 ...
- _[[Q]]
+ _[[END]]
 </pre></div>
 </div>
-<p>text, pdf, html</p>
+<p>API: Run
+docs: text, pdf, html</p>
 </section>
-<section id="t-indent-text-block">
-<span id="indenttag"></span><h2><strong>[5t]</strong> indent text block<a class="headerlink" href="#t-indent-text-block" title="Link to this heading">#</a></h2>
+<section id="t-indent-text">
+<span id="indenttag"></span><h2><strong>[5t]</strong> indent text<a class="headerlink" href="#t-indent-text" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">_[[INDENT]] number of spaces</p>
+<p class="topic-title">_[[INDENT]] spaces</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">INDENT</span><span class="p">]]</span> <span class="mi">4</span>
 <span class="n">text</span>
 <span class="n">text</span>
 <span class="o">...</span>
-<span class="n">_</span><span class="p">[[</span><span class="n">QUIT</span><span class="p">]]</span>
+<span class="n">_</span><span class="p">[[</span><span class="n">END</span><span class="p">]]</span>
 </pre></div>
 </div>
 </aside>
 <p>Indents text four spaces.</p>
+<p>API: Insert, Values
+docs: text, pdf, html</p>
 </section>
-<section id="t-indent-italic">
-<span id="italictag"></span><h2><strong>[6t]</strong> indent italic<a class="headerlink" href="#t-indent-italic" title="Link to this heading">#</a></h2>
+<section id="t-indent-italic-text">
+<span id="italictag"></span><h2><strong>[6t]</strong> indent italic text<a class="headerlink" href="#t-indent-italic-text" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[ITALIC]] spaces</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">ITALIC</span><span class="p">]]</span> <span class="mi">4</span>
 <span class="n">text</span>
 <span class="n">text</span>
 <span class="o">...</span>
-<span class="n">_</span><span class="p">[[</span><span class="n">QUIT</span><span class="p">]]</span>
+<span class="n">_</span><span class="p">[[</span><span class="n">END</span><span class="p">]]</span>
 </pre></div>
 </div>
 </aside>
 <p>Indents the specified number spaces and italicizes block.</p>
 <p>outputs: pdf, html</p>
-<p style="text-align: right;"> &lt;i&gt; </p></section>
+</section>
 <section id="t-endnote-text">
-<h2><strong>[17t]</strong> endnote text<a class="headerlink" href="#t-endnote-text" title="Link to this heading">#</a></h2>
+<span id="notestag"></span><h2><strong>[7t]</strong> endnote text<a class="headerlink" href="#t-endnote-text" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">_[[NOTE]]</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">NOTE</span><span class="p">]]</span>
+<p class="topic-title">_[[NOTE]]  reference label</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">NOTE</span><span class="p">]]</span> <span class="n">aci</span> <span class="n">endnotes</span>
 <span class="n">this</span> <span class="ow">is</span> <span class="n">an</span> <span class="n">endnote</span> <span class="o">-</span> <span class="n">assigned</span> <span class="n">to</span> <span class="n">an</span> <span class="n">endnote</span> <span class="n">tag</span> <span class="p">[</span><span class="c1">#] in order of</span>
 <span class="n">of</span> <span class="n">processing</span><span class="o">.</span>
-<span class="n">_</span><span class="p">[[</span><span class="n">QUIT</span><span class="p">]]</span>
+
+<span class="n">this</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">second</span> <span class="n">endnote</span> <span class="n">separated</span> <span class="n">by</span> <span class="n">a</span> <span class="n">blank</span> <span class="n">line</span><span class="o">.</span>
+<span class="o">...</span>
+<span class="n">_</span><span class="p">[[</span><span class="n">END</span><span class="p">]]</span>
 </pre></div>
 </div>
 </aside>
@@ -538,23 +546,24 @@ shell command
 <p>outputs: text, pdf, html</p>
 </section>
 <section id="t-literal-text-or-code">
-<h2><strong>[18t]</strong> literal text or code<a class="headerlink" href="#t-literal-text-or-code" title="Link to this heading">#</a></h2>
+<span id="codetag"></span><h2><strong>[8t]</strong> literal text or code<a class="headerlink" href="#t-literal-text-or-code" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[TEXT]] language;*literal*</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">TEXT</span><span class="p">]]</span> <span class="n">python</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;some text&quot;</span><span class="p">)</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">5</span>
 <span class="o">...</span>
-<span class="n">_</span><span class="p">[[</span><span class="n">QUIT</span><span class="p">]]</span>
+<span class="n">_</span><span class="p">[[</span><span class="n">END</span><span class="p">]]</span>
 </pre></div>
 </div>
 </aside>
-<p>This block formats text as literal or code. The parameters specify formatting
-and syntax coloring. Languages include: - <em>python</em> - <em>bash</em> - <em>sh</em> - <em>cmd</em></p>
+<p>This block formats text as literal text or code. The parameters
+specify formatting and syntax coloring. Languages
+include: - <em>python</em> - <em>bash</em> - <em>sh</em> - <em>cmd</em></p>
 <p>outputs: text, pdf, html</p>
 </section>
-<section id="t-topic-topic">
-<h2><strong>[19t]</strong> _[[TOPIC]] : topic<a class="headerlink" href="#t-topic-topic" title="Link to this heading">#</a></h2>
+<section id="t-topic">
+<span id="topictag"></span><h2><strong>[9t]</strong> topic<a class="headerlink" href="#t-topic" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[TOPIC]] topic title</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">TOPIC</span><span class="p">]]</span> <span class="n">topic</span> <span class="n">title</span>
@@ -565,11 +574,11 @@ and syntax coloring. Languages include: - <em>python</em> - <em>bash</em> - <em>
 </pre></div>
 </div>
 </aside>
-<p>Formats a highlighted block.</p>
-<p>outputs: pdf, html</p>
+<p>Formats a highlighted topic block.</p>
+<p>outputs: text, pdf, html</p>
 </section>
-<section id="t-html-html-markup">
-<h2><strong>[2t]</strong> _[[HTML]] : HTML markup<a class="headerlink" href="#t-html-html-markup" title="Link to this heading">#</a></h2>
+<section id="t-html-markup">
+<span id="htmltag"></span><h2><strong>[10t]</strong> HTML markup<a class="headerlink" href="#t-html-markup" title="Link to this heading">#</a></h2>
 <hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[HTML]] label
 markup
 markup
@@ -580,8 +589,8 @@ _[[QUIT]]
 <p>Inserts HTML into <em>doc</em>.</p>
 <p>outputs: text, pdf, html</p>
 </section>
-<section id="t-latex-latex-markup">
-<h2><strong>[3t]</strong> _[[LATEX]] : LaTeX markup<a class="headerlink" href="#t-latex-latex-markup" title="Link to this heading">#</a></h2>
+<section id="t-latex-markup">
+<span id="latexblktag"></span><h2><strong>[11t]</strong> LaTeX markup<a class="headerlink" href="#t-latex-markup" title="Link to this heading">#</a></h2>
 <hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[LATEX]] label
 markup
 markup
@@ -592,8 +601,8 @@ _[[END]]
 <p>Inserts TeX into <em>doc</em>.  May require installation of LaTeX.</p>
 <p>outputs: text, pdf, html</p>
 </section>
-<section id="t-rst-restructuredtext-code">
-<h2><strong>[4t]</strong> _[[RST]] : reStructuredText code<a class="headerlink" href="#t-rst-restructuredtext-code" title="Link to this heading">#</a></h2>
+<section id="t-restructuredtext-code">
+<span id="rsttag"></span><h2><strong>[12t]</strong> reStructuredText code<a class="headerlink" href="#t-restructuredtext-code" title="Link to this heading">#</a></h2>
 <hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[RST]] label
 markup
 markup
@@ -604,8 +613,8 @@ _[[END]]
 <p>Inserts TeX into <em>doc</em>.  May require installation of LaTeX.</p>
 <p>outputs: text, pdf, html</p>
 </section>
-<section id="t-python-python-code">
-<h2><strong>[5t]</strong> _[[PYTHON]] : Python code<a class="headerlink" href="#t-python-python-code" title="Link to this heading">#</a></h2>
+<section id="t-python-code">
+<span id="pythontag"></span><h2><strong>[13t]</strong> Python code<a class="headerlink" href="#t-python-code" title="Link to this heading">#</a></h2>
 <hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[PYTHON]] *rv-namespace*; user namespace
 code
 code
@@ -617,99 +626,9 @@ _[[END]]
 File paths in the script are relative to the <em>rivt file</em> folder.</p>
 <p>outputs: text, pdf, html</p>
 </section>
-<section id="win-batch-commands">
-<h2><strong>[2]</strong> _[[WIN]] : batch commands<a class="headerlink" href="#win-batch-commands" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[WIN]] *nowait;wait*
-batch command
-batch command
-...
- _[[Q]]
-</pre></div>
-</div>
-<p>text, pdf, html</p>
-<p id="api">&lt;i&gt;</p></section>
-<section id="macos-shell-commands">
-<h2><strong>[3]</strong> _[[MACOS]] : shell commands<a class="headerlink" href="#macos-shell-commands" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[MACOS]] *nowait;wait*
-shell command
-shell command
-...
- _[[Q]]
-</pre></div>
-</div>
-<p>text, pdf, html</p>
-<p id="api">&lt;i&gt;</p></section>
-<section id="linux-shell-commands">
-<h2><strong>[4]</strong> _[[LINUX]] : shell commands<a class="headerlink" href="#linux-shell-commands" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[LINUX]] *nowait;wait*
-shell command
-shell command
-...
- _[[Q]]
-</pre></div>
-</div>
-<p>text, pdf, html</p>
-</section>
-<section id="id1">
-<h2><strong>[17t]</strong> endnote text<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[[NOTE]]</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">NOTE</span><span class="p">]]</span>
-<span class="n">this</span> <span class="ow">is</span> <span class="n">an</span> <span class="n">endnote</span> <span class="o">-</span> <span class="n">assigned</span> <span class="n">to</span> <span class="n">an</span> <span class="n">endnote</span> <span class="n">tag</span> <span class="p">[</span><span class="c1">#] in order of</span>
-<span class="n">of</span> <span class="n">processing</span><span class="o">.</span>
-<span class="n">_</span><span class="p">[[</span><span class="n">QUIT</span><span class="p">]]</span>
-</pre></div>
-</div>
-</aside>
-<p>Formats and numbers an endnote in order of processing.</p>
-<p>outputs: text, pdf, html</p>
-</section>
-<section id="id2">
-<h2><strong>[18t]</strong> literal text or code<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[[TEXT]] language;*literal*</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">TEXT</span><span class="p">]]</span> <span class="n">python</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;some text&quot;</span><span class="p">)</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">5</span>
-<span class="o">...</span>
-<span class="n">_</span><span class="p">[[</span><span class="n">QUIT</span><span class="p">]]</span>
-</pre></div>
-</div>
-</aside>
-<p>This block formats text as literal or code. The parameters specify formatting
-and syntax coloring. Languages include: - <em>python</em> - <em>bash</em> - <em>sh</em> - <em>cmd</em></p>
-<p>outputs: text, pdf, html</p>
-</section>
-<section id="id3">
-<h2><strong>[19t]</strong> _[[TOPIC]] : topic<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[[TOPIC]] topic title</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">TOPIC</span><span class="p">]]</span> <span class="n">topic</span> <span class="n">title</span>
-<span class="n">text</span>
-<span class="n">text</span>
-<span class="o">...</span>
-<span class="n">_</span><span class="p">[[</span><span class="n">QUIT</span><span class="p">]]</span>
-</pre></div>
-</div>
-</aside>
-<p>Formats a highlighted block.</p>
-<p>outputs: pdf, html</p>
-</section>
-<section id="id4">
-<h2><strong>[2t]</strong> _[[HTML]] : HTML markup<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[HTML]] label
-markup
-markup
-...
-_[[QUIT]]
-</pre></div>
-</div>
-<p>Inserts HTML into <em>doc</em>.</p>
-<p>outputs: text, pdf, html</p>
-</section>
-<section id="id5">
-<h2><strong>[3t]</strong> _[[LATEX]] : LaTeX markup<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[LATEX]] label
+<section id="t-layout">
+<span id="layouttag"></span><h2><strong>[11t]</strong> Layout<a class="headerlink" href="#t-layout" title="Link to this heading">#</a></h2>
+<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[LAYOUT]] label
 markup
 markup
 ...
@@ -717,31 +636,6 @@ _[[END]]
 </pre></div>
 </div>
 <p>Inserts TeX into <em>doc</em>.  May require installation of LaTeX.</p>
-<p>outputs: text, pdf, html</p>
-</section>
-<section id="id6">
-<h2><strong>[4t]</strong> _[[RST]] : reStructuredText code<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[RST]] label
-markup
-markup
-...
-_[[END]]
-</pre></div>
-</div>
-<p>Inserts TeX into <em>doc</em>.  May require installation of LaTeX.</p>
-<p>outputs: text, pdf, html</p>
-</section>
-<section id="id7">
-<h2><strong>[5t]</strong> _[[PYTHON]] : Python code<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[PYTHON]] *rv-namespace*; user namespace
-code
-code
-...
-_[[END]]
-</pre></div>
-</div>
-<p>Executes Python script in the <em>rivt namespace</em> or a user specified namespace.
-File paths in the script are relative to the <em>rivt file</em> folder.</p>
 <p>outputs: text, pdf, html</p>
 </section>
 </section>
@@ -797,25 +691,16 @@ File paths in the script are relative to the <em>rivt file</em> folder.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-windows-batch-commands"><strong>[2t]</strong> Windows batch commands</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-mac-shell-commands"><strong>[3t]</strong> Mac shell commands</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-linux-shell-commands"><strong>[4t]</strong> Linux shell commands</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-indent-text-block"><strong>[5t]</strong> indent text block</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-indent-italic"><strong>[6t]</strong> indent italic</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-endnote-text"><strong>[17t]</strong> endnote text</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-literal-text-or-code"><strong>[18t]</strong> literal text or code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-topic-topic"><strong>[19t]</strong> _[[TOPIC]] : topic</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-html-html-markup"><strong>[2t]</strong> _[[HTML]] : HTML markup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-latex-latex-markup"><strong>[3t]</strong> _[[LATEX]] : LaTeX markup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rst-restructuredtext-code"><strong>[4t]</strong> _[[RST]] : reStructuredText code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-python-python-code"><strong>[5t]</strong> _[[PYTHON]] : Python code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#win-batch-commands"><strong>[2]</strong> _[[WIN]] : batch commands</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#macos-shell-commands"><strong>[3]</strong> _[[MACOS]] : shell commands</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linux-shell-commands"><strong>[4]</strong> _[[LINUX]] : shell commands</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><strong>[17t]</strong> endnote text</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><strong>[18t]</strong> literal text or code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3"><strong>[19t]</strong> _[[TOPIC]] : topic</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4"><strong>[2t]</strong> _[[HTML]] : HTML markup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5"><strong>[3t]</strong> _[[LATEX]] : LaTeX markup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6"><strong>[4t]</strong> _[[RST]] : reStructuredText code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7"><strong>[5t]</strong> _[[PYTHON]] : Python code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-indent-text"><strong>[5t]</strong> indent text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-indent-italic-text"><strong>[6t]</strong> indent italic text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-endnote-text"><strong>[7t]</strong> endnote text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-literal-text-or-code"><strong>[8t]</strong> literal text or code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-topic"><strong>[9t]</strong> topic</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-html-markup"><strong>[10t]</strong> HTML markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-latex-markup"><strong>[11t]</strong> LaTeX markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-restructuredtext-code"><strong>[12t]</strong> reStructuredText code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-python-code"><strong>[13t]</strong> Python code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-layout"><strong>[11t]</strong> Layout</a></li>
 </ul>
   </nav></div>
 

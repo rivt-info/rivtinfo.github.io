@@ -19,15 +19,15 @@ rv.R        _[[MACOS]] label, *wait;nowait*         :ref:`mactag`
 rv.R        _[[LINUX]] label, *wait;nowait*         :ref:`linuxtag`
 rv.I, V     _[[INDENT]] spaces (4 default)          :ref:`indenttag`
 rv.I, V     _[[ITALIC]] spaces (4 default)          :ref:`italictag`
-rv.I, V     _[[ENDNOTES]] optional label            Endnote descriptions (all)
-rv.I, V     _[[TEXT]] optional language             *literal*, code (all)
-rv.I, V     _[[TOPIC]] topic                        Topic (all)
+rv.I, V     _[[ENDNOTES]] optional label            :ref:`notestag`
+rv.I, V     _[[TEXT]] optional language             :ref:`codetag`
+rv.I, V     _[[TOPIC]] topic                        :ref:`topictag`
 rv.V        _[[VALUES]] table title, rows (_[T])    Define values(all)
-rv.T        _[[PYTHON]] label, *rvspace*;newspace   Python script (all)
-rv.T        _[[LATEX]] label                        LaTeX markup (pdf,html)[1]
-rv.T        _[[HTML]] label                         HTML markup (html)
-rv.T        _[[RST]] label                          RST markup (pdf,html)
-rv.D        _[[LAYOUT]] label                       Doc format settings (all)
+rv.T        _[[PYTHON]] label, *rvspace*;newspace   :ref:`pythontag`
+rv.T        _[[LATEX]] label                        :ref:`latexblktag` [1]
+rv.T        _[[HTML]] label                         :ref:`htmltag`
+rv.T        _[[RST]] label                          :ref:`rsttag`
+rv.D        _[[LAYOUT]] label                       :ref:`layouttag` 
 all         _[[END]]                                End block (all)
 ========== ======================================= ==============================
 
@@ -48,9 +48,10 @@ all         _[[END]]                                End block (all)
   batch command
   batch command
   ...
-   _[[Q]]
+   _[[END]]
 
-text, pdf, html
+API: Run
+docs: text, pdf, html
 
 .. _mactag:
 
@@ -67,9 +68,10 @@ text, pdf, html
   shell command
   shell command
   ...
-   _[[Q]]
+   _[[END]]
 
-text, pdf, html
+API: Run
+docs: text, pdf, html
 
 .. _linuxtag:
 
@@ -86,21 +88,22 @@ text, pdf, html
   shell command
   shell command
   ...
-   _[[Q]]
+   _[[END]]
 
-text, pdf, html
+API: Run
+docs: text, pdf, html
 
 
 .. _indenttag:
 
-**[5t]** indent text block
+**[5t]** indent text
 ----------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic::  _[[INDENT]] number of spaces
+.. topic::  _[[INDENT]] spaces
 
     ::
 
@@ -108,13 +111,16 @@ text, pdf, html
         text
         text
         ...
-        _[[QUIT]]
+        _[[END]]
 
 Indents text four spaces.
 
+API: Insert, Values
+docs: text, pdf, html
+
 .. _italictag:
 
-**[6t]** indent italic
+**[6t]** indent italic text
 ------------------------------------------------
 
 .. raw:: html
@@ -129,18 +135,15 @@ Indents text four spaces.
         text
         text
         ...
-        _[[QUIT]]
+        _[[END]]
 
 Indents the specified number spaces and italicizes block.
 
 outputs: pdf, html
 
-.. raw:: html
+.. _notestag:
 
-    <p style="text-align: right;"> &lt;i&gt; </p>
-
-
-**[17t]** endnote text
+**[7t]** endnote text
 -------------------------------------------    
 
 .. raw:: html
@@ -148,20 +151,25 @@ outputs: pdf, html
     <hr>
 
 
-.. topic:: _[[NOTE]] 
+.. topic:: _[[NOTE]]  reference label
     
     ::
    
-        _[[NOTE]]
+        _[[NOTE]] aci endnotes
         this is an endnote - assigned to an endnote tag [#] in order of
         of processing.
-        _[[QUIT]] 
+
+        this is a second endnote separated by a blank line.
+        ...
+        _[[END]] 
 
 Formats and numbers an endnote in order of processing.
 
 outputs: text, pdf, html
 
-**[18t]** literal text or code
+.. _codetag:
+
+**[8t]** literal text or code
 ------------------------------------------------
 
 .. raw:: html
@@ -176,14 +184,17 @@ outputs: text, pdf, html
         print("some text")
         b = 3 + 5
         ...
-        _[[QUIT]]
+        _[[END]]
 
-This block formats text as literal or code. The parameters specify formatting
-and syntax coloring. Languages include: - *python* - *bash* - *sh* - *cmd*
+This block formats text as literal text or code. The parameters 
+specify formatting and syntax coloring. Languages 
+include: - *python* - *bash* - *sh* - *cmd*
 
 outputs: text, pdf, html
 
-**[19t]** _[[TOPIC]] : topic
+.. _topictag:
+
+**[9t]** topic
 ------------------------------------------------
 
 .. raw:: html
@@ -200,11 +211,13 @@ outputs: text, pdf, html
         ...
         _[[QUIT]]
 
-Formats a highlighted block.
+Formats a highlighted topic block.
 
-outputs: pdf, html
+outputs: text, pdf, html
 
-**[2t]** _[[HTML]] : HTML markup
+.. _htmltag:
+
+**[10t]** HTML markup
 ---------------------------------------
 
 .. raw:: html
@@ -223,7 +236,9 @@ Inserts HTML into *doc*.
 
 outputs: text, pdf, html
 
-**[3t]** _[[LATEX]] : LaTeX markup
+.. _latexblktag:
+
+**[11t]** LaTeX markup
 ------------------------------------------------
 
 .. raw:: html
@@ -243,7 +258,9 @@ Inserts TeX into *doc*.  May require installation of LaTeX.
 
 outputs: text, pdf, html
 
-**[4t]** _[[RST]] : reStructuredText code
+.. _rsttag:
+
+**[12t]** reStructuredText code
 ------------------------------------------------
 
 .. raw:: html
@@ -263,7 +280,9 @@ Inserts TeX into *doc*.  May require installation of LaTeX.
 
 outputs: text, pdf, html
 
-**[5t]** _[[PYTHON]] : Python code
+.. _pythontag:
+
+**[13t]** Python code
 ------------------------------------------------
 
 .. raw:: html
@@ -283,149 +302,9 @@ File paths in the script are relative to the *rivt file* folder.
 
 outputs: text, pdf, html
 
-**[2]** _[[WIN]] : batch commands
-------------------------------------
+.. _layouttag:
 
-.. raw:: html
-
-    <hr>
-
-.. code-block:: text
-    
-  _[[WIN]] *nowait;wait*
-  batch command
-  batch command
-  ...
-   _[[Q]]
-
-text, pdf, html
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[3]** _[[MACOS]] : shell commands
---------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. code-block:: text
-    
-  _[[MACOS]] *nowait;wait*
-  shell command
-  shell command
-  ...
-   _[[Q]]
-
-text, pdf, html
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[4]** _[[LINUX]] : shell commands 
----------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. code-block:: text
-    
-  _[[LINUX]] *nowait;wait*
-  shell command
-  shell command
-  ...
-   _[[Q]]
-
-text, pdf, html
-
-**[17t]** endnote text
--------------------------------------------    
-
-.. raw:: html
-
-    <hr>
-
-
-.. topic:: _[[NOTE]] 
-    
-    ::
-   
-        _[[NOTE]]
-        this is an endnote - assigned to an endnote tag [#] in order of
-        of processing.
-        _[[QUIT]] 
-
-Formats and numbers an endnote in order of processing.
-
-outputs: text, pdf, html
-
-**[18t]** literal text or code
-------------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic::  _[[TEXT]] language;*literal*
-
-    ::
-        
-        _[[TEXT]] python
-        print("some text")
-        b = 3 + 5
-        ...
-        _[[QUIT]]
-
-This block formats text as literal or code. The parameters specify formatting
-and syntax coloring. Languages include: - *python* - *bash* - *sh* - *cmd*
-
-outputs: text, pdf, html
-
-**[19t]** _[[TOPIC]] : topic
-------------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic::  _[[TOPIC]] topic title
-
-    ::
-        
-        _[[TOPIC]] topic title
-        text
-        text
-        ...
-        _[[QUIT]]
-
-Formats a highlighted block.
-
-outputs: pdf, html
-
-**[2t]** _[[HTML]] : HTML markup
----------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. code-block:: text
-        
-     _[[HTML]] label
-     markup
-     markup
-     ...
-     _[[QUIT]]
-
-Inserts HTML into *doc*. 
-
-outputs: text, pdf, html
-
-**[3t]** _[[LATEX]] : LaTeX markup
+**[11t]** Layout 
 ------------------------------------------------
 
 .. raw:: html
@@ -434,7 +313,7 @@ outputs: text, pdf, html
 
 .. code-block:: text
         
-    _[[LATEX]] label
+    _[[LAYOUT]] label
     markup
     markup
     ...
@@ -442,45 +321,5 @@ outputs: text, pdf, html
 
 
 Inserts TeX into *doc*.  May require installation of LaTeX.
-
-outputs: text, pdf, html
-
-**[4t]** _[[RST]] : reStructuredText code
-------------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. code-block:: text
-        
-    _[[RST]] label
-    markup
-    markup
-    ...
-    _[[END]]
-
-
-Inserts TeX into *doc*.  May require installation of LaTeX.
-
-outputs: text, pdf, html
-
-**[5t]** _[[PYTHON]] : Python code
-------------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. code-block:: text
-     
-      _[[PYTHON]] *rv-namespace*; user namespace
-      code
-      code
-      ...
-      _[[END]]
-
-Executes Python script in the *rivt namespace* or a user specified namespace.
-File paths in the script are relative to the *rivt file* folder.
 
 outputs: text, pdf, html

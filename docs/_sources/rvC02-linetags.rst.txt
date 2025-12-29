@@ -10,24 +10,24 @@
 
 Format a line of text.
   
-=============  ======================================= =======================
+=============  ========================================= =======================
 API Scope             Line Tags                            Description 
-=============  ======================================= =======================
-rv.I, V                    text _[#] text               :ref:`notetag`  
-rv.I, V                    text _[C]                    :ref:`centertag` 
-rv.I, V                    text _[R]                    :ref:`righttag` 
-rv.I                 latex math _[L]                    :ref:`latextag` 
-rv.I                 ascii math _[A]                    :ref:`asciitag`
-rv.I, V          equation label _[E]                    :ref:`equatag`
-rv.I, V                   title _[T]                    :ref:`tabletag` [1]
-rv.I, V          section anchor _[N]                    :ref:`anchortag`
-rv.I, V                    text _[M] term link          :ref:`termtag`
-rv.I, V                    text _[S] section link       :ref:`sectiontag`
-rv.I, V                    text _[D] doc link           :ref:`doctag`
-rv.I, V                    text _[U] external url       :ref:`urltag`   
-rv.I, V          \-\-\-\-\-                             :ref:`linetag` [2]
-rv.I, V          \=\=\=\=\=                             :ref:`pagetag` [2]
-=============  ======================================= =======================
+=============  ========================================= =======================
+rv.I, V                    text _[#] text                 :ref:`notetag`  
+rv.I, V                    text _[C]                      :ref:`centertag` 
+rv.I, V                    text _[R]                      :ref:`righttag` 
+rv.I                 latex math _[L]                      :ref:`latextag` 
+rv.I                 ascii math _[M]                      :ref:`asciitag`
+rv.I, V          equation label _[E]                      :ref:`equatag`
+rv.I, V                   title _[T]                      :ref:`tabletag` [1]
+rv.I, V          section anchor _[A]                      :ref:`anchortag`
+rv.I, V                    text _[G] glossary term link   :ref:`termtag`
+rv.I, V                    text _[S] section link         :ref:`sectiontag`
+rv.I, V                    text _[D] doc link             :ref:`doctag`
+rv.I, V                    text _[U] external url         :ref:`urltag`   
+rv.I, V          \-\-\-\-\-                               :ref:`linetag` [2]
+rv.I, V          \=\=\=\=\=                               :ref:`pagetag` [2]
+=============  ========================================= =======================
 
 [1] tag may be added to the label parameter in the TABLE commands
 
