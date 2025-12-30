@@ -34,11 +34,15 @@ section anchor _[A]                                  :ref:`anchortag`
     \=\=\=\=\=                                       :ref:`pagetag` [2]
 =========================================== =======================================
 
+.. highlight:: none
+
 ::
 
     [1] tag may be added to the label parameter in the TABLE commands
     [2] must start in first indented column (absolute column 4)
 
+::
+    
 **Format a block of text**
 
 ======================================= ==============================
