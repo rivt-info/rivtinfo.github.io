@@ -477,7 +477,7 @@ after execution.</p>
 </pre></div>
 </div>
 </aside>
-<p>Indents text four spaces.</p>
+<p>Indents block text four spaces.</p>
 <p>API: Insert, Values
 docs: text, PDF, HTML</p>
 </section>
@@ -518,7 +518,7 @@ docs: text, PDF, HTML</p>
 <section id="t-literal-text-or-code">
 <span id="codetag"></span><h2><strong>[6t]</strong> literal text or code<a class="headerlink" href="#t-literal-text-or-code" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">_[[TEXT]] language;*literal*</p>
+<p class="topic-title">_[[TEXT]] language</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">TEXT</span><span class="p">]]</span> <span class="n">python</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;some text&quot;</span><span class="p">)</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">5</span>
@@ -527,9 +527,17 @@ docs: text, PDF, HTML</p>
 </pre></div>
 </div>
 </aside>
-<p>This block formats text as literal text or code. The parameters
-specify formatting and syntax coloring. Languages
-include: - <em>python</em> - <em>bash</em> - <em>sh</em> - <em>cmd</em></p>
+<p>The TEXT command reads and formats text and code files. The language parameter
+specifies formatting and syntax coloring.  Languages include:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><em>literal</em></p></li>
+<li><p><em>python</em></p></li>
+<li><p><em>bash</em></p></li>
+<li><p><em>sh</em></p></li>
+<li><p><em>cmd</em></p></li>
+</ul>
+</div></blockquote>
 <p>API: Insert, Values
 docs: text, PDF, HTML</p>
 </section>
@@ -551,7 +559,7 @@ docs: text, PDF, HTML</p>
 </section>
 <section id="t-python-code">
 <span id="pythontag"></span><h2><strong>[8t]</strong> Python code<a class="headerlink" href="#t-python-code" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[PYTHON]] *rv-namespace*; user namespace
+<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[PYTHON]] *rvspace*; user namespace
 code
 code
 ...
@@ -565,16 +573,17 @@ docs: text, PDF, HTML</p>
 </section>
 <section id="t-markup-scripts">
 <span id="scripttag"></span><h2><strong>[9t]</strong> markup scripts<a class="headerlink" href="#t-markup-scripts" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[HTML]] optional label
+<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[SCRIPT]] *html;latex;rst*
 markup
 markup
 ...
 _[[END]]
 </pre></div>
 </div>
-<p>Inserts HTML into <em>doc</em>.</p>
+<p>Inserts HTML into and HTML <em>doc</em>, LaTeX into a PDF <em>doc</em>, and reStructuredText
+into either PDF or HTML.</p>
 <p>API: Doc
-docs: text, PDF, HTML</p>
+docs: PDF, HTML</p>
 </section>
 <section id="t-layout">
 <span id="layouttag"></span><h2><strong>[10t]</strong> Layout<a class="headerlink" href="#t-layout" title="Link to this heading">#</a></h2>
@@ -585,7 +594,7 @@ footerL = []
 _[[END]]
 </pre></div>
 </div>
-<p>Inserts TeX into <em>doc</em>.  May require installation of LaTeX.</p>
+<p>Overrides default layout settings.</p>
 <p>API: Doc
 docs: text, PDF, HTML</p>
 </section>

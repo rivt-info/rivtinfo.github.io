@@ -182,7 +182,7 @@ docs: text, PDF, HTML
 
 .. _valcmd:
 
-**[7t]** | VALUES | : table title
+**[7t]**  import values
 ------------------------------------------------
 
 .. raw:: html
@@ -194,9 +194,11 @@ docs: text, PDF, HTML
         
     | VALUES | src/data/newvals.csv | show
 
-Defines values and writes them to *out* folder.
+Defines values and writes them to */store/vals* folder.
 
-outputs: pdf, html
+API: Insert, Values
+file types: .txt, .py, .cmd, .sh, .bash
+docs: text, PDF, HTML
 
 .. _defcmd:
 
@@ -215,7 +217,9 @@ Defines a value and writes to a file *vnum-s.csv* where *num* is the *doc
 number* and *s* is the section number. The file is written to the folder
 *out/values* unless *rv_localB* is set to *True* in the *Meta API function*.
   
-outputs: text, PDF, HTML
+API: Insert, Values
+file types: .txt, .py, .cmd, .sh, .bash
+docs: text, PDF, HTML
 
 .. _asscmd:
 
@@ -237,12 +241,14 @@ values to a file *vnum-s.csv* where *num* is the *doc number* and *s* is the
 section number. The file is written to the folder *out/values* unless
 *rv_localB* is set to *True* in the *Meta API function*.
   
-outputs: text, PDF, HTML
+API: Insert, Values
+file types: .txt, .py, .cmd, .sh, .bash
+docs: text, PDF, HTML
 
 
 .. _pycmd:
 
-**[10t]** | PYTHON | Python script
+**[10t]** import Python script
 -------------------------------------------
 
 .. raw:: html
@@ -256,11 +262,13 @@ outputs: text, PDF, HTML
 Executes Python code in the *rivt namespace* or user specified namespace. File
 paths used in the script are relative to the *rivt file* folder.
 
-outputs: text, PDF, HTML
+API: Insert, Values
+file types: .txt, .py, .cmd, .sh, .bash
+docs: text, PDF, HTML
 
 .. _scriptcmd:
 
-**[11t]** 
+**[11t]**  import tool script
 -------------------------------------------
 
 .. raw:: html
@@ -272,6 +280,10 @@ outputs: text, PDF, HTML
     | SCRIPT | page1.html | code excerpt
 
 Reads and inserts .tex files into *doc*. May require installation of LaTeX.
+
+API: Insert, Values
+file types: .txt, .py, .cmd, .sh, .bash
+docs: text, PDF, HTML
 
 .. _appcmd:
 
@@ -288,8 +300,9 @@ Reads and inserts .tex files into *doc*. May require installation of LaTeX.
 
 Reads and inserts .html and .htm files into *doc*. 
 
-
-Reads and inserts .tex files into *doc*. May require installation of LaTeX... _scriptcmd:
+API: Insert, Values
+file types: .txt, .py, .cmd, .sh, .bash
+docs: text, PDF, HTML
 
 .. _pubcmd:
 
@@ -306,6 +319,7 @@ Reads and inserts .tex files into *doc*. May require installation of LaTeX... _s
 
 Reads and inserts .html and .htm files into *doc*. 
 
-
-Reads and inserts .tex files into *doc*. May require installation of LaTeX.
+API: Insert, Values
+file types: .txt, .py, .cmd, .sh, .bash
+docs: text, PDF, HTML
 

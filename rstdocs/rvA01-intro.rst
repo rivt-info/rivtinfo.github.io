@@ -64,7 +64,7 @@ Jupyter        no       no         no      yes         yes      yes
 
 The *rivtlib* package implements an API designed to be:
 
-- **lightweight** - the syntax includes less than 3 dozen tags and commands.
+- **lightweight** - the syntax includes 3 dozen tags and commands.
   
 - **extensible** - it is written in Python with direct access to 
    thousands of Python packages.

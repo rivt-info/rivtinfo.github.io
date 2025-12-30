@@ -81,7 +81,7 @@ after execution.
         ...
         _[[END]]
 
-Indents text four spaces.
+Indents block text four spaces.
 
 API: Insert, Values
 docs: text, PDF, HTML
@@ -146,7 +146,7 @@ docs: text, PDF, HTML
 
     <hr>
 
-.. topic::  _[[TEXT]] language;*literal*
+.. topic::  _[[TEXT]] language
 
     ::
         
@@ -156,9 +156,14 @@ docs: text, PDF, HTML
         ...
         _[[END]]
 
-This block formats text as literal text or code. The parameters 
-specify formatting and syntax coloring. Languages 
-include: - *python* - *bash* - *sh* - *cmd*
+The TEXT command reads and formats text and code files. The language parameter
+specifies formatting and syntax coloring.  Languages include:
+
+    - *literal*
+    - *python*
+    - *bash*
+    - *sh*
+    - *cmd*
 
 API: Insert, Values
 docs: text, PDF, HTML
@@ -198,7 +203,7 @@ docs: text, PDF, HTML
 
 .. code-block:: text
      
-      _[[PYTHON]] *rv-namespace*; user namespace
+      _[[PYTHON]] *rvspace*; user namespace
       code
       code
       ...
@@ -221,16 +226,18 @@ docs: text, PDF, HTML
 
 .. code-block:: text
         
-     _[[HTML]] optional label
+     _[[SCRIPT]] *html;latex;rst*
      markup
      markup
      ...
      _[[END]]
 
-Inserts HTML into *doc*. 
+Inserts HTML into and HTML *doc*, LaTeX into a PDF *doc*, and reStructuredText
+into either PDF or HTML. 
+ 
 
 API: Doc
-docs: text, PDF, HTML
+docs: PDF, HTML
 
 .. _layouttag:
 
@@ -250,7 +257,7 @@ docs: text, PDF, HTML
     _[[END]]
 
 
-Inserts TeX into *doc*.  May require installation of LaTeX.
+Overrides default layout settings.
 
 API: Doc
 docs: text, PDF, HTML
