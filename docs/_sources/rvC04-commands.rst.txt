@@ -52,7 +52,7 @@ The *os* parameter specifies the operating system: *win*, *mac* or *linux*.
 The *wait; nowait* specifies whether rivt file processing waits for the
 script to complete before continuing.
 
-If the doc is part of a report and no path is specified, the file is assumed to
+If the *doc* is part of a report and no path is specified, the file is assumed to
 be in the default folder */src/run/* . Otherwise the path is specified relative
 to the report root (rivt file folder) If the doc is a single doc the file is
 read from the rivt file folder.

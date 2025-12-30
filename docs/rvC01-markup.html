@@ -432,63 +432,74 @@ below, the default setting for each API is listed first (in bold).</p>
 <thead>
 <tr class="row-odd"><th class="head"><p>API</p></th>
 <th class="head"><p>private;public</p></th>
-<th class="head"><p>print;store</p></th>
+<th class="head"><p>include;store</p></th>
 <th class="head"><p>section;merge</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>rv.R</p></td>
 <td><p><strong>private</strong>;public</p></td>
-<td><p><strong>store</strong>;print</p></td>
+<td><p><strong>store</strong>;include</p></td>
 <td><p><strong>merge</strong>;section</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I</p></td>
 <td><p><strong>private</strong>;public</p></td>
-<td><p><strong>print</strong>;store</p></td>
+<td><p><strong>include</strong>;store</p></td>
 <td><p><strong>section</strong>;merge</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.V</p></td>
 <td><p><strong>private</strong>;public</p></td>
-<td><p><strong>print</strong>;store</p></td>
+<td><p><strong>include</strong>;store</p></td>
 <td><p><strong>section</strong>;merge</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.T</p></td>
 <td><p><strong>private</strong>;public</p></td>
-<td><p><strong>store</strong>;print</p></td>
+<td><p><strong>store</strong>;include</p></td>
 <td><p><strong>merge</strong>;section</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.D</p></td>
 <td><p><strong>private</strong>;public</p></td>
-<td><p><strong>store</strong>;print</p></td>
-<td><p><strong>merge</strong>;section</p></td>
+<td><p><strong>store</strong></p></td>
+<td><p><strong>merge</strong></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.S</p></td>
 <td><p><strong>private</strong>;public</p></td>
-<td><p><strong>store</strong>;print</p></td>
+<td><p><strong>store</strong>;include</p></td>
 <td><p><strong>merge</strong>;section</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.X</p></td>
-<td><p><strong>private</strong>;public</p></td>
-<td><p><strong>store</strong>;print</p></td>
-<td><p><strong>merge</strong>;section</p></td>
+<td><p><strong>private</strong></p></td>
+<td><p><strong>store</strong></p></td>
+<td><p><strong>merge</strong></p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <p>Examples of <em>header</em> settings are shown below.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;A New Section | private, show, section</span>
+<p><strong>An example with explicit defaults that do not have to be declared</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;A New Section | private, include, section</span>
 
-<span class="s2">    Section text (utf-8 text)</span>
+<span class="s2">    Content text (utf-8 text)</span>
+
+<span class="s2">    ...</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="c1"># Equivalent to:</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;A New Section |</span>
+
+<span class="s2">    Content text (utf-8 text)</span>
 
 <span class="s2">    ...</span>
 
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>For the <em>Insert API</em> - rv.I(), the following syntax is equivalent:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;A New Section</span>
+<p><strong>An example that merges a section to the previous section</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;A Merged Section | merge</span>
 
-<span class="s2">    Section text (utf-8)</span>
+<span class="s2">    Content text (utf-8)</span>
 
 <span class="s2">    ...</span>
 
@@ -496,14 +507,15 @@ below, the default setting for each API is listed first (in bold).</p>
 </pre></div>
 </div>
 </section>
-<section id="t-section-text">
-<h2><strong>[3t]</strong> Section Text<a class="headerlink" href="#t-section-text" title="Link to this heading">#</a></h2>
-<hr><p>Section text is indented four spaces for legibility and code folding. It
-includes <em>rivt tags</em> that format lines of text and <em>rivt commands</em> that operate
-on files.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | write; nowrite, public; private</span>
+<section id="t-content-text">
+<h2><strong>[3t]</strong> Content Text<a class="headerlink" href="#t-content-text" title="Link to this heading">#</a></h2>
+<hr><p><a class="reference internal" href="rvA02-terms.html#term-content-text"><span class="xref std std-term">Content text</span></a> is indented four spaces for legibility and code folding.
+It arbitrary text along with <a class="reference internal" href="rvC02-linetags.html"><span class="doc">line tags</span></a>,
+<a class="reference internal" href="rvC03-blocktags.html"><span class="doc">block tags</span></a> and
+<a class="reference internal" href="rvC04-commands.html"><span class="doc">commands</span></a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label |</span>
 
-<span class="s2">    Section text</span>
+<span class="s2">    Content text</span>
 <span class="s2">    ...</span>
 
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
@@ -645,7 +657,7 @@ and license information and forks.</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rivt-string"><strong>[1t]</strong> rivt String</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-api-header"><strong>[2t]</strong> API Header</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-section-text"><strong>[3t]</strong> Section Text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-content-text"><strong>[3t]</strong> Content Text</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-tags-and-commands"><strong>[4t]</strong> Tags and Commands</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-markup-key"><strong>[5t]</strong> Markup Key</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-metadata"><strong>[6t]</strong> Metadata</a></li>

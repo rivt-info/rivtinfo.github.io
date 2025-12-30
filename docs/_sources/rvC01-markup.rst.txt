@@ -57,58 +57,72 @@ Default settings do not need to be specified in the *header*. In the table
 below, the default setting for each API is listed first (in bold).
  
 ========== ===================== ==================== =====================
-API          private;public         print;store           section;merge         
+API          private;public         include;store        section;merge         
 ========== ===================== ==================== ===================== 
-rv.R        **private**;public      **store**;print     **merge**;section
-rv.I        **private**;public      **print**;store     **section**;merge   
-rv.V        **private**;public      **print**;store     **section**;merge    
-rv.T        **private**;public      **store**;print     **merge**;section
-rv.D        **private**;public      **store**;print     **merge**;section
-rv.S        **private**;public      **store**;print     **merge**;section
-rv.X        **private**;public      **store**;print     **merge**;section
+rv.R        **private**;public     **store**;include     **merge**;section
+rv.I        **private**;public     **include**;store     **section**;merge   
+rv.V        **private**;public     **include**;store     **section**;merge    
+rv.T        **private**;public     **store**;include     **merge**;section
+rv.D        **private**;public     **store**             **merge**
+rv.S        **private**;public     **store**;include     **merge**;section
+rv.X        **private**            **store**             **merge**
 ========== ===================== ==================== ===================== 
 
 
 Examples of *header* settings are shown below.
 
+**An example with explicit defaults that do not have to be declared**
+
 .. code-block:: python
 
-    rv.I("""A New Section | private, show, section
+    rv.I("""A New Section | private, include, section
 
-        Section text (utf-8 text)
+        Content text (utf-8 text)
+  
+        ...
+        
+        """)
+    
+    # Equivalent to:
+
+    rv.I("""A New Section | 
+
+        Content text (utf-8 text)
   
         ...
         
         """)
 
-For the *Insert API* - rv.I(), the following syntax is equivalent:
+
+**An example that merges a section to the previous section**
 
 .. code-block:: python
 
-    rv.I("""A New Section
+    rv.I("""A Merged Section | merge
 
-        Section text (utf-8)
+        Content text (utf-8)
 
         ...
         
         """)
 
-**[3t]** Section Text 
+**[3t]** Content Text 
 --------------------------
 
 .. raw:: html
 
     <hr>
 
-Section text is indented four spaces for legibility and code folding. It
-includes *rivt tags* that format lines of text and *rivt commands* that operate
-on files.
+:term:`Content text` is indented four spaces for legibility and code folding.
+It arbitrary text along with :doc:`line tags<rvC02-linetags>`, 
+:doc:`block tags<rvC03-blocktags>` and 
+:doc:`commands<rvC04-commands>`.
 
 .. code-block:: python
 
-    rv._("""Section Label | write; nowrite, public; private
+    rv._("""Section Label | 
 
-        Section text
+        Content text
         ...
         
         """)

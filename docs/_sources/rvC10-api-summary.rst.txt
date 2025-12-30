@@ -53,7 +53,9 @@ rv.X(rS)           Quit              Exit rivt
 **[3t]** API Headers
 ------------------------
 
-The :term:`API headers` inlcude processing settings for 11111111the section.
+The :term:`API headers` inlcude processing settings for the section. 
+Default settings do not need to be specified in the *header*. In the table
+below, the default setting for each API is listed first (in bold).
 
 ========== ===================== ==================== =====================
 API          private;public         include;store        section;merge         
@@ -64,7 +66,7 @@ rv.V        **private**;public     **include**;store     **section**;merge
 rv.T        **private**;public     **store**;include     **merge**;section
 rv.D        **private**;public     **store**             **merge**
 rv.S        **private**;public     **store**;include     **merge**;section
-rv.X        **private**;public     **store**;include     **merge**;section
+rv.X        **private**            **store**             **merge**
 ========== ===================== ==================== ===================== 
 
 **[4t]** Folders

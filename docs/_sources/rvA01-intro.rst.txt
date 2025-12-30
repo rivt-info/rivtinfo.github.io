@@ -84,20 +84,20 @@ the four functions that generate document content.
 =============== =============== ===========================================
 API Function        Name             Purpose
 =============== =============== ===========================================
-rv.R(rS)           **R** un           Run shell commands
-rv.I(rS)           **I** nsert        Insert static resources 
-rv.V(rS)           **V** alues        Calculate values
-rv.T(rS)           **T** ools         Python and markup scripts
+rv.R(rS)           **R** un          Run shell commands
+rv.I(rS)           **I** nsert       Insert static resources 
+rv.V(rS)           **V** alues       Calculate values
+rv.T(rS)           **T** ools        Python and markup scripts
 rv.D(rS)           Doc               Publish docs 
 rv.S(rS)           Skip              Skip section
 rv.X(rS)           Exit              Exit rivt (rivt string not processed)
 =============== =============== ===========================================
 
-Each API function takes a single :term:`rivt string` argument as input and
-outputs text or restructuredText that is further processed into
-text, HTML and PDF output files, referred to as :term:`rivt docs`. Indiviudal 
-API functions can be processed interactively as cells in IDE's e.g. VSCode or
-Spyder.
+Each API function takes a single :term:`rivt string` argument (rS) as input and
+outputs text or restructuredText that is further processed into a
+text, HTML and PDF output file, referred to as :term:`rivt doc`. Indiviudal 
+API functions can also be processed interactively as cells in an IDE e.g. 
+VSCode or Spyder.
 
 The four functions that generate *doc* content are:
 
@@ -117,27 +117,10 @@ The remaining three functions are for processing and debugging:
 
     The *Exit API* can be used for interactive debugging.
 
-
-**[3t]** *rivt File*
---------------------------------------------------------------------- 
-
-.. raw:: html
-
-    <hr>
-
-A :term:`rivt file` is a Python plain text file (.py) that includes *rivt
-markup* and imports the :term:`rivtlib` API into the *rv* :term:`namespace`:
-
-.. code-block:: python
-
-    import rivtlib.rvapi as rv
+Most of a docs's content is written using the Insert and Value API's.
 
 
-Each *rivt file* outputs a formatted rivt :term:`doc` file as an text, PDF or
-HTML document. Reports are organized collections of *docs*.
-
-
-**[4t]** *rivt String*
+**[3t]** rivt String
 ------------------------------------------------------------------------ 
 
 .. raw:: html
@@ -163,10 +146,30 @@ Section text is plain text that includes :term:`rivt markup` and
 :term:`block tags` and :term:`commands`. See :doc:`Markup</rvC01-markup>` 
 for further details.
 
+**[4t]** rivt File
+--------------------------------------------------------------------- 
+
+.. raw:: html
+
+    <hr>
+
+A :term:`rivt file` is a Python plain text file (.py) that includes *rivt
+markup* and imports the :term:`rivtlib` API into the *rv* :term:`namespace`:
+
+.. code-block:: python
+
+    import rivtlib.rvapi as rv
+
+
+Each *rivt file* outputs a formatted rivt :term:`doc` file as an text, PDF or
+HTML document. Reports are organized collections of *docs*.
+
+
+
 .. _folderstruc:
 
 **[5t]**  Report Folder Structure
-----------------------------------
+-----------------------------------
 
 .. raw:: html
 
@@ -207,9 +210,9 @@ file paths used in *commands* are relative to the root.
         ...
 
         ├── [public]/                   || public rivt files 
-        ├── [publish]/                  || report and doc files
+        ├── [publish]/                  || doc and report files
         ├── [src]/                      |  source files 
-        ├── [stored]/                   || stored rivt files
+        ├── [stored]/                   || stored files from rivt
         └── README.txt                  || searchable text report 
 
 

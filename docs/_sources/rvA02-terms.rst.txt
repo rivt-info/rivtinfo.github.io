@@ -62,6 +62,10 @@
     The first line of a  *rivt string*. It includes a section title, followed 
     by comma separated parameters.
 
+  content
+  content text
+    The text in a rivt string that is not part of the header.
+  
   rivt
     An open source Python project that includes :term:`rivtlib` and approximately 
     two dozen :doc:`Python packages <rvB02-python>`. When *rivt* is installed
