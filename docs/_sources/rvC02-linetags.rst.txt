@@ -215,7 +215,7 @@ docs: text, PDF, HTML
 
 .. topic:: _[N] 
     
-    text _[N] anchorname
+    text **_[N]** anchorname
 
 Replaces anchorname with the section title that follows, and links to the
 anchor.
@@ -234,7 +234,7 @@ docs: text, PDF, HTML
 
 .. topic:: *text* _[D] doc link
     
-    text at end of line _[D] doc number, link label
+    text at end of line **_[D]** doc number, link label
 
 Links *docs* within a *report*. Text will be continued and wrapped when
 formatted.
@@ -253,7 +253,7 @@ docs: text, PDF, HTML
 
 .. topic:: _[U] 
     
-    text at end of line _[U] urlname, link label
+    text at end of line **_[U]** urlname, link label
 
 External url link. Text will be continued and wrapped when formatted.
 

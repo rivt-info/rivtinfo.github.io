@@ -220,19 +220,10 @@ file types
 
     <hr>
 
-*Metadata* is stored in the file *rivtmeta.py*. If used, it is imported prior
-to *rivtlib* and provides author information and specifies whether the *rivt
-file* is a single doc or part of report. Metadata is specified using standard
-Python data types. See :doc:`here <rvC01-markup>` for further details.
-    
-=================== ==========================================================
-    Variable                        Description
-=================== ==========================================================
-:term:`rv_authD`     specifies author information
-:term:`rv_localB`    True; False [default] if True resource files are local
-=================== ==========================================================
+*Metadata* is written to the *api-log.py* file. Metadata is specified using
+standard Python data types. 
 
-*rv_authD* is a dictionary that pecifies the author, version, email, repository
+*rv_authD* is a dictionary that specifies the author, version, email, repository
 and license information and forks. 
 
 ..  code-block:: python
@@ -256,19 +247,6 @@ and license information and forks.
             "repo": "https://github.com/rivt-info/rivt-simple-doc",
             "license": "https://opensource.org/license/mit/",
             }
-
-*rv_localB* overrides the default report structure and specifies that all
-resource files are read from and written to the *rivt file* folder instead of
-*rivt folders*. It is intended for simple, *single docs* with more limited
-formatting options.
-
-..  code-block:: python
-
-     # default setting uses report folders
-     rv_localB = false
-     
-     # resource files are read from and written to the rivt file folder
-     rv_localB = true
 
 .. toctree::
     :maxdepth: 1

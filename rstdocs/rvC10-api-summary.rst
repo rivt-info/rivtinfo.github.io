@@ -1,8 +1,34 @@
 **C.10 API Summary**
 =======================
 
+**[1t]** API Import
+------------------------
 
-**[1t]** API Functions
+The API is imported using the import statement:
+
+..  code-block:: python
+
+    import rivt.rivtlib as rv
+
+Following the import statement, optional variables may be set.
+
+..  code-block:: python
+
+     # rv singledocB=True
+
+*singledocB* overrides the default report structure and specifies that
+resource files are read from and written to the *rivt file* folder instead of
+*rivt folders*. It is intended for simple, *single docs* with more limited
+formatting options. The default is *False*.
+
+..  code-block:: python
+
+     # rv docNameS=new doc name
+
+*docNameS* overrides the default doc name taken from the rivt file name.
+
+
+**[2t]** API Functions
 ------------------------
 
 .. raw:: html
@@ -24,7 +50,7 @@ rv.X(rS)           Quit              Exit rivt
 =============== =============== =========================================
 
 
-**[2t]** API Headers
+**[3t]** API Headers
 ------------------------
 
 The :term:`API headers` inlcude processing settings for 11111111the section.
@@ -41,7 +67,7 @@ rv.S        **private**;public     **store**;include     **merge**;section
 rv.X        **private**;public     **store**;include     **merge**;section
 ========== ===================== ==================== ===================== 
 
-**[3t]** Folders
+**[4t]** Folders
 -------------------
 
 .. raw:: html
@@ -199,76 +225,4 @@ Folders organize files in standard locations to generate *docs* and *reports*
                 └── v102-3.csv        
         └── README.txt                         || searchable text report 
 
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[4t]** Metadata
--------------------
-
-.. raw:: html
-
-    <hr>
-
-Two variable settings at the beginning of the file, immediately following the
-import statement, affect doc processing. The variables are defined in
-comments and are not indented.
-
-The first specifies the publishing of a *single doc*. The variable 
-*localB* overrides the default report structure and specifies that all 
-resource files are read from and written to the *rivt file* folder instead of 
-*rivt folders*. It is intended for single *docs* with limited formatting 
-requirements, rather than *docs* intended to be used as part of a report.
-
-The second variable (*docnameS*) overrides the doc name taken from the file name.
-
-..  code-block:: python
-
-     # default setting uses report folders
-     # rv localB = false
-     
-     # resource files are read from and written to the rivt file folder
-     # rv localB = true
-
-     # default setting uses report folders
-     # rv docnameS = new doc name
-
-
-Additional *metadata* is stored in the *api-log.txt* file and may be used in
-doc headers,footers and appendices. Metadata is specified in the Tools API
-using standard Python data types. See :doc:`here <rvC01-markup>` for further
-details.
-    
-=================== ==========================================================
-    Variable                        Description
-=================== ==========================================================
-:term:`rv_authD`     specifies author information
-:term:`rv_localB`    True; False [default] if True resource files are local
-=================== ==========================================================
-
-*rv_authD* is a dictionary that pecifies the author, version, email, repository
-and license information and forks. 
-
-..  code-block:: python
-
-    # default - author dictionary
-    rv_authD = {
-            "authorS": "",
-            "versionS": "0.0.0",
-            "emailS": "",
-            "repoS": "",
-            "licenseS": "https://opensource.org/license/mit/",
-            "fork1L": ["author", "version", "email", "repo"],
-            "fork2L": ["author", "version", "email", "repo"],
-            }
-
-    # example - author dicitionary
-    rv_authD = {
-            "authorS": "rholland",
-            "versionS": "0.6.1",
-            "emailS": "rod.h.holland@gmail.com",
-            "repoS": "https://github.com/rivt-info/rivt-simple-doc",
-            "licenseS": "https://opensource.org/license/mit/",
-            }
 
