@@ -225,7 +225,7 @@ docs: text, PDF, HTML
 
 .. _doctag:
 
-**[10t]** doc link
+**[12t]** doc link
 -----------------------------------------
 
 .. raw:: html
@@ -244,7 +244,7 @@ docs: text, PDF, HTML
 
 .. _urltag:
 
-**[11t]** external url
+**[13t]** external url
 -----------------------------------------
 
 .. raw:: html
@@ -262,7 +262,7 @@ docs: text, PDF, HTML
 
 ..  _linetag:
 
-**[13]** horizontal line
+**[14t]** horizontal line
 ------------------------------------------- 
 .. raw:: html
 
@@ -281,7 +281,7 @@ docs: text, PDF, HTML
 
 .. _pagetag:
 
-**[14t]** new page
+**[15t]** new page
 -----------------------------------------
 
 .. raw:: html

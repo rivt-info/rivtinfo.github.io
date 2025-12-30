@@ -212,7 +212,7 @@ docs: text, PDF, HTML
 Executes Python script in the *rivt namespace* or a user specified namespace.
 File paths in the script are relative to the *rivt file* folder.
 
-API: Doc
+API: Value, Tool
 docs: text, PDF, HTML
 
 .. _scripttag:
@@ -232,11 +232,11 @@ docs: text, PDF, HTML
      ...
      _[[END]]
 
-Inserts HTML into and HTML *doc*, LaTeX into a PDF *doc*, and reStructuredText
+Inserts HTML into an HTML *doc*, LaTeX into a PDF *doc*, and reStructuredText
 into either PDF or HTML. 
  
 
-API: Doc
+API: Tool
 docs: PDF, HTML
 
 .. _layouttag:
