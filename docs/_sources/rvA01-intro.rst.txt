@@ -64,12 +64,12 @@ Jupyter        no       no         no      yes         yes      yes
 
 The *rivtlib* package implements an API designed to be:
 
-- **lightweight** - the syntax includes about 3 dozen tags and commands.
+- **lightweight** - the syntax includes less than 3 dozen tags and commands.
   
 - **extensible** - it is written in Python with direct access to 
    thousands of Python packages.
 
-- **flexible** - it produces single docs or large reports in text, HTML and
+- **flexible** - it produces single *docs* or large reports in text, HTML and
   PDF formats from the same rivt file or files.
 
 The API implements a :ref:`folderstruc` and 7 API functions. The name 
@@ -85,7 +85,7 @@ rv.V(rS)           Values            Calculate values
 rv.T(rS)           Tools             Python and markup scripts
 rv.D(rS)           Doc               Publish docs 
 rv.S(rS)           Skip              Skip section
-rv.X(rS)           Exit              Exit rivt without processing section
+rv.X(rS)           Exit              Exit rivt (section no processed)
 =============== =============== ===========================================
 
 Each API function takes a single :term:`rivt string` argument
@@ -94,17 +94,17 @@ as input and outputs text, HTML and PDF output files, referred to as
 
 The functions that generate *doc* content include:
 
-    The *Run API* executes shell commands. 
+    The *Run API* which executes shell commands. 
     
-    The *Insert API* adds static table, image, equation and text content. 
+    The *Insert API* which adds static table, image, equation and text content. 
 
-    The *Value API* evaluates equations and functions. 
+    The *Value API* which evaluates equations and functions. 
 
-    The *Tool API* runs HTML, LaTeX, and Python scripts.
+    The *Tool API* which runs HTML, LaTeX, and Python scripts.
 
 The remaining three functions are used for processing and debugging.
 
-    The *Doc API* specifies the publication type and style. 
+    The *Doc API* specifies *doc* type and style and generates the *doc* file. 
     
     The *Skip API* can be used for interactive debugging and comments.
 

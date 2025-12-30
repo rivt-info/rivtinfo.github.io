@@ -8,88 +8,114 @@
 
     <hr>
 
-A primary motivation for *rivt* is to facilitate cooperative
-improvement of rivt fileswhy a, and a reduction of reptitive work. As 
-a Python open source project a number of tools are available to faciliate 
-these goals. 
+A primary motivation for *rivt* is to facilitate cooperative improvement of
+files and docs, and a reduction of reptitive work. As a Python open source
+project a number of tools are available to faciliate these goals. Cooperative
+work and community improvements can happen in a number of ways including:
 
-A feature of *rivt* is fine-grained control over sharing all or parts of a rivt
-file. Each section of a rivt file has a public/private setting that controls
-whether the section is written to a public file e.g. a file intended to be
-broadly shared. :doc:`Public rivt files</rvE02-publicrivt>` are stored in 
-a separate */public* folder which can be uploaded to a public repository. 
-Public rivt files can beidentifed by the different naming convention 
-e.g. rv-A01-filename.py in contrast with rvA01-filename for private files.
 
-Two external tools, the development platform GitHub and the opensoure IDE
-VSCode, have many collaboration features that work well with rivt files.
+Contribute to rivtlib at `rivtlib-dev <https://github.com/rivtlib-dev/rivtlib>`_ 
+and documentation at `rivt-info <https://github.com/rivt-in>`_
+
+- report issues and bugs
+- issue pull requests to propose changes
+- contribute to documentation
+
+Share and collaborate with others on rivt files of interest. Relevant projects
+can be found using the search interface :doc:`here <rvE03-ghsearch>`.
+
+- upload the *Public* rivt folder to public repositories such as *GitHub*
+- fork rivt files to create new versions
+- issue pull requests to propose changes
+- report issues and bugs
+- use an :term:`IDE` to edit code with others in real time
+
+:doc:`Public rivt files</rvE02-publicrivt>` are written to the */Public*
+folder which may be uploaded to a remote repository. *Public rivt
+files* are re-identified with the naming convention rv-A01-filename.py, in
+contrast with rvA01-filename for private files. After downloading a public rivt
+file, use *Batch Rename* to delete the hyphen after *rv* and convert it to a
+private rivt file.
+
+The development platform *GitHub* and the IDE *VSCode* are external tools that
+are part of the *rivt framework* and have collaboration features that work well
+with *rivt files*.
 
 **[2t]** Git and GitHub
 ------------------------
 
-GitHub supports the following formats and features:
+.. raw:: html
 
-- Documentation,including automatically rendered README files in a variety of
-  Markdown-like file formats (see README § On GitHub)
+    <hr>
 
-- Pages, a static web hosting service for blogs, project documentation,
-  and books.
+`Git <https://git-scm.com/>`_ is part of the *rivt framework*. It is a free,
+open-source, distributed version control system designed to manage and track
+changes in files. It allows multiple people to work on the same project
+simultaneously without overwriting each other's work.
 
-- Wikis, with some repositories consisting solely of wiki content. These
-  include curated lists of recommended software which have become known as
-  awesome lists.
+`GitHub <https://github.com/>`_ is also part of the *rivt framework*. It is a
+web-based platform for hosting, managing, and collaborating on code built
+around Git. It allows teams to work together efficiently on software projects
+and provides features like pull requests, issue tracking, and project
+management.
 
-- GitHub Actions, which allows building continuous integration and
-  continuous deployment pipelines for testing, releasing and deploying software
-  without the use of third-party websites/platforms
+Each *rivt project* is typically stored in its own repository. Every user of
+GitHub has a personal account with essentially unlimited repositories.Free
+accounts provide for:
 
-- GitHub Codespaces, an online IDE providing users with a virtual machine
-  intended to be a work environment to build and test code
+- Unlimited Repositories: You can create as many public and private
+  repositories as you need.
 
-- Graphs: pulse, contributors, commits, code frequency, punch card, network,
-  members
+- Unlimited Collaborators: There is no limit to the number of people you can
+  work with on your repositories.
 
-- Email notifications
+- Community Support: You have access to the GitHub Community Discussions for help.
 
-- Discussions
+- Core Services with Usage Limits: The free plan includes a certain amount of
+  monthly usage for services:
 
-- Nested task-lists within files
+  + GitHub Actions: 2,000 minutes per month for private repositories 
+      (unlimited for public repositories). 
+  
+  + GitHub Codespaces: 120 core hours and 15 GB of storage per month.
 
-- Visualization of geospatial data
+*GitHub Codespaces* is a VSCode cloud-based development environment connected
+to GitHub files. It can be set up with *rivt extensions* that provide a complete
+rivt editing and collaboration environment in the cloud.
 
-- image preview in many formats
-
-- Security Alerts of known Common Vulnerabilities and Exposures in different
-  packages
-
-- GitHub's Terms of Service do not require public software projects hosted on
-  GitHub to meet the Open Source Definition. The terms of service state, "By
-  setting your repositories to be viewed publicly, you agree to allow others to
-  view and fork your repositories."
-
-
-**[2t]** VSCode
+**[3t]** VSCode
 ------------------
 
 .. raw:: html
 
     <hr>
 
-VSCode is an open source IDE with a large set of extensions, some of which
-support collaboration. The primary purpose of GitHub is to facilitate the
-version control and issue tracking aspects of software development. Labels,
-milestones, responsibility assignment, and a search engine are available for
-issue tracking. For version control, Git (and, by extension, GitHub) allows
-pull requests to propose changes to the source code. Users who can review the
-proposed changes can see a diff between the requested changes and approve them.
-In Git terminology, this action is called "committing" and one instance of it
-is a "commit." A history of all commits is kept and can be viewed at a later
-time.
+`VSCode <https://code.visualstudio.com/>`_ is an open source IDE with a 
+large set of extensions, including collaboration support. 
+CodeSpaces is a cloud based GitHub implementation of VSCode that shares 
+many of the same features.
 
 Collaboration in VS Code is primarily facilitated by the Visual Studio Live
-Share extension. This extension enables real-time collaborative development,
-allowing multiple developers to work on the same codebase simultaneously,
-share debugging sessions, and interact within the same environment.
+Share extension. This extension enables:
+
+- Real-time Co-editing: Multiple participants can work on the same file
+  simultaneously, seeing each other's cursors, selections, and edits instantly,
+  much like in Google Docs.
+
+- Collaborative Debugging: Teams can debug together, inspecting variables,
+  setting breakpoints, and stepping through code execution simultaneously, all
+  within their own personalized environments.
+
+- Shared Terminals and Servers: The host can share their terminal and localhost
+  servers with guests, eliminating the need for guests to set up their own
+  environments or dependencies.
+
+- Navigation and Following: Participants can independently navigate the project
+  or choose to "follow" another collaborator, keeping their editor synchronized
+  with the leader's actions.
+
+- File Access Control: Hosts can use a .vsls.json file to control which files and
+  folders are visible or editable by guests, ensuring security and focus
 
 .. toctree::
     :maxdepth: 3

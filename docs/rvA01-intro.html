@@ -490,13 +490,13 @@ programs.</p>
 <h2><strong>[2t]</strong> rivt API<a class="headerlink" href="#t-rivt-api" title="Link to this heading">#</a></h2>
 <hr><p>The <em>rivtlib</em> package implements an API designed to be:</p>
 <ul class="simple">
-<li><p><strong>lightweight</strong> - the syntax includes about 3 dozen tags and commands.</p></li>
+<li><p><strong>lightweight</strong> - the syntax includes less than 3 dozen tags and commands.</p></li>
 <li><dl class="simple">
 <dt><strong>extensible</strong> - it is written in Python with direct access to</dt><dd><p>thousands of Python packages.</p>
 </dd>
 </dl>
 </li>
-<li><p><strong>flexible</strong> - it produces single docs or large reports in text, HTML and
+<li><p><strong>flexible</strong> - it produces single <em>docs</em> or large reports in text, HTML and
 PDF formats from the same rivt file or files.</p></li>
 </ul>
 <p>The API implements a <a class="reference internal" href="#folderstruc"><span class="std std-ref">[5t]  Report Folder Structure</span></a> and 7 API functions. The name
@@ -536,7 +536,7 @@ generate document content.</p>
 </tr>
 <tr class="row-even"><td><p>rv.X(rS)</p></td>
 <td><p>Exit</p></td>
-<td><p>Exit rivt without processing section</p></td>
+<td><p>Exit rivt (section no processed)</p></td>
 </tr>
 </tbody>
 </table>
@@ -546,14 +546,14 @@ as input and outputs text, HTML and PDF output files, referred to as
 <a class="reference internal" href="rvA02-terms.html#term-docs"><span class="xref std std-term">docs</span></a>.</p>
 <p>The functions that generate <em>doc</em> content include:</p>
 <blockquote>
-<div><p>The <em>Run API</em> executes shell commands.</p>
-<p>The <em>Insert API</em> adds static table, image, equation and text content.</p>
-<p>The <em>Value API</em> evaluates equations and functions.</p>
-<p>The <em>Tool API</em> runs HTML, LaTeX, and Python scripts.</p>
+<div><p>The <em>Run API</em> which executes shell commands.</p>
+<p>The <em>Insert API</em> which adds static table, image, equation and text content.</p>
+<p>The <em>Value API</em> which evaluates equations and functions.</p>
+<p>The <em>Tool API</em> which runs HTML, LaTeX, and Python scripts.</p>
 </div></blockquote>
 <p>The remaining three functions are used for processing and debugging.</p>
 <blockquote>
-<div><p>The <em>Doc API</em> specifies the publication type and style.</p>
+<div><p>The <em>Doc API</em> specifies <em>doc</em> type and style and generates the <em>doc</em> file.</p>
 <p>The <em>Skip API</em> can be used for interactive debugging and comments.</p>
 <p>The <em>Exit API</em> can be used for interactive debugging.</p>
 </div></blockquote>

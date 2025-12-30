@@ -104,8 +104,9 @@ An example *report* folder structure is shown below.
         ├── [rv202-]filename4.py                 
         ├── [public]/                          || public rivt files                      
             ├── rv-101-filename1.py              
+            ├── rv-102-filename1.py              
             ├── rv-201-filename3.py  
-            └── rv-202-filename4.py      
+            └── rv-202-filename4.py    
         ├── [publish]/                         || reports and docs
             ├── [html]/                              HTML site  
                 ├── [docs]/                           

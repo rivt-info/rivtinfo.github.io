@@ -253,8 +253,15 @@
   :sorted: 
 
   profile
-    Allows users to customize their VS Code environment for different workflows, 
+    Allows VSCode users to customize their environment for different workflows, 
     projects, or tasks. This feature provides a way to manage distinct 
     configurations of settings, extensions, keyboard shortcuts, snippets, 
     and tasks.
+
+  IDE
+    Integrated Development Environment. A software application that provides 
+    comprehensive facilities to computer programmers for software development. 
+    An IDE typically includes a code editor, build automation tools, 
+    and a debugger. *rivt extensions* are mostly developed for VSCode. 
+    Other examples include PyCharm, Spyder, and JupyterLab.
 
