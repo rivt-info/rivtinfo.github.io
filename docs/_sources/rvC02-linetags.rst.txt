@@ -1,4 +1,4 @@
-**C.12 Line Tags**
+**C.2 Line Tags**
 ========================
 
 **[1t]** Line Tag Summary

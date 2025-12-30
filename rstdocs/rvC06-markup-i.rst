@@ -1,8 +1,6 @@
 **C.3 Insert - rv.I**
 ========================
 
-**Summary**
-
 **[1t]** Summary
 -------------------------------------
 
@@ -10,8 +8,8 @@
 
     <hr>
 
-The *Insert* API function inserts static resources into the *doc* including
-images, tables and formatted text.
+The *Insert* API function inserts static sources into the *doc*, including
+images, tables, links and formatted text.
 
 **Format a line of text**
 
