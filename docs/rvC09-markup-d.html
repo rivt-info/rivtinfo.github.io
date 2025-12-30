@@ -384,96 +384,46 @@
                   
   <section id="c-9-doc-rv-d">
 <h1><strong>C.9 Doc - rv.D</strong><a class="headerlink" href="#c-9-doc-rv-d" title="Link to this heading">#</a></h1>
-<p id="api">&lt;i&gt;</p><section id="t-summary">
-<h2><strong>[1t]</strong> Summary<a class="headerlink" href="#t-summary" title="Link to this heading">#</a></h2>
+<section id="t-rv-d-markup">
+<h2><strong>[1t]</strong> rv.D Markup<a class="headerlink" href="#t-rv-d-markup" title="Link to this heading">#</a></h2>
 <hr><p>The <em>Doc API</em> publishes formatted <em>docs</em> from the rivt API strings.</p>
-<p><strong>Block Tags</strong></p>
+<p><strong>Format blocks of text</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Block Tags</p></th>
-<th class="head"><p>Description (doc scope)</p></th>
+<th class="head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>_[[LAYOUT]] label</p></td>
-<td><p>Doc format settings (all)</p></td>
+<td><p><a class="reference internal" href="rvC03-blocktags.html#layouttag"><span class="std std-ref">[10t] Layout</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>_[[END]]</p></td>
-<td><p>End block (all)</p></td>
+<td><p><a class="reference internal" href="rvC03-blocktags.html#endblk"><span class="std std-ref">[11t] End</span></a></p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p><strong>Commands</strong></p>
+<p><strong>Read, write and format files</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><div class="line-block">
 <div class="line">Command | relative path | parameters</div>
 </div>
 </th>
-<th class="head"><p>doc types</p></th>
+<th class="head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>| APPEND | relative path | <em>none</em>;title</p></td>
-<td><p>pdf, html, text</p></td>
+<tr class="row-even"><td><p>rv.D       | PDFAPPEND | relative path | place, cover</p></td>
+<td><p><a class="reference internal" href="rvC04-commands.html#appcmd"><span class="std std-ref">[12t] append PDF</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>| PREPEND | relative path | <em>none</em>;title</p></td>
-<td><p>pdf, html, text</p></td>
-</tr>
-<tr class="row-even"><td><p>| PUBLISH | <em>rivt</em>; rel path | <em>rst2pdf;pdftex;html;text</em></p></td>
-<td><p>pdf, html, text</p></td>
+<tr class="row-odd"><td><p>rv.D       | PUBLISH | ini rel. path | type</p></td>
+<td><p><a class="reference internal" href="rvC04-commands.html#pubcmd"><span class="std std-ref">[13t] publish doc</span></a></p></td>
 </tr>
 </tbody>
 </table>
 </div>
-</section>
-<section id="t-layout-format-settings">
-<h2><strong>[2t]</strong> _[[LAYOUT]] :  format settings<a class="headerlink" href="#t-layout-format-settings" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[[LAYOUT]] optional label</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">LAYOUT</span><span class="p">]]</span>
-<span class="n">pdfheaderL</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">foot_template</span><span class="p">:</span>
-<span class="o">...</span>
-<span class="n">_</span><span class="p">[[</span><span class="n">QUIT</span><span class="p">]]</span>
-</pre></div>
-</div>
-<p>The LAYOUT block overrides default style settings.</p>
-</aside>
-</section>
-<section id="t-append-append-pdf-file">
-<h2><strong>[3t]</strong> | APPEND  | - append PDF file<a class="headerlink" href="#t-append-append-pdf-file" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">| APPEND | relative path | <em>none</em>;title</p>
-<div class="line-block">
-<div class="line">APPEND | src/appendix1.pdf | none</div>
-</div>
-</aside>
-<p>Appends file to <em>doc</em> with optional separator page.</p>
-<p>outputs:  PDF, HTML, text</p>
-</section>
-<section id="t-prepend-prepend-pdf-file">
-<h2><strong>[4t]</strong> | PREPEND  | - prepend PDF file<a class="headerlink" href="#t-prepend-prepend-pdf-file" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">| APPEND | relative path | <em>none</em>;title</p>
-<div class="line-block">
-<div class="line">APPEND | src/appendix1.pdf | none</div>
-</div>
-</aside>
-<p>Appends file to <em>doc</em> with optional separator page.</p>
-<p>outputs:  PDF, HTML, text</p>
-</section>
-<section id="t-publish-write-doc-file">
-<h2><strong>[5t]</strong> | PUBLISH |  - write doc file<a class="headerlink" href="#t-publish-write-doc-file" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">| PUBLISH | <em>rst2pdf;texpd;text;html</em> | <em>none</em>;title</p>
-<div class="line-block">
-<div class="line">PUBLISH | doc1.pdf | none</div>
-</div>
-</aside>
-<p><em>rivt</em> exits after writing the <em>publish</em> file.</p>
-<p>outputs: PDF, HTML, text</p>
 </section>
 </section>
 
@@ -524,11 +474,7 @@
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-summary"><strong>[1t]</strong> Summary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-layout-format-settings"><strong>[2t]</strong> _[[LAYOUT]] :  format settings</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-append-append-pdf-file"><strong>[3t]</strong> | APPEND  | - append PDF file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-prepend-prepend-pdf-file"><strong>[4t]</strong> | PREPEND  | - prepend PDF file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-publish-write-doc-file"><strong>[5t]</strong> | PUBLISH |  - write doc file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rv-d-markup"><strong>[1t]</strong> rv.D Markup</a></li>
 </ul>
   </nav></div>
 

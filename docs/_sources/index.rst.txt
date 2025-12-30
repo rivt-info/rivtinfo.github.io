@@ -37,8 +37,8 @@ As an open source project *rivt* may be integrated with other programs,
 and *rivt files* may be shared and cooperatively improved. An 
 integrated :term:`rivt framework` is described :doc:`here. <rvB01-install>`.
 
-Small *rivt file* examples are provided :doc:`here <rvA04-docex>` and 
-:doc:`here<rvD05-reportex>`. An interface for searching *rivt files* 
+Small *rivt file* examples are provided :doc:`here <rvD05-docex>` and 
+:doc:`here<rvD06-reportex>`. An interface for searching *rivt files* 
 on *GitHub* is :doc:`here <rvE03-ghsearch>`.
 
 .. raw:: html

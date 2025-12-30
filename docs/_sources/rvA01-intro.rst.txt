@@ -282,5 +282,4 @@ and license information and forks. The data is written to the API log file.
 
     rvA02-terms.rst
     rvA03-faq.rst
-    rvA04-docex.rst
 

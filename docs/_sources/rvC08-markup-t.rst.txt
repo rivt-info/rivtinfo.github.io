@@ -1,7 +1,7 @@
 **C.8 Tool - rv.T**
 =======================
 
-**[1t]** Summary
+**[1t]** rv.T Markup
 ------------------------------------------------
 
 .. raw:: html
@@ -12,24 +12,32 @@ Files processed by the *Tools API function* are usually read and written to the
 *src/* folder unless the *rv_localB* variable is set to *True* in the *Meta API
 function*. In that case files are read and written to the *rivt file* folder.
 
-======================================== ==============================
-       Block Tags                         Description (doc scope)
-======================================== ==============================
- _[[HTML]] label                          HTML markup (html)
- _[[LATEX]] label                         LaTeX markup (pdf)[1]
- _[[RST]] label                           reStructuredText markup (all)
- _[[PYTHON]] label, *rv-space*;newspace   Python script (all)
- _[[END]]                                 End block (all)
-======================================== ==============================
+**Format blocks of text**
 
-[1] LaTeX requires an installation of LaTeX.
+========== ========================================= ==============================
+API Scope         Block Tags                           Description 
+========== ========================================= ==============================
+rv.T        _[[PYTHON]] namespace                      :ref:`pythontag`
+rv.T        _[[SCRIPT]] type                           :ref:`scripttag` [1]
+all         _[[END]]                                   :ref:`endblk`
+========== ========================================= ==============================
 
-=================================================== ===== =================
-        | Command | path | parameters                R/W     input types
-=================================================== ===== =================
- \| HTML | src/path | label                           R     *html*
- \| LATEX | src/path | label                          R     *tex*
- \| RST | src/path | label                            R     *rst*
- \| PYTHON | src/path | *rv-namespace*; userspace     R     *py*
-=================================================== ===== =================
+::
 
+    [1] LaTeX processing requires the installation of *Texlive*
+
+
+**Read, write and format files**
+
+============================================================== =====================
+         | Command | path | parameters                          Description
+============================================================== =====================
+\| PDFAPPEND | relative path | place, cover                     :ref:`appcmd`   
+\| PUBLISH | ini rel. path | type                               :ref:`pubcmd` 
+============================================================== =====================
+
+.. highlight:: none
+
+::
+
+    [1] optional tags number the equation or table

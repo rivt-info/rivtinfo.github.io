@@ -384,24 +384,21 @@
                   
   <section id="c-5-run-rv-r">
 <h1><strong>C.5 Run - rv.R</strong><a class="headerlink" href="#c-5-run-rv-r" title="Link to this heading">#</a></h1>
-<p id="api">&lt;i&gt;</p><section id="summary">
-<h2><strong>[1]</strong> Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
+<section id="t-rv-r-markup">
+<h2><strong>[1t]</strong> rv.R Markup<a class="headerlink" href="#t-rv-r-markup" title="Link to this heading">#</a></h2>
 <hr><p>The <em>Run</em> API function executes shell commands.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Block Tags</p></th>
-<th class="head"><p>Description (doc scope)</p></th>
+<th class="head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>_[[WIN]] label, <em>wait;nowait</em></p></td>
-<td><p>Windows command script (all)</p></td>
+<tr class="row-even"><td><p>_[[SHELL]] os,wait,open</p></td>
+<td><p><a class="reference internal" href="rvC03-blocktags.html#shelltag"><span class="std std-ref">[2t] shell commands</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>_[[MACOS]] label, <em>wait;nowait</em></p></td>
-<td><p>Mac shell script (all)</p></td>
-</tr>
-<tr class="row-even"><td><p>_[[LINUX]] label, <em>wait;nowait</em></p></td>
-<td><p>Linux shell script (all)</p></td>
+<tr class="row-odd"><td><p>_[[END]]</p></td>
+<td><p><a class="reference internal" href="rvC03-blocktags.html#endblk"><span class="std std-ref">[11t] End</span></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -412,22 +409,12 @@
 <div class="line">COMMAND | path | parameters</div>
 </div>
 </th>
-<th class="head"><p>R/W</p></th>
 <th class="head"><p>input types</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>| LINUX | path | <em>wait;nowait</em></p></td>
-<td><p>R</p></td>
-<td><p><em>.sh</em></p></td>
-</tr>
-<tr class="row-odd"><td><p>| MACOS | path | <em>wait;nowait</em></p></td>
-<td><p>R</p></td>
-<td><p><em>.sh</em></p></td>
-</tr>
-<tr class="row-even"><td><p>| WIN   | path | <em>wait;nowait</em></p></td>
-<td><p>R</p></td>
-<td><p><em>.bat, .cmd</em></p></td>
+<tr class="row-even"><td><p>| SHELL | relative path | os, wait</p></td>
+<td><p><a class="reference internal" href="rvC04-commands.html#shellcmd"><span class="std std-ref">[2t] run shell script</span></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -482,7 +469,7 @@
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary"><strong>[1]</strong> Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rv-r-markup"><strong>[1t]</strong> rv.R Markup</a></li>
 </ul>
   </nav></div>
 

@@ -316,7 +316,8 @@
 <li class="toctree-l1"><a class="reference internal" href="rvD02-files.html"><strong>D.2 Files</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvD03-folders.html"><strong>D.3 Folders</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvD04-setting.html"><strong>D.4 Configuration Files</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvD05-reportex.html"><strong>D.5 Example</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvD05-docex.html"><strong>A.4 Example</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvD06-reportex.html"><strong>D.5 Example</strong></a></li>
 </ul>
 </div>
 </nav></div>
@@ -376,8 +377,8 @@
                   
   <section id="d-1-docs">
 <h1><strong>D.1 Docs</strong><a class="headerlink" href="#d-1-docs" title="Link to this heading">#</a></h1>
-<p id="api">&lt;i&gt;</p><section id="rivt-files">
-<h2><strong>[1]</strong> rivt Files<a class="headerlink" href="#rivt-files" title="Link to this heading">#</a></h2>
+<section id="t-rivt-files">
+<h2><strong>[1t]</strong> rivt Files<a class="headerlink" href="#t-rivt-files" title="Link to this heading">#</a></h2>
 <hr><p>Each <a class="reference internal" href="rvA02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> outputs a corresponding formatted <a class="reference internal" href="rvA02-terms.html#term-doc"><span class="xref std std-term">doc</span></a>. A <em>rivt
 report</em> is organized using the rivt <em>doc numbers</em>. If the <em>rivt file</em> names are:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rvA01-filename.py
@@ -393,9 +394,9 @@ rv212-filename.py
 </ul>
 <p>Note that leading zeroes are dropped.  <em>Docs</em> are sorted alpha-numerically into
 divisions and subdivisions in the <em>report</em>.</p>
-<p id="api">&lt;i&gt;</p></section>
-<section id="docs">
-<h2><strong>[2]</strong> Docs<a class="headerlink" href="#docs" title="Link to this heading">#</a></h2>
+</section>
+<section id="t-docs">
+<h2><strong>[2t]</strong> Docs<a class="headerlink" href="#t-docs" title="Link to this heading">#</a></h2>
 <hr><p>Each <a class="reference internal" href="rvA02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> outputs a corresponding formatted <a class="reference internal" href="rvA02-terms.html#term-doc"><span class="xref std std-term">doc</span></a> written to
 the <em>publish</em> folder unless it is a <a class="reference internal" href="rvA02-terms.html#term-stand-alone-doc"><span class="xref std std-term">stand-alone doc</span></a>.</p>
 <p><em>Docs</em> may be text, HTML or PDF. PDF <em>doc</em> files are produced by two different
@@ -407,18 +408,18 @@ into <em>rivt</em>.</p>
 LaTeX library (approx. 3GB). Its advantage is additional control over <em>doc</em>
 formatting and appearance.</p>
 <p id="api">&lt;i&gt;</p></section>
-<section id="single-docs">
-<h2><strong>[3]</strong> Single docs<a class="headerlink" href="#single-docs" title="Link to this heading">#</a></h2>
+<section id="t-single-docs">
+<h2><strong>[3t]</strong> Single docs<a class="headerlink" href="#t-single-docs" title="Link to this heading">#</a></h2>
 <hr><p>A document that will not be part of a <a class="reference internal" href="rvD02-files.html#report-describe"><span class="std std-ref">report</span></a> may use
 the local rivt file folder for reading and writing files, without referencing
 the <em>rivt report folders</em>. A single <em>doc</em> is formatted by setting the
 <em>rv_local</em> variable in a comment, immediately following the <em>rivtlib</em> import
 statement.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># rv_local=True</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># rv singledocS=True</span>
 </pre></div>
 </div>
-<p>The text, PDF and HTML <em>docs</em> will be written to the local file folder using
-simple style settings built into <em>rivtlib</em>. Stand-alone <em>docs</em> require less
+<p>The text, PDF or HTML <em>doc</em> will be written to the local file folder using
+simple style settings built into <em>rivtlib</em>. <em>Single docs</em> require less
 setup but also offer less formatting control.</p>
 <div class="toctree-wrapper compound">
 </div>
@@ -472,9 +473,9 @@ setup but also offer less formatting control.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-files"><strong>[1]</strong> rivt Files</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docs"><strong>[2]</strong> Docs</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#single-docs"><strong>[3]</strong> Single docs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rivt-files"><strong>[1t]</strong> rivt Files</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-docs"><strong>[2t]</strong> Docs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-single-docs"><strong>[3t]</strong> Single docs</a></li>
 </ul>
   </nav></div>
 

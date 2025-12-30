@@ -92,7 +92,7 @@ Folders organize files in standard locations to generate *docs* and *reports*
     marked with double vertical bars ( || ).</p>
 
 
-**Top Level Folders**
+**Folders**
 
 .. code-block:: bash
 
@@ -184,7 +184,7 @@ Folders organize files in standard locations to generate *docs* and *reports*
                 ├── gen-pdftex.cmd                   LaTeX generating script
                 ├── rivt-report.py                   report generating script
                 ├── new-units.py                     define new units
-                └── [style]/                         style files for docs 
+                └── [style]/                         doc style files 
                     ├── [html]/                      html style files
                         ├── _locale/                 
                         ├── _static/                        

@@ -1,12 +1,7 @@
 **D.1 Docs**
 ========================
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-
-**[1]** rivt Files
+**[1t]** rivt Files
 -----------------------------
 
 .. raw:: html
@@ -31,12 +26,8 @@ the *report numbers* would be:
 Note that leading zeroes are dropped.  *Docs* are sorted alpha-numerically into
 divisions and subdivisions in the *report*.
 
-.. raw:: html
 
-    <p id="api">&lt;i&gt;</p>
-
-
-**[2]** Docs
+**[2t]** Docs
 -----------------------------
 
 .. raw:: html
@@ -60,7 +51,7 @@ formatting and appearance.
 
     <p id="api">&lt;i&gt;</p>
 
-**[3]** Single docs
+**[3t]** Single docs
 ----------------------------------------------------------
 
 .. raw:: html
@@ -75,10 +66,10 @@ statement.
   
 .. code:: python
 
-    # rv_local=True
+    # rv singledocS=True
 
-The text, PDF and HTML *docs* will be written to the local file folder using
-simple style settings built into *rivtlib*. Stand-alone *docs* require less
+The text, PDF or HTML *doc* will be written to the local file folder using
+simple style settings built into *rivtlib*. *Single docs* require less
 setup but also offer less formatting control.
 
 .. toctree::
@@ -88,4 +79,5 @@ setup but also offer less formatting control.
     rvD02-files.rst
     rvD03-folders.rst
     rvD04-setting.rst
-    rvD05-reportex.rst
+    rvD05-docex.rst
+    rvD06-reportex.rst

@@ -1,11 +1,8 @@
 **C.5 Run - rv.R**
 ==========================
 
-.. raw:: html
 
-    <p id="api">&lt;i&gt;</p>
-
-**[1]** Summary
+**[1t]** rv.R Markup
 ------------------------------------
 
 .. raw:: html
@@ -16,20 +13,17 @@
 The *Run* API function executes shell commands.
 
 ======================================= ==============================
-       Block Tags                        Description (doc scope)
+       Block Tags                        Description
 ======================================= ==============================
- _[[WIN]] label, *wait;nowait*           Windows command script (all)
- _[[MACOS]] label, *wait;nowait*         Mac shell script (all)
- _[[LINUX]] label, *wait;nowait*         Linux shell script (all)
+ _[[SHELL]] os,wait,open                    :ref:`shelltag`
+ _[[END]]                                   :ref:`endblk`
 ======================================= ==============================
 
-============================================= ===== ==================
-        | COMMAND | path | parameters          R/W     input types
-============================================= ===== ==================
- \| LINUX | path | *wait;nowait*                 R     *.sh*
- \| MACOS | path | *wait;nowait*                 R     *.sh*
- \| WIN   | path | *wait;nowait*                 R     *.bat, .cmd*
-============================================= ===== ==================
+============================================= =================
+        | COMMAND | path | parameters           input types
+============================================= =================
+\| SHELL | relative path | os, wait            :ref:`shellcmd`
+============================================= =================
 
 
 
