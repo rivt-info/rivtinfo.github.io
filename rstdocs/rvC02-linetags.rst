@@ -8,35 +8,73 @@
 
     <hr>
 
-Format a line of text.
+**Format a line of text**
   
 =============  ========================================= =======================
 API Scope             Line Tags                            Description 
 =============  ========================================= =======================
+rv.I                 latex math _[L]                      :ref:`latextag` 
+rv.I                 ascii math _[M]                      :ref:`asciitag`
 rv.I, V                    text _[#] text                 :ref:`notetag`  
 rv.I, V                    text _[C]                      :ref:`centertag` 
 rv.I, V                    text _[R]                      :ref:`righttag` 
-rv.I                 latex math _[L]                      :ref:`latextag` 
-rv.I                 ascii math _[M]                      :ref:`asciitag`
 rv.I, V          equation label _[E]                      :ref:`equatag`
-rv.I, V                   title _[T]                      :ref:`tabletag` [1]
-rv.I, V          section anchor _[A]                      :ref:`anchortag`
-rv.I, V                    text _[G] glossary term link   :ref:`termtag`
-rv.I, V                    text _[S] section link         :ref:`sectiontag`
+rv.I, V             table title _[T]                      :ref:`tabletag` [1]
+rv.I, V             anchor_name _[A]                      :ref:`anchortag`
+rv.I, V                    text _[N] anchor_name link     :ref:`linktag`
+rv.I, V                    text _[G] glossary link term   :ref:`termtag`
 rv.I, V                    text _[D] doc link             :ref:`doctag`
 rv.I, V                    text _[U] external url         :ref:`urltag`   
 rv.I, V          \-\-\-\-\-                               :ref:`linetag` [2]
 rv.I, V          \=\=\=\=\=                               :ref:`pagetag` [2]
 =============  ========================================= =======================
 
-[1] tag may be added to the label parameter in the TABLE commands
+[1] tag may be added to the title parameter in the TABLE command
 
 [2] must start in first indented column (absolute column 4)
 
 
+.. _latextag:
+
+**[2t]** LaTeX math 
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: _[L]
+
+    \frac{1}{\sqrt{x}} _[L]
+
+The LaTeX math expression will be formatted in the specified font.
+
+API: Insert
+docs: text, PDF, HTML
+
+
+.. _asciitag:
+
+**[3t]** ASCII math
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: _[M]
+
+    f(x,y) = sin(x)**2 + y/5 _[M]
+
+The math expression will be formated in ASCII text.
+
+API: Insert
+docs: text, PDF, HTML
+
+
 ..  _notetag:
 
-**[2t]**  endnote number
+**[4t]**  endnote number
 -------------------------------------
 
 .. raw:: html
@@ -52,11 +90,12 @@ This tag assigns an endnote number to the text. Endnotes are defined with the
 block tag _[[NOTE]] and are listed at the end of the *doc*. Numbers are
 assigned in the order they are processed.
 
-outputs: text, pdf, html
+API: Insert, Value
+docs: text, PDF, HTML
 
 ..  _centertag:
 
-**[3t]** center text
+**[5t]** center text
 -------------------------------------------
 
 .. raw:: html
@@ -69,11 +108,12 @@ outputs: text, pdf, html
 
 Center text within the page margins.
 
-outputs: text, pdf, html
+API: Insert, Value
+docs: text, PDF, HTML
 
 .. _righttag:
 
-**[4t]** right justify text
+**[6t]** right justify text
 -----------------------------------------
 
 .. raw:: html
@@ -86,41 +126,8 @@ outputs: text, pdf, html
 
 The LaTeX math expression will be formatted in PDF and HTML.
 
-outputs: pdf, html
-
-.. _latextag:
-
-**[5t]** LaTeX math 
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: _[L]
-
-    \frac{1}{\sqrt{x}} _[L]
-
-The LaTeX math expression will be formatted in the specified font.
-
-outputs: pdf, html
-
-.. _asciitag:
-
-**[6t]** ASCII math
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: _[A]
-
-    f(x,y) = sin(x)**2 + y/5 _[A]
-
-The math expression will be formated in ASCII text.
-
-outputs: text, pdf, html
+API: Insert, Value
+docs: text, PDF, HTML
 
 .. _equatag:
 
@@ -137,24 +144,25 @@ outputs: text, pdf, html
 
 Labels and numbers equation.
 
-outputs: text, pdf, html
+API: Insert, Value
+docs: text, PDF, HTML
 
 .. _tabletag:
 
-**[8t]** table label
+**[8t]** table title
 ------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: Table Title
+.. topic:: _[T]
 
    Table Title _[T]
 
 Labels and numbers tables.
 
-outputs: text, pdf, html
+outputs: text, PDF, HTML
 
 .. _termtag:
 
@@ -165,13 +173,14 @@ outputs: text, pdf, html
 
     <hr>
 
-.. topic:: _[M]
+.. topic:: _[G]
 
-   term in glossary _[M]
+   term in glossary _[G]
 
 link to term in glossary
 
-outputs: text, pdf, html
+API: Insert, Value
+docs: text, PDF, HTML
 
 .. _anchortag:
 
@@ -182,31 +191,35 @@ outputs: text, pdf, html
 
     <hr>
 
-.. topic:: _[N] 
+.. topic:: _[A] 
     
-    anchorname _[N] 
+     _[A] anchorname
 
 Inserts reference anchor at this location in the *doc*. Typically inserted
-before a section title.
+before a section title. If inserted before a section title, the section title
+is inserted as the link text.
 
-outputs: text, pdf, html
+API: Insert, Value
+docs: text, PDF, HTML
 
-.. _sectiontag:
+.. _linktag:
 
-**[11t]** section link
+**[11t]** anchor reference
 -----------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: anchorname _[S] 
+.. topic:: _[N] 
     
-    text anchorname _[S] text
+    text _[N] anchorname
 
-Replaces anchorname with Section title and link to Section. 
+Replaces anchorname with the section title that follows, and links to the
+anchor.
 
-outputs: text, pdf, html
+API: Insert, Value
+docs: text, PDF, HTML
 
 .. _doctag:
 
@@ -224,7 +237,8 @@ outputs: text, pdf, html
 Links *docs* within a *report*. Text will be continued and wrapped when
 formatted.
 
-outputs: text, pdf, html
+API: Insert, Value
+docs: text, PDF, HTML
 
 .. _urltag:
 
@@ -241,7 +255,8 @@ outputs: text, pdf, html
 
 External url link. Text will be continued and wrapped when formatted.
 
-outputs: text, pdf, html
+API: Insert, Value
+docs: text, PDF, HTML
 
 ..  _linetag:
 
@@ -259,11 +274,8 @@ outputs: text, pdf, html
 
 Draws a horizontal line the width of the page.
     
-outputs: text, pdf, html
-
-.. raw:: html
-
-    <p style="text-align: right;"> &lt;i&gt; </p>
+API: Insert, Value
+docs: text, PDF, HTML
 
 .. _pagetag:
 
@@ -280,5 +292,6 @@ outputs: text, pdf, html
 
 Starts a new page.
 
-outputs: text, pdf, html
+API: Insert, Value
+docs: text, PDF, HTML
 

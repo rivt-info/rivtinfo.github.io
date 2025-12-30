@@ -481,9 +481,13 @@ that all rivt file resources are read from written to the rivt file folder.</p>
 </dd>
 <dt id="term-section-text">section text<a class="headerlink" href="#term-section-text" title="Link to this term">#</a></dt><dd><p>The content of a <em>rivt string</em> minus the <em>header</em>.</p>
 </dd>
-<dt id="term-single-doc">single doc<a class="headerlink" href="#term-single-doc" title="Link to this term">#</a></dt><dt id="term-single-docs">single docs<a class="headerlink" href="#term-single-docs" title="Link to this term">#</a></dt><dd><p>A document that is not part of a report. It is published using the rivt file
-folder for source files and outputs <em>src</em> and <em>publish</em> subfolders. It is
-used for basic stand alone docs and has limited formatting capabilities.</p>
+<dt id="term-single-doc">single doc<a class="headerlink" href="#term-single-doc" title="Link to this term">#</a></dt><dt id="term-single-docs">single docs<a class="headerlink" href="#term-single-docs" title="Link to this term">#</a></dt><dd><p>A single doc is a rivt file that publishes a doc that is not part of
+a report and is used for quick docs that only require limited formatting.</p>
+<p>It is specified in a comment variable directly after the <em>rivtlib</em>
+import statement.</p>
+<p># rv singledocB = True</p>
+<p>The default setting is False. The rivt file folder is used for
+source and output files. A folder structure is not used.</p>
 </dd>
 <dt id="term-stand-alone-doc">stand-alone doc<a class="headerlink" href="#term-stand-alone-doc" title="Link to this term">#</a></dt><dd><p>A single document that is not part of a report. It uses
 the local rivt file folder for reading and writing files. <em>doc</em>

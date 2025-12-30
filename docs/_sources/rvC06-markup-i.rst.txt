@@ -13,28 +13,32 @@
 The *Insert* API function inserts static resources into the *doc* including
 images, tables and formatted text.
 
-=================================== =======================================
-        Line Tags                       Description 
-=================================== =======================================
-          text _[#] text             :ref:`notetag`  
-          text _[C]                  :ref:`centertag` 
-          text _[R]                  :ref:`righttag` 
-    latex math _[L]                  :ref:`latextag` 
-    ascii math _[A]                  :ref:`asciitag`
-equation label _[E]                  :ref:`equatag`
-         title _[T]                  :ref:`tabletag` [1]
-section anchor _[N]                  :ref:`anchortag`
-          text _[M] term link        :ref:`termtag`
-          text _[S] section link     :ref:`sectiontag`
-          text _[D] doc link         :ref:`doctag`
-          text _[U] external url     :ref:`urltag`   
-    \-\-\-\-\-                       :ref:`linetag` [2]
-    \=\=\=\=\=                       :ref:`pagetag` [2]
-=================================== =======================================
+**Format a line of text**
+
+=========================================== =======================================
+        Line Tags                                 Description 
+=========================================== =======================================
+    latex math _[L]                                  :ref:`latextag` 
+    ascii math _[M]                                  :ref:`asciitag`
+          text _[#] text                             :ref:`notetag`  
+          text _[C]                                  :ref:`centertag` 
+          text _[R]                                  :ref:`righttag` 
+equation label _[E]                                  :ref:`equatag`
+         title _[T]                                  :ref:`tabletag` [1]
+section anchor _[A]                                  :ref:`anchortag`
+          text _[N] anchor_name link                 :ref:`linktag`
+          text _[G] glossary link term               :ref:`termtag`
+          text _[D] doc link                         :ref:`doctag`
+          text _[U] external url                     :ref:`urltag`   
+    \-\-\-\-\-                                       :ref:`linetag` [2]
+    \=\=\=\=\=                                       :ref:`pagetag` [2]
+=========================================== =======================================
 
 [1] tag may be added to the label parameter in the TABLE commands
 
 [2] must start in first indented column (absolute column 4)
+
+**Format a block of text**
 
 ======================================= ==============================
        Block Tags                        Description (doc scope)
@@ -47,6 +51,8 @@ section anchor _[N]                  :ref:`anchortag`
  _[[TOPIC]] topic                        Topic (all)
  _[[END]]                                End block (all)
 ======================================= ==============================
+
+**Read, Write and Format Files**
 
 ======================================================== ===== ==================
          | Command | path | parameters                    R/W   input types

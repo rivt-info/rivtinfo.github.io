@@ -387,7 +387,7 @@
 <h1><strong>C.12 Line Tags</strong><a class="headerlink" href="#c-12-line-tags" title="Link to this heading">#</a></h1>
 <section id="t-line-tag-summary">
 <h2><strong>[1t]</strong> Line Tag Summary<a class="headerlink" href="#t-line-tag-summary" title="Link to this heading">#</a></h2>
-<hr><p>Format a line of text.</p>
+<hr><p><strong>Format a line of text</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>API Scope</p></th>
@@ -396,45 +396,45 @@
 </tr>
 </thead>
 <tbody>
+<tr class="row-even"><td><p>rv.I</p></td>
+<td><p>latex math _[L]</p></td>
+<td><p><a class="reference internal" href="#latextag"><span class="std std-ref">[2t] LaTeX math</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.I</p></td>
+<td><p>ascii math _[M]</p></td>
+<td><p><a class="reference internal" href="#asciitag"><span class="std std-ref">[3t] ASCII math</span></a></p></td>
+</tr>
 <tr class="row-even"><td><p>rv.I, V</p></td>
 <td><p>text _[#] text</p></td>
-<td><p><a class="reference internal" href="#notetag"><span class="std std-ref">[2t]  endnote number</span></a></p></td>
+<td><p><a class="reference internal" href="#notetag"><span class="std std-ref">[4t]  endnote number</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I, V</p></td>
 <td><p>text _[C]</p></td>
-<td><p><a class="reference internal" href="#centertag"><span class="std std-ref">[3t] center text</span></a></p></td>
+<td><p><a class="reference internal" href="#centertag"><span class="std std-ref">[5t] center text</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I, V</p></td>
 <td><p>text _[R]</p></td>
-<td><p><a class="reference internal" href="#righttag"><span class="std std-ref">[4t] right justify text</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>latex math _[L]</p></td>
-<td><p><a class="reference internal" href="#latextag"><span class="std std-ref">[5t] LaTeX math</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p>ascii math _[M]</p></td>
-<td><p><a class="reference internal" href="#asciitag"><span class="std std-ref">[6t] ASCII math</span></a></p></td>
+<td><p><a class="reference internal" href="#righttag"><span class="std std-ref">[6t] right justify text</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I, V</p></td>
 <td><p>equation label _[E]</p></td>
 <td><p><a class="reference internal" href="#equatag"><span class="std std-ref">[7t] equation label</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I, V</p></td>
-<td><p>title _[T]</p></td>
-<td><p><a class="reference internal" href="#tabletag"><span class="std std-ref">[8t] table label</span></a> [1]</p></td>
+<td><p>table title _[T]</p></td>
+<td><p><a class="reference internal" href="#tabletag"><span class="std std-ref">[8t] table title</span></a> [1]</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I, V</p></td>
-<td><p>section anchor _[A]</p></td>
+<td><p>anchor_name _[A]</p></td>
 <td><p><a class="reference internal" href="#anchortag"><span class="std std-ref">[10t] link anchor</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I, V</p></td>
-<td><p>text _[G] glossary term link</p></td>
-<td><p><a class="reference internal" href="#termtag"><span class="std std-ref">[9t] term reference</span></a></p></td>
+<td><p>text _[N] anchor_name link</p></td>
+<td><p><a class="reference internal" href="#linktag"><span class="std std-ref">[11t] anchor reference</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I, V</p></td>
-<td><p>text _[S] section link</p></td>
-<td><p><a class="reference internal" href="#sectiontag"><span class="std std-ref">[11t] section link</span></a></p></td>
+<td><p>text _[G] glossary link term</p></td>
+<td><p><a class="reference internal" href="#termtag"><span class="std std-ref">[9t] term reference</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I, V</p></td>
 <td><p>text _[D] doc link</p></td>
@@ -455,11 +455,31 @@
 </tbody>
 </table>
 </div>
-<p>[1] tag may be added to the label parameter in the TABLE commands</p>
+<p>[1] tag may be added to the title parameter in the TABLE command</p>
 <p>[2] must start in first indented column (absolute column 4)</p>
 </section>
+<section id="t-latex-math">
+<span id="latextag"></span><h2><strong>[2t]</strong> LaTeX math<a class="headerlink" href="#t-latex-math" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">_[L]</p>
+<p>frac{1}{sqrt{x}} _[L]</p>
+</aside>
+<p>The LaTeX math expression will be formatted in the specified font.</p>
+<p>API: Insert
+docs: text, PDF, HTML</p>
+</section>
+<section id="t-ascii-math">
+<span id="asciitag"></span><h2><strong>[3t]</strong> ASCII math<a class="headerlink" href="#t-ascii-math" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">_[M]</p>
+<p>f(x,y) = sin(x)**2 + y/5 _[M]</p>
+</aside>
+<p>The math expression will be formated in ASCII text.</p>
+<p>API: Insert
+docs: text, PDF, HTML</p>
+</section>
 <section id="t-endnote-number">
-<span id="notetag"></span><h2><strong>[2t]</strong>  endnote number<a class="headerlink" href="#t-endnote-number" title="Link to this heading">#</a></h2>
+<span id="notetag"></span><h2><strong>[4t]</strong>  endnote number<a class="headerlink" href="#t-endnote-number" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[#]</p>
 <p>Text is wrapped when formatted. _[#]</p>
@@ -467,43 +487,28 @@
 <p>This tag assigns an endnote number to the text. Endnotes are defined with the
 block tag _[[NOTE]] and are listed at the end of the <em>doc</em>. Numbers are
 assigned in the order they are processed.</p>
-<p>outputs: text, pdf, html</p>
+<p>API: Insert, Value
+docs: text, PDF, HTML</p>
 </section>
 <section id="t-center-text">
-<span id="centertag"></span><h2><strong>[3t]</strong> center text<a class="headerlink" href="#t-center-text" title="Link to this heading">#</a></h2>
+<span id="centertag"></span><h2><strong>[5t]</strong> center text<a class="headerlink" href="#t-center-text" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[C]</p>
 <p>some text _[C]</p>
 </aside>
 <p>Center text within the page margins.</p>
-<p>outputs: text, pdf, html</p>
+<p>API: Insert, Value
+docs: text, PDF, HTML</p>
 </section>
 <section id="t-right-justify-text">
-<span id="righttag"></span><h2><strong>[4t]</strong> right justify text<a class="headerlink" href="#t-right-justify-text" title="Link to this heading">#</a></h2>
+<span id="righttag"></span><h2><strong>[6t]</strong> right justify text<a class="headerlink" href="#t-right-justify-text" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[R]</p>
 <p>some text _[R]</p>
 </aside>
 <p>The LaTeX math expression will be formatted in PDF and HTML.</p>
-<p>outputs: pdf, html</p>
-</section>
-<section id="t-latex-math">
-<span id="latextag"></span><h2><strong>[5t]</strong> LaTeX math<a class="headerlink" href="#t-latex-math" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[L]</p>
-<p>frac{1}{sqrt{x}} _[L]</p>
-</aside>
-<p>The LaTeX math expression will be formatted in the specified font.</p>
-<p>outputs: pdf, html</p>
-</section>
-<section id="t-ascii-math">
-<span id="asciitag"></span><h2><strong>[6t]</strong> ASCII math<a class="headerlink" href="#t-ascii-math" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[A]</p>
-<p>f(x,y) = sin(x)**2 + y/5 _[A]</p>
-</aside>
-<p>The math expression will be formated in ASCII text.</p>
-<p>outputs: text, pdf, html</p>
+<p>API: Insert, Value
+docs: text, PDF, HTML</p>
 </section>
 <section id="t-equation-label">
 <span id="equatag"></span><h2><strong>[7t]</strong> equation label<a class="headerlink" href="#t-equation-label" title="Link to this heading">#</a></h2>
@@ -512,44 +517,50 @@ assigned in the order they are processed.</p>
 <p>equation label  _[E]</p>
 </aside>
 <p>Labels and numbers equation.</p>
-<p>outputs: text, pdf, html</p>
+<p>API: Insert, Value
+docs: text, PDF, HTML</p>
 </section>
-<section id="t-table-label">
-<span id="tabletag"></span><h2><strong>[8t]</strong> table label<a class="headerlink" href="#t-table-label" title="Link to this heading">#</a></h2>
+<section id="t-table-title">
+<span id="tabletag"></span><h2><strong>[8t]</strong> table title<a class="headerlink" href="#t-table-title" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">Table Title</p>
+<p class="topic-title">_[T]</p>
 <p>Table Title _[T]</p>
 </aside>
 <p>Labels and numbers tables.</p>
-<p>outputs: text, pdf, html</p>
+<p>outputs: text, PDF, HTML</p>
 </section>
 <section id="t-term-reference">
 <span id="termtag"></span><h2><strong>[9t]</strong> term reference<a class="headerlink" href="#t-term-reference" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">_[M]</p>
-<p>term in glossary _[M]</p>
+<p class="topic-title">_[G]</p>
+<p>term in glossary _[G]</p>
 </aside>
 <p>link to term in glossary</p>
-<p>outputs: text, pdf, html</p>
+<p>API: Insert, Value
+docs: text, PDF, HTML</p>
 </section>
 <section id="t-link-anchor">
 <span id="anchortag"></span><h2><strong>[10t]</strong> link anchor<a class="headerlink" href="#t-link-anchor" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">_[N]</p>
-<p>anchorname _[N]</p>
+<p class="topic-title">_[A]</p>
+<p>_[A] anchorname</p>
 </aside>
 <p>Inserts reference anchor at this location in the <em>doc</em>. Typically inserted
-before a section title.</p>
-<p>outputs: text, pdf, html</p>
+before a section title. If inserted before a section title, the section title
+is inserted as the link text.</p>
+<p>API: Insert, Value
+docs: text, PDF, HTML</p>
 </section>
-<section id="t-section-link">
-<span id="sectiontag"></span><h2><strong>[11t]</strong> section link<a class="headerlink" href="#t-section-link" title="Link to this heading">#</a></h2>
+<section id="t-anchor-reference">
+<span id="linktag"></span><h2><strong>[11t]</strong> anchor reference<a class="headerlink" href="#t-anchor-reference" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">anchorname _[S]</p>
-<p>text anchorname _[S] text</p>
+<p class="topic-title">_[N]</p>
+<p>text _[N] anchorname</p>
 </aside>
-<p>Replaces anchorname with Section title and link to Section.</p>
-<p>outputs: text, pdf, html</p>
+<p>Replaces anchorname with the section title that follows, and links to the
+anchor.</p>
+<p>API: Insert, Value
+docs: text, PDF, HTML</p>
 </section>
 <section id="t-doc-link">
 <span id="doctag"></span><h2><strong>[10t]</strong> doc link<a class="headerlink" href="#t-doc-link" title="Link to this heading">#</a></h2>
@@ -559,7 +570,8 @@ before a section title.</p>
 </aside>
 <p>Links <em>docs</em> within a <em>report</em>. Text will be continued and wrapped when
 formatted.</p>
-<p>outputs: text, pdf, html</p>
+<p>API: Insert, Value
+docs: text, PDF, HTML</p>
 </section>
 <section id="t-external-url">
 <span id="urltag"></span><h2><strong>[11t]</strong> external url<a class="headerlink" href="#t-external-url" title="Link to this heading">#</a></h2>
@@ -568,7 +580,8 @@ formatted.</p>
 <p>text at end of line _[U] urlname, link label</p>
 </aside>
 <p>External url link. Text will be continued and wrapped when formatted.</p>
-<p>outputs: text, pdf, html</p>
+<p>API: Insert, Value
+docs: text, PDF, HTML</p>
 </section>
 <section id="horizontal-line">
 <span id="linetag"></span><h2><strong>[13]</strong> horizontal line<a class="headerlink" href="#horizontal-line" title="Link to this heading">#</a></h2>
@@ -576,15 +589,17 @@ formatted.</p>
 <p class="topic-title">5 or more underscores</p>
 </aside>
 <p>Draws a horizontal line the width of the page.</p>
-<p>outputs: text, pdf, html</p>
-<p style="text-align: right;"> &lt;i&gt; </p></section>
+<p>API: Insert, Value
+docs: text, PDF, HTML</p>
+</section>
 <section id="t-new-page">
 <span id="pagetag"></span><h2><strong>[14t]</strong> new page<a class="headerlink" href="#t-new-page" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">5 or more double dashes</p>
 </aside>
 <p>Starts a new page.</p>
-<p>outputs: text, pdf, html</p>
+<p>API: Insert, Value
+docs: text, PDF, HTML</p>
 </section>
 </section>
 
@@ -636,16 +651,16 @@ formatted.</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-line-tag-summary"><strong>[1t]</strong> Line Tag Summary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-endnote-number"><strong>[2t]</strong>  endnote number</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-center-text"><strong>[3t]</strong> center text</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-right-justify-text"><strong>[4t]</strong> right justify text</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-latex-math"><strong>[5t]</strong> LaTeX math</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-ascii-math"><strong>[6t]</strong> ASCII math</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-latex-math"><strong>[2t]</strong> LaTeX math</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-ascii-math"><strong>[3t]</strong> ASCII math</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-endnote-number"><strong>[4t]</strong>  endnote number</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-center-text"><strong>[5t]</strong> center text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-right-justify-text"><strong>[6t]</strong> right justify text</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-equation-label"><strong>[7t]</strong> equation label</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-table-label"><strong>[8t]</strong> table label</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-table-title"><strong>[8t]</strong> table title</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-term-reference"><strong>[9t]</strong> term reference</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-link-anchor"><strong>[10t]</strong> link anchor</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-section-link"><strong>[11t]</strong> section link</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-anchor-reference"><strong>[11t]</strong> anchor reference</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-doc-link"><strong>[10t]</strong> doc link</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-external-url"><strong>[11t]</strong> external url</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#horizontal-line"><strong>[13]</strong> horizontal line</a></li>

@@ -9,11 +9,13 @@
     <hr>
 
 *rivt* is an open source software project that simplifies sharing and reuse of 
-engineering documents. It can reduce repetitive work and improve quality. 
+engineering documents. It can reduce repetitive work and improve document 
+quality. 
 
 Engineering documents may include text, images, tables, calculations, computer
 code and models. Although a number of document programs are available, reuse
-and sharing are restricted by software design, terms of use and distribution:
+and sharing are restricted by the software design, terms of use and
+licenses. In general,
 
 - documents may come from many incompatible programs
 - frequent software updates are needed to maintain document access
@@ -60,9 +62,19 @@ Jupyter        no       no         no      yes         yes      yes
 
     <hr>
 
-*rivtlib* implements 7 API functions. The name *rivt* is an acronym formed from
-the four of the API functions. Each API function takes a single *rivt string*
-(triple quoted string) argument.
+The *rivtlib* package implements the API and is designed to be:
+
+- **lightweight** - syntax includes about 3 dozen tags and commands.
+  
+- **extensible** - written in Python with direct access to 
+   thousands of Python packages.
+
+- **flexible** - produces single docs or large reports in text, HTML and
+  PDF formats from the same rivt files.
+
+The API implements a :ref:`folderstruc` and 7 API functions. The name 
+*rivt* is an acronym formed from the four primary API functions that 
+generate document content. 
 
 =============== =============== ===========================================
 API Function        Name             Purpose
@@ -76,8 +88,11 @@ rv.S(rS)           Skip              Skip section
 rv.X(rS)           Exit              Exit rivt without processing section
 =============== =============== ===========================================
 
-The text, HTML and PDF output files collectively are referred to as
-:term:`docs`. The following functions generate *doc* content.
+Each API function takes a single *rivt string* (triple quoted string) argument
+as input and outputs text, HTML and PDF output files referred to as
+:term:`docs`. 
+
+The functions that generate *doc* content include:
 
     The *Run API* executes shell commands. 
     
@@ -146,31 +161,18 @@ Section text is plain text that includes :term:`rivt markup` and
 :term:`block tags` and :term:`commands`. See :doc:`Markup</rvC01-markup>` 
 for further details.
 
-**[5t]**  Report Folders
--------------------------------
+.. _folderstruc:
+
+**[5t]**  Report Folder Structure
+----------------------------------
 
 .. raw:: html
 
     <hr>
 
 Reports are organized under a single root report folder with the prefix
-*rivt-*. *rivt files* are stored in the root folder and *rivt markup* file paths
-are relative to the root.  Resource files are stored in four primary subfolders:
-
-*public* 
-    Includes *rivt files* written by *rivtlib* intended for upload to 
-    a public repository.
-
-*publish*
-    Includes formatted *docs* and *reports* written by *rivtlib*.
-
-*src*
-    Includes author provided content, style and generating files for *docs* 
-    and *reports*.
-
-*stored*
-   Includes output files written by *rivtlib* including *logs*, *values*, 
-   *hidden*, and *metadata*.
+*rivt-*. *rivt files* are contained in the root folder and *rivt markup* 
+file paths used in *commands* are relative to the root. 
 
 .. _top-folders:
 
@@ -190,7 +192,7 @@ are relative to the root.  Resource files are stored in four primary subfolders:
     marked with double vertical bars ( || ).</p>
 
 
-**Top Level Folders**
+**Folders**
 
 .. code-block:: bash
 
@@ -208,7 +210,25 @@ are relative to the root.  Resource files are stored in four primary subfolders:
         ├── [stored]/                   || stored rivt files
         └── README.txt                  || searchable text report 
 
-An example of a complete folder structure is :ref:`here <report-folders>`.
+
+Resource files are stored in four primary subfolders:
+
+*public* 
+    Includes *rivt files* written by *rivtlib* intended for upload to 
+    a public repository.
+
+*publish*
+    Includes formatted *docs* and *reports* written by *rivtlib*.
+
+*src*
+    Includes author provided content, style and generating files for *docs* 
+    and *reports*.
+
+*stored*
+   Includes output files written by *rivtlib* including *logs*, *values*, 
+   *hidden*, and *metadata*. They may be appended to a report.
+
+A complete folder structure is :ref:`here <report-folders>`.
 
 **[6t]** *Single docs*
 ------------------------

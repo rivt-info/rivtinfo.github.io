@@ -9,33 +9,28 @@
     <hr>
 
 
-Format blocks of text.
+**Format blocks of text**
 
-========== ======================================= ==============================
-API Scope         Block Tags                        Description 
-========== ======================================= ==============================
-rv.R        _[[WIN]] label, *wait;nowait*           :ref:`wintag`
-rv.R        _[[MACOS]] label, *wait;nowait*         :ref:`mactag`
-rv.R        _[[LINUX]] label, *wait;nowait*         :ref:`linuxtag`
-rv.I, V     _[[INDENT]] spaces (4 default)          :ref:`indenttag`
-rv.I, V     _[[ITALIC]] spaces (4 default)          :ref:`italictag`
-rv.I, V     _[[ENDNOTES]] optional label            :ref:`notestag`
-rv.I, V     _[[TEXT]] optional language             :ref:`codetag`
-rv.I, V     _[[TOPIC]] topic                        :ref:`topictag`
-rv.V        _[[VALUES]] table title, rows (_[T])    Define values(all)
-rv.T        _[[PYTHON]] label, *rvspace*;newspace   :ref:`pythontag`
-rv.T        _[[LATEX]] label                        :ref:`latexblktag` [1]
-rv.T        _[[HTML]] label                         :ref:`htmltag`
-rv.T        _[[RST]] label                          :ref:`rsttag`
-rv.D        _[[LAYOUT]] label                       :ref:`layouttag` 
-all         _[[END]]                                End block (all)
-========== ======================================= ==============================
+========== ========================================= ==============================
+API Scope         Block Tags                           Description 
+========== ========================================= ==============================
+rv.R        _[[SHELL]] os,wait,open                    :ref:`shelltag`
+rv.I, V     _[[INDENT]] spaces (4 default)             :ref:`indenttag`
+rv.I, V     _[[ITALIC]] spaces (4 default)             :ref:`italictag`
+rv.I, V     _[[NOTES]] optional label                  :ref:`notestag`
+rv.I, V     _[[TEXT]] optional language                :ref:`codetag`
+rv.I, V     _[[TOPIC]] topic                           :ref:`topictag`
+rv.T        _[[PYTHON]] namespace                      :ref:`pythontag`
+rv.T        _[[SCRIPT]] type                           :ref:`scripttag`
+rv.D        _[[LAYOUT]] label                          :ref:`layouttag` 
+all         _[[END]]                                   :ref:`endblk`
+========== ========================================= ==============================
 
 [1] LaTeX processing requires the installation of *Texlive*
 
-.. _wintag:
+.. _shelltag:
 
-**[2t]** Windows batch commands
+**[2t]** shell commands
 ------------------------------------
 
 .. raw:: html
@@ -44,59 +39,30 @@ all         _[[END]]                                End block (all)
 
 .. code-block:: text
     
-  _[[WIN]] *nowait;wait*
-  batch command
-  batch command
-  ...
-   _[[END]]
+    Syntax:
+    _[[SHELL]] *win;mac;linux,wait;nowait,open;close*
+    shell command
+    shell command
+    ...
+    _[[END]]
+  
+    Example:
+    _[[SHELL]] win,nowait,open
+    dir
+    _[[END]]
 
 API: Run
-docs: text, pdf, html
+docs: text, PDF, HTML
 
-.. _mactag:
-
-**[3t]** Mac shell commands
---------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. code-block:: text
-    
-  _[[MACOS]] *nowait;wait*
-  shell command
-  shell command
-  ...
-   _[[END]]
-
-API: Run
-docs: text, pdf, html
-
-.. _linuxtag:
-
-**[4t]** Linux shell commands 
----------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. code-block:: text
-    
-  _[[LINUX]] *nowait;wait*
-  shell command
-  shell command
-  ...
-   _[[END]]
-
-API: Run
-docs: text, pdf, html
-
+The shell command runs shell scripts and is used for external program
+processing. The os parameter specifies the terminal type. The wait parameter
+specifies whether rivt file processing waits for the script to complete before
+continuing. The open parameter specifies whether to keep the shell window open
+after execution.
 
 .. _indenttag:
 
-**[5t]** indent text
+**[3t]** indent text
 ----------------------------------------------
 
 .. raw:: html
@@ -116,11 +82,11 @@ docs: text, pdf, html
 Indents text four spaces.
 
 API: Insert, Values
-docs: text, pdf, html
+docs: text, PDF, HTML
 
 .. _italictag:
 
-**[6t]** indent italic text
+**[4t]** indent italic text
 ------------------------------------------------
 
 .. raw:: html
@@ -139,11 +105,12 @@ docs: text, pdf, html
 
 Indents the specified number spaces and italicizes block.
 
-outputs: pdf, html
+API: Insert, Values
+docs: text, PDF, HTML
 
 .. _notestag:
 
-**[7t]** endnote text
+**[5t]** endnote text
 -------------------------------------------    
 
 .. raw:: html
@@ -165,11 +132,12 @@ outputs: pdf, html
 
 Formats and numbers an endnote in order of processing.
 
-outputs: text, pdf, html
+API: Insert, Values
+docs: text, PDF, HTML
 
 .. _codetag:
 
-**[8t]** literal text or code
+**[6t]** literal text or code
 ------------------------------------------------
 
 .. raw:: html
@@ -190,11 +158,12 @@ This block formats text as literal text or code. The parameters
 specify formatting and syntax coloring. Languages 
 include: - *python* - *bash* - *sh* - *cmd*
 
-outputs: text, pdf, html
+API: Insert, Values
+docs: text, PDF, HTML
 
 .. _topictag:
 
-**[9t]** topic
+**[7t]** topic
 ------------------------------------------------
 
 .. raw:: html
@@ -209,80 +178,16 @@ outputs: text, pdf, html
         text
         text
         ...
-        _[[QUIT]]
+        _[[END]]
 
 Formats a highlighted topic block.
 
-outputs: text, pdf, html
-
-.. _htmltag:
-
-**[10t]** HTML markup
----------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. code-block:: text
-        
-     _[[HTML]] label
-     markup
-     markup
-     ...
-     _[[QUIT]]
-
-Inserts HTML into *doc*. 
-
-outputs: text, pdf, html
-
-.. _latexblktag:
-
-**[11t]** LaTeX markup
-------------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. code-block:: text
-        
-    _[[LATEX]] label
-    markup
-    markup
-    ...
-    _[[END]]
-
-
-Inserts TeX into *doc*.  May require installation of LaTeX.
-
-outputs: text, pdf, html
-
-.. _rsttag:
-
-**[12t]** reStructuredText code
-------------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. code-block:: text
-        
-    _[[RST]] label
-    markup
-    markup
-    ...
-    _[[END]]
-
-
-Inserts TeX into *doc*.  May require installation of LaTeX.
-
-outputs: text, pdf, html
+API: Insert, Values
+docs: text, PDF, HTML
 
 .. _pythontag:
 
-**[13t]** Python code
+**[8t]** Python code
 ------------------------------------------------
 
 .. raw:: html
@@ -300,11 +205,34 @@ outputs: text, pdf, html
 Executes Python script in the *rivt namespace* or a user specified namespace.
 File paths in the script are relative to the *rivt file* folder.
 
-outputs: text, pdf, html
+API: Doc
+docs: text, PDF, HTML
+
+.. _scripttag:
+
+**[9t]** markup scripts
+---------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. code-block:: text
+        
+     _[[HTML]] optional label
+     markup
+     markup
+     ...
+     _[[END]]
+
+Inserts HTML into *doc*. 
+
+API: Doc
+docs: text, PDF, HTML
 
 .. _layouttag:
 
-**[11t]** Layout 
+**[10t]** Layout 
 ------------------------------------------------
 
 .. raw:: html
@@ -313,13 +241,32 @@ outputs: text, pdf, html
 
 .. code-block:: text
         
-    _[[LAYOUT]] label
-    markup
-    markup
-    ...
+    _[[LAYOUT]] optional label
+    docnameS = ""
+    pdfheaderL = []
+    footerL = []    
     _[[END]]
 
 
 Inserts TeX into *doc*.  May require installation of LaTeX.
 
-outputs: text, pdf, html
+API: Doc
+docs: text, PDF, HTML
+
+.. _endblk:
+
+**[11t]** End
+------------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. code-block:: text
+        
+    _[[END]] optional label
+
+Terminates a block tag.
+
+API: Doc
+docs: text, PDF, HTML

@@ -23,6 +23,18 @@
     A doc is a text, PDF or HTML file with the default name of the *rivt file* 
     and file type suffix.
 
+  single doc 
+  single docs 
+    A single doc is a rivt file that publishes a doc that is not part of 
+    a report and is used for quick docs that only require limited formatting. 
+    
+    It is specified in a comment variable directly after the *rivtlib* 
+    import statement.
+
+    # rv singledocB = True
+  
+    The default setting is False. The rivt file folder is used for 
+    source and output files. A folder structure is not used. 
 
   doc number 
     Prefix of a rivt and doc file name and used to organize a report. 
@@ -120,13 +132,6 @@
 
       | COMMAND | relative path | parameters
     
-
-
-  single doc 
-  single docs 
-    A document that is not part of a report. It is published using the rivt file
-    folder for source files and outputs *src* and *publish* subfolders. It is 
-    used for basic stand alone docs and has limited formatting capabilities.
 
   report
   reports

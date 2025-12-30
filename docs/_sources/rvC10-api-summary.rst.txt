@@ -27,7 +27,7 @@ rv.X(rS)           Quit              Exit rivt
 **[2t]** API Headers
 ------------------------
 
-The :term:`API headers` determine overall processing of the section.
+The :term:`API headers` inlcude processing settings for 11111111the section.
 
 ========== ===================== ==================== =====================
 API          private;public         include;store        section;merge         
