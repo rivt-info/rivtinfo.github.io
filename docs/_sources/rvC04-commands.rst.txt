@@ -29,7 +29,11 @@ rv.D       \| PDFAPPEND | relative path | place, cover                     :ref:
 rv.D       \| PUBLISH | ini rel. path | type                               :ref:`pubcmd` 
 ========== ============================================================== =====================
 
-[1] optional tags number the equation or table
+.. highlight:: none
+
+::
+
+    [1] optional tags number the equation or table
 
 .. _shellcmd:
 
@@ -268,9 +272,6 @@ outputs: text, PDF, HTML
 .. topic:: | SCRIPT | relative path | *rst, html, latex*
 
     | SCRIPT | page1.html | code excerpt
-
-Reads and inserts .html and .htm files into *doc*. 
-
 
 Reads and inserts .tex files into *doc*. May require installation of LaTeX.
 

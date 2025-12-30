@@ -19,19 +19,21 @@ rv.I, V                    text _[#] text                 :ref:`notetag`
 rv.I, V                    text _[C]                      :ref:`centertag` 
 rv.I, V                    text _[R]                      :ref:`righttag` 
 rv.I, V          equation label _[E]                      :ref:`equatag`
-rv.I, V             table title _[T]                      :ref:`tabletag` [1]
+rv.I, V             table title _[T]                      :ref:`tabletag` 
 rv.I, V             anchor_name _[A]                      :ref:`anchortag`
 rv.I, V                    text _[N] anchor_name link     :ref:`linktag`
 rv.I, V                    text _[G] glossary link term   :ref:`termtag`
 rv.I, V                    text _[D] doc link             :ref:`doctag`
 rv.I, V                    text _[U] external url         :ref:`urltag`   
-rv.I, V          \-\-\-\-\-                               :ref:`linetag` [2]
-rv.I, V          \=\=\=\=\=                               :ref:`pagetag` [2]
+rv.I, V          \-\-\-\-\-                               :ref:`linetag` [1]
+rv.I, V          \=\=\=\=\=                               :ref:`pagetag` [1]
 =============  ========================================= =======================
 
-[1] tag may be added to the title parameter in the TABLE command
+.. highlight:: none
 
-[2] must start in first indented column (absolute column 4)
+::
+
+    [1] must start in first indented column (absolute column 4)
 
 
 .. _latextag:

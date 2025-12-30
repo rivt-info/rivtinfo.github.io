@@ -21,12 +21,14 @@ rv.I, V     _[[NOTES]] optional label                  :ref:`notestag`
 rv.I, V     _[[TEXT]] optional language                :ref:`codetag`
 rv.I, V     _[[TOPIC]] topic                           :ref:`topictag`
 rv.T        _[[PYTHON]] namespace                      :ref:`pythontag`
-rv.T        _[[SCRIPT]] type                           :ref:`scripttag`
+rv.T        _[[SCRIPT]] type                           :ref:`scripttag` [1]
 rv.D        _[[LAYOUT]] label                          :ref:`layouttag` 
 all         _[[END]]                                   :ref:`endblk`
 ========== ========================================= ==============================
 
-[1] LaTeX processing requires the installation of *Texlive*
+::
+
+    [1] LaTeX processing requires the installation of *Texlive*
 
 .. _shelltag:
 
