@@ -62,15 +62,15 @@ Jupyter        no       no         no      yes         yes      yes
 
     <hr>
 
-The *rivtlib* package implements the API and is designed to be:
+The *rivtlib* package implements an API designed to be:
 
-- **lightweight** - syntax includes about 3 dozen tags and commands.
+- **lightweight** - the syntax includes about 3 dozen tags and commands.
   
-- **extensible** - written in Python with direct access to 
+- **extensible** - it is written in Python with direct access to 
    thousands of Python packages.
 
-- **flexible** - produces single docs or large reports in text, HTML and
-  PDF formats from the same rivt files.
+- **flexible** - it produces single docs or large reports in text, HTML and
+  PDF formats from the same rivt file or files.
 
 The API implements a :ref:`folderstruc` and 7 API functions. The name 
 *rivt* is an acronym formed from the four primary API functions that 
@@ -88,8 +88,8 @@ rv.S(rS)           Skip              Skip section
 rv.X(rS)           Exit              Exit rivt without processing section
 =============== =============== ===========================================
 
-Each API function takes a single *rivt string* (triple quoted string) argument
-as input and outputs text, HTML and PDF output files referred to as
+Each API function takes a single :term:`rivt string` argument
+as input and outputs text, HTML and PDF output files, referred to as
 :term:`docs`. 
 
 The functions that generate *doc* content include:
@@ -118,8 +118,8 @@ The remaining three functions are used for processing and debugging.
 
     <hr>
 
-A :term:`rivt file` is a Python plain text file (.py) that imports the 
-:term:`rivtlib` library and includes *rivt markup*:
+A :term:`rivt file` is a Python plain text file (.py) that includes *rivt
+markup* imports the :term:`rivtlib` library and :
 
 .. code-block:: python
 

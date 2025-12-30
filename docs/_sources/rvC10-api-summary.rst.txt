@@ -8,7 +8,7 @@ The API is imported using the import statement:
 
 ..  code-block:: python
 
-    import rivt.rivtlib as rv
+    import rivtlib.rvapi as rv
 
 Following the import statement, optional variables may be set.
 

@@ -54,10 +54,6 @@ section anchor _[A]                                  :ref:`anchortag`
  _[[TOPIC]] topic                           :ref:`topictag`
 ========================================= ==============================
 
-::
-
-    [1] LaTeX processing requires the installation of *Texlive*
-
 
 **[4t]** Read, Write Files
 -------------------------------------

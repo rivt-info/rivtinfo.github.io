@@ -1,28 +1,31 @@
 **E.1 Collaboration**
 =======================
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[1]** GitHub
-------------------
+**[1t]** Overview
+--------------------
 
 .. raw:: html
 
     <hr>
 
-VSCode and GitHub have a number of tools that faciliate collaboration when
-writing and sharing rivt files.
+A primary motivation for *rivt* is to facilitate cooperative
+improvement of rivt fileswhy a, and a reduction of reptitive work. As 
+a Python open source project a number of tools are available to faciliate 
+these goals. 
 
-The primary purpose of GitHub is to facilitate the version control and issue
-tracking aspects of software development. Labels, milestones, responsibility
-assignment, and a search engine are available for issue tracking. For version
-control, Git (and, by extension, GitHub) allows pull requests to propose changes
-to the source code. Users who can review the proposed changes can see a diff
-between the requested changes and approve them. In Git terminology, this action
-is called "committing" and one instance of it is a "commit." A history of all
-commits is kept and can be viewed at a later time.
+A feature of *rivt* is fine-grained control over sharing all or parts of a rivt
+file. Each section of a rivt file has a public/private setting that controls
+whether the section is written to a public file e.g. a file intended to be
+broadly shared. :doc:`Public rivt files</rvE02-publicrivt>` are stored in 
+a separate */public* folder which can be uploaded to a public repository. 
+Public rivt files can beidentifed by the different naming convention 
+e.g. rv-A01-filename.py in contrast with rvA01-filename for private files.
+
+Two external tools, the development platform GitHub and the opensoure IDE
+VSCode, have many collaboration features that work well with rivt files.
+
+**[2t]** Git and GitHub
+------------------------
 
 GitHub supports the following formats and features:
 
@@ -64,21 +67,29 @@ GitHub supports the following formats and features:
   setting your repositories to be viewed publicly, you agree to allow others to
   view and fork your repositories."
 
-.. raw:: html
 
-    <p id="api">&lt;i&gt;</p>
-
-**[2]** VSCode
+**[2t]** VSCode
 ------------------
 
 .. raw:: html
 
     <hr>
 
- Collaboration in VS Code is primarily facilitated by the Visual Studio Live
- Share extension. This extension enables real-time collaborative development,
- allowing multiple developers to work on the same codebase simultaneously,
- share debugging sessions, and interact within the same environment.
+VSCode is an open source IDE with a large set of extensions, some of which
+support collaboration. The primary purpose of GitHub is to facilitate the
+version control and issue tracking aspects of software development. Labels,
+milestones, responsibility assignment, and a search engine are available for
+issue tracking. For version control, Git (and, by extension, GitHub) allows
+pull requests to propose changes to the source code. Users who can review the
+proposed changes can see a diff between the requested changes and approve them.
+In Git terminology, this action is called "committing" and one instance of it
+is a "commit." A history of all commits is kept and can be viewed at a later
+time.
+
+Collaboration in VS Code is primarily facilitated by the Visual Studio Live
+Share extension. This extension enables real-time collaborative development,
+allowing multiple developers to work on the same codebase simultaneously,
+share debugging sessions, and interact within the same environment.
 
 .. toctree::
     :maxdepth: 3

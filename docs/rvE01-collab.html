@@ -59,7 +59,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'rvE01-collab';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="E.2 Public rivt Files" href="rvE02-publicrivt.html" />
+    <link rel="next" title="E.2 Public rivt riles" href="rvE02-publicrivt.html" />
     <link rel="prev" title="D.5 Example" href="rvD06-reportex.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -313,7 +313,7 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="rvE02-publicrivt.html"><strong>E.2 Public rivt Files</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvE02-publicrivt.html"><strong>E.2 Public rivt riles</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvE03-ghsearch.html"><strong>E.3 GitHub Search</strong></a></li>
 </ul>
 </div>
@@ -374,18 +374,24 @@
                   
   <section id="e-1-collaboration">
 <h1><strong>E.1 Collaboration</strong><a class="headerlink" href="#e-1-collaboration" title="Link to this heading">#</a></h1>
-<p id="api">&lt;i&gt;</p><section id="github">
-<h2><strong>[1]</strong> GitHub<a class="headerlink" href="#github" title="Link to this heading">#</a></h2>
-<hr><p>VSCode and GitHub have a number of tools that faciliate collaboration when
-writing and sharing rivt files.</p>
-<p>The primary purpose of GitHub is to facilitate the version control and issue
-tracking aspects of software development. Labels, milestones, responsibility
-assignment, and a search engine are available for issue tracking. For version
-control, Git (and, by extension, GitHub) allows pull requests to propose changes
-to the source code. Users who can review the proposed changes can see a diff
-between the requested changes and approve them. In Git terminology, this action
-is called “committing” and one instance of it is a “commit.” A history of all
-commits is kept and can be viewed at a later time.</p>
+<section id="t-overview">
+<h2><strong>[1t]</strong> Overview<a class="headerlink" href="#t-overview" title="Link to this heading">#</a></h2>
+<hr><p>A primary motivation for <em>rivt</em> is to facilitate cooperative
+improvement of rivt fileswhy a, and a reduction of reptitive work. As
+a Python open source project a number of tools are available to faciliate
+these goals.</p>
+<p>A feature of <em>rivt</em> is fine-grained control over sharing all or parts of a rivt
+file. Each section of a rivt file has a public/private setting that controls
+whether the section is written to a public file e.g. a file intended to be
+broadly shared. <a class="reference internal" href="rvE02-publicrivt.html"><span class="doc">Public rivt files</span></a> are stored in
+a separate <em>/public</em> folder which can be uploaded to a public repository.
+Public rivt files can beidentifed by the different naming convention
+e.g. rv-A01-filename.py in contrast with rvA01-filename for private files.</p>
+<p>Two external tools, the development platform GitHub and the opensoure IDE
+VSCode, have many collaboration features that work well with rivt files.</p>
+</section>
+<section id="t-git-and-github">
+<h2><strong>[2t]</strong> Git and GitHub<a class="headerlink" href="#t-git-and-github" title="Link to this heading">#</a></h2>
 <p>GitHub supports the following formats and features:</p>
 <ul class="simple">
 <li><p>Documentation,including automatically rendered README files in a variety of
@@ -414,17 +420,26 @@ GitHub to meet the Open Source Definition. The terms of service state, “By
 setting your repositories to be viewed publicly, you agree to allow others to
 view and fork your repositories.”</p></li>
 </ul>
-<p id="api">&lt;i&gt;</p></section>
-<section id="vscode">
-<h2><strong>[2]</strong> VSCode<a class="headerlink" href="#vscode" title="Link to this heading">#</a></h2>
-   <hr>
-
-Collaboration in VS Code is primarily facilitated by the Visual Studio Live
+</section>
+<section id="t-vscode">
+<h2><strong>[2t]</strong> VSCode<a class="headerlink" href="#t-vscode" title="Link to this heading">#</a></h2>
+<hr><p>VSCode is an open source IDE with a large set of extensions, some of which
+support collaboration. The primary purpose of GitHub is to facilitate the
+version control and issue tracking aspects of software development. Labels,
+milestones, responsibility assignment, and a search engine are available for
+issue tracking. For version control, Git (and, by extension, GitHub) allows
+pull requests to propose changes to the source code. Users who can review the
+proposed changes can see a diff between the requested changes and approve them.
+In Git terminology, this action is called “committing” and one instance of it
+is a “commit.” A history of all commits is kept and can be viewed at a later
+time.</p>
+<p>Collaboration in VS Code is primarily facilitated by the Visual Studio Live
 Share extension. This extension enables real-time collaborative development,
 allowing multiple developers to work on the same codebase simultaneously,
-share debugging sessions, and interact within the same environment.<div class="toctree-wrapper compound">
+share debugging sessions, and interact within the same environment.</p>
+<div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="rvE02-publicrivt.html"><strong>E.2 Public rivt Files</strong></a><ul>
+<li class="toctree-l1"><a class="reference internal" href="rvE02-publicrivt.html"><strong>E.2 Public rivt riles</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="rvE02-publicrivt.html#id1"><strong>[1]</strong></a></li>
 </ul>
 </li>
@@ -462,7 +477,7 @@ share debugging sessions, and interact within the same environment.<div class="t
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>E.2 Public rivt Files</strong></p>
+        <p class="prev-next-title"><strong>E.2 Public rivt riles</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -485,8 +500,9 @@ share debugging sessions, and interact within the same environment.<div class="t
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github"><strong>[1]</strong> GitHub</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vscode"><strong>[2]</strong> VSCode</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-overview"><strong>[1t]</strong> Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-git-and-github"><strong>[2t]</strong> Git and GitHub</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-vscode"><strong>[2t]</strong> VSCode</a></li>
 </ul>
   </nav></div>
 

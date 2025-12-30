@@ -488,16 +488,16 @@ programs.</p>
 </section>
 <section id="t-rivt-api">
 <h2><strong>[2t]</strong> rivt API<a class="headerlink" href="#t-rivt-api" title="Link to this heading">#</a></h2>
-<hr><p>The <em>rivtlib</em> package implements the API and is designed to be:</p>
+<hr><p>The <em>rivtlib</em> package implements an API designed to be:</p>
 <ul class="simple">
-<li><p><strong>lightweight</strong> - syntax includes about 3 dozen tags and commands.</p></li>
+<li><p><strong>lightweight</strong> - the syntax includes about 3 dozen tags and commands.</p></li>
 <li><dl class="simple">
-<dt><strong>extensible</strong> - written in Python with direct access to</dt><dd><p>thousands of Python packages.</p>
+<dt><strong>extensible</strong> - it is written in Python with direct access to</dt><dd><p>thousands of Python packages.</p>
 </dd>
 </dl>
 </li>
-<li><p><strong>flexible</strong> - produces single docs or large reports in text, HTML and
-PDF formats from the same rivt files.</p></li>
+<li><p><strong>flexible</strong> - it produces single docs or large reports in text, HTML and
+PDF formats from the same rivt file or files.</p></li>
 </ul>
 <p>The API implements a <a class="reference internal" href="#folderstruc"><span class="std std-ref">[5t]  Report Folder Structure</span></a> and 7 API functions. The name
 <em>rivt</em> is an acronym formed from the four primary API functions that
@@ -541,8 +541,8 @@ generate document content.</p>
 </tbody>
 </table>
 </div>
-<p>Each API function takes a single <em>rivt string</em> (triple quoted string) argument
-as input and outputs text, HTML and PDF output files referred to as
+<p>Each API function takes a single <a class="reference internal" href="rvA02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> argument
+as input and outputs text, HTML and PDF output files, referred to as
 <a class="reference internal" href="rvA02-terms.html#term-docs"><span class="xref std std-term">docs</span></a>.</p>
 <p>The functions that generate <em>doc</em> content include:</p>
 <blockquote>
@@ -560,8 +560,8 @@ as input and outputs text, HTML and PDF output files referred to as
 </section>
 <section id="t-rivt-file">
 <h2><strong>[3t]</strong> <em>rivt File</em><a class="headerlink" href="#t-rivt-file" title="Link to this heading">#</a></h2>
-<hr><p>A <a class="reference internal" href="rvA02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> is a Python plain text file (.py) that imports the
-<a class="reference internal" href="rvA02-terms.html#term-rivtlib"><span class="xref std std-term">rivtlib</span></a> library and includes <em>rivt markup</em>:</p>
+<hr><p>A <a class="reference internal" href="rvA02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> is a Python plain text file (.py) that includes <em>rivt
+markup</em> imports the <a class="reference internal" href="rvA02-terms.html#term-rivtlib"><span class="xref std std-term">rivtlib</span></a> library and :</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
 </pre></div>
 </div>
