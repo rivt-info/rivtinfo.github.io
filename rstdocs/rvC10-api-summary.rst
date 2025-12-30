@@ -12,10 +12,6 @@ The API is imported using the import statement:
 
 Following the import statement, optional variables may be set.
 
-..  code-block:: python
-
-     # rv singledocB=True
-
 *singledocB* overrides the default report structure and specifies that
 resource files are read from and written to the *rivt file* folder instead of
 *rivt folders*. It is intended for simple, *single docs* with more limited
@@ -23,9 +19,13 @@ formatting options. The default is *False*.
 
 ..  code-block:: python
 
-     # rv docNameS=new doc name
+     # rv singledocB=True
 
-*docNameS* overrides the default doc name taken from the rivt file name.
+*docnameS* overrides the default doc name taken from the rivt file name.
+
+..  code-block:: python
+
+     # rv docnameS=new doc name
 
 
 **[2t]** API Functions

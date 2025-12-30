@@ -8,27 +8,26 @@
 
     <hr>
 
-A :term:`rivt string`  is a utf-8 text triple quoted string argument to an 
-:doc:`API function <rvA01-intro>`. It may include :term:`rivt markup`, 
-a readable, plain text language that generates formatted text, PDF or 
-HTML :term:`docs`. The different *doc* types are generated from the 
-same *rivt file*. 
+A :term:`rivt string` is a utf-8 text triple quoted string argument to an
+:doc:`API function <rvA01-intro>`. It is composed of two parts - a header that
+specifies section processing and content text. 
 
-The first line of a *rivt string* is a header, followed by text 
+The first line of a *rivt string* is the header, followed by text 
 indented 4 spaces for improved readability and section folding.
+Content may include :term:`rivt markup`, a readable, plain text language
+that generates formatted text, PDF or HTML :term:`docs` and other arbitrary text. 
+
 
 .. code-block:: python
 
-    rv._("""Section Label | show;hide, private;public, section;merge
+    rv._("""Section Label | include;store, private;public, section;merge
 
-        section text (utf-8 text)
+         Content text indented 4 spaces (utf-8 text)
         
         ...
         
         """)
 
-The *rivt string* begins with an *API header* that includes a "section
-label" and section formatting parameters.
 
 **[2t]** API Header 
 -------------------------
@@ -77,8 +76,7 @@ Examples of *header* settings are shown below.
 
     rv.I("""A New Section | private, include, section
 
-        Content text (utf-8 text)
-  
+        Content text
         ...
         
         """)
@@ -87,7 +85,7 @@ Examples of *header* settings are shown below.
 
     rv.I("""A New Section | 
 
-        Content text (utf-8 text)
+        Content text
   
         ...
         
@@ -100,7 +98,7 @@ Examples of *header* settings are shown below.
 
     rv.I("""A Merged Section | merge
 
-        Content text (utf-8)
+        Content text
 
         ...
         
@@ -122,7 +120,7 @@ It arbitrary text along with :doc:`line tags<rvC02-linetags>`,
 
     rv._("""Section Label | 
 
-        Content text
+        Content text indented 4 spaces (utf-8).
         ...
         
         """)

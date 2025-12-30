@@ -128,23 +128,26 @@ Most of a docs's content is written using the Insert and Value API's.
     <hr>
 
 An API function starts in the first column and takes a triple quoted
-:term:`rivt string` (rS) argument. The first line of the string is a header
-that specifies section labeling and processing. The :term:`header` is followed 
-by section text indented four spaces for legibility and section folding.
+:term:`rivt string` (rS) argument. The first line of a *rivt string* is a
+header, followed by content text indented 4 spaces for improved readability 
+and section folding. 
+
+The :term:`header` specifies the section title and other
+processing parameters. The :term:`content text`` may include 
+:term:`rivt markup` and other arbitrary text. For further details 
+see :doc:`here <rvC01-markup>`.
 
 .. code-block:: python
 
-    rv._("""Header
+    rv._("""Section Label | parameters
 
-        section text
+         Content text indented four spaces
+        
         ...
         
         """)
 
-Section text is plain text that includes :term:`rivt markup` and
-:term:`reStructuredText`. *rivt markup* includes :term:`line tags`, 
-:term:`block tags` and :term:`commands`. See :doc:`Markup</rvC01-markup>` 
-for further details.
+
 
 **[4t]** rivt File
 --------------------------------------------------------------------- 
