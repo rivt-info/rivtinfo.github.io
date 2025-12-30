@@ -388,7 +388,9 @@
 <h2><strong>[1t]</strong> rv.I Markup<a class="headerlink" href="#t-rv-i-markup" title="Link to this heading">#</a></h2>
 <hr><p>The <em>Insert</em> API function inserts static sources into the <em>doc</em>, including
 images, tables, links and formatted text.</p>
-<p><strong>Format a line of text</strong></p>
+</section>
+<section id="t-format-line">
+<h2><strong>[2t]</strong> Format line<a class="headerlink" href="#t-format-line" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Line Tags</p></th>
@@ -445,11 +447,13 @@ images, tables, links and formatted text.</p>
 [2] must start in first indented column (absolute column 4)
 </pre></div>
 </div>
-<p><strong>Format a block of text</strong></p>
+</section>
+<section id="t-format-block">
+<h2><strong>[3t]</strong> Format block<a class="headerlink" href="#t-format-block" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Block Tags</p></th>
-<th class="head"><p>Description (doc scope)</p></th>
+<th class="head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
@@ -459,54 +463,51 @@ images, tables, links and formatted text.</p>
 <tr class="row-odd"><td><p>_[[ITALIC]] spaces (4 default)</p></td>
 <td><p><a class="reference internal" href="rvC03-blocktags.html#italictag"><span class="std std-ref">[4t] indent italic text</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>_[[ENDNOTES]] optional label</p></td>
-<td><p>Endnote descriptions (all)</p></td>
+<tr class="row-even"><td><p>_[[NOTES]] optional label</p></td>
+<td><p><a class="reference internal" href="rvC03-blocktags.html#notestag"><span class="std std-ref">[5t] endnote text</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>_[[TEXT]] optional language</p></td>
-<td><p><em>literal</em>, code language (all)</p></td>
+<td><p><a class="reference internal" href="rvC03-blocktags.html#codetag"><span class="std std-ref">[6t] literal text or code</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>_[[TERMS]] label</p></td>
-<td><p>Glossary of terms</p></td>
-</tr>
-<tr class="row-odd"><td><p>_[[TOPIC]] topic</p></td>
-<td><p>Topic (all)</p></td>
-</tr>
-<tr class="row-even"><td><p>_[[END]]</p></td>
-<td><p>End block (all)</p></td>
+<tr class="row-even"><td><p>_[[TOPIC]] topic</p></td>
+<td><p><a class="reference internal" href="rvC03-blocktags.html#topictag"><span class="std std-ref">[7t] topic</span></a></p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p><strong>Read, Write and Format Files</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[1] LaTeX processing requires the installation of *Texlive*
+</pre></div>
+</div>
+</section>
+<section id="t-read-write-files">
+<h2><strong>[4t]</strong> Read, Write Files<a class="headerlink" href="#t-read-write-files" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><div class="line-block">
 <div class="line">Command | path | parameters</div>
 </div>
 </th>
-<th class="head"><p>R/W</p></th>
-<th class="head"><p>input types</p></th>
+<th class="head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>| IMAGE | relative path |  scale, caption (_[I])</p></td>
-<td><p>R</p></td>
-<td><p><em>.png, .jpg</em></p></td>
+<tr class="row-even"><td><p>| IMAGE | relative path |  scale, caption, figure</p></td>
+<td><p><a class="reference internal" href="rvC04-commands.html#imgcmd"><span class="std std-ref">[3t] insert image</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>| IMAGE2 | relative path | s1, s2, c1, c2 (_[I])</p></td>
-<td><p>R</p></td>
-<td><p><em>.png, jpg</em></p></td>
+<tr class="row-odd"><td><p>| IMAGE2 | rel path1, rel path2 | s1, s2, c1, c2, fig1, fig2</p></td>
+<td><p><a class="reference internal" href="rvC04-commands.html#img2cmd"><span class="std std-ref">[4t] insert adjacent images</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>| TABLE | relative path | width, l;c;r, title</p></td>
-<td><p>R</p></td>
-<td><p><em>csv, txt, xlsx</em></p></td>
+<tr class="row-even"><td><p>| TABLE | relative path | width, align, title (_[T]) [1]</p></td>
+<td><p><a class="reference internal" href="rvC04-commands.html#tablecmd"><span class="std std-ref">[5t] format table</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>| TEXT | relative path |  <em>normal;literal</em> ;code</p></td>
-<td><p>R</p></td>
-<td><p><em>txt, code</em></p></td>
+<tr class="row-odd"><td><p>| TEXT | relative path |  language</p></td>
+<td><p><a class="reference internal" href="rvC04-commands.html#textcmd"><span class="std std-ref">[6t] format text</span></a></p></td>
 </tr>
 </tbody>
 </table>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[1] optional tags number the equation or table
+</pre></div>
 </div>
 </section>
 </section>
@@ -559,6 +560,9 @@ images, tables, links and formatted text.</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rv-i-markup"><strong>[1t]</strong> rv.I Markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-format-line"><strong>[2t]</strong> Format line</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-format-block"><strong>[3t]</strong> Format block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-read-write-files"><strong>[4t]</strong> Read, Write Files</a></li>
 </ul>
   </nav></div>
 

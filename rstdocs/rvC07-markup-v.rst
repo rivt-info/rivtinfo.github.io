@@ -2,7 +2,7 @@
 ========================
 
 
-**[1t]** Summary
+**[1t]** rv.V Markup
 -------------------------
 
 .. raw:: html
@@ -12,7 +12,9 @@
 The *Value* API function inserts static sources including images, tables and
 formatted text.
 
-**Format a line of text**
+
+**[2t]** Format line
+-------------------------------------
 
 ========================================= =======================
        Line Tags                            Description 
@@ -39,7 +41,8 @@ formatted text.
 
 
 
-**Format blocks of text**
+**[3t]** Format block
+-------------------------------------
 
 ========================================= ==============================
        Block Tags                           Description 
@@ -57,7 +60,8 @@ formatted text.
     [1] LaTeX processing requires the installation of *Texlive*
 
 
-**Read, write and format files**
+**[4t]** Read, Write Files
+-------------------------------------
 
 ============================================================== =====================
          | Command | path | parameters                          Description

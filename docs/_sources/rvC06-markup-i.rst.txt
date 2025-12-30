@@ -11,7 +11,8 @@
 The *Insert* API function inserts static sources into the *doc*, including
 images, tables, links and formatted text.
 
-**Format a line of text**
+**[2t]** Format line
+-------------------------------------
 
 =========================================== =======================================
         Line Tags                                 Description 
@@ -40,28 +41,39 @@ section anchor _[A]                                  :ref:`anchortag`
     [2] must start in first indented column (absolute column 4)
 
     
-**Format a block of text**
+**[3t]** Format block
+-------------------------------------
 
-======================================= ==============================
-       Block Tags                        Description (doc scope)
-======================================= ==============================
- _[[INDENT]] spaces (4 default)          :ref:`indenttag`
- _[[ITALIC]] spaces (4 default)          :ref:`italictag`
- _[[ENDNOTES]] optional label            Endnote descriptions (all)
- _[[TEXT]] optional language             *literal*, code language (all)
- _[[TERMS]] label                        Glossary of terms
- _[[TOPIC]] topic                        Topic (all)
- _[[END]]                                End block (all)
-======================================= ==============================
+========================================= ==============================
+       Block Tags                           Description 
+========================================= ==============================
+ _[[INDENT]] spaces (4 default)             :ref:`indenttag`
+ _[[ITALIC]] spaces (4 default)             :ref:`italictag`
+ _[[NOTES]] optional label                  :ref:`notestag`
+ _[[TEXT]] optional language                :ref:`codetag`
+ _[[TOPIC]] topic                           :ref:`topictag`
+========================================= ==============================
 
-**Read, Write and Format Files**
+::
 
-======================================================== ===== ==================
-         | Command | path | parameters                    R/W   input types
-======================================================== ===== ==================
- \| IMAGE | relative path |  scale, caption (_[I])        R     *.png, .jpg*
- \| IMAGE2 | relative path | s1, s2, c1, c2 (_[I])        R     *.png, jpg*
- \| TABLE | relative path | width, l;c;r, title           R     *csv, txt, xlsx*
- \| TEXT | relative path |  *normal;literal* ;code        R     *txt, code*
-======================================================== ===== ==================
+    [1] LaTeX processing requires the installation of *Texlive*
+
+
+**[4t]** Read, Write Files
+-------------------------------------
+
+============================================================== =====================
+         | Command | path | parameters                          Description
+============================================================== =====================
+\| IMAGE | relative path |  scale, caption, figure              :ref:`imgcmd`
+\| IMAGE2 | rel path1, rel path2 | s1, s2, c1, c2, fig1, fig2   :ref:`img2cmd`
+\| TABLE | relative path | width, align, title (_[T]) [1]       :ref:`tablecmd`     
+\| TEXT | relative path |  language                             :ref:`textcmd`
+============================================================== =====================
+
+.. highlight:: none
+
+::
+
+    [1] optional tags number the equation or table
 

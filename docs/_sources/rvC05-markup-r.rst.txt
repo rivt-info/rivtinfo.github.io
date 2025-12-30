@@ -12,18 +12,22 @@
 
 The *Run* API function executes shell commands.
 
+**Format a block of text**
+
 ======================================= ==============================
-       Block Tags                        Description
+       Block Tags                             Description
 ======================================= ==============================
  _[[SHELL]] os,wait,open                    :ref:`shelltag`
  _[[END]]                                   :ref:`endblk`
 ======================================= ==============================
 
-============================================= =================
-        | COMMAND | path | parameters           input types
-============================================= =================
-\| SHELL | relative path | os, wait            :ref:`shellcmd`
-============================================= =================
+**Read, Write and Format Files**
+
+====================================== =================
+   | COMMAND | path | parameters         Description
+====================================== =================
+\| SHELL | relative path | os, wait     :ref:`shellcmd`
+====================================== =================
 
 
 
