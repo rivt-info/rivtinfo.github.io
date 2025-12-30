@@ -283,4 +283,4 @@ formatting options.
     rvC08-markup-t.rst
     rvC09-markup-d.rst
     rvC10-api-summary.rst
-    rvC11-example1.rst
+
