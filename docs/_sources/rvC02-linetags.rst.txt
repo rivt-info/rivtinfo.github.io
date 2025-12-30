@@ -47,7 +47,7 @@ rv.I, V          \=\=\=\=\=                               :ref:`pagetag` [1]
 
 .. topic:: _[L]
 
-    \frac{1}{\sqrt{x}} _[L]
+    \frac{1}{\sqrt{x}} **_[L]**
 
 The LaTeX math expression will be formatted in the specified font.
 
@@ -66,7 +66,7 @@ docs: text, PDF, HTML
 
 .. topic:: _[M]
 
-    f(x,y) = sin(x)**2 + y/5 _[M]
+    f(x,y) = sin(x)**2 + y/5 **_[M]**
 
 The math expression will be formated in ASCII text.
 
@@ -86,7 +86,7 @@ docs: text, PDF, HTML
 
 .. topic:: _[#] 
     
-   Text is wrapped when formatted. _[#]
+   Text is wrapped when formatted. **_[#]**
 
 This tag assigns an endnote number to the text. Endnotes are defined with the
 block tag _[[NOTE]] and are listed at the end of the *doc*. Numbers are
@@ -106,7 +106,7 @@ docs: text, PDF, HTML
 
 .. topic:: _[C]
 
-    some text _[C]
+    some text **_[C]**
 
 Center text within the page margins.
 
@@ -124,7 +124,7 @@ docs: text, PDF, HTML
 
 .. topic:: _[R]
 
-    some text _[R]
+    some text **_[R]**
 
 The LaTeX math expression will be formatted in PDF and HTML.
 
@@ -142,7 +142,7 @@ docs: text, PDF, HTML
 
 .. topic:: _[E]
 
-   equation label  _[E]
+   equation label  **_[E]**
 
 Labels and numbers equation.
 
@@ -160,7 +160,7 @@ docs: text, PDF, HTML
 
 .. topic:: _[T]
 
-   Table Title _[T]
+   Table Title **_[T]**
 
 Labels and numbers tables.
 
@@ -177,7 +177,7 @@ outputs: text, PDF, HTML
 
 .. topic:: _[G]
 
-   term in glossary _[G]
+   term in glossary **_[G]**
 
 link to term in glossary
 
@@ -195,7 +195,7 @@ docs: text, PDF, HTML
 
 .. topic:: _[A] 
     
-     _[A] anchorname
+     **_[A]** anchorname
 
 Inserts reference anchor at this location in the *doc*. Typically inserted
 before a section title. If inserted before a section title, the section title
