@@ -12,7 +12,6 @@
 
 - document formatting
 - numerical analysis
-- code simplifcation
 - symbolic processing
 - visualization
 
@@ -25,12 +24,13 @@ installing *rivt* is :doc:`rivtuv <rvB01-install>`.
 =============================================== ================================
   "pyzo>=4.20.0"                                   lightweight IDE
   "pyside6>=6.10.1"                                QT bindings
-  "fastcore>=1.8.16"                                format tables                 
+  "fastcore>=1.8.16"                               code simplification                 
   "tabulate>=0.9.0"                                format tables                 
   "pillow>=11.2.1"                                 image processing
   "matplotlib>=3.10.1"                             data visualization
   "sympy>=1.13.3"                                  symbolic analysis
   "numpy>=2.2.5"                                   numerical analysis
+  "scipy>=1.16.3"                                  numerical analysis
   "pandas>=2.2.3"                                  data analysis    
   "docutils>=0.21.2"                               reStructuredText processing  
   "ipython>=8.16.2"                                interactive Python shell

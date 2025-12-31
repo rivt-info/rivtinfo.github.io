@@ -14,17 +14,19 @@ function*. In that case files are read and written to the *rivt file* folder.
 
 **Format blocks of text**
 
-========== ========================================= ==============================
-API Scope         Block Tags                           Description 
-========== ========================================= ==============================
-rv.T        _[[PYTHON]] namespace                      :ref:`pythontag`
-rv.T        _[[SCRIPT]] type                           :ref:`scripttag` [1]
-all         _[[END]]                                   :ref:`endblk`
-========== ========================================= ==============================
+========================================= ==============================
+       Block Tags                           Description 
+========================================= ==============================
+ _[[PYTHON]] namespace                      :ref:`pythontag`
+ _[[SCRIPT]] type                           :ref:`scripttag` [1]
+ _[[END]]                                   :ref:`endblk`
+========================================= ==============================
+
+.. highlight:: none
 
 ::
 
-    [1] LaTeX processing requires the installation of *Texlive*
+    [1] LaTeX processing requires the installation of Texlive
 
 
 **Read, write and format files**

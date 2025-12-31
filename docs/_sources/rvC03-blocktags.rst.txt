@@ -28,7 +28,7 @@ all         _[[END]]                                   :ref:`endblk`
 
 ::
 
-    [1] LaTeX processing requires the installation of *Texlive*
+    [1] LaTeX processing requires the installation of Texlive
 
 .. _shelltag:
 

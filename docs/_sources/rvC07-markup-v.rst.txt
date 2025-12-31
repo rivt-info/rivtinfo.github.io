@@ -55,10 +55,6 @@ formatted text.
  _[[END]]                                   :ref:`endblk`
 ========================================= ==============================
 
-::
-
-    [1] LaTeX processing requires the installation of *Texlive*
-
 
 **[4t]** Read, Write Files
 -------------------------------------
@@ -80,5 +76,5 @@ c <= expression | unit1, unit2, decimal | label (_[E]) [1]      :ref:`asscmd`
 
 ::
 
-    [1] optional tags number the equation or table
+    [1] optional tags will number the equation or table
 

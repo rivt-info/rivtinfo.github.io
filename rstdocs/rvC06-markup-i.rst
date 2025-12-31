@@ -52,6 +52,7 @@ section anchor _[A]                                  :ref:`anchortag`
  _[[NOTES]] optional label                  :ref:`notestag`
  _[[TEXT]] optional language                :ref:`codetag`
  _[[TOPIC]] topic                           :ref:`topictag`
+ _[[END]]                                   :ref:`endblk`
 ========================================= ==============================
 
 
@@ -71,5 +72,5 @@ section anchor _[A]                                  :ref:`anchortag`
 
 ::
 
-    [1] optional tags number the equation or table
+    [1] optional tag will number the table
 

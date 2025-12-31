@@ -23,7 +23,7 @@ rv.V       a := 1*IN  | unit1, unit2, decimal | label                      :ref:
 rv.V       c <= expression | unit1, unit2, decimal | label (_[E]) [1]      :ref:`asscmd`
 rv.V,T     \| PYTHON | relative path | namespace                           :ref:`pycmd`
 rv.T       \| SCRIPT | relative path | type                                :ref:`scriptcmd`
-rv.D       \| PDFAPPEND | relative path | place,title                      :ref:`appcmd`   
+rv.D       \| ATTACHPDF | relative path | place,title                      :ref:`appcmd`   
 rv.D       \| PUBLISH | ini rel. path | type                               :ref:`pubcmd` 
 ========== ============================================================== =====================
 
@@ -32,6 +32,7 @@ rv.D       \| PUBLISH | ini rel. path | type                               :ref:
 ::
 
     [1] optional tag numbers the equation or table
+
 
 .. _shellcmd:
 
