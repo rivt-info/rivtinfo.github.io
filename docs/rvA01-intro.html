@@ -574,21 +574,22 @@ VSCode or Spyder.</p>
 <section id="t-rivt-string">
 <h2><strong>[3t]</strong> rivt String<a class="headerlink" href="#t-rivt-string" title="Link to this heading">#</a></h2>
 <hr><p>An API function starts in the first column and takes a triple quoted
-<a class="reference internal" href="rvA02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> (rS) argument. The first line of the string is a header
-that specifies section labeling and processing. The <a class="reference internal" href="rvA02-terms.html#term-header"><span class="xref std std-term">header</span></a> is followed
-by section text indented four spaces for legibility and section folding.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Header</span>
+<a class="reference internal" href="rvA02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> (rS) argument. The first line of a <em>rivt string</em> is a
+header, followed by <a class="reference internal" href="rvA02-terms.html#term-content"><span class="xref std std-term">content</span></a> indented 4 spaces for improved readability
+and section folding.</p>
+<p>The <a class="reference internal" href="rvA02-terms.html#term-header"><span class="xref std std-term">header</span></a> specifies the section title and other
+processing parameters. The content text may include
+<a class="reference internal" href="rvA02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> and other arbitrary text. For further details
+see <a class="reference internal" href="rvC01-markup.html"><span class="doc">here</span></a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | parameters</span>
 
-<span class="s2">    section text</span>
+<span class="s2">     Content text indented four spaces</span>
+
 <span class="s2">    ...</span>
 
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Section text is plain text that includes <a class="reference internal" href="rvA02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> and
-<a class="reference internal" href="rvA02-terms.html#term-restructuredtext"><span class="xref std std-term">reStructuredText</span></a>. <em>rivt markup</em> includes <a class="reference internal" href="rvA02-terms.html#term-line-tags"><span class="xref std std-term">line tags</span></a>,
-<a class="reference internal" href="rvA02-terms.html#term-block-tags"><span class="xref std std-term">block tags</span></a> and <a class="reference internal" href="rvA02-terms.html#term-commands"><span class="xref std std-term">commands</span></a>. See <a class="reference internal" href="rvC01-markup.html"><span class="doc">Markup</span></a>
-for further details.</p>
 </section>
 <section id="t-rivt-file">
 <h2><strong>[4t]</strong> rivt File<a class="headerlink" href="#t-rivt-file" title="Link to this heading">#</a></h2>

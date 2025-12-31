@@ -129,11 +129,11 @@ Most of a docs's content is written using the Insert and Value API's.
 
 An API function starts in the first column and takes a triple quoted
 :term:`rivt string` (rS) argument. The first line of a *rivt string* is a
-header, followed by content text indented 4 spaces for improved readability 
+header, followed by :term:`content` indented 4 spaces for improved readability 
 and section folding. 
 
 The :term:`header` specifies the section title and other
-processing parameters. The :term:`content text`` may include 
+processing parameters. The content text may include 
 :term:`rivt markup` and other arbitrary text. For further details 
 see :doc:`here <rvC01-markup>`.
 

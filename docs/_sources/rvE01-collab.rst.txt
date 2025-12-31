@@ -13,7 +13,6 @@ files and docs, and a reduction of reptitive work. As a Python open source
 project a number of tools are available to faciliate these goals. Cooperative
 work and community improvements can happen in a number of ways including:
 
-
 Contribute to rivtlib at `rivtlib-dev <https://github.com/rivtlib-dev/rivtlib>`_ 
 and documentation at `rivt-info <https://github.com/rivt-in>`_
 
@@ -42,7 +41,7 @@ are part of the *rivt framework* and have collaboration features that work well
 with *rivt files*.
 
 **[2t]** Git and GitHub
-------------------------
+---------------------------
 
 .. raw:: html
 
@@ -90,21 +89,17 @@ rivt editing and collaboration environment in the cloud.
 
     <hr>
 
-`VSCode <https://code.visualstudio.com/>`_ is an open source IDE with a 
-large set of extensions, including collaboration support. 
-CodeSpaces is a cloud based GitHub implementation of VSCode that shares 
-many of the same features.
+`VSCode <https://code.visualstudio.com/>`_ is an open source IDE with a large
+set of extensions, including collaboration support. CodeSpaces is a cloud based
+GitHub implementation of VSCode that shares many of the same features.
 
-Collaboration in VS Code is primarily facilitated by the Visual Studio Live
-Share extension. This extension enables:
+Collaboration in VSCode is primarily facilitated by the `Visual Studio Live Share
+<https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare>`_. 
+This extension enables:
 
 - Real-time Co-editing: Multiple participants can work on the same file
   simultaneously, seeing each other's cursors, selections, and edits instantly,
-  much like in Google Docs.
-
-- Collaborative Debugging: Teams can debug together, inspecting variables,
-  setting breakpoints, and stepping through code execution simultaneously, all
-  within their own personalized environments.
+  much like in Google Docs..
 
 - Shared Terminals and Servers: The host can share their terminal and localhost
   servers with guests, eliminating the need for guests to set up their own

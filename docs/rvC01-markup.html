@@ -383,24 +383,22 @@
 <h1><strong>C.1 Markup</strong><a class="headerlink" href="#c-1-markup" title="Link to this heading">#</a></h1>
 <section id="t-rivt-string">
 <h2><strong>[1t]</strong> rivt String<a class="headerlink" href="#t-rivt-string" title="Link to this heading">#</a></h2>
-<hr><p>A <a class="reference internal" href="rvA02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a>  is a utf-8 text triple quoted string argument to an
-<a class="reference internal" href="rvA01-intro.html"><span class="doc">API function</span></a>. It may include <a class="reference internal" href="rvA02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a>,
-a readable, plain text language that generates formatted text, PDF or
-HTML <a class="reference internal" href="rvA02-terms.html#term-docs"><span class="xref std std-term">docs</span></a>. The different <em>doc</em> types are generated from the
-same <em>rivt file</em>.</p>
-<p>The first line of a <em>rivt string</em> is a header, followed by text
-indented 4 spaces for improved readability and section folding.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | show;hide, private;public, section;merge</span>
+<hr><p>A <a class="reference internal" href="rvA02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> is a utf-8 text triple quoted string argument to an
+<a class="reference internal" href="rvA01-intro.html"><span class="doc">API function</span></a>. It is composed of two parts - a header that
+specifies section processing and content text.</p>
+<p>The first line of a <em>rivt string</em> is the header, followed by text
+indented 4 spaces for improved readability and section folding.
+Content may include <a class="reference internal" href="rvA02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a>, a readable, plain text language
+that generates formatted text, PDF or HTML <a class="reference internal" href="rvA02-terms.html#term-docs"><span class="xref std std-term">docs</span></a> and other arbitrary text.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | include;store, private;public, section;merge</span>
 
-<span class="s2">    section text (utf-8 text)</span>
+<span class="s2">     Content text indented 4 spaces (utf-8 text)</span>
 
 <span class="s2">    ...</span>
 
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The <em>rivt string</em> begins with an <em>API header</em> that includes a “section
-label” and section formatting parameters.</p>
 </section>
 <section id="t-api-header">
 <h2><strong>[2t]</strong> API Header<a class="headerlink" href="#t-api-header" title="Link to this heading">#</a></h2>
@@ -479,8 +477,7 @@ below, the default setting for each API is listed first (in bold).</p>
 <p><strong>An example with explicit defaults that do not have to be declared</strong></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;A New Section | private, include, section</span>
 
-<span class="s2">    Content text (utf-8 text)</span>
-
+<span class="s2">    Content text</span>
 <span class="s2">    ...</span>
 
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
@@ -489,7 +486,7 @@ below, the default setting for each API is listed first (in bold).</p>
 
 <span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;A New Section |</span>
 
-<span class="s2">    Content text (utf-8 text)</span>
+<span class="s2">    Content text</span>
 
 <span class="s2">    ...</span>
 
@@ -499,7 +496,7 @@ below, the default setting for each API is listed first (in bold).</p>
 <p><strong>An example that merges a section to the previous section</strong></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;A Merged Section | merge</span>
 
-<span class="s2">    Content text (utf-8)</span>
+<span class="s2">    Content text</span>
 
 <span class="s2">    ...</span>
 
@@ -515,7 +512,7 @@ It arbitrary text along with <a class="reference internal" href="rvC02-linetags.
 <a class="reference internal" href="rvC04-commands.html"><span class="doc">commands</span></a>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label |</span>
 
-<span class="s2">    Content text</span>
+<span class="s2">    Content text indented 4 spaces (utf-8).</span>
 <span class="s2">    ...</span>
 
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>

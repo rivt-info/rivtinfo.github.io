@@ -151,9 +151,6 @@
   section parameters 
     Comma separated parameters in a *header* that specify the section processing.
 
-  section text
-    The content of a *rivt string* minus the *header*. 
-
   api-history 
     API excecution history written to log folder as the file *rvDss-api.rst*. 
     For the complete execution history see the rivt log file *rvDss-log.txt*.
