@@ -58,9 +58,11 @@ be in the default folder */src/run/* . Otherwise the path is specified relative
 to the report root (rivt file folder). If the doc is a single doc the file is
 read from the rivt file folder.
 
-    - API Scope: Run
-    - File Types: .cmd, .bat, .sh 
-    - Doc Types: text, PDF, HTML
+=========== ==========================
+API Scope     Run
+File Types   .cmd, .bat, .sh 
+Doc Types     text, PDF, HTML
+=========== ==========================
 
 .. _imgcmd:
 
