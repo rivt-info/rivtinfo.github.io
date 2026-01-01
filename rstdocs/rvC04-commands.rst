@@ -58,9 +58,9 @@ be in the default folder */src/run/* . Otherwise the path is specified relative
 to the report root (rivt file folder) If the doc is a single doc the file is
 read from the rivt file folder.
 
-API: Run
-file types: .cmd, .bat, .sh 
-docs: text, PDF, HTML
+    API Scope: Run
+    File Types: .cmd, .bat, .sh 
+    Doc Types: text, PDF, HTML
 
 .. _imgcmd:
 
@@ -85,9 +85,9 @@ be in the default folder */src/img/* . Otherwise the path needs to be specified
 relative to the report root (rivt file folder). If the doc is a 
 :term:`single doc` the file is read from the rivt file folder.
 
-API: Insert, Values
-file types: PNG, JPG
-docs: text, PDF, HTML
+API Scope: Insert, Values
+File Types: PNG, JPG
+Doc Types: text, PDF, HTML
 
 .. _img2cmd:
 
@@ -115,9 +115,9 @@ relative to the report root (rivt file folder). If the doc is a
 
 For text docs the image file path is inserted. 
 
-API: Insert, Values
-file types: PNG, JPG
-docs: text, PDF, HTML
+API Scope: Insert, Values
+File Types: PNG, JPG
+Doc Types: text, PDF, HTML
 
 .. _tablecmd:
 
@@ -143,9 +143,9 @@ relative to the report root (rivt file folder). If the doc is a
 :term:`single doc` the file is read from the rivt file folder.
 
 
-API: Insert, Values
-file types: .csv, .xls
-docs: text, PDF, HTML
+API Scope: Insert, Values
+File Types: .csv, .xls
+Doc Types: text, PDF, HTML
 
 .. _textcmd:
 
@@ -177,9 +177,9 @@ relative to the report root (rivt file folder). If the doc is a
 :term:`single doc` the file is read from the rivt file folder.
 
 
-API: Insert, Values
-file types: .txt, .py, .cmd, .sh, .bash
-docs: text, PDF, HTML
+API Scope: Insert, Values
+File Types: .txt, .py, .cmd, .sh, .bash
+Doc Types: text, PDF, HTML
 
 .. _valcmd:
 
@@ -205,9 +205,9 @@ specifies the rows to import. The title parameter is the table title. A hyphen
 omits the title. The *fig; nofig* parameter specifies whether to assign a figure
 number to the values table.
 
-API: Values
-file types: .csv, .xls
-docs: text, PDF, HTML
+API Scope: Values
+File Types: .csv, .xls
+Doc Types: text, PDF, HTML
 
 .. _defcmd:
 
@@ -228,8 +228,8 @@ number* and *s* is the section number. The file is written to the folder
 The same values can reread and defined in other rivt files using the VALUES
 command.
   
-API: Insert, Values
-docs: text, PDF, HTML
+API Scope: Insert, Values
+Doc Types: text, PDF, HTML
 
 .. _asscmd:
 
@@ -251,8 +251,8 @@ values to a file *vnum-s.csv* where *num* is the *doc number* and *s* is the
 section number. The file is written to the folder *out/values* unless
 *rv_localB* is set to *True* in the *Meta API function*.
   
-API: Insert, Values
-docs: text, PDF, HTML
+API Scope: Insert, Values
+Doc Types: text, PDF, HTML
 
 
 .. _pycmd:
@@ -271,9 +271,9 @@ docs: text, PDF, HTML
 Executes Python code in the *rivt namespace* or user specified namespace. File
 paths used in the script are relative to the *rivt file* folder.
 
-API: Insert, Values
-file types: .py
-docs: text, PDF, HTML
+API Scope: Insert, Values
+File Types: .py
+Doc Types: text, PDF, HTML
 
 .. _scriptcmd:
 
@@ -291,9 +291,9 @@ docs: text, PDF, HTML
 Inserts HTML into an HTML *doc*, LaTeX into a PDF *doc*, and reStructuredText
 into either PDF or HTML. 
 
-API: Tool
-file types: rst, tex, html
-docs: text, PDF, HTML
+API Scope: Tool
+File Types: rst, tex, html
+Doc Types: text, PDF, HTML
 
 .. _appcmd:
 
@@ -312,9 +312,9 @@ Appends or prepends a PDF file to the *doc*. The title parameter generates an
 Appendix cover page with the specified title. A "-" omits the over page. For
 HTML *docs* the file is inserted as a donwload link.
 
-API: Doc
-file types: PDF
-docs: PDF, HTML
+API Scope: Doc
+File Types: PDF
+Doc Types: PDF, HTML
 
 .. _pubcmd:
 
@@ -331,6 +331,6 @@ docs: PDF, HTML
 
 Reads and inserts .html and .htm files into *doc*. 
 
-API: Doc
-docs: text, PDF, HTML
+API Scope: Doc
+Doc Types: text, PDF, HTML
 

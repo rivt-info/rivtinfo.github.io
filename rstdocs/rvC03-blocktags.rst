@@ -53,8 +53,8 @@ all         _[[END]]                                   :ref:`endblk`
     dir
     _[[END]]
 
-API: Run
-docs: text, PDF, HTML
+API Scope: Run
+Doc Types: text, PDF, HTML
 
 The shell command runs shell scripts and is used for external program
 processing. The os parameter specifies the terminal type. The wait parameter
@@ -83,8 +83,8 @@ after execution.
 
 Indents block text four spaces.
 
-API: Insert, Values
-docs: text, PDF, HTML
+API Scope: Insert, Values
+Doc Types: text, PDF, HTML
 
 .. _italictag:
 
@@ -107,8 +107,8 @@ docs: text, PDF, HTML
 
 Indents the specified number spaces and italicizes block.
 
-API: Insert, Values
-docs: text, PDF, HTML
+API Scope: Insert, Values
+Doc Types: text, PDF, HTML
 
 .. _notestag:
 
@@ -134,8 +134,8 @@ docs: text, PDF, HTML
 
 Formats and numbers an endnote in order of processing.
 
-API: Insert, Values
-docs: text, PDF, HTML
+API Scope: Insert, Values
+Doc Types: text, PDF, HTML
 
 .. _codetag:
 
@@ -165,8 +165,8 @@ specifies formatting and syntax coloring.  Languages include:
     - *sh*
     - *cmd*
 
-API: Insert, Values
-docs: text, PDF, HTML
+API Scope: Insert, Values
+Doc Types: text, PDF, HTML
 
 .. _topictag:
 
@@ -189,8 +189,8 @@ docs: text, PDF, HTML
 
 Formats a highlighted topic block.
 
-API: Insert, Values
-docs: text, PDF, HTML
+API Scope: Insert, Values
+Doc Types: text, PDF, HTML
 
 .. _pythontag:
 
@@ -212,8 +212,8 @@ docs: text, PDF, HTML
 Executes Python script in the *rivt namespace* or a user specified namespace.
 File paths in the script are relative to the *rivt file* folder.
 
-API: Value, Tool
-docs: text, PDF, HTML
+API Scope: Value, Tool
+Doc Types: text, PDF, HTML
 
 .. _scripttag:
 
@@ -236,8 +236,8 @@ Inserts HTML into an HTML *doc*, LaTeX into a PDF *doc*, and reStructuredText
 into either PDF or HTML. 
  
 
-API: Tool
-docs: PDF, HTML
+API Scope: Tool
+Doc Types: PDF, HTML
 
 .. _layouttag:
 
@@ -259,8 +259,8 @@ docs: PDF, HTML
 
 Overrides default layout settings.
 
-API: Doc
-docs: text, PDF, HTML
+API Scope: Doc
+Doc Types: text, PDF, HTML
 
 .. _endblk:
 
@@ -277,5 +277,5 @@ docs: text, PDF, HTML
 
 Terminates a block tag.
 
-API: Doc
-docs: text, PDF, HTML
+API Scope: Doc
+Doc Types: text, PDF, HTML

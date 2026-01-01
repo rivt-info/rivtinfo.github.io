@@ -51,8 +51,8 @@ rv.I, V          \=\=\=\=\=                               :ref:`pagetag` [1]
 
 The LaTeX math expression will be formatted in the specified font.
 
-API: Insert
-docs: text, PDF, HTML
+API Scope: Insert
+Doc Types: text, PDF, HTML
 
 
 .. _asciitag:
@@ -70,8 +70,8 @@ docs: text, PDF, HTML
 
 The math expression will be formated in ASCII text.
 
-API: Insert
-docs: text, PDF, HTML
+API Scope: Insert
+Doc Types: text, PDF, HTML
 
 
 ..  _notetag:
@@ -92,8 +92,8 @@ This tag assigns an endnote number to the text. Endnotes are defined with the
 block tag _[[NOTE]] and are listed at the end of the *doc*. Numbers are
 assigned in the order they are processed.
 
-API: Insert, Value
-docs: text, PDF, HTML
+API Scope: Insert, Value
+Doc Types: text, PDF, HTML
 
 ..  _centertag:
 
@@ -110,8 +110,8 @@ docs: text, PDF, HTML
 
 Center text within the page margins.
 
-API: Insert, Value
-docs: text, PDF, HTML
+API Scope: Insert, Value
+Doc Types: text, PDF, HTML
 
 .. _righttag:
 
@@ -128,8 +128,8 @@ docs: text, PDF, HTML
 
 The LaTeX math expression will be formatted in PDF and HTML.
 
-API: Insert, Value
-docs: text, PDF, HTML
+API Scope: Insert, Value
+Doc Types: text, PDF, HTML
 
 .. _equatag:
 
@@ -146,8 +146,8 @@ docs: text, PDF, HTML
 
 Labels and numbers equation.
 
-API: Insert, Value
-docs: text, PDF, HTML
+API Scope: Insert, Value
+Doc Types: text, PDF, HTML
 
 .. _tabletag:
 
@@ -181,8 +181,8 @@ outputs: text, PDF, HTML
 
 link to term in glossary
 
-API: Insert, Value
-docs: text, PDF, HTML
+API Scope: Insert, Value
+Doc Types: text, PDF, HTML
 
 .. _anchortag:
 
@@ -201,8 +201,8 @@ Inserts reference anchor at this location in the *doc*. Typically inserted
 before a section title. If inserted before a section title, the section title
 is inserted as the link text.
 
-API: Insert, Value
-docs: text, PDF, HTML
+API Scope: Insert, Value
+Doc Types: text, PDF, HTML
 
 .. _linktag:
 
@@ -220,8 +220,8 @@ docs: text, PDF, HTML
 Replaces anchorname with the section title that follows, and links to the
 anchor.
 
-API: Insert, Value
-docs: text, PDF, HTML
+API Scope: Insert, Value
+Doc Types: text, PDF, HTML
 
 .. _doctag:
 
@@ -239,8 +239,8 @@ docs: text, PDF, HTML
 Links *docs* within a *report*. Text will be continued and wrapped when
 formatted.
 
-API: Insert, Value
-docs: text, PDF, HTML
+API Scope: Insert, Value
+Doc Types: text, PDF, HTML
 
 .. _urltag:
 
@@ -257,8 +257,8 @@ docs: text, PDF, HTML
 
 External url link. Text will be continued and wrapped when formatted.
 
-API: Insert, Value
-docs: text, PDF, HTML
+API Scope: Insert, Value
+Doc Types: text, PDF, HTML
 
 ..  _linetag:
 
@@ -276,8 +276,8 @@ docs: text, PDF, HTML
 
 Draws a horizontal line the width of the page.
     
-API: Insert, Value
-docs: text, PDF, HTML
+API Scope: Insert, Value
+Doc Types: text, PDF, HTML
 
 .. _pagetag:
 
@@ -294,6 +294,6 @@ docs: text, PDF, HTML
 
 Starts a new page.
 
-API: Insert, Value
-docs: text, PDF, HTML
+API Scope: Insert, Value
+Doc Types: text, PDF, HTML
 
