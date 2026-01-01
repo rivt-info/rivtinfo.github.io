@@ -64,13 +64,13 @@ Jupyter        no       no         no      yes         yes      yes
 
 The *rivtlib* package implements an API designed to be:
 
-- **lightweight** - *rivt markup syntax* is made up of 3 dozen tags 
+- lightweight - *rivt markup syntax* is made up of 3 dozen tags 
     and commands.
 
-- **flexible** - it produces single *docs* or large reports in text, HTML and
-    PDF formats from the same rivt file or files.
+- flexible - the same rivt file produces a single *doc* or can be part of a 
+    large report formatted as text, HTML and PDF.
 
-- **extensible** - it is written in Python with direct access to 
+- extensible - it is written in Python with direct access to 
     thousands of Python packages.
 
 The *rivt API* publishes documents using a lightweight 
