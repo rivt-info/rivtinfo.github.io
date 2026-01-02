@@ -64,12 +64,10 @@ Folders organize files in standard locations to generate *docs* and *reports*
     <p style="border-width:2px; border-style:solid; 
     border-color:#49b2c3;padding: 1em;">
 
-    Required names or prefixes are shown in brackets [ ]. <br>
-    <br>
-    Folders (including subfolders) that contain author generated files 
+    - Required names or prefixes are shown in brackets [ ]. <br>
+    - Folders (including subfolders) that contain author generated files 
     are marked with a single vertical bar ( | ).<br>  
-    <br>
-    Folders (including subfolders) that contain *rivtlib* generated files are 
+    - Folders (including subfolders) that contain *rivtlib* generated files are 
     marked with double vertical bars ( || ).</p>
 
 
@@ -208,7 +206,7 @@ Folders organize files in standard locations to generate *docs* and *reports*
 
 
 
-**[2t]** rivt String
+**[3t]** rivt String
 ----------------------------------
 
 .. raw:: html
@@ -236,7 +234,7 @@ text, PDF or HTML :term:`docs` and other arbitrary text.
         """)
 
 
-**[3t]** Headers 
+**[4t]** Headers 
 -------------------------
 
 .. raw:: html
@@ -311,7 +309,7 @@ Examples of *header* settings are shown below.
         
         """)
 
-**[4t]** Content Text 
+**[5t]** Content Text 
 --------------------------
 
 .. raw:: html
@@ -343,7 +341,7 @@ or ** for bold.
 In addition the *Tools API function* (rv.T) supports processing raw Python,
 HTML, LaTex and reStructuredText. 
 
-**[5t]** Tags and Commands
+**[6t]** Tags and Commands
 ----------------------------
 
 :doc:`Line Tags <rvC02-linetags>`
@@ -373,7 +371,7 @@ The *rivt report* folder structure is described :doc:`here. <rvD03-folders>`.
 
 If the path is ommitted the default path for each command is applied. 
 
-**[6t]** Markup Key
+**[7t]** Markup Key
 ----------------------------------
 
 .. raw:: html
@@ -421,7 +419,7 @@ file types
 file types
 
 
-**[7t]** Metadata
+**[8t]** Metadata
 -------------------
 
 .. raw:: html

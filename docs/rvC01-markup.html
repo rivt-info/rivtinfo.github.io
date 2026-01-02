@@ -446,12 +446,10 @@ formatting options. The default is <em>False</em>.</p>
 <p style="border-width:2px; border-style:solid;
 border-color:#49b2c3;padding: 1em;">
 
-Required names or prefixes are shown in brackets [ ]. <br>
-<br>
-Folders (including subfolders) that contain author generated files
+- Required names or prefixes are shown in brackets [ ]. <br>
+- Folders (including subfolders) that contain author generated files
 are marked with a single vertical bar ( | ).<br>
-<br>
-Folders (including subfolders) that contain *rivtlib* generated files are
+- Folders (including subfolders) that contain *rivtlib* generated files are
 marked with double vertical bars ( || ).</p><p><strong>Folders</strong></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt<span class="o">]</span>-Report-Label/<span class="w">                </span>Report<span class="w"> </span>Folder<span class="w"> </span>Name
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename1.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
@@ -582,7 +580,7 @@ marked with double vertical bars ( || ).</p><p><strong>Folders</strong></p>
 </div>
 </section>
 <section id="t-rivt-string">
-<h2><strong>[2t]</strong> rivt String<a class="headerlink" href="#t-rivt-string" title="Link to this heading">#</a></h2>
+<h2><strong>[3t]</strong> rivt String<a class="headerlink" href="#t-rivt-string" title="Link to this heading">#</a></h2>
 <hr><p>Each <a class="reference internal" href="rvA01-intro.html"><span class="doc">API function</span></a> takes a triple quoted string argument
 <a class="reference internal" href="rvA02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> composed of two parts - a <a class="reference internal" href="rvA02-terms.html#term-header"><span class="xref std std-term">header</span></a> followed by
 <a class="reference internal" href="rvA02-terms.html#term-content-text"><span class="xref std std-term">content text</span></a>.</p>
@@ -601,7 +599,7 @@ text, PDF or HTML <a class="reference internal" href="rvA02-terms.html#term-docs
 </div>
 </section>
 <section id="t-headers">
-<h2><strong>[3t]</strong> Headers<a class="headerlink" href="#t-headers" title="Link to this heading">#</a></h2>
+<h2><strong>[4t]</strong> Headers<a class="headerlink" href="#t-headers" title="Link to this heading">#</a></h2>
 <hr><p>The <a class="reference internal" href="rvA02-terms.html#term-header"><span class="xref std std-term">header</span></a> starts with a <em>section label</em> followed by comma separated
 <em>section parameters</em> that may override default behavior. The <em>section label</em> is
 the section title and is separated from the <em>section header</em> paramaters by a
@@ -705,7 +703,7 @@ below, the default setting for each API is listed first (in bold).</p>
 </div>
 </section>
 <section id="t-content-text">
-<h2><strong>[4t]</strong> Content Text<a class="headerlink" href="#t-content-text" title="Link to this heading">#</a></h2>
+<h2><strong>[5t]</strong> Content Text<a class="headerlink" href="#t-content-text" title="Link to this heading">#</a></h2>
 <hr><p><a class="reference internal" href="rvA02-terms.html#term-content-text"><span class="xref std std-term">Content text</span></a> is indented four spaces for legibility and code folding.
 It has arbitrary text along with <a class="reference internal" href="rvC02-linetags.html"><span class="doc">line tags</span></a>,
 <a class="reference internal" href="rvC03-blocktags.html"><span class="doc">block tags</span></a> and
@@ -727,7 +725,7 @@ or ** for bold.</p>
 HTML, LaTex and reStructuredText.</p>
 </section>
 <section id="t-tags-and-commands">
-<h2><strong>[5t]</strong> Tags and Commands<a class="headerlink" href="#t-tags-and-commands" title="Link to this heading">#</a></h2>
+<h2><strong>[6t]</strong> Tags and Commands<a class="headerlink" href="#t-tags-and-commands" title="Link to this heading">#</a></h2>
 <p><a class="reference internal" href="rvC02-linetags.html"><span class="doc">Line Tags</span></a></p>
 <p>A <a class="reference internal" href="rvA02-terms.html#term-line-tag"><span class="xref std std-term">line tag</span></a> formats a line of text and is denoted with <strong>_[LETTER]</strong>,
 generally placed at the end of the line for readability.</p>
@@ -748,7 +746,7 @@ The <em>rivt report</em> folder structure is described <a class="reference inter
 <p>If the path is ommitted the default path for each command is applied.</p>
 </section>
 <section id="t-markup-key">
-<h2><strong>[6t]</strong> Markup Key<a class="headerlink" href="#t-markup-key" title="Link to this heading">#</a></h2>
+<h2><strong>[7t]</strong> Markup Key<a class="headerlink" href="#t-markup-key" title="Link to this heading">#</a></h2>
 <hr><p>Tag and Command syntax for each API type is defined and described using the
 following format.</p>
 <p>_[TAG] : description of <a class="reference internal" href="rvA02-terms.html#term-line-tag"><span class="xref std std-term">line tag</span></a></p>
@@ -773,7 +771,7 @@ following format.</p>
 <p>file types</p>
 </section>
 <section id="t-metadata">
-<h2><strong>[7t]</strong> Metadata<a class="headerlink" href="#t-metadata" title="Link to this heading">#</a></h2>
+<h2><strong>[8t]</strong> Metadata<a class="headerlink" href="#t-metadata" title="Link to this heading">#</a></h2>
 <hr><p><em>Metadata</em> is written to the <em>api-log.py</em> file. Metadata is specified using
 standard Python data types.</p>
 <p><em>rv_authD</em> is a dictionary that specifies the author, version, email, repository
@@ -853,12 +851,12 @@ and license information and forks.</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-api-functions"><strong>[1t]</strong> API Functions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-folders"><strong>[2t]</strong> Folders</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rivt-string"><strong>[2t]</strong> rivt String</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-headers"><strong>[3t]</strong> Headers</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-content-text"><strong>[4t]</strong> Content Text</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-tags-and-commands"><strong>[5t]</strong> Tags and Commands</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-markup-key"><strong>[6t]</strong> Markup Key</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-metadata"><strong>[7t]</strong> Metadata</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rivt-string"><strong>[3t]</strong> rivt String</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-headers"><strong>[4t]</strong> Headers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-content-text"><strong>[5t]</strong> Content Text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-tags-and-commands"><strong>[6t]</strong> Tags and Commands</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-markup-key"><strong>[7t]</strong> Markup Key</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-metadata"><strong>[8t]</strong> Metadata</a></li>
 </ul>
   </nav></div>
 
