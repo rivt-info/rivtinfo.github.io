@@ -410,16 +410,16 @@
 <td><p><a class="reference internal" href="#img2cmd"><span class="std std-ref">[4t] insert adjacent images</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I,V</p></td>
-<td><p>| TABLE | relative path | width, align, title, number</p></td>
-<td><p><a class="reference internal" href="#tablecmd"><span class="std std-ref">[5t] format table</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I,V</p></td>
 <td><p>| TEXT | relative path |  language</p></td>
 <td><p><a class="reference internal" href="#textcmd"><span class="std std-ref">[6t] format text</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.V</p></td>
-<td><p>| VALUES | relative path | rows, title figure</p></td>
-<td><p><a class="reference internal" href="#valcmd"><span class="std std-ref">[7t]  import values</span></a></p></td>
+<tr class="row-even"><td><p>rv.I,V</p></td>
+<td><p>| TABLE | rel path | title, width, rows, number, align, head</p></td>
+<td><p><a class="reference internal" href="#tablecmd"><span class="std std-ref">[5t] format table</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.I,V</p></td>
+<td><p>| VALTABLE | rel path | title, width, rows, number</p></td>
+<td><p><a class="reference internal" href="#valtablecmd"><span class="std std-ref">[7t]  read values</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.V</p></td>
 <td><p>a := 1*IN  | unit1, unit2, decimal | label</p></td>
@@ -435,7 +435,7 @@
 </tr>
 <tr class="row-odd"><td><p>rv.T</p></td>
 <td><p>| SCRIPT | relative path | type</p></td>
-<td><p><a class="reference internal" href="#scriptcmd"><span class="std std-ref">[11t]  import tool script</span></a></p></td>
+<td><p><a class="reference internal" href="#scriptcmd"><span class="std std-ref">[11t]  import script</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.D</p></td>
 <td><p>| PDFATTACH | relative path | place,title</p></td>
@@ -515,12 +515,12 @@ relative to the report root (rivt file folder). If the doc is a
 <section id="t-insert-adjacent-images">
 <span id="img2cmd"></span><h2><strong>[4t]</strong> insert adjacent images<a class="headerlink" href="#t-insert-adjacent-images" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| IMAGE2 | rel path1, rel path2 | sc1, sc2, cap1, cap2, fig1, fig2</p>
+<p class="topic-title">| IMAGE2 | rel path1, rel path2 | sc1, sc2, cap1, cap2, fig, fig</p>
 <div class="line-block">
-<div class="line">IMAGE2 | file1.png, file2.png | .5, Map, fig</div>
+<div class="line">IMAGE2 | file1.png, file2.png | .5,.5, Map, Photo, fig, fig</div>
 </div>
 </aside>
-<p>The IMAGE2 command reads two PNG or JPEG file and center them side by side in
+<p>The IMAGE2 command reads two PNG or JPEG file and places them side by side in
 the <em>doc</em>. The scale parameters are a decimal fraction of the page width. The
 captions may be ommited by using a single hyphen for either or both images. The
 <em>fig;nofig</em> parameters specify whether to assign a figure number to either or
@@ -540,37 +540,6 @@ relative to the report root (rivt file folder). If the doc is a
 </tr>
 <tr class="row-odd"><td><p>Doc Types</p></td>
 <td><p>PDF, HTML</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="t-format-table">
-<span id="tablecmd"></span><h2><strong>[5t]</strong> format table<a class="headerlink" href="#t-format-table" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">| TABLE | relative path | width, <em>l;c;r</em>, title  (_[T])</p>
-<div class="line-block">
-<div class="line">TABLE | file1.csv | 30, c, Forces _[T]</div>
-</div>
-</aside>
-<p>The TABLE command reads csv, xls, and rst files and outputs formatted
-tables. The width parameter specifies the maximum character width of a column.
-The align parameter specifies the cell justification (left, center, right).
-The <em>Table tag</em> may be added to the caption.</p>
-<p>If a <em>doc</em> is part of a report and no path is specified, the file is assumed to
-be in the default folder <em>/src/data/</em> . Otherwise the path needs to be specified
-relative to the report root (rivt file folder). If the doc is a
-<a class="reference internal" href="rvA02-terms.html#term-single-doc"><span class="xref std std-term">single doc</span></a> the file is read from the rivt file folder.</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<tbody>
-<tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Insert, Values</p></td>
-</tr>
-<tr class="row-even"><td><p>File Types</p></td>
-<td><p>csv, xls, rst</p></td>
-</tr>
-<tr class="row-odd"><td><p>Doc Types</p></td>
-<td><p>text, PDF, HTML</p></td>
 </tr>
 </tbody>
 </table>
@@ -616,20 +585,53 @@ relative to the report root (rivt file folder). If the doc is a
 </table>
 </div>
 </section>
-<section id="t-import-values">
-<span id="valcmd"></span><h2><strong>[7t]</strong>  import values<a class="headerlink" href="#t-import-values" title="Link to this heading">#</a></h2>
+<section id="t-format-table">
+<span id="tablecmd"></span><h2><strong>[5t]</strong> format table<a class="headerlink" href="#t-format-table" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| VALUES | relative path | rows, title, <em>num,nonum</em></p>
+<p class="topic-title">| TABLE | rel path | title, width, rows, <em>l;c;r</em>, <em>head;nohead</em>, <em>num,nonum</em></p>
+<div class="line-block">
+<div class="line">TABLE | file1.csv | Forces, 30, c, nohead, num</div>
+</div>
+</aside>
+<p>The TABLE command reads csv, xls, and rst files and outputs formatted tables.
+The title may be ommited by inserting a hyphen “-”. The width parameter
+specifies the maximum character width of a column. The align parameter
+specifies the cell justification (left, center, right). The head parameter
+specifies whether the first row is a column header.The number parameter
+specifies whether the table is numbered.</p>
+<p>If a <em>doc</em> is part of a report and no path is specified, the file is assumed to
+be in the default folder <em>/src/data/</em> . Otherwise the path needs to be specified
+relative to the report root (rivt file folder). If the doc is a
+<a class="reference internal" href="rvA02-terms.html#term-single-doc"><span class="xref std std-term">single doc</span></a> the file is read from the rivt file folder.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Insert, Values</p></td>
+</tr>
+<tr class="row-even"><td><p>File Types</p></td>
+<td><p>csv, xls, rst</p></td>
+</tr>
+<tr class="row-odd"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="t-read-values">
+<span id="valtablecmd"></span><h2><strong>[7t]</strong>  read values<a class="headerlink" href="#t-read-values" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">| VALTABLE| relative path | title, width, rows, <em>num,nonum</em></p>
 <p>If read from the default folder:</p>
 <div class="line-block">
-<div class="line">VALUES | newvals.csv | 1-10, Beam Properties, num</div>
+<div class="line">VALTABLE | newvals.csv | Beam Properties, 30, 1-10, num</div>
 </div>
 <p>If read from the stored folder:</p>
 <div class="line-block">
-<div class="line">VALUES | /stored/vals/vA01-2.csv | 1-10, Calculated  Properties, num</div>
+<div class="line">VALTABLE | /stored/vals/vA01-2.csv | Beam Properties, 30, 1-10, num</div>
 </div>
 </aside>
-<p>The VALUES command imports and defines values from a <em>csv</em> or <em>xls</em> file.
+<p>The VALTABLE command imports and defines values from a <em>csv</em> or <em>xls</em> file.
 The file format is:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">var</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="n">unit1</span><span class="p">,</span> <span class="n">unit2</span><span class="p">,</span> <span class="n">decimal</span><span class="p">,</span> <span class="n">label</span>
 </pre></div>
@@ -669,7 +671,7 @@ folder.</p>
 <p>Defines a value and writes it to the file <em>vdocnum-s.csv</em> where <em>num</em> is the
 <em>docnumber</em> and <em>s</em> is the section number. The file is written to the folder
 <em>stored/vals</em> unless <em>singledocB</em> is set to <em>True</em> in the comment variable.</p>
-<p>The stored values can reread and defined in other rivt files using the VALUES
+<p>The stored values can read and defined in other rivt files using the VALUES
 command.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
@@ -718,7 +720,7 @@ places after the decimals.</p>
 <section id="t-import-python-script">
 <span id="pycmd"></span><h2><strong>[10t]</strong> import Python script<a class="headerlink" href="#t-import-python-script" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| PYTHON | src/path | <em>rv-space</em>; user space</p>
+<p class="topic-title">| PYTHON | relative path | <em>rvspace</em>; user space</p>
 <div class="line-block">
 <div class="line">PYTHON | script1.py | rv-space</div>
 </div>
@@ -740,8 +742,8 @@ paths used in the script are relative to the <em>rivt file</em> folder.</p>
 </table>
 </div>
 </section>
-<section id="t-import-tool-script">
-<span id="scriptcmd"></span><h2><strong>[11t]</strong>  import tool script<a class="headerlink" href="#t-import-tool-script" title="Link to this heading">#</a></h2>
+<section id="t-import-script">
+<span id="scriptcmd"></span><h2><strong>[11t]</strong>  import script<a class="headerlink" href="#t-import-script" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| SCRIPT | relative path | <em>rst, html, latex</em></p>
 <div class="line-block">
@@ -753,7 +755,7 @@ into either PDF or HTML.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Values, Tools</p></td>
+<td><p>Tools</p></td>
 </tr>
 <tr class="row-even"><td><p>File Types</p></td>
 <td><p>.csv</p></td>
@@ -868,13 +870,13 @@ HTML <em>docs</em> the file is inserted as a donwload link.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-run-shell-script"><strong>[2t]</strong> run shell script</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-insert-image"><strong>[3t]</strong> insert image</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-insert-adjacent-images"><strong>[4t]</strong> insert adjacent images</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-format-table"><strong>[5t]</strong> format table</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-format-text"><strong>[6t]</strong> format text</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-import-values"><strong>[7t]</strong>  import values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-format-table"><strong>[5t]</strong> format table</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-read-values"><strong>[7t]</strong>  read values</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-define-variable"><strong>[8t]</strong> define variable</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-assign-variable"><strong>[9t]</strong> assign variable</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-import-python-script"><strong>[10t]</strong> import Python script</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-import-tool-script"><strong>[11t]</strong>  import tool script</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-import-script"><strong>[11t]</strong>  import script</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-attach-pdf"><strong>[12t]</strong> attach PDF</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-publish-doc"><strong>[13t]</strong> publish doc</a></li>
 </ul>

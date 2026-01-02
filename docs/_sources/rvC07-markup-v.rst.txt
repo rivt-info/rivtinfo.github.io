@@ -66,7 +66,7 @@ formatted text.
 \| IMAGE2 | rel path1, rel path2 | s1, s2, c1, c2, fig1, fig2   :ref:`img2cmd`
 \| TABLE | relative path | width, align, title                  :ref:`tablecmd`     
 \| TEXT | relative path |  language                             :ref:`textcmd`
-\| VALUES | relative path | title, rows                         :ref:`valcmd` 
+\| VALUES | relative path | title, rows                         :ref:`valtablecmd` 
 a := 1*IN  | unit1, unit2, decimal | label                      :ref:`defcmd`
 c <= expression | unit1, unit2, decimal | label                 :ref:`asscmd`
 \| PYTHON | relative path | namespace                           :ref:`pycmd`

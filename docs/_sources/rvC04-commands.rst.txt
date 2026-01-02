@@ -16,9 +16,9 @@ API Scope           | Command | path | parameters                          Descr
 rv.R       \| SHELL | relative path | os, wait                             :ref:`shellcmd`
 rv.I,V     \| IMAGE | relative path |  scale, caption, figure              :ref:`imgcmd`
 rv.I,V     \| IMAGE2 | rel path1, rel path2 | s1, s2, c1, c2, fig1, fig2   :ref:`img2cmd`
-rv.I,V     \| TABLE | relative path | width, align, title, number          :ref:`tablecmd`     
 rv.I,V     \| TEXT | relative path |  language                             :ref:`textcmd`
-rv.V       \| VALUES | relative path | rows, title figure                  :ref:`valcmd` 
+rv.I,V     \| TABLE | rel path | title, width, rows, number, align, head   :ref:`tablecmd`     
+rv.I,V     \| VALTABLE | rel path | title, width, rows, number             :ref:`valtablecmd`     
 rv.V       a := 1*IN  | unit1, unit2, decimal | label                      :ref:`defcmd`
 rv.V       c <= expression | unit1, unit2, decimal | label, number         :ref:`asscmd`
 rv.V,T     \| PYTHON | relative path | namespace                           :ref:`pycmd`
@@ -97,11 +97,11 @@ Doc Types     PDF, HTML
 
     <hr>
 
-.. topic:: | IMAGE2 | rel path1, rel path2 | sc1, sc2, cap1, cap2, fig1, fig2
+.. topic:: | IMAGE2 | rel path1, rel path2 | sc1, sc2, cap1, cap2, fig, fig
 
-    | IMAGE2 | file1.png, file2.png | .5, Map, fig 
+    | IMAGE2 | file1.png, file2.png | .5,.5, Map, Photo, fig, fig 
 
-The IMAGE2 command reads two PNG or JPEG file and center them side by side in
+The IMAGE2 command reads two PNG or JPEG file and places them side by side in
 the *doc*. The scale parameters are a decimal fraction of the page width. The
 captions may be ommited by using a single hyphen for either or both images. The
 *fig;nofig* parameters specify whether to assign a figure number to either or
@@ -119,38 +119,8 @@ File Types    PNG, JPG
 Doc Types     PDF, HTML
 =========== ==========================
 
-
-.. _tablecmd:
-
-**[5t]** format table
-------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: | TABLE | relative path | width, *l;c;r*, title  (_[T])
-
-    | TABLE | file1.csv | 30, c, Forces _[T]
-
-The TABLE command reads csv, xls, and rst files and outputs formatted
-tables. The width parameter specifies the maximum character width of a column. 
-The align parameter specifies the cell justification (left, center, right). 
-The *Table tag* may be added to the caption.
-
-If a *doc* is part of a report and no path is specified, the file is assumed to
-be in the default folder */src/data/* . Otherwise the path needs to be specified
-relative to the report root (rivt file folder). If the doc is a 
-:term:`single doc` the file is read from the rivt file folder.
-
-=========== ==========================
-API Scope     Insert, Values
-File Types    csv, xls, rst
-Doc Types     text, PDF, HTML
-=========== ==========================
-
-
 .. _textcmd:
+
 
 **[6t]** format text
 ------------------------------------------
@@ -187,26 +157,58 @@ Doc Types     text, PDF, HTML
 =========== ==========================
 
 
-.. _valcmd:
+.. _tablecmd:
 
-**[7t]**  import values
+**[5t]** format table
+------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: | TABLE | rel path | title, width, rows, *l;c;r*, *head;nohead*, *num,nonum*  
+
+    | TABLE | file1.csv | Forces, 30, c, nohead, num 
+
+The TABLE command reads csv, xls, and rst files and outputs formatted tables.
+The title may be ommited by inserting a hyphen "-". The width parameter
+specifies the maximum character width of a column. The align parameter
+specifies the cell justification (left, center, right). The head parameter
+specifies whether the first row is a column header.The number parameter
+specifies whether the table is numbered.
+
+If a *doc* is part of a report and no path is specified, the file is assumed to
+be in the default folder */src/data/* . Otherwise the path needs to be specified
+relative to the report root (rivt file folder). If the doc is a 
+:term:`single doc` the file is read from the rivt file folder.
+
+=========== ==========================
+API Scope     Insert, Values
+File Types    csv, xls, rst
+Doc Types     text, PDF, HTML
+=========== ==========================
+
+
+.. _valtablecmd:
+
+**[7t]**  read values
 ------------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic::  | VALUES | relative path | rows, title, *num,nonum*
+.. topic::  | VALTABLE| relative path | title, width, rows, *num,nonum*
 
     If read from the default folder:
 
-    | VALUES | newvals.csv | 1-10, Beam Properties, num
+    | VALTABLE | newvals.csv | Beam Properties, 30, 1-10, num
 
     If read from the stored folder:
 
-    | VALUES | /stored/vals/vA01-2.csv | 1-10, Calculated  Properties, num
+    | VALTABLE | /stored/vals/vA01-2.csv | Beam Properties, 30, 1-10, num
 
-The VALUES command imports and defines values from a *csv* or *xls* file. 
+The VALTABLE command imports and defines values from a *csv* or *xls* file. 
 The file format is:: 
 
     var = value, unit1, unit2, decimal, label
@@ -248,7 +250,7 @@ Defines a value and writes it to the file *vdocnum-s.csv* where *num* is the
 *docnumber* and *s* is the section number. The file is written to the folder
 *stored/vals* unless *singledocB* is set to *True* in the comment variable.
 
-The stored values can reread and defined in other rivt files using the VALUES
+The stored values can read and defined in other rivt files using the VALUES
 command.
   
 =========== ==========================
@@ -297,7 +299,7 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic:: | PYTHON | src/path | *rv-space*; user space
+.. topic:: | PYTHON | relative path | *rvspace*; user space
    
     | PYTHON | script1.py | rv-space
 
@@ -312,7 +314,7 @@ Doc Types     text, PDF, HTML
 
 .. _scriptcmd:
 
-**[11t]**  import tool script
+**[11t]**  import script
 -------------------------------------------
 
 .. raw:: html
@@ -327,7 +329,7 @@ Inserts HTML into an HTML *doc*, LaTeX into a PDF *doc*, and reStructuredText
 into either PDF or HTML. 
 
 =========== ==========================
-API Scope     Values, Tools
+API Scope     Tools
 File Types    .csv
 Doc Types     text, PDF, HTML
 =========== ==========================

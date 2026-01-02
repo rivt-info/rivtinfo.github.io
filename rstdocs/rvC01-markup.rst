@@ -55,7 +55,8 @@ rv.X(rS)           Quit              Exit rivt
 
     <hr>
 
-Folders organize files in standard locations to generate *docs* and *reports*
+Folders organize files in standard locations to simplify *docs* and *report*
+generation.
 
 .. raw:: html
 
