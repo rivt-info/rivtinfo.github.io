@@ -23,22 +23,21 @@ images, tables, links and formatted text.
           text _[C]                                  :ref:`centertag` 
           text _[R]                                  :ref:`righttag` 
 equation label _[E]                                  :ref:`equatag`
-         title _[T]                                  :ref:`tabletag` [1]
+         title _[T]                                  :ref:`tabletag`
 section anchor _[A]                                  :ref:`anchortag`
           text _[N] anchor_name link                 :ref:`linktag`
           text _[G] glossary link term               :ref:`termtag`
           text _[D] doc link                         :ref:`doctag`
           text _[U] external url                     :ref:`urltag`   
-    \-\-\-\-\-                                       :ref:`linetag` [2]
-    \=\=\=\=\=                                       :ref:`pagetag` [2]
+    \-\-\-\-\-                                       :ref:`linetag` [1]
+    \=\=\=\=\=                                       :ref:`pagetag` [1]
 =========================================== =======================================
 
 .. highlight:: none
 
 ::
 
-    [1] tag may be added to the label parameter in the TABLE commands
-    [2] must start in first indented column (absolute column 4)
+    [1] must start in first indented column (absolute column 4)
 
     
 **[3t]** Format block
@@ -64,13 +63,8 @@ section anchor _[A]                                  :ref:`anchortag`
 ============================================================== =====================
 \| IMAGE | relative path |  scale, caption, figure              :ref:`imgcmd`
 \| IMAGE2 | rel path1, rel path2 | s1, s2, c1, c2, fig1, fig2   :ref:`img2cmd`
-\| TABLE | relative path | width, align, title (_[T]) [1]       :ref:`tablecmd`     
+\| TABLE | relative path | width, align, title, number          :ref:`tablecmd`     
 \| TEXT | relative path |  language                             :ref:`textcmd`
 ============================================================== =====================
 
-.. highlight:: none
-
-::
-
-    [1] optional tag will number the table
 
