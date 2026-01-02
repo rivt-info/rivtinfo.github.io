@@ -64,17 +64,11 @@ formatted text.
 ============================================================== =====================
 \| IMAGE | relative path |  scale, caption, figure              :ref:`imgcmd`
 \| IMAGE2 | rel path1, rel path2 | s1, s2, c1, c2, fig1, fig2   :ref:`img2cmd`
-\| TABLE | relative path | width, align, title (_[T]) [1]       :ref:`tablecmd`     
+\| TABLE | relative path | width, align, title                  :ref:`tablecmd`     
 \| TEXT | relative path |  language                             :ref:`textcmd`
 \| VALUES | relative path | title, rows                         :ref:`valcmd` 
 a := 1*IN  | unit1, unit2, decimal | label                      :ref:`defcmd`
-c <= expression | unit1, unit2, decimal | label (_[E]) [1]      :ref:`asscmd`
+c <= expression | unit1, unit2, decimal | label                 :ref:`asscmd`
 \| PYTHON | relative path | namespace                           :ref:`pycmd`
 ============================================================== =====================
-
-.. highlight:: none
-
-::
-
-    [1] optional tags will number the equation or table
 

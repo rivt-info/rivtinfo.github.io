@@ -23,7 +23,7 @@ rv.V       a := 1*IN  | unit1, unit2, decimal | label                      :ref:
 rv.V       c <= expression | unit1, unit2, decimal | label, number         :ref:`asscmd`
 rv.V,T     \| PYTHON | relative path | namespace                           :ref:`pycmd`
 rv.T       \| SCRIPT | relative path | type                                :ref:`scriptcmd`
-rv.D       \| ATTACHPDF | relative path | place,title                      :ref:`appcmd`   
+rv.D       \| PDFATTACH | relative path | place,title                      :ref:`appcmd`   
 rv.D       \| PUBLISH | ini rel. path | type                               :ref:`pubcmd` 
 ========== ============================================================== =====================
 
@@ -233,7 +233,7 @@ Doc Types     text, PDF, HTML
 
 .. _defcmd:
 
-**[8t]** **:=** : define variable
+**[8t]** define variable
 -------------------------------------------
 
 .. raw:: html
@@ -260,7 +260,7 @@ Doc Types     text, PDF, HTML
 
 .. _asscmd:
 
-**[9t]** **<=** : assign variable
+**[9t]** assign variable
 -------------------------------------------
 
 .. raw:: html
@@ -341,7 +341,7 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic:: | PDFAPPEND | relative path | *front;back*, title
+.. topic:: | PDFATTACH | relative path | *front;back*, title
 
     | ATTACHPDF | file.pdf | back, -
 
