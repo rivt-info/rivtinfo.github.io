@@ -57,12 +57,12 @@ rv.X(rS)           Quit              Exit rivt
 
 Folders organize files in standard locations to generate *docs* and *reports*
 
-**Folder Key**
-
 .. raw:: html
 
     <p style="border-width:2px; border-style:solid; 
     border-color:#49b2c3;padding: 1em;">
+
+    **Folder Key**
 
     - Required names or prefixes are shown in brackets [ ]. <br>
     - Folders (including subfolders) that contain author generated files 
