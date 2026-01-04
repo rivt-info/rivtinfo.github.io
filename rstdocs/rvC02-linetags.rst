@@ -10,25 +10,25 @@
 
 **Format a line of text**
   
-============= =========================================== =======================
+============= =========================================== ===============================
 API Scope             Line Tags                            Description 
-============= =========================================== =======================
-rv.I                        text _[#] text                    :ref:`notetag`  
-rv.I                        text _[C]                         :ref:`centertag` 
-rv.I                        text _[R]                         :ref:`righttag`
-rv.I                  latex math _[L]                         :ref:`latextag` 
-rv.I                  ascii math _[M]                         :ref:`asciitag` 
+============= =========================================== ===============================
+rv.I                        text _[#] text                    :ref:`Endnote number`  
+rv.I                        text _[C]                         :ref:`Center text` 
+rv.I                        text _[R]                         :ref:`Right justify text`
+rv.I                  latex math _[L]                         :ref:`LaTeX math` 
+rv.I                  ascii math _[M]                         :ref:`ASCII math` 
 rv.I                        text _[S] section label           :ref:`Section link`
-rv.I                        text _[G] glossary link term      :ref:`termtag`
-rv.I                        text _[D] doc number              :ref:`doctag`
-rv.I                        text _[U] external url            :ref:`urltag`   
+rv.I                        text _[G] glossary link term      :ref:`Term reference`
+rv.I                        text _[D] doc number              :ref:`Doc link`
+rv.I                        text _[U] external url            :ref:`URL link`   
 rv.V, I        equation or label _[E]                         :ref:`Equation label`
 rv.V, I          values or title _[T]                         :ref:`Table title`
-============= =========================================== =======================
+============= =========================================== ===============================
 
-..  _notetag:
+..  _Endnote number:
 
-**[2t]**  endnote number
+**[2t]**  Endnote number
 -------------------------------------
 
 .. raw:: html
@@ -49,9 +49,9 @@ API Scope     Insert
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-..  _centertag:
+..  _Center text:
 
-**[3t]** center text
+**[3t]** Center text
 -------------------------------------------
 
 .. raw:: html
@@ -70,9 +70,9 @@ Doc Types     text, PDF, HTML
 =========== ==========================
 
 
-.. _righttag:
+.. _Right justify text:
 
-**[4t]** right justify text
+**[4t]** Right justify text
 -----------------------------------------
 
 .. raw:: html
@@ -90,7 +90,7 @@ API Scope     Insert
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-.. _latextag:
+.. _LaTeX math:
 
 **[5t]** LaTeX math 
 -----------------------------------------
@@ -111,7 +111,7 @@ Doc Types     PDF, HTML
 =========== ==========================
 
 
-.. _asciitag:
+.. _ASCII math:
 
 **[6t]** ASCII math
 -----------------------------------------
@@ -131,29 +131,9 @@ API Scope     Insert
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-.. _Section link:
+.. _Term reference:
 
-**[7t]** Section link
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: text _[S] section label
-    
-    Link to  _[S] My Section.
-
-Creates a link to a section label defined by the API header.
-
-=========== ==========================
-API Scope     Insert
-Doc Types     PDF, HTML
-=========== ==========================
-
-.. _termtag:
-
-**[8t]** term reference
+**[7t]** Term reference
 ------------------------------------------
 
 .. raw:: html
@@ -171,9 +151,29 @@ API Scope     Insert
 Doc Types     PDF, HTML
 =========== ==========================
 
-.. _doctag:
+.. _Section link:
 
-**[9t]** doc link
+**[8t]** Section link
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: text _[S] section label
+    
+    Link to  _[S] My Section.
+
+Creates a link to a section label defined by the API header.
+
+=========== ==========================
+API Scope     Insert
+Doc Types     PDF, HTML
+=========== ==========================
+
+.. _Doc link:
+
+**[9t]** Doc link
 -----------------------------------------
 
 .. raw:: html
@@ -192,9 +192,9 @@ API Scope     Insert
 Doc Types     PDF, HTML
 =========== ==========================
 
-.. _urltag:
+.. _URL link:
 
-**[10t]** External url
+**[10t]** URL link
 -----------------------------------------
 
 .. raw:: html

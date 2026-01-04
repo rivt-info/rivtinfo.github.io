@@ -15,7 +15,7 @@ The *Value* API function defines values and evaluates equations and functions.
        Line Tags                             Description 
 ========================================= ==============================
 equation or label _[E]                       :ref:`Equation label`
-valtable command or title line _[T]          :ref:`Table title``                              
+valtable command or table title _[T]          :ref:`Table title`                              
 ========================================= ==============================
 
 ========================================= ==============================
@@ -29,11 +29,11 @@ valtable command or title line _[T]          :ref:`Table title``
 ============================================================== =====================
          | Command | path | parameters                          Description
 ============================================================== =====================
- \| IMAGE | relative path |  scale, caption, figure              :ref:`imgcmd`
+ \| IMAGE | relative path |  scale, caption, number              :ref:`imgcmd`
  \| IMAGE2 | rel path1, rel path2 | s1, s2, c1, c2, num1, num2   :ref:`img2cmd`
- \| VALTABLE | rel path | title, width, rows                     :ref:`valtablecmd`     
+ \| VALTABLE | rel path | title, width, rows (_[T])              :ref:`valtablecmd`     
  \| PYTHON | relative path | namespace                           :ref:`pycmd`
  a =: 1*IN  | unit1, unit2, decimal | label                      :ref:`defcmd`
- c <=: expression | unit1, unit2, decimal | label                :ref:`asscmd`
- a < c  | decimal | stamp text, align, color                     :ref:`compcmd` 
+ c <=: expression | unit1, unit2, decimal | label (_[E])         :ref:`asscmd`
+ a < c  | decimal | stamp text, align, color  (_[E])             :ref:`compcmd` 
 ============================================================== =====================
