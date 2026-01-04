@@ -72,35 +72,36 @@ varying degrees of system and program integration.
 
     <hr>
 
-Until *rivt* is uploaded to PyPI, the *rivtuv* installation method is
+*rivt* is not uploaded to PyPI yet. The *rivtuv* installation method is
 recommended for most users.
 
-**Step 1. Install uv**
+.. topic:: Step 1. Install uv
 
-Install `uv <https://docs.astral.sh/uv/getting-started/installation/#pypi>`_. 
+    Install `uv <https://docs.astral.sh/uv/getting-started/installation/#pypi>`_. 
 
-The recommended method for installing *uv* is:
+    The recommended method for installing *uv* is:
 
-Windows:
+    Windows:
 
-.. code-block:: bash
-      
-    winget install --id=astral-sh.uv  -e 
+    .. code-block:: bash
+        
+        winget install --id=astral-sh.uv  -e 
 
-macOS and Linux:
+    macOS and Linux:
 
-.. code-block:: bash
-      
-    curl -LsSf https://astral.sh/uv/install.sh | sh
+    .. code-block:: bash
+        
+        curl -LsSf https://astral.sh/uv/install.sh | sh
 
-**Step 2. Create a rivt environment and install rivtlib** 
+..topic:: Step 2. Create an isolated rivt environment
 
 After installing *uv*, download and run the following command or shell file.
 This installs an isolated *rivt* environment and example files in the users
 *Home* directory
 
 Windows:  :download:`rivtuv.cmd </_downloads/rivtuv.cmd>` 
-OSX: :download:`rivtuv.sh </_downloads/rivtuv.sh>` 
+OSX: :download:`rivtuv.sh </_downloads/rivtuv.sh>`
+Linux: 
 
 Additional explanation for the install scripts can be found 
 `here <https://github.com/rivt-info/rivtuv-install/edit/main/>`_.

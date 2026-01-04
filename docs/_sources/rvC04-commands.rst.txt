@@ -22,7 +22,7 @@ rv.V       \| VALTABLE | rel path | title, width, rows                     :ref:
 rv.V       a =: 1*IN  | unit1, unit2, decimal | label                      :ref:`defcmd`
 rv.V       c <=: expression | unit1, unit2, decimal | label                :ref:`asscmd`
 rv.V       a < c  | decimal | text, align, color                           :ref:`compcmd`
-rv.T,V     \| PYTHON | relative path | namespace                           :ref:`Python script`
+rv.T, V    \| PYTHON | relative path | namespace                           :ref:`Python script`
 rv.T       \| MARKUP | relative path | type                                :ref:`scriptcmd`
 rv.D       \| PDFATTACH | relative path | place,title                      :ref:`attcmd`   
 rv.D       \| PUBLISH | ini rel. path | type                               :ref:`pubcmd` 
