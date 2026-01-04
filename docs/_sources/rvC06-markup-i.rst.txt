@@ -17,18 +17,17 @@ including images, tables, links and formatted text.
 =========================================== =======================================
         Line Tags                                 Description 
 =========================================== =======================================
-    latex math _[L]                                  :ref:`latextag` 
-    ascii math _[M]                                  :ref:`asciitag`
-          text _[#] text                             :ref:`notetag`  
-          text _[C]                                  :ref:`centertag` 
-          text _[R]                                  :ref:`righttag` 
-equation label _[E]                                  :ref:`equatag`
-         title _[T]                                  :ref:`tabletag`
-section anchor _[A]                                  :ref:`anchortag`
-          text _[N] anchor_name link                 :ref:`linktag`
-          text _[G] glossary link term               :ref:`termtag`
-          text _[D] doc link                         :ref:`doctag`
-          text _[U] external url                     :ref:`urltag`   
+             text _[#] text                    :ref:`Endnote number`  
+             text _[C]                         :ref:`Center text` 
+             text _[R]                         :ref:`Right justify text`
+       latex math _[L]                         :ref:`LaTeX math` 
+       ascii math _[M]                         :ref:`ASCII math` 
+             text _[S] section label           :ref:`Section link`
+             text _[G] glossary link term      :ref:`Term reference`
+             text _[D] doc number              :ref:`Doc link`
+             text _[U] external url            :ref:`URL link`   
+equation or label _[E]                         :ref:`Equation label`
+  values or title _[T]                         :ref:`Table title`  
 =========================================== =======================================
    
 **[3t]** Format text blocks

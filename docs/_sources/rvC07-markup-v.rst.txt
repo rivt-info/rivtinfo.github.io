@@ -15,7 +15,7 @@ The *Value* API function defines values and evaluates equations and functions.
        Line Tags                             Description 
 ========================================= ==============================
 equation or label _[E]                       :ref:`Equation label`
-valtable command or table title _[T]          :ref:`Table title`                              
+valtable command or table title _[T]         :ref:`Table title`                              
 ========================================= ==============================
 
 ========================================= ==============================
