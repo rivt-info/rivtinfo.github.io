@@ -8,9 +8,7 @@
 
     <hr>
 
-Files processed by the *Tools API function* are usually read and written to the
-*src/* folder unless the *rv_localB* variable is set to *True* in the *Meta API
-function*. In that case files are read and written to the *rivt file* folder.
+The *Tools* API function executes markup and scripts. 
 
 **Format blocks of text**
 

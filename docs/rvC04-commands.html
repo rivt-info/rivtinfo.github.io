@@ -154,7 +154,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvB01-install.html">
-    B.1 rivt Installation
+    B.1 Installation
   </a>
 </li>
 
@@ -261,7 +261,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvB01-install.html">
-    B.1 rivt Installation
+    B.1 Installation
   </a>
 </li>
 
@@ -401,47 +401,51 @@
 <td><p>| SHELL | relative path | os, wait</p></td>
 <td><p><a class="reference internal" href="#shellcmd"><span class="std std-ref">[2t] run shell script</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.I,V</p></td>
+<tr class="row-odd"><td><p>rv.I</p></td>
+<td><p>| TEXT | relative path |  language</p></td>
+<td><p><a class="reference internal" href="#textcmd"><span class="std std-ref">[5t] format text</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>rv.I</p></td>
+<td><p>| TABLE | rel path | title, width, rows, align, head</p></td>
+<td><p><a class="reference internal" href="#tablecmd"><span class="std std-ref">[6t] format table</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.V, I</p></td>
 <td><p>| IMAGE | relative path |  scale, caption, figure</p></td>
 <td><p><a class="reference internal" href="#imgcmd"><span class="std std-ref">[3t] insert image</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.I,V</p></td>
+<tr class="row-even"><td><p>rv.V, I</p></td>
 <td><p>| IMAGE2 | rel path1, rel path2 | s1, s2, c1, c2, fig1, fig2</p></td>
 <td><p><a class="reference internal" href="#img2cmd"><span class="std std-ref">[4t] insert adjacent images</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.I,V</p></td>
-<td><p>| TEXT | relative path |  language</p></td>
-<td><p><a class="reference internal" href="#textcmd"><span class="std std-ref">[6t] format text</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I,V</p></td>
-<td><p>| TABLE | rel path | title, width, rows, number, align, head</p></td>
-<td><p><a class="reference internal" href="#tablecmd"><span class="std std-ref">[5t] format table</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I,V</p></td>
-<td><p>| VALTABLE | rel path | title, width, rows, number</p></td>
+<tr class="row-odd"><td><p>rv.V</p></td>
+<td><p>| VALTABLE | rel path | title, width, rows</p></td>
 <td><p><a class="reference internal" href="#valtablecmd"><span class="std std-ref">[7t]  read values</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.V</p></td>
-<td><p>a := 1*IN  | unit1, unit2, decimal | label</p></td>
+<td><p>a =: 1*IN  | unit1, unit2, decimal | label</p></td>
 <td><p><a class="reference internal" href="#defcmd"><span class="std std-ref">[8t] define variable</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V</p></td>
-<td><p>c &lt;= expression | unit1, unit2, decimal | label, number</p></td>
+<td><p>c &lt;=: expression | unit1, unit2, decimal | label</p></td>
 <td><p><a class="reference internal" href="#asscmd"><span class="std std-ref">[9t] assign variable</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.V,T</p></td>
+<tr class="row-even"><td><p>rv.V</p></td>
+<td><p>a &lt; c  | decimal | text, align, color</p></td>
+<td><p><a class="reference internal" href="#compcmd"><span class="std std-ref">[10t] compare</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.T,V</p></td>
 <td><p>| PYTHON | relative path | namespace</p></td>
-<td><p><a class="reference internal" href="#pycmd"><span class="std std-ref">[10t] import Python script</span></a></p></td>
+<td><p><a class="reference internal" href="#pycmd"><span class="std std-ref">[11t] import Python script</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.T</p></td>
-<td><p>| SCRIPT | relative path | type</p></td>
-<td><p><a class="reference internal" href="#scriptcmd"><span class="std std-ref">[11t]  import script</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p>rv.D</p></td>
-<td><p>| PDFATTACH | relative path | place,title</p></td>
-<td><p><a class="reference internal" href="#appcmd"><span class="std std-ref">[12t] attach PDF</span></a></p></td>
+<tr class="row-even"><td><p>rv.T</p></td>
+<td><p>| MARKUP | relative path | type</p></td>
+<td><p><span class="xref std std-ref">scriptcmd</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.D</p></td>
+<td><p>| PDFATTACH | relative path | place,title</p></td>
+<td><p><a class="reference internal" href="#attcmd"><span class="std std-ref">[12t] attach PDF</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>rv.D</p></td>
 <td><p>| PUBLISH | ini rel. path | type</p></td>
 <td><p><a class="reference internal" href="#pubcmd"><span class="std std-ref">[13t] publish doc</span></a></p></td>
 </tr>
@@ -546,7 +550,7 @@ relative to the report root (rivt file folder). If the doc is a
 </div>
 </section>
 <section id="t-format-text">
-<span id="textcmd"></span><h2><strong>[6t]</strong> format text<a class="headerlink" href="#t-format-text" title="Link to this heading">#</a></h2>
+<span id="textcmd"></span><h2><strong>[5t]</strong> format text<a class="headerlink" href="#t-format-text" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| TEXT | relative path | language</p>
 <div class="line-block">
@@ -586,7 +590,7 @@ relative to the report root (rivt file folder). If the doc is a
 </div>
 </section>
 <section id="t-format-table">
-<span id="tablecmd"></span><h2><strong>[5t]</strong> format table<a class="headerlink" href="#t-format-table" title="Link to this heading">#</a></h2>
+<span id="tablecmd"></span><h2><strong>[6t]</strong> format table<a class="headerlink" href="#t-format-table" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| TABLE | rel path | title, width, rows, <em>l;c;r</em>, <em>head;nohead</em>, <em>num,nonum</em></p>
 <div class="line-block">
@@ -665,8 +669,8 @@ folder.</p>
 <section id="t-define-variable">
 <span id="defcmd"></span><h2><strong>[8t]</strong> define variable<a class="headerlink" href="#t-define-variable" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">c := 5*unit | unit1, unit2, decimals | label, <em>num,nonum</em></p>
-<p>D_1 := 10*IN | IN, M, 3 | beam depth, num</p>
+<p class="topic-title">c =: 5*unit | unit1, unit2, decimals | label, <em>num,nonum</em></p>
+<p>D_1 =: 10*IN | IN, M, 3 | beam depth, num</p>
 </aside>
 <p>Defines a value and writes it to the file <em>vdocnum-s.csv</em> where <em>num</em> is the
 <em>docnumber</em> and <em>s</em> is the section number. The file is written to the folder
@@ -691,9 +695,9 @@ command.</p>
 <section id="t-assign-variable">
 <span id="asscmd"></span><h2><strong>[9t]</strong> assign variable<a class="headerlink" href="#t-assign-variable" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">b &lt;= a * 10*FT | unit1, unit2, decimals | label, <em>num;nonum</em></p>
-<p>b_1 &lt;= E_1 * 12.1*IN^2 | KIP, KN, 2 | Std. 123, num</p>
-<p>c_1 &lt;= func1(a,b) | KIP, KN, 2 | ACI 318-19 Table 22.5.5.1, num</p>
+<p class="topic-title">b &lt;=: a * 10*FT | unit1, unit2, decimals | label, <em>num;nonum</em></p>
+<p>b_1 &lt;=: E_1 * 12.1*IN^2 | KIP, KN, 2 | Std. 123, num</p>
+<p>c_1 &lt;=: func1(a,b) | KIP, KN, 2 | ACI 318-19 Table 22.5.5.1, num</p>
 </aside>
 <p>Assigns a value to an equation or function variable and writes the values to a
 file <em>vdocnum-s.csv</em> where <em>num</em> is the <em>doc number</em> and <em>s</em> is the section
@@ -717,8 +721,30 @@ places after the decimals.</p>
 </table>
 </div>
 </section>
+<section id="t-compare">
+<span id="compcmd"></span><h2><strong>[10t]</strong> compare<a class="headerlink" href="#t-compare" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">expression | decimal | text, align, color</p>
+<p>a &lt; b <strong>_[S]</strong> text, r, red</p>
+</aside>
+<p>Inserts a text stamp, alignment and color on the following line if the
+expression evaluates to true. Alignment can be <em>r;l;c</em> for right, left or
+center. Colors can be <em>red;blue;yellow;green;black;gray</em> defined in the <em>style
+files</em>.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Values</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 <section id="t-import-python-script">
-<span id="pycmd"></span><h2><strong>[10t]</strong> import Python script<a class="headerlink" href="#t-import-python-script" title="Link to this heading">#</a></h2>
+<span id="pycmd"></span><h2><strong>[11t]</strong> import Python script<a class="headerlink" href="#t-import-python-script" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| PYTHON | relative path | <em>rvspace</em>; user space</p>
 <div class="line-block">
@@ -742,23 +768,23 @@ paths used in the script are relative to the <em>rivt file</em> folder.</p>
 </table>
 </div>
 </section>
-<section id="t-import-script">
-<span id="scriptcmd"></span><h2><strong>[11t]</strong>  import script<a class="headerlink" href="#t-import-script" title="Link to this heading">#</a></h2>
+<section id="t-import-markup">
+<span id="markupcmd"></span><h2><strong>[12t]</strong>  import Markup<a class="headerlink" href="#t-import-markup" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| SCRIPT | relative path | <em>rst, html, latex</em></p>
+<p class="topic-title">| MARKUP | relative path | <em>rst, html, latex</em></p>
 <div class="line-block">
 <div class="line">SCRIPT | page1.html | html</div>
 </div>
 </aside>
 <p>Inserts HTML into an HTML <em>doc</em>, LaTeX into a PDF <em>doc</em>, and reStructuredText
-into either PDF or HTML.</p>
+into either PDF or HTML. LaTeX requires the installation of <em>texlive</em>.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
 <td><p>Tools</p></td>
 </tr>
 <tr class="row-even"><td><p>File Types</p></td>
-<td><p>.csv</p></td>
+<td><p>html, rst, tex</p></td>
 </tr>
 <tr class="row-odd"><td><p>Doc Types</p></td>
 <td><p>text, PDF, HTML</p></td>
@@ -768,7 +794,7 @@ into either PDF or HTML.</p>
 </div>
 </section>
 <section id="t-attach-pdf">
-<span id="appcmd"></span><h2><strong>[12t]</strong> attach PDF<a class="headerlink" href="#t-attach-pdf" title="Link to this heading">#</a></h2>
+<span id="attcmd"></span><h2><strong>[12t]</strong> attach PDF<a class="headerlink" href="#t-attach-pdf" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| PDFATTACH | relative path | <em>front;back</em>, title</p>
 <div class="line-block">
@@ -870,13 +896,14 @@ HTML <em>docs</em> the file is inserted as a donwload link.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-run-shell-script"><strong>[2t]</strong> run shell script</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-insert-image"><strong>[3t]</strong> insert image</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-insert-adjacent-images"><strong>[4t]</strong> insert adjacent images</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-format-text"><strong>[6t]</strong> format text</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-format-table"><strong>[5t]</strong> format table</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-format-text"><strong>[5t]</strong> format text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-format-table"><strong>[6t]</strong> format table</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-read-values"><strong>[7t]</strong>  read values</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-define-variable"><strong>[8t]</strong> define variable</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-assign-variable"><strong>[9t]</strong> assign variable</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-import-python-script"><strong>[10t]</strong> import Python script</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-import-script"><strong>[11t]</strong>  import script</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-compare"><strong>[10t]</strong> compare</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-import-python-script"><strong>[11t]</strong> import Python script</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-import-markup"><strong>[12t]</strong>  import Markup</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-attach-pdf"><strong>[12t]</strong> attach PDF</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-publish-doc"><strong>[13t]</strong> publish doc</a></li>
 </ul>

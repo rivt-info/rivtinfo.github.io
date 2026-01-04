@@ -1,4 +1,4 @@
-**B.1 rivt Installation**
+**B.1 Installation**
 =================================  
 
 **[1t]** rivt Project
@@ -18,7 +18,7 @@ and analysis capabilities.
 There are four installation methods for *rivt* and its framework, each with
 varying degrees of system and program integration.
 
-.. topic:: 1. *rivtuv* 
+.. topic:: rivtuv
 
     *uv* is a `Python package manager <https://docs.astral.sh/uv/>`_ and
     installer that simplifies installing isolated Python environments. See
@@ -28,7 +28,7 @@ varying degrees of system and program integration.
 
     <hr>
 
-.. topic:: 2. *rivt system* 
+.. topic:: rivt system
 
     *rivt* may be installed at the system level using standalone installers.
     See :ref:`rivt system <rivt-system>` for procedure.
@@ -37,7 +37,7 @@ varying degrees of system and program integration.
 
     <hr>
 
-.. topic:: 3. *rivt framework* 
+.. topic:: rivt framework
 
     The *rivt framework* includes *rivt* and additional integrated programs and
     tools with their own installers. It includes important productivity tools
@@ -54,7 +54,7 @@ varying degrees of system and program integration.
 
     <hr>
 
-.. topic:: 4. *rivtzip* 
+.. topic:: rivtzip
 
     *rivtzip* is a single folder, portable and isolated version of *rivt* that
     is integrated with *VSCode*.
@@ -65,7 +65,7 @@ varying degrees of system and program integration.
 
 .. _rivt-uv:
 
-**[2t]** Install *rivtuv*
+**[2t]** Install **rivtuv**
 ----------------------------------
 
 .. raw:: html

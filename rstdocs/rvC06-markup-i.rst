@@ -8,10 +8,10 @@
 
     <hr>
 
-The *Insert* API function inserts static sources into the *doc*, including
-images, tables, links and formatted text.
+The *Insert* API function inserts and formats static sources into the *doc*,
+including images, tables, links and formatted text.
 
-**[2t]** Format line
+**[2t]** Format line of text
 -------------------------------------
 
 =========================================== =======================================
@@ -29,18 +29,9 @@ section anchor _[A]                                  :ref:`anchortag`
           text _[G] glossary link term               :ref:`termtag`
           text _[D] doc link                         :ref:`doctag`
           text _[U] external url                     :ref:`urltag`   
-    \-\-\-\-\-                                       :ref:`linetag` [1]
-    \=\=\=\=\=                                       :ref:`pagetag` [1]
 =========================================== =======================================
-
-.. highlight:: none
-
-::
-
-    [1] must start in first indented column (absolute column 4)
-
-    
-**[3t]** Format block
+   
+**[3t]** Format text blocks
 -------------------------------------
 
 ========================================= ==============================
@@ -52,8 +43,8 @@ section anchor _[A]                                  :ref:`anchortag`
  _[[TEXT]] optional language                :ref:`codetag`
  _[[TOPIC]] topic                           :ref:`topictag`
  _[[END]]                                   :ref:`endblk`
+ _[[NEWPAGE]]                               :ref:`pageblk`
 ========================================= ==============================
-
 
 **[4t]** Read, Write Files
 -------------------------------------

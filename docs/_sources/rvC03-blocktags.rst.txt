@@ -14,23 +14,20 @@
 ========== ========================================= ==============================
 API Scope         Block Tags                           Description 
 ========== ========================================= ==============================
-rv.R        _[[SHELL]] os,wait,open                    :ref:`shelltag`
-rv.I, V     _[[INDENT]] spaces (4 default)             :ref:`indenttag`
-rv.I, V     _[[ITALIC]] spaces (4 default)             :ref:`italictag`
-rv.I, V     _[[NOTES]] optional label                  :ref:`notestag`
-rv.I, V     _[[TEXT]] optional language                :ref:`codetag`
-rv.I, V     _[[TOPIC]] topic                           :ref:`topictag`
-rv.T        _[[PYTHON]] namespace                      :ref:`pythontag`
-rv.T        _[[SCRIPT]] type                           :ref:`scripttag` [1]
-rv.D        _[[LAYOUT]] label                          :ref:`layouttag` 
+rv.R        _[[SHELL]] os,wait,open                    :ref:`shellblk`
+rv.I        _[[INDENT]] spaces (4 default)             :ref:`indentblk`
+rv.I        _[[ITALIC]] spaces (4 default)             :ref:`italicbllk`
+rv.I        _[[NOTES]] optional label                  :ref:`notesblk`
+rv.I        _[[TEXT]] optional language                :ref:`codeblk`
+rv.I        _[[TOPIC]] topic                           :ref:`topicblk`
+rv.T, V     _[[PYTHON]] namespace                      :ref:`pythonblk`
+rv.T        _[[MARKUP]] type                           :ref:`markupblk`
+rv.D        _[[META]] label                            :ref:`metablk`
+rv.D        _[[LAYOUT]] label                          :ref:`layoutblk` 
 all         _[[END]]                                   :ref:`endblk`
 ========== ========================================= ==============================
 
-::
-
-    [1] LaTeX processing requires the installation of Texlive
-
-.. _shelltag:
+.. _shellblk:
 
 **[2t]** shell commands
 ------------------------------------
@@ -62,7 +59,7 @@ specifies whether rivt file processing waits for the script to complete before
 continuing. The open parameter specifies whether to keep the shell window open
 after execution.
 
-.. _indenttag:
+.. _indentblk:
 
 **[3t]** indent text
 ----------------------------------------------
@@ -86,7 +83,7 @@ Indents block text four spaces.
 API Scope: Insert, Values
 Doc Types: text, PDF, HTML
 
-.. _italictag:
+.. _italicblk:
 
 **[4t]** indent italic text
 ------------------------------------------------
@@ -110,7 +107,7 @@ Indents the specified number spaces and italicizes block.
 API Scope: Insert, Values
 Doc Types: text, PDF, HTML
 
-.. _notestag:
+.. _notesblk:
 
 **[5t]** endnote text
 -------------------------------------------    
@@ -137,7 +134,7 @@ Formats and numbers an endnote in order of processing.
 API Scope: Insert, Values
 Doc Types: text, PDF, HTML
 
-.. _codetag:
+.. _codeblk:
 
 **[6t]** literal text or code
 ------------------------------------------------
@@ -168,7 +165,7 @@ specifies formatting and syntax coloring.  Languages include:
 API Scope: Insert, Values
 Doc Types: text, PDF, HTML
 
-.. _topictag:
+.. _topicblk:
 
 **[7t]** topic
 ------------------------------------------------
@@ -192,7 +189,7 @@ Formats a highlighted topic block.
 API Scope: Insert, Values
 Doc Types: text, PDF, HTML
 
-.. _pythontag:
+.. _pythonblk:
 
 **[8t]** Python code
 ------------------------------------------------
@@ -215,7 +212,7 @@ File paths in the script are relative to the *rivt file* folder.
 API Scope: Value, Tool
 Doc Types: text, PDF, HTML
 
-.. _scripttag:
+.. _markupblk:
 
 **[9t]** markup scripts
 ---------------------------------------
@@ -239,7 +236,7 @@ into either PDF or HTML.
 API Scope: Tool
 Doc Types: PDF, HTML
 
-.. _layouttag:
+.. _layoutblk:
 
 **[10t]** Layout 
 ------------------------------------------------
@@ -261,6 +258,45 @@ Overrides default layout settings.
 
 API Scope: Doc
 Doc Types: text, PDF, HTML
+
+
+.. _metablk:
+
+**[8t]** Metadata
+-------------------
+
+.. raw:: html
+
+    <hr>
+
+*Metadata* is written to the *api-log.py* file. Metadata is specified using
+standard Python data types. 
+
+*rv_authD* is a dictionary that specifies the author, version, email, repository
+and license information and forks. 
+
+..  code-block:: python
+
+    # default - author dictionary
+    rv_authD = {
+            "authors": "",
+            "version": "0.0.0",
+            "email": "",
+            "repo": "",
+            "license": "https://opensource.org/license/mit/",
+            "fork1": ["author", "version", "email", "repo"],
+            "fork2": ["author", "version", "email", "repo"],
+            }
+
+    # example - author dicitionary
+    rv_authD = {
+            "authors": "rholland",
+            "version": "0.6.1",
+            "email": "rod.h.holland@gmail.com",
+            "repo": "https://github.com/rivt-info/rivt-simple-doc",
+            "license": "https://opensource.org/license/mit/",
+            }
+
 
 .. _endblk:
 

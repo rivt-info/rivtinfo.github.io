@@ -14,16 +14,17 @@
 API Scope           | Command | path | parameters                          Description
 ========== ============================================================== =====================
 rv.R       \| SHELL | relative path | os, wait                             :ref:`shellcmd`
-rv.I,V     \| IMAGE | relative path |  scale, caption, figure              :ref:`imgcmd`
-rv.I,V     \| IMAGE2 | rel path1, rel path2 | s1, s2, c1, c2, fig1, fig2   :ref:`img2cmd`
-rv.I,V     \| TEXT | relative path |  language                             :ref:`textcmd`
-rv.I,V     \| TABLE | rel path | title, width, rows, number, align, head   :ref:`tablecmd`     
-rv.I,V     \| VALTABLE | rel path | title, width, rows, number             :ref:`valtablecmd`     
-rv.V       a := 1*IN  | unit1, unit2, decimal | label                      :ref:`defcmd`
-rv.V       c <= expression | unit1, unit2, decimal | label, number         :ref:`asscmd`
-rv.V,T     \| PYTHON | relative path | namespace                           :ref:`pycmd`
-rv.T       \| SCRIPT | relative path | type                                :ref:`scriptcmd`
-rv.D       \| PDFATTACH | relative path | place,title                      :ref:`appcmd`   
+rv.I       \| TEXT | relative path |  language                             :ref:`textcmd`
+rv.I       \| TABLE | rel path | title, width, rows, align, head           :ref:`tablecmd`     
+rv.V, I    \| IMAGE | relative path |  scale, caption, figure              :ref:`imgcmd`
+rv.V, I    \| IMAGE2 | rel path1, rel path2 | s1, s2, c1, c2, fig1, fig2   :ref:`img2cmd`
+rv.V       \| VALTABLE | rel path | title, width, rows                     :ref:`valtablecmd`     
+rv.V       a =: 1*IN  | unit1, unit2, decimal | label                      :ref:`defcmd`
+rv.V       c <=: expression | unit1, unit2, decimal | label                :ref:`asscmd`
+rv.V       a < c  | decimal | text, align, color                           :ref:`compcmd`
+rv.T,V     \| PYTHON | relative path | namespace                           :ref:`pycmd`
+rv.T       \| MARKUP | relative path | type                                :ref:`scriptcmd`
+rv.D       \| PDFATTACH | relative path | place,title                      :ref:`attcmd`   
 rv.D       \| PUBLISH | ini rel. path | type                               :ref:`pubcmd` 
 ========== ============================================================== =====================
 
@@ -35,7 +36,6 @@ rv.D       \| PUBLISH | ini rel. path | type                               :ref:
 .. raw:: html
 
     <hr>
-
 
 .. topic:: | SHELL | relative path | os, *nowait; wait*
 
@@ -87,7 +87,6 @@ File Types    PNG, JPG
 Doc Types     PDF, HTML
 =========== ==========================
 
-
 .. _img2cmd:
 
 **[4t]** insert adjacent images
@@ -121,8 +120,7 @@ Doc Types     PDF, HTML
 
 .. _textcmd:
 
-
-**[6t]** format text
+**[5t]** format text
 ------------------------------------------
 
 .. raw:: html
@@ -156,10 +154,9 @@ File Types    txt, .py, .cmd, .bat, .sh, .rst
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-
 .. _tablecmd:
 
-**[5t]** format table
+**[6t]** format table
 ------------------------------------------
 
 .. raw:: html
@@ -187,7 +184,6 @@ API Scope     Insert, Values
 File Types    csv, xls, rst
 Doc Types     text, PDF, HTML
 =========== ==========================
-
 
 .. _valtablecmd:
 
@@ -232,7 +228,6 @@ File Types    .csv, .xls,
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-
 .. _defcmd:
 
 **[8t]** define variable
@@ -242,9 +237,9 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic:: c := 5*unit | unit1, unit2, decimals | label, *num,nonum*
+.. topic:: c =: 5*unit | unit1, unit2, decimals | label, *num,nonum*
 
-    D_1 := 10*IN | IN, M, 3 | beam depth, num
+    D_1 =: 10*IN | IN, M, 3 | beam depth, num
   
 Defines a value and writes it to the file *vdocnum-s.csv* where *num* is the 
 *docnumber* and *s* is the section number. The file is written to the folder
@@ -259,7 +254,6 @@ File Types    .csv
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-
 .. _asscmd:
 
 **[9t]** assign variable
@@ -269,11 +263,11 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic:: b <= a * 10*FT | unit1, unit2, decimals | label, *num;nonum*
+.. topic:: b <=: a * 10*FT | unit1, unit2, decimals | label, *num;nonum*
 
-    b_1 <= E_1 * 12.1*IN^2 | KIP, KN, 2 | Std. 123, num
+    b_1 <=: E_1 * 12.1*IN^2 | KIP, KN, 2 | Std. 123, num
 
-    c_1 <= func1(a,b) | KIP, KN, 2 | ACI 318-19 Table 22.5.5.1, num 
+    c_1 <=: func1(a,b) | KIP, KN, 2 | ACI 318-19 Table 22.5.5.1, num 
 
 Assigns a value to an equation or function variable and writes the values to a
 file *vdocnum-s.csv* where *num* is the *doc number* and *s* is the section
@@ -290,9 +284,34 @@ File Types    .csv
 Doc Types     text, PDF, HTML
 =========== ==========================
 
+.. _compcmd:
+
+**[10t]** compare
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: expression | decimal | text, align, color
+
+   a < b **_[S]** text, r, red
+
+Inserts a text stamp, alignment and color on the following line if the
+expression evaluates to true. Alignment can be *r;l;c* for right, left or
+center. Colors can be *red;blue;yellow;green;black;gray* defined in the *style
+files*.
+
+=========== ==========================
+API Scope     Values
+Doc Types     text, PDF, HTML
+=========== ==========================
+
+
+
 .. _pycmd:
 
-**[10t]** import Python script
+**[11t]** import Python script
 -------------------------------------------
 
 .. raw:: html
@@ -312,29 +331,29 @@ File Types    .csv
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-.. _scriptcmd:
+.. _markupcmd:
 
-**[11t]**  import script
+**[12t]**  import Markup
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | SCRIPT | relative path | *rst, html, latex*
+.. topic:: | MARKUP | relative path | *rst, html, latex*
 
     | SCRIPT | page1.html | html
 
 Inserts HTML into an HTML *doc*, LaTeX into a PDF *doc*, and reStructuredText
-into either PDF or HTML. 
+into either PDF or HTML. LaTeX requires the installation of *texlive*.
 
 =========== ==========================
 API Scope     Tools
-File Types    .csv
+File Types    html, rst, tex
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-.. _appcmd:
+.. _attcmd:
 
 **[12t]** attach PDF
 -------------------------------------------
