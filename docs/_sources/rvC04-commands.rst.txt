@@ -13,22 +13,22 @@
 ========== ============================================================== =====================
 API Scope           | Command | path | parameters                          Description
 ========== ============================================================== =====================
-rv.R       \| SHELL | relative path | os, wait                             :ref:`shellcmd`
-rv.I       \| TEXT | relative path |  language                             :ref:`textcmd`
-rv.I       \| TABLE | rel path | title, width, rows, align, head           :ref:`tablecmd`     
-rv.V, I    \| IMAGE | relative path |  scale, caption, figure              :ref:`imgcmd`
-rv.V, I    \| IMAGE2 | rel path1, rel path2 | s1, s2, c1, c2, fig1, fig2   :ref:`img2cmd`
-rv.V       \| VALTABLE | rel path | title, width, rows                     :ref:`valtablecmd`     
-rv.V       a =: 1*IN  | unit1, unit2, decimal | label                      :ref:`defcmd`
-rv.V       c <=: expression | unit1, unit2, decimal | label                :ref:`asscmd`
-rv.V       a < c  | decimal | text, align, color                           :ref:`compcmd`
-rv.T, V    \| PYTHON | relative path | namespace                           :ref:`Python script`
-rv.T       \| MARKUP | relative path | type                                :ref:`scriptcmd`
-rv.D       \| PDFATTACH | relative path | place,title                      :ref:`attcmd`   
-rv.D       \| PUBLISH | ini rel. path | type                               :ref:`pubcmd` 
+rv.R       \| SHELL | relative path | os, wait                             :ref:`Shell file`
+rv.I       \| TEXT | relative path |  language                             :ref:`Text file`
+rv.I       \| TABLE | rel path | title, width, rows, align, head           :ref:`Table file`     
+rv.V, I    \| IMAGE | relative path |  scale, caption, figure              :ref:`Image file`
+rv.V, I    \| IMAGE2 | rel path1, rel path2 | s1, s2, c1, c2, fig1, fig2   :ref:`Adjacent images`
+rv.V       \| VALTABLE | rel path | title, width, rows                     :ref:`Values file`     
+rv.V       a =: 1*IN  | unit1, unit2, decimal | label                      :ref:`Define variable`
+rv.V       c <=: expression | unit1, unit2, decimal | label                :ref:`Assign value`
+rv.V       a < c  | decimal | text, align, color                           :ref:`Compare values`
+rv.T, V    \| PYTHON | relative path | namespace                           :ref:`Python file`
+rv.T       \| MARKUP | relative path | type                                :ref:`Markup file`
+rv.D       \| PDFATTACH | relative path | place,title                      :ref:`Attach PDF`   
+rv.D       \| PUBLISH | ini rel. path | type                               :ref:`Publish doc` 
 ========== ============================================================== =====================
 
-.. _shellcmd:
+.. _Shell file:
 
 **[2t]** Shell file
 -------------------------------------------
@@ -57,68 +57,8 @@ File Types   .cmd, .bat, .sh
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-.. _imgcmd:
 
-**[3t]** Image file
--------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: | IMAGE | relative path | scale, caption, *fig;nofig*
-
-    | IMAGE | file1.png | .5, Map, fig 
-
-The IMAGE command reads a PNG or JPEG file and centers it in the *doc*. The
-scale parameter is a decimal fraction of the page width. The caption may be
-ommited by using a single hyphen. The *fig;nofig* parameter specifies whether
-to assign a figure number. The image path is inserted in the text *doc* instead
-of the image.
-
-If a *doc* is part of a report and no path is specified, the file is assumed to
-be in the default folder */src/img/* . Otherwise the path needs to be specified
-relative to the report root (rivt file folder). If the doc is a 
-:term:`single doc` the file is read from the rivt file folder.
-
-=========== ==========================
-API Scope     Insert, Values
-File Types    PNG, JPG 
-Doc Types     PDF, HTML
-=========== ==========================
-
-.. _img2cmd:
-
-**[4t]** Adjacent images
---------------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: | IMAGE2 | rel path1, rel path2 | sc1, sc2, cap1, cap2, fig, fig
-
-    | IMAGE2 | file1.png, file2.png | .5,.5, Map, Photo, fig, fig 
-
-The IMAGE2 command reads two PNG or JPEG file and places them side by side in
-the *doc*. The scale parameters are a decimal fraction of the page width. The
-captions may be ommited by using a single hyphen for either or both images. The
-*fig;nofig* parameters specify whether to assign a figure number to either or
-both images. The image path is inserted in the text *doc* instead
-of the image.
-
-If a *doc* is part of a report and no path is specified, the file is assumed to
-be in the default folder */src/img/* . Otherwise the path needs to be specified
-relative to the report root (rivt file folder). If the doc is a 
-:term:`single doc` the file is read from the rivt file folder.
-
-=========== ==========================
-API Scope     Insert, Values
-File Types    PNG, JPG 
-Doc Types     PDF, HTML
-=========== ==========================
-
-.. _textcmd:
+.. _Text file:
 
 **[5t]** Text file
 ------------------------------------------
@@ -154,9 +94,9 @@ File Types    txt, .py, .cmd, .bat, .sh, .rst
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-.. _tablecmd:
+.. _Table file:
 
-**[6t]** Table data
+**[6t]** Table file
 ------------------------------------------
 
 .. raw:: html
@@ -185,7 +125,68 @@ File Types    csv, xls, rst
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-.. _valtablecmd:
+.. _Image file:
+
+**[3t]** Image file
+-------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: | IMAGE | relative path | scale, caption, *fig;nofig*
+
+    | IMAGE | file1.png | .5, Map, fig 
+
+The IMAGE command reads a PNG or JPEG file and centers it in the *doc*. The
+scale parameter is a decimal fraction of the page width. The caption may be
+ommited by using a single hyphen. The *fig;nofig* parameter specifies whether
+to assign a figure number. The image path is inserted in the text *doc* instead
+of the image.
+
+If a *doc* is part of a report and no path is specified, the file is assumed to
+be in the default folder */src/img/* . Otherwise the path needs to be specified
+relative to the report root (rivt file folder). If the doc is a 
+:term:`single doc` the file is read from the rivt file folder.
+
+=========== ==========================
+API Scope     Insert, Values
+File Types    PNG, JPG 
+Doc Types     PDF, HTML
+=========== ==========================
+
+.. _Adjacent images:
+
+**[4t]** Adjacent images
+--------------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: | IMAGE2 | rel path1, rel path2 | sc1, sc2, cap1, cap2, fig, fig
+
+    | IMAGE2 | file1.png, file2.png | .5,.5, Map, Photo, fig, fig 
+
+The IMAGE2 command reads two PNG or JPEG file and places them side by side in
+the *doc*. The scale parameters are a decimal fraction of the page width. The
+captions may be ommited by using a single hyphen for either or both images. The
+*fig;nofig* parameters specify whether to assign a figure number to either or
+both images. The image path is inserted in the text *doc* instead
+of the image.
+
+If a *doc* is part of a report and no path is specified, the file is assumed to
+be in the default folder */src/img/* . Otherwise the path needs to be specified
+relative to the report root (rivt file folder). If the doc is a 
+:term:`single doc` the file is read from the rivt file folder.
+
+=========== ==========================
+API Scope     Insert, Values
+File Types    PNG, JPG 
+Doc Types     PDF, HTML
+=========== ==========================
+
+.. _Values file:
 
 **[7t]**  Values file
 ------------------------------------------------
@@ -228,7 +229,7 @@ File Types    .csv, .xls,
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-.. _defcmd:
+.. _Define variable:
 
 **[8t]** Define variable
 -------------------------------------------
@@ -254,7 +255,7 @@ File Types    .csv
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-.. _asscmd:
+.. _Assign value:
 
 **[9t]** Assign value
 -------------------------------------------
@@ -284,7 +285,7 @@ File Types    .csv
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-.. _compcmd:
+.. _Compare values:
 
 **[10t]** Compare values
 -----------------------------------------
@@ -309,9 +310,9 @@ Doc Types     text, PDF, HTML
 
 
 
-.. _Python script:
+.. _Python file:
 
-**[11t]** Python script
+**[11t]** Python file
 -------------------------------------------
 
 .. raw:: html
@@ -376,7 +377,7 @@ File Types    .csv
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-.. _pubcmd:
+.. _Publish doc:
 
 **[13t]** Publish doc
 -------------------------------------------

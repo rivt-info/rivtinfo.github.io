@@ -25,9 +25,10 @@ rv.T        _[[MARKUP]] type                           :ref:`Markup block`
 rv.D        _[[META]] label                            :ref:`Meta block`
 rv.D        _[[LAYOUT]] label                          :ref:`Layout block` 
 all         _[[END]]                                   :ref:`End block`
+all         _[[NEW PAGE]]                              :ref:`New Page`
 ========== ========================================= =======================================
 
-.. _Shell scripts:
+.. _Shell script:
 
 **[2t]** Shell script
 ------------------------------------
@@ -335,6 +336,26 @@ Doc Types     text, PDF, HTML
     _[[END]] optional label
 
 Terminates a block tag.
+
+=========== ==========================
+API Scope     All
+Doc Types     text, PDF, HTML
+=========== ==========================
+
+.. _New Page:
+
+**[12t]** New Page
+------------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. code-block:: text
+        
+    _[[New Page]] 
+
+Starts new page.
 
 =========== ==========================
 API Scope     All

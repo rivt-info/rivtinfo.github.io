@@ -72,8 +72,8 @@ varying degrees of system and program integration.
 
     <hr>
 
-*rivt* is not uploaded to PyPI yet. The *rivtuv* installation method is
-recommended for most users.
+The *rivtlib* package is not uploaded to PyPI yet. The *rivtuv* installation 
+method is recommended for most users.
 
 .. topic:: Step 1. Install uv
 
@@ -97,7 +97,6 @@ recommended for most users.
 
     After installing *uv*, download and run the following command or shell file.
     
-
     Windows:  :download:`rivtuv.cmd </_downloads/rivtuv.cmd>` 
 
     OSX and Linux: :download:`rivtuv.sh </_downloads/rivtuv.sh>`
@@ -166,7 +165,7 @@ including libraries and extensions. It can be downloaded here.
 
 The advantages of this installation method include:
 
-#. No installaion steps - just unzip and use.
+#. No installation steps - just unzip and use.
 #. Can be moved anywhere as a unified folder.
 #. Ensures compatiblity and integration between libraries. 
 

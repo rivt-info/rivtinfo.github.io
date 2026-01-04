@@ -15,16 +15,10 @@ The *Tools* API function executes markup and scripts.
 ========================================= ==============================
        Block Tags                           Description 
 ========================================= ==============================
- _[[PYTHON]] namespace                      :ref:`pythontag`
- _[[SCRIPT]] type                           :ref:`scripttag` [1]
- _[[END]]                                   :ref:`endblk`
+ [[PYTHON]] namespace                       :ref:`Python block`
+_[[MARKUP]] type                            :ref:`Markup block`
+_[[END]]                                    :ref:`End Block`
 ========================================= ==============================
-
-.. highlight:: none
-
-::
-
-    [1] LaTeX processing requires the installation of Texlive
 
 
 **Read, write and format files**
@@ -32,12 +26,7 @@ The *Tools* API function executes markup and scripts.
 ============================================================== =====================
          | Command | path | parameters                          Description
 ============================================================== =====================
-\| PDFAPPEND | relative path | place, cover                     :ref:`appcmd`   
-\| PUBLISH | ini rel. path | type                               :ref:`pubcmd` 
+ \| PYTHON | relative path | namespace                           :ref:`Python file`
+ \| MARKUP | relative path | type                                :ref:`Markup file`
 ============================================================== =====================
 
-.. highlight:: none
-
-::
-
-    [1] optional tags number the equation or table

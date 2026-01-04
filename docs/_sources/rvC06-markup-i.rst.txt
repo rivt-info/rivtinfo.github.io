@@ -36,25 +36,25 @@ equation or label _[E]                         :ref:`Equation label`
 ========================================= ==============================
        Block Tags                           Description 
 ========================================= ==============================
- _[[INDENT]] spaces (4 default)             :ref:`indenttag`
- _[[ITALIC]] spaces (4 default)             :ref:`italictag`
- _[[NOTES]] optional label                  :ref:`notestag`
- _[[TEXT]] optional language                :ref:`codetag`
- _[[TOPIC]] topic                           :ref:`topictag`
- _[[END]]                                   :ref:`endblk`
- _[[NEWPAGE]]                               :ref:`pageblk`
+ _[[INDENT]] spaces (4 default)             :ref:`Indent text block`
+ _[[ITALIC]] spaces (4 default)             :ref:`Indent italic block`
+ _[[ENDNOTES]] optional label               :ref:`Endnotes block`
+ _[[TEXT]] optional language                :ref:`Text block`
+ _[[TOPIC]] topic                           :ref:`Topic block`
+ _[[END]]                                   :ref:`End block`
 ========================================= ==============================
 
 **[4t]** Read, Write Files
 -------------------------------------
 
-============================================================== =====================
-         | Command | path | parameters                          Description
-============================================================== =====================
-\| IMAGE | relative path |  scale, caption, figure              :ref:`imgcmd`
-\| IMAGE2 | rel path1, rel path2 | s1, s2, c1, c2, fig1, fig2   :ref:`img2cmd`
-\| TABLE | relative path | width, align, title, number          :ref:`tablecmd`     
-\| TEXT | relative path |  language                             :ref:`textcmd`
-============================================================== =====================
+================================================================== ========================
+         | Command | path | parameters                               Description
+================================================================== ========================
+ \| TEXT | relative path |  language                                :ref:`Text file`
+ \| TABLE | rel path | title, width, rows, align, head              :ref:`Table file`     
+ \| IMAGE | relative path |  scale, caption, figure                 :ref:`Image file`
+ \| IMAGE2 | rel path1, rel path2 | s1, s2, c1, c2, fig1, fig2      :ref:`Adjacent images`
+================================================================== ========================
 
 
+ 
