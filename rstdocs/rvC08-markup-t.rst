@@ -13,13 +13,14 @@ The *Tools* API function executes markup and scripts.
 ========================================= ==============================
        Block Tags                           Description 
 ========================================= ==============================
- [[PYTHON]] namespace                       :ref:`Python block`
+_[[PYTHON]] namespace                       :ref:`Python block`
 _[[MARKUP]] type                            :ref:`Markup block`
+_[[METADATA]] label                         :ref:`Meta block`
 _[[END]]                                    :ref:`End Block`
 ========================================= ==============================
 
 ============================================================== =====================
-         | Command | path | parameters                          Description
+         | Command | path | parameters                            Description
 ============================================================== =====================
  \| PYTHON | relative path | namespace                           :ref:`Python file`
  \| MARKUP | relative path | type                                :ref:`Markup file`

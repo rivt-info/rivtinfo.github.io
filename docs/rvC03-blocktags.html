@@ -426,8 +426,8 @@
 <td><p>_[[MARKUP]] type</p></td>
 <td><p><a class="reference internal" href="#markup-block"><span class="std std-ref">[9t] Markup block</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.D</p></td>
-<td><p>_[[META]] label</p></td>
+<tr class="row-even"><td><p>rv.T</p></td>
+<td><p>_[[METADATA]] label</p></td>
 <td><p><a class="reference internal" href="#meta-block"><span class="std std-ref">[11t] Metadata</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.D</p></td>
@@ -662,59 +662,42 @@ into either PDF or HTML.</p>
 </table>
 </div>
 </section>
-<section id="t-layout-block">
-<span id="layout-block"></span><h2><strong>[10t]</strong> Layout block<a class="headerlink" href="#t-layout-block" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[LAYOUT]] optional label
-docnameS = &quot;&quot;
-pdfheaderL = []
-footerL = []
-_[[END]]
-</pre></div>
-</div>
-<p>Overrides default layout settings.</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<tbody>
-<tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Doc</p></td>
-</tr>
-<tr class="row-even"><td><p>Doc Types</p></td>
-<td><p>text, PDF, HTML</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
 <section id="t-metadata">
 <span id="meta-block"></span><h2><strong>[11t]</strong> Metadata<a class="headerlink" href="#t-metadata" title="Link to this heading">#</a></h2>
-<hr><p><em>Metadata</em> is written to the <em>api-log.py</em> file. Metadata is specified using
-standard Python data types.</p>
-<p><em>rv_authD</em> is a dictionary that specifies the author, version, email, repository
-and license information and forks.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># default - author dictionary</span>
-<span class="n">rv_authD</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="s2">&quot;authors&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;0.0.0&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;repo&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;license&quot;</span><span class="p">:</span> <span class="s2">&quot;https://opensource.org/license/mit/&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;fork1&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;author&quot;</span><span class="p">,</span> <span class="s2">&quot;version&quot;</span><span class="p">,</span> <span class="s2">&quot;email&quot;</span><span class="p">,</span> <span class="s2">&quot;repo&quot;</span><span class="p">],</span>
-        <span class="s2">&quot;fork2&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;author&quot;</span><span class="p">,</span> <span class="s2">&quot;version&quot;</span><span class="p">,</span> <span class="s2">&quot;email&quot;</span><span class="p">,</span> <span class="s2">&quot;repo&quot;</span><span class="p">],</span>
-        <span class="p">}</span>
+<hr><aside class="topic">
+<p class="topic-title">_[[METADATA]] label</p>
+<p>Some text. <strong>_[#]</strong>  Some more text.</p>
+</aside>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># defaults</span>
+_<span class="o">[[</span>METADATA<span class="o">]]</span><span class="w"> </span>meta
+authors:
+version:<span class="w"> </span><span class="m">0</span>.0.0
+email:
+repo:
+license:<span class="w"> </span>https://opensource.org/license/mit
+fork1:<span class="w"> </span>author,<span class="w"> </span>version,<span class="w"> </span>email,<span class="w"> </span>repo
+fork2:<span class="w"> </span>author,<span class="w"> </span>version,<span class="w"> </span>email,<span class="w"> </span>repo
+_<span class="o">[[</span>END<span class="o">]]</span>
 
 <span class="c1"># example - author dicitionary</span>
-<span class="n">rv_authD</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="s2">&quot;authors&quot;</span><span class="p">:</span> <span class="s2">&quot;rholland&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;0.6.1&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;rod.h.holland@gmail.com&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;repo&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/rivt-info/rivt-simple-doc&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;license&quot;</span><span class="p">:</span> <span class="s2">&quot;https://opensource.org/license/mit/&quot;</span><span class="p">,</span>
-        <span class="p">}</span>
+_<span class="o">[[</span>METADATA<span class="o">]]</span><span class="w"> </span>authors
+authors:<span class="w"> </span>rholland,<span class="w"> </span>rward
+version:<span class="w"> </span><span class="m">0</span>.1.1
+email:<span class="w"> </span>rholland@email.com
+repo:<span class="w"> </span>https://github.com/rivt-info/rivt-simple-doc
+license:<span class="w"> </span>https://opensource.org/license/mit
+fork1:<span class="w"> </span>author,<span class="w"> </span>version,<span class="w"> </span>email,<span class="w"> </span>repo
+fork1:<span class="w"> </span>author,<span class="w"> </span>version,<span class="w"> </span>email,<span class="w"> </span>repo
+_<span class="o">[[</span>END<span class="o">]]</span>
 </pre></div>
 </div>
+<p><em>Metadata</em> is written to the <em>api-log.py</em> file and is converted internally to
+Python dictionaries with a name taken from the label e.g. <em>rvmeta_D</em> or
+<em>rvmeta_authorsD</em>/</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Doc</p></td>
+<td><p>Tools</p></td>
 </tr>
 <tr class="row-even"><td><p>Doc Types</p></td>
 <td><p>text, PDF, HTML</p></td>
@@ -733,6 +716,28 @@ and license information and forks.</p>
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
 <td><p>All</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="t-layout-block">
+<span id="layout-block"></span><h2><strong>[10t]</strong> Layout block<a class="headerlink" href="#t-layout-block" title="Link to this heading">#</a></h2>
+<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[LAYOUT]] optional label
+docnameS = &quot;&quot;
+pdfheaderL = []
+footerL = []
+_[[END]]
+</pre></div>
+</div>
+<p>Overrides default layout settings.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Doc</p></td>
 </tr>
 <tr class="row-even"><td><p>Doc Types</p></td>
 <td><p>text, PDF, HTML</p></td>
@@ -817,9 +822,9 @@ and license information and forks.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-topic-block"><strong>[7t]</strong> Topic block</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-python-block"><strong>[8t]</strong> Python block</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-markup-block"><strong>[9t]</strong> Markup block</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-layout-block"><strong>[10t]</strong> Layout block</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-metadata"><strong>[11t]</strong> Metadata</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-end"><strong>[12t]</strong> End</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-layout-block"><strong>[10t]</strong> Layout block</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-new-page"><strong>[12t]</strong> New Page</a></li>
 </ul>
   </nav></div>

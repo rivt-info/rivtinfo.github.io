@@ -22,7 +22,7 @@ rv.I        _[[TEXT]] optional language                :ref:`Text block`
 rv.I        _[[TOPIC]] topic                           :ref:`Topic block`
 rv.T, V     _[[PYTHON]] namespace                      :ref:`Python block`
 rv.T        _[[MARKUP]] type                           :ref:`Markup block`
-rv.D        _[[META]] label                            :ref:`Meta block`
+rv.T        _[[METADATA]] label                        :ref:`Meta block`
 rv.D        _[[LAYOUT]] label                          :ref:`Layout block` 
 all         _[[END]]                                   :ref:`End block`
 all         _[[NEW PAGE]]                              :ref:`New Page`
@@ -254,6 +254,73 @@ API Scope     Tool
 Doc Types     text, PDF, HTML
 =========== ==========================
 
+
+.. _Meta block:
+
+**[11t]** Metadata
+-------------------
+
+.. raw:: html
+
+    <hr>
+.. topic:: _[[METADATA]] label
+    
+   Some text. **_[#]**  Some more text.
+
+..  code-block:: bash
+
+    # defaults
+    _[[METADATA]] meta
+    authors: 
+    version: 0.0.0
+    email:
+    repo:
+    license: https://opensource.org/license/mit
+    fork1: author, version, email, repo
+    fork2: author, version, email, repo
+    _[[END]]
+
+    # example - author dicitionary
+    _[[METADATA]] authors
+    authors: rholland, rward
+    version: 0.1.1
+    email: rholland@email.com
+    repo: https://github.com/rivt-info/rivt-simple-doc
+    license: https://opensource.org/license/mit
+    fork1: author, version, email, repo
+    fork1: author, version, email, repo
+    _[[END]]
+
+*Metadata* is written to the *api-log.py* file and is converted internally to
+Python dictionaries with a name taken from the label e.g. *rvmeta_D* or 
+*rvmeta_authorsD*/
+
+=========== ==========================
+API Scope     Tools
+Doc Types     text, PDF, HTML
+=========== ==========================
+
+.. _End block:
+
+**[12t]** End
+------------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. code-block:: text
+        
+    _[[END]] optional label
+
+Terminates a block tag.
+
+=========== ==========================
+API Scope     All
+Doc Types     text, PDF, HTML
+=========== ==========================
+
+
 .. _Layout block:
 
 **[10t]** Layout block
@@ -279,68 +346,6 @@ API Scope     Doc
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-
-.. _Meta block:
-
-**[11t]** Metadata
--------------------
-
-.. raw:: html
-
-    <hr>
-
-*Metadata* is written to the *api-log.py* file. Metadata is specified using
-standard Python data types. 
-
-*rv_authD* is a dictionary that specifies the author, version, email, repository
-and license information and forks. 
-
-..  code-block:: python
-
-    # default - author dictionary
-    rv_authD = {
-            "authors": "",
-            "version": "0.0.0",
-            "email": "",
-            "repo": "",
-            "license": "https://opensource.org/license/mit/",
-            "fork1": ["author", "version", "email", "repo"],
-            "fork2": ["author", "version", "email", "repo"],
-            }
-
-    # example - author dicitionary
-    rv_authD = {
-            "authors": "rholland",
-            "version": "0.6.1",
-            "email": "rod.h.holland@gmail.com",
-            "repo": "https://github.com/rivt-info/rivt-simple-doc",
-            "license": "https://opensource.org/license/mit/",
-            }
-
-=========== ==========================
-API Scope     Doc
-Doc Types     text, PDF, HTML
-=========== ==========================
-
-.. _End block:
-
-**[12t]** End
-------------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. code-block:: text
-        
-    _[[END]] optional label
-
-Terminates a block tag.
-
-=========== ==========================
-API Scope     All
-Doc Types     text, PDF, HTML
-=========== ==========================
 
 .. _New Page:
 

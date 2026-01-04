@@ -26,16 +26,9 @@ Documents are generated from :term:`rivt files` that produce formatted text,
 HTML and PDF documents.
 
 A *rivt file* is a :term:`Python` file (.py) that imports the :term:`rivtlib`
-Python package and implements an API that interprets :term:`rivt markup` and
-:term:`reStructuredText`. A *rivt file* can publish a document in any format. 
-
-A published document is referred to as a :term:`rivt doc`. A collection of 
-*rivt docs* may be collated into a :term:`rivt report`. This site
-is an example of a report.
-
-As an open source project *rivt* may be integrated with other programs, 
-and *rivt files* may be shared and cooperatively improved. An 
-integrated :term:`rivt framework` is described :doc:`here. <rvB01-install>`.
+Python package and interprets :term:`rivt markup`. The same *rivt file* can publish a document in each
+format and subsequently be combined with other documents and compiled into a
+:term:`rivt report`. This site is an example of a report.
 
 Small *rivt file* examples are provided :doc:`here <rvD05-docex>` and 
 :doc:`here<rvD06-reportex>`. An interface for searching *rivt files* 

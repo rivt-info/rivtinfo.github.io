@@ -1,7 +1,7 @@
 **A.1 Introduction**
 =================================================================
 
-**[1t]** Summary
+**[1t]** Motivations
 --------------------------------------------------------------------- 
 
 .. raw:: html
@@ -55,17 +55,26 @@ Jupyter        no       no         no      yes         yes      yes
     .. [6] Collaboration support
 
 
-**[2t]** rivt API 
+**[2t]** Overview and API
 --------------------------------------------------------------------- 
 
 .. raw:: html
 
     <hr>
 
-The *rivtlib* package implements an API designed to be:
+A *rivt document* is published from a *rivt file* and is referred to as a
+:term:`rivt doc`. A collection of *rivt docs* may be collated into a
+:term:`rivt report`. 
 
-- lightweight - *rivt markup syntax* is made up of 3 dozen tags 
-    and commands.
+As an open source project *rivt* may be integrated with other programs, 
+and *rivt files* may be shared and cooperatively improved. An 
+integrated :term:`rivt framework` is described :doc:`here. <rvB01-install>`.
+
+The API consists of seven functions, a markup language and a folder structure.
+The software design is implememted to be:
+
+- lightweight - :term:`rivt markup` is made up of 3 dozen tags 
+    and commands and wraps :term:`reStructuredText`,
 
 - flexible - the same rivt file produces a single *doc* or can be part of a 
     large report formatted as text, HTML and PDF.
@@ -73,16 +82,16 @@ The *rivtlib* package implements an API designed to be:
 - extensible - it is written in Python with direct access to 
     thousands of Python packages.
 
-The *rivt API* publishes documents using a lightweight 
-:term:`rivt markup` language that combines text, tables, diagrams, models 
-and calculations with a standard :ref:`folder structure <top-folders>` and 
-file naming system that organizes documents into reports.
 
-The API implements seven functions. The name *rivt* is an acronym formed from 
-the four functions that generate document content. 
+**[2t]** API functions
+--------------------------------------------------------------------- 
+
+.. raw:: html
+
+    <hr>
 
 =============== =============== ===========================================
-API Function        Name             Purpose
+API Functions        Name             Purpose
 =============== =============== ===========================================
 rv.R(rS)           **R** un          Run shell commands
 rv.I(rS)           **I** nsert       Insert static resources 
@@ -92,6 +101,9 @@ rv.D(rS)           Doc               Publish docs
 rv.S(rS)           Skip              Skip section
 rv.X(rS)           Exit              Exit rivt (rivt string not processed)
 =============== =============== ===========================================
+
+The name *rivt* is an acronym formed from the four functions that generate
+document content.
 
 Each API function takes a single :term:`rivt string` argument (rS) as input and
 outputs text or restructuredText that is further processed into a
@@ -119,13 +131,17 @@ The remaining three functions are for processing and debugging:
 
 Most of a docs's content is written using the Insert and Value API's.
 
-
-**[3t]** rivt String
+**[3t]** Markup
 ------------------------------------------------------------------------ 
 
 .. raw:: html
 
     <hr>
+
+The *rivt API* publishes documents using a lightweight 
+:term:`rivt markup` language that combines text, tables, diagrams, models 
+and calculations with a standard :ref:`folder structure <top-folders>` and 
+file naming system that organizes documents into reports.
 
 An API function starts in the first column and takes a triple quoted
 :term:`rivt string` (rS) argument. The first line of a *rivt string* is a
@@ -147,9 +163,9 @@ see :doc:`here <rvC01-markup>`.
         
         """)
 
+.. _folderstruc:
 
-
-**[4t]** rivt File
+**[4t]** Files and folders
 --------------------------------------------------------------------- 
 
 .. raw:: html
@@ -167,16 +183,6 @@ markup* and imports the :term:`rivtlib` API into the *rv* :term:`namespace`:
 Each *rivt file* outputs a formatted rivt :term:`doc` file as an text, PDF or
 HTML document. Reports are organized collections of *docs*.
 
-
-
-.. _folderstruc:
-
-**[5t]**  Report Folder Structure
------------------------------------
-
-.. raw:: html
-
-    <hr>
 
 Reports are organized under a single root report folder with the prefix
 *rivt-*. *rivt files* are contained in the root folder and *rivt markup* 
@@ -257,32 +263,6 @@ The variable is specified immediately after the import statement as a comment:
     import rivtlib.rvapi as rv
 
     # rv_localB = True
-
-**[7t]** Metadata
--------------------
-
-.. raw:: html
-
-    <hr>
-
-*rivt* file metadata can be specified in the *Tools API* as a Python dictionary. 
-*rv_authD* is a dictionary that specifies the author, version, email, repository
-and license information and forks. The data is written to the API log file.
-
-.. code:: python
-
-    _[[PYTHON]] Author data
-    rv_authD = {
-    "authors": ["rholland"],
-    "version": "0.7.1",
-    "email": "rod.h.holland@gmail.com",
-    "repo": "https://github.com/rivt-info/rivt-simple-single-doc",
-    "license": "https://opensource.org/license/mit/",
-    "fork1": ["author", "version", "email", "repo"],
-    "fork2": [],
-    }
-    _[[END]]
-
 
 .. toctree::
     :maxdepth: 1
