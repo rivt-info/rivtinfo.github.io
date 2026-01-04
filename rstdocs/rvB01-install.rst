@@ -93,7 +93,7 @@ recommended for most users.
         
         curl -LsSf https://astral.sh/uv/install.sh | sh
 
-..topic:: Step 2. Create an isolated rivt environment
+.. topic:: Step 2. Create an isolated rivt environment
 
     After installing *uv*, download and run the following command or shell file.
     This installs an isolated *rivt* environment and example files in the users
@@ -106,7 +106,7 @@ recommended for most users.
     Additional explanation for the install scripts can be found 
     `here <https://github.com/rivt-info/rivtuv-install/edit/main/>`_.
 
-..topic:: Step 3. Run example program from Pyzo or command line.
+.. topic:: Step 3. Run example program from Pyzo or command line.
 
     Some text.
 
