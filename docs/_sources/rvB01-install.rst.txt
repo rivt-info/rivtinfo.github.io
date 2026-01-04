@@ -81,13 +81,13 @@ recommended for most users.
 
     The recommended method for installing *uv* is:
 
-    Windows:
+    Windows from the command line:
 
     .. code-block:: bash
         
         winget install --id=astral-sh.uv  -e 
 
-    macOS and Linux:
+    macOS and Linux from the command line:
 
     .. code-block:: bash
         
@@ -96,15 +96,15 @@ recommended for most users.
 .. topic:: Step 2. Create an isolated rivt environment
 
     After installing *uv*, download and run the following command or shell file.
-    This installs an isolated *rivt* environment and example files in the users
-    *Home* directory
+    
 
     Windows:  :download:`rivtuv.cmd </_downloads/rivtuv.cmd>` 
-    OSX: :download:`rivtuv.sh </_downloads/rivtuv.sh>`
-    Linux: 
 
-    Additional explanation for the install scripts can be found 
-    `here <https://github.com/rivt-info/rivtuv-install/edit/main/>`_.
+    OSX and Linux: :download:`rivtuv.sh </_downloads/rivtuv.sh>`
+    
+    This installs an isolated *rivt* environment and example files in the 
+    xxxx folder in the users *Home* directory. Additional install script detaild 
+    can be found `here <https://github.com/rivt-info/rivtuv-install/edit/main/>`_.
 
 .. topic:: Step 3. Run example program from Pyzo or command line.
 
