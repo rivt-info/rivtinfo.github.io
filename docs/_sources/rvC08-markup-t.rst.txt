@@ -10,8 +10,6 @@
 
 The *Tools* API function executes markup and scripts. 
 
-**Format blocks of text**
-
 ========================================= ==============================
        Block Tags                           Description 
 ========================================= ==============================
@@ -19,9 +17,6 @@ The *Tools* API function executes markup and scripts.
 _[[MARKUP]] type                            :ref:`Markup block`
 _[[END]]                                    :ref:`End Block`
 ========================================= ==============================
-
-
-**Read, write and format files**
 
 ============================================================== =====================
          | Command | path | parameters                          Description

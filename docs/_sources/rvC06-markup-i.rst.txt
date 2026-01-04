@@ -11,9 +11,6 @@
 The *Insert* API function inserts and formats static sources into the *doc*,
 including images, tables, links and formatted text.
 
-**[2t]** Format line of text
--------------------------------------
-
 =========================================== =======================================
         Line Tags                                 Description 
 =========================================== =======================================
@@ -29,9 +26,6 @@ including images, tables, links and formatted text.
 equation or label _[E]                         :ref:`Equation label`
   values or title _[T]                         :ref:`Table title`  
 =========================================== =======================================
-   
-**[3t]** Format text blocks
--------------------------------------
 
 ========================================= ==============================
        Block Tags                           Description 
@@ -43,9 +37,6 @@ equation or label _[E]                         :ref:`Equation label`
  _[[TOPIC]] topic                           :ref:`Topic block`
  _[[END]]                                   :ref:`End block`
 ========================================= ==============================
-
-**[4t]** Read, Write Files
--------------------------------------
 
 ================================================================== ========================
          | Command | path | parameters                               Description
