@@ -8,14 +8,14 @@
 
     <hr>
 
-*rivt* is an open source software project that simplifies sharing and reuse of 
-engineering documents. It can reduce repetitive work and improve document 
-quality. 
+*rivt* is an open source software project that simplifies sharing and reuse of
+engineering documents. Engineering documents are more complex than word and
+image documents. They typically combine text, images, tables, calculations,
+models and computer code. Through sharing and reuse, *rivt* can reduce
+repetitive work and improve document quality.
 
-Engineering documents may include text, images, tables, calculations, computer
-code and models. Although a number of document programs are available, reuse
-and sharing are restricted by the software design, terms of use and
-licenses. In general,
+Although a number of engineering document programs are available, reuse and
+sharing are restricted by the software design and terms of use. In general:
 
 - documents may come from many incompatible programs
 - frequent software updates are needed to maintain document access
@@ -64,14 +64,16 @@ Jupyter        no       no         no      yes         yes      yes
 
 A *rivt document* is published from a *rivt file* and is referred to as a
 :term:`rivt doc`. A collection of *rivt docs* may be collated into a
-:term:`rivt report`. 
+:term:`rivt report`. *rivt files* and *reports* may be shared and cooperatively
+expanded and improved using one of the Open Source licenses. *rivt* is 
+distributed under the 
+`MIT open source license. <https://opensource.org/license/mit>`_ 
 
-As an open source project *rivt* may be integrated with other programs, 
-and *rivt files* may be shared and cooperatively improved. An 
-integrated :term:`rivt framework` is described :doc:`here. <rvB01-install>`.
+As an open source project *rivt* may be integrated with other programs.
+The integrated :term:`rivt framework` is described :doc:`here. <rvB01-install>`.
 
-The API consists of seven functions, a markup language and a folder structure.
-The software design is implememted to be:
+The *rivt API* includes  :ref:`API functions`, :ref:`Markup` and
+:ref:`Files and folders`. The software design is implememted to be:
 
 - lightweight - :term:`rivt markup` is made up of 3 dozen tags 
     and commands and wraps :term:`reStructuredText`,
@@ -82,6 +84,7 @@ The software design is implememted to be:
 - extensible - it is written in Python with direct access to 
     thousands of Python packages.
 
+.. _API functions:
 
 **[2t]** API functions
 --------------------------------------------------------------------- 
@@ -103,15 +106,7 @@ rv.X(rS)           Exit              Exit rivt (rivt string not processed)
 =============== =============== ===========================================
 
 The name *rivt* is an acronym formed from the four functions that generate
-document content.
-
-Each API function takes a single :term:`rivt string` argument (rS) as input and
-outputs text or restructuredText that is further processed into a
-text, HTML and PDF output file, referred to as :term:`rivt doc`. Indiviudal 
-API functions can also be processed interactively as cells in an IDE e.g. 
-VSCode or Spyder.
-
-The four functions that generate *doc* content are:
+document content: 
 
     The *Run API* which executes shell commands. 
     
@@ -121,7 +116,7 @@ The four functions that generate *doc* content are:
 
     The *Tool API* which runs reStructuredText,HTML, LaTeX and Python scripts.
 
-The remaining three functions are for processing and debugging:
+The remaining three functions are for interactive use and debugging:
 
     The *Doc API* specifies *doc* type and style and generates the *doc* file. 
     
@@ -129,7 +124,22 @@ The remaining three functions are for processing and debugging:
 
     The *Exit API* can be used for interactive debugging.
 
-Most of a docs's content is written using the Insert and Value API's.
+Most of a docs' content is written using the *Insert* and *Value* API's.
+
+Within an interactive IDE like VSCode and Spyder, indiviudal API functions can
+be processed interactively as cells using the standard prefix notation:
+
+.. code:: python
+
+    # %% option label
+
+Refer to :doc:`rvB03-vscode` for further details.
+
+Each API function takes a single :term:`rivt string` argument as input (rS),
+and outputs formatted text or restructuredText that is further processed into a
+text, HTML and PDF :term:`doc`. The *rivt string* is written in *rivt markup*.
+
+.. _Markup:
 
 **[3t]** Markup
 ------------------------------------------------------------------------ 
@@ -138,17 +148,12 @@ Most of a docs's content is written using the Insert and Value API's.
 
     <hr>
 
-The *rivt API* publishes documents using a lightweight 
-:term:`rivt markup` language that combines text, tables, diagrams, models 
-and calculations with a standard :ref:`folder structure <top-folders>` and 
-file naming system that organizes documents into reports.
-
 An API function starts in the first column and takes a triple quoted
 :term:`rivt string` (rS) argument. The first line of a *rivt string* is a
-header, followed by :term:`content` indented 4 spaces for improved readability 
+:term:`header`, followed by :term:`content` indented 4 spaces for improved readability 
 and section folding. 
 
-The :term:`header` specifies the section title and other
+The *header* specifies the section title and other
 processing parameters. The content text may include 
 :term:`rivt markup` and other arbitrary text. For further details 
 see :doc:`here <rvC01-markup>`.
@@ -163,7 +168,7 @@ see :doc:`here <rvC01-markup>`.
         
         """)
 
-.. _folderstruc:
+.. _Files and folders:
 
 **[4t]** Files and folders
 --------------------------------------------------------------------- 
@@ -180,7 +185,7 @@ markup* and imports the :term:`rivtlib` API into the *rv* :term:`namespace`:
     import rivtlib.rvapi as rv
 
 
-Each *rivt file* outputs a formatted rivt :term:`doc` file as an text, PDF or
+Each *rivt file* outputs a formatted rivt :term:`doc` file as a text, PDF or
 HTML document. Reports are organized collections of *docs*.
 
 
@@ -244,25 +249,26 @@ Resource files are stored in four primary subfolders:
 
 The complete folder structure is shown :ref:`here <report-folders>`.
 
-**[6t]** *Single docs*
+**[5t]** *Single docs*
 ------------------------
 
 .. raw:: html
 
     <hr>
 
-The *rv_localB* variable overrides the default report structure and specifies
+The *singledocB* variable overrides the default report structure and specifies
 that resource files and *docs* are read from and written to the *rivt file*
-folder. It is intended for simple, standalone *docs* with limited, built-in
-formatting options.
-
-The variable is specified immediately after the import statement as a comment:
+folder. It is intended for simpler, standalone *docs* with more limited format
+control. The comment variable is specified immediately after the import
+statement:
 
 .. code:: python
 
     import rivtlib.rvapi as rv
 
-    # rv_localB = True
+    # rv singledocB = True
+
+The default setting is False.
 
 .. toctree::
     :maxdepth: 1
