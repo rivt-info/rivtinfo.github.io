@@ -11,25 +11,25 @@
 
 **Format blocks of text**
 
-========== ========================================= ==============================
+========== ========================================= =======================================
 API Scope         Block Tags                           Description 
-========== ========================================= ==============================
-rv.R        _[[SHELL]] os,wait,open                    :ref:`shellblk`
-rv.I        _[[INDENT]] spaces (4 default)             :ref:`indentblk`
-rv.I        _[[ITALIC]] spaces (4 default)             :ref:`italicbllk`
-rv.I        _[[NOTES]] optional label                  :ref:`notesblk`
-rv.I        _[[TEXT]] optional language                :ref:`codeblk`
-rv.I        _[[TOPIC]] topic                           :ref:`topicblk`
-rv.T, V     _[[PYTHON]] namespace                      :ref:`pythonblk`
-rv.T        _[[MARKUP]] type                           :ref:`markupblk`
-rv.D        _[[META]] label                            :ref:`metablk`
-rv.D        _[[LAYOUT]] label                          :ref:`layoutblk` 
-all         _[[END]]                                   :ref:`endblk`
-========== ========================================= ==============================
+========== ========================================= =======================================
+rv.R        _[[SHELL]] os,wait,open                    :ref:`Shell scripts`
+rv.I        _[[INDENT]] spaces (4 default)             :ref:`Indent text block`
+rv.I        _[[ITALIC]] spaces (4 default)             :ref:`Indent italic block`
+rv.I        _[[ENDNOTES]] optional label               :ref:`Endnotes block`
+rv.I        _[[TEXT]] optional language                :ref:`Text block`
+rv.I        _[[TOPIC]] topic                           :ref:`Topic block`
+rv.T, V     _[[PYTHON]] namespace                      :ref:`Python block`
+rv.T        _[[MARKUP]] type                           :ref:`Markup block`
+rv.D        _[[META]] label                            :ref:`Meta block`
+rv.D        _[[LAYOUT]] label                          :ref:`Layout block` 
+all         _[[END]]                                   :ref:`End block`
+========== ========================================= =======================================
 
-.. _shellblk:
+.. _Shell scripts:
 
-**[2t]** shell commands
+**[2t]** Shell scripts
 ------------------------------------
 
 .. raw:: html
@@ -50,8 +50,10 @@ all         _[[END]]                                   :ref:`endblk`
     dir
     _[[END]]
 
-API Scope: Run
-Doc Types: text, PDF, HTML
+=========== ==========================
+API Scope     Insert
+Doc Types     text, PDF, HTML
+=========== ==========================
 
 The shell command runs shell scripts and is used for external program
 processing. The os parameter specifies the terminal type. The wait parameter
@@ -59,9 +61,9 @@ specifies whether rivt file processing waits for the script to complete before
 continuing. The open parameter specifies whether to keep the shell window open
 after execution.
 
-.. _indentblk:
+.. _Indent text block:
 
-**[3t]** indent text
+**[3t]** Indent text block
 ----------------------------------------------
 
 .. raw:: html
@@ -80,12 +82,14 @@ after execution.
 
 Indents block text four spaces.
 
-API Scope: Insert, Values
-Doc Types: text, PDF, HTML
+=========== ==========================
+API Scope     Insert
+Doc Types     text, PDF, HTML
+=========== ==========================
 
-.. _italicblk:
+.. _Indent italic block:
 
-**[4t]** indent italic text
+**[4t]** Indent italic block
 ------------------------------------------------
 
 .. raw:: html
@@ -104,12 +108,14 @@ Doc Types: text, PDF, HTML
 
 Indents the specified number spaces and italicizes block.
 
-API Scope: Insert, Values
-Doc Types: text, PDF, HTML
+=========== ==========================
+API Scope     Insert
+Doc Types     text, PDF, HTML
+=========== ==========================
 
-.. _notesblk:
+.. _Endnotes block:
 
-**[5t]** endnote text
+**[5t]** Endnotes block
 -------------------------------------------    
 
 .. raw:: html
@@ -117,7 +123,7 @@ Doc Types: text, PDF, HTML
     <hr>
 
 
-.. topic:: _[[NOTE]]  reference label
+.. topic:: _[[ENDNOTE]] label
     
     ::
    
@@ -129,14 +135,17 @@ Doc Types: text, PDF, HTML
         ...
         _[[END]] 
 
-Formats and numbers an endnote in order of processing.
+Formats and numbers an endnote in order of processing. Each endnote is
+separated by a blank line. They are numbered in order.
 
-API Scope: Insert, Values
-Doc Types: text, PDF, HTML
+=========== ==========================
+API Scope     Insert
+Doc Types     text, PDF, HTML
+=========== ==========================
 
-.. _codeblk:
+.. _Text block:
 
-**[6t]** literal text or code
+**[6t]** Text block
 ------------------------------------------------
 
 .. raw:: html
@@ -162,12 +171,14 @@ specifies formatting and syntax coloring.  Languages include:
     - *sh*
     - *cmd*
 
-API Scope: Insert, Values
-Doc Types: text, PDF, HTML
+=========== ==========================
+API Scope     Insert
+Doc Types     text, PDF, HTML
+=========== ==========================
 
-.. _topicblk:
+.. _Topic block:
 
-**[7t]** topic
+**[7t]** Topic block
 ------------------------------------------------
 
 .. raw:: html
@@ -186,12 +197,14 @@ Doc Types: text, PDF, HTML
 
 Formats a highlighted topic block.
 
-API Scope: Insert, Values
-Doc Types: text, PDF, HTML
+=========== ==========================
+API Scope     Insert
+Doc Types     text, PDF, HTML
+=========== ==========================
 
-.. _pythonblk:
+.. _Python block:
 
-**[8t]** Python code
+**[8t]** Python block
 ------------------------------------------------
 
 .. raw:: html
@@ -209,12 +222,14 @@ Doc Types: text, PDF, HTML
 Executes Python script in the *rivt namespace* or a user specified namespace.
 File paths in the script are relative to the *rivt file* folder.
 
-API Scope: Value, Tool
-Doc Types: text, PDF, HTML
+=========== ==========================
+API Scope     Value, Tool
+Doc Types     text, PDF, HTML
+=========== ==========================
 
-.. _markupblk:
+.. _Markup block:
 
-**[9t]** markup scripts
+**[9t]** Markup block
 ---------------------------------------
 
 .. raw:: html
@@ -223,7 +238,7 @@ Doc Types: text, PDF, HTML
 
 .. code-block:: text
         
-     _[[SCRIPT]] *html;latex;rst*
+     _[[MARKUP]] *html;latex;rst*
      markup
      markup
      ...
@@ -233,12 +248,14 @@ Inserts HTML into an HTML *doc*, LaTeX into a PDF *doc*, and reStructuredText
 into either PDF or HTML. 
  
 
-API Scope: Tool
-Doc Types: PDF, HTML
+=========== ==========================
+API Scope     Tool
+Doc Types     text, PDF, HTML
+=========== ==========================
 
-.. _layoutblk:
+.. _Layout block:
 
-**[10t]** Layout 
+**[10t]** Layout block
 ------------------------------------------------
 
 .. raw:: html
@@ -256,13 +273,15 @@ Doc Types: PDF, HTML
 
 Overrides default layout settings.
 
-API Scope: Doc
-Doc Types: text, PDF, HTML
+=========== ==========================
+API Scope     Doc
+Doc Types     text, PDF, HTML
+=========== ==========================
 
 
 .. _metablk:
 
-**[8t]** Metadata
+**[11t]** Metadata
 -------------------
 
 .. raw:: html
@@ -300,7 +319,14 @@ and license information and forks.
 
 .. _endblk:
 
-**[11t]** End
+
+=========== ==========================
+API Scope     Doc
+Doc Types     text, PDF, HTML
+=========== ==========================
+
+
+**[12t]** End
 ------------------------------------------------
 
 .. raw:: html
@@ -313,5 +339,7 @@ and license information and forks.
 
 Terminates a block tag.
 
-API Scope: Doc
-Doc Types: text, PDF, HTML
+=========== ==========================
+API Scope     All
+Doc Types     text, PDF, HTML
+=========== ==========================

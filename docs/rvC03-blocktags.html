@@ -396,54 +396,54 @@
 <tbody>
 <tr class="row-even"><td><p>rv.R</p></td>
 <td><p>_[[SHELL]] os,wait,open</p></td>
-<td><p><a class="reference internal" href="#shellblk"><span class="std std-ref">[2t] shell commands</span></a></p></td>
+<td><p><a class="reference internal" href="#shell-scripts"><span class="std std-ref">[2t] Shell scripts</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I</p></td>
 <td><p>_[[INDENT]] spaces (4 default)</p></td>
-<td><p><a class="reference internal" href="#indentblk"><span class="std std-ref">[3t] indent text</span></a></p></td>
+<td><p><a class="reference internal" href="#indent-text-block"><span class="std std-ref">[3t] Indent text block</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I</p></td>
 <td><p>_[[ITALIC]] spaces (4 default)</p></td>
-<td><p><span class="xref std std-ref">italicbllk</span></p></td>
+<td><p><a class="reference internal" href="#indent-italic-block"><span class="std std-ref">[4t] Indent italic block</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>_[[NOTES]] optional label</p></td>
-<td><p><a class="reference internal" href="#notesblk"><span class="std std-ref">[5t] endnote text</span></a></p></td>
+<td><p>_[[ENDNOTES]] optional label</p></td>
+<td><p><a class="reference internal" href="#endnotes-block"><span class="std std-ref">[5t] Endnotes block</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I</p></td>
 <td><p>_[[TEXT]] optional language</p></td>
-<td><p><a class="reference internal" href="#codeblk"><span class="std std-ref">[6t] literal text or code</span></a></p></td>
+<td><p><a class="reference internal" href="#text-block"><span class="std std-ref">[6t] Text block</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I</p></td>
 <td><p>_[[TOPIC]] topic</p></td>
-<td><p><a class="reference internal" href="#topicblk"><span class="std std-ref">[7t] topic</span></a></p></td>
+<td><p><a class="reference internal" href="#topic-block"><span class="std std-ref">[7t] Topic block</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.T, V</p></td>
 <td><p>_[[PYTHON]] namespace</p></td>
-<td><p><a class="reference internal" href="#pythonblk"><span class="std std-ref">[8t] Python code</span></a></p></td>
+<td><p><a class="reference internal" href="#python-block"><span class="std std-ref">[8t] Python block</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.T</p></td>
 <td><p>_[[MARKUP]] type</p></td>
-<td><p><a class="reference internal" href="#markupblk"><span class="std std-ref">[9t] markup scripts</span></a></p></td>
+<td><p><a class="reference internal" href="#markup-block"><span class="std std-ref">[9t] Markup block</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.D</p></td>
 <td><p>_[[META]] label</p></td>
-<td><p><a class="reference internal" href="#metablk"><span class="std std-ref">[8t] Metadata</span></a></p></td>
+<td><p><span class="xref std std-ref">Meta block</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.D</p></td>
 <td><p>_[[LAYOUT]] label</p></td>
-<td><p><a class="reference internal" href="#layoutblk"><span class="std std-ref">[10t] Layout</span></a></p></td>
+<td><p><a class="reference internal" href="#layout-block"><span class="std std-ref">[10t] Layout block</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>all</p></td>
 <td><p>_[[END]]</p></td>
-<td><p><a class="reference internal" href="#endblk"><span class="std std-ref">[11t] End</span></a></p></td>
+<td><p><span class="xref std std-ref">End block</span></p></td>
 </tr>
 </tbody>
 </table>
 </div>
 </section>
-<section id="t-shell-commands">
-<span id="shellblk"></span><h2><strong>[2t]</strong> shell commands<a class="headerlink" href="#t-shell-commands" title="Link to this heading">#</a></h2>
+<section id="t-shell-scripts">
+<span id="shell-scripts"></span><h2><strong>[2t]</strong> Shell scripts<a class="headerlink" href="#t-shell-scripts" title="Link to this heading">#</a></h2>
 <hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
 _[[SHELL]] *win;mac;linux,wait;nowait,open;close*
 shell command
@@ -457,16 +457,25 @@ dir
 _[[END]]
 </pre></div>
 </div>
-<p>API Scope: Run
-Doc Types: text, PDF, HTML</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Insert</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <p>The shell command runs shell scripts and is used for external program
 processing. The os parameter specifies the terminal type. The wait parameter
 specifies whether rivt file processing waits for the script to complete before
 continuing. The open parameter specifies whether to keep the shell window open
 after execution.</p>
 </section>
-<section id="t-indent-text">
-<span id="indentblk"></span><h2><strong>[3t]</strong> indent text<a class="headerlink" href="#t-indent-text" title="Link to this heading">#</a></h2>
+<section id="t-indent-text-block">
+<span id="indent-text-block"></span><h2><strong>[3t]</strong> Indent text block<a class="headerlink" href="#t-indent-text-block" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[INDENT]] spaces</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">INDENT</span><span class="p">]]</span> <span class="mi">4</span>
@@ -478,11 +487,20 @@ after execution.</p>
 </div>
 </aside>
 <p>Indents block text four spaces.</p>
-<p>API Scope: Insert, Values
-Doc Types: text, PDF, HTML</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Insert</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
-<section id="t-indent-italic-text">
-<span id="italicblk"></span><h2><strong>[4t]</strong> indent italic text<a class="headerlink" href="#t-indent-italic-text" title="Link to this heading">#</a></h2>
+<section id="t-indent-italic-block">
+<span id="indent-italic-block"></span><h2><strong>[4t]</strong> Indent italic block<a class="headerlink" href="#t-indent-italic-block" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[ITALIC]] spaces</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">ITALIC</span><span class="p">]]</span> <span class="mi">4</span>
@@ -494,13 +512,22 @@ Doc Types: text, PDF, HTML</p>
 </div>
 </aside>
 <p>Indents the specified number spaces and italicizes block.</p>
-<p>API Scope: Insert, Values
-Doc Types: text, PDF, HTML</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Insert</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
-<section id="t-endnote-text">
-<span id="notesblk"></span><h2><strong>[5t]</strong> endnote text<a class="headerlink" href="#t-endnote-text" title="Link to this heading">#</a></h2>
+<section id="t-endnotes-block">
+<span id="endnotes-block"></span><h2><strong>[5t]</strong> Endnotes block<a class="headerlink" href="#t-endnotes-block" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">_[[NOTE]]  reference label</p>
+<p class="topic-title">_[[ENDNOTE]] label</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">NOTE</span><span class="p">]]</span> <span class="n">aci</span> <span class="n">endnotes</span>
 <span class="n">this</span> <span class="ow">is</span> <span class="n">an</span> <span class="n">endnote</span> <span class="o">-</span> <span class="n">assigned</span> <span class="n">to</span> <span class="n">an</span> <span class="n">endnote</span> <span class="n">tag</span> <span class="p">[</span><span class="c1">#] in order of</span>
 <span class="n">of</span> <span class="n">processing</span><span class="o">.</span>
@@ -511,12 +538,22 @@ Doc Types: text, PDF, HTML</p>
 </pre></div>
 </div>
 </aside>
-<p>Formats and numbers an endnote in order of processing.</p>
-<p>API Scope: Insert, Values
-Doc Types: text, PDF, HTML</p>
+<p>Formats and numbers an endnote in order of processing. Each endnote is
+separated by a blank line. They are numbered in order.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Insert</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
-<section id="t-literal-text-or-code">
-<span id="codeblk"></span><h2><strong>[6t]</strong> literal text or code<a class="headerlink" href="#t-literal-text-or-code" title="Link to this heading">#</a></h2>
+<section id="t-text-block">
+<span id="text-block"></span><h2><strong>[6t]</strong> Text block<a class="headerlink" href="#t-text-block" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[TEXT]] language</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">TEXT</span><span class="p">]]</span> <span class="n">python</span>
@@ -538,11 +575,20 @@ specifies formatting and syntax coloring.  Languages include:</p>
 <li><p><em>cmd</em></p></li>
 </ul>
 </div></blockquote>
-<p>API Scope: Insert, Values
-Doc Types: text, PDF, HTML</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Insert</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
-<section id="t-topic">
-<span id="topicblk"></span><h2><strong>[7t]</strong> topic<a class="headerlink" href="#t-topic" title="Link to this heading">#</a></h2>
+<section id="t-topic-block">
+<span id="topic-block"></span><h2><strong>[7t]</strong> Topic block<a class="headerlink" href="#t-topic-block" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[TOPIC]] topic title</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">TOPIC</span><span class="p">]]</span> <span class="n">topic</span> <span class="n">title</span>
@@ -554,11 +600,20 @@ Doc Types: text, PDF, HTML</p>
 </div>
 </aside>
 <p>Formats a highlighted topic block.</p>
-<p>API Scope: Insert, Values
-Doc Types: text, PDF, HTML</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Insert</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
-<section id="t-python-code">
-<span id="pythonblk"></span><h2><strong>[8t]</strong> Python code<a class="headerlink" href="#t-python-code" title="Link to this heading">#</a></h2>
+<section id="t-python-block">
+<span id="python-block"></span><h2><strong>[8t]</strong> Python block<a class="headerlink" href="#t-python-block" title="Link to this heading">#</a></h2>
 <hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[PYTHON]] *rvspace*; user namespace
 code
 code
@@ -568,12 +623,21 @@ _[[END]]
 </div>
 <p>Executes Python script in the <em>rivt namespace</em> or a user specified namespace.
 File paths in the script are relative to the <em>rivt file</em> folder.</p>
-<p>API Scope: Value, Tool
-Doc Types: text, PDF, HTML</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Value, Tool</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
-<section id="t-markup-scripts">
-<span id="markupblk"></span><h2><strong>[9t]</strong> markup scripts<a class="headerlink" href="#t-markup-scripts" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[SCRIPT]] *html;latex;rst*
+<section id="t-markup-block">
+<span id="markup-block"></span><h2><strong>[9t]</strong> Markup block<a class="headerlink" href="#t-markup-block" title="Link to this heading">#</a></h2>
+<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[MARKUP]] *html;latex;rst*
 markup
 markup
 ...
@@ -582,11 +646,20 @@ _[[END]]
 </div>
 <p>Inserts HTML into an HTML <em>doc</em>, LaTeX into a PDF <em>doc</em>, and reStructuredText
 into either PDF or HTML.</p>
-<p>API Scope: Tool
-Doc Types: PDF, HTML</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Tool</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
-<section id="t-layout">
-<span id="layoutblk"></span><h2><strong>[10t]</strong> Layout<a class="headerlink" href="#t-layout" title="Link to this heading">#</a></h2>
+<section id="t-layout-block">
+<span id="layout-block"></span><h2><strong>[10t]</strong> Layout block<a class="headerlink" href="#t-layout-block" title="Link to this heading">#</a></h2>
 <hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[LAYOUT]] optional label
 docnameS = &quot;&quot;
 pdfheaderL = []
@@ -595,11 +668,20 @@ _[[END]]
 </pre></div>
 </div>
 <p>Overrides default layout settings.</p>
-<p>API Scope: Doc
-Doc Types: text, PDF, HTML</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Doc</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 <section id="t-metadata">
-<span id="metablk"></span><h2><strong>[8t]</strong> Metadata<a class="headerlink" href="#t-metadata" title="Link to this heading">#</a></h2>
+<span id="metablk"></span><h2><strong>[11t]</strong> Metadata<a class="headerlink" href="#t-metadata" title="Link to this heading">#</a></h2>
 <hr><p><em>Metadata</em> is written to the <em>api-log.py</em> file. Metadata is specified using
 standard Python data types.</p>
 <p><em>rv_authD</em> is a dictionary that specifies the author, version, email, repository
@@ -625,15 +707,35 @@ and license information and forks.</p>
         <span class="p">}</span>
 </pre></div>
 </div>
+<div class="pst-scrollable-table-container"><table class="table" id="endblk">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Doc</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 <section id="t-end">
-<span id="endblk"></span><h2><strong>[11t]</strong> End<a class="headerlink" href="#t-end" title="Link to this heading">#</a></h2>
+<h2><strong>[12t]</strong> End<a class="headerlink" href="#t-end" title="Link to this heading">#</a></h2>
 <hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[END]] optional label
 </pre></div>
 </div>
 <p>Terminates a block tag.</p>
-<p>API Scope: Doc
-Doc Types: text, PDF, HTML</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>All</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 </section>
 
@@ -685,17 +787,17 @@ Doc Types: text, PDF, HTML</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-block-tag-summary"><strong>[1t]</strong> Block Tag Summary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-shell-commands"><strong>[2t]</strong> shell commands</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-indent-text"><strong>[3t]</strong> indent text</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-indent-italic-text"><strong>[4t]</strong> indent italic text</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-endnote-text"><strong>[5t]</strong> endnote text</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-literal-text-or-code"><strong>[6t]</strong> literal text or code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-topic"><strong>[7t]</strong> topic</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-python-code"><strong>[8t]</strong> Python code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-markup-scripts"><strong>[9t]</strong> markup scripts</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-layout"><strong>[10t]</strong> Layout</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-metadata"><strong>[8t]</strong> Metadata</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-end"><strong>[11t]</strong> End</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-shell-scripts"><strong>[2t]</strong> Shell scripts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-indent-text-block"><strong>[3t]</strong> Indent text block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-indent-italic-block"><strong>[4t]</strong> Indent italic block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-endnotes-block"><strong>[5t]</strong> Endnotes block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-text-block"><strong>[6t]</strong> Text block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-topic-block"><strong>[7t]</strong> Topic block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-python-block"><strong>[8t]</strong> Python block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-markup-block"><strong>[9t]</strong> Markup block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-layout-block"><strong>[10t]</strong> Layout block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-metadata"><strong>[11t]</strong> Metadata</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-end"><strong>[12t]</strong> End</a></li>
 </ul>
   </nav></div>
 
