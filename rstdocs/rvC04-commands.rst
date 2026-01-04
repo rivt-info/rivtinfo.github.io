@@ -22,7 +22,7 @@ rv.V       \| VALTABLE | rel path | title, width, rows                     :ref:
 rv.V       a =: 1*IN  | unit1, unit2, decimal | label                      :ref:`defcmd`
 rv.V       c <=: expression | unit1, unit2, decimal | label                :ref:`asscmd`
 rv.V       a < c  | decimal | text, align, color                           :ref:`compcmd`
-rv.T,V     \| PYTHON | relative path | namespace                           :ref:`pycmd`
+rv.T,V     \| PYTHON | relative path | namespace                           :ref:`Python script`
 rv.T       \| MARKUP | relative path | type                                :ref:`scriptcmd`
 rv.D       \| PDFATTACH | relative path | place,title                      :ref:`attcmd`   
 rv.D       \| PUBLISH | ini rel. path | type                               :ref:`pubcmd` 
@@ -30,7 +30,7 @@ rv.D       \| PUBLISH | ini rel. path | type                               :ref:
 
 .. _shellcmd:
 
-**[2t]** run shell script
+**[2t]** Shell file
 -------------------------------------------
 
 .. raw:: html
@@ -59,7 +59,7 @@ Doc Types     text, PDF, HTML
 
 .. _imgcmd:
 
-**[3t]** insert image
+**[3t]** Image file
 -------------------------------------------
 
 .. raw:: html
@@ -89,7 +89,7 @@ Doc Types     PDF, HTML
 
 .. _img2cmd:
 
-**[4t]** insert adjacent images
+**[4t]** Adjacent images
 --------------------------------------------------
 
 .. raw:: html
@@ -120,7 +120,7 @@ Doc Types     PDF, HTML
 
 .. _textcmd:
 
-**[5t]** format text
+**[5t]** Text file
 ------------------------------------------
 
 .. raw:: html
@@ -156,7 +156,7 @@ Doc Types     text, PDF, HTML
 
 .. _tablecmd:
 
-**[6t]** format table
+**[6t]** Table data
 ------------------------------------------
 
 .. raw:: html
@@ -187,7 +187,7 @@ Doc Types     text, PDF, HTML
 
 .. _valtablecmd:
 
-**[7t]**  read values
+**[7t]**  Values file
 ------------------------------------------------
 
 .. raw:: html
@@ -230,7 +230,7 @@ Doc Types     text, PDF, HTML
 
 .. _defcmd:
 
-**[8t]** define variable
+**[8t]** Define variable
 -------------------------------------------
 
 .. raw:: html
@@ -256,7 +256,7 @@ Doc Types     text, PDF, HTML
 
 .. _asscmd:
 
-**[9t]** assign variable
+**[9t]** Assign value
 -------------------------------------------
 
 .. raw:: html
@@ -286,7 +286,7 @@ Doc Types     text, PDF, HTML
 
 .. _compcmd:
 
-**[10t]** compare
+**[10t]** Compare values
 -----------------------------------------
 
 .. raw:: html
@@ -309,9 +309,9 @@ Doc Types     text, PDF, HTML
 
 
 
-.. _pycmd:
+.. _Python script:
 
-**[11t]** import Python script
+**[11t]** Python script
 -------------------------------------------
 
 .. raw:: html
@@ -331,9 +331,9 @@ File Types    .csv
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-.. _markupcmd:
+.. _Markup file:
 
-**[12t]**  import Markup
+**[12t]**  Markup file
 -------------------------------------------
 
 .. raw:: html
@@ -353,9 +353,9 @@ File Types    html, rst, tex
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-.. _attcmd:
+.. _Attach PDF:
 
-**[12t]** attach PDF
+**[12t]** Attach PDF
 -------------------------------------------
 
 .. raw:: html
@@ -378,7 +378,7 @@ Doc Types     text, PDF, HTML
 
 .. _pubcmd:
 
-**[13t]** publish doc
+**[13t]** Publish doc
 -------------------------------------------
 
 .. raw:: html

@@ -14,7 +14,7 @@
 ========== ========================================= =======================================
 API Scope         Block Tags                           Description 
 ========== ========================================= =======================================
-rv.R        _[[SHELL]] os,wait,open                    :ref:`Shell scripts`
+rv.R        _[[SHELL]] os,wait,open                    :ref:`Shell script`
 rv.I        _[[INDENT]] spaces (4 default)             :ref:`Indent text block`
 rv.I        _[[ITALIC]] spaces (4 default)             :ref:`Indent italic block`
 rv.I        _[[ENDNOTES]] optional label               :ref:`Endnotes block`
@@ -29,7 +29,7 @@ all         _[[END]]                                   :ref:`End block`
 
 .. _Shell scripts:
 
-**[2t]** Shell scripts
+**[2t]** Shell script
 ------------------------------------
 
 .. raw:: html
@@ -279,7 +279,7 @@ Doc Types     text, PDF, HTML
 =========== ==========================
 
 
-.. _metablk:
+.. _Meta block:
 
 **[11t]** Metadata
 -------------------
@@ -316,15 +316,12 @@ and license information and forks.
             "license": "https://opensource.org/license/mit/",
             }
 
-
-.. _endblk:
-
-
 =========== ==========================
 API Scope     Doc
 Doc Types     text, PDF, HTML
 =========== ==========================
 
+.. _End block:
 
 **[12t]** End
 ------------------------------------------------
