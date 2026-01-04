@@ -95,16 +95,20 @@ recommended for most users.
 
 ..topic:: Step 2. Create an isolated rivt environment
 
-After installing *uv*, download and run the following command or shell file.
-This installs an isolated *rivt* environment and example files in the users
-*Home* directory
+    After installing *uv*, download and run the following command or shell file.
+    This installs an isolated *rivt* environment and example files in the users
+    *Home* directory
 
-Windows:  :download:`rivtuv.cmd </_downloads/rivtuv.cmd>` 
-OSX: :download:`rivtuv.sh </_downloads/rivtuv.sh>`
-Linux: 
+    Windows:  :download:`rivtuv.cmd </_downloads/rivtuv.cmd>` 
+    OSX: :download:`rivtuv.sh </_downloads/rivtuv.sh>`
+    Linux: 
 
-Additional explanation for the install scripts can be found 
-`here <https://github.com/rivt-info/rivtuv-install/edit/main/>`_.
+    Additional explanation for the install scripts can be found 
+    `here <https://github.com/rivt-info/rivtuv-install/edit/main/>`_.
+
+..topic:: Step 3. Run example program from Pyzo or command line.
+
+    Some text.
 
 
 .. _rivt-system:
