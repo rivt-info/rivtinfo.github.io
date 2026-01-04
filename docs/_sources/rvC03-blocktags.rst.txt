@@ -20,6 +20,7 @@ rv.I        _[[ITALIC]] spaces (4 default)             :ref:`Indent italic block
 rv.I        _[[ENDNOTES]] optional label               :ref:`Endnotes block`
 rv.I        _[[TEXT]] optional language                :ref:`Text block`
 rv.I        _[[TOPIC]] topic                           :ref:`Topic block`
+rv.I        _[[BOX]] label                             :ref:`Topic block`
 rv.T, V     _[[PYTHON]] namespace                      :ref:`Python block`
 rv.T        _[[MARKUP]] type                           :ref:`Markup block`
 rv.T        _[[METADATA]] label                        :ref:`Meta block`
