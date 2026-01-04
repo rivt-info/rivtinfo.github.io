@@ -18,8 +18,8 @@ rv.I                        text _[C]                         :ref:`Center text`
 rv.I                        text _[R]                         :ref:`Right justify text`
 rv.I                  latex math _[L]                         :ref:`LaTeX math` 
 rv.I                  ascii math _[M]                         :ref:`ASCII math` 
-rv.I                        text _[S] section label           :ref:`Section link`
 rv.I                        text _[G] glossary link term      :ref:`Term reference`
+rv.I                        text _[S] section label           :ref:`Section link`
 rv.I                        text _[D] doc number              :ref:`Doc link`
 rv.I                        text _[U] external url            :ref:`URL link`   
 rv.V, I        equation or label _[E]                         :ref:`Equation label`
