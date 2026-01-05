@@ -84,6 +84,10 @@ selected by the file author.
     :alt: rivt flow chart 
     :align: center
 
+.. raw:: html
+
+    <br>
+
 As an open source project *rivt* may be integrated with other programs.
 The integrated :term:`rivt framework` is described :doc:`here. <rvB01-install>`.
 
