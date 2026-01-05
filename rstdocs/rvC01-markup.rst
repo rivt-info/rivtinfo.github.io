@@ -8,14 +8,13 @@
 
     <hr>
 
-Each :doc:`API function <rvA01-intro>` takes a triple quoted string argument
-:term:`rivt string` composed of two parts - a :term:`header` followed by
-:term:`content text`. 
+Each :doc:`API function <rvA01-intro>` takes a triple quoted :term:`rivt
+string` argument composed of two parts - a :term:`header string` followed by a
+:term:`content string`.
 
-The first line is the *header*, followed by *text content** indented 4
-spaces for improved readability and section folding. Content may include
-:term:`rivt markup`, a readable, plain text language that generates formatted
-text, PDF or HTML :term:`docs` and other arbitrary text.
+The first line is the *header*, followed by *content text* indented 4 spaces
+for improved readability and section folding during interactive editing.
+Content may include :term:`rivt markup` and other arbitrary utf-8 text.
 
 
 .. code-block:: python
@@ -36,45 +35,47 @@ text, PDF or HTML :term:`docs` and other arbitrary text.
 
     <hr>
 
-The :term:`header` starts with a *section label* followed by comma separated
-*section parameters* that may override default behavior. The *section label* is
-the section title and is separated from the *section header* paramaters by a
-vertical bar. Parameters include the following:
+The :term:`header` starts with a *section label* followed by vertical bar that
+deliniates three comma separated *section parameters* that can override default
+behavior. The *section label* is the section title. They include the following,
+in any order:
 
-- private/public : determines whether the API section text is copied to the
+*private/public* 
+    Determines whether the API section text is copied to the
     the */public* folder *rivt file* for sharing. 
 
-- print/store : determines whether the *rivt string* is formatted and printed 
-    in the doc or just annotated and written to a file for optional inclusion 
-    as an appendix. eps
+*doc/stored*
+    Determines whether the *rivt string* is formatted and printed 
+    in the doc or just annotated and written to a file in the *Stored* folder 
+    for optional inclusion as an appendix.
 
-- section/merge : determines whether the API starts a new *doc* section
+*Section/merge* 
+    Determines whether the API starts a new *doc* section
     or is merged into the previous section.   
 
-
-Default settings do not need to be specified in the *header*. In the table
-below, the default setting for each API is listed first (in bold).
+Default settings in the *header* do not need to be specified. The default
+setting for each API is listed first (in bold) in the table below.
  
-========== ===================== ==================== =====================
-API          private;public         include;store        section;merge         
-========== ===================== ==================== ===================== 
-rv.R        **private**;public     **store**;include     **merge**;section
-rv.I        **private**;public     **include**;store     **section**;merge   
-rv.V        **private**;public     **include**;store     **section**;merge    
-rv.T        **private**;public     **store**;include     **merge**;section
-rv.D        **private**;public     **store**             **merge**
-rv.S        **private**;public     **store**;include     **merge**;section
-rv.X        **private**            **store**             **merge**
-========== ===================== ==================== ===================== 
+========== ===================== ===================== =====================
+API          private;public         doc;stored         section;merge         
+========== ===================== ===================== ===================== 
+rv.R        **private**;public     **stored**;doc       **merge**;section
+rv.I        **private**;public     **doc**;stored       **section**;merge   
+rv.V        **private**;public     **doc**;stored       **section**;merge    
+rv.T        **private**;public     **stored**;doc       **merge**;section
+rv.D        **private**;public     **stored**           **merge**
+rv.S        **private**;public     **stored**;doc       **merge**;section
+rv.X        **private**            **stored**           **merge**
+========== ===================== ===================== ===================== 
 
 
 Examples of *header* settings are shown below.
 
-**An example with explicit defaults that do not have to be declared**
+**An example with explicit defaults that do not have to be declared:**
 
 .. code-block:: python
 
-    rv.I("""A New Section | private, include, section
+    rv.I("""A New Section | private, doc, section
 
         Content text
         ...
@@ -92,7 +93,8 @@ Examples of *header* settings are shown below.
         """)
 
 
-**An example that merges a section to the previous section**
+**An example that merges a section to the previous section but prints
+the merged content:**
 
 .. code-block:: python
 
@@ -112,9 +114,9 @@ Examples of *header* settings are shown below.
     <hr>
 
 :term:`Content text` is indented four spaces for legibility and code folding.
-It has arbitrary text along with :doc:`line tags<rvC02-linetags>`, 
+It includes :doc:`line tags<rvC02-linetags>`, 
 :doc:`block tags<rvC03-blocktags>` and 
-:doc:`commands<rvC04-commands>`.
+:doc:`commands<rvC04-commands>` along with utf-8 text.
 
 .. code-block:: python
 
@@ -126,15 +128,16 @@ It has arbitrary text along with :doc:`line tags<rvC02-linetags>`,
         """)
 
 
-Content text is converted line by line into formatted text and `RestructuredText
-<https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_, and then
-further processed to an HTML or PDF file. If a line does not contain a
-*command* or *tag* it is passed through as is, which allows for including some
-*restructured text* directly. For example surrounding words with * for italics
-or ** for bold. 
+Content text is converted line by line into formatted utf-8 text and
+`RestructuredText <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_, 
+and then further processed into HTML or PDF. If a line does not contain 
+a *command* or *tag* it is passed through as is, which allows 
+for including some *restructured text* directly for some API functions. 
+For example surrounding words with * for italics or ** for bold in the 
+*Insert* function (rv.I).
 
-In addition the *Tools API function* (rv.T) supports processing raw Python,
-HTML, LaTex and reStructuredText. 
+In addition the *Tools API function* (rv.T) supports directly processing
+Python, HTML, LaTex and reStructuredText code.
 
 **[5t]** Tags and Commands
 ----------------------------

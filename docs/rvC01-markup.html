@@ -382,13 +382,12 @@
 <h1><strong>C.1 Markup</strong><a class="headerlink" href="#c-1-markup" title="Link to this heading">#</a></h1>
 <section id="t-rivt-string">
 <h2><strong>[1t]</strong> rivt String<a class="headerlink" href="#t-rivt-string" title="Link to this heading">#</a></h2>
-<hr><p>Each <a class="reference internal" href="rvA01-intro.html"><span class="doc">API function</span></a> takes a triple quoted string argument
-<a class="reference internal" href="rvA02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> composed of two parts - a <a class="reference internal" href="rvA02-terms.html#term-header"><span class="xref std std-term">header</span></a> followed by
-<a class="reference internal" href="rvA02-terms.html#term-content-text"><span class="xref std std-term">content text</span></a>.</p>
-<p>The first line is the <em>header</em>, followed by <em>text content*</em> indented 4
-spaces for improved readability and section folding. Content may include
-<a class="reference internal" href="rvA02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a>, a readable, plain text language that generates formatted
-text, PDF or HTML <a class="reference internal" href="rvA02-terms.html#term-docs"><span class="xref std std-term">docs</span></a> and other arbitrary text.</p>
+<hr><p>Each <a class="reference internal" href="rvA01-intro.html"><span class="doc">API function</span></a> takes a triple quoted <a class="reference internal" href="rvA02-terms.html#term-rivt-string"><span class="xref std std-term">rivt
+string</span></a> argument composed of two parts - a <a class="reference internal" href="rvA02-terms.html#term-header-string"><span class="xref std std-term">header string</span></a> followed by a
+<a class="reference internal" href="rvA02-terms.html#term-content-string"><span class="xref std std-term">content string</span></a>.</p>
+<p>The first line is the <em>header</em>, followed by <em>content text</em> indented 4 spaces
+for improved readability and section folding during interactive editing.
+Content may include <a class="reference internal" href="rvA02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> and other arbitrary utf-8 text.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | include;store, private;public, section;merge</span>
 
 <span class="s2">     Content text indented 4 spaces (utf-8 text)</span>
@@ -401,80 +400,74 @@ text, PDF or HTML <a class="reference internal" href="rvA02-terms.html#term-docs
 </section>
 <section id="t-headers">
 <h2><strong>[2t]</strong> Headers<a class="headerlink" href="#t-headers" title="Link to this heading">#</a></h2>
-<hr><p>The <a class="reference internal" href="rvA02-terms.html#term-header"><span class="xref std std-term">header</span></a> starts with a <em>section label</em> followed by comma separated
-<em>section parameters</em> that may override default behavior. The <em>section label</em> is
-the section title and is separated from the <em>section header</em> paramaters by a
-vertical bar. Parameters include the following:</p>
-<ul>
-<li><dl class="simple">
-<dt>private/public<span class="classifier">determines whether the API section text is copied to the</span></dt><dd><p>the <em>/public</em> folder <em>rivt file</em> for sharing.</p>
+<hr><p>The <a class="reference internal" href="rvA02-terms.html#term-header"><span class="xref std std-term">header</span></a> starts with a <em>section label</em> followed by vertical bar that
+deliniates three comma separated <em>section parameters</em> that can override default
+behavior. The <em>section label</em> is the section title. They include the following,
+in any order:</p>
+<dl class="simple">
+<dt><em>private/public</em></dt><dd><p>Determines whether the API section text is copied to the
+the <em>/public</em> folder <em>rivt file</em> for sharing.</p>
+</dd>
+<dt><em>doc/stored</em></dt><dd><p>Determines whether the <em>rivt string</em> is formatted and printed
+in the doc or just annotated and written to a file in the <em>Stored</em> folder
+for optional inclusion as an appendix.</p>
+</dd>
+<dt><em>Section/merge</em></dt><dd><p>Determines whether the API starts a new <em>doc</em> section
+or is merged into the previous section.</p>
 </dd>
 </dl>
-</li>
-<li><dl>
-<dt>print/store<span class="classifier">determines whether the <em>rivt string</em> is formatted and printed</span></dt><dd><p>in the doc or just annotated and written to a file for optional inclusion
-as an appendix. eps</p>
-</dd>
-</dl>
-</li>
-<li><dl>
-<dt>section/merge<span class="classifier">determines whether the API starts a new <em>doc</em> section</span></dt><dd><p>or is merged into the previous section.</p>
-</dd>
-</dl>
-</li>
-</ul>
-<p>Default settings do not need to be specified in the <em>header</em>. In the table
-below, the default setting for each API is listed first (in bold).</p>
+<p>Default settings in the <em>header</em> do not need to be specified. The default
+setting for each API is listed first (in bold) in the table below.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>API</p></th>
 <th class="head"><p>private;public</p></th>
-<th class="head"><p>include;store</p></th>
+<th class="head"><p>doc;stored</p></th>
 <th class="head"><p>section;merge</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>rv.R</p></td>
 <td><p><strong>private</strong>;public</p></td>
-<td><p><strong>store</strong>;include</p></td>
+<td><p><strong>stored</strong>;doc</p></td>
 <td><p><strong>merge</strong>;section</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I</p></td>
 <td><p><strong>private</strong>;public</p></td>
-<td><p><strong>include</strong>;store</p></td>
+<td><p><strong>doc</strong>;stored</p></td>
 <td><p><strong>section</strong>;merge</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.V</p></td>
 <td><p><strong>private</strong>;public</p></td>
-<td><p><strong>include</strong>;store</p></td>
+<td><p><strong>doc</strong>;stored</p></td>
 <td><p><strong>section</strong>;merge</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.T</p></td>
 <td><p><strong>private</strong>;public</p></td>
-<td><p><strong>store</strong>;include</p></td>
+<td><p><strong>stored</strong>;doc</p></td>
 <td><p><strong>merge</strong>;section</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.D</p></td>
 <td><p><strong>private</strong>;public</p></td>
-<td><p><strong>store</strong></p></td>
+<td><p><strong>stored</strong></p></td>
 <td><p><strong>merge</strong></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.S</p></td>
 <td><p><strong>private</strong>;public</p></td>
-<td><p><strong>store</strong>;include</p></td>
+<td><p><strong>stored</strong>;doc</p></td>
 <td><p><strong>merge</strong>;section</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.X</p></td>
 <td><p><strong>private</strong></p></td>
-<td><p><strong>store</strong></p></td>
+<td><p><strong>stored</strong></p></td>
 <td><p><strong>merge</strong></p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <p>Examples of <em>header</em> settings are shown below.</p>
-<p><strong>An example with explicit defaults that do not have to be declared</strong></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;A New Section | private, include, section</span>
+<p><strong>An example with explicit defaults that do not have to be declared:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;A New Section | private, doc, section</span>
 
 <span class="s2">    Content text</span>
 <span class="s2">    ...</span>
@@ -492,7 +485,8 @@ below, the default setting for each API is listed first (in bold).</p>
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><strong>An example that merges a section to the previous section</strong></p>
+<p><strong>An example that merges a section to the previous section but prints
+the merged content:</strong></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;A Merged Section | merge</span>
 
 <span class="s2">    Content text</span>
@@ -506,9 +500,9 @@ below, the default setting for each API is listed first (in bold).</p>
 <section id="t-content-string">
 <h2><strong>[3t]</strong> Content string<a class="headerlink" href="#t-content-string" title="Link to this heading">#</a></h2>
 <hr><p><a class="reference internal" href="rvA02-terms.html#term-content-text"><span class="xref std std-term">Content text</span></a> is indented four spaces for legibility and code folding.
-It has arbitrary text along with <a class="reference internal" href="rvC02-linetags.html"><span class="doc">line tags</span></a>,
+It includes <a class="reference internal" href="rvC02-linetags.html"><span class="doc">line tags</span></a>,
 <a class="reference internal" href="rvC03-blocktags.html"><span class="doc">block tags</span></a> and
-<a class="reference internal" href="rvC04-commands.html"><span class="doc">commands</span></a>.</p>
+<a class="reference internal" href="rvC04-commands.html"><span class="doc">commands</span></a> along with utf-8 text.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label |</span>
 
 <span class="s2">    Content text indented 4 spaces (utf-8).</span>
@@ -517,13 +511,15 @@ It has arbitrary text along with <a class="reference internal" href="rvC02-linet
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Content text is converted line by line into formatted text and <a class="reference external" href="https://docutils.sourceforge.io/docs/user/rst/quickref.html">RestructuredText</a>, and then
-further processed to an HTML or PDF file. If a line does not contain a
-<em>command</em> or <em>tag</em> it is passed through as is, which allows for including some
-<em>restructured text</em> directly. For example surrounding words with * for italics
-or ** for bold.</p>
-<p>In addition the <em>Tools API function</em> (rv.T) supports processing raw Python,
-HTML, LaTex and reStructuredText.</p>
+<p>Content text is converted line by line into formatted utf-8 text and
+<a class="reference external" href="https://docutils.sourceforge.io/docs/user/rst/quickref.html">RestructuredText</a>,
+and then further processed into HTML or PDF. If a line does not contain
+a <em>command</em> or <em>tag</em> it is passed through as is, which allows
+for including some <em>restructured text</em> directly for some API functions.
+For example surrounding words with * for italics or ** for bold in the
+<em>Insert</em> function (rv.I).</p>
+<p>In addition the <em>Tools API function</em> (rv.T) supports directly processing
+Python, HTML, LaTex and reStructuredText code.</p>
 </section>
 <section id="t-tags-and-commands">
 <h2><strong>[5t]</strong> Tags and Commands<a class="headerlink" href="#t-tags-and-commands" title="Link to this heading">#</a></h2>

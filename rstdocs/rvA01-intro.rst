@@ -74,18 +74,19 @@ As an open source project *rivt* may be integrated with other programs.
 The integrated :term:`rivt framework` is described :doc:`here. <rvB01-install>`.
 
 The *rivt API* includes  :ref:`API functions`, :ref:`Markup` and
-:ref:`Files and folders`. The software design is implememted to be:
+:ref:`Files and folders`. The software is designed to be:
 
-**lightweight** 
+- lightweight
     :term:`rivt markup` is made up of about 3 dozen tags 
     and commands, and wraps :term:`reStructuredText`.
 
-**flexible** 
-    a *rivt file* produces a *doc* that can be formatted as 
+- flexible 
+    A *rivt file* produces a *doc* that can be formatted as 
     text, HTML and PDF.that can be part of a large report 
 
-**extensible** 
-    it is written in Python with direct access to thousands of Python packages.
+- extensible 
+    *rivtlib* is written in Python with direct access to thousands of 
+    Python packages.
 
 .. _API functions:
 
@@ -96,9 +97,8 @@ The *rivt API* includes  :ref:`API functions`, :ref:`Markup` and
 
     <hr>
 
-The name *rivt* is an acronym formed from the four functions that generate
-document content. Most of a docs' content is written using the *Insert* and
-*Value* API's.
+The name *rivt* is an acronym formed from four content generating
+functions. 
 
 =============== =============== ===========================================
 API Functions        Name             Purpose
@@ -111,6 +111,8 @@ rv.D(rS)           Doc               Publish docs
 rv.S(rS)           Skip              Skip section
 rv.X(rS)           Exit              Exit rivt (rivt string not processed)
 =============== =============== ===========================================
+
+ Most of a docs' content is written using the *Insert* and *Value* API's.
 
 **Content functions**
 

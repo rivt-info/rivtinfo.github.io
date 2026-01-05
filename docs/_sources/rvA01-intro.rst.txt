@@ -74,18 +74,19 @@ As an open source project *rivt* may be integrated with other programs.
 The integrated :term:`rivt framework` is described :doc:`here. <rvB01-install>`.
 
 The *rivt API* includes  :ref:`API functions`, :ref:`Markup` and
-:ref:`Files and folders`. The software design is implememted to be:
+:ref:`Files and folders`. The software is designed to be:
 
-**lightweight** 
+- lightweight
     :term:`rivt markup` is made up of about 3 dozen tags 
     and commands, and wraps :term:`reStructuredText`.
 
-**flexible** 
-    a *rivt file* produces a *doc* that can be formatted as 
+- flexible 
+    A *rivt file* produces a *doc* that can be formatted as 
     text, HTML and PDF.that can be part of a large report 
 
-**extensible** 
-    it is written in Python with direct access to thousands of Python packages.
+- extensible 
+    *rivtlib* is written in Python with direct access to thousands of 
+    Python packages.
 
 .. _API functions:
 

@@ -59,12 +59,14 @@
     
   header
   headers
+  header string
     The first line of a  *rivt string*. It includes a section title, followed 
     by comma separated parameters.
 
   content
   content text
-    The text in a rivt string that is not part of the header.
+  content string
+    The text in a rivt string following the header string.
   
   rivt
     An open source Python project that includes :term:`rivtlib` and approximately 
