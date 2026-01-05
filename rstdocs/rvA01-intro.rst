@@ -78,7 +78,7 @@ by the author. The *MIT license* is the default.
 
 **rivt Files, Docs and Reports**
 
-.. image:: _static/img/rivtflow.png
+.. image:: _static/img/rivtflow2.png
     :scale: 60%
     :alt: rivt flow chart 
     :align: center
