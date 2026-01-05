@@ -65,10 +65,9 @@ Jupyter        no       no         no      yes         yes      yes
 A :term:`rivt doc` (document) is published from a :term:`rivt file` that is
 written in :term:`rivt markup` and processed by the :term:`rivtlib` Python
 package. A collection of *rivt docs* may be collated as a :term:`rivt report`.
-As an open source project *rivt files* may be collaberatively shared and *rivt*
-may be integrated with other programs.
 
-*rivt* is distributed under the 
+As an open source project *rivt files* may be collaberatively shared and *rivt*
+may be integrated with other programs. *rivt* is distributed under the 
 `MIT open source license. <https://opensource.org/license/mit>`_ 
 The parts of a *rivt file* that are shared in *public rivt files* along with an 
 `Open Source license <https://opensource.org/licenses>`_ are selected 
@@ -78,8 +77,8 @@ by the author. The *MIT license* is the default.
 
 **rivt Files, Docs and Reports**
 
-.. image:: _static/img/rivtflow2.png
-    :scale: 60%
+.. image:: _static/img/rivtflow.png
+    :scale: 70%
     :alt: rivt flow chart 
     :align: center
 
