@@ -1,56 +1,7 @@
 **C.1 Markup**
 ==================
 
-
-**[1t]** API Functions
-------------------------
-
-.. raw:: html
-
-    <hr>
-
-*rivt markup* includes 3 dozen tags and commands distributed among five API
-functions. The rivt API is activated using the Python import statement:
-
-..  code-block:: python
-
-    import rivtlib.rvapi as rv
-
-Following the import statement, several comment variables affecting 
-*rivt markup* may be set.
-
-*singledocB* overrides the default report structure and specifies that
-command files are read from and written to the *rivt file* folder instead of
-*rivt folders*. It is intended for simple, *single docs* and has limited
-formatting options. The default setting is *False*.
-
-..  code-block:: python
-
-     # rv singledocB=True
-
-The *docnameS* overrides the default *doc* name, which is taken from the rivt
-file name.
-
-..  code-block:: python
-
-     # rv docnameS=new doc name
-
-*rivt markup* applies to five API functions - *R, I, V, T, D*.
-
-=============== =============== =========================================
-API Function        Name             Purpose
-=============== =============== =========================================
-rv.R(rS)           Run               Run shell commands
-rv.I(rS)           Insert            Insert static resources 
-rv.V(rS)           Values            Calculate values
-rv.T(rS)           Tools             Python and Markup scripts
-rv.D(rS)           Docs              Publish docs 
-rv.S(rS)           Skip              Skip section
-rv.X(rS)           Exit              Exit rivt 
-=============== =============== =========================================
-
-
-**[2t]** rivt String
+**[1t]** rivt String
 ----------------------------------
 
 .. raw:: html
@@ -78,7 +29,7 @@ text, PDF or HTML :term:`docs` and other arbitrary text.
         """)
 
 
-**[3t]** Headers 
+**[2t]** Headers 
 -------------------------
 
 .. raw:: html
@@ -153,7 +104,7 @@ Examples of *header* settings are shown below.
         
         """)
 
-**[4t]** Content Text 
+**[3t]** Content string
 --------------------------
 
 .. raw:: html
@@ -215,7 +166,7 @@ The *rivt report* folder structure is described :doc:`here. <rvD03-folders>`.
 
 If the path is ommitted the default path for each command is applied. 
 
-**[7t]** Markup Key
+**[4t]** Markup Key
 ----------------------------------
 
 .. raw:: html
@@ -262,7 +213,7 @@ file types
 
 file types
 
-**[6t]** API Folders
+**[5t]** Folders
 -----------------------
 
 .. raw:: html

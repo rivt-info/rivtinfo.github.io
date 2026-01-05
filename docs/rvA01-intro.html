@@ -500,11 +500,13 @@ The integrated <a class="reference internal" href="rvA02-terms.html#term-rivt-fr
 <p>The <em>rivt API</em> includes  <a class="reference internal" href="#api-functions"><span class="std std-ref">[2t] API functions</span></a>, <a class="reference internal" href="#markup"><span class="std std-ref">[3t] Markup</span></a> and
 <a class="reference internal" href="#files-and-folders"><span class="std std-ref">[4t] Files and folders</span></a>. The software design is implememted to be:</p>
 <dl class="simple">
-<dt><strong>lightweight</strong> - <a class="reference internal" href="rvA02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> is made up of 3 dozen tags</dt><dd><p>and commands and wraps <a class="reference internal" href="rvA02-terms.html#term-restructuredtext"><span class="xref std std-term">reStructuredText</span></a>.</p>
+<dt><strong>lightweight</strong></dt><dd><p><a class="reference internal" href="rvA02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> is made up of about 3 dozen tags
+and commands, and wraps <a class="reference internal" href="rvA02-terms.html#term-restructuredtext"><span class="xref std std-term">reStructuredText</span></a>.</p>
 </dd>
-<dt><strong>flexible</strong> - the same rivt file produces a single <em>doc</em> or can be part of a</dt><dd><p>large report formatted as text, HTML and PDF.</p>
+<dt><strong>flexible</strong></dt><dd><p>a <em>rivt file</em> produces a <em>doc</em> that can be formatted as
+text, HTML and PDF.that can be part of a large report</p>
 </dd>
-<dt><strong>extensible</strong> - it is written in Python with direct access to</dt><dd><p>thousands of Python packages.</p>
+<dt><strong>extensible</strong></dt><dd><p>it is written in Python with direct access to thousands of Python packages.</p>
 </dd>
 </dl>
 </section>
@@ -602,7 +604,7 @@ markup</em> and imports the <a class="reference internal" href="rvA02-terms.html
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
 </pre></div>
 </div>
-<p><em>rivt files</em> are stored in the root folder and designated with the prefix <em>rivt-</em>.
+<p><em>rivt files</em> are stored in the root folder designated with the prefix <em>rivt-</em>.
 Each <em>rivt file</em> and corresponding <em>rivt doc</em> has a prefix that is used to
 organize the report.</p>
 <p style="border-width:1px; border-style:solid;
@@ -610,7 +612,8 @@ border-color:#49b2c3;padding: 1em;">
 
 <b>Folder Key</b> <br>
 - Required names or prefixes are shown in brackets [ ]. <br>
-- Folders that contain author generated files are marked with a
+- Required folders start with a capital letter. <br>
+- Folders that contain author provided files are marked with a
 single vertical bar ( | ).<br>
 - Folders that contain <i>rivtlib</i> generated files are
 marked with double vertical bars ( || ).</p><p><strong>Folders</strong></p>
@@ -624,8 +627,8 @@ marked with double vertical bars ( || ).</p><p><strong>Folders</strong></p>
 
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>Public<span class="o">]</span>/<span class="w">                   </span><span class="o">||</span><span class="w"> </span>public<span class="w"> </span>rivt<span class="w"> </span>files
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>Publish<span class="o">]</span>/<span class="w">                  </span><span class="o">||</span><span class="w"> </span>doc<span class="w"> </span>and<span class="w"> </span>report<span class="w"> </span>files
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>Src<span class="o">]</span>/<span class="w">                      </span><span class="p">|</span><span class="w">  </span><span class="nb">source</span><span class="w"> </span>files
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>Stored<span class="o">]</span>/<span class="w">                   </span><span class="o">||</span><span class="w"> </span>stored<span class="w"> </span>files<span class="w"> </span>from<span class="w"> </span>rivt
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>Src<span class="o">]</span>/<span class="w">                      </span><span class="p">|</span><span class="w">  </span><span class="nb">source</span><span class="w"> </span>files<span class="w"> </span>from<span class="w"> </span>author
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>Stored<span class="o">]</span>/<span class="w">                   </span><span class="o">||</span><span class="w"> </span>stored<span class="w"> </span>files<span class="w"> </span>from<span class="w"> </span>rivtlib
 <span class="w">    </span>└──<span class="w"> </span>README.txt<span class="w">                  </span><span class="o">||</span><span class="w"> </span>searchable<span class="w"> </span>text<span class="w"> </span>report
 </pre></div>
 </div>

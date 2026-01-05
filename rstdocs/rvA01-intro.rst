@@ -76,14 +76,16 @@ The integrated :term:`rivt framework` is described :doc:`here. <rvB01-install>`.
 The *rivt API* includes  :ref:`API functions`, :ref:`Markup` and
 :ref:`Files and folders`. The software design is implememted to be:
 
-**lightweight** - :term:`rivt markup` is made up of 3 dozen tags 
-    and commands and wraps :term:`reStructuredText`.
+**lightweight** 
+    :term:`rivt markup` is made up of about 3 dozen tags 
+    and commands, and wraps :term:`reStructuredText`.
 
-**flexible** - the same rivt file produces a single *doc* or can be part of a 
-    large report formatted as text, HTML and PDF.
+**flexible** 
+    a *rivt file* produces a *doc* that can be formatted as 
+    text, HTML and PDF.that can be part of a large report 
 
-**extensible** - it is written in Python with direct access to 
-    thousands of Python packages.
+**extensible** 
+    it is written in Python with direct access to thousands of Python packages.
 
 .. _API functions:
 
@@ -186,7 +188,7 @@ markup* and imports the :term:`rivtlib` API into the *rv* :term:`namespace`:
 
     import rivtlib.rvapi as rv
 
-*rivt files* are stored in the root folder and designated with the prefix *rivt-*.
+*rivt files* are stored in the root folder designated with the prefix *rivt-*.
 Each *rivt file* and corresponding *rivt doc* has a prefix that is used to
 organize the report. 
     
@@ -199,7 +201,8 @@ organize the report.
 
     <b>Folder Key</b> <br>
     - Required names or prefixes are shown in brackets [ ]. <br>
-    - Folders that contain author generated files are marked with a 
+    - Required folders start with a capital letter. <br>
+    - Folders that contain author provided files are marked with a 
     single vertical bar ( | ).<br>  
     - Folders that contain <i>rivtlib</i> generated files are 
     marked with double vertical bars ( || ).</p>
@@ -219,8 +222,8 @@ organize the report.
 
         ├── [Public]/                   || public rivt files 
         ├── [Publish]/                  || doc and report files
-        ├── [Src]/                      |  source files 
-        ├── [Stored]/                   || stored files from rivt
+        ├── [Src]/                      |  source files from author
+        ├── [Stored]/                   || stored files from rivtlib
         └── README.txt                  || searchable text report 
 
 
