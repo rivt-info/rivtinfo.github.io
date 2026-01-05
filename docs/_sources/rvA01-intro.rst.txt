@@ -202,7 +202,7 @@ organize the report.
     border-color:#49b2c3;padding: 1em;">
 
     <b>Folder Key</b> <br>
-    Required names or prefixes are shown in brackets [ ]. <br>
+    Required names or prefixes are shown in brackets [ ].
     Required folders start with a capital letter. <br>
     Folders that contain author provided files are marked with a 
     single vertical bar ( | ).<br>  

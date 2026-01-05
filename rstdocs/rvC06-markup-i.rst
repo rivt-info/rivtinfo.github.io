@@ -14,17 +14,18 @@ including images, tables, links and formatted text.
 =========================================== =======================================
         Line Tags                                 Description 
 =========================================== =======================================
-             text _[#] text                    :ref:`Endnote number`  
+             text _[#] text                    :ref:`Endnote number`
+             text _[D] rivt_file text          :ref:`Doc link`  
              text _[C]                         :ref:`Center text` 
              text _[R]                         :ref:`Right justify text`
-       latex math _[L]                         :ref:`LaTeX math` 
-       ascii math _[M]                         :ref:`ASCII math` 
+       LaTeX math _[L]                         :ref:`LaTeX math` 
+       ASCII math _[M]                         :ref:`ASCII math` 
              text _[S] section label           :ref:`Section link`
              text _[G] glossary link term      :ref:`Term reference`
-             text _[D] doc number              :ref:`Doc link`
              text _[U] external url            :ref:`URL link`   
-equation or label _[E]                         :ref:`Equation label`
-  values or title _[T]                         :ref:`Table title`  
+             text _[V] var_name text           :ref:`Variable value` 
+  assign or label _[E]                         :ref:`Equation label`
+valtable or title _[T]                         :ref:`Table title` 
 =========================================== =======================================
 
 ========================================= ==============================
