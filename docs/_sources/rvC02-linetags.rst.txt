@@ -8,7 +8,7 @@
 
     <hr>
 
-**Format a line of text**
+**Format a line or partial line of text**
   
 ============= =========================================== ===============================
 API Scope             Line Tags                            Description 
@@ -20,11 +20,11 @@ rv.I                  ascii math _[M]                         :ref:`ASCII math`
 rv.I                  latex math _[L]                         :ref:`LaTeX math` 
 rv.I                        text _[G] glossary link term      :ref:`Term reference`
 rv.I                        text _[S] section label           :ref:`Section link`
-rv.I                        text _[D] doc number              :ref:`Doc link`
-rv.I                        text _[U] external url            :ref:`URL link`   
+rv.I                        text _[D] file_name text          :ref:`Doc link`
+rv.I                        text _[U] label, external_url     :ref:`URL link`   
 rv.V, I          assign or label _[E]                         :ref:`Equation label`
 rv.V, I        valtable or title _[T]                         :ref:`Table title`
-rv.V, I        text variablename _[V] text                    :ref:`Table title`
+rv.V, I                    text  _[V] var_name text           :ref:`Table title`
 ============= =========================================== ===============================
 
 ..  _Endnote number:
@@ -183,10 +183,11 @@ Doc Types     PDF, HTML
 
 .. topic:: text _[D] doc number
     
-    The last word in this phrase will be linked to the doc **_[D]** rA01
+    The phrase following the comma will be linked to the doc 
+    **_[D]** rA01-myfile, received yesterday.
 
-Links to *docs* in a *report*. Text will be continued and wrapped when
-formatted.
+Links to a *doc* in a *report*. The tag must be at the end of a line. Text will be
+continued and wrapped when formatted. 
 
 =========== ==========================
 API Scope     Insert
@@ -202,11 +203,13 @@ Doc Types     PDF, HTML
 
     <hr>
 
-.. topic:: _[U] 
+.. topic:: text _[U] external url, label 
     
-    The last word in this phrase will be linked to the url **_[U]** urlname
+    The  phrase following the comma will be linked to the specified url 
+    **_[U]** https://myurl.com, my link 
 
-External url link. Text will be continued and wrapped when formatted.
+External url link. The tag must be at the end of a line. Text will be
+continued and wrapped when formatted.
 
 =========== ==========================
 API Scope     Insert
@@ -222,14 +225,15 @@ Doc Types     PDF, HTML
 
     <hr>
 
-.. topic:: equation or math _[E]
+.. topic:: assign command or label _[E]
 
    math text or label **_[E]**
 
    equation assignment command **_[E]**
 
-If the line of text is math text or a label, the text is assinged an equation
-number and right justified. If the line of 
+If the line of text is math text or a label, the text is assigned an equation
+number and right justified. If the line is an equation assignment the equation
+label is used for the label text.
 
 =========== ==========================
 API Scope     Insert, Values
@@ -245,9 +249,9 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic:: _[T]
+.. topic:: Table Title  _[T]
 
-   Table Title **_[T]**
+   A New Table **_[T]**
 
 Labels and numbers tables.
 
@@ -256,3 +260,25 @@ API Scope     Insert, Values
 Doc Types     text, PDF, HTML
 =========== ==========================
 
+.. _Variable value:
+
+**[12t]** Variable value
+------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: text _[V] var_name text
+
+   This sentence inserts the value of **_[V] my_var** in the sentence.
+
+Insert variable value.
+
+=========== ==========================
+API Scope     Insert, Values
+Doc Types     text, PDF, HTML
+=========== ==========================
+
+
+rv.V, I                    text  _[V] var_name text           :ref:`Table title`

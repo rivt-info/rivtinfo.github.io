@@ -385,7 +385,7 @@
 <h1><strong>C.2 Line Tags</strong><a class="headerlink" href="#c-2-line-tags" title="Link to this heading">#</a></h1>
 <section id="t-line-tag-summary">
 <h2><strong>[1t]</strong> Line Tag Summary<a class="headerlink" href="#t-line-tag-summary" title="Link to this heading">#</a></h2>
-<hr><p><strong>Format a line of text</strong></p>
+<hr><p><strong>Format a line or partial line of text</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>API Scope</p></th>
@@ -423,11 +423,11 @@
 <td><p><a class="reference internal" href="#section-link"><span class="std std-ref">[8t] Section link</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>text _[D] doc number</p></td>
+<td><p>text _[D] file_name text</p></td>
 <td><p><a class="reference internal" href="#doc-link"><span class="std std-ref">[9t] Doc link</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I</p></td>
-<td><p>text _[U] external url</p></td>
+<td><p>text _[U] label, external_url</p></td>
 <td><p><a class="reference internal" href="#url-link"><span class="std std-ref">[10t] URL link</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V, I</p></td>
@@ -439,7 +439,7 @@
 <td><p><a class="reference internal" href="#table-title"><span class="std std-ref">[12t] Table title</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V, I</p></td>
-<td><p>text variablename _[V] text</p></td>
+<td><p>text  _[V] var_name text</p></td>
 <td><p><a class="reference internal" href="#table-title"><span class="std std-ref">[12t] Table title</span></a></p></td>
 </tr>
 </tbody>
@@ -585,10 +585,11 @@ are defined with the block tag _[[ENDNOTE]] and are listed at the end of the
 <span id="doc-link"></span><h2><strong>[9t]</strong> Doc link<a class="headerlink" href="#t-doc-link" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">text _[D] doc number</p>
-<p>The last word in this phrase will be linked to the doc <strong>_[D]</strong> rA01</p>
+<p>The phrase following the comma will be linked to the doc
+<strong>_[D]</strong> rA01-myfile, received yesterday.</p>
 </aside>
-<p>Links to <em>docs</em> in a <em>report</em>. Text will be continued and wrapped when
-formatted.</p>
+<p>Links to a <em>doc</em> in a <em>report</em>. The tag must be at the end of a line. Text will be
+continued and wrapped when formatted.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -604,10 +605,12 @@ formatted.</p>
 <section id="t-url-link">
 <span id="url-link"></span><h2><strong>[10t]</strong> URL link<a class="headerlink" href="#t-url-link" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">_[U]</p>
-<p>The last word in this phrase will be linked to the url <strong>_[U]</strong> urlname</p>
+<p class="topic-title">text _[U] external url, label</p>
+<p>The  phrase following the comma will be linked to the specified url
+<strong>_[U]</strong> <a class="reference external" href="https://myurl.com">https://myurl.com</a>, my link</p>
 </aside>
-<p>External url link. Text will be continued and wrapped when formatted.</p>
+<p>External url link. The tag must be at the end of a line. Text will be
+continued and wrapped when formatted.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -623,12 +626,13 @@ formatted.</p>
 <section id="t-equation-label">
 <span id="equation-label"></span><h2><strong>[11t]</strong> Equation label<a class="headerlink" href="#t-equation-label" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">equation or math _[E]</p>
+<p class="topic-title">assign command or label _[E]</p>
 <p>math text or label <strong>_[E]</strong></p>
 <p>equation assignment command <strong>_[E]</strong></p>
 </aside>
-<p>If the line of text is math text or a label, the text is assinged an equation
-number and right justified. If the line of</p>
+<p>If the line of text is math text or a label, the text is assigned an equation
+number and right justified. If the line is an equation assignment the equation
+label is used for the label text.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -644,8 +648,8 @@ number and right justified. If the line of</p>
 <section id="t-table-title">
 <span id="table-title"></span><h2><strong>[12t]</strong> Table title<a class="headerlink" href="#t-table-title" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">_[T]</p>
-<p>Table Title <strong>_[T]</strong></p>
+<p class="topic-title">Table Title  _[T]</p>
+<p>A New Table <strong>_[T]</strong></p>
 </aside>
 <p>Labels and numbers tables.</p>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -659,6 +663,26 @@ number and right justified. If the line of</p>
 </tbody>
 </table>
 </div>
+</section>
+<section id="t-variable-value">
+<span id="variable-value"></span><h2><strong>[12t]</strong> Variable value<a class="headerlink" href="#t-variable-value" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">text _[V] var_name text</p>
+<p>This sentence inserts the value of <strong>_[V] my_var</strong> in the sentence.</p>
+</aside>
+<p>Insert variable value.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Insert, Values</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>rv.V, I                    text  _[V] var_name text           <a class="reference internal" href="#table-title"><span class="std std-ref">[12t] Table title</span></a></p>
 </section>
 </section>
 
@@ -721,6 +745,7 @@ number and right justified. If the line of</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-url-link"><strong>[10t]</strong> URL link</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-equation-label"><strong>[11t]</strong> Equation label</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-table-title"><strong>[12t]</strong> Table title</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-variable-value"><strong>[12t]</strong> Variable value</a></li>
 </ul>
   </nav></div>
 

@@ -97,9 +97,8 @@ The *rivt API* includes  :ref:`API functions`, :ref:`Markup` and
 
     <hr>
 
-The name *rivt* is an acronym formed from the four functions that generate
-document content. Most of a docs' content is written using the *Insert* and
-*Value* API's.
+The name *rivt* is an acronym formed from four content generating
+functions. 
 
 =============== =============== ===========================================
 API Functions        Name             Purpose
@@ -113,26 +112,30 @@ rv.S(rS)           Skip              Skip section
 rv.X(rS)           Exit              Exit rivt (rivt string not processed)
 =============== =============== ===========================================
 
+ Most of a docs' content is written using the *Insert* (rv.I) and *Value*
+ (rv.v) API's.
+
 **Content functions**
 
-    The *Run API* executes shell commands. 
+.. raw:: html
+
+    <p style="border-width:1px; border-style:solid; 
+    border-color:#49b2c3;padding: 1em;">
+
+    <b>Content Functions</b> <br>
+    The *Run API* executes shell commands.<br> 
+    The *Insert API* adds static table, image, equation and text content.<br> 
+    The *Value API* evaluates equations and functions.<br> 
+    The *Tool API* runs reStructuredText, HTML, LaTeX and Python scripts.<br>
     
-    The *Insert API* adds static table, image, equation and text content. 
+    <b>Processing and interactive Functions</b> <br>
+    The *Doc API* specifies *doc* type and style and generates the *doc* file.<br>  
+    The *Skip API* can be used for interactive debugging and comments.<br> 
+    The *Exit API* can be used for interactive debugging.<br> 
+    </p>
 
-    The *Value API* evaluates equations and functions. 
-
-    The *Tool API* runs reStructuredText, HTML, LaTeX and Python scripts.
-
-**Interactive and processing functions**
-
-    The *Doc API* specifies *doc* type and style and generates the *doc* file. 
-    
-    The *Skip API* can be used for interactive debugging and comments.
-
-    The *Exit API* can be used for interactive debugging.
-
-Within an interactive IDE like *VSCode* and *Spyder*, indiviudal API functions can
-be processed interactively as cells using the standard prefix notation:
+Within an interactive IDE like *VSCode* and *Spyder*, indiviudal API functions
+can be processed interactively as cells using the standard prefix notation:
 
 .. code-block:: python
 
@@ -248,9 +251,10 @@ The four rivt subfolders are:
 
 The complete folder structure is shown :ref:`here <report-folders>`.
 
+.. _Reports and single docs:
 
-**[5t]** *Single docs*
-------------------------
+**[5t]** Reports and single docs
+-----------------------------------------------------------------------
 
 .. raw:: html
 

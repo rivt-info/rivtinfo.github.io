@@ -522,9 +522,8 @@ Python packages.</p>
 </section>
 <section id="t-api-functions">
 <span id="api-functions"></span><h2><strong>[2t]</strong> API functions<a class="headerlink" href="#t-api-functions" title="Link to this heading">#</a></h2>
-<hr><p>The name <em>rivt</em> is an acronym formed from the four functions that generate
-document content. Most of a docs’ content is written using the <em>Insert</em> and
-<em>Value</em> API’s.</p>
+<hr><p>The name <em>rivt</em> is an acronym formed from four content generating
+functions.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>API Functions</p></th>
@@ -564,21 +563,26 @@ document content. Most of a docs’ content is written using the <em>Insert</em>
 </tbody>
 </table>
 </div>
+<blockquote>
+<div><p>Most of a docs’ content is written using the <em>Insert</em> (rv.I) and <em>Value</em>
+(rv.v) API’s.</p>
+</div></blockquote>
 <p><strong>Content functions</strong></p>
-<blockquote>
-<div><p>The <em>Run API</em> executes shell commands.</p>
-<p>The <em>Insert API</em> adds static table, image, equation and text content.</p>
-<p>The <em>Value API</em> evaluates equations and functions.</p>
-<p>The <em>Tool API</em> runs reStructuredText, HTML, LaTeX and Python scripts.</p>
-</div></blockquote>
-<p><strong>Interactive and processing functions</strong></p>
-<blockquote>
-<div><p>The <em>Doc API</em> specifies <em>doc</em> type and style and generates the <em>doc</em> file.</p>
-<p>The <em>Skip API</em> can be used for interactive debugging and comments.</p>
-<p>The <em>Exit API</em> can be used for interactive debugging.</p>
-</div></blockquote>
-<p>Within an interactive IDE like <em>VSCode</em> and <em>Spyder</em>, indiviudal API functions can
-be processed interactively as cells using the standard prefix notation:</p>
+<p style="border-width:1px; border-style:solid;
+border-color:#49b2c3;padding: 1em;">
+
+<b>Content Functions</b> <br>
+The *Run API* executes shell commands.<br>
+The *Insert API* adds static table, image, equation and text content.<br>
+The *Value API* evaluates equations and functions.<br>
+The *Tool API* runs reStructuredText, HTML, LaTeX and Python scripts.<br>
+
+<b>Processing and interactive Functions</b> <br>
+The *Doc API* specifies *doc* type and style and generates the *doc* file.<br>
+The *Skip API* can be used for interactive debugging and comments.<br>
+The *Exit API* can be used for interactive debugging.<br>
+</p><p>Within an interactive IDE like <em>VSCode</em> and <em>Spyder</em>, indiviudal API functions
+can be processed interactively as cells using the standard prefix notation:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %% option label</span>
 </pre></div>
 </div>
@@ -659,8 +663,8 @@ may be attached to a report.</p>
 </dl>
 <p>The complete folder structure is shown <a class="reference internal" href="rvD03-folders.html#report-folders"><span class="std std-ref">here</span></a>.</p>
 </section>
-<section id="t-single-docs">
-<h2><strong>[5t]</strong> <em>Single docs</em><a class="headerlink" href="#t-single-docs" title="Link to this heading">#</a></h2>
+<section id="t-reports-and-single-docs">
+<span id="reports-and-single-docs"></span><h2><strong>[5t]</strong> Reports and single docs<a class="headerlink" href="#t-reports-and-single-docs" title="Link to this heading">#</a></h2>
 <hr><p>The <em>singledocB</em> variable overrides the default report structure and specifies
 that resource files and <em>docs</em> are read from and written to the <em>rivt file</em>
 folder. It is intended for simpler, standalone <em>docs</em> with more limited format
@@ -729,7 +733,7 @@ statement:</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-api-functions"><strong>[2t]</strong> API functions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-markup"><strong>[3t]</strong> Markup</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-files-and-folders"><strong>[4t]</strong> Files and folders</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-single-docs"><strong>[5t]</strong> <em>Single docs</em></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-reports-and-single-docs"><strong>[5t]</strong> Reports and single docs</a></li>
 </ul>
   </nav></div>
 
