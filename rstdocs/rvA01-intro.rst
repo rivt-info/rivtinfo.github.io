@@ -127,7 +127,7 @@ API's.
     The <i>Tool API</i> runs reStructuredText, HTML, LaTeX and Python scripts.<br>
     <br>
     <b>Processing and interactive Functions</b> <br>
-    The <i>Doc API</i> specifies <i>doc</i> type and style and generates the <i>doc<i> file.<br>  
+    The <i>Doc API</i> specifies <i>doc</i> type and style and generates the file.<br>  
     The <i>Skip API</i> can be used for interactive debugging and comments.<br> 
     The <i>Exit API</i> can be used for interactive debugging.<br> 
     </p>
@@ -202,11 +202,11 @@ organize the report.
     border-color:#49b2c3;padding: 1em;">
 
     <b>Folder Key</b> <br>
-    - Required names or prefixes are shown in brackets [ ]. <br>
-    - Required folders start with a capital letter. <br>
-    - Folders that contain author provided files are marked with a 
+    Required names or prefixes are shown in brackets [ ]. <br>
+    Required folders start with a capital letter. <br>
+    Folders that contain author provided files are marked with a 
     single vertical bar ( | ).<br>  
-    - Folders that contain <i>rivtlib</i> generated files are 
+    Folders that contain <i>rivtlib</i> generated files are 
     marked with double vertical bars ( || ).</p>
 
 
