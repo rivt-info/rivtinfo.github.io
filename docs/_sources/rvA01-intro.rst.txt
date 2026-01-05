@@ -185,7 +185,7 @@ see :doc:`here <rvC01-markup>`.
 
     <hr>
 
-A :term:`rivt file` is a Python plain text file (.py) that includes *rivt
+A :term:`rivt file` is a Python plain text file ( *.py* ) that includes *rivt
 markup* and imports the :term:`rivtlib` API into the *rv* :term:`namespace`:
 
 .. code-block:: python
