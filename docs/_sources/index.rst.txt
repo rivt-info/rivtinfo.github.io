@@ -13,7 +13,7 @@ Home
 
 .. figure::  _static/img/rivdark55c.png
     :class: dark-light
-    :scale: 20 %
+    :scale: 20%
     :align: center
     :alt: rivt logo
     
