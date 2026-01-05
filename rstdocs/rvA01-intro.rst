@@ -62,11 +62,11 @@ Jupyter        no       no         no      yes         yes      yes
 
     <hr>
 
-A :term:`rivt doc` (document) is published from a :term:`rivt file`, written 
-in :term:`rivt markup` and processed by the :term:`rivtlib` Python package. 
-A collection of *rivt docs* may be collated as a :term:`rivt report`. 
-As an open source project *rivt files* may be collaberatively 
-shared and *rivt* may be integrated with other programs.
+A :term:`rivt doc` (document) is published from a :term:`rivt file` that is
+written in :term:`rivt markup` and processed by the :term:`rivtlib` Python
+package. A collection of *rivt docs* may be collated as a :term:`rivt report`.
+As an open source project *rivt files* may be collaberatively shared and *rivt*
+may be integrated with other programs.
 
 *rivt* is distributed under the 
 `MIT open source license. <https://opensource.org/license/mit>`_ 
