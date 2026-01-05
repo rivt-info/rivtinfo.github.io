@@ -112,10 +112,8 @@ rv.S(rS)           Skip              Skip section
 rv.X(rS)           Exit              Exit rivt (rivt string not processed)
 =============== =============== ===========================================
 
- Most of a docs' content is written using the *Insert* (rv.I) and *Value*
- (rv.v) API's.
-
-**Content functions**
+Most of a docs' content is written using the *Insert* (rv.I) and *Value* (rv.v)
+API's.
 
 .. raw:: html
 
@@ -123,23 +121,23 @@ rv.X(rS)           Exit              Exit rivt (rivt string not processed)
     border-color:#49b2c3;padding: 1em;">
 
     <b>Content Functions</b> <br>
-    The *Run API* executes shell commands.<br> 
-    The *Insert API* adds static table, image, equation and text content.<br> 
-    The *Value API* evaluates equations and functions.<br> 
-    The *Tool API* runs reStructuredText, HTML, LaTeX and Python scripts.<br>
-    
+    The <i>Run API</i> executes shell commands.<br> 
+    The <i>Insert API</i> adds static table, image, equation and text content.<br> 
+    The <i>Value API</i> evaluates equations and functions.<br> 
+    The <i>Tool API</i> runs reStructuredText, HTML, LaTeX and Python scripts.<br>
+    <br>
     <b>Processing and interactive Functions</b> <br>
-    The *Doc API* specifies *doc* type and style and generates the *doc* file.<br>  
-    The *Skip API* can be used for interactive debugging and comments.<br> 
-    The *Exit API* can be used for interactive debugging.<br> 
+    The <i>Doc API</i> specifies <i>doc</i> type and style and generates the <i>doc<i> file.<br>  
+    The <i>Skip API</i> can be used for interactive debugging and comments.<br> 
+    The <i>Exit API</i> can be used for interactive debugging.<br> 
     </p>
 
-Within an interactive IDE like *VSCode* and *Spyder*, indiviudal API functions
+Within an interactive IDE like *VSCode* and *Spyder*, indiviudal functions
 can be processed interactively as cells using the standard prefix notation:
 
 .. code-block:: python
 
-    # %% option label
+    # %% optional label
 
 Refer to :doc:`rvB03-vscode` for further details.
 
