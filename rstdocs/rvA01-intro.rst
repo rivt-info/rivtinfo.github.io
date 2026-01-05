@@ -68,7 +68,9 @@ A *rivt document* is published from a *rivt file* and is referred to as a
 expanded and improved using one of the 
 `Open Source licenses <https://opensource.org/licenses>`_. 
 *rivt* is distributed under the 
-`MIT open source license. <https://opensource.org/license/mit>`_ 
+`MIT open source license. <https://opensource.org/license/mit>`_  
+The parts of a *rivt file* that are shared in public files are selected 
+by the file author.
 
 As an open source project *rivt* may be integrated with other programs.
 The integrated :term:`rivt framework` is described :doc:`here. <rvB01-install>`.
@@ -87,6 +89,12 @@ The *rivt API* includes  :ref:`API functions`, :ref:`Markup` and
 - extensible 
     *rivtlib* is written in Python with direct access to thousands of 
     Python packages.
+
+.. image:: _static/img/rivtflow.png
+    :scale: 50%
+    :alt: rivt flow chart 
+    :align: center
+
 
 .. _API functions:
 

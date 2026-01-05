@@ -24,7 +24,7 @@ rv.V       c <=: expression | unit1, unit2, decimal | label                :ref:
 rv.V       a < c  | decimal | text, align, color                           :ref:`Compare values`
 rv.T, V    \| PYTHON | relative path | namespace                           :ref:`Python file`
 rv.T       \| MARKUP | relative path | type                                :ref:`Markup file`
-rv.D       \| PDFATTACH | relative path | place,title                      :ref:`Attach PDF`   
+rv.D       \| PDFATTACH | relative path | place, title                     :ref:`Attach PDF`   
 rv.D       \| PUBLISH | ini rel. path | type                               :ref:`Publish doc` 
 ========== ============================================================== =====================
 
