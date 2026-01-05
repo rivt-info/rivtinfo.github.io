@@ -14,17 +14,17 @@
 API Scope             Line Tags                            Description 
 ============= =========================================== ===============================
 rv.I                        text _[#] text                    :ref:`Endnote number`  
+rv.I                        text _[D] file_name text          :ref:`Doc link`
 rv.I                        text _[C]                         :ref:`Center text` 
 rv.I                        text _[R]                         :ref:`Right justify text`
-rv.I                  ascii math _[M]                         :ref:`ASCII math` 
-rv.I                  latex math _[L]                         :ref:`LaTeX math` 
+rv.I                  ASCII math _[M]                         :ref:`ASCII math` 
+rv.I                  LaTeX math _[L]                         :ref:`LaTeX math` 
 rv.I                        text _[G] glossary link term      :ref:`Term reference`
 rv.I                        text _[S] section label           :ref:`Section link`
-rv.I                        text _[D] file_name text          :ref:`Doc link`
 rv.I                        text _[U] label, external_url     :ref:`URL link`   
+rv.V, I                     text _[V] var_name text           :ref:`Variable value`
 rv.V, I          assign or label _[E]                         :ref:`Equation label`
 rv.V, I        valtable or title _[T]                         :ref:`Table title`
-rv.V, I                    text  _[V] var_name text           :ref:`Table title`
 ============= =========================================== ===============================
 
 ..  _Endnote number:
@@ -216,9 +216,29 @@ API Scope     Insert
 Doc Types     PDF, HTML
 =========== ==========================
 
+.. _Variable value:
+
+**[11t]** Variable value
+------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: text _[V] var_name text
+
+   This tag inserts the value of **_[V] my_var** in the sentence.
+
+Insert variable value.
+
+=========== ==========================
+API Scope     Insert, Values
+Doc Types     text, PDF, HTML
+=========== ==========================
+
 .. _Equation label:
 
-**[11t]** Equation label 
+**[12t]** Equation label 
 -----------------------------------------
 
 .. raw:: html
@@ -242,7 +262,7 @@ Doc Types     text, PDF, HTML
 
 .. _Table title:
 
-**[12t]** Table title
+**[13t]** Table title
 ------------------------------------------
 
 .. raw:: html
@@ -260,25 +280,5 @@ API Scope     Insert, Values
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-.. _Variable value:
-
-**[12t]** Variable value
-------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: text _[V] var_name text
-
-   This sentence inserts the value of **_[V] my_var** in the sentence.
-
-Insert variable value.
-
-=========== ==========================
-API Scope     Insert, Values
-Doc Types     text, PDF, HTML
-=========== ==========================
 
 
-rv.V, I                    text  _[V] var_name text           :ref:`Table title`

@@ -399,48 +399,48 @@
 <td><p><a class="reference internal" href="#endnote-number"><span class="std std-ref">[2t]  Endnote number</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I</p></td>
+<td><p>text _[D] file_name text</p></td>
+<td><p><a class="reference internal" href="#doc-link"><span class="std std-ref">[9t] Doc link</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>rv.I</p></td>
 <td><p>text _[C]</p></td>
 <td><p><a class="reference internal" href="#center-text"><span class="std std-ref">[3t] Center text</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.I</p></td>
+<tr class="row-odd"><td><p>rv.I</p></td>
 <td><p>text _[R]</p></td>
 <td><p><a class="reference internal" href="#right-justify-text"><span class="std std-ref">[4t] Right justify text</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>ascii math _[M]</p></td>
+<tr class="row-even"><td><p>rv.I</p></td>
+<td><p>ASCII math _[M]</p></td>
 <td><p><a class="reference internal" href="#ascii-math"><span class="std std-ref">[6t] ASCII math</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p>latex math _[L]</p></td>
+<tr class="row-odd"><td><p>rv.I</p></td>
+<td><p>LaTeX math _[L]</p></td>
 <td><p><a class="reference internal" href="#latex-math"><span class="std std-ref">[5t] LaTeX math</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
+<tr class="row-even"><td><p>rv.I</p></td>
 <td><p>text _[G] glossary link term</p></td>
 <td><p><a class="reference internal" href="#term-reference"><span class="std std-ref">[7t] Term reference</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.I</p></td>
+<tr class="row-odd"><td><p>rv.I</p></td>
 <td><p>text _[S] section label</p></td>
 <td><p><a class="reference internal" href="#section-link"><span class="std std-ref">[8t] Section link</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>text _[D] file_name text</p></td>
-<td><p><a class="reference internal" href="#doc-link"><span class="std std-ref">[9t] Doc link</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I</p></td>
 <td><p>text _[U] label, external_url</p></td>
 <td><p><a class="reference internal" href="#url-link"><span class="std std-ref">[10t] URL link</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V, I</p></td>
-<td><p>assign or label _[E]</p></td>
-<td><p><a class="reference internal" href="#equation-label"><span class="std std-ref">[11t] Equation label</span></a></p></td>
+<td><p>text _[V] var_name text</p></td>
+<td><p><a class="reference internal" href="#variable-value"><span class="std std-ref">[11t] Variable value</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.V, I</p></td>
-<td><p>valtable or title _[T]</p></td>
-<td><p><a class="reference internal" href="#table-title"><span class="std std-ref">[12t] Table title</span></a></p></td>
+<td><p>assign or label _[E]</p></td>
+<td><p><a class="reference internal" href="#equation-label"><span class="std std-ref">[12t] Equation label</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V, I</p></td>
-<td><p>text  _[V] var_name text</p></td>
-<td><p><a class="reference internal" href="#table-title"><span class="std std-ref">[12t] Table title</span></a></p></td>
+<td><p>valtable or title _[T]</p></td>
+<td><p><a class="reference internal" href="#table-title"><span class="std std-ref">[13t] Table title</span></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -623,8 +623,27 @@ continued and wrapped when formatted.</p>
 </table>
 </div>
 </section>
+<section id="t-variable-value">
+<span id="variable-value"></span><h2><strong>[11t]</strong> Variable value<a class="headerlink" href="#t-variable-value" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">text _[V] var_name text</p>
+<p>This tag inserts the value of <strong>_[V] my_var</strong> in the sentence.</p>
+</aside>
+<p>Insert variable value.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Insert, Values</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 <section id="t-equation-label">
-<span id="equation-label"></span><h2><strong>[11t]</strong> Equation label<a class="headerlink" href="#t-equation-label" title="Link to this heading">#</a></h2>
+<span id="equation-label"></span><h2><strong>[12t]</strong> Equation label<a class="headerlink" href="#t-equation-label" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">assign command or label _[E]</p>
 <p>math text or label <strong>_[E]</strong></p>
@@ -646,7 +665,7 @@ label is used for the label text.</p>
 </div>
 </section>
 <section id="t-table-title">
-<span id="table-title"></span><h2><strong>[12t]</strong> Table title<a class="headerlink" href="#t-table-title" title="Link to this heading">#</a></h2>
+<span id="table-title"></span><h2><strong>[13t]</strong> Table title<a class="headerlink" href="#t-table-title" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">Table Title  _[T]</p>
 <p>A New Table <strong>_[T]</strong></p>
@@ -663,26 +682,6 @@ label is used for the label text.</p>
 </tbody>
 </table>
 </div>
-</section>
-<section id="t-variable-value">
-<span id="variable-value"></span><h2><strong>[12t]</strong> Variable value<a class="headerlink" href="#t-variable-value" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">text _[V] var_name text</p>
-<p>This sentence inserts the value of <strong>_[V] my_var</strong> in the sentence.</p>
-</aside>
-<p>Insert variable value.</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<tbody>
-<tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Insert, Values</p></td>
-</tr>
-<tr class="row-even"><td><p>Doc Types</p></td>
-<td><p>text, PDF, HTML</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>rv.V, I                    text  _[V] var_name text           <a class="reference internal" href="#table-title"><span class="std std-ref">[12t] Table title</span></a></p>
 </section>
 </section>
 
@@ -743,9 +742,9 @@ label is used for the label text.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-section-link"><strong>[8t]</strong> Section link</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-doc-link"><strong>[9t]</strong> Doc link</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-url-link"><strong>[10t]</strong> URL link</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-equation-label"><strong>[11t]</strong> Equation label</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-table-title"><strong>[12t]</strong> Table title</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-variable-value"><strong>[12t]</strong> Variable value</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-variable-value"><strong>[11t]</strong> Variable value</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-equation-label"><strong>[12t]</strong> Equation label</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-table-title"><strong>[13t]</strong> Table title</a></li>
 </ul>
   </nav></div>
 
