@@ -395,7 +395,7 @@
 </thead>
 <tbody>
 <tr class="row-even"><td><p>rv.R</p></td>
-<td><p>_[[SHELL]] os,wait,open</p></td>
+<td><p>_[[SHELL]] process parameters</p></td>
 <td><p><a class="reference internal" href="#shell-script"><span class="std std-ref">[2t] Shell script</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I</p></td>
@@ -452,19 +452,29 @@
 </section>
 <section id="t-shell-script">
 <span id="shell-script"></span><h2><strong>[2t]</strong> Shell script<a class="headerlink" href="#t-shell-script" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-_[[SHELL]] *win;mac;linux,wait;nowait,open;close*
-shell command
-shell command
-...
-_[[END]]
+<hr><aside class="topic">
+<p class="topic-title">_[[SHELL]]</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Syntax:
+<span class="w">    </span>_<span class="o">[[</span>SHELL<span class="o">]]</span><span class="w"> </span>win<span class="p">;</span>mac<span class="p">;</span>linux,wait<span class="p">;</span>nowait,open<span class="p">;</span>close
+<span class="w">    </span>shell<span class="w"> </span><span class="nb">command</span>
+<span class="w">    </span>...
+<span class="w">    </span>_<span class="o">[[</span>END<span class="o">]]</span>
+
 
 Example:
-_[[SHELL]] win,nowait,open
-dir
-_[[END]]
+<span class="w">    </span>_<span class="o">[[</span>SHELL<span class="o">]]</span><span class="w"> </span>win,nowait,open
+<span class="w">    </span>dir
+<span class="w">    </span>path
+<span class="w">    </span>_<span class="o">[[</span>END<span class="o">]]</span>
 </pre></div>
 </div>
+</aside>
+<p>The shell command runs shell scripts and is used for running external programs.
+The shell parameters include specifying the operating system, process control
+and terminal window control. The os parameter specifies the terminal type. The
+wait parameter specifies whether rivt file processing waits for the script to
+complete before continuing. The open parameter specifies whether to keep the
+shell window open after execution.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -476,25 +486,27 @@ _[[END]]
 </tbody>
 </table>
 </div>
-<p>The shell command runs shell scripts and is used for external program
-processing. The os parameter specifies the terminal type. The wait parameter
-specifies whether rivt file processing waits for the script to complete before
-continuing. The open parameter specifies whether to keep the shell window open
-after execution.</p>
 </section>
 <section id="t-indent-text-block">
 <span id="indent-text-block"></span><h2><strong>[3t]</strong> Indent text block<a class="headerlink" href="#t-indent-text-block" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[INDENT]] spaces</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">INDENT</span><span class="p">]]</span> <span class="mi">4</span>
-<span class="n">text</span>
-<span class="n">text</span>
-<span class="o">...</span>
-<span class="n">_</span><span class="p">[[</span><span class="n">END</span><span class="p">]]</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Syntax:
+<span class="w">    </span>_<span class="o">[[</span>INDENT<span class="o">]]</span><span class="w"> </span>number<span class="w"> </span>of<span class="w"> </span>spaces
+<span class="w">    </span>text
+<span class="w">    </span>text
+<span class="w">    </span>...
+<span class="w">    </span>_<span class="o">[[</span>END<span class="o">]]</span>
+
+Example:
+<span class="w">    </span>_<span class="o">[[</span>INDENT<span class="o">]]</span><span class="w"> </span><span class="m">8</span>
+<span class="w">    </span>This<span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span>sentence<span class="w"> </span>that<span class="w"> </span>will<span class="w"> </span>be
+<span class="w">    </span>indented<span class="w"> </span><span class="m">8</span><span class="w"> </span>spaces.
+<span class="w">    </span>_<span class="o">[[</span>END<span class="o">]]</span>
 </pre></div>
 </div>
 </aside>
-<p>Indents block text four spaces.</p>
+<p>Indents text block the specified number of spaces.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -511,15 +523,21 @@ after execution.</p>
 <span id="indent-italic-block"></span><h2><strong>[4t]</strong> Indent italic block<a class="headerlink" href="#t-indent-italic-block" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[ITALIC]] spaces</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">ITALIC</span><span class="p">]]</span> <span class="mi">4</span>
-<span class="n">text</span>
-<span class="n">text</span>
-<span class="o">...</span>
-<span class="n">_</span><span class="p">[[</span><span class="n">END</span><span class="p">]]</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Syntax:
+<span class="w">    </span>_<span class="o">[[</span>ITALIC<span class="o">]]</span><span class="w"> </span>number<span class="w"> </span>of<span class="w"> </span>spaces
+<span class="w">    </span>text
+<span class="w">    </span>...
+<span class="w">    </span>_<span class="o">[[</span>END<span class="o">]]</span>
+
+Example:
+<span class="w">    </span>_<span class="o">[[</span>ITALIC<span class="o">]]</span><span class="w"> </span><span class="m">4</span>
+<span class="w">    </span>This<span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span>sentence<span class="w"> </span>that<span class="w"> </span>will<span class="w"> </span>be
+<span class="w">    </span>italicized<span class="w"> </span>and<span class="w"> </span>indented<span class="w"> </span><span class="m">4</span><span class="w"> </span>spaces.
+<span class="w">    </span>_<span class="o">[[</span>END<span class="o">]]</span>
 </pre></div>
 </div>
 </aside>
-<p>Indents the specified number spaces and italicizes block.</p>
+<p>Italicizes and indents the text block the specified number of spaces.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -536,13 +554,23 @@ after execution.</p>
 <span id="endnotes-block"></span><h2><strong>[5t]</strong> Endnotes block<a class="headerlink" href="#t-endnotes-block" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[ENDNOTE]] label</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">NOTE</span><span class="p">]]</span> <span class="n">aci</span> <span class="n">endnotes</span>
-<span class="n">this</span> <span class="ow">is</span> <span class="n">an</span> <span class="n">endnote</span> <span class="o">-</span> <span class="n">assigned</span> <span class="n">to</span> <span class="n">an</span> <span class="n">endnote</span> <span class="n">tag</span> <span class="p">[</span><span class="c1">#] in order of</span>
-<span class="n">of</span> <span class="n">processing</span><span class="o">.</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Syntax:
+<span class="w">    </span>_<span class="o">[[</span>ENDNOTE<span class="o">]]</span><span class="w"> </span>label
+<span class="w">    </span>Endnote<span class="w"> </span><span class="m">1</span>.
 
-<span class="n">this</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">second</span> <span class="n">endnote</span> <span class="n">separated</span> <span class="n">by</span> <span class="n">a</span> <span class="n">blank</span> <span class="n">line</span><span class="o">.</span>
-<span class="o">...</span>
-<span class="n">_</span><span class="p">[[</span><span class="n">END</span><span class="p">]]</span>
+<span class="w">    </span>Endnote<span class="w"> </span><span class="m">2</span>.
+<span class="w">    </span>...
+<span class="w">    </span>_<span class="o">[[</span>END<span class="o">]]</span>
+
+Example:
+<span class="w">    </span>_<span class="o">[[</span>ENDNOTE<span class="o">]]</span><span class="w"> </span>beam<span class="w"> </span>deflection
+<span class="w">    </span>This<span class="w"> </span>is<span class="w"> </span>an<span class="w"> </span>endnote<span class="w"> </span>assigned<span class="w"> </span>to<span class="w"> </span>an<span class="w"> </span>endnote<span class="w"> </span>tag<span class="w"> </span><span class="o">[</span><span class="c1">#] in order of</span>
+<span class="w">    </span>of<span class="w"> </span>processing.
+
+<span class="w">    </span>This<span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span>second<span class="w"> </span>endnote<span class="w"> </span>separated<span class="w"> </span>by<span class="w"> </span>a<span class="w"> </span>blank<span class="w"> </span>line.
+
+<span class="w">    </span>This<span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span>third<span class="w"> </span>endnote.
+<span class="w">    </span>_<span class="o">[[</span>END<span class="o">]]</span>
 </pre></div>
 </div>
 </aside>
@@ -564,25 +592,30 @@ separated by a blank line. They are numbered in order.</p>
 <span id="text-block"></span><h2><strong>[6t]</strong> Text block<a class="headerlink" href="#t-text-block" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[TEXT]] language</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">TEXT</span><span class="p">]]</span> <span class="n">python</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;some text&quot;</span><span class="p">)</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">5</span>
-<span class="o">...</span>
-<span class="n">_</span><span class="p">[[</span><span class="n">END</span><span class="p">]]</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Syntax:
+<span class="w">    </span>_<span class="o">[[</span>TEXT<span class="o">]]</span><span class="w"> </span>language
+<span class="w">    </span>text<span class="w"> </span>and<span class="w"> </span>code
+<span class="w">    </span>...
+<span class="w">    </span>_<span class="o">[[</span>END<span class="o">]]</span>
+
+Example:
+<span class="w">    </span>_<span class="o">[[</span>TEXT<span class="o">]]</span><span class="w"> </span>python
+<span class="w">    </span><span class="c1"># some code</span>
+<span class="w">    </span>print<span class="o">(</span><span class="m">1</span><span class="o">)</span>
+<span class="w">    </span><span class="nv">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="w"> </span>+<span class="w"> </span><span class="m">3</span>
+<span class="w">    </span>_<span class="o">[[</span>END<span class="o">]]</span>
 </pre></div>
 </div>
 </aside>
-<p>The TEXT command reads and formats text and code files. The language parameter
+<p>The TEXT command reads and formats text and code. The language parameter
 specifies formatting and syntax coloring.  Languages include:</p>
-<blockquote>
-<div><ul class="simple">
+<ul class="simple">
 <li><p><em>literal</em></p></li>
 <li><p><em>python</em></p></li>
 <li><p><em>bash</em></p></li>
 <li><p><em>sh</em></p></li>
 <li><p><em>cmd</em></p></li>
 </ul>
-</div></blockquote>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>

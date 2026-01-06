@@ -100,7 +100,7 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic:: LaTeX math _[L]
+.. topic:: LaTeX math expression _[L]
 
     \frac{1}{\sqrt{x}} **_[L]**
 
@@ -121,7 +121,7 @@ Doc Types     PDF, HTML
 
     <hr>
 
-.. topic:: math _[M]
+.. topic:: math expression _[M]
 
     f(x,y) = sin(x)**2 + y/5 **_[M]**
 
@@ -163,9 +163,9 @@ Doc Types     PDF, HTML
 
 .. topic:: text _[S] section label
     
-    Link to  _[S] My Section.
+    Link to  _[S] My Section
 
-Creates a link to a section label defined by the API header.
+Creates a link to a section label defined in the API header.
 
 =========== ==========================
 API Scope     Insert

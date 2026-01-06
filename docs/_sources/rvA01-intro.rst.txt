@@ -87,7 +87,7 @@ by the author. The *MIT license* is the default.
     <br>
 
 The *rivt API* includes  :ref:`API functions`, :ref:`Markup` and
-:ref:`Files and folders`. The software is designed to be:
+:ref:`Files and folders`. The API is designed to be:
 
 - lightweight
     :term:`rivt markup` is made up of about 3 dozen tags 

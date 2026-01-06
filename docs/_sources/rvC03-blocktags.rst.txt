@@ -11,10 +11,10 @@
 
 **Format blocks of text**
 
-========== ========================================= =======================================
+========== ========================================= ===============================
 API Scope         Block Tags                           Description 
-========== ========================================= =======================================
-rv.R        _[[SHELL]] os,wait,open                    :ref:`Shell script`
+========== ========================================= ===============================
+rv.R        _[[SHELL]] process parameters              :ref:`Shell script`
 rv.I        _[[INDENT]] spaces (4 default)             :ref:`Indent text block`
 rv.I        _[[ITALIC]] spaces (4 default)             :ref:`Indent italic block`
 rv.I        _[[ENDNOTES]] optional label               :ref:`Endnotes block`
@@ -27,7 +27,7 @@ rv.T        _[[METADATA]] label                        :ref:`Meta block`
 rv.D        _[[LAYOUT]] label                          :ref:`Layout block` 
 all         _[[END]]                                   :ref:`End block`
 all         _[[NEW PAGE]]                              :ref:`New Page`
-========== ========================================= =======================================
+========== ========================================= ===============================
 
 .. _Shell script:
 
@@ -38,30 +38,37 @@ all         _[[NEW PAGE]]                              :ref:`New Page`
 
     <hr>
 
-.. code-block:: text
+
+.. topic::  _[[SHELL]] 
+
+    .. code-block:: bash
+        
+        Syntax:
+            _[[SHELL]] win;mac;linux,wait;nowait,open;close
+            shell command
+            ...
+            _[[END]]
     
-    Syntax:
-    _[[SHELL]] *win;mac;linux,wait;nowait,open;close*
-    shell command
-    shell command
-    ...
-    _[[END]]
-  
-    Example:
-    _[[SHELL]] win,nowait,open
-    dir
-    _[[END]]
+        
+        Example:
+            _[[SHELL]] win,nowait,open
+            dir
+            path
+            _[[END]]
+
+The shell command runs shell scripts and is used for running external programs.
+The shell parameters include specifying the operating system, process control
+and terminal window control. The os parameter specifies the terminal type. The
+wait parameter specifies whether rivt file processing waits for the script to
+complete before continuing. The open parameter specifies whether to keep the
+shell window open after execution.
 
 =========== ==========================
 API Scope     Insert
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-The shell command runs shell scripts and is used for external program
-processing. The os parameter specifies the terminal type. The wait parameter
-specifies whether rivt file processing waits for the script to complete before
-continuing. The open parameter specifies whether to keep the shell window open
-after execution.
+
 
 .. _Indent text block:
 
@@ -74,15 +81,22 @@ after execution.
 
 .. topic::  _[[INDENT]] spaces
 
-    ::
+    .. code-block:: bash
 
-        _[[INDENT]] 4
-        text
-        text
-        ...
-        _[[END]]
+            Syntax:
+                _[[INDENT]] number of spaces
+                text
+                text
+                ...
+                _[[END]]
 
-Indents block text four spaces.
+            Example:
+                _[[INDENT]] 8
+                This is a sentence that will be 
+                indented 8 spaces.
+                _[[END]]
+
+Indents text block the specified number of spaces.
 
 =========== ==========================
 API Scope     Insert
@@ -100,15 +114,21 @@ Doc Types     text, PDF, HTML
 
 .. topic::  _[[ITALIC]] spaces
 
-    ::
-        
-        _[[ITALIC]] 4
-        text
-        text
-        ...
-        _[[END]]
+    .. code-block:: bash
 
-Indents the specified number spaces and italicizes block.
+            Syntax:
+                _[[ITALIC]] number of spaces
+                text
+                ...
+                _[[END]]
+
+            Example:
+                _[[ITALIC]] 4
+                This is a sentence that will be 
+                italicized and indented 4 spaces.
+                _[[END]]
+
+Italicizes and indents the text block the specified number of spaces.
 
 =========== ==========================
 API Scope     Insert
@@ -124,18 +144,27 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-
 .. topic:: _[[ENDNOTE]] label
     
-    ::
-   
-        _[[NOTE]] aci endnotes
-        this is an endnote - assigned to an endnote tag [#] in order of
-        of processing.
+    .. code-block:: bash
 
-        this is a second endnote separated by a blank line.
-        ...
-        _[[END]] 
+            Syntax:
+                _[[ENDNOTE]] label
+                Endnote 1.
+
+                Endnote 2. 
+                ...
+                _[[END]]    
+    
+            Example:
+                _[[ENDNOTE]] beam deflection
+                This is an endnote assigned to an endnote tag [#] in order of
+                of processing.
+
+                This is a second endnote separated by a blank line.
+
+                This is a third endnote.
+                _[[END]] 
 
 Formats and numbers an endnote in order of processing. Each endnote is
 separated by a blank line. They are numbered in order.
@@ -156,22 +185,29 @@ Doc Types     text, PDF, HTML
 
 .. topic::  _[[TEXT]] language
 
-    ::
-        
-        _[[TEXT]] python
-        print("some text")
-        b = 3 + 5
-        ...
-        _[[END]]
+    .. code-block:: bash
 
-The TEXT command reads and formats text and code files. The language parameter
+            Syntax:
+                _[[TEXT]] language
+                text and code
+                ...
+                _[[END]]  
+        
+            Example:
+                _[[TEXT]] python
+                # some code
+                print(1)
+                a = 1 + 3
+                _[[END]]
+
+The TEXT command reads and formats text and code. The language parameter
 specifies formatting and syntax coloring.  Languages include:
 
-    - *literal*
-    - *python*
-    - *bash*
-    - *sh*
-    - *cmd*
+- *literal*
+- *python*
+- *bash*
+- *sh*
+- *cmd*
 
 =========== ==========================
 API Scope     Insert
