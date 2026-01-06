@@ -47,9 +47,7 @@ after execution.
 
 .. topic::  _[[SHELL]] process parameters
 
-
-
-    .. code-block:: bash
+    .. code-block:: text
         
         Syntax:
             _[[SHELL]] win;mac;linux,wait;nowait,open;close
@@ -83,7 +81,7 @@ Indents text block the specified number of spaces.
 
 .. topic::  _[[INDENT]] spaces
 
-    .. code-block:: bash
+    .. code-block:: text
 
             Syntax:
                 _[[INDENT]] number of spaces
@@ -118,7 +116,7 @@ Doc Types     text, PDF, HTML
 
     Italicizes and indents the text block the specified number of spaces.
 
-    .. code-block:: bash
+    .. code-block:: text
 
             Syntax:
                 _[[ITALIC]] number of spaces
@@ -153,7 +151,7 @@ Doc Types     text, PDF, HTML
     Assigns numbers and formats endnotes in order of processing. Each endnote is
     separated by a blank line and is numbered in order of occurrence.
     
-    .. code-block:: bash
+    .. code-block:: text
 
             Syntax:
                 _[[ENDNOTE]] label
@@ -201,7 +199,7 @@ Doc Types     text, PDF, HTML
     - *sh*
     - *cmd*
 
-    .. code-block:: bash
+    .. code-block:: text 
 
             Syntax:
                 _[[TEXT]] language

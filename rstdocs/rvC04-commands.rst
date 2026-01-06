@@ -50,10 +50,10 @@ read from the rivt file folder.
 .. topic:: | SHELL | file path | os, wait
 
 
-    .. code-block:: bash
+    .. code-block:: text
 
         Syntax:
-            | SHELL | relative file path | win;mac;linux, wait;nowait
+            | SHELL | relative file path | win;mac;linux,wait;nowait
 
         Example:
             | SHELL | file1.cmd | win, nowait
@@ -93,7 +93,7 @@ Doc Types     text, PDF, HTML
     relative to the report root (rivt file folder). If the doc is a 
     :term:`single doc` the file is read from the rivt file folder.
 
-    .. code-block:: bash
+    .. code-block:: text
 
         Syntax:
             | TEXT | relative file path | see list above
@@ -153,8 +153,6 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic:: | IMAGE | relative path | scale, caption, figure
-
     The IMAGE command reads a PNG or JPEG file and centers it in the *doc*. The
     scale parameter is a decimal fraction of the page width. The caption may be
     ommited by using a single hyphen. The *num;nonum* parameter specifies whether
@@ -166,8 +164,9 @@ Doc Types     text, PDF, HTML
     relative to the report root (rivt file folder). If the doc is a 
     :term:`single doc` the file is read from the rivt file folder.
 
+.. topic:: | IMAGE | relative path | scale, caption, figure
 
-    .. code-block:: bash
+    .. code-block:: text
 
         Syntax:
             | IMAGE | relative path | caption, scale,  *num;nonum*
@@ -227,8 +226,6 @@ Doc Types     PDF, HTML
 
     <hr>
 
-.. topic::  | VALTABLE| relative path | title, rows, number
-
     The VALTABLE command imports and defines values from a *csv* or *xls* file. 
     The file format is:: 
 
@@ -246,6 +243,8 @@ Doc Types     PDF, HTML
     read from prior calculated values, they will be found in the */stored/vals*
     folder. If the doc is a :term:`single doc` the file is read from the rivt file
     folder.
+
+.. topic::  | VALTABLE| relative path | title, rows, number
 
     .. code-block:: bash
 

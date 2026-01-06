@@ -403,8 +403,8 @@
 <td><p><a class="reference internal" href="#right-justify-text"><span class="std std-ref">[4t] Right justify text</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I</p></td>
-<td><p>ASCII math _[M]</p></td>
-<td><p><a class="reference internal" href="#ascii-math"><span class="std std-ref">[6t] ASCII math</span></a></p></td>
+<td><p>text  math _[M]</p></td>
+<td><p><a class="reference internal" href="#text-math"><span class="std std-ref">[6t] Text math</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I</p></td>
 <td><p>LaTeX math _[L]</p></td>
@@ -446,18 +446,16 @@
 </table>
 </div>
 </section>
-<section id="t-endnote-number">
-<span id="endnote-number"></span><h2><strong>[2t]</strong>  Endnote number<a class="headerlink" href="#t-endnote-number" title="Link to this heading">#</a></h2>
-<hr><p>This tag assigns an endnote number to the text in order of processing. Endnotes
-are defined with the block tag _[[ENDNOTE]] and are listed at the end of the
-<em>doc</em>.</p>
-<aside class="topic">
-<p class="topic-title">_[#]</p>
+<section id="t-center-text">
+<span id="center-text"></span><h2><strong>[3t]</strong> Center text<a class="headerlink" href="#t-center-text" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">_[C]</p>
+<p>Centers line of text within the page margins.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    text _[#] more text
+    text **_[C]**
 
 Example:
-    This is a sentence with an endnote _[#] tag.
+    This text wil be centered. _[C]
 </pre></div>
 </div>
 </aside>
@@ -473,13 +471,20 @@ Example:
 </table>
 </div>
 </section>
-<section id="t-center-text">
-<span id="center-text"></span><h2><strong>[3t]</strong> Center text<a class="headerlink" href="#t-center-text" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">_[C]</p>
-<p>Some text. <strong>_[C]</strong></p>
+<section id="t-right-justify-text">
+<span id="right-justify-text"></span><h2><strong>[4t]</strong> Right justify text<a class="headerlink" href="#t-right-justify-text" title="Link to this heading">#</a></h2>
+<hr>
+
+Right justifies line of text within the page margins.<aside class="topic">
+<p class="topic-title">_[R]</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    text **_[R]**
+
+Example:
+    This text wil be centered. _[R]
+</pre></div>
+</div>
 </aside>
-<p>Centers line of text within the page margins.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -492,13 +497,20 @@ Example:
 </table>
 </div>
 </section>
-<section id="t-right-justify-text">
-<span id="right-justify-text"></span><h2><strong>[4t]</strong> Right justify text<a class="headerlink" href="#t-right-justify-text" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">text _[R]</p>
-<p>Some text. <strong>_[R]</strong></p>
+<section id="t-text-math">
+<span id="text-math"></span><h2><strong>[6t]</strong> Text math<a class="headerlink" href="#t-text-math" title="Link to this heading">#</a></h2>
+<hr>
+
+Formats a utf-8 math expression.<aside class="topic">
+<p class="topic-title">_[M]</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    text math expression  **_[M]**
+
+Example:
+    f(x,y) = sin(x)**2 + y/5 _[M]
+</pre></div>
+</div>
 </aside>
-<p>Right justifies line of text within the page margins.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -513,11 +525,18 @@ Example:
 </section>
 <section id="t-latex-math">
 <span id="latex-math"></span><h2><strong>[5t]</strong> LaTeX math<a class="headerlink" href="#t-latex-math" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">LaTeX math expression _[L]</p>
-<p>frac{1}{sqrt{x}} <strong>_[L]</strong></p>
+<hr>
+
+Formats a LaTeX math expression in the font specified in the style files.<aside class="topic">
+<p class="topic-title">_[L]</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    LaTeX math expression  **_[L]**
+
+Example:
+    \frac{1}{\sqrt{x}} _[L]
+</pre></div>
+</div>
 </aside>
-<p>Formats LaTeX math expression in the font specified in the style files.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -525,25 +544,6 @@ Example:
 </tr>
 <tr class="row-even"><td><p>Doc Types</p></td>
 <td><p>PDF, HTML</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="t-ascii-math">
-<span id="ascii-math"></span><h2><strong>[6t]</strong> ASCII math<a class="headerlink" href="#t-ascii-math" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">math expression _[M]</p>
-<p>f(x,y) = sin(x)**2 + y/5 <strong>_[M]</strong></p>
-</aside>
-<p>Formats math expression in ASCII text.</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<tbody>
-<tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Insert</p></td>
-</tr>
-<tr class="row-even"><td><p>Doc Types</p></td>
-<td><p>text, PDF, HTML</p></td>
 </tr>
 </tbody>
 </table>
@@ -601,6 +601,33 @@ Example:
 </tr>
 <tr class="row-even"><td><p>Doc Types</p></td>
 <td><p>PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="t-endnote-number">
+<span id="endnote-number"></span><h2><strong>[2t]</strong>  Endnote number<a class="headerlink" href="#t-endnote-number" title="Link to this heading">#</a></h2>
+<hr><p>This tag assigns an endnote number to the text in order of processing. Endnotes
+are defined with the block tag _[[ENDNOTE]] and are listed at the end of the
+<em>doc</em>.</p>
+<aside class="topic">
+<p class="topic-title">_[#]</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    text _[#] more text
+
+Example:
+    This is a sentence with an endnote _[#] tag.
+</pre></div>
+</div>
+</aside>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Insert</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
 </tr>
 </tbody>
 </table>
@@ -737,14 +764,14 @@ label is used for the label text.</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-line-tag-summary"><strong>[1t]</strong> Line Tag Summary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-endnote-number"><strong>[2t]</strong>  Endnote number</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-center-text"><strong>[3t]</strong> Center text</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-right-justify-text"><strong>[4t]</strong> Right justify text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-text-math"><strong>[6t]</strong> Text math</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-latex-math"><strong>[5t]</strong> LaTeX math</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-ascii-math"><strong>[6t]</strong> ASCII math</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-url-link"><strong>[10t]</strong> URL link</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-term-reference"><strong>[7t]</strong> Term reference</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-section-link"><strong>[8t]</strong> Section link</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-endnote-number"><strong>[2t]</strong>  Endnote number</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-doc-link"><strong>[9t]</strong> Doc link</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-variable-value"><strong>[11t]</strong> Variable value</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-equation-label"><strong>[12t]</strong> Equation label</a></li>

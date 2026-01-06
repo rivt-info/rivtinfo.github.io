@@ -15,7 +15,7 @@ API Scope             Line Tags                                     Description
 ========== ================================================= ===============================
 rv.I                          text _[C]                         :ref:`Center text` 
 rv.I                          text _[R]                         :ref:`Right justify text`
-rv.I                    ASCII math _[M]                         :ref:`ASCII math` 
+rv.I                    text  math _[M]                         :ref:`Text math` 
 rv.I                    LaTeX math _[L]                         :ref:`LaTeX math` 
 rv.I                   label, url  _[U]                         :ref:`URL link`   
 rv.I                          text _[G] glossary term           :ref:`Term reference`
@@ -26,36 +26,6 @@ rv.V, I              text var_name _[V] more text               :ref:`Variable v
 rv.V, I            assign or label _[E]                         :ref:`Equation label`
 rv.V, I          valtable or title _[T]                         :ref:`Table title`
 ========== ================================================= ===============================
-
-..  _Endnote number:
-
-**[2t]**  Endnote number
--------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-This tag assigns an endnote number to the text in order of processing. Endnotes
-are defined with the block tag _[[ENDNOTE]] and are listed at the end of the
-*doc*. 
-    
-.. topic:: _[#] 
-
-    .. code-block:: text
-
-        Syntax:
-            text _[#] more text
-
-        Example:
-            This is a sentence with an endnote _[#] tag.
-
-
-
-=========== ==========================
-API Scope     Insert
-Doc Types     text, PDF, HTML
-=========== ==========================
 
 ..  _Center text:
 
@@ -68,9 +38,15 @@ Doc Types     text, PDF, HTML
 
 .. topic:: _[C]
 
-    Some text. **_[C]**
+    Centers line of text within the page margins.
+    
+    .. code-block:: text
 
-Centers line of text within the page margins.
+        Syntax:
+            text **_[C]**
+
+        Example:
+            This text wil be centered. _[C]
 
 =========== ==========================
 API Scope     Insert
@@ -87,11 +63,43 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic:: text _[R]
+    Right justifies line of text within the page margins.
 
-    Some text. **_[R]**
+.. topic:: _[R]
 
-Right justifies line of text within the page margins.
+    .. code-block:: text
+
+        Syntax:
+            text **_[R]**
+
+        Example:
+            This text wil be centered. _[R]
+
+=========== ==========================
+API Scope     Insert
+Doc Types     text, PDF, HTML
+=========== ==========================
+
+.. _Text math:
+
+**[6t]** Text math
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+    Formats a utf-8 math expression.
+
+.. topic:: _[M]
+
+    .. code-block:: text
+
+        Syntax:
+            text math expression  **_[M]**
+
+        Example:
+            f(x,y) = sin(x)**2 + y/5 _[M]
 
 =========== ==========================
 API Scope     Insert
@@ -107,39 +115,22 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic:: LaTeX math expression _[L]
+    Formats a LaTeX math expression in the font specified in the style files.
 
-    \frac{1}{\sqrt{x}} **_[L]**
+.. topic:: _[L]
 
-Formats LaTeX math expression in the font specified in the style files.
+    .. code-block:: text
+
+        Syntax:
+            LaTeX math expression  **_[L]**
+
+        Example:
+            \frac{1}{\sqrt{x}} _[L]
 
 =========== ==========================
 API Scope     Insert
 Doc Types     PDF, HTML
 =========== ==========================
-
-.. _ASCII math:
-
-**[6t]** ASCII math
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: math expression _[M]
-
-    f(x,y) = sin(x)**2 + y/5 **_[M]**
-
-Formats math expression in ASCII text.
-
-
-=========== ==========================
-API Scope     Insert
-Doc Types     text, PDF, HTML
-=========== ==========================
-
-
 
 .. _URL link:
 
@@ -160,8 +151,6 @@ Doc Types     text, PDF, HTML
 API Scope     Insert
 Doc Types     PDF, HTML
 =========== ==========================
-
-
 
 .. _Term reference:
 
@@ -201,6 +190,36 @@ Creates a link to a section label defined in the API header.
 =========== ==========================
 API Scope     Insert
 Doc Types     PDF, HTML
+=========== ==========================
+
+..  _Endnote number:
+
+**[2t]**  Endnote number
+-------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+This tag assigns an endnote number to the text in order of processing. Endnotes
+are defined with the block tag _[[ENDNOTE]] and are listed at the end of the
+*doc*. 
+    
+.. topic:: _[#] 
+
+    .. code-block:: text
+
+        Syntax:
+            text _[#] more text
+
+        Example:
+            This is a sentence with an endnote _[#] tag.
+
+
+
+=========== ==========================
+API Scope     Insert
+Doc Types     text, PDF, HTML
 =========== ==========================
 
 .. _Doc link:

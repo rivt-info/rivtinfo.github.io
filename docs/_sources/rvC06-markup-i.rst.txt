@@ -19,7 +19,7 @@ including images, tables, links and formatted text.
              text _[C]                         :ref:`Center text` 
              text _[R]                         :ref:`Right justify text`
        LaTeX math _[L]                         :ref:`LaTeX math` 
-       ASCII math _[M]                         :ref:`ASCII math` 
+       ASCII math _[M]                         :ref:`Text math` 
              text _[S] section label           :ref:`Section link`
              text _[G] glossary link term      :ref:`Term reference`
              text _[U] external url            :ref:`URL link`   
