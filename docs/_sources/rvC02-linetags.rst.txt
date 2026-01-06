@@ -29,16 +29,16 @@ rv.V, I          valtable or title _[T]                         :ref:`Table titl
 
 ..  _Center text:
 
-**[3t]** Center text
+**[2t]** Center text
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: _[C]
+Centers line of text within the page margins.
 
-    Centers line of text within the page margins.
+.. topic:: _[C]
     
     .. code-block:: text
 
@@ -56,14 +56,14 @@ Doc Types     text, PDF, HTML
 
 .. _Right justify text:
 
-**[4t]** Right justify text
+**[3t]** Right justify text
 -----------------------------------------
 
 .. raw:: html
 
     <hr>
 
-    Right justifies line of text within the page margins.
+Right justifies line of text within the page margins.
 
 .. topic:: _[R]
 
@@ -82,14 +82,14 @@ Doc Types     text, PDF, HTML
 
 .. _Text math:
 
-**[6t]** Text math
+**[4t]** Text math
 -----------------------------------------
 
 .. raw:: html
 
     <hr>
 
-    Formats a utf-8 math expression.
+Formats a utf-8 math expression.
 
 .. topic:: _[M]
 
@@ -115,7 +115,7 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-    Formats a LaTeX math expression in the font specified in the style files.
+Formats a LaTeX math expression in the font specified in the style files.
 
 .. topic:: _[L]
 
@@ -134,7 +134,7 @@ Doc Types     PDF, HTML
 
 .. _URL link:
 
-**[10t]** URL link
+**[6t]** URL link
 -----------------------------------------
 
 .. raw:: html
