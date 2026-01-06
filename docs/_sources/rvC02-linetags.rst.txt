@@ -36,14 +36,21 @@ rv.V, I          valtable or title _[T]                         :ref:`Table titl
 
     <hr>
 
-
-.. topic:: text _[#] more text 
-    
-   Some text. **_[#]**  Some more text.
-
 This tag assigns an endnote number to the text in order of processing. Endnotes
 are defined with the block tag _[[ENDNOTE]] and are listed at the end of the
 *doc*. 
+    
+.. topic:: _[#] 
+
+    .. code-block:: bash
+
+        Syntax:
+            text _[#] more text
+
+        Example:
+            This is a sentence with an endnote _[#] tag.
+
+
 
 =========== ==========================
 API Scope     Insert
@@ -59,7 +66,7 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic:: text _[C]
+.. topic:: _[C]
 
     Some text. **_[C]**
 

@@ -452,14 +452,14 @@
 </section>
 <section id="t-shell-script">
 <span id="shell-script"></span><h2><strong>[2t]</strong> Shell script<a class="headerlink" href="#t-shell-script" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
+<hr><p>Runs shell scripts that run external programs. The shell parameters include
+specifying the operating system, process control and terminal window control.
+The os parameter specifies the terminal type. The wait parameter specifies
+whether rivt file processing waits for the script to complete before
+continuing. The open parameter specifies whether to keep the shell window open
+after execution.</p>
+<aside class="topic">
 <p class="topic-title">_[[SHELL]] process parameters</p>
-<p>Runs shell scripts that run external programs.
-The shell parameters include specifying the operating system, process control
-and terminal window control. The os parameter specifies the terminal type. The
-wait parameter specifies whether rivt file processing waits for the script to
-complete before continuing. The open parameter specifies whether to keep the
-shell window open after execution.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Syntax:
 <span class="w">    </span>_<span class="o">[[</span>SHELL<span class="o">]]</span><span class="w"> </span>win<span class="p">;</span>mac<span class="p">;</span>linux,wait<span class="p">;</span>nowait,open<span class="p">;</span>close
 <span class="w">    </span>shell<span class="w"> </span><span class="nb">command</span>
@@ -489,9 +489,9 @@ Example:
 </section>
 <section id="t-indent-text-block">
 <span id="indent-text-block"></span><h2><strong>[3t]</strong> Indent text block<a class="headerlink" href="#t-indent-text-block" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
+<hr><p>Indents text block the specified number of spaces.</p>
+<aside class="topic">
 <p class="topic-title">_[[INDENT]] spaces</p>
-<p>Indents text block the specified number of spaces.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Syntax:
 <span class="w">    </span>_<span class="o">[[</span>INDENT<span class="o">]]</span><span class="w"> </span>number<span class="w"> </span>of<span class="w"> </span>spaces
 <span class="w">    </span>text

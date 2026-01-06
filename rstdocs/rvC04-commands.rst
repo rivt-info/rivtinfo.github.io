@@ -37,17 +37,18 @@ rv.D       \| PUBLISH | ini rel. path | type                               :ref:
 
     <hr>
 
+The SHELL command runs shell scripts including .cmd, .bat and .sh files. 
+The *os* parameter specifies the operating system: *win*, *mac* or *linux*. 
+The *wait; nowait* specifies whether rivt file processing waits for the
+script to complete before continuing.
+
+If the *doc* is part of a report and no path is specified, the file is assumed to
+be in the default folder */src/run/* . Otherwise the path is specified relative
+to the report root (rivt file folder). If the doc is a single doc the file is
+read from the rivt file folder.
+
 .. topic:: | SHELL | file path | os, wait
 
-    The SHELL command runs shell scripts including .cmd, .bat and .sh files. 
-    The *os* parameter specifies the operating system: *win*, *mac* or *linux*. 
-    The *wait; nowait* specifies whether rivt file processing waits for the
-    script to complete before continuing.
-
-    If the *doc* is part of a report and no path is specified, the file is assumed to
-    be in the default folder */src/run/* . Otherwise the path is specified relative
-    to the report root (rivt file folder). If the doc is a single doc the file is
-    read from the rivt file folder.
 
     .. code-block:: bash
 

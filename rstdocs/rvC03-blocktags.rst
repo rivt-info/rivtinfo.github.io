@@ -38,15 +38,16 @@ all         _[[NEW PAGE]]                              :ref:`Start new page`
 
     <hr>
 
+Runs shell scripts that run external programs. The shell parameters include
+specifying the operating system, process control and terminal window control.
+The os parameter specifies the terminal type. The wait parameter specifies
+whether rivt file processing waits for the script to complete before
+continuing. The open parameter specifies whether to keep the shell window open
+after execution.
 
 .. topic::  _[[SHELL]] process parameters
 
-    Runs shell scripts that run external programs.
-    The shell parameters include specifying the operating system, process control
-    and terminal window control. The os parameter specifies the terminal type. The
-    wait parameter specifies whether rivt file processing waits for the script to
-    complete before continuing. The open parameter specifies whether to keep the
-    shell window open after execution.
+
 
     .. code-block:: bash
         
@@ -63,8 +64,6 @@ all         _[[NEW PAGE]]                              :ref:`Start new page`
             path
             _[[END]]
 
-
-
 =========== ==========================
 API Scope     Insert
 Doc Types     text, PDF, HTML
@@ -80,9 +79,9 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic::  _[[INDENT]] spaces
+Indents text block the specified number of spaces.
 
-    Indents text block the specified number of spaces.
+.. topic::  _[[INDENT]] spaces
 
     .. code-block:: bash
 

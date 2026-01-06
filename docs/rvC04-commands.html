@@ -455,9 +455,7 @@
 </section>
 <section id="t-shell-file">
 <span id="shell-file"></span><h2><strong>[2t]</strong> Shell file<a class="headerlink" href="#t-shell-file" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">| SHELL | file path | os, wait</p>
-<p>The SHELL command runs shell scripts including .cmd, .bat and .sh files.
+<hr><p>The SHELL command runs shell scripts including .cmd, .bat and .sh files.
 The <em>os</em> parameter specifies the operating system: <em>win</em>, <em>mac</em> or <em>linux</em>.
 The <em>wait; nowait</em> specifies whether rivt file processing waits for the
 script to complete before continuing.</p>
@@ -465,6 +463,8 @@ script to complete before continuing.</p>
 be in the default folder <em>/src/run/</em> . Otherwise the path is specified relative
 to the report root (rivt file folder). If the doc is a single doc the file is
 read from the rivt file folder.</p>
+<aside class="topic">
+<p class="topic-title">| SHELL | file path | os, wait</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Syntax:
 <span class="w">    </span><span class="p">|</span><span class="w"> </span>SHELL<span class="w"> </span><span class="p">|</span><span class="w"> </span>relative<span class="w"> </span>file<span class="w"> </span>path<span class="w"> </span><span class="p">|</span><span class="w"> </span>win<span class="p">;</span>mac<span class="p">;</span>linux,<span class="w"> </span>wait<span class="p">;</span>nowait
 
