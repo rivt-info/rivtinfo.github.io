@@ -42,7 +42,7 @@ are defined with the block tag _[[ENDNOTE]] and are listed at the end of the
     
 .. topic:: _[#] 
 
-    .. code-block:: bash
+    .. code-block:: text
 
         Syntax:
             text _[#] more text
