@@ -420,15 +420,15 @@
 </tr>
 <tr class="row-even"><td><p>rv.I</p></td>
 <td><p>_[[BOX]] label</p></td>
-<td><p><a class="reference internal" href="#topic-block"><span class="std std-ref">[7t] Topic block</span></a></p></td>
+<td><p><a class="reference internal" href="#box-block"><span class="std std-ref">[8t] Box block</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V, T</p></td>
 <td><p>_[[PYTHON]] namespace</p></td>
-<td><p><a class="reference internal" href="#python-block"><span class="std std-ref">[8t] Python block</span></a></p></td>
+<td><p><a class="reference internal" href="#python-block"><span class="std std-ref">[9t] Python block</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.T</p></td>
 <td><p>_[[MARKUP]] type</p></td>
-<td><p><a class="reference internal" href="#markup-block"><span class="std std-ref">[9t] Markup block</span></a></p></td>
+<td><p><a class="reference internal" href="#markup-block"><span class="std std-ref">[10t] Markup block</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.T</p></td>
 <td><p>_[[METADATA]] label</p></td>
@@ -436,15 +436,15 @@
 </tr>
 <tr class="row-even"><td><p>rv.D</p></td>
 <td><p>_[[LAYOUT]] label</p></td>
-<td><p><a class="reference internal" href="#layout-block"><span class="std std-ref">[10t] Layout block</span></a></p></td>
+<td><p><a class="reference internal" href="#layout-block"><span class="std std-ref">[12t] Layout block</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>all</p></td>
 <td><p>_[[END]]</p></td>
-<td><p><a class="reference internal" href="#end-block"><span class="std std-ref">[12t] End</span></a></p></td>
+<td><p><a class="reference internal" href="#end-block"><span class="std std-ref">[13t] End block</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>all</p></td>
 <td><p>_[[NEW PAGE]]</p></td>
-<td><p><a class="reference internal" href="#new-page"><span class="std std-ref">[12t] New Page</span></a></p></td>
+<td><p><a class="reference internal" href="#start-new-page"><span class="std std-ref">[14t] Start new page</span></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -453,7 +453,13 @@
 <section id="t-shell-script">
 <span id="shell-script"></span><h2><strong>[2t]</strong> Shell script<a class="headerlink" href="#t-shell-script" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">_[[SHELL]]</p>
+<p class="topic-title">_[[SHELL]] process parameters</p>
+<p>Runs shell scripts that run external programs.
+The shell parameters include specifying the operating system, process control
+and terminal window control. The os parameter specifies the terminal type. The
+wait parameter specifies whether rivt file processing waits for the script to
+complete before continuing. The open parameter specifies whether to keep the
+shell window open after execution.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Syntax:
 <span class="w">    </span>_<span class="o">[[</span>SHELL<span class="o">]]</span><span class="w"> </span>win<span class="p">;</span>mac<span class="p">;</span>linux,wait<span class="p">;</span>nowait,open<span class="p">;</span>close
 <span class="w">    </span>shell<span class="w"> </span><span class="nb">command</span>
@@ -469,12 +475,6 @@ Example:
 </pre></div>
 </div>
 </aside>
-<p>The shell command runs shell scripts and is used for running external programs.
-The shell parameters include specifying the operating system, process control
-and terminal window control. The os parameter specifies the terminal type. The
-wait parameter specifies whether rivt file processing waits for the script to
-complete before continuing. The open parameter specifies whether to keep the
-shell window open after execution.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -491,6 +491,7 @@ shell window open after execution.</p>
 <span id="indent-text-block"></span><h2><strong>[3t]</strong> Indent text block<a class="headerlink" href="#t-indent-text-block" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[INDENT]] spaces</p>
+<p>Indents text block the specified number of spaces.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Syntax:
 <span class="w">    </span>_<span class="o">[[</span>INDENT<span class="o">]]</span><span class="w"> </span>number<span class="w"> </span>of<span class="w"> </span>spaces
 <span class="w">    </span>text
@@ -506,7 +507,6 @@ Example:
 </pre></div>
 </div>
 </aside>
-<p>Indents text block the specified number of spaces.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -523,6 +523,7 @@ Example:
 <span id="indent-italic-block"></span><h2><strong>[4t]</strong> Indent italic block<a class="headerlink" href="#t-indent-italic-block" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[ITALIC]] spaces</p>
+<p>Italicizes and indents the text block the specified number of spaces.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Syntax:
 <span class="w">    </span>_<span class="o">[[</span>ITALIC<span class="o">]]</span><span class="w"> </span>number<span class="w"> </span>of<span class="w"> </span>spaces
 <span class="w">    </span>text
@@ -537,7 +538,6 @@ Example:
 </pre></div>
 </div>
 </aside>
-<p>Italicizes and indents the text block the specified number of spaces.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -554,6 +554,8 @@ Example:
 <span id="endnotes-block"></span><h2><strong>[5t]</strong> Endnotes block<a class="headerlink" href="#t-endnotes-block" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[ENDNOTE]] label</p>
+<p>Assigns numbers and formats endnotes in order of processing. Each endnote is
+separated by a blank line and is numbered in order of occurrence.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Syntax:
 <span class="w">    </span>_<span class="o">[[</span>ENDNOTE<span class="o">]]</span><span class="w"> </span>label
 <span class="w">    </span>Endnote<span class="w"> </span><span class="m">1</span>.
@@ -563,19 +565,18 @@ Example:
 <span class="w">    </span>_<span class="o">[[</span>END<span class="o">]]</span>
 
 Example:
-<span class="w">    </span>_<span class="o">[[</span>ENDNOTE<span class="o">]]</span><span class="w"> </span>beam<span class="w"> </span>deflection
-<span class="w">    </span>This<span class="w"> </span>is<span class="w"> </span>an<span class="w"> </span>endnote<span class="w"> </span>assigned<span class="w"> </span>to<span class="w"> </span>an<span class="w"> </span>endnote<span class="w"> </span>tag<span class="w"> </span><span class="o">[</span><span class="c1">#] in order of</span>
+<span class="w">    </span>_<span class="o">[[</span>ENDNOTE<span class="o">]]</span><span class="w"> </span>ACI<span class="w"> </span>citations
+<span class="w">    </span>This<span class="w"> </span>endnote<span class="w"> </span>is<span class="w"> </span>assigned<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>first<span class="w"> </span>endnote<span class="w"> </span>tag<span class="w"> </span><span class="o">(</span>_<span class="o">[</span><span class="c1">#]) in order of</span>
 <span class="w">    </span>of<span class="w"> </span>processing.
 
-<span class="w">    </span>This<span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span>second<span class="w"> </span>endnote<span class="w"> </span>separated<span class="w"> </span>by<span class="w"> </span>a<span class="w"> </span>blank<span class="w"> </span>line.
+<span class="w">    </span>This<span class="w"> </span>second<span class="w"> </span>endnote<span class="w"> </span>is<span class="w"> </span>separated<span class="w"> </span>by<span class="w"> </span>a<span class="w"> </span>blank<span class="w"> </span>line<span class="w"> </span>and<span class="w"> </span>assigned
+<span class="w">    </span>to<span class="w"> </span>the<span class="w"> </span>second
 
 <span class="w">    </span>This<span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span>third<span class="w"> </span>endnote.
 <span class="w">    </span>_<span class="o">[[</span>END<span class="o">]]</span>
 </pre></div>
 </div>
 </aside>
-<p>Formats and numbers an endnote in order of processing. Each endnote is
-separated by a blank line. They are numbered in order.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -592,6 +593,15 @@ separated by a blank line. They are numbered in order.</p>
 <span id="text-block"></span><h2><strong>[6t]</strong> Text block<a class="headerlink" href="#t-text-block" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[TEXT]] language</p>
+<p>Reads and formats text and code. The language parameter
+specifies formatting and syntax coloring.  Languages include:</p>
+<ul class="simple">
+<li><p><em>literal</em></p></li>
+<li><p><em>python</em></p></li>
+<li><p><em>bash</em></p></li>
+<li><p><em>sh</em></p></li>
+<li><p><em>cmd</em></p></li>
+</ul>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Syntax:
 <span class="w">    </span>_<span class="o">[[</span>TEXT<span class="o">]]</span><span class="w"> </span>language
 <span class="w">    </span>text<span class="w"> </span>and<span class="w"> </span>code
@@ -607,15 +617,6 @@ Example:
 </pre></div>
 </div>
 </aside>
-<p>The TEXT command reads and formats text and code. The language parameter
-specifies formatting and syntax coloring.  Languages include:</p>
-<ul class="simple">
-<li><p><em>literal</em></p></li>
-<li><p><em>python</em></p></li>
-<li><p><em>bash</em></p></li>
-<li><p><em>sh</em></p></li>
-<li><p><em>cmd</em></p></li>
-</ul>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -632,15 +633,52 @@ specifies formatting and syntax coloring.  Languages include:</p>
 <span id="topic-block"></span><h2><strong>[7t]</strong> Topic block<a class="headerlink" href="#t-topic-block" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[TOPIC]] topic title</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">[[</span><span class="n">TOPIC</span><span class="p">]]</span> <span class="n">topic</span> <span class="n">title</span>
-<span class="n">text</span>
-<span class="n">text</span>
-<span class="o">...</span>
-<span class="n">_</span><span class="p">[[</span><span class="n">END</span><span class="p">]]</span>
+<p>Formats a topic block.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Syntax:
+<span class="w">    </span>_<span class="o">[[</span>TOPIC<span class="o">]]</span><span class="w"> </span>topic<span class="w"> </span>title
+<span class="w">    </span>text
+<span class="w">    </span>...
+<span class="w">    </span>_<span class="o">[[</span>END<span class="o">]]</span>
+
+Example:
+<span class="w">    </span>_<span class="o">[[</span>TOPIC<span class="o">]]</span><span class="w"> </span>topic<span class="w"> </span>title
+<span class="w">    </span>Text<span class="w"> </span>related<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>topic.
+<span class="w">    </span>_<span class="o">[[</span>END<span class="o">]]</span>
 </pre></div>
 </div>
 </aside>
-<p>Formats a highlighted topic block.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Insert</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="t-box-block">
+<span id="box-block"></span><h2><strong>[8t]</strong> Box block<a class="headerlink" href="#t-box-block" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">_[[BOX]] label</p>
+<p>Draws a box around the block of text.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Syntax:
+<span class="w">    </span>_<span class="o">[[</span>BOX<span class="o">]]</span><span class="w"> </span>optional<span class="w"> </span>label
+<span class="w">    </span>text
+<span class="w">    </span>...
+<span class="w">    </span>_<span class="o">[[</span>END<span class="o">]]</span>
+
+Example:
+<span class="w">    </span>_<span class="o">[[</span>BOX<span class="o">]]</span>
+<span class="w">    </span>This<span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span>sentence.
+<span class="w">    </span>A<span class="w"> </span>second<span class="w"> </span>sentence.
+<span class="w">    </span>A<span class="w"> </span>box<span class="w"> </span>is<span class="w"> </span>drawn<span class="w"> </span>around<span class="w"> </span>the<span class="w"> </span>sentences.
+<span class="w">    </span>_<span class="o">[[</span>END<span class="o">]]</span>
+</pre></div>
+</div>
+</aside>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -654,16 +692,25 @@ specifies formatting and syntax coloring.  Languages include:</p>
 </div>
 </section>
 <section id="t-python-block">
-<span id="python-block"></span><h2><strong>[8t]</strong> Python block<a class="headerlink" href="#t-python-block" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[PYTHON]] *rvspace*; user namespace
-code
-code
-...
-_[[END]]
-</pre></div>
-</div>
+<span id="python-block"></span><h2><strong>[9t]</strong> Python block<a class="headerlink" href="#t-python-block" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">_[[PYTHON]] topic title</p>
 <p>Executes Python script in the <em>rivt namespace</em> or a user specified namespace.
 File paths in the script are relative to the <em>rivt file</em> folder.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Syntax</span><span class="p">:</span>
+    <span class="n">_</span><span class="p">[[</span><span class="n">TOPIC</span><span class="p">]]</span> <span class="n">topic</span> <span class="n">title</span>
+    <span class="n">text</span>
+    <span class="n">_</span><span class="p">[[</span><span class="n">END</span><span class="p">]]</span>
+
+<span class="n">Example</span><span class="p">:</span>
+    <span class="n">_</span><span class="p">[[</span><span class="n">PYTHON</span><span class="p">]]</span> <span class="o">*</span><span class="n">rvspace</span><span class="o">*</span><span class="p">;</span> <span class="n">user</span> <span class="n">namespace</span>
+    <span class="n">code</span>
+    <span class="n">code</span>
+    <span class="o">...</span>
+    <span class="n">_</span><span class="p">[[</span><span class="n">END</span><span class="p">]]</span>
+</pre></div>
+</div>
+</aside>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -677,7 +724,7 @@ File paths in the script are relative to the <em>rivt file</em> folder.</p>
 </div>
 </section>
 <section id="t-markup-block">
-<span id="markup-block"></span><h2><strong>[9t]</strong> Markup block<a class="headerlink" href="#t-markup-block" title="Link to this heading">#</a></h2>
+<span id="markup-block"></span><h2><strong>[10t]</strong> Markup block<a class="headerlink" href="#t-markup-block" title="Link to this heading">#</a></h2>
 <hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[MARKUP]] *html;latex;rst*
 markup
 markup
@@ -743,26 +790,8 @@ Python dictionaries with a name taken from the label e.g. <em>rvmeta_D</em> or
 </table>
 </div>
 </section>
-<section id="t-end">
-<span id="end-block"></span><h2><strong>[12t]</strong> End<a class="headerlink" href="#t-end" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[END]] optional label
-</pre></div>
-</div>
-<p>Terminates a block tag.</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<tbody>
-<tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>All</p></td>
-</tr>
-<tr class="row-even"><td><p>Doc Types</p></td>
-<td><p>text, PDF, HTML</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
 <section id="t-layout-block">
-<span id="layout-block"></span><h2><strong>[10t]</strong> Layout block<a class="headerlink" href="#t-layout-block" title="Link to this heading">#</a></h2>
+<span id="layout-block"></span><h2><strong>[12t]</strong> Layout block<a class="headerlink" href="#t-layout-block" title="Link to this heading">#</a></h2>
 <hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[LAYOUT]] optional label
 docnameS = &quot;&quot;
 pdfheaderL = []
@@ -783,12 +812,36 @@ _[[END]]
 </table>
 </div>
 </section>
-<section id="t-new-page">
-<span id="new-page"></span><h2><strong>[12t]</strong> New Page<a class="headerlink" href="#t-new-page" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[New Page]]
+<section id="t-end-block">
+<span id="end-block"></span><h2><strong>[13t]</strong> End block<a class="headerlink" href="#t-end-block" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">_[[END]] optional label</p>
+<p>Terminates a block tag.</p>
+</aside>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[END]]
 </pre></div>
 </div>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>All</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="t-start-new-page">
+<span id="start-new-page"></span><h2><strong>[14t]</strong> Start new page<a class="headerlink" href="#t-start-new-page" title="Link to this heading">#</a></h2>
+<hr><aside class="topic">
+<p class="topic-title">_[[NEWPAGE]] optional label</p>
 <p>Starts new page.</p>
+</aside>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[NEWPAGE]]
+</pre></div>
+</div>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -857,12 +910,13 @@ _[[END]]
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-endnotes-block"><strong>[5t]</strong> Endnotes block</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-text-block"><strong>[6t]</strong> Text block</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-topic-block"><strong>[7t]</strong> Topic block</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-python-block"><strong>[8t]</strong> Python block</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-markup-block"><strong>[9t]</strong> Markup block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-box-block"><strong>[8t]</strong> Box block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-python-block"><strong>[9t]</strong> Python block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-markup-block"><strong>[10t]</strong> Markup block</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-metadata"><strong>[11t]</strong> Metadata</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-end"><strong>[12t]</strong> End</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-layout-block"><strong>[10t]</strong> Layout block</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-new-page"><strong>[12t]</strong> New Page</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-layout-block"><strong>[12t]</strong> Layout block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-end-block"><strong>[13t]</strong> End block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-start-new-page"><strong>[14t]</strong> Start new page</a></li>
 </ul>
   </nav></div>
 

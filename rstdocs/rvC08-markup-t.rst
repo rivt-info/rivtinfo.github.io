@@ -25,4 +25,3 @@ _[[END]]                                    :ref:`End Block`
  \| PYTHON | relative path | namespace                           :ref:`Python file`
  \| MARKUP | relative path | type                                :ref:`Markup file`
 ============================================================== =====================
-

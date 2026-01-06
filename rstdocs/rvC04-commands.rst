@@ -15,10 +15,10 @@ API Scope           | Command | path | parameters                          Descr
 ========== ============================================================== =====================
 rv.R       \| SHELL | relative path | os, wait                             :ref:`Shell file`
 rv.I       \| TEXT | relative path |  language                             :ref:`Text file`
-rv.I       \| TABLE | rel path | title, width, rows, align, head           :ref:`Table file`     
-rv.V, I    \| IMAGE | relative path |  scale, caption, figure              :ref:`Image file`
-rv.V, I    \| IMAGE2 | rel path1, rel path2 | s1, s2, c1, c2, fig1, fig2   :ref:`Adjacent images`
-rv.V       \| VALTABLE | rel path | title, width, rows                     :ref:`Values file`     
+rv.V, I    \| TABLE | rel path | title, width, rows, align, head           :ref:`Table file`     
+rv.V, I    \| IMAGE | relative path | caption, scale, number               :ref:`Image file`
+rv.V, I    \| IMAGE2 | rel path1, rel path2 | caption, scale number        :ref:`Adjacent images`
+rv.V       \| VALTABLE | rel path | title, rows, number                    :ref:`Values file`     
 rv.V       a =: 1*IN  | unit1, unit2, decimal | label                      :ref:`Define variable`
 rv.V       c <=: expression | unit1, unit2, decimal | label                :ref:`Assign value`
 rv.V       a < c  | decimal | text, align, color                           :ref:`Compare values`
@@ -37,23 +37,29 @@ rv.D       \| PUBLISH | ini rel. path | type                               :ref:
 
     <hr>
 
-.. topic:: | SHELL | relative path | os, *nowait; wait*
+.. topic:: | SHELL | file path | os, wait
 
-    | SHELL | file.cmd | win, nowait
+    The SHELL command runs shell scripts including .cmd, .bat and .sh files. 
+    The *os* parameter specifies the operating system: *win*, *mac* or *linux*. 
+    The *wait; nowait* specifies whether rivt file processing waits for the
+    script to complete before continuing.
 
-The SHELL command runs shell scripts including .cmd, .bat and .sh files. 
-The *os* parameter specifies the operating system: *win*, *mac* or *linux*. 
-The *wait; nowait* specifies whether rivt file processing waits for the
-script to complete before continuing.
+    If the *doc* is part of a report and no path is specified, the file is assumed to
+    be in the default folder */src/run/* . Otherwise the path is specified relative
+    to the report root (rivt file folder). If the doc is a single doc the file is
+    read from the rivt file folder.
 
-If the *doc* is part of a report and no path is specified, the file is assumed to
-be in the default folder */src/run/* . Otherwise the path is specified relative
-to the report root (rivt file folder). If the doc is a single doc the file is
-read from the rivt file folder.
+    .. code-block:: bash
+
+        Syntax:
+            | SHELL | relative file path | win;mac;linux, wait;nowait
+
+        Example:
+            | SHELL | file1.cmd | win, nowait
 
 =========== ==========================
 API Scope     Run
-File Types   .cmd, .bat, .sh 
+File Types   .cmd, .bat, .sh, .bsh 
 Doc Types     text, PDF, HTML
 =========== ==========================
 
@@ -69,30 +75,36 @@ Doc Types     text, PDF, HTML
 
 .. topic:: | TEXT | relative path | language
 
-    | TEXT | file1.py  | python
+    The TEXT command reads and formats text and code files. The language parameter
+    specifies formatting and syntax coloring.  Language types include:
 
-The TEXT command reads and formats text and code files. The language parameter
-specifies formatting and syntax coloring.  Languages include:
+        - *literal*
+        - *python*
+        - *bash*
+        - *sh*
+        - *cmd*
+        - *reStructuredText*
 
-    - *literal*
-    - *python*
-    - *bash*
-    - *sh*
-    - *cmd*
-    - *reStructuredText*
+    The *literal* type inserts text into the *doc* without formatting.
 
-The *literal* type inserts text into the *doc* without formatting.
+    If a *doc* is part of a report and no path is specified, the file is assumed to
+    be in the default folder */src/data/* . Otherwise the path needs to be specified
+    relative to the report root (rivt file folder). If the doc is a 
+    :term:`single doc` the file is read from the rivt file folder.
 
-If a *doc* is part of a report and no path is specified, the file is assumed to
-be in the default folder */src/data/* . Otherwise the path needs to be specified
-relative to the report root (rivt file folder). If the doc is a 
-:term:`single doc` the file is read from the rivt file folder.
+    .. code-block:: bash
 
-=========== ==========================
-API Scope     Insert, Values
+        Syntax:
+            | TEXT | relative file path | see list above
+
+        Example:
+            | TEXT | file1.txt | literal
+
+=========== =====================================
+API Scope     Insert
 File Types    txt, .py, .cmd, .bat, .sh, .rst 
 Doc Types     text, PDF, HTML
-=========== ==========================
+=========== =====================================
 
 .. _Table file:
 
@@ -103,21 +115,27 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic:: | TABLE | rel path | title, width, rows, *l;c;r*, *head;nohead*, *num,nonum*  
+.. topic:: | TABLE | rel path | title, width, rows, align, head   
 
-    | TABLE | file1.csv | Forces, 30, c, nohead, num 
+    The TABLE command reads csv, xls, and rst files and outputs formatted tables.
+    The title may be ommited by inserting a hyphen "-". The width parameter
+    specifies the maximum character width of a column. The align parameter
+    specifies the cell justification - left, center, right. The number parameter
+    specifies whether the table is numbered. For csv files, the head parameter
+    specifies whether the first row is a column header.
 
-The TABLE command reads csv, xls, and rst files and outputs formatted tables.
-The title may be ommited by inserting a hyphen "-". The width parameter
-specifies the maximum character width of a column. The align parameter
-specifies the cell justification (left, center, right). The head parameter
-specifies whether the first row is a column header.The number parameter
-specifies whether the table is numbered.
+    If a *doc* is part of a report and no path is specified, the file is assumed to
+    be in the default folder */src/data/* . Otherwise the path needs to be specified
+    relative to the report root (rivt file folder). If the doc is a 
+    :term:`single doc` the file is read from the rivt file folder.
 
-If a *doc* is part of a report and no path is specified, the file is assumed to
-be in the default folder */src/data/* . Otherwise the path needs to be specified
-relative to the report root (rivt file folder). If the doc is a 
-:term:`single doc` the file is read from the rivt file folder.
+    .. code-block:: bash
+
+        Syntax:
+            | TABLE | rel path | title, max width, rows, *l;c;r*, *num,nonum*, *head;nohead* 
+
+        Example:
+            | TABLE | file1.csv | Forces, 30, 0:0, c, nohead, num 
 
 =========== ==========================
 API Scope     Insert, Values
@@ -134,20 +152,27 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic:: | IMAGE | relative path | scale, caption, *fig;nofig*
+.. topic:: | IMAGE | relative path | scale, caption, figure
 
-    | IMAGE | file1.png | .5, Map, fig 
+    The IMAGE command reads a PNG or JPEG file and centers it in the *doc*. The
+    scale parameter is a decimal fraction of the page width. The caption may be
+    ommited by using a single hyphen. The *num;nonum* parameter specifies whether
+    to assign a figure number. The image path is inserted in the text *doc* instead
+    of the image.
 
-The IMAGE command reads a PNG or JPEG file and centers it in the *doc*. The
-scale parameter is a decimal fraction of the page width. The caption may be
-ommited by using a single hyphen. The *fig;nofig* parameter specifies whether
-to assign a figure number. The image path is inserted in the text *doc* instead
-of the image.
+    If a *doc* is part of a report and no path is specified, the file is assumed to
+    be in the default folder */src/img/* . Otherwise the path needs to be specified
+    relative to the report root (rivt file folder). If the doc is a 
+    :term:`single doc` the file is read from the rivt file folder.
 
-If a *doc* is part of a report and no path is specified, the file is assumed to
-be in the default folder */src/img/* . Otherwise the path needs to be specified
-relative to the report root (rivt file folder). If the doc is a 
-:term:`single doc` the file is read from the rivt file folder.
+
+    .. code-block:: bash
+
+        Syntax:
+            | IMAGE | relative path | caption, scale,  *num;nonum*
+
+        Example:
+            | IMAGE | file1.png | Map, 0.5, num
 
 =========== ==========================
 API Scope     Insert, Values
@@ -164,21 +189,27 @@ Doc Types     PDF, HTML
 
     <hr>
 
-.. topic:: | IMAGE2 | rel path1, rel path2 | sc1, sc2, cap1, cap2, fig, fig
+.. topic:: | IMAGE2 | rel path | caption, scale, number
 
-    | IMAGE2 | file1.png, file2.png | .5,.5, Map, Photo, fig, fig 
+    The IMAGE2 command reads two PNG or JPEG file and places them side by side in
+    the *doc*. The scale parameters are a decimal fraction of the page width. The
+    captions may be ommited by using a single hyphen for either or both images. The
+    *fig;nofig* parameters specify whether to assign a figure number to either or
+    both images. The image path is inserted in the text *doc* instead
+    of the image.
 
-The IMAGE2 command reads two PNG or JPEG file and places them side by side in
-the *doc*. The scale parameters are a decimal fraction of the page width. The
-captions may be ommited by using a single hyphen for either or both images. The
-*fig;nofig* parameters specify whether to assign a figure number to either or
-both images. The image path is inserted in the text *doc* instead
-of the image.
+    If a *doc* is part of a report and no path is specified, the file is assumed to
+    be in the default folder */src/img/* . Otherwise the path needs to be specified
+    relative to the report root (rivt file folder). If the doc is a 
+    :term:`single doc` the file is read from the rivt file folder.
 
-If a *doc* is part of a report and no path is specified, the file is assumed to
-be in the default folder */src/img/* . Otherwise the path needs to be specified
-relative to the report root (rivt file folder). If the doc is a 
-:term:`single doc` the file is read from the rivt file folder.
+    .. code-block:: bash
+
+        Syntax:
+            | IMAGE2 | relative path | cap1, cap2, scale1, scale2, *num;nonum*, *num;nonum* 
+
+        Example:
+            | IMAGE2 | file1.png, file2.png | Map, Photo, .5,.5, num, nonum
 
 =========== ==========================
 API Scope     Insert, Values
@@ -195,33 +226,36 @@ Doc Types     PDF, HTML
 
     <hr>
 
-.. topic::  | VALTABLE| relative path | title, width, rows, *num,nonum*
+.. topic::  | VALTABLE| relative path | title, rows, number
 
-    If read from the default folder:
+    The VALTABLE command imports and defines values from a *csv* or *xls* file. 
+    The file format is:: 
 
-    | VALTABLE | newvals.csv | Beam Properties, 30, 1-10, num
+        var = value, unit1, unit2, decimal, label
 
-    If read from the stored folder:
+    The path variable is either from *src* or *stored* depending on if the values
+    were generated by rivtlib or provided by the author. The title parameter is the
+    table title. A hyphen omits the title. The *rows* parameter specifies the rows
+    to import. The *num; nonum* parameter specifies whether to assign a table
+    number to the values table.
 
-    | VALTABLE | /stored/vals/vA01-2.csv | Beam Properties, 30, 1-10, num
+    If a *doc* is part of a report and no path is specified, the file is assumed to
+    be in the default folder */src/vals/* . Otherwise the path needs to be
+    specified relative to the report root (rivt file folder). If the values are
+    read from prior calculated values, they will be found in the */stored/vals*
+    folder. If the doc is a :term:`single doc` the file is read from the rivt file
+    folder.
 
-The VALTABLE command imports and defines values from a *csv* or *xls* file. 
-The file format is:: 
+    .. code-block:: bash
 
-    var = value, unit1, unit2, decimal, label
+        Syntax:
+            | VALTABLE | relative path | title, rows, *num;nonum*
 
-The path variable is either from *src* or *stored* depending on if the values
-were generated by rivtlib or provided by the author. The *rows* parameter
-specifies the rows to import. The title parameter is the table title. A hyphen
-omits the title. The *num; nonum* parameter specifies whether to assign a table
-number to the values table.
-
-If a *doc* is part of a report and no path is specified, the file is assumed to
-be in the default folder */src/vals/* . Otherwise the path needs to be
-specified relative to the report root (rivt file folder). If the values are
-read from prior calculated values, they will be found in the */stored/vals*
-folder. If the doc is a :term:`single doc` the file is read from the rivt file
-folder.
+        Example:
+            If read from the default folder:
+            | VALTABLE | newvals.csv | Beam Properties, 1:10, num
+            If read from the stored folder:
+            | VALTABLE | /stored/vals/vA01-2.csv | Beam Properties, 1-10, num
 
 =========== ==========================
 API Scope     Values

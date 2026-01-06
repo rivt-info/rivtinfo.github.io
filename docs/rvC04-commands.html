@@ -405,20 +405,20 @@
 <td><p>| TEXT | relative path |  language</p></td>
 <td><p><a class="reference internal" href="#text-file"><span class="std std-ref">[5t] Text file</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.I</p></td>
+<tr class="row-even"><td><p>rv.V, I</p></td>
 <td><p>| TABLE | rel path | title, width, rows, align, head</p></td>
 <td><p><a class="reference internal" href="#table-file"><span class="std std-ref">[6t] Table file</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V, I</p></td>
-<td><p>| IMAGE | relative path |  scale, caption, figure</p></td>
+<td><p>| IMAGE | relative path | caption, scale, number</p></td>
 <td><p><a class="reference internal" href="#image-file"><span class="std std-ref">[3t] Image file</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.V, I</p></td>
-<td><p>| IMAGE2 | rel path1, rel path2 | s1, s2, c1, c2, fig1, fig2</p></td>
+<td><p>| IMAGE2 | rel path1, rel path2 | caption, scale number</p></td>
 <td><p><a class="reference internal" href="#adjacent-images"><span class="std std-ref">[4t] Adjacent images</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V</p></td>
-<td><p>| VALTABLE | rel path | title, width, rows</p></td>
+<td><p>| VALTABLE | rel path | title, rows, number</p></td>
 <td><p><a class="reference internal" href="#values-file"><span class="std std-ref">[7t]  Values file</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.V</p></td>
@@ -456,11 +456,7 @@
 <section id="t-shell-file">
 <span id="shell-file"></span><h2><strong>[2t]</strong> Shell file<a class="headerlink" href="#t-shell-file" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| SHELL | relative path | os, <em>nowait; wait</em></p>
-<div class="line-block">
-<div class="line">SHELL | file.cmd | win, nowait</div>
-</div>
-</aside>
+<p class="topic-title">| SHELL | file path | os, wait</p>
 <p>The SHELL command runs shell scripts including .cmd, .bat and .sh files.
 The <em>os</em> parameter specifies the operating system: <em>win</em>, <em>mac</em> or <em>linux</em>.
 The <em>wait; nowait</em> specifies whether rivt file processing waits for the
@@ -469,13 +465,21 @@ script to complete before continuing.</p>
 be in the default folder <em>/src/run/</em> . Otherwise the path is specified relative
 to the report root (rivt file folder). If the doc is a single doc the file is
 read from the rivt file folder.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Syntax:
+<span class="w">    </span><span class="p">|</span><span class="w"> </span>SHELL<span class="w"> </span><span class="p">|</span><span class="w"> </span>relative<span class="w"> </span>file<span class="w"> </span>path<span class="w"> </span><span class="p">|</span><span class="w"> </span>win<span class="p">;</span>mac<span class="p">;</span>linux,<span class="w"> </span>wait<span class="p">;</span>nowait
+
+Example:
+<span class="w">    </span><span class="p">|</span><span class="w"> </span>SHELL<span class="w"> </span><span class="p">|</span><span class="w"> </span>file1.cmd<span class="w"> </span><span class="p">|</span><span class="w"> </span>win,<span class="w"> </span>nowait
+</pre></div>
+</div>
+</aside>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
 <td><p>Run</p></td>
 </tr>
 <tr class="row-even"><td><p>File Types</p></td>
-<td><p>.cmd, .bat, .sh</p></td>
+<td><p>.cmd, .bat, .sh, .bsh</p></td>
 </tr>
 <tr class="row-odd"><td><p>Doc Types</p></td>
 <td><p>text, PDF, HTML</p></td>
@@ -488,12 +492,8 @@ read from the rivt file folder.</p>
 <span id="text-file"></span><h2><strong>[5t]</strong> Text file<a class="headerlink" href="#t-text-file" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">| TEXT | relative path | language</p>
-<div class="line-block">
-<div class="line">TEXT | file1.py  | python</div>
-</div>
-</aside>
 <p>The TEXT command reads and formats text and code files. The language parameter
-specifies formatting and syntax coloring.  Languages include:</p>
+specifies formatting and syntax coloring.  Language types include:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p><em>literal</em></p></li>
@@ -509,10 +509,18 @@ specifies formatting and syntax coloring.  Languages include:</p>
 be in the default folder <em>/src/data/</em> . Otherwise the path needs to be specified
 relative to the report root (rivt file folder). If the doc is a
 <a class="reference internal" href="rvA02-terms.html#term-single-doc"><span class="xref std std-term">single doc</span></a> the file is read from the rivt file folder.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Syntax:
+<span class="w">    </span><span class="p">|</span><span class="w"> </span>TEXT<span class="w"> </span><span class="p">|</span><span class="w"> </span>relative<span class="w"> </span>file<span class="w"> </span>path<span class="w"> </span><span class="p">|</span><span class="w"> </span>see<span class="w"> </span>list<span class="w"> </span>above
+
+Example:
+<span class="w">    </span><span class="p">|</span><span class="w"> </span>TEXT<span class="w"> </span><span class="p">|</span><span class="w"> </span>file1.txt<span class="w"> </span><span class="p">|</span><span class="w"> </span>literal
+</pre></div>
+</div>
+</aside>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Insert, Values</p></td>
+<td><p>Insert</p></td>
 </tr>
 <tr class="row-even"><td><p>File Types</p></td>
 <td><p>txt, .py, .cmd, .bat, .sh, .rst</p></td>
@@ -527,21 +535,25 @@ relative to the report root (rivt file folder). If the doc is a
 <section id="t-table-file">
 <span id="table-file"></span><h2><strong>[6t]</strong> Table file<a class="headerlink" href="#t-table-file" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| TABLE | rel path | title, width, rows, <em>l;c;r</em>, <em>head;nohead</em>, <em>num,nonum</em></p>
-<div class="line-block">
-<div class="line">TABLE | file1.csv | Forces, 30, c, nohead, num</div>
-</div>
-</aside>
+<p class="topic-title">| TABLE | rel path | title, width, rows, align, head</p>
 <p>The TABLE command reads csv, xls, and rst files and outputs formatted tables.
 The title may be ommited by inserting a hyphen “-”. The width parameter
 specifies the maximum character width of a column. The align parameter
-specifies the cell justification (left, center, right). The head parameter
-specifies whether the first row is a column header.The number parameter
-specifies whether the table is numbered.</p>
+specifies the cell justification - left, center, right. The number parameter
+specifies whether the table is numbered. For csv files, the head parameter
+specifies whether the first row is a column header.</p>
 <p>If a <em>doc</em> is part of a report and no path is specified, the file is assumed to
 be in the default folder <em>/src/data/</em> . Otherwise the path needs to be specified
 relative to the report root (rivt file folder). If the doc is a
 <a class="reference internal" href="rvA02-terms.html#term-single-doc"><span class="xref std std-term">single doc</span></a> the file is read from the rivt file folder.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Syntax:
+<span class="w">    </span><span class="p">|</span><span class="w"> </span>TABLE<span class="w"> </span><span class="p">|</span><span class="w"> </span>rel<span class="w"> </span>path<span class="w"> </span><span class="p">|</span><span class="w"> </span>title,<span class="w"> </span>max<span class="w"> </span>width,<span class="w"> </span>rows,<span class="w"> </span>*l<span class="p">;</span>c<span class="p">;</span>r*,<span class="w"> </span>*num,nonum*,<span class="w"> </span>*head<span class="p">;</span>nohead*
+
+Example:
+<span class="w">    </span><span class="p">|</span><span class="w"> </span>TABLE<span class="w"> </span><span class="p">|</span><span class="w"> </span>file1.csv<span class="w"> </span><span class="p">|</span><span class="w"> </span>Forces,<span class="w"> </span><span class="m">30</span>,<span class="w"> </span><span class="m">0</span>:0,<span class="w"> </span>c,<span class="w"> </span>nohead,<span class="w"> </span>num
+</pre></div>
+</div>
+</aside>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -560,20 +572,24 @@ relative to the report root (rivt file folder). If the doc is a
 <section id="t-image-file">
 <span id="image-file"></span><h2><strong>[3t]</strong> Image file<a class="headerlink" href="#t-image-file" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| IMAGE | relative path | scale, caption, <em>fig;nofig</em></p>
-<div class="line-block">
-<div class="line">IMAGE | file1.png | .5, Map, fig</div>
-</div>
-</aside>
+<p class="topic-title">| IMAGE | relative path | scale, caption, figure</p>
 <p>The IMAGE command reads a PNG or JPEG file and centers it in the <em>doc</em>. The
 scale parameter is a decimal fraction of the page width. The caption may be
-ommited by using a single hyphen. The <em>fig;nofig</em> parameter specifies whether
+ommited by using a single hyphen. The <em>num;nonum</em> parameter specifies whether
 to assign a figure number. The image path is inserted in the text <em>doc</em> instead
 of the image.</p>
 <p>If a <em>doc</em> is part of a report and no path is specified, the file is assumed to
 be in the default folder <em>/src/img/</em> . Otherwise the path needs to be specified
 relative to the report root (rivt file folder). If the doc is a
 <a class="reference internal" href="rvA02-terms.html#term-single-doc"><span class="xref std std-term">single doc</span></a> the file is read from the rivt file folder.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Syntax:
+<span class="w">    </span><span class="p">|</span><span class="w"> </span>IMAGE<span class="w"> </span><span class="p">|</span><span class="w"> </span>relative<span class="w"> </span>path<span class="w"> </span><span class="p">|</span><span class="w"> </span>caption,<span class="w"> </span>scale,<span class="w">  </span>*num<span class="p">;</span>nonum*
+
+Example:
+<span class="w">    </span><span class="p">|</span><span class="w"> </span>IMAGE<span class="w"> </span><span class="p">|</span><span class="w"> </span>file1.png<span class="w"> </span><span class="p">|</span><span class="w"> </span>Map,<span class="w"> </span><span class="m">0</span>.5,<span class="w"> </span>num
+</pre></div>
+</div>
+</aside>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -592,11 +608,7 @@ relative to the report root (rivt file folder). If the doc is a
 <section id="t-adjacent-images">
 <span id="adjacent-images"></span><h2><strong>[4t]</strong> Adjacent images<a class="headerlink" href="#t-adjacent-images" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| IMAGE2 | rel path1, rel path2 | sc1, sc2, cap1, cap2, fig, fig</p>
-<div class="line-block">
-<div class="line">IMAGE2 | file1.png, file2.png | .5,.5, Map, Photo, fig, fig</div>
-</div>
-</aside>
+<p class="topic-title">| IMAGE2 | rel path | caption, scale, number</p>
 <p>The IMAGE2 command reads two PNG or JPEG file and places them side by side in
 the <em>doc</em>. The scale parameters are a decimal fraction of the page width. The
 captions may be ommited by using a single hyphen for either or both images. The
@@ -607,6 +619,14 @@ of the image.</p>
 be in the default folder <em>/src/img/</em> . Otherwise the path needs to be specified
 relative to the report root (rivt file folder). If the doc is a
 <a class="reference internal" href="rvA02-terms.html#term-single-doc"><span class="xref std std-term">single doc</span></a> the file is read from the rivt file folder.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Syntax:
+<span class="w">    </span><span class="p">|</span><span class="w"> </span>IMAGE2<span class="w"> </span><span class="p">|</span><span class="w"> </span>relative<span class="w"> </span>path<span class="w"> </span><span class="p">|</span><span class="w"> </span>cap1,<span class="w"> </span>cap2,<span class="w"> </span>scale1,<span class="w"> </span>scale2,<span class="w"> </span>*num<span class="p">;</span>nonum*,<span class="w"> </span>*num<span class="p">;</span>nonum*
+
+Example:
+<span class="w">    </span><span class="p">|</span><span class="w"> </span>IMAGE2<span class="w"> </span><span class="p">|</span><span class="w"> </span>file1.png,<span class="w"> </span>file2.png<span class="w"> </span><span class="p">|</span><span class="w"> </span>Map,<span class="w"> </span>Photo,<span class="w"> </span>.5,.5,<span class="w"> </span>num,<span class="w"> </span>nonum
+</pre></div>
+</div>
+</aside>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -625,25 +645,16 @@ relative to the report root (rivt file folder). If the doc is a
 <section id="t-values-file">
 <span id="values-file"></span><h2><strong>[7t]</strong>  Values file<a class="headerlink" href="#t-values-file" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| VALTABLE| relative path | title, width, rows, <em>num,nonum</em></p>
-<p>If read from the default folder:</p>
-<div class="line-block">
-<div class="line">VALTABLE | newvals.csv | Beam Properties, 30, 1-10, num</div>
-</div>
-<p>If read from the stored folder:</p>
-<div class="line-block">
-<div class="line">VALTABLE | /stored/vals/vA01-2.csv | Beam Properties, 30, 1-10, num</div>
-</div>
-</aside>
+<p class="topic-title">| VALTABLE| relative path | title, rows, number</p>
 <p>The VALTABLE command imports and defines values from a <em>csv</em> or <em>xls</em> file.
 The file format is:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">var</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="n">unit1</span><span class="p">,</span> <span class="n">unit2</span><span class="p">,</span> <span class="n">decimal</span><span class="p">,</span> <span class="n">label</span>
 </pre></div>
 </div>
 <p>The path variable is either from <em>src</em> or <em>stored</em> depending on if the values
-were generated by rivtlib or provided by the author. The <em>rows</em> parameter
-specifies the rows to import. The title parameter is the table title. A hyphen
-omits the title. The <em>num; nonum</em> parameter specifies whether to assign a table
+were generated by rivtlib or provided by the author. The title parameter is the
+table title. A hyphen omits the title. The <em>rows</em> parameter specifies the rows
+to import. The <em>num; nonum</em> parameter specifies whether to assign a table
 number to the values table.</p>
 <p>If a <em>doc</em> is part of a report and no path is specified, the file is assumed to
 be in the default folder <em>/src/vals/</em> . Otherwise the path needs to be
@@ -651,6 +662,17 @@ specified relative to the report root (rivt file folder). If the values are
 read from prior calculated values, they will be found in the <em>/stored/vals</em>
 folder. If the doc is a <a class="reference internal" href="rvA02-terms.html#term-single-doc"><span class="xref std std-term">single doc</span></a> the file is read from the rivt file
 folder.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Syntax:
+<span class="w">    </span><span class="p">|</span><span class="w"> </span>VALTABLE<span class="w"> </span><span class="p">|</span><span class="w"> </span>relative<span class="w"> </span>path<span class="w"> </span><span class="p">|</span><span class="w"> </span>title,<span class="w"> </span>rows,<span class="w"> </span>*num<span class="p">;</span>nonum*
+
+Example:
+<span class="w">    </span>If<span class="w"> </span><span class="nb">read</span><span class="w"> </span>from<span class="w"> </span>the<span class="w"> </span>default<span class="w"> </span>folder:
+<span class="w">    </span><span class="p">|</span><span class="w"> </span>VALTABLE<span class="w"> </span><span class="p">|</span><span class="w"> </span>newvals.csv<span class="w"> </span><span class="p">|</span><span class="w"> </span>Beam<span class="w"> </span>Properties,<span class="w"> </span><span class="m">1</span>:10,<span class="w"> </span>num
+<span class="w">    </span>If<span class="w"> </span><span class="nb">read</span><span class="w"> </span>from<span class="w"> </span>the<span class="w"> </span>stored<span class="w"> </span>folder:
+<span class="w">    </span><span class="p">|</span><span class="w"> </span>VALTABLE<span class="w"> </span><span class="p">|</span><span class="w"> </span>/stored/vals/vA01-2.csv<span class="w"> </span><span class="p">|</span><span class="w"> </span>Beam<span class="w"> </span>Properties,<span class="w"> </span><span class="m">1</span>-10,<span class="w"> </span>num
+</pre></div>
+</div>
+</aside>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>

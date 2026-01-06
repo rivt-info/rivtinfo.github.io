@@ -23,7 +23,7 @@ valtable command or table title _[T]            :ref:`Table title`
        Block Tags                           Description 
  [[PYTHON]] namespace                       :ref:`Python block`
 _[[END]]                                    :ref:`End Block`
-_[[NEWPAGE]]                                :ref:`New Page`
+_[[NEWPAGE]]                                :ref:`Start new page`
 ========================================= ==============================
 
 ================================================================= =====================

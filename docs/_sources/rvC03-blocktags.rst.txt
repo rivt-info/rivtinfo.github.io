@@ -20,13 +20,13 @@ rv.I        _[[ITALIC]] spaces (4 default)             :ref:`Indent italic block
 rv.I        _[[ENDNOTES]] optional label               :ref:`Endnotes block`
 rv.I        _[[TEXT]] optional language                :ref:`Text block`
 rv.I        _[[TOPIC]] topic                           :ref:`Topic block`
-rv.I        _[[BOX]] label                             :ref:`Topic block`
+rv.I        _[[BOX]] label                             :ref:`Box block`
 rv.V, T     _[[PYTHON]] namespace                      :ref:`Python block`
 rv.T        _[[MARKUP]] type                           :ref:`Markup block`
 rv.T        _[[METADATA]] label                        :ref:`Meta block`
 rv.D        _[[LAYOUT]] label                          :ref:`Layout block` 
 all         _[[END]]                                   :ref:`End block`
-all         _[[NEW PAGE]]                              :ref:`New Page`
+all         _[[NEW PAGE]]                              :ref:`Start new page`
 ========== ========================================= ===============================
 
 .. _Shell script:
@@ -39,7 +39,14 @@ all         _[[NEW PAGE]]                              :ref:`New Page`
     <hr>
 
 
-.. topic::  _[[SHELL]] 
+.. topic::  _[[SHELL]] process parameters
+
+    Runs shell scripts that run external programs.
+    The shell parameters include specifying the operating system, process control
+    and terminal window control. The os parameter specifies the terminal type. The
+    wait parameter specifies whether rivt file processing waits for the script to
+    complete before continuing. The open parameter specifies whether to keep the
+    shell window open after execution.
 
     .. code-block:: bash
         
@@ -56,18 +63,12 @@ all         _[[NEW PAGE]]                              :ref:`New Page`
             path
             _[[END]]
 
-The shell command runs shell scripts and is used for running external programs.
-The shell parameters include specifying the operating system, process control
-and terminal window control. The os parameter specifies the terminal type. The
-wait parameter specifies whether rivt file processing waits for the script to
-complete before continuing. The open parameter specifies whether to keep the
-shell window open after execution.
+
 
 =========== ==========================
 API Scope     Insert
 Doc Types     text, PDF, HTML
 =========== ==========================
-
 
 
 .. _Indent text block:
@@ -80,6 +81,8 @@ Doc Types     text, PDF, HTML
     <hr>
 
 .. topic::  _[[INDENT]] spaces
+
+    Indents text block the specified number of spaces.
 
     .. code-block:: bash
 
@@ -96,7 +99,7 @@ Doc Types     text, PDF, HTML
                 indented 8 spaces.
                 _[[END]]
 
-Indents text block the specified number of spaces.
+
 
 =========== ==========================
 API Scope     Insert
@@ -114,6 +117,8 @@ Doc Types     text, PDF, HTML
 
 .. topic::  _[[ITALIC]] spaces
 
+    Italicizes and indents the text block the specified number of spaces.
+
     .. code-block:: bash
 
             Syntax:
@@ -128,7 +133,7 @@ Doc Types     text, PDF, HTML
                 italicized and indented 4 spaces.
                 _[[END]]
 
-Italicizes and indents the text block the specified number of spaces.
+
 
 =========== ==========================
 API Scope     Insert
@@ -145,6 +150,9 @@ Doc Types     text, PDF, HTML
     <hr>
 
 .. topic:: _[[ENDNOTE]] label
+
+    Assigns numbers and formats endnotes in order of processing. Each endnote is
+    separated by a blank line and is numbered in order of occurrence.
     
     .. code-block:: bash
 
@@ -157,17 +165,17 @@ Doc Types     text, PDF, HTML
                 _[[END]]    
     
             Example:
-                _[[ENDNOTE]] beam deflection
-                This is an endnote assigned to an endnote tag [#] in order of
+                _[[ENDNOTE]] ACI citations
+                This endnote is assigned to the first endnote tag (_[#]) in order of
                 of processing.
 
-                This is a second endnote separated by a blank line.
+                This second endnote is separated by a blank line and assigned
+                to the second
 
                 This is a third endnote.
                 _[[END]] 
 
-Formats and numbers an endnote in order of processing. Each endnote is
-separated by a blank line. They are numbered in order.
+
 
 =========== ==========================
 API Scope     Insert
@@ -185,6 +193,15 @@ Doc Types     text, PDF, HTML
 
 .. topic::  _[[TEXT]] language
 
+    Reads and formats text and code. The language parameter
+    specifies formatting and syntax coloring.  Languages include:
+
+    - *literal*
+    - *python*
+    - *bash*
+    - *sh*
+    - *cmd*
+
     .. code-block:: bash
 
             Syntax:
@@ -200,14 +217,6 @@ Doc Types     text, PDF, HTML
                 a = 1 + 3
                 _[[END]]
 
-The TEXT command reads and formats text and code. The language parameter
-specifies formatting and syntax coloring.  Languages include:
-
-- *literal*
-- *python*
-- *bash*
-- *sh*
-- *cmd*
 
 =========== ==========================
 API Scope     Insert
@@ -225,15 +234,53 @@ Doc Types     text, PDF, HTML
 
 .. topic::  _[[TOPIC]] topic title
 
-    ::
-        
-        _[[TOPIC]] topic title
-        text
-        text
-        ...
-        _[[END]]
+    Formats a topic block.
 
-Formats a highlighted topic block.
+    .. code-block:: bash
+
+            Syntax:    
+                _[[TOPIC]] topic title
+                text
+                ...
+                _[[END]]
+
+            Example:    
+                _[[TOPIC]] topic title
+                Text related to the topic.
+                _[[END]]
+
+=========== ==========================
+API Scope     Insert
+Doc Types     text, PDF, HTML
+=========== ==========================
+
+.. _Box block:
+
+**[8t]** Box block
+------------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic::  _[[BOX]] label
+
+    Draws a box around the block of text.
+
+    .. code-block:: bash
+
+            Syntax:    
+                _[[BOX]] optional label
+                text
+                ...
+                _[[END]]
+
+            Example:    
+                _[[BOX]] 
+                This is a sentence.
+                A second sentence.
+                A box is drawn around the sentences.
+                _[[END]]
 
 =========== ==========================
 API Scope     Insert
@@ -242,23 +289,32 @@ Doc Types     text, PDF, HTML
 
 .. _Python block:
 
-**[8t]** Python block
+**[9t]** Python block
 ------------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. code-block:: text
-     
-      _[[PYTHON]] *rvspace*; user namespace
-      code
-      code
-      ...
-      _[[END]]
+.. topic::  _[[PYTHON]] topic title
 
-Executes Python script in the *rivt namespace* or a user specified namespace.
-File paths in the script are relative to the *rivt file* folder.
+    Executes Python script in the *rivt namespace* or a user specified namespace.
+    File paths in the script are relative to the *rivt file* folder.
+
+    .. code-block:: python
+
+            Syntax:    
+                _[[TOPIC]] topic title
+                text
+                _[[END]]
+
+            Example:    
+                _[[PYTHON]] *rvspace*; user namespace
+                code
+                code
+                ...
+                _[[END]]
+
 
 =========== ==========================
 API Scope     Value, Tool
@@ -267,7 +323,7 @@ Doc Types     text, PDF, HTML
 
 .. _Markup block:
 
-**[9t]** Markup block
+**[10t]** Markup block
 ---------------------------------------
 
 .. raw:: html
@@ -337,30 +393,11 @@ API Scope     Tools
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-.. _End block:
-
-**[12t]** End
-------------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. code-block:: text
-        
-    _[[END]] optional label
-
-Terminates a block tag.
-
-=========== ==========================
-API Scope     All
-Doc Types     text, PDF, HTML
-=========== ==========================
 
 
 .. _Layout block:
 
-**[10t]** Layout block
+**[12t]** Layout block
 ------------------------------------------------
 
 .. raw:: html
@@ -375,7 +412,6 @@ Doc Types     text, PDF, HTML
     footerL = []    
     _[[END]]
 
-
 Overrides default layout settings.
 
 =========== ==========================
@@ -383,21 +419,46 @@ API Scope     Doc
 Doc Types     text, PDF, HTML
 =========== ==========================
 
+.. _End block:
 
-.. _New Page:
-
-**[12t]** New Page
+**[13t]** End block
 ------------------------------------------------
 
 .. raw:: html
 
     <hr>
 
+.. topic:: _[[END]] optional label
+    
+    Terminates a block tag.
+
 .. code-block:: text
         
-    _[[New Page]] 
+    _[[END]] 
 
-Starts new page.
+
+=========== ==========================
+API Scope     All
+Doc Types     text, PDF, HTML
+=========== ==========================
+
+.. _Start new page:
+
+**[14t]** Start new page
+------------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: _[[NEWPAGE]] optional label
+    
+    Starts new page.
+
+.. code-block:: text
+        
+    _[[NEWPAGE]] 
+
 
 =========== ==========================
 API Scope     All

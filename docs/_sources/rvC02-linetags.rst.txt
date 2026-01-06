@@ -10,22 +10,23 @@
 
 **Format a line or partial line of text**
   
-============= =========================================== ===============================
-API Scope             Line Tags                            Description 
-============= =========================================== ===============================
-rv.I                        text _[#] text                    :ref:`Endnote number`  
-rv.I                        text _[D] file_name text          :ref:`Doc link`
-rv.I                        text _[C]                         :ref:`Center text` 
-rv.I                        text _[R]                         :ref:`Right justify text`
-rv.I                  ASCII math _[M]                         :ref:`ASCII math` 
-rv.I                  LaTeX math _[L]                         :ref:`LaTeX math` 
-rv.I                        text _[G] glossary link term      :ref:`Term reference`
-rv.I                        text _[S] section label           :ref:`Section link`
-rv.I                        text _[U] label, external_url     :ref:`URL link`   
-rv.V, I                     text _[V] var_name text           :ref:`Variable value`
-rv.V, I          assign or label _[E]                         :ref:`Equation label`
-rv.V, I        valtable or title _[T]                         :ref:`Table title`
-============= =========================================== ===============================
+========== ================================================= ===============================
+API Scope             Line Tags                                     Description 
+========== ================================================= ===============================
+
+rv.I                          text _[C]                         :ref:`Center text` 
+rv.I                          text _[R]                         :ref:`Right justify text`
+rv.I                    ASCII math _[M]                         :ref:`ASCII math` 
+rv.I                    LaTeX math _[L]                         :ref:`LaTeX math` 
+rv.I                   label, url  _[U]                         :ref:`URL link`   
+rv.I                          text _[G] glossary term           :ref:`Term reference`
+rv.I                          text _[S] section label           :ref:`Section link`
+rv.I                          text _[#] more text               :ref:`Endnote number`  
+rv.I                text rivt_file _[D] more text               :ref:`Doc link`
+rv.V, I              text var_name _[V] more text               :ref:`Variable value`
+rv.V, I            assign or label _[E]                         :ref:`Equation label`
+rv.V, I          valtable or title _[T]                         :ref:`Table title`
+========== ================================================= ===============================
 
 ..  _Endnote number:
 
@@ -37,7 +38,7 @@ rv.V, I        valtable or title _[T]                         :ref:`Table title`
     <hr>
 
 
-.. topic:: text _[#] text 
+.. topic:: text _[#] more text 
     
    Some text. **_[#]**  Some more text.
 
@@ -111,7 +112,6 @@ API Scope     Insert
 Doc Types     PDF, HTML
 =========== ==========================
 
-
 .. _ASCII math:
 
 **[6t]** ASCII math
@@ -127,10 +127,35 @@ Doc Types     PDF, HTML
 
 Formats math expression in ASCII text.
 
+
 =========== ==========================
 API Scope     Insert
 Doc Types     text, PDF, HTML
 =========== ==========================
+
+
+
+.. _URL link:
+
+**[10t]** URL link
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic::  external url, label  _[U] 
+    
+    The  phrase following the comma will be linked to the specified url 
+    **_[U]** https://myurl.com, my link 
+
+
+=========== ==========================
+API Scope     Insert
+Doc Types     PDF, HTML
+=========== ==========================
+
+
 
 .. _Term reference:
 
@@ -188,28 +213,6 @@ Doc Types     PDF, HTML
 
 Links to a *doc* in a *report*. The tag must be at the end of a line. Text will be
 continued and wrapped when formatted. 
-
-=========== ==========================
-API Scope     Insert
-Doc Types     PDF, HTML
-=========== ==========================
-
-.. _URL link:
-
-**[10t]** URL link
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: text _[U] external url, label 
-    
-    The  phrase following the comma will be linked to the specified url 
-    **_[U]** https://myurl.com, my link 
-
-External url link. The tag must be at the end of a line. Text will be
-continued and wrapped when formatted.
 
 =========== ==========================
 API Scope     Insert
