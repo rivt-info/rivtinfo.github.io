@@ -13,7 +13,6 @@
 ========== ================================================= ===============================
 API Scope             Line Tags                                     Description 
 ========== ================================================= ===============================
-
 rv.I                          text _[C]                         :ref:`Center text` 
 rv.I                          text _[R]                         :ref:`Right justify text`
 rv.I                    ASCII math _[M]                         :ref:`ASCII math` 
