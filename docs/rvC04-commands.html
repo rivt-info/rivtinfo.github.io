@@ -464,7 +464,7 @@ be in the default folder <em>/src/run/</em> . Otherwise the path is specified re
 to the report root (rivt file folder). If the doc is a single doc the file is
 read from the rivt file folder.</p>
 <aside class="topic">
-<p class="topic-title">| SHELL | file path | os, wait</p>
+<p class="topic-title">| SHELL |</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
     | SHELL | relative file path | win;mac;linux,wait;nowait
 
@@ -491,11 +491,10 @@ Example:
 <section id="t-text-file">
 <span id="text-file"></span><h2><strong>[3t]</strong> Text file<a class="headerlink" href="#t-text-file" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| TEXT | relative path | language</p>
+<p class="topic-title">| TEXT |</p>
 <p>The TEXT command reads and formats text and code files. The language parameter
 specifies formatting and syntax coloring.  Language types include:</p>
-<blockquote>
-<div><ul class="simple">
+<ul class="simple">
 <li><p><em>literal</em></p></li>
 <li><p><em>python</em></p></li>
 <li><p><em>bash</em></p></li>
@@ -503,14 +502,13 @@ specifies formatting and syntax coloring.  Language types include:</p>
 <li><p><em>cmd</em></p></li>
 <li><p><em>reStructuredText</em></p></li>
 </ul>
-</div></blockquote>
 <p>The <em>literal</em> type inserts text into the <em>doc</em> without formatting.</p>
 <p>If a <em>doc</em> is part of a report and no path is specified, the file is assumed to
 be in the default folder <em>/src/data/</em> . Otherwise the path needs to be specified
 relative to the report root (rivt file folder). If the doc is a
 <a class="reference internal" href="rvA02-terms.html#term-single-doc"><span class="xref std std-term">single doc</span></a> the file is read from the rivt file folder.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    | TEXT | relative file path | see list above
+    | TEXT | relative file path | language - see list above
 
 Example:
     | TEXT | file1.txt | literal
@@ -535,7 +533,7 @@ Example:
 <section id="t-table-file">
 <span id="table-file"></span><h2><strong>[4t]</strong> Table file<a class="headerlink" href="#t-table-file" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">| TABLE | rel path | title, width, rows, align, head</p>
+<p class="topic-title">| TABLE |</p>
 <p>The TABLE command reads csv, xls, and rst files and outputs formatted tables.
 The title may be ommited by inserting a hyphen “-”. The width parameter
 specifies the maximum character width of a column. The align parameter
@@ -581,7 +579,7 @@ be in the default folder <em>/src/img/</em> . Otherwise the path needs to be spe
 relative to the report root (rivt file folder). If the doc is a
 <a class="reference internal" href="rvA02-terms.html#term-single-doc"><span class="xref std std-term">single doc</span></a> the file is read from the rivt file folder.</p>
 <aside class="topic">
-<p class="topic-title">| IMAGE | relative path | scale, caption, figure</p>
+<p class="topic-title">| IMAGE |</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
     | IMAGE | relative path | caption, scale,  *num;nonum*
 
@@ -618,7 +616,7 @@ be in the default folder <em>/src/img/</em> . Otherwise the path needs to be spe
 relative to the report root (rivt file folder). If the doc is a
 <a class="reference internal" href="rvA02-terms.html#term-single-doc"><span class="xref std std-term">single doc</span></a> the file is read from the rivt file folder.</p>
 <aside class="topic">
-<p class="topic-title">| IMAGE2 | rel path | caption, scale, number</p>
+<p class="topic-title">| IMAGE2 |</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Syntax:
 <span class="w">    </span><span class="p">|</span><span class="w"> </span>IMAGE2<span class="w"> </span><span class="p">|</span><span class="w"> </span>relative<span class="w"> </span>path<span class="w"> </span><span class="p">|</span><span class="w"> </span>cap1,<span class="w"> </span>cap2,<span class="w"> </span>scale1,<span class="w"> </span>scale2,<span class="w"> </span>*num<span class="p">;</span>nonum*,<span class="w"> </span>*num<span class="p">;</span>nonum*
 
@@ -661,7 +659,7 @@ read from prior calculated values, they will be found in the <em>/stored/vals</e
 folder. If the doc is a <a class="reference internal" href="rvA02-terms.html#term-single-doc"><span class="xref std std-term">single doc</span></a> the file is read from the rivt file
 folder.</p>
 <aside class="topic">
-<p class="topic-title">| VALTABLE| relative path | title, rows, number</p>
+<p class="topic-title">| VALTABLE|</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Syntax:
 <span class="w">    </span><span class="p">|</span><span class="w"> </span>VALTABLE<span class="w"> </span><span class="p">|</span><span class="w"> </span>relative<span class="w"> </span>path<span class="w"> </span><span class="p">|</span><span class="w"> </span>title,<span class="w"> </span>rows,<span class="w"> </span>*num<span class="p">;</span>nonum*
 
@@ -696,8 +694,14 @@ Example:
 <p>The stored values can read and defined in other rivt files using the VALUES
 command.</p>
 <aside class="topic">
-<p class="topic-title">c =: 5*unit | unit1, unit2, decimals | label, <em>num,nonum</em></p>
-<p>D_1 =: 10*IN | IN, M, 3 | beam depth, num</p>
+<p class="topic-title">=:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Syntax</span><span class="p">:</span>
+    <span class="n">c</span> <span class="o">=</span><span class="p">:</span> <span class="mi">5</span><span class="o">*</span><span class="n">unit</span> <span class="o">|</span> <span class="n">unit1</span><span class="p">,</span> <span class="n">unit2</span><span class="p">,</span> <span class="n">decimals</span> <span class="o">|</span> <span class="n">label</span><span class="p">,</span> <span class="o">*</span><span class="n">num</span><span class="p">,</span><span class="n">nonum</span><span class="o">*</span>
+
+<span class="n">Example</span><span class="p">:</span>
+    <span class="n">D_1</span> <span class="o">=</span><span class="p">:</span> <span class="mi">10</span><span class="o">*</span><span class="n">IN</span> <span class="o">|</span> <span class="n">IN</span><span class="p">,</span> <span class="n">M</span><span class="p">,</span> <span class="mi">3</span> <span class="o">|</span> <span class="n">beam</span> <span class="n">depth</span><span class="p">,</span> <span class="n">num</span>
+</pre></div>
+</div>
 </aside>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
@@ -724,9 +728,16 @@ set to <em>True</em> in the comment variable.</p>
 result expressed in two different units. The integer specifies the number of
 places after the decimals.</p>
 <aside class="topic">
-<p class="topic-title">b &lt;=: a * 10*FT | unit1, unit2, decimals | label, <em>num;nonum</em></p>
-<p>b_1 &lt;=: E_1 * 12.1*IN^2 | KIP, KN, 2 | Std. 123, num</p>
-<p>c_1 &lt;=: func1(a,b) | KIP, KN, 2 | ACI 318-19 Table 22.5.5.1, num</p>
+<p class="topic-title">&lt;=:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Syntax</span><span class="p">:</span>
+    <span class="n">b</span> <span class="o">&lt;=</span><span class="p">:</span> <span class="n">a</span> <span class="o">*</span> <span class="mi">10</span><span class="o">*</span><span class="n">FT</span> <span class="o">|</span> <span class="n">unit1</span><span class="p">,</span> <span class="n">unit2</span><span class="p">,</span> <span class="n">decimals</span> <span class="o">|</span> <span class="n">label</span><span class="p">,</span> <span class="o">*</span><span class="n">num</span><span class="p">;</span><span class="n">nonum</span><span class="o">*</span>
+
+<span class="n">Example</span><span class="p">:</span>
+    <span class="n">b_1</span> <span class="o">&lt;=</span><span class="p">:</span> <span class="n">E_1</span> <span class="o">*</span> <span class="mf">12.1</span><span class="o">*</span><span class="n">IN</span><span class="o">^</span><span class="mi">2</span> <span class="o">|</span> <span class="n">KIP</span><span class="p">,</span> <span class="n">KN</span><span class="p">,</span> <span class="mi">2</span> <span class="o">|</span> <span class="n">Std</span><span class="o">.</span> <span class="mi">123</span><span class="p">,</span> <span class="n">num</span>
+
+    <span class="n">c_1</span> <span class="o">&lt;=</span><span class="p">:</span> <span class="n">func1</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span> <span class="o">|</span> <span class="n">KIP</span><span class="p">,</span> <span class="n">KN</span><span class="p">,</span> <span class="mi">2</span> <span class="o">|</span> <span class="n">ACI</span> <span class="mi">318</span><span class="o">-</span><span class="mi">19</span> <span class="n">Table</span> <span class="mf">22.5.5.1</span><span class="p">,</span> <span class="n">num</span>
+</pre></div>
+</div>
 </aside>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
@@ -745,14 +756,29 @@ places after the decimals.</p>
 </section>
 <section id="t-compare-values">
 <span id="compare-values"></span><h2><strong>[10t]</strong> Compare values<a class="headerlink" href="#t-compare-values" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">expression | decimal | text, align, color</p>
-<p>a &lt; b <strong>_[S]</strong> text, r, red</p>
-</aside>
-<p>Inserts a text stamp, alignment and color on the following line if the
+<hr><p>Inserts a text with alignment and color on the following line if the
 expression evaluates to true. Alignment can be <em>r;l;c</em> for right, left or
 center. Colors can be <em>red;blue;yellow;green;black;gray</em> defined in the <em>style
 files</em>.</p>
+<p>Comparison operators:</p>
+<ul class="simple">
+<li><p>==    Equal   x == y</p></li>
+<li><p>!=    Not equal       x != y</p></li>
+<li><p>&gt;     Greater than    x &gt; y</p></li>
+<li><p>&lt;     Less than       x &lt; y</p></li>
+<li><p>&gt;=    Greater than or equal to        x &gt;= y</p></li>
+<li><p>&lt;=    Less than or equal to   x &lt;= y</p></li>
+</ul>
+<aside class="topic">
+<p class="topic-title">&lt;&gt;</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    a &lt; b **_[S]** text, r, red
+
+Example:
+   a &lt; b **_[S]** text, r, red
+</pre></div>
+</div>
+</aside>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>

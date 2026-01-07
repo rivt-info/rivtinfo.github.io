@@ -62,7 +62,7 @@ Jupyter        no       no         no      yes         yes      yes
 
     <hr>
 
-A :term:`rivt doc` (document) is published from a :term:`rivt file` that is
+A :term:`rivt doc` (document) is published from a :term:`rivt file` 
 written in :term:`rivt markup` and processed by the :term:`rivtlib` Python
 package. A collection of *rivt docs* may be collated as a :term:`rivt report`.
 
@@ -156,8 +156,9 @@ can be processed interactively as cells using the standard prefix notation:
 Refer to :doc:`rvB03-vscode` for further details.
 
 Each API function takes a single :term:`rivt string` argument as input (rS),
-and outputs formatted text or restructuredText that is further processed into a
-text, HTML and PDF :term:`doc`. The *rivt string* is written in *rivt markup*.
+and outputs formatted text or restructuredText that is further processed 
+into a text, HTML and PDF :term:`doc`. The *rivt string* is written 
+in *rivt markup*.
 
 .. _Markup:
 
@@ -170,8 +171,8 @@ text, HTML and PDF :term:`doc`. The *rivt string* is written in *rivt markup*.
 
 An API function starts in the first column and takes a triple quoted
 :term:`rivt string` (rS) argument. The first line of a *rivt string* is a
-:term:`header`, followed by :term:`content` indented 4 spaces for improved readability 
-and section folding. 
+:term:`header`, followed by :term:`content` indented 4 spaces for 
+improved readability and section folding. 
 
 The *header* specifies the section title and other
 processing parameters. The content text may include 
@@ -206,8 +207,17 @@ markup* and imports the :term:`rivtlib` API into the *rv* :term:`namespace`:
 
 *rivt files* are stored in the root folder designated with the prefix *rivt-*.
 Each *rivt file* and corresponding *rivt doc* has a prefix that is used to
-organize the report. 
-    
+organize the report. The file names have the form
+
+.. code-block::
+
+    rvANN-filename.py
+
+where A is an alpha-numeric character used for organizing report divisions, and
+NN is a two digit number used to organize sub-divisions. The file name is used
+as the *doc* title unless overridden. Use underscores or hyphens rather than
+spaces to seprate words in the name.
+
 .. _top-folders:
 
 .. raw:: html

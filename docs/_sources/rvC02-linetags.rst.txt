@@ -43,7 +43,7 @@ Centers line of text within the page margins.
     .. code-block:: text
 
         Syntax:
-            text **_[C]**
+            text _[C]
 
         Example:
             This text wil be centered. _[C]
@@ -70,7 +70,7 @@ Right justifies line of text within the page margins.
     .. code-block:: text
 
         Syntax:
-            text **_[R]**
+            text _[R]
 
         Example:
             This text wil be centered. _[R]
@@ -96,7 +96,7 @@ Formats a utf-8 math expression.
     .. code-block:: text
 
         Syntax:
-            text math expression  **_[M]**
+            text math expression  _[M]
 
         Example:
             f(x,y) = sin(x)**2 + y/5 _[M]
@@ -122,7 +122,7 @@ Formats a LaTeX math expression in the font specified in the style files.
     .. code-block:: text
 
         Syntax:
-            LaTeX math expression  **_[L]**
+            LaTeX math expression  _[L]
 
         Example:
             \frac{1}{\sqrt{x}} _[L]
@@ -141,12 +141,16 @@ Doc Types     PDF, HTML
 
     <hr>
 
-.. topic::  external url, label  _[U] 
+.. topic::  _[U] 
+
+    .. code-block:: text
+
+        Syntax:
+            external url, label  _[U]
+
+        Example:
+            https://www.github.com, github _[U]
     
-    The  phrase following the comma will be linked to the specified url 
-    **_[U]** https://myurl.com, my link 
-
-
 =========== ==========================
 API Scope     Insert
 Doc Types     PDF, HTML
@@ -154,18 +158,24 @@ Doc Types     PDF, HTML
 
 .. _Term reference:
 
-**[7t]** Term reference
+**[7t]** Glossary link
 ------------------------------------------
 
 .. raw:: html
 
     <hr>
 
+Links a term to the glossary.
+
 .. topic:: text _[G] term
 
-    This is a rivt **_[G]** doc. 
+    .. code-block:: text
 
-Links term to the glossary term.
+        Syntax:
+            text _[G] glossary term
+
+        Example:
+            Links to the glossary term _[G] doc. 
 
 =========== ==========================
 API Scope     Insert
@@ -181,11 +191,17 @@ Doc Types     PDF, HTML
 
     <hr>
 
-.. topic:: text _[S] section label
-    
-    Link to  _[S] My Section
-
 Creates a link to a section label defined in the API header.
+
+.. topic:: _[S]
+
+        .. code-block:: text
+
+        Syntax:
+            text _[S] section title
+
+        Example:
+            This creates a link to _[S] My Section Title
 
 =========== ==========================
 API Scope     Insert
@@ -194,14 +210,14 @@ Doc Types     PDF, HTML
 
 ..  _Endnote number:
 
-**[2t]**  Endnote number
+**[9t]**  Endnote number
 -------------------------------------
 
 .. raw:: html
 
     <hr>
 
-This tag assigns an endnote number to the text in order of processing. Endnotes
+Assigns endnote number to the text in order of processing. Endnotes
 are defined with the block tag _[[ENDNOTE]] and are listed at the end of the
 *doc*. 
     
@@ -215,8 +231,6 @@ are defined with the block tag _[[ENDNOTE]] and are listed at the end of the
         Example:
             This is a sentence with an endnote _[#] tag.
 
-
-
 =========== ==========================
 API Scope     Insert
 Doc Types     text, PDF, HTML
@@ -224,20 +238,25 @@ Doc Types     text, PDF, HTML
 
 .. _Doc link:
 
-**[9t]** Doc link
+**[10t]** Doc link
 -----------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: text _[D] doc number
-    
-    The phrase following the comma will be linked to the doc 
-    **_[D]** rA01-myfile, received yesterday.
+Links to a *doc* in a *report*. The *doc* title will be inserted as the
+link term.
 
-Links to a *doc* in a *report*. The tag must be at the end of a line. Text will be
-continued and wrapped when formatted. 
+.. topic:: _[D]
+
+    .. code-block:: text
+
+        Syntax:
+            text rivt_file _[D] more text
+
+        Example:
+            This is a link to the rv101-filename1 _[D] doc.
 
 =========== ==========================
 API Scope     Insert
@@ -253,11 +272,17 @@ Doc Types     PDF, HTML
 
     <hr>
 
+Inserts the value of  var_name _[V] in the sentence.
+
 .. topic:: text _[V] var_name text
 
-   This tag inserts the value of **_[V] my_var** in the sentence.
+    .. code-block:: text
 
-Insert variable value.
+        Syntax:
+            text var_name _[V] more text
+
+        Example:
+            The value of my_var is my_var _[V].
 
 =========== ==========================
 API Scope     Insert, Values
@@ -273,15 +298,23 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic:: assign command or label _[E]
-
-   math text or label **_[E]**
-
-   equation assignment command **_[E]**
-
 If the line of text is math text or a label, the text is assigned an equation
 number and right justified. If the line is an equation assignment the equation
 label is used for the label text.
+
+.. topic:: _[E]
+
+    .. code-block:: text
+
+        Syntax:
+            math text or label _[E]
+
+            assignment command _[E]
+
+        Example:
+            3x * 4/(1+n) _[E]
+
+            x <= 3*IN + 4.1*FT | inch, cm, 2 | example 1 _[E]
 
 =========== ==========================
 API Scope     Insert, Values
@@ -297,11 +330,18 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic:: Table Title  _[T]
+    Labels and numbers tables.
 
-   A New Table **_[T]**
+.. topic:: _[T]
 
-Labels and numbers tables.
+    .. code-block:: text
+
+        Syntax:
+            Table Title  _[T]
+
+        Example:
+            A New Table _[T]
+
 
 =========== ==========================
 API Scope     Insert, Values

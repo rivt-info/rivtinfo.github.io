@@ -180,41 +180,17 @@ Tag and Command syntax for each API type is defined and described using the
 following format.
 
 
-_[TAG] : description of :term:`line tag` 
+.. topic::  _[TAG] or | COMMAND |
 
+   Description
 
-.. topic::  syntax : description
+    .. code-block:: text
 
-   example
+        Syntax:
+            _[TAG] or | COMMAND | syntax
 
-outputs: types of output
-
-
-.. raw:: html
-
-    <hr>
-
-
-_[[TAG]] :  description of :term:`block tag`
-        
-
-.. topic::  syntax : description
-
-  example
-
-file types
-
-.. raw:: html
-
-    <hr>
-
-| COMMAND |  description of :term:`command`
-
-.. topic:: | COMMAND | relative path | parameters
-
-  example
-
-file types
+        Example:
+            This is a sentence. _[C] 
 
 **[5t]** Folders
 -----------------------

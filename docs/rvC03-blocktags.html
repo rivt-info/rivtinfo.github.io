@@ -459,9 +459,9 @@ whether rivt file processing waits for the script to complete before
 continuing. The open parameter specifies whether to keep the shell window open
 after execution.</p>
 <aside class="topic">
-<p class="topic-title">_[[SHELL]] process parameters</p>
+<p class="topic-title">_[[SHELL]]</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    _[[SHELL]] win;mac;linux,wait;nowait,open;close
+    _[[SHELL]] win;mac;linux,wait; nowait,open; close
     shell command
     ...
     _[[END]]
@@ -491,7 +491,7 @@ Example:
 <span id="indent-text-block"></span><h2><strong>[3t]</strong> Indent text block<a class="headerlink" href="#t-indent-text-block" title="Link to this heading">#</a></h2>
 <hr><p>Indents text block the specified number of spaces.</p>
 <aside class="topic">
-<p class="topic-title">_[[INDENT]] spaces</p>
+<p class="topic-title">_[[INDENT]]</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
     _[[INDENT]] number of spaces
     text
@@ -522,7 +522,7 @@ Example:
 <section id="t-indent-italic-block">
 <span id="indent-italic-block"></span><h2><strong>[4t]</strong> Indent italic block<a class="headerlink" href="#t-indent-italic-block" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">_[[ITALIC]] spaces</p>
+<p class="topic-title">_[[ITALIC]]</p>
 <p>Italicizes and indents the text block the specified number of spaces.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
     _[[ITALIC]] number of spaces
@@ -553,7 +553,7 @@ Example:
 <section id="t-endnotes-block">
 <span id="endnotes-block"></span><h2><strong>[5t]</strong> Endnotes block<a class="headerlink" href="#t-endnotes-block" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">_[[ENDNOTE]] label</p>
+<p class="topic-title">_[[ENDNOTE]]</p>
 <p>Assigns numbers and formats endnotes in order of processing. Each endnote is
 separated by a blank line and is numbered in order of occurrence.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
@@ -592,7 +592,7 @@ Example:
 <section id="t-text-block">
 <span id="text-block"></span><h2><strong>[6t]</strong> Text block<a class="headerlink" href="#t-text-block" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">_[[TEXT]] language</p>
+<p class="topic-title">_[[TEXT]]</p>
 <p>Reads and formats text and code. The language parameter
 specifies formatting and syntax coloring.  Languages include:</p>
 <ul class="simple">
@@ -632,7 +632,7 @@ Example:
 <section id="t-topic-block">
 <span id="topic-block"></span><h2><strong>[7t]</strong> Topic block<a class="headerlink" href="#t-topic-block" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">_[[TOPIC]] topic title</p>
+<p class="topic-title">_[[TOPIC]]</p>
 <p>Formats a topic block.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Syntax:
 <span class="w">    </span>_<span class="o">[[</span>TOPIC<span class="o">]]</span><span class="w"> </span>topic<span class="w"> </span>title
@@ -662,7 +662,7 @@ Example:
 <section id="t-box-block">
 <span id="box-block"></span><h2><strong>[8t]</strong> Box block<a class="headerlink" href="#t-box-block" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">_[[BOX]] label</p>
+<p class="topic-title">_[[BOX]]</p>
 <p>Draws a box around the block of text.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Syntax:
 <span class="w">    </span>_<span class="o">[[</span>BOX<span class="o">]]</span><span class="w"> </span>optional<span class="w"> </span>label
@@ -694,7 +694,7 @@ Example:
 <section id="t-python-block">
 <span id="python-block"></span><h2><strong>[9t]</strong> Python block<a class="headerlink" href="#t-python-block" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">_[[PYTHON]] topic title</p>
+<p class="topic-title">_[[PYTHON]]</p>
 <p>Executes Python script in the <em>rivt namespace</em> or a user specified namespace.
 File paths in the script are relative to the <em>rivt file</em> folder.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Syntax</span><span class="p">:</span>
@@ -725,15 +725,24 @@ File paths in the script are relative to the <em>rivt file</em> folder.</p>
 </section>
 <section id="t-markup-block">
 <span id="markup-block"></span><h2><strong>[10t]</strong> Markup block<a class="headerlink" href="#t-markup-block" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[MARKUP]] *html;latex;rst*
-markup
-markup
-...
-_[[END]]
+<hr><p>Inserts HTML into an HTML <em>doc</em>, LaTeX into a PDF <em>doc</em>, and reStructuredText
+into either PDF or HTML.</p>
+<aside class="topic">
+<p class="topic-title">_[[MARKUP]]</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    _[[MARKUP]] *html;latex;rst*
+    markup
+    ...
+    _[[END]]
+
+Example:
+    _[[MARKUP]] *html;latex;rst*
+    markup
+    ...
+    _[[END]]
 </pre></div>
 </div>
-<p>Inserts HTML into an HTML <em>doc</em>, LaTeX into a PDF <em>doc</em>, and reStructuredText
-into either PDF or HTML.</p>
+</aside>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -750,8 +759,9 @@ into either PDF or HTML.</p>
 <span id="meta-block"></span><h2><strong>[11t]</strong> Metadata<a class="headerlink" href="#t-metadata" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[METADATA]] label</p>
-<p>Some text. <strong>_[#]</strong>  Some more text.</p>
-</aside>
+<p><em>Metadata</em> is written to the <em>api-log.py</em> file and is converted internally
+to Python dictionaries with a name taken from the label e.g. <em>rvmeta_D</em> or
+<em>rvmeta_authorsD</em>/</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># defaults</span>
 _<span class="o">[[</span>METADATA<span class="o">]]</span><span class="w"> </span>meta
 authors:
@@ -775,9 +785,7 @@ fork1:<span class="w"> </span>author,<span class="w"> </span>version,<span class
 _<span class="o">[[</span>END<span class="o">]]</span>
 </pre></div>
 </div>
-<p><em>Metadata</em> is written to the <em>api-log.py</em> file and is converted internally to
-Python dictionaries with a name taken from the label e.g. <em>rvmeta_D</em> or
-<em>rvmeta_authorsD</em>/</p>
+</aside>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>

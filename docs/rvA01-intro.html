@@ -488,7 +488,7 @@ programs.</p>
 </section>
 <section id="t-overview-and-api">
 <h2><strong>[2t]</strong> Overview and API<a class="headerlink" href="#t-overview-and-api" title="Link to this heading">#</a></h2>
-<hr><p>A <a class="reference internal" href="rvA02-terms.html#term-rivt-doc"><span class="xref std std-term">rivt doc</span></a> (document) is published from a <a class="reference internal" href="rvA02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> that is
+<hr><p>A <a class="reference internal" href="rvA02-terms.html#term-rivt-doc"><span class="xref std std-term">rivt doc</span></a> (document) is published from a <a class="reference internal" href="rvA02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a>
 written in <a class="reference internal" href="rvA02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> and processed by the <a class="reference internal" href="rvA02-terms.html#term-rivtlib"><span class="xref std std-term">rivtlib</span></a> Python
 package. A collection of <em>rivt docs</em> may be collated as a <a class="reference internal" href="rvA02-terms.html#term-rivt-report"><span class="xref std std-term">rivt report</span></a>.</p>
 <p>As an open source project <em>rivt files</em> may be collaberatively shared and <em>rivt</em>
@@ -588,15 +588,16 @@ can be processed interactively as cells using the standard prefix notation:</p>
 </div>
 <p>Refer to <a class="reference internal" href="rvB03-vscode.html"><span class="doc">B.3 VSCode Settings</span></a> for further details.</p>
 <p>Each API function takes a single <a class="reference internal" href="rvA02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> argument as input (rS),
-and outputs formatted text or restructuredText that is further processed into a
-text, HTML and PDF <a class="reference internal" href="rvA02-terms.html#term-doc"><span class="xref std std-term">doc</span></a>. The <em>rivt string</em> is written in <em>rivt markup</em>.</p>
+and outputs formatted text or restructuredText that is further processed
+into a text, HTML and PDF <a class="reference internal" href="rvA02-terms.html#term-doc"><span class="xref std std-term">doc</span></a>. The <em>rivt string</em> is written
+in <em>rivt markup</em>.</p>
 </section>
 <section id="t-markup">
 <span id="markup"></span><h2><strong>[3t]</strong> Markup<a class="headerlink" href="#t-markup" title="Link to this heading">#</a></h2>
 <hr><p>An API function starts in the first column and takes a triple quoted
 <a class="reference internal" href="rvA02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> (rS) argument. The first line of a <em>rivt string</em> is a
-<a class="reference internal" href="rvA02-terms.html#term-header"><span class="xref std std-term">header</span></a>, followed by <a class="reference internal" href="rvA02-terms.html#term-content"><span class="xref std std-term">content</span></a> indented 4 spaces for improved readability
-and section folding.</p>
+<a class="reference internal" href="rvA02-terms.html#term-header"><span class="xref std std-term">header</span></a>, followed by <a class="reference internal" href="rvA02-terms.html#term-content"><span class="xref std std-term">content</span></a> indented 4 spaces for
+improved readability and section folding.</p>
 <p>The <em>header</em> specifies the section title and other
 processing parameters. The content text may include
 <a class="reference internal" href="rvA02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> and other arbitrary text. For further details
@@ -620,7 +621,14 @@ markup</em> and imports the <a class="reference internal" href="rvA02-terms.html
 </div>
 <p><em>rivt files</em> are stored in the root folder designated with the prefix <em>rivt-</em>.
 Each <em>rivt file</em> and corresponding <em>rivt doc</em> has a prefix that is used to
-organize the report.</p>
+organize the report. The file names have the form</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rvANN</span><span class="o">-</span><span class="n">filename</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>where A is an alpha-numeric character used for organizing report divisions, and
+NN is a two digit number used to organize sub-divisions. The file name is used
+as the <em>doc</em> title unless overridden. Use underscores or hyphens rather than
+spaces to seprate words in the name.</p>
 <p style="border-width:1px; border-style:solid;
 border-color:#49b2c3;padding: 1em;">
 

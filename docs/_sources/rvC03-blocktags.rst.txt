@@ -45,12 +45,12 @@ whether rivt file processing waits for the script to complete before
 continuing. The open parameter specifies whether to keep the shell window open
 after execution.
 
-.. topic::  _[[SHELL]] process parameters
+.. topic::  _[[SHELL]] 
 
     .. code-block:: text
         
         Syntax:
-            _[[SHELL]] win;mac;linux,wait;nowait,open;close
+            _[[SHELL]] win;mac;linux,wait; nowait,open; close
             shell command
             ...
             _[[END]]
@@ -79,7 +79,7 @@ Doc Types     text, PDF, HTML
 
 Indents text block the specified number of spaces.
 
-.. topic::  _[[INDENT]] spaces
+.. topic::  _[[INDENT]] 
 
     .. code-block:: text
 
@@ -112,7 +112,7 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic::  _[[ITALIC]] spaces
+.. topic::  _[[ITALIC]] 
 
     Italicizes and indents the text block the specified number of spaces.
 
@@ -146,7 +146,7 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic:: _[[ENDNOTE]] label
+.. topic:: _[[ENDNOTE]] 
 
     Assigns numbers and formats endnotes in order of processing. Each endnote is
     separated by a blank line and is numbered in order of occurrence.
@@ -188,7 +188,7 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic::  _[[TEXT]] language
+.. topic::  _[[TEXT]] 
 
     Reads and formats text and code. The language parameter
     specifies formatting and syntax coloring.  Languages include:
@@ -229,7 +229,7 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic::  _[[TOPIC]] topic title
+.. topic::  _[[TOPIC]] 
 
     Formats a topic block.
 
@@ -260,7 +260,7 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic::  _[[BOX]] label
+.. topic::  _[[BOX]] 
 
     Draws a box around the block of text.
 
@@ -293,7 +293,7 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic::  _[[PYTHON]] topic title
+.. topic::  _[[PYTHON]] 
 
     Executes Python script in the *rivt namespace* or a user specified namespace.
     File paths in the script are relative to the *rivt file* folder.
@@ -327,16 +327,25 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. code-block:: text
-        
-     _[[MARKUP]] *html;latex;rst*
-     markup
-     markup
-     ...
-     _[[END]]
-
 Inserts HTML into an HTML *doc*, LaTeX into a PDF *doc*, and reStructuredText
 into either PDF or HTML. 
+
+.. topic::  _[[MARKUP]] 
+        
+    .. code-block:: text
+            
+        Syntax:    
+            _[[MARKUP]] *html;latex;rst*
+            markup
+            ...
+            _[[END]]
+
+        Example:    
+            _[[MARKUP]] *html;latex;rst*
+            markup
+            ...
+            _[[END]]
+
  
 
 =========== ==========================
@@ -355,35 +364,35 @@ Doc Types     text, PDF, HTML
     <hr>
 .. topic:: _[[METADATA]] label
     
-   Some text. **_[#]**  Some more text.
+    *Metadata* is written to the *api-log.py* file and is converted internally
+    to Python dictionaries with a name taken from the label e.g. *rvmeta_D* or
+    *rvmeta_authorsD*/
 
-..  code-block:: bash
+    ..  code-block:: bash
 
-    # defaults
-    _[[METADATA]] meta
-    authors: 
-    version: 0.0.0
-    email:
-    repo:
-    license: https://opensource.org/license/mit
-    fork1: author, version, email, repo
-    fork2: author, version, email, repo
-    _[[END]]
+        # defaults
+        _[[METADATA]] meta
+        authors: 
+        version: 0.0.0
+        email:
+        repo:
+        license: https://opensource.org/license/mit
+        fork1: author, version, email, repo
+        fork2: author, version, email, repo
+        _[[END]]
 
-    # example - author dicitionary
-    _[[METADATA]] authors
-    authors: rholland, rward
-    version: 0.1.1
-    email: rholland@email.com
-    repo: https://github.com/rivt-info/rivt-simple-doc
-    license: https://opensource.org/license/mit
-    fork1: author, version, email, repo
-    fork1: author, version, email, repo
-    _[[END]]
+        # example - author dicitionary
+        _[[METADATA]] authors
+        authors: rholland, rward
+        version: 0.1.1
+        email: rholland@email.com
+        repo: https://github.com/rivt-info/rivt-simple-doc
+        license: https://opensource.org/license/mit
+        fork1: author, version, email, repo
+        fork1: author, version, email, repo
+        _[[END]]
 
-*Metadata* is written to the *api-log.py* file and is converted internally to
-Python dictionaries with a name taken from the label e.g. *rvmeta_D* or 
-*rvmeta_authorsD*/
+
 
 =========== ==========================
 API Scope     Tools

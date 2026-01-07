@@ -416,7 +416,7 @@
 </tr>
 <tr class="row-odd"><td><p>rv.I</p></td>
 <td><p>text _[G] glossary term</p></td>
-<td><p><a class="reference internal" href="#term-reference"><span class="std std-ref">[7t] Term reference</span></a></p></td>
+<td><p><a class="reference internal" href="#term-reference"><span class="std std-ref">[7t] Glossary link</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I</p></td>
 <td><p>text _[S] section label</p></td>
@@ -424,11 +424,11 @@
 </tr>
 <tr class="row-odd"><td><p>rv.I</p></td>
 <td><p>text _[#] more text</p></td>
-<td><p><a class="reference internal" href="#endnote-number"><span class="std std-ref">[2t]  Endnote number</span></a></p></td>
+<td><p><a class="reference internal" href="#endnote-number"><span class="std std-ref">[9t]  Endnote number</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I</p></td>
 <td><p>text rivt_file _[D] more text</p></td>
-<td><p><a class="reference internal" href="#doc-link"><span class="std std-ref">[9t] Doc link</span></a></p></td>
+<td><p><a class="reference internal" href="#doc-link"><span class="std std-ref">[10t] Doc link</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V, I</p></td>
 <td><p>text var_name _[V] more text</p></td>
@@ -452,7 +452,7 @@
 <aside class="topic">
 <p class="topic-title">_[C]</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    text **_[C]**
+    text _[C]
 
 Example:
     This text wil be centered. _[C]
@@ -477,7 +477,7 @@ Example:
 <aside class="topic">
 <p class="topic-title">_[R]</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    text **_[R]**
+    text _[R]
 
 Example:
     This text wil be centered. _[R]
@@ -502,7 +502,7 @@ Example:
 <aside class="topic">
 <p class="topic-title">_[M]</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    text math expression  **_[M]**
+    text math expression  _[M]
 
 Example:
     f(x,y) = sin(x)**2 + y/5 _[M]
@@ -527,7 +527,7 @@ Example:
 <aside class="topic">
 <p class="topic-title">_[L]</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    LaTeX math expression  **_[L]**
+    LaTeX math expression  _[L]
 
 Example:
     \frac{1}{\sqrt{x}} _[L]
@@ -549,9 +549,14 @@ Example:
 <section id="t-url-link">
 <span id="url-link"></span><h2><strong>[6t]</strong> URL link<a class="headerlink" href="#t-url-link" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">external url, label  _[U]</p>
-<p>The  phrase following the comma will be linked to the specified url
-<strong>_[U]</strong> <a class="reference external" href="https://myurl.com">https://myurl.com</a>, my link</p>
+<p class="topic-title">_[U]</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    external url, label  _[U]
+
+Example:
+    https://www.github.com, github _[U]
+</pre></div>
+</div>
 </aside>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
@@ -565,13 +570,19 @@ Example:
 </table>
 </div>
 </section>
-<section id="t-term-reference">
-<span id="term-reference"></span><h2><strong>[7t]</strong> Term reference<a class="headerlink" href="#t-term-reference" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
+<section id="t-glossary-link">
+<span id="term-reference"></span><h2><strong>[7t]</strong> Glossary link<a class="headerlink" href="#t-glossary-link" title="Link to this heading">#</a></h2>
+<hr><p>Links a term to the glossary.</p>
+<aside class="topic">
 <p class="topic-title">text _[G] term</p>
-<p>This is a rivt <strong>_[G]</strong> doc.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    text _[G] glossary term
+
+Example:
+    Links to the glossary term _[G] doc.
+</pre></div>
+</div>
 </aside>
-<p>Links term to the glossary term.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -586,11 +597,19 @@ Example:
 </section>
 <section id="t-section-link">
 <span id="section-link"></span><h2><strong>[8t]</strong> Section link<a class="headerlink" href="#t-section-link" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">text _[S] section label</p>
-<p>Link to  _[S] My Section</p>
+<hr><p>Creates a link to a section label defined in the API header.</p>
+<aside class="topic">
+<p class="topic-title">_[S]</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<dl class="simple">
+<dt>Syntax:</dt><dd><p>text _[S] section title</p>
+</dd>
+<dt>Example:</dt><dd><p>This creates a link to _[S] My Section Title</p>
+</dd>
+</dl>
 </aside>
-<p>Creates a link to a section label defined in the API header.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -604,8 +623,8 @@ Example:
 </div>
 </section>
 <section id="t-endnote-number">
-<span id="endnote-number"></span><h2><strong>[2t]</strong>  Endnote number<a class="headerlink" href="#t-endnote-number" title="Link to this heading">#</a></h2>
-<hr><p>This tag assigns an endnote number to the text in order of processing. Endnotes
+<span id="endnote-number"></span><h2><strong>[9t]</strong>  Endnote number<a class="headerlink" href="#t-endnote-number" title="Link to this heading">#</a></h2>
+<hr><p>Assigns endnote number to the text in order of processing. Endnotes
 are defined with the block tag _[[ENDNOTE]] and are listed at the end of the
 <em>doc</em>.</p>
 <aside class="topic">
@@ -631,14 +650,19 @@ Example:
 </div>
 </section>
 <section id="t-doc-link">
-<span id="doc-link"></span><h2><strong>[9t]</strong> Doc link<a class="headerlink" href="#t-doc-link" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">text _[D] doc number</p>
-<p>The phrase following the comma will be linked to the doc
-<strong>_[D]</strong> rA01-myfile, received yesterday.</p>
+<span id="doc-link"></span><h2><strong>[10t]</strong> Doc link<a class="headerlink" href="#t-doc-link" title="Link to this heading">#</a></h2>
+<hr><p>Links to a <em>doc</em> in a <em>report</em>. The <em>doc</em> title will be inserted as the
+link term.</p>
+<aside class="topic">
+<p class="topic-title">_[D]</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    text rivt_file _[D] more text
+
+Example:
+    This is a link to the rv101-filename1 _[D] doc.
+</pre></div>
+</div>
 </aside>
-<p>Links to a <em>doc</em> in a <em>report</em>. The tag must be at the end of a line. Text will be
-continued and wrapped when formatted.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -653,11 +677,17 @@ continued and wrapped when formatted.</p>
 </section>
 <section id="t-variable-value">
 <span id="variable-value"></span><h2><strong>[11t]</strong> Variable value<a class="headerlink" href="#t-variable-value" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
+<hr><p>Inserts the value of  var_name _[V] in the sentence.</p>
+<aside class="topic">
 <p class="topic-title">text _[V] var_name text</p>
-<p>This tag inserts the value of <strong>_[V] my_var</strong> in the sentence.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    text var_name _[V] more text
+
+Example:
+    The value of my_var is my_var _[V].
+</pre></div>
+</div>
 </aside>
-<p>Insert variable value.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -672,14 +702,23 @@ continued and wrapped when formatted.</p>
 </section>
 <section id="t-equation-label">
 <span id="equation-label"></span><h2><strong>[12t]</strong> Equation label<a class="headerlink" href="#t-equation-label" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">assign command or label _[E]</p>
-<p>math text or label <strong>_[E]</strong></p>
-<p>equation assignment command <strong>_[E]</strong></p>
-</aside>
-<p>If the line of text is math text or a label, the text is assigned an equation
+<hr><p>If the line of text is math text or a label, the text is assigned an equation
 number and right justified. If the line is an equation assignment the equation
 label is used for the label text.</p>
+<aside class="topic">
+<p class="topic-title">_[E]</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    math text or label _[E]
+
+    assignment command _[E]
+
+Example:
+    3x * 4/(1+n) _[E]
+
+    x &lt;= 3*IN + 4.1*FT | inch, cm, 2 | example 1 _[E]
+</pre></div>
+</div>
+</aside>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -694,11 +733,18 @@ label is used for the label text.</p>
 </section>
 <section id="t-table-title">
 <span id="table-title"></span><h2><strong>[13t]</strong> Table title<a class="headerlink" href="#t-table-title" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">Table Title  _[T]</p>
-<p>A New Table <strong>_[T]</strong></p>
+<hr>
+
+Labels and numbers tables.<aside class="topic">
+<p class="topic-title">_[T]</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    Table Title  _[T]
+
+Example:
+    A New Table _[T]
+</pre></div>
+</div>
 </aside>
-<p>Labels and numbers tables.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -766,10 +812,10 @@ label is used for the label text.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-text-math"><strong>[4t]</strong> Text math</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-latex-math"><strong>[5t]</strong> LaTeX math</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-url-link"><strong>[6t]</strong> URL link</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-term-reference"><strong>[7t]</strong> Term reference</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-glossary-link"><strong>[7t]</strong> Glossary link</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-section-link"><strong>[8t]</strong> Section link</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-endnote-number"><strong>[2t]</strong>  Endnote number</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-doc-link"><strong>[9t]</strong> Doc link</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-endnote-number"><strong>[9t]</strong>  Endnote number</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-doc-link"><strong>[10t]</strong> Doc link</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-variable-value"><strong>[11t]</strong> Variable value</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-equation-label"><strong>[12t]</strong> Equation label</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-table-title"><strong>[13t]</strong> Table title</a></li>

@@ -47,8 +47,7 @@ be in the default folder */src/run/* . Otherwise the path is specified relative
 to the report root (rivt file folder). If the doc is a single doc the file is
 read from the rivt file folder.
 
-.. topic:: | SHELL | file path | os, wait
-
+.. topic:: | SHELL | 
 
     .. code-block:: text
 
@@ -74,17 +73,17 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic:: | TEXT | relative path | language
+.. topic:: | TEXT | 
 
     The TEXT command reads and formats text and code files. The language parameter
     specifies formatting and syntax coloring.  Language types include:
 
-        - *literal*
-        - *python*
-        - *bash*
-        - *sh*
-        - *cmd*
-        - *reStructuredText*
+    - *literal*
+    - *python*
+    - *bash*
+    - *sh*
+    - *cmd*
+    - *reStructuredText*
 
     The *literal* type inserts text into the *doc* without formatting.
 
@@ -96,7 +95,7 @@ Doc Types     text, PDF, HTML
     .. code-block:: text
 
         Syntax:
-            | TEXT | relative file path | see list above
+            | TEXT | relative file path | language - see list above
 
         Example:
             | TEXT | file1.txt | literal
@@ -116,7 +115,7 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic:: | TABLE | rel path | title, width, rows, align, head   
+.. topic:: | TABLE |   
 
     The TABLE command reads csv, xls, and rst files and outputs formatted tables.
     The title may be ommited by inserting a hyphen "-". The width parameter
@@ -164,7 +163,7 @@ be in the default folder */src/img/* . Otherwise the path needs to be specified
 relative to the report root (rivt file folder). If the doc is a 
 :term:`single doc` the file is read from the rivt file folder.
 
-.. topic:: | IMAGE | relative path | scale, caption, figure
+.. topic:: | IMAGE | 
 
     .. code-block:: text
 
@@ -201,7 +200,7 @@ be in the default folder */src/img/* . Otherwise the path needs to be specified
 relative to the report root (rivt file folder). If the doc is a 
 :term:`single doc` the file is read from the rivt file folder.
 
-.. topic:: | IMAGE2 | rel path | caption, scale, number
+.. topic:: | IMAGE2 | 
 
     .. code-block:: bash
 
@@ -244,7 +243,7 @@ read from prior calculated values, they will be found in the */stored/vals*
 folder. If the doc is a :term:`single doc` the file is read from the rivt file
 folder.
 
-.. topic::  | VALTABLE| relative path | title, rows, number
+.. topic::  | VALTABLE| 
 
     .. code-block:: bash
 
@@ -279,9 +278,15 @@ Defines a value and writes it to the file *vdocnum-s.csv* where *num* is the
 The stored values can read and defined in other rivt files using the VALUES
 command.
 
-.. topic:: c =: 5*unit | unit1, unit2, decimals | label, *num,nonum*
+.. topic:: =: 
 
-    D_1 =: 10*IN | IN, M, 3 | beam depth, num
+    .. code-block::
+
+        Syntax:
+            c =: 5*unit | unit1, unit2, decimals | label, *num,nonum*
+    
+        Example:
+            D_1 =: 10*IN | IN, M, 3 | beam depth, num
   
 
   
@@ -309,12 +314,17 @@ The label is a reference printed with the equation. The units specify the
 result expressed in two different units. The integer specifies the number of
 places after the decimals.
 
+.. topic:: <=: 
 
-.. topic:: b <=: a * 10*FT | unit1, unit2, decimals | label, *num;nonum*
+    .. code-block::
 
-    b_1 <=: E_1 * 12.1*IN^2 | KIP, KN, 2 | Std. 123, num
+        Syntax:
+            b <=: a * 10*FT | unit1, unit2, decimals | label, *num;nonum*
+    
+        Example:
+            b_1 <=: E_1 * 12.1*IN^2 | KIP, KN, 2 | Std. 123, num
 
-    c_1 <=: func1(a,b) | KIP, KN, 2 | ACI 318-19 Table 22.5.5.1, num 
+            c_1 <=: func1(a,b) | KIP, KN, 2 | ACI 318-19 Table 22.5.5.1, num 
 
 
 =========== ==========================
@@ -332,20 +342,34 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic:: expression | decimal | text, align, color
-
-   a < b **_[S]** text, r, red
-
-Inserts a text stamp, alignment and color on the following line if the
+Inserts a text with alignment and color on the following line if the
 expression evaluates to true. Alignment can be *r;l;c* for right, left or
 center. Colors can be *red;blue;yellow;green;black;gray* defined in the *style
-files*.
+files*. 
 
+Comparison operators:
+
+- ==	Equal	x == y	
+- !=	Not equal	x != y	
+- >	Greater than	x > y	
+- <	Less than	x < y	
+- >=	Greater than or equal to	x >= y	
+- <=	Less than or equal to	x <= y
+
+.. topic:: <> 
+
+    .. code-block:: text
+
+        Syntax:  
+            a < b **_[S]** text, r, red
+    
+        Example:
+           a < b **_[S]** text, r, red
+  
 =========== ==========================
 API Scope     Values
 Doc Types     text, PDF, HTML
 =========== ==========================
-
 
 
 .. _Python file:
