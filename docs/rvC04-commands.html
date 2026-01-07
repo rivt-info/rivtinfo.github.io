@@ -490,9 +490,7 @@ Example:
 </section>
 <section id="t-text-file">
 <span id="text-file"></span><h2><strong>[3t]</strong> Text file<a class="headerlink" href="#t-text-file" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">| TEXT |</p>
-<p>The TEXT command reads and formats text and code files. The language parameter
+<hr><p>The TEXT command reads and formats text and code files. The language parameter
 specifies formatting and syntax coloring.  Language types include:</p>
 <ul class="simple">
 <li><p><em>literal</em></p></li>
@@ -507,6 +505,8 @@ specifies formatting and syntax coloring.  Language types include:</p>
 be in the default folder <em>/src/data/</em> . Otherwise the path needs to be specified
 relative to the report root (rivt file folder). If the doc is a
 <a class="reference internal" href="rvA02-terms.html#term-single-doc"><span class="xref std std-term">single doc</span></a> the file is read from the rivt file folder.</p>
+<aside class="topic">
+<p class="topic-title">| TEXT |</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
     | TEXT | relative file path | language - see list above
 
@@ -532,9 +532,7 @@ Example:
 </section>
 <section id="t-table-file">
 <span id="table-file"></span><h2><strong>[4t]</strong> Table file<a class="headerlink" href="#t-table-file" title="Link to this heading">#</a></h2>
-<hr><aside class="topic">
-<p class="topic-title">| TABLE |</p>
-<p>The TABLE command reads csv, xls, and rst files and outputs formatted tables.
+<hr><p>The TABLE command reads csv, xls, and rst files and outputs formatted tables.
 The title may be ommited by inserting a hyphen “-”. The width parameter
 specifies the maximum character width of a column. The align parameter
 specifies the cell justification - left, center, right. The number parameter
@@ -544,6 +542,8 @@ specifies whether the first row is a column header.</p>
 be in the default folder <em>/src/data/</em> . Otherwise the path needs to be specified
 relative to the report root (rivt file folder). If the doc is a
 <a class="reference internal" href="rvA02-terms.html#term-single-doc"><span class="xref std std-term">single doc</span></a> the file is read from the rivt file folder.</p>
+<aside class="topic">
+<p class="topic-title">| TABLE |</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
     | TABLE | rel path | title, max width, rows, *l;c;r*, *num,nonum*, *head;nohead*
 
@@ -729,13 +729,13 @@ result expressed in two different units. The integer specifies the number of
 places after the decimals.</p>
 <aside class="topic">
 <p class="topic-title">&lt;=:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Syntax</span><span class="p">:</span>
-    <span class="n">b</span> <span class="o">&lt;=</span><span class="p">:</span> <span class="n">a</span> <span class="o">*</span> <span class="mi">10</span><span class="o">*</span><span class="n">FT</span> <span class="o">|</span> <span class="n">unit1</span><span class="p">,</span> <span class="n">unit2</span><span class="p">,</span> <span class="n">decimals</span> <span class="o">|</span> <span class="n">label</span><span class="p">,</span> <span class="o">*</span><span class="n">num</span><span class="p">;</span><span class="n">nonum</span><span class="o">*</span>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    b &lt;=: a * 10*FT | unit1, unit2, decimals | label, *num;nonum*
 
-<span class="n">Example</span><span class="p">:</span>
-    <span class="n">b_1</span> <span class="o">&lt;=</span><span class="p">:</span> <span class="n">E_1</span> <span class="o">*</span> <span class="mf">12.1</span><span class="o">*</span><span class="n">IN</span><span class="o">^</span><span class="mi">2</span> <span class="o">|</span> <span class="n">KIP</span><span class="p">,</span> <span class="n">KN</span><span class="p">,</span> <span class="mi">2</span> <span class="o">|</span> <span class="n">Std</span><span class="o">.</span> <span class="mi">123</span><span class="p">,</span> <span class="n">num</span>
+Example:
+    b_1 &lt;=: E_1 * 12.1*IN^2 | KIP, KN, 2 | Std. 123, num
 
-    <span class="n">c_1</span> <span class="o">&lt;=</span><span class="p">:</span> <span class="n">func1</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span> <span class="o">|</span> <span class="n">KIP</span><span class="p">,</span> <span class="n">KN</span><span class="p">,</span> <span class="mi">2</span> <span class="o">|</span> <span class="n">ACI</span> <span class="mi">318</span><span class="o">-</span><span class="mi">19</span> <span class="n">Table</span> <span class="mf">22.5.5.1</span><span class="p">,</span> <span class="n">num</span>
+    c_1 &lt;=: func1(a,b) | KIP, KN, 2 | ACI 318-19 Table 22.5.5.1, num
 </pre></div>
 </div>
 </aside>

@@ -73,24 +73,24 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
+The TEXT command reads and formats text and code files. The language parameter
+specifies formatting and syntax coloring.  Language types include:
+
+- *literal*
+- *python*
+- *text*
+- *sh*
+- *cmd*
+- *reStructuredText*
+
+The *literal* type inserts text into the *doc* without formatting.
+
+If a *doc* is part of a report and no path is specified, the file is assumed to
+be in the default folder */src/data/* . Otherwise the path needs to be specified
+relative to the report root (rivt file folder). If the doc is a 
+:term:`single doc` the file is read from the rivt file folder.
+
 .. topic:: | TEXT | 
-
-    The TEXT command reads and formats text and code files. The language parameter
-    specifies formatting and syntax coloring.  Language types include:
-
-    - *literal*
-    - *python*
-    - *text*
-    - *sh*
-    - *cmd*
-    - *reStructuredText*
-
-    The *literal* type inserts text into the *doc* without formatting.
-
-    If a *doc* is part of a report and no path is specified, the file is assumed to
-    be in the default folder */src/data/* . Otherwise the path needs to be specified
-    relative to the report root (rivt file folder). If the doc is a 
-    :term:`single doc` the file is read from the rivt file folder.
 
     .. code-block:: text
 
@@ -115,19 +115,19 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
+The TABLE command reads csv, xls, and rst files and outputs formatted tables.
+The title may be ommited by inserting a hyphen "-". The width parameter
+specifies the maximum character width of a column. The align parameter
+specifies the cell justification - left, center, right. The number parameter
+specifies whether the table is numbered. For csv files, the head parameter
+specifies whether the first row is a column header.
+
+If a *doc* is part of a report and no path is specified, the file is assumed to
+be in the default folder */src/data/* . Otherwise the path needs to be specified
+relative to the report root (rivt file folder). If the doc is a 
+:term:`single doc` the file is read from the rivt file folder.
+
 .. topic:: | TABLE |   
-
-    The TABLE command reads csv, xls, and rst files and outputs formatted tables.
-    The title may be ommited by inserting a hyphen "-". The width parameter
-    specifies the maximum character width of a column. The align parameter
-    specifies the cell justification - left, center, right. The number parameter
-    specifies whether the table is numbered. For csv files, the head parameter
-    specifies whether the first row is a column header.
-
-    If a *doc* is part of a report and no path is specified, the file is assumed to
-    be in the default folder */src/data/* . Otherwise the path needs to be specified
-    relative to the report root (rivt file folder). If the doc is a 
-    :term:`single doc` the file is read from the rivt file folder.
 
     .. code-block:: text
 
@@ -314,7 +314,7 @@ places after the decimals.
 
 .. topic:: <=: 
 
-    .. code-block::
+    .. code-block:: text
 
         Syntax:
             b <=: a * 10*FT | unit1, unit2, decimals | label, *num;nonum*
