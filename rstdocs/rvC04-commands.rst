@@ -280,7 +280,7 @@ command.
 
 .. topic:: =: 
 
-    .. code-block::
+    .. code-block:: text
 
         Syntax:
             c =: 5*unit | unit1, unit2, decimals | label, *num,nonum*
@@ -471,7 +471,7 @@ Reads and inserts .html and .htm files into *doc*.
 
 .. topic:: | PUBLISH |
 
-    .. code-block::
+    .. code-block:: text
 
         Syntax:
             | PUBLISH | ini relative path | *rst2pdf, texpdf, tex, hmtl* 
