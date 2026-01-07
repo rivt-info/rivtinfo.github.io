@@ -439,7 +439,7 @@ Appends or prepends a PDF file to the *doc*. The title parameter generates an
 Appendix cover page with the specified title. A "-" omits the over page. For
 HTML *docs* the file is inserted as a donwload link.
 
-.. topic:: | PUBLISH |
+.. topic:: | ATTACHPDF |
 
     .. code-block:: text
 
@@ -467,17 +467,17 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-Reads and inserts .html and .htm files into *doc*. 
+Publishes a *doc*. 
 
 .. topic:: | PUBLISH |
 
     .. code-block:: text
 
         Syntax:
-            | PUBLISH | ini relative path | *rst2pdf, texpdf, tex, hmtl* 
+            | PUBLISH | ini relative path | rst2pdf, texpdf, tex, hmtl
     
         Example:
-            | PUBLISH | ini relative path | *rst2pdf, texpdf, tex, hmtl* 
+            | PUBLISH | ini relative path | rst2pdf
 
 =========== ==========================
 API Scope     Doc
