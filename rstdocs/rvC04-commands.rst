@@ -24,7 +24,7 @@ rv.V       c <=: expression | unit1, unit2, decimal | label                :ref:
 rv.V       a < c  | decimal | text, align, color                           :ref:`Compare values`
 rv.T, V    \| PYTHON | relative path | namespace                           :ref:`Python file`
 rv.T       \| MARKUP | relative path | type                                :ref:`Markup file`
-rv.D       \| PDFATTACH | relative path | place, title                     :ref:`Attach PDF`   
+rv.D       \| ATTACHPDF | relative path | place, title                     :ref:`Attach PDF`   
 rv.D       \| PUBLISH | ini rel. path | type                               :ref:`Publish doc` 
 ========== ============================================================== =====================
 
@@ -80,7 +80,7 @@ Doc Types     text, PDF, HTML
 
     - *literal*
     - *python*
-    - *bash*
+    - *text*
     - *sh*
     - *cmd*
     - *reStructuredText*
@@ -129,7 +129,7 @@ Doc Types     text, PDF, HTML
     relative to the report root (rivt file folder). If the doc is a 
     :term:`single doc` the file is read from the rivt file folder.
 
-    .. code-block:: bash
+    .. code-block:: text
 
         Syntax:
             | TABLE | rel path | title, max width, rows, *l;c;r*, *num,nonum*, *head;nohead* 
@@ -160,8 +160,8 @@ of the image.
 
 If a *doc* is part of a report and no path is specified, the file is assumed to
 be in the default folder */src/img/* . Otherwise the path needs to be specified
-relative to the report root (rivt file folder). If the doc is a 
-:term:`single doc` the file is read from the rivt file folder.
+relative to the report root (rivt file folder). If the doc is a :term:`single doc` 
+the file is read from the rivt file folder.
 
 .. topic:: | IMAGE | 
 
@@ -202,7 +202,7 @@ relative to the report root (rivt file folder). If the doc is a
 
 .. topic:: | IMAGE2 | 
 
-    .. code-block:: bash
+    .. code-block:: text
 
         Syntax:
             | IMAGE2 | relative path | cap1, cap2, scale1, scale2, *num;nonum*, *num;nonum* 
@@ -243,9 +243,9 @@ read from prior calculated values, they will be found in the */stored/vals*
 folder. If the doc is a :term:`single doc` the file is read from the rivt file
 folder.
 
-.. topic::  | VALTABLE| 
+.. topic::  | VALTABLE | 
 
-    .. code-block:: bash
+    .. code-block:: text
 
         Syntax:
             | VALTABLE | relative path | title, rows, *num;nonum*
@@ -287,8 +287,6 @@ command.
     
         Example:
             D_1 =: 10*IN | IN, M, 3 | beam depth, num
-  
-
   
 =========== ==========================
 API Scope     Values
@@ -381,12 +379,18 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic:: | PYTHON | relative path | *rvspace*; user space
-   
-    | PYTHON | script1.py | rv-space
-
 Executes Python code in the *rivt namespace* or user specified namespace. File
 paths used in the script are relative to the *rivt file* folder.
+
+.. topic:: | PYTHON |
+
+    .. code-block::
+
+        Syntax:
+            | PYTHON | relative path | *rvspace*; user space
+  
+        Example:
+            | PYTHON | script1.py | rv-space
 
 =========== ==========================
 API Scope     Values, Tools
@@ -403,12 +407,18 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic:: | MARKUP | relative path | *rst, html, latex*
-
-    | SCRIPT | page1.html | html
-
 Inserts HTML into an HTML *doc*, LaTeX into a PDF *doc*, and reStructuredText
 into either PDF or HTML. LaTeX requires the installation of *texlive*.
+
+.. topic:: | MARKUP |
+
+    .. code-block::
+
+        Syntax:
+            | MARKUP | relative path | *rst, html, latex*
+  
+        Example:
+            | MARKUP | script.rst | rst
 
 =========== ==========================
 API Scope     Tools
@@ -418,45 +428,60 @@ Doc Types     text, PDF, HTML
 
 .. _Attach PDF:
 
-**[12t]** Attach PDF
+**[13t]** Attach PDF
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
-
-.. topic:: | PDFATTACH | relative path | *front;back*, title
-
-    | ATTACHPDF | file.pdf | back, -
 
 Appends or prepends a PDF file to the *doc*. The title parameter generates an
 Appendix cover page with the specified title. A "-" omits the over page. For
 HTML *docs* the file is inserted as a donwload link.
 
+.. topic:: | PUBLISH |
+
+    .. code-block::
+
+        Syntax:
+            | ATTACHPDF | relative path | *front;back*, title
+  
+        Example:
+            | ATTACHPDF | relative path | *front;back*, title
+ 
+
+
+
 =========== ==========================
-API Scope     Values, Tools
-File Types    .csv
+API Scope     Doc
+File Types    tex, html, text, pdf
 Doc Types     text, PDF, HTML
 =========== ==========================
 
 .. _Publish doc:
 
-**[13t]** Publish doc
+**[14t]** Publish doc
 -------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: | PUBLISH | ini relative path | *rst2pdf, texpdf, tex, hmtl* 
-
-    | PUBLISH | ini relative path | *rst2pdf, texpdf, tex, hmtl* 
-
 Reads and inserts .html and .htm files into *doc*. 
 
+.. topic:: | PUBLISH |
+
+    .. code-block::
+
+        Syntax:
+            | PUBLISH | ini relative path | *rst2pdf, texpdf, tex, hmtl* 
+    
+        Example:
+            | PUBLISH | ini relative path | *rst2pdf, texpdf, tex, hmtl* 
+
 =========== ==========================
-API Scope     Values, Tools
-File Types    .csv
+API Scope     Doc
+File Types    tex, html, text, pdf
 Doc Types     text, PDF, HTML
 =========== ==========================
 
