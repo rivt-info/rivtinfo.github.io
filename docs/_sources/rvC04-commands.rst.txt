@@ -132,7 +132,7 @@ relative to the report root (rivt file folder). If the doc is a
     .. code-block:: text
 
         Syntax:
-            | TABLE | rel path | title, max width, rows, *l;c;r*, *num,nonum*, *head;nohead* 
+            | TABLE | rel path | title, max width, rows, l;c;r, head;nohead, num;nonum 
 
         Example:
             | TABLE | file1.csv | Forces, 30, 0:0, c, nohead, num 
@@ -168,7 +168,7 @@ the file is read from the rivt file folder.
     .. code-block:: text
 
         Syntax:
-            | IMAGE | relative path | caption, scale,  *num;nonum*
+            | IMAGE | relative path | caption, scale, num;nonum
 
         Example:
             | IMAGE | file1.png | Map, 0.5, num
@@ -205,14 +205,14 @@ relative to the report root (rivt file folder). If the doc is a
     .. code-block:: text
 
         Syntax:
-            | IMAGE2 | relative path | cap1, cap2, scale1, scale2, *num;nonum*, *num;nonum* 
+            | IMAGE2 | relative path | cap1, cap2, scale1, scale2, num;nonum, num;nonum
 
         Example:
-            | IMAGE2 | file1.png, file2.png | Map, Photo, .5,.5, num, nonum
+            | IMAGE2 | file1.png, file2.png | Map, Photo, .5,.5, num, num
 
 =========== ==========================
 API Scope     Insert, Values
-File Types    PNG, JPG 
+File Types    PNG, JPG jenn
 Doc Types     PDF, HTML
 =========== ==========================
 
