@@ -70,7 +70,7 @@ Doc Types     text, PDF, HTML
 
 .. _Indent text block:
 
-**[3t]** Indent text block
+**[3t]** Indent text 
 ----------------------------------------------
 
 .. raw:: html
@@ -103,7 +103,7 @@ Doc Types     text, PDF, HTML
 
 .. _Indent italic block:
 
-**[4t]** Indent italic block
+**[4t]** Indent italic 
 ------------------------------------------------
 
 .. raw:: html
@@ -137,7 +137,7 @@ Doc Types     text, PDF, HTML
 
 .. _Endnotes block:
 
-**[5t]** Endnotes block
+**[5t]** Endnotes 
 -------------------------------------------    
 
 .. raw:: html
@@ -177,7 +177,7 @@ Doc Types     text, PDF, HTML
 
 .. _Text block:
 
-**[6t]** Text block
+**[6t]** Text 
 ------------------------------------------------
 
 .. raw:: html
@@ -217,7 +217,7 @@ Doc Types     text, PDF, HTML
 
 .. _Topic block:
 
-**[7t]** Topic block
+**[7t]** Topic 
 ------------------------------------------------
 
 .. raw:: html
@@ -248,7 +248,7 @@ Doc Types     text, PDF, HTML
 
 .. _Box block:
 
-**[8t]** Box block
+**[8t]** Box 
 ------------------------------------------------
 
 .. raw:: html
@@ -281,7 +281,7 @@ Doc Types     text, PDF, HTML
 
 .. _Python block:
 
-**[9t]** Python block
+**[9t]** Python 
 ------------------------------------------------
 
 .. raw:: html
@@ -363,7 +363,7 @@ Doc Types     text, PDF, HTML
     ..  code-block:: text
 
         # defaults
-        _[[METADATA]] meta
+        _[[METADATA]] optional label
         authors: 
         version: 0.0.0
         email:
@@ -385,7 +385,6 @@ Doc Types     text, PDF, HTML
         _[[END]]
 
 
-
 =========== ==========================
 API Scope     Tools
 Doc Types     text, PDF, HTML
@@ -393,7 +392,7 @@ Doc Types     text, PDF, HTML
 
 .. _Layout block:
 
-**[12t]** Layout block
+**[12t]** Layout 
 ------------------------------------------------
 
 .. raw:: html
@@ -402,19 +401,21 @@ Doc Types     text, PDF, HTML
 
 Overrides default layout settings.
 
-.. code-block:: text
+.. topic:: _[[LAYOUT]] 
 
-        Syntax:    
-            _[[Python]] topic title
-            code
-            ...
-            _[[END]]
+    .. code-block:: text
 
-        Example:                    
-            _[[LAYOUT]] optional label
-            docnameS = ""
-            footerL = [date, docname, page]    
-            _[[END]]
+            Syntax:    
+                _[[LAYOUT]] optional label
+                variables
+                ...
+                _[[END]]
+
+            Example:                    
+                _[[LAYOUT]] 
+                docnameS = ""
+                footerL = [date, docname, page]    
+                _[[END]]
 
 
 =========== ==========================
@@ -424,7 +425,7 @@ Doc Types     text, PDF, HTML
 
 .. _End block:
 
-**[13t]** End block
+**[13t]** End 
 ------------------------------------------------
 
 .. raw:: html
@@ -435,9 +436,13 @@ Doc Types     text, PDF, HTML
     
     Terminates a block tag.
 
-.. code-block:: text
-        
-    _[[END]] 
+    .. code-block:: text
+
+        Syntax:
+            _[[NEWPAGE]] optional label 
+
+        Example:    
+            _[[END]] 
 
 
 =========== ==========================
@@ -447,20 +452,24 @@ Doc Types     text, PDF, HTML
 
 .. _Start new page:
 
-**[14t]** Start new page
+**[14t]** New page
 ------------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-.. topic:: _[[NEWPAGE]] optional label
+.. topic:: _[[NEWPAGE]]
     
     Starts new page.
 
-.. code-block:: text
-        
-    _[[NEWPAGE]] 
+    .. code-block:: text
+
+        Syntax:
+            _[[NEWPAGE]] optional label 
+
+        Example:
+            _[[NEWPAGE]] 
 
 
 =========== ==========================
