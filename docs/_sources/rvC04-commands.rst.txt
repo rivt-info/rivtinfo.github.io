@@ -218,7 +218,7 @@ Doc Types     PDF, HTML
 
 .. _Values file:
 
-**[7t]**  Values file
+**[7t]**  Valtable file
 ------------------------------------------------
 
 .. raw:: html
@@ -380,11 +380,11 @@ Doc Types     text, PDF, HTML
     <hr>
 
 Executes Python code in the *rivt namespace* or user specified namespace. File
-paths used in the script are relative to the *rivt file* folder.
+paths used in the script are relative to the root *rivt* folder.
 
 .. topic:: | PYTHON |
 
-    .. code-block::
+    .. code-block:: text
 
         Syntax:
             | PYTHON | relative path | *rvspace*; user space
@@ -412,7 +412,7 @@ into either PDF or HTML. LaTeX requires the installation of *texlive*.
 
 .. topic:: | MARKUP |
 
-    .. code-block::
+    .. code-block:: text
 
         Syntax:
             | MARKUP | relative path | *rst, html, latex*
@@ -441,7 +441,7 @@ HTML *docs* the file is inserted as a donwload link.
 
 .. topic:: | PUBLISH |
 
-    .. code-block::
+    .. code-block:: text
 
         Syntax:
             | ATTACHPDF | relative path | *front;back*, title
