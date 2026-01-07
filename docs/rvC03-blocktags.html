@@ -553,11 +553,11 @@ Example:
 <section id="t-endnotes-block">
 <span id="endnotes-block"></span><h2><strong>[5t]</strong> Endnotes block<a class="headerlink" href="#t-endnotes-block" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">_[[ENDNOTE]]</p>
+<p class="topic-title">_[[ENDNOTES]]</p>
 <p>Assigns numbers and formats endnotes in order of processing. Each endnote is
 separated by a blank line and is numbered in order of occurrence.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    _[[ENDNOTE]] label
+    _[[ENDNOTES]] label
     Endnote 1.
 
     Endnote 2.
@@ -565,7 +565,7 @@ separated by a blank line and is numbered in order of occurrence.</p>
     _[[END]]
 
 Example:
-    _[[ENDNOTE]] ACI citations
+    _[[ENDNOTES]] ACI citations
     This endnote is assigned to the first endnote tag (_[#]) in order of
     of processing.
 
@@ -598,7 +598,7 @@ specifies formatting and syntax coloring.  Languages include:</p>
 <ul class="simple">
 <li><p><em>literal</em></p></li>
 <li><p><em>python</em></p></li>
-<li><p><em>bash</em></p></li>
+<li><p><em>text</em></p></li>
 <li><p><em>sh</em></p></li>
 <li><p><em>cmd</em></p></li>
 </ul>
@@ -634,16 +634,16 @@ Example:
 <hr><aside class="topic">
 <p class="topic-title">_[[TOPIC]]</p>
 <p>Formats a topic block.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Syntax:
-<span class="w">    </span>_<span class="o">[[</span>TOPIC<span class="o">]]</span><span class="w"> </span>topic<span class="w"> </span>title
-<span class="w">    </span>text
-<span class="w">    </span>...
-<span class="w">    </span>_<span class="o">[[</span>END<span class="o">]]</span>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    _[[TOPIC]] topic title
+    text
+    ...
+    _[[END]]
 
 Example:
-<span class="w">    </span>_<span class="o">[[</span>TOPIC<span class="o">]]</span><span class="w"> </span>topic<span class="w"> </span>title
-<span class="w">    </span>Text<span class="w"> </span>related<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>topic.
-<span class="w">    </span>_<span class="o">[[</span>END<span class="o">]]</span>
+    _[[TOPIC]] topic title
+    Text related to the topic.
+    _[[END]]
 </pre></div>
 </div>
 </aside>
@@ -664,18 +664,18 @@ Example:
 <hr><aside class="topic">
 <p class="topic-title">_[[BOX]]</p>
 <p>Draws a box around the block of text.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Syntax:
-<span class="w">    </span>_<span class="o">[[</span>BOX<span class="o">]]</span><span class="w"> </span>optional<span class="w"> </span>label
-<span class="w">    </span>text
-<span class="w">    </span>...
-<span class="w">    </span>_<span class="o">[[</span>END<span class="o">]]</span>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    _[[BOX]] optional label
+    text
+    ...
+    _[[END]]
 
 Example:
-<span class="w">    </span>_<span class="o">[[</span>BOX<span class="o">]]</span>
-<span class="w">    </span>This<span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span>sentence.
-<span class="w">    </span>A<span class="w"> </span>second<span class="w"> </span>sentence.
-<span class="w">    </span>A<span class="w"> </span>box<span class="w"> </span>is<span class="w"> </span>drawn<span class="w"> </span>around<span class="w"> </span>the<span class="w"> </span>sentences.
-<span class="w">    </span>_<span class="o">[[</span>END<span class="o">]]</span>
+    _[[BOX]]
+    This is a sentence.
+    A second sentence.
+    A box is drawn around the sentences.
+    _[[END]]
 </pre></div>
 </div>
 </aside>
@@ -698,15 +698,15 @@ Example:
 <p>Executes Python script in the <em>rivt namespace</em> or a user specified namespace.
 File paths in the script are relative to the <em>rivt file</em> folder.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Syntax</span><span class="p">:</span>
-    <span class="n">_</span><span class="p">[[</span><span class="n">TOPIC</span><span class="p">]]</span> <span class="n">topic</span> <span class="n">title</span>
-    <span class="n">text</span>
+    <span class="n">_</span><span class="p">[[</span><span class="n">Python</span><span class="p">]]</span> <span class="n">topic</span> <span class="n">title</span>
+    <span class="n">code</span>
+    <span class="o">...</span>
     <span class="n">_</span><span class="p">[[</span><span class="n">END</span><span class="p">]]</span>
 
 <span class="n">Example</span><span class="p">:</span>
     <span class="n">_</span><span class="p">[[</span><span class="n">PYTHON</span><span class="p">]]</span> <span class="o">*</span><span class="n">rvspace</span><span class="o">*</span><span class="p">;</span> <span class="n">user</span> <span class="n">namespace</span>
-    <span class="n">code</span>
-    <span class="n">code</span>
-    <span class="o">...</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="mi">1</span><span class="o">*</span><span class="n">inch</span> <span class="o">+</span> <span class="mf">2.2</span><span class="o">*</span><span class="n">ft</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
     <span class="n">_</span><span class="p">[[</span><span class="n">END</span><span class="p">]]</span>
 </pre></div>
 </div>
@@ -758,31 +758,31 @@ Example:
 <section id="t-metadata">
 <span id="meta-block"></span><h2><strong>[11t]</strong> Metadata<a class="headerlink" href="#t-metadata" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">_[[METADATA]] label</p>
+<p class="topic-title">_[[METADATA]]</p>
 <p><em>Metadata</em> is written to the <em>api-log.py</em> file and is converted internally
 to Python dictionaries with a name taken from the label e.g. <em>rvmeta_D</em> or
 <em>rvmeta_authorsD</em>/</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># defaults</span>
-_<span class="o">[[</span>METADATA<span class="o">]]</span><span class="w"> </span>meta
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span># defaults
+_[[METADATA]] meta
 authors:
-version:<span class="w"> </span><span class="m">0</span>.0.0
+version: 0.0.0
 email:
 repo:
-license:<span class="w"> </span>https://opensource.org/license/mit
-fork1:<span class="w"> </span>author,<span class="w"> </span>version,<span class="w"> </span>email,<span class="w"> </span>repo
-fork2:<span class="w"> </span>author,<span class="w"> </span>version,<span class="w"> </span>email,<span class="w"> </span>repo
-_<span class="o">[[</span>END<span class="o">]]</span>
+license: https://opensource.org/license/mit
+fork1: author, version, email, repo
+fork2: author, version, email, repo
+_[[END]]
 
-<span class="c1"># example - author dicitionary</span>
-_<span class="o">[[</span>METADATA<span class="o">]]</span><span class="w"> </span>authors
-authors:<span class="w"> </span>rholland,<span class="w"> </span>rward
-version:<span class="w"> </span><span class="m">0</span>.1.1
-email:<span class="w"> </span>rholland@email.com
-repo:<span class="w"> </span>https://github.com/rivt-info/rivt-simple-doc
-license:<span class="w"> </span>https://opensource.org/license/mit
-fork1:<span class="w"> </span>author,<span class="w"> </span>version,<span class="w"> </span>email,<span class="w"> </span>repo
-fork1:<span class="w"> </span>author,<span class="w"> </span>version,<span class="w"> </span>email,<span class="w"> </span>repo
-_<span class="o">[[</span>END<span class="o">]]</span>
+# example - author dicitionary
+_[[METADATA]] authors
+authors: rholland, rward
+version: 0.1.1
+email: rholland@email.com
+repo: https://github.com/rivt-info/rivt-simple-doc
+license: https://opensource.org/license/mit
+fork1: author, version, email, repo
+fork1: author, version, email, repo
+_[[END]]
 </pre></div>
 </div>
 </aside>
@@ -800,14 +800,20 @@ _<span class="o">[[</span>END<span class="o">]]</span>
 </section>
 <section id="t-layout-block">
 <span id="layout-block"></span><h2><strong>[12t]</strong> Layout block<a class="headerlink" href="#t-layout-block" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[LAYOUT]] optional label
-docnameS = &quot;&quot;
-pdfheaderL = []
-footerL = []
-_[[END]]
+<hr><p>Overrides default layout settings.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    _[[Python]] topic title
+    code
+    ...
+    _[[END]]
+
+Example:
+    _[[LAYOUT]] optional label
+    docnameS = &quot;&quot;
+    footerL = [date, docname, page]
+    _[[END]]
 </pre></div>
 </div>
-<p>Overrides default layout settings.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -823,7 +829,7 @@ _[[END]]
 <section id="t-end-block">
 <span id="end-block"></span><h2><strong>[13t]</strong> End block<a class="headerlink" href="#t-end-block" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
-<p class="topic-title">_[[END]] optional label</p>
+<p class="topic-title">_[[END]]</p>
 <p>Terminates a block tag.</p>
 </aside>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_[[END]]

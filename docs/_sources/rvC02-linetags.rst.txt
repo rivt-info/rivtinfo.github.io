@@ -167,7 +167,7 @@ Doc Types     PDF, HTML
 
 Links a term to the glossary.
 
-.. topic:: text _[G] term
+.. topic:: _[G] 
 
     .. code-block:: text
 
@@ -274,7 +274,7 @@ Doc Types     PDF, HTML
 
 Inserts the value of  var_name _[V] in the sentence.
 
-.. topic:: text _[V] var_name text
+.. topic:: _[V]
 
     .. code-block:: text
 

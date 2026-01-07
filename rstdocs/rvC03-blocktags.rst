@@ -45,7 +45,7 @@ whether rivt file processing waits for the script to complete before
 continuing. The open parameter specifies whether to keep the shell window open
 after execution.
 
-.. topic::  _[[SHELL]] 
+.. topic:: _[[SHELL]] 
 
     .. code-block:: text
         
@@ -96,8 +96,6 @@ Indents text block the specified number of spaces.
                 indented 8 spaces.
                 _[[END]]
 
-
-
 =========== ==========================
 API Scope     Insert
 Doc Types     text, PDF, HTML
@@ -146,7 +144,7 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic:: _[[ENDNOTE]] 
+.. topic:: _[[ENDNOTES]] 
 
     Assigns numbers and formats endnotes in order of processing. Each endnote is
     separated by a blank line and is numbered in order of occurrence.
@@ -154,7 +152,7 @@ Doc Types     text, PDF, HTML
     .. code-block:: text
 
             Syntax:
-                _[[ENDNOTE]] label
+                _[[ENDNOTES]] label
                 Endnote 1.
 
                 Endnote 2. 
@@ -162,7 +160,7 @@ Doc Types     text, PDF, HTML
                 _[[END]]    
     
             Example:
-                _[[ENDNOTE]] ACI citations
+                _[[ENDNOTES]] ACI citations
                 This endnote is assigned to the first endnote tag (_[#]) in order of
                 of processing.
 
@@ -171,8 +169,6 @@ Doc Types     text, PDF, HTML
 
                 This is a third endnote.
                 _[[END]] 
-
-
 
 =========== ==========================
 API Scope     Insert
@@ -188,14 +184,14 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic::  _[[TEXT]] 
+.. topic:: _[[TEXT]] 
 
     Reads and formats text and code. The language parameter
     specifies formatting and syntax coloring.  Languages include:
 
     - *literal*
     - *python*
-    - *bash*
+    - *text*
     - *sh*
     - *cmd*
 
@@ -214,7 +210,6 @@ Doc Types     text, PDF, HTML
                 a = 1 + 3
                 _[[END]]
 
-
 =========== ==========================
 API Scope     Insert
 Doc Types     text, PDF, HTML
@@ -229,11 +224,11 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic::  _[[TOPIC]] 
+.. topic:: _[[TOPIC]] 
 
     Formats a topic block.
 
-    .. code-block:: bash
+    .. code-block:: text
 
             Syntax:    
                 _[[TOPIC]] topic title
@@ -260,11 +255,11 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic::  _[[BOX]] 
+.. topic:: _[[BOX]] 
 
     Draws a box around the block of text.
 
-    .. code-block:: bash
+    .. code-block:: text
 
             Syntax:    
                 _[[BOX]] optional label
@@ -293,7 +288,7 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic::  _[[PYTHON]] 
+.. topic:: _[[PYTHON]] 
 
     Executes Python script in the *rivt namespace* or a user specified namespace.
     File paths in the script are relative to the *rivt file* folder.
@@ -301,17 +296,16 @@ Doc Types     text, PDF, HTML
     .. code-block:: python
 
             Syntax:    
-                _[[TOPIC]] topic title
-                text
-                _[[END]]
-
-            Example:    
-                _[[PYTHON]] *rvspace*; user namespace
-                code
+                _[[Python]] topic title
                 code
                 ...
                 _[[END]]
 
+            Example:    
+                _[[PYTHON]] *rvspace*; user namespace
+                b = 1*inch + 2.2*ft
+                print(b)
+                _[[END]]
 
 =========== ==========================
 API Scope     Value, Tool
@@ -330,7 +324,7 @@ Doc Types     text, PDF, HTML
 Inserts HTML into an HTML *doc*, LaTeX into a PDF *doc*, and reStructuredText
 into either PDF or HTML. 
 
-.. topic::  _[[MARKUP]] 
+.. topic:: _[[MARKUP]] 
         
     .. code-block:: text
             
@@ -346,8 +340,6 @@ into either PDF or HTML.
             ...
             _[[END]]
 
- 
-
 =========== ==========================
 API Scope     Tool
 Doc Types     text, PDF, HTML
@@ -362,13 +354,13 @@ Doc Types     text, PDF, HTML
 .. raw:: html
 
     <hr>
-.. topic:: _[[METADATA]] label
+.. topic:: _[[METADATA]]
     
     *Metadata* is written to the *api-log.py* file and is converted internally
     to Python dictionaries with a name taken from the label e.g. *rvmeta_D* or
     *rvmeta_authorsD*/
 
-    ..  code-block:: bash
+    ..  code-block:: text
 
         # defaults
         _[[METADATA]] meta
@@ -399,8 +391,6 @@ API Scope     Tools
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-
-
 .. _Layout block:
 
 **[12t]** Layout block
@@ -410,15 +400,22 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. code-block:: text
-        
-    _[[LAYOUT]] optional label
-    docnameS = ""
-    pdfheaderL = []
-    footerL = []    
-    _[[END]]
-
 Overrides default layout settings.
+
+.. code-block:: text
+
+        Syntax:    
+            _[[Python]] topic title
+            code
+            ...
+            _[[END]]
+
+        Example:                    
+            _[[LAYOUT]] optional label
+            docnameS = ""
+            footerL = [date, docname, page]    
+            _[[END]]
+
 
 =========== ==========================
 API Scope     Doc
@@ -434,7 +431,7 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-.. topic:: _[[END]] optional label
+.. topic:: _[[END]] 
     
     Terminates a block tag.
 
