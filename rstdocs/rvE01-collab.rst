@@ -8,7 +8,7 @@
 
     <hr>
 
-A primary motivation for *rivt* is to facilitate cooperative improvement of
+A central motivation for *rivt* is to facilitate cooperative improvement of
 files and docs, and a reduction of reptitive work. As a Python open source
 project a number of tools are available to faciliate these goals. Cooperative
 work and community improvements can happen in a number of ways including:

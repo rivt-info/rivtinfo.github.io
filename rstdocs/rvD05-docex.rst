@@ -1,13 +1,13 @@
-**A.4 Example**
+**D.4 Example**
 =========================
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
 
 **[1]** rivt file
 -----------------------------------------------
+
+
+.. raw:: html
+
+    <hr>
 
 This is a small rivt file that publishes a single *doc* The report folders are
 not used. It has 4 API functions - two of them are
