@@ -9,14 +9,13 @@
     <hr>
 
 *rivt* is an open source Python project that includes :term:`rivtlib` and
-approximately two dozen additional :doc:`Python packages<rvB02-python>`. When
-*rivt* is installed, *rivt files* may be edited using the light weight IDE
-`Pyzo <https://pyzo.org/>`_ . *rivt* is also designed to work with other open
-source programs and tools in an integrated framework that adds extends editing
-and analysis capabilities.
+approximately two dozen additional :doc:`Python packages<rvB02-python>`. The 
+IDE `Pyzo <https://pyzo.org/>`_ is installed with *rivt* as an effective 
+lightweight program for editing and publishing *rivt docs*. 
 
-There are four installation methods for *rivt* and its framework, each with
-varying degrees of system and program integration.
+*rivt* is designed to wrork in an integrated framework with other open source
+programs. In the installation methods described below some install *rivt* 
+and some install a *rivt framework*. 
 
 .. topic:: rivtuv
 
@@ -31,15 +30,26 @@ varying degrees of system and program integration.
 .. topic:: rivt system
 
     *rivt* may be installed at the system level using standalone installers.
-    See :ref:`rivt system <rivt-system>` for procedure.
+    See :ref:`rivt system install` for procedure.
 
 .. raw:: html
 
     <hr>
 
-.. topic:: rivt framework
+.. topic:: rivtzip
 
-    The *rivt framework* includes *rivt* and additional integrated programs and
+    *rivtzip* installs *rivtframework1*. It is is a single folder, portable 
+    and isolated version of *rivt* integrated with *VSCode*.
+
+    See :ref:`rivtzip <rivt-zip>` for procedure.
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: rivt framework2
+
+    *rivt framework1* includes *rivt* and additional integrated programs and
     tools with their own installers. It includes important productivity tools
     for editing, document control and diagramming.
     
@@ -49,19 +59,6 @@ varying degrees of system and program integration.
     #. *QCAD* for diagramming.
 
     See :ref:`rivt framework <rivt-framework>` for procedure.
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: rivtzip
-
-    *rivtzip* is a single folder, portable and isolated version of *rivt* that
-    is integrated with *VSCode*.
-
-
-    See :ref:`rivtzip <rivt-zip>` for procedure.
-
 
 .. _rivt-uv:
 
@@ -110,10 +107,10 @@ method is recommended for most users.
     Some text.
 
 
-.. _rivt-system:
+.. _rivt system install:
 
-**[3t]** Install *rivt system*
-----------------------------------
+**[3t]** rivt system install 
+--------------------------------
 
 .. raw:: html
 
@@ -131,7 +128,7 @@ A list of the dependencies and *requirements.txt* file is
 
 .. _rivt-framework:
 
-**[4t]** Install *rivt framework*
+**[4t]** Install rivt framework
 ------------------------------------------
 
 .. raw:: html

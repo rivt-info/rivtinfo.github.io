@@ -128,8 +128,6 @@ Doc Types     text, PDF, HTML
                 italicized and indented 4 spaces.
                 _[[END]]
 
-
-
 =========== ==========================
 API Scope     Insert
 Doc Types     text, PDF, HTML

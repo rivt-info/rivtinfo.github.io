@@ -381,7 +381,7 @@
   <section id="c-1-markup">
 <h1><strong>C.1 Markup</strong><a class="headerlink" href="#c-1-markup" title="Link to this heading">#</a></h1>
 <section id="t-rivt-string">
-<h2><strong>[1t]</strong> rivt String<a class="headerlink" href="#t-rivt-string" title="Link to this heading">#</a></h2>
+<h2><strong>[1t]</strong> rivt string<a class="headerlink" href="#t-rivt-string" title="Link to this heading">#</a></h2>
 <hr><p>Each <a class="reference internal" href="rvA01-intro.html"><span class="doc">API function</span></a> takes a triple quoted <a class="reference internal" href="rvA02-terms.html#term-rivt-string"><span class="xref std std-term">rivt
 string</span></a> argument composed of two parts - a <a class="reference internal" href="rvA02-terms.html#term-header-string"><span class="xref std std-term">header string</span></a> followed by a
 <a class="reference internal" href="rvA02-terms.html#term-content-string"><span class="xref std std-term">content string</span></a>.</p>
@@ -398,8 +398,8 @@ Content may include <a class="reference internal" href="rvA02-terms.html#term-ri
 </pre></div>
 </div>
 </section>
-<section id="t-headers">
-<h2><strong>[2t]</strong> Headers<a class="headerlink" href="#t-headers" title="Link to this heading">#</a></h2>
+<section id="t-header-substring">
+<h2><strong>[2t]</strong> Header substring<a class="headerlink" href="#t-header-substring" title="Link to this heading">#</a></h2>
 <hr><p>The <a class="reference internal" href="rvA02-terms.html#term-header"><span class="xref std std-term">header</span></a> starts with a <em>section label</em> followed by vertical bar that
 deliniates three comma separated <em>section parameters</em> that can override default
 behavior. The <em>section label</em> is the section title. They include the following,
@@ -497,8 +497,8 @@ the merged content:</strong></p>
 </pre></div>
 </div>
 </section>
-<section id="t-content-string">
-<h2><strong>[3t]</strong> Content string<a class="headerlink" href="#t-content-string" title="Link to this heading">#</a></h2>
+<section id="t-content-substring">
+<h2><strong>[3t]</strong> Content substring<a class="headerlink" href="#t-content-substring" title="Link to this heading">#</a></h2>
 <hr><p><a class="reference internal" href="rvA02-terms.html#term-content-text"><span class="xref std std-term">Content text</span></a> is indented four spaces for legibility and code folding.
 It includes <a class="reference internal" href="rvC02-linetags.html"><span class="doc">line tags</span></a>,
 <a class="reference internal" href="rvC03-blocktags.html"><span class="doc">block tags</span></a> and
@@ -541,28 +541,29 @@ results and define variables.</p>
 <p>File paths are specified relative to the <em>report</em> and <em>rivt file</em> folder.
 The <em>rivt report</em> folder structure is described <a class="reference internal" href="rvD03-folders.html"><span class="doc">here.</span></a>.</p>
 <p>If the path is ommitted the default path for each command is applied.</p>
-</section>
-<section id="t-markup-key">
-<h2><strong>[4t]</strong> Markup Key<a class="headerlink" href="#t-markup-key" title="Link to this heading">#</a></h2>
-<hr><p>Tag and Command syntax for each API type is defined and described using the
-following format.</p>
-<aside class="topic">
-<p class="topic-title">_[TAG] or | COMMAND |</p>
-<p>Description</p>
-<blockquote>
-<div><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    _[TAG] or | COMMAND | syntax
+<p>Markup tags and commands is described in detail <a class="reference internal" href="#"><span class="doc">here</span></a>. Tag and Command
+syntax for each API type is defined and described using the following format:</p>
+<p style="border-width:2px; border-style:solid;
+border-color:#49b2c3;padding: 1em;">
 
-Example:
-    This is a sentence. _[C]
-</pre></div>
-</div>
-</div></blockquote>
-</aside>
-</section>
+<b>Markup Key</b><br>
+
+.. topic::  _[TAG] or | COMMAND |
+
+    Description
+
+    .. code-block:: text
+
+        Syntax:
+            _[TAG] or | COMMAND | syntax
+
+        Example:
+
+            This is a sentence. _[C]
+    </p></section>
 <section id="t-folders">
-<h2><strong>[5t]</strong> Folders<a class="headerlink" href="#t-folders" title="Link to this heading">#</a></h2>
-<hr><p>Folders organize files in standard locations to simplify <em>docs</em> and <em>report</em>
+<h2><strong>[6t]</strong> Folders<a class="headerlink" href="#t-folders" title="Link to this heading">#</a></h2>
+<hr><p>Folders organize files in standard locations to simplify <em>doc</em> and <em>report</em>
 generation.</p>
 <p style="border-width:2px; border-style:solid;
 border-color:#49b2c3;padding: 1em;">
@@ -753,12 +754,11 @@ marked with double vertical bars ( || ).</p><p><strong>Folders</strong></p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rivt-string"><strong>[1t]</strong> rivt String</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-headers"><strong>[2t]</strong> Headers</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-content-string"><strong>[3t]</strong> Content string</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rivt-string"><strong>[1t]</strong> rivt string</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-header-substring"><strong>[2t]</strong> Header substring</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-content-substring"><strong>[3t]</strong> Content substring</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-tags-and-commands"><strong>[5t]</strong> Tags and Commands</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-markup-key"><strong>[4t]</strong> Markup Key</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-folders"><strong>[5t]</strong> Folders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-folders"><strong>[6t]</strong> Folders</a></li>
 </ul>
   </nav></div>
 

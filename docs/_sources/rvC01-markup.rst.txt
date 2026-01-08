@@ -1,7 +1,7 @@
 **C.1 Markup**
 ==================
 
-**[1t]** rivt String
+**[1t]** rivt string
 ----------------------------------
 
 .. raw:: html
@@ -28,8 +28,8 @@ Content may include :term:`rivt markup` and other arbitrary utf-8 text.
         """)
 
 
-**[2t]** Headers 
--------------------------
+**[2t]** Header substring 
+----------------------------
 
 .. raw:: html
 
@@ -106,7 +106,7 @@ the merged content:**
         
         """)
 
-**[3t]** Content string
+**[3t]** Content substring
 --------------------------
 
 .. raw:: html
@@ -169,37 +169,38 @@ The *rivt report* folder structure is described :doc:`here. <rvD03-folders>`.
 
 If the path is ommitted the default path for each command is applied. 
 
-**[4t]** Markup Key
-----------------------------------
+Markup tags and commands is described in detail :doc:`here <rvC01-markup>`. Tag and Command
+syntax for each API type is defined and described using the following format:
+
+.. raw:: html
+
+    <p style="border-width:2px; border-style:solid; 
+    border-color:#49b2c3;padding: 1em;">
+
+    <b>Markup Key</b><br>
+
+    .. topic::  _[TAG] or | COMMAND |
+
+        Description
+
+        .. code-block:: text
+
+            Syntax:
+                _[TAG] or | COMMAND | syntax
+
+            Example:
+ 
+                This is a sentence. _[C] 
+        </p>
+
+**[6t]** Folders
+---------------------------
 
 .. raw:: html
 
     <hr>
 
-Tag and Command syntax for each API type is defined and described using the
-following format.
-
-
-.. topic::  _[TAG] or | COMMAND |
-
-   Description
-
-    .. code-block:: text
-
-        Syntax:
-            _[TAG] or | COMMAND | syntax
-
-        Example:
-            This is a sentence. _[C] 
-
-**[5t]** Folders
------------------------
-
-.. raw:: html
-
-    <hr>
-
-Folders organize files in standard locations to simplify *docs* and *report*
+Folders organize files in standard locations to simplify *doc* and *report*
 generation.
 
 .. raw:: html
@@ -214,6 +215,7 @@ generation.
     are marked with a single vertical bar ( | ).<br>  
     - Folders (including subfolders) that contain *rivtlib* generated files are 
     marked with double vertical bars ( || ).</p>
+
 
 **Folders**
 
