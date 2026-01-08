@@ -10,12 +10,13 @@
 
 *rivt* is an open source software project that simplifies sharing and reuse of
 engineering documents. Engineering documents are more complex than typical word
-and image documents. They generally combine text, images, tables, calculations,
-models and computer code in an organized report. As open source, *rivt* can
-reduce repetitive work and improve document quality through sharing and reuse.
+and image documents. They need to combine text, images, tables, calculations,
+models and computer code in an organized report. As open source, *rivt* is
+designed to reduce repetitive work and improve document quality through sharing
+and reuse.
 
 Although a number of engineering document programs are available, sharing is
-restricted by software design and terms of use. In general:
+restricted by software design and terms of use in the following way:
 
 - documents may come from many incompatible programs
 - frequent software updates are needed to maintain document access
@@ -55,14 +56,14 @@ Jupyter        no       no         no      yes         yes      yes
     .. [6] Collaboration support
 
 
-**[2t]** Overview and API
+**[2t]** Overview
 --------------------------------------------------------------------- 
 
 .. raw:: html
 
     <hr>
 
-A :term:`rivt doc` (document) is published from a :term:`rivt file` 
+A document (:term:`rivt doc`) is published from a :term:`rivt file` 
 written in :term:`rivt markup` and processed by the :term:`rivtlib` Python
 package. A collection of *rivt docs* may be collated as a :term:`rivt report`.
 
@@ -104,7 +105,7 @@ The *rivt API* includes  :ref:`API functions`, :ref:`Markup` and
 
 .. _API functions:
 
-**[2t]** API functions
+**[3t]** API functions
 --------------------------------------------------------------------- 
 
 .. raw:: html
@@ -162,7 +163,7 @@ in *rivt markup*.
 
 .. _Markup:
 
-**[3t]** Markup
+**[4t]** Markup Overview
 ------------------------------------------------------------------------ 
 
 .. raw:: html
@@ -191,7 +192,7 @@ see :doc:`here <rvC01-markup>`.
 
 .. _Files and folders:
 
-**[4t]** Files and folders
+**[4t]** Folder/Files overiew
 --------------------------------------------------------------------- 
 
 .. raw:: html
@@ -275,17 +276,51 @@ The complete folder structure is shown :ref:`here <report-folders>`.
 
 .. _Reports and single docs:
 
-**[5t]** Reports and single docs
+**[5t]** Doc/report overview
 -----------------------------------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-The *singledocB* variable overrides the default report structure and specifies
-that resource files and *docs* are read from and written to the *rivt file*
-folder. It is intended for simpler, standalone *docs* with more limited format
-control. The comment variable is specified immediately after the import
+.. raw:: html
+
+    <hr>
+
+Each :term:`rivt file` outputs a corresponding :term:`doc` in the specified
+format. A doc number
+has the form:
+
+.. code-block:: text
+
+    rvAnn-filename.py
+
+where rv is a required prefix, A is an alphanumeric character and nn are two
+digit non-negative integers.  
+
+A *rivt report* is organized using the rivt *doc numbers*. If the *rivt file*
+names are:
+
+.. code-block:: bash
+
+    rvA01-filename.py
+    rv105-filename.py
+    rv212-filename.py  
+
+the *report numbers* would be: 
+
+- A.1 (division A, subdivision 1)
+- 1.5 (division 1, subdivision 5)
+- 2.12 (division 2, subdivision 12)
+
+Note that leading zeroes are dropped.  *Docs* are sorted alpha-numerically into
+divisions and subdivisions in the *report*.
+
+*Docs* are assembled from sources and published using a specified folder
+structure. The *singledocB* variable overrides the default report structure and
+specifies that resource files and *docs* are read from and written to the *rivt
+file* folder. It is intended for simpler, standalone *docs* with more limited
+format control. The comment variable is specified immediately after the import
 statement:
 
 .. code:: python
@@ -295,6 +330,8 @@ statement:
     # rv singledocB = True
 
 The default setting is False.
+
+:doc:`here <rvD01-documents>`.
 
 .. toctree::
     :maxdepth: 1

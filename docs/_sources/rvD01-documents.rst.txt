@@ -8,15 +8,18 @@
 
     <hr>
 
-Each :term:`rivt file` outputs a corresponding formatted :term:`doc`. A *rivt
-report* is organized using the rivt *doc numbers*. A doc number has the form
+Each :term:`rivt file` outputs a corresponding formatted :term:`doc`. A doc
+number has the form
 
-.. codeblock:: text
+.. code-block:: text
 
     rvAnn-filename.py
 
 where rv is a required prefix, A is an alphanumeric character and nn are two
-digit non-negative integers. If the *rivt file* names are:
+digit non-negative integers. 
+
+A *rivt report* is organized using the rivt *doc numbers*. If the *rivt file*
+names are:
 
 .. code-block:: bash
 
