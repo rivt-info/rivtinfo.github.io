@@ -122,9 +122,9 @@ rv.R(rS)           **R** un          Run shell commands
 rv.I(rS)           **I** nsert       Insert static resources 
 rv.V(rS)           **V** alues       Calculate values
 rv.T(rS)           **T** ools        Python and markup scripts
+rv.S(rS)           Skip              Skip section (comments and debugging)
 rv.D(rS)           Doc               Publish docs 
-rv.S(rS)           Skip              Skip section
-rv.X(rS)           Exit              Exit rivt (rivt string not processed)
+rv.X(rS)           Exit              Exit rivt (debugging)
 =============== =============== ===========================================
 
 Most of a docs' content is written using the *Insert* (rv.I) and *Value* (rv.v)
@@ -272,7 +272,7 @@ The four rivt subfolders are:
     sections identified in headers, api log files and processing log files. Files
     may be attached to a report.
 
-The complete folder structure is shown :ref:`here <report-folders>`.
+The complete folder structure is shown :ref:`here <report folders>`.
 
 .. _Reports and single docs:
 

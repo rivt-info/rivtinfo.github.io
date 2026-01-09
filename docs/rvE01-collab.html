@@ -179,6 +179,13 @@
   </a>
 </li>
 
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvF01-quickref.html">
+    1.2 Quick Ref
+  </a>
+</li>
+
   </ul>
 </nav></div>
       
@@ -286,6 +293,13 @@
   </a>
 </li>
 
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvF01-quickref.html">
+    1.2 Quick Ref
+  </a>
+</li>
+
   </ul>
 </nav></div>
           
@@ -376,35 +390,49 @@
 <h1><strong>E.1 Collaboration</strong><a class="headerlink" href="#e-1-collaboration" title="Link to this heading">#</a></h1>
 <section id="t-overview">
 <h2><strong>[1t]</strong> Overview<a class="headerlink" href="#t-overview" title="Link to this heading">#</a></h2>
-<hr><p>A central motivation for <em>rivt</em> is to facilitate cooperative improvement of
-files and docs, and a reduction of reptitive work. As a Python open source
-project a number of tools are available to faciliate these goals. Cooperative
-work and community improvements can happen in a number of ways including:</p>
-<p>Contribute to rivtlib at <a class="reference external" href="https://github.com/rivtlib-dev/rivtlib">rivtlib-dev</a>
-and documentation at <a class="reference external" href="https://github.com/rivt-in">rivt-info</a></p>
+   <hr>
+
+As a Python open source project, collaborations and collective rivt file
+improvements can happen in several ways.<ol class="arabic">
+<li><dl class="simple">
+<dt><em>rivt files</em> may be shared by uploading</dt><dd><p><a class="reference internal" href="rvE02-publicrivt.html"><span class="doc">public files</span></a> to repositories
+such as <em>GitHub</em>.</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Public <em>rivt files</em> can be found using the</dt><dd><p><a class="reference internal" href="rvE03-ghsearch.html"><span class="doc">search interface</span></a>. For public files,</p>
 <ul class="simple">
+<li><p>cloned versions may be forked to create different versions.</p></li>
+<li><p>pull requests may provide improvements.</p></li>
+<li><p>issues and bugs may be reported.</p></li>
+</ul>
+<p><em>Public rivt files</em> are identified with the naming convention
+rv-A01-filename.py, in contrast with rvA01-filename for private files.
+After downloading a public rivt file, use the <em>Batch Rename</em> extension to delete the hyphen after <em>rv</em> and convert it to a
+private rivt file.</p>
+</dd>
+</dl>
+</li>
+<li><p>Files may be collaboratively edited in real time using VSCode with the
+extension  <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare">Visual Studio Live Share</a>.
+extension.</p></li>
+<li><p>Contribute to rivtlib at <a class="reference external" href="https://github.com/rivtlib-dev/rivtlib">rivtlib-dev</a>
+and documentation at <a class="reference external" href="https://github.com/rivt-in">rivt-info</a>.</p>
+<blockquote>
+<div><ul class="simple">
 <li><p>report issues and bugs</p></li>
 <li><p>issue pull requests to propose changes</p></li>
 <li><p>contribute to documentation</p></li>
 </ul>
-<p>Share and collaborate with others on rivt files of interest. Relevant projects
-can be found using the search interface <a class="reference internal" href="rvE03-ghsearch.html"><span class="doc">here</span></a>.</p>
-<ul class="simple">
-<li><p>upload the <em>Public</em> rivt folder to public repositories such as <em>GitHub</em></p></li>
-<li><p>fork rivt files to create new versions</p></li>
-<li><p>issue pull requests to propose changes</p></li>
-<li><p>report issues and bugs</p></li>
-<li><p>use an <a class="reference internal" href="rvA02-terms.html#term-IDE"><span class="xref std std-term">IDE</span></a> to edit code with others in real time</p></li>
-</ul>
-<p><a class="reference internal" href="rvE02-publicrivt.html"><span class="doc">Public rivt files</span></a> are written to the <em>/Public</em>
-folder which may be uploaded to a remote repository. <em>Public rivt
-files</em> are re-identified with the naming convention rv-A01-filename.py, in
-contrast with rvA01-filename for private files. After downloading a public rivt
-file, use <em>Batch Rename</em> to delete the hyphen after <em>rv</em> and convert it to a
-private rivt file.</p>
-<p>The development platform <em>GitHub</em> and the IDE <em>VSCode</em> are external tools that
-are part of the <em>rivt framework</em> and have collaboration features that work well
-with <em>rivt files</em>.</p>
+</div></blockquote>
+</li>
+<li><dl class="simple">
+<dt>Contribute extensions and scripts that improve interaction <em>rivt</em> with other</dt><dd><p>components of the <em>rivt framework</em>.</p>
+</dd>
+</dl>
+</li>
+</ol>
 </section>
 <section id="t-git-and-github">
 <h2><strong>[2t]</strong> Git and GitHub<a class="headerlink" href="#t-git-and-github" title="Link to this heading">#</a></h2>
@@ -445,10 +473,13 @@ rivt editing and collaboration environment in the cloud.</p>
 <section id="t-vscode">
 <h2><strong>[3t]</strong> VSCode<a class="headerlink" href="#t-vscode" title="Link to this heading">#</a></h2>
 <hr><p><a class="reference external" href="https://code.visualstudio.com/">VSCode</a> is an open source IDE with a large
-set of extensions, including collaboration support. CodeSpaces is a cloud based
-GitHub implementation of VSCode that shares many of the same features.</p>
-<p>Collaboration in VSCode is primarily facilitated by the <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare">Visual Studio Live Share</a>.
-This extension enables:</p>
+set of extensions, including collaboration support.
+Collaboration is facilitated by the <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare">Visual Studio Live Share</a>.
+You can start a <em>Live Share</em> session either within <em>CodeSpaces</em> in
+your browser, or within the <em>VS Code</em> desktop application. <em>CodeSpaces</em>
+is a cloud based GitHub implementation of VSCode that shares many of the
+same features.</p>
+<p>The <em>Live Share</em> extension enables:</p>
 <ul class="simple">
 <li><p>Real-time Co-editing: Multiple participants can work on the same file
 simultaneously, seeing each other’s cursors, selections, and edits instantly,

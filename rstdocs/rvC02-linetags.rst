@@ -89,7 +89,7 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-Formats a utf-8 math expression.
+Formats a text math expression.
 
 .. topic:: _[M]
 

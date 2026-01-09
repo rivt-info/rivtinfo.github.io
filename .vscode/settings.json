@@ -31,7 +31,7 @@
     "settings.cycle": [
         {
             "id": "explorerSort2", // must be unique
-            "overrideWorkspaceSettings": false,
+            "overrideWorkspaceSettings": true,
             "values": [
                 {
                     "explorer.sortOrder": "name"
@@ -114,7 +114,7 @@
     },
     "workbench.panel.defaultLocation": "right",
     "python.defaultInterpreterPath": "c:\\Python313\\python.exe",
-    "explorer.sortOrder": "type",
+    "explorer.sortOrder": "name",
     "editor.hover.enabled": "off",
     "editor.parameterHints.enabled": false,
     "editor.minimap.enabled": false,

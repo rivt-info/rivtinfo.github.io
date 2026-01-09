@@ -2,9 +2,6 @@
 **D.2 Files**
 ================== 
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
 
 **[1]** File Types 
 --------------------------------------------------------------------- 
@@ -178,10 +175,6 @@ file* with an added hyphen between "rv" and the docnumber e.g.
     **folder**: */logs* 
 
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
 **[2]** Folders
 --------------------------------------------------------------------- 
 
@@ -221,7 +214,7 @@ and *docs and reports*.
         ├── [src]/                      |  doc source folder
         └── README.txt                  || searchable text report 
 
-The full report folder structure is :ref:`here. <report-folders>`
+The full report folder structure is :ref:`here. <report folders>`
 
 .. raw:: html
 

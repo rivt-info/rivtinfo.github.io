@@ -1,7 +1,7 @@
 **C.4 Commands**
 ========================
 
-**[1t]** Summary
+**[1t]** Command Summary
 -------------------------------------
 
 .. raw:: html
@@ -10,9 +10,9 @@
 
 **Read, write and format files**
 
-========== ============================================================== =====================
+========== ============================================================ =========================
 API Scope           | Command | path | parameters                          Description
-========== ============================================================== =====================
+========== ============================================================ =========================
 rv.R       \| SHELL | relative path | os, wait                             :ref:`Shell file`
 rv.I       \| TEXT | relative path |  language                             :ref:`Text file`
 rv.V, I    \| TABLE | rel path | title, width, rows, align, head           :ref:`Table file`     
@@ -26,7 +26,30 @@ rv.T, V    \| PYTHON | relative path | namespace                           :ref:
 rv.T       \| MARKUP | relative path | type                                :ref:`Markup file`
 rv.D       \| ATTACHPDF | relative path | place, title                     :ref:`Attach PDF`   
 rv.D       \| PUBLISH | ini rel. path | type                               :ref:`Publish doc` 
-========== ============================================================== =====================
+========== ============================================================ =========================
+
+**Default command paths**
+
+See :ref:`here <report folders>` for the folder structure. If files
+are in the default path only the file name needs to be provided.
+
+================ =========================
+   Command         Default Path
+================ =========================
+\| SHELL |          /src/shell/
+\| TEXT |           /src/data/
+\| TABLE |          /src/data/
+\| IMAGE |          /src/image/
+\| IMAGE2 |         /src/image/
+\| VALTABLE |       /src/data/  [1]    
+\| PYTHON |         /src/scripts/
+\| MARKUP |         /src/scripts/
+\| ATTACHPDF |      /src/gendocs/  
+\| PUBLISH |        /src/gendocs/
+================ =========================
+
+[1]  use /stored/data/ to read values previously defined in the report
+
 
 .. _Shell file:
 

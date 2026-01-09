@@ -90,8 +90,7 @@ An example *report* folder structure is shown below.
         └── README.txt                  || searchable text report 
 
 
-.. _report-folders:
-
+.. _report folders:
 
 **Expanded Folders**
 
@@ -151,22 +150,29 @@ An example *report* folder structure is shown below.
                 ├── rv202-filename4.txt       
                 └── README.txt                       searchable text report                     
         ├── [src]                              | source files from author               
-            ├── data/                               author created subfolder
-                ├── data1.csv   
+            ├── [data]/                             author created subfolder
+                ├── data1.csv
+                ├── steel-vals.csv        
                 └── conc-vals.csv  
-            ├── image/                              author created subfolder                          
+            ├── [shell]/                            author created subfolder
+                ├── shell1.cmd   
+                └── shell1.csv  
+            ├── [image]/                            author created subfolder                          
                 ├── fig1.png
                 └── fig2.jpg
-            ├── output/                             author created subfolder
+            ├── [scripts]/                          author created subfolder
                 ├── table1.csv                                               
-                ├── image1.png                            
+                ├── image1.png
+                ├── plot.py                               
+                ├── new-units.py                     define new units                          
                 └── opensees1.txt    
             ├── [gendoc]/
-                ├── genhtml.cmd                     html generating script
-                ├── genpdf.cmd                      pdf generating script
-                ├── gentexpdf.cmd                   LaTeX generating script
+                ├── genhtml.cmd                      html generating script
+                ├── genpdf.cmd                       pdf generating script
+                ├── gentexpdf.cmd                    LaTeX generating script
                 ├── rivt-report.py                   report generating script
-                ├── new-units.py                     define new units
+                ├── Report-Cover.pdf
+                ├── attach1.pdf
                 └── [style]/                         style files for docs 
                     ├── [html]/                      html style files
                         ├── _locale/                 
@@ -175,21 +181,13 @@ An example *report* folder structure is shown below.
                         ├── conf.py                         
                         ├── genhtml.cmd                     
                         └── index.rst
-                    ├── [pdf]/                       rst2pdf style files
+                    ├── [rstpdf]/                    rst2pdf style files
                         ├── fonts/              
-                        ├── style/                 
-                        └── Report-Cover.pdf           
+                        └── style/                 
                     ├── [pdftex]/                    pdftex style files            
-                        ├── Report-cover.pdf                  
                         └── rivt.sty              
                     ├── [text]/                      text ini file
                         └── rv-text.ini
-            ├── [py]/                                Python scripts and functions
-                    ├── plot.py                               
-                    └── loads.py
-            └── [vals]/                              value files
-                ├── steel-vals.csv     
-                └── plastic-vals.csv
         ├── [stored]/                          || stored files from rivt            
             ├── [logs]/                              log files
                 ├── rv101-api.txt   
@@ -201,7 +199,7 @@ An example *report* folder structure is shown below.
                 └── rv301-2r.txt               
             ├── [temp]/                              temp files
                 └── rv101-label3.tex
-            └── [vals]/                              stored value files
+            └── [data]/                              stored value files
                 ├── v101-2.csv
                 └── v102-3.csv             
         └── README.txt                         || searchable text report 

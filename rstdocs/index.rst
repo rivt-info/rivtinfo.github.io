@@ -47,3 +47,4 @@ on *GitHub* is :doc:`here <rvE03-ghsearch>`.
     rvC01-markup.rst
     rvD01-documents.rst
     rvE01-collab.rst
+    rvF01-quickref.rst

@@ -1,6 +1,8 @@
 **C.1 Markup**
 ==================
 
+.. _rivt string:
+
 **[1t]** rivt string
 ----------------------------------
 
@@ -9,24 +11,15 @@
     <hr>
 
 Each :doc:`API function <rvA01-intro>` takes a triple quoted :term:`rivt
-string` argument composed of two parts - a :term:`header string` followed by a
-:term:`content string`.
+string` argument composed of two parts - a :term:`header substring` followed 
+by a :term:`content substring`.
 
-The first line is the *header*, followed by *content text* indented 4 spaces
-for improved readability and section folding during interactive editing.
-Content may include :term:`rivt markup` and other arbitrary utf-8 text.
+The *header substring* is the first line of a *rivt string* that defines
+section processing and formatting. It is followed by a *content substring* that
+includes :term:`rivt markup` and other text. It is indented 4 spaces for
+improved readability and section folding.
 
-
-.. code-block:: python
-
-    rv._("""Section Label | include;store, private;public, section;merge
-
-         Content text indented 4 spaces (utf-8 text)
-        
-        ...
-        
-        """)
-
+.. _Header substring:
 
 **[2t]** Header substring 
 ----------------------------
@@ -35,26 +28,37 @@ Content may include :term:`rivt markup` and other arbitrary utf-8 text.
 
     <hr>
 
-The :term:`header` starts with a *section label* followed by vertical bar that
-deliniates three comma separated *section parameters* that can override default
-behavior. The *section label* is the section title. They include the following,
-in any order:
+The :term:`header substring` starts with a *section label* followed by vertical
+bar that deliniates three comma separated *section parameters* that can
+override default behavior. The *section label* is the section title. 
+
+.. code-block:: python
+
+    rv._("""Section Label | doc;stored, private;public, section;merge
+
+         Content text indented 4 spaces (utf-8 text)
+        
+        ...
+        
+        """)
+
+The parameters include the following, in any order:
 
 *private/public* 
     Determines whether the API section text is copied to the
     the */public* folder *rivt file* for sharing. 
 
 *doc/stored*
-    Determines whether the *rivt string* is formatted and printed 
-    in the doc or just annotated and written to a file in the *Stored* folder 
+    Determines whether the *rivt string* is formatted and printed in the doc, 
+    or just annotated in the doc and written to a file in the *Stored* folder 
     for optional inclusion as an appendix.
 
-*Section/merge* 
+*section/merge* 
     Determines whether the API starts a new *doc* section
     or is merged into the previous section.   
 
-Default settings in the *header* do not need to be specified. The default
-setting for each API is listed first (in bold) in the table below.
+Default settings in the *header substring* do not need to be specified. The
+default setting for each API is listed first (in bold) in the table below.
  
 ========== ===================== ===================== =====================
 API          private;public         doc;stored         section;merge         
@@ -63,18 +67,19 @@ rv.R        **private**;public     **stored**;doc       **merge**;section
 rv.I        **private**;public     **doc**;stored       **section**;merge   
 rv.V        **private**;public     **doc**;stored       **section**;merge    
 rv.T        **private**;public     **stored**;doc       **merge**;section
-rv.D        **private**;public     **stored**           **merge**
 rv.S        **private**;public     **stored**;doc       **merge**;section
-rv.X        **private**            **stored**           **merge**
+rv.D        **private**;public     **stored**           **merge**
+rv.X        **private**;public     **stored**           **merge**
 ========== ===================== ===================== ===================== 
 
-
-Examples of *header* settings are shown below.
+Examples of *header substring* settings are shown below.
 
 **An example with explicit defaults that do not have to be declared:**
 
 .. code-block:: python
 
+    # This
+    
     rv.I("""A New Section | private, doc, section
 
         Content text
@@ -82,9 +87,9 @@ Examples of *header* settings are shown below.
         
         """)
     
-    # Equivalent to:
+    # is equivalent to:
 
-    rv.I("""A New Section | 
+    rv.I("""A New Section  
 
         Content text
   
@@ -93,8 +98,8 @@ Examples of *header* settings are shown below.
         """)
 
 
-**An example that merges a section to the previous section but prints
-the merged content:**
+**An example that merges a section into the previous section. It does not 
+create a new section and merges the section content into the prior one.**
 
 .. code-block:: python
 
@@ -106,92 +111,98 @@ the merged content:**
         
         """)
 
+.. _Content substring:
+
 **[3t]** Content substring
---------------------------
+------------------------------
 
 .. raw:: html
 
     <hr>
 
-:term:`Content text` is indented four spaces for legibility and code folding.
-It includes :doc:`line tags<rvC02-linetags>`, 
-:doc:`block tags<rvC03-blocktags>` and 
-:doc:`commands<rvC04-commands>` along with utf-8 text.
+The :term:`content substring` is indented four spaces for legibility and 
+code folding. It includes :doc:`line tags<rvC02-linetags>`, 
+:doc:`block tags<rvC03-blocktags>` and  :doc:`commands<rvC04-commands>` 
+along with  text.
 
 .. code-block:: python
 
-    rv._("""Section Label | 
+    rv._("""Section Label  
 
-        Content text indented 4 spaces (utf-8).
+        Content text indented 4 spaces.
         ...
         
         """)
 
+Content is converted line by line into formatted text and `RestructuredText
+<https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_, and then
+further processed into HTML or PDF. If a line does not contain a *command* or
+*tag* it is passed through as is, which allows for including some *restructured
+text* directly in the *Insert* function content (rv.I). For example 
+surrounding words with * or ** formats a word as italic or bold respectively.
 
-Content text is converted line by line into formatted utf-8 text and
-`RestructuredText <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_, 
-and then further processed into HTML or PDF. If a line does not contain 
-a *command* or *tag* it is passed through as is, which allows 
-for including some *restructured text* directly for some API functions. 
-For example surrounding words with * for italics or ** for bold in the 
-*Insert* function (rv.I).
-
-In addition the *Tools API function* (rv.T) supports directly processing
-Python, HTML, LaTex and reStructuredText code.
+In addition the *Tools function* (rv.T) directly supports processing HTML,
+LaTex and reStructuredText scripts with block tags.
 
 **[5t]** Tags and Commands
 ----------------------------
 
+Markup tags and commands are described in detail :doc:`here <rvC01-markup>`. 
+
 :doc:`Line Tags <rvC02-linetags>`
 
-A :term:`line tag` formats a line of text and is denoted with **_[LETTER]**,
-generally placed at the end of the line for readability.
+A :term:`line tag` formats a line of text and is denoted with a single
+**_[LETTER]**, placed at or near the end of the line, depending on the tag.
 
 :doc:`Block Tags <rvC03-blocktags>`
 
 A :term:`block tag` formats a block of text and begins with **_[[TAGNAME]]**
-and terminates with **_[[END]]**. 
+and terminates with **_[[END]]**.
 
 :doc:`Commands <rvC04-commands>`
 
 *rivt commands* read and write external files. They typically start in the
-first column with a vertical bar ( | ) followed by the file path, name and
-parameters. The exceptions to this pattern are the assignment (**<=** ) and
-definition (**:=**) commands, which are used to assign values to equation
-results and define variables.
+first column with a vertical bar ( | ) followed by the command name, file path,
+and parameters. 
+
+The exceptions are, the definition (**=:**), the assignment (**<=:**) 
+and the compare (**<>**) commands, which are used to define, 
+assign and compare values.
 
 .. code-block:: bash  
     
     | COMMAND | relative path | parameters
 
-File paths are specified relative to the *report* and *rivt file* folder.  
+File paths are specified relative to the *rivt root folder*.  
 The *rivt report* folder structure is described :doc:`here. <rvD03-folders>`.
 
 If the path is ommitted the default path for each command is applied. 
+If the *singledoc* parameter is set, the *resource files* and *docs* are stored
+in the *rivt root folder*.
 
-Markup tags and commands is described in detail :doc:`here <rvC01-markup>`. Tag and Command
-syntax for each API type is defined and described using the following format:
+Tag and Command syntax for each API type is defined and described 
+using the following format:
 
 .. raw:: html
 
     <p style="border-width:2px; border-style:solid; 
     border-color:#49b2c3;padding: 1em;">
 
-    <b>Markup Key</b><br>
+    <b>Markup Key<br>
+    <br>
+    _[TAG] or | COMMAND |</b><br>
+    <br>
+    Description<br>
+    <br>
+    <pre>
+        Syntax:
+            _[TAG] or | COMMAND | syntax
 
-    .. topic::  _[TAG] or | COMMAND |
+        Example:
+            This is a sentence. _[C]
+    </pre> 
+    </p>
 
-        Description
-
-        .. code-block:: text
-
-            Syntax:
-                _[TAG] or | COMMAND | syntax
-
-            Example:
- 
-                This is a sentence. _[C] 
-        </p>
 
 **[6t]** Folders
 ---------------------------

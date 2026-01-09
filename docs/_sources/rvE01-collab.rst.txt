@@ -8,37 +8,40 @@
 
     <hr>
 
-A central motivation for *rivt* is to facilitate cooperative improvement of
-files and docs, and a reduction of reptitive work. As a Python open source
-project a number of tools are available to faciliate these goals. Cooperative
-work and community improvements can happen in a number of ways including:
+ As a Python open source project, collaborations and collective rivt file
+ improvements can happen in several ways.
 
-Contribute to rivtlib at `rivtlib-dev <https://github.com/rivtlib-dev/rivtlib>`_ 
-and documentation at `rivt-info <https://github.com/rivt-in>`_
+#. *rivt files* may be shared by uploading
+    :doc:`public files</rvE02-publicrivt>` to repositories 
+    such as *GitHub*. 
 
-- report issues and bugs
-- issue pull requests to propose changes
-- contribute to documentation
+#. Public *rivt files* can be found using the 
+    :doc:`search interface <rvE03-ghsearch>`. For public files, 
 
-Share and collaborate with others on rivt files of interest. Relevant projects
-can be found using the search interface :doc:`here <rvE03-ghsearch>`.
+    - cloned versions may be forked to create different versions.
+    - pull requests may provide improvements.
+    - issues and bugs may be reported.
+  
+    *Public rivt files* are identified with the naming convention
+    rv-A01-filename.py, in contrast with rvA01-filename for private files.
+    After downloading a public rivt file, use the *Batch Rename* extension to delete the hyphen after *rv* and convert it to a
+    private rivt file.
 
-- upload the *Public* rivt folder to public repositories such as *GitHub*
-- fork rivt files to create new versions
-- issue pull requests to propose changes
-- report issues and bugs
-- use an :term:`IDE` to edit code with others in real time
+#.  Files may be collaboratively edited in real time using VSCode with the
+    extension  `Visual Studio Live Share
+    <https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare>`_. 
+    extension.    
 
-:doc:`Public rivt files</rvE02-publicrivt>` are written to the */Public*
-folder which may be uploaded to a remote repository. *Public rivt
-files* are re-identified with the naming convention rv-A01-filename.py, in
-contrast with rvA01-filename for private files. After downloading a public rivt
-file, use *Batch Rename* to delete the hyphen after *rv* and convert it to a
-private rivt file.
 
-The development platform *GitHub* and the IDE *VSCode* are external tools that
-are part of the *rivt framework* and have collaboration features that work well
-with *rivt files*.
+#. Contribute to rivtlib at `rivtlib-dev <https://github.com/rivtlib-dev/rivtlib>`_ 
+   and documentation at `rivt-info <https://github.com/rivt-in>`_.
+    
+    - report issues and bugs
+    - issue pull requests to propose changes
+    - contribute to documentation
+
+#. Contribute extensions and scripts that improve interaction *rivt* with other 
+    components of the *rivt framework*.
 
 **[2t]** Git and GitHub
 ---------------------------
@@ -90,12 +93,16 @@ rivt editing and collaboration environment in the cloud.
     <hr>
 
 `VSCode <https://code.visualstudio.com/>`_ is an open source IDE with a large
-set of extensions, including collaboration support. CodeSpaces is a cloud based
-GitHub implementation of VSCode that shares many of the same features.
-
-Collaboration in VSCode is primarily facilitated by the `Visual Studio Live Share
+set of extensions, including collaboration support. 
+Collaboration is facilitated by the `Visual Studio Live Share
 <https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare>`_. 
-This extension enables:
+You can start a *Live Share* session either within *CodeSpaces* in 
+your browser, or within the *VS Code* desktop application. *CodeSpaces* 
+is a cloud based GitHub implementation of VSCode that shares many of the 
+same features.
+
+
+The *Live Share* extension enables:
 
 - Real-time Co-editing: Multiple participants can work on the same file
   simultaneously, seeing each other's cursors, selections, and edits instantly,

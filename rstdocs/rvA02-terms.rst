@@ -59,14 +59,18 @@
     
   header
   headers
-  header string
+  header text
+  header substring
     The first line of a  *rivt string*. It includes a section title, followed 
     by comma separated parameters.
 
   content
   content text
-  content string
-    The text in a rivt string following the header string.
+  content substring
+    The text in a *rivt string* that follows the *header substring*. The text is 
+    utf-8 (Unicode Transformation Format - 8-bit), a character encoding 
+    standard that is a superset of ASCII, handles text from any language, 
+    and is constant across all platforms.
   
   rivt
     An open source Python project that includes :term:`rivtlib` and approximately 
