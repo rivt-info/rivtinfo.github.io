@@ -54,8 +54,6 @@ rv.X        **private**;public     **stored**           **merge**
 .. raw:: html
 
     <hr>
-
-**Format a line or partial line of text**
   
 ========== ================================================= ===============================
 API Scope             Line Tags                                     Description 
@@ -80,9 +78,6 @@ rv.V, I          valtable or title _[T]                         :ref:`Table titl
 .. raw:: html
 
     <hr>
-
-
-**Format blocks of text**
 
 ========== ========================================= ===============================
 API Scope         Block Tags                           Description 
@@ -109,6 +104,9 @@ all         _[[NEW PAGE]]                              :ref:`Start new page`
 
     <hr>
 
+See :ref:`here <report folders>` for the folder structure. If files
+are in the default path only the file name needs to be provided.
+
 **Read, write and format files**
 
 ========== ============================================================== =====================
@@ -132,9 +130,6 @@ rv.D       \| PUBLISH | ini rel. path | type                               :ref:
 
 **Default command paths**
 
-See :ref:`here <report folders>` for the folder structure. If files
-are in the default path only the file name needs to be provided.
-
 ================ =========================
    Command         Default Path
 ================ =========================
@@ -150,5 +145,5 @@ are in the default path only the file name needs to be provided.
 \| PUBLISH |        /src/gendocs/
 ================ =========================
 
-[1]  use /stored/data/ to read values previously defined in the report
+[1]  use /stored/data/filename to read values previously defined in the report
 
