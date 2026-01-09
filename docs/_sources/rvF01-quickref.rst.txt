@@ -48,9 +48,6 @@ rv.D        **private**;public     **stored**           **merge**
 rv.X        **private**;public     **stored**           **merge**
 ========== ===================== ===================== =====================
 
-
-
-
 **[2t]** Line Tag Summary
 -------------------------------------
 
@@ -76,7 +73,6 @@ rv.V, I              text var_name _[V] more text               :ref:`Variable v
 rv.V, I            assign or label _[E]                         :ref:`Equation label`
 rv.V, I          valtable or title _[T]                         :ref:`Table title`
 ========== ================================================= ===============================
-
 
 **[3t]** Block Tag Summary
 -------------------------------------
@@ -105,7 +101,6 @@ rv.D        _[[LAYOUT]] label                          :ref:`Layout block`
 all         _[[END]]                                   :ref:`End block`
 all         _[[NEW PAGE]]                              :ref:`Start new page`
 ========== ========================================= ===============================
-
 
 **[4t]** Command Summary
 -------------------------------------
