@@ -1,5 +1,5 @@
 
-**1.2 Quick Ref**
+**F.1 Quick Ref**
 ================== 
 
 
@@ -10,14 +10,11 @@
 
     <hr>
 
-The name *rivt* is an acronym formed from four content generating
-functions. 
-
 =============== =============== ===========================================
 API Functions        Name             Purpose
 =============== =============== ===========================================
 rv.R(rS)           **R** un          Run shell commands
-rv.I(rS)           **I** nsert       Insert static resources 
+rv.I(rS)           **I** nsert       Insert static sources 
 rv.V(rS)           **V** alues       Calculate values
 rv.T(rS)           **T** ools        Python and markup scripts
 rv.S(rS)           Skip              Skip section (comments and debugging)
@@ -37,7 +34,7 @@ The first line of a *rivt string* (rS) is a *header substring*.
         """)
 
 Default settings in the *header substring* do not need to be specified. The
-default setting for each API is listed first (in bold) in the table below.
+default setting for each API is listed first (**in bold**) in the table below.
  
 ========== ===================== ===================== =====================
 API          private;public         doc;stored         section;merge         
@@ -66,8 +63,8 @@ rv.X        **private**;public     **stored**           **merge**
 ========== ================================================= ===============================
 API Scope             Line Tags                                     Description 
 ========== ================================================= ===============================
-rv.I                          text _[C]                         :ref:`Center text` 
-rv.I                          text _[R]                         :ref:`Right justify text`
+rv.I                          text **_[C]**                         :ref:`Center text` 
+rv.I                          text **_[R]**                         :ref:`Right justify text`
 rv.I                    text  math _[M]                         :ref:`Text math` 
 rv.I                    LaTeX math _[L]                         :ref:`LaTeX math` 
 rv.I                   label, url  _[U]                         :ref:`URL link`   
@@ -94,8 +91,8 @@ rv.V, I          valtable or title _[T]                         :ref:`Table titl
 ========== ========================================= ===============================
 API Scope         Block Tags                           Description 
 ========== ========================================= ===============================
-rv.R        _[[SHELL]] process parameters              :ref:`Shell script`
-rv.I        _[[INDENT]] spaces (4 default)             :ref:`Indent text block`
+rv.R        **_[[SHELL]]** process parameters              :ref:`Shell script`
+rv.I        **_[[INDENT]]** spaces (4 default)             :ref:`Indent text block`
 rv.I        _[[ITALIC]] spaces (4 default)             :ref:`Indent italic block`
 rv.I        _[[ENDNOTES]] optional label               :ref:`Endnotes block`
 rv.I        _[[TEXT]] optional language                :ref:`Text block`
@@ -122,8 +119,8 @@ all         _[[NEW PAGE]]                              :ref:`Start new page`
 ========== ============================================================== =====================
 API Scope           | Command | path | parameters                          Description
 ========== ============================================================== =====================
-rv.R       \| SHELL | relative path | os, wait                             :ref:`Shell file`
-rv.I       \| TEXT | relative path |  language                             :ref:`Text file`
+rv.R       **| SHELL |** relative path | os, wait                             :ref:`Shell file`
+rv.I       **| TEXT |** relative path |  language                             :ref:`Text file`
 rv.V, I    \| TABLE | rel path | title, width, rows, align, head           :ref:`Table file`     
 rv.V, I    \| IMAGE | relative path | caption, scale, number               :ref:`Image file`
 rv.V, I    \| IMAGE2 | rel path1, rel path2 | caption, scale number        :ref:`Adjacent images`
