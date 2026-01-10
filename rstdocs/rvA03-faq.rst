@@ -16,7 +16,7 @@
 
     <hr>
 
-.. dropdown:: Which open source license applies to rivt?  
+.. dropdown:: Which open source license applies to *rivt*?  
 
     **rivtlib** is distributed under the 
     `MIT open source license <https://opensource.org/license/mit/>`_.
@@ -26,7 +26,7 @@
 
 |
 
-.. dropdown:: Which open source license applies to the rivt framework?  
+.. dropdown:: Which open source license applies to the *rivt framework*?  
     
     **VSCode** - Visual Studio Code uses a proprietary Microsoft license for
     the compiled product, allowing free use for development, testing and
@@ -52,7 +52,7 @@
 
 |
 
-.. dropdown:: Which open source license applies to rivt files?  
+.. dropdown:: Which open source license applies to *rivt files*?  
 
     The open source license for a public rivt file is specified in the 
     _[[Metadata]] block tag. The default license is the MIT license.
@@ -65,9 +65,9 @@
 
 .. dropdown:: What is the planned release schedule for *rivt*?
 
-    *rivt* releases are planned monthly. Major versions will have forward and 
-    backward compatiblity. See 
-    `GitHub <https://github.com/rivtlib-dev/rivtlib/releases>`_ for 
-    past releases.  See 
-    `here <https://github.com/rivtlib-dev/rivtlib/blob/main/CHANGELOG.md>`_
+    *rivt* minor releases are planned monthly following the release of version
+    1.0.0. Major releases will have backward compatiblity. See
+    `here <https://github.com/rivtlib-dev/rivtlib/releases>`_ for past
+    releases
+    `and here <https://github.com/rivtlib-dev/rivtlib/blob/main/CHANGELOG.md>`_ 
     for the changelog.
