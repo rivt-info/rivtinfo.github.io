@@ -20,8 +20,8 @@ rv.I        **_[[ENDNOTES]]** optional label          :ref:`Endnotes block`
 rv.I        **_[[TEXT]]** optional language           :ref:`Text block`
 rv.I        **_[[TOPIC]]** topic                      :ref:`Topic block`
 rv.I        **_[[BOX]]** label                        :ref:`Box block`
-rv.V, T     **_[[PYTHON]]** namespace                 :ref:`Python block`
-rv.T        **_[[METADATA]]** label                   :ref:`Meta block`
+rv.V,T      **_[[PYTHON]]** namespace                 :ref:`Python block`
+rv.D        **_[[METADATA]]** label                   :ref:`Meta block`
 rv.D        **_[[LAYOUT]]** label                     :ref:`Layout block` 
 all         **_[[END]]**                              :ref:`End block`
 all         **_[[NEW PAGE]]**                         :ref:`Start new page`
@@ -352,43 +352,41 @@ Doc Types     text, PDF, HTML
     <hr>
 .. topic:: _[[METADATA]]
     
-    *Metadata* is written to the *api-log.py* file and is converted internally
-    to Python dictionaries with a name taken from the label e.g. *rvmeta_D* or
-    *rvmeta_authorsD*/
+    *Metadata* is written to the *rvAnn-api-log.py* file and is converted
+    internally to Python dictionaries with a name taken from the label e.g.
+    *rvmeta_D* or *rvmeta_authorsD*/
 
     ..  code-block:: text
 
-        # defaults
-        _[[METADATA]] optional label
-        authors: 
-        version: 0.0.0
-        email:
-        repo:
-        license: https://opensource.org/license/mit
-        fork1: author, version, email, repo
-        fork2: author, version, email, repo
-        _[[END]]
+        Synatax - defaults:
+            _[[METADATA]] optional label
+            authors = "" 
+            version = 0.0.0
+            email = ""
+            repo = ""
+            license = https://opensource.org/license/mit
+            fork1 = author, version, email, repo
+            fork2 = author, version, email, repo
+            _[[END]]
 
-        # example - author dicitionary
-        _[[METADATA]] authors
-        authors: rholland, rward
-        version: 0.1.1
-        email: rholland@email.com
-        repo: https://github.com/rivt-info/rivt-simple-doc
-        license: https://opensource.org/license/mit
-        fork1: author, version, email, repo
-        fork1: author, version, email, repo
-        _[[END]]
+        Example:
+            _[[METADATA]] 
+            authors = rholland, rward
+            version = 0.1.1
+            email = rholland@email.com
+            repo = https://github.com/rivt-info/rivt-simple-doc
+            license = https://opensource.org/license/mit
+            _[[END]]
 
 
 =========== ==========================
-API Scope     Tools
+API Scope     Docs
 Doc Types     text, PDF, HTML
 =========== ==========================
 
 .. _Layout block:
 
-**[12t]** Layout 
+**[12t]** Layout block
 ------------------------------------------------
 
 .. raw:: html
@@ -401,7 +399,7 @@ Overrides default layout settings.
 
     .. code-block:: text
 
-            Syntax:    
+            Syntax - defaults:    
                 _[[LAYOUT]] optional label
                 variables
                 ...
@@ -409,8 +407,8 @@ Overrides default layout settings.
 
             Example:                    
                 _[[LAYOUT]] 
-                docnameS = ""
-                footerL = [date, docname, page]    
+                docname = ""
+                footer = date, docname, page
                 _[[END]]
 
 
@@ -421,7 +419,7 @@ Doc Types     text, PDF, HTML
 
 .. _End block:
 
-**[13t]** End 
+**[13t]** End block
 ------------------------------------------------
 
 .. raw:: html
@@ -448,7 +446,7 @@ Doc Types     text, PDF, HTML
 
 .. _Start new page:
 
-**[14t]** New page
+**[14t]** Start new page
 ------------------------------------------------
 
 .. raw:: html

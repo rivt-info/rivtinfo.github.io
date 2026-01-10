@@ -18,7 +18,7 @@ and reuse.
 Although a number of engineering document programs are available, sharing is
 restricted by software design and terms of use in the following way:
 
-- documents may come from many incompatible programs
+- documents written with incompatible programs
 - frequent software updates are needed to maintain document access
 - update costs are high
 - newer document formats become inaccessible without upgrades

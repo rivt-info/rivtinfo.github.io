@@ -45,7 +45,7 @@ divisions and subdivisions in the *report*.
     <hr>
 
 Each :term:`rivt file` outputs a corresponding formatted :term:`doc` written to
-the *publish* folder unless it is a :term:`stand-alone doc`. 
+the *publish* folder unless it is a :term:`single doc`. 
 
 *Docs* may be text, HTML or PDF. PDF *doc* files are produced by two different
 libraries, referred to as *pdf* and *pdftex*. A *pdf* doc is formatted using
@@ -57,9 +57,6 @@ A *pdftex doc* requires separate installation of the much larger *texlive*
 LaTeX library (approx. 3GB). Its advantage is additional control over *doc*
 formatting and appearance.
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
 
 **[3t]** Single docs
 ----------------------------------------------------------
@@ -76,7 +73,7 @@ statement.
   
 .. code:: python
 
-    # rv singledocS=True
+    # rv singledoc=True
 
 The text, PDF or HTML *doc* will be written to the local file folder using
 simple style settings built into *rivtlib*. *Single docs* require less

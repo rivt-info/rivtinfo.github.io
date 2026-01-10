@@ -90,7 +90,7 @@ rv.I        **_[[TEXT]]** optional language           :ref:`Text block`
 rv.I        **_[[TOPIC]]** topic                      :ref:`Topic block`
 rv.I        **_[[BOX]]** label                        :ref:`Box block`
 rv.V, T     **_[[PYTHON]]** namespace                 :ref:`Python block`
-rv.T        **_[[METADATA]]** label                   :ref:`Meta block`
+rv.D        **_[[METADATA]]** label                   :ref:`Meta block`
 rv.D        **_[[LAYOUT]]** label                     :ref:`Layout block` 
 all         **_[[END]]**                              :ref:`End block`
 all         **_[[NEW PAGE]]**                         :ref:`Start new page`

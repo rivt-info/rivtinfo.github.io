@@ -436,25 +436,25 @@
 <td><p><strong>_[[BOX]]</strong> label</p></td>
 <td><p><a class="reference internal" href="#box-block"><span class="std std-ref">[8t] Box</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.V, T</p></td>
+<tr class="row-odd"><td><p>rv.V,T</p></td>
 <td><p><strong>_[[PYTHON]]</strong> namespace</p></td>
 <td><p><a class="reference internal" href="#python-block"><span class="std std-ref">[9t] Python</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.T</p></td>
+<tr class="row-even"><td><p>rv.D</p></td>
 <td><p><strong>_[[METADATA]]</strong> label</p></td>
 <td><p><a class="reference internal" href="#meta-block"><span class="std std-ref">[11t] Metadata</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.D</p></td>
 <td><p><strong>_[[LAYOUT]]</strong> label</p></td>
-<td><p><a class="reference internal" href="#layout-block"><span class="std std-ref">[12t] Layout</span></a></p></td>
+<td><p><a class="reference internal" href="#layout-block"><span class="std std-ref">[12t] Layout block</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>all</p></td>
 <td><p><strong>_[[END]]</strong></p></td>
-<td><p><a class="reference internal" href="#end-block"><span class="std std-ref">[13t] End</span></a></p></td>
+<td><p><a class="reference internal" href="#end-block"><span class="std std-ref">[13t] End block</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>all</p></td>
 <td><p><strong>_[[NEW PAGE]]</strong></p></td>
-<td><p><a class="reference internal" href="#start-new-page"><span class="std std-ref">[14t] New page</span></a></p></td>
+<td><p><a class="reference internal" href="#start-new-page"><span class="std std-ref">[14t] Start new page</span></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -769,37 +769,35 @@ Example:
 <span id="meta-block"></span><h2><strong>[11t]</strong> Metadata<a class="headerlink" href="#t-metadata" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[METADATA]]</p>
-<p><em>Metadata</em> is written to the <em>api-log.py</em> file and is converted internally
-to Python dictionaries with a name taken from the label e.g. <em>rvmeta_D</em> or
-<em>rvmeta_authorsD</em>/</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span># defaults
-_[[METADATA]] optional label
-authors:
-version: 0.0.0
-email:
-repo:
-license: https://opensource.org/license/mit
-fork1: author, version, email, repo
-fork2: author, version, email, repo
-_[[END]]
+<p><em>Metadata</em> is written to the <em>rvAnn-api-log.py</em> file and is converted
+internally to Python dictionaries with a name taken from the label e.g.
+<em>rvmeta_D</em> or <em>rvmeta_authorsD</em>/</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Synatax - defaults:
+    _[[METADATA]] optional label
+    authors = &quot;&quot;
+    version = 0.0.0
+    email = &quot;&quot;
+    repo = &quot;&quot;
+    license = https://opensource.org/license/mit
+    fork1 = author, version, email, repo
+    fork2 = author, version, email, repo
+    _[[END]]
 
-# example - author dicitionary
-_[[METADATA]] authors
-authors: rholland, rward
-version: 0.1.1
-email: rholland@email.com
-repo: https://github.com/rivt-info/rivt-simple-doc
-license: https://opensource.org/license/mit
-fork1: author, version, email, repo
-fork1: author, version, email, repo
-_[[END]]
+Example:
+    _[[METADATA]]
+    authors = rholland, rward
+    version = 0.1.1
+    email = rholland@email.com
+    repo = https://github.com/rivt-info/rivt-simple-doc
+    license = https://opensource.org/license/mit
+    _[[END]]
 </pre></div>
 </div>
 </aside>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Tools</p></td>
+<td><p>Docs</p></td>
 </tr>
 <tr class="row-even"><td><p>Doc Types</p></td>
 <td><p>text, PDF, HTML</p></td>
@@ -808,12 +806,12 @@ _[[END]]
 </table>
 </div>
 </section>
-<section id="t-layout">
-<span id="layout-block"></span><h2><strong>[12t]</strong> Layout<a class="headerlink" href="#t-layout" title="Link to this heading">#</a></h2>
+<section id="t-layout-block">
+<span id="layout-block"></span><h2><strong>[12t]</strong> Layout block<a class="headerlink" href="#t-layout-block" title="Link to this heading">#</a></h2>
 <hr><p>Overrides default layout settings.</p>
 <aside class="topic">
 <p class="topic-title">_[[LAYOUT]]</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax - defaults:
     _[[LAYOUT]] optional label
     variables
     ...
@@ -821,8 +819,8 @@ _[[END]]
 
 Example:
     _[[LAYOUT]]
-    docnameS = &quot;&quot;
-    footerL = [date, docname, page]
+    docname = &quot;&quot;
+    footer = date, docname, page
     _[[END]]
 </pre></div>
 </div>
@@ -839,8 +837,8 @@ Example:
 </table>
 </div>
 </section>
-<section id="t-end">
-<span id="end-block"></span><h2><strong>[13t]</strong> End<a class="headerlink" href="#t-end" title="Link to this heading">#</a></h2>
+<section id="t-end-block">
+<span id="end-block"></span><h2><strong>[13t]</strong> End block<a class="headerlink" href="#t-end-block" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[END]]</p>
 <p>Terminates a block tag.</p>
@@ -864,8 +862,8 @@ Example:
 </table>
 </div>
 </section>
-<section id="t-new-page">
-<span id="start-new-page"></span><h2><strong>[14t]</strong> New page<a class="headerlink" href="#t-new-page" title="Link to this heading">#</a></h2>
+<section id="t-start-new-page">
+<span id="start-new-page"></span><h2><strong>[14t]</strong> Start new page<a class="headerlink" href="#t-start-new-page" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[NEWPAGE]]</p>
 <p>Starts new page.</p>
@@ -949,9 +947,9 @@ Example:
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-python"><strong>[9t]</strong> Python</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-markup-block"><strong>[10t]</strong> Markup block</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-metadata"><strong>[11t]</strong> Metadata</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-layout"><strong>[12t]</strong> Layout</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-end"><strong>[13t]</strong> End</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-new-page"><strong>[14t]</strong> New page</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-layout-block"><strong>[12t]</strong> Layout block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-end-block"><strong>[13t]</strong> End block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-start-new-page"><strong>[14t]</strong> Start new page</a></li>
 </ul>
   </nav></div>
 

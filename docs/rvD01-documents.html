@@ -419,7 +419,7 @@ divisions and subdivisions in the <em>report</em>.</p>
 <section id="t-docs">
 <h2><strong>[2t]</strong> Docs<a class="headerlink" href="#t-docs" title="Link to this heading">#</a></h2>
 <hr><p>Each <a class="reference internal" href="rvA02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> outputs a corresponding formatted <a class="reference internal" href="rvA02-terms.html#term-doc"><span class="xref std std-term">doc</span></a> written to
-the <em>publish</em> folder unless it is a <a class="reference internal" href="rvA02-terms.html#term-stand-alone-doc"><span class="xref std std-term">stand-alone doc</span></a>.</p>
+the <em>publish</em> folder unless it is a <a class="reference internal" href="rvA02-terms.html#term-single-doc"><span class="xref std std-term">single doc</span></a>.</p>
 <p><em>Docs</em> may be text, HTML or PDF. PDF <em>doc</em> files are produced by two different
 libraries, referred to as <em>pdf</em> and <em>pdftex</em>. A <em>pdf</em> doc is formatted using
 the <em>rst2pdf</em> library, a subset of the larger <em>ReportLab</em> library. It is the
@@ -428,7 +428,7 @@ into <em>rivt</em>.</p>
 <p>A <em>pdftex doc</em> requires separate installation of the much larger <em>texlive</em>
 LaTeX library (approx. 3GB). Its advantage is additional control over <em>doc</em>
 formatting and appearance.</p>
-<p id="api">&lt;i&gt;</p></section>
+</section>
 <section id="t-single-docs">
 <h2><strong>[3t]</strong> Single docs<a class="headerlink" href="#t-single-docs" title="Link to this heading">#</a></h2>
 <hr><p>A document that will not be part of a <a class="reference internal" href="rvD02-files.html#report-describe"><span class="std std-ref">report</span></a> may use
@@ -436,7 +436,7 @@ the local rivt file folder for reading and writing files, without referencing
 the <em>rivt report folders</em>. A single <em>doc</em> is formatted by setting the
 <em>rv_local</em> variable in a comment, immediately following the <em>rivtlib</em> import
 statement.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># rv singledocS=True</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># rv singledoc=True</span>
 </pre></div>
 </div>
 <p>The text, PDF or HTML <em>doc</em> will be written to the local file folder using

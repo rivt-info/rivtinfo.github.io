@@ -46,7 +46,19 @@ The parameters include the following, in any order:
 
 *private/public* 
     Determines whether the API section text is copied to the
-    the */public* folder *rivt file* for sharing. 
+    the */public* folder *rivt file* for sharing. For public files 
+    the file is renamed from:
+
+    .. code-block:: text
+
+        rvAnn-filename.py
+
+    to a filename with an additional hyphen.
+    
+    .. code-block:: text
+
+        rv-Ann-filename.py
+
 
 *doc/stored*
     Determines whether the *rivt string* is formatted and printed in the doc, 

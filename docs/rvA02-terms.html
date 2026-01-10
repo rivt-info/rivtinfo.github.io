@@ -397,7 +397,7 @@
 <dt id="term-API-header">API header<a class="headerlink" href="#term-API-header" title="Link to this term">#</a></dt><dt id="term-API-headers">API headers<a class="headerlink" href="#term-API-headers" title="Link to this term">#</a></dt><dd><p>The first line of a  <em>rivt string</em>. It includes a section title, followed
 by comma separated parameters.</p>
 </dd>
-<dt id="term-api-history">api-history<a class="headerlink" href="#term-api-history" title="Link to this term">#</a></dt><dd><p>API excecution history written to log folder as the file <em>rvDss-api.rst</em>.
+<dt id="term-API-log">API log<a class="headerlink" href="#term-API-log" title="Link to this term">#</a></dt><dd><p>API excecution history written to log folder as the file <em>rvDss-api.rst</em>.
 For the complete execution history see the rivt log file <em>rvDss-log.txt</em>.</p>
 </dd>
 <dt id="term-block-tag">block tag<a class="headerlink" href="#term-block-tag" title="Link to this term">#</a></dt><dt id="term-block-tags">block tags<a class="headerlink" href="#term-block-tags" title="Link to this term">#</a></dt><dd><p>A block tag formats a block of text that begins with <strong>_[[TAG]]</strong>
@@ -484,16 +484,8 @@ and resources organized in subfolders</p>
 <dt id="term-rivtlib">rivtlib<a class="headerlink" href="#term-rivtlib" title="Link to this term">#</a></dt><dd><p>Open source <a class="reference external" href="https://www.rivtlib.dev">Python package</a> that generates docs
 and reports from a <a class="reference internal" href="#term-rivt-file"><span class="xref std std-term">rivt file</span></a></p>
 </dd>
-<dt id="term-rv-namespace">rv-namespace<a class="headerlink" href="#term-rv-namespace" title="Link to this term">#</a></dt><dt id="term-rv-space">rv-space<a class="headerlink" href="#term-rv-space" title="Link to this term">#</a></dt><dd><p>rivt alias name for the global rivt file namespace. Other user namespaces may be
+<dt id="term-rvspace">rvspace<a class="headerlink" href="#term-rvspace" title="Link to this term">#</a></dt><dd><p>rivt alias name for the global rivt file namespace. Other user namespaces may be
 specified</p>
-</dd>
-<dt id="term-rv_authD">rv_authD<a class="headerlink" href="#term-rv_authD" title="Link to this term">#</a></dt><dd><p>Metadata that specifies the author, version, email, repository and
-license information and lists any forks.</p>
-</dd>
-<dt id="term-rv_forknD">rv_forknD<a class="headerlink" href="#term-rv_forknD" title="Link to this term">#</a></dt><dd><p>Metadata that specifies author information for the fork.</p>
-</dd>
-<dt id="term-rv_localB">rv_localB<a class="headerlink" href="#term-rv_localB" title="Link to this term">#</a></dt><dd><p>Metadata that overrides the default report structure and specifies
-that all rivt file resources are read from written to the rivt file folder.</p>
 </dd>
 <dt id="term-section-parameter">section parameter<a class="headerlink" href="#term-section-parameter" title="Link to this term">#</a></dt><dt id="term-section-parameters">section parameters<a class="headerlink" href="#term-section-parameters" title="Link to this term">#</a></dt><dd><p>Comma separated parameters in a <em>header</em> that specify the section processing.</p>
 </dd>
@@ -501,13 +493,9 @@ that all rivt file resources are read from written to the rivt file folder.</p>
 a report and is used for quick docs that only require limited formatting.</p>
 <p>It is specified in a comment variable directly after the <em>rivtlib</em>
 import statement.</p>
-<p># rv singledocB = True</p>
+<p># rv singledoc = True</p>
 <p>The default setting is False. The rivt file folder is used for
 source and output files. A folder structure is not used.</p>
-</dd>
-<dt id="term-stand-alone-doc">stand-alone doc<a class="headerlink" href="#term-stand-alone-doc" title="Link to this term">#</a></dt><dd><p>A single document that is not part of a report. It uses
-the local rivt file folder for reading and writing files. <em>doc</em>
-styling control is limited compared to a <em>report</em>.</p>
 </dd>
 </dl>
 <p id="api">&lt;t&gt;</p></section>

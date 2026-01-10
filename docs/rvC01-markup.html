@@ -419,9 +419,17 @@ override default behavior. The <em>section label</em> is the section title.</p>
 </pre></div>
 </div>
 <p>The parameters include the following, in any order:</p>
-<dl class="simple">
+<dl>
 <dt><em>private/public</em></dt><dd><p>Determines whether the API section text is copied to the
-the <em>/public</em> folder <em>rivt file</em> for sharing.</p>
+the <em>/public</em> folder <em>rivt file</em> for sharing. For public files
+the file is renamed from:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rvAnn-filename.py
+</pre></div>
+</div>
+<p>to a filename with an additional hyphen.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rv-Ann-filename.py
+</pre></div>
+</div>
 </dd>
 <dt><em>doc/stored</em></dt><dd><p>Determines whether the <em>rivt string</em> is formatted and printed in the doc,
 or just annotated in the doc and written to a file in the <em>Stored</em> folder

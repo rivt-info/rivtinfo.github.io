@@ -31,7 +31,7 @@
     It is specified in a comment variable directly after the *rivtlib* 
     import statement.
 
-    # rv singledocB = True
+    # rv singledoc = True
   
     The default setting is False. The rivt file folder is used for 
     source and output files. A folder structure is not used. 
@@ -157,7 +157,7 @@
   section parameters 
     Comma separated parameters in a *header* that specify the section processing.
 
-  api-history 
+  API log
     API excecution history written to log folder as the file *rvDss-api.rst*. 
     For the complete execution history see the rivt log file *rvDss-log.txt*.
 
@@ -167,26 +167,10 @@
   report script
     A Python script that assembles *docs* into a *report*.
 
-  stand-alone doc
-    A single document that is not part of a report. It uses
-    the local rivt file folder for reading and writing files. *doc* 
-    styling control is limited compared to a *report*.
-
-  rv-namespace
-  rv-space
+  rvspace
     rivt alias name for the global rivt file namespace. Other user namespaces may be 
     specified
 
-  rv_authD
-    Metadata that specifies the author, version, email, repository and 
-    license information and lists any forks.
-
-  rv_forknD 
-    Metadata that specifies author information for the fork. 
-
-  rv_localB 
-    Metadata that overrides the default report structure and specifies 
-    that all rivt file resources are read from written to the rivt file folder.
 
 .. raw:: html
 
