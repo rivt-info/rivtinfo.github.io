@@ -80,8 +80,8 @@ rv.I        **private**;public     **doc**;stored       **section**;merge
 rv.V        **private**;public     **doc**;stored       **section**;merge    
 rv.T        **private**;public     **stored**;doc       **merge**;section
 rv.S        **private**;public     **stored**;doc       **merge**;section
-rv.D        **private**;public     **stored**           **merge**
-rv.X        **private**;public     **stored**           **merge**
+rv.D        **public**             **stored**           **merge**
+rv.X        **private**            **stored**           **merge**
 ========== ===================== ===================== ===================== 
 
 Examples of *header substring* settings are shown below.

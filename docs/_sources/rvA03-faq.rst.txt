@@ -1,75 +1,66 @@
 **A.3 FAQ**
 =================
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[1]** Support
+**[1t]** Contact
 -------------------------------------------------------------
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;t&gt; </p>
+
+`support@rivt.info <mailto:support@rivt.info>`_
 
 
-`email support <mailto:support@example.com>`_
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[2]** rivtlib
+**[2t]** Licenses
 -------------------------------------------------------------
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;t&gt; </p>
 
-.. dropdown:: Which open source license applies to the rivt framework?  
+.. dropdown:: Which open source license applies to rivt?  
 
     **rivtlib** is distributed under the 
-    `MIT open source license <https://opensource.org/license/mit/>`_
+    `MIT open source license <https://opensource.org/license/mit/>`_.
+    The Python packages that are part of the *rivt project* are distributed 
+    primarly under the BSD, Appache and MIT open source licenses. Python itself
+    is distributed under the Python Software Foundation License (PSFL).
     
-    **VSCode and extensions** - for editing and processing
+.. dropdown:: Which open source license applies to the rivt framework?  
     
-    **Python and libraries** - for analysis and formatting
+    **VSCode** - Visual Studio Code uses a proprietary Microsoft license for
+    the compiled product, allowing free use for development, testing and
+    commercial applications. The source code ("Code - OSS") is under the MIT
+    license. You can use VS Code freely for any purpose, including commercial
+    projects, but some bundled extensions or specialized components (VS Code
+    Server and Marketplace) may have different terms. Most extentions use the
+    MIT license.
 
-    **LaTeX** - for typesetting
+    VSCodium is a fully open source alternative that removes Microsoft's
+    proprietary components and built-in telemetry. Its extension 
+    marketplace is less complete.
     
-    **Git, GitHub** - for version control
+    **LaTeX** - LaTeX is released under the LaTeX Project Public License (LPPL) 
+    for LaTeX components and MIT and BSD variants for many core utilities
+    and packages. 
     
-    **QCAD** - for diagramming
+    **QCAD** - The QCAD source code is distributed under the open source
+    license GPLv3 with exceptions to allow proprietary extensions.
 
-.. raw:: html
+    **Git** - The Git software is released under the GNU General
+    Public License Version 2.0 (GPLv2).
 
-    <p id="api">&lt;i&gt;</p>
+.. dropdown:: Which open source license applies to rivt files?  
 
-**[3]** VSCode
+    The open source license for a public rivt file is specified in the Metadata
+    block tag. The default is the MIT license.
+
+**[3t]** *rivtlib* releases
 -------------------------------------------------------------
 .. raw:: html
 
     <hr>
-    <p style="text-align: right;"> &lt;t&gt; </p>
 
+.. dropdown:: What is the planned release schedule for *rivt*?
 
-.. dropdown:: Which open source license applies to the rivt framework?  
-
-    **rivtlib** is distributed under the 
-    `MIT open source license <https://opensource.org/license/mit/>`_
-    
-    **VSCode and extensions** - for editing and processing
-    
-    **Python and libraries** - for analysis and formatting
-
-    **LaTeX** - for typesetting
-    
-    **Git, GitHub** - for version control
-    
-    **QCAD** - for diagramming
-
-
-
-
-
+    *rivt* releases are planned monthly. Major versions will have forward and 
+    backward compatiblity. 
 
