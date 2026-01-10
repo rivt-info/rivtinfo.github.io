@@ -13,13 +13,13 @@
 =============== =============== ===========================================
 API Functions        Name             Purpose
 =============== =============== ===========================================
-rv.R(rS)           **R** un          Run shell commands
-rv.I(rS)           **I** nsert       Insert static sources 
-rv.V(rS)           **V** alues       Calculate values
-rv.T(rS)           **T** ools        Python and markup scripts
-rv.S(rS)           Skip              Skip section (comments and debugging)
-rv.D(rS)           Doc               Publish docs 
-rv.X(rS)           Exit              Exit rivt (debugging)
+**rv.R** (rS)         Run            Run shell commands
+**rv.I** (rS)         Insert         Insert static sources 
+**rv.V** (rS)         Values         Calculate values
+**rv.T** (rS)         Tools          Python and markup scripts
+**rv.S** (rS)         Skip           Skip section (comments and debugging)
+**rv.D** (rS)         Doc            Publish docs 
+**rv.X** (rS)         Exit           Exit rivt (debugging)
 =============== =============== ===========================================
 
 The first line of a *rivt string* (rS) is a *header substring*.
@@ -58,18 +58,18 @@ rv.X        **private**;public     **stored**           **merge**
 ========== ================================================= ===============================
 API Scope             Line Tags                                     Description 
 ========== ================================================= ===============================
-rv.I                          text **_[C]**                         :ref:`Center text` 
-rv.I                          text **_[R]**                         :ref:`Right justify text`
-rv.I                    text  math _[M]                         :ref:`Text math` 
-rv.I                    LaTeX math _[L]                         :ref:`LaTeX math` 
-rv.I                   label, url  _[U]                         :ref:`URL link`   
-rv.I                          text _[G] glossary term           :ref:`Term reference`
-rv.I                          text _[S] section label           :ref:`Section link`
-rv.I                          text _[#] more text               :ref:`Endnote number`  
-rv.I                text rivt_file _[D] more text               :ref:`Doc link`
-rv.V, I              text var_name _[V] more text               :ref:`Variable value`
-rv.V, I            assign or label _[E]                         :ref:`Equation label`
-rv.V, I          valtable or title _[T]                         :ref:`Table title`
+rv.I                          text **_[C]**                     :ref:`Center text` 
+rv.I                          text **_[R]**                     :ref:`Right justify text`
+rv.I                    text  math **_[M]**                     :ref:`Text math` 
+rv.I                    LaTeX math **_[L]**                     :ref:`LaTeX math` 
+rv.I                   label, url  **_[U]**                     :ref:`URL link`   
+rv.I                          text **_[G]** glossary term       :ref:`Term reference`
+rv.I                          text **_[S]** section label       :ref:`Section link`
+rv.I                          text **_[#]** more text           :ref:`Endnote number`  
+rv.I                text rivt_file **_[D]** more text           :ref:`Doc link`
+rv.V, I              text var_name **_[V]** more text           :ref:`Variable value`
+rv.V, I            assign or label **_[E]**                     :ref:`Equation label`
+rv.V, I          valtable or title **_[T]**                     :ref:`Table title`
 ========== ================================================= ===============================
 
 **[3t]** Block Tag Summary
@@ -80,21 +80,20 @@ rv.V, I          valtable or title _[T]                         :ref:`Table titl
     <hr>
 
 ========== ========================================= ===============================
-API Scope         Block Tags                           Description 
+API Scope         Block Tags                               Description 
 ========== ========================================= ===============================
-rv.R        **_[[SHELL]]** process parameters              :ref:`Shell script`
-rv.I        **_[[INDENT]]** spaces (4 default)             :ref:`Indent text block`
-rv.I        _[[ITALIC]] spaces (4 default)             :ref:`Indent italic block`
-rv.I        _[[ENDNOTES]] optional label               :ref:`Endnotes block`
-rv.I        _[[TEXT]] optional language                :ref:`Text block`
-rv.I        _[[TOPIC]] topic                           :ref:`Topic block`
-rv.I        _[[BOX]] label                             :ref:`Box block`
-rv.V, T     _[[PYTHON]] namespace                      :ref:`Python block`
-rv.T        _[[MARKUP]] type                           :ref:`Markup block`
-rv.T        _[[METADATA]] label                        :ref:`Meta block`
-rv.D        _[[LAYOUT]] label                          :ref:`Layout block` 
-all         _[[END]]                                   :ref:`End block`
-all         _[[NEW PAGE]]                              :ref:`Start new page`
+rv.R        **_[[SHELL]]** process parameters         :ref:`Shell script`
+rv.I        **_[[INDENT]]** spaces (4 default)        :ref:`Indent text block`
+rv.I        **_[[ITALIC]]** spaces (4 default)        :ref:`Indent italic block`
+rv.I        **_[[ENDNOTES]]** optional label          :ref:`Endnotes block`
+rv.I        **_[[TEXT]]** optional language           :ref:`Text block`
+rv.I        **_[[TOPIC]]** topic                      :ref:`Topic block`
+rv.I        **_[[BOX]]** label                        :ref:`Box block`
+rv.V, T     **_[[PYTHON]]** namespace                 :ref:`Python block`
+rv.T        **_[[METADATA]]** label                   :ref:`Meta block`
+rv.D        **_[[LAYOUT]]** label                     :ref:`Layout block` 
+all         **_[[END]]**                              :ref:`End block`
+all         **_[[NEW PAGE]]**                         :ref:`Start new page`
 ========== ========================================= ===============================
 
 **[4t]** Command Summary
@@ -109,41 +108,40 @@ are in the default path only the file name needs to be provided.
 
 **Read, write and format files**
 
-========== ============================================================== =====================
+========== ============================================================== ========================
 API Scope           | Command | path | parameters                          Description
-========== ============================================================== =====================
-rv.R       **| SHELL |** relative path | os, wait                             :ref:`Shell file`
-rv.I       **| TEXT |** relative path |  language                             :ref:`Text file`
-rv.V, I    \| TABLE | rel path | title, width, rows, align, head           :ref:`Table file`     
-rv.V, I    \| IMAGE | relative path | caption, scale, number               :ref:`Image file`
-rv.V, I    \| IMAGE2 | rel path1, rel path2 | caption, scale number        :ref:`Adjacent images`
-rv.V       \| VALTABLE | rel path | title, rows, number                    :ref:`Values file`     
-rv.V       a =: 1*IN  | unit1, unit2, decimal | label                      :ref:`Define variable`
-rv.V       c <=: expression | unit1, unit2, decimal | label                :ref:`Assign value`
-rv.V       a < c  | decimal | text, align, color                           :ref:`Compare values`
-rv.T, V    \| PYTHON | relative path | namespace                           :ref:`Python file`
-rv.T       \| MARKUP | relative path | type                                :ref:`Markup file`
-rv.D       \| ATTACHPDF | relative path | place, title                     :ref:`Attach PDF`   
-rv.D       \| PUBLISH | ini rel. path | type                               :ref:`Publish doc` 
-========== ============================================================== =====================
-
+========== ============================================================== ========================
+rv.R        **| SHELL |** rel path | os, wait                               :ref:`Shell file`
+rv.I        **| TEXT |** rel path |  language                               :ref:`Text file`
+rv.V, I     **| TABLE |** rel path | title, width, rows, align, head        :ref:`Table file`     
+rv.V, I     **| IMAGE |** rel path | caption, scale, number                 :ref:`Image file`
+rv.V, I     **| IMAGE2 |** rel path1, rel path2 | caption, scale number     :ref:`Adjacent images`
+rv.V        **| VALTABLE |** rel path | title, rows, number                 :ref:`Values file`     
+rv.V        a =: 1*IN  | unit1, unit2, decimal | label                      :ref:`Define variable`
+rv.V        c <=: expression | unit1, unit2, decimal | label                :ref:`Assign value`
+rv.V        a < c  | decimal | text, align, color                           :ref:`Compare values`
+rv.T, V     **| PYTHON |** rel path | namespace                             :ref:`Python file`
+rv.T        **| MARKUP |** rel path | type                                  :ref:`Markup file`
+rv.D        **| ATTACHPDF |** rel path | place, title                       :ref:`Attach PDF`   
+rv.D        **| PUBLISH |** rel path (ini) | type                           :ref:`Publish doc` 
+========== ============================================================== ========================
 
 **Default command paths**
 
 ================ =========================
    Command         Default Path
 ================ =========================
-\| SHELL |          /src/shell/
-\| TEXT |           /src/data/
-\| TABLE |          /src/data/
-\| IMAGE |          /src/image/
-\| IMAGE2 |         /src/image/
-\| VALTABLE |       /src/data/  [1]    
-\| PYTHON |         /src/scripts/
-\| MARKUP |         /src/scripts/
-\| ATTACHPDF |      /src/gendocs/  
-\| PUBLISH |        /src/gendocs/
+\| SHELL |          **/src/shell/**
+\| TEXT |           **/src/data/**
+\| TABLE |          **/src/data/**
+\| IMAGE |          **/src/image/**
+\| IMAGE2 |         **/src/image/**
+\| VALTABLE |       **/src/data/**  [1]    
+\| PYTHON |         **/src/scripts/**
+\| MARKUP |         **/src/scripts/**
+\| ATTACHPDF |      **/src/gendocs/**  
+\| PUBLISH |        **/src/gendocs/**
 ================ =========================
 
-[1]  use /stored/data/filename to read values previously defined in the report
+[1]  use /stored/data/filename to read values previously defined and stored
 
