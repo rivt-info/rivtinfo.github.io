@@ -76,9 +76,9 @@ by the author when the *doc* is published. The *MIT license* is the default.
 
 .. rst-class:: center
 
-**rivt Files, Docs and Reports**
+**rivt Doc Processing**
 
-.. image:: _static/img/rivtflow.png
+.. image:: _static/img/rivtflow2.png
     :scale: 70%
     :alt: rivt flow chart 
     :align: center
