@@ -32,12 +32,12 @@
     the compiled product, allowing free use for development, testing and
     commercial applications. The source code ("Code - OSS") is under the MIT
     license. You can use VS Code freely for any purpose, including commercial
-    projects, but some bundled extensions or specialized components (VS Code
-    Server and Marketplace) may have different terms. Most extentions use the
-    MIT license.
+    projects, but some bundled extensions or specialized components
+    (connections to the Microsoft servers and marketplace) may have different
+    terms. Most extentions in the Marketplace use the MIT license.
 
     VSCodium is a fully open source alternative that removes Microsoft's
-    proprietary components and built-in telemetry. Its extension 
+    proprietary components and built-in telemetry. However its extension 
     marketplace is less complete.
     
     **LaTeX** - LaTeX is released under the LaTeX Project Public License (LPPL) 
@@ -54,10 +54,10 @@
 
 .. dropdown:: Which open source license applies to rivt files?  
 
-    The open source license for a public rivt file is specified in the Metadata
-    block tag. The default is the MIT license.
+    The open source license for a public rivt file is specified in the 
+    _[[Metadata]] block tag. The default license is the MIT license.
 
-**[3t]** *rivtlib* releases
+**[3t]** *rivt* releases
 -------------------------------------------------------------
 .. raw:: html
 
@@ -67,6 +67,7 @@
 
     *rivt* releases are planned monthly. Major versions will have forward and 
     backward compatiblity. See 
-    `GitHub <https:/https://github.com/rivtlib-dev/rivtlib/releases>`_ for 
-    previous releases. 
-
+    `GitHub <https://github.com/rivtlib-dev/rivtlib/releases>`_ for 
+    past releases.  See 
+    `here <https://github.com/rivtlib-dev/rivtlib/blob/main/CHANGELOG.md>`_
+    for the changelog.
