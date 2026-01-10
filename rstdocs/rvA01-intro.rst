@@ -70,9 +70,9 @@ package. A collection of *rivt docs* may be collated as a :term:`rivt report`.
 As an open source project *rivt files* may be collaberatively shared and *rivt*
 may be integrated with other programs. *rivt* is distributed under the 
 `MIT open source license. <https://opensource.org/license/mit>`_ 
-The parts of a *rivt file* that are shared in *public rivt files* along with an 
+The parts of a *rivt file* that are shared in *public rivt files* under an 
 `Open Source license <https://opensource.org/licenses>`_ are selected 
-by the author. The *MIT license* is the default.
+by the author when the *doc* is published. The *MIT license* is the default.
 
 .. rst-class:: center
 
