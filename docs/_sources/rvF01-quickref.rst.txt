@@ -117,9 +117,9 @@ rv.V, I     **| TABLE |** rel path | title, width, rows, align, head        :ref
 rv.V, I     **| IMAGE |** rel path | caption, scale, number                 :ref:`Image file`
 rv.V, I     **| IMAGE2 |** rel path1, rel path2 | caption, scale number     :ref:`Adjacent images`
 rv.V        **| VALTABLE |** rel path | title, rows, number                 :ref:`Values file`     
-rv.V        a =: 1*IN  | unit1, unit2, decimal | label                      :ref:`Define variable`
-rv.V        c <=: expression | unit1, unit2, decimal | label                :ref:`Assign value`
-rv.V        a < c  | decimal | text, align, color                           :ref:`Compare values`
+rv.V        a **=:** 1*IN  | unit1, unit2, decimal | label                  :ref:`Define variable`
+rv.V        c **<=:** expression | unit1, unit2, decimal | label            :ref:`Assign value`
+rv.V        a **<** c  | decimal | text, align, color                       :ref:`Compare values`
 rv.T, V     **| PYTHON |** rel path | namespace                             :ref:`Python file`
 rv.T        **| MARKUP |** rel path | type                                  :ref:`Markup file`
 rv.D        **| ATTACHPDF |** rel path | place, title                       :ref:`Attach PDF`   
