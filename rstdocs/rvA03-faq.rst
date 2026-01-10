@@ -23,7 +23,9 @@
     The Python packages that are part of the *rivt project* are distributed 
     primarly under the BSD, Appache and MIT open source licenses. Python itself
     is distributed under the Python Software Foundation License (PSFL).
-    
+
+|
+
 .. dropdown:: Which open source license applies to the rivt framework?  
     
     **VSCode** - Visual Studio Code uses a proprietary Microsoft license for
@@ -48,6 +50,8 @@
     **Git** - The Git software is released under the GNU General
     Public License Version 2.0 (GPLv2).
 
+|
+
 .. dropdown:: Which open source license applies to rivt files?  
 
     The open source license for a public rivt file is specified in the Metadata
@@ -62,5 +66,7 @@
 .. dropdown:: What is the planned release schedule for *rivt*?
 
     *rivt* releases are planned monthly. Major versions will have forward and 
-    backward compatiblity. 
+    backward compatiblity. See 
+    `GitHub <https:/https://github.com/rivtlib-dev/rivtlib/releases>`_ for 
+    previous releases. 
 
