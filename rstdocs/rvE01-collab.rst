@@ -8,14 +8,13 @@
 
     <hr>
 
- As a Python open source project, collaborations and collective rivt file
- improvements can happen in several ways.
+ As a Python open source project, there are several ways to collaborate 
+ and share rivt file improvements.
 
-#. *rivt files* may be shared by uploading
-    :doc:`public files</rvE02-publicrivt>` to repositories 
-    such as *GitHub*. 
+#. :doc:`Public rivt files</rvE02-publicrivt>` may be shared by uploading
+    to repositories such as *GitHub*.  
 
-#. Public *rivt files* can be found using the 
+#. Public *rivt files* can be found and downloaded using the 
     :doc:`search interface <rvE03-ghsearch>`. For public files, 
 
     - cloned versions may be forked to create different versions.
