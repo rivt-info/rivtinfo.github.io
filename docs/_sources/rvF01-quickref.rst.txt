@@ -37,15 +37,15 @@ Default settings in the *header substring* do not need to be specified. The
 default setting for each API is listed first (**in bold**) in the table below.
  
 ========== ===================== ===================== =====================
-API          private;public         doc;stored         section;merge         
+API          private;public         doc;stored           section;merge         
 ========== ===================== ===================== ===================== 
 rv.R        **private**;public     **stored**;doc       **merge**;section
 rv.I        **private**;public     **doc**;stored       **section**;merge   
 rv.V        **private**;public     **doc**;stored       **section**;merge    
 rv.T        **private**;public     **stored**;doc       **merge**;section
 rv.S        **private**;public     **stored**;doc       **merge**;section
-rv.D        **private**;public     **stored**           **merge**
-rv.X        **private**;public     **stored**           **merge**
+rv.D        **public**             **stored**           **merge**
+rv.X         -                      -                   -
 ========== ===================== ===================== =====================
 
 **[2t]** Line Tag Summary

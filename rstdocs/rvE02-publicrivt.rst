@@ -25,21 +25,22 @@ default (see :ref:`Header substring`).
         
         """)
 
-Sections written to the public rivt file in the */public* folder are written to
-a file with a file name taken from the rivt file:
+Sections are written to a rivt file in the */public* folder with a file name
+composed as:
 
         .. code-block:: text
 
-            rvAnn-filename.py
+            rivt file name
 
-is modified to the same file name with an additional hyphen.
+                rvAnn-filename.py
+
+            modified with an additional hyphen
         
-        .. code-block:: text
+                rv-Ann-filename.py
 
-            rv-Ann-filename.py
-
-The public folder may be uploaded to a GitHub repo. When downloaded the extra
-hyphen may be removed.
+The public folder may be uploaded to a GitHub repo for public sharing. When
+downloaded the extra hyphens may be removed with a batch remove command (e.g.
+in VSCode).
 
 **[2t]** Public Folder
 ----------------------------------------
