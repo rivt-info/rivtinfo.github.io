@@ -9,7 +9,7 @@
     <hr>
 
 ========== ============================================================== ========================
-API Scope           | Command | path | parameters                          Description
+API Scope           **| Command |** path | parameters                       Description
 ========== ============================================================== ========================
 rv.R        **| SHELL |** rel path | os, wait                               :ref:`Shell file`
 rv.I        **| TEXT |** rel path |  language                               :ref:`Text file`

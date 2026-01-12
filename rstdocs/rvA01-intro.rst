@@ -135,15 +135,15 @@ API's.
     <p style="border-width:1px; border-style:solid; 
     border-color:#49b2c3;padding: 1em;">
 
-    <b>Content Functions</b> <br>
-    The <i>Run API</i> executes shell commands.<br> 
-    The <i>Insert API</i> adds static table, image, equation and text content.<br> 
-    The <i>Value API</i> evaluates equations and functions.<br> 
+    <b>Content Functions</b> <br><br>
+    The <i>Run API</i> executes shell commands.<br><br> 
+    The <i>Insert API</i> adds static table, image, equation and text content.<br><br> 
+    The <i>Value API</i> evaluates equations and functions.<br><br> 
     The <i>Tool API</i> runs reStructuredText, HTML, LaTeX and Python scripts.<br>
     <br>
-    <b>Processing and interactive Functions</b> <br>
-    The <i>Doc API</i> specifies <i>doc</i> type and style and generates the file.<br>  
-    The <i>Skip API</i> can be used for interactive debugging and comments.<br> 
+    <b>Processing and interactive Functions</b> <br><br>
+    The <i>Doc API</i> specifies <i>doc</i> type and style and generates the file.<br> <br> 
+    The <i>Skip API</i> can be used for interactive debugging and comments.<br><br> 
     The <i>Exit API</i> can be used for interactive debugging.<br> 
     </p>
 
@@ -226,11 +226,11 @@ spaces to seprate words in the name.
     <p style="border-width:1px; border-style:solid; 
     border-color:#49b2c3;padding: 1em;">
 
-    <b>Folder Key</b> <br>
-    Required names or prefixes are shown in brackets [ ].
-    Required folders start with a capital letter. <br>
+    <b>Folder Key</b> <br><br>
+    Required names or prefixes are shown in brackets [ ].<br><br>
+    Required folders start with a capital letter. <br><br>
     Folders that contain author provided files are marked with a 
-    single vertical bar ( | ).<br>  
+    single vertical bar ( | ).<br><br>  
     Folders that contain <i>rivtlib</i> generated files are 
     marked with double vertical bars ( || ).</p>
 
