@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
-    <title>B.1 Installation &#8212; rivt</title>
+    <title>B.5 texlive &#8212; rivt</title>
   
   
   
@@ -56,11 +56,11 @@
     <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'rvB01-install';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'rvB05-texlive';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="B.2 Dependencies" href="rvB02-python.html" />
-    <link rel="prev" title="A.3 FAQ" href="rvA03-faq.html" />
+    <link rel="next" title="B.6 FreeCAD" href="rvB06-freecad.html" />
+    <link rel="prev" title="B.4 Git" href="rvB04-git.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -153,7 +153,7 @@
 
 
 <li class="nav-item current active">
-  <a class="nav-link nav-internal" href="#">
+  <a class="nav-link nav-internal" href="rvB01-install.html">
     B.1 Installation
   </a>
 </li>
@@ -267,7 +267,7 @@
 
 
 <li class="nav-item current active">
-  <a class="nav-link nav-internal" href="#">
+  <a class="nav-link nav-internal" href="rvB01-install.html">
     B.1 Installation
   </a>
 </li>
@@ -326,11 +326,11 @@
         <div class="sidebar-primary-item">
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
-    <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+    <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="rvB02-python.html"><strong>B.2 Dependencies</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvB03-vscode.html"><strong>B.3 VSCode Settings</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvB04-git.html"><strong>B.4 Git</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvB05-texlive.html"><strong>B.5 texlive</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>B.5 texlive</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvB06-freecad.html"><strong>B.6 FreeCAD</strong></a></li>
 </ul>
 </div>
@@ -372,7 +372,10 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>B.1 Installation</strong></span></li>
+    
+    <li class="breadcrumb-item"><a href="rvB01-install.html" class="nav-link"><strong>B.1 Installation</strong></a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>B.5 texlive</strong></span></li>
   </ul>
 </nav>
 </div>
@@ -389,118 +392,11 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="b-1-installation">
-<h1><strong>B.1 Installation</strong><a class="headerlink" href="#b-1-installation" title="Link to this heading">#</a></h1>
-<section id="t-rivt-project">
-<h2><strong>[1t]</strong> rivt Project<a class="headerlink" href="#t-rivt-project" title="Link to this heading">#</a></h2>
-<hr><p><em>rivt</em> is an open source Python project that includes <a class="reference internal" href="rvA02-terms.html#term-rivtlib"><span class="xref std std-term">rivtlib</span></a> and
-approximately two dozen additional <a class="reference internal" href="rvB02-python.html"><span class="doc">Python packages</span></a>. The
-IDE <a class="reference external" href="https://pyzo.org/">Pyzo</a> is installed with <em>rivt</em> as an effective
-lightweight program for editing and publishing <em>rivt docs</em>.</p>
-<p><em>rivt</em> is designed to wrork in an integrated framework with other open source
-programs. In the installation methods described below some install <em>rivt</em>
-and some install a <em>rivt framework</em>.</p>
-<aside class="topic">
-<p class="topic-title">rivtuv</p>
-<p><em>uv</em> is a <a class="reference external" href="https://docs.astral.sh/uv/">Python package manager</a> and
-installer that simplifies installing isolated Python environments. See
-<a class="reference internal" href="#rivt-uv"><span class="std std-ref">rivtuv</span></a> for procedure.</p>
-</aside>
-<hr><aside class="topic">
-<p class="topic-title">rivt system</p>
-<p><em>rivt</em> may be installed at the system level using standalone installers.
-See <a class="reference internal" href="#rivt-system-install"><span class="std std-ref">[3t] rivt system install</span></a> for procedure.</p>
-</aside>
-<hr><aside class="topic">
-<p class="topic-title">rivtzip</p>
-<p><em>rivtzip</em> installs <em>rivtframework1</em>. It is is a single folder, portable
-and isolated version of <em>rivt</em> integrated with <em>VSCode</em>.</p>
-<p>See <a class="reference internal" href="#rivt-zip"><span class="std std-ref">rivtzip</span></a> for procedure.</p>
-</aside>
-<hr><aside class="topic">
-<p class="topic-title">rivt framework2</p>
-<p><em>rivt framework1</em> includes <em>rivt</em> and additional integrated programs and
-tools with their own installers. It includes important productivity tools
-for editing, document control and diagramming.</p>
-<ol class="arabic simple">
-<li><p><em>VSCode and extensions</em> for editing and collaboration.</p></li>
-<li><p><em>Git and GitHub</em> for version control and document sharing.</p></li>
-<li><p><em>LaTeX</em> for precise typesetting.</p></li>
-<li><p><em>QCAD</em> for diagramming.</p></li>
-</ol>
-<p>See <a class="reference internal" href="#rivt-framework"><span class="std std-ref">rivt framework</span></a> for procedure.</p>
-</aside>
-</section>
-<section id="t-install-rivtuv">
-<span id="rivt-uv"></span><h2><strong>[2t]</strong> Install <strong>rivtuv</strong><a class="headerlink" href="#t-install-rivtuv" title="Link to this heading">#</a></h2>
-<hr><p>The <em>rivtlib</em> package is not uploaded to PyPI yet. The <em>rivtuv</em> installation
-method is recommended for most users.</p>
-<aside class="topic">
-<p class="topic-title">Step 1. Install uv</p>
-<p>Install <a class="reference external" href="https://docs.astral.sh/uv/getting-started/installation/#pypi">uv</a>.</p>
-<p>The recommended method for installing <em>uv</em> is:</p>
-<p>Windows from the command line:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>winget<span class="w"> </span>install<span class="w"> </span>--id<span class="o">=</span>astral-sh.uv<span class="w">  </span>-e
-</pre></div>
-</div>
-<p>macOS and Linux from the command line:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-LsSf<span class="w"> </span>https://astral.sh/uv/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>sh
-</pre></div>
-</div>
-</aside>
-<aside class="topic">
-<p class="topic-title">Step 2. Create an isolated rivt environment</p>
-<p>After installing <em>uv</em>, download and run the following command or shell file.</p>
-<p>Windows:  <a class="reference download internal" download="" href="_downloads/3883216e7f8a8167bfab705f585bda9c/rivtuv.cmd"><code class="xref download docutils literal notranslate"><span class="pre">rivtuv.cmd</span></code></a></p>
-<p>OSX and Linux: <a class="reference download internal" download="" href="_downloads/8aea5313b4752f6c507744d1c20b200b/rivtuv.sh"><code class="xref download docutils literal notranslate"><span class="pre">rivtuv.sh</span></code></a></p>
-<p>This installs an isolated <em>rivt</em> environment and example files in the
-xxxx folder in the users <em>Home</em> directory. Additional install script detaild
-can be found <a class="reference external" href="https://github.com/rivt-info/rivtuv-install/edit/main/">here</a>.</p>
-</aside>
-<aside class="topic">
-<p class="topic-title">Step 3. Run example program from Pyzo or command line.</p>
-<p>Some text.</p>
-</aside>
-</section>
-<section id="t-rivt-system-install">
-<span id="rivt-system-install"></span><h2><strong>[3t]</strong> rivt system install<a class="headerlink" href="#t-rivt-system-install" title="Link to this heading">#</a></h2>
-<hr><p><em>rivt</em> may be installed at the system level.</p>
-<ol class="arabic simple">
-<li><p>Install Python using <a class="reference external" href="https://www.python.org/downloads/">Python installers</a></p></li>
-<li><p>Install <em>rivtlib</em> and dependencies using <a class="reference external" href="https://pypi.org/project/pip/">pip</a></p></li>
-</ol>
-<p>A list of the dependencies and <em>requirements.txt</em> file is
-<a class="reference internal" href="#"><span class="doc">here</span></a>.</p>
-</section>
-<section id="t-install-rivt-framework">
-<span id="rivt-framework"></span><h2><strong>[4t]</strong> Install rivt framework<a class="headerlink" href="#t-install-rivt-framework" title="Link to this heading">#</a></h2>
-<hr><p>The <em>rivt framework</em> includes installation of the following programs:</p>
-<ol class="arabic simple">
-<li><p><a class="reference external" href="https://code.visualstudio.com/">VSCode</a> and
-<a class="reference external" href="https://marketplace.visualstudio.com/vscode">VSCode extensions</a>.
-<em>rivt</em> extensions and snippets are <a class="reference internal" href="rvB03-vscode.html"><span class="doc">here</span></a>.</p></li>
-<li><p><a class="reference external" href="https://git-scm.com">Git</a> and set up a <a class="reference external" href="hhttps://github.com">GitHub</a></p></li>
-<li><p><a class="reference external" href="https://www.tug.org/texlive/">LaTeX</a></p></li>
-<li><p><a class="reference external" href="https://www.freecad.org/">FreeCad</a></p></li>
-</ol>
-</section>
-<section id="t-install-rivtzip">
-<span id="rivt-zip"></span><h2><strong>[5t]</strong> Install <em>rivtzip</em><a class="headerlink" href="#t-install-rivtzip" title="Link to this heading">#</a></h2>
-<hr><p><em>rivtzip</em> is a portable, single folder version of <em>rivt</em> and <em>VSCode</em>
-including libraries and extensions. It can be downloaded here.</p>
-<p>The advantages of this installation method include:</p>
-<ol class="arabic simple">
-<li><p>No installation steps - just unzip and use.</p></li>
-<li><p>Can be moved anywhere as a unified folder.</p></li>
-<li><p>Ensures compatiblity and integration between libraries.</p></li>
-</ol>
-<p>Disadvantages include:</p>
-<ol class="arabic simple">
-<li><p>The software components cannot be individually updated. (New releases monthly)</p></li>
-<li><p>Integration with other programs and tools may be more difficult.</p></li>
-</ol>
-<div class="toctree-wrapper compound">
-</div>
+  <section id="b-5-texlive">
+<h1><strong>B.5 texlive</strong><a class="headerlink" href="#b-5-texlive" title="Link to this heading">#</a></h1>
+<section id="t-latex">
+<h2><strong>[1t]</strong> LaTeX<a class="headerlink" href="#t-latex" title="Link to this heading">#</a></h2>
+<hr><p><a class="reference external" href="https://www.tug.org/texlive/">https://www.tug.org/texlive/</a></p>
 </section>
 </section>
 
@@ -515,20 +411,20 @@ including libraries and extensions. It can be downloaded here.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rvA03-faq.html"
+       href="rvB04-git.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>A.3 FAQ</strong></p>
+        <p class="prev-next-title"><strong>B.4 Git</strong></p>
       </div>
     </a>
     <a class="right-next"
-       href="rvB02-python.html"
+       href="rvB06-freecad.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>B.2 Dependencies</strong></p>
+        <p class="prev-next-title"><strong>B.6 FreeCAD</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -551,11 +447,7 @@ including libraries and extensions. It can be downloaded here.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rivt-project"><strong>[1t]</strong> rivt Project</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-install-rivtuv"><strong>[2t]</strong> Install <strong>rivtuv</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rivt-system-install"><strong>[3t]</strong> rivt system install</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-install-rivt-framework"><strong>[4t]</strong> Install rivt framework</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-install-rivtzip"><strong>[5t]</strong> Install <em>rivtzip</em></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-latex"><strong>[1t]</strong> LaTeX</a></li>
 </ul>
   </nav></div>
 

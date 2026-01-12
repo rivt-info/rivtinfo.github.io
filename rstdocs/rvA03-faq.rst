@@ -63,7 +63,7 @@
 
     <hr>
 
-.. dropdown:: What is the planned release schedule for *rivt*?
+.. dropdown:: What is the planned ongoing release schedule for *rivt*?
 
     *rivt* minor releases are planned monthly following the release of version
     1.0.0. Major releases will have backward compatiblity. See

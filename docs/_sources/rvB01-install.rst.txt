@@ -135,7 +135,7 @@ A list of the dependencies and *requirements.txt* file is
 
     <hr>
 
-*rivt framework* includes installation of the following programs:
+The *rivt framework* includes installation of the following programs:
 
 #. `VSCode <https://code.visualstudio.com/>`_ and 
    `VSCode extensions <https://marketplace.visualstudio.com/vscode>`_. 
@@ -145,7 +145,7 @@ A list of the dependencies and *requirements.txt* file is
 
 #. `LaTeX <https://www.tug.org/texlive/>`_ 
 
-#. `QCAD <https://qcad.io/en/>`_ 
+#. `FreeCad <https://www.freecad.org/>`_ 
 
 
 .. _rivt-zip:
@@ -178,3 +178,6 @@ Disadvantages include:
 
     rvB02-python.rst
     rvB03-vscode.rst
+    rvB04-git.rst
+    rvB05-texlive.rst
+    rvB06-freecad.rst
