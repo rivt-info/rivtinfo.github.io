@@ -42,8 +42,8 @@ are in the default path only the file name needs to be provided.
 \| VALTABLE |       **/Src/Data/**   [1]    
 \| PYTHON |         **/Src/Scripts/**
 \| MARKUP |         **/Src/Scripts/**
-\| ATTACHPDF |      **/Src/Gendocs/**  
-\| PUBLISH |        **/Src/Gendocs/**
+\| ATTACHPDF |      **/Src/Gendoc/**  
+\| PUBLISH |        **/Src/Gendoc/**
 ================ =========================
 
 [1]  use /stored/data/filename to read values previously defined and stored

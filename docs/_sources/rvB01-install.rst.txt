@@ -107,9 +107,9 @@ method is recommended for most users.
     Some text.
 
 
-.. _rivt system install:
+.. _rivt-system install:
 
-**[3t]** install rivt-system
+**[3t]** install *rivt-system*
 --------------------------------
 
 .. raw:: html
@@ -150,7 +150,7 @@ Disadvantages include:
 
 .. _rivt-framework:
 
-**[5t]** Install rivt-framework
+**[5t]** Install *rivt-framework*
 ------------------------------------------
 
 .. raw:: html

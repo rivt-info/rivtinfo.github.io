@@ -67,7 +67,7 @@ rv.R        **private**;public     **stored**;doc       **merge**;section
 rv.I        **private**;public     **doc**;stored       **section**;merge   
 rv.V        **private**;public     **doc**;stored       **section**;merge    
 rv.T        **private**;public     **stored**;doc       **merge**;section
-rv.S        **private**;public     **stored**;doc       **merge**;section
+rv.S        **private**            **stored**           **merge**
 rv.D        **public**             **stored**           **merge**
 rv.X         -                      -                   -
 ========== ===================== ===================== =====================

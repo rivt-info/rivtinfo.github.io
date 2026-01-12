@@ -83,10 +83,10 @@ An example *report* folder structure is shown below.
 
         ...
 
-        ├── [public]/                   || public rivt files 
-        ├── [publish]/                  || doc and report files
-        ├── [src]/                      |  source files from author
-        ├── [stored]/                   || rivt stored files
+        ├── [Public]/                   || public rivt files 
+        ├── [Publish]/                  || doc and report files
+        ├── [Src]/                      |  source files from author
+        ├── [Stored]/                   || rivt stored files
         └── README.txt                  || searchable text report 
 
 
@@ -96,18 +96,20 @@ An example *report* folder structure is shown below.
 
 .. code-block:: bash
 
-    [rivt]-Report-Label/                Report Folder Name                
+.. code-block:: bash
+
+    [rivt]-Report-Label/                     Report Folder Name                
         ├── [rv101-]filename1.py               | rivt input files
         ├── [rv102-]filename2.py               
         ├── [rv201-]filename3.py               
         ├── [rv202-]filename4.py                 
-        ├── [public]/                          || public rivt files                      
+        ├── [Public]/                          || public rivt files                      
             ├── rv-101-filename1.py              
             ├── rv-102-filename1.py              
             ├── rv-201-filename3.py  
             └── rv-202-filename4.py    
-        ├── [publish]/                         || reports and docs
-            ├── [html]/                              HTML site  
+        ├── [Publish]/                         || reports and docs
+            ├── [Html]/                              HTML site  
                 ├── [docs]/                           
                     ├── _images/                
                     ├── _sources/              
@@ -121,7 +123,7 @@ An example *report* folder structure is shown below.
                 ├── rv102-filename2.rst  
                 ├── rv201-filename3.rst  
                 └── rv202-filename4.rst  
-            ├── [pdf]/                               PDF from rst2pdf 
+            ├── [Rstpdf]/                               PDF from rst2pdf 
                 ├── [src]/                           intermediate rst files  
                     ├── rv101-filename1.rst          
                     ├── rv102-filename2.rst                           
@@ -132,7 +134,7 @@ An example *report* folder structure is shown below.
                 ├── rv201-filename3.pdf                        
                 ├── rv202-filename4.pdf         
                 └── Report-Label.pdf                 PDF report from rst2pdf 
-            ├── [pdftex]/                            PDF from LaTeX  
+            ├── [Texpdf]/                            PDF from LaTeX  
                 ├── [src]/                           intermediate rst files   
                     ├── rv101-filename1.rst         
                     ├── rv102-filename2.rst                        
@@ -143,63 +145,63 @@ An example *report* folder structure is shown below.
                 ├── rv201-filename3.pdf                       
                 ├── rv202-filename4.pdf
                 └── Report-Label.pdf                 PDF report from LaTeX 
-            ├── [text]/                              text report
+            ├── [Text]/                              text report
                 ├── rv101-filename1.txt              text docs
                 ├── rv102-filename2.txt       
                 ├── rv201-filename3.txt       
                 ├── rv202-filename4.txt       
                 └── README.txt                       searchable text report                     
-        ├── [src]                              | source files from author               
-            ├── [data]/                             author created subfolder
+        ├── [Src]                              | source files from authors               
+            ├── [Data]/                             author created subfolder
                 ├── data1.csv
                 ├── steel-vals.csv        
                 └── conc-vals.csv  
-            ├── [shell]/                            author created subfolder
+            ├── [Shell]/                            author created subfolder
                 ├── shell1.cmd   
                 └── shell1.csv  
-            ├── [image]/                            author created subfolder                          
+            ├── [Image]/                            author created subfolder                          
                 ├── fig1.png
                 └── fig2.jpg
-            ├── [scripts]/                          author created subfolder
+            ├── [Scripts]/                          author created subfolder
                 ├── table1.csv                                               
                 ├── image1.png
                 ├── plot.py                               
                 ├── new-units.py                     define new units                          
                 └── opensees1.txt    
-            ├── [gendoc]/
+            ├── [Gendoc]/
                 ├── genhtml.cmd                      html generating script
                 ├── genpdf.cmd                       pdf generating script
                 ├── gentexpdf.cmd                    LaTeX generating script
                 ├── rivt-report.py                   report generating script
                 ├── Report-Cover.pdf
                 ├── attach1.pdf
-                └── [style]/                         style files for docs 
-                    ├── [html]/                      html style files
+                └── [Style]/                         style files for docs 
+                    ├── [Html]/                      html style files
                         ├── _locale/                 
                         ├── _static/                        
                         ├── _templates/                     
                         ├── conf.py                         
                         ├── genhtml.cmd                     
                         └── index.rst
-                    ├── [rstpdf]/                    rst2pdf style files
+                    ├── [Rstpdf]/                    rst2pdf style files
                         ├── fonts/              
                         └── style/                 
-                    ├── [pdftex]/                    pdftex style files            
+                    ├── [Texpdf]/                    pdftex style files            
                         └── rivt.sty              
-                    ├── [text]/                      text ini file
+                    ├── [Text]/                      text ini file
                         └── rv-text.ini
-        ├── [stored]/                          || stored files from rivt            
-            ├── [logs]/                              log files
+        ├── [Stored]/                          || stored files from rivt            
+            ├── [Logs]/                              log files
                 ├── rv101-api.txt   
                 ├── rv101-log.txt
                 └── rv102-log.txt
-            ├── [sect]/                              stored sections                    
+            ├── [Sect]/                              stored sections                    
                 ├── rv202-5d.txt   
                 ├── rv103-4t.txt                         
                 └── rv301-2r.txt               
-            ├── [temp]/                              temp files
+            ├── [Temp]/                              temp files
                 └── rv101-label3.tex
-            └── [data]/                              stored value files
+            └── [Data]/                              stored value files
                 ├── v101-2.csv
                 └── v102-3.csv             
         └── README.txt                         || searchable text report 
