@@ -96,8 +96,6 @@ An example *report* folder structure is shown below.
 
 .. code-block:: bash
 
-.. code-block:: bash
-
     [rivt]-Report-Label/                     Report Folder Name                
         ├── [rv101-]filename1.py               | rivt input files
         ├── [rv102-]filename2.py               
@@ -152,19 +150,17 @@ An example *report* folder structure is shown below.
                 ├── rv202-filename4.txt       
                 └── README.txt                       searchable text report                     
         ├── [Src]                              | source files from authors               
-            ├── [Data]/                             author created subfolder
+            ├── [Data]/                             
                 ├── data1.csv
                 ├── steel-vals.csv        
                 └── conc-vals.csv  
-            ├── [Shell]/                            author created subfolder
+            ├── [Shell]/                           
                 ├── shell1.cmd   
                 └── shell1.csv  
-            ├── [Image]/                            author created subfolder                          
+            ├── [Image]/                                                   
                 ├── fig1.png
                 └── fig2.jpg
-            ├── [Scripts]/                          author created subfolder
-                ├── table1.csv                                               
-                ├── image1.png
+            ├── [Scripts]/                         
                 ├── plot.py                               
                 ├── new-units.py                     define new units                          
                 └── opensees1.txt    
@@ -201,7 +197,9 @@ An example *report* folder structure is shown below.
                 └── rv301-2r.txt               
             ├── [Temp]/                              temp files
                 └── rv101-label3.tex
-            └── [Data]/                              stored value files
+            └── [Data]/
+                ├── table1.csv                      stored script output                                  
+                ├── image1.png                      stored value files
                 ├── v101-2.csv
                 └── v102-3.csv             
         └── README.txt                         || searchable text report 
