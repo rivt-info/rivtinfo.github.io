@@ -17,52 +17,52 @@ lightweight program for editing and publishing *rivt docs*.
 programs. In the installation methods described below some install *rivt* 
 and some install a *rivt framework*. 
 
-.. topic:: rivtuv
+.. topic:: rivt-uv
 
     *uv* is a `Python package manager <https://docs.astral.sh/uv/>`_ and
     installer that simplifies installing isolated Python environments. See
-    :ref:`rivtuv <rivt-uv>` for procedure.
+    :ref:`rivt-uv <rivt-uv>` for procedure.
 
 .. raw:: html
 
     <hr>
 
-.. topic:: rivt system
+.. topic:: rivt-system
 
     *rivt* may be installed at the system level using standalone installers.
-    See :ref:`rivt system install` for procedure.
+    See :ref:`rivt-system install` for procedure.
 
 .. raw:: html
 
     <hr>
 
-.. topic:: rivtzip
+.. topic:: rivt-zip
 
-    *rivtzip* installs *rivtframework1*. It is is a single folder, portable 
-    and isolated version of *rivt* integrated with *VSCode*.
+    *rivt-zip* installs a partial *rivt-framework*. It is is a single folder,
+    portable, isolated version of *rivt* integrated with *VSCode*.
 
-    See :ref:`rivtzip <rivt-zip>` for procedure.
+    See :ref:`rivt-zip <rivt-zip>` for procedure.
 
 .. raw:: html
 
     <hr>
 
-.. topic:: rivt framework2
+.. topic:: rivt-framework
 
-    *rivt framework1* includes *rivt* and additional integrated programs and
+    *rivt-framework* includes *rivt* and additional integrated programs and
     tools with their own installers. It includes important productivity tools
     for editing, document control and diagramming.
     
     #. *VSCode and extensions* for editing and collaboration.
     #. *Git and GitHub* for version control and document sharing.
     #. *LaTeX* for precise typesetting.
-    #. *QCAD* for diagramming.
+    #. *FreeCAD* for diagramming and scripting.
 
-    See :ref:`rivt framework <rivt-framework>` for procedure.
+    See :ref:`rivt-framework <rivt-framework>` for procedure.
 
 .. _rivt-uv:
 
-**[2t]** Install **rivtuv**
+**[2t]** Install **rivt-uv**
 ----------------------------------
 
 .. raw:: html
@@ -109,7 +109,7 @@ method is recommended for most users.
 
 .. _rivt system install:
 
-**[3t]** rivt system install 
+**[3t]** install rivt-system
 --------------------------------
 
 .. raw:: html
@@ -125,32 +125,9 @@ method is recommended for most users.
 A list of the dependencies and *requirements.txt* file is 
 :doc:`here <rvB01-install>`.
 
-
-.. _rivt-framework:
-
-**[4t]** Install rivt framework
-------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-The *rivt framework* includes installation of the following programs:
-
-#. `VSCode <https://code.visualstudio.com/>`_ and 
-   `VSCode extensions <https://marketplace.visualstudio.com/vscode>`_. 
-   *rivt* extensions and snippets are :doc:`here <rvB03-vscode>`.
-
-#. `Git <https://git-scm.com>`_ and set up a `GitHub <hhttps://github.com>`_ 
-
-#. `LaTeX <https://www.tug.org/texlive/>`_ 
-
-#. `FreeCad <https://www.freecad.org/>`_ 
-
-
 .. _rivt-zip:
 
-**[5t]** Install *rivtzip*
+**[4t]** Install *rivt-zip*
 --------------------------------------------------
 
 .. raw:: html
@@ -170,6 +147,28 @@ Disadvantages include:
 
 #. The software components cannot be individually updated. (New releases monthly)
 #. Integration with other programs and tools may be more difficult.
+
+.. _rivt-framework:
+
+**[5t]** Install rivt-framework
+------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+The *rivt framework* includes installation of the following programs:
+
+#. `VSCode <https://code.visualstudio.com/>`_ and 
+   `VSCode extensions <https://marketplace.visualstudio.com/vscode>`_. 
+   *rivt* extensions and snippets are :doc:`here <rvB03-vscode>`.
+
+#. `Git <https://git-scm.com>`_ and set up a `GitHub <hhttps://github.com>`_ 
+
+#. `LaTeX <https://www.tug.org/texlive/>`_ 
+
+#. `FreeCad <https://www.freecad.org/>`_ 
+
 
 
 .. toctree::
