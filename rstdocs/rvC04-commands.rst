@@ -34,16 +34,16 @@ are in the default path only the file name needs to be provided.
 ================ =========================
    Command         Default Path
 ================ =========================
-\| SHELL |          **/src/shell/**
-\| TEXT |           **/src/data/**
-\| TABLE |          **/src/data/**
-\| IMAGE |          **/src/image/**
-\| IMAGE2 |         **/src/image/**
-\| VALTABLE |       **/src/data/**   [1]    
-\| PYTHON |         **/src/scripts/**
-\| MARKUP |         **/src/scripts/**
-\| ATTACHPDF |      **/src/gendocs/**  
-\| PUBLISH |        **/src/gendocs/**
+\| SHELL |          **/Src/Shell/**
+\| TEXT |           **/Src/Data/**
+\| TABLE |          **/Src/Data/**
+\| IMAGE |          **/Src/Image/**
+\| IMAGE2 |         **/Src/Image/**
+\| VALTABLE |       **/Src/Data/**   [1]    
+\| PYTHON |         **/Src/Scripts/**
+\| MARKUP |         **/Src/Scripts/**
+\| ATTACHPDF |      **/Src/Gendocs/**  
+\| PUBLISH |        **/Src/Gendocs/**
 ================ =========================
 
 [1]  use /stored/data/filename to read values previously defined and stored

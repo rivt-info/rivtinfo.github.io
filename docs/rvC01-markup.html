@@ -490,7 +490,9 @@ default setting for each API is listed first (in bold) in the table below.</p>
 </table>
 </div>
 <p>Examples of <em>header substring</em> settings are shown below.</p>
-<p><strong>An example with explicit defaults that do not have to be declared:</strong></p>
+<ul class="simple">
+<li><p>An example with explicit defaults that do not have to be declared.</p></li>
+</ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># This</span>
 
 <span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;A New Section | private, doc, section</span>
@@ -511,8 +513,9 @@ default setting for each API is listed first (in bold) in the table below.</p>
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><strong>An example that merges a section into the previous section. It does not
-create a new section and merges the section content into the prior one.</strong></p>
+<ul class="simple">
+<li><p>An example that merges a section into the previous section.</p></li>
+</ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;A Merged Section | merge</span>
 
 <span class="s2">    Content text</span>
@@ -539,15 +542,14 @@ along with  text.</p>
 </div>
 <p>Content is converted line by line into formatted text and <a class="reference external" href="https://docutils.sourceforge.io/docs/user/rst/quickref.html">RestructuredText</a>, and then
 further processed into HTML or PDF. If a line does not contain a <em>command</em> or
-<em>tag</em> it is passed through as is, which allows for including some <em>restructured
-text</em> directly in the <em>Insert</em> function content (rv.I). For example
-surrounding words with * or ** formats a word as italic or bold respectively.</p>
-<p>In addition the <em>Tools function</em> (rv.T) directly supports processing HTML,
-LaTex and reStructuredText scripts with block tags.</p>
+<em>tag</em> it is passed through as is, which allows for the <em>Insert</em> function (rv.I)
+including some <em>restructured text</em> directly i.e.
+surrounding words with * or ** will format a word as italic or bold respectively.</p>
+<p>In addition block tags in the <em>Tools function</em> (rv.T) directly supports
+processing HTML, LaTeX and reStructuredText scripts.</p>
 </section>
 <section id="t-tags-and-commands">
 <h2><strong>[5t]</strong> Tags and Commands<a class="headerlink" href="#t-tags-and-commands" title="Link to this heading">#</a></h2>
-<p>Markup tags and commands are described in detail <a class="reference internal" href="#"><span class="doc">here</span></a>.</p>
 <p><a class="reference internal" href="rvC02-linetags.html"><span class="doc">Line Tags</span></a></p>
 <p>A <a class="reference internal" href="rvA02-terms.html#term-line-tag"><span class="xref std std-term">line tag</span></a> formats a line of text and is denoted with a single
 <strong>_[LETTER]</strong>, placed at or near the end of the line, depending on the tag.</p>

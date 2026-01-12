@@ -131,17 +131,135 @@ rv.D        **| PUBLISH |** rel path (ini) | type                           :ref
 ================ =========================
    Command         Default Path
 ================ =========================
-\| SHELL |          **/src/shell/**
-\| TEXT |           **/src/data/**
-\| TABLE |          **/src/data/**
-\| IMAGE |          **/src/image/**
-\| IMAGE2 |         **/src/image/**
-\| VALTABLE |       **/src/data/**  [1]    
-\| PYTHON |         **/src/scripts/**
-\| MARKUP |         **/src/scripts/**
-\| ATTACHPDF |      **/src/gendocs/**  
-\| PUBLISH |        **/src/gendocs/**
+\| SHELL |          **/Src/Shell/**
+\| TEXT |           **/Src/Data/**
+\| TABLE |          **/Src/Data/**
+\| IMAGE |          **/Src/Image/**
+\| IMAGE2 |         **/Src/Image/**
+\| VALTABLE |       **/Src/Data/**   [1]    
+\| PYTHON |         **/Src/Scripts/**
+\| MARKUP |         **/Src/Scripts/**
+\| ATTACHPDF |      **/Src/Gendocs/**  
+\| PUBLISH |        **/Src/Gendocs/**
 ================ =========================
 
 [1]  use /stored/data/filename to read values previously defined and stored
 
+
+**[5t]** Folders
+-------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+
+.. code-block:: bash
+
+    [rivt]-Report-Label/                Report Folder Name                
+        ├── [rv101-]filename1.py               | rivt input files
+        ├── [rv102-]filename2.py               
+        ├── [rv201-]filename3.py               
+        ├── [rv202-]filename4.py                 
+        ├── [public]/                          || public rivt files                      
+            ├── rv-101-filename1.py              
+            ├── rv-102-filename1.py              
+            ├── rv-201-filename3.py  
+            └── rv-202-filename4.py    
+        ├── [publish]/                         || reports and docs
+            ├── [html]/                              HTML site  
+                ├── [docs]/                           
+                    ├── _images/                
+                    ├── _sources/              
+                    ├── _static/                  
+                    ├── rv101-filename1.html         
+                    ├── rv102-filename2.html                              
+                    ├── rv201-filename3.html                        
+                    ├── rv201-filename4.html   
+                    └── index.html                   HTML site entry point          
+                ├── rv101-filename1.rst              intermediate rst files 
+                ├── rv102-filename2.rst  
+                ├── rv201-filename3.rst  
+                └── rv202-filename4.rst  
+            ├── [pdf]/                               PDF from rst2pdf 
+                ├── [src]/                           intermediate rst files  
+                    ├── rv101-filename1.rst          
+                    ├── rv102-filename2.rst                           
+                    ├── rv201-filename3.rst                        
+                    └── rv202-filename4.rst              
+                ├── rv101-filename1.pdf              PDF docs from rst2pdf 
+                ├── rv102-filename2.pdf                          
+                ├── rv201-filename3.pdf                        
+                ├── rv202-filename4.pdf         
+                └── Report-Label.pdf                 PDF report from rst2pdf 
+            ├── [pdftex]/                            PDF from LaTeX  
+                ├── [src]/                           intermediate rst files   
+                    ├── rv101-filename1.rst         
+                    ├── rv102-filename2.rst                        
+                    ├── rv201-filename3.rst                        
+                    └── rv202-filename4.rst               
+                ├── rv101-filename1.pdf              PDF docs from LaTeX 
+                ├── rv102-filename2.pdf                          
+                ├── rv201-filename3.pdf                       
+                ├── rv202-filename4.pdf
+                └── Report-Label.pdf                 PDF report from LaTeX 
+            ├── [text]/                              text report
+                ├── rv101-filename1.txt              text docs
+                ├── rv102-filename2.txt       
+                ├── rv201-filename3.txt       
+                ├── rv202-filename4.txt       
+                └── README.txt                       searchable text report                     
+        ├── [src]                              | source files from author               
+            ├── [data]/                             author created subfolder
+                ├── data1.csv
+                ├── steel-vals.csv        
+                └── conc-vals.csv  
+            ├── [shell]/                            author created subfolder
+                ├── shell1.cmd   
+                └── shell1.csv  
+            ├── [image]/                            author created subfolder                          
+                ├── fig1.png
+                └── fig2.jpg
+            ├── [scripts]/                          author created subfolder
+                ├── table1.csv                                               
+                ├── image1.png
+                ├── plot.py                               
+                ├── new-units.py                     define new units                          
+                └── opensees1.txt    
+            ├── [gendoc]/
+                ├── genhtml.cmd                      html generating script
+                ├── genpdf.cmd                       pdf generating script
+                ├── gentexpdf.cmd                    LaTeX generating script
+                ├── rivt-report.py                   report generating script
+                ├── Report-Cover.pdf
+                ├── attach1.pdf
+                └── [style]/                         style files for docs 
+                    ├── [html]/                      html style files
+                        ├── _locale/                 
+                        ├── _static/                        
+                        ├── _templates/                     
+                        ├── conf.py                         
+                        ├── genhtml.cmd                     
+                        └── index.rst
+                    ├── [rstpdf]/                    rst2pdf style files
+                        ├── fonts/              
+                        └── style/                 
+                    ├── [pdftex]/                    pdftex style files            
+                        └── rivt.sty              
+                    ├── [text]/                      text ini file
+                        └── rv-text.ini
+        ├── [stored]/                          || stored files from rivt            
+            ├── [logs]/                              log files
+                ├── rv101-api.txt   
+                ├── rv101-log.txt
+                └── rv102-log.txt
+            ├── [sect]/                              stored sections                    
+                ├── rv202-5d.txt   
+                ├── rv103-4t.txt                         
+                └── rv301-2r.txt               
+            ├── [temp]/                              temp files
+                └── rv101-label3.tex
+            └── [data]/                              stored value files
+                ├── v101-2.csv
+                └── v102-3.csv             
+        └── README.txt                         || searchable text report 

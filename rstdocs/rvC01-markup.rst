@@ -74,7 +74,7 @@ rv.X         -                      -                   -
 
 Examples of *header substring* settings are shown below.
 
-**An example with explicit defaults that do not have to be declared:**
+- An example with explicit defaults that do not have to be declared.
 
 .. code-block:: python
 
@@ -98,8 +98,7 @@ Examples of *header substring* settings are shown below.
         """)
 
 
-**An example that merges a section into the previous section. It does not 
-create a new section and merges the section content into the prior one.**
+- An example that merges a section into the previous section.
 
 .. code-block:: python
 
@@ -137,17 +136,15 @@ along with  text.
 Content is converted line by line into formatted text and `RestructuredText
 <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_, and then
 further processed into HTML or PDF. If a line does not contain a *command* or
-*tag* it is passed through as is, which allows for including some *restructured
-text* directly in the *Insert* function content (rv.I). For example 
-surrounding words with * or ** formats a word as italic or bold respectively.
+*tag* it is passed through as is, which allows for the *Insert* function (rv.I) 
+including some *restructured text* directly i.e. 
+surrounding words with * or ** will format a word as italic or bold respectively.
 
-In addition the *Tools function* (rv.T) directly supports processing HTML,
-LaTex and reStructuredText scripts with block tags.
+In addition block tags in the *Tools function* (rv.T) directly supports
+processing HTML, LaTeX and reStructuredText scripts.
 
 **[5t]** Tags and Commands
 ----------------------------
-
-Markup tags and commands are described in detail :doc:`here <rvC01-markup>`. 
 
 :doc:`Line Tags <rvC02-linetags>`
 
