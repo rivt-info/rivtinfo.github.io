@@ -73,7 +73,7 @@ Right justifies line of text within the page margins.
             text _[R]
 
         Example:
-            This text wil be centered. _[R]
+            This text wil be right justified _[R]
 
 =========== ==========================
 API Scope     Insert
