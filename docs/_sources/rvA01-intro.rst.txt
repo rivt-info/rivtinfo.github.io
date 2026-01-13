@@ -224,22 +224,13 @@ spaces to seprate words in the name.
 
 .. raw:: html
 
-    <style>
-    /* This CSS styles the ordered list element (ol) */
-    ol.boxed-list {
-        border: 1px rgb(73, 178, 195); /* Adds a solid blue border around the list */
-        padding: 5em;         /* Adds space between the border and the list items */
-        margin: 5em;          /* Adds space outside the border */
-    }
-    </style>
-    <ol class="boxed-list">
-    <b>Folder Key</b><br>
-     <li> Required names or prefixes are shown in brackets [ ].</li>
-     <li> Required folders start with a capital letter. </li>
-     <li> Folders that contain author provided files are marked with a 
-      single vertical bar ( | ).</li>
-     <li> Folders that contain <i>rivtlib</i> generated files are 
-      marked with double vertical bars ( || ).</li>
+    <ol style="border: 1px rgb(73, 178, 195); padding: 5em; margin: 5em">
+        <b>Folder Key</b><br>
+        <li> Required names or prefixes are shown in brackets [ ].</li>
+        <li> Required folders start with a capital letter. </li>
+        <li> Folders that contain author provided files are marked with a 
+        single vertical bar ( | ).</li>
+        <li> Folders that contain <i>rivtlib</i> generated files are 
     </ol>
 
 **Folders**
