@@ -229,12 +229,12 @@ spaces to seprate words in the name.
 
     <b>Folder Key</b> <br><br>
     <ol>
-     <li> Required names or prefixes are shown in brackets [ ].</li><br><br>
-     <li> Required folders start with a capital letter. </li><br><br>
+     <li> Required names or prefixes are shown in brackets [ ].</li>
+     <li> Required folders start with a capital letter. </li>
      <li> Folders that contain author provided files are marked with a 
-      single vertical bar ( | ).</li><br><br>  
+      single vertical bar ( | ).</li>
      <li> Folders that contain <i>rivtlib</i> generated files are 
-      marked with double vertical bars ( || )</li>.
+      marked with double vertical bars ( || ).</li>
     </ol></p>
 
 **Folders**
