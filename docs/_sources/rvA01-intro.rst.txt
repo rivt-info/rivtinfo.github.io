@@ -129,23 +129,6 @@ API's.
 
 .. raw:: html
 
-    <p style="border-width:1px; border-style:solid; 
-    border-color:#49b2c3;padding: 1em;">
-
-    <b></b> <br><br>
-   .<br><br> 
-    <br><br> 
-    <br><br> 
-    <br>
-    <br>
-    <b>Publish Function</b> <br><br>
-    <br> <br> 
-    
-    <b></b> <br><br>
-    <br><br> 
-    <br> 
-    </p>
-
     <b>Content Functions</b>
     <ol style="border: 2px; 
             border-color: #49b2c3; 

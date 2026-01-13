@@ -585,54 +585,37 @@ Python packages.</p>
 </div>
 <p>Most of a docs’ content is written using the <em>Insert</em> (rv.I) and <em>Value</em> (rv.v)
 API’s.</p>
- <p style="border-width:1px; border-style:solid;
- border-color:#49b2c3;padding: 1em;">
+<b>Content Functions</b>
+<ol style="border: 2px;
+        border-color: #49b2c3;
+        border-style: solid;
+        padding: 2em;
+        margin: 2em">
+    <li>The <b>Run API</b> executes shell commands.</li>
+    <li>The <b>Insert API</b> adds static table, image, equation and text content.</li>
+    <li>The <b> Value API</b> evaluates equations and functions.</li>
+    <li>The <b>Tool API</b> runs reStructuredText, HTML, LaTeX and Python scripts.</li>
+</ol>
 
- <b></b> <br><br>
-.<br><br>
- <br><br>
- <br><br>
- <br>
- <br>
- <b>Publish Function</b> <br><br>
- <br> <br>
+<b>Publish Function</b>
+<ol style="border: 2px;
+        border-color: #49b2c3;
+        border-style: solid;
+        padding: 2em;
+        margin: 2em">
+    <li>The <b>Doc API</b> specifies <i>doc</i> type and style and generates the file.</li>
+</ol>
 
- <b></b> <br><br>
- <br><br>
- <br>
- </p>
+<b>Interactive Processing Functions</b>
+<ol style="border: 2px;
+        border-color: #49b2c3;
+        border-style: solid;
+        padding: 2em;
+        margin: 2em">
+    <li>The <b>Skip API</b> can be used for interactive debugging and comments.</li>
+    <li>The <b>Exit API</b> can be used for interactive debugging.</li>
 
- <b>Content Functions</b>
- <ol style="border: 2px;
-         border-color: #49b2c3;
-         border-style: solid;
-         padding: 2em;
-         margin: 2em">
-     <li>The <b>Run API</b> executes shell commands.</li>
-     <li>The <b>Insert API</b> adds static table, image, equation and text content.</li>
-     <li>The <b> Value API</b> evaluates equations and functions.</li>
-     <li>The <b>Tool API</b> runs reStructuredText, HTML, LaTeX and Python scripts.</li>
- </ol>
-
- <b>Publish Function</b>
- <ol style="border: 2px;
-         border-color: #49b2c3;
-         border-style: solid;
-         padding: 2em;
-         margin: 2em">
-     <li>The <b>Doc API</b> specifies <i>doc</i> type and style and generates the file.</li>
- </ol>
-
- <b>Interactive Processing Functions</b>
- <ol style="border: 2px;
-         border-color: #49b2c3;
-         border-style: solid;
-         padding: 2em;
-         margin: 2em">
-     <li>The <b>Skip API</b> can be used for interactive debugging and comments.</li>
-     <li>The <b>Exit API</b> can be used for interactive debugging.</li>
-
- </ol><p>When an interactive IDE like <em>VSCode</em> or <em>Spyder</em> is used to edit <em>rivt
+</ol><p>When an interactive IDE like <em>VSCode</em> or <em>Spyder</em> is used to edit <em>rivt
 files</em>, API functions can be processed spearately as cells (similar to
 <em>Jupyter Notebooks</em>) using the standard prefix notation:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %% optional label</span>
