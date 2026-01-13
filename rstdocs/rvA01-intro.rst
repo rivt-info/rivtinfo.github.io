@@ -229,12 +229,12 @@ spaces to seprate words in the name.
     ol.boxed-list {
         border: 1px; /* Adds a solid blue border around the list */
         color: #49b2c3
-        padding: 10em;         /* Adds space between the border and the list items */
-        margin: 10em;          /* Adds space outside the border */
+        padding: 5em;         /* Adds space between the border and the list items */
+        margin: 5em;          /* Adds space outside the border */
     }
     </style>
     <ol class="boxed-list">
-    <b>Fodler Key</b><br><br>
+    <b>Folder Key</b><br>
      <li> Required names or prefixes are shown in brackets [ ].</li>
      <li> Required folders start with a capital letter. </li>
      <li> Folders that contain author provided files are marked with a 
