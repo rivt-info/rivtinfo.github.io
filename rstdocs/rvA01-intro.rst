@@ -231,6 +231,7 @@ spaces to seprate words in the name.
         <li> Folders that contain author provided files are marked with a 
         single vertical bar ( | ).</li>
         <li> Folders that contain <i>rivtlib</i> generated files are 
+            marked with a double vertical bar</li>
     </ol>
 
 **Folders**
