@@ -229,7 +229,7 @@ spaces to seprate words in the name.
             border-color: #49b2c3; 
             border-style: solid; 
             padding: 2em;
-            margin: 3em">
+            margin: 2em">
         <li> Required names or prefixes are shown in brackets [ ].</li>
         <li> Required folders start with a capital letter. </li>
         <li> Folders that contain author provided files are marked with a 
