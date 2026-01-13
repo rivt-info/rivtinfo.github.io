@@ -133,15 +133,17 @@ API's.
     border-color:#49b2c3;padding: 1em;">
 
     <b>Content Functions</b> <br><br>
-    The <i>Run API</i> executes shell commands.<br><br> 
-    The <i>Insert API</i> adds static table, image, equation and text content.<br><br> 
-    The <i>Value API</i> evaluates equations and functions.<br><br> 
-    The <i>Tool API</i> runs reStructuredText, HTML, LaTeX and Python scripts.<br>
+    The <b>Run API</b> executes shell commands.<br><br> 
+    The <b>Insert API</b> adds static table, image, equation and text content.<br><br> 
+    The <b>Value API</b> evaluates equations and functions.<br><br> 
+    The <b>Tool API</b runs reStructuredText, HTML, LaTeX and Python scripts.<br>
     <br>
-    <b>Processing and Interactive Functions</b> <br><br>
-    The <i>Doc API</i> specifies <i>doc</i> type and style and generates the file.<br> <br> 
-    The <i>Skip API</i> can be used for interactive debugging and comments.<br><br> 
-    The <i>Exit API</i> can be used for interactive debugging.<br> 
+    <b>Publish Function</b> <br><br>
+    The <b>Doc API</b> specifies <i>doc</i> type and style and generates the file.<br> <br> 
+    
+    <b>Interactive Processing Functions</b> <br><br>
+    The <b>Skip API</b> can be used for interactive debugging and comments.<br><br> 
+    The <b>Exit API</b> can be used for interactive debugging.<br> 
     </p>
 
 When an interactive IDE like *VSCode* or *Spyder* is used to write *rivt
@@ -226,12 +228,12 @@ spaces to seprate words in the name.
     border-color:#49b2c3;padding: 1em;">
 
     <b>Folder Key</b> <br><br>
-    Required names or prefixes are shown in brackets [ ].<br><br>
-    Required folders start with a capital letter. <br><br>
-    Folders that contain author provided files are marked with a 
-    single vertical bar ( | ).<br><br>  
-    Folders that contain <i>rivtlib</i> generated files are 
-    marked with double vertical bars ( || ).</p>
+    # Required names or prefixes are shown in brackets [ ].<br><br>
+    # Required folders start with a capital letter. <br><br>
+    # Folders that contain author provided files are marked with a 
+      single vertical bar ( | ).<br><br>  
+    # Folders that contain <i>rivtlib</i> generated files are 
+      marked with double vertical bars ( || ).</p>
 
 
 **Folders**
