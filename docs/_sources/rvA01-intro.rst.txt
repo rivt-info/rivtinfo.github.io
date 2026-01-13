@@ -119,8 +119,8 @@ rv.R(rS)           **R** un          Run shell commands
 rv.I(rS)           **I** nsert       Insert static resources 
 rv.V(rS)           **V** alues       Calculate values
 rv.T(rS)           **T** ools        Python and markup scripts
-rv.S(rS)           Skip              Skip section (comments and debugging)
 rv.D(rS)           Doc               Publish docs 
+rv.S(rS)           Skip              Skip section (comments and debugging)
 rv.X(rS)           Exit              Exit rivt (debugging)
 =============== =============== ===========================================
 
@@ -147,7 +147,7 @@ API's.
             border-style: solid; 
             padding: 2em;
             margin: 2em">
-        <li>The <b>Doc API</b> specifies <i>doc</i> type and style and generates the file.</li>
+        <li>The <b>Doc API</b> specifies and generates the <i>doc</i> type and style.</li>
     </ol>
 
     <b>Interactive Processing Functions</b>
