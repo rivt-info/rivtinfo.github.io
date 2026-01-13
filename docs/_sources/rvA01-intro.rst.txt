@@ -97,11 +97,9 @@ The *rivt API* includes  :ref:`API functions`, :ref:`Markup` and
 **rivt Doc Processing**
 
 .. image:: _static/img/rivtflow2.png
-    :scale: 70%
+    :width: 65%
     :alt: rivt flow chart 
     :align: center
-
-
 
 .. _API functions:
 
