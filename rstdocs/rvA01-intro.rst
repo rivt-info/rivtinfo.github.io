@@ -223,9 +223,9 @@ spaces to seprate words in the name.
 .. _top-folders:
 
 .. raw:: html
-
+    
+    <b>Folder Key</b><br>
     <ol style="border: 1px rgb(73, 178, 195); padding: 5em; margin: 5em">
-        <b>Folder Key</b><br>
         <li> Required names or prefixes are shown in brackets [ ].</li>
         <li> Required folders start with a capital letter. </li>
         <li> Folders that contain author provided files are marked with a 
