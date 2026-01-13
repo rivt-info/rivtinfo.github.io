@@ -391,15 +391,16 @@
 <section id="t-motivations">
 <h2><strong>[1t]</strong> Motivations<a class="headerlink" href="#t-motivations" title="Link to this heading">#</a></h2>
 <hr><p><em>rivt</em> is an open source software project that simplifies sharing and reuse of
-engineering documents. Engineering documents are more complex than typical word
-and image documents. They need to combine text, images, tables, calculations,
-models and computer code in an organized report. As open source, <em>rivt</em> is
-designed to reduce repetitive work and improve document quality through sharing
-and reuse.</p>
+engineering documents. These documents are more complex than typical documents.
+They include text, images, tables, calculations, models and computer code
+organized into reports. Because they are read and used in official capacities
+(e.g. permitting) they need to be clear and concise. Because they are written
+in concert with evolving engineering designs they need to be flexible and easy
+to update.</p>
 <p>Although a number of engineering document programs are available, sharing is
-restricted by software design and terms of use in the following way:</p>
+restricted by both software design and terms of use in the following ways:</p>
 <ul class="simple">
-<li><p>documents written with incompatible programs</p></li>
+<li><p>documents are written with incompatible programs</p></li>
 <li><p>frequent software updates are needed to maintain document access</p></li>
 <li><p>update costs are high</p></li>
 <li><p>newer document formats become inaccessible without upgrades</p></li>
@@ -408,8 +409,9 @@ restricted by software design and terms of use in the following way:</p>
 <li><p>report generation features are limited</p></li>
 <li><p>collaboration features are limited</p></li>
 </ul>
-<p>The table below summarizes and compares limitations between different software
-programs.</p>
+<p>As an open source project, <em>rivt</em> is designed to reduce repetitive work and
+improve document quality through sharing and reuse. The table below summarizes
+and compares limitations between different software programs.</p>
 <p class="center"><strong>Software Comparison</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -503,20 +505,18 @@ programs.</p>
 </section>
 <section id="t-overview">
 <h2><strong>[2t]</strong> Overview<a class="headerlink" href="#t-overview" title="Link to this heading">#</a></h2>
-<hr><p>A document (<a class="reference internal" href="rvA02-terms.html#term-rivt-doc"><span class="xref std std-term">rivt doc</span></a>) is published from a <a class="reference internal" href="rvA02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a>
-written in <a class="reference internal" href="rvA02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> and processed by the <a class="reference internal" href="rvA02-terms.html#term-rivtlib"><span class="xref std std-term">rivtlib</span></a> Python
-package. A collection of <em>rivt docs</em> may be collated as a <a class="reference internal" href="rvA02-terms.html#term-rivt-report"><span class="xref std std-term">rivt report</span></a>.</p>
-<p>As an open source project <em>rivt files</em> may be collaberatively shared and <em>rivt</em>
-may be integrated with other programs. <em>rivt</em> is distributed under the
+<hr><p>A <a class="reference internal" href="rvA02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> publishes a formatted <a class="reference internal" href="rvA02-terms.html#term-rivt-doc"><span class="xref std std-term">rivt doc</span></a> as a text, PDF or
+HTML file. A <em>rivt file</em> is a Python file (.py) that imports the
+<a class="reference internal" href="rvA02-terms.html#term-rivtlib"><span class="xref std std-term">rivtlib</span></a> Python package and includes <a class="reference internal" href="rvA02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a>. A collection
+of <em>rivt docs</em> may be collated as a <a class="reference internal" href="rvA02-terms.html#term-rivt-report"><span class="xref std std-term">rivt report</span></a>.</p>
+<p>As open source, <em>rivt files</em> may be collaberatively shared and integrated with
+other programs. <em>rivt</em> is distributed under the
 <a class="reference external" href="https://opensource.org/license/mit">MIT open source license.</a>
-The parts of a <em>rivt file</em> that are shared in <em>public rivt files</em> under an
-<a class="reference external" href="https://opensource.org/licenses">Open Source license</a> are selected
-by the author when the <em>doc</em> is published. The <em>MIT license</em> is the default.</p>
-<p class="center"><strong>rivt Doc Processing</strong></p>
-<a class="reference internal image-reference" href="_images/rivtflow2.png"><img alt="rivt flow chart" class="align-center" src="_images/rivtflow2.png" style="width: 739.1999999999999px; height: 537.5999999999999px;" />
-</a>
-<br><p>The <em>rivt API</em> includes  <a class="reference internal" href="#api-functions"><span class="std std-ref">[3t] API functions</span></a>, <a class="reference internal" href="#markup"><span class="std std-ref">[4t] Markup Overview</span></a> and
-<a class="reference internal" href="#files-and-folders"><span class="std std-ref">[4t] Folder/Files overiew</span></a>. The API is designed to be:</p>
+The parts of a <em>rivt file</em> the author chooses to share as <em>public rivt files</em>
+are shared under an <a class="reference external" href="https://opensource.org/licenses">Open Source license</a>.
+The <em>MIT license</em> is the default.</p>
+<p>The <em>rivt API</em> includes  <a class="reference internal" href="#api-functions"><span class="std std-ref">[3t] API functions</span></a>, <a class="reference internal" href="#markup"><span class="std std-ref">[4t] Markup Overview</span></a> and
+<a class="reference internal" href="#files-and-folders"><span class="std std-ref">[4t] Folder/Files overiew</span></a>.It is designed to be:</p>
 <ul class="simple">
 <li><dl class="simple">
 <dt>lightweight</dt><dd><p><a class="reference internal" href="rvA02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> is made up of about 3 dozen tags
@@ -526,7 +526,7 @@ and commands, and wraps <a class="reference internal" href="rvA02-terms.html#ter
 </li>
 <li><dl class="simple">
 <dt>flexible</dt><dd><p>A <em>rivt file</em> produces a <em>doc</em> that can be formatted as
-text, HTML and PDF.that can be part of a large report</p>
+text, HTML and PDF. Multiple <em>docs</em> can be organized into a large report.</p>
 </dd>
 </dl>
 </li>
@@ -537,11 +537,13 @@ Python packages.</p>
 </dl>
 </li>
 </ul>
+<p class="center"><strong>rivt Doc Processing</strong></p>
+<a class="reference internal image-reference" href="_images/rivtflow2.png"><img alt="rivt flow chart" class="align-center" src="_images/rivtflow2.png" style="width: 739.1999999999999px; height: 537.5999999999999px;" />
+</a>
 </section>
 <section id="t-api-functions">
 <span id="api-functions"></span><h2><strong>[3t]</strong> API functions<a class="headerlink" href="#t-api-functions" title="Link to this heading">#</a></h2>
-<hr><p>The name <em>rivt</em> is an acronym formed from four content generating
-functions.</p>
+<hr><p><em>rivt</em> is an acronym from the four primary API functions.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>API Functions</p></th>
@@ -592,19 +594,21 @@ The <i>Insert API</i> adds static table, image, equation and text content.<br><b
 The <i>Value API</i> evaluates equations and functions.<br><br>
 The <i>Tool API</i> runs reStructuredText, HTML, LaTeX and Python scripts.<br>
 <br>
-<b>Processing and interactive Functions</b> <br><br>
+<b>Processing and Interactive Functions</b> <br><br>
 The <i>Doc API</i> specifies <i>doc</i> type and style and generates the file.<br> <br>
 The <i>Skip API</i> can be used for interactive debugging and comments.<br><br>
 The <i>Exit API</i> can be used for interactive debugging.<br>
-</p><p>Within an interactive IDE like <em>VSCode</em> and <em>Spyder</em>, indiviudal functions
-can be processed interactively as cells using the standard prefix notation:</p>
+</p><p>When an interactive IDE like <em>VSCode</em> or <em>Spyder</em> is used to write <em>rivt
+files</em>, API functions can be processed spearately as cells (similar to
+<em>Jupyter Notebooks</em>) using the standard prefix notation:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %% optional label</span>
 </pre></div>
 </div>
-<p>Refer to <a class="reference internal" href="rvB03-vscode.html"><span class="doc">B.3 VSCode Settings</span></a> for further details.</p>
-<p>Each API function takes a single <a class="reference internal" href="rvA02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> argument as input (rS),
-and outputs formatted text or restructuredText that is further processed
-into a text, HTML and PDF <a class="reference internal" href="rvA02-terms.html#term-doc"><span class="xref std std-term">doc</span></a>. The <em>rivt string</em> is written
+<p>The optional label is used for built in bookmarking functions in the IDE.
+Refer to <a class="reference internal" href="rvB03-vscode.html"><span class="doc">B.3 VSCode Settings</span></a> for further details.</p>
+<p>Each API function takes a single <a class="reference internal" href="rvA02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> argument (rS) as input,
+and outputs formatted text or restructuredText that in turn is processed
+into a text, HTML or PDF <a class="reference internal" href="rvA02-terms.html#term-doc"><span class="xref std std-term">doc</span></a>. The <em>rivt string</em> is written
 in <em>rivt markup</em>.</p>
 </section>
 <section id="t-markup-overview">

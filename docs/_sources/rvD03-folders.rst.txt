@@ -66,7 +66,7 @@ An example *report* folder structure is shown below.
     <br>
     Folders (including subfolders) that contain author generated files 
     are marked with a single vertical bar ( | ).<br>  
-    <br>
+    <br>ri
     Folders (including subfolders) that contain rivtlib generated files are 
     marked with double vertical bars ( || ).</p>
 

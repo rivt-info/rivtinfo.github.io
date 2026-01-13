@@ -9,16 +9,17 @@
     <hr>
 
 *rivt* is an open source software project that simplifies sharing and reuse of
-engineering documents. Engineering documents are more complex than typical word
-and image documents. They need to combine text, images, tables, calculations,
-models and computer code in an organized report. As open source, *rivt* is
-designed to reduce repetitive work and improve document quality through sharing
-and reuse.
+engineering documents. These documents are more complex than typical documents.
+They include text, images, tables, calculations, models and computer code
+organized into reports. Because they are read and used in official capacities
+(e.g. permitting) they need to be clear and concise. Because they are written
+in concert with evolving engineering designs they need to be flexible and easy
+to update.
 
 Although a number of engineering document programs are available, sharing is
-restricted by software design and terms of use in the following way:
+restricted by both software design and terms of use in the following ways:
 
-- documents written with incompatible programs
+- documents are written with incompatible programs
 - frequent software updates are needed to maintain document access
 - update costs are high
 - newer document formats become inaccessible without upgrades
@@ -27,8 +28,9 @@ restricted by software design and terms of use in the following way:
 - report generation features are limited
 - collaboration features are limited
 
-The table below summarizes and compares limitations between different software
-programs.
+As an open source project, *rivt* is designed to reduce repetitive work and
+improve document quality through sharing and reuse. The table below summarizes
+and compares limitations between different software programs.
 
 .. rst-class:: center
 
@@ -63,16 +65,32 @@ Jupyter        no       no         no      yes         yes      yes
 
     <hr>
 
-A document (:term:`rivt doc`) is published from a :term:`rivt file` 
-written in :term:`rivt markup` and processed by the :term:`rivtlib` Python
-package. A collection of *rivt docs* may be collated as a :term:`rivt report`.
+A :term:`rivt file` publishes a formatted :term:`rivt doc` as a text, PDF or
+HTML file. A *rivt file* is a Python file (.py) that imports the
+:term:`rivtlib` Python package and includes :term:`rivt markup`. A collection
+of *rivt docs* may be collated as a :term:`rivt report`.
 
-As an open source project *rivt files* may be collaberatively shared and *rivt*
-may be integrated with other programs. *rivt* is distributed under the 
+As open source, *rivt files* may be collaberatively shared and integrated with
+other programs. *rivt* is distributed under the 
 `MIT open source license. <https://opensource.org/license/mit>`_ 
-The parts of a *rivt file* that are shared in *public rivt files* under an 
-`Open Source license <https://opensource.org/licenses>`_ are selected 
-by the author when the *doc* is published. The *MIT license* is the default.
+The parts of a *rivt file* the author chooses to share as *public rivt files* 
+are shared under an `Open Source license <https://opensource.org/licenses>`_.
+The *MIT license* is the default.
+
+The *rivt API* includes  :ref:`API functions`, :ref:`Markup` and
+:ref:`Files and folders`.It is designed to be:
+
+- lightweight
+    :term:`rivt markup` is made up of about 3 dozen tags 
+    and commands, and wraps :term:`reStructuredText`.
+
+- flexible 
+    A *rivt file* produces a *doc* that can be formatted as 
+    text, HTML and PDF. Multiple *docs* can be organized into a large report. 
+
+- extensible 
+    *rivtlib* is written in Python with direct access to thousands of 
+    Python packages.
 
 .. rst-class:: center
 
@@ -83,24 +101,6 @@ by the author when the *doc* is published. The *MIT license* is the default.
     :alt: rivt flow chart 
     :align: center
 
-.. raw:: html
-
-    <br>
-
-The *rivt API* includes  :ref:`API functions`, :ref:`Markup` and
-:ref:`Files and folders`. The API is designed to be:
-
-- lightweight
-    :term:`rivt markup` is made up of about 3 dozen tags 
-    and commands, and wraps :term:`reStructuredText`.
-
-- flexible 
-    A *rivt file* produces a *doc* that can be formatted as 
-    text, HTML and PDF.that can be part of a large report 
-
-- extensible 
-    *rivtlib* is written in Python with direct access to thousands of 
-    Python packages.
 
 
 .. _API functions:
@@ -112,8 +112,7 @@ The *rivt API* includes  :ref:`API functions`, :ref:`Markup` and
 
     <hr>
 
-The name *rivt* is an acronym formed from four content generating
-functions. 
+*rivt* is an acronym from the four primary API functions. 
 
 =============== =============== ===========================================
 API Functions        Name             Purpose
@@ -141,24 +140,26 @@ API's.
     The <i>Value API</i> evaluates equations and functions.<br><br> 
     The <i>Tool API</i> runs reStructuredText, HTML, LaTeX and Python scripts.<br>
     <br>
-    <b>Processing and interactive Functions</b> <br><br>
+    <b>Processing and Interactive Functions</b> <br><br>
     The <i>Doc API</i> specifies <i>doc</i> type and style and generates the file.<br> <br> 
     The <i>Skip API</i> can be used for interactive debugging and comments.<br><br> 
     The <i>Exit API</i> can be used for interactive debugging.<br> 
     </p>
 
-Within an interactive IDE like *VSCode* and *Spyder*, indiviudal functions
-can be processed interactively as cells using the standard prefix notation:
+When an interactive IDE like *VSCode* or *Spyder* is used to write *rivt
+files*, API functions can be processed spearately as cells (similar to 
+*Jupyter Notebooks*) using the standard prefix notation:
 
 .. code-block:: python
 
     # %% optional label
 
+The optional label is used for built in bookmarking functions in the IDE. 
 Refer to :doc:`rvB03-vscode` for further details.
 
-Each API function takes a single :term:`rivt string` argument as input (rS),
-and outputs formatted text or restructuredText that is further processed 
-into a text, HTML and PDF :term:`doc`. The *rivt string* is written 
+Each API function takes a single :term:`rivt string` argument (rS) as input,
+and outputs formatted text or restructuredText that in turn is processed 
+into a text, HTML or PDF :term:`doc`. The *rivt string* is written 
 in *rivt markup*.
 
 .. _Markup:
