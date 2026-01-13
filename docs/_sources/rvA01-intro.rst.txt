@@ -136,7 +136,7 @@ API's.
     The <b>Run API</b> executes shell commands.<br><br> 
     The <b>Insert API</b> adds static table, image, equation and text content.<br><br> 
     The <b>Value API</b> evaluates equations and functions.<br><br> 
-    The <b>Tool API</b runs reStructuredText, HTML, LaTeX and Python scripts.<br>
+    The <b>Tool API</b> runs reStructuredText, HTML, LaTeX and Python scripts.<br>
     <br>
     <b>Publish Function</b> <br><br>
     The <b>Doc API</b> specifies <i>doc</i> type and style and generates the file.<br> <br> 
@@ -228,13 +228,14 @@ spaces to seprate words in the name.
     border-color:#49b2c3;padding: 1em;">
 
     <b>Folder Key</b> <br><br>
-    # Required names or prefixes are shown in brackets [ ].<br><br>
-    # Required folders start with a capital letter. <br><br>
-    # Folders that contain author provided files are marked with a 
-      single vertical bar ( | ).<br><br>  
-    # Folders that contain <i>rivtlib</i> generated files are 
-      marked with double vertical bars ( || ).</p>
-
+    <ol>
+     <li> Required names or prefixes are shown in brackets [ ].</li><br><br>
+     <li> Required folders start with a capital letter. </li><br><br>
+     <li> Folders that contain author provided files are marked with a 
+      single vertical bar ( | ).</li><br><br>  
+     <li> Folders that contain <i>rivtlib</i> generated files are 
+      marked with double vertical bars ( || )</li>.
+    <ol></p>
 
 **Folders**
 
