@@ -226,7 +226,11 @@ spaces to seprate words in the name.
     
     <b>Folder Key</b><br>
 
-    <ol style="border: 2px turquoise; padding: 20px;margin: 15px">
+    <ol style="border: 2px; 
+            border-color:turquoise; 
+            border-style: solid; 
+            padding: 20px;
+            margin: 15px">
         <li> Required names or prefixes are shown in brackets [ ].</li>
         <li> Required folders start with a capital letter. </li>
         <li> Folders that contain author provided files are marked with a 
