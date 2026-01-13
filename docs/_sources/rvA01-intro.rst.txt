@@ -253,8 +253,8 @@ spaces to seprate words in the name.
 
         ├── [Public]/                   || public rivt files 
         ├── [Publish]/                  || doc and report files
-        ├── [Src]/                      |  source files from author
-        ├── [Stored]/                   || stored files from rivtlib
+        ├── [Src]/                      |  source files provided by authors
+        ├── [Stored]/                   || stored files written by rivtlib
         └── README.txt                  || searchable text report 
 
 
