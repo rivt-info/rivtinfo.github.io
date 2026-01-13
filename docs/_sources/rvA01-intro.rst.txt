@@ -132,21 +132,53 @@ API's.
     <p style="border-width:1px; border-style:solid; 
     border-color:#49b2c3;padding: 1em;">
 
-    <b>Content Functions</b> <br><br>
-    The <b>Run API</b> executes shell commands.<br><br> 
-    The <b>Insert API</b> adds static table, image, equation and text content.<br><br> 
-    The <b>Value API</b> evaluates equations and functions.<br><br> 
-    The <b>Tool API</b> runs reStructuredText, HTML, LaTeX and Python scripts.<br>
+    <b></b> <br><br>
+   .<br><br> 
+    <br><br> 
+    <br><br> 
+    <br>
     <br>
     <b>Publish Function</b> <br><br>
-    The <b>Doc API</b> specifies <i>doc</i> type and style and generates the file.<br> <br> 
+    <br> <br> 
     
-    <b>Interactive Processing Functions</b> <br><br>
-    The <b>Skip API</b> can be used for interactive debugging and comments.<br><br> 
-    The <b>Exit API</b> can be used for interactive debugging.<br> 
+    <b></b> <br><br>
+    <br><br> 
+    <br> 
     </p>
 
-When an interactive IDE like *VSCode* or *Spyder* is used to write *rivt
+    <b>Content Functions</b>
+    <ol style="border: 2px; 
+            border-color: #49b2c3; 
+            border-style: solid; 
+            padding: 2em;
+            margin: 2em">
+        <li>The <b>Run API</b> executes shell commands.</li>
+        <li>The <b>Insert API</b> adds static table, image, equation and text content.</li>
+        <li>The <b> Value API</b> evaluates equations and functions.</li>
+        <li>The <b>Tool API</b> runs reStructuredText, HTML, LaTeX and Python scripts.</li>
+    </ol>
+
+    <b>Publish Function</b>
+    <ol style="border: 2px; 
+            border-color: #49b2c3; 
+            border-style: solid; 
+            padding: 2em;
+            margin: 2em">
+        <li>The <b>Doc API</b> specifies <i>doc</i> type and style and generates the file.</li>
+    </ol>
+
+    <b>Interactive Processing Functions</b>
+    <ol style="border: 2px; 
+            border-color: #49b2c3; 
+            border-style: solid; 
+            padding: 2em;
+            margin: 2em">
+        <li>The <b>Skip API</b> can be used for interactive debugging and comments.</li>
+        <li>The <b>Exit API</b> can be used for interactive debugging.</li>
+
+    </ol>
+
+When an interactive IDE like *VSCode* or *Spyder* is used to edit *rivt
 files*, API functions can be processed spearately as cells (similar to 
 *Jupyter Notebooks*) using the standard prefix notation:
 
