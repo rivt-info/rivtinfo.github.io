@@ -227,8 +227,7 @@ spaces to seprate words in the name.
     <style>
     /* This CSS styles the ordered list element (ol) */
     ol.boxed-list {
-        border: 1px; /* Adds a solid blue border around the list */
-        color: #49b2c3
+        border: 1px rgb(73, 178, 195); /* Adds a solid blue border around the list */
         padding: 5em;         /* Adds space between the border and the list items */
         margin: 5em;          /* Adds space outside the border */
     }
