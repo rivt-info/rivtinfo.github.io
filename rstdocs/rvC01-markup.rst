@@ -67,14 +67,14 @@ rv.R        **private**;public     **stored**;doc       **merge**;section
 rv.I        **private**;public     **doc**;stored       **section**;merge   
 rv.V        **private**;public     **doc**;stored       **section**;merge    
 rv.T        **private**;public     **stored**;doc       **merge**;section
-rv.S        **private**            **stored**           **merge**
+rv.S        **private**;public     **stored**           **merge**
 rv.D        **public**             **stored**           **merge**
 rv.X         -                      -                   -
 ========== ===================== ===================== =====================
 
 Examples of *header substring* settings are shown below.
 
-- An example with explicit defaults that do not have to be declared.
+- An example with explicit defaults (they do not have to be declared).
 
 .. code-block:: python
 

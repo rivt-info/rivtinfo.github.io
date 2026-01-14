@@ -18,13 +18,14 @@ rv.I                          text **_[R]**                     :ref:`Right just
 rv.I                    text  math **_[M]**                     :ref:`Text math` 
 rv.I                    LaTeX math **_[L]**                     :ref:`LaTeX math` 
 rv.I                   label, url  **_[U]**                     :ref:`URL link`   
+rv.I                          text **_[#]** more text           :ref:`Endnote number`  
 rv.I                          text **_[G]** glossary term       :ref:`Term reference`
 rv.I                          text **_[S]** section label       :ref:`Section link`
-rv.I                          text **_[#]** more text           :ref:`Endnote number`  
-rv.I                text rivt_file **_[D]** more text           :ref:`Doc link`
-rv.V, I              text var_name **_[V]** more text           :ref:`Variable value`
-rv.V, I            assign or label **_[E]**                     :ref:`Equation label`
-rv.V, I          valtable or title **_[T]**                     :ref:`Table title`
+rv.I                          text **_[D]** rivt_file text      :ref:`Doc link`
+rv.V, I                       text **_[V]** var_name text       :ref:`Variable value`
+rv.V, I            assign or label **_[E]**                     :ref:`Equation number`
+rv.V, I                      title **_[T]**                     :ref:`Table number`
+rv.V, I                      title **_[F]**                     :ref:`Figure number`
 ========== ================================================= ===============================
 
 ..  _Center text:
@@ -289,9 +290,9 @@ API Scope     Insert, Values
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-.. _Equation label:
+.. _Equation number:
 
-**[12t]** Equation label 
+**[12t]** Equation number
 -----------------------------------------
 
 .. raw:: html
@@ -321,9 +322,9 @@ API Scope     Insert, Values
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-.. _Table title:
+.. _Table number:
 
-**[13t]** Table title
+**[13t]** Table number
 ------------------------------------------
 
 .. raw:: html
@@ -348,5 +349,31 @@ API Scope     Insert, Values
 Doc Types     text, PDF, HTML
 =========== ==========================
 
+.. _Figure number:
+
+**[14t]** Figure number
+------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+    Labels and numbers figures.
+
+.. topic:: _[F]
+
+    .. code-block:: text
+
+        Syntax:
+            Figure caption _[F]
+
+        Example:
+            Stress Distribution _[F]
+
+
+=========== ==========================
+API Scope     Insert, Values
+Doc Types     text, PDF, HTML
+=========== ==========================
 
 

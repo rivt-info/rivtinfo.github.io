@@ -24,8 +24,9 @@ including images, tables, links and formatted text.
              text **_[G]** glossary link term      :ref:`Term reference`
              text **_[U]** external url            :ref:`URL link`   
              text **_[V]** var_name text           :ref:`Variable value` 
-  assign or label **_[E]**                         :ref:`Equation label`
-valtable or title **_[T]**                         :ref:`Table title` 
+  assign or label **_[E]**                         :ref:`Equation number`
+valtable or title **_[T]**                         :ref:`Table number`
+          caption **_[F]**                         :ref:`Figure number`  
 =============================================== =======================================
 
 ========================================= ==============================

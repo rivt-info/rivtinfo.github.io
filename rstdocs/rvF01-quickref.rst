@@ -43,7 +43,7 @@ rv.R        **private**;public     **stored**;doc       **merge**;section
 rv.I        **private**;public     **doc**;stored       **section**;merge   
 rv.V        **private**;public     **doc**;stored       **section**;merge    
 rv.T        **private**;public     **stored**;doc       **merge**;section
-rv.S        **private**            **stored**           **merge**
+rv.S        **private**;public     **stored**           **merge**
 rv.D        **public**             **stored**           **merge**
 rv.X         -                      -                   -
 ========== ===================== ===================== =====================
@@ -68,8 +68,9 @@ rv.I                          text **_[S]** section label       :ref:`Section li
 rv.I                          text **_[#]** more text           :ref:`Endnote number`  
 rv.I                text rivt_file **_[D]** more text           :ref:`Doc link`
 rv.V, I              text var_name **_[V]** more text           :ref:`Variable value`
-rv.V, I            assign or label **_[E]**                     :ref:`Equation label`
-rv.V, I          valtable or title **_[T]**                     :ref:`Table title`
+rv.V, I            assign or label **_[E]**                     :ref:`Equation number`
+rv.V, I                      title **_[T]**                     :ref:`Table number`
+rv.V, I                      title **_[F]**                     :ref:`Figure number`
 ========== ================================================= ===============================
 
 **[3t]** Block Tag Summary

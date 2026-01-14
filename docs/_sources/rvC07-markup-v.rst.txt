@@ -11,16 +11,18 @@
 
 The *Value* API function defines values and evaluates equations and functions.
 
-========================================= ==============================
-       Line Tags                             Description 
-========================================= ==============================
-text _[V] var_name text                         :ref:`Variable value`
-assign command or label _[E]                    :ref:`Equation label`
-valtable command or table title _[T]            :ref:`Table title`                              
-========================================= ==============================
+================================================ ==============================
+       Line Tags                                     Description 
+================================================ ==============================
+                   text **_[V]** var_name text     :ref:`Variable value`
+assign command or label **_[E]**                   :ref:`Equation number`
+                  title **_[T]**                   :ref:`Table number`
+                caption **_[F]**                   :ref:`Figure number`                              
+================================================ ==============================
 
 ========================================= ==============================
-       Block Tags                           Description 
+       Block Tags                              Description 
+========================================= ==============================
  [[PYTHON]] namespace                       :ref:`Python block`
 _[[END]]                                    :ref:`End Block`
 _[[NEWPAGE]]                                :ref:`Start new page`

@@ -429,32 +429,36 @@
 <td><p><a class="reference internal" href="#url-link"><span class="std std-ref">[6t] URL link</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>text <strong>_[G]</strong> glossary term</p></td>
-<td><p><a class="reference internal" href="#term-reference"><span class="std std-ref">[7t] Glossary link</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p>text <strong>_[S]</strong> section label</p></td>
-<td><p><a class="reference internal" href="#section-link"><span class="std std-ref">[8t] Section link</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
 <td><p>text <strong>_[#]</strong> more text</p></td>
 <td><p><a class="reference internal" href="#endnote-number"><span class="std std-ref">[9t]  Endnote number</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I</p></td>
-<td><p>text rivt_file <strong>_[D]</strong> more text</p></td>
+<td><p>text <strong>_[G]</strong> glossary term</p></td>
+<td><p><a class="reference internal" href="#term-reference"><span class="std std-ref">[7t] Glossary link</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.I</p></td>
+<td><p>text <strong>_[S]</strong> section label</p></td>
+<td><p><a class="reference internal" href="#section-link"><span class="std std-ref">[8t] Section link</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>rv.I</p></td>
+<td><p>text <strong>_[D]</strong> rivt_file text</p></td>
 <td><p><a class="reference internal" href="#doc-link"><span class="std std-ref">[10t] Doc link</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V, I</p></td>
-<td><p>text var_name <strong>_[V]</strong> more text</p></td>
+<td><p>text <strong>_[V]</strong> var_name text</p></td>
 <td><p><a class="reference internal" href="#variable-value"><span class="std std-ref">[11t] Variable value</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.V, I</p></td>
 <td><p>assign or label <strong>_[E]</strong></p></td>
-<td><p><a class="reference internal" href="#equation-label"><span class="std std-ref">[12t] Equation label</span></a></p></td>
+<td><p><a class="reference internal" href="#equation-number"><span class="std std-ref">[12t] Equation number</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V, I</p></td>
-<td><p>valtable or title <strong>_[T]</strong></p></td>
-<td><p><a class="reference internal" href="#table-title"><span class="std std-ref">[13t] Table title</span></a></p></td>
+<td><p>title <strong>_[T]</strong></p></td>
+<td><p><a class="reference internal" href="#table-number"><span class="std std-ref">[13t] Table number</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>rv.V, I</p></td>
+<td><p>title <strong>_[F]</strong></p></td>
+<td><p><a class="reference internal" href="#figure-number"><span class="std std-ref">[14t] Figure number</span></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -714,8 +718,8 @@ Example:
 </table>
 </div>
 </section>
-<section id="t-equation-label">
-<span id="equation-label"></span><h2><strong>[12t]</strong> Equation label<a class="headerlink" href="#t-equation-label" title="Link to this heading">#</a></h2>
+<section id="t-equation-number">
+<span id="equation-number"></span><h2><strong>[12t]</strong> Equation number<a class="headerlink" href="#t-equation-number" title="Link to this heading">#</a></h2>
 <hr><p>If the line of text is math text or a label, the text is assigned an equation
 number and right justified. If the line is an equation assignment the equation
 label is used for the label text.</p>
@@ -745,8 +749,8 @@ Example:
 </table>
 </div>
 </section>
-<section id="t-table-title">
-<span id="table-title"></span><h2><strong>[13t]</strong> Table title<a class="headerlink" href="#t-table-title" title="Link to this heading">#</a></h2>
+<section id="t-table-number">
+<span id="table-number"></span><h2><strong>[13t]</strong> Table number<a class="headerlink" href="#t-table-number" title="Link to this heading">#</a></h2>
 <hr>
 
 Labels and numbers tables.<aside class="topic">
@@ -756,6 +760,32 @@ Labels and numbers tables.<aside class="topic">
 
 Example:
     A New Table _[T]
+</pre></div>
+</div>
+</aside>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Insert, Values</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="t-figure-number">
+<span id="figure-number"></span><h2><strong>[14t]</strong> Figure number<a class="headerlink" href="#t-figure-number" title="Link to this heading">#</a></h2>
+<hr>
+
+Labels and numbers figures.<aside class="topic">
+<p class="topic-title">_[F]</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    Figure caption _[F]
+
+Example:
+    Stress Distribution _[F]
 </pre></div>
 </div>
 </aside>
@@ -831,8 +861,9 @@ Example:
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-endnote-number"><strong>[9t]</strong>  Endnote number</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-doc-link"><strong>[10t]</strong> Doc link</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-variable-value"><strong>[11t]</strong> Variable value</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-equation-label"><strong>[12t]</strong> Equation label</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-table-title"><strong>[13t]</strong> Table title</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-equation-number"><strong>[12t]</strong> Equation number</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-table-number"><strong>[13t]</strong> Table number</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-figure-number"><strong>[14t]</strong> Figure number</a></li>
 </ul>
   </nav></div>
 
