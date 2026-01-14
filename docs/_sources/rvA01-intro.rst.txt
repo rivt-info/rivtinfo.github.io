@@ -85,8 +85,8 @@ The *rivt API* includes  :ref:`API functions`, :ref:`Markup` and
     and commands, and wraps :term:`reStructuredText`.
 
 - flexible 
-    A *rivt file* produces a *doc* that can be formatted as 
-    text, HTML and PDF. Multiple *docs* can be organized into a large report. 
+    A *rivt file* produces a text, HTML or PDF *doc*. 
+    Multiple *docs* can be organized into a report. 
 
 - extensible 
     *rivtlib* is written in Python with direct access to thousands of 
