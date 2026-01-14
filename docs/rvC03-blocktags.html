@@ -750,8 +750,10 @@ into either PDF or HTML.</p>
     _[[END]]
 
 Example:
-    _[[MARKUP]] *html;latex;rst*
-    markup
+    _[[MARKUP]] rst
+    This is **bold** and
+    this is *italic* in
+    reStructuredtext
     ...
     _[[END]]
 </pre></div>
@@ -773,11 +775,12 @@ Example:
 <span id="meta-block"></span><h2><strong>[11t]</strong> Metadata<a class="headerlink" href="#t-metadata" title="Link to this heading">#</a></h2>
 <hr><aside class="topic">
 <p class="topic-title">_[[METADATA]]</p>
-<p><em>Metadata</em> is written to the <em>rvAnn-api-log.py</em> file and is converted
-internally to Python dictionaries with a name taken from the label e.g.
-<em>rvmeta_D</em> or <em>rvmeta_authorsD</em>/</p>
+<p><em>Metadata</em> is written to the <em>rvAnn-apilog.py</em> file and is converted
+internally to a Python dictionary rvmetaD with key name taken from the
+label e.g. <em>docnameS</em> or <em>authorsD</em>.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Synatax - defaults:
     _[[METADATA]] optional label
+    docname = &quot;&quot;
     authors = &quot;&quot;
     version = 0.0.0
     email = &quot;&quot;
@@ -789,6 +792,7 @@ internally to Python dictionaries with a name taken from the label e.g.
 
 Example:
     _[[METADATA]]
+    docname = Bearing Pressures
     authors = rholland, rward
     version = 0.1.1
     email = rholland@email.com

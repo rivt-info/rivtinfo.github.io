@@ -332,8 +332,10 @@ into either PDF or HTML.
             _[[END]]
 
         Example:    
-            _[[MARKUP]] *html;latex;rst*
-            markup
+            _[[MARKUP]] rst
+            This is **bold** and 
+            this is *italic* in 
+            reStructuredtext
             ...
             _[[END]]
 
@@ -353,14 +355,15 @@ Doc Types     text, PDF, HTML
     <hr>
 .. topic:: _[[METADATA]]
     
-    *Metadata* is written to the *rvAnn-api-log.py* file and is converted
-    internally to Python dictionaries with a name taken from the label e.g.
-    *rvmeta_D* or *rvmeta_authorsD*/
+    *Metadata* is written to the *rvAnn-apilog.py* file and is converted
+    internally to a Python dictionary rvmetaD with key name taken from the
+    label e.g. *docnameS* or *authorsD*.
 
     ..  code-block:: text
 
         Synatax - defaults:
             _[[METADATA]] optional label
+            docname = ""
             authors = "" 
             version = 0.0.0
             email = ""
@@ -371,14 +374,14 @@ Doc Types     text, PDF, HTML
             _[[END]]
 
         Example:
-            _[[METADATA]] 
+            _[[METADATA]]
+            docname = Bearing Pressures 
             authors = rholland, rward
             version = 0.1.1
             email = rholland@email.com
             repo = https://github.com/rivt-info/rivt-simple-doc
             license = https://opensource.org/license/mit
             _[[END]]
-
 
 =========== ==========================
 API Scope     Docs
@@ -411,7 +414,6 @@ Overrides default layout settings.
                 docname = ""
                 footer = date, docname, page
                 _[[END]]
-
 
 =========== ==========================
 API Scope     Doc
