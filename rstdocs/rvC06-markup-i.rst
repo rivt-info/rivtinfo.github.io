@@ -11,22 +11,24 @@
 The *Insert* API function inserts and formats static sources into the *doc*,
 including images, tables, links and formatted text.
 
-=============================================== =======================================
+=============================================== ============================
         Line Tags                                 Description 
-                text **_[C]**                     :ref:`Center text` 
-                text **_[R]**                     :ref:`Right justify text`
-          text  math **_[M]**                     :ref:`Text math` 
-          LaTeX math **_[L]**                     :ref:`LaTeX math` 
-         label, url  **_[U]**                     :ref:`URL link`   
-                text **_[#]** more text           :ref:`Endnote number`  
-                text **_[G]** glossary term       :ref:`Term reference`
-                text **_[S]** section label       :ref:`Section link`
-                text **_[D]** rivt_file text      :ref:`Doc link`
-                text **_[V]** var_name text       :ref:`Variable value`
-     assign or label **_[E]**                     :ref:`Equation number`
-               title **_[T]**                     :ref:`Table number`
-             caption **_[F]**                     :ref:`Figure number`
-=============================================== =======================================
+=============================================== ============================
+              text **_[C]**                      :ref:`Center text` 
+              text **_[R]**                      :ref:`Right justify text` 
+        text  math **_[M]**                      :ref:`Text math` 
+        LaTeX math **_[L]**                      :ref:`LaTeX math` 
+              text **_[#]** more text            :ref:`Endnote number`
+              text **_[G]** glossary term        :ref:`Term reference`
+              text **_[S]** section label        :ref:`Section link` 
+              text **_[D]** rivt_file text       :ref:`Doc link`
+              text **_[U]** label, url           :ref:`URL link` 
+              text **_[V]** var_name text        :ref:`Variable value`
+   assign or label **_[E]**                      :ref:`Equation number`
+             title **_[T]**                      :ref:`Table number`
+           caption **_[F]**                      :ref:`Figure number`
+=============================================== ============================
+
 
 ========================================= ==============================
        Block Tags                              Description 
