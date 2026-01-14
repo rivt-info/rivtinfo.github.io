@@ -25,7 +25,7 @@ rv.I                          text **_[D]** rivt_file text      :ref:`Doc link`
 rv.V, I                       text **_[V]** var_name text       :ref:`Variable value`
 rv.V, I            assign or label **_[E]**                     :ref:`Equation number`
 rv.V, I                      title **_[T]**                     :ref:`Table number`
-rv.V, I                      title **_[F]**                     :ref:`Figure number`
+rv.V, I                    caption **_[F]**                     :ref:`Figure number`
 ========== ================================================= ===============================
 
 ..  _Center text:

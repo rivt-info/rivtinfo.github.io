@@ -469,5 +469,5 @@ Doc Types     text, PDF, HTML
 
 =========== ==========================
 API Scope     All
-Doc Types     text, PDF, HTML
+Doc Types     PDF
 =========== ==========================
