@@ -36,6 +36,6 @@ _[[NEWPAGE]]                                :ref:`Start new page`
    \| VALTABLE | rel path | title, width, rows                     :ref:`Values file`     
    a =: 1*IN  | unit1, unit2, decimal | label                      :ref:`Define variable`
    c <=: expression | unit1, unit2, decimal | label                :ref:`Assign value`
-   a < c  | decimal | text, align, color                           :ref:`Compare values`
+   a < c  | decimal | text1,text2,color1,color2,align              :ref:`Compare values`
    \| PYTHON | relative path | namespace                           :ref:`Python file`
 ================================================================= =====================

@@ -19,7 +19,7 @@ rv.V, I     **| IMAGE2 |** rel path1, rel path2 | caption, scale number     :ref
 rv.V        **| VALTABLE |** rel path | title, rows, number                 :ref:`Values file`     
 rv.V        a **=:** 1*IN  | unit1, unit2, decimal | label                  :ref:`Define variable`
 rv.V        c **<=:** expression | unit1, unit2, decimal | label            :ref:`Assign value`
-rv.V        a **<** c  | decimal | text, align, color                       :ref:`Compare values`
+rv.V        a **<** c  | decimal | text1, text2, color1, color2             :ref:`Compare values`
 rv.T, V     **| PYTHON |** rel path | namespace                             :ref:`Python file`
 rv.T        **| MARKUP |** rel path | type                                  :ref:`Markup file`
 rv.D        **| ATTACHPDF |** rel path | place, title                       :ref:`Attach PDF`   
@@ -361,29 +361,32 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-Inserts a text with alignment and color on the following line if the
-expression evaluates to true. Alignment can be *r;l;c* for right, left or
-center. Colors can be *red;blue;yellow;green;black;gray* defined in the *style
-files*. 
+Inserts a text with alignment and color on the following line if the expression
+evaluates to true. text1 and text2 are printed if true or false repectively.
+Colors are assigned accordingly as *red;blue;yellow;green;black;gray* defined
+in the *style files*.  The text is right aligned.
 
 Comparison operators:
 
-- ==	Equal	x == y	
-- !=	Not equal	x != y	
-- >	Greater than	x > y	
-- <	Less than	x < y	
-- >=	Greater than or equal to	x >= y	
-- <=	Less than or equal to	x <= y
+
+.. code-block:: text
+
+==	  Equal	x == y	
+!=	  Not equal	x != y	
+>	  Greater than	x > y	
+<	  Less than	x < y	
+>=	  Greater than or equal to x >= y	
+<=	  Less than or equal to x <= y
 
 .. topic:: <> 
 
     .. code-block:: text
 
         Syntax:  
-            a < b **_[S]** text, r, red
-    
+            a < b | text1, text2, color1, color2
+        
         Example:
-           a < b **_[S]** text, r, red
+           a < b |OK, NOT OK, blue, red
   
 =========== ==========================
 API Scope     Values

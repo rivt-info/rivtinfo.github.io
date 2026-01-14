@@ -17,10 +17,10 @@ rv.I                          text **_[C]**                     :ref:`Center tex
 rv.I                          text **_[R]**                     :ref:`Right justify text`
 rv.I                    text  math **_[M]**                     :ref:`Text math` 
 rv.I                    LaTeX math **_[L]**                     :ref:`LaTeX math` 
-rv.I                   label, url  **_[U]**                     :ref:`URL link`   
 rv.I                          text **_[#]** more text           :ref:`Endnote number`  
 rv.I                          text **_[G]** glossary term       :ref:`Term reference`
 rv.I                          text **_[S]** section label       :ref:`Section link`
+rv.I                          text **_[U]** label, url          :ref:`URL link`   
 rv.I                          text **_[D]** rivt_file text      :ref:`Doc link`
 rv.V, I                       text **_[V]** var_name text       :ref:`Variable value`
 rv.V, I            assign or label **_[E]**                     :ref:`Equation number`

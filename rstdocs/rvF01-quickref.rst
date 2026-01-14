@@ -62,15 +62,15 @@ rv.I                          text **_[C]**                     :ref:`Center tex
 rv.I                          text **_[R]**                     :ref:`Right justify text`
 rv.I                    text  math **_[M]**                     :ref:`Text math` 
 rv.I                    LaTeX math **_[L]**                     :ref:`LaTeX math` 
-rv.I                   label, url  **_[U]**                     :ref:`URL link`   
+rv.I                          text **_[#]** more text           :ref:`Endnote number`  
 rv.I                          text **_[G]** glossary term       :ref:`Term reference`
 rv.I                          text **_[S]** section label       :ref:`Section link`
-rv.I                          text **_[#]** more text           :ref:`Endnote number`  
-rv.I                text rivt_file **_[D]** more text           :ref:`Doc link`
-rv.V, I              text var_name **_[V]** more text           :ref:`Variable value`
+rv.I                          text **_[U]** label, url          :ref:`URL link`   
+rv.I                          text **_[D]** rivt_file text      :ref:`Doc link`
+rv.V, I                       text **_[V]** var_name text       :ref:`Variable value`
 rv.V, I            assign or label **_[E]**                     :ref:`Equation number`
 rv.V, I                      title **_[T]**                     :ref:`Table number`
-rv.V, I                      title **_[F]**                     :ref:`Figure number`
+rv.V, I                    caption **_[F]**                     :ref:`Figure number`
 ========== ================================================= ===============================
 
 **[3t]** Block Tag Summary
@@ -120,7 +120,7 @@ rv.V, I     **| IMAGE2 |** rel path1, rel path2 | caption, scale number     :ref
 rv.V        **| VALTABLE |** rel path | title, rows, number                 :ref:`Values file`     
 rv.V        a **=:** 1*IN  | unit1, unit2, decimal | label                  :ref:`Define variable`
 rv.V        c **<=:** expression | unit1, unit2, decimal | label            :ref:`Assign value`
-rv.V        a **<** c  | decimal | text, align, color                       :ref:`Compare values`
+rv.V        a **<** c  | decimal | text1, text2, color1, color2             :ref:`Compare values`
 rv.T, V     **| PYTHON |** rel path | namespace                             :ref:`Python file`
 rv.T        **| MARKUP |** rel path | type                                  :ref:`Markup file`
 rv.D        **| ATTACHPDF |** rel path | place, title                       :ref:`Attach PDF`   

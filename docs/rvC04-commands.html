@@ -440,7 +440,7 @@
 <td><p><a class="reference internal" href="#assign-value"><span class="std std-ref">[9t] Assign value</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.V</p></td>
-<td><p>a <strong>&lt;</strong> c  | decimal | text, align, color</p></td>
+<td><p>a <strong>&lt;</strong> c  | decimal | text1, text2, color1, color2</p></td>
 <td><p><a class="reference internal" href="#compare-values"><span class="std std-ref">[10t] Compare values</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.T, V</p></td>
@@ -810,26 +810,27 @@ Example:
 </section>
 <section id="t-compare-values">
 <span id="compare-values"></span><h2><strong>[10t]</strong> Compare values<a class="headerlink" href="#t-compare-values" title="Link to this heading">#</a></h2>
-<hr><p>Inserts a text with alignment and color on the following line if the
-expression evaluates to true. Alignment can be <em>r;l;c</em> for right, left or
-center. Colors can be <em>red;blue;yellow;green;black;gray</em> defined in the <em>style
-files</em>.</p>
+<hr><p>Inserts a text with alignment and color on the following line if the expression
+evaluates to true. text1 and text2 are printed if true or false repectively.
+Colors are assigned accordingly as <em>red;blue;yellow;green;black;gray</em> defined
+in the <em>style files</em>.  The text is right aligned.</p>
 <p>Comparison operators:</p>
-<ul class="simple">
-<li><p>==    Equal   x == y</p></li>
-<li><p>!=    Not equal       x != y</p></li>
-<li><p>&gt;     Greater than    x &gt; y</p></li>
-<li><p>&lt;     Less than       x &lt; y</p></li>
-<li><p>&gt;=    Greater than or equal to        x &gt;= y</p></li>
-<li><p>&lt;=    Less than or equal to   x &lt;= y</p></li>
-</ul>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>==        Equal x == y
+!=        Not equal     x != y
+&gt;         Greater than  x &gt; y
+&lt;         Less than     x &lt; y
+&gt;=        Greater than or equal to x &gt;= y
+&lt;=        Less than or equal to x &lt;= y</p>
 <aside class="topic">
 <p class="topic-title">&lt;&gt;</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    a &lt; b **_[S]** text, r, red
+    a &lt; b | text1, text2, color1, color2
 
 Example:
-   a &lt; b **_[S]** text, r, red
+   a &lt; b |OK, NOT OK, blue, red
 </pre></div>
 </div>
 </aside>
