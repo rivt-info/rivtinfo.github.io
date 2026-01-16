@@ -73,13 +73,14 @@ HTML file. A *rivt file* is a Python file (.py) that imports the
 :term:`rivtlib` Python package and includes :term:`rivt markup`. A collection
 of *rivt docs* may be collated as a :term:`rivt report`.
 
-*rivt files*, as open source, may be integrated withother programs 
-and collaberatively shared. *rivt* itself is distributed under the 
-`MIT open source license. <https://opensource.org/license/mit>`_ 
-All or parts of a *rivt file* the author chooses to share as *public rivt files* 
-are also shared under an `Open Source license <https://opensource.org/licenses>`_.
-The *MIT license* is the default.
+*rivt file* examples are provided :doc:`here <rvD05-docex>` and 
+:doc:`here<rvD06-reportex>`. An interface for searching *rivt files* 
+on *GitHub* is :doc:`here <rvE03-ghsearch>`. All or parts of a *rivt file* the author
+chooses to share as a *public rivt file* can be shared under an `Open Source
+license <https://opensource.org/licenses>`_. ( see :ref:`Licenses`). 
 
+*rivt* itself is distributed under the 
+`MIT open source license <https://www.opensource.org/license/mit>`_ . 
 The *rivt API* includes  :ref:`API functions`, :ref:`Markup` and
 :ref:`Files and folders`. The API is designed to be:
 

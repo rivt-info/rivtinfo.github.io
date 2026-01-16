@@ -9,6 +9,7 @@
 
 `support@rivt.info <mailto:support@rivt.info>`_
 
+.. _Licenses:
 
 **[2t]** Licenses
 -------------------------------------------------------------
