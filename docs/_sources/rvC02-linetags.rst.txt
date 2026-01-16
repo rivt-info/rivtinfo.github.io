@@ -133,34 +133,10 @@ API Scope     Insert
 Doc Types     PDF, HTML
 =========== ==========================
 
-.. _URL link:
-
-**[6t]** URL link
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic::  _[U] 
-
-    .. code-block:: text
-
-        Syntax:
-            external url, label  _[U]
-
-        Example:
-            https://www.github.com, github _[U]
-    
-=========== ==========================
-API Scope     Insert
-Doc Types     PDF, HTML
-=========== ==========================
-
 
 ..  _Endnote number:
 
-**[9t]**  Endnote number
+**[6t]**  Endnote number
 -------------------------------------
 
 .. raw:: html
@@ -223,17 +199,18 @@ Doc Types     PDF, HTML
 
     <hr>
 
-Creates a link to the section label defined in the API header.
+Creates a link to the section label defined in the API header with optional
+link text. If the text is ommitted the section label is used for the link.
 
 .. topic:: _[S]
 
         .. code-block:: text
 
         Syntax:
-            text _[S] section title
+            text _[S] link text, section title
 
         Example:
-            This creates a link to _[S] My Section Title
+            This creates a link to _[S] Section Title, actual section label
             which provides more detail.
 
 =========== ==========================
@@ -243,27 +220,56 @@ Doc Types     PDF, HTML
 
 .. _Doc link:
 
-**[10t]** Doc link
+**[9t]** Doc link
 -----------------------------------------
 
 .. raw:: html
 
     <hr>
 
-Links to a *doc* in a *report*. The *doc* title will be inserted as the
-link term.
+Links to a *doc* in a *report* with an optional link text. If the link text is 
+ommitted the *doc* title will be inserted as the link term.
 
 .. topic:: _[D]
 
     .. code-block:: text
 
         Syntax:
-            text _[D] rivt_file
+            text _[D] text, rivt_file
 
         Example:
             This is a link to _[D] rv101-filename1 
             for reference.
 
+
+=========== ==========================
+API Scope     Insert
+Doc Types     PDF, HTML
+=========== ==========================
+
+.. _URL link:
+
+**[10t]** URL link
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+Links to a an external site with optional link text. If the link text is 
+ommitted the url will be inserted as the link term.
+
+.. topic::  _[U] 
+
+    .. code-block:: text
+
+        Syntax:
+            text _[U] link label ,external url 
+
+        Example:
+            text _[U]  github, https://www.github.com 
+
+   
 =========== ==========================
 API Scope     Insert
 Doc Types     PDF, HTML
