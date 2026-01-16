@@ -9,15 +9,18 @@
     <hr>
 
 *rivt* is an open source software project that simplifies sharing and reuse of
-engineering documents. These documents are more complex than typical documents.
-They include text, images, tables, calculations, models and computer code
-organized into reports. Because they are read and used in official capacities
-(e.g. permitting), they need to be clear and concise. Because they are modified
-as engineering designs evolve, they need to be flexible and easy
-to update.
+engineering documents. These document types are generally complex. They
+include text, images, tables, calculations, models and computer code organized
+into large reports.
 
-Although a number of engineering document programs are available, sharing is
-restricted by both software design and terms of use in the following ways:
+Because they are used in official capacities and reference standards and
+codes (e.g. permitting), they need to be clear and concise. Because they are
+modified as engineering designs evolve they need to be flexible and easy to
+update. And because they are both standardized and complex, sharing and
+reuse can improve efficiency and quality. 
+
+However sharing and reuse is restricted in available programs by the software
+design and terms of use:
 
 - documents written by different programs are incompatible
 - frequent software updates are needed to maintain document access

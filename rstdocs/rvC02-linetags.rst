@@ -11,21 +11,21 @@
 **Format a line or partial line of text**
   
 ========== ================================================= ===============================
-API Scope             Line Tagb                                     Description 
+API Scope             Line Tag                                      Description 
 ========== ================================================= ===============================
 rv.I                          text **_[C]**                     :ref:`Center text` 
 rv.I                          text **_[R]**                     :ref:`Right justify text`
-rv.I                    text  math **_[M]**                     :ref:`Text math` 
-rv.I                    LaTeX math **_[L]**                     :ref:`LaTeX math` 
-rv.I                          text **_[#]** more text           :ref:`Endnote number`  
-rv.I                          text **_[G]** glossary term       :ref:`Term reference`
-rv.I                          text **_[S]** section label       :ref:`Section link`
-rv.I                          text **_[D]** rivt_file text      :ref:`Doc link`
-rv.I                          text **_[U]** label, url          :ref:`URL link`   
-rv.V, I                       text **_[V]** var_name text       :ref:`Variable value`
-rv.V, I            assign or label **_[E]**                     :ref:`Equation number`
-rv.V, I                      title **_[T]**                     :ref:`Table number`
-rv.V, I                    caption **_[F]**                     :ref:`Figure number`
+rv.I                     **text math _[M]**                     :ref:`Text math` 
+rv.I                    **LaTeX math _[L]**                     :ref:`LaTeX math` 
+rv.I                          text **_[#]** text                :ref:`Endnote number`  
+rv.I                          text **_[G] glossary term**       :ref:`Term reference`
+rv.I                          text **_[S] section label**       :ref:`Section link`
+rv.I                          text **_[D] rivt_file** text      :ref:`Doc link`
+rv.I                          text **_[U] label, url**          :ref:`URL link`   
+rv.V, I                       text **_[V] var_name** text       :ref:`Variable value`
+rv.V, I        assign var or **label _[E]**                     :ref:`Equation number`
+rv.V, I                      **title _[T]**                     :ref:`Table number`
+rv.V, I                    **caption _[F]**                     :ref:`Figure number`
 ========== ================================================= ===============================
 
 ..  _Center text:

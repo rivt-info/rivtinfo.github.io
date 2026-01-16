@@ -23,10 +23,10 @@ The *Values* API function defines values and evaluates equations and functions.
 =================================================== ==============================
        Line Tag                                         Description 
 =================================================== ==============================
-                   text **_[V]** var_name text        :ref:`Variable value`
-assign command or label **_[E]**                      :ref:`Equation number`
-                  title **_[T]**                      :ref:`Table number`
-                caption **_[F]**                      :ref:`Figure number`                              
+                   text **_[V] var_name** text        :ref:`Variable value`
+assign command or **label _[E]**                      :ref:`Equation number`
+                  **title _[T]**                      :ref:`Table number`
+                **caption _[F]**                      :ref:`Figure number`                              
 =================================================== ==============================
 
 **[3i]** Block Tags
