@@ -12,14 +12,14 @@
 engineering documents. These documents are more complex than typical documents.
 They include text, images, tables, calculations, models and computer code
 organized into reports. Because they are read and used in official capacities
-(e.g. permitting) they need to be clear and concise. Because they are written
-in concert with evolving engineering designs they need to be flexible and easy
+(e.g. permitting), they need to be clear and concise. Because they are modified
+as engineering designs evolve, they need to be flexible and easy
 to update.
 
 Although a number of engineering document programs are available, sharing is
 restricted by both software design and terms of use in the following ways:
 
-- documents are written with incompatible programs
+- documents written by different programs are incompatible
 - frequent software updates are needed to maintain document access
 - update costs are high
 - newer document formats become inaccessible without upgrades
@@ -28,9 +28,9 @@ restricted by both software design and terms of use in the following ways:
 - report generation features are limited
 - collaboration features are limited
 
-As an open source project, *rivt* is designed to reduce repetitive work and
-improve document quality through sharing and reuse. The table below summarizes
-and compares limitations between different software programs.
+*rivt* is designed to reduce repetitive work and improve document quality
+through sharing and reuse. The table below summarizes and compares limitations
+between different software programs.
 
 .. rst-class:: center
 

@@ -52,7 +52,7 @@
 
 |
 
-.. dropdown:: Which open source license applies to *rivt files*?  
+.. dropdown:: Which open source licenses apply to *rivt files*?  
 
     The open source license for a public rivt file is specified in the 
     _[[Metadata]] block tag. The default license is the MIT license.
@@ -63,11 +63,12 @@
 
     <hr>
 
-.. dropdown:: What is the planned ongoing release schedule for *rivt*?
+.. dropdown:: What is the *rivt* release schedule?
 
-    *rivt* minor releases are planned monthly following the release of version
-    1.0.0. Major releases will have backward compatiblity. See
-    `here <https://github.com/rivtlib-dev/rivtlib/releases>`_ for past
-    releases
-    `and here <https://github.com/rivtlib-dev/rivtlib/blob/main/CHANGELOG.md>`_ 
-    for the changelog.
+    1.0.x bug releases are issued as needed.
+
+    1.x.0 minor releases are planned monthly following the release of version 1.0.0
+    
+    X.0.0. major releases will have backward compatiblity. See
+    `past releases <https://github.com/rivtlib-dev/rivtlib/releases>`_ and
+    `changelog <https://github.com/rivtlib-dev/rivtlib/blob/main/CHANGELOG.md>`_ .
