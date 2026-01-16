@@ -1,7 +1,7 @@
 **C.6 Insert - rv.I**
 ========================
 
-**[1t]** rv.I Markup
+**[1i]** rv.I Markup
 -------------------------------------
 
 .. raw:: html
@@ -10,6 +10,13 @@
 
 The *Insert* API function inserts and formats static sources into the *doc*,
 including images, tables, links and formatted text.
+
+**[2i]** Line Tags
+-------------------------------------
+
+.. raw:: html
+
+    <hr>
 
 =============================================== ============================
         Line Tags                                 Description 
@@ -29,6 +36,12 @@ including images, tables, links and formatted text.
            caption **_[F]**                      :ref:`Figure number`
 =============================================== ============================
 
+**[3i]** Block Tags
+-------------------------------------
+
+.. raw:: html
+
+    <hr>
 
 ========================================= ==============================
        Block Tags                              Description 
@@ -41,8 +54,15 @@ including images, tables, links and formatted text.
  **_[[END]]**                                 :ref:`End block`
 ========================================= ==============================
 
+**[4i]** Commands
+-------------------------------------
+
+.. raw:: html
+
+    <hr>
+
 ==================================================================== =========================
-         Commands                                                         Description
+         Command                                                          Description
 ==================================================================== =========================
  **| TEXT |** relative path |  language                                :ref:`Text file`
  **| TABLE |** rel path | title, width, rows, align, head              :ref:`Table file`     

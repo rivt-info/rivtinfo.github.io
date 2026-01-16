@@ -1,7 +1,7 @@
 **C.9 Doc - rv.D**
 ===========================
 
-**[1t]** rv.D Markup
+**[1i]** rv.D Markup
 -------------------------------------------
 
 .. raw:: html
@@ -10,6 +10,13 @@
 
 The *Doc API* publishes formatted *docs* from the rivt API strings.
 
+**[2i]** Block Tags
+-------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
 ======================================= ==============================
        Block Tags                        Description 
 ======================================= ==============================
@@ -17,8 +24,15 @@ The *Doc API* publishes formatted *docs* from the rivt API strings.
  **_[[METADATA]]** label                     :ref:`Meta block` 
 ======================================= ==============================
 
+**[3i]** Commands
+-------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
 ========================================================= ==================== 
-       Commands                                                  Description
+       Command                                                   Description
 ========================================================= ==================== 
 **| PDFATTACH |** relative path | place, cover              :ref:`Attach PDF`   
 **| PUBLISH |** ini rel. path | type                        :ref:`Publish Doc`

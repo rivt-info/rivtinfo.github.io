@@ -2,7 +2,7 @@
 ========================
 
 
-**[1t]** rv.V Markup
+**[1i]** rv.V Markup
 -------------------------
 
 .. raw:: html
@@ -10,6 +10,15 @@
     <hr>
 
 The *Value* API function defines values and evaluates equations and functions.
+
+
+
+**[2i]** Line Tags
+-------------------------
+
+.. raw:: html
+
+    <hr>
 
 =================================================== ==============================
        Line Tags                                        Description 
@@ -20,6 +29,14 @@ assign command or label **_[E]**                      :ref:`Equation number`
                 caption **_[F]**                      :ref:`Figure number`                              
 =================================================== ==============================
 
+**[3i]** Block Tags
+-------------------------
+
+.. raw:: html
+
+    <hr>
+
+
 ========================================= ==============================
        Block Tags                              Description 
 ========================================= ==============================
@@ -28,8 +45,16 @@ _[[END]]                                    :ref:`End Block`
 _[[NEWPAGE]]                                :ref:`Start new page`
 ========================================= ==============================
 
+**[2i]** Commands
+-------------------------
+
+.. raw:: html
+
+    <hr>
+
+
 ================================================================= =====================
-        Commands                                                     Description
+        Command                                                      Description
 ================================================================= =====================
 **| IMAGE |** relative path |  scale, caption, figure              :ref:`Image file`
 **| IMAGE2 |** rel path1, rel path2 | s1, s2, c1, c2, fig1, fig2   :ref:`Adjacent images`
