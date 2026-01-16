@@ -15,8 +15,9 @@ The *Run* API function executes shell commands.
 ======================================= ==============================
        Block Tags                             Description
 ======================================= ==============================
- **_[[SHELL]]** os,wait,open                    :ref:`Shell script`
- **_[[END]]**                                   :ref:`End block`
+ **_[[SHELL]]** process parameters            :ref:`Shell script`
+ **_[[END]]**                                 :ref:`End block`
+ **_[[NEW PAGE]]**                            :ref:`Start new page`
 ======================================= ==============================
 
 ========================================= ====================
@@ -24,7 +25,4 @@ The *Run* API function executes shell commands.
 ========================================= ====================
 **| SHELL |** relative path | os, wait     :ref:`Shell File`
 ========================================= ====================
-
-
-
 
