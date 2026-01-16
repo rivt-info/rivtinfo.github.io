@@ -8,16 +8,6 @@
     },
     "git.postCommitCommand": "sync",
     "editor.formatOnSave": true,
-    "editor.rulers": [
-        {
-            "column": 4,
-            "color": "#3d3d3d"
-        },
-        {
-            "column": 80,
-            "color": "#3d3d3d"
-        }
-    ],
     "gutterpreview.imagePreviewMaxHeight": 10,
     "ShortcutMenuBar.beautify": false,
     "ShortcutMenuBar.navigateBack": false,
