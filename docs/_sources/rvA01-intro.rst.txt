@@ -13,7 +13,7 @@ engineering documents. These document types are generally complex. They
 include text, images, tables, calculations, models and computer code organized
 into large reports.
 
-Because they are used in official capacities and reference standards and
+Because they are used in official capacities and include standards and
 codes (e.g. permitting), they need to be clear and concise. Because they are
 modified as engineering designs evolve they need to be flexible and easy to
 update. And because they are both standardized and complex, sharing and
@@ -76,13 +76,16 @@ of *rivt docs* may be collated as a :term:`rivt report`.
 *rivt file* examples are provided :doc:`here <rvD05-docex>` and 
 :doc:`here<rvD06-reportex>`. An interface for searching *rivt files* 
 on *GitHub* is :doc:`here <rvE03-ghsearch>`. All or parts of a *rivt file* the author
-chooses to share as a *public rivt file* can be shared under an `Open Source
-license <https://opensource.org/licenses>`_. ( see :ref:`Licenses`). 
+chooses to share as a *public rivt file* can be shared under an 
+`Open Source license <https://opensource.org/licenses>`_. 
+rivt itself is distributed under the 
+`MIT open source license <https://opensource.org/license/mit>`_ . 
+(see :ref:`Licenses`). 
 
-*rivt* itself is distributed under the 
-`MIT open source license <https://www.opensource.org/license/mit>`_ . 
-The *rivt API* includes  :ref:`API functions`, :ref:`Markup` and
-:ref:`Files and folders`. The API is designed to be:
+
+The *rivt API* includes  :ref:`API functions <API functions>`, 
+:ref:`markup <Markup>` and :ref:`files <Files and folders>`. 
+The API is designed to be:
 
 - lightweight
     :term:`rivt markup` is made up of about 3 dozen tags 

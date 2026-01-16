@@ -437,7 +437,7 @@
 <td><p><a class="reference internal" href="#section-link"><span class="std std-ref">[8t] Section link</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>text <strong>_[D] rivt_file</strong> text</p></td>
+<td><p>text <strong>_[D] rivt_file</strong></p></td>
 <td><p><a class="reference internal" href="#doc-link"><span class="std std-ref">[10t] Doc link</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I</p></td>
@@ -588,58 +588,6 @@ Example:
 </table>
 </div>
 </section>
-<section id="t-glossary-link">
-<span id="term-reference"></span><h2><strong>[7t]</strong> Glossary link<a class="headerlink" href="#t-glossary-link" title="Link to this heading">#</a></h2>
-<hr><p>Links a term to the glossary.</p>
-<aside class="topic">
-<p class="topic-title">_[G]</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    text _[G] glossary term
-
-Example:
-    Links to the glossary term _[G] doc.
-</pre></div>
-</div>
-</aside>
-<div class="pst-scrollable-table-container"><table class="table">
-<tbody>
-<tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Insert</p></td>
-</tr>
-<tr class="row-even"><td><p>Doc Types</p></td>
-<td><p>PDF, HTML</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="t-section-link">
-<span id="section-link"></span><h2><strong>[8t]</strong> Section link<a class="headerlink" href="#t-section-link" title="Link to this heading">#</a></h2>
-<hr><p>Creates a link to a section label defined in the API header.</p>
-<aside class="topic">
-<p class="topic-title">_[S]</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<dl class="simple">
-<dt>Syntax:</dt><dd><p>text _[S] section title</p>
-</dd>
-<dt>Example:</dt><dd><p>This creates a link to _[S] My Section Title</p>
-</dd>
-</dl>
-</aside>
-<div class="pst-scrollable-table-container"><table class="table">
-<tbody>
-<tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Insert</p></td>
-</tr>
-<tr class="row-even"><td><p>Doc Types</p></td>
-<td><p>PDF, HTML</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
 <section id="t-endnote-number">
 <span id="endnote-number"></span><h2><strong>[9t]</strong>  Endnote number<a class="headerlink" href="#t-endnote-number" title="Link to this heading">#</a></h2>
 <hr><p>Assigns endnote number to the text in order of processing. Endnotes
@@ -667,6 +615,60 @@ Example:
 </table>
 </div>
 </section>
+<section id="t-glossary-link">
+<span id="term-reference"></span><h2><strong>[7t]</strong> Glossary link<a class="headerlink" href="#t-glossary-link" title="Link to this heading">#</a></h2>
+<hr><p>Links a term to the glossary.</p>
+<aside class="topic">
+<p class="topic-title">_[G]</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    text _[G] glossary term
+
+Example:
+    A definition of _[G] namespace
+    is provided in the glossary.
+</pre></div>
+</div>
+</aside>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Insert</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="t-section-link">
+<span id="section-link"></span><h2><strong>[8t]</strong> Section link<a class="headerlink" href="#t-section-link" title="Link to this heading">#</a></h2>
+<hr><p>Creates a link to the section label defined in the API header.</p>
+<aside class="topic">
+<p class="topic-title">_[S]</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<dl class="simple">
+<dt>Syntax:</dt><dd><p>text _[S] section title</p>
+</dd>
+<dt>Example:</dt><dd><p>This creates a link to _[S] My Section Title
+which provides more detail.</p>
+</dd>
+</dl>
+</aside>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Insert</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 <section id="t-doc-link">
 <span id="doc-link"></span><h2><strong>[10t]</strong> Doc link<a class="headerlink" href="#t-doc-link" title="Link to this heading">#</a></h2>
 <hr><p>Links to a <em>doc</em> in a <em>report</em>. The <em>doc</em> title will be inserted as the
@@ -674,10 +676,11 @@ link term.</p>
 <aside class="topic">
 <p class="topic-title">_[D]</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    text rivt_file _[D] more text
+    text _[D] rivt_file
 
 Example:
-    This is a link to the rv101-filename1 _[D] doc.
+    This is a link to _[D] rv101-filename1
+    for reference.
 </pre></div>
 </div>
 </aside>
@@ -856,9 +859,9 @@ Example:
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-text-math"><strong>[4t]</strong> Text math</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-latex-math"><strong>[5t]</strong> LaTeX math</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-url-link"><strong>[6t]</strong> URL link</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-endnote-number"><strong>[9t]</strong>  Endnote number</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-glossary-link"><strong>[7t]</strong> Glossary link</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-section-link"><strong>[8t]</strong> Section link</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-endnote-number"><strong>[9t]</strong>  Endnote number</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-doc-link"><strong>[10t]</strong> Doc link</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-variable-value"><strong>[11t]</strong> Variable value</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-equation-number"><strong>[12t]</strong> Equation number</a></li>

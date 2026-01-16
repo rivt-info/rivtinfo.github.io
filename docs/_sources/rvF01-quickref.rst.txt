@@ -65,7 +65,7 @@ rv.I                    **LaTeX math _[L]**                     :ref:`LaTeX math
 rv.I                          text **_[#]** text                :ref:`Endnote number`  
 rv.I                          text **_[G] glossary term**       :ref:`Term reference`
 rv.I                          text **_[S] section label**       :ref:`Section link`
-rv.I                          text **_[D] rivt_file** text      :ref:`Doc link`
+rv.I                          text **_[D] rivt_file**           :ref:`Doc link`
 rv.I                          text **_[U] label, url**          :ref:`URL link`   
 rv.V, I                       text **_[V] var_name** text       :ref:`Variable value`
 rv.V, I        assign var or **label _[E]**                     :ref:`Equation number`

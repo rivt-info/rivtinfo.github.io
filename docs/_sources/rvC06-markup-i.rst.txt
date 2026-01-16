@@ -17,7 +17,7 @@ including images, tables, links and formatted text.
 .. raw:: html
 
     <hr>
-    
+
 ============================================ ============================
      Line Tag                                     Description 
 ============================================ ============================
@@ -28,7 +28,7 @@ including images, tables, links and formatted text.
                 text **_[#]** text             :ref:`Endnote number`  
                 text **_[G] glossary term**    :ref:`Term reference`
                 text **_[S] section label**    :ref:`Section link`
-                text **_[D] rivt_file** text   :ref:`Doc link`
+                text **_[D] rivt_file**        :ref:`Doc link`
                 text **_[U] label, url**       :ref:`URL link`   
                 text **_[V] var_name** text    :ref:`Variable value`
  assign var or **label _[E]**                  :ref:`Equation number`

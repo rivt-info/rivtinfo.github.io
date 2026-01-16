@@ -20,7 +20,7 @@ rv.I                    **LaTeX math _[L]**                     :ref:`LaTeX math
 rv.I                          text **_[#]** text                :ref:`Endnote number`  
 rv.I                          text **_[G] glossary term**       :ref:`Term reference`
 rv.I                          text **_[S] section label**       :ref:`Section link`
-rv.I                          text **_[D] rivt_file** text      :ref:`Doc link`
+rv.I                          text **_[D] rivt_file**           :ref:`Doc link`
 rv.I                          text **_[U] label, url**          :ref:`URL link`   
 rv.V, I                       text **_[V] var_name** text       :ref:`Variable value`
 rv.V, I        assign var or **label _[E]**                     :ref:`Equation number`
@@ -157,57 +157,6 @@ API Scope     Insert
 Doc Types     PDF, HTML
 =========== ==========================
 
-.. _Term reference:
-
-**[7t]** Glossary link
-------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-Links a term to the glossary.
-
-.. topic:: _[G] 
-
-    .. code-block:: text
-
-        Syntax:
-            text _[G] glossary term
-
-        Example:
-            Links to the glossary term _[G] doc. 
-
-=========== ==========================
-API Scope     Insert
-Doc Types     PDF, HTML
-=========== ==========================
-
-.. _Section link:
-
-**[8t]** Section link
------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-Creates a link to a section label defined in the API header.
-
-.. topic:: _[S]
-
-        .. code-block:: text
-
-        Syntax:
-            text _[S] section title
-
-        Example:
-            This creates a link to _[S] My Section Title
-
-=========== ==========================
-API Scope     Insert
-Doc Types     PDF, HTML
-=========== ==========================
 
 ..  _Endnote number:
 
@@ -237,6 +186,61 @@ API Scope     Insert
 Doc Types     text, PDF, HTML
 =========== ==========================
 
+
+.. _Term reference:
+
+**[7t]** Glossary link
+------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+Links a term to the glossary.
+
+.. topic:: _[G] 
+
+    .. code-block:: text
+
+        Syntax:
+            text _[G] glossary term
+
+        Example:
+            A definition of _[G] namespace
+            is provided in the glossary.
+
+=========== ==========================
+API Scope     Insert
+Doc Types     PDF, HTML
+=========== ==========================
+
+.. _Section link:
+
+**[8t]** Section link
+-----------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+Creates a link to the section label defined in the API header.
+
+.. topic:: _[S]
+
+        .. code-block:: text
+
+        Syntax:
+            text _[S] section title
+
+        Example:
+            This creates a link to _[S] My Section Title
+            which provides more detail.
+
+=========== ==========================
+API Scope     Insert
+Doc Types     PDF, HTML
+=========== ==========================
+
 .. _Doc link:
 
 **[10t]** Doc link
@@ -254,10 +258,11 @@ link term.
     .. code-block:: text
 
         Syntax:
-            text rivt_file _[D] more text
+            text _[D] rivt_file
 
         Example:
-            This is a link to the rv101-filename1 _[D] doc.
+            This is a link to _[D] rv101-filename1 
+            for reference.
 
 =========== ==========================
 API Scope     Insert
