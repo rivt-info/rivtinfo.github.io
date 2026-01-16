@@ -1,20 +1,25 @@
 **D.1 Docs**
 ========================
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-
-**[1]** rivt Files
+**[1t]** rivt Files
 -----------------------------
 
 .. raw:: html
 
     <hr>
 
-Each :term:`rivt file` outputs a corresponding formatted :term:`doc`. A *rivt
-report* is organized using the rivt *doc numbers*. If the *rivt file* names are:
+Each :term:`rivt file` outputs a corresponding formatted :term:`doc`. A doc
+number has the form
+
+.. code-block:: text
+
+    rvAnn-filename.py
+
+where rv is a required prefix, A is an alphanumeric character and nn are two
+digit non-negative integers. 
+
+A *rivt report* is organized using the rivt *doc numbers*. If the *rivt file*
+names are:
 
 .. code-block:: bash
 
@@ -31,12 +36,8 @@ the *report numbers* would be:
 Note that leading zeroes are dropped.  *Docs* are sorted alpha-numerically into
 divisions and subdivisions in the *report*.
 
-.. raw:: html
 
-    <p id="api">&lt;i&gt;</p>
-
-
-**[2]** Docs
+**[2t]** Docs
 -----------------------------
 
 .. raw:: html
@@ -44,7 +45,7 @@ divisions and subdivisions in the *report*.
     <hr>
 
 Each :term:`rivt file` outputs a corresponding formatted :term:`doc` written to
-the *publish* folder unless it is a :term:`stand-alone doc`. 
+the *publish* folder unless it is a :term:`single doc`. 
 
 *Docs* may be text, HTML or PDF. PDF *doc* files are produced by two different
 libraries, referred to as *pdf* and *pdftex*. A *pdf* doc is formatted using
@@ -56,30 +57,26 @@ A *pdftex doc* requires separate installation of the much larger *texlive*
 LaTeX library (approx. 3GB). Its advantage is additional control over *doc*
 formatting and appearance.
 
-.. raw:: html
 
-    <p id="api">&lt;i&gt;</p>
-
-**[3]** Stand-alone Docs
+**[3t]** Single docs
 ----------------------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-A document that will not be part of a :ref:`report <report-describe>` may use 
-the rivt file folder for reading and writing files, without referencing 
-the *rivt report folders*. A stand-alone *doc* is published using the 
-following settings:
-
-#. The *rv_local* variable is set to "True" in the *Meta API*.
-#. Any *COMMAND* relative path is just the file name. 
+A document that will not be part of a :ref:`report <report-describe>` may use
+the local rivt file folder for reading and writing files, without referencing
+the *rivt report folders*. A single *doc* is formatted by setting the
+*rv_local* variable in a comment, immediately following the *rivtlib* import
+statement. 
   
-A *rivt file* may be converted to a stand-alone *doc* by making those two
-adjustments. 
+.. code:: python
 
-The text, PDF and HTML *docs* will be written to the local file folder using
-simple style settings built into *rivtlib*. Stand-alone *docs* require less
+    # rv singledoc=True
+
+The text, PDF or HTML *doc* will be written to the local file folder using
+simple style settings built into *rivtlib*. *Single docs* require less
 setup but also offer less formatting control.
 
 .. toctree::
@@ -89,4 +86,5 @@ setup but also offer less formatting control.
     rvD02-files.rst
     rvD03-folders.rst
     rvD04-setting.rst
-    rvD05-reportex.rst
+    rvD05-docex.rst
+    rvD06-reportex.rst

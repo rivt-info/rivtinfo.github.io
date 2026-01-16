@@ -13,7 +13,7 @@ Home
 
 .. figure::  _static/img/rivdark55c.png
     :class: dark-light
-    :scale: 20 %
+    :scale: 20%
     :align: center
     :alt: rivt logo
     
@@ -21,23 +21,18 @@ Home
 
    <hr>
 
-*rivt* is an open source Python project for writing and sharing 
-:term:`rivt files` that publish formatted engineering documents 
-(:term:`rivt docs`) using the :term:`rivtlib` package. A :term:`rivt doc` 
-is a text, HTML or PDF file published from a *rivt file*. A *rivt file* is 
-a :term:`Python` file (.py) that includes *rivtlib* and :term:`rivt markup`. 
+*rivt* is an open source software project for writing engineering documents.
+Documents are formatted as text, HTML or PDF files (:term:`rivt docs`)
+that are generated from :term:`rivt markup` text files (:term:`rivt files`).
 
-*rivtlib* defines an API for *rivt markup*, which wraps and extends
-:term:`reStructuredText markup`. It also organizes multiple *docs* into a
-:term:`report`. This site is an example of an HTML report.
+A *rivt file* is a :term:`Python` file (.py) that imports the :term:`rivtlib`
+Python package and interprets *rivt markup*. A *rivt file* can
+publish *docs* in all formats and can be compiled with other *docs* into a
+:term:`rivt report`. This site is an example of a *rivt report*.
 
-*rivt* integrates well with other open source programs. The recommended
-:term:`rivt framework` is described :doc:`here. <rvB01-install>`.
-
-:doc:`This <rvA04-docex>` is a small single *doc* example.
-:doc:`This <rvD05-reportex>` is a small *report* example. A
-search interface for discovering *rivt files* on *GitHub* is
-:doc:`here <rvE03-ghsearch>`.
+Small *rivt file* examples are provided :doc:`here <rvD05-docex>` and 
+:doc:`here<rvD06-reportex>`. An interface for searching *rivt files* 
+on *GitHub* is :doc:`here <rvE03-ghsearch>`.
 
 .. raw:: html
 
@@ -52,3 +47,4 @@ search interface for discovering *rivt files* on *GitHub* is
     rvC01-markup.rst
     rvD01-documents.rst
     rvE01-collab.rst
+    rvF01-quickref.rst

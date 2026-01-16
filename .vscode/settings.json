@@ -21,7 +21,7 @@
     "settings.cycle": [
         {
             "id": "explorerSort2", // must be unique
-            "overrideWorkspaceSettings": false,
+            "overrideWorkspaceSettings": true,
             "values": [
                 {
                     "explorer.sortOrder": "name"
@@ -104,35 +104,11 @@
     },
     "workbench.panel.defaultLocation": "right",
     "python.defaultInterpreterPath": "c:\\Python313\\python.exe",
-    "explorer.sortOrder": "type",
+    "explorer.sortOrder": "name",
+    "editor.hover.enabled": "off",
+    "editor.parameterHints.enabled": false,
     "editor.minimap.enabled": false,
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
-    "editor.hover.enabled": "off",
-    "editor.parameterHints.enabled": false,
-    "editor.rulers": [
-        80
-    ],
-    "github.copilot.enable": {
-        "*": false,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false
-    },
-    "git.autofetch": true,
-    "cSpell.enabled": false,
-    "surround.custom": {
-        // command name must be unique
-        "boldsurround": {
-            // label must be unique
-            "label": "boldsurround",
-            "description": "rst bold",
-            "snippet": "**$TM_SELECTED_TEXT**$0",
-            "languageIds": [
-                "*"
-            ]
-        },
-        // You can add more ...
-    },
-    "extensions.ignoreRecommendations": true,
+    "workbench.editor.tabSizing": "shrink"
 }

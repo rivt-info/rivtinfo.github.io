@@ -1,84 +1,122 @@
 **E.1 Collaboration**
 =======================
 
+**[1t]** Overview
+--------------------
+
 .. raw:: html
 
-    <p id="api">&lt;i&gt;</p>
+    <hr>
 
-**[1]** GitHub
+ As a Python open source project, there are several ways to collaborate 
+ and share rivt file improvements.
+
+#. :doc:`Public rivt files</rvE02-publicrivt>` may be shared by uploading
+    to repositories such as *GitHub*.  
+
+#. Public *rivt files* can be found and downloaded using the 
+    :doc:`search interface <rvE03-ghsearch>`. For public files, 
+
+    - cloned versions may be forked to create different versions.
+    - pull requests may provide improvements.
+    - issues and bugs may be reported.
+  
+    *Public rivt files* are identified with the naming convention
+    rv-A01-filename.py, in contrast with rvA01-filename for private files.
+    After downloading a public rivt file, use the *Batch Rename* extension to delete the hyphen after *rv* and convert it to a
+    private rivt file.
+
+#.  Files may be collaboratively edited in real time using VSCode with the
+    extension  `Visual Studio Live Share
+    <https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare>`_. 
+    extension.    
+
+
+#. Contribute to rivtlib at `rivtlib-dev <https://github.com/rivtlib-dev/rivtlib>`_ 
+   and documentation at `rivt-info <https://github.com/rivt-in>`_.
+    
+    - report issues and bugs
+    - issue pull requests to propose changes
+    - contribute to documentation
+
+#. Contribute extensions and scripts that improve interaction *rivt* with other 
+    components of the *rivt framework*.
+
+**[2t]** Git and GitHub
+---------------------------
+
+.. raw:: html
+
+    <hr>
+
+`Git <https://git-scm.com/>`_ is part of the *rivt framework*. It is a free,
+open-source, distributed version control system designed to manage and track
+changes in files. It allows multiple people to work on the same project
+simultaneously without overwriting each other's work.
+
+`GitHub <https://github.com/>`_ is also part of the *rivt framework*. It is a
+web-based platform for hosting, managing, and collaborating on code built
+around Git. It allows teams to work together efficiently on software projects
+and provides features like pull requests, issue tracking, and project
+management.
+
+Each *rivt project* is typically stored in its own repository. Every user of
+GitHub has a personal account with essentially unlimited repositories.Free
+accounts provide for:
+
+- Unlimited Repositories: You can create as many public and private
+  repositories as you need.
+
+- Unlimited Collaborators: There is no limit to the number of people you can
+  work with on your repositories.
+
+- Community Support: You have access to the GitHub Community Discussions for help.
+
+- Core Services with Usage Limits: The free plan includes a certain amount of
+  monthly usage for services:
+
+  + GitHub Actions: 2,000 minutes per month for private repositories 
+      (unlimited for public repositories). 
+  
+  + GitHub Codespaces: 120 core hours and 15 GB of storage per month.
+
+*GitHub Codespaces* is a VSCode cloud-based development environment connected
+to GitHub files. It can be set up with *rivt extensions* that provide a complete
+rivt editing and collaboration environment in the cloud.
+
+**[3t]** VSCode
 ------------------
 
 .. raw:: html
 
     <hr>
 
-VSCode and GitHub have a number of tools that faciliate collaboration when
-writing and sharing rivt files.
+`VSCode <https://code.visualstudio.com/>`_ is an open source IDE with a large
+set of extensions, including collaboration support. 
+Collaboration is facilitated by the `Visual Studio Live Share
+<https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare>`_. 
+You can start a *Live Share* session either within *CodeSpaces* in 
+your browser, or within the *VS Code* desktop application. *CodeSpaces* 
+is a cloud based GitHub implementation of VSCode that shares many of the 
+same features.
 
-The primary purpose of GitHub is to facilitate the version control and issue
-tracking aspects of software development. Labels, milestones, responsibility
-assignment, and a search engine are available for issue tracking. For version
-control, Git (and, by extension, GitHub) allows pull requests to propose changes
-to the source code. Users who can review the proposed changes can see a diff
-between the requested changes and approve them. In Git terminology, this action
-is called "committing" and one instance of it is a "commit." A history of all
-commits is kept and can be viewed at a later time.
 
-GitHub supports the following formats and features:
+The *Live Share* extension enables:
 
-- Documentation,including automatically rendered README files in a variety of
-  Markdown-like file formats (see README § On GitHub)
+- Real-time Co-editing: Multiple participants can work on the same file
+  simultaneously, seeing each other's cursors, selections, and edits instantly,
+  much like in Google Docs..
 
-- Pages, a static web hosting service for blogs, project documentation,
-  and books.
+- Shared Terminals and Servers: The host can share their terminal and localhost
+  servers with guests, eliminating the need for guests to set up their own
+  environments or dependencies.
 
-- Wikis, with some repositories consisting solely of wiki content. These
-  include curated lists of recommended software which have become known as
-  awesome lists.
+- Navigation and Following: Participants can independently navigate the project
+  or choose to "follow" another collaborator, keeping their editor synchronized
+  with the leader's actions.
 
-- GitHub Actions, which allows building continuous integration and
-  continuous deployment pipelines for testing, releasing and deploying software
-  without the use of third-party websites/platforms
-
-- GitHub Codespaces, an online IDE providing users with a virtual machine
-  intended to be a work environment to build and test code
-
-- Graphs: pulse, contributors, commits, code frequency, punch card, network,
-  members
-
-- Email notifications
-
-- Discussions
-
-- Nested task-lists within files
-
-- Visualization of geospatial data
-
-- image preview in many formats
-
-- Security Alerts of known Common Vulnerabilities and Exposures in different
-  packages
-
-- GitHub's Terms of Service do not require public software projects hosted on
-  GitHub to meet the Open Source Definition. The terms of service state, "By
-  setting your repositories to be viewed publicly, you agree to allow others to
-  view and fork your repositories."
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[2]** VSCode
-------------------
-
-.. raw:: html
-
-    <hr>
-
- Collaboration in VS Code is primarily facilitated by the Visual Studio Live
- Share extension. This extension enables real-time collaborative development,
- allowing multiple developers to work on the same codebase simultaneously,
- share debugging sessions, and interact within the same environment.
+- File Access Control: Hosts can use a .vsls.json file to control which files and
+  folders are visible or editable by guests, ensuring security and focus
 
 .. toctree::
     :maxdepth: 3

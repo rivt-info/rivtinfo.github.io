@@ -1,335 +1,372 @@
 **C.1 Markup**
 ==================
 
-.. raw:: html
+.. _rivt string:
 
-    <p id="api">&lt;i&gt;</p>
-
-**[1]** Metadata
--------------------
-
-.. raw:: html
-
-    <hr>
-
-If *Metadata* is provided it is specified before any API functions are called.
-It uses standard Python dictionaries, lists and strings and provides author
-information and global file path handling. It is specified outside the
-*rivtlib* API functions.
-    
-================ ===============================================================
-Variable [1]                      Description
-================ ===============================================================
-rv_authD          dictionary specifies author information
-rv_fork1D         dictionary specifies author fork information
-rv_localB         true; **[false] default** - set resource files to local folder
-================ ===============================================================
-
-[1] variables use the *rivtlib* code convention of data type indicated by suffix
-
-*rv_authD* specifies the author, version, email, repository and license
-information and lists the forks. *rv_forknD* specifies data for the forked
-file. The *rv_authD* dictionary always precedes *rv_forknD*.
-
-.. raw:: html
-
-    <hr>
-
-..  code-block:: python
-
-    # default - author dictionary
-    rv_authD = {
-            "authors": "",
-            "version": "0.0.0",
-            "email": "",
-            "repo": "",
-            "license": "https://opensource.org/license/mit/",
-            "forks": ["", "", "", ""],
-            }
-
-    # example - author dicitionary
-    rv_authD = {
-            "authors": "rholland",
-            "version": "0.6.1",
-            "email": "rod.h.holland@gmail.com",
-            "repo": "https://github.com/rivt-info/rivt-simple-doc",
-            "license": "https://opensource.org/license/mit/",
-            "forks": ["rv_fork1D", "", "", ""],
-            }
-    
- 
-*rv_forknD* specifies author information for a rivt file :term:`fork`.
-
-..  code-block:: python
-
-    #example - fork dictionary
-    rv_fork1D = {
-            "authors": "",
-            "version": "0.1.0",
-            "email": "",
-            "repo": "",
-            }
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-
-*rv_localB* overrides the default report structure and specifies that all
-resource files are read from and written to the *rivt file* folder instead of
-*rivt folders*. It is intended for relatively simple, single docs. Formatting
-is more limited.
-
-..  code-block:: python
-
-     # default setting uses report folders
-     rv_localB = false
-     
-     # resource files are in rivt file folder
-     rv_localB = true
-
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-
-**[2]** rivt String
+**[1t]** rivt string
 ----------------------------------
 
 .. raw:: html
 
     <hr>
 
-A :term:`rivt string`  is a utf-8 text triple quoted string argument to an 
-:doc:`API function <rvA01-intro>`. It may include :term:`rivt markup`, 
-a readable, plain text language that generates formatted text, PDF or 
-HTML :term:`docs`. The different *doc* types are generated from the 
-same *rivt file*. 
+Each :doc:`API function <rvA01-intro>` takes a triple quoted :term:`rivt
+string` argument composed of two parts - a :term:`header substring` followed 
+by a :term:`content substring`.
 
-The first line of a *rivt string* is a header, followed by text 
-indented 4 spaces for improved readability and section folding.
+The *header substring* is the first line of a *rivt string* that defines
+section processing and formatting. It is followed by a *content substring* that
+includes :term:`rivt markup` and other text. It is indented 4 spaces for
+improved readability and section folding.
 
-.. code-block:: python
+.. _Header substring:
 
-    rv._("""Section Label | show;hide, private;public, section;merge
-
-        section text (utf-8 text)
-        
-        ...
-        
-        """)
-
-The *rivt string* begins with an *API header* that includes a "section
-label" and section formatting parameters.
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[3]** API Header 
--------------------------
-
-.. raw:: html
-
-    <hr>
-
-An :term:`API header` starts with a *section label* followed by comma separated
-*section parameters* that may override default behavior. The *section label* is
-the section title and is separated from the *section header* paramaters by a
-vertical bar. Parameters include the following:
-
-- private/public : determines whether the API section text is copied to the
-    the */public* folder *rivt file* for sharing. 
-
-- show/hide : determines whether the *rivt string* is formatted and printed 
-    in the doc or just annotated and written to a file for optional inclusion 
-    as an appendix. 
-
-- section/merge : determines whether the API starts a new *doc* section
-    or is merged into the previous section.   
-
-
-Default settings do not need to be specified in the *header*. In the table
-below, the default setting for each API is listed first in bold.
- 
-========== ===================== ==================== =====================
-API          private/public         show/hide           section/merge         
-========== ===================== ==================== ===================== 
-rv.M        **private**; public   **hide**; show       **merge**; section
-rv.R        **private**; public   **hide**; show       **merge**; section
-rv.I        **private**; public   **show**; hide       **section**; merge   
-rv.V        **private**; public   **show**; hide       **section**; merge    
-rv.T        **private**; public   **hide**; show       **merge**; section
-rv.D        **private**; public   **hide**; show       **merge**; section
-rv.S        **private**; public   **hide**; show       **merge**; section
-rv.Q        **private**; public   **hide**; show       **merge**; section
-========== ===================== ==================== ===================== 
-
-
-Examples of *header* settings are shown below.
-
-.. code-block:: python
-
-    rv.I("""A New Section | private, show, section
-
-        section content (utf-8 text)
-  
-        ...
-        
-        """)
-
-For the *Insert API* - rv.I(), the following syntax is equivalent:
-
-.. code-block:: python
-
-    rv.I("""A New Section
-
-        section text (utf-8)
-
-        ...
-        
-        """)
-
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-
-**[4]** Section Text 
---------------------------
-
-.. raw:: html
-
-    <hr>
-
-Section text is indented four spaces for legibility and code folding. It
-includes *rivt tags* that format lines of text and *rivt commands* that operate
-on files.
-
-.. code-block:: python
-
-    rv._("""Section Label | write; nowrite, public; private
-
-        section text
-        ...
-        
-        """)
-
-
-A section is processed line by line into formatted text and `RestructuredText
-<https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_, and then
-further processed to an HTML or PDF file. If a line does not contain a
-*command* or *tag* it is passed through as is, which allows for including some
-*restructured text* directly. For example surrounding words with * for italics
-or ** for bold. 
-
-In addition the *Tools API function* (rv.T) supports inserting raw Python,
-HTML and LaTex. Since it can be hid from the primary textual
-content of the file rv.T() improves readability.
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[5]** Tags and Commands
+**[2t]** Header substring 
 ----------------------------
 
 .. raw:: html
 
     <hr>
 
-:doc:`Tags <rvC07-quick>`
+The :term:`header substring` starts with a *section label* followed by vertical
+bar that deliniates three comma separated *section parameters* that can
+override default behavior. The *section label* is the section title. 
 
-A :term:`line tag` formats a line of text and is denoted with **_[TAG]**, usually 
-at the end of the line.
+.. code-block:: python
 
-A :term:`block tag` formats a block of text that begins with **_[[TAG]]**
-and terminates with **_[[Q]]**. 
+    rv._("""Section Label | doc;stored, private;public, section;merge
 
-:doc:`Commands <rvC07-quick>`
+         Content substring indented 4 spaces
+        
+        ...
+        
+        """)
+
+The parameters include the following, in any order:
+
+*private/public* 
+    Determines whether the API section text is copied to the
+    the */public* folder *rivt file* for sharing. 
+
+*doc/stored*
+    Determines whether the *rivt string* is formatted and printed in the doc, 
+    or just annotated in the doc and written to a file in the *Stored* folder 
+    for optional inclusion as an appendix.
+
+*section/merge* 
+    Determines whether the API starts a new *doc* section
+    or is merged into the previous section.   
+
+Default settings in the *header substring* do not need to be specified. The
+default setting for each API is listed first (in bold) in the table below.
+ 
+========== ===================== ===================== =====================
+API          private;public         doc;stored           section;merge         
+========== ===================== ===================== ===================== 
+rv.R        **private**;public     **stored**;doc       **merge**;section
+rv.I        **private**;public     **doc**;stored       **section**;merge   
+rv.V        **private**;public     **doc**;stored       **section**;merge    
+rv.T        **private**;public     **stored**;doc       **merge**;section
+rv.S        **private**;public     **stored**           **merge**
+rv.D        **public**             **stored**           **merge**
+rv.X         -                      -                   -
+========== ===================== ===================== =====================
+
+Examples of *header substring* settings are shown below.
+
+- An example with explicit defaults (they do not have to be declared).
+
+.. code-block:: python
+
+    # This
+    
+    rv.I("""A New Section | private, doc, section
+
+        Content text
+        ...
+        
+        """)
+    
+    # is equivalent to:
+
+    rv.I("""A New Section  
+
+        Content text
+  
+        ...
+        
+        """)
+
+
+- An example that merges a section into the previous section.
+
+.. code-block:: python
+
+    rv.I("""A Merged Section | merge
+
+        Content text
+
+        ...
+        
+        """)
+
+.. _Content substring:
+
+**[3t]** Content substring
+------------------------------
+
+.. raw:: html
+
+    <hr>
+
+The :term:`content substring` is indented four spaces for legibility and 
+code folding. It includes :doc:`line tags<rvC02-linetags>`, 
+:doc:`block tags<rvC03-blocktags>` and  :doc:`commands<rvC04-commands>` 
+along with  text.
+
+.. code-block:: python
+
+    rv._("""Section Label  
+
+        Content text indented 4 spaces.
+        ...
+        
+        """)
+
+Content is converted line by line into formatted text and `RestructuredText
+<https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_, and then
+further processed into HTML or PDF. If a line does not contain a *command* or
+*tag* it is passed through as is, which allows for the *Insert* function (rv.I) 
+including some *restructured text* directly i.e. 
+surrounding words with * or ** will format a word as italic or bold respectively.
+
+In addition block tags in the *Tools function* (rv.T) directly supports
+processing HTML, LaTeX and reStructuredText scripts.
+
+**[5t]** Tags and Commands
+----------------------------
+
+:doc:`Line Tags <rvC02-linetags>`
+
+A :term:`line tag` formats a line of text and is denoted with a single
+**_[LETTER]**, placed at or near the end of the line, depending on the tag.
+
+:doc:`Block Tags <rvC03-blocktags>`
+
+A :term:`block tag` formats a block of text and begins with **_[[TAGNAME]]**
+and terminates with **_[[END]]**.
+
+:doc:`Commands <rvC04-commands>`
 
 *rivt commands* read and write external files. They typically start in the
-first column with a vertical bar ( | ) followed by the file path, name and
-parameters. The exceptions to this pattern are the assignment (**<=** ) and
-definition (**:=**) commands, which are used to assign values to equation
-results and define variables.
+first column with a vertical bar ( | ) followed by the command name, file path,
+and parameters. 
+
+The exceptions are, the definition (**=:**), the assignment (**<=:**) 
+and the compare (**<>**) commands, which are used to define, 
+assign and compare values.
 
 .. code-block:: bash  
     
     | COMMAND | relative path | parameters
 
-File paths are specified relative to the *report folder* or *rivt file* folder.  
-The  typical *rivt report* folder structure is described 
-:doc:`here. <rvD03-folders>`
+File paths are specified relative to the *rivt root folder*.  
+The *rivt report* folder structure is described :doc:`here. <rvD03-folders>`.
 
+If the path is ommitted the default path for each command is applied. 
+If the *singledoc* parameter is set, the *resource files* and *docs* are stored
+in the *rivt root folder*.
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-
-**[6]** Markup Key
-----------------------------------
+Tag and Command syntax for each API type is defined and described 
+using the following format:
 
 .. raw:: html
 
-    <hr>
+    <p style="border-width:2px; border-style:solid; 
+    border-color:#49b2c3;padding: 1em;">
 
-_[TAG] : description of :term:`line tag` 
+    <b>Markup Key<br>
+    <br>
+    _[TAG] or | COMMAND |</b><br>
+    <br>
+    Description<br>
+    <br>
+    <pre>
+        Syntax:
+            _[TAG] or | COMMAND | syntax
+
+        Example:
+            This is a sentence. _[C]
+    </pre> 
+    </p>
 
 
-.. topic::  syntax : description
-
-   example
-
-outputs: types of output
-
-
-.. raw:: html
-
-    <hr>
-
-
-_[[TAG]] :  description of :term:`block tag`
-        
-
-.. topic::  syntax : description
-
-  example
-
-file types
+**[6t]** Folders
+---------------------------
 
 .. raw:: html
 
     <hr>
 
-| COMMAND |  description of :term:`command`
-
-.. topic:: | COMMAND | relative path | parameters
-
-  example
-
-file types
+Folders organize files in standard locations to simplify *doc* and *report*
+generation.
 
 .. raw:: html
 
-    <hr>
+    <p style="border-width:2px; border-style:solid; 
+    border-color:#49b2c3;padding: 1em;">
 
-.. raw:: html
+    <b>Folder Key</b><br>
 
-    <p id="api">&lt;i&gt;</p>
+    - Required names or prefixes are shown in brackets [ ]. <br>
+    - Folders (including subfolders) that contain author generated files 
+    are marked with a single vertical bar ( | ).<br>  
+    - Folders (including subfolders) that contain *rivtlib* generated files are 
+    marked with double vertical bars ( || ).</p>
+
+
+**Folders**
+
+.. code-block:: bash
+
+    [rivt]-Report-Label/                Report Folder Name
+        ├── [rv101-]filename1.py        | rivt file
+        ├── [rv102-]filename2.py        | rivt file
+        ├── [rv201-]filename3.py        | rivt file
+        ├── [rv202-]filename4.py        | rivt file 
+
+        ...
+
+        ├── [public]/                   || public rivt files 
+        ├── [publish]/                  || doc and report files
+        ├── [src]/                      |  source files from author
+        ├── [stored]/                   || rivt stored files
+        └── README.txt                  || searchable text report 
+
+**Expanded Folders**
+
+.. code-block:: bash
+
+    [rivt]-Report-Label/                       Report Folder Name                
+        ├── [rv101-]filename1.py               | rivt input files
+        ├── [rv102-]filename2.py               
+        ├── [rv201-]filename3.py               
+        ├── [rv202-]filename4.py                 
+        ├── [public]/                          || public rivt files                      
+            ├── rv-101-filename1.py              
+            ├── rv-201-filename3.py  
+            └── rv-202-filename4.py      
+        ├── [publish]/                         || reports and docs
+            ├── [html]/                              HTML site  
+                ├── [docs]/                           
+                    ├── _images/                
+                    ├── _sources/              
+                    ├── _static/                  
+                    ├── rv101-filename1.html         
+                    ├── rv102-filename2.html                              
+                    ├── rv201-filename3.html                        
+                    ├── rv201-filename4.html   
+                    └── index.html                   HTML site entry point          
+                ├── rv101-filename1.rst              intermediate rst files 
+                ├── rv102-filename2.rst  
+                ├── rv201-filename3.rst  
+                └── rv202-filename4.rst  
+            ├── [pdf]/                               PDF from rst2pdf 
+                ├── [src]/                           intermediate rst files  
+                    ├── rv101-filename1.rst          
+                    ├── rv102-filename2.rst                           
+                    ├── rv201-filename3.rst                        
+                    └── rv202-filename4.rst              
+                ├── rv101-filename1.pdf              PDF docs from rst2pdf 
+                ├── rv102-filename2.pdf                          
+                ├── rv201-filename3.pdf                        
+                ├── rv202-filename4.pdf         
+                └── Report-Label.pdf                 PDF report from rst2pdf 
+            ├── [pdftex]/                            PDF from LaTeX  
+                ├── [src]/                           intermediate rst files   
+                    ├── rv101-filename1.rst         
+                    ├── rv102-filename2.rst                        
+                    ├── rv201-filename3.rst                        
+                    └── rv202-filename4.rst               
+                ├── rv101-filename1.pdf              PDF docs from LaTeX 
+                ├── rv102-filename2.pdf                          
+                ├── rv201-filename3.pdf                       
+                ├── rv202-filename4.pdf
+                └── Report-Label.pdf                 PDF report from LaTeX 
+            ├── [text]/                              text report
+                ├── rv101-filename1.txt              text docs
+                ├── rv102-filename2.txt       
+                ├── rv201-filename3.txt       
+                ├── rv202-filename4.txt       
+                └── README.txt                       searchable text report                     
+        ├── [src]                              | source files from author               
+            ├── data/                               author created subfolder
+                ├── data1.csv   
+                └── conc-vals.csv  
+            ├── image/                              author created subfolder                          
+                ├── fig1.png
+                └── fig2.jpg
+            ├── output/                             author created subfolder
+                ├── table1.csv                                               
+                ├── image1.png                            
+                └── opensees1.txt    
+            ├── [gendoc]/
+                ├── gen-html.cmd                     html generating script
+                ├── gen-pdf.cmd                      pdf generating script
+                ├── gen-pdftex.cmd                   LaTeX generating script
+                ├── rivt-report.py                   report generating script
+                ├── new-units.py                     define new units
+                └── [style]/                         doc style files 
+                    ├── [html]/                      html style files
+                        ├── _locale/                 
+                        ├── _static/                        
+                        ├── _templates/                     
+                        ├── conf.py                         
+                        ├── genhtml.cmd                     
+                        └── index.rst
+                    ├── [pdf]/                       rst2pdf style files
+                        ├── fonts/              
+                        ├── style/                 
+                        ├── Report-Cover.pdf           
+                        └── genrst2pdf.cmd
+                    ├── [pdftex]/                    pdftex style files
+                        ├── gentexpdf.cmd             
+                        ├── Report-cover.pdf                     
+                        └── rivt.sty              
+                    ├── [text]/                      text ini file
+                        └── rv-text.ini
+            ├── [py]/                                Python scripts and functions
+                    ├── plot.py                               
+                    └── loads.py
+            └── [vals]/                              value files
+                ├── steel-vals.csv     
+                └── plastic-vals.csv
+        ├── [stored]/                          || stored files from rivt            
+            ├── [logs]/                              log files
+                ├── rv101-api.txt   
+                ├── rv101-log.txt
+                └── rv102-log.txt
+            ├── [sect]/                              stored sections                    
+                ├── rv202-5d.txt   
+                ├── rv103-4t.txt                         
+                └── rv301-2r.txt               
+            ├── [temp]/                              temp files
+                └── rv101-label3.tex
+            └── [vals]/                              stored value files
+                ├── v101-2.csv
+                └── v102-3.csv        
+        └── README.txt                         || searchable text report 
 
 
 .. toctree::
     :maxdepth: 1
     :hidden:
 
-    rvC02-markup-r.rst
-    rvC03-markup-i.rst
-    rvC04-markup-v.rst
-    rvC05-markup-t.rst
-    rvC06-markup-d.rst
-    rvC07-quick.rst
-    rvC08-example1.rst
+    rvC02-linetags.rst
+    rvC03-blocktags.rst
+    rvC04-commands.rst    
+    rvC05-markup-r.rst
+    rvC06-markup-i.rst
+    rvC07-markup-v.rst
+    rvC08-markup-t.rst
+    rvC09-markup-d.rst

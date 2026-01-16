@@ -59,8 +59,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'rvE01-collab';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="E.2 Public rivt Files" href="rvE02-publicrivt.html" />
-    <link rel="prev" title="D.5 Example" href="rvD05-reportex.html" />
+    <link rel="next" title="E.2 Public rivt files" href="rvE02-publicrivt.html" />
+    <link rel="prev" title="D.5 Example" href="rvD06-reportex.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -154,7 +154,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvB01-install.html">
-    B.1 Install
+    B.1 Installation
   </a>
 </li>
 
@@ -176,6 +176,13 @@
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="#">
     E.1 Collaboration
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvF01-quickref.html">
+    F.1 Quick Ref
   </a>
 </li>
 
@@ -261,7 +268,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvB01-install.html">
-    B.1 Install
+    B.1 Installation
   </a>
 </li>
 
@@ -283,6 +290,13 @@
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="#">
     E.1 Collaboration
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvF01-quickref.html">
+    F.1 Quick Ref
   </a>
 </li>
 
@@ -313,7 +327,7 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="rvE02-publicrivt.html"><strong>E.2 Public rivt Files</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvE02-publicrivt.html"><strong>E.2 Public rivt files</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvE03-ghsearch.html"><strong>E.3 GitHub Search</strong></a></li>
 </ul>
 </div>
@@ -374,63 +388,121 @@
                   
   <section id="e-1-collaboration">
 <h1><strong>E.1 Collaboration</strong><a class="headerlink" href="#e-1-collaboration" title="Link to this heading">#</a></h1>
-<p id="api">&lt;i&gt;</p><section id="github">
-<h2><strong>[1]</strong> GitHub<a class="headerlink" href="#github" title="Link to this heading">#</a></h2>
-<hr><p>VSCode and GitHub have a number of tools that faciliate collaboration when
-writing and sharing rivt files.</p>
-<p>The primary purpose of GitHub is to facilitate the version control and issue
-tracking aspects of software development. Labels, milestones, responsibility
-assignment, and a search engine are available for issue tracking. For version
-control, Git (and, by extension, GitHub) allows pull requests to propose changes
-to the source code. Users who can review the proposed changes can see a diff
-between the requested changes and approve them. In Git terminology, this action
-is called “committing” and one instance of it is a “commit.” A history of all
-commits is kept and can be viewed at a later time.</p>
-<p>GitHub supports the following formats and features:</p>
-<ul class="simple">
-<li><p>Documentation,including automatically rendered README files in a variety of
-Markdown-like file formats (see README § On GitHub)</p></li>
-<li><p>Pages, a static web hosting service for blogs, project documentation,
-and books.</p></li>
-<li><p>Wikis, with some repositories consisting solely of wiki content. These
-include curated lists of recommended software which have become known as
-awesome lists.</p></li>
-<li><p>GitHub Actions, which allows building continuous integration and
-continuous deployment pipelines for testing, releasing and deploying software
-without the use of third-party websites/platforms</p></li>
-<li><p>GitHub Codespaces, an online IDE providing users with a virtual machine
-intended to be a work environment to build and test code</p></li>
-<li><p>Graphs: pulse, contributors, commits, code frequency, punch card, network,
-members</p></li>
-<li><p>Email notifications</p></li>
-<li><p>Discussions</p></li>
-<li><p>Nested task-lists within files</p></li>
-<li><p>Visualization of geospatial data</p></li>
-<li><p>image preview in many formats</p></li>
-<li><p>Security Alerts of known Common Vulnerabilities and Exposures in different
-packages</p></li>
-<li><p>GitHub’s Terms of Service do not require public software projects hosted on
-GitHub to meet the Open Source Definition. The terms of service state, “By
-setting your repositories to be viewed publicly, you agree to allow others to
-view and fork your repositories.”</p></li>
-</ul>
-<p id="api">&lt;i&gt;</p></section>
-<section id="vscode">
-<h2><strong>[2]</strong> VSCode<a class="headerlink" href="#vscode" title="Link to this heading">#</a></h2>
+<section id="t-overview">
+<h2><strong>[1t]</strong> Overview<a class="headerlink" href="#t-overview" title="Link to this heading">#</a></h2>
    <hr>
 
-Collaboration in VS Code is primarily facilitated by the Visual Studio Live
-Share extension. This extension enables real-time collaborative development,
-allowing multiple developers to work on the same codebase simultaneously,
-share debugging sessions, and interact within the same environment.<div class="toctree-wrapper compound">
+As a Python open source project, there are several ways to collaborate
+and share rivt file improvements.<ol class="arabic">
+<li><dl class="simple">
+<dt><a class="reference internal" href="rvE02-publicrivt.html"><span class="doc">Public rivt files</span></a> may be shared by uploading</dt><dd><p>to repositories such as <em>GitHub</em>.</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Public <em>rivt files</em> can be found and downloaded using the</dt><dd><p><a class="reference internal" href="rvE03-ghsearch.html"><span class="doc">search interface</span></a>. For public files,</p>
+<ul class="simple">
+<li><p>cloned versions may be forked to create different versions.</p></li>
+<li><p>pull requests may provide improvements.</p></li>
+<li><p>issues and bugs may be reported.</p></li>
+</ul>
+<p><em>Public rivt files</em> are identified with the naming convention
+rv-A01-filename.py, in contrast with rvA01-filename for private files.
+After downloading a public rivt file, use the <em>Batch Rename</em> extension to delete the hyphen after <em>rv</em> and convert it to a
+private rivt file.</p>
+</dd>
+</dl>
+</li>
+<li><p>Files may be collaboratively edited in real time using VSCode with the
+extension  <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare">Visual Studio Live Share</a>.
+extension.</p></li>
+<li><p>Contribute to rivtlib at <a class="reference external" href="https://github.com/rivtlib-dev/rivtlib">rivtlib-dev</a>
+and documentation at <a class="reference external" href="https://github.com/rivt-in">rivt-info</a>.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>report issues and bugs</p></li>
+<li><p>issue pull requests to propose changes</p></li>
+<li><p>contribute to documentation</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><dl class="simple">
+<dt>Contribute extensions and scripts that improve interaction <em>rivt</em> with other</dt><dd><p>components of the <em>rivt framework</em>.</p>
+</dd>
+</dl>
+</li>
+</ol>
+</section>
+<section id="t-git-and-github">
+<h2><strong>[2t]</strong> Git and GitHub<a class="headerlink" href="#t-git-and-github" title="Link to this heading">#</a></h2>
+<hr><p><a class="reference external" href="https://git-scm.com/">Git</a> is part of the <em>rivt framework</em>. It is a free,
+open-source, distributed version control system designed to manage and track
+changes in files. It allows multiple people to work on the same project
+simultaneously without overwriting each other’s work.</p>
+<p><a class="reference external" href="https://github.com/">GitHub</a> is also part of the <em>rivt framework</em>. It is a
+web-based platform for hosting, managing, and collaborating on code built
+around Git. It allows teams to work together efficiently on software projects
+and provides features like pull requests, issue tracking, and project
+management.</p>
+<p>Each <em>rivt project</em> is typically stored in its own repository. Every user of
+GitHub has a personal account with essentially unlimited repositories.Free
+accounts provide for:</p>
+<ul class="simple">
+<li><p>Unlimited Repositories: You can create as many public and private
+repositories as you need.</p></li>
+<li><p>Unlimited Collaborators: There is no limit to the number of people you can
+work with on your repositories.</p></li>
+<li><p>Community Support: You have access to the GitHub Community Discussions for help.</p></li>
+<li><p>Core Services with Usage Limits: The free plan includes a certain amount of
+monthly usage for services:</p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="rvE02-publicrivt.html"><strong>E.2 Public rivt Files</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="rvE02-publicrivt.html#id1"><strong>[1]</strong></a></li>
+<li><dl class="simple">
+<dt>GitHub Actions: 2,000 minutes per month for private repositories</dt><dd><p>(unlimited for public repositories).</p>
+</dd>
+</dl>
+</li>
+<li><p>GitHub Codespaces: 120 core hours and 15 GB of storage per month.</p></li>
+</ul>
+</li>
+</ul>
+<p><em>GitHub Codespaces</em> is a VSCode cloud-based development environment connected
+to GitHub files. It can be set up with <em>rivt extensions</em> that provide a complete
+rivt editing and collaboration environment in the cloud.</p>
+</section>
+<section id="t-vscode">
+<h2><strong>[3t]</strong> VSCode<a class="headerlink" href="#t-vscode" title="Link to this heading">#</a></h2>
+<hr><p><a class="reference external" href="https://code.visualstudio.com/">VSCode</a> is an open source IDE with a large
+set of extensions, including collaboration support.
+Collaboration is facilitated by the <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare">Visual Studio Live Share</a>.
+You can start a <em>Live Share</em> session either within <em>CodeSpaces</em> in
+your browser, or within the <em>VS Code</em> desktop application. <em>CodeSpaces</em>
+is a cloud based GitHub implementation of VSCode that shares many of the
+same features.</p>
+<p>The <em>Live Share</em> extension enables:</p>
+<ul class="simple">
+<li><p>Real-time Co-editing: Multiple participants can work on the same file
+simultaneously, seeing each other’s cursors, selections, and edits instantly,
+much like in Google Docs..</p></li>
+<li><p>Shared Terminals and Servers: The host can share their terminal and localhost
+servers with guests, eliminating the need for guests to set up their own
+environments or dependencies.</p></li>
+<li><p>Navigation and Following: Participants can independently navigate the project
+or choose to “follow” another collaborator, keeping their editor synchronized
+with the leader’s actions.</p></li>
+<li><p>File Access Control: Hosts can use a .vsls.json file to control which files and
+folders are visible or editable by guests, ensuring security and focus</p></li>
+</ul>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rvE02-publicrivt.html"><strong>E.2 Public rivt files</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rvE02-publicrivt.html#t-overview"><strong>[1t]</strong> Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rvE02-publicrivt.html#t-public-folder"><strong>[2t]</strong> Public Folder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rvE02-publicrivt.html#t-example"><strong>[3t]</strong> Example</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="rvE03-ghsearch.html"><strong>E.3 GitHub Search</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="rvE03-ghsearch.html#github-global-search"><strong>[1]</strong> GitHub Global Search</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rvE03-ghsearch.html#github-organization-search"><strong>[2]</strong> GitHub Organization Search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rvE03-ghsearch.html#t-github-global-search"><strong>[1t]</strong> GitHub Global Search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rvE03-ghsearch.html#t-github-organization-search"><strong>[2t]</strong> GitHub Organization Search</a></li>
 </ul>
 </li>
 </ul>
@@ -449,7 +521,7 @@ share debugging sessions, and interact within the same environment.<div class="t
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rvD05-reportex.html"
+       href="rvD06-reportex.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
@@ -462,7 +534,7 @@ share debugging sessions, and interact within the same environment.<div class="t
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>E.2 Public rivt Files</strong></p>
+        <p class="prev-next-title"><strong>E.2 Public rivt files</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -485,8 +557,9 @@ share debugging sessions, and interact within the same environment.<div class="t
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github"><strong>[1]</strong> GitHub</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vscode"><strong>[2]</strong> VSCode</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-overview"><strong>[1t]</strong> Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-git-and-github"><strong>[2t]</strong> Git and GitHub</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-vscode"><strong>[3t]</strong> VSCode</a></li>
 </ul>
   </nav></div>
 

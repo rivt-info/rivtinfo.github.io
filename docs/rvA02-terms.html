@@ -154,7 +154,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvB01-install.html">
-    B.1 Install
+    B.1 Installation
   </a>
 </li>
 
@@ -176,6 +176,13 @@
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvE01-collab.html">
     E.1 Collaboration
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvF01-quickref.html">
+    F.1 Quick Ref
   </a>
 </li>
 
@@ -261,7 +268,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvB01-install.html">
-    B.1 Install
+    B.1 Installation
   </a>
 </li>
 
@@ -283,6 +290,13 @@
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvE01-collab.html">
     E.1 Collaboration
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvF01-quickref.html">
+    F.1 Quick Ref
   </a>
 </li>
 
@@ -315,7 +329,6 @@
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>A.2 Terms</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvA03-faq.html"><strong>A.3 FAQ</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvA04-docex.html"><strong>A.4 Example</strong></a></li>
 </ul>
 </div>
 </nav></div>
@@ -378,13 +391,13 @@
                   
   <section id="a-2-terms">
 <h1><strong>A.2 Terms</strong><a class="headerlink" href="#a-2-terms" title="Link to this heading">#</a></h1>
-<p id="api">&lt;t&gt;</p><section id="rivt-terms">
+<section id="rivt-terms">
 <h2><strong>[1]</strong> rivt Terms<a class="headerlink" href="#rivt-terms" title="Link to this heading">#</a></h2>
 <hr><dl class="glossary">
 <dt id="term-API-header">API header<a class="headerlink" href="#term-API-header" title="Link to this term">#</a></dt><dt id="term-API-headers">API headers<a class="headerlink" href="#term-API-headers" title="Link to this term">#</a></dt><dd><p>The first line of a  <em>rivt string</em>. It includes a section title, followed
 by comma separated parameters.</p>
 </dd>
-<dt id="term-api-history">api-history<a class="headerlink" href="#term-api-history" title="Link to this term">#</a></dt><dd><p>API excecution history written to log folder as the file <em>rvDss-api.rst</em>.
+<dt id="term-API-log">API log<a class="headerlink" href="#term-API-log" title="Link to this term">#</a></dt><dd><p>API excecution history written to log folder as the file <em>rvDss-api.rst</em>.
 For the complete execution history see the rivt log file <em>rvDss-log.txt</em>.</p>
 </dd>
 <dt id="term-block-tag">block tag<a class="headerlink" href="#term-block-tag" title="Link to this term">#</a></dt><dt id="term-block-tags">block tags<a class="headerlink" href="#term-block-tags" title="Link to this term">#</a></dt><dd><p>A block tag formats a block of text that begins with <strong>_[[TAG]]</strong>
@@ -400,6 +413,11 @@ local <em>rivt file</em> folder.</p>
 </pre></div>
 </div>
 </dd>
+<dt id="term-content">content<a class="headerlink" href="#term-content" title="Link to this term">#</a></dt><dt id="term-content-text">content text<a class="headerlink" href="#term-content-text" title="Link to this term">#</a></dt><dt id="term-content-substring">content substring<a class="headerlink" href="#term-content-substring" title="Link to this term">#</a></dt><dd><p>The text in a <em>rivt string</em> that follows the <em>header substring</em>. The text is
+utf-8 (Unicode Transformation Format - 8-bit), a character encoding
+standard that is a superset of ASCII, handles text from any language,
+and is constant across all platforms.</p>
+</dd>
 <dt id="term-division">division<a class="headerlink" href="#term-division" title="Link to this term">#</a></dt><dd><p>A group of related rivt files organized in a report and labeled in
 the rivt file name. Optionally organized in a division folder.</p>
 </dd>
@@ -411,12 +429,12 @@ and file type suffix.</p>
 It has the form <em>rvDss-filename.py</em> where D is a capital alphanumeric
 division number and ss is the subdivision number.</p>
 </dd>
-<dt id="term-header">header<a class="headerlink" href="#term-header" title="Link to this term">#</a></dt><dt id="term-headers">headers<a class="headerlink" href="#term-headers" title="Link to this term">#</a></dt><dd><p>The first line of a  <em>rivt string</em>. It includes a section title, followed
+<dt id="term-header">header<a class="headerlink" href="#term-header" title="Link to this term">#</a></dt><dt id="term-headers">headers<a class="headerlink" href="#term-headers" title="Link to this term">#</a></dt><dt id="term-header-text">header text<a class="headerlink" href="#term-header-text" title="Link to this term">#</a></dt><dt id="term-header-substring">header substring<a class="headerlink" href="#term-header-substring" title="Link to this term">#</a></dt><dd><p>The first line of a  <em>rivt string</em>. It includes a section title, followed
 by comma separated parameters.</p>
 </dd>
 <dt id="term-line-tag">line tag<a class="headerlink" href="#term-line-tag" title="Link to this term">#</a></dt><dt id="term-line-tags">line tags<a class="headerlink" href="#term-line-tags" title="Link to this term">#</a></dt><dd><p>A line tag has the form <strong>_[TAG]</strong> and formats a line of text.</p>
 </dd>
-<dt id="term-report">report<a class="headerlink" href="#term-report" title="Link to this term">#</a></dt><dt id="term-reports">reports<a class="headerlink" href="#term-reports" title="Link to this term">#</a></dt><dd><p>A group of compiled <em>docs</em> organized by rivt file number.</p>
+<dt id="term-report">report<a class="headerlink" href="#term-report" title="Link to this term">#</a></dt><dt id="term-reports">reports<a class="headerlink" href="#term-reports" title="Link to this term">#</a></dt><dt id="term-rivt-report">rivt report<a class="headerlink" href="#term-rivt-report" title="Link to this term">#</a></dt><dd><p>A group of compiled <em>docs</em> organized by rivt file number.</p>
 </dd>
 <dt id="term-report-folder">report folder<a class="headerlink" href="#term-report-folder" title="Link to this term">#</a></dt><dt id="term-report-folders">report folders<a class="headerlink" href="#term-report-folders" title="Link to this term">#</a></dt><dd><p>The folder structure for producing a report is described
 <a class="reference internal" href="rvD03-folders.html"><span class="doc">here.</span></a></p>
@@ -441,8 +459,8 @@ and ss is the subdivision number.</p>
 <dt id="term-rivt-folder">rivt folder<a class="headerlink" href="#term-rivt-folder" title="Link to this term">#</a></dt><dd><p>A folder containing a rivt file and all of its resources in the same folder.
 Generally used</p>
 </dd>
-<dt id="term-rivt-framework">rivt framework<a class="headerlink" href="#term-rivt-framework" title="Link to this term">#</a></dt><dd><p>The recommended <em>rivt-framework</em> includes the
-following programs, installed separately:</p>
+<dt id="term-rivt-framework">rivt framework<a class="headerlink" href="#term-rivt-framework" title="Link to this term">#</a></dt><dt id="term-framework">framework<a class="headerlink" href="#term-framework" title="Link to this term">#</a></dt><dd><p>The recommended <em>rivt-framework</em> includes the
+following separately installed programs:</p>
 <ol class="arabic simple">
 <li><p><a class="reference external" href="https://code.visualstudio.com/">VSCode</a> and
 <a class="reference external" href="https://marketplace.visualstudio.com/vscode">VSCode extensions</a>.
@@ -466,29 +484,18 @@ and resources organized in subfolders</p>
 <dt id="term-rivtlib">rivtlib<a class="headerlink" href="#term-rivtlib" title="Link to this term">#</a></dt><dd><p>Open source <a class="reference external" href="https://www.rivtlib.dev">Python package</a> that generates docs
 and reports from a <a class="reference internal" href="#term-rivt-file"><span class="xref std std-term">rivt file</span></a></p>
 </dd>
-<dt id="term-rv-namespace">rv-namespace<a class="headerlink" href="#term-rv-namespace" title="Link to this term">#</a></dt><dt id="term-rv-space">rv-space<a class="headerlink" href="#term-rv-space" title="Link to this term">#</a></dt><dd><p>rivt alias name for the global rivt file namespace. Other user namespaces may be
+<dt id="term-rvspace">rvspace<a class="headerlink" href="#term-rvspace" title="Link to this term">#</a></dt><dd><p>rivt alias name for the global rivt file namespace. Other user namespaces may be
 specified</p>
-</dd>
-<dt id="term-rv_authD">rv_authD<a class="headerlink" href="#term-rv_authD" title="Link to this term">#</a></dt><dd><p>Metadata that specifies the author, version, email, repository and
-license information and lists any forks.</p>
-</dd>
-<dt id="term-rv_forknD">rv_forknD<a class="headerlink" href="#term-rv_forknD" title="Link to this term">#</a></dt><dd><p>Metadata that specifies author information for the fork.</p>
-</dd>
-<dt id="term-rv_localB">rv_localB<a class="headerlink" href="#term-rv_localB" title="Link to this term">#</a></dt><dd><p>Metadata that overrides the default report structure and specifies
-that all rivt file resources are read from written to the rivt file folder.</p>
 </dd>
 <dt id="term-section-parameter">section parameter<a class="headerlink" href="#term-section-parameter" title="Link to this term">#</a></dt><dt id="term-section-parameters">section parameters<a class="headerlink" href="#term-section-parameters" title="Link to this term">#</a></dt><dd><p>Comma separated parameters in a <em>header</em> that specify the section processing.</p>
 </dd>
-<dt id="term-section-text">section text<a class="headerlink" href="#term-section-text" title="Link to this term">#</a></dt><dd><p>The content of a <em>rivt string</em> minus the <em>header</em>.</p>
-</dd>
-<dt id="term-single-doc">single doc<a class="headerlink" href="#term-single-doc" title="Link to this term">#</a></dt><dt id="term-single-docs">single docs<a class="headerlink" href="#term-single-docs" title="Link to this term">#</a></dt><dd><p>A document that is not part of a report. It may be
-published using the local folder  rather than the <em>src</em> subfolder. In
-this case command files and <em>docs</em>  are read and written to
-the <em>rivt file</em> folder.</p>
-</dd>
-<dt id="term-stand-alone-doc">stand-alone doc<a class="headerlink" href="#term-stand-alone-doc" title="Link to this term">#</a></dt><dd><p>A single document that is not part of a report. It uses
-the local rivt file folder for reading and writing files. <em>doc</em>
-styling control is limited compared to a <em>report</em>.</p>
+<dt id="term-single-doc">single doc<a class="headerlink" href="#term-single-doc" title="Link to this term">#</a></dt><dt id="term-single-docs">single docs<a class="headerlink" href="#term-single-docs" title="Link to this term">#</a></dt><dd><p>A single doc is a rivt file that publishes a doc that is not part of
+a report and is used for quick docs that only require limited formatting.</p>
+<p>It is specified in a comment variable directly after the <em>rivtlib</em>
+import statement.</p>
+<p># rv singledoc = True</p>
+<p>The default setting is False. The rivt file folder is used for
+source and output files. A folder structure is not used.</p>
 </dd>
 </dl>
 <p id="api">&lt;t&gt;</p></section>
@@ -522,7 +529,13 @@ independent version</p>
 <section id="vscode-terms">
 <h2><strong>[4]</strong> VSCode Terms<a class="headerlink" href="#vscode-terms" title="Link to this heading">#</a></h2>
 <hr><dl class="simple glossary">
-<dt id="term-profile">profile<a class="headerlink" href="#term-profile" title="Link to this term">#</a></dt><dd><p>Allows users to customize their VS Code environment for different workflows,
+<dt id="term-IDE">IDE<a class="headerlink" href="#term-IDE" title="Link to this term">#</a></dt><dd><p>Integrated Development Environment. A software application that provides
+comprehensive facilities to computer programmers for software development.
+An IDE typically includes a code editor, build automation tools,
+and a debugger. <em>rivt extensions</em> are mostly developed for VSCode.
+Other examples include PyCharm, Spyder, and JupyterLab.</p>
+</dd>
+<dt id="term-profile">profile<a class="headerlink" href="#term-profile" title="Link to this term">#</a></dt><dd><p>Allows VSCode users to customize their environment for different workflows,
 projects, or tasks. This feature provides a way to manage distinct
 configurations of settings, extensions, keyboard shortcuts, snippets,
 and tasks.</p>

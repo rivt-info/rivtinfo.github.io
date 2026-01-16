@@ -1,11 +1,6 @@
 **A.2 Terms**
 =====================
 
-.. raw:: html
-
-    <p id="api">&lt;t&gt;</p>
-
-
 **[1]** rivt Terms
 -----------------------------
 
@@ -23,6 +18,18 @@
     A doc is a text, PDF or HTML file with the default name of the *rivt file* 
     and file type suffix.
 
+  single doc 
+  single docs 
+    A single doc is a rivt file that publishes a doc that is not part of 
+    a report and is used for quick docs that only require limited formatting. 
+    
+    It is specified in a comment variable directly after the *rivtlib* 
+    import statement.
+
+    # rv singledoc = True
+  
+    The default setting is False. The rivt file folder is used for 
+    source and output files. A folder structure is not used. 
 
   doc number 
     Prefix of a rivt and doc file name and used to organize a report. 
@@ -47,9 +54,19 @@
     
   header
   headers
+  header text
+  header substring
     The first line of a  *rivt string*. It includes a section title, followed 
     by comma separated parameters.
 
+  content
+  content text
+  content substring
+    The text in a *rivt string* that follows the *header substring*. The text is 
+    utf-8 (Unicode Transformation Format - 8-bit), a character encoding 
+    standard that is a superset of ASCII, handles text from any language, 
+    and is constant across all platforms.
+  
   rivt
     An open source Python project that includes :term:`rivtlib` and approximately 
     two dozen :doc:`Python packages <rvB02-python>`. When *rivt* is installed
@@ -87,9 +104,9 @@
     and resources organized in subfolders
 
   rivt framework 
-
+  framework
     The recommended *rivt-framework* includes the
-    following programs, installed separately:
+    following separately installed programs:
 
     #. `VSCode <https://code.visualstudio.com/>`_ and 
        `VSCode extensions <https://marketplace.visualstudio.com/vscode>`_. 
@@ -121,16 +138,9 @@
       | COMMAND | relative path | parameters
     
 
-
-  single doc 
-  single docs 
-    A document that is not part of a report. It may be
-    published using the local folder  rather than the *src* subfolder. In 
-    this case command files and *docs*  are read and written to 
-    the *rivt file* folder.
-
   report
   reports
+  rivt report
     A group of compiled *docs* organized by rivt file number. 
 
   report folder
@@ -142,10 +152,7 @@
   section parameters 
     Comma separated parameters in a *header* that specify the section processing.
 
-  section text
-    The content of a *rivt string* minus the *header*. 
-
-  api-history 
+  API log
     API excecution history written to log folder as the file *rvDss-api.rst*. 
     For the complete execution history see the rivt log file *rvDss-log.txt*.
 
@@ -155,26 +162,10 @@
   report script
     A Python script that assembles *docs* into a *report*.
 
-  stand-alone doc
-    A single document that is not part of a report. It uses
-    the local rivt file folder for reading and writing files. *doc* 
-    styling control is limited compared to a *report*.
-
-  rv-namespace
-  rv-space
+  rvspace
     rivt alias name for the global rivt file namespace. Other user namespaces may be 
     specified
 
-  rv_authD
-    Metadata that specifies the author, version, email, repository and 
-    license information and lists any forks.
-
-  rv_forknD 
-    Metadata that specifies author information for the fork. 
-
-  rv_localB 
-    Metadata that overrides the default report structure and specifies 
-    that all rivt file resources are read from written to the rivt file folder.
 
 .. raw:: html
 
@@ -248,8 +239,15 @@
   :sorted: 
 
   profile
-    Allows users to customize their VS Code environment for different workflows, 
+    Allows VSCode users to customize their environment for different workflows, 
     projects, or tasks. This feature provides a way to manage distinct 
     configurations of settings, extensions, keyboard shortcuts, snippets, 
     and tasks.
+
+  IDE
+    Integrated Development Environment. A software application that provides 
+    comprehensive facilities to computer programmers for software development. 
+    An IDE typically includes a code editor, build automation tools, 
+    and a debugger. *rivt extensions* are mostly developed for VSCode. 
+    Other examples include PyCharm, Spyder, and JupyterLab.
 

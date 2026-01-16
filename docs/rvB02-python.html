@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
-    <title>B.2 Python Dependencies &#8212; rivt</title>
+    <title>B.2 Dependencies &#8212; rivt</title>
   
   
   
@@ -60,7 +60,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="B.3 VSCode Settings" href="rvB03-vscode.html" />
-    <link rel="prev" title="B.1 Install" href="rvB01-install.html" />
+    <link rel="prev" title="B.1 Installation" href="rvB01-install.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -154,7 +154,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="rvB01-install.html">
-    B.1 Install
+    B.1 Installation
   </a>
 </li>
 
@@ -176,6 +176,13 @@
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvE01-collab.html">
     E.1 Collaboration
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvF01-quickref.html">
+    F.1 Quick Ref
   </a>
 </li>
 
@@ -261,7 +268,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="rvB01-install.html">
-    B.1 Install
+    B.1 Installation
   </a>
 </li>
 
@@ -283,6 +290,13 @@
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvE01-collab.html">
     E.1 Collaboration
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvF01-quickref.html">
+    F.1 Quick Ref
   </a>
 </li>
 
@@ -313,8 +327,11 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>B.2  Python Dependencies</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>B.2 Dependencies</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvB03-vscode.html"><strong>B.3 VSCode Settings</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvB04-git.html"><strong>B.4 Git</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvB05-texlive.html"><strong>B.5 texlive</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvB06-freecad.html"><strong>B.6 FreeCAD</strong></a></li>
 </ul>
 </div>
 </nav></div>
@@ -356,9 +373,9 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="rvB01-install.html" class="nav-link"><strong>B.1 Install</strong></a></li>
+    <li class="breadcrumb-item"><a href="rvB01-install.html" class="nav-link"><strong>B.1 Installation</strong></a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>B.2  Python Dependencies</strong></span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>B.2 Dependencies</strong></span></li>
   </ul>
 </nav>
 </div>
@@ -375,12 +392,18 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="b-2-python-dependencies">
-<h1><strong>B.2  Python Dependencies</strong><a class="headerlink" href="#b-2-python-dependencies" title="Link to this heading">#</a></h1>
-<p id="api">&lt;i&gt;</p><section id="requirements">
-<h2><strong>[1]</strong> Requirements<a class="headerlink" href="#requirements" title="Link to this heading">#</a></h2>
-<hr><p><em>rivt</em> installs Python libraries for document formatting and engineering
-analysis.  The minimum Python version is <em>3.13.0</em>. The recommended method for
+  <section id="b-2-dependencies">
+<h1><strong>B.2 Dependencies</strong><a class="headerlink" href="#b-2-dependencies" title="Link to this heading">#</a></h1>
+<section id="t-requirements">
+<h2><strong>[1t]</strong> Requirements<a class="headerlink" href="#t-requirements" title="Link to this heading">#</a></h2>
+<hr><p><em>rivt</em> installs Python libraries for</p>
+<ul class="simple">
+<li><p>document formatting</p></li>
+<li><p>numerical analysis</p></li>
+<li><p>symbolic processing</p></li>
+<li><p>visualization</p></li>
+</ul>
+<p>The minimum Python version is <em>3.13.0</em>. The recommended method for
 installing <em>rivt</em> is <a class="reference internal" href="rvB01-install.html"><span class="doc">rivtuv</span></a>.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -389,83 +412,95 @@ installing <em>rivt</em> is <a class="reference internal" href="rvB01-install.ht
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>“tabulate&gt;=0.9.0”</p></td>
-<td><p>format tabular data</p></td>
+<tr class="row-even"><td><p>“pyzo&gt;=4.20.0”</p></td>
+<td><p>lightweight IDE</p></td>
 </tr>
-<tr class="row-odd"><td><p>“pillow&gt;=11.2.1”</p></td>
-<td><p>imaging processing</p></td>
+<tr class="row-odd"><td><p>“pyside6&gt;=6.10.1”</p></td>
+<td><p>QT bindings</p></td>
 </tr>
-<tr class="row-even"><td><p>“matplotlib&gt;=3.10.1”</p></td>
+<tr class="row-even"><td><p>“fastcore&gt;=1.8.16”</p></td>
+<td><p>code simplification</p></td>
+</tr>
+<tr class="row-odd"><td><p>“tabulate&gt;=0.9.0”</p></td>
+<td><p>format tables</p></td>
+</tr>
+<tr class="row-even"><td><p>“pillow&gt;=11.2.1”</p></td>
+<td><p>image processing</p></td>
+</tr>
+<tr class="row-odd"><td><p>“matplotlib&gt;=3.10.1”</p></td>
 <td><p>data visualization</p></td>
 </tr>
-<tr class="row-odd"><td><p>“sympy&gt;=1.13.3”</p></td>
+<tr class="row-even"><td><p>“sympy&gt;=1.13.3”</p></td>
 <td><p>symbolic analysis</p></td>
 </tr>
-<tr class="row-even"><td><p>“numpy&gt;=2.2.5”</p></td>
+<tr class="row-odd"><td><p>“numpy&gt;=2.2.5”</p></td>
+<td><p>numerical analysis</p></td>
+</tr>
+<tr class="row-even"><td><p>“scipy&gt;=1.16.3”</p></td>
 <td><p>numerical analysis</p></td>
 </tr>
 <tr class="row-odd"><td><p>“pandas&gt;=2.2.3”</p></td>
-<td></td>
+<td><p>data analysis</p></td>
 </tr>
 <tr class="row-even"><td><p>“docutils&gt;=0.21.2”</p></td>
-<td></td>
+<td><p>reStructuredText processing</p></td>
 </tr>
 <tr class="row-odd"><td><p>“ipython&gt;=8.16.2”</p></td>
-<td></td>
+<td><p>interactive Python shell</p></td>
 </tr>
 <tr class="row-even"><td><p>“ipykernel&gt;=6.28.1”</p></td>
-<td></td>
+<td><p>Jupyter kernel for Python</p></td>
 </tr>
 <tr class="row-odd"><td><p>“reportlab&gt;=4.4.0”</p></td>
-<td></td>
+<td><p>PDF generation without LaTeX</p></td>
 </tr>
 <tr class="row-even"><td><p>“rst2pdf&gt;=0.103.1”</p></td>
-<td></td>
+<td><p>PDF generation without LaTeX</p></td>
 </tr>
 <tr class="row-odd"><td><p>“pypdf&gt;=1.0.3”</p></td>
-<td></td>
+<td><p>PDF manipulation</p></td>
 </tr>
 <tr class="row-even"><td><p>“Sphinx&gt;=8.2.3”</p></td>
-<td></td>
+<td><p>HTML generation</p></td>
 </tr>
 <tr class="row-odd"><td><p>“pydata-sphinx-theme&gt;=0.16.1”</p></td>
-<td></td>
+<td><p>HTML generation</p></td>
 </tr>
 <tr class="row-even"><td><p>“sphinx-copybutton&gt;=0.5.2”</p></td>
-<td></td>
+<td><p>HTML generation</p></td>
 </tr>
 <tr class="row-odd"><td><p>“sphinx_design&gt;=0.6.1”</p></td>
-<td></td>
+<td><p>HTML generation</p></td>
 </tr>
 <tr class="row-even"><td><p>“sphinx-favicon&gt;=1.0.1”</p></td>
-<td></td>
+<td><p>HTML generation</p></td>
 </tr>
 <tr class="row-odd"><td><p>“sphinx-togglebutton&gt;=0.3.2”</p></td>
-<td></td>
+<td><p>HTML generation</p></td>
 </tr>
 <tr class="row-even"><td><p>“sphinxcontrib-applehelp&gt;=2.0.0”</p></td>
-<td></td>
+<td><p>HTML generation</p></td>
 </tr>
 <tr class="row-odd"><td><p>“sphinxcontrib-devhelp&gt;=2.0.0”</p></td>
-<td></td>
+<td><p>HTML generation</p></td>
 </tr>
 <tr class="row-even"><td><p>“sphinxcontrib-email&gt;=0.3.6”</p></td>
-<td></td>
+<td><p>HTML generation</p></td>
 </tr>
 <tr class="row-odd"><td><p>“sphinxcontrib-htmlhelp&gt;=2.1.0”</p></td>
-<td></td>
+<td><p>HTML generation</p></td>
 </tr>
 <tr class="row-even"><td><p>“sphinxcontrib-jquery&gt;=4.1”</p></td>
-<td></td>
+<td><p>HTML generation</p></td>
 </tr>
 <tr class="row-odd"><td><p>“sphinxcontrib-jsmath&gt;=1.0.1”</p></td>
-<td></td>
+<td><p>HTML generation</p></td>
 </tr>
 <tr class="row-even"><td><p>“sphinxcontrib-qthelp&gt;=2.0.0”</p></td>
-<td></td>
+<td><p>HTML generation</p></td>
 </tr>
 <tr class="row-odd"><td><p>“sphinxcontrib-serializinghtml&gt;=2.0.0”</p></td>
-<td></td>
+<td><p>HTML generation</p></td>
 </tr>
 </tbody>
 </table>
@@ -489,7 +524,7 @@ installing <em>rivt</em> is <a class="reference internal" href="rvB01-install.ht
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>B.1 Install</strong></p>
+        <p class="prev-next-title"><strong>B.1 Installation</strong></p>
       </div>
     </a>
     <a class="right-next"
@@ -520,7 +555,7 @@ installing <em>rivt</em> is <a class="reference internal" href="rvB01-install.ht
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements"><strong>[1]</strong> Requirements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-requirements"><strong>[1t]</strong> Requirements</a></li>
 </ul>
   </nav></div>
 

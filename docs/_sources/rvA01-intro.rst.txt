@@ -1,39 +1,40 @@
 **A.1 Introduction**
 =================================================================
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[1]** Summary
+**[1t]** Motivations
 --------------------------------------------------------------------- 
 
 .. raw:: html
 
     <hr>
 
-*rivt* is an open source software project that simplifies reuse of shared 
-engineering documents. Collaboration reduces repetitive work and
-improves quality. Although a number of document software programs are
-available, reuse and sharing is generally not possible because of limitations 
-in software terms of use and distribution:
+*rivt* is an open source software project that simplifies sharing and reuse of
+engineering documents. These documents are more complex than typical documents.
+They include text, images, tables, calculations, models and computer code
+organized into reports. Because they are read and used in official capacities
+(e.g. permitting) they need to be clear and concise. Because they are written
+in concert with evolving engineering designs they need to be flexible and easy
+to update.
 
-- documents come from many incompatible programs
-- document formats become obsolete and inaccessible
-- frequent software updates are needed
+Although a number of engineering document programs are available, sharing is
+restricted by both software design and terms of use in the following ways:
+
+- documents are written with incompatible programs
+- frequent software updates are needed to maintain document access
 - update costs are high
+- newer document formats become inaccessible without upgrades
 - software is limited to specific platforms
-- version control is limited
+- document version control is limited
 - report generation features are limited
 - collaboration features are limited
 
-The table below summarizes these limitations and compares *rivt* with other
-software programs.
+As an open source project, *rivt* is designed to reduce repetitive work and
+improve document quality through sharing and reuse. The table below summarizes
+and compares limitations between different software programs.
 
 .. rst-class:: center
 
-
-Table 1 - **Limitations Comparison**
+**Software Comparison**
 
 ============ ========= ======== ======== ========= ========= ============= 
 Program      Rep [1]_  Ver [2]_ Txt [3]_ Comp [4]_  CP [5]_   Collab [6]_  
@@ -57,171 +58,205 @@ Jupyter        no       no         no      yes         yes      yes
     .. [6] Collaboration support
 
 
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-
-**[2]** rivt File
+**[2t]** Overview
 --------------------------------------------------------------------- 
 
 .. raw:: html
 
     <hr>
 
-A :term:`rivt file` is a Python plain text file (.py) that imports the 
-:term:`rivtlib` library into the :term:`rv-namespace` and defines an API:
+A :term:`rivt file` publishes a formatted :term:`rivt doc` as a text, PDF or
+HTML file. A *rivt file* is a Python file (.py) that imports the
+:term:`rivtlib` Python package and includes :term:`rivt markup`. A collection
+of *rivt docs* may be collated as a :term:`rivt report`.
+
+*rivt files*, as open source, may be integrated withother programs 
+and collaberatively shared. *rivt* itself is distributed under the 
+`MIT open source license. <https://opensource.org/license/mit>`_ 
+All or parts of a *rivt file* the author chooses to share as *public rivt files* 
+are also shared under an `Open Source license <https://opensource.org/licenses>`_.
+The *MIT license* is the default.
+
+The *rivt API* includes  :ref:`API functions`, :ref:`Markup` and
+:ref:`Files and folders`. The API is designed to be:
+
+- lightweight
+    :term:`rivt markup` is made up of about 3 dozen tags 
+    and commands, and wraps :term:`reStructuredText`.
+
+- flexible 
+    A *rivt file* produces a text, HTML or PDF *doc*. 
+    Multiple *docs* can be organized into a report. 
+
+- extensible 
+    *rivtlib* is written in Python with direct access to thousands of 
+    Python packages.
+
+.. rst-class:: center
+
+**rivt Doc Processing**
+
+.. image:: _static/img/rivtflow2.png
+    :width: 75%
+    :alt: rivt flow chart 
+    :align: center
+
+.. _API functions:
+
+**[3t]** API functions
+--------------------------------------------------------------------- 
+
+.. raw:: html
+
+    <hr>
+
+*rivt* is an acronym taken from the four, primary API functions. 
+
+=============== =============== ===========================================
+API Functions        Name             Purpose
+=============== =============== ===========================================
+rv.R(rS)           **R** un          Run shell commands
+rv.I(rS)           **I** nsert       Insert static resources 
+rv.V(rS)           **V** alues       Calculate values
+rv.T(rS)           **T** ools        Python and markup scripts
+rv.D(rS)           Doc               Publish docs 
+rv.S(rS)           Skip              Skip section (comments and debugging)
+rv.X(rS)           Exit              Exit rivt (debugging)
+=============== =============== ===========================================
+
+Most of a docs' content is written using the *Insert* (rv.I) and *Value* (rv.v)
+API's.
+
+.. raw:: html
+
+    <b>Content Functions</b>
+    <ol style="border: 2px; 
+            border-color: #49b2c3; 
+            border-style: solid; 
+            padding: 2em;
+            margin: 2em">
+        <li>The <b>Run</b> executes shell commands.</li>
+        <li>The <b>Insert</b> adds static table, image, equation and text content.</li>
+        <li>The <b> Values</b> evaluates equations and functions.</li>
+        <li>The <b>Tools</b> runs reStructuredText, HTML, LaTeX and Python scripts.</li>
+    </ol>
+
+    <b>Publish Function</b>
+    <ol style="border: 2px; 
+            border-color: #49b2c3; 
+            border-style: solid; 
+            padding: 2em;
+            margin: 2em">
+        <li>The <b>Doc</b> specifies the <i>doc</i> type and style.</li>
+    </ol>
+
+    <b>Interactive Processing Functions</b>
+    <ol style="border: 2px; 
+            border-color: #49b2c3; 
+            border-style: solid; 
+            padding: 2em;
+            margin: 2em">
+        <li>The <b>Skip</b> can be used for interactive debugging and comments.</li>
+        <li>The <b>Exit</b> can be used for interactive debugging.</li>
+
+    </ol>
+
+When interactive IDEs like *VSCode* or *Spyder* are used to edit and run *rivt
+files*, API functions can be processed spearately as cells (similar to 
+*Jupyter Notebooks*) using the standard prefix notation:
 
 .. code-block:: python
 
-    import rivtlib.rvapi as rv
+    # %% optional label
 
+An optional label is used for built in IDE bookmarking functions. 
+Refer to :doc:`rvB03-vscode` for further details.
 
-Each *rivt file* outputs a formatted rivt :term:`doc` file as a text, PDF or
-HTML document. Reports are organized assemblies of *docs*.
+Each API function takes a single :term:`rivt string` argument (rS) as input,
+and outputs formatted text or restructuredText that in turn is processed 
+into a text, HTML or PDF :term:`doc`. The *rivt string* is written 
+in *rivt markup*.
 
-.. raw:: html
+.. _Markup:
 
-    <p id="api">&lt;i&gt;</p>
-
-The *rivt API* is designed to simplify document organization and publishing
-by implementing a flexible :term:`rivt markup` language and standard
-:ref:`folder structure <top-folders>`. It is designed to combine text, 
-tables, diagrams, models and calculations that are typically part of engineering
-documents.
-
-**[3]** API 
---------------------------------------------------------------------- 
-
-.. raw:: html
-
-    <hr>
-
-*rivtlib* includes 8 API functions that may be run as a script or interactively
-as notebook cells in *VSCode* or other *IDE*.
-
-The four content functions (**R I V T**) output formatted utf-8 text to the
-terminal and generate formatted *doc* content. 
-
-    The *Run API* executes shell commands. 
-    
-    The *Insert API* adds static table, image, equation and text content. 
-
-    The *Value API* evaluates equations and functions. 
-
-    The *Tool API* imports HTML, LaTeX, and Python scripts.
-
-The three processing functions (**D S X**) are related to processing and
-output. The *Doc* API specifies settings for publishing formatted :term:`docs`. 
-The *Skip* and *Exit* functions are used for interactive editing and debugging.
-
-=============== =============== ===========================================
-API Function        Name             Purpose
-=============== =============== ===========================================
-rv.R(rS)           Run               Run shell commands
-rv.I(rS)           Insert            Insert static resources 
-rv.V(rS)           Value             Calculate values
-rv.T(rS)           Tool              Import Python and Markup functions
-rv.D(rS)           Doc               Publish docs 
-rv.S(rS)           Skip              Skip section
-rv.X(rS)           Exit              Exit rivt 
-=============== =============== ===========================================
-
-
-Each function takes a single *rivt string* (triple quoted string) argument.
-
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[4]** rivt String
+**[4t]** Markup Overview
 ------------------------------------------------------------------------ 
 
 .. raw:: html
 
     <hr>
 
-An API function starts in the first column and takes a single 
-:term:`rivt string` (rS) argument. The first line of a *rivt string* is a header
-that specifies section labeling and processing. The :term:`header` is followed 
-byvthe section text, indented four spaces for legibility and section folding.
+An API function starts in the first column and takes a triple quoted
+:term:`rivt string` (rS) argument. The first line of a *rivt string* is a
+:term:`header substring`, followed by a :term:`content substring` indented 4
+spaces for improved readability and section folding.
+
+The *header substring* specifies the section title and other
+processing parameters. The content substring includes 
+:term:`rivt markup` and other arbitrary text. For further details 
+see :doc:`here <rvC01-markup>`.
 
 .. code-block:: python
 
-    rv._("""Header
+    rv._("""Section Label | parameters
 
-        section text
-        ...
+         Content text that is 
+         indented four spaces.
+        
         ...
         
         """)
 
-Section text includes :term:`rivt markup` - a plain text language that
-generates *doc* files formatted as text, HTML or PDF. *rivt markup* includes
-:term:`line tags`, :term:`block tags` and :term:`commands` summarized 
-:doc:`here. <rvC07-quick>`  See :doc:`Markup</rvC01-markup>` for further 
-details. 
+.. _Files and folders:
 
-
-.. toctree::
-    :maxdepth: 1
-    :hidden:
-
-    rvA02-terms.rst
-    rvA03-faq.rst
-    rvA04-docex.rst
-
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[5]**  Report Folders
--------------------------------
+**[4t]** Folder/Files overiew
+--------------------------------------------------------------------- 
 
 .. raw:: html
 
     <hr>
 
-Reports are organized under a single root report folder with the prefix
-*rivt-*. *rivt files* are stored in the root folder and *rivt markup* file paths
-are relative to the root.  Resource files are stored in four primary subfolders:
+A :term:`rivt file` is a Python plain text file ( *.py* ) that includes *rivt
+markup* and imports the :term:`rivtlib` package and API into the *rv*
+:term:`namespace`:
 
-*public* 
-    Includes *rivt files* written by *rivtlib* intended for upload to 
-    a public repository.
+.. code-block:: python
 
-*publish*
-    Includes formatted *docs* and *reports* written by *rivtlib*.
+    import rivtlib.rvapi as rv
 
-*src*
-    Includes author provided content, style and generating files for *docs* 
-    and *reports*.
+*rivt files* are stored in a root folder designated with the prefix *rivt-*.
+Each *rivt file* and corresponding *rivt doc* has a prefix that is used to
+organize the report. The  prefix has the form
 
-*stored*
-   Includes output files written by *rivtlib* including *logs*, *values*, 
-   *hidden*, and *metadata*.
+.. code-block::
+
+    rvANN-filename.py
+
+where A is an alpha-numeric character used for organizing report divisions, and
+NN is a two digit number used to organize sub-divisions. The file name is used
+as the *doc* title unless overridden in *rv.D*. Use underscores or hyphens
+rather than spaces to seprate words in the file name. They are replaced with
+spaces when a *doc* title is extracted.
 
 .. _top-folders:
 
-**Folder Key**
-
 .. raw:: html
+    
+    <b>Folder Key</b>
+    <ol style="border: 2px; 
+            border-color: #49b2c3; 
+            border-style: solid; 
+            padding: 2em;
+            margin: 2em">
+        <li> Required names or prefixes are shown in brackets [ ].</li>
+        <li> Required folders start with a capital letter. </li>
+        <li> Folders that contain author provided files are marked with a 
+        single vertical bar ( | ).</li>
+        <li> Folders that contain <i>rivtlib</i> generated files are 
+            marked with a double vertical bar</li>
+    </ol>
 
-    <p style="border-width:2px; border-style:solid; 
-    border-color:#49b2c3;padding: 1em;">
-
-    Required names or prefixes are shown in brackets [ ]. <br>
-    <br>
-    Folders and subfolders that contain author generated files 
-    are marked with a single vertical bar ( | ).<br>  
-    <br>
-    Folders and subfolders that contain *rivtlib* generated files are 
-    marked with double vertical bars ( || ).</p>
-
-
-**Top Level Folders**
+**Primary Folders**
 
 .. code-block:: bash
 
@@ -233,43 +268,91 @@ are relative to the root.  Resource files are stored in four primary subfolders:
 
         ...
 
-        ├── [public]/                   || public rivt files 
-        ├── [publish]/                  || report and doc files
-        ├── [src]/                      |  source files 
-        ├── [stored]/                   || stored rivt files
+        ├── [Public]/                   || public rivt files 
+        ├── [Publish]/                  || doc and report files
+        ├── [Src]/                      |  source files provided by authors
+        ├── [Stored]/                   || stored files written by rivtlib
         └── README.txt                  || searchable text report 
 
-An example of a complete folder structure is :ref:`here <report-folders>`.
 
+The four primary rivt folders are:
 
-.. raw:: html
+*Public*
+    Stores public *rivt files* generated by *rvitlib*. File content intended for 
+    sharing is defined by *section headers*. Public *rivt files* 
+    are identified by a hyphen after  the *rv* prefix e.g. *rv-101-filename1*. 
+    
+*Publish*
+    Stores *docs* and *reports* generated by *rvitlib*
+    
+*Src*
+    Stores images, data, code and text provided by the author.
 
-    <p id="api">&lt;i&gt;</p>
+*Stored*
+    Stores files generated by *rvitlib*. Files include stored
+    sections identified in headers, api log files and processing log files. Files
+    may be attached to a report.
 
-**[5]** Metadata
--------------------
+The complete folder structure with subfolders is shown :ref:`here <report folders>`.
+
+.. _Reports and single docs:
+
+**[5t]** Doc/report overview
+-----------------------------------------------------------------------
 
 .. raw:: html
 
     <hr>
 
-*Metadata* is specified before any API functions are called and uses standard
-Python dictionaries, lists and strings. It is specified outside the *rivtlib*
-API functions and provides author information and global file path handling. 
-See :doc:`here <rvC01-markup>` for further details.
-    
-=================== ==========================================================
-    Variable                        Description
-=================== ==========================================================
-:term:`rv_authD`     specifies author information
-:term:`rv_forknD`    specifies author fork information - n is a number
-:term:`rv_localB`    true; false [default] - resource files are local
-=================== ==========================================================
+Each :term:`rivt file` outputs a corresponding :term:`doc` in the 
+format specified in *rv.D*. A doc number has the form:
 
-*rv_authD* specifies the author, version, email, repository and license
-information and lists the forks. *rv_forknD* specifies data for the forked
-file. The *rv_authD* is always included.
+.. code-block:: text
 
-*rv_localB* overrides the default report structure and specifies that all
-resource files are read from and written to the *rivt file* folder instead of
-*rivt folders*.  It is intended for simple, *single docs*.
+    rvAnn-filename.py
+
+where rv is a required prefix, A is an alphanumeric character and nn are two
+digit non-negative integers.  
+
+A *rivt report* is organized using the rivt *doc numbers*. If the *rivt file*
+names are:
+
+.. code-block:: bash
+
+    rvA01-filename.py
+    rv105-filename.py
+    rv212-filename.py  
+
+the *report numbers* would be: 
+
+- A.1 (division A, subdivision 1)
+- 1.5 (division 1, subdivision 5)
+- 2.12 (division 2, subdivision 12)
+
+Note that leading zeroes are dropped.  *Docs* are sorted alpha-numerically into
+divisions and subdivisions in the *report*.
+
+*Docs* are assembled from sources and published using a specified folder
+structure. The *singledocB* variable overrides the default report structure and
+specifies that resource files and *docs* are read from and written to the *rivt
+file* folder. It is intended for simpler, standalone *docs* with more limited
+format control. The comment variable is specified immediately after the import
+statement:
+
+.. code:: python
+
+    import rivtlib.rvapi as rv
+
+    # rv singledocB = True
+
+The default setting is False.
+
+:doc:`here <rvD01-documents>`.
+
+.. toctree::
+    :maxdepth: 1
+    :hidden:
+
+    rvA02-terms.rst
+    rvA03-faq.rst
+

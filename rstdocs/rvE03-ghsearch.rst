@@ -1,11 +1,7 @@
 **E.3 GitHub Search**
 =========================
 
-.. raw:: html
-
-    <p id="api">&lt;t&gt;</p>
-
-**[1]** GitHub Global Search
+**[1t]** GitHub Global Search
 --------------------------------
 
 .. raw:: html
@@ -53,11 +49,7 @@ the `GitHub interface <https://github.com/search>`_.
 
     <br>
 
-.. raw:: html
-
-    <p id="api">&lt;t&gt;</p>
-
-**[2]** GitHub Organization Search
+**[2t]** GitHub Organization Search
 ---------------------------------------
 
 .. raw:: html

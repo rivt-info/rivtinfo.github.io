@@ -60,7 +60,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="D.2 Files" href="rvD02-files.html" />
-    <link rel="prev" title="C.8 Example" href="rvC08-example1.html" />
+    <link rel="prev" title="C.9 Doc - rv.D" href="rvC09-markup-d.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -154,7 +154,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvB01-install.html">
-    B.1 Install
+    B.1 Installation
   </a>
 </li>
 
@@ -176,6 +176,13 @@
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvE01-collab.html">
     E.1 Collaboration
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvF01-quickref.html">
+    F.1 Quick Ref
   </a>
 </li>
 
@@ -261,7 +268,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvB01-install.html">
-    B.1 Install
+    B.1 Installation
   </a>
 </li>
 
@@ -283,6 +290,13 @@
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvE01-collab.html">
     E.1 Collaboration
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvF01-quickref.html">
+    F.1 Quick Ref
   </a>
 </li>
 
@@ -316,7 +330,8 @@
 <li class="toctree-l1"><a class="reference internal" href="rvD02-files.html"><strong>D.2 Files</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvD03-folders.html"><strong>D.3 Folders</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvD04-setting.html"><strong>D.4 Configuration Files</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvD05-reportex.html"><strong>D.5 Example</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvD05-docex.html"><strong>D.4 Example</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvD06-reportex.html"><strong>D.5 Example</strong></a></li>
 </ul>
 </div>
 </nav></div>
@@ -376,10 +391,17 @@
                   
   <section id="d-1-docs">
 <h1><strong>D.1 Docs</strong><a class="headerlink" href="#d-1-docs" title="Link to this heading">#</a></h1>
-<p id="api">&lt;i&gt;</p><section id="rivt-files">
-<h2><strong>[1]</strong> rivt Files<a class="headerlink" href="#rivt-files" title="Link to this heading">#</a></h2>
-<hr><p>Each <a class="reference internal" href="rvA02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> outputs a corresponding formatted <a class="reference internal" href="rvA02-terms.html#term-doc"><span class="xref std std-term">doc</span></a>. A <em>rivt
-report</em> is organized using the rivt <em>doc numbers</em>. If the <em>rivt file</em> names are:</p>
+<section id="t-rivt-files">
+<h2><strong>[1t]</strong> rivt Files<a class="headerlink" href="#t-rivt-files" title="Link to this heading">#</a></h2>
+<hr><p>Each <a class="reference internal" href="rvA02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> outputs a corresponding formatted <a class="reference internal" href="rvA02-terms.html#term-doc"><span class="xref std std-term">doc</span></a>. A doc
+number has the form</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rvAnn-filename.py
+</pre></div>
+</div>
+<p>where rv is a required prefix, A is an alphanumeric character and nn are two
+digit non-negative integers.</p>
+<p>A <em>rivt report</em> is organized using the rivt <em>doc numbers</em>. If the <em>rivt file</em>
+names are:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rvA01-filename.py
 rv105-filename.py
 rv212-filename.py
@@ -393,11 +415,11 @@ rv212-filename.py
 </ul>
 <p>Note that leading zeroes are dropped.  <em>Docs</em> are sorted alpha-numerically into
 divisions and subdivisions in the <em>report</em>.</p>
-<p id="api">&lt;i&gt;</p></section>
-<section id="docs">
-<h2><strong>[2]</strong> Docs<a class="headerlink" href="#docs" title="Link to this heading">#</a></h2>
+</section>
+<section id="t-docs">
+<h2><strong>[2t]</strong> Docs<a class="headerlink" href="#t-docs" title="Link to this heading">#</a></h2>
 <hr><p>Each <a class="reference internal" href="rvA02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> outputs a corresponding formatted <a class="reference internal" href="rvA02-terms.html#term-doc"><span class="xref std std-term">doc</span></a> written to
-the <em>publish</em> folder unless it is a <a class="reference internal" href="rvA02-terms.html#term-stand-alone-doc"><span class="xref std std-term">stand-alone doc</span></a>.</p>
+the <em>publish</em> folder unless it is a <a class="reference internal" href="rvA02-terms.html#term-single-doc"><span class="xref std std-term">single doc</span></a>.</p>
 <p><em>Docs</em> may be text, HTML or PDF. PDF <em>doc</em> files are produced by two different
 libraries, referred to as <em>pdf</em> and <em>pdftex</em>. A <em>pdf</em> doc is formatted using
 the <em>rst2pdf</em> library, a subset of the larger <em>ReportLab</em> library. It is the
@@ -406,21 +428,19 @@ into <em>rivt</em>.</p>
 <p>A <em>pdftex doc</em> requires separate installation of the much larger <em>texlive</em>
 LaTeX library (approx. 3GB). Its advantage is additional control over <em>doc</em>
 formatting and appearance.</p>
-<p id="api">&lt;i&gt;</p></section>
-<section id="stand-alone-docs">
-<h2><strong>[3]</strong> Stand-alone Docs<a class="headerlink" href="#stand-alone-docs" title="Link to this heading">#</a></h2>
+</section>
+<section id="t-single-docs">
+<h2><strong>[3t]</strong> Single docs<a class="headerlink" href="#t-single-docs" title="Link to this heading">#</a></h2>
 <hr><p>A document that will not be part of a <a class="reference internal" href="rvD02-files.html#report-describe"><span class="std std-ref">report</span></a> may use
-the rivt file folder for reading and writing files, without referencing
-the <em>rivt report folders</em>. A stand-alone <em>doc</em> is published using the
-following settings:</p>
-<ol class="arabic simple">
-<li><p>The <em>rv_local</em> variable is set to “True” in the <em>Meta API</em>.</p></li>
-<li><p>Any <em>COMMAND</em> relative path is just the file name.</p></li>
-</ol>
-<p>A <em>rivt file</em> may be converted to a stand-alone <em>doc</em> by making those two
-adjustments.</p>
-<p>The text, PDF and HTML <em>docs</em> will be written to the local file folder using
-simple style settings built into <em>rivtlib</em>. Stand-alone <em>docs</em> require less
+the local rivt file folder for reading and writing files, without referencing
+the <em>rivt report folders</em>. A single <em>doc</em> is formatted by setting the
+<em>rv_local</em> variable in a comment, immediately following the <em>rivtlib</em> import
+statement.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># rv singledoc=True</span>
+</pre></div>
+</div>
+<p>The text, PDF or HTML <em>doc</em> will be written to the local file folder using
+simple style settings built into <em>rivtlib</em>. <em>Single docs</em> require less
 setup but also offer less formatting control.</p>
 <div class="toctree-wrapper compound">
 </div>
@@ -438,12 +458,12 @@ setup but also offer less formatting control.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rvC08-example1.html"
+       href="rvC09-markup-d.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>C.8 Example</strong></p>
+        <p class="prev-next-title"><strong>C.9 Doc - rv.D</strong></p>
       </div>
     </a>
     <a class="right-next"
@@ -474,9 +494,9 @@ setup but also offer less formatting control.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-files"><strong>[1]</strong> rivt Files</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docs"><strong>[2]</strong> Docs</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stand-alone-docs"><strong>[3]</strong> Stand-alone Docs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rivt-files"><strong>[1t]</strong> rivt Files</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-docs"><strong>[2t]</strong> Docs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-single-docs"><strong>[3t]</strong> Single docs</a></li>
 </ul>
   </nav></div>
 

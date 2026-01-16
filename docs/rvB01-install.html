@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
-    <title>B.1 Install &#8212; rivt</title>
+    <title>B.1 Installation &#8212; rivt</title>
   
   
   
@@ -59,8 +59,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'rvB01-install';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="B.2 Python Dependencies" href="rvB02-python.html" />
-    <link rel="prev" title="A.4 Example" href="rvA04-docex.html" />
+    <link rel="next" title="B.2 Dependencies" href="rvB02-python.html" />
+    <link rel="prev" title="A.3 FAQ" href="rvA03-faq.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -154,7 +154,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="#">
-    B.1 Install
+    B.1 Installation
   </a>
 </li>
 
@@ -176,6 +176,13 @@
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvE01-collab.html">
     E.1 Collaboration
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvF01-quickref.html">
+    F.1 Quick Ref
   </a>
 </li>
 
@@ -261,7 +268,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="#">
-    B.1 Install
+    B.1 Installation
   </a>
 </li>
 
@@ -283,6 +290,13 @@
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvE01-collab.html">
     E.1 Collaboration
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvF01-quickref.html">
+    F.1 Quick Ref
   </a>
 </li>
 
@@ -313,8 +327,11 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="rvB02-python.html"><strong>B.2  Python Dependencies</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvB02-python.html"><strong>B.2 Dependencies</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvB03-vscode.html"><strong>B.3 VSCode Settings</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvB04-git.html"><strong>B.4 Git</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvB05-texlive.html"><strong>B.5 texlive</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvB06-freecad.html"><strong>B.6 FreeCAD</strong></a></li>
 </ul>
 </div>
 </nav></div>
@@ -355,7 +372,7 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>B.1 Install</strong></span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>B.1 Installation</strong></span></li>
   </ul>
 </nav>
 </div>
@@ -372,116 +389,81 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="b-1-install">
-<h1><strong>B.1 Install</strong><a class="headerlink" href="#b-1-install" title="Link to this heading">#</a></h1>
-<p id="api">&lt;i&gt;</p><section id="rivt-project">
-<h2><strong>[1]</strong> rivt Project<a class="headerlink" href="#rivt-project" title="Link to this heading">#</a></h2>
+  <section id="b-1-installation">
+<h1><strong>B.1 Installation</strong><a class="headerlink" href="#b-1-installation" title="Link to this heading">#</a></h1>
+<section id="t-rivt-project">
+<h2><strong>[1t]</strong> rivt Project<a class="headerlink" href="#t-rivt-project" title="Link to this heading">#</a></h2>
 <hr><p><em>rivt</em> is an open source Python project that includes <a class="reference internal" href="rvA02-terms.html#term-rivtlib"><span class="xref std std-term">rivtlib</span></a> and
-approximately two dozen <a class="reference internal" href="rvB02-python.html"><span class="doc">Python packages</span></a>. When <em>rivt</em> is
-installed <a class="reference internal" href="rvA02-terms.html#term-docs"><span class="xref std std-term">docs</span></a> and <a class="reference internal" href="rvA02-terms.html#term-reports"><span class="xref std std-term">reports</span></a> may be edited and published using
-a text editor.</p>
-<p><em>rivt</em> is designed to work with other open source programs and tools in an
-integrated framework that adds extends editing and analysis capabilities. There
-are four installation methods for <em>rivt</em> and its framework, each with varying
-degrees of system and program integration.</p>
+approximately two dozen additional <a class="reference internal" href="rvB02-python.html"><span class="doc">Python packages</span></a>. The
+IDE <a class="reference external" href="https://pyzo.org/">Pyzo</a> is installed with <em>rivt</em> as an effective
+lightweight program for editing and publishing <em>rivt docs</em>.</p>
+<p><em>rivt</em> is designed to wrork in an integrated framework with other open source
+programs. In the installation methods described below some install <em>rivt</em>
+and some install a <em>rivt framework</em>.</p>
 <aside class="topic">
-<p class="topic-title">1. <em>rivtuv</em></p>
+<p class="topic-title">rivt-uv</p>
 <p><em>uv</em> is a <a class="reference external" href="https://docs.astral.sh/uv/">Python package manager</a> and
 installer that simplifies installing isolated Python environments. See
 <a class="reference internal" href="#rivt-uv"><span class="std std-ref">rivt-uv</span></a> for procedure.</p>
 </aside>
 <hr><aside class="topic">
-<p class="topic-title">2. <em>system rivt</em></p>
+<p class="topic-title">rivt-system</p>
 <p><em>rivt</em> may be installed at the system level using standalone installers.
-See <a class="reference internal" href="#rivt-system"><span class="std std-ref">rivt-system</span></a> for procedure.</p>
+See <a class="reference internal" href="#rivt-system-install"><span class="std std-ref">[3t] install rivt-system</span></a> for procedure.</p>
 </aside>
 <hr><aside class="topic">
-<p class="topic-title">3. <em>rivt framework</em></p>
-<p>The <em>rivt framework</em> includes <em>rivt</em> and additional integrated programs and
+<p class="topic-title">rivt-zip</p>
+<p><em>rivt-zip</em> installs a partial <em>rivt-framework</em>. It is is a single folder,
+portable, isolated version of <em>rivt</em> integrated with <em>VSCode</em>.</p>
+<p>See <a class="reference internal" href="#rivt-zip"><span class="std std-ref">rivt-zip</span></a> for procedure.</p>
+</aside>
+<hr><aside class="topic">
+<p class="topic-title">rivt-framework</p>
+<p><em>rivt-framework</em> includes <em>rivt</em> and additional integrated programs and
 tools with their own installers. It includes important productivity tools
 for editing, document control and diagramming.</p>
 <ol class="arabic simple">
 <li><p><em>VSCode and extensions</em> for editing and collaboration.</p></li>
 <li><p><em>Git and GitHub</em> for version control and document sharing.</p></li>
 <li><p><em>LaTeX</em> for precise typesetting.</p></li>
-<li><p><em>QCAD</em> for diagramming.</p></li>
+<li><p><em>FreeCAD</em> for diagramming and scripting.</p></li>
 </ol>
 <p>See <a class="reference internal" href="#rivt-framework"><span class="std std-ref">rivt-framework</span></a> for procedure.</p>
 </aside>
-<hr><aside class="topic">
-<p class="topic-title">4. <em>rivtzip</em></p>
-<p><em>rivtzip</em> is a single folder, portable and isolated version of <em>rivt</em> that
-is integrated with <em>VSCode</em>.</p>
-<p>See <a class="reference internal" href="#rivt-zip"><span class="std std-ref">rivt-zip</span></a> for procedure.</p>
-</aside>
-<p id="api">&lt;i&gt;</p></section>
-<section id="install-rivtuv">
-<span id="rivt-uv"></span><h2><strong>[2]</strong> Install <em>rivtuv</em><a class="headerlink" href="#install-rivtuv" title="Link to this heading">#</a></h2>
-<hr><p>This <em>rivt-uv</em> installation method is recommended for most users. The procedure
-for Windows is shown below. Other OS installs are similar.</p>
-<p><strong>Step 1. Install uv</strong></p>
-<p>Install <a class="reference external" href="https://docs.astral.sh/uv/getting-started/installation/#pypi">uv</a>.
-The recommended method for installing <em>uv</em> on Windows is:</p>
+</section>
+<section id="t-install-rivt-uv">
+<span id="rivt-uv"></span><h2><strong>[2t]</strong> Install <strong>rivt-uv</strong><a class="headerlink" href="#t-install-rivt-uv" title="Link to this heading">#</a></h2>
+<hr><p>The <em>rivtlib</em> package is not uploaded to PyPI yet. The <em>rivtuv</em> installation
+method is recommended for most users.</p>
+<aside class="topic">
+<p class="topic-title">Step 1. Install uv</p>
+<p>Install <a class="reference external" href="https://docs.astral.sh/uv/getting-started/installation/#pypi">uv</a>.</p>
+<p>The recommended method for installing <em>uv</em> is:</p>
+<p>Windows from the command line:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>winget<span class="w"> </span>install<span class="w"> </span>--id<span class="o">=</span>astral-sh.uv<span class="w">  </span>-e
 </pre></div>
 </div>
-<p><strong>Step 2. Create rivt environment and install rivtlib</strong></p>
-<p>After installing <em>uv</em>, run the following commands to set up and activate an
-isolated <em>rivt</em> environment in the users <em>Home</em> directory (omit the explanatory
-REM lines). The commands may be downloaded and run from the command file
-<a class="reference download internal" download="" href="_downloads/3883216e7f8a8167bfab705f585bda9c/rivtuv.cmd"><code class="xref download docutils literal notranslate"><span class="pre">rivtuv.cmd</span></code></a>.</p>
-<p>They execute the following steps:</p>
-<ol class="arabic simple">
-<li><p>name the <em>uv</em> environment in the first SET command</p></li>
-<li><p>switch to the %HOMEPATH% (User) folder</p></li>
-<li><p>remove any prior existing environment, cache and folders.</p></li>
-<li><p>download the rivt install file.</p></li>
-<li><p>create a new environment and activates it.</p></li>
-<li><p>install <em>rivt</em> in the <em>uv</em> environment.</p></li>
-<li><p>create an <em>example1</em> folder</p></li>
-<li><p>download an example  <em>rivt file</em> and <em>sources</em> into the <em>example1</em> folder</p></li>
-</ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span>@echo<span class="w"> </span>on
-<span class="linenos"> 2</span>REM<span class="w"> </span>Windows<span class="w"> </span><span class="m">10</span><span class="w"> </span>and<span class="w"> </span>above<span class="w"> </span>-<span class="w"> </span>cmd<span class="w"> </span>file
-<span class="linenos"> 3</span>REM<span class="w"> </span><span class="o">(</span><span class="m">1</span><span class="o">)</span><span class="w"> </span>clear<span class="w"> </span>any<span class="w"> </span>existing<span class="w"> </span>project,<span class="w"> </span><span class="o">(</span><span class="m">2</span><span class="o">)</span><span class="w"> </span>create<span class="w"> </span>new<span class="w"> </span>venv
-<span class="linenos"> 4</span>REM<span class="w"> </span><span class="o">(</span><span class="m">3</span><span class="o">)</span><span class="w"> </span>install<span class="w"> </span>rivt,<span class="w"> </span><span class="o">(</span><span class="m">4</span><span class="o">)</span><span class="w"> </span>download<span class="w"> </span>example
-<span class="linenos"> 5</span>REM<span class="w"> </span><span class="nb">set</span><span class="w"> </span>rivt<span class="w"> </span>folder
-<span class="linenos"> 6</span>SET<span class="w"> </span><span class="nv">rvfolder</span><span class="o">=</span>rivt-doc1
-<span class="linenos"> 7</span>REM<span class="w"> </span>go<span class="w"> </span>to<span class="w"> </span>home<span class="w"> </span>directory
-<span class="linenos"> 8</span><span class="nb">cd</span><span class="w"> </span>%HOMEPATH%
-<span class="linenos"> 9</span>REM<span class="w"> </span>double<span class="w"> </span>check<span class="w"> </span>deactivation
-<span class="linenos">10</span>uv<span class="w"> </span>deactivate
-<span class="linenos">11</span>REM<span class="w"> </span>double<span class="w"> </span>check<span class="w"> </span>that<span class="w"> </span>old<span class="w"> </span>project<span class="w"> </span>is<span class="w"> </span>deleted
-<span class="linenos">12</span>rmdir<span class="w"> </span>/s<span class="w"> </span>/q<span class="w"> </span>%rvfolder%
-<span class="linenos">13</span>REM<span class="w"> </span><span class="o">(</span><span class="m">1</span><span class="o">)</span><span class="w"> </span>clean<span class="w"> </span>cache
-<span class="linenos">14</span>uv<span class="w"> </span>cache<span class="w"> </span>clean
-<span class="linenos">15</span>REM<span class="w"> </span><span class="nb">set</span><span class="w"> </span>up<span class="w"> </span>venv
-<span class="linenos">16</span>mkdir<span class="w"> </span>%rvfolder%
-<span class="linenos">17</span>REM<span class="w"> </span>change<span class="w"> </span>directory
-<span class="linenos">18</span><span class="nb">cd</span><span class="w"> </span>%rvfolder%
-<span class="linenos">19</span>REM<span class="w"> </span><span class="o">(</span><span class="m">2</span><span class="o">)</span><span class="w"> </span>make<span class="w"> </span>venv
-<span class="linenos">20</span>uv<span class="w"> </span>venv
-<span class="linenos">21</span>REM<span class="w"> </span>activate<span class="w"> </span>venv
-<span class="linenos">22</span>call<span class="w"> </span>.venv/scripts/activate
-<span class="linenos">23</span>REM<span class="w"> </span><span class="o">(</span><span class="m">3</span><span class="o">)</span><span class="w"> </span>install<span class="w"> </span>rivt<span class="w"> </span>from<span class="w"> </span>GitHub
-<span class="linenos">24</span>uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>git+https://github.com/rivtlib-dev/rivtlib.git@main
-<span class="linenos">25</span>REM<span class="w"> </span><span class="o">(</span><span class="m">4</span><span class="o">)</span><span class="w"> </span>download<span class="w"> </span>example<span class="w"> </span>project<span class="w"> </span>into<span class="w"> </span>new<span class="w"> </span>folder
-<span class="linenos">26</span>mkdir<span class="w"> </span>example1
-<span class="linenos">27</span><span class="nb">cd</span><span class="w"> </span>example1
-<span class="linenos">28</span>curl<span class="w"> </span>https://raw.githubusercontent.com/rivt-info/rivt-simple-doc/refs/heads/main/rv000-simple-doc.py<span class="w"> </span>-O
-<span class="linenos">29</span>curl<span class="w"> </span>https://github.com/rivt-info/rivt-simple-doc/blob/main/beam.png?raw<span class="o">=</span><span class="nb">true</span><span class="w"> </span>-O<span class="w"> </span>-L
-<span class="linenos">30</span>curl<span class="w"> </span>https://github.com/rivt-info/rivt-simple-doc/blob/main/beam1-v.csv?raw<span class="o">=</span><span class="nb">true</span><span class="w"> </span>-O<span class="w"> </span>-L
-<span class="linenos">31</span>REM<span class="w"> </span>run<span class="w"> </span>example<span class="w"> </span><span class="o">(</span>no<span class="w"> </span>quotes<span class="o">)</span><span class="w"> </span><span class="s2">&quot;python rv000-simple-doc.py&quot;</span>
-<span class="linenos">32</span>cmd<span class="w"> </span>/k
+<p>macOS and Linux from the command line:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-LsSf<span class="w"> </span>https://astral.sh/uv/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>sh
 </pre></div>
 </div>
-<p>Within the <em>example1</em> folder run the rivt file:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>rv000-simple-doc.py
-</pre></div>
-</div>
-<p id="api">&lt;i&gt;</p></section>
-<section id="install-system-rivt">
-<span id="rivt-system"></span><h2><strong>[3]</strong> Install <em>system rivt</em><a class="headerlink" href="#install-system-rivt" title="Link to this heading">#</a></h2>
+</aside>
+<aside class="topic">
+<p class="topic-title">Step 2. Create an isolated rivt environment</p>
+<p>After installing <em>uv</em>, download and run the following command or shell file.</p>
+<p>Windows:  <a class="reference download internal" download="" href="_downloads/3883216e7f8a8167bfab705f585bda9c/rivtuv.cmd"><code class="xref download docutils literal notranslate"><span class="pre">rivtuv.cmd</span></code></a></p>
+<p>OSX and Linux: <a class="reference download internal" download="" href="_downloads/8aea5313b4752f6c507744d1c20b200b/rivtuv.sh"><code class="xref download docutils literal notranslate"><span class="pre">rivtuv.sh</span></code></a></p>
+<p>This installs an isolated <em>rivt</em> environment and example files in the
+xxxx folder in the users <em>Home</em> directory. Additional install script detaild
+can be found <a class="reference external" href="https://github.com/rivt-info/rivtuv-install/edit/main/">here</a>.</p>
+</aside>
+<aside class="topic">
+<p class="topic-title">Step 3. Run example program from Pyzo or command line.</p>
+<p>Some text.</p>
+</aside>
+</section>
+<section id="t-install-rivt-system">
+<span id="rivt-system-install"></span><h2><strong>[3t]</strong> install <em>rivt-system</em><a class="headerlink" href="#t-install-rivt-system" title="Link to this heading">#</a></h2>
 <hr><p><em>rivt</em> may be installed at the system level.</p>
 <ol class="arabic simple">
 <li><p>Install Python using <a class="reference external" href="https://www.python.org/downloads/">Python installers</a></p></li>
@@ -489,33 +471,33 @@ REM lines). The commands may be downloaded and run from the command file
 </ol>
 <p>A list of the dependencies and <em>requirements.txt</em> file is
 <a class="reference internal" href="#"><span class="doc">here</span></a>.</p>
-<p id="api">&lt;i&gt;</p></section>
-<section id="install-rivt-framework">
-<span id="rivt-framework"></span><h2><strong>[4]</strong> Install <em>rivt framework</em><a class="headerlink" href="#install-rivt-framework" title="Link to this heading">#</a></h2>
-<hr><p><em>rivt framework</em> includes installation of the following programs:</p>
+</section>
+<section id="t-install-rivt-zip">
+<span id="rivt-zip"></span><h2><strong>[4t]</strong> Install <em>rivt-zip</em><a class="headerlink" href="#t-install-rivt-zip" title="Link to this heading">#</a></h2>
+<hr><p><em>rivtzip</em> is a portable, single folder version of <em>rivt</em> and <em>VSCode</em>
+including libraries and extensions. It can be downloaded here.</p>
+<p>The advantages of this installation method include:</p>
+<ol class="arabic simple">
+<li><p>No installation steps - just unzip and use.</p></li>
+<li><p>Can be moved anywhere as a unified folder.</p></li>
+<li><p>Ensures compatiblity and integration between libraries.</p></li>
+</ol>
+<p>Disadvantages include:</p>
+<ol class="arabic simple">
+<li><p>The software components cannot be individually updated. (New releases monthly)</p></li>
+<li><p>Integration with other programs and tools may be more difficult.</p></li>
+</ol>
+</section>
+<section id="t-install-rivt-framework">
+<span id="rivt-framework"></span><h2><strong>[5t]</strong> Install <em>rivt-framework</em><a class="headerlink" href="#t-install-rivt-framework" title="Link to this heading">#</a></h2>
+<hr><p>The <em>rivt framework</em> includes installation of the following programs:</p>
 <ol class="arabic simple">
 <li><p><a class="reference external" href="https://code.visualstudio.com/">VSCode</a> and
 <a class="reference external" href="https://marketplace.visualstudio.com/vscode">VSCode extensions</a>.
 <em>rivt</em> extensions and snippets are <a class="reference internal" href="rvB03-vscode.html"><span class="doc">here</span></a>.</p></li>
 <li><p><a class="reference external" href="https://git-scm.com">Git</a> and set up a <a class="reference external" href="hhttps://github.com">GitHub</a></p></li>
 <li><p><a class="reference external" href="https://www.tug.org/texlive/">LaTeX</a></p></li>
-<li><p><a class="reference external" href="https://qcad.io/en/">QCAD</a></p></li>
-</ol>
-<p id="api">&lt;i&gt;</p></section>
-<section id="install-rivt-zip">
-<span id="rivt-zip"></span><h2><strong>[5]</strong> Install <em>rivt.zip</em><a class="headerlink" href="#install-rivt-zip" title="Link to this heading">#</a></h2>
-<hr><p><em>rivt.zip</em> is a portable, single folder version of <em>rivt</em> and <em>VSCode</em>
-including libraries and extensions. It can be downloaded here.</p>
-<p>The advantages of this installation method include:</p>
-<ol class="arabic simple">
-<li><p>No installaion steps - just unzip and use.</p></li>
-<li><p>Can be moved anywhere as a unified folder.</p></li>
-<li><p>Ensures compatiblity and integration between libraries.</p></li>
-</ol>
-<p>Disadvantages include:</p>
-<ol class="arabic simple">
-<li><p>The installled framework cannot be updated. New releases are planned monthly.</p></li>
-<li><p>Integration with other programs can be more difficult.</p></li>
+<li><p><a class="reference external" href="https://www.freecad.org/">FreeCad</a></p></li>
 </ol>
 <div class="toctree-wrapper compound">
 </div>
@@ -533,12 +515,12 @@ including libraries and extensions. It can be downloaded here.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rvA04-docex.html"
+       href="rvA03-faq.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>A.4 Example</strong></p>
+        <p class="prev-next-title"><strong>A.3 FAQ</strong></p>
       </div>
     </a>
     <a class="right-next"
@@ -546,7 +528,7 @@ including libraries and extensions. It can be downloaded here.</p>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>B.2  Python Dependencies</strong></p>
+        <p class="prev-next-title"><strong>B.2 Dependencies</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -569,11 +551,11 @@ including libraries and extensions. It can be downloaded here.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-project"><strong>[1]</strong> rivt Project</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-rivtuv"><strong>[2]</strong> Install <em>rivtuv</em></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-system-rivt"><strong>[3]</strong> Install <em>system rivt</em></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-rivt-framework"><strong>[4]</strong> Install <em>rivt framework</em></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-rivt-zip"><strong>[5]</strong> Install <em>rivt.zip</em></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rivt-project"><strong>[1t]</strong> rivt Project</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-install-rivt-uv"><strong>[2t]</strong> Install <strong>rivt-uv</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-install-rivt-system"><strong>[3t]</strong> install <em>rivt-system</em></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-install-rivt-zip"><strong>[4t]</strong> Install <em>rivt-zip</em></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-install-rivt-framework"><strong>[5t]</strong> Install <em>rivt-framework</em></a></li>
 </ul>
   </nav></div>
 

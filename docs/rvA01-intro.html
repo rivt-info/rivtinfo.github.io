@@ -154,7 +154,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvB01-install.html">
-    B.1 Install
+    B.1 Installation
   </a>
 </li>
 
@@ -176,6 +176,13 @@
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvE01-collab.html">
     E.1 Collaboration
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvF01-quickref.html">
+    F.1 Quick Ref
   </a>
 </li>
 
@@ -261,7 +268,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvB01-install.html">
-    B.1 Install
+    B.1 Installation
   </a>
 </li>
 
@@ -283,6 +290,13 @@
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvE01-collab.html">
     E.1 Collaboration
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvF01-quickref.html">
+    F.1 Quick Ref
   </a>
 </li>
 
@@ -315,7 +329,6 @@
     <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="rvA02-terms.html"><strong>A.2 Terms</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvA03-faq.html"><strong>A.3 FAQ</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvA04-docex.html"><strong>A.4 Example</strong></a></li>
 </ul>
 </div>
 </nav></div>
@@ -375,26 +388,31 @@
                   
   <section id="a-1-introduction">
 <h1><strong>A.1 Introduction</strong><a class="headerlink" href="#a-1-introduction" title="Link to this heading">#</a></h1>
-<p id="api">&lt;i&gt;</p><section id="summary">
-<h2><strong>[1]</strong> Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
-<hr><p><em>rivt</em> is an open source software project that simplifies reuse of shared
-engineering documents. Collaboration reduces repetitive work and
-improves quality. Although a number of document software programs are
-available, reuse and sharing is generally not possible because of limitations
-in software terms of use and distribution:</p>
+<section id="t-motivations">
+<h2><strong>[1t]</strong> Motivations<a class="headerlink" href="#t-motivations" title="Link to this heading">#</a></h2>
+<hr><p><em>rivt</em> is an open source software project that simplifies sharing and reuse of
+engineering documents. These documents are more complex than typical documents.
+They include text, images, tables, calculations, models and computer code
+organized into reports. Because they are read and used in official capacities
+(e.g. permitting) they need to be clear and concise. Because they are written
+in concert with evolving engineering designs they need to be flexible and easy
+to update.</p>
+<p>Although a number of engineering document programs are available, sharing is
+restricted by both software design and terms of use in the following ways:</p>
 <ul class="simple">
-<li><p>documents come from many incompatible programs</p></li>
-<li><p>document formats become obsolete and inaccessible</p></li>
-<li><p>frequent software updates are needed</p></li>
+<li><p>documents are written with incompatible programs</p></li>
+<li><p>frequent software updates are needed to maintain document access</p></li>
 <li><p>update costs are high</p></li>
+<li><p>newer document formats become inaccessible without upgrades</p></li>
 <li><p>software is limited to specific platforms</p></li>
-<li><p>version control is limited</p></li>
+<li><p>document version control is limited</p></li>
 <li><p>report generation features are limited</p></li>
 <li><p>collaboration features are limited</p></li>
 </ul>
-<p>The table below summarizes these limitations and compares <em>rivt</em> with other
-software programs.</p>
-<p class="center">Table 1 - <strong>Limitations Comparison</strong></p>
+<p>As an open source project, <em>rivt</em> is designed to reduce repetitive work and
+improve document quality through sharing and reuse. The table below summarizes
+and compares limitations between different software programs.</p>
+<p class="center"><strong>Software Comparison</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Program</p></th>
@@ -484,60 +502,71 @@ software programs.</p>
 <p>Collaboration support</p>
 </aside>
 </aside>
-<p id="api">&lt;i&gt;</p></section>
-<section id="rivt-file">
-<h2><strong>[2]</strong> rivt File<a class="headerlink" href="#rivt-file" title="Link to this heading">#</a></h2>
-<hr><p>A <a class="reference internal" href="rvA02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> is a Python plain text file (.py) that imports the
-<a class="reference internal" href="rvA02-terms.html#term-rivtlib"><span class="xref std std-term">rivtlib</span></a> library into the <a class="reference internal" href="rvA02-terms.html#term-rv-namespace"><span class="xref std std-term">rv-namespace</span></a> and defines an API:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
-</pre></div>
-</div>
-<p>Each <em>rivt file</em> outputs a formatted rivt <a class="reference internal" href="rvA02-terms.html#term-doc"><span class="xref std std-term">doc</span></a> file as a text, PDF or
-HTML document. Reports are organized assemblies of <em>docs</em>.</p>
-<p id="api">&lt;i&gt;</p><p>The <em>rivt API</em> is designed to simplify document organization and publishing
-by implementing a flexible <a class="reference internal" href="rvA02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> language and standard
-<a class="reference internal" href="#top-folders"><span class="std std-ref">folder structure</span></a>. It is designed to combine text,
-tables, diagrams, models and calculations that are typically part of engineering
-documents.</p>
 </section>
-<section id="api">
-<h2><strong>[3]</strong> API<a class="headerlink" href="#api" title="Link to this heading">#</a></h2>
-<hr><p><em>rivtlib</em> includes 8 API functions that may be run as a script or interactively
-as notebook cells in <em>VSCode</em> or other <em>IDE</em>.</p>
-<p>The four content functions (<strong>R I V T</strong>) output formatted utf-8 text to the
-terminal and generate formatted <em>doc</em> content.</p>
-<blockquote>
-<div><p>The <em>Run API</em> executes shell commands.</p>
-<p>The <em>Insert API</em> adds static table, image, equation and text content.</p>
-<p>The <em>Value API</em> evaluates equations and functions.</p>
-<p>The <em>Tool API</em> imports HTML, LaTeX, and Python scripts.</p>
-</div></blockquote>
-<p>The three processing functions (<strong>D S X</strong>) are related to processing and
-output. The <em>Doc</em> API specifies settings for publishing formatted <a class="reference internal" href="rvA02-terms.html#term-docs"><span class="xref std std-term">docs</span></a>.
-The <em>Skip</em> and <em>Exit</em> functions are used for interactive editing and debugging.</p>
+<section id="t-overview">
+<h2><strong>[2t]</strong> Overview<a class="headerlink" href="#t-overview" title="Link to this heading">#</a></h2>
+<hr><p>A <a class="reference internal" href="rvA02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> publishes a formatted <a class="reference internal" href="rvA02-terms.html#term-rivt-doc"><span class="xref std std-term">rivt doc</span></a> as a text, PDF or
+HTML file. A <em>rivt file</em> is a Python file (.py) that imports the
+<a class="reference internal" href="rvA02-terms.html#term-rivtlib"><span class="xref std std-term">rivtlib</span></a> Python package and includes <a class="reference internal" href="rvA02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a>. A collection
+of <em>rivt docs</em> may be collated as a <a class="reference internal" href="rvA02-terms.html#term-rivt-report"><span class="xref std std-term">rivt report</span></a>.</p>
+<p><em>rivt files</em>, as open source, may be integrated withother programs
+and collaberatively shared. <em>rivt</em> itself is distributed under the
+<a class="reference external" href="https://opensource.org/license/mit">MIT open source license.</a>
+All or parts of a <em>rivt file</em> the author chooses to share as <em>public rivt files</em>
+are also shared under an <a class="reference external" href="https://opensource.org/licenses">Open Source license</a>.
+The <em>MIT license</em> is the default.</p>
+<p>The <em>rivt API</em> includes  <a class="reference internal" href="#api-functions"><span class="std std-ref">[3t] API functions</span></a>, <a class="reference internal" href="#markup"><span class="std std-ref">[4t] Markup Overview</span></a> and
+<a class="reference internal" href="#files-and-folders"><span class="std std-ref">[4t] Folder/Files overiew</span></a>. The API is designed to be:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>lightweight</dt><dd><p><a class="reference internal" href="rvA02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> is made up of about 3 dozen tags
+and commands, and wraps <a class="reference internal" href="rvA02-terms.html#term-restructuredtext"><span class="xref std std-term">reStructuredText</span></a>.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>flexible</dt><dd><p>A <em>rivt file</em> produces a text, HTML or PDF <em>doc</em>.
+Multiple <em>docs</em> can be organized into a report.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>extensible</dt><dd><p><em>rivtlib</em> is written in Python with direct access to thousands of
+Python packages.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<p class="center"><strong>rivt Doc Processing</strong></p>
+<a class="reference internal image-reference" href="_images/rivtflow2.png"><img alt="rivt flow chart" class="align-center" src="_images/rivtflow2.png" style="width: 75%;" />
+</a>
+</section>
+<section id="t-api-functions">
+<span id="api-functions"></span><h2><strong>[3t]</strong> API functions<a class="headerlink" href="#t-api-functions" title="Link to this heading">#</a></h2>
+<hr><p><em>rivt</em> is an acronym taken from the four, primary API functions.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="head"><p>API Function</p></th>
+<tr class="row-odd"><th class="head"><p>API Functions</p></th>
 <th class="head"><p>Name</p></th>
 <th class="head"><p>Purpose</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>rv.R(rS)</p></td>
-<td><p>Run</p></td>
+<td><p><strong>R</strong> un</p></td>
 <td><p>Run shell commands</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I(rS)</p></td>
-<td><p>Insert</p></td>
+<td><p><strong>I</strong> nsert</p></td>
 <td><p>Insert static resources</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.V(rS)</p></td>
-<td><p>Value</p></td>
+<td><p><strong>V</strong> alues</p></td>
 <td><p>Calculate values</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.T(rS)</p></td>
-<td><p>Tool</p></td>
-<td><p>Import Python and Markup functions</p></td>
+<td><p><strong>T</strong> ools</p></td>
+<td><p>Python and markup scripts</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.D(rS)</p></td>
 <td><p>Doc</p></td>
@@ -545,69 +574,113 @@ The <em>Skip</em> and <em>Exit</em> functions are used for interactive editing a
 </tr>
 <tr class="row-odd"><td><p>rv.S(rS)</p></td>
 <td><p>Skip</p></td>
-<td><p>Skip section</p></td>
+<td><p>Skip section (comments and debugging)</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.X(rS)</p></td>
 <td><p>Exit</p></td>
-<td><p>Exit rivt</p></td>
+<td><p>Exit rivt (debugging)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>Each function takes a single <em>rivt string</em> (triple quoted string) argument.</p>
-<p id="api">&lt;i&gt;</p></section>
-<section id="rivt-string">
-<h2><strong>[4]</strong> rivt String<a class="headerlink" href="#rivt-string" title="Link to this heading">#</a></h2>
-<hr><p>An API function starts in the first column and takes a single
-<a class="reference internal" href="rvA02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> (rS) argument. The first line of a <em>rivt string</em> is a header
-that specifies section labeling and processing. The <a class="reference internal" href="rvA02-terms.html#term-header"><span class="xref std std-term">header</span></a> is followed
-byvthe section text, indented four spaces for legibility and section folding.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Header</span>
+<p>Most of a docs’ content is written using the <em>Insert</em> (rv.I) and <em>Value</em> (rv.v)
+API’s.</p>
+<b>Content Functions</b>
+<ol style="border: 2px;
+        border-color: #49b2c3;
+        border-style: solid;
+        padding: 2em;
+        margin: 2em">
+    <li>The <b>Run</b> executes shell commands.</li>
+    <li>The <b>Insert</b> adds static table, image, equation and text content.</li>
+    <li>The <b> Values</b> evaluates equations and functions.</li>
+    <li>The <b>Tools</b> runs reStructuredText, HTML, LaTeX and Python scripts.</li>
+</ol>
 
-<span class="s2">    section text</span>
-<span class="s2">    ...</span>
+<b>Publish Function</b>
+<ol style="border: 2px;
+        border-color: #49b2c3;
+        border-style: solid;
+        padding: 2em;
+        margin: 2em">
+    <li>The <b>Doc</b> specifies the <i>doc</i> type and style.</li>
+</ol>
+
+<b>Interactive Processing Functions</b>
+<ol style="border: 2px;
+        border-color: #49b2c3;
+        border-style: solid;
+        padding: 2em;
+        margin: 2em">
+    <li>The <b>Skip</b> can be used for interactive debugging and comments.</li>
+    <li>The <b>Exit</b> can be used for interactive debugging.</li>
+
+</ol><p>When interactive IDEs like <em>VSCode</em> or <em>Spyder</em> are used to edit and run <em>rivt
+files</em>, API functions can be processed spearately as cells (similar to
+<em>Jupyter Notebooks</em>) using the standard prefix notation:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %% optional label</span>
+</pre></div>
+</div>
+<p>An optional label is used for built in IDE bookmarking functions.
+Refer to <a class="reference internal" href="rvB03-vscode.html"><span class="doc">B.3 VSCode Settings</span></a> for further details.</p>
+<p>Each API function takes a single <a class="reference internal" href="rvA02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> argument (rS) as input,
+and outputs formatted text or restructuredText that in turn is processed
+into a text, HTML or PDF <a class="reference internal" href="rvA02-terms.html#term-doc"><span class="xref std std-term">doc</span></a>. The <em>rivt string</em> is written
+in <em>rivt markup</em>.</p>
+</section>
+<section id="t-markup-overview">
+<span id="markup"></span><h2><strong>[4t]</strong> Markup Overview<a class="headerlink" href="#t-markup-overview" title="Link to this heading">#</a></h2>
+<hr><p>An API function starts in the first column and takes a triple quoted
+<a class="reference internal" href="rvA02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> (rS) argument. The first line of a <em>rivt string</em> is a
+<a class="reference internal" href="rvA02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a>, followed by a <a class="reference internal" href="rvA02-terms.html#term-content-substring"><span class="xref std std-term">content substring</span></a> indented 4
+spaces for improved readability and section folding.</p>
+<p>The <em>header substring</em> specifies the section title and other
+processing parameters. The content substring includes
+<a class="reference internal" href="rvA02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> and other arbitrary text. For further details
+see <a class="reference internal" href="rvC01-markup.html"><span class="doc">here</span></a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | parameters</span>
+
+<span class="s2">     Content text that is</span>
+<span class="s2">     indented four spaces.</span>
+
 <span class="s2">    ...</span>
 
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Section text includes <a class="reference internal" href="rvA02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> - a plain text language that
-generates <em>doc</em> files formatted as text, HTML or PDF. <em>rivt markup</em> includes
-<a class="reference internal" href="rvA02-terms.html#term-line-tags"><span class="xref std std-term">line tags</span></a>, <a class="reference internal" href="rvA02-terms.html#term-block-tags"><span class="xref std std-term">block tags</span></a> and <a class="reference internal" href="rvA02-terms.html#term-commands"><span class="xref std std-term">commands</span></a> summarized
-<a class="reference internal" href="rvC07-quick.html"><span class="doc">here.</span></a>  See <a class="reference internal" href="rvC01-markup.html"><span class="doc">Markup</span></a> for further
-details.</p>
-<div class="toctree-wrapper compound">
+</section>
+<section id="t-folder-files-overiew">
+<span id="files-and-folders"></span><h2><strong>[4t]</strong> Folder/Files overiew<a class="headerlink" href="#t-folder-files-overiew" title="Link to this heading">#</a></h2>
+<hr><p>A <a class="reference internal" href="rvA02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> is a Python plain text file ( <em>.py</em> ) that includes <em>rivt
+markup</em> and imports the <a class="reference internal" href="rvA02-terms.html#term-rivtlib"><span class="xref std std-term">rivtlib</span></a> package and API into the <em>rv</em>
+<a class="reference internal" href="rvA02-terms.html#term-namespace"><span class="xref std std-term">namespace</span></a>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
+</pre></div>
 </div>
-<p id="api">&lt;i&gt;</p></section>
-<section id="report-folders">
-<h2><strong>[5]</strong>  Report Folders<a class="headerlink" href="#report-folders" title="Link to this heading">#</a></h2>
-<hr><p>Reports are organized under a single root report folder with the prefix
-<em>rivt-</em>. <em>rivt files</em> are stored in the root folder and <em>rivt markup</em> file paths
-are relative to the root.  Resource files are stored in four primary subfolders:</p>
-<dl class="simple">
-<dt><em>public</em></dt><dd><p>Includes <em>rivt files</em> written by <em>rivtlib</em> intended for upload to
-a public repository.</p>
-</dd>
-<dt><em>publish</em></dt><dd><p>Includes formatted <em>docs</em> and <em>reports</em> written by <em>rivtlib</em>.</p>
-</dd>
-<dt><em>src</em></dt><dd><p>Includes author provided content, style and generating files for <em>docs</em>
-and <em>reports</em>.</p>
-</dd>
-<dt><em>stored</em></dt><dd><p>Includes output files written by <em>rivtlib</em> including <em>logs</em>, <em>values</em>,
-<em>hidden</em>, and <em>metadata</em>.</p>
-</dd>
-</dl>
-<p id="top-folders"><strong>Folder Key</strong></p>
-<p style="border-width:2px; border-style:solid;
-border-color:#49b2c3;padding: 1em;">
-
-Required names or prefixes are shown in brackets [ ]. <br>
-<br>
-Folders and subfolders that contain author generated files
-are marked with a single vertical bar ( | ).<br>
-<br>
-Folders and subfolders that contain *rivtlib* generated files are
-marked with double vertical bars ( || ).</p><p><strong>Top Level Folders</strong></p>
+<p><em>rivt files</em> are stored in a root folder designated with the prefix <em>rivt-</em>.
+Each <em>rivt file</em> and corresponding <em>rivt doc</em> has a prefix that is used to
+organize the report. The  prefix has the form</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rvANN</span><span class="o">-</span><span class="n">filename</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>where A is an alpha-numeric character used for organizing report divisions, and
+NN is a two digit number used to organize sub-divisions. The file name is used
+as the <em>doc</em> title unless overridden in <em>rv.D</em>. Use underscores or hyphens
+rather than spaces to seprate words in the file name. They are replaced with
+spaces when a <em>doc</em> title is extracted.</p>
+<b>Folder Key</b>
+<ol style="border: 2px;
+        border-color: #49b2c3;
+        border-style: solid;
+        padding: 2em;
+        margin: 2em">
+    <li> Required names or prefixes are shown in brackets [ ].</li>
+    <li> Required folders start with a capital letter. </li>
+    <li> Folders that contain author provided files are marked with a
+    single vertical bar ( | ).</li>
+    <li> Folders that contain <i>rivtlib</i> generated files are
+        marked with a double vertical bar</li>
+</ol><p><strong>Primary Folders</strong></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt<span class="o">]</span>-Report-Label/<span class="w">                </span>Report<span class="w"> </span>Folder<span class="w"> </span>Name
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename1.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv102-<span class="o">]</span>filename2.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
@@ -616,46 +689,69 @@ marked with double vertical bars ( || ).</p><p><strong>Top Level Folders</strong
 
 <span class="w">    </span>...
 
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>public<span class="o">]</span>/<span class="w">                   </span><span class="o">||</span><span class="w"> </span>public<span class="w"> </span>rivt<span class="w"> </span>files
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>publish<span class="o">]</span>/<span class="w">                  </span><span class="o">||</span><span class="w"> </span>report<span class="w"> </span>and<span class="w"> </span>doc<span class="w"> </span>files
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>src<span class="o">]</span>/<span class="w">                      </span><span class="p">|</span><span class="w">  </span><span class="nb">source</span><span class="w"> </span>files
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>stored<span class="o">]</span>/<span class="w">                   </span><span class="o">||</span><span class="w"> </span>stored<span class="w"> </span>rivt<span class="w"> </span>files
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>Public<span class="o">]</span>/<span class="w">                   </span><span class="o">||</span><span class="w"> </span>public<span class="w"> </span>rivt<span class="w"> </span>files
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>Publish<span class="o">]</span>/<span class="w">                  </span><span class="o">||</span><span class="w"> </span>doc<span class="w"> </span>and<span class="w"> </span>report<span class="w"> </span>files
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>Src<span class="o">]</span>/<span class="w">                      </span><span class="p">|</span><span class="w">  </span><span class="nb">source</span><span class="w"> </span>files<span class="w"> </span>provided<span class="w"> </span>by<span class="w"> </span>authors
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>Stored<span class="o">]</span>/<span class="w">                   </span><span class="o">||</span><span class="w"> </span>stored<span class="w"> </span>files<span class="w"> </span>written<span class="w"> </span>by<span class="w"> </span>rivtlib
 <span class="w">    </span>└──<span class="w"> </span>README.txt<span class="w">                  </span><span class="o">||</span><span class="w"> </span>searchable<span class="w"> </span>text<span class="w"> </span>report
 </pre></div>
 </div>
-<p>An example of a complete folder structure is <a class="reference internal" href="rvD03-folders.html#id1"><span class="std std-ref">here</span></a>.</p>
-<p id="api">&lt;i&gt;</p></section>
-<section id="metadata">
-<h2><strong>[5]</strong> Metadata<a class="headerlink" href="#metadata" title="Link to this heading">#</a></h2>
-<hr><p><em>Metadata</em> is specified before any API functions are called and uses standard
-Python dictionaries, lists and strings. It is specified outside the <em>rivtlib</em>
-API functions and provides author information and global file path handling.
-See <a class="reference internal" href="rvC01-markup.html"><span class="doc">here</span></a> for further details.</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Variable</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="rvA02-terms.html#term-rv_authD"><span class="xref std std-term">rv_authD</span></a></p></td>
-<td><p>specifies author information</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="rvA02-terms.html#term-rv_forknD"><span class="xref std std-term">rv_forknD</span></a></p></td>
-<td><p>specifies author fork information - n is a number</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="rvA02-terms.html#term-rv_localB"><span class="xref std std-term">rv_localB</span></a></p></td>
-<td><p>true; false [default] - resource files are local</p></td>
-</tr>
-</tbody>
-</table>
+<p>The four primary rivt folders are:</p>
+<dl class="simple">
+<dt><em>Public</em></dt><dd><p>Stores public <em>rivt files</em> generated by <em>rvitlib</em>. File content intended for
+sharing is defined by <em>section headers</em>. Public <em>rivt files</em>
+are identified by a hyphen after  the <em>rv</em> prefix e.g. <em>rv-101-filename1</em>.</p>
+</dd>
+<dt><em>Publish</em></dt><dd><p>Stores <em>docs</em> and <em>reports</em> generated by <em>rvitlib</em></p>
+</dd>
+<dt><em>Src</em></dt><dd><p>Stores images, data, code and text provided by the author.</p>
+</dd>
+<dt><em>Stored</em></dt><dd><p>Stores files generated by <em>rvitlib</em>. Files include stored
+sections identified in headers, api log files and processing log files. Files
+may be attached to a report.</p>
+</dd>
+</dl>
+<p>The complete folder structure with subfolders is shown <a class="reference internal" href="rvD03-folders.html#report-folders"><span class="std std-ref">here</span></a>.</p>
+</section>
+<section id="t-doc-report-overview">
+<span id="reports-and-single-docs"></span><h2><strong>[5t]</strong> Doc/report overview<a class="headerlink" href="#t-doc-report-overview" title="Link to this heading">#</a></h2>
+<hr><p>Each <a class="reference internal" href="rvA02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> outputs a corresponding <a class="reference internal" href="rvA02-terms.html#term-doc"><span class="xref std std-term">doc</span></a> in the
+format specified in <em>rv.D</em>. A doc number has the form:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rvAnn-filename.py
+</pre></div>
 </div>
-<p><em>rv_authD</em> specifies the author, version, email, repository and license
-information and lists the forks. <em>rv_forknD</em> specifies data for the forked
-file. The <em>rv_authD</em> is always included.</p>
-<p><em>rv_localB</em> overrides the default report structure and specifies that all
-resource files are read from and written to the <em>rivt file</em> folder instead of
-<em>rivt folders</em>.  It is intended for simple, <em>single docs</em>.</p>
+<p>where rv is a required prefix, A is an alphanumeric character and nn are two
+digit non-negative integers.</p>
+<p>A <em>rivt report</em> is organized using the rivt <em>doc numbers</em>. If the <em>rivt file</em>
+names are:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rvA01-filename.py
+rv105-filename.py
+rv212-filename.py
+</pre></div>
+</div>
+<p>the <em>report numbers</em> would be:</p>
+<ul class="simple">
+<li><p>A.1 (division A, subdivision 1)</p></li>
+<li><p>1.5 (division 1, subdivision 5)</p></li>
+<li><p>2.12 (division 2, subdivision 12)</p></li>
+</ul>
+<p>Note that leading zeroes are dropped.  <em>Docs</em> are sorted alpha-numerically into
+divisions and subdivisions in the <em>report</em>.</p>
+<p><em>Docs</em> are assembled from sources and published using a specified folder
+structure. The <em>singledocB</em> variable overrides the default report structure and
+specifies that resource files and <em>docs</em> are read from and written to the <em>rivt
+file</em> folder. It is intended for simpler, standalone <em>docs</em> with more limited
+format control. The comment variable is specified immediately after the import
+statement:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
+
+<span class="c1"># rv singledocB = True</span>
+</pre></div>
+</div>
+<p>The default setting is False.</p>
+<p><a class="reference internal" href="rvD01-documents.html"><span class="doc">here</span></a>.</p>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 </section>
 
@@ -706,12 +802,12 @@ resource files are read from and written to the <em>rivt file</em> folder instea
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary"><strong>[1]</strong> Summary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-file"><strong>[2]</strong> rivt File</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api"><strong>[3]</strong> API</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-string"><strong>[4]</strong> rivt String</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#report-folders"><strong>[5]</strong>  Report Folders</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metadata"><strong>[5]</strong> Metadata</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-motivations"><strong>[1t]</strong> Motivations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-overview"><strong>[2t]</strong> Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-api-functions"><strong>[3t]</strong> API functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-markup-overview"><strong>[4t]</strong> Markup Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-folder-files-overiew"><strong>[4t]</strong> Folder/Files overiew</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-doc-report-overview"><strong>[5t]</strong> Doc/report overview</a></li>
 </ul>
   </nav></div>
 
