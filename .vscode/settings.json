@@ -8,16 +8,6 @@
     },
     "git.postCommitCommand": "sync",
     "editor.formatOnSave": true,
-    "editor.rulers": [
-        {
-            "column": 4,
-            "color": "#3d3d3d"
-        },
-        {
-            "column": 80,
-            "color": "#3d3d3d"
-        }
-    ],
     "gutterpreview.imagePreviewMaxHeight": 10,
     "ShortcutMenuBar.beautify": false,
     "ShortcutMenuBar.navigateBack": false,
@@ -115,20 +105,14 @@
     "workbench.panel.defaultLocation": "right",
     "python.defaultInterpreterPath": "c:\\Python313\\python.exe",
     "explorer.sortOrder": "type",
-    "editor.hover.enabled": false,
-    "editor.parameterHints.enabled": false,
     "editor.minimap.enabled": false,
-<<<<<<< HEAD
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
-    "editor.hover.enabled": false,
+    "editor.hover.enabled": "off",
     "editor.parameterHints.enabled": false,
-=======
     "editor.rulers": [
         80
     ],
-    "git.enableSmartCommit": true,
-    "git.confirmSync": false,
     "github.copilot.enable": {
         "*": false,
         "plaintext": false,
@@ -151,5 +135,4 @@
         // You can add more ...
     },
     "extensions.ignoreRecommendations": true,
->>>>>>> f66ea4fc136e9c9cd2105cebc16d284ee603bc78
 }
