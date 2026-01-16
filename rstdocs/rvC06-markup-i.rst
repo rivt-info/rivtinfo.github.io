@@ -19,7 +19,7 @@ including images, tables, links and formatted text.
     <hr>
 
 =============================================== ============================
-        Line Tags                                 Description 
+        Line Tag                                  Description 
 =============================================== ============================
               text **_[C]**                      :ref:`Center text` 
               text **_[R]**                      :ref:`Right justify text` 
@@ -44,7 +44,7 @@ including images, tables, links and formatted text.
     <hr>
 
 ========================================= ==============================
-       Block Tags                              Description 
+       Block Tag                               Description 
 ========================================= ==============================
  **_[[INDENT]]** spaces (4 default)           :ref:`Indent text block`
  **_[[ITALIC]]** spaces (4 default)           :ref:`Indent italic block`

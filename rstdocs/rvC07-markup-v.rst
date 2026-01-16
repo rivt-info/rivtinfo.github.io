@@ -9,7 +9,7 @@
 
     <hr>
 
-The *Value* API function defines values and evaluates equations and functions.
+The *Values* API function defines values and evaluates equations and functions.
 
 
 
@@ -21,7 +21,7 @@ The *Value* API function defines values and evaluates equations and functions.
     <hr>
 
 =================================================== ==============================
-       Line Tags                                        Description 
+       Line Tag                                         Description 
 =================================================== ==============================
                    text **_[V]** var_name text        :ref:`Variable value`
 assign command or label **_[E]**                      :ref:`Equation number`
@@ -38,7 +38,7 @@ assign command or label **_[E]**                      :ref:`Equation number`
 
 
 ========================================= ==============================
-       Block Tags                              Description 
+       Block Tag                               Description 
 ========================================= ==============================
  [[PYTHON]] namespace                       :ref:`Python block`
 _[[END]]                                    :ref:`End Block`

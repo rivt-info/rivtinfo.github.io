@@ -11,7 +11,7 @@
 **Format a line or partial line of text**
   
 ========== ================================================= ===============================
-API Scope             Line Tags                                     Description 
+API Scope             Line Tagb                                     Description 
 ========== ================================================= ===============================
 rv.I                          text **_[C]**                     :ref:`Center text` 
 rv.I                          text **_[R]**                     :ref:`Right justify text`

@@ -11,7 +11,7 @@
 **Format blocks of text**
 
 ========== ========================================= ===============================
-API Scope         Block Tags                               Description 
+API Scope         Block Tag                                Description 
 ========== ========================================= ===============================
 rv.R        **_[[SHELL]]** process parameters         :ref:`Shell script`
 rv.I        **_[[INDENT]]** spaces (4 default)        :ref:`Indent text block`

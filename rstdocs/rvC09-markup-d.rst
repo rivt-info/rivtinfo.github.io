@@ -18,7 +18,7 @@ The *Doc API* publishes formatted *docs* from the rivt API strings.
     <hr>
 
 ======================================= ==============================
-       Block Tags                        Description 
+       Block Tag                         Description 
 ======================================= ==============================
  **_[[LAYOUT]]** label                        :ref:`Layout block`
  **_[[METADATA]]** label                     :ref:`Meta block` 

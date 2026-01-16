@@ -11,7 +11,7 @@
     <hr>
 
 =============== =============== ===========================================
-API Functions        Name             Purpose
+API Function         Name             Purpose
 =============== =============== ===========================================
 **rv.R** (rS)         Run            Run shell commands
 **rv.I** (rS)         Insert         Insert static sources 
@@ -56,7 +56,7 @@ rv.X         -                      -                   -
     <hr>
   
 ========== ================================================= ===============================
-API Scope             Line Tags                                     Description 
+API Scope             Line Tag                                      Description 
 ========== ================================================= ===============================
 rv.I                          text **_[C]**                     :ref:`Center text` 
 rv.I                          text **_[R]**                     :ref:`Right justify text`
@@ -81,7 +81,7 @@ rv.V, I                    caption **_[F]**                     :ref:`Figure num
     <hr>
 
 ========== ========================================= ===============================
-API Scope         Block Tags                               Description 
+API Scope         Block Tag                                Description 
 ========== ========================================= ===============================
 rv.R        **_[[SHELL]]** process parameters         :ref:`Shell script`
 rv.I        **_[[INDENT]]** spaces (4 default)        :ref:`Indent text block`

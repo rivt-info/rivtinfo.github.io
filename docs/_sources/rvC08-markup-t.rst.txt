@@ -19,7 +19,7 @@ The *Tools* API function executes markup and scripts.
     <hr>
 
 ========================================= ==============================
-       Block Tags                           Description 
+       Block Tag                            Description 
 ========================================= ==============================
 **_[[PYTHON]]** namespace                       :ref:`Python block`
 **_[[MARKUP]]** type                            :ref:`Markup block`
@@ -34,7 +34,7 @@ The *Tools* API function executes markup and scripts.
     <hr>
 
 ============================================================== =====================
-      Commands                                                     Description
+      Command                                                      Description
 ============================================================== =====================
  **| PYTHON |** relative path | namespace                        :ref:`Python file`
  **| MARKUP |** relative path | type                             :ref:`Markup file`

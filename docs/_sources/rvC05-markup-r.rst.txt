@@ -20,7 +20,7 @@ The *Run* API function executes shell commands.
     <hr>
 
 ======================================= ==============================
-       Block Tags                             Description
+       Block Tag                              Description
 ======================================= ==============================
  **_[[SHELL]]** process parameters            :ref:`Shell script`
  **_[[END]]**                                 :ref:`End block`
