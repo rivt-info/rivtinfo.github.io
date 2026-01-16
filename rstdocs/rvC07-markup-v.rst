@@ -29,7 +29,7 @@ _[[NEWPAGE]]                                :ref:`Start new page`
 ========================================= ==============================
 
 ================================================================= =====================
-         | Command | path | parameters                               Description
+        Commands                                                     Description
 ================================================================= =====================
 **| IMAGE |** relative path |  scale, caption, figure              :ref:`Image file`
 **| IMAGE2 |** rel path1, rel path2 | s1, s2, c1, c2, fig1, fig2   :ref:`Adjacent images`

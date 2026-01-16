@@ -19,7 +19,7 @@ The *Tools* API function executes markup and scripts.
 ========================================= ==============================
 
 ============================================================== =====================
-         **| Command |** path | parameters                            Description
+      Commands                                                     Description
 ============================================================== =====================
  **| PYTHON |** relative path | namespace                        :ref:`Python file`
  **| MARKUP |** relative path | type                             :ref:`Markup file`

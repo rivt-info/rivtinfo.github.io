@@ -18,7 +18,7 @@ The *Doc API* publishes formatted *docs* from the rivt API strings.
 ======================================= ==============================
 
 ========================================================= ==================== 
-        **| Command |** relative path | parameters             Description
+       Commands                                                  Description
 ========================================================= ==================== 
 **| PDFATTACH |** relative path | place, cover              :ref:`Attach PDF`   
 **| PUBLISH |** ini rel. path | type                        :ref:`Publish Doc`

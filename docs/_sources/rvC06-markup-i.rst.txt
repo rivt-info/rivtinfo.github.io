@@ -42,7 +42,7 @@ including images, tables, links and formatted text.
 ========================================= ==============================
 
 ==================================================================== =========================
-         **| Command |** path | parameters                               Description
+         Commands                                                         Description
 ==================================================================== =========================
  **| TEXT |** relative path |  language                                :ref:`Text file`
  **| TABLE |** rel path | title, width, rows, align, head              :ref:`Table file`     
