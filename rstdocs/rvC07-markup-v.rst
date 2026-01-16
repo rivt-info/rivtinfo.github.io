@@ -40,9 +40,9 @@ assign command or label **_[E]**                      :ref:`Equation number`
 ========================================= ==============================
        Block Tag                               Description 
 ========================================= ==============================
- [[PYTHON]] namespace                       :ref:`Python block`
-_[[END]]                                    :ref:`End Block`
-_[[NEWPAGE]]                                :ref:`Start new page`
+**_[[PYTHON]]** namespace                       :ref:`Python block`
+**_[[END]]**                                    :ref:`End Block`
+**_[[NEWPAGE]]**                                :ref:`Start new page`
 ========================================= ==============================
 
 **[2i]** Commands
