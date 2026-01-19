@@ -23,7 +23,7 @@ rv.I                          text **_[S] text, section label**  :ref:`Section l
 rv.I                          text **_[D] text, rivt_file**      :ref:`Doc link`
 rv.I                          text **_[U] text, url**            :ref:`URL link`   
 rv.V, I                       text **_[V] var_name** text        :ref:`Variable value`
-rv.V, I        assign var or **label _[E]**                      :ref:`Equation number`
+rv.V, I        assign cmd or **label _[E]**                      :ref:`Equation number`
 rv.V, I                      **title _[T]**                      :ref:`Table number`
 rv.V, I                    **caption _[F]**                      :ref:`Figure number`
 ========== ==================================================== ===============================

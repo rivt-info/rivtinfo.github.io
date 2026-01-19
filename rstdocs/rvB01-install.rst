@@ -8,12 +8,13 @@
 
     <hr>
 
-*rivt* is an open source Python project that includes :term:`rivtlib` and
-approximately two dozen additional :doc:`Python packages<rvB02-python>`. The 
-IDE `Pyzo <https://pyzo.org/>`_ is installed with *rivt* as an effective 
-lightweight program for editing and publishing *rivt docs*. 
+*rivt* is an open source Python project that includes :term:`rivtlib` 
+(see `<https://gitub.com/rivtlib-dev/rivtlib>`_ for source code) and
+approximately two dozen additional :doc:`Python packages<rvB02-python>`. The
+lightweight `Pyzo <https://pyzo.org/>`_  IDE is installed with *rivt*
+for editing and publishing example *rivt docs*.
 
-*rivt* is designed to wrork in an integrated framework with other open source
+*rivt* is designed to work in an integrated framework with other open source
 programs. In the installation methods described below some install *rivt* 
 and some install a *rivt framework*. 
 
