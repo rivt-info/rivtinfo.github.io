@@ -17,17 +17,25 @@
 
     <hr>
 
-.. dropdown:: Which open source license applies to *rivt*?  
+.. dropdown:: Which open source license applies to *rivtlib*?  
 
     **rivtlib** is distributed under the 
     `MIT open source license <https://opensource.org/license/mit/>`_.
+
+.. dropdown:: Which open source licenses applies to *rivt*?  
+
     The Python packages that are part of the *rivt project* are distributed 
     primarly under the BSD, Appache and MIT open source licenses. Python itself
     is distributed under the Python Software Foundation License (PSFL).
 
-|
 
-.. dropdown:: Which open source license applies to the *rivt framework*?  
+.. dropdown:: Which open source licenses apply to *rivt files*?  
+
+    The open source license for a public rivt file is specified in the 
+    _[[Metadata]] block tag. The default license is the MIT license.
+
+
+.. dropdown:: Which open source licenses apply to the *rivt framework*?  
     
     **VSCode** - Visual Studio Code uses a proprietary Microsoft license for
     the compiled product, allowing free use for development, testing and
@@ -53,10 +61,7 @@
 
 |
 
-.. dropdown:: Which open source licenses apply to *rivt files*?  
 
-    The open source license for a public rivt file is specified in the 
-    _[[Metadata]] block tag. The default license is the MIT license.
 
 **[3t]** *rivt* releases
 -------------------------------------------------------------
