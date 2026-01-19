@@ -400,188 +400,96 @@
 not used. It has 4 API functions - two of them are
 published. The output is written to the terminal.</p>
 <hr><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#! python</span>
-<span class="c1"># %% Start</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
 
-<span class="n">rv</span><span class="o">.</span><span class="n">M</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Meta Data</span>
+<span class="c1"># rv singledoc: True</span>
 
-<span class="s2">    rv_authD = {</span>
-<span class="s2">        &quot;authors&quot;: &quot;rholland&quot;,</span>
-<span class="s2">        &quot;version&quot;: &quot;0.6.1&quot;,</span>
-<span class="s2">        &quot;email&quot;: &quot;rod.h.holland@gmail.com&quot;,</span>
-<span class="s2">        &quot;repo&quot;: &quot;https://github.com/rivt-info/rivt-simple-single-doc&quot;,</span>
-<span class="s2">        &quot;license&quot;: &quot;https://opensource.org/license/mit/&quot;,</span>
-<span class="s2">        &quot;fork1&quot;: [&quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;],</span>
-<span class="s2">        }</span>
-
-<span class="s2">    rv_headerL = [&quot;date&quot;, &quot;time&quot;, &quot;file&quot;, &quot;version&quot;]</span>
-
-<span class="s2">    rv_localB = True</span>
-
-<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
-
+<span class="c1"># %% loads</span>
 <span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Load Combinations</span>
 
 <span class="s2">    ASCE 7-05 Load Effects _[T]</span>
-
-<span class="s2">    =============   ==============================================</span>
+<span class="s2">    ============= ================================================</span>
 <span class="s2">    Equation No.    Load Combination</span>
-<span class="s2">    =============   ==============================================</span>
-<span class="s2">    16-1            1.4(D+F)</span>
-<span class="s2">    16-2            1.2(D+F+T) + 1.6(L+H) + 0.5(Lr or S or R)</span>
-<span class="s2">    16-3            1.2(D+F+T) + 1.6(Lr or S or R) + (f1L or 0.8W)</span>
-<span class="s2">    =============   ==============================================</span>
+<span class="s2">    ============= ================================================</span>
+<span class="s2">    16-1           1.4(D+F)</span>
+<span class="s2">    16-2           1.2(D+F+T) + 1.6(L+H) + 0.5(Lr or S or R)</span>
+<span class="s2">    16-3           1.2(D+F+T) + 1.6(Lr or S or R) + (f1L or 0.8W)</span>
+<span class="s2">    ============= ================================================</span>
 
-<span class="s2">    | IMG | beam.png | 0.35, Beam Geometry _[F]</span>
-<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+<span class="s2">    | IMAGE | beam.png | Beam Geometry, .65, num</span>
 
-<span class="c1"># %%</span>
-<span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;UDL and Beam Geometry</span>
-
-<span class="s2">    Beam Loads and Properties _[T]</span>
-<span class="s2">    D_1 := 3.8*PSF | PSF, KPA, 2 | joists DL</span>
-<span class="s2">    D_2 := 2.1*PSF | PSF, KPA, 2 | plywood DL</span>
-<span class="s2">    D_3 := 10.0*PSF | PSF, KPA, 2 | partitions DL</span>
-<span class="s2">    D_4 := 2*0.5*KLF | KLF, KNLM, 2 | fixed machinery  DL</span>
-<span class="s2">    L_1 := 40*PSF | PSF, KPA, 2 | ASCE7-O5 LL</span>
-
-<span class="s2">    | VALUE | beam1-v.csv | Beam Geometry _[T]</span>
-
-<span class="s2">    Total UDL factored dead load  _[E]</span>
-<span class="s2">    dl_1 &lt;= 1.2 * (W_1 *(D_1 + D_2 + D_3) + D_4) | KLF, KNLM, 2 | ASCE7-05 Eq. 16-2</span>
-
-<span class="s2">    Total UDL factored live load  _[E]</span>
-<span class="s2">    ll_1 &lt;= 1.6 * W_1 * L_1 | KLF, KNLM, 2 | ASCE7-05 Eq. 16-2</span>
-
-<span class="s2">    Total Load  _[E]</span>
-<span class="s2">    omega_1 &lt;= dl_1 + ll_1 | KLF, KNLM, 2 | ASCE7-05 Eq. 16-2</span>
-
-<span class="s2">    Bending moment at mid-span  _[E]</span>
-<span class="s2">    m_1 &lt;= omega_1 * S_1**2 / 8 | KIP_FT, KN_M, 2 | mid-span UDL moment</span>
+<span class="s2">    Bending Stress Formula _[E]</span>
+<span class="s2">    σ1 = M1 / S1 _[M]</span>
 
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+<span class="c1"># %% values</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Loads and Geometry</span>
 
-<span class="c1"># %%</span>
-<span class="n">rv</span><span class="o">.</span><span class="n">S</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Publish Doc</span>
+<span class="s2">    Beam Loads _[T]</span>
+<span class="s2">    D_1 =: 3.8*psf | psf, kPA, 2 | joists DL</span>
+<span class="s2">    D_2 =: 2.1*psf | psf, kPA, 2 | plywood DL</span>
+<span class="s2">    D_3 =: 10.0*psf | psf, kPA, 2 | partitions DL</span>
+<span class="s2">    D_4 =: 2*0.5*klf |klf, kN_m , 2 | fixed machinery  DL</span>
+<span class="s2">    L_1 =: 40*psf | psf, kPA, 2 | ASCE7-O5 LL</span>
 
-<span class="s2">    | DOC | . | text, rivtdoc1.ini</span>
+<span class="s2">    | VALTABLE | beam1-v.csv | Beam Geometry, 0:0, num</span>
+
+<span class="s2">    Uniform Distributed Loads</span>
+<span class="s2">    dl_1 &lt;=: 1.2 * (W_1 * (D_1 + D_2 + D_3) + D_4) | klf, kN_m, 2 | dead load : ASCE7-05 2.3.2  _[E]</span>
+
+<span class="s2">    ll_1 &lt;=: 1.6 * W_1 * L_1 | klf, kN_m, 2 | live load : ASCE7-05 2.3.2 _[E]</span>
+
+<span class="s2">    omega_1 &lt;=: dl_1 + ll_1 | klf, kN_m, 2 | total load : ASCE7-05 2.3.2 _[E]</span>
 
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-<p id="api">&lt;i&gt;</p></section>
-<section id="terminal-output">
-<h2><strong>[2]</strong> Terminal output<a class="headerlink" href="#terminal-output" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>----------------------------------------------------------
-rivtlib<span class="w"> </span>version:<span class="w"> </span><span class="m">0</span>.6.1
-rivt<span class="w"> </span>file:<span class="w"> </span>rv000-simple-doc.py
-rivt<span class="w"> </span>file<span class="w"> </span>path:<span class="w"> </span>C:<span class="se">\U</span>sers<span class="se">\r</span>odhh<span class="se">\r</span>ivt-doc1<span class="se">\e</span>xample1
-----------------------------------------------------------
+<span class="c1"># %% section properties</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Beam Section Properties</span>
 
+<span class="s2">    | PYTHON | sectprop.py | nodocstring</span>
 
+<span class="s2">    section_1 &lt;=: rectsect(10*inch, 18*inch) | in3, cm3, 2 | function: rect sect modulus _[E]</span>
 
-<span class="m">2025</span>-10-10<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">05</span>:54AM<span class="w">      </span>rv000-simple-doc.py<span class="w">                           </span>av-0.6.1
-<span class="o">================================================================================</span>
+<span class="s2">    inertia_1 &lt;=: rectinertia(10*inch, 18*inch) | in4, cm4, 1 | function: rect moment inertia _[E]</span>
 
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+<span class="c1"># %% force</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Force and Stress</span>
 
-<span class="o">[</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">]</span><span class="w"> </span>Load<span class="w"> </span>Combinations
---------------------------------------------------------------------------------
+<span class="s2">        m_1 &lt;=: omega_1 * S_1**2 / 8 | ftkips, mkN, 2 | mid-span UDL moment _[E]</span>
 
+<span class="s2">        fb_1 &lt;=: m_1 / section_1 | psi, MPA, 1 | bending stress _[E]</span>
 
+<span class="s2">        fb_1 &lt; 10*ksi | ok, not ok, blue, red, right _[E]</span>
 
-Table<span class="w"> </span><span class="m">1</span>:<span class="w"> </span>ASCE<span class="w"> </span><span class="m">7</span>-05<span class="w"> </span>Load<span class="w"> </span><span class="nv">Effects</span>
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+<span class="c1"># %% tool</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">T</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Metadata</span>
 
-<span class="o">=============</span><span class="w">   </span><span class="o">==============================================</span>
-Equation<span class="w"> </span>No.<span class="w">    </span>Load<span class="w"> </span><span class="nv">Combination</span>
-<span class="o">=============</span><span class="w">   </span><span class="o">==============================================</span>
-<span class="m">16</span>-1<span class="w">            </span><span class="m">1</span>.4<span class="o">(</span>D+F<span class="o">)</span>
-<span class="m">16</span>-2<span class="w">            </span><span class="m">1</span>.2<span class="o">(</span>D+F+T<span class="o">)</span><span class="w"> </span>+<span class="w"> </span><span class="m">1</span>.6<span class="o">(</span>L+H<span class="o">)</span><span class="w"> </span>+<span class="w"> </span><span class="m">0</span>.5<span class="o">(</span>Lr<span class="w"> </span>or<span class="w"> </span>S<span class="w"> </span>or<span class="w"> </span>R<span class="o">)</span>
-<span class="m">16</span>-3<span class="w">            </span><span class="m">1</span>.2<span class="o">(</span>D+F+T<span class="o">)</span><span class="w"> </span>+<span class="w"> </span><span class="m">1</span>.6<span class="o">(</span>Lr<span class="w"> </span>or<span class="w"> </span>S<span class="w"> </span>or<span class="w"> </span>R<span class="o">)</span><span class="w"> </span>+<span class="w"> </span><span class="o">(</span>f1L<span class="w"> </span>or<span class="w"> </span><span class="m">0</span>.8W<span class="o">)</span>
-<span class="o">=============</span><span class="w">   </span><span class="o">==============================================</span>
+<span class="s2">    _[[PYTHON]]</span>
+<span class="s2">    rv_metaD = {</span>
+<span class="s2">    &quot;authors&quot;: &quot;rholland&quot;,</span>
+<span class="s2">    &quot;version&quot;: &quot;0.7.2&quot;,</span>
+<span class="s2">    &quot;email&quot;: &quot;rod.h.holland@gmail.com&quot;,</span>
+<span class="s2">    &quot;repo&quot;: &quot;https://github.com/rivt-info/rivt-single-doc&quot;,</span>
+<span class="s2">    &quot;license&quot;: &quot;https://opensource.org/license/mit/&quot;,</span>
+<span class="s2">    &quot;fork1&quot;: [&quot;author&quot;, &quot;version&quot;, &quot;email&quot;, &quot;repo&quot;],</span>
+<span class="s2">    &quot;fork2&quot;: [],</span>
+<span class="s2">    }</span>
+<span class="s2">    _[[END]]</span>
 
-&lt;PIL.PngImagePlugin.PngImageFile<span class="w"> </span>image<span class="w"> </span><span class="nv">mode</span><span class="o">=</span>RGBA<span class="w"> </span><span class="nv">size</span><span class="o">=</span>860x334<span class="w"> </span>at<span class="w"> </span>0x1376E1282F0&gt;
-Fig.<span class="w"> </span><span class="m">1</span><span class="w"> </span>-<span class="w">  </span>Beam<span class="w"> </span>Geometry<span class="w">   </span><span class="o">[</span>file:<span class="w"> </span>C:/Users/rodhh/rivt-doc1/example1/beam.png<span class="w"> </span><span class="o">]</span>
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+<span class="c1"># %% doc</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">D</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Publish Doc</span>
 
+<span class="s2">    _[[LAYOUT]]</span>
+<span class="s2">        logopathP: logo.png</span>
+<span class="s2">        pdfheaderL: [docnameS, pageS, totalpageS]</span>
+<span class="s2">        footerL: [logoO, dateO, timeO, filenameS, versionS]</span>
+<span class="s2">    _[[END]]</span>
 
+<span class="s2">    | PUBLISH | rivt | rst2pdf</span>
 
-<span class="o">[</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="o">]</span><span class="w"> </span>UDL<span class="w"> </span>and<span class="w"> </span>Beam<span class="w"> </span>Geometry
---------------------------------------------------------------------------------
-
-
-
-Table<span class="w"> </span><span class="m">2</span>:<span class="w"> </span>Beam<span class="w"> </span>Loads<span class="w"> </span>and<span class="w"> </span><span class="nv">Properties</span>
-
-<span class="o">==========</span><span class="w">  </span><span class="o">=========</span><span class="w">  </span><span class="o">==========</span><span class="w">  </span><span class="o">===================</span>
-variable<span class="w">        </span>value<span class="w">     </span><span class="o">[</span>value<span class="o">]</span><span class="w">  </span><span class="nv">description</span>
-<span class="o">==========</span><span class="w">  </span><span class="o">=========</span><span class="w">  </span><span class="o">==========</span><span class="w">  </span><span class="o">===================</span>
-D_1<span class="w">          </span><span class="m">3</span>.80<span class="w"> </span>psf<span class="w">    </span><span class="m">0</span>.18<span class="w"> </span>kpa<span class="w">  </span>joists<span class="w"> </span>DL
-D_2<span class="w">          </span><span class="m">2</span>.10<span class="w"> </span>psf<span class="w">    </span><span class="m">0</span>.10<span class="w"> </span>kpa<span class="w">  </span>plywood<span class="w"> </span>DL
-D_3<span class="w">         </span><span class="m">10</span>.00<span class="w"> </span>psf<span class="w">    </span><span class="m">0</span>.48<span class="w"> </span>kpa<span class="w">  </span>partitions<span class="w"> </span>DL
-D_4<span class="w">            </span>kip/ft<span class="w">  </span><span class="m">14</span>.59<span class="w"> </span>kN/m<span class="w">  </span>fixed<span class="w"> </span>machinery<span class="w">  </span>DL
-L_1<span class="w">         </span><span class="m">40</span>.00<span class="w"> </span>psf<span class="w">    </span><span class="m">1</span>.92<span class="w"> </span>kpa<span class="w">  </span>ASCE7-O5<span class="w"> </span><span class="nv">LL</span>
-<span class="o">==========</span><span class="w">  </span><span class="o">=========</span><span class="w">  </span><span class="o">==========</span><span class="w">  </span><span class="o">===================</span>
-
-
-Table<span class="w"> </span><span class="m">3</span><span class="w"> </span>-<span class="w"> </span>Beam<span class="w"> </span>Geometry<span class="o">[</span>from<span class="w"> </span>file:<span class="w"> </span>beam1-v.csv<span class="o">]</span>
-
-<span class="o">==========</span><span class="w">  </span><span class="o">========</span><span class="w">  </span><span class="o">=========</span><span class="w">  </span><span class="o">=============</span>
-variable<span class="w">       </span>value<span class="w">    </span><span class="o">[</span>value<span class="o">]</span><span class="w">  </span><span class="nv">description</span>
-<span class="o">==========</span><span class="w">  </span><span class="o">========</span><span class="w">  </span><span class="o">=========</span><span class="w">  </span><span class="o">=============</span>
-W_1<span class="w">          </span><span class="m">2</span>.00<span class="w"> </span>ft<span class="w">     </span><span class="m">0</span>.61<span class="w"> </span>m<span class="w">  </span>beam<span class="w"> </span>spacing
-S_1<span class="w">         </span><span class="m">14</span>.00<span class="w"> </span>ft<span class="w">     </span><span class="m">4</span>.27<span class="w"> </span>m<span class="w">  </span>beam<span class="w"> </span><span class="nv">span</span>
-<span class="o">==========</span><span class="w">  </span><span class="o">========</span><span class="w">  </span><span class="o">=========</span><span class="w">  </span><span class="o">=============</span>
-
-
-
-Eq.<span class="w"> </span><span class="m">1</span><span class="w"> </span>-<span class="w"> </span>Total<span class="w"> </span>UDL<span class="w"> </span>factored<span class="w"> </span>dead<span class="w"> </span>load
-<span class="w">                                                            </span>ASCE7-05<span class="w"> </span>Eq.<span class="w"> </span><span class="m">16</span>-2
-<span class="w">    </span><span class="nv">dl₁</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>.2⋅D₄<span class="w"> </span>+<span class="w"> </span><span class="m">1</span>.2⋅W₁⋅<span class="o">(</span>D₁<span class="w"> </span>+<span class="w"> </span>D₂<span class="w"> </span>+<span class="w"> </span>D₃<span class="o">)</span>
-
-<span class="o">===========</span><span class="w">  </span><span class="o">==========</span><span class="w">  </span><span class="o">========</span><span class="w">  </span><span class="o">========</span><span class="w">  </span><span class="o">=======</span><span class="w">  </span><span class="o">======</span><span class="w">  </span><span class="o">=========</span>
-dl_1<span class="w">       </span><span class="o">[</span>dl_1<span class="w"> </span><span class="o">]</span><span class="w">      </span>D_2<span class="w">       </span>D_1<span class="w">       </span>W_1<span class="w">     </span>D_4<span class="w">       </span><span class="nv">D_3</span>
-<span class="o">===========</span><span class="w">  </span><span class="o">==========</span><span class="w">  </span><span class="o">========</span><span class="w">  </span><span class="o">========</span><span class="w">  </span><span class="o">=======</span><span class="w">  </span><span class="o">======</span><span class="w">  </span><span class="o">=========</span>
-<span class="m">1</span>.24<span class="w"> </span>kip/ft<span class="w">  </span><span class="m">18</span>.07<span class="w"> </span>kN/m<span class="w">  </span><span class="m">2</span>.10<span class="w"> </span>psf<span class="w">  </span><span class="m">3</span>.80<span class="w"> </span>psf<span class="w">  </span><span class="m">2</span>.00<span class="w"> </span>ft<span class="w">  </span>kip/ft<span class="w">  </span><span class="m">10</span>.00<span class="w"> </span><span class="nv">psf</span>
-<span class="o">===========</span><span class="w">  </span><span class="o">==========</span><span class="w">  </span><span class="o">========</span><span class="w">  </span><span class="o">========</span><span class="w">  </span><span class="o">=======</span><span class="w">  </span><span class="o">======</span><span class="w">  </span><span class="o">=========</span>
-
-
-Eq.<span class="w"> </span><span class="m">2</span><span class="w"> </span>-<span class="w"> </span>Total<span class="w"> </span>UDL<span class="w"> </span>factored<span class="w"> </span>live<span class="w"> </span>load
-<span class="w">                                                            </span>ASCE7-05<span class="w"> </span>Eq.<span class="w"> </span><span class="m">16</span>-2
-<span class="w">    </span><span class="nv">ll₁</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>.6⋅L₁⋅W₁
-
-<span class="o">===========</span><span class="w">  </span><span class="o">=========</span><span class="w">  </span><span class="o">=======</span><span class="w">  </span><span class="o">=========</span>
-ll_1<span class="w">       </span><span class="o">[</span>ll_1<span class="w"> </span><span class="o">]</span><span class="w">     </span>W_1<span class="w">       </span><span class="nv">L_1</span>
-<span class="o">===========</span><span class="w">  </span><span class="o">=========</span><span class="w">  </span><span class="o">=======</span><span class="w">  </span><span class="o">=========</span>
-<span class="m">0</span>.13<span class="w"> </span>kip/ft<span class="w">  </span><span class="m">1</span>.87<span class="w"> </span>kN/m<span class="w">  </span><span class="m">2</span>.00<span class="w"> </span>ft<span class="w">  </span><span class="m">40</span>.00<span class="w"> </span><span class="nv">psf</span>
-<span class="o">===========</span><span class="w">  </span><span class="o">=========</span><span class="w">  </span><span class="o">=======</span><span class="w">  </span><span class="o">=========</span>
-
-
-Eq.<span class="w"> </span><span class="m">3</span><span class="w"> </span>-<span class="w"> </span>Total<span class="w"> </span>Load
-<span class="w">                                                            </span>ASCE7-05<span class="w"> </span>Eq.<span class="w"> </span><span class="m">16</span>-2
-<span class="w">    </span><span class="nv">dl₁</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>-ll₁<span class="w"> </span>+<span class="w"> </span><span class="nv">ω₁</span>
-
-<span class="o">===========</span><span class="w">  </span><span class="o">============</span><span class="w">  </span><span class="o">=============</span><span class="w">  </span><span class="o">===========</span>
-omega_1<span class="w">      </span><span class="o">[</span>omega_1<span class="w"> </span><span class="o">]</span><span class="w">       </span>ll_1<span class="w">          </span><span class="nv">dl_1</span>
-<span class="o">===========</span><span class="w">  </span><span class="o">============</span><span class="w">  </span><span class="o">=============</span><span class="w">  </span><span class="o">===========</span>
-<span class="m">1</span>.37<span class="w"> </span>kip/ft<span class="w">   </span><span class="m">19</span>.94<span class="w"> </span>kN/m<span class="w">   </span><span class="m">128</span>.00<span class="w"> </span>ft·psf<span class="w">  </span><span class="m">1</span>.24<span class="w"> </span>kip/ft
-<span class="o">===========</span><span class="w">  </span><span class="o">============</span><span class="w">  </span><span class="o">=============</span><span class="w">  </span><span class="o">===========</span>
-
-
-Eq.<span class="w"> </span><span class="m">4</span><span class="w"> </span>-<span class="w"> </span>Bending<span class="w"> </span>moment<span class="w"> </span>at<span class="w"> </span>mid-span
-<span class="w">                                                            </span>mid-span<span class="w"> </span>UDL<span class="w"> </span>moment
-<span class="w">        </span><span class="m">2</span>
-<span class="w">        </span>S₁<span class="w"> </span>⋅ω₁
-<span class="w">    </span><span class="nv">m₁</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>──────
-<span class="w">        </span><span class="nv">8</span>
-
-<span class="o">============</span><span class="w">  </span><span class="o">==========</span><span class="w">  </span><span class="o">===========</span><span class="w">  </span><span class="o">========</span>
-<span class="w">    </span>m_1<span class="w">         </span><span class="o">[</span>m_1<span class="w"> </span><span class="o">]</span><span class="w">      </span>omega_1<span class="w">      </span><span class="nv">S_1</span>
-<span class="o">============</span><span class="w">  </span><span class="o">==========</span><span class="w">  </span><span class="o">===========</span><span class="w">  </span><span class="o">========</span>
-<span class="m">33</span>.47<span class="w"> </span>kip-ft<span class="w">  </span><span class="m">45</span>.38<span class="w"> </span>kN-m<span class="w">  </span><span class="m">1</span>.37<span class="w"> </span>kip/ft<span class="w">  </span><span class="m">14</span>.00<span class="w"> </span><span class="nv">ft</span>
-<span class="o">============</span><span class="w">  </span><span class="o">==========</span><span class="w">  </span><span class="o">===========</span><span class="w">  </span><span class="o">========</span>
-
-
-
-<span class="o">[</span>Publish<span class="w"> </span>Doc<span class="o">]</span><span class="w"> </span>:<span class="w"> </span>section<span class="w"> </span>skipped
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
@@ -635,7 +543,6 @@ Eq.<span class="w"> </span><span class="m">4</span><span class="w"> </span>-<spa
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-file"><strong>[1]</strong> rivt file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#terminal-output"><strong>[2]</strong> Terminal output</a></li>
 </ul>
   </nav></div>
 
