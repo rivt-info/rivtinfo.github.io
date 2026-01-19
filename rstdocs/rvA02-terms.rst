@@ -1,7 +1,7 @@
 **A.2 Terms**
 =====================
 
-**[1]** rivt Terms
+**[1t]** rivt Terms
 -----------------------------
 
 .. raw:: html
@@ -167,11 +167,8 @@
     specified
 
 
-.. raw:: html
 
-    <p id="api">&lt;t&gt;</p>
-
-**[2]** Python Terms
+**[2t]** Python Terms
 -----------------------------
 
 .. raw:: html
@@ -200,12 +197,8 @@
     Provides `scope <https://en.wikipedia.org/wiki/Namespace>`_ for functions 
     and variables. 
 
-.. raw:: html
 
-    <p id="api">&lt;t&gt;</p>
-
-
-**[3]** GitHub Terms
+**[3t]** GitHub Terms
 -----------------------------
 
 .. raw:: html
@@ -220,16 +213,11 @@
     a storage location for software packages
 
   fork
-    duplicate of a software project's code to create a new, 
+    duplicate of a software project's code to create a new, t
     independent version
 
-
-.. raw:: html
-
-    <p id="api">&lt;t&gt;</p>
-
   
-**[4]** VSCode Terms
+**[4t]** VSCode Terms
 -----------------------------
 
 .. raw:: html
