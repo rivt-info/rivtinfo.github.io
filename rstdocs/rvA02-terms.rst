@@ -183,7 +183,8 @@
 
   
   Python
-    A language
+    A `programming language <https://www.python.org/>`_ that lets you work quickly
+    and integrate systems more effectively
   
   docutils
     A Python package that processes `restructured text <https://docutils.sourceforge.io/>`_
