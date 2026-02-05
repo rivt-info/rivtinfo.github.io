@@ -25,7 +25,6 @@ rv.T        **_[[MARKUP]]** type                      :ref:`Markup block`
 rv.D        **_[[METADATA]]** label                   :ref:`Meta block`
 rv.D        **_[[LAYOUT]]** label                     :ref:`Layout block` 
 all         **_[[END]]**                              :ref:`End block`
-all         **_[[NEW PAGE]]**                         :ref:`Start new page`
 ========== ========================================= ===============================
 
 .. _Shell script:
@@ -445,31 +444,4 @@ Doc Types     text, PDF, HTML
 =========== ==========================
 API Scope     All
 Doc Types     text, PDF, HTML
-=========== ==========================
-
-.. _Start new page:
-
-**[14t]** Start new page
-------------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. topic:: _[[NEWPAGE]]
-    
-    Starts new page.
-
-    .. code-block:: text
-
-        Syntax:
-            _[[NEWPAGE]] optional label 
-
-        Example:
-            _[[NEWPAGE]] 
-
-
-=========== ==========================
-API Scope     All
-Doc Types     PDF
 =========== ==========================

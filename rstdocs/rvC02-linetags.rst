@@ -26,6 +26,7 @@ rv.V, I                       text **_[V] var_name** text        :ref:`Variable 
 rv.V, I        assign cmd or **label _[E]**                      :ref:`Equation number`
 rv.V, I                      **title _[T]**                      :ref:`Table number`
 rv.V, I                    **caption _[F]**                      :ref:`Figure number`
+rv.V, I                       text **_[P]**                      :ref:`New Page`
 ========== ==================================================== ===============================
 
 ..  _Center text:
@@ -380,6 +381,34 @@ Doc Types     text, PDF, HTML
 
         Example:
             Stress Distribution _[F]
+
+
+=========== ==========================
+API Scope     Insert, Values
+Doc Types     text, PDF, HTML
+=========== ==========================
+
+.. _New Page:
+
+**[15t]** New Page
+------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+    Insert a page break in the document.
+
+.. topic:: _[P]
+
+    .. code-block:: text
+
+        Syntax:
+            text _[P]
+
+        Example:
+            Preceded by text or stand alone. _[P]
+            _[P]
 
 
 =========== ==========================
