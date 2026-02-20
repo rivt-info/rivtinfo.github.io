@@ -1,7 +1,7 @@
 **B.1 Installation**
 =================================  
 
-**[1t]** rivt Project
+**[1t]** rivt
 ----------------------------------
 
 .. raw:: html
@@ -63,7 +63,7 @@ and some install a *rivt framework*.
 
 .. _rivt-uv:
 
-**[2t]** Install **rivt-uv**
+**[2t]** uv install 
 ----------------------------------
 
 .. raw:: html
@@ -110,7 +110,7 @@ method is recommended for most users.
 
 .. _rivt-system install:
 
-**[3t]** install *rivt-system*
+**[3t]** system install
 --------------------------------
 
 .. raw:: html
@@ -124,7 +124,7 @@ method is recommended for most users.
 #. Install *rivtlib* and dependencies using `pip <https://pypi.org/project/pip/>`_ 
 
 A list of the dependencies and *requirements.txt* file is 
-:doc:`here <rvB01-install>`.
+:doc:`here <rvB01-overview>`.
 
 .. _rivt-zip:
 

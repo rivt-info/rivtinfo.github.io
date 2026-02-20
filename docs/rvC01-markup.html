@@ -146,14 +146,14 @@
   <ul class="bd-navbar-elements navbar-nav">
     
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvA01-intro.html">
-    A.1 Introduction
+  <a class="nav-link nav-internal" href="rvA01-start.html">
+    A.1 Start
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvB01-install.html">
+  <a class="nav-link nav-internal" href="rvB01-overview.html">
     B.1 Installation
   </a>
 </li>
@@ -260,14 +260,14 @@
   <ul class="bd-navbar-elements navbar-nav">
     
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvA01-intro.html">
-    A.1 Introduction
+  <a class="nav-link nav-internal" href="rvA01-start.html">
+    A.1 Start
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvB01-install.html">
+  <a class="nav-link nav-internal" href="rvB01-overview.html">
     B.1 Installation
   </a>
 </li>
@@ -396,17 +396,17 @@
 <h1><strong>C.1 Markup</strong><a class="headerlink" href="#c-1-markup" title="Link to this heading">#</a></h1>
 <section id="t-rivt-string">
 <span id="rivt-string"></span><h2><strong>[1t]</strong> rivt string<a class="headerlink" href="#t-rivt-string" title="Link to this heading">#</a></h2>
-<hr><p>Each <a class="reference internal" href="rvA01-intro.html"><span class="doc">API function</span></a> takes a triple quoted <a class="reference internal" href="rvA02-terms.html#term-rivt-string"><span class="xref std std-term">rivt
-string</span></a> argument composed of two parts - a <a class="reference internal" href="rvA02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a> followed
-by a <a class="reference internal" href="rvA02-terms.html#term-content-substring"><span class="xref std std-term">content substring</span></a>.</p>
+<hr><p>Each <a class="reference internal" href="rvA01-start.html"><span class="doc">API function</span></a> takes a triple quoted <a class="reference internal" href="rvF02-terms.html#term-rivt-string"><span class="xref std std-term">rivt
+string</span></a> argument composed of two parts - a <a class="reference internal" href="rvF02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a> followed
+by a <a class="reference internal" href="rvF02-terms.html#term-content-substring"><span class="xref std std-term">content substring</span></a>.</p>
 <p>The <em>header substring</em> is the first line of a <em>rivt string</em> that defines
 section processing and formatting. It is followed by a <em>content substring</em> that
-includes <a class="reference internal" href="rvA02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> and other text. It is indented 4 spaces for
+includes <a class="reference internal" href="rvF02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> and other text. It is indented 4 spaces for
 improved readability and section folding.</p>
 </section>
 <section id="t-header-substring">
 <span id="header-substring"></span><h2><strong>[2t]</strong> Header substring<a class="headerlink" href="#t-header-substring" title="Link to this heading">#</a></h2>
-<hr><p>The <a class="reference internal" href="rvA02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a> starts with a <em>section label</em> followed by vertical
+<hr><p>The <a class="reference internal" href="rvF02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a> starts with a <em>section label</em> followed by vertical
 bar that deliniates three comma separated <em>section parameters</em> that can
 override default behavior. The <em>section label</em> is the section title.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | doc;stored, private;public, section;merge</span>
@@ -528,7 +528,7 @@ default setting for each API is listed first (in bold) in the table below.</p>
 </section>
 <section id="t-content-substring">
 <span id="content-substring"></span><h2><strong>[3t]</strong> Content substring<a class="headerlink" href="#t-content-substring" title="Link to this heading">#</a></h2>
-<hr><p>The <a class="reference internal" href="rvA02-terms.html#term-content-substring"><span class="xref std std-term">content substring</span></a> is indented four spaces for legibility and
+<hr><p>The <a class="reference internal" href="rvF02-terms.html#term-content-substring"><span class="xref std std-term">content substring</span></a> is indented four spaces for legibility and
 code folding. It includes <a class="reference internal" href="rvC02-linetags.html"><span class="doc">line tags</span></a>,
 <a class="reference internal" href="rvC03-blocktags.html"><span class="doc">block tags</span></a> and  <a class="reference internal" href="rvC04-commands.html"><span class="doc">commands</span></a>
 along with  text.</p>
@@ -551,10 +551,10 @@ processing HTML, LaTeX and reStructuredText scripts.</p>
 <section id="t-tags-and-commands">
 <h2><strong>[5t]</strong> Tags and Commands<a class="headerlink" href="#t-tags-and-commands" title="Link to this heading">#</a></h2>
 <p><a class="reference internal" href="rvC02-linetags.html"><span class="doc">Line Tags</span></a></p>
-<p>A <a class="reference internal" href="rvA02-terms.html#term-line-tag"><span class="xref std std-term">line tag</span></a> formats a line of text and is denoted with a single
+<p>A <a class="reference internal" href="rvF02-terms.html#term-line-tag"><span class="xref std std-term">line tag</span></a> formats a line of text and is denoted with a single
 <strong>_[LETTER]</strong>, placed at or near the end of the line, depending on the tag.</p>
 <p><a class="reference internal" href="rvC03-blocktags.html"><span class="doc">Block Tags</span></a></p>
-<p>A <a class="reference internal" href="rvA02-terms.html#term-block-tag"><span class="xref std std-term">block tag</span></a> formats a block of text and begins with <strong>_[[TAGNAME]]</strong>
+<p>A <a class="reference internal" href="rvF02-terms.html#term-block-tag"><span class="xref std std-term">block tag</span></a> formats a block of text and begins with <strong>_[[TAGNAME]]</strong>
 and terminates with <strong>_[[END]]</strong>.</p>
 <p><a class="reference internal" href="rvC04-commands.html"><span class="doc">Commands</span></a></p>
 <p><em>rivt commands</em> read and write external files. They typically start in the

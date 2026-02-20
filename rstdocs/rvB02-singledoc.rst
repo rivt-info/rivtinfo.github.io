@@ -1,0 +1,230 @@
+**B.1 Single Docs**
+=================================  
+
+
+**[3t]** Summary
+--------------------------------------------------------------------- 
+
+.. raw:: html
+
+    <hr>
+
+A :term:`rivt file` publishes a formatted :term:`rivt doc` as a text, PDF or
+HTML file. A *rivt file* is a Python file (.py) that imports the
+:term:`rivtlib` Python package and includes :term:`rivt markup`. A collection
+of *rivt docs* may be collated as a :term:`rivt report`.
+
+*rivt file* examples are provided :doc:`here <rvD05-docex>` and 
+:doc:`here<rvD06-reportex>`. An interface for searching *rivt files* 
+on *GitHub* is :doc:`here <rvE03-ghsearch>`. All or parts of a *rivt file* the author
+chooses to share as a *public rivt file* can be shared under an 
+`Open Source license <https://opensource.org/licenses>`_. 
+rivt itself is distributed under the 
+`MIT open source license <https://opensource.org/license/mit>`_ . 
+(see :ref:`Licenses`). 
+
+
+The *rivt API* includes  :ref:`API functions <API functions>`, 
+:ref:`markup <Markup>` and :ref:`files <Files and folders>`. 
+The API is designed to be:
+
+- lightweight
+    :term:`rivt markup` is made up of about 3 dozen tags 
+    and commands, and wraps :term:`reStructuredText`.
+
+- flexible 
+    A *rivt file* produces a text, HTML or PDF *doc*. 
+    Multiple *docs* can be organized into a report. 
+
+- extensible 
+    *rivtlib* is written in Python with direct access to thousands of 
+    Python packages.
+
+.. rst-class:: center
+
+**rivt Doc Processing**
+
+.. image:: _static/img/rivtflow2.png
+    :width: 75%
+    :alt: rivt flow chart 
+    :align: center
+
+
+.. raw:: html
+
+    <hr>
+
+Each :term:`rivt file` outputs a corresponding :term:`doc` in the 
+format specified in *rv.D*. A doc number has the form:
+
+.. code-block:: text
+
+    rvAnn-filename.py
+
+where rv is a required prefix, A is an alphanumeric character and nn are two
+digit non-negative integers.  
+
+A *rivt report* is organized using the rivt *doc numbers*. If the *rivt file*
+names are:
+
+.. code-block:: bash
+
+    rvA01-filename.py
+    rv105-filename.py
+    rv212-filename.py  
+
+the *report numbers* would be: 
+
+- A.1 (division A, subdivision 1)
+- 1.5 (division 1, subdivision 5)
+- 2.12 (division 2, subdivision 12)
+
+Note that leading zeroes are dropped.  *Docs* are sorted alpha-numerically into
+divisions and subdivisions in the *report*.
+
+*Docs* are assembled from sources and published using a specified folder
+structure. The *singledocB* variable overrides the default report structure and
+specifies that resource files and *docs* are read from and written to the *rivt
+file* folder. It is intended for simpler, standalone *docs* with more limited
+format control. The comment variable is specified immediately after the import
+statement:
+
+.. code:: python
+
+    import rivtlib.rvapi as rv
+
+    # rv singledocB = True
+
+The default setting is False.
+
+:doc:`here <rvD01-documents>`.
+
+.. _Markup:
+
+**[5t]** Markup
+------------------------------------------------------------------------ 
+
+.. raw:: html
+
+    <hr>
+
+An API function starts in the first column and takes a triple quoted
+:term:`rivt string` (rS) argument. The first line of a *rivt string* is a
+:term:`header substring`, followed by a :term:`content substring` indented 4
+spaces for improved readability and section folding.
+
+The *header substring* specifies the section title and other
+processing parameters. The content substring includes 
+:term:`rivt markup` and other arbitrary text. For further details 
+see :doc:`here <rvC01-markup>`.
+
+.. code-block:: python
+
+    rv._("""Section Label | parameters
+
+         Content text that is 
+         indented four spaces.
+        
+        ...
+        
+        """)
+
+.. _Files and folders:
+
+**[6t]** Folder/Files
+--------------------------------------------------------------------- 
+
+.. raw:: html
+
+    <hr>
+
+A :term:`rivt file` is a Python plain text file ( *.py* ) that includes *rivt
+markup* and imports the :term:`rivtlib` package and API into the *rv*
+:term:`namespace`:
+
+.. code-block:: python
+
+    import rivtlib.rvapi as rv
+
+*rivt files* are stored in a root folder designated with the prefix *rivt-*.
+Each *rivt file* and corresponding *rivt doc* has a prefix that is used to
+organize the report. The  prefix has the form
+
+.. code-block::
+
+    rvANN-filename.py
+
+where A is an alpha-numeric character used for organizing report divisions, and
+NN is a two digit number used to organize sub-divisions. The file name is used
+as the *doc* title unless overridden in *rv.D*. Use underscores or hyphens
+rather than spaces to seprate words in the file name. They are replaced with
+spaces when a *doc* title is extracted.
+
+.. _top-folders:
+
+.. raw:: html
+    
+    <b>Folder Key</b>
+    <ol style="border: 2px; 
+            border-color: #49b2c3; 
+            border-style: solid; 
+            padding: 2em;
+            margin: 2em">
+        <li> Required names or prefixes are shown in brackets [ ].</li>
+        <li> Required folders start with a capital letter. </li>
+        <li> Folders that contain author provided files are marked with a 
+        single vertical bar ( | ).</li>
+        <li> Folders that contain <i>rivtlib</i> generated files are 
+            marked with a double vertical bar</li>
+    </ol>
+
+**Primary Folders**
+
+.. code-block:: bash
+
+    [rivt]-Report-Label/                Report Folder Name
+        ├── [rv101-]filename1.py        | rivt file
+        ├── [rv102-]filename2.py        | rivt file
+        ├── [rv201-]filename3.py        | rivt file
+        ├── [rv202-]filename4.py        | rivt file 
+
+        ...
+
+        ├── [Public]/                   || public rivt files 
+        ├── [Publish]/                  || doc and report files
+        ├── [Src]/                      |  source files provided by authors
+        ├── [Stored]/                   || stored files written by rivtlib
+        └── README.txt                  || searchable text report 
+
+
+The four primary rivt folders are:
+
+*Public*
+    Stores public *rivt files* generated by *rvitlib*. File content intended for 
+    sharing is defined by *section headers*. Public *rivt files* 
+    are identified by a hyphen after  the *rv* prefix e.g. *rv-101-filename1*. 
+    
+*Publish*
+    Stores *docs* and *reports* generated by *rvitlib*
+    
+*Src*
+    Stores images, data, code and text provided by the author.
+
+*Stored*
+    Stores files generated by *rvitlib*. Files include stored
+    sections identified in headers, api log files and processing log files. Files
+    may be attached to a report.
+
+The complete folder structure with subfolders is shown :ref:`here <report folders>`.
+
+
+.. toctree::
+    :maxdepth: 1
+    :hidden:
+
+    rvB02-python.rst
+    rvB03-vscode.rst
+    rvB04-git.rst
+    rvB05-texlive.rst
+    rvB06-freecad.rst
+

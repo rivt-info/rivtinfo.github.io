@@ -42,8 +42,8 @@ on *GitHub* is :doc:`here <rvE03-ghsearch>`.
     :maxdepth: 1
     :hidden:
 
-    rvA01-intro.rst
-    rvB01-install.rst
+    rvA01-start.rst
+    rvB01-overview.rst
     rvC01-markup.rst
     rvD01-documents.rst
     rvE01-collab.rst

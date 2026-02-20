@@ -1,7 +1,69 @@
-**A.1 Introduction**
-=================================================================
+**A.1 Start**
+=====================================================================
 
-**[1t]** Motivation
+**[1t]** Install rivt
+--------------------------------------------------------------------- 
+
+.. raw:: html
+
+<hr> 
+
+The options for installing rivt include:
+
+**zip file**
+
+This is the fastest way to start using rivt.  The rivt zip file has the name:
+
+.. code-block:: text
+
+    rivtzip-0-8-1.zip
+
+where the numbers are the major, minor and patch version numbers. The rivt zip 
+file may be downloaded from 
+`GitHub rivtzip <https://github.com/rivtlib-dev/rivtzip>`.
+
+The zip file may be unzipped in any folder that has read and write access. This
+is typically the users home folder. It may also be copied to, and used from, a
+flash drive. The advantage of rivtzip is the simplicity and speed to get
+started. The disadvnatge is the package and framework components are not easily
+updated.
+
+The rivtzip install includes four compenents. 
+
+1. A portable Python installation 
+
+2. The rivt package
+
+3. VSCode with rivt extensions
+
+4. rivt example files and docs
+
+an isolated Python environment with rivt
+and dependencies installed, and example files to get started. The zip file is
+available for download from includes an isolated Python environment with rivt
+and dependencies installed, and example files to get started. The zip file is
+available for download from
+
+
+
+
+**system install**
+
+If you are familiar with Python and have it installed, you can install rivt
+using pip and publish docs using the command line. If you are familiar with
+VSCode Refer to :doc:`here <rvB01-overview>` for installation instructions and
+:doc:`here <rvD01-documents>` for publishing instructions
+
+**uv install**
+
+*rivt* is an open source software project that simplifies sharing and reuse of
+engineering documents. These document types are generally complex. They
+include text, images, tables, calculations, models and computer code organized
+into large reports.
+
+
+
+**[2t]** Background
 --------------------------------------------------------------------- 
 
 .. raw:: html
@@ -9,9 +71,9 @@
     <hr>
 
 *rivt* is an open source software project that simplifies sharing and reuse of
-engineering documents. These document types are generally complex. They
-include text, images, tables, calculations, models and computer code organized
-into large reports.
+engineering documents. This type of document is generally more complex than a
+typical word document. It includes text, images, tables, calculations, models
+and computer code organized into reports.
 
 Because they are used in official capacities and include standards and
 codes (e.g. permitting), they need to be clear and concise. Because they are
@@ -61,7 +123,7 @@ Jupyter        no       no         no      yes         yes      yes
     .. [6] Collaboration support
 
 
-**[2t]** Overview
+**[3t]** Overview
 --------------------------------------------------------------------- 
 
 .. raw:: html
@@ -110,7 +172,7 @@ The API is designed to be:
 
 .. _API functions:
 
-**[3t]** API functions
+**[4t]** API functions
 --------------------------------------------------------------------- 
 
 .. raw:: html
@@ -186,7 +248,7 @@ in *rivt markup*.
 
 .. _Markup:
 
-**[4t]** Markup Overview
+**[5t]** Markup Overview
 ------------------------------------------------------------------------ 
 
 .. raw:: html
@@ -216,7 +278,7 @@ see :doc:`here <rvC01-markup>`.
 
 .. _Files and folders:
 
-**[4t]** Folder/Files overiew
+**[6t]** Folder/Files overiew
 --------------------------------------------------------------------- 
 
 .. raw:: html
@@ -304,7 +366,7 @@ The complete folder structure with subfolders is shown :ref:`here <report folder
 
 .. _Reports and single docs:
 
-**[5t]** Doc/report overview
+**[7t]** Doc/report overview
 -----------------------------------------------------------------------
 
 .. raw:: html
@@ -360,6 +422,6 @@ The default setting is False.
     :maxdepth: 1
     :hidden:
 
-    rvA02-terms.rst
+    rvF02-terms.rst
     rvA03-faq.rst
 

@@ -4,10 +4,8 @@
 
    <div style="height: 0; visibility: hidden;">
 
-Home
-========
-
-.. raw:: html
+   Home
+   ========
 
    </div>
 
@@ -21,18 +19,20 @@ Home
 
    <hr>
 
-*rivt* is an open source software project for writing engineering documents.
-Documents are formatted as text, HTML or PDF files (:term:`rivt docs`)
-that are generated from :term:`rivt markup` text files (:term:`rivt files`).
+*rivt* is an open source software project for writing and formatting
+engineering documents. Documents are produced in text, HTML or PDF,
+referred to as :term:`rivt docs`. They are generated from :term:`rivt markup`
+text files, referred to as :term:`rivt files`.
 
 A *rivt file* is a :term:`Python` file (.py) that imports the :term:`rivtlib`
 Python package and interprets *rivt markup*. A *rivt file* can
-publish *docs* in all formats and can be compiled with other *docs* into a
-:term:`rivt report`. This site is an example of a *rivt report*.
+publish *docs* in all formats and can be collated with other *docs* into a
+structured, linked :term:`rivt report`. This site is an example of a *rivt report*.
 
-Small *rivt file* examples are provided :doc:`here <rvD05-docex>` and 
-:doc:`here<rvD06-reportex>`. An interface for searching *rivt files* 
-on *GitHub* is :doc:`here <rvE03-ghsearch>`.
+*rivt file and doc* examples are provided 
+`here <https://codesandbox.io/p/devbox/rivt1-dkmqfm?file=%2Frv001-single-doc.py%3A62%2C15>`. 
+An interface for searching *rivt files* on *GitHub* is 
+:doc:`here <rvE03-ghsearch>`.
 
 .. raw:: html
 
@@ -42,9 +42,9 @@ on *GitHub* is :doc:`here <rvE03-ghsearch>`.
     :maxdepth: 1
     :hidden:
 
-    rvA01-intro.rst
-    rvB01-install.rst
+    rvA01-start.rst
+    rvB01-overview.rst
     rvC01-markup.rst
     rvD01-documents.rst
     rvE01-collab.rst
-    rvF01-quickref.rst
+    rvF01-quickref.rrst

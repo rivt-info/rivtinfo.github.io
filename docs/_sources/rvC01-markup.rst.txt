@@ -10,7 +10,7 @@
 
     <hr>
 
-Each :doc:`API function <rvA01-intro>` takes a triple quoted :term:`rivt
+Each :doc:`API function <rvA01-start>` takes a triple quoted :term:`rivt
 string` argument composed of two parts - a :term:`header substring` followed 
 by a :term:`content substring`.
 

@@ -71,6 +71,7 @@ rv.V, I                       text **_[V] var_name** text        :ref:`Variable 
 rv.V, I        assign var or **label _[E]**                      :ref:`Equation number`
 rv.V, I                      **title _[T]**                      :ref:`Table number`
 rv.V, I                    **caption _[F]**                      :ref:`Figure number`
+rv.V, I                       text **_[P]**                      :ref:`New Page`
 ========== ==================================================== ===============================
 
 
@@ -95,7 +96,6 @@ rv.V, T     **_[[PYTHON]]** namespace                 :ref:`Python block`
 rv.D        **_[[METADATA]]** label                   :ref:`Meta block`
 rv.D        **_[[LAYOUT]]** label                     :ref:`Layout block` 
 all         **_[[END]]**                              :ref:`End block`
-all         **_[[NEW PAGE]]**                         :ref:`Start new page`
 ========== ========================================= ===============================
 
 **[4t]** Command Summary
