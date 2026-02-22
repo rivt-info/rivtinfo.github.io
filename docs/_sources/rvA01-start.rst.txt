@@ -8,8 +8,8 @@
 
    <hr> 
 
-Examples may be run in the cloud or on a local computer. A typical IDE 
-layout for running a small example rivt file is shown below and can be 
+*rivt file* examples may be run in the cloud or on a local computer. A 
+typical IDE layout for running a rivt file is shown below and can be 
 `explored here <https://codesandbox.io/p/devbox/rivt1-dkmqfm?file=%2Frv001-single-doc.py%3A62%2C15>`__. 
 
 .. figure::  _static/img/ide2.png
