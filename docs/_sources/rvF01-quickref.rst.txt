@@ -116,10 +116,10 @@ API Scope           | Command | path | parameters                          Descr
 rv.R        **| SHELL |** rel path | os, wait                               :ref:`Shell file`
 rv.I        **| TEXT |** rel path |  language                               :ref:`Text file`
 rv.V, I     **| TABLE |** rel path | title, width, rows, align, head        :ref:`Table file`     
-rv.V, I     **| IMAGE |** rel path | caption, scale, number                 :ref:`Image file`
-rv.V, I     **| IMAGE2 |** rel path1, rel path2 | caption, scale number     :ref:`Adjacent images`
+rv.V, I     **| IMAGE |** rel path | caption, scale, figure                 :ref:`Image file`
+rv.V, I     **| IMAGE2 |** rel path1, rel path2 | c1, c2, s1, s2, f1, f2    :ref:`Adjacent images`
 rv.V        **| VALTABLE |** rel path | title, rows, number                 :ref:`Values file`     
-rv.V        a **=:** 1*IN  | unit1, unit2, decimal | label                  :ref:`Define variable`
+rv.V        a **:=:** 1*IN  | unit1, unit2, decimal | label                 :ref:`Define variable`
 rv.V        c **<=:** expression | unit1, unit2, decimal | label            :ref:`Assign value`
 rv.V        a **<** c  | decimal | text1, text2, color1, color2             :ref:`Compare values`
 rv.T, V     **| PYTHON |** rel path | namespace                             :ref:`Python file`
@@ -265,3 +265,229 @@ rv.D        **| PUBLISH |** rel path (ini) | type                           :ref
                 ├── v101-2.csv
                 └── v102-3.csv             
         └── README.txt                         || searchable text report 
+
+
+.. _package requirements:
+
+**[6t]** package requirements
+-------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+The minimum Python version is *3.13*. A *rivt* installation includes Python
+packages for:
+
+- document formatting
+- numerical analysis
+- symbolic processing
+- visualization
+
+=============================================== ================================
+      Dependency                                      description
+=============================================== ================================
+  "pyzo>=4.20.0"                                   lightweight IDE
+  "pyside6>=6.10.1"                                QT bindings
+  "fastcore>=1.8.16"                               code simplification                 
+  "tabulate>=0.9.0"                                format tables                 
+  "pillow>=11.2.1"                                 image processing
+  "matplotlib>=3.10.1"                             data visualization
+  "sympy>=1.13.3"                                  symbolic analysis
+  "numpy>=2.2.5"                                   numerical analysis
+  "scipy>=1.16.3"                                  numerical analysis
+  "pandas>=2.2.3"                                  data analysis    
+  "docutils>=0.21.2"                               reStructuredText processing  
+  "ipython>=8.16.2"                                interactive Python shell
+  "ipykernel>=6.28.1"                              Jupyter kernel for Python
+  "reportlab>=4.4.0"                               PDF generation without LaTeX
+  "rst2pdf>=0.103.1"                               PDF generation without LaTeX
+  "pypdf>=1.0.3"                                   PDF manipulation
+  "Sphinx>=8.2.3"                                  HTML generation  
+  "pydata-sphinx-theme>=0.16.1"                    HTML generation  
+  "sphinx-copybutton>=0.5.2"                       HTML generation  
+  "sphinx_design>=0.6.1"                           HTML generation  
+  "sphinx-favicon>=1.0.1"                          HTML generation  
+  "sphinx-togglebutton>=0.3.2"                     HTML generation  
+  "sphinxcontrib-applehelp>=2.0.0"                 HTML generation 
+  "sphinxcontrib-devhelp>=2.0.0"                   HTML generation
+  "sphinxcontrib-email>=0.3.6"                     HTML generation
+  "sphinxcontrib-htmlhelp>=2.1.0"                  HTML generation
+  "sphinxcontrib-jquery>=4.1"                      HTML generation
+  "sphinxcontrib-jsmath>=1.0.1"                    HTML generation
+  "sphinxcontrib-qthelp>=2.0.0"                    HTML generation
+  "sphinxcontrib-serializinghtml>=2.0.0"           HTML generation
+=============================================== ================================        
+
+
+
+**[7t]** VSCode settings for rivt
+------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+Workspace extension and other settings are stored in the *.vscode* folder and
+can be included and moved as part of a *rivt report*. Settings that affect the
+*rivt* environment incldue:
+
+    - rivt.code-snippets
+    - settings.json (extension settings)
+    - tasks.json
+    - launch.json
+
+Global settings can be exported and imported using VSCode Profiles. VSCode
+*rivt* extensions and settings may be installed from this link.
+
+============================================== ===============================
+Extensions                                       description
+============================================== ===============================
+**BUTTONS**                                         ---
+tombonnike.vscode-status-bar-format-toggle          format button
+gsppvo.vscode-commandbar                            command buttons
+AdamAnand.adamstool                                 command buttons
+nanlei.save-all                                     save all button
+Ho-Wan.setting-toggle                               toggle settings
+yasukotelin.toggle-panel                            toggle panel
+fabiospampinato.vscode-commands                     user command buttons
+jerrygoyal.shortcut-menu-bar                        menu bar
+**EDITING**                                         ---
+henryclayton.context-menu-toggle-comments           toggle comments
+TroelsDamgaard.reflow-paragraph                     wrap paragraph
+streetsidesoftware.code-spell-checker               spell check
+jmviz.quote-list                                    quote elements in a list
+njpwerner.autodocstring                             insert doc string
+oijaz.unicode-latex                                 unicode symbols from latex
+jsynowiec.vscode-insertdatestring                   insert date string
+janisdd.vscode-edit-csv                             csv editor
+**VIEWS**                                           ---
+GrapeCity.gc-excelviewer                            excel viewer
+SimonSiefke.svg-preview                             svg viewer
+tomoki1207.pdf                                      pdf viewer
+RandomFractalsInc.vscode-data-preview               data viewing tools
+Fr43nk.seito-openfile                               open file from path
+vikyd.vscode-fold-level                             line folding tool
+file-icons.file-icons                               icon library
+tintinweb.vscode-inline-bookmarks                   inline bookmarks
+**MANAGEMENT**                                      ---
+alefragnani.project-manager                         folder, project management
+Anjali.clipboard-history                            clipboard history
+dionmunk.vscode-notes                               notepad
+hbenl.vscode-test-explorer                          test explorer
+mightycoco.fsdeploy                                 save file to second location
+lyzerk.linecounter                                  count lines in files
+sandcastle.vscode-open                              open files in default app
+zjffun.snippetsmanager                              snippet manager
+spmeesseman.vscode-taskexplorer                     task explorer
+**GITHUB**                                          ---
+GitHub.codespaces                                   run files in codespaces
+GitHub.remotehub                                    run remote files
+ettoreciprian.vscode-websearch                      search github within VSCode
+donjayamanne.githistory                             git history
+MichaelCurrin.auto-commit-msg                       git auto commit message     
+github.vscode-github-actions                        github actions
+GitHub.vscode-pull-request-github                   github pull request
+k9982874.github-gist-explorer                       gist explorer
+vsls-contrib.gistfs                                 gist tools
+**PYTHON**                                          ---
+ms-python.autopep8                                  python pep8 formatting
+ms-python.isort                                     python sort imports
+donjayamanne.python-environment-manager             python library list
+ms-python.python                                    python tools
+ms-python.vscode-pylance                            python language server
+ms-toolsai.jupyter                                  jupyter tools
+ms-toolsai.jupyter-keymap                           jupyter tools
+ms-toolsai.jupyter-renderers                        jupyter tools
+ms-toolsai.vscode-jupyter-cell-tags                 jupyter tools
+ms-toolsai.vscode-jupyter-slideshow                 jupyter tools
+**LANGUAGES**                                       ---
+qwtel.sqlite-viewer                                 sqlite tools
+RDebugger.r-debugger                                R tools
+REditorSupport.r                                    R tools
+ms-vscode-remote.remote-wsl                         windows linux tools
+James-Yu.latex-workshop                             latex tools
+lextudio.restructuredtext                           restructured text tools
+trond-snekvik.simple-rst                            restructured syntax
+yzane.markdown-pdf                                  markdown to pdf
+yzhang.markdown-all-in-one                          markdown tools
+============================================== ===============================
+
+
+============== ==============================================================
+Snippets/Keys            description
+============== ==============================================================
+run                 API Run function
+ins                 API Insert function   
+val                 API Values function
+too                 API Tools function
+wri                 API Write function
+alt+q               rewrap paragraph with hard line feeds (80 default)
+alt+p               open file under cursor
+alt+.               select correct spelling under cursor
+alt+8               insert date
+alt+9               insert time
+ctl+1               focus on first editor
+ctl+2               focus on next editor
+ctl+3               focus on previous editor
+ctl+8               focus on explorer pane
+ctl+9               focus on github pane    
+ctl+alt+x           reload window
+ctl+alt+[           reload window
+ctl+alt+]           unfold all code
+ctl+alt+u           unfold all code
+ctl+alt+f           fold code level 2 (rivt sections visible)
+ctl+alt+a           fold code - all levels
+ctl+alt+t           toggle local fold
+ctl+alt+e           toggle explorer sort order
+ctl+alt+s           toggle spell check
+ctl+alt+g           next editor group
+ctl+shift+u         open URL under cursor in browser
+ctl+shift+s         open GitHub README search for rivt
+ctl+shift+a         commit all 
+ctl+shift+z         commit the current editor
+ctl+shift+x         post to remote   
+============== ==============================================================
+
+
+============== ===========================================================
+Keystroke                   Description
+============== ===========================================================
+alt+q                rewrap paragraph with hard line feeds (80 default)
+alt+p                open file under cursor
+alt+.                select correct spelling under cursor
+alt+8                insert date
+alt+9                insert time
+
+ctl+1                focus on first editor
+ctl+2                focus on next editor
+ctl+3                focus on previous editor
+ctl+8                focus on explorer pane
+ctl+9                focus on github pane    
+
+ctl+alt+x            reload window
+ctl+alt+u            unfold all code
+ctl+alt+f            fold code level 2 (rivt sections visible)
+ctl+alt+a            fold code - all levels
+ctl+alt+t            toggle local fold
+ctl+alt+e            toggle explorer sort order
+ctl+alt+s            toggle spell check
+ctl+alt+g            next editor group
+
+ctl+shift+u          open URL under cursor in browser
+ctl+shift+s          open GitHub rivt README search
+ctl+shift+a          commit all 
+ctl+shift+z          commit current editor
+ctl+shift+x          post to remote   
+============== ===========================================================
+
+
+.. toctree::
+    :maxdepth: 1
+    :hidden:
+
+    rvF02-terms.rst
+
+
+
+

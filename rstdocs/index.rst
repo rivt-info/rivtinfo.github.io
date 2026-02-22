@@ -47,4 +47,4 @@ An interface for searching *rivt files* on *GitHub* is
     rvC01-markup.rst
     rvD01-documents.rst
     rvE01-collab.rst
-    rvF01-quickref.rrst
+    rvF01-quickref.rst

@@ -17,7 +17,7 @@
 
     <hr>
 
-.. dropdown:: Which open source license applies to *rivtlib*?  
+.. dropdown:: What is the open source license for *rivtlib*?  
 
     **rivtlib** is distributed under the 
     `MIT open source license <https://opensource.org/license/mit/>`_.

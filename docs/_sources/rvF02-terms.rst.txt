@@ -69,7 +69,7 @@
   
   rivt
     An open source Python project that includes :term:`rivtlib` and approximately 
-    two dozen :doc:`Python packages <rvB02-python>`. When *rivt* is installed
+    two dozen :doc:`Python packages <rvF01-quickref>`. When *rivt* is installed
     :term:`docs` and :term:`reports` may be edited and published using a text
     editor.
   
@@ -110,7 +110,7 @@
 
     #. `VSCode <https://code.visualstudio.com/>`_ and 
        `VSCode extensions <https://marketplace.visualstudio.com/vscode>`_. 
-       *rivt* extensions and snippets are :doc:`here <rvB03-vscode>`.
+       *rivt* extensions and snippets are :doc:`here <rvF01-quickref>`.
     #. `Git <https://git-scm.com>`_ and set up a `GitHub <hhttps://github.com>`_ 
     #. `LaTeX <https://www.tug.org/texlive/>`_ 
     #. `QCAD <https://qcad.io/en/>`_ 

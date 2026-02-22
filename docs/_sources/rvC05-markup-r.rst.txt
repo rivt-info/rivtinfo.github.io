@@ -24,7 +24,6 @@ The *Run* API function executes shell commands.
 ======================================= ==============================
  **_[[SHELL]]** process parameters            :ref:`Shell script`
  **_[[END]]**                                 :ref:`End block`
- **_[[NEW PAGE]]**                            :ref:`Start new page`
 ======================================= ==============================
 
 **[3i]** Commands

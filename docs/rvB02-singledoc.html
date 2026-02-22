@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
-    <title>B.6 FreeCAD &#8212; rivt</title>
+    <title>B.1 Single Docs &#8212; rivt</title>
   
   
   
@@ -56,11 +56,11 @@
     <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'rvB06-freecad';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'rvB02-singledoc';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="C.1 Markup" href="rvC01-markup.html" />
-    <link rel="prev" title="B.5 texlive" href="rvB05-texlive.html" />
+    <link rel="next" title="B.1 Framework" href="rvB03-framework.html" />
+    <link rel="prev" title="B.1 Overview" href="rvB01-overview.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -154,7 +154,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="rvB01-overview.html">
-    B.1 Installation
+    B.1 Overview
   </a>
 </li>
 
@@ -268,7 +268,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="rvB01-overview.html">
-    B.1 Installation
+    B.1 Overview
   </a>
 </li>
 
@@ -327,11 +327,8 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="rvB02-python.html"><strong>B.2 Dependencies</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvB03-vscode.html"><strong>B.3 VSCode Settings</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvB04-git.html"><strong>B.4 Git</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvB05-texlive.html"><strong>B.5 texlive</strong></a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>B.6 FreeCAD</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>B.1 Single Docs</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvB03-framework.html"><strong>B.1 Framework</strong></a></li>
 </ul>
 </div>
 </nav></div>
@@ -373,9 +370,9 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="rvB01-overview.html" class="nav-link"><strong>B.1 Installation</strong></a></li>
+    <li class="breadcrumb-item"><a href="rvB01-overview.html" class="nav-link"><strong>B.1 Overview</strong></a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>B.6 FreeCAD</strong></span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>B.1 Single Docs</strong></span></li>
   </ul>
 </nav>
 </div>
@@ -392,40 +389,11 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="b-6-freecad">
-<h1><strong>B.6 FreeCAD</strong><a class="headerlink" href="#b-6-freecad" title="Link to this heading">#</a></h1>
-<section id="t-freecad">
-<h2><strong>[1t]</strong> FreeCAD<a class="headerlink" href="#t-freecad" title="Link to this heading">#</a></h2>
-<hr><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Create</span> <span class="n">your</span> <span class="n">FreeCAD</span> <span class="n">Python</span> <span class="n">script</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="p">,</span> <span class="n">my_script</span><span class="o">.</span><span class="n">py</span><span class="p">)</span> <span class="n">containing</span> <span class="n">the</span> <span class="n">FreeCAD</span>
-<span class="n">API</span> <span class="n">calls</span> <span class="k">as</span> <span class="k">if</span> <span class="n">it</span> <span class="n">were</span> <span class="n">a</span> <span class="n">macro</span><span class="o">.</span> <span class="n">Use</span> <span class="n">Pythons</span> <span class="n">subprocess</span> <span class="n">module</span> <span class="n">to</span> <span class="n">execute</span> <span class="n">the</span>
-<span class="n">freecadcmd</span> <span class="p">(</span><span class="ow">or</span> <span class="n">FreeCAD</span><span class="o">.</span><span class="n">exe</span> <span class="o">--</span><span class="n">console</span> <span class="ow">or</span> <span class="n">similar</span><span class="p">,</span> <span class="n">depending</span> <span class="n">on</span> <span class="n">OS</span><span class="p">)</span> <span class="n">executable</span><span class="p">,</span>
-<span class="n">passing</span> <span class="n">your</span> <span class="n">script</span> <span class="k">as</span> <span class="n">an</span> <span class="n">argument</span><span class="o">.</span> <span class="n">Example</span> <span class="n">Script</span><span class="p">:</span> <span class="n">python</span> <span class="kn">import</span><span class="w"> </span><span class="nn">subprocess</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
-
-<span class="c1"># Define the path to the freecadcmd executable or AppImage</span>
-<span class="c1"># Adjust this path based on your installation</span>
-<span class="c1"># Example Linux: FC_PATH = &#39;/usr/bin/freecadcmd&#39;</span>
-<span class="c1"># Example Windows: FC_PATH = &#39;C:\\Program Files\\FreeCAD X.YY\\bin\\freecadcmd.exe&#39;</span>
-<span class="c1"># Example AppImage: FC_PATH = &#39;~/Downloads/FreeCAD_*.AppImage&#39;</span>
-
-<span class="n">FC_PATH</span> <span class="o">=</span> <span class="s1">&#39;freecadcmd&#39;</span> <span class="c1"># Try this if the executable is in your system PATH</span>
-
-<span class="n">script_to_run</span> <span class="o">=</span> <span class="s1">&#39;my_script.py&#39;</span> <span class="c1"># Your automation script</span>
-
-<span class="k">try</span><span class="p">:</span>
-    <span class="c1"># Run FreeCAD in no-GUI/console mode, executing the script</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">([</span><span class="n">FC_PATH</span><span class="p">,</span> <span class="n">script_to_run</span><span class="p">],</span> <span class="n">capture_output</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">check</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Script ran successfully.&quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Output:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">result</span><span class="o">.</span><span class="n">stdout</span><span class="p">)</span>
-<span class="k">except</span> <span class="ne">FileNotFoundError</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error: FreeCAD executable not found at &#39;</span><span class="si">{</span><span class="n">FC_PATH</span><span class="si">}</span><span class="s2">&#39;. Check your path.&quot;</span><span class="p">)</span>
-<span class="k">except</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">CalledProcessError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error running FreeCAD command.&quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;STDOUT:&quot;</span><span class="p">,</span> <span class="n">e</span><span class="o">.</span><span class="n">stdout</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;STDERR:&quot;</span><span class="p">,</span> <span class="n">e</span><span class="o">.</span><span class="n">stderr</span><span class="p">)</span>
-</pre></div>
-</div>
-</section>
+  <section id="b-1-single-docs">
+<h1><strong>B.1 Single Docs</strong><a class="headerlink" href="#b-1-single-docs" title="Link to this heading">#</a></h1>
+<section id="t-summary">
+<h2><strong>[1t]</strong> Summary<a class="headerlink" href="#t-summary" title="Link to this heading">#</a></h2>
+<hr></section>
 </section>
 
 
@@ -439,20 +407,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rvB05-texlive.html"
+       href="rvB01-overview.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>B.5 texlive</strong></p>
+        <p class="prev-next-title"><strong>B.1 Overview</strong></p>
       </div>
     </a>
     <a class="right-next"
-       href="rvC01-markup.html"
+       href="rvB03-framework.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>C.1 Markup</strong></p>
+        <p class="prev-next-title"><strong>B.1 Framework</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -475,7 +443,7 @@
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-freecad"><strong>[1t]</strong> FreeCAD</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-summary"><strong>[1t]</strong> Summary</a></li>
 </ul>
   </nav></div>
 

@@ -8,20 +8,26 @@
 
    <hr> 
 
-Examples may be run in the cloud or on a local computer.  Local installation
-methods include the following options:
+Examples may be run in the cloud or on a local computer. A typical IDE 
+layout for running a small example rivt file is shown below and can be 
+`explored here <https://codesandbox.io/p/devbox/rivt1-dkmqfm?file=%2Frv001-single-doc.py%3A62%2C15>`. 
+
+.. figure::  _static/img/ide2.png
+    :class: dark-light
+    :scale: 40%
+    :align: center
+    :alt: ide layout
+
+The above online example is inactive. A live, 
+`:ref: cloud based example <Codespace>` can be forked (copied), 
+edited and run in a personal GitHub account.
+
+Local installation methods include the following options. *rivt-zip* is 
+recommended for users unfamiliar with Python.
 
 #. portable zip folder (:ref:`rivt-portable`) 
-#. uv package manager (:ref:`rivt-uv``) 
+#. uv package manager (:ref:`rivt-uv`) 
 #. system Python package (:ref:`rivt-sys`). 
-
-*rivt-zip* is recommended for users unfamiliar with Python.
-
-No-install, cloud based examples can be run in a :ref:`Codespace` with a 
-GitHub account.
-
-A typical IDE layout for running a rivt file with a simple example file is shown
-:doc:`here <https://codesandbox.io/p/devbox/rivt1-dkmqfm?file=%2Frv001-single-doc.py%3A62%2C15>`. 
 
 
 .. _rivt-portable:
@@ -77,7 +83,7 @@ The *rivt-uv* installation method is recommended for most users.
 .. topic:: Step 1. Install uv
 
     Install *uv* from 
-    `here <https://docs.astral.sh/uv/getting-started/installation/#pypi>. 
+    `here <https://docs.astral.sh/uv/getting-started/installation/#pypi>`. 
 
     The recommended method for installing *uv* is from the command line:
 
@@ -105,7 +111,7 @@ The *rivt-uv* installation method is recommended for most users.
 
 .. topic:: Step 3. Run the example program from Pyzo.
 
-    A *rivt* installation includes the `Pyzo <https://pyzo.org/>`_ IDE for
+    A *rivt* installation includes the `Pyzo <https://pyzo.org/>`. IDE for
     editing and running examples. The *rivt-uv* installation includes commands
     named *rivt-example.cmd* (Windows) or *rivt-example.sh* (Macos or Linux)
     that start *Pyzo* with the example file *rv001-single-doc.py*.
@@ -139,27 +145,29 @@ The *rivt-uv* installation method is recommended for most users.
     
 A list of the dependencies is :ref:`here <package requirements>`.
 
-
-.. _CodeSandbox:
-
-**[4t]** CodeSandbox
---------------------------------
-
-.. raw:: html
-
-    <hr>
-
-
-
 .. _CodeSpace:
 
-**[4t]** CodeSpace
+**[5t]** CodeSpace
 --------------------------------
 
 .. raw:: html
 
     <hr>
 
+GitHub Codespaces is a cloud-hosted, secure development environment that
+provides a ready-to-use workspace in a web browser or 
+local Visual Studio Code IDE. It requires a free GitHub account.
+
+A Codespace with *rivt* examples can be forked into a personal GitHub account 
+where it can be edited and run. 
+
+The repo can be found `here <https://github.com/rivt-info/rivt-codespace>`.
+
+.. figure::  _static/img/codespace2.png
+    :class: dark-light
+    :scale: 40%
+    :align: center
+    :alt: ide layout
 
 
 .. toctree::
@@ -167,5 +175,5 @@ A list of the dependencies is :ref:`here <package requirements>`.
     :hidden:
 
     rvA02-motivation.rst
-    rvA02-faq.rst
+    rvA03-faq.rst
 

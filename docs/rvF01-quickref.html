@@ -59,7 +59,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'rvF01-quickref';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="E.3 GitHub Search" href="rvE03-ghsearch.html" />
+    <link rel="next" title="A.2 Terms" href="rvF02-terms.html" />
+    <link rel="prev" title="E.2 Public rivt files" href="rvE04-publicrivt.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -153,7 +154,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvB01-overview.html">
-    B.1 Installation
+    B.1 Overview
   </a>
 </li>
 
@@ -267,7 +268,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvB01-overview.html">
-    B.1 Installation
+    B.1 Overview
   </a>
 </li>
 
@@ -325,7 +326,10 @@
         <div class="sidebar-primary-item">
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
-    <div class="bd-toc-item navbar-nav"></div>
+    <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="rvF02-terms.html"><strong>A.2 Terms</strong></a></li>
+</ul>
+</div>
 </nav></div>
     </div>
   
@@ -649,11 +653,11 @@ are in the default path only the file name needs to be provided.</p>
 <td><p><a class="reference internal" href="rvC04-commands.html#table-file"><span class="std std-ref">[4t] Table file</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V, I</p></td>
-<td><p><strong>| IMAGE |</strong> rel path | caption, scale, number</p></td>
+<td><p><strong>| IMAGE |</strong> rel path | caption, scale, figure</p></td>
 <td><p><a class="reference internal" href="rvC04-commands.html#image-file"><span class="std std-ref">[5t] Image file</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.V, I</p></td>
-<td><p><strong>| IMAGE2 |</strong> rel path1, rel path2 | caption, scale number</p></td>
+<td><p><strong>| IMAGE2 |</strong> rel path1, rel path2 | c1, c2, s1, s2, f1, f2</p></td>
 <td><p><a class="reference internal" href="rvC04-commands.html#adjacent-images"><span class="std std-ref">[6t] Adjacent images</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V</p></td>
@@ -661,7 +665,7 @@ are in the default path only the file name needs to be provided.</p>
 <td><p><a class="reference internal" href="rvC04-commands.html#values-file"><span class="std std-ref">[7t]  Valtable file</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.V</p></td>
-<td><p>a <strong>=:</strong> 1*IN  | unit1, unit2, decimal | label</p></td>
+<td><p>a <strong>:=:</strong> 1*IN  | unit1, unit2, decimal | label</p></td>
 <td><p><a class="reference internal" href="rvC04-commands.html#define-variable"><span class="std std-ref">[8t] Define variable</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V</p></td>
@@ -846,6 +850,528 @@ are in the default path only the file name needs to be provided.</p>
 </pre></div>
 </div>
 </section>
+<section id="t-package-requirements">
+<span id="package-requirements"></span><h2><strong>[6t]</strong> package requirements<a class="headerlink" href="#t-package-requirements" title="Link to this heading">#</a></h2>
+<hr><p>The minimum Python version is <em>3.13</em>. A <em>rivt</em> installation includes Python
+packages for:</p>
+<ul class="simple">
+<li><p>document formatting</p></li>
+<li><p>numerical analysis</p></li>
+<li><p>symbolic processing</p></li>
+<li><p>visualization</p></li>
+</ul>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Dependency</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>“pyzo&gt;=4.20.0”</p></td>
+<td><p>lightweight IDE</p></td>
+</tr>
+<tr class="row-odd"><td><p>“pyside6&gt;=6.10.1”</p></td>
+<td><p>QT bindings</p></td>
+</tr>
+<tr class="row-even"><td><p>“fastcore&gt;=1.8.16”</p></td>
+<td><p>code simplification</p></td>
+</tr>
+<tr class="row-odd"><td><p>“tabulate&gt;=0.9.0”</p></td>
+<td><p>format tables</p></td>
+</tr>
+<tr class="row-even"><td><p>“pillow&gt;=11.2.1”</p></td>
+<td><p>image processing</p></td>
+</tr>
+<tr class="row-odd"><td><p>“matplotlib&gt;=3.10.1”</p></td>
+<td><p>data visualization</p></td>
+</tr>
+<tr class="row-even"><td><p>“sympy&gt;=1.13.3”</p></td>
+<td><p>symbolic analysis</p></td>
+</tr>
+<tr class="row-odd"><td><p>“numpy&gt;=2.2.5”</p></td>
+<td><p>numerical analysis</p></td>
+</tr>
+<tr class="row-even"><td><p>“scipy&gt;=1.16.3”</p></td>
+<td><p>numerical analysis</p></td>
+</tr>
+<tr class="row-odd"><td><p>“pandas&gt;=2.2.3”</p></td>
+<td><p>data analysis</p></td>
+</tr>
+<tr class="row-even"><td><p>“docutils&gt;=0.21.2”</p></td>
+<td><p>reStructuredText processing</p></td>
+</tr>
+<tr class="row-odd"><td><p>“ipython&gt;=8.16.2”</p></td>
+<td><p>interactive Python shell</p></td>
+</tr>
+<tr class="row-even"><td><p>“ipykernel&gt;=6.28.1”</p></td>
+<td><p>Jupyter kernel for Python</p></td>
+</tr>
+<tr class="row-odd"><td><p>“reportlab&gt;=4.4.0”</p></td>
+<td><p>PDF generation without LaTeX</p></td>
+</tr>
+<tr class="row-even"><td><p>“rst2pdf&gt;=0.103.1”</p></td>
+<td><p>PDF generation without LaTeX</p></td>
+</tr>
+<tr class="row-odd"><td><p>“pypdf&gt;=1.0.3”</p></td>
+<td><p>PDF manipulation</p></td>
+</tr>
+<tr class="row-even"><td><p>“Sphinx&gt;=8.2.3”</p></td>
+<td><p>HTML generation</p></td>
+</tr>
+<tr class="row-odd"><td><p>“pydata-sphinx-theme&gt;=0.16.1”</p></td>
+<td><p>HTML generation</p></td>
+</tr>
+<tr class="row-even"><td><p>“sphinx-copybutton&gt;=0.5.2”</p></td>
+<td><p>HTML generation</p></td>
+</tr>
+<tr class="row-odd"><td><p>“sphinx_design&gt;=0.6.1”</p></td>
+<td><p>HTML generation</p></td>
+</tr>
+<tr class="row-even"><td><p>“sphinx-favicon&gt;=1.0.1”</p></td>
+<td><p>HTML generation</p></td>
+</tr>
+<tr class="row-odd"><td><p>“sphinx-togglebutton&gt;=0.3.2”</p></td>
+<td><p>HTML generation</p></td>
+</tr>
+<tr class="row-even"><td><p>“sphinxcontrib-applehelp&gt;=2.0.0”</p></td>
+<td><p>HTML generation</p></td>
+</tr>
+<tr class="row-odd"><td><p>“sphinxcontrib-devhelp&gt;=2.0.0”</p></td>
+<td><p>HTML generation</p></td>
+</tr>
+<tr class="row-even"><td><p>“sphinxcontrib-email&gt;=0.3.6”</p></td>
+<td><p>HTML generation</p></td>
+</tr>
+<tr class="row-odd"><td><p>“sphinxcontrib-htmlhelp&gt;=2.1.0”</p></td>
+<td><p>HTML generation</p></td>
+</tr>
+<tr class="row-even"><td><p>“sphinxcontrib-jquery&gt;=4.1”</p></td>
+<td><p>HTML generation</p></td>
+</tr>
+<tr class="row-odd"><td><p>“sphinxcontrib-jsmath&gt;=1.0.1”</p></td>
+<td><p>HTML generation</p></td>
+</tr>
+<tr class="row-even"><td><p>“sphinxcontrib-qthelp&gt;=2.0.0”</p></td>
+<td><p>HTML generation</p></td>
+</tr>
+<tr class="row-odd"><td><p>“sphinxcontrib-serializinghtml&gt;=2.0.0”</p></td>
+<td><p>HTML generation</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="t-vscode-settings-for-rivt">
+<h2><strong>[7t]</strong> VSCode settings for rivt<a class="headerlink" href="#t-vscode-settings-for-rivt" title="Link to this heading">#</a></h2>
+<hr><p>Workspace extension and other settings are stored in the <em>.vscode</em> folder and
+can be included and moved as part of a <em>rivt report</em>. Settings that affect the
+<em>rivt</em> environment incldue:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>rivt.code-snippets</p></li>
+<li><p>settings.json (extension settings)</p></li>
+<li><p>tasks.json</p></li>
+<li><p>launch.json</p></li>
+</ul>
+</div></blockquote>
+<p>Global settings can be exported and imported using VSCode Profiles. VSCode
+<em>rivt</em> extensions and settings may be installed from this link.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Extensions</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>BUTTONS</strong></p></td>
+<td><p>—</p></td>
+</tr>
+<tr class="row-odd"><td><p>tombonnike.vscode-status-bar-format-toggle</p></td>
+<td><p>format button</p></td>
+</tr>
+<tr class="row-even"><td><p>gsppvo.vscode-commandbar</p></td>
+<td><p>command buttons</p></td>
+</tr>
+<tr class="row-odd"><td><p>AdamAnand.adamstool</p></td>
+<td><p>command buttons</p></td>
+</tr>
+<tr class="row-even"><td><p>nanlei.save-all</p></td>
+<td><p>save all button</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ho-Wan.setting-toggle</p></td>
+<td><p>toggle settings</p></td>
+</tr>
+<tr class="row-even"><td><p>yasukotelin.toggle-panel</p></td>
+<td><p>toggle panel</p></td>
+</tr>
+<tr class="row-odd"><td><p>fabiospampinato.vscode-commands</p></td>
+<td><p>user command buttons</p></td>
+</tr>
+<tr class="row-even"><td><p>jerrygoyal.shortcut-menu-bar</p></td>
+<td><p>menu bar</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>EDITING</strong></p></td>
+<td><p>—</p></td>
+</tr>
+<tr class="row-even"><td><p>henryclayton.context-menu-toggle-comments</p></td>
+<td><p>toggle comments</p></td>
+</tr>
+<tr class="row-odd"><td><p>TroelsDamgaard.reflow-paragraph</p></td>
+<td><p>wrap paragraph</p></td>
+</tr>
+<tr class="row-even"><td><p>streetsidesoftware.code-spell-checker</p></td>
+<td><p>spell check</p></td>
+</tr>
+<tr class="row-odd"><td><p>jmviz.quote-list</p></td>
+<td><p>quote elements in a list</p></td>
+</tr>
+<tr class="row-even"><td><p>njpwerner.autodocstring</p></td>
+<td><p>insert doc string</p></td>
+</tr>
+<tr class="row-odd"><td><p>oijaz.unicode-latex</p></td>
+<td><p>unicode symbols from latex</p></td>
+</tr>
+<tr class="row-even"><td><p>jsynowiec.vscode-insertdatestring</p></td>
+<td><p>insert date string</p></td>
+</tr>
+<tr class="row-odd"><td><p>janisdd.vscode-edit-csv</p></td>
+<td><p>csv editor</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>VIEWS</strong></p></td>
+<td><p>—</p></td>
+</tr>
+<tr class="row-odd"><td><p>GrapeCity.gc-excelviewer</p></td>
+<td><p>excel viewer</p></td>
+</tr>
+<tr class="row-even"><td><p>SimonSiefke.svg-preview</p></td>
+<td><p>svg viewer</p></td>
+</tr>
+<tr class="row-odd"><td><p>tomoki1207.pdf</p></td>
+<td><p>pdf viewer</p></td>
+</tr>
+<tr class="row-even"><td><p>RandomFractalsInc.vscode-data-preview</p></td>
+<td><p>data viewing tools</p></td>
+</tr>
+<tr class="row-odd"><td><p>Fr43nk.seito-openfile</p></td>
+<td><p>open file from path</p></td>
+</tr>
+<tr class="row-even"><td><p>vikyd.vscode-fold-level</p></td>
+<td><p>line folding tool</p></td>
+</tr>
+<tr class="row-odd"><td><p>file-icons.file-icons</p></td>
+<td><p>icon library</p></td>
+</tr>
+<tr class="row-even"><td><p>tintinweb.vscode-inline-bookmarks</p></td>
+<td><p>inline bookmarks</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>MANAGEMENT</strong></p></td>
+<td><p>—</p></td>
+</tr>
+<tr class="row-even"><td><p>alefragnani.project-manager</p></td>
+<td><p>folder, project management</p></td>
+</tr>
+<tr class="row-odd"><td><p>Anjali.clipboard-history</p></td>
+<td><p>clipboard history</p></td>
+</tr>
+<tr class="row-even"><td><p>dionmunk.vscode-notes</p></td>
+<td><p>notepad</p></td>
+</tr>
+<tr class="row-odd"><td><p>hbenl.vscode-test-explorer</p></td>
+<td><p>test explorer</p></td>
+</tr>
+<tr class="row-even"><td><p>mightycoco.fsdeploy</p></td>
+<td><p>save file to second location</p></td>
+</tr>
+<tr class="row-odd"><td><p>lyzerk.linecounter</p></td>
+<td><p>count lines in files</p></td>
+</tr>
+<tr class="row-even"><td><p>sandcastle.vscode-open</p></td>
+<td><p>open files in default app</p></td>
+</tr>
+<tr class="row-odd"><td><p>zjffun.snippetsmanager</p></td>
+<td><p>snippet manager</p></td>
+</tr>
+<tr class="row-even"><td><p>spmeesseman.vscode-taskexplorer</p></td>
+<td><p>task explorer</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>GITHUB</strong></p></td>
+<td><p>—</p></td>
+</tr>
+<tr class="row-even"><td><p>GitHub.codespaces</p></td>
+<td><p>run files in codespaces</p></td>
+</tr>
+<tr class="row-odd"><td><p>GitHub.remotehub</p></td>
+<td><p>run remote files</p></td>
+</tr>
+<tr class="row-even"><td><p>ettoreciprian.vscode-websearch</p></td>
+<td><p>search github within VSCode</p></td>
+</tr>
+<tr class="row-odd"><td><p>donjayamanne.githistory</p></td>
+<td><p>git history</p></td>
+</tr>
+<tr class="row-even"><td><p>MichaelCurrin.auto-commit-msg</p></td>
+<td><p>git auto commit message</p></td>
+</tr>
+<tr class="row-odd"><td><p>github.vscode-github-actions</p></td>
+<td><p>github actions</p></td>
+</tr>
+<tr class="row-even"><td><p>GitHub.vscode-pull-request-github</p></td>
+<td><p>github pull request</p></td>
+</tr>
+<tr class="row-odd"><td><p>k9982874.github-gist-explorer</p></td>
+<td><p>gist explorer</p></td>
+</tr>
+<tr class="row-even"><td><p>vsls-contrib.gistfs</p></td>
+<td><p>gist tools</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>PYTHON</strong></p></td>
+<td><p>—</p></td>
+</tr>
+<tr class="row-even"><td><p>ms-python.autopep8</p></td>
+<td><p>python pep8 formatting</p></td>
+</tr>
+<tr class="row-odd"><td><p>ms-python.isort</p></td>
+<td><p>python sort imports</p></td>
+</tr>
+<tr class="row-even"><td><p>donjayamanne.python-environment-manager</p></td>
+<td><p>python library list</p></td>
+</tr>
+<tr class="row-odd"><td><p>ms-python.python</p></td>
+<td><p>python tools</p></td>
+</tr>
+<tr class="row-even"><td><p>ms-python.vscode-pylance</p></td>
+<td><p>python language server</p></td>
+</tr>
+<tr class="row-odd"><td><p>ms-toolsai.jupyter</p></td>
+<td><p>jupyter tools</p></td>
+</tr>
+<tr class="row-even"><td><p>ms-toolsai.jupyter-keymap</p></td>
+<td><p>jupyter tools</p></td>
+</tr>
+<tr class="row-odd"><td><p>ms-toolsai.jupyter-renderers</p></td>
+<td><p>jupyter tools</p></td>
+</tr>
+<tr class="row-even"><td><p>ms-toolsai.vscode-jupyter-cell-tags</p></td>
+<td><p>jupyter tools</p></td>
+</tr>
+<tr class="row-odd"><td><p>ms-toolsai.vscode-jupyter-slideshow</p></td>
+<td><p>jupyter tools</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>LANGUAGES</strong></p></td>
+<td><p>—</p></td>
+</tr>
+<tr class="row-odd"><td><p>qwtel.sqlite-viewer</p></td>
+<td><p>sqlite tools</p></td>
+</tr>
+<tr class="row-even"><td><p>RDebugger.r-debugger</p></td>
+<td><p>R tools</p></td>
+</tr>
+<tr class="row-odd"><td><p>REditorSupport.r</p></td>
+<td><p>R tools</p></td>
+</tr>
+<tr class="row-even"><td><p>ms-vscode-remote.remote-wsl</p></td>
+<td><p>windows linux tools</p></td>
+</tr>
+<tr class="row-odd"><td><p>James-Yu.latex-workshop</p></td>
+<td><p>latex tools</p></td>
+</tr>
+<tr class="row-even"><td><p>lextudio.restructuredtext</p></td>
+<td><p>restructured text tools</p></td>
+</tr>
+<tr class="row-odd"><td><p>trond-snekvik.simple-rst</p></td>
+<td><p>restructured syntax</p></td>
+</tr>
+<tr class="row-even"><td><p>yzane.markdown-pdf</p></td>
+<td><p>markdown to pdf</p></td>
+</tr>
+<tr class="row-odd"><td><p>yzhang.markdown-all-in-one</p></td>
+<td><p>markdown tools</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Snippets/Keys</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>run</p></td>
+<td><p>API Run function</p></td>
+</tr>
+<tr class="row-odd"><td><p>ins</p></td>
+<td><p>API Insert function</p></td>
+</tr>
+<tr class="row-even"><td><p>val</p></td>
+<td><p>API Values function</p></td>
+</tr>
+<tr class="row-odd"><td><p>too</p></td>
+<td><p>API Tools function</p></td>
+</tr>
+<tr class="row-even"><td><p>wri</p></td>
+<td><p>API Write function</p></td>
+</tr>
+<tr class="row-odd"><td><p>alt+q</p></td>
+<td><p>rewrap paragraph with hard line feeds (80 default)</p></td>
+</tr>
+<tr class="row-even"><td><p>alt+p</p></td>
+<td><p>open file under cursor</p></td>
+</tr>
+<tr class="row-odd"><td><p>alt+.</p></td>
+<td><p>select correct spelling under cursor</p></td>
+</tr>
+<tr class="row-even"><td><p>alt+8</p></td>
+<td><p>insert date</p></td>
+</tr>
+<tr class="row-odd"><td><p>alt+9</p></td>
+<td><p>insert time</p></td>
+</tr>
+<tr class="row-even"><td><p>ctl+1</p></td>
+<td><p>focus on first editor</p></td>
+</tr>
+<tr class="row-odd"><td><p>ctl+2</p></td>
+<td><p>focus on next editor</p></td>
+</tr>
+<tr class="row-even"><td><p>ctl+3</p></td>
+<td><p>focus on previous editor</p></td>
+</tr>
+<tr class="row-odd"><td><p>ctl+8</p></td>
+<td><p>focus on explorer pane</p></td>
+</tr>
+<tr class="row-even"><td><p>ctl+9</p></td>
+<td><p>focus on github pane</p></td>
+</tr>
+<tr class="row-odd"><td><p>ctl+alt+x</p></td>
+<td><p>reload window</p></td>
+</tr>
+<tr class="row-even"><td><p>ctl+alt+[</p></td>
+<td><p>reload window</p></td>
+</tr>
+<tr class="row-odd"><td><p>ctl+alt+]</p></td>
+<td><p>unfold all code</p></td>
+</tr>
+<tr class="row-even"><td><p>ctl+alt+u</p></td>
+<td><p>unfold all code</p></td>
+</tr>
+<tr class="row-odd"><td><p>ctl+alt+f</p></td>
+<td><p>fold code level 2 (rivt sections visible)</p></td>
+</tr>
+<tr class="row-even"><td><p>ctl+alt+a</p></td>
+<td><p>fold code - all levels</p></td>
+</tr>
+<tr class="row-odd"><td><p>ctl+alt+t</p></td>
+<td><p>toggle local fold</p></td>
+</tr>
+<tr class="row-even"><td><p>ctl+alt+e</p></td>
+<td><p>toggle explorer sort order</p></td>
+</tr>
+<tr class="row-odd"><td><p>ctl+alt+s</p></td>
+<td><p>toggle spell check</p></td>
+</tr>
+<tr class="row-even"><td><p>ctl+alt+g</p></td>
+<td><p>next editor group</p></td>
+</tr>
+<tr class="row-odd"><td><p>ctl+shift+u</p></td>
+<td><p>open URL under cursor in browser</p></td>
+</tr>
+<tr class="row-even"><td><p>ctl+shift+s</p></td>
+<td><p>open GitHub README search for rivt</p></td>
+</tr>
+<tr class="row-odd"><td><p>ctl+shift+a</p></td>
+<td><p>commit all</p></td>
+</tr>
+<tr class="row-even"><td><p>ctl+shift+z</p></td>
+<td><p>commit the current editor</p></td>
+</tr>
+<tr class="row-odd"><td><p>ctl+shift+x</p></td>
+<td><p>post to remote</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Keystroke</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>alt+q</p></td>
+<td><p>rewrap paragraph with hard line feeds (80 default)</p></td>
+</tr>
+<tr class="row-odd"><td><p>alt+p</p></td>
+<td><p>open file under cursor</p></td>
+</tr>
+<tr class="row-even"><td><p>alt+.</p></td>
+<td><p>select correct spelling under cursor</p></td>
+</tr>
+<tr class="row-odd"><td><p>alt+8</p></td>
+<td><p>insert date</p></td>
+</tr>
+<tr class="row-even"><td><p>alt+9</p></td>
+<td><p>insert time</p></td>
+</tr>
+<tr class="row-odd"><td><p>ctl+1</p></td>
+<td><p>focus on first editor</p></td>
+</tr>
+<tr class="row-even"><td><p>ctl+2</p></td>
+<td><p>focus on next editor</p></td>
+</tr>
+<tr class="row-odd"><td><p>ctl+3</p></td>
+<td><p>focus on previous editor</p></td>
+</tr>
+<tr class="row-even"><td><p>ctl+8</p></td>
+<td><p>focus on explorer pane</p></td>
+</tr>
+<tr class="row-odd"><td><p>ctl+9</p></td>
+<td><p>focus on github pane</p></td>
+</tr>
+<tr class="row-even"><td><p>ctl+alt+x</p></td>
+<td><p>reload window</p></td>
+</tr>
+<tr class="row-odd"><td><p>ctl+alt+u</p></td>
+<td><p>unfold all code</p></td>
+</tr>
+<tr class="row-even"><td><p>ctl+alt+f</p></td>
+<td><p>fold code level 2 (rivt sections visible)</p></td>
+</tr>
+<tr class="row-odd"><td><p>ctl+alt+a</p></td>
+<td><p>fold code - all levels</p></td>
+</tr>
+<tr class="row-even"><td><p>ctl+alt+t</p></td>
+<td><p>toggle local fold</p></td>
+</tr>
+<tr class="row-odd"><td><p>ctl+alt+e</p></td>
+<td><p>toggle explorer sort order</p></td>
+</tr>
+<tr class="row-even"><td><p>ctl+alt+s</p></td>
+<td><p>toggle spell check</p></td>
+</tr>
+<tr class="row-odd"><td><p>ctl+alt+g</p></td>
+<td><p>next editor group</p></td>
+</tr>
+<tr class="row-even"><td><p>ctl+shift+u</p></td>
+<td><p>open URL under cursor in browser</p></td>
+</tr>
+<tr class="row-odd"><td><p>ctl+shift+s</p></td>
+<td><p>open GitHub rivt README search</p></td>
+</tr>
+<tr class="row-even"><td><p>ctl+shift+a</p></td>
+<td><p>commit all</p></td>
+</tr>
+<tr class="row-odd"><td><p>ctl+shift+z</p></td>
+<td><p>commit current editor</p></td>
+</tr>
+<tr class="row-even"><td><p>ctl+shift+x</p></td>
+<td><p>post to remote</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</section>
 </section>
 
 
@@ -859,13 +1385,22 @@ are in the default path only the file name needs to be provided.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rvE03-ghsearch.html"
+       href="rvE04-publicrivt.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>E.3 GitHub Search</strong></p>
+        <p class="prev-next-title"><strong>E.2 Public rivt files</strong></p>
       </div>
+    </a>
+    <a class="right-next"
+       href="rvF02-terms.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>A.2 Terms</strong></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -891,6 +1426,8 @@ are in the default path only the file name needs to be provided.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-block-tag-summary"><strong>[3t]</strong> Block Tag Summary</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-command-summary"><strong>[4t]</strong> Command Summary</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-folders"><strong>[5t]</strong> Folders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-package-requirements"><strong>[6t]</strong> package requirements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-vscode-settings-for-rivt"><strong>[7t]</strong> VSCode settings for rivt</a></li>
 </ul>
   </nav></div>
 

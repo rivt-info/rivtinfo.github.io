@@ -11,7 +11,7 @@
  As a Python open source project, there are several ways to collaborate 
  and share rivt file improvements.
 
-#. :doc:`Public rivt files</rvE02-publicrivt>` may be shared by uploading
+#. :doc:`Public rivt files <rvE04-publicrivt>` may be shared by uploading
     to repositories such as *GitHub*.  
 
 #. Public *rivt files* can be found and downloaded using the 
@@ -121,5 +121,6 @@ The *Live Share* extension enables:
 .. toctree::
     :maxdepth: 3
 
-    rvE02-publicrivt.rst
+    rvE02-git.rst
     rvE03-ghsearch.rst
+    rvE04-publicrivt.rst

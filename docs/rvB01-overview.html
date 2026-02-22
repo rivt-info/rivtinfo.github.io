@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
-    <title>B.1 Installation &#8212; rivt</title>
+    <title>B.1 Overview &#8212; rivt</title>
   
   
   
@@ -59,7 +59,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'rvB01-overview';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="B.2 Dependencies" href="rvB02-python.html" />
+    <link rel="next" title="B.1 Single Docs" href="rvB02-singledoc.html" />
     <link rel="prev" title="A.3 FAQ" href="rvA03-faq.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -154,7 +154,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="#">
-    B.1 Installation
+    B.1 Overview
   </a>
 </li>
 
@@ -268,7 +268,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="#">
-    B.1 Installation
+    B.1 Overview
   </a>
 </li>
 
@@ -327,11 +327,8 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="rvB02-python.html"><strong>B.2 Dependencies</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvB03-vscode.html"><strong>B.3 VSCode Settings</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvB04-git.html"><strong>B.4 Git</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvB05-texlive.html"><strong>B.5 texlive</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvB06-freecad.html"><strong>B.6 FreeCAD</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvB02-singledoc.html"><strong>B.1 Single Docs</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvB03-framework.html"><strong>B.1 Framework</strong></a></li>
 </ul>
 </div>
 </nav></div>
@@ -372,7 +369,7 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>B.1 Installation</strong></span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>B.1 Overview</strong></span></li>
   </ul>
 </nav>
 </div>
@@ -389,117 +386,176 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="b-1-installation">
-<h1><strong>B.1 Installation</strong><a class="headerlink" href="#b-1-installation" title="Link to this heading">#</a></h1>
-<section id="t-rivt">
-<h2><strong>[1t]</strong> rivt<a class="headerlink" href="#t-rivt" title="Link to this heading">#</a></h2>
+  <section id="b-1-overview">
+<h1><strong>B.1 Overview</strong><a class="headerlink" href="#b-1-overview" title="Link to this heading">#</a></h1>
+<section id="t-summary">
+<h2><strong>[1t]</strong> Summary<a class="headerlink" href="#t-summary" title="Link to this heading">#</a></h2>
 <hr><p><em>rivt</em> is an open source Python project that includes <a class="reference internal" href="rvF02-terms.html#term-rivtlib"><span class="xref std std-term">rivtlib</span></a>
 (see <a class="reference external" href="https://gitub.com/rivtlib-dev/rivtlib">https://gitub.com/rivtlib-dev/rivtlib</a> for source code) and
-approximately two dozen additional <a class="reference internal" href="rvB02-python.html"><span class="doc">Python packages</span></a>. The
-lightweight <a class="reference external" href="https://pyzo.org/">Pyzo</a>  IDE is installed with <em>rivt</em>
+approximately two dozen additional <a class="reference internal" href="rvF01-quickref.html"><span class="doc">Python packages</span></a>. The
+lightweight <cite>Pyzo &lt;https://pyzo.org/&gt;</cite>  IDE is installed with <em>rivt</em>
 for editing and publishing example <em>rivt docs</em>.</p>
 <p><em>rivt</em> is designed to work in an integrated framework with other open source
 programs. In the installation methods described below some install <em>rivt</em>
 and some install a <em>rivt framework</em>.</p>
-<aside class="topic">
-<p class="topic-title">rivt-uv</p>
-<p><em>uv</em> is a <a class="reference external" href="https://docs.astral.sh/uv/">Python package manager</a> and
-installer that simplifies installing isolated Python environments. See
-<a class="reference internal" href="#rivt-uv"><span class="std std-ref">rivt-uv</span></a> for procedure.</p>
-</aside>
-<hr><aside class="topic">
-<p class="topic-title">rivt-system</p>
-<p><em>rivt</em> may be installed at the system level using standalone installers.
-See <a class="reference internal" href="#rivt-system-install"><span class="std std-ref">[3t] system install</span></a> for procedure.</p>
-</aside>
-<hr><aside class="topic">
-<p class="topic-title">rivt-zip</p>
-<p><em>rivt-zip</em> installs a partial <em>rivt-framework</em>. It is is a single folder,
-portable, isolated version of <em>rivt</em> integrated with <em>VSCode</em>.</p>
-<p>See <a class="reference internal" href="#rivt-zip"><span class="std std-ref">rivt-zip</span></a> for procedure.</p>
-</aside>
-<hr><aside class="topic">
-<p class="topic-title">rivt-framework</p>
-<p><em>rivt-framework</em> includes <em>rivt</em> and additional integrated programs and
-tools with their own installers. It includes important productivity tools
-for editing, document control and diagramming.</p>
-<ol class="arabic simple">
-<li><p><em>VSCode and extensions</em> for editing and collaboration.</p></li>
-<li><p><em>Git and GitHub</em> for version control and document sharing.</p></li>
-<li><p><em>LaTeX</em> for precise typesetting.</p></li>
-<li><p><em>FreeCAD</em> for diagramming and scripting.</p></li>
-</ol>
-<p>See <a class="reference internal" href="#rivt-framework"><span class="std std-ref">rivt-framework</span></a> for procedure.</p>
-</aside>
-</section>
-<section id="t-uv-install">
-<span id="rivt-uv"></span><h2><strong>[2t]</strong> uv install<a class="headerlink" href="#t-uv-install" title="Link to this heading">#</a></h2>
-<hr><p>The <em>rivtlib</em> package is not uploaded to PyPI yet. The <em>rivtuv</em> installation
-method is recommended for most users.</p>
-<aside class="topic">
-<p class="topic-title">Step 1. Install uv</p>
-<p>Install <a class="reference external" href="https://docs.astral.sh/uv/getting-started/installation/#pypi">uv</a>.</p>
-<p>The recommended method for installing <em>uv</em> is:</p>
-<p>Windows from the command line:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>winget<span class="w"> </span>install<span class="w"> </span>--id<span class="o">=</span>astral-sh.uv<span class="w">  </span>-e
+<p>A <a class="reference internal" href="rvF02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> publishes a formatted <a class="reference internal" href="rvF02-terms.html#term-rivt-doc"><span class="xref std std-term">rivt doc</span></a> as a text, PDF or
+HTML file. A <em>rivt file</em> is a Python file (.py) that imports the
+<a class="reference internal" href="rvF02-terms.html#term-rivtlib"><span class="xref std std-term">rivtlib</span></a> Python package and includes <a class="reference internal" href="rvF02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a>. A collection
+of <em>rivt docs</em> may be collated as a <a class="reference internal" href="rvF02-terms.html#term-rivt-report"><span class="xref std std-term">rivt report</span></a>.</p>
+<p><em>rivt file</em> examples are provided <a class="reference internal" href="rvD05-docex.html"><span class="doc">here</span></a> and
+<a class="reference internal" href="rvD06-reportex.html"><span class="doc">here</span></a>. An interface for searching <em>rivt files</em>
+on <em>GitHub</em> is <a class="reference internal" href="rvE03-ghsearch.html"><span class="doc">here</span></a>. All or parts of a <em>rivt file</em> the
+author chooses to share as a <em>public rivt file</em> can be shared under an
+<cite>Open Source license &lt;https://opensource.org/licenses&gt;</cite>.
+rivt itself is distributed under the
+<cite>MIT open source license &lt;https://opensource.org/license/mit&gt;</cite>.
+(see <a class="reference internal" href="rvA03-faq.html#licenses"><span class="std std-ref">[2t] Licenses</span></a>).</p>
+<p>The <em>rivt API</em> includes  <a class="reference internal" href="rvC01-markup.html#api-functions"><span class="std std-ref">API functions</span></a>,
+<a class="reference internal" href="#markup"><span class="std std-ref">[2t] Markup</span></a> and <a class="reference internal" href="#files-and-folders"><span class="std std-ref">files</span></a>.
+The API is designed to be:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>lightweight</dt><dd><p><a class="reference internal" href="rvF02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> is made up of about 3 dozen tags
+and commands, and wraps <a class="reference internal" href="rvF02-terms.html#term-restructuredtext"><span class="xref std std-term">reStructuredText</span></a>.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>flexible</dt><dd><p>A <em>rivt file</em> produces a text, HTML or PDF <em>doc</em>.
+Multiple <em>docs</em> can be organized into a report.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>extensible</dt><dd><p><em>rivtlib</em> is written in Python with direct access to thousands of
+Python packages.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<p class="center"><strong>rivt Doc Processing</strong></p>
+<a class="reference internal image-reference" href="_images/rivtflow2.png"><img alt="rivt flow chart" class="align-center" src="_images/rivtflow2.png" style="width: 75%;" />
+</a>
+<hr><p>Each <a class="reference internal" href="rvF02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> outputs a corresponding <a class="reference internal" href="rvF02-terms.html#term-doc"><span class="xref std std-term">doc</span></a> in the
+format specified in <em>rv.D</em>. A doc number has the form:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rvAnn-filename.py
 </pre></div>
 </div>
-<p>macOS and Linux from the command line:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-LsSf<span class="w"> </span>https://astral.sh/uv/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>sh
+<p>where rv is a required prefix, A is an alphanumeric character and nn are two
+digit non-negative integers.</p>
+<p>A <em>rivt report</em> is organized using the rivt <em>doc numbers</em>. If the <em>rivt file</em>
+names are:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rvA01-filename.py
+rv105-filename.py
+rv212-filename.py
 </pre></div>
 </div>
-</aside>
-<aside class="topic">
-<p class="topic-title">Step 2. Create an isolated rivt environment</p>
-<p>After installing <em>uv</em>, download and run the following command or shell file.</p>
-<p>Windows:  <a class="reference download internal" download="" href="_downloads/3883216e7f8a8167bfab705f585bda9c/rivtuv.cmd"><code class="xref download docutils literal notranslate"><span class="pre">rivtuv.cmd</span></code></a></p>
-<p>OSX and Linux: <a class="reference download internal" download="" href="_downloads/8aea5313b4752f6c507744d1c20b200b/rivtuv.sh"><code class="xref download docutils literal notranslate"><span class="pre">rivtuv.sh</span></code></a></p>
-<p>This installs an isolated <em>rivt</em> environment and example files in the
-xxxx folder in the users <em>Home</em> directory. Additional install script detaild
-can be found <a class="reference external" href="https://github.com/rivt-info/rivtuv-install/edit/main/">here</a>.</p>
-</aside>
-<aside class="topic">
-<p class="topic-title">Step 3. Run example program from Pyzo or command line.</p>
-<p>Some text.</p>
-</aside>
+<p>the <em>report numbers</em> would be:</p>
+<ul class="simple">
+<li><p>A.1 (division A, subdivision 1)</p></li>
+<li><p>1.5 (division 1, subdivision 5)</p></li>
+<li><p>2.12 (division 2, subdivision 12)</p></li>
+</ul>
+<p>Note that leading zeroes are dropped.  <em>Docs</em> are sorted alpha-numerically into
+divisions and subdivisions in the <em>report</em>.</p>
+<p><em>Docs</em> are assembled from sources and published using a specified folder
+structure. The <em>singledocB</em> variable overrides the default report structure and
+specifies that resource files and <em>docs</em> are read from and written to the <em>rivt
+file</em> folder. It is intended for simpler, standalone <em>docs</em> with more limited
+format control. The comment variable is specified immediately after the import
+statement:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
+
+<span class="c1"># rv singledocB = True</span>
+</pre></div>
+</div>
+<p>The default setting is False.</p>
+<p><a class="reference internal" href="rvD01-documents.html"><span class="doc">here</span></a>.</p>
 </section>
-<section id="t-system-install">
-<span id="rivt-system-install"></span><h2><strong>[3t]</strong> system install<a class="headerlink" href="#t-system-install" title="Link to this heading">#</a></h2>
-<hr><p><em>rivt</em> may be installed at the system level.</p>
-<ol class="arabic simple">
-<li><p>Install Python using <a class="reference external" href="https://www.python.org/downloads/">Python installers</a></p></li>
-<li><p>Install <em>rivtlib</em> and dependencies using <a class="reference external" href="https://pypi.org/project/pip/">pip</a></p></li>
-</ol>
-<p>A list of the dependencies and <em>requirements.txt</em> file is
-<a class="reference internal" href="#"><span class="doc">here</span></a>.</p>
+<section id="t-markup">
+<span id="markup"></span><h2><strong>[2t]</strong> Markup<a class="headerlink" href="#t-markup" title="Link to this heading">#</a></h2>
+<hr><p>An API function starts in the first column and takes a triple quoted
+<a class="reference internal" href="rvF02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> (rS) argument. The first line of a <em>rivt string</em> is a
+<a class="reference internal" href="rvF02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a>, followed by a <a class="reference internal" href="rvF02-terms.html#term-content-substring"><span class="xref std std-term">content substring</span></a> indented 4
+spaces for improved readability and section folding.</p>
+<p>The <em>header substring</em> specifies the section title and other
+processing parameters. The content substring includes
+<a class="reference internal" href="rvF02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> and other arbitrary text. For further details
+see <a class="reference internal" href="rvC01-markup.html"><span class="doc">here</span></a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | parameters</span>
+
+<span class="s2">     Content text that is</span>
+<span class="s2">     indented four spaces.</span>
+
+<span class="s2">    ...</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
 </section>
-<section id="t-install-rivt-zip">
-<span id="rivt-zip"></span><h2><strong>[4t]</strong> Install <em>rivt-zip</em><a class="headerlink" href="#t-install-rivt-zip" title="Link to this heading">#</a></h2>
-<hr><p><em>rivtzip</em> is a portable, single folder version of <em>rivt</em> and <em>VSCode</em>
-including libraries and extensions. It can be downloaded here.</p>
-<p>The advantages of this installation method include:</p>
-<ol class="arabic simple">
-<li><p>No installation steps - just unzip and use.</p></li>
-<li><p>Can be moved anywhere as a unified folder.</p></li>
-<li><p>Ensures compatiblity and integration between libraries.</p></li>
-</ol>
-<p>Disadvantages include:</p>
-<ol class="arabic simple">
-<li><p>The software components cannot be individually updated. (New releases monthly)</p></li>
-<li><p>Integration with other programs and tools may be more difficult.</p></li>
-</ol>
-</section>
-<section id="t-install-rivt-framework">
-<span id="rivt-framework"></span><h2><strong>[5t]</strong> Install <em>rivt-framework</em><a class="headerlink" href="#t-install-rivt-framework" title="Link to this heading">#</a></h2>
-<hr><p>The <em>rivt framework</em> includes installation of the following programs:</p>
-<ol class="arabic simple">
-<li><p><a class="reference external" href="https://code.visualstudio.com/">VSCode</a> and
-<a class="reference external" href="https://marketplace.visualstudio.com/vscode">VSCode extensions</a>.
-<em>rivt</em> extensions and snippets are <a class="reference internal" href="rvB03-vscode.html"><span class="doc">here</span></a>.</p></li>
-<li><p><a class="reference external" href="https://git-scm.com">Git</a> and set up a <a class="reference external" href="hhttps://github.com">GitHub</a></p></li>
-<li><p><a class="reference external" href="https://www.tug.org/texlive/">LaTeX</a></p></li>
-<li><p><a class="reference external" href="https://www.freecad.org/">FreeCad</a></p></li>
-</ol>
+<section id="t-folder-files">
+<span id="files-and-folders"></span><h2><strong>[3t]</strong> Folder/Files<a class="headerlink" href="#t-folder-files" title="Link to this heading">#</a></h2>
+<hr><p>A <a class="reference internal" href="rvF02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> is a Python plain text file ( <em>.py</em> ) that includes <em>rivt
+markup</em> and imports the <a class="reference internal" href="rvF02-terms.html#term-rivtlib"><span class="xref std std-term">rivtlib</span></a> package and API into the <em>rv</em>
+<a class="reference internal" href="rvF02-terms.html#term-namespace"><span class="xref std std-term">namespace</span></a>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
+</pre></div>
+</div>
+<p><em>rivt files</em> are stored in a root folder designated with the prefix <em>rivt-</em>.
+Each <em>rivt file</em> and corresponding <em>rivt doc</em> has a prefix that is used to
+organize the report. The  prefix has the form</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rvANN</span><span class="o">-</span><span class="n">filename</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>where A is an alpha-numeric character used for organizing report divisions, and
+NN is a two digit number used to organize sub-divisions. The file name is used
+as the <em>doc</em> title unless overridden in <em>rv.D</em>. Use underscores or hyphens
+rather than spaces to seprate words in the file name. They are replaced with
+spaces when a <em>doc</em> title is extracted.</p>
+<b>Folder Key</b>
+<ol style="border: 2px;
+        border-color: #49b2c3;
+        border-style: solid;
+        padding: 2em;
+        margin: 2em">
+    <li> Required names or prefixes are shown in brackets [ ].</li>
+    <li> Required folders start with a capital letter. </li>
+    <li> Folders that contain author provided files are marked with a
+    single vertical bar ( | ).</li>
+    <li> Folders that contain <i>rivtlib</i> generated files are
+        marked with a double vertical bar</li>
+</ol><p><strong>Primary Folders</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt<span class="o">]</span>-Report-Label/<span class="w">                </span>Report<span class="w"> </span>Folder<span class="w"> </span>Name
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename1.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv102-<span class="o">]</span>filename2.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv201-<span class="o">]</span>filename3.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv202-<span class="o">]</span>filename4.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
+
+<span class="w">    </span>...
+
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>Public<span class="o">]</span>/<span class="w">                   </span><span class="o">||</span><span class="w"> </span>public<span class="w"> </span>rivt<span class="w"> </span>files
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>Publish<span class="o">]</span>/<span class="w">                  </span><span class="o">||</span><span class="w"> </span>doc<span class="w"> </span>and<span class="w"> </span>report<span class="w"> </span>files
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>Src<span class="o">]</span>/<span class="w">                      </span><span class="p">|</span><span class="w">  </span><span class="nb">source</span><span class="w"> </span>files<span class="w"> </span>provided<span class="w"> </span>by<span class="w"> </span>authors
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>Stored<span class="o">]</span>/<span class="w">                   </span><span class="o">||</span><span class="w"> </span>stored<span class="w"> </span>files<span class="w"> </span>written<span class="w"> </span>by<span class="w"> </span>rivtlib
+<span class="w">    </span>└──<span class="w"> </span>README.txt<span class="w">                  </span><span class="o">||</span><span class="w"> </span>searchable<span class="w"> </span>text<span class="w"> </span>report
+</pre></div>
+</div>
+<p>The four primary rivt folders are:</p>
+<dl class="simple">
+<dt><em>Public</em></dt><dd><p>Stores public <em>rivt files</em> generated by <em>rvitlib</em>. File content intended for
+sharing is defined by <em>section headers</em>. Public <em>rivt files</em>
+are identified by a hyphen after  the <em>rv</em> prefix e.g. <em>rv-101-filename1</em>.</p>
+</dd>
+<dt><em>Publish</em></dt><dd><p>Stores <em>docs</em> and <em>reports</em> generated by <em>rvitlib</em></p>
+</dd>
+<dt><em>Src</em></dt><dd><p>Stores images, data, code and text provided by the author.</p>
+</dd>
+<dt><em>Stored</em></dt><dd><p>Stores files generated by <em>rvitlib</em>. Files include stored
+sections identified in headers, api log files and processing log files. Files
+may be attached to a report.</p>
+</dd>
+</dl>
+<p>The complete folder structure with subfolders is shown <a class="reference internal" href="rvD03-folders.html#report-folders"><span class="std std-ref">here</span></a>.</p>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -525,11 +581,11 @@ including libraries and extensions. It can be downloaded here.</p>
       </div>
     </a>
     <a class="right-next"
-       href="rvB02-python.html"
+       href="rvB02-singledoc.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>B.2 Dependencies</strong></p>
+        <p class="prev-next-title"><strong>B.1 Single Docs</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -552,11 +608,9 @@ including libraries and extensions. It can be downloaded here.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rivt"><strong>[1t]</strong> rivt</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-uv-install"><strong>[2t]</strong> uv install</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-system-install"><strong>[3t]</strong> system install</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-install-rivt-zip"><strong>[4t]</strong> Install <em>rivt-zip</em></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-install-rivt-framework"><strong>[5t]</strong> Install <em>rivt-framework</em></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-summary"><strong>[1t]</strong> Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-markup"><strong>[2t]</strong> Markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-folder-files"><strong>[3t]</strong> Folder/Files</a></li>
 </ul>
   </nav></div>
 

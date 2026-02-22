@@ -60,7 +60,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="C.2 Line Tags" href="rvC02-linetags.html" />
-    <link rel="prev" title="B.6 FreeCAD" href="rvB06-freecad.html" />
+    <link rel="prev" title="B.1 Framework" href="rvB03-framework.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -154,7 +154,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvB01-overview.html">
-    B.1 Installation
+    B.1 Overview
   </a>
 </li>
 
@@ -268,7 +268,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvB01-overview.html">
-    B.1 Installation
+    B.1 Overview
   </a>
 </li>
 
@@ -394,18 +394,59 @@
                   
   <section id="c-1-markup">
 <h1><strong>C.1 Markup</strong><a class="headerlink" href="#c-1-markup" title="Link to this heading">#</a></h1>
+<section id="t-api-functions">
+<span id="api-functions"></span><h2><strong>[1t]</strong> API functions<a class="headerlink" href="#t-api-functions" title="Link to this heading">#</a></h2>
+<hr><p>Each <em>rivt</em> API function takes a triple quoted string argument (rivt string)
+that includes a subset of rivt markup. There are four primary content functions
+and three functions that process content. <em>rivt</em> is an acronym taken from the
+four content function names.</p>
+<b>Content Functions</b>
+<ol style="border: 2px;
+        border-color: #49b2c3;
+        border-style: solid;
+        padding: 2em;
+        margin: 2em">
+    <li>The <b>Run</b> executes shell commands.</li>
+    <li>The <b>Insert</b> adds static table, image, equation and text content.</li>
+    <li>The <b> Values</b> evaluates equations and functions.</li>
+    <li>The <b>Tools</b> runs reStructuredText, HTML, LaTeX and Python scripts.</li>
+</ol>
+
+<b>Publish Function</b>
+<ol style="border: 2px;
+        border-color: #49b2c3;
+        border-style: solid;
+        padding: 2em;
+        margin: 2em">
+    <li>The <b>Doc</b> specifies the <i>doc</i> type and style.</li>
+</ol>
+
+<b>Interactive Processing Functions</b>
+<ol style="border: 2px;
+        border-color: #49b2c3;
+        border-style: solid;
+        padding: 2em;
+        margin: 2em">
+    <li>The <b>Skip</b> can be used for interactive debugging and comments.</li>
+    <li>The <b>Exit</b> can be used for interactive debugging.</li>
+
+</ol><p>If interactive IDEs like <em>VSCode</em> or <em>Spyder</em> are used to edit and run <em>rivt
+files the API functions can be processed separately as cells, similar to
+*Jupyter Notebooks</em>, by using the standard prefix notation:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %% optional label</span>
+</pre></div>
+</div>
+</section>
 <section id="t-rivt-string">
-<span id="rivt-string"></span><h2><strong>[1t]</strong> rivt string<a class="headerlink" href="#t-rivt-string" title="Link to this heading">#</a></h2>
+<span id="rivt-string"></span><h2><strong>[2t]</strong> rivt string<a class="headerlink" href="#t-rivt-string" title="Link to this heading">#</a></h2>
 <hr><p>Each <a class="reference internal" href="rvA01-start.html"><span class="doc">API function</span></a> takes a triple quoted <a class="reference internal" href="rvF02-terms.html#term-rivt-string"><span class="xref std std-term">rivt
 string</span></a> argument composed of two parts - a <a class="reference internal" href="rvF02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a> followed
 by a <a class="reference internal" href="rvF02-terms.html#term-content-substring"><span class="xref std std-term">content substring</span></a>.</p>
-<p>The <em>header substring</em> is the first line of a <em>rivt string</em> that defines
-section processing and formatting. It is followed by a <em>content substring</em> that
-includes <a class="reference internal" href="rvF02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> and other text. It is indented 4 spaces for
-improved readability and section folding.</p>
-</section>
-<section id="t-header-substring">
-<span id="header-substring"></span><h2><strong>[2t]</strong> Header substring<a class="headerlink" href="#t-header-substring" title="Link to this heading">#</a></h2>
+<p>The first line of the <em>rivt string</em> is the <em>header substring</em> that defines
+section processing and formatting parameters. It is followed by a <em>content
+substring</em> that includes <a class="reference internal" href="rvF02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> and other text. The <em>content
+substring</em> is indented four spaces for improved readability and section folding.</p>
+<p id="header-substring"><strong>Header substring</strong></p>
 <hr><p>The <a class="reference internal" href="rvF02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a> starts with a <em>section label</em> followed by vertical
 bar that deliniates three comma separated <em>section parameters</em> that can
 override default behavior. The <em>section label</em> is the section title.</p>
@@ -525,9 +566,7 @@ default setting for each API is listed first (in bold) in the table below.</p>
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-</section>
-<section id="t-content-substring">
-<span id="content-substring"></span><h2><strong>[3t]</strong> Content substring<a class="headerlink" href="#t-content-substring" title="Link to this heading">#</a></h2>
+<p id="content-substring"><strong>Content substring</strong></p>
 <hr><p>The <a class="reference internal" href="rvF02-terms.html#term-content-substring"><span class="xref std std-term">content substring</span></a> is indented four spaces for legibility and
 code folding. It includes <a class="reference internal" href="rvC02-linetags.html"><span class="doc">line tags</span></a>,
 <a class="reference internal" href="rvC03-blocktags.html"><span class="doc">block tags</span></a> and  <a class="reference internal" href="rvC04-commands.html"><span class="doc">commands</span></a>
@@ -549,8 +588,8 @@ surrounding words with * or ** will format a word as italic or bold respectively
 processing HTML, LaTeX and reStructuredText scripts.</p>
 </section>
 <section id="t-tags-and-commands">
-<h2><strong>[5t]</strong> Tags and Commands<a class="headerlink" href="#t-tags-and-commands" title="Link to this heading">#</a></h2>
-<p><a class="reference internal" href="rvC02-linetags.html"><span class="doc">Line Tags</span></a></p>
+<h2><strong>[3t]</strong> Tags and Commands<a class="headerlink" href="#t-tags-and-commands" title="Link to this heading">#</a></h2>
+<hr><p><a class="reference internal" href="rvC02-linetags.html"><span class="doc">Line Tags</span></a></p>
 <p>A <a class="reference internal" href="rvF02-terms.html#term-line-tag"><span class="xref std std-term">line tag</span></a> formats a line of text and is denoted with a single
 <strong>_[LETTER]</strong>, placed at or near the end of the line, depending on the tag.</p>
 <p><a class="reference internal" href="rvC03-blocktags.html"><span class="doc">Block Tags</span></a></p>
@@ -591,8 +630,8 @@ Description<br>
 </pre>
 </p></section>
 <section id="t-folders">
-<h2><strong>[6t]</strong> Folders<a class="headerlink" href="#t-folders" title="Link to this heading">#</a></h2>
-<hr><p>Folders organize files in standard locations to simplify <em>doc</em> and <em>report</em>
+<h2><strong>[4t]</strong> Folders<a class="headerlink" href="#t-folders" title="Link to this heading">#</a></h2>
+<hr><p>Folders provide standard file locations that simplify <em>doc</em> and <em>report</em>
 generation.</p>
 <p style="border-width:2px; border-style:solid;
 border-color:#49b2c3;padding: 1em;">
@@ -747,12 +786,12 @@ marked with double vertical bars ( || ).</p><p><strong>Folders</strong></p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rvB06-freecad.html"
+       href="rvB03-framework.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>B.6 FreeCAD</strong></p>
+        <p class="prev-next-title"><strong>B.1 Framework</strong></p>
       </div>
     </a>
     <a class="right-next"
@@ -783,11 +822,10 @@ marked with double vertical bars ( || ).</p><p><strong>Folders</strong></p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rivt-string"><strong>[1t]</strong> rivt string</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-header-substring"><strong>[2t]</strong> Header substring</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-content-substring"><strong>[3t]</strong> Content substring</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-tags-and-commands"><strong>[5t]</strong> Tags and Commands</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-folders"><strong>[6t]</strong> Folders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-api-functions"><strong>[1t]</strong> API functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rivt-string"><strong>[2t]</strong> rivt string</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-tags-and-commands"><strong>[3t]</strong> Tags and Commands</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-folders"><strong>[4t]</strong> Folders</a></li>
 </ul>
   </nav></div>
 

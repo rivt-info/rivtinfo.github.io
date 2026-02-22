@@ -1,9 +1,67 @@
 **C.1 Markup**
 ==================
 
+.. _API functions:
+
+**[1t]** API functions
+--------------------------------------------------------------------- 
+
+.. raw:: html
+
+    <hr>
+
+Each *rivt* API function takes a triple quoted string argument (rivt string)
+that includes a subset of rivt markup. There are four primary content functions
+and three functions that process content. *rivt* is an acronym taken from the
+four content function names.
+
+.. raw:: html
+
+    <b>Content Functions</b>
+    <ol style="border: 2px; 
+            border-color: #49b2c3; 
+            border-style: solid; 
+            padding: 2em;
+            margin: 2em">
+        <li>The <b>Run</b> executes shell commands.</li>
+        <li>The <b>Insert</b> adds static table, image, equation and text content.</li>
+        <li>The <b> Values</b> evaluates equations and functions.</li>
+        <li>The <b>Tools</b> runs reStructuredText, HTML, LaTeX and Python scripts.</li>
+    </ol>
+
+    <b>Publish Function</b>
+    <ol style="border: 2px; 
+            border-color: #49b2c3; 
+            border-style: solid; 
+            padding: 2em;
+            margin: 2em">
+        <li>The <b>Doc</b> specifies the <i>doc</i> type and style.</li>
+    </ol>
+
+    <b>Interactive Processing Functions</b>
+    <ol style="border: 2px; 
+            border-color: #49b2c3; 
+            border-style: solid; 
+            padding: 2em;
+            margin: 2em">
+        <li>The <b>Skip</b> can be used for interactive debugging and comments.</li>
+        <li>The <b>Exit</b> can be used for interactive debugging.</li>
+
+    </ol>
+
+If interactive IDEs like *VSCode* or *Spyder* are used to edit and run *rivt
+files the API functions can be processed separately as cells, similar to 
+*Jupyter Notebooks*, by using the standard prefix notation:
+
+.. code-block:: python
+
+    # %% optional label
+
+
+
 .. _rivt string:
 
-**[1t]** rivt string
+**[2t]** rivt string
 ----------------------------------
 
 .. raw:: html
@@ -14,15 +72,14 @@ Each :doc:`API function <rvA01-start>` takes a triple quoted :term:`rivt
 string` argument composed of two parts - a :term:`header substring` followed 
 by a :term:`content substring`.
 
-The *header substring* is the first line of a *rivt string* that defines
-section processing and formatting. It is followed by a *content substring* that
-includes :term:`rivt markup` and other text. It is indented 4 spaces for
-improved readability and section folding.
+The first line of the *rivt string* is the *header substring* that defines
+section processing and formatting parameters. It is followed by a *content
+substring* that includes :term:`rivt markup` and other text. The *content
+substring* is indented four spaces for improved readability and section folding.
 
 .. _Header substring:
 
-**[2t]** Header substring 
-----------------------------
+**Header substring**
 
 .. raw:: html
 
@@ -112,8 +169,7 @@ Examples of *header substring* settings are shown below.
 
 .. _Content substring:
 
-**[3t]** Content substring
-------------------------------
+**Content substring**
 
 .. raw:: html
 
@@ -143,8 +199,14 @@ surrounding words with * or ** will format a word as italic or bold respectively
 In addition block tags in the *Tools function* (rv.T) directly supports
 processing HTML, LaTeX and reStructuredText scripts.
 
-**[5t]** Tags and Commands
+
+
+**[3t]** Tags and Commands
 ----------------------------
+
+.. raw:: html
+
+    <hr>
 
 :doc:`Line Tags <rvC02-linetags>`
 
@@ -201,14 +263,14 @@ using the following format:
     </p>
 
 
-**[6t]** Folders
+**[4t]** Folders
 ---------------------------
 
 .. raw:: html
 
     <hr>
 
-Folders organize files in standard locations to simplify *doc* and *report*
+Folders provide standard file locations that simplify *doc* and *report*
 generation.
 
 .. raw:: html

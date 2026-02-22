@@ -10,7 +10,7 @@
 
 *rivt* is an open source Python project that includes :term:`rivtlib` 
 (see `<https://gitub.com/rivtlib-dev/rivtlib>`_ for source code) and
-approximately two dozen additional :doc:`Python packages<rvB02-python>`. The
+approximately two dozen additional :doc:`Python packages<rvF01-quickref>`. The
 lightweight `Pyzo <https://pyzo.org/>`  IDE is installed with *rivt*
 for editing and publishing example *rivt docs*.
 
@@ -34,7 +34,7 @@ rivt itself is distributed under the
 
 
 The *rivt API* includes  :ref:`API functions <API functions>`, 
-:ref:`markup <Markup>` and :ref:`files <Files and folders>`. 
+:ref:`markup` and :ref:`files <Files and folders>`. 
 The API is designed to be:
 
 - lightweight
@@ -110,7 +110,7 @@ The default setting is False.
 
 .. _Markup:
 
-**[5t]** Markup
+**[2t]** Markup
 ------------------------------------------------------------------------ 
 
 .. raw:: html
@@ -140,7 +140,7 @@ see :doc:`here <rvC01-markup>`.
 
 .. _Files and folders:
 
-**[6t]** Folder/Files
+**[3t]** Folder/Files
 --------------------------------------------------------------------- 
 
 .. raw:: html
@@ -226,35 +226,10 @@ The four primary rivt folders are:
 
 The complete folder structure with subfolders is shown :ref:`here <report folders>`.
 
-
-.. _rivt-framework:
-
-**[5t]** Install *rivt-framework*
-------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-The *rivt framework* includes installation of the following programs:
-
-#. `VSCode <https://code.visualstudio.com/>`_ and 
-   `VSCode extensions <https://marketplace.visualstudio.com/vscode>`_. 
-   *rivt* extensions and snippets are :doc:`here <rvB03-vscode>`.
-
-#. `Git <https://git-scm.com>`_ and set up a `GitHub <hhttps://github.com>`_ 
-
-#. `LaTeX <https://www.tug.org/texlive/>`_ 
-
-#. `FreeCad <https://www.freecad.org/>`_ 
-
 .. toctree::
     :maxdepth: 1
     :hidden:
 
-    rvB02-python.rst
-    rvB03-vscode.rst
-    rvB04-git.rst
-    rvB05-texlive.rst
-    rvB06-freecad.rst
+    rvB02-singledoc.rst
+    rvB03-framework.rst
 
