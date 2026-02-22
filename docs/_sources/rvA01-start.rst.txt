@@ -10,7 +10,7 @@
 
 Examples may be run in the cloud or on a local computer. A typical IDE 
 layout for running a small example rivt file is shown below and can be 
-`explored herexx <https://codesandbox.io/p/devbox/rivt1-dkmqfm?file=%2Frv001-single-doc.py%3A62%2C15>`__. 
+`explored here <https://codesandbox.io/p/devbox/rivt1-dkmqfm?file=%2Frv001-single-doc.py%3A62%2C15>`__. 
 
 .. figure::  _static/img/ide2.png
     :class: dark-light
@@ -158,10 +158,10 @@ GitHub Codespaces is a cloud-hosted, secure development environment that
 provides a ready-to-use workspace in a web browser or 
 local Visual Studio Code IDE. It requires a free GitHub account.
 
-A Codespace with *rivt* examples can be forked into a personal GitHub account 
-where it can be edited and run. 
+A Codespace with *rivt* examples can be forked (copied) into a personal GitHub
+account where it can be edited and run.
 
-The repo can be found `here <https://github.com/rivt-info/rivt-codespace>`__.
+The repo to be forked can be found `here <https://github.com/rivt-info/rivt-codespace>`__.
 
 .. figure::  _static/img/codespace2.png
     :class: dark-light
