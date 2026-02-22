@@ -29,6 +29,8 @@ recommended for users unfamiliar with Python.
 #. uv package manager (:ref:`rivt-uv`) 
 #. system Python package (:ref:`rivt-sys`). 
 
+An interface for finding *rivt files* on *GitHub* is 
+:doc:`here <rvE03-ghsearch>`.
 
 .. _rivt-portable:
 
