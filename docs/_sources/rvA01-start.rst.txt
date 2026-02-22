@@ -18,19 +18,29 @@ explored online `here <https://codesandbox.io/p/devbox/rivt1-dkmqfm?file=%2Frv00
     :align: center
     :alt: ide layout
 
-The above online example is inactive. A live, 
-:ref:`cloud based example <Codespace>` can be forked (copied), 
-edited and run in a personal GitHub account.
+The above online example is inactive. A live, cloud based example in Codespace
+can be forked (copied), edited and run in a personal GitHub account. GitHub
+Codespaces is a cloud-hosted, secure development environment that provides a
+ready-to-use workspace in a web browser or local Visual Studio Code IDE. It
+requires a free GitHub account.
 
-Local installation methods include the following options. *rivt-zip* is 
-recommended for users unfamiliar with Python.
+A rivt Codespace with examples can be forked (copied) into a personal GitHub
+from the repo `here <https://github.com/rivt-info/rivt-codespace>`__.
+
+.. figure::  _static/img/codespace2.png
+    :class: dark-light
+    :scale: 40%
+    :align: center
+    :alt: ide layout
+
+Local installation methods include the following options: 
 
 #. portable zip folder (:ref:`rivt-portable`) 
 #. uv package manager (:ref:`rivt-uv`) 
 #. system Python package (:ref:`rivt-sys`). 
 
-An interface for finding *rivt files* on *GitHub* is 
-:doc:`here <rvE03-ghsearch>`.
+*rivt-zip* is recommended for users unfamiliar with Python. An interface for
+finding *rivt files* on *GitHub* is :doc:`here <rvE03-ghsearch>`.
 
 .. _rivt-portable:
 
@@ -156,20 +166,7 @@ A list of the dependencies is :ref:`here <package requirements>`.
 
     <hr>
 
-GitHub Codespaces is a cloud-hosted, secure development environment that
-provides a ready-to-use workspace in a web browser or 
-local Visual Studio Code IDE. It requires a free GitHub account.
 
-A Codespace with *rivt* examples can be forked (copied) into a personal GitHub
-account where it can be edited and run.
-
-The repo to be forked can be found `here <https://github.com/rivt-info/rivt-codespace>`__.
-
-.. figure::  _static/img/codespace2.png
-    :class: dark-light
-    :scale: 40%
-    :align: center
-    :alt: ide layout
 
 
 .. toctree::
