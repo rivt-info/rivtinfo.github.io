@@ -11,6 +11,7 @@
 *rivt file* examples may be run in the cloud or on a local computer. A 
 typical IDE layout for running a rivt file is shown below and can be 
 explored online `here <https://codesandbox.io/p/devbox/rivt1-dkmqfm?file=%2Frv001-single-doc.py%3A62%2C15>`__. 
+This online example is inactive.
 
 .. figure::  _static/img/ide2.png
     :class: dark-light
@@ -18,20 +19,19 @@ explored online `here <https://codesandbox.io/p/devbox/rivt1-dkmqfm?file=%2Frv00
     :align: center
     :alt: ide layout
 
-The above online example is inactive. A live, cloud based example in Codespace
-can be forked (copied), edited and run in a personal GitHub account. GitHub
-Codespaces is a cloud-hosted, secure development environment that provides a
-ready-to-use workspace in a web browser or local Visual Studio Code IDE. It
-requires a free GitHub account.
-
-A rivt Codespace with examples can be forked (copied) into a personal GitHub
-from the repo `here <https://github.com/rivt-info/rivt-codespace>`__.
-
+A live, cloud based rivt environment with examples is available 
+`here <https://github.com/rivt-info/rivt-codespace>`__.  It can be forked 
+(copied) into a personal GitHub account where it can be edited and run. 
+The cloud environment is `Codespaces <https://github.com/features/codespaces>`__, 
+a cloud-hosted, secure development environment that provides a
+ready-to-use Visual Studio Code IDE in a web browser. 
+A free GitHub account can be setup `here <https://github.com>`__.
+ 
 .. figure::  _static/img/codespace2.png
     :class: dark-light
     :scale: 40%
     :align: center
-    :alt: ide layout
+    :alt: rivt VSCode repo
 
 Local installation methods include the following options: 
 
