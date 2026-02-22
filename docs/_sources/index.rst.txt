@@ -29,6 +29,9 @@ Python package and interprets *rivt markup*. A *rivt file* can
 publish *docs* in all formats and can be collated with other *docs* into a
 structured, linked :term:`rivt report`. This site is an example of a *rivt report*.
 
+An interface for finding public *rivt files* on *GitHub* is 
+:doc:`here<rvE03-ghsearch>`. 
+
 .. raw:: html
 
     <hr>

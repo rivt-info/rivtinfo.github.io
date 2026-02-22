@@ -25,7 +25,7 @@ A live, cloud based rivt environment with examples is available
 (copied) into a personal GitHub account where it can be edited and run. 
 The cloud environment is `Codespaces <https://github.com/features/codespaces>`__, 
 a cloud-hosted, secure development environment that provides a
-ready-to-use Visual Studio Code IDE in a web browser. 
+ready-to-use VSCode IDE in a web browser. 
 A free GitHub account can be setup `here <https://github.com>`__.
  
 .. figure::  _static/img/codespace2.png
@@ -40,8 +40,7 @@ Local installation methods include the following options:
 #. uv package manager (:ref:`rivt-uv`) 
 #. system Python package (:ref:`rivt-sys`). 
 
-*rivt-zip* is recommended for users unfamiliar with Python. An interface for
-finding *rivt files* on *GitHub* is :doc:`here <rvE03-ghsearch>`.
+*rivt-portable* is recommended for users unfamiliar with Python. 
 
 .. _rivt-portable:
 
