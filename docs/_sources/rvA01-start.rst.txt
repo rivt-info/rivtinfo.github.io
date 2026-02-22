@@ -19,7 +19,7 @@ layout for running a small example rivt file is shown below and can be
     :alt: ide layout
 
 The above online example is inactive. A live, 
-`:ref: cloud based example <Codespace>` can be forked (copied), 
+:ref:`cloud based example <Codespace>` can be forked (copied), 
 edited and run in a personal GitHub account.
 
 Local installation methods include the following options. *rivt-zip* is 
@@ -72,7 +72,7 @@ easily updated or integrated with other programs.
 
     <hr> 
 
-**rivt-uv** uses the `uv <https://astral.sh/uv/>`_ package manager to create an
+**rivt-uv** uses the `uv <https://astral.sh/uv/>` package manager to create an
 isolated rivt environment and install rivt packages and dependencies not
 already installed in the system Python. The primary advantage of *rivt-uv* is
 that it allows for updating rivt without affecting the system Python.

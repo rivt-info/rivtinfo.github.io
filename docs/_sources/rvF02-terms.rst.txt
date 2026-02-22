@@ -108,12 +108,12 @@
     The recommended *rivt-framework* includes the
     following separately installed programs:
 
-    #. `VSCode <https://code.visualstudio.com/>`_ and 
-       `VSCode extensions <https://marketplace.visualstudio.com/vscode>`_. 
+    #. `VSCode <https://code.visualstudio.com/>` and 
+       `VSCode extensions <https://marketplace.visualstudio.com/vscode>`. 
        *rivt* extensions and snippets are :doc:`here <rvF01-quickref>`.
-    #. `Git <https://git-scm.com>`_ and set up a `GitHub <hhttps://github.com>`_ 
-    #. `LaTeX <https://www.tug.org/texlive/>`_ 
-    #. `QCAD <https://qcad.io/en/>`_ 
+    #. `Git <https://git-scm.com>` and set up a `GitHub <hhttps://github.com>` 
+    #. `LaTeX <https://www.tug.org/texlive/>`
+    #. `QCAD <https://qcad.io/en/>`
 
   line tag
   line tags
