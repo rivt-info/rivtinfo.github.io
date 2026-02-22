@@ -21,8 +21,8 @@
 
 *rivt* is an open source software project for writing and formatting
 engineering documents. Documents are produced in text, HTML or PDF,
-referred to as :term:`rivt docs`. They are generated from :term:`rivt markup`
-text files, referred to as :term:`rivt files`.
+and are referred to as :term:`rivt docs`. *Docs* are generated 
+from :term:`rivt markup` text files, referred to as :term:`rivt files`.
 
 A *rivt file* is a :term:`Python` file (.py) that imports the :term:`rivtlib`
 Python package and interprets *rivt markup*. A *rivt file* can
