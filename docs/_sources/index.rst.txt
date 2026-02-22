@@ -30,7 +30,7 @@ publish *docs* in all formats and can be collated with other *docs* into a
 structured, linked :term:`rivt report`. This site is an example of a *rivt report*.
 
 *rivt file and doc* examples are provided 
-`here <https://codesandbox.io/p/devbox/rivt1-dkmqfm?file=%2Frv001-single-doc.py%3A62%2C15>`__. 
+`hereyy <https://codesandbox.io/p/devbox/rivt1-dkmqfm?file=%2Frv001-single-doc.py%3A62%2C15>`__. 
 An interface for searching *rivt files* on *GitHub* is :doc:`here <rvE03-ghsearch>`.
 
 .. raw:: html
