@@ -11,7 +11,7 @@
 
 .. glossary::
   :sorted: 
-
+    
   doc
   docs
     A formatted document file output using the rivtlib package. 
@@ -177,7 +177,6 @@
 
 .. glossary::
   :sorted: 
-
   
   Python
     A `programming language <https://www.python.org/>`_ that lets you work quickly
@@ -208,13 +207,21 @@
 .. glossary::
   :sorted: 
 
+  Git
+    A `version control system <https://git-scm.com/>`_ that lets you manage and 
+    keep track of your source code history.
 
+  repo
   repository 
     a storage location for software packages
 
   fork
-    duplicate of a software project's code to create a new, t
-    independent version
+  forked
+    A fork is a copy of a repository. Forking a repository allows you to
+    freely experiment with changes without affecting the original project.
+    Most commonly, forks are used to either propose changes to someone else's
+    project or to use someone else's project as a starting point for your own
+    idea.
 
   
 **[4t]** VSCode Terms
@@ -240,3 +247,8 @@
     and a debugger. *rivt extensions* are mostly developed for VSCode. 
     Other examples include PyCharm, Spyder, and JupyterLab.
 
+  Codespace
+  Codespaces
+    An online `VSCode environment <https://github.com/features/codespaces>`__ 
+    by Microsoftthat is integrated with GitHub.
+    

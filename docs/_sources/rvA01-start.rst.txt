@@ -10,35 +10,39 @@
 
 *rivt file* examples may be run in the cloud or on a local computer. A 
 typical IDE layout for running a rivt file is shown below and can be 
-explored online `here <https://codesandbox.io/p/devbox/rivt1-dkmqfm?file=%2Frv001-single-doc.py%3A62%2C15>`__. 
-This online example can be scrolled, and files may be downloaded but not 
-edited or run online.
+explored online in a
+`CodeSandbox <https://codesandbox.io/p/devbox/rivt1-dkmqfm?file=%2Frv001-single-doc.py%3A62%2C15>`__. 
+This online example can be scrolled and files may be downloaded, but they cannot 
+be edited or run.
 
 .. figure::  _static/img/ide2.png
     :class: dark-light
-    :scale: 40%
+    :width: 75%
     :align: center
     :alt: ide layout
 
-A live, cloud based rivt environment with examples is available 
-`here <https://github.com/rivt-info/rivt-codespace>`__.  It can be forked 
-(copied) into a personal GitHub account where it can be edited and run. 
-The cloud environment is `Codespaces <https://github.com/features/codespaces>`__, 
-a cloud-hosted, secure development environment that provides a
-ready-to-use VSCode IDE in a web browser. 
-A free GitHub account can be setup `here <https://github.com>`__.
+An online rivt environment with examples that can be edited and run is 
+available in a `Codespace <https://github.com/features/codespaces>`__. 
+
+*Codespaces* is a cloud-hosted, secure development environment 
+with a ready-to-use VSCode IDE in the web browser.  
  
+The :term:`repo` below, found `here <https://github.com/rivt-info/rivt-codespace>`__,
+can be :term:`forked` (copied) into a personal GitHub account where *rivt files* 
+can be edited and run in an online VSCode IDE.  
+A free GitHub account can be set up `here <https://github.com>`__.
+
 .. figure::  _static/img/codespace2.png
     :class: dark-light
-    :scale: 40%
+    :width: 75%
     :align: center
-    :alt: rivt VSCode repo
+    :alt: rivt example repo
 
 Local installation methods include the following options: 
 
 #. portable zip folder (:ref:`rivt-portable`) 
 #. uv package manager (:ref:`rivt-uv`) 
-#. system Python package (:ref:`rivt-sys`). 
+#. system Python package (:ref:`rivt-sys`)
 
 *rivt-portable* is recommended for users unfamiliar with Python. 
 
@@ -155,18 +159,7 @@ The *rivt-uv* installation method is recommended for most users.
 
     pip install rivtlib
     
-A list of the dependencies is :ref:`here <package requirements>`.
-
-.. _CodeSpace:
-
-**[5t]** CodeSpace
---------------------------------
-
-.. raw:: html
-
-    <hr>
-
-
+A list of the dependencies is :ref:`here <Project requirements>`.
 
 
 .. toctree::

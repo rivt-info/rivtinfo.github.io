@@ -53,10 +53,11 @@ The API is designed to be:
 
 **rivt Doc Processing**
 
-.. image:: _static/img/rivtflow2.png
+.. image:: _static/img/process2.png
+    :class: dark-light
     :width: 75%
-    :alt: rivt flow chart 
     :align: center
+    :alt: rivt flow chart 
 
 
 .. raw:: html

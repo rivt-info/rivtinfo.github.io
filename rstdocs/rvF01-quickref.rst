@@ -2,8 +2,9 @@
 **F.1 Quick Ref**
 ================== 
 
+.. _API Summary:
 
-**[1t]** API functions
+**[1t]** API Summary
 --------------------------------------------------------------------- 
 
 .. raw:: html
@@ -48,7 +49,9 @@ rv.D        **public**             **stored**           **merge**
 rv.X         -                      -                   -
 ========== ===================== ===================== =====================
 
-**[2t]** Line Tag Summary
+.. _Line Tags:
+
+**[2t]** Line Tags
 -------------------------------------
 
 .. raw:: html
@@ -74,8 +77,9 @@ rv.V, I                    **caption _[F]**                      :ref:`Figure nu
 rv.V, I                       text **_[P]**                      :ref:`New Page`
 ========== ==================================================== ===============================
 
+.. _Block Tags:
 
-**[3t]** Block Tag Summary
+**[3t]** Block Tags
 -------------------------------------
 
 .. raw:: html
@@ -97,6 +101,8 @@ rv.D        **_[[METADATA]]** label                   :ref:`Meta block`
 rv.D        **_[[LAYOUT]]** label                     :ref:`Layout block` 
 all         **_[[END]]**                              :ref:`End block`
 ========== ========================================= ===============================
+
+.. _Commmands:
 
 **[4t]** Command Summary
 -------------------------------------
@@ -147,6 +153,8 @@ rv.D        **| PUBLISH |** rel path (ini) | type                           :ref
 
 [1]  use /stored/data/filename to read values previously defined and stored
 
+
+.. _Folders:
 
 **[5t]** Folders
 -------------------------------------
@@ -267,7 +275,7 @@ rv.D        **| PUBLISH |** rel path (ini) | type                           :ref
         └── README.txt                         || searchable text report 
 
 
-.. _package requirements:
+.. _Project requirements:
 
 **[6t]** Project requirements
 -------------------------------------
@@ -319,7 +327,7 @@ includes Python packages for:
   "sphinxcontrib-serializinghtml>=2.0.0"           HTML generation
 =============================================== ================================        
 
-
+.. _VSCode settings:
 
 **[7t]** VSCode settings
 ------------------------------------
