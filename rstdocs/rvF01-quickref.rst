@@ -269,15 +269,15 @@ rv.D        **| PUBLISH |** rel path (ini) | type                           :ref
 
 .. _package requirements:
 
-**[6t]** package requirements
+**[6t]** Project requirements
 -------------------------------------
 
 .. raw:: html
 
     <hr>
 
-The minimum Python version is *3.13*. A *rivt* installation includes Python
-packages for:
+The minimum Python version is *3.13*. A *rivt* project installation 
+includes Python packages for:
 
 - document formatting
 - numerical analysis
@@ -321,7 +321,7 @@ packages for:
 
 
 
-**[7t]** VSCode settings for rivt
+**[7t]** VSCode settings
 ------------------------------------
 
 .. raw:: html
