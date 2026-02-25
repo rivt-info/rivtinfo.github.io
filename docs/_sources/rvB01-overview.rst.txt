@@ -23,9 +23,9 @@ of *rivt docs* may be collated as a :term:`rivt report`.
 :doc:`here<rvD06-reportex>`. An interface for searching *rivt files* 
 on *GitHub* is :doc:`here <rvE03-ghsearch>`. All or parts of a *rivt file* the 
 author chooses to share as a *public rivt file* can be shared under an 
-`Open Source license <https://opensource.org/licenses>`. 
+`Open Source license <https://opensource.org/licenses>`__. 
 rivt itself is distributed under the 
-`MIT open source license <https://opensource.org/license/mit>`. 
+`MIT open source license <https://opensource.org/license/mit>`__. 
 (see :ref:`Licenses`). 
 
 
