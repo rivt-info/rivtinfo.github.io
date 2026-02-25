@@ -466,19 +466,26 @@ that it allows for updating rivt without affecting the system Python.</p>
 </aside>
 <aside class="topic">
 <p class="topic-title">Step 2. Create the rivt environment</p>
-<p>After installing <em>uv</em>, download and run the following command or shell script.     It installs an isolated <em>rivt</em> environment and example files in the
-It will install <em>rivt</em> in a folder named <em>rivtuv</em> in the users <em>Home</em> directory.</p>
+<p>After installing <em>uv</em>, download and run the following command or shell
+script. It installs an isolated <em>rivt</em> environment and example files in a
+folder named <em>rivt-examples</em> in the users <em>Home</em> directory.</p>
 <p>Windows:  <a class="reference download internal" download="" href="_downloads/3883216e7f8a8167bfab705f585bda9c/rivtuv.cmd"><code class="xref download docutils literal notranslate"><span class="pre">rivtuv.cmd</span></code></a></p>
 <p>OSX and Linux: <a class="reference download internal" download="" href="_downloads/8aea5313b4752f6c507744d1c20b200b/rivtuv.sh"><code class="xref download docutils literal notranslate"><span class="pre">rivtuv.sh</span></code></a></p>
 </aside>
 <aside class="topic">
 <p class="topic-title">Step 3. Run the example program from Pyzo.</p>
-<p>A <em>rivt</em> installation includes the <cite>Pyzo &lt;https://pyzo.org/&gt;</cite>. IDE for
-editing and running examples. The <em>rivt-uv</em> installation includes commands
-named <em>rivt-example.cmd</em> (Windows) or <em>rivt-example.sh</em> (Macos or Linux)
-that start <em>Pyzo</em> with the example file <em>rv001-single-doc.py</em>.</p>
+<p>The <em>rivt</em> installation includes the <cite>Pyzo &lt;https://pyzo.org/&gt;</cite>. IDE for
+editing and running examples. Typing the command <em>pyzo-example</em> from the uv
+environment root will load the example file <em>rv00-simple-doc.py</em> where it
+can be edited and run.</p>
 <p>The example file can also be run from the command line with the command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>rivt<span class="w"> </span>rv001-single-doc.py
+</pre></div>
+</div>
+<p>The uv environment can be completely removed with the following commands.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>deactivate
+rmdir<span class="w"> </span>/s<span class="w"> </span>/q<span class="w"> </span>rivt-examples
+uv<span class="w"> </span>cache<span class="w"> </span>clean
 </pre></div>
 </div>
 </aside>

@@ -1,19 +1,12 @@
 @echo on
-REM Windows 10 and above - cmd file
-REM (1) clear any existing project and venv
+REM Windows 10 and above
+REM (1) change directory
 REM (2) create new venv
-REM (3) install rivt from GitHub
-REM (4) download example file from GitHub
+REM (3) install rivt from PyPI
 REM set rivt folder
-SET rvfolder=rivt-doc2
-REM go to home directory
+SET rvfolder=rivt-examples
+REM (1) go to home directory
 cd %HOMEPATH%
-REM double check deactivation
-uv deactivate
-REM double check that old project is deleted
-rmdir /s /q %rvfolder%
-REM (1) clean cache 
-uv cache clean
 REM set up venv
 mkdir %rvfolder%
 REM change directory
@@ -23,13 +16,7 @@ uv venv
 REM activate venv
 call .venv/scripts/activate
 REM (3) install rivt from GitHub
-uv pip install git+https://github.com/rivtlib-dev/rivtlib.git@main
+uv pip install rivtlib
 REM (4) download example project into new folder
-mkdir example2
-cd example2
-curl https://raw.githubusercontent.com/rivt-info/rivt-single-doc/refs/heads/main/rv000-single-doc.py -O
-curl https://raw.githubusercontent.com/rivt-info/rivt-single-doc/refs/heads/main/s-beam1-v.csv -O
-curl https://raw.githubusercontent.com/rivt-info/rivt-single-doc/refs/heads/main/s-sectprop.py -O
-curl https://github.com/rivt-info/rivt-single-doc/blob/main/s-beam.png?raw=true -O -L
-REM run example (no quotes) "python rv000-simple-doc.py"
+REM run example (no quotes) "pyzo-example"
 cmd /k

@@ -117,20 +117,20 @@ The *rivt-uv* installation method is recommended for most users.
 
 .. topic:: Step 2. Create the rivt environment
 
-    After installing *uv*, download and run the following command or shell script.     It installs an isolated *rivt* environment and example files in the 
-    It will install *rivt* in a folder named *rivtuv* in the users *Home* directory. 
+    After installing *uv*, download and run the following command or shell
+    script. It installs an isolated *rivt* environment and example files in a
+    folder named *rivt-examples* in the users *Home* directory.
 
     Windows:  :download:`rivtuv.cmd </_downloads/rivtuv.cmd>` 
 
     OSX and Linux: :download:`rivtuv.sh </_downloads/rivtuv.sh>`
     
-
 .. topic:: Step 3. Run the example program from Pyzo.
 
-    A *rivt* installation includes the `Pyzo <https://pyzo.org/>`. IDE for
-    editing and running examples. The *rivt-uv* installation includes commands
-    named *rivt-example.cmd* (Windows) or *rivt-example.sh* (Macos or Linux)
-    that start *Pyzo* with the example file *rv001-single-doc.py*.
+    The *rivt* installation includes the `Pyzo <https://pyzo.org/>`. IDE for
+    editing and running examples. Typing the command *pyzo-example* from the uv
+    environment root will load the example file *rv00-simple-doc.py* where it
+    can be edited and run.
     
     The example file can also be run from the command line with the command:
 
@@ -138,6 +138,13 @@ The *rivt-uv* installation method is recommended for most users.
 
         python -m rivt rv001-single-doc.py
 
+    The uv environment can be completely removed with the following commands.
+
+    .. code-block:: bash
+
+        uv deactivate
+        rmdir /s /q rivt-examples
+        uv cache clean
 
 .. _rivt-sys:
 
