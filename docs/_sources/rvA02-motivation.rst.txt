@@ -64,16 +64,11 @@ Jupyter        no       no         no      yes         yes      yes
 
 The primary use case for *rivt* is producing engineering documents that lie
 somewhere between back of envelope notes and calculations, and formal journal
-publications. In other words it produces formatted and organized documents that
-are easily edited. The second use case is when format flexilibty is needed i.e.
-text, PDF or HTML.
+publications. In other words, it produces formatted, organized documents that
+are easy to edit. 
 
-*rivt docs* can be used for:
-
-#. internal communication
-#. research documentation
-#. government permits
-#. funding applications
+The second use case is when flexibilty is needed to produce documents in
+a variety of formats including text, PDF or HTML.
 
 *rivt files* can function as a front and back end for:
 
@@ -81,8 +76,16 @@ text, PDF or HTML.
 #. visualization
 #. instrumentation
 
-Because *rivt* is built with collaborative tools it may be used in:
+*rivt docs* can be used for:
+
+#. internal communication
+#. research documentation
+#. government permits
+#. technical reports
+#. funding applications
+
+Because *rivt* is compatible with collaborative tools it may be used in:
 
 #. teaching
-#. demonstrations
-#. real timecollaboration
+#. for presentations
+#. real time collaboration
