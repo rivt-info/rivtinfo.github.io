@@ -159,10 +159,11 @@ The *rivt-uv* installation method is recommended for most users.
 
 *rivt* may be installed at the system level. 
 
-#. Install Python using `Python installers <https://www.python.org/downloads/>`. 
-   The minimum Python version required is Python 3.13.
+#.  Install Python using `Python installers <https://www.python.org/downloads/>`
+    if not already installed. The minimum version required by *rivt* is 
+    Python 3.13.
 
-#. Install *rivtlib* and dependencies 
+#.  Install *rivtlib* and dependencies 
 
 .. code-block:: bash
 
