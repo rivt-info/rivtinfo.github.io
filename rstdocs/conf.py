@@ -11,7 +11,7 @@ extensions = ['sphinx.ext.githubpages','sphinx_togglebutton',
               "sphinxcontrib.jquery", 'sphinx_copybutton',
               'sphinx_favicon', 'sphinx.ext.duration',
               'sphinx.ext.doctest', 'sphinx.ext.autodoc',
-              'sphinx_design']
+              'sphinx_design','sphinx_new_tab_link']
 
 master_doc = 'index'
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
@@ -19,7 +19,7 @@ source_suffix = ['.rst', '.md']
 templates_path = ['_templates']
 locale_dirs = ['_locale'] 
 
-
+    
 html_title = "rivt"
 html_theme = 'pydata_sphinx_theme'
 html_show_sourcelink = False
