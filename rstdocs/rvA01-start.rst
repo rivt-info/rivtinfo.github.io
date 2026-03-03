@@ -30,19 +30,17 @@ referred to as a `Codespace <https://github.com/features/codespaces>`__ .
 A :term:`rivt Codespace` is a *Codespace* environment with extensions 
 for editing and running *rivt files*. 
 
-This `rivt Codepsace <https://github.com/rivt-info/rivt-codespace-examples>`__ 
-with examples can be forked into a personal account.  To fork and run the 
-examples the required GitHub account can be opened `here <https://github.com>`__. 
+This `rivt Codepsace with examples <https://github.com/rivt-info/rivt-codespace-examples>`__ 
+can be forked into a personal account.  To fork and run the examples the 
+required GitHub account can be opened `here <https://github.com>`__. 
 
 .. topic::  Steps to fork and run the examples
 
-    #. click the *Fork* button in the upper right corner of the page 
-        to create a copy of the repository in your GitHub account
+    #. click the *Fork* button in the upper right corner to create a copy of the repository in your GitHub account
     #. change to your GitHub account and open the forked repository
     #. click the green *Code* button on the GitHub page 
     #. select the *Codespaces* tab
-    #. click the *rivt-codespace-examples* option 
-        to create and open a *rivt Codespace*
+    #. click the *rivt-codespace-examples* option to create and open a *rivt Codespace*
 
 .. figure::  _static/img/codespace2.png
     :class: dark-light
@@ -100,7 +98,7 @@ easily updated or integrated with other programs.
 
     <hr> 
 
-**rivt-uv** uses the `uv <https://astral.sh/uv/>` package manager to create an
+**rivt-uv** uses the `uv <https://astral.sh/uv/>`__ package manager to create an
 isolated rivt environment and install rivt packages and dependencies not
 already installed in the system Python. The primary advantage of *rivt-uv* is
 that it allows for updating rivt without affecting the system Python.
@@ -111,7 +109,7 @@ The *rivt-uv* installation method is recommended for most users.
 .. topic:: Step 1. Install uv
 
     Install *uv* from 
-    `here <https://docs.astral.sh/uv/getting-started/installation/#pypi>`. 
+    `here <https://docs.astral.sh/uv/getting-started/installation/#pypi>`__. 
 
     The recommended method for installing *uv* is from the command line:
 
@@ -139,7 +137,7 @@ The *rivt-uv* installation method is recommended for most users.
     
 .. topic:: Step 3. Run the example program from Pyzo.
 
-    The *rivt* installation includes the `Pyzo <https://pyzo.org/>`. IDE for
+    The *rivt* installation includes the `Pyzo <https://pyzo.org/>`__ IDE for
     editing and running examples. Typing the command *pyzo-example* from the uv
     environment root will load the example file *rv00-simple-doc.py* where it
     can be edited and run.
@@ -169,7 +167,7 @@ The *rivt-uv* installation method is recommended for most users.
 
 *rivt* may be installed at the system level. 
 
-#.  Install Python using `Python installers <https://www.python.org/downloads/>`
+#.  Install Python using `Python installers <https://www.python.org/downloads/>`__
     if not already installed. The minimum version required by *rivt* is 
     Python 3.13.
 
