@@ -36,7 +36,7 @@ To edit and run the examples, a required GitHub account can be set up
 `from here <https://github.com>`__. The *rivt Codespace* can be deployed in a 
 *GitHub Codespace* 
 
-.. code:: bash
+.. code:: text
 
     1. click the "Fork" button in the upper right corner of the page 
         to create a copy of the repository in your GitHub account
