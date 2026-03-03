@@ -34,7 +34,7 @@ This `rivt Codepsace <https://github.com/rivt-info/rivt-codespace-examples>`__
 with examples can be forked into a personal account.  To fork and run the 
 examples the required GitHub account can be opened `here <https://github.com>`__. 
 
-.. code:: text
+.. code:: restructuredtext
 
     **Steps to fork and run the examples:**
 
