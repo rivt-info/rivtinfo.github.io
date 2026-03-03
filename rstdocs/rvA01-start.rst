@@ -9,9 +9,9 @@
    <hr> 
 
 *rivt file* examples can be run in the cloud or on a local computer. In both 
-cases editing and publishing is typically carried out in IDE. Any IDE
-maay be used but VSCode is supported as part of the :term:`rivt framework`.
-A typical *rivt* editor layout can be viewed at `Codesandbox
+cases editing and publishing is typically carried out in an IDE. *rivt* 
+documentation is focused on *VSCode*, but any IDE may be used. A typical IDE 
+layout can be viewed at `Codesandbox
 <https://codesandbox.io/p/devbox/rivt1-dkmqfm?file=%2Frv001-single-doc.txt>`__.
 The sandbox allows scrolling through an example rivt file (left panel) and
 text doc (right panel). Files may be downloaded from the file explorer (far left
@@ -20,7 +20,7 @@ does not allow editing or processing files.
 
 .. figure::  _static/img/ide2.png
     :class: dark-light
-    :width: 75%
+    :width: 85%
     :align: center
     :alt: ide layout
 
@@ -49,7 +49,7 @@ To edit and run the examples, a required GitHub account can be set up
 
 .. figure::  _static/img/codespace2.png
     :class: dark-light
-    :width: 75%
+    :width: 85%
     :align: center
     :alt: rivt example repo
 
