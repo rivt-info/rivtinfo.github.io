@@ -36,7 +36,7 @@ required GitHub account can be opened `here <https://github.com>`__.
 
 .. topic::  Steps to fork and run *rivt* examples
 
-    ..code-block:: text
+    .. code-block:: text
 
         1. click the *Fork* button in the upper right corner to create a copy of the repository in your GitHub account
         2. change to your GitHub account and open the forked repository
