@@ -30,13 +30,13 @@ referred to as a `Codespace <https://github.com/features/codespaces>`__ .
 A :term:`rivt Codespace` is a *Codespace* environment with extensions 
 for editing and running *rivt files*. 
 
-A *rivt Codespace* with *rivt file* examples can be cloned into a personal account 
-`from here <https://github.com/rivt-info/rivt-codespace-examples>`__.  
-To edit and run the examples, a required GitHub account can be set up 
-`from here <https://github.com>`__. The *rivt Codespace* can be deployed in a 
-*GitHub Codespace* 
+This `rivt Codepsace <https://github.com/rivt-info/rivt-codespace-examples>`__ 
+with examples can be forked into a personal account.  To fork and run the 
+examples the required GitHub account can be opened `here <https://github.com>`__. 
 
 .. code:: text
+
+    **Steps to fork and run the examples:**
 
     1. click the "Fork" button in the upper right corner of the page 
         to create a copy of the repository in your GitHub account
