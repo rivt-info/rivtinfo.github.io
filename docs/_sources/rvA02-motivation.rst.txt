@@ -27,7 +27,8 @@ been restricted by their design and terms of use:
 - collaboration features are limited
 
 The table below summarizes and compares limitations between different software
-programs. *rivt* is designed to address these limitations.
+programs. *rivt* is designed to address these limitations and function as a
+replacement or complement to existing software.
 
 .. rst-class:: center
 
@@ -39,7 +40,8 @@ Program      Rep [1]_  Ver [2]_ Txt [3]_ Comp [4]_  CP [5]_   Collab [6]_
 Matlab         no       no         no      no          no       no   
 Mathcad        no       no         no      no          no       no   
 Mathematica    no       no         no      no          no       no   
-Cloud SaaS    limited  limited     no      no          yes      limited  
+Cloud SaaS    limited   no         no      no          yes      limited  
+Excel         limited   no         no      yes         no       yes 
 Jupyter        no       no         no      yes         yes      yes  
 **rivt**      **yes**  **yes**   **yes**  **yes**   **yes**    **yes**
 ============ ========= ======== ======== ========= ========= ============= 
@@ -53,7 +55,6 @@ Jupyter        no       no         no      yes         yes      yes
     .. [4] Forward and backward compatibility
     .. [5] Cross-platform
     .. [6] Collaboration support
-
 
 **[2t]** Use Cases
 --------------------------------------------------------------------- 

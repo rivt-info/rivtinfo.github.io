@@ -197,8 +197,8 @@
     and variables. 
 
 
-**[3t]** GitHub Terms
------------------------------
+**[3t]** GitHub and VSCode Terms
+-----------------------------------
 
 .. raw:: html
 
@@ -223,17 +223,6 @@
     project or to use someone else's project as a starting point for your own
     idea.
 
-  
-**[4t]** VSCode Terms
------------------------------
-
-.. raw:: html
-
-    <hr>
-
-.. glossary::
-  :sorted: 
-
   profile
     Allows VSCode users to customize their environment for different workflows, 
     projects, or tasks. This feature provides a way to manage distinct 
@@ -251,4 +240,7 @@
   Codespaces
     An online `VSCode environment <https://github.com/features/codespaces>`__ 
     by Microsoftthat is integrated with GitHub.
-    
+
+  rivt Codespace
+    A Codespace set up with extensions, snippets and keyboard shortcuts for 
+    editing and publishing *rivt docs*.

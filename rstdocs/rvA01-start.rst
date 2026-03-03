@@ -8,12 +8,15 @@
 
    <hr> 
 
-*rivt file* examples may be run in the cloud or on a local computer. A typical
-*rivt* editor layout can be explored online in a `Codesandbox
+*rivt file* examples can be run in the cloud or on a local computer. In both 
+cases editing and publishing is typically carried out in IDE. Any IDE
+maay be used but VSCode is supported as part of the :term:`rivt framework`.
+A typical *rivt* editor layout can be viewed at `Codesandbox
 <https://codesandbox.io/p/devbox/rivt1-dkmqfm?file=%2Frv001-single-doc.txt>`__.
-The sandbox permits scrolling through the example rivt file (left panel) and
-text doc (right panel) and downloading the text, pdf and html reports. It does
-not allow for editing or running the file.
+The sandbox allows scrolling through an example rivt file (left panel) and
+text doc (right panel). Files may be downloaded from the file explorer (far left
+panel) including the text, pdf and html reports. As an unregistered editor it 
+does not allow editing or processing files.
 
 .. figure::  _static/img/ide2.png
     :class: dark-light
@@ -21,18 +24,28 @@ not allow for editing or running the file.
     :align: center
     :alt: ide layout
 
-`Codespaces <https://github.com/features/codespaces>`__ is a Microsoft 
-secure cloud development environment with a ready-to-use VSCode IDE 
-in the web browser. The online example can be scrolled and files may be downloaded, but they cannot 
-be edited or run.
+`VSCode <https://code.visualstudio.com/>`__ is an extensible IDE by 
+*Microsoft* that can be run locally or in the cloud. The cloud version is 
+referred to as a `Codespace <https://github.com/features/codespaces>`__ .
+A :term:`rivt Codespace` is a *Codespace* environment with extensions 
+for editing and running *rivt files*. 
 
-An online *rivt* environment with examples that can be edited and run in an
-active Codespace is `here <https://github.com/rivt-info/rivt-codespace-examples>`__.  
-To edit and run the examples, a GitHub account is required. A free GitHub
-account can be set up `here <https://github.com>`__.
-The active *Codespace* can be accessed by clicking the green "Code" button on
-the GitHub page, selecting the "Codespaces" tab, and then clicking
-"rivt-codespace-examples".
+A *rivt Codespace* with *rivt file* examples can be cloned into a personal account 
+`from here <https://github.com/rivt-info/rivt-codespace-examples>`__.  
+To edit and run the examples, a required GitHub account can be set up 
+`from here <https://github.com>`__. The *rivt Codespace* can be deployed in a 
+*GitHub Codespace* 
+
+.. code:: bash
+
+    1. click the "Fork" button in the upper right corner of the page 
+        to create a copy of the repository in your GitHub account
+    2. change to your GitHub account and open the forked repository
+    3. click the green "Code" button on the GitHub page 
+    4. select the "Codespaces" tab
+    5. click the"rivt-codespace-examples" option 
+        to create and open a *rivt Codespace* with the examples
+
 
 .. figure::  _static/img/codespace2.png
     :class: dark-light
