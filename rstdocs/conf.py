@@ -18,8 +18,6 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 source_suffix = ['.rst', '.md']
 templates_path = ['_templates']
 locale_dirs = ['_locale'] 
-
-    
 html_title = "rivt"
 html_theme = 'pydata_sphinx_theme'
 html_show_sourcelink = False

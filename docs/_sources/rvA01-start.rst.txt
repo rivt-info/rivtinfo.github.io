@@ -14,27 +14,28 @@ documentation is focused on *VSCode*, but any IDE may be used. A typical IDE
 layout can be viewed at `Codesandbox
 <https://codesandbox.io/p/devbox/rivt1-dkmqfm?file=%2Frv001-single-doc.txt>`__.
 The sandbox allows scrolling through an example rivt file (left panel) and
-text doc (right panel). Files may be downloaded from the file explorer (far left
-panel) including the text, pdf and html reports. As an unregistered editor it 
-does not allow editing or processing files.
+text doc (right panel). Files may be downloaded from the file explorer 
+(far left panel) including the text, pdf and html reports. Because the 
+is unregistered editor files cannot be edited or processed.
 
 .. figure::  _static/img/ide2.png
     :class: dark-light
-    :width: 85%
+    :width: 90%
     :align: center
     :alt: ide layout
 
-`VSCode <https://code.visualstudio.com/>`__ is an extensible IDE by 
-*Microsoft* that can be run locally or in the cloud. The cloud version is 
+*VSCode*  is a customizable `Microsoft IDE <https://code.visualstudio.com/>`__
+that can be run locally or in the cloud. The cloud version is 
 referred to as a `Codespace <https://github.com/features/codespaces>`__ .
-A :term:`rivt Codespace` is a *Codespace* environment with extensions 
-for editing and running *rivt files*. 
+It can be forked (copied) and run in a personal GithUb account
+that may be set up `here <https://github.com>`__.  
 
-This `rivt Codepsace with examples <https://github.com/rivt-info/rivt-codespace-examples>`__ 
-can be forked into a personal account.  To fork and run the examples the 
-required GitHub account can be opened `here <https://github.com>`__. 
+A :term:`rivt Codespace` is an environment with *rivt* extensions for 
+editing and running *rivt files*.  A rivt Codepsace with examples can be forked 
+from `this repository <https://github.com/rivt-info/rivt-codespace-examples>`__ 
+by following the steps below.
 
-.. topic::  Steps to fork and run *rivt* examples
+.. topic::  Fork a *rivt Codespace* in the cloud 
 
     .. code-block:: text
 
@@ -52,17 +53,17 @@ required GitHub account can be opened `here <https://github.com>`__.
 
 .. figure::  _static/img/codespace2.png
     :class: dark-light
-    :width: 85%
+    :width: 90%
     :align: center
-    :alt: rivt example repo
+    :alt: rivt Codespace repo
 
-Local installation methods include the following options: 
+.. topic::  Local installation methods
 
-#. portable zip folder (:ref:`rivt-portable`) 
-#. uv package manager (:ref:`rivt-uv`) 
-#. system Python package (:ref:`rivt-sys`)
+    1. portable zip folder (:ref:`rivt-portable`) 
+    2. uv package manager (:ref:`rivt-uv`) 
+    3. system Python package (:ref:`rivt-sys`)
 
-*rivt-portable* is recommended for users unfamiliar with Python. 
+    *rivt-portable* is recommended for users unfamiliar with Python
 
 .. _rivt-portable:
 
@@ -73,29 +74,39 @@ Local installation methods include the following options:
 
    <hr> 
 
-rivt-portable is a zipped folder that includes:
-
-#. Python 3.13 with rivt packages 
-#. VSCode 1.109 with rivt extensions
-#. rivt file examples
-
-The folder may be downloaded `here <https://github.com/rivtlib-dev/rivt-zip>`.
-The zip file name is:
+The *rivt-portable* installation method is recommended for Windows users
+unfamiliar with Python.The portable zip filename is :
  
 .. code-block:: text
 
-    rivt-portable-n.n.n.zip
+    win64-rivt-portable-n.n.n.zip
 
-where n-n-n is the major, minor and patch release number. The folder contents
-are unzipped into a directory with read-write access - typically the users home
-folder. 
+where n-n-n is the major, minor and patch release number. An *a* appended to
+the version is an *alpha* release, which indicates that features are missing
+and *rivt markup* syntax may change in the future. Zip file contents need to be
+unzipped into a directory with read-write access - typically the users home
+folder or a flash drive. The zip contents include::
 
-The primary advantage of *rivt-zip* is installation simplicity and isolation
-from the operating system. Packages and extensions are pre-installed. VSCode
-with rivt extensions and examples can be started with a single click. Updated
-releases of *rivt-zip* are planned monthly. The primary disadvantage of
-*rivt-zip* is that individual files (package components and extensions) are not
-easily updated or integrated with other programs.
+.. code-block:: text
+
+    release: rivt-portable-1.0.0a4.zip
+
+    1. Python 3.13 with rivt packages 
+    2. VSCode 1.109 with rivt extensions
+    3. rivt-1.1.0a4
+    4. Example rivt files
+
+Folder content versions are listed for each release. 
+at the GitHub `release page <https://github.com/rivtlib-dev/rivt-zip>`. 
+
+The primary advantages of *rivt-portable* are simplified installation, package
+integration, and isolation from system files. VSCode and examples are started
+with a single shortcut.
+
+The primary disadvantages of *rivt-portable* are that *rivt* packages
+components, extensions must be updated as a single zip file, and that it is
+more difficult to integrate with other Python programs. Each zip file is about
+300 MB and releases are planned monthly.
 
 .. _rivt-uv:
 
