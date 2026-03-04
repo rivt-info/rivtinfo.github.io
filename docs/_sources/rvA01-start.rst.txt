@@ -39,17 +39,16 @@ by following the steps below.
 
     .. code-block:: text
 
-        1. Click the *Fork* button in the upper right corner. 
+        1. Click the Fork button in the upper right corner. 
            This creates a copy of the repository in your GitHub account.
         2. Switch to your GitHub account and open the forked repository
-        3. Click the green *Code* button
-        4. Select the *Codespaces* tab
-        5. Click the *rivt-codespace-examples* option.
-        6. This creates a *Codespace* environment in your GitHub account 
+        3. Click the green Code button
+        4. Select the Codespaces tab
+        5. Click the rivt-codespace-examples option.
+        6. This creates a Codespace environment in your GitHub account 
            and opens the repository in the online VSCode IDE. The environment 
-           includes the rivt packages and extensions needed to run *rivt files*,
-           including the examples. Edits and new files and docs you make are 
-           saved in your repository. 
+           includes the rivt packages and extensions needed to run and 
+           publish rivt docs and files.
 
 .. figure::  _static/img/codespace2.png
     :class: dark-light
