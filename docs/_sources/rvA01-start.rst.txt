@@ -59,11 +59,11 @@ by following the steps below.
 
 .. topic::  Local installation methods
 
-    1. portable zip folder (:ref:`rivt-portable`) 
+    1. Windows portable zip folder (:ref:`rivt-portable`) 
     2. uv package manager (:ref:`rivt-uv`) 
     3. system Python package (:ref:`rivt-sys`)
 
-    *rivt-portable* is recommended for users unfamiliar with Python
+    *rivt-portable* is recommended for Windows users unfamiliar with Python
 
 .. _rivt-portable:
 
@@ -85,19 +85,20 @@ where n-n-n is the major, minor and patch release number. An *a* appended to
 the version is an *alpha* release, which indicates that features are missing
 and *rivt markup* syntax may change in the future. Zip file contents need to be
 unzipped into a directory with read-write access - typically the users home
-folder or a flash drive. The zip contents include::
+folder or a flash drive. The zipped and unzipped file sizes are approximately
+1GB and 2GB respectively, and the contents include::
 
 .. code-block:: text
 
     release: rivt-portable-1.0.0a4.zip
 
-    1. Python 3.13 with rivt packages 
+    1. Python 3.14 with rivt packages 
     2. VSCode 1.109 with rivt extensions
     3. rivt-1.1.0a4
     4. Example rivt files
 
-Folder content versions are listed for each release. 
-at the GitHub `release page <https://github.com/rivtlib-dev/rivt-zip>`. 
+Program versions are listed for each release at the GitHub 
+`release page <https://github.com/rivtlib-dev/rivt-portable>`. 
 
 The primary advantages of *rivt-portable* are simplified installation, package
 integration, and isolation from system files. VSCode and examples are started
