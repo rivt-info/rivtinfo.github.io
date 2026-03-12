@@ -16,7 +16,7 @@ REM (2) make venv
 uv venv --allow-existing
 REM activate venv
 call .venv/scripts/activate
-REM (3) install rivt from GitHub
+REM (3) install rivt from pypi
 uv pip install rivtlib
 REM (4) download example project into new folder
 mkdir rivt-example01
