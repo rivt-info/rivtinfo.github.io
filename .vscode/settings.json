@@ -103,7 +103,7 @@
         "statusBar.background": "#172335",
     },
     "workbench.panel.defaultLocation": "right",
-    "python.defaultInterpreterPath": "c:\\Python313\\python.exe",
+    "python.defaultInterpreterPath": "C:\\Users\\rodhh\\Python314\\python.exe",
     "explorer.sortOrder": "name",
     "editor.hover.enabled": "off",
     "editor.parameterHints.enabled": false,

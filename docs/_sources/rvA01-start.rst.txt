@@ -73,19 +73,19 @@ by following the steps below.
 
    <hr> 
 
-The *rivt-portable* installation method is recommended for Windows users
-unfamiliar with Python.The portable zip filename is :
+A *rivt-portable* installation is recommended for Windows users
+unfamiliar with Python. The portable zip filename is :
  
 .. code-block:: text
 
-    win64-rivt-portable-n.n.n.zip
+    win64-rivt-portable-n.n.n[an].zip
 
-where n-n-n is the major, minor and patch release number. An *a* appended to
+where n-n-n is the major, minor and patch release number. An *an* appended to
 the version is an *alpha* release, which indicates that features are missing
-and *rivt markup* syntax may change in the future. Zip file contents need to be
+and *rivt markup* syntax may change in the future. Zip file contents must be
 unzipped into a directory with read-write access - typically the users home
 folder or a flash drive. The zipped and unzipped file sizes are approximately
-1GB and 2GB respectively, and the contents include::
+1GB and 2GB respectively, and the contents include:
 
 .. code-block:: text
 
@@ -96,8 +96,7 @@ folder or a flash drive. The zipped and unzipped file sizes are approximately
     3. rivt-1.1.0a4
     4. Example rivt files
 
-Program versions are listed for each release at the GitHub 
-`release page <https://github.com/rivtlib-dev/rivt-portable>`. 
+Releases may be download from  `GitHub <https://github.com/rivtlib-dev/rivt-portable/releases/>`. 
 
 The primary advantages of *rivt-portable* are simplified installation, package
 integration, and isolation from system files. VSCode and examples are started
