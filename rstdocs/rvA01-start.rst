@@ -96,7 +96,7 @@ folder or a flash drive. The zipped and unzipped file sizes are approximately
     3. rivt-1.1.0a4
     4. Example rivt files
 
-Releases may be download from  `GitHub <https://github.com/rivtlib-dev/rivt-portable/releases/>`. 
+Releases may be download from  `GitHub <https://github.com/rivtlib-dev/rivt-portable/releases/>`__. 
 
 The primary advantages of *rivt-portable* are simplified installation, package
 integration, and isolation from system files. VSCode and examples are started
