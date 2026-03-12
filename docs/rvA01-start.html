@@ -461,7 +461,8 @@ folder or a flash drive. The zipped and unzipped file sizes are approximately
 4. Example rivt files
 </pre></div>
 </div>
-<p>Releases may be download from  <a class="reference external" href="https://github.com/rivtlib-dev/rivt-portable/releases/" rel="noreferrer" target="_blank">GitHub</a>.</p>
+<p>Releases may be download from the
+<a class="reference external" href="https://github.com/rivtlib-dev/rivt-portable/releases/" rel="noreferrer" target="_blank">GitHub repository</a>.</p>
 <p>The primary advantages of <em>rivt-portable</em> are simplified installation, package
 integration, and isolation from system files. VSCode and examples are started
 with a single shortcut.</p>
@@ -472,14 +473,15 @@ more difficult to integrate with other Python programs. Each zip file is about
 </section>
 <section id="t-rivt-uv">
 <span id="rivt-uv"></span><h2><strong>[3t]</strong> rivt-uv<a class="headerlink" href="#t-rivt-uv" title="Link to this heading">#</a></h2>
-<hr><p><strong>rivt-uv</strong> uses the <a class="reference external" href="https://astral.sh/uv/" rel="noreferrer" target="_blank">uv</a> package manager to create an
-isolated rivt environment and install rivt packages and dependencies not
-already installed in the system Python. The primary advantage of <em>rivt-uv</em> is
-that it allows for updating rivt without affecting the system Python.</p>
-<p>The <em>rivt-uv</em> installation method is recommended for most users.</p>
+<hr><p><strong>rivt-uv</strong> uses the <a class="reference external" href="https://docs.astral.sh/uv/" rel="noreferrer" target="_blank">uv</a> package manager to
+create an isolated rivt environment and install packages. The primary advantage
+of <em>rivt-uv</em> is its simplicity and speed in updating packages without affecting
+the system Python.</p>
+<p>The <em>rivt-uv</em> installation method is recommended for most users with some
+familiarity with Python and programming.</p>
 <aside class="topic">
 <p class="topic-title">Step 1. Install uv</p>
-<p>Install <em>uv</em> from
+<p>Different methods for installing <em>uv</em> are described
 <a class="reference external" href="https://docs.astral.sh/uv/getting-started/installation/#pypi" rel="noreferrer" target="_blank">here</a>.</p>
 <p>The recommended method for installing <em>uv</em> is from the command line:</p>
 <p>Windows:</p>
@@ -493,18 +495,27 @@ that it allows for updating rivt without affecting the system Python.</p>
 </aside>
 <aside class="topic">
 <p class="topic-title">Step 2. Create the rivt environment</p>
-<p>After installing <em>uv</em>, download and run the following command or shell
-script. It installs an isolated <em>rivt</em> environment and example files in a
+<p>After installing <em>uv</em>, download and run the following rivt install script.
+It installs an isolated <em>rivt environment</em> and example files in a
 folder named <em>rivt-examples</em> in the users <em>Home</em> directory.</p>
 <p>Windows:  <a class="reference download internal" download="" href="_downloads/3883216e7f8a8167bfab705f585bda9c/rivtuv.cmd"><code class="xref download docutils literal notranslate"><span class="pre">rivtuv.cmd</span></code></a></p>
 <p>OSX and Linux: <a class="reference download internal" download="" href="_downloads/8aea5313b4752f6c507744d1c20b200b/rivtuv.sh"><code class="xref download docutils literal notranslate"><span class="pre">rivtuv.sh</span></code></a></p>
 </aside>
 <aside class="topic">
 <p class="topic-title">Step 3. Run the example program from Pyzo.</p>
-<p>The <em>rivt</em> installation includes the <a class="reference external" href="https://pyzo.org/" rel="noreferrer" target="_blank">Pyzo</a> IDE for
-editing and running examples. Typing the command <em>pyzo-example</em> from the uv
-environment root will load the example file <em>rv00-simple-doc.py</em> where it
-can be edited and run.</p>
+<p>The <em>rivt environment</em> is activated by:</p>
+<p>Windows:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./venv/Scripts/activate
+</pre></div>
+</div>
+<p>macOS and Linux:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span><span class="w"> </span>venv/bin/activate
+</pre></div>
+</div>
+<p><em>rivt</em> includes the <a class="reference external" href="https://pyzo.org/" rel="noreferrer" target="_blank">Pyzo</a> IDE for editing and
+running examples. Typing the command <em>pyzo-example</em> from the environment
+root will load the example file <em>rv00-simple-doc.py</em> where it can be edited
+and run.</p>
 <p>The example file can also be run from the command line with the command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>rivt<span class="w"> </span>rv001-single-doc.py
 </pre></div>

@@ -96,7 +96,8 @@ folder or a flash drive. The zipped and unzipped file sizes are approximately
     3. rivt-1.1.0a4
     4. Example rivt files
 
-Releases may be download from  `GitHub <https://github.com/rivtlib-dev/rivt-portable/releases/>`__. 
+Releases may be download from the 
+`GitHub repository <https://github.com/rivtlib-dev/rivt-portable/releases/>`__. 
 
 The primary advantages of *rivt-portable* are simplified installation, package
 integration, and isolation from system files. VSCode and examples are started
@@ -116,17 +117,17 @@ more difficult to integrate with other Python programs. Each zip file is about
 
     <hr> 
 
-**rivt-uv** uses the `uv <https://astral.sh/uv/>`__ package manager to create an
-isolated rivt environment and install rivt packages and dependencies not
-already installed in the system Python. The primary advantage of *rivt-uv* is
-that it allows for updating rivt without affecting the system Python.
+**rivt-uv** uses the `uv <https://docs.astral.sh/uv/>`__ package manager to
+create an isolated rivt environment and install packages. The primary advantage
+of *rivt-uv* is its simplicity and speed in updating packages without affecting
+the system Python.
 
-
-The *rivt-uv* installation method is recommended for most users.
+The *rivt-uv* installation method is recommended for most users with some 
+familiarity with Python and programming.
 
 .. topic:: Step 1. Install uv
 
-    Install *uv* from 
+    Different methods for installing *uv* are described
     `here <https://docs.astral.sh/uv/getting-started/installation/#pypi>`__. 
 
     The recommended method for installing *uv* is from the command line:
@@ -145,8 +146,8 @@ The *rivt-uv* installation method is recommended for most users.
 
 .. topic:: Step 2. Create the rivt environment
 
-    After installing *uv*, download and run the following command or shell
-    script. It installs an isolated *rivt* environment and example files in a
+    After installing *uv*, download and run the following rivt install script.
+    It installs an isolated *rivt environment* and example files in a
     folder named *rivt-examples* in the users *Home* directory.
 
     Windows:  :download:`rivtuv.cmd </_downloads/rivtuv.cmd>` 
@@ -155,10 +156,24 @@ The *rivt-uv* installation method is recommended for most users.
     
 .. topic:: Step 3. Run the example program from Pyzo.
 
-    The *rivt* installation includes the `Pyzo <https://pyzo.org/>`__ IDE for
-    editing and running examples. Typing the command *pyzo-example* from the uv
-    environment root will load the example file *rv00-simple-doc.py* where it
-    can be edited and run.
+    The *rivt environment* is activated by:
+    
+    Windows:
+
+    .. code-block:: bash
+        
+        ./venv/Scripts/activate
+
+    macOS and Linux:
+
+    .. code-block:: bash
+        
+        source venv/bin/activate
+
+    *rivt* includes the `Pyzo <https://pyzo.org/>`__ IDE for editing and
+    running examples. Typing the command *pyzo-example* from the environment
+    root will load the example file *rv00-simple-doc.py* where it can be edited
+    and run.
     
     The example file can also be run from the command line with the command:
 
