@@ -5,7 +5,7 @@ REM (2) create venv if not already created
 REM (3) install rivt from PyPI
 REM (4) run example
 REM set rivt folder
-SET rvfolder=rivt-examples
+SET rvfolder=rivt-start
 REM (1) go to home directory
 cd %HOMEPATH%
 REM set up venv
