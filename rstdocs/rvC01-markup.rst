@@ -210,34 +210,34 @@ processing HTML, LaTeX and reStructuredText scripts.
 
 :doc:`Line Tags <rvC02-linetags>`
 
-A :term:`line tag` formats a line of text and is denoted with a single
-**_[LETTER]**, placed at or near the end of the line, depending on the tag.
+    A :term:`line tag` formats a line of text and is denoted with a single
+    **_[LETTER]**, placed at or near the end of the line, depending on the tag.
 
 :doc:`Block Tags <rvC03-blocktags>`
 
-A :term:`block tag` formats a block of text and begins with **_[[TAGNAME]]**
-and terminates with **_[[END]]**.
+    A :term:`block tag` formats a block of text and begins with
+    **_[[TAGNAME]]** and terminates with **_[[END]]**.
 
 :doc:`Commands <rvC04-commands>`
 
-*rivt commands* read and write external files. They typically start in the
-first column with a vertical bar ( | ) followed by the command name, file path,
-and parameters. 
+    *rivt commands* read and write external files. They typically start in the
+    first column with a vertical bar ( | ) followed by the command name, file
+    path, and parameters.
 
-The exceptions are, the definition (**=:**), the assignment (**<=:**) 
-and the compare (**<>**) commands, which are used to define, 
-assign and compare values.
+    The exceptions are, the definition (**=:**), the assignment (**<=:**) and
+    the compare (**<>**) commands, which are used to define, assign and compare
+    values.
 
-.. code-block:: bash  
-    
-    | COMMAND | relative path | parameters
+    .. code-block:: bash  
+        
+        | COMMAND | relative path | parameters
 
-File paths are specified relative to the *rivt root folder*.  
-The *rivt report* folder structure is described :doc:`here. <rvD03-folders>`.
+    File paths are specified relative to the *rivt root folder*. The *rivt
+    report* folder structure is described :doc:`here. <rvD03-folders>`.
 
-If the path is ommitted the default path for each command is applied. 
-If the *singledoc* parameter is set, the *resource files* and *docs* are stored
-in the *rivt root folder*.
+    If the path is ommitted the default path for each command is applied. If
+    the *singledoc* parameter is set, the *resource files* and *docs* are
+    stored in the *rivt root folder*.
 
 Tag and Command syntax for each API type is defined and described 
 using the following format:

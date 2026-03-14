@@ -590,26 +590,32 @@ processing HTML, LaTeX and reStructuredText scripts.</p>
 <section id="t-tags-and-commands">
 <h2><strong>[3t]</strong> Tags and Commands<a class="headerlink" href="#t-tags-and-commands" title="Link to this heading">#</a></h2>
 <hr><p><a class="reference internal" href="rvC02-linetags.html"><span class="doc">Line Tags</span></a></p>
-<p>A <a class="reference internal" href="rvF02-terms.html#term-line-tag"><span class="xref std std-term">line tag</span></a> formats a line of text and is denoted with a single
+<blockquote>
+<div><p>A <a class="reference internal" href="rvF02-terms.html#term-line-tag"><span class="xref std std-term">line tag</span></a> formats a line of text and is denoted with a single
 <strong>_[LETTER]</strong>, placed at or near the end of the line, depending on the tag.</p>
+</div></blockquote>
 <p><a class="reference internal" href="rvC03-blocktags.html"><span class="doc">Block Tags</span></a></p>
-<p>A <a class="reference internal" href="rvF02-terms.html#term-block-tag"><span class="xref std std-term">block tag</span></a> formats a block of text and begins with <strong>_[[TAGNAME]]</strong>
-and terminates with <strong>_[[END]]</strong>.</p>
+<blockquote>
+<div><p>A <a class="reference internal" href="rvF02-terms.html#term-block-tag"><span class="xref std std-term">block tag</span></a> formats a block of text and begins with
+<strong>_[[TAGNAME]]</strong> and terminates with <strong>_[[END]]</strong>.</p>
+</div></blockquote>
 <p><a class="reference internal" href="rvC04-commands.html"><span class="doc">Commands</span></a></p>
-<p><em>rivt commands</em> read and write external files. They typically start in the
-first column with a vertical bar ( | ) followed by the command name, file path,
-and parameters.</p>
-<p>The exceptions are, the definition (<strong>=:</strong>), the assignment (<strong>&lt;=:</strong>)
-and the compare (<strong>&lt;&gt;</strong>) commands, which are used to define,
-assign and compare values.</p>
+<blockquote>
+<div><p><em>rivt commands</em> read and write external files. They typically start in the
+first column with a vertical bar ( | ) followed by the command name, file
+path, and parameters.</p>
+<p>The exceptions are, the definition (<strong>=:</strong>), the assignment (<strong>&lt;=:</strong>) and
+the compare (<strong>&lt;&gt;</strong>) commands, which are used to define, assign and compare
+values.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="p">|</span><span class="w"> </span>COMMAND<span class="w"> </span><span class="p">|</span><span class="w"> </span>relative<span class="w"> </span>path<span class="w"> </span><span class="p">|</span><span class="w"> </span>parameters
 </pre></div>
 </div>
-<p>File paths are specified relative to the <em>rivt root folder</em>.
-The <em>rivt report</em> folder structure is described <a class="reference internal" href="rvD03-folders.html"><span class="doc">here.</span></a>.</p>
-<p>If the path is ommitted the default path for each command is applied.
-If the <em>singledoc</em> parameter is set, the <em>resource files</em> and <em>docs</em> are stored
-in the <em>rivt root folder</em>.</p>
+<p>File paths are specified relative to the <em>rivt root folder</em>. The <em>rivt
+report</em> folder structure is described <a class="reference internal" href="rvD03-folders.html"><span class="doc">here.</span></a>.</p>
+<p>If the path is ommitted the default path for each command is applied. If
+the <em>singledoc</em> parameter is set, the <em>resource files</em> and <em>docs</em> are
+stored in the <em>rivt root folder</em>.</p>
+</div></blockquote>
 <p>Tag and Command syntax for each API type is defined and described
 using the following format:</p>
 <p style="border-width:2px; border-style:solid;
