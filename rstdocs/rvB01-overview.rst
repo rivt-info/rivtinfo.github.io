@@ -9,24 +9,30 @@
     <hr>
 
 *rivt* is an open source Python project that imports 
-the `rivtlib Python package <https://pypi.org/project/rivtlib/>`__.
-and two dozen additional :ref:`Project requirements`. The lightweight 
-`Pyzo <https://pyzo.org/>`__  IDE is installed for editing and 
-publishing *rivt file* examples.
+the `rivtlib Python package <https://pypi.org/project/rivtlib/>`__
+and dependencies (:ref:`Project requirements`). The lightweight 
+`Pyzo <https://pyzo.org/>`__  IDE is also installed for editing and 
+publishing *rivt file* examples. The `VSCode IDE <https://code.visualstudio.com/>`__ 
+is a more full featured IDE that is part of the *rivt framework* and 
+installed separately.
 
 A :term:`rivt file` publishes a formatted :term:`rivt doc` as a text, PDF or
 HTML file. A *rivt file* is a Python file (.py) that imports the
 :term:`rivtlib` Python package and includes :term:`rivt markup`. A collection
 of *rivt docs* may be collated as a :term:`rivt report`.
 
-*rivt file* examples are provided :doc:`here <rvD05-docex>` and 
-:doc:`here<rvD06-reportex>`. An interface for searching *rivt files* 
-on *GitHub* is :doc:`here <rvE03-ghsearch>`. All or parts of a *rivt file* the 
-author chooses to share as a *public rivt file* can be shared under an 
-`Open Source license <https://opensource.org/licenses>`__. 
-rivt itself is distributed under the 
-`MIT open source license <https://opensource.org/license/mit>`__. 
+*rivt file* examples are provided 
+`here <https://drive.google.com/drive/folders/1jsYQizu7RbTHks1WbtbM_oR8z0IRIzub?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto>`__.
+An interface for searching *public rivt files* on *GitHub* is :doc:`here <rvE03-ghsearch>`. 
+A *public rivt file* is all or parts of a *rivt file* the author chooses to 
+share under an `Open Source license <https://opensource.org/licenses>`__. 
+*rivt* itself is distributed under the `MIT open source license <https://opensource.org/license/mit>`__. 
 (see :ref:`Licenses`). 
+
+.. _rivt API:
+
+**[2t]** rivt API
+------------------------------------------------------------------------ 
 
 The *rivt API* includes  :ref:`API functions <API functions>`, 
 :ref:`markup` and :ref:`files <Files and folders>`.  The API is designed 
@@ -106,7 +112,7 @@ The default setting is False.
 
 .. _Markup:
 
-**[2t]** Markup
+**[3t]** Markup
 ------------------------------------------------------------------------ 
 
 .. raw:: html
@@ -136,7 +142,7 @@ see :doc:`here <rvC01-markup>`.
 
 .. _Files and folders:
 
-**[3t]** Folder/Files
+**[4t]** Folder/Files
 --------------------------------------------------------------------- 
 
 .. raw:: html

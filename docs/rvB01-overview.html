@@ -391,24 +391,28 @@
 <section id="t-summary">
 <h2><strong>[1t]</strong> Summary<a class="headerlink" href="#t-summary" title="Link to this heading">#</a></h2>
 <hr><p><em>rivt</em> is an open source Python project that imports
-the <a class="reference external" href="https://pypi.org/project/rivtlib/" rel="noreferrer" target="_blank">rivtlib Python package</a>.
-and two dozen additional <a class="reference internal" href="rvF01-quickref.html#project-requirements"><span class="std std-ref">[6t] Project requirements</span></a>. The lightweight
-<a class="reference external" href="https://pyzo.org/" rel="noreferrer" target="_blank">Pyzo</a>  IDE is installed for editing and
-publishing <em>rivt file</em> examples.</p>
+the <a class="reference external" href="https://pypi.org/project/rivtlib/" rel="noreferrer" target="_blank">rivtlib Python package</a>
+and dependencies (<a class="reference internal" href="rvF01-quickref.html#project-requirements"><span class="std std-ref">[6t] Project requirements</span></a>). The lightweight
+<a class="reference external" href="https://pyzo.org/" rel="noreferrer" target="_blank">Pyzo</a>  IDE is also installed for editing and
+publishing <em>rivt file</em> examples. The <a class="reference external" href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">VSCode IDE</a>
+is a more full featured IDE that is part of the <em>rivt framework</em> and
+installed separately.</p>
 <p>A <a class="reference internal" href="rvF02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> publishes a formatted <a class="reference internal" href="rvF02-terms.html#term-rivt-doc"><span class="xref std std-term">rivt doc</span></a> as a text, PDF or
 HTML file. A <em>rivt file</em> is a Python file (.py) that imports the
 <a class="reference internal" href="rvF02-terms.html#term-rivtlib"><span class="xref std std-term">rivtlib</span></a> Python package and includes <a class="reference internal" href="rvF02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a>. A collection
 of <em>rivt docs</em> may be collated as a <a class="reference internal" href="rvF02-terms.html#term-rivt-report"><span class="xref std std-term">rivt report</span></a>.</p>
-<p><em>rivt file</em> examples are provided <a class="reference internal" href="rvD05-docex.html"><span class="doc">here</span></a> and
-<a class="reference internal" href="rvD06-reportex.html"><span class="doc">here</span></a>. An interface for searching <em>rivt files</em>
-on <em>GitHub</em> is <a class="reference internal" href="rvE03-ghsearch.html"><span class="doc">here</span></a>. All or parts of a <em>rivt file</em> the
-author chooses to share as a <em>public rivt file</em> can be shared under an
-<a class="reference external" href="https://opensource.org/licenses" rel="noreferrer" target="_blank">Open Source license</a>.
-rivt itself is distributed under the
-<a class="reference external" href="https://opensource.org/license/mit" rel="noreferrer" target="_blank">MIT open source license</a>.
+<p><em>rivt file</em> examples are provided
+<a class="reference external" href="https://drive.google.com/drive/folders/1jsYQizu7RbTHks1WbtbM_oR8z0IRIzub?dmr=1&amp;ec=wgc-drive-%5Bmodule%5D-goto" rel="noreferrer" target="_blank">here</a>.
+An interface for searching <em>public rivt files</em> on <em>GitHub</em> is <a class="reference internal" href="rvE03-ghsearch.html"><span class="doc">here</span></a>.
+A <em>public rivt file</em> is all or parts of a <em>rivt file</em> the author chooses to
+share under an <a class="reference external" href="https://opensource.org/licenses" rel="noreferrer" target="_blank">Open Source license</a>.
+<em>rivt</em> itself is distributed under the <a class="reference external" href="https://opensource.org/license/mit" rel="noreferrer" target="_blank">MIT open source license</a>.
 (see <a class="reference internal" href="rvA03-faq.html#licenses"><span class="std std-ref">[2t] Licenses</span></a>).</p>
+</section>
+<section id="t-rivt-api">
+<span id="rivt-api"></span><h2><strong>[2t]</strong> rivt API<a class="headerlink" href="#t-rivt-api" title="Link to this heading">#</a></h2>
 <p>The <em>rivt API</em> includes  <a class="reference internal" href="rvC01-markup.html#api-functions"><span class="std std-ref">API functions</span></a>,
-<a class="reference internal" href="#markup"><span class="std std-ref">[2t] Markup</span></a> and <a class="reference internal" href="#files-and-folders"><span class="std std-ref">files</span></a>.  The API is designed
+<a class="reference internal" href="#markup"><span class="std std-ref">[3t] Markup</span></a> and <a class="reference internal" href="#files-and-folders"><span class="std std-ref">files</span></a>.  The API is designed
 to be:</p>
 <ul class="simple">
 <li><dl class="simple">
@@ -470,7 +474,7 @@ statement:</p>
 <p><a class="reference internal" href="rvD01-documents.html"><span class="doc">here</span></a>.</p>
 </section>
 <section id="t-markup">
-<span id="markup"></span><h2><strong>[2t]</strong> Markup<a class="headerlink" href="#t-markup" title="Link to this heading">#</a></h2>
+<span id="markup"></span><h2><strong>[3t]</strong> Markup<a class="headerlink" href="#t-markup" title="Link to this heading">#</a></h2>
 <hr><p>An API function starts in the first column and takes a triple quoted
 <a class="reference internal" href="rvF02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> (rS) argument. The first line of a <em>rivt string</em> is a
 <a class="reference internal" href="rvF02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a>, followed by a <a class="reference internal" href="rvF02-terms.html#term-content-substring"><span class="xref std std-term">content substring</span></a>
@@ -491,7 +495,7 @@ see <a class="reference internal" href="rvC01-markup.html"><span class="doc">her
 </div>
 </section>
 <section id="t-folder-files">
-<span id="files-and-folders"></span><h2><strong>[3t]</strong> Folder/Files<a class="headerlink" href="#t-folder-files" title="Link to this heading">#</a></h2>
+<span id="files-and-folders"></span><h2><strong>[4t]</strong> Folder/Files<a class="headerlink" href="#t-folder-files" title="Link to this heading">#</a></h2>
 <hr><p>A <a class="reference internal" href="rvF02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> is a Python plain text file ( <em>.py</em> ) that includes <em>rivt
 markup</em> and imports the <a class="reference internal" href="rvF02-terms.html#term-rivtlib"><span class="xref std std-term">rivtlib</span></a> package and API into the <em>rv</em>
 <a class="reference internal" href="rvF02-terms.html#term-namespace"><span class="xref std std-term">namespace</span></a>:</p>
@@ -606,8 +610,9 @@ may be attached to a report.</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-summary"><strong>[1t]</strong> Summary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-markup"><strong>[2t]</strong> Markup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-folder-files"><strong>[3t]</strong> Folder/Files</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rivt-api"><strong>[2t]</strong> rivt API</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-markup"><strong>[3t]</strong> Markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-folder-files"><strong>[4t]</strong> Folder/Files</a></li>
 </ul>
   </nav></div>
 
