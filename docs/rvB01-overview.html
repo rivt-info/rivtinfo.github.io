@@ -390,10 +390,10 @@
 <h1><strong>B.1 Overview</strong><a class="headerlink" href="#b-1-overview" title="Link to this heading">#</a></h1>
 <section id="t-summary">
 <h2><strong>[1t]</strong> Summary<a class="headerlink" href="#t-summary" title="Link to this heading">#</a></h2>
-<hr><p><em>rivt</em> is an open source Python project that includes
-<a class="reference external" href="https://gitub.com/rivtlib-dev/rivtlib" rel="noreferrer" target="_blank">rivtlib</a> and
-approximately two dozen additional <a class="reference internal" href="rvF01-quickref.html#project-requirements"><span class="std std-ref">[6t] Project requirements</span></a>. The
-lightweight <a class="reference external" href="https://pyzo.org/" rel="noreferrer" target="_blank">Pyzo</a>  IDE is installed for editing and
+<hr><p><em>rivt</em> is an open source Python project that imports
+the <a class="reference external" href="https://pypi.org/project/rivtlib/" rel="noreferrer" target="_blank">rivtlib Python package</a>.
+and two dozen additional <a class="reference internal" href="rvF01-quickref.html#project-requirements"><span class="std std-ref">[6t] Project requirements</span></a>. The lightweight
+<a class="reference external" href="https://pyzo.org/" rel="noreferrer" target="_blank">Pyzo</a>  IDE is installed for editing and
 publishing <em>rivt file</em> examples.</p>
 <p>A <a class="reference internal" href="rvF02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> publishes a formatted <a class="reference internal" href="rvF02-terms.html#term-rivt-doc"><span class="xref std std-term">rivt doc</span></a> as a text, PDF or
 HTML file. A <em>rivt file</em> is a Python file (.py) that imports the
@@ -408,8 +408,8 @@ rivt itself is distributed under the
 <a class="reference external" href="https://opensource.org/license/mit" rel="noreferrer" target="_blank">MIT open source license</a>.
 (see <a class="reference internal" href="rvA03-faq.html#licenses"><span class="std std-ref">[2t] Licenses</span></a>).</p>
 <p>The <em>rivt API</em> includes  <a class="reference internal" href="rvC01-markup.html#api-functions"><span class="std std-ref">API functions</span></a>,
-<a class="reference internal" href="#markup"><span class="std std-ref">[2t] Markup</span></a> and <a class="reference internal" href="#files-and-folders"><span class="std std-ref">files</span></a>.
-The API is designed to be:</p>
+<a class="reference internal" href="#markup"><span class="std std-ref">[2t] Markup</span></a> and <a class="reference internal" href="#files-and-folders"><span class="std std-ref">files</span></a>.  The API is designed
+to be:</p>
 <ul class="simple">
 <li><dl class="simple">
 <dt>lightweight</dt><dd><p><a class="reference internal" href="rvF02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> is made up of about 3 dozen tags
@@ -453,7 +453,7 @@ rv212-filename.py
 <li><p>1.5 (division 1, subdivision 5)</p></li>
 <li><p>2.12 (division 2, subdivision 12)</p></li>
 </ul>
-<p>Note that leading zeroes are dropped.  <em>Docs</em> are sorted alpha-numerically into
+<p>Note that leading zeroes are dropped. <em>Docs</em> are sorted alpha-numerically into
 divisions and subdivisions in the <em>report</em>.</p>
 <p><em>Docs</em> are assembled from sources and published using a specified folder
 structure. The <em>singledocB</em> variable overrides the default report structure and
@@ -473,8 +473,8 @@ statement:</p>
 <span id="markup"></span><h2><strong>[2t]</strong> Markup<a class="headerlink" href="#t-markup" title="Link to this heading">#</a></h2>
 <hr><p>An API function starts in the first column and takes a triple quoted
 <a class="reference internal" href="rvF02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> (rS) argument. The first line of a <em>rivt string</em> is a
-<a class="reference internal" href="rvF02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a>, followed by a <a class="reference internal" href="rvF02-terms.html#term-content-substring"><span class="xref std std-term">content substring</span></a> indented 4
-spaces for improved readability and section folding.</p>
+<a class="reference internal" href="rvF02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a>, followed by a <a class="reference internal" href="rvF02-terms.html#term-content-substring"><span class="xref std std-term">content substring</span></a>
+indented 4 spaces for improved readability and section folding.</p>
 <p>The <em>header substring</em> specifies the section title and other
 processing parameters. The content substring includes
 <a class="reference internal" href="rvF02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> and other arbitrary text. For further details

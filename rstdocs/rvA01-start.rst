@@ -9,9 +9,9 @@
    <hr> 
 
 *rivt file* examples can be run in the cloud or on a local computer. In both 
-cases editing and publishing is typically carried out in an IDE. *rivt* 
-documentation is focused on *VSCode*, but any IDE may be used. A typical IDE 
-layout can be viewed at `Codesandbox
+cases editing and publishing is typically carried out in an :term:`IDE`. 
+The :term:`rivt framework` includes `VSCode <https://code.visualstudio.com/>`__, 
+but any IDE may be used. A typical IDE layout can be viewed at `Codesandbox
 <https://codesandbox.io/p/devbox/rivt1-dkmqfm?file=%2Frv001-single-doc.txt>`__.
 The sandbox allows scrolling through an example rivt file (left panel) and
 text doc (right panel). Files may be downloaded from the file explorer 
@@ -24,15 +24,14 @@ is unregistered editor files cannot be edited or processed.
     :align: center
     :alt: ide layout
 
-*VSCode*  is a customizable `Microsoft IDE <https://code.visualstudio.com/>`__
-that can be run locally or in the cloud. The cloud version is 
-referred to as a `Codespace <https://github.com/features/codespaces>`__ .
-It can be forked (copied) and run in a personal GithUb account
-that may be set up `here <https://github.com>`__.  
 
-A :term:`rivt Codespace` is an environment with *rivt* extensions for 
-editing and running *rivt files*.  A rivt Codepsace with examples can be forked 
-from `this repository <https://github.com/rivt-info/rivt-codespace-examples>`__ 
+*VSCode* can be run locally or in the cloud. The cloud version is 
+referred to as a `Codespace <https://github.com/features/codespaces>`__ .
+A :term:`rivt Codespace` is a *VSCode* cloud environment with *rivt* extensions 
+for editing and running *rivt files*.  It can be forked (copied) and run 
+in a personal GithUb account that may be set up `here <https://github.com>`__.  
+A rivt Codepsace with examples can be forked from 
+`this repository <https://github.com/rivt-info/rivt-codespace-examples>`__ 
 by following the steps below.
 
 .. topic::  Fork a *rivt Codespace* in the cloud 

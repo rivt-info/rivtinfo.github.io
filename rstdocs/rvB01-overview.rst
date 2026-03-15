@@ -8,10 +8,10 @@
 
     <hr>
 
-*rivt* is an open source Python project that includes 
-`rivtlib <https://gitub.com/rivtlib-dev/rivtlib>`__ and
-approximately two dozen additional :ref:`Project requirements`. The
-lightweight `Pyzo <https://pyzo.org/>`__  IDE is installed for editing and 
+*rivt* is an open source Python project that imports 
+the `rivtlib Python package <https://pypi.org/project/rivtlib/>`__.
+and two dozen additional :ref:`Project requirements`. The lightweight 
+`Pyzo <https://pyzo.org/>`__  IDE is installed for editing and 
 publishing *rivt file* examples.
 
 A :term:`rivt file` publishes a formatted :term:`rivt doc` as a text, PDF or
@@ -28,10 +28,9 @@ rivt itself is distributed under the
 `MIT open source license <https://opensource.org/license/mit>`__. 
 (see :ref:`Licenses`). 
 
-
 The *rivt API* includes  :ref:`API functions <API functions>`, 
-:ref:`markup` and :ref:`files <Files and folders>`. 
-The API is designed to be:
+:ref:`markup` and :ref:`files <Files and folders>`.  The API is designed 
+to be:
 
 - lightweight
     :term:`rivt markup` is made up of about 3 dozen tags 
@@ -85,7 +84,7 @@ the *report numbers* would be:
 - 1.5 (division 1, subdivision 5)
 - 2.12 (division 2, subdivision 12)
 
-Note that leading zeroes are dropped.  *Docs* are sorted alpha-numerically into
+Note that leading zeroes are dropped. *Docs* are sorted alpha-numerically into
 divisions and subdivisions in the *report*.
 
 *Docs* are assembled from sources and published using a specified folder
@@ -116,8 +115,8 @@ The default setting is False.
 
 An API function starts in the first column and takes a triple quoted
 :term:`rivt string` (rS) argument. The first line of a *rivt string* is a
-:term:`header substring`, followed by a :term:`content substring` indented 4
-spaces for improved readability and section folding.
+:term:`header substring`, followed by a :term:`content substring` 
+indented 4 spaces for improved readability and section folding.
 
 The *header substring* specifies the section title and other
 processing parameters. The content substring includes 

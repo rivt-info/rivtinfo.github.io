@@ -17,7 +17,7 @@ four content function names.
 
 .. raw:: html
 
-    <b>Content Functions</b>
+    <b>Content APIs</b>
     <ol style="border: 2px; 
             border-color: #49b2c3; 
             border-style: solid; 
@@ -29,35 +29,24 @@ four content function names.
         <li>The <b>Tools</b> runs reStructuredText, HTML, LaTeX and Python scripts.</li>
     </ol>
 
-    <b>Publish Function</b>
+    <b>Publish and Interactive APIs</b>
     <ol style="border: 2px; 
             border-color: #49b2c3; 
             border-style: solid; 
             padding: 2em;
             margin: 2em">
         <li>The <b>Doc</b> specifies the <i>doc</i> type and style.</li>
-    </ol>
-
-    <b>Interactive Processing Functions</b>
-    <ol style="border: 2px; 
-            border-color: #49b2c3; 
-            border-style: solid; 
-            padding: 2em;
-            margin: 2em">
         <li>The <b>Skip</b> can be used for interactive debugging and comments.</li>
         <li>The <b>Exit</b> can be used for interactive debugging.</li>
-
     </ol>
 
 If interactive IDEs like *VSCode* or *Spyder* are used to edit and run *rivt
-files the API functions can be processed separately as cells, similar to 
-*Jupyter Notebooks*, by using the standard prefix notation:
+files*, the API functions can be processed as cells (similar to 
+*Jupyter Notebooks*) by using the standard prefix notation:
 
 .. code-block:: python
 
     # %% optional label
-
-
 
 .. _rivt string:
 
@@ -68,14 +57,14 @@ files the API functions can be processed separately as cells, similar to
 
     <hr>
 
-Each :doc:`API function <rvA01-start>` takes a triple quoted :term:`rivt
-string` argument composed of two parts - a :term:`header substring` followed 
+Each :doc:`API function <rvA01-start>` takes a triple quoted :term:`rivt string` 
+argument composed of two parts - a :term:`header substring` followed 
 by a :term:`content substring`.
 
-The first line of the *rivt string* is the *header substring* that defines
-section processing and formatting parameters. It is followed by a *content
-substring* that includes :term:`rivt markup` and other text. The *content
-substring* is indented four spaces for improved readability and section folding.
+The first line of the *rivt string* is a *header substring* that defines
+section processing. It is followed by a *content
+substring* that includes :term:`rivt markup`. The *content substring* is 
+indented four spaces for improved readability and section folding.
 
 .. _Header substring:
 

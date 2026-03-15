@@ -400,7 +400,7 @@
 that includes a subset of rivt markup. There are four primary content functions
 and three functions that process content. <em>rivt</em> is an acronym taken from the
 four content function names.</p>
-<b>Content Functions</b>
+<b>Content APIs</b>
 <ol style="border: 2px;
         border-color: #49b2c3;
         border-style: solid;
@@ -412,40 +412,31 @@ four content function names.</p>
     <li>The <b>Tools</b> runs reStructuredText, HTML, LaTeX and Python scripts.</li>
 </ol>
 
-<b>Publish Function</b>
+<b>Publish and Interactive APIs</b>
 <ol style="border: 2px;
         border-color: #49b2c3;
         border-style: solid;
         padding: 2em;
         margin: 2em">
     <li>The <b>Doc</b> specifies the <i>doc</i> type and style.</li>
-</ol>
-
-<b>Interactive Processing Functions</b>
-<ol style="border: 2px;
-        border-color: #49b2c3;
-        border-style: solid;
-        padding: 2em;
-        margin: 2em">
     <li>The <b>Skip</b> can be used for interactive debugging and comments.</li>
     <li>The <b>Exit</b> can be used for interactive debugging.</li>
-
 </ol><p>If interactive IDEs like <em>VSCode</em> or <em>Spyder</em> are used to edit and run <em>rivt
-files the API functions can be processed separately as cells, similar to
-*Jupyter Notebooks</em>, by using the standard prefix notation:</p>
+files</em>, the API functions can be processed as cells (similar to
+<em>Jupyter Notebooks</em>) by using the standard prefix notation:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %% optional label</span>
 </pre></div>
 </div>
 </section>
 <section id="t-rivt-string">
 <span id="rivt-string"></span><h2><strong>[2t]</strong> rivt string<a class="headerlink" href="#t-rivt-string" title="Link to this heading">#</a></h2>
-<hr><p>Each <a class="reference internal" href="rvA01-start.html"><span class="doc">API function</span></a> takes a triple quoted <a class="reference internal" href="rvF02-terms.html#term-rivt-string"><span class="xref std std-term">rivt
-string</span></a> argument composed of two parts - a <a class="reference internal" href="rvF02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a> followed
+<hr><p>Each <a class="reference internal" href="rvA01-start.html"><span class="doc">API function</span></a> takes a triple quoted <a class="reference internal" href="rvF02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a>
+argument composed of two parts - a <a class="reference internal" href="rvF02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a> followed
 by a <a class="reference internal" href="rvF02-terms.html#term-content-substring"><span class="xref std std-term">content substring</span></a>.</p>
-<p>The first line of the <em>rivt string</em> is the <em>header substring</em> that defines
-section processing and formatting parameters. It is followed by a <em>content
-substring</em> that includes <a class="reference internal" href="rvF02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> and other text. The <em>content
-substring</em> is indented four spaces for improved readability and section folding.</p>
+<p>The first line of the <em>rivt string</em> is a <em>header substring</em> that defines
+section processing. It is followed by a <em>content
+substring</em> that includes <a class="reference internal" href="rvF02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a>. The <em>content substring</em> is
+indented four spaces for improved readability and section folding.</p>
 <p id="header-substring"><strong>Header substring</strong></p>
 <hr><p>The <a class="reference internal" href="rvF02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a> starts with a <em>section label</em> followed by vertical
 bar that deliniates three comma separated <em>section parameters</em> that can

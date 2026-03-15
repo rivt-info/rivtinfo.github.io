@@ -141,6 +141,7 @@
   report
   reports
   rivt report
+  rivt reports
     A group of compiled *docs* organized by rivt file number. 
 
   report folder
@@ -233,8 +234,8 @@
     Integrated Development Environment. A software application that provides 
     comprehensive facilities to computer programmers for software development. 
     An IDE typically includes a code editor, build automation tools, 
-    and a debugger. *rivt extensions* are mostly developed for VSCode. 
-    Other examples include PyCharm, Spyder, and JupyterLab.
+    and a debugger. *rivt extensions* have been developed for VSCode. 
+    Other IDEs include PyCharm, Spyder, and JupyterLab.
 
   Codespace
   Codespaces
