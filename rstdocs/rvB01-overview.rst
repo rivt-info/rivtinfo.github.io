@@ -38,15 +38,15 @@ share under an `Open Source license <https://opensource.org/licenses>`__.
 
     <hr>
 
-.. rst-class:: center
-
-**rivt Doc Processing**
-
 .. image:: _static/img/process2.png
     :class: dark-light
     :width: 75%
     :align: center
     :alt: rivt flow chart 
+
+.. rst-class:: center
+
+    **rivt Doc Processing**
 
 Each :term:`rivt file` outputs a corresponding :term:`doc` in the 
 format specified in *rv.D*. A doc number has the form:
