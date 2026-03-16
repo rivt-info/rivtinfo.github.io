@@ -10,10 +10,10 @@
 
     <hr>
 
-Each *rivt* API function takes a triple quoted string argument (rivt string)
-that includes a subset of rivt markup. There are four primary content functions
-and three functions that process content. *rivt* is an acronym taken from the
-four content function names.
+Each *rivt* API function takes a triple quoted string argument *rivt string*
+(rS) that includes a subset of rivt markup. There are four primary 
+content functions and three functions that process content. *rivt* is 
+an acronym taken from the four content function names.
 
 .. raw:: html
 
@@ -23,22 +23,34 @@ four content function names.
             border-style: solid; 
             padding: 2em;
             margin: 2em">
-        <li>The <b>Run</b> executes shell commands.</li>
-        <li>The <b>Insert</b> adds static table, image, equation and text content.</li>
-        <li>The <b> Values</b> evaluates equations and functions.</li>
-        <li>The <b>Tools</b> runs reStructuredText, HTML, LaTeX and Python scripts.</li>
+        <li><b>Run</b> executes shell commands.</li>
+        <li><b>Insert</b> adds static table, image, equation and text content.</li>
+        <li><b>Values</b> evaluates equations and functions.</li>
+        <li><b>Tools</b> runs reStructuredText, HTML, LaTeX and Python scripts.</li>
     </ol>
 
-    <b>Publish and Interactive APIs</b>
+    <b>Publish APIs</b>
     <ol style="border: 2px; 
             border-color: #49b2c3; 
             border-style: solid; 
             padding: 2em;
             margin: 2em">
-        <li>The <b>Doc</b> specifies the <i>doc</i> type and style.</li>
-        <li>The <b>Skip</b> can be used for interactive debugging and comments.</li>
-        <li>The <b>Exit</b> can be used for interactive debugging.</li>
+        <li><b>Doc</b> specifies the <i>doc</i> type and style.</li>
+        <li><b>Skip</b> can be used for interactive debugging and comments.</li>
+        <li><b>Exit</b> can be used for interactive debugging.</li>
     </ol>
+
+=============== =============== ===========================================
+API Function         Name             Purpose
+=============== =============== ===========================================
+**rv.R** (rS)         Run            Run shell commands
+**rv.I** (rS)         Insert         Insert static sources 
+**rv.V** (rS)         Values         Calculate values
+**rv.T** (rS)         Tools          Python and markup scripts
+**rv.S** (rS)         Skip           Skip section (comments and debugging)
+**rv.D** (rS)         Doc            Publish docs 
+**rv.X** (rS)         Exit           Exit rivt (debugging)
+=============== =============== ===========================================
 
 If interactive IDEs like *VSCode* or *Spyder* are used to edit and run *rivt
 files*, the API functions can be processed as cells (similar to 

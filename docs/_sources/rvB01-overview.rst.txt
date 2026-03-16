@@ -112,18 +112,6 @@ to be:
     *rivtlib* is written in Python with direct access to thousands of 
     Python packages.
 
-    
-=============== =============== ===========================================
-API Function         Name             Purpose
-=============== =============== ===========================================
-**rv.R** (rS)         Run            Run shell commands
-**rv.I** (rS)         Insert         Insert static sources 
-**rv.V** (rS)         Values         Calculate values
-**rv.T** (rS)         Tools          Python and markup scripts
-**rv.S** (rS)         Skip           Skip section (comments and debugging)
-**rv.D** (rS)         Doc            Publish docs 
-**rv.X** (rS)         Exit           Exit rivt (debugging)
-=============== =============== ===========================================
 
 .. _Markup:
 
