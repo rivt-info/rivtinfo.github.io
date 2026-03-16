@@ -285,7 +285,7 @@ Doc Types     text, PDF, HTML
 
 .. _Define variable:
 
-**[8t]** Define variable
+**[8t]** Define value
 -------------------------------------------
 
 .. raw:: html
@@ -299,7 +299,7 @@ Defines a value and writes it to the file *vdocnum-s.csv* where *num* is the
 The stored values can read and defined in other rivt files using the VALUES
 command.
 
-.. topic:: =: 
+.. topic:: ==: 
 
     .. code-block:: text
 
@@ -371,12 +371,12 @@ Comparison operators:
 
 .. code-block:: text
 
-==	  Equal	x == y	
-!=	  Not equal	x != y	
->	  Greater than	x > y	
-<	  Less than	x < y	
->=	  Greater than or equal to x >= y	
-<=	  Less than or equal to x <= y
+    ==	  Equal	x == y	
+    !=	  Not equal	x != y	
+    >	  Greater than	x > y	
+    <	  Less than	x < y	
+    >=	  Greater than or equal to x >= y	
+    <=	  Less than or equal to x <= y
 
 .. topic:: <> 
 

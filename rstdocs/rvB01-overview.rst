@@ -29,26 +29,14 @@ share under an `Open Source license <https://opensource.org/licenses>`__.
 *rivt* itself is distributed under the `MIT open source license <https://opensource.org/license/mit>`__. 
 (see :ref:`Licenses`). 
 
-.. _rivt API:
+.. _rivt docs:
 
-**[2t]** rivt API
------------------------------------------------------------------------- 
+**[2t]** rivt docs
+------------------------------------------------------------------------
 
-The *rivt API* includes  :ref:`API functions <API functions>`, 
-:ref:`markup` and :ref:`files <Files and folders>`.  The API is designed 
-to be:
+.. raw:: html
 
-- lightweight
-    :term:`rivt markup` is made up of about 3 dozen tags 
-    and commands, and wraps :term:`reStructuredText`.
-
-- flexible 
-    A *rivt file* produces a text, HTML or PDF *doc*. 
-    Multiple *docs* can be organized into a report. 
-
-- extensible 
-    *rivtlib* is written in Python with direct access to thousands of 
-    Python packages.
+    <hr>
 
 .. rst-class:: center
 
@@ -59,11 +47,6 @@ to be:
     :width: 75%
     :align: center
     :alt: rivt flow chart 
-
-
-.. raw:: html
-
-    <hr>
 
 Each :term:`rivt file` outputs a corresponding :term:`doc` in the 
 format specified in *rv.D*. A doc number has the form:
@@ -108,7 +91,39 @@ statement:
 
 The default setting is False.
 
-:doc:`here <rvD01-documents>`.
+.. _rivt API:
+
+**[2t]** rivt API
+------------------------------------------------------------------------ 
+
+The *rivt API* includes  :ref:`API functions <API functions>`, 
+:ref:`markup` and :ref:`files <Files and folders>`.  The API is designed 
+to be:
+
+- lightweight
+    :term:`rivt markup` is made up of about 3 dozen tags 
+    and commands, and wraps :term:`reStructuredText`.
+
+- flexible 
+    A *rivt file* produces a text, HTML or PDF *doc*. 
+    Multiple *docs* can be organized into a report. 
+
+- extensible 
+    *rivtlib* is written in Python with direct access to thousands of 
+    Python packages.
+
+    
+=============== =============== ===========================================
+API Function         Name             Purpose
+=============== =============== ===========================================
+**rv.R** (rS)         Run            Run shell commands
+**rv.I** (rS)         Insert         Insert static sources 
+**rv.V** (rS)         Values         Calculate values
+**rv.T** (rS)         Tools          Python and markup scripts
+**rv.S** (rS)         Skip           Skip section (comments and debugging)
+**rv.D** (rS)         Doc            Publish docs 
+**rv.X** (rS)         Exit           Exit rivt (debugging)
+=============== =============== ===========================================
 
 .. _Markup:
 

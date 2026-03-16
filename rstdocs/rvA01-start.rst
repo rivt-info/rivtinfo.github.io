@@ -8,6 +8,9 @@
 
    <hr> 
 
+An overiew of *rivt* can be found :doc:`here <rvB01-overview>`. This section
+reviews how to get started in writing *rivt files* and publishing *rivt docs*
+
 *rivt file* examples can be run in the cloud or on a local computer. In both 
 cases editing and publishing is typically carried out in an :term:`IDE`. 
 The :term:`rivt framework` includes `VSCode <https://code.visualstudio.com/>`__, 
@@ -73,18 +76,20 @@ by following the steps below.
    <hr> 
 
 A *rivt-portable* installation is recommended for Windows users
-unfamiliar with Python. The portable zip filename is :
+unfamiliar with Python. *rivt-portable* is a zip file :
  
 .. code-block:: text
 
     win64-rivt-portable-n.n.n[an].zip
 
-where n-n-n is the major, minor and patch release number. An *an* appended to
-the version is an *alpha* release, which indicates that features are missing
-and *rivt markup* syntax may change in the future. Zip file contents must be
-unzipped into a directory with read-write access - typically the users home
-folder or a flash drive. The zipped and unzipped file sizes are approximately
-1GB and 2GB respectively, and the contents include:
+where n is a number representing the major, minor and patch release number. An
+*an* appended to the version is an *alpha* release where users should expect
+that features are missing and *rivt markup* syntax may change in the future.
+Zip file contents must be unzipped into a directory with read-write access -
+typically the users home folder or a flash drive.
+
+The zipped and unzipped file sizes include the following contents and are 
+approximately 1GB and 2GB respectively:
 
 .. code-block:: text
 
@@ -98,14 +103,17 @@ folder or a flash drive. The zipped and unzipped file sizes are approximately
 Releases may be download from the 
 `GitHub repository <https://github.com/rivtlib-dev/rivt-portable/releases/>`__. 
 
-The primary advantages of *rivt-portable* are simplified installation, package
-integration, and isolation from system files. VSCode and examples are started
-with a single shortcut.
+The primary advantages of *rivt-portable* are 
+
+1. simplified installation
+2. package integration
+3. isolation from system files. 
+   
+After unzipping,VSCode and examples are started with a single shortcut.
 
 The primary disadvantages of *rivt-portable* are that *rivt* packages
-components, extensions must be updated as a single zip file, and that it is
-more difficult to integrate with other Python programs. Each zip file is about
-300 MB and releases are planned monthly.
+and extensions must be updated by updating the zip file as a whole, and it is
+more difficult to integrate with other Python programs. 
 
 .. _rivt-uv:
 

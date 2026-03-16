@@ -433,7 +433,7 @@
 </tr>
 <tr class="row-even"><td><p>rv.V</p></td>
 <td><p>a <strong>=:</strong> 1*IN  | unit1, unit2, decimal | label</p></td>
-<td><p><a class="reference internal" href="#define-variable"><span class="std std-ref">[8t] Define variable</span></a></p></td>
+<td><p><a class="reference internal" href="#define-variable"><span class="std std-ref">[8t] Define value</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V</p></td>
 <td><p>c <strong>&lt;=:</strong> expression | unit1, unit2, decimal | label</p></td>
@@ -740,15 +740,15 @@ Example:
 </table>
 </div>
 </section>
-<section id="t-define-variable">
-<span id="define-variable"></span><h2><strong>[8t]</strong> Define variable<a class="headerlink" href="#t-define-variable" title="Link to this heading">#</a></h2>
+<section id="t-define-value">
+<span id="define-variable"></span><h2><strong>[8t]</strong> Define value<a class="headerlink" href="#t-define-value" title="Link to this heading">#</a></h2>
 <hr><p>Defines a value and writes it to the file <em>vdocnum-s.csv</em> where <em>num</em> is the
 <em>docnumber</em> and <em>s</em> is the section number. The file is written to the folder
 <em>stored/vals</em> unless <em>singledocB</em> is set to <em>True</em> in the comment variable.</p>
 <p>The stored values can read and defined in other rivt files using the VALUES
 command.</p>
 <aside class="topic">
-<p class="topic-title">=:</p>
+<p class="topic-title">==:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
     c =: 5*unit | unit1, unit2, decimals | label, *num,nonum*
 
@@ -815,15 +815,14 @@ evaluates to true. text1 and text2 are printed if true or false repectively.
 Colors are assigned accordingly as <em>red;blue;yellow;green;black;gray</em> defined
 in the <em>style files</em>.  The text is right aligned.</p>
 <p>Comparison operators:</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>==    Equal x == y
+!=    Not equal     x != y
+&gt;     Greater than  x &gt; y
+&lt;     Less than     x &lt; y
+&gt;=    Greater than or equal to x &gt;= y
+&lt;=    Less than or equal to x &lt;= y
 </pre></div>
 </div>
-<p>==        Equal x == y
-!=        Not equal     x != y
-&gt;         Greater than  x &gt; y
-&lt;         Less than     x &lt; y
-&gt;=        Greater than or equal to x &gt;= y
-&lt;=        Less than or equal to x &lt;= y</p>
 <aside class="topic">
 <p class="topic-title">&lt;&gt;</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
@@ -1018,7 +1017,7 @@ Example:
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-image-file"><strong>[5t]</strong> Image file</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-adjacent-images"><strong>[6t]</strong> Adjacent images</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-valtable-file"><strong>[7t]</strong>  Valtable file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-define-variable"><strong>[8t]</strong> Define variable</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-define-value"><strong>[8t]</strong> Define value</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-assign-value"><strong>[9t]</strong> Assign value</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-compare-values"><strong>[10t]</strong> Compare values</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-python-file"><strong>[11t]</strong> Python file</a></li>

@@ -23,7 +23,8 @@ API Function         Name             Purpose
 **rv.X** (rS)         Exit           Exit rivt (debugging)
 =============== =============== ===========================================
 
-The first line of a *rivt string* (rS) is a *header substring*.
+where **rS** is a *rivt string*. The first line of a *rivt string* (rS) is 
+a *header substring*.
 
 .. code-block:: python
 
