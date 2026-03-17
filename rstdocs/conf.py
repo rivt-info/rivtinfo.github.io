@@ -12,7 +12,6 @@ extensions = ['sphinx.ext.githubpages','sphinx_togglebutton',
               'sphinx_favicon', 'sphinx.ext.duration',
               'sphinx.ext.doctest', 'sphinx.ext.autodoc',
               'sphinx_design','sphinx_new_tab_link','rst2pdf.pdfbuilder']
-pdf_documents = [('index', u'rivtinfo', u'rivt-info', u'rholland'),]
 master_doc = 'index'
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 source_suffix = ['.rst', '.md']
