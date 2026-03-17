@@ -47,16 +47,11 @@
     text, PDF and HTML. Markup is included in string arguments to rivt 
     API functions. 
 
-  API header
-  API headers
-    The first line of a  *rivt string*. It includes a section title, followed 
-    by comma separated parameters.
-    
   header
   headers
   header text
   header substring
-    The first line of a  *rivt string*. It includes a section title, followed 
+    The first line of a  *rivt string* that includes a section title, followed 
     by comma separated parameters.
 
   content
@@ -153,13 +148,9 @@
   section parameters 
     Comma separated parameters in a *header* that specify the section processing.
 
-  API log
-    API excecution history written to log folder as the file *rvDss-api.rst*. 
-    For the complete execution history see the rivt log file *rvDss-log.txt*.
-
   rivt log file
     *rivt file* execution log written to the *log folder* as *rvDss-log.txt*.
-
+    
   report script
     A Python script that assembles *docs* into a *report*.
 
@@ -180,6 +171,7 @@
   :sorted: 
   
   Python
+  python
     A `programming language <https://www.python.org/>`_ that lets you work quickly
     and integrate systems more effectively
   
@@ -209,6 +201,7 @@
   :sorted: 
 
   Git
+  git
     A `version control system <https://git-scm.com/>`_ that lets you manage and 
     keep track of your source code history.
 
@@ -231,17 +224,14 @@
     and tasks.
 
   IDE
+  ide
     Integrated Development Environment. A software application that provides 
     comprehensive facilities to computer programmers for software development. 
     An IDE typically includes a code editor, build automation tools, 
     and a debugger. *rivt extensions* have been developed for VSCode. 
     Other IDEs include PyCharm, Spyder, and JupyterLab.
 
-  Codespace
-  Codespaces
-    An online `VSCode environment <https://github.com/features/codespaces>`__ 
-    by Microsoftthat is integrated with GitHub.
-
   rivt Codespace
+  rivt codespace
     A Codespace set up with extensions, snippets and keyboard shortcuts for 
     editing and publishing *rivt docs*.
