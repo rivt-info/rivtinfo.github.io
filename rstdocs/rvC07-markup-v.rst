@@ -59,7 +59,7 @@ The *Values* API function defines values and evaluates equations and functions.
 **| IMAGE2 |** rel path1, rel path2 | c1, c2, s1, s2, f1, f2       :ref:`Adjacent images`
 **| VALTABLE |** rel path | title, width, rows                     :ref:`Values file`     
 **| PYTHON |** relative path | namespace                           :ref:`Python file`
-   a :=: 1*IN  | unit1, unit2, decimal, num | label                :ref:`Define variable`
+   a :=: 1*IN  | unit1, unit2, decimal, num | label                :ref:`Define value`
    c <=: expression | unit1, unit2, decimal, num | label           :ref:`Assign value`
-   a < c  | decimal | text1,text2,align, num                       :ref:`Compare values`
+   a < c  | decimal | text1,text2,align, num                       :ref:`Compare value`
 ================================================================= ========================

@@ -94,19 +94,10 @@ pdf_break_level = 0
 # When a section starts in a new page, force it to be 'even', 'odd',
 # or just use 'any'
 pdf_breakside = 'any'
-# Insert footnotes where they are defined instead of
-# at the end.
-pdf_inline_footnotes = True
-# verbosity level. 0 1 or 2
-# pdf_verbosity = 0
-# If false, no index is generated.
-pdf_use_index = True
-# If false, no modindex is generated.
-pdf_use_modindex = True
 # If false, no coverpage is generated.
 pdf_use_coverpage = True
 # Name of the cover page template to use
-# pdf_cover_template = 'sphinxcover.tmpl'
+pdf_cover_template = 'pdfcover.rst'
 # Page template name for "regular" pages
 # pdf_page_template = 'cutePage'
 # Documents to append as an appendix to all manuals.
@@ -122,6 +113,15 @@ pdf_use_coverpage = True
 pdf_use_toc = True
 # How many levels deep should the table of contents be?
 pdf_toc_depth = 9999
+# Insert footnotes where they are defined instead of
+# at the end.
+pdf_inline_footnotes = True
+# verbosity level. 0 1 or 2
+# pdf_verbosity = 0
+# If false, no index is generated.
+pdf_use_index = True
+# If false, no modindex is generated.
+pdf_use_modindex = False
 # Add section number to section references
 pdf_use_numbered_links = False
 # Background images fitting mode
