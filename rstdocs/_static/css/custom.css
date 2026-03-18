@@ -9,6 +9,9 @@ img.align-center {
 
 
 html {
+    --pst-font-family-base: DejaVuSans, var(--pst-font-family-base-system);
+    --pst-font-family-heading: DejaVuSans, var(--pst-font-family-base-system);
+    --pst-font-family-monospace: DejaVuSansMono, var(--pst-font-family-monospace-system);
     --pst-font-weight-heading: normal;
     --pst-font-weight-base: normal;
     --pst-font-size-base: 16px;
