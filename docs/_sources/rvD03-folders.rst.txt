@@ -27,13 +27,6 @@ The *report numbers* used in the published report would be:
 where leading zeroes are dropped and *docs* are sorted alpha-numerically into
 divisions and subdivisions in the *report*.
 
-**[2t]**  Report Folders
--------------------------------
-
-.. raw:: html
-
-    <hr>
-
 Reports are organized under a single root report folder with the prefix
 *rivt-*. *rivt files* are stored in the root folder and *rivt markup* file paths
 are relative to the roo.  Resource files are stored in four primary subfolders:
@@ -70,8 +63,81 @@ An example *report* folder structure is shown below.
     Folders (including subfolders) that contain rivtlib generated files are 
     marked with double vertical bars ( || ).</p>
 
+**[2t]**  Single Doc Folders
+-------------------------------
 
-**Top Level Folders**
+.. raw:: html
+
+    <hr>
+
+.. _single doc folders:
+
+.. code-block:: bash
+
+    [rivt]-single-doc-name/                  Single doc Folder Name                
+        ├── [rv101-]docname.py               | rivt input files
+        ├── rv-101-docname.py                || public rivt files      
+        ├── data1.csv
+        ├── fig1.png
+        ├── plot.py                               
+        ├── addunits.py                      define new units                          
+        ├── attach1.pdf                          
+        ├── v101-2.csv
+        ├── v102-3.csv             
+        ├── [rstdocs]/   
+            ├── rv101-filename1.rst          
+            ├── rv102-filename2.rst                           
+            ├── rv201-filename3.rst                        
+            ├── rv101-filename1.pdf           PDF docs from rst2pdf 
+            ├── rv102-filename2.pdf                          
+            ├── rv201-filename3.pdf           PDF report from rst2pdf     
+            ├── rv202-filename4.pdf         
+            └── Report-Label.pdf  
+        ├── [pdfdocs]/   
+            ├── rv101-filename1.rst          
+            ├── rv102-filename2.rst                           
+            ├── rv201-filename3.rst                        
+            ├── rv101-filename1.pdf           PDF docs from rst2pdf 
+            ├── rv102-filename2.pdf                          
+            ├── rv201-filename3.pdf           PDF report from rst2pdf     
+            ├── rv202-filename4.pdf         
+            └── Report-Label.pdf  
+        ├── [htmldocs]/                        html style files
+            ├── _locale/                 
+            ├── _static/                        
+            ├── _templates/                     
+            ├── genhtml.cmd
+            ├── rv101-docname.html
+            ├── Report-Cover.pdf                              
+            └── index.rst  
+        ├── [latexdocs]/                            PDF from LaTeX  
+            ├── rv101-filename1.rst         
+            ├── rv102-filename2.rst                        
+            ├── rv201-filename3.rst                                   
+            ├── rv101-filename1.pdf              PDF docs from LaTeX 
+            ├── rv102-filename2.pdf                          
+            ├── rv201-filename3.pdf                       
+            ├── rv202-filename4.pdf
+            └── Report-Label.pdf                 PDF report from LaTeX 
+        ├── [textdocs]/                              text report
+            ├── rv101-filename1.txt              text docs
+            ├── rv102-filename2.txt       
+            ├── rv201-filename3.txt       
+            ├── rv202-filename4.txt       
+            └── README.txt                       searchable text report                     
+        └── README.txt                         || searchable text report 
+
+
+**[3t]**  Report Folders
+-------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. _report folders:
+
+**Reports - Top Level Folders**
 
 .. code-block:: bash
 
@@ -90,9 +156,7 @@ An example *report* folder structure is shown below.
         └── README.txt                  || searchable text report 
 
 
-.. _report folders:
-
-**Expanded Folders**
+**Reports - Expanded Folders**
 
 .. code-block:: bash
 
@@ -188,7 +252,6 @@ An example *report* folder structure is shown below.
                         └── rv-text.ini
         ├── [Stored]/                          || stored files from rivt            
             ├── [Logs]/                              log files
-                ├── rv101-api.txt   
                 ├── rv101-log.txt
                 └── rv102-log.txt
             ├── [Sect]/                              stored sections                    

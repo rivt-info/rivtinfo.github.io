@@ -8,6 +8,8 @@
 
     <hr>
 
+**format files and equations**
+
 ========== ============================================================== ========================
 API Scope           Command                                                  Description
 ========== ============================================================== ========================
@@ -15,16 +17,18 @@ rv.R        **| SHELL |** rel path | os, wait                               :ref
 rv.I        **| TEXT |** rel path |  language                               :ref:`Text file`
 rv.V, I     **| TABLE |** rel path | title, width, rows, align, head        :ref:`Table file`     
 rv.V, I     **| IMAGE |** rel path | caption, scale, number                 :ref:`Image file`
-rv.V, I     **| IMAGE2 |** rel path1, rel path2 | caption, scale number     :ref:`Adjacent images`
+rv.V, I     **| IMAGE2 |** rel pth1, rel pth2 | cap1,cap2,sca1,sca2,num     :ref:`Adjacent images`
 rv.V        **| VALTABLE |** rel path | title, rows, number                 :ref:`Values file`     
 rv.V        a **==:** 1*IN  | unit1, unit2, decimal | label                 :ref:`Define value`
 rv.V        c **<=:** expression | unit1, unit2, decimal | label            :ref:`Assign value`
-rv.V        a **<** c  | decimal | text1, text2, color1, color2             :ref:`Compare value`
+rv.V        c **:=:** expression | unit1, unit2, decimal | label            :ref:`Function value`
+rv.V        a **<** c | decimal | text1, text2, color1, color2                :ref:`Compare value`
 rv.T, V     **| PYTHON |** rel path | namespace                             :ref:`Python file`
 rv.T        **| MARKUP |** rel path | type                                  :ref:`Markup file`
 rv.D        **| ATTACHPDF |** rel path | place, title                       :ref:`Attach PDF`   
-rv.D        **| PUBLISH |** rel path (ini) | type                           :ref:`Publish doc` 
+rv.D        **| PUBLISH |** doc title | type                                :ref:`Publish doc` 
 ========== ============================================================== ========================
+
 
 **Default command paths**
 
@@ -68,15 +72,13 @@ be in the default folder */src/run/* . Otherwise the path is specified relative
 to the report root (rivt file folder). If the doc is a single doc the file is
 read from the rivt file folder.
 
-.. topic:: | SHELL | 
+.. code-block:: text
 
-    .. code-block:: text
+    Syntax:
+        | SHELL | relative file path | win;mac;linux,wait;nowait
 
-        Syntax:
-            | SHELL | relative file path | win;mac;linux,wait;nowait
-
-        Example:
-            | SHELL | file1.cmd | win, nowait
+    Example:
+        | SHELL | file1.cmd | win, nowait
 
 =========== ==========================
 API Scope     Run
@@ -111,15 +113,13 @@ be in the default folder */src/data/* . Otherwise the path needs to be specified
 relative to the report root (rivt file folder). If the doc is a 
 :term:`single doc` the file is read from the rivt file folder.
 
-.. topic:: | TEXT | 
+.. code-block:: text
 
-    .. code-block:: text
+    Syntax:
+        | TEXT | relative file path | language - see list above
 
-        Syntax:
-            | TEXT | relative file path | language - see list above
-
-        Example:
-            | TEXT | file1.txt | literal
+    Example:
+        | TEXT | file1.txt | literal
 
 =========== =====================================
 API Scope     Insert
@@ -232,7 +232,7 @@ relative to the report root (rivt file folder). If the doc is a
             | IMAGE2 | file1.png, file2.png | Map, Photo, .5,.5, num, num
 
 =========== ==========================
-API Scope     Insert, Values
+API Scope     rv.I, rv.V
 File Types    PNG, JPG jenn
 Doc Types     PDF, HTML
 =========== ==========================
@@ -278,7 +278,7 @@ folder.
             | VALTABLE | /stored/vals/vA01-2.csv | Beam Properties, 1-10, num
 
 =========== ==========================
-API Scope     Values
+API Scope     rv.V
 File Types    .csv, .xls, 
 Doc Types     text, PDF, HTML
 =========== ==========================
@@ -299,18 +299,16 @@ Defines a value and writes it to the file *vdocnum-s.csv* where *num* is the
 The stored values can read and defined in other rivt files using the VALUES
 command.
 
-.. topic:: ==: 
+.. code-block:: text
 
-    .. code-block:: text
+    Syntax:
+        c =: 5*unit | unit1, unit2, decimals | label, *num,nonum*
 
-        Syntax:
-            c =: 5*unit | unit1, unit2, decimals | label, *num,nonum*
-    
-        Example:
-            D_1 =: 10*IN | IN, M, 3 | beam depth, num
+    Example:
+        D_1 =: 10*IN | IN, M, 3 | beam depth, num
   
 =========== ==========================
-API Scope     Values
+API Scope     rv.V
 File Types    .csv
 Doc Types     text, PDF, HTML
 =========== ==========================
@@ -324,33 +322,66 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-Assigns a value to an equation or function variable and writes the values to a
-file *vdocnum-s.csv* where *num* is the *doc number* and *s* is the section
-number. The file is written to the folder *stored/vals* unless *singledocB* is
-set to *True* in the comment variable.
+Assigns a value to an equation and writes the values to a file *vdocnum-s.csv*
+where *num* is the *doc number* and *s* is the section number. The file is
+written to the folder *stored/vals* unless *rv single doc* is set to *True* 
+in which case values are stored in the rivt file folder (root).
 
 The label is a reference printed with the equation. The units specify the
 result expressed in two different units. The integer specifies the number of
 places after the decimals.
 
-.. topic:: <=: 
+.. code-block:: text
 
-    .. code-block:: text
+    Syntax:
+        b <=: a * 10*FT | unit1, unit2, decimals | label, num;nonum
 
-        Syntax:
-            b <=: a * 10*FT | unit1, unit2, decimals | label, *num;nonum*
-    
-        Example:
-            b_1 <=: E_1 * 12.1*IN^2 | KIP, KN, 2 | Std. 123, num
-
-            c_1 <=: func1(a,b) | KIP, KN, 2 | ACI 318-19 Table 22.5.5.1, num 
+    Example:
+        b_1 <=: E_1 * 12.1*IN^2 | KIP, KN, 2 | Std. 123, num
 
 
 =========== ==========================
-API Scope     Values
+API Scope     rv.V
 File Types    .csv
 Doc Types     text, PDF, HTML
 =========== ==========================
+
+
+.. _Function value:
+
+**[9t]** Function value
+-------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+Assigns a value to an equation and writes the values to a file *vdocnum-s.csv*
+where *num* is the *doc number* and *s* is the section number. The file is
+written to the folder *stored/vals* unless *rv single doc* is set to *True* 
+in which case values are stored in the rivt file folder (root).
+
+The label is a reference printed with the equation. The units specify the
+result expressed in two different units. The integer specifies the number of
+places after the decimals.
+
+.. code-block:: text
+
+    Syntax:
+        c :=: function name() | unit1, unit2, decimals | label, num;nonum
+
+    Example:
+
+        c_1 :=: func1(a,b) | KIP, KN, 2 | ACI 318-19 Table 22.5.5.1, num 
+
+
+=========== ==========================
+API Scope     rv.V
+File Types    .csv
+Doc Types     text, PDF, HTML
+=========== ==========================
+
+
 
 .. _Compare value:
 

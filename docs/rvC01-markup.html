@@ -396,21 +396,21 @@
 <h1><strong>C.1 Markup</strong><a class="headerlink" href="#c-1-markup" title="Link to this heading">#</a></h1>
 <section id="t-api-functions">
 <span id="api-functions"></span><h2><strong>[1t]</strong> API functions<a class="headerlink" href="#t-api-functions" title="Link to this heading">#</a></h2>
-<hr><p>Each <em>rivt</em> API function takes a triple quoted string argument <em>rivt string</em>
-(rS) that includes a subset of rivt markup. There are four primary
-content functions and three functions that process content. <em>rivt</em> is
-an acronym taken from the four content function names.</p>
+<hr><p><em>rivt</em> has seven API functions. The name <em>rivt</em> is an acronym taken from the four
+functions that process content.</p>
 <b>Content APIs</b>
 <ol style="border: 2px;
         border-color: #49b2c3;
         border-style: solid;
         padding: 2em;
         margin: 2em">
-    <li><b>Run</b> executes shell commands.</li>
-    <li><b>Insert</b> adds static table, image, equation and text content.</li>
-    <li><b>Values</b> evaluates equations and functions.</li>
-    <li><b>Tools</b> runs reStructuredText, HTML, LaTeX and Python scripts.</li>
+    <li><b>[R]un</b> executes shell commands.</li>
+    <li><b>[I]nsert</b> adds static table, image, equation and text content.</li>
+    <li><b>[V]alues</b> evaluates equations and functions.</li>
+    <li><b>[T]ools</b> runs reStructuredText, HTML, LaTeX and Python scripts.</li>
 </ol>
+
+The remaining three functions are used for document generation and debugging.
 
 <b>Publish APIs</b>
 <ol style="border: 2px;
@@ -445,13 +445,13 @@ an acronym taken from the four content function names.</p>
 <td><p>Tools</p></td>
 <td><p>Python and markup scripts</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>rv.S</strong> (rS)</p></td>
-<td><p>Skip</p></td>
-<td><p>Skip section (comments and debugging)</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>rv.D</strong> (rS)</p></td>
+<tr class="row-even"><td><p><strong>rv.D</strong> (rS)</p></td>
 <td><p>Doc</p></td>
 <td><p>Publish docs</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>rv.S</strong> (rS)</p></td>
+<td><p>Skip</p></td>
+<td><p>Skip section (comments and debugging)</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>rv.X</strong> (rS)</p></td>
 <td><p>Exit</p></td>
@@ -461,9 +461,10 @@ an acronym taken from the four content function names.</p>
 </table>
 </div>
 <p>If interactive IDEs like <em>VSCode</em> or <em>Spyder</em> are used to edit and run <em>rivt
-files</em>, the API functions can be processed as cells (similar to
+files</em>, each API function can be processed as a cell (similar to
 <em>Jupyter Notebooks</em>) by using the standard prefix notation:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %% optional label</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">API_FUNCTION</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;rivt string&quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>

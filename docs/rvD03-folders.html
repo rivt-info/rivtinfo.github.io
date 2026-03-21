@@ -410,10 +410,7 @@ rv105-filename.py
 </div>
 <p>where leading zeroes are dropped and <em>docs</em> are sorted alpha-numerically into
 divisions and subdivisions in the <em>report</em>.</p>
-</section>
-<section id="t-report-folders">
-<h2><strong>[2t]</strong>  Report Folders<a class="headerlink" href="#t-report-folders" title="Link to this heading">#</a></h2>
-<hr><p>Reports are organized under a single root report folder with the prefix
+<p>Reports are organized under a single root report folder with the prefix
 <em>rivt-</em>. <em>rivt files</em> are stored in the root folder and <em>rivt markup</em> file paths
 are relative to the roo.  Resource files are stored in four primary subfolders:</p>
 <dl class="simple">
@@ -440,7 +437,67 @@ Folders (including subfolders) that contain author generated files
 are marked with a single vertical bar ( | ).<br>
 <br>ri
 Folders (including subfolders) that contain rivtlib generated files are
-marked with double vertical bars ( || ).</p><p><strong>Top Level Folders</strong></p>
+marked with double vertical bars ( || ).</p></section>
+<section id="t-single-doc-folders">
+<h2><strong>[2t]</strong>  Single Doc Folders<a class="headerlink" href="#t-single-doc-folders" title="Link to this heading">#</a></h2>
+<hr><div class="highlight-bash notranslate" id="single-doc-folders"><div class="highlight"><pre><span></span><span class="o">[</span>rivt<span class="o">]</span>-single-doc-name/<span class="w">                  </span>Single<span class="w"> </span>doc<span class="w"> </span>Folder<span class="w"> </span>Name
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>docname.py<span class="w">               </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>input<span class="w"> </span>files
+<span class="w">    </span>├──<span class="w"> </span>rv-101-docname.py<span class="w">                </span><span class="o">||</span><span class="w"> </span>public<span class="w"> </span>rivt<span class="w"> </span>files
+<span class="w">    </span>├──<span class="w"> </span>data1.csv
+<span class="w">    </span>├──<span class="w"> </span>fig1.png
+<span class="w">    </span>├──<span class="w"> </span>plot.py
+<span class="w">    </span>├──<span class="w"> </span>addunits.py<span class="w">                      </span>define<span class="w"> </span>new<span class="w"> </span>units
+<span class="w">    </span>├──<span class="w"> </span>attach1.pdf
+<span class="w">    </span>├──<span class="w"> </span>v101-2.csv
+<span class="w">    </span>├──<span class="w"> </span>v102-3.csv
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rstdocs<span class="o">]</span>/
+<span class="w">        </span>├──<span class="w"> </span>rv101-filename1.rst
+<span class="w">        </span>├──<span class="w"> </span>rv102-filename2.rst
+<span class="w">        </span>├──<span class="w"> </span>rv201-filename3.rst
+<span class="w">        </span>├──<span class="w"> </span>rv101-filename1.pdf<span class="w">           </span>PDF<span class="w"> </span>docs<span class="w"> </span>from<span class="w"> </span>rst2pdf
+<span class="w">        </span>├──<span class="w"> </span>rv102-filename2.pdf
+<span class="w">        </span>├──<span class="w"> </span>rv201-filename3.pdf<span class="w">           </span>PDF<span class="w"> </span>report<span class="w"> </span>from<span class="w"> </span>rst2pdf
+<span class="w">        </span>├──<span class="w"> </span>rv202-filename4.pdf
+<span class="w">        </span>└──<span class="w"> </span>Report-Label.pdf
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>pdfdocs<span class="o">]</span>/
+<span class="w">        </span>├──<span class="w"> </span>rv101-filename1.rst
+<span class="w">        </span>├──<span class="w"> </span>rv102-filename2.rst
+<span class="w">        </span>├──<span class="w"> </span>rv201-filename3.rst
+<span class="w">        </span>├──<span class="w"> </span>rv101-filename1.pdf<span class="w">           </span>PDF<span class="w"> </span>docs<span class="w"> </span>from<span class="w"> </span>rst2pdf
+<span class="w">        </span>├──<span class="w"> </span>rv102-filename2.pdf
+<span class="w">        </span>├──<span class="w"> </span>rv201-filename3.pdf<span class="w">           </span>PDF<span class="w"> </span>report<span class="w"> </span>from<span class="w"> </span>rst2pdf
+<span class="w">        </span>├──<span class="w"> </span>rv202-filename4.pdf
+<span class="w">        </span>└──<span class="w"> </span>Report-Label.pdf
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>htmldocs<span class="o">]</span>/<span class="w">                        </span>html<span class="w"> </span>style<span class="w"> </span>files
+<span class="w">        </span>├──<span class="w"> </span>_locale/
+<span class="w">        </span>├──<span class="w"> </span>_static/
+<span class="w">        </span>├──<span class="w"> </span>_templates/
+<span class="w">        </span>├──<span class="w"> </span>genhtml.cmd
+<span class="w">        </span>├──<span class="w"> </span>rv101-docname.html
+<span class="w">        </span>├──<span class="w"> </span>Report-Cover.pdf
+<span class="w">        </span>└──<span class="w"> </span>index.rst
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>latexdocs<span class="o">]</span>/<span class="w">                            </span>PDF<span class="w"> </span>from<span class="w"> </span>LaTeX
+<span class="w">        </span>├──<span class="w"> </span>rv101-filename1.rst
+<span class="w">        </span>├──<span class="w"> </span>rv102-filename2.rst
+<span class="w">        </span>├──<span class="w"> </span>rv201-filename3.rst
+<span class="w">        </span>├──<span class="w"> </span>rv101-filename1.pdf<span class="w">              </span>PDF<span class="w"> </span>docs<span class="w"> </span>from<span class="w"> </span>LaTeX
+<span class="w">        </span>├──<span class="w"> </span>rv102-filename2.pdf
+<span class="w">        </span>├──<span class="w"> </span>rv201-filename3.pdf
+<span class="w">        </span>├──<span class="w"> </span>rv202-filename4.pdf
+<span class="w">        </span>└──<span class="w"> </span>Report-Label.pdf<span class="w">                 </span>PDF<span class="w"> </span>report<span class="w"> </span>from<span class="w"> </span>LaTeX
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>textdocs<span class="o">]</span>/<span class="w">                              </span>text<span class="w"> </span>report
+<span class="w">        </span>├──<span class="w"> </span>rv101-filename1.txt<span class="w">              </span>text<span class="w"> </span>docs
+<span class="w">        </span>├──<span class="w"> </span>rv102-filename2.txt
+<span class="w">        </span>├──<span class="w"> </span>rv201-filename3.txt
+<span class="w">        </span>├──<span class="w"> </span>rv202-filename4.txt
+<span class="w">        </span>└──<span class="w"> </span>README.txt<span class="w">                       </span>searchable<span class="w"> </span>text<span class="w"> </span>report
+<span class="w">    </span>└──<span class="w"> </span>README.txt<span class="w">                         </span><span class="o">||</span><span class="w"> </span>searchable<span class="w"> </span>text<span class="w"> </span>report
+</pre></div>
+</div>
+</section>
+<section id="t-report-folders">
+<h2><strong>[3t]</strong>  Report Folders<a class="headerlink" href="#t-report-folders" title="Link to this heading">#</a></h2>
+<hr><p id="report-folders"><strong>Reports - Top Level Folders</strong></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt<span class="o">]</span>-Report-Label/<span class="w">                </span>Report<span class="w"> </span>Folder<span class="w"> </span>Name
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename1.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv102-<span class="o">]</span>filename2.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
@@ -456,7 +513,7 @@ marked with double vertical bars ( || ).</p><p><strong>Top Level Folders</strong
 <span class="w">    </span>└──<span class="w"> </span>README.txt<span class="w">                  </span><span class="o">||</span><span class="w"> </span>searchable<span class="w"> </span>text<span class="w"> </span>report
 </pre></div>
 </div>
-<p id="report-folders"><strong>Expanded Folders</strong></p>
+<p><strong>Reports - Expanded Folders</strong></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt<span class="o">]</span>-Report-Label/<span class="w">                     </span>Report<span class="w"> </span>Folder<span class="w"> </span>Name
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename1.py<span class="w">               </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>input<span class="w"> </span>files
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv102-<span class="o">]</span>filename2.py
@@ -549,7 +606,6 @@ marked with double vertical bars ( || ).</p><p><strong>Top Level Folders</strong
 <span class="w">                    </span>└──<span class="w"> </span>rv-text.ini
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>Stored<span class="o">]</span>/<span class="w">                          </span><span class="o">||</span><span class="w"> </span>stored<span class="w"> </span>files<span class="w"> </span>from<span class="w"> </span>rivt
 <span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>Logs<span class="o">]</span>/<span class="w">                              </span>log<span class="w"> </span>files
-<span class="w">            </span>├──<span class="w"> </span>rv101-api.txt
 <span class="w">            </span>├──<span class="w"> </span>rv101-log.txt
 <span class="w">            </span>└──<span class="w"> </span>rv102-log.txt
 <span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>Sect<span class="o">]</span>/<span class="w">                              </span>stored<span class="w"> </span>sections
@@ -617,7 +673,8 @@ marked with double vertical bars ( || ).</p><p><strong>Top Level Folders</strong
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-file-names"><strong>[1t]</strong> File Names</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-report-folders"><strong>[2t]</strong>  Report Folders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-single-doc-folders"><strong>[2t]</strong>  Single Doc Folders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-report-folders"><strong>[3t]</strong>  Report Folders</a></li>
 </ul>
   </nav></div>
 

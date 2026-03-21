@@ -10,10 +10,8 @@
 
     <hr>
 
-Each *rivt* API function takes a triple quoted string argument *rivt string*
-(rS) that includes a subset of rivt markup. There are four primary 
-content functions and three functions that process content. *rivt* is 
-an acronym taken from the four content function names.
+*rivt* has seven API functions. The name *rivt* is an acronym taken from the four
+functions that process content.
 
 .. raw:: html
 
@@ -23,11 +21,13 @@ an acronym taken from the four content function names.
             border-style: solid; 
             padding: 2em;
             margin: 2em">
-        <li><b>Run</b> executes shell commands.</li>
-        <li><b>Insert</b> adds static table, image, equation and text content.</li>
-        <li><b>Values</b> evaluates equations and functions.</li>
-        <li><b>Tools</b> runs reStructuredText, HTML, LaTeX and Python scripts.</li>
+        <li><b>[R]un</b> executes shell commands.</li>
+        <li><b>[I]nsert</b> adds static table, image, equation and text content.</li>
+        <li><b>[V]alues</b> evaluates equations and functions.</li>
+        <li><b>[T]ools</b> runs reStructuredText, HTML, LaTeX and Python scripts.</li>
     </ol>
+
+    The remaining three functions are used for document generation and debugging.
 
     <b>Publish APIs</b>
     <ol style="border: 2px; 
@@ -47,18 +47,19 @@ API Function         Name             Purpose
 **rv.I** (rS)         Insert         Insert static sources 
 **rv.V** (rS)         Values         Calculate values
 **rv.T** (rS)         Tools          Python and markup scripts
-**rv.S** (rS)         Skip           Skip section (comments and debugging)
 **rv.D** (rS)         Doc            Publish docs 
+**rv.S** (rS)         Skip           Skip section (comments and debugging)
 **rv.X** (rS)         Exit           Exit rivt (debugging)
 =============== =============== ===========================================
 
 If interactive IDEs like *VSCode* or *Spyder* are used to edit and run *rivt
-files*, the API functions can be processed as cells (similar to 
+files*, each API function can be processed as a cell (similar to 
 *Jupyter Notebooks*) by using the standard prefix notation:
 
 .. code-block:: python
 
     # %% optional label
+    rv.API_FUNCTION("""rivt string""")
 
 .. _rivt string:
 

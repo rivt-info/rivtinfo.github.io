@@ -24,9 +24,9 @@ The *Values* API function defines values and evaluates equations and functions.
        Line Tag                                         Description 
 =================================================== ==============================
                    text **_[V] var_name** text        :ref:`Variable value`
-                  **label _[E]**                      :ref:`Equation number`
-                  **title _[T]**                      :ref:`Table number`
-                **caption _[F]**                      :ref:`Figure number`                              
+                  **label _[E]**                      :ref:`Number equation`
+                  **title _[T]**                      :ref:`Number table`
+                **caption _[F]**                      :ref:`Number figure`                              
 =================================================== ==============================
 
 **[3i]** Block Tags

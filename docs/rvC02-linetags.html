@@ -399,7 +399,7 @@
 <h1><strong>C.2 Line Tags</strong><a class="headerlink" href="#c-2-line-tags" title="Link to this heading">#</a></h1>
 <section id="t-line-tag-summary">
 <h2><strong>[1t]</strong> Line Tag Summary<a class="headerlink" href="#t-line-tag-summary" title="Link to this heading">#</a></h2>
-<hr><p><strong>Format a line or partial line of text</strong></p>
+<hr><p><strong>Format a line of text</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>API Scope</p></th>
@@ -429,39 +429,39 @@
 <td><p><a class="reference internal" href="#endnote-number"><span class="std std-ref">[6t]  Endnote number</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>text <strong>_[G] glossary term</strong></p></td>
-<td><p><a class="reference internal" href="#term-reference"><span class="std std-ref">[7t] Glossary link</span></a></p></td>
+<td><p>text <strong>_[G] glossary term |</strong> text</p></td>
+<td><p><a class="reference internal" href="#term-link"><span class="std std-ref">[7t] Glossary link</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I</p></td>
-<td><p>text <strong>_[S] text, section label</strong></p></td>
+<td><p>text <strong>_[S] label, section |</strong> text</p></td>
 <td><p><a class="reference internal" href="#section-link"><span class="std std-ref">[8t] Section link</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>text <strong>_[D] text, rivt_file</strong></p></td>
+<td><p>text <strong>_[D] label, file name |</strong> text</p></td>
 <td><p><a class="reference internal" href="#doc-link"><span class="std std-ref">[9t] Doc link</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I</p></td>
-<td><p>text <strong>_[U] text, url</strong></p></td>
+<td><p>text <strong>_[U] label, url |</strong> text</p></td>
 <td><p><a class="reference internal" href="#url-link"><span class="std std-ref">[10t] URL link</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V, I</p></td>
-<td><p>text <strong>_[V] var_name</strong> text</p></td>
+<td><p>text <strong>_[V] var_name |</strong> text</p></td>
 <td><p><a class="reference internal" href="#variable-value"><span class="std std-ref">[11t] Variable value</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.V, I</p></td>
-<td><p>assign cmd or <strong>label _[E]</strong></p></td>
-<td><p><a class="reference internal" href="#equation-number"><span class="std std-ref">[12t] Equation number</span></a></p></td>
+<td><p><strong>text _[E]</strong></p></td>
+<td><p><a class="reference internal" href="#number-equation"><span class="std std-ref">[12t] Equation number</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V, I</p></td>
 <td><p><strong>title _[T]</strong></p></td>
-<td><p><a class="reference internal" href="#table-number"><span class="std std-ref">[13t] Table number</span></a></p></td>
+<td><p><a class="reference internal" href="#number-table"><span class="std std-ref">[13t] Table number</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.V, I</p></td>
 <td><p><strong>caption _[F]</strong></p></td>
-<td><p><a class="reference internal" href="#figure-number"><span class="std std-ref">[14t] Figure number</span></a></p></td>
+<td><p><a class="reference internal" href="#number-figure"><span class="std std-ref">[14t] Figure number</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V, I</p></td>
-<td><p>text <strong>_[P]</strong></p></td>
+<td><p><strong>_[P]</strong></p></td>
 <td><p><a class="reference internal" href="#new-page"><span class="std std-ref">[15t] New Page</span></a></p></td>
 </tr>
 </tbody>
@@ -470,7 +470,7 @@
 </section>
 <section id="t-center-text">
 <span id="center-text"></span><h2><strong>[2t]</strong> Center text<a class="headerlink" href="#t-center-text" title="Link to this heading">#</a></h2>
-<hr><p>Centers line of text within the page margins.</p>
+<hr><p>Center line of text within the page margins.</p>
 <aside class="topic">
 <p class="topic-title">_[C]</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
@@ -495,7 +495,7 @@ Example:
 </section>
 <section id="t-right-justify-text">
 <span id="right-justify-text"></span><h2><strong>[3t]</strong> Right justify text<a class="headerlink" href="#t-right-justify-text" title="Link to this heading">#</a></h2>
-<hr><p>Right justifies line of text within the page margins.</p>
+<hr><p>Right justify line of text within the page margins.</p>
 <aside class="topic">
 <p class="topic-title">_[R]</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
@@ -520,7 +520,7 @@ Example:
 </section>
 <section id="t-text-math">
 <span id="text-math"></span><h2><strong>[4t]</strong> Text math<a class="headerlink" href="#t-text-math" title="Link to this heading">#</a></h2>
-<hr><p>Formats a text math expression.</p>
+<hr><p>Format math expression into text.</p>
 <aside class="topic">
 <p class="topic-title">_[M]</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
@@ -545,7 +545,7 @@ Example:
 </section>
 <section id="t-latex-math">
 <span id="latex-math"></span><h2><strong>[5t]</strong> LaTeX math<a class="headerlink" href="#t-latex-math" title="Link to this heading">#</a></h2>
-<hr><p>Formats a LaTeX math expression in the font specified in the style files.</p>
+<hr><p>Format LaTeX math expression.</p>
 <aside class="topic">
 <p class="topic-title">_[L]</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
@@ -570,7 +570,7 @@ Example:
 </section>
 <section id="t-endnote-number">
 <span id="endnote-number"></span><h2><strong>[6t]</strong>  Endnote number<a class="headerlink" href="#t-endnote-number" title="Link to this heading">#</a></h2>
-<hr><p>Assigns endnote number to the text in order of processing. Endnotes
+<hr><p>Assign endnote number to the text in order of processing. Endnotes
 are defined with the block tag _[[ENDNOTE]] and are listed at the end of the
 <em>doc</em>.</p>
 <aside class="topic">
@@ -596,8 +596,8 @@ Example:
 </div>
 </section>
 <section id="t-glossary-link">
-<span id="term-reference"></span><h2><strong>[7t]</strong> Glossary link<a class="headerlink" href="#t-glossary-link" title="Link to this heading">#</a></h2>
-<hr><p>Links a term to the glossary.</p>
+<span id="term-link"></span><h2><strong>[7t]</strong> Glossary link<a class="headerlink" href="#t-glossary-link" title="Link to this heading">#</a></h2>
+<hr><p>Link a term to the glossary.</p>
 <aside class="topic">
 <p class="topic-title">_[G]</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
@@ -623,7 +623,7 @@ Example:
 </section>
 <section id="t-section-link">
 <span id="section-link"></span><h2><strong>[8t]</strong> Section link<a class="headerlink" href="#t-section-link" title="Link to this heading">#</a></h2>
-<hr><p>Creates a link to the section label defined in the API header with optional
+<hr><p>Create a link to the section label defined in the API header with optional
 link text. If the text is ommitted the section label is used for the link.</p>
 <aside class="topic">
 <p class="topic-title">_[S]</p>
@@ -652,7 +652,7 @@ which provides more detail.</p>
 </section>
 <section id="t-doc-link">
 <span id="doc-link"></span><h2><strong>[9t]</strong> Doc link<a class="headerlink" href="#t-doc-link" title="Link to this heading">#</a></h2>
-<hr><p>Links to a <em>doc</em> in a <em>report</em> with an optional link text. If the link text is
+<hr><p>Link to a <em>doc</em> in a <em>report</em> with an optional link text. If the link text is
 ommitted the <em>doc</em> title will be inserted as the link term.</p>
 <aside class="topic">
 <p class="topic-title">_[D]</p>
@@ -679,7 +679,7 @@ Example:
 </section>
 <section id="t-url-link">
 <span id="url-link"></span><h2><strong>[10t]</strong> URL link<a class="headerlink" href="#t-url-link" title="Link to this heading">#</a></h2>
-<hr><p>Links to a an external site with optional link text. If the link text is
+<hr><p>Link to a an external site with optional link text. If the link text is
 ommitted the url will be inserted as the link term.</p>
 <aside class="topic">
 <p class="topic-title">_[U]</p>
@@ -705,7 +705,7 @@ Example:
 </section>
 <section id="t-variable-value">
 <span id="variable-value"></span><h2><strong>[11t]</strong> Variable value<a class="headerlink" href="#t-variable-value" title="Link to this heading">#</a></h2>
-<hr><p>Inserts the value of  var_name _[V] in the sentence.</p>
+<hr><p>Insert the value of  var_name _[V] in the sentence.</p>
 <aside class="topic">
 <p class="topic-title">_[V]</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
@@ -729,10 +729,8 @@ Example:
 </div>
 </section>
 <section id="t-equation-number">
-<span id="equation-number"></span><h2><strong>[12t]</strong> Equation number<a class="headerlink" href="#t-equation-number" title="Link to this heading">#</a></h2>
-<hr><p>If the line of text is math text or a label, the text is assigned an equation
-number and right justified. If the line is an equation assignment the equation
-label is used for the label text.</p>
+<span id="number-equation"></span><h2><strong>[12t]</strong> Equation number<a class="headerlink" href="#t-equation-number" title="Link to this heading">#</a></h2>
+<hr><p>Assign equation number to a line of text.</p>
 <aside class="topic">
 <p class="topic-title">_[E]</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
@@ -760,10 +758,10 @@ Example:
 </div>
 </section>
 <section id="t-table-number">
-<span id="table-number"></span><h2><strong>[13t]</strong> Table number<a class="headerlink" href="#t-table-number" title="Link to this heading">#</a></h2>
+<span id="number-table"></span><h2><strong>[13t]</strong> Table number<a class="headerlink" href="#t-table-number" title="Link to this heading">#</a></h2>
 <hr>
 
-Labels and numbers tables.<aside class="topic">
+Label and number tables.<aside class="topic">
 <p class="topic-title">_[T]</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
     Table Title  _[T]
@@ -786,7 +784,7 @@ Example:
 </div>
 </section>
 <section id="t-figure-number">
-<span id="figure-number"></span><h2><strong>[14t]</strong> Figure number<a class="headerlink" href="#t-figure-number" title="Link to this heading">#</a></h2>
+<span id="number-figure"></span><h2><strong>[14t]</strong> Figure number<a class="headerlink" href="#t-figure-number" title="Link to this heading">#</a></h2>
 <hr>
 
 Labels and numbers figures.<aside class="topic">

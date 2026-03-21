@@ -8,25 +8,25 @@
 
     <hr>
 
-**Format a line or partial line of text**
+**Format a line of text**
   
 ========== ==================================================== ===============================
 API Scope             Line Tag                                      Description 
 ========== ==================================================== ===============================
-rv.I                          text **_[C]**                      :ref:`Center text` 
-rv.I                          text **_[R]**                      :ref:`Right justify text`
-rv.I                     **text math _[M]**                      :ref:`Text math` 
-rv.I                    **LaTeX math _[L]**                      :ref:`LaTeX math` 
-rv.I                          text **_[#]** text                 :ref:`Endnote number`  
-rv.I                          text **_[G] glossary term**        :ref:`Term reference`
-rv.I                          text **_[S] text, section label**  :ref:`Section link`
-rv.I                          text **_[D] text, rivt_file**      :ref:`Doc link`
-rv.I                          text **_[U] text, url**            :ref:`URL link`   
-rv.V, I                       text **_[V] var_name** text        :ref:`Variable value`
-rv.V, I        assign cmd or **label _[E]**                      :ref:`Equation number`
-rv.V, I                      **title _[T]**                      :ref:`Table number`
-rv.V, I                    **caption _[F]**                      :ref:`Figure number`
-rv.V, I                       text **_[P]**                      :ref:`New Page`
+rv.I                      text **_[C]**                          :ref:`Center text` 
+rv.I                      text **_[R]**                          :ref:`Right justify text`
+rv.I                 **text math _[M]**                          :ref:`Text math` 
+rv.I                **LaTeX math _[L]**                          :ref:`LaTeX math` 
+rv.I                      text **_[#]** text                     :ref:`Endnote number`  
+rv.I                      text **_[G] glossary term |** text     :ref:`Term link`
+rv.I                      text **_[S] label, section |** text    :ref:`Section link`
+rv.I                      text **_[D] label, file name |** text  :ref:`Doc link`
+rv.I                      text **_[U] label, url |** text        :ref:`URL link`   
+rv.V, I                   text **_[V] var_name |** text          :ref:`Variable value`
+rv.V, I                   **text _[E]**                          :ref:`Number equation`
+rv.V, I                  **title _[T]**                          :ref:`Number table`
+rv.V, I                **caption _[F]**                          :ref:`Number figure`
+rv.V, I                        **_[P]**                          :ref:`New page`
 ========== ==================================================== ===============================
 
 ..  _Center text:
@@ -38,7 +38,7 @@ rv.V, I                       text **_[P]**                      :ref:`New Page`
 
     <hr>
 
-Centers line of text within the page margins.
+Center line of text within the page margins.
 
 .. topic:: _[C]
     
@@ -65,7 +65,7 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-Right justifies line of text within the page margins.
+Right justify line of text within the page margins.
 
 .. topic:: _[R]
 
@@ -91,7 +91,7 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-Formats a text math expression.
+Format math expression into text.
 
 .. topic:: _[M]
 
@@ -117,7 +117,7 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-Formats a LaTeX math expression in the font specified in the style files.
+Format LaTeX math expression.
 
 .. topic:: _[L]
 
@@ -144,7 +144,7 @@ Doc Types     PDF, HTML
 
     <hr>
 
-Assigns endnote number to the text in order of processing. Endnotes
+Assign endnote number to the text in order of processing. Endnotes
 are defined with the block tag _[[ENDNOTE]] and are listed at the end of the
 *doc*. 
     
@@ -164,7 +164,7 @@ Doc Types     text, PDF, HTML
 =========== ==========================
 
 
-.. _Term reference:
+.. _Term link:
 
 **[7t]** Glossary link
 ------------------------------------------
@@ -173,7 +173,7 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-Links a term to the glossary.
+Link a term to the glossary.
 
 .. topic:: _[G] 
 
@@ -200,7 +200,7 @@ Doc Types     PDF, HTML
 
     <hr>
 
-Creates a link to the section label defined in the API header with optional
+Create a link to the section label defined in the API header with optional
 link text. If the text is ommitted the section label is used for the link.
 
 .. topic:: _[S]
@@ -228,7 +228,7 @@ Doc Types     PDF, HTML
 
     <hr>
 
-Links to a *doc* in a *report* with an optional link text. If the link text is 
+Link to a *doc* in a *report* with an optional link text. If the link text is 
 ommitted the *doc* title will be inserted as the link term.
 
 .. topic:: _[D]
@@ -257,7 +257,7 @@ Doc Types     PDF, HTML
 
     <hr>
 
-Links to a an external site with optional link text. If the link text is 
+Link to a an external site with optional link text. If the link text is 
 ommitted the url will be inserted as the link term.
 
 .. topic::  _[U] 
@@ -285,7 +285,7 @@ Doc Types     PDF, HTML
 
     <hr>
 
-Inserts the value of  var_name _[V] in the sentence.
+Insert the value of  var_name _[V] in the sentence.
 
 .. topic:: _[V]
 
@@ -302,7 +302,7 @@ API Scope     Insert, Values
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-.. _Equation number:
+.. _Number equation:
 
 **[12t]** Equation number
 -----------------------------------------
@@ -311,9 +311,7 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-If the line of text is math text or a label, the text is assigned an equation
-number and right justified. If the line is an equation assignment the equation
-label is used for the label text.
+Assign equation number to a line of text. 
 
 .. topic:: _[E]
 
@@ -334,7 +332,7 @@ API Scope     Insert, Values
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-.. _Table number:
+.. _Number table:
 
 **[13t]** Table number
 ------------------------------------------
@@ -343,7 +341,7 @@ Doc Types     text, PDF, HTML
 
     <hr>
 
-    Labels and numbers tables.
+    Label and number tables.
 
 .. topic:: _[T]
 
@@ -361,7 +359,7 @@ API Scope     Insert, Values
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-.. _Figure number:
+.. _Number figure:
 
 **[14t]** Figure number
 ------------------------------------------

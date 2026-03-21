@@ -18,13 +18,13 @@ API Function         Name             Purpose
 **rv.I** (rS)         Insert         Insert static sources 
 **rv.V** (rS)         Values         Calculate values
 **rv.T** (rS)         Tools          Python and markup scripts
-**rv.S** (rS)         Skip           Skip section (comments and debugging)
 **rv.D** (rS)         Doc            Publish docs 
+**rv.S** (rS)         Skip           Skip section (comments and debugging)
 **rv.X** (rS)         Exit           Exit rivt (debugging)
 =============== =============== ===========================================
 
-where **rS** is a *rivt string*. The first line of a *rivt string* (rS) is 
-a *header substring*.
+where **rS** is a *rivt string*. The first line of a *rivt string* (rS)
+is a *header substring*.
 
 .. code-block:: python
 
@@ -35,9 +35,9 @@ a *header substring*.
         
         """)
 
-Default settings in the *header substring* do not need to be specified. The
-default setting for each API is listed first (**in bold**) in the table below.
- 
+The default setting for each API is listed **in bold** in the table below.
+Default settings in the *header substring* do not need to be specified.
+
 ========== ===================== ===================== =====================
 API          private;public         doc;stored           section;merge         
 ========== ===================== ===================== ===================== 
@@ -59,23 +59,25 @@ rv.X         -                      -                   -
 
     <hr>
   
+**Format a line of text**
+  
 ========== ==================================================== ===============================
 API Scope             Line Tag                                      Description 
 ========== ==================================================== ===============================
-rv.I                          text **_[C]**                      :ref:`Center text` 
-rv.I                          text **_[R]**                      :ref:`Right justify text`
-rv.I                     **text math _[M]**                      :ref:`Text math` 
-rv.I                    **LaTeX math _[L]**                      :ref:`LaTeX math` 
-rv.I                          text **_[#]** text                 :ref:`Endnote number`  
-rv.I                          text **_[G] glossary term**        :ref:`Term reference`
-rv.I                          text **_[S] text, section label**  :ref:`Section link`
-rv.I                          text **_[D] text,rivt_file**       :ref:`Doc link`
-rv.I                          text **_[U] text, url**            :ref:`URL link`   
-rv.V, I                       text **_[V] var_name** text        :ref:`Variable value`
-rv.V, I        assign var or **label _[E]**                      :ref:`Equation number`
-rv.V, I                      **title _[T]**                      :ref:`Table number`
-rv.V, I                    **caption _[F]**                      :ref:`Figure number`
-rv.V, I                       text **_[P]**                      :ref:`New Page`
+rv.I                      text **_[C]**                          :ref:`Center text` 
+rv.I                      text **_[R]**                          :ref:`Right justify text`
+rv.I                 **text math _[M]**                          :ref:`Text math` 
+rv.I                **LaTeX math _[L]**                          :ref:`LaTeX math` 
+rv.I                      text **_[#]** text                     :ref:`Endnote number`  
+rv.I                      text **_[G] glossary term |** text     :ref:`Term link`
+rv.I                      text **_[S] label, section |** text    :ref:`Section link`
+rv.I                      text **_[D] label, file name |** text  :ref:`Doc link`
+rv.I                      text **_[U] label, url |** text        :ref:`URL link`   
+rv.V, I                   text **_[V] var_name |** text          :ref:`Variable value`
+rv.V, I                   **text _[E]**                          :ref:`Number equation`
+rv.V, I                  **title _[T]**                          :ref:`Number table`
+rv.V, I                **caption _[F]**                          :ref:`Number figure`
+rv.V, I                        **_[P]**                          :ref:`New page`
 ========== ==================================================== ===============================
 
 .. _Block Tags:
@@ -112,30 +114,50 @@ all         **_[[END]]**                              :ref:`End block`
 
     <hr>
 
+**format files and calculations**
+
+========== ============================================================== ========================
+API Scope           Command                                                  Description
+========== ============================================================== ========================
+rv.R        | **SHELL** | rel path | os, wait                               :ref:`Shell file`
+rv.I        | **TEXT** | rel path |  language                               :ref:`Text file`
+rv.V, I     | **TABLE** | rel path | title,width,rows,align,head,num        :ref:`Table file`     
+rv.V, I     | **IMAGE** | rel path | caption, scale, number                 :ref:`Image file`
+rv.V, I     | **IMAGE2** | rel pth1, rel pth2 | cap1,cap2,sca1,sca2,num     :ref:`Adjacent images`
+rv.V        | **VALTABLE** | rel path | title, rows, number                 :ref:`Values file`     
+rv.V        a **==:** 1*IN  | unit1, unit2, decimal | label                 :ref:`Define value`
+rv.V        c **<=:** expression | unit1, unit2, decimal | label, number    :ref:`Assign value`
+rv.V        c **:=:** expression | unit1, unit2, decimal | label, number    :ref:`Function value`
+rv.V        a **<** c | decimal | text1, text2, color1, color2              :ref:`Compare value`
+rv.T, V     | **PYTHON** | rel path | namespace                             :ref:`Python file`
+rv.T        | **MARKUP** | rel path | type                                  :ref:`Markup file`
+rv.D        | **ATTACHPDF** | rel path | place, title                       :ref:`Attach PDF`   
+rv.D        | **PUBLISH** | doc title | type                                :ref:`Publish doc` 
+========== ============================================================== ========================
+
+
+**default paths for single docs**
+
+================ =========================
+   Command         Default Path
+================ =========================
+\| SHELL |          **root**
+\| TEXT |           **root**
+\| TABLE |          **root**
+\| IMAGE |          **root**
+\| IMAGE2 |         **root**
+\| VALTABLE |       **root**
+\| PYTHON |         **root**
+\| MARKUP |         **root**
+\| ATTACHPDF |      **root**
+\| PUBLISH |        **root**
+================ =========================
+
+
 See :ref:`here <report folders>` for the folder structure. If files
 are in the default path only the file name needs to be provided.
 
-**Read, write and format files**
-
-========== ============================================================== ========================
-API Scope           | Command | path | parameters                          Description
-========== ============================================================== ========================
-rv.R        **| SHELL |** rel path | os, wait                               :ref:`Shell file`
-rv.I        **| TEXT |** rel path |  language                               :ref:`Text file`
-rv.V, I     **| TABLE |** rel path | title, width, rows, align, head        :ref:`Table file`     
-rv.V, I     **| IMAGE |** rel path | caption, scale, figure                 :ref:`Image file`
-rv.V, I     **| IMAGE2 |** rel path1, rel path2 | c1, c2, s1, s2, f1, f2    :ref:`Adjacent images`
-rv.V        **| VALTABLE |** rel path | title, rows, number                 :ref:`Values file`     
-rv.V        a **==:** 1*IN  | unit1, unit2, decimal | label                 :ref:`Define value`
-rv.V        c **<=:** expression | unit1, unit2, decimal | label            :ref:`Assign value`
-rv.V        a **<** c  | decimal | text1, text2, color1, color2             :ref:`Compare value`
-rv.T, V     **| PYTHON |** rel path | namespace                             :ref:`Python file`
-rv.T        **| MARKUP |** rel path | type                                  :ref:`Markup file`
-rv.D        **| ATTACHPDF |** rel path | place, title                       :ref:`Attach PDF`   
-rv.D        **| PUBLISH |** rel path (ini) | type                           :ref:`Publish doc` 
-========== ============================================================== ========================
-
-**Default command paths**
+**default paths for reports**
 
 ================ =========================
    Command         Default Path
@@ -152,7 +174,7 @@ rv.D        **| PUBLISH |** rel path (ini) | type                           :ref
 \| PUBLISH |        **/Src/Gendocs/**
 ================ =========================
 
-[1]  use /stored/data/filename to read values previously defined and stored
+[1]  use **/stored/data/filename** to read values previously defined and stored
 
 
 .. _Folders:

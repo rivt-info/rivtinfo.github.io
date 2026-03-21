@@ -30,9 +30,9 @@ including images, tables, links and formatted text.
                 text **_[D] text, rivt_file**     :ref:`Doc link`
                 text **_[U] text, label**         :ref:`URL link`   
                 text **_[V] var_name** text       :ref:`Variable value`
- assign var or **label _[E]**                     :ref:`Equation number`
-               **title _[T]**                     :ref:`Table number`
-             **caption _[F]**                     :ref:`Figure number`
+ assign var or **label _[E]**                     :ref:`Number equation`
+               **title _[T]**                     :ref:`Number table`
+             **caption _[F]**                     :ref:`Number figure`
 ================================================= ============================
 
 **[3i]** Block Tags
