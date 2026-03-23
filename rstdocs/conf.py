@@ -14,13 +14,11 @@ project = 'rivt.info'
 copyright = '2023 StructureLabs LLC'
 author = 'rholland'
 release = '0.3.0'
-
 extensions = ['sphinx.ext.githubpages','sphinx_togglebutton',
               "sphinxcontrib.jquery", 'sphinx_copybutton',
               'sphinx_favicon', 'sphinx.ext.duration',
               'sphinx.ext.doctest', 'sphinx.ext.autodoc',
-              'sphinx_design','sphinx_new_tab_link',
-              'rst2pdf.pdfbuilder']
+              'sphinx_design','sphinx_new_tab_link', 'rst2pdf.pdfbuilder']
 master_doc = 'index'
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 source_suffix = ['.rst', '.md']
@@ -61,20 +59,12 @@ favicons = [
         "sizes": "32x32",
         "href": "favicon-32x32.png",
     },
-
 ]
-
-# -- Options for PDF output -------------------------------------------------
-# List of tuples  (source start file, target name, title, author, options).
-# The options element is a dictionary that lets you override
-# this config per-document. For example:
-# ('index', 'MyProject', 'My Project', 'Author Name', {'pdf_compressed': True})
-# More than one author, separate them with \\.
-# r'Guido van Rossum\\Fred L. Drake, Jr., editor'
-#
-pdf_documents = [
-    ('index', 'rivt_manual', 'rivt', 'r holland'),
-]
+# -- PDF output ----------------------------------------------------------------
+# source start file, target name, title, author, options
+# options: 'index', 'MyProject', 'My Project', 'Author Name', {'pdf_compressed': True}
+# More than one author: r'Guido van Rossum\\Fred L. Drake, Jr., editor'
+pdf_documents = [('index', 'rivt_manual', 'rivt', 'r holland')]
 # Label to use as a prefix for the subtitle on the cover page
 subtitle_prefix = 'User Manual'
 # A list of folders to search for stylesheets. Example:
