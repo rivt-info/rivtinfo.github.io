@@ -81,7 +81,7 @@ read from the rivt file folder.
         | SHELL | file1.cmd | win, nowait
 
 =========== ==========================
-API Scope     Run
+API Scope     rv.R
 File Types   .cmd, .bat, .sh, .bsh 
 Doc Types     text, PDF, HTML
 =========== ==========================
@@ -122,7 +122,7 @@ relative to the report root (rivt file folder). If the doc is a
         | TEXT | file1.txt | literal
 
 =========== =====================================
-API Scope     Insert
+API Scope     rv.I
 File Types    txt, .py, .cmd, .bat, .sh, .rst 
 Doc Types     text, PDF, HTML
 =========== =====================================
@@ -159,7 +159,7 @@ relative to the report root (rivt file folder). If the doc is a
             | TABLE | file1.csv | Forces, 30, 0:0, c, nohead, num 
 
 =========== ==========================
-API Scope     Insert, Values
+API Scope     rv.I, rv.V
 File Types    csv, xls, rst
 Doc Types     text, PDF, HTML
 =========== ==========================
@@ -193,7 +193,7 @@ the file is read from the rivt file folder.
         | IMAGE | file1.png | Map, 0.5, num
 
 =========== ==========================
-API Scope     Insert, Values
+API Scope     rv.V, rv.I
 File Types    PNG, JPG 
 Doc Types     PDF, HTML
 =========== ==========================
@@ -414,7 +414,7 @@ Comparison operators:
            a < b |OK, NOT OK, blue, red
   
 =========== ==========================
-API Scope     Values
+API Scope     rv.V
 Doc Types     text, PDF, HTML
 =========== ==========================
 
@@ -440,7 +440,7 @@ paths used in the script are relative to the root *rivt* folder.
         | PYTHON | script1.py | rv-space
 
 =========== ==========================
-API Scope     Values, Tools
+API Scope     rv.V, rv.T
 File Types    .csv
 Doc Types     text, PDF, HTML
 =========== ==========================
@@ -468,7 +468,7 @@ into either PDF or HTML. LaTeX requires the installation of *texlive*.
             | MARKUP | script.rst | rst
 
 =========== ==========================
-API Scope     Tools
+API Scope     rv.t
 File Types    html, rst, tex
 Doc Types     text, PDF, HTML
 =========== ==========================
@@ -498,7 +498,7 @@ HTML *docs* the file is inserted as a donwload link.
 
 
 =========== ==========================
-API Scope     Doc
+API Scope     rv.D
 File Types    tex, html, text, pdf
 Doc Types     text, PDF, HTML
 =========== ==========================
@@ -523,7 +523,7 @@ Publishes a *doc*.
         | PUBLISH | ini relative path | rst2pdf
 
 =========== ==========================
-API Scope     Doc
+API Scope     rv.D
 File Types    tex, html, text, pdf
 Doc Types     text, PDF, HTML
 =========== ==========================
