@@ -37,7 +37,7 @@ A rivt Codepsace with examples can be forked from
 `this repository <https://github.com/rivt-info/rivt-codespace-examples>`__ 
 by following the steps below.
 
-.. topic::  Fork a *rivt Codespace* in the cloud 
+**Fork a *rivt Codespace* in the cloud**
 
     .. code-block:: text
 
@@ -58,13 +58,13 @@ by following the steps below.
     :align: center
     :alt: rivt Codespace repo
 
+
 .. topic::  Local installation methods
 
     1. Windows portable zip folder (:ref:`rivt-portable`) 
-    2. uv package manager (:ref:`rivt-uv`) 
-    3. system Python package (:ref:`rivt-sys`)
+    3. System Python  (:ref:`rivt-sys`) with or without uv manager (:ref:`rivt-uv`) 
 
-    *rivt-portable* is recommended for Windows users unfamiliar with Python
+*rivt-portable* is recommended for Windows users unfamiliar with Python
 
 .. _rivt-portable:
 
@@ -115,22 +115,42 @@ The primary disadvantages of *rivt-portable* are that *rivt* packages
 and extensions must be updated by updating the zip file as a whole, and it is
 more difficult to integrate with other Python programs. 
 
-.. _rivt-uv:
 
-**[3t]** rivt-uv
---------------------------------------------------------------------- 
+.. _rivt-sys:
+
+**[3t]** rivt-sys with uv
+--------------------------------
 
 .. raw:: html
 
-    <hr> 
+    <hr>
 
-**rivt-uv** uses the `uv <https://docs.astral.sh/uv/>`__ package manager to
-create an isolated rivt environment and install packages. The primary advantage
-of *rivt-uv* is its simplicity and speed in updating packages without affecting
-the system Python.
+*rivt* may be installed at the system level. 
 
-The *rivt-uv* installation method is recommended for most users with some 
-familiarity with Python and programming.
+#.  Install Python using `Python installers <https://www.python.org/downloads/>`__
+    if not already installed. The minimum version required by *rivt* is 
+    Python 3.13.
+
+#.  Install *rivtlib* and dependencies using pip
+
+.. code-block:: bash
+
+    pip install rivtlib
+    
+A list of the dependencies is :ref:`here <Project requirements>`.
+
+.. _rivt-uv:
+
+rivt-uv
+~~~~~~~~
+
+Rather than installing *rivtlib* at the system level, it can be installed in an
+isolated environment using the `uv package manager <https://docs.astral.sh/uv/>`__`. 
+The primary advantage of *rivt-uv* is the simplicity of updating packages 
+while keeping them isolated from the system Python.
+
+*rivt-uv* installation is recommended for users with some familiarity with
+Python and programming.
 
 .. topic:: Step 1. Install uv
 
@@ -196,28 +216,22 @@ familiarity with Python and programming.
         rmdir /s /q rivt-examples
         uv cache clean
 
-.. _rivt-sys:
 
-**[4t]** rivt-sys
+**[4t]** rivt Framework
 --------------------------------
 
-.. raw:: html
+    The full rivt framework may be integrated with rivt when it is
+    installed at the system level, including uv. The framework includes:
 
-    <hr>
+    #. `VSCode IDE <https://code.visualstudio.com/>` and 
+       `extensions <https://marketplace.visualstudio.com/vscode>`. 
+       *rivt* extensions and snippets are :doc:`here <rvF01-quickref>`.
+    #. `Git file version control <https://git-scm.com>` 
+    #. `GitHub file sharing <GitHub <https://github.com>`__ 
+    #. `LaTeX document formatting <https://www.tug.org/texlive/>`
+    #. `QCAD diagraming <https://qcad.org/en/85-new-community-edition-open-source>`__.
 
-*rivt* may be installed at the system level. 
 
-#.  Install Python using `Python installers <https://www.python.org/downloads/>`__
-    if not already installed. The minimum version required by *rivt* is 
-    Python 3.13.
-
-#.  Install *rivtlib* and dependencies 
-
-.. code-block:: bash
-
-    pip install rivtlib
-    
-A list of the dependencies is :ref:`here <Project requirements>`.
 
 
 .. toctree::

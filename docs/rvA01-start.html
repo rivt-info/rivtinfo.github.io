@@ -413,9 +413,9 @@ in a personal GithUb account that may be set up <a class="reference external" hr
 A rivt Codepsace with examples can be forked from
 <a class="reference external" href="https://github.com/rivt-info/rivt-codespace-examples" rel="noreferrer" target="_blank">this repository</a>
 by following the steps below.</p>
-<aside class="topic">
-<p class="topic-title">Fork a <em>rivt Codespace</em> in the cloud</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>1. Click the Fork button in the upper right corner.
+<p><strong>Fork a *rivt Codespace* in the cloud</strong></p>
+<blockquote>
+<div><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>1. Click the Fork button in the upper right corner.
    This creates a copy of the repository in your GitHub account.
 2. Switch to your GitHub account and open the forked repository
 3. Click the green Code button
@@ -427,20 +427,17 @@ by following the steps below.</p>
    publish rivt docs and files.
 </pre></div>
 </div>
-</aside>
+</div></blockquote>
 <figure class="align-center">
 <a class="dark-light reference internal image-reference" href="_images/codespace2.png"><img alt="rivt Codespace repo" class="dark-light" src="_images/codespace2.png" style="width: 90%;" />
 </a>
 </figure>
 <aside class="topic">
 <p class="topic-title">Local installation methods</p>
-<ol class="arabic simple">
-<li><p>Windows portable zip folder (<a class="reference internal" href="#rivt-portable"><span class="std std-ref">[2t] rivt-portable</span></a>)</p></li>
-<li><p>uv package manager (<a class="reference internal" href="#rivt-uv"><span class="std std-ref">[3t] rivt-uv</span></a>)</p></li>
-<li><p>system Python package (<a class="reference internal" href="#rivt-sys"><span class="std std-ref">[4t] rivt-sys</span></a>)</p></li>
-</ol>
-<p><em>rivt-portable</em> is recommended for Windows users unfamiliar with Python</p>
+<p>1. Windows portable zip folder (<a class="reference internal" href="#rivt-portable"><span class="std std-ref">[2t] rivt-portable</span></a>)
+3. System Python  (<a class="reference internal" href="#rivt-sys"><span class="std std-ref">[3t] rivt-sys with uv</span></a>) with or without uv manager (<a class="reference internal" href="#rivt-uv"><span class="std std-ref">rivt-uv</span></a>)</p>
 </aside>
+<p><em>rivt-portable</em> is recommended for Windows users unfamiliar with Python</p>
 </section>
 <section id="t-rivt-portable">
 <span id="rivt-portable"></span><h2><strong>[2t]</strong> rivt-portable<a class="headerlink" href="#t-rivt-portable" title="Link to this heading">#</a></h2>
@@ -477,14 +474,27 @@ approximately 1GB and 2GB respectively:</p>
 and extensions must be updated by updating the zip file as a whole, and it is
 more difficult to integrate with other Python programs.</p>
 </section>
-<section id="t-rivt-uv">
-<span id="rivt-uv"></span><h2><strong>[3t]</strong> rivt-uv<a class="headerlink" href="#t-rivt-uv" title="Link to this heading">#</a></h2>
-<hr><p><strong>rivt-uv</strong> uses the <a class="reference external" href="https://docs.astral.sh/uv/" rel="noreferrer" target="_blank">uv</a> package manager to
-create an isolated rivt environment and install packages. The primary advantage
-of <em>rivt-uv</em> is its simplicity and speed in updating packages without affecting
-the system Python.</p>
-<p>The <em>rivt-uv</em> installation method is recommended for most users with some
-familiarity with Python and programming.</p>
+<section id="t-rivt-sys-with-uv">
+<span id="rivt-sys"></span><h2><strong>[3t]</strong> rivt-sys with uv<a class="headerlink" href="#t-rivt-sys-with-uv" title="Link to this heading">#</a></h2>
+<hr><p><em>rivt</em> may be installed at the system level.</p>
+<ol class="arabic simple">
+<li><p>Install Python using <a class="reference external" href="https://www.python.org/downloads/" rel="noreferrer" target="_blank">Python installers</a>
+if not already installed. The minimum version required by <em>rivt</em> is
+Python 3.13.</p></li>
+<li><p>Install <em>rivtlib</em> and dependencies using pip</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>rivtlib
+</pre></div>
+</div>
+<p>A list of the dependencies is <a class="reference internal" href="rvF01-quickref.html#project-requirements"><span class="std std-ref">here</span></a>.</p>
+<section id="rivt-uv">
+<span id="id1"></span><h3>rivt-uv<a class="headerlink" href="#rivt-uv" title="Link to this heading">#</a></h3>
+<p>Rather than installing <em>rivtlib</em> at the system level, it can be installed in an
+isolated environment using the <cite>uv package manager &lt;https://docs.astral.sh/uv/&gt;`__</cite>.
+The primary advantage of <em>rivt-uv</em> is the simplicity of updating packages
+while keeping them isolated from the system Python.</p>
+<p><em>rivt-uv</em> installation is recommended for users with some familiarity with
+Python and programming.</p>
 <aside class="topic">
 <p class="topic-title">Step 1. Install uv</p>
 <p>Different methods for installing <em>uv</em> are described
@@ -534,19 +544,22 @@ uv<span class="w"> </span>cache<span class="w"> </span>clean
 </div>
 </aside>
 </section>
-<section id="t-rivt-sys">
-<span id="rivt-sys"></span><h2><strong>[4t]</strong> rivt-sys<a class="headerlink" href="#t-rivt-sys" title="Link to this heading">#</a></h2>
-<hr><p><em>rivt</em> may be installed at the system level.</p>
+</section>
+<section id="t-rivt-framework">
+<h2><strong>[4t]</strong> rivt Framework<a class="headerlink" href="#t-rivt-framework" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>The full rivt framework may be integrated with rivt when it is
+installed at the system level, including uv. The framework includes:</p>
 <ol class="arabic simple">
-<li><p>Install Python using <a class="reference external" href="https://www.python.org/downloads/" rel="noreferrer" target="_blank">Python installers</a>
-if not already installed. The minimum version required by <em>rivt</em> is
-Python 3.13.</p></li>
-<li><p>Install <em>rivtlib</em> and dependencies</p></li>
+<li><p><cite>VSCode IDE &lt;https://code.visualstudio.com/&gt;</cite> and
+<cite>extensions &lt;https://marketplace.visualstudio.com/vscode&gt;</cite>.
+<em>rivt</em> extensions and snippets are <a class="reference internal" href="rvF01-quickref.html"><span class="doc">here</span></a>.</p></li>
+<li><p><cite>Git file version control &lt;https://git-scm.com&gt;</cite></p></li>
+<li><p><a class="reference external" href="https://github.com" rel="noreferrer" target="_blank">GitHub file sharing &lt;GitHub</a></p></li>
+<li><p><cite>LaTeX document formatting &lt;https://www.tug.org/texlive/&gt;</cite></p></li>
+<li><p><a class="reference external" href="https://qcad.org/en/85-new-community-edition-open-source" rel="noreferrer" target="_blank">QCAD diagraming</a>.</p></li>
 </ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>rivtlib
-</pre></div>
-</div>
-<p>A list of the dependencies is <a class="reference internal" href="rvF01-quickref.html#project-requirements"><span class="std std-ref">here</span></a>.</p>
+</div></blockquote>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -601,8 +614,11 @@ Python 3.13.</p></li>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-run-examples"><strong>[1t]</strong> Run examples</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rivt-portable"><strong>[2t]</strong> rivt-portable</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rivt-uv"><strong>[3t]</strong> rivt-uv</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rivt-sys"><strong>[4t]</strong> rivt-sys</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rivt-sys-with-uv"><strong>[3t]</strong> rivt-sys with uv</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-uv">rivt-uv</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rivt-framework"><strong>[4t]</strong> rivt Framework</a></li>
 </ul>
   </nav></div>
 
