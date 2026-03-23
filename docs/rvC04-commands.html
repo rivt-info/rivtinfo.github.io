@@ -631,8 +631,6 @@ of the image.</p>
 be in the default folder <em>/src/img/</em> . Otherwise the path needs to be specified
 relative to the report root (rivt file folder). If the doc is a <a class="reference internal" href="rvF02-terms.html#term-single-doc"><span class="xref std std-term">single doc</span></a>
 the file is read from the rivt file folder.</p>
-<aside class="topic">
-<p class="topic-title">| IMAGE |</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
     | IMAGE | relative path | caption, scale, num;nonum
 
@@ -640,7 +638,6 @@ Example:
     | IMAGE | file1.png | Map, 0.5, num
 </pre></div>
 </div>
-</aside>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -668,8 +665,6 @@ of the image.</p>
 be in the default folder <em>/src/img/</em> . Otherwise the path needs to be specified
 relative to the report root (rivt file folder). If the doc is a
 <a class="reference internal" href="rvF02-terms.html#term-single-doc"><span class="xref std std-term">single doc</span></a> the file is read from the rivt file folder.</p>
-<aside class="topic">
-<p class="topic-title">| IMAGE2 |</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
     | IMAGE2 | relative path | cap1, cap2, scale1, scale2, num;nonum, num;nonum
 
@@ -677,7 +672,6 @@ Example:
     | IMAGE2 | file1.png, file2.png | Map, Photo, .5,.5, num, num
 </pre></div>
 </div>
-</aside>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -711,8 +705,6 @@ specified relative to the report root (rivt file folder). If the values are
 read from prior calculated values, they will be found in the <em>/stored/vals</em>
 folder. If the doc is a <a class="reference internal" href="rvF02-terms.html#term-single-doc"><span class="xref std std-term">single doc</span></a> the file is read from the rivt file
 folder.</p>
-<aside class="topic">
-<p class="topic-title">| VALTABLE |</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
     | VALTABLE | relative path | title, rows, *num;nonum*
 
@@ -723,7 +715,6 @@ Example:
     | VALTABLE | /stored/vals/vA01-2.csv | Beam Properties, 1-10, num
 </pre></div>
 </div>
-</aside>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -872,8 +863,6 @@ Example:
 <span id="python-file"></span><h2><strong>[11t]</strong> Python file<a class="headerlink" href="#t-python-file" title="Link to this heading">#</a></h2>
 <hr><p>Executes Python code in the <em>rivt namespace</em> or user specified namespace. File
 paths used in the script are relative to the root <em>rivt</em> folder.</p>
-<aside class="topic">
-<p class="topic-title">| PYTHON |</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
     | PYTHON | relative path | *rvspace*; user space
 
@@ -881,7 +870,6 @@ Example:
     | PYTHON | script1.py | rv-space
 </pre></div>
 </div>
-</aside>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
@@ -959,8 +947,6 @@ Example:
 <section id="t-publish-doc">
 <span id="publish-doc"></span><h2><strong>[14t]</strong> Publish doc<a class="headerlink" href="#t-publish-doc" title="Link to this heading">#</a></h2>
 <hr><p>Publishes a <em>doc</em>.</p>
-<aside class="topic">
-<p class="topic-title">| PUBLISH |</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
     | PUBLISH | ini relative path | rst2pdf, texpdf, tex, hmtl
 
@@ -968,7 +954,6 @@ Example:
     | PUBLISH | ini relative path | rst2pdf
 </pre></div>
 </div>
-</aside>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>

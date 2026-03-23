@@ -184,15 +184,13 @@ be in the default folder */src/img/* . Otherwise the path needs to be specified
 relative to the report root (rivt file folder). If the doc is a :term:`single doc` 
 the file is read from the rivt file folder.
 
-.. topic:: | IMAGE | 
+.. code-block:: text
 
-    .. code-block:: text
+    Syntax:
+        | IMAGE | relative path | caption, scale, num;nonum
 
-        Syntax:
-            | IMAGE | relative path | caption, scale, num;nonum
-
-        Example:
-            | IMAGE | file1.png | Map, 0.5, num
+    Example:
+        | IMAGE | file1.png | Map, 0.5, num
 
 =========== ==========================
 API Scope     Insert, Values
@@ -221,15 +219,13 @@ be in the default folder */src/img/* . Otherwise the path needs to be specified
 relative to the report root (rivt file folder). If the doc is a 
 :term:`single doc` the file is read from the rivt file folder.
 
-.. topic:: | IMAGE2 | 
+.. code-block:: text
 
-    .. code-block:: text
+    Syntax:
+        | IMAGE2 | relative path | cap1, cap2, scale1, scale2, num;nonum, num;nonum
 
-        Syntax:
-            | IMAGE2 | relative path | cap1, cap2, scale1, scale2, num;nonum, num;nonum
-
-        Example:
-            | IMAGE2 | file1.png, file2.png | Map, Photo, .5,.5, num, num
+    Example:
+        | IMAGE2 | file1.png, file2.png | Map, Photo, .5,.5, num, num
 
 =========== ==========================
 API Scope     rv.I, rv.V
@@ -264,18 +260,16 @@ read from prior calculated values, they will be found in the */stored/vals*
 folder. If the doc is a :term:`single doc` the file is read from the rivt file
 folder.
 
-.. topic::  | VALTABLE | 
+.. code-block:: text
 
-    .. code-block:: text
+    Syntax:
+        | VALTABLE | relative path | title, rows, *num;nonum*
 
-        Syntax:
-            | VALTABLE | relative path | title, rows, *num;nonum*
-
-        Example:
-            If read from the default folder:
-            | VALTABLE | newvals.csv | Beam Properties, 1:10, num
-            If read from the stored folder:
-            | VALTABLE | /stored/vals/vA01-2.csv | Beam Properties, 1-10, num
+    Example:
+        If read from the default folder:
+        | VALTABLE | newvals.csv | Beam Properties, 1:10, num
+        If read from the stored folder:
+        | VALTABLE | /stored/vals/vA01-2.csv | Beam Properties, 1-10, num
 
 =========== ==========================
 API Scope     rv.V
@@ -437,15 +431,13 @@ Doc Types     text, PDF, HTML
 Executes Python code in the *rivt namespace* or user specified namespace. File
 paths used in the script are relative to the root *rivt* folder.
 
-.. topic:: | PYTHON |
+.. code-block:: text
 
-    .. code-block:: text
+    Syntax:
+        | PYTHON | relative path | *rvspace*; user space
 
-        Syntax:
-            | PYTHON | relative path | *rvspace*; user space
-  
-        Example:
-            | PYTHON | script1.py | rv-space
+    Example:
+        | PYTHON | script1.py | rv-space
 
 =========== ==========================
 API Scope     Values, Tools
@@ -503,8 +495,6 @@ HTML *docs* the file is inserted as a donwload link.
   
         Example:
             | ATTACHPDF | relative path | *front;back*, title
- 
-
 
 
 =========== ==========================
@@ -524,15 +514,13 @@ Doc Types     text, PDF, HTML
 
 Publishes a *doc*. 
 
-.. topic:: | PUBLISH |
+.. code-block:: text
 
-    .. code-block:: text
+    Syntax:
+        | PUBLISH | ini relative path | rst2pdf, texpdf, tex, hmtl
 
-        Syntax:
-            | PUBLISH | ini relative path | rst2pdf, texpdf, tex, hmtl
-    
-        Example:
-            | PUBLISH | ini relative path | rst2pdf
+    Example:
+        | PUBLISH | ini relative path | rst2pdf
 
 =========== ==========================
 API Scope     Doc
