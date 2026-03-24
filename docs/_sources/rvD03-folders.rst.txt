@@ -63,14 +63,14 @@ An example *report* folder structure is shown below.
     Folders (including subfolders) that contain rivtlib generated files are 
     marked with double vertical bars ( || ).</p>
 
+.. _single-doc-folders:
+
 **[2t]**  Single Doc Folders
 -------------------------------
 
 .. raw:: html
 
     <hr>
-
-.. _single doc folders:
 
 .. code-block:: bash
 
@@ -107,14 +107,14 @@ An example *report* folder structure is shown below.
   
 
 
+.. _report-folders:
+
 **[3t]**  Report Folders
 -------------------------------
 
 .. raw:: html
 
     <hr>
-
-.. _report folders:
 
 **Reports - Top Level Folders**
 
@@ -142,7 +142,7 @@ An example *report* folder structure is shown below.
         ├── [rv102-]filename2.py                 |  rivt file       
         ├── [rv201-]filename3.py                 |  rivt file          
         ├── [rv202-]filename4.py                 |  rivt file            
-        ├── [.vscode]/                       |  optional VSCode settings   
+        ├── [.vscode]/                           |  optional VSCode settings   
         ├── [Files]/                             |  files from authors               
             ├── [Rstdocs]/                       |  intermediate rst files
                 ├── _downloads/                  |  external doc files 

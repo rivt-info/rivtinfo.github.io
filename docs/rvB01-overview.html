@@ -521,14 +521,12 @@ spaces when a <em>doc</em> title is extracted.</p>
         padding: 2em;
         margin: 2em">
     <li> Required names or prefixes are shown in brackets [ ].</li>
-    <li> Required folders start with a capital letter. </li>
-    <li> Folders that contain author provided files are marked with a
-    single vertical bar ( | ).</li>
-    <li> Folders that contain <i>rivtlib</i> generated files are
-        marked with a double vertical bar</li>
+    <li> Folders containing files edited by author start with a capital letter. </li>
+    <li> Folders containing author provided files are marked with a single bar ( | ).</li>
+    <li> Folders/files generating by <i>rivtlib</i> are marked with a double bar</li>
 </ol><p><strong>Top-Level Single Doc Folders</strong> (see <a class="reference internal" href="rvD01-documents.html#single-doc"><span class="std std-ref">[3t] Single docs</span></a>)</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt-<span class="o">]</span>single-doc-label/<span class="w">                 </span>Single<span class="w"> </span>doc<span class="w"> </span>Folder
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename.py<span class="w">              </span><span class="p">|</span><span class="w">  </span>rivt<span class="w"> </span>input<span class="w"> </span>file
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename.py<span class="w">              </span><span class="p">|</span><span class="w">  </span>rivt<span class="w"> </span>file
 <span class="w">    </span>├──<span class="w"> </span>multiple<span class="w"> </span><span class="nb">source</span><span class="w"> </span>files<span class="w">            </span><span class="p">|</span><span class="w">  </span>data,<span class="w"> </span>image<span class="w"> </span>and<span class="w"> </span><span class="k">function</span><span class="w"> </span>files
 <span class="w">    </span>├──<span class="w"> </span>addunits.py<span class="w">                      </span><span class="p">|</span><span class="w">  </span>define<span class="w"> </span>new<span class="w"> </span>units
 <span class="w">    </span>├──<span class="w"> </span>rv-101-log.txt<span class="w">                   </span><span class="o">||</span><span class="w"> </span>log<span class="w"> </span>file
@@ -542,14 +540,14 @@ spaces when a <em>doc</em> title is extracted.</p>
 <span class="w">    </span>└──<span class="w"> </span><span class="o">[</span>textdocs<span class="o">]</span>/<span class="w">                      </span><span class="o">||</span><span class="w"> </span>text<span class="w"> </span>output
 </pre></div>
 </div>
-<p><strong>Top-Level Report Folders</strong> (see :ref: <cite>report-describe</cite>)</p>
+<p><strong>Top-Level Report Folders</strong> (see <a class="reference internal" href="rvD02-files.html#report-describe"><span class="std std-ref">[2t] Reports</span></a>)</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt-<span class="o">]</span>Report-Label/<span class="w">                </span>Report<span class="w"> </span>Folder<span class="w"> </span>Name
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename1.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv102-<span class="o">]</span>filename2.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv201-<span class="o">]</span>filename3.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv202-<span class="o">]</span>filename4.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename1.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>files
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv102-<span class="o">]</span>filename2.py
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv201-<span class="o">]</span>filename3.py
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv202-<span class="o">]</span>filename4.py
 <span class="w">    </span>...
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>.vscode<span class="o">]</span>/<span class="w">                       </span><span class="p">|</span><span class="w">  </span>optional<span class="w"> </span>VSCode<span class="w"> </span>settings
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>.vscode<span class="o">]</span>/<span class="w">                  </span><span class="p">|</span><span class="w">  </span>optional<span class="w"> </span>VSCode<span class="w"> </span>settings
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>Files<span class="o">]</span>/<span class="w">                    </span><span class="p">|</span><span class="w">  </span>files<span class="w"> </span>provided<span class="w"> </span>by<span class="w"> </span>authors
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>publish<span class="o">]</span>/<span class="w">                  </span><span class="o">||</span><span class="w"> </span>doc<span class="w"> </span>and<span class="w"> </span>report<span class="w"> </span>files
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>stored<span class="o">]</span>/<span class="w">                   </span><span class="o">||</span><span class="w"> </span>stored<span class="w"> </span>files<span class="w"> </span>written<span class="w"> </span>by<span class="w"> </span>rivtlib

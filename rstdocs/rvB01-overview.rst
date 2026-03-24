@@ -185,11 +185,9 @@ spaces when a *doc* title is extracted.
             padding: 2em;
             margin: 2em">
         <li> Required names or prefixes are shown in brackets [ ].</li>
-        <li> Required folders start with a capital letter. </li>
-        <li> Folders that contain author provided files are marked with a 
-        single vertical bar ( | ).</li>
-        <li> Folders that contain <i>rivtlib</i> generated files are 
-            marked with a double vertical bar</li>
+        <li> Folders containing files edited by author start with a capital letter. </li>
+        <li> Folders containing author provided files are marked with a single bar ( | ).</li>
+        <li> Folders/files generating by <i>rivtlib</i> are marked with a double bar</li>
     </ol>
 
 
@@ -198,7 +196,7 @@ spaces when a *doc* title is extracted.
 .. code-block:: bash
 
     [rivt-]single-doc-label/                 Single doc Folder            
-        ├── [rv101-]filename.py              |  rivt input file
+        ├── [rv101-]filename.py              |  rivt file
         ├── multiple source files            |  data, image and function files
         ├── addunits.py                      |  define new units
         ├── rv-101-log.txt                   || log file                          
@@ -211,17 +209,17 @@ spaces when a *doc* title is extracted.
         ├── [latexdocs]/                     || latex output
         └── [textdocs]/                      || text output 
 
-**Top-Level Report Folders** (see :ref: `report-describe`)
+**Top-Level Report Folders** (see :ref:`report-describe`)
 
 .. code-block:: bash
 
     [rivt-]Report-Label/                Report Folder Name
-        ├── [rv101-]filename1.py        | rivt file
-        ├── [rv102-]filename2.py        | rivt file
-        ├── [rv201-]filename3.py        | rivt file
-        ├── [rv202-]filename4.py        | rivt file 
+        ├── [rv101-]filename1.py        | rivt files
+        ├── [rv102-]filename2.py        
+        ├── [rv201-]filename3.py        
+        ├── [rv202-]filename4.py        
         ...
-        ├── [.vscode]/                       |  optional VSCode settings   
+        ├── [.vscode]/                  |  optional VSCode settings   
         ├── [Files]/                    |  files provided by authors
         ├── [publish]/                  || doc and report files
         ├── [stored]/                   || stored files written by rivtlib
@@ -241,7 +239,7 @@ The four primary rivt folders are:
     sections identified in headers, api log files and processing log files. Files
     may be attached to a report.
 
-The complete folder structure with subfolders is shown :ref:`here <report folders>`.
+The complete folder structure with subfolders is shown :ref:`here <report-folders>`.
 
 .. toctree::
     :maxdepth: 1

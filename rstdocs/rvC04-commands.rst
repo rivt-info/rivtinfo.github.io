@@ -32,7 +32,7 @@ rv.D        **| PUBLISH |** doc title | type                                :ref
 
 **Default command paths**
 
-See :ref:`here <report folders>` for the folder structure. If files
+See :ref:`here <report-folders>` for the folder structure. If files
 are in the default path only the file name needs to be provided.
 
 ================ =========================

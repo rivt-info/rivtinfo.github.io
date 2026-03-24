@@ -47,15 +47,17 @@ divisions and subdivisions in the *report*.
 Each :term:`rivt file` outputs a corresponding formatted :term:`doc` written to
 the *publish* folder unless it is a :term:`single doc`. 
 
-*Docs* may be text, HTML or PDF. PDF *doc* files are produced by two different
-libraries, referred to as *pdf* and *pdftex*. A *pdf* doc is formatted using
-the *rst2pdf* library, a subset of the larger *ReportLab* library. It is the
-default PDF *doc*. Its advantage is a small library that has been incorporated
-into *rivt*.
+*Docs* may be text, HTML or PDF. PDF *doc* files are produced using using the
+*rst2pdf* and *Sphinx* libraries. HTML *doc* files are produced using the
+*Sphinx* library. 
 
-A *pdftex doc* requires separate installation of the much larger *texlive*
-LaTeX library (approx. 3GB). Its advantage is additional control over *doc*
-formatting and appearance.
+If *LaTeX* is installed it may be used to produce PDF *docs*. A *latex doc*
+may require the separate installation of the *texlive* LaTeX library
+(approx. 3GB). Its advantage is additional control over *doc* formatting and
+appearance.
+
+
+The *report folder* structure for *docs* is described in :ref:`report-folders`. 
 
 .. _single-doc:
 
@@ -79,6 +81,10 @@ statement.
 The text, PDF or HTML *doc* will be written to the local file folder using
 simple style settings built into *rivtlib*. *Single docs* require less
 setup but also offer less formatting control.
+
+
+The *report folder* structure for *single docs* is described in 
+:ref:`single-doc-folders`. 
 
 .. toctree::
     :maxdepth: 1
