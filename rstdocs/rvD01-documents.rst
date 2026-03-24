@@ -76,15 +76,14 @@ statement.
   
 .. code:: python
 
+    from rivtlib import rivtlib.rvapi as rv
+
     # rv singledoc=True
 
-The text, PDF or HTML *doc* will be written to the local file folder using
-simple style settings built into *rivtlib*. *Single docs* require less
-setup but also offer less formatting control.
+The text, PDF or HTML *doc* will be written to the local file folder. *Single
+docs* require less setup for *docs* that are not part of a larger report.
 
-
-The *report folder* structure for *single docs* is described in 
-:ref:`single-doc-folders`. 
+The folder structure for *single docs* is described in :ref:`single-doc-folders`. 
 
 .. toctree::
     :maxdepth: 1

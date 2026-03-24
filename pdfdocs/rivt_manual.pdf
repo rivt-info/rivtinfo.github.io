@@ -1061,22 +1061,22 @@ endobj
 endobj
 205 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 521 0 R /XYZ 48.51969 336.9071 0 ] /Rect [ 88.51969 246.3071 129.5597 258.3071 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 521 0 R /XYZ 48.51969 312.9071 0 ] /Rect [ 88.51969 246.3071 129.5597 258.3071 ] /Subtype /Link /Type /Annot
 >>
 endobj
 206 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 521 0 R /XYZ 48.51969 336.9071 0 ] /Rect [ 552.0448 247.0571 563.4803 259.0571 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 521 0 R /XYZ 48.51969 312.9071 0 ] /Rect [ 552.0448 247.0571 563.4803 259.0571 ] /Subtype /Link /Type /Annot
 >>
 endobj
 207 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 521 0 R /XYZ 48.51969 304.9071 0 ] /Rect [ 108.5197 228.3071 173.2365 240.3071 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 521 0 R /XYZ 48.51969 280.9071 0 ] /Rect [ 108.5197 228.3071 173.2365 240.3071 ] /Subtype /Link /Type /Annot
 >>
 endobj
 208 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 521 0 R /XYZ 48.51969 304.9071 0 ] /Rect [ 552.0448 229.0571 563.4803 241.0571 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 521 0 R /XYZ 48.51969 280.9071 0 ] /Rect [ 552.0448 229.0571 563.4803 241.0571 ] /Subtype /Link /Type /Annot
 >>
 endobj
 209 0 obj
@@ -2952,12 +2952,12 @@ endobj
 endobj
 519 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 528 0 R /XYZ 48.51969 719.3071 0 ] /Rect [ 308.7638 356.9071 412.4406 368.9071 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 528 0 R /XYZ 48.51969 719.3071 0 ] /Rect [ 280.3263 332.9071 384.0031 344.9071 ] /Subtype /Link /Type /Annot
 >>
 endobj
 520 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 604 0 R /XYZ 48.51969 509.3071 0 ] /Rect [ 413.5636 220.9071 471.4982 232.9071 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 604 0 R /XYZ 48.51969 509.3071 0 ] /Rect [ 413.5636 196.9071 471.4982 208.9071 ] /Subtype /Link /Type /Annot
 >>
 endobj
 521 0 obj
@@ -8312,7 +8312,7 @@ endobj
 endobj
 718 0 obj
 <<
-/Author () /CreationDate (D:20260323173355-07'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260323173355-07'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+/Author () /CreationDate (D:20260323174043-07'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260323174043-07'00') /Producer (ReportLab PDF Library - \(opensource\)) 
   /Subject (\(unspecified\)) /Title (My Report Title) /Trapped /False
 >>
 endobj
@@ -8837,13 +8837,13 @@ endobj
 endobj
 819 0 obj
 <<
-/Count 2 /Dest [ 521 0 R /XYZ 48.51969 336.9071 0 ] /First 820 0 R /Last 821 0 R /Next 822 0 R /Parent 818 0 R 
+/Count 2 /Dest [ 521 0 R /XYZ 48.51969 312.9071 0 ] /First 820 0 R /Last 821 0 R /Next 822 0 R /Parent 818 0 R 
   /Title (D.2 Files)
 >>
 endobj
 820 0 obj
 <<
-/Dest [ 521 0 R /XYZ 48.51969 304.9071 0 ] /Next 821 0 R /Parent 819 0 R /Title ([1t] File Types)
+/Dest [ 521 0 R /XYZ 48.51969 280.9071 0 ] /Next 821 0 R /Parent 819 0 R /Title ([1t] File Types)
 >>
 endobj
 821 0 obj
@@ -25627,7 +25627,7 @@ endstream
 endobj
 905 0 obj
 <<
-/Length 7964
+/Length 8997
 >>
 stream
 1 0 0 1 0 0 cm 
@@ -25755,7 +25755,7 @@ BT 1 0 0 1 0 26 Tm 1.476455 Tw 12 TL 0 0 0 rg /F1+0 10 Tf 12 TL (A document that
 Q
 Q
 q
-1 0 0 1 48.51969 410.9071 cm
+1 0 0 1 48.51969 386.9071 cm
 q
 q
 1 0 0 1 0 0 cm
@@ -25765,64 +25765,88 @@ q
 .662745 .662745 .662745 RG
 .5 w
 .878431 .921569 .921569 rg
-n -6 -6 513.7606 24 re B*
+n -6 -6 513.7606 48 re B*
 Q
 q
+.878431 .921569 .921569 rg
+n 0 24 24.08203 12 re f*
+.878431 .921569 .921569 rg
+n 24.08203 24 6.020508 12 re f*
+.878431 .921569 .921569 rg
+n 30.10254 24 42.14355 12 re f*
+.878431 .921569 .921569 rg
+n 72.24609 24 6.020508 12 re f*
+.878431 .921569 .921569 rg
+n 78.2666 24 36.12305 12 re f*
+.878431 .921569 .921569 rg
+n 120.4102 24 42.14355 12 re f*
+.878431 .921569 .921569 rg
+n 162.5537 24 6.020508 12 re f*
+.878431 .921569 .921569 rg
+n 168.5742 24 30.10254 12 re f*
+.878431 .921569 .921569 rg
+n 204.6973 24 12.04102 12 re f*
+.878431 .921569 .921569 rg
+n 222.7588 24 12.04102 12 re f*
+.878431 .921569 .921569 rg
+n 234.7998 24 0 12 re f*
+.878431 .921569 .921569 rg
+n 0 12 0 12 re f*
 .878431 .921569 .921569 rg
 n 0 0 114.3896 12 re f*
 .878431 .921569 .921569 rg
 n 114.3896 0 0 12 re f*
-BT 1 0 0 1 0 2 Tm 12 TL .25098 .501961 .501961 rg /F9+0 10 Tf 12 TL (# rv singledoc=True) Tj .733333 .733333 .733333 rg  T* ET
+BT 1 0 0 1 0 26 Tm 12 TL 0 .501961 0 rg /F8+0 10 Tf 12 TL (from) Tj .733333 .733333 .733333 rg /F6+0 10 Tf 12 TL ( ) Tj 0 0 1 rg /F8+0 10 Tf 12 TL (rivtlib) Tj .733333 .733333 .733333 rg /F6+0 10 Tf 12 TL ( ) Tj 0 .501961 0 rg /F8+0 10 Tf 12 TL (import) Tj 0 0 0 rg /F6+0 10 Tf 12 TL ( ) Tj (rivtlib) Tj .4 .4 .4 rg (.) Tj 0 0 0 rg (rvapi) Tj ( ) Tj 0 .501961 0 rg /F8+0 10 Tf 12 TL (as) Tj 0 0 0 rg /F6+0 10 Tf 12 TL ( ) Tj (rv) Tj .733333 .733333 .733333 rg  T*  T* .25098 .501961 .501961 rg /F9+0 10 Tf 12 TL (# rv singledoc=True) Tj .733333 .733333 .733333 rg  T* ET
 Q
 Q
 Q
 Q
 Q
 q
-1 0 0 1 48.51969 374.9071 cm
+1 0 0 1 48.51969 350.9071 cm
 q
-BT 1 0 0 1 0 14 Tm 1.235336 Tw 12 TL 0 0 0 rg /F1+0 10 Tf 12 TL (The text, PDF or HTML ) Tj /F3+0 10 Tf 12 TL (doc) Tj /F1+0 10 Tf 12 TL ( will be written to the local file folder using simple style settings built into ) Tj /F3+0 10 Tf 12 TL (rivtlib) Tj /F1+0 10 Tf 12 TL (.) Tj T* 0 Tw /F3+0 10 Tf 12 TL (Single docs) Tj /F1+0 10 Tf 12 TL ( require less setup but also offer less formatting control.) Tj T* ET
+BT 1 0 0 1 0 14 Tm .242573 Tw 12 TL 0 0 0 rg /F1+0 10 Tf 12 TL (The text, PDF or HTML ) Tj /F3+0 10 Tf 12 TL (doc) Tj /F1+0 10 Tf 12 TL ( will be written to the local file folder. ) Tj /F3+0 10 Tf 12 TL (Single docs) Tj /F1+0 10 Tf 12 TL ( require less setup for ) Tj /F3+0 10 Tf 12 TL (docs) Tj /F1+0 10 Tf 12 TL ( that are) Tj T* 0 Tw (not part of a larger report.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 48.51969 356.9071 cm
+1 0 0 1 48.51969 332.9071 cm
 q
-BT 1 0 0 1 0 2 Tm 12 TL 0 0 0 rg /F1+0 10 Tf 12 TL (The ) Tj /F3+0 10 Tf 12 TL (report folder) Tj /F1+0 10 Tf 12 TL ( structure for ) Tj /F3+0 10 Tf 12 TL (single docs) Tj /F1+0 10 Tf 12 TL ( is described in ) Tj ([2t] Single Doc Folders) Tj (.) Tj T* ET
+BT 1 0 0 1 0 2 Tm 12 TL 0 0 0 rg /F1+0 10 Tf 12 TL (The folder structure for ) Tj /F3+0 10 Tf 12 TL (single docs) Tj /F1+0 10 Tf 12 TL ( is described in ) Tj ([2t] Single Doc Folders) Tj (.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 48.51969 324.9071 cm
+1 0 0 1 48.51969 300.9071 cm
 q
 BT 1 0 0 1 0 2 Tm 12 TL .133333 .133333 .133333 rg /F4+0 10 Tf 12 TL (D.2 Files) Tj T* ET
 Q
 Q
 q
-1 0 0 1 48.51969 292.9071 cm
+1 0 0 1 48.51969 268.9071 cm
 q
 BT 1 0 0 1 0 2 Tm 12 TL .133333 .133333 .133333 rg /F4+0 10 Tf 12 TL ([1t]) Tj /F5+0 10 Tf 12 TL ( File Types) Tj T* ET
 Q
 Q
 q
-1 0 0 1 48.51969 274.9071 cm
+1 0 0 1 48.51969 250.9071 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F2+0 10 Tf 12 TL (rivt file) Tj T* ET
 Q
 Q
 q
-1 0 0 1 48.51969 220.9071 cm
+1 0 0 1 48.51969 196.9071 cm
 q
 BT 1 0 0 1 0 38 Tm 1.243302 Tw 12 TL 0 0 0 rg /F3+0 10 Tf 12 TL (rivt files) Tj /F1+0 10 Tf 12 TL ( are written by the author. Each ) Tj /F3+0 10 Tf 12 TL (rivt file) Tj /F1+0 10 Tf 12 TL ( has a prefix that specifies the division label and subdivision) Tj T* 0 Tw 2.049846 Tw (number of the published ) Tj /F3+0 10 Tf 12 TL (doc) Tj /F1+0 10 Tf 12 TL (. ) Tj /F3+0 10 Tf 12 TL (rivt reports) Tj /F1+0 10 Tf 12 TL ( are assembled using ) Tj /F3+0 10 Tf 12 TL (doc numbers) Tj /F1+0 10 Tf 12 TL ( that organize the report into) Tj T* 0 Tw 1.042156 Tw (divisions and subdivisions. The d*subdivision* name is taken from the name that follows the ) Tj /F3+0 10 Tf 12 TL (doc number) Tj /F1+0 10 Tf 12 TL (. It) Tj T* 0 Tw (may be overridden in the ) Tj /F3+0 10 Tf 12 TL (API Meta function) Tj /F1+0 10 Tf 12 TL (. ) Tj /F3+0 10 Tf 12 TL (Division) Tj /F1+0 10 Tf 12 TL ( names are specified in the ) Tj (report script) Tj (.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 48.51969 190.9071 cm
+1 0 0 1 48.51969 166.9071 cm
 q
 BT 1 0 0 1 0 14 Tm 1.648936 Tw 12 TL 0 0 0 rg /F1+0 10 Tf 12 TL (The ) Tj /F3+0 10 Tf 12 TL (doc number) Tj /F1+0 10 Tf 12 TL ( prefix includes a single digit capital alphanumeric division label ) Tj /F3+0 10 Tf 12 TL (D) Tj /F1+0 10 Tf 12 TL (, followed by a two digit) Tj T* 0 Tw (subdivision number ) Tj /F3+0 10 Tf 12 TL (ss) Tj /F1+0 10 Tf 12 TL (. For example:) Tj T* ET
 Q
 Q
 q
-1 0 0 1 48.51969 135.7071 cm
+1 0 0 1 48.51969 111.7071 cm
 q
 q
 1 0 0 1 0 0 cm
@@ -25852,7 +25876,7 @@ Q
 Q
 Q
 q
-1 0 0 1 48.51969 99.70709 cm
+1 0 0 1 48.51969 75.70709 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 14 Tm 1.41844 Tw /F1+0 10 Tf 12 TL (where the default doc name is \001Beam Loads\002 in subdivision 2 of division C. Hyphens are stripped from file) Tj T* 0 Tw (name.) Tj T* ET
@@ -41149,123 +41173,123 @@ xref
 0001500991 00000 n 
 0001507697 00000 n 
 0001514412 00000 n 
-0001522429 00000 n 
-0001528171 00000 n 
-0001535127 00000 n 
-0001543921 00000 n 
-0001558532 00000 n 
-0001562762 00000 n 
-0001597458 00000 n 
-0001630707 00000 n 
-0001649994 00000 n 
-0001659781 00000 n 
-0001666864 00000 n 
-0001676649 00000 n 
-0001682285 00000 n 
-0001694670 00000 n 
-0001706390 00000 n 
-0001716386 00000 n 
-0001725084 00000 n 
-0001736150 00000 n 
-0001774531 00000 n 
-0001804394 00000 n 
-0001821619 00000 n 
-0001830868 00000 n 
-0001839244 00000 n 
-0001847956 00000 n 
-0001856481 00000 n 
-0001864963 00000 n 
-0001873526 00000 n 
-0001882672 00000 n 
-0001889203 00000 n 
-0001890740 00000 n 
-0001890842 00000 n 
-0001898273 00000 n 
-0001899137 00000 n 
-0001900104 00000 n 
-0001900139 00000 n 
-0001900174 00000 n 
-0001900209 00000 n 
-0001900244 00000 n 
-0001900279 00000 n 
-0001900314 00000 n 
-0001900349 00000 n 
-0001900384 00000 n 
-0001900419 00000 n 
-0001900454 00000 n 
-0001900489 00000 n 
-0001900524 00000 n 
-0001900559 00000 n 
-0001900594 00000 n 
-0001900629 00000 n 
-0001900665 00000 n 
-0001900701 00000 n 
-0001900737 00000 n 
-0001900773 00000 n 
-0001900809 00000 n 
-0001900845 00000 n 
-0001900881 00000 n 
-0001900917 00000 n 
-0001900953 00000 n 
-0001900989 00000 n 
-0001901025 00000 n 
-0001901061 00000 n 
-0001901097 00000 n 
-0001901133 00000 n 
-0001901169 00000 n 
-0001901205 00000 n 
-0001901241 00000 n 
+0001523462 00000 n 
+0001529204 00000 n 
+0001536160 00000 n 
+0001544954 00000 n 
+0001559565 00000 n 
+0001563795 00000 n 
+0001598491 00000 n 
+0001631740 00000 n 
+0001651027 00000 n 
+0001660814 00000 n 
+0001667897 00000 n 
+0001677682 00000 n 
+0001683318 00000 n 
+0001695703 00000 n 
+0001707423 00000 n 
+0001717419 00000 n 
+0001726117 00000 n 
+0001737183 00000 n 
+0001775564 00000 n 
+0001805427 00000 n 
+0001822652 00000 n 
+0001831901 00000 n 
+0001840277 00000 n 
+0001848989 00000 n 
+0001857514 00000 n 
+0001865996 00000 n 
+0001874559 00000 n 
+0001883705 00000 n 
+0001890236 00000 n 
+0001891773 00000 n 
+0001891875 00000 n 
+0001899306 00000 n 
+0001900170 00000 n 
+0001901137 00000 n 
+0001901172 00000 n 
+0001901207 00000 n 
+0001901242 00000 n 
 0001901277 00000 n 
-0001901313 00000 n 
-0001901349 00000 n 
-0001901385 00000 n 
-0001901421 00000 n 
-0001901457 00000 n 
-0001901493 00000 n 
-0001901529 00000 n 
-0001901565 00000 n 
-0001901601 00000 n 
-0001901637 00000 n 
-0001901673 00000 n 
-0001901709 00000 n 
-0001901745 00000 n 
-0001901781 00000 n 
-0001901817 00000 n 
-0001901853 00000 n 
-0001901889 00000 n 
-0001901925 00000 n 
-0001901961 00000 n 
-0001901997 00000 n 
-0001902033 00000 n 
-0001902069 00000 n 
-0001902105 00000 n 
-0001902141 00000 n 
-0001902177 00000 n 
-0001902213 00000 n 
-0001902249 00000 n 
-0001902285 00000 n 
-0001902322 00000 n 
-0001902359 00000 n 
-0001902396 00000 n 
-0001902433 00000 n 
-0001902470 00000 n 
-0001902507 00000 n 
-0001902544 00000 n 
-0001902581 00000 n 
-0001902618 00000 n 
-0001902655 00000 n 
-0001902692 00000 n 
-0001902729 00000 n 
-0001902766 00000 n 
-0001902803 00000 n 
-0001902840 00000 n 
-0001902877 00000 n 
-0001902914 00000 n 
-0001902951 00000 n 
+0001901312 00000 n 
+0001901347 00000 n 
+0001901382 00000 n 
+0001901417 00000 n 
+0001901452 00000 n 
+0001901487 00000 n 
+0001901522 00000 n 
+0001901557 00000 n 
+0001901592 00000 n 
+0001901627 00000 n 
+0001901662 00000 n 
+0001901698 00000 n 
+0001901734 00000 n 
+0001901770 00000 n 
+0001901806 00000 n 
+0001901842 00000 n 
+0001901878 00000 n 
+0001901914 00000 n 
+0001901950 00000 n 
+0001901986 00000 n 
+0001902022 00000 n 
+0001902058 00000 n 
+0001902094 00000 n 
+0001902130 00000 n 
+0001902166 00000 n 
+0001902202 00000 n 
+0001902238 00000 n 
+0001902274 00000 n 
+0001902310 00000 n 
+0001902346 00000 n 
+0001902382 00000 n 
+0001902418 00000 n 
+0001902454 00000 n 
+0001902490 00000 n 
+0001902526 00000 n 
+0001902562 00000 n 
+0001902598 00000 n 
+0001902634 00000 n 
+0001902670 00000 n 
+0001902706 00000 n 
+0001902742 00000 n 
+0001902778 00000 n 
+0001902814 00000 n 
+0001902850 00000 n 
+0001902886 00000 n 
+0001902922 00000 n 
+0001902958 00000 n 
+0001902994 00000 n 
+0001903030 00000 n 
+0001903066 00000 n 
+0001903102 00000 n 
+0001903138 00000 n 
+0001903174 00000 n 
+0001903210 00000 n 
+0001903246 00000 n 
+0001903282 00000 n 
+0001903318 00000 n 
+0001903355 00000 n 
+0001903392 00000 n 
+0001903429 00000 n 
+0001903466 00000 n 
+0001903503 00000 n 
+0001903540 00000 n 
+0001903577 00000 n 
+0001903614 00000 n 
+0001903651 00000 n 
+0001903688 00000 n 
+0001903725 00000 n 
+0001903762 00000 n 
+0001903799 00000 n 
+0001903836 00000 n 
+0001903873 00000 n 
+0001903910 00000 n 
+0001903947 00000 n 
+0001903984 00000 n 
 trailer
 <<
 /ID 
-[<aa24bf4d4789b2671ebf17b2ae845ad2><aa24bf4d4789b2671ebf17b2ae845ad2>]
+[<77194cc8d8dfa636c3f71ac417b58729><77194cc8d8dfa636c3f71ac417b58729>]
 % ReportLab generated PDF document -- digest (opensource)
 
 /Info 718 0 R
@@ -41273,5 +41297,5 @@ trailer
 /Size 1019
 >>
 startxref
-1902988
+1904021
 %%EOF

@@ -436,14 +436,14 @@ the local rivt file folder for reading and writing files, without referencing
 the <em>rivt report folders</em>. A single <em>doc</em> is formatted by setting the
 <em>rv_local</em> variable in a comment, immediately following the <em>rivtlib</em> import
 statement.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># rv singledoc=True</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">rivtlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">rivtlib</span><span class="o">.</span><span class="n">rvapi</span> <span class="k">as</span> <span class="n">rv</span>
+
+<span class="c1"># rv singledoc=True</span>
 </pre></div>
 </div>
-<p>The text, PDF or HTML <em>doc</em> will be written to the local file folder using
-simple style settings built into <em>rivtlib</em>. <em>Single docs</em> require less
-setup but also offer less formatting control.</p>
-<p>The <em>report folder</em> structure for <em>single docs</em> is described in
-<a class="reference internal" href="rvD03-folders.html#single-doc-folders"><span class="std std-ref">[2t]  Single Doc Folders</span></a>.</p>
+<p>The text, PDF or HTML <em>doc</em> will be written to the local file folder. <em>Single
+docs</em> require less setup for <em>docs</em> that are not part of a larger report.</p>
+<p>The folder structure for <em>single docs</em> is described in <a class="reference internal" href="rvD03-folders.html#single-doc-folders"><span class="std std-ref">[2t]  Single Doc Folders</span></a>.</p>
 <div class="toctree-wrapper compound">
 </div>
 </section>
