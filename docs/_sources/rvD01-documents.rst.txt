@@ -57,6 +57,7 @@ A *pdftex doc* requires separate installation of the much larger *texlive*
 LaTeX library (approx. 3GB). Its advantage is additional control over *doc*
 formatting and appearance.
 
+.. _single-doc:
 
 **[3t]** Single docs
 ----------------------------------------------------------

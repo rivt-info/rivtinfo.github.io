@@ -39,18 +39,18 @@ by following the steps below.
 
 **Fork a *rivt Codespace* in the cloud**
 
-    .. code-block:: text
+.. code-block:: text
 
-        1. Click the Fork button in the upper right corner. 
-           This creates a copy of the repository in your GitHub account.
-        2. Switch to your GitHub account and open the forked repository
-        3. Click the green Code button
-        4. Select the Codespaces tab
-        5. Click the rivt-codespace-examples option.
-        6. This creates a Codespace environment in your GitHub account 
-           and opens the repository in the online VSCode IDE. The environment 
-           includes the rivt packages and extensions needed to run and 
-           publish rivt docs and files.
+    1. Click the Fork button in the upper right corner. 
+        This creates a copy of the repository in your GitHub account.
+    2. Switch to your GitHub account and open the forked repository
+    3. Click the green Code button
+    4. Select the Codespaces tab
+    5. Click the rivt-codespace-examples option.
+    6. This creates a Codespace environment in your GitHub account 
+        and opens the repository in the online VSCode IDE. The environment 
+        includes the rivt packages and extensions needed to run and 
+        publish rivt docs and files.
 
 .. figure::  _static/img/codespace2.png
     :class: dark-light
@@ -61,10 +61,11 @@ by following the steps below.
 
 .. topic::  Local installation methods
 
-    1. Windows portable zip folder (:ref:`rivt-portable`) 
-    3. System Python  (:ref:`rivt-sys`) with or without uv manager (:ref:`rivt-uv`) 
+    1. Windows portable zip folder (:ref:`rivt-portable`) *rivt-portable* is
+    recommended for Windows users unfamiliar with Python.
+    
+    2. System Python  (:ref:`rivt-sys`) with or without uv manager (:ref:`rivt-uv`) 
 
-*rivt-portable* is recommended for Windows users unfamiliar with Python
 
 .. _rivt-portable:
 
@@ -145,7 +146,7 @@ rivt-uv
 ~~~~~~~~
 
 Rather than installing *rivtlib* at the system level, it can be installed in an
-isolated environment using the `uv package manager <https://docs.astral.sh/uv/>`__`. 
+isolated environment using the `uv package manager <https://docs.astral.sh/uv/>`__. 
 The primary advantage of *rivt-uv* is the simplicity of updating packages 
 while keeping them isolated from the system Python.
 
@@ -220,16 +221,16 @@ Python and programming.
 **[4t]** rivt Framework
 --------------------------------
 
-    The full rivt framework may be integrated with rivt when it is
-    installed at the system level, including uv. The framework includes:
+The full rivt framework may be integrated with rivt when it is
+installed at the system level, including uv. The framework includes:
 
-    #. `VSCode IDE <https://code.visualstudio.com/>` and 
-       `extensions <https://marketplace.visualstudio.com/vscode>`. 
-       *rivt* extensions and snippets are :doc:`here <rvF01-quickref>`.
-    #. `Git file version control <https://git-scm.com>` 
-    #. `GitHub file sharing <GitHub <https://github.com>`__ 
-    #. `LaTeX document formatting <https://www.tug.org/texlive/>`
-    #. `QCAD diagraming <https://qcad.org/en/85-new-community-edition-open-source>`__.
+#. `VSCode IDE <https://code.visualstudio.com/>` and 
+    `extensions <https://marketplace.visualstudio.com/vscode>`. 
+    *rivt* extensions and snippets are :doc:`here <rvF01-quickref>`.
+#. `Git file version control <https://git-scm.com>` 
+#. `GitHub file sharing <GitHub <https://github.com>`__ 
+#. `LaTeX document formatting <https://www.tug.org/texlive/>`
+#. `QCAD diagraming <https://qcad.org/en/85-new-community-edition-open-source>`__.
 
 
 

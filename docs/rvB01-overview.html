@@ -59,7 +59,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'rvB01-overview';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="B.1 Single Docs" href="rvB02-singledoc.html" />
+    <link rel="next" title="B.1 Framework" href="rvB02-framework.html" />
     <link rel="prev" title="A.3 FAQ" href="rvA03-faq.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -327,8 +327,7 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="rvB02-singledoc.html"><strong>B.1 Single Docs</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvB03-framework.html"><strong>B.1 Framework</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvB02-framework.html"><strong>B.1 Framework</strong></a></li>
 </ul>
 </div>
 </nav></div>
@@ -527,31 +526,41 @@ spaces when a <em>doc</em> title is extracted.</p>
     single vertical bar ( | ).</li>
     <li> Folders that contain <i>rivtlib</i> generated files are
         marked with a double vertical bar</li>
-</ol><p><strong>Primary Folders</strong></p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt<span class="o">]</span>-Report-Label/<span class="w">                </span>Report<span class="w"> </span>Folder<span class="w"> </span>Name
+</ol><p><strong>Top-Level Single Doc Folders</strong> (see <a class="reference internal" href="rvD01-documents.html#single-doc"><span class="std std-ref">[3t] Single docs</span></a>)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt-<span class="o">]</span>single-doc-label/<span class="w">                 </span>Single<span class="w"> </span>doc<span class="w"> </span>Folder
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename.py<span class="w">              </span><span class="p">|</span><span class="w">  </span>rivt<span class="w"> </span>input<span class="w"> </span>file
+<span class="w">    </span>├──<span class="w"> </span>multiple<span class="w"> </span><span class="nb">source</span><span class="w"> </span>files<span class="w">            </span><span class="p">|</span><span class="w">  </span>data,<span class="w"> </span>image<span class="w"> </span>and<span class="w"> </span><span class="k">function</span><span class="w"> </span>files
+<span class="w">    </span>├──<span class="w"> </span>addunits.py<span class="w">                      </span><span class="p">|</span><span class="w">  </span>define<span class="w"> </span>new<span class="w"> </span>units
+<span class="w">    </span>├──<span class="w"> </span>rv-101-log.txt<span class="w">                   </span><span class="o">||</span><span class="w"> </span>log<span class="w"> </span>file
+<span class="w">    </span>├──<span class="w"> </span>rv-101-docname.py<span class="w">                </span><span class="o">||</span><span class="w"> </span>public<span class="w"> </span>rivt<span class="w"> </span>file
+<span class="w">    </span>├──<span class="w"> </span>README.txt<span class="w">                       </span><span class="o">||</span><span class="w"> </span>searchable<span class="w"> </span>text<span class="w"> </span>doc
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>.vscode<span class="o">]</span>/<span class="w">                       </span><span class="p">|</span><span class="w">  </span>optional<span class="w"> </span>VSCode<span class="w"> </span>settings
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rstdocs<span class="o">]</span>/<span class="w">                       </span><span class="p">|</span><span class="w">  </span>rst<span class="w"> </span>style<span class="w"> </span>input
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>pdfdocs<span class="o">]</span>/<span class="w">                       </span><span class="p">|</span><span class="w">  </span>pdf<span class="w"> </span>output
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>htmldocs<span class="o">]</span>/<span class="w">                      </span><span class="o">||</span><span class="w"> </span>html<span class="w"> </span>output
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>latexdocs<span class="o">]</span>/<span class="w">                     </span><span class="o">||</span><span class="w"> </span>latex<span class="w"> </span>output
+<span class="w">    </span>└──<span class="w"> </span><span class="o">[</span>textdocs<span class="o">]</span>/<span class="w">                      </span><span class="o">||</span><span class="w"> </span>text<span class="w"> </span>output
+</pre></div>
+</div>
+<p><strong>Top-Level Report Folders</strong> (see :ref: <cite>report-describe</cite>)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt-<span class="o">]</span>Report-Label/<span class="w">                </span>Report<span class="w"> </span>Folder<span class="w"> </span>Name
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename1.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv102-<span class="o">]</span>filename2.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv201-<span class="o">]</span>filename3.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv202-<span class="o">]</span>filename4.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
-
 <span class="w">    </span>...
-
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>Public<span class="o">]</span>/<span class="w">                   </span><span class="o">||</span><span class="w"> </span>public<span class="w"> </span>rivt<span class="w"> </span>files
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>Publish<span class="o">]</span>/<span class="w">                  </span><span class="o">||</span><span class="w"> </span>doc<span class="w"> </span>and<span class="w"> </span>report<span class="w"> </span>files
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>Src<span class="o">]</span>/<span class="w">                      </span><span class="p">|</span><span class="w">  </span><span class="nb">source</span><span class="w"> </span>files<span class="w"> </span>provided<span class="w"> </span>by<span class="w"> </span>authors
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>Stored<span class="o">]</span>/<span class="w">                   </span><span class="o">||</span><span class="w"> </span>stored<span class="w"> </span>files<span class="w"> </span>written<span class="w"> </span>by<span class="w"> </span>rivtlib
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>.vscode<span class="o">]</span>/<span class="w">                       </span><span class="p">|</span><span class="w">  </span>optional<span class="w"> </span>VSCode<span class="w"> </span>settings
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>Files<span class="o">]</span>/<span class="w">                    </span><span class="p">|</span><span class="w">  </span>files<span class="w"> </span>provided<span class="w"> </span>by<span class="w"> </span>authors
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>publish<span class="o">]</span>/<span class="w">                  </span><span class="o">||</span><span class="w"> </span>doc<span class="w"> </span>and<span class="w"> </span>report<span class="w"> </span>files
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>stored<span class="o">]</span>/<span class="w">                   </span><span class="o">||</span><span class="w"> </span>stored<span class="w"> </span>files<span class="w"> </span>written<span class="w"> </span>by<span class="w"> </span>rivtlib
 <span class="w">    </span>└──<span class="w"> </span>README.txt<span class="w">                  </span><span class="o">||</span><span class="w"> </span>searchable<span class="w"> </span>text<span class="w"> </span>report
 </pre></div>
 </div>
 <p>The four primary rivt folders are:</p>
 <dl class="simple">
-<dt><em>Public</em></dt><dd><p>Stores public <em>rivt files</em> generated by <em>rvitlib</em>. File content intended for
-sharing is defined by <em>section headers</em>. Public <em>rivt files</em>
-are identified by a hyphen after  the <em>rv</em> prefix e.g. <em>rv-101-filename1</em>.</p>
+<dt><em>Files</em></dt><dd><p>Images, data, code and text provided by the author.</p>
 </dd>
-<dt><em>Publish</em></dt><dd><p>Stores <em>docs</em> and <em>reports</em> generated by <em>rvitlib</em></p>
-</dd>
-<dt><em>Src</em></dt><dd><p>Stores images, data, code and text provided by the author.</p>
+<dt><em>Publish</em></dt><dd><p>Stores <em>docs</em>, <em>reports</em> and <em>public rivt files*generated by *rvitlib</em></p>
 </dd>
 <dt><em>Stored</em></dt><dd><p>Stores files generated by <em>rvitlib</em>. Files include stored
 sections identified in headers, api log files and processing log files. Files
@@ -584,11 +593,11 @@ may be attached to a report.</p>
       </div>
     </a>
     <a class="right-next"
-       href="rvB02-singledoc.html"
+       href="rvB02-framework.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>B.1 Single Docs</strong></p>
+        <p class="prev-next-title"><strong>B.1 Framework</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

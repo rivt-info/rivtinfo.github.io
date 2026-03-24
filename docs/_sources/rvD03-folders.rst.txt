@@ -72,7 +72,6 @@ An example *report* folder structure is shown below.
 
 .. _single doc folders:
 
-
 .. code-block:: bash
 
     [rivt-]single-doc-label/                 Single doc Folder            
@@ -92,19 +91,19 @@ An example *report* folder structure is shown below.
             ├── logoname.png                 |  cover page logo
             ├── conf.py                      |  style settings
             └── rv101-filename.rst           || intermediate rst file      
-        ├── [pdfdocs]/                          pdf output
-            ├── process folders/             || pdf working files
-            └── rv101-filename.pdf           || pdf doc
-        ├── [htmldocs]/                         html output 
-            ├── process folders/             || html process folders
-            ├── site folders/                || html site folders and files                            
-            └── rv101-filename.html          || html doc
-        ├── [latexdocs]/                        latex output
+        ├── [pdfdocs]/                       || pdf output
+            ├── process folders/             
+            └── rv101-filename.pdf           
+        ├── [htmldocs]/                      || html output 
+            ├── process folders/                html process folders
+            ├── site folders/                   html site folders and files                            
+            └── rv101-filename.html             html doc
+        ├── [latexdocs]/                     || latex output
             ├── latexstyle.sty               |  pdf style file
-            ├── process files/               || latex process files                   
-            └── rv101-filename.pdf           || pdf doc from LaTeX 
+            ├── process files/                  latex process files                   
+            └── rv101-filename.pdf              pdf doc from LaTeX 
         ├── [textdocs]/                      || text output 
-            └── rv101-filename.txt           || text doc   
+            └── rv101-filename.txt              text doc   
   
 
 
@@ -127,6 +126,7 @@ An example *report* folder structure is shown below.
         ├── [rv201-]filename3.py        | rivt file
         ├── [rv202-]filename4.py        | rivt file 
         ...
+        ├── [.vscode]/                  |  optional VSCode settings   
         ├── [Files]/                    |  source and style files from author
         ├── [publish]/                  || doc and report files
         ├── [stored]/                   || rivt stored files
@@ -142,6 +142,7 @@ An example *report* folder structure is shown below.
         ├── [rv102-]filename2.py                 |  rivt file       
         ├── [rv201-]filename3.py                 |  rivt file          
         ├── [rv202-]filename4.py                 |  rivt file            
+        ├── [.vscode]/                       |  optional VSCode settings   
         ├── [Files]/                             |  files from authors               
             ├── [Rstdocs]/                       |  intermediate rst files
                 ├── _downloads/                  |  external doc files 

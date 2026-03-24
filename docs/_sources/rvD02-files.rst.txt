@@ -3,7 +3,7 @@
 ================== 
 
 
-**[1]** File Types 
+**[1t]** File Types 
 --------------------------------------------------------------------- 
 
 .. raw:: html
@@ -174,60 +174,14 @@ file* with an added hyphen between "rv" and the docnumber e.g.
     
     **folder**: */logs* 
 
+.. _report-describe:
 
-**[2]** Folders
---------------------------------------------------------------------- 
-
-.. raw:: html
-
-    <hr>
-
-The *rivt report folder* organizes *outputs*, *public rivt files*, *sources*,
-and *docs and reports*. 
-
-.. topic:: Note:
-
-    When a *rivt file* is processed, required folders are created if missing.
-
-
-**Folder Key**
-
-- Explicit names and prefixes are shown in brackets [ ]. 
-- Author files read by rivtlib are marked with a single vertical bar ( | ).  
-- Files written by rivtlib are marked with double vertical bars ( || ).
-
-**Top Level Folders**
-
-.. code-block:: bash
-
-    [rivt]-Report-Label/            Report Folder Name
-        ├── [rv101-]filename1.py        | rivt file
-        ├── [rv102-]filename2.py        | rivt file
-        ├── [rv201-]filename3.py        | rivt file
-        ├── [rv202-]filename4.py        | rivt file 
-
-        ...
-
-        ├── [out]/                      || output folder
-        ├── [public]/                   || public rivt file folder
-        ├── [publish]/                  || reports folder
-        ├── [src]/                      |  doc source folder
-        └── README.txt                  || searchable text report 
-
-The full report folder structure is :ref:`here. <report folders>`
-
-.. raw:: html
-
-    <p id="api">&lt;i&gt;</p>
-
-**[3]** Reports
+**[2t]** Reports
 ----------------------------------------------------------
 
 .. raw:: html
 
     <hr>
-
-.. _report-describe:
 
 A :term:`report` is assembled from mutliple *docs* organized by division and
 subdivsion numbers. Each *doc* is a subdivision of a *report*. A typical workflow

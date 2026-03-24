@@ -394,8 +394,8 @@
                   
   <section id="d-2-files">
 <h1><strong>D.2 Files</strong><a class="headerlink" href="#d-2-files" title="Link to this heading">#</a></h1>
-<section id="file-types">
-<h2><strong>[1]</strong> File Types<a class="headerlink" href="#file-types" title="Link to this heading">#</a></h2>
+<section id="t-file-types">
+<h2><strong>[1t]</strong> File Types<a class="headerlink" href="#t-file-types" title="Link to this heading">#</a></h2>
 <hr><p><strong>rivt file</strong></p>
 <p><em>rivt files</em> are written by the author. Each <em>rivt file</em> has a prefix that
 specifies the division label and subdivision number of the published <em>doc</em>.
@@ -520,41 +520,9 @@ file</em> with an added hyphen between “rv” and the docnumber e.g.
 </li>
 </ul>
 </section>
-<section id="folders">
-<h2><strong>[2]</strong> Folders<a class="headerlink" href="#folders" title="Link to this heading">#</a></h2>
-<hr><p>The <em>rivt report folder</em> organizes <em>outputs</em>, <em>public rivt files</em>, <em>sources</em>,
-and <em>docs and reports</em>.</p>
-<aside class="topic">
-<p class="topic-title">Note:</p>
-<p>When a <em>rivt file</em> is processed, required folders are created if missing.</p>
-</aside>
-<p><strong>Folder Key</strong></p>
-<ul class="simple">
-<li><p>Explicit names and prefixes are shown in brackets [ ].</p></li>
-<li><p>Author files read by rivtlib are marked with a single vertical bar ( | ).</p></li>
-<li><p>Files written by rivtlib are marked with double vertical bars ( || ).</p></li>
-</ul>
-<p><strong>Top Level Folders</strong></p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt<span class="o">]</span>-Report-Label/<span class="w">            </span>Report<span class="w"> </span>Folder<span class="w"> </span>Name
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename1.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv102-<span class="o">]</span>filename2.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv201-<span class="o">]</span>filename3.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv202-<span class="o">]</span>filename4.py<span class="w">        </span><span class="p">|</span><span class="w"> </span>rivt<span class="w"> </span>file
-
-<span class="w">    </span>...
-
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>out<span class="o">]</span>/<span class="w">                      </span><span class="o">||</span><span class="w"> </span>output<span class="w"> </span>folder
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>public<span class="o">]</span>/<span class="w">                   </span><span class="o">||</span><span class="w"> </span>public<span class="w"> </span>rivt<span class="w"> </span>file<span class="w"> </span>folder
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>publish<span class="o">]</span>/<span class="w">                  </span><span class="o">||</span><span class="w"> </span>reports<span class="w"> </span>folder
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>src<span class="o">]</span>/<span class="w">                      </span><span class="p">|</span><span class="w">  </span>doc<span class="w"> </span><span class="nb">source</span><span class="w"> </span>folder
-<span class="w">    </span>└──<span class="w"> </span>README.txt<span class="w">                  </span><span class="o">||</span><span class="w"> </span>searchable<span class="w"> </span>text<span class="w"> </span>report
-</pre></div>
-</div>
-<p>The full report folder structure is <a class="reference internal" href="rvD03-folders.html#report-folders"><span class="std std-ref">here.</span></a></p>
-<p id="api">&lt;i&gt;</p></section>
-<section id="reports">
-<h2><strong>[3]</strong> Reports<a class="headerlink" href="#reports" title="Link to this heading">#</a></h2>
-<hr><p id="report-describe">A <a class="reference internal" href="rvF02-terms.html#term-report"><span class="xref std std-term">report</span></a> is assembled from mutliple <em>docs</em> organized by division and
+<section id="t-reports">
+<span id="report-describe"></span><h2><strong>[2t]</strong> Reports<a class="headerlink" href="#t-reports" title="Link to this heading">#</a></h2>
+<hr><p>A <a class="reference internal" href="rvF02-terms.html#term-report"><span class="xref std std-term">report</span></a> is assembled from mutliple <em>docs</em> organized by division and
 subdivsion numbers. Each <em>doc</em> is a subdivision of a <em>report</em>. A typical workflow
 for writing <em>reports</em> is to start with a similar <em>report</em> and edit the <em>rivt
 files</em> and <em>report script</em> that produces the <em>report</em>.</p>
@@ -683,9 +651,8 @@ the <em>report</em> appearance are determined at when generating <em>docs</em>.<
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#file-types"><strong>[1]</strong> File Types</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#folders"><strong>[2]</strong> Folders</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reports"><strong>[3]</strong> Reports</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-file-types"><strong>[1t]</strong> File Types</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-reports"><strong>[2t]</strong> Reports</a></li>
 </ul>
   </nav></div>
 

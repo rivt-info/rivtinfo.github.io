@@ -250,6 +250,7 @@ are in the default path only the file name needs to be provided.
         ├── [rv102-]filename2.py                 |  rivt file       
         ├── [rv201-]filename3.py                 |  rivt file          
         ├── [rv202-]filename4.py                 |  rivt file            
+        ├── [.vscode]/                           |  optional VSCode settings           
         ├── [Files]/                             |  files from authors               
             ├── [Rstdocs]/                       |  intermediate rst files
                 ├── _downloads/                  |  external doc files 
