@@ -38,19 +38,19 @@ are in the default path only the file name needs to be provided.
 ================ =========================
    Command         Default Path
 ================ =========================
-\| SHELL |          **/Src/Shell/**
-\| TEXT |           **/Src/Data/**
-\| TABLE |          **/Src/Data/**
-\| IMAGE |          **/Src/Image/**
-\| IMAGE2 |         **/Src/Image/**
-\| VALTABLE |       **/Src/Data/**   [1]    
-\| PYTHON |         **/Src/Scripts/**
-\| MARKUP |         **/Src/Scripts/**
-\| ATTACHPDF |      **/Src/Gendoc/**  
-\| PUBLISH |        **/Src/Gendoc/**
+\| SHELL |          **/Files/Scripts/**
+\| TEXT |           **/Files/Data/**
+\| TABLE |          **/Files/Data/**
+\| IMAGE |          **/Files/Image/**
+\| IMAGE2 |         **/Files/Image/**
+\| VALTABLE |       **/Files/Data/**   [1]    
+\| PYTHON |         **/Files/Scripts/**
+\| MARKUP |         **/Files/Scripts/**
+\| ATTACHPDF |      **/Files/Attach/**  
+\| PUBLISH |        depends on file type
 ================ =========================
 
-[1]  use /stored/data/filename to read values previously defined and stored
+[1]  use /stored/data/filename to read values defined in the rivt file
 
 
 .. _Shell file:

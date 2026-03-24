@@ -729,49 +729,8 @@ Default settings in the <em>header substring</em> do not need to be specified.</
 </table>
 </div>
 <p><strong>default paths for single docs</strong></p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Command</p></th>
-<th class="head"><p>Default Path</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>| SHELL |</p></td>
-<td><p><strong>root</strong></p></td>
-</tr>
-<tr class="row-odd"><td><p>| TEXT |</p></td>
-<td><p><strong>root</strong></p></td>
-</tr>
-<tr class="row-even"><td><p>| TABLE |</p></td>
-<td><p><strong>root</strong></p></td>
-</tr>
-<tr class="row-odd"><td><p>| IMAGE |</p></td>
-<td><p><strong>root</strong></p></td>
-</tr>
-<tr class="row-even"><td><p>| IMAGE2 |</p></td>
-<td><p><strong>root</strong></p></td>
-</tr>
-<tr class="row-odd"><td><p>| VALTABLE |</p></td>
-<td><p><strong>root</strong></p></td>
-</tr>
-<tr class="row-even"><td><p>| PYTHON |</p></td>
-<td><p><strong>root</strong></p></td>
-</tr>
-<tr class="row-odd"><td><p>| MARKUP |</p></td>
-<td><p><strong>root</strong></p></td>
-</tr>
-<tr class="row-even"><td><p>| ATTACHPDF |</p></td>
-<td><p><strong>root</strong></p></td>
-</tr>
-<tr class="row-odd"><td><p>| PUBLISH |</p></td>
-<td><p><strong>root</strong></p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <p>See <a class="reference internal" href="rvD03-folders.html#report-folders"><span class="std std-ref">here</span></a> for the folder structure. If files
 are in the default path only the file name needs to be provided.</p>
-<p><strong>default paths for reports</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Command</p></th>
@@ -780,39 +739,82 @@ are in the default path only the file name needs to be provided.</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>| SHELL |</p></td>
-<td><p><strong>/Src/Shell/</strong></p></td>
+<td><p><strong>folder root</strong></p></td>
 </tr>
 <tr class="row-odd"><td><p>| TEXT |</p></td>
-<td><p><strong>/Src/Data/</strong></p></td>
+<td><p><strong>folder root</strong></p></td>
 </tr>
 <tr class="row-even"><td><p>| TABLE |</p></td>
-<td><p><strong>/Src/Data/</strong></p></td>
+<td><p><strong>folder root</strong></p></td>
 </tr>
 <tr class="row-odd"><td><p>| IMAGE |</p></td>
-<td><p><strong>/Src/Image/</strong></p></td>
+<td><p><strong>folder root</strong></p></td>
 </tr>
 <tr class="row-even"><td><p>| IMAGE2 |</p></td>
-<td><p><strong>/Src/Image/</strong></p></td>
+<td><p><strong>folder root</strong></p></td>
 </tr>
 <tr class="row-odd"><td><p>| VALTABLE |</p></td>
-<td><p><strong>/Src/Data/</strong>   [1]</p></td>
+<td><p><strong>folder root</strong></p></td>
 </tr>
 <tr class="row-even"><td><p>| PYTHON |</p></td>
-<td><p><strong>/Src/Scripts/</strong></p></td>
+<td><p><strong>folder root</strong></p></td>
 </tr>
 <tr class="row-odd"><td><p>| MARKUP |</p></td>
-<td><p><strong>/Src/Scripts/</strong></p></td>
+<td><p><strong>folder root</strong></p></td>
 </tr>
 <tr class="row-even"><td><p>| ATTACHPDF |</p></td>
-<td><p><strong>/Src/Gendocs/</strong></p></td>
+<td><p><strong>folder root</strong></p></td>
 </tr>
 <tr class="row-odd"><td><p>| PUBLISH |</p></td>
-<td><p><strong>/Src/Gendocs/</strong></p></td>
+<td><p><strong>folder root</strong></p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>[1]  use <strong>/stored/data/filename</strong> to read values previously defined and stored</p>
+<p><strong>Default command paths for report</strong></p>
+<p>See <a class="reference internal" href="rvD03-folders.html#report-folders"><span class="std std-ref">here</span></a> for the folder structure. If files
+are in the default path only the file name needs to be provided.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Default Path</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>| SHELL |</p></td>
+<td><p><strong>/Files/Scripts/</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>| TEXT |</p></td>
+<td><p><strong>/Files/Data/</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>| TABLE |</p></td>
+<td><p><strong>/Files/Data/</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>| IMAGE |</p></td>
+<td><p><strong>/Files/Image/</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>| IMAGE2 |</p></td>
+<td><p><strong>/Files/Image/</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>| VALTABLE |</p></td>
+<td><p><strong>/Files/Data/</strong>   [1]</p></td>
+</tr>
+<tr class="row-even"><td><p>| PYTHON |</p></td>
+<td><p><strong>/Files/Scripts/</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>| MARKUP |</p></td>
+<td><p><strong>/Files/Scripts/</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>| ATTACHPDF |</p></td>
+<td><p><strong>/Files/Attach/</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>| PUBLISH |</p></td>
+<td><p>depends on file type</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>[1]  use /stored/data/filename to read values defined in the rivt file</p>
 </section>
 <section id="t-folders">
 <span id="folders"></span><h2><strong>[5t]</strong> Folders<a class="headerlink" href="#t-folders" title="Link to this heading">#</a></h2>

@@ -142,43 +142,45 @@ rv.D        | **PUBLISH** | doc title | type                                :ref
 
 **default paths for single docs**
 
+See :ref:`here <report-folders>` for the folder structure. If files
+are in the default path only the file name needs to be provided.
+
 ================ =========================
    Command         Default Path
 ================ =========================
-\| SHELL |          **root**
-\| TEXT |           **root**
-\| TABLE |          **root**
-\| IMAGE |          **root**
-\| IMAGE2 |         **root**
-\| VALTABLE |       **root**
-\| PYTHON |         **root**
-\| MARKUP |         **root**
-\| ATTACHPDF |      **root**
-\| PUBLISH |        **root**
+\| SHELL |          **folder root**
+\| TEXT |           **folder root**
+\| TABLE |          **folder root**
+\| IMAGE |          **folder root**
+\| IMAGE2 |         **folder root**
+\| VALTABLE |       **folder root**
+\| PYTHON |         **folder root**
+\| MARKUP |         **folder root**
+\| ATTACHPDF |      **folder root**
+\| PUBLISH |        **folder root**
 ================ =========================
 
+**Default command paths for report**
 
 See :ref:`here <report-folders>` for the folder structure. If files
 are in the default path only the file name needs to be provided.
 
-**default paths for reports**
-
 ================ =========================
    Command         Default Path
 ================ =========================
-\| SHELL |          **/Src/Shell/**
-\| TEXT |           **/Src/Data/**
-\| TABLE |          **/Src/Data/**
-\| IMAGE |          **/Src/Image/**
-\| IMAGE2 |         **/Src/Image/**
-\| VALTABLE |       **/Src/Data/**   [1]    
-\| PYTHON |         **/Src/Scripts/**
-\| MARKUP |         **/Src/Scripts/**
-\| ATTACHPDF |      **/Src/Gendocs/**  
-\| PUBLISH |        **/Src/Gendocs/**
+\| SHELL |          **/Files/Scripts/**
+\| TEXT |           **/Files/Data/**
+\| TABLE |          **/Files/Data/**
+\| IMAGE |          **/Files/Image/**
+\| IMAGE2 |         **/Files/Image/**
+\| VALTABLE |       **/Files/Data/**   [1]    
+\| PYTHON |         **/Files/Scripts/**
+\| MARKUP |         **/Files/Scripts/**
+\| ATTACHPDF |      **/Files/Attach/**  
+\| PUBLISH |        depends on file type
 ================ =========================
 
-[1]  use **/stored/data/filename** to read values previously defined and stored
+[1]  use /stored/data/filename to read values defined in the rivt file
 
 
 .. _Folders:
