@@ -210,7 +210,9 @@ spaces when a *doc* title is extracted.
         ├── [latexdocs]/                     || latex output
         └── [textdocs]/                      || text output 
 
-**Top-Level Report Folders** (see :ref:`report-describe`)
+**Top-Level Report Folders** (see :ref:`report-describe`). 
+
+The complete folder structure is shown :ref:`here <report-folders>`.
 
 .. code-block:: bash
 
@@ -240,7 +242,7 @@ The three primary rivt folders are:
     logs, value files and results from scripts. Stored files may be 
     referenced in multiple docs.
 
-The complete folder structure is shown :ref:`here <report-folders>`.
+
 
 .. toctree::
     :maxdepth: 1
