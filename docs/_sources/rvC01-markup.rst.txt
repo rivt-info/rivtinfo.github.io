@@ -10,8 +10,9 @@
 
     <hr>
 
-*rivt* has seven API functions. The name *rivt* is an acronym taken from the four
-functions that process content.
+*rivt* has seven API functions. The name *rivt* is an acronym taken from the
+four functions that process content. The remaining three functions are used for
+document generation and debugging.
 
 .. raw:: html
 
@@ -27,7 +28,7 @@ functions that process content.
         <li><b>[T]ools</b> runs reStructuredText, HTML, LaTeX and Python scripts.</li>
     </ol>
 
-    The remaining three functions are used for document generation and debugging.
+    <br>
 
     <b>Publish APIs</b>
     <ol style="border: 2px; 
