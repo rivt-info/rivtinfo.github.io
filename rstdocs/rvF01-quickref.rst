@@ -344,7 +344,7 @@ are in the default path only the file name needs to be provided.
 
     <hr>
 
-The minimum Python version is *3.13*. A *rivt* project installation 
+The minimum Python version is *3.14*. A *rivt* project installation 
 includes Python packages for:
 
 - document formatting

@@ -72,12 +72,12 @@ individually as cells by using the standard notebook hash notation:
     <hr>
 
 Each :doc:`API function <rvA01-start>` takes a triple quoted :term:`rivt string` 
-argument composed of a single line :term:`header substring` followed 
-by a multiple line :term:`content substring`.
+argument composed of a line :term:`header substring` line followed 
+by a multiple-line :term:`content substring`.
 
-The *header substring* defines section processing parameters. The 
-*content substring* includes :term:`rivt markup`and is indented 
-four spaces for improved readability and navigation (e.g. section folding)
+The *header substring* defines section processing parameters.
+The *content substring* includes :term:`rivt markup` and is indented 
+four spaces for improved readability and navigation (e.g. section folding).
 
 .. _Header substring:
 

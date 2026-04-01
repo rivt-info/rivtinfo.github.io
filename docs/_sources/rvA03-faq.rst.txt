@@ -59,11 +59,8 @@
     **Git** - The Git software is released under the GNU General
     Public License Version 2.0 (GPLv2).
 
-|
 
-
-
-**[3t]** *rivt* releases
+**[3t]** *rivt* design and development
 -------------------------------------------------------------
 .. raw:: html
 
@@ -78,3 +75,21 @@
     X.0.0. major releases will have backward compatiblity. See
     `past releases <https://github.com/rivtlib-dev/rivtlib/releases>`_ and
     `changelog <https://github.com/rivtlib-dev/rivtlib/blob/main/CHANGELOG.md>`_ .
+
+
+.. dropdown:: What are the programs and libraries used to build *rivt*?
+
+    The *rivt project* uses dozens of Python libraries 
+    (see :ref:`Project requirements`):
+
+    - numpy, sympy and related scientific computing libraries
+    - docutils and related text processing libraries
+    - Reportlab, rst2pdf and related PDF generation libraries
+    - Sphinx, Pydata and related HTML libraries
+
+    The *rivt framework* uses the following open source and free programs:
+
+    - `VSCode <https://code.visualstudio.com/>`__ for editing
+    - `LaTeX <https://www.latex-project.org/>`__ for PDF generation
+    - `QCAD <https://qcad.org/en/>`__ for diagramming
+    - `Git <https://git-scm.com/>`__ for document sharing and version control
