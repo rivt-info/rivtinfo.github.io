@@ -26,7 +26,7 @@ been restricted by the design and terms of use of existing software, including:
 
 The table below summarizes and compares limitations between different software
 programs. *rivt* is designed to address these limitations and function as a
-replacement or complement to existing software.
+complement or replacement to existing software.
 
 .. rst-class:: center
 
