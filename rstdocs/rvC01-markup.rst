@@ -53,9 +53,9 @@ API Function         Name             Purpose
 **rv.X** (rS)         Exit           Exit rivt (debugging)
 =============== =============== ===========================================
 
-If interactive IDEs like *VSCode* or *Spyder* are used to edit and run *rivt
-files*, each API function can be processed as a cell (similar to 
-*Jupyter Notebooks*) by using the standard prefix notation:
+API functions define doc sections. If interactive IDEs like *VSCode* or
+*Spyder* are used to edit and run *rivt files*, functions can be processed
+individually as cells by using the standard notebook hash notation:
 
 .. code-block:: python
 
@@ -72,13 +72,12 @@ files*, each API function can be processed as a cell (similar to
     <hr>
 
 Each :doc:`API function <rvA01-start>` takes a triple quoted :term:`rivt string` 
-argument composed of two parts - a :term:`header substring` followed 
-by a :term:`content substring`.
+argument composed of a single line :term:`header substring` followed 
+by a multiple line :term:`content substring`.
 
-The first line of the *rivt string* is a *header substring* that defines
-section processing. It is followed by a *content
-substring* that includes :term:`rivt markup`. The *content substring* is 
-indented four spaces for improved readability and section folding.
+The *header substring* defines section processing parameters. The 
+*content substring* includes :term:`rivt markup`and is indented 
+four spaces for improved readability and navigation (e.g. section folding)
 
 .. _Header substring:
 
@@ -88,9 +87,9 @@ indented four spaces for improved readability and section folding.
 
     <hr>
 
-The :term:`header substring` starts with a *section label* followed by vertical
-bar that deliniates three comma separated *section parameters* that can
-override default behavior. The *section label* is the section title. 
+The :term:`header substring` starts with a *section label* that is used as the
+section title, followed by a vertical bar and three comma separated
+*section parameters* that override default behavior.
 
 .. code-block:: python
 
@@ -106,7 +105,7 @@ The parameters include the following, in any order:
 
 *private/public* 
     Determines whether the API section text is copied to the
-    the */public* folder *rivt file* for sharing. 
+    the *Public* folder *rivt file* for sharing. 
 
 *doc/stored*
     Determines whether the *rivt string* is formatted and printed in the doc, 

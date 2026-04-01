@@ -80,6 +80,7 @@ rv.V, I                   **text _[E]**                          :ref:`Number eq
 rv.V, I                  **title _[T]**                          :ref:`Number table`
 rv.V, I                **caption _[F]**                          :ref:`Number figure`
 rv.V, I                        **_[P]**                          :ref:`New page`
+rv.V, I                        **##** text                       nonprinting comment
 ========== ==================================================== ===============================
 
 .. _Block Tags:

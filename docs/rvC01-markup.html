@@ -461,9 +461,9 @@ document generation and debugging.</p>
 </tbody>
 </table>
 </div>
-<p>If interactive IDEs like <em>VSCode</em> or <em>Spyder</em> are used to edit and run <em>rivt
-files</em>, each API function can be processed as a cell (similar to
-<em>Jupyter Notebooks</em>) by using the standard prefix notation:</p>
+<p>API functions define doc sections. If interactive IDEs like <em>VSCode</em> or
+<em>Spyder</em> are used to edit and run <em>rivt files</em>, functions can be processed
+individually as cells by using the standard notebook hash notation:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %% optional label</span>
 <span class="n">rv</span><span class="o">.</span><span class="n">API_FUNCTION</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;rivt string&quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
@@ -472,16 +472,15 @@ files</em>, each API function can be processed as a cell (similar to
 <section id="t-rivt-string">
 <span id="rivt-string"></span><h2><strong>[2t]</strong> rivt string<a class="headerlink" href="#t-rivt-string" title="Link to this heading">#</a></h2>
 <hr><p>Each <a class="reference internal" href="rvA01-start.html"><span class="doc">API function</span></a> takes a triple quoted <a class="reference internal" href="rvF02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a>
-argument composed of two parts - a <a class="reference internal" href="rvF02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a> followed
-by a <a class="reference internal" href="rvF02-terms.html#term-content-substring"><span class="xref std std-term">content substring</span></a>.</p>
-<p>The first line of the <em>rivt string</em> is a <em>header substring</em> that defines
-section processing. It is followed by a <em>content
-substring</em> that includes <a class="reference internal" href="rvF02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a>. The <em>content substring</em> is
-indented four spaces for improved readability and section folding.</p>
+argument composed of a single line <a class="reference internal" href="rvF02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a> followed
+by a multiple line <a class="reference internal" href="rvF02-terms.html#term-content-substring"><span class="xref std std-term">content substring</span></a>.</p>
+<p>The <em>header substring</em> defines section processing parameters. The
+<em>content substring</em> includes :term:<a href="#id1"><span class="problematic" id="id2">`</span></a>rivt markup`and is indented
+four spaces for improved readability and navigation (e.g. section folding)</p>
 <p id="header-substring"><strong>Header substring</strong></p>
-<hr><p>The <a class="reference internal" href="rvF02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a> starts with a <em>section label</em> followed by vertical
-bar that deliniates three comma separated <em>section parameters</em> that can
-override default behavior. The <em>section label</em> is the section title.</p>
+<hr><p>The <a class="reference internal" href="rvF02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a> starts with a <em>section label</em> that is used as the
+section title, followed by a vertical bar and three comma separated
+<em>section parameters</em> that override default behavior.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | doc;stored, private;public, section;merge</span>
 
 <span class="s2">     Content substring indented 4 spaces</span>
@@ -494,7 +493,7 @@ override default behavior. The <em>section label</em> is the section title.</p>
 <p>The parameters include the following, in any order:</p>
 <dl class="simple">
 <dt><em>private/public</em></dt><dd><p>Determines whether the API section text is copied to the
-the <em>/public</em> folder <em>rivt file</em> for sharing.</p>
+the <em>Public</em> folder <em>rivt file</em> for sharing.</p>
 </dd>
 <dt><em>doc/stored</em></dt><dd><p>Determines whether the <em>rivt string</em> is formatted and printed in the doc,
 or just annotated in the doc and written to a file in the <em>Stored</em> folder
