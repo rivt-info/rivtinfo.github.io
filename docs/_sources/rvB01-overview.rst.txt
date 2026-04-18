@@ -10,21 +10,21 @@
 
 *rivt* is an open source Python project that imports 
 the `rivtlib Python package <https://pypi.org/project/rivtlib/>`__
-and dependencies (:ref:`Project requirements`). The lightweight 
-`Pyzo <https://pyzo.org/>`__  IDE is also installed for editing and 
-publishing *rivt file* examples. The `VSCode IDE <https://code.visualstudio.com/>`__ 
-is a more full featured IDE that is part of the *rivt framework* and 
-installed separately.
+and dependencies (:ref:`Project requirements`). 
 
 A :term:`rivt file` publishes a formatted :term:`rivt doc` as a text, PDF or
 HTML file. A *rivt file* is a Python file (.py) that imports the
 :term:`rivtlib` Python package and includes :term:`rivt markup`. A collection
 of *rivt docs* may be collated as a :term:`rivt report`.
 
-*rivt file* examples are provided 
-`here <https://drive.google.com/drive/folders/1jsYQizu7RbTHks1WbtbM_oR8z0IRIzub?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto>`__.
+*rivt files* are generally edited and run in an IDE. The lightweight `Pyzo
+<https://pyzo.org/>`__ IDE is installed with rivtlib. The `VSCode IDE
+<https://code.visualstudio.com/>`__ is a full featured IDE that is part of
+the :ref:`rivt framework<framework>` and included with *rivt-portable*. 
+
+*rivt file* examples are provided `here <https://openmodels.info>`__.
 An interface for searching *public rivt files* on *GitHub* is :doc:`here <rvE03-ghsearch>`. 
-A *public rivt file* is all or parts of a *rivt file* the author chooses to 
+A *public rivt file* is are the parts of a *rivt file* the author chooses to 
 share under an `Open Source license <https://opensource.org/licenses>`__. 
 *rivt* itself is distributed under the `MIT open source license <https://opensource.org/license/mit>`__. 
 (see :ref:`Licenses`). 
