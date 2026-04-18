@@ -259,17 +259,14 @@ are in the default path only the file name needs to be provided.
             ├── coverpage.rst                cover page template
             ├── logoname.png                 cover page logo
             └── conf.py                      style paths and settings              
-        ├── [Src]                            source files from author               
+                ├── [Src]                            source files from author               
             ├── data/                        author created subfolder
-                ├── data1.csv   
+                ├── data1.csv 
+                ├── opensees1.txt   
                 └── conc-vals.csv  
             ├── image/                       author created subfolder                          
                 ├── fig1.png
-                └── fig2.jpg
-            ├── output/                      author created subfolder
-                ├── table1.csv                                               
-                ├── image1.png                            
-                └── opensees1.txt    
+                └── fig2.jpg   
             ├── [Run]/                       OS commands
                     ├── run1_win.cmd                               
                     └── run1_linux.sh            
@@ -278,7 +275,7 @@ are in the default path only the file name needs to be provided.
                     └── loads.py
             └── [Vals]/                      value files
                 ├── steel-vals.csv     
-                └── plastic-vals.csv   
+                └── plastic-vals.csv  
         └── README.txt                       searchable text report 
 
 

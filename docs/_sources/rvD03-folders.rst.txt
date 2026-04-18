@@ -172,15 +172,12 @@ An example *report* folder structure is shown below.
             └── conf.py                      style paths and settings              
         ├── [Src]                            source files from author               
             ├── data/                        author created subfolder
-                ├── data1.csv   
+                ├── data1.csv 
+                ├── opensees1.txt   
                 └── conc-vals.csv  
             ├── image/                       author created subfolder                          
                 ├── fig1.png
-                └── fig2.jpg
-            ├── output/                      author created subfolder
-                ├── table1.csv                                               
-                ├── image1.png                            
-                └── opensees1.txt    
+                └── fig2.jpg   
             ├── [Run]/                       OS commands
                     ├── run1_win.cmd                               
                     └── run1_linux.sh            
