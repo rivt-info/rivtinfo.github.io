@@ -205,16 +205,15 @@ the folder structure is :doc:`here <rvD03-folders>`.
 
 The *rivt framework* includes the separate programs that provide editing tools,
 version control, additional formatting and diagramming.
-
------------------------ ----------------------------------------------------------------------------
+======================= ==========================================================================
 Purpose                  Link
------------------------ ----------------------------------------------------------------------------
+======================= ==========================================================================
 Editing                   `VSCode <https://code.visualstudio.com/>`_  
 Editing Extensions         :ref:`VSCode settings`
 Version Control           `Git <https://git-scm.com>`_
 Added Formatting          `LaTeX <https://www.tug.org/texlive/>`_
 2D Diagramming            `QCAD <https://qcad.org/en/85-new-community-edition-open-source>`_
 3D Diagramming            `FreeCad <https://www.freecad.org/>`_
------------------------ ----------------------------------------------------------------------------
+======================= ==========================================================================
 
 
