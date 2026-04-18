@@ -8,13 +8,11 @@
 
    <hr> 
 
-An overiew of *rivt* can be found :doc:`here <rvB01-overview>`. This section
-reviews how to get started in writing *rivt files* and publishing *rivt docs*
-
+An overview of *rivt* can be found :doc:`here <rvB01-overview>`. This section
+reviews how to get started in writing *rivt files* and publishing *rivt docs*.
 *rivt file* examples can be run in the cloud or on a local computer. In both 
 cases editing and publishing is typically carried out in an :term:`IDE`. 
-The :term:`rivt framework` includes `VSCode <https://code.visualstudio.com/>`__, 
-but any IDE may be used. A typical IDE layout can be viewed at 
+A typical IDE layout can be viewed at 
 `Codesandbox <https://codesandbox.io/p/devbox/rivt1-dkmqfm?file=%2Frv001-single-doc.txt>`__.
 The sandbox allows scrolling through an example rivt file (left panel) and
 text doc (right panel). Files may be downloaded from the file explorer 

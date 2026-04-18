@@ -193,145 +193,93 @@ are in the default path only the file name needs to be provided.
 
     <hr>
 
-**Single doc folders**
 
 .. code-block:: bash
 
-    [rivt-]single-doc-label/                 Single doc Folder            
-        ├── [rv101-]filename.py              |  rivt input file
-        ├── multiple source files            |  data, image and function files
-        ├── addunits.py                      |  define new units
-        ├── rv-101-log.txt                   || log file                          
-        ├── rv-101-docname.py                || public rivt file
-        ├── README.txt                       || searchable text doc 
-        ├── [.vscode]/                       |  optional VSCode settings            
-        ├── [Rstdocs]/                       |  rst style input
-            ├── _downloads/                  |  external doc files 
-            ├── _static/                     |  style files
-            ├── _locale/                     |  style files
-            ├── _templates/                  |  style files   
-            ├── coverpage.rst                |  pdf cover page template
-            ├── logoname.png                 |  cover page logo
-            ├── conf.py                      |  style settings
-            └── rv101-filename.rst           || intermediate rst file      
-        ├── [pdfdocs]/                       || pdf output
-            ├── process folders/                pdf working files
-            └── rv101-filename.pdf              pdf doc
-        ├── [htmldocs]/                      || html output 
-            ├── process folders/                html process folders
-            ├── site folders/                   html site folders and files                            
-            └── rv101-filename.html             html doc
-        ├── [latexdocs]/                     || latex output
-            ├── latexstyle.sty               |  latex pdf style file
-            ├── process files/                  latex process files                   
-            └── rv101-filename.pdf              pdf doc from LaTeX 
-        ├── [textdocs]/                      || text output 
-            └── rv101-filename.txt              text doc   
-
-**Reports - Top Level Folders**
-
-.. code-block:: bash
-
-    [rivt-]Report-Label/                Report Folder
-        ├── [rv101-]filename1.py        | rivt file
-        ├── [rv102-]filename2.py        | rivt file
-        ├── [rv201-]filename3.py        | rivt file
-        ├── [rv202-]filename4.py        | rivt file 
-        ...
-        ├── [Files]/                    |  source and style files from author
-        ├── [publish]/                  || doc and report files
-        ├── [stored]/                   || rivt stored files
-        └── README.txt                  || searchable text report 
-
-
-**Reports - Expanded Folders**
-
-.. code-block:: bash
-
-    [rivt-]Report-Label/                         Report Folder Name                
-        ├── [rv101-]filename1.py                 |  rivt file
-        ├── [rv102-]filename2.py                 |  rivt file       
-        ├── [rv201-]filename3.py                 |  rivt file          
-        ├── [rv202-]filename4.py                 |  rivt file            
-        ├── [.vscode]/                           |  optional VSCode settings           
-        ├── [Files]/                             |  files from authors               
-            ├── [Rstdocs]/                       |  intermediate rst files
-                ├── _downloads/                  |  external doc files 
-                ├── _static/                     |  style files
-                ├── _locale/                     |  style files
-                ├── _templates/                  |  style files 
-                ├── rv101-filename1.rst          || intermediate rst file 
-                ├── rv102-filename2.rst                          
-                ├── rv201-filename3.rst          
-                ├── rv202-filename4.rst          
-                ├── coverpage.rst                |  pdf cover page template
-                ├── logoname.png                 |  cover page logo
-                └── conf.py                      |  style paths and settings              
-            ├── [Data]/                          |  data files
-                ├── data1.csv  
-                └── conc-vals.csv                        
-            ├── [Image]/                         | image files                                             
-                ├── fig1.png
-                └── fig2.jpg
-            ├── [Scripts]/                       | script and shell files     
-                ├── shell1.cmd   
-                ├── shell1.csv  
-                ├── plot.py                               
-                ├── addunits.py                                    
-                └── opensees1.cmd   
-            └── [Attach]/                        | pdf attachments
-                ├── attach1.pdf
-                └── attach2.pdf 
-        ├── [publish]/                           || published docs and reports
-            ├── [htmldocs]/                      || html output 
-                ├── process folders/                html process folders
-                ├── site folders/                   html site folders and files                            
+   [rivt-]Report-Label/                  Report Folder Name
+        ├── [.vscode]/                       optional VSCode settings                    
+        ├── [rv101-]filename1.py             rivt file
+        ├── [rv102-]filename2.py             rivt file       
+        ├── [rv201-]filename3.py             rivt file          
+        ├── [rv202-]filename4.py             rivt file                        
+        ├── [_public]/                       public rivt files                      
+            ├── rv_101-filename1.py              
+            ├── rv_102-filename1.py              
+            ├── rv_201-filename3.py  
+            └── rv_202-filename4.py    
+        ├── [_publish]/                      published docs and reports
+            ├── [docs]/                      html output 
+                ├── _images/                
+                ├── _sources/              
+                ├── _static/    
+                ├── process folders/         
+                ├── site folders/                                        
                 ├── rv101-filename1.html      
                 ├── rv102-filename2.html                      
                 ├── rv201-filename3.html                        
                 ├── rv202-filename4.html         
-            ├── [latexdocs]/                     || latex output
-                ├── process folders/             || latex process folders
-                ├── latexstyle.sty               |  pdf style file
-                ├── rv101-filename.rst           || intermediate rst file
-                ├── rv101-filename1.rst          
-                ├── rv102-filename2.rst          
-                ├── rv201-filename3.rst          
-                ├── rv202-filename4.rst          
-                ├── rv-101-filename1.pdf         || latex pdf doc output    
-                ├── rv-102-filename1.pdf             
-                ├── rv-201-filename3.pdf 
-                └── rv-202-filename4.pdf 
-            ├── [pdfdocs]/                       || pdf doc output
-                ├── process folders/                pdf working files
+            ├── [pdfdocs]/                   pdf doc output
+                ├── process folders/             
                 ├── rv-101-filename1.pdf             
                 ├── rv-102-filename1.pdf             
                 ├── rv-201-filename3.pdf 
                 └── rv-202-filename4.pdf  
-            ├── [publicfiles]/                   || public rivt files                      
-                ├── rv-101-filename1.py              
-                ├── rv-102-filename1.py              
-                ├── rv-201-filename3.py  
-                └── rv-202-filename4.py    
-            └── [textdocs]/                      || text output 
+            └── [txtdocs]/                   text output 
                 ├── rv-101-filename1.txt              
                 ├── rv-102-filename1.txt             
                 ├── rv-201-filename3.txt 
                 └── rv-202-filename4.txt        
-        ├── [stored]/                            || stored files from processing
-            ├── [logs]/                          ||log files
+        ├── [_stored]/                       stored files from rivt            
+            ├── [Logs]/                      log files
                 ├── rv101-log.txt
                 └── rv102-log.txt
-            ├── [sect]/                          || excluded sections                  
+            ├── [Sect]/                      stored sections                    
                 ├── rv202-5d.txt   
                 ├── rv103-4t.txt                         
                 └── rv301-2r.txt               
-            └── [data]/                          || rivt generated data
-                ├── table1.csv                      stored script output                                  
-                ├── image1.png                      stored images
-                └── v102-3.csv                      rivt value table output
-        └── README.txt                           || searchable text report 
-
+            ├── [Temp]/                      temp files
+                └── rv101-label3.tex
+            └── [Vals]/                      stored value files
+                ├── v101-2.csv
+                └── v102-3.csv     
+        ├── [Rst_docs]/                      restructured text files
+            ├── _downloads/                    
+            ├── _static/                       
+            ├── _locale/                       
+            ├── _templates/                    
+            ├── rv101-filename1.rst            
+            ├── rv102-filename2.rst                          
+            ├── rv201-filename3.rst          
+            ├── rv202-filename4.rst
+            ├── gen-html.cmd                 html generating script
+            ├── gen-pdf.cmd                  pdf generating script
+            ├── gen-pdftex.cmd               LaTeX generating script
+            ├── rivt-report.py               report generating script
+            ├── new-units.py                 define new units          
+            ├── coverpage.rst                cover page template
+            ├── logoname.png                 cover page logo
+            └── conf.py                      style paths and settings              
+        ├── [Src]                            source files from author               
+            ├── data/                        author created subfolder
+                ├── data1.csv   
+                └── conc-vals.csv  
+            ├── image/                       author created subfolder                          
+                ├── fig1.png
+                └── fig2.jpg
+            ├── output/                      author created subfolder
+                ├── table1.csv                                               
+                ├── image1.png                            
+                └── opensees1.txt    
+            ├── [Run]/                       OS commands
+                    ├── run1_win.cmd                               
+                    └── run1_linux.sh            
+            ├── [Tools]/                     scripts and functions
+                    ├── plot.py                               
+                    └── loads.py
+            └── [Vals]/                      value files
+                ├── steel-vals.csv     
+                └── plastic-vals.csv   
+        └── README.txt                       searchable text report 
 
 
 

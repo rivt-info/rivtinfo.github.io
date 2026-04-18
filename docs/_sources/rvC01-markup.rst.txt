@@ -275,21 +275,24 @@ using the following format:
     <p style="border-width:2px; border-style:solid; 
     border-color:#49b2c3;padding: 1em;">
 
+    <b> Folder Names</b> <br> 
     <br>
-    Folder Names<br>
-    <br>
-    A rivt report folder can contain any files and folders but the following
-    structure is required for doc processing. Files and folders are organized
-    under a root folder with the prefix *rivt-* e.g. *rivt-Report-Label*. The
-    root folder includes the *rivt files* and five subfolders.<br>
-    <br>
+    A rivt report folder can contain any files and
+    folders, but the following structure is required for doc processing. Files
+    and folders are organized under a root folder with the prefix <i>rivt-</i>
+    e.g. <i>rivt-Report-Label</i>. The root folder includes the <i>rivt
+    files</i> and five subfolders.<br> 
+    <br> 
+
     Required folders are capitalized or preceded by an underscore. Folders
-    preceded by an underscore are rivt outputs. Folder names that include both 
-    output and author input include an undescore.<br>
+    preceded by an underscore are rivt outputs. Folder names that include both
+    output and author input begin with a capital letter and also include an
+    underscore.<br>
 
 For :term:`single docs` the folder structure is the same as a *report* folder
-but without the *Src* and *_stored* folders. The files nomrally stored there
-are stored in the root folder. The *report script* is not used for single docs.
+but simplified by omitting the *Src* and *_stored* folders. The files normally
+stored there are stored in the root folder. The *report script* is not used for
+single docs.
 
 The top level folder structure is shown below. A more detailed description of
 the folder structure is :doc:`here <rvD03-folders>`.
