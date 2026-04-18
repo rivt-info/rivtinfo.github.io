@@ -15,8 +15,8 @@ number has the form
 
     rvAnn-filename.py
 
-where rv is a required prefix, A is an alphanumeric character and nn are two
-digit non-negative integers. 
+where rv is a required prefix, A is an alphanumeric character and nn are
+non-negative integers.
 
 A *rivt report* is organized using the rivt *doc numbers*. If the *rivt file*
 names are:
@@ -37,7 +37,7 @@ Note that leading zeroes are dropped.  *Docs* are sorted alpha-numerically into
 divisions and subdivisions in the *report*.
 
 
-**[2t]** Docs
+**[2t]** Docs and Reports
 -----------------------------
 
 .. raw:: html
@@ -47,19 +47,11 @@ divisions and subdivisions in the *report*.
 Each :term:`rivt file` outputs a corresponding formatted :term:`doc` written to
 the *publish* folder unless it is a :term:`single doc`. 
 
-*Docs* may be text, HTML or PDF. PDF *doc* files are produced using using the
-*rst2pdf* and *Sphinx* libraries. HTML *doc* files are produced using the
-*Sphinx* library. 
+*Docs* may be text, HTML or PDF. PDF and HTML *doc* files are produced using
+using the *rst2pdf* and *Sphinx* Python libraries. The *report folder*
+structure for *docs* is described in :ref:`report-folders`. Reports are
+assembled from by the *rivt-report.py* script in the *Rst_Docs* folder.
 
-If *LaTeX* is installed it may be used to produce PDF *docs*. A *latex doc*
-may require the separate installation of the *texlive* LaTeX library
-(approx. 3GB). Its advantage is additional control over *doc* formatting and
-appearance.
-
-
-The *report folder* structure for *docs* is described in :ref:`report-folders`. 
-
-.. _single-doc:
 
 **[3t]** Single docs
 ----------------------------------------------------------
@@ -68,11 +60,9 @@ The *report folder* structure for *docs* is described in :ref:`report-folders`.
 
     <hr>
 
-A document that will not be part of a :ref:`report <report-describe>` may use
-the local rivt file folder for reading and writing files, without referencing
-the *rivt report folders*. A single *doc* is formatted by setting the
-*rv_local* variable in a comment, immediately following the *rivtlib* import
-statement. 
+A single doc that will not be part of a report may use a simplified folder
+structure. A single *doc* is formatted by setting the comment variable,
+immediately following the *rivtlib* import statement.
   
 .. code:: python
 
@@ -80,10 +70,10 @@ statement.
 
     # rv singledoc=True
 
-The text, PDF or HTML *doc* will be written to the local file folder. *Single
-docs* require less setup for *docs* that are not part of a larger report.
-
-The folder structure for *single docs* is described in :ref:`single-doc-folders`. 
+The folder structure for *single docs* is simmilar to the structure for
+*report* folders described in :ref:`report-folders` but without the *Src* and
+*_stored* folders. Files in those folders are stored or written in the root
+folder.
 
 .. toctree::
     :maxdepth: 1

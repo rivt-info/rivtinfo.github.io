@@ -226,9 +226,9 @@ processing HTML, LaTeX and reStructuredText scripts.
     first column with a vertical bar ( | ) followed by the command name, file
     path, and parameters.
 
-    The exceptions are, the definition (**=:**), the assignment (**<=:**) and
-    the compare (**<>**) commands, which are used to define, assign and compare
-    values.
+    The exceptions are the definition (**==:**), assignment (**<=:**), 
+    function (**:=:**) and compare (**<>**) commands that are used to 
+    define, assign and compare values.
 
     .. code-block:: bash  
         
@@ -272,154 +272,43 @@ using the following format:
 
     <hr>
 
-Folders provide standard file locations that simplify *doc* and *report*
-generation.
-
-.. raw:: html
-
     <p style="border-width:2px; border-style:solid; 
     border-color:#49b2c3;padding: 1em;">
 
-    <b>Folder Key</b><br>
+    <br>
+    Folder Names<br>
+    <br>
+    A rivt report folder can contain any files and folders but the following
+    structure is required for doc processing. Files and folders are organized
+    under a root folder with the prefix *rivt-* e.g. *rivt-Report-Label*. The
+    root folder includes the *rivt files* and five subfolders.<br>
+    <br>
+    Required folders are capitalized or preceded by an underscore. Folders
+    preceded by an underscore are rivt outputs. Folder names that include both 
+    output and author input include an undescore.<br>
 
-    - Required names or prefixes are shown in brackets [ ]. <br>
-    - Folders (including subfolders) that contain author generated files 
-    are marked with a single vertical bar ( | ).<br>  
-    - Folders (including subfolders) that contain *rivtlib* generated files are 
-    marked with double vertical bars ( || ).</p>
+For :term:`single docs` the folder structure is the same as a *report* folder
+but without the *Src* and *_stored* folders. The files nomrally stored there
+are stored in the root folder. The *report script* is not used for single docs.
 
-
-**Folders**
+The top level folder structure is shown below. A more detailed description of
+the folder structure is :doc:`here <rvD03-folders>`.
 
 .. code-block:: bash
 
-    [rivt]-Report-Label/                Report Folder Name
-        ├── [rv101-]filename1.py        | rivt file
-        ├── [rv102-]filename2.py        | rivt file
-        ├── [rv201-]filename3.py        | rivt file
-        ├── [rv202-]filename4.py        | rivt file 
-
+    [rivt-]Report-Label/                Report Folder
+        ├── [rv101-]filename1.py        rivt file
+        ├── [rv102-]filename2.py        rivt file
+        ├── [rv201-]filename3.py        rivt file
+        ├── [rv202-]filename4.py        rivt file 
         ...
-
-        ├── [public]/                   || public rivt files 
-        ├── [publish]/                  || doc and report files
-        ├── [src]/                      |  source files from author
-        ├── [stored]/                   || rivt stored files
-        └── README.txt                  || searchable text report 
-
-**Expanded Folders**
-
-.. code-block:: bash
-
-    [rivt]-Report-Label/                       Report Folder Name                
-        ├── [rv101-]filename1.py               | rivt input files
-        ├── [rv102-]filename2.py               
-        ├── [rv201-]filename3.py               
-        ├── [rv202-]filename4.py                 
-        ├── [public]/                          || public rivt files                      
-            ├── rv-101-filename1.py              
-            ├── rv-201-filename3.py  
-            └── rv-202-filename4.py      
-        ├── [publish]/                         || reports and docs
-            ├── [html]/                              HTML site  
-                ├── [docs]/                           
-                    ├── _images/                
-                    ├── _sources/              
-                    ├── _static/                  
-                    ├── rv101-filename1.html         
-                    ├── rv102-filename2.html                              
-                    ├── rv201-filename3.html                        
-                    ├── rv201-filename4.html   
-                    └── index.html                   HTML site entry point          
-                ├── rv101-filename1.rst              intermediate rst files 
-                ├── rv102-filename2.rst  
-                ├── rv201-filename3.rst  
-                └── rv202-filename4.rst  
-            ├── [pdf]/                               PDF from rst2pdf 
-                ├── [src]/                           intermediate rst files  
-                    ├── rv101-filename1.rst          
-                    ├── rv102-filename2.rst                           
-                    ├── rv201-filename3.rst                        
-                    └── rv202-filename4.rst              
-                ├── rv101-filename1.pdf              PDF docs from rst2pdf 
-                ├── rv102-filename2.pdf                          
-                ├── rv201-filename3.pdf                        
-                ├── rv202-filename4.pdf         
-                └── Report-Label.pdf                 PDF report from rst2pdf 
-            ├── [pdftex]/                            PDF from LaTeX  
-                ├── [src]/                           intermediate rst files   
-                    ├── rv101-filename1.rst         
-                    ├── rv102-filename2.rst                        
-                    ├── rv201-filename3.rst                        
-                    └── rv202-filename4.rst               
-                ├── rv101-filename1.pdf              PDF docs from LaTeX 
-                ├── rv102-filename2.pdf                          
-                ├── rv201-filename3.pdf                       
-                ├── rv202-filename4.pdf
-                └── Report-Label.pdf                 PDF report from LaTeX 
-            ├── [text]/                              text report
-                ├── rv101-filename1.txt              text docs
-                ├── rv102-filename2.txt       
-                ├── rv201-filename3.txt       
-                ├── rv202-filename4.txt       
-                └── README.txt                       searchable text report                     
-        ├── [src]                              | source files from author               
-            ├── data/                               author created subfolder
-                ├── data1.csv   
-                └── conc-vals.csv  
-            ├── image/                              author created subfolder                          
-                ├── fig1.png
-                └── fig2.jpg
-            ├── output/                             author created subfolder
-                ├── table1.csv                                               
-                ├── image1.png                            
-                └── opensees1.txt    
-            ├── [gendoc]/
-                ├── gen-html.cmd                     html generating script
-                ├── gen-pdf.cmd                      pdf generating script
-                ├── gen-pdftex.cmd                   LaTeX generating script
-                ├── rivt-report.py                   report generating script
-                ├── new-units.py                     define new units
-                └── [style]/                         doc style files 
-                    ├── [html]/                      html style files
-                        ├── _locale/                 
-                        ├── _static/                        
-                        ├── _templates/                     
-                        ├── conf.py                         
-                        ├── genhtml.cmd                     
-                        └── index.rst
-                    ├── [pdf]/                       rst2pdf style files
-                        ├── fonts/              
-                        ├── style/                 
-                        ├── Report-Cover.pdf           
-                        └── genrst2pdf.cmd
-                    ├── [pdftex]/                    pdftex style files
-                        ├── gentexpdf.cmd             
-                        ├── Report-cover.pdf                     
-                        └── rivt.sty              
-                    ├── [text]/                      text ini file
-                        └── rv-text.ini
-            ├── [py]/                                Python scripts and functions
-                    ├── plot.py                               
-                    └── loads.py
-            └── [vals]/                              value files
-                ├── steel-vals.csv     
-                └── plastic-vals.csv
-        ├── [stored]/                          || stored files from rivt            
-            ├── [logs]/                              log files
-                ├── rv101-api.txt   
-                ├── rv101-log.txt
-                └── rv102-log.txt
-            ├── [sect]/                              stored sections                    
-                ├── rv202-5d.txt   
-                ├── rv103-4t.txt                         
-                └── rv301-2r.txt               
-            ├── [temp]/                              temp files
-                └── rv101-label3.tex
-            └── [vals]/                              stored value files
-                ├── v101-2.csv
-                └── v102-3.csv        
-        └── README.txt                         || searchable text report 
+        ├── [.vscode]/                  optional VSCode settings   
+        ├── [_public]/                  public rivt files
+        ├── [_publish]/                 published docs and reports
+        ├── [_stored]/                  stored files
+        ├── [Rst_docs]/                 restructured text files               
+        ├── [Src]/                      source files        
+        └── README.txt                  searchable text report 
 
 
 .. toctree::

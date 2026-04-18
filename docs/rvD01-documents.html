@@ -28,8 +28,8 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=7f76b32a3354e82990f2" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=7f76b32a3354e82990f2" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
@@ -38,10 +38,10 @@
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=95fdc9c7" />
   
   <!-- So that users can add custom icons -->
-  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="_static/scripts/fontawesome.js?digest=7f76b32a3354e82990f2"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=7f76b32a3354e82990f2" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=7f76b32a3354e82990f2" />
 
     <script src="_static/jquery.js?v=5d32c60e"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
@@ -53,10 +53,11 @@
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'rvD01-documents';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="D.2 Files" href="rvD02-files.html" />
@@ -64,14 +65,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="dark">
-
+  <body data-default-mode="dark">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
@@ -103,7 +108,7 @@
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
   <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
@@ -398,8 +403,8 @@ number has the form</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rvAnn-filename.py
 </pre></div>
 </div>
-<p>where rv is a required prefix, A is an alphanumeric character and nn are two
-digit non-negative integers.</p>
+<p>where rv is a required prefix, A is an alphanumeric character and nn are
+non-negative integers.</p>
 <p>A <em>rivt report</em> is organized using the rivt <em>doc numbers</em>. If the <em>rivt file</em>
 names are:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rvA01-filename.py
@@ -416,34 +421,29 @@ rv212-filename.py
 <p>Note that leading zeroes are dropped.  <em>Docs</em> are sorted alpha-numerically into
 divisions and subdivisions in the <em>report</em>.</p>
 </section>
-<section id="t-docs">
-<h2><strong>[2t]</strong> Docs<a class="headerlink" href="#t-docs" title="Link to this heading">#</a></h2>
+<section id="t-docs-and-reports">
+<h2><strong>[2t]</strong> Docs and Reports<a class="headerlink" href="#t-docs-and-reports" title="Link to this heading">#</a></h2>
 <hr><p>Each <a class="reference internal" href="rvF02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> outputs a corresponding formatted <a class="reference internal" href="rvF02-terms.html#term-doc"><span class="xref std std-term">doc</span></a> written to
 the <em>publish</em> folder unless it is a <a class="reference internal" href="rvF02-terms.html#term-single-doc"><span class="xref std std-term">single doc</span></a>.</p>
-<p><em>Docs</em> may be text, HTML or PDF. PDF <em>doc</em> files are produced using using the
-<em>rst2pdf</em> and <em>Sphinx</em> libraries. HTML <em>doc</em> files are produced using the
-<em>Sphinx</em> library.</p>
-<p>If <em>LaTeX</em> is installed it may be used to produce PDF <em>docs</em>. A <em>latex doc</em>
-may require the separate installation of the <em>texlive</em> LaTeX library
-(approx. 3GB). Its advantage is additional control over <em>doc</em> formatting and
-appearance.</p>
-<p>The <em>report folder</em> structure for <em>docs</em> is described in <a class="reference internal" href="rvD03-folders.html#report-folders"><span class="std std-ref">[3t]  Report Folders</span></a>.</p>
+<p><em>Docs</em> may be text, HTML or PDF. PDF and HTML <em>doc</em> files are produced using
+using the <em>rst2pdf</em> and <em>Sphinx</em> Python libraries. The <em>report folder</em>
+structure for <em>docs</em> is described in <a class="reference internal" href="rvD03-folders.html#report-folders"><span class="std std-ref">[3t]  Report Folders</span></a>. Reports are
+assembled from by the <em>rivt-report.py</em> script in the <em>Rst_Docs</em> folder.</p>
 </section>
 <section id="t-single-docs">
-<span id="single-doc"></span><h2><strong>[3t]</strong> Single docs<a class="headerlink" href="#t-single-docs" title="Link to this heading">#</a></h2>
-<hr><p>A document that will not be part of a <a class="reference internal" href="rvD02-files.html#report-describe"><span class="std std-ref">report</span></a> may use
-the local rivt file folder for reading and writing files, without referencing
-the <em>rivt report folders</em>. A single <em>doc</em> is formatted by setting the
-<em>rv_local</em> variable in a comment, immediately following the <em>rivtlib</em> import
-statement.</p>
+<h2><strong>[3t]</strong> Single docs<a class="headerlink" href="#t-single-docs" title="Link to this heading">#</a></h2>
+<hr><p>A single doc that will not be part of a report may use a simplified folder
+structure. A single <em>doc</em> is formatted by setting the comment variable,
+immediately following the <em>rivtlib</em> import statement.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">rivtlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">rivtlib</span><span class="o">.</span><span class="n">rvapi</span> <span class="k">as</span> <span class="n">rv</span>
 
 <span class="c1"># rv singledoc=True</span>
 </pre></div>
 </div>
-<p>The text, PDF or HTML <em>doc</em> will be written to the local file folder. <em>Single
-docs</em> require less setup for <em>docs</em> that are not part of a larger report.</p>
-<p>The folder structure for <em>single docs</em> is described in <a class="reference internal" href="rvD03-folders.html#single-doc-folders"><span class="std std-ref">[2t]  Single Doc Folders</span></a>.</p>
+<p>The folder structure for <em>single docs</em> is simmilar to the structure for
+<em>report</em> folders described in <a class="reference internal" href="rvD03-folders.html#report-folders"><span class="std std-ref">[3t]  Report Folders</span></a> but without the <em>Src</em> and
+<em>_stored</em> folders. Files in those folders are stored or written in the root
+folder.</p>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -494,10 +494,10 @@ docs</em> require less setup for <em>docs</em> that are not part of a larger rep
     class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Sections
   </div>
-  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rivt-files"><strong>[1t]</strong> rivt Files</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-docs"><strong>[2t]</strong> Docs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-docs-and-reports"><strong>[2t]</strong> Docs and Reports</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-single-docs"><strong>[3t]</strong> Single docs</a></li>
 </ul>
   </nav></div>
@@ -515,8 +515,8 @@ docs</em> require less setup for <em>docs</em> that are not part of a larger rep
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=7f76b32a3354e82990f2"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=7f76b32a3354e82990f2"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">

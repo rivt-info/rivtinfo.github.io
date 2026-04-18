@@ -21,9 +21,10 @@ uv pip install rivtlib
 REM (4) download example project into new folder
 mkdir rivt-example01
 cd rivt-example01
-curl -L "https://drive.usercontent.google.com/download?id=1smGH1eTfG-G2otpLBlrr4rnky2dzPdfo?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto&export=download&confirm=t" -o "beam1.csv" 
-curl -L "https://drive.usercontent.google.com/download?id=1smGH1eTfG-G2otpLBlrr4rnky2dzPdfo?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto&export=download&confirm=t" -o "beam1.png" 
-curl -L "https://drive.usercontent.google.com/download?id=1smGH1eTfG-G2otpLBlrr4rnky2dzPdfo?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto&export=download&confirm=t" -o "rv001-single-doc-py" 
-curl -L "https://drive.usercontent.google.com/download?id=1smGH1eTfG-G2otpLBlrr4rnky2dzPdfo?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto&export=download&confirm=t" -o "sectprop.py" 
+curl -L "https://drive.usercontent.google.com/download?id=1XdTdRmnT9Y_vIZP7pcIrKKXgnaEbMfxY&confirm" -o "rv001-single-doc.py"
+curl -L "https://drive.usercontent.google.com/download?id=1hMJvnlO-DZPKqnacnM_JkMltCzU7tBNE&confirm" -o "sectprop.py"
+curl -L "https://drive.usercontent.google.com/download?id=1ZtzhR3jt5ce9KQEmfcTINeLLZfmCnStd&confirm" -o "beam1.png"
+curl -L "https://drive.usercontent.google.com/download?id=1kcY7VuTGO573P6GnzYOrt6UiQLkJRS3h&confirm" -o "beam1.csv"
+ 
 REM (5)run example (no quotes) "pyzo-example"
 cmd /k
