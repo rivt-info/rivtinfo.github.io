@@ -203,8 +203,10 @@ the folder structure is :doc:`here <rvD03-folders>`.
 
     <hr>
 
-The *rivt framework* includes the separate programs that provide editing tools,
+The *rivt framework* includes separate programs that provide editing tools,
 version control, additional formatting and diagramming.
+
+
 ======================= ==========================================================================
 Purpose                  Link
 ======================= ==========================================================================
