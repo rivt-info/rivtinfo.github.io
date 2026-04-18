@@ -15,9 +15,9 @@ cases editing and publishing is typically carried out in an :term:`IDE`.
 
 The three methods for installing and running *rivt* are:
 
-1. *rivt-Codespace* in the cloud described :ref:`here <Codespace>`
+1. *rivt-Codespace* in the cloud is described :ref:`here <Codespace>`
 2. *rivt-portable* installation on Windows is described :ref:`here <rivt-portable>`
-3. System installation with or without *uv* :ref:`here <rivt-sys>`
+3. System installation with or without *uv* is described :ref:`here <rivt-sys>`
 
 *rivt-portable* is recommended for Windows users unfamiliar with Python.
 *rivt-Codespace* is recommended when local installation is not practical or
@@ -136,7 +136,7 @@ more difficult to integrate with other Python programs.
 
 .. _rivt-sys:
 
-**[4t]** rivt-sys with uv
+**[4t]** System and uv
 --------------------------------
 
 .. raw:: html
@@ -146,8 +146,8 @@ more difficult to integrate with other Python programs.
 *rivt* may be installed at the system level. 
 
 #.  Install Python using `Python installers <https://www.python.org/downloads/>`__
-    if not already installed. The minimum version required by *rivt* is 
-    Python 3.13.
+    The minimum version required by *rivt* is 
+    Python 3.14.
 
 #.  Install *rivtlib* and dependencies using pip
 
@@ -181,7 +181,11 @@ Python and programming.
 
     .. code-block:: bash
         
-        winget install --id=astral-sh.uv  -e 
+        winget install --id=astral-sh.uv  -e
+
+        or
+
+        powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex 
 
     macOS and Linux:
 

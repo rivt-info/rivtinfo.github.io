@@ -401,9 +401,9 @@ reviews how to get started in writing <em>rivt files</em> and publishing <em>riv
 cases editing and publishing is typically carried out in an <a class="reference internal" href="rvF02-terms.html#term-IDE"><span class="xref std std-term">IDE</span></a>.</p>
 <p>The three methods for installing and running <em>rivt</em> are:</p>
 <ol class="arabic simple">
-<li><p><em>rivt-Codespace</em> in the cloud described <a class="reference internal" href="#codespace"><span class="std std-ref">here</span></a></p></li>
+<li><p><em>rivt-Codespace</em> in the cloud is described <a class="reference internal" href="#codespace"><span class="std std-ref">here</span></a></p></li>
 <li><p><em>rivt-portable</em> installation on Windows is described <a class="reference internal" href="#rivt-portable"><span class="std std-ref">here</span></a></p></li>
-<li><p>System installation with or without <em>uv</em> <a class="reference internal" href="#rivt-sys"><span class="std std-ref">here</span></a></p></li>
+<li><p>System installation with or without <em>uv</em> is described <a class="reference internal" href="#rivt-sys"><span class="std std-ref">here</span></a></p></li>
 </ol>
 <p><em>rivt-portable</em> is recommended for Windows users unfamiliar with Python.
 <em>rivt-Codespace</em> is recommended when local installation is not practical or
@@ -452,7 +452,7 @@ by following the steps below.  Example rivt files are included.</p>
 <p>1. Windows portable zip folder (<a class="reference internal" href="#rivt-portable"><span class="std std-ref">[3t] rivt-portable</span></a>) <em>rivt-portable</em> is
 recommended for Windows users unfamiliar with Python.</p>
 <ol class="arabic simple" start="2">
-<li><p>System Python  (<a class="reference internal" href="#rivt-sys"><span class="std std-ref">[4t] rivt-sys with uv</span></a>) with or without uv manager (<a class="reference internal" href="#rivt-uv"><span class="std std-ref">rivt-uv</span></a>)</p></li>
+<li><p>System Python  (<a class="reference internal" href="#rivt-sys"><span class="std std-ref">[4t] System and uv</span></a>) with or without uv manager (<a class="reference internal" href="#rivt-uv"><span class="std std-ref">rivt-uv</span></a>)</p></li>
 </ol>
 </aside>
 </section>
@@ -491,13 +491,13 @@ approximately 1GB and 2GB respectively:</p>
 and extensions must be updated by updating the zip file as a whole, and it is
 more difficult to integrate with other Python programs.</p>
 </section>
-<section id="t-rivt-sys-with-uv">
-<span id="rivt-sys"></span><h2><strong>[4t]</strong> rivt-sys with uv<a class="headerlink" href="#t-rivt-sys-with-uv" title="Link to this heading">#</a></h2>
+<section id="t-system-and-uv">
+<span id="rivt-sys"></span><h2><strong>[4t]</strong> System and uv<a class="headerlink" href="#t-system-and-uv" title="Link to this heading">#</a></h2>
 <hr><p><em>rivt</em> may be installed at the system level.</p>
 <ol class="arabic simple">
 <li><p>Install Python using <a class="reference external" href="https://www.python.org/downloads/" rel="noreferrer" target="_blank">Python installers</a>
-if not already installed. The minimum version required by <em>rivt</em> is
-Python 3.13.</p></li>
+The minimum version required by <em>rivt</em> is
+Python 3.14.</p></li>
 <li><p>Install <em>rivtlib</em> and dependencies using pip</p></li>
 </ol>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>rivtlib
@@ -519,6 +519,10 @@ Python and programming.</p>
 <p>The recommended method for installing <em>uv</em> is from the command line:</p>
 <p>Windows:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>winget<span class="w"> </span>install<span class="w"> </span>--id<span class="o">=</span>astral-sh.uv<span class="w">  </span>-e
+
+or
+
+powershell<span class="w"> </span>-ExecutionPolicy<span class="w"> </span>ByPass<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;irm https://astral.sh/uv/install.ps1 | iex</span>
 </pre></div>
 </div>
 <p>macOS and Linux:</p>
@@ -616,7 +620,7 @@ uv<span class="w"> </span>cache<span class="w"> </span>clean
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-run-examples"><strong>[1t]</strong> Run examples</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-codespace"><strong>[2t]</strong> Codespace</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rivt-portable"><strong>[3t]</strong> rivt-portable</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rivt-sys-with-uv"><strong>[4t]</strong> rivt-sys with uv</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-system-and-uv"><strong>[4t]</strong> System and uv</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-uv">rivt-uv</a></li>
 </ul>
 </li>
