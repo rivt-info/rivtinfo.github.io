@@ -14,14 +14,15 @@ reviews how to get started in writing *rivt files* and publishing *rivt docs*.
 cases editing and publishing is typically carried out in an :term:`IDE`. 
 
 The three methods for installing and running *rivt* are:
-1. Cloud based *rivt-Codespace*  :doc:`here <rvB01-overview>`
+
+1. *rivt-Codespace* in the cloud described :doc:`here <rvB01-overview>`
 2. *rivt-portable* installation on Windows is described :doc:`here <rvB01-overview>`
 3. System installation with or without *uv* :doc:`here <rvB01-overview>`
 
 *rivt-portable* is recommended for Windows users unfamiliar with Python.
-*rivt-Codespace* is recommended for users with some familiarity with Python and
-programming. System installations are recommended for the most general and
-flexible implementation.
+*rivt-Codespace* is recommended when local installation is not practical or
+work is shared with teams. System installations are recommended for the most
+general and flexible implementation.
 
 A typical **IDE** layout can be viewed at 
 `Codesandbox <https://codesandbox.io/p/devbox/rivt1-dkmqfm?file=%2Frv001-single-doc.txt>`__.
