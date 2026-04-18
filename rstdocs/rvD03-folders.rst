@@ -51,7 +51,7 @@ are relative to the roo.  Resource files are stored in five subfolders:
     and *reports*.
 
 
-An example *report* folder structure is shown below.
+An example *report* folder structure is shown in the following section.
 
 
 .. _report-folders:

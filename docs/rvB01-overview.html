@@ -393,13 +393,13 @@
 <h2><strong>[1t]</strong> Summary<a class="headerlink" href="#t-summary" title="Link to this heading">#</a></h2>
 <hr><p><em>rivt</em> is an open source Python project that imports
 the <a class="reference external" href="https://pypi.org/project/rivtlib/" rel="noreferrer" target="_blank">rivtlib Python package</a>
-and dependencies (<a class="reference internal" href="rvF01-quickref.html#project-requirements"><span class="std std-ref">[6t] Project requirements</span></a>).</p>
-<p>A <a class="reference internal" href="rvF02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> publishes a formatted <a class="reference internal" href="rvF02-terms.html#term-rivt-doc"><span class="xref std std-term">rivt doc</span></a> as a text, PDF or
-HTML file. A <em>rivt file</em> is a Python file (.py) that imports the
+and dependencies (<a class="reference internal" href="rvF01-quickref.html#project-requirements"><span class="std std-ref">[6t] Project requirements</span></a>).  A <a class="reference internal" href="rvF02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> publishes a
+formatted <a class="reference internal" href="rvF02-terms.html#term-rivt-doc"><span class="xref std std-term">rivt doc</span></a> as a text, PDF or HTML file.
+A <em>rivt file</em> is a Python file (.py) that imports the
 <a class="reference internal" href="rvF02-terms.html#term-rivtlib"><span class="xref std std-term">rivtlib</span></a> Python package and includes <a class="reference internal" href="rvF02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a>. A collection
-of <em>rivt docs</em> may be collated as a <a class="reference internal" href="rvF02-terms.html#term-rivt-report"><span class="xref std std-term">rivt report</span></a>.</p>
+of <em>rivt docs</em> may be assembled into a <a class="reference internal" href="rvF02-terms.html#term-rivt-report"><span class="xref std std-term">rivt report</span></a>.</p>
 <p><em>rivt files</em> are generally edited and run in an IDE. The lightweight <a class="reference external" href="https://pyzo.org/" rel="noreferrer" target="_blank">Pyzo</a> IDE is installed with rivtlib. The <a class="reference external" href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">VSCode IDE</a> is a full featured IDE that is part of
-the <a class="reference internal" href="#framework"><span class="std std-ref">rivt framework</span></a> and included with <em>rivt-portable</em>.</p>
+the <a class="reference internal" href="#framework"><span class="std std-ref">rivt framework</span></a> and included with <a class="reference internal" href="rvA01-start.html#rivt-portable"><span class="std std-ref">[3t] rivt-portable</span></a>.</p>
 <p><em>rivt file</em> examples are provided <a class="reference external" href="https://openmodels.info" rel="noreferrer" target="_blank">here</a>.
 An interface for searching <em>public rivt files</em> on <em>GitHub</em> is <a class="reference internal" href="rvE03-ghsearch.html"><span class="doc">here</span></a>.
 A <em>public rivt file</em> is are the parts of a <em>rivt file</em> the author chooses to
@@ -413,31 +413,38 @@ share under an <a class="reference external" href="https://opensource.org/licens
 </a>
 <p class="center"><strong>rivt Doc Processing</strong></p>
 <p>Each <a class="reference internal" href="rvF02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> outputs a corresponding <a class="reference internal" href="rvF02-terms.html#term-doc"><span class="xref std std-term">doc</span></a> in the
-format specified in <em>rv.D</em>. A doc number has the form:</p>
+format specified in <em>rv.D()</em> API. A rivt file number has the form:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rvAnn-filename.py
 </pre></div>
 </div>
 <p>where rv is a required prefix, A is an alphanumeric character and nn are two
-digit non-negative integers.</p>
-<p>A <em>rivt report</em> is organized using the rivt <em>doc numbers</em>. If the <em>rivt file</em>
+digit non-negative integers. The prefix is used to organize reports
+into divisions and subdivisions.</p>
+<p>Corresponding rivt docs are output as:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rvAnn-filename.txt
+rvAnn-filename.pdf
+rvAnn-filename.html
+</pre></div>
+</div>
+<p>A <em>rivt report</em> is organized using the <em>rivt file numbers</em>. If the rivt file
 names are:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rvA01-filename.py
 rv105-filename.py
 rv212-filename.py
 </pre></div>
 </div>
-<p>the <em>report numbers</em> would be:</p>
+<p>the corresponding <em>doc numbers</em> in the would be:</p>
 <ul class="simple">
 <li><p>A.1 (division A, subdivision 1)</p></li>
 <li><p>1.5 (division 1, subdivision 5)</p></li>
 <li><p>2.12 (division 2, subdivision 12)</p></li>
 </ul>
-<p>Note that leading zeroes are dropped. <em>Docs</em> are sorted alpha-numerically into
-divisions and subdivisions in the <em>report</em>.</p>
-<p><em>Docs</em> are assembled from sources and published using a specified folder
-structure. The <em>singledocB</em> variable overrides the default report structure and
-specifies that resource files and <em>docs</em> are read from and written to the <em>rivt
-file</em> folder. It is intended for simpler, standalone <em>docs</em> with more limited
+<p><em>Docs</em> are sorted alpha-numerically into divisions and subdivisions. A <em>doc
+number</em> corresponds to a report subdivision. Note that leading zeroes are
+dropped.</p>
+<p>If a <em>doc</em> is intended to be a standalone document, the <em>singledoc</em> flag can be
+set to True as a comment variable specified directly after the import
+statement. It is intended for simpler, standalone <em>docs</em> with more limited
 format control. The comment variable is specified immediately after the import
 statement:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
@@ -445,7 +452,7 @@ statement:</p>
 <span class="c1"># rv singledoc = True</span>
 </pre></div>
 </div>
-<p>The default setting is False.</p>
+<p>The default setting is False.  See <a class="reference internal" href="rvD03-folders.html#report-folders"><span class="std std-ref">[3t]  Report Folders</span></a> for more details.</p>
 </section>
 <section id="t-rivt-api">
 <span id="rivt-api"></span><h2><strong>[2t]</strong> rivt API<a class="headerlink" href="#t-rivt-api" title="Link to this heading">#</a></h2>
@@ -511,7 +518,7 @@ organize the report. The  prefix has the form</p>
 <p>where A is an alpha-numeric character used for organizing report divisions, and
 NN is a two digit number used to organize sub-divisions. The file name is used
 as the <em>doc</em> title unless overridden in <em>rv.D</em>. Use underscores or hyphens
-rather than spaces to seprate words in the file name. They are replaced with
+rather than spaces to separate words in a file name. They are replaced with
 spaces when a <em>doc</em> title is extracted.</p>
 <p>The top level folder structure is shown below. A more detailed description of
 the folder structure is <a class="reference internal" href="rvD03-folders.html"><span class="doc">here</span></a>.</p>

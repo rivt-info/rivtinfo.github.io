@@ -10,17 +10,16 @@
 
 *rivt* is an open source Python project that imports 
 the `rivtlib Python package <https://pypi.org/project/rivtlib/>`__
-and dependencies (:ref:`Project requirements`). 
-
-A :term:`rivt file` publishes a formatted :term:`rivt doc` as a text, PDF or
-HTML file. A *rivt file* is a Python file (.py) that imports the
+and dependencies (:ref:`Project requirements`).  A :term:`rivt file` publishes a 
+formatted :term:`rivt doc` as a text, PDF or HTML file. 
+A *rivt file* is a Python file (.py) that imports the
 :term:`rivtlib` Python package and includes :term:`rivt markup`. A collection
-of *rivt docs* may be collated as a :term:`rivt report`.
+of *rivt docs* may be assembled into a :term:`rivt report`.
 
 *rivt files* are generally edited and run in an IDE. The lightweight `Pyzo
 <https://pyzo.org/>`__ IDE is installed with rivtlib. The `VSCode IDE
 <https://code.visualstudio.com/>`__ is a full featured IDE that is part of
-the :ref:`rivt framework<framework>` and included with *rivt-portable*. 
+the :ref:`rivt framework<framework>` and included with :ref:`rivt-portable`. 
 
 *rivt file* examples are provided `here <https://openmodels.info>`__.
 An interface for searching *public rivt files* on *GitHub* is :doc:`here <rvE03-ghsearch>`. 
@@ -49,16 +48,25 @@ share under an `Open Source license <https://opensource.org/licenses>`__.
     **rivt Doc Processing**
 
 Each :term:`rivt file` outputs a corresponding :term:`doc` in the 
-format specified in *rv.D*. A doc number has the form:
+format specified in *rv.D()* API. A rivt file number has the form:
 
 .. code-block:: text
 
     rvAnn-filename.py
 
 where rv is a required prefix, A is an alphanumeric character and nn are two
-digit non-negative integers.  
+digit non-negative integers. The prefix is used to organize reports
+into divisions and subdivisions.
 
-A *rivt report* is organized using the rivt *doc numbers*. If the *rivt file*
+Corresponding rivt docs are output as:
+
+.. code-block:: text
+
+    rvAnn-filename.txt
+    rvAnn-filename.pdf
+    rvAnn-filename.html
+
+A *rivt report* is organized using the *rivt file numbers*. If the rivt file
 names are:
 
 .. code-block:: bash
@@ -67,19 +75,19 @@ names are:
     rv105-filename.py
     rv212-filename.py  
 
-the *report numbers* would be: 
+the corresponding *doc numbers* in the would be: 
 
 - A.1 (division A, subdivision 1)
 - 1.5 (division 1, subdivision 5)
 - 2.12 (division 2, subdivision 12)
 
-Note that leading zeroes are dropped. *Docs* are sorted alpha-numerically into
-divisions and subdivisions in the *report*.
+*Docs* are sorted alpha-numerically into divisions and subdivisions. A *doc
+number* corresponds to a report subdivision. Note that leading zeroes are
+dropped.
 
-*Docs* are assembled from sources and published using a specified folder
-structure. The *singledocB* variable overrides the default report structure and
-specifies that resource files and *docs* are read from and written to the *rivt
-file* folder. It is intended for simpler, standalone *docs* with more limited
+If a *doc* is intended to be a standalone document, the *singledoc* flag can be
+set to True as a comment variable specified directly after the import
+statement. It is intended for simpler, standalone *docs* with more limited
 format control. The comment variable is specified immediately after the import
 statement:
 
@@ -89,7 +97,7 @@ statement:
 
     # rv singledoc = True
 
-The default setting is False.
+The default setting is False.  See :ref:`report-folders` for more details.
 
 .. _rivt API:
 
@@ -171,7 +179,7 @@ organize the report. The  prefix has the form
 where A is an alpha-numeric character used for organizing report divisions, and
 NN is a two digit number used to organize sub-divisions. The file name is used
 as the *doc* title unless overridden in *rv.D*. Use underscores or hyphens
-rather than spaces to seprate words in the file name. They are replaced with
+rather than spaces to separate words in a file name. They are replaced with
 spaces when a *doc* title is extracted.
 
 The top level folder structure is shown below. A more detailed description of
