@@ -82,7 +82,7 @@ An example *report* folder structure is shown below.
     Required folder prefixes are shown in brackets.Required folders are
     capitalized or preceded by an underscore. Folders preceded by an underscore
     are rivt outputs. Folder names that include both output and author input
-    include an undescore.
+    include an underscore.
 
 **Top Level Folders** 
 
