@@ -54,7 +54,7 @@ A rivt Codepsace can be forked from
 `this repository <https://github.com/rivt-info/rivt-codespace-examples>`__ 
 by following the steps below.  Example rivt files are included.
 
-**Fork a *rivt Codespace* in the cloud**
+**Fork a rivt Codespace**
 
 .. code-block:: text
 
