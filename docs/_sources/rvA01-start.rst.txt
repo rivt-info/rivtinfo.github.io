@@ -234,25 +234,6 @@ Python and programming.
         rmdir /s /q rivt-examples
         uv cache clean
 
-.. _framework:
-
-**[5t]** rivt Framework
---------------------------------
-
-The full rivt framework may be integrated with rivt when it is
-installed at the system level, including uv. The framework includes:
-
-#. `VSCode IDE <https://code.visualstudio.com/>` and 
-    `extensions <https://marketplace.visualstudio.com/vscode>`. 
-    *rivt* extensions and snippets are :doc:`here <rvF01-quickref>`.
-#. `Git file version control <https://git-scm.com>` 
-#. `GitHub file sharing <GitHub <https://github.com>`__ 
-#. `LaTeX document formatting <https://www.tug.org/texlive/>`
-#. `QCAD diagraming <https://qcad.org/en/85-new-community-edition-open-source>`__.
-
-
-
-
 .. toctree::
     :maxdepth: 1
     :hidden:
