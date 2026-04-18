@@ -145,7 +145,7 @@ see :doc:`here <rvC01-markup>`.
 
 .. _Files and folders:
 
-**[4t]** Folder/Files
+**[4t]** Files/Folders
 --------------------------------------------------------------------- 
 
 .. raw:: html

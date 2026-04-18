@@ -32,8 +32,9 @@ Reports are organized under a single root report folder with the prefix
 are relative to the roo.  Resource files are stored in five subfolders:
 
 *_public* 
-    Includes *rivt files* written by *rivtlib* intended for upload to 
-    a public repository.
+    Includes *rivt files* written by *rivtlib* intended for upload to a
+    public repository. The prefix *rvAnn-* is changed to *rvAnn_* to 
+    avoid confusion with private files.
 
 *_publish*
     Includes formatted *docs* and *reports* written by *rivtlib*.
@@ -67,23 +68,21 @@ An example *report* folder structure is shown below.
     <p style="border-width:2px; border-style:solid; 
     border-color:#49b2c3;padding: 1em;">
 
-    <br>
-    Folder Names<br>
+    <b>Folder Names</b><br>
     <br>
     A rivt report folder can contain any files and folders but the following
     structure is required for doc processing. Files and folders are organized
     under a root folder with the prefix *rivt-* e.g. *rivt-Report-Label*. The
-    root folder includes the *rivt files* and five subfolders.<br>
+    root folder includes the *rivt files* and five required subfolders.<br>
+    <br>
+    The folder structure for single docs is simplified by removing the 
+    <i>Src</i> and <i>_stored</i> folders and storing their files in the 
+    root folder. The report script is not used for single docs.<br>
     <br>
     Required folder prefixes are shown in brackets.Required folders are
     capitalized or preceded by an underscore. Folders preceded by an underscore
     are rivt outputs. Folder names that include both output and author input
-    include an undescore.<br>
-
-The folder structure for :term:`single docs` is simplified by removing the
-*Src* and *_stored* folders and storing their files in the root folder. The
-*report script* is not used for single docs.
-
+    include an undescore.
 
 **Top Level Folders** 
 
