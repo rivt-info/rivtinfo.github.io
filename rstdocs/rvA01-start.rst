@@ -12,12 +12,19 @@ An overview of *rivt* can be found :doc:`here <rvB01-overview>`. This section
 reviews how to get started in writing *rivt files* and publishing *rivt docs*.
 *rivt file* examples can be run in the cloud or on a local computer. In both 
 cases editing and publishing is typically carried out in an :term:`IDE`. 
-A typical IDE layout can be viewed at 
+
+The three methods for installing and running *rivt* are:
+1. Cloud based *rivt-Codespace*  :doc:`here <rvB01-overview>`
+2. *rivt-portable* installation on Windows is described :doc:`here <rvB01-overview>`
+3. System installation with or without *uv* :doc:`here <rvB01-overview>`
+
+*rivt-portable* is recommended for Windows users unfamiliar with Python.
+*rivt-Codespace* is recommended for users with some familiarity with Python and
+programming. System installations are recommended for the most general and
+flexible implementation.
+
+A typical **IDE** layout can be viewed at 
 `Codesandbox <https://codesandbox.io/p/devbox/rivt1-dkmqfm?file=%2Frv001-single-doc.txt>`__.
-The sandbox allows scrolling through an example rivt file (left panel) and
-text doc (right panel). Files may be downloaded from the file explorer 
-(far left panel) including the text, pdf and html reports. Because the 
-is unregistered editor files cannot be edited or processed.
 
 .. figure::  _static/img/ide2.png
     :class: dark-light
@@ -25,15 +32,25 @@ is unregistered editor files cannot be edited or processed.
     :align: center
     :alt: ide layout
 
+This explorable browser example gives a feel for a rivt file (left panel) and
+text doc (right panel). Docs (output files) may be downloaded from the file explorer 
+(far left panel) including the text, pdf and html reports. 
 
-*VSCode* can be run locally or in the cloud. The cloud version is 
-referred to as a `Codespace <https://github.com/features/codespaces>`__ .
+
+**[2t]** Codespace
+--------------------------------------------------------------------- 
+
+*VSCode* can be run locally or in the cloud. For local installation 
+see :ref:`framework`. 
+
+The cloud version is a `Codespace <https://github.com/features/codespaces>`__ . 
 A :term:`rivt Codespace` is a *VSCode* cloud environment with *rivt* extensions 
-for editing and running *rivt files*.  It can be forked (copied) and run 
-in a personal GithUb account that may be set up `here <https://github.com>`__.  
-A rivt Codepsace with examples can be forked from 
+for editing and running *rivt files*.  It can be forked (copied) into 
+a personal GithUb account. Github setup is described `here <https://github.com>`__.  
+
+A rivt Codepsace can be forked from 
 `this repository <https://github.com/rivt-info/rivt-codespace-examples>`__ 
-by following the steps below.
+by following the steps below.  Example rivt files are included.
 
 **Fork a *rivt Codespace* in the cloud**
 
@@ -67,7 +84,7 @@ by following the steps below.
 
 .. _rivt-portable:
 
-**[2t]** rivt-portable
+**[3t]** rivt-portable
 --------------------------------------------------------------------- 
 
 .. raw:: html
@@ -117,7 +134,7 @@ more difficult to integrate with other Python programs.
 
 .. _rivt-sys:
 
-**[3t]** rivt-sys with uv
+**[4t]** rivt-sys with uv
 --------------------------------
 
 .. raw:: html
@@ -215,8 +232,9 @@ Python and programming.
         rmdir /s /q rivt-examples
         uv cache clean
 
+.. _framework:
 
-**[4t]** rivt Framework
+**[5t]** rivt Framework
 --------------------------------
 
 The full rivt framework may be integrated with rivt when it is
