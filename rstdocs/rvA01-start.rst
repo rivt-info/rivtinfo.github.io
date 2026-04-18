@@ -15,9 +15,9 @@ cases editing and publishing is typically carried out in an :term:`IDE`.
 
 The three methods for installing and running *rivt* are:
 
-1. *rivt-Codespace* in the cloud described :doc:`here <rvB01-overview>`
-2. *rivt-portable* installation on Windows is described :doc:`here <rvB01-overview>`
-3. System installation with or without *uv* :doc:`here <rvB01-overview>`
+1. *rivt-Codespace* in the cloud described :ref:`here <Codespace>`
+2. *rivt-portable* installation on Windows is described :ref:`here <rivt-portable>`
+3. System installation with or without *uv* :ref:`here <rivt-sys>`
 
 *rivt-portable* is recommended for Windows users unfamiliar with Python.
 *rivt-Codespace* is recommended when local installation is not practical or
@@ -37,6 +37,7 @@ This explorable browser example gives a feel for a rivt file (left panel) and
 text doc (right panel). Docs (output files) may be downloaded from the file explorer 
 (far left panel) including the text, pdf and html reports. 
 
+.. _Codespace:
 
 **[2t]** Codespace
 --------------------------------------------------------------------- 
