@@ -358,10 +358,10 @@ Workspace extension and other settings are stored in the *.vscode* folder and
 can be included and moved as part of a *rivt report*. Settings that affect the
 *rivt* environment incldue:
 
-    - rivt.code-snippets
-    - settings.json (extension settings)
-    - tasks.json
-    - launch.json
+- rivt.code-snippets
+- settings.json (extension settings)
+- tasks.json
+- launch.json
 
 Global settings can be exported and imported using VSCode Profiles. VSCode
 *rivt* extensions and settings may be installed from this link.
