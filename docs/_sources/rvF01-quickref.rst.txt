@@ -294,14 +294,15 @@ are in the default path only the file name needs to be provided.
 
 .. _Project requirements:
 
-**[6t]** Python requirements
+**[6t]** Python Requirements
 -------------------------------------
 
 .. raw:: html
 
     <hr>
 
-The minimum Python version is *3.14*. Project installation packages include:
+The minimum Python version is *3.14*. *rivt* project packages include the
+following categories:
 
 - formatting
 - numerical analysis
@@ -346,7 +347,7 @@ The minimum Python version is *3.14*. Project installation packages include:
 
 .. _VSCode settings:
 
-**[7t]** VSCode settings
+**[7t]** VSCode Settings
 ------------------------------------
 
 .. raw:: html

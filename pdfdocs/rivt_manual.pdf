@@ -1368,7 +1368,7 @@ endobj
 endobj
 264 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 605 0 R /XYZ 48.51969 348.1071 0 ] /Rect [ 68.51969 390.3071 186.7814 402.3071 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 605 0 R /XYZ 48.51969 348.1071 0 ] /Rect [ 68.51969 390.3071 188.8664 402.3071 ] /Subtype /Link /Type /Annot
 >>
 endobj
 265 0 obj
@@ -1378,7 +1378,7 @@ endobj
 endobj
 266 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 606 0 R /XYZ 48.51969 141.3071 0 ] /Rect [ 68.51969 372.3071 162.2502 384.3071 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 606 0 R /XYZ 48.51969 141.3071 0 ] /Rect [ 68.51969 372.3071 162.9679 384.3071 ] /Subtype /Link /Type /Annot
 >>
 endobj
 267 0 obj
@@ -1806,7 +1806,7 @@ endobj
 endobj
 332 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 605 0 R /XYZ 48.51969 350.2071 0 ] /Rect [ 287.8312 687.3071 405.2384 699.3071 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 605 0 R /XYZ 48.51969 350.2071 0 ] /Rect [ 287.8312 687.3071 407.3234 699.3071 ] /Subtype /Link /Type /Annot
 >>
 endobj
 333 0 obj
@@ -1851,17 +1851,17 @@ endobj
 endobj
 339 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 605 0 R /XYZ 48.51969 350.2071 0 ] /Rect [ 48.51969 441.5071 112.0353 453.5071 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 605 0 R /XYZ 48.51969 350.2071 0 ] /Rect [ 48.51969 441.5071 114.1203 453.5071 ] /Subtype /Link /Type /Annot
 >>
 endobj
 340 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 615 0 R /XYZ 48.51969 226.1071 0 ] /Rect [ 129.13 441.5071 160.8135 453.5071 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 615 0 R /XYZ 48.51969 226.1071 0 ] /Rect [ 131.215 441.5071 162.6265 453.5071 ] /Subtype /Link /Type /Annot
 >>
 endobj
 341 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 615 0 R /XYZ 48.51969 269.1071 0 ] /Rect [ 268.715 441.5071 303.105 453.5071 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 615 0 R /XYZ 48.51969 269.1071 0 ] /Rect [ 270.8 441.5071 304.4647 453.5071 ] /Subtype /Link /Type /Annot
 >>
 endobj
 342 0 obj
@@ -2051,7 +2051,7 @@ endobj
 endobj
 373 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 606 0 R /XYZ 48.51969 143.4071 0 ] /Rect [ 176.6238 119.0571 269.4997 131.0571 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 606 0 R /XYZ 48.51969 143.4071 0 ] /Rect [ 176.6238 119.0571 270.2175 131.0571 ] /Subtype /Link /Type /Annot
 >>
 endobj
 374 0 obj
@@ -2101,7 +2101,7 @@ endobj
 endobj
 380 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 606 0 R /XYZ 48.51969 143.4071 0 ] /Rect [ 176.6238 457.0571 269.4997 469.0571 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 606 0 R /XYZ 48.51969 143.4071 0 ] /Rect [ 176.6238 457.0571 270.2175 469.0571 ] /Subtype /Link /Type /Annot
 >>
 endobj
 381 0 obj
@@ -8371,7 +8371,7 @@ endobj
 endobj
 728 0 obj
 <<
-/Author () /CreationDate (D:20260418222015-07'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260418222015-07'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+/Author () /CreationDate (D:20260418222703-07'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260418222703-07'00') /Producer (ReportLab PDF Library - \(opensource\)) 
   /Subject (\(unspecified\)) /Title (My Report Title) /Trapped /False
 >>
 endobj
@@ -9050,13 +9050,13 @@ endobj
 endobj
 858 0 obj
 <<
-/Dest [ 605 0 R /XYZ 48.51969 348.1071 0 ] /Next 859 0 R /Parent 852 0 R /Prev 857 0 R /Title ([6t] Python requirements)
+/Dest [ 605 0 R /XYZ 48.51969 348.1071 0 ] /Next 859 0 R /Parent 852 0 R /Prev 857 0 R /Title ([6t] Python Requirements)
 >>
 endobj
 859 0 obj
 <<
 /Count 4 /Dest [ 606 0 R /XYZ 48.51969 141.3071 0 ] /First 860 0 R /Last 860 0 R /Parent 852 0 R /Prev 858 0 R 
-  /Title ([7t] VSCode settings)
+  /Title ([7t] VSCode Settings)
 >>
 endobj
 860 0 obj
@@ -10983,7 +10983,7 @@ Q
 q
 1 0 0 1 0 111 cm
 q
-BT 1 0 0 1 20 2 Tm 12 TL 0 .4 .6 rg /F2+0 10 Tf 12 TL ([6t]) Tj /F1+0 10 Tf 12 TL ( Python requirements) Tj T* ET
+BT 1 0 0 1 20 2 Tm 12 TL 0 .4 .6 rg /F2+0 10 Tf 12 TL ([6t]) Tj /F1+0 10 Tf 12 TL ( Python Requirements) Tj T* ET
 Q
 Q
 q
@@ -10996,7 +10996,7 @@ Q
 q
 1 0 0 1 0 93 cm
 q
-BT 1 0 0 1 20 2 Tm 12 TL 0 .4 .6 rg /F2+0 10 Tf 12 TL ([7t]) Tj /F1+0 10 Tf 12 TL ( VSCode settings) Tj T* ET
+BT 1 0 0 1 20 2 Tm 12 TL 0 .4 .6 rg /F2+0 10 Tf 12 TL ([7t]) Tj /F1+0 10 Tf 12 TL ( VSCode Settings) Tj T* ET
 Q
 Q
 q
@@ -13452,7 +13452,7 @@ Q
 q
 1 0 0 1 48.51969 687.3071 cm
 q
-BT 1 0 0 1 0 2 Tm 12 TL 0 0 0 rg /F1+0 10 Tf 12 TL (The ) Tj /F3+0 10 Tf 12 TL (rivt project) Tj /F1+0 10 Tf 12 TL ( uses dozens of Python libraries \(see ) Tj ([6t] Python requirements) Tj (\):) Tj T* ET
+BT 1 0 0 1 0 2 Tm 12 TL 0 0 0 rg /F1+0 10 Tf 12 TL (The ) Tj /F3+0 10 Tf 12 TL (rivt project) Tj /F1+0 10 Tf 12 TL ( uses dozens of Python libraries \(see ) Tj ([6t] Python Requirements) Tj (\):) Tj T* ET
 Q
 Q
 q
@@ -13684,7 +13684,7 @@ Q
 q
 1 0 0 1 48.51969 417.5071 cm
 q
-BT 1 0 0 1 0 38 Tm 1.035137 Tw 12 TL 0 0 0 rg /F3+0 10 Tf 12 TL (rivt) Tj /F1+0 10 Tf 12 TL ( is an open source Python project that imports the ) Tj 0 .4 .6 rg (rivtlib Python package) Tj 0 0 0 rg ( and dependencies \() Tj ([6t] Python) Tj T* 0 Tw -0.037802 Tw (requirements) Tj (\). A ) Tj (rivt file) Tj ( publishes a formatted ) Tj (rivt doc) Tj ( as a text, PDF or HTML file. A ) Tj /F3+0 10 Tf 12 TL (rivt file) Tj /F1+0 10 Tf 12 TL ( is a Python file \(.py\)) Tj T* 0 Tw .910196 Tw (that imports the ) Tj (rivtlib) Tj ( Python package and includes ) Tj (rivt markup) Tj (. A collection of ) Tj /F3+0 10 Tf 12 TL (rivt docs) Tj /F1+0 10 Tf 12 TL ( may be assembled) Tj T* 0 Tw (into a ) Tj (rivt report) Tj (.) Tj T* ET
+BT 1 0 0 1 0 38 Tm 1.035137 Tw 12 TL 0 0 0 rg /F3+0 10 Tf 12 TL (rivt) Tj /F1+0 10 Tf 12 TL ( is an open source Python project that imports the ) Tj 0 .4 .6 rg (rivtlib Python package) Tj 0 0 0 rg ( and dependencies \() Tj ([6t] Python) Tj T* 0 Tw -0.128453 Tw (Requirements) Tj (\). A ) Tj (rivt file) Tj ( publishes a formatted ) Tj (rivt doc) Tj ( as a text, PDF or HTML file. A ) Tj /F3+0 10 Tf 12 TL (rivt file) Tj /F1+0 10 Tf 12 TL ( is a Python file \(.py\)) Tj T* 0 Tw .910196 Tw (that imports the ) Tj (rivtlib) Tj ( Python package and includes ) Tj (rivt markup) Tj (. A collection of ) Tj /F3+0 10 Tf 12 TL (rivt docs) Tj /F1+0 10 Tf 12 TL ( may be assembled) Tj T* 0 Tw (into a ) Tj (rivt report) Tj (.) Tj T* ET
 Q
 Q
 q
@@ -14493,7 +14493,7 @@ q
 1 0 0 1 128.1041 27 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1+0 10 Tf 12 TL ([7t] VSCode settings) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1+0 10 Tf 12 TL ([7t] VSCode Settings) Tj T* ET
 Q
 Q
 q
@@ -14715,7 +14715,7 @@ q
 1 0 0 1 128.1041 93 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1+0 10 Tf 12 TL ([7t] VSCode settings) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1+0 10 Tf 12 TL ([7t] VSCode Settings) Tj T* ET
 Q
 Q
 q
@@ -32116,7 +32116,7 @@ endstream
 endobj
 930 0 obj
 <<
-/Length 19754
+/Length 19819
 >>
 stream
 1 0 0 1 0 0 cm 
@@ -32431,13 +32431,13 @@ Q
 q
 1 0 0 1 48.51969 335.5071 cm
 q
-BT 1 0 0 1 0 2.1 Tm 12.6 TL .133333 .133333 .133333 rg /F4+0 10.5 Tf 12.6 TL ([6t]) Tj /F5+0 10.5 Tf 12.6 TL ( Python requirements) Tj T* ET
+BT 1 0 0 1 0 2.1 Tm 12.6 TL .133333 .133333 .133333 rg /F4+0 10.5 Tf 12.6 TL ([6t]) Tj /F5+0 10.5 Tf 12.6 TL ( Python Requirements) Tj T* ET
 Q
 Q
 q
 1 0 0 1 48.51969 317.5071 cm
 q
-BT 1 0 0 1 0 2 Tm 12 TL 0 0 0 rg /F1+0 10 Tf 12 TL (The minimum Python version is ) Tj /F3+0 10 Tf 12 TL (3.14) Tj /F1+0 10 Tf 12 TL (. Project installation packages include:) Tj T* ET
+BT 1 0 0 1 0 2 Tm 12 TL 0 0 0 rg /F1+0 10 Tf 12 TL (The minimum Python version is ) Tj /F3+0 10 Tf 12 TL (3.14) Tj /F1+0 10 Tf 12 TL (. ) Tj /F3+0 10 Tf 12 TL (rivt) Tj /F1+0 10 Tf 12 TL ( project packages include the following categories:) Tj T* ET
 Q
 Q
 q
@@ -32708,7 +32708,7 @@ q
 1 0 0 1 42.51969 751.6535 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1+0 10 Tf 12 TL ([6t] Python requirements) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1+0 10 Tf 12 TL ([6t] Python Requirements) Tj T* ET
 Q
 Q
 q
@@ -33154,7 +33154,7 @@ Q
 q
 1 0 0 1 48.51969 128.7071 cm
 q
-BT 1 0 0 1 0 2.1 Tm 12.6 TL .133333 .133333 .133333 rg /F4+0 10.5 Tf 12.6 TL ([7t]) Tj /F5+0 10.5 Tf 12.6 TL ( VSCode settings) Tj T* ET
+BT 1 0 0 1 0 2.1 Tm 12.6 TL .133333 .133333 .133333 rg /F4+0 10.5 Tf 12.6 TL ([7t]) Tj /F5+0 10.5 Tf 12.6 TL ( VSCode Settings) Tj T* ET
 Q
 Q
 q
@@ -33185,7 +33185,7 @@ q
 1 0 0 1 42.51969 751.6535 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1+0 10 Tf 12 TL ([7t] VSCode settings) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1+0 10 Tf 12 TL ([7t] VSCode Settings) Tj T* ET
 Q
 Q
 q
@@ -33754,7 +33754,7 @@ q
 1 0 0 1 42.51969 751.6535 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1+0 10 Tf 12 TL ([7t] VSCode settings) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1+0 10 Tf 12 TL ([7t] VSCode Settings) Tj T* ET
 Q
 Q
 q
@@ -34290,7 +34290,7 @@ q
 1 0 0 1 42.51969 751.6535 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1+0 10 Tf 12 TL ([7t] VSCode settings) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1+0 10 Tf 12 TL ([7t] VSCode Settings) Tj T* ET
 Q
 Q
 q
@@ -34822,7 +34822,7 @@ q
 1 0 0 1 42.51969 751.6535 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1+0 10 Tf 12 TL ([7t] VSCode settings) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1+0 10 Tf 12 TL ([7t] VSCode Settings) Tj T* ET
 Q
 Q
 q
@@ -35354,7 +35354,7 @@ q
 1 0 0 1 42.51969 751.6535 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1+0 10 Tf 12 TL ([7t] VSCode settings) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1+0 10 Tf 12 TL ([7t] VSCode Settings) Tj T* ET
 Q
 Q
 q
@@ -35828,7 +35828,7 @@ q
 1 0 0 1 42.51969 751.6535 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1+0 10 Tf 12 TL ([7t] VSCode settings) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1+0 10 Tf 12 TL ([7t] VSCode Settings) Tj T* ET
 Q
 Q
 q
@@ -36229,7 +36229,7 @@ q
 1 0 0 1 42.51969 751.6535 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1+0 10 Tf 12 TL ([7t] VSCode settings) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1+0 10 Tf 12 TL ([7t] VSCode Settings) Tj T* ET
 Q
 Q
 q
@@ -36640,7 +36640,7 @@ q
 1 0 0 1 42.51969 751.6535 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1+0 10 Tf 12 TL ([7t] VSCode settings) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1+0 10 Tf 12 TL ([7t] VSCode Settings) Tj T* ET
 Q
 Q
 q
@@ -36801,7 +36801,7 @@ q
 1 0 0 1 42.51969 751.6535 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1+0 10 Tf 12 TL ([7t] VSCode settings) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1+0 10 Tf 12 TL ([7t] VSCode Settings) Tj T* ET
 Q
 Q
 q
@@ -38038,7 +38038,7 @@ xref
 0000589240 00000 n 
 0000589411 00000 n 
 0000589582 00000 n 
-0000589751 00000 n 
+0000589752 00000 n 
 0000589920 00000 n 
 0000590090 00000 n 
 0000590261 00000 n 
@@ -38628,98 +38628,98 @@ xref
 0001637368 00000 n 
 0001644110 00000 n 
 0001667438 00000 n 
-0001687246 00000 n 
-0001696242 00000 n 
-0001704993 00000 n 
-0001713723 00000 n 
-0001722111 00000 n 
-0001730436 00000 n 
-0001738348 00000 n 
-0001747314 00000 n 
-0001754781 00000 n 
-0001758294 00000 n 
-0001765718 00000 n 
-0001766589 00000 n 
-0001767512 00000 n 
-0001767547 00000 n 
-0001767582 00000 n 
-0001767617 00000 n 
-0001767652 00000 n 
-0001767687 00000 n 
-0001767722 00000 n 
-0001767757 00000 n 
-0001767792 00000 n 
-0001767827 00000 n 
-0001767862 00000 n 
-0001767897 00000 n 
-0001767932 00000 n 
-0001767967 00000 n 
-0001768002 00000 n 
-0001768037 00000 n 
-0001768073 00000 n 
-0001768109 00000 n 
-0001768145 00000 n 
-0001768181 00000 n 
-0001768217 00000 n 
-0001768253 00000 n 
-0001768289 00000 n 
-0001768325 00000 n 
-0001768361 00000 n 
-0001768397 00000 n 
-0001768433 00000 n 
-0001768469 00000 n 
-0001768505 00000 n 
-0001768541 00000 n 
-0001768577 00000 n 
-0001768613 00000 n 
-0001768649 00000 n 
-0001768685 00000 n 
-0001768721 00000 n 
-0001768757 00000 n 
-0001768793 00000 n 
-0001768829 00000 n 
-0001768865 00000 n 
-0001768901 00000 n 
-0001768937 00000 n 
-0001768973 00000 n 
-0001769009 00000 n 
-0001769045 00000 n 
-0001769081 00000 n 
-0001769117 00000 n 
-0001769153 00000 n 
-0001769189 00000 n 
-0001769225 00000 n 
-0001769261 00000 n 
-0001769297 00000 n 
-0001769333 00000 n 
-0001769369 00000 n 
-0001769405 00000 n 
-0001769441 00000 n 
-0001769477 00000 n 
-0001769513 00000 n 
-0001769549 00000 n 
-0001769586 00000 n 
-0001769623 00000 n 
-0001769660 00000 n 
-0001769697 00000 n 
-0001769734 00000 n 
-0001769771 00000 n 
-0001769808 00000 n 
-0001769845 00000 n 
-0001769882 00000 n 
-0001769919 00000 n 
-0001769956 00000 n 
-0001769993 00000 n 
-0001770030 00000 n 
-0001770067 00000 n 
-0001770104 00000 n 
-0001770141 00000 n 
-0001770178 00000 n 
-0001770215 00000 n 
+0001687311 00000 n 
+0001696307 00000 n 
+0001705058 00000 n 
+0001713788 00000 n 
+0001722176 00000 n 
+0001730501 00000 n 
+0001738413 00000 n 
+0001747379 00000 n 
+0001754846 00000 n 
+0001758359 00000 n 
+0001765783 00000 n 
+0001766654 00000 n 
+0001767577 00000 n 
+0001767612 00000 n 
+0001767647 00000 n 
+0001767682 00000 n 
+0001767717 00000 n 
+0001767752 00000 n 
+0001767787 00000 n 
+0001767822 00000 n 
+0001767857 00000 n 
+0001767892 00000 n 
+0001767927 00000 n 
+0001767962 00000 n 
+0001767997 00000 n 
+0001768032 00000 n 
+0001768067 00000 n 
+0001768102 00000 n 
+0001768138 00000 n 
+0001768174 00000 n 
+0001768210 00000 n 
+0001768246 00000 n 
+0001768282 00000 n 
+0001768318 00000 n 
+0001768354 00000 n 
+0001768390 00000 n 
+0001768426 00000 n 
+0001768462 00000 n 
+0001768498 00000 n 
+0001768534 00000 n 
+0001768570 00000 n 
+0001768606 00000 n 
+0001768642 00000 n 
+0001768678 00000 n 
+0001768714 00000 n 
+0001768750 00000 n 
+0001768786 00000 n 
+0001768822 00000 n 
+0001768858 00000 n 
+0001768894 00000 n 
+0001768930 00000 n 
+0001768966 00000 n 
+0001769002 00000 n 
+0001769038 00000 n 
+0001769074 00000 n 
+0001769110 00000 n 
+0001769146 00000 n 
+0001769182 00000 n 
+0001769218 00000 n 
+0001769254 00000 n 
+0001769290 00000 n 
+0001769326 00000 n 
+0001769362 00000 n 
+0001769398 00000 n 
+0001769434 00000 n 
+0001769470 00000 n 
+0001769506 00000 n 
+0001769542 00000 n 
+0001769578 00000 n 
+0001769614 00000 n 
+0001769651 00000 n 
+0001769688 00000 n 
+0001769725 00000 n 
+0001769762 00000 n 
+0001769799 00000 n 
+0001769836 00000 n 
+0001769873 00000 n 
+0001769910 00000 n 
+0001769947 00000 n 
+0001769984 00000 n 
+0001770021 00000 n 
+0001770058 00000 n 
+0001770095 00000 n 
+0001770132 00000 n 
+0001770169 00000 n 
+0001770206 00000 n 
+0001770243 00000 n 
+0001770280 00000 n 
 trailer
 <<
 /ID 
-[<c0a56158e6062e9907f366820ed3a0f6><c0a56158e6062e9907f366820ed3a0f6>]
+[<810c3f3158c019743350ebb8e92414fd><810c3f3158c019743350ebb8e92414fd>]
 % ReportLab generated PDF document -- digest (opensource)
 
 /Info 728 0 R
@@ -38727,5 +38727,5 @@ trailer
 /Size 1019
 >>
 startxref
-1770252
+1770317
 %%EOF
