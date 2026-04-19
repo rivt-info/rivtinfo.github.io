@@ -8,8 +8,9 @@
 
     <hr>
 
- There are several ways to collaborate on rivt and rivt files by building on
+ There are several ways to collaborate on *rivt files* by building on
  the tools available in the Python and VSCode ecosystem.
+
 
 #. :doc:`Public rivt files <rvE04-publicrivt>` may be shared by uploading them
     to repositories like *GitHub*.  Public *rivt files* can be found and 
@@ -20,11 +21,14 @@
     - providing pull requests.
     - submitting issues and bugs.
   
+  
     *Public rivt files* are identified with the naming convention
-    rv-A01-filename.py, in contrast with rvA01-filename for an active, private
-    files. After downloading a public rivt file, use the *Batch Rename*
-    extension to delete the hyphen after *rv* and convert it to an active rivt
-    file.
+    rv-A01-filename.py and written to the *_shared* folder. This is in contrast
+    with the form *rvA01-filename* for active, private files stored in the
+    report root directory. After downloading a shared rivt file, use the *Batch
+    Rename* extension to delete the hyphen after *rv* and convert it to an
+    active rivt file.
+
 
 #.  Files may be collaboratively edited in real time using VSCode with the
     extension  `Visual Studio Live Share
@@ -37,6 +41,7 @@
     - report issues and bugs
     - issue pull requests to propose changes
     - contribute to documentation
+
 
 #. Contribute extensions and scripts that improve the interaction of 
    *rivt* with other components of the *rivt framework*.
