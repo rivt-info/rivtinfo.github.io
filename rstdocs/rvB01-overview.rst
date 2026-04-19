@@ -22,7 +22,7 @@ of *rivt docs* may be assembled into a :term:`rivt report`.
 the :ref:`rivt framework<framework>` and included with :ref:`rivt-portable`. 
 
 *rivt file* examples are provided `here <https://openmodels.info>`__.
-An interface for searching *public rivt files* on *GitHub* is :doc:`here <rvE03-ghsearch>`. 
+An interface for searching *public rivt files* on *GitHub* is :doc:`here <rvE04-ghsearch>`. 
 A *public rivt file* is are the parts of a *rivt file* the author chooses to 
 share under an `Open Source license <https://opensource.org/licenses>`__. 
 *rivt* itself is distributed under the `MIT open source license <https://opensource.org/license/mit>`__. 

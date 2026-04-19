@@ -11,10 +11,10 @@
 There are several ways to collaborate on *rivt files* by using
 tools available in the Python, GitHub and VSCode ecosystem.
 
-#. :doc:`Public rivt files <rvE04-publicrivt>` 
+#. :doc:`Public rivt files <rvE02-publicrivt>` 
    may be shared by uploading them to repositories e.g. *GitHub*.  
    Public *rivt files* can be found and downloaded using the 
-   :doc:`search interface <rvE03-ghsearch>`.  *Public rivt files* are 
+   :doc:`search interface <rvE04-ghsearch>`.  *Public rivt files* are 
    identified with the naming convention
   
    .. code-block:: bash
@@ -138,6 +138,6 @@ The *Live Share* extension enables:
 .. toctree::
     :maxdepth: 3
 
-    rvE02-git.rst
-    rvE03-ghsearch.rst
-    rvE04-publicrivt.rst
+    rvE02-publicrivt.rst
+    rvE03-git.rst
+    rvE04-ghsearch.rst

@@ -28,7 +28,7 @@ Multiple *rivt docs* may be organized and linked as a :term:`rivt report`.
 This site is an example of an HTML *rivt report*. 
 
 An interface for finding public *rivt files* on *GitHub* is  
-:doc:`here <rvE03-ghsearch>` and a repository of open source models and 
+:doc:`here <rvE04-ghsearch>` and a repository of open source models and 
 calculations, including *rivt*, is `here <https://www.openmodels.info>`__. 
 
 .. raw:: html

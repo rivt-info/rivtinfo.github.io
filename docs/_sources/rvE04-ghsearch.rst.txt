@@ -1,4 +1,4 @@
-**E.3 GitHub Search**
+**E.4 GitHub Search**
 =========================
 
 **[1t]** GitHub Global Search
