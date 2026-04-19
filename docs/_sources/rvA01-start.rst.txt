@@ -8,10 +8,11 @@
 
    <hr> 
 
-An overview of *rivt* can be found :doc:`here <rvB01-overview>`. This section
-reviews how to get started in writing *rivt files* and publishing *rivt docs*.
-*rivt file* examples can be run in the cloud or on a local computer. In both 
-cases editing and publishing is typically carried out in an :term:`IDE`. 
+This section explains how to get started in editing and running *rivt file*
+examples. Examples can be run in the cloud or on a local computer. In both
+cases editing is typically carried out in an :term:`IDE`. 
+
+For a general overview of *rivt* start :doc:`here <rvB01-overview>`.
 
 The three methods for installing and running *rivt* are:
 
