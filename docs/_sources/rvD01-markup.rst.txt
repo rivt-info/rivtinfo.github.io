@@ -1,4 +1,4 @@
-**C.1 Markup**
+**D.1 Markup**
 ==================
 
 .. _API functions:
