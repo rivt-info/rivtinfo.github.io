@@ -83,21 +83,8 @@ the corresponding *doc numbers* in the would be:
 
 *Docs* are sorted alpha-numerically into divisions and subdivisions. A *doc
 number* corresponds to a report subdivision. Note that leading zeroes are
-dropped.
+dropped in the formatted output.
 
-If a *doc* is intended to be a standalone document, the *singledoc* flag can be
-set to True as a comment variable specified directly after the import
-statement. It is intended for simpler, standalone *docs* with more limited
-format control. The comment variable is specified immediately after the import
-statement:
-
-.. code:: python
-
-    import rivtlib.rvapi as rv
-
-    # rv singledoc = True
-
-The default setting is False.  See :ref:`report-folders` for more details.
 
 .. _rivt API:
 
@@ -120,25 +107,16 @@ to be:
     *rivtlib* is written in Python with direct access to thousands of 
     Python packages.
 
-
-.. _Markup:
-
-**[3t]** Markup
------------------------------------------------------------------------- 
-
-.. raw:: html
-
-    <hr>
-
 An API function starts in the first column and takes a triple quoted
-:term:`rivt string` (rS) argument. The first line of a *rivt string* is a
-:term:`header substring`, followed by a :term:`content substring` 
-indented 4 spaces for improved readability and section folding.
+:term:`rivt string` (rS) containting :term:`rivt markup` as the argument. The
+first line of a *rivt string* is a :term:`header substring`, followed by a
+:term:`content substring` indented 4 spaces for improved readability and
+section folding.
 
 The *header substring* specifies the section title and other
 processing parameters. The content substring includes 
 :term:`rivt markup` and other arbitrary text. For further details 
-see :doc:`here <rvC01-markup>`.
+see :doc:`here <rvD01-markup>`.
 
 .. code-block:: python
 
@@ -153,7 +131,7 @@ see :doc:`here <rvC01-markup>`.
 
 .. _Files and folders:
 
-**[4t]** Files/Folders
+**[3t]** Files/Folders
 --------------------------------------------------------------------- 
 
 .. raw:: html
@@ -178,28 +156,29 @@ organize the report. The  prefix has the form
 
 where A is an alpha-numeric character used for organizing report divisions, and
 NN is a two digit number used to organize sub-divisions. The file name is used
-as the *doc* title unless overridden in *rv.D*. Use underscores or hyphens
-rather than spaces to separate words in a file name. They are replaced with
-spaces when a *doc* title is extracted.
+as the *doc* title unless overridden in *rv.D*. Use hyphens rather than spaces
+to separate words in a file name. They are replaced with spaces when a *doc*
+title is extracted.
 
 The top level folder structure is shown below. A more detailed description of
-the folder structure is :doc:`here <rvD03-folders>`.
+the folder structure is :ref:`here <report-folders>`.
 
 .. code-block:: bash
 
-    [rivt-]Report-Label/                Report Folder
-        ├── [rv101-]filename1.py        rivt file
-        ├── [rv102-]filename2.py        rivt file
-        ├── [rv201-]filename3.py        rivt file
-        ├── [rv202-]filename4.py        rivt file 
+    [rivt-]Report-Label/            Report Folder
+        ├── conf.py                   configuration file
+        ├── rv101-filename1.py        rivt file
+        ├── rv102-filename2.py        rivt file
+        ├── rv201-filename3.py        rivt file
+        ├── rv202-filename4.py        rivt file 
         ...
-        ├── [.vscode]/                  optional VSCode settings   
-        ├── [_public]/                  public rivt files
-        ├── [_publish]/                 published docs and reports
-        ├── [_stored]/                  stored files
-        ├── [Rst_docs]/                 restructured text files               
-        ├── [Src]/                      source files        
-        └── README.txt                  searchable text report 
+        ├── .vscode/                  optional VSCode settings   
+        ├── _publish/                 published docs and reports
+        ├── _rstdocs/                 restructured text files 
+        ├── _shared/                  public rivt files
+        ├── _stored/                  stored files
+        ├── Src/                      author source files        
+        └── README.txt                searchable text report 
 
 
 .. _framework:
@@ -207,15 +186,12 @@ the folder structure is :doc:`here <rvD03-folders>`.
 **[5t]** Framework
 ----------------------------------------------------------------------
 
-.. _rivt-framework:
-
 .. raw:: html
 
     <hr>
 
-The *rivt framework* includes separate programs that provide editing tools,
- additional formatting, version control, and diagramming.
-
+The *rivt framework* includes separate programs that provide additional editing ,
+formatting, version control, and diagramming tools.
 
 ======================= ==========================================================================
 Purpose                  Link
@@ -228,4 +204,8 @@ Version Control           `Git <https://git-scm.com>`_
 3D Diagramming            `FreeCad <https://www.freecad.org/>`_
 ======================= ==========================================================================
 
+.. toctree::
+    :maxdepth: 1
+    :hidden:
 
+    rvB02-framework.rst

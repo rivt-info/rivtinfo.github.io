@@ -18,14 +18,14 @@
 
    <hr>
 
-*rivt* is an open source software program for writing and 
+*rivt* is a highly extensible, open source program for writing and 
 formatting engineering documents as text, HTML or PDF files
 (referred to as :term:`rivt docs`). A *rivt doc* is generated 
 from a :term:`rivt file` (.py) that includes 
-:doc:`rivt markup <rvC01-markup>` and imports 
+:doc:`rivt markup <rvD01-markup>` and imports 
 the `rivtlib <https://pypi.org/search/?q=rivtlib>`__ Python package.
 Multiple *rivt docs* may be organized and linked as a :term:`rivt report`. 
-This site is an example of a *rivt report*. 
+This site is an example of an HTML *rivt report*. 
 
 An interface for finding public *rivt files* on *GitHub* is  
 :doc:`here <rvE03-ghsearch>` and a repository of open source models and 
@@ -41,7 +41,7 @@ calculations, including *rivt*, is `here <https://www.openmodels.info>`__.
 
     rvA01-start.rst
     rvB01-overview.rst
-    rvC01-markup.rst
-    rvD01-documents.rst
+    rvC01-documents.rst
+    rvD01-markup.rst
     rvE01-collab.rst
     rvF01-quickref.rst

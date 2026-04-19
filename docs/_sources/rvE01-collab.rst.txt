@@ -8,28 +8,27 @@
 
     <hr>
 
- As a Python open source project, there are several ways to collaborate 
- and share rivt file improvements.
+ There are several ways to collaborate on rivt and rivt files by building on
+ the tools available in the Python and VSCode ecosystem.
 
-#. :doc:`Public rivt files <rvE04-publicrivt>` may be shared by uploading
-    to repositories such as *GitHub*.  
+#. :doc:`Public rivt files <rvE04-publicrivt>` may be shared by uploading them
+    to repositories like *GitHub*.  Public *rivt files* can be found and 
+    downloaded using the :doc:`search interface <rvE03-ghsearch>`. Public 
+    rivt files may be improve by: 
 
-#. Public *rivt files* can be found and downloaded using the 
-    :doc:`search interface <rvE03-ghsearch>`. For public files, 
-
-    - cloned versions may be forked to create different versions.
-    - pull requests may provide improvements.
-    - issues and bugs may be reported.
+    - forking to create different versions.
+    - providing pull requests.
+    - submitting issues and bugs.
   
     *Public rivt files* are identified with the naming convention
-    rv-A01-filename.py, in contrast with rvA01-filename for private files.
-    After downloading a public rivt file, use the *Batch Rename* extension to delete the hyphen after *rv* and convert it to a
-    private rivt file.
+    rv-A01-filename.py, in contrast with rvA01-filename for an active, private
+    files. After downloading a public rivt file, use the *Batch Rename*
+    extension to delete the hyphen after *rv* and convert it to an active rivt
+    file.
 
 #.  Files may be collaboratively edited in real time using VSCode with the
     extension  `Visual Studio Live Share
-    <https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare>`_. 
-    extension.    
+    <https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare>`_.    
 
 
 #. Contribute to rivtlib at `rivtlib-dev <https://github.com/rivtlib-dev/rivtlib>`_ 
@@ -39,8 +38,8 @@
     - issue pull requests to propose changes
     - contribute to documentation
 
-#. Contribute extensions and scripts that improve interaction *rivt* with other 
-    components of the *rivt framework*.
+#. Contribute extensions and scripts that improve the interaction of 
+   *rivt* with other components of the *rivt framework*.
 
 **[2t]** Git and GitHub
 ---------------------------
@@ -49,16 +48,14 @@
 
     <hr>
 
-`Git <https://git-scm.com/>`_ is part of the *rivt framework*. It is a free,
-open-source, distributed version control system designed to manage and track
-changes in files. It allows multiple people to work on the same project
-simultaneously without overwriting each other's work.
-
-`GitHub <https://github.com/>`_ is also part of the *rivt framework*. It is a
-web-based platform for hosting, managing, and collaborating on code built
-around Git. It allows teams to work together efficiently on software projects
-and provides features like pull requests, issue tracking, and project
-management.
+`Git <https://git-scm.com/>`_ and `GitHub <https://github.com/>`_ are part of
+the *rivt framework*. *Git* is a free, open-source, distributed version control
+system designed to manage and track changes in files. It allows multiple people
+to work on the same project simultaneously without overwriting each other's
+work. *GitHub* is a web-based platform for hosting, managing, and collaborating
+on code built around Git. It allows teams to work together efficiently on
+software projects and provides features like pull requests, issue tracking, and
+project management.
 
 Each *rivt project* is typically stored in its own repository. Every user of
 GitHub has a personal account with essentially unlimited repositories.Free
@@ -99,7 +96,6 @@ You can start a *Live Share* session either within *CodeSpaces* in
 your browser, or within the *VS Code* desktop application. *CodeSpaces* 
 is a cloud based GitHub implementation of VSCode that shares many of the 
 same features.
-
 
 The *Live Share* extension enables:
 

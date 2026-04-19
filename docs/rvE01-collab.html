@@ -61,7 +61,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="B.4 Git" href="rvE02-git.html" />
-    <link rel="prev" title="D.5 Example" href="rvD06-reportex.html" />
+    <link rel="prev" title="C.9 Doc - rv.D" href="rvD09-markup-d.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -165,15 +165,15 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvC01-markup.html">
-    C.1 Markup
+  <a class="nav-link nav-internal" href="rvC01-documents.html">
+    D.1 Docs
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvD01-documents.html">
-    D.1 Docs
+  <a class="nav-link nav-internal" href="rvD01-markup.html">
+    C.1 Markup
   </a>
 </li>
 
@@ -279,15 +279,15 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvC01-markup.html">
-    C.1 Markup
+  <a class="nav-link nav-internal" href="rvC01-documents.html">
+    D.1 Docs
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvD01-documents.html">
-    D.1 Docs
+  <a class="nav-link nav-internal" href="rvD01-markup.html">
+    C.1 Markup
   </a>
 </li>
 
@@ -398,30 +398,27 @@
 <h2><strong>[1t]</strong> Overview<a class="headerlink" href="#t-overview" title="Link to this heading">#</a></h2>
    <hr>
 
-As a Python open source project, there are several ways to collaborate
-and share rivt file improvements.<ol class="arabic">
-<li><dl class="simple">
-<dt><a class="reference internal" href="rvE04-publicrivt.html"><span class="doc">Public rivt files</span></a> may be shared by uploading</dt><dd><p>to repositories such as <em>GitHub</em>.</p>
-</dd>
-</dl>
-</li>
+There are several ways to collaborate on rivt and rivt files by building on
+the tools available in the Python and VSCode ecosystem.<ol class="arabic">
 <li><dl>
-<dt>Public <em>rivt files</em> can be found and downloaded using the</dt><dd><p><a class="reference internal" href="rvE03-ghsearch.html"><span class="doc">search interface</span></a>. For public files,</p>
+<dt><a class="reference internal" href="rvE04-publicrivt.html"><span class="doc">Public rivt files</span></a> may be shared by uploading them</dt><dd><p>to repositories like <em>GitHub</em>.  Public <em>rivt files</em> can be found and
+downloaded using the <a class="reference internal" href="rvE03-ghsearch.html"><span class="doc">search interface</span></a>. Public
+rivt files may be improve by:</p>
 <ul class="simple">
-<li><p>cloned versions may be forked to create different versions.</p></li>
-<li><p>pull requests may provide improvements.</p></li>
-<li><p>issues and bugs may be reported.</p></li>
+<li><p>forking to create different versions.</p></li>
+<li><p>providing pull requests.</p></li>
+<li><p>submitting issues and bugs.</p></li>
 </ul>
 <p><em>Public rivt files</em> are identified with the naming convention
-rv-A01-filename.py, in contrast with rvA01-filename for private files.
-After downloading a public rivt file, use the <em>Batch Rename</em> extension to delete the hyphen after <em>rv</em> and convert it to a
-private rivt file.</p>
+rv-A01-filename.py, in contrast with rvA01-filename for an active, private
+files. After downloading a public rivt file, use the <em>Batch Rename</em>
+extension to delete the hyphen after <em>rv</em> and convert it to an active rivt
+file.</p>
 </dd>
 </dl>
 </li>
 <li><p>Files may be collaboratively edited in real time using VSCode with the
-extension  <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare" rel="noreferrer" target="_blank">Visual Studio Live Share</a>.
-extension.</p></li>
+extension  <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare" rel="noreferrer" target="_blank">Visual Studio Live Share</a>.</p></li>
 <li><p>Contribute to rivtlib at <a class="reference external" href="https://github.com/rivtlib-dev/rivtlib" rel="noreferrer" target="_blank">rivtlib-dev</a>
 and documentation at <a class="reference external" href="https://github.com/rivt-in" rel="noreferrer" target="_blank">rivt-info</a>.</p>
 <blockquote>
@@ -432,24 +429,20 @@ and documentation at <a class="reference external" href="https://github.com/rivt
 </ul>
 </div></blockquote>
 </li>
-<li><dl class="simple">
-<dt>Contribute extensions and scripts that improve interaction <em>rivt</em> with other</dt><dd><p>components of the <em>rivt framework</em>.</p>
-</dd>
-</dl>
-</li>
+<li><p>Contribute extensions and scripts that improve the interaction of
+<em>rivt</em> with other components of the <em>rivt framework</em>.</p></li>
 </ol>
 </section>
 <section id="t-git-and-github">
 <h2><strong>[2t]</strong> Git and GitHub<a class="headerlink" href="#t-git-and-github" title="Link to this heading">#</a></h2>
-<hr><p><a class="reference external" href="https://git-scm.com/" rel="noreferrer" target="_blank">Git</a> is part of the <em>rivt framework</em>. It is a free,
-open-source, distributed version control system designed to manage and track
-changes in files. It allows multiple people to work on the same project
-simultaneously without overwriting each other’s work.</p>
-<p><a class="reference external" href="https://github.com/" rel="noreferrer" target="_blank">GitHub</a> is also part of the <em>rivt framework</em>. It is a
-web-based platform for hosting, managing, and collaborating on code built
-around Git. It allows teams to work together efficiently on software projects
-and provides features like pull requests, issue tracking, and project
-management.</p>
+<hr><p><a class="reference external" href="https://git-scm.com/" rel="noreferrer" target="_blank">Git</a> and <a class="reference external" href="https://github.com/" rel="noreferrer" target="_blank">GitHub</a> are part of
+the <em>rivt framework</em>. <em>Git</em> is a free, open-source, distributed version control
+system designed to manage and track changes in files. It allows multiple people
+to work on the same project simultaneously without overwriting each other’s
+work. <em>GitHub</em> is a web-based platform for hosting, managing, and collaborating
+on code built around Git. It allows teams to work together efficiently on
+software projects and provides features like pull requests, issue tracking, and
+project management.</p>
 <p>Each <em>rivt project</em> is typically stored in its own repository. Every user of
 GitHub has a personal account with essentially unlimited repositories.Free
 accounts provide for:</p>
@@ -531,12 +524,12 @@ folders are visible or editable by guests, ensuring security and focus</p></li>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rvD06-reportex.html"
+       href="rvD09-markup-d.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>D.5 Example</strong></p>
+        <p class="prev-next-title"><strong>C.9 Doc - rv.D</strong></p>
       </div>
     </a>
     <a class="right-next"

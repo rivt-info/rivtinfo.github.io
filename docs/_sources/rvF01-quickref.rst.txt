@@ -37,8 +37,20 @@ is the :term:`header substring`.
         
         """)
 
-The default setting for each API is listed **in bold** in the table below.
-Default settings in the *header substring* do not need to be specified.
+
+Default settings in the *header substring* do not need to be specified. The
+default setting for each API is listed first (in bold) in the table below.
+The default privacy settings for all sections in a rivt file may be reversed by
+including the *public comment setting* immeditely following the 
+*rivlib import statement*. Individual sections may still be set as private 
+in the header substring.
+
+.. code:: python
+
+    import rivtlib.rvapi as rv
+
+    # rv public=True
+ 
 
 ========== ===================== ===================== =====================
 API          private;public         doc;stored           section;merge         
