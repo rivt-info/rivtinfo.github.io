@@ -31,29 +31,27 @@
       rvDocNumber-filename.py 
   
    for active, private files stored in the report root directory. After
-   downloading shared rivt files, use the *Batch Rename* extension to delete
-   the hyphen and convert it to an active rivt file. Public *rivt files* may be
-   collaboratively improved by:
+   downloading shared rivt files, use the a *batch rename* extension or utility
+   to delete the hyphen and convert it to an active rivt file form. *Public rivt
+   files* may be collaboratively improved by:
     
    - forking to create different versions.
    - providing pull requests.
    - submitting issues and bugs.
 
-#.  Files may be collaboratively edited in real time using VSCode with the
-    extension  `Visual Studio Live Share
-    <https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare>`_.    
-
-
-#. Contribute to rivtlib at `rivtlib-dev <https://github.com/rivtlib-dev/rivtlib>`_ 
-   and documentation at `rivt-info <https://github.com/rivt-in>`_.
+#. Contributions to rivtlib at `rivtlib-dev <https://github.com/rivtlib-dev/rivtlib>`_ 
+   and documentation at `rivt-info <https://github.com/rivt-in>`_ in the from of;
     
    - report issues and bugs
    - issue pull requests to propose changes
-   - contribute to documentation
+   - improved documentation
 
+#. Contributioons to extensions and scripts that improve the interaction of 
+   *rivt* with other components in the *rivt framework*.
 
-#. Contribute extensions and scripts that improve the interaction of 
-   *rivt* with other components of the *rivt framework*.
+#.  Collaborative editing in *VSCode* using `Visual Studio Live Share
+    <https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare>`_.    
+
 
 **[2t]** Git and GitHub
 ---------------------------
