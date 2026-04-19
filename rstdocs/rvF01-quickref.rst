@@ -4,7 +4,7 @@
 
 .. _API Summary:
 
-**[1t]** API Summary
+**[1t]** API
 --------------------------------------------------------------------- 
 
 .. raw:: html
@@ -28,6 +28,9 @@ Function           Name             Purpose
 where **rS** is a *rivt string*. The first line of a *rivt string* (rS)
 is the :term:`header substring`.
 
+
+**Header substrings**
+
 .. code-block:: python
 
     rv.I("""A New Section | private, doc, section
@@ -41,7 +44,7 @@ is the :term:`header substring`.
 Default settings in the *header substring* do not need to be specified. The
 default setting for each API is listed first (in bold) in the table below.
 The default privacy settings for all sections in a rivt file may be reversed by
-including the *public comment setting* immeditely following the 
+including the *public setting* and setting it to True, immediately following the 
 *rivlib import statement*. Individual sections may still be set as private 
 in the header substring.
 
@@ -51,6 +54,7 @@ in the header substring.
 
     # rv public=True
  
+**Header substring defaults**
 
 ========== ===================== ===================== =====================
 API          private;public         doc;stored           section;merge         
@@ -124,7 +128,7 @@ all         **_[[END]]**                              :ref:`End block`
 
 .. _Commmands:
 
-**[4t]** Command Summary
+**[4t]** Commands
 -------------------------------------
 
 .. raw:: html
@@ -208,19 +212,15 @@ are in the default path only the file name needs to be provided.
 
 .. code-block:: bash
 
-   [rivt-]Report-Label/                  Report Folder Name
-        ├── [.vscode]/                       optional VSCode settings                    
+   [rivt-]Report-Label/                Report Folder Name
+        ├── .vscode/                         optional VSCode settings                    
+        ├── [conf.py]                        configuration file    
         ├── [rv101-]filename1.py             rivt file
         ├── [rv102-]filename2.py             rivt file       
         ├── [rv201-]filename3.py             rivt file          
-        ├── [rv202-]filename4.py             rivt file                        
-        ├── [_public]/                       public rivt files                      
-            ├── rv_101-filename1.py              
-            ├── rv_102-filename1.py              
-            ├── rv_201-filename3.py  
-            └── rv_202-filename4.py    
+        ├── [rv202-]filename4.py             rivt file                           
         ├── [_publish]/                      published docs and reports
-            ├── [docs]/                      html output 
+            ├── [docs]/                         html docs
                 ├── _images/                
                 ├── _sources/              
                 ├── _static/    
@@ -230,31 +230,18 @@ are in the default path only the file name needs to be provided.
                 ├── rv102-filename2.html                      
                 ├── rv201-filename3.html                        
                 ├── rv202-filename4.html         
-            ├── [pdfdocs]/                   pdf doc output
+            ├── [pdfdocs]/                      pdf docs
                 ├── process folders/             
-                ├── rv-101-filename1.pdf             
-                ├── rv-102-filename1.pdf             
-                ├── rv-201-filename3.pdf 
-                └── rv-202-filename4.pdf  
-            └── [txtdocs]/                   text output 
-                ├── rv-101-filename1.txt              
-                ├── rv-102-filename1.txt             
-                ├── rv-201-filename3.txt 
-                └── rv-202-filename4.txt        
-        ├── [_stored]/                       stored files from rivt            
-            ├── [Logs]/                      log files
-                ├── rv101-log.txt
-                └── rv102-log.txt
-            ├── [Sect]/                      stored sections                    
-                ├── rv202-5d.txt   
-                ├── rv103-4t.txt                         
-                └── rv301-2r.txt               
-            ├── [Temp]/                      temp files
-                └── rv101-label3.tex
-            └── [Vals]/                      stored value files
-                ├── v101-2.csv
-                └── v102-3.csv     
-        ├── [Rst_docs]/                      restructured text files
+                ├── rv101-filename1.pdf             
+                ├── rv102-filename1.pdf             
+                ├── rv201-filename3.pdf 
+                └── rv202-filename4.pdf  
+            └── [txtdocs]/                      text docs
+                ├── rv101-filename1.txt              
+                ├── rv102-filename1.txt             
+                ├── rv201-filename3.txt 
+                └── rv202-filename4.txt
+        ├── [_rstdocs]/                      restructured text files
             ├── _downloads/                    
             ├── _static/                       
             ├── _locale/                       
@@ -262,52 +249,65 @@ are in the default path only the file name needs to be provided.
             ├── rv101-filename1.rst            
             ├── rv102-filename2.rst                          
             ├── rv201-filename3.rst          
-            ├── rv202-filename4.rst
-            ├── gen-html.cmd                 html generating script
-            ├── gen-pdf.cmd                  pdf generating script
-            ├── gen-pdftex.cmd               LaTeX generating script
-            ├── rivt-report.py               report generating script
-            ├── new-units.py                 define new units          
-            ├── coverpage.rst                cover page template
-            ├── logoname.png                 cover page logo
-            └── conf.py                      style paths and settings              
-                ├── [Src]                            source files from author               
-            ├── data/                        author created subfolder
+            └── rv202-filename4.rst
+        ├── [_shared]/                       public rivt files                      
+            ├── rv-101-filename1.py              
+            ├── rv-102-filename1.py              
+            ├── rv-201-filename3.py  
+            └── rv-202-filename4.py 
+        ├── [_stored]/                       stored files genereatd by rivt            
+            ├── [Logs]/                         log files
+                ├── rv101-log.txt
+                └── rv102-log.txt
+            ├── [Sect]/                         sections                    
+                ├── rv202-5d.txt  
+                ├── rv103-4t.txt                         
+                └── rv301-2r.txt               
+            ├── [Temp]/                         temp files
+                └── rv101-label3.tex
+            └── [Vals]/                         stored value files
+                ├── v101-2.csv
+                └── v102-3.csv                 
+        ├── [Src]                            source files from author               
+            ├── data/                            author created subfolder
                 ├── data1.csv 
                 ├── opensees1.txt   
                 └── conc-vals.csv  
-            ├── image/                       author created subfolder                          
+            ├── image/                           author created subfolder                          
                 ├── fig1.png
                 └── fig2.jpg   
             ├── [Run]/                       OS commands
-                    ├── run1_win.cmd                               
-                    └── run1_linux.sh            
+                    ├── run1_win.cmd             windows command file                  
+                    └── run1_linux.sh            linux command file
             ├── [Tools]/                     scripts and functions
-                    ├── plot.py                               
-                    └── loads.py
+                ├── rivt-report.py               report generating script
+                ├── new-units.py                 define new units          
+                ├── coverpage.rst                cover page template
+                ├── logoname.png                 cover page logo
+                ├── plot.py                      functions        
+                └── loads.py                     functions
             └── [Vals]/                      value files
                 ├── steel-vals.csv     
-                └── plastic-vals.csv  
+                └── plastic-vals.csv   
         └── README.txt                       searchable text report 
-
 
 
 .. _Project requirements:
 
-**[6t]** Project requirements
+**[6t]** Python requirements
 -------------------------------------
 
 .. raw:: html
 
     <hr>
 
-The minimum Python version is *3.14*. A *rivt* project installation 
-includes Python packages for:
+The minimum Python version is *3.14*. Project installation packages include:
 
-- document formatting
+- formatting
 - numerical analysis
 - symbolic processing
 - visualization
+- IDE
 
 =============================================== ================================
       Dependency                                      description
@@ -366,7 +366,7 @@ Global settings can be exported and imported using VSCode Profiles. VSCode
 *rivt* extensions and settings may be installed from this link.
 
 ============================================== ===============================
-Extensions                                       description
+Extension                                        description
 ============================================== ===============================
 **BUTTONS**                                         ---
 tombonnike.vscode-status-bar-format-toggle          format button
@@ -438,15 +438,17 @@ yzane.markdown-pdf                                  markdown to pdf
 yzhang.markdown-all-in-one                          markdown tools
 ============================================== ===============================
 
+**Snippets and extensions**
 
-============== ==============================================================
-Snippets/Keys            description
-============== ==============================================================
-run                 API Run function
-ins                 API Insert function   
-val                 API Values function
-too                 API Tools function
-wri                 API Write function
+================= ==============================================================
+Keystrokes                   Description
+================= ==============================================================
+rvr                 API Run 
+rvi                 API Insert    
+rvv                 API Values 
+rvt                 API Tools 
+rvd                 API Docs
+alt+ctrl+c          insert cell marker with label above API function
 alt+q               rewrap paragraph with hard line feeds (80 default)
 alt+p               open file under cursor
 alt+.               select correct spelling under cursor
@@ -472,8 +474,9 @@ ctl+shift+s         open GitHub README search for rivt
 ctl+shift+a         commit all 
 ctl+shift+z         commit the current editor
 ctl+shift+x         post to remote   
-============== ==============================================================
+================= ==============================================================
 
+**Modified Keyboard Shortcuts**
 
 ============== ===========================================================
 Keystroke                   Description
