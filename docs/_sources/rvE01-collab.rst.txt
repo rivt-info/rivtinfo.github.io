@@ -26,9 +26,9 @@
    with an added hypen prefix. The file is writtnen to the *_shared* folder. 
    This is in contrast with the form: 
   
-  .. code-block:: bash
+   .. code-block:: bash
 
-     rvDocNumber-filename.py 
+      rvDocNumber-filename.py 
   
    for active, private files stored in the report root directory. After
    downloading shared rivt files, use the *Batch Rename* extension to delete
