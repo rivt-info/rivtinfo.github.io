@@ -28,15 +28,15 @@ default (see `:doc: <rvF01-quickref>`).
 Sections are written to a rivt file in the */public* folder with a file name
 composed as:
 
-        .. code-block:: text
+.. code-block:: text
 
-            rivt file name
+    rivt file name
 
-                rvAnn-filename.py
+        rvAnn-filename.py
 
-            modified with an additional hyphen
-        
-                rv-Ann-filename.py
+    modified with an additional hyphen
+
+        rv-Ann-filename.py
 
 The public folder may be uploaded to a GitHub repo for public sharing. When
 downloaded the extra hyphens may be removed with a batch remove command (e.g.

@@ -110,8 +110,8 @@ rivt editing and collaboration environment in the cloud.
     <hr>
 
 `VSCode <https://code.visualstudio.com/>`_ is an open source IDE with a large
-set of extensions, including collaboration support. 
-Collaboration is facilitated by the `Visual Studio Live Share
+set of extensions, including collaboration support. Collaboration is 
+facilitated by the `Visual Studio Live Share
 <https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare>`_. 
 You can start a *Live Share* session either within *CodeSpaces* in 
 your browser, or within the *VS Code* desktop application. *CodeSpaces* 
@@ -137,6 +137,7 @@ The *Live Share* extension enables:
 
 .. toctree::
     :maxdepth: 1
+    :hidden:
 
     rvE02-publicrivt.rst
     rvE03-git.rst
