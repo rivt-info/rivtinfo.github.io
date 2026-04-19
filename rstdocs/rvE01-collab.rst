@@ -12,23 +12,35 @@
  the tools available in the Python and VSCode ecosystem.
 
 
-#. :doc:`Public rivt files <rvE04-publicrivt>` may be shared by uploading them
-    to repositories like *GitHub*.  Public *rivt files* can be found and 
-    downloaded using the :doc:`search interface <rvE03-ghsearch>`. Public 
-    rivt files may be improve by: 
-
-    - forking to create different versions.
-    - providing pull requests.
-    - submitting issues and bugs.
+#. :doc:`Public rivt files <rvE04-publicrivt>` 
+   may be shared by uploading them to repositories e.g. *GitHub*.  
+   Public *rivt files* can be found and downloaded using the 
+   :doc:`search interface <rvE03-ghsearch>`. 
+    
+   They may be collaboratively improved by:
+    
+   - forking to create different versions.
+   - providing pull requests.
+   - submitting issues and bugs.
   
+   *Public rivt files* are identified with the naming convention
   
-    *Public rivt files* are identified with the naming convention
-    rv-A01-filename.py and written to the *_shared* folder. This is in contrast
-    with the form *rvA01-filename* for active, private files stored in the
-    report root directory. After downloading a shared rivt file, use the *Batch
-    Rename* extension to delete the hyphen after *rv* and convert it to an
-    active rivt file.
+   .. code-block:: bash
 
+    rv-DocNumber-filename.py
+
+   where the doc name and number are the doc number of the corresponding *doc* e.g.
+   with an added hypen prefix. The file is writtnen to the *_shared* folder. 
+  
+   This is in contrast with the form: 
+  
+  .. code-block:: bash
+
+    rvDocNumber-filename.py 
+  
+   for active, private files stored in the report root directory. After 
+   downloading shared rivt files, use the *Batch Rename* extension to delete 
+   the hyphen and convert it to an active rivt file.
 
 #.  Files may be collaboratively edited in real time using VSCode with the
     extension  `Visual Studio Live Share
@@ -38,9 +50,9 @@
 #. Contribute to rivtlib at `rivtlib-dev <https://github.com/rivtlib-dev/rivtlib>`_ 
    and documentation at `rivt-info <https://github.com/rivt-in>`_.
     
-    - report issues and bugs
-    - issue pull requests to propose changes
-    - contribute to documentation
+  - report issues and bugs
+  - issue pull requests to propose changes
+  - contribute to documentation
 
 
 #. Contribute extensions and scripts that improve the interaction of 
