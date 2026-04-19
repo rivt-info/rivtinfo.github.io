@@ -8,9 +8,8 @@
 
     <hr>
 
- There are several ways to collaborate on *rivt files* by building on
- the tools available in the Python and VSCode ecosystem.
-
+There are several ways to collaborate on *rivt files* by using
+tools available in the Python, GitHub and VSCode ecosystem.
 
 #. :doc:`Public rivt files <rvE04-publicrivt>` 
    may be shared by uploading them to repositories e.g. *GitHub*.  
@@ -31,7 +30,7 @@
       rvDocNumber-filename.py 
   
    for active, private files stored in the report root directory. After
-   downloading shared rivt files, use the a *batch rename* extension or utility
+   downloading shared rivt files, use a *batch rename* extension or utility
    to delete the hyphen and convert it to an active rivt file form. *Public rivt
    files* may be collaboratively improved by:
     
@@ -52,8 +51,18 @@
 #.  Collaborative editing in *VSCode* using `Visual Studio Live Share
     <https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare>`_.    
 
+**[2t]** Open Models
+---------------------------
 
-**[2t]** Git and GitHub
+.. raw:: html
+
+    <hr>
+
+The web site `OpenModels.info <https://www.openmodels.info/>`__ is a
+*Google Drive* repository of open source engineernig model files, including
+*rivt files* and *reports*.
+
+**[3t]** Git and GitHub
 ---------------------------
 
 .. raw:: html
@@ -93,7 +102,7 @@ accounts provide for:
 to GitHub files. It can be set up with *rivt extensions* that provide a complete
 rivt editing and collaboration environment in the cloud.
 
-**[3t]** VSCode
+**[4t]** VSCode
 ------------------
 
 .. raw:: html
