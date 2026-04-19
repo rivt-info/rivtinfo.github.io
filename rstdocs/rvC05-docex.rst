@@ -9,9 +9,8 @@
 
     <hr>
 
-This is a small rivt file that publishes a single *doc* The report folders are
-not used. It has 4 API functions - two of them are
-published. The output is written to the terminal.
+This is a small rivt file that publishes a single *doc* It has 4 API functions
+- two of them are published. The output is written to the terminal.
 
 .. raw:: html
 

@@ -11,22 +11,22 @@
 
 *rivt* is an open source software project that simplifies sharing and reuse of
 engineering documents. This has always been a challenge because the inclusion
-of text, images, tables, calculations, models and computer code 
-required in reports has led to incompatible programs. Sharing and reuse has
-been restricted by the design and terms of use of existing software, including:
+of text, images, tables, calculations, models and computer code required in
+enginering reports has led to deevlopment of incompatible, mutually exclusive
+software. Sharing and reuse has been restricted by design and terms of use
+of existing software. This includes:
 
-- documents written by different programs are incompatible
-- frequent software updates are needed to maintain document access
-- update costs are high
-- newer document formats become inaccessible without upgrades
-- software is limited to specific platforms
-- document version control is limited
-- report generation features are limited
-- collaboration features are limited
+- incompatible documents from different programs
+- frequent software updates needed to maintain document access
+- high update costs
+- software limited to specific platforms
+- limited document version control
+- limited report generation features
+- limited collaboration features
 
-The table below summarizes and compares limitations between different software
-programs. *rivt* is designed to address these limitations and function as a
-complement or replacement to existing software.
+*rivt* is designed to address these limitations and function as a complement or
+replacement to existing software. The table below summarizes and compares
+limitations between different software programs.
 
 .. rst-class:: center
 
@@ -62,12 +62,14 @@ Jupyter        no       no         no      yes         yes      yes
     <hr>
 
 The primary use case for *rivt* is producing engineering documents that lie
-somewhere between back of envelope notes and calculations, and formal journal
-publications. In other words, it produces formatted, organized documents that
-are easy to edit. 
+between back of envelope calculations and sketches, and formal journal
+publications. In other words, it produces clear, formatted, organized documents
+that are easy to write and edit.
 
 The second use case is when flexibilty is needed to produce documents in
 a variety of formats including text, PDF or HTML.
+
+A third use case is when documents need to interact with other software programs.
 
 *rivt files* can function as a front and back end for:
 
@@ -83,8 +85,8 @@ a variety of formats including text, PDF or HTML.
 #. technical reports
 #. funding applications
 
-Because *rivt* is compatible with collaborative tools it may be used in:
+Because *rivt* is compatible with collaborative tools it may be used for:
 
 #. teaching
-#. for presentations
+#. presentations
 #. real time collaboration

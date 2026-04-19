@@ -246,7 +246,7 @@ processing HTML, LaTeX and reStructuredText scripts.
         | COMMAND | relative path | parameters
 
     File paths are specified relative to the *rivt root folder*. The *rivt
-    report* folder structure is described :doc:`here<rvC03-folders>`.
+    report* folder structure is described :doc:`here<rvC02-folders>`.
 
     If the path is ommitted the default path for each command is applied. If
     the *singledoc* parameter is set, the *resource files* and *docs* are
