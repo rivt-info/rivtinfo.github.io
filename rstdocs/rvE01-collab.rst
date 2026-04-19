@@ -136,7 +136,7 @@ The *Live Share* extension enables:
   folders are visible or editable by guests, ensuring security and focus
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 1
 
     rvE02-publicrivt.rst
     rvE03-git.rst
