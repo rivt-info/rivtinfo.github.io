@@ -91,6 +91,10 @@ dropped in the formatted output.
 **[2t]** rivt API
 ------------------------------------------------------------------------ 
 
+.. raw:: html
+
+    <hr>
+
 The *rivt API* includes  :ref:`API functions <API functions>`, 
 :ref:`markup` and :ref:`files <Files and folders>`.  The API is designed 
 to be:

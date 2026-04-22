@@ -1,7 +1,7 @@
 **A.1 Start**
 =====================================================================
 
-**[1t]** Run examples
+**[1t]** How to Run 
 --------------------------------------------------------------------- 
 
 .. raw:: html
@@ -14,33 +14,47 @@ cases editing is typically carried out in an :term:`IDE`.
 
 For a general overview of *rivt* start :doc:`here <rvB01-overview>`.
 
-The three methods for installing and running *rivt* are:
+The three methods for running *rivt* are:
 
-1. *rivt-Codespace* in the cloud is described :ref:`here <Codespace>`
-2. *rivt-portable* installation on Windows is described :ref:`here <rivt-portable>`
-3. System installation with or without *uv* is described :ref:`here <rivt-sys>`
+1. *Codespace-rivt* runs the cloud and is described :ref:`here <Code-rivt>`
+2. *Portable-rivt-VSCode* runs locally on Windows and is described :ref:`here <rivt-portable>`
+3. *System-rivt-uv* runs locally and is described :ref:`here <rivt-sys>`
 
-*rivt-portable* is recommended for Windows users unfamiliar with Python.
-*rivt-Codespace* is recommended when local installation is not practical or
-work is shared with teams. System installations are recommended for the most
+*Codespace-rivt* is recommended when local installation is not practical or desired 
+and work is shared with teams. System installations are recommended for the most
 general and flexible implementation.
 
-A typical **IDE** layout can be viewed at 
-`Codesandbox <https://codesandbox.io/p/devbox/rivt1-dkmqfm?file=%2Frv001-single-doc.txt>`__.
+*Portable-rivt-VSCode* is recommended for Windows users unfamiliar with Python.
+
+*System-rivt-uv* is recommended for users with some familiarity with Python and
+and provides the most flexible and extensible environment.
+
+**[2t]** Typical IDE layout 
+--------------------------------------------------------------------- 
 
 .. figure::  _static/img/ide2.png
     :class: dark-light
-    :width: 90%
+    :width: 70%
     :align: center
     :alt: ide layout
 
-This explorable browser example gives a feel for a rivt file (left panel) and
-text doc (right panel). Docs (output files) may be downloaded from the file explorer 
-(far left panel) including the text, pdf and html reports. 
+*rivt* can be run from the command line but efficient editing and running of
+*rivt files* is typically done in an :term:`IDE`. A typical **IDE** layout can
+be viewed at
 
-.. _Codespace:
+`Codesandbox <https://codesandbox.io/p/devbox/rivt1-dkmqfm?file=%2Frv001-single-doc.txt>`__.
 
-**[2t]** Codespace
+
+This explorable browser example shows the *rivt file* in the left panel, the
+text *doc* output in the right panel or second tab, and the file explorer in
+the far left panel. Docs (txt, PDF and HTML output files) can be downloaded
+from the file explorer including the text, pdf and html reports. The IDE cannot
+be used to run files. Setting up a GitHub account and forking Codespace-rivt is
+:ref:`needed <Code-rivt>`.
+
+.. _Code-rivt:
+
+**[2t]** Codespace-rivt
 --------------------------------------------------------------------- 
 
 *VSCode* can be run locally or in the cloud. For local installation 
@@ -87,7 +101,7 @@ by following the steps below.  Example rivt files are included.
 
 .. _rivt-portable:
 
-**[3t]** rivt-portable
+**[3t]** Portable-rivt-vscode
 --------------------------------------------------------------------- 
 
 .. raw:: html
@@ -137,7 +151,7 @@ more difficult to integrate with other Python programs.
 
 .. _rivt-sys:
 
-**[4t]** System and uv
+**[4t]** System-rivt-uv
 --------------------------------
 
 .. raw:: html

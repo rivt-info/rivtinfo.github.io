@@ -289,15 +289,15 @@ using the following format:
     <b>Folder Names</b><br>
     <br>
     
-    A rivt report folder can contain any set of files and folders but the
-    following structure is required for doc processing. Files and folders are
+    A rivt folder can contain any set of files and folders but the following
+    structure is required for <i>doc</i> processing. Files and folders are
     organized under a root folder with the prefix <i>rivt-</i> e.g.
     <i>rivt-Report-Label</i>. <br> <br>
     
-    The root folder includes at least the rivt files and five required
-    subfolders. Required folders and prefixes are shown in brackets. Folders
-    preceded by an underscore contain rivt outputs. Capitalized folder names
-    contain files requiring author input. <br> <br>
+    <i>rivt folders</i> (root folders) include at least the <i>rivt files</i> 
+    and the five required subfolders. Required folders and prefixes are 
+    shown in brackets. Folders preceded by an underscore contain rivt outputs. 
+    Folders requiring author input are capitalized. <br> <br>
 
 The top level folder structure is shown below. A more detailed description of
 the folder structure is :ref:`here<report-folders>`.
@@ -307,7 +307,6 @@ the folder structure is :ref:`here<report-folders>`.
 .. code-block:: bash
 
     [rivt-]Report-Label/                Report Folder
-        ├── [conf.py]                   configuration file
         ├── [rv101-]filename1.py        rivt file
         ├── [rv102-]filename2.py        rivt file
         ├── [rv201-]filename3.py        rivt file

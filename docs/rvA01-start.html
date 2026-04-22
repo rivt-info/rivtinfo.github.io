@@ -393,34 +393,44 @@
                   
   <section id="a-1-start">
 <h1><strong>A.1 Start</strong><a class="headerlink" href="#a-1-start" title="Link to this heading">#</a></h1>
-<section id="t-run-examples">
-<h2><strong>[1t]</strong> Run examples<a class="headerlink" href="#t-run-examples" title="Link to this heading">#</a></h2>
+<section id="t-how-to-run">
+<h2><strong>[1t]</strong> How to Run<a class="headerlink" href="#t-how-to-run" title="Link to this heading">#</a></h2>
 <hr><p>This section explains how to get started in editing and running <em>rivt file</em>
 examples. Examples can be run in the cloud or on a local computer. In both
 cases editing is typically carried out in an <a class="reference internal" href="rvF02-terms.html#term-IDE"><span class="xref std std-term">IDE</span></a>.</p>
 <p>For a general overview of <em>rivt</em> start <a class="reference internal" href="rvB01-overview.html"><span class="doc">here</span></a>.</p>
-<p>The three methods for installing and running <em>rivt</em> are:</p>
+<p>The three methods for running <em>rivt</em> are:</p>
 <ol class="arabic simple">
-<li><p><em>rivt-Codespace</em> in the cloud is described <a class="reference internal" href="#codespace"><span class="std std-ref">here</span></a></p></li>
-<li><p><em>rivt-portable</em> installation on Windows is described <a class="reference internal" href="#rivt-portable"><span class="std std-ref">here</span></a></p></li>
-<li><p>System installation with or without <em>uv</em> is described <a class="reference internal" href="#rivt-sys"><span class="std std-ref">here</span></a></p></li>
+<li><p><em>Codespace-rivt</em> runs the cloud and is described <a class="reference internal" href="#code-rivt"><span class="std std-ref">here</span></a></p></li>
+<li><p><em>Portable-rivt-VSCode</em> runs locally on Windows and is described <a class="reference internal" href="#rivt-portable"><span class="std std-ref">here</span></a></p></li>
+<li><p><em>System-rivt-uv</em> runs locally and is described <a class="reference internal" href="#rivt-sys"><span class="std std-ref">here</span></a></p></li>
 </ol>
-<p><em>rivt-portable</em> is recommended for Windows users unfamiliar with Python.
-<em>rivt-Codespace</em> is recommended when local installation is not practical or
-work is shared with teams. System installations are recommended for the most
+<p><em>Codespace-rivt</em> is recommended when local installation is not practical or desired
+and work is shared with teams. System installations are recommended for the most
 general and flexible implementation.</p>
-<p>A typical <strong>IDE</strong> layout can be viewed at
-<a class="reference external" href="https://codesandbox.io/p/devbox/rivt1-dkmqfm?file=%2Frv001-single-doc.txt" rel="noreferrer" target="_blank">Codesandbox</a>.</p>
+<p><em>Portable-rivt-VSCode</em> is recommended for Windows users unfamiliar with Python.</p>
+<p><em>System-rivt-uv</em> is recommended for users with some familiarity with Python and
+and provides the most flexible and extensible environment.</p>
+</section>
+<section id="t-typical-ide-layout">
+<h2><strong>[2t]</strong> Typical IDE layout<a class="headerlink" href="#t-typical-ide-layout" title="Link to this heading">#</a></h2>
 <figure class="align-center">
-<a class="dark-light reference internal image-reference" href="_images/ide2.png"><img alt="ide layout" class="dark-light" src="_images/ide2.png" style="width: 90%;" />
+<a class="dark-light reference internal image-reference" href="_images/ide2.png"><img alt="ide layout" class="dark-light" src="_images/ide2.png" style="width: 70%;" />
 </a>
 </figure>
-<p>This explorable browser example gives a feel for a rivt file (left panel) and
-text doc (right panel). Docs (output files) may be downloaded from the file explorer
-(far left panel) including the text, pdf and html reports.</p>
+<p><em>rivt</em> can be run from the command line but efficient editing and running of
+<em>rivt files</em> is typically done in an <a class="reference internal" href="rvF02-terms.html#term-IDE"><span class="xref std std-term">IDE</span></a>. A typical <strong>IDE</strong> layout can
+be viewed at</p>
+<p><a class="reference external" href="https://codesandbox.io/p/devbox/rivt1-dkmqfm?file=%2Frv001-single-doc.txt" rel="noreferrer" target="_blank">Codesandbox</a>.</p>
+<p>This explorable browser example shows the <em>rivt file</em> in the left panel, the
+text <em>doc</em> output in the right panel or second tab, and the file explorer in
+the far left panel. Docs (txt, PDF and HTML output files) can be downloaded
+from the file explorer including the text, pdf and html reports. The IDE cannot
+be used to run files. Setting up a GitHub account and forking Codespace-rivt is
+<a class="reference internal" href="#code-rivt"><span class="std std-ref">needed</span></a>.</p>
 </section>
-<section id="t-codespace">
-<span id="codespace"></span><h2><strong>[2t]</strong> Codespace<a class="headerlink" href="#t-codespace" title="Link to this heading">#</a></h2>
+<section id="t-codespace-rivt">
+<span id="code-rivt"></span><h2><strong>[2t]</strong> Codespace-rivt<a class="headerlink" href="#t-codespace-rivt" title="Link to this heading">#</a></h2>
 <p><em>VSCode</em> can be run locally or in the cloud. For local installation
 see <a class="reference internal" href="rvB01-overview.html#framework"><span class="std std-ref">[5t] Framework</span></a>.</p>
 <p>The cloud version is a <a class="reference external" href="https://github.com/features/codespaces" rel="noreferrer" target="_blank">Codespace</a> .
@@ -449,15 +459,15 @@ by following the steps below.  Example rivt files are included.</p>
 </figure>
 <aside class="topic">
 <p class="topic-title">Local installation methods</p>
-<p>1. Windows portable zip folder (<a class="reference internal" href="#rivt-portable"><span class="std std-ref">[3t] rivt-portable</span></a>) <em>rivt-portable</em> is
+<p>1. Windows portable zip folder (<a class="reference internal" href="#rivt-portable"><span class="std std-ref">[3t] Portable-rivt-vscode</span></a>) <em>rivt-portable</em> is
 recommended for Windows users unfamiliar with Python.</p>
 <ol class="arabic simple" start="2">
-<li><p>System Python  (<a class="reference internal" href="#rivt-sys"><span class="std std-ref">[4t] System and uv</span></a>) with or without uv manager (<a class="reference internal" href="#rivt-uv"><span class="std std-ref">rivt-uv</span></a>)</p></li>
+<li><p>System Python  (<a class="reference internal" href="#rivt-sys"><span class="std std-ref">[4t] System-rivt-uv</span></a>) with or without uv manager (<a class="reference internal" href="#rivt-uv"><span class="std std-ref">rivt-uv</span></a>)</p></li>
 </ol>
 </aside>
 </section>
-<section id="t-rivt-portable">
-<span id="rivt-portable"></span><h2><strong>[3t]</strong> rivt-portable<a class="headerlink" href="#t-rivt-portable" title="Link to this heading">#</a></h2>
+<section id="t-portable-rivt-vscode">
+<span id="rivt-portable"></span><h2><strong>[3t]</strong> Portable-rivt-vscode<a class="headerlink" href="#t-portable-rivt-vscode" title="Link to this heading">#</a></h2>
 <hr><p>A <em>rivt-portable</em> installation is recommended for Windows users
 unfamiliar with Python. <em>rivt-portable</em> is a zip file :</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>win64-rivt-portable-n.n.n[an].zip
@@ -491,8 +501,8 @@ approximately 1GB and 2GB respectively:</p>
 and extensions must be updated by updating the zip file as a whole, and it is
 more difficult to integrate with other Python programs.</p>
 </section>
-<section id="t-system-and-uv">
-<span id="rivt-sys"></span><h2><strong>[4t]</strong> System and uv<a class="headerlink" href="#t-system-and-uv" title="Link to this heading">#</a></h2>
+<section id="t-system-rivt-uv">
+<span id="rivt-sys"></span><h2><strong>[4t]</strong> System-rivt-uv<a class="headerlink" href="#t-system-rivt-uv" title="Link to this heading">#</a></h2>
 <hr><p><em>rivt</em> may be installed at the system level.</p>
 <ol class="arabic simple">
 <li><p>Install Python using <a class="reference external" href="https://www.python.org/downloads/" rel="noreferrer" target="_blank">Python installers</a>
@@ -617,10 +627,11 @@ uv<span class="w"> </span>cache<span class="w"> </span>clean
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-run-examples"><strong>[1t]</strong> Run examples</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-codespace"><strong>[2t]</strong> Codespace</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rivt-portable"><strong>[3t]</strong> rivt-portable</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-system-and-uv"><strong>[4t]</strong> System and uv</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-how-to-run"><strong>[1t]</strong> How to Run</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-typical-ide-layout"><strong>[2t]</strong> Typical IDE layout</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-codespace-rivt"><strong>[2t]</strong> Codespace-rivt</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-portable-rivt-vscode"><strong>[3t]</strong> Portable-rivt-vscode</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-system-rivt-uv"><strong>[4t]</strong> System-rivt-uv</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-uv">rivt-uv</a></li>
 </ul>
 </li>

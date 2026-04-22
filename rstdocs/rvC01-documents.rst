@@ -77,5 +77,5 @@ require running the rivt-report.py script.
 
     rvC03-files.rst
     rvC02-folders.rst
-    rvC04-setting.rst
+    rvC04-report.rst
     rvC05-docex.rst

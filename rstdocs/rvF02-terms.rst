@@ -12,30 +12,18 @@
 .. glossary::
   :sorted: 
     
-  doc
-  docs
-    A formatted document file output using the rivtlib package. 
-    A doc is a text, PDF or HTML file with the default name of the *rivt file* 
-    and file type suffix.
+  doc 
+  docs 
+    A formatted document file output using the rivtlib package. A doc file
+    is a text, PDF or HTML file with the name taken from the corresponding rivt
+    file.
 
-  single doc 
-  single docs 
-    A single doc is a rivt file that publishes a doc that is not part of 
-    a report and is used for quick docs that only require limited formatting. 
-    
-    It is specified in a comment variable directly after the *rivtlib* 
-    import statement.
-
-    # rv singledoc = True
-  
-    The default setting is False. The rivt file folder is used for 
-    source and output files. A folder structure is not used. 
-
-  doc number 
-    Prefix of a rivt and doc file name and used to organize a report. 
+  docnumber
+  doc number
+  doc numbers    
+    Prefix number of a rivt and doc file name used to organize a report. 
     It has the form *rvDss-filename.py* where D is a capital alphanumeric 
-    division number and ss is the subdivision number.
-
+    division number and nn is the subdivision number.
 
   division 
     A group of related rivt files organized in a report and labeled in

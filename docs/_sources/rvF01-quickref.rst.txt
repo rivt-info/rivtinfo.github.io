@@ -197,7 +197,7 @@ are in the default path only the file name needs to be provided.
 \| PUBLISH |        depends on file type
 ================ =========================
 
-[1]  use /stored/data/filename to read values defined in the rivt file
+[1]  use /_stored/Vals/filename to read values defined in the rivt file
 
 
 .. _Folders:
@@ -229,7 +229,7 @@ are in the default path only the file name needs to be provided.
                 ├── rv101-filename1.html      
                 ├── rv102-filename2.html                      
                 ├── rv201-filename3.html                        
-                ├── rv202-filename4.html         
+                └── rv202-filename4.html         
             ├── [pdfdocs]/                      pdf docs
                 ├── process folders/             
                 ├── rv101-filename1.pdf             
@@ -241,7 +241,7 @@ are in the default path only the file name needs to be provided.
                 ├── rv102-filename1.txt             
                 ├── rv201-filename3.txt 
                 └── rv202-filename4.txt
-        ├── [_rstdocs]/                      restructured text files
+        ├── [_rstdocs]/                     restructured text files
             ├── _downloads/                    
             ├── _static/                       
             ├── _locale/                       
@@ -250,16 +250,16 @@ are in the default path only the file name needs to be provided.
             ├── rv102-filename2.rst                          
             ├── rv201-filename3.rst          
             └── rv202-filename4.rst
-        ├── [_shared]/                       public rivt files                      
+        ├── [_shared]/                      public rivt files                      
             ├── rv-101-filename1.py              
             ├── rv-102-filename1.py              
             ├── rv-201-filename3.py  
             └── rv-202-filename4.py 
-        ├── [_stored]/                       stored files genereatd by rivt            
+        ├── [_stored]/                      rivt generated stored files (not printed) 
             ├── [Logs]/                         log files
                 ├── rv101-log.txt
                 └── rv102-log.txt
-            ├── [Sect]/                         sections                    
+            ├── [Sect]/                      rivt generated stored sections (not printed)                    
                 ├── rv202-5d.txt  
                 ├── rv103-4t.txt                         
                 └── rv301-2r.txt               
@@ -268,7 +268,7 @@ are in the default path only the file name needs to be provided.
             └── [Vals]/                         stored value files
                 ├── v101-2.csv
                 └── v102-3.csv                 
-        ├── [Src]                            source files from author               
+        ├── [Src]                           source files from author               
             ├── data/                            author created subfolder
                 ├── data1.csv 
                 ├── opensees1.txt   
@@ -276,17 +276,18 @@ are in the default path only the file name needs to be provided.
             ├── image/                           author created subfolder                          
                 ├── fig1.png
                 └── fig2.jpg   
-            ├── [Run]/                       OS commands
-                    ├── run1_win.cmd             windows command file                  
-                    └── run1_linux.sh            linux command file
-            ├── [Tools]/                     scripts and functions
-                ├── rivt-report.py               report generating script
-                ├── new-units.py                 define new units          
-                ├── coverpage.rst                cover page template
-                ├── logoname.png                 cover page logo
-                ├── plot.py                      functions        
-                └── loads.py                     functions
-            └── [Vals]/                      value files
+            ├── [Run]/                           OS commands
+                ├── run1_win.cmd                     windows command file                  
+                └── run1_linux.sh                    linux command file
+            ├── [Tools]/                         scripts and functions
+                ├── [conf.py]                        configuration file
+                ├── [rivt-report.py]                 report generating script
+                ├── new-units.py                     define new units          
+                ├── coverpage.rst                    cover page template
+                ├── logoname.png                     cover page logo
+                ├── plot.py                          functions        
+                └── loads.py                         functions
+            └── [Vals]/                     value files
                 ├── steel-vals.csv     
                 └── plastic-vals.csv   
         └── README.txt                       searchable text report 
@@ -355,8 +356,8 @@ following categories:
     <hr>
 
 Workspace extension and other settings are stored in the *.vscode* folder and
-can be included and moved as part of a *rivt report*. Settings that affect the
-*rivt* environment incldue:
+should be included as part of a *rivt folder*. Settings that affect the
+*rivt* editing and execution environment incldue:
 
 - rivt.code-snippets
 - settings.json (extension settings)

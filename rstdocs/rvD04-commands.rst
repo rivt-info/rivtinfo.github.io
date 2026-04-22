@@ -111,7 +111,7 @@ The *literal* type inserts text into the *doc* without formatting.
 If a *doc* is part of a report and no path is specified, the file is assumed to
 be in the default folder */src/data/* . Otherwise the path needs to be specified
 relative to the report root (rivt file folder). If the doc is a 
-:term:`single doc` the file is read from the rivt file folder.
+single doc the file is read from the rivt file folder.
 
 .. code-block:: text
 
@@ -146,7 +146,7 @@ specifies whether the first row is a column header.
 If a *doc* is part of a report and no path is specified, the file is assumed to
 be in the default folder */src/data/* . Otherwise the path needs to be specified
 relative to the report root (rivt file folder). If the doc is a 
-:term:`single doc` the file is read from the rivt file folder.
+single doc the file is read from the rivt file folder.
 
 .. topic:: | TABLE |   
 
@@ -181,7 +181,7 @@ of the image.
 
 If a *doc* is part of a report and no path is specified, the file is assumed to
 be in the default folder */src/img/* . Otherwise the path needs to be specified
-relative to the report root (rivt file folder). If the doc is a :term:`single doc` 
+relative to the report root (rivt file folder). If the doc is a single doc 
 the file is read from the rivt file folder.
 
 .. code-block:: text
@@ -217,7 +217,7 @@ of the image.
 If a *doc* is part of a report and no path is specified, the file is assumed to
 be in the default folder */src/img/* . Otherwise the path needs to be specified
 relative to the report root (rivt file folder). If the doc is a 
-:term:`single doc` the file is read from the rivt file folder.
+single doc the file is read from the rivt file folder.
 
 .. code-block:: text
 
@@ -257,7 +257,7 @@ If a *doc* is part of a report and no path is specified, the file is assumed to
 be in the default folder */src/vals/* . Otherwise the path needs to be
 specified relative to the report root (rivt file folder). If the values are
 read from prior calculated values, they will be found in the */stored/vals*
-folder. If the doc is a :term:`single doc` the file is read from the rivt file
+folder. If the doc is a single doc the file is read from the rivt file
 folder.
 
 .. code-block:: text
