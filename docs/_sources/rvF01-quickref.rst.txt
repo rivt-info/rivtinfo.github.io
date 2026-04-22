@@ -137,24 +137,24 @@ all         **_[[END]]**                              :ref:`End block`
 
 **format files and calculations**
 
-========== ============================================================== ========================
+========== ================================================================ ========================
 API Scope           Command                                                  Description
-========== ============================================================== ========================
+========== ================================================================ ========================
 rv.R        | **SHELL** | rel path | os, wait                               :ref:`Shell file`
 rv.I        | **TEXT** | rel path |  language                               :ref:`Text file`
-rv.V, I     | **TABLE** | rel path | title,width,rows,align,head,num        :ref:`Table file`     
-rv.V, I     | **IMAGE** | rel path | caption, scale, number                 :ref:`Image file`
+rv.V, I     | **TABLE** | rel path | title,width,rows,align,head,num;nonum  :ref:`Table file`     
+rv.V, I     | **IMAGE** | rel path | caption, scale, num;nonum              :ref:`Image file`
 rv.V, I     | **IMAGE2** | rel pth1, rel pth2 | cap1,cap2,sca1,sca2,num     :ref:`Adjacent images`
-rv.V        | **VALTABLE** | rel path | title, rows, number                 :ref:`Values file`     
+rv.V        | **VALTABLE** | rel path | title, rows, nun;nonum              :ref:`Values file`     
 rv.V        a **==:** 1*IN  | unit1, unit2, decimal | label                 :ref:`Define value`
-rv.V        c **<=:** expression | unit1, unit2, decimal | label, number    :ref:`Assign value`
-rv.V        c **:=:** expression | unit1, unit2, decimal | label, number    :ref:`Function value`
-rv.V        a **<** c | decimal | text1, text2, color1, color2              :ref:`Compare value`
+rv.V        c **<=:** expression | unit1, unit2, decimal | label,num;nonum  :ref:`Assign value`
+rv.V        c **:=:** function(x,y) | unit1, unit2, decimal | label,num     :ref:`Function value`
+rv.V        a **<** c | decimal | text1, text2, color1, color2, num;nonum   :ref:`Compare value`
 rv.V, T     | **PYTHON** | rel path | namespace                             :ref:`Python file`
 rv.T        | **MARKUP** | rel path | type                                  :ref:`Markup file`
 rv.D        | **ATTACHPDF** | rel path | place, title                       :ref:`Attach PDF`   
 rv.D        | **PUBLISH** | doc title | type                                :ref:`Publish doc` 
-========== ============================================================== ========================
+========== ================================================================ ========================
 
 
 **default paths for single docs**
