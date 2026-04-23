@@ -415,39 +415,44 @@ organized under a root folder with the prefix <i>rivt-</i> e.g.
 <i>rivt-Report-Label</i>. <br> <br>
 
 <i>rivt folders</i> (root folders) include at least the <i>rivt files</i>
-and the five required subfolders. Required folders and prefixes are
-shown in brackets. Folders preceded by an underscore contain rivt outputs.
-Folders requiring author input are capitalized. <br> <br>
+and the five required subfolders. Required folders and prefixes are shown
+in brackets[]. Folders preceded by an underscore contain rivt outputs.
+Folders and files requiring author input are capitalized. All files in the
+root folder except the README.txt file may require author input. <br> <br>
 
 A new <i>rivt folder</i> is typically copied from a similar folder or
 template and then edited. Several <i>rivt folder templates</i> are at
 <a href="https://drive.google.com/drive/folders/1hwVOs0CVJqdZlTieV_Lt5bICbd3ywzWj?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto">openmodels.info</a>.<p><strong>Top Level Folders</strong></p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt-<span class="o">]</span>Report-Label/<span class="w">                </span>Report<span class="w"> </span>Folder
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename1.py<span class="w">        </span>rivt<span class="w"> </span>file
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv102-<span class="o">]</span>filename2.py<span class="w">        </span>rivt<span class="w"> </span>file
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv201-<span class="o">]</span>filename3.py<span class="w">        </span>rivt<span class="w"> </span>file
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv202-<span class="o">]</span>filename4.py<span class="w">        </span>rivt<span class="w"> </span>file
-<span class="w">    </span>...
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt-<span class="o">]</span>Report-Label/<span class="w">             </span>Report<span class="w"> </span>Folder
 <span class="w">    </span>├──<span class="w"> </span>.vscode/<span class="w">                    </span>optional<span class="w"> </span>VSCode<span class="w"> </span>settings
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>_publish<span class="o">]</span>/<span class="w">                 </span>published<span class="w"> </span>docs<span class="w"> </span>and<span class="w"> </span>reports
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>_rstdocs<span class="o">]</span>/<span class="w">                 </span>restructured<span class="w"> </span>text<span class="w"> </span>files
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>_shared<span class="o">]</span>/<span class="w">                  </span>public<span class="w"> </span>rivt<span class="w"> </span>files
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>_stored<span class="o">]</span>/<span class="w">                  </span>stored<span class="w"> </span>files
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename1.py<span class="w">        </span>rivt<span class="w"> </span>file
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv102-<span class="o">]</span>filename2.py<span class="w">        </span>rivt<span class="w"> </span>file
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv201-<span class="o">]</span>filename3.py<span class="w">        </span>rivt<span class="w"> </span>file
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rv202-<span class="o">]</span>filename4.py<span class="w">        </span>rivt<span class="w"> </span>file
+<span class="w">    </span>...
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>Src<span class="o">]</span>/<span class="w">                      </span><span class="nb">source</span><span class="w"> </span>files
-<span class="w">    </span>└──<span class="w"> </span>README.txt<span class="w">                  </span>searchable<span class="w"> </span>text<span class="w"> </span>report
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>Conf.py<span class="o">]</span><span class="w">                   </span>configuration<span class="w"> </span>file
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>Rivt-report.py<span class="o">]</span><span class="w">            </span>report<span class="w"> </span>generating<span class="w"> </span>script
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>New-units.py<span class="o">]</span><span class="w">              </span>define<span class="w"> </span>new<span class="w"> </span>units<span class="w"> </span><span class="o">(</span>optional<span class="o">)</span>
+<span class="w">    </span>└──<span class="w">  </span>README.txt<span class="w">                  </span>text<span class="w"> </span>report<span class="w"> </span>written<span class="w"> </span>by<span class="w"> </span>rivt
 </pre></div>
 </div>
 <p><strong>Expanded Folders</strong></p>
-<p>A typical <a class="reference internal" href="rvF02-terms.html#term-rivt-folder"><span class="xref std std-term">rivt folder</span></a> structure is shown below. The <em>rivt file</em> names
-and <em>doc</em> references are shown in brackets. The <em>report folder structure</em> is
-described in <a class="reference internal" href="#report-folders"><span class="std std-ref">here</span></a>.</p>
+<p>A typical <a class="reference internal" href="rvF02-terms.html#term-rivt-folder"><span class="xref std std-term">rivt folder</span></a> structure is shown below. The required <em>rivt file</em>
+names and prefixes are shown in brackets.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt-<span class="o">]</span>Report-Label/<span class="w">                </span>Report<span class="w"> </span>Folder<span class="w"> </span>Name
-<span class="w">     </span>├──<span class="w"> </span>.vscode/<span class="w">                         </span>optional<span class="w"> </span>VSCode<span class="w"> </span>settings
-<span class="w">     </span>├──<span class="w"> </span><span class="o">[</span>conf.py<span class="o">]</span><span class="w">                        </span>configuration<span class="w"> </span>file
 <span class="w">     </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename1.py<span class="w">             </span>rivt<span class="w"> </span>file
 <span class="w">     </span>├──<span class="w"> </span><span class="o">[</span>rv102-<span class="o">]</span>filename2.py<span class="w">             </span>rivt<span class="w"> </span>file
 <span class="w">     </span>├──<span class="w"> </span><span class="o">[</span>rv201-<span class="o">]</span>filename3.py<span class="w">             </span>rivt<span class="w"> </span>file
 <span class="w">     </span>├──<span class="w"> </span><span class="o">[</span>rv202-<span class="o">]</span>filename4.py<span class="w">             </span>rivt<span class="w"> </span>file
+<span class="w">     </span>├──<span class="w"> </span><span class="o">[</span>Conf.py<span class="o">]</span><span class="w">                        </span>configuration<span class="w"> </span>file
+<span class="w">     </span>├──<span class="w"> </span><span class="o">[</span>Rivt-report.py<span class="o">]</span><span class="w">                 </span>report<span class="w"> </span>generating<span class="w"> </span>script
+<span class="w">     </span>├──<span class="w"> </span><span class="o">[</span>New-units.py<span class="o">]</span><span class="w">                   </span>define<span class="w"> </span>new<span class="w"> </span>units<span class="w"> </span><span class="o">(</span>optional<span class="o">)</span>
+<span class="w">     </span>├──<span class="w"> </span>README.txt<span class="w">                       </span>text<span class="w"> </span>report<span class="w"> </span>written<span class="w"> </span>by<span class="w"> </span>rivt
 <span class="w">     </span>├──<span class="w"> </span><span class="o">[</span>_publish<span class="o">]</span>/<span class="w">                      </span>published<span class="w"> </span>docs<span class="w"> </span>and<span class="w"> </span>reports
 <span class="w">         </span>├──<span class="w"> </span><span class="o">[</span>docs<span class="o">]</span>/<span class="w">                         </span>html<span class="w"> </span>docs
 <span class="w">             </span>├──<span class="w"> </span>_images/
@@ -497,29 +502,25 @@ described in <a class="reference internal" href="#report-folders"><span class="s
 <span class="w">         </span>└──<span class="w"> </span><span class="o">[</span>Vals<span class="o">]</span>/<span class="w">                         </span>stored<span class="w"> </span>value<span class="w"> </span>files
 <span class="w">             </span>├──<span class="w"> </span>v101-2.csv
 <span class="w">             </span>└──<span class="w"> </span>v102-3.csv
-<span class="w">     </span>├──<span class="w"> </span><span class="o">[</span>Src<span class="o">]</span><span class="w">                           </span><span class="nb">source</span><span class="w"> </span>files<span class="w"> </span>from<span class="w"> </span>author
-<span class="w">         </span>├──<span class="w"> </span>data/<span class="w">                            </span>author<span class="w"> </span>created<span class="w"> </span>subfolder
+<span class="w">     </span>├──<span class="w"> </span><span class="o">[</span>Src<span class="o">]</span><span class="w">                            </span><span class="nb">source</span><span class="w"> </span>files<span class="w"> </span>from<span class="w"> </span>author
+<span class="w">         </span>├──<span class="w"> </span>data/<span class="w">                            </span>author<span class="w"> </span>created<span class="w"> </span>subfolders
 <span class="w">             </span>├──<span class="w"> </span>data1.csv
 <span class="w">             </span>├──<span class="w"> </span>opensees1.txt
 <span class="w">             </span>└──<span class="w"> </span>conc-vals.csv
-<span class="w">         </span>├──<span class="w"> </span>image/<span class="w">                           </span>author<span class="w"> </span>created<span class="w"> </span>subfolder
+<span class="w">         </span>├──<span class="w"> </span>image/
 <span class="w">             </span>├──<span class="w"> </span>fig1.png
 <span class="w">             </span>└──<span class="w"> </span>fig2.jpg
-<span class="w">         </span>├──<span class="w"> </span><span class="o">[</span>Run<span class="o">]</span>/<span class="w">                           </span>OS<span class="w"> </span>commands
+<span class="w">         </span>├──<span class="w"> </span>run/<span class="w">                              </span>OS<span class="w"> </span>commands
 <span class="w">             </span>├──<span class="w"> </span>run1_win.cmd<span class="w">                     </span>windows<span class="w"> </span><span class="nb">command</span><span class="w"> </span>file
 <span class="w">             </span>└──<span class="w"> </span>run1_linux.sh<span class="w">                    </span>linux<span class="w"> </span><span class="nb">command</span><span class="w"> </span>file
-<span class="w">         </span>├──<span class="w"> </span><span class="o">[</span>Tools<span class="o">]</span>/<span class="w">                         </span>scripts<span class="w"> </span>and<span class="w"> </span>functions
-<span class="w">             </span>├──<span class="w"> </span><span class="o">[</span>conf.py<span class="o">]</span><span class="w">                        </span>configuration<span class="w"> </span>file
-<span class="w">             </span>├──<span class="w"> </span><span class="o">[</span>rivt-report.py<span class="o">]</span><span class="w">                 </span>report<span class="w"> </span>generating<span class="w"> </span>script
-<span class="w">             </span>├──<span class="w"> </span>new-units.py<span class="w">                     </span>define<span class="w"> </span>new<span class="w"> </span>units
+<span class="w">         </span>├──<span class="w"> </span>tools/<span class="w">                         </span>scripts<span class="w"> </span>and<span class="w"> </span>functions
 <span class="w">             </span>├──<span class="w"> </span>coverpage.rst<span class="w">                    </span>cover<span class="w"> </span>page<span class="w"> </span>template
 <span class="w">             </span>├──<span class="w"> </span>logoname.png<span class="w">                     </span>cover<span class="w"> </span>page<span class="w"> </span>logo
 <span class="w">             </span>├──<span class="w"> </span>plot.py<span class="w">                          </span>functions
 <span class="w">             </span>└──<span class="w"> </span>loads.py<span class="w">                         </span>functions
-<span class="w">         </span>└──<span class="w"> </span><span class="o">[</span>Vals<span class="o">]</span>/<span class="w">                     </span>value<span class="w"> </span>files
+<span class="w">         </span>└──<span class="w"> </span>vals/<span class="w">                          </span>value<span class="w"> </span>files
 <span class="w">             </span>├──<span class="w"> </span>steel-vals.csv
 <span class="w">             </span>└──<span class="w"> </span>plastic-vals.csv
-<span class="w">     </span>└──<span class="w"> </span>README.txt<span class="w">                       </span>searchable<span class="w"> </span>text<span class="w"> </span>report
 </pre></div>
 </div>
 </section>

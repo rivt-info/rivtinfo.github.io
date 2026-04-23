@@ -29,10 +29,11 @@
     organized under a root folder with the prefix <i>rivt-</i> e.g.
     <i>rivt-Report-Label</i>. <br> <br>
     
-    <i>rivt folders</i> (root folders) include at least the <i>rivt files</i> 
-    and the five required subfolders. Required folders and prefixes are 
-    shown in brackets. Folders preceded by an underscore contain rivt outputs. 
-    Folders requiring author input are capitalized. <br> <br>
+    <i>rivt folders</i> (root folders) include at least the <i>rivt files</i>
+    and the five required subfolders. Required folders and prefixes are shown
+    in brackets[]. Folders preceded by an underscore contain rivt outputs.
+    Folders and files requiring author input are capitalized. All files in the
+    root folder except the README.txt file may require author input. <br> <br>
 
     A new <i>rivt folder</i> is typically copied from a similar folder or 
     template and then edited. Several <i>rivt folder templates</i> are at 
@@ -43,36 +44,41 @@
 
 .. code-block:: bash
 
-    [rivt-]Report-Label/                Report Folder
-        ├── [rv101-]filename1.py        rivt file
-        ├── [rv102-]filename2.py        rivt file
-        ├── [rv201-]filename3.py        rivt file
-        ├── [rv202-]filename4.py        rivt file 
-        ...
+    [rivt-]Report-Label/             Report Folder                
         ├── .vscode/                    optional VSCode settings   
         ├── [_publish]/                 published docs and reports
         ├── [_rstdocs]/                 restructured text files               
         ├── [_shared]/                  public rivt files
         ├── [_stored]/                  stored files
-        ├── [Src]/                      source files        
-        └── README.txt                  searchable text report 
+        ├── [rv101-]filename1.py        rivt file
+        ├── [rv102-]filename2.py        rivt file       
+        ├── [rv201-]filename3.py        rivt file          
+        ├── [rv202-]filename4.py        rivt file
+        ...
+        ├── [Src]/                      source files       
+        ├── [Conf.py]                   configuration file
+        ├── [Rivt-report.py]            report generating script
+        ├── [New-units.py]              define new units (optional) 
+        └──  README.txt                  text report written by rivt
+
 
 
 **Expanded Folders**
 
-A typical :term:`rivt folder` structure is shown below. The *rivt file* names
-and *doc* references are shown in brackets. The *report folder structure* is
-described in :ref:`here <report-folders>`.
+A typical :term:`rivt folder` structure is shown below. The required *rivt file* 
+names and prefixes are shown in brackets. 
 
 .. code-block:: bash
 
    [rivt-]Report-Label/                Report Folder Name
-        ├── .vscode/                         optional VSCode settings                    
-        ├── [conf.py]                        configuration file    
         ├── [rv101-]filename1.py             rivt file
         ├── [rv102-]filename2.py             rivt file       
         ├── [rv201-]filename3.py             rivt file          
-        ├── [rv202-]filename4.py             rivt file                           
+        ├── [rv202-]filename4.py             rivt file
+        ├── [Conf.py]                        configuration file
+        ├── [Rivt-report.py]                 report generating script
+        ├── [New-units.py]                   define new units (optional) 
+        ├── README.txt                       text report written by rivt                        
         ├── [_publish]/                      published docs and reports
             ├── [docs]/                         html docs
                 ├── _images/                
@@ -122,29 +128,26 @@ described in :ref:`here <report-folders>`.
             └── [Vals]/                         stored value files
                 ├── v101-2.csv
                 └── v102-3.csv                 
-        ├── [Src]                           source files from author               
-            ├── data/                            author created subfolder
+        ├── [Src]                            source files from author                       
+            ├── data/                            author created subfolders
                 ├── data1.csv 
                 ├── opensees1.txt   
                 └── conc-vals.csv  
-            ├── image/                           author created subfolder                          
+            ├── image/                                                 
                 ├── fig1.png
                 └── fig2.jpg   
-            ├── [Run]/                           OS commands
+            ├── run/                              OS commands
                 ├── run1_win.cmd                     windows command file                  
                 └── run1_linux.sh                    linux command file
-            ├── [Tools]/                         scripts and functions
-                ├── [conf.py]                        configuration file
-                ├── [rivt-report.py]                 report generating script
-                ├── new-units.py                     define new units          
+            ├── tools/                         scripts and functions
                 ├── coverpage.rst                    cover page template
                 ├── logoname.png                     cover page logo
                 ├── plot.py                          functions        
                 └── loads.py                         functions
-            └── [Vals]/                     value files
+            └── vals/                          value files
                 ├── steel-vals.csv     
                 └── plastic-vals.csv   
-        └── README.txt                       searchable text report 
+
 
 **[2t]**  Folder Names
 -------------------------------

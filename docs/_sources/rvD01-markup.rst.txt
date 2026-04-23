@@ -306,19 +306,22 @@ the folder structure is :ref:`here<report-folders>`.
 
 .. code-block:: bash
 
-    [rivt-]Report-Label/                Report Folder
-        ├── [rv101-]filename1.py        rivt file
-        ├── [rv102-]filename2.py        rivt file
-        ├── [rv201-]filename3.py        rivt file
-        ├── [rv202-]filename4.py        rivt file 
-        ...
+    [rivt-]Report-Label/             Report Folder                
         ├── .vscode/                    optional VSCode settings   
         ├── [_publish]/                 published docs and reports
         ├── [_rstdocs]/                 restructured text files               
         ├── [_shared]/                  public rivt files
         ├── [_stored]/                  stored files
-        ├── [Src]/                      source files        
-        └── README.txt                  searchable text report 
+        ├── [rv101-]filename1.py        rivt file
+        ├── [rv102-]filename2.py        rivt file       
+        ├── [rv201-]filename3.py        rivt file          
+        ├── [rv202-]filename4.py        rivt file
+        ...
+        ├── [Src]/                      source files       
+        ├── [Conf.py]                   configuration file
+        ├── [Rivt-report.py]            report generating script
+        ├── [New-units.py]              define new units (optional) 
+        └──  README.txt                  text report written by rivt 
 
 
 .. toctree::

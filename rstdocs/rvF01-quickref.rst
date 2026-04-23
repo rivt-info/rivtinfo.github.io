@@ -114,12 +114,13 @@ rv.V, I                        **##** text                       nonprinting com
 API Scope         Block Tag                                Description 
 ========== ========================================= ===============================
 rv.R        **_[[SHELL]]** process parameters         :ref:`Shell script`
+rv.I        **_[[BOX]]** label                        :ref:`Box block`
 rv.I        **_[[INDENT]]** spaces (4 default)        :ref:`Indent text block`
 rv.I        **_[[ITALIC]]** spaces (4 default)        :ref:`Indent italic block`
 rv.I        **_[[ENDNOTES]]** optional label          :ref:`Endnotes block`
 rv.I        **_[[TEXT]]** optional language           :ref:`Text block`
 rv.I        **_[[TOPIC]]** topic                      :ref:`Topic block`
-rv.I        **_[[BOX]]** label                        :ref:`Box block`
+rv.I        **_[[TABLE]]** label                      :ref:`Table block`
 rv.V, T     **_[[PYTHON]]** namespace                 :ref:`Python block`
 rv.D        **_[[METADATA]]** label                   :ref:`Meta block`
 rv.D        **_[[LAYOUT]]** label                     :ref:`Layout block` 
@@ -142,14 +143,14 @@ API Scope           Command                                                  Des
 ========== ================================================================ ========================
 rv.R        | **SHELL** | rel path | os, wait                               :ref:`Shell file`
 rv.I        | **TEXT** | rel path |  language                               :ref:`Text file`
-rv.V, I     | **TABLE** | rel path | title,width,rows,align,head,num;nonum  :ref:`Table file`     
-rv.V, I     | **IMAGE** | rel path | caption, scale, num;nonum              :ref:`Image file`
-rv.V, I     | **IMAGE2** | rel pth1, rel pth2 | cap1,cap2,sca1,sca2,num     :ref:`Adjacent images`
-rv.V        | **VALTABLE** | rel path | title, rows, nun;nonum              :ref:`Values file`     
+rv.V, I     | **TABLE** | rel path | title,width,rows,align,head,nonum      :ref:`Table file`     
+rv.V, I     | **IMAGE** | rel path | caption, scale, nonum                  :ref:`Image file`
+rv.V, I     | **IMAGE2** | rel pth1, rel pth2 | cap1,cap2,sca1,sca2,nonum   :ref:`Adjacent images`
+rv.V        | **VALTABLE** | rel path | title, rows, nonum                  :ref:`Values file`     
 rv.V        a **==:** 1*IN  | unit1, unit2, decimal | label                 :ref:`Define value`
-rv.V        c **<=:** expression | unit1, unit2, decimal | label,num;nonum  :ref:`Assign value`
-rv.V        c **:=:** function(x,y) | unit1, unit2, decimal | label,num     :ref:`Function value`
-rv.V        a **<** c | decimal | text1, text2, color1, color2, num;nonum   :ref:`Compare value`
+rv.V        c **<=:** expression | unit1, unit2, decimal | label,nonum      :ref:`Assign value`
+rv.V        c **:=:** function(x,y) | unit1, unit2, decimal | label, num     :ref:`Function value`
+rv.V        a **<** c | decimal | text1, text2, color1, color2, nonum       :ref:`Compare value`
 rv.V, T     | **PYTHON** | rel path | namespace                             :ref:`Python file`
 rv.T        | **MARKUP** | rel path | type                                  :ref:`Markup file`
 rv.D        | **ATTACHPDF** | rel path | place, title                       :ref:`Attach PDF`   
@@ -197,7 +198,7 @@ are in the default path only the file name needs to be provided.
 \| PUBLISH |        depends on file type
 ================ =========================
 
-[1]  use /_stored/Vals/filename to read values defined in the rivt file
+[1]  use /_stored/Vals/filename to read values defined and stored by a rivt file
 
 
 .. _Folders:
@@ -218,20 +219,25 @@ are in the default path only the file name needs to be provided.
         ├── [rv101-]filename1.py             rivt file
         ├── [rv102-]filename2.py             rivt file       
         ├── [rv201-]filename3.py             rivt file          
-        ├── [rv202-]filename4.py             rivt file                           
+        ├── [rv202-]filename4.py             rivt file
+        ├── [Conf.py]                        configuration file
+        ├── [Rivt-report.py]                 report generating script
+        ├── [New-units.py]                   define new units (optional) 
+        ├── [README.txt]                     searchable text report                            
         ├── [_publish]/                      published docs and reports
             ├── [docs]/                         html docs
                 ├── _images/                
                 ├── _sources/              
-                ├── _static/    
-                ├── process folders/         
-                ├── site folders/                                        
+                ├── _static/
+                ├── _sphinx-design-static/    
+                ├── .doctrees        
+                ├── site folders/
+                ├── index.html                                              
                 ├── rv101-filename1.html      
                 ├── rv102-filename2.html                      
                 ├── rv201-filename3.html                        
                 └── rv202-filename4.html         
-            ├── [pdfdocs]/                      pdf docs
-                ├── process folders/             
+            ├── [pdfdocs]/                      pdf docs             
                 ├── rv101-filename1.pdf             
                 ├── rv102-filename1.pdf             
                 ├── rv201-filename3.pdf 
@@ -255,11 +261,11 @@ are in the default path only the file name needs to be provided.
             ├── rv-102-filename1.py              
             ├── rv-201-filename3.py  
             └── rv-202-filename4.py 
-        ├── [_stored]/                      rivt generated stored files (not printed) 
+        ├── [_stored]/                      rivt generated files (not printed) 
             ├── [Logs]/                         log files
                 ├── rv101-log.txt
                 └── rv102-log.txt
-            ├── [Sect]/                      rivt generated stored sections (not printed)                    
+            ├── [Sect]/                         sections                   
                 ├── rv202-5d.txt  
                 ├── rv103-4t.txt                         
                 └── rv301-2r.txt               
@@ -268,29 +274,26 @@ are in the default path only the file name needs to be provided.
             └── [Vals]/                         stored value files
                 ├── v101-2.csv
                 └── v102-3.csv                 
-        ├── [Src]                           source files from author               
-            ├── data/                            author created subfolder
+        ├── [Src]                            source files from author                       
+            ├── data/                            author created subfolders
                 ├── data1.csv 
                 ├── opensees1.txt   
                 └── conc-vals.csv  
-            ├── image/                           author created subfolder                          
+            ├── image/                                                 
                 ├── fig1.png
                 └── fig2.jpg   
-            ├── [Run]/                           OS commands
+            ├── run/                              OS commands
                 ├── run1_win.cmd                     windows command file                  
                 └── run1_linux.sh                    linux command file
-            ├── [Tools]/                         scripts and functions
-                ├── [conf.py]                        configuration file
-                ├── [rivt-report.py]                 report generating script
-                ├── new-units.py                     define new units          
+            ├── tools/                         scripts and functions
                 ├── coverpage.rst                    cover page template
                 ├── logoname.png                     cover page logo
                 ├── plot.py                          functions        
                 └── loads.py                         functions
-            └── [Vals]/                     value files
+            └── vals/                          value files
                 ├── steel-vals.csv     
                 └── plastic-vals.csv   
-        └── README.txt                       searchable text report 
+
 
 
 .. _Project requirements:
