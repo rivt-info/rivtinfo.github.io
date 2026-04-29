@@ -1,4 +1,4 @@
-**C.6 Insert - rv.I**
+**D.6 Insert - rv.I**
 ========================
 
 **[1i]** rv.I Markup

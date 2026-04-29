@@ -169,20 +169,28 @@ the folder structure is :ref:`here <report-folders>`.
 
 .. code-block:: bash
 
-    [rivt-]Report-Label/            Report Folder
-        ├── conf.py                   configuration file
-        ├── rv101-filename1.py        rivt file
-        ├── rv102-filename2.py        rivt file
-        ├── rv201-filename3.py        rivt file
-        ├── rv202-filename4.py        rivt file 
-        ...
-        ├── .vscode/                  optional VSCode settings   
-        ├── _publish/                 published docs and reports
-        ├── _rstdocs/                 restructured text files 
-        ├── _shared/                  public rivt files
-        ├── _stored/                  stored files
-        ├── Src/                      author source files        
-        └── README.txt                searchable text report 
+    [rivt-]Report-Label/           Report Folder                
+        ├── .vscode/                  optional VSCode settings 
+        ├── rivt-public_/             rivt-generated public files
+            ├── _src/                     source files
+            ├── README.txt                public report   
+            ├── rv-101-filename1.py       public rivt file
+            ├── rv-102-filename2.py       public rivt file       
+            ├── rv-201-filename3.py       public rivt file          
+            ├── rv-202-filename4.py       public rivt file
+            ...
+        └── rivt-report/               rivt files and docs               
+            ├── _src/                     source files
+            ├── published_/               published docs and reports
+            ├── rstdocs_/                 restructured text files               
+            ├── stored_/                  stored files
+            ├── config-report.py          report generating script
+            ├── README.txt                rivt report     
+            ├── rv101-filename1.py        rivt file
+            ├── rv102-filename2.py        rivt file       
+            ├── rv201-filename3.py        rivt file          
+            ├── rv202-filename4.py        rivt file
+            ...    
 
 
 .. _framework:

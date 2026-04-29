@@ -60,7 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="B.1 Framework" href="rvB02-framework.html" />
+    <link rel="next" title="B.2 Framework" href="rvB02-framework.html" />
     <link rel="prev" title="A.3 FAQ" href="rvA03-faq.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -332,7 +332,7 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="rvB02-framework.html"><strong>B.1 Framework</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvB02-framework.html"><strong>B.2 Framework</strong></a></li>
 </ul>
 </div>
 </nav></div>
@@ -512,20 +512,28 @@ to separate words in a file name. They are replaced with spaces when a <em>doc</
 title is extracted.</p>
 <p>The top level folder structure is shown below. A more detailed description of
 the folder structure is <a class="reference internal" href="rvC02-folders.html#report-folders"><span class="std std-ref">here</span></a>.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt-<span class="o">]</span>Report-Label/<span class="w">            </span>Report<span class="w"> </span>Folder
-<span class="w">    </span>├──<span class="w"> </span>conf.py<span class="w">                   </span>configuration<span class="w"> </span>file
-<span class="w">    </span>├──<span class="w"> </span>rv101-filename1.py<span class="w">        </span>rivt<span class="w"> </span>file
-<span class="w">    </span>├──<span class="w"> </span>rv102-filename2.py<span class="w">        </span>rivt<span class="w"> </span>file
-<span class="w">    </span>├──<span class="w"> </span>rv201-filename3.py<span class="w">        </span>rivt<span class="w"> </span>file
-<span class="w">    </span>├──<span class="w"> </span>rv202-filename4.py<span class="w">        </span>rivt<span class="w"> </span>file
-<span class="w">    </span>...
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt-<span class="o">]</span>Report-Label/<span class="w">           </span>Report<span class="w"> </span>Folder
 <span class="w">    </span>├──<span class="w"> </span>.vscode/<span class="w">                  </span>optional<span class="w"> </span>VSCode<span class="w"> </span>settings
-<span class="w">    </span>├──<span class="w"> </span>_publish/<span class="w">                 </span>published<span class="w"> </span>docs<span class="w"> </span>and<span class="w"> </span>reports
-<span class="w">    </span>├──<span class="w"> </span>_rstdocs/<span class="w">                 </span>restructured<span class="w"> </span>text<span class="w"> </span>files
-<span class="w">    </span>├──<span class="w"> </span>_shared/<span class="w">                  </span>public<span class="w"> </span>rivt<span class="w"> </span>files
-<span class="w">    </span>├──<span class="w"> </span>_stored/<span class="w">                  </span>stored<span class="w"> </span>files
-<span class="w">    </span>├──<span class="w"> </span>Src/<span class="w">                      </span>author<span class="w"> </span><span class="nb">source</span><span class="w"> </span>files
-<span class="w">    </span>└──<span class="w"> </span>README.txt<span class="w">                </span>searchable<span class="w"> </span>text<span class="w"> </span>report
+<span class="w">    </span>├──<span class="w"> </span>rivt-public_/<span class="w">             </span>rivt-generated<span class="w"> </span>public<span class="w"> </span>files
+<span class="w">        </span>├──<span class="w"> </span>_src/<span class="w">                     </span><span class="nb">source</span><span class="w"> </span>files
+<span class="w">        </span>├──<span class="w"> </span>README.txt<span class="w">                </span>public<span class="w"> </span>report
+<span class="w">        </span>├──<span class="w"> </span>rv-101-filename1.py<span class="w">       </span>public<span class="w"> </span>rivt<span class="w"> </span>file
+<span class="w">        </span>├──<span class="w"> </span>rv-102-filename2.py<span class="w">       </span>public<span class="w"> </span>rivt<span class="w"> </span>file
+<span class="w">        </span>├──<span class="w"> </span>rv-201-filename3.py<span class="w">       </span>public<span class="w"> </span>rivt<span class="w"> </span>file
+<span class="w">        </span>├──<span class="w"> </span>rv-202-filename4.py<span class="w">       </span>public<span class="w"> </span>rivt<span class="w"> </span>file
+<span class="w">        </span>...
+<span class="w">    </span>└──<span class="w"> </span>rivt-report/<span class="w">               </span>rivt<span class="w"> </span>files<span class="w"> </span>and<span class="w"> </span>docs
+<span class="w">        </span>├──<span class="w"> </span>_src/<span class="w">                     </span><span class="nb">source</span><span class="w"> </span>files
+<span class="w">        </span>├──<span class="w"> </span>published_/<span class="w">               </span>published<span class="w"> </span>docs<span class="w"> </span>and<span class="w"> </span>reports
+<span class="w">        </span>├──<span class="w"> </span>rstdocs_/<span class="w">                 </span>restructured<span class="w"> </span>text<span class="w"> </span>files
+<span class="w">        </span>├──<span class="w"> </span>stored_/<span class="w">                  </span>stored<span class="w"> </span>files
+<span class="w">        </span>├──<span class="w"> </span>config-report.py<span class="w">          </span>report<span class="w"> </span>generating<span class="w"> </span>script
+<span class="w">        </span>├──<span class="w"> </span>README.txt<span class="w">                </span>rivt<span class="w"> </span>report
+<span class="w">        </span>├──<span class="w"> </span>rv101-filename1.py<span class="w">        </span>rivt<span class="w"> </span>file
+<span class="w">        </span>├──<span class="w"> </span>rv102-filename2.py<span class="w">        </span>rivt<span class="w"> </span>file
+<span class="w">        </span>├──<span class="w"> </span>rv201-filename3.py<span class="w">        </span>rivt<span class="w"> </span>file
+<span class="w">        </span>├──<span class="w"> </span>rv202-filename4.py<span class="w">        </span>rivt<span class="w"> </span>file
+<span class="w">        </span>...
 </pre></div>
 </div>
 </section>
@@ -590,7 +598,7 @@ formatting, version control, and diagramming tools.</p>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>B.1 Framework</strong></p>
+        <p class="prev-next-title"><strong>B.2 Framework</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

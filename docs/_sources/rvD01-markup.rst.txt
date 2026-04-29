@@ -307,21 +307,27 @@ the folder structure is :ref:`here<report-folders>`.
 .. code-block:: bash
 
     [rivt-]Report-Label/             Report Folder                
-        ├── .vscode/                    optional VSCode settings   
-        ├── [_publish]/                 published docs and reports
-        ├── [_rstdocs]/                 restructured text files               
-        ├── [_shared]/                  public rivt files
-        ├── [_stored]/                  stored files
-        ├── [rv101-]filename1.py        rivt file
-        ├── [rv102-]filename2.py        rivt file       
-        ├── [rv201-]filename3.py        rivt file          
-        ├── [rv202-]filename4.py        rivt file
-        ...
-        ├── [Src]/                      source files       
-        ├── [Conf.py]                   configuration file
-        ├── [Rivt-report.py]            report generating script
-        ├── [New-units.py]              define new units (optional) 
-        └──  README.txt                  text report written by rivt 
+        ├── [_public]/                  rivt-generated public files
+            ├── [src_]/                     source files
+            ├── README.txt                  rivt-generated public report   
+            ├── rv-101-filename1.py         public rivt file
+            ├── rv-102-filename2.py         public rivt file       
+            ├── rv-201-filename3.py         public rivt file          
+            ├── rv-202-filename4.py         public rivt file
+            ...
+        └── [rivt-report]/              rivt files and docs               
+            ├── .vscode/                    optional VSCode settings   
+            ├── [_published]/               published docs and reports
+            ├── [_rstdocs]/                 restructured text files               
+            ├── [_stored]/                  stored files
+            ├── [src_]/                     source files
+            ├── [config-report.py]          report generating script
+            ├── README.txt                  rivt-generated report     
+            ├── [rv101-]filename1.py        rivt file
+            ├── [rv102-]filename2.py        rivt file       
+            ├── [rv201-]filename3.py        rivt file          
+            ├── [rv202-]filename4.py        rivt file
+            ...    
 
 
 .. toctree::

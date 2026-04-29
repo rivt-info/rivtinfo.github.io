@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
-    <title>C.2 Line Tags &#8212; rivt</title>
+    <title>D.2 Line Tags &#8212; rivt</title>
   
   
   
@@ -60,7 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="C.3 Block Tags" href="rvD03-blocktags.html" />
+    <link rel="next" title="D.3 Block Tags" href="rvD03-blocktags.html" />
     <link rel="prev" title="D.1 Markup" href="rvD01-markup.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -332,14 +332,14 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>C.2 Line Tags</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvD03-blocktags.html"><strong>C.3 Block Tags</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvD04-commands.html"><strong>C.4 Commands</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvD05-markup-r.html"><strong>C.5 Run - rv.R</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvD06-markup-i.html"><strong>C.6 Insert - rv.I</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvD07-markup-v.html"><strong>C.7 Values - rv.V</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvD08-markup-t.html"><strong>C.8 Tool - rv.T</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvD09-markup-d.html"><strong>C.9 Doc - rv.D</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>D.2 Line Tags</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvD03-blocktags.html"><strong>D.3 Block Tags</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvD04-commands.html"><strong>D.4 Commands</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvD05-markup-r.html"><strong>D.5 Run - rv.R</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvD06-markup-i.html"><strong>D.6 Insert - rv.I</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvD07-markup-v.html"><strong>D.7 Values - rv.V</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvD08-markup-t.html"><strong>D.8 Tool - rv.T</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvD09-markup-d.html"><strong>D.9 Doc - rv.D</strong></a></li>
 </ul>
 </div>
 </nav></div>
@@ -383,7 +383,7 @@
     
     <li class="breadcrumb-item"><a href="rvD01-markup.html" class="nav-link"><strong>D.1 Markup</strong></a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>C.2 Line Tags</strong></span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>D.2 Line Tags</strong></span></li>
   </ul>
 </nav>
 </div>
@@ -400,8 +400,8 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="c-2-line-tags">
-<h1><strong>C.2 Line Tags</strong><a class="headerlink" href="#c-2-line-tags" title="Link to this heading">#</a></h1>
+  <section id="d-2-line-tags">
+<h1><strong>D.2 Line Tags</strong><a class="headerlink" href="#d-2-line-tags" title="Link to this heading">#</a></h1>
 <section id="t-line-tag-summary">
 <h2><strong>[1t]</strong> Line Tag Summary<a class="headerlink" href="#t-line-tag-summary" title="Link to this heading">#</a></h2>
 <hr><p><strong>Format a line of text</strong></p>
@@ -413,63 +413,55 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>rv.I</p></td>
+<tr class="row-even"><td><p>rv.I,V</p></td>
 <td><p>text <strong>_[C]</strong></p></td>
 <td><p><a class="reference internal" href="#center-text"><span class="std std-ref">[2t] Center text</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
+<tr class="row-odd"><td><p>rv.I,V</p></td>
 <td><p>text <strong>_[R]</strong></p></td>
 <td><p><a class="reference internal" href="#right-justify-text"><span class="std std-ref">[3t] Right justify text</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.I</p></td>
+<tr class="row-even"><td><p>rv.I,V</p></td>
 <td><p><strong>text math _[M]</strong></p></td>
 <td><p><a class="reference internal" href="#text-math"><span class="std std-ref">[4t] Text math</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
+<tr class="row-odd"><td><p>rv.I,V</p></td>
 <td><p><strong>LaTeX math _[L]</strong></p></td>
 <td><p><a class="reference internal" href="#latex-math"><span class="std std-ref">[5t] LaTeX math</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p>text <strong>_[#]</strong> text</p></td>
-<td><p><a class="reference internal" href="#endnote-number"><span class="std std-ref">[6t]  Endnote number</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>text <strong>_[G] glossary term |</strong> text</p></td>
-<td><p><a class="reference internal" href="#term-link"><span class="std std-ref">[7t] Glossary link</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p>text <strong>_[S] label, section |</strong> text</p></td>
-<td><p><a class="reference internal" href="#section-link"><span class="std std-ref">[8t] Section link</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>text <strong>_[D] label, file name |</strong> text</p></td>
-<td><p><a class="reference internal" href="#doc-link"><span class="std std-ref">[9t] Doc link</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p>text <strong>_[U] label, url |</strong> text</p></td>
-<td><p><a class="reference internal" href="#url-link"><span class="std std-ref">[10t] URL link</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.V, I</p></td>
-<td><p>text <strong>_[V] var_name |</strong> text</p></td>
-<td><p><a class="reference internal" href="#variable-value"><span class="std std-ref">[11t] Variable value</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p>rv.V, I</p></td>
+<tr class="row-even"><td><p>rv.I,V</p></td>
 <td><p><strong>text _[E]</strong></p></td>
 <td><p><a class="reference internal" href="#number-equation"><span class="std std-ref">[12t] Equation number</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.V, I</p></td>
+<tr class="row-odd"><td><p>rv.I,V</p></td>
 <td><p><strong>title _[T]</strong></p></td>
 <td><p><a class="reference internal" href="#number-table"><span class="std std-ref">[13t] Table number</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.V, I</p></td>
+<tr class="row-even"><td><p>rv.I,V</p></td>
 <td><p><strong>caption _[F]</strong></p></td>
 <td><p><a class="reference internal" href="#number-figure"><span class="std std-ref">[14t] Figure number</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.V, I</p></td>
-<td><p><strong>_[P]</strong></p></td>
-<td><p><a class="reference internal" href="#new-page"><span class="std std-ref">[15t] New Page</span></a></p></td>
+<tr class="row-odd"><td><p>rv.I,V</p></td>
+<td><p>text <strong>_[#]</strong> text</p></td>
+<td><p><a class="reference internal" href="#endnote-number"><span class="std std-ref">[6t]  Endnote number</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.V, I</p></td>
+<tr class="row-even"><td><p>rv.I,V</p></td>
+<td><p>text <strong>_[G] glossary term |</strong> text</p></td>
+<td><p><a class="reference internal" href="#term-link"><span class="std std-ref">[7t] Glossary link</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.I,V</p></td>
+<td><p>text <strong>_[S] label, section |</strong> text</p></td>
+<td><p><a class="reference internal" href="#section-link"><span class="std std-ref">[8t] Section link</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>rv.I,V</p></td>
+<td><p>text <strong>_[U] label, url |</strong> text</p></td>
+<td><p><a class="reference internal" href="#url-link"><span class="std std-ref">[10t] URL link</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.I,V</p></td>
+<td><p>text <strong>_[V] var_name |</strong> text</p></td>
+<td><p><a class="reference internal" href="#variable-value"><span class="std std-ref">[11t] Variable value</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>all</p></td>
 <td><p><strong>##</strong> text</p></td>
 <td><p>nonprinting comment</p></td>
 </tr>
@@ -493,7 +485,7 @@ Example:
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Insert</p></td>
+<td><p>Insert, Values</p></td>
 </tr>
 <tr class="row-even"><td><p>Doc Types</p></td>
 <td><p>text, PDF, HTML</p></td>
@@ -518,7 +510,7 @@ Example:
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Insert</p></td>
+<td><p>Insert, Values</p></td>
 </tr>
 <tr class="row-even"><td><p>Doc Types</p></td>
 <td><p>text, PDF, HTML</p></td>
@@ -543,7 +535,7 @@ Example:
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Insert</p></td>
+<td><p>Insert, Values</p></td>
 </tr>
 <tr class="row-even"><td><p>Doc Types</p></td>
 <td><p>text, PDF, HTML</p></td>
@@ -568,7 +560,7 @@ Example:
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Insert</p></td>
+<td><p>Insert, Values</p></td>
 </tr>
 <tr class="row-even"><td><p>Doc Types</p></td>
 <td><p>PDF, HTML</p></td>
@@ -595,7 +587,7 @@ Example:
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Insert</p></td>
+<td><p>Insert, Values</p></td>
 </tr>
 <tr class="row-even"><td><p>Doc Types</p></td>
 <td><p>text, PDF, HTML</p></td>
@@ -621,7 +613,7 @@ Example:
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Insert</p></td>
+<td><p>Insert, Values</p></td>
 </tr>
 <tr class="row-even"><td><p>Doc Types</p></td>
 <td><p>PDF, HTML</p></td>
@@ -650,7 +642,7 @@ which provides more detail.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Insert</p></td>
+<td><p>Insert, Values</p></td>
 </tr>
 <tr class="row-even"><td><p>Doc Types</p></td>
 <td><p>PDF, HTML</p></td>
@@ -677,7 +669,7 @@ Example:
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Insert</p></td>
+<td><p>Insert, Values</p></td>
 </tr>
 <tr class="row-even"><td><p>Doc Types</p></td>
 <td><p>PDF, HTML</p></td>
@@ -703,7 +695,7 @@ Example:
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Insert</p></td>
+<td><p>Insert, Values</p></td>
 </tr>
 <tr class="row-even"><td><p>Doc Types</p></td>
 <td><p>PDF, HTML</p></td>
@@ -818,33 +810,6 @@ Example:
 </table>
 </div>
 </section>
-<section id="t-new-page">
-<span id="new-page"></span><h2><strong>[15t]</strong> New Page<a class="headerlink" href="#t-new-page" title="Link to this heading">#</a></h2>
-<hr>
-
-Insert a page break in the document.<aside class="topic">
-<p class="topic-title">_[P]</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    text _[P]
-
-Example:
-    Preceded by text or stand alone. _[P]
-    _[P]
-</pre></div>
-</div>
-</aside>
-<div class="pst-scrollable-table-container"><table class="table">
-<tbody>
-<tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Insert, Values</p></td>
-</tr>
-<tr class="row-even"><td><p>Doc Types</p></td>
-<td><p>text, PDF, HTML</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
 </section>
 
 
@@ -871,7 +836,7 @@ Example:
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>C.3 Block Tags</strong></p>
+        <p class="prev-next-title"><strong>D.3 Block Tags</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -908,7 +873,6 @@ Example:
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-equation-number"><strong>[12t]</strong> Equation number</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-table-number"><strong>[13t]</strong> Table number</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-figure-number"><strong>[14t]</strong> Figure number</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-new-page"><strong>[15t]</strong> New Page</a></li>
 </ul>
   </nav></div>
 

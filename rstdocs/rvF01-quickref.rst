@@ -21,13 +21,12 @@ Function           Name             Purpose
 **rv.V** (rS)         Values         Calculate values
 **rv.T** (rS)         Tools          Python and markup scripts
 **rv.D** (rS)         Doc            Publish docs 
-**rv.S** (rS)         Skip           Skip section (comments and debugging)
-**rv.X** (rS)         Exit           Exit rivt (debugging)
+**rv.S** (rS)         Skip           Skip section (comments and debug)
+**rv.X** (rS)         Exit           Exit rivt (debug)
 =============== =============== ===========================================
 
 where **rS** is a *rivt string*. The first line of a *rivt string* (rS)
 is the :term:`header substring`.
-
 
 **Header substrings**
 
@@ -39,7 +38,6 @@ is the :term:`header substring`.
         ...
         
         """)
-
 
 Default settings in the *header substring* do not need to be specified. The
 default setting for each API is listed first (in bold) in the table below.
@@ -78,25 +76,23 @@ rv.X         -                      -                   -
     <hr>
   
 **Format a line of text**
-  
+   
 ========== ==================================================== ===============================
 API Scope             Line Tag                                      Description 
 ========== ==================================================== ===============================
-rv.I                      text **_[C]**                          :ref:`Center text` 
-rv.I                      text **_[R]**                          :ref:`Right justify text`
-rv.I                 **text math _[M]**                          :ref:`Text math` 
-rv.I                **LaTeX math _[L]**                          :ref:`LaTeX math` 
-rv.I                      text **_[#]** text                     :ref:`Endnote number`  
-rv.I                      text **_[G] glossary term |** text     :ref:`Term link`
-rv.I                      text **_[S] label, section |** text    :ref:`Section link`
-rv.I                      text **_[D] label, file name |** text  :ref:`Doc link`
-rv.I                      text **_[U] label, url |** text        :ref:`URL link`   
-rv.V, I                   text **_[V] var_name |** text          :ref:`Variable value`
-rv.V, I                   **text _[E]**                          :ref:`Number equation`
-rv.V, I                  **title _[T]**                          :ref:`Number table`
-rv.V, I                **caption _[F]**                          :ref:`Number figure`
-rv.V, I                        **_[P]**                          :ref:`New page`
-rv.V, I                        **##** text                       nonprinting comment
+rv.I,V                 text **_[C]**                              :ref:`Center text` 
+rv.I,V                 text **_[R]**                              :ref:`Right justify text`
+rv.I,V            **text math _[M]**                              :ref:`Text math` 
+rv.I,V           **LaTeX math _[L]**                              :ref:`LaTeX math` 
+rv.I,V                 **text _[E]**                              :ref:`Number equation`
+rv.I,V                **title _[T]**                              :ref:`Number table`
+rv.I,V              **caption _[F]**                              :ref:`Number figure`
+rv.I,V                 text **_[#]** text                         :ref:`Endnote number`  
+rv.I,V                 text **_[G] glossary term |** text         :ref:`Term link`
+rv.I,V                 text **_[S] label, section |** text        :ref:`Section link`
+rv.I,V                 text **_[U] label, url |** text            :ref:`URL link`   
+rv.I,V                 text **_[V] var_name |** text              :ref:`Variable value`
+all                     **##** text                               nonprinting comment
 ========== ==================================================== ===============================
 
 .. _Block Tags:
@@ -108,7 +104,7 @@ rv.V, I                        **##** text                       nonprinting com
 
     <hr>
 
-**Format a block of text**
+**Format blocks of text or run code**
 
 ========== ========================================= ===============================
 API Scope         Block Tag                                Description 
@@ -118,12 +114,11 @@ rv.I        **_[[BOX]]** label                        :ref:`Box block`
 rv.I        **_[[INDENT]]** spaces (4 default)        :ref:`Indent text block`
 rv.I        **_[[ITALIC]]** spaces (4 default)        :ref:`Indent italic block`
 rv.I        **_[[ENDNOTES]]** optional label          :ref:`Endnotes block`
+rv.I        **_[[TABLE]]** label                      :ref:`Table block`
 rv.I        **_[[TEXT]]** optional language           :ref:`Text block`
 rv.I        **_[[TOPIC]]** topic                      :ref:`Topic block`
-rv.I        **_[[TABLE]]** label                      :ref:`Table block`
 rv.V, T     **_[[PYTHON]]** namespace                 :ref:`Python block`
-rv.D        **_[[METADATA]]** label                   :ref:`Meta block`
-rv.D        **_[[LAYOUT]]** label                     :ref:`Layout block` 
+rv.D        **_[[METADATA]]** label                   :ref:`Meta block` 
 all         **_[[END]]**                              :ref:`End block`
 ========== ========================================= ===============================
 
@@ -136,7 +131,7 @@ all         **_[[END]]**                              :ref:`End block`
 
     <hr>
 
-**format files and calculations**
+**Format files and calculations**
 
 ========== ================================================================ ========================
 API Scope           Command                                                  Description
@@ -213,25 +208,25 @@ are in the default path only the file name needs to be provided.
 
 .. code-block:: bash
 
-   [rivt-]Report-Label/                Report Folder Name
-        ├── .vscode/                         optional VSCode settings                    
-        ├── [conf.py]                        configuration file    
-        ├── [rv101-]filename1.py             rivt file
-        ├── [rv102-]filename2.py             rivt file       
-        ├── [rv201-]filename3.py             rivt file          
-        ├── [rv202-]filename4.py             rivt file
-        ├── [Conf.py]                        configuration file
-        ├── [Rivt-report.py]                 report generating script
-        ├── [New-units.py]                   define new units (optional) 
-        ├── [README.txt]                     searchable text report                            
-        ├── [_publish]/                      published docs and reports
+    [rivt-]Report-Label/             Report Folder                
+        ├── .vscode/                    optional VSCode settings 
+        ├── README.txt                  text report written by rivt   
+        ├── [add-units.py]              define new units (optional)
+        ├── [config-report.py]          report generating script
+        ├── [rv101-]filename1.py        rivt file
+        ├── [rv102-]filename2.py        rivt file       
+        ├── [rv201-]filename3.py        rivt file          
+        ├── [rv202-]filename4.py        rivt file
+        ...                               
+        ├── [_published]/               published docs and reports
             ├── [docs]/                         html docs
                 ├── _images/                
                 ├── _sources/              
                 ├── _static/
                 ├── _sphinx-design-static/    
                 ├── .doctrees        
-                ├── site folders/
+                ├── .buildinfo  
+                ├── .nojekyll  
                 ├── index.html                                              
                 ├── rv101-filename1.html      
                 ├── rv102-filename2.html                      
@@ -251,8 +246,10 @@ are in the default path only the file name needs to be provided.
             ├── _downloads/                    
             ├── _static/                       
             ├── _locale/                       
-            ├── _templates/                    
-            ├── rv101-filename1.rst            
+            ├── _templates/
+            ├── conf.py                     configuration file
+            ├── index.rst
+            ├── rv101-filename1.rst           
             ├── rv102-filename2.rst                          
             ├── rv201-filename3.rst          
             └── rv202-filename4.rst
@@ -261,11 +258,11 @@ are in the default path only the file name needs to be provided.
             ├── rv-102-filename1.py              
             ├── rv-201-filename3.py  
             └── rv-202-filename4.py 
-        ├── [_stored]/                      rivt generated files (not printed) 
+        ├── [_stored]/                      rivt generated files-not printed 
             ├── [Logs]/                         log files
                 ├── rv101-log.txt
                 └── rv102-log.txt
-            ├── [Sect]/                         sections                   
+            ├── [Sections]/                     sections not printed                  
                 ├── rv202-5d.txt  
                 ├── rv103-4t.txt                         
                 └── rv301-2r.txt               
@@ -282,18 +279,17 @@ are in the default path only the file name needs to be provided.
             ├── image/                                                 
                 ├── fig1.png
                 └── fig2.jpg   
-            ├── run/                              OS commands
-                ├── run1_win.cmd                     windows command file                  
-                └── run1_linux.sh                    linux command file
-            ├── tools/                         scripts and functions
-                ├── coverpage.rst                    cover page template
-                ├── logoname.png                     cover page logo
-                ├── plot.py                          functions        
-                └── loads.py                         functions
-            └── vals/                          value files
+            ├── run/                            
+                ├── run1_win.cmd                                   
+                └── run1_linux.sh                   
+            ├── tools/                           
+                ├── coverpage.rst                
+                ├── logoname.png                  
+                ├── plot.py                            
+                └── loads.py                    
+            └── vals/                            
                 ├── steel-vals.csv     
                 └── plastic-vals.csv   
-
 
 
 .. _Project requirements:

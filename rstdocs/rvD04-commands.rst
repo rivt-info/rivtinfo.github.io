@@ -1,4 +1,4 @@
-**C.4 Commands**
+**D.4 Commands**
 ========================
 
 **[1t]** Command Summary
@@ -14,16 +14,15 @@
 API Scope           Command                                                  Description
 ========== ============================================================== ========================
 rv.R        **| SHELL |** rel path | os, wait                               :ref:`Shell file`
-rv.I        **| TEXT |** rel path |  language                               :ref:`Text file`
-rv.V, I     **| TABLE |** rel path | title, width, rows, align, head        :ref:`Table file`     
-rv.V, I     **| IMAGE |** rel path | caption, scale, number                 :ref:`Image file`
-rv.V, I     **| IMAGE2 |** rel pth1, rel pth2 | cap1,cap2,sca1,sca2,num     :ref:`Adjacent images`
-rv.V        **| VALTABLE |** rel path | title, rows, number                 :ref:`Values file`     
+rv.V, I     **| TABLE |** rel path | title,width,rows,align,head,num;non    :ref:`Table file`     
+rv.V, I     **| IMAGE |** rel path | caption, scale, num;non                :ref:`Image file`
+rv.V, I     **| IMAGE2 |** rel pth1, rel pth2 | ca1,ca2,sc1,sc2,num;non     :ref:`Adjacent images`
+rv.V        **| PYTHON |** rel path | rivt;namespace                        :ref:`Python file`
+rv.V        **| VALTABLE |** rel path | title, rows, num;non                :ref:`Values file`     
 rv.V        a **==:** 1*IN  | unit1, unit2, decimal | label                 :ref:`Define value`
 rv.V        c **<=:** expression | unit1, unit2, decimal | label            :ref:`Assign value`
-rv.V        c **:=:** expression | unit1, unit2, decimal | label            :ref:`Function value`
-rv.V        a **<** c | decimal | text1, text2, color1, color2                :ref:`Compare value`
-rv.T, V     **| PYTHON |** rel path | namespace                             :ref:`Python file`
+rv.V        c **:=:** func(x,y) | unit1, unit2, decimal | label             :ref:`Function value`
+rv.V        a **<** c | unit, decimal, text1, text2 | label                 :ref:`Compare value`
 rv.T        **| MARKUP |** rel path | type                                  :ref:`Markup file`
 rv.D        **| ATTACHPDF |** rel path | place, title                       :ref:`Attach PDF`   
 rv.D        **| PUBLISH |** doc title | type                                :ref:`Publish doc` 
@@ -35,23 +34,22 @@ rv.D        **| PUBLISH |** doc title | type                                :ref
 See :ref:`here <report-folders>` for the folder structure. If files
 are in the default path only the file name needs to be provided.
 
-================ =========================
-   Command         Default Path
-================ =========================
-\| SHELL |          **/Files/Scripts/**
-\| TEXT |           **/Files/Data/**
-\| TABLE |          **/Files/Data/**
-\| IMAGE |          **/Files/Image/**
-\| IMAGE2 |         **/Files/Image/**
-\| VALTABLE |       **/Files/Data/**   [1]    
-\| PYTHON |         **/Files/Scripts/**
-\| MARKUP |         **/Files/Scripts/**
-\| ATTACHPDF |      **/Files/Attach/**  
-\| PUBLISH |        depends on file type
-================ =========================
+================ ========================= ======
+   Command         Default Path             R/W
+================ ========================= ======
+\| SHELL |          **/_src/**               R
+\| TABLE |          **/_src/**               R
+\| IMAGE |          **/_src/**               R
+\| IMAGE2 |         **/_src/**               R
+\| VALTABLE |       **/_src/**  [1]          R
+\| PYTHON |         **/_src/**               R
+\| MARKUP |         **/_src/**               R
+\| ATTACHPDF |      **/_src/**               W
+\| PUBLISH |        **/published_/** [2]     W
+================ ========================= ======
 
-[1]  use /stored/data/filename to read values defined in the rivt file
-
+[1] use */_stored/vals/* to read values defined in the rivt file
+[2] files are written to the type subdirectory 
 
 .. _Shell file:
 

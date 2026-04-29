@@ -1,4 +1,4 @@
-**C.3 Block Tags**
+**D.3 Block Tags**
 ========================
 
 **[1t]** Block Tag Summary
@@ -8,22 +8,17 @@
 
     <hr>
 
-**Format blocks of text**
+**Format blocks of text or run code**
 
 ========== ========================================= ===============================
 API Scope         Block Tag                                Description 
 ========== ========================================= ===============================
-rv.R        **_[[SHELL]]** process parameters         :ref:`Shell script`
-rv.I        **_[[INDENT]]** spaces (4 default)        :ref:`Indent text block`
-rv.I        **_[[ITALIC]]** spaces (4 default)        :ref:`Indent italic block`
-rv.I        **_[[ENDNOTES]]** optional label          :ref:`Endnotes block`
-rv.I        **_[[TEXT]]** optional language           :ref:`Text block`
-rv.I        **_[[TOPIC]]** topic                      :ref:`Topic block`
+rv.R        **_[[SHELL]]** os, *wait;nowait*          :ref:`Shell script`
 rv.I        **_[[BOX]]** label                        :ref:`Box block`
-rv.V,T      **_[[PYTHON]]** namespace                 :ref:`Python block`
+rv.I        **_[[TOPIC]]** topic                      :ref:`Topic block`
+rv.V        **_[[TABLE]]** label                      :ref:`Table block`
 rv.T        **_[[MARKUP]]** type                      :ref:`Markup block`
-rv.D        **_[[METADATA]]** label                   :ref:`Meta block`
-rv.D        **_[[LAYOUT]]** label                     :ref:`Layout block` 
+rv.D        **_[[METADATA]]** label                   :ref:`Meta block` 
 all         **_[[END]]**                              :ref:`End block`
 ========== ========================================= ===============================
 
@@ -165,6 +160,42 @@ Doc Types     text, PDF, HTML
 
                 This is a third endnote.
                 _[[END]] 
+
+=========== ==========================
+API Scope     Insert
+Doc Types     text, PDF, HTML
+=========== ==========================
+
+.. _Table block:
+
+**[6t]** Text 
+------------------------------------------------
+
+.. raw:: html
+
+    <hr>
+
+.. topic:: _[[TABLE]] 
+
+    Reads and formats restructured text table and writes contents
+    to csv file in the _stored/Vals folder.
+    .. code-block:: text 
+
+            Syntax:
+                _[[TABLE]] label
+                reST table
+                ...
+                _[[END]]  
+        
+            Example:
+                _[[TABLE]] my_table
+                =====  ======
+                Name   Age
+                =====  ======
+                John   25
+                Jane   30
+                =====  =====
+                _[[END]]
 
 =========== ==========================
 API Scope     Insert

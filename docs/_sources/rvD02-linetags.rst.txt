@@ -1,4 +1,4 @@
-**C.2 Line Tags**
+**D.2 Line Tags**
 ========================
 
 **[1t]** Line Tag Summary
@@ -13,21 +13,19 @@
 ========== ==================================================== ===============================
 API Scope             Line Tag                                      Description 
 ========== ==================================================== ===============================
-rv.I                      text **_[C]**                          :ref:`Center text` 
-rv.I                      text **_[R]**                          :ref:`Right justify text`
-rv.I                 **text math _[M]**                          :ref:`Text math` 
-rv.I                **LaTeX math _[L]**                          :ref:`LaTeX math` 
-rv.I                      text **_[#]** text                     :ref:`Endnote number`  
-rv.I                      text **_[G] glossary term |** text     :ref:`Term link`
-rv.I                      text **_[S] label, section |** text    :ref:`Section link`
-rv.I                      text **_[D] label, file name |** text  :ref:`Doc link`
-rv.I                      text **_[U] label, url |** text        :ref:`URL link`   
-rv.V, I                   text **_[V] var_name |** text          :ref:`Variable value`
-rv.V, I                   **text _[E]**                          :ref:`Number equation`
-rv.V, I                  **title _[T]**                          :ref:`Number table`
-rv.V, I                **caption _[F]**                          :ref:`Number figure`
-rv.V, I                        **_[P]**                          :ref:`New page`
-rv.V, I                        **##** text                       nonprinting comment
+rv.I,V                 text **_[C]**                              :ref:`Center text` 
+rv.I,V                 text **_[R]**                              :ref:`Right justify text`
+rv.I,V            **text math _[M]**                              :ref:`Text math` 
+rv.I,V           **LaTeX math _[L]**                              :ref:`LaTeX math` 
+rv.I,V                 **text _[E]**                              :ref:`Number equation`
+rv.I,V                **title _[T]**                              :ref:`Number table`
+rv.I,V              **caption _[F]**                              :ref:`Number figure`
+rv.I,V                 text **_[#]** text                         :ref:`Endnote number`  
+rv.I,V                 text **_[G] glossary term |** text         :ref:`Term link`
+rv.I,V                 text **_[S] label, section |** text        :ref:`Section link`
+rv.I,V                 text **_[U] label, url |** text            :ref:`URL link`   
+rv.I,V                 text **_[V] var_name |** text              :ref:`Variable value`
+all                     **##** text                               nonprinting comment
 ========== ==================================================== ===============================
 
 ..  _Center text:
@@ -52,7 +50,7 @@ Center line of text within the page margins.
             This text wil be centered. _[C]
 
 =========== ==========================
-API Scope     Insert
+API Scope     Insert, Values
 Doc Types     text, PDF, HTML
 =========== ==========================
 
@@ -79,7 +77,7 @@ Right justify line of text within the page margins.
             This text wil be right justified _[R]
 
 =========== ==========================
-API Scope     Insert
+API Scope     Insert, Values
 Doc Types     text, PDF, HTML
 =========== ==========================
 
@@ -105,7 +103,7 @@ Format math expression into text.
             f(x,y) = sin(x)**2 + y/5 _[M]
 
 =========== ==========================
-API Scope     Insert
+API Scope     Insert, Values
 Doc Types     text, PDF, HTML
 =========== ==========================
 
@@ -131,7 +129,7 @@ Format LaTeX math expression.
             \frac{1}{\sqrt{x}} _[L]
 
 =========== ==========================
-API Scope     Insert
+API Scope     Insert, Values
 Doc Types     PDF, HTML
 =========== ==========================
 
@@ -160,7 +158,7 @@ are defined with the block tag _[[ENDNOTE]] and are listed at the end of the
             This is a sentence with an endnote _[#] tag.
 
 =========== ==========================
-API Scope     Insert
+API Scope     Insert, Values
 Doc Types     text, PDF, HTML
 =========== ==========================
 
@@ -188,7 +186,7 @@ Link a term to the glossary.
             is provided in the glossary.
 
 =========== ==========================
-API Scope     Insert
+API Scope     Insert, Values
 Doc Types     PDF, HTML
 =========== ==========================
 
@@ -216,7 +214,7 @@ link text. If the text is ommitted the section label is used for the link.
             which provides more detail.
 
 =========== ==========================
-API Scope     Insert
+API Scope     Insert, Values
 Doc Types     PDF, HTML
 =========== ==========================
 
@@ -245,7 +243,7 @@ ommitted the *doc* title will be inserted as the link term.
 
 
 =========== ==========================
-API Scope     Insert
+API Scope     Insert, Values
 Doc Types     PDF, HTML
 =========== ==========================
 
@@ -273,7 +271,7 @@ ommitted the url will be inserted as the link term.
 
    
 =========== ==========================
-API Scope     Insert
+API Scope     Insert, Values
 Doc Types     PDF, HTML
 =========== ==========================
 
@@ -387,32 +385,6 @@ API Scope     Insert, Values
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-.. _New Page:
 
-**[15t]** New Page
-------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-    Insert a page break in the document.
-
-.. topic:: _[P]
-
-    .. code-block:: text
-
-        Syntax:
-            text _[P]
-
-        Example:
-            Preceded by text or stand alone. _[P]
-            _[P]
-
-
-=========== ==========================
-API Scope     Insert, Values
-Doc Types     text, PDF, HTML
-=========== ==========================
 
 
