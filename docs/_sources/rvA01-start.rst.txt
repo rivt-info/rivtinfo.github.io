@@ -8,25 +8,24 @@
 
    <hr> 
 
-This section explains how to get started in editing and running *rivt file*
+This section explains how to get started with *rivt*  using *rivt file*
 examples. Examples can be run in the cloud or on a local computer. In both
-cases editing is typically carried out in an :term:`IDE`. 
-
-For a general overview of *rivt* start :doc:`here <rvB01-overview>`.
+cases editing is typically carried out in an :term:`IDE`. For a general 
+overview of *rivt* start :doc:`here <rvB01-overview>`.
 
 The three methods for running *rivt* are:
 
-1. *Codespace-rivt* runs the cloud and is described :ref:`here <Code-rivt>`
-2. *Portable-rivt-VSCode* runs locally on Windows and is described :ref:`here <rivt-portable>`
-3. *System-rivt-uv* runs locally and is described :ref:`here <rivt-sys>`
+1. *Codespace rivt* runs the cloud and is described :ref:`here <Code-rivt>`
+2. *Portable rivt-VSCode* runs locally on Windows and is described :ref:`here <rivt-portable>`
+3. *System rivt-uv* runs locally and is described :ref:`here <rivt-sys>`
 
-*Codespace-rivt* is recommended when local installation is not practical or desired 
+*Codespace rivt* is recommended when local installation is not practical or desired 
 and work is shared with teams. System installations are recommended for the most
 general and flexible implementation.
 
-*Portable-rivt-VSCode* is recommended for Windows users unfamiliar with Python.
+*Portable rivt-VSCode* is recommended for Windows users unfamiliar with Python.
 
-*System-rivt-uv* is recommended for users with some familiarity with Python and
+*System rivt-uv* is recommended for users with some familiarity with Python and
 and provides the most flexible and extensible environment.
 
 **[2t]** Typical IDE layout 

@@ -1,10 +1,4 @@
 {
-    "rvB02-framework": 0.049,
-    "rvC05-docex": 0.005,
-    "rvD05-markup-r": 0.011,
-    "rvD06-markup-i": 0.032,
-    "rvD07-markup-v": 0.024,
-    "rvD08-markup-t": 0.022,
-    "rvD09-markup-d": 0.015,
-    "rvF02-terms": 0.064
+    "index": 0.047,
+    "rvA01-start": 0.063
 }
