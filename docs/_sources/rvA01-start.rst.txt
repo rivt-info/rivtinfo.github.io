@@ -16,9 +16,9 @@ For a general overview of *rivt* start :doc:`here <rvB01-overview>`.
 --------------------------------
 
 #.  If you are not familiar with Python or programming, *Portable-rivt* is the 
-    recommended method to start with. *Portable-rivt* is a single zip folder 
-    that contains a full *rivt* and *VSCode* installation with examples. 
-    It is a single download for Windows that requires no installation. 
+    recommended method. *Portable-rivt* is a single zip folder 
+    that contains a portable version of *Python*, *rivt* and *VSCode*  with 
+    examples. The single Windows download requires no installation. 
     Further details are given :ref:`here <rivt-portable>`
 
 #.  If you are familiar with `GitHub <https://github.com>`__ and have an account
