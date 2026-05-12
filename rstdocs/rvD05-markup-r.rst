@@ -5,9 +5,7 @@
 **[1i]** rv.R Markup
 ------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 
 The *Run* API function executes shell commands.
@@ -15,9 +13,7 @@ The *Run* API function executes shell commands.
 **[2i]** Block Tags
 ------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 ======================================= ==============================
        Block Tag                              Description
@@ -29,9 +25,7 @@ The *Run* API function executes shell commands.
 **[3i]** Commands
 ------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
     
 ========================================= ====================
    Command                                    Description

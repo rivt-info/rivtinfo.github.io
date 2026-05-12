@@ -5,9 +5,7 @@
 **[1i]** rv.V Markup
 -------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 The *Values* API function defines values and evaluates equations and functions.
 
@@ -15,9 +13,7 @@ The *Values* API function defines values and evaluates equations and functions.
 **[2i]** Line Tags
 -------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 **Format a line of text**
 
@@ -33,9 +29,7 @@ The *Values* API function defines values and evaluates equations and functions.
 **[3i]** Block Tags
 -------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 **Format or execute a block of text**
 
@@ -49,9 +43,7 @@ The *Values* API function defines values and evaluates equations and functions.
 **[2i]** Commands
 -------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 **Format files and calculations**
 

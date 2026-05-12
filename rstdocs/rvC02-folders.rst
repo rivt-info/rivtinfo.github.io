@@ -1,9 +1,7 @@
 **C.2 Folders**
 ============================
 
-.. raw:: html
-
-    <hr>
+ 
 
 .. _rivt-folders:
 
@@ -14,9 +12,7 @@
 
 **Folder Names**
 
-.. raw:: html
-
-    <hr>
+ 
 
     <p style="border-width:2px; border-style:solid; 
     border-color:#49b2c3;padding: 1em;">

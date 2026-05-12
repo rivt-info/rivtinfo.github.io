@@ -4,9 +4,7 @@
 **[1]** Doc Files
 -----------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 A *rivt doc* is the output of a *rivt file* processed by *rivtlib*. Each 
 *rivt file* outputs a corresponding formatted :term:`doc` with a *doc number* derived
@@ -55,9 +53,7 @@ divisions and subdivisions in the *report*.
 **[2]** Reports
 -----------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 Each :term:`rivt file` outputs a corresponding :term:`doc` written to the
 *publish* folder in the specified format. A *rivt report* is assembled from a

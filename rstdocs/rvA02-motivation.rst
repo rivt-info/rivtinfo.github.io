@@ -5,9 +5,7 @@
 **[1]** Background
 --------------------------------------------------------------------- 
 
-.. raw:: html
-
-    <hr>
+ 
 
 *rivt* is an open source software project that simplifies sharing and reuse of
 engineering documents. This has always been a challenge because the inclusion
@@ -57,9 +55,7 @@ Jupyter        no       no         no      yes         yes      yes
 **[2]** Use Cases
 --------------------------------------------------------------------- 
 
-.. raw:: html
-
-    <hr>
+ 
 
 The primary use case for *rivt* is producing engineering documents that lie
 between back of envelope calculations and sketches, and formal journal

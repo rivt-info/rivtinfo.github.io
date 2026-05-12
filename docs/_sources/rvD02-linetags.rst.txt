@@ -4,9 +4,7 @@
 **[1]** Line Tag Summary
 -------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 **Format a line of text**
   
@@ -32,10 +30,6 @@ all                     **##** text                               nonprinting co
 **[2]** Bold center text
 -------------------------------------------
 
-.. raw:: html
-
-    <hr>
-
 Center line of text within the page margins.
 
 .. topic:: _[C]
@@ -52,6 +46,8 @@ Center line of text within the page margins.
 API Scope     Insert, Values
 Doc Types     text, PDF, HTML
 =========== ==========================
+
+-------------------------------
 
 ..  _Download link:
 
@@ -80,10 +76,6 @@ Doc Types     text, PDF, HTML
 **[4]** Text math
 -----------------------------------------
 
-.. raw:: html
-
-    <hr>
-
 Format math expression into text.
 
 .. topic:: _[M]
@@ -105,10 +97,6 @@ Doc Types     text, PDF, HTML
 
 **[5]** LaTeX math 
 -----------------------------------------
-
-.. raw:: html
-
-    <hr>
 
 Format LaTeX math expression.
 
@@ -132,10 +120,6 @@ Doc Types     PDF, HTML
 
 **[6]**  Endnote number
 -------------------------------------
-
-.. raw:: html
-
-    <hr>
 
 Assign endnote number to the text in order of processing. Endnotes
 are defined with the block tag _[[ENDNOTE]] and are listed at the end of the
@@ -162,10 +146,6 @@ Doc Types     text, PDF, HTML
 **[7]** Glossary link
 ------------------------------------------
 
-.. raw:: html
-
-    <hr>
-
 Link a term to the glossary.
 
 .. topic:: _[G] 
@@ -188,10 +168,6 @@ Doc Types     PDF, HTML
 
 **[8]** Section link
 -----------------------------------------
-
-.. raw:: html
-
-    <hr>
 
 Create a link to the section label defined in the API header with optional
 link text. If the text is ommitted the section label is used for the link.
@@ -216,10 +192,6 @@ Doc Types     PDF, HTML
 
 **[9]** Doc link
 -----------------------------------------
-
-.. raw:: html
-
-    <hr>
 
 Link to a *doc* in a *report* with an optional link text. If the link text is 
 ommitted the *doc* title will be inserted as the link term.
@@ -246,10 +218,6 @@ Doc Types     PDF, HTML
 **[10]** URL link
 -----------------------------------------
 
-.. raw:: html
-
-    <hr>
-
 Link to a an external site with optional link text. If the link text is 
 ommitted the url will be inserted as the link term.
 
@@ -274,10 +242,6 @@ Doc Types     PDF, HTML
 **[11]** Variable value
 ------------------------------------------
 
-.. raw:: html
-
-    <hr>
-
 Insert the value of  var_name _[V] in the sentence.
 
 .. topic:: _[V]
@@ -299,10 +263,6 @@ Doc Types     text, PDF, HTML
 
 **[12]** Equation number
 -----------------------------------------
-
-.. raw:: html
-
-    <hr>
 
 Assign equation number to a line of text. 
 
@@ -330,10 +290,6 @@ Doc Types     text, PDF, HTML
 **[13]** Table number
 ------------------------------------------
 
-.. raw:: html
-
-    <hr>
-
     Label and number tables.
 
 .. topic:: _[T]
@@ -348,7 +304,7 @@ Doc Types     text, PDF, HTML
 
 
 =========== ==========================
-API Scope     Insert, Values
+API Scope     Insert
 Doc Types     text, PDF, HTML
 =========== ==========================
 
@@ -356,10 +312,6 @@ Doc Types     text, PDF, HTML
 
 **[14]** Figure number
 ------------------------------------------
-
-.. raw:: html
-
-    <hr>
 
     Labels and numbers figures.
 

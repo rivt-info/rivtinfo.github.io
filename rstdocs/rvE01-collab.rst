@@ -4,9 +4,7 @@
 **[1]** Overview
 --------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 There are several ways to collaborate on *rivt files* by using
 tools available in the Python, GitHub and VSCode ecosystem.
@@ -54,9 +52,7 @@ tools available in the Python, GitHub and VSCode ecosystem.
 **[2]** Open Models
 ---------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 The web site `OpenModels.info <https://www.openmodels.info/>`__ is a
 *Google Drive* repository of open source engineernig model files, including
@@ -65,9 +61,7 @@ The web site `OpenModels.info <https://www.openmodels.info/>`__ is a
 **[3]** Git and GitHub
 ---------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 `Git <https://git-scm.com/>`_ and `GitHub <https://github.com/>`_ are part of
 the *rivt framework*. *Git* is a free, open-source, distributed version control
@@ -105,9 +99,7 @@ rivt editing and collaboration environment in the cloud.
 **[4]** VSCode
 ------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 `VSCode <https://code.visualstudio.com/>`_ is an open source IDE with a large
 set of extensions, including collaboration support. Collaboration is 

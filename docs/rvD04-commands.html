@@ -404,7 +404,7 @@
 <h1><strong>D.4 Commands</strong><a class="headerlink" href="#d-4-commands" title="Link to this heading">#</a></h1>
 <section id="command-summary">
 <h2><strong>[1]</strong> Command Summary<a class="headerlink" href="#command-summary" title="Link to this heading">#</a></h2>
-<hr><p><strong>format files and equations</strong></p>
+<p><strong>format files and equations</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>API Scope</p></th>
@@ -523,7 +523,7 @@ are in the default path only the file name needs to be provided.</p>
 </section>
 <section id="shell-file">
 <span id="id1"></span><h2><strong>[2]</strong> Shell file<a class="headerlink" href="#shell-file" title="Link to this heading">#</a></h2>
-<hr><p>The SHELL command runs shell scripts including .cmd, .bat and .sh files.
+<p>The SHELL command runs shell scripts including .cmd, .bat and .sh files.
 The <em>os</em> parameter specifies the operating system: <em>win</em>, <em>mac</em> or <em>linux</em>.
 The <em>wait; nowait</em> specifies whether rivt file processing waits for the
 script to complete before continuing.</p>
@@ -555,7 +555,7 @@ Example:
 </section>
 <section id="text-file">
 <span id="id2"></span><h2><strong>[3]</strong> Text file<a class="headerlink" href="#text-file" title="Link to this heading">#</a></h2>
-<hr><p>The TEXT command reads and formats text and code files. The language parameter
+<p>The TEXT command reads and formats text and code files. The language parameter
 specifies formatting and syntax coloring.  Language types include:</p>
 <ul class="simple">
 <li><p><em>literal</em></p></li>
@@ -594,7 +594,7 @@ Example:
 </section>
 <section id="table-file">
 <span id="id3"></span><h2><strong>[4]</strong> Table file<a class="headerlink" href="#table-file" title="Link to this heading">#</a></h2>
-<hr><p>The TABLE command reads csv, xls, and rst files and outputs formatted tables.
+<p>The TABLE command reads csv, xls, and rst files and outputs formatted tables.
 The title may be ommited by inserting a hyphen “-”. The width parameter
 specifies the maximum character width of a column. The align parameter
 specifies the cell justification - left, center, right. The number parameter
@@ -631,7 +631,7 @@ Example:
 </section>
 <section id="image-file">
 <span id="id4"></span><h2><strong>[5]</strong> Image file<a class="headerlink" href="#image-file" title="Link to this heading">#</a></h2>
-<hr><p>The IMAGE command reads a PNG or JPEG file and centers it in the <em>doc</em>. The
+<p>The IMAGE command reads a PNG or JPEG file and centers it in the <em>doc</em>. The
 scale parameter is a decimal fraction of the page width. The caption may be
 ommited by using a single hyphen. The <em>num;nonum</em> parameter specifies whether
 to assign a figure number. The image path is inserted in the text <em>doc</em> instead
@@ -664,7 +664,7 @@ Example:
 </section>
 <section id="adjacent-images">
 <span id="id5"></span><h2><strong>[6]</strong> Adjacent images<a class="headerlink" href="#adjacent-images" title="Link to this heading">#</a></h2>
-<hr><p>The IMAGE2 command reads two PNG or JPEG file and places them side by side in
+<p>The IMAGE2 command reads two PNG or JPEG file and places them side by side in
 the <em>doc</em>. The scale parameters are a decimal fraction of the page width. The
 captions may be ommited by using a single hyphen for either or both images. The
 <em>fig;nofig</em> parameters specify whether to assign a figure number to either or
@@ -698,7 +698,7 @@ Example:
 </section>
 <section id="valtable-file">
 <span id="values-file"></span><h2><strong>[7]</strong>  Valtable file<a class="headerlink" href="#valtable-file" title="Link to this heading">#</a></h2>
-<hr><p>The VALTABLE command imports and defines values from a <em>csv</em> or <em>xls</em> file.
+<p>The VALTABLE command imports and defines values from a <em>csv</em> or <em>xls</em> file.
 The file format is:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">var</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="n">unit1</span><span class="p">,</span> <span class="n">unit2</span><span class="p">,</span> <span class="n">decimal</span><span class="p">,</span> <span class="n">label</span>
 </pre></div>
@@ -741,7 +741,7 @@ Example:
 </section>
 <section id="define-value">
 <span id="id6"></span><h2><strong>[8]</strong> Define value<a class="headerlink" href="#define-value" title="Link to this heading">#</a></h2>
-<hr><p>Defines a value and writes it to the file <em>vdocnum-s.csv</em> where <em>num</em> is the
+<p>Defines a value and writes it to the file <em>vdocnum-s.csv</em> where <em>num</em> is the
 <em>docnumber</em> and <em>s</em> is the section number. The file is written to the folder
 <em>stored/vals</em> unless <em>singledocB</em> is set to <em>True</em> in the comment variable.</p>
 <p>The stored values can read and defined in other rivt files using the VALUES
@@ -770,7 +770,7 @@ Example:
 </section>
 <section id="assign-value">
 <span id="id7"></span><h2><strong>[9]</strong> Assign value<a class="headerlink" href="#assign-value" title="Link to this heading">#</a></h2>
-<hr><p>Assigns a value to an equation and writes the values to a file <em>vdocnum-s.csv</em>
+<p>Assigns a value to an equation and writes the values to a file <em>vdocnum-s.csv</em>
 where <em>num</em> is the <em>doc number</em> and <em>s</em> is the section number. The file is
 written to the folder <em>stored/vals</em> unless <em>rv single doc</em> is set to <em>True</em>
 in which case values are stored in the rivt file folder (root).</p>
@@ -801,7 +801,7 @@ Example:
 </section>
 <section id="function-value">
 <span id="id8"></span><h2><strong>[9]</strong> Function value<a class="headerlink" href="#function-value" title="Link to this heading">#</a></h2>
-<hr><p>Assigns a value to an equation and writes the values to a file <em>vdocnum-s.csv</em>
+<p>Assigns a value to an equation and writes the values to a file <em>vdocnum-s.csv</em>
 where <em>num</em> is the <em>doc number</em> and <em>s</em> is the section number. The file is
 written to the folder <em>stored/vals</em> unless <em>rv single doc</em> is set to <em>True</em>
 in which case values are stored in the rivt file folder (root).</p>
@@ -833,7 +833,7 @@ Example:
 </section>
 <section id="compare-values">
 <span id="compare-value"></span><h2><strong>[10]</strong> Compare values<a class="headerlink" href="#compare-values" title="Link to this heading">#</a></h2>
-<hr><p>Inserts a text with alignment and color on the following line if the expression
+<p>Inserts a text with alignment and color on the following line if the expression
 evaluates to true. text1 and text2 are printed if true or false repectively.
 Colors are assigned accordingly as <em>red;blue;yellow;green;black;gray</em> defined
 in the <em>style files</em>.  The text is right aligned.</p>
@@ -870,7 +870,7 @@ Example:
 </section>
 <section id="python-file">
 <span id="id9"></span><h2><strong>[11]</strong> Python file<a class="headerlink" href="#python-file" title="Link to this heading">#</a></h2>
-<hr><p>Executes Python code in the <em>rivt namespace</em> or user specified namespace. File
+<p>Executes Python code in the <em>rivt namespace</em> or user specified namespace. File
 paths used in the script are relative to the root <em>rivt</em> folder.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
     | PYTHON | relative path | *rvspace*; user space
@@ -896,7 +896,7 @@ Example:
 </section>
 <section id="markup-file">
 <span id="id10"></span><h2><strong>[12]</strong>  Markup file<a class="headerlink" href="#markup-file" title="Link to this heading">#</a></h2>
-<hr><p>Inserts HTML into an HTML <em>doc</em>, LaTeX into a PDF <em>doc</em>, and reStructuredText
+<p>Inserts HTML into an HTML <em>doc</em>, LaTeX into a PDF <em>doc</em>, and reStructuredText
 into either PDF or HTML. LaTeX requires the installation of <em>texlive</em>.</p>
 <aside class="topic">
 <p class="topic-title">| MARKUP |</p>
@@ -925,7 +925,7 @@ Example:
 </section>
 <section id="attach-pdf">
 <span id="id11"></span><h2><strong>[13]</strong> Attach PDF<a class="headerlink" href="#attach-pdf" title="Link to this heading">#</a></h2>
-<hr><p>Appends or prepends a PDF file to the <em>doc</em>. The title parameter generates an
+<p>Appends or prepends a PDF file to the <em>doc</em>. The title parameter generates an
 Appendix cover page with the specified title. A “-” omits the over page. For
 HTML <em>docs</em> the file is inserted as a donwload link.</p>
 <aside class="topic">
@@ -955,7 +955,7 @@ Example:
 </section>
 <section id="publish-doc">
 <span id="id12"></span><h2><strong>[14]</strong> Publish doc<a class="headerlink" href="#publish-doc" title="Link to this heading">#</a></h2>
-<hr><p>Publishes a <em>doc</em>.</p>
+<p>Publishes a <em>doc</em>.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
     | PUBLISH | ini relative path | rst2pdf, texpdf, tex, hmtl
 

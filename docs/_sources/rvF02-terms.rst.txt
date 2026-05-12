@@ -4,9 +4,7 @@
 **[1]** rivt Terms
 -----------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 
 .. glossary::
@@ -151,9 +149,7 @@
 **[2]** Python Terms
 -----------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 .. glossary::
   :sorted: 
@@ -181,9 +177,7 @@
 **[3]** GitHub and VSCode Terms
 -----------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 .. glossary::
   :sorted: 

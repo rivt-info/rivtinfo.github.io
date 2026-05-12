@@ -4,9 +4,7 @@
 **[1]** Block Tag Summary
 -------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 **Format blocks of text or run code**
 
@@ -27,9 +25,7 @@ all         **_[[END]]**                              :ref:`End block`
 **[2]** Shell script
 ------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 Runs shell scripts that run external programs. The shell parameters include
 specifying the operating system, process control and terminal window control.
@@ -66,9 +62,7 @@ Doc Types     text, PDF, HTML
 **[3]** Indent text 
 ----------------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 Indents text block the specified number of spaces.
 
@@ -99,9 +93,7 @@ Doc Types     text, PDF, HTML
 **[4]** Indent italic 
 ------------------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 .. topic::  _[[ITALIC]] 
 
@@ -131,9 +123,7 @@ Doc Types     text, PDF, HTML
 **[5]** Endnotes 
 -------------------------------------------    
 
-.. raw:: html
-
-    <hr>
+ 
 
 .. topic:: _[[ENDNOTES]] 
 
@@ -171,9 +161,7 @@ Doc Types     text, PDF, HTML
 **[6]** Text 
 ------------------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 .. topic:: _[[TABLE]] 
 
@@ -207,9 +195,7 @@ Doc Types     text, PDF, HTML
 **[6]** Text 
 ------------------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 .. topic:: _[[TEXT]] 
 
@@ -247,9 +233,7 @@ Doc Types     text, PDF, HTML
 **[7]** Topic 
 ------------------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 .. topic:: _[[TOPIC]] 
 
@@ -278,9 +262,7 @@ Doc Types     text, PDF, HTML
 **[8]** Box 
 ------------------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 .. topic:: _[[BOX]] 
 
@@ -311,9 +293,7 @@ Doc Types     text, PDF, HTML
 **[9]** Python 
 ------------------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 .. topic:: _[[PYTHON]] 
 
@@ -344,9 +324,7 @@ Doc Types     text, PDF, HTML
 **[10]** Markup block
 ---------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 Inserts HTML into an HTML *doc*, LaTeX into a PDF *doc*, and reStructuredText
 into either PDF or HTML. 
@@ -380,9 +358,7 @@ Doc Types     text, PDF, HTML
 **[11]** Metadata
 -------------------
 
-.. raw:: html
-
-    <hr>
+ 
 .. topic:: _[[METADATA]]
     
     *Metadata* is written to the *rvAnn-apilog.py* file and is converted
@@ -423,9 +399,7 @@ Doc Types     text, PDF, HTML
 **[12]** Layout block
 ------------------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 Overrides default layout settings.
 
@@ -455,9 +429,7 @@ Doc Types     text, PDF, HTML
 **[13]** End block
 ------------------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 .. topic:: _[[END]] 
     

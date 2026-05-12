@@ -13,9 +13,7 @@
 
 **[2]** Licenses
 ------------------------------------------------------------------------------
-.. raw:: html
-
-    <hr>
+ 
 
 .. dropdown:: What is the open source license for *rivtlib*?  
 

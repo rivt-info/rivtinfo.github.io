@@ -4,9 +4,7 @@
 **[1i]** rv.I Markup
 -------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 The *Insert* API function inserts and formats static sources into the *doc*,
 including images, tables, links and formatted text.
@@ -14,9 +12,7 @@ including images, tables, links and formatted text.
 **[2i]** Line Tags
 -------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 ================================================= ============================
      Line Tag                                       Description 
@@ -36,9 +32,7 @@ including images, tables, links and formatted text.
 **[3i]** Block Tags
 -------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 ========================================= ==============================
        Block Tag                               Description 
@@ -53,9 +47,7 @@ including images, tables, links and formatted text.
 **[4i]** Commands
 -------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 ==================================================================== =========================
          Command                                                          Description

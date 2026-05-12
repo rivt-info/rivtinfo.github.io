@@ -4,18 +4,14 @@
 **[1i]** rv.D Markup
 -------------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 The *Doc API* publishes formatted *docs* from the rivt API strings.
 
 **[2i]** Block Tags
 -------------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 ======================================= ==============================
        Block Tag                         Description 
@@ -27,9 +23,7 @@ The *Doc API* publishes formatted *docs* from the rivt API strings.
 **[3i]** Commands
 -------------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 ========================================================= ==================== 
        Command                                                   Description

@@ -4,9 +4,7 @@
 **[1]** Summary
 --------------------------------------------------------------------- 
 
-.. raw:: html
-
-    <hr>
+ 
 
 *rivt* is an open source Python project that imports 
 the `rivtlib Python package <https://pypi.org/project/rivtlib/>`__

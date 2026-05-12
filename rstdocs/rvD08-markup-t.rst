@@ -4,9 +4,7 @@
 **[1i]** rv.T Markup
 ------------------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 The *Tools* API function executes markup and scripts. 
 
@@ -14,9 +12,7 @@ The *Tools* API function executes markup and scripts.
 **[2i]** Block Tags
 ------------------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 ========================================= ==============================
        Block Tag                            Description 
@@ -29,9 +25,7 @@ The *Tools* API function executes markup and scripts.
 **[3i]** Commands
 ------------------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 ============================================================== =====================
       Command                                                      Description

@@ -4,9 +4,7 @@
 **[1]** Command Summary
 -------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 **format files and equations**
 
@@ -56,9 +54,7 @@ are in the default path only the file name needs to be provided.
 **[2]** Shell file
 -------------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 The SHELL command runs shell scripts including .cmd, .bat and .sh files. 
 The *os* parameter specifies the operating system: *win*, *mac* or *linux*. 
@@ -90,9 +86,7 @@ Doc Types     text, PDF, HTML
 **[3]** Text file
 ------------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 The TEXT command reads and formats text and code files. The language parameter
 specifies formatting and syntax coloring.  Language types include:
@@ -130,9 +124,7 @@ Doc Types     text, PDF, HTML
 **[4]** Table file
 ------------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 The TABLE command reads csv, xls, and rst files and outputs formatted tables.
 The title may be ommited by inserting a hyphen "-". The width parameter
@@ -167,9 +159,7 @@ Doc Types     text, PDF, HTML
 **[5]** Image file
 -------------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 The IMAGE command reads a PNG or JPEG file and centers it in the *doc*. The
 scale parameter is a decimal fraction of the page width. The caption may be
@@ -201,9 +191,7 @@ Doc Types     PDF, HTML
 **[6]** Adjacent images
 --------------------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 The IMAGE2 command reads two PNG or JPEG file and places them side by side in
 the *doc*. The scale parameters are a decimal fraction of the page width. The
@@ -236,9 +224,7 @@ Doc Types     PDF, HTML
 **[7]**  Valtable file
 ------------------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 The VALTABLE command imports and defines values from a *csv* or *xls* file. 
 The file format is:: 
@@ -280,9 +266,7 @@ Doc Types     text, PDF, HTML
 **[8]** Define value
 -------------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 Defines a value and writes it to the file *vdocnum-s.csv* where *num* is the 
 *docnumber* and *s* is the section number. The file is written to the folder
@@ -310,9 +294,7 @@ Doc Types     text, PDF, HTML
 **[9]** Assign value
 -------------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 Assigns a value to an equation and writes the values to a file *vdocnum-s.csv*
 where *num* is the *doc number* and *s* is the section number. The file is
@@ -344,9 +326,7 @@ Doc Types     text, PDF, HTML
 **[9]** Function value
 -------------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 Assigns a value to an equation and writes the values to a file *vdocnum-s.csv*
 where *num* is the *doc number* and *s* is the section number. The file is
@@ -380,9 +360,7 @@ Doc Types     text, PDF, HTML
 **[10]** Compare values
 -----------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 Inserts a text with alignment and color on the following line if the expression
 evaluates to true. text1 and text2 are printed if true or false repectively.
@@ -422,9 +400,7 @@ Doc Types     text, PDF, HTML
 **[11]** Python file
 -------------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 Executes Python code in the *rivt namespace* or user specified namespace. File
 paths used in the script are relative to the root *rivt* folder.
@@ -448,9 +424,7 @@ Doc Types     text, PDF, HTML
 **[12]**  Markup file
 -------------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 Inserts HTML into an HTML *doc*, LaTeX into a PDF *doc*, and reStructuredText
 into either PDF or HTML. LaTeX requires the installation of *texlive*.
@@ -476,9 +450,7 @@ Doc Types     text, PDF, HTML
 **[13]** Attach PDF
 -------------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 Appends or prepends a PDF file to the *doc*. The title parameter generates an
 Appendix cover page with the specified title. A "-" omits the over page. For
@@ -506,9 +478,7 @@ Doc Types     text, PDF, HTML
 **[14]** Publish doc
 -------------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 Publishes a *doc*. 
 

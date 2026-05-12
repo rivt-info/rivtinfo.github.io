@@ -5,9 +5,7 @@
 **[1]** Report compilation
 ----------------------------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 A typical workflow for writing *reports* is to start with a similar *rivt
 folder* and edit the *rivt files* and *report script* that produces the
@@ -53,9 +51,7 @@ the corresponding *doc numbers* in the would be:
 **[2]** rivt-report.py
 ----------------------------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 The Python *report script* includes settings that specify assembly parameters
 and override defaults. These include:
@@ -139,9 +135,7 @@ An example rivt-report.py script is shown below.
 **[3]** conf.py
 --------------------------------------------------------------------- 
 
-.. raw:: html
-
-    <hr>
+ 
 
 The *conf.py* file contains configuration settings for *rivt docs* and reports.
 A typical *conf.py* file looks like this:

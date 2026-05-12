@@ -7,9 +7,7 @@
 **[1]** API
 --------------------------------------------------------------------- 
 
-.. raw:: html
-
-    <hr>
+ 
 
 **API functions**
 
@@ -253,9 +251,7 @@ or files defined and written by the *rivt file*.
 **[6]** Python Requirements
 -------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 The minimum Python version is *3.14*. *rivt* project packages include the
 following categories:
@@ -306,9 +302,7 @@ following categories:
 **[7]** VSCode Settings
 ------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 Workspace extension and other settings are stored in the *.vscode* folder and
 should be included as part of a *rivt folder*. Settings that affect the

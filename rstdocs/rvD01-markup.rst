@@ -6,9 +6,7 @@
 **[1]** API functions
 --------------------------------------------------------------------- 
 
-.. raw:: html
-
-    <hr>
+ 
 
 *rivt* has seven API functions. The name *rivt* is an acronym taken from the
 four functions that process content. The remaining three functions are used for
@@ -67,9 +65,7 @@ individually as cells by using the standard notebook percent notation:
 **[2]** rivt string
 ----------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 Each :doc:`API function <rvA01-start>` takes a triple quoted :term:`rivt string` 
 argument composed of a :term:`header substring` line followed 
@@ -82,9 +78,7 @@ and navigation (e.g. section folding).
 
 **Header substring**
 
-.. raw:: html
-
-    <hr>
+ 
 
 The :term:`header substring` starts with a *section label*, used as the
 section title, followed by a vertical bar and three comma separated
@@ -184,9 +178,7 @@ Examples of *header substring* settings are shown below.
 
 **Content substring**
 
-.. raw:: html
-
-    <hr>
+ 
 
 The :term:`content substring` is indented four spaces for legibility and 
 code folding. It includes :doc:`line tags<rvD02-linetags>`, 
@@ -218,9 +210,7 @@ processing HTML, LaTeX and reStructuredText scripts.
 **[3]** Tags and Commands
 ----------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 :doc:`Line Tags <rvD02-linetags>`
 

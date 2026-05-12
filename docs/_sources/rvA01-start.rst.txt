@@ -164,9 +164,7 @@ by following the steps below.  Example rivt files are included.
 **[4]** System-rivt
 --------------------------------------------------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 *rivt* may be installed at the system level. 
 

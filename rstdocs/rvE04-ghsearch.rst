@@ -4,9 +4,7 @@
 **[1]** GitHub Global Search
 --------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
 
 This page is a search interface for **rivt** files on GitHub. The search covers
 the full text of the **rivt** README.txt file in the *repo* directory. The
@@ -54,9 +52,7 @@ the `GitHub interface <https://github.com/search>`__.
 **[2]** GitHub Organization Search
 ---------------------------------------
 
-.. raw:: html
-
-    <hr>
+ 
     
 Restrict search to the following comma separated GitHub organizations: 
 
