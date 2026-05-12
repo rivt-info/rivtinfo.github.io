@@ -1,18 +1,18 @@
 **A.3 FAQ**
 =================
 
-**[1t]** Contact
--------------------------------------------------------------
-.. raw:: html
-
-    <hr>
+**[1]** Contact
+------------------------------------------------------------------------------
 
 `support@rivt.info <mailto:support@rivt.info>`_
 
+
+--------------------------------
+
 .. _Licenses:
 
-**[2t]** Licenses
--------------------------------------------------------------
+**[2]** Licenses
+------------------------------------------------------------------------------
 .. raw:: html
 
     <hr>
@@ -60,11 +60,11 @@
     Public License Version 2.0 (GPLv2).
 
 
-**[3t]** *rivt* design and development
--------------------------------------------------------------
-.. raw:: html
+---------------------------------
 
-    <hr>
+
+**[3]** *rivt* design and development
+-------------------------------------------------------------------------------
 
 .. dropdown:: What is the *rivt* release schedule?
 
@@ -93,3 +93,4 @@
     - `LaTeX <https://www.latex-project.org/>`__ for PDF generation
     - `QCAD <https://qcad.org/en/>`__ for diagramming
     - `Git <https://git-scm.com/>`__ for document sharing and version control
+

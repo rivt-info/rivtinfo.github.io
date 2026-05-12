@@ -2,7 +2,7 @@
 ==========================
 
 
-**[1t]** Overview
+**[1]** Overview
 ----------------------------------------
 
 .. raw:: html
@@ -42,7 +42,7 @@ The public folder may be uploaded to a GitHub repo for public sharing. When
 downloaded the extra hyphens may be removed with a batch remove command (e.g.
 in VSCode).
 
-**[2t]** Public Folder
+**[2]** Public Folder
 ----------------------------------------
 
 .. raw:: html
@@ -75,7 +75,7 @@ The *public folder* can be uploaded to a public repository and updated with
 Git as the project develops.
 
 
-**[3t]** Example
+**[3]** Example
 ----------------------------------------
 
 .. raw:: html

@@ -1,15 +1,10 @@
 **B.2 Framework**
 =================================  
 
-.. _rivt-framework:
+.. _rivt framework:
 
-**[1t]** Install *rivt-framework*
-------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
+**[1]** rivt framework
+-----------------------------------------------------------------------------
 
 The *rivt framework* includes separate programs that provide additional editing ,
 formatting, version control, and diagramming tools.

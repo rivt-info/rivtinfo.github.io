@@ -7,7 +7,7 @@
 
 .. _rivt-folders:
 
-**[1t]**  rivt Folder
+**[1]**  rivt Folder
 -------------------------------
 
 .. _report-folders:
@@ -46,7 +46,7 @@
     [rivt-]Report-Label/               Report Folder
         ├── .vscode/                    optional VSCode settings   
         ├── README.txt                  rivt-generated report                  
-        ├── [rivt-public_]/                 rivt-generated public files
+        ├── [_rivt-public]/                 rivt-generated public files
             ├── _src/                       source files  
             ├── README.txt                  public report            
             ├── rv-101-filename1.py         public rivt file
@@ -55,10 +55,10 @@
             ├── rv-202-filename4.py         public rivt file
             ...
         └── [rivt-report]/              rivt files and docs               
-            ├── [_src]/                     source files
-            ├── [published_]/               published docs and reports
-            ├── [rstdocs_]/                 restructured text files               
-            ├── [stored_]/                  stored files
+            ├── [src_]/                     source files
+            ├── [_published]/               published docs and reports
+            ├── [_rstdocs]/                 restructured text files               
+            ├── [_stored]/                  stored files
             ├── [config-report.py]          report generating script
             ├── [rv101-]filename1.py        rivt file
             ├── [rv102-]filename2.py        rivt file       
@@ -76,21 +76,21 @@ names and prefixes are shown in brackets.
     [rivt-]Report-Label/             Report Folder                
         ├── .vscode/                      optional VSCode settings   
         ├── README.txt                    rivt-generated report                  
-        ├── [rivt-public_]/               rivt-generated public files
-            ├── _src/                       source files  
-            ├── README.txt                  public report            
-            ├── rv-101-filename1.py         public rivt file
-            ├── rv-102-filename2.py         public rivt file       
-            ├── rv-201-filename3.py         public rivt file          
-            ├── rv-202-filename4.py         public rivt file
+        ├── [_rivt-public]/               rivt-generated public files
+            ├── _src/                           source files  
+            ├── README.txt                      public report            
+            ├── rv-101-filename1.py             public rivt file
+            ├── rv-102-filename2.py             public rivt file       
+            ├── rv-201-filename3.py             public rivt file          
+            ├── rv-202-filename4.py             public rivt file
             ...
         └── [rivt-report]/                 rivt files and docs               
-                ├── [rv101-]filename1.py        rivt file
-                ├── [rv102-]filename2.py        rivt file       
-                ├── [rv201-]filename3.py        rivt file          
-                ├── [rv202-]filename4.py        rivt file
+                ├── [rv101-]filename1.py          rivt file
+                ├── [rv102-]filename2.py          rivt file       
+                ├── [rv201-]filename3.py          rivt file          
+                ├── [rv202-]filename4.py          rivt file
                 ...
-                ├── [_src]                  author source files        
+                ├── [src_]                  author source files        
                     ├── data/                       tables    
                         ├── opensees1.txt   
                         └── conc-vals.csv  
@@ -105,16 +105,26 @@ names and prefixes are shown in brackets.
                         ├── logoname.png                    
                         ├── plot.py                         
                         └── loads.py                        
-                    └── vals/                        value files
+                    └── vals/                         value files
                         ├── steel-vals.csv     
                         └── plastic-vals.csv               
-                ├── [published_]/               published docs and reports
-                    ├── [docs]/                      html docs
-                        ├── _images/                
-                        ├── _sources/              
+                ├── [_published/               published docs and reports
+                    ├── [docs]/                       html docs
+                        ├── _downloads/                
+                        ├── _images/              
+                        ├── _locale/            
+                        ├── _sources/                
+                        ├── _sphinx_design_static/              
                         ├── _static/            
-                        ├── site folders/
-                        ├── process folders/                                         
+                        ├── _templates/            
+                        ├── .doctrees/
+                        ├── .buildinfo
+                        ├── .buildinfo.bak
+                        ├── .nojekyll
+                        ├── genindex.html
+                        ├── search.html
+                        ├── objects.inv
+                        ├── searchindex.js
                         ├── rv101-filename1.html      
                         ├── rv102-filename2.html                      
                         ├── rv201-filename3.html                        
@@ -133,7 +143,7 @@ names and prefixes are shown in brackets.
                         ├── rv201-filename3.txt 
                         ├── rv202-filename4.txt
                         ...
-                ├── [rstdocs_]/                         restructured text files
+                ├── [_rstdocs]/                    restructured text files
                     ├── _downloads/                    
                     ├── _static/                       
                     ├── _locale/                       
@@ -143,23 +153,22 @@ names and prefixes are shown in brackets.
                     ├── rv201-filename3.rst          
                     ├── rv202-filename4.rst
                     ...
-                ├── [stored_]/                       rivt generated files
-                    ├── [logs]/                          log files
+                ├── [_stored]/                     rivt generated files
+                    ├── [logs]/                         log files
                         ├── rv101-log.txt
                         └── rv102-log.txt
-                    ├── [sect]/                           sections (not printed)                    
+                    ├── [sect]/                          sections not printed                    
                         ├── rv202-5d.txt  
                         ├── rv103-4t.txt                         
                         └── rv301-2r.txt               
-                    ├── [temp]/                           temp files
+                    ├── [temp]/                          temp files
                         └── rv101-label3.tex
-                    └── [vals]/                           value files
-                        ├── v101-2.csv
-                        └── v102-3.csv         
+                    ├── output.dat
+                    ├── v101-2.csv
+                    └── v102-3.csv         
 
 
-
-**[2t]**  Folder Names
+**[2]**  Folder Names
 -------------------------------
 
 Reports are organized using the folllowing foldeers with the required names and prefixes

@@ -3,7 +3,7 @@
 
 .. _API functions:
 
-**[1t]** API functions
+**[1]** API functions
 --------------------------------------------------------------------- 
 
 .. raw:: html
@@ -22,10 +22,10 @@ document generation and debugging.
             border-style: solid; 
             padding: 2em;
             margin: 2em">
-        <li><b>[R]un</b> executes shell commands.</li>
-        <li><b>[I]nsert</b> adds static table, image, equation and text content.</li>
-        <li><b>[V]alues</b> evaluates equations and functions.</li>
-        <li><b>[T]ools</b> runs reStructuredText, HTML, LaTeX and Python scripts.</li>
+        <li><b>[R]un</b> Runs Python scripts and markup.</li>
+        <li><b>[I]nsert</b> Adds static tables, images and equations.</li>
+        <li><b>[V]alues</b> Evaluates equations and functions.</li>
+        <li><b>[T]ools</b> Executes shell scripts and external programs.</li>
     </ol>
 
     <br>
@@ -41,21 +41,21 @@ document generation and debugging.
         <li><b>e[X]it</b> can be used for interactive debugging.</li>
     </ol>
 
-=============== =============== ===========================================
+=============== =============== ================================================
 API Function         Name             Purpose
-=============== =============== ===========================================
-**rv.R** (rS)         Run            Run shell commands
+=============== =============== ================================================
+**rv.R** (rS)         Run            Run scripts and markup
 **rv.I** (rS)         Insert         Insert static sources 
 **rv.V** (rS)         Values         Calculate values
-**rv.T** (rS)         Tools          Python and markup scripts
+**rv.T** (rS)         Tools          Execute shell scripts and external programs
 **rv.D** (rS)         Doc            Publish docs 
 **rv.S** (rS)         Skip           Skip section (comments and debugging)
 **rv.X** (rS)         Exit           Exit rivt (debugging)
-=============== =============== ===========================================
+=============== =============== ================================================
 
 API functions define doc sections. If interactive IDEs like *VSCode* or
 *Spyder* are used to edit and run *rivt files*, functions can be processed
-individually as cells by using the standard notebook hash notation:
+individually as cells by using the standard notebook percent notation:
 
 .. code-block:: python
 
@@ -64,7 +64,7 @@ individually as cells by using the standard notebook hash notation:
 
 .. _rivt string:
 
-**[2t]** rivt string
+**[2]** rivt string
 ----------------------------------
 
 .. raw:: html
@@ -72,12 +72,11 @@ individually as cells by using the standard notebook hash notation:
     <hr>
 
 Each :doc:`API function <rvA01-start>` takes a triple quoted :term:`rivt string` 
-argument composed of a line :term:`header substring` line followed 
-by a multiple-line :term:`content substring`.
-
-The *header substring* defines section processing parameters.
-The *content substring* includes :term:`rivt markup` and is indented 
-four spaces for improved readability and navigation (e.g. section folding).
+argument composed of a :term:`header substring` line followed 
+by a multiple-line :term:`content substring`. The *header substring* defines 
+section processing parameters.  The *content substring* includes  
+:term:`rivt markup` and is indented four spaces for improved readability 
+and navigation (e.g. section folding).
 
 .. _Header substring:
 
@@ -101,7 +100,8 @@ section title, followed by a vertical bar and three comma separated
         
         """)
 
-The parameters include the following, in any order:
+The header parameters include the following comma separated values in any
+order:
 
 *private/public* 
     Determines whether the API section text is copied to the
@@ -120,14 +120,15 @@ Default settings in the *header substring* do not need to be specified. The
 default setting for each API is listed first (in bold) in the table below.
 The default privacy settings for all sections in a rivt file may be reversed by
 including the *public comment setting* immeditely following the 
-*rivlib import statement*. Individual sections may still be set as private 
-in the header substring.
+*rivlib import statement*. 
 
 .. code:: python
 
     import rivtlib.rvapi as rv
 
-    # rv public=True
+    # rv setpublic = true
+
+Individual sections may still be set as private in the header substring.
  
 ========== ===================== ===================== =====================
 API          private; public         doc; stored           section; merge         
@@ -214,7 +215,7 @@ processing HTML, LaTeX and reStructuredText scripts.
 
 .. _markup:
 
-**[3t]** Tags and Commands
+**[3]** Tags and Commands
 ----------------------------
 
 .. raw:: html
@@ -276,12 +277,10 @@ using the following format:
     </p>
 
 
-**[4t]** Folders
+**[4]** Folders
 ---------------------------
 
-.. raw:: html
 
-    <hr>
 
     <p style="border-width:2px; border-style:solid; 
     border-color:#49b2c3;padding: 1em;">

@@ -399,8 +399,8 @@
                   
   <section id="d-1-markup">
 <h1><strong>D.1 Markup</strong><a class="headerlink" href="#d-1-markup" title="Link to this heading">#</a></h1>
-<section id="t-api-functions">
-<span id="api-functions"></span><h2><strong>[1t]</strong> API functions<a class="headerlink" href="#t-api-functions" title="Link to this heading">#</a></h2>
+<section id="api-functions">
+<span id="id1"></span><h2><strong>[1]</strong> API functions<a class="headerlink" href="#api-functions" title="Link to this heading">#</a></h2>
 <hr><p><em>rivt</em> has seven API functions. The name <em>rivt</em> is an acronym taken from the
 four functions that process content. The remaining three functions are used for
 document generation and debugging.</p>
@@ -410,10 +410,10 @@ document generation and debugging.</p>
         border-style: solid;
         padding: 2em;
         margin: 2em">
-    <li><b>[R]un</b> executes shell commands.</li>
-    <li><b>[I]nsert</b> adds static table, image, equation and text content.</li>
-    <li><b>[V]alues</b> evaluates equations and functions.</li>
-    <li><b>[T]ools</b> runs reStructuredText, HTML, LaTeX and Python scripts.</li>
+    <li><b>[R]un</b> Runs Python scripts and markup.</li>
+    <li><b>[I]nsert</b> Adds static tables, images and equations.</li>
+    <li><b>[V]alues</b> Evaluates equations and functions.</li>
+    <li><b>[T]ools</b> Executes shell scripts and external programs.</li>
 </ol>
 
 <br>
@@ -437,7 +437,7 @@ document generation and debugging.</p>
 <tbody>
 <tr class="row-even"><td><p><strong>rv.R</strong> (rS)</p></td>
 <td><p>Run</p></td>
-<td><p>Run shell commands</p></td>
+<td><p>Run scripts and markup</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>rv.I</strong> (rS)</p></td>
 <td><p>Insert</p></td>
@@ -449,7 +449,7 @@ document generation and debugging.</p>
 </tr>
 <tr class="row-odd"><td><p><strong>rv.T</strong> (rS)</p></td>
 <td><p>Tools</p></td>
-<td><p>Python and markup scripts</p></td>
+<td><p>Execute shell scripts and external programs</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>rv.D</strong> (rS)</p></td>
 <td><p>Doc</p></td>
@@ -468,20 +468,20 @@ document generation and debugging.</p>
 </div>
 <p>API functions define doc sections. If interactive IDEs like <em>VSCode</em> or
 <em>Spyder</em> are used to edit and run <em>rivt files</em>, functions can be processed
-individually as cells by using the standard notebook hash notation:</p>
+individually as cells by using the standard notebook percent notation:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %% optional label</span>
 <span class="n">rv</span><span class="o">.</span><span class="n">API</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;rivt string&quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
-<section id="t-rivt-string">
-<span id="rivt-string"></span><h2><strong>[2t]</strong> rivt string<a class="headerlink" href="#t-rivt-string" title="Link to this heading">#</a></h2>
+<section id="rivt-string">
+<span id="id2"></span><h2><strong>[2]</strong> rivt string<a class="headerlink" href="#rivt-string" title="Link to this heading">#</a></h2>
 <hr><p>Each <a class="reference internal" href="rvA01-start.html"><span class="doc">API function</span></a> takes a triple quoted <a class="reference internal" href="rvF02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a>
-argument composed of a line <a class="reference internal" href="rvF02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a> line followed
-by a multiple-line <a class="reference internal" href="rvF02-terms.html#term-content-substring"><span class="xref std std-term">content substring</span></a>.</p>
-<p>The <em>header substring</em> defines section processing parameters.
-The <em>content substring</em> includes <a class="reference internal" href="rvF02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> and is indented
-four spaces for improved readability and navigation (e.g. section folding).</p>
+argument composed of a <a class="reference internal" href="rvF02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a> line followed
+by a multiple-line <a class="reference internal" href="rvF02-terms.html#term-content-substring"><span class="xref std std-term">content substring</span></a>. The <em>header substring</em> defines
+section processing parameters.  The <em>content substring</em> includes
+<a class="reference internal" href="rvF02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> and is indented four spaces for improved readability
+and navigation (e.g. section folding).</p>
 <p id="header-substring"><strong>Header substring</strong></p>
 <hr><p>The <a class="reference internal" href="rvF02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a> starts with a <em>section label</em>, used as the
 section title, followed by a vertical bar and three comma separated
@@ -495,7 +495,8 @@ section title, followed by a vertical bar and three comma separated
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The parameters include the following, in any order:</p>
+<p>The header parameters include the following comma separated values in any
+order:</p>
 <dl class="simple">
 <dt><em>private/public</em></dt><dd><p>Determines whether the API section text is copied to the
 the <em>Public</em> folder <em>rivt file</em> for sharing.</p>
@@ -512,13 +513,13 @@ or is merged into the previous section.</p>
 default setting for each API is listed first (in bold) in the table below.
 The default privacy settings for all sections in a rivt file may be reversed by
 including the <em>public comment setting</em> immeditely following the
-<em>rivlib import statement</em>. Individual sections may still be set as private
-in the header substring.</p>
+<em>rivlib import statement</em>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
 
-<span class="c1"># rv public=True</span>
+<span class="c1"># rv setpublic = true</span>
 </pre></div>
 </div>
+<p>Individual sections may still be set as private in the header substring.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>API</p></th>
@@ -632,8 +633,8 @@ surrounding words with * or ** will format a word as italic or bold respectively
 <p>In addition block tags in the <em>Tools function</em> (rv.T) directly supports
 processing HTML, LaTeX and reStructuredText scripts.</p>
 </section>
-<section id="t-tags-and-commands">
-<span id="markup"></span><h2><strong>[3t]</strong> Tags and Commands<a class="headerlink" href="#t-tags-and-commands" title="Link to this heading">#</a></h2>
+<section id="tags-and-commands">
+<span id="markup"></span><h2><strong>[3]</strong> Tags and Commands<a class="headerlink" href="#tags-and-commands" title="Link to this heading">#</a></h2>
 <hr><p><a class="reference internal" href="rvD02-linetags.html"><span class="doc">Line Tags</span></a></p>
 <blockquote>
 <div><p>A <a class="reference internal" href="rvF02-terms.html#term-line-tag"><span class="xref std std-term">line tag</span></a> formats a line of text and is denoted with a single
@@ -680,25 +681,23 @@ Description<br>
         This is a sentence. _[C]
 </pre>
 </p></section>
-<section id="t-folders">
-<h2><strong>[4t]</strong> Folders<a class="headerlink" href="#t-folders" title="Link to this heading">#</a></h2>
-<hr>
-
-<p style="border-width:2px; border-style:solid;
-border-color:#49b2c3;padding: 1em;">
-
-<b>Folder Names</b><br>
-<br>
-
-A rivt folder can contain any set of files and folders but the following
-structure is required for <i>doc</i> processing. Files and folders are
-organized under a root folder with the prefix <i>rivt-</i> e.g.
-<i>rivt-Report-Label</i>. <br> <br>
-
-<i>rivt folders</i> (root folders) include at least the <i>rivt files</i>
+<section id="folders">
+<h2><strong>[4]</strong> Folders<a class="headerlink" href="#folders" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>&lt;p style=”border-width:2px; border-style:solid;
+border-color:#49b2c3;padding: 1em;”&gt;</p>
+<p>&lt;b&gt;Folder Names&lt;/b&gt;&lt;br&gt;
+&lt;br&gt;</p>
+<p>A rivt folder can contain any set of files and folders but the following
+structure is required for &lt;i&gt;doc&lt;/i&gt; processing. Files and folders are
+organized under a root folder with the prefix &lt;i&gt;rivt-&lt;/i&gt; e.g.
+&lt;i&gt;rivt-Report-Label&lt;/i&gt;. &lt;br&gt; &lt;br&gt;</p>
+<p>&lt;i&gt;rivt folders&lt;/i&gt; (root folders) include at least the &lt;i&gt;rivt files&lt;/i&gt;
 and the five required subfolders. Required folders and prefixes are
 shown in brackets. Folders preceded by an underscore contain rivt outputs.
-Folders requiring author input are capitalized. <br> <br><p>The top level folder structure is shown below. A more detailed description of
+Folders requiring author input are capitalized. &lt;br&gt; &lt;br&gt;</p>
+</div></blockquote>
+<p>The top level folder structure is shown below. A more detailed description of
 the folder structure is <a class="reference internal" href="rvC02-folders.html#report-folders"><span class="std std-ref">here</span></a>.</p>
 <p><strong>Top Level Folders</strong></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt-<span class="o">]</span>Report-Label/<span class="w">             </span>Report<span class="w"> </span>Folder
@@ -777,10 +776,10 @@ the folder structure is <a class="reference internal" href="rvC02-folders.html#r
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-api-functions"><strong>[1t]</strong> API functions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-rivt-string"><strong>[2t]</strong> rivt string</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-tags-and-commands"><strong>[3t]</strong> Tags and Commands</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-folders"><strong>[4t]</strong> Folders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api-functions"><strong>[1]</strong> API functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-string"><strong>[2]</strong> rivt string</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tags-and-commands"><strong>[3]</strong> Tags and Commands</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#folders"><strong>[4]</strong> Folders</a></li>
 </ul>
   </nav></div>
 

@@ -26,7 +26,7 @@ The *Values* API function defines values and evaluates equations and functions.
 ======================================== ==============================
          text **_[V] var_name** | text      :ref:`Variable value`
         **label _[E]**                      :ref:`Number equation`
-        **title _[T]**                      :ref:`Number table`
+        **title _[]**                      :ref:`Number table`
       **caption _[F]**                      :ref:`Number figure`                              
 ======================================== ==============================
 

@@ -1,7 +1,7 @@
 **E.1 Collaboration**
 =======================
 
-**[1t]** Overview
+**[1]** Overview
 --------------------
 
 .. raw:: html
@@ -51,7 +51,7 @@ tools available in the Python, GitHub and VSCode ecosystem.
 #.  Collaborative editing in *VSCode* using `Visual Studio Live Share
     <https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare>`_.    
 
-**[2t]** Open Models
+**[2]** Open Models
 ---------------------------
 
 .. raw:: html
@@ -62,7 +62,7 @@ The web site `OpenModels.info <https://www.openmodels.info/>`__ is a
 *Google Drive* repository of open source engineernig model files, including
 *rivt files* and *reports*.
 
-**[3t]** Git and GitHub
+**[3]** Git and GitHub
 ---------------------------
 
 .. raw:: html
@@ -102,7 +102,7 @@ accounts provide for:
 to GitHub files. It can be set up with *rivt extensions* that provide a complete
 rivt editing and collaboration environment in the cloud.
 
-**[4t]** VSCode
+**[4]** VSCode
 ------------------
 
 .. raw:: html

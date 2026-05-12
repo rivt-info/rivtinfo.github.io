@@ -1,7 +1,7 @@
 **C.1 Docs**
 ========================
 
-**[1t]** Doc Files
+**[1]** Doc Files
 -----------------------------
 
 .. raw:: html
@@ -52,7 +52,7 @@ Note that leading zeroes are dropped.  *Docs* are sorted alpha-numerically into
 divisions and subdivisions in the *report*.
 
 
-**[2t]** Reports
+**[2]** Reports
 -----------------------------
 
 .. raw:: html

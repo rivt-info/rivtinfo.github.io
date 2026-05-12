@@ -1,7 +1,7 @@
 **B.1 Overview**
 =================================  
 
-**[1t]** Summary
+**[1]** Summary
 --------------------------------------------------------------------- 
 
 .. raw:: html
@@ -10,16 +10,17 @@
 
 *rivt* is an open source Python project that imports 
 the `rivtlib Python package <https://pypi.org/project/rivtlib/>`__
-and dependencies (:ref:`Project requirements`).  A :term:`rivt file` publishes a 
-formatted :term:`rivt doc` as a text, PDF or HTML file. 
+and dependencies (see :ref:`Project requirements`).  A :term:`rivt file` 
+publishes a formatted :term:`rivt doc` as a text, PDF or HTML file. 
 A *rivt file* is a Python file (.py) that imports the
 :term:`rivtlib` Python package and includes :term:`rivt markup`. A collection
 of *rivt docs* may be assembled into a :term:`rivt report`.
 
-*rivt files* are generally edited and run in an IDE. The lightweight `Pyzo
-<https://pyzo.org/>`__ IDE is installed with rivtlib. The `VSCode IDE
-<https://code.visualstudio.com/>`__ is a full featured IDE that is part of
-the :ref:`rivt framework<framework>` and included with :ref:`rivt-portable`. 
+*rivt files* are generally edited and run in an IDE. The lightweight 
+`Pyzo <https://pyzo.org/>`__ IDE is installed with rivtlib. The 
+`VSCode IDE <https://code.visualstudio.com/>`__ is a full featured IDE that 
+is part of the :ref:`rivt framework` and included 
+with :ref:`rivt-portable`. 
 
 *rivt file* examples are provided `here <https://openmodels.info>`__.
 An interface for searching *public rivt files* on *GitHub* is :doc:`here <rvE04-ghsearch>`. 
@@ -30,12 +31,9 @@ share under an `Open Source license <https://opensource.org/licenses>`__.
 
 .. _rivt docs:
 
-**[2t]** rivt docs
-------------------------------------------------------------------------
+**[2]** Docs
+-------------------------------------------------------------------------------
 
-.. raw:: html
-
-    <hr>
 
 .. image:: _static/img/process2.png
     :class: dark-light
@@ -85,31 +83,31 @@ the corresponding *doc numbers* in the would be:
 number* corresponds to a report subdivision. Note that leading zeroes are
 dropped in the formatted output.
 
+--------------------------------
 
 .. _rivt API:
 
-**[2t]** rivt API
------------------------------------------------------------------------- 
+**[3]** API
+------------------------------------------------------------------------------- 
 
-.. raw:: html
 
-    <hr>
 
 The *rivt API* includes  :ref:`API functions <API functions>`, 
-:ref:`markup` and :ref:`files <Files and folders>`.  The API is designed 
+:ref:`markup` and :ref:`files <Files-folders>`.  The API is designed 
 to be:
 
 - lightweight
-    :term:`rivt markup` is made up of about 3 dozen tags 
-    and commands, and wraps :term:`reStructuredText`.
-
-- flexible 
-    A *rivt file* produces a text, HTML or PDF *doc*. 
-    Multiple *docs* can be organized into a report. 
+    :term:`rivt markup` wraps :term:`reStructuredText` and is made up of less
+    than three dozen tags and commands.
 
 - extensible 
-    *rivtlib* is written in Python with direct access to thousands of 
-    Python packages.
+    *rivtlib* is written in Python with direct access to thousands of Python
+    packages. Python scripts and external programs can be run from *rivt files*
+    using the
+
+- versatile 
+    A *rivt file* produces a text, HTML or PDF *doc*. 
+    Multiple *docs* can be organized into reports. 
 
 An API function starts in the first column and takes a triple quoted
 :term:`rivt string` (rS) containting :term:`rivt markup` as the argument. The
@@ -133,14 +131,13 @@ see :doc:`here <rvD01-markup>`.
         
         """)
 
-.. _Files and folders:
+--------------------------------
 
-**[3t]** Files/Folders
---------------------------------------------------------------------- 
+.. _Files-folders:
 
-.. raw:: html
+**[4]** Files / Folders
+------------------------------------------------------------------------------- 
 
-    <hr>
 
 A :term:`rivt file` is a Python plain text file ( *.py* ) that includes *rivt
 markup* and imports the :term:`rivtlib` package and API into the *rv*
@@ -169,10 +166,10 @@ the folder structure is :ref:`here <report-folders>`.
 
 .. code-block:: bash
 
-    [rivt-]Report-Label/           Report Folder                
+      rivt-Report-Label/           Report Folder                
         ├── .vscode/                  optional VSCode settings 
         ├── rivt-public_/             rivt-generated public files
-            ├── _src/                     source files
+            ├── src/                     source files
             ├── README.txt                public report   
             ├── rv-101-filename1.py       public rivt file
             ├── rv-102-filename2.py       public rivt file       
@@ -180,41 +177,18 @@ the folder structure is :ref:`here <report-folders>`.
             ├── rv-202-filename4.py       public rivt file
             ...
         └── rivt-report/               rivt files and docs               
-            ├── _src/                     source files
-            ├── published_/               published docs and reports
-            ├── rstdocs_/                 restructured text files               
-            ├── stored_/                  stored files
-            ├── config-report.py          report generating script
-            ├── README.txt                rivt report     
+            ├── _published/               published docs and reports
+            ├── _rstdocs/                 restructured text files               
+            ├── _stored/                  stored files
+            ├── src/                      source files
+            ├── rivt-report.py            report generating script
             ├── rv101-filename1.py        rivt file
             ├── rv102-filename2.py        rivt file       
             ├── rv201-filename3.py        rivt file          
             ├── rv202-filename4.py        rivt file
             ...    
 
-
-.. _framework:
-
-**[5t]** Framework
-----------------------------------------------------------------------
-
-.. raw:: html
-
-    <hr>
-
-The *rivt framework* includes separate programs that provide additional editing ,
-formatting, version control, and diagramming tools.
-
-======================= ==========================================================================
-Purpose                  Link
-======================= ==========================================================================
-Editing                   `VSCode <https://code.visualstudio.com/>`_  
-Editing Extensions         :ref:`VSCode settings`
-Added Formatting          `LaTeX <https://www.tug.org/texlive/>`_
-Version Control           `Git <https://git-scm.com>`_
-2D Diagramming            `QCAD <https://qcad.org/en/85-new-community-edition-open-source>`_
-3D Diagramming            `FreeCad <https://www.freecad.org/>`_
-======================= ==========================================================================
+--------------------------------
 
 .. toctree::
     :maxdepth: 1

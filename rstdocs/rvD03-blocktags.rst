@@ -1,7 +1,7 @@
 **D.3 Block Tags**
 ========================
 
-**[1t]** Block Tag Summary
+**[1]** Block Tag Summary
 -------------------------------------
 
 .. raw:: html
@@ -24,7 +24,7 @@ all         **_[[END]]**                              :ref:`End block`
 
 .. _Shell script:
 
-**[2t]** Shell script
+**[2]** Shell script
 ------------------------------------
 
 .. raw:: html
@@ -63,7 +63,7 @@ Doc Types     text, PDF, HTML
 
 .. _Indent text block:
 
-**[3t]** Indent text 
+**[3]** Indent text 
 ----------------------------------------------
 
 .. raw:: html
@@ -96,7 +96,7 @@ Doc Types     text, PDF, HTML
 
 .. _Indent italic block:
 
-**[4t]** Indent italic 
+**[4]** Indent italic 
 ------------------------------------------------
 
 .. raw:: html
@@ -128,7 +128,7 @@ Doc Types     text, PDF, HTML
 
 .. _Endnotes block:
 
-**[5t]** Endnotes 
+**[5]** Endnotes 
 -------------------------------------------    
 
 .. raw:: html
@@ -168,7 +168,7 @@ Doc Types     text, PDF, HTML
 
 .. _Table block:
 
-**[6t]** Text 
+**[6]** Text 
 ------------------------------------------------
 
 .. raw:: html
@@ -204,7 +204,7 @@ Doc Types     text, PDF, HTML
 
 .. _Text block:
 
-**[6t]** Text 
+**[6]** Text 
 ------------------------------------------------
 
 .. raw:: html
@@ -244,7 +244,7 @@ Doc Types     text, PDF, HTML
 
 .. _Topic block:
 
-**[7t]** Topic 
+**[7]** Topic 
 ------------------------------------------------
 
 .. raw:: html
@@ -275,7 +275,7 @@ Doc Types     text, PDF, HTML
 
 .. _Box block:
 
-**[8t]** Box 
+**[8]** Box 
 ------------------------------------------------
 
 .. raw:: html
@@ -308,7 +308,7 @@ Doc Types     text, PDF, HTML
 
 .. _Python block:
 
-**[9t]** Python 
+**[9]** Python 
 ------------------------------------------------
 
 .. raw:: html
@@ -341,7 +341,7 @@ Doc Types     text, PDF, HTML
 
 .. _Markup block:
 
-**[10t]** Markup block
+**[10]** Markup block
 ---------------------------------------
 
 .. raw:: html
@@ -377,7 +377,7 @@ Doc Types     text, PDF, HTML
 
 .. _Meta block:
 
-**[11t]** Metadata
+**[11]** Metadata
 -------------------
 
 .. raw:: html
@@ -420,7 +420,7 @@ Doc Types     text, PDF, HTML
 
 .. _Layout block:
 
-**[12t]** Layout block
+**[12]** Layout block
 ------------------------------------------------
 
 .. raw:: html
@@ -452,7 +452,7 @@ Doc Types     text, PDF, HTML
 
 .. _End block:
 
-**[13t]** End block
+**[13]** End block
 ------------------------------------------------
 
 .. raw:: html

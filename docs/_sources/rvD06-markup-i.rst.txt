@@ -21,16 +21,14 @@ including images, tables, links and formatted text.
 ================================================= ============================
      Line Tag                                       Description 
 ================================================= ============================
-                text **_[C]**                     :ref:`Center text` 
-                text **_[R]**                     :ref:`Right justify text`
-           **text math _[M]**                     :ref:`Text math` 
-          **LaTeX math _[L]**                     :ref:`LaTeX math` 
+                text **_[C]**                     :ref:`Bold center text` 
+           **text math _[M]** description         :ref:`Text math` 
+          **LaTeX math _[L]** description         :ref:`LaTeX math` 
                 text **_[#]** text                :ref:`Endnote number`  
                 text **_[G] text, section label** :ref:`Section link`
                 text **_[D] text, rivt_file**     :ref:`Doc link`
                 text **_[U] text, label**         :ref:`URL link`   
                 text **_[V] var_name** text       :ref:`Variable value`
- assign var or **label _[E]**                     :ref:`Number equation`
                **title _[T]**                     :ref:`Number table`
              **caption _[F]**                     :ref:`Number figure`
 ================================================= ============================
@@ -48,7 +46,6 @@ including images, tables, links and formatted text.
  **_[[INDENT]]** spaces (4 default)           :ref:`Indent text block`
  **_[[ITALIC]]** spaces (4 default)           :ref:`Indent italic block`
  **_[[ENDNOTES]]** optional label             :ref:`Endnotes block`
- **_[[TEXT]]** optional language              :ref:`Text block`
  **_[[TOPIC]]** topic                         :ref:`Topic block`
  **_[[END]]**                                 :ref:`End block`
 ========================================= ==============================

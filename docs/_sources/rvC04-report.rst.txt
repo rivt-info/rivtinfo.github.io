@@ -2,7 +2,7 @@
 **C.4 Reports**
 ===================================
 
-**[1t]** Report compilation
+**[1]** Report compilation
 ----------------------------------------------------------
 
 .. raw:: html
@@ -50,7 +50,7 @@ the corresponding *doc numbers* in the would be:
 
  Note that leading zeroes are dropped in the formatted output.
 
-**[2t]** rivt-report.py
+**[2]** rivt-report.py
 ----------------------------------------------------------
 
 .. raw:: html
@@ -136,7 +136,7 @@ An example rivt-report.py script is shown below.
     genreport()  # noqa: F405
 
 
-**[3t]** conf.py
+**[3]** conf.py
 --------------------------------------------------------------------- 
 
 .. raw:: html

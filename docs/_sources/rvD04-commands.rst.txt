@@ -1,7 +1,7 @@
 **D.4 Commands**
 ========================
 
-**[1t]** Command Summary
+**[1]** Command Summary
 -------------------------------------
 
 .. raw:: html
@@ -53,7 +53,7 @@ are in the default path only the file name needs to be provided.
 
 .. _Shell file:
 
-**[2t]** Shell file
+**[2]** Shell file
 -------------------------------------------
 
 .. raw:: html
@@ -87,7 +87,7 @@ Doc Types     text, PDF, HTML
 
 .. _Text file:
 
-**[3t]** Text file
+**[3]** Text file
 ------------------------------------------
 
 .. raw:: html
@@ -127,7 +127,7 @@ Doc Types     text, PDF, HTML
 
 .. _Table file:
 
-**[4t]** Table file
+**[4]** Table file
 ------------------------------------------
 
 .. raw:: html
@@ -164,7 +164,7 @@ Doc Types     text, PDF, HTML
 
 .. _Image file:
 
-**[5t]** Image file
+**[5]** Image file
 -------------------------------------------
 
 .. raw:: html
@@ -198,7 +198,7 @@ Doc Types     PDF, HTML
 
 .. _Adjacent images:
 
-**[6t]** Adjacent images
+**[6]** Adjacent images
 --------------------------------------------------
 
 .. raw:: html
@@ -233,7 +233,7 @@ Doc Types     PDF, HTML
 
 .. _Values file:
 
-**[7t]**  Valtable file
+**[7]**  Valtable file
 ------------------------------------------------
 
 .. raw:: html
@@ -277,7 +277,7 @@ Doc Types     text, PDF, HTML
 
 .. _Define value:
 
-**[8t]** Define value
+**[8]** Define value
 -------------------------------------------
 
 .. raw:: html
@@ -307,7 +307,7 @@ Doc Types     text, PDF, HTML
 
 .. _Assign value:
 
-**[9t]** Assign value
+**[9]** Assign value
 -------------------------------------------
 
 .. raw:: html
@@ -341,7 +341,7 @@ Doc Types     text, PDF, HTML
 
 .. _Function value:
 
-**[9t]** Function value
+**[9]** Function value
 -------------------------------------------
 
 .. raw:: html
@@ -377,7 +377,7 @@ Doc Types     text, PDF, HTML
 
 .. _Compare value:
 
-**[10t]** Compare values
+**[10]** Compare values
 -----------------------------------------
 
 .. raw:: html
@@ -419,7 +419,7 @@ Doc Types     text, PDF, HTML
 
 .. _Python file:
 
-**[11t]** Python file
+**[11]** Python file
 -------------------------------------------
 
 .. raw:: html
@@ -445,7 +445,7 @@ Doc Types     text, PDF, HTML
 
 .. _Markup file:
 
-**[12t]**  Markup file
+**[12]**  Markup file
 -------------------------------------------
 
 .. raw:: html
@@ -473,7 +473,7 @@ Doc Types     text, PDF, HTML
 
 .. _Attach PDF:
 
-**[13t]** Attach PDF
+**[13]** Attach PDF
 -------------------------------------------
 
 .. raw:: html
@@ -503,7 +503,7 @@ Doc Types     text, PDF, HTML
 
 .. _Publish doc:
 
-**[14t]** Publish doc
+**[14]** Publish doc
 -------------------------------------------
 
 .. raw:: html

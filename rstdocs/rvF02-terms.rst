@@ -1,7 +1,7 @@
 **F.2 Terms**
 =====================
 
-**[1t]** rivt Terms
+**[1]** rivt Terms
 -----------------------------
 
 .. raw:: html
@@ -148,7 +148,7 @@
 
 
 
-**[2t]** Python Terms
+**[2]** Python Terms
 -----------------------------
 
 .. raw:: html
@@ -178,7 +178,7 @@
     and variables. 
 
 
-**[3t]** GitHub and VSCode Terms
+**[3]** GitHub and VSCode Terms
 -----------------------------------
 
 .. raw:: html

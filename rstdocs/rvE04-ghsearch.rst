@@ -1,7 +1,7 @@
 **E.4 GitHub Search**
 =========================
 
-**[1t]** GitHub Global Search
+**[1]** GitHub Global Search
 --------------------------------
 
 .. raw:: html
@@ -51,7 +51,7 @@ the `GitHub interface <https://github.com/search>`__.
 
     <br>
 
-**[2t]** GitHub Organization Search
+**[2]** GitHub Organization Search
 ---------------------------------------
 
 .. raw:: html

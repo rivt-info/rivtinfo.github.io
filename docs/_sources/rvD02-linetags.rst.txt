@@ -1,7 +1,7 @@
 **D.2 Line Tags**
 ========================
 
-**[1t]** Line Tag Summary
+**[1]** Line Tag Summary
 -------------------------------------
 
 .. raw:: html
@@ -10,27 +10,26 @@
 
 **Format a line of text**
   
-========== ==================================================== ===============================
+========== ==================================================== ================================
 API Scope             Line Tag                                      Description 
-========== ==================================================== ===============================
-rv.I,V                 text **_[C]**                              :ref:`Center text` 
-rv.I,V                 text **_[R]**                              :ref:`Right justify text`
-rv.I,V            **text math _[M]**                              :ref:`Text math` 
-rv.I,V           **LaTeX math _[L]**                              :ref:`LaTeX math` 
-rv.I,V                 **text _[E]**                              :ref:`Number equation`
-rv.I,V                **title _[T]**                              :ref:`Number table`
+========== ==================================================== ================================
+rv.I                   text **_[#]** text                         :ref:`Endnote number`  
+rv.I                   text **_[D] label, filename]** text        :ref:`Download link`
+rv.I                   text **_[G] glossary term]** text          :ref:`Term link`
+rv.I                   text **_[S] label, section]** text         :ref:`Section link`
+rv.I                   text **_[U] label, url]** text             :ref:`URL link`   
+rv.I                  **title _[T]**                              :ref:`Number table`
 rv.I,V              **caption _[F]**                              :ref:`Number figure`
-rv.I,V                 text **_[#]** text                         :ref:`Endnote number`  
-rv.I,V                 text **_[G] glossary term |** text         :ref:`Term link`
-rv.I,V                 text **_[S] label, section |** text        :ref:`Section link`
-rv.I,V                 text **_[U] label, url |** text            :ref:`URL link`   
-rv.I,V                 text **_[V] var_name |** text              :ref:`Variable value`
+rv.I,V                 text **_[C]**                              :ref:`Bold center text` 
+rv.I,V            **text math _[M]** description                  :ref:`Text math` 
+rv.I,V           **LaTeX math _[L]** description                  :ref:`LaTeX math` 
+rv.I,V                 text **_[V] var_name]** text               :ref:`Variable value`
 all                     **##** text                               nonprinting comment
-========== ==================================================== ===============================
+========== ==================================================== ================================
 
-..  _Center text:
+..  _Bold center text:
 
-**[2t]** Center text
+**[2]** Bold center text
 -------------------------------------------
 
 .. raw:: html
@@ -54,36 +53,31 @@ API Scope     Insert, Values
 Doc Types     text, PDF, HTML
 =========== ==========================
 
+..  _Download link:
 
-.. _Right justify text:
+**[3]** Download link
+-------------------------------------------
 
-**[3t]** Right justify text
------------------------------------------
+Insert a download link.
 
-.. raw:: html
-
-    <hr>
-
-Right justify line of text within the page margins.
-
-.. topic:: _[R]
-
+.. topic:: _[D]
+    
     .. code-block:: text
 
         Syntax:
-            text _[R]
+            text _[D] label, filename] text
 
         Example:
-            This text wil be right justified _[R]
+            This is a link to _[D] myfile, srcmy_file.pdf] for download.
 
 =========== ==========================
-API Scope     Insert, Values
+API Scope     Insert
 Doc Types     text, PDF, HTML
 =========== ==========================
 
 .. _Text math:
 
-**[4t]** Text math
+**[4]** Text math
 -----------------------------------------
 
 .. raw:: html
@@ -109,7 +103,7 @@ Doc Types     text, PDF, HTML
 
 .. _LaTeX math:
 
-**[5t]** LaTeX math 
+**[5]** LaTeX math 
 -----------------------------------------
 
 .. raw:: html
@@ -136,7 +130,7 @@ Doc Types     PDF, HTML
 
 ..  _Endnote number:
 
-**[6t]**  Endnote number
+**[6]**  Endnote number
 -------------------------------------
 
 .. raw:: html
@@ -165,7 +159,7 @@ Doc Types     text, PDF, HTML
 
 .. _Term link:
 
-**[7t]** Glossary link
+**[7]** Glossary link
 ------------------------------------------
 
 .. raw:: html
@@ -192,7 +186,7 @@ Doc Types     PDF, HTML
 
 .. _Section link:
 
-**[8t]** Section link
+**[8]** Section link
 -----------------------------------------
 
 .. raw:: html
@@ -220,7 +214,7 @@ Doc Types     PDF, HTML
 
 .. _Doc link:
 
-**[9t]** Doc link
+**[9]** Doc link
 -----------------------------------------
 
 .. raw:: html
@@ -249,7 +243,7 @@ Doc Types     PDF, HTML
 
 .. _URL link:
 
-**[10t]** URL link
+**[10]** URL link
 -----------------------------------------
 
 .. raw:: html
@@ -277,7 +271,7 @@ Doc Types     PDF, HTML
 
 .. _Variable value:
 
-**[11t]** Variable value
+**[11]** Variable value
 ------------------------------------------
 
 .. raw:: html
@@ -303,7 +297,7 @@ Doc Types     text, PDF, HTML
 
 .. _Number equation:
 
-**[12t]** Equation number
+**[12]** Equation number
 -----------------------------------------
 
 .. raw:: html
@@ -333,7 +327,7 @@ Doc Types     text, PDF, HTML
 
 .. _Number table:
 
-**[13t]** Table number
+**[13]** Table number
 ------------------------------------------
 
 .. raw:: html
@@ -360,7 +354,7 @@ Doc Types     text, PDF, HTML
 
 .. _Number figure:
 
-**[14t]** Figure number
+**[14]** Figure number
 ------------------------------------------
 
 .. raw:: html
