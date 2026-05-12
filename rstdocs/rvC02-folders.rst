@@ -12,7 +12,7 @@
 
 **Folder Names**
 
- 
+ .. raw:: html
 
     <p style="border-width:2px; border-style:solid; 
     border-color:#49b2c3;padding: 1em;">
@@ -39,23 +39,23 @@
 
 .. code-block:: bash
 
-    [rivt-]Report-Label/               Report Folder
+    [rivt-]Report-Label/               rivt Folder
         ├── .vscode/                    optional VSCode settings   
         ├── README.txt                  rivt-generated report                  
         ├── [_rivt-public]/                 rivt-generated public files
-            ├── _src/                       source files  
+            ├── _stored/                    rivt source files
+            ├── src/                        author source files  
             ├── README.txt                  public report            
             ├── rv-101-filename1.py         public rivt file
             ├── rv-102-filename2.py         public rivt file       
             ├── rv-201-filename3.py         public rivt file          
             ├── rv-202-filename4.py         public rivt file
             ...
-        └── [rivt-report]/              rivt files and docs               
-            ├── [src_]/                     source files
+        └── [rivt-report]/              report folder              
             ├── [_published]/               published docs and reports
             ├── [_rstdocs]/                 restructured text files               
             ├── [_stored]/                  stored files
-            ├── [config-report.py]          report generating script
+            ├── [src]/                      source files
             ├── [rv101-]filename1.py        rivt file
             ├── [rv102-]filename2.py        rivt file       
             ├── [rv201-]filename3.py        rivt file          
@@ -69,30 +69,28 @@ names and prefixes are shown in brackets.
 
 .. code-block:: bash
 
-    [rivt-]Report-Label/             Report Folder                
+    [rivt-]Report-Label/             rivt Folder              
         ├── .vscode/                      optional VSCode settings   
         ├── README.txt                    rivt-generated report                  
         ├── [_rivt-public]/               rivt-generated public files
-            ├── _src/                           source files  
-            ├── README.txt                      public report            
+            ├── _stored/                    rivt source files
+            ├── src/                        author source files          
             ├── rv-101-filename1.py             public rivt file
             ├── rv-102-filename2.py             public rivt file       
             ├── rv-201-filename3.py             public rivt file          
             ├── rv-202-filename4.py             public rivt file
             ...
-        └── [rivt-report]/                 rivt files and docs               
+        └── [rivt-report]/                 report folder               
                 ├── [rv101-]filename1.py          rivt file
                 ├── [rv102-]filename2.py          rivt file       
                 ├── [rv201-]filename3.py          rivt file          
                 ├── [rv202-]filename4.py          rivt file
                 ...
-                ├── [src_]                  author source files        
+                ├── [src]                      author source files        
                     ├── data/                       tables    
                         ├── opensees1.txt   
-                        └── conc-vals.csv  
-                    ├── image/                                                 
-                        ├── fig1.png
-                        └── fig2.jpg   
+                        └── conc-vals.csv                                                 
+
                     ├── run/                         OS commands
                         ├── run1_win.cmd                    
                         └── run1_linux.sh                   
@@ -101,9 +99,10 @@ names and prefixes are shown in brackets.
                         ├── logoname.png                    
                         ├── plot.py                         
                         └── loads.py                        
-                    └── vals/                         value files
-                        ├── steel-vals.csv     
-                        └── plastic-vals.csv               
+                    ├── steel-vals.csv     
+                    ├── plastic-vals.csv
+                    ├── fig1.png
+                    └── fig2.jpg                  
                 ├── [_published/               published docs and reports
                     ├── [docs]/                       html docs
                         ├── _downloads/                
