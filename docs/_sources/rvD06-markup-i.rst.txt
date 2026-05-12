@@ -32,7 +32,6 @@ including images, tables, links and formatted text.
 **[3i]** Block Tags
 -------------------------------------
 
- 
 
 ========================================= ==============================
        Block Tag                               Description 

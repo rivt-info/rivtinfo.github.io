@@ -71,7 +71,7 @@ require running the rivt-report.py script.
     :maxdepth: 1
     :hidden:
 
-    rvC03-files.rst
     rvC02-folders.rst
+    rvC03-files.rst
     rvC04-report.rst
     rvC05-docex.rst

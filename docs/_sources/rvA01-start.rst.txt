@@ -7,18 +7,19 @@
 This section outlines steps for installing *rivt* and running examples. *rivt*
 is an open source project and, like all open source projects, is built from a
 variety of components written by many contributors. Most of the
-components are Python libraries `VSCode <https://code.visualstudio.com/>`__
-but effective use of *rivt* also requires separate programs like the 
-IDE `VSCode <https://code.visualstudio.com/>`__. For a more general overview 
-of *rivt* start :doc:`here <rvB01-overview>`. 
+components are Python libraries but effective use of *rivt* also requires 
+separate programs like the IDE `VSCode <https://code.visualstudio.com/>`__. 
+For a general overview of *rivt* start :doc:`here <rvB01-overview>`. 
 
-There are three methods for installing and running *rivt* examples.
+**There are three methods for installing and running *rivt* examples.**
 
-#.  If you are not familiar with Python or programming *Portable-rivt* is the 
-    recommended method to download. This is a single zip folder that contains a full
-    *rivt* and VSCode installation with examples. It is a single download for 
-    Windows and requires no installation. Further details are described
-    :ref:`here <rivt-portable>`
+--------------------------------
+
+#.  If you are not familiar with Python or programming, *Portable-rivt* is the 
+    recommended method to start with. *Portable-rivt* is a single zip folder 
+    that contains a full *rivt* and *VSCode* installation with examples. 
+    It is a single download for Windows that requires no installation. 
+    Further details are given :ref:`here <rivt-portable>`
 
 #.  If you are familiar with `GitHub <https://github.com>`__ and have an account
     you can run a cloud version of *rivt* in your browser using 
