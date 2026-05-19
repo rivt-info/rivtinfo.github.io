@@ -405,8 +405,8 @@ with <a class="reference internal" href="rvA01-start.html#rivt-portable"><span c
 An interface for searching <em>public rivt files</em> on <em>GitHub</em> is <a class="reference internal" href="rvE04-ghsearch.html"><span class="doc">here</span></a>.
 A <em>public rivt file</em> is are the parts of a <em>rivt file</em> the author chooses to
 share under an <a class="reference external" href="https://opensource.org/licenses" rel="noreferrer" target="_blank">Open Source license</a>.
-<em>rivt</em> itself is distributed under the <a class="reference external" href="https://opensource.org/license/mit" rel="noreferrer" target="_blank">MIT open source license</a>.
-(see <a class="reference internal" href="rvA03-faq.html#licenses"><span class="std std-ref">[2] Licenses</span></a>).</p>
+<em>rivt</em> itself is distributed under the
+<a class="reference external" href="https://opensource.org/license/mit" rel="noreferrer" target="_blank">MIT open source license</a>. (see <a class="reference internal" href="rvA03-faq.html#licenses"><span class="std std-ref">[2] Licenses</span></a>).</p>
 </section>
 <section id="docs">
 <span id="rivt-docs"></span><h2><strong>[2]</strong> Docs<a class="headerlink" href="#docs" title="Link to this heading">#</a></h2>
@@ -447,30 +447,67 @@ dropped in the formatted output.</p>
 </section>
 <section id="api">
 <span id="rivt-api"></span><h2><strong>[3]</strong> API<a class="headerlink" href="#api" title="Link to this heading">#</a></h2>
-<p>The <em>rivt API</em> includes  <a class="reference internal" href="rvD01-markup.html#api-functions"><span class="std std-ref">API functions</span></a>,
+<p>The <em>rivt API</em> includes half a dozen <a class="reference internal" href="rvD01-markup.html#api-functions"><span class="std std-ref">API functions</span></a>,
 <a class="reference internal" href="rvD01-markup.html#markup"><span class="std std-ref">[3] Tags and Commands</span></a> and <a class="reference internal" href="#files-folders"><span class="std std-ref">files</span></a>.  The API is designed
 to be:</p>
 <ul class="simple">
 <li><dl class="simple">
-<dt>lightweight</dt><dd><p><a class="reference internal" href="rvF02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> wraps <a class="reference internal" href="rvF02-terms.html#term-restructuredtext"><span class="xref std std-term">reStructuredText</span></a> and is made up of less
-than three dozen tags and commands.</p>
+<dt>lightweight</dt><dd><p><a class="reference internal" href="rvF02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> wraps <a class="reference internal" href="rvF02-terms.html#term-restructuredtext"><span class="xref std std-term">reStructuredText</span></a> and uses fewer than
+three dozen tags and commands. Tags format lines or blocks of text and
+commands read and write files.</p>
 </dd>
 </dl>
 </li>
 <li><dl class="simple">
-<dt>extensible</dt><dd><p><em>rivtlib</em> is written in Python with direct access to thousands of Python
-packages. Python scripts and external programs can be run from <em>rivt files</em>
-using the</p>
+<dt>extensible</dt><dd><p><em>rivtlib</em> is written in Python with direct access to the large library of
+Python packages and functions. Python scripts and external programs
+can be integrated into a <em>rivt doc</em>.</p>
 </dd>
 </dl>
 </li>
 <li><dl class="simple">
 <dt>versatile</dt><dd><p>A <em>rivt file</em> produces a text, HTML or PDF <em>doc</em>.
-Multiple <em>docs</em> can be organized into reports.</p>
+Multiple <em>docs</em> can be organized into reports. It can be run within a variety
+of IDE’s.</p>
 </dd>
 </dl>
 </li>
 </ul>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>API Function</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Purpose</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>rv.R</strong> (rS)</p></td>
+<td><p>Run</p></td>
+<td><p>Run scripts and markup</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>rv.I</strong> (rS)</p></td>
+<td><p>Insert</p></td>
+<td><p>Insert static sources</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>rv.V</strong> (rS)</p></td>
+<td><p>Values</p></td>
+<td><p>Calculate values</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>rv.T</strong> (rS)</p></td>
+<td><p>Tools</p></td>
+<td><p>Execute shell scripts and external programs</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>rv.D</strong> (rS)</p></td>
+<td><p>Doc</p></td>
+<td><p>Publish docs</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>rv.S,X</strong> (rS)</p></td>
+<td><p>Skip</p></td>
+<td><p>Skip section or exit (comments and debugging)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <p>An API function starts in the first column and takes a triple quoted
 <a class="reference internal" href="rvF02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> (rS) containting <a class="reference internal" href="rvF02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> as the argument. The
 first line of a <em>rivt string</em> is a <a class="reference internal" href="rvF02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a>, followed by a

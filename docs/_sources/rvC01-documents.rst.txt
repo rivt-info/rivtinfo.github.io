@@ -36,12 +36,14 @@ the corresponding *doc* references would be:
 
 .. code-block:: bash
 
-    doc file names
+    with doc file names-
+    
     rvA01-filename.type
     rv105-filename.type
     rv212-filename.type  
     
-    doc references
+    the doc references would be-
+    
     A.1 (division A, subdivision 1)
     1.5 (division 1, subdivision 5)
     2.12 (division 2, subdivision 12)

@@ -24,8 +24,8 @@ with :ref:`rivt-portable`.
 An interface for searching *public rivt files* on *GitHub* is :doc:`here <rvE04-ghsearch>`. 
 A *public rivt file* is are the parts of a *rivt file* the author chooses to 
 share under an `Open Source license <https://opensource.org/licenses>`__. 
-*rivt* itself is distributed under the `MIT open source license <https://opensource.org/license/mit>`__. 
-(see :ref:`Licenses`). 
+*rivt* itself is distributed under the 
+`MIT open source license <https://opensource.org/license/mit>`__. (see :ref:`Licenses`). 
 
 .. _rivt docs:
 
@@ -89,23 +89,35 @@ dropped in the formatted output.
 ------------------------------------------------------------------------------- 
 
 
-
-The *rivt API* includes  :ref:`API functions <API functions>`, 
+The *rivt API* includes half a dozen :ref:`API functions <API functions>`, 
 :ref:`markup` and :ref:`files <Files-folders>`.  The API is designed 
 to be:
 
 - lightweight
-    :term:`rivt markup` wraps :term:`reStructuredText` and is made up of less
-    than three dozen tags and commands.
+    :term:`rivt markup` wraps :term:`reStructuredText` and uses fewer than
+    three dozen tags and commands. Tags format lines or blocks of text and
+    commands read and write files.
 
 - extensible 
-    *rivtlib* is written in Python with direct access to thousands of Python
-    packages. Python scripts and external programs can be run from *rivt files*
-    using the
+    *rivtlib* is written in Python with direct access to the large library of 
+    Python packages and functions. Python scripts and external programs 
+    can be integrated into a *rivt doc*.
 
 - versatile 
     A *rivt file* produces a text, HTML or PDF *doc*. 
-    Multiple *docs* can be organized into reports. 
+    Multiple *docs* can be organized into reports. It can be run within a variety
+    of IDE's.
+
+================= =============== ================================================
+API Function         Name             Purpose
+================= =============== ================================================
+**rv.R** (rS)         Run          Run scripts and markup
+**rv.I** (rS)         Insert       Insert static sources 
+**rv.V** (rS)         Values       Calculate values
+**rv.T** (rS)         Tools        Execute shell scripts and external programs
+**rv.D** (rS)         Doc          Publish docs 
+**rv.S,X** (rS)       Skip         Skip section or exit (comments and debugging)
+================= =============== ================================================
 
 An API function starts in the first column and takes a triple quoted
 :term:`rivt string` (rS) containting :term:`rivt markup` as the argument. The
