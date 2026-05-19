@@ -23,9 +23,8 @@ engineering documents. A rivt document, termed a *rivt doc*, is
 published as a **text, HTML or PDF file** from a *rivt file*. 
 A *rivt file* is a Python file (.py) that imports the 
 `rivtlib <https://pypi.org/project/rivtlib/>`__ Python package and 
-includes :doc:`rivt API <rvD01-markup>` and :doc:`rivt markup <rvD01-markup>`. 
-
-The *rivtlib* library is built on `docutils <https://docutils.sourceforge.io/>`__, 
+includes the :doc:`rivt API and markup <rvD01-markup>`. The *rivtlib* library 
+is built on `docutils <https://docutils.sourceforge.io/>`__, 
 `PyData Sphinx <https://pydata-sphinx-theme.readthedocs.io/en/stable/>`__
 and `rst2pdf <https://rst2pdf.org/manual.html>`__.
 
