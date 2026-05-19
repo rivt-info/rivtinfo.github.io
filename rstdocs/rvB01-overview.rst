@@ -95,18 +95,17 @@ to be:
 
 - lightweight
     :term:`rivt markup` wraps :term:`reStructuredText` and uses fewer than
-    three dozen tags and commands. Tags format lines or blocks of text and
-    commands read and write files.
+    three dozen tags and commands. *rivt* tags format lines or blocks of text 
+    and commands read and write files.
 
 - extensible 
-    *rivtlib* is written in Python with direct access to the large library of 
-    Python packages and functions. Python scripts and external programs 
-    can be integrated into a *rivt doc*.
+    *rivtlib* is written in Python with direct access to the very large 
+    library of Python packages and functions. Python scripts and external 
+    programs can be integrated into a *rivt doc*.
 
 - versatile 
-    A *rivt file* produces a text, HTML or PDF *doc*. 
-    Multiple *docs* can be organized into reports. It can be run within a variety
-    of IDE's.
+    A *rivt file* produces a text, HTML or PDF *doc*. Multiple *docs* can be 
+    organized into reports. *rivt* can be run within a variety of IDEs.
 
 ================= =============== ================================================
 API Function         Name             Purpose
