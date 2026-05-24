@@ -33,12 +33,14 @@ An interface for finding public *rivt files* on **GitHub** is
 calculations on Google Drive, including *rivt*, is 
 `here <https://www.openmodels.info>`__. 
 
-ver: 1.0.0a12 (*rivt* is alpha sofware. Some features are not complete and the
-user interface may change.)
-
 .. raw:: html
 
    <hr>
+
+ver: 1.0.0a12 ( Note: *rivt* is alpha sofware. Some features are not complete and the
+user interface may change.)
+
+
 
 
 
