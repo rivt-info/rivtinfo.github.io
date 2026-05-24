@@ -1,4 +1,7 @@
 
+.. role:: blue
+
+
 .. raw:: html
 
    <div style="height: 0; visibility: hidden;">
@@ -20,7 +23,7 @@
 
 
 *rivt* is an extensible, open source Python tool for writing and organizing
-engineering documents. It publishes a *rivt file* as a calculated and formatted
+engineering documents. It publishes a *rivt file* to a formatted
 **text, HTML or PDF document (doc)** file.  A *rivt file* is a Python file 
 (.py) that imports the `rivtlib <https://pypi.org/project/rivtlib/>`__ 
 Python package and includes :doc:`rivt markup <rvD01-markup>`.
@@ -37,8 +40,8 @@ calculations on **Google Drive**, including *rivt*, is
 
    <hr>
 
-**ver: 1.0.0a12** ( Note: *rivt* is alpha sofware. Some features are not
-complete and the user interface may change. )
+**ver: 1.0.0a12** :blue:`(Note: *rivt* is alpha sofware. Some features are not
+complete and the user interface may change.)`
 
 
 

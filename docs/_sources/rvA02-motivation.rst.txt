@@ -7,22 +7,22 @@
 
 *rivt* is an open source software project that simplifies sharing and reuse of
 engineering documents. This has always been a challenge because engineering
-documents are complex. They can include text, images, tables, calculations,
-models and computer code. The market response has been to develop incompatible,
-siloed software that preclude document input sharing. The barriers to
-resuse include:
+documents are complex. They may include text, images, tables, calculations,
+models and computer code. The market response to these documents has been to
+develop incompatible, siloed software that precludes document input sharing. The
+barriers to resuse include:
 
-- incompatible documents from different programs
-- frequent software updates required to maintain document access
-- high update costs
-- software limited to specific platforms
-- limited document version control
-- limited report generation features
-- limited collaboration features
+- incompatible documents from different programs.
+- frequent software updates required to maintain document access.
+- high update costs.
+- platform limited software.
+- limited version control
+- limited report generation
+- limited collaboration
 
-*rivt* is designed to address these barriers as a compliment or
+*rivt* is designed to address these barriers as both a compliment and
 replacement to existing software. The table below summarizes and compares
-limitations between different software programs.
+limitations between different programs.
 
 .. rst-class:: center
 
@@ -40,7 +40,6 @@ Jupyter        no       no         no      yes         yes      yes
 **rivt**      **yes**  **yes**   **yes**  **yes**   **yes**    **yes**
 ============ ========= ======== ======== ========= ========= ============= 
 
-
 .. rst-class:: left
 
     .. [1] Report generation
@@ -53,16 +52,16 @@ Jupyter        no       no         no      yes         yes      yes
 **[2]** Use Cases
 --------------------------------------------------------------------- 
 
-The primary use case for *rivt* is producing and sharing engineering documents
-that are clear, formatted and organized but do not have to meet the standards
-of formal journal publications. It provides the option to publish in a variety
-of formats including text, PDF or HTML.
+The primary use case for *rivt* is sharing and publishing engineering documents
+that are clear, formatted and organized but do not need to meet the standards
+of formal journal publications. It also provides the option to publish in a
+variety of formats including text, PDF or HTML.
 
 A second use case is as a front or back end for pre- and post-processing data
 from other software.
 
-A third use case is collaboration, when *rivt* is used with interfaces like 
-VSCode, Codespaces, Firebase or repl.it.
+A third use case is document collaboration when used with interfaces like VSCode,
+Codespaces, Firebase, Gitpod or replit.
 
 1. Engineering documents for:
 
@@ -80,8 +79,8 @@ VSCode, Codespaces, Firebase or repl.it.
 #. instrumentation
 
 
-3. Collaboration:
+3. Collaboration in:
 
 #. teaching
 #. presentations
-#. real time collaboration
+#. document preparation
