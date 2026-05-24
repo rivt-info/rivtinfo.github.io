@@ -4,7 +4,7 @@ from pathlib import Path
 sys.path.append(str(Path(".").resolve()))
 
 project = 'rivt.info'
-copyright = '2023 StructureLabs LLC'
+copyright = '2025 R Holland'
 author = 'rholland'
 release = '0.3.0'
 extensions = ['sphinx.ext.githubpages','sphinx_togglebutton',

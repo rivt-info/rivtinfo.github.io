@@ -37,7 +37,7 @@ calculations on **Google Drive**, including *rivt*, is
 
    <hr>
 
-   <p style="color:hwb(200 13% 47%);">ver: 1.0.0a12 (Note: *rivt* is alpha 
+   <p style="color:rgb(63,177,197);">ver: 1.0.0a12 (Note: *rivt* is alpha 
    sofware. Some features are not complete and the user interface 
    may change.)</p>
 
