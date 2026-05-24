@@ -28,8 +28,8 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=7f76b32a3354e82990f2" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=7f76b32a3354e82990f2" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
@@ -38,10 +38,10 @@
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=95fdc9c7" />
   
   <!-- So that users can add custom icons -->
-  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="_static/scripts/fontawesome.js?digest=7f76b32a3354e82990f2"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=7f76b32a3354e82990f2" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=7f76b32a3354e82990f2" />
 
     <script src="_static/jquery.js?v=5d32c60e"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
@@ -53,10 +53,11 @@
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'rvC02-folders';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="C.3 Files" href="rvC03-files.html" />
@@ -64,14 +65,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="dark">
-
+  <body data-default-mode="dark">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
@@ -103,7 +108,7 @@
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
   <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
@@ -417,23 +422,23 @@ brackets[] below. Folders with an underscore prefix contain rivt input files.
 Folders with an underscore suffix contain output files written by *rivt*.
 <br> <br></div></blockquote>
 <p><strong>Top Level Folders</strong></p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt-<span class="o">]</span>Report-Label/<span class="w">               </span>rivt<span class="w"> </span>Folder
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt-<span class="o">]</span>Report-Label/<span class="w">             </span>rivt<span class="w"> </span>Folder
 <span class="w">    </span>├──<span class="w"> </span>.vscode/<span class="w">                    </span>optional<span class="w"> </span>VSCode<span class="w"> </span>settings
 <span class="w">    </span>├──<span class="w"> </span>README.txt<span class="w">                  </span>rivt-generated<span class="w"> </span>report
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>_rivt-public<span class="o">]</span>/<span class="w">                 </span>rivt-generated<span class="w"> </span>public<span class="w"> </span>files
-<span class="w">        </span>├──<span class="w"> </span>_stored/<span class="w">                    </span>rivt<span class="w"> </span><span class="nb">source</span><span class="w"> </span>files
-<span class="w">        </span>├──<span class="w"> </span>src/<span class="w">                        </span>author<span class="w"> </span><span class="nb">source</span><span class="w"> </span>files
-<span class="w">        </span>├──<span class="w"> </span>README.txt<span class="w">                  </span>public<span class="w"> </span>report
-<span class="w">        </span>├──<span class="w"> </span>rv-101-filename1.py<span class="w">         </span>public<span class="w"> </span>rivt<span class="w"> </span>file
-<span class="w">        </span>├──<span class="w"> </span>rv-102-filename2.py<span class="w">         </span>public<span class="w"> </span>rivt<span class="w"> </span>file
-<span class="w">        </span>├──<span class="w"> </span>rv-201-filename3.py<span class="w">         </span>public<span class="w"> </span>rivt<span class="w"> </span>file
-<span class="w">        </span>├──<span class="w"> </span>rv-202-filename4.py<span class="w">         </span>public<span class="w"> </span>rivt<span class="w"> </span>file
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>_rivt-public<span class="o">]</span>/<span class="w">                 </span>public<span class="w"> </span>subset<span class="w"> </span>of<span class="w"> </span>rivt<span class="w"> </span>files
+<span class="w">        </span>├──<span class="w"> </span>rv_stor/
+<span class="w">        </span>├──<span class="w"> </span>rvsrc/
+<span class="w">        </span>├──<span class="w"> </span>README.txt
+<span class="w">        </span>├──<span class="w"> </span>rv-101-filename1.py
+<span class="w">        </span>├──<span class="w"> </span>rv-102-filename2.py
+<span class="w">        </span>├──<span class="w"> </span>rv-201-filename3.py
+<span class="w">        </span>├──<span class="w"> </span>rv-202-filename4.py
 <span class="w">        </span>...
 <span class="w">    </span>└──<span class="w"> </span><span class="o">[</span>rivt-report<span class="o">]</span>/<span class="w">              </span>report<span class="w"> </span>folder
 <span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>_published<span class="o">]</span>/<span class="w">               </span>published<span class="w"> </span>docs<span class="w"> </span>and<span class="w"> </span>reports
 <span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>_rstdocs<span class="o">]</span>/<span class="w">                 </span>restructured<span class="w"> </span>text<span class="w"> </span>files
-<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>_stored<span class="o">]</span>/<span class="w">                  </span>stored<span class="w"> </span>files
-<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>src<span class="o">]</span>/<span class="w">                      </span><span class="nb">source</span><span class="w"> </span>files
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv_stor<span class="o">]</span>/<span class="w">                  </span>rivt<span class="w"> </span>generated<span class="w"> </span><span class="nb">source</span><span class="w"> </span>files
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rvsrc<span class="o">]</span>/<span class="w">                    </span>author<span class="w"> </span>provided<span class="w"> </span><span class="nb">source</span><span class="w"> </span>files
 <span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename1.py<span class="w">        </span>rivt<span class="w"> </span>file
 <span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv102-<span class="o">]</span>filename2.py<span class="w">        </span>rivt<span class="w"> </span>file
 <span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv201-<span class="o">]</span>filename3.py<span class="w">        </span>rivt<span class="w"> </span>file
@@ -448,82 +453,31 @@ names and prefixes are shown in brackets.</p>
 <span class="w">    </span>├──<span class="w"> </span>.vscode/<span class="w">                      </span>optional<span class="w"> </span>VSCode<span class="w"> </span>settings
 <span class="w">    </span>├──<span class="w"> </span>README.txt<span class="w">                    </span>rivt-generated<span class="w"> </span>report
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>_rivt-public<span class="o">]</span>/<span class="w">               </span>rivt-generated<span class="w"> </span>public<span class="w"> </span>files
-<span class="w">        </span>├──<span class="w"> </span>_stored/<span class="w">                    </span>rivt<span class="w"> </span><span class="nb">source</span><span class="w"> </span>files
-<span class="w">        </span>├──<span class="w"> </span>src/<span class="w">                        </span>author<span class="w"> </span><span class="nb">source</span><span class="w"> </span>files
+<span class="w">        </span>├──<span class="w"> </span>rv_stor/<span class="w">                    </span>rivt<span class="w"> </span><span class="nb">source</span><span class="w"> </span>files
+<span class="w">        </span>├──<span class="w"> </span>rvsrc/<span class="w">                        </span>author<span class="w"> </span><span class="nb">source</span><span class="w"> </span>files
 <span class="w">        </span>├──<span class="w"> </span>rv-101-filename1.py<span class="w">             </span>public<span class="w"> </span>rivt<span class="w"> </span>file
 <span class="w">        </span>├──<span class="w"> </span>rv-102-filename2.py<span class="w">             </span>public<span class="w"> </span>rivt<span class="w"> </span>file
 <span class="w">        </span>├──<span class="w"> </span>rv-201-filename3.py<span class="w">             </span>public<span class="w"> </span>rivt<span class="w"> </span>file
 <span class="w">        </span>├──<span class="w"> </span>rv-202-filename4.py<span class="w">             </span>public<span class="w"> </span>rivt<span class="w"> </span>file
-<span class="w">        </span>...
+<span class="w">         </span>...
 <span class="w">    </span>└──<span class="w"> </span><span class="o">[</span>rivt-report<span class="o">]</span>/<span class="w">                 </span>report<span class="w"> </span>folder
 <span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename1.py<span class="w">          </span>rivt<span class="w"> </span>file
 <span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>rv102-<span class="o">]</span>filename2.py<span class="w">          </span>rivt<span class="w"> </span>file
 <span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>rv201-<span class="o">]</span>filename3.py<span class="w">          </span>rivt<span class="w"> </span>file
 <span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>rv202-<span class="o">]</span>filename4.py<span class="w">          </span>rivt<span class="w"> </span>file
-<span class="w">            </span>...
-<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>src<span class="o">]</span><span class="w">                      </span>author<span class="w"> </span><span class="nb">source</span><span class="w"> </span>files
+<span class="w">             </span>...
+<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>rvsrc<span class="o">]</span><span class="w">                     </span>author<span class="w"> </span><span class="nb">source</span><span class="w"> </span>files<span class="w"> </span>and<span class="w"> </span>folders
+<span class="w">                </span>├──<span class="w"> </span>down/<span class="w">                      </span>files<span class="w"> </span>to<span class="w"> </span>download
+<span class="w">                    </span>└──<span class="w"> </span>conc-vals.txt
 <span class="w">                </span>├──<span class="w"> </span>data/<span class="w">                       </span>tables
-<span class="w">                    </span>├──<span class="w"> </span>opensees1.txt
-<span class="w">                    </span>└──<span class="w"> </span>conc-vals.csv
-
-<span class="w">                </span>├──<span class="w"> </span>run/<span class="w">                         </span>OS<span class="w"> </span>commands
-<span class="w">                    </span>├──<span class="w"> </span>run1_win.cmd
-<span class="w">                    </span>└──<span class="w"> </span>run1_linux.sh
-<span class="w">                </span>├──<span class="w"> </span>tools/<span class="w">                       </span>scripts<span class="w"> </span>and<span class="w"> </span>functions
-<span class="w">                    </span>├──<span class="w"> </span>coverpage.rst
-<span class="w">                    </span>├──<span class="w"> </span>logoname.png
-<span class="w">                    </span>├──<span class="w"> </span>plot.py
-<span class="w">                    </span>└──<span class="w"> </span>loads.py
-<span class="w">                </span>├──<span class="w"> </span>steel-vals.csv
-<span class="w">                </span>├──<span class="w"> </span>plastic-vals.csv
+<span class="w">                    </span>└──<span class="w"> </span>steel-vals.csv
+<span class="w">                </span>├──<span class="w"> </span>run/<span class="w">                        </span>scripts<span class="w"> </span>and<span class="w"> </span>functions
+<span class="w">                    </span>└──<span class="w"> </span>plot.py
+<span class="w">                </span>├──<span class="w"> </span>tools/<span class="w">                       </span>OS<span class="w"> </span>shell<span class="w"> </span>commands
+<span class="w">                    </span>└──<span class="w"> </span>opensees.sh
 <span class="w">                </span>├──<span class="w"> </span>fig1.png
 <span class="w">                </span>└──<span class="w"> </span>fig2.jpg
-<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>_published/<span class="w">               </span>published<span class="w"> </span>docs<span class="w"> </span>and<span class="w"> </span>reports
-<span class="w">                </span>├──<span class="w"> </span><span class="o">[</span>docs<span class="o">]</span>/<span class="w">                       </span>html<span class="w"> </span>docs
-<span class="w">                    </span>├──<span class="w"> </span>_downloads/
-<span class="w">                    </span>├──<span class="w"> </span>_images/
-<span class="w">                    </span>├──<span class="w"> </span>_locale/
-<span class="w">                    </span>├──<span class="w"> </span>_sources/
-<span class="w">                    </span>├──<span class="w"> </span>_sphinx_design_static/
-<span class="w">                    </span>├──<span class="w"> </span>_static/
-<span class="w">                    </span>├──<span class="w"> </span>_templates/
-<span class="w">                    </span>├──<span class="w"> </span>.doctrees/
-<span class="w">                    </span>├──<span class="w"> </span>.buildinfo
-<span class="w">                    </span>├──<span class="w"> </span>.buildinfo.bak
-<span class="w">                    </span>├──<span class="w"> </span>.nojekyll
-<span class="w">                    </span>├──<span class="w"> </span>genindex.html
-<span class="w">                    </span>├──<span class="w"> </span>search.html
-<span class="w">                    </span>├──<span class="w"> </span>objects.inv
-<span class="w">                    </span>├──<span class="w"> </span>searchindex.js
-<span class="w">                    </span>├──<span class="w"> </span>rv101-filename1.html
-<span class="w">                    </span>├──<span class="w"> </span>rv102-filename2.html
-<span class="w">                    </span>├──<span class="w"> </span>rv201-filename3.html
-<span class="w">                    </span>├──<span class="w"> </span>rv202-filename4.html
-<span class="w">                    </span>...
-<span class="w">                </span>├──<span class="w"> </span><span class="o">[</span>pdfdocs<span class="o">]</span>/<span class="w">                      </span>pdf<span class="w"> </span>docs
-<span class="w">                    </span>├──<span class="w"> </span>process<span class="w"> </span>folders/
-<span class="w">                    </span>├──<span class="w"> </span>rv101-filename1.pdf
-<span class="w">                    </span>├──<span class="w"> </span>rv102-filename1.pdf
-<span class="w">                    </span>├──<span class="w"> </span>rv201-filename3.pdf
-<span class="w">                    </span>├──<span class="w"> </span>rv202-filename4.pdf
-<span class="w">                    </span>...
-<span class="w">                </span>└──<span class="w"> </span><span class="o">[</span>txtdocs<span class="o">]</span>/<span class="w">                      </span>text<span class="w"> </span>docs
-<span class="w">                    </span>├──<span class="w"> </span>rv101-filename1.txt
-<span class="w">                    </span>├──<span class="w"> </span>rv102-filename1.txt
-<span class="w">                    </span>├──<span class="w"> </span>rv201-filename3.txt
-<span class="w">                    </span>├──<span class="w"> </span>rv202-filename4.txt
-<span class="w">                    </span>...
-<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>_rstdocs<span class="o">]</span>/<span class="w">                    </span>restructured<span class="w"> </span>text<span class="w"> </span>files
-<span class="w">                </span>├──<span class="w"> </span>_downloads/
-<span class="w">                </span>├──<span class="w"> </span>_static/
-<span class="w">                </span>├──<span class="w"> </span>_locale/
-<span class="w">                </span>├──<span class="w"> </span>_templates/
-<span class="w">                </span>├──<span class="w"> </span>rv101-filename1.rst
-<span class="w">                </span>├──<span class="w"> </span>rv102-filename2.rst
-<span class="w">                </span>├──<span class="w"> </span>rv201-filename3.rst
-<span class="w">                </span>├──<span class="w"> </span>rv202-filename4.rst
-<span class="w">                </span>...
-<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>_stored<span class="o">]</span>/<span class="w">                     </span>rivt<span class="w"> </span>generated<span class="w"> </span>files
+<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>rv_stor<span class="o">]</span>/<span class="w">                     </span>rivt-generated<span class="w"> </span><span class="nb">source</span><span class="w"> </span>files
 <span class="w">                </span>├──<span class="w"> </span><span class="o">[</span>logs<span class="o">]</span>/<span class="w">                         </span>log<span class="w"> </span>files
 <span class="w">                    </span>├──<span class="w"> </span>rv101-log.txt
 <span class="w">                    </span>└──<span class="w"> </span>rv102-log.txt
@@ -536,31 +490,66 @@ names and prefixes are shown in brackets.</p>
 <span class="w">                </span>├──<span class="w"> </span>output.dat
 <span class="w">                </span>├──<span class="w"> </span>v101-2.csv
 <span class="w">                </span>└──<span class="w"> </span>v102-3.csv
+<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>_published<span class="o">]</span>/<span class="w">                   </span>published<span class="w"> </span>docs<span class="w"> </span>and<span class="w"> </span>reports
+<span class="w">                </span>├──<span class="w"> </span><span class="o">[</span>docs<span class="o">]</span>/<span class="w">                       </span>html<span class="w"> </span>docs
+<span class="w">                    </span>├──<span class="w"> </span>html<span class="w"> </span>auxiliary<span class="w"> </span>files
+<span class="w">                     </span>...
+<span class="w">                    </span>├──<span class="w"> </span>index.html
+<span class="w">                    </span>├──<span class="w"> </span>rv101-filename1.html
+<span class="w">                    </span>├──<span class="w"> </span>rv102-filename2.html
+<span class="w">                    </span>├──<span class="w"> </span>rv201-filename3.html
+<span class="w">                    </span>├──<span class="w"> </span>rv202-filename4.html
+<span class="w">                     </span>...
+<span class="w">                </span>├──<span class="w"> </span><span class="o">[</span>pdfdocs<span class="o">]</span>/<span class="w">                      </span>pdf<span class="w"> </span>docs
+<span class="w">                    </span>├──<span class="w"> </span>pdf<span class="w"> </span>auxiliary<span class="w"> </span>files
+<span class="w">                     </span>...
+<span class="w">                    </span>├──<span class="w"> </span>report-title.pdf
+<span class="w">                    </span>├──<span class="w"> </span>rv101-filename1.pdf
+<span class="w">                    </span>├──<span class="w"> </span>rv102-filename1.pdf
+<span class="w">                    </span>├──<span class="w"> </span>rv201-filename3.pdf
+<span class="w">                    </span>├──<span class="w"> </span>rv202-filename4.pdf
+<span class="w">                    </span>...
+<span class="w">                </span>└──<span class="w"> </span><span class="o">[</span>txtdocs<span class="o">]</span>/<span class="w">                      </span>text<span class="w"> </span>docs
+<span class="w">                    </span>├──<span class="w"> </span>report-title.txt
+<span class="w">                    </span>├──<span class="w"> </span>rv101-filename1.txt
+<span class="w">                    </span>├──<span class="w"> </span>rv102-filename1.txt
+<span class="w">                    </span>├──<span class="w"> </span>rv201-filename3.txt
+<span class="w">                    </span>├──<span class="w"> </span>rv202-filename4.txt
+<span class="w">                    </span>...
+<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>_rstdocs<span class="o">]</span>/<span class="w">                       </span>restructured<span class="w"> </span>text<span class="w"> </span>files
+<span class="w">                </span>├──<span class="w"> </span>_downloads/
+<span class="w">                </span>├──<span class="w"> </span>_static/
+<span class="w">                </span>├──<span class="w"> </span>_locale/
+<span class="w">                </span>├──<span class="w"> </span>rv101-filename1.rst
+<span class="w">                </span>├──<span class="w"> </span>rv102-filename2.rst
+<span class="w">                </span>├──<span class="w"> </span>rv201-filename3.rst
+<span class="w">                </span>├──<span class="w"> </span>rv202-filename4.rst
+<span class="w">                </span>...
 </pre></div>
 </div>
 </section>
 <section id="folder-names">
 <h2><strong>[2]</strong>  Folder Names<a class="headerlink" href="#folder-names" title="Link to this heading">#</a></h2>
-<p>Reports are organized using the folllowing foldeers with the required names and prefixes
-shown in italics:</p>
+<p>Reports are organized using the folllowing folders and naming conventions,
+with the required names and prefixes shown in italics:</p>
 <dl class="simple">
 <dt><em>rivt-</em> report-label</dt><dd><p>Top level rivt folder containing rivt report and public files.</p>
 </dd>
-<dt><em>rivt-public_</em></dt><dd><p>Includes <em>public rivt files</em> written by <em>rivtlib</em> for public sharing.
+<dt><em>_rivt-public</em></dt><dd><p>Includes <em>public rivt files</em> written by <em>rivtlib</em> for public sharing.
 The prefix <em>rvAnn-</em> is changed to <em>rv-Ann-</em> to avoid confusion with
 private files.</p>
 </dd>
 <dt><em>rivt-report</em></dt><dd><p>Includes folders for source and published files and <em>docs</em>.</p>
 </dd>
-<dt><em>_src</em></dt><dd><p>Includes source files used by <em>rivt files</em> including data, images, run
+<dt><em>rvsrc</em></dt><dd><p>Includes source files used by <em>rivt files</em> including data, images, run
 commands, tools and value files.</p>
 </dd>
-<dt><em>published_</em></dt><dd><p>Includes formatted <em>docs</em> and <em>reports</em> .</p>
+<dt><em>_published</em></dt><dd><p>Includes formatted <em>docs</em> and <em>reports</em> .</p>
 </dd>
-<dt><em>stored_</em></dt><dd><p>Includes output files written by <em>rivtlib</em> including <em>logs</em>, <em>values</em>,
+<dt><em>rv_stor</em></dt><dd><p>Includes output files written by <em>rivtlib</em> including <em>logs</em>, <em>values</em>,
 <em>hidden sections</em> and <em>metadata</em>.</p>
 </dd>
-<dt><em>rstdocs_</em></dt><dd><p>Includes intermediate restructured text files written by <em>rivtlib</em>.</p>
+<dt><em>_rstdocs</em></dt><dd><p>Includes intermediate restructured text files written by <em>rivtlib</em>.</p>
 </dd>
 </dl>
 </section>
@@ -611,8 +600,8 @@ commands, tools and value files.</p>
     class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Sections
   </div>
-  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-folder"><strong>[1]</strong>  rivt Folder</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#folder-names"><strong>[2]</strong>  Folder Names</a></li>
 </ul>
@@ -631,8 +620,8 @@ commands, tools and value files.</p>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=7f76b32a3354e82990f2"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=7f76b32a3354e82990f2"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
