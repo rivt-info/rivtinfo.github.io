@@ -5,13 +5,12 @@
 **[1]** Background
 --------------------------------------------------------------------- 
 
- 
-
 *rivt* is an open source software project that simplifies sharing and reuse of
-engineering documents. This has always been a challenge because engineering 
-documents are complex. They can include text, images, tables, calculations, 
-models and computer code. The market response has been to develope incompatible, 
-siloed software. The barriers to resuse include:
+engineering documents. This has always been a challenge because engineering
+documents are complex. They can include text, images, tables, calculations,
+models and computer code. The market response has been to develop incompatible,
+siloed software that preclude document input sharing. The barriers to
+resuse include:
 
 - incompatible documents from different programs
 - frequent software updates required to maintain document access
@@ -54,33 +53,34 @@ Jupyter        no       no         no      yes         yes      yes
 **[2]** Use Cases
 --------------------------------------------------------------------- 
 
- 
+The primary use case for *rivt* is producing and sharing engineering documents
+that are clear, formatted and organized but do not have to meet the standards
+of formal journal publications. It provides the option to publish in a variety
+of formats including text, PDF or HTML.
 
-The primary use case for *rivt* is producing engineering documents that lie
-between back of envelope calculations and sketches, and formal journal
-publications. In other words, it produces clear, formatted, organized documents
-that are easy to write and edit.
+A second use case is as a front or back end for pre- and post-processing data
+from other software.
 
-The second use case is when flexibilty is needed to produce documents in
-a variety of formats including text, PDF or HTML.
+A third use case is collaboration, when *rivt* is used with interfaces like 
+VSCode, Codespaces, Firebase or repl.it.
 
-A third use case is when documents need to interact with other software programs.
-
-*rivt files* can function as a front and back end for:
-
-#. software control
-#. visualization
-#. instrumentation
-
-*rivt docs* can be used for:
+1. Engineering documents for:
 
 #. internal communication
 #. research documentation
 #. government permits
 #. technical reports
 #. funding applications
+#. homework
 
-Because *rivt* is compatible with collaborative tools it may be used for:
+2. Front and back ends for:
+
+#. software pre- and post-processing
+#. visualization
+#. instrumentation
+
+
+3. Collaboration:
 
 #. teaching
 #. presentations

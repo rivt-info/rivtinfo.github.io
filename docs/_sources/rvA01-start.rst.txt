@@ -1,8 +1,17 @@
 **A.1 Start**
 =====================================================================
 
-**[1]** Run examples 
+**[1]** Getting Started 
 ------------------------------------------------------------------------------- 
+
+The installation of *rivt*, as open source software, differs from typical
+commercial software because it is built with hundreds of other open source
+projects, like all open source projects. Installation step are not difficult
+and, once learned, are similar for almost all open source projects.
+
+Unless you are familiar with Python and open source software the simplest way
+to get started is to download a single folder portable installation that runs
+on the Windows platform.
 
 This section outlines steps for installing *rivt* and running examples. *rivt*
 is an open source project and, like all open source projects, is built from a
