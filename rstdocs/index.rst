@@ -19,16 +19,16 @@
    <hr>
 
 *rivt* is an extensible, open source Python tool for writing and organizing
-engineering documents. A rivt document, referred to as a :term:`doc`, is 
-published as a **text, HTML or PDF file** from a :term:`rivt file`. A *rivt file* 
-is a Python file (.py) that imports the `rivtlib <https://pypi.org/project/rivtlib/>`__ 
+engineering documents. It publishes a *rivt file* as a 
+**text, HTML or PDF document (doc)** A *rivt file* is a Python file (.py) that 
+imports the `rivtlib <https://pypi.org/project/rivtlib/>`__ 
 Python package and includes :doc:`rivt markup <rvD01-markup>`.
 
-A :term:`rivt report` is a linked compilation of multiple *rivt docs*.  
-This site is an example of an HTML *rivt report*.
+A *rivt report* is a linked compilation of multiple *rivt docs*.  
+This site is an example of an *HTML rivt report*.
 
-An interface for finding public *rivt files* on *GitHub* is  
-:doc:`here <rvE04-ghsearch>`, and a collection of open source models and 
+An interface for finding public *rivt files* on **GitHub** is  
+:doc:`here <rvE04-ghsearch>`. A collection of open source models and 
 calculations on Google Drive, including *rivt*, is 
 `here <https://www.openmodels.info>`__. 
 
