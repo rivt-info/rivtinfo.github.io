@@ -32,7 +32,6 @@ An interface for finding public *rivt files* on **GitHub** is
 calculations on Google Drive, including *rivt*, is 
 `here <https://www.openmodels.info>`__. 
 
- 
 .. toctree::
     :maxdepth: 1
     :hidden:

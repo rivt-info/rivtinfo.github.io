@@ -3,10 +3,7 @@
 
 **[1]** rivt file
 -----------------------------------------------
-
-
  
-
 This is a small rivt file that publishes a single *doc* It has 4 API functions
 - two of them are published. The output is written to the terminal.
 
