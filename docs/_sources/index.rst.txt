@@ -30,15 +30,15 @@ This site is an example of an *HTML rivt report*.
 
 An interface for finding public *rivt files* on **GitHub** is  
 :doc:`here <rvE04-ghsearch>`. A collection of open source models and 
-calculations on Google Drive, including *rivt*, is 
+calculations on **Google Drive**, including *rivt*, is 
 `here <https://www.openmodels.info>`__. 
 
 .. raw:: html
 
    <hr>
 
-ver: 1.0.0a12 ( Note: *rivt* is alpha sofware. Some features are not complete and the
-user interface may change.)
+**ver: 1.0.0a12** ( Note: *rivt* is alpha sofware. Some features are not
+complete and the user interface may change. )
 
 
 
