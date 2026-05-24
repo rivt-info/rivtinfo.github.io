@@ -1,7 +1,4 @@
 
-.. role:: blue
-
-
 .. raw:: html
 
    <div style="height: 0; visibility: hidden;">
@@ -40,8 +37,9 @@ calculations on **Google Drive**, including *rivt*, is
 
    <hr>
 
-**ver: 1.0.0a12** :blue:`(Note: *rivt* is alpha sofware. Some features are not
-complete and the user interface may change.)`
+   <p style="color:hwb(200 13% 47%);">ver: 1.0.0a12 (Note: *rivt* is alpha 
+   sofware. Some features are not complete and the user interface 
+   may change.)</p>
 
 
 
