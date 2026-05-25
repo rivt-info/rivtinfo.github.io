@@ -13,12 +13,13 @@ Examples 1 and 2 are single docs. Example 3 is a small report. They are availabl
 
 
 **[2]** Example 1
-----------------------
+----------------------------------------------
 
- This is a single rivt file that publishes a single doc. It illustrates 
- the common API functions and rivt markup syntax.
+This is a single rivt file that publishes a single doc. It illustrates 
+the common API functions and rivt markup syntax.
 
-**1a** Example 1 - rivt file
+
+**2-1** rivt file - Ex. 1
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This is the *rivt file* for Example 1.
@@ -117,7 +118,10 @@ This is the *rivt file* for Example 1.
 
         """)
 
-**2b** Example 1 - text doc
+--------------------------
+
+
+**2-2** Example 1 - text doc
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 
 This is the output for Example 1.
