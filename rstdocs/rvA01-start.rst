@@ -4,27 +4,31 @@
 **[1]** Getting Started 
 ------------------------------------------------------------------------------- 
 
-This section covers installation of *rivt* and running example *rivt docs*.
+This section covers installation of *rivt* and *rivt doc* examples.
 Open source software, including *rivt*, is built with multiple other open
-source components. Open source software installation methods incorporate this
-feature.
+source components. Open source software installation methods are based on this.
 
 For users unfamiliar with Python and open source software the simplest way to
-get started is to download a single, portable zip file (800 MB) that runs on
-Windows. It includes all the neccessary components and examples to run and
-explore *rivt*. For further details see :ref:`here <rivt-portable>`.
+get started is to download Windows portable zip file (800 MB). It includes all
+the neccessary components and examples to run and explore *rivt*. For further
+details see :ref:`here <rivt-portable>`.
 
 For users with a `GitHub <https://github.com>`__ account *rivt* can be forked
 and run in a browser using 
 `Codespaces <https://github.com/features/codespaces>`__.
 Further details are :ref:`here <Code-rivt>`.
 
-For users familiar with Python, *rivt* may be installed on the OS platform
-at the system level or in an isolated environment using *uv*.  Further
-details :ref:`here <rivt-sys>`.
+For users familiar with Python, *rivt* may be installed at the OS level or in
+an isolated environment using *uv*. Further details :ref:`here <rivt-sys>`.
 
 **[2]** Typical IDE layout 
 ------------------------------------------------------------------------------- 
+
+*rivt* can be run from the command line but efficient editing and running of
+*rivt files* is typically done in an :term:`IDE`. A typical **VSCode IDE**
+layout is shown below.
+
+
 
 .. figure::  _static/img/ide2.png
     :class: dark-light
@@ -32,19 +36,17 @@ details :ref:`here <rivt-sys>`.
     :align: center
     :alt: ide layout
 
-*rivt* can be run from the command line but efficient editing and running of
-*rivt files* is typically done in an :term:`IDE`. A typical **IDE** layout can
-be viewed at
+    rivt IDE layout in VSCode (click on image to enlarge)
 
-This explorable browser example shows the *rivt file* in the left panel, the
-text *doc* output in the right panel or second tab, and the file explorer in
-the far left panel. Docs (txt, PDF and HTML output files) can be downloaded
-from the file explorer including the text, pdf and html reports. The IDE cannot
-be used to run files. Setting up a GitHub account and forking Codespace-rivt is
-:ref:`needed <Code-rivt>`.
+The *rivt file* is the left editing panel, the *text doc* output is in the right
+terminal panel and the file explorer is the far left panel. Text, PDF and HTML
+output files are accessed in file explorer and displayed within the IDE. When
+developing docs, individual sections can be run and output to the terminal
+during doc development.  
+
+Additional example *rivt files* and *docs* are here. 
 
 -------------------------------
-
 
 .. _rivt-portable:
 

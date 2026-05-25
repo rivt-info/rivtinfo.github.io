@@ -1,13 +1,27 @@
 **A.3 Example**
 =========================
 
-**[1]** rivt file
+**[1]** Example Files
 -----------------------------------------------
  
-This is a small rivt file that publishes a single *doc* It has 4 API functions
-- two of them are published. The output is written to the terminal.
+The example files illustrate the common API functions and rivt markup syntax. 
+*rivt files* may be published as single documents or compiled into reports. 
+Reports are assembled through a customized report script (*rivt-report.py*). 
+Examples 1 and 2 are single docs. Example 3 is a small report. They are available
 
- 
+------------------
+
+
+**[2]** Example 1
+----------------------
+
+ This is a single rivt file that publishes a single doc. It illustrates 
+ the common API functions and rivt markup syntax.
+
+**1a** Example 1 - rivt file
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This is the *rivt file* for Example 1.
 
 .. code-block:: python
 
@@ -102,3 +116,25 @@ This is a small rivt file that publishes a single *doc* It has 4 API functions
         | PUBLISH | rivt | rst2pdf
 
         """)
+
+**2b** Example 1 - text doc
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+
+This is the output for Example 1.
+
+
+.. code-block:: text
+
+    this is a code block
+ 
+
+
+**[3]** Example 2
+-------------------------
+
+ This is a report. It illustrates use of the rivt-report.py script.
+ 
+
+
+ 
+

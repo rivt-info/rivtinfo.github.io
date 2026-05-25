@@ -20,8 +20,8 @@
 
 
 *rivt* is an extensible, open source Python tool for writing and organizing
-engineering documents. It publishes a *rivt file* to a formatted
-**text, HTML or PDF document (doc)** file.  A *rivt file* is a Python file 
+engineering documents. It publishes *rivt files* to a formatted
+**text, HTML or PDF document (rivt doc)** files.  A *rivt file* is a Python file 
 (.py) that imports the `rivtlib <https://pypi.org/project/rivtlib/>`__ 
 Python package and includes :doc:`rivt markup <rvD01-markup>`.
 
