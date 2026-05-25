@@ -60,8 +60,8 @@ variety of formats including text, PDF or HTML.
 A second use case is as a front or back end for pre- and post-processing data
 from other software.
 
-A third use case is document collaboration when used with interfaces like VSCode,
-Codespaces, Firebase, Gitpod or replit.
+A third use case is document collaboration when used with interfaces like
+VSCode, Codespaces, Firebase, Gitpod or replit.
 
 1. Engineering documents for:
 
