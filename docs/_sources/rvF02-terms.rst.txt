@@ -128,7 +128,7 @@
   report folder
   report folders
     The folder structure for producing a report is described 
-    :doc:`here. <rvC02-folders>`
+    :ref:`here. <rivt-folders>`
 
   section parameter 
   section parameters 

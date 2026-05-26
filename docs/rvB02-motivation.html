@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
-    <title>C.1 Docs / Reports &#8212; rivt</title>
+    <title>A.2 Motivations &#8212; rivt</title>
   
   
   
@@ -56,11 +56,11 @@
     <script src="_static/togglebutton.js?v=1ae7504c"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'rvC01-documents';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'rvB02-motivation';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="[2] rivt-report.py" href="rvC02-reports.html" />
-    <link rel="prev" title="B.2 Framework" href="rvB03-framework.html" />
+    <link rel="next" title="B.2 Framework" href="rvB03-framework.html" />
+    <link rel="prev" title="B.1 Overview" href="rvB01-overview.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -152,15 +152,15 @@
 </li>
 
 
-<li class="nav-item ">
+<li class="nav-item current active">
   <a class="nav-link nav-internal" href="rvB01-overview.html">
     B.1 Overview
   </a>
 </li>
 
 
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="#">
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvC01-documents.html">
     C.1 Docs / Reports
   </a>
 </li>
@@ -266,15 +266,15 @@
 </li>
 
 
-<li class="nav-item ">
+<li class="nav-item current active">
   <a class="nav-link nav-internal" href="rvB01-overview.html">
     B.1 Overview
   </a>
 </li>
 
 
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="#">
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvC01-documents.html">
     C.1 Docs / Reports
   </a>
 </li>
@@ -326,11 +326,9 @@
         <div class="sidebar-primary-item">
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
-    <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="rvC02-reports.html"><strong>[2]</strong> rivt-report.py</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="rvC03-folders.html"><strong>C.2 Folders</strong></a></li>
-
+    <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>A.2 Motivations</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvB03-framework.html"><strong>B.2 Framework</strong></a></li>
 </ul>
 </div>
 </nav></div>
@@ -371,7 +369,10 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>C.1 Docs / Reports</strong></span></li>
+    
+    <li class="breadcrumb-item"><a href="rvB01-overview.html" class="nav-link"><strong>B.1 Overview</strong></a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>A.2 Motivations</strong></span></li>
   </ul>
 </nav>
 </div>
@@ -388,22 +389,155 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="c-1-docs-reports">
-<h1><strong>C.1 Docs / Reports</strong><a class="headerlink" href="#c-1-docs-reports" title="Link to this heading">#</a></h1>
-<section id="docs">
-<h2><strong>[1]</strong> Docs<a class="headerlink" href="#docs" title="Link to this heading">#</a></h2>
-<p>A <em>rivt doc</em> is the output of a <em>rivt file</em> processed by <em>rivtlib</em>. Each <em>rivt
-file</em> outputs a formatted <a class="reference internal" href="rvF02-terms.html#term-doc"><span class="xref std std-term">doc</span></a> with a <em>doc number</em> derived from the rivt
-file name. The <em>doc</em> is written to the respective subfolder of the <em>_published</em>
-folder.</p>
-<p>A <em>rivt report</em> is organized using <em>rivt doc numbers</em> (see <a class="reference internal" href="rvB01-overview.html#rivt-docs"><span class="std std-ref">Docs</span></a>).
-Report details are provided here.</p>
-<hr class="docutils" />
-</section>
-<section id="doc-settings">
-<span id="report-folders"></span><h2><strong>[1]</strong> Doc Settings<a class="headerlink" href="#doc-settings" title="Link to this heading">#</a></h2>
-<div class="toctree-wrapper compound">
+  <section id="a-2-motivations">
+<h1><strong>A.2 Motivations</strong><a class="headerlink" href="#a-2-motivations" title="Link to this heading">#</a></h1>
+<section id="background">
+<h2><strong>[1]</strong> Background<a class="headerlink" href="#background" title="Link to this heading">#</a></h2>
+<p><em>rivt</em> is an open source software project that simplifies sharing and reuse of
+engineering documents. This has always been a challenge because engineering
+documents are complex. They may include text, images, tables, calculations,
+models and computer code. The market response to engineering document software
+has been to develop incompatible, siloed programs with barrriers to
+sharing and reuse that include:</p>
+<ul class="simple">
+<li><p>incompatible documents across programs</p></li>
+<li><p>costly software updates that are backward incompatible</p></li>
+<li><p>software limited to specific platforms</p></li>
+<li><p>limited version control</p></li>
+<li><p>limited report generation</p></li>
+<li><p>limited collaboration</p></li>
+</ul>
+<p><em>rivt</em> is designed to address these barriers as both a compliment and
+replacement to existing software. The table below summarizes and compares
+limitations between different programs.</p>
+<p class="center"><strong>Software Comparison</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Program</p></th>
+<th class="head"><p>Report <a class="footnote-reference brackets" href="#id7" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p></th>
+<th class="head"><p>Ver <a class="footnote-reference brackets" href="#id8" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a></p></th>
+<th class="head"><p>Txt <a class="footnote-reference brackets" href="#id9" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a></p></th>
+<th class="head"><p>Comp <a class="footnote-reference brackets" href="#id10" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a></p></th>
+<th class="head"><p>CP <a class="footnote-reference brackets" href="#id11" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>5<span class="fn-bracket">]</span></a></p></th>
+<th class="head"><p>Collab <a class="footnote-reference brackets" href="#id12" id="id6" role="doc-noteref"><span class="fn-bracket">[</span>6<span class="fn-bracket">]</span></a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Matlab</p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+</tr>
+<tr class="row-odd"><td><p>Mathcad</p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+</tr>
+<tr class="row-even"><td><p>Mathematica</p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cloud SaaS</p></td>
+<td><p>limited</p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>yes</p></td>
+<td><p>limited</p></td>
+</tr>
+<tr class="row-even"><td><p>Excel</p></td>
+<td><p>limited</p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>yes</p></td>
+<td><p>no</p></td>
+<td><p>yes</p></td>
+</tr>
+<tr class="row-odd"><td><p>Jupyter</p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>yes</p></td>
+<td><p>yes</p></td>
+<td><p>yes</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>rivt</strong></p></td>
+<td><p><strong>yes</strong></p></td>
+<td><p><strong>yes</strong></p></td>
+<td><p><strong>yes</strong></p></td>
+<td><p><strong>yes</strong></p></td>
+<td><p><strong>yes</strong></p></td>
+<td><p><strong>yes</strong></p></td>
+</tr>
+</tbody>
+</table>
 </div>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets left" id="id7" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Report generation</p>
+</aside>
+<aside class="footnote brackets left" id="id8" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
+<p>Native version control</p>
+</aside>
+<aside class="footnote brackets left" id="id9" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">3</a><span class="fn-bracket">]</span></span>
+<p>Plain text, readable input files</p>
+</aside>
+<aside class="footnote brackets left" id="id10" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">4</a><span class="fn-bracket">]</span></span>
+<p>Forward and backward compatibility</p>
+</aside>
+<aside class="footnote brackets left" id="id11" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">5</a><span class="fn-bracket">]</span></span>
+<p>Cross-platform</p>
+</aside>
+<aside class="footnote brackets left" id="id12" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">6</a><span class="fn-bracket">]</span></span>
+<p>Collaboration support</p>
+</aside>
+</aside>
+</section>
+<hr class="docutils" />
+<section id="use-cases">
+<h2><strong>[2]</strong> Use Cases<a class="headerlink" href="#use-cases" title="Link to this heading">#</a></h2>
+<p>The primary use case for <em>rivt</em> is writing and sharing document source files,
+and publishing engineering documents in text, PDF or HTML formats. A second use
+case is as a front or back end for pre- and post-processing data from other
+software. A third use case is real-time collaboration using interfaces like
+VSCode, Codespaces, Firebase, Gitpod or replit.</p>
+<ol class="upperalpha simple">
+<li><p>Engineering documents for:</p></li>
+<li><p>internal communication</p></li>
+<li><p>research documentation</p></li>
+<li><p>government permits</p></li>
+<li><p>technical reports</p></li>
+<li><p>funding applications</p></li>
+<li><p>homework</p></li>
+</ol>
+<ol class="upperalpha simple" start="2">
+<li><p>Front and back ends for:</p></li>
+<li><p>software pre- and post-processing</p></li>
+<li><p>visualization</p></li>
+<li><p>instrumentation</p></li>
+</ol>
+<ol class="upperalpha simple" start="3">
+<li><p>Collaboration for:</p></li>
+<li><p>teaching</p></li>
+<li><p>presentations</p></li>
+<li><p>document preparation</p></li>
+</ol>
 </section>
 </section>
 
@@ -418,20 +552,20 @@ Report details are provided here.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rvB03-framework.html"
+       href="rvB01-overview.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>B.2 Framework</strong></p>
+        <p class="prev-next-title"><strong>B.1 Overview</strong></p>
       </div>
     </a>
     <a class="right-next"
-       href="rvC02-reports.html"
+       href="rvB03-framework.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>[2]</strong> rivt-report.py</p>
+        <p class="prev-next-title"><strong>B.2 Framework</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -454,8 +588,8 @@ Report details are provided here.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docs"><strong>[1]</strong> Docs</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#doc-settings"><strong>[1]</strong> Doc Settings</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background"><strong>[1]</strong> Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-cases"><strong>[2]</strong> Use Cases</a></li>
 </ul>
   </nav></div>
 

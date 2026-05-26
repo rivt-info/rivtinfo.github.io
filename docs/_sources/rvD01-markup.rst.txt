@@ -6,9 +6,7 @@
 **[1]** API functions
 --------------------------------------------------------------------- 
 
- 
-
-*rivt* has seven API functions. The name *rivt* is an acronym taken from the
+*rivt* has six API functions. The name *rivt* is an acronym taken from the
 four functions that process content. The remaining three functions are used for
 document generation and debugging.
 
@@ -35,37 +33,36 @@ document generation and debugging.
             padding: 2em;
             margin: 2em">
         <li><b>[D]oc</b> specifies the <i>doc</i> type and style.</li>
-        <li><b>[S]kip</b> can be used for interactive debugging and comments.</li>
-        <li><b>e[X]it</b> can be used for interactive debugging.</li>
+        <li><b>[S]kip, e[X]it</b> can be used for interactive debugging and comments.</li>
     </ol>
 
-=============== =============== ================================================
+================ =============== ================================================
 API Function         Name             Purpose
-=============== =============== ================================================
+================ =============== ================================================
 **rv.R** (rS)         Run            Run scripts and markup
 **rv.I** (rS)         Insert         Insert static sources 
 **rv.V** (rS)         Values         Calculate values
-**rv.T** (rS)         Tools          Execute shell scripts and external programs
+**rv.T** (rS)         Tools          Shell scripts and external programs
 **rv.D** (rS)         Doc            Publish docs 
-**rv.S** (rS)         Skip           Skip section (comments and debugging)
-**rv.X** (rS)         Exit           Exit rivt (debugging)
-=============== =============== ================================================
+**rv.S,X** (rS)    Skip, Exit        Skip section, exit (comments and debugging)
+================ =============== ================================================
 
-API functions define doc sections. If interactive IDEs like *VSCode* or
-*Spyder* are used to edit and run *rivt files*, functions can be processed
-individually as cells by using the standard notebook percent notation:
+API functions define doc sections. If interactive IDEs are used, API functions
+can be processed individually using the standard notebook cell percent
+notation:
 
 .. code-block:: python
 
     # %% optional label
     rv.API("""rivt string""")
 
+
+------------------------------------------------
+
 .. _rivt string:
 
 **[2]** rivt string
 ----------------------------------
-
- 
 
 Each :doc:`API function <rvA01-start>` takes a triple quoted :term:`rivt string` 
 argument composed of a :term:`header substring` line followed 
@@ -204,13 +201,13 @@ surrounding words with * or ** will format a word as italic or bold respectively
 In addition block tags in the *Tools function* (rv.T) directly supports
 processing HTML, LaTeX and reStructuredText scripts.
 
+-------------------------------------------------
 
 .. _markup:
 
 **[3]** Tags and Commands
 ----------------------------
 
- 
 
 :doc:`Line Tags <rvD02-linetags>`
 
@@ -237,7 +234,7 @@ processing HTML, LaTeX and reStructuredText scripts.
         | COMMAND | relative path | parameters
 
     File paths are specified relative to the *rivt root folder*. The *rivt
-    report* folder structure is described :doc:`here<rvC02-folders>`.
+    report* folder structure is described :ref:`here<rivt-folders>`.
 
     If the path is ommitted the default path for each command is applied. If
     the *singledoc* parameter is set, the *resource files* and *docs* are
@@ -266,11 +263,10 @@ using the following format:
     </pre> 
     </p>
 
+-----------------------------------------------
 
 **[4]** Folders
 ---------------------------
-
-
 
     <p style="border-width:2px; border-style:solid; 
     border-color:#49b2c3;padding: 1em;">
@@ -295,39 +291,38 @@ the folder structure is :ref:`here<report-folders>`.
 
 .. code-block:: bash
 
-    [rivt-]Report-Label/             Report Folder                
-        ├── [_public]/                  rivt-generated public files
-            ├── [src_]/                     source files
-            ├── README.txt                  rivt-generated public report   
-            ├── rv-101-filename1.py         public rivt file
-            ├── rv-102-filename2.py         public rivt file       
-            ├── rv-201-filename3.py         public rivt file          
-            ├── rv-202-filename4.py         public rivt file
+.. code-block:: bash
+
+      rivt-Report-Label/           Report Folder                
+        ├── .vscode/                  optional VSCode settings 
+        ├── rivt-public_/             rivt-generated public files
+            ├── rvsrc/                     source files
+            ├── README.txt                public text report or doc
+            ├── rv-101-filename1.py       public rivt file
+            ├── rv-102-filename2.py       public rivt file       
+            ├── rv-201-filename3.py       public rivt file          
             ...
-        └── [rivt-report]/              rivt files and docs               
-            ├── .vscode/                    optional VSCode settings   
-            ├── [_published]/               published docs and reports
-            ├── [_rstdocs]/                 restructured text files               
-            ├── [_stored]/                  stored files
-            ├── [src_]/                     source files
-            ├── [config-report.py]          report generating script
-            ├── README.txt                  rivt-generated report     
-            ├── [rv101-]filename1.py        rivt file
-            ├── [rv102-]filename2.py        rivt file       
-            ├── [rv201-]filename3.py        rivt file          
-            ├── [rv202-]filename4.py        rivt file
+        └── rivt-report/               rivt files and docs               
+            ├── _published/               published docs and reports
+            ├── _rstdocs/                 intermediate restructured text files               
+            ├── rv_stor/                  rivt generated stored files
+            ├── rvsrc/                    author source files
+            ├── rivt-report.py            report generating script
+            ├── rv101-filename1.py        rivt file
+            ├── rv102-filename2.py        rivt file       
+            ├── rv201-filename3.py        rivt file          
             ...    
+        └── README.txt                 text report or doc  
+
+------------------------------------
 
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :hidden:
 
     rvD02-linetags.rst
     rvD03-blocktags.rst
     rvD04-commands.rst    
-    rvD05-markup-r.rst
-    rvD06-markup-i.rst
-    rvD07-markup-v.rst
-    rvD08-markup-t.rst
-    rvD09-markup-d.rst
+    rvD05-apimarkup.rst
+    

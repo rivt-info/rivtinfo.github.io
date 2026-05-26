@@ -59,7 +59,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'rvA01-start';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="A.2 Motivations" href="rvA02-motivation.html" />
+    <link rel="next" title="A.2 Example" href="rvA02-docex1.html" />
     <link rel="prev" title="&lt;no title&gt;" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -161,7 +161,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvC01-documents.html">
-    C.1 Docs
+    C.1 Docs / Reports
   </a>
 </li>
 
@@ -275,7 +275,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvC01-documents.html">
-    C.1 Docs
+    C.1 Docs / Reports
   </a>
 </li>
 
@@ -327,9 +327,8 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="rvA02-motivation.html"><strong>A.2 Motivations</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvA03-docex1.html"><strong>A.3 Example</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvA04-faq.html"><strong>A.4 FAQ</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvA02-docex1.html"><strong>A.2 Example</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvA03-faq.html"><strong>A.3 FAQ</strong></a></li>
 </ul>
 </div>
 </nav></div>
@@ -403,34 +402,33 @@ and run in a browser using
 <a class="reference external" href="https://github.com/features/codespaces" rel="noreferrer" target="_blank">Codespaces</a>.
 Further details are <a class="reference internal" href="#code-rivt"><span class="std std-ref">here</span></a>.</p>
 <p>For users familiar with Python, <em>rivt</em> may be installed at the OS level or in
-an isolated environment using <em>uv</em>. Further details <a class="reference internal" href="#rivt-sys"><span class="std std-ref">here</span></a>.</p>
+an isolated environment using <em>uv</em>. Further details are <a class="reference internal" href="#rivt-sys"><span class="std std-ref">here</span></a>.</p>
 </section>
-<section id="typical-ide-layout">
-<h2><strong>[2]</strong> Typical IDE layout<a class="headerlink" href="#typical-ide-layout" title="Link to this heading">#</a></h2>
-<p><em>rivt</em> can be run from the command line but efficient editing and running of
-<em>rivt files</em> is typically done in an <a class="reference internal" href="rvF02-terms.html#term-IDE"><span class="xref std std-term">IDE</span></a>. A typical <strong>VSCode IDE</strong>
-layout is shown below.</p>
-<figure class="align-center" id="id2">
+<section id="rivt-ide">
+<h2><strong>[2]</strong> rivt IDE<a class="headerlink" href="#rivt-ide" title="Link to this heading">#</a></h2>
+<p><em>rivt</em> can be run from the command line but efficient editing and designing
+with <em>rivt files</em> is typically done in an <a class="reference internal" href="rvF02-terms.html#term-IDE"><span class="xref std std-term">IDE</span></a>. Any IDE can be used but
+<em>VSCode</em> is documented. A typical <strong>VSCode IDE</strong> layout is shown below.</p>
+<figure class="align-center" id="id1">
 <a class="dark-light reference internal image-reference" href="_images/ide2.png"><img alt="ide layout" class="dark-light" src="_images/ide2.png" style="width: 70%;" />
 </a>
 <figcaption>
-<p><span class="caption-text">rivt IDE layout in VSCode (click on image to enlarge)</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+<p><span class="caption-text">rivt layout in VSCode (click on image to enlarge)</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>The <em>rivt file</em> is the left editing panel, the <em>text doc</em> output is in the right
-terminal panel and the file explorer is the far left panel. Text, PDF and HTML
-output files are accessed in file explorer and displayed within the IDE. When
-developing docs, individual sections can be run and output to the terminal
+<p>The <em>rivt file</em> is in the left editing panel, the <em>text doc</em> output is in the
+right terminal panel and the file explorer is the far left panel. Text, PDF and
+HTML output files are accessed in file explorer and displayed within the IDE.
+When developing docs, individual sections can be run and output to the terminal
 during doc development.</p>
-<p>Additional example <em>rivt files</em> and <em>docs</em> are here.</p>
+<p>Additional example <em>rivt files</em> and <em>docs</em> are <a class="reference internal" href="rvA02-docex1.html#rivt-examples"><span class="std std-ref">here</span></a>.</p>
 <hr class="docutils" />
 </section>
 <section id="portable-rivt">
 <span id="rivt-portable"></span><h2><strong>[3]</strong> Portable rivt<a class="headerlink" href="#portable-rivt" title="Link to this heading">#</a></h2>
 <p>A <em>rivt-portable</em> installation is recommended for Windows users unfamiliar with
-Python. The zip file includes the <a class="reference internal" href="rvB02-framework.html#rivt-framework"><span class="std std-ref">basic rivt framework</span></a>.
-Releases are updated monthly and may be downloaded from the
-<a class="reference external" href="https://github.com/rivtlib-dev/rivt-portable/releases/" rel="noreferrer" target="_blank">GitHub repository</a>.</p>
+Python. <em>rivt-portable</em> is a zip file that includes the
+<a class="reference internal" href="rvB03-framework.html#rivt-framework"><span class="std std-ref">basic rivt framework</span></a>.</p>
 <blockquote>
 <div><p>The zip file naming convention is:</p>
 </div></blockquote>
@@ -441,16 +439,17 @@ Releases are updated monthly and may be downloaded from the
 <em>an</em> appended to the version is an <em>alpha</em> release where users should expect
 missing and incomplete features. The zip file contents must be unzipped into a
 directory with read-write access - typically the users home folder or a flash
-drive. After unzipping, VSCode and examples are started with a single shortcut.</p>
-<p>The primary advantages of <em>rivt-portable</em> are:</p>
+drive. After unzipping, VSCode and examples are started by clicking on the
+<em>start-rivt.cmd</em> file.</p>
+<p>The primary features of <em>rivt-portable</em> are:</p>
 <ol class="arabic simple">
-<li><p>simplified installation</p></li>
-<li><p>package integration</p></li>
-<li><p>isolation from system files.</p></li>
+<li><p>simplified, isolated installation</p></li>
+<li><p>package and framework integration</p></li>
+<li><p>installation needs to be updated as a whole, not as individual components.</p></li>
+<li><p>integration with other programs may be more difficult.</p></li>
 </ol>
-<p>The primary disadvantages are:</p>
-<p>#. the installation needs to be updated as a whole, not as individual components.
-3. integration with other programs may be more difficult.</p>
+<p>Releases are updated monthly and may be downloaded from the
+<a class="reference external" href="https://github.com/rivtlib-dev/rivt-portable/releases/" rel="noreferrer" target="_blank">GitHub repository</a>.</p>
 <hr class="docutils" />
 </section>
 <section id="codespace-rivt">
@@ -486,24 +485,25 @@ includes the rivt packages, extensions and examples.</p>
 <hr class="docutils" />
 </section>
 <section id="system-rivt">
-<span id="rivt-sys"></span><h2><strong>[4]</strong> System-rivt<a class="headerlink" href="#system-rivt" title="Link to this heading">#</a></h2>
-<p><em>rivt</em> may be installed at the Operating System level.</p>
-<ol class="arabic simple">
-<li><p>First install Python using <a class="reference external" href="https://www.python.org/downloads/" rel="noreferrer" target="_blank">Python installers</a>
-The minimum version required by <em>rivt</em> is
-Python 3.14.</p></li>
-<li><p>Install <em>rivtlib</em> and dependencies using pip</p></li>
-</ol>
+<span id="rivt-sys"></span><h2><strong>[4]</strong> System rivt<a class="headerlink" href="#system-rivt" title="Link to this heading">#</a></h2>
+<p><em>rivt</em> may be installed into a system level Python.</p>
+<aside class="topic">
+<p class="topic-title">Step 1. Install Python</p>
+<p>Install Python using <a class="reference external" href="https://www.python.org/downloads/" rel="noreferrer" target="_blank">Python installers</a>
+if not already installed. The minimum required version is Python 3.14.</p>
+</aside>
+<aside class="topic">
+<p class="topic-title">Step 2. install rivtlib and dependencies</p>
+<p>Install <em>rivtlib</em> and dependencies using pip</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>rivtlib
 </pre></div>
 </div>
-<p>A list of the dependencies is <a class="reference internal" href="rvF01-quickref.html#project-requirements"><span class="std std-ref">here</span></a>.</p>
-<section id="rivt-uv">
-<span id="id1"></span><h3>rivt-uv<a class="headerlink" href="#rivt-uv" title="Link to this heading">#</a></h3>
-<p>Finally, rather than installing <em>rivtlib</em> at the system level, it can be installed in an
-isolated environment using the <a class="reference external" href="https://docs.astral.sh/uv/" rel="noreferrer" target="_blank">uv package manager</a>.
-The primary advantage of <em>uv</em> is the simplicity of insalling and updating packages
-while keeping them isolated from the system Python.</p>
+</aside>
+<p>A list of the installed dependencies is <a class="reference internal" href="rvF01-quickref.html#project-requirements"><span class="std std-ref">here</span></a>.</p>
+<p><em>rivt</em> may also be installed and isolated environment using the <a class="reference external" href="https://docs.astral.sh/uv/" rel="noreferrer" target="_blank">uv package
+manager</a>. The primary advantage of <em>uv</em> is the
+simplicity of insalling and updating packages while keeping them isolated from
+the system Python.</p>
 <p><em>rivt-uv</em> installation is recommended for users with some familiarity with
 Python and programming.</p>
 <aside class="topic">
@@ -563,7 +563,6 @@ uv<span class="w"> </span>cache<span class="w"> </span>clean
 </div>
 </section>
 </section>
-</section>
 
 
                 </article>
@@ -585,11 +584,11 @@ uv<span class="w"> </span>cache<span class="w"> </span>clean
       </div>
     </a>
     <a class="right-next"
-       href="rvA02-motivation.html"
+       href="rvA02-docex1.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>A.2 Motivations</strong></p>
+        <p class="prev-next-title"><strong>A.2 Example</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -613,13 +612,10 @@ uv<span class="w"> </span>cache<span class="w"> </span>clean
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-started"><strong>[1]</strong> Getting Started</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#typical-ide-layout"><strong>[2]</strong> Typical IDE layout</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-ide"><strong>[2]</strong> rivt IDE</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#portable-rivt"><strong>[3]</strong> Portable rivt</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#codespace-rivt"><strong>[4]</strong> Codespace rivt</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#system-rivt"><strong>[4]</strong> System-rivt</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-uv">rivt-uv</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#system-rivt"><strong>[4]</strong> System rivt</a></li>
 </ul>
   </nav></div>
 

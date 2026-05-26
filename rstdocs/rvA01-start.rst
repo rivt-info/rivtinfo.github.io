@@ -19,14 +19,14 @@ and run in a browser using
 Further details are :ref:`here <Code-rivt>`.
 
 For users familiar with Python, *rivt* may be installed at the OS level or in
-an isolated environment using *uv*. Further details :ref:`here <rivt-sys>`.
+an isolated environment using *uv*. Further details are :ref:`here <rivt-sys>`.
 
-**[2]** Typical IDE layout 
+**[2]** rivt IDE
 ------------------------------------------------------------------------------- 
 
-*rivt* can be run from the command line but efficient editing and running of
-*rivt files* is typically done in an :term:`IDE`. A typical **VSCode IDE**
-layout is shown below.
+*rivt* can be run from the command line but efficient editing and designing
+with *rivt files* is typically done in an :term:`IDE`. Any IDE can be used but 
+*VSCode* is documented. A typical **VSCode IDE** layout is shown below.
 
 
 
@@ -36,15 +36,15 @@ layout is shown below.
     :align: center
     :alt: ide layout
 
-    rivt IDE layout in VSCode (click on image to enlarge)
+    rivt layout in VSCode (click on image to enlarge)
 
-The *rivt file* is the left editing panel, the *text doc* output is in the right
-terminal panel and the file explorer is the far left panel. Text, PDF and HTML
-output files are accessed in file explorer and displayed within the IDE. When
-developing docs, individual sections can be run and output to the terminal
-during doc development.  
+The *rivt file* is in the left editing panel, the *text doc* output is in the
+right terminal panel and the file explorer is the far left panel. Text, PDF and
+HTML output files are accessed in file explorer and displayed within the IDE.
+When developing docs, individual sections can be run and output to the terminal
+during doc development.
 
-Additional example *rivt files* and *docs* are here. 
+Additional example *rivt files* and *docs* are :ref:`here <rivt-examples>`.
 
 -------------------------------
 
@@ -54,9 +54,8 @@ Additional example *rivt files* and *docs* are here.
 -------------------------------------------------------------------------------- 
 
 A *rivt-portable* installation is recommended for Windows users unfamiliar with
-Python. The zip file includes the :ref:`basic rivt framework<rivt framework>`. 
-Releases are updated monthly and may be downloaded from the 
-`GitHub repository <https://github.com/rivtlib-dev/rivt-portable/releases/>`__. 
+Python. *rivt-portable* is a zip file that includes the 
+:ref:`basic rivt framework <rivt framework>`. 
 
  The zip file naming convention is:
 
@@ -68,19 +67,18 @@ where n is a number representing the major, minor and patch release number. An
 *an* appended to the version is an *alpha* release where users should expect
 missing and incomplete features. The zip file contents must be unzipped into a
 directory with read-write access - typically the users home folder or a flash
-drive. After unzipping, VSCode and examples are started with a single shortcut.
+drive. After unzipping, VSCode and examples are started by clicking on the
+*start-rivt.cmd* file.
 
-The primary advantages of *rivt-portable* are: 
+The primary features of *rivt-portable* are: 
 
-#. simplified installation
-#. package integration
-#. isolation from system files. 
-   
-The primary disadvantages are:
+#. simplified, isolated installation
+#. package and framework integration
+#. installation needs to be updated as a whole, not as individual components. 
+#. integration with other programs may be more difficult. 
 
-#. the installation needs to be updated as a whole, not as individual components. 
-3. integration with other programs may be more difficult. 
-
+Releases are updated monthly and may be downloaded from the 
+`GitHub repository <https://github.com/rivtlib-dev/rivt-portable/releases/>`__. 
 
 -------------------------------
 
@@ -125,33 +123,30 @@ by following the steps below.  Example rivt files are included.
 
 .. _rivt-sys:
 
-**[4]** System-rivt
+**[4]** System rivt
 --------------------------------------------------------------------------------
 
-*rivt* may be installed at the Operating System level. 
+*rivt* may be installed into a system level Python. 
 
-#.  First install Python using `Python installers <https://www.python.org/downloads/>`__
-    The minimum version required by *rivt* is 
-    Python 3.14.
+.. topic:: Step 1. Install Python
 
-#.  Install *rivtlib* and dependencies using pip
+    Install Python using `Python installers <https://www.python.org/downloads/>`__
+    if not already installed. The minimum required version is Python 3.14.
 
-.. code-block:: bash
+.. topic:: Step 2. install rivtlib and dependencies
 
-    pip install rivtlib
+    Install *rivtlib* and dependencies using pip
+
+    .. code-block:: bash
+
+        pip install rivtlib
     
-A list of the dependencies is :ref:`here <Project requirements>`.
+A list of the installed dependencies is :ref:`here <Project requirements>`.
 
-
-.. _rivt-uv:
-
-rivt-uv
-~~~~~~~~
-
-Finally, rather than installing *rivtlib* at the system level, it can be installed in an
-isolated environment using the `uv package manager <https://docs.astral.sh/uv/>`__. 
-The primary advantage of *uv* is the simplicity of insalling and updating packages 
-while keeping them isolated from the system Python.
+*rivt* may also be installed and isolated environment using the `uv package
+manager <https://docs.astral.sh/uv/>`__. The primary advantage of *uv* is the
+simplicity of insalling and updating packages while keeping them isolated from
+the system Python. 
 
 *rivt-uv* installation is recommended for users with some familiarity with
 Python and programming.
@@ -231,7 +226,6 @@ Python and programming.
     :maxdepth: 1
     :hidden:
 
-    rvA02-motivation.rst
-    rvA03-docex1.rst
-    rvA04-faq.rst
+    rvA02-docex1.rst
+    rvA03-faq.rst
 

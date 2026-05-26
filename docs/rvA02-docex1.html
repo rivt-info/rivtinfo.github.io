@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
-    <title>C.1 Docs / Reports &#8212; rivt</title>
+    <title>A.2 Example &#8212; rivt</title>
   
   
   
@@ -56,11 +56,11 @@
     <script src="_static/togglebutton.js?v=1ae7504c"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'rvC01-documents';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'rvA02-docex1';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="[2] rivt-report.py" href="rvC02-reports.html" />
-    <link rel="prev" title="B.2 Framework" href="rvB03-framework.html" />
+    <link rel="next" title="A.3 FAQ" href="rvA03-faq.html" />
+    <link rel="prev" title="A.1 Start" href="rvA01-start.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -145,7 +145,7 @@
 <nav>
   <ul class="bd-navbar-elements navbar-nav">
     
-<li class="nav-item ">
+<li class="nav-item current active">
   <a class="nav-link nav-internal" href="rvA01-start.html">
     A.1 Start
   </a>
@@ -159,8 +159,8 @@
 </li>
 
 
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="#">
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvC01-documents.html">
     C.1 Docs / Reports
   </a>
 </li>
@@ -259,7 +259,7 @@
 <nav>
   <ul class="bd-navbar-elements navbar-nav">
     
-<li class="nav-item ">
+<li class="nav-item current active">
   <a class="nav-link nav-internal" href="rvA01-start.html">
     A.1 Start
   </a>
@@ -273,8 +273,8 @@
 </li>
 
 
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="#">
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvC01-documents.html">
     C.1 Docs / Reports
   </a>
 </li>
@@ -326,11 +326,9 @@
         <div class="sidebar-primary-item">
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
-    <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="rvC02-reports.html"><strong>[2]</strong> rivt-report.py</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="rvC03-folders.html"><strong>C.2 Folders</strong></a></li>
-
+    <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>A.2 Example</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvA03-faq.html"><strong>A.3 FAQ</strong></a></li>
 </ul>
 </div>
 </nav></div>
@@ -371,7 +369,10 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>C.1 Docs / Reports</strong></span></li>
+    
+    <li class="breadcrumb-item"><a href="rvA01-start.html" class="nav-link"><strong>A.1 Start</strong></a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>A.2 Example</strong></span></li>
   </ul>
 </nav>
 </div>
@@ -388,22 +389,131 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="c-1-docs-reports">
-<h1><strong>C.1 Docs / Reports</strong><a class="headerlink" href="#c-1-docs-reports" title="Link to this heading">#</a></h1>
-<section id="docs">
-<h2><strong>[1]</strong> Docs<a class="headerlink" href="#docs" title="Link to this heading">#</a></h2>
-<p>A <em>rivt doc</em> is the output of a <em>rivt file</em> processed by <em>rivtlib</em>. Each <em>rivt
-file</em> outputs a formatted <a class="reference internal" href="rvF02-terms.html#term-doc"><span class="xref std std-term">doc</span></a> with a <em>doc number</em> derived from the rivt
-file name. The <em>doc</em> is written to the respective subfolder of the <em>_published</em>
-folder.</p>
-<p>A <em>rivt report</em> is organized using <em>rivt doc numbers</em> (see <a class="reference internal" href="rvB01-overview.html#rivt-docs"><span class="std std-ref">Docs</span></a>).
-Report details are provided here.</p>
-<hr class="docutils" />
+  <section id="a-2-example">
+<h1><strong>A.2 Example</strong><a class="headerlink" href="#a-2-example" title="Link to this heading">#</a></h1>
+<section id="example-files">
+<span id="rivt-examples"></span><h2><strong>[1]</strong> Example Files<a class="headerlink" href="#example-files" title="Link to this heading">#</a></h2>
+<p>The example files illustrate the common API functions and rivt markup syntax.
+<em>rivt files</em> may be published as single documents or compiled into reports.
+Reports are assembled through a customized report script (<em>rivt-report.py</em>).
+Examples 1 and 2 are single docs. Example 3 is a small report. They are available</p>
 </section>
-<section id="doc-settings">
-<span id="report-folders"></span><h2><strong>[1]</strong> Doc Settings<a class="headerlink" href="#doc-settings" title="Link to this heading">#</a></h2>
-<div class="toctree-wrapper compound">
+<hr class="docutils" />
+<section id="example-1">
+<h2><strong>[2]</strong> Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h2>
+<p>This is a single rivt file that publishes a single doc. It illustrates
+the common API functions and rivt markup syntax.</p>
+<section id="rivt-file-ex-1">
+<h3><strong>[2-1]</strong> rivt file - Ex. 1<a class="headerlink" href="#rivt-file-ex-1" title="Link to this heading">#</a></h3>
+<p>This is the <em>rivt file</em> for Example 1.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#! python</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
+
+<span class="c1"># rv singledoc: True</span>
+
+<span class="c1"># %% loads</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Load Combinations</span>
+
+<span class="s2">    ASCE 7-05 Load Effects _[T]</span>
+<span class="s2">    ============= ================================================</span>
+<span class="s2">    Equation No.    Load Combination</span>
+<span class="s2">    ============= ================================================</span>
+<span class="s2">    16-1           1.4(D+F)</span>
+<span class="s2">    16-2           1.2(D+F+T) + 1.6(L+H) + 0.5(Lr or S or R)</span>
+<span class="s2">    16-3           1.2(D+F+T) + 1.6(Lr or S or R) + (f1L or 0.8W)</span>
+<span class="s2">    ============= ================================================</span>
+
+<span class="s2">    | IMAGE | beam.png | Beam Geometry, .65, num</span>
+
+<span class="s2">    Bending Stress Formula _[E]</span>
+<span class="s2">    σ1 = M1 / S1 _[M]</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+<span class="c1"># %% values</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Loads and Geometry</span>
+
+<span class="s2">    Beam Loads _[T]</span>
+<span class="s2">    D_1 =: 3.8*psf | psf, kPA, 2 | joists DL</span>
+<span class="s2">    D_2 =: 2.1*psf | psf, kPA, 2 | plywood DL</span>
+<span class="s2">    D_3 =: 10.0*psf | psf, kPA, 2 | partitions DL</span>
+<span class="s2">    D_4 =: 2*0.5*klf |klf, kN_m , 2 | fixed machinery  DL</span>
+<span class="s2">    L_1 =: 40*psf | psf, kPA, 2 | ASCE7-O5 LL</span>
+
+<span class="s2">    | VALTABLE | beam1-v.csv | Beam Geometry, 0:0, num</span>
+
+<span class="s2">    Uniform Distributed Loads</span>
+<span class="s2">    dl_1 &lt;=: 1.2 * (W_1 * (D_1 + D_2 + D_3) + D_4) | klf, kN_m, 2 | dead load : ASCE7-05 2.3.2  _[E]</span>
+
+<span class="s2">    ll_1 &lt;=: 1.6 * W_1 * L_1 | klf, kN_m, 2 | live load : ASCE7-05 2.3.2 _[E]</span>
+
+<span class="s2">    omega_1 &lt;=: dl_1 + ll_1 | klf, kN_m, 2 | total load : ASCE7-05 2.3.2 _[E]</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+<span class="c1"># %% section properties</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Beam Section Properties</span>
+
+<span class="s2">    | PYTHON | sectprop.py | nodocstring</span>
+
+<span class="s2">    section_1 &lt;=: rectsect(10*inch, 18*inch) | in3, cm3, 2 | function: rect sect modulus _[E]</span>
+
+<span class="s2">    inertia_1 &lt;=: rectinertia(10*inch, 18*inch) | in4, cm4, 1 | function: rect moment inertia _[E]</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+<span class="c1"># %% force</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Force and Stress</span>
+
+<span class="s2">        m_1 &lt;=: omega_1 * S_1**2 / 8 | ftkips, mkN, 2 | mid-span UDL moment _[E]</span>
+
+<span class="s2">        fb_1 &lt;=: m_1 / section_1 | psi, MPA, 1 | bending stress _[E]</span>
+
+<span class="s2">        fb_1 &lt; 10*ksi | ok, not ok, blue, red, right _[E]</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+<span class="c1"># %% tool</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">T</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Metadata</span>
+
+<span class="s2">    _[[PYTHON]]</span>
+<span class="s2">    rv_metaD = {</span>
+<span class="s2">    &quot;authors&quot;: &quot;rholland&quot;,</span>
+<span class="s2">    &quot;version&quot;: &quot;0.7.2&quot;,</span>
+<span class="s2">    &quot;email&quot;: &quot;rod.h.holland@gmail.com&quot;,</span>
+<span class="s2">    &quot;repo&quot;: &quot;https://github.com/rivt-info/rivt-single-doc&quot;,</span>
+<span class="s2">    &quot;license&quot;: &quot;https://opensource.org/license/mit/&quot;,</span>
+<span class="s2">    &quot;fork1&quot;: [&quot;author&quot;, &quot;version&quot;, &quot;email&quot;, &quot;repo&quot;],</span>
+<span class="s2">    &quot;fork2&quot;: [],</span>
+<span class="s2">    }</span>
+<span class="s2">    _[[END]]</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+<span class="c1"># %% doc</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">D</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Publish Doc</span>
+
+<span class="s2">    _[[LAYOUT]]</span>
+<span class="s2">        logopathP: logo.png</span>
+<span class="s2">        pdfheaderL: [docnameS, pageS, totalpageS]</span>
+<span class="s2">        footerL: [logoO, dateO, timeO, filenameS, versionS]</span>
+<span class="s2">    _[[END]]</span>
+
+<span class="s2">    | PUBLISH | rivt | rst2pdf</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
 </div>
+</section>
+<hr class="docutils" />
+<section id="example-1-text-doc">
+<h3><strong>2-2</strong> Example 1 - text doc<a class="headerlink" href="#example-1-text-doc" title="Link to this heading">#</a></h3>
+<p>This is the output for Example 1.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>this is a code block
+</pre></div>
+</div>
+</section>
+</section>
+<section id="example-2">
+<h2><strong>[3]</strong> Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>This is a report. It illustrates use of the rivt-report.py script.</p>
+</div></blockquote>
 </section>
 </section>
 
@@ -418,20 +528,20 @@ Report details are provided here.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rvB03-framework.html"
+       href="rvA01-start.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>B.2 Framework</strong></p>
+        <p class="prev-next-title"><strong>A.1 Start</strong></p>
       </div>
     </a>
     <a class="right-next"
-       href="rvC02-reports.html"
+       href="rvA03-faq.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>[2]</strong> rivt-report.py</p>
+        <p class="prev-next-title"><strong>A.3 FAQ</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -454,8 +564,13 @@ Report details are provided here.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docs"><strong>[1]</strong> Docs</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#doc-settings"><strong>[1]</strong> Doc Settings</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-files"><strong>[1]</strong> Example Files</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1"><strong>[2]</strong> Example 1</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-file-ex-1"><strong>[2-1]</strong> rivt file - Ex. 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1-text-doc"><strong>2-2</strong> Example 1 - text doc</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2"><strong>[3]</strong> Example 2</a></li>
 </ul>
   </nav></div>
 
