@@ -35,19 +35,18 @@ are in the default path only the file name needs to be provided.
 ================ ========================= ======
    Command         Default Path             R/W
 ================ ========================= ======
-\| SHELL |          **/_src/**               R
-\| TABLE |          **/_src/**               R
-\| IMAGE |          **/_src/**               R
-\| IMAGE2 |         **/_src/**               R
-\| VALTABLE |       **/_src/**  [1]          R
-\| PYTHON |         **/_src/**               R
-\| MARKUP |         **/_src/**               R
-\| ATTACHPDF |      **/_src/**               W
-\| PUBLISH |        **/published_/** [2]     W
+\| SHELL |          **/rvsrc/**               R
+\| IMAGE |          **/rvsrc/**               R
+\| IMAGE2 |         **/rvsrc/**               R
+\| VALTABLE |       **/rvsrc/**  [1]          R
+\| PYTHON |         **/rvsrc/**               R
+\| MARKUP |         **/rvsrc/**               R
+\| ATTACHPDF |      **/rvsrc/**               W
+\| PUBLISH |        **/_published/** [2]      W
 ================ ========================= ======
 
-[1] use */_stored/vals/* to read values defined in the rivt file
-[2] files are written to the type subdirectory 
+[1] use */rv_stor/* to read values written by rivt
+[2] files are written to the respective type subdirectory 
 
 .. _Shell file:
 

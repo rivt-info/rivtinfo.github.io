@@ -10,16 +10,16 @@
 API Scope             Line Tag                                      Description 
 ========== ==================================================== ================================
 rv.I                   text **_[#]** text                         :ref:`Endnote number`  
-rv.I                   text **_[D] label, filename]** text        :ref:`Download link`
-rv.I                   text **_[G] glossary term]** text          :ref:`Term link`
-rv.I                   text **_[S] label, section]** text         :ref:`Section link`
-rv.I                   text **_[U] label, url]** text             :ref:`URL link`   
+rv.I                   text **_[D] label, filename |** text       :ref:`Download link`
+rv.I                   text **_[G] glossary term |** text         :ref:`Term link`
+rv.I                   text **_[S] label, section |** text        :ref:`Section link`
+rv.I                   text **_[U] label, url |** text            :ref:`URL link`   
 rv.I                  **title _[T]**                              :ref:`Number table`
 rv.I,V              **caption _[F]**                              :ref:`Number figure`
 rv.I,V                 text **_[C]**                              :ref:`Bold center text` 
 rv.I,V            **text math _[M]** description                  :ref:`Text math` 
 rv.I,V           **LaTeX math _[L]** description                  :ref:`LaTeX math` 
-rv.I,V                 text **_[V] var_name]** text               :ref:`Variable value`
+rv.I,V                 text **_[V] var_name |** text              :ref:`Variable value`
 all                     **##** text                               nonprinting comment
 ========== ==================================================== ================================
 
