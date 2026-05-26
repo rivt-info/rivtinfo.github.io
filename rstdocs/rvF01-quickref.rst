@@ -7,21 +7,18 @@
 **[1]** API
 --------------------------------------------------------------------- 
 
- 
-
 **API functions**
 
-=============== =============== ===========================================
-Function           Name             Purpose
-=============== =============== ===========================================
-**rv.R** (rS)         Run            Run scripts and markup
-**rv.I** (rS)         Insert         Insert static sources 
-**rv.V** (rS)         Values         Calculate values
-**rv.T** (rS)         Tools          Execute shell commands and programs
-**rv.D** (rS)         Doc            Publish docs 
-**rv.S** (rS)         Skip           Skip section (comments and debugging)
-**rv.X** (rS)         Exit           Exit rivt (debugging)
-=============== =============== ===========================================
+================= =============== ================================================
+API Function         Name             Purpose
+================= =============== ================================================
+**rv.R** (rS)         Run          Run scripts and markup
+**rv.I** (rS)         Insert       Insert static sources 
+**rv.V** (rS)         Values       Calculate values
+**rv.T** (rS)         Tools        Execute shell scripts and external programs
+**rv.D** (rS)         Doc          Publish docs 
+**rv.S;X** (rS)       Skip         Skip section or exit (comments and debugging)
+================= =============== ================================================
 
 where **rS** is a *rivt string*. The first line of a *rivt string* (rS)
 is the :term:`header substring`.
@@ -64,6 +61,8 @@ rv.D        **public**             **stored**            **merge**
 rv.X         -                      -                    -
 ========== ===================== ===================== =====================
 
+----------------------------------
+
 .. _Line Tags:
 
 **[2]** Line Tags
@@ -76,18 +75,20 @@ rv.X         -                      -                    -
 API Scope             Line Tag                                      Description 
 ========== ==================================================== ================================
 rv.I                   text **_[#]** text                         :ref:`Endnote number`  
-rv.I                   text **_[D] label, filename]** text        :ref:`Download link`
-rv.I                   text **_[G] glossary term]** text          :ref:`Term link`
-rv.I                   text **_[S] label, section]** text         :ref:`Section link`
-rv.I                   text **_[U] label, url]** text             :ref:`URL link`   
+rv.I                   text **_[D] label, filename |** text       :ref:`Download link`
+rv.I                   text **_[G] glossary term |** text         :ref:`Term link`
+rv.I                   text **_[S] label, section |** text        :ref:`Section link`
+rv.I                   text **_[U] label, url |** text            :ref:`URL link`   
 rv.I                  **title _[T]**                              :ref:`Number table`
 rv.I,V              **caption _[F]**                              :ref:`Number figure`
 rv.I,V                 text **_[C]**                              :ref:`Bold center text` 
 rv.I,V            **text math _[M]** description                  :ref:`Text math` 
 rv.I,V           **LaTeX math _[L]** description                  :ref:`LaTeX math` 
-rv.I,V                 text **_[V] var_name]** text               :ref:`Variable value`
+rv.I,V                 text **_[V] var_name |** text              :ref:`Variable value`
 all                     **##** text                               nonprinting comment
 ========== ==================================================== ================================
+
+----------------------------------
 
 .. _Block Tags:
 
@@ -95,19 +96,20 @@ all                     **##** text                               nonprinting co
 -------------------------------------
 
 **Format or run blocks of text or code**
-
 ========== ========================================= ===============================
 API Scope         Block Tag                                Description 
 ========== ========================================= ===============================
-rv.R        **_[[MARKUP]]** type                      :ref:`Markup file`
-rv.R        **_[[PYTHON]]** namespace                 :ref:`Python block`
+rv.R        **_[[MARKUP]]** type                      :ref:`Markup block`
+rv.R        **_[[PYTHON]]** label                     :ref:`Python block`
 rv.I        **_[[BOX]]** label                        :ref:`Box block`
 rv.I        **_[[TOPIC]]** topic                      :ref:`Topic block`
-rv.I        **_[[TABLE]]** label                      :ref:`Table block`
-rv.T        **_[[SHELL]]** os, wait;nowait            :ref:`Shell script`
+rv.V        **_[[TABLE]]** label                      :ref:`Table block`
+rv.T        **_[[SHELL]]** os, *wait;nowait*          :ref:`Shell script`
 rv.D        **_[[METADATA]]** label                   :ref:`Meta block` 
 all         **_[[END]]**                              :ref:`End block`
 ========== ========================================= ===============================
+
+----------------------------------
 
 .. _Commmands:
 
@@ -137,24 +139,23 @@ rv.D        | **PUBLISH** | doc title | type                                :ref
 
 **Relative file paths for commands**
 
-See :ref:`here <report-folders>` for the full folder structure. File paths are
-relative to the *rivt-report* folder. Use *_stored/filename* to read values
-or files defined and written by the *rivt file*.
+================ ========================= ======
+   Command         Default Path             R/W
+================ ========================= ======
+\| SHELL |          **/rvsrc/**               R
+\| IMAGE |          **/rvsrc/**               R
+\| IMAGE2 |         **/rvsrc/**               R
+\| VALTABLE |       **/rvsrc/**  [1]          R
+\| PYTHON |         **/rvsrc/**               R
+\| MARKUP |         **/rvsrc/**               R
+\| ATTACHPDF |      **/rvsrc/**               W
+\| PUBLISH |        **/_published/** [2]      W
+================ ========================= ======
 
-================ ==========================
-   Command          Standard Path
-================ ==========================
-\| ATTACHPDF |      **src/filename**   
-\| IMAGE |          **src/filename**
-\| IMAGE2 |         **src/filename**
-\| MARKUP |         **src/filename**
-\| PYTHON |         **src/filename**
-\| SHELL |          **src/filename**  
-\| TABLE |          **src/filename**
-\| VALTABLE |       **src/filename**  
-\| PUBLISH |      docs written to _publish
-================ ==========================
+[1] use */rv_stor/* to read values written by rivt
+[2] files are written to the respective type subdirectory 
 
+----------------------------------
 
 .. _Folders:
 
@@ -163,79 +164,37 @@ or files defined and written by the *rivt file*.
 
 .. code-block:: bash
 
-    [rivt-]Report-Label/             rivt Folder                
+    [rivt-]Report-Label/             rivt Folder              
         ├── .vscode/                      optional VSCode settings   
-        ├── README.txt                    rivt-generated report                  
+        ├── README.txt                    rivt-generated text report                  
         ├── [_rivt-public]/               rivt-generated public files
-            ├── src/                          source files            
+            ├── rvsrc/                        author source files          
             ├── rv-101-filename1.py           public rivt file
             ├── rv-102-filename2.py           public rivt file       
             ├── rv-201-filename3.py           public rivt file          
-            ├── rv-202-filename4.py           public rivt file
-            ...
+             ...
         └── [rivt-report]/                 report folder               
-                ├── [rv101-]filename1.py        rivt file
-                ├── [rv102-]filename2.py        rivt file       
-                ├── [rv201-]filename3.py        rivt file          
-                ├── [rv202-]filename4.py        rivt file
-                ...
-                ├── [src]                  author source files        
-                    ├── data/                        user folder (tables, etc.)    
-                        ├── opensees1.txt   
-                        └── conc-vals.csv  
-                    ├── image/                                                 
-                        ├── fig1.png
-                        └── fig2.jpg   
-                    ├── tool/                        OS shellcommands
-                        ├── run1_win.cmd                    
-                        └── run1_linux.sh                   
-                    ├── run/                         markup and functions
-                        ├── coverpage.rst                   
-                        ├── logoname.png                    
-                        ├── plot.py                         
-                        └── loads.py                        
-                    ├── steel-vals.csv     
-                    └── plastic-vals.csv               
-                ├── [_published]/               published docs and reports
-                    ├── [docs]/                      html docs
-                        ├── _images/                
-                        ├── _sources/              
-                        ├── _static/            
-                        ├── site folders/
-                        ├── process folders/                                         
-                        ├── rv101-filename1.html      
-                        ├── rv102-filename2.html                      
-                        ├── rv201-filename3.html                        
-                        ├── rv202-filename4.html
-                        ...     
-                    ├── [pdfdocs]/                      pdf docs
-                        ├── process folders/             
-                        ├── rv101-filename1.pdf             
-                        ├── rv102-filename1.pdf             
-                        ├── rv201-filename3.pdf 
-                        ├── rv202-filename4.pdf
-                        ...  
-                    └── [txtdocs]/                      text docs
-                        ├── rv101-filename1.txt              
-                        ├── rv102-filename1.txt             
-                        ├── rv201-filename3.txt 
-                        ├── rv202-filename4.txt
-                        ...
-                ├── [_rstdocs_]/                         restructured text files
-                    ├── _downloads/                    
-                    ├── _static/                       
-                    ├── _locale/                       
-                    ├── _templates/                    
-                    ├── rv101-filename1.rst            
-                    ├── rv102-filename2.rst                          
-                    ├── rv201-filename3.rst          
-                    ├── rv202-filename4.rst
-                    ...
-                ├── [_stored]/                      rivt generated files
+                ├── [rv101-]filename1.py          rivt file
+                ├── [rv102-]filename2.py          rivt file       
+                ├── [rv201-]filename3.py          rivt file          
+                ├── [rv202-]filename4.py          rivt file
+                 ...
+                ├── [rvsrc]                     author source files and folders        
+                    ├── down/                      files to download      
+                        └── conc-vals.txt 
+                    ├── data/                       tables    
+                        └── steel-vals.csv                                                 
+                    ├── run/                        scripts and functions              
+                        └── plot.py                   
+                    ├── tools/                      OS shell commands               
+                        └── opensees.sh                        
+                    ├── fig1.png
+                    └── fig2.jpg                  
+                ├── [rv_stor]/                     rivt-generated source files
                     ├── [logs]/                         log files
                         ├── rv101-log.txt
                         └── rv102-log.txt
-                    ├── [sect]/                          sections (not printed)                    
+                    ├── [sect]/                          sections not printed                    
                         ├── rv202-5d.txt  
                         ├── rv103-4t.txt                         
                         └── rv301-2r.txt               
@@ -243,15 +202,46 @@ or files defined and written by the *rivt file*.
                         └── rv101-label3.tex
                     ├── output.dat
                     ├── v101-2.csv
-                    └── v102-3.csv      
+                    └── v102-3.csv         
+                ├── [_published]/                   published docs and reports
+                    ├── [docs]/                       html docs
+                        ├── html auxiliary files
+                         ...                
+                        ├── index.html
+                        ├── rv101-filename1.html      
+                        ├── rv102-filename2.html                      
+                        ├── rv201-filename3.html                        
+                         ...     
+                    ├── [pdfdocs]/                      pdf docs
+                        ├── pdf auxiliary files
+                         ...             
+                        ├── report-title.pdf
+                        ├── rv101-filename1.pdf             
+                        ├── rv102-filename1.pdf             
+                        ├── rv201-filename3.pdf 
+                        ...  
+                    └── [txtdocs]/                      text docs
+                        ├── report-title.txt
+                        ├── rv101-filename1.txt              
+                        ├── rv102-filename1.txt             
+                        ├── rv201-filename3.txt 
+                        ...
+                ├── [_rstdocs]/                       restructured text files
+                    ├── _downloads/                    
+                    ├── _static/                       
+                    ├── _locale/                                         
+                    ├── rv101-filename1.rst            
+                    ├── rv102-filename2.rst                          
+                    ├── rv201-filename3.rst          
+                    ...
 
+----------------------------------
 
 .. _Project requirements:
 
 **[6]** Python Requirements
 -------------------------------------
 
- 
 
 The minimum Python version is *3.14*. *rivt* project packages include the
 following categories:

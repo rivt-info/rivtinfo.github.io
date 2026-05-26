@@ -85,7 +85,6 @@ the corresponding *doc numbers* in a report would be:
 **[3]** API
 ------------------------------------------------------------------------------- 
 
-
 The *rivt API* includes :ref:`API functions <API functions>`, 
 :ref:`markup` and structured :ref:`folders and files <Files-folders>`.  
 
@@ -106,8 +105,8 @@ The API and markup are designed to be:
     organized into reports. *rivt* can be run within a variety of IDEs.
 
 - efficient
-    The file and folder settings are designed to produce clear and useful
-    documents with default settings. Settings may be customized for specific needs.
+    The file and folder settings produce clear, organized documents with 
+    default settings. Settings may also be customized for specific needs.
 
 The API functions are listed in the table below, where (rS) is a triple quoted 
 :term:`rivt string` argument.
@@ -120,7 +119,7 @@ API Function         Name             Purpose
 **rv.V** (rS)         Values       Calculate values
 **rv.T** (rS)         Tools        Execute shell scripts and external programs
 **rv.D** (rS)         Doc          Publish docs 
-**rv.S,X** (rS)       Skip         Skip section or exit (comments and debugging)
+**rv.S;X** (rS)       Skip         Skip section or exit (comments and debugging)
 ================= =============== ================================================
 
 An API function starts in the first column and takes a triple quoted

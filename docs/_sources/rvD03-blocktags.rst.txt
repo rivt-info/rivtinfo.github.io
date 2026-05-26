@@ -4,18 +4,17 @@
 **[1]** Block Tag Summary
 -------------------------------------
 
- 
-
-**Format blocks of text or run code**
+**Run Format blocks of text or scripts**
 
 ========== ========================================= ===============================
 API Scope         Block Tag                                Description 
 ========== ========================================= ===============================
-rv.R        **_[[SHELL]]** os, *wait;nowait*          :ref:`Shell script`
+rv.R        **_[[MARKUP]]** type                      :ref:`Markup block`
+rv.R        **_[[PYTHON]]** label                     :ref:`Python block`
 rv.I        **_[[BOX]]** label                        :ref:`Box block`
 rv.I        **_[[TOPIC]]** topic                      :ref:`Topic block`
 rv.V        **_[[TABLE]]** label                      :ref:`Table block`
-rv.T        **_[[MARKUP]]** type                      :ref:`Markup block`
+rv.T        **_[[SHELL]]** os, *wait;nowait*          :ref:`Shell script`
 rv.D        **_[[METADATA]]** label                   :ref:`Meta block` 
 all         **_[[END]]**                              :ref:`End block`
 ========== ========================================= ===============================
@@ -24,9 +23,6 @@ all         **_[[END]]**                              :ref:`End block`
 
 **[2]** Shell script
 ------------------------------------
-
- 
-
 Runs shell scripts that run external programs. The shell parameters include
 specifying the operating system, process control and terminal window control.
 The os parameter specifies the terminal type. The wait parameter specifies
@@ -52,75 +48,15 @@ after execution.
             _[[END]]
 
 =========== ==========================
-API Scope     Insert
+API Scope     Tools
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-
-.. _Indent text block:
-
-**[3]** Indent text 
-----------------------------------------------
-
- 
-
-Indents text block the specified number of spaces.
-
-.. topic::  _[[INDENT]] 
-
-    .. code-block:: text
-
-            Syntax:
-                _[[INDENT]] number of spaces
-                text
-                text
-                ...
-                _[[END]]
-
-            Example:
-                _[[INDENT]] 8
-                This is a sentence that will be 
-                indented 8 spaces.
-                _[[END]]
-
-=========== ==========================
-API Scope     Insert
-Doc Types     text, PDF, HTML
-=========== ==========================
-
-.. _Indent italic block:
-
-**[4]** Indent italic 
-------------------------------------------------
-
- 
-
-.. topic::  _[[ITALIC]] 
-
-    Italicizes and indents the text block the specified number of spaces.
-
-    .. code-block:: text
-
-            Syntax:
-                _[[ITALIC]] number of spaces
-                text
-                ...
-                _[[END]]
-
-            Example:
-                _[[ITALIC]] 4
-                This is a sentence that will be 
-                italicized and indented 4 spaces.
-                _[[END]]
-
-=========== ==========================
-API Scope     Insert
-Doc Types     text, PDF, HTML
-=========== ==========================
+-----------------------
 
 .. _Endnotes block:
 
-**[5]** Endnotes 
+**[3]** Endnotes 
 -------------------------------------------    
 
  
@@ -156,9 +92,11 @@ API Scope     Insert
 Doc Types     text, PDF, HTML
 =========== ==========================
 
+-----------------------------
+
 .. _Table block:
 
-**[6]** Text 
+**[4]** Table Block
 ------------------------------------------------
 
  
@@ -190,47 +128,11 @@ API Scope     Insert
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-.. _Text block:
-
-**[6]** Text 
-------------------------------------------------
-
- 
-
-.. topic:: _[[TEXT]] 
-
-    Reads and formats text and code. The language parameter
-    specifies formatting and syntax coloring.  Languages include:
-
-    - *literal*
-    - *python*
-    - *text*
-    - *sh*
-    - *cmd*
-
-    .. code-block:: text 
-
-            Syntax:
-                _[[TEXT]] language
-                text and code
-                ...
-                _[[END]]  
-        
-            Example:
-                _[[TEXT]] python
-                # some code
-                print(1)
-                a = 1 + 3
-                _[[END]]
-
-=========== ==========================
-API Scope     Insert
-Doc Types     text, PDF, HTML
-=========== ==========================
+-----------------------
 
 .. _Topic block:
 
-**[7]** Topic 
+**[5]** Topic 
 ------------------------------------------------
 
  
@@ -257,12 +159,12 @@ API Scope     Insert
 Doc Types     text, PDF, HTML
 =========== ==========================
 
+-----------------------
+
 .. _Box block:
 
-**[8]** Box 
+**[6]** Box 
 ------------------------------------------------
-
- 
 
 .. topic:: _[[BOX]] 
 
@@ -288,13 +190,12 @@ API Scope     Insert
 Doc Types     text, PDF, HTML
 =========== ==========================
 
+-----------------------
+
 .. _Python block:
 
-**[9]** Python 
+**[7]** Python 
 ------------------------------------------------
-
- 
-
 .. topic:: _[[PYTHON]] 
 
     Executes Python script in the *rivt namespace* or a user specified namespace.
@@ -315,26 +216,35 @@ Doc Types     text, PDF, HTML
                 _[[END]]
 
 =========== ==========================
-API Scope     Value, Tool
+API Scope     Value, Run
 Doc Types     text, PDF, HTML
 =========== ==========================
 
+-----------------------
+
 .. _Markup block:
 
-**[10]** Markup block
+**[8]** Markup block
 ---------------------------------------
 
- 
+Inserts formatted text into doc. 
 
-Inserts HTML into an HTML *doc*, LaTeX into a PDF *doc*, and reStructuredText
-into either PDF or HTML. 
+    - *literal*
+    - *rst*
+    - *html*
+    - *endnote*
+    - *center*
+    - *bold*
+    - *italic*
+    - *latex* (texlive must be installed)
 
-.. topic:: _[[MARKUP]] 
+
+.. topic:: _[[MARKUP]] type
         
     .. code-block:: text
             
         Syntax:    
-            _[[MARKUP]] *html;latex;rst*
+            _[[MARKUP]] 
             markup
             ...
             _[[END]]
@@ -348,14 +258,15 @@ into either PDF or HTML.
             _[[END]]
 
 =========== ==========================
-API Scope     Tool
+API Scope     Run
 Doc Types     text, PDF, HTML
 =========== ==========================
 
+-----------------------
 
 .. _Meta block:
 
-**[11]** Metadata
+**[9]** Metadata
 -------------------
 
  
@@ -394,39 +305,11 @@ API Scope     Docs
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-.. _Layout block:
-
-**[12]** Layout block
-------------------------------------------------
-
- 
-
-Overrides default layout settings.
-
-.. topic:: _[[LAYOUT]] 
-
-    .. code-block:: text
-
-            Syntax - defaults:    
-                _[[LAYOUT]] optional label
-                variables
-                ...
-                _[[END]]
-
-            Example:                    
-                _[[LAYOUT]] 
-                docname = ""
-                footer = date, docname, page
-                _[[END]]
-
-=========== ==========================
-API Scope     Doc
-Doc Types     text, PDF, HTML
-=========== ==========================
+-----------------------
 
 .. _End block:
 
-**[13]** End block
+**[10]** End block
 ------------------------------------------------
 
  

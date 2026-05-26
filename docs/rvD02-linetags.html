@@ -422,15 +422,15 @@
 </tr>
 <tr class="row-even"><td><p>rv.I</p></td>
 <td><p>text <strong>_[U] label, url]</strong> text</p></td>
-<td><p><a class="reference internal" href="#url-link"><span class="std std-ref">[10] URL link</span></a></p></td>
+<td><p><a class="reference internal" href="#url-link"><span class="std std-ref">[9] URL link</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I</p></td>
 <td><p><strong>title _[T]</strong></p></td>
-<td><p><a class="reference internal" href="#number-table"><span class="std std-ref">[13] Table number</span></a></p></td>
+<td><p><a class="reference internal" href="#number-table"><span class="std std-ref">[11] Table number</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I,V</p></td>
 <td><p><strong>caption _[F]</strong></p></td>
-<td><p><a class="reference internal" href="#number-figure"><span class="std std-ref">[14] Figure number</span></a></p></td>
+<td><p><a class="reference internal" href="#number-figure"><span class="std std-ref">[12] Figure number</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I,V</p></td>
 <td><p>text <strong>_[C]</strong></p></td>
@@ -446,7 +446,7 @@
 </tr>
 <tr class="row-even"><td><p>rv.I,V</p></td>
 <td><p>text <strong>_[V] var_name]</strong> text</p></td>
-<td><p><a class="reference internal" href="#variable-value"><span class="std std-ref">[11] Variable value</span></a></p></td>
+<td><p><a class="reference internal" href="#variable-value"><span class="std std-ref">[10] Variable value</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>all</p></td>
 <td><p><strong>##</strong> text</p></td>
@@ -488,10 +488,10 @@ Example:
 <aside class="topic">
 <p class="topic-title">_[D]</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    text _[D] label, filename] text
+    text _[D] label, filename | text
 
 Example:
-    This is a link to _[D] myfile, srcmy_file.pdf] for download.
+    This is a link to _[D] my file, my_file.pdf | for download.
 </pre></div>
 </div>
 </aside>
@@ -506,6 +506,7 @@ Example:
 </tbody>
 </table>
 </div>
+<hr class="docutils" />
 </section>
 <section id="text-math">
 <span id="id3"></span><h2><strong>[4]</strong> Text math<a class="headerlink" href="#text-math" title="Link to this heading">#</a></h2>
@@ -531,6 +532,7 @@ Example:
 </tbody>
 </table>
 </div>
+<hr class="docutils" />
 </section>
 <section id="latex-math">
 <span id="id4"></span><h2><strong>[5]</strong> LaTeX math<a class="headerlink" href="#latex-math" title="Link to this heading">#</a></h2>
@@ -556,6 +558,7 @@ Example:
 </tbody>
 </table>
 </div>
+<hr class="docutils" />
 </section>
 <section id="endnote-number">
 <span id="id5"></span><h2><strong>[6]</strong>  Endnote number<a class="headerlink" href="#endnote-number" title="Link to this heading">#</a></h2>
@@ -583,6 +586,7 @@ Example:
 </tbody>
 </table>
 </div>
+<hr class="docutils" />
 </section>
 <section id="glossary-link">
 <span id="term-link"></span><h2><strong>[7]</strong> Glossary link<a class="headerlink" href="#glossary-link" title="Link to this heading">#</a></h2>
@@ -609,6 +613,7 @@ Example:
 </tbody>
 </table>
 </div>
+<hr class="docutils" />
 </section>
 <section id="section-link">
 <span id="id6"></span><h2><strong>[8]</strong> Section link<a class="headerlink" href="#section-link" title="Link to this heading">#</a></h2>
@@ -620,7 +625,7 @@ link text. If the text is ommitted the section label is used for the link.</p>
 </pre></div>
 </div>
 <dl class="simple">
-<dt>Syntax:</dt><dd><p>text _[S] link text, section title</p>
+<dt>Syntax:</dt><dd><p>text _[S] link text, section title |</p>
 </dd>
 <dt>Example:</dt><dd><p>This creates a link to _[S] Section Title, actual section label
 which provides more detail.</p>
@@ -638,42 +643,16 @@ which provides more detail.</p>
 </tbody>
 </table>
 </div>
-</section>
-<section id="doc-link">
-<span id="id7"></span><h2><strong>[9]</strong> Doc link<a class="headerlink" href="#doc-link" title="Link to this heading">#</a></h2>
-<p>Link to a <em>doc</em> in a <em>report</em> with an optional link text. If the link text is
-ommitted the <em>doc</em> title will be inserted as the link term.</p>
-<aside class="topic">
-<p class="topic-title">_[D]</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    text _[D] text, rivt_file
-
-Example:
-    This is a link to _[D] rv101-filename1
-    for reference.
-</pre></div>
-</div>
-</aside>
-<div class="pst-scrollable-table-container"><table class="table">
-<tbody>
-<tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Insert, Values</p></td>
-</tr>
-<tr class="row-even"><td><p>Doc Types</p></td>
-<td><p>PDF, HTML</p></td>
-</tr>
-</tbody>
-</table>
-</div>
+<hr class="docutils" />
 </section>
 <section id="url-link">
-<span id="id8"></span><h2><strong>[10]</strong> URL link<a class="headerlink" href="#url-link" title="Link to this heading">#</a></h2>
+<span id="id7"></span><h2><strong>[9]</strong> URL link<a class="headerlink" href="#url-link" title="Link to this heading">#</a></h2>
 <p>Link to a an external site with optional link text. If the link text is
 ommitted the url will be inserted as the link term.</p>
 <aside class="topic">
 <p class="topic-title">_[U]</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    text _[U] link label ,external url
+    text _[U] link label,external url |
 
 Example:
     text _[U]  github, https://www.github.com
@@ -691,9 +670,10 @@ Example:
 </tbody>
 </table>
 </div>
+<hr class="docutils" />
 </section>
 <section id="variable-value">
-<span id="id9"></span><h2><strong>[11]</strong> Variable value<a class="headerlink" href="#variable-value" title="Link to this heading">#</a></h2>
+<span id="id8"></span><h2><strong>[10]</strong> Variable value<a class="headerlink" href="#variable-value" title="Link to this heading">#</a></h2>
 <p>Insert the value of  var_name _[V] in the sentence.</p>
 <aside class="topic">
 <p class="topic-title">_[V]</p>
@@ -716,38 +696,10 @@ Example:
 </tbody>
 </table>
 </div>
-</section>
-<section id="equation-number">
-<span id="number-equation"></span><h2><strong>[12]</strong> Equation number<a class="headerlink" href="#equation-number" title="Link to this heading">#</a></h2>
-<p>Assign equation number to a line of text.</p>
-<aside class="topic">
-<p class="topic-title">_[E]</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    math text or label _[E]
-
-    assignment command _[E]
-
-Example:
-    3x * 4/(1+n) _[E]
-
-    x &lt;= 3*IN + 4.1*FT | inch, cm, 2 | example 1 _[E]
-</pre></div>
-</div>
-</aside>
-<div class="pst-scrollable-table-container"><table class="table">
-<tbody>
-<tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Insert, Values</p></td>
-</tr>
-<tr class="row-even"><td><p>Doc Types</p></td>
-<td><p>text, PDF, HTML</p></td>
-</tr>
-</tbody>
-</table>
-</div>
+<hr class="docutils" />
 </section>
 <section id="table-number">
-<span id="number-table"></span><h2><strong>[13]</strong> Table number<a class="headerlink" href="#table-number" title="Link to this heading">#</a></h2>
+<span id="number-table"></span><h2><strong>[11]</strong> Table number<a class="headerlink" href="#table-number" title="Link to this heading">#</a></h2>
 <blockquote>
 <div><p>Label and number tables.</p>
 </div></blockquote>
@@ -772,9 +724,10 @@ Example:
 </tbody>
 </table>
 </div>
+<hr class="docutils" />
 </section>
 <section id="figure-number">
-<span id="number-figure"></span><h2><strong>[14]</strong> Figure number<a class="headerlink" href="#figure-number" title="Link to this heading">#</a></h2>
+<span id="number-figure"></span><h2><strong>[12]</strong> Figure number<a class="headerlink" href="#figure-number" title="Link to this heading">#</a></h2>
 <blockquote>
 <div><p>Labels and numbers figures.</p>
 </div></blockquote>
@@ -857,12 +810,10 @@ Example:
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#endnote-number"><strong>[6]</strong>  Endnote number</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary-link"><strong>[7]</strong> Glossary link</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-link"><strong>[8]</strong> Section link</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#doc-link"><strong>[9]</strong> Doc link</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#url-link"><strong>[10]</strong> URL link</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-value"><strong>[11]</strong> Variable value</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equation-number"><strong>[12]</strong> Equation number</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-number"><strong>[13]</strong> Table number</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#figure-number"><strong>[14]</strong> Figure number</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#url-link"><strong>[9]</strong> URL link</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-value"><strong>[10]</strong> Variable value</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-number"><strong>[11]</strong> Table number</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#figure-number"><strong>[12]</strong> Figure number</a></li>
 </ul>
   </nav></div>
 

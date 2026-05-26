@@ -57,8 +57,8 @@ including images, tables, links and formatted text.
            **text math _[M]** description         :ref:`Text math` 
           **LaTeX math _[L]** description         :ref:`LaTeX math` 
                 text **_[#]** text                :ref:`Endnote number`  
-                text **_[G] text, section label** :ref:`Section link`
-                text **_[D] text, rivt_file**     :ref:`Doc link`
+                text **_[G] text, term**          :ref:`Term link`
+                text **_[S] text, section link**  :ref:`Section link`
                 text **_[U] text, label**         :ref:`URL link`   
                 text **_[V] var_name** text       :ref:`Variable value`
                **title _[T]**                     :ref:`Number table`
@@ -75,9 +75,7 @@ including images, tables, links and formatted text.
 ========================================= ==============================
        Block Tag                               Description 
 ========================================= ==============================
- **_[[INDENT]]** spaces (4 default)           :ref:`Indent text block`
- **_[[ITALIC]]** spaces (4 default)           :ref:`Indent italic block`
- **_[[ENDNOTES]]** optional label             :ref:`Endnotes block`
+ **_[[BOX]]** optional label                  :ref:`Box block`
  **_[[TOPIC]]** topic                         :ref:`Topic block`
  **_[[END]]**                                 :ref:`End block`
 ========================================= ==============================
@@ -122,8 +120,7 @@ The *Values* API function defines values and evaluates equations and functions.
        Line Tag                                         Description 
 ======================================== ==============================
          text **_[V] var_name** | text      :ref:`Variable value`
-        **label _[E]**                      :ref:`Number equation`
-        **title _[]**                      :ref:`Number table`
+        **title _[]**                       :ref:`Number table`
       **caption _[F]**                      :ref:`Number figure`                              
 ======================================== ==============================
 
@@ -205,8 +202,8 @@ The *Tool* API function executes shell commands.
 
 ---------------------------------------
 
-**[4-3]** rv.D Markup
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**[5]** rv.D Markup
+--------------------------------
 
 
 The *Doc API* publishes formatted *docs* from the rivt API strings.
@@ -214,21 +211,21 @@ The *Doc API* publishes formatted *docs* from the rivt API strings.
 ---------------------------------------
 
 
-**[2i]** Block Tags
--------------------------------------------
+**[5-1]** Block Tags
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
  
 
 ======================================= ==============================
        Block Tag                         Description 
 ======================================= ==============================
- **_[[LAYOUT]]** label                        :ref:`Layout block`
  **_[[METADATA]]** label                     :ref:`Meta block` 
+ **_[[END]]**                                :ref:`End block`
 ======================================= ==============================
 
 
-**[3i]** Commands
--------------------------------------------
+**[5-2]** Commands
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
  
 

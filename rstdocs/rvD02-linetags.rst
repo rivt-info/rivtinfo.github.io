@@ -10,16 +10,16 @@
 API Scope             Line Tag                                      Description 
 ========== ==================================================== ================================
 rv.I                   text **_[#]** text                         :ref:`Endnote number`  
-rv.I                   text **_[D] label, filename]** text        :ref:`Download link`
-rv.I                   text **_[G] glossary term]** text          :ref:`Term link`
-rv.I                   text **_[S] label, section]** text         :ref:`Section link`
-rv.I                   text **_[U] label, url]** text             :ref:`URL link`   
+rv.I                   text **_[D] label, filename |** text       :ref:`Download link`
+rv.I                   text **_[G] glossary term |** text         :ref:`Term link`
+rv.I                   text **_[S] label, section |** text        :ref:`Section link`
+rv.I                   text **_[U] label, url |** text            :ref:`URL link`   
 rv.I                  **title _[T]**                              :ref:`Number table`
 rv.I,V              **caption _[F]**                              :ref:`Number figure`
 rv.I,V                 text **_[C]**                              :ref:`Bold center text` 
 rv.I,V            **text math _[M]** description                  :ref:`Text math` 
 rv.I,V           **LaTeX math _[L]** description                  :ref:`LaTeX math` 
-rv.I,V                 text **_[V] var_name]** text               :ref:`Variable value`
+rv.I,V                 text **_[V] var_name |** text              :ref:`Variable value`
 all                     **##** text                               nonprinting comment
 ========== ==================================================== ================================
 
@@ -59,15 +59,18 @@ Insert a download link.
     .. code-block:: text
 
         Syntax:
-            text _[D] label, filename] text
+            text _[D] label, filename | text
 
         Example:
-            This is a link to _[D] myfile, srcmy_file.pdf] for download.
+            This is a link to _[D] my file, my_file.pdf | for download.
 
 =========== ==========================
 API Scope     Insert
 Doc Types     text, PDF, HTML
 =========== ==========================
+
+
+-------------------------------
 
 .. _Text math:
 
@@ -91,6 +94,8 @@ API Scope     Insert, Values
 Doc Types     text, PDF, HTML
 =========== ==========================
 
+-------------------------------
+
 .. _LaTeX math:
 
 **[5]** LaTeX math 
@@ -113,6 +118,8 @@ API Scope     Insert, Values
 Doc Types     PDF, HTML
 =========== ==========================
 
+
+-------------------------------
 
 ..  _Endnote number:
 
@@ -139,6 +146,8 @@ Doc Types     text, PDF, HTML
 =========== ==========================
 
 
+-------------------------------
+
 .. _Term link:
 
 **[7]** Glossary link
@@ -162,6 +171,9 @@ API Scope     Insert, Values
 Doc Types     PDF, HTML
 =========== ==========================
 
+
+-------------------------------
+
 .. _Section link:
 
 **[8]** Section link
@@ -175,7 +187,7 @@ link text. If the text is ommitted the section label is used for the link.
         .. code-block:: text
 
         Syntax:
-            text _[S] link text, section title
+            text _[S] link text, section title |
 
         Example:
             This creates a link to _[S] Section Title, actual section label
@@ -186,34 +198,12 @@ API Scope     Insert, Values
 Doc Types     PDF, HTML
 =========== ==========================
 
-.. _Doc link:
 
-**[9]** Doc link
------------------------------------------
-
-Link to a *doc* in a *report* with an optional link text. If the link text is 
-ommitted the *doc* title will be inserted as the link term.
-
-.. topic:: _[D]
-
-    .. code-block:: text
-
-        Syntax:
-            text _[D] text, rivt_file
-
-        Example:
-            This is a link to _[D] rv101-filename1 
-            for reference.
-
-
-=========== ==========================
-API Scope     Insert, Values
-Doc Types     PDF, HTML
-=========== ==========================
+-------------------------------
 
 .. _URL link:
 
-**[10]** URL link
+**[9]** URL link
 -----------------------------------------
 
 Link to a an external site with optional link text. If the link text is 
@@ -224,7 +214,7 @@ ommitted the url will be inserted as the link term.
     .. code-block:: text
 
         Syntax:
-            text _[U] link label ,external url 
+            text _[U] link label,external url |
 
         Example:
             text _[U]  github, https://www.github.com 
@@ -235,9 +225,12 @@ API Scope     Insert, Values
 Doc Types     PDF, HTML
 =========== ==========================
 
+
+-------------------------------
+
 .. _Variable value:
 
-**[11]** Variable value
+**[10]** Variable value
 ------------------------------------------
 
 Insert the value of  var_name _[V] in the sentence.
@@ -257,35 +250,12 @@ API Scope     Insert, Values
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-.. _Number equation:
 
-**[12]** Equation number
------------------------------------------
-
-Assign equation number to a line of text. 
-
-.. topic:: _[E]
-
-    .. code-block:: text
-
-        Syntax:
-            math text or label _[E]
-
-            assignment command _[E]
-
-        Example:
-            3x * 4/(1+n) _[E]
-
-            x <= 3*IN + 4.1*FT | inch, cm, 2 | example 1 _[E]
-
-=========== ==========================
-API Scope     Insert, Values
-Doc Types     text, PDF, HTML
-=========== ==========================
+-------------------------------
 
 .. _Number table:
 
-**[13]** Table number
+**[11]** Table number
 ------------------------------------------
 
     Label and number tables.
@@ -306,9 +276,12 @@ API Scope     Insert
 Doc Types     text, PDF, HTML
 =========== ==========================
 
+
+-------------------------------
+
 .. _Number figure:
 
-**[14]** Figure number
+**[12]** Figure number
 ------------------------------------------
 
     Labels and numbers figures.
@@ -328,7 +301,6 @@ Doc Types     text, PDF, HTML
 API Scope     Insert, Values
 Doc Types     text, PDF, HTML
 =========== ==========================
-
 
 
 
