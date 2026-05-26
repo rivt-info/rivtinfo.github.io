@@ -37,8 +37,8 @@ html_theme_options = {
     "footer_end": [],
     "logo": {
         "text": "rivt",
-        "image_dark": "rivhome11c.png",
-        "image_light": "rivhome11c.png",
+        "image_dark": "rivhome11e.png",
+        "image_light": "rivhome11e.png",
     }
 }
 favicons = [

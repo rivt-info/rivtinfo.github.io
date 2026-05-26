@@ -8,7 +8,7 @@
 
    </div>
 
-.. figure::  _static/img/rivt-final.png
+.. figure::  _static/img/rivt-finalb.png
     :class: dark-light
     :scale: 20%
     :align: center
