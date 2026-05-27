@@ -14,7 +14,7 @@ rv.I                   text **_[D] label, filename |** text       :ref:`Download
 rv.I                   text **_[G] glossary term |** text         :ref:`Term link`
 rv.I                   text **_[S] label, section |** text        :ref:`Section link`
 rv.I                   text **_[U] label, url |** text            :ref:`URL link`   
-rv.I                  **title _[T]**                              :ref:`Number table`
+rv.I,V                **title _[T]**                              :ref:`Number table`
 rv.I,V              **caption _[F]**                              :ref:`Number figure`
 rv.I,V                 text **_[C]**                              :ref:`Bold center text` 
 rv.I,V            **text math _[M]** description                  :ref:`Text math` 

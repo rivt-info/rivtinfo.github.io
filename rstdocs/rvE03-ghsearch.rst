@@ -1,10 +1,11 @@
-**E.4 GitHub Search**
-=========================
+**E.3 GitHub Search**
+===================================
 
-**[1]** GitHub Global Search
+.. _search-interface:
+
+
+**[1]** Global Search
 --------------------------------
-
- 
 
 This page is a search interface for **rivt** files on GitHub. The search covers
 the full text of the **rivt** README.txt file in the *repo* directory. The
@@ -49,7 +50,7 @@ the `GitHub interface <https://github.com/search>`__.
 
     <br>
 
-**[2]** GitHub Organization Search
+**[2]** Organization Search
 ---------------------------------------
 
  

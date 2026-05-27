@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
-    <title>C.1 Docs / Reports &#8212; rivt</title>
+    <title>C.1 Docs / Files &#8212; rivt</title>
   
   
   
@@ -59,7 +59,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'rvC01-documents';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="[2] rivt-report.py" href="rvC02-reports.html" />
+    <link rel="next" title="C.2 Files / Folders" href="rvC02-folders.html" />
     <link rel="prev" title="B.2 Framework" href="rvB03-framework.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -161,7 +161,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="#">
-    C.1 Docs / Reports
+    C.1 Docs / Files
   </a>
 </li>
 
@@ -275,7 +275,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="#">
-    C.1 Docs / Reports
+    C.1 Docs / Files
   </a>
 </li>
 
@@ -327,10 +327,7 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="rvC02-reports.html"><strong>[2]</strong> rivt-report.py</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="rvC03-folders.html"><strong>C.2 Folders</strong></a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="rvC02-folders.html"><strong>C.2 Files / Folders</strong></a></li>
 </ul>
 </div>
 </nav></div>
@@ -371,7 +368,7 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>C.1 Docs / Reports</strong></span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>C.1 Docs / Files</strong></span></li>
   </ul>
 </nav>
 </div>
@@ -388,20 +385,273 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="c-1-docs-reports">
-<h1><strong>C.1 Docs / Reports</strong><a class="headerlink" href="#c-1-docs-reports" title="Link to this heading">#</a></h1>
+  <section id="c-1-docs-files">
+<h1><strong>C.1 Docs / Files</strong><a class="headerlink" href="#c-1-docs-files" title="Link to this heading">#</a></h1>
 <section id="docs">
 <h2><strong>[1]</strong> Docs<a class="headerlink" href="#docs" title="Link to this heading">#</a></h2>
 <p>A <em>rivt doc</em> is the output of a <em>rivt file</em> processed by <em>rivtlib</em>. Each <em>rivt
 file</em> outputs a formatted <a class="reference internal" href="rvF02-terms.html#term-doc"><span class="xref std std-term">doc</span></a> with a <em>doc number</em> derived from the rivt
 file name. The <em>doc</em> is written to the respective subfolder of the <em>_published</em>
 folder.</p>
-<p>A <em>rivt report</em> is organized using <em>rivt doc numbers</em> (see <a class="reference internal" href="rvB01-overview.html#rivt-docs"><span class="std std-ref">Docs</span></a>).
-Report details are provided here.</p>
+<p>Each <a class="reference internal" href="rvF02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> outputs a corresponding <a class="reference internal" href="rvF02-terms.html#term-doc"><span class="xref std std-term">doc</span></a> of the format
+specified in PUBLISH command of the <em>rv.D()</em> API. A rivt file number has the
+form:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rvAnn-filename.py
+</pre></div>
+</div>
+<p>where rvAnn is a required file number prefix with A an alphanumeric character and nn a two
+digit non-negative integer. Corresponding rivt docs are output as:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rvAnn-filename.txt, pdf or html
+</pre></div>
+</div>
+<p>A <em>rivt report</em> is organized using the <em>file numbers</em>. The file numbers are
+used to organize reports into divisions and subdivisions. Each <em>rivt file</em> or
+<em>doc</em> is a report subdivision. If the <em>rivt filenames</em> are:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rvA01-filename.py
+rv105-filename.py
+rv212-filename.py
+</pre></div>
+</div>
+<p>the corresponding <em>doc numbers</em> in a report would be:</p>
+<ul class="simple">
+<li><p>A.1 (division A, subdivision 1)</p></li>
+<li><p>1.5 (division 1, subdivision 5)</p></li>
+<li><p>2.12 (division 2, subdivision 12)</p></li>
+</ul>
+<p>A <em>rivt report</em> is organized using <em>rivt doc numbers</em></p>
 <hr class="docutils" />
 </section>
-<section id="doc-settings">
-<span id="report-folders"></span><h2><strong>[1]</strong> Doc Settings<a class="headerlink" href="#doc-settings" title="Link to this heading">#</a></h2>
+<section id="rivt-report-py">
+<span id="rivt-report"></span><h2><strong>[2]</strong> rivt-report.py<a class="headerlink" href="#rivt-report-py" title="Link to this heading">#</a></h2>
+<p>The Python <em>report script</em> includes settings that specify assembly parameters
+and override defaults. These include:</p>
+<ul class="simple">
+<li><p><em>Docs</em> to be included in the report</p></li>
+<li><p>Division names</p></li>
+<li><p>recompiling <em>docs</em></p></li>
+<li><p>report cover page and title</p></li>
+</ul>
+<p>provides the option to either regenerate all <em>docs</em> or to
+assemble the report from previously generated <em>docs</em>.  Most aspects of
+the <em>report</em> appearance are determined at when generating <em>docs</em>.</p>
+<p>An example rivt-report.py script is shown below.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#! python</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">rivtlib.rvreport</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>  <span class="c1"># noqa: F403</span>
+
+<span class="sd">&quot;&quot;&quot; generate a rivt report</span>
+
+<span class="sd">Sample report generating and config file.</span>
+
+<span class="sd">Run this Python file to generate a rivt report. The report generating file</span>
+<span class="sd">must located in /publish/subfolder where subfolder is the doc type. The</span>
+<span class="sd">report output file name is the report title. It is written to the same</span>
+<span class="sd">folder as the report script. Duplicate report file names are incremented.</span>
+
+<span class="sd">A flag determines whether the report is assembled from existing doc files</span>
+<span class="sd">or whether docs are regenerated prior to assembly. If a rivt or doc file is</span>
+<span class="sd">specified for inclusion and not found a warning is given but the report is</span>
+<span class="sd">still assembled.</span>
+
+<span class="sd">A rivt report is a compilation of rivt docs organized into divisions and</span>
+<span class="sd">subdivisions. rivt doc numbers define the organization. Default titles for</span>
+<span class="sd">subdivisions are generated by stripping the doc number from the file name</span>
+<span class="sd">and replacing hyphens with spaces. The default titles may be overridden in</span>
+<span class="sd">rv.M for each rivt file.</span>
+
+<span class="sd">See src/styles/rivt.ini for additional settings</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="c1"># ==================================</span>
+<span class="c1"># report type</span>
+<span class="c1"># ==================================</span>
+<span class="n">rptype</span> <span class="o">=</span> <span class="s2">&quot;pdf&quot;</span>  <span class="c1"># report type [html; pdf; pdftex; text]</span>
+<span class="n">rvrun</span> <span class="o">=</span> <span class="kc">False</span>  <span class="c1"># regenerate docs [True; False]</span>
+
+<span class="c1"># ==================================</span>
+<span class="c1"># report cover settings</span>
+<span class="c1"># ==================================</span>
+<span class="c1"># cover pages are located in /src</span>
+<span class="n">rptitle</span> <span class="o">=</span> <span class="s2">&quot;Solar Canopy Calculations&quot;</span>
+<span class="n">rpsubtitle</span> <span class="o">=</span> <span class="s2">&quot;Larkspur, Ca&quot;</span>
+<span class="n">rpauthor</span> <span class="o">=</span> <span class="s2">&quot;rhh&quot;</span>
+<span class="n">rpdate</span> <span class="o">=</span> <span class="s2">&quot;&lt;datetime&gt;&quot;</span>
+<span class="n">rptoc</span> <span class="o">=</span> <span class="kc">True</span>  <span class="c1"># add table of contents, &quot;&quot; to omit</span>
+<span class="n">rpcover</span> <span class="o">=</span> <span class="s2">&quot;/publish/cover1.pdf&quot;</span>  <span class="c1"># cover page, &quot;&quot; to omit</span>
+
+<span class="c1"># ==================================</span>
+<span class="c1"># include docs</span>
+<span class="c1"># ==================================</span>
+<span class="c1"># include these divisions in report</span>
+<span class="n">divlist</span> <span class="o">=</span> <span class="p">[[</span><span class="n">dv01</span><span class="p">,</span> <span class="s2">&quot;Codes and Loads&quot;</span><span class="p">],</span>
+           <span class="p">[</span><span class="n">dv02</span><span class="p">,</span> <span class="s2">&quot;Frame&quot;</span><span class="p">],</span>
+           <span class="p">[</span><span class="n">dv03</span><span class="p">,</span> <span class="s2">&quot;Foundation&quot;</span><span class="p">]]</span>
+<span class="c1"># include these docs in report</span>
+<span class="c1"># doc label is for reference only, may be empty string</span>
+<span class="n">doclist</span> <span class="o">=</span> <span class="p">[[</span><span class="n">rv101</span><span class="p">,</span><span class="s2">&quot;Codes&quot;</span><span class="p">],</span>
+           <span class="p">[</span><span class="n">rv102</span><span class="p">,</span><span class="s2">&quot;Loads&quot;</span><span class="p">],</span>
+           <span class="p">[</span><span class="n">rv201</span><span class="p">,</span><span class="s2">&quot;Frame&quot;</span><span class="p">],</span>
+           <span class="p">[</span><span class="n">rv202</span><span class="p">,</span><span class="s2">&quot;Solar&quot;</span><span class="p">],</span>
+           <span class="p">[</span><span class="n">rv301</span><span class="p">,</span><span class="s2">&quot;Foundation&quot;</span><span class="p">],</span>
+           <span class="p">[</span><span class="n">rv302</span><span class="p">,</span><span class="s2">&quot;Walls&quot;</span><span class="p">]]</span>
+
+<span class="n">genreport</span><span class="p">()</span>  <span class="c1"># noqa: F405</span>
+</pre></div>
+</div>
+</section>
+<section id="conf-py">
+<h2><strong>[3]</strong> conf.py<a class="headerlink" href="#conf-py" title="Link to this heading">#</a></h2>
+<p>The <em>conf.py</em> file contains configuration settings for <em>rivt docs</em> and reports.
+A typical <em>conf.py</em> file looks like this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#! python</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">rivtlib.rvconfig</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>  <span class="c1"># noqa: F403</span>
+
+<span class="sd">&quot;&quot;&quot; configuration settings for rivt docs and reports</span>
+
+<span class="sd">This file is stored in /src/Tools. Settings for both HTML and PDF docs are</span>
+<span class="sd">included anc cover:</span>
+
+<span class="sd">- metadata</span>
+<span class="sd">- formatting</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()))</span>
+
+<span class="n">project</span> <span class="o">=</span> <span class="s2">&quot;rivt doc&quot;</span>
+<span class="n">copyright</span> <span class="o">=</span> <span class="s2">&quot;2023 StructureLabs LLC&quot;</span>
+<span class="n">author</span> <span class="o">=</span> <span class="s2">&quot;rholland&quot;</span>
+<span class="n">release</span> <span class="o">=</span> <span class="s2">&quot;0.3.8a7&quot;</span>
+
+<span class="c1">#</span>
+<span class="c1"># -- Options for HTML and PDF output --------------------------------------</span>
+<span class="c1">#</span>
+
+<span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;sphinx.ext.githubpages&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinx_togglebutton&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinxcontrib.jquery&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinx_copybutton&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinx_favicon&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinx.ext.duration&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinx.ext.doctest&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinx.ext.autodoc&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinx_design&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinx_new_tab_link&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;rst2pdf.pdfbuilder&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+<span class="n">root_doc</span> <span class="o">=</span> <span class="s2">&quot;index&quot;</span>
+<span class="n">duration_write_json</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="n">html_show_sourcelink</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">exclude_patterns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;_build&quot;</span><span class="p">,</span> <span class="s2">&quot;Thumbs.db&quot;</span><span class="p">,</span> <span class="s2">&quot;.DS_Store&quot;</span><span class="p">]</span>
+<span class="n">source_suffix</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;.rst&quot;</span><span class="p">,</span> <span class="s2">&quot;.md&quot;</span><span class="p">]</span>
+<span class="n">templates_path</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;_templates&quot;</span><span class="p">]</span>
+<span class="n">locale_dirs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;_locale&quot;</span><span class="p">]</span>
+<span class="n">html_title</span> <span class="o">=</span> <span class="s2">&quot;rivt&quot;</span>
+<span class="n">html_theme</span> <span class="o">=</span> <span class="s2">&quot;pydata_sphinx_theme&quot;</span>
+<span class="n">html_context</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;default_mode&quot;</span><span class="p">:</span> <span class="s2">&quot;dark&quot;</span><span class="p">}</span>
+<span class="n">html_sidebars</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;**&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;sidebar-nav-bs.html&quot;</span><span class="p">]}</span>
+<span class="n">html_static_path</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;_static&quot;</span><span class="p">,</span> <span class="s2">&quot;_static/img&quot;</span><span class="p">]</span>
+<span class="n">html_css_files</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;css/custom.css&quot;</span><span class="p">]</span>
+<span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;pygments_light_style&quot;</span><span class="p">:</span> <span class="s2">&quot;tango&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;pygments_dark_style&quot;</span><span class="p">:</span> <span class="s2">&quot;github-dark&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;navbar_start&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;navbar-logo&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;collapse_navigation&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s2">&quot;header_links_before_dropdown&quot;</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span>
+    <span class="s2">&quot;navbar_align&quot;</span><span class="p">:</span> <span class="s2">&quot;left&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;show_toc_level&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">&quot;navigation_depth&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">&quot;footer_start&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;copyright&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;footer_end&quot;</span><span class="p">:</span> <span class="p">[],</span>
+    <span class="s2">&quot;logo&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="s2">&quot;rivt&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;image_dark&quot;</span><span class="p">:</span> <span class="s2">&quot;rivhome11c.png&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;image_light&quot;</span><span class="p">:</span> <span class="s2">&quot;rivhome11c.png&quot;</span><span class="p">,</span>
+    <span class="p">},</span>
+<span class="p">}</span>
+<span class="n">favicons</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;rel&quot;</span><span class="p">:</span> <span class="s2">&quot;icon&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;sizes&quot;</span><span class="p">:</span> <span class="s2">&quot;16x16&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;favicon-16x16.png&quot;</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;rel&quot;</span><span class="p">:</span> <span class="s2">&quot;icon&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;sizes&quot;</span><span class="p">:</span> <span class="s2">&quot;32x32&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;favicon-32x32.png&quot;</span><span class="p">,</span>
+    <span class="p">},</span>
+<span class="p">]</span>
+
+<span class="c1">#</span>
+<span class="c1"># -- Options for PDF output -----------------------------------------------</span>
+<span class="c1">#</span>
+<span class="c1"># source start file, target name, title, author, options</span>
+<span class="c1"># options: (&#39;index&#39;, &#39;MyProject&#39;, &#39;My Project&#39;, &#39;Author Name&#39;, {&#39;pdf_compressed&#39;: True})</span>
+<span class="c1"># More than one author : \\r&#39;Guido van Rossum\\Fred L. Drake, Jr., editor&#39;</span>
+<span class="n">pdf_documents</span> <span class="o">=</span> <span class="p">[(</span><span class="s2">&quot;rv001-single-doc&quot;</span><span class="p">,</span> <span class="s2">&quot;rv001-single-doc&quot;</span><span class="p">,</span> <span class="s2">&quot;rivt&quot;</span><span class="p">,</span> <span class="s2">&quot;r holland&quot;</span><span class="p">)]</span>
+<span class="c1"># Label to use as a prefix for the subtitle on the cover page</span>
+<span class="n">subtitle_prefix</span> <span class="o">=</span> <span class="s2">&quot;User Manual&quot;</span>
+<span class="c1"># A list of folders to search for stylesheets. Example:</span>
+<span class="n">pdf_style_path</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;./rstdocs/_static/pdfstyle&quot;</span><span class="p">]</span>
+<span class="c1"># A colon-separated list of folders to search for fonts. Example:</span>
+<span class="n">pdf_font_path</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;./rstdocs/_staticfonts&quot;</span><span class="p">]</span>
+<span class="c1"># A comma-separated list of custom stylesheets. Example:</span>
+<span class="n">pdf_stylesheets</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;./rstdocs/_static/pdfstyle/stylepdf1.yaml&quot;</span><span class="p">]</span>
+<span class="c1"># Example: compressed=True</span>
+<span class="n">pdf_compressed</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="c1"># Language to be used for hyphenation support</span>
+<span class="n">pdf_language</span> <span class="o">=</span> <span class="s2">&quot;en_US&quot;</span>
+<span class="c1"># literal blocks wider than the frame overflow, shrink or truncate</span>
+<span class="n">pdf_fit_mode</span> <span class="o">=</span> <span class="s2">&quot;shrink&quot;</span>
+<span class="c1"># 1 means top-level sections start in a new page 0 disabled</span>
+<span class="n">pdf_break_level</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="c1"># When a section starts in a new page, force it to be &#39;even&#39;, &#39;odd&#39;,</span>
+<span class="c1"># or just use &#39;any&#39;</span>
+<span class="n">pdf_breakside</span> <span class="o">=</span> <span class="s2">&quot;any&quot;</span>
+<span class="c1"># If false, no coverpage is generated.</span>
+<span class="n">pdf_use_coverpage</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="c1"># Name of the cover page template to use</span>
+<span class="n">pdf_cover_template</span> <span class="o">=</span> <span class="s2">&quot;pdfcover.rst&quot;</span>
+<span class="c1"># Page template name for &quot;regular&quot; pages</span>
+<span class="c1"># pdf_page_template = &#39;cutePage&#39;</span>
+<span class="c1"># Documents to append as an appendix to all manuals.</span>
+<span class="c1"># pdf_appendices = []</span>
+<span class="c1"># Enable experimental feature to split table cells. Use it</span>
+<span class="c1"># if you get &quot;DelayedTable too big&quot; errors</span>
+<span class="c1"># pdf_splittables = False</span>
+<span class="c1"># Set the default DPI for images</span>
+<span class="c1"># pdf_default_dpi = 72</span>
+<span class="c1"># Enable rst2pdf extension modules</span>
+<span class="c1"># pdf_extensions = []</span>
+<span class="c1"># Show Table Of Contents at the beginning?</span>
+<span class="n">pdf_use_toc</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="c1"># How many levels deep should the table of contents be?</span>
+<span class="n">pdf_toc_depth</span> <span class="o">=</span> <span class="mi">9999</span>
+<span class="c1"># Insert footnotes where they are defined instead of</span>
+<span class="c1"># at the end.</span>
+<span class="n">pdf_inline_footnotes</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="c1"># verbosity level. 0 1 or 2</span>
+<span class="c1"># pdf_verbosity = 0</span>
+<span class="c1"># If false, no index is generated.</span>
+<span class="n">pdf_use_index</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="c1"># If false, no modindex is generated.</span>
+<span class="n">pdf_use_modindex</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="c1"># Add section number to section references</span>
+<span class="n">pdf_use_numbered_links</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="c1"># Background images fitting mode</span>
+<span class="n">pdf_fit_background_mode</span> <span class="o">=</span> <span class="s2">&quot;scale&quot;</span>
+<span class="c1"># Repeat table header on tables that cross a page boundary?</span>
+<span class="n">pdf_repeat_table_rows</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="c1"># Enable smart quotes (1, 2 or 3) or disable by setting to 0</span>
+<span class="n">pdf_smartquotes</span> <span class="o">=</span> <span class="mi">0</span>
+</pre></div>
+</div>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -427,11 +677,11 @@ Report details are provided here.</p>
       </div>
     </a>
     <a class="right-next"
-       href="rvC02-reports.html"
+       href="rvC02-folders.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>[2]</strong> rivt-report.py</p>
+        <p class="prev-next-title"><strong>C.2 Files / Folders</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -455,7 +705,8 @@ Report details are provided here.</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docs"><strong>[1]</strong> Docs</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#doc-settings"><strong>[1]</strong> Doc Settings</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-report-py"><strong>[2]</strong> rivt-report.py</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conf-py"><strong>[3]</strong> conf.py</a></li>
 </ul>
   </nav></div>
 

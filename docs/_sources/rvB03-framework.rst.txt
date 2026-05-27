@@ -24,15 +24,14 @@ version control. This framework is included in :ref:`portable rivt
 Purpose                    Link
 ======================= =======================================================================
 Editing                  `VSCode <https://code.visualstudio.com/>`_  
-Editing Extensions       :ref:`VSCode settings`
+Editing Extensions       :ref:`VSCode-settings`
 Version Control          `Git <https://git-scm.com>`_
 ======================= =======================================================================
-
 
 ---------------------------------
 
 
-**[3]** Basic framework
+**[3]** Extended framework
 -----------------------------------------------------------------------------
 
 The *rivt extended framework* includes the *rivt basic framework* and additional 

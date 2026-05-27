@@ -111,7 +111,7 @@ all         **_[[END]]**                              :ref:`End block`
 
 ----------------------------------
 
-.. _Commmands:
+.. _command-list:
 
 **[4]** Commands
 -------------------------------------
@@ -237,7 +237,7 @@ rv.D        | **PUBLISH** | doc title | type                                :ref
 
 ----------------------------------
 
-.. _Project requirements:
+.. _project-requirements:
 
 **[6]** Python Requirements
 -------------------------------------
@@ -287,7 +287,7 @@ following categories:
   "sphinxcontrib-serializinghtml>=2.0.0"           HTML generation
 =============================================== ================================        
 
-.. _VSCode settings:
+.. _vscode-settings:
 
 **[7]** VSCode Settings
 ------------------------------------

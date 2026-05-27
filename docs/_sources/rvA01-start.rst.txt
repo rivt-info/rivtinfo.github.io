@@ -141,7 +141,7 @@ by following the steps below.  Example rivt files are included.
 
         pip install rivtlib
     
-A list of the installed dependencies is :ref:`here <Project requirements>`.
+A list of the installed dependencies is :ref:`here <Project-requirements>`.
 
 *rivt* may also be installed and isolated environment using the `uv package
 manager <https://docs.astral.sh/uv/>`__. The primary advantage of *uv* is the

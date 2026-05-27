@@ -47,7 +47,8 @@ API Function         Name             Purpose
 **rv.S,X** (rS)    Skip, Exit        Skip section, exit (comments and debugging)
 ================ =============== ================================================
 
-API functions define doc sections. If interactive IDEs are used, API functions
+API functions define doc sections. The available *rivt markup* commands and
+tags depends on the API funciton. If interactive IDEs are used, API functions
 can be processed individually using the standard notebook cell percent
 notation:
 

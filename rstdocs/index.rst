@@ -29,7 +29,7 @@ A *rivt report* is a linked compilation of multiple *rivt docs*.
 This site is an example of an *HTML rivt report*.
 
 An interface for finding public *rivt files* on **GitHub** is  
-:doc:`here <rvE04-ghsearch>`. A collection of open source models and 
+:doc:`here <rvE03-ghsearch>`. A collection of open source models and 
 calculations , including *rivt*, is found  `here <https://www.openmodels.info>`__ 
 on **Google Drive**. 
 

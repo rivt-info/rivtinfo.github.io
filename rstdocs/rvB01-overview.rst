@@ -7,30 +7,33 @@
 
 *rivt* is an open source Python project that imports 
 the `rivtlib Python package <https://pypi.org/project/rivtlib/>`__
-and dependencies (see :ref:`Project requirements`).  A :term:`rivt file` 
-publishes a formatted :term:`rivt doc` as a text, PDF or HTML file. 
-A *rivt file* is a Python file (.py) that imports the
-:term:`rivtlib` Python package and includes :term:`rivt markup`. A collection
-of *rivt docs* may be assembled into a :term:`rivt report`.
+and dependencies (see :ref:`Project-requirements`) and publishes 
+a formatted :term:`rivt doc` as a text, PDF or HTML file.
+from a :term:`rivt file`. A *rivt file* is a Python file (.py) that imports the
+:term:`rivtlib` Python package and includes rivt API functions that include 
+:term:`rivt markup`. A collection of *rivt docs* may be assembled into a 
+:term:`rivt report`.
 
 *rivt files* are generally edited and run in an IDE. The lightweight 
 `Pyzo <https://pyzo.org/>`__ IDE is installed with rivtlib. The 
 `VSCode IDE <https://code.visualstudio.com/>`__ is a full featured IDE that 
-is part of a :ref:`rivt framework` and included  with :ref:`rivt-portable`. 
+is part of the basic :ref:`rivt framework` and included  with the 
+:ref:`rivt-portable` installable.
 
-*rivt file* examples are illustrated :ref:`here <rivt-examples>`. Additional  *rivt files*
-mayb be downloaded from *Google Drive* at `OpenModels.info <https://www.openmodels.info/>`__. 
-An interface for searching *public rivt files* on *GitHub* is :doc:`here <rvE04-ghsearch>`. 
+*rivt file* examples are illustrated :ref:`here <rivt-examples>`. Additional  
+*rivt files* may be downloaded from *Google Drive* at 
+`OpenModels.info <https://www.openmodels.info/>`__.  An interface for searching 
+*public rivt files* on *GitHub* is :doc:`here <rvE03-ghsearch>`. 
 
-A *public rivt file* is a subset of a *rivt file*, made up of the parts the
+A *public rivt file* is a subset of a *rivt file*, made up of sections the
 author chooses to share under an `Open Source license
-<https://opensource.org/licenses>`__. *rivt* is designed to seamlessly work
-with the whole document while allowing the author to identity they parts that
-may be publically shared.
+<https://opensource.org/licenses>`__. *rivt* is designed to seamlessly extract
+public files, allowing the author complete discretion in choosing which file 
+sections to make public.
 
-*rivt* itself is distributed under the
-`MIT open source license <https://opensource.org/license/mit>`__. (see
-:ref:`Licenses`).
+*rivt* is distributed under the
+`MIT open source license <https://opensource.org/license/mit>`__. 
+(see:ref:`Licenses`).
 
 .. _rivt-docs:
 
@@ -48,8 +51,9 @@ may be publically shared.
 
     **rivt Doc Processing**
 
-Each :term:`rivt file` outputs a corresponding :term:`doc` in the 
-format specified in *rv.D()* API. A rivt file number has the form:
+Each :term:`rivt file` outputs a corresponding :term:`doc` of the format
+specified in PUBLISH command of the *rv.D()* API. A rivt file number has the
+form:
 
 .. code-block:: text
 
@@ -169,9 +173,10 @@ detailed description of the folder structure is :ref:`here <report-folders>`.
 .. code-block:: bash
 
       rivt-Report-Label/           Report Folder                
-        ├── .vscode/                  optional VSCode settings 
-        ├── rivt-public_/             rivt-generated public files
-            ├── rvsrc/                     source files
+        ├── .vscode/                   optional VSCode settings 
+        ├── rivt-public_/              rivt-generated public files
+        └── README.txt                 text doc or report
+            ├── rvsrc/                    source files
             ├── README.txt                public text report or doc
             ├── rv-101-filename1.py       public rivt file
             ├── rv-102-filename2.py       public rivt file       
@@ -179,7 +184,7 @@ detailed description of the folder structure is :ref:`here <report-folders>`.
             ...
         └── rivt-report/               rivt files and docs               
             ├── _published/               published docs and reports
-            ├── _rstdocs/                 intermediate restructured text files               
+            ├── _rstdocs/                 rivt generated rst files               
             ├── rv_stor/                  rivt generated stored files
             ├── rvsrc/                    author source files
             ├── rivt-report.py            report generating script
@@ -187,7 +192,7 @@ detailed description of the folder structure is :ref:`here <report-folders>`.
             ├── rv102-filename2.py        rivt file       
             ├── rv201-filename3.py        rivt file          
             ...    
-        └── README.txt                 text report or doc  
+
         
 --------------------------------
 

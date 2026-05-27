@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
-    <title>E.3 Git &#8212; rivt</title>
+    <title>E.2 Real Time &#8212; rivt</title>
   
   
   
@@ -56,11 +56,11 @@
     <script src="_static/togglebutton.js?v=1ae7504c"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'rvE03-git';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'rvE02-realtime';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="E.4 GitHub Search" href="rvE04-ghsearch.html" />
-    <link rel="prev" title="E.2 Public files" href="rvE02-publicrivt.html" />
+    <link rel="next" title="E.3 GitHub Search" href="rvE03-ghsearch.html" />
+    <link rel="prev" title="E.1 Collaboration" href="rvE01-collab.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -161,7 +161,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvC01-documents.html">
-    C.1 Docs / Reports
+    C.1 Docs / Files
   </a>
 </li>
 
@@ -275,7 +275,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvC01-documents.html">
-    C.1 Docs / Reports
+    C.1 Docs / Files
   </a>
 </li>
 
@@ -327,9 +327,8 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="rvE02-publicrivt.html"><strong>E.2 Public files</strong></a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>E.3 Git</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvE04-ghsearch.html"><strong>E.4 GitHub Search</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>E.2 Real Time</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvE03-ghsearch.html"><strong>E.3 GitHub Search</strong></a></li>
 </ul>
 </div>
 </nav></div>
@@ -373,7 +372,7 @@
     
     <li class="breadcrumb-item"><a href="rvE01-collab.html" class="nav-link"><strong>E.1 Collaboration</strong></a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>E.3 Git</strong></span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>E.2 Real Time</strong></span></li>
   </ul>
 </nav>
 </div>
@@ -390,13 +389,34 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="e-3-git">
-<h1><strong>E.3 Git</strong><a class="headerlink" href="#e-3-git" title="Link to this heading">#</a></h1>
-<section id="git">
-<h2><strong>[1]</strong> Git<a class="headerlink" href="#git" title="Link to this heading">#</a></h2>
-<p><em>GitHUb</em> is a popular and widely used cloud and version control system
-based on the <a class="reference internal" href="rvF02-terms.html#term-Git"><span class="xref std std-term">Git</span></a> program that may be downloaded
-<a class="reference external" href="https://git-scm.com/" rel="noreferrer" target="_blank">here</a>.</p>
+  <section id="e-2-real-time">
+<h1><strong>E.2 Real Time</strong><a class="headerlink" href="#e-2-real-time" title="Link to this heading">#</a></h1>
+<section id="vscode">
+<h2><strong>[1]</strong> VSCode<a class="headerlink" href="#vscode" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">VSCode</a> is an open source IDE with a large
+set of extensions, including collaboration support. Collaboration is
+facilitated by the <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare" rel="noreferrer" target="_blank">Visual Studio Live Share</a>.
+You can start a <em>Live Share</em> session either within <em>CodeSpaces</em> in
+your browser, or within the <em>VS Code</em> desktop application. <em>CodeSpaces</em>
+is a cloud based GitHub implementation of VSCode that shares many of the
+same features.</p>
+<p>The <em>Live Share</em> extension enables:</p>
+<ul class="simple">
+<li><p>Real-time Co-editing: Multiple participants can work on the same file
+simultaneously, seeing each other’s cursors, selections, and edits instantly,
+much like in Google Docs..</p></li>
+<li><p>Shared Terminals and Servers: The host can share their terminal and localhost
+servers with guests, eliminating the need for guests to set up their own
+environments or dependencies.</p></li>
+<li><p>Navigation and Following: Participants can independently navigate the project
+or choose to “follow” another collaborator, keeping their editor synchronized
+with the leader’s actions.</p></li>
+<li><p>File Access Control: Hosts can use a .vsls.json file to control which files and
+folders are visible or editable by guests, ensuring security and focus</p></li>
+</ul>
+<p><em>GitHub Codespaces</em> is a VSCode cloud-based development environment connected
+to GitHub files. It can be set up with <em>rivt extensions</em> that provide a complete
+rivt editing and collaboration environment in the cloud.</p>
 </section>
 </section>
 
@@ -411,20 +431,20 @@ based on the <a class="reference internal" href="rvF02-terms.html#term-Git"><spa
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rvE02-publicrivt.html"
+       href="rvE01-collab.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>E.2 Public files</strong></p>
+        <p class="prev-next-title"><strong>E.1 Collaboration</strong></p>
       </div>
     </a>
     <a class="right-next"
-       href="rvE04-ghsearch.html"
+       href="rvE03-ghsearch.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>E.4 GitHub Search</strong></p>
+        <p class="prev-next-title"><strong>E.3 GitHub Search</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -447,7 +467,7 @@ based on the <a class="reference internal" href="rvF02-terms.html#term-Git"><spa
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#git"><strong>[1]</strong> Git</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vscode"><strong>[1]</strong> VSCode</a></li>
 </ul>
   </nav></div>
 

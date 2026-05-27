@@ -1,10 +1,12 @@
 **D.4 Commands**
 ========================
 
+
+.. _command-summary:
+
 **[1]** Command Summary
 -------------------------------------
 
- 
 
 **format files and equations**
 
