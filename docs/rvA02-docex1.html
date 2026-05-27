@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
-    <title>A.2 Example &#8212; rivt</title>
+    <title>A.2 Example 1 &#8212; rivt</title>
   
   
   
@@ -327,7 +327,7 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>A.2 Example</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>A.2 Example 1</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvA03-faq.html"><strong>A.3 FAQ</strong></a></li>
 </ul>
 </div>
@@ -372,7 +372,7 @@
     
     <li class="breadcrumb-item"><a href="rvA01-start.html" class="nav-link"><strong>A.1 Start</strong></a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>A.2 Example</strong></span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>A.2 Example 1</strong></span></li>
   </ul>
 </nav>
 </div>
@@ -389,32 +389,61 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="a-2-example">
-<h1><strong>A.2 Example</strong><a class="headerlink" href="#a-2-example" title="Link to this heading">#</a></h1>
-<section id="example-files">
-<span id="rivt-examples"></span><h2><strong>[1]</strong> Example Files<a class="headerlink" href="#example-files" title="Link to this heading">#</a></h2>
-<p>The example files illustrate the common API functions and rivt markup syntax.
-<em>rivt files</em> may be published as single documents or compiled into reports.
-Reports are assembled through a customized report script (<em>rivt-report.py</em>).
-Examples 1 and 2 are single docs. Example 3 is a small report. They are available</p>
+  <section id="a-2-example-1">
+<h1><strong>A.2 Example 1</strong><a class="headerlink" href="#a-2-example-1" title="Link to this heading">#</a></h1>
+<section id="single-doc-example">
+<span id="rivt-examples"></span><h2><strong>[1]</strong> Single doc example<a class="headerlink" href="#single-doc-example" title="Link to this heading">#</a></h2>
+<p>This example file illustrates common API functions and rivt markup. The %% cell
+marks indicate sections that can be individually processed as cells. They are
+created with a shortcut and provide an interactive table of contents for
+navigating in VSCode.</p>
+<p>The rivt file is followed by a screenshot of the same rivt file in VSCode with
+syntax highlights, and the rivt text doc output.</p>
+<ul class="simple">
+<li><p>The entire project can be downloaded here or here.</p></li>
+<li><p>The PDF output is here.</p></li>
+<li><p>The HTML output is here.</p></li>
+</ul>
+<p><em>rivt files</em> may be published as single documents or compiled into reports.
+Reports are assembled through a customized report script - <em>rivt-report.py</em>
+(see  for a report example).</p>
 </section>
 <hr class="docutils" />
-<section id="example-1">
-<h2><strong>[2]</strong> Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h2>
-<p>This is a single rivt file that publishes a single doc. It illustrates
-the common API functions and rivt markup syntax.</p>
 <section id="rivt-file-ex-1">
-<h3><strong>[2-1]</strong> rivt file - Ex. 1<a class="headerlink" href="#rivt-file-ex-1" title="Link to this heading">#</a></h3>
-<p>This is the <em>rivt file</em> for Example 1.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#! python</span>
+<h2><strong>[2]</strong> rivt file Ex. 1<a class="headerlink" href="#rivt-file-ex-1" title="Link to this heading">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %% import</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
 
-<span class="c1"># rv singledoc: True</span>
+<span class="c1"># The following settings are needed if defaults need to be changed (defaults</span>
+<span class="c1"># in parenthesis). A leading hash (#) and trailing semicolon (;) are required.</span>
 
-<span class="c1"># %% loads</span>
+<span class="c1"># rv set_width = 80  ; character width of text output (80)</span>
+<span class="c1"># rv no_tag = true ; if false, an API tag is added to section number (true)</span>
+
+
+<span class="c1"># %% rv.I(&quot;&quot;&quot;Summary</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Summary</span>
+
+<span class="s2">    This rivt file example calculates the maximum stress and deflection in a</span>
+<span class="s2">    simply supported, uniformly loaded beam. It also serves as an annotated</span>
+<span class="s2">    example of a rivt doc with multiple sections that is not part of a report.</span>
+
+<span class="s2">    The example illustrates the use of some of the most common API functions,</span>
+<span class="s2">    commands and tags. Further details are provided in the</span>
+<span class="s2">    _[U] rivt user manual, https://www.rivt.info].</span>
+
+<span class="s2">    The file may be formatted as a text, PDF or HTML doc by changing the type</span>
+<span class="s2">    parameter in the PUBLISH command at the end of each rivt file (Doc-API</span>
+<span class="s2">    *rv.D*). Published files are found in the *_published* folder.</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="c1"># %% rv.I(&quot;&quot;&quot;Load Combinations</span>
 <span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Load Combinations</span>
 
-<span class="s2">    ASCE 7-05 Load Effects _[T]</span>
+<span class="s2">    ## Indented comments with double hashes will not appear in the doc</span>
+<span class="s2">    ## An inline table contained in a TABLE block is written to a CSV file.</span>
+<span class="s2">    _[[TABLE]]  ASCE 7-05 Load Effects</span>
 <span class="s2">    ============= ================================================</span>
 <span class="s2">    Equation No.    Load Combination</span>
 <span class="s2">    ============= ================================================</span>
@@ -422,98 +451,403 @@ the common API functions and rivt markup syntax.</p>
 <span class="s2">    16-2           1.2(D+F+T) + 1.6(L+H) + 0.5(Lr or S or R)</span>
 <span class="s2">    16-3           1.2(D+F+T) + 1.6(Lr or S or R) + (f1L or 0.8W)</span>
 <span class="s2">    ============= ================================================</span>
-
-<span class="s2">    | IMAGE | beam.png | Beam Geometry, .65, num</span>
-
-<span class="s2">    Bending Stress Formula _[E]</span>
-<span class="s2">    σ1 = M1 / S1 _[M]</span>
+<span class="s2">    _[[END]]</span>
 
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
-<span class="c1"># %% values</span>
+
+<span class="c1"># %% rv.V(&quot;&quot;&quot;Loads and Geometry</span>
 <span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Loads and Geometry</span>
 
-<span class="s2">    Beam Loads _[T]</span>
-<span class="s2">    D_1 =: 3.8*psf | psf, kPA, 2 | joists DL</span>
-<span class="s2">    D_2 =: 2.1*psf | psf, kPA, 2 | plywood DL</span>
-<span class="s2">    D_3 =: 10.0*psf | psf, kPA, 2 | partitions DL</span>
-<span class="s2">    D_4 =: 2*0.5*klf |klf, kN_m , 2 | fixed machinery  DL</span>
-<span class="s2">    L_1 =: 40*psf | psf, kPA, 2 | ASCE7-O5 LL</span>
+<span class="s2">    Successive value definitions are formatted as a table. Variable</span>
+<span class="s2">    values are defined with the define operator. The line tag [T] labels and</span>
+<span class="s2">    numbers the table.</span>
 
-<span class="s2">    | VALTABLE | beam1-v.csv | Beam Geometry, 0:0, num</span>
+<span class="s2">    Define Unit Loads _[T]</span>
+<span class="s2">    D_1 ==: 3.8 * psf | psf, kPA, 2 | joists DL</span>
+<span class="s2">    D_2 ==: 2.1 * psf | psf, kPA, 2 | plywood DL</span>
+<span class="s2">    D_3 ==: 10.0 * psf | psf, kPA, 2 | partitions DL</span>
+<span class="s2">    D_4 ==: 2 * 1.5 * klf | klf, kN_m, 2 | fixed machinery DL</span>
+<span class="s2">    L_1 ==: 40 * psf | psf, kPA, 2 | ASCE7-O5 LL</span>
+<span class="s2">    b_1 ==: 10 * inch | inch, mm, 2 | beam width</span>
+<span class="s2">    h_1 ==: 18 * inch | inch, mm, 2 | beam depth</span>
+<span class="s2">    E_1 ==: 29000 * ksi | ksi, MPA, 2 | modulus of elasticity</span>
+<span class="s2">    Fb_1 ==: 20000 * psqin | psqin, MPA, 2 | allowable stress</span>
 
-<span class="s2">    Uniform Distributed Loads</span>
-<span class="s2">    dl_1 &lt;=: 1.2 * (W_1 * (D_1 + D_2 + D_3) + D_4) | klf, kN_m, 2 | dead load : ASCE7-05 2.3.2  _[E]</span>
+<span class="s2">    The VALTABLE command reads variable values from a file in the rvsrc</span>
+<span class="s2">    folder. The description is used as the table title. The range specifies the</span>
+<span class="s2">    starting and ending line to be read from the file (0:0 means all lines).</span>
 
-<span class="s2">    ll_1 &lt;=: 1.6 * W_1 * L_1 | klf, kN_m, 2 | live load : ASCE7-05 2.3.2 _[E]</span>
+<span class="s2">    | VALTABLE | rvsrc/beam1.csv | Beam Geometry, 0:0</span>
 
-<span class="s2">    omega_1 &lt;=: dl_1 + ll_1 | klf, kN_m, 2 | total load : ASCE7-05 2.3.2 _[E]</span>
+<span class="s2">    ## The IMAGE command inserts an image file with caption, </span><span class="si">% s</span><span class="s2">cale, num;non option</span>
+<span class="s2">    | IMAGE | rvsrc/beam1.png | Beam Diagram, 60, num</span>
 
-<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
-<span class="c1"># %% section properties</span>
-<span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Beam Section Properties</span>
+<span class="s2">    Uniform Distributed Loads _[C]</span>
+<span class="s2">    dl_1 &lt;=: 1.2 * (spc_1 * (D_1 + D_2 + D_3) + D_4) | klf, kN_m, 2 | Dead load [ASCE7-05 2.3.2]</span>
 
-<span class="s2">    | PYTHON | sectprop.py | nodocstring</span>
+<span class="s2">    ll_1 &lt;=: 1.6 * spc_1 * L_1 | klf, kN_m, 2 | Live load [ASCE7-05 2.3.2]</span>
 
-<span class="s2">    section_1 &lt;=: rectsect(10*inch, 18*inch) | in3, cm3, 2 | function: rect sect modulus _[E]</span>
-
-<span class="s2">    inertia_1 &lt;=: rectinertia(10*inch, 18*inch) | in4, cm4, 1 | function: rect moment inertia _[E]</span>
-
-<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
-<span class="c1"># %% force</span>
-<span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Force and Stress</span>
-
-<span class="s2">        m_1 &lt;=: omega_1 * S_1**2 / 8 | ftkips, mkN, 2 | mid-span UDL moment _[E]</span>
-
-<span class="s2">        fb_1 &lt;=: m_1 / section_1 | psi, MPA, 1 | bending stress _[E]</span>
-
-<span class="s2">        fb_1 &lt; 10*ksi | ok, not ok, blue, red, right _[E]</span>
+<span class="s2">    omega_1 &lt;=: dl_1 + ll_1 | klf, kN_m, 2 | Total load [ASCE7-05 2.3.2]</span>
 
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
-<span class="c1"># %% tool</span>
-<span class="n">rv</span><span class="o">.</span><span class="n">T</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Metadata</span>
 
-<span class="s2">    _[[PYTHON]]</span>
-<span class="s2">    rv_metaD = {</span>
-<span class="s2">    &quot;authors&quot;: &quot;rholland&quot;,</span>
-<span class="s2">    &quot;version&quot;: &quot;0.7.2&quot;,</span>
-<span class="s2">    &quot;email&quot;: &quot;rod.h.holland@gmail.com&quot;,</span>
-<span class="s2">    &quot;repo&quot;: &quot;https://github.com/rivt-info/rivt-single-doc&quot;,</span>
-<span class="s2">    &quot;license&quot;: &quot;https://opensource.org/license/mit/&quot;,</span>
-<span class="s2">    &quot;fork1&quot;: [&quot;author&quot;, &quot;version&quot;, &quot;email&quot;, &quot;repo&quot;],</span>
-<span class="s2">    &quot;fork2&quot;: [],</span>
-<span class="s2">    }</span>
-<span class="s2">    _[[END]]</span>
+<span class="c1"># %% rv.V(&quot;&quot;&quot;Beam Stress</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Beam Response</span>
+
+<span class="s2">    The following lines import the beam geometry from an external file,</span>
+<span class="s2">    calculate section properties from imported functions and calculate</span>
+<span class="s2">    the maximum moment, bending stress and mid-span deflection.</span>
+
+<span class="s2">    | PYTHON | rvsrc/sectprop.py | Beam functions</span>
+
+<span class="s2">    section_1 :=: rectsect(b_1, h_1) | in3, cm3, 2 | rectangle - S (sectprop.py)</span>
+
+<span class="s2">    inertia_1 :=: rectinertia(b_1, h_1) | in4, cm4, 1 | rectangle - I (sectprop.py)</span>
+
+<span class="s2">    | IMAGE2 | rvsrc/ss-beam2.png, rvsrc/ss-beam1.png | Moment diagram, Deflection diagram,46,54,num,num</span>
+
+<span class="s2">    ##  The line tag [M] formats the equation using utf-8 text.</span>
+<span class="s2">    σ1 = M1 / S1 _[M]  Maximum bending stress  formula</span>
+
+<span class="s2">    m_1 &lt;=: omega_1 * spn_1**2 / 8 | ftkips, mkN, 2 | Mid-span UDL moment</span>
+
+<span class="s2">    fb_1 &lt;=: m_1 / section_1 | psqin, MPA, 1 | Bending stress</span>
+
+<span class="s2">    fb_1 &lt; Fb_1 | ksi, 2, OK, &gt;&gt;&gt; NOT OK | Stress ratio</span>
+
+<span class="s2">    delta_1 :=: midspan_delta(spn_1, omega_1, E_1, inertia_1) | inch, mm, 2 | mid-span deflection (sectprop.py)</span>
 
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
-<span class="c1"># %% doc</span>
+
+
+<span class="c1"># %% rv.D(&quot;&quot;&quot;Publish Doc</span>
 <span class="n">rv</span><span class="o">.</span><span class="n">D</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Publish Doc</span>
 
-<span class="s2">    _[[LAYOUT]]</span>
-<span class="s2">        logopathP: logo.png</span>
-<span class="s2">        pdfheaderL: [docnameS, pageS, totalpageS]</span>
-<span class="s2">        footerL: [logoO, dateO, timeO, filenameS, versionS]</span>
+<span class="s2">    A rivt file may be published as a text, PDF or HTML doc by changing the</span>
+<span class="s2">    PUBLISH type parameter to text, pdf or html. The PUBLISH command follows the</span>
+<span class="s2">    METADATA block.</span>
+
+<span class="s2">    Published files are found in sub-folders of the _published folder. A text</span>
+<span class="s2">    version of the doc or report is is always written to the rivt and</span>
+<span class="s2">    _rivt-public folders as a README.txt file which is displayed on the</span>
+<span class="s2">    first page of a GitHub repo.</span>
+
+<span class="s2">    _[[METADATA]]</span>
+<span class="s2">    [doc]</span>
+<span class="s2">    authors = R Holland</span>
+<span class="s2">    version = 1.0.0a11</span>
+<span class="s2">    repo = https://github.com/rivt-info/rivt-single-doc</span>
+<span class="s2">    license = https://opensource.org/license/mit/</span>
+<span class="s2">    copyright = -</span>
+<span class="s2">    fork1_authors = -</span>
+<span class="s2">    fork1_version = -</span>
+<span class="s2">    fork1_repo = -</span>
+<span class="s2">    fork1_license = https://opensource.org/license/mit/</span>
+
+<span class="s2">    [layout]</span>
+<span class="s2">    title = UDL Beam</span>
+<span class="s2">    subtitle =  Example 1 - rivt Doc</span>
+<span class="s2">    copyright = --</span>
+<span class="s2">    client = Attn: User Example</span>
+<span class="s2">    coverlogo = rvsrc/logo1.png</span>
+<span class="s2">    coverlogo_size = 50</span>
+<span class="s2">    runninglogo = rvsrc/logo2.png</span>
+<span class="s2">    runninglabel = rivt</span>
+<span class="s2">    project_ref = proj. 0001</span>
+<span class="s2">    pdf_pagesize = letter</span>
+<span class="s2">    pdf_margins = 1in, 1in, 1in, 1in</span>
+<span class="s2">    pdf_link_underline = true</span>
+
+<span class="s2">    [process]</span>
+<span class="s2">    private_heading = true ; if false, default heading changed to public</span>
+<span class="s2">    keep_files = true ; if false, files in folders with leading &quot;_&quot; are deleted</span>
+<span class="s2">    auto_cfg = true ; if false, config files are not updated from rivt file</span>
 <span class="s2">    _[[END]]</span>
 
-<span class="s2">    | PUBLISH | rivt | rst2pdf</span>
+<span class="s2">    | PUBLISH | Example 1 - rivt Doc | pdf</span>
 
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
 <hr class="docutils" />
-<section id="example-1-text-doc">
-<h3><strong>2-2</strong> Example 1 - text doc<a class="headerlink" href="#example-1-text-doc" title="Link to this heading">#</a></h3>
-<p>This is the output for Example 1.</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>this is a code block
+<section id="screenshot-vscode-rivt-file">
+<h2><strong>[3]</strong> Screenshot - VSCode rivt file<a class="headerlink" href="#screenshot-vscode-rivt-file" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id1">
+<a class="dark-light reference internal image-reference" href="_images/example1.png"><img alt="rivt logo" class="dark-light" height="1807" src="_images/example1.png" width="635" />
+</a>
+<figcaption>
+<p><span class="caption-text">rivt file in VSCode (click to enlarge)</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<hr class="docutils" />
+<section id="rivt-text-doc">
+<h2><strong>[4]</strong> rivt text doc<a class="headerlink" href="#rivt-text-doc" title="Link to this heading">#</a></h2>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>--------------------------------------------------------------------------------
+Example 1 - rivt Doc | R Holland | v-1.0.0a11 | 2026-05-27 - 08:45AM
+--------------------------------------------------------------------------------
+
+
+1.1  Summary
+--------------------------------------------------------------------------------
+
+This rivt file example calculates the maximum stress and deflection in a
+simply supported, uniformly loaded beam. It also serves as an annotated
+example of a rivt doc with multiple sections that is not part of a report.
+
+The example illustrates the use of some of the most common API functions,
+commands and tags. Further details are provided in the
+rivt user manual, https://www.rivt.info .
+
+The file may be formatted as a text, PDF or HTML doc by changing the type
+parameter in the PUBLISH command at the end of each rivt file (Doc-API
+*rv.D*). Published files are found in the *_published* folder.
+
+
+
+1.2  Load Combinations
+--------------------------------------------------------------------------------
+
+Table 1: ASCE 7-05 Load Effects (stored: t001-1.csv)
+============= ================================================
+Equation No.    Load Combination
+============= ================================================
+16-1           1.4(D+F)
+16-2           1.2(D+F+T) + 1.6(L+H) + 0.5(Lr or S or R)
+16-3           1.2(D+F+T) + 1.6(Lr or S or R) + (f1L or 0.8W)
+============= ================================================
+
+
+
+
+1.3  Loads and Geometry
+--------------------------------------------------------------------------------
+
+Successive value definitions are formatted as a table. Variable
+values are defined with the define operator. The line tag [T] labels and
+numbers the table.
+
+
+Table 2: Define Unit Loads
+==========  ===============  =============  =====================
+variable    value            [value]        description
+==========  ===============  =============  =====================
+D_1         3.80 psf         0.18 kPA       joists DL
+D_2         2.10 psf         0.10 kPA       plywood DL
+D_3         10.00 psf        0.48 kPA       partitions DL
+D_4         3.00 klf         43.78 kN_m     fixed machinery DL
+L_1         40.00 psf        1.92 kPA       ASCE7-O5 LL
+b_1         10.00 inch       254.00 mm      beam width
+h_1         18.00 inch       457.20 mm      beam depth
+E_1         29000.00 ksi     199947.96 MPA  modulus of elasticity
+Fb_1        20000.00 lb_in2  137.90 MPA     allowable stress
+==========  ===============  =============  =====================
+
+The VALTABLE command reads variable values from a file in the rvsrc
+folder. The description is used as the table title. The range specifies the
+starting and ending line to be read from the file (0:0 means all lines).
+
+
+Table 3: Beam Geometry (rvsrc/beam1.csv)
+==========  ========  =========  =============
+variable    value     [value]    description
+==========  ========  =========  =============
+spc_1       2.00 ft   0.61 m     beam spacing
+spn_1       16.00 ft  4.88 m     beam span
+==========  ========  =========  =============
+
+
+        ----------------------------------------
+Fig. 1 - Beam Diagram
+        ----------------------------------------
+
+
+                        Uniform Distributed Loads
+
+
+┌  Eq-1 | Dead load [ASCE7-05 2.3.2]
+│
+│     dl₁ = 1.2⋅(D₄ + spc₁⋅(D₁ + D₂ + D₃))
+└
+
+dl₁ = 3.64 klf    [dl₁] = 53.09 kN_m  | Dead load [ASCE7-05 2.3.2]
+
+==================  ============  =========  =============  ==========
+D₄                  spc₁          D₁         D₃             D₂
+==================  ============  =========  =============  ==========
+3.00 klf            2.00 ft       3.80 psf   10.00 psf      2.10 psf
+—————               —————         —————      —————          —————
+fixed machinery DL  beam spacing  joists DL  partitions DL  plywood DL
+==================  ============  =========  =============  ==========
+
+
+┌  Eq-2 | Live load [ASCE7-05 2.3.2]
+│
+│     ll₁ = 1.6⋅L₁⋅spc₁
+└
+
+ll₁ = 0.13 klf    [ll₁] = 1.87 kN_m  | Live load [ASCE7-05 2.3.2]
+
+===========  ============
+L₁           spc₁
+===========  ============
+40.00 psf    2.00 ft
+—————        —————
+ASCE7-O5 LL  beam spacing
+===========  ============
+
+
+┌  Eq-3 | Total load [ASCE7-05 2.3.2]
+│
+│     ω₁ = dl₁ + ll₁
+└
+
+ω₁ = 3.77 klf    [ω₁] = 54.96 kN_m  | Total load [ASCE7-05 2.3.2]
+
+==========================  ==========================
+ll₁                         dl₁
+==========================  ==========================
+128.00 ft·psf               3.64 klf
+—————                       —————
+Live load [ASCE7-05 2.3.2]  Dead load [ASCE7-05 2.3.2]
+==========================  ==========================
+
+
+
+1.4  Beam Response
+--------------------------------------------------------------------------------
+
+The following lines import the beam geometry from an external file,
+calculate section properties from imported functions and calculate
+the maximum moment, bending stress and mid-span deflection.
+
+
+Table 4: Beam functions (rvsrc/sectprop.py)
+
+==========================  =====================================================
+Function                    Docstring
+==========================  =====================================================
+rectsect(b, d)              section modulus of rectangle
+rectinertia(b, d)           moment of inertia of rectangle
+midspan_delta(ln, w, e, i)  mid-span deflection of simply supported beam with UDL
+==========================  =====================================================
+
+
+
+┌  Eq-4 | rectangle - S (sectprop.py)
+│
+│     section₁ = rectsect(b₁, h₁)
+└
+
+section₁ = 540.00 in3   [section₁] = 8849.01 cm3  | rectangle - S (sectprop.py)
+
+==========  ==========
+h₁          b₁
+==========  ==========
+18.00 inch  10.00 inch
+—————       —————
+beam depth  beam width
+==========  ==========
+
+
+┌  Eq-5 | rectangle - I (sectprop.py)
+│
+│     inertia₁ = rectinertia(b₁, h₁)
+└
+
+inertia₁ = 4860.0 in4   [inertia₁] = 202288.5 cm4  | rectangle - I (sectprop.py)
+
+==========  ==========
+h₁          b₁
+==========  ==========
+18.0 inch   10.0 inch
+—————       —————
+beam depth  beam width
+==========  ==========
+
+        ----------------------------------------
+Fig. 2 - Moment diagram  | Fig. 3 - Deflection diagram
+files: rvsrc/ss-beam2.png, rvsrc/ss-beam1.png
+        ----------------------------------------
+
+
+┌  Eq-6 |   Maximum bending stress  formula
+│
+│          M₁
+│     σ₁ = ──
+│          S₁
+└
+
+
+
+
+┌  Eq-7 | Mid-span UDL moment
+│
+│                 2
+│          ω₁⋅spn₁
+│     m₁ = ────────
+│             8
+└
+
+m₁ = 120.52 ftkip    [m₁] = 163.40 mkN  | Mid-span UDL moment
+
+=========  ===========================
+spn₁       ω₁
+=========  ===========================
+16.00 ft   3.77 klf
+—————      —————
+beam span  Total load [ASCE7-05 2.3.2]
+=========  ===========================
+
+
+┌  Eq-8 | Bending stress
+│
+│              m₁
+│     fb₁ = ────────
+│           section₁
+└
+
+fb₁ = 2678.2 lb_in2    [fb₁] = 18.5 MPA  | Bending stress
+
+===========================  ===================
+section₁                     m₁
+===========================  ===================
+540.0 inch3                  120.5 ft2·klf
+—————                        —————
+rectangle - S (sectprop.py)  Mid-span UDL moment
+===========================  ===================
+
+┌  Eq-9 | Stress ratio
+│
+│     fb_1 &lt; Fb_1
+└
+
+▮  ========  =========  ===========  =======  ============
+▮  fb₁       Fb₁        ratio L/R    check    reference
+▮  ========  =========  ===========  =======  ============
+▮  2.68 ksi  20.00 ksi  0.133908     OK       Stress ratio
+▮  ========  =========  ===========  =======  ============
+
+
+
+
+┌  Eq-10 | mid-span deflection (sectprop.py)
+│
+│     δ₁ = midspan_δ(spn₁, ω₁, E₁, inertia₁)
+└
+
+δ₁ = 0.04 inch   [δ₁] = 1.00 mm  | mid-span deflection (sectprop.py)
+
+=========  ===========================  =====================  ===========================
+spn₁       ω₁                           E₁                     inertia₁
+=========  ===========================  =====================  ===========================
+16.00 ft   3.77 klf                     29000.00 ksi           4860.00 inch4
+—————      —————                        —————                  —————
+beam span  Total load [ASCE7-05 2.3.2]  modulus of elasticity  rectangle - I (sectprop.py)
+=========  ===========================  =====================  ===========================
 </pre></div>
 </div>
-</section>
-</section>
-<section id="example-2">
-<h2><strong>[3]</strong> Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h2>
-<blockquote>
-<div><p>This is a report. It illustrates use of the rivt-report.py script.</p>
-</div></blockquote>
 </section>
 </section>
 
@@ -564,13 +898,10 @@ the common API functions and rivt markup syntax.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-files"><strong>[1]</strong> Example Files</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1"><strong>[2]</strong> Example 1</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-file-ex-1"><strong>[2-1]</strong> rivt file - Ex. 1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1-text-doc"><strong>2-2</strong> Example 1 - text doc</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2"><strong>[3]</strong> Example 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#single-doc-example"><strong>[1]</strong> Single doc example</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-file-ex-1"><strong>[2]</strong> rivt file Ex. 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#screenshot-vscode-rivt-file"><strong>[3]</strong> Screenshot - VSCode rivt file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-text-doc"><strong>[4]</strong> rivt text doc</a></li>
 </ul>
   </nav></div>
 
