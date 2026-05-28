@@ -3,7 +3,7 @@
 
 .. _rivt-example2:
 
-**[1]** Single doc example 2
+**[1]** Example 2 - single doc
 -----------------------------------------------
 
 This example file illustrates use of external functions. 
@@ -15,7 +15,7 @@ This example file illustrates use of external functions.
 ------------------
 
 
-**[2]** rivt file Ex. 2
+**[2]** rivt file - Ex. 2
 --------------------------------------------------
 
 .. code-block:: python

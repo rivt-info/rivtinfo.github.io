@@ -228,5 +228,6 @@ Python and programming.
 
     rvA02-docex1.rst
     rvA03-docex2.rst
-    rvA04-faq.rst
+    rvA04-repex3.rst
+    rvA05-faq.rst
 

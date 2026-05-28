@@ -9,11 +9,11 @@
 Three examples are provided.
 
 - Example 1
-    This single doc example file illustrates common API functions and rivt 
-    markup. The %% marks indicate sections that can be interactively 
-    processed as cells (similar to a Jupyter Notebook). They are created with 
-    a shortcut and also provide an interactive table of contents for 
-    navigating in VSCode.  
+    This single doc example file illustrates common API functions and rivt
+    markup. The %% marks indicate sections that can be interactively processed
+    as cells (similar to a Jupyter Notebook). They can be created with a
+    shortcut provided by *rivt extensions* . They also provide an interactive
+    table of contents for navigating in VSCode.  
 
     The rivt file is followed by a screenshot of the same rivt file in VSCode 
     with syntax highlights, and the rivt text doc output.
@@ -26,14 +26,12 @@ Three examples are provided.
     A single doc example that illustrates use of Python functions,
 
 - Example 3
-    An example report. *rivt files* may be published as single documents 
-    or compiled into reports. Reports are assembled through a customized 
-    report script - *rivt-report.py*
-
+    An example *rivt report*. Reports are assembled through a customized 
+    report script - *rivt-report.py* stored in the *rivt-report* folder.
 
 ---------------------
 
-**[2]** rivt file Ex. 1
+**[2]** rivt file - Ex. 1
 --------------------------------------------------
 
 .. code-block:: python
@@ -200,14 +198,18 @@ Three examples are provided.
 
 **[3]** Screenshot - VSCode rivt file
 --------------------------------------
+    
+    
+**rivt file in VSCode (click and zoom to enlarge)**
+
 
 .. figure::  _static/img/example1.png
     :class: dark-light
-    :scale: 45%
+    :scale: 25%
     :align: center
-    :alt: rivt logo
+    :alt: rivt file
 
-    rivt file in VSCode (click to enlarge)
+
 
 -----------------------------
 
