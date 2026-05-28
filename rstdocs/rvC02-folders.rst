@@ -214,7 +214,7 @@ names and prefixes are shown in brackets.
 
 **Expanded Folders**
 
-.. code-block:: text
+.. code-block:: bash
 
     [rivt-]Report-Label/             rivt Folder              
         ├── .vscode/                      optional VSCode settings   
@@ -232,7 +232,7 @@ names and prefixes are shown in brackets.
                 ├── [rv201-]filename3.py          rivt file          
                  ...
                 ├── [rvsrc]                       author files and folders        
-                    ├── [downloads]/                   files for download      
+                    ├── [downloads]/                   files to download      
                         └── conc-vals.txt 
                     ├── [page]/                        page layout images              
                         ├── favicon.png    
