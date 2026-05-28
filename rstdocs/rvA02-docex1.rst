@@ -3,26 +3,35 @@
 
 .. _rivt-examples:
 
-**[1]** Single doc example
+**[1]** Examples
 -----------------------------------------------
  
-This example file illustrates common API functions and rivt markup. The %% cell
-marks indicate sections that can be individually processed as cells. They are
-created with a shortcut and provide an interactive table of contents for
-navigating in VSCode.  
+Three examples are provided.
 
-The rivt file is followed by a screenshot of the same rivt file in VSCode with
-syntax highlights, and the rivt text doc output.
+- Example 1
+    This single doc example file illustrates common API functions and rivt 
+    markup. The %% marks indicate sections that can be interactively 
+    processed as cells (similar to a Jupyter Notebook). They are created with 
+    a shortcut and also provide an interactive table of contents for 
+    navigating in VSCode.  
 
-- The entire project can be downloaded here or here.
-- The PDF output is here.
-- The HTML output is here.
+    The rivt file is followed by a screenshot of the same rivt file in VSCode 
+    with syntax highlights, and the rivt text doc output.
 
-*rivt files* may be published as single documents or compiled into reports. 
-Reports are assembled through a customized report script - *rivt-report.py*
-(see  for a report example). 
+    - The entire project can be downloaded here or here. 
+    - The PDF output is here.
+    - The HTML output is here.
 
-------------------
+- Example 2
+    A single doc example that illustrates use of Python functions,
+
+- Example 3
+    An example report. *rivt files* may be published as single documents 
+    or compiled into reports. Reports are assembled through a customized 
+    report script - *rivt-report.py*
+
+
+---------------------
 
 **[2]** rivt file Ex. 1
 --------------------------------------------------
@@ -32,8 +41,8 @@ Reports are assembled through a customized report script - *rivt-report.py*
     # %% import
     import rivtlib.rvapi as rv
 
-    # The following settings are needed if defaults need to be changed (defaults
-    # in parenthesis). A leading hash (#) and trailing semicolon (;) are required.
+    # The following settings are needed if defaults (in parenthesis) need to
+    # be changed. A leading hash (#) and trailing semicolon (;) are required.
 
     # rv set_width = 80  ; character width of text output (80)
     # rv no_tag = true ; if false, an API tag is added to section number (true)
@@ -194,7 +203,7 @@ Reports are assembled through a customized report script - *rivt-report.py*
 
 .. figure::  _static/img/example1.png
     :class: dark-light
-    :scale: 30%
+    :scale: 45%
     :align: center
     :alt: rivt logo
 
@@ -206,6 +215,10 @@ Reports are assembled through a customized report script - *rivt-report.py*
 **[4]** rivt text doc
 -------------------------------------------------
 
+This is the text form of the *doc*.
+
+- The *PDF doc* is here.
+- The *HTML doc* is here.
 
 .. code-block:: text
 

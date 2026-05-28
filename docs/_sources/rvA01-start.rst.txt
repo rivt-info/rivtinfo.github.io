@@ -227,5 +227,6 @@ Python and programming.
     :hidden:
 
     rvA02-docex1.rst
-    rvA03-faq.rst
+    rvA03-docex2.rst
+    rvA04-faq.rst
 
