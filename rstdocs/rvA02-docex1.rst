@@ -36,6 +36,7 @@ Three examples are provided.
 
 .. code-block:: python
 
+    #! python
     # %% import
     import rivtlib.rvapi as rv
 
@@ -45,139 +46,65 @@ Three examples are provided.
     # rv set_width = 80  ; character width of text output (80)
     # rv no_tag = true ; if false, an API tag is added to section number (true)
 
-
-    # %% rv.I("""Summary
-    rv.I("""Summary  
-
-        This rivt file example calculates the maximum stress and deflection in a
-        simply supported, uniformly loaded beam. It also serves as an annotated
-        example of a rivt doc with multiple sections that is not part of a report.
-
-        The example illustrates the use of some of the most common API functions,
-        commands and tags. Further details are provided in the 
-        _[U] rivt user manual, https://www.rivt.info].
-
-        The file may be formatted as a text, PDF or HTML doc by changing the type
-        parameter in the PUBLISH command at the end of each rivt file (Doc-API
-        *rv.D*). Published files are found in the *_published* folder.
-
-        """)
-
-    # %% rv.I("""Load Combinations
-    rv.I("""Load Combinations 
-
-        ## Indented comments with double hashes will not appear in the doc
-        ## An inline table contained in a TABLE block is written to a CSV file. 
-        _[[TABLE]]  ASCE 7-05 Load Effects
-        ============= ================================================
-        Equation No.    Load Combination
-        ============= ================================================
-        16-1           1.4(D+F)
-        16-2           1.2(D+F+T) + 1.6(L+H) + 0.5(Lr or S or R)
-        16-3           1.2(D+F+T) + 1.6(Lr or S or R) + (f1L or 0.8W)
-        ============= ================================================
-        _[[END]]
-
-        """)
-
-    # %% rv.V("""Loads and Geometry
-    rv.V("""Loads and Geometry 
+    # %% project description
+    rv.I("""Project description
         
-        Successive value definitions are formatted as a table. Variable
-        values are defined with the define operator. The line tag [T] labels and
-        numbers the table.
+        Design of embedded pole foundation for the flagpole design example in
+        Appendix A of NAAMM/FP 1001-07, "Guide Specifications for Design of Metal
+        Flagpoles" Embedded pole foundation design is per 2024 IBC Eq 6-1 and Table
+        18-I-A. Soil properites are per Table 1806.2 in the 2024 IBC
+
+    """)
+
+    # %% design input
+    rv.V("""Design input 
         
-        Define Unit Loads _[T]
-        D_1 ==: 3.8 * psf | psf, kPA, 2 | joists DL         
-        D_2 ==: 2.1 * psf | psf, kPA, 2 | plywood DL          
-        D_3 ==: 10.0 * psf | psf, kPA, 2 | partitions DL       
-        D_4 ==: 2 * 1.5 * klf | klf, kN_m, 2 | fixed machinery DL
-        L_1 ==: 40 * psf | psf, kPA, 2 | ASCE7-O5 LL
-        b_1 ==: 10 * inch | inch, mm, 2 | beam width
-        h_1 ==: 18 * inch | inch, mm, 2 | beam depth
-        E_1 ==: 29000 * ksi | ksi, MPA, 2 | modulus of elasticity
-        Fb_1 ==: 20000 * psqin | psqin, MPA, 2 | allowable stress   
+
+        | IMAGE | rvsrc/image1.png | Calculation Diagram, 30, num 
+
+        Design input _[T]
+        Mbase ==: 24.835 * ftkips |ftkips, mkN, 2 | moment at base of flagpole
+        P ==: 24.835 * kips |kips,kN,2| horizontal load
+        b ==: 24 * inch |inch, cm, 2 | width of concrete drilled pier
+        PFP ==: 200 * pcf | pcf, kN_m3, 2| allowable lateral bearing pressure - sandy gravel  
+        h ==: 1 * ft | ft, m, 2| height
+        d ==: 10 * ft | ft, m, 2| initial guess for embedment depth   
+
+
+        # This command loads Python functions from a file.
+
+        | PYTHON | rvsrc/pole_embed.py | Iterative functions
         
-        The VALTABLE command reads variable values from a file in the rvsrc
-        folder. The description is used as the table title. The range specifies the
-        starting and ending line to be read from the file (0:0 means all lines).
-
-        | VALTABLE | rvsrc/beam1.csv | Beam Geometry, 0:0
-
-        ## The IMAGE command inserts an image file with caption, % scale, num;non option 
-        | IMAGE | rvsrc/beam1.png | Beam Diagram, 60, num
-
-        Uniform Distributed Loads _[C]
-        dl_1 <=: 1.2 * (spc_1 * (D_1 + D_2 + D_3) + D_4) | klf, kN_m, 2 | Dead load [ASCE7-05 2.3.2]
-
-        ll_1 <=: 1.6 * spc_1 * L_1 | klf, kN_m, 2 | Live load [ASCE7-05 2.3.2]
+        depth_1 :=: Depth_nonconstrained (d, P, h, b, PFP, 2) | ft, m, 2 | Required embed - nonconstrained
         
-        omega_1 <=: dl_1 + ll_1 | klf, kN_m, 2 | Total load [ASCE7-05 2.3.2]
-        
-        """)
+        depth_2 :=: Depth_constrained (d, P, h, b, PFP) | ft, m, 2 | Required embed - constrained
 
-    # %% rv.V("""Beam Stress
-    rv.V("""Beam Response
+    """)
 
-        The following lines import the beam geometry from an external file, 
-        calculate section properties from imported functions and calculate 
-        the maximum moment, bending stress and mid-span deflection. 
+    # %% publish doc
+    rv.D("""Publish doc
 
-        | PYTHON | rvsrc/sectprop.py | Beam functions
-
-        section_1 :=: rectsect(b_1, h_1) | in3, cm3, 2 | rectangle - S (sectprop.py)
-
-        inertia_1 :=: rectinertia(b_1, h_1) | in4, cm4, 1 | rectangle - I (sectprop.py)
-
-        | IMAGE2 | rvsrc/ss-beam2.png, rvsrc/ss-beam1.png | Moment diagram, Deflection diagram,46,54,num,num
-
-        ##  The line tag [M] formats the equation using utf-8 text.
-        σ1 = M1 / S1 _[M]  Maximum bending stress  formula
-            
-        m_1 <=: omega_1 * spn_1**2 / 8 | ftkips, mkN, 2 | Mid-span UDL moment 
-        
-        fb_1 <=: m_1 / section_1 | psqin, MPA, 1 | Bending stress 
-
-        fb_1 < Fb_1 | ksi, 2, OK, >>> NOT OK | Stress ratio 
-
-        delta_1 :=: midspan_delta(spn_1, omega_1, E_1, inertia_1) | inch, mm, 2 | mid-span deflection (sectprop.py)
-
-        """)
-
-
-    # %% rv.D("""Publish Doc
-    rv.D("""Publish Doc 
-        
-        A rivt file may be published as a text, PDF or HTML doc by changing the
-        PUBLISH type parameter to text, pdf or html. The PUBLISH command follows the
-        METADATA block. 
-        
-        Published files are found in sub-folders of the _published folder. A text
-        version of the doc or report is is always written to the rivt and
-        _rivt-public folders as a README.txt file which is displayed on the
-        first page of a GitHub repo. 
-        
         _[[METADATA]] 
         [doc]
-        authors = R Holland
+        authors = R Ward
         version = 1.0.0a11
-        repo = https://github.com/rivt-info/rivt-single-doc
+        repo = -
         license = https://opensource.org/license/mit/
         copyright = -
         fork1_authors = -
         fork1_version = -
         fork1_repo = -
         fork1_license = https://opensource.org/license/mit/
-        
+
         [layout]
         title = UDL Beam
-        subtitle =  Example 1 - rivt Doc  
+        subtitle =  Example 2 - rivt Doc  
         copyright = --
-        client = Attn: User Example
-        coverlogo = rvsrc/logo1.png
+        client = User Example
+        coverlogo = logo2.png
         coverlogo_size = 50
-        runninglogo = rvsrc/logo2.png
-        runninglabel = rivt
+        runninglogo = rwlogo.png
+        runninglabel = Robert Ward SE
         project_ref = proj. 0001
         pdf_pagesize = letter
         pdf_margins = 1in, 1in, 1in, 1in 
@@ -189,9 +116,11 @@ Three examples are provided.
         auto_cfg = true ; if false, config files are not updated from rivt file
         _[[END]]
         
-        | PUBLISH | Example 1 - rivt Doc | pdf
 
-        """)
+        | PUBLISH | Flag Pole Foundation | text
+
+    """)
+
 
 --------------------------
 

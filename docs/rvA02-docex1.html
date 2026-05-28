@@ -329,7 +329,7 @@
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>A.2 Example 1</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvA03-docex2.html"><strong>A.3 Example 2</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvA04-repex3.html"><strong>[1]</strong> Example 3 - report</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvA04-repex3.html"><strong>A.4 Example 3</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvA05-faq.html"><strong>A.4 FAQ</strong></a></li>
 </ul>
 </div>
@@ -429,7 +429,8 @@ report script - <em>rivt-report.py</em> stored in the <em>rivt-report</em> folde
 <hr class="docutils" />
 <section id="rivt-file-ex-1">
 <h2><strong>[2]</strong> rivt file - Ex. 1<a class="headerlink" href="#rivt-file-ex-1" title="Link to this heading">#</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %% import</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#! python</span>
+<span class="c1"># %% import</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
 
 <span class="c1"># The following settings are needed if defaults (in parenthesis) need to</span>
@@ -438,123 +439,49 @@ report script - <em>rivt-report.py</em> stored in the <em>rivt-report</em> folde
 <span class="c1"># rv set_width = 80  ; character width of text output (80)</span>
 <span class="c1"># rv no_tag = true ; if false, an API tag is added to section number (true)</span>
 
+<span class="c1"># %% project description</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Project description</span>
 
-<span class="c1"># %% rv.I(&quot;&quot;&quot;Summary</span>
-<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Summary</span>
+<span class="s2">    Design of embedded pole foundation for the flagpole design example in</span>
+<span class="s2">    Appendix A of NAAMM/FP 1001-07, &quot;Guide Specifications for Design of Metal</span>
+<span class="s2">    Flagpoles&quot; Embedded pole foundation design is per 2024 IBC Eq 6-1 and Table</span>
+<span class="s2">    18-I-A. Soil properites are per Table 1806.2 in the 2024 IBC</span>
 
-<span class="s2">    This rivt file example calculates the maximum stress and deflection in a</span>
-<span class="s2">    simply supported, uniformly loaded beam. It also serves as an annotated</span>
-<span class="s2">    example of a rivt doc with multiple sections that is not part of a report.</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
 
-<span class="s2">    The example illustrates the use of some of the most common API functions,</span>
-<span class="s2">    commands and tags. Further details are provided in the</span>
-<span class="s2">    _[U] rivt user manual, https://www.rivt.info].</span>
-
-<span class="s2">    The file may be formatted as a text, PDF or HTML doc by changing the type</span>
-<span class="s2">    parameter in the PUBLISH command at the end of each rivt file (Doc-API</span>
-<span class="s2">    *rv.D*). Published files are found in the *_published* folder.</span>
-
-<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
-
-<span class="c1"># %% rv.I(&quot;&quot;&quot;Load Combinations</span>
-<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Load Combinations</span>
-
-<span class="s2">    ## Indented comments with double hashes will not appear in the doc</span>
-<span class="s2">    ## An inline table contained in a TABLE block is written to a CSV file.</span>
-<span class="s2">    _[[TABLE]]  ASCE 7-05 Load Effects</span>
-<span class="s2">    ============= ================================================</span>
-<span class="s2">    Equation No.    Load Combination</span>
-<span class="s2">    ============= ================================================</span>
-<span class="s2">    16-1           1.4(D+F)</span>
-<span class="s2">    16-2           1.2(D+F+T) + 1.6(L+H) + 0.5(Lr or S or R)</span>
-<span class="s2">    16-3           1.2(D+F+T) + 1.6(Lr or S or R) + (f1L or 0.8W)</span>
-<span class="s2">    ============= ================================================</span>
-<span class="s2">    _[[END]]</span>
-
-<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
-
-<span class="c1"># %% rv.V(&quot;&quot;&quot;Loads and Geometry</span>
-<span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Loads and Geometry</span>
-
-<span class="s2">    Successive value definitions are formatted as a table. Variable</span>
-<span class="s2">    values are defined with the define operator. The line tag [T] labels and</span>
-<span class="s2">    numbers the table.</span>
-
-<span class="s2">    Define Unit Loads _[T]</span>
-<span class="s2">    D_1 ==: 3.8 * psf | psf, kPA, 2 | joists DL</span>
-<span class="s2">    D_2 ==: 2.1 * psf | psf, kPA, 2 | plywood DL</span>
-<span class="s2">    D_3 ==: 10.0 * psf | psf, kPA, 2 | partitions DL</span>
-<span class="s2">    D_4 ==: 2 * 1.5 * klf | klf, kN_m, 2 | fixed machinery DL</span>
-<span class="s2">    L_1 ==: 40 * psf | psf, kPA, 2 | ASCE7-O5 LL</span>
-<span class="s2">    b_1 ==: 10 * inch | inch, mm, 2 | beam width</span>
-<span class="s2">    h_1 ==: 18 * inch | inch, mm, 2 | beam depth</span>
-<span class="s2">    E_1 ==: 29000 * ksi | ksi, MPA, 2 | modulus of elasticity</span>
-<span class="s2">    Fb_1 ==: 20000 * psqin | psqin, MPA, 2 | allowable stress</span>
-
-<span class="s2">    The VALTABLE command reads variable values from a file in the rvsrc</span>
-<span class="s2">    folder. The description is used as the table title. The range specifies the</span>
-<span class="s2">    starting and ending line to be read from the file (0:0 means all lines).</span>
-
-<span class="s2">    | VALTABLE | rvsrc/beam1.csv | Beam Geometry, 0:0</span>
-
-<span class="s2">    ## The IMAGE command inserts an image file with caption, </span><span class="si">% s</span><span class="s2">cale, num;non option</span>
-<span class="s2">    | IMAGE | rvsrc/beam1.png | Beam Diagram, 60, num</span>
-
-<span class="s2">    Uniform Distributed Loads _[C]</span>
-<span class="s2">    dl_1 &lt;=: 1.2 * (spc_1 * (D_1 + D_2 + D_3) + D_4) | klf, kN_m, 2 | Dead load [ASCE7-05 2.3.2]</span>
-
-<span class="s2">    ll_1 &lt;=: 1.6 * spc_1 * L_1 | klf, kN_m, 2 | Live load [ASCE7-05 2.3.2]</span>
-
-<span class="s2">    omega_1 &lt;=: dl_1 + ll_1 | klf, kN_m, 2 | Total load [ASCE7-05 2.3.2]</span>
-
-<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
-
-<span class="c1"># %% rv.V(&quot;&quot;&quot;Beam Stress</span>
-<span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Beam Response</span>
-
-<span class="s2">    The following lines import the beam geometry from an external file,</span>
-<span class="s2">    calculate section properties from imported functions and calculate</span>
-<span class="s2">    the maximum moment, bending stress and mid-span deflection.</span>
-
-<span class="s2">    | PYTHON | rvsrc/sectprop.py | Beam functions</span>
-
-<span class="s2">    section_1 :=: rectsect(b_1, h_1) | in3, cm3, 2 | rectangle - S (sectprop.py)</span>
-
-<span class="s2">    inertia_1 :=: rectinertia(b_1, h_1) | in4, cm4, 1 | rectangle - I (sectprop.py)</span>
-
-<span class="s2">    | IMAGE2 | rvsrc/ss-beam2.png, rvsrc/ss-beam1.png | Moment diagram, Deflection diagram,46,54,num,num</span>
-
-<span class="s2">    ##  The line tag [M] formats the equation using utf-8 text.</span>
-<span class="s2">    σ1 = M1 / S1 _[M]  Maximum bending stress  formula</span>
-
-<span class="s2">    m_1 &lt;=: omega_1 * spn_1**2 / 8 | ftkips, mkN, 2 | Mid-span UDL moment</span>
-
-<span class="s2">    fb_1 &lt;=: m_1 / section_1 | psqin, MPA, 1 | Bending stress</span>
-
-<span class="s2">    fb_1 &lt; Fb_1 | ksi, 2, OK, &gt;&gt;&gt; NOT OK | Stress ratio</span>
-
-<span class="s2">    delta_1 :=: midspan_delta(spn_1, omega_1, E_1, inertia_1) | inch, mm, 2 | mid-span deflection (sectprop.py)</span>
-
-<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+<span class="c1"># %% design input</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Design input</span>
 
 
-<span class="c1"># %% rv.D(&quot;&quot;&quot;Publish Doc</span>
-<span class="n">rv</span><span class="o">.</span><span class="n">D</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Publish Doc</span>
+<span class="s2">    | IMAGE | rvsrc/image1.png | Calculation Diagram, 30, num</span>
 
-<span class="s2">    A rivt file may be published as a text, PDF or HTML doc by changing the</span>
-<span class="s2">    PUBLISH type parameter to text, pdf or html. The PUBLISH command follows the</span>
-<span class="s2">    METADATA block.</span>
+<span class="s2">    Design input _[T]</span>
+<span class="s2">    Mbase ==: 24.835 * ftkips |ftkips, mkN, 2 | moment at base of flagpole</span>
+<span class="s2">    P ==: 24.835 * kips |kips,kN,2| horizontal load</span>
+<span class="s2">    b ==: 24 * inch |inch, cm, 2 | width of concrete drilled pier</span>
+<span class="s2">    PFP ==: 200 * pcf | pcf, kN_m3, 2| allowable lateral bearing pressure - sandy gravel</span>
+<span class="s2">    h ==: 1 * ft | ft, m, 2| height</span>
+<span class="s2">    d ==: 10 * ft | ft, m, 2| initial guess for embedment depth</span>
 
-<span class="s2">    Published files are found in sub-folders of the _published folder. A text</span>
-<span class="s2">    version of the doc or report is is always written to the rivt and</span>
-<span class="s2">    _rivt-public folders as a README.txt file which is displayed on the</span>
-<span class="s2">    first page of a GitHub repo.</span>
+
+<span class="s2">    # This command loads Python functions from a file.</span>
+
+<span class="s2">    | PYTHON | rvsrc/pole_embed.py | Iterative functions</span>
+
+<span class="s2">    depth_1 :=: Depth_nonconstrained (d, P, h, b, PFP, 2) | ft, m, 2 | Required embed - nonconstrained</span>
+
+<span class="s2">    depth_2 :=: Depth_constrained (d, P, h, b, PFP) | ft, m, 2 | Required embed - constrained</span>
+
+<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="c1"># %% publish doc</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">D</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Publish doc</span>
 
 <span class="s2">    _[[METADATA]]</span>
 <span class="s2">    [doc]</span>
-<span class="s2">    authors = R Holland</span>
+<span class="s2">    authors = R Ward</span>
 <span class="s2">    version = 1.0.0a11</span>
-<span class="s2">    repo = https://github.com/rivt-info/rivt-single-doc</span>
+<span class="s2">    repo = -</span>
 <span class="s2">    license = https://opensource.org/license/mit/</span>
 <span class="s2">    copyright = -</span>
 <span class="s2">    fork1_authors = -</span>
@@ -564,13 +491,13 @@ report script - <em>rivt-report.py</em> stored in the <em>rivt-report</em> folde
 
 <span class="s2">    [layout]</span>
 <span class="s2">    title = UDL Beam</span>
-<span class="s2">    subtitle =  Example 1 - rivt Doc</span>
+<span class="s2">    subtitle =  Example 2 - rivt Doc</span>
 <span class="s2">    copyright = --</span>
-<span class="s2">    client = Attn: User Example</span>
-<span class="s2">    coverlogo = rvsrc/logo1.png</span>
+<span class="s2">    client = User Example</span>
+<span class="s2">    coverlogo = logo2.png</span>
 <span class="s2">    coverlogo_size = 50</span>
-<span class="s2">    runninglogo = rvsrc/logo2.png</span>
-<span class="s2">    runninglabel = rivt</span>
+<span class="s2">    runninglogo = rwlogo.png</span>
+<span class="s2">    runninglabel = Robert Ward SE</span>
 <span class="s2">    project_ref = proj. 0001</span>
 <span class="s2">    pdf_pagesize = letter</span>
 <span class="s2">    pdf_margins = 1in, 1in, 1in, 1in</span>
@@ -582,9 +509,10 @@ report script - <em>rivt-report.py</em> stored in the <em>rivt-report</em> folde
 <span class="s2">    auto_cfg = true ; if false, config files are not updated from rivt file</span>
 <span class="s2">    _[[END]]</span>
 
-<span class="s2">    | PUBLISH | Example 1 - rivt Doc | pdf</span>
 
-<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+<span class="s2">    | PUBLISH | Flag Pole Foundation | text</span>
+
+<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
