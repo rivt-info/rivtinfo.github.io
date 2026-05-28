@@ -214,7 +214,7 @@ names and prefixes are shown in brackets.
 
 **Expanded Folders**
 
-.. code-block:: bash
+.. code-block:: text
 
     [rivt-]Report-Label/             rivt Folder              
         ├── .vscode/                      optional VSCode settings   
@@ -231,19 +231,21 @@ names and prefixes are shown in brackets.
                 ├── [rv102-]filename2.py          rivt file       
                 ├── [rv201-]filename3.py          rivt file          
                  ...
-                ├── [rvsrc]                     author source files and folders        
-                    ├── down/                      files to download      
+                ├── [rvsrc]                       author files and folders        
+                    ├── [downloads]/                   files for download      
                         └── conc-vals.txt 
-                    ├── data/                       tables    
+                    ├── [page]/                        page layout images              
+                        ├── favicon.png    
+                        ├── covlogo1.png    
+                        └── runlogo1.png                   
+                    ├── data/                         tables    
                         └── steel-vals.csv                                                 
-                    ├── run/                        scripts and functions              
-                        └── plot.py                   
-                    ├── tools/                      OS shell commands               
+                    ├── tools/                        OS shell commands               
                         └── opensees.sh                        
                     ├── fig1.png
                     └── fig2.jpg                  
                 ├── [rv_stor]/                      rivt-generated source files
-                    ├── [logs]/                         log files
+                    ├── [logs]/                          log files
                         ├── rv101-log.txt
                         └── rv102-log.txt
                     ├── [sect]/                          sections not printed                    
