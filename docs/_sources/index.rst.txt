@@ -28,17 +28,17 @@ Python package and includes :doc:`rivt markup <rvD01-markup>`.
 A *rivt report* is a linked compilation of multiple *rivt docs*.  
 This site is an example of an *HTML rivt report*.
 
-An interface for finding public *rivt files* on **GitHub** is  
-:doc:`here <rvE03-ghsearch>`. A collection of open source models and 
-calculations , including *rivt*, is on **Google Drive** `here <https://www.openmodels.info>`__ 
-. 
+An interface for finding public *rivt files* on **GitHub** is 
+:doc:`here<rvE03-ghsearch>`. A collection of open source downloads, including 
+*rivt*, is on **Google Drive** `here <https://www.openmodels.info>`__ . 
 
 .. raw:: html
 
    <hr>
 
-   <p style="color:rgb(63,177,197);">ver: 1.0.0a12 (Note: rivt is alpha 
-   sofware. Some features are incomplete and the user API may change.)</p>
+   <p style="color:rgb(63,177,197);">ver: 1.0.0a12 
+   (Note: rivt is <i>alpha sofware</i>. Some features are incomplete 
+   and the user API may change.)</p>
 
 .. toctree::
     :maxdepth: 1
