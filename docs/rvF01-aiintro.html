@@ -430,166 +430,20 @@
 </figure>
 <hr><p>As a Python library that takes Python and text strings as input, <em>rivt</em> works
 naturally and effectively with many AI interfaces.</p>
-<p>AI Components</p>
-<p>The AI ecosystem is summarized below to put <em>rivt</em> in an AI context at this
-early stage. AI is built on a few large foundational models with a number of
-UIs, IDEs and agents.</p>
-<p>VSCode is the documented IDE for <em>rivt</em>. Copilot, as part of VSCode, is
-beginning to understand <em>rivt</em> and will make edting suggestions as <em>rivt files</em>
-are written. The most effective ways of using AI in <em>rivt</em> documents is
-currently being explored.</p>
+<p><strong>AI Components</strong></p>
+<p>The AI ecosystem is summarized <a class="reference internal" href="rvF02-aibackgrnd.html#aiback"><span class="std std-ref">here</span></a>. Background is provided to
+put <em>rivt</em> in an AI context at this early stage of development.</p>
+<p>AI is built on a few large foundational models with a number of UIs, IDEs and
+agents that provide potential interfaces to <em>rivt</em>. VSCode is the documented IDE
+for <em>rivt</em>. Copilot, as part of VSCode, is beginning to understand <em>rivt</em> and
+will make edting suggestions as <em>rivt files</em> are written. The most effective way
+of using AI to write and edit <em>rivt</em> documents is currently being explored.</p>
 </section>
 <hr class="docutils" />
 <section id="rivt-ai-agents">
 <h2><strong>[2]</strong> rivt AI agents<a class="headerlink" href="#rivt-ai-agents" title="Link to this heading">#</a></h2>
-<p>AI agents that generate rivt files for specific purposes are planned for release
-as a software service in the latter part of 2026.</p>
-</section>
-<hr class="docutils" />
-<section id="foundational-models">
-<h2><strong>[3]</strong> Foundational Models<a class="headerlink" href="#foundational-models" title="Link to this heading">#</a></h2>
-<p>Foundational models include private and open source services.</p>
-<p><strong>Private</strong></p>
-<p>1. GPT-5 (OpenAI-US): OpenAI’s flagship generation of reasoning and
-coding-optimized models, highly regarded for their mastery of software
-engineering benchmarks.</p>
-<p>2. Claude (Anthropic-US): Renowned for their nuanced writing, sophisticated
-handling of complex logic, and deep integration with tool-use platforms like the
-Model Context Protocol.</p>
-<p>3. Gemini 3 (Google-US) / Ultra: Google’s natively multimodal foundation models,
-designed for massive context windows, seamless deep integration across the
-Android/Google Workspace ecosystem, and heavy reasoning</p>
-<p>4. Llama 4 (Meta-US): Meta’s flagship open-weight entry, heavily favored for
-building custom local AI workflows and broad general knowledge tasks.</p>
-<p>5. Stable Diffusion (Stability AI-US): Open foundation models specialized in latent
-text-to-image and generative video editing.</p>
-<p>6. Devstral (Mistral AI-EU): European-developed models celebrated for their
-efficiency, speed, and suitability for local development.</p>
-<p><strong>Open Source</strong></p>
-<p>7. DeepSeek (China): Open-weight with exceptional mathematical reasoning, efficient
-mixture-of-experts (MoE) architectures, and coding capabilities.</p>
-<p>8. Qwen (Alibaba-China): A family of highly capable generalist and vision-language
-(VL) models developed by Alibaba, scoring highly across academic and reasoning
-benchmarks.</p>
-<p>9. Mistral (EU and China): Created by former DeepMind and Meta scientists, Mistral
-offers highly capable, free-to-download models under the Apache 2.0 license.</p>
-<p>10. Meta Llama (Deep Seek and Meta): highly customizable, and available in various
-sizes.</p>
-<p>11. IBM Granite (US): IBM has open-sourced its enterprise-focused Granite family of
-language, code, and time-series foundation models under the permissive Apache
-2.0 license.</p>
-<p>12. Allen Institute for AI (AI2 - US): Based in Seattle, AI2 regularly open-sources its
-OLMo family of language models, providing full transparency into the training
-data and architecture.</p>
-<p>13. Databricks DBRX (US): Released by the San Francisco-based data and AI company
-Databricks, DBRX is a powerful open-weights model utilizing a mixture-of-experts
-(MoE) architecture.</p>
-</section>
-<section id="agents-and-uis">
-<h2><strong>[4]</strong> Agents and UIs<a class="headerlink" href="#agents-and-uis" title="Link to this heading">#</a></h2>
-<p><strong>Private User Interfaces, Agents and Extensions</strong></p>
-<p>1. ChatGPT: The flagship interface for OpenAI GPT series (featuring GPT-4o and
-reasoning models), offering prompt chat, document analysis, voice interaction,
-and workspace canvases. Access it on OpenAI ChatGPT. ws. Access it on Anthropic
-Claude.</p>
-<p>2. Gemini: Conversational AI interface, directly integrated with the
-Google Workspace ecosystem for exporting documents and generating real-time
-data. Access it on Google Gemini</p>
-<p>3. Google AI Studio: A streamlined, web-based prototyping environment for
-developers to test prompts, adjust model parameters (temperature, token limits),
-and directly generate API code. Visit Google AI Studio.</p>
-<p>4. Claude: Anthropic platform regarded for its advanced reasoning,
-large context windows, and specific interface features like “Projects” and
-artifact generation for coding and design.</p>
-<p>5. Google Gemini: The premier UI for real-time information and deep integration
-with the Google Workspace ecosystem.</p>
-<p>6. Perplexity AI: A specialized, citation-heavy UI designed specifically for
-research, deep web-diving, and source transparency</p>
-<p>7. Cursor: It functions as a rebuilt VS Code fork designed for auto-completion,
-deep multi-file project context, and seamless “in-place” code edits.</p>
-<p>8. Windsurf: Cognition desktop IDE. It stands out for its strong agentic
-workflow, autonomously planning, editing, and executing tests with reviewable
-diffs directly in your project.</p>
-<p>9. GitHub Copilot: The most widely adopted tool. Best for teams seeking enterprise
-integration and real-time inline suggestions directly within their existing
-development tools.</p>
-<p>10. Claude Code: Anthropic CLI-first agent. It excels at deep
-reasoning, reading your entire codebase, planning changes, and iterating on
-failures using natural language.Aider: A powerful command-line pair programmer.
-It is highly favored by terminal power users who want manual context control and
-transparent, incremental git commits.</p>
-<p>11. Cline: A highly transparent, open-source VS Code extension and CLI. It allows
-developers to offload multi-file edits and terminal commands securely with
-in-editor diff approvals.</p>
-<p>12. Codex: can perform tasks for you such as writing features, answering questions
-about your codebase, fixing bugs, and proposing pull requests for review.</p>
-<p><strong>Open Source User Interfaces, Agents and Extensions</strong></p>
-<p>13. Open WebUI
-Open WebUI is a self-hosted, extensible AI interface that supports Ollama,
-OpenAI API, and various LLM runners. It features granular permissions,
-responsive design, full Markdown/LaTeX support, hands-free voice/video calls,
-native Python function calling, persistent artifact storage, local RAG
-integration, web search, image generation/editing, and enterprise
-authentication. It’s ideal for privacy-focused deployments, local model
-experimentation, and enterprise use cases.</p>
-<p>GitHub Link: <a class="github reference external" href="https://github.com/open-webui/open-webui" rel="noreferrer" target="_blank">open-webui/open-webui</a></p>
-<p>14. LobeChat
-LobeChat is a modern, open-source ChatGPT-like UI with support for speech
-synthesis, multi-modal input, a plugin system, agent marketplace, and one-click
-deployment. It supports MCP (Model Context Protocol), smart internet search,
-chain of thought visualization, branching conversations, artifacts, file
-upload/knowledge base, multi-model providers, local LLMs (Ollama), visual
-recognition, TTS/STT, text-to-image generation, and custom themes. LobeChat
-excels in extensibility, user experience, and rapid deployment for both
-individuals and teams.</p>
-<p>GitHub Link: <a class="github reference external" href="https://github.com/lobehub/lobe-chat" rel="noreferrer" target="_blank">lobehub/lobe-chat</a></p>
-<p>15. Text Generation Web UI
-Text Generation Web UI is a popular open-source platform for running and
-interacting with local LLMs. It supports a wide range of models, offers a clean
-interface, and includes advanced features like model presets, plugins, and
-community-driven enhancements. It’s favored by developers and researchers for
-local experimentation and model benchmarking.</p>
-<p>GitHub Link: <a class="github reference external" href="https://github.com/oobabooga/text-generation-webui" rel="noreferrer" target="_blank">oobabooga/text-generation-webui</a></p>
-<p>16. Chatbot UI
-Chatbot UI is a Next.js-based, open-source chat interface that supports OpenAI
-and Azure APIs. It’s designed for easy self-hosting, customization, and rapid
-prototyping, making it a go-to choice for developers building custom chatbot
-experiences. GitHub Link: <a class="github reference external" href="https://github.com/mckaywrigley/chatbot-ui" rel="noreferrer" target="_blank">mckaywrigley/chatbot-ui</a></p>
-<p>17. LibreChat
-LibreChat is an open-source, multi-provider chat UI with support for MCP, rich
-UI features, and a focus on privacy. It’s designed for users who want a
-versatile, self-hosted chat experience with advanced agent orchestration and
-workflow management.</p>
-<p>GitHub Link: <a class="github reference external" href="https://github.com/danny-avila/LibreChat" rel="noreferrer" target="_blank">danny-avila/LibreChat</a></p>
-<p>18. AnythingLLM
-AnythingLLM is a multi-model, MCP-compatible UI that supports local and cloud
-deployment. It’s known for its flexibility, privacy, and ease of use, making it
-suitable for both personal and enterprise AI workflows.</p>
-<p>GitHub Link: <a class="github reference external" href="https://github.com/Mintplex-Labs/anything-llm" rel="noreferrer" target="_blank">Mintplex-Labs/anything-llm</a></p>
-<p>19. Flowise
-Flowise is a visual builder for LangChain-based LLM applications. It enables
-users to create complex agent workflows and pipelines with drag-and-drop ease,
-ideal for developers and non-developers alike.</p>
-<p>GitHub Link: <a class="github reference external" href="https://github.com/FlowiseAI/Flowise" rel="noreferrer" target="_blank">FlowiseAI/Flowise</a></p>
-<p>20. LangFlow
-LangFlow is a visual pipeline builder for LangChain, allowing users to design,
-prototype, and deploy LLM-powered workflows. It’s perfect for rapid
-experimentation and building complex agent logic.</p>
-<p>GitHub Link: <a class="github reference external" href="https://github.com/logspace-ai/langflow" rel="noreferrer" target="_blank">logspace-ai/langflow</a></p>
-<p>21. assistant-ui
-assistant-ui is a React/TypeScript-based component library for building custom
-LLM chat interfaces. It’s highly modular and customizable, making it a favorite
-for developers building tailored agent experiences.</p>
-<p>GitHub Link: <a class="github reference external" href="https://github.com/assistant-ui/assistant-ui" rel="noreferrer" target="_blank">assistant-ui/assistant-ui</a></p>
-<p>22. Streamlit
-Streamlit is a Python-based framework for quickly building and deploying
-interactive web apps, including LLM chat interfaces. It’s ideal for rapid
-prototyping, data science, and AI experimentation.</p>
-<p>GitHub Link: <a class="github reference external" href="https://github.com/streamlit/streamlit" rel="noreferrer" target="_blank">streamlit/streamlit</a></p>
-<p>23. Hugging Chat: An open-source, community-driven interface that hosts multiple
-foundational models (such as Mistral and Llama) in a single chat environment.
-Try it on Hugging Chat.</p>
-<p>Github Link: <a class="github reference external" href="https://github.com/huggingface/chat-ui" rel="noreferrer" target="_blank">huggingface/chat-ui</a></p>
+<p>AI agents that generate <em>rivt files</em> for specific project are planned for
+release as a software service in the latter part of 2026.</p>
 </section>
 </section>
 
@@ -642,8 +496,6 @@ Try it on Hugging Chat.</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-in-ides"><strong>[1]</strong> AI in IDEs</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-ai-agents"><strong>[2]</strong> rivt AI agents</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#foundational-models"><strong>[3]</strong> Foundational Models</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#agents-and-uis"><strong>[4]</strong> Agents and UIs</a></li>
 </ul>
   </nav></div>
 
