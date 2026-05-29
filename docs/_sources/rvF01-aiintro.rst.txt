@@ -4,7 +4,9 @@
 **[1]** AI in IDEs
 --------------------------------------------------------------------- 
 
+.. raw:: html
 
+   <hr>
 
 .. figure::  _static/img/rivt-ai1.png
     :class: dark-light
