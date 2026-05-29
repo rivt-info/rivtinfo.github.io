@@ -32,11 +32,16 @@ beginning to understand *rivt* and will make edting suggestions as *rivt files*
 are written. The most effective ways of using AI in *rivt* documents is
 currently being explored.
 
+------------------------------------
+
+
 **[2]** rivt AI agents
 --------------------------------------------------------------------- 
 
 AI agents that generate rivt files for specific purposes are planned for release 
 as a software service in the latter part of 2026.
+
+------------------------------------
 
 **[3]** Foundational Models
 --------------------------------------------------------------------- 
@@ -65,7 +70,6 @@ text-to-image and generative video editing.
 
 6. Devstral (Mistral AI-EU): European-developed models celebrated for their
 efficiency, speed, and suitability for local development.
-
 
 **Open Source**
 

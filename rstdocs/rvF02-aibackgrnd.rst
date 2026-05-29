@@ -1,49 +1,8 @@
-**F.1** AI
+**F.2** AI Background
 =====================
 
-**[1]** AI in IDEs
---------------------------------------------------------------------- 
 
-.. raw:: html
-
-   <hr>
-
-.. figure::  _static/img/rivt-ai1.png
-    :class: dark-light
-    :scale: 20%
-    :align: center
-    :alt: rivt logo
-    
-.. raw:: html
-
-   <hr>
-
-As a Python library that takes Python and text strings as input, *rivt* works
-naturally and effectively with many AI interfaces.
-
-AI Components
-
-The AI ecosystem is summarized below to put *rivt* in an AI context at this
-early stage. AI is built on a few large foundational models with a number of
-UIs, IDEs and agents. 
-
-VSCode is the documented IDE for *rivt*. Copilot, as part of VSCode, is
-beginning to understand *rivt* and will make edting suggestions as *rivt files*
-are written. The most effective ways of using AI in *rivt* documents is
-currently being explored.
-
-------------------------------------
-
-
-**[2]** rivt AI agents
---------------------------------------------------------------------- 
-
-AI agents that generate rivt files for specific purposes are planned for release 
-as a software service in the latter part of 2026.
-
-------------------------------------
-
-**[3]** Foundational Models
+**[1]** Foundational Models
 --------------------------------------------------------------------- 
 
 Foundational models include private and open source services.
@@ -70,6 +29,7 @@ text-to-image and generative video editing.
 
 6. Devstral (Mistral AI-EU): European-developed models celebrated for their
 efficiency, speed, and suitability for local development.
+
 
 **Open Source**
 
@@ -98,9 +58,9 @@ data and architecture.
 Databricks, DBRX is a powerful open-weights model utilizing a mixture-of-experts
 (MoE) architecture.
 
+------------------------------------
 
-
-**[4]** Agents and UIs
+**[2]** Agents and UIs
 --------------------------------------------------------------------- 
 
 **Private User Interfaces, Agents and Extensions**
@@ -242,6 +202,7 @@ foundational models (such as Mistral and Llama) in a single chat environment.
 Try it on Hugging Chat.
 
 Github Link: https://github.com/huggingface/chat-ui
+
 
 
 
