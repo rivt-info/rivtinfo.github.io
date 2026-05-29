@@ -1,4 +1,4 @@
-**A.3 Example 2**
+**A.3** Example 2
 =========================
 
 .. _rivt-example2:

@@ -1,5 +1,5 @@
 
-**G.1 Quick Ref**
+**G.1 Ref**
 ================== 
 
 .. _API Summary:
