@@ -1,35 +1,46 @@
 import sys
 import os
 from pathlib import Path
+
 sys.path.append(str(Path(".").resolve()))
 
-project = 'rivt.info'
-copyright = '2025 R Holland'
-author = 'rholland'
-release = '0.3.0'
-extensions = ['sphinx.ext.githubpages','sphinx_togglebutton',
-              "sphinxcontrib.jquery", 'sphinx_copybutton',
-              'sphinx_favicon', 'sphinx.ext.duration',
-              'sphinx.ext.doctest', 'sphinx.ext.autodoc',
-              'sphinx_design','sphinx_new_tab_link', 'rst2pdf.pdfbuilder']
-master_doc = 'index'
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
-source_suffix = ['.rst', '.md']
-templates_path = ['_templates']
-locale_dirs = ['_locale'] 
+project = "rivt.info"
+copyright = "2025 R Holland"
+author = "rholland"
+release = "0.3.0"
+extensions = [
+    "sphinx.ext.githubpages",
+    "sphinx_togglebutton",
+    "sphinxcontrib.jquery",
+    "sphinx_copybutton",
+    "sphinx_favicon",
+    "sphinx.ext.duration",
+    "sphinx.ext.doctest",
+    "sphinx.ext.autodoc",
+    "sphinx_design",
+    "sphinx_new_tab_link",
+    "rst2pdf.pdfbuilder",
+]
+master_doc = "index"
+exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
+source_suffix = [".rst", ".md"]
+templates_path = ["_templates"]
+locale_dirs = ["_locale"]
 html_title = "rivt"
-html_theme = 'pydata_sphinx_theme'
+html_theme = "pydata_sphinx_theme"
 html_show_sourcelink = False
 html_context = {"default_mode": "dark"}
 html_sidebars = {"**": ["sidebar-nav-bs.html"]}
-html_static_path = ['_static', '_static/img']
-html_css_files = ['css/custom.css',]
+html_static_path = ["_static", "_static/img"]
+html_css_files = [
+    "css/custom.css",
+]
 html_theme_options = {
-    "pygments_light_style": "tango",  
-    "pygments_dark_style": "github-dark",   
+    "pygments_light_style": "tango",
+    "pygments_dark_style": "github-dark",
     "navbar_start": ["navbar-logo"],
-    "collapse_navigation": True ,
-    "header_links_before_dropdown": 6,
+    "collapse_navigation": True,
+    "header_links_before_dropdown": 7,
     "navbar_align": "left",
     "show_toc_level": 1,
     "navigation_depth": 1,
@@ -39,7 +50,7 @@ html_theme_options = {
         "text": "rivt",
         "image_dark": "rivhome11t.png",
         "image_light": "rivhome11t.png",
-    }
+    },
 }
 favicons = [
     {
