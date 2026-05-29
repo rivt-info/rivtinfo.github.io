@@ -49,4 +49,5 @@ calculations , including *rivt*, is on **Google Drive** `here <https://www.openm
     rvC01-documents.rst
     rvD01-markup.rst
     rvE01-collab.rst
-    rvF01-quickref.rst
+    rvF01-aiintro.rst
+    rvG01-quickref.rst

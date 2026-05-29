@@ -181,11 +181,28 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvF01-quickref.html">
-    F.1 Quick Ref
+  <a class="nav-link nav-internal" href="rvF01-aiintro.html">
+    F.1 AI Overview
   </a>
 </li>
 
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="rvG01-quickref.html">
+    G.1 Quick Ref
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
   </ul>
 </nav></div>
       
@@ -295,8 +312,15 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvF01-quickref.html">
-    F.1 Quick Ref
+  <a class="nav-link nav-internal" href="rvF01-aiintro.html">
+    F.1 AI Overview
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvG01-quickref.html">
+    G.1 Quick Ref
   </a>
 </li>
 
@@ -395,66 +419,23 @@
 <h1><strong>D.2 Line Tags</strong><a class="headerlink" href="#d-2-line-tags" title="Link to this heading">#</a></h1>
 <section id="line-tag-summary">
 <h2><strong>[1]</strong> Line Tag Summary<a class="headerlink" href="#line-tag-summary" title="Link to this heading">#</a></h2>
-<p><strong>Format a line of text</strong></p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>API Scope</p></th>
-<th class="head"><p>Line Tag</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p>text <strong>_[#]</strong> text</p></td>
-<td><p><a class="reference internal" href="#endnote-number"><span class="std std-ref">[6]  Endnote number</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>text <strong>_[D] label, filename |</strong> text</p></td>
-<td><p><a class="reference internal" href="#download-link"><span class="std std-ref">[3] Download link</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p>text <strong>_[G] glossary term |</strong> text</p></td>
-<td><p><a class="reference internal" href="#term-link"><span class="std std-ref">[7] Glossary link</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p>text <strong>_[S] label, section |</strong> text</p></td>
-<td><p><a class="reference internal" href="#section-link"><span class="std std-ref">[8] Section link</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p>text <strong>_[U] label, url |</strong> text</p></td>
-<td><p><a class="reference internal" href="#url-link"><span class="std std-ref">[9] URL link</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I,V</p></td>
-<td><p><strong>title _[T]</strong></p></td>
-<td><p><a class="reference internal" href="#number-table"><span class="std std-ref">[11] Table number</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I,V</p></td>
-<td><p><strong>caption _[F]</strong></p></td>
-<td><p><a class="reference internal" href="#number-figure"><span class="std std-ref">[12] Figure number</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I,V</p></td>
-<td><p>text <strong>_[C]</strong></p></td>
-<td><p><a class="reference internal" href="#bold-center-text"><span class="std std-ref">[2] Bold center text</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I,V</p></td>
-<td><p><strong>text math _[M]</strong> description</p></td>
-<td><p><a class="reference internal" href="#text-math"><span class="std std-ref">[4] Text math</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I,V</p></td>
-<td><p><strong>LaTeX math _[L]</strong> description</p></td>
-<td><p><a class="reference internal" href="#latex-math"><span class="std std-ref">[5] LaTeX math</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I,V</p></td>
-<td><p>text <strong>_[V] var_name |</strong> text</p></td>
-<td><p><a class="reference internal" href="#variable-value"><span class="std std-ref">[10] Variable value</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>all</p></td>
-<td><p><strong>##</strong> text</p></td>
-<td><p>nonprinting comment</p></td>
-</tr>
-</tbody>
-</table>
-</div>
+<p><strong>Format a line of text</strong>
+========== ==================================================== ================================
+API Scope             Line Tag                                      Description
+========== ==================================================== ================================
+rv.I                   text <strong>_[#]</strong> text                         <a class="reference internal" href="#endnote-number"><span class="std std-ref">[6]  Endnote number</span></a>
+rv.I                   text <strong>_[D] label, filename |</strong> text       <a class="reference internal" href="#download-link"><span class="std std-ref">[3] Download link</span></a>
+rv.I                   text <strong>_[G] glossary term |</strong> text         <a class="reference internal" href="#term-link"><span class="std std-ref">[7] Glossary link</span></a>
+rv.I                   text <strong>_[S] label, section |</strong> text        <a class="reference internal" href="#section-link"><span class="std std-ref">[8] Section link</span></a>
+rv.I                   text <strong>_[U] label, url |</strong> text            <a class="reference internal" href="#url-link"><span class="std std-ref">[9] URL link</span></a>
+rv.I,V                <strong>title _[T]</strong>                              <a class="reference internal" href="#number-table"><span class="std std-ref">[11] Table number</span></a>
+rv.I,V              <strong>caption _[F]</strong>                              <a class="reference internal" href="#number-figure"><span class="std std-ref">[12] Figure number</span></a>
+rv.I,V                 text <strong>_[C]</strong>                              <a class="reference internal" href="#bold-center-text"><span class="std std-ref">[2] Bold center text</span></a>
+rv.I,V            <strong>text math _[M]</strong> description                  <a class="reference internal" href="#text-math"><span class="std std-ref">[4] Text math</span></a>
+rv.I,V           <strong>LaTeX math _[L]</strong> description                  <a class="reference internal" href="#latex-math"><span class="std std-ref">[5] LaTeX math</span></a>
+rv.I,V                 text <strong>_[V] var_name |</strong> text              <a class="reference internal" href="#variable-value"><span class="std std-ref">[10] Variable value</span></a>
+all                     <strong>##</strong> text                               nonprinting comment
+========== ==================================================== ================================</p>
 </section>
 <section id="bold-center-text">
 <span id="id1"></span><h2><strong>[2]</strong> Bold center text<a class="headerlink" href="#bold-center-text" title="Link to this heading">#</a></h2>

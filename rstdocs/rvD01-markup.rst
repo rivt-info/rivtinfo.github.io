@@ -120,19 +120,22 @@ including the *public comment setting* immeditely following the
 
     # rv setpublic = true
 
-Individual sections may still be set as private in the header substring.
- 
-========== ===================== ===================== =====================
-API          private; public         doc; stored           section; merge         
-========== ===================== ===================== ===================== 
-rv.R        **private**; public     **stored**; doc       **merge**; section
-rv.I        **private**; public     **doc**; stored       **section**; merge   
-rv.V        **private**; public     **doc**; stored       **section**; merge    
-rv.T        **private**; public     **stored**; doc       **merge**; section
-rv.S        **private**; public     **stored**            **merge**
-rv.D        **public**              **stored**            **merge**
-rv.X         -                       -                    -
-========== ===================== ===================== =====================
+Individual sections may be set as private in the header substring after changing
+default.
+
+**Header substring defaults**
+====== =================== =============== =================== ==================
+API      private; public     doc; stored      section; merge     pdfpage; nopage    
+====== =================== =============== =================== ==================
+rv.R    **private**          **stored**      **section**          **nopage**
+rv.I    **private**          **doc**         **section**          **nopage** 
+rv.V    **private**          **doc**         **section**          **nopage** 
+rv.T    **private**          **stored**      **section**          **nopage**
+rv.D    **public**           **doc**         **section**          **nopage**
+rv.S    **private**          **stored**      **section**          **nopage**
+rv.X         -                       -                -                -
+====== =================== =============== =================== ==================
+
 
 Examples of *header substring* settings are shown below.
 

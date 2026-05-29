@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
-    <title>&lt;no title&gt; &#8212; rivt</title>
+    <title>F.1 AI Overview &#8212; rivt</title>
   
   
   
@@ -56,10 +56,11 @@
     <script src="_static/togglebutton.js?v=1ae7504c"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'rvF01-aiintro';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="A.1 Start" href="rvA01-start.html" />
+    <link rel="next" title="G.1 Quick Ref" href="rvG01-quickref.html" />
+    <link rel="prev" title="E.3 GitHub Search" href="rvE03-ghsearch.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -117,7 +118,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="index.html">
   
   
   
@@ -179,8 +180,8 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvF01-aiintro.html">
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
     F.1 AI Overview
   </a>
 </li>
@@ -245,6 +246,10 @@
   
 
   
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="Sections">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
 </div>
 
     </header>
@@ -255,10 +260,8 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -308,8 +311,8 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvF01-aiintro.html">
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
     F.1 AI Overview
   </a>
 </li>
@@ -343,6 +346,14 @@
     
   </div>
   
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links" aria-label="Docs">
+    <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
+    <div class="bd-toc-item navbar-nav"></div>
+</nav></div>
+    </div>
+  
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
       <div class="sidebar-primary-item">
@@ -363,7 +374,31 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none"></div>
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>F.1 AI Overview</strong></span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
               
               
               
@@ -371,31 +406,21 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div style="height: 0; visibility: hidden;">
-
-Home
-========
-
-</div><figure class="align-center">
-<a class="dark-light reference internal image-reference" href="_images/rivt-finalb.png"><img alt="rivt logo" class="dark-light" height="106" src="_images/rivt-finalb.png" width="133" />
+  <section id="f-1-ai-overview">
+<h1><strong>F.1 AI Overview</strong><a class="headerlink" href="#f-1-ai-overview" title="Link to this heading">#</a></h1>
+<section id="ai-in-ide">
+<h2><strong>[1]</strong> AI in IDE<a class="headerlink" href="#ai-in-ide" title="Link to this heading">#</a></h2>
+<figure class="align-center">
+<a class="dark-light reference internal image-reference" href="_images/rivt-ai1.png"><img alt="rivt logo" class="dark-light" height="174" src="_images/rivt-ai1.png" width="222" />
 </a>
 </figure>
-<hr><p><em>rivt</em> is an extensible, open source Python tool for writing and organizing
-engineering documents. It publishes <em>rivt files</em> to formatted
-<strong>text, HTML or PDF document files (rivt doc)</strong> .  A <em>rivt file</em> is a Python file
-(.py) that imports the <a class="reference external" href="https://pypi.org/project/rivtlib/" rel="noreferrer" target="_blank">rivtlib</a>
-Python package and includes <a class="reference internal" href="rvD01-markup.html"><span class="doc">rivt markup</span></a>.</p>
-<p>A <em>rivt report</em> is a linked compilation of multiple <em>rivt docs</em>.
-This site is an example of an <em>HTML rivt report</em>.</p>
-<p>An interface for finding public <em>rivt files</em> on <strong>GitHub</strong> is
-<a class="reference internal" href="rvE03-ghsearch.html"><span class="doc">here</span></a>. A collection of open source models and
-calculations , including <em>rivt</em>, is on <strong>Google Drive</strong> <a class="reference external" href="https://www.openmodels.info" rel="noreferrer" target="_blank">here</a>
-.</p>
-<hr>
-
-<p style="color:rgb(63,177,197);">ver: 1.0.0a12 (Note: rivt is alpha
-sofware. Some features are incomplete and the user API may change.)</p><div class="toctree-wrapper compound">
-</div>
+<hr><p><em>rivt</em></p>
+</section>
+<section id="ai-agents">
+<h2><strong>[1]</strong> AI Agents<a class="headerlink" href="#ai-agents" title="Link to this heading">#</a></h2>
+<p><em>rivt</em></p>
+</section>
+</section>
 
 
                 </article>
@@ -407,12 +432,21 @@ sofware. Some features are incomplete and the user API may change.)</p><div clas
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="rvE03-ghsearch.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><strong>E.3 GitHub Search</strong></p>
+      </div>
+    </a>
     <a class="right-next"
-       href="rvA01-start.html"
+       href="rvG01-quickref.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>A.1 Start</strong></p>
+        <p class="prev-next-title"><strong>G.1 Quick Ref</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -422,6 +456,25 @@ sofware. Some features are incomplete and the user API may change.)</p><div clas
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Sections
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-in-ide"><strong>[1]</strong> AI in IDE</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-agents"><strong>[1]</strong> AI Agents</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

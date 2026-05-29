@@ -1,5 +1,5 @@
 
-**F.1 Quick Ref**
+**G.1 Quick Ref**
 ================== 
 
 .. _API Summary:
@@ -48,18 +48,17 @@ in the *header substring*.
     # rv setpublic = true
  
 **Header substring defaults**
-
-========== ===================== ===================== =====================
-API          private; public         doc; stored           section; merge         
-========== ===================== ===================== ===================== 
-rv.R        **private**; public     **stored**; doc      **merge**; section
-rv.I        **private**; public     **doc**; stored      **section**; merge   
-rv.V        **private**; public     **doc**; stored      **section**; merge    
-rv.T        **private**; public     **stored**; doc      **merge**; section
-rv.S        **private**; public     **stored**           **merge**
-rv.D        **public**             **stored**            **merge**
-rv.X         -                      -                    -
-========== ===================== ===================== =====================
+====== =================== =============== =================== ==================
+API      private; public     doc; stored      section; merge     pdfpage; nopage    
+====== =================== =============== =================== ==================
+rv.R    **private**          **stored**      **section**          **nopage**
+rv.I    **private**          **doc**         **section**          **nopage** 
+rv.V    **private**          **doc**         **section**          **nopage** 
+rv.T    **private**          **stored**      **section**          **nopage**
+rv.D    **public**           **doc**         **section**          **nopage**
+rv.S    **private**          **stored**      **section**          **nopage**
+rv.X         -                       -                -                -
+====== =================== =============== =================== ==================
 
 ----------------------------------
 
@@ -70,7 +69,6 @@ rv.X         -                      -                    -
 
   
 **Format a line of text**
-   
 ========== ==================================================== ================================
 API Scope             Line Tag                                      Description 
 ========== ==================================================== ================================
@@ -455,7 +453,7 @@ ctl+shift+x          post to remote
     :maxdepth: 1
     :hidden:
 
-    rvF02-terms.rst
+    rvG02-terms.rst
 
 
 

@@ -181,11 +181,28 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvF01-quickref.html">
-    F.1 Quick Ref
+  <a class="nav-link nav-internal" href="rvF01-aiintro.html">
+    F.1 AI Overview
   </a>
 </li>
 
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="rvG01-quickref.html">
+    G.1 Quick Ref
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
   </ul>
 </nav></div>
       
@@ -295,8 +312,15 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvF01-quickref.html">
-    F.1 Quick Ref
+  <a class="nav-link nav-internal" href="rvF01-aiintro.html">
+    F.1 AI Overview
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvG01-quickref.html">
+    G.1 Quick Ref
   </a>
 </li>
 
@@ -328,6 +352,7 @@
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="rvC02-folders.html"><strong>C.2 Files / Folders</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC03-reports.html">C.3 Reports</a></li>
 </ul>
 </div>
 </nav></div>
@@ -390,10 +415,10 @@
 <section id="docs">
 <h2><strong>[1]</strong> Docs<a class="headerlink" href="#docs" title="Link to this heading">#</a></h2>
 <p>A <em>rivt doc</em> is the output of a <em>rivt file</em> processed by <em>rivtlib</em>. Each <em>rivt
-file</em> outputs a formatted <a class="reference internal" href="rvF02-terms.html#term-doc"><span class="xref std std-term">doc</span></a> with a <em>doc number</em> derived from the rivt
+file</em> outputs a formatted <a class="reference internal" href="rvG02-terms.html#term-doc"><span class="xref std std-term">doc</span></a> with a <em>doc number</em> derived from the rivt
 file name. The <em>doc</em> is written to the respective subfolder of the <em>_published</em>
 folder.</p>
-<p>Each <a class="reference internal" href="rvF02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> outputs a corresponding <a class="reference internal" href="rvF02-terms.html#term-doc"><span class="xref std std-term">doc</span></a> of the format
+<p>Each <a class="reference internal" href="rvG02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> outputs a corresponding <a class="reference internal" href="rvG02-terms.html#term-doc"><span class="xref std std-term">doc</span></a> of the format
 specified in PUBLISH command of the <em>rv.D()</em> API. A rivt file number has the
 form:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rvAnn-filename.py
@@ -419,88 +444,10 @@ rv212-filename.py
 <li><p>2.12 (division 2, subdivision 12)</p></li>
 </ul>
 <p>A <em>rivt report</em> is organized using <em>rivt doc numbers</em></p>
+</section>
 <hr class="docutils" />
-</section>
-<section id="rivt-report-py">
-<span id="rivt-report"></span><h2><strong>[2]</strong> rivt-report.py<a class="headerlink" href="#rivt-report-py" title="Link to this heading">#</a></h2>
-<p>The Python <em>report script</em> includes settings that specify assembly parameters
-and override defaults. These include:</p>
-<ul class="simple">
-<li><p><em>Docs</em> to be included in the report</p></li>
-<li><p>Division names</p></li>
-<li><p>recompiling <em>docs</em></p></li>
-<li><p>report cover page and title</p></li>
-</ul>
-<p>provides the option to either regenerate all <em>docs</em> or to
-assemble the report from previously generated <em>docs</em>.  Most aspects of
-the <em>report</em> appearance are determined at when generating <em>docs</em>.</p>
-<p>An example rivt-report.py script is shown below.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#! python</span>
-
-<span class="kn">from</span><span class="w"> </span><span class="nn">rivtlib.rvreport</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>  <span class="c1"># noqa: F403</span>
-
-<span class="sd">&quot;&quot;&quot; generate a rivt report</span>
-
-<span class="sd">Sample report generating and config file.</span>
-
-<span class="sd">Run this Python file to generate a rivt report. The report generating file</span>
-<span class="sd">must located in /publish/subfolder where subfolder is the doc type. The</span>
-<span class="sd">report output file name is the report title. It is written to the same</span>
-<span class="sd">folder as the report script. Duplicate report file names are incremented.</span>
-
-<span class="sd">A flag determines whether the report is assembled from existing doc files</span>
-<span class="sd">or whether docs are regenerated prior to assembly. If a rivt or doc file is</span>
-<span class="sd">specified for inclusion and not found a warning is given but the report is</span>
-<span class="sd">still assembled.</span>
-
-<span class="sd">A rivt report is a compilation of rivt docs organized into divisions and</span>
-<span class="sd">subdivisions. rivt doc numbers define the organization. Default titles for</span>
-<span class="sd">subdivisions are generated by stripping the doc number from the file name</span>
-<span class="sd">and replacing hyphens with spaces. The default titles may be overridden in</span>
-<span class="sd">rv.M for each rivt file.</span>
-
-<span class="sd">See src/styles/rivt.ini for additional settings</span>
-
-<span class="sd">&quot;&quot;&quot;</span>
-<span class="c1"># ==================================</span>
-<span class="c1"># report type</span>
-<span class="c1"># ==================================</span>
-<span class="n">rptype</span> <span class="o">=</span> <span class="s2">&quot;pdf&quot;</span>  <span class="c1"># report type [html; pdf; pdftex; text]</span>
-<span class="n">rvrun</span> <span class="o">=</span> <span class="kc">False</span>  <span class="c1"># regenerate docs [True; False]</span>
-
-<span class="c1"># ==================================</span>
-<span class="c1"># report cover settings</span>
-<span class="c1"># ==================================</span>
-<span class="c1"># cover pages are located in /src</span>
-<span class="n">rptitle</span> <span class="o">=</span> <span class="s2">&quot;Solar Canopy Calculations&quot;</span>
-<span class="n">rpsubtitle</span> <span class="o">=</span> <span class="s2">&quot;Larkspur, Ca&quot;</span>
-<span class="n">rpauthor</span> <span class="o">=</span> <span class="s2">&quot;rhh&quot;</span>
-<span class="n">rpdate</span> <span class="o">=</span> <span class="s2">&quot;&lt;datetime&gt;&quot;</span>
-<span class="n">rptoc</span> <span class="o">=</span> <span class="kc">True</span>  <span class="c1"># add table of contents, &quot;&quot; to omit</span>
-<span class="n">rpcover</span> <span class="o">=</span> <span class="s2">&quot;/publish/cover1.pdf&quot;</span>  <span class="c1"># cover page, &quot;&quot; to omit</span>
-
-<span class="c1"># ==================================</span>
-<span class="c1"># include docs</span>
-<span class="c1"># ==================================</span>
-<span class="c1"># include these divisions in report</span>
-<span class="n">divlist</span> <span class="o">=</span> <span class="p">[[</span><span class="n">dv01</span><span class="p">,</span> <span class="s2">&quot;Codes and Loads&quot;</span><span class="p">],</span>
-           <span class="p">[</span><span class="n">dv02</span><span class="p">,</span> <span class="s2">&quot;Frame&quot;</span><span class="p">],</span>
-           <span class="p">[</span><span class="n">dv03</span><span class="p">,</span> <span class="s2">&quot;Foundation&quot;</span><span class="p">]]</span>
-<span class="c1"># include these docs in report</span>
-<span class="c1"># doc label is for reference only, may be empty string</span>
-<span class="n">doclist</span> <span class="o">=</span> <span class="p">[[</span><span class="n">rv101</span><span class="p">,</span><span class="s2">&quot;Codes&quot;</span><span class="p">],</span>
-           <span class="p">[</span><span class="n">rv102</span><span class="p">,</span><span class="s2">&quot;Loads&quot;</span><span class="p">],</span>
-           <span class="p">[</span><span class="n">rv201</span><span class="p">,</span><span class="s2">&quot;Frame&quot;</span><span class="p">],</span>
-           <span class="p">[</span><span class="n">rv202</span><span class="p">,</span><span class="s2">&quot;Solar&quot;</span><span class="p">],</span>
-           <span class="p">[</span><span class="n">rv301</span><span class="p">,</span><span class="s2">&quot;Foundation&quot;</span><span class="p">],</span>
-           <span class="p">[</span><span class="n">rv302</span><span class="p">,</span><span class="s2">&quot;Walls&quot;</span><span class="p">]]</span>
-
-<span class="n">genreport</span><span class="p">()</span>  <span class="c1"># noqa: F405</span>
-</pre></div>
-</div>
-</section>
 <section id="conf-py">
-<h2><strong>[3]</strong> conf.py<a class="headerlink" href="#conf-py" title="Link to this heading">#</a></h2>
+<h2><strong>[2]</strong> conf.py<a class="headerlink" href="#conf-py" title="Link to this heading">#</a></h2>
 <p>The <em>conf.py</em> file contains configuration settings for <em>rivt docs</em> and reports.
 A typical <em>conf.py</em> file looks like this:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#! python</span>
@@ -652,6 +599,386 @@ A typical <em>conf.py</em> file looks like this:</p>
 <span class="n">pdf_smartquotes</span> <span class="o">=</span> <span class="mi">0</span>
 </pre></div>
 </div>
+</section>
+<hr class="docutils" />
+<section id="rivtstyle-yaml">
+<h2><strong>[3]</strong> rivtstyle.yaml<a class="headerlink" href="#rivtstyle-yaml" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">fontsAlias</span><span class="p">:</span>
+<span class="nt">fontSerif</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DejaVuSans</span>
+<span class="nt">fontSerifBold</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DejaVuSans-Bold</span>
+<span class="nt">fontSerifBoldItalic</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DejaVuSans-BoldOblique</span>
+<span class="nt">fontSerifItalic</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DejaVuSans-Oblique</span>
+<span class="nt">fontMono</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DejaVuSansMono</span>
+<span class="nt">fontMonoBold</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DejaVuSansMono-Bold</span>
+<span class="nt">fontMonoBoldItalic</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DejaVuSansMono-BoldOblique</span>
+<span class="nt">fontMonoItalic</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DejaVuSansMono-Oblique</span>
+<span class="nt">fontSans</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DejaVuSans</span>
+<span class="nt">fontSansBold</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DejaVuSans-Bold</span>
+<span class="nt">fontSansBoldItalic</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DejaVuSans-BoldOblique</span>
+<span class="nt">fontSansItalic</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DejaVuSans-Oblique</span>
+<span class="nt">pageSetup</span><span class="p">:</span>
+<span class="nt">firstTemplate</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">coverPage</span>
+<span class="nt">height</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
+<span class="nt">margin-bottom</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4mm</span>
+<span class="nt">margin-gutter</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1mm</span>
+<span class="nt">margin-left</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1.5cm</span>
+<span class="nt">margin-right</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1.5cm</span>
+<span class="nt">margin-top</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4mm</span>
+<span class="nt">size</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">letter</span>
+<span class="nt">spacing-footer</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10mm</span>
+<span class="nt">spacing-header</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10mm</span>
+<span class="nt">width</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
+<span class="nt">pageTemplates</span><span class="p">:</span>
+<span class="nt">coverPage</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">showFooter</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">showHeader</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">    </span><span class="nt">underline</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="nt">noHead</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">frames</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[[</span><span class="nv">0%</span><span class="p p-Indicator">,</span><span class="nv">0%</span><span class="p p-Indicator">,</span><span class="nv">100%</span><span class="p p-Indicator">,</span><span class="nv">100%</span><span class="p p-Indicator">]]</span>
+<span class="w">    </span><span class="nt">showFooter</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">showHeader</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">    </span><span class="nt">underline</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="nt">mainPage</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">frames</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[[</span><span class="nv">0%</span><span class="p p-Indicator">,</span><span class="nv">0%</span><span class="p p-Indicator">,</span><span class="nv">100%</span><span class="p p-Indicator">,</span><span class="nv">110%</span><span class="p p-Indicator">]]</span>
+<span class="w">    </span><span class="nt">showFooter</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">True</span>
+<span class="w">    </span><span class="nt">showHeader</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">True</span>
+<span class="nt">styles</span><span class="p">:</span>
+<span class="nt">base</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">allowWidows</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">    </span><span class="nt">allowOrphans</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">    </span><span class="nt">alignment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TA_LEFT</span>
+<span class="w">    </span><span class="nt">allowOrphans</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">    </span><span class="nt">allowWidows</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">    </span><span class="nt">backColor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
+<span class="w">    </span><span class="nt">borderColor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
+<span class="w">    </span><span class="nt">borderPadding</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span>
+<span class="w">    </span><span class="nt">borderRadius</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
+<span class="w">    </span><span class="nt">borderWidth</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">    </span><span class="nt">bulletFontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontMono</span>
+<span class="w">    </span><span class="nt">bulletFontSize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span>
+<span class="w">    </span><span class="nt">bulletIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">    </span><span class="nt">commands</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[]</span>
+<span class="w">    </span><span class="nt">firstLineIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSans</span>
+<span class="w">    </span><span class="nt">fontSize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9</span>
+<span class="w">    </span><span class="nt">hyphenation</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">    </span><span class="nt">leading</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">12</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
+<span class="w">    </span><span class="nt">rightIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">    </span><span class="nt">spaceAfter</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">    </span><span class="nt">spaceBefore</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">    </span><span class="nt">strike</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">    </span><span class="nt">textColor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">black</span>
+<span class="w">    </span><span class="nt">wordWrap</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
+<span class="w">    </span><span class="nt">linkUnderline</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">linkColor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">blue</span>
+<span class="nt">tableofcontents</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">normal</span>
+<span class="nt">big-text</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">fontSize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">175%</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">base</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSans</span>
+<span class="nt">medium-text</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">fontSize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">125%</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">base</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSans</span>
+<span class="nt">small-text</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">fontSize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">125%</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">base</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSans</span>
+<span class="nt">blockquote</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">20</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bodytext</span>
+<span class="nt">bodytext</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">alignment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TA_JUSTIFY</span>
+<span class="w">    </span><span class="nt">hyphenation</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">normal</span>
+<span class="w">    </span><span class="nt">spaceBefore</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">6</span>
+<span class="nt">align-center</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">alignment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TA_CENTER</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bodytext</span>
+<span class="nt">align-right</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">alignment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TA_RIGHT</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bodytext</span>
+<span class="nt">code</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">spaceBefore</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">6</span>
+<span class="w">    </span><span class="nt">spaceAfter</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">6</span>
+<span class="w">    </span><span class="nt">backColor</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;#d1dede&quot;</span>
+<span class="w">    </span><span class="nt">borderColor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">darkgray</span>
+<span class="w">    </span><span class="nt">borderPadding</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">6</span>
+<span class="w">    </span><span class="nt">borderWidth</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.5</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">literal</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontMonoBold</span>
+<span class="nt">compgreen</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">textColor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">green</span>
+<span class="w">    </span><span class="nt">alignment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TA_RIGHT</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSansBold</span>
+<span class="nt">compred</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">textColor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">red</span>
+<span class="w">    </span><span class="nt">alignment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TA_RIGHT</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSansBold</span>
+<span class="nt">contents</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">normal</span>
+<span class="nt">figure</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">spaceBefore</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">18</span>
+<span class="w">    </span><span class="nt">spaceAfter</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">12</span>
+<span class="w">    </span><span class="nt">alignment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TA_CENTER</span>
+<span class="w">    </span><span class="nt">colWidths</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100%</span>
+<span class="w">    </span><span class="nt">commands</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">VALIGN</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- TOP</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ALIGN</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- CENTER</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bodytext</span>
+<span class="nt">figure-caption</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">alignment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TA_CENTER</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSans</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bodytext</span>
+<span class="nt">figure-legend</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bodytext</span>
+<span class="nt">footer-box</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">alignment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TA_CENTER</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSans</span>
+<span class="w">    </span><span class="nt">commands</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BOX</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- 0.25</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- white</span>
+<span class="nt">header-box</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">alignment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TA_RIGHT</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSans</span>
+<span class="w">    </span><span class="nt">commands</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BOX</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- 0.25</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- white</span>
+<span class="nt">heading</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">keepWithNext</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">normal</span>
+<span class="w">    </span><span class="nt">spaceAfter</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">    </span><span class="nt">spaceBefore</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSerif</span>
+<span class="w">    </span><span class="nt">textColor</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;#222222&quot;</span>
+<span class="nt">heading1</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">fontSize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">120%</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">heading</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSansBold</span>
+<span class="w">    </span><span class="nt">underlineColor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">black</span>
+<span class="w">    </span><span class="nt">underlineWidth</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">    </span><span class="nt">underlineOffset</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span>
+<span class="nt">heading2</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">fontSize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">110%</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">heading</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSansBold</span>
+<span class="w">    </span><span class="nt">underlineColor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">black</span>
+<span class="w">    </span><span class="nt">underlineWidth</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">    </span><span class="nt">underlineOffset</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span>
+<span class="nt">heading3</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">fontSize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100%</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">heading</span>
+<span class="nt">heading4</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">heading</span>
+<span class="nt">heading5</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">heading</span>
+<span class="nt">heading6</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">heading</span>
+<span class="nt">hint</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admonition</span>
+<span class="nt">hint-heading</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admonition-heading</span>
+<span class="nt">image</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">spaceBefore</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span>
+<span class="w">    </span><span class="nt">spaceAfter</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span>
+<span class="w">    </span><span class="nt">alignment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TA_CENTER</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bodytext</span>
+<span class="nt">important</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admonition</span>
+<span class="nt">important-heading</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admonition-heading</span>
+<span class="nt">italic</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSansItalic</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bodytext</span>
+<span class="nt">line</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">lineblock</span>
+<span class="w">    </span><span class="nt">spaceBefore</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="nt">lineblock</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bodytext</span>
+<span class="nt">linenumber</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">code</span>
+<span class="nt">literal</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">firstLineIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontMono</span>
+<span class="w">    </span><span class="nt">hyphenation</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">normal</span>
+<span class="w">    </span><span class="nt">wordWrap</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
+<span class="nt">normal</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">base</span>
+<span class="nt">note</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admonition</span>
+<span class="nt">note-heading</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admonition-heading</span>
+<span class="nt">option-list</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">colWidths</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
+<span class="w">    </span><span class="nt">commands</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">VALIGN</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- TOP</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TOPPADDING</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- 0</span>
+<span class="nt">rubric</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">alignment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TA_CENTER</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bodytext</span>
+<span class="w">    </span><span class="nt">textColor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">darkred</span>
+<span class="nt">separation</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">normal</span>
+<span class="nt">sidebar</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">backColor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cornsilk</span>
+<span class="w">    </span><span class="nt">borderColor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">darkgray</span>
+<span class="w">    </span><span class="nt">borderPadding</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8</span>
+<span class="w">    </span><span class="nt">borderWidth</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.5</span>
+<span class="w">    </span><span class="nt">float</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">none</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">normal</span>
+<span class="w">    </span><span class="nt">width</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100%</span>
+<span class="nt">sidebar-subtitle</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">heading4</span>
+<span class="nt">sidebar-title</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">heading3</span>
+<span class="nt">subtitle</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">fontSize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">85%</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">title</span>
+<span class="w">    </span><span class="nt">spaceBefore</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">12</span>
+<span class="nt">table</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">alignment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TA_LEFT</span>
+<span class="w">    </span><span class="nt">spaceBefore</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">    </span><span class="nt">spaceAfter</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">    </span><span class="nt">borderPadding</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span>
+<span class="w">    </span><span class="nt">leftPadding</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">6</span>
+<span class="w">    </span><span class="nt">rightPadding</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">6</span>
+<span class="w">    </span><span class="nt">topPadding</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span>
+<span class="w">    </span><span class="nt">bottomPadding</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span>
+<span class="w">    </span><span class="nt">background-color</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">white</span>
+<span class="w">    </span><span class="nt">alternate-row-background-color</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">lightgray</span>
+<span class="w">    </span><span class="nt">commands</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ROWBACKGROUNDS</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - white</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- &quot;#E0E0E0&quot;</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BOX</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- 0.25</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- black</span>
+<span class="nt">admonition</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">borderWidth</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">    </span><span class="nt">borderPadding</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="nt">table-heading</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">alignment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TA_LEFT</span>
+<span class="w">    </span><span class="nt">borderWidth</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">    </span><span class="nt">borderPadding</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">    </span><span class="nt">backColor</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;#c5d1c5&quot;</span>
+<span class="w">    </span><span class="nt">borderColor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">darkgray</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontMonoBold</span>
+<span class="nt">tip-heading</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admonition-heading</span>
+<span class="nt">title</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">alignment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TA_CENTER</span>
+<span class="w">    </span><span class="nt">fontSize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">120%</span>
+<span class="w">    </span><span class="nt">keepWithNext</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">heading</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSansBold</span>
+<span class="w">    </span><span class="nt">spaceAfter</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">36</span>
+<span class="nt">title-reference</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSansItalic</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">normal</span>
+<span class="nt">toc</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">normal</span>
+<span class="w">    </span><span class="nt">fontSize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100%</span>
+<span class="nt">toc1</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSansBold</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span>
+<span class="nt">toc10</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span>
+<span class="nt">toc11</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span>
+<span class="nt">toc12</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span>
+<span class="nt">toc13</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span>
+<span class="nt">toc14</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span>
+<span class="nt">toc15</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span>
+<span class="nt">toc2</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">20</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span>
+<span class="nt">toc3</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">40</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span>
+<span class="nt">toc4</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">60</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span>
+<span class="nt">toc5</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">80</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span>
+<span class="nt">toc6</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span>
+<span class="nt">toc7</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span>
+<span class="nt">toc8</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span>
+<span class="nt">toc9</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span>
+<span class="nt">topic-title</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">heading3</span>
+<span class="nt">warning</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admonition</span>
+<span class="nt">warning-heading</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admonition-heading</span>
+</pre></div>
+</div>
+</div></blockquote>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -705,8 +1032,8 @@ A typical <em>conf.py</em> file looks like this:</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docs"><strong>[1]</strong> Docs</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-report-py"><strong>[2]</strong> rivt-report.py</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conf-py"><strong>[3]</strong> conf.py</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conf-py"><strong>[2]</strong> conf.py</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivtstyle-yaml"><strong>[3]</strong> rivtstyle.yaml</a></li>
 </ul>
   </nav></div>
 

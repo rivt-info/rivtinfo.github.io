@@ -181,11 +181,28 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvF01-quickref.html">
-    F.1 Quick Ref
+  <a class="nav-link nav-internal" href="rvF01-aiintro.html">
+    F.1 AI Overview
   </a>
 </li>
 
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="rvG01-quickref.html">
+    G.1 Quick Ref
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
   </ul>
 </nav></div>
       
@@ -295,8 +312,15 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvF01-quickref.html">
-    F.1 Quick Ref
+  <a class="nav-link nav-internal" href="rvF01-aiintro.html">
+    F.1 AI Overview
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvG01-quickref.html">
+    G.1 Quick Ref
   </a>
 </li>
 
@@ -392,12 +416,12 @@
 <h2><strong>[1]</strong> Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
 <p><em>rivt</em> is an open source Python project that imports
 the <a class="reference external" href="https://pypi.org/project/rivtlib/" rel="noreferrer" target="_blank">rivtlib Python package</a>
-and dependencies (see <a class="reference internal" href="rvF01-quickref.html#project-requirements"><span class="std std-ref">[6] Python Requirements</span></a>) and publishes
-a formatted <a class="reference internal" href="rvF02-terms.html#term-rivt-doc"><span class="xref std std-term">rivt doc</span></a> as a text, PDF or HTML file.
-from a <a class="reference internal" href="rvF02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a>. A <em>rivt file</em> is a Python file (.py) that imports the
-<a class="reference internal" href="rvF02-terms.html#term-rivtlib"><span class="xref std std-term">rivtlib</span></a> Python package and includes rivt API functions that include
-<a class="reference internal" href="rvF02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a>. A collection of <em>rivt docs</em> may be assembled into a
-<a class="reference internal" href="rvF02-terms.html#term-rivt-report"><span class="xref std std-term">rivt report</span></a>.</p>
+and dependencies (see <a class="reference internal" href="rvG01-quickref.html#project-requirements"><span class="std std-ref">[6] Python Requirements</span></a>) and publishes
+a formatted <a class="reference internal" href="rvG02-terms.html#term-rivt-doc"><span class="xref std std-term">rivt doc</span></a> as a text, PDF or HTML file.
+from a <a class="reference internal" href="rvG02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a>. A <em>rivt file</em> is a Python file (.py) that imports the
+<a class="reference internal" href="rvG02-terms.html#term-rivtlib"><span class="xref std std-term">rivtlib</span></a> Python package and includes rivt API functions that include
+<a class="reference internal" href="rvG02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a>. A collection of <em>rivt docs</em> may be assembled into a
+<a class="reference internal" href="rvG02-terms.html#term-rivt-report"><span class="xref std std-term">rivt report</span></a>.</p>
 <p><em>rivt files</em> are generally edited and run in an IDE. The lightweight
 <a class="reference external" href="https://pyzo.org/" rel="noreferrer" target="_blank">Pyzo</a> IDE is installed with rivtlib. The
 <a class="reference external" href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">VSCode IDE</a> is a full featured IDE that
@@ -420,7 +444,7 @@ sections to make public.</p>
 <a class="dark-light reference internal image-reference" href="_images/process2.png"><img alt="rivt flow chart" class="align-center dark-light" src="_images/process2.png" style="width: 75%;" />
 </a>
 <p class="center"><strong>rivt Doc Processing</strong></p>
-<p>Each <a class="reference internal" href="rvF02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> outputs a corresponding <a class="reference internal" href="rvF02-terms.html#term-doc"><span class="xref std std-term">doc</span></a> of the format
+<p>Each <a class="reference internal" href="rvG02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> outputs a corresponding <a class="reference internal" href="rvG02-terms.html#term-doc"><span class="xref std std-term">doc</span></a> of the format
 specified in PUBLISH command of the <em>rv.D()</em> API. A rivt file number has the
 form:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rvAnn-filename.py
@@ -454,7 +478,7 @@ rv212-filename.py
 <p>The API and markup are designed to be:</p>
 <ul class="simple">
 <li><dl class="simple">
-<dt>lightweight</dt><dd><p><a class="reference internal" href="rvF02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> wraps <a class="reference internal" href="rvF02-terms.html#term-restructuredtext"><span class="xref std std-term">reStructuredText</span></a> and uses fewer than
+<dt>lightweight</dt><dd><p><a class="reference internal" href="rvG02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> wraps <a class="reference internal" href="rvG02-terms.html#term-restructuredtext"><span class="xref std std-term">reStructuredText</span></a> and uses fewer than
 three dozen tags and commands. <em>rivt</em> tags format lines or blocks of text
 and commands read and write files.</p>
 </dd>
@@ -481,7 +505,7 @@ default settings. Settings may also be customized for specific needs.</p>
 </li>
 </ul>
 <p>The API functions are listed in the table below, where (rS) is a triple quoted
-<a class="reference internal" href="rvF02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> argument.</p>
+<a class="reference internal" href="rvG02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> argument.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>API Function</p></th>
@@ -518,12 +542,12 @@ default settings. Settings may also be customized for specific needs.</p>
 </table>
 </div>
 <p>An API function starts in the first column and takes a triple quoted
-<a class="reference internal" href="rvF02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> argument containing a <a class="reference internal" href="rvF02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a> and
-<a class="reference internal" href="rvF02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a>. The first line of the <em>rivt string</em> is the header
-substring, followed by a <a class="reference internal" href="rvF02-terms.html#term-content-substring"><span class="xref std std-term">content substring</span></a> indented 4 spaces for
+<a class="reference internal" href="rvG02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> argument containing a <a class="reference internal" href="rvG02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a> and
+<a class="reference internal" href="rvG02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a>. The first line of the <em>rivt string</em> is the header
+substring, followed by a <a class="reference internal" href="rvG02-terms.html#term-content-substring"><span class="xref std std-term">content substring</span></a> indented 4 spaces for
 improved readability and section folding.</p>
 <p>The <em>header substring</em> specifies the section title and other processing
-parameters. The content substring includes <a class="reference internal" href="rvF02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> and arbitrary
+parameters. The content substring includes <a class="reference internal" href="rvG02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> and arbitrary
 text. For further details see <a class="reference internal" href="rvD01-markup.html"><span class="doc">here</span></a>.</p>
 <p><strong>API Function Syntax</strong></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | parameters</span>
@@ -540,9 +564,9 @@ text. For further details see <a class="reference internal" href="rvD01-markup.h
 </section>
 <section id="files-folders">
 <span id="id1"></span><h2><strong>[4]</strong> Files / Folders<a class="headerlink" href="#files-folders" title="Link to this heading">#</a></h2>
-<p>A <a class="reference internal" href="rvF02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> is a Python plain text file ( <em>.py</em> ) that includes API
-functions and imports the <a class="reference internal" href="rvF02-terms.html#term-rivtlib"><span class="xref std std-term">rivtlib</span></a> package into the <em>rv</em>
-<a class="reference internal" href="rvF02-terms.html#term-namespace"><span class="xref std std-term">namespace</span></a>:</p>
+<p>A <a class="reference internal" href="rvG02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> is a Python plain text file ( <em>.py</em> ) that includes API
+functions and imports the <a class="reference internal" href="rvG02-terms.html#term-rivtlib"><span class="xref std std-term">rivtlib</span></a> package into the <em>rv</em>
+<a class="reference internal" href="rvG02-terms.html#term-namespace"><span class="xref std std-term">namespace</span></a>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
 </pre></div>
 </div>

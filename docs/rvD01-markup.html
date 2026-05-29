@@ -60,7 +60,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="D.2 Line Tags" href="rvD02-linetags.html" />
-    <link rel="prev" title="C.2 Files / Folders" href="rvC02-folders.html" />
+    <link rel="prev" title="C.3 Reports" href="rvC03-reports.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -181,11 +181,28 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvF01-quickref.html">
-    F.1 Quick Ref
+  <a class="nav-link nav-internal" href="rvF01-aiintro.html">
+    F.1 AI Overview
   </a>
 </li>
 
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="rvG01-quickref.html">
+    G.1 Quick Ref
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
   </ul>
 </nav></div>
       
@@ -295,8 +312,15 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvF01-quickref.html">
-    F.1 Quick Ref
+  <a class="nav-link nav-internal" href="rvF01-aiintro.html">
+    F.1 AI Overview
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvG01-quickref.html">
+    G.1 Quick Ref
   </a>
 </li>
 
@@ -464,14 +488,14 @@ notation:</p>
 </section>
 <section id="rivt-string">
 <span id="id2"></span><h2><strong>[2]</strong> rivt string<a class="headerlink" href="#rivt-string" title="Link to this heading">#</a></h2>
-<p>Each <a class="reference internal" href="rvA01-start.html"><span class="doc">API function</span></a> takes a triple quoted <a class="reference internal" href="rvF02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a>
-argument composed of a <a class="reference internal" href="rvF02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a> line followed
-by a multiple-line <a class="reference internal" href="rvF02-terms.html#term-content-substring"><span class="xref std std-term">content substring</span></a>. The <em>header substring</em> defines
+<p>Each <a class="reference internal" href="rvA01-start.html"><span class="doc">API function</span></a> takes a triple quoted <a class="reference internal" href="rvG02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a>
+argument composed of a <a class="reference internal" href="rvG02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a> line followed
+by a multiple-line <a class="reference internal" href="rvG02-terms.html#term-content-substring"><span class="xref std std-term">content substring</span></a>. The <em>header substring</em> defines
 section processing parameters.  The <em>content substring</em> includes
-<a class="reference internal" href="rvF02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> and is indented four spaces for improved readability
+<a class="reference internal" href="rvG02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> and is indented four spaces for improved readability
 and navigation (e.g. section folding).</p>
 <p id="header-substring"><strong>Header substring</strong></p>
-<p>The <a class="reference internal" href="rvF02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a> starts with a <em>section label</em>, used as the
+<p>The <a class="reference internal" href="rvG02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a> starts with a <em>section label</em>, used as the
 section title, followed by a vertical bar and three comma separated
 <em>section parameters</em> that override default behavior.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | doc;stored, private;public, section;merge</span>
@@ -507,63 +531,20 @@ including the <em>public comment setting</em> immeditely following the
 <span class="c1"># rv setpublic = true</span>
 </pre></div>
 </div>
-<p>Individual sections may still be set as private in the header substring.</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>API</p></th>
-<th class="head"><p>private; public</p></th>
-<th class="head"><p>doc; stored</p></th>
-<th class="head"><p>section; merge</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>rv.R</p></td>
-<td><p><strong>private</strong>; public</p></td>
-<td><p><strong>stored</strong>; doc</p></td>
-<td><p><strong>merge</strong>; section</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p><strong>private</strong>; public</p></td>
-<td><p><strong>doc</strong>; stored</p></td>
-<td><p><strong>section</strong>; merge</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.V</p></td>
-<td><p><strong>private</strong>; public</p></td>
-<td><p><strong>doc</strong>; stored</p></td>
-<td><p><strong>section</strong>; merge</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.T</p></td>
-<td><p><strong>private</strong>; public</p></td>
-<td><p><strong>stored</strong>; doc</p></td>
-<td><p><strong>merge</strong>; section</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.S</p></td>
-<td><p><strong>private</strong>; public</p></td>
-<td><p><strong>stored</strong></p></td>
-<td><p><strong>merge</strong></p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.D</p></td>
-<td><p><strong>public</strong></p></td>
-<td><p><strong>stored</strong></p></td>
-<td><p><strong>merge</strong></p></td>
-</tr>
-<tr class="row-even"><td><p>rv.X</p></td>
-<td><ul class="simple">
-<li></li>
-</ul>
-</td>
-<td><ul class="simple">
-<li></li>
-</ul>
-</td>
-<td><ul class="simple">
-<li></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
+<p>Individual sections may be set as private in the header substring after changing
+default.</p>
+<p><strong>Header substring defaults</strong>
+====== =================== =============== =================== ==================
+API      private; public     doc; stored      section; merge     pdfpage; nopage
+====== =================== =============== =================== ==================
+rv.R    <strong>private</strong>          <strong>stored</strong>      <strong>section</strong>          <strong>nopage</strong>
+rv.I    <strong>private</strong>          <strong>doc</strong>         <strong>section</strong>          <strong>nopage</strong>
+rv.V    <strong>private</strong>          <strong>doc</strong>         <strong>section</strong>          <strong>nopage</strong>
+rv.T    <strong>private</strong>          <strong>stored</strong>      <strong>section</strong>          <strong>nopage</strong>
+rv.D    <strong>public</strong>           <strong>doc</strong>         <strong>section</strong>          <strong>nopage</strong>
+rv.S    <strong>private</strong>          <strong>stored</strong>      <strong>section</strong>          <strong>nopage</strong>
+rv.X         -                       -                -                -
+====== =================== =============== =================== ==================</p>
 <p>Examples of <em>header substring</em> settings are shown below.</p>
 <ul class="simple">
 <li><p>An example with explicit defaults (they do not have to be declared).</p></li>
@@ -601,7 +582,7 @@ including the <em>public comment setting</em> immeditely following the
 </pre></div>
 </div>
 <p id="content-substring"><strong>Content substring</strong></p>
-<p>The <a class="reference internal" href="rvF02-terms.html#term-content-substring"><span class="xref std std-term">content substring</span></a> is indented four spaces for legibility and
+<p>The <a class="reference internal" href="rvG02-terms.html#term-content-substring"><span class="xref std std-term">content substring</span></a> is indented four spaces for legibility and
 code folding. It includes <a class="reference internal" href="rvD02-linetags.html"><span class="doc">line tags</span></a>,
 <a class="reference internal" href="rvD03-blocktags.html"><span class="doc">block tags</span></a> and  <a class="reference internal" href="rvD04-commands.html"><span class="doc">commands</span></a>
 along with  text.</p>
@@ -626,12 +607,12 @@ processing HTML, LaTeX and reStructuredText scripts.</p>
 <span id="markup"></span><h2><strong>[3]</strong> Tags and Commands<a class="headerlink" href="#tags-and-commands" title="Link to this heading">#</a></h2>
 <p><a class="reference internal" href="rvD02-linetags.html"><span class="doc">Line Tags</span></a></p>
 <blockquote>
-<div><p>A <a class="reference internal" href="rvF02-terms.html#term-line-tag"><span class="xref std std-term">line tag</span></a> formats a line of text and is denoted with a single
+<div><p>A <a class="reference internal" href="rvG02-terms.html#term-line-tag"><span class="xref std std-term">line tag</span></a> formats a line of text and is denoted with a single
 <strong>_[LETTER]</strong>, placed at or near the end of the line, depending on the tag.</p>
 </div></blockquote>
 <p><a class="reference internal" href="rvD03-blocktags.html"><span class="doc">Block Tags</span></a></p>
 <blockquote>
-<div><p>A <a class="reference internal" href="rvF02-terms.html#term-block-tag"><span class="xref std std-term">block tag</span></a> formats a block of text and begins with
+<div><p>A <a class="reference internal" href="rvG02-terms.html#term-block-tag"><span class="xref std std-term">block tag</span></a> formats a block of text and begins with
 <strong>_[[TAGNAME]]</strong> and terminates with <strong>_[[END]]</strong>.</p>
 </div></blockquote>
 <p><a class="reference internal" href="rvD04-commands.html"><span class="doc">Commands</span></a></p>
@@ -732,12 +713,12 @@ the folder structure is <a class="reference internal" href="rvC02-folders.html#r
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rvC02-folders.html"
+       href="rvC03-reports.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>C.2 Files / Folders</strong></p>
+        <p class="prev-next-title">C.3 Reports</p>
       </div>
     </a>
     <a class="right-next"
