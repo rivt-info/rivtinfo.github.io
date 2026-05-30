@@ -30,21 +30,21 @@ with *rivt files* is typically done in an :term:`IDE`. Any IDE can be used but
 
 
 
-.. figure::  _static/img/ide2.png
+.. figure::  _static/img/vscode1.png
     :class: dark-light
-    :width: 70%
+    :width: 90%
     :align: center
     :alt: ide layout
 
     rivt layout in VSCode (click on image to enlarge)
 
-The *rivt file* is in the left editing panel, the *text doc* output is in the
-right terminal panel and the file explorer is the far left panel. Text, PDF and
-HTML output files are accessed in file explorer and displayed within the IDE.
-When developing docs, individual sections can be run and output to the terminal
-during doc development.
-
-Additional example *rivt files* and *docs* are :ref:`here <rivt-examples>`.
+The *rivt file* is in the center editing panel[2], the *doc* output is in the
+right panel[3] and the file explorer is the far left panel [1]. Panel locations
+may be customized by the user. Text, PDF and HTML output files are accessed in
+the file explorer and displayed within panels. Individual *rivt* sections
+(cells) can be run and output to an interactive terminal during *doc*
+development. Additional example *rivt files* and *docs* are :ref:`here
+<rivt-examples>`.
 
 -------------------------------
 

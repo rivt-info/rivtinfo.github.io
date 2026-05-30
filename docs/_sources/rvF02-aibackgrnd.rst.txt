@@ -152,7 +152,9 @@ GitHub Link: https://github.com/oobabooga/text-generation-webui
 Chatbot UI is a Next.js-based, open-source chat interface that supports OpenAI
 and Azure APIs. It’s designed for easy self-hosting, customization, and rapid
 prototyping, making it a go-to choice for developers building custom chatbot
-experiences. GitHub Link: https://github.com/mckaywrigley/chatbot-ui
+experiences. 
+
+GitHub Link: https://github.com/mckaywrigley/chatbot-ui
 
 17. LibreChat
 LibreChat is an open-source, multi-provider chat UI with support for MCP, rich
