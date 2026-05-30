@@ -50,5 +50,4 @@ An interface for finding public *rivt files* on **GitHub** is
     rvD01-markup.rst
     rvE01-collab.rst
     rvF01-aiintro.rst
-    rvF02-aibackgrnd.rst
     rvG01-quickref.rst

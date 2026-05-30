@@ -40,3 +40,10 @@ of using AI to write and edit *rivt* documents is currently being explored.
 
 AI agents that generate *rivt files* for specific project are planned for
 release as a software service in the latter part of 2026.
+
+
+.. toctree::
+    :maxdepth: 1
+    :hidden:
+
+    rvF02-aibackgrnd.rst
