@@ -201,7 +201,7 @@ names and prefixes are shown in brackets.
             ├── rv-101-filename1.py         
             ├── rv-102-filename2.py                
             ├── rv-201-filename3.py                          
-            ...
+             ...
         └── [rivt-report]/              report folder              
             ├── [_published]/               published docs and reports
             ├── [_rstdocs]/                 restructured text files               
@@ -210,7 +210,7 @@ names and prefixes are shown in brackets.
             ├── [rv101-]filename1.py        rivt file
             ├── [rv102-]filename2.py        rivt file       
             ├── [rv201-]filename3.py        rivt file          
-            ...    
+             ...    
 
 **Expanded Folders**
 
@@ -225,66 +225,63 @@ names and prefixes are shown in brackets.
             ├── rv-102-filename2.py           public rivt file       
             ├── rv-201-filename3.py           public rivt file          
              ...
-        └── [rivt-report]/                 report folder               
-                ├── [rivt-report]-1.py            report generating script
-                ├── [rv101-]filename1.py          rivt file
-                ├── [rv102-]filename2.py          rivt file       
-                ├── [rv201-]filename3.py          rivt file          
-                 ...
-                ├── [rvsrc]                       author files and folders        
-                    ├── [downloads]/                   files to download      
-                        └── conc-vals.txt 
-                    ├── [page]/                        page layout images              
-                        ├── favicon.png    
-                        ├── covlogo1.png    
-                        └── runlogo1.png                   
-                    ├── data/                         tables    
-                        └── steel-vals.csv                                                 
-                    ├── tools/                        OS shell commands               
-                        └── opensees.sh                        
-                    ├── fig1.png
-                    └── fig2.jpg                  
-                ├── [rv_stor]/                      rivt-generated source files
-                    ├── [logs]/                          log files
-                        ├── rv101-log.txt
-                        └── rv102-log.txt
-                    ├── [sect]/                          sections not printed                    
-                        ├── rv202-5d.txt  
-                        ├── rv103-4t.txt                         
-                        └── rv301-2r.txt               
-                    ├── [temp]/                          temp files
-                        └── rv101-label3.tex
-                    ├── output.dat
-                    ├── v101-2.csv
-                    └── v102-3.csv         
-                ├── [_published]/                   published docs and reports
-                    ├── [docs]/                          html docs
-                        ├── html auxiliary files
-                         ...                
-                        ├── index.html
-                        ├── rv101-filename1.html      
-                        ├── rv102-filename2.html                      
-                        ├── rv201-filename3.html                        
-                         ...     
-                    ├── [pdfdocs]/                       pdf docs
-                        ├── pdf auxiliary files
-                         ...             
-                        ├── report-title.pdf
-                        ├── rv101-filename1.pdf             
-                        ├── rv102-filename1.pdf             
-                        ├── rv201-filename3.pdf 
-                         ...  
-                    └── [txtdocs]/                       text docs
-                        ├── report-title.txt
-                        ├── rv101-filename1.txt              
-                        ├── rv102-filename1.txt             
-                        ├── rv201-filename3.txt 
-                         ...
-                └── [_rstdocs]/                       restructured text files
-                    ├── _downloads/                    
-                    ├── _static/                       
-                    ├── _locale/                                         
-                    ├── rv101-filename1.rst            
-                    ├── rv102-filename2.rst                          
-                    ├── rv201-filename3.rst          
-                     ...
+        ├── [rivt-report]/                 report folder               
+            ├── [rivt-report]-1.py            report generating script
+            ├── [rv101-]filename1.py          rivt file
+            ├── [rv102-]filename2.py          rivt file       
+            ├── [rv201-]filename3.py          rivt file          
+                ...
+            ├── [rvsrc]/                      author provided files and folders        
+                ├── [downloads]/                    files to download      
+                    └── conc-vals.txt 
+                ├── [page]/                          page layout images              
+                    ├── favicon.png    
+                    ├── covlogo1.png    
+                    └── runlogo1.png                   
+                ├── data/                            tables    
+                    └── steel-vals.csv                                                 
+                ├── tools/                           OS shell commands               
+                    └── opensees.sh                        
+                ├── fig1.png
+                └── fig2.jpg                  
+            ├── [rv_stor]/                    rivt-generated source files
+                ├── [logs]/                          log files
+                    ├── rv101-log.txt
+                    └── rv102-log.txt
+                ├── [sect]/                          sections not printed                    
+                    ├── rv202-5d.txt  
+                    ├── rv103-4t.txt                         
+                    └── rv301-2r.txt               
+                ├── [temp]/                          temp files
+                    └── rv101-label3.tex
+                ├── output.dat
+                ├── v101-2.csv
+                └── v102-3.csv         
+            ├── [_published]/                 rivt-published docs and reports
+                ├── [docs]/                          html docs
+                    ├── html auxiliary folders    
+                    ├── index.html
+                    ├── rv101-filename1.html      
+                    ├── rv102-filename2.html                      
+                    ├── rv201-filename3.html                        
+                        ...     
+                ├── [pdfdocs]/                       pdf docs
+                    ├── pdf auxiliary folders     
+                    ├── report-title.pdf
+                    ├── rv101-filename1.pdf             
+                    ├── rv102-filename1.pdf             
+                    ├── rv201-filename3.pdf 
+                        ...  
+                └── [txtdocs]/                       text docs
+                    ├── report-title.txt
+                    ├── rv101-filename1.txt              
+                    ├── rv102-filename1.txt             
+                    ├── rv201-filename3.txt 
+                        ...
+            └── [_rstdocs]/                     rivt-generated rst files
+                ├── _downloads/                    
+                ├── _static/                                                       
+                ├── rv101-filename1.rst            
+                ├── rv102-filename2.rst                          
+                ├── rv201-filename3.rst          
+                    ...

@@ -17,8 +17,8 @@ form:
 
     rvAnn-filename.py
 
-where rvAnn is a required file number prefix with A an alphanumeric character and nn a two
-digit non-negative integer. Corresponding rivt docs are output as:
+where rvAnn is a required file number prefix with A an alphanumeric character
+and nn a two digit non-negative integer. Corresponding rivt docs are output as:
 
 .. code-block:: text
 
@@ -46,7 +46,7 @@ A *rivt report* is organized using *rivt doc numbers*
 --------------------
 
 
-**[2]** conf.py
+**[2]** conf.py - configuration file
 --------------------------------------------------------------------- 
 
  
@@ -207,7 +207,7 @@ A typical *conf.py* file looks like this:
 
 ----------------------------------
 
-**[3]** rivtstyle.yaml
+**[3]** rivtstyle.yaml - pdf configuration
 --------------------------------------------------------------------- 
 
  .. code-block:: yaml

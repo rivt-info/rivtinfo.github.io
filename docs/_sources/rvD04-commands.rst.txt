@@ -31,8 +31,10 @@ rv.D        **| PUBLISH |** doc title | type                                :ref
 
 **Default command paths**
 
-See :ref:`here <report-folders>` for the folder structure. If files
-are in the default path only the file name needs to be provided.
+See :ref:`here <report-folders>` for the folder structure. If files are in the
+default path only the file name needs to be provided.
+
+**Relative path for commands - subfolders may be added**
 
 ================ ========================= ======
    Command         Default Path             R/W
@@ -43,12 +45,12 @@ are in the default path only the file name needs to be provided.
 \| VALTABLE |       **/rvsrc/**  [1]          R
 \| PYTHON |         **/rvsrc/**               R
 \| MARKUP |         **/rvsrc/**               R
-\| ATTACHPDF |      **/rvsrc/**               W
+\| ATTACHPDF |      **/rvsrc/**               R
 \| PUBLISH |        **/_published/** [2]      W
 ================ ========================= ======
 
 [1] use */rv_stor/* to read values written by rivt
-[2] files are written to the respective type subdirectory 
+[2] files are written to the type subdirectory 
 
 .. _Shell file:
 
