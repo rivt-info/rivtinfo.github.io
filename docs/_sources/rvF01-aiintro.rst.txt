@@ -14,9 +14,9 @@
 .. raw:: html
 
    <hr>
-   
 
-**[1]** rivt AI context
+
+**[1]** AI context
 --------------------------------------------------------------------- 
 
 As a Python library that takes Python and text strings as input, *rivt* works
@@ -37,7 +37,7 @@ are written.
 ------------------------------------
 
 
-**[2]** rivt AI agents
+**[2]** AI agents
 --------------------------------------------------------------------- 
 
 Effective methods for using AI to write and edit *rivt* documents is currently
