@@ -1,7 +1,7 @@
 **F.1** AI
 =====================
 
-**[1]** rivt IDEs
+**[1]** rivt AI context
 --------------------------------------------------------------------- 
 
 .. raw:: html
@@ -19,18 +19,19 @@
    <hr>
 
 As a Python library that takes Python and text strings as input, *rivt* works
-naturally and effectively with many AI interfaces.
+naturally and effectively with AI interfaces.
 
-**AI Components**
+Using AI with *rivt* is in an early stage of development. AI is built on a few
+large foundational models with a large number of UIs, IDEs and agents that
+provide interfaces to the models.  In order to put *rivt* in this current
+context, a brief summary of the models and tools is provided 
+:ref:`here <aiback>` . 
 
-The AI ecosystem is summarized :ref:`here <aiback>`. Background is provided to
-put *rivt* in an AI context at this early stage of development. 
-
-AI is built on a few large foundational models with a number of UIs, IDEs and
-agents that provide potential interfaces to *rivt*. VSCode is the documented IDE
-for *rivt*. Copilot, as part of VSCode, is beginning to understand *rivt* and
-will make edting suggestions as *rivt files* are written. The most effective way
-of using AI to write and edit *rivt* documents is currently being explored.
+*rivt* is developed in the *VSCode IDE*, which is integrated with  *Microsoft
+Copilot*.  *Copilot* is an AI coding assistant powered by the OpenAI
+foundational model. Since *rivt* was developed in VSCode, *Copilot* is
+beginning to understand *rivt*. It can make editing suggestions as *rivt files*
+are written. 
 
 ------------------------------------
 
@@ -38,8 +39,10 @@ of using AI to write and edit *rivt* documents is currently being explored.
 **[2]** rivt AI agents
 --------------------------------------------------------------------- 
 
-AI agents that generate *rivt files* for specific project are planned for
-release as a software service in the latter part of 2026.
+Effective methods for using AI to write and edit *rivt* documents is currently
+being explored. AI agents that generate *rivt files* for specific project
+requirements are planned for release as a software service in the latter part of
+2026.
 
 
 .. toctree::
