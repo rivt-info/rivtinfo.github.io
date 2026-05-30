@@ -1,9 +1,6 @@
 **F.1** AI
 =====================
 
-**[1]** rivt AI context
---------------------------------------------------------------------- 
-
 .. raw:: html
 
    <hr>
@@ -17,6 +14,10 @@
 .. raw:: html
 
    <hr>
+   
+
+**[1]** rivt AI context
+--------------------------------------------------------------------- 
 
 As a Python library that takes Python and text strings as input, *rivt* works
 naturally and effectively with AI interfaces.
