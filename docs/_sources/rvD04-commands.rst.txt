@@ -8,49 +8,50 @@
 -------------------------------------
 
 
-**format files and equations**
+**Commands format files and equations**
 
 ========== ============================================================== ========================
 API Scope           Command                                                  Description
 ========== ============================================================== ========================
-rv.R        **| SHELL |** rel path | os, wait                               :ref:`Shell file`
-rv.V, I     **| TABLE |** rel path | title,width,rows,align,head,num;non    :ref:`Table file`     
+rv.R        **| MARKUP |** rel path | type                                  :ref:`Markup file`
+rv.V, I     **| TABLE |** rel path | title,width,head;nohead,num;non        :ref:`Table file`     
 rv.V, I     **| IMAGE |** rel path | caption, scale, num;non                :ref:`Image file`
 rv.V, I     **| IMAGE2 |** rel pth1, rel pth2 | ca1,ca2,sc1,sc2,num;non     :ref:`Adjacent images`
 rv.V        **| PYTHON |** rel path | rivt;namespace                        :ref:`Python file`
-rv.V        **| VALTABLE |** rel path | title, rows, num;non                :ref:`Values file`     
+rv.V        **| VALTABLE |** rel path | title, width                        :ref:`Values file`     
 rv.V        a **==:** 1*IN  | unit1, unit2, decimal | label                 :ref:`Define value`
 rv.V        c **<=:** expression | unit1, unit2, decimal | label            :ref:`Assign value`
 rv.V        c **:=:** func(x,y) | unit1, unit2, decimal | label             :ref:`Function value`
 rv.V        a **<** c | unit, decimal, text1, text2 | label                 :ref:`Compare value`
-rv.T        **| MARKUP |** rel path | type                                  :ref:`Markup file`
+rv.T        **| SHELL |** rel path | os, wait                               :ref:`Shell file`
 rv.D        **| ATTACHPDF |** rel path | place, title                       :ref:`Attach PDF`   
 rv.D        **| PUBLISH |** doc title | type                                :ref:`Publish doc` 
 ========== ============================================================== ========================
 
 
-**Default command paths**
+**Parent paths for commands**
 
-See :ref:`here <report-folders>` for the folder structure. If files are in the
-default path only the file name needs to be provided.
-
-**Relative path for commands - subfolders may be added**
+See :ref:`here <report-folders>` for the folder structure. 
 
 ================ ========================= ======
-   Command         Default Path             R/W
+   Command           Parent Path [1]        R/W
 ================ ========================= ======
-\| SHELL |          **/rvsrc/**               R
-\| IMAGE |          **/rvsrc/**               R
-\| IMAGE2 |         **/rvsrc/**               R
-\| VALTABLE |       **/rvsrc/**  [1]          R
-\| PYTHON |         **/rvsrc/**               R
-\| MARKUP |         **/rvsrc/**               R
-\| ATTACHPDF |      **/rvsrc/**               R
-\| PUBLISH |        **/_published/** [2]      W
+\| SHELL |          **rivt-report/**           R
+\| IMAGE |          **rivt-report/**           R
+\| IMAGE2 |         **rivt-report/**           R
+\| TABLE |          **rivt-report/**           R
+\| VALTABLE |       **rivt-report/**   [2]     R
+\| VALTABLE |       **rivt-report/**   [3]     R
+\| PYTHON |         **rivt-report/**           R
+\| MARKUP |         **rivt-report/**           R
+\| ATTACHPDF |      **rivt-report/**           R
+\| PUBLISH |        **/_published/**   [4]     W
 ================ ========================= ======
 
-[1] use */rv_stor/* to read values written by rivt
-[2] files are written to the type subdirectory 
+[1} file paths begin with rvsrc/ and may include subdirectories 
+[2] values are read from *rvsrc/* and its subdirectories
+[3] values written by *rivt* are read from *rv_stor/vals*  
+[4] *docs* are written to subdirectories of *_published*
 
 .. _Shell file:
 

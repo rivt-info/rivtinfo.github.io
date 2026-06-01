@@ -117,51 +117,58 @@ all         **_[[END]]**                              :ref:`End block`
 **[4]** Commands
 -------------------------------------
 
-**Read, write and format files**
 
-========== ================================================================ ========================
+**Commands format files and equations**
+
+========== ============================================================== ========================
 API Scope           Command                                                  Description
-========== ================================================================ ========================
-rv.R        | **MARKUP** | rel path | type                                  :ref:`Markup file`
-rv.I, V     | **TABLE** | rel path | title,width,rows,                      :ref:`Table file`     
-rv.I, V     | **IMAGE** | rel path | caption, scale, num;non                :ref:`Image file`
-rv.I, V     | **IMAGE2** | rel pth1, rel pth2 | cap1,cap2,sc1,sc2,num,num   :ref:`Adjacent images`
-rv.V        | **VALTABLE** | rel path | title, rows                         :ref:`Values file`     
-rv.V        | **PYTHON** | rel path | description                           :ref:`Python file`
-rv.V        a **==:** 1*IN  | unit1, unit2, decimal | description           :ref:`Define value`
-rv.V        c **<=:** expression | unit1, unit2, decimal | description      :ref:`Assign value`
-rv.V        c **:=:** function(x,y) | unit1, unit2, decimal | description   :ref:`Function value`
-rv.V        a **<** c | unit, decimal, text1, text2 | description           :ref:`Compare value`
-rv.T        | **SHELL** | rel path | os, wait;nowait                        :ref:`Shell file`
-rv.D        | **ATTACHPDF** | rel path | place, title                       :ref:`Attach PDF`   
-rv.D        | **PUBLISH** | doc title | type                                :ref:`Publish doc` 
-========== ================================================================ ========================
+========== ============================================================== ========================
+rv.R        **| MARKUP |** rel path | type                                  :ref:`Markup file`
+rv.V, I     **| TABLE |** rel path | title,width,head;nohead,num;non        :ref:`Table file`     
+rv.V, I     **| IMAGE |** rel path | caption, scale, num;non                :ref:`Image file`
+rv.V, I     **| IMAGE2 |** rel pth1, rel pth2 | ca1,ca2,sc1,sc2,num;non     :ref:`Adjacent images`
+rv.V        **| PYTHON |** rel path | rivt;namespace                        :ref:`Python file`
+rv.V        **| VALTABLE |** rel path | title, width                        :ref:`Values file`     
+rv.V        a **==:** 1*IN  | unit1, unit2, decimal | label                 :ref:`Define value`
+rv.V        c **<=:** expression | unit1, unit2, decimal | label            :ref:`Assign value`
+rv.V        c **:=:** func(x,y) | unit1, unit2, decimal | label             :ref:`Function value`
+rv.V        a **<** c | unit, decimal, text1, text2 | label                 :ref:`Compare value`
+rv.T        **| SHELL |** rel path | os, wait                               :ref:`Shell file`
+rv.D        **| ATTACHPDF |** rel path | place, title                       :ref:`Attach PDF`   
+rv.D        **| PUBLISH |** doc title | type                                :ref:`Publish doc` 
+========== ============================================================== ========================
 
 
-**Relative path for commands - subfolders may be added**
+**Parent paths for commands**
+
+See :ref:`here <report-folders>` for the folder structure. 
 
 ================ ========================= ======
-   Command         Default Path             R/W
+   Command           Parent Path [1]        R/W
 ================ ========================= ======
-\| SHELL |          **/rvsrc/**               R
-\| IMAGE |          **/rvsrc/**               R
-\| IMAGE2 |         **/rvsrc/**               R
-\| VALTABLE |       **/rvsrc/**  [1]          R
-\| PYTHON |         **/rvsrc/**               R
-\| MARKUP |         **/rvsrc/**               R
-\| ATTACHPDF |      **/rvsrc/**               R
-\| PUBLISH |        **/_published/** [2]      W
+\| SHELL |          **rivt-report/**           R
+\| IMAGE |          **rivt-report/**           R
+\| IMAGE2 |         **rivt-report/**           R
+\| TABLE |          **rivt-report/**           R
+\| VALTABLE |       **rivt-report/**   [2]     R
+\| VALTABLE |       **rivt-report/**   [3]     R
+\| PYTHON |         **rivt-report/**           R
+\| MARKUP |         **rivt-report/**           R
+\| ATTACHPDF |      **rivt-report/**           R
+\| PUBLISH |        **/_published/**   [4]     W
 ================ ========================= ======
 
-[1] use */rv_stor/* to read values written by rivt
-[2] files are written to the respective type subdirectory 
+[1} file paths begin with rvsrc/ and may include subdirectories 
+[2] values are read from *rvsrc/* and its subdirectories
+[3] values written by *rivt* are read from *rv_stor/vals*  
+[4] *docs* are written to subdirectories of *_published*
 
 ----------------------------------
 
 .. _Folders:
 
 **[5]** Folders
--------------------------------------
+---------------------------------------------------------------------
 
 .. code-block:: bash
 
@@ -255,36 +262,36 @@ following categories:
 =============================================== ================================
       Dependency                                      description
 =============================================== ================================
-  "pyzo>=4.20.0"                                   lightweight IDE
+  "pyzo>=4.20.0"                                   a lightweight IDE
   "pyside6>=6.10.1"                                QT bindings
   "fastcore>=1.8.16"                               code simplification                 
   "tabulate>=0.9.0"                                format tables                 
   "pillow>=11.2.1"                                 image processing
   "matplotlib>=3.10.1"                             data visualization
   "sympy>=1.13.3"                                  symbolic analysis
-  "numpy>=2.2.5"                                   numerical analysis
+  "numpy>=2.2.5"                                   numerical processing
   "scipy>=1.16.3"                                  numerical analysis
   "pandas>=2.2.3"                                  data analysis    
   "docutils>=0.21.2"                               reStructuredText processing  
   "ipython>=8.16.2"                                interactive Python shell
   "ipykernel>=6.28.1"                              Jupyter kernel for Python
-  "reportlab>=4.4.0"                               PDF generation without LaTeX
-  "rst2pdf>=0.103.1"                               PDF generation without LaTeX
-  "pypdf>=1.0.3"                                   PDF manipulation
-  "Sphinx>=8.2.3"                                  HTML generation  
-  "pydata-sphinx-theme>=0.16.1"                    HTML generation  
-  "sphinx-copybutton>=0.5.2"                       HTML generation  
-  "sphinx_design>=0.6.1"                           HTML generation  
-  "sphinx-favicon>=1.0.1"                          HTML generation  
-  "sphinx-togglebutton>=0.3.2"                     HTML generation  
-  "sphinxcontrib-applehelp>=2.0.0"                 HTML generation 
-  "sphinxcontrib-devhelp>=2.0.0"                   HTML generation
-  "sphinxcontrib-email>=0.3.6"                     HTML generation
-  "sphinxcontrib-htmlhelp>=2.1.0"                  HTML generation
-  "sphinxcontrib-jquery>=4.1"                      HTML generation
-  "sphinxcontrib-jsmath>=1.0.1"                    HTML generation
-  "sphinxcontrib-qthelp>=2.0.0"                    HTML generation
-  "sphinxcontrib-serializinghtml>=2.0.0"           HTML generation
+  "reportlab>=4.4.0"                               PDF document generation
+  "rst2pdf>=0.103.1"                               PDF document generation
+  "pypdf>=1.0.3"                                   PDF document manipulation
+  "Sphinx>=8.2.3"                                  HTML document generation  
+  "pydata-sphinx-theme>=0.16.1"                    HTML document generation  
+  "sphinx-copybutton>=0.5.2"                       HTML document generation  
+  "sphinx_design>=0.6.1"                           HTML document generation  
+  "sphinx-favicon>=1.0.1"                          HTML document generation  
+  "sphinx-togglebutton>=0.3.2"                     HTML document generation  
+  "sphinxcontrib-applehelp>=2.0.0"                 HTML document generation 
+  "sphinxcontrib-devhelp>=2.0.0"                   HTML document generation
+  "sphinxcontrib-email>=0.3.6"                     HTML document generation
+  "sphinxcontrib-htmlhelp>=2.1.0"                  HTML document generation
+  "sphinxcontrib-jquery>=4.1"                      HTML document generation
+  "sphinxcontrib-jsmath>=1.0.1"                    HTML document generation
+  "sphinxcontrib-qthelp>=2.0.0"                    HTML document generation
+  "sphinxcontrib-serializinghtml>=2.0.0"           HTML document generation
 =============================================== ================================        
 
 .. _vscode-settings:
@@ -384,11 +391,31 @@ yzhang.markdown-all-in-one                          markdown tools
 ================= ==============================================================
 Keystrokes                   Description
 ================= ==============================================================
-rvr                 API Run 
+api                 insert import statement for API
+rvr                 API Run  
 rvi                 API Insert    
 rvv                 API Values 
 rvt                 API Tools 
 rvd                 API Docs
+| at                 attach command 
+| im                 image command
+| i2                 side by side image command
+| pu                 publish command
+| ta                 table command
+| va                 value command
+| va                 value table command
+_ce                 center bold line of text
+_ma                 utf-8 text math
+_la                 LaTeX math
+_ta                 number table
+_ur                 URL link
+_gl                 glossary term link
+_se                 section link
+_en                 endnote link
+_do                 download link
+_[m                 markup block
+_[p                 python block
+_[e                 end block 
 alt+ctrl+c          insert cell marker with label above API function
 alt+q               rewrap paragraph with hard line feeds (80 default)
 alt+p               open file under cursor

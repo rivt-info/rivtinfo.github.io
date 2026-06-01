@@ -2,7 +2,6 @@ import sys
 import os
 from pathlib import Path
 
-sys.path.append(str(Path(".").resolve()))
 
 project = "rivt.info"
 copyright = "2025 R Holland"

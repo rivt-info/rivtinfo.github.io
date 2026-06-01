@@ -28,8 +28,8 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
@@ -38,10 +38,10 @@
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=95fdc9c7" />
   
   <!-- So that users can add custom icons -->
-  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
 
     <script src="_static/jquery.js?v=5d32c60e"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
@@ -53,10 +53,11 @@
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'rvF01-aiintro';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="F.2 AI Background" href="rvF02-aibackgrnd.html" />
@@ -64,20 +65,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="dark">
-
+  <body data-default-mode="dark">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
+  
+  
+  
   
   <dialog id="pst-search-dialog">
     
@@ -103,7 +110,7 @@
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
   <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
@@ -409,23 +416,76 @@
 <h2><strong>[1]</strong> AI context<a class="headerlink" href="#ai-context" title="Link to this heading">#</a></h2>
 <p><em>rivt</em> is a Python library and language that takes Python and text strings as
 input. This makes <em>rivt</em> a natural fit for main AI models and interfaces.</p>
-<p>Using AI with <em>rivt</em> is in an early stage of development. AI is built on a few
-large foundational models with a large number of UIs, IDEs and agents that
-provide interfaces to the models.  In order to put <em>rivt</em> in this current
-context, a brief summary of the models and tools is provided
-<a class="reference internal" href="rvF02-aibackgrnd.html#aiback"><span class="std std-ref">here</span></a> .</p>
-<p><em>rivt</em> was, and continues to be, developed in the <em>VSCode IDE</em> which is
-integrated with  <em>Microsoft Copilot</em>.  <em>Copilot</em> is an AI coding assistant
-powered by the <em>OpenAI</em> foundational model. The development process has exposed
-<em>Copilot</em> to <em>rivt</em> and it is able to make editing and content suggestions as
-<em>rivt files</em> are written.</p>
+<p>Using AI with <em>rivt</em> is in an early stage of development.  In order to put
+<em>rivt</em> in a current context, a summary of relevant models and tools is provided
+<a class="reference internal" href="rvF02-aibackgrnd.html#aiback"><span class="std std-ref">here</span></a>.  In brief, AI is built on a few large foundational models
+with a large number of UIs, IDEs and agents that provide interfaces to the
+models.</p>
+</section>
+<hr class="docutils" />
+<section id="vscode-copilot">
+<h2><strong>[2]</strong> VSCode Copilot<a class="headerlink" href="#vscode-copilot" title="Link to this heading">#</a></h2>
+<p>The <em>VSCode IDE</em> has been used to develop <em>rivt</em>. VSCode is integrated with
+<em>Microsoft Copilot</em>, an AI coding assistant powered by the
+<em>OpenAI</em> foundation model. <em>Copilot</em>  has been exposed to
+<em>rivt markdown</em> and is able to make editing and content suggestions.</p>
+<p>Currently, one of the most effective uses of <em>Copilot</em>, is to use it to
+generate csv tables and equations models, calculations and design
+justifications. With a few text prompts <em>Copilot</em> generates csv table files and
+inserts them into the <em>rivt-report</em> folder. The csv tables can then be read into
+<em>rivt</em> documents.</p>
+<p>Two examples follow. The responses can be directly inserted into a <em>rivt file</em>.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Copilot Prompt:
+Generate a csv table of weight values per unit length
+of Douglas Fir 2x joists.
+
+Response:
+csv file generated by Copilot and inserted into the rivt-report folder
+
+=========  ================  ================  ========== ==================
+Nominal    ActualWidth_in    ActualDepth_in    Area_in2    Weight_lb_per_ft
+=========  ================  ================  ========== ==================
+2x2        1.5               1.5               2.25             0.53125
+2x4        1.5               3.5               5.25             1.23958
+2x6        1.5               5.5               8.25             1.94875
+2x8        1.5               7.25              10.875           2.56771
+2x10       1.5               9.25              13.875           3.275
+2x12       1.5               11.25             16.875           3.98438
+4x4        3.5               3.5               12.25            2.89236
+=========  ================  ================  ========== ==================
+
+
+Copilot Prompt:
+Write ASCII equations for the bending moment of a simply
+supported beam with a center point load.
+
+Response:
+For a simply supported beam of span `L` with a concentrated load
+`P` at midspan, the bending moment is:
+
+ M(x) = { P*x/2          for 0 &lt;= x &lt;= L/2
+        { P*(L-x)/2      for L/2 &lt;= x &lt;= L
+
+The maximum bending moment occurs at midspan:
+
+   Mmax = P * L / 4
+
+And the bending stress is:
+
+   sigma = M * c / I
+
+So at midspan:
+
+   sigma_max = (P * L / 4) * c / I
+</pre></div>
+</div>
 </section>
 <hr class="docutils" />
 <section id="ai-agents">
-<h2><strong>[2]</strong> AI agents<a class="headerlink" href="#ai-agents" title="Link to this heading">#</a></h2>
-<p>Effective methods for using AI to write and edit <em>rivt</em> files is currently being
-explored. AI agents that generate <em>rivt files</em> for specific project requirements
-are planned for release, as a software service, in the latter part of 2026.</p>
+<h2><strong>[3]</strong> AI agents<a class="headerlink" href="#ai-agents" title="Link to this heading">#</a></h2>
+<p>Effective methods for using AI to generate complete <em>rivt files</em> for specific
+project requirements is currently being explored. AI agents that target that
+goal are planned for release as a software service in the latter part of 2026.</p>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -476,10 +536,11 @@ are planned for release, as a software service, in the latter part of 2026.</p>
     class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Sections
   </div>
-  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-context"><strong>[1]</strong> AI context</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-agents"><strong>[2]</strong> AI agents</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vscode-copilot"><strong>[2]</strong> VSCode Copilot</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-agents"><strong>[3]</strong> AI agents</a></li>
 </ul>
   </nav></div>
 
@@ -496,8 +557,8 @@ are planned for release, as a software service, in the latter part of 2026.</p>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">

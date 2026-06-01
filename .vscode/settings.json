@@ -1,6 +1,9 @@
 {
     "python.terminal.activateEnvironment": true,
     "python.useEnvironmentsExtension": true,
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.defaultLocation": "editor",
+    "terminal.integrated.environmentChangesRelaunch": true,
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
     "terminal.integrated.mouseWheelZoom": true,
     "terminal.integrated.profiles.windows": {
@@ -10,6 +13,7 @@
         }
     },
     "editor.mouseWheelZoom": true,
+    "workbench.editor.tabSizing": "shrink",
     "git.postCommitCommand": "sync",
     "editor.formatOnSave": true,
     "gutterpreview.imagePreviewMaxHeight": 10,
@@ -116,12 +120,13 @@
     "editor.minimap.enabled": false,
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
-    "workbench.editor.tabSizing": "shrink",
     "editor.rulers": [
         {
             "column": 80,
             "color": "#4b4b55"
         },
     ],
-    "python.terminal.activateEnvInCurrentTerminal": true
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "inline-bookmarks.view.showVisibleFilesOnly": false
 }

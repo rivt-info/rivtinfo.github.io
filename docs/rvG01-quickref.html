@@ -28,8 +28,8 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
@@ -38,10 +38,10 @@
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=95fdc9c7" />
   
   <!-- So that users can add custom icons -->
-  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
 
     <script src="_static/jquery.js?v=5d32c60e"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
@@ -53,10 +53,11 @@
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'rvG01-quickref';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="G.2 Terms" href="rvG02-terms.html" />
@@ -64,20 +65,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="dark">
-
+  <body data-default-mode="dark">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
+  
+  
+  
   
   <dialog id="pst-search-dialog">
     
@@ -103,7 +110,7 @@
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
   <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
@@ -645,7 +652,7 @@ in the <em>header substring</em>.</p>
 </section>
 <section id="commands">
 <span id="command-list"></span><h2><strong>[4]</strong> Commands<a class="headerlink" href="#commands" title="Link to this heading">#</a></h2>
-<p><strong>Read, write and format files</strong></p>
+<p><strong>Commands format files and equations</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>API Scope</p></th>
@@ -655,133 +662,117 @@ in the <em>header substring</em>.</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>rv.R</p></td>
-<td><div class="line-block">
-<div class="line"><strong>MARKUP</strong> | rel path | type</div>
-</div>
-</td>
+<td><p><strong>| MARKUP |</strong> rel path | type</p></td>
 <td><p><a class="reference internal" href="rvD04-commands.html#markup-file"><span class="std std-ref">[12]  Markup file</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.I, V</p></td>
-<td><div class="line-block">
-<div class="line"><strong>TABLE</strong> | rel path | title,width,rows,</div>
-</div>
-</td>
+<tr class="row-odd"><td><p>rv.V, I</p></td>
+<td><p><strong>| TABLE |</strong> rel path | title,width,head;nohead,num;non</p></td>
 <td><p><a class="reference internal" href="rvD04-commands.html#table-file"><span class="std std-ref">[4] Table file</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.I, V</p></td>
-<td><div class="line-block">
-<div class="line"><strong>IMAGE</strong> | rel path | caption, scale, num;non</div>
-</div>
-</td>
+<tr class="row-even"><td><p>rv.V, I</p></td>
+<td><p><strong>| IMAGE |</strong> rel path | caption, scale, num;non</p></td>
 <td><p><a class="reference internal" href="rvD04-commands.html#image-file"><span class="std std-ref">[5] Image file</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.I, V</p></td>
-<td><div class="line-block">
-<div class="line"><strong>IMAGE2</strong> | rel pth1, rel pth2 | cap1,cap2,sc1,sc2,num,num</div>
-</div>
-</td>
+<tr class="row-odd"><td><p>rv.V, I</p></td>
+<td><p><strong>| IMAGE2 |</strong> rel pth1, rel pth2 | ca1,ca2,sc1,sc2,num;non</p></td>
 <td><p><a class="reference internal" href="rvD04-commands.html#adjacent-images"><span class="std std-ref">[6] Adjacent images</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.V</p></td>
-<td><div class="line-block">
-<div class="line"><strong>VALTABLE</strong> | rel path | title, rows</div>
-</div>
-</td>
-<td><p><a class="reference internal" href="rvD04-commands.html#values-file"><span class="std std-ref">[7]  Valtable file</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.V</p></td>
-<td><div class="line-block">
-<div class="line"><strong>PYTHON</strong> | rel path | description</div>
-</div>
-</td>
+<td><p><strong>| PYTHON |</strong> rel path | rivt;namespace</p></td>
 <td><p><a class="reference internal" href="rvD04-commands.html#python-file"><span class="std std-ref">[11] Python file</span></a></p></td>
 </tr>
+<tr class="row-odd"><td><p>rv.V</p></td>
+<td><p><strong>| VALTABLE |</strong> rel path | title, width</p></td>
+<td><p><a class="reference internal" href="rvD04-commands.html#values-file"><span class="std std-ref">[7]  Valtable file</span></a></p></td>
+</tr>
 <tr class="row-even"><td><p>rv.V</p></td>
-<td><p>a <strong>==:</strong> 1*IN  | unit1, unit2, decimal | description</p></td>
+<td><p>a <strong>==:</strong> 1*IN  | unit1, unit2, decimal | label</p></td>
 <td><p><a class="reference internal" href="rvD04-commands.html#define-value"><span class="std std-ref">[8] Define value</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V</p></td>
-<td><p>c <strong>&lt;=:</strong> expression | unit1, unit2, decimal | description</p></td>
+<td><p>c <strong>&lt;=:</strong> expression | unit1, unit2, decimal | label</p></td>
 <td><p><a class="reference internal" href="rvD04-commands.html#assign-value"><span class="std std-ref">[9] Assign value</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.V</p></td>
-<td><p>c <strong>:=:</strong> function(x,y) | unit1, unit2, decimal | description</p></td>
+<td><p>c <strong>:=:</strong> func(x,y) | unit1, unit2, decimal | label</p></td>
 <td><p><a class="reference internal" href="rvD04-commands.html#function-value"><span class="std std-ref">[9] Function value</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V</p></td>
-<td><p>a <strong>&lt;</strong> c | unit, decimal, text1, text2 | description</p></td>
+<td><p>a <strong>&lt;</strong> c | unit, decimal, text1, text2 | label</p></td>
 <td><p><a class="reference internal" href="rvD04-commands.html#compare-value"><span class="std std-ref">[10] Compare values</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.T</p></td>
-<td><div class="line-block">
-<div class="line"><strong>SHELL</strong> | rel path | os, wait;nowait</div>
-</div>
-</td>
+<td><p><strong>| SHELL |</strong> rel path | os, wait</p></td>
 <td><p><a class="reference internal" href="rvD04-commands.html#shell-file"><span class="std std-ref">[2] Shell file</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.D</p></td>
-<td><div class="line-block">
-<div class="line"><strong>ATTACHPDF</strong> | rel path | place, title</div>
-</div>
-</td>
+<td><p><strong>| ATTACHPDF |</strong> rel path | place, title</p></td>
 <td><p><a class="reference internal" href="rvD04-commands.html#attach-pdf"><span class="std std-ref">[13] Attach PDF</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.D</p></td>
-<td><div class="line-block">
-<div class="line"><strong>PUBLISH</strong> | doc title | type</div>
-</div>
-</td>
+<td><p><strong>| PUBLISH |</strong> doc title | type</p></td>
 <td><p><a class="reference internal" href="rvD04-commands.html#publish-doc"><span class="std std-ref">[14] Publish doc</span></a></p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p><strong>Relative path for commands - subfolders may be added</strong></p>
+<p><strong>Parent paths for commands</strong></p>
+<p>See <a class="reference internal" href="rvC02-folders.html#report-folders"><span class="std std-ref">here</span></a> for the folder structure.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Command</p></th>
-<th class="head"><p>Default Path</p></th>
+<th class="head"><p>Parent Path [1]</p></th>
 <th class="head"><p>R/W</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>| SHELL |</p></td>
-<td><p><strong>/rvsrc/</strong></p></td>
+<td><p><strong>rivt-report/</strong></p></td>
 <td><p>R</p></td>
 </tr>
 <tr class="row-odd"><td><p>| IMAGE |</p></td>
-<td><p><strong>/rvsrc/</strong></p></td>
+<td><p><strong>rivt-report/</strong></p></td>
 <td><p>R</p></td>
 </tr>
 <tr class="row-even"><td><p>| IMAGE2 |</p></td>
-<td><p><strong>/rvsrc/</strong></p></td>
+<td><p><strong>rivt-report/</strong></p></td>
+<td><p>R</p></td>
+</tr>
+<tr class="row-odd"><td><p>| TABLE |</p></td>
+<td><p><strong>rivt-report/</strong></p></td>
+<td><p>R</p></td>
+</tr>
+<tr class="row-even"><td><p>| VALTABLE |</p></td>
+<td><p><strong>rivt-report/</strong>   [2]</p></td>
 <td><p>R</p></td>
 </tr>
 <tr class="row-odd"><td><p>| VALTABLE |</p></td>
-<td><p><strong>/rvsrc/</strong>  [1]</p></td>
+<td><p><strong>rivt-report/</strong>   [3]</p></td>
 <td><p>R</p></td>
 </tr>
 <tr class="row-even"><td><p>| PYTHON |</p></td>
-<td><p><strong>/rvsrc/</strong></p></td>
+<td><p><strong>rivt-report/</strong></p></td>
 <td><p>R</p></td>
 </tr>
 <tr class="row-odd"><td><p>| MARKUP |</p></td>
-<td><p><strong>/rvsrc/</strong></p></td>
+<td><p><strong>rivt-report/</strong></p></td>
 <td><p>R</p></td>
 </tr>
 <tr class="row-even"><td><p>| ATTACHPDF |</p></td>
-<td><p><strong>/rvsrc/</strong></p></td>
+<td><p><strong>rivt-report/</strong></p></td>
 <td><p>R</p></td>
 </tr>
 <tr class="row-odd"><td><p>| PUBLISH |</p></td>
-<td><p><strong>/_published/</strong> [2]</p></td>
+<td><p><strong>/_published/</strong>   [4]</p></td>
 <td><p>W</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>[1] use <em>/rv_stor/</em> to read values written by rivt
-[2] files are written to the respective type subdirectory</p>
+<p>[1} file paths begin with rvsrc/ and may include subdirectories
+[2] values are read from <em>rvsrc/</em> and its subdirectories
+[3] values written by <em>rivt</em> are read from <em>rv_stor/vals</em>
+[4] <em>docs</em> are written to subdirectories of <em>_published</em></p>
 <hr class="docutils" />
 </section>
 <section id="folders">
@@ -878,7 +869,7 @@ following categories:</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>“pyzo&gt;=4.20.0”</p></td>
-<td><p>lightweight IDE</p></td>
+<td><p>a lightweight IDE</p></td>
 </tr>
 <tr class="row-odd"><td><p>“pyside6&gt;=6.10.1”</p></td>
 <td><p>QT bindings</p></td>
@@ -899,7 +890,7 @@ following categories:</p>
 <td><p>symbolic analysis</p></td>
 </tr>
 <tr class="row-odd"><td><p>“numpy&gt;=2.2.5”</p></td>
-<td><p>numerical analysis</p></td>
+<td><p>numerical processing</p></td>
 </tr>
 <tr class="row-even"><td><p>“scipy&gt;=1.16.3”</p></td>
 <td><p>numerical analysis</p></td>
@@ -917,55 +908,55 @@ following categories:</p>
 <td><p>Jupyter kernel for Python</p></td>
 </tr>
 <tr class="row-odd"><td><p>“reportlab&gt;=4.4.0”</p></td>
-<td><p>PDF generation without LaTeX</p></td>
+<td><p>PDF document generation</p></td>
 </tr>
 <tr class="row-even"><td><p>“rst2pdf&gt;=0.103.1”</p></td>
-<td><p>PDF generation without LaTeX</p></td>
+<td><p>PDF document generation</p></td>
 </tr>
 <tr class="row-odd"><td><p>“pypdf&gt;=1.0.3”</p></td>
-<td><p>PDF manipulation</p></td>
+<td><p>PDF document manipulation</p></td>
 </tr>
 <tr class="row-even"><td><p>“Sphinx&gt;=8.2.3”</p></td>
-<td><p>HTML generation</p></td>
+<td><p>HTML document generation</p></td>
 </tr>
 <tr class="row-odd"><td><p>“pydata-sphinx-theme&gt;=0.16.1”</p></td>
-<td><p>HTML generation</p></td>
+<td><p>HTML document generation</p></td>
 </tr>
 <tr class="row-even"><td><p>“sphinx-copybutton&gt;=0.5.2”</p></td>
-<td><p>HTML generation</p></td>
+<td><p>HTML document generation</p></td>
 </tr>
 <tr class="row-odd"><td><p>“sphinx_design&gt;=0.6.1”</p></td>
-<td><p>HTML generation</p></td>
+<td><p>HTML document generation</p></td>
 </tr>
 <tr class="row-even"><td><p>“sphinx-favicon&gt;=1.0.1”</p></td>
-<td><p>HTML generation</p></td>
+<td><p>HTML document generation</p></td>
 </tr>
 <tr class="row-odd"><td><p>“sphinx-togglebutton&gt;=0.3.2”</p></td>
-<td><p>HTML generation</p></td>
+<td><p>HTML document generation</p></td>
 </tr>
 <tr class="row-even"><td><p>“sphinxcontrib-applehelp&gt;=2.0.0”</p></td>
-<td><p>HTML generation</p></td>
+<td><p>HTML document generation</p></td>
 </tr>
 <tr class="row-odd"><td><p>“sphinxcontrib-devhelp&gt;=2.0.0”</p></td>
-<td><p>HTML generation</p></td>
+<td><p>HTML document generation</p></td>
 </tr>
 <tr class="row-even"><td><p>“sphinxcontrib-email&gt;=0.3.6”</p></td>
-<td><p>HTML generation</p></td>
+<td><p>HTML document generation</p></td>
 </tr>
 <tr class="row-odd"><td><p>“sphinxcontrib-htmlhelp&gt;=2.1.0”</p></td>
-<td><p>HTML generation</p></td>
+<td><p>HTML document generation</p></td>
 </tr>
 <tr class="row-even"><td><p>“sphinxcontrib-jquery&gt;=4.1”</p></td>
-<td><p>HTML generation</p></td>
+<td><p>HTML document generation</p></td>
 </tr>
 <tr class="row-odd"><td><p>“sphinxcontrib-jsmath&gt;=1.0.1”</p></td>
-<td><p>HTML generation</p></td>
+<td><p>HTML document generation</p></td>
 </tr>
 <tr class="row-even"><td><p>“sphinxcontrib-qthelp&gt;=2.0.0”</p></td>
-<td><p>HTML generation</p></td>
+<td><p>HTML document generation</p></td>
 </tr>
 <tr class="row-odd"><td><p>“sphinxcontrib-serializinghtml&gt;=2.0.0”</p></td>
-<td><p>HTML generation</p></td>
+<td><p>HTML document generation</p></td>
 </tr>
 </tbody>
 </table>
@@ -1206,20 +1197,101 @@ should be included as part of a <em>rivt folder</em>. Settings that affect the
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>rvr</p></td>
+<tr class="row-even"><td><p>api</p></td>
+<td><p>insert import statement for API</p></td>
+</tr>
+<tr class="row-odd"><td><p>rvr</p></td>
 <td><p>API Run</p></td>
 </tr>
-<tr class="row-odd"><td><p>rvi</p></td>
+<tr class="row-even"><td><p>rvi</p></td>
 <td><p>API Insert</p></td>
 </tr>
-<tr class="row-even"><td><p>rvv</p></td>
+<tr class="row-odd"><td><p>rvv</p></td>
 <td><p>API Values</p></td>
 </tr>
-<tr class="row-odd"><td><p>rvt</p></td>
+<tr class="row-even"><td><p>rvt</p></td>
 <td><p>API Tools</p></td>
 </tr>
-<tr class="row-even"><td><p>rvd</p></td>
+<tr class="row-odd"><td><p>rvd</p></td>
 <td><p>API Docs</p></td>
+</tr>
+<tr class="row-even"><td><div class="line-block">
+<div class="line">at</div>
+</div>
+</td>
+<td><p>attach command</p></td>
+</tr>
+<tr class="row-odd"><td><div class="line-block">
+<div class="line">im</div>
+</div>
+</td>
+<td><p>image command</p></td>
+</tr>
+<tr class="row-even"><td><div class="line-block">
+<div class="line">i2</div>
+</div>
+</td>
+<td><p>side by side image command</p></td>
+</tr>
+<tr class="row-odd"><td><div class="line-block">
+<div class="line">pu</div>
+</div>
+</td>
+<td><p>publish command</p></td>
+</tr>
+<tr class="row-even"><td><div class="line-block">
+<div class="line">ta</div>
+</div>
+</td>
+<td><p>table command</p></td>
+</tr>
+<tr class="row-odd"><td><div class="line-block">
+<div class="line">va</div>
+</div>
+</td>
+<td><p>value command</p></td>
+</tr>
+<tr class="row-even"><td><div class="line-block">
+<div class="line">va</div>
+</div>
+</td>
+<td><p>value table command</p></td>
+</tr>
+<tr class="row-odd"><td><p>_ce</p></td>
+<td><p>center bold line of text</p></td>
+</tr>
+<tr class="row-even"><td><p>_ma</p></td>
+<td><p>utf-8 text math</p></td>
+</tr>
+<tr class="row-odd"><td><p>_la</p></td>
+<td><p>LaTeX math</p></td>
+</tr>
+<tr class="row-even"><td><p>_ta</p></td>
+<td><p>number table</p></td>
+</tr>
+<tr class="row-odd"><td><p>_ur</p></td>
+<td><p>URL link</p></td>
+</tr>
+<tr class="row-even"><td><p>_gl</p></td>
+<td><p>glossary term link</p></td>
+</tr>
+<tr class="row-odd"><td><p>_se</p></td>
+<td><p>section link</p></td>
+</tr>
+<tr class="row-even"><td><p>_en</p></td>
+<td><p>endnote link</p></td>
+</tr>
+<tr class="row-odd"><td><p>_do</p></td>
+<td><p>download link</p></td>
+</tr>
+<tr class="row-even"><td><p>_[m</p></td>
+<td><p>markup block</p></td>
+</tr>
+<tr class="row-odd"><td><p>_[p</p></td>
+<td><p>python block</p></td>
+</tr>
+<tr class="row-even"><td><p>_[e</p></td>
+<td><p>end block</p></td>
 </tr>
 <tr class="row-odd"><td><p>alt+ctrl+c</p></td>
 <td><p>insert cell marker with label above API function</p></td>
@@ -1432,8 +1504,8 @@ should be included as part of a <em>rivt folder</em>. Settings that affect the
     class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Sections
   </div>
-  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api"><strong>[1]</strong> API</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#line-tags"><strong>[2]</strong> Line Tags</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#block-tags"><strong>[3]</strong> Block Tags</a></li>
@@ -1457,8 +1529,8 @@ should be included as part of a <em>rivt folder</em>. Settings that affect the
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
