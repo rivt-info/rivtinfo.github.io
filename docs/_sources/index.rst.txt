@@ -21,15 +21,15 @@
 
 *rivt* is an extensible, open source Python tool for writing and organizing
 engineering documents. It publishes *rivt files* to formatted
-**text, HTML or PDF document files (rivt doc)** .  A *rivt file* is a Python file 
-(.py) that imports the `rivtlib <https://pypi.org/project/rivtlib/>`__ 
-Python package and includes :doc:`rivt markup <rvD01-markup>`.
+**text, HTML or PDF document files (rivt doc)** .  A *rivt file* is a Python 
+file (.py) that imports the `rivtlib <https://pypi.org/project/rivtlib/>`__ 
+Python package and includes :doc:`rivt markup <rvD00-markup>`.
 
 A *rivt report* is a linked compilation of multiple *rivt docs*.  
 This site is an example of an *HTML rivt report*.
 
 An interface for finding public *rivt files* on **GitHub** is 
-:doc:`here<rvE03-ghsearch>`. A collection of open source downloads, including 
+:doc:`here<rvE02-ghsearch>`. A collection of open source downloads, including 
 *rivt*, is on **Google Drive** `here <https://www.openmodels.info>`__ . 
 
 .. raw:: html
@@ -44,10 +44,10 @@ An interface for finding public *rivt files* on **GitHub** is
     :maxdepth: 1
     :hidden:
 
-    rvA01-start.rst
-    rvB01-overview.rst
-    rvC01-documents.rst
-    rvD01-markup.rst
-    rvE01-collab.rst
-    rvF01-aiintro.rst
-    rvG01-quickref.rst
+    rvA00-start.rst
+    rvB00-overview.rst
+    rvC00-documents.rst
+    rvD00-markup.rst
+    rvE00-collab.rst
+    rvF00-aiintro.rst
+    rvG00-quickref.rst

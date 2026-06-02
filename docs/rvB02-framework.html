@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
-    <title>&lt;no title&gt; &#8212; rivt</title>
+    <title>B.2 Framework &#8212; rivt</title>
   
   
   
@@ -56,11 +56,12 @@
     <script src="_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'rvB02-framework';</script>
     <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="A.0 Start" href="rvA00-start.html" />
+    <link rel="next" title="C.0 Docs-Files" href="rvC00-documents.html" />
+    <link rel="prev" title="B.1 Motivations" href="rvB01-motivation.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -124,7 +125,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="index.html">
   
   
   
@@ -158,7 +159,7 @@
 </li>
 
 
-<li class="nav-item ">
+<li class="nav-item current active">
   <a class="nav-link nav-internal" href="rvB00-overview.html">
     B.0 Overview
   </a>
@@ -242,6 +243,10 @@
   
 
   
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="Sections">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
 </div>
 
     </header>
@@ -252,10 +257,8 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -277,7 +280,7 @@
 </li>
 
 
-<li class="nav-item ">
+<li class="nav-item current active">
   <a class="nav-link nav-internal" href="rvB00-overview.html">
     B.0 Overview
   </a>
@@ -340,6 +343,18 @@
     
   </div>
   
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links" aria-label="Docs">
+    <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
+    <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="rvB01-motivation.html"><strong>B.1 Motivations</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>B.2 Framework</strong></a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
       <div class="sidebar-primary-item">
@@ -360,7 +375,34 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none"></div>
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="rvB00-overview.html" class="nav-link"><strong>B.0</strong> Overview</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>B.2 Framework</strong></span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
               
               
               
@@ -368,31 +410,65 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div style="height: 0; visibility: hidden;">
-
-Home
-========
-
-</div><figure class="align-center">
-<a class="dark-light reference internal image-reference" href="_images/rivt-finalb.png"><img alt="rivt logo" class="dark-light" height="106" src="_images/rivt-finalb.png" width="133" />
-</a>
-</figure>
-<hr><p><em>rivt</em> is an extensible, open source Python tool for writing and organizing
-engineering documents. It publishes <em>rivt files</em> to formatted
-<strong>text, HTML or PDF document files (rivt doc)</strong> .  A <em>rivt file</em> is a Python
-file (.py) that imports the <a class="reference external" href="https://pypi.org/project/rivtlib/" rel="noreferrer" target="_blank">rivtlib</a>
-Python package and includes <a class="reference internal" href="rvD00-markup.html"><span class="doc">rivt markup</span></a>.</p>
-<p>A <em>rivt report</em> is a linked compilation of multiple <em>rivt docs</em>.
-This site is an example of an <em>HTML rivt report</em>.</p>
-<p>An interface for finding public <em>rivt files</em> on <strong>GitHub</strong> is
-<a class="reference internal" href="rvE02-ghsearch.html"><span class="doc">here</span></a>. A collection of open source downloads, including
-<em>rivt</em>, is on <strong>Google Drive</strong> <a class="reference external" href="https://www.openmodels.info" rel="noreferrer" target="_blank">here</a> .</p>
-<hr>
-
-<p style="color:rgb(63,177,197);">ver: 1.0.0a12
-(Note: rivt is <i>alpha sofware</i>. Some features are incomplete
-and the user API may change.)</p><div class="toctree-wrapper compound">
+  <section id="b-2-framework">
+<h1><strong>B.2 Framework</strong><a class="headerlink" href="#b-2-framework" title="Link to this heading">#</a></h1>
+<section id="rivt-frameworks">
+<span id="rivt-framework"></span><h2><strong>[1]</strong> rivt frameworks<a class="headerlink" href="#rivt-frameworks" title="Link to this heading">#</a></h2>
+<p><em>rivt</em> interoperates with a large number of external programs that improve its
+user interface and capabilities. The documented frameworks are a
+<em>Basic framework</em> and <em>Extended framework</em>.</p>
+</section>
+<hr class="docutils" />
+<section id="basic-framework">
+<h2><strong>[2]</strong> Basic framework<a class="headerlink" href="#basic-framework" title="Link to this heading">#</a></h2>
+<p>The <em>rivt basic framework</em> includes programs for editing, remote storage and
+version control. This framework is included in <a class="reference internal" href="rvA00-start.html#rivt-portable"><span class="std std-ref">portable rivt</span></a>.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Purpose</p></th>
+<th class="head"><p>Link</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Editing</p></td>
+<td><p><a class="reference external" href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">VSCode</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Editing Extensions</p></td>
+<td><p><a class="reference internal" href="rvG00-quickref.html#vscode-settings"><span class="std std-ref">[7] VSCode Settings</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>Version Control</p></td>
+<td><p><a class="reference external" href="https://git-scm.com" rel="noreferrer" target="_blank">Git</a></p></td>
+</tr>
+</tbody>
+</table>
 </div>
+</section>
+<hr class="docutils" />
+<section id="extended-framework">
+<h2><strong>[3]</strong> Extended framework<a class="headerlink" href="#extended-framework" title="Link to this heading">#</a></h2>
+<p>The <em>rivt extended framework</em> includes the <em>rivt basic framework</em> and additional
+programs and libraries for formatting and diagramming .</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Purpose</p></th>
+<th class="head"><p>Link</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Additional Formatting</p></td>
+<td><p><a class="reference external" href="https://www.tug.org/texlive/" rel="noreferrer" target="_blank">LaTeX</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>2D Diagramming</p></td>
+<td><p><a class="reference external" href="https://qcad.org/en/85-new-community-edition-open-source" rel="noreferrer" target="_blank">QCAD</a></p></td>
+</tr>
+<tr class="row-even"><td><p>3D Diagramming</p></td>
+<td><p><a class="reference external" href="https://www.freecad.org/" rel="noreferrer" target="_blank">FreeCad</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
 
 
                 </article>
@@ -404,12 +480,21 @@ and the user API may change.)</p><div class="toctree-wrapper compound">
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="rvB01-motivation.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><strong>B.1 Motivations</strong></p>
+      </div>
+    </a>
     <a class="right-next"
-       href="rvA00-start.html"
+       href="rvC00-documents.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>A.0 Start</strong></p>
+        <p class="prev-next-title"><strong>C.0 Docs-Files</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -419,6 +504,26 @@ and the user API may change.)</p><div class="toctree-wrapper compound">
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Sections
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-frameworks"><strong>[1]</strong> rivt frameworks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-framework"><strong>[2]</strong> Basic framework</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extended-framework"><strong>[3]</strong> Extended framework</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

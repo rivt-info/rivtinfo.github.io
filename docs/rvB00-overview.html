@@ -1,0 +1,695 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" data-theme="dark">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
+    <title>B.0 Overview &#8212; rivt</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "dark";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "dark";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=95fdc9c7" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="_static/jquery.js?v=5d32c60e"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="_static/documentation_options.js?v=e259d695"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'rvB00-overview';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="B.1 Motivations" href="rvB01-motivation.html" />
+    <link rel="prev" title="A.4 FAQ" href="rvA04-faq.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="dark">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+    
+    <img src="_static/rivhome11t.png" class="logo__image only-dark" alt=""/>
+    <img src="_static/rivhome11t.png" class="logo__image only-light pst-js-only" alt=""/>
+  
+  
+    <p class="title logo__title">rivt</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvA00-start.html">
+    A.0 Start
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
+    B.0 Overview
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvC00-documents.html">
+    C.0 Docs-Files
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvD00-markup.html">
+    D.0 Markup
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvE00-collab.html">
+    E.0 Collaboration
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvF00-aiintro.html">
+    F.0 AI
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvG00-quickref.html">
+    G.0 Ref
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="Sections">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvA00-start.html">
+    A.0 Start
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
+    B.0 Overview
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvC00-documents.html">
+    C.0 Docs-Files
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvD00-markup.html">
+    D.0 Markup
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvE00-collab.html">
+    E.0 Collaboration
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvF00-aiintro.html">
+    F.0 AI
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvG00-quickref.html">
+    G.0 Ref
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links" aria-label="Docs">
+    <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
+    <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="rvB01-motivation.html"><strong>B.1 Motivations</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvB02-framework.html"><strong>B.2 Framework</strong></a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>B.0</strong> Overview</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="b-0-overview">
+<h1><strong>B.0</strong> Overview<a class="headerlink" href="#b-0-overview" title="Link to this heading">#</a></h1>
+<section id="summary">
+<h2><strong>[1]</strong> Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
+<p><em>rivt</em> is an open source Python project that imports
+the <a class="reference external" href="https://pypi.org/project/rivtlib/" rel="noreferrer" target="_blank">rivtlib Python package</a>
+and dependencies (see <a class="reference internal" href="rvG00-quickref.html#project-requirements"><span class="std std-ref">[6] Python Requirements</span></a>) and publishes
+a formatted <a class="reference internal" href="rvG01-terms.html#term-rivt-doc"><span class="xref std std-term">rivt doc</span></a> as a text, PDF or HTML file.
+from a <a class="reference internal" href="rvG01-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a>. A <em>rivt file</em> is a Python file (.py) that imports the
+<a class="reference internal" href="rvG01-terms.html#term-rivtlib"><span class="xref std std-term">rivtlib</span></a> Python package and includes rivt API functions that include
+<a class="reference internal" href="rvG01-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a>. A collection of <em>rivt docs</em> may be assembled into a
+<a class="reference internal" href="rvG01-terms.html#term-rivt-report"><span class="xref std std-term">rivt report</span></a>.</p>
+<p><em>rivt files</em> are generally edited and run in an IDE. The lightweight
+<a class="reference external" href="https://pyzo.org/" rel="noreferrer" target="_blank">Pyzo</a> IDE is installed with rivtlib. The
+<a class="reference external" href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">VSCode IDE</a> is a full featured IDE that
+is part of the basic <a class="reference internal" href="rvB02-framework.html#rivt-framework"><span class="std std-ref">[1] rivt frameworks</span></a> and included  with the
+<a class="reference internal" href="rvA00-start.html#rivt-portable"><span class="std std-ref">[3] Portable rivt</span></a> installable.</p>
+<p><em>rivt file</em> examples are illustrated <a class="reference internal" href="rvA01-docex1.html#rivt-examples"><span class="std std-ref">here</span></a>. Additional
+<em>rivt files</em> may be downloaded from <em>Google Drive</em> at
+<a class="reference external" href="https://www.openmodels.info/" rel="noreferrer" target="_blank">OpenModels.info</a>.  An interface for searching
+<em>public rivt files</em> on <em>GitHub</em> is <a class="reference internal" href="rvE02-ghsearch.html"><span class="doc">here</span></a>.</p>
+<p>A <em>public rivt file</em> is a subset of a <em>rivt file</em>, made up of sections the
+author chooses to share under an <a class="reference external" href="https://opensource.org/licenses" rel="noreferrer" target="_blank">Open Source license</a>. <em>rivt</em> is designed to seamlessly extract
+public files, allowing the author complete discretion in choosing which file
+sections to make public.</p>
+<p><em>rivt</em> is distributed under the
+<a class="reference external" href="https://opensource.org/license/mit" rel="noreferrer" target="_blank">MIT open source license</a>.
+(see:ref:<cite>Licenses</cite>).</p>
+</section>
+<section id="docs">
+<span id="rivt-docs"></span><h2><strong>[2]</strong> Docs<a class="headerlink" href="#docs" title="Link to this heading">#</a></h2>
+<a class="dark-light reference internal image-reference" href="_images/process2.png"><img alt="rivt flow chart" class="align-center dark-light" src="_images/process2.png" style="width: 75%;" />
+</a>
+<p class="center"><strong>rivt Doc Processing</strong></p>
+<p>Each <a class="reference internal" href="rvG01-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> outputs a corresponding <a class="reference internal" href="rvG01-terms.html#term-doc"><span class="xref std std-term">doc</span></a> of the format
+specified in PUBLISH command of the <em>rv.D()</em> API. A rivt file number has the
+form:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rvAnn-filename.py
+</pre></div>
+</div>
+<p>where rvAnn is a required file number prefix with A an alphanumeric character and nn a two
+digit non-negative integer. Corresponding rivt docs are output as:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rvAnn-filename.txt, pdf or html
+</pre></div>
+</div>
+<p>A <em>rivt report</em> is organized using the <em>file numbers</em>. The file numbers are
+used to organize reports into divisions and subdivisions. Each <em>rivt file</em> or
+<em>doc</em> is a report subdivision. If the <em>rivt filenames</em> are:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rvA01-filename.py
+rv105-filename.py
+rv212-filename.py
+</pre></div>
+</div>
+<p>the corresponding <em>doc numbers</em> in a report would be:</p>
+<ul class="simple">
+<li><p>A.1 (division A, subdivision 1)</p></li>
+<li><p>1.5 (division 1, subdivision 5)</p></li>
+<li><p>2.12 (division 2, subdivision 12)</p></li>
+</ul>
+<hr class="docutils" />
+</section>
+<section id="api">
+<span id="rivt-api"></span><h2><strong>[3]</strong> API<a class="headerlink" href="#api" title="Link to this heading">#</a></h2>
+<p>The <em>rivt API</em> includes <a class="reference internal" href="rvD00-markup.html#api-functions"><span class="std std-ref">API functions</span></a>,
+<a class="reference internal" href="rvD00-markup.html#markup"><span class="std std-ref">[3] Tags and Commands</span></a> and structured <a class="reference internal" href="#files-folders"><span class="std std-ref">folders and files</span></a>.</p>
+<p>The API and markup are designed to be:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>lightweight</dt><dd><p><a class="reference internal" href="rvG01-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> wraps <a class="reference internal" href="rvG01-terms.html#term-restructuredtext"><span class="xref std std-term">reStructuredText</span></a> and uses fewer than
+three dozen tags and commands. <em>rivt</em> tags format lines or blocks of text
+and commands read and write files.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>extensible</dt><dd><p><em>rivtlib</em> is written in Python with direct access to the large
+library of Python packages and functions. Python scripts and external
+programs can be integrated into a <em>rivt doc</em>.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>versatile</dt><dd><p>A <em>rivt file</em> produces a text, HTML or PDF <em>doc</em>. Multiple <em>docs</em> can be
+organized into reports. <em>rivt</em> can be run within a variety of IDEs.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>efficient</dt><dd><p>The file and folder settings produce clear, organized documents with
+default settings. Settings may also be customized for specific needs.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<p>The API functions are listed in the table below, where (rS) is a triple quoted
+<a class="reference internal" href="rvG01-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> argument.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>API Function</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Purpose</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>rv.R</strong> (rS)</p></td>
+<td><p>Run</p></td>
+<td><p>Run scripts and markup</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>rv.I</strong> (rS)</p></td>
+<td><p>Insert</p></td>
+<td><p>Insert static sources</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>rv.V</strong> (rS)</p></td>
+<td><p>Values</p></td>
+<td><p>Calculate values</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>rv.T</strong> (rS)</p></td>
+<td><p>Tools</p></td>
+<td><p>Execute shell scripts and external programs</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>rv.D</strong> (rS)</p></td>
+<td><p>Doc</p></td>
+<td><p>Publish docs</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>rv.S;X</strong> (rS)</p></td>
+<td><p>Skip</p></td>
+<td><p>Skip section or exit (comments and debugging)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>An API function starts in the first column and takes a triple quoted
+<a class="reference internal" href="rvG01-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> argument containing a <a class="reference internal" href="rvG01-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a> and
+<a class="reference internal" href="rvG01-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a>. The first line of the <em>rivt string</em> is the header
+substring, followed by a <a class="reference internal" href="rvG01-terms.html#term-content-substring"><span class="xref std std-term">content substring</span></a> indented 4 spaces for
+improved readability and section folding.</p>
+<p>The <em>header substring</em> specifies the section title and other processing
+parameters. The content substring includes <a class="reference internal" href="rvG01-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> and arbitrary
+text. For further details see <a class="reference internal" href="rvD00-markup.html"><span class="doc">here</span></a>.</p>
+<p><strong>API Function Syntax</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | parameters</span>
+
+<span class="s2">     Content text that is</span>
+<span class="s2">     indented four spaces.</span>
+
+<span class="s2">    ...</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+</section>
+<section id="files-folders">
+<span id="id1"></span><h2><strong>[4]</strong> Files / Folders<a class="headerlink" href="#files-folders" title="Link to this heading">#</a></h2>
+<p>A <a class="reference internal" href="rvG01-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> is a Python plain text file ( <em>.py</em> ) that includes API
+functions and imports the <a class="reference internal" href="rvG01-terms.html#term-rivtlib"><span class="xref std std-term">rivtlib</span></a> package into the <em>rv</em>
+<a class="reference internal" href="rvG01-terms.html#term-namespace"><span class="xref std std-term">namespace</span></a>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
+</pre></div>
+</div>
+<p><em>rivt files</em> are stored in a <em>rivt root folder</em> designated with the prefix
+<em>rivt-</em>. Each <em>rivt file</em> and corresponding <em>rivt doc</em> has a prefix used for
+document organization. The top level folder structure is shown below. A more
+detailed description of the folder structure is <a class="reference internal" href="rvC01-folders.html#report-folders"><span class="std std-ref">here</span></a>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rivt-Report-Label/<span class="w">           </span>Report<span class="w"> </span>Folder
+<span class="w">  </span>├──<span class="w"> </span>.vscode/<span class="w">                   </span>optional<span class="w"> </span>VSCode<span class="w"> </span>settings
+<span class="w">  </span>├──<span class="w"> </span>rivt-public_/<span class="w">              </span>rivt-generated<span class="w"> </span>public<span class="w"> </span>files
+<span class="w">  </span>└──<span class="w"> </span>README.txt<span class="w">                 </span>text<span class="w"> </span>doc<span class="w"> </span>or<span class="w"> </span>report
+<span class="w">      </span>├──<span class="w"> </span>rvsrc/<span class="w">                    </span><span class="nb">source</span><span class="w"> </span>files
+<span class="w">      </span>├──<span class="w"> </span>README.txt<span class="w">                </span>public<span class="w"> </span>text<span class="w"> </span>report<span class="w"> </span>or<span class="w"> </span>doc
+<span class="w">      </span>├──<span class="w"> </span>rv-101-filename1.py<span class="w">       </span>public<span class="w"> </span>rivt<span class="w"> </span>file
+<span class="w">      </span>├──<span class="w"> </span>rv-102-filename2.py<span class="w">       </span>public<span class="w"> </span>rivt<span class="w"> </span>file
+<span class="w">      </span>├──<span class="w"> </span>rv-201-filename3.py<span class="w">       </span>public<span class="w"> </span>rivt<span class="w"> </span>file
+<span class="w">      </span>...
+<span class="w">  </span>└──<span class="w"> </span>rivt-report/<span class="w">               </span>rivt<span class="w"> </span>files<span class="w"> </span>and<span class="w"> </span>docs
+<span class="w">      </span>├──<span class="w"> </span>_published/<span class="w">               </span>published<span class="w"> </span>docs<span class="w"> </span>and<span class="w"> </span>reports
+<span class="w">      </span>├──<span class="w"> </span>_rstdocs/<span class="w">                 </span>rivt<span class="w"> </span>generated<span class="w"> </span>rst<span class="w"> </span>files
+<span class="w">      </span>├──<span class="w"> </span>rv_stor/<span class="w">                  </span>rivt<span class="w"> </span>generated<span class="w"> </span>stored<span class="w"> </span>files
+<span class="w">      </span>├──<span class="w"> </span>rvsrc/<span class="w">                    </span>author<span class="w"> </span><span class="nb">source</span><span class="w"> </span>files
+<span class="w">      </span>├──<span class="w"> </span>rivt-report.py<span class="w">            </span>report<span class="w"> </span>generating<span class="w"> </span>script
+<span class="w">      </span>├──<span class="w"> </span>rv101-filename1.py<span class="w">        </span>rivt<span class="w"> </span>file
+<span class="w">      </span>├──<span class="w"> </span>rv102-filename2.py<span class="w">        </span>rivt<span class="w"> </span>file
+<span class="w">      </span>├──<span class="w"> </span>rv201-filename3.py<span class="w">        </span>rivt<span class="w"> </span>file
+<span class="w">      </span>...
+</pre></div>
+</div>
+<hr class="docutils" />
+<div class="toctree-wrapper compound">
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="rvA04-faq.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><strong>A.4 FAQ</strong></p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="rvB01-motivation.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>B.1 Motivations</strong></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Sections
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary"><strong>[1]</strong> Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docs"><strong>[2]</strong> Docs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api"><strong>[3]</strong> API</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#files-folders"><strong>[4]</strong> Files / Folders</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2025 R Holland.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+  </body>
+</html>

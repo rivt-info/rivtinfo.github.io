@@ -1,0 +1,771 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" data-theme="dark">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
+    <title>C.1 Files - Folders &#8212; rivt</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "dark";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "dark";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=95fdc9c7" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="_static/jquery.js?v=5d32c60e"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="_static/documentation_options.js?v=e259d695"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'rvC01-folders';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="C.2 Reports" href="rvC02-reports.html" />
+    <link rel="prev" title="C.0 Docs-Files" href="rvC00-documents.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="dark">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+    
+    <img src="_static/rivhome11t.png" class="logo__image only-dark" alt=""/>
+    <img src="_static/rivhome11t.png" class="logo__image only-light pst-js-only" alt=""/>
+  
+  
+    <p class="title logo__title">rivt</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvA00-start.html">
+    A.0 Start
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvB00-overview.html">
+    B.0 Overview
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="rvC00-documents.html">
+    C.0 Docs-Files
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvD00-markup.html">
+    D.0 Markup
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvE00-collab.html">
+    E.0 Collaboration
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvF00-aiintro.html">
+    F.0 AI
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvG00-quickref.html">
+    G.0 Ref
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="Sections">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvA00-start.html">
+    A.0 Start
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvB00-overview.html">
+    B.0 Overview
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="rvC00-documents.html">
+    C.0 Docs-Files
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvD00-markup.html">
+    D.0 Markup
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvE00-collab.html">
+    E.0 Collaboration
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvF00-aiintro.html">
+    F.0 AI
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvG00-quickref.html">
+    G.0 Ref
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links" aria-label="Docs">
+    <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
+    <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>C.1 Files - Folders</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC02-reports.html">C.2 Reports</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="rvC00-documents.html" class="nav-link"><strong>C.0 Docs-Files</strong></a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>C.1 Files - Folders</strong></span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="c-1-files-folders">
+<h1><strong>C.1 Files - Folders</strong><a class="headerlink" href="#c-1-files-folders" title="Link to this heading">#</a></h1>
+<section id="file-types">
+<h2><strong>[1]</strong> File Types<a class="headerlink" href="#file-types" title="Link to this heading">#</a></h2>
+<p><strong>rivt file</strong></p>
+<p>A <em>rivt file</em> provides the formatting instructions and content that generate
+<em>rivt docs</em>. Each <em>rivt file</em> has a <em>doc number</em> prefix that specifies the
+division and subdivision of the <em>doc</em>. <em>rivt reports</em> are assembled using <em>doc
+numbers</em>. The <em>doc number</em> prefix includes a single digit capital alphanumeric
+division label <em>D</em>, followed by a two digit subdivision number <em>ss</em>. For
+example:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rvDss-<span class="o">]</span>file-name.py
+
+rvB02-Beam-Loads.py
+</pre></div>
+</div>
+<p><strong>Author provided source file inputs</strong></p>
+<p><em>rivt</em> reads and writes a variety of files including:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>description</p></th>
+<th class="head"><p>read file types</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Image files</p></td>
+<td><p>.png, .jpg, .jpeg</p></td>
+</tr>
+<tr class="row-odd"><td><p>Data files</p></td>
+<td><p>.csv, xlsx,</p></td>
+</tr>
+<tr class="row-even"><td><p>Pandas dataframes</p></td>
+<td><p>.dat, html, hdf5, .json, xml, feather, parquet</p></td>
+</tr>
+<tr class="row-odd"><td><p>Formatted text files</p></td>
+<td><p>.txt, .tex, html, .md, .rst</p></td>
+</tr>
+<tr class="row-even"><td><p>Shell and terminal commands</p></td>
+<td><p>.sh, .bat, .cmd</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Files for use in a <em>rivt doc</em> are stored in the <em>rvsrc</em> folder and any author
+created subfolders. File paths are give relative to the <em>rivt-report</em> folder.
+Files are read using <a class="reference internal" href="rvD03-commands.html#command-summary"><span class="std std-ref">rivt commands</span></a>. For example, to
+read and insert an image file in the author created subfolder <em>img</em> the command
+would be:</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line">IMAGE | rvscr/img/filename.png | parameters</div>
+</div>
+</div></blockquote>
+<p>Available commands and tags depend on the API function, summarized
+<a class="reference internal" href="rvG00-quickref.html#command-list"><span class="std std-ref">here</span></a></p>
+<p><strong>Source files generated by rivtlib</strong></p>
+<p><em>rivt</em> also generates files that can be read by subsequent <em>rivt files</em>. These
+generated files are written to the <em>rv_stor</em> folder and subfolders and include:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>description</p></th>
+<th class="head"><p>written file types</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Value files</p></td>
+<td><p>.csv</p></td>
+</tr>
+<tr class="row-odd"><td><p>Stored sections</p></td>
+<td><p>.txt</p></td>
+</tr>
+<tr class="row-even"><td><p>Log files</p></td>
+<td><p>.txt</p></td>
+</tr>
+<tr class="row-odd"><td><p>Python output</p></td>
+<td><p>.png, .jpg, .csv, .dat, xlsx</p></td>
+</tr>
+<tr class="row-even"><td><p>Formatted text files</p></td>
+<td><p>.txt, .tex, html, .md, .rst</p></td>
+</tr>
+<tr class="row-odd"><td><p>Public rivt files</p></td>
+<td><p>.py</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="center"><strong>Value files</strong></p>
+<p>A <em>value file</em> is a <em>csv</em> file that defines variable values. A file with all
+values is written to rv_stor for each Values API call. The
+filename has the form:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>vDss-S-rivtfile.csv
+</pre></div>
+</div>
+<p>where Dss is the doc number, S is the section number, and rivtfile.csv is the
+original <em>rivt file</em> name. The file may be read using the VALUE command.</p>
+<p class="center"><strong>Log files</strong></p>
+<p>Log files include a backup of each rivt file and a record of most steps of
+<em>rivt</em> file processing and are written to the <em>/logs</em> subfolder of <em>rv_stor</em>.
+They are written when the PUBLISH command is executed. Each log file has the
+form:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>log-Dss-rivtfile.txt
+</pre></div>
+</div>
+<p class="center"><strong>Python scripts</strong></p>
+<p>Python scripts can be run as a [[PYTHON]] block in the <em>Run</em> API or
+as an imported file in the <em>Values</em> API.  The [[PYTHON]] block is written
+to <em>rv_stor</em> with label name. For consistentcy, Python output should also be
+directed to <em>rv_stor</em>.</p>
+<p class="center"><strong>Public rivt files</strong></p>
+<p>A public rivt file is a copy of the <em>rivt file</em> that includes all of the
+sections marked as <em>public</em> in the <em>header</em>. It has the same name as the <em>rivt
+file</em> with an added hyphen between “rv” and the docnumber e.g.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rv-Dss-filename.py
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="folder-names">
+<h2><strong>[2]</strong>  Folder Names<a class="headerlink" href="#folder-names" title="Link to this heading">#</a></h2>
+<p>Reports are organized using the folllowing folders and subfolders.</p>
+<dl class="simple">
+<dt><em>rivt-</em> report-label</dt><dd><p>Top level rivt folder containing rivt report and public files.</p>
+</dd>
+<dt><em>_rivt-public</em></dt><dd><p>Includes <em>public rivt files</em> designated byt the author written by
+<em>rivtlib</em> for public sharing. The prefix <em>rvAnn-</em> is changed to
+<em>rv-Ann-</em> to avoid confusion with non-public files.</p>
+</dd>
+<dt><em>rivt-report</em></dt><dd><p>Includes files and folders for publishing docs and reports.</p>
+</dd>
+</dl>
+<p><em>required subfolders of rivt-report</em></p>
+<dl class="simple">
+<dt><em>rvsrc</em></dt><dd><p>Includes author provided source files used by <em>rivt files</em> including
+data, images, run commands, tools and value files.</p>
+</dd>
+<dt><em>rv_stor</em></dt><dd><p>Includes output files written by <em>rivtlib</em> including <em>logs</em>, <em>values</em>,
+<em>hidden sections</em> and <em>metadata</em> that may be read by other <em>rivt files</em>.</p>
+</dd>
+<dt><em>_published</em></dt><dd><p>Formatted <em>docs</em> and <em>reports</em> written by <em>rivtlib</em> for publication.
+Subfolders include <em>docs</em> (HTML), <em>pdfdocs</em> (PDF) and <em>txtdocs</em> (text).</p>
+</dd>
+<dt><em>_rstdocs</em></dt><dd><p>Intermediate restructured text files written by <em>rivtlib</em>.</p>
+</dd>
+</dl>
+<hr class="docutils" />
+</section>
+<section id="folder-structure">
+<span id="rivt-folders"></span><h2><strong>[3]</strong>  Folder Structure<a class="headerlink" href="#folder-structure" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p style="border-width:2px; border-style:solid;
+border-color:#49b2c3;padding: 1em;">
+
+<b>Folder Naming</b><br>
+<br>
+
+A rivt folder can contain any file or folder but the following structure is
+required for <i>doc</i> processing. <i>rivt folders</i> include at least
+the folders and files shown in brackets[] below. Folders with an underscore
+prefix contain rivt generated files. Files and folders are organized under
+a rivt root folder with the prefix <i>rivt-</i> followed by the report
+label, e.g. <i>rivt-Report-Label</i>. <br> <br>
+
+A new <i>rivt folder</i> is typically started by copying and editing a
+similar folder. Several <i>rivt-folders</i> can be downloaded at
+<a href="https://drive.google.com/drive/folders/1hwVOs0CVJqdZlTieV_Lt5bICbd3ywzWj?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto">openmodels.info</a>.
+<br> <br></div></blockquote>
+<p>A typical <a class="reference internal" href="rvG01-terms.html#term-rivt-folder"><span class="xref std std-term">rivt folder</span></a> structure is shown below. The required <em>rivt file</em>
+names and prefixes are shown in brackets.</p>
+<p id="report-folders"><strong>Top Level Folders</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt-<span class="o">]</span>Report-Label/<span class="w">             </span>rivt<span class="w"> </span>Folder
+<span class="w">    </span>├──<span class="w"> </span>.vscode/<span class="w">                    </span>optional<span class="w"> </span>VSCode<span class="w"> </span>settings
+<span class="w">    </span>├──<span class="w"> </span>README.txt<span class="w">                  </span>rivt-generated<span class="w"> </span>report
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>_rivt-public<span class="o">]</span>/<span class="w">                 </span>public<span class="w"> </span>subset<span class="w"> </span>of<span class="w"> </span>rivt<span class="w"> </span>files
+<span class="w">        </span>├──<span class="w"> </span>rv_stor/
+<span class="w">        </span>├──<span class="w"> </span>rvsrc/
+<span class="w">        </span>├──<span class="w"> </span>README.txt
+<span class="w">        </span>├──<span class="w"> </span>rv-101-filename1.py
+<span class="w">        </span>├──<span class="w"> </span>rv-102-filename2.py
+<span class="w">        </span>├──<span class="w"> </span>rv-201-filename3.py
+<span class="w">         </span>...
+<span class="w">    </span>└──<span class="w"> </span><span class="o">[</span>rivt-report<span class="o">]</span>/<span class="w">              </span>report<span class="w"> </span>folder
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>_published<span class="o">]</span>/<span class="w">               </span>published<span class="w"> </span>docs<span class="w"> </span>and<span class="w"> </span>reports
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>_rstdocs<span class="o">]</span>/<span class="w">                 </span>restructured<span class="w"> </span>text<span class="w"> </span>files
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv_stor<span class="o">]</span>/<span class="w">                  </span>rivt<span class="w"> </span>generated<span class="w"> </span><span class="nb">source</span><span class="w"> </span>files
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rvsrc<span class="o">]</span>/<span class="w">                    </span>author<span class="w"> </span>provided<span class="w"> </span><span class="nb">source</span><span class="w"> </span>files
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename1.py<span class="w">        </span>rivt<span class="w"> </span>file
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv102-<span class="o">]</span>filename2.py<span class="w">        </span>rivt<span class="w"> </span>file
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv201-<span class="o">]</span>filename3.py<span class="w">        </span>rivt<span class="w"> </span>file
+<span class="w">         </span>...
+</pre></div>
+</div>
+<p><strong>Expanded Folders</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt-<span class="o">]</span>Report-Label/<span class="w">             </span>rivt<span class="w"> </span>Folder
+<span class="w">    </span>├──<span class="w"> </span>.vscode/<span class="w">                      </span>optional<span class="w"> </span>VSCode<span class="w"> </span>settings
+<span class="w">    </span>├──<span class="w"> </span>README.txt<span class="w">                    </span>rivt-generated<span class="w"> </span>text<span class="w"> </span>report
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>_rivt-public<span class="o">]</span>/<span class="w">               </span>rivt-generated<span class="w"> </span>public<span class="w"> </span>files
+<span class="w">        </span>├──<span class="w"> </span>rvsrc/<span class="w">                        </span>author<span class="w"> </span><span class="nb">source</span><span class="w"> </span>files
+<span class="w">        </span>├──<span class="w"> </span>rv-101-filename1.py<span class="w">           </span>public<span class="w"> </span>rivt<span class="w"> </span>file
+<span class="w">        </span>├──<span class="w"> </span>rv-102-filename2.py<span class="w">           </span>public<span class="w"> </span>rivt<span class="w"> </span>file
+<span class="w">        </span>├──<span class="w"> </span>rv-201-filename3.py<span class="w">           </span>public<span class="w"> </span>rivt<span class="w"> </span>file
+<span class="w">         </span>...
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rivt-report<span class="o">]</span>/<span class="w">                 </span>report<span class="w"> </span>folder
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rivt-report<span class="o">]</span>-1.py<span class="w">            </span>report<span class="w"> </span>generating<span class="w"> </span>script
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename1.py<span class="w">          </span>rivt<span class="w"> </span>file
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv102-<span class="o">]</span>filename2.py<span class="w">          </span>rivt<span class="w"> </span>file
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv201-<span class="o">]</span>filename3.py<span class="w">          </span>rivt<span class="w"> </span>file
+<span class="w">            </span>...
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rvsrc<span class="o">]</span>/<span class="w">                      </span>author<span class="w"> </span>provided<span class="w"> </span>files<span class="w"> </span>and<span class="w"> </span>folders
+<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>downloads<span class="o">]</span>/<span class="w">                    </span>files<span class="w"> </span>to<span class="w"> </span>download
+<span class="w">                </span>└──<span class="w"> </span>conc-vals.txt
+<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>page<span class="o">]</span>/<span class="w">                          </span>page<span class="w"> </span>layout<span class="w"> </span>images
+<span class="w">                </span>├──<span class="w"> </span>favicon.png
+<span class="w">                </span>├──<span class="w"> </span>covlogo1.png
+<span class="w">                </span>└──<span class="w"> </span>runlogo1.png
+<span class="w">            </span>├──<span class="w"> </span>data/<span class="w">                            </span>tables
+<span class="w">                </span>└──<span class="w"> </span>steel-vals.csv
+<span class="w">            </span>├──<span class="w"> </span>tools/<span class="w">                           </span>OS<span class="w"> </span>shell<span class="w"> </span>commands
+<span class="w">                </span>└──<span class="w"> </span>opensees.sh
+<span class="w">            </span>├──<span class="w"> </span>fig1.png
+<span class="w">            </span>└──<span class="w"> </span>fig2.jpg
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv_stor<span class="o">]</span>/<span class="w">                    </span>rivt-generated<span class="w"> </span><span class="nb">source</span><span class="w"> </span>files
+<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>logs<span class="o">]</span>/<span class="w">                          </span>log<span class="w"> </span>files
+<span class="w">                </span>├──<span class="w"> </span>rv101-log.txt
+<span class="w">                </span>└──<span class="w"> </span>rv102-log.txt
+<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>sect<span class="o">]</span>/<span class="w">                          </span>sections<span class="w"> </span>not<span class="w"> </span>printed
+<span class="w">                </span>├──<span class="w"> </span>rv202-5d.txt
+<span class="w">                </span>├──<span class="w"> </span>rv103-4t.txt
+<span class="w">                </span>└──<span class="w"> </span>rv301-2r.txt
+<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>temp<span class="o">]</span>/<span class="w">                          </span>temp<span class="w"> </span>files
+<span class="w">                </span>└──<span class="w"> </span>rv101-label3.tex
+<span class="w">            </span>├──<span class="w"> </span>output.dat
+<span class="w">            </span>├──<span class="w"> </span>v101-2.csv
+<span class="w">            </span>└──<span class="w"> </span>v102-3.csv
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>_published<span class="o">]</span>/<span class="w">                 </span>rivt-published<span class="w"> </span>docs<span class="w"> </span>and<span class="w"> </span>reports
+<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>docs<span class="o">]</span>/<span class="w">                          </span>html<span class="w"> </span>docs
+<span class="w">                </span>├──<span class="w"> </span>html<span class="w"> </span>auxiliary<span class="w"> </span>folders
+<span class="w">                </span>├──<span class="w"> </span>index.html
+<span class="w">                </span>├──<span class="w"> </span>rv101-filename1.html
+<span class="w">                </span>├──<span class="w"> </span>rv102-filename2.html
+<span class="w">                </span>├──<span class="w"> </span>rv201-filename3.html
+<span class="w">                    </span>...
+<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>pdfdocs<span class="o">]</span>/<span class="w">                       </span>pdf<span class="w"> </span>docs
+<span class="w">                </span>├──<span class="w"> </span>pdf<span class="w"> </span>auxiliary<span class="w"> </span>folders
+<span class="w">                </span>├──<span class="w"> </span>report-title.pdf
+<span class="w">                </span>├──<span class="w"> </span>rv101-filename1.pdf
+<span class="w">                </span>├──<span class="w"> </span>rv102-filename1.pdf
+<span class="w">                </span>├──<span class="w"> </span>rv201-filename3.pdf
+<span class="w">                    </span>...
+<span class="w">            </span>└──<span class="w"> </span><span class="o">[</span>txtdocs<span class="o">]</span>/<span class="w">                       </span>text<span class="w"> </span>docs
+<span class="w">                </span>├──<span class="w"> </span>report-title.txt
+<span class="w">                </span>├──<span class="w"> </span>rv101-filename1.txt
+<span class="w">                </span>├──<span class="w"> </span>rv102-filename1.txt
+<span class="w">                </span>├──<span class="w"> </span>rv201-filename3.txt
+<span class="w">                    </span>...
+<span class="w">        </span>└──<span class="w"> </span><span class="o">[</span>_rstdocs<span class="o">]</span>/<span class="w">                     </span>rivt-generated<span class="w"> </span>rst<span class="w"> </span>files
+<span class="w">            </span>├──<span class="w"> </span>_downloads/
+<span class="w">            </span>├──<span class="w"> </span>_static/
+<span class="w">            </span>├──<span class="w"> </span>rv101-filename1.rst
+<span class="w">            </span>├──<span class="w"> </span>rv102-filename2.rst
+<span class="w">            </span>├──<span class="w"> </span>rv201-filename3.rst
+<span class="w">                </span>...
+</pre></div>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="rvC00-documents.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><strong>C.0 Docs-Files</strong></p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="rvC02-reports.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">C.2 Reports</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Sections
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#file-types"><strong>[1]</strong> File Types</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#folder-names"><strong>[2]</strong>  Folder Names</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#folder-structure"><strong>[3]</strong>  Folder Structure</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2025 R Holland.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+  </body>
+</html>

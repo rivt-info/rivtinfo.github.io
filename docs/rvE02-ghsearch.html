@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
-    <title>&lt;no title&gt; &#8212; rivt</title>
+    <title>E.2 GitHub Search &#8212; rivt</title>
   
   
   
@@ -56,11 +56,12 @@
     <script src="_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'rvE02-ghsearch';</script>
     <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="A.0 Start" href="rvA00-start.html" />
+    <link rel="next" title="F.0 AI" href="rvF00-aiintro.html" />
+    <link rel="prev" title="E.1 Real Time" href="rvE01-realtime.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -124,7 +125,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="index.html">
   
   
   
@@ -179,7 +180,7 @@
 </li>
 
 
-<li class="nav-item ">
+<li class="nav-item current active">
   <a class="nav-link nav-internal" href="rvE00-collab.html">
     E.0 Collaboration
   </a>
@@ -242,6 +243,10 @@
   
 
   
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="Sections">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
 </div>
 
     </header>
@@ -252,10 +257,8 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -298,7 +301,7 @@
 </li>
 
 
-<li class="nav-item ">
+<li class="nav-item current active">
   <a class="nav-link nav-internal" href="rvE00-collab.html">
     E.0 Collaboration
   </a>
@@ -340,6 +343,18 @@
     
   </div>
   
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links" aria-label="Docs">
+    <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
+    <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="rvE01-realtime.html"><strong>E.1 Real Time</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>E.2 GitHub Search</strong></a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
       <div class="sidebar-primary-item">
@@ -360,7 +375,34 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none"></div>
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="rvE00-collab.html" class="nav-link"><strong>E.0 Collaboration</strong></a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>E.2 GitHub Search</strong></span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
               
               
               
@@ -368,31 +410,59 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div style="height: 0; visibility: hidden;">
+  <section id="e-2-github-search">
+<h1><strong>E.2 GitHub Search</strong><a class="headerlink" href="#e-2-github-search" title="Link to this heading">#</a></h1>
+<section id="global-search">
+<span id="search-interface"></span><h2><strong>[1]</strong> Global Search<a class="headerlink" href="#global-search" title="Link to this heading">#</a></h2>
+<p>This page is a search interface for <strong>rivt</strong> files on GitHub. The search covers
+the full text of the <strong>rivt</strong> README.txt file in the <em>repo</em> directory. The
+README file contains the <em>rivt report</em>. For advanced searching use
+the <a class="reference external" href="https://github.com/search" rel="noreferrer" target="_blank">GitHub interface</a>.</p>
+<blockquote>
+<div><p><strong>[ S ]</strong> Search GitHub &lt;Ctrl+Enter&gt;</p>
+<p><strong>[ C ]</strong> Clear input &lt;Ctrl+R&gt;</p>
+</div></blockquote>
+<p><strong>Example</strong>: solar+steel+frame is passed to GitHub as rivt+solar+steel+frame</p>
+<head>
 
-Home
-========
+<style>
+.button {
+background-color: #6f6968; border: 3 px solid white; color: white; padding: 4px 10px;
+text-align: center; text-decoration: none; display: inline-block; font-size: 16px;
+margin: 4px 2px; cursor: pointer;}
+</style>
 
-</div><figure class="align-center">
-<a class="dark-light reference internal image-reference" href="_images/rivt-finalb.png"><img alt="rivt logo" class="dark-light" height="106" src="_images/rivt-finalb.png" width="133" />
-</a>
-</figure>
-<hr><p><em>rivt</em> is an extensible, open source Python tool for writing and organizing
-engineering documents. It publishes <em>rivt files</em> to formatted
-<strong>text, HTML or PDF document files (rivt doc)</strong> .  A <em>rivt file</em> is a Python
-file (.py) that imports the <a class="reference external" href="https://pypi.org/project/rivtlib/" rel="noreferrer" target="_blank">rivtlib</a>
-Python package and includes <a class="reference internal" href="rvD00-markup.html"><span class="doc">rivt markup</span></a>.</p>
-<p>A <em>rivt report</em> is a linked compilation of multiple <em>rivt docs</em>.
-This site is an example of an <em>HTML rivt report</em>.</p>
-<p>An interface for finding public <em>rivt files</em> on <strong>GitHub</strong> is
-<a class="reference internal" href="rvE02-ghsearch.html"><span class="doc">here</span></a>. A collection of open source downloads, including
-<em>rivt</em>, is on <strong>Google Drive</strong> <a class="reference external" href="https://www.openmodels.info" rel="noreferrer" target="_blank">here</a> .</p>
-<hr>
+<script>
+function searchRivt(){var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;
+window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 13) && e.ctrlKey){document.getElementById("searchBtn").click();}});
+</script>
 
-<p style="color:rgb(63,177,197);">ver: 1.0.0a12
-(Note: rivt is <i>alpha sofware</i>. Some features are incomplete
-and the user API may change.)</p><div class="toctree-wrapper compound">
-</div>
+<script>
+function searchOrg(){var strng2 = document.getElementById("terms").value;URL = `https://github.com/search?q=rivt+${strng2}+in%3Areadme`;
+window.open(URL,'_self')};document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 13) && e.ctrlKey){document.getElementById("searchBtn").click();}});
+</script>
+
+<script>
+function clearRivt(){document.getElementById("terms").value="";
+document.addEventListener("keydown", function(e) {if ((e.keyCode == 10 || e.keyCode == 82) && e.ctrlKey){document.getElementById("clearBtn").click();}})};
+</script>
+
+</head>
+
+<button class="button" id="searchBtn" onclick="searchRivt()">S</button><button class="button" id="clearBtn" onclick="clearRivt()">C</button><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal"><br>
+
+<br></section>
+<section id="organization-search">
+<h2><strong>[2]</strong> Organization Search<a class="headerlink" href="#organization-search" title="Link to this heading">#</a></h2>
+<p>Restrict search to the following comma separated GitHub organizations:</p>
+<input type="text" id="terms" name="terms" size=40 style="height:38px;font-size:14pt; font-weight: normal">
+
+<br>
+<br>
+
+<b>Organization(s) Search Terms</b><br>
+<button class="button" id="searchBtn" onclick="searchOrg()">S</button> <button class="button" id="clearBtn" onclick="clearRivt()">C</button><input type="text" id="terms" name="terms" size=60 style="height:40px;font-size:14pt; font-weight: normal"></section>
+</section>
 
 
                 </article>
@@ -404,12 +474,21 @@ and the user API may change.)</p><div class="toctree-wrapper compound">
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="rvE01-realtime.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><strong>E.1 Real Time</strong></p>
+      </div>
+    </a>
     <a class="right-next"
-       href="rvA00-start.html"
+       href="rvF00-aiintro.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>A.0 Start</strong></p>
+        <p class="prev-next-title"><strong>F.0</strong> AI</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -419,6 +498,25 @@ and the user API may change.)</p><div class="toctree-wrapper compound">
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Sections
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#global-search"><strong>[1]</strong> Global Search</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#organization-search"><strong>[2]</strong> Organization Search</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
