@@ -50,8 +50,8 @@ used in *rivt* documents.
 **[3]** Example - Data Table
 -----------------------------------------------------------------------
 
-.. topic:: Prompt -  "Generate a csv table of weight values per unit length 
-           of Douglas Fir 2x joists"
+.. topic:: Prompt -  "Generate a CSV table of lumber weight values per unit 
+                     length of Douglas Fir 2x joists"
 
    .. code-block:: text
 
@@ -77,7 +77,29 @@ used in *rivt* documents.
 .. topic:: Copilot Prompt -  "write a Python function that checks a 
            wood column using NDS"
 
-      
+   .. code-block:: text
+
+      ======================================================================
+      NDS Wood Column Design Checker Results
+      ======================================================================
+
+      Example: 4x4 DF-L Grade #1, pinned-pinned, 6 ft span
+      ----------------------------------------------------------------------
+      Applied axial stress: 244.9 psi
+      Adjusted compression strength: 493.7 psi
+      Applied bending stress (y): 906.8 psi
+      DC ratio: 0.310
+      Governing axis: x
+      Design: ✓ PASS
+
+      Intermediate values:
+      Load duration factor (CD): 1.00
+      Moisture factor (CM): 1.00
+      Size factor (CF): 1.10
+      Stability factor (Cp): 0.3325
+      Slenderness ratio (critical): 71.3
+      Critical slenderness Cc: 117.9
+ 
    .. code-block:: python
 
       """
@@ -424,8 +446,8 @@ used in *rivt* documents.
 **[5]** Example - SAP2000 Model
 ------------------------------------------------------------------------
 
-.. topic:: Copilot Prompt -  "write a Python sap2000 script for a SDOF 
-           mass-spring system as an s2k file that opens and 
+.. topic:: Copilot Prompt -  "write a Python SAP2000 version 14 script for 
+           a SDOF mass-spring system as an s2k file that opens and 
            imports the model via COM.
           
    

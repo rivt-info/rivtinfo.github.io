@@ -438,8 +438,8 @@ used in <em>rivt</em> documents.</p>
 <section id="example-data-table">
 <h2><strong>[3]</strong> Example - Data Table<a class="headerlink" href="#example-data-table" title="Link to this heading">#</a></h2>
 <aside class="topic">
-<p class="topic-title">Prompt -  “Generate a csv table of weight values per unit length
-        of Douglas Fir 2x joists”</p>
+<p class="topic-title">Prompt -  “Generate a CSV table of lumber weight values per unit
+                  length of Douglas Fir 2x joists”</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>csv formatted as a restructurd text file
 
 =========  ================  ================  ========== ==================
@@ -463,6 +463,28 @@ Nominal    ActualWidth_in    ActualDepth_in    Area_in2    Weight_lb_per_ft
 <aside class="topic">
 <p class="topic-title">Copilot Prompt -  “write a Python function that checks a
         wood column using NDS”</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>======================================================================
+NDS Wood Column Design Checker Results
+======================================================================
+
+Example: 4x4 DF-L Grade #1, pinned-pinned, 6 ft span
+----------------------------------------------------------------------
+Applied axial stress: 244.9 psi
+Adjusted compression strength: 493.7 psi
+Applied bending stress (y): 906.8 psi
+DC ratio: 0.310
+Governing axis: x
+Design: ✓ PASS
+
+Intermediate values:
+Load duration factor (CD): 1.00
+Moisture factor (CM): 1.00
+Size factor (CF): 1.10
+Stability factor (Cp): 0.3325
+Slenderness ratio (critical): 71.3
+Critical slenderness Cc: 117.9
+</pre></div>
+</div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">NDS Wood Column Design Checker</span>
 
@@ -808,8 +830,8 @@ Nominal    ActualWidth_in    ActualDepth_in    Area_in2    Weight_lb_per_ft
 <section id="example-sap2000-model">
 <h2><strong>[5]</strong> Example - SAP2000 Model<a class="headerlink" href="#example-sap2000-model" title="Link to this heading">#</a></h2>
 <aside class="topic">
-<p class="topic-title">Copilot Prompt -  “write a Python sap2000 script for a SDOF
-        mass-spring system as an s2k file that opens and
+<p class="topic-title">Copilot Prompt -  “write a Python SAP2000 version 14 script for
+        a SDOF mass-spring system as an s2k file that opens and
         imports the model via COM.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;Create and open a SDOF SAP2000 v14 model via the SAP2000 COM API.</span>
 
