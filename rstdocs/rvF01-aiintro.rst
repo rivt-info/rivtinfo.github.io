@@ -53,9 +53,9 @@ used in *rivt* documents.
 .. topic:: Prompt -  "Generate a csv table of weight values per unit length 
            of Douglas Fir 2x joists"
 
-   **Example Output as reST**
-
    .. code-block:: text
+
+      csv formatted as a restructurd text file
 
       =========  ================  ================  ========== ==================
       Nominal    ActualWidth_in    ActualDepth_in    Area_in2    Weight_lb_per_ft
@@ -74,16 +74,9 @@ used in *rivt* documents.
 **[4]** Example - Python Function 
 ------------------------------------------------------------------------
 
-.. topic:: Copilot Prompt -  "write a python function that checks a 
+.. topic:: Copilot Prompt -  "write a Python function that checks a 
            wood column using NDS"
 
-      **Example Output**
-
-      .. code-block:: python
-
-      """
-   
-      **Python Script**
       
    .. code-block:: python
 
@@ -435,7 +428,6 @@ used in *rivt* documents.
            mass-spring system as an s2k file that opens and 
            imports the model via COM.
           
-   **SAP2000 S2K SDOF Model with COM**
    
    .. code-block:: python
 
@@ -581,7 +573,6 @@ used in *rivt* documents.
            mass nonlinear-spring model with time series input and output 
            helpers"  
           
-   **OpenSees SDOF Nonlinear Model**
    
    .. code-block:: python
 
