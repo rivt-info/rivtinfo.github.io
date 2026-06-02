@@ -196,7 +196,7 @@ along with  text.
         """)
 
 Content is converted line by line into formatted text and 
-`RestructuredText<https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_,
+`RestructuredText <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`__,
 and then further processed into HTML or PDF. If a line does not contain 
 a *command* or *tag* it is passed through as is, which allows for the 
 *Insert* function (rv.I) including some *restructured text* directly i.e. 
