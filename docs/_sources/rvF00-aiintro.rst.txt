@@ -19,17 +19,21 @@
 **[1]** *rivt* in an AI context
 ------------------------------------------------------------------------ 
 
-*rivt* is a Python library and language that takes Python and text strings as
-input. This makes *rivt* a natural fit for using AI to generate *rivt* input.
+*rivt* works independent of *AI*, but as softare that organizes and generates
+dcouments from source data files, *AI* can be effective in generating content
+for *rivt*. Also *rivtlib* is built on Python which is very well understood by
+*AI* models. This makes *rivt* a natural fit for using AI to generate *rivt*
+source files.
 
-For some context a summary of relevant AI models and tools is provided
-:ref:`here <aiback>`.  In brief, AI starts with a few large foundational models
-that provide the basis for many different agents, tools and UI's that are used
-to generate useful content. 
+For context, a summary of the structure of AI and its relevant models and tools
+is provided :ref:`here <aiback>`.  In brief, *AI* outputs are based on a few
+large foundational models which provide input to many different agents, tools
+and UI's that are in turn used to generate outputs to individual queries and
+prompts. 
 
-Effective approaches for using AI to generate complete *rivt files* for specific
-project requirements is currently being explored. *rivt* AI agents are planned
-for release as a software service in the latter part of 2026.
+Approaches for using AI to generate complete *rivt files* for specific project
+requirements is currently being explored. If successful, *rivt* AI agents are
+planned to be offered as a software service in the latter part of 2026.
 
 ------------------------------------
 
@@ -37,12 +41,12 @@ for release as a software service in the latter part of 2026.
 **[2]** Current AI Use Cases
 ----------------------------------------------------------------------- 
 
-The *VSCode IDE* is used to develop *rivt*. *VSCode* is integrated with
+The *VSCode IDE* has been used to develop *rivt*. *VSCode* is integrated with
 *Microsoft Copilot*, an AI coding assistant powered by the *OpenAI*
-:ref:`foundation model <aiback>`. *Copilot*  is aware of *rivt markdown* and is
-able to make editing and content suggestions. More importantly, *Copilot* can be
+:ref:`foundation model <aiback>`. *Copilot*  recognizes *rivt markdown* and is
+able to make editing and content suggestions. More importantly *Copilot* can be
 used to generate tables, equations and models that can be directly
-used in *rivt* documents.
+used in *rivt* documents. Examples follow.
 
 ------------------------------------
 
