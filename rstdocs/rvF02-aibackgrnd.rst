@@ -3,10 +3,11 @@
 
 .. _aiback:
 
-**[1]** Foundational Models
+**[1]** Foundation Models
 --------------------------------------------------------------------- 
 
-Foundational models include private and open source services.
+Foundation models include private or open source services (access to weights and
+parameters).
 
 **Private**
 

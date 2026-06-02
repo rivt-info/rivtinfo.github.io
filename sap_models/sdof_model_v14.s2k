@@ -1,0 +1,36 @@
+! SAP2000 database text file - simple SDOF model
+! Target: SAP2000 v14
+UNITS N M KG C
+
+! Joint coordinates: Joint: 1 = mass node, Joint: 2 = ground
+JOINT COORDINATES 2
+1 0.0 0.0 0.0
+2 0.0 0.0 -1.0
+END
+
+! Joint restraints - ground (joint 2) fully fixed, joint 1 free
+JOINT RESTRAINTS 1
+2 1 1 1 1 1 1
+END
+
+! Joint mass (applied at joint 1) - mass in global Z translation
+JOINT MASS 1
+1 0.0 0.0 1000.0
+END
+
+! Link property: linear spring in translation along global Z (k in N/m)
+LINK PROPERTIES 1
+1 "SDOF_SPRING" 0 0 0 0 0 0 0 1 0 1000000.0
+END
+
+! Link objects: connect joint 1 to joint 2 using link property 1
+LINK OBJECTS 1
+1 1 2 1 0
+END
+
+! Define a static load case (dead) with no loads - useful placeholder
+LOAD CASES 1
+"DEAD" 0 0 0 0 0 0 0
+END
+
+! Save file
