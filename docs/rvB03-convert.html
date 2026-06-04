@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
-    <title>C.2 Reports &#8212; rivt</title>
+    <title>B.3 | Conversion &#8212; rivt</title>
   
   
   
@@ -56,12 +56,12 @@
     <script src="_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'rvC02-reports';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'rvB03-convert';</script>
     <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="D.0 Markup" href="rvD00-markup.html" />
-    <link rel="prev" title="C.1 Files - Folders" href="rvC01-folders.html" />
+    <link rel="next" title="C.0 | Docs-Files" href="rvC00-documents.html" />
+    <link rel="prev" title="B.2 Framework" href="rvB02-framework.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -159,14 +159,14 @@
 </li>
 
 
-<li class="nav-item ">
+<li class="nav-item current active">
   <a class="nav-link nav-internal" href="rvB00-overview.html">
     B.0 | Overview
   </a>
 </li>
 
 
-<li class="nav-item current active">
+<li class="nav-item ">
   <a class="nav-link nav-internal" href="rvC00-documents.html">
     C.0 | Docs-Files
   </a>
@@ -280,14 +280,14 @@
 </li>
 
 
-<li class="nav-item ">
+<li class="nav-item current active">
   <a class="nav-link nav-internal" href="rvB00-overview.html">
     B.0 | Overview
   </a>
 </li>
 
 
-<li class="nav-item current active">
+<li class="nav-item ">
   <a class="nav-link nav-internal" href="rvC00-documents.html">
     C.0 | Docs-Files
   </a>
@@ -348,8 +348,9 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="rvC01-folders.html"><strong>C.1 Files - Folders</strong></a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">C.2 Reports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvB01-motivation.html"><strong>B.1 Motivations</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvB02-framework.html"><strong>B.2 Framework</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>B.3 | Conversion</strong></a></li>
 </ul>
 </div>
 </nav></div>
@@ -391,9 +392,9 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="rvC00-documents.html" class="nav-link"><strong>C.0 | Docs-Files</strong></a></li>
+    <li class="breadcrumb-item"><a href="rvB00-overview.html" class="nav-link"><strong>B.0 | Overview</strong></a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">C.2 Reports</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>B.3 | Conversion</strong></span></li>
   </ul>
 </nav>
 </div>
@@ -410,71 +411,38 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="c-2-reports">
-<h1>C.2 Reports<a class="headerlink" href="#c-2-reports" title="Link to this heading">#</a></h1>
-<section id="rivt-report-py">
-<span id="rivt-report"></span><h2><strong>[2]</strong> rivt-report.py<a class="headerlink" href="#rivt-report-py" title="Link to this heading">#</a></h2>
-<p>The Python <em>report script</em> includes settings that specify assembly parameters
-and override defaults. These include:</p>
-<ul class="simple">
-<li><p><em>Docs</em> to be included in the report</p></li>
-<li><p>Division names</p></li>
-<li><p>recompiling <em>docs</em></p></li>
-<li><p>report cover page and title</p></li>
-</ul>
-<p>provides the option to either regenerate all <em>docs</em> or to
-assemble the report from previously generated <em>docs</em>.  Most aspects of
-the <em>report</em> appearance are determined at when generating <em>docs</em>.</p>
-<p>An example rivt-report.py script is shown below.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#! python</span>
-<span class="sd">&quot;&quot;&quot;generate rivt report</span>
-
-<span class="sd">Run this Python script in the rivt-report folder to write reports to the</span>
-<span class="sd">_published folder. Copy and rename this file to save custom report settings</span>
-<span class="sd">(e.g. rivt-folder-new.py).</span>
-
-<span class="sd">The script does not regenerate individual PDF docs unless specified in the</span>
-<span class="sd">settings. Regenerating individual PDF docs adds execution time. HTML and text</span>
-<span class="sd">docs are always regenerated. See https://www.rivt.info for more details.</span>
-<span class="sd">&quot;&quot;&quot;</span>
-
-<span class="c1"># ========= Modify report settings between the double lines ==============</span>
-<span class="n">iniS</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">[settings]</span>
-<span class="s2">;----- file name for report including extension (pdf, html, txt)</span>
-<span class="s2">rept_filename = rivt-treehouse-report.txt</span>
-<span class="s2">;----- comma separated list of excluded doc numbers eg. rv102, rv204</span>
-<span class="s2">exclude = --</span>
-<span class="s2">;-----  update settings and configuration files from rivt</span>
-<span class="s2">rivt_cfg = true</span>
-<span class="s2">;----- regenerate pdf doc files</span>
-<span class="s2">regen_pdf = false</span>
-
-<span class="s2">[format]</span>
-<span class="s2">title = Treehouse Design</span>
-<span class="s2">subtitle =rivt report</span>
-<span class="s2">client = Example</span>
-<span class="s2">project_ref = Proj. 0001</span>
-<span class="s2">authors = R Holland</span>
-<span class="s2">copyright = StL</span>
-<span class="s2">version = 1.0.0a12</span>
-<span class="s2">;----- logo files are stored in rvsrc/page folder, size is % page width</span>
-<span class="s2">coverlogo = tree1.png</span>
-<span class="s2">coverlogo_size = 50</span>
-<span class="s2">;----- header and footer logos and labels</span>
-<span class="s2">running_logo = rivt02.png</span>
-<span class="s2">running_label = rivt</span>
-<span class="s2">;----- underline links in PDF - true or false</span>
-<span class="s2">pdf_link = true</span>
-<span class="s2">;----- page size letter, legal, A4 - margins top, right, bottom and left</span>
-<span class="s2">pdf_pagesize = letter</span>
-<span class="s2">pdf_margins = 1in, 1in, 1in, 1in</span>
-<span class="s2">&quot;&quot;&quot;</span>
-<span class="c1"># ============================================================================</span>
-<span class="c1"># the following line is required after settings</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvreport</span>
+  <section id="b-3-conversion">
+<h1><strong>B.3 | Conversion</strong><a class="headerlink" href="#b-3-conversion" title="Link to this heading">#</a></h1>
+<section id="docs">
+<h2><strong>[1]</strong> Docs<a class="headerlink" href="#docs" title="Link to this heading">#</a></h2>
+<a class="dark-light reference internal image-reference" href="_images/process2.png"><img alt="rivt flow chart" class="align-center dark-light" src="_images/process2.png" style="width: 75%;" />
+</a>
+<p class="center"><strong>rivt Doc Processing</strong></p>
+<p>Each <a class="reference internal" href="rvG01-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> outputs a corresponding <a class="reference internal" href="rvG01-terms.html#term-doc"><span class="xref std std-term">doc</span></a> of the format
+specified in PUBLISH command of the <em>rv.D()</em> API. A rivt file number has the
+form:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rvAnn-filename.py
 </pre></div>
 </div>
+<p>where rvAnn is a required file number prefix with A an alphanumeric character and nn a two
+digit non-negative integer. Corresponding rivt docs are output as:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rvAnn-filename.txt, pdf or html
+</pre></div>
+</div>
+<p>A <em>rivt report</em> is organized using the <em>file numbers</em>. The file numbers are
+used to organize reports into divisions and subdivisions. Each <em>rivt file</em> or
+<em>doc</em> is a report subdivision. If the <em>rivt filenames</em> are:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rvA01-filename.py
+rv105-filename.py
+rv212-filename.py
+</pre></div>
+</div>
+<p>the corresponding <em>doc numbers</em> in a report would be:</p>
+<ul class="simple">
+<li><p>A.1 (division A, subdivision 1)</p></li>
+<li><p>1.5 (division 1, subdivision 5)</p></li>
+<li><p>2.12 (division 2, subdivision 12)</p></li>
+</ul>
 </section>
 </section>
 
@@ -489,20 +457,20 @@ the <em>report</em> appearance are determined at when generating <em>docs</em>.<
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rvC01-folders.html"
+       href="rvB02-framework.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>C.1 Files - Folders</strong></p>
+        <p class="prev-next-title"><strong>B.2 Framework</strong></p>
       </div>
     </a>
     <a class="right-next"
-       href="rvD00-markup.html"
+       href="rvC00-documents.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>D.0 Markup</strong></p>
+        <p class="prev-next-title"><strong>C.0 | Docs-Files</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -525,7 +493,7 @@ the <em>report</em> appearance are determined at when generating <em>docs</em>.<
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-report-py"><strong>[2]</strong> rivt-report.py</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docs"><strong>[1]</strong> Docs</a></li>
 </ul>
   </nav></div>
 

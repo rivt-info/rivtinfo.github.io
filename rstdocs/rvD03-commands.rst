@@ -365,8 +365,6 @@ Doc Types     text, PDF, HTML
 **[10]** Compare values
 -----------------------------------------
 
- 
-
 Inserts a text with alignment and color on the following line if the expression
 evaluates to true. text1 and text2 are printed if true or false repectively.
 Colors are assigned accordingly as *red;blue;yellow;green;black;gray* defined
@@ -424,9 +422,32 @@ File Types    .csv
 Doc Types     text, PDF, HTML
 =========== ==========================
 
+
+.. _Function value:
+
+**[12]** Function
+-------------------------------------------
+
+Executes Python functions imported by the PYTHON command. 
+Function args are defined and named by the [[ARG]] block. 
+
+.. code-block:: text
+
+    Syntax:
+        | FUNCTION | func name, args, return var, type | label
+
+    Example:
+        | FUNCTION | bending1, beamprops, result1, str | beam design
+
+=========== ==========================
+API Scope     rv.V
+File Types    .py
+Doc Types     text, PDF, HTML
+=========== ==========================
+
 .. _Markup file:
 
-**[12]**  Markup file
+**[13]**  Markup file
 -------------------------------------------
 
  
@@ -452,7 +473,7 @@ Doc Types     text, PDF, HTML
 
 .. _Attach PDF:
 
-**[13]** Attach PDF
+**[14]** Attach PDF
 -------------------------------------------
 
  
@@ -480,7 +501,7 @@ Doc Types     text, PDF, HTML
 
 .. _Publish doc:
 
-**[14]** Publish doc
+**[15]** Publish doc
 -------------------------------------------
 
  

@@ -154,21 +154,21 @@
     
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvA00-start.html">
-    A.0 Start
+    A.0 | Start
   </a>
 </li>
 
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvB00-overview.html">
-    B.0 Overview
+    B.0 | Overview
   </a>
 </li>
 
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvC00-documents.html">
-    C.0 Docs-Files
+    C.0 | Docs-Files
   </a>
 </li>
 
@@ -275,21 +275,21 @@
     
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvA00-start.html">
-    A.0 Start
+    A.0 | Start
   </a>
 </li>
 
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvB00-overview.html">
-    B.0 Overview
+    B.0 | Overview
   </a>
 </li>
 
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvC00-documents.html">
-    C.0 Docs-Files
+    C.0 | Docs-Files
   </a>
 </li>
 
@@ -427,7 +427,7 @@
 <tbody>
 <tr class="row-even"><td><p>rv.R</p></td>
 <td><p><strong>| MARKUP |</strong> rel path | type</p></td>
-<td><p><a class="reference internal" href="#markup-file"><span class="std std-ref">[12]  Markup file</span></a></p></td>
+<td><p><a class="reference internal" href="#markup-file"><span class="std std-ref">[13]  Markup file</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V, I</p></td>
 <td><p><strong>| TABLE |</strong> rel path | title,width,head;nohead,num;non</p></td>
@@ -446,7 +446,7 @@
 <td><p><a class="reference internal" href="#python-file"><span class="std std-ref">[11] Python file</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V</p></td>
-<td><p><strong>| VALTABLE |</strong> rel path | title, width</p></td>
+<td><p><strong>| VALTABLE |</strong> rel path | title, width, num;non</p></td>
 <td><p><a class="reference internal" href="#values-file"><span class="std std-ref">[7]  Valtable file</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.V</p></td>
@@ -459,23 +459,27 @@
 </tr>
 <tr class="row-even"><td><p>rv.V</p></td>
 <td><p>c <strong>:=:</strong> func(x,y) | unit1, unit2, decimal | label</p></td>
-<td><p><a class="reference internal" href="#function-value"><span class="std std-ref">[9] Function value</span></a></p></td>
+<td><p><a class="reference internal" href="#inline-function"><span class="std std-ref">[9] Inline function</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V</p></td>
 <td><p>a <strong>&lt;</strong> c | unit, decimal, text1, text2 | label</p></td>
 <td><p><a class="reference internal" href="#compare-value"><span class="std std-ref">[10] Compare values</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.T</p></td>
+<tr class="row-even"><td><p>rv.V</p></td>
+<td><p><strong>| FUNCTION |</strong> function() | return_var</p></td>
+<td><p><a class="reference internal" href="#function-value"><span class="std std-ref">[12] Function</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.T</p></td>
 <td><p><strong>| SHELL |</strong> rel path | os, wait</p></td>
 <td><p><a class="reference internal" href="#shell-file"><span class="std std-ref">[2] Shell file</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.D</p></td>
-<td><p><strong>| ATTACHPDF |</strong> rel path | place, title</p></td>
-<td><p><a class="reference internal" href="#attach-pdf"><span class="std std-ref">[13] Attach PDF</span></a></p></td>
-</tr>
 <tr class="row-even"><td><p>rv.D</p></td>
+<td><p><strong>| ATTACHPDF |</strong> rel path | place, title</p></td>
+<td><p><a class="reference internal" href="#attach-pdf"><span class="std std-ref">[14] Attach PDF</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.D</p></td>
 <td><p><strong>| PUBLISH |</strong> doc title | type</p></td>
-<td><p><a class="reference internal" href="#publish-doc"><span class="std std-ref">[14] Publish doc</span></a></p></td>
+<td><p><a class="reference internal" href="#publish-doc"><span class="std std-ref">[15] Publish doc</span></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -816,8 +820,8 @@ Example:
 </table>
 </div>
 </section>
-<section id="function-value">
-<span id="id9"></span><h2><strong>[9]</strong> Function value<a class="headerlink" href="#function-value" title="Link to this heading">#</a></h2>
+<section id="inline-function">
+<span id="id9"></span><h2><strong>[9]</strong> Inline function<a class="headerlink" href="#inline-function" title="Link to this heading">#</a></h2>
 <p>Assigns a value to an equation and writes the values to a file <em>vdocnum-s.csv</em>
 where <em>num</em> is the <em>doc number</em> and <em>s</em> is the section number. The file is
 written to the folder <em>stored/vals</em> unless <em>rv single doc</em> is set to <em>True</em>
@@ -911,8 +915,34 @@ Example:
 </table>
 </div>
 </section>
+<section id="function">
+<span id="function-value"></span><h2><strong>[12]</strong> Function<a class="headerlink" href="#function" title="Link to this heading">#</a></h2>
+<p>Executes Python functions imported by the PYTHON command.
+Function args are defined and named by the [[ARG]] block.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    | FUNCTION | func name, args, return var, type | label
+
+Example:
+    | FUNCTION | bending1, beamprops, result1, str | beam design
+</pre></div>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>rv.V</p></td>
+</tr>
+<tr class="row-even"><td><p>File Types</p></td>
+<td><p>.py</p></td>
+</tr>
+<tr class="row-odd"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 <section id="markup-file">
-<span id="id11"></span><h2><strong>[12]</strong>  Markup file<a class="headerlink" href="#markup-file" title="Link to this heading">#</a></h2>
+<span id="id11"></span><h2><strong>[13]</strong>  Markup file<a class="headerlink" href="#markup-file" title="Link to this heading">#</a></h2>
 <p>Inserts HTML into an HTML <em>doc</em>, LaTeX into a PDF <em>doc</em>, and reStructuredText
 into either PDF or HTML. LaTeX requires the installation of <em>texlive</em>.</p>
 <aside class="topic">
@@ -941,7 +971,7 @@ Example:
 </div>
 </section>
 <section id="attach-pdf">
-<span id="id12"></span><h2><strong>[13]</strong> Attach PDF<a class="headerlink" href="#attach-pdf" title="Link to this heading">#</a></h2>
+<span id="id12"></span><h2><strong>[14]</strong> Attach PDF<a class="headerlink" href="#attach-pdf" title="Link to this heading">#</a></h2>
 <p>Appends or prepends a PDF file to the <em>doc</em>. The title parameter generates an
 Appendix cover page with the specified title. A “-” omits the over page. For
 HTML <em>docs</em> the file is inserted as a donwload link.</p>
@@ -971,7 +1001,7 @@ Example:
 </div>
 </section>
 <section id="publish-doc">
-<span id="id13"></span><h2><strong>[14]</strong> Publish doc<a class="headerlink" href="#publish-doc" title="Link to this heading">#</a></h2>
+<span id="id13"></span><h2><strong>[15]</strong> Publish doc<a class="headerlink" href="#publish-doc" title="Link to this heading">#</a></h2>
 <p>Publishes a <em>doc</em>.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
     | PUBLISH | ini relative path | rst2pdf, texpdf, tex, hmtl
@@ -1053,12 +1083,13 @@ Example:
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#valtable-file"><strong>[7]</strong>  Valtable file</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#define-value"><strong>[8]</strong> Define value</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-value"><strong>[9]</strong> Assign value</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function-value"><strong>[9]</strong> Function value</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inline-function"><strong>[9]</strong> Inline function</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compare-values"><strong>[10]</strong> Compare values</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-file"><strong>[11]</strong> Python file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#markup-file"><strong>[12]</strong>  Markup file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attach-pdf"><strong>[13]</strong> Attach PDF</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publish-doc"><strong>[14]</strong> Publish doc</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function"><strong>[12]</strong> Function</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#markup-file"><strong>[13]</strong>  Markup file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attach-pdf"><strong>[14]</strong> Attach PDF</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publish-doc"><strong>[15]</strong> Publish doc</a></li>
 </ul>
   </nav></div>
 

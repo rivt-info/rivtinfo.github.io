@@ -9,8 +9,8 @@
 ========== ========================================= ===============================
 API Scope         Block Tag                                Description 
 ========== ========================================= ===============================
-rv.R        **_[[MARKUP]]** type                      :ref:`Markup block`
 rv.R        **_[[PYTHON]]** label                     :ref:`Python block`
+rv.R,I      **_[[MARKUP]]** type                      :ref:`Markup block`
 rv.I        **_[[BOX]]** label                        :ref:`Box block`
 rv.I        **_[[TOPIC]]** topic                      :ref:`Topic block`
 rv.V        **_[[TABLE]]** label                      :ref:`Table block`
@@ -230,14 +230,14 @@ Doc Types     text, PDF, HTML
 Inserts formatted text into doc. 
 
     - *literal*
-    - *rst*
     - *html*
+    - *reST*
     - *endnote*
     - *center*
     - *bold*
     - *italic*
+    - *mermaid* (node and mermaid-cli must be installed)
     - *latex* (texlive must be installed)
-
 
 .. topic:: _[[MARKUP]] type
         
