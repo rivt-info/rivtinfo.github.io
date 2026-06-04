@@ -1,4 +1,4 @@
-**E.2 GitHub Search**
+**E.2 | GitHub Search**
 ===================================
 
 .. _search-interface:

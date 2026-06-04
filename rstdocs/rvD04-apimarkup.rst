@@ -1,4 +1,4 @@
-**D.4 Markup by API**
+**D.4 | Markup by API**
 ==========================
 
 .. _markup-api:

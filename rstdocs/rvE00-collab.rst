@@ -1,4 +1,4 @@
-**E.0 Collaboration**
+**E.0 | Collaboration**
 =======================
 
 **[1]** Overview

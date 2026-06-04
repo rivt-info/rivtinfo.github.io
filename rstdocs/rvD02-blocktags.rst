@@ -1,4 +1,4 @@
-**D.2 Block Tags**
+**D.2 | Block Tags**
 ========================
 
 **[1]** Block Tag Summary

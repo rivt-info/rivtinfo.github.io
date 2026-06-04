@@ -1,4 +1,4 @@
-**B.2 Framework**
+**B.2 | Framework**
 =================================  
 
 .. _rivt framework:

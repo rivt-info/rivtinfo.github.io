@@ -1,4 +1,4 @@
-**C.1 Files - Folders**
+**C.1 | Files - Folders**
 ============================
 
 **[1]** File Types 
