@@ -202,4 +202,3 @@ detailed description of the folder structure is :ref:`here <report-folders>`.
 
     rvB01-motivation.rst
     rvB02-framework.rst
-    rvB03-convert.rst
