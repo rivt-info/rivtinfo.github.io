@@ -13,7 +13,8 @@ rv.R        **_[[PYTHON]]** label                     :ref:`Python block`
 rv.R,I      **_[[MARKUP]]** type                      :ref:`Markup block`
 rv.I        **_[[BOX]]** label                        :ref:`Box block`
 rv.I        **_[[TOPIC]]** topic                      :ref:`Topic block`
-rv.V        **_[[TABLE]]** label                      :ref:`Table block`
+rv.I,V      **_[[TABLE]]** label                      :ref:`Table block`
+rv.V        **_[[ARGS]]** arg dict name               :ref:`Arg block`
 rv.T        **_[[SHELL]]** os, *wait;nowait*          :ref:`Shell script`
 rv.D        **_[[METADATA]]** label                   :ref:`Meta block` 
 all         **_[[END]]**                              :ref:`End block`
@@ -166,7 +167,7 @@ Doc Types     text, PDF, HTML
 **[6]** Box 
 ------------------------------------------------
 
-.. topic:: _[[BOX]] 
+.. topic:: _[[BOX]] label
 
     Draws a box around the block of text.
 
@@ -179,7 +180,7 @@ Doc Types     text, PDF, HTML
                 _[[END]]
 
             Example:    
-                _[[BOX]] 
+                _[[BOX]] box1
                 This is a sentence.
                 A second sentence.
                 A box is drawn around the sentences.
@@ -222,12 +223,49 @@ Doc Types     text, PDF, HTML
 
 -----------------------
 
-.. _Markup block:
+.. _Arg block:
 
-**[8]** Markup block
+**[8]** Argument block
 ---------------------------------------
 
-Inserts formatted text into doc. 
+.. topic:: _[[ARG]] arg_name
+        
+    Organizes function arguments into a dictionary that may be passed
+    to the FUNCTION command.
+
+    .. code-block:: text
+            
+        Syntax:    
+            _[[ARGS]] arg_dictionary_name | list of units
+            arg1 = A # label
+            arg2 = B # label
+            ...
+            _[[END]]
+
+        Example:    
+            _[[ARGS]] beam1 | units: inch, pounds
+            ln_1 = 10*12 # beam length
+            P_1 = 1.1*1000 # beam load
+            ...
+            _[[END]]
+
+=========== ==========================
+API Scope     Values
+Doc Types     text, PDF, HTML
+=========== ==========================
+
+-----------------------
+
+.. _Markup block:
+
+**[9]** Markup block
+---------------------------------------
+
+
+
+.. topic:: _[[MARKUP]] type
+    
+    Inserts formatted text into doc. 
 
     - *literal*
     - *html*
@@ -237,10 +275,8 @@ Inserts formatted text into doc.
     - *bold*
     - *italic*
     - *mermaid* (node and mermaid-cli must be installed)
-    - *latex* (texlive must be installed)
-
-.. topic:: _[[MARKUP]] type
-        
+    - *latex* (texlive must be installed)    
+    
     .. code-block:: text
             
         Syntax:    
@@ -266,7 +302,7 @@ Doc Types     text, PDF, HTML
 
 .. _Meta block:
 
-**[9]** Metadata
+**[10]** Metadata
 -------------------
 
  
@@ -309,7 +345,7 @@ Doc Types     text, PDF, HTML
 
 .. _End block:
 
-**[10]** End block
+**[11]** End block
 ------------------------------------------------
 
  

@@ -10,24 +10,24 @@
 
 **Commands format files and equations**
 
-========== ============================================================== ========================
-API Scope           Command                                                  Description
-========== ============================================================== ========================
-rv.R        **| MARKUP |** rel path | type                                  :ref:`Markup file`
-rv.V, I     **| TABLE |** rel path | title,width,head;nohead,num;non        :ref:`Table file`     
-rv.V, I     **| IMAGE |** rel path | caption, scale, num;non                :ref:`Image file`
-rv.V, I     **| IMAGE2 |** rel pth1, rel pth2 | ca1,ca2,sc1,sc2,num;non     :ref:`Adjacent images`
-rv.V        **| PYTHON |** rel path | rivt;namespace                        :ref:`Python file`
-rv.V        **| VALTABLE |** rel path | title, width, num;non               :ref:`Values file`   
-rv.V        a **==:** 1*IN  | unit1, unit2, decimal | label                 :ref:`Define value`
-rv.V        c **<=:** expression | unit1, unit2, decimal | label            :ref:`Assign value`
-rv.V        c **:=:** func(x,y) | unit1, unit2, decimal | label             :ref:`Inline function`
-rv.V        a **<** c | unit, decimal, text1, text2 | label                 :ref:`Compare value`
-rv.V        **| FUNCTION |** function() | return_var                        :ref:`Function value`  
-rv.T        **| SHELL |** rel path | os, wait                               :ref:`Shell file`
-rv.D        **| ATTACHPDF |** rel path | place, title                       :ref:`Attach PDF`   
-rv.D        **| PUBLISH |** doc title | type                                :ref:`Publish doc` 
-========== ============================================================== ========================
+========== ===================================================================== ========================
+API Scope           Command                                                        Description
+========== ===================================================================== ========================
+rv.R        **| MARKUP |** rel path | type                                        :ref:`Markup file`
+rv.V, I     **| TABLE |** rel path | title,width,head;nohead,num;non              :ref:`Table file`     
+rv.V, I     **| IMAGE |** rel path | caption, scale, num;non, time;not            :ref:`Image file`
+rv.V, I     **| IMAGE2 |** rel path1, rel path2 | c1,c2,s1,s2,n1,n2,t1,t2         :ref:`Adjacent images`
+rv.V        **| PYTHON |** rel path | rivt;namespace                              :ref:`Python file`
+rv.V        **| VALTABLE |** rel path | title, width, num;non                     :ref:`Values file`   
+rv.V        a **==:** 1*IN  | unit1, unit2, decimal | label                       :ref:`Define value`
+rv.V        c **<=:** expression | unit1, unit2, decimal | label                  :ref:`Assign value`
+rv.V        c **:=:** func(x,y) | unit1, unit2, decimal | label                   :ref:`Inline function`
+rv.V        a **<** c | unit, decimal, text1, text2 | label                       :ref:`Compare value`
+rv.V        **| FUNCTION |** function, arg, var, type | label                     :ref:`Function value`  
+rv.T        **| SHELL |** rel path | os, wait                                     :ref:`Shell file`
+rv.D        **| ATTACHPDF |** rel path | place, title                             :ref:`Attach PDF`   
+rv.D        **| PUBLISH |** doc title | type                                      :ref:`Publish doc` 
+========== ===================================================================== ========================
 
 
 **Parent paths for commands**
