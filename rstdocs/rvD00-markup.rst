@@ -96,8 +96,9 @@ The header parameters include the following comma separated values in any
 order:
 
 *private/public* 
-    Determines whether the API section text is copied to the
-    the *Public* folder *rivt file* for sharing. 
+    Determines whether the API section text is copied to the the *Public* folder
+    *rivt file* for potentinal sharing. Actually sharing this folder is a 
+    separate step.
 
 *doc/stored*
     Determines whether the *rivt string* is formatted and printed in the doc, 
@@ -111,29 +112,34 @@ order:
 Default settings in the *header substring* do not need to be specified. The
 default setting for each API is listed first (in bold) in the table below.
 The default privacy settings for all sections in a rivt file may be reversed by
-including the *public comment setting* immeditely following the 
-*rivlib import statement*. 
+including it in the *comment settings* immediately following the  
+*rivlib import statement*.  Default settings are in parenthsis.
 
 .. code:: python
 
     import rivtlib.rvapi as rv
 
-    # rv setpublic = true
+    # rv private = false ; default section parameter changed to public (true)
+    # rv no_tag = true ; API type is added to section number (true)
+    # rv set_width = true character width of text output (80
 
-Individual sections may be set as private in the header substring after changing
-default.
+Individual sections may be reset as private in the header substring after
+changing the default. In the table below a single dash before an option means
+that is the only option.
+
+
 
 **Header substring defaults**
 ====== =================== =============== =================== ==================
 API      private; public     doc; stored      section; merge     pdfpage; nopage    
 ====== =================== =============== =================== ==================
-rv.R    **private**          **stored**      **section**          **nopage**
-rv.I    **private**          **doc**         **section**          **nopage** 
-rv.V    **private**          **doc**         **section**          **nopage** 
-rv.T    **private**          **stored**      **section**          **nopage**
-rv.D    **public**           **doc**         **section**          **nopage**
-rv.S    **private**          **stored**      **section**          **nopage**
-rv.X         -                       -                -                -
+rv.R    **private**         **stored**       **section**          **nopage**
+rv.I    **private**         **doc**          **section**          **nopage** 
+rv.V    **private**         **doc**          **section**          **nopage** 
+rv.T    **private**         **- stored**          NA                  NA
+rv.D    **- public**        **- stored**          NA                  NA
+rv.S    **private**         **- stored**          NA                  NA
+rv.X         NA               NA                  NA                  NA
 ====== =================== =============== =================== ==================
 
 

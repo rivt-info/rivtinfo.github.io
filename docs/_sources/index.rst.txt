@@ -32,6 +32,9 @@ An interface for finding public *rivt files* on **GitHub** is
 :doc:`here<rvE02-ghsearch>`. A collection of open source downloads, including 
 *rivt*, is on **Google Drive** `here <https://www.openmodels.info>`__ . 
 
+If you are interested in *rivt* and *AI* an overview is 
+:ref:`here<rivt-context>`.
+
 .. raw:: html
 
    <hr>

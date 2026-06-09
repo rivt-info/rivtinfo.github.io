@@ -10,24 +10,25 @@
 
 **Commands format files and equations**
 
-========== ===================================================================== ========================
+========== =============================================================== ========================
 API Scope           Command                                                        Description
-========== ===================================================================== ========================
-rv.R        **| MARKUP |** rel path | type                                        :ref:`Markup file`
-rv.V, I     **| TABLE |** rel path | title,width,head;nohead,num;non              :ref:`Table file`     
-rv.V, I     **| IMAGE |** rel path | caption, scale, num;non, time;not            :ref:`Image file`
-rv.V, I     **| IMAGE2 |** rel path1, rel path2 | c1,c2,s1,s2,n1,n2,t1,t2         :ref:`Adjacent images`
-rv.V        **| PYTHON |** rel path | rivt;namespace                              :ref:`Python file`
-rv.V        **| VALTABLE |** rel path | title, width, num;non                     :ref:`Values file`   
-rv.V        a **==:** 1*IN  | unit1, unit2, decimal | label                       :ref:`Define value`
-rv.V        c **<=:** expression | unit1, unit2, decimal | label                  :ref:`Assign value`
-rv.V        c **:=:** func(x,y) | unit1, unit2, decimal | label                   :ref:`Inline function`
-rv.V        a **<** c | unit, decimal, text1, text2 | label                       :ref:`Compare value`
-rv.V        **| FUNCTION |** function, arg, var, type | label                     :ref:`Function value`  
-rv.T        **| SHELL |** rel path | os, wait                                     :ref:`Shell file`
-rv.D        **| ATTACHPDF |** rel path | place, title                             :ref:`Attach PDF`   
-rv.D        **| PUBLISH |** doc title | type                                      :ref:`Publish doc` 
-========== ===================================================================== ========================
+========== =============================================================== ========================
+rv.R        **| MARKUP |** rel path | type                                   :ref:`Markup file`
+rv.V, I     **| TABLE |** rel path | title,width,head;nohead,num;non         :ref:`Table file`     
+rv.V, I     **| IMAGE |** rel path | caption, scale, num;non, time;not       :ref:`Image file`
+rv.V, I     **| IMAGE2 |** rel path1, rel path2 | c1,c2,s1,s2,n1,n2          :ref:`Adjacent images`
+rv.V, R     **| PYTHON |** rel path | rivt;namespace                         :ref:`Python file`
+rv.V        **| VALTABLE |** rel path | title, width, num;non                :ref:`Values file`   
+rv.V        a **==:** 1*IN  | unit1, unit2, decimal | label                  :ref:`Define value`
+rv.V        c **<=:** expression | unit1, unit2, decimal | label             :ref:`Assign value`
+rv.V        c **:=:** func(x,y) | unit1, unit2, decimal | label              :ref:`Inline function`
+rv.V        a **<** c | unit, decimal, text1, text2 | label                  :ref:`Compare value`
+rv.V        **| FUNCTION |** function, arg, var, type | label                :ref:`Function value`  
+rv.T        **| COPY |** abs src path | abs dest path | file pattern         :ref:`Copy file`
+rv.T        **| SHELL |** abs path | os, wait                                :ref:`Shell file`
+rv.D        **| ATTACHPDF |** rel path | front;back, title                   :ref:`Attach PDF`   
+rv.D        **| PUBLISH |** doc title | type                                 :ref:`Publish doc` 
+========== =============================================================== ========================
 
 
 **Parent paths for commands**
@@ -59,8 +60,6 @@ See :ref:`here <report-folders>` for the folder structure.
 **[2]** Shell file
 -------------------------------------------
 
- 
-
 The SHELL command runs shell scripts including .cmd, .bat and .sh files. 
 The *os* parameter specifies the operating system: *win*, *mac* or *linux*. 
 The *wait; nowait* specifies whether rivt file processing waits for the
@@ -74,34 +73,38 @@ read from the rivt file folder.
 .. code-block:: text
 
     Syntax:
-        | SHELL | relative file path | win;mac;linux,wait;nowait
+        | SHELL | relative file path | file name
 
     Example:
-        | SHELL | file1.cmd | win, nowait
+        | SHELL | rvsrc | sap.cmd
 
 =========== ==========================
-API Scope     rv.R
-File Types   .cmd, .bat, .sh, .bsh 
+API Scope     Tools
+File Types    .cmd, .bat, .sh, .bsh 
 Doc Types     text, PDF, HTML
 =========== ==========================
 
 
-.. _Text file:
+.. _Markup file:
 
 **[3]** Text file
 ------------------------------------------
 
- 
-
 The TEXT command reads and formats text and code files. The language parameter
 specifies formatting and syntax coloring.  Language types include:
 
+Inserts formatted text into doc. 
+
 - *literal*
+- *html*
+- *reST*
 - *python*
-- *text*
-- *sh*
-- *cmd*
-- *reStructuredText*
+- *endnote*
+- *center*
+- *bold*
+- *italic*
+- *mermaid* (node and mermaid-cli must be installed)
+- *latex*   (texlive must be installed)  
 
 The *literal* type inserts text into the *doc* without formatting.
 
@@ -110,16 +113,17 @@ be in the default folder */src/data/* . Otherwise the path needs to be specified
 relative to the report root (rivt file folder). If the doc is a 
 single doc the file is read from the rivt file folder.
 
-.. code-block:: text
+.. topic:: | MARKUP |
 
-    Syntax:
-        | TEXT | relative file path | language - see list above
+    .. code-block:: text
 
-    Example:
-        | TEXT | file1.txt | literal
+        Syntax:
+            | MARKUP | relative path | type
+        Example:
+            | MARKUP | rvsrc/script.rst | rest
 
 =========== =====================================
-API Scope     rv.I
+API Scope     rv.I, rv.V
 File Types    txt, .py, .cmd, .bat, .sh, .rst 
 Doc Types     text, PDF, HTML
 =========== =====================================
@@ -328,7 +332,7 @@ Doc Types     text, PDF, HTML
 
 .. _Inline function:
 
-**[9]** Inline function
+**[10]** Inline function
 -------------------------------------------
 
  
@@ -362,7 +366,7 @@ Doc Types     text, PDF, HTML
 
 .. _Compare value:
 
-**[10]** Compare values
+**[11]** Compare values
 -----------------------------------------
 
 Inserts a text with alignment and color on the following line if the expression
@@ -400,7 +404,7 @@ Doc Types     text, PDF, HTML
 
 .. _Python file:
 
-**[11]** Python file
+**[12]** Python file
 -------------------------------------------
 
  
@@ -425,7 +429,7 @@ Doc Types     text, PDF, HTML
 
 .. _Function value:
 
-**[12]** Function
+**[13]** Function
 -------------------------------------------
 
 Executes Python functions imported by the PYTHON command. 
@@ -445,35 +449,32 @@ File Types    .py
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-.. _Markup file:
 
-**[13]**  Markup file
+.. _Copy file:
+
+**[14]** Copy Files
 -------------------------------------------
 
- 
+Copy files using absolute paths. -rvsrc- is an alias for the rvsrc folder.
+OS alias may also be used e.g. %USERPROFILE% on Windows.
 
-Inserts HTML into an HTML *doc*, LaTeX into a PDF *doc*, and reStructuredText
-into either PDF or HTML. LaTeX requires the installation of *texlive*.
+.. code-block:: text
 
-.. topic:: | MARKUP |
-
-    .. code-block:: text
-
-        Syntax:
-            | MARKUP | relative path | *rst, html, latex*
-  
-        Example:
-            | MARKUP | script.rst | rst
+    Syntax:
+        | COPY | abs src path | abs dest path | file name and wildcards
+    Example:
+        | COPY | -rvsrc-/scripts | %USERPROFILE%/venv1
 
 =========== ==========================
-API Scope     rv.t
-File Types    html, rst, tex
+API Scope     Tools
+File Types    *.*
 Doc Types     text, PDF, HTML
 =========== ==========================
 
+
 .. _Attach PDF:
 
-**[14]** Attach PDF
+**[15]** Attach PDF
 -------------------------------------------
 
  
@@ -501,7 +502,7 @@ Doc Types     text, PDF, HTML
 
 .. _Publish doc:
 
-**[15]** Publish doc
+**[16]** Publish doc
 -------------------------------------------
 
  

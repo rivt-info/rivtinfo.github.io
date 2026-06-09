@@ -507,8 +507,9 @@ section title, followed by a vertical bar and three comma separated
 <p>The header parameters include the following comma separated values in any
 order:</p>
 <dl class="simple">
-<dt><em>private/public</em></dt><dd><p>Determines whether the API section text is copied to the
-the <em>Public</em> folder <em>rivt file</em> for sharing.</p>
+<dt><em>private/public</em></dt><dd><p>Determines whether the API section text is copied to the the <em>Public</em> folder
+<em>rivt file</em> for potentinal sharing. Actually sharing this folder is a
+separate step.</p>
 </dd>
 <dt><em>doc/stored</em></dt><dd><p>Determines whether the <em>rivt string</em> is formatted and printed in the doc,
 or just annotated in the doc and written to a file in the <em>Stored</em> folder
@@ -521,26 +522,29 @@ or is merged into the previous section.</p>
 <p>Default settings in the <em>header substring</em> do not need to be specified. The
 default setting for each API is listed first (in bold) in the table below.
 The default privacy settings for all sections in a rivt file may be reversed by
-including the <em>public comment setting</em> immeditely following the
-<em>rivlib import statement</em>.</p>
+including it in the <em>comment settings</em> immediately following the
+<em>rivlib import statement</em>.  Default settings are in parenthsis.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
 
-<span class="c1"># rv setpublic = true</span>
+<span class="c1"># rv private = false ; default section parameter changed to public (true)</span>
+<span class="c1"># rv no_tag = true ; API type is added to section number (true)</span>
+<span class="c1"># rv set_width = true character width of text output (80</span>
 </pre></div>
 </div>
-<p>Individual sections may be set as private in the header substring after changing
-default.</p>
+<p>Individual sections may be reset as private in the header substring after
+changing the default. In the table below a single dash before an option means
+that is the only option.</p>
 <p><strong>Header substring defaults</strong>
 ====== =================== =============== =================== ==================
 API      private; public     doc; stored      section; merge     pdfpage; nopage
 ====== =================== =============== =================== ==================
-rv.R    <strong>private</strong>          <strong>stored</strong>      <strong>section</strong>          <strong>nopage</strong>
-rv.I    <strong>private</strong>          <strong>doc</strong>         <strong>section</strong>          <strong>nopage</strong>
-rv.V    <strong>private</strong>          <strong>doc</strong>         <strong>section</strong>          <strong>nopage</strong>
-rv.T    <strong>private</strong>          <strong>stored</strong>      <strong>section</strong>          <strong>nopage</strong>
-rv.D    <strong>public</strong>           <strong>doc</strong>         <strong>section</strong>          <strong>nopage</strong>
-rv.S    <strong>private</strong>          <strong>stored</strong>      <strong>section</strong>          <strong>nopage</strong>
-rv.X         -                       -                -                -
+rv.R    <strong>private</strong>         <strong>stored</strong>       <strong>section</strong>          <strong>nopage</strong>
+rv.I    <strong>private</strong>         <strong>doc</strong>          <strong>section</strong>          <strong>nopage</strong>
+rv.V    <strong>private</strong>         <strong>doc</strong>          <strong>section</strong>          <strong>nopage</strong>
+rv.T    <strong>private</strong>         <strong>- stored</strong>          NA                  NA
+rv.D    <strong>- public</strong>        <strong>- stored</strong>          NA                  NA
+rv.S    <strong>private</strong>         <strong>- stored</strong>          NA                  NA
+rv.X         NA               NA                  NA                  NA
 ====== =================== =============== =================== ==================</p>
 <p>Examples of <em>header substring</em> settings are shown below.</p>
 <ul class="simple">

@@ -94,7 +94,7 @@ including images, tables, links and formatted text.
 ==================================================================== =========================
  **| IMAGE |** relative path |  scale, caption, figure                 :ref:`Image file`
  **| IMAGE2 |** rel path1, rel path2 | s1, s2, c1, c2, fig1, fig2      :ref:`Adjacent images`
- **| TEXT |** relative path |  language                                :ref:`Text file`
+ **| TEXT |** relative path |  language                                :ref:`Markup file`
  **| TABLE |** rel path | title, width, rows, align, head              :ref:`Table file`     
 ==================================================================== =========================
 

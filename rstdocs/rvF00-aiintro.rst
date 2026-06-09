@@ -15,6 +15,7 @@
 
    <hr>
 
+.. _rivt-context:
 
 **[1]** *rivt* in an AI context
 ------------------------------------------------------------------------ 
@@ -26,8 +27,9 @@ understood by *AI* tools.
 
 For context regarding future *rivt* development, a summary of relevant AI models
 and tools is provided :ref:`here <aiback>`.  In brief, *AI* outputs are based on
-a few large foundational models which provide input to agents, tools and UI's
-that are used to generate relevant responses to individual queries and prompts. 
+a few large foundational models which provide input to agents, tools and UI's.
+This secondary layer is used to generate relevant responses to user
+queries and prompts. 
 
 The possiblity of agents that generate complete *rivt files* for specific
 project requirements is currently being explored. If successful, *rivt* AI

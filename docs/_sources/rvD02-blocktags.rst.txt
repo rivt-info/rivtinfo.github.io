@@ -15,57 +15,98 @@ rv.I        **_[[BOX]]** label                        :ref:`Box block`
 rv.I        **_[[TOPIC]]** topic                      :ref:`Topic block`
 rv.I,V      **_[[TABLE]]** label                      :ref:`Table block`
 rv.V        **_[[ARGS]]** arg dict name               :ref:`Arg block`
+rv.T        **_[[WRITE]]** var name                   :ref:`Write block`
 rv.T        **_[[SHELL]]** os, *wait;nowait*          :ref:`Shell script`
 rv.D        **_[[METADATA]]** label                   :ref:`Meta block` 
 all         **_[[END]]**                              :ref:`End block`
 ========== ========================================= ===============================
 
-.. _Shell script:
+.. _Markup block:
 
-**[2]** Shell script
-------------------------------------
-Runs shell scripts that run external programs. The shell parameters include
-specifying the operating system, process control and terminal window control.
-The os parameter specifies the terminal type. The wait parameter specifies
-whether rivt file processing waits for the script to complete before
-continuing. The open parameter specifies whether to keep the shell window open
-after execution.
+**[9]** Markup block
+---------------------------------------
 
-.. topic:: _[[SHELL]] 
 
+
+.. topic:: _[[MARKUP]] type
+    
+    Inserts formatted text into doc. 
+
+    - *literal*
+    - *html*
+    - *reST*
+    - *python*
+    - *endnote*
+    - *center*
+    - *bold*
+    - *italic*
+    - *mermaid* (node and mermaid-cli must be installed)
+    - *latex*   (texlive must be installed)    
+    
     .. code-block:: text
-        
-        Syntax:
-            _[[SHELL]] win;mac;linux,wait; nowait,open; close
-            shell command
+            
+        Syntax:    
+            _[[MARKUP]] 
+            markup
             ...
             _[[END]]
-    
-        
-        Example:
-            _[[SHELL]] win,nowait,open
-            dir
-            path
+
+        Example:    
+            _[[MARKUP]] rst
+            This is **bold** and 
+            this is *italic* in 
+            reStructuredtext
+            ...
             _[[END]]
 
 =========== ==========================
-API Scope     Tools
+API Scope     Run
 Doc Types     text, PDF, HTML
 =========== ==========================
 
 -----------------------
 
-.. _Endnotes block:
 
-**[3]** Endnotes 
+.. _Python block:
+
+**[7]** Python 
+------------------------------------------------
+.. topic:: _[[PYTHON]] 
+
+    Executes Python script in the *rivt namespace* or a user specified namespace.
+    File paths in the script are relative to the *rivt file* folder.
+
+    .. code-block:: python
+
+            Syntax:    
+                _[[Python]] topic title
+                code
+                ...
+                _[[END]]
+
+            Example:    
+                _[[PYTHON]] *rvspace*; user namespace
+                b = 1*inch + 2.2*ft
+                print(b)
+                _[[END]]
+
+=========== ==========================
+API Scope     Value, Run
+Doc Types     text, PDF, HTML
+=========== ==========================
+
+-----------------------
+
+.. _String block:
+
+**[3]** String 
 -------------------------------------------    
 
  
 
-.. topic:: _[[ENDNOTES]] 
+.. topic:: _[[STRING]]  var name
 
-    Assigns numbers and formats endnotes in order of processing. Each endnote is
-    separated by a blank line and is numbered in order of occurrence.
+    Formats a Python fstring with 
     
     .. code-block:: text
 
@@ -193,31 +234,32 @@ Doc Types     text, PDF, HTML
 
 -----------------------
 
-.. _Python block:
 
-**[7]** Python 
+.. _Write block:
+
+**[7]** Write Block 
 ------------------------------------------------
-.. topic:: _[[PYTHON]] 
 
-    Executes Python script in the *rivt namespace* or a user specified namespace.
-    File paths in the script are relative to the *rivt file* folder.
+.. topic:: _[[WRITE]] rel file path
 
-    .. code-block:: python
+    Updates variables in templates and writes file to report folder. 
+
+    .. code-block:: text
 
             Syntax:    
-                _[[Python]] topic title
-                code
+                _[[WRITE]] relative file path
+                text or script
                 ...
                 _[[END]]
 
             Example:    
-                _[[PYTHON]] *rvspace*; user namespace
-                b = 1*inch + 2.2*ft
-                print(b)
+                _[[WRITE]] rvsrc/script.py
+                for i in range(2):
+                    print(f"{vars}",i) 
                 _[[END]]
 
 =========== ==========================
-API Scope     Value, Run
+API Scope     Tools
 Doc Types     text, PDF, HTML
 =========== ==========================
 
@@ -256,49 +298,43 @@ Doc Types     text, PDF, HTML
 
 -----------------------
 
-.. _Markup block:
-
-**[9]** Markup block
----------------------------------------
 
 
+.. _Shell script:
 
-.. topic:: _[[MARKUP]] type
-    
-    Inserts formatted text into doc. 
+**[9]** Shell script
+------------------------------------
+Runs shell scripts that run external programs. The shell parameters include
+specifying the operating system, process control and terminal window control.
+The os parameter specifies the terminal type. The wait parameter specifies
+whether rivt file processing waits for the script to complete before
+continuing. The open parameter specifies whether to keep the shell window open
+after execution.
 
-    - *literal*
-    - *html*
-    - *reST*
-    - *endnote*
-    - *center*
-    - *bold*
-    - *italic*
-    - *mermaid* (node and mermaid-cli must be installed)
-    - *latex* (texlive must be installed)    
-    
+.. topic:: _[[SHELL]] 
+
     .. code-block:: text
-            
-        Syntax:    
-            _[[MARKUP]] 
-            markup
+        
+        Syntax:
+            _[[SHELL]] win;mac;linux,wait; nowait,open; close
+            shell command
             ...
             _[[END]]
-
-        Example:    
-            _[[MARKUP]] rst
-            This is **bold** and 
-            this is *italic* in 
-            reStructuredtext
-            ...
+    
+        
+        Example:
+            _[[SHELL]] win,nowait,open
+            dir
+            path
             _[[END]]
 
 =========== ==========================
-API Scope     Run
+API Scope     Tools
 Doc Types     text, PDF, HTML
 =========== ==========================
 
 -----------------------
+
 
 .. _Meta block:
 
