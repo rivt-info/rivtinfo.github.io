@@ -1,6 +1,7 @@
 **B.1 | Motivations**
 =====================================================================
 
+.. _motivation: 
 
 **[1]** Background
 --------------------------------------------------------------------- 
@@ -8,9 +9,14 @@
 *rivt* is an open source software project that simplifies sharing and reuse of
 engineering documents. This has always been a challenge because engineering
 documents are complex. They may include text, images, tables, calculations,
-models and computer code. The market response to engineering document software
-has been to develop incompatible, siloed programs with barrriers to 
-sharing and reuse that include:
+models and computer code. They are also dynamic and are freqeuently updated
+as projects evolve and progress. 
+
+The desire to reuse engineering documents is a matter of simple efficiency. Most
+engineering projects are not fundamentally unique. They follow familiar patterns
+and differ in ddegree and detials, not kind. The commercial market response to
+engineering document software has been to develop incompatible, siloed programs
+with barrriers to sharing and reuse that include:
 
 - incompatible documents across programs
 - costly software updates that are backward incompatible
@@ -19,34 +25,37 @@ sharing and reuse that include:
 - limited report generation
 - limited collaboration
 
-*rivt* is designed to address these barriers as both a compliment and
-replacement to existing software. The table below summarizes and compares
-limitations between different programs.
+Open source solutions have begun to change that. *rivt* is designed to address
+these barriers as a compliment and replacement to existing software. The table
+below summarizes and compares limitations between different programs
+(commercial programs in italics).
 
 .. rst-class:: center
 
 **Software Comparison**
 
-============ ============ ========= ======== ========= ========= ============= 
-Program      Report [1]_   Ver [2]_ Txt [3]_ Comp [4]_  CP [5]_   Collab [6]_  
-============ ============ ========= ======== ========= ========= ============= 
-Matlab         no           no         no      no          no       no   
-Mathcad        no           no         no      no          no       no   
-Mathematica    no           no         no      no          no       no   
-Cloud SaaS    limited       no         no      no          yes      limited  
-Excel         limited       no         no      yes         no       yes 
-Jupyter        no           no         no      yes         yes      yes  
-**rivt**      **yes**     **yes**   **yes**  **yes**   **yes**    **yes**
-============ ============ ========= ======== ========= ========= ============= 
+============= ============ ========= ======== ========== ========= ========= ============= 
+Program        Report [1]_  Ver [2]_ Txt [3]_  Pub [4]_  Comp [5]_  CP [6]_   Collab [7]_  
+============= ============ ========= ======== ========== ========= ========= ============= 
+*Matlab*         no           no         no     yes         no          no      no   
+*Mathcad*        no           no         no     no          no          no      no   
+*Mathematica*    no           no         no     yes         no          no      no   
+*Cloud SaaS*    limited       no         no    limited      no          yes     limited  
+*Excel*         limited       no         no     yes         yes         no      yes 
+Jupyter          no           no         no     yes         yes         yes     yes  
+Quarto           yes          yes        no     yes         no          yes     yes 
+**rivt**        **yes**     **yes**   **yes**  **yes**    **yes**   **yes**    **yes**
+============= ============ ========= ======== ========== ========= ========= ============= 
 
 .. rst-class:: left
 
     .. [1] Report generation
     .. [2] Native version control
-    .. [3] Plain text, readable input files
-    .. [4] Forward and backward compatibility
-    .. [5] Cross-platform
-    .. [6] Collaboration support
+    .. [3] Plain text formatted input and publication files
+    .. [4] PDF and HTML publication from same input file  
+    .. [5] Forward and backward compatibility
+    .. [6] Cross-platform
+    .. [7] Collaboration support
 
 
 ---------------------------------------------------

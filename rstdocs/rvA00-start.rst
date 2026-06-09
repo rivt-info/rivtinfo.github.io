@@ -5,13 +5,15 @@
 ------------------------------------------------------------------------------- 
 
 This section covers installation of *rivt* and *rivt doc* examples.
-Open source software, including *rivt*, is built with multiple other open
+Open source software, including *rivt*, is built with multiple open
 source components. Open source software installation methods are based on this.
 
-For users unfamiliar with Python and open source software the simplest way to
-get started is to download Windows portable zip file (800 MB). It includes all
-the neccessary components and examples to run and explore *rivt*. For further
-details see :ref:`here <rivt-portable>`.
+A *rivt file* is a Python file (.py) that imports the 
+`rivtlib <https://pypi.org/project/rivtlib/>`__ Python package and includes 
+:doc:`rivt markup <rvD00-markup>`. For users unfamiliar with Python and open 
+source software the simplest way to get started is to download Windows portable 
+zip file (800 MB). It includes all the neccessary components and examples to 
+run and explore *rivt*. For further details see :ref:`here <rivt-portable>`.
 
 For users with a `GitHub <https://github.com>`__ account *rivt* can be forked
 and run in a browser using 
