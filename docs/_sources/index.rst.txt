@@ -32,12 +32,12 @@ An interface for finding public *rivt files* on **GitHub** is
 For an overview of *rivt* interaction with *AI* see :ref:`here<rivt-context>`.
 
 *rivt* produces clear, organized engineering documents from multiple data
-sources in default formats. It is relatively lightweight software, with simple
-markup syntax, consisting of about 5k lines of Python code and 3 dozen user
-commands and tags. If documents with higher production values and fine grained
-control over formatting are needed for journal or book publication `Quarto
-<https://quarto.org/>`__ may be the better tool. Further discussion of
-scientific and engineering document tools is :ref:`here <motivation>`.
+sources in default formats. It is relatively lightweight software consisting of
+about 5k lines of Python code and 3 dozen user commands and tags. If documents
+with higher production values and fine grained control over formatting are
+needed for journal or book publication `Quarto <https://quarto.org/>`__ may be
+the better tool. Further discussion of scientific and engineering document tools
+is :ref:`here <motivation>`.
 
 .. raw:: html
 
