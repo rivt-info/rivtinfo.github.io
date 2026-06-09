@@ -26,9 +26,9 @@ an isolated environment using *uv*. Further details are :ref:`here <rivt-sys>`.
 **[2]** rivt IDE
 ------------------------------------------------------------------------------- 
 
-*rivt* can be run from the command line but efficient editing and designing
+*rivt* can be run from the command line but efficient editing and calculating
 with *rivt files* is typically done in an :term:`IDE`. Any IDE can be used but 
-*VSCode* is documented. A typical **VSCode IDE** layout is shown below.
+*VSCode* support is documented. A typical **VSCode IDE** layout is shown below.
 
 
 
