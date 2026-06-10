@@ -9,14 +9,17 @@
 ========== ==================================================== ================================
 API Scope             Line Tag                                      Description 
 ========== ==================================================== ================================
-rv.I                   text **_[#]** text                         :ref:`Endnote number`  
+rv.I                   text \*word word\* text                      italicize words  
+rv.I                   text \*\*word word\*\* text                  bold words   
 rv.I                   text **_[D] label, filename |** text       :ref:`Download link`
 rv.I                   text **_[G] glossary term |** text         :ref:`Term link`
 rv.I                   text **_[S] label, section |** text        :ref:`Section link`
-rv.I                   text **_[U] label, url |** text            :ref:`URL link`   
-rv.I,V                **title _[T]**                              :ref:`Number table`
-rv.I,V              **caption _[F]**                              :ref:`Number figure`
+rv.I                   text **_[U] label, url |** text            :ref:`URL link`
+rv.I,V                 text **_[#]** text                         :ref:`Endnote number`    
+rv.I,V                 text **_[R]**                              :ref:`Right justify text` 
+rv.I,V                 text **_[B]**                              :ref:`Bold text` 
 rv.I,V                 text **_[C]**                              :ref:`Bold center text` 
+rv.I,V                **title _[T]**                              :ref:`Number table`
 rv.I,V            **text math _[M]** description                  :ref:`Text math` 
 rv.I,V           **LaTeX math _[L]** description                  :ref:`LaTeX math` 
 rv.I,V                 text **_[V] var_name |** text              :ref:`Variable value`
@@ -276,31 +279,6 @@ API Scope     Insert
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-
--------------------------------
-
-.. _Number figure:
-
-**[12]** Figure number
-------------------------------------------
-
-    Labels and numbers figures.
-
-.. topic:: _[F]
-
-    .. code-block:: text
-
-        Syntax:
-            Figure caption _[F]
-
-        Example:
-            Stress Distribution _[F]
-
-
-=========== ==========================
-API Scope     Insert, Values
-Doc Types     text, PDF, HTML
-=========== ==========================
 
 
 

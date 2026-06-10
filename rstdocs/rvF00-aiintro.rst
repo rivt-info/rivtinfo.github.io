@@ -17,7 +17,7 @@
 
 .. _rivt-context:
 
-**[1]** *rivt* in an AI context
+**[1]** *rivt* AI context
 ------------------------------------------------------------------------ 
 
 *rivt* is independent of *AI* but interacts well with it. *AI* can generate

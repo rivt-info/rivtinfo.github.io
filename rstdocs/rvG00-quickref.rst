@@ -80,7 +80,6 @@ rv.I                   text **_[G] glossary term |** text         :ref:`Term lin
 rv.I                   text **_[S] label, section |** text        :ref:`Section link`
 rv.I                   text **_[U] label, url |** text            :ref:`URL link`   
 rv.I                  **title _[T]**                              :ref:`Number table`
-rv.I,V              **caption _[F]**                              :ref:`Number figure`
 rv.I,V                 text **_[C]**                              :ref:`Bold center text` 
 rv.I,V            **text math _[M]** description                  :ref:`Text math` 
 rv.I,V           **LaTeX math _[L]** description                  :ref:`LaTeX math` 
@@ -121,25 +120,25 @@ all         **_[[END]]**                              :ref:`End block`
 
 **Commands format files and equations**
 
-========== ===================================================================== ========================
+=========== =============================================================== ========================
 API Scope           Command                                                        Description
-========== ===================================================================== ========================
-rv.R        **| MARKUP |** rel path | type                                        :ref:`Markup file`
-rv.V, I     **| TABLE |** rel path | title,width,head;nohead,num;non              :ref:`Table file`     
-rv.V, I     **| IMAGE |** rel path | caption, scale, num;non, time;not            :ref:`Image file`
-rv.V, I     **| IMAGE2 |** rel path1, rel path2 | c1,c2,s1,s2,n1,n2,t1,t2         :ref:`Adjacent images`
-rv.V        **| PYTHON |** rel path | rivt;namespace                              :ref:`Python file`
-rv.V        **| VALTABLE |** rel path | title, width, num;non                     :ref:`Values file`   
-rv.V        a **==:** 1*IN  | unit1, unit2, decimal | label                       :ref:`Define value`
-rv.V        c **<=:** expression | unit1, unit2, decimal | label                  :ref:`Assign value`
-rv.V        c **:=:** func(x,y) | unit1, unit2, decimal | label                   :ref:`Inline function`
-rv.V        a **<** c | unit, decimal, text1, text2 | label                       :ref:`Compare value`
-rv.V        **| FUNCTION |** function, arg, var, type | label                     :ref:`Function value`  
-rv.T        **| SHELL |** rel path | os, wait                                     :ref:`Shell file`
-rv.D        **| ATTACHPDF |** rel path | place, title                             :ref:`Attach PDF`   
-rv.D        **| PUBLISH |** doc title | type                                      :ref:`Publish doc` 
-========== ===================================================================== ========================
-
+========== =============================================================== ========================
+rv.R        **| MARKUP |** rel path | type                                   :ref:`Markup file`
+rv.R, V     **| PYTHON |** rel path | rivt;namespace                         :ref:`Python file`
+rv.I, V     **| TABLE |** rel path | title,width,head;nohead,num;non         :ref:`Table file`     
+rv.I, V     **| IMAGE |** rel path | caption, scale, num;non, time;not       :ref:`Image file`
+rv.I, V     **| IMAGE2 |** rel path1, rel path2 | c1,c2,s1,s2,n1,n2          :ref:`Adjacent images`
+rv.V        **| VALTABLE |** rel path | title, width, num;non                :ref:`Values file`   
+rv.V        a **==:** 1*IN  | unit1, unit2, decimal | label                  :ref:`Define value`
+rv.V        c **<=:** expression | unit1, unit2, decimal | label             :ref:`Assign value`
+rv.V        c **:=:** func(x,y) | unit1, unit2, decimal | label              :ref:`Inline function`
+rv.V        a **<** c | unit, decimal, text1, text2 | label                  :ref:`Compare value`
+rv.V        **| FUNCTION |** function, arg, var, type | label                :ref:`Function value`  
+rv.T        **| COPY |** abs src path | abs dest path | file pattern         :ref:`Copy file`
+rv.T        **| SHELL |** abs path | os, wait                                :ref:`Shell file`
+rv.D        **| ATTACHPDF |** rel path | front;back, title                   :ref:`Attach PDF`   
+rv.D        **| PUBLISH |** doc title | type                                 :ref:`Publish doc` 
+========== =============================================================== ========================
 
 **Parent paths for commands**
 
