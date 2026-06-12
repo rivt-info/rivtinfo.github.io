@@ -34,33 +34,32 @@ below summarizes and compares limitations between different programs
 
 **Software Comparison**
 
-============= ============ ========= ======== ========== ========= ========= ============= ===========
-Program        Report [1]_  Ver [2]_ Txt [3]_  Pub [4]_  Comp [5]_  CP [6]_   Collab [7]_   Priv [8]_
-============= ============ ========= ======== ========== ========= ========= ============= ===========
-*Matlab*         no           no         no     yes         no          no      no            no
-*Mathcad*        no           no         no     no          no          no      no            no
-*Mathematica*    no           no         no     yes         no          no      no            no
-*Cloud SaaS*    limited       no         no    limited      no          yes     limited       no
-*Excel*         limited       no         no     yes         yes         no      yes           no
-Jupyter          no           no         no     yes         yes         yes     yes           no
-Quarto           yes          yes        no     yes         no          yes     yes           no
+============= ============ ========= ======== ========== ========== ========= ============= ===========
+Program       Report [1]_  Ver [2]_  Txt [3]_  Priv [4]_  Comp [5]_  CP [6]_   Collab [7]_   Publ [8]_
+============= ============ ========= ======== ========== ========== ========= ============= ===========
+*Matlab*         no           no         no     no          no         no      no            yes
+*Mathcad*        no           no         no     no          no         no      no            no
+*Mathematica*    no           no         no     no          no         no      no            yes
+*Cloud SaaS*    limited       no         no     no          no         yes     limited       limited
+*Excel*         limited       no         no     no          yes        no      yes           yes
+Jupyter          no           no         no     no          yes        yes     yes           yes
+Quarto           yes          yes        no     no          no         yes     yes           yes
 **rivt**        **yes**     **yes**   **yes**  **yes**    **yes**   **yes**    **yes**      **yes**
-============= ============ ========= ======== ========== ========= ========= ============= ===========
+============= ============ ========= ======== ========== ========== ========= ============= ===========
 
 .. rst-class:: left
 
     .. [1] Report generation
     .. [2] Native version control
-    .. [3] Plain text formatted input and published files
-    .. [4] PDF and HTML publication from same input file  
+    .. [3] Plain text input and formatted output files including README
+    .. [4] Syntax control of private-public input distinction
     .. [5] Forward and backward compatibility
     .. [6] Cross-platform
     .. [7] Collaboration support
-    .. [8] Syntax control of private vs public input file content
+    .. [8] PDF and HTML publication from same input file  
 
 
 ---------------------------------------------------
-
 
 **[2]** Use Cases
 --------------------------------------------------------------------- 

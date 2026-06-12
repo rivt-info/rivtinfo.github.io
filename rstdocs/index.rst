@@ -19,25 +19,26 @@
    <hr>
 
 
-*rivt* is a lightweight, extensisble, open source Python tool for writing,
-organizing and sharing engineering documents. It publishes *rivt files* (Python
-*.py* files) to formatted **text, HTML or PDF document files** (*rivt docs*).  A
-*rivt report* is a linked compilation of multiple *rivt docs*. This site is an
-example of an *HTML rivt report*.
+*rivt* is a lightweight, interactive, extensisble, open source Python tool 
+for writing, organizing and sharing engineering documents. It publishes 
+*rivt files* (*.py* files) to formatted **text, HTML or PDF document files** 
+(*rivt docs*).  A *rivt report* is a linked compilation of multiple *rivt docs*. 
+This site is an example of an *HTML rivt report*.
 
 An interface for finding public *rivt files* on **GitHub** is 
 :doc:`here<rvE02-ghsearch>`. A collection of open source downloads, including 
 *rivt*, is on **Google Drive** `here <https://www.openmodels.info>`__ . 
 
 For an overview of *rivt* interaction with *AI* see :ref:`here<rivt-context>`.
-*rivt* is effective in organizing *AI* output into documents and reports.
+*rivt* is effective in organizing *AI* text, code and image output into
+documents and reports.
 
-*rivt* produces clear, organized engineering documents from multiple data
-sources in using default formats that may be customized. It consists of about 5k
-lines of Python code and 3 dozen user commands and tags. If a journal article or
-book with higher production values is needed `Quarto <https://quarto.org/>`__ 
-may be a better tool. Further discussion of scientific and engineering 
-document tools is :ref:`here <motivation>`.
+*rivt* produces clear, organized engineering documents using reasonable default
+formats that may be customized. It exposes about 3 dozen user commands and
+formatting tags. If a journal article or book with higher production values is
+needed `Quarto <https://quarto.org/>`__ may be a better tool. Further discussion
+of avaialble scientific and engineering document tools is :ref:`here
+<motivation>`.
 
 .. raw:: html
 
