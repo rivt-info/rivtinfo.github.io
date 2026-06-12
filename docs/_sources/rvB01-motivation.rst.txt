@@ -34,18 +34,18 @@ below summarizes and compares limitations between different programs
 
 **Software Comparison**
 
-============= ============ ========= ======== ========== ========== ========= ============= ===========
-Program       Report [1]_  Ver [2]_  Txt [3]_  Priv [4]_  Comp [5]_  CP [6]_   Collab [7]_   Publ [8]_
-============= ============ ========= ======== ========== ========== ========= ============= ===========
-*Matlab*         no           no         no     no          no         no      no            yes
-*Mathcad*        no           no         no     no          no         no      no            no
-*Mathematica*    no           no         no     no          no         no      no            yes
-*Cloud SaaS*    limited       no         no     no          no         yes     limited       limited
-*Excel*         limited       no         no     no          yes        no      yes           yes
-Jupyter          no           no         no     no          yes        yes     yes           yes
-Quarto           yes          yes        no     no          no         yes     yes           yes
-**rivt**        **yes**     **yes**   **yes**  **yes**    **yes**   **yes**    **yes**      **yes**
-============= ============ ========= ======== ========== ========== ========= ============= ===========
+============= ============ ========= ======== ========== ======= ========== ========= ============= ===========
+Program       Report [1]_  Ver [2]_  Txt [3]_  Priv [4]_ Eq [5]_  Comp [6]_  CP [7]_   Collab [8]_   Publ [9]_
+============= ============ ========= ======== ========== ======= ========== ========= ============= ===========
+*Matlab*         no           no         no     no        yes      no         no        no            yes
+*Mathcad*        no           no         no     no        yes      no         no        no            no
+*Mathematica*    no           no         no     no        yes      no         no        no            yes
+*Cloud SaaS*    limited       no         no     no        yes      no         yes      limited       limited
+*Excel*         limited       no         no     no        yes      yes        no        yes           yes
+Jupyter          no           no         no     no        no       yes        yes       yes           yes
+Quarto           yes          yes        no     no        no       no         yes       yes           yes
+**rivt**        **yes**     **yes**   **yes**  **yes**   **yes**  **yes**    **yes**   **yes**       **yes**  
+============= ============ ========= ======== ========== ======= ========== ========= ============= ===========
 
 .. rst-class:: left
 
@@ -53,10 +53,11 @@ Quarto           yes          yes        no     no          no         yes     y
     .. [2] Native version control
     .. [3] Plain text input and formatted output files including README
     .. [4] Syntax control of private-public input distinction
-    .. [5] Forward and backward compatibility
-    .. [6] Cross-platform
-    .. [7] Collaboration support
-    .. [8] PDF and HTML publication from same input file  
+    .. [5] Native formatted live equations   
+    .. [6] Forward and backward compatibility
+    .. [7] Cross-platform
+    .. [8] Collaboration support
+    .. [9] PDF and HTML publication from same input file  
 
 
 ---------------------------------------------------
