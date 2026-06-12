@@ -120,9 +120,9 @@ all         **_[[END]]**                              :ref:`End block`
 
 **Commands format files and equations**
 
-=========== =============================================================== ========================
+========== ================================================================ ========================
 API Scope           Command                                                        Description
-========== =============================================================== ========================
+========== ================================================================ ========================
 rv.R        **| MARKUP |** rel path | type                                   :ref:`Markup file`
 rv.R, V     **| PYTHON |** rel path | rivt;namespace                         :ref:`Python file`
 rv.I, V     **| TABLE |** rel path | title,width,head;nohead,num;non         :ref:`Table file`     
@@ -138,9 +138,10 @@ rv.T        **| COPY |** abs src path | abs dest path | file pattern         :re
 rv.T        **| SHELL |** abs path | os, wait                                :ref:`Shell file`
 rv.D        **| ATTACHPDF |** rel path | front;back, title                   :ref:`Attach PDF`   
 rv.D        **| PUBLISH |** doc title | type                                 :ref:`Publish doc` 
-========== =============================================================== ========================
+========== ================================================================ ========================
 
-**Parent paths for commands**
+
+**Parent Paths for Commands**
 
 See :ref:`here <report-folders>` for the folder structure. 
 

@@ -63,7 +63,6 @@ including images, tables, links and formatted text.
                 text **_[U] text, label**         :ref:`URL link`   
                 text **_[V] var_name** text       :ref:`Variable value`
                **title _[T]**                     :ref:`Number table`
-             **caption _[F]**                     :ref:`Number figure`
 ================================================= ============================
 
 --------------------------------------------
@@ -121,8 +120,7 @@ The *Values* API function defines values and evaluates equations and functions.
        Line Tag                                         Description 
 ======================================== ==============================
          text **_[V] var_name** | text      :ref:`Variable value`
-        **title _[]**                       :ref:`Number table`
-      **caption _[F]**                      :ref:`Number figure`                              
+        **title _[]**                       :ref:`Number table`                      
 ======================================== ==============================
 
 

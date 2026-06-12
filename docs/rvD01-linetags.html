@@ -426,50 +426,62 @@
 </thead>
 <tbody>
 <tr class="row-even"><td><p>rv.I</p></td>
-<td><p>text <strong>_[#]</strong> text</p></td>
-<td><p><a class="reference internal" href="#endnote-number"><span class="std std-ref">[6]  Endnote number</span></a></p></td>
+<td><p>text *word word* text</p></td>
+<td><p>italicize words</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I</p></td>
+<td><p>text **word word** text</p></td>
+<td><p>bold words</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.I</p></td>
 <td><p>text <strong>_[D] label, filename |</strong> text</p></td>
 <td><p><a class="reference internal" href="#download-link"><span class="std std-ref">[3] Download link</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.I</p></td>
+<tr class="row-odd"><td><p>rv.I</p></td>
 <td><p>text <strong>_[G] glossary term |</strong> text</p></td>
 <td><p><a class="reference internal" href="#term-link"><span class="std std-ref">[7] Glossary link</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
+<tr class="row-even"><td><p>rv.I</p></td>
 <td><p>text <strong>_[S] label, section |</strong> text</p></td>
 <td><p><a class="reference internal" href="#section-link"><span class="std std-ref">[8] Section link</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.I</p></td>
+<tr class="row-odd"><td><p>rv.I</p></td>
 <td><p>text <strong>_[U] label, url |</strong> text</p></td>
 <td><p><a class="reference internal" href="#url-link"><span class="std std-ref">[9] URL link</span></a></p></td>
 </tr>
+<tr class="row-even"><td><p>rv.I,V</p></td>
+<td><p>text <strong>_[#]</strong> text</p></td>
+<td><p><a class="reference internal" href="#endnote-number"><span class="std std-ref">[6]  Endnote number</span></a></p></td>
+</tr>
 <tr class="row-odd"><td><p>rv.I,V</p></td>
-<td><p><strong>title _[T]</strong></p></td>
-<td><p><a class="reference internal" href="#number-table"><span class="std std-ref">[11] Table number</span></a></p></td>
+<td><p>text <strong>_[R]</strong></p></td>
+<td><p><a class="reference internal" href="#right-justify"><span class="std std-ref">[2] Right justify text</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I,V</p></td>
-<td><p><strong>caption _[F]</strong></p></td>
-<td><p><a class="reference internal" href="#number-figure"><span class="std std-ref">[12] Figure number</span></a></p></td>
+<td><p>text <strong>_[B]</strong></p></td>
+<td><p><a class="reference internal" href="#bold-text"><span class="std std-ref">[2] Bold text</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I,V</p></td>
 <td><p>text <strong>_[C]</strong></p></td>
 <td><p><a class="reference internal" href="#bold-center-text"><span class="std std-ref">[2] Bold center text</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I,V</p></td>
+<td><p><strong>title _[T]</strong></p></td>
+<td><p><a class="reference internal" href="#number-table"><span class="std std-ref">[11] Table number</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.I,V</p></td>
 <td><p><strong>text math _[M]</strong> description</p></td>
 <td><p><a class="reference internal" href="#text-math"><span class="std std-ref">[4] Text math</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.I,V</p></td>
+<tr class="row-even"><td><p>rv.I,V</p></td>
 <td><p><strong>LaTeX math _[L]</strong> description</p></td>
 <td><p><a class="reference internal" href="#latex-math"><span class="std std-ref">[5] LaTeX math</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.I,V</p></td>
+<tr class="row-odd"><td><p>rv.I,V</p></td>
 <td><p>text <strong>_[V] var_name |</strong> text</p></td>
 <td><p><a class="reference internal" href="#variable-value"><span class="std std-ref">[10] Variable value</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>all</p></td>
+<tr class="row-even"><td><p>all</p></td>
 <td><p><strong>##</strong> text</p></td>
 <td><p>nonprinting comment</p></td>
 </tr>
@@ -503,8 +515,59 @@ Example:
 </div>
 <hr class="docutils" />
 </section>
+<section id="bold-text">
+<span id="id2"></span><h2><strong>[2]</strong> Bold text<a class="headerlink" href="#bold-text" title="Link to this heading">#</a></h2>
+<p>Bold line of text.</p>
+<aside class="topic">
+<p class="topic-title">_[C]</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    text _[B]
+
+Example:
+    This line of text wil be bold. _[B]
+</pre></div>
+</div>
+</aside>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Insert, Values</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="right-justify-text">
+<span id="right-justify"></span><h2><strong>[2]</strong> Right justify text<a class="headerlink" href="#right-justify-text" title="Link to this heading">#</a></h2>
+<p>Right justify line of text within the page margins.</p>
+<aside class="topic">
+<p class="topic-title">_[R]</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    text _[C]
+
+Example:
+    This text wil be right justified. _[R]
+</pre></div>
+</div>
+</aside>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Insert, Values</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+</section>
 <section id="download-link">
-<span id="id2"></span><h2><strong>[3]</strong> Download link<a class="headerlink" href="#download-link" title="Link to this heading">#</a></h2>
+<span id="id3"></span><h2><strong>[3]</strong> Download link<a class="headerlink" href="#download-link" title="Link to this heading">#</a></h2>
 <p>Insert a download link.</p>
 <aside class="topic">
 <p class="topic-title">_[D]</p>
@@ -530,7 +593,7 @@ Example:
 <hr class="docutils" />
 </section>
 <section id="text-math">
-<span id="id3"></span><h2><strong>[4]</strong> Text math<a class="headerlink" href="#text-math" title="Link to this heading">#</a></h2>
+<span id="id4"></span><h2><strong>[4]</strong> Text math<a class="headerlink" href="#text-math" title="Link to this heading">#</a></h2>
 <p>Format math expression into text.</p>
 <aside class="topic">
 <p class="topic-title">_[M]</p>
@@ -556,7 +619,7 @@ Example:
 <hr class="docutils" />
 </section>
 <section id="latex-math">
-<span id="id4"></span><h2><strong>[5]</strong> LaTeX math<a class="headerlink" href="#latex-math" title="Link to this heading">#</a></h2>
+<span id="id5"></span><h2><strong>[5]</strong> LaTeX math<a class="headerlink" href="#latex-math" title="Link to this heading">#</a></h2>
 <p>Format LaTeX math expression.</p>
 <aside class="topic">
 <p class="topic-title">_[L]</p>
@@ -582,7 +645,7 @@ Example:
 <hr class="docutils" />
 </section>
 <section id="endnote-number">
-<span id="id5"></span><h2><strong>[6]</strong>  Endnote number<a class="headerlink" href="#endnote-number" title="Link to this heading">#</a></h2>
+<span id="id6"></span><h2><strong>[6]</strong>  Endnote number<a class="headerlink" href="#endnote-number" title="Link to this heading">#</a></h2>
 <p>Assign endnote number to the text in order of processing. Endnotes
 are defined with the block tag _[[ENDNOTE]] and are listed at the end of the
 <em>doc</em>.</p>
@@ -637,7 +700,7 @@ Example:
 <hr class="docutils" />
 </section>
 <section id="section-link">
-<span id="id6"></span><h2><strong>[8]</strong> Section link<a class="headerlink" href="#section-link" title="Link to this heading">#</a></h2>
+<span id="id7"></span><h2><strong>[8]</strong> Section link<a class="headerlink" href="#section-link" title="Link to this heading">#</a></h2>
 <p>Create a link to the section label defined in the API header with optional
 link text. If the text is ommitted the section label is used for the link.</p>
 <aside class="topic">
@@ -667,7 +730,7 @@ which provides more detail.</p>
 <hr class="docutils" />
 </section>
 <section id="url-link">
-<span id="id7"></span><h2><strong>[9]</strong> URL link<a class="headerlink" href="#url-link" title="Link to this heading">#</a></h2>
+<span id="id8"></span><h2><strong>[9]</strong> URL link<a class="headerlink" href="#url-link" title="Link to this heading">#</a></h2>
 <p>Link to a an external site with optional link text. If the link text is
 ommitted the url will be inserted as the link term.</p>
 <aside class="topic">
@@ -694,7 +757,7 @@ Example:
 <hr class="docutils" />
 </section>
 <section id="variable-value">
-<span id="id8"></span><h2><strong>[10]</strong> Variable value<a class="headerlink" href="#variable-value" title="Link to this heading">#</a></h2>
+<span id="id9"></span><h2><strong>[10]</strong> Variable value<a class="headerlink" href="#variable-value" title="Link to this heading">#</a></h2>
 <p>Insert the value of  var_name _[V] in the sentence.</p>
 <aside class="topic">
 <p class="topic-title">_[V]</p>
@@ -738,34 +801,6 @@ Example:
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
 <td><p>Insert</p></td>
-</tr>
-<tr class="row-even"><td><p>Doc Types</p></td>
-<td><p>text, PDF, HTML</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<hr class="docutils" />
-</section>
-<section id="figure-number">
-<span id="number-figure"></span><h2><strong>[12]</strong> Figure number<a class="headerlink" href="#figure-number" title="Link to this heading">#</a></h2>
-<blockquote>
-<div><p>Labels and numbers figures.</p>
-</div></blockquote>
-<aside class="topic">
-<p class="topic-title">_[F]</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    Figure caption _[F]
-
-Example:
-    Stress Distribution _[F]
-</pre></div>
-</div>
-</aside>
-<div class="pst-scrollable-table-container"><table class="table">
-<tbody>
-<tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Insert, Values</p></td>
 </tr>
 <tr class="row-even"><td><p>Doc Types</p></td>
 <td><p>text, PDF, HTML</p></td>
@@ -825,6 +860,8 @@ Example:
     <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#line-tag-summary"><strong>[1]</strong> Line Tag Summary</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bold-center-text"><strong>[2]</strong> Bold center text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bold-text"><strong>[2]</strong> Bold text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#right-justify-text"><strong>[2]</strong> Right justify text</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-link"><strong>[3]</strong> Download link</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-math"><strong>[4]</strong> Text math</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex-math"><strong>[5]</strong> LaTeX math</a></li>
@@ -834,7 +871,6 @@ Example:
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#url-link"><strong>[9]</strong> URL link</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-value"><strong>[10]</strong> Variable value</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-number"><strong>[11]</strong> Table number</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#figure-number"><strong>[12]</strong> Figure number</a></li>
 </ul>
   </nav></div>
 

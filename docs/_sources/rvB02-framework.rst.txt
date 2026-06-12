@@ -35,7 +35,7 @@ Version Control          `Git <https://git-scm.com>`_
 -----------------------------------------------------------------------------
 
 The *rivt extended framework* includes the *rivt basic framework* and additional 
-programs and libraries for formatting, drawing and diagramming .
+programs and libraries for formatting, drawing, diagramming and calculating.
 
 ======================= ==========================================================================
 Purpose                  Link
@@ -45,5 +45,6 @@ Additional Formatting     `LaTeX <https://www.tug.org/texlive/>`_
 3D Modeling               `FreeCad <https://www.freecad.org/>`_
 Diagrams                  `Mermaid <https://mermaid.ai/open-source/intro/syntax-reference.html>`_
 Portable HTML             `percolate <https://github.com/danburzo/percollate>`_
+Program isolation          `uv <https://docs.astral.sh/uv/>`_
 ======================= ==========================================================================
 

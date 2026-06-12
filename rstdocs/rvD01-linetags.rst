@@ -16,7 +16,7 @@ rv.I                   text **_[G] glossary term |** text         :ref:`Term lin
 rv.I                   text **_[S] label, section |** text        :ref:`Section link`
 rv.I                   text **_[U] label, url |** text            :ref:`URL link`
 rv.I,V                 text **_[#]** text                         :ref:`Endnote number`    
-rv.I,V                 text **_[R]**                              :ref:`Right justify text` 
+rv.I,V                 text **_[R]**                              :ref:`Right justify` 
 rv.I,V                 text **_[B]**                              :ref:`Bold text` 
 rv.I,V                 text **_[C]**                              :ref:`Bold center text` 
 rv.I,V                **title _[T]**                              :ref:`Number table`
@@ -42,6 +42,52 @@ Center line of text within the page margins.
 
         Example:
             This text wil be centered. _[C]
+
+=========== ==========================
+API Scope     Insert, Values
+Doc Types     text, PDF, HTML
+=========== ==========================
+
+-------------------------------
+
+..  _Bold text:
+
+**[2]** Bold text
+-------------------------------------------
+
+Bold line of text.
+
+.. topic:: _[C]
+    
+    .. code-block:: text
+
+        Syntax:
+            text _[B]
+
+        Example:
+            This line of text wil be bold. _[B]
+
+=========== ==========================
+API Scope     Insert, Values
+Doc Types     text, PDF, HTML
+=========== ==========================
+
+..  _Right justify:
+
+**[2]** Right justify text
+-------------------------------------------
+
+Right justify line of text within the page margins.
+
+.. topic:: _[R]
+    
+    .. code-block:: text
+
+        Syntax:
+            text _[C]
+
+        Example:
+            This text wil be right justified. _[R]
 
 =========== ==========================
 API Scope     Insert, Values

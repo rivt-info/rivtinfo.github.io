@@ -574,26 +574,22 @@ in the <em>header substring</em>.</p>
 <td><p><a class="reference internal" href="rvD01-linetags.html#number-table"><span class="std std-ref">[11] Table number</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I,V</p></td>
-<td><p><strong>caption _[F]</strong></p></td>
-<td><p><a class="reference internal" href="rvD01-linetags.html#number-figure"><span class="std std-ref">[12] Figure number</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I,V</p></td>
 <td><p>text <strong>_[C]</strong></p></td>
 <td><p><a class="reference internal" href="rvD01-linetags.html#bold-center-text"><span class="std std-ref">[2] Bold center text</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.I,V</p></td>
+<tr class="row-odd"><td><p>rv.I,V</p></td>
 <td><p><strong>text math _[M]</strong> description</p></td>
 <td><p><a class="reference internal" href="rvD01-linetags.html#text-math"><span class="std std-ref">[4] Text math</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.I,V</p></td>
+<tr class="row-even"><td><p>rv.I,V</p></td>
 <td><p><strong>LaTeX math _[L]</strong> description</p></td>
 <td><p><a class="reference internal" href="rvD01-linetags.html#latex-math"><span class="std std-ref">[5] LaTeX math</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.I,V</p></td>
+<tr class="row-odd"><td><p>rv.I,V</p></td>
 <td><p>text <strong>_[V] var_name |</strong> text</p></td>
 <td><p><a class="reference internal" href="rvD01-linetags.html#variable-value"><span class="std std-ref">[10] Variable value</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>all</p></td>
+<tr class="row-even"><td><p>all</p></td>
 <td><p><strong>##</strong> text</p></td>
 <td><p>nonprinting comment</p></td>
 </tr>
@@ -669,21 +665,21 @@ in the <em>header substring</em>.</p>
 <td><p><strong>| MARKUP |</strong> rel path | type</p></td>
 <td><p><a class="reference internal" href="rvD03-commands.html#markup-file"><span class="std std-ref">[3] Text file</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.V, I</p></td>
+<tr class="row-odd"><td><p>rv.R, V</p></td>
+<td><p><strong>| PYTHON |</strong> rel path | rivt;namespace</p></td>
+<td><p><a class="reference internal" href="rvD03-commands.html#python-file"><span class="std std-ref">[12] Python file</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>rv.I, V</p></td>
 <td><p><strong>| TABLE |</strong> rel path | title,width,head;nohead,num;non</p></td>
 <td><p><a class="reference internal" href="rvD03-commands.html#table-file"><span class="std std-ref">[4] Table file</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.V, I</p></td>
+<tr class="row-odd"><td><p>rv.I, V</p></td>
 <td><p><strong>| IMAGE |</strong> rel path | caption, scale, num;non, time;not</p></td>
 <td><p><a class="reference internal" href="rvD03-commands.html#image-file"><span class="std std-ref">[5] Image file</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.V, I</p></td>
-<td><p><strong>| IMAGE2 |</strong> rel path1, rel path2 | c1,c2,s1,s2,n1,n2,t1,t2</p></td>
+<tr class="row-even"><td><p>rv.I, V</p></td>
+<td><p><strong>| IMAGE2 |</strong> rel path1, rel path2 | c1,c2,s1,s2,n1,n2</p></td>
 <td><p><a class="reference internal" href="rvD03-commands.html#adjacent-images"><span class="std std-ref">[6] Adjacent images</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p>rv.V</p></td>
-<td><p><strong>| PYTHON |</strong> rel path | rivt;namespace</p></td>
-<td><p><a class="reference internal" href="rvD03-commands.html#python-file"><span class="std std-ref">[12] Python file</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V</p></td>
 <td><p><strong>| VALTABLE |</strong> rel path | title, width, num;non</p></td>
@@ -710,21 +706,25 @@ in the <em>header substring</em>.</p>
 <td><p><a class="reference internal" href="rvD03-commands.html#function-value"><span class="std std-ref">[13] Function</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.T</p></td>
-<td><p><strong>| SHELL |</strong> rel path | os, wait</p></td>
+<td><p><strong>| COPY |</strong> abs src path | abs dest path | file pattern</p></td>
+<td><p><a class="reference internal" href="rvD03-commands.html#copy-file"><span class="std std-ref">[14] Copy Files</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>rv.T</p></td>
+<td><p><strong>| SHELL |</strong> abs path | os, wait</p></td>
 <td><p><a class="reference internal" href="rvD03-commands.html#shell-file"><span class="std std-ref">[2] Shell file</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.D</p></td>
-<td><p><strong>| ATTACHPDF |</strong> rel path | place, title</p></td>
+<tr class="row-odd"><td><p>rv.D</p></td>
+<td><p><strong>| ATTACHPDF |</strong> rel path | front;back, title</p></td>
 <td><p><a class="reference internal" href="rvD03-commands.html#attach-pdf"><span class="std std-ref">[15] Attach PDF</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.D</p></td>
+<tr class="row-even"><td><p>rv.D</p></td>
 <td><p><strong>| PUBLISH |</strong> doc title | type</p></td>
 <td><p><a class="reference internal" href="rvD03-commands.html#publish-doc"><span class="std std-ref">[16] Publish doc</span></a></p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p><strong>Parent paths for commands</strong></p>
+<p><strong>Parent Paths for Commands</strong></p>
 <p>See <a class="reference internal" href="rvC01-folders.html#report-folders"><span class="std std-ref">here</span></a> for the folder structure.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
