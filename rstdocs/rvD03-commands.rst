@@ -7,17 +7,16 @@
 **[1]** Command Summary
 -------------------------------------
 
-
 **Commands format files and equations**
 
 ========== =============================================================== ========================
 API Scope           Command                                                        Description
 ========== =============================================================== ========================
-rv.R        **| MARKUP |** rel path | type                                   :ref:`Markup file`
-rv.R, V     **| PYTHON |** rel path | rivt;namespace                         :ref:`Python file`
+rv.I, V     **| TEXT |** rel path | type                                     :ref:`Text file`
 rv.I, V     **| TABLE |** rel path | title,width,head;nohead,num;non         :ref:`Table file`     
 rv.I, V     **| IMAGE |** rel path | caption, scale, num;non, time;not       :ref:`Image file`
 rv.I, V     **| IMAGE2 |** rel path1, rel path2 | c1,c2,s1,s2,n1,n2          :ref:`Adjacent images`
+rv.V        **| PYTHON |** rel path | rivt;namespace                         :ref:`Python file`
 rv.V        **| VALTABLE |** rel path | title, width, num;non                :ref:`Values file`   
 rv.V        a **==:** 1*IN  | unit1, unit2, decimal | label                  :ref:`Define value`
 rv.V        c **<=:** expression | unit1, unit2, decimal | label             :ref:`Assign value`

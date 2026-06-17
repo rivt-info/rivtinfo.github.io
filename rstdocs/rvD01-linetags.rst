@@ -22,7 +22,7 @@ rv.I,V                 text **_[C]**                              :ref:`Bold cen
 rv.I,V                **title _[T]**                              :ref:`Number table`
 rv.I,V            **text math _[M]** description                  :ref:`Text math` 
 rv.I,V           **LaTeX math _[L]** description                  :ref:`LaTeX math` 
-rv.I,V                 text **_[V] var_name |** text              :ref:`Variable value`
+rv.I,V                 text **_[V] var_name |** text              :ref:`Subsitute value`
 all                     **##** text                               nonprinting comment
 ========== ==================================================== ================================
 
@@ -277,22 +277,23 @@ Doc Types     PDF, HTML
 
 -------------------------------
 
-.. _Variable value:
+.. _Subsitute value:
 
-**[10]** Variable value
+**[10]** Substitute value
 ------------------------------------------
 
-Insert the value of  var_name _[V] in the sentence.
+Insert the value of  _[V] var_name | in the line.
 
 .. topic:: _[V]
 
     .. code-block:: text
 
         Syntax:
-            text var_name _[V] more text
+            text _[V] var_name | more text
 
         Example:
-            The value of my_var is my_var _[V].
+            The value of my_var is _[V] is my_var|.
+            The value of my_var is 5.
 
 =========== ==========================
 API Scope     Insert, Values

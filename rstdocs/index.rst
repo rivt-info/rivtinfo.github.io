@@ -19,26 +19,27 @@
    <hr>
 
 
-*rivt* is a lightweight, interactive, extensisble, open source Python tool 
-for writing, organizing and sharing engineering documents. It publishes 
-*rivt files* (*.py* files) to formatted **text, HTML or PDF document files** 
-(*rivt docs*).  A *rivt report* is a linked compilation of multiple *rivt docs*. 
-This site is an example of an *HTML rivt report*.
+*rivt* is a lightweight, interactive and extensible open source Python tool 
+for writing, organizing and sharing engineering production documents. 
+It compiles and formats *rivt files* (*.py* files) to formatted 
+**text, HTML or PDF document files** (*rivt docs*).  A *rivt report* is a 
+linked compilation of multiple *rivt docs*. This site is an example of an 
+*HTML rivt report*.
 
 An interface for finding public *rivt files* on **GitHub** is 
-:doc:`here<rvE02-ghsearch>`. A collection of open source downloads, including 
-*rivt*, is on **Google Drive** `here <https://www.openmodels.info>`__ . 
+:doc:`here<rvE02-ghsearch>`. A collection of open source models and documents, 
+including *rivt*, is at **Google Drive** `here <https://www.openmodels.info>`__ . 
 
-For an overview of *rivt* interaction with *AI* see :ref:`here<rivt-context>`.
-*rivt* is effective in organizing *AI* text, code and image output into
-documents and reports.
+For an overview of *rivt* and *AI* see :ref:`here<rivt-context>`.
+*rivt* is effective in organizing *AI* outputs into documents and reports with a
+high degree of user control.
 
 *rivt* produces clear, organized engineering documents using reasonable default
-formats that may be customized. It exposes about 3 dozen user commands and
-formatting tags. If a journal article or book with higher production values is
-needed `Quarto <https://quarto.org/>`__ may be a better tool. Further discussion
-of avaialble scientific and engineering document tools is :ref:`here
-<motivation>`.
+formats that can be customized. *rivt markup* uses about 3 dozen commands and
+tags to format and build documents. If journal articles or books with 
+higher production values are needed `Quarto <https://quarto.org/>`__ is a 
+better tool. Further discussion of avaialble scientific and engineering 
+document tools is :ref:`here <motivation>`.
 
 .. raw:: html
 

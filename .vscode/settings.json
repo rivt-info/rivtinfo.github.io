@@ -105,7 +105,7 @@
         "subfolders"
     ],
     "cSpell.suggestionMenuType": "quickFix",
-    "workbench.sideBar.location": "right",
+    "workbench.sideBar.location": "left",
     "workbench.colorTheme": "Visual Studio Dark",
     "workbench.colorCustomizations": {
         "tab.activeBackground": "#2a2570",

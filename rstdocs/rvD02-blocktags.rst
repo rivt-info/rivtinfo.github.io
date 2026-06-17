@@ -9,8 +9,7 @@
 ========== ========================================= ===============================
 API Scope         Block Tag                                Description 
 ========== ========================================= ===============================
-rv.R        **_[[PYTHON]]** label                     :ref:`Python block`
-rv.R,I      **_[[MARKUP]]** type                      :ref:`Markup block`
+rv.I        **_[[TEXT]]** type                        :ref:`Text block`
 rv.I        **_[[BOX]]** label                        :ref:`Box block`
 rv.I        **_[[TOPIC]]** topic                      :ref:`Topic block`
 rv.I,V      **_[[TABLE]]** label                      :ref:`Table block`

@@ -35,11 +35,11 @@ is the :term:`header substring`.
         """)
 
 Default settings in the *header substring* do not need to be specified. The
-default setting for each API is listed first (in bold) in the table below.
-The default privacy settings for all sections in a rivt file may be reversed by
-including the *setpublic setting* set to true immediately following the 
-*rivlib import statement*. Individual sections may still be set as private 
-in the *header substring*.
+default setting for each API is listed first (in bold) in the table below. The
+default privacy settings for all sections in a rivt file may be reversed by
+including the *# rv private = false;* immediately following the 
+*rivlib import statement*. Individual sections may still be set to private 
+in the section *header substring*.
 
 .. code:: python
 
@@ -49,17 +49,17 @@ in the *header substring*.
  
 **Header substring defaults**
 
-====== =================== =============== =================== ==================
-API      private; public     doc; stored      section; merge     pdfpage; nopage    
-====== =================== =============== =================== ==================
-rv.R    **private**          **stored**      **section**          **nopage**
-rv.I    **private**          **doc**         **section**          **nopage** 
-rv.V    **private**          **doc**         **section**          **nopage** 
-rv.T    **private**          **stored**      **section**          **nopage**
-rv.D    **public**           **doc**         **section**          **nopage**
-rv.S    **private**          **stored**      **section**          **nopage**
-rv.X         -                       -                -                -
-====== =================== =============== =================== ==================
+====== =================== =============== =================== ================== ==============
+API      private; public     doc; stored      section; merge     pdfpage; nopage    markup type
+====== =================== =============== =================== ================== ==============
+rv.R    **private**         **-stored**      **merge**            **nopage**       **type**
+rv.I    **private**         **doc**          **section**          **nopage**         NA
+rv.V    **private**         **doc**          **section**          **nopage**         NA
+rv.T    **private**         **-stored**          NA                  NA              NA
+rv.D    **private**         **-stored**          NA                  NA              NA
+rv.S         NA                 NA               NA                  NA              NA
+rv.X         NA                 NA               NA                  NA              NA
+====== =================== =============== =================== ================== ==============
 
 ----------------------------------
 
@@ -74,16 +74,20 @@ rv.X         -                       -                -                -
 ========== ==================================================== ================================
 API Scope             Line Tag                                      Description 
 ========== ==================================================== ================================
-rv.I                   text **_[#]** text                         :ref:`Endnote number`  
+rv.I                   text \*word word\* text                      italicize words  
+rv.I                   text \*\*word word\*\* text                  bold words   
 rv.I                   text **_[D] label, filename |** text       :ref:`Download link`
 rv.I                   text **_[G] glossary term |** text         :ref:`Term link`
 rv.I                   text **_[S] label, section |** text        :ref:`Section link`
-rv.I                   text **_[U] label, url |** text            :ref:`URL link`   
-rv.I                  **title _[T]**                              :ref:`Number table`
+rv.I                   text **_[U] label, url |** text            :ref:`URL link`
+rv.I,V                 text **_[#]** text                         :ref:`Endnote number`    
+rv.I,V                 text **_[R]**                              :ref:`Right justify` 
+rv.I,V                 text **_[B]**                              :ref:`Bold text` 
 rv.I,V                 text **_[C]**                              :ref:`Bold center text` 
-rv.I,V            **text math _[M]** description                  :ref:`Text math` 
+rv.I,V                **title _[T]**                              :ref:`Number table`
+rv.I,V      **ASCII text math _[M]** description                  :ref:`Text math` 
 rv.I,V           **LaTeX math _[L]** description                  :ref:`LaTeX math` 
-rv.I,V                 text **_[V] var_name |** text              :ref:`Variable value`
+rv.I,V                 text **_[V] var_name |** text              :ref:`Subsitute a value`
 all                     **##** text                               nonprinting comment
 ========== ==================================================== ================================
 

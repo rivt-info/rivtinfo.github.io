@@ -125,22 +125,21 @@ including it in the *comment settings* immediately following the
 
 Individual sections may be reset as private in the header substring after
 changing the default. In the table below a single dash before an option means
-that is the only option.
-
-
+the setting is fixed.
 
 **Header substring defaults**
-====== =================== =============== =================== ==================
-API      private; public     doc; stored      section; merge     pdfpage; nopage    
-====== =================== =============== =================== ==================
-rv.R    **private**         **stored**       **section**          **nopage**
-rv.I    **private**         **doc**          **section**          **nopage** 
-rv.V    **private**         **doc**          **section**          **nopage** 
-rv.T    **private**         **- stored**          NA                  NA
-rv.D    **- public**        **- stored**          NA                  NA
-rv.S    **private**         **- stored**          NA                  NA
-rv.X         NA               NA                  NA                  NA
-====== =================== =============== =================== ==================
+
+====== =================== =============== =================== ================== ===========
+API      private; public     doc; stored      section; merge     pdfpage; nopage    markup
+====== =================== =============== =================== ================== ===========
+rv.R    **private**         **stored**       **merge**            **nopage**       **type**
+rv.I    **private**         **doc**          **section**          **nopage**         NA
+rv.V    **private**         **doc**          **section**          **nopage**         NA
+rv.T    **-private**        **-stored**          NA                  NA              NA
+rv.D    **-private**        **-stored**          NA                  NA              NA
+rv.S         NA                 NA               NA                  NA              NA
+rv.X         NA                 NA               NA                  NA              NA
+====== =================== =============== =================== ================== ===========
 
 
 Examples of *header substring* settings are shown below.
