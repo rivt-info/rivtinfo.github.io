@@ -19,12 +19,12 @@
    <hr>
 
 
-*rivt* is a lightweight, interactive and extensible open source Python tool 
+*rivt* is a lightweight, extensible open source Python tool 
 for writing, organizing and sharing engineering documents. 
-It takes naturally readable text files and compiles them into 
+It takes readable, interactive text files and compiles them into 
 formatted **text, HTML or PDF document files**.  
 
-There are four types of rivt documents:
+There are four types of rivt files:
 
 .. code-block:: text
 
