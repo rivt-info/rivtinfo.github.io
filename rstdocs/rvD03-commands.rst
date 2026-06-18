@@ -49,7 +49,7 @@ See :ref:`here <report-folders>` for the folder structure.
 \| PUBLISH |        **/_published/**   [4]     W
 ================ ========================= ======
 
-[1} file paths begin with rvsrc/ and may include subdirectories 
+[1] file paths begin with rvsrc/ and may include subdirectories 
 [2] values are read from *rvsrc/* and its subdirectories
 [3] values written by *rivt* are read from *rv_stor/vals*  
 [4] *docs* are written to subdirectories of *_published*
@@ -84,7 +84,7 @@ Doc Types     text, PDF, HTML
 =========== ==========================
 
 
-.. _Markup file:
+.. _Text file:
 
 **[3]** Text file
 ------------------------------------------
@@ -95,24 +95,16 @@ specifies formatting and syntax coloring.  Language types include:
 Inserts formatted text into doc. 
 
 - *literal*
-- *html*
-- *reST*
-- *python*
-- *endnote*
+- *rst*
 - *center*
 - *bold*
 - *italic*
-- *mermaid* (node and mermaid-cli must be installed)
-- *latex*   (texlive must be installed)  
 
-The *literal* type inserts text into the *doc* without formatting.
+The *literal* type inserts text into the *doc* without formatting. Paths are
+relative to the rivit-report the report root (rivt file folder). If the doc is
+a single doc the file is read from the rivt file folder.
 
-If a *doc* is part of a report and no path is specified, the file is assumed to
-be in the default folder */src/data/* . Otherwise the path needs to be specified
-relative to the report root (rivt file folder). If the doc is a 
-single doc the file is read from the rivt file folder.
-
-.. topic:: | MARKUP |
+.. topic:: | TEXT |
 
     .. code-block:: text
 

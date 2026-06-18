@@ -28,8 +28,8 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
@@ -38,10 +38,10 @@
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=95fdc9c7" />
   
   <!-- So that users can add custom icons -->
-  <script defer src="_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="_static/jquery.js?v=5d32c60e"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
@@ -53,38 +53,31 @@
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js?v=b8b12719"></script>
+    <script src="_static/togglebutton.js?v=1ae7504c"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'rvD01-linetags';</script>
-    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="D.2 | Block Tags" href="rvD02-blocktags.html" />
-    <link rel="prev" title="D.0 | Markup" href="rvD00-markup.html" />
+    <link rel="prev" title="D.0 | rivt Markup" href="rvD00-markup.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
-  
-    
-    <script src="_static/searchtools.js"></script>
-    <script src="_static/language_data.js"></script>
-    <script src="searchindex.js"></script>
-  
   </head>
-  <body data-default-mode="dark">
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="dark">
+
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
-
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-  
-  
-  
+
   
   <dialog id="pst-search-dialog">
     
@@ -110,7 +103,7 @@
 </div>
 
   
-    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
   <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
@@ -175,7 +168,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="rvD00-markup.html">
-    D.0 | Markup
+    D.0 | rivt Markup
   </a>
 </li>
 
@@ -296,7 +289,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="rvD00-markup.html">
-    D.0 | Markup
+    D.0 | rivt Markup
   </a>
 </li>
 
@@ -393,7 +386,7 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="rvD00-markup.html" class="nav-link"><strong>D.0 | Markup</strong></a></li>
+    <li class="breadcrumb-item"><a href="rvD00-markup.html" class="nav-link"><strong>D.0 | rivt Markup</strong></a></li>
     
     <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>D.1 | Line Tags</strong></span></li>
   </ul>
@@ -479,7 +472,7 @@
 </tr>
 <tr class="row-odd"><td><p>rv.I,V</p></td>
 <td><p>text <strong>_[V] var_name |</strong> text</p></td>
-<td><p><a class="reference internal" href="#variable-value"><span class="std std-ref">[10] Variable value</span></a></p></td>
+<td><p><a class="reference internal" href="#substitute-value"><span class="std std-ref">[10] Substitute value</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>all</p></td>
 <td><p><strong>##</strong> text</p></td>
@@ -756,16 +749,17 @@ Example:
 </div>
 <hr class="docutils" />
 </section>
-<section id="variable-value">
-<span id="id9"></span><h2><strong>[10]</strong> Variable value<a class="headerlink" href="#variable-value" title="Link to this heading">#</a></h2>
-<p>Insert the value of  var_name _[V] in the sentence.</p>
+<section id="substitute-value">
+<span id="id9"></span><h2><strong>[10]</strong> Substitute value<a class="headerlink" href="#substitute-value" title="Link to this heading">#</a></h2>
+<p>Insert the value of  _[V] var_name | in the line.</p>
 <aside class="topic">
 <p class="topic-title">_[V]</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    text var_name _[V] more text
+    text _[V] var_name | more text
 
 Example:
-    The value of my_var is my_var _[V].
+    The value of my_var is _[V] is my_var|.
+    The value of my_var is 5.
 </pre></div>
 </div>
 </aside>
@@ -827,7 +821,7 @@ Example:
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>D.0 | Markup</strong></p>
+        <p class="prev-next-title"><strong>D.0 | rivt Markup</strong></p>
       </div>
     </a>
     <a class="right-next"
@@ -856,8 +850,8 @@ Example:
     class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Sections
   </div>
-  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="pst-show_toc_level nav section-nav flex-column">
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#line-tag-summary"><strong>[1]</strong> Line Tag Summary</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bold-center-text"><strong>[2]</strong> Bold center text</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bold-text"><strong>[2]</strong> Bold text</a></li>
@@ -869,7 +863,7 @@ Example:
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary-link"><strong>[7]</strong> Glossary link</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-link"><strong>[8]</strong> Section link</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#url-link"><strong>[9]</strong> URL link</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-value"><strong>[10]</strong> Variable value</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#substitute-value"><strong>[10]</strong> Substitute value</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-number"><strong>[11]</strong> Table number</a></li>
 </ul>
   </nav></div>
@@ -887,8 +881,8 @@ Example:
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">

@@ -592,6 +592,7 @@ A typical *conf.py* file looks like this:
     :hidden:
 
     rvC01-folders.rst
-    rvC02-reports.rst    
+    rvC02-reports.rst
+    rvC03-rivtbks.rst    
 
 

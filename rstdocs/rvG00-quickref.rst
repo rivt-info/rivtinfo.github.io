@@ -87,7 +87,7 @@ rv.I,V                 text **_[C]**                              :ref:`Bold cen
 rv.I,V                **title _[T]**                              :ref:`Number table`
 rv.I,V      **ASCII text math _[M]** description                  :ref:`Text math` 
 rv.I,V           **LaTeX math _[L]** description                  :ref:`LaTeX math` 
-rv.I,V                 text **_[V] var_name |** text              :ref:`Subsitute a value`
+rv.I,V                 text **_[V] var_name |** text              :ref:`Substitute value`
 all                     **##** text                               nonprinting comment
 ========== ==================================================== ================================
 
@@ -104,7 +104,6 @@ all                     **##** text                               nonprinting co
 API Scope         Block Tag                                Description 
 ========== ========================================= ===============================
 rv.R        **_[[PYTHON]]** label                     :ref:`Python block`
-rv.R,I      **_[[MARKUP]]** type                      :ref:`Markup block`
 rv.I        **_[[BOX]]** label                        :ref:`Box block`
 rv.I        **_[[TOPIC]]** topic                      :ref:`Topic block`
 rv.I,V      **_[[TABLE]]** label                      :ref:`Table block`
@@ -127,11 +126,10 @@ all         **_[[END]]**                              :ref:`End block`
 ========== ================================================================ ========================
 API Scope           Command                                                        Description
 ========== ================================================================ ========================
-rv.R        **| MARKUP |** rel path | type                                   :ref:`Markup file`
-rv.R, V     **| PYTHON |** rel path | rivt;namespace                         :ref:`Python file`
 rv.I, V     **| TABLE |** rel path | title,width,head;nohead,num;non         :ref:`Table file`     
 rv.I, V     **| IMAGE |** rel path | caption, scale, num;non, time;not       :ref:`Image file`
 rv.I, V     **| IMAGE2 |** rel path1, rel path2 | c1,c2,s1,s2,n1,n2          :ref:`Adjacent images`
+rv.V        **| PYTHON |** rel path | rivt;namespace                         :ref:`Python file`
 rv.V        **| VALTABLE |** rel path | title, width, num;non                :ref:`Values file`   
 rv.V        a **==:** 1*IN  | unit1, unit2, decimal | label                  :ref:`Define value`
 rv.V        c **<=:** expression | unit1, unit2, decimal | label             :ref:`Assign value`

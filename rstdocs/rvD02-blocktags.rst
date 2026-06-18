@@ -20,38 +20,34 @@ rv.D        **_[[METADATA]]** label                   :ref:`Meta block`
 all         **_[[END]]**                              :ref:`End block`
 ========== ========================================= ===============================
 
-.. _Markup block:
+
+.. _Text block:
 
 **[9]** Markup block
 ---------------------------------------
 
 
 
-.. topic:: _[[MARKUP]] type
+.. topic:: _[[TEXT]] type
     
     Inserts formatted text into doc. 
 
     - *literal*
-    - *html*
-    - *reST*
-    - *python*
-    - *endnote*
     - *center*
     - *bold*
     - *italic*
-    - *mermaid* (node and mermaid-cli must be installed)
-    - *latex*   (texlive must be installed)    
+    - *rst*
     
     .. code-block:: text
             
         Syntax:    
-            _[[MARKUP]] 
-            markup
+            _[[TEXT]] 
+            text
             ...
             _[[END]]
 
         Example:    
-            _[[MARKUP]] rst
+            _[[TEXT]] rst
             This is **bold** and 
             this is *italic* in 
             reStructuredtext
@@ -59,12 +55,11 @@ all         **_[[END]]**                              :ref:`End block`
             _[[END]]
 
 =========== ==========================
-API Scope     Run
+API Scope     Insert
 Doc Types     text, PDF, HTML
 =========== ==========================
 
 -----------------------
-
 
 .. _Python block:
 

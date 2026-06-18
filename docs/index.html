@@ -28,8 +28,8 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
@@ -38,10 +38,10 @@
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=95fdc9c7" />
   
   <!-- So that users can add custom icons -->
-  <script defer src="_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="_static/jquery.js?v=5d32c60e"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
@@ -53,37 +53,30 @@
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js?v=b8b12719"></script>
+    <script src="_static/togglebutton.js?v=1ae7504c"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
-    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="A.0 | Start" href="rvA00-start.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
-  
-    
-    <script src="_static/searchtools.js"></script>
-    <script src="_static/language_data.js"></script>
-    <script src="searchindex.js"></script>
-  
   </head>
-  <body data-default-mode="dark">
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="dark">
+
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
-
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-  
-  
-  
+
   
   <dialog id="pst-search-dialog">
     
@@ -109,7 +102,7 @@
 </div>
 
   
-    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
   <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
@@ -174,7 +167,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvD00-markup.html">
-    D.0 | Markup
+    D.0 | rivt Markup
   </a>
 </li>
 
@@ -293,7 +286,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvD00-markup.html">
-    D.0 | Markup
+    D.0 | rivt Markup
   </a>
 </li>
 
@@ -377,22 +370,36 @@ Home
 <a class="dark-light reference internal image-reference" href="_images/rivt-finalb.png"><img alt="rivt logo" class="dark-light" height="106" src="_images/rivt-finalb.png" width="133" />
 </a>
 </figure>
-<hr><p><em>rivt</em> is a lightweight, interactive, extensisble, open source Python tool
-for writing, organizing and sharing engineering documents. It publishes
-<em>rivt files</em> (<em>.py</em> files) to formatted <strong>text, HTML or PDF document files</strong>
-(<em>rivt docs</em>).  A <em>rivt report</em> is a linked compilation of multiple <em>rivt docs</em>.
-This site is an example of an <em>HTML rivt report</em>.</p>
+<hr><p><em>rivt</em> is a lightweight, interactive and extensible open source Python tool
+for writing, organizing and sharing engineering production documents.
+It compiles and formats naturally readable text files (<em>.py</em> files) into formatted
+<strong>text, HTML or PDF document files</strong> (<em>rivt docs</em>).</p>
+<p>There are four types of rivt documents:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rivt file   | A Python file that imports the rivtlib package
+            | and includes document content and rivt markup
+
+rivt doc    | A formatted text, PDF or HTML file output from
+            | a rivt file
+
+rivt report | A group of rivt files output as a linked and
+            | collated text, PDF or HTML doc file
+
+rivt book   | A collection of rivt files orgainzed around a common
+            | subject matter and arranged for individual export
+</pre></div>
+</div>
 <p>An interface for finding public <em>rivt files</em> on <strong>GitHub</strong> is
-<a class="reference internal" href="rvE02-ghsearch.html"><span class="doc">here</span></a>. A collection of open source downloads, including
-<em>rivt</em>, is on <strong>Google Drive</strong> <a class="reference external" href="https://www.openmodels.info" rel="noreferrer" target="_blank">here</a> .</p>
-<p>For an overview of <em>rivt</em> interaction with <em>AI</em> see <a class="reference internal" href="rvF00-aiintro.html#rivt-context"><span class="std std-ref">here</span></a>.
-<em>rivt</em> is effective in organizing <em>AI</em> text, code and image output into
-documents and reports.</p>
+<a class="reference internal" href="rvE02-ghsearch.html"><span class="doc">here</span></a>. A collection of open source models and documents,
+including <em>rivt</em>, is at <strong>Google Drive</strong> <a class="reference external" href="https://www.openmodels.info" rel="noreferrer" target="_blank">here</a> .</p>
+<p>For an overview of <em>rivt</em> and <em>AI</em> see <a class="reference internal" href="rvF00-aiintro.html#rivt-context"><span class="std std-ref">here</span></a>.
+<em>rivt</em> is effective in organizing <em>AI</em> outputs into documents and reports with a
+high degree of user control.</p>
 <p><em>rivt</em> produces clear, organized engineering documents using reasonable default
-formats that may be customized. It exposes about 3 dozen user commands and
-formatting tags. If a journal article or book with higher production values is
-needed <a class="reference external" href="https://quarto.org/" rel="noreferrer" target="_blank">Quarto</a> may be a better tool. Further discussion
-of avaialble scientific and engineering document tools is <a class="reference internal" href="rvB01-motivation.html#motivation"><span class="std std-ref">here</span></a>.</p>
+formats that can be customized. <em>rivt markup</em> uses about 3 dozen commands and
+tags to format and build documents. If journal articles or books with
+higher production values are needed <a class="reference external" href="https://quarto.org/" rel="noreferrer" target="_blank">Quarto</a> is a
+better tool. Further discussion of avaialble scientific and engineering
+document tools is <a class="reference internal" href="rvB01-motivation.html#motivation"><span class="std std-ref">here</span></a>.</p>
 <hr>
 
 <p style="color:rgb(63,177,197);">ver: 1.0.0a12
@@ -437,8 +444,8 @@ and the user API may change.)</p><div class="toctree-wrapper compound">
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">

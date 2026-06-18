@@ -22,7 +22,7 @@ rv.I,V                 text **_[C]**                              :ref:`Bold cen
 rv.I,V                **title _[T]**                              :ref:`Number table`
 rv.I,V            **text math _[M]** description                  :ref:`Text math` 
 rv.I,V           **LaTeX math _[L]** description                  :ref:`LaTeX math` 
-rv.I,V                 text **_[V] var_name |** text              :ref:`Subsitute value`
+rv.I,V                 text **_[V] var_name |** text              :ref:`Substitute value`
 all                     **##** text                               nonprinting comment
 ========== ==================================================== ================================
 
@@ -277,7 +277,8 @@ Doc Types     PDF, HTML
 
 -------------------------------
 
-.. _Subsitute value:
+
+.. _Substitute value:
 
 **[10]** Substitute value
 ------------------------------------------

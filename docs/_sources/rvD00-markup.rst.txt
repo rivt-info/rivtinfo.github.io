@@ -1,12 +1,12 @@
-**D.0 | Markup**
-==================
+**D.0 | rivt Markup**
+======================
 
 .. _API functions:
 
 **[1]** API functions
 --------------------------------------------------------------------- 
 
-*rivt* has six API functions. The name *rivt* is an acronym taken from the
+*rivt* has six API functions. The name *rivt* is an acronym taken from 
 four functions that process content. The remaining three functions are used for
 document generation and debugging.
 
@@ -48,14 +48,14 @@ API Function         Name             Purpose
 ================ =============== ================================================
 
 API functions define doc sections. The available *rivt markup* commands and
-tags depends on the API funciton. If interactive IDEs are used, API functions
+tags depend on the API funciton. If interactive IDEs are used, API functions
 can be processed individually using the standard notebook cell percent
 notation:
 
 .. code-block:: python
 
-    # %% optional label
-    rv.API("""rivt string""")
+    # %% optional label for navigation
+    rv._("""rivt string""")
 
 
 ------------------------------------------------
@@ -109,6 +109,10 @@ order:
     Determines whether the API starts a new *doc* section
     or is merged into the previous section.   
 
+*script type* 
+    For the rv.R API only, the markup script type is specified 
+    in the header substring. 
+
 Default settings in the *header substring* do not need to be specified. The
 default setting for each API is listed first (in bold) in the table below.
 The default privacy settings for all sections in a rivt file may be reversed by
@@ -125,22 +129,21 @@ including it in the *comment settings* immediately following the
 
 Individual sections may be reset as private in the header substring after
 changing the default. In the table below a single dash before an option means
-that is the only option.
-
-
+the setting is fixed.
 
 **Header substring defaults**
-====== =================== =============== =================== ==================
-API      private; public     doc; stored      section; merge     pdfpage; nopage    
-====== =================== =============== =================== ==================
-rv.R    **private**         **stored**       **section**          **nopage**
-rv.I    **private**         **doc**          **section**          **nopage** 
-rv.V    **private**         **doc**          **section**          **nopage** 
-rv.T    **private**         **- stored**          NA                  NA
-rv.D    **- public**        **- stored**          NA                  NA
-rv.S    **private**         **- stored**          NA                  NA
-rv.X         NA               NA                  NA                  NA
-====== =================== =============== =================== ==================
+
+====== =================== =============== =================== ================== ===========
+API      private; public     doc; stored      section; merge     pdfpage; nopage    markup
+====== =================== =============== =================== ================== ===========
+rv.R    **private**         **stored**       **merge**            **nopage**       **type**
+rv.I    **private**         **doc**          **section**          **nopage**         NA
+rv.V    **private**         **doc**          **section**          **nopage**         NA
+rv.T    **-private**        **-stored**          NA                  NA              NA
+rv.D    **-private**        **-stored**          NA                  NA              NA
+rv.S         NA                 NA               NA                  NA              NA
+rv.X         NA                 NA               NA                  NA              NA
+====== =================== =============== =================== ================== ===========
 
 
 Examples of *header substring* settings are shown below.

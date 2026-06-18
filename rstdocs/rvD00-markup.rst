@@ -1,12 +1,12 @@
-**D.0 | Markup**
-==================
+**D.0 | rivt Markup**
+======================
 
 .. _API functions:
 
 **[1]** API functions
 --------------------------------------------------------------------- 
 
-*rivt* has six API functions. The name *rivt* is an acronym taken from the
+*rivt* has six API functions. The name *rivt* is an acronym taken from 
 four functions that process content. The remaining three functions are used for
 document generation and debugging.
 
@@ -48,14 +48,14 @@ API Function         Name             Purpose
 ================ =============== ================================================
 
 API functions define doc sections. The available *rivt markup* commands and
-tags depends on the API funciton. If interactive IDEs are used, API functions
+tags depend on the API funciton. If interactive IDEs are used, API functions
 can be processed individually using the standard notebook cell percent
 notation:
 
 .. code-block:: python
 
-    # %% optional label
-    rv.API("""rivt string""")
+    # %% optional label for navigation
+    rv._("""rivt string""")
 
 
 ------------------------------------------------
@@ -108,6 +108,10 @@ order:
 *section/merge* 
     Determines whether the API starts a new *doc* section
     or is merged into the previous section.   
+
+*script type* 
+    For the rv.R API only, the markup script type is specified 
+    in the header substring. 
 
 Default settings in the *header substring* do not need to be specified. The
 default setting for each API is listed first (in bold) in the table below.

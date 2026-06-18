@@ -28,8 +28,8 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
@@ -38,10 +38,10 @@
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=95fdc9c7" />
   
   <!-- So that users can add custom icons -->
-  <script defer src="_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="_static/jquery.js?v=5d32c60e"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
@@ -53,11 +53,10 @@
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js?v=b8b12719"></script>
+    <script src="_static/togglebutton.js?v=1ae7504c"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'rvD03-commands';</script>
-    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="D.4 | API Scopes" href="rvD04-apimarkup.html" />
@@ -65,26 +64,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
-  
-    
-    <script src="_static/searchtools.js"></script>
-    <script src="_static/language_data.js"></script>
-    <script src="searchindex.js"></script>
-  
   </head>
-  <body data-default-mode="dark">
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="dark">
+
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
-
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-  
-  
-  
+
   
   <dialog id="pst-search-dialog">
     
@@ -110,7 +103,7 @@
 </div>
 
   
-    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
   <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
@@ -175,7 +168,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="rvD00-markup.html">
-    D.0 | Markup
+    D.0 | rivt Markup
   </a>
 </li>
 
@@ -296,7 +289,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="rvD00-markup.html">
-    D.0 | Markup
+    D.0 | rivt Markup
   </a>
 </li>
 
@@ -393,7 +386,7 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="rvD00-markup.html" class="nav-link"><strong>D.0 | Markup</strong></a></li>
+    <li class="breadcrumb-item"><a href="rvD00-markup.html" class="nav-link"><strong>D.0 | rivt Markup</strong></a></li>
     
     <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>D.3 | Commands</strong></span></li>
   </ul>
@@ -425,25 +418,25 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>rv.R</p></td>
-<td><p><strong>| MARKUP |</strong> rel path | type</p></td>
-<td><p><a class="reference internal" href="#markup-file"><span class="std std-ref">[3] Text file</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.R, V</p></td>
-<td><p><strong>| PYTHON |</strong> rel path | rivt;namespace</p></td>
-<td><p><a class="reference internal" href="#python-file"><span class="std std-ref">[12] Python file</span></a></p></td>
-</tr>
 <tr class="row-even"><td><p>rv.I, V</p></td>
+<td><p><strong>| TEXT |</strong> rel path | type</p></td>
+<td><p><a class="reference internal" href="#text-file"><span class="std std-ref">[3] Text file</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.I, V</p></td>
 <td><p><strong>| TABLE |</strong> rel path | title,width,head;nohead,num;non</p></td>
 <td><p><a class="reference internal" href="#table-file"><span class="std std-ref">[4] Table file</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.I, V</p></td>
+<tr class="row-even"><td><p>rv.I, V</p></td>
 <td><p><strong>| IMAGE |</strong> rel path | caption, scale, num;non, time;not</p></td>
 <td><p><a class="reference internal" href="#image-file"><span class="std std-ref">[5] Image file</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.I, V</p></td>
+<tr class="row-odd"><td><p>rv.I, V</p></td>
 <td><p><strong>| IMAGE2 |</strong> rel path1, rel path2 | c1,c2,s1,s2,n1,n2</p></td>
 <td><p><a class="reference internal" href="#adjacent-images"><span class="std std-ref">[6] Adjacent images</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>rv.V</p></td>
+<td><p><strong>| PYTHON |</strong> rel path | rivt;namespace</p></td>
+<td><p><a class="reference internal" href="#python-file"><span class="std std-ref">[12] Python file</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V</p></td>
 <td><p><strong>| VALTABLE |</strong> rel path | title, width, num;non</p></td>
@@ -541,7 +534,7 @@
 </tbody>
 </table>
 </div>
-<p>[1} file paths begin with rvsrc/ and may include subdirectories
+<p>[1] file paths begin with rvsrc/ and may include subdirectories
 [2] values are read from <em>rvsrc/</em> and its subdirectories
 [3] values written by <em>rivt</em> are read from <em>rv_stor/vals</em>
 [4] <em>docs</em> are written to subdirectories of <em>_published</em></p>
@@ -579,29 +572,22 @@ Example:
 </div>
 </section>
 <section id="text-file">
-<span id="markup-file"></span><h2><strong>[3]</strong> Text file<a class="headerlink" href="#text-file" title="Link to this heading">#</a></h2>
+<span id="id3"></span><h2><strong>[3]</strong> Text file<a class="headerlink" href="#text-file" title="Link to this heading">#</a></h2>
 <p>The TEXT command reads and formats text and code files. The language parameter
 specifies formatting and syntax coloring.  Language types include:</p>
 <p>Inserts formatted text into doc.</p>
 <ul class="simple">
 <li><p><em>literal</em></p></li>
-<li><p><em>html</em></p></li>
-<li><p><em>reST</em></p></li>
-<li><p><em>python</em></p></li>
-<li><p><em>endnote</em></p></li>
+<li><p><em>rst</em></p></li>
 <li><p><em>center</em></p></li>
 <li><p><em>bold</em></p></li>
 <li><p><em>italic</em></p></li>
-<li><p><em>mermaid</em> (node and mermaid-cli must be installed)</p></li>
-<li><p><em>latex</em>   (texlive must be installed)</p></li>
 </ul>
-<p>The <em>literal</em> type inserts text into the <em>doc</em> without formatting.</p>
-<p>If a <em>doc</em> is part of a report and no path is specified, the file is assumed to
-be in the default folder <em>/src/data/</em> . Otherwise the path needs to be specified
-relative to the report root (rivt file folder). If the doc is a
-single doc the file is read from the rivt file folder.</p>
+<p>The <em>literal</em> type inserts text into the <em>doc</em> without formatting. Paths are
+relative to the rivit-report the report root (rivt file folder). If the doc is
+a single doc the file is read from the rivt file folder.</p>
 <aside class="topic">
-<p class="topic-title">| MARKUP |</p>
+<p class="topic-title">| TEXT |</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
     | MARKUP | relative path | type
 Example:
@@ -625,7 +611,7 @@ Example:
 </div>
 </section>
 <section id="table-file">
-<span id="id3"></span><h2><strong>[4]</strong> Table file<a class="headerlink" href="#table-file" title="Link to this heading">#</a></h2>
+<span id="id4"></span><h2><strong>[4]</strong> Table file<a class="headerlink" href="#table-file" title="Link to this heading">#</a></h2>
 <p>The TABLE command reads csv, xls, and rst files and outputs formatted tables.
 The title may be ommited by inserting a hyphen “-”. The width parameter
 specifies the maximum character width of a column. The align parameter
@@ -662,7 +648,7 @@ Example:
 </div>
 </section>
 <section id="image-file">
-<span id="id4"></span><h2><strong>[5]</strong> Image file<a class="headerlink" href="#image-file" title="Link to this heading">#</a></h2>
+<span id="id5"></span><h2><strong>[5]</strong> Image file<a class="headerlink" href="#image-file" title="Link to this heading">#</a></h2>
 <p>The IMAGE command reads a PNG or JPEG file and centers it in the <em>doc</em>. The
 scale parameter is a decimal fraction of the page width. The caption may be
 ommited by using a single hyphen. The <em>num;nonum</em> parameter specifies whether
@@ -695,7 +681,7 @@ Example:
 </div>
 </section>
 <section id="adjacent-images">
-<span id="id5"></span><h2><strong>[6]</strong> Adjacent images<a class="headerlink" href="#adjacent-images" title="Link to this heading">#</a></h2>
+<span id="id6"></span><h2><strong>[6]</strong> Adjacent images<a class="headerlink" href="#adjacent-images" title="Link to this heading">#</a></h2>
 <p>The IMAGE2 command reads two PNG or JPEG file and places them side by side in
 the <em>doc</em>. The scale parameters are a decimal fraction of the page width. The
 captions may be ommited by using a single hyphen for either or both images. The
@@ -772,7 +758,7 @@ Example:
 </div>
 </section>
 <section id="define-value">
-<span id="id6"></span><h2><strong>[8]</strong> Define value<a class="headerlink" href="#define-value" title="Link to this heading">#</a></h2>
+<span id="id7"></span><h2><strong>[8]</strong> Define value<a class="headerlink" href="#define-value" title="Link to this heading">#</a></h2>
 <p>Defines a value and writes it to the file <em>vdocnum-s.csv</em> where <em>num</em> is the
 <em>docnumber</em> and <em>s</em> is the section number. The file is written to the folder
 <em>stored/vals</em> unless <em>singledocB</em> is set to <em>True</em> in the comment variable.</p>
@@ -801,7 +787,7 @@ Example:
 </div>
 </section>
 <section id="assign-value">
-<span id="id7"></span><h2><strong>[9]</strong> Assign value<a class="headerlink" href="#assign-value" title="Link to this heading">#</a></h2>
+<span id="id8"></span><h2><strong>[9]</strong> Assign value<a class="headerlink" href="#assign-value" title="Link to this heading">#</a></h2>
 <p>Assigns a value to an equation and writes the values to a file <em>vdocnum-s.csv</em>
 where <em>num</em> is the <em>doc number</em> and <em>s</em> is the section number. The file is
 written to the folder <em>stored/vals</em> unless <em>rv single doc</em> is set to <em>True</em>
@@ -832,7 +818,7 @@ Example:
 </div>
 </section>
 <section id="inline-function">
-<span id="id8"></span><h2><strong>[10]</strong> Inline function<a class="headerlink" href="#inline-function" title="Link to this heading">#</a></h2>
+<span id="id9"></span><h2><strong>[10]</strong> Inline function<a class="headerlink" href="#inline-function" title="Link to this heading">#</a></h2>
 <p>Assigns a value to an equation and writes the values to a file <em>vdocnum-s.csv</em>
 where <em>num</em> is the <em>doc number</em> and <em>s</em> is the section number. The file is
 written to the folder <em>stored/vals</em> unless <em>rv single doc</em> is set to <em>True</em>
@@ -901,7 +887,7 @@ Example:
 </div>
 </section>
 <section id="python-file">
-<span id="id9"></span><h2><strong>[12]</strong> Python file<a class="headerlink" href="#python-file" title="Link to this heading">#</a></h2>
+<span id="id10"></span><h2><strong>[12]</strong> Python file<a class="headerlink" href="#python-file" title="Link to this heading">#</a></h2>
 <p>Executes Python code in the <em>rivt namespace</em> or user specified namespace. File
 paths used in the script are relative to the root <em>rivt</em> folder.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
@@ -978,7 +964,7 @@ Example:
 </div>
 </section>
 <section id="attach-pdf">
-<span id="id10"></span><h2><strong>[15]</strong> Attach PDF<a class="headerlink" href="#attach-pdf" title="Link to this heading">#</a></h2>
+<span id="id11"></span><h2><strong>[15]</strong> Attach PDF<a class="headerlink" href="#attach-pdf" title="Link to this heading">#</a></h2>
 <p>Appends or prepends a PDF file to the <em>doc</em>. The title parameter generates an
 Appendix cover page with the specified title. A “-” omits the over page. For
 HTML <em>docs</em> the file is inserted as a donwload link.</p>
@@ -1008,7 +994,7 @@ Example:
 </div>
 </section>
 <section id="publish-doc">
-<span id="id11"></span><h2><strong>[16]</strong> Publish doc<a class="headerlink" href="#publish-doc" title="Link to this heading">#</a></h2>
+<span id="id12"></span><h2><strong>[16]</strong> Publish doc<a class="headerlink" href="#publish-doc" title="Link to this heading">#</a></h2>
 <p>Publishes a <em>doc</em>.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
     | PUBLISH | ini relative path | rst2pdf, texpdf, tex, hmtl
@@ -1079,8 +1065,8 @@ Example:
     class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Sections
   </div>
-  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="pst-show_toc_level nav section-nav flex-column">
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#command-summary"><strong>[1]</strong> Command Summary</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shell-file"><strong>[2]</strong> Shell file</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-file"><strong>[3]</strong> Text file</a></li>
@@ -1113,8 +1099,8 @@ Example:
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">

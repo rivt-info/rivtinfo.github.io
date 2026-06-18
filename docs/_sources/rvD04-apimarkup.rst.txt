@@ -18,24 +18,10 @@ The *Run* API function executes markup and scripts.
        Block Tag                            Description 
 ========================================= ==============================
 **_[[PYTHON]]** namespace                       :ref:`Python block`
-**_[[MARKUP]]** type                            :ref:`Markup block`
 **_[[END]]**                                    :ref:`End Block`
 ========================================= ==============================
 
 ------------------------------------------
-
-**[1-2]** rv.R Commands
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
- 
-============================================================== =====================
-      Command                                                      Description
-============================================================== =====================
- **| PYTHON |** relative path | namespace                        :ref:`Python file`
- **| MARKUP |** relative path | type                             :ref:`Markup file`
-============================================================== =====================
-
--------------------------------------------
 
 
 **[2]** rv.I Markup
@@ -61,7 +47,7 @@ including images, tables, links and formatted text.
                 text **_[G] text, term**          :ref:`Term link`
                 text **_[S] text, section link**  :ref:`Section link`
                 text **_[U] text, label**         :ref:`URL link`   
-                text **_[V] var_name** text       :ref:`Variable value`
+                text **_[V] var_name** text       :ref:`Substitute value`
                **title _[T]**                     :ref:`Number table`
 ================================================= ============================
 
@@ -93,7 +79,7 @@ including images, tables, links and formatted text.
 ==================================================================== =========================
  **| IMAGE |** relative path |  scale, caption, figure                 :ref:`Image file`
  **| IMAGE2 |** rel path1, rel path2 | s1, s2, c1, c2, fig1, fig2      :ref:`Adjacent images`
- **| TEXT |** relative path |  language                                :ref:`Markup file`
+ **| TEXT |** relative path |  language                                :ref:`Text file`
  **| TABLE |** rel path | title, width, rows, align, head              :ref:`Table file`     
 ==================================================================== =========================
 
@@ -119,7 +105,7 @@ The *Values* API function defines values and evaluates equations and functions.
 ======================================== ==============================
        Line Tag                                         Description 
 ======================================== ==============================
-         text **_[V] var_name** | text      :ref:`Variable value`
+         text **_[V] var_name** | text      :ref:`Substitute value`
         **title _[]**                       :ref:`Number table`                      
 ======================================== ==============================
 
