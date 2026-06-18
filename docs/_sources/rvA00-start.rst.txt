@@ -1,6 +1,8 @@
 **A.0 | Start**
 =====================================================================
 
+.. _rivt-start:
+
 **[1]** Getting Started 
 ------------------------------------------------------------------------------- 
 
@@ -16,9 +18,8 @@ zip file (800 MB). It includes all the neccessary components and examples to
 run and explore *rivt*. For further details see :ref:`here <rivt-portable>`.
 
 For users with a `GitHub <https://github.com>`__ account *rivt* can be forked
-and run in a browser using 
-`Codespaces <https://github.com/features/codespaces>`__.
-Further details are :ref:`here <Code-rivt>`.
+and run in a browser using `Codespaces <https://github.com/features/codespaces>`__.
+Further details are :ref:`here <rivt-codespace>`.
 
 For users familiar with Python, *rivt* may be installed at the OS level or in
 an isolated environment using *uv*. Further details are :ref:`here <rivt-sys>`.
@@ -84,7 +85,7 @@ Releases are updated monthly and may be downloaded from the
 
 -------------------------------
 
-.. _Code-rivt:
+.. _rivt-codespace:
 
 **[4]** Codespace rivt
 -------------------------------------------------------------------------------- 

@@ -20,34 +20,35 @@
 
 
 *rivt* is a lightweight, interactive and extensible open source Python tool 
-for writing, organizing and sharing engineering production documents. 
-It compiles and formats naturally readable text files (*.py* files) into formatted 
-**text, HTML or PDF document files** (*rivt docs*).  
+for writing, organizing and sharing engineering documents. 
+It takes naturally readable text files and compiles them into 
+formatted **text, HTML or PDF document files**.  
 
 There are four types of rivt documents:
 
 .. code-block:: text
 
-   rivt file   | A Python file that imports the rivtlib package 
-               | and includes document content and rivt markup
+   rivt file   | A Python input file (.py) that imports the rivtlib 
+               | Python package and includes content and rivt markup
+
+   rivt book   | A collection of rivt input files organized around a 
+               | common subject matter and intended for selected export 
    
-   rivt doc    | A formatted text, PDF or HTML file output from 
-               | a rivt file
+   rivt report | A group of rivt files organized for compilation into
+               | a single output doc file
 
-   rivt report | A group of rivt files output as a linked and
-               | collated text, PDF or HTML doc file
-
-   rivt book   | A collection of rivt files orgainzed around a common 
-               | subject matter and arranged for individual export 
+   rivt doc    | A formatted text, PDF or HTML output file compiled
+               | and linked from a single or group of rivt files
 
  
+
+For an overview of *rivt* see :ref:`here <rivt-overview>`. To get started see 
+:ref:`here <rivt-start>`. For *rivt* and *AI*  see :ref:`here<rivt-context>`. 
+*rivt* works naturally with *AI* tools.
+
 An interface for finding public *rivt files* on **GitHub** is 
 :doc:`here<rvE02-ghsearch>`. A collection of open source models and documents, 
 including *rivt*, is at **Google Drive** `here <https://www.openmodels.info>`__ . 
-
-For an overview of *rivt* and *AI* see :ref:`here<rivt-context>`.
-*rivt* is effective in organizing *AI* outputs into documents and reports with a
-high degree of user control.
 
 *rivt* produces clear, organized engineering documents using reasonable default
 formats that can be customized. *rivt markup* uses about 3 dozen commands and
