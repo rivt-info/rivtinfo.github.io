@@ -375,17 +375,22 @@ for writing, organizing and sharing engineering documents.
 It takes readable, interactive text files and compiles them into
 formatted <strong>text, HTML or PDF document files</strong>.</p>
 <p>There are four types of rivt files:</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rivt file   | A Python input file (.py) that imports the rivtlib
-            | Python package and includes content and rivt markup
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>            | A rivt file is the basic file that produces a publication.
+rivt file   | It is a Python file (.py) that imports the rivtlib Python
+            | package and includes document content and markup.
 
-rivt book   | A collection of rivt input files organized around a
-            | common subject matter and intended for selected export
+            | A rivt doc is the basic publication of a rivt file.
+rivt doc    | It is a formatted text, PDF or HTML output file compiled
+            | from a rivt file.
 
-rivt report | A group of rivt files organized for compilation into
-            | a single output doc file
+            | A rivt report is the published output from a
+rivt report | collection of rivt files organized and compiled into
+            | a single text, PDF or HTML report file.
 
-rivt doc    | A formatted text, PDF or HTML output file compiled
-            | and linked from a single or group of rivt files
+
+            | A rivt book is a collection of rivt files sharing a common
+rivt book   | topic and organized for efficient search and porting
+            | to rivt files that are part of a doc or report.
 </pre></div>
 </div>
 <p>For an overview of <em>rivt</em> see <a class="reference internal" href="rvB00-overview.html#rivt-overview"><span class="std std-ref">here</span></a>. To get started see
@@ -396,7 +401,7 @@ rivt doc    | A formatted text, PDF or HTML output file compiled
 including <em>rivt</em>, is at <strong>Google Drive</strong> <a class="reference external" href="https://www.openmodels.info" rel="noreferrer" target="_blank">here</a> .</p>
 <p><em>rivt</em> produces clear, organized engineering documents using reasonable default
 formats that can be customized. <em>rivt markup</em> uses about 3 dozen commands and
-tags to format and build documents. If journal articles or books with
+tags to format and assemble documents. If journal articles or books with
 higher production values are needed <a class="reference external" href="https://quarto.org/" rel="noreferrer" target="_blank">Quarto</a> is a
 better tool. Further discussion of avaialble scientific and engineering
 document tools is <a class="reference internal" href="rvB01-motivation.html#motivation"><span class="std std-ref">here</span></a>.</p>

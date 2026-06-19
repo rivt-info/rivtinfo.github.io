@@ -28,19 +28,23 @@ There are four types of rivt files:
 
 .. code-block:: text
 
-   rivt file   | A Python input file (.py) that imports the rivtlib 
-               | Python package and includes content and rivt markup
+               | A rivt file is the basic file that produces a publication. 
+   rivt file   | It is a Python file (.py) that imports the rivtlib Python
+               | package and includes document content and markup.
 
-   rivt book   | A collection of rivt input files organized around a 
-               | common subject matter and intended for selected export 
+               | A rivt doc is the basic publication of a rivt file. 
+   rivt doc    | It is a formatted text, PDF or HTML output file compiled
+               | from a rivt file.
+
+               | A rivt report is the published output from a
+   rivt report | collection of rivt files organized and compiled into
+               | a single text, PDF or HTML report file.
+
+
+               | A rivt book is a collection of rivt files sharing a common 
+   rivt book   | topic and organized for efficient search and porting
+               | to rivt files that are part of a doc or report.
    
-   rivt report | A group of rivt files organized for compilation into
-               | a single output doc file
-
-   rivt doc    | A formatted text, PDF or HTML output file compiled
-               | and linked from a single or group of rivt files
-
- 
 
 For an overview of *rivt* see :ref:`here <rivt-overview>`. To get started see 
 :ref:`here <rivt-start>`. For *rivt* and *AI*  see :ref:`here<rivt-context>`. 
@@ -52,7 +56,7 @@ including *rivt*, is at **Google Drive** `here <https://www.openmodels.info>`__ 
 
 *rivt* produces clear, organized engineering documents using reasonable default
 formats that can be customized. *rivt markup* uses about 3 dozen commands and
-tags to format and build documents. If journal articles or books with 
+tags to format and assemble documents. If journal articles or books with 
 higher production values are needed `Quarto <https://quarto.org/>`__ is a 
 better tool. Further discussion of avaialble scientific and engineering 
 document tools is :ref:`here <motivation>`.

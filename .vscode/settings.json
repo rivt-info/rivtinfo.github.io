@@ -1,4 +1,5 @@
 {
+    "window.zoomLevel": 1.2,
     "python.terminal.activateEnvironment": true,
     "python.useEnvironmentsExtension": true,
     "terminal.integrated.fontSize": 14,
