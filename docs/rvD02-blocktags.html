@@ -409,7 +409,7 @@
 <h1><strong>D.2 | Block Tags</strong><a class="headerlink" href="#d-2-block-tags" title="Link to this heading">#</a></h1>
 <section id="block-tag-summary">
 <h2><strong>[1]</strong> Block Tag Summary<a class="headerlink" href="#block-tag-summary" title="Link to this heading">#</a></h2>
-<p><strong>Run Format blocks of text or scripts</strong></p>
+<p><strong>Format or run blocks of text or scripts</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>API Scope</p></th>
@@ -419,56 +419,88 @@
 </thead>
 <tbody>
 <tr class="row-even"><td><p>rv.I</p></td>
-<td><p><strong>_[[TEXT]]</strong> type</p></td>
-<td><p><a class="reference internal" href="#text-block"><span class="std std-ref">[9] Markup block</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p><strong>_[[BOX]]</strong> label</p></td>
-<td><p><a class="reference internal" href="#box-block"><span class="std std-ref">[6] Box</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p>rv.I</p></td>
 <td><p><strong>_[[TOPIC]]</strong> topic</p></td>
-<td><p><a class="reference internal" href="#topic-block"><span class="std std-ref">[5] Topic</span></a></p></td>
+<td><p><a class="reference internal" href="#topic-block"><span class="std std-ref">[1] Topic</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I,V</p></td>
+<td><p><strong>_[[TEXT]]</strong> type</p></td>
+<td><p><a class="reference internal" href="#text-block"><span class="std std-ref">[2] Text block</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>rv.I,V</p></td>
 <td><p><strong>_[[TABLE]]</strong> label</p></td>
-<td><p><a class="reference internal" href="#table-block"><span class="std std-ref">[4] Table Block</span></a></p></td>
+<td><p><a class="reference internal" href="#table-block"><span class="std std-ref">[3] Table Block</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.V</p></td>
+<td><p><strong>_[[ARGS]]</strong> arg dict name</p></td>
+<td><p><a class="reference internal" href="#arg-block"><span class="std std-ref">[4] Argument block</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.V</p></td>
-<td><p><strong>_[[ARGS]]</strong> arg dict name</p></td>
-<td><p><a class="reference internal" href="#arg-block"><span class="std std-ref">[8] Argument block</span></a></p></td>
+<td><p><strong>_[[PYTHON]]</strong> label</p></td>
+<td><p><a class="reference internal" href="#python-block"><span class="std std-ref">[4] Python block</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.T</p></td>
 <td><p><strong>_[[WRITE]]</strong> var name</p></td>
-<td><p><a class="reference internal" href="#write-block"><span class="std std-ref">[7] Write Block</span></a></p></td>
+<td><p><a class="reference internal" href="#write-block"><span class="std std-ref">[5] Write</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.T</p></td>
 <td><p><strong>_[[SHELL]]</strong> os, <em>wait;nowait</em></p></td>
-<td><p><a class="reference internal" href="#shell-script"><span class="std std-ref">[9] Shell script</span></a></p></td>
+<td><p><a class="reference internal" href="#shell-script"><span class="std std-ref">[6] Shell script</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.D</p></td>
 <td><p><strong>_[[METADATA]]</strong> label</p></td>
-<td><p><a class="reference internal" href="#meta-block"><span class="std std-ref">[10] Metadata</span></a></p></td>
+<td><p><a class="reference internal" href="#meta-block"><span class="std std-ref">[7] Metadata</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>all</p></td>
 <td><p><strong>_[[END]]</strong></p></td>
-<td><p><a class="reference internal" href="#end-block"><span class="std std-ref">[11] End block</span></a></p></td>
+<td><p><a class="reference internal" href="#end-block"><span class="std std-ref">[8] End block</span></a></p></td>
 </tr>
 </tbody>
 </table>
 </div>
 </section>
-<section id="markup-block">
-<span id="text-block"></span><h2><strong>[9]</strong> Markup block<a class="headerlink" href="#markup-block" title="Link to this heading">#</a></h2>
+<section id="topic">
+<span id="topic-block"></span><h2><strong>[1]</strong> Topic<a class="headerlink" href="#topic" title="Link to this heading">#</a></h2>
+<aside class="topic">
+<p class="topic-title">_[[TOPIC]]</p>
+<p>Formats a topic block.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    _[[TOPIC]] topic title
+    text
+    ...
+    _[[END]]
+
+Example:
+    _[[TOPIC]] topic title
+    Text related to the topic.
+    _[[END]]
+</pre></div>
+</div>
+</aside>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Insert</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+</section>
+<section id="text-block">
+<span id="id1"></span><h2><strong>[2]</strong> Text block<a class="headerlink" href="#text-block" title="Link to this heading">#</a></h2>
 <aside class="topic">
 <p class="topic-title">_[[TEXT]] type</p>
 <p>Inserts formatted text into doc.</p>
 <ul class="simple">
 <li><p><em>literal</em></p></li>
+<li><p><em>rst</em></p></li>
+<li><p><em>note</em></p></li>
 <li><p><em>center</em></p></li>
 <li><p><em>bold</em></p></li>
 <li><p><em>italic</em></p></li>
-<li><p><em>rst</em></p></li>
 </ul>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
     _[[TEXT]]
@@ -499,80 +531,8 @@ Example:
 </div>
 <hr class="docutils" />
 </section>
-<section id="python">
-<span id="python-block"></span><h2><strong>[7]</strong> Python<a class="headerlink" href="#python" title="Link to this heading">#</a></h2>
-<aside class="topic">
-<p class="topic-title">_[[PYTHON]]</p>
-<p>Executes Python script in the <em>rivt namespace</em> or a user specified namespace.
-File paths in the script are relative to the <em>rivt file</em> folder.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Syntax</span><span class="p">:</span>
-    <span class="n">_</span><span class="p">[[</span><span class="n">Python</span><span class="p">]]</span> <span class="n">topic</span> <span class="n">title</span>
-    <span class="n">code</span>
-    <span class="o">...</span>
-    <span class="n">_</span><span class="p">[[</span><span class="n">END</span><span class="p">]]</span>
-
-<span class="n">Example</span><span class="p">:</span>
-    <span class="n">_</span><span class="p">[[</span><span class="n">PYTHON</span><span class="p">]]</span> <span class="o">*</span><span class="n">rvspace</span><span class="o">*</span><span class="p">;</span> <span class="n">user</span> <span class="n">namespace</span>
-    <span class="n">b</span> <span class="o">=</span> <span class="mi">1</span><span class="o">*</span><span class="n">inch</span> <span class="o">+</span> <span class="mf">2.2</span><span class="o">*</span><span class="n">ft</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-    <span class="n">_</span><span class="p">[[</span><span class="n">END</span><span class="p">]]</span>
-</pre></div>
-</div>
-</aside>
-<div class="pst-scrollable-table-container"><table class="table">
-<tbody>
-<tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Value, Run</p></td>
-</tr>
-<tr class="row-even"><td><p>Doc Types</p></td>
-<td><p>text, PDF, HTML</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<hr class="docutils" />
-</section>
-<section id="string">
-<span id="string-block"></span><h2><strong>[3]</strong> String<a class="headerlink" href="#string" title="Link to this heading">#</a></h2>
-<aside class="topic">
-<p class="topic-title">_[[STRING]]  var name</p>
-<p>Formats a Python fstring with</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    _[[ENDNOTES]] label
-    Endnote 1.
-
-    Endnote 2.
-    ...
-    _[[END]]
-
-Example:
-    _[[ENDNOTES]] ACI citations
-    This endnote is assigned to the first endnote tag (_[#]) in order of
-    of processing.
-
-    This second endnote is separated by a blank line and assigned
-    to the second
-
-    This is a third endnote.
-    _[[END]]
-</pre></div>
-</div>
-</aside>
-<div class="pst-scrollable-table-container"><table class="table">
-<tbody>
-<tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Insert</p></td>
-</tr>
-<tr class="row-even"><td><p>Doc Types</p></td>
-<td><p>text, PDF, HTML</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<hr class="docutils" />
-</section>
 <section id="table-block">
-<span id="id1"></span><h2><strong>[4]</strong> Table Block<a class="headerlink" href="#table-block" title="Link to this heading">#</a></h2>
+<span id="id2"></span><h2><strong>[3]</strong> Table Block<a class="headerlink" href="#table-block" title="Link to this heading">#</a></h2>
 <aside class="topic">
 <p class="topic-title">_[[TABLE]]</p>
 <p>Reads and formats restructured text table and writes contents
@@ -610,104 +570,8 @@ _[[END]]</p>
 </div>
 <hr class="docutils" />
 </section>
-<section id="topic">
-<span id="topic-block"></span><h2><strong>[5]</strong> Topic<a class="headerlink" href="#topic" title="Link to this heading">#</a></h2>
-<aside class="topic">
-<p class="topic-title">_[[TOPIC]]</p>
-<p>Formats a topic block.</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    _[[TOPIC]] topic title
-    text
-    ...
-    _[[END]]
-
-Example:
-    _[[TOPIC]] topic title
-    Text related to the topic.
-    _[[END]]
-</pre></div>
-</div>
-</aside>
-<div class="pst-scrollable-table-container"><table class="table">
-<tbody>
-<tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Insert</p></td>
-</tr>
-<tr class="row-even"><td><p>Doc Types</p></td>
-<td><p>text, PDF, HTML</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<hr class="docutils" />
-</section>
-<section id="box">
-<span id="box-block"></span><h2><strong>[6]</strong> Box<a class="headerlink" href="#box" title="Link to this heading">#</a></h2>
-<aside class="topic">
-<p class="topic-title">_[[BOX]] label</p>
-<p>Draws a box around the block of text.</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    _[[BOX]] optional label
-    text
-    ...
-    _[[END]]
-
-Example:
-    _[[BOX]] box1
-    This is a sentence.
-    A second sentence.
-    A box is drawn around the sentences.
-    _[[END]]
-</pre></div>
-</div>
-</aside>
-<div class="pst-scrollable-table-container"><table class="table">
-<tbody>
-<tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Insert</p></td>
-</tr>
-<tr class="row-even"><td><p>Doc Types</p></td>
-<td><p>text, PDF, HTML</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<hr class="docutils" />
-</section>
-<section id="write-block">
-<span id="id2"></span><h2><strong>[7]</strong> Write Block<a class="headerlink" href="#write-block" title="Link to this heading">#</a></h2>
-<aside class="topic">
-<p class="topic-title">_[[WRITE]] rel file path</p>
-<p>Updates variables in templates and writes file to report folder.</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    _[[WRITE]] relative file path
-    text or script
-    ...
-    _[[END]]
-
-Example:
-    _[[WRITE]] rvsrc/script.py
-    for i in range(2):
-        print(f&quot;{vars}&quot;,i)
-    _[[END]]
-</pre></div>
-</div>
-</aside>
-<div class="pst-scrollable-table-container"><table class="table">
-<tbody>
-<tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Tools</p></td>
-</tr>
-<tr class="row-even"><td><p>Doc Types</p></td>
-<td><p>text, PDF, HTML</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<hr class="docutils" />
-</section>
 <section id="argument-block">
-<span id="arg-block"></span><h2><strong>[8]</strong> Argument block<a class="headerlink" href="#argument-block" title="Link to this heading">#</a></h2>
+<span id="arg-block"></span><h2><strong>[4]</strong> Argument block<a class="headerlink" href="#argument-block" title="Link to this heading">#</a></h2>
 <aside class="topic">
 <p class="topic-title">_[[ARG]] arg_name</p>
 <p>Organizes function arguments into a dictionary that may be passed
@@ -741,8 +605,78 @@ Example:
 </div>
 <hr class="docutils" />
 </section>
+<section id="python-block">
+<span id="id3"></span><h2><strong>[4]</strong> Python block<a class="headerlink" href="#python-block" title="Link to this heading">#</a></h2>
+<aside class="topic">
+<p class="topic-title">_[[PYTHON]] label</p>
+<p>Runs a Python script. Results are typically written to the default folder
+rv_stor through an alias and then imported as needed using the TEXT
+or IMAGE command.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    _[[PYTHON]] label
+    code line 1
+    code line 2
+    ...
+    _[[END]]
+
+Example:
+    _[[PYTHON]] loop
+    str1 = &quot;&quot;
+    for i in range(10):
+        str1+=&quot;  &quot; + str(i)
+    with open(&quot;rv_stor/numbers.txt&quot;, &quot;w&quot;) as f1:
+        f1.write(str1)
+    _[[END]]
+</pre></div>
+</div>
+</aside>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Values</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+</section>
+<section id="write">
+<span id="write-block"></span><h2><strong>[5]</strong> Write<a class="headerlink" href="#write" title="Link to this heading">#</a></h2>
+<aside class="topic">
+<p class="topic-title">_[[WRITE]] rel file path</p>
+<p>Updates variables in templates and writes file to report folder.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    _[[WRITE]] relative file path
+    text or script
+    ...
+    _[[END]]
+
+Example:
+    _[[WRITE]] rvsrc/script.py
+    for i in range(2):
+        print(f&quot;{vars}&quot;,i)
+    _[[END]]
+</pre></div>
+</div>
+</aside>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Tools</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+</section>
 <section id="shell-script">
-<span id="id3"></span><h2><strong>[9]</strong> Shell script<a class="headerlink" href="#shell-script" title="Link to this heading">#</a></h2>
+<span id="id4"></span><h2><strong>[6]</strong> Shell script<a class="headerlink" href="#shell-script" title="Link to this heading">#</a></h2>
 <p>Runs shell scripts that run external programs. The shell parameters include
 specifying the operating system, process control and terminal window control.
 The os parameter specifies the terminal type. The wait parameter specifies
@@ -780,7 +714,7 @@ Example:
 <hr class="docutils" />
 </section>
 <section id="metadata">
-<span id="meta-block"></span><h2><strong>[10]</strong> Metadata<a class="headerlink" href="#metadata" title="Link to this heading">#</a></h2>
+<span id="meta-block"></span><h2><strong>[7]</strong> Metadata<a class="headerlink" href="#metadata" title="Link to this heading">#</a></h2>
 <aside class="topic">
 <p class="topic-title">_[[METADATA]]</p>
 <p><em>Metadata</em> is written to the <em>rvAnn-apilog.py</em> file and is converted
@@ -824,7 +758,7 @@ Example:
 <hr class="docutils" />
 </section>
 <section id="end-block">
-<span id="id4"></span><h2><strong>[11]</strong> End block<a class="headerlink" href="#end-block" title="Link to this heading">#</a></h2>
+<span id="id5"></span><h2><strong>[8]</strong> End block<a class="headerlink" href="#end-block" title="Link to this heading">#</a></h2>
 <aside class="topic">
 <p class="topic-title">_[[END]]</p>
 <p>Terminates a block tag.</p>
@@ -898,17 +832,15 @@ Example:
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#block-tag-summary"><strong>[1]</strong> Block Tag Summary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#markup-block"><strong>[9]</strong> Markup block</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python"><strong>[7]</strong> Python</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#string"><strong>[3]</strong> String</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-block"><strong>[4]</strong> Table Block</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#topic"><strong>[5]</strong> Topic</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#box"><strong>[6]</strong> Box</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#write-block"><strong>[7]</strong> Write Block</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#argument-block"><strong>[8]</strong> Argument block</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shell-script"><strong>[9]</strong> Shell script</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metadata"><strong>[10]</strong> Metadata</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-block"><strong>[11]</strong> End block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#topic"><strong>[1]</strong> Topic</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-block"><strong>[2]</strong> Text block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-block"><strong>[3]</strong> Table Block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#argument-block"><strong>[4]</strong> Argument block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-block"><strong>[4]</strong> Python block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#write"><strong>[5]</strong> Write</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shell-script"><strong>[6]</strong> Shell script</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metadata"><strong>[7]</strong> Metadata</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-block"><strong>[8]</strong> End block</a></li>
 </ul>
   </nav></div>
 

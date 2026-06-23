@@ -4,26 +4,57 @@
 **[1]** Block Tag Summary
 -------------------------------------
 
-**Run Format blocks of text or scripts**
+**Format or run blocks of text or scripts**
 
 ========== ========================================= ===============================
 API Scope         Block Tag                                Description 
 ========== ========================================= ===============================
-rv.I        **_[[TEXT]]** type                        :ref:`Text block`
-rv.I        **_[[BOX]]** label                        :ref:`Box block`
 rv.I        **_[[TOPIC]]** topic                      :ref:`Topic block`
+rv.I,V      **_[[TEXT]]** type                        :ref:`Text block`
 rv.I,V      **_[[TABLE]]** label                      :ref:`Table block`
 rv.V        **_[[ARGS]]** arg dict name               :ref:`Arg block`
+rv.V        **_[[PYTHON]]** label                     :ref:`Python block`
 rv.T        **_[[WRITE]]** var name                   :ref:`Write block`
 rv.T        **_[[SHELL]]** os, *wait;nowait*          :ref:`Shell script`
 rv.D        **_[[METADATA]]** label                   :ref:`Meta block` 
 all         **_[[END]]**                              :ref:`End block`
 ========== ========================================= ===============================
 
+.. _Topic block:
+
+**[1]** Topic 
+------------------------------------------------
+
+ 
+
+.. topic:: _[[TOPIC]] 
+
+    Formats a topic block.
+
+    .. code-block:: text
+
+            Syntax:    
+                _[[TOPIC]] topic title
+                text
+                ...
+                _[[END]]
+
+            Example:    
+                _[[TOPIC]] topic title
+                Text related to the topic.
+                _[[END]]
+
+=========== ==========================
+API Scope     Insert
+Doc Types     text, PDF, HTML
+=========== ==========================
+
+-----------------------
+
 
 .. _Text block:
 
-**[9]** Markup block
+**[2]** Text block
 ---------------------------------------
 
 
@@ -33,10 +64,12 @@ all         **_[[END]]**                              :ref:`End block`
     Inserts formatted text into doc. 
 
     - *literal*
+    - *rst*
+    - *note*
     - *center*
     - *bold*
     - *italic*
-    - *rst*
+
     
     .. code-block:: text
             
@@ -59,80 +92,11 @@ API Scope     Insert
 Doc Types     text, PDF, HTML
 =========== ==========================
 
------------------------
-
-.. _Python block:
-
-**[7]** Python 
-------------------------------------------------
-.. topic:: _[[PYTHON]] 
-
-    Executes Python script in the *rivt namespace* or a user specified namespace.
-    File paths in the script are relative to the *rivt file* folder.
-
-    .. code-block:: python
-
-            Syntax:    
-                _[[Python]] topic title
-                code
-                ...
-                _[[END]]
-
-            Example:    
-                _[[PYTHON]] *rvspace*; user namespace
-                b = 1*inch + 2.2*ft
-                print(b)
-                _[[END]]
-
-=========== ==========================
-API Scope     Value, Run
-Doc Types     text, PDF, HTML
-=========== ==========================
-
------------------------
-
-.. _String block:
-
-**[3]** String 
--------------------------------------------    
-
- 
-
-.. topic:: _[[STRING]]  var name
-
-    Formats a Python fstring with 
-    
-    .. code-block:: text
-
-            Syntax:
-                _[[ENDNOTES]] label
-                Endnote 1.
-
-                Endnote 2. 
-                ...
-                _[[END]]    
-    
-            Example:
-                _[[ENDNOTES]] ACI citations
-                This endnote is assigned to the first endnote tag (_[#]) in order of
-                of processing.
-
-                This second endnote is separated by a blank line and assigned
-                to the second
-
-                This is a third endnote.
-                _[[END]] 
-
-=========== ==========================
-API Scope     Insert
-Doc Types     text, PDF, HTML
-=========== ==========================
-
 -----------------------------
 
 .. _Table block:
 
-**[4]** Table Block
+**[3]** Table Block
 ------------------------------------------------
 
  
@@ -166,102 +130,9 @@ Doc Types     text, PDF, HTML
 
 -----------------------
 
-.. _Topic block:
-
-**[5]** Topic 
-------------------------------------------------
-
- 
-
-.. topic:: _[[TOPIC]] 
-
-    Formats a topic block.
-
-    .. code-block:: text
-
-            Syntax:    
-                _[[TOPIC]] topic title
-                text
-                ...
-                _[[END]]
-
-            Example:    
-                _[[TOPIC]] topic title
-                Text related to the topic.
-                _[[END]]
-
-=========== ==========================
-API Scope     Insert
-Doc Types     text, PDF, HTML
-=========== ==========================
-
------------------------
-
-.. _Box block:
-
-**[6]** Box 
-------------------------------------------------
-
-.. topic:: _[[BOX]] label
-
-    Draws a box around the block of text.
-
-    .. code-block:: text
-
-            Syntax:    
-                _[[BOX]] optional label
-                text
-                ...
-                _[[END]]
-
-            Example:    
-                _[[BOX]] box1
-                This is a sentence.
-                A second sentence.
-                A box is drawn around the sentences.
-                _[[END]]
-
-=========== ==========================
-API Scope     Insert
-Doc Types     text, PDF, HTML
-=========== ==========================
-
------------------------
-
-
-.. _Write block:
-
-**[7]** Write Block 
-------------------------------------------------
-
-.. topic:: _[[WRITE]] rel file path
-
-    Updates variables in templates and writes file to report folder. 
-
-    .. code-block:: text
-
-            Syntax:    
-                _[[WRITE]] relative file path
-                text or script
-                ...
-                _[[END]]
-
-            Example:    
-                _[[WRITE]] rvsrc/script.py
-                for i in range(2):
-                    print(f"{vars}",i) 
-                _[[END]]
-
-=========== ==========================
-API Scope     Tools
-Doc Types     text, PDF, HTML
-=========== ==========================
-
------------------------
-
 .. _Arg block:
 
-**[8]** Argument block
+**[4]** Argument block
 ---------------------------------------
 
 .. topic:: _[[ARG]] arg_name
@@ -292,11 +163,77 @@ Doc Types     text, PDF, HTML
 
 -----------------------
 
+.. _Python block:
+
+**[4]** Python block
+---------------------------------------
+
+.. topic:: _[[PYTHON]] label
+        
+    Runs a Python script. Results are typically written to the default folder
+    rv_stor through an alias and then imported as needed using the TEXT 
+    or IMAGE command.
+
+    .. code-block:: text
+            
+        Syntax:    
+            _[[PYTHON]] label
+            code line 1
+            code line 2
+            ...
+            _[[END]]
+
+        Example:    
+            _[[PYTHON]] loop
+            str1 = ""
+            for i in range(10):
+                str1+="  " + str(i)
+            with open("rv_stor/numbers.txt", "w") as f1:
+                f1.write(str1)    
+            _[[END]]
+
+=========== ==========================
+API Scope     Values
+Doc Types     text, PDF, HTML
+=========== ==========================
+
+-----------------------
+
+
+.. _Write block:
+
+**[5]** Write 
+------------------------------------------------
+
+.. topic:: _[[WRITE]] rel file path
+
+    Updates variables in templates and writes file to report folder. 
+
+    .. code-block:: text
+
+            Syntax:    
+                _[[WRITE]] relative file path
+                text or script
+                ...
+                _[[END]]
+
+            Example:    
+                _[[WRITE]] rvsrc/script.py
+                for i in range(2):
+                    print(f"{vars}",i) 
+                _[[END]]
+
+=========== ==========================
+API Scope     Tools
+Doc Types     text, PDF, HTML
+=========== ==========================
+
+-----------------------
 
 
 .. _Shell script:
 
-**[9]** Shell script
+**[6]** Shell script
 ------------------------------------
 Runs shell scripts that run external programs. The shell parameters include
 specifying the operating system, process control and terminal window control.
@@ -332,7 +269,7 @@ Doc Types     text, PDF, HTML
 
 .. _Meta block:
 
-**[10]** Metadata
+**[7]** Metadata
 -------------------
 
  
@@ -375,7 +312,7 @@ Doc Types     text, PDF, HTML
 
 .. _End block:
 
-**[11]** End block
+**[8]** End block
 ------------------------------------------------
 
  

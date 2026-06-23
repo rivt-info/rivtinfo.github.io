@@ -117,9 +117,10 @@ Default settings in the *header substring* do not need to be specified. The
 default setting for each API is listed first (in bold) in the table below.
 The default privacy settings for all sections in a rivt file may be reversed by
 including it in the *comment settings* immediately following the  
-*rivlib import statement*.  Default settings are in parenthsis.
+*rivlib import statement*.  File default settings are in parenthsis.
 
-.. code:: python
+
+.. code-block:: python
 
     import rivtlib.rvapi as rv
 
@@ -127,24 +128,24 @@ including it in the *comment settings* immediately following the
     # rv no_tag = true ; API type is added to section number (true)
     # rv set_width = true character width of text output (80
 
-Individual sections may be reset as private in the header substring after
-changing the default. In the table below a single dash before an option means
-the setting is fixed.
+Individual sections may be set back to private in the header substring after
+changing the default. 
 
 **Header substring defaults**
 
 ====== =================== =============== =================== ================== ===========
 API      private; public     doc; stored      section; merge     pdfpage; nopage    markup
 ====== =================== =============== =================== ================== ===========
-rv.R    **private**         **stored**       **merge**            **nopage**       **type**
+rv.R    **private**         **stored**       **section**          **nopage**       **type**
 rv.I    **private**         **doc**          **section**          **nopage**         NA
 rv.V    **private**         **doc**          **section**          **nopage**         NA
-rv.T    **-private**        **-stored**          NA                  NA              NA
-rv.D    **-private**        **-stored**          NA                  NA              NA
+rv.T    **private**         **stored**       **merge** [1]        **nopage**         NA
+rv.D    **private**         stored only          NA                  NA              NA
 rv.S         NA                 NA               NA                  NA              NA
 rv.X         NA                 NA               NA                  NA              NA
 ====== =================== =============== =================== ================== ===========
 
+[1] Summary of tool execution added to prior section
 
 Examples of *header substring* settings are shown below.
 

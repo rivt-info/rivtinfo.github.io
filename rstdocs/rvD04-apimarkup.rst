@@ -17,8 +17,8 @@ The *Run* API function executes markup and scripts.
 ========================================= ==============================
        Block Tag                            Description 
 ========================================= ==============================
-**_[[PYTHON]]** namespace                       :ref:`Python block`
-**_[[END]]**                                    :ref:`End Block`
+**_[[PYTHON]]** label                       :ref:`Python block`
+**_[[END]]**                                :ref:`End Block`
 ========================================= ==============================
 
 ------------------------------------------
@@ -61,7 +61,7 @@ including images, tables, links and formatted text.
 ========================================= ==============================
        Block Tag                               Description 
 ========================================= ==============================
- **_[[BOX]]** optional label                  :ref:`Box block`
+ **_[[TEXT]]** optional label                 :ref:`Text block`
  **_[[TOPIC]]** topic                         :ref:`Topic block`
  **_[[END]]**                                 :ref:`End block`
 ========================================= ==============================
@@ -118,11 +118,12 @@ The *Values* API function defines values and evaluates equations and functions.
 
  
 
-**Format or execute a block of text**
+**Format or run a block of text**
 
 ========================================= ==============================
        Block Tag                               Description 
 ========================================= ==============================
+**_[[TEXT]]** optional label                 :ref:`Text block`
 **_[[PYTHON]]** namespace                       :ref:`Python block`
 **_[[END]]**                                    :ref:`End Block`
 ========================================= ==============================
@@ -199,8 +200,6 @@ The *Doc API* publishes formatted *docs* from the rivt API strings.
 **[5-1]** Block Tags
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
- 
-
 ======================================= ==============================
        Block Tag                         Description 
 ======================================= ==============================
@@ -211,8 +210,6 @@ The *Doc API* publishes formatted *docs* from the rivt API strings.
 
 **[5-2]** Commands
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
- 
 
 ========================================================= ==================== 
        Command                                                   Description

@@ -34,32 +34,35 @@ is the :term:`header substring`.
         
         """)
 
-Default settings in the *header substring* do not need to be specified. The
-default setting for each API is listed first (in bold) in the table below. The
-default privacy settings for all sections in a rivt file may be reversed by
-including the *# rv private = false;* immediately following the 
-*rivlib import statement*. Individual sections may still be set to private 
-in the section *header substring*.
 
-.. code:: python
+The default privacy setting may be changed in the rivt file comment settings
+shown below
+
+.. code-block:: python
 
     import rivtlib.rvapi as rv
 
-    # rv setpublic = true
- 
+    # rv private = false ; default section parameter changed to public (true)
+    # rv no_tag = true ; API type is added to section number (true)
+    # rv set_width = true character width of text output (80
+
+Individual sections may be set back to private in the header substring after
+changing the default. 
+
 **Header substring defaults**
 
-====== =================== =============== =================== ================== ==============
-API      private; public     doc; stored      section; merge     pdfpage; nopage    markup type
-====== =================== =============== =================== ================== ==============
-rv.R    **private**         **-stored**      **merge**            **nopage**       **type**
+====== =================== =============== =================== ================== ===========
+API      private; public     doc; stored      section; merge     pdfpage; nopage    markup
+====== =================== =============== =================== ================== ===========
+rv.R    **private**         **stored**       **section**          **nopage**       **type**
 rv.I    **private**         **doc**          **section**          **nopage**         NA
 rv.V    **private**         **doc**          **section**          **nopage**         NA
-rv.T    **private**         **-stored**          NA                  NA              NA
-rv.D    **private**         **-stored**          NA                  NA              NA
+rv.T    **private**         **stored**       **merge** [1]        **nopage**         NA
+rv.D    **private**         stored only          NA                  NA              NA
 rv.S         NA                 NA               NA                  NA              NA
 rv.X         NA                 NA               NA                  NA              NA
-====== =================== =============== =================== ================== ==============
+====== =================== =============== =================== ================== ===========
+
 
 ----------------------------------
 
@@ -98,20 +101,21 @@ all                     **##** text                               nonprinting co
 **[3]** Block Tags
 -------------------------------------
 
-**Format or run blocks of text or code**
+**Format or run blocks of text or scripts**
 
 ========== ========================================= ===============================
 API Scope         Block Tag                                Description 
 ========== ========================================= ===============================
-rv.R        **_[[PYTHON]]** label                     :ref:`Python block`
-rv.I        **_[[BOX]]** label                        :ref:`Box block`
 rv.I        **_[[TOPIC]]** topic                      :ref:`Topic block`
+rv.I,V      **_[[TEXT]]** type                        :ref:`Text block`
 rv.I,V      **_[[TABLE]]** label                      :ref:`Table block`
 rv.V        **_[[ARGS]]** arg dict name               :ref:`Arg block`
+rv.T        **_[[WRITE]]** var name                   :ref:`Write block`
 rv.T        **_[[SHELL]]** os, *wait;nowait*          :ref:`Shell script`
 rv.D        **_[[METADATA]]** label                   :ref:`Meta block` 
 all         **_[[END]]**                              :ref:`End block`
 ========== ========================================= ===============================
+
 
 ----------------------------------
 

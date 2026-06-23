@@ -519,7 +519,7 @@ in the header substring.</p>
 default setting for each API is listed first (in bold) in the table below.
 The default privacy settings for all sections in a rivt file may be reversed by
 including it in the <em>comment settings</em> immediately following the
-<em>rivlib import statement</em>.  Default settings are in parenthsis.</p>
+<em>rivlib import statement</em>.  File default settings are in parenthsis.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
 
 <span class="c1"># rv private = false ; default section parameter changed to public (true)</span>
@@ -527,9 +527,8 @@ including it in the <em>comment settings</em> immediately following the
 <span class="c1"># rv set_width = true character width of text output (80</span>
 </pre></div>
 </div>
-<p>Individual sections may be reset as private in the header substring after
-changing the default. In the table below a single dash before an option means
-the setting is fixed.</p>
+<p>Individual sections may be set back to private in the header substring after
+changing the default.</p>
 <p><strong>Header substring defaults</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -545,7 +544,7 @@ the setting is fixed.</p>
 <tr class="row-even"><td><p>rv.R</p></td>
 <td><p><strong>private</strong></p></td>
 <td><p><strong>stored</strong></p></td>
-<td><p><strong>merge</strong></p></td>
+<td><p><strong>section</strong></p></td>
 <td><p><strong>nopage</strong></p></td>
 <td><p><strong>type</strong></p></td>
 </tr>
@@ -564,15 +563,15 @@ the setting is fixed.</p>
 <td><p>NA</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.T</p></td>
-<td><p><strong>-private</strong></p></td>
-<td><p><strong>-stored</strong></p></td>
-<td><p>NA</p></td>
-<td><p>NA</p></td>
+<td><p><strong>private</strong></p></td>
+<td><p><strong>stored</strong></p></td>
+<td><p><strong>merge</strong> [1]</p></td>
+<td><p><strong>nopage</strong></p></td>
 <td><p>NA</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.D</p></td>
-<td><p><strong>-private</strong></p></td>
-<td><p><strong>-stored</strong></p></td>
+<td><p><strong>private</strong></p></td>
+<td><p>stored only</p></td>
 <td><p>NA</p></td>
 <td><p>NA</p></td>
 <td><p>NA</p></td>
@@ -594,6 +593,7 @@ the setting is fixed.</p>
 </tbody>
 </table>
 </div>
+<p>[1] Summary of tool execution added to prior section</p>
 <p>Examples of <em>header substring</em> settings are shown below.</p>
 <ul class="simple">
 <li><p>An example with explicit defaults (they do not have to be declared).</p></li>

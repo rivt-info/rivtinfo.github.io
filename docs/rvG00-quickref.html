@@ -450,17 +450,17 @@ is the <a class="reference internal" href="rvG01-terms.html#term-header-substrin
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Default settings in the <em>header substring</em> do not need to be specified. The
-default setting for each API is listed first (in bold) in the table below. The
-default privacy settings for all sections in a rivt file may be reversed by
-including the <em># rv private = false;</em> immediately following the
-<em>rivlib import statement</em>. Individual sections may still be set to private
-in the section <em>header substring</em>.</p>
+<p>The default privacy setting may be changed in the rivt file comment settings
+shown below</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
 
-<span class="c1"># rv setpublic = true</span>
+<span class="c1"># rv private = false ; default section parameter changed to public (true)</span>
+<span class="c1"># rv no_tag = true ; API type is added to section number (true)</span>
+<span class="c1"># rv set_width = true character width of text output (80</span>
 </pre></div>
 </div>
+<p>Individual sections may be set back to private in the header substring after
+changing the default.</p>
 <p><strong>Header substring defaults</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -469,14 +469,14 @@ in the section <em>header substring</em>.</p>
 <th class="head"><p>doc; stored</p></th>
 <th class="head"><p>section; merge</p></th>
 <th class="head"><p>pdfpage; nopage</p></th>
-<th class="head"><p>markup type</p></th>
+<th class="head"><p>markup</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>rv.R</p></td>
 <td><p><strong>private</strong></p></td>
-<td><p><strong>-stored</strong></p></td>
-<td><p><strong>merge</strong></p></td>
+<td><p><strong>stored</strong></p></td>
+<td><p><strong>section</strong></p></td>
 <td><p><strong>nopage</strong></p></td>
 <td><p><strong>type</strong></p></td>
 </tr>
@@ -496,14 +496,14 @@ in the section <em>header substring</em>.</p>
 </tr>
 <tr class="row-odd"><td><p>rv.T</p></td>
 <td><p><strong>private</strong></p></td>
-<td><p><strong>-stored</strong></p></td>
-<td><p>NA</p></td>
-<td><p>NA</p></td>
+<td><p><strong>stored</strong></p></td>
+<td><p><strong>merge</strong> [1]</p></td>
+<td><p><strong>nopage</strong></p></td>
 <td><p>NA</p></td>
 </tr>
 <tr class="row-even"><td><p>rv.D</p></td>
 <td><p><strong>private</strong></p></td>
-<td><p><strong>-stored</strong></p></td>
+<td><p>stored only</p></td>
 <td><p>NA</p></td>
 <td><p>NA</p></td>
 <td><p>NA</p></td>
@@ -605,7 +605,7 @@ in the section <em>header substring</em>.</p>
 </section>
 <section id="block-tags">
 <span id="id2"></span><h2><strong>[3]</strong> Block Tags<a class="headerlink" href="#block-tags" title="Link to this heading">#</a></h2>
-<p><strong>Format or run blocks of text or code</strong></p>
+<p><strong>Format or run blocks of text or scripts</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>API Scope</p></th>
@@ -614,37 +614,37 @@ in the section <em>header substring</em>.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>rv.R</p></td>
-<td><p><strong>_[[PYTHON]]</strong> label</p></td>
-<td><p><a class="reference internal" href="rvD02-blocktags.html#python-block"><span class="std std-ref">[7] Python</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p><strong>_[[BOX]]</strong> label</p></td>
-<td><p><a class="reference internal" href="rvD02-blocktags.html#box-block"><span class="std std-ref">[6] Box</span></a></p></td>
-</tr>
 <tr class="row-even"><td><p>rv.I</p></td>
 <td><p><strong>_[[TOPIC]]</strong> topic</p></td>
-<td><p><a class="reference internal" href="rvD02-blocktags.html#topic-block"><span class="std std-ref">[5] Topic</span></a></p></td>
+<td><p><a class="reference internal" href="rvD02-blocktags.html#topic-block"><span class="std std-ref">[1] Topic</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I,V</p></td>
-<td><p><strong>_[[TABLE]]</strong> label</p></td>
-<td><p><a class="reference internal" href="rvD02-blocktags.html#table-block"><span class="std std-ref">[4] Table Block</span></a></p></td>
+<td><p><strong>_[[TEXT]]</strong> type</p></td>
+<td><p><a class="reference internal" href="rvD02-blocktags.html#text-block"><span class="std std-ref">[2] Text block</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.V</p></td>
+<tr class="row-even"><td><p>rv.I,V</p></td>
+<td><p><strong>_[[TABLE]]</strong> label</p></td>
+<td><p><a class="reference internal" href="rvD02-blocktags.html#table-block"><span class="std std-ref">[3] Table Block</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.V</p></td>
 <td><p><strong>_[[ARGS]]</strong> arg dict name</p></td>
-<td><p><a class="reference internal" href="rvD02-blocktags.html#arg-block"><span class="std std-ref">[8] Argument block</span></a></p></td>
+<td><p><a class="reference internal" href="rvD02-blocktags.html#arg-block"><span class="std std-ref">[4] Argument block</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>rv.T</p></td>
+<td><p><strong>_[[WRITE]]</strong> var name</p></td>
+<td><p><a class="reference internal" href="rvD02-blocktags.html#write-block"><span class="std std-ref">[5] Write</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.T</p></td>
 <td><p><strong>_[[SHELL]]</strong> os, <em>wait;nowait</em></p></td>
-<td><p><a class="reference internal" href="rvD02-blocktags.html#shell-script"><span class="std std-ref">[9] Shell script</span></a></p></td>
+<td><p><a class="reference internal" href="rvD02-blocktags.html#shell-script"><span class="std std-ref">[6] Shell script</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.D</p></td>
 <td><p><strong>_[[METADATA]]</strong> label</p></td>
-<td><p><a class="reference internal" href="rvD02-blocktags.html#meta-block"><span class="std std-ref">[10] Metadata</span></a></p></td>
+<td><p><a class="reference internal" href="rvD02-blocktags.html#meta-block"><span class="std std-ref">[7] Metadata</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>all</p></td>
 <td><p><strong>_[[END]]</strong></p></td>
-<td><p><a class="reference internal" href="rvD02-blocktags.html#end-block"><span class="std std-ref">[11] End block</span></a></p></td>
+<td><p><a class="reference internal" href="rvD02-blocktags.html#end-block"><span class="std std-ref">[8] End block</span></a></p></td>
 </tr>
 </tbody>
 </table>
