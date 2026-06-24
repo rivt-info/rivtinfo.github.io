@@ -175,8 +175,35 @@ See :ref:`here <report-folders>` for the folder structure.
 
 .. _Folders:
 
-**[5]** Folders
+**[5]** rivt Report Folders
 ---------------------------------------------------------------------
+
+**rivt Report Top Level Folders** 
+
+.. code-block:: bash
+
+    [rivt-]Report-Label/             report folder
+        ├── .vscode/                    optional VSCode settings   
+        ├── README.txt                  rivt-generated report                  
+        ├── [_rivt-public]/                 public subset of rivt files
+            ├── rv_stor/                    
+            ├── rvsrc/                        
+            ├── README.txt                              
+            ├── rv-101-filename1.py         
+            ├── rv-102-filename2.py                
+            ├── rv-201-filename3.py                          
+             ...
+        └── [rivt-report]/              report folder              
+            ├── [_published]/               published docs and reports
+            ├── [_rstdocs]/                 restructured text files               
+            ├── [rv_stor]/                  rivt generated source files
+            ├── [rvsrc]/                    author provided source files
+            ├── [rv101-]filename1.py        rivt file
+            ├── [rv102-]filename2.py        rivt file       
+            ├── [rv201-]filename3.py        rivt file          
+             ...    
+
+**rivt Report Expanded Folders**
 
 .. code-block:: bash
 
@@ -198,13 +225,13 @@ See :ref:`here <report-folders>` for the folder structure.
             ├── [rvsrc]/                      author provided files and folders        
                 ├── [downloads]/                    files to download      
                     └── conc-vals.txt 
-                ├── [page]/                          page layout images              
+                ├── [img]/                          page layout images              
                     ├── favicon.png    
                     ├── covlogo1.png    
                     └── runlogo1.png                   
-                ├── data/                            tables    
+                ├── [data]/                         tables    
                     └── steel-vals.csv                                                 
-                ├── tools/                           OS shell commands               
+                ├── tools/                          OS shell commands               
                     └── opensees.sh                        
                 ├── fig1.png
                 └── fig2.jpg                  
@@ -250,11 +277,94 @@ See :ref:`here <report-folders>` for the folder structure.
                 ├── rv201-filename3.rst          
                     ...
 
+
 ----------------------------------
+
+
+**[6]** rivtbook Folders
+---------------------------------------------------------------------
+
+
+.. _rivtbook-folders:
+
+**rivtbook Top Level Folders** 
+
+.. code-block:: bash
+
+    [rivtbk-]Book-Label/            rivtbook report folder
+        ├── .vscode/                    optional VSCode settings   
+        ├── README.txt                  rivt-generated book as text
+        ├── [_rivtbk-public]/           public subset of rivt files           
+        ├── [_rstdocs]/                 restructured text files
+        ├── [_pdfdocs]/                 PDF docs and report         
+        ├── [rvbk101-]folder name       rivtbook folder
+        ├── [rvbk102-]folder name       rivtbook folder        
+        ├── [rvbk201-]folder name       rivtbook folder           
+             ...    
+
+**rivtbook Expanded Folders**
+
+.. code-block:: bash
+
+    [rivtbk-]Book-Label/             rivtbook report folder              
+        ├── .vscode/                      optional VSCode settings   
+        ├── README.txt                    rivt-generated book as text
+        ├── [rivtbook-report]-1.py        rivtbook generating script                  
+        ├── [_rivtbk-public]/             public subset of rivt files         
+            ├── [rvbk-101-]folder name    rivtbook folder
+            ├── [rvbk-102-]folder name    rivtbook folder        
+            ├── [rvbk-201-]folder name    rivtbook folder         
+                ...
+        └── [_rstdocs]/                   rivt-generated rst files
+            ├── _downloads/                    
+            ├── _static/                                                       
+            ├── rv101-filename1.rst            
+            ├── rv102-filename2.rst                          
+            ├── rv201-filename3.rst          
+                ...
+        ├── [_pdfdocs]/                   pdf docs and rivtbook report
+            ├── pdf auxiliary folders     
+            ├── report-title.pdf
+            ├── rv101-filename1.pdf             
+            ├── rv102-filename1.pdf             
+            ├── rv201-filename3.pdf 
+                ...    
+        ├── [rvbk101-]folder name         rivtbook folder
+            ├── [rv101-]filename1.py          rivt file
+            ├── [rvsrc]/                      author provided files and folders        
+                ├── [downloads]/                    files to download      
+                    └── conc-vals.txt 
+                ├── [img]/                          page layout images              
+                    ├── favicon.png    
+                    ├── covlogo1.png    
+                    ├── runlogo1.png
+                    └── fig1.png
+                ├── [data]/                          tables    
+                    └── steel-vals.csv                                                 
+                ├── tools/                           OS shell commands               
+                    └── opensees.sh                           
+            ├── [rv_stor]/                    rivt-generated source files
+                ├── [logs]/                          log files
+                    ├── rv101-log.txt
+                    └── rv102-log.txt
+                ├── [sect]/                          sections not printed                    
+                    ├── rv202-5d.txt  
+                    ├── rv103-4t.txt                         
+                    └── rv301-2r.txt               
+                ├── [temp]/                          temp files
+                    └── rv101-label3.tex
+                ├── output.dat
+                ├── v101-2.csv
+                └── v102-3.csv             
+        ├── [rvbk102-]folder name         rivtbook subdivision folder
+                ...        
+        └─── [rvbk201-]folder name        rivtbook subdivision folder
+                ...
+
 
 .. _project-requirements:
 
-**[6]** Python Requirements
+**[7]** Python Requirements
 -------------------------------------
 
 
@@ -304,7 +414,7 @@ following categories:
 
 .. _vscode-settings:
 
-**[7]** VSCode Settings
+**[8]** VSCode Settings
 ------------------------------------
 
  

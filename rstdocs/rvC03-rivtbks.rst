@@ -128,7 +128,7 @@ A typical :term:`rivtbook folder` structure is shown below. The required
  
 *rivtbooks* are organized to simplify selection of *rivt files* for 
 inclusion in *rivt docs* and *reports*. Typical use involves the following
-steps. To insert a rivtbook subdivision into a rivt doc or report: 
+steps. To insert a *rivtbook subdivision* into a *rivt doc or report*: 
 
 #. Copy the *rivt file* within a *rivtbook subdivision folder* to the 
    *rivt-report* folder of the target report or doc and edit the 
