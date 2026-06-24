@@ -123,7 +123,7 @@ A typical :term:`rivtbook folder` structure is shown below. The required
                 ...
 
 
-**[3]** Use of rivtbooks
+**[3]** rivtbook Application
 ----------------------------------------------------------
  
 *rivtbooks* are organized to simplify selection of *rivt files* for 

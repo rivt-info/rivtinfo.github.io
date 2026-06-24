@@ -1,4 +1,4 @@
-**C.1 | Files - Folders**
+**C.1 | rivt Files**
 ============================
 
 **[1]** File Types 
@@ -158,28 +158,28 @@ Reports are organized using the folllowing folders and subfolders.
 
 .. _rivt-folders:
 
-**[3]**  Report Folder Structure
+**[3]**  Report Folders
 -------------------------------------------------------
 
 A typical :term:`report folder` structure is shown below. The required 
 *rivt file* names and prefixes are shown in brackets.  For the
 :term:`rivtbook folder` structure see :ref:`see <rivt-books>`.
 
- .. raw:: html
+.. raw:: html
 
     <p style="border-width:2px; border-style:solid; 
     border-color:#49b2c3;padding: 1em;">
 
     <b>Folder Naming</b><br>
     <br>
-    
+
     A report folder can contain any file or folder but the following structure is
     required for <i>doc</i> processing. <i>report folders</i> include at least
     the folders and files shown in brackets[] below. Folders with an underscore
     contain rivt generated files. Files and folders are organized under
     a rivt root folder with the prefix <i>rivt-</i> followed by the report
     label, e.g. <i>rivt-Report-Label</i>. <br> <br>
-    
+
     A new <i>report folder</i> is typically started by copying and editing a
     similar folder. Several <i>rivt-folders</i> can be downloaded at 
     <a href="https://drive.google.com/drive/folders/1hwVOs0CVJqdZlTieV_Lt5bICbd3ywzWj?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto">openmodels.info</a>.

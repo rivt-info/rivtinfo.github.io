@@ -1,7 +1,7 @@
-**C.0 | Docs-Files**
+**C.0 | Docs**
 ========================
 
-**[1]** Docs
+**[1]** Docs-Reports-Books
 ------------------------------
 
 A *rivt doc* is the output of a *rivt file* processed by *rivtlib*. Each *rivt
@@ -46,13 +46,11 @@ A *rivt report* is organized using *rivt doc numbers*
 --------------------
 
 
-**[2]** conf.py - configuration file
+**[2]** Configuration file (.py)
 --------------------------------------------------------------------- 
 
- 
-
-The *conf.py* file contains configuration settings for *rivt docs* and reports.
-A typical *conf.py* file looks like this:
+The *conf.py* configuration file contains configuration settings for 
+*rivt docs* and reports. A typical *conf.py* file looks like this:
 
 .. code-block:: python
 
@@ -207,8 +205,11 @@ A typical *conf.py* file looks like this:
 
 ----------------------------------
 
-**[3]** rivtstyle.yaml - pdf configuration
+
+**[3]** Style file (.yaml)
 --------------------------------------------------------------------- 
+
+The *rivtstyle.yaml* file contains formatting information for PDF files.
 
  .. code-block:: yaml
 
