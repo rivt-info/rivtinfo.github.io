@@ -138,6 +138,6 @@ steps. To insert a *rivtbook subdivision* into a *rivt doc or report*:
    paste (merge) them into the *rvsrc* folder of the target report or doc. A 
    single copy and paste command will merge all of the required files.
 
-#. The subdivision from the book is now inserted as a subdivision in the report
-   and where further edits can be made.
+#. The *subdivision* from the book is now inserted as a *subdivision* in the 
+   report, where further edits can be made.
    

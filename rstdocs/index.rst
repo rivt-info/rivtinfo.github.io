@@ -48,7 +48,7 @@ There are four types of rivt and document files:
 For an overview of *rivt* see :ref:`here <rivt-overview>`. To get started see 
 :ref:`here <rivt-start>`. For *rivt* and *AI*  see :ref:`here <rivt-context>`. 
 *rivt* works seamlessly with *AI* tools while maintaining user control of the
-final document.
+final document content and appearance.
 
 An interface for finding public *rivt files* on **GitHub** is 
 :doc:`here<rvE02-ghsearch>`. A collection of open source models and documents, 
