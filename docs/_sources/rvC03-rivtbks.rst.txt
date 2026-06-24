@@ -24,21 +24,21 @@ A typical :term:`rivtbook folder` structure is shown below. The required
 *rivt file* names and prefixes are shown in brackets.  For the
 :term:`report folder` structure see :ref:`see <rivt-report>`.
 
- .. raw:: html
+.. raw:: html
 
     <p style="border-width:2px; border-style:solid; 
     border-color:#49b2c3;padding: 1em;">
 
     <b>Folder Naming</b><br>
     <br>
-    
+
     A rivtbook folder can contain any file or folder but the following structure is
     required for <i>rivtbook</i> processing. <i>rivtbook folders</i> include at 
     least the folders and files shown in brackets[] below. Folders with an 
     underscore contain rivt generated files. Files and folders are organized under
     a <i>rivtbk</i> root folder with the prefix <i>rivtbk-</i> followed by the 
     rivtbook label, e.g. <i>rivtbk-Book-Label</i>. <br> <br>
-    
+
     A new <i>rivtbook folder</i> is typically started by copying and editing a
     similar folder. Several <i>rivt-folder</i> examples can be downloaded at 
     <a href="https://drive.google.com/drive/folders/1hwVOs0CVJqdZlTieV_Lt5bICbd3ywzWj?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto">openmodels.info</a>.
