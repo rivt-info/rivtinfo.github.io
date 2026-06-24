@@ -54,13 +54,14 @@ An interface for finding public *rivt files* on **GitHub** is
 :doc:`here<rvE02-ghsearch>`. A collection of open source models and documents, 
 including *rivt*, is at **Google Drive** `here <https://www.openmodels.info>`__ . 
 
-*rivt* produces clear, organized engineering documents through a simple
-user controlled process. *rivt markup* is about 3 dozen commands and
-tags that format and compile reports using reasonable, customizable defaults. 
-If more format control is required for formal journal articles or books,
-`Quarto <https://quarto.org/>`__  will be a better tool. Further discussion 
-of available scientific and engineering document tools and their strengths, 
-relative to the objectives of *rivt*, is :ref:`here <motivation>`.
+*rivt* produces clear, organized engineering documents through a fast, 
+user controlled process. A typical *doc* takes 1 to 2 seconds to compile. 
+*rivt markup* formats documents using about 3 dozen commands and tags 
+using reasonable, customizable defaults. If more format control is 
+required for formal journal articles or books, `Quarto <https://quarto.org/>`__  
+is a better tool. Further discussion of available scientific and 
+engineering document tools and their strengths, relative to the objectives 
+of *rivt*, is :ref:`here <motivation>`.
 
 .. raw:: html
 
