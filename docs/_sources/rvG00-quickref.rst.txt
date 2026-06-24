@@ -180,7 +180,7 @@ See :ref:`here <report-folders>` for the folder structure.
 
 .. code-block:: bash
 
-    [rivt-]Report-Label/             rivt Folder              
+    [rivt-]Report-Label/             report folder              
         ├── .vscode/                      optional VSCode settings   
         ├── README.txt                    rivt-generated text report                  
         ├── [_rivt-public]/               rivt-generated public files
@@ -310,7 +310,7 @@ following categories:
  
 
 Workspace extension and other settings are stored in the *.vscode* folder and
-should be included as part of a *rivt folder*. Settings that affect the
+should be included as part of a *report folder*. Settings that affect the
 *rivt* editing and execution environment incldue:
 
 - rivt.code-snippets

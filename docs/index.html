@@ -28,8 +28,8 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=a95f357e85573c9b56d5" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=a95f357e85573c9b56d5" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
@@ -38,10 +38,10 @@
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=95fdc9c7" />
   
   <!-- So that users can add custom icons -->
-  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="_static/scripts/fontawesome.js?digest=a95f357e85573c9b56d5"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=a95f357e85573c9b56d5" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=a95f357e85573c9b56d5" />
 
     <script src="_static/jquery.js?v=5d32c60e"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
@@ -53,30 +53,37 @@
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="A.0 | Start" href="rvA00-start.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="dark">
-
+  <body data-default-mode="dark">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
+  
+  
+  
   
   <dialog id="pst-search-dialog">
     
@@ -102,7 +109,7 @@
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
   <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
@@ -213,11 +220,18 @@
       
         <div class="navbar-item">
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button></div>
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
       
     </div>
     
@@ -323,11 +337,18 @@
         
           <div class="navbar-item">
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button></div>
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
         
       </div>
     
@@ -370,41 +391,42 @@ Home
 <a class="dark-light reference internal image-reference" href="_images/rivt-finalb.png"><img alt="rivt logo" class="dark-light" height="106" src="_images/rivt-finalb.png" width="133" />
 </a>
 </figure>
-<hr><p><em>rivt</em> is a lightweight, extensible open source Python tool
-for writing, organizing and sharing engineering documents.
-It takes readable, interactive text files and compiles them into
-formatted <strong>text, HTML or PDF document files</strong>.</p>
-<p>There are four types of rivt files:</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>            | A rivt file is the basic file that produces a publication.
-rivt file   | It is a Python file (.py) that imports the rivtlib Python
-            | package and includes document content and markup.
+<hr><p><em>rivt</em> is a lightweight, extensible open source Python tool for writing,
+organizing and sharing engineering documents. It compiles markup text
+in rivt files into formatted <strong>text, HTML or PDF documents</strong>.</p>
+<p>There are four types of rivt and document files:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>            | A rivt file is the basic input file that produces a publication
+rivt file   | document. It is a Python file (.py) that imports the rivtlib
+            | Python package and includes plain text content and markup.
 
-            | A rivt doc is the basic publication of a rivt file. It
-rivt doc    | is a formatted text, PDF or HTML output file from a rivt
-            | file.
+            | A rivt doc is the published output of a rivt file. A doc
+rivt doc    | is a formatted text, PDF or HTML output file compiled from
+            | a rivt file. The same rivt file produces each type of doc.
 
-            | A rivt report is the published output from a
-rivt report | collection of rivt files organized and compiled into
-            | a single text, PDF or HTML report file.
+            | A rivt report is the published output from a group of
+rivt report | rivt files organized and collated into a single text,
+            | PDF or HTML report file.
 
 
-            | A rivt book is a collection of rivt files with a common
-rivt book   | subject matter and organized for efficient porting
-            | of selected files to docs and reports.
+            | A rivt book is an organized collection of rivt files with
+rivt book   | a common subject matter and organized for efficient selection
+            | and insertion into docs and reports.
 </pre></div>
 </div>
 <p>For an overview of <em>rivt</em> see <a class="reference internal" href="rvB00-overview.html#rivt-overview"><span class="std std-ref">here</span></a>. To get started see
 <a class="reference internal" href="rvA00-start.html#rivt-start"><span class="std std-ref">here</span></a>. For <em>rivt</em> and <em>AI</em>  see <a class="reference internal" href="rvF00-aiintro.html#rivt-context"><span class="std std-ref">here</span></a>.
-<em>rivt</em> works naturally with <em>AI</em> tools.</p>
+<em>rivt</em> works seamlessly with <em>AI</em> tools while maintaining user control of the
+final document.</p>
 <p>An interface for finding public <em>rivt files</em> on <strong>GitHub</strong> is
 <a class="reference internal" href="rvE02-ghsearch.html"><span class="doc">here</span></a>. A collection of open source models and documents,
 including <em>rivt</em>, is at <strong>Google Drive</strong> <a class="reference external" href="https://www.openmodels.info" rel="noreferrer" target="_blank">here</a> .</p>
 <p><em>rivt</em> produces clear, organized engineering documents using reasonable default
 formats that can be customized. <em>rivt markup</em> uses about 3 dozen commands and
-tags to format and assemble documents. If journal articles or books with
-higher production values are needed <a class="reference external" href="https://quarto.org/" rel="noreferrer" target="_blank">Quarto</a> is a
-better tool. Further discussion of avaialble scientific and engineering
-document tools is <a class="reference internal" href="rvB01-motivation.html#motivation"><span class="std std-ref">here</span></a>.</p>
+tags to format and compile documents and reports. For formal journal articles or
+books needing higher production values <a class="reference external" href="https://quarto.org/" rel="noreferrer" target="_blank">Quarto</a>  is a
+better tool. Further discussion of available scientific and engineering
+document tools and their strengths realtive to the objectives of <em>rivt</em>
+is <a class="reference internal" href="rvB01-motivation.html#motivation"><span class="std std-ref">here</span></a>.</p>
 <hr>
 
 <p style="color:rgb(63,177,197);">ver: 1.0.0a12
@@ -449,8 +471,8 @@ and the user API may change.)</p><div class="toctree-wrapper compound">
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=a95f357e85573c9b56d5"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=a95f357e85573c9b56d5"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">

@@ -123,7 +123,7 @@ file* with an added hyphen between "rv" and the docnumber e.g.
 Reports are organized using the folllowing folders and subfolders. 
 
 *rivt-* report-label 
-    Top level rivt folder containing rivt report and public files.
+    Top level report folder containing rivt report and public files.
 
 *_rivt-public* 
     Includes *public rivt files* designated byt the author written by 
@@ -158,9 +158,12 @@ Reports are organized using the folllowing folders and subfolders.
 
 .. _rivt-folders:
 
-**[3]**  Folder Structure
+**[3]**  Report Folder Structure
 -------------------------------------------------------
 
+A typical :term:`report folder` structure is shown below. The required 
+*rivt file* names and prefixes are shown in brackets.  For the
+:term:`rivtbook folder` structure see :ref:`see <rivt-books>`.
 
  .. raw:: html
 
@@ -170,28 +173,27 @@ Reports are organized using the folllowing folders and subfolders.
     <b>Folder Naming</b><br>
     <br>
     
-    A rivt folder can contain any file or folder but the following structure is
-    required for <i>doc</i> processing. <i>rivt folders</i> include at least
+    A report folder can contain any file or folder but the following structure is
+    required for <i>doc</i> processing. <i>report folders</i> include at least
     the folders and files shown in brackets[] below. Folders with an underscore
-    prefix contain rivt generated files. Files and folders are organized under
+    contain rivt generated files. Files and folders are organized under
     a rivt root folder with the prefix <i>rivt-</i> followed by the report
     label, e.g. <i>rivt-Report-Label</i>. <br> <br>
     
-    A new <i>rivt folder</i> is typically started by copying and editing a
+    A new <i>report folder</i> is typically started by copying and editing a
     similar folder. Several <i>rivt-folders</i> can be downloaded at 
     <a href="https://drive.google.com/drive/folders/1hwVOs0CVJqdZlTieV_Lt5bICbd3ywzWj?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto">openmodels.info</a>.
     <br> <br>
 
-A typical :term:`rivt folder` structure is shown below. The required *rivt file* 
-names and prefixes are shown in brackets. 
+
 
 .. _report-folders:
 
-**Top Level Folders** 
+**rivt Report Top Level Folders** 
 
 .. code-block:: bash
 
-    [rivt-]Report-Label/             rivt Folder
+    [rivt-]Report-Label/             report folder
         ├── .vscode/                    optional VSCode settings   
         ├── README.txt                  rivt-generated report                  
         ├── [_rivt-public]/                 public subset of rivt files
@@ -212,11 +214,11 @@ names and prefixes are shown in brackets.
             ├── [rv201-]filename3.py        rivt file          
              ...    
 
-**Expanded Folders**
+**rivt Report Expanded Folders**
 
 .. code-block:: bash
 
-    [rivt-]Report-Label/             rivt Folder              
+    [rivt-]Report-Label/             report folder              
         ├── .vscode/                      optional VSCode settings   
         ├── README.txt                    rivt-generated text report                  
         ├── [_rivt-public]/               rivt-generated public files
@@ -234,13 +236,13 @@ names and prefixes are shown in brackets.
             ├── [rvsrc]/                      author provided files and folders        
                 ├── [downloads]/                    files to download      
                     └── conc-vals.txt 
-                ├── [page]/                          page layout images              
+                ├── [img]/                          page layout images              
                     ├── favicon.png    
                     ├── covlogo1.png    
                     └── runlogo1.png                   
-                ├── data/                            tables    
+                ├── [data]/                         tables    
                     └── steel-vals.csv                                                 
-                ├── tools/                           OS shell commands               
+                ├── tools/                          OS shell commands               
                     └── opensees.sh                        
                 ├── fig1.png
                 └── fig2.jpg                  

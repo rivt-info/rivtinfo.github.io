@@ -7,14 +7,19 @@
 --------------------------------------------------------------------- 
 
 
-*rivt* is an open source Python project that imports 
-the `rivtlib Python package <https://pypi.org/project/rivtlib/>`__
-and dependencies (see :ref:`Project-requirements`) and publishes 
+*rivt* is an open source Python project built around the
+`rivtlib Python package <https://pypi.org/project/rivtlib/>`__
+and `dependencies :ref:Project-requirements`.  It publishes 
 a formatted :term:`rivt doc` as a text, PDF or HTML file.
-from a :term:`rivt file`. A *rivt file* is a Python file (.py) that imports the
-:term:`rivtlib` Python package and includes rivt API functions that include 
-:term:`rivt markup`. A collection of *rivt docs* may be assembled into a 
-:term:`rivt report`.
+from a :term:`rivt file` - a Python file (.py) that imports the :term:`rivtlib` 
+Python package. *rivtlib* includes rivt API functions that implement 
+:term:`rivt markup`. 
+
+Groups of *rivt files* may be compiled and linked into a single 
+:term:`rivt report`. Collections of *rivt files* with related subject matter 
+may be grouped together as a :ref:`rivtbook <rivt-books>`. *rivtbooks* are 
+organized for direct *rivt file* selection and insertion into 
+*rivt docs* and *reports*
 
 *rivt files* are generally edited and run in an IDE. The lightweight 
 `Pyzo <https://pyzo.org/>`__ IDE is installed with rivtlib. The 

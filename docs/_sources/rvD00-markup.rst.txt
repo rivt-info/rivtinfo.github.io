@@ -288,12 +288,12 @@ using the following format:
     <b>Folder Names</b><br>
     <br>
     
-    A rivt folder can contain any set of files and folders but the following
+    A report folder can contain any set of files and folders but the following
     structure is required for <i>doc</i> processing. Files and folders are
     organized under a root folder with the prefix <i>rivt-</i> e.g.
     <i>rivt-Report-Label</i>. <br> <br>
     
-    <i>rivt folders</i> (root folders) include at least the <i>rivt files</i> 
+    <i>report folders</i> (root folders) include at least the <i>rivt files</i> 
     and the five required subfolders. Required folders and prefixes are 
     shown in brackets. Folders preceded by an underscore contain rivt outputs. 
     Folders requiring author input are capitalized. <br> <br>

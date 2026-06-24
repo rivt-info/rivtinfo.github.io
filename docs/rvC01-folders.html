@@ -28,8 +28,8 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=a95f357e85573c9b56d5" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=a95f357e85573c9b56d5" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
@@ -38,10 +38,10 @@
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=95fdc9c7" />
   
   <!-- So that users can add custom icons -->
-  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="_static/scripts/fontawesome.js?digest=a95f357e85573c9b56d5"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=a95f357e85573c9b56d5" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=a95f357e85573c9b56d5" />
 
     <script src="_static/jquery.js?v=5d32c60e"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
@@ -53,10 +53,11 @@
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'rvC01-folders';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="C.2 | Reports" href="rvC02-reports.html" />
@@ -64,20 +65,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="dark">
-
+  <body data-default-mode="dark">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
+  
+  
+  
   
   <dialog id="pst-search-dialog">
     
@@ -103,7 +110,7 @@
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
   <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
@@ -214,11 +221,18 @@
       
         <div class="navbar-item">
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button></div>
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
       
     </div>
     
@@ -326,11 +340,18 @@
         
           <div class="navbar-item">
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button></div>
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
         
       </div>
     
@@ -343,7 +364,7 @@
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>C.1 | Files - Folders</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC02-reports.html"><strong>C.2 | Reports</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC03-rivtbks.html"><strong>C.3 | rivt books</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC03-rivtbks.html"><strong>C.3 | rivtbooks</strong></a></li>
 </ul>
 </div>
 </nav></div>
@@ -525,7 +546,7 @@ file</em> with an added hyphen between “rv” and the docnumber e.g.</p>
 <h2><strong>[2]</strong>  Folder Names<a class="headerlink" href="#folder-names" title="Link to this heading">#</a></h2>
 <p>Reports are organized using the folllowing folders and subfolders.</p>
 <dl class="simple">
-<dt><em>rivt-</em> report-label</dt><dd><p>Top level rivt folder containing rivt report and public files.</p>
+<dt><em>rivt-</em> report-label</dt><dd><p>Top level report folder containing rivt report and public files.</p>
 </dd>
 <dt><em>_rivt-public</em></dt><dd><p>Includes <em>public rivt files</em> designated byt the author written by
 <em>rivtlib</em> for public sharing. The prefix <em>rvAnn-</em> is changed to
@@ -550,8 +571,11 @@ Subfolders include <em>docs</em> (HTML), <em>pdfdocs</em> (PDF) and <em>txtdocs<
 </dl>
 <hr class="docutils" />
 </section>
-<section id="folder-structure">
-<span id="rivt-folders"></span><h2><strong>[3]</strong>  Folder Structure<a class="headerlink" href="#folder-structure" title="Link to this heading">#</a></h2>
+<section id="report-folder-structure">
+<span id="rivt-folders"></span><h2><strong>[3]</strong>  Report Folder Structure<a class="headerlink" href="#report-folder-structure" title="Link to this heading">#</a></h2>
+<p>A typical <a class="reference internal" href="rvG01-terms.html#term-report-folder"><span class="xref std std-term">report folder</span></a> structure is shown below. The required
+<em>rivt file</em> names and prefixes are shown in brackets.  For the
+<a class="reference internal" href="rvG01-terms.html#term-rivtbook-folder"><span class="xref std std-term">rivtbook folder</span></a> structure see <a class="reference internal" href="rvC03-rivtbks.html#rivt-books"><span class="std std-ref">see</span></a>.</p>
 <blockquote>
 <div><p style="border-width:2px; border-style:solid;
 border-color:#49b2c3;padding: 1em;">
@@ -559,21 +583,19 @@ border-color:#49b2c3;padding: 1em;">
 <b>Folder Naming</b><br>
 <br>
 
-A rivt folder can contain any file or folder but the following structure is
-required for <i>doc</i> processing. <i>rivt folders</i> include at least
+A report folder can contain any file or folder but the following structure is
+required for <i>doc</i> processing. <i>report folders</i> include at least
 the folders and files shown in brackets[] below. Folders with an underscore
-prefix contain rivt generated files. Files and folders are organized under
+contain rivt generated files. Files and folders are organized under
 a rivt root folder with the prefix <i>rivt-</i> followed by the report
 label, e.g. <i>rivt-Report-Label</i>. <br> <br>
 
-A new <i>rivt folder</i> is typically started by copying and editing a
+A new <i>report folder</i> is typically started by copying and editing a
 similar folder. Several <i>rivt-folders</i> can be downloaded at
 <a href="https://drive.google.com/drive/folders/1hwVOs0CVJqdZlTieV_Lt5bICbd3ywzWj?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto">openmodels.info</a>.
 <br> <br></div></blockquote>
-<p>A typical <a class="reference internal" href="rvG01-terms.html#term-rivt-folder"><span class="xref std std-term">rivt folder</span></a> structure is shown below. The required <em>rivt file</em>
-names and prefixes are shown in brackets.</p>
-<p id="report-folders"><strong>Top Level Folders</strong></p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt-<span class="o">]</span>Report-Label/<span class="w">             </span>rivt<span class="w"> </span>Folder
+<p id="report-folders"><strong>rivt Report Top Level Folders</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt-<span class="o">]</span>Report-Label/<span class="w">             </span>report<span class="w"> </span>folder
 <span class="w">    </span>├──<span class="w"> </span>.vscode/<span class="w">                    </span>optional<span class="w"> </span>VSCode<span class="w"> </span>settings
 <span class="w">    </span>├──<span class="w"> </span>README.txt<span class="w">                  </span>rivt-generated<span class="w"> </span>report
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>_rivt-public<span class="o">]</span>/<span class="w">                 </span>public<span class="w"> </span>subset<span class="w"> </span>of<span class="w"> </span>rivt<span class="w"> </span>files
@@ -595,8 +617,8 @@ names and prefixes are shown in brackets.</p>
 <span class="w">         </span>...
 </pre></div>
 </div>
-<p><strong>Expanded Folders</strong></p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt-<span class="o">]</span>Report-Label/<span class="w">             </span>rivt<span class="w"> </span>Folder
+<p><strong>rivt Report Expanded Folders</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt-<span class="o">]</span>Report-Label/<span class="w">             </span>report<span class="w"> </span>folder
 <span class="w">    </span>├──<span class="w"> </span>.vscode/<span class="w">                      </span>optional<span class="w"> </span>VSCode<span class="w"> </span>settings
 <span class="w">    </span>├──<span class="w"> </span>README.txt<span class="w">                    </span>rivt-generated<span class="w"> </span>text<span class="w"> </span>report
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>_rivt-public<span class="o">]</span>/<span class="w">               </span>rivt-generated<span class="w"> </span>public<span class="w"> </span>files
@@ -614,13 +636,13 @@ names and prefixes are shown in brackets.</p>
 <span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rvsrc<span class="o">]</span>/<span class="w">                      </span>author<span class="w"> </span>provided<span class="w"> </span>files<span class="w"> </span>and<span class="w"> </span>folders
 <span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>downloads<span class="o">]</span>/<span class="w">                    </span>files<span class="w"> </span>to<span class="w"> </span>download
 <span class="w">                </span>└──<span class="w"> </span>conc-vals.txt
-<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>page<span class="o">]</span>/<span class="w">                          </span>page<span class="w"> </span>layout<span class="w"> </span>images
+<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>img<span class="o">]</span>/<span class="w">                          </span>page<span class="w"> </span>layout<span class="w"> </span>images
 <span class="w">                </span>├──<span class="w"> </span>favicon.png
 <span class="w">                </span>├──<span class="w"> </span>covlogo1.png
 <span class="w">                </span>└──<span class="w"> </span>runlogo1.png
-<span class="w">            </span>├──<span class="w"> </span>data/<span class="w">                            </span>tables
+<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>data<span class="o">]</span>/<span class="w">                         </span>tables
 <span class="w">                </span>└──<span class="w"> </span>steel-vals.csv
-<span class="w">            </span>├──<span class="w"> </span>tools/<span class="w">                           </span>OS<span class="w"> </span>shell<span class="w"> </span>commands
+<span class="w">            </span>├──<span class="w"> </span>tools/<span class="w">                          </span>OS<span class="w"> </span>shell<span class="w"> </span>commands
 <span class="w">                </span>└──<span class="w"> </span>opensees.sh
 <span class="w">            </span>├──<span class="w"> </span>fig1.png
 <span class="w">            </span>└──<span class="w"> </span>fig2.jpg
@@ -715,11 +737,11 @@ names and prefixes are shown in brackets.</p>
     class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Sections
   </div>
-  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#file-types"><strong>[1]</strong> File Types</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#folder-names"><strong>[2]</strong>  Folder Names</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#folder-structure"><strong>[3]</strong>  Folder Structure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#report-folder-structure"><strong>[3]</strong>  Report Folder Structure</a></li>
 </ul>
   </nav></div>
 
@@ -736,8 +758,8 @@ names and prefixes are shown in brackets.</p>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=a95f357e85573c9b56d5"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=a95f357e85573c9b56d5"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">

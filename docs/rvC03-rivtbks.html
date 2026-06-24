@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
-    <title>C.3 | rivt books &#8212; rivt</title>
+    <title>C.3 | rivtbooks &#8212; rivt</title>
   
   
   
@@ -28,8 +28,8 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=a95f357e85573c9b56d5" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=a95f357e85573c9b56d5" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
@@ -38,10 +38,10 @@
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=95fdc9c7" />
   
   <!-- So that users can add custom icons -->
-  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="_static/scripts/fontawesome.js?digest=a95f357e85573c9b56d5"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=a95f357e85573c9b56d5" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=a95f357e85573c9b56d5" />
 
     <script src="_static/jquery.js?v=5d32c60e"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
@@ -53,10 +53,11 @@
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'rvC03-rivtbks';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="D.0 | rivt Markup" href="rvD00-markup.html" />
@@ -64,20 +65,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="dark">
-
+  <body data-default-mode="dark">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
+  
+  
+  
   
   <dialog id="pst-search-dialog">
     
@@ -103,7 +110,7 @@
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
   <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
@@ -214,11 +221,18 @@
       
         <div class="navbar-item">
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button></div>
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
       
     </div>
     
@@ -326,11 +340,18 @@
         
           <div class="navbar-item">
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button></div>
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
         
       </div>
     
@@ -343,7 +364,7 @@
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="rvC01-folders.html"><strong>C.1 | Files - Folders</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC02-reports.html"><strong>C.2 | Reports</strong></a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>C.3 | rivt books</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>C.3 | rivtbooks</strong></a></li>
 </ul>
 </div>
 </nav></div>
@@ -387,7 +408,7 @@
     
     <li class="breadcrumb-item"><a href="rvC00-documents.html" class="nav-link"><strong>C.0 | Docs-Files</strong></a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>C.3 | rivt books</strong></span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>C.3 | rivtbooks</strong></span></li>
   </ul>
 </nav>
 </div>
@@ -404,71 +425,126 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="c-3-rivt-books">
-<h1><strong>C.3 | rivt books</strong><a class="headerlink" href="#c-3-rivt-books" title="Link to this heading">#</a></h1>
-<section id="rivt-report-py">
-<span id="rivt-book"></span><h2><strong>[2]</strong> rivt-report.py<a class="headerlink" href="#rivt-report-py" title="Link to this heading">#</a></h2>
-<p>The Python <em>report script</em> includes settings that specify assembly parameters
-and override defaults. These include:</p>
-<ul class="simple">
-<li><p><em>Docs</em> to be included in the report</p></li>
-<li><p>Division names</p></li>
-<li><p>recompiling <em>docs</em></p></li>
-<li><p>report cover page and title</p></li>
-</ul>
-<p>provides the option to either regenerate all <em>docs</em> or to
-assemble the report from previously generated <em>docs</em>.  Most aspects of
-the <em>report</em> appearance are determined at when generating <em>docs</em>.</p>
-<p>An example rivt-report.py script is shown below.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#! python</span>
-<span class="sd">&quot;&quot;&quot;generate rivt report</span>
+  <section id="c-3-rivtbooks">
+<h1><strong>C.3 | rivtbooks</strong><a class="headerlink" href="#c-3-rivtbooks" title="Link to this heading">#</a></h1>
+<section id="rivtbooks">
+<span id="rivt-books"></span><h2><strong>[1]</strong> rivtbooks<a class="headerlink" href="#rivtbooks" title="Link to this heading">#</a></h2>
+<p>A <a class="reference internal" href="rvG01-terms.html#term-rivtbook"><span class="xref std std-term">rivtbook</span></a> collects <em>rivt files</em> sharing a common theme under a folder
+structure that allows direct copy and paste into <em>rivt docs</em> and <em>reports</em>. A
+<em>rivtbook</em> may be printed as a PDF and README.txt file for review and
+exploration, but it’s primary purpose is as an organized collection of files
+that can be directly selected and copied into <em>rivt docs</em> and <em>reports</em>.</p>
+<p>A <em>rivtbook</em> is published as a PDF using the <em>rivtbook-report.py</em> script.</p>
+</section>
+<section id="rivtbook-folder">
+<h2><strong>[2]</strong> rivtbook Folder<a class="headerlink" href="#rivtbook-folder" title="Link to this heading">#</a></h2>
+<p>A typical <a class="reference internal" href="rvG01-terms.html#term-rivtbook-folder"><span class="xref std std-term">rivtbook folder</span></a> structure is shown below. The required
+<em>rivt file</em> names and prefixes are shown in brackets.  For the
+<a class="reference internal" href="rvG01-terms.html#term-report-folder"><span class="xref std std-term">report folder</span></a> structure see <a class="reference internal" href="rvC02-reports.html#rivt-report"><span class="std std-ref">see</span></a>.</p>
+<blockquote>
+<div><p style="border-width:2px; border-style:solid;
+border-color:#49b2c3;padding: 1em;">
 
-<span class="sd">Run this Python script in the rivt-report folder to write reports to the</span>
-<span class="sd">_published folder. Copy and rename this file to save custom report settings</span>
-<span class="sd">(e.g. rivt-folder-new.py).</span>
+<b>Folder Naming</b><br>
+<br>
 
-<span class="sd">The script does not regenerate individual PDF docs unless specified in the</span>
-<span class="sd">settings. Regenerating individual PDF docs adds execution time. HTML and text</span>
-<span class="sd">docs are always regenerated. See https://www.rivt.info for more details.</span>
-<span class="sd">&quot;&quot;&quot;</span>
+A rivtbook folder can contain any file or folder but the following structure is
+required for <i>rivtbook</i> processing. <i>rivtbook folders</i> include at
+least the folders and files shown in brackets[] below. Folders with an
+underscore contain rivt generated files. Files and folders are organized under
+a <i>rivtbk</i> root folder with the prefix <i>rivtbk-</i> followed by the
+rivtbook label, e.g. <i>rivtbk-Book-Label</i>. <br> <br>
 
-<span class="c1"># ========= Modify report settings between the double lines ==============</span>
-<span class="n">iniS</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">[settings]</span>
-<span class="s2">;----- file name for report including extension (pdf, html, txt)</span>
-<span class="s2">rept_filename = rivt-treehouse-report.txt</span>
-<span class="s2">;----- comma separated list of excluded doc numbers eg. rv102, rv204</span>
-<span class="s2">exclude = --</span>
-<span class="s2">;-----  update settings and configuration files from rivt</span>
-<span class="s2">rivt_cfg = true</span>
-<span class="s2">;----- regenerate pdf doc files</span>
-<span class="s2">regen_pdf = false</span>
-
-<span class="s2">[format]</span>
-<span class="s2">title = Treehouse Design</span>
-<span class="s2">subtitle =rivt report</span>
-<span class="s2">client = Example</span>
-<span class="s2">project_ref = Proj. 0001</span>
-<span class="s2">authors = R Holland</span>
-<span class="s2">copyright = StL</span>
-<span class="s2">version = 1.0.0a12</span>
-<span class="s2">;----- logo files are stored in rvsrc/page folder, size is % page width</span>
-<span class="s2">coverlogo = tree1.png</span>
-<span class="s2">coverlogo_size = 50</span>
-<span class="s2">;----- header and footer logos and labels</span>
-<span class="s2">running_logo = rivt02.png</span>
-<span class="s2">running_label = rivt</span>
-<span class="s2">;----- underline links in PDF - true or false</span>
-<span class="s2">pdf_link = true</span>
-<span class="s2">;----- page size letter, legal, A4 - margins top, right, bottom and left</span>
-<span class="s2">pdf_pagesize = letter</span>
-<span class="s2">pdf_margins = 1in, 1in, 1in, 1in</span>
-<span class="s2">&quot;&quot;&quot;</span>
-<span class="c1"># ============================================================================</span>
-<span class="c1"># the following line is required after settings</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvreport</span>
+A new <i>rivtbook folder</i> is typically started by copying and editing a
+similar folder. Several <i>rivt-folder</i> examples can be downloaded at
+<a href="https://drive.google.com/drive/folders/1hwVOs0CVJqdZlTieV_Lt5bICbd3ywzWj?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto">openmodels.info</a>.
+<br> <br></div></blockquote>
+<p id="rivtbook-folders"><strong>rivtbook Top Level Folders</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivtbk-<span class="o">]</span>Book-Label/<span class="w">            </span>rivtbook<span class="w"> </span>report<span class="w"> </span>folder
+<span class="w">    </span>├──<span class="w"> </span>.vscode/<span class="w">                    </span>optional<span class="w"> </span>VSCode<span class="w"> </span>settings
+<span class="w">    </span>├──<span class="w"> </span>README.txt<span class="w">                  </span>rivt-generated<span class="w"> </span>book<span class="w"> </span>as<span class="w"> </span>text
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>_rivtbk-public<span class="o">]</span>/<span class="w">           </span>public<span class="w"> </span>subset<span class="w"> </span>of<span class="w"> </span>rivt<span class="w"> </span>files
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>_rstdocs<span class="o">]</span>/<span class="w">                 </span>restructured<span class="w"> </span>text<span class="w"> </span>files
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>_pdfdocs<span class="o">]</span>/<span class="w">                 </span>PDF<span class="w"> </span>docs<span class="w"> </span>and<span class="w"> </span>report
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rvbk101-<span class="o">]</span>folder<span class="w"> </span>name<span class="w">       </span>rivtbook<span class="w"> </span>folder
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rvbk102-<span class="o">]</span>folder<span class="w"> </span>name<span class="w">       </span>rivtbook<span class="w"> </span>folder
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rvbk201-<span class="o">]</span>folder<span class="w"> </span>name<span class="w">       </span>rivtbook<span class="w"> </span>folder
+<span class="w">         </span>...
 </pre></div>
 </div>
+<p><strong>rivtbook Expanded Folders</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivtbk-<span class="o">]</span>Book-Label/<span class="w">             </span>rivtbook<span class="w"> </span>report<span class="w"> </span>folder
+<span class="w">    </span>├──<span class="w"> </span>.vscode/<span class="w">                      </span>optional<span class="w"> </span>VSCode<span class="w"> </span>settings
+<span class="w">    </span>├──<span class="w"> </span>README.txt<span class="w">                    </span>rivt-generated<span class="w"> </span>book<span class="w"> </span>as<span class="w"> </span>text
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rivtbook-report<span class="o">]</span>-1.py<span class="w">        </span>rivtbook<span class="w"> </span>generating<span class="w"> </span>script
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>_rivtbk-public<span class="o">]</span>/<span class="w">             </span>public<span class="w"> </span>subset<span class="w"> </span>of<span class="w"> </span>rivt<span class="w"> </span>files
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rvbk-101-<span class="o">]</span>folder<span class="w"> </span>name<span class="w">    </span>rivtbook<span class="w"> </span>folder
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rvbk-102-<span class="o">]</span>folder<span class="w"> </span>name<span class="w">    </span>rivtbook<span class="w"> </span>folder
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rvbk-201-<span class="o">]</span>folder<span class="w"> </span>name<span class="w">    </span>rivtbook<span class="w"> </span>folder
+<span class="w">            </span>...
+<span class="w">    </span>└──<span class="w"> </span><span class="o">[</span>_rstdocs<span class="o">]</span>/<span class="w">                   </span>rivt-generated<span class="w"> </span>rst<span class="w"> </span>files
+<span class="w">        </span>├──<span class="w"> </span>_downloads/
+<span class="w">        </span>├──<span class="w"> </span>_static/
+<span class="w">        </span>├──<span class="w"> </span>rv101-filename1.rst
+<span class="w">        </span>├──<span class="w"> </span>rv102-filename2.rst
+<span class="w">        </span>├──<span class="w"> </span>rv201-filename3.rst
+<span class="w">            </span>...
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>_pdfdocs<span class="o">]</span>/<span class="w">                   </span>pdf<span class="w"> </span>docs<span class="w"> </span>and<span class="w"> </span>rivtbook<span class="w"> </span>report
+<span class="w">        </span>├──<span class="w"> </span>pdf<span class="w"> </span>auxiliary<span class="w"> </span>folders
+<span class="w">        </span>├──<span class="w"> </span>report-title.pdf
+<span class="w">        </span>├──<span class="w"> </span>rv101-filename1.pdf
+<span class="w">        </span>├──<span class="w"> </span>rv102-filename1.pdf
+<span class="w">        </span>├──<span class="w"> </span>rv201-filename3.pdf
+<span class="w">            </span>...
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rvbk101-<span class="o">]</span>folder<span class="w"> </span>name<span class="w">         </span>rivtbook<span class="w"> </span>folder
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename1.py<span class="w">          </span>rivt<span class="w"> </span>file
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rvsrc<span class="o">]</span>/<span class="w">                      </span>author<span class="w"> </span>provided<span class="w"> </span>files<span class="w"> </span>and<span class="w"> </span>folders
+<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>downloads<span class="o">]</span>/<span class="w">                    </span>files<span class="w"> </span>to<span class="w"> </span>download
+<span class="w">                </span>└──<span class="w"> </span>conc-vals.txt
+<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>img<span class="o">]</span>/<span class="w">                          </span>page<span class="w"> </span>layout<span class="w"> </span>images
+<span class="w">                </span>├──<span class="w"> </span>favicon.png
+<span class="w">                </span>├──<span class="w"> </span>covlogo1.png
+<span class="w">                </span>├──<span class="w"> </span>runlogo1.png
+<span class="w">                </span>└──<span class="w"> </span>fig1.png
+<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>data<span class="o">]</span>/<span class="w">                          </span>tables
+<span class="w">                </span>└──<span class="w"> </span>steel-vals.csv
+<span class="w">            </span>├──<span class="w"> </span>tools/<span class="w">                           </span>OS<span class="w"> </span>shell<span class="w"> </span>commands
+<span class="w">                </span>└──<span class="w"> </span>opensees.sh
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv_stor<span class="o">]</span>/<span class="w">                    </span>rivt-generated<span class="w"> </span><span class="nb">source</span><span class="w"> </span>files
+<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>logs<span class="o">]</span>/<span class="w">                          </span>log<span class="w"> </span>files
+<span class="w">                </span>├──<span class="w"> </span>rv101-log.txt
+<span class="w">                </span>└──<span class="w"> </span>rv102-log.txt
+<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>sect<span class="o">]</span>/<span class="w">                          </span>sections<span class="w"> </span>not<span class="w"> </span>printed
+<span class="w">                </span>├──<span class="w"> </span>rv202-5d.txt
+<span class="w">                </span>├──<span class="w"> </span>rv103-4t.txt
+<span class="w">                </span>└──<span class="w"> </span>rv301-2r.txt
+<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>temp<span class="o">]</span>/<span class="w">                          </span>temp<span class="w"> </span>files
+<span class="w">                </span>└──<span class="w"> </span>rv101-label3.tex
+<span class="w">            </span>├──<span class="w"> </span>output.dat
+<span class="w">            </span>├──<span class="w"> </span>v101-2.csv
+<span class="w">            </span>└──<span class="w"> </span>v102-3.csv
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rvbk102-<span class="o">]</span>folder<span class="w"> </span>name<span class="w">         </span>rivtbook<span class="w"> </span>subdivision<span class="w"> </span>folder
+<span class="w">            </span>...
+<span class="w">    </span>└───<span class="w"> </span><span class="o">[</span>rvbk201-<span class="o">]</span>folder<span class="w"> </span>name<span class="w">        </span>rivtbook<span class="w"> </span>subdivision<span class="w"> </span>folder
+<span class="w">            </span>...
+</pre></div>
+</div>
+</section>
+<section id="use-of-rivtbooks">
+<h2><strong>[3]</strong> Use of rivtbooks<a class="headerlink" href="#use-of-rivtbooks" title="Link to this heading">#</a></h2>
+<p><em>rivtbooks</em> are organized to simplify selection of <em>rivt files</em> for
+inclusion in <em>rivt docs</em> and <em>reports</em>. Typical use involves the following
+steps. To insert a rivtbook subdivision into a rivt doc or report:</p>
+<ol class="arabic simple">
+<li><p>Copy the <em>rivt file</em> within a <em>rivtbook subdivision folder</em> to the
+<em>rivt-report</em> folder of the target report or doc and edit the
+<em>rivt doc number</em>.</p></li>
+<li><p>Within the same <em>subdivision folder</em> copy all resource files and folders and
+paste (merge) them into the <em>rvsrc</em> folder of the target report or doc. A
+single copy and paste command will merge all of the required files.</p></li>
+<li><p>The subdivision from the book is now inserted as a subdivision in the report
+and where further edits can be made.</p></li>
+</ol>
 </section>
 </section>
 
@@ -517,9 +593,11 @@ the <em>report</em> appearance are determined at when generating <em>docs</em>.<
     class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Sections
   </div>
-  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-report-py"><strong>[2]</strong> rivt-report.py</a></li>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivtbooks"><strong>[1]</strong> rivtbooks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivtbook-folder"><strong>[2]</strong> rivtbook Folder</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-of-rivtbooks"><strong>[3]</strong> Use of rivtbooks</a></li>
 </ul>
   </nav></div>
 
@@ -536,8 +614,8 @@ the <em>report</em> appearance are determined at when generating <em>docs</em>.<
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=a95f357e85573c9b56d5"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=a95f357e85573c9b56d5"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">

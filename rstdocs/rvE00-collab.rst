@@ -32,7 +32,7 @@ landing page and can be searched across all *GitHub* using a
 .. code-block:: bash
 
 
-    [rivt-]folder-label/          rivt Folder
+    [rivt-]folder-label/          report folder
         ├── .vscode/                    optional VSCode settings   
         ├── README.txt                  rivt-generated report                  
         ├── [_rivt-public]/                 public subset of rivt files

@@ -73,14 +73,6 @@
     *rvDss-filename.py* where D is a capital alphanumeric division number 
     and ss is the subdivision number.
 
-  rivt folder
-    A folder containing a rivt file and all of its resources in the same folder. 
-    Generally used 
-
-  rivt report folder  
-    A folder containing multiple rivt files to be organized in a report 
-    and resources organized in subfolders
-
   rivt framework 
   framework
     The recommended *rivt-framework* includes the
@@ -124,8 +116,7 @@
 
   report folder
   report folders
-    The folder structure for producing a report is described 
-    :ref:`here. <rivt-folders>`
+    The folder structure for producing a report. See :ref:`here. <rivt-folders>`
 
   section parameter 
   section parameters 
@@ -134,8 +125,17 @@
   rivt log file
     *rivt file* execution log written to the *log folder* as *rvDss-log.txt*.
     
+  rivtbook
+  rivtbooks
+    A collection of *rivt files* organized for selection and insertion into
+    *rivt docs* and *reports*.  
+  
+  rivtbook folder
+  rivtbook folders
+    The folder structure for a rivtbook. See :ref:`here. <rivt-books>`
+
   report script
-    A Python script that assembles *docs* into a *report*.
+    A Python script that assembles *rivt files* into *docs* and a *report*.
 
   rvspace
     rivt alias name for the global rivt file namespace. Other user namespaces may be 
