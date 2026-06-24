@@ -35,7 +35,7 @@ below summarizes and compares limitations between different programs
 **Software Comparison**
 
 ============= ============ ========= ======== ========== =========== ========== ========= ============= ===========
-Program       Report [1]_  Ver [2]_  Txt [3]_  Priv [4]_ Units [5]_  Comp [6]_  CP [7]_   Collab [8]_   Publ [9]_
+Program       Report [1]_  Ver [2]_  Txt [3]_  Priv [4]_ Units [5]_  Comp [6]_  C-P [7]_   Collab [8]_    Pub [9]_
 ============= ============ ========= ======== ========== =========== ========== ========= ============= ===========
 *Matlab*         no           no         no     no        no           no         no        no            yes
 *Mathcad*        no           no         no     no        no           no         no        no            no
@@ -52,12 +52,12 @@ Quarto           yes          yes        no     no        no           no       
     .. [1] Report generation
     .. [2] Native version control
     .. [3] Plain text input and output files
-    .. [4] Syntax control of private-public input distinction
+    .. [4] Syntax control of private/public sections
     .. [5] Dual units
     .. [6] Forward and backward compatibility
     .. [7] Cross-platform
     .. [8] Collaboration support
-    .. [9] PDF and HTML publication from same input file  
+    .. [9] PDF and HTML documents from the same input file  
 
 
 ---------------------------------------------------
