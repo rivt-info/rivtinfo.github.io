@@ -6,34 +6,35 @@
 **[1]** Getting Started 
 ------------------------------------------------------------------------------- 
 
-This section covers installation of *rivt* and *rivt doc* examples.
-Open source software, including *rivt*, is built with multiple open
-source components. Open source software installation methods are based on this.
+This section covers installation of *rivt* and *rivt doc* examples. As open 
+source software you are free to download and modify the program as needed (see 
+:ref:`FAQ <Licenses>`). The open source software installation process is built 
+around the collection and management of the multiple open source components. This 
+section covers three ways to install *rivt*.
 
-A *rivt file* is a Python file (.py) that imports the 
-`rivtlib <https://pypi.org/project/rivtlib/>`__ Python package and includes 
-:doc:`rivt markup <rvD00-markup>`. For users unfamiliar with Python and open 
-source software the simplest way to get started is to download Windows portable 
-zip file (800 MB). It includes all the neccessary components and examples to 
-run and explore *rivt*. For further details see :ref:`here <rivt-portable>`.
+#. For users unfamiliar with Python and open source software the simplest way to
+   get started is to download the Windows portable zip file (~800 MB). It includes
+   everything necessary to run and explore *rivt*. For further details see 
+   :ref:`here <rivt-portable>`.
 
-For users with a `GitHub <https://github.com>`__ account *rivt* can be forked
-and run in a browser using `Codespaces <https://github.com/features/codespaces>`__.
-Further details are :ref:`here <rivt-codespace>`.
+#. For users with a `GitHub <https://github.com>`__ account *rivt* can be forked
+   and run in a browser using `Codespaces <https://github.com/features/codespaces>`__.
+   Further details are :ref:`here <rivt-codespace>`.
 
-For users familiar with Python, *rivt* may be installed at the OS level or in
-an isolated environment using *uv*. Further details are :ref:`here <rivt-sys>`.
+#. For users familiar with Python, *rivt* may be installed at the OS level or in
+   an isolated environment using *uv*. Further details are :ref:`here <rivt-sys>`.
 
 **[2]** rivt IDE
 ------------------------------------------------------------------------------- 
 
-*rivt* can be run from the command line but efficient editing and calculating
-with *rivt files* is typically done in an :term:`IDE`. Any IDE can be used but 
-*VSCode* support is documented. A typical **VSCode IDE** layout is shown below.
+*rivt* may be edited in a simple text processor and run from the command line 
+but efficient editing and compiling is typically done in an :term:`IDE`. Any IDE 
+may be used but *VSCode* support is documented. A typical **VSCode IDE** layout 
+editing a *rivt file* is shown below.
 
 
 
-.. figure::  _static/img/vscode1.png
+.. figure::  _static/img/vscode3.png
     :class: dark-light
     :width: 95%
     :align: center
@@ -41,13 +42,16 @@ with *rivt files* is typically done in an :term:`IDE`. Any IDE can be used but
 
     *rivt* files and docs in **VSCode** (click on image to enlarge)
 
-The *rivt file* is in the center editing panel[2], the *doc* outputs are in the
-right panel[3] and the file explorer is the far left panel [1]. Text, PDF and
-HTML output files are accessed in the file explorer and displayed within panels.
-Individual *rivt* sections (cells) can be run and output to an interactive
-terminal during *doc* development. Panel locations may be customized by the
-user. Additional example *rivt files* and *docs* are :ref:`here
-<rivt-examples>`.
+
+A *rivt file* is a Python file (.py) that imports the 
+`rivtlib <https://pypi.org/project/rivtlib/>`__ Python package and includes 
+:doc:`rivt markup <rvD00-markup>`. The *rivt file* is in the center editing 
+panel[2], the *doc* outputs are in the right panel[3] and the file explorer 
+is the far left panel [1]. Text, PDF and HTML output files are accessed in 
+the file explorer and displayed within panels. Individual *rivt* sections 
+(cells) can be run and output to an interactive terminal during *doc* development. 
+Panel locations may be customized by the user. Additional example *rivt files* 
+and *docs* are :ref:`here <rivt-examples>`.
 
 -------------------------------
 

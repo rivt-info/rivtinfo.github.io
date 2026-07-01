@@ -8,7 +8,7 @@
 
 This section covers installation of *rivt* and *rivt doc* examples. As open 
 source software you are free to download and modify the program as needed (see 
-:ref:`FAQ <License>`). The open source software installation process is built 
+:ref:`FAQ <Licenses>`). The open source software installation process is built 
 around the collection and management of the multiple open source components. This 
 section covers three ways to install *rivt*.
 
@@ -34,7 +34,7 @@ editing a *rivt file* is shown below.
 
 
 
-.. figure::  _static/img/vscode1.png
+.. figure::  _static/img/vscode3.png
     :class: dark-light
     :width: 95%
     :align: center

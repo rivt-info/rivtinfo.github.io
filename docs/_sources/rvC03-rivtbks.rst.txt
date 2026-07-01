@@ -8,12 +8,20 @@
 ----------------------------------------------------------
 
 A :term:`rivtbook` collects *rivt files* sharing a common theme under a folder
-structure that allows direct copy and paste into *rivt docs* and *reports*. A
-*rivtbook* may be printed as a PDF and README.txt file for review and
-exploration, but it's primary purpose is as an organized collection of files
-that can be directly selected and copied into *rivt docs* and *reports*.
+structure that allows direct copy and paste into *rivt docs* and *reports*. 
+Its primary purpose is as an organized collection of files that can be
+directly selected and copied into *rivt docs* and *reports* as shown in diagram
+below.
 
-A *rivtbook* is published as a PDF using the *rivtbook-report.py* script.
+.. figure::  _static/img/rvbk-rivt.jpg
+    :class: dark-light
+    :scale: 40%
+    :align: center
+    :alt: copy rivtbook
+
+
+A *rivtbook* may be printed as a PDF, txt and README.txt file for review and
+exploration using the *rivtbook-report.py* script.
 
 
 **[2]** rivtbook Folder
