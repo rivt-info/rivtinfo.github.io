@@ -233,7 +233,7 @@ Python and programming.
     :maxdepth: 1
     :hidden:
 
-    rvA01-docex1.rst
+    rvA01-tutor.rst
     rvA02-docex2.rst
     rvA03-repex3.rst
     rvA04-faq.rst
