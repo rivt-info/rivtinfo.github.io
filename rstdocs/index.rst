@@ -20,9 +20,9 @@
 
 
 *rivt* is an open source Python tool for writing and sharing engineering
-documents, with a focus on document reuse and privacy controls. Python
-knowledge is not needed to use *rivt* but Python scripts can provide access
-and automation for the large collection of scientific and engineering libraries.
+documents, with a focus on document reuse. Python knowledge is not required but
+*rivt* capabilities are extended by Python scripts that access scientific and
+engineering libraries.
 
 There are four types of rivt document files:
 
@@ -46,25 +46,25 @@ There are four types of rivt document files:
                | in docs and reports.
    
 
-For an overview of *rivt* see :ref:`here <rivt-overview>`. To get started using
-*rivt* see :ref:`here <rivt-start>`. For ideas on using *AI* with *rivt* see 
-:ref:`here <rivt-context>`.  
+For an overview of *rivt* see :ref:`here <rivt-overview>`. To get started see
+:ref:`here <rivt-start>`. For *rivt* and *AI* see :ref:`here
+<rivt-context>`.
+
+The *tivtlib* package formats and compiles a *rivt file* to a text, PDF or HTML
+document in a second or two. *rivt file* sections may be Interactively executed
+in and IDE, similar to a `Jupyter notebook. <https://jupyter.org/>`__
 
 A convenient interface for searching public *rivt files* on **GitHub** is 
 :doc:`here. <rvE02-github>` A collection of donwloadable open source models 
 and documents on **Google Drive**, including *rivt*, is 
 `here. <https://www.openmodels.info>`__
 
-*rivt* produces clear, organized engineering documents through a fast
-compilation process that takes a second or two for a complete *doc* and can be 
-interactively executed section by section in and IDE, similar to a 
-`Jupyter notebook. <https://jupyter.org/>`__ 
-
-*rivt markup* formats documents using about 3 dozen commands and tags with
-reasonble defaults. If more control is needed to publish formal journal
-articles or books, `Quarto <https://quarto.org/>`__ will likely be a better tool.
-A brief discussion of other engineering document tools and their
-strengths relative to the objectives of *rivt* is :ref:`here <motivation>`.
+*rivt* produces clear, organized engineering documents from active calculations
+using reasonable defaults. Use cases are listed :ref:`here <use-case>`. For
+formatted documents that are typically static, including journal articles and
+books, `Quarto <https://quarto.org/>`__ is likely a better tool. A brief
+discussion of engineering document tools and their strengths relative to the
+objectives of *rivt* is :ref:`here <motivation>`.
 
 .. raw:: html
 
