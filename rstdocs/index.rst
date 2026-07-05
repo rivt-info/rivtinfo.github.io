@@ -19,22 +19,24 @@
    <hr>
 
 
-*rivt* is an open source Python tool for writing and sharing engineering
-documents, with a focus on document reuse. Python knowledge is not required but
-*rivt* capabilities are extended by Python scripts that access scientific and
-engineering libraries.
+*rivt* is an open source Python tool for writing and publishing engineering
+documents, with a focus on controlled reuse. Python knowledge is not
+required but *rivt* capabilities are extended with Python scripts that access
+scientific and engineering libraries.
 
 There are four types of rivt document files:
 
 .. code-block:: text
 
-               | A rivt file is the basic input file that produces a publication 
-   rivt file   | document. It is a Python file (.py) that imports the rivtlib 
-               | Python package and includes plain text content and rivt markup.
+               | A rivt file is the basic input file that
+   rivt file   | compiles to a text, PDF or HTML document. 
+               | It is a Python file (.py) that imports the 
+               | rivtlib Python package.
 
-               | A rivt doc is the basic published output of a rivt file. A doc
-   rivt doc    | is a formatted text, PDF or HTML output file compiled from
-               | a rivt file. The same rivt file produces each type of doc.
+               | A rivt doc is the published output of a
+   rivt doc    | rivt file. A doc is a formatted text,
+               | PDF or HTML output file compiled from 
+               | the same rivt file. 
 
                | A rivt report is the published output from a group of rivt files
    rivt report | organized and collated into a single text, PDF or HTML report
@@ -46,25 +48,28 @@ There are four types of rivt document files:
                | in docs and reports.
    
 
-For an overview of *rivt* see :ref:`here <rivt-overview>`. To get started see
-:ref:`here <rivt-start>`. For *rivt* and *AI* see :ref:`here
+For an overview of *rivt* see :ref:`here <rivt-overview>`. To get started using
+*rivt* see :ref:`here <rivt-start>`. For *rivt* and *AI* see :ref:`here
 <rivt-context>`.
 
-The *tivtlib* package formats and compiles a *rivt file* to a text, PDF or HTML
-document in a second or two. *rivt file* sections may be Interactively executed
-in and IDE, similar to a `Jupyter notebook. <https://jupyter.org/>`__
+The *rivtlib* Python package formats and compiles a *rivt file* to a text, PDF
+or HTML document ( **docs** ) in a second or two. *rivt file* sections may be
+interactively executed in and IDE, similar to a `Jupyter notebook.
+<https://jupyter.org/>`__ Mulitple *rivt files* may be compiled into a collated 
+*rivt report*.
 
 A convenient interface for searching public *rivt files* on **GitHub** is 
-:doc:`here. <rvE02-github>` A collection of donwloadable open source models 
-and documents on **Google Drive**, including *rivt*, is 
-`here. <https://www.openmodels.info>`__
+:doc:`here. <rvE02-github>` Open source engineering models, documents and
+examples, including *rivt*, may be downloaded from 
+`Google Drive. <https://www.openmodels.info>`__
 
 *rivt* produces clear, organized engineering documents from active calculations
-using reasonable defaults. Use cases are listed :ref:`here <use-case>`. For
-formatted documents that are typically static, including journal articles and
-books, `Quarto <https://quarto.org/>`__ is likely a better tool. A brief
-discussion of engineering document tools and their strengths relative to the
-objectives of *rivt* is :ref:`here <motivation>`.
+using reasonable defaults. Use cases are listed :ref:`here <use-case>`.
+Document tools like `Quarto <https://quarto.org/>`__ are likely better tools
+for static, formatted documents including journal articles and books that do
+not need frequent recalculation. A brief discussion of engineering document
+tools and their strengths relative to the objectives of *rivt* is :ref:`here
+<motivation>`.
 
 .. raw:: html
 
