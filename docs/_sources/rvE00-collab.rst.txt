@@ -195,5 +195,6 @@ accounts provide for:
     :maxdepth: 1
     :hidden:
 
-    rvE01-realtime.rst
-    rvE02-ghsearch.rst
+    rvE01-vscode.rst
+    rvE02-github.rst
+    rvE03-cloudstor.rst

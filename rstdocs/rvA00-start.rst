@@ -51,7 +51,7 @@ is the far left panel [1]. Text, PDF and HTML output files are accessed in
 the file explorer and displayed within panels. Individual *rivt* sections 
 (cells) can be run and output to an interactive terminal during *doc* development. 
 Panel locations may be customized by the user. Additional example *rivt files* 
-and *docs* are :ref:`here <rivt-examples>`.
+and *docs* are :ref:`here <rivt-tutor>`.
 
 -------------------------------
 
@@ -234,7 +234,7 @@ Python and programming.
     :hidden:
 
     rvA01-tutor.rst
-    rvA02-docex2.rst
-    rvA03-repex3.rst
+    rvA02-pdf.rst
+    rvA03-html.rst
     rvA04-faq.rst
 

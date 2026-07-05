@@ -51,7 +51,7 @@ For an overview of *rivt* see :ref:`here <rivt-overview>`. To get started using
 :ref:`here <rivt-context>`.  
 
 A convenient interface for searching public *rivt files* on **GitHub** is 
-:doc:`here. <rvE02-ghsearch>` A collection of donwloadable open source models 
+:doc:`here. <rvE02-github>` A collection of donwloadable open source models 
 and documents on **Google Drive**, including *rivt*, is 
 `here. <https://www.openmodels.info>`__
 

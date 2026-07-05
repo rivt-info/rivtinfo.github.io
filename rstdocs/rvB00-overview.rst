@@ -27,10 +27,10 @@ organized for direct *rivt file* selection and insertion into
 is part of the basic :ref:`rivt framework` and included  with the 
 :ref:`rivt-portable` installable.
 
-*rivt file* examples are illustrated :ref:`here <rivt-examples>`. Additional  
+*rivt file* examples are illustrated :ref:`here <rivt-tutor>`. Additional  
 *rivt files* may be downloaded from *Google Drive* at 
 `OpenModels.info <https://www.openmodels.info/>`__.  An interface for searching 
-*public rivt files* on *GitHub* is :doc:`here <rvE02-ghsearch>`. 
+*public rivt files* on *GitHub* is :doc:`here <rvE02-github>`. 
 
 A *public rivt file* is a subset of a *rivt file*, made up of sections the
 author chooses to share under an `Open Source license
