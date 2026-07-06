@@ -410,56 +410,85 @@
 <section id="rivt-file-anatomy">
 <span id="rivt-tutor"></span><h2><strong>[1]</strong> rivt file Anatomy<a class="headerlink" href="#rivt-file-anatomy" title="Link to this heading">#</a></h2>
 <p>This section provides a step by step tutorial for creating a rivt file and
-compiing it to a doc.</p>
+compiing it to a doc. The table below shows the basic file structure.</p>
+<p>The first column shows the Python content of the rivt file. These file
+components are not indented. A rivt file includes the leading import statement,
+the rivt API methods and any triple quoted comments.</p>
+<p>The second column briefly describes the markup contents in the API method rivt
+string argument. <em>rivt</em> API methods always output formatted text to stdout and
+may be run as interactive cells in an IDE e.g. VSCode.</p>
+<p>The third column describes the Doc API function which includes <em>doc</em> settings
+and triggers publication of a doc.</p>
 <figure class="align-center">
-<a class="dark-light reference internal image-reference" href="_images/tutor1.jpg"><img alt="rivt file anatomy" class="dark-light" height="365" src="_images/tutor1.jpg" width="564" />
+<a class="dark-light reference internal image-reference" href="_images/tutor1.jpg"><img alt="rivt file anatomy" class="dark-light" height="644" src="_images/tutor1.jpg" width="598" />
 </a>
 </figure>
 <p>The example file used in the tutorial, along with other report and rivtbook
 example files, are provided at
 <a class="reference external" href="https://drive.google.com/drive/u/1/folders/1NP04tdp3FRAir0ErvL2hlm3YBaFlLk5V" rel="noreferrer" target="_blank">google drive</a>.</p>
-<p>The four examples provided include the rivt file, source files, the published
-docs in each format, and README.txt.</p>
+<p>The four examples provided each include the rivt file, source files, published
+docs in each format, and the README.txt file</p>
 <ul class="simple">
 <li><dl class="simple">
-<dt>Example 1</dt><dd><p>This single doc example file illustrates common API functions and rivt
-markup. The %% marks indicate sections that can be interactively processed
-as cells (similar to a Jupyter Notebook). They can be created with a
-shortcut provided by <em>rivt extensions</em> . They also provide an interactive
-table of contents for navigating in VSCode.</p>
+<dt>Example 1</dt><dd><p>An example file that illustrates common API functions and rivt
+markup. The %% marks provide cell level navigation in a side pane of
+VSCode and may be auto inserted with keystrokes when the <em>rivt profile</em> is
+used.</p>
 </dd>
 </dl>
 </li>
 <li><dl class="simple">
-<dt>Example 2</dt><dd><p>A single doc example that illustrates use of Python functions,</p>
+<dt>Example 2</dt><dd><p>An example that illustrates the use of Python functions.</p>
 </dd>
 </dl>
 </li>
 <li><dl class="simple">
-<dt>Example 3</dt><dd><p>An example <em>rivt report</em>. Reports are assembled through a customized
-report script - <em>rivt-report.py</em> stored in the <em>rivt-report</em> folder.</p>
+<dt>Example 3</dt><dd><p>An example <em>rivt report</em>.  Reports are assembled through a
+report script - <em>make-report.py</em> stored in the <em>rivt-report</em> folder.</p>
 </dd>
 </dl>
 </li>
 <li><dl class="simple">
-<dt>Example 4</dt><dd><p>An example <em>rivt report</em>. Reports are assembled through a customized
-report script - <em>rivt-report.py</em> stored in the <em>rivt-report</em> folder.</p>
+<dt>Example 4</dt><dd><p>An example <em>rivtbook</em>. <em>rivtbooks</em> are collections of rivt files
+with a common subject matter organized for efficient selection and
+inclusion in docs and reports.</p>
 </dd>
 </dl>
 </li>
 </ul>
 </section>
-<section id="rivt-doc-tutorial">
-<h2><strong>[2]</strong> rivt doc tutorial<a class="headerlink" href="#rivt-doc-tutorial" title="Link to this heading">#</a></h2>
+<section id="rivt-tutorial">
+<h2><strong>[2]</strong> rivt tutorial<a class="headerlink" href="#rivt-tutorial" title="Link to this heading">#</a></h2>
+<p><em>rivt files</em> can be created from scratch as a .py file or by copying and
+editing an existing rivt file. Click on the dropdown to expose the rivt file
+contents.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text">What is the open source license for <em>rivtlib</em>?</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><strong>rivtlib</strong> is distributed under the
-<a class="reference external" href="https://opensource.org/license/mit/" rel="noreferrer" target="_blank">MIT open source license</a>.</p>
+<span class="sd-summary-text">1. Initialize a rivt file. Add the import statement and change
+             default settings if needed. Defaults are shown. If defaults are
+             acceptable the rivt settings may be omitted.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %% rv.I(&quot;&quot;&quot;Summary and Loads</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Summary and Loads</span>
+
+<span class="s2">    This rivt file example calculates the maximum stress and deflection in a</span>
+<span class="s2">    simply supported, uniformly loaded beam using E-B theory _[#]. It also</span>
+<span class="s2">    serves as an annotated example of a single rivt doc with multiple sections</span>
+<span class="s2">    that is not part of a report.</span>
+
+<span class="s2">    The example illustrates the use of some of the most common API functions,</span>
+<span class="s2">    commands and tags. Further details are provided in the</span>
+<span class="s2">    _[U] rivt user manual, https://www.rivt.info |.</span>
+
+<span class="s2">    The file may be formatted as a text, PDF or HTML doc by changing the type</span>
+<span class="s2">    parameter in the PUBLISH command at the end of each rivt file (Doc-API</span>
+<span class="s2">    *rv.D*). Published files are found in the _published folder.</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text">Which open source licenses applies to <em>rivt</em>?</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">Add an insert API method rv.I(r).</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">The Python packages that are part of the <em>rivt project</em> are distributed
 primarly under the BSD, Appache and MIT open source licenses. Python itself
 is distributed under the Python Software Foundation License (PSFL).</p>
@@ -787,7 +816,7 @@ beam span  Total load [ASCE7-05 2.3.2]  modulus of elasticity  rectangle - I (se
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-file-anatomy"><strong>[1]</strong> rivt file Anatomy</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-doc-tutorial"><strong>[2]</strong> rivt doc tutorial</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-tutorial"><strong>[2]</strong> rivt tutorial</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-output"><strong>[3]</strong> text output</a></li>
 </ul>
   </nav></div>

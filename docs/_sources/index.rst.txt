@@ -28,26 +28,26 @@ There are four types of rivt document files:
 
 .. code-block:: text
 
-               | A rivt file is the basic input file that
-   rivt file   | compiles to a text, PDF or HTML document. 
-               | It is a Python file (.py) that imports the 
-               | rivtlib Python package.
+                  | A rivt file is the basic input file that
+      rivt file   | compiles to a text, PDF or HTML document. 
+                  | It is a Python file (.py) that imports the 
+                  | rivtlib Python package.
 
-               | A rivt doc is the published output of a
-   rivt doc    | rivt file. A doc is a formatted text,
-               | PDF or HTML output file compiled from 
-               | the same rivt file. 
+                  | A rivt doc is the published output of a
+      rivt doc    | rivt file. A doc is a formatted text,
+                  | PDF or HTML output file compiled from 
+                  | the same rivt file. 
 
-               | A rivt report is the published output 
-   rivt report | from rivt files collated into a single 
-               | text, PDF or HTML report file.
-               | Each doc is a chapter in the report.
+                  | A rivt report is the published output 
+      rivt report | from rivt files collated into a single 
+                  | text, PDF or HTML report file.
+                  | Each doc is a chapter in the report.
 
 
-               | A rivt book is a collection of rivt files
-   rivt book   |  with a commonsubject matter that are 
-               | organized for efficient selection and 
-               | inclusionin docs and reports.
+                  | A rivt book is a collection of rivt files
+      rivt book   |  with a commonsubject matter that are 
+                  | organized for efficient selection and 
+                  | inclusionin docs and reports.
    
 
 For an overview of *rivt* see :ref:`here <rivt-overview>`. To get started using

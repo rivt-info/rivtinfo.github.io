@@ -7,8 +7,18 @@
 -----------------------------------------------
  
 This section provides a step by step tutorial for creating a rivt file and
-compiing it to a doc. 
+compiing it to a doc. The table below shows the basic file structure. 
 
+The first column shows the Python content of the rivt file. These file
+components are not indented. A rivt file includes the leading import statement,
+the rivt API methods and any triple quoted comments.
+
+The second column briefly describes the markup contents in the API method rivt
+string argument. *rivt* API methods always output formatted text to stdout and
+may be run as interactive cells in an IDE e.g. VSCode.
+
+The third column describes the Doc API function which includes *doc* settings
+and triggers publication of a doc.
 
 
 .. figure::  _static/img/tutor1.jpg
@@ -23,40 +33,60 @@ The example file used in the tutorial, along with other report and rivtbook
 example files, are provided at 
 `google drive <https://drive.google.com/drive/u/1/folders/1NP04tdp3FRAir0ErvL2hlm3YBaFlLk5V>`_. 
 
-The four examples provided include the rivt file, source files, the published
-docs in each format, and README.txt.
+The four examples provided each include the rivt file, source files, published
+docs in each format, and the README.txt file
 
 - Example 1
-    This single doc example file illustrates common API functions and rivt
-    markup. The %% marks indicate sections that can be interactively processed
-    as cells (similar to a Jupyter Notebook). They can be created with a
-    shortcut provided by *rivt extensions* . They also provide an interactive
-    table of contents for navigating in VSCode.  
+    An example file that illustrates common API functions and rivt
+    markup. The %% marks provide cell level navigation in a side pane of 
+    VSCode and may be auto inserted with keystrokes when the *rivt profile* is 
+    used.
 
 - Example 2
-    A single doc example that illustrates use of Python functions,
+    An example that illustrates the use of Python functions.
 
 - Example 3
-    An example *rivt report*. Reports are assembled through a customized 
-    report script - *rivt-report.py* stored in the *rivt-report* folder.
+    An example *rivt report*.  Reports are assembled through a 
+    report script - *make-report.py* stored in the *rivt-report* folder.
 
 - Example 4
-    An example *rivt report*. Reports are assembled through a customized 
-    report script - *rivt-report.py* stored in the *rivt-report* folder.
+    An example *rivtbook*. *rivtbooks* are collections of rivt files
+    with a common subject matter organized for efficient selection and 
+    inclusion in docs and reports.
 
 
-
-**[2]** rivt doc tutorial
+**[2]** rivt tutorial
 -----------------------------------------------
 
+*rivt files* can be created from scratch as a .py file or by copying and
+editing an existing rivt file. Click on the dropdown to expose the rivt file
+contents.
+
+.. dropdown:: 1. Initialize a rivt file. Add the import statement and change 
+                 default settings if needed. Defaults are shown. If defaults are 
+                 acceptable the rivt settings may be omitted. 
+
+    .. code-block:: python
+
+        # %% rv.I("""Summary and Loads
+        rv.I("""Summary and Loads
+
+            This rivt file example calculates the maximum stress and deflection in a
+            simply supported, uniformly loaded beam using E-B theory _[#]. It also
+            serves as an annotated example of a single rivt doc with multiple sections
+            that is not part of a report.
+
+            The example illustrates the use of some of the most common API functions,
+            commands and tags. Further details are provided in the 
+            _[U] rivt user manual, https://www.rivt.info |.
+
+            The file may be formatted as a text, PDF or HTML doc by changing the type
+            parameter in the PUBLISH command at the end of each rivt file (Doc-API
+            *rv.D*). Published files are found in the _published folder.
+        """)
 
 
-.. dropdown:: What is the open source license for *rivtlib*?  
-
-    **rivtlib** is distributed under the 
-    `MIT open source license <https://opensource.org/license/mit/>`_.
-
-.. dropdown:: Which open source licenses applies to *rivt*?  
+.. dropdown:: Add an insert API method rv.I(r).   
 
     The Python packages that are part of the *rivt project* are distributed 
     primarly under the BSD, Appache and MIT open source licenses. Python itself
