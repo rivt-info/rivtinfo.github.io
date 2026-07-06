@@ -60,7 +60,7 @@ docs in each format, and the README.txt file
 editing an existing rivt file. Click on the dropdown to expose the rivt file
 contents for each step.
 
-.. dropdown:: 1. Initialize a rivt file. Add the import statement and change 
+.. dropdown:: [1] Initialize a rivt file. Add the import statement and change 
                  default comment settings if needed. If defaults are  acceptable 
                  the rivt settings may be omitted. Triple quoted strings may 
                  be added as non-printing comments.
@@ -102,7 +102,7 @@ contents for each step.
         # rv private = true ; if false, default section heading changed to public (private)
 
 
-.. dropdown:: 2. Add an API method - in this case rv.I(r). The first line in a
+.. dropdown:: [2] Add an API method - in this case rv.I(r). The first line in a
                 method is a heading substring, followed by content indented
                 four spaces.  The heading substring provides a section 
                 title and default parameters for the section.  
@@ -127,7 +127,7 @@ contents for each step.
         """)
 
 
-.. dropdown:: 3. Add an API method - in this case rv.I(r). The first line in a
+.. dropdown:: [3] Add an API method - in this case rv.I(r). The first line in a
                 method is a heading substring, followed by content indented
                 four spaces.  The heading substring provides a title and 
                 :ref: `default parameters <Header substring>` for the section. 
@@ -152,7 +152,7 @@ contents for each step.
             _[[END]]
             """)
 
-.. dropdown:: 4. Add an API method - in this case rv.I(r). The first line in a
+.. dropdown:: [4] Add an API method - in this case rv.I(r). The first line in a
                 method is a heading substring, followed by content indented
                 four spaces.  The heading substring provides a title and 
                 :ref: `default parameters <Header substring>` for the section. 
@@ -194,7 +194,7 @@ contents for each step.
             omega_1 <=: dl_1 + ll_1 | k_ft, kN_m, 2 | Total load [ASCE7-05 2.3.2]
             """)
 
-.. dropdown:: 5. Add an API method - in this case rv.I(r). The first line in a
+.. dropdown:: [5] Add an API method - in this case rv.I(r). The first line in a
                 method is a heading substring, followed by content indented
                 four spaces.  The heading substring provides a title and 
                 :ref: `default parameters <Header substring>` for the section. 
@@ -230,7 +230,7 @@ contents for each step.
             delta_1 :=: midspan_delta(spn_1, omega_1, E_1, inertia_1) | inch, mm, 2 | mid-span deflection (sectprop.py)
             """)
 
-.. dropdown:: 6. Add an API method - in this case rv.I(r). The first line in a
+.. dropdown:: [6] Add an API method - in this case rv.I(r). The first line in a
                 method is a heading substring, followed by content indented
                 four spaces.  The heading substring provides a title and 
                 :ref: `default parameters <Header substring>` for the section. 
@@ -247,7 +247,7 @@ contents for each step.
             American Society of Civil Engineers, 2005.
             """
 
-.. dropdown:: 7. Add an API method - in this case rv.I(r). The first line in a
+.. dropdown:: [7] Add an API method - in this case rv.I(r). The first line in a
                 method is a heading substring, followed by content indented
                 four spaces.  The heading substring provides a title and 
                 :ref: `default parameters <Header substring>` for the section. 
