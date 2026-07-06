@@ -465,8 +465,48 @@ contents.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">1. Initialize a rivt file. Add the import statement and change
-             default settings if needed. Defaults are shown. If defaults are
-             acceptable the rivt settings may be omitted.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+             default comment settings if needed. Defaults are shown.
+             If defaults are  acceptable the rivt settings may be omitted.
+             Triple quoted strings may be added as non-printing comments.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot; This is a rivt doc example.  It is used in the tutorial at</span>
+<span class="sd">https://www.rivt.info. Example 3 is a rivt report example at</span>
+<span class="sd">https://www.openmodels.info/models/rivt.</span>
+
+<span class="sd">This example illustrates:</span>
+
+<span class="sd">    rivtlib markup</span>
+
+<span class="sd">    - multiple API sections</span>
+<span class="sd">    - footnotes</span>
+<span class="sd">    - inline comments</span>
+<span class="sd">    - Url links</span>
+<span class="sd">    - Variable definitions</span>
+<span class="sd">    - Table blocks and commands</span>
+<span class="sd">    - Value table command</span>
+<span class="sd">    - Metadata and layout block</span>
+<span class="sd">    - Python function command</span>
+<span class="sd">    - Image command</span>
+<span class="sd">    - Publish command</span>
+
+<span class="sd">    VSCode / Python features</span>
+<span class="sd">    - cell labels</span>
+<span class="sd">    - docstrings</span>
+<span class="sd">    - extension modules</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
+
+<span class="c1"># rv set_width = 80  ; character width of text output (80)</span>
+<span class="c1"># rv no_tag = true ; if false, the API type is added to section number (true)</span>
+<span class="c1"># rv private = true ; if false, default section heading changed to public (private)</span>
+</pre></div>
+</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Add an insert API method rv.I(r). The first line is a heading
+          substring, followed by content indented four spaces.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %% rv.I(&quot;&quot;&quot;Summary and Loads</span>
 <span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Summary and Loads</span>
 
@@ -485,13 +525,6 @@ contents.</p>
 <span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text">Add an insert API method rv.I(r).</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">The Python packages that are part of the <em>rivt project</em> are distributed
-primarly under the BSD, Appache and MIT open source licenses. Python itself
-is distributed under the Python Software Foundation License (PSFL).</p>
 </div>
 </details></section>
 <section id="text-output">

@@ -63,8 +63,50 @@ editing an existing rivt file. Click on the dropdown to expose the rivt file
 contents.
 
 .. dropdown:: 1. Initialize a rivt file. Add the import statement and change 
-                 default settings if needed. Defaults are shown. If defaults are 
-                 acceptable the rivt settings may be omitted. 
+                 default comment settings if needed. Defaults are shown. 
+                 If defaults are  acceptable the rivt settings may be omitted. 
+                 Triple quoted strings may be added as non-printing comments.
+
+
+    .. code-block:: python
+
+
+        """ This is a rivt doc example.  It is used in the tutorial at 
+        https://www.rivt.info. Example 3 is a rivt report example at
+        https://www.openmodels.info/models/rivt.
+
+        This example illustrates: 
+
+            rivtlib markup
+
+            - multiple API sections
+            - footnotes
+            - inline comments
+            - Url links
+            - Variable definitions
+            - Table blocks and commands
+            - Value table command
+            - Metadata and layout block
+            - Python function command
+            - Image command
+            - Publish command
+
+            VSCode / Python features
+            - cell labels
+            - docstrings
+            - extension modules    
+
+        """
+
+        import rivtlib.rvapi as rv
+
+        # rv set_width = 80  ; character width of text output (80)
+        # rv no_tag = true ; if false, the API type is added to section number (true)
+        # rv private = true ; if false, default section heading changed to public (private)
+
+
+.. dropdown:: Add an insert API method rv.I(r). The first line is a heading 
+              substring, followed by content indented four spaces.
 
     .. code-block:: python
 
@@ -85,12 +127,6 @@ contents.
             *rv.D*). Published files are found in the _published folder.
         """)
 
-
-.. dropdown:: Add an insert API method rv.I(r).   
-
-    The Python packages that are part of the *rivt project* are distributed 
-    primarly under the BSD, Appache and MIT open source licenses. Python itself
-    is distributed under the Python Software Foundation License (PSFL).
 
 
 
