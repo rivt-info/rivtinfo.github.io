@@ -76,8 +76,6 @@ and navigation (e.g. section folding).
 
 **Header substring**
 
- 
-
 The :term:`header substring` starts with a *section label*, used as the
 section title, followed by a vertical bar and three comma separated
 *section parameters* that override default behavior.

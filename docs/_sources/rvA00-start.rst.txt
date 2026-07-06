@@ -234,7 +234,8 @@ Python and programming.
     :hidden:
 
     rvA01-tutor.rst
-    rvA02-pdf.rst
-    rvA03-html.rst
-    rvA04-faq.rst
+    rvA02-txt.rst
+    rvA03-pdf.rst
+    rvA04-html.rst
+    rvA05-faq.rst
 
