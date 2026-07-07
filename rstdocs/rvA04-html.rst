@@ -5,7 +5,7 @@ Click on HTML image to enlarge.
 
 .. figure::  _static/img/html-ex1.jpg
     :class: dark-light
-    :scale: 50%
+    :scale: 30%
     :align: center
     :alt: html doc example 1
 
