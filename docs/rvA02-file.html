@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
-    <title>A.4 | HTML doc &#8212; rivt</title>
+    <title>A.2 | rivt file &#8212; rivt</title>
   
   
   
@@ -56,11 +56,11 @@
     <script src="_static/togglebutton.js?v=1ae7504c"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'rvA04-html';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'rvA02-file';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="A.5 | PDF doc" href="rvA05-pdf.html" />
-    <link rel="prev" title="A.3 | TEXT doc" href="rvA03-txt.html" />
+    <link rel="next" title="A.3 | TEXT doc" href="rvA03-txt.html" />
+    <link rel="prev" title="A.1 | Tutorial" href="rvA01-tutor.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -338,9 +338,9 @@
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="rvA01-tutor.html"><strong>A.1 | Tutorial</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvA02-file.html"><strong>A.2 | rivt file</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>A.2 | rivt file</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvA03-txt.html"><strong>A.3 | TEXT doc</strong></a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>A.4 | HTML doc</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvA04-html.html"><strong>A.4 | HTML doc</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvA05-pdf.html"><strong>A.5 | PDF doc</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvA06-faq.html"><strong>A.6 | FAQ</strong></a></li>
 </ul>
@@ -386,7 +386,7 @@
     
     <li class="breadcrumb-item"><a href="rvA00-start.html" class="nav-link"><strong>A.0 | Start</strong></a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>A.4 | HTML doc</strong></span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>A.2 | rivt file</strong></span></li>
   </ul>
 </nav>
 </div>
@@ -403,13 +403,201 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="a-4-html-doc">
-<h1><strong>A.4 | HTML doc</strong><a class="headerlink" href="#a-4-html-doc" title="Link to this heading">#</a></h1>
-<p>Click on HTML image to enlarge.</p>
-<figure class="align-center">
-<a class="dark-light reference internal image-reference" href="_images/html-ex1.jpg"><img alt="html doc example 1" class="dark-light" height="3266" src="_images/html-ex1.jpg" width="763" />
-</a>
-</figure>
+  <section id="a-2-rivt-file">
+<h1><strong>A.2 | rivt file</strong><a class="headerlink" href="#a-2-rivt-file" title="Link to this heading">#</a></h1>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#! python3</span>
+<span class="sd">&quot;&quot;&quot; This is a rivt doc example.  It is used in the tutorial at</span>
+<span class="sd">https://www.rivt.info.</span>
+
+<span class="sd">This example illustrates:</span>
+
+<span class="sd">    rivtlib markup</span>
+
+<span class="sd">    - multiple API sections</span>
+<span class="sd">    - footnotes</span>
+<span class="sd">    - inline comments</span>
+<span class="sd">    - Url links</span>
+<span class="sd">    - Variable definitions</span>
+<span class="sd">    - Table blocks and commands</span>
+<span class="sd">    - Value table command</span>
+<span class="sd">    - Metadata and layout block</span>
+<span class="sd">    - Python function command</span>
+<span class="sd">    - Image command</span>
+<span class="sd">    - Publish command</span>
+
+<span class="sd">    VSCode / Python features</span>
+<span class="sd">    - cell labels</span>
+<span class="sd">    - docstrings</span>
+<span class="sd">    - extension modules</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
+
+<span class="c1"># rv set_width = 80  ; character width of text output (80)</span>
+<span class="c1"># rv no_tag = true ; if false, the API type is added to section number (true)</span>
+<span class="c1"># rv private = true ; if false, default section heading changed to public (private)</span>
+
+<span class="c1"># %% rv.I(&quot;&quot;&quot;Summary and Loads</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Summary and Loads</span>
+
+<span class="s2">    This rivt file example calculates the maximum stress and deflection in a</span>
+<span class="s2">    simply supported, uniformly loaded beam using E-B theory _[#]. It also</span>
+<span class="s2">    serves as an annotated example of a single rivt doc with multiple sections</span>
+<span class="s2">    that is not part of a report.</span>
+
+<span class="s2">    The example illustrates the use of some of the most common API functions,</span>
+<span class="s2">    commands and tags. Further details are provided in the</span>
+<span class="s2">    _[U] rivt user manual, https://www.rivt.info |.</span>
+
+<span class="s2">    The file may be formatted as a text, PDF or HTML doc by changing the type</span>
+<span class="s2">    parameter in the PUBLISH command at the end of each rivt file (Doc-API</span>
+<span class="s2">    *rv.D*). Published files are found in the _published folder.</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="c1"># %% rv.I(&quot;&quot;&quot;Load Combinations</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Load Combinations</span>
+
+<span class="s2">    ## Indented comments with double hashes will not appear in the doc</span>
+
+<span class="s2">    Dead and live loads effects are taken from ASCE 7-05 _[#]</span>
+
+<span class="s2">    _[[TABLE]]  Load Effects</span>
+<span class="s2">    ============= ================================================</span>
+<span class="s2">    Equation No.    Load Combination</span>
+<span class="s2">    ============= ================================================</span>
+<span class="s2">    16-1           1.4(D+F)</span>
+<span class="s2">    16-2           1.2(D+F+T) + 1.6(L+H) + 0.5(Lr or S or R)</span>
+<span class="s2">    16-3           1.2(D+F+T) + 1.6(Lr or S or R) + (f1L or 0.8W)</span>
+<span class="s2">    ============= ================================================</span>
+<span class="s2">    _[[END]]</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="c1"># %% rv.V(&quot;&quot;&quot;Loads and Geometry</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Loads and Geometry</span>
+
+<span class="s2">    Successive value definitions are formatted as a table. Variable values are</span>
+<span class="s2">    defined with the define operator. The line tag [T] labels and numbers the</span>
+<span class="s2">    table.</span>
+
+<span class="s2">    Define Unit Loads _[T]</span>
+<span class="s2">    D_1 ==: 3.8 * p_sf | p_sf, kPA, 2 | joists DL</span>
+<span class="s2">    D_2 ==: 2.1 * p_sf | p_sf, kPA, 2 | plywood DL</span>
+<span class="s2">    D_3 ==: 10.0 * p_sf | p_sf, kPA, 2 | partitions DL</span>
+<span class="s2">    D_4 ==: 2 * 1.5 * k_ft | k_ft, kN_m, 2 | fixed machinery DL</span>
+<span class="s2">    L_1 ==: 40 * p_sf | p_sf, kPA, 2 | ASCE7-O5 LL</span>
+<span class="s2">    b_1 ==: 10 * inch | inch, mm, 2 | beam width</span>
+<span class="s2">    h_1 ==: 18 * inch | inch, mm, 2 | beam depth</span>
+<span class="s2">    E_1 ==: 29000 * k_si | k_si, MPA, 2 | modulus of elasticity</span>
+<span class="s2">    Fb_1 ==: 20000 * p_si | p_si, MPA, 2 | allowable stress</span>
+
+<span class="s2">    The VALTABLE command reads variable values from a file in the rvsrc/data</span>
+<span class="s2">    folder. The description is the table title, followed by the max</span>
+<span class="s2">    column width.</span>
+
+<span class="s2">    | VALTABLE | rvsrc/data/beam1.csv | Beam Geometry, 40</span>
+
+<span class="s2">    | IMAGE | rvsrc/img/beam1.png | Beam Diagram, 60, num, not</span>
+
+<span class="s2">    Uniform Distributed Loads _[C]</span>
+<span class="s2">    dl_1 &lt;=: 1.2 * (spc_1 * (D_1 + D_2 + D_3) + D_4) | k_ft, kN_m, 2 | Dead load [ASCE7-05 2.3.2]</span>
+
+<span class="s2">    ll_1 &lt;=: 1.6 * spc_1 * L_1 | k_ft, kN_m, 2 | Live load [ASCE7-05 2.3.2]</span>
+
+<span class="s2">    omega_1 &lt;=: dl_1 + ll_1 | k_ft, kN_m, 2 | Total load [ASCE7-05 2.3.2]</span>
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="c1"># %% rv.V(&quot;&quot;&quot;Beam Stress</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Beam Response</span>
+
+<span class="s2">    The following lines import the beam geometry from an external file,</span>
+<span class="s2">    calculate section properties from imported functions and calculate</span>
+<span class="s2">    the maximum moment, bending stress and mid-span deflection.</span>
+
+<span class="s2">    | PYTHON | rvsrc/scripts/sectprop.py | Beam functions</span>
+
+<span class="s2">    section_1 :=: rectsect(b_1, h_1) | in3, cm3, 2 | rectangle - S (sectprop.py)</span>
+
+<span class="s2">    inertia_1 :=: rectinertia(b_1, h_1) | in4, cm4, 1 | rectangle - I (sectprop.py)</span>
+
+<span class="s2">    | IMAGE2 | rvsrc/img/ss-beam2.png, rvsrc/img/ss-beam1.png | Moment diagram, Deflection diagram,46,54,num,num</span>
+
+<span class="s2">    Maximum bending stress formula _[B]</span>
+
+<span class="s2">    ##  The line tag [M] formats the equation using utf-8 text.</span>
+<span class="s2">    σ1 = M1 / S1 _[M]</span>
+
+<span class="s2">    m_1 &lt;=: omega_1 * spn_1**2 / 8 | ftkips, mkN, 2 | Mid-span UDL moment</span>
+
+<span class="s2">    fb_1 &lt;=: m_1 / section_1 | p_si, MPA, 1 | Bending stress</span>
+
+<span class="s2">    fb_1 &lt; Fb_1 | k_si, 2, OK, &gt;&gt;&gt; NOT OK | Stress ratio</span>
+
+<span class="s2">    delta_1 :=: midspan_delta(spn_1, omega_1, E_1, inertia_1) | inch, mm, 2 | mid-span deflection (sectprop.py)</span>
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="c1"># %% rv.R(&quot;&quot;&quot;doc notes | endnotes</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">R</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;doc notes | endnotes</span>
+<span class="s2">    &quot;Euler–Bernoulli beam theory&quot;, Wikipedia, Wikimedia Foundation. [Online].</span>
+<span class="s2">    https://en.wikipedia.org/wiki/Euler_Bernoulli_beam_theory.</span>
+<span class="s2">    [Accessed: Jun. 15, 2026].</span>
+
+<span class="s2">    ASCE/SEI 7-05, Minimum Design Loads for Buildings and Other Structures,</span>
+<span class="s2">    American Society of Civil Engineers, 2005.</span>
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+
+<span class="c1"># %% rv.D(&quot;&quot;&quot;Publish Doc</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">D</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Publish Doc</span>
+
+<span class="s2">    A rivt file may be published as a text, PDF or HTML doc by specifying the</span>
+<span class="s2">    PUBLISH type parameter as txt, pdf or html.</span>
+
+<span class="s2">    Published files are found in sub-folders of the _published folder. A text</span>
+<span class="s2">    version of the doc or report is is always written to the rivt and</span>
+<span class="s2">    _rivt-public folders as a README.txt file. READMEs are formatted and</span>
+<span class="s2">    displayed on the first page of a GitHub repo.</span>
+
+<span class="s2">    | PUBLISH | Example 1 - rivt Doc | pdf</span>
+
+<span class="s2">    _[[METADATA]]</span>
+<span class="s2">    [doc]</span>
+<span class="s2">    authors = R Holland</span>
+<span class="s2">    version = 1.0.0a12</span>
+<span class="s2">    repo = https://github.com/rivt-info/rivt-single-doc</span>
+<span class="s2">    license = https://opensource.org/license/mit/</span>
+<span class="s2">    copyright = -</span>
+<span class="s2">    fork1_authors = -</span>
+<span class="s2">    fork1_version = -</span>
+<span class="s2">    fork1_repo = -</span>
+<span class="s2">    fork1_license = https://opensource.org/license/mit/</span>
+
+<span class="s2">    [layout]</span>
+<span class="s2">    subtitle =  UDL Beam</span>
+<span class="s2">    copyright = --</span>
+<span class="s2">    client = Attn: User Example</span>
+<span class="s2">    coverpage = true</span>
+<span class="s2">    coverlogo_size = 30</span>
+<span class="s2">    coverlogo = logo1.png</span>
+<span class="s2">    runninglogo = logo2.png</span>
+<span class="s2">    runninglabel = rivt</span>
+<span class="s2">    project_ref = proj. 0001</span>
+<span class="s2">    pdf_pagesize = letter</span>
+<span class="s2">    pdf_margins = 1in, 1in, 1in, 1in</span>
+<span class="s2">    pdf_link_underline = true</span>
+<span class="s2">    ; colors - red, blue, green, yellow, black, gray, brown</span>
+<span class="s2">    ; lightblue, magenta, lime, maroon, gray, olive, cyan</span>
+<span class="s2">    pdf_link_color = black</span>
+<span class="s2">    ; toc levels: 1 - includes subdivisions, 2 - also includes sections</span>
+<span class="s2">    toc_level = 2</span>
+
+<span class="s2">    [process]</span>
+<span class="s2">    doc_verbose = true; if false minmize output during doc processing</span>
+<span class="s2">    auto_cfg = true ; if false, config files are not updated from rivt file</span>
+<span class="s2">    _[[END]]</span>
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
 </section>
 
 
@@ -423,20 +611,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rvA03-txt.html"
+       href="rvA01-tutor.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>A.3 | TEXT doc</strong></p>
+        <p class="prev-next-title"><strong>A.1 | Tutorial</strong></p>
       </div>
     </a>
     <a class="right-next"
-       href="rvA05-pdf.html"
+       href="rvA03-txt.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>A.5 | PDF doc</strong></p>
+        <p class="prev-next-title"><strong>A.3 | TEXT doc</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
