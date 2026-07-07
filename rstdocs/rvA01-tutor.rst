@@ -61,7 +61,7 @@ editing an existing rivt file. Click on the dropdown steps to expose the rivt
 file contents for each step. After initialization, any API can be used to start
 the file except for rv.D(r) which stops processing and triggers a doc output.
 
-.. dropdown::  [ Step 1 ] Add import statement 
+.. dropdown::  [ 1 ] Add import statement 
 
     Following the import statement, comment settings may be added if defaults need
     to be changed. Triple quoted comments can be added between API methods. They 
@@ -102,7 +102,7 @@ the file except for rv.D(r) which stops processing and triggers a doc output.
         # rv private = true ; if false, default section heading changed to public (private)
 
 
-.. dropdown:: [ Step 2] Add API method - rv.I
+.. dropdown:: [ 2 ] Add API method - rv.I
 
     See :ref:`header <Header substring>` and 
     :ref:`content <Content substring>` for rivt string details. 
@@ -128,7 +128,7 @@ the file except for rv.D(r) which stops processing and triggers a doc output.
         """)
 
 
-.. dropdown:: [ Step 3 ] Add API method - rv.I
+.. dropdown:: [ 3 ] Add API method - rv.I
     
     This section includes inline comments ( ## ) and 
     :ref:`[[TABLE]] blocks <block summary>`. 
@@ -153,12 +153,11 @@ the file except for rv.D(r) which stops processing and triggers a doc output.
             _[[END]]
         """)
 
-.. dropdown:: [ Step 4 ]  Add API method - rv.V
+.. dropdown:: [ 4 ]  Add API method - rv.V
     
     This Value section includes the VALTABLE and IMAGE 
-    :ref:`commands <command-summary>`, the [C] and [T] 
-    :ref: `tags <line summary>`, and 
-    the ==: and <=: :ref:`assignment operators <assign-summary>`
+    :ref:`commands <command-summary>`, the [C] and [T] :ref:`tags <line summary>`, 
+    and  the ==: and <=: :ref:`assignment operators <assign-summary>`
 
     .. code-block:: python
 
