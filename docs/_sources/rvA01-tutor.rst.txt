@@ -7,7 +7,8 @@
 -----------------------------------------------
  
 This chapter provides a step by step tutorial for creating a rivt file and
-compiling it to a doc. The table below shows the basic file structure. 
+compiling it to a doc. The published txt, PDF and HTML docs are in the shown in
+the following chapters. The table below shows the basic rivt file structure.
 
 The first column shows the Python content of the rivt file. A rivt file
 includes the leading import statement, rivt API methods with markup and any

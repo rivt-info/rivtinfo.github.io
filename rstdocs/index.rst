@@ -77,7 +77,7 @@ tools and their strengths relative to the objectives of *rivt* is :ref:`here
 
 .. [1] Selective reuse is the built-in capability to export selected
     sections of a *rivt file* for public sharing, while maintaining the 
-    complete file for publication. 
+    complete file for private use and doc publication. 
 
 .. raw:: html
 
