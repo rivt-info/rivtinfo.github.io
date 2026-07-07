@@ -237,7 +237,7 @@ the file except for rv.D(r) which stops processing and triggers a doc output.
             delta_1 :=: midspan_delta(spn_1, omega_1, E_1, inertia_1) | inch, mm, 2 | mid-span deflection (sectprop.py)
             """)
 
-.. dropdown:: [ 6 ] Add an API method - rv.R
+.. dropdown:: [ 6 ] Add API method - rv.R
 
     The Run API does not use commands or tags in the content substring. The
     header substring includes a type parameter identifying the content text or 
