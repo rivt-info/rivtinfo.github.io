@@ -130,7 +130,7 @@ API Function         Name             Purpose
 **rv.V** (rS)         Values       Calculate values
 **rv.T** (rS)         Tools        Execute shell scripts and external programs
 **rv.D** (rS)         Doc          Publish docs 
-**rv.S;X** (rS)       Skip         Skip section or exit (comments and debugging)
+**rv.S,X** (rS)       Skip         Skip (S) section or Exit (X)
 ================= =============== ================================================
 
 An API function starts in the first column and takes a triple quoted

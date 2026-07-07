@@ -1,26 +1,18 @@
 **D.4 | API Scopes**
 ==========================
 
-.. _markup-api:
+.. _markup-R:
 
 **[1]** rv.R Markup
 ------------------------------------
 
-
-The *Run* API method executes markup and scripts. It does not use markup. The
+The *Run* API method processes text and scripts. It does not use markup. The
 header substring takes an additional parameter that specifies the type of
-script.
-
-
-**[1-1]** rv.R 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The header substring has the form:
+text or script. The header substring has the form:
 
 .. code-block:: python
 
     rv.R("""Section title | script_type, other parameters""")
-
 
 =========================== =================================================
        script type                            Description 
@@ -34,122 +26,50 @@ The header substring has the form:
 
 ------------------------------------------
 
+.. _markup-I:
 
 **[2]** rv.I Markup
 -------------------------------------------------------------------------------
-
  
 The *Insert* API function inserts and formats static sources into the *doc*,
 including images, tables, links and formatted text.
 
--------------------------------------------------
-
-
-**[2-1]** rv.I Line Tags
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-================================================= ============================
-     Line Tag                                       Description 
-================================================= ============================
-                text **_[C]**                     :ref:`Bold center text` 
-           **text math _[M]** description         :ref:`Text math` 
-          **LaTeX math _[L]** description         :ref:`LaTeX math` 
-                text **_[#]** text                :ref:`Endnote number`  
-                text **_[G] text, term**          :ref:`Term link`
-                text **_[S] text, section link**  :ref:`Section link`
-                text **_[U] text, label**         :ref:`URL link`   
-                text **_[V] var_name** text       :ref:`Substitute value`
-               **title _[T]**                     :ref:`Number table`
-================================================= ============================
-
---------------------------------------------
-
-
-**[2-2]** rv.I Block Tags
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-========================================= ==============================
-       Block Tag                               Description 
-========================================= ==============================
- **_[[TEXT]]** optional label                 :ref:`Text block`
- **_[[TOPIC]]** topic                         :ref:`Topic block`
- **_[[END]]**                                 :ref:`End block`
-========================================= ==============================
-
-
------------------------------------------
-
-
-**[2-3]** rv.I Commands
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
 ==================================================================== =========================
-         Command                                                          Description
+       Tags / Commands / Assignment                                           Description
 ==================================================================== =========================
+  text **_[C]**                                                        :ref:`Bold center text` 
+**text math _[M]** description                                         :ref:`Text math` 
+**LaTeX math _[L]** description                                        :ref:`LaTeX math` 
+text **_[#]** text                                                     :ref:`Endnote number`  
+text **_[G] text, term**                                               :ref:`Term link`
+text **_[S] text, section link**                                       :ref:`Section link`
+text **_[U] text, label**                                              :ref:`URL link`   
+text **_[V] var_name** text                                            :ref:`Substitute value`
+**title _[T]**                                                         :ref:`Number table`
+ **_[[TEXT]]** optional label                                          :ref:`Text block`
+ **_[[TOPIC]]** topic                                                  :ref:`Topic block`
+ **_[[END]]**                                                          :ref:`End block`
  **| IMAGE |** relative path |  scale, caption, figure                 :ref:`Image file`
  **| IMAGE2 |** rel path1, rel path2 | s1, s2, c1, c2, fig1, fig2      :ref:`Adjacent images`
  **| TEXT |** relative path |  language                                :ref:`Text file`
  **| TABLE |** rel path | title, width, rows, align, head              :ref:`Table file`     
 ==================================================================== =========================
 
+-------------------------------------------------
 
+.. _markup-V:
  
 **[3]** rv.V Markup
 ---------------------------------------------
 
- 
-
 The *Values* API function defines values and evaluates equations and functions.
 
-
----------------------------------------------
-
-**[3-1]** Line Tags
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
- 
-
-**Format a line of text**
-
-======================================== ==============================
-       Line Tag                                         Description 
-======================================== ==============================
-         text **_[V] var_name** | text      :ref:`Substitute value`
-        **title _[]**                       :ref:`Number table`                      
-======================================== ==============================
-
-
----------------------------------------------
-
-
-**[3-2]** Block Tags
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
- 
-
-**Format or run a block of text**
-
-========================================= ==============================
-       Block Tag                               Description 
-========================================= ==============================
-**_[[TEXT]]** optional label                 :ref:`Text block`
-**_[[PYTHON]]** namespace                       :ref:`Python block`
-**_[[END]]**                                    :ref:`End Block`
-========================================= ==============================
-
-
----------------------------------------------
-
-**[3-3]** Commands
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-**Format files and calculations**
-
 ================================================================= ========================
-        Command                                                      Description
+        Tags / Commands / Assignment                                      Description
 ================================================================= ========================
+**_[[TEXT]]** optional label                                       :ref:`Text block`
+**_[[PYTHON]]** namespace                                          :ref:`Python block`
+**_[[END]]**                                                       :ref:`End Block`
 | **TABLE** | rel path | title,width,rows,align,head,num           :ref:`Table file`     
 | **IMAGE** | relative path |  scale, caption, figure              :ref:`Image file`
 | **IMAGE2** | rel path1, rel path2 | c1, c2, s1, s2, f1, f2       :ref:`Adjacent images`
@@ -161,70 +81,37 @@ c **:=:** expression | unit1, unit2, decimal | label, number       :ref:`Functio
 a **<** c  | decimal | text1,text2,align, num                      :ref:`Compare value`
 ================================================================= ========================
 
-
 ---------------------------------------
 
+.. _markup-T:
 
 **[4]** rv.T Markup
-------------------------------------------------
-
- 
+------------------------------------------------ 
 
 The *Tool* API function executes shell commands. 
-
-
----------------------------------------
-
-**[4-1]** Block Tags
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-======================================= ==============================
-       Block Tag                              Description
-======================================= ==============================
- **_[[SHELL]]** process parameters            :ref:`Shell script`
- **_[[END]]**                                 :ref:`End block`
-======================================= ==============================
-
-
----------------------------------------
-
-**[4-2]** Commands
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ========================================= ====================
    Command                                    Description
 ========================================= ====================
+**_[[SHELL]]** process parameters         :ref:`Shell script`
+**_[[END]]**                              :ref:`End block`
 **| SHELL |** relative path | os, wait     :ref:`Shell File`
 ========================================= ====================
 
 ---------------------------------------
 
+.. _markup-D:
+
 **[5]** rv.D Markup
 --------------------------------
 
-
 The *Doc API* publishes formatted *docs* from the rivt API strings.
 
----------------------------------------
-
-
-**[5-1]** Block Tags
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-======================================= ==============================
-       Block Tag                         Description 
-======================================= ==============================
- **_[[METADATA]]** label                     :ref:`Meta block` 
- **_[[END]]**                                :ref:`End block`
-======================================= ==============================
-
-
-**[5-2]** Commands
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 ========================================================= ==================== 
-       Command                                                   Description
+   Tags / Commands / Assignment                            Description
 ========================================================= ==================== 
+ **_[[METADATA]]** label                                    :ref:`Meta block` 
+ **_[[END]]**                                               :ref:`End block`
 **| PDFATTACH |** relative path | place, cover              :ref:`Attach PDF`   
 **| PUBLISH |** ini rel. path | type                        :ref:`Publish Doc`
 ========================================================= ==================== 

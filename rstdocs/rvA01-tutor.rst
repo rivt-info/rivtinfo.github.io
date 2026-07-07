@@ -105,7 +105,7 @@ the file except for rv.D(r) which stops processing and triggers a doc output.
 .. dropdown:: [ 2 ] Add API method - rv.I
 
     See :ref:`header <Header substring>` and 
-    :ref:`content <Content substring>` for rivt string details. 
+    :ref:`content <Content substring>` reference for rivt string details. 
     This section includes :ref:`footnote [#]  and link [U] tags <line summary>`.
 
     .. code-block:: python
@@ -131,7 +131,9 @@ the file except for rv.D(r) which stops processing and triggers a doc output.
 .. dropdown:: [ 3 ] Add API method - rv.I
     
     This section includes inline comments ( ## ) and 
-    :ref:`[[TABLE]] blocks <block summary>`. 
+    :ref:`[[TABLE]] blocks <block summary>`. The **# %%** marks provide 
+    interactive execution and file navigation in a side pane of VSCode and 
+    may be auto inserted with keystrokes when the *rivt profile* is used.
                  
     .. code-block:: python
 
@@ -155,9 +157,9 @@ the file except for rv.D(r) which stops processing and triggers a doc output.
 
 .. dropdown:: [ 4 ]  Add API method - rv.V
     
-    This Value section includes the VALTABLE and IMAGE 
-    :ref:`commands <command-summary>`, the [C] and [T] :ref:`tags <line summary>`, 
-    and  the ==: and <=: :ref:`assignment operators <assign-summary>`
+    This Value section includes the | VALTABLE | and | IMAGE | 
+    :ref:`commands <command-summary>`, the _[C] and _[T] :ref:`tags <line summary>`, 
+    and the :ref:`assignment operators <assign-summary>` **==:** and **<=:** .
 
     .. code-block:: python
 
@@ -197,10 +199,11 @@ the file except for rv.D(r) which stops processing and triggers a doc output.
             omega_1 <=: dl_1 + ll_1 | k_ft, kN_m, 2 | Total load [ASCE7-05 2.3.2]
             """)
 
-.. dropdown:: [ Step 5 ] Add an API method - in this case rv.I(r). The first line in a
-                method is a heading substring, followed by content indented
-                four spaces.  The heading substring provides a title and 
-                :ref: `default parameters <Header substring>` for the section. 
+.. dropdown:: [ 5 ] Add API method - rv.V 
+
+    This Value section includes the | PYTHON |  and | IMAGE2 | 
+    :ref:`commands <command-summary>`, the _[B] and _[M] :ref:`tags <line summary>`, 
+    and the :ref:`assignment operators <assign-summary>` **:=:** and **<=:** . 
 
     .. code-block:: python
 
@@ -233,10 +236,11 @@ the file except for rv.D(r) which stops processing and triggers a doc output.
             delta_1 :=: midspan_delta(spn_1, omega_1, E_1, inertia_1) | inch, mm, 2 | mid-span deflection (sectprop.py)
             """)
 
-.. dropdown:: [ Sep 6 ] Add an API method - in this case rv.I(r). The first line in a
-                method is a heading substring, followed by content indented
-                four spaces.  The heading substring provides a title and 
-                :ref: `default parameters <Header substring>` for the section. 
+.. dropdown:: [ 6 ] Add an API method - rv.R
+
+    The Run API does not use commands or tags in the content substring. The
+    header substring includes a type parameter identifying the content text or 
+    script.
 
     .. code-block:: python
 
@@ -248,9 +252,9 @@ the file except for rv.D(r) which stops processing and triggers a doc output.
 
             ASCE/SEI 7-05, Minimum Design Loads for Buildings and Other Structures,
             American Society of Civil Engineers, 2005.
-            """
+            """)
 
-.. dropdown:: [ Step 7 ] Add an API method - in this case rv.I(r). The first line in a
+.. dropdown:: [ 7 ] Add an API method - in this case rv.I(r). The first line in a
                 method is a heading substring, followed by content indented
                 four spaces.  The heading substring provides a title and 
                 :ref: `default parameters <Header substring>` for the section. 
