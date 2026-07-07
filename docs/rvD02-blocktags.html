@@ -344,7 +344,8 @@
 <li class="toctree-l1"><a class="reference internal" href="rvD01-linetags.html"><strong>D.1 | Line Tags</strong></a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>D.2 | Block Tags</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvD03-commands.html"><strong>D.3 | Commands</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvD04-apimarkup.html"><strong>D.4 | API Scopes</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvD04-assign.html"><strong>D.4 | Assignment</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvD05-apiscope.html"><strong>D.4 | API Scopes</strong></a></li>
 </ul>
 </div>
 </nav></div>
@@ -496,24 +497,23 @@ Example:
 <p>Inserts formatted text into doc.</p>
 <ul class="simple">
 <li><p><em>literal</em></p></li>
-<li><p><em>rst</em></p></li>
-<li><p><em>note</em></p></li>
-<li><p><em>center</em></p></li>
+<li><p><em>python</em></p></li>
+<li><p><em>topic</em></p></li>
 <li><p><em>bold</em></p></li>
 <li><p><em>italic</em></p></li>
 </ul>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    _[[TEXT]]
+    _[[TEXT]] type
     text
     ...
     _[[END]]
 
 Example:
-    _[[TEXT]] rst
-    This is **bold** and
-    this is *italic* in
-    reStructuredtext
-    ...
+    _[[TEXT]] literal
+    This is a line of text.
+      This is another line indented.
+         A third line.
+    This text will be formatted as typed.
     _[[END]]
 </pre></div>
 </div>
@@ -521,10 +521,10 @@ Example:
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Insert</p></td>
+<td><p>Insert, Values</p></td>
 </tr>
 <tr class="row-even"><td><p>Doc Types</p></td>
-<td><p>text, PDF, HTML</p></td>
+<td><p>PDF, HTML</p></td>
 </tr>
 </tbody>
 </table>

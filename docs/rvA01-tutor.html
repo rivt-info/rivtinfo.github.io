@@ -421,7 +421,7 @@ interactive cells in an IDE e.g. VSCode.</p>
 <p>The third column describes the Doc API function which includes <em>doc</em> settings
 and triggers publication of a doc.</p>
 <figure class="align-center">
-<a class="dark-light reference internal image-reference" href="_images/tutor1.jpg"><img alt="rivt file anatomy" class="dark-light" height="644" src="_images/tutor1.jpg" width="598" />
+<a class="dark-light reference internal image-reference" href="_images/tutor1.jpg"><img alt="rivt file anatomy" class="dark-light" height="691" src="_images/tutor1.jpg" width="584" />
 </a>
 </figure>
 <p>The example file used in the tutorial, along with other report and rivtbook
@@ -460,25 +460,26 @@ inclusion in docs and reports.</p>
 </section>
 <section id="rivt-tutorial">
 <h2><strong>[2]</strong> rivt tutorial<a class="headerlink" href="#rivt-tutorial" title="Link to this heading">#</a></h2>
-<p><em>rivt files</em> can be created from scratch as a .py file or by copying and
-editing an existing rivt file. Click on the dropdown to expose the rivt file
-contents for each step.</p>
+<p><em>rivt files</em> can be created from scratch as a .py file or by making a copy and
+editing an existing rivt file. Click on the dropdown steps to expose the
+rivt file contents for each step. After initialization, any API can
+be used to start the file except rv.D(r) which is the last API, stops
+processing, and triggers a doc output.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">[1] Initialize a rivt file. Add the import statement and change
-             default comment settings if needed. If defaults are  acceptable
-             the rivt settings may be omitted. Triple quoted strings may
-             be added as non-printing comments.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+            default comment settings if needed. If defaults are cceptable
+            the rivt settings may be omitted. Defaults are in parenthesis.
+            Triple quoted strings may be added as non-printing comments.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot; This is a rivt doc example.  It is used in the tutorial at</span>
 <span class="sd">https://www.rivt.info.</span>
 
 <span class="sd">This example illustrates:</span>
 
 <span class="sd">    rivtlib markup</span>
-
-<span class="sd">    - multiple API sections</span>
-<span class="sd">    - footnotes</span>
-<span class="sd">    - inline comments</span>
+<span class="sd">    - Multiple API sections (chapters)</span>
+<span class="sd">    - Footnotes</span>
+<span class="sd">    - Inline comments</span>
 <span class="sd">    - Url links</span>
 <span class="sd">    - Variable definitions</span>
 <span class="sd">    - Table blocks and commands</span>
@@ -491,7 +492,7 @@ contents for each step.</p>
 <span class="sd">    VSCode / Python features</span>
 <span class="sd">    - cell labels</span>
 <span class="sd">    - docstrings</span>
-<span class="sd">    - extension modules</span>
+<span class="sd">    - extensions</span>
 
 <span class="sd">&quot;&quot;&quot;</span>
 
@@ -505,10 +506,13 @@ contents for each step.</p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text">[2] Add an API method - in this case rv.I(r). The first line in a
-            method is a heading substring, followed by content indented
-            four spaces.  The heading substring provides a section
-            title and default parameters for the section.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">[2] Add an API method - this example starts with the Insert method
+            <strong>rv.I(r)</strong>, where r is a triple-quoted string. The first line in a
+            method is a header, followed by content indented four spaces.
+            The heading substring provides a section title and default
+            parameters for the section. See <a class="reference internal" href="rvD00-markup.html#header-substring"><span class="std std-ref">here</span></a>
+            for details. This section illustrates the footnote
+            <strong>(_[#])</strong> and url link <strong>(_[U])</strong> tags.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %% rv.I(&quot;&quot;&quot;Summary and Loads</span>
 <span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Summary and Loads</span>
 
@@ -530,10 +534,10 @@ contents for each step.</p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text">[3] Add an API method - in this case rv.I(r). The first line in a
-            method is a heading substring, followed by content indented
-            four spaces.  The heading substring provides a title and
-            :ref: <cite>default parameters &lt;Header substring&gt;</cite> for the section.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">[3] Add a second API method - <strong>rv.I(r)</strong>. This
+            section illustrates inline comments and <strong>TABLE</strong> blocks. A
+            table block is formatted and stored as a csv file in the
+            <strong>rv_stor</strong> folder.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %% rv.I(&quot;&quot;&quot;Load Combinations</span>
 <span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Load Combinations</span>
 
@@ -550,16 +554,17 @@ contents for each step.</p>
 <span class="s2">    16-3           1.2(D+F+T) + 1.6(Lr or S or R) + (f1L or 0.8W)</span>
 <span class="s2">    ============= ================================================</span>
 <span class="s2">    _[[END]]</span>
-<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text">[4] Add an API method - in this case rv.I(r). The first line in a
-            method is a heading substring, followed by content indented
-            four spaces.  The heading substring provides a title and
-            :ref: <cite>default parameters &lt;Header substring&gt;</cite> for the section.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">[4] Add a third API method - the Value method rv.V(r). This section
+            illustrates the use of the <strong>VALTABLE</strong> command to read variable values
+            from a csv file in the <strong>rvsrc</strong> folder. The <strong>IMAGE</strong> command inserts
+            an image file with caption, scale and options. The <strong>IMAGE2</strong> command
+            inserts two images side by side with captions, scale and options.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %% rv.V(&quot;&quot;&quot;Loads and Geometry</span>
 <span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Loads and Geometry</span>
 

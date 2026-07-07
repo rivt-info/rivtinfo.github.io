@@ -56,18 +56,19 @@ docs in each format, and the README.txt file
 **[2]** rivt tutorial
 -----------------------------------------------
 
-*rivt files* can be created from scratch as a .py file or by copying and
-editing an existing rivt file. Click on the dropdown to expose the rivt file
-contents for each step.
+*rivt files* can be created from scratch as a .py file or by making a copy and
+editing an existing rivt file. Click on the dropdown steps to expose the 
+rivt file contents for each step. After initialization, any API can 
+be used to start the file except rv.D(r) which is the last API, stops
+processing, and triggers a doc output.
 
 .. dropdown:: [1] Initialize a rivt file. Add the import statement and change 
-                 default comment settings if needed. If defaults are  acceptable 
-                 the rivt settings may be omitted. Triple quoted strings may 
-                 be added as non-printing comments.
+                default comment settings if needed. If defaults are cceptable 
+                the rivt settings may be omitted. Defaults are in parenthesis. 
+                Triple quoted strings may be added as non-printing comments.
 
 
     .. code-block:: python
-
 
         """ This is a rivt doc example.  It is used in the tutorial at 
         https://www.rivt.info.
@@ -75,10 +76,9 @@ contents for each step.
         This example illustrates: 
 
             rivtlib markup
-
-            - multiple API sections
-            - footnotes
-            - inline comments
+            - Multiple API sections (chapters)
+            - Footnotes
+            - Inline comments
             - Url links
             - Variable definitions
             - Table blocks and commands
@@ -91,7 +91,7 @@ contents for each step.
             VSCode / Python features
             - cell labels
             - docstrings
-            - extension modules    
+            - extensions
 
         """
 
@@ -102,10 +102,13 @@ contents for each step.
         # rv private = true ; if false, default section heading changed to public (private)
 
 
-.. dropdown:: [2] Add an API method - in this case rv.I(r). The first line in a
-                method is a heading substring, followed by content indented
-                four spaces.  The heading substring provides a section 
-                title and default parameters for the section.  
+.. dropdown:: [2] Add an API method - this example starts with the Insert method 
+                **rv.I(r)**, where r is a triple-quoted string. The first line in a 
+                method is a header, followed by content indented four spaces. 
+                The heading substring provides a section title and default 
+                parameters for the section. See :ref:`here <Header substring>` 
+                for details. This section illustrates the footnote 
+                **(_[#])** and url link **(_[U])** tags.
 
     .. code-block:: python
 
@@ -127,11 +130,11 @@ contents for each step.
         """)
 
 
-.. dropdown:: [3] Add an API method - in this case rv.I(r). The first line in a
-                method is a heading substring, followed by content indented
-                four spaces.  The heading substring provides a title and 
-                :ref: `default parameters <Header substring>` for the section. 
-
+.. dropdown:: [3] Add a second API method - **rv.I(r)**. This 
+                section illustrates inline comments and **TABLE** blocks. A 
+                table block is formatted and stored as a csv file in the 
+                **rv_stor** folder.
+                 
     .. code-block:: python
 
         # %% rv.I("""Load Combinations 
@@ -150,12 +153,13 @@ contents for each step.
             16-3           1.2(D+F+T) + 1.6(Lr or S or R) + (f1L or 0.8W)
             ============= ================================================
             _[[END]]
-            """)
+        """)
 
-.. dropdown:: [4] Add an API method - in this case rv.I(r). The first line in a
-                method is a heading substring, followed by content indented
-                four spaces.  The heading substring provides a title and 
-                :ref: `default parameters <Header substring>` for the section. 
+.. dropdown:: [4] Add a third API method - the Value method rv.V(r). This section
+                illustrates the use of the **VALTABLE** command to read variable values
+                from a csv file in the **rvsrc** folder. The **IMAGE** command inserts
+                an image file with caption, scale and options. The **IMAGE2** command
+                inserts two images side by side with captions, scale and options.
 
     .. code-block:: python
 

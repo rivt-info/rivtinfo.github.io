@@ -7,19 +7,30 @@
 ------------------------------------
 
 
-The *Run* API function executes markup and scripts.
+The *Run* API method executes markup and scripts. It does not use markup. The
+header substring takes an additional parameter that specifies the type of
+script.
 
 
-**[1-1]** rv.R Block Tags
+**[1-1]** rv.R 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+The header substring has the form:
 
-========================================= ==============================
-       Block Tag                            Description 
-========================================= ==============================
-**_[[PYTHON]]** label                       :ref:`Python block`
-**_[[END]]**                                :ref:`End Block`
-========================================= ==============================
+.. code-block:: python
+
+    rv.R("""Section title | script_type, other parameters""")
+
+
+=========================== =================================================
+       script type                            Description 
+=========================== =================================================
+   endnotes                     footnotes separated by blank line in order   
+   python                       Python script
+   literal                      literal text
+   rst                          reStructuredText
+   html                         HTML markup
+=========================== =================================================
 
 ------------------------------------------
 

@@ -64,32 +64,30 @@ Doc Types     text, PDF, HTML
     Inserts formatted text into doc. 
 
     - *literal*
-    - *rst*
-    - *note*
-    - *center*
+    - *python*
+    - *topic*
     - *bold*
     - *italic*
 
-    
     .. code-block:: text
             
         Syntax:    
-            _[[TEXT]] 
+            _[[TEXT]] type
             text
             ...
             _[[END]]
 
         Example:    
-            _[[TEXT]] rst
-            This is **bold** and 
-            this is *italic* in 
-            reStructuredtext
-            ...
+            _[[TEXT]] literal
+            This is a line of text.
+              This is another line indented.
+                 A third line. 
+            This text will be formatted as typed.
             _[[END]]
 
 =========== ==========================
-API Scope     Insert
-Doc Types     text, PDF, HTML
+API Scope     Insert, Values
+Doc Types     PDF, HTML
 =========== ==========================
 
 -----------------------------

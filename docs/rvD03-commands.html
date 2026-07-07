@@ -59,7 +59,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'rvD03-commands';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="D.4 | API Scopes" href="rvD04-apimarkup.html" />
+    <link rel="next" title="D.4 | Assignment" href="rvD04-assign.html" />
     <link rel="prev" title="D.2 | Block Tags" href="rvD02-blocktags.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -344,7 +344,8 @@
 <li class="toctree-l1"><a class="reference internal" href="rvD01-linetags.html"><strong>D.1 | Line Tags</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvD02-blocktags.html"><strong>D.2 | Block Tags</strong></a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>D.3 | Commands</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvD04-apimarkup.html"><strong>D.4 | API Scopes</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvD04-assign.html"><strong>D.4 | Assignment</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvD05-apiscope.html"><strong>D.4 | API Scopes</strong></a></li>
 </ul>
 </div>
 </nav></div>
@@ -441,22 +442,6 @@
 <tr class="row-odd"><td><p>rv.V</p></td>
 <td><p><strong>| VALTABLE |</strong> rel path | title, width, num;non</p></td>
 <td><p><a class="reference internal" href="#values-file"><span class="std std-ref">[7]  Valtable file</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p>rv.V</p></td>
-<td><p>a <strong>==:</strong> 1*IN  | unit1, unit2, decimal | label</p></td>
-<td><p><a class="reference internal" href="#define-value"><span class="std std-ref">[8] Define value</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.V</p></td>
-<td><p>c <strong>&lt;=:</strong> expression | unit1, unit2, decimal | label</p></td>
-<td><p><a class="reference internal" href="#assign-value"><span class="std std-ref">[9] Assign value</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p>rv.V</p></td>
-<td><p>c <strong>:=:</strong> func(x,y) | unit1, unit2, decimal | label</p></td>
-<td><p><a class="reference internal" href="#inline-function"><span class="std std-ref">[10] Inline function</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.V</p></td>
-<td><p>a <strong>&lt;</strong> c | unit, decimal, text1, text2 | label</p></td>
-<td><p><a class="reference internal" href="#compare-value"><span class="std std-ref">[11] Compare values</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.V</p></td>
 <td><p><strong>| FUNCTION |</strong> function, arg, var, type | label</p></td>
@@ -575,11 +560,11 @@ Example:
 <span id="id3"></span><h2><strong>[3]</strong> Text file<a class="headerlink" href="#text-file" title="Link to this heading">#</a></h2>
 <p>The TEXT command reads and formats text and code files. The language parameter
 specifies formatting and syntax coloring.  Language types include:</p>
-<p>Inserts formatted text into doc.</p>
+<p>Inserts formatted text from file into doc.</p>
 <ul class="simple">
 <li><p><em>literal</em></p></li>
-<li><p><em>rst</em></p></li>
-<li><p><em>center</em></p></li>
+<li><p><em>python</em></p></li>
+<li><p><em>topic</em></p></li>
 <li><p><em>bold</em></p></li>
 <li><p><em>italic</em></p></li>
 </ul>
@@ -591,7 +576,7 @@ a single doc the file is read from the rivt file folder.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
     | MARKUP | relative path | type
 Example:
-    | MARKUP | rvsrc/script.rst | rest
+    | MARKUP | rvsrc/quote.txt | literal
 </pre></div>
 </div>
 </aside>
@@ -601,7 +586,7 @@ Example:
 <td><p>rv.I, rv.V</p></td>
 </tr>
 <tr class="row-even"><td><p>File Types</p></td>
-<td><p>txt, .py, .cmd, .bat, .sh, .rst</p></td>
+<td><p>txt, py</p></td>
 </tr>
 <tr class="row-odd"><td><p>Doc Types</p></td>
 <td><p>text, PDF, HTML</p></td>
@@ -757,137 +742,8 @@ Example:
 </table>
 </div>
 </section>
-<section id="define-value">
-<span id="id7"></span><h2><strong>[8]</strong> Define value<a class="headerlink" href="#define-value" title="Link to this heading">#</a></h2>
-<p>Defines a value and writes it to the file <em>vdocnum-s.csv</em> where <em>num</em> is the
-<em>docnumber</em> and <em>s</em> is the section number. The file is written to the folder
-<em>stored/vals</em> unless <em>singledocB</em> is set to <em>True</em> in the comment variable.</p>
-<p>The stored values can read and defined in other rivt files using the VALUES
-command.</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    c =: 5*unit | unit1, unit2, decimals | label, *num,nonum*
-
-Example:
-    D_1 =: 10*IN | IN, M, 3 | beam depth, num
-</pre></div>
-</div>
-<div class="pst-scrollable-table-container"><table class="table">
-<tbody>
-<tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>rv.V</p></td>
-</tr>
-<tr class="row-even"><td><p>File Types</p></td>
-<td><p>.csv</p></td>
-</tr>
-<tr class="row-odd"><td><p>Doc Types</p></td>
-<td><p>text, PDF, HTML</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="assign-value">
-<span id="id8"></span><h2><strong>[9]</strong> Assign value<a class="headerlink" href="#assign-value" title="Link to this heading">#</a></h2>
-<p>Assigns a value to an equation and writes the values to a file <em>vdocnum-s.csv</em>
-where <em>num</em> is the <em>doc number</em> and <em>s</em> is the section number. The file is
-written to the folder <em>stored/vals</em> unless <em>rv single doc</em> is set to <em>True</em>
-in which case values are stored in the rivt file folder (root).</p>
-<p>The label is a reference printed with the equation. The units specify the
-result expressed in two different units. The integer specifies the number of
-places after the decimals.</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    b &lt;=: a * 10*FT | unit1, unit2, decimals | label, num;nonum
-
-Example:
-    b_1 &lt;=: E_1 * 12.1*IN^2 | KIP, KN, 2 | Std. 123, num
-</pre></div>
-</div>
-<div class="pst-scrollable-table-container"><table class="table">
-<tbody>
-<tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>rv.V</p></td>
-</tr>
-<tr class="row-even"><td><p>File Types</p></td>
-<td><p>.csv</p></td>
-</tr>
-<tr class="row-odd"><td><p>Doc Types</p></td>
-<td><p>text, PDF, HTML</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="inline-function">
-<span id="id9"></span><h2><strong>[10]</strong> Inline function<a class="headerlink" href="#inline-function" title="Link to this heading">#</a></h2>
-<p>Assigns a value to an equation and writes the values to a file <em>vdocnum-s.csv</em>
-where <em>num</em> is the <em>doc number</em> and <em>s</em> is the section number. The file is
-written to the folder <em>stored/vals</em> unless <em>rv single doc</em> is set to <em>True</em>
-in which case values are stored in the rivt file folder (root).</p>
-<p>The label is a reference printed with the equation. The units specify the
-result expressed in two different units. The integer specifies the number of
-places after the decimals.</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    c :=: function name() | unit1, unit2, decimals | label, num;nonum
-
-Example:
-
-    c_1 :=: func1(a,b) | KIP, KN, 2 | ACI 318-19 Table 22.5.5.1, num
-</pre></div>
-</div>
-<div class="pst-scrollable-table-container"><table class="table">
-<tbody>
-<tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>rv.V</p></td>
-</tr>
-<tr class="row-even"><td><p>File Types</p></td>
-<td><p>.csv</p></td>
-</tr>
-<tr class="row-odd"><td><p>Doc Types</p></td>
-<td><p>text, PDF, HTML</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="compare-values">
-<span id="compare-value"></span><h2><strong>[11]</strong> Compare values<a class="headerlink" href="#compare-values" title="Link to this heading">#</a></h2>
-<p>Inserts a text with alignment and color on the following line if the expression
-evaluates to true. text1 and text2 are printed if true or false repectively.
-Colors are assigned accordingly as <em>red;blue;yellow;green;black;gray</em> defined
-in the <em>style files</em>.  The text is right aligned.</p>
-<p>Comparison operators:</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>==    Equal x == y
-!=    Not equal     x != y
-&gt;     Greater than  x &gt; y
-&lt;     Less than     x &lt; y
-&gt;=    Greater than or equal to x &gt;= y
-&lt;=    Less than or equal to x &lt;= y
-</pre></div>
-</div>
-<aside class="topic">
-<p class="topic-title">&lt;&gt;</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    a &lt; b | text1, text2, color1, color2
-
-Example:
-   a &lt; b |OK, NOT OK, blue, red
-</pre></div>
-</div>
-</aside>
-<div class="pst-scrollable-table-container"><table class="table">
-<tbody>
-<tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>rv.V</p></td>
-</tr>
-<tr class="row-even"><td><p>Doc Types</p></td>
-<td><p>text, PDF, HTML</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
 <section id="python-file">
-<span id="id10"></span><h2><strong>[12]</strong> Python file<a class="headerlink" href="#python-file" title="Link to this heading">#</a></h2>
+<span id="id7"></span><h2><strong>[12]</strong> Python file<a class="headerlink" href="#python-file" title="Link to this heading">#</a></h2>
 <p>Executes Python code in the <em>rivt namespace</em> or user specified namespace. File
 paths used in the script are relative to the root <em>rivt</em> folder.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
@@ -964,7 +820,7 @@ Example:
 </div>
 </section>
 <section id="attach-pdf">
-<span id="id11"></span><h2><strong>[15]</strong> Attach PDF<a class="headerlink" href="#attach-pdf" title="Link to this heading">#</a></h2>
+<span id="id8"></span><h2><strong>[15]</strong> Attach PDF<a class="headerlink" href="#attach-pdf" title="Link to this heading">#</a></h2>
 <p>Appends or prepends a PDF file to the <em>doc</em>. The title parameter generates an
 Appendix cover page with the specified title. A “-” omits the over page. For
 HTML <em>docs</em> the file is inserted as a donwload link.</p>
@@ -994,7 +850,7 @@ Example:
 </div>
 </section>
 <section id="publish-doc">
-<span id="id12"></span><h2><strong>[16]</strong> Publish doc<a class="headerlink" href="#publish-doc" title="Link to this heading">#</a></h2>
+<span id="id9"></span><h2><strong>[16]</strong> Publish doc<a class="headerlink" href="#publish-doc" title="Link to this heading">#</a></h2>
 <p>Publishes a <em>doc</em>.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
     | PUBLISH | ini relative path | rst2pdf, texpdf, tex, hmtl
@@ -1040,11 +896,11 @@ Example:
       </div>
     </a>
     <a class="right-next"
-       href="rvD04-apimarkup.html"
+       href="rvD04-assign.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>D.4 | API Scopes</strong></p>
+        <p class="prev-next-title"><strong>D.4 | Assignment</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1074,10 +930,6 @@ Example:
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#image-file"><strong>[5]</strong> Image file</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adjacent-images"><strong>[6]</strong> Adjacent images</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#valtable-file"><strong>[7]</strong>  Valtable file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#define-value"><strong>[8]</strong> Define value</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-value"><strong>[9]</strong> Assign value</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inline-function"><strong>[10]</strong> Inline function</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compare-values"><strong>[11]</strong> Compare values</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-file"><strong>[12]</strong> Python file</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function"><strong>[13]</strong> Function</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#copy-files"><strong>[14]</strong> Copy Files</a></li>

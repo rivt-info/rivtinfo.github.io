@@ -187,8 +187,6 @@ Examples of *header substring* settings are shown below.
 
 **Content substring**
 
- 
-
 The :term:`content substring` is indented four spaces for legibility and 
 code folding. It includes :doc:`line tags<rvD01-linetags>`, 
 :doc:`block tags<rvD02-blocktags>` and  :doc:`commands<rvD03-commands>` 
@@ -206,11 +204,11 @@ along with  text.
 Content is converted line by line into formatted text and 
 `RestructuredText <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`__,
 and then further processed into HTML or PDF. If a line does not contain 
-a *command* or *tag* it is passed through as is, which allows for the 
-*Insert* function (rv.I) including some *restructured text* directly i.e. 
-surrounding words with * or ** will format a word as italic or bold respectively.
+a *command*, *tag* or *assignment* it is passed through as is. This allows the 
+*Insert* function (rv.I) to include some *restructured text* directly i.e. 
+surrounding words with * or ** will format a word as italic or bold.
 
-In addition block tags in the *Tools function* (rv.T) directly supports
+In addition block tags in the *Tools function* (rv.R) directly supports
 processing HTML, LaTeX and reStructuredText scripts.
 
 -------------------------------------------------
@@ -336,5 +334,6 @@ the folder structure is :ref:`here<report-folders>`.
     rvD01-linetags.rst
     rvD02-blocktags.rst
     rvD03-commands.rst    
-    rvD04-apimarkup.rst
+    rvD04-assign.rst    
+    rvD05-apiscope.rst
     
