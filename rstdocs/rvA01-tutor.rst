@@ -63,6 +63,9 @@ The complete file is shown in the next chapter. After initialization, any API
 can be used  except for rv.D(r) which stops file processing and triggers a doc 
 output.
 
+Unit definitions are :ref:`here <unit-definitions>`. New units may be defined
+in the add-units.py file in the *rvsrc* folder.
+
 .. dropdown::  [ 1 ] Add import statement 
 
     Following the import statement, comment settings may be added if defaults need
@@ -171,7 +174,7 @@ output.
             Value definitions are formatted as a table. Variable values are
             defined with the define operator. The line tag [T] labels and
             numbers the table. Units are listed here. New units may be defined
-            in the new-units.py file in the rvsrc folder.
+            in the add-units.py file in the rvsrc folder.
             
             Define Unit Loads _[T]
             D_1 ==: 3.8 * p_sf | p_sf, kPA, 2 | joists DL         
