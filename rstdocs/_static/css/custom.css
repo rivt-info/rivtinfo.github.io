@@ -117,3 +117,9 @@ hr {
     background-color: hwb(200 15% 27%);
     border: none;
 }
+
+table.footnote {
+    background-color: #1e4b78;
+    /* Change to your desired color */
+    border-radius: 6px;
+}
