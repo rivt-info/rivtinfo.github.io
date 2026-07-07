@@ -57,14 +57,14 @@ docs in each format, and the README.txt file.
 **[2]** tutorial - Example 1
 -----------------------------------------------
 
-*rivt files* can be created from scratch as a .py file or by making a copy and
+*rivt files* can be created from scratch as a *.py* file or by making a copy and
 editing an existing rivt file. The rivt file contents are shown in the dropdowns.
 The complete file is shown in the next chapter. After initialization, any API 
 can be used  except for rv.D(r) which stops file processing and triggers a doc 
 output.
 
 Unit definitions are :ref:`here <unit-definitions>`. New units may be defined
-in the add-units.py file in the *rvsrc* folder.
+in the *add-units.py* file in the *rvsrc/scripts* folder.
 
 .. dropdown::  [ 1 ] Add import statement 
 
