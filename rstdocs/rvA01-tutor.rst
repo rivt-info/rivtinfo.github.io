@@ -29,11 +29,11 @@ and triggers publication of a doc.
     :alt: rivt file anatomy
 
 
-The example file used in the tutorial, along with other report and rivtbook 
+The example file used in the tutorial, along with three other report and rivtbook 
 example files, are provided at 
 `google drive <https://drive.google.com/drive/u/1/folders/1NP04tdp3FRAir0ErvL2hlm3YBaFlLk5V>`_. 
-The four examples provided include the rivt file, source files, published
-docs in each format, and the README.txt file
+The four examples provided include the rivt file with source files, published
+docs in each format, and the README.txt file.
 
 #. Example 1
     An example file that illustrates common API functions and rivt
@@ -54,7 +54,7 @@ docs in each format, and the README.txt file
     inclusion in docs and reports.
 
 
-**[2]** rivt tutorial
+**[2]** tutorial - Example 1
 -----------------------------------------------
 
 *rivt files* can be created from scratch as a .py file or by making a copy and
