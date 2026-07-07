@@ -45,7 +45,7 @@ There are four types of rivt document files:
 
 
                   | A rivtbook is a collection of rivt files
-      rivtbook    | with a commonsubject matter that are 
+      rivtbook    | with a common subject matter and
                   | organized for efficient selection and 
                   | inclusionin docs and reports.
    

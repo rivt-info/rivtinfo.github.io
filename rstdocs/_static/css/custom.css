@@ -7,7 +7,7 @@ html aside.footnote-list,
 html div.footnote,
 html aside.footnote *,
 html div.footnote * {
-    background-color: #293245 !important;
+    background-color: #252b38 !important;
     /* Light theme background */
 }
 
@@ -17,7 +17,7 @@ html[data-theme="dark"] aside.footnote-list,
 html[data-theme="dark"] div.footnote,
 html[data-theme="dark"] aside.footnote *,
 html[data-theme="dark"] div.footnote * {
-    background-color: #293245 !important;
+    background-color: #252b38 !important;
     /* Dark theme background */
 }
 
