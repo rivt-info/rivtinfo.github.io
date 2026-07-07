@@ -508,7 +508,7 @@ are not indented and are not part of the doc</p>
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">[ 2 ] Add API method - rv.I</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">See <a class="reference internal" href="rvD00-markup.html#header-substring"><span class="std std-ref">header</span></a> and
-<a class="reference internal" href="rvD00-markup.html#content-substring"><span class="std std-ref">content</span></a> for rivt string details.
+<a class="reference internal" href="rvD00-markup.html#content-substring"><span class="std std-ref">content</span></a> reference for rivt string details.
 This section includes <a class="reference internal" href="rvD01-linetags.html#line-summary"><span class="std std-ref">footnote [#]  and link [U] tags</span></a>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %% rv.I(&quot;&quot;&quot;Summary and Loads</span>
 <span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Summary and Loads</span>
@@ -533,7 +533,9 @@ This section includes <a class="reference internal" href="rvD01-linetags.html#li
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">[ 3 ] Add API method - rv.I</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">This section includes inline comments ( ## ) and
-<a class="reference internal" href="rvD02-blocktags.html#block-summary"><span class="std std-ref">[[TABLE]] blocks</span></a>.</p>
+<a class="reference internal" href="rvD02-blocktags.html#block-summary"><span class="std std-ref">[[TABLE]] blocks</span></a>. The <strong># %%</strong> marks provide
+interactive execution and file navigation in a side pane of VSCode and
+may be auto inserted with keystrokes when the <em>rivt profile</em> is used.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %% rv.I(&quot;&quot;&quot;Load Combinations</span>
 <span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Load Combinations</span>
 
@@ -557,9 +559,9 @@ This section includes <a class="reference internal" href="rvD01-linetags.html#li
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">[ 4 ]  Add API method - rv.V</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">This Value section includes the VALTABLE and IMAGE
-<a class="reference internal" href="rvD03-commands.html#command-summary"><span class="std std-ref">commands</span></a>, the [C] and [T] <a class="reference internal" href="rvD01-linetags.html#line-summary"><span class="std std-ref">tags</span></a>,
-and  the ==: and &lt;=: <a class="reference internal" href="rvD04-assign.html#assign-summary"><span class="std std-ref">assignment operators</span></a></p>
+<p class="sd-card-text">This Value section includes the | VALTABLE | and | IMAGE |
+<a class="reference internal" href="rvD03-commands.html#command-summary"><span class="std std-ref">commands</span></a>, the _[C] and _[T] <a class="reference internal" href="rvD01-linetags.html#line-summary"><span class="std std-ref">tags</span></a>,
+and the <a class="reference internal" href="rvD04-assign.html#assign-summary"><span class="std std-ref">assignment operators</span></a> <strong>==:</strong> and <strong>&lt;=:</strong> .</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %% rv.V(&quot;&quot;&quot;Loads and Geometry</span>
 <span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Loads and Geometry</span>
 
@@ -600,10 +602,10 @@ and  the ==: and &lt;=: <a class="reference internal" href="rvD04-assign.html#as
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text">[ Step 5 ] Add an API method - in this case rv.I(r). The first line in a
-            method is a heading substring, followed by content indented
-            four spaces.  The heading substring provides a title and
-            :ref: <cite>default parameters &lt;Header substring&gt;</cite> for the section.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">[ 5 ] Add API method - rv.V</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">This Value section includes the | PYTHON |  and | IMAGE2 |
+<a class="reference internal" href="rvD03-commands.html#command-summary"><span class="std std-ref">commands</span></a>, the _[B] and _[M] <a class="reference internal" href="rvD01-linetags.html#line-summary"><span class="std std-ref">tags</span></a>,
+and the <a class="reference internal" href="rvD04-assign.html#assign-summary"><span class="std std-ref">assignment operators</span></a> <strong>:=:</strong> and <strong>&lt;=:</strong> .</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %% rv.V(&quot;&quot;&quot;Beam Stress</span>
 <span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Beam Response</span>
 
@@ -637,10 +639,10 @@ and  the ==: and &lt;=: <a class="reference internal" href="rvD04-assign.html#as
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text">[ Sep 6 ] Add an API method - in this case rv.I(r). The first line in a
-            method is a heading substring, followed by content indented
-            four spaces.  The heading substring provides a title and
-            :ref: <cite>default parameters &lt;Header substring&gt;</cite> for the section.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">[ 6 ] Add an API method - rv.R</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The Run API does not use commands or tags in the content substring. The
+header substring includes a type parameter identifying the content text or
+script. In this case the API is used for endnotes. See <a class="reference internal" href="rvD05-apiscope.html#markup-r"><span class="std std-ref">rv.R Markup</span></a>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %% rv.R(&quot;&quot;&quot;doc notes | endnotes</span>
 <span class="n">rv</span><span class="o">.</span><span class="n">R</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;doc notes | endnotes</span>
 <span class="s2">    &quot;Euler-Bernoulli beam theory&quot;, Wikipedia, Wikimedia Foundation. [Online].</span>
@@ -649,16 +651,18 @@ and  the ==: and &lt;=: <a class="reference internal" href="rvD04-assign.html#as
 
 <span class="s2">    ASCE/SEI 7-05, Minimum Design Loads for Buildings and Other Structures,</span>
 <span class="s2">    American Society of Civil Engineers, 2005.</span>
-<span class="s2">    &quot;&quot;&quot;</span>
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text">[ Step 7 ] Add an API method - in this case rv.I(r). The first line in a
-            method is a heading substring, followed by content indented
-            four spaces.  The heading substring provides a title and
-            :ref: <cite>default parameters &lt;Header substring&gt;</cite> for the section.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">[ 7 ] Final API method - rv.D</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The Doc API publishes formatted <em>docs</em> and then exits the rivt file. The
+primary tag is the _[[METADATA]] block which includes the doc metadataand
+layout settings. The primary command is the | PUBLISH | command which
+specifies the doc title and type. The | PDFATTACH | command may be used to
+attach a PDF file to the doc. See <a class="reference internal" href="rvD05-apiscope.html#markup-d"><span class="std std-ref">rv.D Markup</span></a>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %% rv.D(&quot;&quot;&quot;Publish Doc</span>
 <span class="n">rv</span><span class="o">.</span><span class="n">D</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Publish Doc</span>
 

@@ -20,8 +20,8 @@
 
 
 *rivt* is an open source Python tool for writing and publishing engineering
-documents, with a focus on controlled reuse. Python knowledge is not
-required but *rivt* capabilities are extended with Python scripts that access
+documents, with a focus on selective reuse [1]. Python knowledge is not
+required but *rivt* capabilities can be extended with Python scripts that access
 scientific and engineering libraries.
 
 There are four types of rivt document files:
@@ -57,8 +57,10 @@ For an overview of *rivt* see :ref:`here <rivt-overview>`. To get started using
 The *rivtlib* Python package formats and compiles a *rivt file* to a text, PDF
 or HTML document ( **docs** ) in about a second. *rivt file* sections may be
 interactively executed in an IDE, similar to a `Jupyter notebook.
-<https://jupyter.org/>`__ Mulitple *rivt files* may be compiled into a collated 
-*rivt report*. This website is an example of an HTML *rivt report*.
+<https://jupyter.org/>`__ Mulitple *rivt files* may be compiled into a collated
+*rivt report*. This website is an example of an HTML *rivt report*. *rivtbooks*
+are collections of *rivt files* on a common subject matter organized for
+efficient selection and inclusion in reports.
 
 A convenient interface for searching public *rivt files* on **GitHub** is 
 :doc:`here. <rvE02-github>` Open source engineering models, documents and
@@ -72,6 +74,10 @@ for static, formatted documents including journal articles and books that do
 not need recalculation. A brief discussion of engineering document
 tools and their strengths relative to the objectives of *rivt* is :ref:`here
 <motivation>`.
+
+[1] *Selective reuse* is the built-in capability to export selected
+sections of a *rivt file* for public sharing, while maintaining the complete file
+for publication. 
 
 .. raw:: html
 

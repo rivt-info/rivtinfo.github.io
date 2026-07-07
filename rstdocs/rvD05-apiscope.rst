@@ -6,7 +6,7 @@
 **[1]** rv.R Markup
 ------------------------------------
 
-The *Run* API method processes text and scripts. It does not use markup. The
+The *Run API* processes text and scripts. It does not use markup. The
 header substring takes an additional parameter that specifies the type of
 text or script. The header substring has the form:
 
@@ -31,7 +31,7 @@ text or script. The header substring has the form:
 **[2]** rv.I Markup
 -------------------------------------------------------------------------------
  
-The *Insert* API function inserts and formats static sources into the *doc*,
+The *Insert API* inserts and formats static sources into the *doc*,
 including images, tables, links and formatted text.
 
 ==================================================================== =========================
@@ -62,7 +62,7 @@ text **_[V] var_name** text                                            :ref:`Sub
 **[3]** rv.V Markup
 ---------------------------------------------
 
-The *Values* API function defines values and evaluates equations and functions.
+The *Values API* defines values and evaluates equations and functions.
 
 ================================================================= ========================
         Tags / Commands / Assignment                                      Description
@@ -88,7 +88,7 @@ a **<** c  | decimal | text1,text2,align, num                      :ref:`Compare
 **[4]** rv.T Markup
 ------------------------------------------------ 
 
-The *Tool* API function executes shell commands. 
+The *Tool API*  executes shell commands. 
 
 ========================================= ====================
    Command                                    Description
@@ -108,10 +108,10 @@ The *Tool* API function executes shell commands.
 The *Doc API* publishes formatted *docs* from the rivt API strings.
 
 ========================================================= ==================== 
-   Tags / Commands / Assignment                            Description
+   Tags / Commands / Assignment                              Description
 ========================================================= ==================== 
  **_[[METADATA]]** label                                    :ref:`Meta block` 
  **_[[END]]**                                               :ref:`End block`
 **| PDFATTACH |** relative path | place, cover              :ref:`Attach PDF`   
-**| PUBLISH |** ini rel. path | type                        :ref:`Publish Doc`
+**| PUBLISH |** doc title | type                            :ref:`Publish Doc`
 ========================================================= ==================== 

@@ -113,7 +113,8 @@ The API and markup are designed to be:
 
 - versatile 
     A *rivt file* produces a text, HTML or PDF *doc*. Multiple *docs* can be 
-    organized into reports. *rivt* can be run within a variety of IDEs.
+    organized into reports. *rivtbooks* provide a convenient way to organize files
+    around a subject matter. *rivt* can be run within a variety of IDEs.
 
 - efficient
     The file and folder settings produce clear, organized documents with 

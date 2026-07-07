@@ -240,7 +240,7 @@ the file except for rv.D(r) which stops processing and triggers a doc output.
 
     The Run API does not use commands or tags in the content substring. The
     header substring includes a type parameter identifying the content text or 
-    script.
+    script. In this case the API is used for endnotes. See :ref:`rv.R Markup <markup-R>`. 
 
     .. code-block:: python
 
@@ -254,10 +254,13 @@ the file except for rv.D(r) which stops processing and triggers a doc output.
             American Society of Civil Engineers, 2005.
             """)
 
-.. dropdown:: [ 7 ] Add an API method - in this case rv.I(r). The first line in a
-                method is a heading substring, followed by content indented
-                four spaces.  The heading substring provides a title and 
-                :ref: `default parameters <Header substring>` for the section. 
+.. dropdown:: [ 7 ] Final API method - rv.D
+    
+    The Doc API publishes formatted *docs* and then exits the rivt file. The
+    primary tag is the _[[METADATA]] block which includes the doc metadataand
+    layout settings. The primary command is the | PUBLISH | command which
+    specifies the doc title and type. The | PDFATTACH | command may be used to
+    attach a PDF file to the doc. See :ref:`rv.D Markup <markup-D>`.
 
     .. code-block:: python
 
