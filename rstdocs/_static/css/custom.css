@@ -1,15 +1,25 @@
 /* overrides */
 
 html aside.footnote,
+/* Target the container, the lists, and the paragraph text inside footnotes */
+html aside.footnote,
 html aside.footnote-list,
-html div.footnote {
-    background-color: #222f56;
+html div.footnote,
+html aside.footnote *,
+html div.footnote * {
+    background-color: #999a9d !important;
     /* Light theme background */
-    padding: 10px;
-    border-radius: 4px;
-
 }
 
+/* Ensure the background applies correctly in dark mode */
+html[data-theme="dark"] aside.footnote,
+html[data-theme="dark"] aside.footnote-list,
+html[data-theme="dark"] div.footnote,
+html[data-theme="dark"] aside.footnote *,
+html[data-theme="dark"] div.footnote * {
+    background-color: #999a9d !important;
+    /* Dark theme background */
+}
 
 img.align-center {
     margin-left: auto;
