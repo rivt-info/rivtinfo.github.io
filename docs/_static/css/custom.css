@@ -1,5 +1,16 @@
 /* overrides */
 
+html aside.footnote,
+html aside.footnote-list,
+html div.footnote {
+    background-color: #222f56;
+    /* Light theme background */
+    padding: 10px;
+    border-radius: 4px;
+
+}
+
+
 img.align-center {
     margin-left: auto;
     margin-right: auto;
@@ -116,10 +127,4 @@ hr {
     height: 3px;
     background-color: hwb(200 15% 27%);
     border: none;
-}
-
-table.footnote {
-    background-color: #1e4b78;
-    /* Change to your desired color */
-    border-radius: 6px;
 }
