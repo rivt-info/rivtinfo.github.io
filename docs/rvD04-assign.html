@@ -421,36 +421,36 @@
 <tbody>
 <tr class="row-even"><td><p>rv.V</p></td>
 <td><p>a <strong>==:</strong> 1*IN  | unit1, unit2, decimal | label</p></td>
-<td><p><a class="reference internal" href="#define-value"><span class="std std-ref">[2] Define value</span></a></p></td>
+<td><p><a class="reference internal" href="#define-value"><span class="std std-ref">[2] ==: Define value</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V</p></td>
 <td><p>c <strong>&lt;=:</strong> expression | unit1, unit2, decimal | label</p></td>
-<td><p><a class="reference internal" href="#assign-value"><span class="std std-ref">[3] Assign value</span></a></p></td>
+<td><p><a class="reference internal" href="#assign-value"><span class="std std-ref">[3] &lt;=: Assign expression value</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.V</p></td>
 <td><p>c <strong>:=:</strong> func(x,y) | unit1, unit2, decimal | label</p></td>
-<td><p><a class="reference internal" href="#inline-function"><span class="std std-ref">[4] Inline function</span></a></p></td>
+<td><p><a class="reference internal" href="#assign-function"><span class="std std-ref">[4] :=: Assign function value</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V</p></td>
-<td><p>a <strong>&lt;</strong> c | unit, decimal, text1, text2 | label</p></td>
-<td><p><a class="reference internal" href="#compare-value"><span class="std std-ref">[5] Compare values</span></a></p></td>
+<td><p>a <strong>&lt;=</strong> c | unit, decimal, text1, text2 | label</p></td>
+<td><p><a class="reference internal" href="#compare-value"><span class="std std-ref">[5] &lt;= Compare values</span></a></p></td>
 </tr>
 </tbody>
 </table>
 </div>
 </section>
 <section id="define-value">
-<span id="id1"></span><h2><strong>[2]</strong> Define value<a class="headerlink" href="#define-value" title="Link to this heading">#</a></h2>
+<span id="id1"></span><h2><strong>[2]</strong> ==: Define value<a class="headerlink" href="#define-value" title="Link to this heading">#</a></h2>
 <p>Defines a value and writes it to the file <em>vdocnum-s.csv</em> where <em>num</em> is the
 <em>docnumber</em> and <em>s</em> is the section number. The file is written to the folder
 <em>stored/vals</em> unless <em>singledocB</em> is set to <em>True</em> in the comment variable.</p>
 <p>The stored values can read and defined in other rivt files using the VALUES
 command.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    c =: 5*unit | unit1, unit2, decimals | label, *num,nonum*
+    c ==: 5*unit | unit1, unit2, decimals | label, *num,nonum*
 
 Example:
-    D_1 =: 10*IN | IN, M, 3 | beam depth, num
+    D_1 ==: 10*IN | IN, M, 3 | beam depth, num
 </pre></div>
 </div>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -468,8 +468,8 @@ Example:
 </table>
 </div>
 </section>
-<section id="assign-value">
-<span id="id2"></span><h2><strong>[3]</strong> Assign value<a class="headerlink" href="#assign-value" title="Link to this heading">#</a></h2>
+<section id="assign-expression-value">
+<span id="assign-value"></span><h2><strong>[3]</strong> &lt;=: Assign expression value<a class="headerlink" href="#assign-expression-value" title="Link to this heading">#</a></h2>
 <p>Assigns a value to an equation and writes the values to a file <em>vdocnum-s.csv</em>
 where <em>num</em> is the <em>doc number</em> and <em>s</em> is the section number. The file is
 written to the folder <em>stored/vals</em> unless <em>rv single doc</em> is set to <em>True</em>
@@ -499,8 +499,8 @@ Example:
 </table>
 </div>
 </section>
-<section id="inline-function">
-<span id="id3"></span><h2><strong>[4]</strong> Inline function<a class="headerlink" href="#inline-function" title="Link to this heading">#</a></h2>
+<section id="assign-function-value">
+<span id="assign-function"></span><h2><strong>[4]</strong> :=: Assign function value<a class="headerlink" href="#assign-function-value" title="Link to this heading">#</a></h2>
 <p>Assigns a value to an equation and writes the values to a file <em>vdocnum-s.csv</em>
 where <em>num</em> is the <em>doc number</em> and <em>s</em> is the section number. The file is
 written to the folder <em>stored/vals</em> unless <em>rv single doc</em> is set to <em>True</em>
@@ -532,7 +532,7 @@ Example:
 </div>
 </section>
 <section id="compare-values">
-<span id="compare-value"></span><h2><strong>[5]</strong> Compare values<a class="headerlink" href="#compare-values" title="Link to this heading">#</a></h2>
+<span id="compare-value"></span><h2><strong>[5]</strong> &lt;= Compare values<a class="headerlink" href="#compare-values" title="Link to this heading">#</a></h2>
 <p>Inserts a text with alignment and color on the following line if the expression
 evaluates to true. text1 and text2 are printed if true or false repectively.
 Colors are assigned accordingly as <em>red;blue;yellow;green;black;gray</em> defined
@@ -618,10 +618,10 @@ Example:
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assignment-summary"><strong>[1]</strong> Assignment Summary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#define-value"><strong>[2]</strong> Define value</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-value"><strong>[3]</strong> Assign value</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inline-function"><strong>[4]</strong> Inline function</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compare-values"><strong>[5]</strong> Compare values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#define-value"><strong>[2]</strong> ==: Define value</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-expression-value"><strong>[3]</strong> &lt;=: Assign expression value</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-function-value"><strong>[4]</strong> :=: Assign function value</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compare-values"><strong>[5]</strong> &lt;= Compare values</a></li>
 </ul>
   </nav></div>
 

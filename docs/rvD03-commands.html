@@ -437,7 +437,7 @@
 </tr>
 <tr class="row-even"><td><p>rv.V</p></td>
 <td><p><strong>| PYTHON |</strong> rel path | rivt;namespace</p></td>
-<td><p><a class="reference internal" href="#python-file"><span class="std std-ref">[12] Python file</span></a></p></td>
+<td><p><a class="reference internal" href="#python-file"><span class="std std-ref">[8] Python file</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V</p></td>
 <td><p><strong>| VALTABLE |</strong> rel path | title, width, num;non</p></td>
@@ -445,11 +445,11 @@
 </tr>
 <tr class="row-even"><td><p>rv.V</p></td>
 <td><p><strong>| FUNCTION |</strong> function, arg, var, type | label</p></td>
-<td><p><a class="reference internal" href="#function-value"><span class="std std-ref">[13] Function</span></a></p></td>
+<td><p><a class="reference internal" href="#function-value"><span class="std std-ref">[9] Function</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.T</p></td>
 <td><p><strong>| COPY |</strong> abs src path | abs dest path | file pattern</p></td>
-<td><p><a class="reference internal" href="#copy-file"><span class="std std-ref">[14] Copy Files</span></a></p></td>
+<td><p><a class="reference internal" href="#copy-file"><span class="std std-ref">[10] Copy Files</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.T</p></td>
 <td><p><strong>| SHELL |</strong> abs path | os, wait</p></td>
@@ -457,11 +457,11 @@
 </tr>
 <tr class="row-odd"><td><p>rv.D</p></td>
 <td><p><strong>| ATTACHPDF |</strong> rel path | front;back, title</p></td>
-<td><p><a class="reference internal" href="#attach-pdf"><span class="std std-ref">[15] Attach PDF</span></a></p></td>
+<td><p><a class="reference internal" href="#attach-pdf"><span class="std std-ref">[11] Attach PDF</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.D</p></td>
 <td><p><strong>| PUBLISH |</strong> doc title | type</p></td>
-<td><p><a class="reference internal" href="#publish-doc"><span class="std std-ref">[16] Publish doc</span></a></p></td>
+<td><p><a class="reference internal" href="#publish-doc"><span class="std std-ref">[12] Publish doc</span></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -743,7 +743,7 @@ Example:
 </div>
 </section>
 <section id="python-file">
-<span id="id7"></span><h2><strong>[12]</strong> Python file<a class="headerlink" href="#python-file" title="Link to this heading">#</a></h2>
+<span id="id7"></span><h2><strong>[8]</strong> Python file<a class="headerlink" href="#python-file" title="Link to this heading">#</a></h2>
 <p>Executes Python code in the <em>rivt namespace</em> or user specified namespace. File
 paths used in the script are relative to the root <em>rivt</em> folder.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
@@ -769,7 +769,7 @@ Example:
 </div>
 </section>
 <section id="function">
-<span id="function-value"></span><h2><strong>[13]</strong> Function<a class="headerlink" href="#function" title="Link to this heading">#</a></h2>
+<span id="function-value"></span><h2><strong>[9]</strong> Function<a class="headerlink" href="#function" title="Link to this heading">#</a></h2>
 <p>Executes Python functions imported by the PYTHON command.
 Function args are defined and named by the [[ARG]] block.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
@@ -795,7 +795,7 @@ Example:
 </div>
 </section>
 <section id="copy-files">
-<span id="copy-file"></span><h2><strong>[14]</strong> Copy Files<a class="headerlink" href="#copy-files" title="Link to this heading">#</a></h2>
+<span id="copy-file"></span><h2><strong>[10]</strong> Copy Files<a class="headerlink" href="#copy-files" title="Link to this heading">#</a></h2>
 <p>Copy files using absolute paths. -rvsrc- is an alias for the rvsrc folder.
 OS alias may also be used e.g. %USERPROFILE% on Windows.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
@@ -820,7 +820,7 @@ Example:
 </div>
 </section>
 <section id="attach-pdf">
-<span id="id8"></span><h2><strong>[15]</strong> Attach PDF<a class="headerlink" href="#attach-pdf" title="Link to this heading">#</a></h2>
+<span id="id8"></span><h2><strong>[11]</strong> Attach PDF<a class="headerlink" href="#attach-pdf" title="Link to this heading">#</a></h2>
 <p>Appends or prepends a PDF file to the <em>doc</em>. The title parameter generates an
 Appendix cover page with the specified title. A “-” omits the over page. For
 HTML <em>docs</em> the file is inserted as a donwload link.</p>
@@ -850,7 +850,7 @@ Example:
 </div>
 </section>
 <section id="publish-doc">
-<span id="id9"></span><h2><strong>[16]</strong> Publish doc<a class="headerlink" href="#publish-doc" title="Link to this heading">#</a></h2>
+<span id="id9"></span><h2><strong>[12]</strong> Publish doc<a class="headerlink" href="#publish-doc" title="Link to this heading">#</a></h2>
 <p>Publishes a <em>doc</em>.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
     | PUBLISH | ini relative path | rst2pdf, texpdf, tex, hmtl
@@ -930,11 +930,11 @@ Example:
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#image-file"><strong>[5]</strong> Image file</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adjacent-images"><strong>[6]</strong> Adjacent images</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#valtable-file"><strong>[7]</strong>  Valtable file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-file"><strong>[12]</strong> Python file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function"><strong>[13]</strong> Function</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#copy-files"><strong>[14]</strong> Copy Files</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attach-pdf"><strong>[15]</strong> Attach PDF</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publish-doc"><strong>[16]</strong> Publish doc</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-file"><strong>[8]</strong> Python file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function"><strong>[9]</strong> Function</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#copy-files"><strong>[10]</strong> Copy Files</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attach-pdf"><strong>[11]</strong> Attach PDF</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publish-doc"><strong>[12]</strong> Publish doc</a></li>
 </ul>
   </nav></div>
 

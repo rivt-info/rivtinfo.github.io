@@ -260,7 +260,7 @@ Doc Types     text, PDF, HTML
 
 .. _Python file:
 
-**[12]** Python file
+**[8]** Python file
 -------------------------------------------
 
  
@@ -285,7 +285,7 @@ Doc Types     text, PDF, HTML
 
 .. _Function value:
 
-**[13]** Function
+**[9]** Function
 -------------------------------------------
 
 Executes Python functions imported by the PYTHON command. 
@@ -308,7 +308,7 @@ Doc Types     text, PDF, HTML
 
 .. _Copy file:
 
-**[14]** Copy Files
+**[10]** Copy Files
 -------------------------------------------
 
 Copy files using absolute paths. -rvsrc- is an alias for the rvsrc folder.
@@ -330,7 +330,7 @@ Doc Types     text, PDF, HTML
 
 .. _Attach PDF:
 
-**[15]** Attach PDF
+**[11]** Attach PDF
 -------------------------------------------
 
  
@@ -358,7 +358,7 @@ Doc Types     text, PDF, HTML
 
 .. _Publish doc:
 
-**[16]** Publish doc
+**[12]** Publish doc
 -------------------------------------------
 
  

@@ -14,14 +14,14 @@ API Scope           Command                                                     
 ========== =============================================================== ========================
 rv.V         a **==:** 1*IN  | unit1, unit2, decimal | label                 :ref:`Define value`
 rv.V         c **<=:** expression | unit1, unit2, decimal | label            :ref:`Assign value`
-rv.V         c **:=:** func(x,y) | unit1, unit2, decimal | label             :ref:`Inline function`
-rv.V         a **<** c | unit, decimal, text1, text2 | label                 :ref:`Compare value`
+rv.V         c **:=:** func(x,y) | unit1, unit2, decimal | label             :ref:`Assign function`
+rv.V         a **<=** c | unit, decimal, text1, text2 | label                :ref:`Compare value`
 ========== =============================================================== ========================
 
 
 .. _Define value:
 
-**[2]** Define value
+**[2]** ==: Define value 
 -------------------------------------------
 
 Defines a value and writes it to the file *vdocnum-s.csv* where *num* is the 
@@ -34,10 +34,10 @@ command.
 .. code-block:: text
 
     Syntax:
-        c =: 5*unit | unit1, unit2, decimals | label, *num,nonum*
+        c ==: 5*unit | unit1, unit2, decimals | label, *num,nonum*
 
     Example:
-        D_1 =: 10*IN | IN, M, 3 | beam depth, num
+        D_1 ==: 10*IN | IN, M, 3 | beam depth, num
   
 =========== ==========================
 API Scope     rv.V
@@ -48,7 +48,7 @@ Doc Types     text, PDF, HTML
 
 .. _Assign value:
 
-**[3]** Assign value
+**[3]** <=: Assign expression value
 -------------------------------------------
 
 Assigns a value to an equation and writes the values to a file *vdocnum-s.csv*
@@ -76,9 +76,9 @@ Doc Types     text, PDF, HTML
 =========== ==========================
 
 
-.. _Inline function:
+.. _Assign function:
 
-**[4]** Inline function
+**[4]** :=: Assign function value
 -------------------------------------------
 
 Assigns a value to an equation and writes the values to a file *vdocnum-s.csv*
@@ -109,7 +109,7 @@ Doc Types     text, PDF, HTML
 
 .. _Compare value:
 
-**[5]** Compare values
+**[5]** <= Compare values
 -----------------------------------------
 
 Inserts a text with alignment and color on the following line if the expression

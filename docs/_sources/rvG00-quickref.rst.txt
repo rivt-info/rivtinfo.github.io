@@ -137,7 +137,7 @@ rv.V        **| PYTHON |** rel path | rivt;namespace                         :re
 rv.V        **| VALTABLE |** rel path | title, width, num;non                :ref:`Values file`   
 rv.V        a **==:** 1*IN  | unit1, unit2, decimal | label                  :ref:`Define value`
 rv.V        c **<=:** expression | unit1, unit2, decimal | label             :ref:`Assign value`
-rv.V        c **:=:** func(x,y) | unit1, unit2, decimal | label              :ref:`Inline function`
+rv.V        c **:=:** func(x,y) | unit1, unit2, decimal | label              :ref:`Assign function`
 rv.V        a **<** c | unit, decimal, text1, text2 | label                  :ref:`Compare value`
 rv.V        **| FUNCTION |** function, arg, var, type | label                :ref:`Function value`  
 rv.T        **| COPY |** abs src path | abs dest path | file pattern         :ref:`Copy file`
