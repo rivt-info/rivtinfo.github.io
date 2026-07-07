@@ -51,20 +51,20 @@ There are four types of rivt document files:
    
 
 For an overview of *rivt* see :ref:`here <rivt-overview>`. To get started using
-*rivt* see :ref:`here <rivt-start>`. For *rivt* and *AI* see :ref:`here
-<rivt-context>`.
+*rivt* see :ref:`here <rivt-start>` and :ref:`here <rivt-tutor>` for 
+installation and tutorials. For *rivt* and *AI* see :ref:`here <rivt-context>`.
 
 The *rivtlib* Python package formats and compiles a *rivt file* to a text, PDF
-or HTML document ( **docs** ) in about a second. *rivt file* sections may be
+or HTML document ( *doc* ) in about a second. *rivt file* sections may be
 interactively executed in an IDE, similar to a `Jupyter notebook.
 <https://jupyter.org/>`__ Mulitple *rivt files* may be compiled into a collated
 *rivt report*. This website is an example of an HTML *rivt report*. *rivtbooks*
 are collections of *rivt files* on a common subject matter organized for
 efficient selection and inclusion in reports.
 
-A convenient interface for searching public *rivt files* on **GitHub** is 
-:doc:`here. <rvE02-github>` Open source engineering models, documents and
-examples, including *rivt*, may be downloaded from 
+A convenient interface for searching and downloading public *rivt files* on
+*GitHub* is :doc:`here. <rvE02-github>` Open source engineering models,
+documents and examples, including *rivt*, may be downloaded from 
 `Google Drive. <https://www.openmodels.info>`__
 
 *rivt* produces clear, organized engineering documents from active calculations
@@ -85,7 +85,7 @@ tools and their strengths relative to the objectives of *rivt* is :ref:`here
 
    <p style="color:rgb(63,177,197);">ver: 1.0.0a12 
    (Note: rivt is currently <i>alpha sofware</i>. Some features are incomplete 
-   and markup *tags and commands* may change.)</p>
+   and markup tags, commands and assignments may change.)</p>
 
 .. toctree::
     :maxdepth: 1
