@@ -62,13 +62,14 @@ rivt file contents for each step. After initialization, any API can
 be used to start the file except rv.D(r) which is the last API, stops
 processing, and triggers a doc output.
 
-.. dropdown::  [ Step 1 ]Add the import statement and change 
+.. dropdown::  [ Step 1 ] Add the import statement and change 
                 default comment settings if needed. 
 
     .. code-block:: python
 
         """ This is a rivt doc example.  It is used in the tutorial at 
-        https://www.rivt.info.
+        https://www.rivt.info. Note that triple quoted comments can be added
+        between API methods. They are not indented and are not part of the doc.
 
         This example illustrates: 
 
@@ -94,14 +95,15 @@ processing, and triggers a doc output.
 
         import rivtlib.rvapi as rv
 
+        # cooment settings are only needed if defaults are changed.
         # rv set_width = 80  ; character width of text output (80)
         # rv no_tag = true ; if false, the API type is added to section number (true)
         # rv private = true ; if false, default section heading changed to public (private)
 
 
-.. dropdown:: [ Step 2] Add API methods. See :ref:`here <Header substring>` 
-                for header details. This section illustrates 
-                :ref:`_[#] footnote and url link _[U] tags <line summary>`.
+.. dropdown:: [ Step 2] Add API methods. See :ref:`header <Header substring>` 
+                and :ref:`content <Content substring>` for rivt string details. 
+                This section includes :ref:`footnote [#]  and link [U] tags <line summary>`.
 
     .. code-block:: python
 
@@ -123,15 +125,15 @@ processing, and triggers a doc output.
         """)
 
 
-.. dropdown:: [ Step 3 ] This section illustrates inline comments and 
-                :ref:`_[[TABLE]] blocks <block summary>`. 
+.. dropdown:: [ Step 3 ] This section includes inline comments ( ## ) and 
+                :ref:`[[TABLE]] blocks <block summary>`. 
                  
     .. code-block:: python
 
         # %% rv.I("""Load Combinations 
         rv.I("""Load Combinations 
 
-            ## Indented comments with double hashes will not appear in the doc
+            ## Comments with double hashes will not appear in the doc
             
             Dead and live loads effects are taken from ASCE 7-05 _[#]
 
@@ -146,20 +148,20 @@ processing, and triggers a doc output.
             _[[END]]
         """)
 
-.. dropdown:: [ Step 4] Add a third API method - the Value method rv.V(r). This section
-                illustrates the use of the **VALTABLE** command to read variable values
-                from a csv file in the **rvsrc** folder. The **IMAGE** command inserts
-                an image file with caption, scale and options. The **IMAGE2** command
-                inserts two images side by side with captions, scale and options.
+.. dropdown:: [ Step 4 ] This Value section includes the VALTABLE and IMAGE 
+                :ref:`commands <command-summary>`, the [C] and [T] 
+                :ref: `tags <line summary>`, and 
+                the ==: and <=: :ref:`assignment operators <assign-summary>`
 
     .. code-block:: python
 
         # %% rv.V("""Loads and Geometry
         rv.V("""Loads and Geometry 
             
-            Successive value definitions are formatted as a table. Variable values are
-            defined with the define operator. The line tag [T] labels and numbers the
-            table.
+            Value definitions are formatted as a table. Variable values are
+            defined with the define operator. The line tag [T] labels and
+            numbers the table. Units are listed here. New units may be defined
+            in the new-units.py file in the rvsrc folder.
             
             Define Unit Loads _[T]
             D_1 ==: 3.8 * p_sf | p_sf, kPA, 2 | joists DL         
@@ -234,7 +236,7 @@ processing, and triggers a doc output.
 
         # %% rv.R("""doc notes | endnotes
         rv.R("""doc notes | endnotes
-            "Euler–Bernoulli beam theory", Wikipedia, Wikimedia Foundation. [Online].
+            "Euler-Bernoulli beam theory", Wikipedia, Wikimedia Foundation. [Online].
             https://en.wikipedia.org/wiki/Euler_Bernoulli_beam_theory. 
             [Accessed: Jun. 15, 2026].
 
