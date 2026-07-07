@@ -14,15 +14,17 @@ text or script. The header substring has the form:
 
     rv.R("""Section title | script_type, other parameters""")
 
-=========================== =================================================
+=========================== ====================================================
        script type                            Description 
-=========================== =================================================
-   endnotes                     footnotes separated by blank line in order   
+=========================== ====================================================
+   endnotes                     Footnotes separated by blank line, in order   
    python                       Python script
    literal                      literal text
    rst                          reStructuredText
    html                         HTML markup
-=========================== =================================================
+   mermaid                      Mermaid diagram (requires mermaid installation)
+   latex                        LaTeX (requires LaTeX installation)
+=========================== ====================================================
 
 ------------------------------------------
 

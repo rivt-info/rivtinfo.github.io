@@ -20,7 +20,7 @@
 
 
 *rivt* is an open source Python tool for writing and publishing engineering
-documents, with a focus on selective reuse [1]. Python knowledge is not
+documents, with a focus on selective reuse [1]_. Python knowledge is not
 required but *rivt* capabilities can be extended with Python scripts that access
 scientific and engineering libraries.
 
@@ -75,9 +75,9 @@ not need recalculation. A brief discussion of engineering document
 tools and their strengths relative to the objectives of *rivt* is :ref:`here
 <motivation>`.
 
-[1] *Selective reuse* is the built-in capability to export selected
-sections of a *rivt file* for public sharing, while maintaining the complete file
-for publication. 
+.. [1] *Selective reuse* is the built-in capability to export selected
+    sections of a *rivt file* for public sharing, while maintaining the 
+    complete file for publication. 
 
 .. raw:: html
 
