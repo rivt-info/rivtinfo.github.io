@@ -57,19 +57,20 @@ docs in each format, and the README.txt file
 -----------------------------------------------
 
 *rivt files* can be created from scratch as a .py file or by making a copy and
-editing an existing rivt file. Click on the dropdown steps to expose the 
-rivt file contents for each step. After initialization, any API can 
-be used to start the file except rv.D(r) which is the last API, stops
-processing, and triggers a doc output.
+editing an existing rivt file. Click on the dropdown steps to expose the rivt
+file contents for each step. After initialization, any API can be used to start
+the file except for rv.D(r) which stops processing and triggers a doc output.
 
-.. dropdown::  [ Step 1 ] Add the import statement and change 
-                default comment settings if needed. 
+.. dropdown::  [ Step 1 ] Add import statement 
 
+    Following the import statement, comment settings may be added if defaults need
+    to be changed. Triple quoted comments can be added between API methods. They 
+    are not indented and are not part of the doc
+                
     .. code-block:: python
 
         """ This is a rivt doc example.  It is used in the tutorial at 
-        https://www.rivt.info. Note that triple quoted comments can be added
-        between API methods. They are not indented and are not part of the doc.
+        https://www.rivt.info. .
 
         This example illustrates: 
 
@@ -101,9 +102,11 @@ processing, and triggers a doc output.
         # rv private = true ; if false, default section heading changed to public (private)
 
 
-.. dropdown:: [ Step 2] Add API methods. See :ref:`header <Header substring>` 
-                and :ref:`content <Content substring>` for rivt string details. 
-                This section includes :ref:`footnote [#]  and link [U] tags <line summary>`.
+.. dropdown:: [ Step 2] Add API method - rv.I
+
+    See :ref:`header <Header substring>` and 
+    :ref:`content <Content substring>` for rivt string details. 
+    This section includes :ref:`footnote [#]  and link [U] tags <line summary>`.
 
     .. code-block:: python
 
@@ -125,8 +128,10 @@ processing, and triggers a doc output.
         """)
 
 
-.. dropdown:: [ Step 3 ] This section includes inline comments ( ## ) and 
-                :ref:`[[TABLE]] blocks <block summary>`. 
+.. dropdown:: [ Step 3 ] Add API method - rv.I
+    
+    This section includes inline comments ( ## ) and 
+    :ref:`[[TABLE]] blocks <block summary>`. 
                  
     .. code-block:: python
 
@@ -148,10 +153,12 @@ processing, and triggers a doc output.
             _[[END]]
         """)
 
-.. dropdown:: [ Step 4 ] This Value section includes the VALTABLE and IMAGE 
-                :ref:`commands <command-summary>`, the [C] and [T] 
-                :ref: `tags <line summary>`, and 
-                the ==: and <=: :ref:`assignment operators <assign-summary>`
+.. dropdown:: [ Step 4 ]  Add API method - rv.V
+    
+    This Value section includes the VALTABLE and IMAGE 
+    :ref:`commands <command-summary>`, the [C] and [T] 
+    :ref: `tags <line summary>`, and 
+    the ==: and <=: :ref:`assignment operators <assign-summary>`
 
     .. code-block:: python
 
