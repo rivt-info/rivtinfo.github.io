@@ -44,8 +44,8 @@ There are four types of rivt document files:
                   | Each doc is a chapter in the report.
 
 
-                  | A rivt book is a collection of rivt files
-      rivt book   |  with a commonsubject matter that are 
+                  | A rivtbook is a collection of rivt files
+      rivtbook    | with a commonsubject matter that are 
                   | organized for efficient selection and 
                   | inclusionin docs and reports.
    
