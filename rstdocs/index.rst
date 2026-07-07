@@ -75,7 +75,7 @@ not need recalculation. A brief discussion of engineering document
 tools and their strengths relative to the objectives of *rivt* is :ref:`here
 <motivation>`.
 
-.. [1] *Selective reuse* is the built-in capability to export selected
+.. [1] Selective reuse is the built-in capability to export selected
     sections of a *rivt file* for public sharing, while maintaining the 
     complete file for publication. 
 
