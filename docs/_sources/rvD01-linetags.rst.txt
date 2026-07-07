@@ -1,10 +1,12 @@
 **D.1 | Line Tags**
 ========================
 
+.. _line summary:
+
 **[1]** Line Tag Summary
 -------------------------------------
 
-**Format a line of text**
+**Format line of text**
 
 ========== ==================================================== ================================
 API Scope             Line Tag                                      Description 

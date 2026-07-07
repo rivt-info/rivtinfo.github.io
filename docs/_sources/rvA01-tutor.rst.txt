@@ -62,11 +62,8 @@ rivt file contents for each step. After initialization, any API can
 be used to start the file except rv.D(r) which is the last API, stops
 processing, and triggers a doc output.
 
-.. dropdown:: [1] Initialize a rivt file. Add the import statement and change 
-                default comment settings if needed. If defaults are cceptable 
-                the rivt settings may be omitted. Defaults are in parenthesis. 
-                Triple quoted strings may be added as non-printing comments.
-
+.. dropdown::  [ Step 1 ]Add the import statement and change 
+                default comment settings if needed. 
 
     .. code-block:: python
 
@@ -102,13 +99,9 @@ processing, and triggers a doc output.
         # rv private = true ; if false, default section heading changed to public (private)
 
 
-.. dropdown:: [2] Add an API method - this example starts with the Insert method 
-                **rv.I(r)**, where r is a triple-quoted string. The first line in a 
-                method is a header, followed by content indented four spaces. 
-                The heading substring provides a section title and default 
-                parameters for the section. See :ref:`here <Header substring>` 
-                for details. This section illustrates the footnote 
-                **(_[#])** and url link **(_[U])** tags.
+.. dropdown:: [ Step 2] Add API methods. See :ref:`here <Header substring>` 
+                for header details. This section illustrates 
+                :ref:`_[#] footnote and url link _[U] tags <line summary>`.
 
     .. code-block:: python
 
@@ -130,10 +123,8 @@ processing, and triggers a doc output.
         """)
 
 
-.. dropdown:: [3] Add a second API method - **rv.I(r)**. This 
-                section illustrates inline comments and **TABLE** blocks. A 
-                table block is formatted and stored as a csv file in the 
-                **rv_stor** folder.
+.. dropdown:: [ Step 3 ] This section illustrates inline comments and 
+                :ref:`_[[TABLE]] blocks <block summary>`. 
                  
     .. code-block:: python
 
@@ -155,7 +146,7 @@ processing, and triggers a doc output.
             _[[END]]
         """)
 
-.. dropdown:: [4] Add a third API method - the Value method rv.V(r). This section
+.. dropdown:: [ Step 4] Add a third API method - the Value method rv.V(r). This section
                 illustrates the use of the **VALTABLE** command to read variable values
                 from a csv file in the **rvsrc** folder. The **IMAGE** command inserts
                 an image file with caption, scale and options. The **IMAGE2** command
@@ -198,7 +189,7 @@ processing, and triggers a doc output.
             omega_1 <=: dl_1 + ll_1 | k_ft, kN_m, 2 | Total load [ASCE7-05 2.3.2]
             """)
 
-.. dropdown:: [5] Add an API method - in this case rv.I(r). The first line in a
+.. dropdown:: [ Step 5 ] Add an API method - in this case rv.I(r). The first line in a
                 method is a heading substring, followed by content indented
                 four spaces.  The heading substring provides a title and 
                 :ref: `default parameters <Header substring>` for the section. 
@@ -234,7 +225,7 @@ processing, and triggers a doc output.
             delta_1 :=: midspan_delta(spn_1, omega_1, E_1, inertia_1) | inch, mm, 2 | mid-span deflection (sectprop.py)
             """)
 
-.. dropdown:: [6] Add an API method - in this case rv.I(r). The first line in a
+.. dropdown:: [ Sep 6 ] Add an API method - in this case rv.I(r). The first line in a
                 method is a heading substring, followed by content indented
                 four spaces.  The heading substring provides a title and 
                 :ref: `default parameters <Header substring>` for the section. 
@@ -251,7 +242,7 @@ processing, and triggers a doc output.
             American Society of Civil Engineers, 2005.
             """
 
-.. dropdown:: [7] Add an API method - in this case rv.I(r). The first line in a
+.. dropdown:: [ Step 7 ] Add an API method - in this case rv.I(r). The first line in a
                 method is a heading substring, followed by content indented
                 four spaces.  The heading substring provides a title and 
                 :ref: `default parameters <Header substring>` for the section. 

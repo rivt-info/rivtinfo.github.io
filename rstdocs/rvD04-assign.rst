@@ -4,10 +4,10 @@
 
 .. _assign-summary:
 
-**[1]** Assignment Summary
+**[1]** Summary
 -------------------------------------
 
-**Assignments assign values to expressions**
+**Assign values to expressions**
 
 ========== =============================================================== ========================
 API Scope           Command                                                        Description
@@ -21,7 +21,7 @@ rv.V         a **<=** c | unit, decimal, text1, text2 | label                :re
 
 .. _Define value:
 
-**[2]** ==: Define value 
+**[2]** Define values | **==:**
 -------------------------------------------
 
 Defines a value and writes it to the file *vdocnum-s.csv* where *num* is the 
@@ -48,7 +48,7 @@ Doc Types     text, PDF, HTML
 
 .. _Assign value:
 
-**[3]** <=: Assign expression value
+**[3]** Assign expression values | **<=:**
 -------------------------------------------
 
 Assigns a value to an equation and writes the values to a file *vdocnum-s.csv*
@@ -78,7 +78,7 @@ Doc Types     text, PDF, HTML
 
 .. _Assign function:
 
-**[4]** :=: Assign function value
+**[4]** Assign function values | **:=:**
 -------------------------------------------
 
 Assigns a value to an equation and writes the values to a file *vdocnum-s.csv*
@@ -109,13 +109,10 @@ Doc Types     text, PDF, HTML
 
 .. _Compare value:
 
-**[5]** <= Compare values
+**[5]** Compare values | **<=**
 -----------------------------------------
 
-Inserts a text with alignment and color on the following line if the expression
-evaluates to true. text1 and text2 are printed if true or false repectively.
-Colors are assigned accordingly as *red;blue;yellow;green;black;gray* defined
-in the *style files*.  The text is right aligned.
+Format to text1 if comparison is true and text2 if false. 
 
 Comparison operators:
 
@@ -133,10 +130,10 @@ Comparison operators:
     .. code-block:: text
 
         Syntax:  
-            a < b | text1, text2, color1, color2
+            a < b | unit, decimal, text1, text2
         
         Example:
-           a < b |OK, NOT OK, blue, red
+           a < b | ft, 2, OK, NOT OK
   
 =========== ==========================
 API Scope     rv.V
