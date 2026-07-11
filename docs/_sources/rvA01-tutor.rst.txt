@@ -18,8 +18,8 @@ The second column briefly describes the markup contents in an API method.
 API methods always output formatted text to STDOUT and may be run as
 interactive cells in an IDE e.g. VSCode.
 
-The third column describes the Doc API function which includes *doc* settings
-and triggers publication of a doc.
+The third column describes the Doc API function which contains settings
+that trigger publication of a *doc*.
 
 
 .. figure::  _static/img/tutor1.jpg
@@ -29,11 +29,9 @@ and triggers publication of a doc.
     :alt: rivt file anatomy
 
 
-The example file used in the tutorial, along with three other report and rivtbook 
+The example file used in this tutorial, along with other report and rivtbook 
 example files, are provided at 
 `google drive <https://drive.google.com/drive/u/1/folders/1NP04tdp3FRAir0ErvL2hlm3YBaFlLk5V>`_. 
-The four examples provided include the rivt file with source files, published
-docs in each format, and the README.txt file.
 
 #. Example 1
     An example file that illustrates common API functions and rivt
@@ -52,6 +50,12 @@ docs in each format, and the README.txt file.
     An example *rivtbook*. *rivtbooks* are collections of rivt files
     with a common subject matter organized for efficient selection and 
     inclusion in docs and reports.
+
+The four examples provide: 
+
+- the rivt file with source files
+- published docs in each format
+- the README.txt file
 
 
 **[2]** tutorial - Example 1
