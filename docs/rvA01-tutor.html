@@ -59,7 +59,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'rvA01-tutor';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="A.2 | rivt file" href="rvA02-file.html" />
+    <link rel="next" title="A.2 | rivt Example File" href="rvA02-file.html" />
     <link rel="prev" title="A.0 | Start" href="rvA00-start.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -342,7 +342,7 @@
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>A.1 | Tutorial</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvA02-file.html"><strong>A.2 | rivt file</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvA02-file.html"><strong>A.2 | rivt Example File</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvA03-txt.html"><strong>A.3 | TEXT doc</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvA04-html.html"><strong>A.4 | HTML doc</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvA05-pdf.html"><strong>A.5 | PDF doc</strong></a></li>
@@ -462,19 +462,20 @@ inclusion in docs and reports.</p>
 </section>
 <section id="tutorial-example-1">
 <h2><strong>[2]</strong> tutorial - Example 1<a class="headerlink" href="#tutorial-example-1" title="Link to this heading">#</a></h2>
-<p><em>rivt files</em> can be created from scratch as a <em>.py</em> file or by making a copy and
-editing an existing rivt file. The rivt file contents are shown in the dropdowns.
-The complete file is shown in the next chapter. After initialization, any API
-can be used  except for rv.D(r) which stops file processing and triggers a doc
-output.</p>
+<p><em>rivt files</em> can be created from scratch as a <em>.py</em> file or by making a copy
+and editing an existing rivt file. The rivt file contents for this example are
+shown in the dropdowns. The complete file is shown in the next chapter.</p>
 <p>Unit definitions are <a class="reference internal" href="rvG00-quickref.html#unit-definitions"><span class="std std-ref">here</span></a>. New units may be defined
-in the <em>add-units.py</em> file in the <em>rvsrc/scripts</em> folder.</p>
+by the <em>add-units.py</em> file in the <em>rvsrc/scripts</em> folder.</p>
+<p>After initialization, any API can be used any number of times and in any order,
+except for rv.D(r) which stops file processing and triggers a doc output with
+the <strong>| PUBLISH |</strong> command.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">[ 1 ] Add import statement</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Following the import statement, comment settings may be added if defaults need
-to be changed. Triple quoted comments can be added between API methods. They
-are not indented and are not part of the doc</p>
+<p class="sd-card-text">Following the import statement, comment settings may be added if defaults
+need to be changed. In addition, triple quoted comments can be added
+between API methods. They are not indented and are not part of the doc.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot; This is a rivt doc example.  It is used in the tutorial at</span>
 <span class="sd">https://www.rivt.info. .</span>
 
@@ -645,9 +646,10 @@ and the <a class="reference internal" href="rvD04-assign.html#assign-summary"><s
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">[ 6 ] Add API method - rv.R</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">The Run API does not use commands or tags in the content substring. The
-header substring includes a type parameter identifying the content text or
-script. In this case the API is used for endnotes. See <a class="reference internal" href="rvD05-apiscope.html#markup-r"><span class="std std-ref">rv.R Markup</span></a>.</p>
+<p class="sd-card-text">The <strong>Run API</strong> does not use commands or tags in the <em>content substring</em>.
+The <strong>header substring</strong> includes a type parameter identifying the content
+text or script. In this example the API is used for endnotes. See <a class="reference internal" href="rvD05-apiscope.html#markup-r"><span class="std std-ref">rv.R
+Markup</span></a>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %% rv.R(&quot;&quot;&quot;doc notes | endnotes</span>
 <span class="n">rv</span><span class="o">.</span><span class="n">R</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;doc notes | endnotes</span>
 <span class="s2">    &quot;Euler-Bernoulli beam theory&quot;, Wikipedia, Wikimedia Foundation. [Online].</span>
@@ -664,20 +666,21 @@ script. In this case the API is used for endnotes. See <a class="reference inter
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">[ 7 ] Final API method - rv.D</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">The Doc API publishes formatted <em>docs</em> and then exits the rivt file. The
-primary tag is the _[[METADATA]] block which includes the doc metadataand
-layout settings. The primary command is the | PUBLISH | command which
-specifies the doc title and type. The | PDFATTACH | command may be used to
-attach a PDF file to the doc. See <a class="reference internal" href="rvD05-apiscope.html#markup-d"><span class="std std-ref">rv.D Markup</span></a>.</p>
+primary command is the <strong>| PUBLISH |</strong> command which specifies the doc title
+and type. The primary tag is the <strong>_[[METADATA]]</strong> block which includes the
+<em>doc</em> [metadata] and [layout] settings. The <strong>| PDFATTACH |</strong> command may
+be used to attach a PDF file to the doc. See <a class="reference internal" href="rvD05-apiscope.html#markup-d"><span class="std std-ref">rv.D Markup</span></a>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %% rv.D(&quot;&quot;&quot;Publish Doc</span>
 <span class="n">rv</span><span class="o">.</span><span class="n">D</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Publish Doc</span>
 
-<span class="s2">    A rivt file may be published as a text, PDF or HTML doc by specifying the</span>
-<span class="s2">    PUBLISH type parameter as txt, pdf or html.</span>
+<span class="s2">    A rivt file may be published as a text, PDF or HTML doc by specifying</span>
+<span class="s2">    the PUBLISH type parameter as txt, pdf or html.</span>
 
-<span class="s2">    Published files are found in sub-folders of the _published folder. A text</span>
-<span class="s2">    version of the doc or report is is always written to the rivt and</span>
-<span class="s2">    _rivt-public folders as a README.txt file. READMEs are formatted and</span>
-<span class="s2">    displayed on the first page of a GitHub repo.</span>
+<span class="s2">    Published files are found in sub-folders of the _published folder. A</span>
+<span class="s2">    text version of the doc or report is is always written to</span>
+<span class="s2">    STDOUT (terminal) and the rivt and _rivt-public folders as a</span>
+<span class="s2">    README.txt file. READMEs are formatted and displayed on the first</span>
+<span class="s2">    page of a GitHub repo.</span>
 
 <span class="s2">    | PUBLISH | Example 1 - rivt Doc | pdf</span>
 
@@ -747,7 +750,7 @@ attach a PDF file to the doc. See <a class="reference internal" href="rvD05-apis
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>A.2 | rivt file</strong></p>
+        <p class="prev-next-title"><strong>A.2 | rivt Example File</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

@@ -1,5 +1,5 @@
-**A.2 | rivt file**
-=========================
+**A.2 | rivt Example File**
+=============================
 
 .. code-block:: python
 

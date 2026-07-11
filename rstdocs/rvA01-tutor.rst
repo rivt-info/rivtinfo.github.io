@@ -57,20 +57,22 @@ docs in each format, and the README.txt file.
 **[2]** tutorial - Example 1
 -----------------------------------------------
 
-*rivt files* can be created from scratch as a *.py* file or by making a copy and
-editing an existing rivt file. The rivt file contents are shown in the dropdowns.
-The complete file is shown in the next chapter. After initialization, any API 
-can be used  except for rv.D(r) which stops file processing and triggers a doc 
-output.
+*rivt files* can be created from scratch as a *.py* file or by making a copy
+and editing an existing rivt file. The rivt file contents for this example are
+shown in the dropdowns. The complete file is shown in the next chapter.
 
 Unit definitions are :ref:`here <unit-definitions>`. New units may be defined
-in the *add-units.py* file in the *rvsrc/scripts* folder.
+by the *add-units.py* file in the *rvsrc/scripts* folder.
+
+After initialization, any API can be used any number of times and in any order,
+except for rv.D(r) which stops file processing and triggers a doc output with
+the **| PUBLISH |** command.
 
 .. dropdown::  [ 1 ] Add import statement 
 
-    Following the import statement, comment settings may be added if defaults need
-    to be changed. Triple quoted comments can be added between API methods. They 
-    are not indented and are not part of the doc
+    Following the import statement, comment settings may be added if defaults
+    need to be changed. In addition, triple quoted comments can be added
+    between API methods. They are not indented and are not part of the doc.
                 
     .. code-block:: python
 
@@ -243,9 +245,10 @@ in the *add-units.py* file in the *rvsrc/scripts* folder.
 
 .. dropdown:: [ 6 ] Add API method - rv.R
 
-    The Run API does not use commands or tags in the content substring. The
-    header substring includes a type parameter identifying the content text or 
-    script. In this case the API is used for endnotes. See :ref:`rv.R Markup <markup-R>`. 
+    The **Run API** does not use commands or tags in the *content substring*.
+    The **header substring** includes a type parameter identifying the content
+    text or script. In this example the API is used for endnotes. See :ref:`rv.R
+    Markup <markup-R>`.
 
     .. code-block:: python
 
@@ -262,23 +265,24 @@ in the *add-units.py* file in the *rvsrc/scripts* folder.
 .. dropdown:: [ 7 ] Final API method - rv.D
     
     The Doc API publishes formatted *docs* and then exits the rivt file. The
-    primary tag is the _[[METADATA]] block which includes the doc metadataand
-    layout settings. The primary command is the | PUBLISH | command which
-    specifies the doc title and type. The | PDFATTACH | command may be used to
-    attach a PDF file to the doc. See :ref:`rv.D Markup <markup-D>`.
+    primary command is the **| PUBLISH |** command which specifies the doc title
+    and type. The primary tag is the **_[[METADATA]]** block which includes the 
+    *doc* [metadata] and [layout] settings. The **| PDFATTACH |** command may 
+    be used to attach a PDF file to the doc. See :ref:`rv.D Markup <markup-D>`.
 
     .. code-block:: python
 
         # %% rv.D("""Publish Doc 
         rv.D("""Publish Doc 
             
-            A rivt file may be published as a text, PDF or HTML doc by specifying the
-            PUBLISH type parameter as txt, pdf or html. 
+            A rivt file may be published as a text, PDF or HTML doc by specifying 
+            the PUBLISH type parameter as txt, pdf or html. 
             
-            Published files are found in sub-folders of the _published folder. A text
-            version of the doc or report is is always written to the rivt and
-            _rivt-public folders as a README.txt file. READMEs are formatted and
-            displayed on the first page of a GitHub repo.
+            Published files are found in sub-folders of the _published folder. A 
+            text version of the doc or report is is always written to 
+            STDOUT (terminal) and the rivt and _rivt-public folders as a 
+            README.txt file. READMEs are formatted and displayed on the first 
+            page of a GitHub repo.
             
             | PUBLISH | Example 1 - rivt Doc | pdf
             

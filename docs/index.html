@@ -370,31 +370,32 @@ Home
 <a class="dark-light reference internal image-reference" href="_images/rivt-finalb.png"><img alt="rivt logo" class="dark-light" height="106" src="_images/rivt-finalb.png" width="133" />
 </a>
 </figure>
-<hr><p><em>rivt</em> is an open source Python tool for writing and publishing engineering
-documents, with a focus on selective reuse <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>. Python knowledge is not
-required but <em>rivt</em> capabilities can be extended with Python scripts that access
-scientific and engineering libraries.</p>
+<hr><p><em>rivt</em> is an extensible, open-source Python tool for writing engineering
+documents with a focus on reuse <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>. Python knowledge is not required but
+<em>rivt</em> capabilities can be extended with Python scripts that access scientific
+and engineering libraries.</p>
 <p>There are four types of rivt document files:</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>            | A rivt file is the basic input file that
-rivt file   | compiles to a text, PDF or HTML document.
-            | It is a Python file (.py) that imports the
-            | rivtlib Python package.
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>              | A rivt file is the basic input file that
+rivt file     | compiles to a text, PDF or HTML document.
+              | It is a Python file (.py) that imports the
+              | rivtlib Python package.
 
-            | A rivt doc is the published output of a
-rivt doc    | rivt file. A doc is a formatted text,
-            | PDF or HTML output file compiled from
-            | the same rivt file.
+              | A rivt doc is the published output of a
+rivt doc      | rivt file. A doc is an output file in
+rivt chapter  | formatted text, PDF or HTML. In the context
+              | of a report or book a doc is a chapter. All
+              | formats are compiled from the same rivt file.
 
-            | A rivt report is the published output
-rivt report | from rivt files collated into a single
-            | text, PDF or HTML report file.
-            | Each doc is a chapter in the report.
+              | A rivt report is the published output
+              | of multiple docs collated into a single
+rivt report   | text, PDF or HTML file. Each doc is a
+              | chapter in the report. Chapters are
+              | grouped together in divisions.
 
-
-            | A rivtbook is a collection of rivt files
-rivtbook    | with a common subject matter and
-            | organized for efficient selection and
-            | inclusionin docs and reports.
+              | A rivtbook is a collection of rivt files
+rivtbook      | with a common subject matter and
+              | organized for efficient selection and
+              | inclusion in docs and reports.
 </pre></div>
 </div>
 <p>For an overview of <em>rivt</em> see <a class="reference internal" href="rvB00-overview.html#rivt-overview"><span class="std std-ref">here</span></a>. To get started using
@@ -402,9 +403,9 @@ rivtbook    | with a common subject matter and
 installation and tutorials. For <em>rivt</em> and <em>AI</em> see <a class="reference internal" href="rvF00-aiintro.html#rivt-context"><span class="std std-ref">here</span></a>.</p>
 <p>The <em>rivtlib</em> Python package formats and compiles a <em>rivt file</em> to a text, PDF
 or HTML document ( <em>doc</em> ) in about a second. <em>rivt file</em> sections may be
-interactively executed in an IDE, similar to a <a class="reference external" href="https://jupyter.org/" rel="noreferrer" target="_blank">Jupyter notebook.</a> Mulitple <em>rivt files</em> may be compiled into a collated
+interactively executed in an IDE, similar to a <a class="reference external" href="https://jupyter.org/" rel="noreferrer" target="_blank">Jupyter notebook.</a> Multiple <em>rivt files</em> may be compiled into a collated
 <em>rivt report</em>. This website is an example of an HTML <em>rivt report</em>. <em>rivtbooks</em>
-are collections of <em>rivt files</em> on a common subject matter organized for
+are collections of <em>rivt files</em> about a common subject matter and organized for
 efficient selection and inclusion in reports.</p>
 <p>A convenient interface for searching and downloading public <em>rivt files</em> on
 <em>GitHub</em> is <a class="reference internal" href="rvE02-github.html"><span class="doc">here.</span></a> Open source engineering models,
@@ -419,16 +420,16 @@ tools and their strengths relative to the objectives of <em>rivt</em> is <a clas
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="id2" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
-<p>Selective reuse is the built-in capability to export selected
-sections of a <em>rivt file</em> for public sharing, while maintaining the
-complete file for private use and doc publication.</p>
+<p>rivt includes the built-in capability to export selected
+sections of a <em>private rivt file</em> to a <em>public rivt file</em> for sharing
+and reuse.</p>
 </aside>
 </aside>
 <hr>
 
 <p style="color:rgb(63,177,197);">ver: 1.0.0a12
-(Note: rivt is currently <i>alpha sofware</i>. Some features are incomplete
-and markup tags, commands and assignments may change.)</p><div class="toctree-wrapper compound">
+(Note: rivt is currently <i>alpha sofware</i>. Some features are
+incomplete and markup tags, commands and assignments may change.)</p><div class="toctree-wrapper compound">
 </div>
 
 

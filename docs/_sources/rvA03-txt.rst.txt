@@ -1,6 +1,8 @@
 **A.3 | TEXT doc**
 =========================
 
+Text doc download link.
+
 .. code-block:: text
 
         

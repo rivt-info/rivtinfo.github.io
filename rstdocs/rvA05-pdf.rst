@@ -1,7 +1,7 @@
 **A.5 | PDF doc**
 =========================
 
-Click on PDF images to enlarge.
+Click on PDF images to enlarge. PDF doc download link.
 
 .. figure::  _static/img/pdf1-ex1.jpg
     :class: dark-light

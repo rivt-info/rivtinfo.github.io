@@ -13,10 +13,10 @@ models and computer code. They are also dynamic and are freqeuently updated
 as projects evolve and progress. 
 
 The desire to reuse engineering documents is a matter of simple efficiency. Most
-engineering projects are not fundamentally unique. They follow familiar patterns
-and differ in ddegree and detials, not kind. The commercial market response to
-engineering document software has been to develop incompatible, siloed programs
-with barrriers to sharing and reuse that include:
+engineering projects are not fundamentally unique. They use similar patterns and
+templates that differ in ddegree and details, not kind. The commercial market 
+response to engineering document software has been to develop incompatible, 
+siloed programs with barrriers to sharing and reuse that include:
 
 - incompatible documents across programs
 - costly software updates that are backward incompatible
@@ -25,9 +25,9 @@ with barrriers to sharing and reuse that include:
 - limited report generation
 - limited collaboration
 
-Open source solutions have begun to change that. *rivt* is designed to address
-these barriers as a compliment and replacement to existing software. The table
-below summarizes and compares limitations between different programs
+Open source solutions can alter that approach and *rivt* is designed to address
+these barriers as both a compliment and replacement to existing software. The 
+table below summarizes and compares limitations between different programs
 (commercial programs in italics).
 
 .. rst-class:: center
@@ -67,11 +67,19 @@ Quarto           yes          yes        no     no        no           no       
 **[2]** Use Cases
 --------------------------------------------------------------------- 
 
-The primary use case for *rivt* is writing and sharing document source files,
-and publishing engineering documents in text, PDF or HTML formats. A second use
-case is as a front or back end for pre- and post-processing data from other
-software. A third use case is real-time collaboration using interfaces like
-VSCode, Codespaces, Firebase, Gitpod or replit.
+
+The primary use cases for *rivt* are: 
+
+#. producing reusable engineering documents that are easier to write, edit and 
+   format compared to LaTeX, Excel, or Word.
+
+#. producing clear, organized documents that are simple to publish but not 
+   necessarily formatted to standards of formal journal articles or books. 
+
+#. producing documents with source files that need to be partitioned into public
+   and private parts prior to sharing as open-source.
+
+Examples include:
 
 A. Engineering documents for:
 
@@ -89,7 +97,7 @@ B. Front and back ends for:
 #. instrumentation
 
 
-C. Collaboration for:
+C. Collaboration in:
 
 #. teaching
 #. presentations
