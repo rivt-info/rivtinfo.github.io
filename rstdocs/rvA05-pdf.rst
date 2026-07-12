@@ -2,7 +2,7 @@
 =========================
 
 Click on PDF images to enlarge. 
-PDF doc download :download:`link <_downloads/rv001-example01.pdf>`.
+PDF doc :download:`download link <_downloads/rv001-example01.pdf>`.
 
 .. figure::  _static/img/pdf1-ex1.jpg
     :class: dark-light
