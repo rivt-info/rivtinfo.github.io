@@ -1,7 +1,7 @@
 **A.3 | TEXT doc**
 =========================
 
-Text doc download link.
+Download `text doc file <_downloads/rv001-doc-example01.txt>`__
 
 .. code-block:: text
 
