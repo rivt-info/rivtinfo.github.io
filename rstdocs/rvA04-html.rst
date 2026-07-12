@@ -1,7 +1,8 @@
 **A.4 | HTML doc**
 =========================   
 
-Click on HTML image to enlarge. HTML doc download link.
+Click on HTML image to enlarge. 
+HTML doc download :download:`link <_downloads/rv001-example01-html.zip>`.
 
 .. figure::  _static/img/html-ex1.jpg
     :class: dark-light
