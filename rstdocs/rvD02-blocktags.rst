@@ -11,7 +11,6 @@
 ========== ========================================= ===============================
 API Scope         Block Tag                                Description 
 ========== ========================================= ===============================
-rv.I        **_[[TOPIC]]** topic                      :ref:`Topic block`
 rv.I,V      **_[[TEXT]]** type                        :ref:`Text block`
 rv.I,V      **_[[TABLE]]** label                      :ref:`Table block`
 rv.V        **_[[ARGS]]** arg dict name               :ref:`Arg block`
@@ -22,44 +21,10 @@ rv.D        **_[[METADATA]]** label                   :ref:`Meta block`
 all         **_[[END]]**                              :ref:`End block`
 ========== ========================================= ===============================
 
-.. _Topic block:
-
-**[1]** Topic 
-------------------------------------------------
-
- 
-
-.. topic:: _[[TOPIC]] 
-
-    Formats a topic block.
-
-    .. code-block:: text
-
-            Syntax:    
-                _[[TOPIC]] topic title
-                text
-                ...
-                _[[END]]
-
-            Example:    
-                _[[TOPIC]] topic title
-                Text related to the topic.
-                _[[END]]
-
-=========== ==========================
-API Scope     Insert
-Doc Types     text, PDF, HTML
-=========== ==========================
-
------------------------
-
-
 .. _Text block:
 
 **[2]** Text block
 ---------------------------------------
-
-
 
 .. topic:: _[[TEXT]] type
     

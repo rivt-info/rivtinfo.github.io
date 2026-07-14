@@ -614,35 +614,31 @@ changing the default.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>rv.I</p></td>
-<td><p><strong>_[[TOPIC]]</strong> topic</p></td>
-<td><p><a class="reference internal" href="rvD02-blocktags.html#topic-block"><span class="std std-ref">[1] Topic</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I,V</p></td>
+<tr class="row-even"><td><p>rv.I,V</p></td>
 <td><p><strong>_[[TEXT]]</strong> type</p></td>
 <td><p><a class="reference internal" href="rvD02-blocktags.html#text-block"><span class="std std-ref">[2] Text block</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.I,V</p></td>
+<tr class="row-odd"><td><p>rv.I,V</p></td>
 <td><p><strong>_[[TABLE]]</strong> label</p></td>
 <td><p><a class="reference internal" href="rvD02-blocktags.html#table-block"><span class="std std-ref">[3] Table Block</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.V</p></td>
+<tr class="row-even"><td><p>rv.V</p></td>
 <td><p><strong>_[[ARGS]]</strong> arg dict name</p></td>
 <td><p><a class="reference internal" href="rvD02-blocktags.html#arg-block"><span class="std std-ref">[4] Argument block</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.T</p></td>
+<tr class="row-odd"><td><p>rv.T</p></td>
 <td><p><strong>_[[WRITE]]</strong> var name</p></td>
 <td><p><a class="reference internal" href="rvD02-blocktags.html#write-block"><span class="std std-ref">[5] Write</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.T</p></td>
+<tr class="row-even"><td><p>rv.T</p></td>
 <td><p><strong>_[[SHELL]]</strong> os, <em>wait;nowait</em></p></td>
 <td><p><a class="reference internal" href="rvD02-blocktags.html#shell-script"><span class="std std-ref">[6] Shell script</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.D</p></td>
+<tr class="row-odd"><td><p>rv.D</p></td>
 <td><p><strong>_[[METADATA]]</strong> label</p></td>
 <td><p><a class="reference internal" href="rvD02-blocktags.html#meta-block"><span class="std std-ref">[7] Metadata</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>all</p></td>
+<tr class="row-even"><td><p>all</p></td>
 <td><p><strong>_[[END]]</strong></p></td>
 <td><p><a class="reference internal" href="rvD02-blocktags.html#end-block"><span class="std std-ref">[8] End block</span></a></p></td>
 </tr>
@@ -799,6 +795,7 @@ changing the default.</p>
 <span id="folders"></span><h2><strong>[5]</strong> rivt Report Folders<a class="headerlink" href="#rivt-report-folders" title="Link to this heading">#</a></h2>
 <p><strong>rivt Report Top Level Folders</strong></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt-<span class="o">]</span>Report-Label/<span class="w">             </span>report<span class="w"> </span>folder
+<span class="w">    </span>├──<span class="w"> </span>.help/<span class="w">                      </span><span class="nb">help</span><span class="w"> </span>files
 <span class="w">    </span>├──<span class="w"> </span>.vscode/<span class="w">                    </span>optional<span class="w"> </span>VSCode<span class="w"> </span>settings
 <span class="w">    </span>├──<span class="w"> </span>README.txt<span class="w">                  </span>rivt-generated<span class="w"> </span>report
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>_rivt-public<span class="o">]</span>/<span class="w">                 </span>public<span class="w"> </span>subset<span class="w"> </span>of<span class="w"> </span>rivt<span class="w"> </span>files
@@ -822,6 +819,7 @@ changing the default.</p>
 </div>
 <p><strong>rivt Report Expanded Folders</strong></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt-<span class="o">]</span>Report-Label/<span class="w">             </span>report<span class="w"> </span>folder
+<span class="w">    </span>├──<span class="w"> </span>.help/<span class="w">                        </span><span class="nb">help</span><span class="w"> </span>files
 <span class="w">    </span>├──<span class="w"> </span>.vscode/<span class="w">                      </span>optional<span class="w"> </span>VSCode<span class="w"> </span>settings
 <span class="w">    </span>├──<span class="w"> </span>README.txt<span class="w">                    </span>rivt-generated<span class="w"> </span>text<span class="w"> </span>report
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>_rivt-public<span class="o">]</span>/<span class="w">               </span>rivt-generated<span class="w"> </span>public<span class="w"> </span>files
@@ -892,12 +890,13 @@ changing the default.</p>
 <span class="w">                </span>...
 </pre></div>
 </div>
-</section>
 <hr class="docutils" />
+</section>
 <section id="rivtbook-folders">
-<h2><strong>[6]</strong> rivtbook Folders<a class="headerlink" href="#rivtbook-folders" title="Link to this heading">#</a></h2>
-<p id="id3"><strong>rivtbook Top Level Folders</strong></p>
+<span id="rivtbook-folders2"></span><h2><strong>[6]</strong> rivtbook Folders<a class="headerlink" href="#rivtbook-folders" title="Link to this heading">#</a></h2>
+<p><strong>rivtbook Top Level Folders</strong></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivtbk-<span class="o">]</span>Book-Label/<span class="w">            </span>rivtbook<span class="w"> </span>report<span class="w"> </span>folder
+<span class="w">    </span>├──<span class="w"> </span>.help/<span class="w">                      </span><span class="nb">help</span><span class="w"> </span>files
 <span class="w">    </span>├──<span class="w"> </span>.vscode/<span class="w">                    </span>optional<span class="w"> </span>VSCode<span class="w"> </span>settings
 <span class="w">    </span>├──<span class="w"> </span>README.txt<span class="w">                  </span>rivt-generated<span class="w"> </span>book<span class="w"> </span>as<span class="w"> </span>text
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>_rivtbk-public<span class="o">]</span>/<span class="w">           </span>public<span class="w"> </span>subset<span class="w"> </span>of<span class="w"> </span>rivt<span class="w"> </span>files
@@ -911,6 +910,7 @@ changing the default.</p>
 </div>
 <p><strong>rivtbook Expanded Folders</strong></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivtbk-<span class="o">]</span>Book-Label/<span class="w">             </span>rivtbook<span class="w"> </span>report<span class="w"> </span>folder
+<span class="w">    </span>├──<span class="w"> </span>.help/<span class="w">                        </span><span class="nb">help</span><span class="w"> </span>files
 <span class="w">    </span>├──<span class="w"> </span>.vscode/<span class="w">                      </span>optional<span class="w"> </span>VSCode<span class="w"> </span>settings
 <span class="w">    </span>├──<span class="w"> </span>README.txt<span class="w">                    </span>rivt-generated<span class="w"> </span>book<span class="w"> </span>as<span class="w"> </span>text
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rivtbook-report<span class="o">]</span>-1.py<span class="w">        </span>rivtbook<span class="w"> </span>generating<span class="w"> </span>script
@@ -919,7 +919,7 @@ changing the default.</p>
 <span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rvbk-102-<span class="o">]</span>folder<span class="w"> </span>name<span class="w">    </span>rivtbook<span class="w"> </span>folder
 <span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rvbk-201-<span class="o">]</span>folder<span class="w"> </span>name<span class="w">    </span>rivtbook<span class="w"> </span>folder
 <span class="w">            </span>...
-<span class="w">    </span>└──<span class="w"> </span><span class="o">[</span>_rstdocs<span class="o">]</span>/<span class="w">                   </span>rivt-generated<span class="w"> </span>rst<span class="w"> </span>files
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>_rstdocs<span class="o">]</span>/<span class="w">                   </span>rivt-generated<span class="w"> </span>rst<span class="w"> </span>files
 <span class="w">        </span>├──<span class="w"> </span>_downloads/
 <span class="w">        </span>├──<span class="w"> </span>_static/
 <span class="w">        </span>├──<span class="w"> </span>rv101-filename1.rst
@@ -932,43 +932,45 @@ changing the default.</p>
 <span class="w">        </span>├──<span class="w"> </span>rv101-filename1.pdf
 <span class="w">        </span>├──<span class="w"> </span>rv102-filename1.pdf
 <span class="w">        </span>├──<span class="w"> </span>rv201-filename3.pdf
-<span class="w">            </span>...
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rvbk101-<span class="o">]</span>folder<span class="w"> </span>name<span class="w">         </span>rivtbook<span class="w"> </span>folder
-<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename1.py<span class="w">          </span>rivt<span class="w"> </span>file
-<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rvsrc<span class="o">]</span>/<span class="w">                      </span>author<span class="w"> </span>provided<span class="w"> </span>files<span class="w"> </span>and<span class="w"> </span>folders
-<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>downloads<span class="o">]</span>/<span class="w">                    </span>files<span class="w"> </span>to<span class="w"> </span>download
-<span class="w">                </span>└──<span class="w"> </span>conc-vals.txt
-<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>img<span class="o">]</span>/<span class="w">                          </span>page<span class="w"> </span>layout<span class="w"> </span>images
-<span class="w">                </span>├──<span class="w"> </span>favicon.png
-<span class="w">                </span>├──<span class="w"> </span>covlogo1.png
-<span class="w">                </span>├──<span class="w"> </span>runlogo1.png
-<span class="w">                </span>└──<span class="w"> </span>fig1.png
-<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>data<span class="o">]</span>/<span class="w">                          </span>tables
-<span class="w">                </span>└──<span class="w"> </span>steel-vals.csv
-<span class="w">            </span>├──<span class="w"> </span>tools/<span class="w">                           </span>OS<span class="w"> </span>shell<span class="w"> </span>commands
-<span class="w">                </span>└──<span class="w"> </span>opensees.sh
-<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv_stor<span class="o">]</span>/<span class="w">                    </span>rivt-generated<span class="w"> </span><span class="nb">source</span><span class="w"> </span>files
-<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>logs<span class="o">]</span>/<span class="w">                          </span>log<span class="w"> </span>files
-<span class="w">                </span>├──<span class="w"> </span>rv101-log.txt
-<span class="w">                </span>└──<span class="w"> </span>rv102-log.txt
-<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>sect<span class="o">]</span>/<span class="w">                          </span>sections<span class="w"> </span>not<span class="w"> </span>printed
-<span class="w">                </span>├──<span class="w"> </span>rv202-5d.txt
-<span class="w">                </span>├──<span class="w"> </span>rv103-4t.txt
-<span class="w">                </span>└──<span class="w"> </span>rv301-2r.txt
-<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>temp<span class="o">]</span>/<span class="w">                          </span>temp<span class="w"> </span>files
-<span class="w">                </span>└──<span class="w"> </span>rv101-label3.tex
-<span class="w">            </span>├──<span class="w"> </span>output.dat
+<span class="w">    </span>└──<span class="w"> </span><span class="o">[</span>_rv_stor<span class="o">]</span>/<span class="w">                    </span>rivt-generated<span class="w"> </span><span class="nb">source</span><span class="w"> </span>files
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>logs<span class="o">]</span>/<span class="w">                          </span>log<span class="w"> </span>files
+<span class="w">            </span>├──<span class="w"> </span>rv101-log.txt
+<span class="w">            </span>└──<span class="w"> </span>rv102-log.txt
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>sect<span class="o">]</span>/<span class="w">                          </span>sections<span class="w"> </span>not<span class="w"> </span>printed
+<span class="w">            </span>├──<span class="w"> </span>rv202-5d.txt
+<span class="w">            </span>├──<span class="w"> </span>rv103-4t.txt
+<span class="w">            </span>└──<span class="w"> </span>rv301-2r.txt
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>temp<span class="o">]</span>/<span class="w">                          </span>temp<span class="w"> </span>files
+<span class="w">            </span>└──<span class="w"> </span>rv101-label3.tex
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>vals<span class="o">]</span>/<span class="w">                          </span>values<span class="w"> </span>files
 <span class="w">            </span>├──<span class="w"> </span>v101-2.csv
 <span class="w">            </span>└──<span class="w"> </span>v102-3.csv
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rvbk102-<span class="o">]</span>folder<span class="w"> </span>name<span class="w">         </span>rivtbook<span class="w"> </span>subdivision<span class="w"> </span>folder
+<span class="w">        </span>└──<span class="w"> </span>output.dat
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>bk1-<span class="o">]</span>folder<span class="w"> </span>name<span class="w">              </span>rivtbook<span class="w"> </span>chapter<span class="w"> </span>folder
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv001-<span class="o">]</span>filename1.py<span class="w">          </span>rivt<span class="w"> </span>file
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>downloads<span class="o">]</span>/<span class="w">                    </span>files<span class="w"> </span>to<span class="w"> </span>download
+<span class="w">            </span>└──<span class="w"> </span>conc-vals.txt
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>img<span class="o">]</span>/<span class="w">                          </span>page<span class="w"> </span>layout<span class="w"> </span>images
+<span class="w">            </span>├──<span class="w"> </span>favicon.png
+<span class="w">            </span>├──<span class="w"> </span>covlogo1.png
+<span class="w">            </span>├──<span class="w"> </span>runlogo1.png
+<span class="w">            </span>└──<span class="w"> </span>fig1.png
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>data<span class="o">]</span>/<span class="w">                          </span>tables
+<span class="w">            </span>└──<span class="w"> </span>steel-vals.csv
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>vals<span class="o">]</span>/<span class="w">                          </span>values<span class="w"> </span>files
+<span class="w">            </span>├──<span class="w"> </span>v101-2.csv
+<span class="w">            </span>└──<span class="w"> </span>v102-3.csv
+<span class="w">        </span>└──<span class="w"> </span>tools/<span class="w">                           </span>OS<span class="w"> </span>shell<span class="w"> </span>commands
+<span class="w">            </span>└──<span class="w"> </span>opensees.sh
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>bk2-<span class="o">]</span>folder<span class="w"> </span>name<span class="w">             </span>rivtbook<span class="w"> </span>chapter<span class="w"> </span>folder
 <span class="w">            </span>...
-<span class="w">    </span>└───<span class="w"> </span><span class="o">[</span>rvbk201-<span class="o">]</span>folder<span class="w"> </span>name<span class="w">        </span>rivtbook<span class="w"> </span>subdivision<span class="w"> </span>folder
+<span class="w">    </span>└──<span class="w"> </span><span class="o">[</span>bk3-<span class="o">]</span>folder<span class="w"> </span>name<span class="w">             </span>rivtbook<span class="w"> </span>chapter<span class="w"> </span>folder
 <span class="w">            </span>...
 </pre></div>
 </div>
 </section>
 <section id="unit-definitions">
-<span id="id4"></span><h2><strong>[7]</strong> Unit Definitions<a class="headerlink" href="#unit-definitions" title="Link to this heading">#</a></h2>
+<span id="id3"></span><h2><strong>[7]</strong> Unit Definitions<a class="headerlink" href="#unit-definitions" title="Link to this heading">#</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># standard SI units ==== DO NOT MODIFY BETWEEN DOUBLE LINES  ============</span>
 <span class="c1">#</span>
 <span class="c1"># temperature - relative degree, not offset</span>
@@ -1186,7 +1188,7 @@ following categories:</p>
 </div>
 </section>
 <section id="vscode-settings">
-<span id="id5"></span><h2><strong>[9]</strong> VSCode Settings<a class="headerlink" href="#vscode-settings" title="Link to this heading">#</a></h2>
+<span id="id4"></span><h2><strong>[9]</strong> VSCode Settings<a class="headerlink" href="#vscode-settings" title="Link to this heading">#</a></h2>
 <p>Workspace extension and other settings are stored in the <em>.vscode</em> folder and
 should be included as part of a <em>report folder</em>. Settings that affect the
 <em>rivt</em> editing and execution environment incldue:</p>

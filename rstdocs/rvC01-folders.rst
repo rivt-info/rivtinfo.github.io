@@ -194,6 +194,7 @@ A typical :term:`report folder` structure is shown below. The required
 .. code-block:: bash
 
     [rivt-]Report-Label/             report folder
+        ├── .help/                      help files
         ├── .vscode/                    optional VSCode settings   
         ├── README.txt                  rivt-generated report                  
         ├── [_rivt-public]/                 public subset of rivt files
@@ -219,6 +220,7 @@ A typical :term:`report folder` structure is shown below. The required
 .. code-block:: bash
 
     [rivt-]Report-Label/             report folder              
+        ├── .help/                        help files
         ├── .vscode/                      optional VSCode settings   
         ├── README.txt                    rivt-generated text report                  
         ├── [_rivt-public]/               rivt-generated public files
@@ -242,6 +244,8 @@ A typical :term:`report folder` structure is shown below. The required
                     └── runlogo1.png                   
                 ├── [data]/                         tables    
                     └── steel-vals.csv                                                 
+                ├── [scripts]/                      scripts
+                    └── bending.py    
                 ├── tools/                          OS shell commands               
                     └── opensees.sh                        
                 ├── fig1.png
@@ -256,9 +260,10 @@ A typical :term:`report folder` structure is shown below. The required
                     └── rv301-2r.txt               
                 ├── [temp]/                          temp files
                     └── rv101-label3.tex
+                ├── [vals]/                          values files
+                    ├── v101-2.csv
+                    └── v102-3.csv         
                 ├── output.dat
-                ├── v101-2.csv
-                └── v102-3.csv         
             ├── [_published]/                 rivt-published docs and reports
                 ├── [docs]/                          html docs
                     ├── html auxiliary folders    

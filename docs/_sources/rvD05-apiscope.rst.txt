@@ -48,8 +48,7 @@ text **_[S] text, section link**                                       :ref:`Sec
 text **_[U] text, label**                                              :ref:`URL link`   
 text **_[V] var_name** text                                            :ref:`Substitute value`
 **title _[T]**                                                         :ref:`Number table`
- **_[[TEXT]]** optional label                                          :ref:`Text block`
- **_[[TOPIC]]** topic                                                  :ref:`Topic block`
+ **_[[TEXT]]** type                                                    :ref:`Text block`
  **_[[END]]**                                                          :ref:`End block`
  **| IMAGE |** relative path |  scale, caption, figure                 :ref:`Image file`
  **| IMAGE2 |** rel path1, rel path2 | s1, s2, c1, c2, fig1, fig2      :ref:`Adjacent images`

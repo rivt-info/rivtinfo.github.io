@@ -1,17 +1,18 @@
 **D.3 | Commands**
 ========================
 
-
 .. _command-summary:
 
 **[1]** Command Summary
 -------------------------------------
 
-**Commands format files and equations**
+**Commands read and format files**
 
 ========== =============================================================== ========================
 API Scope           Command                                                        Description
 ========== =============================================================== ========================
+rv.R        **| COPY |** abs src path | abs dest path | file pattern         :ref:`Copy file`
+rv.R        **| SHELL |** abs path | os, wait                                :ref:`Shell file`
 rv.I, V     **| TEXT |** rel path | type                                     :ref:`Text file`
 rv.I, V     **| TABLE |** rel path | title,width,head;nohead,num;non         :ref:`Table file`     
 rv.I, V     **| IMAGE |** rel path | caption, scale, num;non, time;not       :ref:`Image file`
@@ -19,34 +20,30 @@ rv.I, V     **| IMAGE2 |** rel path1, rel path2 | c1,c2,s1,s2,n1,n2          :re
 rv.V        **| PYTHON |** rel path | rivt;namespace                         :ref:`Python file`
 rv.V        **| VALTABLE |** rel path | title, width, num;non                :ref:`Values file`   
 rv.V        **| FUNCTION |** function, arg, var, type | label                :ref:`Function value`  
-rv.T        **| COPY |** abs src path | abs dest path | file pattern         :ref:`Copy file`
-rv.T        **| SHELL |** abs path | os, wait                                :ref:`Shell file`
 rv.D        **| ATTACHPDF |** rel path | front;back, title                   :ref:`Attach PDF`   
 rv.D        **| PUBLISH |** doc title | type                                 :ref:`Publish doc` 
 ========== =============================================================== ========================
-
 
 **Parent paths for commands**
 
 See :ref:`here <report-folders>` for the folder structure. 
 
-================ ========================= ======
-   Command           Parent Path [1]        R/W
-================ ========================= ======
-\| SHELL |          **rivt-report/**           R
+================ =========================== ======
+   Command           Parent Path [1]          R/W
+================ =========================== ======
+\| COPY |               os root                R
+\| SHELL |              os root                R
 \| IMAGE |          **rivt-report/**           R
 \| IMAGE2 |         **rivt-report/**           R
 \| TABLE |          **rivt-report/**           R
-\| VALTABLE |       **rivt-report/**   [2]     R
-\| VALTABLE |       **rivt-report/**   [3]     R
+\| VALTABLE |       **rivt-report/** [2,3]     R
 \| PYTHON |         **rivt-report/**           R
-\| MARKUP |         **rivt-report/**           R
 \| ATTACHPDF |      **rivt-report/**           R
-\| PUBLISH |        **/_published/**   [4]     W
-================ ========================= ======
+\| PUBLISH |        **_published/** [4]        W
+================ =========================== ======
 
-[1] file paths begin with rvsrc/ and may include subdirectories 
-[2] values are read from *rvsrc/* and its subdirectories
+[1] relative file paths begin with *rvsrc/* 
+[2] author values are read from *rvsrc/* and subdirectories
 [3] values written by *rivt* are read from *rv_stor/vals*  
 [4] *docs* are written to subdirectories of *_published*
 
@@ -55,10 +52,10 @@ See :ref:`here <report-folders>` for the folder structure.
 **[2]** Shell file
 -------------------------------------------
 
-The SHELL command runs shell scripts including .cmd, .bat and .sh files. 
-The *os* parameter specifies the operating system: *win*, *mac* or *linux*. 
-The *wait; nowait* specifies whether rivt file processing waits for the
-script to complete before continuing.
+The SHELL command runs shell scripts including .cmd, .bat and .sh files. The
+*os* parameter specifies the operating system: *win*, *mac* or *linux*. The
+*wait; nowait* specifies whether rivt file processing waits for the script to
+complete before continuing.
 
 If the *doc* is part of a report and no path is specified, the file is assumed to
 be in the default folder */src/run/* . Otherwise the path is specified relative
@@ -74,11 +71,10 @@ read from the rivt file folder.
         | SHELL | rvsrc | sap.cmd
 
 =========== ==========================
-API Scope     Tools
+API Scope     rv.R
 File Types    .cmd, .bat, .sh, .bsh 
 Doc Types     text, PDF, HTML
 =========== ==========================
-
 
 .. _Text file:
 

@@ -1,4 +1,5 @@
 {
+    "window.title": "${dirty}${separator}${activeFolderShort}${separator}${activeEditorLong}",
     "window.zoomLevel": 1.2,
     "python.terminal.activateEnvironment": true,
     "python.useEnvironmentsExtension": true,

@@ -126,12 +126,13 @@ The API functions are listed in the table below, where (rS) is a triple quoted
 ================= =============== ================================================
 API Function         Name             Purpose
 ================= =============== ================================================
-**rv.R** (rS)         Run          Run scripts and markup
+**rv.R** (rS)         Run          Run external programs
 **rv.I** (rS)         Insert       Insert static sources 
 **rv.V** (rS)         Values       Calculate values
-**rv.T** (rS)         Tools        Execute shell scripts and external programs
+**rv.T** (rS)         Text         Process blocks of text and scripts
 **rv.D** (rS)         Doc          Publish docs 
-**rv.S,X** (rS)       Skip         Skip (S) section or Exit (X)
+**rv.S** (rS)         Skip         Skip section 
+**rv.X** ()           Exit         Exit rivt file
 ================= =============== ================================================
 
 An API function starts in the first column and takes a triple quoted
@@ -173,35 +174,52 @@ functions and imports the :term:`rivtlib` package into the *rv*
 
     import rivtlib.rvapi as rv
 
-*rivt files* are stored in a *rivt root folder* designated with the prefix
-*rivt-*. Each *rivt file* and corresponding *rivt doc* has a prefix used for
-document organization. The top level folder structure is shown below. A more
-detailed description of the folder structure is :ref:`here <report-folders>`.
+*rivt files* are stored in either a *rivt* or *rivtbk* folder. Each *rivt file*
+and corresponding *rivt doc* has a prefix used for document organization. The
+top level folder structures are shown below. The difference in folder structure
+facilitates copying chapters from rivtbooks into report. A more detailed
+description of the folder structure is :ref:`here <report-folders>`.
 
 .. code-block:: bash
+    
+    Report Folder
 
-      rivt-Report-Label/           Report Folder                
+    [rivt-]Report-Label/           Report Folder                
+        ├── .help/                     help files
         ├── .vscode/                   optional VSCode settings 
-        ├── rivt-public_/              rivt-generated public files
-        └── README.txt                 text doc or report
-            ├── rvsrc/                    source files
-            ├── README.txt                public text report or doc
-            ├── rv-101-filename1.py       public rivt file
-            ├── rv-102-filename2.py       public rivt file       
-            ├── rv-201-filename3.py       public rivt file          
+        ├── [_rivt-public]/            rivt-generated public files
+        └── [README.txt]               text doc or report
+            ├── [rvsrc]/                    source files
+            ├── [README.txt]                public text report or doc
+            ├── [rv-101-]filename1.py       public rivt file
+            ├── [rv-102-]filename2.py       public rivt file       
+            ├── [rv-201-]filename3.py       public rivt file          
             ...
-        └── rivt-report/               rivt files and docs               
-            ├── _published/               published docs and reports
-            ├── _rstdocs/                 rivt generated rst files               
-            ├── rv_stor/                  rivt generated stored files
-            ├── rvsrc/                    author source files
-            ├── rivt-report.py            report generating script
-            ├── rv101-filename1.py        rivt file
-            ├── rv102-filename2.py        rivt file       
-            ├── rv201-filename3.py        rivt file          
+        └── [rivt-report]/               rivt files and docs               
+            ├── [_published]/               published docs and reports
+            ├── [_rstdocs]/                 rivt generated rst files               
+            ├── [rv_stor]/                  rivt generated stored files
+            ├── [rvsrc]/                    author source files
+            ├── [rivt-]report.py            report generating script
+            ├── [rv101-]filename1.py        rivt file
+            ├── [rv102-]filename2.py        rivt file       
+            ├── [rv201-]filename3.py        rivt file          
             ...    
 
-        
+    rivtbook Folder
+
+    [rivtbk-]Book-Label/            rivtbook folder
+        ├── .help/                      help files
+        ├── .vscode/                    optional VSCode settings   
+        ├── [README.txt]                rivt-generated book as text
+        ├── [_rivtbk-public]/           public subset of rivt files           
+        ├── [_rstdocs]/                 restructured text files
+        ├── [_pdfdocs]/                 PDF docs and report         
+        ├── [rvbk101-]folder name       rivtbook folder
+        ├── [rvbk102-]folder name       rivtbook folder        
+        ├── [rvbk201-]folder name       rivtbook folder           
+             ...            
+
 --------------------------------
 
 .. toctree::
