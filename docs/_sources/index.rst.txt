@@ -92,10 +92,10 @@ tools and their strengths relative to the objectives of *rivt* is :ref:`here
     :maxdepth: 1
     :hidden:
 
-    rvA00-start.rst
-    rvB00-overview.rst
-    rvC00-documents.rst
-    rvD00-markup.rst
-    rvE00-collab.rst
-    rvF00-aiintro.rst
-    rvG00-quickref.rst
+    rvA01-start.rst
+    rvB01-overview.rst
+    rvC01-documents.rst
+    rvD01-markup.rst
+    rvE01-collab.rst
+    rvF01-aiintro.rst
+    rvG01-quickref.rst

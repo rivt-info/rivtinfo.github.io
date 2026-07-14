@@ -1,0 +1,870 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" data-theme="dark">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
+    <title>F.5 | Scripts &#8212; rivt</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "dark";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "dark";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=5f316132" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/jquery.js?v=5d32c60e"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="_static/documentation_options.js?v=e259d695"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'rvF05-scripts';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="G.1 | Quick Ref" href="rvG01-quickref.html" />
+    <link rel="prev" title="F.4 | AI Background" href="rvF04-aibackgrnd.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="dark">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+    
+    <img src="_static/rivhome11t.png" class="logo__image only-dark" alt=""/>
+    <img src="_static/rivhome11t.png" class="logo__image only-light pst-js-only" alt=""/>
+  
+  
+    <p class="title logo__title">rivt</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvA01-start.html">
+    A.1 | Start
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvB01-overview.html">
+    B.1 | Overview
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvC01-documents.html">
+    C.1 | Docs
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvD01-markup.html">
+    D.1 | rivt Markup
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvE01-collab.html">
+    E.1 | Collaboration
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="rvF01-aiintro.html">
+    F.1 | AI
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvG01-quickref.html">
+    G.1 | Quick Ref
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="Sections">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvA01-start.html">
+    A.1 | Start
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvB01-overview.html">
+    B.1 | Overview
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvC01-documents.html">
+    C.1 | Docs
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvD01-markup.html">
+    D.1 | rivt Markup
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvE01-collab.html">
+    E.1 | Collaboration
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="rvF01-aiintro.html">
+    F.1 | AI
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvG01-quickref.html">
+    G.1 | Quick Ref
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links" aria-label="Docs">
+    <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
+    <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="rvF02-convert.html"><strong>F.2 | Conversion</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvF03-models.html"><strong>F.3 | Models</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvF04-aibackgrnd.html"><strong>F.4 | AI Background</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>F.5 | Scripts</strong></a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="rvF01-aiintro.html" class="nav-link"><strong>F.1 | AI</strong></a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>F.5 | Scripts</strong></span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="f-5-scripts">
+<h1><strong>F.5 | Scripts</strong><a class="headerlink" href="#f-5-scripts" title="Link to this heading">#</a></h1>
+<section id="example-python-function">
+<h2><strong>[2]</strong> Example - Python Function<a class="headerlink" href="#example-python-function" title="Link to this heading">#</a></h2>
+<aside class="topic">
+<p class="topic-title">Copilot Prompt -  “write a Python function that checks a
+        wood column using NDS”</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>======================================================================
+NDS Wood Column Design Results
+======================================================================
+
+Example: 4x4 DF-L Grade #1, pinned-pinned, 6 ft span
+----------------------------------------------------------------------
+Applied axial stress: 244.9 psi
+Adjusted compression strength: 493.7 psi
+Applied bending stress (y): 906.8 psi
+DC ratio: 0.310
+Governing axis: x
+Design: ✓ PASS
+
+Intermediate values:
+Load duration factor (CD): 1.00
+Moisture factor (CM): 1.00
+Size factor (CF): 1.10
+Stability factor (Cp): 0.3325
+Slenderness ratio (critical): 71.3
+Critical slenderness Cc: 117.9
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">NDS Wood Column Design Checker</span>
+
+<span class="sd">Implements National Design Specification (NDS) for Wood Construction</span>
+<span class="sd">column checking. Handles solid sawn lumber and engineered lumber columns</span>
+<span class="sd">with various loading conditions.</span>
+
+<span class="sd">Reference: NDS 2024 Edition</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dataclasses</span><span class="w"> </span><span class="kn">import</span> <span class="n">dataclass</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">enum</span><span class="w"> </span><span class="kn">import</span> <span class="n">Enum</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Tuple</span><span class="p">,</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">List</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="n">sqrt</span><span class="p">,</span> <span class="n">pi</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">LoadDuration</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
+<span class="w">   </span><span class="sd">&quot;&quot;&quot;Load duration categories per NDS.&quot;&quot;&quot;</span>
+   <span class="n">PERMANENT</span> <span class="o">=</span> <span class="mf">0.9</span>
+   <span class="n">TEN_YEAR</span> <span class="o">=</span> <span class="mf">1.0</span>
+   <span class="n">TWO_MONTH</span> <span class="o">=</span> <span class="mf">1.15</span>
+   <span class="n">SEVEN_DAY</span> <span class="o">=</span> <span class="mf">1.25</span>
+   <span class="n">IMPACT</span> <span class="o">=</span> <span class="mf">1.6</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">Moisture</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
+<span class="w">   </span><span class="sd">&quot;&quot;&quot;Moisture service conditions.&quot;&quot;&quot;</span>
+   <span class="n">DRY</span> <span class="o">=</span> <span class="mf">1.0</span>           <span class="c1"># &lt;12% EMC (interior)</span>
+   <span class="n">WET</span> <span class="o">=</span> <span class="mf">0.8</span>           <span class="c1"># ≥12% EMC (exterior/wet)</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">LumberGrade</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
+<span class="w">   </span><span class="sd">&quot;&quot;&quot;Common lumber grades and their properties (reference values for 2x4</span>
+<span class="sd">   Douglas Fir-Larch).&quot;&quot;&quot;</span>
+   <span class="n">GRADE_1</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Fc_prime&quot;</span><span class="p">:</span> <span class="mi">1350</span><span class="p">,</span> <span class="s2">&quot;E&quot;</span><span class="p">:</span> <span class="mi">1900000</span><span class="p">,</span> <span class="s2">&quot;CD_factor&quot;</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">}</span>
+   <span class="n">GRADE_2</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Fc_prime&quot;</span><span class="p">:</span> <span class="mi">1100</span><span class="p">,</span> <span class="s2">&quot;E&quot;</span><span class="p">:</span> <span class="mi">1700000</span><span class="p">,</span> <span class="s2">&quot;CD_factor&quot;</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">}</span>
+   <span class="n">GRADE_3</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Fc_prime&quot;</span><span class="p">:</span> <span class="mi">600</span><span class="p">,</span> <span class="s2">&quot;E&quot;</span><span class="p">:</span> <span class="mi">1500000</span><span class="p">,</span> <span class="s2">&quot;CD_factor&quot;</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">}</span>
+   <span class="n">SEL_STRUCT</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Fc_prime&quot;</span><span class="p">:</span> <span class="mi">1500</span><span class="p">,</span> <span class="s2">&quot;E&quot;</span><span class="p">:</span> <span class="mi">2000000</span><span class="p">,</span> <span class="s2">&quot;CD_factor&quot;</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">}</span>
+
+
+<span class="nd">@dataclass</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">LumberSection</span><span class="p">:</span>
+<span class="w">   </span><span class="sd">&quot;&quot;&quot;Properties of a wood column section.&quot;&quot;&quot;</span>
+   <span class="n">b</span><span class="p">:</span> <span class="nb">float</span>  <span class="c1"># Width (inches or mm)</span>
+   <span class="n">d</span><span class="p">:</span> <span class="nb">float</span>  <span class="c1"># Depth (inches or mm)</span>
+   <span class="n">Fc_prime</span><span class="p">:</span> <span class="nb">float</span>  <span class="c1"># Reference compression parallel to grain (psi or MPa)</span>
+   <span class="n">E</span><span class="p">:</span> <span class="nb">float</span>  <span class="c1"># Modulus of elasticity (psi or MPa)</span>
+
+   <span class="nd">@property</span>
+   <span class="k">def</span><span class="w"> </span><span class="nf">area</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">      </span><span class="sd">&quot;&quot;&quot;Cross-sectional area.&quot;&quot;&quot;</span>
+      <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">d</span>
+
+   <span class="nd">@property</span>
+   <span class="k">def</span><span class="w"> </span><span class="nf">Ix</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">      </span><span class="sd">&quot;&quot;&quot;Second moment of inertia about x-axis (strong axis).&quot;&quot;&quot;</span>
+      <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">d</span><span class="o">**</span><span class="mi">3</span> <span class="o">/</span> <span class="mi">12</span>
+
+   <span class="nd">@property</span>
+   <span class="k">def</span><span class="w"> </span><span class="nf">Iy</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">      </span><span class="sd">&quot;&quot;&quot;Second moment of inertia about y-axis (weak axis).&quot;&quot;&quot;</span>
+      <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">d</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="o">**</span><span class="mi">3</span> <span class="o">/</span> <span class="mi">12</span>
+
+   <span class="nd">@property</span>
+   <span class="k">def</span><span class="w"> </span><span class="nf">rx</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">      </span><span class="sd">&quot;&quot;&quot;Radius of gyration about x-axis.&quot;&quot;&quot;</span>
+      <span class="k">return</span> <span class="n">sqrt</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Ix</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">area</span><span class="p">)</span>
+
+   <span class="nd">@property</span>
+   <span class="k">def</span><span class="w"> </span><span class="nf">ry</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">      </span><span class="sd">&quot;&quot;&quot;Radius of gyration about y-axis.&quot;&quot;&quot;</span>
+      <span class="k">return</span> <span class="n">sqrt</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Iy</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">area</span><span class="p">)</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">WoodColumnChecker</span><span class="p">:</span>
+<span class="w">   </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">   NDS-based column checker for solid sawn lumber.</span>
+<span class="sd">   &quot;&quot;&quot;</span>
+
+   <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">section</span><span class="p">:</span> <span class="n">LumberSection</span><span class="p">):</span>
+<span class="w">      </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">      Initialize column checker.</span>
+
+<span class="sd">      Args:</span>
+<span class="sd">            section: LumberSection object with geometric and material properties</span>
+<span class="sd">      &quot;&quot;&quot;</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">section</span> <span class="o">=</span> <span class="n">section</span>
+
+   <span class="k">def</span><span class="w"> </span><span class="nf">check_column</span><span class="p">(</span>
+      <span class="bp">self</span><span class="p">,</span>
+      <span class="n">length</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>
+      <span class="n">axial_load</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>
+      <span class="n">load_duration</span><span class="p">:</span> <span class="n">LoadDuration</span> <span class="o">=</span> <span class="n">LoadDuration</span><span class="o">.</span><span class="n">TEN_YEAR</span><span class="p">,</span>
+      <span class="n">moisture</span><span class="p">:</span> <span class="n">Moisture</span> <span class="o">=</span> <span class="n">Moisture</span><span class="o">.</span><span class="n">DRY</span><span class="p">,</span>
+      <span class="n">Ke_x</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span>
+      <span class="n">Ke_y</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span>
+      <span class="n">lateral_load_x</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">,</span>
+      <span class="n">lateral_load_y</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.0</span>
+   <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+<span class="w">      </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">      Check NDS column adequacy.</span>
+
+<span class="sd">      Args:</span>
+<span class="sd">            length: Column length (same units as section dimensions)</span>
+<span class="sd">            axial_load: Axial compression force (lbs or N)</span>
+<span class="sd">            load_duration: Load duration factor</span>
+<span class="sd">            moisture: Moisture service condition</span>
+<span class="sd">            Ke_x: Effective length factor about x-axis (default 1.0)</span>
+<span class="sd">            Ke_y: Effective length factor about y-axis (default 1.0)</span>
+<span class="sd">            lateral_load_x: Lateral load perpendicular to x-axis (optional)</span>
+<span class="sd">            lateral_load_y: Lateral load perpendicular to y-axis (optional)</span>
+
+<span class="sd">      Returns:</span>
+<span class="sd">            Dictionary with:</span>
+<span class="sd">               - stress: Applied compression stress</span>
+<span class="sd">               - Fc_star: Adjusted compression strength</span>
+<span class="sd">               - utilization: Stress ratio</span>
+<span class="sd">               - governing_axis: &#39;x&#39; or &#39;y&#39; (which controls)</span>
+<span class="sd">               - details: Dictionary with all intermediate calculations</span>
+<span class="sd">               - passes: Boolean, True if design is adequate</span>
+<span class="sd">      &quot;&quot;&quot;</span>
+
+      <span class="c1"># Calculate adjustment factors</span>
+      <span class="n">CD</span> <span class="o">=</span> <span class="n">load_duration</span><span class="o">.</span><span class="n">value</span>  <span class="c1"># Load duration factor</span>
+      <span class="n">CM</span> <span class="o">=</span> <span class="n">moisture</span><span class="o">.</span><span class="n">value</span>       <span class="c1"># Moisture factor</span>
+
+      <span class="c1"># Size adjustment factors (approximate for 2&quot; nominal)</span>
+      <span class="n">CF</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_size_adjustment_factor</span><span class="p">()</span>
+
+      <span class="c1"># Lateral stability (compression perpendicular to grain)</span>
+      <span class="n">Cc</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_compute_critical_slenderness_ratio</span><span class="p">()</span>
+
+      <span class="c1"># Calculate slenderness ratios</span>
+      <span class="n">Le_x</span> <span class="o">=</span> <span class="n">Ke_x</span> <span class="o">*</span> <span class="n">length</span>
+      <span class="n">Le_y</span> <span class="o">=</span> <span class="n">Ke_y</span> <span class="o">*</span> <span class="n">length</span>
+
+      <span class="n">lambda_x</span> <span class="o">=</span> <span class="n">Le_x</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">section</span><span class="o">.</span><span class="n">rx</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">section</span><span class="o">.</span><span class="n">rx</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span>
+      <span class="n">lambda_y</span> <span class="o">=</span> <span class="n">Le_y</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">section</span><span class="o">.</span><span class="n">ry</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">section</span><span class="o">.</span><span class="n">ry</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span>
+
+      <span class="c1"># Determine governing slenderness ratio</span>
+      <span class="n">lambda_crit</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">lambda_x</span><span class="p">,</span> <span class="n">lambda_y</span><span class="p">)</span>
+      <span class="n">governing_axis</span> <span class="o">=</span> <span class="s1">&#39;x&#39;</span> <span class="k">if</span> <span class="n">lambda_x</span> <span class="o">&gt;=</span> <span class="n">lambda_y</span> <span class="k">else</span> <span class="s1">&#39;y&#39;</span>
+
+      <span class="c1"># Stability factor (Cp) - accounts for column buckling</span>
+      <span class="n">Cp</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stability_factor</span><span class="p">(</span><span class="n">lambda_crit</span><span class="p">,</span> <span class="n">Cc</span><span class="p">)</span>
+
+      <span class="c1"># Adjusted compression strength parallel to grain</span>
+      <span class="n">Fc_star</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">section</span><span class="o">.</span><span class="n">Fc_prime</span> <span class="o">*</span> <span class="n">CD</span> <span class="o">*</span> <span class="n">CM</span> <span class="o">*</span> <span class="n">CF</span> <span class="o">*</span> <span class="n">Cp</span>
+
+      <span class="c1"># Applied stress</span>
+      <span class="n">fc</span> <span class="o">=</span> <span class="n">axial_load</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">section</span><span class="o">.</span><span class="n">area</span>
+
+      <span class="c1"># Primary bending moment stresses (if lateral loads present)</span>
+      <span class="n">fb_x</span> <span class="o">=</span> <span class="mi">0</span>
+      <span class="n">fb_y</span> <span class="o">=</span> <span class="mi">0</span>
+
+      <span class="k">if</span> <span class="n">lateral_load_x</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">M_x</span> <span class="o">=</span> <span class="n">lateral_load_x</span> <span class="o">*</span> <span class="n">length</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="mi">8</span>
+            <span class="n">fb_x</span> <span class="o">=</span> <span class="n">M_x</span> <span class="o">/</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">section</span><span class="o">.</span><span class="n">Ix</span> <span class="o">/</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">section</span><span class="o">.</span><span class="n">d</span> <span class="o">/</span> <span class="mi">2</span><span class="p">))</span>
+
+      <span class="k">if</span> <span class="n">lateral_load_y</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">M_y</span> <span class="o">=</span> <span class="n">lateral_load_y</span> <span class="o">*</span> <span class="n">length</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="mi">8</span>
+            <span class="n">fb_y</span> <span class="o">=</span> <span class="n">M_y</span> <span class="o">/</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">section</span><span class="o">.</span><span class="n">Iy</span> <span class="o">/</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">section</span><span class="o">.</span><span class="n">b</span> <span class="o">/</span> <span class="mi">2</span><span class="p">))</span>
+
+      <span class="c1"># Bending strength adjustment</span>
+      <span class="n">Fb_star_x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_bending_strength</span><span class="p">(</span><span class="n">lateral_load_x</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="o">*</span> <span class="n">CD</span> <span class="o">*</span> <span class="n">CM</span>
+      <span class="n">Fb_star_y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_bending_strength</span><span class="p">(</span><span class="n">lateral_load_y</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="o">*</span> <span class="n">CD</span> <span class="o">*</span> <span class="n">CM</span>
+
+      <span class="c1"># Interaction formula (NDS Section 3.9)</span>
+      <span class="c1"># For combined bending and axial stress</span>
+      <span class="k">if</span> <span class="n">fb_x</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">fb_y</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="c1"># Euler buckling stress</span>
+            <span class="n">Fe</span> <span class="o">=</span> <span class="n">pi</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">section</span><span class="o">.</span><span class="n">E</span> <span class="o">*</span> <span class="n">CM</span> <span class="o">/</span> <span class="p">(</span><span class="n">lambda_crit</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+            <span class="c1"># Interaction check</span>
+            <span class="n">utilization</span> <span class="o">=</span> <span class="p">(</span><span class="n">fc</span> <span class="o">/</span> <span class="n">Fc_star</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+            <span class="k">if</span> <span class="n">Fb_star_x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+               <span class="n">utilization</span> <span class="o">+=</span> <span class="p">(</span><span class="n">fb_x</span> <span class="o">/</span> <span class="n">Fb_star_x</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">fc</span> <span class="o">/</span> <span class="p">(</span><span class="n">Fe</span> <span class="o">-</span> <span class="n">fc</span><span class="p">))</span>
+            <span class="k">if</span> <span class="n">Fb_star_y</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+               <span class="n">utilization</span> <span class="o">+=</span> <span class="p">(</span><span class="n">fb_y</span> <span class="o">/</span> <span class="n">Fb_star_y</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">fc</span> <span class="o">/</span> <span class="p">(</span><span class="n">Fe</span> <span class="o">-</span> <span class="n">fc</span><span class="p">))</span>
+      <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># Pure compression</span>
+            <span class="n">utilization</span> <span class="o">=</span> <span class="n">fc</span> <span class="o">/</span> <span class="n">Fc_star</span> <span class="k">if</span> <span class="n">Fc_star</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;inf&#39;</span><span class="p">)</span>
+
+      <span class="n">passes</span> <span class="o">=</span> <span class="n">utilization</span> <span class="o">&lt;=</span> <span class="mf">1.0</span>
+
+      <span class="n">details</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;CD&#39;</span><span class="p">:</span> <span class="n">CD</span><span class="p">,</span>
+            <span class="s1">&#39;CM&#39;</span><span class="p">:</span> <span class="n">CM</span><span class="p">,</span>
+            <span class="s1">&#39;CF&#39;</span><span class="p">:</span> <span class="n">CF</span><span class="p">,</span>
+            <span class="s1">&#39;Cp&#39;</span><span class="p">:</span> <span class="n">Cp</span><span class="p">,</span>
+            <span class="s1">&#39;lambda_x&#39;</span><span class="p">:</span> <span class="n">lambda_x</span><span class="p">,</span>
+            <span class="s1">&#39;lambda_y&#39;</span><span class="p">:</span> <span class="n">lambda_y</span><span class="p">,</span>
+            <span class="s1">&#39;lambda_crit&#39;</span><span class="p">:</span> <span class="n">lambda_crit</span><span class="p">,</span>
+            <span class="s1">&#39;Cc&#39;</span><span class="p">:</span> <span class="n">Cc</span><span class="p">,</span>
+            <span class="s1">&#39;fc&#39;</span><span class="p">:</span> <span class="n">fc</span><span class="p">,</span>
+            <span class="s1">&#39;Fc_star&#39;</span><span class="p">:</span> <span class="n">Fc_star</span><span class="p">,</span>
+            <span class="s1">&#39;fb_x&#39;</span><span class="p">:</span> <span class="n">fb_x</span><span class="p">,</span>
+            <span class="s1">&#39;fb_y&#39;</span><span class="p">:</span> <span class="n">fb_y</span><span class="p">,</span>
+            <span class="s1">&#39;Fb_star_x&#39;</span><span class="p">:</span> <span class="n">Fb_star_x</span><span class="p">,</span>
+            <span class="s1">&#39;Fb_star_y&#39;</span><span class="p">:</span> <span class="n">Fb_star_y</span><span class="p">,</span>
+            <span class="s1">&#39;Fe&#39;</span><span class="p">:</span> <span class="n">Fe</span> <span class="k">if</span> <span class="n">lateral_load_x</span> <span class="o">!=</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">lateral_load_y</span> <span class="o">!=</span> <span class="mi">0</span> <span class="k">else</span> <span class="kc">None</span><span class="p">,</span>
+      <span class="p">}</span>
+
+      <span class="k">return</span> <span class="p">{</span>
+            <span class="s1">&#39;stress&#39;</span><span class="p">:</span> <span class="n">fc</span><span class="p">,</span>
+            <span class="s1">&#39;Fc_star&#39;</span><span class="p">:</span> <span class="n">Fc_star</span><span class="p">,</span>
+            <span class="s1">&#39;utilization&#39;</span><span class="p">:</span> <span class="n">utilization</span><span class="p">,</span>
+            <span class="s1">&#39;governing_axis&#39;</span><span class="p">:</span> <span class="n">governing_axis</span><span class="p">,</span>
+            <span class="s1">&#39;details&#39;</span><span class="p">:</span> <span class="n">details</span><span class="p">,</span>
+            <span class="s1">&#39;passes&#39;</span><span class="p">:</span> <span class="n">passes</span>
+      <span class="p">}</span>
+
+   <span class="k">def</span><span class="w"> </span><span class="nf">_stability_factor</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">lambda_crit</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">Cc</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">      </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">      Calculate stability factor (Cp) per NDS Section 3.7.1.</span>
+
+<span class="sd">      Cp = (1 + (lambda/Cc)²) / (2c) - sqrt(((1 + (lambda/Cc)²) / (2c))² -</span>
+<span class="sd">      (lambda/Cc)² / c) where c = 0.8 for sawn lumber</span>
+<span class="sd">      &quot;&quot;&quot;</span>
+      <span class="k">if</span> <span class="n">lambda_crit</span> <span class="o">&lt;=</span> <span class="n">Cc</span><span class="p">:</span>
+            <span class="c1"># Short column range</span>
+            <span class="n">c</span> <span class="o">=</span> <span class="mf">0.8</span>
+            <span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="n">lambda_crit</span> <span class="o">/</span> <span class="n">Cc</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+            <span class="n">Cp</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">x</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">c</span><span class="p">)</span> <span class="o">-</span> <span class="n">sqrt</span><span class="p">(((</span><span class="mi">1</span> <span class="o">+</span> <span class="n">x</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">c</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">x</span><span class="o">/</span><span class="n">c</span><span class="p">)</span>
+      <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># Long column range (Johnson formula)</span>
+            <span class="n">Cp</span> <span class="o">=</span> <span class="mf">0.877</span> <span class="o">/</span> <span class="p">(</span><span class="n">lambda_crit</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+
+      <span class="k">return</span> <span class="nb">max</span><span class="p">(</span><span class="n">Cp</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
+
+   <span class="k">def</span><span class="w"> </span><span class="nf">_compute_critical_slenderness_ratio</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">      </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">      Calculate critical slenderness ratio per NDS.</span>
+<span class="sd">      Cc = π * sqrt(E / Fc_prime)</span>
+<span class="sd">      &quot;&quot;&quot;</span>
+      <span class="k">return</span> <span class="n">pi</span> <span class="o">*</span> <span class="n">sqrt</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">section</span><span class="o">.</span><span class="n">E</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">section</span><span class="o">.</span><span class="n">Fc_prime</span><span class="p">)</span>
+
+   <span class="k">def</span><span class="w"> </span><span class="nf">_size_adjustment_factor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">      </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">      Size adjustment factor CF per NDS.</span>
+<span class="sd">      Approximate: CF = 1.0 for typical 2&quot; nominal lumber.</span>
+<span class="sd">      More precise values require reference to specific grade/size.</span>
+<span class="sd">      &quot;&quot;&quot;</span>
+      <span class="c1"># Simplified: typical sizes</span>
+      <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">section</span><span class="o">.</span><span class="n">b</span> <span class="o">&lt;=</span> <span class="mf">3.5</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mf">1.1</span>
+      <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">section</span><span class="o">.</span><span class="n">b</span> <span class="o">&lt;=</span> <span class="mf">5.5</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mf">1.05</span>
+      <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mf">1.0</span>
+
+   <span class="k">def</span><span class="w"> </span><span class="nf">_bending_strength</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">with_load</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">      </span><span class="sd">&quot;&quot;&quot;Reference bending strength (approximate).&quot;&quot;&quot;</span>
+      <span class="k">if</span> <span class="ow">not</span> <span class="n">with_load</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">0</span>
+      <span class="c1"># Typical reference strength ~1000 psi for sawn lumber</span>
+      <span class="k">return</span> <span class="mi">1000</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">EngineerWoodColumn</span><span class="p">:</span>
+<span class="w">   </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">   Engineered wood products column checker (simplified).</span>
+<span class="sd">   Handles LVL, glulam, etc.</span>
+<span class="sd">   &quot;&quot;&quot;</span>
+
+   <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">section</span><span class="p">:</span> <span class="n">LumberSection</span><span class="p">):</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">section</span> <span class="o">=</span> <span class="n">section</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">checker</span> <span class="o">=</span> <span class="n">WoodColumnChecker</span><span class="p">(</span><span class="n">section</span><span class="p">)</span>
+
+   <span class="k">def</span><span class="w"> </span><span class="nf">check_glulam_column</span><span class="p">(</span>
+      <span class="bp">self</span><span class="p">,</span>
+      <span class="n">length</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>
+      <span class="n">axial_load</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>
+      <span class="n">load_duration</span><span class="p">:</span> <span class="n">LoadDuration</span> <span class="o">=</span> <span class="n">LoadDuration</span><span class="o">.</span><span class="n">TEN_YEAR</span><span class="p">,</span>
+      <span class="n">moisture</span><span class="p">:</span> <span class="n">Moisture</span> <span class="o">=</span> <span class="n">Moisture</span><span class="o">.</span><span class="n">DRY</span><span class="p">,</span>
+      <span class="n">Ke</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">1.0</span>
+   <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+<span class="w">      </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">      Check glulam beam column per NDS (simplified).</span>
+<span class="sd">      Glulam has additional factors for temperature, load sharing, etc.</span>
+<span class="sd">      &quot;&quot;&quot;</span>
+      <span class="n">results</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">checker</span><span class="o">.</span><span class="n">check_column</span><span class="p">(</span>
+            <span class="n">length</span><span class="p">,</span> <span class="n">axial_load</span><span class="p">,</span> <span class="n">load_duration</span><span class="p">,</span> <span class="n">moisture</span><span class="p">,</span>
+            <span class="n">Ke_x</span><span class="o">=</span><span class="n">Ke</span><span class="p">,</span> <span class="n">Ke_y</span><span class="o">=</span><span class="n">Ke</span>
+      <span class="p">)</span>
+
+      <span class="c1"># Additional glulam factors (simplified)</span>
+      <span class="c1"># CT = 1.0 for normal temperature</span>
+      <span class="c1"># Cv = load sharing factor (typically 1.15 for multi-member)</span>
+
+      <span class="k">return</span> <span class="n">results</span>
+
+
+<span class="c1"># Example usage and test cases</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="mi">70</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;NDS Wood Column Design Checker&quot;</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="mi">70</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Example 1: 4x4 DF-L Grade #1, pinned-pinned, 6 ft span&quot;</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-&quot;</span> <span class="o">*</span> <span class="mi">70</span><span class="p">)</span>
+
+   <span class="n">section_1</span> <span class="o">=</span> <span class="n">LumberSection</span><span class="p">(</span>
+      <span class="n">b</span><span class="o">=</span><span class="mf">3.5</span><span class="p">,</span>      <span class="c1"># actual 4&quot; nominal width</span>
+      <span class="n">d</span><span class="o">=</span><span class="mf">3.5</span><span class="p">,</span>      <span class="c1"># actual 4&quot; nominal depth</span>
+      <span class="n">Fc_prime</span><span class="o">=</span><span class="mi">1350</span><span class="p">,</span>  <span class="c1"># Grade #1 DF-L compression strength</span>
+      <span class="n">E</span><span class="o">=</span><span class="mi">1900000</span>   <span class="c1"># Modulus of elasticity</span>
+   <span class="p">)</span>
+
+   <span class="n">checker_1</span> <span class="o">=</span> <span class="n">WoodColumnChecker</span><span class="p">(</span><span class="n">section_1</span><span class="p">)</span>
+   <span class="n">results_1</span> <span class="o">=</span> <span class="n">checker_1</span><span class="o">.</span><span class="n">check_column</span><span class="p">(</span>
+      <span class="n">length</span><span class="o">=</span><span class="mi">72</span><span class="p">,</span>  <span class="c1"># 6 feet = 72 inches</span>
+      <span class="n">axial_load</span><span class="o">=</span><span class="mi">3000</span><span class="p">,</span>  <span class="c1"># 3 kips</span>
+      <span class="n">load_duration</span><span class="o">=</span><span class="n">LoadDuration</span><span class="o">.</span><span class="n">TEN_YEAR</span><span class="p">,</span>
+      <span class="n">moisture</span><span class="o">=</span><span class="n">Moisture</span><span class="o">.</span><span class="n">DRY</span><span class="p">,</span>
+      <span class="n">Ke_x</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+      <span class="n">Ke_y</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+      <span class="n">lateral_load_y</span><span class="o">=</span><span class="mi">10</span>  <span class="c1"># 10 lbs/in lateral load</span>
+   <span class="p">)</span>
+
+   <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Applied axial stress: </span><span class="si">{</span><span class="n">results_1</span><span class="p">[</span><span class="s1">&#39;stress&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> psi&quot;</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Adjusted compression strength: </span><span class="si">{</span><span class="n">results_1</span><span class="p">[</span><span class="s1">&#39;Fc_star&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> psi&quot;</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span>
+      <span class="sa">f</span><span class="s2">&quot;Applied bending stress (y): </span><span class="si">{</span><span class="n">results_1</span><span class="p">[</span><span class="s1">&#39;details&#39;</span><span class="p">][</span><span class="s1">&#39;fb_y&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> psi&quot;</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Utilization ratio: </span><span class="si">{</span><span class="n">results_1</span><span class="p">[</span><span class="s1">&#39;utilization&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Governing axis: </span><span class="si">{</span><span class="n">results_1</span><span class="p">[</span><span class="s1">&#39;governing_axis&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Design: </span><span class="si">{</span><span class="s1">&#39;✓ PASS&#39;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">results_1</span><span class="p">[</span><span class="s1">&#39;passes&#39;</span><span class="p">]</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;✗ FAIL&#39;</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+   <span class="n">details</span> <span class="o">=</span> <span class="n">results_1</span><span class="p">[</span><span class="s1">&#39;details&#39;</span><span class="p">]</span>
+   <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Intermediate values:&quot;</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Load duration factor (CD): </span><span class="si">{</span><span class="n">details</span><span class="p">[</span><span class="s1">&#39;CD&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Moisture factor (CM): </span><span class="si">{</span><span class="n">details</span><span class="p">[</span><span class="s1">&#39;CM&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Size factor (CF): </span><span class="si">{</span><span class="n">details</span><span class="p">[</span><span class="s1">&#39;CF&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Stability factor (Cp): </span><span class="si">{</span><span class="n">details</span><span class="p">[</span><span class="s1">&#39;Cp&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Slenderness ratio (critical): </span><span class="si">{</span><span class="n">details</span><span class="p">[</span><span class="s1">&#39;lambda_crit&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Critical slenderness Cc: </span><span class="si">{</span><span class="n">details</span><span class="p">[</span><span class="s1">&#39;Cc&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</aside>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="rvF04-aibackgrnd.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><strong>F.4 | AI Background</strong></p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="rvG01-quickref.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>G.1 | Quick Ref</strong></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Sections
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-python-function"><strong>[2]</strong> Example - Python Function</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2025 R Holland.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,849 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" data-theme="dark">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
+    <title>D.1 | rivt Markup &#8212; rivt</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "dark";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "dark";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=5f316132" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/jquery.js?v=5d32c60e"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="_static/documentation_options.js?v=e259d695"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'rvD01-markup';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="D.5 | API Scopes" href="rvD02-apiscope.html" />
+    <link rel="prev" title="C.4 | rivtbook" href="rvC04-rivtbks.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="dark">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+    
+    <img src="_static/rivhome11t.png" class="logo__image only-dark" alt=""/>
+    <img src="_static/rivhome11t.png" class="logo__image only-light pst-js-only" alt=""/>
+  
+  
+    <p class="title logo__title">rivt</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvA01-start.html">
+    A.1 | Start
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvB01-overview.html">
+    B.1 | Overview
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvC01-documents.html">
+    C.1 | Docs
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
+    D.1 | rivt Markup
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvE01-collab.html">
+    E.1 | Collaboration
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvF01-aiintro.html">
+    F.1 | AI
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvG01-quickref.html">
+    G.1 | Quick Ref
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="Sections">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvA01-start.html">
+    A.1 | Start
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvB01-overview.html">
+    B.1 | Overview
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvC01-documents.html">
+    C.1 | Docs
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
+    D.1 | rivt Markup
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvE01-collab.html">
+    E.1 | Collaboration
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvF01-aiintro.html">
+    F.1 | AI
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvG01-quickref.html">
+    G.1 | Quick Ref
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links" aria-label="Docs">
+    <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
+    <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="rvD02-apiscope.html"><strong>D.5 | API Scopes</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvD03-linetags.html"><strong>D.2 | Line Tags</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvD04-blocktags.html"><strong>D.3 | Block Tags</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvD05-commands.html"><strong>D.6 | Commands</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvD06-assign.html"><strong>D.4 | Assignment</strong></a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>D.1 | rivt Markup</strong></span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="d-1-rivt-markup">
+<h1><strong>D.1 | rivt Markup</strong><a class="headerlink" href="#d-1-rivt-markup" title="Link to this heading">#</a></h1>
+<section id="api-functions">
+<span id="id1"></span><h2><strong>[1]</strong> API functions<a class="headerlink" href="#api-functions" title="Link to this heading">#</a></h2>
+<p><em>rivt</em> has six API functions. The name <em>rivt</em> is an acronym taken from
+four functions that process content. The remaining three functions are used for
+document generation and debugging.</p>
+<b>Content APIs</b>
+<ol style="border: 2px;
+        border-color: #49b2c3;
+        border-style: solid;
+        padding: 2em;
+        margin: 2em">
+    <li><b>[R]un</b> Runs Python scripts and markup.</li>
+    <li><b>[I]nsert</b> Adds static tables, images and equations.</li>
+    <li><b>[V]alues</b> Evaluates equations and functions.</li>
+    <li><b>[T]ools</b> Executes shell scripts and external programs.</li>
+</ol>
+
+<br>
+
+<b>Publish APIs</b>
+<ol style="border: 2px;
+        border-color: #49b2c3;
+        border-style: solid;
+        padding: 2em;
+        margin: 2em">
+    <li><b>[D]oc</b> specifies the <i>doc</i> type and style.</li>
+    <li><b>[S]kip, e[X]it</b> can be used for interactive debugging and comments.</li>
+</ol><div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>API Function</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Purpose</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>rv.R</strong> (rS)</p></td>
+<td><p>Run</p></td>
+<td><p>Run scripts and markup</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>rv.I</strong> (rS)</p></td>
+<td><p>Insert</p></td>
+<td><p>Insert static sources</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>rv.V</strong> (rS)</p></td>
+<td><p>Values</p></td>
+<td><p>Calculate values</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>rv.T</strong> (rS)</p></td>
+<td><p>Tools</p></td>
+<td><p>Shell scripts and external programs</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>rv.D</strong> (rS)</p></td>
+<td><p>Doc</p></td>
+<td><p>Publish docs</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>rv.S,X</strong> (rS)</p></td>
+<td><p>Skip, Exit</p></td>
+<td><p>Skip section, exit (comments and debugging)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>API functions define doc sections. The available <em>rivt markup</em> commands and
+tags depend on the API funciton. If interactive IDEs are used, API functions
+can be processed individually using the standard notebook cell percent
+notation:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %% optional label for navigation</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;rivt string&quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+</section>
+<section id="rivt-string">
+<span id="id2"></span><h2><strong>[2]</strong> rivt string<a class="headerlink" href="#rivt-string" title="Link to this heading">#</a></h2>
+<p>Each <a class="reference internal" href="rvA01-start.html"><span class="doc">API function</span></a> takes a triple quoted <a class="reference internal" href="rvG02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a>
+argument composed of a <a class="reference internal" href="rvG02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a> line followed
+by a multiple-line <a class="reference internal" href="rvG02-terms.html#term-content-substring"><span class="xref std std-term">content substring</span></a>. The <em>header substring</em> defines
+section processing parameters.  The <em>content substring</em> includes
+<a class="reference internal" href="rvG02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> and is indented four spaces for improved readability
+and navigation (e.g. section folding).</p>
+<p id="header-substring"><strong>Header substring</strong></p>
+<p>The <a class="reference internal" href="rvG02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a> starts with a <em>section label</em>, used as the
+section title, followed by a vertical bar and three comma separated
+<em>section parameters</em> that override default behavior.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | doc;stored, private;public, section;merge</span>
+
+<span class="s2">     Content substring indented 4 spaces</span>
+
+<span class="s2">    ...</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The header parameters include the following comma separated values in any
+order:</p>
+<dl class="simple">
+<dt><em>private/public</em></dt><dd><p>Determines whether the API section text is copied to the the <em>Public</em> folder
+<em>rivt file</em> for potentinal sharing. Actually sharing this folder is a
+separate step.</p>
+</dd>
+<dt><em>doc/stored</em></dt><dd><p>Determines whether the <em>rivt string</em> is formatted and printed in the doc,
+or just annotated in the doc and written to a file in the <em>Stored</em> folder
+for optional inclusion as an appendix.</p>
+</dd>
+<dt><em>section/merge</em></dt><dd><p>Determines whether the API starts a new <em>doc</em> section
+or is merged into the previous section.</p>
+</dd>
+<dt><em>script type</em></dt><dd><p>For the rv.R API only, the markup script type is specified
+in the header substring.</p>
+</dd>
+</dl>
+<p>Default settings in the <em>header substring</em> do not need to be specified. The
+default setting for each API is listed first (in bold) in the table below.
+The default privacy settings for all sections in a rivt file may be reversed by
+including it in the <em>comment settings</em> immediately following the
+<em>rivlib import statement</em>.  File default settings are in parenthsis.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
+
+<span class="c1"># rv private = false ; default section parameter changed to public (true)</span>
+<span class="c1"># rv no_tag = true ; API type is added to section number (true)</span>
+<span class="c1"># rv set_width = true character width of text output (80</span>
+</pre></div>
+</div>
+<p>Individual sections may be set back to private in the header substring after
+changing the default.</p>
+<p><strong>Header substring defaults</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>API</p></th>
+<th class="head"><p>private; public</p></th>
+<th class="head"><p>doc; stored</p></th>
+<th class="head"><p>section; merge</p></th>
+<th class="head"><p>pdfpage; nopage</p></th>
+<th class="head"><p>markup</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>rv.R</p></td>
+<td><p><strong>private</strong></p></td>
+<td><p><strong>stored</strong></p></td>
+<td><p><strong>section</strong></p></td>
+<td><p><strong>nopage</strong></p></td>
+<td><p><strong>type</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.I</p></td>
+<td><p><strong>private</strong></p></td>
+<td><p><strong>doc</strong></p></td>
+<td><p><strong>section</strong></p></td>
+<td><p><strong>nopage</strong></p></td>
+<td><p>NA</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.V</p></td>
+<td><p><strong>private</strong></p></td>
+<td><p><strong>doc</strong></p></td>
+<td><p><strong>section</strong></p></td>
+<td><p><strong>nopage</strong></p></td>
+<td><p>NA</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.T</p></td>
+<td><p><strong>private</strong></p></td>
+<td><p><strong>stored</strong></p></td>
+<td><p><strong>merge</strong> [1]</p></td>
+<td><p><strong>nopage</strong></p></td>
+<td><p>NA</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.D</p></td>
+<td><p><strong>private</strong></p></td>
+<td><p>stored only</p></td>
+<td><p>NA</p></td>
+<td><p>NA</p></td>
+<td><p>NA</p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.S</p></td>
+<td><p>NA</p></td>
+<td><p>NA</p></td>
+<td><p>NA</p></td>
+<td><p>NA</p></td>
+<td><p>NA</p></td>
+</tr>
+<tr class="row-even"><td><p>rv.X</p></td>
+<td><p>NA</p></td>
+<td><p>NA</p></td>
+<td><p>NA</p></td>
+<td><p>NA</p></td>
+<td><p>NA</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>[1] Summary of tool execution added to prior section</p>
+<p>Examples of <em>header substring</em> settings are shown below.</p>
+<ul class="simple">
+<li><p>An example with explicit defaults (they do not have to be declared).</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># This</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;A New Section | private, doc, section</span>
+
+<span class="s2">    Content text</span>
+<span class="s2">    ...</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="c1"># is equivalent to:</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;A New Section</span>
+
+<span class="s2">    Content text</span>
+
+<span class="s2">    ...</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>An example that merges a section into the previous section.</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;A Merged Section | merge</span>
+
+<span class="s2">    Content text</span>
+
+<span class="s2">    ...</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p id="content-substring"><strong>Content substring</strong></p>
+<p>The <a class="reference internal" href="rvG02-terms.html#term-content-substring"><span class="xref std std-term">content substring</span></a> is indented four spaces for legibility and
+code folding. It includes <a class="reference internal" href="rvD03-linetags.html"><span class="doc">line tags</span></a>,
+<a class="reference internal" href="rvD04-blocktags.html"><span class="doc">block tags</span></a> and  <a class="reference internal" href="rvD05-commands.html"><span class="doc">commands</span></a>
+along with  text.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label</span>
+
+<span class="s2">    Content text indented 4 spaces.</span>
+<span class="s2">    ...</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Content is converted line by line into formatted text and
+<a class="reference external" href="https://docutils.sourceforge.io/docs/user/rst/quickref.html" rel="noreferrer" target="_blank">RestructuredText</a>,
+and then further processed into HTML or PDF. If a line does not contain
+a <em>command</em>, <em>tag</em> or <em>assignment</em> it is passed through as is. This allows the
+<em>Insert</em> function (rv.I) to include some <em>restructured text</em> directly i.e.
+surrounding words with * or ** will format a word as italic or bold.</p>
+<p>In addition block tags in the <em>Tools function</em> (rv.R) directly supports
+processing HTML, LaTeX and reStructuredText scripts.</p>
+<hr class="docutils" />
+</section>
+<section id="tags-and-commands">
+<span id="markup"></span><h2><strong>[3]</strong> Tags and Commands<a class="headerlink" href="#tags-and-commands" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="rvD03-linetags.html"><span class="doc">Line Tags</span></a></p>
+<blockquote>
+<div><p>A <a class="reference internal" href="rvG02-terms.html#term-line-tag"><span class="xref std std-term">line tag</span></a> formats a line of text and is denoted with a single
+<strong>_[LETTER]</strong>, placed at or near the end of the line, depending on the tag.</p>
+</div></blockquote>
+<p><a class="reference internal" href="rvD04-blocktags.html"><span class="doc">Block Tags</span></a></p>
+<blockquote>
+<div><p>A <a class="reference internal" href="rvG02-terms.html#term-block-tag"><span class="xref std std-term">block tag</span></a> formats a block of text and begins with
+<strong>_[[TAGNAME]]</strong> and terminates with <strong>_[[END]]</strong>.</p>
+</div></blockquote>
+<p><a class="reference internal" href="rvD05-commands.html"><span class="doc">Commands</span></a></p>
+<blockquote>
+<div><p><em>rivt commands</em> read and write external files. They typically start in the
+first column with a vertical bar ( | ) followed by the command name, file
+path, and parameters.</p>
+<p>The exceptions are the definition (<strong>==:</strong>), assignment (<strong>&lt;=:</strong>),
+function (<strong>:=:</strong>) and compare (<strong>&lt;&gt;</strong>) commands that are used to
+define, assign and compare values.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="p">|</span><span class="w"> </span>COMMAND<span class="w"> </span><span class="p">|</span><span class="w"> </span>relative<span class="w"> </span>path<span class="w"> </span><span class="p">|</span><span class="w"> </span>parameters
+</pre></div>
+</div>
+<p>File paths are specified relative to the <em>rivt root folder</em>. The <em>rivt
+report</em> folder structure is described <a class="reference internal" href="rvC03-reports.html#rivt-folders"><span class="std std-ref">here</span></a>.</p>
+<p>If the path is ommitted the default path for each command is applied. If
+the <em>singledoc</em> parameter is set, the <em>resource files</em> and <em>docs</em> are
+stored in the <em>rivt root folder</em>.</p>
+</div></blockquote>
+<p>Tag and Command syntax for each API type is defined and described
+using the following format:</p>
+<p style="border-width:2px; border-style:solid;
+border-color:#49b2c3;padding: 1em;">
+
+<b>Markup Key<br>
+<br>
+_[TAG] or | COMMAND |</b><br>
+<br>
+Description<br>
+<br>
+<pre>
+    Syntax:
+        _[TAG] or | COMMAND | syntax
+
+    Example:
+        This is a sentence. _[C]
+</pre>
+</p></section>
+<hr class="docutils" />
+<section id="folders">
+<h2><strong>[4]</strong> Folders<a class="headerlink" href="#folders" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>&lt;p style=”border-width:2px; border-style:solid;
+border-color:#49b2c3;padding: 1em;”&gt;</p>
+<p>&lt;b&gt;Folder Names&lt;/b&gt;&lt;br&gt;
+&lt;br&gt;</p>
+<p>A report folder can contain any set of files and folders but the following
+structure is required for &lt;i&gt;doc&lt;/i&gt; processing. Files and folders are
+organized under a root folder with the prefix &lt;i&gt;rivt-&lt;/i&gt; e.g.
+&lt;i&gt;rivt-Report-Label&lt;/i&gt;. &lt;br&gt; &lt;br&gt;</p>
+<p>&lt;i&gt;report folders&lt;/i&gt; (root folders) include at least the &lt;i&gt;rivt files&lt;/i&gt;
+and the five required subfolders. Required folders and prefixes are
+shown in brackets. Folders preceded by an underscore contain rivt outputs.
+Folders requiring author input are capitalized. &lt;br&gt; &lt;br&gt;</p>
+</div></blockquote>
+<p>The top level folder structure is shown below. A more detailed description of
+the folder structure is <a class="reference internal" href="rvC03-reports.html#report-folders"><span class="std std-ref">here</span></a>.</p>
+<p><strong>Top Level Folders</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rivt-Report-Label/<span class="w">           </span>Report<span class="w"> </span>Folder
+<span class="w">  </span>├──<span class="w"> </span>.vscode/<span class="w">                  </span>optional<span class="w"> </span>VSCode<span class="w"> </span>settings
+<span class="w">  </span>├──<span class="w"> </span>rivt-public_/<span class="w">             </span>rivt-generated<span class="w"> </span>public<span class="w"> </span>files
+<span class="w">      </span>├──<span class="w"> </span>rvsrc/<span class="w">                     </span><span class="nb">source</span><span class="w"> </span>files
+<span class="w">      </span>├──<span class="w"> </span>README.txt<span class="w">                </span>public<span class="w"> </span>text<span class="w"> </span>report<span class="w"> </span>or<span class="w"> </span>doc
+<span class="w">      </span>├──<span class="w"> </span>rv-101-filename1.py<span class="w">       </span>public<span class="w"> </span>rivt<span class="w"> </span>file
+<span class="w">      </span>├──<span class="w"> </span>rv-102-filename2.py<span class="w">       </span>public<span class="w"> </span>rivt<span class="w"> </span>file
+<span class="w">      </span>├──<span class="w"> </span>rv-201-filename3.py<span class="w">       </span>public<span class="w"> </span>rivt<span class="w"> </span>file
+<span class="w">      </span>...
+<span class="w">  </span>└──<span class="w"> </span>rivt-report/<span class="w">               </span>rivt<span class="w"> </span>files<span class="w"> </span>and<span class="w"> </span>docs
+<span class="w">      </span>├──<span class="w"> </span>_published/<span class="w">               </span>published<span class="w"> </span>docs<span class="w"> </span>and<span class="w"> </span>reports
+<span class="w">      </span>├──<span class="w"> </span>_rstdocs/<span class="w">                 </span>intermediate<span class="w"> </span>restructured<span class="w"> </span>text<span class="w"> </span>files
+<span class="w">      </span>├──<span class="w"> </span>rv_stor/<span class="w">                  </span>rivt<span class="w"> </span>generated<span class="w"> </span>stored<span class="w"> </span>files
+<span class="w">      </span>├──<span class="w"> </span>rvsrc/<span class="w">                    </span>author<span class="w"> </span><span class="nb">source</span><span class="w"> </span>files
+<span class="w">      </span>├──<span class="w"> </span>rivt-report.py<span class="w">            </span>report<span class="w"> </span>generating<span class="w"> </span>script
+<span class="w">      </span>├──<span class="w"> </span>rv101-filename1.py<span class="w">        </span>rivt<span class="w"> </span>file
+<span class="w">      </span>├──<span class="w"> </span>rv102-filename2.py<span class="w">        </span>rivt<span class="w"> </span>file
+<span class="w">      </span>├──<span class="w"> </span>rv201-filename3.py<span class="w">        </span>rivt<span class="w"> </span>file
+<span class="w">      </span>...
+<span class="w">  </span>└──<span class="w"> </span>README.txt<span class="w">                 </span>text<span class="w"> </span>report<span class="w"> </span>or<span class="w"> </span>doc
+</pre></div>
+</div>
+<hr class="docutils" />
+<div class="toctree-wrapper compound">
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="rvC04-rivtbks.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><strong>C.4 | rivtbook</strong></p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="rvD02-apiscope.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>D.5 | API Scopes</strong></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Sections
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api-functions"><strong>[1]</strong> API functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-string"><strong>[2]</strong> rivt string</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tags-and-commands"><strong>[3]</strong> Tags and Commands</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#folders"><strong>[4]</strong> Folders</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2025 R Holland.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+  </body>
+</html>

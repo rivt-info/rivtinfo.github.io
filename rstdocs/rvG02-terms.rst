@@ -1,0 +1,216 @@
+**G.2 | Terms**
+=====================
+
+**[1]** rivt Terms
+-----------------------------
+
+.. glossary::
+  :sorted: 
+    
+  doc 
+  docs 
+    A formatted document file output using the rivtlib package. A doc file
+    is a text, PDF or HTML file with the name taken from the corresponding rivt
+    file.
+
+  docnumber
+  doc number
+  doc numbers    
+    Prefix number of a rivt and doc file name used to organize a report. 
+    It has the form *rvDss-filename.py* where D is a capital alphanumeric 
+    division number and nn is the subdivision number.
+
+  division 
+    A group of related rivt files organized in a report and labeled in
+    the rivt file name. Optionally organized in a division folder.
+
+
+  rivt markup  
+    A light weight markup that wraps restructuredText and outputs reports in
+    text, PDF and HTML. Markup is included in string arguments to rivt 
+    API functions. 
+
+  header
+  headers
+  header text
+  header substring
+    The first line of a  *rivt string* that includes a section title, followed 
+    by comma separated parameters.
+
+  content
+  content text
+  content substring
+    The text in a *rivt string* that follows the *header substring*. The text is 
+    utf-8 (Unicode Transformation Format - 8-bit), a character encoding 
+    standard that is a superset of ASCII, handles text from any language, 
+    and is constant across all platforms.
+  
+  rivt
+    An open source Python project that includes :term:`rivtlib` and approximately 
+    two dozen :doc:`Python packages <rvG01-quickref>`. When *rivt* is installed
+    :term:`docs` and :term:`reports` may be edited and published using a text
+    editor.
+  
+  rivt doc
+  rivt docs
+    A formatted document file output from a *rivt file* using the rivtlib package. 
+    A doc is a text, PDF or HTML file with the default name of the *rivt file* 
+    and file type suffix.
+  
+  rivtlib
+    Open source `Python package <https://www.rivtlib.dev>`_ that generates docs 
+    and reports from a :term:`rivt file`  
+
+  rivt string
+    Triple quoted string argument to an API function.
+
+  rivt file
+  rivt files
+    A Python file that imports *rivtlib* and includes *rivt markup*.  
+
+  rivt file number 
+    Prefix of rivt file name used to organize a report (rvDss-). It has the form 
+    *rvDss-filename.py* where D is a capital alphanumeric division number 
+    and ss is the subdivision number.
+
+  rivt framework 
+  framework
+    The recommended *rivt-framework* includes the
+    following separately installed programs:
+
+    #. `VSCode <https://code.visualstudio.com/>` and 
+       `VSCode extensions <https://marketplace.visualstudio.com/vscode>`. 
+       *rivt* extensions and snippets are :doc:`here <rvG01-quickref>`.
+    #. `Git <https://git-scm.com>` and set up a `GitHub <hhttps://github.com>` 
+    #. `LaTeX <https://www.tug.org/texlive/>`
+    #. `QCAD <https://qcad.io/en/>`
+
+  line tag
+  line tags
+    A line tag has the form **_[TAG]** and formats a line of text. 
+
+  block tag
+  block tags
+    A block tag formats a block of text that begins with **_[[TAG]]**
+    and terminates with **_[[Q]]**. 
+
+  command
+  commands 
+    *rivt commands* read and write external files and assign values to
+    variables. They start in the initial columns with a 
+    vertical bar ( | ) followed by the file path, name and parameters. The path
+    is relative to the rivt report root folder. If the metadata variable
+    *rv_localB* is set to true resources will be read from and written to the 
+    local *rivt file* folder.
+
+    .. code-block:: bash
+
+      | COMMAND | relative path | parameters
+    
+
+  report
+  reports
+  rivt report
+  rivt reports
+    A group of compiled *docs* organized by rivt file number. 
+
+  report folder
+  report folders
+    The folder structure for producing a report. See :ref:`here. <rivt-folders>`
+
+  section parameter 
+  section parameters 
+    Comma separated parameters in a *header* that specify the section processing.
+
+  rivt log file
+    *rivt file* execution log written to the *log folder* as *rvDss-log.txt*.
+    
+  rivtbook
+  rivtbooks
+    A collection of *rivt files* organized for selection and insertion into
+    *rivt docs* and *reports*.  
+  
+  rivtbook folder
+  rivtbook folders
+    The folder structure for a rivtbook. See :ref:`here. <rivt-books>`
+
+  report script
+    A Python script that assembles *rivt files* into *docs* and a *report*.
+
+  rvspace
+    rivt alias name for the global rivt file namespace. Other user namespaces may be 
+    specified
+
+
+
+**[2]** Python Terms
+-----------------------------
+
+ 
+
+.. glossary::
+  :sorted: 
+  
+  Python
+  python
+    A `programming language <https://www.python.org/>`_ that lets you work quickly
+    and integrate systems more effectively
+  
+  docutils
+    A Python package that processes `restructured text <https://docutils.sourceforge.io/>`_
+    files into HTML, LaTeX, and other formats.
+
+  restructuredtext
+  restructuredtext markup
+    A lightweight markup language designed to be processed by document software 
+    including `docutils, <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_ 
+    Sphinx and rivt.
+
+  namespace
+    Provides `scope <https://en.wikipedia.org/wiki/Namespace>`_ for functions 
+    and variables. 
+
+
+**[3]** GitHub and VSCode Terms
+-----------------------------------
+
+ 
+
+.. glossary::
+  :sorted: 
+
+  Git
+  git
+    A `version control system <https://git-scm.com/>`_ that lets you manage and 
+    keep track of your source code history.
+
+  repo
+  repository 
+    a storage location for software packages
+
+  fork
+  forked
+    A fork is a copy of a repository. Forking a repository allows you to
+    freely experiment with changes without affecting the original project.
+    Most commonly, forks are used to either propose changes to someone else's
+    project or to use someone else's project as a starting point for your own
+    idea.
+
+  profile
+    Allows VSCode users to customize their environment for different workflows, 
+    projects, or tasks. This feature provides a way to manage distinct 
+    configurations of settings, extensions, keyboard shortcuts, snippets, 
+    and tasks.
+
+  IDE
+  ide
+    Integrated Development Environment. A software application that provides 
+    comprehensive facilities to computer programmers for software development. 
+    An IDE typically includes a code editor, build automation tools, 
+    and a debugger. *rivt extensions* have been developed for VSCode. 
+    Other IDEs include PyCharm, Spyder, and JupyterLab.
+
+  rivt Codespace
+  rivt codespace
+    A Codespace set up with extensions, snippets and keyboard shortcuts for 
+    editing and publishing *rivt docs*.
