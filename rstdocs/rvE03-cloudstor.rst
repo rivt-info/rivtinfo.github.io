@@ -5,9 +5,8 @@
 ----------------------------------------
 
 A typical *rivt report folder* is about 50 to 100 MB in size, depending on the
-formats that are generated. Folders can be stored locally or in the cloud. The
-preferred storage location depends on the purpose.
-
+formats used and resources stored. Folders can be stored locally or in the
+cloud. The preferred storage location depends on the purpose.
 The simplest location is local storage. It does not require and internet
 connection.Other options include remote repositories and file based cloud
 storage.
