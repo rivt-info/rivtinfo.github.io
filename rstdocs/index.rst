@@ -57,7 +57,7 @@ Examples of a :ref:`rivt file <example-file>` and the published
 
 For an overview of *rivt* see :ref:`here <rivt-overview>`. To get started see 
 :ref:`install <rivt-start>` and :ref:`tutorial <rivt-tutor>`.  For *AI* use with 
-*rivt* and see :ref:`here <rivt-context>`.
+*rivt* see :ref:`here <rivt-context>`.
 
 The *rivtlib* `Python package <https://pypi.org/project/rivtlib/>`__ formats
 and compiles a *rivt file* to a text, PDF or HTML document ( *doc* ) in about a

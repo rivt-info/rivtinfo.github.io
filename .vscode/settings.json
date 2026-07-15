@@ -3,7 +3,7 @@
     "window.zoomLevel": 1.2,
     "python.terminal.activateEnvironment": true,
     "python.useEnvironmentsExtension": true,
-    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontSize": 12,
     "terminal.integrated.defaultLocation": "editor",
     "terminal.integrated.environmentChangesRelaunch": true,
     "terminal.integrated.defaultProfile.windows": "Command Prompt",

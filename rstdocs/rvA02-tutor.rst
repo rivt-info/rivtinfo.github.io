@@ -32,8 +32,8 @@ that trigger publication of a *doc* in one of the three formats.
 
 
 The example file used in this tutorial, along with other report and rivtbook 
-example files, are provided at 
-`google drive <https://drive.google.com/drive/u/1/folders/1NP04tdp3FRAir0ErvL2hlm3YBaFlLk5V>`_. 
+example files, are provided on
+`Google Drive <https://drive.google.com/drive/u/1/folders/1NP04tdp3FRAir0ErvL2hlm3YBaFlLk5V>`_. 
 
 #. Example 1
     An example file that illustrates common API functions and rivt

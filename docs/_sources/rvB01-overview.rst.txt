@@ -9,7 +9,7 @@
 
 *rivt* is an open source Python project built around the
 `rivtlib Python package <https://pypi.org/project/rivtlib/>`__
-and `:ref:dependencies <Project-requirements>`.  It publishes a formatted 
+and `:ref:dependencies <vscode-settings>`.  It publishes a formatted 
 :term:`rivt doc` as a text, PDF or HTML file. from a :term:`rivt file` - 
 a Python file (.py) that imports the :term:`rivtlib` Python package. *rivtlib* 
 includes rivt API functions that implement :term:`rivt markup`. 
