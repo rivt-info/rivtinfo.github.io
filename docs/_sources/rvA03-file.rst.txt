@@ -6,8 +6,9 @@
 .. code-block:: python
 
     #! python3
-    """ This is the complete rivt file example used in the tutorial.
-    
+    """ This is a rivt doc example.  It is used in the tutorial at 
+    https://www.rivt.info. 
+
     This example illustrates: 
 
         rivtlib markup
@@ -38,7 +39,7 @@
     # rv private = true ; if false, default section heading changed to public (private)
 
     # %% rv.I("""Summary and Loads
-    rv.I("""Summary and Loads
+    rv.I(r"""Summary and Loads
 
         This rivt file example calculates the maximum stress and deflection in a
         simply supported, uniformly loaded beam using E-B theory _[#]. It also
@@ -55,7 +56,7 @@
     """)
 
     # %% rv.I("""Load Combinations 
-    rv.I("""Load Combinations 
+    rv.I(r"""Load Combinations 
 
         ## Indented comments with double hashes will not appear in the doc
         
@@ -73,7 +74,7 @@
     """)
 
     # %% rv.V("""Loads and Geometry
-    rv.V("""Loads and Geometry 
+    rv.V(r"""Loads and Geometry 
         
         Successive value definitions are formatted as a table. Variable values are
         defined with the define operator. The line tag [T] labels and numbers the
@@ -94,7 +95,7 @@
         folder. The description is the table title, followed by the max
         column width. 
 
-        | VALTABLE | rvsrc/data/beam1.csv | Beam Geometry, 40
+        | VALTABLE | rvsrc/vals/beam1.csv | Beam Geometry, 40
 
         | IMAGE | rvsrc/img/beam1.png | Beam Diagram, 60, num, not
 
@@ -107,7 +108,7 @@
         """)
 
     # %% rv.V("""Beam Stress
-    rv.V("""Beam Response
+    rv.V(r"""Beam Response
 
         The following lines import the beam geometry from an external file, 
         calculate section properties from imported functions and calculate 
@@ -136,7 +137,7 @@
         """)
 
     # %% rv.R("""doc notes | endnotes
-    rv.R("""doc notes | endnotes
+    rv.T(r"""doc notes | endnotes
         "Euler–Bernoulli beam theory", Wikipedia, Wikimedia Foundation. [Online].
         https://en.wikipedia.org/wiki/Euler_Bernoulli_beam_theory. 
         [Accessed: Jun. 15, 2026].
@@ -145,9 +146,8 @@
         American Society of Civil Engineers, 2005.
         """)
 
-
     # %% rv.D("""Publish Doc 
-    rv.D("""Publish Doc 
+    rv.D(r"""Publish Doc 
         
         A rivt file may be published as a text, PDF or HTML doc by specifying the
         PUBLISH type parameter as txt, pdf or html. 
@@ -157,41 +157,46 @@
         _rivt-public folders as a README.txt file. READMEs are formatted and
         displayed on the first page of a GitHub repo.
         
-        | PUBLISH | Example 1 - rivt Doc | pdf
+        | PUBLISH | Example 1 - rivt Doc | txt
         
         _[[METADATA]] 
+        [process]
+        ;-----------------------------------------
+        doc_verbose = true; if false minmize output during doc processing
+        auto_cfg = true ; if false, config files are not updated from rivt file
         [doc]
+        ;-----------------------------------------
         authors = R Holland
-        version = 1.0.0a12
-        repo = https://github.com/rivt-info/rivt-single-doc
+        version = 1.0.0a13
+        repo = https://github.com/rivt-info/rivt-example-01
         license = https://opensource.org/license/mit/
-        copyright = -
-        fork1_authors = -
-        fork1_version = -
-        fork1_repo = -
+        copyright = --
+        fork1_authors = --
+        fork1_version = --
+        fork1_repo = --
         fork1_license = https://opensource.org/license/mit/
-        
         [layout]
+        ;----------------------- cover page and runner settings
+        ;--- add logo files to rvsrc/img folder, size is % page width
         subtitle =  UDL Beam
         copyright = --
-        client = Attn: User Example
+        client = user example
         coverpage = true
         coverlogo_size = 30
         coverlogo = logo1.png
         runninglogo = logo2.png
         runninglabel = rivt
         project_ref = proj. 0001
+        ;------------------------ PDF settings
+        ;--- colors: red, blue, green, black, gray, brown, maroon, gray, olive, cyan
+        ;--- margins: top, right, bottom, left    page size: letter, legal, A4    
+        pdf_link_color = brown
+        pdf_link_underline = false
         pdf_pagesize = letter
         pdf_margins = 1in, 1in, 1in, 1in 
-        pdf_link_underline = true
-        ; colors - red, blue, green, yellow, black, gray, brown
-        ; lightblue, magenta, lime, maroon, gray, olive, cyan
-        pdf_link_color = black
-        ; toc levels: 1 - includes subdivisions, 2 - also includes sections
+        ;----------------------- TOC levels
+        ;--- 1: include subdivisions   2: include subdivisions and sections
         toc_level = 2
-
-        [process]
-        doc_verbose = true; if false minmize output during doc processing
-        auto_cfg = true ; if false, config files are not updated from rivt file
         _[[END]]    
         """)
+

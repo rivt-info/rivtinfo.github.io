@@ -11,12 +11,12 @@
 ========== ========================================= ===============================
 API Scope         Block Tag                                Description 
 ========== ========================================= ===============================
+rv.R        **_[[WRITE]]** var name                   :ref:`Write block`
+rv.R        **_[[SHELL]]** os, *wait;nowait*          :ref:`Shell script`
 rv.I,V      **_[[TEXT]]** type                        :ref:`Text block`
 rv.I,V      **_[[TABLE]]** label                      :ref:`Table block`
 rv.V        **_[[ARGS]]** arg dict name               :ref:`Arg block`
 rv.V        **_[[PYTHON]]** label                     :ref:`Python block`
-rv.T        **_[[WRITE]]** var name                   :ref:`Write block`
-rv.T        **_[[SHELL]]** os, *wait;nowait*          :ref:`Shell script`
 rv.D        **_[[METADATA]]** label                   :ref:`Meta block` 
 all         **_[[END]]**                              :ref:`End block`
 ========== ========================================= ===============================
@@ -30,11 +30,13 @@ all         **_[[END]]**                              :ref:`End block`
     
     Inserts formatted text into doc. 
 
-    - *literal*
+    - *text*
     - *python*
     - *topic*
     - *bold*
     - *italic*
+    - *notes*
+    - *endnotes*
 
     .. code-block:: text
             

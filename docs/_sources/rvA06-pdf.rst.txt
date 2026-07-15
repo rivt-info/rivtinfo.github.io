@@ -1,6 +1,8 @@
 **A.6 | PDF doc**
 =========================
 
+.. _pdf-doc:
+
 Click on PDF images to enlarge. 
 PDF doc :download:`download link <_downloads/rv001-example01.pdf>`.
 

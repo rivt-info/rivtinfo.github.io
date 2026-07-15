@@ -1,7 +1,7 @@
 **E.2 | GitHub**
 ===================================
 
-**[2]** Public GitHub files
+**[1]** Public GitHub files
 ----------------------------------------
 
 A feature of *rivt* is fine-grained control over public sharing of all or parts
@@ -43,7 +43,7 @@ remove command (e.g. in VSCode).
 .. _search-interface:
 
 
-**[1]** Global Search
+**[2]** Global Search
 --------------------------------
 
 This page is a search interface for **rivt** files on GitHub. The search covers
