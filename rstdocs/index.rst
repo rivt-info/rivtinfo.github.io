@@ -51,9 +51,9 @@ There are four types of rivt document files:
 
 
 
-
-For examples of a rivt file and text, PDF, or HTML doc , see 
-file, text, PDF and HTML. 
+Examples of a :ref:`rivt file <example-file>` and the published 
+:ref:`text doc <text-doc>`, :ref:`PDF doc <pdf-doc>`, and HTML 
+:ref:`HTML doc <html-doc>` are provided.
 
 For an overview of *rivt* see :ref:`here <rivt-overview>`. To get started see 
 :ref:`install <rivt-start>` and :ref:`tutorial <rivt-tutor>`.  For *AI* use with 
