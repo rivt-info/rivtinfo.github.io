@@ -86,13 +86,15 @@ specifies formatting and syntax coloring.  Language types include:
 
 Inserts formatted text from file into doc. 
 
-- *literal*
-- *python*
-- *topic*
-- *bold*
-- *italic*
+    - *text*
+    - *python*
+    - *topic*
+    - *bold*
+    - *italic*
+    - *notes*
+    - *endnotes*
 
-The *literal* type inserts text into the *doc* without formatting. Paths are
+The *text* type inserts text into the *doc* without formatting. Paths are
 relative to the rivit-report the report root (rivt file folder). If the doc is
 a single doc the file is read from the rivt file folder.
 

@@ -55,7 +55,7 @@ notation:
 .. code-block:: python
 
     # %% optional label for navigation
-    rv._("""rivt string""")
+    rv._(r"""rivt string""")
 
 
 ------------------------------------------------
@@ -65,8 +65,8 @@ notation:
 **[2]** rivt string
 ----------------------------------
 
-Each :doc:`API function <rvA01-start>` takes a triple quoted :term:`rivt string` 
-argument composed of a :term:`header substring` line followed 
+Each :doc:`API function <rvA01-start>` takes a raw, triple quoted 
+:term:`rivt string` composed of a :term:`header substring` line followed 
 by a multiple-line :term:`content substring`. The *header substring* defines 
 section processing parameters.  The *content substring* includes  
 :term:`rivt markup` and is indented four spaces for improved readability 
@@ -82,7 +82,7 @@ section title, followed by a vertical bar and three comma separated
 
 .. code-block:: python
 
-    rv._("""Section Label | doc;stored, private;public, section;merge
+    rv._(r"""Section Label | doc;stored, private;public, section;merge
 
          Content substring indented 4 spaces
         
@@ -153,7 +153,7 @@ Examples of *header substring* settings are shown below.
 
     # This
     
-    rv.I("""A New Section | private, doc, section
+    rv.I(r"""A New Section | private, doc, section
 
         Content text
         ...
@@ -162,7 +162,7 @@ Examples of *header substring* settings are shown below.
     
     # is equivalent to:
 
-    rv.I("""A New Section  
+    rv.I(r"""A New Section  
 
         Content text
   
@@ -175,7 +175,7 @@ Examples of *header substring* settings are shown below.
 
 .. code-block:: python
 
-    rv.I("""A Merged Section | merge
+    rv.I(r"""A Merged Section | merge
 
         Content text
 
@@ -194,7 +194,7 @@ along with  text.
 
 .. code-block:: python
 
-    rv._("""Section Label  
+    rv._(r"""Section Label  
 
         Content text indented 4 spaces.
         ...

@@ -148,7 +148,7 @@ text. For further details see :doc:`here <rvD01-markup>`.
 
 .. code-block:: python
 
-    rv._("""Section Label | parameters
+    rv._(r"""Section Label | parameters
 
          Content text that is 
          indented four spaces.

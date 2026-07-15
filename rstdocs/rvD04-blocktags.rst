@@ -30,11 +30,13 @@ all         **_[[END]]**                              :ref:`End block`
     
     Inserts formatted text into doc. 
 
-    - *literal*
+    - *text*
     - *python*
     - *topic*
     - *bold*
     - *italic*
+    - *notes*
+    - *endnotes*
 
     .. code-block:: text
             
