@@ -150,46 +150,6 @@ The web site `OpenModels.info <https://www.openmodels.info/>`__ is a
 *Google Drive* repository of open source engineernig model files, including
 *rivt files* and *reports*.
 
--------------------------------   
-
-
-[3] Git and GitHub
-------------------------------------------------
-
-*GitHUb* is a popular and widely used cloud and version control system 
-based on the :term:`Git` program that may be downloaded
-`here <https://git-scm.com/>`__.
-
-`Git <https://git-scm.com/>`_ and `GitHub <https://github.com/>`_ are part of
-the *rivt framework*. *Git* is a free, open-source, distributed version control
-system designed to manage and track changes in files. It allows multiple people
-to work on the same project simultaneously without overwriting each other's
-work. *GitHub* is a web-based platform for hosting, managing, and collaborating
-on code built around Git. It allows teams to work together efficiently on
-software projects and provides features like pull requests, issue tracking, and
-project management.
-
-Each *rivt project* is typically stored in its own repository. Every user of
-GitHub has a personal account with essentially unlimited repositories.Free
-accounts provide for:
-
-- Unlimited Repositories: You can create as many public and private
-  repositories as you need.
-
-- Unlimited Collaborators: There is no limit to the number of people you can
-  work with on your repositories.
-
-- Community Support: You have access to the GitHub Community Discussions for help.
-
-- Core Services with Usage Limits: The free plan includes a certain amount of
-  monthly usage for services:
-
-  + GitHub Actions: 2,000 minutes per month for private repositories 
-      (unlimited for public repositories). 
-  
-  + GitHub Codespaces: 120 core hours and 15 GB of storage per month.
-
-
 .. toctree::
     :maxdepth: 1
     :hidden:

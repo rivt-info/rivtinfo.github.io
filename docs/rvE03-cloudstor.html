@@ -414,24 +414,89 @@
 <h1><strong>E.3 | Cloud Storage</strong><a class="headerlink" href="#e-3-cloud-storage" title="Link to this heading">#</a></h1>
 <section id="general-considerations">
 <h2><strong>[1]</strong> General Considerations<a class="headerlink" href="#general-considerations" title="Link to this heading">#</a></h2>
-<p>A typical <em>rivt report folder</em> size is about 50 to 100 MB, depending on the
-formats that are generated. The preferred storage location depends on
-the purpose.</p>
-<p>The simplest implemenation is local storage. Other options include repositories
-and file based cloud storage.</p>
+<p>A typical <em>rivt report folder</em> is about 50 to 100 MB in size, depending on the
+formats that are generated. Folders can be stored locally or in the cloud. The
+preferred storage location depends on the purpose.</p>
+<p>The simplest location is local storage. It does not require and internet
+connection.Other options include remote repositories and file based cloud
+storage.</p>
 </section>
 <hr class="docutils" />
-<section id="repositories">
-<h2><strong>[2]</strong> Repositories<a class="headerlink" href="#repositories" title="Link to this heading">#</a></h2>
-<p>abc</p>
+<section id="remote-repositories">
+<h2><strong>[2]</strong> Remote Repositories<a class="headerlink" href="#remote-repositories" title="Link to this heading">#</a></h2>
+<p>A remote repository stores a version of the rivt project files and version
+history hosted on a server or online network (like GitHub, GitLab, or
+Bitbucket) rather than on your local computer. It acts as a central hub for
+team collaboration and an off-site backup.</p>
+<p>GitHub is the repository for rivtlib and related code. See
+<a class="reference external" href="https://github.com/rivtlib-dev" rel="noreferrer" target="_blank">rivtlib.dev</a> and
+<cite>rivtlib.info &lt;https://github.com/rivtlib-info&gt;</cite>.</p>
+<p>Repositories usually include local files managed by a tool like which are synced to a cloud based
+host. The local files should not be stored on folders that are also synced to
+other file based cloud storage services. This leads to potential conflicts
+between the syncing services.</p>
+<p>One approach to avoid this conflict is to independently synchronize the local
+files to a file based cloud storage folder using a synchronization utility. File
+management tools like <em>git</em> only sync when invoked, not as a background process.</p>
+<p><em>GitHub</em> is a popular and widely used cloud and version control system
+based on the <a class="reference internal" href="rvG02-terms.html#term-Git"><span class="xref std std-term">Git</span></a> program that may be downloaded
+<a class="reference external" href="https://git-scm.com/" rel="noreferrer" target="_blank">here</a>. <cite>Git &lt;https://git-scm.com/&gt;</cite> is part of
+<em>rivt-code</em>. It is a free, open-source, distributed version control
+system designed to manage and track changes in files. It allows multiple people
+to work on the same project simultaneously without overwriting each other’s
+work. <em>GitHub</em> is a web-based platform for hosting, managing, and collaborating
+on code built around Git. It allows teams to work together efficiently on
+software projects and provides features like pull requests, issue tracking, and
+project management.</p>
+<p>Each <em>rivt folder</em> is typically stored in its own repository. Every user of
+GitHub has a personal account with essentially unlimited repositories.Free
+accounts provide for:</p>
+<ul class="simple">
+<li><p>Unlimited Repositories: You can create as many public and private
+repositories as you need.</p></li>
+<li><p>Unlimited Collaborators: There is no limit to the number of people you can
+work with on your repositories.</p></li>
+<li><p>Community Support: You have access to the GitHub Community Discussions for help.</p></li>
+<li><p>Core Services with Usage Limits: The free plan includes a certain amount of
+monthly usage for services:</p>
+<ul>
+<li><dl class="simple">
+<dt>GitHub Actions: 2,000 minutes per month for private repositories</dt><dd><p>(unlimited for public repositories).</p>
+</dd>
+</dl>
+</li>
+<li><p>GitHub Codespaces: 120 core hours and 15 GB of storage per month.</p></li>
+</ul>
+</li>
+</ul>
 </section>
 <hr class="docutils" />
-<section id="file-based-storage">
-<h2><strong>[3]</strong> File Based Storage<a class="headerlink" href="#file-based-storage" title="Link to this heading">#</a></h2>
-<p>This page is a search interface for <strong>rivt</strong> files on GitHub. The search covers
-the full text of the <strong>rivt</strong> README.txt file in the <em>repo</em> directory. The
-README file contains the <em>rivt report</em>. For advanced searching use
-the <a class="reference external" href="https://github.com/search" rel="noreferrer" target="_blank">GitHub interface</a>.</p>
+<section id="file-based-cloud-storage">
+<h2><strong>[3]</strong> File Based Cloud Storage<a class="headerlink" href="#file-based-cloud-storage" title="Link to this heading">#</a></h2>
+<p>File base cloud storage is convenient for storing and sharing <em>rivt folders</em>.
+Public <em>rivt files</em> may be downloaded from
+<a class="reference external" href="https://www.openmodels.info" rel="noreferrer" target="_blank">Google Drive.</a></p>
+<p><strong>Summary of File Based Cloud Storage</strong></p>
+<ul class="simple">
+<li><p>Microsoft OneDrive: Best for Windows and Microsoft 365 users, featuring
+strong collaborative editing and deep OS integration.</p></li>
+<li><p>Google Drive: The go-to for Google Workspace users, offering seamless sharing
+and heavy-duty data workloads.</p></li>
+<li><p>iCloud: The standard choice for Apple device owners, syncing photos,
+documents, and backups across all iOS and macOS devices.</p></li>
+<li><p>Dropbox: Ideal for remote teams and general file synchronization across
+multiple platforms.</p></li>
+<li><p>pCloud: Highly rated for media storage and video streaming, offering unique
+lifetime payment plans.</p></li>
+<li><p>Proton Drive: Based in Switzerland, this is the top pick for a
+privacy-focused ecosystem with end-to-end encryption.</p></li>
+<li><p>IDrive: Comprehensive online backup that supports external hard drives and
+disaster recovery.</p></li>
+<li><p>Box: Geared toward enterprise businesses with advanced security, compliance
+tracking, and administrative controls.</p></li>
+<li><p>MEGA: A great option if you need a generous free tier or highly affordable
+massive storage capacities.</p></li>
+</ul>
 </section>
 </section>
 
@@ -483,8 +548,8 @@ the <a class="reference external" href="https://github.com/search" rel="noreferr
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-considerations"><strong>[1]</strong> General Considerations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#repositories"><strong>[2]</strong> Repositories</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#file-based-storage"><strong>[3]</strong> File Based Storage</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#remote-repositories"><strong>[2]</strong> Remote Repositories</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#file-based-cloud-storage"><strong>[3]</strong> File Based Cloud Storage</a></li>
 </ul>
   </nav></div>
 
