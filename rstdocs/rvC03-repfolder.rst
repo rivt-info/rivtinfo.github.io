@@ -30,8 +30,6 @@ A typical :term:`report folder` structure is shown below. The required
     <a href="https://drive.google.com/drive/folders/1hwVOs0CVJqdZlTieV_Lt5bICbd3ywzWj?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto">openmodels.info</a>.
     <br> <br>
 
-
-
 .. _report-folders:
 
 **rivt Report Top Level Folders** 
@@ -87,7 +85,7 @@ A typical :term:`report folder` structure is shown below. The required
                     ├── favicon.png    
                     ├── covlogo1.png    
                     └── runlogo1.png                   
-                ├── [data]/                         tables    
+                ├── [vals]/                         tables    
                     └── steel-vals.csv                                                 
                 ├── [scripts]/                      scripts
                     └── bending.py    

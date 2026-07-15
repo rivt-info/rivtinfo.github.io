@@ -733,7 +733,7 @@ changing the default.</p>
 </table>
 </div>
 <p><strong>Parent Paths for Commands</strong></p>
-<p>See <a class="reference internal" href="rvC03-reports.html#report-folders"><span class="std std-ref">here</span></a> for the folder structure.</p>
+<p>See <a class="reference internal" href="rvC03-repfolder.html#report-folders"><span class="std std-ref">here</span></a> for the folder structure.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Command</p></th>
@@ -1075,20 +1075,13 @@ changing the default.</p>
 </div>
 <hr class="docutils" />
 </section>
-<section id="python-requirements">
-<span id="project-requirements"></span><h2><strong>[8]</strong> Python Requirements<a class="headerlink" href="#python-requirements" title="Link to this heading">#</a></h2>
-<p>The minimum Python version is <em>3.14</em>. <em>rivt</em> project packages include the
-following categories:</p>
-<ul class="simple">
-<li><p>formatting</p></li>
-<li><p>numerical analysis</p></li>
-<li><p>symbolic processing</p></li>
-<li><p>visualization</p></li>
-<li><p>IDE</p></li>
-</ul>
+<section id="rivt-python-dependencies">
+<span id="rivt-depend"></span><h2><strong>[8]</strong> rivt Python Dependencies<a class="headerlink" href="#rivt-python-dependencies" title="Link to this heading">#</a></h2>
+<p>The minimum Python version is <em>3.14</em>. In addition to <em>rivtlib</em>, <em>rivt</em> packages
+include the following categories:</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="head"><p>Dependency</p></th>
+<tr class="row-odd"><th class="head"><p>IDE and REPL</p></th>
 <th class="head"><p>description</p></th>
 </tr>
 </thead>
@@ -1096,99 +1089,129 @@ following categories:</p>
 <tr class="row-even"><td><p>“pyzo&gt;=4.20.0”</p></td>
 <td><p>a lightweight IDE</p></td>
 </tr>
-<tr class="row-odd"><td><p>“pyside6&gt;=6.10.1”</p></td>
-<td><p>QT bindings</p></td>
-</tr>
-<tr class="row-even"><td><p>“fastcore&gt;=1.8.16”</p></td>
-<td><p>code simplification</p></td>
-</tr>
-<tr class="row-odd"><td><p>“tabulate&gt;=0.9.0”</p></td>
-<td><p>format tables</p></td>
-</tr>
-<tr class="row-even"><td><p>“pillow&gt;=11.2.1”</p></td>
-<td><p>image processing</p></td>
-</tr>
-<tr class="row-odd"><td><p>“matplotlib&gt;=3.10.1”</p></td>
-<td><p>data visualization</p></td>
-</tr>
-<tr class="row-even"><td><p>“sympy&gt;=1.13.3”</p></td>
-<td><p>symbolic analysis</p></td>
-</tr>
-<tr class="row-odd"><td><p>“numpy&gt;=2.2.5”</p></td>
-<td><p>numerical processing</p></td>
-</tr>
-<tr class="row-even"><td><p>“scipy&gt;=1.16.3”</p></td>
-<td><p>numerical analysis</p></td>
-</tr>
-<tr class="row-odd"><td><p>“pandas&gt;=2.2.3”</p></td>
-<td><p>data analysis</p></td>
-</tr>
-<tr class="row-even"><td><p>“docutils&gt;=0.21.2”</p></td>
-<td><p>reStructuredText processing</p></td>
-</tr>
 <tr class="row-odd"><td><p>“ipython&gt;=8.16.2”</p></td>
 <td><p>interactive Python shell</p></td>
 </tr>
 <tr class="row-even"><td><p>“ipykernel&gt;=6.28.1”</p></td>
 <td><p>Jupyter kernel for Python</p></td>
 </tr>
-<tr class="row-odd"><td><p>“reportlab&gt;=4.4.0”</p></td>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Image and Compilation</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>“pyside6&gt;=6.10.1”</p></td>
+<td><p>QT bindings</p></td>
+</tr>
+<tr class="row-odd"><td><p>“fastcore&gt;=1.8.16”</p></td>
+<td><p>code simplification</p></td>
+</tr>
+<tr class="row-even"><td><p>“pillow&gt;=11.2.1”</p></td>
+<td><p>image processing</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Symbolic, Numerical Processing</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>“matplotlib&gt;=3.10.1”</p></td>
+<td><p>data visualization</p></td>
+</tr>
+<tr class="row-odd"><td><p>“sympy&gt;=1.13.3”</p></td>
+<td><p>symbolic analysis</p></td>
+</tr>
+<tr class="row-even"><td><p>“numpy&gt;=2.2.5”</p></td>
+<td><p>numerical processing</p></td>
+</tr>
+<tr class="row-odd"><td><p>“scipy&gt;=1.16.3”</p></td>
+<td><p>numerical analysis</p></td>
+</tr>
+<tr class="row-even"><td><p>“pandas&gt;=2.2.3”</p></td>
+<td><p>data analysis</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Formatting</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>“tabulate&gt;=0.9.0”</p></td>
+<td><p>format tables</p></td>
+</tr>
+<tr class="row-odd"><td><p>“docutils&gt;=0.21.2”</p></td>
+<td><p>reStructuredText processing</p></td>
+</tr>
+<tr class="row-even"><td><p>“reportlab&gt;=4.4.0”</p></td>
 <td><p>PDF document generation</p></td>
 </tr>
-<tr class="row-even"><td><p>“rst2pdf&gt;=0.103.1”</p></td>
+<tr class="row-odd"><td><p>“rst2pdf&gt;=0.103.1”</p></td>
 <td><p>PDF document generation</p></td>
 </tr>
-<tr class="row-odd"><td><p>“pypdf&gt;=1.0.3”</p></td>
+<tr class="row-even"><td><p>“pypdf&gt;=1.0.3”</p></td>
 <td><p>PDF document manipulation</p></td>
 </tr>
-<tr class="row-even"><td><p>“Sphinx&gt;=8.2.3”</p></td>
+<tr class="row-odd"><td><p>“Sphinx&gt;=8.2.3”</p></td>
+<td><p>HTML/PDF doc  generation</p></td>
+</tr>
+<tr class="row-even"><td><p>“pydata-sphinx-theme&gt;=0.16.1”</p></td>
 <td><p>HTML document generation</p></td>
 </tr>
-<tr class="row-odd"><td><p>“pydata-sphinx-theme&gt;=0.16.1”</p></td>
+<tr class="row-odd"><td><p>“sphinx-copybutton&gt;=0.5.2”</p></td>
 <td><p>HTML document generation</p></td>
 </tr>
-<tr class="row-even"><td><p>“sphinx-copybutton&gt;=0.5.2”</p></td>
+<tr class="row-even"><td><p>“sphinx_design&gt;=0.6.1”</p></td>
 <td><p>HTML document generation</p></td>
 </tr>
-<tr class="row-odd"><td><p>“sphinx_design&gt;=0.6.1”</p></td>
+<tr class="row-odd"><td><p>“sphinx-favicon&gt;=1.0.1”</p></td>
 <td><p>HTML document generation</p></td>
 </tr>
-<tr class="row-even"><td><p>“sphinx-favicon&gt;=1.0.1”</p></td>
+<tr class="row-even"><td><p>“sphinx-togglebutton&gt;=0.3.2”</p></td>
 <td><p>HTML document generation</p></td>
 </tr>
-<tr class="row-odd"><td><p>“sphinx-togglebutton&gt;=0.3.2”</p></td>
+<tr class="row-odd"><td><p>“sphinxcontrib-applehelp&gt;=2.0.0”</p></td>
 <td><p>HTML document generation</p></td>
 </tr>
-<tr class="row-even"><td><p>“sphinxcontrib-applehelp&gt;=2.0.0”</p></td>
+<tr class="row-even"><td><p>“sphinxcontrib-devhelp&gt;=2.0.0”</p></td>
 <td><p>HTML document generation</p></td>
 </tr>
-<tr class="row-odd"><td><p>“sphinxcontrib-devhelp&gt;=2.0.0”</p></td>
+<tr class="row-odd"><td><p>“sphinxcontrib-email&gt;=0.3.6”</p></td>
 <td><p>HTML document generation</p></td>
 </tr>
-<tr class="row-even"><td><p>“sphinxcontrib-email&gt;=0.3.6”</p></td>
+<tr class="row-even"><td><p>“sphinxcontrib-htmlhelp&gt;=2.1.0”</p></td>
 <td><p>HTML document generation</p></td>
 </tr>
-<tr class="row-odd"><td><p>“sphinxcontrib-htmlhelp&gt;=2.1.0”</p></td>
+<tr class="row-odd"><td><p>“sphinxcontrib-jquery&gt;=4.1”</p></td>
 <td><p>HTML document generation</p></td>
 </tr>
-<tr class="row-even"><td><p>“sphinxcontrib-jquery&gt;=4.1”</p></td>
+<tr class="row-even"><td><p>“sphinxcontrib-jsmath&gt;=1.0.1”</p></td>
 <td><p>HTML document generation</p></td>
 </tr>
-<tr class="row-odd"><td><p>“sphinxcontrib-jsmath&gt;=1.0.1”</p></td>
+<tr class="row-odd"><td><p>“sphinxcontrib-qthelp&gt;=2.0.0”</p></td>
 <td><p>HTML document generation</p></td>
 </tr>
-<tr class="row-even"><td><p>“sphinxcontrib-qthelp&gt;=2.0.0”</p></td>
-<td><p>HTML document generation</p></td>
-</tr>
-<tr class="row-odd"><td><p>“sphinxcontrib-serializinghtml&gt;=2.0.0”</p></td>
+<tr class="row-even"><td><p>“sphinxcontrib-serializinghtml&gt;=2.0.0”</p></td>
 <td><p>HTML document generation</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 </section>
-<section id="vscode-settings">
-<span id="id4"></span><h2><strong>[9]</strong> VSCode Settings<a class="headerlink" href="#vscode-settings" title="Link to this heading">#</a></h2>
+<section id="vscode-profile">
+<span id="vscode-settings"></span><h2><strong>[9]</strong> VSCode Profile<a class="headerlink" href="#vscode-profile" title="Link to this heading">#</a></h2>
 <p>Workspace extension and other settings are stored in the <em>.vscode</em> folder and
 should be included as part of a <em>report folder</em>. Settings that affect the
 <em>rivt</em> editing and execution environment incldue:</p>
@@ -1739,8 +1762,8 @@ should be included as part of a <em>report folder</em>. Settings that affect the
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-report-folders"><strong>[5]</strong> rivt Report Folders</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivtbook-folders"><strong>[6]</strong> rivtbook Folders</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unit-definitions"><strong>[7]</strong> Unit Definitions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-requirements"><strong>[8]</strong> Python Requirements</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vscode-settings"><strong>[9]</strong> VSCode Settings</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-python-dependencies"><strong>[8]</strong> rivt Python Dependencies</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vscode-profile"><strong>[9]</strong> VSCode Profile</a></li>
 </ul>
   </nav></div>
 

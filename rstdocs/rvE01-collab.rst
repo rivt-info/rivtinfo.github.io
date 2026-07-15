@@ -80,8 +80,6 @@ The public folder may be uploaded to a GitHub repo for public sharing. When
 files are downloaded for reuse the extra hyphens may be removed with a batch
 remove command (e.g. in VSCode).
 
-
-
 .. rst-class:: center
 
    **2. Contribute to rivt and rivtlib**
@@ -96,7 +94,7 @@ remove command (e.g. in VSCode).
 
   - contributing to packages and extensions used by *rivt*.
 
-Packages and extensions are summarized :ref:`here<project-requirements>` and 
+Packages and extensions are summarized :ref:`here<rivt-depend>` and 
 :ref:`here<vscode-settings>`.
 
 .. rst-class:: center
@@ -154,7 +152,8 @@ The web site `OpenModels.info <https://www.openmodels.info/>`__ is a
 
 -------------------------------   
 
-[4] Git and GitHub
+
+[3] Git and GitHub
 ------------------------------------------------
 
 *GitHUb* is a popular and widely used cloud and version control system 
@@ -197,4 +196,4 @@ accounts provide for:
 
     rvE02-github.rst
     rvE03-cloudstor.rst
-    rvE04-vscode.rst
+

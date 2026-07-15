@@ -20,7 +20,7 @@ default (see `:doc: <rvF01-quickref>`).
         
         """)
 
-Sections are written to a rivt file in the */public* folder with a file name
+Sections are written to a rivt file in the *_public* folder with a file name
 composed as:
 
 .. code-block:: text
@@ -37,9 +37,8 @@ The public folder may be uploaded to a GitHub repo for public sharing. When
 files are downloaded for reuse the extra hyphens may be removed with a batch
 remove command (e.g. in VSCode).
 
+
 -------------------------------   
-
-
 
 .. _search-interface:
 

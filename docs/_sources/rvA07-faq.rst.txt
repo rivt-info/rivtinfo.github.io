@@ -78,7 +78,7 @@
 .. dropdown:: What are the programs and libraries used to build *rivt*?
 
     The *rivt project* uses dozens of Python libraries 
-    (see :ref:`Project-requirements`):
+    (see :ref:`rivt-depend`):
 
     - numpy, sympy and related scientific computing libraries
     - docutils and related text processing libraries

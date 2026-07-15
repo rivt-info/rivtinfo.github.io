@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
-    <title>B.3 | Framework &#8212; rivt</title>
+    <title>B.3 | Frameworks &#8212; rivt</title>
   
   
   
@@ -342,7 +342,7 @@
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="rvB02-motivation.html"><strong>B.2 | Motivations</strong></a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>B.3 | Framework</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>B.3 | Frameworks</strong></a></li>
 </ul>
 </div>
 </nav></div>
@@ -386,7 +386,7 @@
     
     <li class="breadcrumb-item"><a href="rvB01-overview.html" class="nav-link"><strong>B.1 | Overview</strong></a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>B.3 | Framework</strong></span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>B.3 | Frameworks</strong></span></li>
   </ul>
 </nav>
 </div>
@@ -403,19 +403,21 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="b-3-framework">
-<h1><strong>B.3 | Framework</strong><a class="headerlink" href="#b-3-framework" title="Link to this heading">#</a></h1>
+  <section id="b-3-frameworks">
+<h1><strong>B.3 | Frameworks</strong><a class="headerlink" href="#b-3-frameworks" title="Link to this heading">#</a></h1>
 <section id="rivt-frameworks">
 <span id="rivt-framework"></span><h2><strong>[1]</strong> rivt frameworks<a class="headerlink" href="#rivt-frameworks" title="Link to this heading">#</a></h2>
 <p><em>rivt</em> interoperates with a large number of external programs that improve its
-user interface and capabilities. The documented frameworks are a
-<em>Basic framework</em> and <em>Extended framework</em>.</p>
+user interface and capabilities. The documented frameworks include
+<em>rivt-code</em> and <em>rivt-framework</em>.</p>
 </section>
 <hr class="docutils" />
-<section id="basic-framework">
-<h2><strong>[2]</strong> Basic framework<a class="headerlink" href="#basic-framework" title="Link to this heading">#</a></h2>
-<p>The <em>rivt basic framework</em> includes programs for editing, remote storage and
-version control. This framework is included in <a class="reference internal" href="rvA01-start.html#rivt-portable"><span class="std std-ref">portable rivt</span></a>.</p>
+<section id="rivt-code-and-codespaces">
+<h2><strong>[2]</strong> rivt-code and CodeSpaces<a class="headerlink" href="#rivt-code-and-codespaces" title="Link to this heading">#</a></h2>
+<p>The <em>rivt-code</em> and <em>rivt-CodeSpaces</em> framework includes <em>VSCode</em> for editing
+and <em>git</em> for remote storage and version control. <em>rivt-code</em> is a local
+portable zip  <a class="reference internal" href="rvA01-start.html#rivt-code"><span class="std std-ref">installation</span></a>. <em>rivt-CodeSpaces</em> is a cloud
+based installation that may be forked into a personal GitHub repository.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Purpose</p></th>
@@ -426,8 +428,8 @@ version control. This framework is included in <a class="reference internal" hre
 <tr class="row-even"><td><p>Editing</p></td>
 <td><p><a class="reference external" href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">VSCode</a></p></td>
 </tr>
-<tr class="row-odd"><td><p>Editing Extensions</p></td>
-<td><p><a class="reference internal" href="rvG01-quickref.html#vscode-settings"><span class="std std-ref">[9] VSCode Settings</span></a></p></td>
+<tr class="row-odd"><td><p>rivt Extensions</p></td>
+<td><p><a class="reference internal" href="rvG01-quickref.html#vscode-settings"><span class="std std-ref">[9] VSCode Profile</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Version Control</p></td>
 <td><p><a class="reference external" href="https://git-scm.com" rel="noreferrer" target="_blank">Git</a></p></td>
@@ -437,9 +439,76 @@ version control. This framework is included in <a class="reference internal" hre
 </div>
 </section>
 <hr class="docutils" />
+<section id="vscode-and-codespaces">
+<h2><strong>[2]</strong> VSCode and CodeSpaces<a class="headerlink" href="#vscode-and-codespaces" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">VSCode</a> is an open source IDE with a large
+set of extensions, including collaboration support. Collaboration is
+facilitated by the <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare" rel="noreferrer" target="_blank">Visual Studio Live Share</a>.
+You can start a <em>Live Share</em> session either within <em>CodeSpaces</em> in
+your browser, or within the <em>VS Code</em> desktop application. <em>CodeSpaces</em>
+is a cloud based GitHub implementation of VSCode that shares many of the
+same features.</p>
+<p><em>GitHub Codespaces</em> is a VSCode cloud-based development environment connected
+to GitHub files. It can be set up with <em>rivt extensions</em> that provide a complete
+rivt editing and collaboration environment in the cloud.</p>
+<p>The <em>Live Share</em> extension enables:</p>
+<ul class="simple">
+<li><p>Real-time Co-editing: Multiple participants can work on the same file
+simultaneously, seeing each other’s cursors, selections, and edits instantly,
+much like in Google Docs..</p></li>
+<li><p>Shared Terminals and Servers: The host can share their terminal and localhost
+servers with guests, eliminating the need for guests to set up their own
+environments or dependencies.</p></li>
+<li><p>Navigation and Following: Participants can independently navigate the project
+or choose to “follow” another collaborator, keeping their editor synchronized
+with the leader’s actions.</p></li>
+<li><p>File Access Control: Hosts can use a .vsls.json file to control which files and
+folders are visible or editable by guests, ensuring security and focus</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id2">
+<h2><strong>[3]</strong> git<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>Git is a free, open-source distributed version control system designed to track
+changes in source code during software development. It allows multiple
+programmers to collaborate on the same project simultaneously without
+overwriting each other’s work.</p>
+<p><strong>Key Functions</strong></p>
+<ul class="simple">
+<li><p>Track changes: Records every modification made to a project’s files over time.</p></li>
+<li><p>Revert history: Restores previous file versions easily if errors or bugs are
+introduced.</p></li>
+<li><p>Enable collaboration: Merges independent updates from multiple team members
+into a single codebase.</p></li>
+<li><p>Work offline: Provides each developer with a complete local copy of the full
+project history.</p></li>
+</ul>
+<p><strong>Essential Concepts</strong></p>
+<ul class="simple">
+<li><p>Repository (Repo): The tracking folder where your project files and their
+revision histories live.</p></li>
+<li><p>Commit: A permanent saved snapshot of your staged files at a specific point in
+time.Branch: An isolated environment used to develop new features without
+altering the stable main code.</p></li>
+<li><p>Merge: The automated process of combining changes from one branch back into
+another.</p></li>
+</ul>
+<p><strong>Core Workflow</strong></p>
+<p>The core workflow in a local or remote Git project transitions through four
+distinct environments before saving:</p>
+<ul class="simple">
+<li><p>Working Directory: The actual files you are modifying on your computer.</p></li>
+<li><p>Staging Area: A temporary holding zone where you select and prepare changes
+for the next snapshot.</p></li>
+<li><p>Local Database: The final destination where commits are permanently saved to
+your project history.</p></li>
+<li><p>Push: Copy local database to remote repository e.g. GitHub</p></li>
+</ul>
+</section>
+<hr class="docutils" />
 <section id="extended-framework">
-<h2><strong>[3]</strong> Extended framework<a class="headerlink" href="#extended-framework" title="Link to this heading">#</a></h2>
-<p>The <em>rivt extended framework</em> includes the <em>rivt basic framework</em> and additional
+<h2><strong>[4]</strong> Extended framework<a class="headerlink" href="#extended-framework" title="Link to this heading">#</a></h2>
+<p>The <em>rivt extended framework</em> includes the <em>rivt-code</em> and additional
 programs and libraries for formatting, drawing, diagramming and calculating.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -460,10 +529,7 @@ programs and libraries for formatting, drawing, diagramming and calculating.</p>
 <tr class="row-odd"><td><p>Diagrams</p></td>
 <td><p><a class="reference external" href="https://mermaid.ai/open-source/intro/syntax-reference.html" rel="noreferrer" target="_blank">Mermaid</a></p></td>
 </tr>
-<tr class="row-even"><td><p>Portable HTML</p></td>
-<td><p><a class="reference external" href="https://github.com/danburzo/percollate" rel="noreferrer" target="_blank">percolate</a></p></td>
-</tr>
-<tr class="row-odd"><td><p>Program isolation</p></td>
+<tr class="row-even"><td><p>Program environment</p></td>
 <td><p><a class="reference external" href="https://docs.astral.sh/uv/" rel="noreferrer" target="_blank">uv</a></p></td>
 </tr>
 </tbody>
@@ -520,8 +586,10 @@ programs and libraries for formatting, drawing, diagramming and calculating.</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-frameworks"><strong>[1]</strong> rivt frameworks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-framework"><strong>[2]</strong> Basic framework</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extended-framework"><strong>[3]</strong> Extended framework</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-code-and-codespaces"><strong>[2]</strong> rivt-code and CodeSpaces</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vscode-and-codespaces"><strong>[2]</strong> VSCode and CodeSpaces</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><strong>[3]</strong> git</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extended-framework"><strong>[4]</strong> Extended framework</a></li>
 </ul>
   </nav></div>
 

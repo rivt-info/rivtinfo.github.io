@@ -15,7 +15,7 @@ section covers three ways to install *rivt*.
 #. For users unfamiliar with Python and open source software the simplest way to
    get started is to download the Windows portable zip file (~800 MB). It includes
    everything necessary to run and explore *rivt*. For further details see 
-   :ref:`here <rivt-portable>`.
+   :ref:`here <rivt-code>`.
 
 #. For users with a `GitHub <https://github.com>`__ account *rivt* can be forked
    and run in a browser using `Codespaces <https://github.com/features/codespaces>`__.
@@ -31,8 +31,6 @@ section covers three ways to install *rivt*.
 but efficient editing and compiling is typically done in an :term:`IDE`. Any IDE 
 may be used but *VSCode* support is documented. A typical **VSCode IDE** layout 
 editing a *rivt file* is shown below.
-
-
 
 .. figure::  _static/img/vscode3.png
     :class: dark-light
@@ -55,20 +53,20 @@ and *docs* are :ref:`here <rivt-tutor>`.
 
 -------------------------------
 
-.. _rivt-portable:
+.. _rivt-code:
 
-**[3]** Portable rivt
+**[3]** rivt-code
 -------------------------------------------------------------------------------- 
 
-A *rivt-portable* installation is recommended for Windows users unfamiliar with
-Python. *rivt-portable* is a zip file that includes the 
-:ref:`basic rivt framework <rivt framework>`. 
+A *rivt-code* installation is recommended for Windows users unfamiliar with
+Python. *rivt-code* is a zip file that includes the 
+:ref:`rivt-code framework <rivt framework>`. 
 
  The zip file naming convention is:
 
 .. code-block:: text
 
-    win64-rivt-portable-n.n.n[an].zip
+    win64-rivt-code-n.n.n[an].zip
 
 where n is a number representing the major, minor and patch release number. An
 *an* appended to the version is an *alpha* release where users should expect
@@ -91,7 +89,7 @@ Releases are updated monthly and may be downloaded from the
 
 .. _rivt-codespace:
 
-**[4]** Codespace rivt
+**[4]** rivt-codespace
 -------------------------------------------------------------------------------- 
 
 `VSCode <https://code.visualstudio.com/>`_ is a customizable code editor that
@@ -130,7 +128,7 @@ by following the steps below.  Example rivt files are included.
 
 .. _rivt-sys:
 
-**[4]** System rivt
+**[4]** rivt-system
 --------------------------------------------------------------------------------
 
 *rivt* may be installed into a system level Python. 
@@ -148,7 +146,7 @@ by following the steps below.  Example rivt files are included.
 
         pip install rivtlib
     
-A list of the installed dependencies is :ref:`here <Project-requirements>`.
+A list of the installed dependencies is :ref:`here <rivt-depend>`.
 
 *rivt* may also be installed and isolated environment using the `uv package
 manager <https://docs.astral.sh/uv/>`__. The primary advantage of *uv* is the
@@ -225,8 +223,7 @@ Python and programming.
         uv deactivate
         rmdir /s /q rivt-examples
         uv cache clean
-
-
+        
 ---------------------------------
 
 .. toctree::

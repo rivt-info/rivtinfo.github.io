@@ -9,11 +9,10 @@
 
 *rivt* is an open source Python project built around the
 `rivtlib Python package <https://pypi.org/project/rivtlib/>`__
-and `dependencies :ref:Project-requirements`.  It publishes 
-a formatted :term:`rivt doc` as a text, PDF or HTML file.
-from a :term:`rivt file` - a Python file (.py) that imports the :term:`rivtlib` 
-Python package. *rivtlib* includes rivt API functions that implement 
-:term:`rivt markup`. 
+and `:ref:dependencies <Project-requirements>`.  It publishes a formatted 
+:term:`rivt doc` as a text, PDF or HTML file. from a :term:`rivt file` - 
+a Python file (.py) that imports the :term:`rivtlib` Python package. *rivtlib* 
+includes rivt API functions that implement :term:`rivt markup`. 
 
 Groups of *rivt files* may be compiled and linked into a single 
 :term:`rivt report`. Collections of *rivt files* with related subject matter 
@@ -25,7 +24,7 @@ organized for direct *rivt file* selection and insertion into
 `Pyzo <https://pyzo.org/>`__ IDE is installed with rivtlib. The 
 `VSCode IDE <https://code.visualstudio.com/>`__ is a full featured IDE that 
 is part of the basic :ref:`rivt framework` and included  with the 
-:ref:`rivt-portable` installable.
+:ref:`rivt-code` installable.
 
 *rivt file* examples are illustrated :ref:`here <rivt-tutor>`. Additional  
 *rivt files* may be downloaded from *Google Drive* at 

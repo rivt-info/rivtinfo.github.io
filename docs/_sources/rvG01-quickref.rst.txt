@@ -489,41 +489,53 @@ See :ref:`here <report-folders>` for the folder structure.
 
 ----------------------
 
-.. _project-requirements:
+.. _rivt-depend:
 
-**[8]** Python Requirements
+**[8]** rivt Python Dependencies
 -------------------------------------
 
+The minimum Python version is *3.14*. In addition to *rivtlib*, *rivt* packages
+include the following categories:
 
-The minimum Python version is *3.14*. *rivt* project packages include the
-following categories:
-
-- formatting
-- numerical analysis
-- symbolic processing
-- visualization
-- IDE
 
 =============================================== ================================
-      Dependency                                      description
+    IDE and REPL                                     description
 =============================================== ================================
   "pyzo>=4.20.0"                                   a lightweight IDE
+  "ipython>=8.16.2"                                interactive Python shell
+  "ipykernel>=6.28.1"                              Jupyter kernel for Python
+=============================================== ================================
+
+
+=============================================== ================================
+    Image and Compilation                            description
+=============================================== ================================
   "pyside6>=6.10.1"                                QT bindings
-  "fastcore>=1.8.16"                               code simplification                 
-  "tabulate>=0.9.0"                                format tables                 
+  "fastcore>=1.8.16"                               code simplification                                
   "pillow>=11.2.1"                                 image processing
+=============================================== ================================
+
+
+=============================================== ================================
+    Symbolic, Numerical Processing                   description
+=============================================== ================================
   "matplotlib>=3.10.1"                             data visualization
   "sympy>=1.13.3"                                  symbolic analysis
   "numpy>=2.2.5"                                   numerical processing
   "scipy>=1.16.3"                                  numerical analysis
-  "pandas>=2.2.3"                                  data analysis    
+  "pandas>=2.2.3"                                  data analysis   
+=============================================== ================================
+
+
+=============================================== ================================
+    Formatting                                       description
+=============================================== ================================
+  "tabulate>=0.9.0"                                format tables  
   "docutils>=0.21.2"                               reStructuredText processing  
-  "ipython>=8.16.2"                                interactive Python shell
-  "ipykernel>=6.28.1"                              Jupyter kernel for Python
   "reportlab>=4.4.0"                               PDF document generation
   "rst2pdf>=0.103.1"                               PDF document generation
   "pypdf>=1.0.3"                                   PDF document manipulation
-  "Sphinx>=8.2.3"                                  HTML document generation  
+  "Sphinx>=8.2.3"                                  HTML/PDF doc  generation  
   "pydata-sphinx-theme>=0.16.1"                    HTML document generation  
   "sphinx-copybutton>=0.5.2"                       HTML document generation  
   "sphinx_design>=0.6.1"                           HTML document generation  
@@ -541,10 +553,8 @@ following categories:
 
 .. _vscode-settings:
 
-**[9]** VSCode Settings
+**[9]** VSCode Profile
 ------------------------------------
-
- 
 
 Workspace extension and other settings are stored in the *.vscode* folder and
 should be included as part of a *report folder*. Settings that affect the

@@ -417,7 +417,7 @@ section covers three ways to install <em>rivt</em>.</p>
 <li><p>For users unfamiliar with Python and open source software the simplest way to
 get started is to download the Windows portable zip file (~800 MB). It includes
 everything necessary to run and explore <em>rivt</em>. For further details see
-<a class="reference internal" href="#rivt-portable"><span class="std std-ref">here</span></a>.</p></li>
+<a class="reference internal" href="#rivt-code"><span class="std std-ref">here</span></a>.</p></li>
 <li><p>For users with a <a class="reference external" href="https://github.com" rel="noreferrer" target="_blank">GitHub</a> account <em>rivt</em> can be forked
 and run in a browser using <a class="reference external" href="https://github.com/features/codespaces" rel="noreferrer" target="_blank">Codespaces</a>.
 Further details are <a class="reference internal" href="#rivt-codespace"><span class="std std-ref">here</span></a>.</p></li>
@@ -431,11 +431,11 @@ an isolated environment using <em>uv</em>. Further details are <a class="referen
 but efficient editing and compiling is typically done in an <a class="reference internal" href="rvG02-terms.html#term-IDE"><span class="xref std std-term">IDE</span></a>. Any IDE
 may be used but <em>VSCode</em> support is documented. A typical <strong>VSCode IDE</strong> layout
 editing a <em>rivt file</em> is shown below.</p>
-<figure class="align-center" id="id1">
+<figure class="align-center" id="id3">
 <a class="dark-light reference internal image-reference" href="_images/vscode3.png"><img alt="ide layout" class="dark-light" src="_images/vscode3.png" style="width: 95%;" />
 </a>
 <figcaption>
-<p><span class="caption-text"><em>rivt</em> files and docs in <strong>VSCode</strong> (click on image to enlarge)</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+<p><span class="caption-text"><em>rivt</em> files and docs in <strong>VSCode</strong> (click on image to enlarge)</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>A <em>rivt file</em> is a Python file (.py) that imports the
@@ -449,15 +449,15 @@ Panel locations may be customized by the user. Additional example <em>rivt files
 and <em>docs</em> are <a class="reference internal" href="rvA02-tutor.html#rivt-tutor"><span class="std std-ref">here</span></a>.</p>
 <hr class="docutils" />
 </section>
-<section id="portable-rivt">
-<span id="rivt-portable"></span><h2><strong>[3]</strong> Portable rivt<a class="headerlink" href="#portable-rivt" title="Link to this heading">#</a></h2>
-<p>A <em>rivt-portable</em> installation is recommended for Windows users unfamiliar with
-Python. <em>rivt-portable</em> is a zip file that includes the
-<a class="reference internal" href="rvB03-framework.html#rivt-framework"><span class="std std-ref">basic rivt framework</span></a>.</p>
+<section id="rivt-code">
+<span id="id1"></span><h2><strong>[3]</strong> rivt-code<a class="headerlink" href="#rivt-code" title="Link to this heading">#</a></h2>
+<p>A <em>rivt-code</em> installation is recommended for Windows users unfamiliar with
+Python. <em>rivt-code</em> is a zip file that includes the
+<a class="reference internal" href="rvB03-framework.html#rivt-framework"><span class="std std-ref">rivt-code framework</span></a>.</p>
 <blockquote>
 <div><p>The zip file naming convention is:</p>
 </div></blockquote>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>win64-rivt-portable-n.n.n[an].zip
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>win64-rivt-code-n.n.n[an].zip
 </pre></div>
 </div>
 <p>where n is a number representing the major, minor and patch release number. An
@@ -477,8 +477,8 @@ drive. After unzipping, VSCode and examples are started by clicking on the
 <a class="reference external" href="https://github.com/rivtlib-dev/rivt-portable/releases/" rel="noreferrer" target="_blank">GitHub repository</a>.</p>
 <hr class="docutils" />
 </section>
-<section id="codespace-rivt">
-<span id="rivt-codespace"></span><h2><strong>[4]</strong> Codespace rivt<a class="headerlink" href="#codespace-rivt" title="Link to this heading">#</a></h2>
+<section id="rivt-codespace">
+<span id="id2"></span><h2><strong>[4]</strong> rivt-codespace<a class="headerlink" href="#rivt-codespace" title="Link to this heading">#</a></h2>
 <p><a class="reference external" href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">VSCode</a> is a customizable code editor that
 can be run locally or in the cloud. The cloud version of <em>VSCode</em> is referred
 to as a <a class="reference external" href="https://github.com/features/codespaces" rel="noreferrer" target="_blank">Codespace</a> . A
@@ -509,8 +509,8 @@ includes the rivt packages, extensions and examples.</p>
 </figure>
 <hr class="docutils" />
 </section>
-<section id="system-rivt">
-<span id="rivt-sys"></span><h2><strong>[4]</strong> System rivt<a class="headerlink" href="#system-rivt" title="Link to this heading">#</a></h2>
+<section id="rivt-system">
+<span id="rivt-sys"></span><h2><strong>[4]</strong> rivt-system<a class="headerlink" href="#rivt-system" title="Link to this heading">#</a></h2>
 <p><em>rivt</em> may be installed into a system level Python.</p>
 <aside class="topic">
 <p class="topic-title">Step 1. Install Python</p>
@@ -524,7 +524,7 @@ if not already installed. The minimum required version is Python 3.14.</p>
 </pre></div>
 </div>
 </aside>
-<p>A list of the installed dependencies is <a class="reference internal" href="rvG01-quickref.html#project-requirements"><span class="std std-ref">here</span></a>.</p>
+<p>A list of the installed dependencies is <a class="reference internal" href="rvG01-quickref.html#rivt-depend"><span class="std std-ref">here</span></a>.</p>
 <p><em>rivt</em> may also be installed and isolated environment using the <a class="reference external" href="https://docs.astral.sh/uv/" rel="noreferrer" target="_blank">uv package
 manager</a>. The primary advantage of <em>uv</em> is the
 simplicity of insalling and updating packages while keeping them isolated from
@@ -638,9 +638,9 @@ uv<span class="w"> </span>cache<span class="w"> </span>clean
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-started"><strong>[1]</strong> Getting Started</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-ide"><strong>[2]</strong> rivt IDE</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#portable-rivt"><strong>[3]</strong> Portable rivt</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#codespace-rivt"><strong>[4]</strong> Codespace rivt</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#system-rivt"><strong>[4]</strong> System rivt</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-code"><strong>[3]</strong> rivt-code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-codespace"><strong>[4]</strong> rivt-codespace</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-system"><strong>[4]</strong> rivt-system</a></li>
 </ul>
   </nav></div>
 

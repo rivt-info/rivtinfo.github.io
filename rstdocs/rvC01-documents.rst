@@ -592,6 +592,6 @@ The *rivtstyle.yaml* file contains default formats for PDF files.
     :maxdepth: 1
     :hidden:
 
-    rvC02-folders.rst
-    rvC03-reports.rst
+    rvC02-files.rst
+    rvC03-repfolder.rst
     rvC04-rivtbks.rst    
