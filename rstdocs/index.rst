@@ -33,35 +33,39 @@ There are four types of rivt document files:
                     | It is a Python file (.py) that imports the 
                     | rivtlib Python package.
 
+                    | A rivtbook is a collection of rivt files with
+      rivtbook      | a common subject matter and folder structure
+                    | that makes it easy to select files and related
+                    | resources for inclusion in docs and reports.
+
                     | A rivt doc is the published output of a
-      rivt doc      | rivt file. A doc is an output file in 
-      rivt chapter  | formatted text, PDF or HTML. In the context
-                    | of a report or book a doc is a chapter. All 
-                    | formats are compiled from the same rivt file. 
+      rivt doc      | rivt file. A doc is an output file formatted
+      rivt chapter  | as text, PDF or HTML. Each format is compiled
+                    | from the same rivt file. 
 
                     | A rivt report is the published output 
                     | of multiple docs collated into a single 
       rivt report   | text, PDF or HTML file. Each doc is a
                     | chapter in the report. Chapters are
-                    | grouped together in divisions.
-
-                    | A rivtbook is a collection of rivt files
-      rivtbook      | with a common subject matter and
-                    | organized for efficient selection and 
-                    | inclusion in docs and reports.
+                    | grouped into divisions.
 
 
-For an overview of *rivt* see :ref:`here <rivt-overview>`. To get started using
-*rivt* see :ref:`here <rivt-start>` and :ref:`here <rivt-tutor>` for 
-installation and tutorials. For *rivt* and *AI* see :ref:`here <rivt-context>`.
 
-The *rivtlib* Python package formats and compiles a *rivt file* to a text, PDF
-or HTML document ( *doc* ) in about a second. *rivt file* sections may be
-interactively executed in an IDE, similar to a `Jupyter notebook.
-<https://jupyter.org/>`__ Multiple *rivt files* may be compiled into a collated
-*rivt report*. This website is an example of an HTML *rivt report*. *rivtbooks*
-are collections of *rivt files* about a common subject matter and organized for
-efficient selection and inclusion in reports.
+
+For examples of a rivt file and text, PDF, or HTML doc , see 
+file, text, PDF and HTML. 
+
+For an overview of *rivt* see :ref:`here <rivt-overview>`. To get started see 
+:ref:`install <rivt-start>` and :ref:`tutorial <rivt-tutor>`.  For *AI* use with 
+*rivt* and see :ref:`here <rivt-context>`.
+
+The *rivtlib* `Python package <https://pypi.org/project/rivtlib/>`__ formats
+and compiles a *rivt file* to a text, PDF or HTML document ( *doc* ) in about a
+second. *rivt file* sections may be interactively executed in an IDE, similar
+to a `Jupyter notebook. <https://jupyter.org/>`__ Multiple *rivt files* may be
+compiled into a collated *rivt report*. This website is an example of an HTML
+*rivt report*. *rivtbooks* are collections of *rivt files* about a common
+subject matter and organized for efficient selection and inclusion in reports.
 
 A convenient interface for searching and downloading public *rivt files* on
 *GitHub* is :doc:`here. <rvE02-github>` Open source engineering models,
