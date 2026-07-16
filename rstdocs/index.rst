@@ -19,7 +19,7 @@
    <hr>
 
 
-*rivt* is an extensible, open-source Python tool for writing engineering
+*rivt* is an extensible, open-source Python tool for writing calculation
 documents with a focus on reuse [1]_. Python knowledge is not required but
 *rivt* capabilities can be extended with Python scripts that access scientific
 and engineering libraries.
@@ -51,9 +51,9 @@ There are four types of rivt document files:
 
 
 
-Examples of a :ref:`rivt file <example-file>` and the published 
-:ref:`text doc <text-doc>`, :ref:`PDF doc <pdf-doc>`, and HTML 
-:ref:`HTML doc <html-doc>` are provided.
+Examples of a :ref:`rivt file <example-file>` and publication as 
+:ref:`text <text-doc>`, :ref:`PDF  <pdf-doc>`, and HTML 
+:ref:`HTML <html-doc>` docs are provided.
 
 For an overview of *rivt* see :ref:`here <rivt-overview>`. To get started see 
 :ref:`install <rivt-start>` and :ref:`tutorial <rivt-tutor>`.  For *AI* use with 

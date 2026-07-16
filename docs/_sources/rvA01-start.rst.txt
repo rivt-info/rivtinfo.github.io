@@ -6,23 +6,24 @@
 **[1]** Getting Started 
 ------------------------------------------------------------------------------- 
 
-This section covers installation of *rivt* and *rivt doc* examples. As open 
-source software you are free to download and modify the program as needed (see 
-:ref:`FAQ <Licenses>`). The open source software installation process is built 
-around the collection and management of the multiple open source components. This 
-section covers three ways to install *rivt*.
+This section covers installation of *rivt* and *rivt doc* examples. As open
+source software you are free to download and modify the program as needed (see
+:ref:`FAQ <Licenses>`). The open source software installation process is
+designed multiple gather and install multiple open source components from
+various sources. This section covers three ways to install *rivt*.
 
-#. For users unfamiliar with Python and open source software the simplest way to
-   get started is to download the Windows portable zip file (~800 MB). It includes
-   everything necessary to run and explore *rivt*. For further details see 
-   :ref:`here <rivt-code>`.
+#. For users unfamiliar with Python and open source software the simplest way
+   to get started is to download the Windows portable *rivt-code.zip* file (~800
+   MB). For further details see :ref:`here <rivt-code>`.
 
-#. For users with a `GitHub <https://github.com>`__ account *rivt* can be forked
-   and run in a browser using `Codespaces <https://github.com/features/codespaces>`__.
-   Further details are :ref:`here <rivt-codespace>`.
+#. For users with a `GitHub <https://github.com>`__ account *rivt-codespace*
+can be forked and run in a browser using 
+`Codespaces <https://github.com/features/codespaces>`__. 
+Further details are :ref:`here <rivt-codespace>`.
 
-#. For users familiar with Python, *rivt* may be installed at the OS level or in
-   an isolated environment using *uv*. Further details are :ref:`here <rivt-sys>`.
+#. For users familiar with Python, *rivt* may be installed at the system level
+   or in an isolated environment using *uv*. Further details are 
+   :ref:`here<rivt-sys>`.
 
 **[2]** rivt IDE
 ------------------------------------------------------------------------------- 
