@@ -1,64 +1,65 @@
-**C.3 | rivt Report**
+**C.3 | Reports**
 ============================================
 
-.. _rivt-folders:
+.. _rivt-reports:
 
-**[1]**  Report Folder
+**[1]**  Report Folders
 -------------------------------------------------------
 
 A typical :term:`report folder` structure is shown below. The required 
 *rivt file* names and prefixes are shown in brackets.  For the
-:term:`rivtbook folder` structure see :ref:`see <rivt-books>`.
+:term:`rivtbook folder` structure see :ref:`here <rivt-books>`.
 
-.. raw:: html
+A report folder can contain any file or folder but the following structure is
+required for doc processing. report folders include at least
+the folders and files shown in brackets[] below. Folders with an underscore
+contain rivt generated files. Files and folders are organized under
+a rivt root folder with the prefix *rivt-* followed by the report
+label, e.g. rivt-Report-Label. 
 
-    <p style="border-width:2px; border-style:solid; 
-    border-color:#49b2c3;padding: 1em;">
+A new report folder is typically started by copying and editing a
+similar folder. rivt-folder examples can be downloaded at 
+`Google Drive <https://drive.google.com/drive/folders/1hwVOs0CVJqdZlTieV_Lt5bICbd3ywzWj?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto>`__.
 
-    <b>Folder Naming</b><br>
-    <br>
+**[2]**  Folder Names
+------------------------------------------------------------------------------
 
-    A report folder can contain any file or folder but the following structure is
-    required for <i>doc</i> processing. <i>report folders</i> include at least
-    the folders and files shown in brackets[] below. Folders with an underscore
-    contain rivt generated files. Files and folders are organized under
-    a rivt root folder with the prefix <i>rivt-</i> followed by the report
-    label, e.g. <i>rivt-Report-Label</i>. <br> <br>
+Reports are organized using the folllowing folders and subfolders. 
 
-    A new <i>report folder</i> is typically started by copying and editing a
-    similar folder. Several <i>rivt-folders</i> can be downloaded at 
-    <a href="https://drive.google.com/drive/folders/1hwVOs0CVJqdZlTieV_Lt5bICbd3ywzWj?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto">openmodels.info</a>.
-    <br> <br>
+*rivt-* report-label 
+    Top level report folder containing rivt report and public files.
+
+*_rivt-public* 
+    Includes *public rivt files* designated byt the author written by 
+    *rivtlib* for public sharing. The prefix *rvAnn-* is changed to 
+    *rv-Ann-* to avoid confusion with non-public files.
+
+*rivt-report* 
+    Includes files and folders for publishing docs and reports. 
+
+
+*required subfolders of rivt-report*
+
+*rvsrc* 
+    Includes author provided source files used by *rivt files* including 
+    data, images, run commands, tools and value files.
+
+*_rvstor*
+   Includes output files written by *rivtlib* including *logs*, *values*, 
+   *hidden sections* and *metadata* that may be read by other *rivt files*.
+
+*_published*
+    Formatted *docs* and *reports* written by *rivtlib* for publication. 
+    Subfolders include *docs* (HTML), *pdfdocs* (PDF) and *txtdocs* (text).
+
+*_rstdocs*
+    Intermediate restructured text files written by *rivtlib*.
+
 
 .. _report-folders:
 
-**rivt Report Top Level Folders** 
-
-.. code-block:: bash
-
-    [rivt-]Report-Label/             report folder
-        ├── .help/                      help files
-        ├── .vscode/                    optional VSCode settings   
-        ├── README.txt                  rivt-generated report                  
-        ├── [_rivt-public]/                 public subset of rivt files
-            ├── rv_stor/                    
-            ├── rvsrc/                        
-            ├── README.txt                              
-            ├── rv-101-filename1.py         
-            ├── rv-102-filename2.py                
-            ├── rv-201-filename3.py                          
-             ...
-        └── [rivt-report]/              report folder              
-            ├── [_published]/               published docs and reports
-            ├── [_rstdocs]/                 restructured text files               
-            ├── [rv_stor]/                  rivt generated source files
-            ├── [rvsrc]/                    author provided source files
-            ├── [rv101-]filename1.py        rivt file
-            ├── [rv102-]filename2.py        rivt file       
-            ├── [rv201-]filename3.py        rivt file          
-             ...    
-
-**rivt Report Expanded Folders**
+**[3]**  Report Folder Structure
+------------------------------------------------------------------------------
 
 .. code-block:: bash
 

@@ -1,4 +1,4 @@
-**C.4 | rivtbook**
+**C.4 | rivtbooks**
 ============================================
 
 .. _rivt-books:
@@ -50,27 +50,7 @@ A typical :term:`rivtbook folder` structure is shown below. The required
     <a href="https://drive.google.com/drive/folders/1hwVOs0CVJqdZlTieV_Lt5bICbd3ywzWj?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto">openmodels.info</a>.
     <br> <br>
 
-
-
-.. _rivtbook-folders:
-
-**rivtbook Top Level Folders** 
-
-.. code-block:: bash
-
-    [rivtbk-]Book-Label/            rivtbook report folder
-        ├── .help/                      help files
-        ├── .vscode/                    optional VSCode settings   
-        ├── README.txt                  rivt-generated book as text
-        ├── [_rivtbk-public]/           public subset of rivt files           
-        ├── [_rstdocs]/                 restructured text files
-        ├── [_pdfdocs]/                 PDF docs and report         
-        ├── [rvbk101-]folder name       rivtbook folder
-        ├── [rvbk102-]folder name       rivtbook folder        
-        ├── [rvbk201-]folder name       rivtbook folder           
-             ...    
-
-**rivtbook Expanded Folders**
+**rivtbook Folders**
 
 .. code-block:: bash
 

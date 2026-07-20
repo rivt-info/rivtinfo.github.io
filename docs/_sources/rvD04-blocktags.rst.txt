@@ -13,53 +13,11 @@ API Scope         Block Tag                                Description
 ========== ========================================= ===============================
 rv.R        **_[[WRITE]]** var name                   :ref:`Write block`
 rv.R        **_[[SHELL]]** os, *wait;nowait*          :ref:`Shell script`
-rv.I,V      **_[[TEXT]]** type                        :ref:`Text block`
 rv.I,V      **_[[TABLE]]** label                      :ref:`Table block`
 rv.V        **_[[ARGS]]** arg dict name               :ref:`Arg block`
-rv.V        **_[[PYTHON]]** label                     :ref:`Python block`
 rv.D        **_[[METADATA]]** label                   :ref:`Meta block` 
 all         **_[[END]]**                              :ref:`End block`
 ========== ========================================= ===============================
-
-.. _Text block:
-
-**[2]** Text block
----------------------------------------
-
-.. topic:: _[[TEXT]] type
-    
-    Inserts formatted text into doc. 
-
-    - *text*
-    - *python*
-    - *topic*
-    - *bold*
-    - *italic*
-    - *notes*
-    - *endnotes*
-
-    .. code-block:: text
-            
-        Syntax:    
-            _[[TEXT]] type
-            text
-            ...
-            _[[END]]
-
-        Example:    
-            _[[TEXT]] literal
-            This is a line of text.
-              This is another line indented.
-                 A third line. 
-            This text will be formatted as typed.
-            _[[END]]
-
-=========== ==========================
-API Scope     Insert, Values
-Doc Types     PDF, HTML
-=========== ==========================
-
------------------------------
 
 .. _Table block:
 

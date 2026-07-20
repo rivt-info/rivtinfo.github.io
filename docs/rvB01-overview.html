@@ -411,12 +411,32 @@
 <h1><strong>B.1 | Overview</strong><a class="headerlink" href="#b-1-overview" title="Link to this heading">#</a></h1>
 <section id="summary">
 <span id="rivt-overview"></span><h2><strong>[1]</strong> Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
-<p><em>rivt</em> is an open source Python project built around the
-<a class="reference external" href="https://pypi.org/project/rivtlib/" rel="noreferrer" target="_blank">rivtlib Python package</a>
-and <cite>:ref:dependencies &lt;vscode-settings&gt;</cite>.  It publishes a formatted
-<a class="reference internal" href="rvG02-terms.html#term-rivt-doc"><span class="xref std std-term">rivt doc</span></a> as a text, PDF or HTML file. from a <a class="reference internal" href="rvG02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> -
-a Python file (.py) that imports the <a class="reference internal" href="rvG02-terms.html#term-rivtlib"><span class="xref std std-term">rivtlib</span></a> Python package. <em>rivtlib</em>
-includes rivt API functions that implement <a class="reference internal" href="rvG02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a>.</p>
+<p><em>rivt</em> was designed to facilitate the creation of engineering calculation
+documents from a wide variety of sources including external engineering
+programs, data files, Python scripts, image files and single purpose programs
+like Excel, Mermaid, Graphviz, and LaTeX. It accomplishes this using four API
+functions:</p>
+<p style="border-width:2px; border-style:solid;
+border-color:#49b2c3;padding: 1em;">
+
+<b>R():</b> Runs external binary programs <br>
+
+<b>I():</b> Inserts static sources e.g. images, text, and PDF files <br>
+
+<b>V():</b> Imports data and calculates values from equations and functions <br>
+
+<b>T():</b> Processes text and scripts, e.g. restructured text, Python, LateX. <br>
+
+<br> <br><p>For further API details see <a class="reference internal" href="#rivt-api"><span class="std std-ref">here</span></a>.</p>
+<p><em>rivtlib</em> is a Python library that compiles a <em>rivt file</em> to a text, PDF or HTML
+document. A <em>rivt file</em> is a Python file (.py) that imports the <em>rivtlib</em>
+Python package. The <em>rivtlib</em> package includes API functions that implement
+<em>rivt markup</em>. <em>rivt</em> is an open source Python project built around the
+<a class="reference external" href="https://pypi.org/project/rivtlib/" rel="noreferrer" target="_blank">rivtlib Python package</a> and
+<cite>:ref:dependencies &lt;vscode-settings&gt;</cite>. It publishes a formatted <a class="reference internal" href="rvG02-terms.html#term-rivt-doc"><span class="xref std std-term">rivt
+doc</span></a> as a text, PDF or HTML file. from a <a class="reference internal" href="rvG02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> - a Python file
+(.py) that imports the <a class="reference internal" href="rvG02-terms.html#term-rivtlib"><span class="xref std std-term">rivtlib</span></a> Python package. <em>rivtlib</em> includes rivt
+API functions that implement <a class="reference internal" href="rvG02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a>.</p>
 <p>Groups of <em>rivt files</em> may be compiled and linked into a single
 <a class="reference internal" href="rvG02-terms.html#term-rivt-report"><span class="xref std std-term">rivt report</span></a>. Collections of <em>rivt files</em> with related subject matter
 may be grouped together as a <a class="reference internal" href="rvC04-rivtbks.html#rivt-books"><span class="std std-ref">rivtbook</span></a>. <em>rivtbooks</em> are
@@ -579,8 +599,26 @@ functions and imports the <a class="reference internal" href="rvG02-terms.html#t
 and corresponding <em>rivt doc</em> has a prefix used for document organization. The
 top level folder structures are shown below. The difference in folder structure
 facilitates copying chapters from rivtbooks into report. A more detailed
-description of the folder structure is <a class="reference internal" href="rvC03-repfolder.html#report-folders"><span class="std std-ref">here</span></a>.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Report<span class="w"> </span>Folder
+description of the folder structure is <a class="reference internal" href="rvC03-reports.html#id1"><span class="std std-ref">here</span></a>.</p>
+<blockquote>
+<div><p>&lt;p style=”border-width:2px; border-style:solid;
+border-color:#49b2c3;padding: 1em;”&gt;</p>
+<p>&lt;b&gt;Folder Names&lt;/b&gt;&lt;br&gt;
+&lt;br&gt;</p>
+<p>A report folder can contain any set of files and folders but the following
+structure is required for &lt;i&gt;doc&lt;/i&gt; processing. Files and folders are
+organized under a root folder with the prefix &lt;i&gt;rivt-&lt;/i&gt; e.g.
+&lt;i&gt;rivt-Report-Label&lt;/i&gt;. &lt;br&gt; &lt;br&gt;</p>
+<p>&lt;i&gt;report folders&lt;/i&gt; (root folders) include at least the &lt;i&gt;rivt files&lt;/i&gt;
+and the five required subfolders. Required folders and prefixes are
+shown in brackets. Folders preceded by an underscore contain rivt outputs.
+Folders requiring author input are capitalized. &lt;br&gt; &lt;br&gt;</p>
+</div></blockquote>
+<p>The top level folder structure is shown below. A more detailed description of
+the folder structure is <a class="reference internal" href="rvC03-reports.html#rivt-report"><span class="std std-ref">here</span></a>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Top<span class="w"> </span>Level<span class="w"> </span>Folders
+
+Report<span class="w"> </span>Folders
 
 <span class="o">[</span>rivt-<span class="o">]</span>Report-Label/<span class="w">           </span>Report<span class="w"> </span>Folder
 <span class="w">    </span>├──<span class="w"> </span>.help/<span class="w">                     </span><span class="nb">help</span><span class="w"> </span>files
@@ -604,7 +642,7 @@ description of the folder structure is <a class="reference internal" href="rvC03
 <span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv201-<span class="o">]</span>filename3.py<span class="w">        </span>rivt<span class="w"> </span>file
 <span class="w">        </span>...
 
-rivtbook<span class="w"> </span>Folder
+rivtbook<span class="w"> </span>Folders
 
 <span class="o">[</span>rivtbk-<span class="o">]</span>Book-Label/<span class="w">            </span>rivtbook<span class="w"> </span>folder
 <span class="w">    </span>├──<span class="w"> </span>.help/<span class="w">                      </span><span class="nb">help</span><span class="w"> </span>files

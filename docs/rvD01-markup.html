@@ -61,7 +61,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="D.5 | API Scopes" href="rvD02-apiscope.html" />
-    <link rel="prev" title="C.4 | rivtbook" href="rvC04-rivtbks.html" />
+    <link rel="prev" title="C.4 | rivtbooks" href="rvC04-rivtbks.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -449,7 +449,7 @@ document generation and debugging.</p>
 <tbody>
 <tr class="row-even"><td><p><strong>rv.R</strong> (rS)</p></td>
 <td><p>Run</p></td>
-<td><p>Run scripts and markup</p></td>
+<td><p>Run external binary programs</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>rv.I</strong> (rS)</p></td>
 <td><p>Insert</p></td>
@@ -461,7 +461,7 @@ document generation and debugging.</p>
 </tr>
 <tr class="row-odd"><td><p><strong>rv.T</strong> (rS)</p></td>
 <td><p>Tools</p></td>
-<td><p>Shell scripts and external programs</p></td>
+<td><p>Process text scripts</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>rv.D</strong> (rS)</p></td>
 <td><p>Doc</p></td>
@@ -685,7 +685,7 @@ define, assign and compare values.</p>
 </pre></div>
 </div>
 <p>File paths are specified relative to the <em>rivt root folder</em>. The <em>rivt
-report</em> folder structure is described <a class="reference internal" href="rvC03-repfolder.html#rivt-folders"><span class="std std-ref">here</span></a>.</p>
+report</em> folder structure is described <span class="xref std std-ref">here</span>.</p>
 <p>If the path is ommitted the default path for each command is applied. If
 the <em>singledoc</em> parameter is set, the <em>resource files</em> and <em>docs</em> are
 stored in the <em>rivt root folder</em>.</p>
@@ -708,53 +708,7 @@ Description<br>
     Example:
         This is a sentence. _[C]
 </pre>
-</p></section>
-<hr class="docutils" />
-<section id="folders">
-<h2><strong>[4]</strong> Folders<a class="headerlink" href="#folders" title="Link to this heading">#</a></h2>
-<blockquote>
-<div><p>&lt;p style=”border-width:2px; border-style:solid;
-border-color:#49b2c3;padding: 1em;”&gt;</p>
-<p>&lt;b&gt;Folder Names&lt;/b&gt;&lt;br&gt;
-&lt;br&gt;</p>
-<p>A report folder can contain any set of files and folders but the following
-structure is required for &lt;i&gt;doc&lt;/i&gt; processing. Files and folders are
-organized under a root folder with the prefix &lt;i&gt;rivt-&lt;/i&gt; e.g.
-&lt;i&gt;rivt-Report-Label&lt;/i&gt;. &lt;br&gt; &lt;br&gt;</p>
-<p>&lt;i&gt;report folders&lt;/i&gt; (root folders) include at least the &lt;i&gt;rivt files&lt;/i&gt;
-and the five required subfolders. Required folders and prefixes are
-shown in brackets. Folders preceded by an underscore contain rivt outputs.
-Folders requiring author input are capitalized. &lt;br&gt; &lt;br&gt;</p>
-</div></blockquote>
-<p>The top level folder structure is shown below. A more detailed description of
-the folder structure is <a class="reference internal" href="rvC03-repfolder.html#report-folders"><span class="std std-ref">here</span></a>.</p>
-<p><strong>Top Level Folders</strong></p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rivt-Report-Label/<span class="w">           </span>Report<span class="w"> </span>Folder
-<span class="w">  </span>├──<span class="w"> </span>.vscode/<span class="w">                  </span>optional<span class="w"> </span>VSCode<span class="w"> </span>settings
-<span class="w">  </span>├──<span class="w"> </span>rivt-public_/<span class="w">             </span>rivt-generated<span class="w"> </span>public<span class="w"> </span>files
-<span class="w">      </span>├──<span class="w"> </span>rvsrc/<span class="w">                     </span><span class="nb">source</span><span class="w"> </span>files
-<span class="w">      </span>├──<span class="w"> </span>README.txt<span class="w">                </span>public<span class="w"> </span>text<span class="w"> </span>report<span class="w"> </span>or<span class="w"> </span>doc
-<span class="w">      </span>├──<span class="w"> </span>rv-101-filename1.py<span class="w">       </span>public<span class="w"> </span>rivt<span class="w"> </span>file
-<span class="w">      </span>├──<span class="w"> </span>rv-102-filename2.py<span class="w">       </span>public<span class="w"> </span>rivt<span class="w"> </span>file
-<span class="w">      </span>├──<span class="w"> </span>rv-201-filename3.py<span class="w">       </span>public<span class="w"> </span>rivt<span class="w"> </span>file
-<span class="w">      </span>...
-<span class="w">  </span>└──<span class="w"> </span>rivt-report/<span class="w">               </span>rivt<span class="w"> </span>files<span class="w"> </span>and<span class="w"> </span>docs
-<span class="w">      </span>├──<span class="w"> </span>_published/<span class="w">               </span>published<span class="w"> </span>docs<span class="w"> </span>and<span class="w"> </span>reports
-<span class="w">      </span>├──<span class="w"> </span>_rstdocs/<span class="w">                 </span>intermediate<span class="w"> </span>restructured<span class="w"> </span>text<span class="w"> </span>files
-<span class="w">      </span>├──<span class="w"> </span>rv_stor/<span class="w">                  </span>rivt<span class="w"> </span>generated<span class="w"> </span>stored<span class="w"> </span>files
-<span class="w">      </span>├──<span class="w"> </span>rvsrc/<span class="w">                    </span>author<span class="w"> </span><span class="nb">source</span><span class="w"> </span>files
-<span class="w">      </span>├──<span class="w"> </span>rivt-report.py<span class="w">            </span>report<span class="w"> </span>generating<span class="w"> </span>script
-<span class="w">      </span>├──<span class="w"> </span>rv101-filename1.py<span class="w">        </span>rivt<span class="w"> </span>file
-<span class="w">      </span>├──<span class="w"> </span>rv102-filename2.py<span class="w">        </span>rivt<span class="w"> </span>file
-<span class="w">      </span>├──<span class="w"> </span>rv201-filename3.py<span class="w">        </span>rivt<span class="w"> </span>file
-<span class="w">      </span>...
-<span class="w">  </span>└──<span class="w"> </span>README.txt<span class="w">                 </span>text<span class="w"> </span>report<span class="w"> </span>or<span class="w"> </span>doc
-</pre></div>
-</div>
-<hr class="docutils" />
+</p><hr class="docutils" />
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -776,7 +730,7 @@ the folder structure is <a class="reference internal" href="rvC03-repfolder.html
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>C.4 | rivtbook</strong></p>
+        <p class="prev-next-title"><strong>C.4 | rivtbooks</strong></p>
       </div>
     </a>
     <a class="right-next"
@@ -810,7 +764,6 @@ the folder structure is <a class="reference internal" href="rvC03-repfolder.html
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api-functions"><strong>[1]</strong> API functions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-string"><strong>[2]</strong> rivt string</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tags-and-commands"><strong>[3]</strong> Tags and Commands</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#folders"><strong>[4]</strong> Folders</a></li>
 </ul>
   </nav></div>
 

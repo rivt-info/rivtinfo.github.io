@@ -435,20 +435,12 @@
 <td><p><a class="reference internal" href="#shell-script"><span class="std std-ref">[6] Shell script</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I,V</p></td>
-<td><p><strong>_[[TEXT]]</strong> type</p></td>
-<td><p><a class="reference internal" href="#text-block"><span class="std std-ref">[2] Text block</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I,V</p></td>
 <td><p><strong>_[[TABLE]]</strong> label</p></td>
 <td><p><a class="reference internal" href="#table-block"><span class="std std-ref">[3] Table Block</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.V</p></td>
+<tr class="row-odd"><td><p>rv.V</p></td>
 <td><p><strong>_[[ARGS]]</strong> arg dict name</p></td>
 <td><p><a class="reference internal" href="#arg-block"><span class="std std-ref">[4] Argument block</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.V</p></td>
-<td><p><strong>_[[PYTHON]]</strong> label</p></td>
-<td><p><a class="reference internal" href="#python-block"><span class="std std-ref">[4] Python block</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.D</p></td>
 <td><p><strong>_[[METADATA]]</strong> label</p></td>
@@ -462,51 +454,8 @@
 </table>
 </div>
 </section>
-<section id="text-block">
-<span id="id1"></span><h2><strong>[2]</strong> Text block<a class="headerlink" href="#text-block" title="Link to this heading">#</a></h2>
-<aside class="topic">
-<p class="topic-title">_[[TEXT]] type</p>
-<p>Inserts formatted text into doc.</p>
-<ul class="simple">
-<li><p><em>text</em></p></li>
-<li><p><em>python</em></p></li>
-<li><p><em>topic</em></p></li>
-<li><p><em>bold</em></p></li>
-<li><p><em>italic</em></p></li>
-<li><p><em>notes</em></p></li>
-<li><p><em>endnotes</em></p></li>
-</ul>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    _[[TEXT]] type
-    text
-    ...
-    _[[END]]
-
-Example:
-    _[[TEXT]] literal
-    This is a line of text.
-      This is another line indented.
-         A third line.
-    This text will be formatted as typed.
-    _[[END]]
-</pre></div>
-</div>
-</aside>
-<div class="pst-scrollable-table-container"><table class="table">
-<tbody>
-<tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Insert, Values</p></td>
-</tr>
-<tr class="row-even"><td><p>Doc Types</p></td>
-<td><p>PDF, HTML</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<hr class="docutils" />
-</section>
 <section id="table-block">
-<span id="id2"></span><h2><strong>[3]</strong> Table Block<a class="headerlink" href="#table-block" title="Link to this heading">#</a></h2>
+<span id="id1"></span><h2><strong>[3]</strong> Table Block<a class="headerlink" href="#table-block" title="Link to this heading">#</a></h2>
 <aside class="topic">
 <p class="topic-title">_[[TABLE]]</p>
 <p>Reads and formats restructured text table and writes contents
@@ -580,7 +529,7 @@ Example:
 <hr class="docutils" />
 </section>
 <section id="python-block">
-<span id="id3"></span><h2><strong>[4]</strong> Python block<a class="headerlink" href="#python-block" title="Link to this heading">#</a></h2>
+<span id="id2"></span><h2><strong>[4]</strong> Python block<a class="headerlink" href="#python-block" title="Link to this heading">#</a></h2>
 <aside class="topic">
 <p class="topic-title">_[[PYTHON]] label</p>
 <p>Runs a Python script. Results are typically written to the default folder
@@ -650,7 +599,7 @@ Example:
 <hr class="docutils" />
 </section>
 <section id="shell-script">
-<span id="id4"></span><h2><strong>[6]</strong> Shell script<a class="headerlink" href="#shell-script" title="Link to this heading">#</a></h2>
+<span id="id3"></span><h2><strong>[6]</strong> Shell script<a class="headerlink" href="#shell-script" title="Link to this heading">#</a></h2>
 <p>Runs shell scripts that run external programs. The shell parameters include
 specifying the operating system, process control and terminal window control.
 The os parameter specifies the terminal type. The wait parameter specifies
@@ -732,7 +681,7 @@ Example:
 <hr class="docutils" />
 </section>
 <section id="end-block">
-<span id="id5"></span><h2><strong>[8]</strong> End block<a class="headerlink" href="#end-block" title="Link to this heading">#</a></h2>
+<span id="id4"></span><h2><strong>[8]</strong> End block<a class="headerlink" href="#end-block" title="Link to this heading">#</a></h2>
 <aside class="topic">
 <p class="topic-title">_[[END]]</p>
 <p>Terminates a block tag.</p>
@@ -806,7 +755,6 @@ Example:
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#block-tag-summary"><strong>[1]</strong> Block Tag Summary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-block"><strong>[2]</strong> Text block</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-block"><strong>[3]</strong> Table Block</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#argument-block"><strong>[4]</strong> Argument block</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-block"><strong>[4]</strong> Python block</a></li>

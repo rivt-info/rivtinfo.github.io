@@ -60,7 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="C.2 | rivt File" href="rvC02-files.html" />
+    <link rel="next" title="C.2 | rivt Files" href="rvC02-files.html" />
     <link rel="prev" title="B.3 | Frameworks" href="rvB03-framework.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -348,9 +348,9 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="rvC02-files.html"><strong>C.2 | rivt File</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC03-repfolder.html"><strong>C.3 | rivt Report</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC04-rivtbks.html"><strong>C.4 | rivtbook</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC02-files.html"><strong>C.2 | rivt Files</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC03-reports.html"><strong>C.3 | Reports</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC04-rivtbks.html"><strong>C.4 | rivtbooks</strong></a></li>
 </ul>
 </div>
 </nav></div>
@@ -410,15 +410,18 @@
                   
   <section id="c-1-docs">
 <h1><strong>C.1 | Docs</strong><a class="headerlink" href="#c-1-docs" title="Link to this heading">#</a></h1>
-<section id="docs-reports-books">
-<h2><strong>[1]</strong> Docs-Reports-Books<a class="headerlink" href="#docs-reports-books" title="Link to this heading">#</a></h2>
-<p>A <em>rivt doc</em> is the output of a <em>rivt file</em> processed by <em>rivtlib</em>. Each <em>rivt
-file</em> outputs a formatted <a class="reference internal" href="rvG02-terms.html#term-doc"><span class="xref std std-term">doc</span></a> with a <em>doc number</em> derived from the rivt
-file name. The <em>doc</em> is written to the respective subfolder of the <em>_published</em>
-folder.</p>
-<p>Each <a class="reference internal" href="rvG02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> outputs a corresponding <a class="reference internal" href="rvG02-terms.html#term-doc"><span class="xref std std-term">doc</span></a> of the format
-specified in PUBLISH command of the <em>rv.D()</em> API. A rivt file number has the
-form:</p>
+<section id="docs">
+<h2><strong>[1]</strong> Docs<a class="headerlink" href="#docs" title="Link to this heading">#</a></h2>
+<p>A <em>rivt doc</em> is the output of a <em>rivt file</em> . <em>rivt files</em> and <em>docs</em> are the
+basic units of <em>rivt reports</em> and <em>rivtbooks</em> which are organized in folders
+for editing and assembly. <a class="reference internal" href="rvC03-reports.html#rivt-reports"><span class="std std-ref">rivt reports</span></a> are organized to
+simplify editing and document assembly. <a class="reference internal" href="rvC04-rivtbks.html#rivt-books"><span class="std std-ref">rivtbooks</span></a> are
+organized to select <em>rivt files</em> for inclusion in <em>reports</em>. <em>rivt files</em> in
+<em>rivtbooks</em> are referred to as <em>chapters</em>.</p>
+<p>Each <a class="reference internal" href="rvG02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> outputs a corresponding <a class="reference internal" href="rvG02-terms.html#term-doc"><span class="xref std std-term">doc</span></a> with a <em>doc number</em>
+derived from the rivt file name and a format specified in PUBLISH command of
+the <em>rv.D()</em> API. The <em>doc</em> is written to the respective subfolder of the
+<em>_published</em> folder. A rivt file number has the form:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rvAnn-filename.py
 </pre></div>
 </div>
@@ -1007,7 +1010,7 @@ rv212-filename.py
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>C.2 | rivt File</strong></p>
+        <p class="prev-next-title"><strong>C.2 | rivt Files</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1030,7 +1033,7 @@ rv212-filename.py
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docs-reports-books"><strong>[1]</strong> Docs-Reports-Books</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docs"><strong>[1]</strong> Docs</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration-file-py"><strong>[2]</strong> Configuration file (.py)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#style-file-yaml"><strong>[3]</strong> Style file (.yaml)</a></li>
 </ul>

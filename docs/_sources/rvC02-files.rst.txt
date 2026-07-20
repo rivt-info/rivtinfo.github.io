@@ -1,4 +1,4 @@
-**C.2 | rivt File**
+**C.2 | rivt Files**
 ============================
 
 **[1]** File Types 
@@ -114,40 +114,7 @@ file* with an added hyphen between "rv" and the docnumber e.g.
 
     rv-Dss-filename.py
 
------------------------
 
 
-**[2]**  Folder Names
-------------------------------------------------------------------------------
 
-Reports are organized using the folllowing folders and subfolders. 
-
-*rivt-* report-label 
-    Top level report folder containing rivt report and public files.
-
-*_rivt-public* 
-    Includes *public rivt files* designated byt the author written by 
-    *rivtlib* for public sharing. The prefix *rvAnn-* is changed to 
-    *rv-Ann-* to avoid confusion with non-public files.
-
-*rivt-report* 
-    Includes files and folders for publishing docs and reports. 
-
-
-*required subfolders of rivt-report*
-
-*rvsrc* 
-    Includes author provided source files used by *rivt files* including 
-    data, images, run commands, tools and value files.
-
-*rv_stor*
-   Includes output files written by *rivtlib* including *logs*, *values*, 
-   *hidden sections* and *metadata* that may be read by other *rivt files*.
-
-*_published*
-    Formatted *docs* and *reports* written by *rivtlib* for publication. 
-    Subfolders include *docs* (HTML), *pdfdocs* (PDF) and *txtdocs* (text).
-
-*_rstdocs*
-    Intermediate restructured text files written by *rivtlib*.
 

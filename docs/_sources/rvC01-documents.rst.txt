@@ -1,17 +1,20 @@
 **C.1 | Docs**
 ========================
 
-**[1]** Docs-Reports-Books
+**[1]** Docs
 ------------------------------
 
-A *rivt doc* is the output of a *rivt file* processed by *rivtlib*. Each *rivt
-file* outputs a formatted :term:`doc` with a *doc number* derived from the rivt
-file name. The *doc* is written to the respective subfolder of the *_published*
-folder.
+A *rivt doc* is the output of a *rivt file* . *rivt files* and *docs* are the
+basic units of *rivt reports* and *rivtbooks* which are organized in folders
+for editing and assembly. :ref:`rivt reports<rivt-reports>` are organized to
+simplify editing and document assembly. :ref:`rivtbooks<rivt-books>` are
+organized to select *rivt files* for inclusion in *reports*. *rivt files* in
+*rivtbooks* are referred to as *chapters*.
 
-Each :term:`rivt file` outputs a corresponding :term:`doc` of the format
-specified in PUBLISH command of the *rv.D()* API. A rivt file number has the
-form:
+Each :term:`rivt file` outputs a corresponding :term:`doc` with a *doc number*
+derived from the rivt file name and a format specified in PUBLISH command of
+the *rv.D()* API. The *doc* is written to the respective subfolder of the
+*_published* folder. A rivt file number has the form:
 
 .. code-block:: text
 
@@ -593,5 +596,5 @@ The *rivtstyle.yaml* file contains default formats for PDF files.
     :hidden:
 
     rvC02-files.rst
-    rvC03-repfolder.rst
+    rvC03-reports.rst
     rvC04-rivtbks.rst    
