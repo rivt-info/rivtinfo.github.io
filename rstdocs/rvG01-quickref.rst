@@ -51,17 +51,17 @@ changing the default.
 
 **Header substring defaults**
 
-====== =================== =============== =================== ================== ===========
-API      private; public     doc; stored      section; merge     pdfpage; nopage    markup
-====== =================== =============== =================== ================== ===========
-rv.R    **private**         **stored**       **section**          **nopage**       **type**
+====== =================== =============== =================== ================== ================
+API      private; public     doc; stored      section; merge     pdfpage; nopage    other
+====== =================== =============== =================== ================== ================
+rv.R    **private**         **doc**          **section**          **nopage**         NA
 rv.I    **private**         **doc**          **section**          **nopage**         NA
 rv.V    **private**         **doc**          **section**          **nopage**         NA
-rv.T    **private**         **stored**       **merge** [1]        **nopage**         NA
+rv.T    **private**         stored only      **section**          **nopage**       **text type**
 rv.D    **private**         stored only          NA                  NA              NA
 rv.S         NA                 NA               NA                  NA              NA
 rv.X         NA                 NA               NA                  NA              NA
-====== =================== =============== =================== ================== ===========
+====== =================== =============== =================== ================== ================
 
 
 ----------------------------------

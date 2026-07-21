@@ -46,7 +46,7 @@ A *rivt report* is organized using *rivt doc numbers*
 --------------------
 
 
-**[2]** Configuration file (.py)
+**[2]** HTML / PDF Config (.py)
 --------------------------------------------------------------------- 
 
 The *conf.py* configuration file contains default configuration settings for 
@@ -206,7 +206,7 @@ The *conf.py* configuration file contains default configuration settings for
 ----------------------------------
 
 
-**[3]** Style file (.yaml)
+**[3]** PDF style file (.yaml)
 --------------------------------------------------------------------- 
 
 The *rivtstyle.yaml* file contains default formats for PDF files.
@@ -593,5 +593,6 @@ The *rivtstyle.yaml* file contains default formats for PDF files.
     :hidden:
 
     rvC02-files.rst
-    rvC03-repfolder.rst
-    rvC04-rivtbks.rst    
+    rvC03-reports.rst
+    rvC04-rivtbks.rst
+    rvC05-folders.rst    

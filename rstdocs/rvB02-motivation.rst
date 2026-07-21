@@ -80,29 +80,11 @@ The primary use cases for *rivt* are:
 #. producing clear, organized documents that are simple to publish but not 
    necessarily formatted to standards of formal journal articles or books. 
 
-#. producing documents with source files that need to be partitioned into public
+#. producing documents with source files that need to be separated into public
    and private parts prior to sharing as open-source.
 
-Examples include:
+#. collaborative work.
 
-A. Engineering documents for:
-
-#. internal communication
-#. research documentation
-#. government permits
-#. technical reports
-#. funding applications
-#. homework
-
-B. Front and back ends for:
-
-#. software pre- and post-processing
-#. visualization
-#. instrumentation
-
-
-C. Collaboration in:
-
-#. teaching
-#. presentations
-#. document preparation
+Specific examples include internal group documents, research documentation,
+government permits, technical reports, funding applications, teaching and
+homework, and turning static books into interactive documents.

@@ -128,7 +128,7 @@ API Function         Name             Purpose
 **rv.R** (rS)         Run          Run external programs
 **rv.I** (rS)         Insert       Insert static sources 
 **rv.V** (rS)         Values       Calculate values
-**rv.T** (rS)         Text         Process blocks of text and scripts
+**rv.T** (rS)         Text         Process text and scripts
 **rv.D** (rS)         Doc          Publish docs 
 **rv.S** (rS)         Skip         Skip section 
 **rv.X** ()           Exit         Exit rivt file
