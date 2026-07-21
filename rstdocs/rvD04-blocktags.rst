@@ -1,4 +1,4 @@
-**D.3 |** Block Tags
+**D.4 |** Block Tags
 ========================
 
 .. _block summary:

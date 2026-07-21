@@ -1,4 +1,4 @@
-**F.5 | Scripts**
+**F.5 |** Scripts
 =================================  
 
 
@@ -7,7 +7,7 @@
 
 
 .. topic:: Copilot Prompt -  "write a Python function that checks a 
-           wood column using NDS"
+           wood column using the NDS"
 
    .. code-block:: text
 

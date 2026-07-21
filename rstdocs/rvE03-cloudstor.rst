@@ -1,4 +1,4 @@
-**E.3 | Cloud Storage**
+**E.3 |** Cloud Storage
 ===================================
 
 **[1]** General Considerations

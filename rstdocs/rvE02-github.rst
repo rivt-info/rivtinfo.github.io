@@ -1,4 +1,4 @@
-**E.2 | GitHub**
+**E.2 |** GitHub
 ===================================
 
 **[1]** Public GitHub files
