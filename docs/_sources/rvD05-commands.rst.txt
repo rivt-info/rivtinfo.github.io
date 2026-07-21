@@ -1,4 +1,4 @@
-**D.6 | Commands**
+**D.6 |** Commands
 ========================
 
 .. _command-summary:

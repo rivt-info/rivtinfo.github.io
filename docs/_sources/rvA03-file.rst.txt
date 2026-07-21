@@ -1,4 +1,4 @@
-**A.3 | rivt Example File**
+**A.3 |** rivt Example File
 =============================
 
 .. _example-file:

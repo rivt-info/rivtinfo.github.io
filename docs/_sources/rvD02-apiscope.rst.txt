@@ -1,4 +1,4 @@
-**D.5 | API Scopes**
+**D.2 |** API Scopes
 ==========================
 
 .. _markup-R:

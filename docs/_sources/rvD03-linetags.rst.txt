@@ -1,4 +1,4 @@
-**D.2 | Line Tags**
+**D.3 |** Line Tags
 ========================
 
 .. _line summary:

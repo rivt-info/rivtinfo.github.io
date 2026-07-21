@@ -1,4 +1,4 @@
-**A.2 | Tutorial**
+**A.2 |** Tutorial
 =========================
 
 .. _rivt-tutor:
