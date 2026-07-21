@@ -1,12 +1,12 @@
 **D.0 | rivt Markup**
 ======================
 
-.. _API functions:
+.. _API methods:
 
-**[1]** API functions
+**[1]** API methods
 --------------------------------------------------------------------- 
 
-*rivt* has six API functions. The name *rivt* is an acronym taken from 
+*rivt* has six API methods. The name *rivt* is an acronym taken from 
 four functions that process content. The remaining three functions are used for
 document generation and debugging.
 
@@ -47,8 +47,8 @@ API Function         Name             Purpose
 **rv.S,X** (rS)    Skip, Exit        Skip section, exit (comments and debugging)
 ================ =============== ================================================
 
-API functions define doc sections. The available *rivt markup* commands and
-tags depend on the API funciton. If interactive IDEs are used, API functions
+API methods define doc sections. The available *rivt markup* commands and
+tags depend on the API funciton. If interactive IDEs are used, API methods
 can be processed individually using the standard notebook cell percent
 notation:
 

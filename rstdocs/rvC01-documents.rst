@@ -1,4 +1,4 @@
-**C.1 | Docs**
+**C.1 |** Docs
 ========================
 
 **[1]** Docs
@@ -596,6 +596,7 @@ The *rivtstyle.yaml* file contains default formats for PDF files.
     :hidden:
 
     rvC02-files.rst
-    rvC03-reports.rst
-    rvC04-rivtbks.rst
-    rvC05-folders.rst    
+    rvC03-folders.rst    
+    rvC04-reports.rst
+    rvC05-rivtbks.rst
+    

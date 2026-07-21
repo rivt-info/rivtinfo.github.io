@@ -9,7 +9,7 @@
 Three examples are provided.
 
 - Example 1
-    This single doc example file illustrates common API functions and rivt
+    This single doc example file illustrates common API methods and rivt
     markup. The %% marks indicate sections that can be interactively processed
     as cells (similar to a Jupyter Notebook). They can be created with a
     shortcut provided by *rivt extensions* . They also provide an interactive
@@ -165,7 +165,7 @@ This is the text form of the *doc*.
     simply supported, uniformly loaded beam. It also serves as an annotated
     example of a rivt doc with multiple sections that is not part of a report.
     
-    The example illustrates the use of some of the most common API functions,
+    The example illustrates the use of some of the most common API methods,
     commands and tags. Further details are provided in the
     rivt user manual, https://www.rivt.info .
     

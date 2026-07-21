@@ -1,12 +1,12 @@
-**D.1 | rivt Markup**
+**D.1 |** rivt Markup
 ======================
 
-.. _API functions:
+.. _API methods:
 
-**[1]** API functions
+**[1]** API methods
 --------------------------------------------------------------------- 
 
-*rivt* has six API functions. The name *rivt* is an acronym taken from 
+*rivt* has six API methods. The name *rivt* is an acronym taken from 
 four functions that process content. The remaining three functions are used for
 document generation and debugging.
 
@@ -44,13 +44,11 @@ API Function         Name             Purpose
 **rv.V** (rS)         Values         Calculate values
 **rv.T** (rS)         Tools          Process text scripts
 **rv.D** (rS)         Doc            Publish docs 
-**rv.S,X** (rS)    Skip, Exit        Skip section, exit (comments and debugging)
+**rv.S,X** (rS)     Skip, Exit       Skip section, exit (comments, debugging)
 ================ =============== ================================================
 
-API functions define doc sections. The available *rivt markup* commands and
-tags depend on the API funciton. If interactive IDEs are used, API functions
-can be processed individually using the standard notebook cell percent
-notation:
+*API methods* define sections. If interactive IDEs are used rv.S and rv.X can
+be used for debugging and cell notation can be used for navigation.
 
 .. code-block:: python
 
@@ -65,51 +63,61 @@ notation:
 **[2]** rivt string
 ----------------------------------
 
-Each :doc:`API function <rvA01-start>` takes a raw, triple quoted 
-:term:`rivt string` composed of a :term:`header substring` line followed 
-by a multiple-line :term:`content substring`. The *header substring* defines 
-section processing parameters.  The *content substring* includes  
-:term:`rivt markup` and is indented four spaces for improved readability 
-and navigation (e.g. section folding).
+Each :doc:`API function <rvA01-start>` takes a raw, triple quoted :term:`rivt
+string` composed of a :term:`header substring` on the first line followed by a
+multi-line :term:`content substring`. The *header line* defines section
+processing parameters. The *content substring* includes :term:`rivt markup` and
+is indented four spaces for improved readability and navigation (e.g. section
+folding). *rivt markup* commands and tags vary depending on the API function.
 
 .. _Header substring:
 
-**Header substring**
+**Header line**
 
-The :term:`header substring` starts with a *section label*, used as the
-section title, followed by a vertical bar and three comma separated
-*section parameters* that override default behavior.
+The :term:`header substring` starts with a *section label*, also used as the
+section title, followed by *section parameters* that override default behavior.
+All parameters are optional and may be ommited if defaults are acceptable. If any
+parameters are specified the vertical bars bracketing the file name are required.  
 
 .. code-block:: python
 
-    rv._(r"""Section Label | doc;stored, private;public, section;merge
+    rv._(r"""Section Label | file, type | private;public, doc;stored, section;merge, pdfpage;nopage
 
-         Content substring indented 4 spaces
+        Content substring indented 4 spaces
         
         ...
         
         """)
 
-The header parameters include the following comma separated values in any
-order:
+**The header parameters include the following file options:**
 
-*private/public* 
-    Determines whether the API section text is copied to the the *Public* folder
-    *rivt file* for potentinal sharing. Actually sharing this folder is a 
-    separate step.
+*file* 
+    Specifies the file name for section content. If blank, the section is read
+    from the content substring.
+
+*type* 
+    Speciifes the file type for the section content. 
+
+
+**and the following section options in any order**
 
 *doc/stored*
     Determines whether the *rivt string* is formatted and printed in the doc, 
     or just annotated in the doc and written to a file in the *Stored* folder 
     for optional inclusion as an appendix.
 
+*private/public* 
+    Determines whether the API section text is copied to the the *Public* folder
+    *rivt file* for potentinal sharing. Actually sharing this folder is a 
+    separate step.
+
 *section/merge* 
     Determines whether the API starts a new *doc* section
     or is merged into the previous section.   
 
-*script type* 
-    For the rv.R API only, the markup script type is specified 
-    in the header substring. 
+*nopage/pdfpage* 
+    Starts a new pdf page. METADATA settings provide the option to start
+    a new page for each section.
 
 Default settings in the *header substring* do not need to be specified. The
 default setting for each API is listed first (in bold) in the table below.
@@ -129,23 +137,23 @@ including it in the *comment settings* immediately following the
 Individual sections may be set back to private in the header substring after
 changing the default. 
 
-**Header substring defaults**
+**Header line defaults**
 
 ====== =================== =============== =================== ================== ===========
-API      private; public     doc; stored      section; merge     pdfpage; nopage    markup
+API      private; public     doc; stored      section; merge     nopage;pdfpage     type [1]
 ====== =================== =============== =================== ================== ===========
-rv.R    **private**         **stored**       **section**          **nopage**       **type**
-rv.I    **private**         **doc**          **section**          **nopage**         NA
-rv.V    **private**         **doc**          **section**          **nopage**         NA
-rv.T    **private**         **stored**       **merge** [1]        **nopage**         NA
-rv.D    **private**         stored only          NA                  NA              NA
+rv.R    **private**         **doc**          **section**          **nopage**       **type**
+rv.I    **private**         **doc**          **section**          **nopage**       **type**
+rv.V    **private**         **doc**          **section**          **nopage**       **type**
+rv.T    **private**         **doc**          **section**          **nopage**       **type**
+rv.D    **private**             NA               NA                  NA              NA
 rv.S         NA                 NA               NA                  NA              NA
 rv.X         NA                 NA               NA                  NA              NA
 ====== =================== =============== =================== ================== ===========
 
-[1] Summary of tool execution added to prior section
+[1] See 
 
-Examples of *header substring* settings are shown below.
+Examples of the *header* settings are shown below.
 
 - An example with explicit defaults (they do not have to be declared).
 

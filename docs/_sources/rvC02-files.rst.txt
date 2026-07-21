@@ -1,4 +1,4 @@
-**C.2 | rivt Files**
+**C.2 |** rivt Files
 ============================
 
 **[1]** File Types 

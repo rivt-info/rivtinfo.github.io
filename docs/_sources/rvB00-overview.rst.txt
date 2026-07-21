@@ -12,7 +12,7 @@
 and `dependencies :ref:Project-requirements`.  It publishes 
 a formatted :term:`rivt doc` as a text, PDF or HTML file.
 from a :term:`rivt file` - a Python file (.py) that imports the :term:`rivtlib` 
-Python package. *rivtlib* includes rivt API functions that implement 
+Python package. *rivtlib* includes rivt API methods that implement 
 :term:`rivt markup`. 
 
 Groups of *rivt files* may be compiled and linked into a single 
@@ -96,7 +96,7 @@ the corresponding *doc numbers* in a report would be:
 **[3]** API
 ------------------------------------------------------------------------------- 
 
-The *rivt API* includes :ref:`API functions <API functions>`, 
+The *rivt API* includes :ref:`API methods <API methods>`, 
 :ref:`markup` and structured :ref:`folders and files <Files-folders>`.  
 
 The API and markup are designed to be:
@@ -120,7 +120,7 @@ The API and markup are designed to be:
     The file and folder settings produce clear, organized documents with 
     default settings. Settings may also be customized for specific needs.
 
-The API functions are listed in the table below, where (rS) is a triple quoted 
+The API methods are listed in the table below, where (rS) is a triple quoted 
 :term:`rivt string` argument.
 
 ================= =============== ================================================

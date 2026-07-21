@@ -383,7 +383,7 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>B.1 | Overview</strong></span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>B.1 |</strong> Overview</span></li>
   </ul>
 </nav>
 </div>
@@ -401,7 +401,7 @@
                 <article class="bd-article">
                   
   <section id="b-1-overview">
-<h1><strong>B.1 | Overview</strong><a class="headerlink" href="#b-1-overview" title="Link to this heading">#</a></h1>
+<h1><strong>B.1 |</strong> Overview<a class="headerlink" href="#b-1-overview" title="Link to this heading">#</a></h1>
 <section id="summary">
 <span id="rivt-overview"></span><h2><strong>[1]</strong> Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
 <p><em>rivt</em> was designed to facilitate the creation of engineering calculation
@@ -423,16 +423,16 @@ border-color:#49b2c3;padding: 1em;">
 <br> <br><p>For further API details see <a class="reference internal" href="#rivt-api"><span class="std std-ref">here</span></a>.</p>
 <p><em>rivtlib</em> is a Python library that compiles a <em>rivt file</em> to a text, PDF or HTML
 document. A <em>rivt file</em> is a Python file (.py) that imports the <em>rivtlib</em>
-Python package. The <em>rivtlib</em> package includes API functions that implement
+Python package. The <em>rivtlib</em> package includes API methods that implement
 <em>rivt markup</em>. <em>rivt</em> is an open source Python project built around the
 <a class="reference external" href="https://pypi.org/project/rivtlib/" rel="noreferrer" target="_blank">rivtlib Python package</a> and
 <cite>:ref:dependencies &lt;vscode-settings&gt;</cite>. It publishes a formatted <a class="reference internal" href="rvG02-terms.html#term-rivt-doc"><span class="xref std std-term">rivt
 doc</span></a> as a text, PDF or HTML file. from a <a class="reference internal" href="rvG02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> - a Python file
 (.py) that imports the <a class="reference internal" href="rvG02-terms.html#term-rivtlib"><span class="xref std std-term">rivtlib</span></a> Python package. <em>rivtlib</em> includes rivt
-API functions that implement <a class="reference internal" href="rvG02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a>.</p>
+API methods that implement <a class="reference internal" href="rvG02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a>.</p>
 <p>Groups of <em>rivt files</em> may be compiled and linked into a single
 <a class="reference internal" href="rvG02-terms.html#term-rivt-report"><span class="xref std std-term">rivt report</span></a>. Collections of <em>rivt files</em> with related subject matter
-may be grouped together as a <a class="reference internal" href="rvC04-rivtbks.html#rivt-books"><span class="std std-ref">rivtbook</span></a>. <em>rivtbooks</em> are
+may be grouped together as a <a class="reference internal" href="rvC05-rivtbks.html#rivt-books"><span class="std std-ref">rivtbook</span></a>. <em>rivtbooks</em> are
 organized for direct <em>rivt file</em> selection and insertion into
 <em>rivt docs</em> and <em>reports</em></p>
 <p><em>rivt files</em> are generally edited and run in an IDE. The lightweight
@@ -486,7 +486,7 @@ rv212-filename.py
 </section>
 <section id="api">
 <span id="rivt-api"></span><h2><strong>[3]</strong> API<a class="headerlink" href="#api" title="Link to this heading">#</a></h2>
-<p>The <em>rivt API</em> includes <a class="reference internal" href="rvD01-markup.html#api-functions"><span class="std std-ref">API functions</span></a>,
+<p>The <em>rivt API</em> includes <a class="reference internal" href="rvD01-markup.html#api-methods"><span class="std std-ref">API methods</span></a>,
 <a class="reference internal" href="rvD01-markup.html#markup"><span class="std std-ref">[3] Tags and Commands</span></a> and structured <a class="reference internal" href="#files-folders"><span class="std std-ref">folders and files</span></a>.</p>
 <p>The API and markup are designed to be:</p>
 <ul class="simple">
@@ -518,7 +518,7 @@ default settings. Settings may also be customized for specific needs.</p>
 </dl>
 </li>
 </ul>
-<p>The API functions are listed in the table below, where (rS) is a triple quoted
+<p>The API methods are listed in the table below, where (rS) is a triple quoted
 <a class="reference internal" href="rvG02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> argument.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -560,17 +560,18 @@ default settings. Settings may also be customized for specific needs.</p>
 </table>
 </div>
 <p>An API function starts in the first column and takes a triple quoted
-<a class="reference internal" href="rvG02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> argument containing a <a class="reference internal" href="rvG02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a> and
-<a class="reference internal" href="rvG02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a>. The first line of the <em>rivt string</em> is the header
-substring, followed by a <a class="reference internal" href="rvG02-terms.html#term-content-substring"><span class="xref std std-term">content substring</span></a> indented 4 spaces for
-improved readability and section folding.</p>
+<a class="reference internal" href="rvG02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> argument containing a <em>header and content substring</em>.
+The first line of the <em>rivt string</em> is the header substring,
+followed by a <a class="reference internal" href="rvG02-terms.html#term-content-substring"><span class="xref std std-term">content substring</span></a> with rivt markup and indented 4 spaces
+for readability and section folding.</p>
 <p>The <em>header substring</em> specifies the section title and other processing
-parameters. The content substring includes <a class="reference internal" href="rvG02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> and arbitrary
-text. For further details see <a class="reference internal" href="rvD01-markup.html"><span class="doc">here</span></a>.</p>
+parameters. The first parameter provides the option for a template file that
+that may be processed in the place of or in addition to the <em>content
+substring</em>. For further details see <a class="reference internal" href="rvD01-markup.html"><span class="doc">here</span></a>.</p>
 <p><strong>API Function Syntax</strong></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&quot;&quot;Section Label | parameters</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&quot;&quot;Section Label | template file | parameters</span>
 
-<span class="s2">     Content text that is</span>
+<span class="s2">     Content text with rivt markup -</span>
 <span class="s2">     indented four spaces.</span>
 
 <span class="s2">    ...</span>
@@ -592,7 +593,7 @@ functions and imports the <a class="reference internal" href="rvG02-terms.html#t
 and corresponding <em>rivt doc</em> has a prefix used for document organization. The
 top level folder structures are shown below. The difference in folder structure
 facilitates copying chapters from rivtbooks into report. A more detailed
-description of the folder structure is <a class="reference internal" href="rvC03-reports.html#id1"><span class="std std-ref">here</span></a>.</p>
+description of the folder structure is <a class="reference internal" href="rvC04-reports.html#id1"><span class="std std-ref">here</span></a>.</p>
 <blockquote>
 <div><p>&lt;p style=”border-width:2px; border-style:solid;
 border-color:#49b2c3;padding: 1em;”&gt;</p>
@@ -608,7 +609,7 @@ shown in brackets. Folders preceded by an underscore contain rivt outputs.
 Folders requiring author input are capitalized. &lt;br&gt; &lt;br&gt;</p>
 </div></blockquote>
 <p>The top level folder structure is shown below. A more detailed description of
-the folder structure is <a class="reference internal" href="rvC03-reports.html#rivt-report"><span class="std std-ref">here</span></a>.</p>
+the folder structure is <a class="reference internal" href="rvC04-reports.html#rivt-report"><span class="std std-ref">here</span></a>.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Top<span class="w"> </span>Level<span class="w"> </span>Folders
 
 Report<span class="w"> </span>Folders

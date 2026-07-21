@@ -21,7 +21,7 @@ Text doc  :download:`download link <_downloads/rv001-example01.txt>`.
         serves as an annotated example of a single rivt doc with multiple sections
         that is not part of a report.
         
-        The example illustrates the use of some of the most common API functions,
+        The example illustrates the use of some of the most common API methods,
         commands and tags. Further details are provided in the
         rivt user manual https://www.rivt.info .
         

@@ -207,32 +207,92 @@ Doc Types     text, PDF, HTML
  
 .. topic:: _[[METADATA]]
     
-    *Metadata* is written to the *rvAnn-apilog.py* file and is converted
-    internally to a Python dictionary rvmetaD with key name taken from the
-    label e.g. *docnameS* or *authorsD*.
+    Each keyword is required and is followed by an equal sign and a value. The
+    keywords are case insensitive.
 
     ..  code-block:: text
 
         Synatax - defaults:
-            _[[METADATA]] optional label
-            docname = ""
-            authors = "" 
-            version = 0.0.0
-            email = ""
-            repo = ""
-            license = https://opensource.org/license/mit
-            fork1 = author, version, email, repo
-            fork2 = author, version, email, repo
-            _[[END]]
+
+            _[[METADATA]] 
+            [doc]
+            ;-----------------------------------------
+            authors = --
+            version = --
+            repo = --
+            license = --
+            copyright = --
+            fork1_authors = --
+            fork1_version = --
+            fork1_repo = --
+            fork1_license = --
+            [layout]
+            ;----------------------- cover page and runner settings
+            ;--- add logo files to rvsrc/image folder, size is % page width
+            subtitle =  --
+            copyright = --
+            client =  --
+            coverpage = --
+            coverlogo_size = --
+            coverlogo = --
+            runninglogo = --
+            runninglabel = --
+            project_ref = --
+            ;------------------------ PDF settings
+            ;--- colors: red, blue, green, black, gray, brown, maroon, gray, olive, cyan
+            pdf_link_color = --
+            pdf_link_underline = --
+            pdf_pagesize = -- ; letter, legal, A4
+            pdf_margins = -- ; top, right, bottom, left
+            pdf_page = -- ; if true, start sections on new page 
+            ;----------------------- TOC levels
+            ;--- 1: include subdivisions   2: include subdivisions and sections
+            toc_level = --
+            [process]
+            ;-----------------------------------------
+            doc_verbose = true; if false minmize output during doc processing
+            auto_cfg = true ; if false, config files are not updated from rivt file
+            _[[END]]   
 
         Example:
-            _[[METADATA]]
-            docname = Bearing Pressures 
-            authors = rholland, rward
-            version = 0.1.1
-            email = rholland@email.com
-            repo = https://github.com/rivt-info/rivt-simple-doc
-            license = https://opensource.org/license/mit
+            _[[METADATA]] 
+            [doc]
+            ;-----------------------------------------
+            authors = R Holland
+            version = 1.0.0a17
+            repo = https://github.com/rivt-info/rivt-example-01
+            license = https://opensource.org/license/mit/
+            copyright = --
+            fork1_authors = --
+            fork1_version = --
+            fork1_repo = --
+            fork1_license = https://opensource.org/license/mit/
+            [layout]
+            ;----------------------- cover page and runner settings
+            ;--- add logo files to rvsrc/image folder, size is % page width
+            subtitle =  UDL Beam
+            copyright = --
+            client = user example
+            coverpage = true
+            coverlogo_size = 30
+            coverlogo = logo1.png
+            runninglogo = logo2.png
+            runninglabel = rivt
+            project_ref = proj. 0001
+            ;------------------------ PDF settings
+            ;--- colors: red, blue, green, black, gray, brown, maroon, gray, olive, cyan
+            pdf_link_color = brown
+            pdf_link_underline = false
+            pdf_pagesize = letter ; letter, legal, A4    
+            pdf_margins = 1in, 1in, 1in, 1in ; top, right, bottom, left
+            pdf_page = false ; if true, start sections on new page 
+            ;----------------------- TOC levels
+            ;--- 1: include subdivisions   2: include subdivisions and sections
+            toc_level = 2
+            [process]
+            ;-----------------------------------------
+            doc_verbose = true; if false minmize doc processing output
+            auto_cfg = true ; if false, config files are not updated from rivt file
             _[[END]]
 
 =========== ==========================

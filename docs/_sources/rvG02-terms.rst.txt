@@ -28,7 +28,7 @@
   rivt markup  
     A light weight markup that wraps restructuredText and outputs reports in
     text, PDF and HTML. Markup is included in string arguments to rivt 
-    API functions. 
+    API methods. 
 
   header
   headers

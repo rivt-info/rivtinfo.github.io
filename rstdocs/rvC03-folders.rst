@@ -1,10 +1,10 @@
-
-**C.5** Folders
+**C.3 |** Folders
+===============================================================================
 
 .. _rivt-folders:
 
 **[1]**  Report Folders
-----------------------------------------------------------------------------
+------------------------------------------------------------------------------
 
 A typical :term:`report folder` structure is shown below. The required 
 *rivt file* names and prefixes are shown in brackets.  For the

@@ -1,4 +1,4 @@
-**B.1 | Overview**
+**B.1 |** Overview
 =================================  
 
 .. _rivt-overview:
@@ -31,13 +31,13 @@ For further API details see :ref:`here <rivt-api>`.
 
 *rivtlib* is a Python library that compiles a *rivt file* to a text, PDF or HTML
 document. A *rivt file* is a Python file (.py) that imports the *rivtlib*
-Python package. The *rivtlib* package includes API functions that implement
+Python package. The *rivtlib* package includes API methods that implement
 *rivt markup*. *rivt* is an open source Python project built around the
 `rivtlib Python package <https://pypi.org/project/rivtlib/>`__ and
 `:ref:dependencies <vscode-settings>`. It publishes a formatted :term:`rivt
 doc` as a text, PDF or HTML file. from a :term:`rivt file` - a Python file
 (.py) that imports the :term:`rivtlib` Python package. *rivtlib* includes rivt
-API functions that implement :term:`rivt markup`.
+API methods that implement :term:`rivt markup`.
 
 Groups of *rivt files* may be compiled and linked into a single 
 :term:`rivt report`. Collections of *rivt files* with related subject matter 
@@ -120,7 +120,7 @@ the corresponding *doc numbers* in a report would be:
 **[3]** API
 ------------------------------------------------------------------------------- 
 
-The *rivt API* includes :ref:`API functions <API functions>`, 
+The *rivt API* includes :ref:`API methods <API methods>`, 
 :ref:`markup` and structured :ref:`folders and files <Files-folders>`.  
 
 The API and markup are designed to be:
@@ -144,7 +144,7 @@ The API and markup are designed to be:
     The file and folder settings produce clear, organized documents with 
     default settings. Settings may also be customized for specific needs.
 
-The API functions are listed in the table below, where (rS) is a triple quoted 
+The API methods are listed in the table below, where (rS) is a triple quoted 
 :term:`rivt string` argument.
 
 ================= =============== ================================================
@@ -160,22 +160,23 @@ API Function         Name             Purpose
 ================= =============== ================================================
 
 An API function starts in the first column and takes a triple quoted
-:term:`rivt string` argument containing a :term:`header substring` and
-:term:`rivt markup`. The first line of the *rivt string* is the header
-substring, followed by a :term:`content substring` indented 4 spaces for
-improved readability and section folding. 
+:term:`rivt string` argument containing a *header and content substring*.
+The first line of the *rivt string* is the header substring, 
+followed by a :term:`content substring` with rivt markup and indented 4 spaces 
+for readability and section folding. 
 
 The *header substring* specifies the section title and other processing
-parameters. The content substring includes :term:`rivt markup` and arbitrary
-text. For further details see :doc:`here <rvD01-markup>`.
+parameters. The first parameter provides the option for a template file that
+that may be processed in the place of or in addition to the *content
+substring*. For further details see :doc:`here <rvD01-markup>`.
 
 **API Function Syntax**
 
 .. code-block:: python
 
-    rv._(r"""Section Label | parameters
+    rv._(r"""Section Label | template file | parameters
 
-         Content text that is 
+         Content text with rivt markup -
          indented four spaces.
         
         ...

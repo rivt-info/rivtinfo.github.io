@@ -60,7 +60,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="D.5 | API Scopes" href="rvD02-apiscope.html" />
-    <link rel="prev" title="[1] Report Folders" href="rvC05-folders.html" />
+    <link rel="prev" title="C.5 | rivtbooks" href="rvC05-rivtbks.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -386,7 +386,7 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>D.1 | rivt Markup</strong></span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>D.1 |</strong> rivt Markup</span></li>
   </ul>
 </nav>
 </div>
@@ -404,10 +404,10 @@
                 <article class="bd-article">
                   
   <section id="d-1-rivt-markup">
-<h1><strong>D.1 | rivt Markup</strong><a class="headerlink" href="#d-1-rivt-markup" title="Link to this heading">#</a></h1>
-<section id="api-functions">
-<span id="id1"></span><h2><strong>[1]</strong> API functions<a class="headerlink" href="#api-functions" title="Link to this heading">#</a></h2>
-<p><em>rivt</em> has six API functions. The name <em>rivt</em> is an acronym taken from
+<h1><strong>D.1 |</strong> rivt Markup<a class="headerlink" href="#d-1-rivt-markup" title="Link to this heading">#</a></h1>
+<section id="api-methods">
+<span id="id1"></span><h2><strong>[1]</strong> API methods<a class="headerlink" href="#api-methods" title="Link to this heading">#</a></h2>
+<p><em>rivt</em> has six API methods. The name <em>rivt</em> is an acronym taken from
 four functions that process content. The remaining three functions are used for
 document generation and debugging.</p>
 <b>Content APIs</b>
@@ -462,15 +462,13 @@ document generation and debugging.</p>
 </tr>
 <tr class="row-odd"><td><p><strong>rv.S,X</strong> (rS)</p></td>
 <td><p>Skip, Exit</p></td>
-<td><p>Skip section, exit (comments and debugging)</p></td>
+<td><p>Skip section, exit (comments, debugging)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>API functions define doc sections. The available <em>rivt markup</em> commands and
-tags depend on the API funciton. If interactive IDEs are used, API functions
-can be processed individually using the standard notebook cell percent
-notation:</p>
+<p><em>API methods</em> define sections. If interactive IDEs are used rv.S and rv.X can
+be used for debugging and cell notation can be used for navigation.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %% optional label for navigation</span>
 <span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&quot;&quot;rivt string&quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
@@ -479,41 +477,49 @@ notation:</p>
 </section>
 <section id="rivt-string">
 <span id="id2"></span><h2><strong>[2]</strong> rivt string<a class="headerlink" href="#rivt-string" title="Link to this heading">#</a></h2>
-<p>Each <a class="reference internal" href="rvA01-start.html"><span class="doc">API function</span></a> takes a raw, triple quoted
-<a class="reference internal" href="rvG02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> composed of a <a class="reference internal" href="rvG02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a> line followed
-by a multiple-line <a class="reference internal" href="rvG02-terms.html#term-content-substring"><span class="xref std std-term">content substring</span></a>. The <em>header substring</em> defines
-section processing parameters.  The <em>content substring</em> includes
-<a class="reference internal" href="rvG02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> and is indented four spaces for improved readability
-and navigation (e.g. section folding).</p>
-<p id="header-substring"><strong>Header substring</strong></p>
-<p>The <a class="reference internal" href="rvG02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a> starts with a <em>section label</em>, used as the
-section title, followed by a vertical bar and three comma separated
-<em>section parameters</em> that override default behavior.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&quot;&quot;Section Label | doc;stored, private;public, section;merge</span>
+<p>Each <a class="reference internal" href="rvA01-start.html"><span class="doc">API function</span></a> takes a raw, triple quoted <a class="reference internal" href="rvG02-terms.html#term-rivt-string"><span class="xref std std-term">rivt
+string</span></a> composed of a <a class="reference internal" href="rvG02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a> on the first line followed by a
+multi-line <a class="reference internal" href="rvG02-terms.html#term-content-substring"><span class="xref std std-term">content substring</span></a>. The <em>header line</em> defines section
+processing parameters. The <em>content substring</em> includes <a class="reference internal" href="rvG02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> and
+is indented four spaces for improved readability and navigation (e.g. section
+folding). <em>rivt markup</em> commands and tags vary depending on the API function.</p>
+<p id="header-substring"><strong>Header line</strong></p>
+<p>The <a class="reference internal" href="rvG02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a> starts with a <em>section label</em>, also used as the
+section title, followed by <em>section parameters</em> that override default behavior.
+All parameters are optional and may be ommited if defaults are acceptable. If any
+parameters are specified the vertical bars bracketing the file name are required.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&quot;&quot;Section Label | file, type | private;public, doc;stored, section;merge, pdfpage;nopage</span>
 
-<span class="s2">     Content substring indented 4 spaces</span>
+<span class="s2">    Content substring indented 4 spaces</span>
 
 <span class="s2">    ...</span>
 
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The header parameters include the following comma separated values in any
-order:</p>
+<p><strong>The header parameters include the following file options:</strong></p>
 <dl class="simple">
-<dt><em>private/public</em></dt><dd><p>Determines whether the API section text is copied to the the <em>Public</em> folder
-<em>rivt file</em> for potentinal sharing. Actually sharing this folder is a
-separate step.</p>
+<dt><em>file</em></dt><dd><p>Specifies the file name for section content. If blank, the section is read
+from the content substring.</p>
 </dd>
+<dt><em>type</em></dt><dd><p>Speciifes the file type for the section content.</p>
+</dd>
+</dl>
+<p><strong>and the following section options in any order</strong></p>
+<dl class="simple">
 <dt><em>doc/stored</em></dt><dd><p>Determines whether the <em>rivt string</em> is formatted and printed in the doc,
 or just annotated in the doc and written to a file in the <em>Stored</em> folder
 for optional inclusion as an appendix.</p>
 </dd>
+<dt><em>private/public</em></dt><dd><p>Determines whether the API section text is copied to the the <em>Public</em> folder
+<em>rivt file</em> for potentinal sharing. Actually sharing this folder is a
+separate step.</p>
+</dd>
 <dt><em>section/merge</em></dt><dd><p>Determines whether the API starts a new <em>doc</em> section
 or is merged into the previous section.</p>
 </dd>
-<dt><em>script type</em></dt><dd><p>For the rv.R API only, the markup script type is specified
-in the header substring.</p>
+<dt><em>nopage/pdfpage</em></dt><dd><p>Starts a new pdf page. METADATA settings provide the option to start
+a new page for each section.</p>
 </dd>
 </dl>
 <p>Default settings in the <em>header substring</em> do not need to be specified. The
@@ -530,21 +536,21 @@ including it in the <em>comment settings</em> immediately following the
 </div>
 <p>Individual sections may be set back to private in the header substring after
 changing the default.</p>
-<p><strong>Header substring defaults</strong></p>
+<p><strong>Header line defaults</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>API</p></th>
 <th class="head"><p>private; public</p></th>
 <th class="head"><p>doc; stored</p></th>
 <th class="head"><p>section; merge</p></th>
-<th class="head"><p>pdfpage; nopage</p></th>
-<th class="head"><p>markup</p></th>
+<th class="head"><p>nopage;pdfpage</p></th>
+<th class="head"><p>type [1]</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>rv.R</p></td>
 <td><p><strong>private</strong></p></td>
-<td><p><strong>stored</strong></p></td>
+<td><p><strong>doc</strong></p></td>
 <td><p><strong>section</strong></p></td>
 <td><p><strong>nopage</strong></p></td>
 <td><p><strong>type</strong></p></td>
@@ -554,25 +560,25 @@ changing the default.</p>
 <td><p><strong>doc</strong></p></td>
 <td><p><strong>section</strong></p></td>
 <td><p><strong>nopage</strong></p></td>
-<td><p>NA</p></td>
+<td><p><strong>type</strong></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.V</p></td>
 <td><p><strong>private</strong></p></td>
 <td><p><strong>doc</strong></p></td>
 <td><p><strong>section</strong></p></td>
 <td><p><strong>nopage</strong></p></td>
-<td><p>NA</p></td>
+<td><p><strong>type</strong></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.T</p></td>
 <td><p><strong>private</strong></p></td>
-<td><p><strong>stored</strong></p></td>
-<td><p><strong>merge</strong> [1]</p></td>
+<td><p><strong>doc</strong></p></td>
+<td><p><strong>section</strong></p></td>
 <td><p><strong>nopage</strong></p></td>
-<td><p>NA</p></td>
+<td><p><strong>type</strong></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.D</p></td>
 <td><p><strong>private</strong></p></td>
-<td><p>stored only</p></td>
+<td><p>NA</p></td>
 <td><p>NA</p></td>
 <td><p>NA</p></td>
 <td><p>NA</p></td>
@@ -594,8 +600,8 @@ changing the default.</p>
 </tbody>
 </table>
 </div>
-<p>[1] Summary of tool execution added to prior section</p>
-<p>Examples of <em>header substring</em> settings are shown below.</p>
+<p>[1] See</p>
+<p>Examples of the <em>header</em> settings are shown below.</p>
 <ul class="simple">
 <li><p>An example with explicit defaults (they do not have to be declared).</p></li>
 </ul>
@@ -678,7 +684,7 @@ define, assign and compare values.</p>
 </pre></div>
 </div>
 <p>File paths are specified relative to the <em>rivt root folder</em>. The <em>rivt
-report</em> folder structure is described <a class="reference internal" href="rvC05-folders.html#rivt-folders"><span class="std std-ref">here</span></a>.</p>
+report</em> folder structure is described <a class="reference internal" href="rvC03-folders.html#rivt-folders"><span class="std std-ref">here</span></a>.</p>
 <p>If the path is ommitted the default path for each command is applied. If
 the <em>singledoc</em> parameter is set, the <em>resource files</em> and <em>docs</em> are
 stored in the <em>rivt root folder</em>.</p>
@@ -718,12 +724,12 @@ Description<br>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rvC05-folders.html"
+       href="rvC05-rivtbks.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>[1]</strong>  Report Folders</p>
+        <p class="prev-next-title"><strong>C.5 |</strong> rivtbooks</p>
       </div>
     </a>
     <a class="right-next"
@@ -754,7 +760,7 @@ Description<br>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api-functions"><strong>[1]</strong> API functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api-methods"><strong>[1]</strong> API methods</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-string"><strong>[2]</strong> rivt string</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tags-and-commands"><strong>[3]</strong> Tags and Commands</a></li>
 </ul>

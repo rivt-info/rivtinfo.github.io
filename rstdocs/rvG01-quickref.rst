@@ -7,7 +7,7 @@
 **[1]** API
 --------------------------------------------------------------------- 
 
-**API functions**
+**API methods**
 
 ================= =============== ================================================
 API Function         Name             Purpose
@@ -103,7 +103,6 @@ all                     **##** text                               nonprinting co
 
 **Format or run blocks of text or scripts**
 
-**Format or run blocks of text or scripts**
 
 ========== ========================================= ===============================
 API Scope         Block Tag                                Description 

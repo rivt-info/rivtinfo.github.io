@@ -36,7 +36,7 @@ example files, are provided on
 `Google Drive <https://drive.google.com/drive/u/1/folders/1NP04tdp3FRAir0ErvL2hlm3YBaFlLk5V>`_. 
 
 #. Example 1
-    An example file that illustrates common API functions and rivt
+    An example file that illustrates common API methods and rivt
     markup. The %% marks provide cell level navigation in a side pane of 
     VSCode and may be auto inserted with keystrokes when the *rivt profile* is 
     used.
@@ -131,7 +131,7 @@ the **| PUBLISH |** command.
             serves as an annotated example of a single rivt doc with multiple sections
             that is not part of a report.
 
-            The example illustrates the use of some of the most common API functions,
+            The example illustrates the use of some of the most common API methods,
             commands and tags. Further details are provided in the 
             _[U] rivt user manual, https://www.rivt.info |.
 
