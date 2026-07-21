@@ -74,12 +74,13 @@ Quarto           yes          yes        no     no        no           no       
 
 The primary use cases for *rivt* are: 
 
-#. producing reusable engineering documents that are easier to write, edit and 
-   format compared to LaTeX, Excel, or Word.
+#. producing reusable calculation documents that are easier to write, edit and 
+   format compared to LaTeX, Excel, Word or other general purpose document software.
 
 #. producing clear, organized documents that are simple to publish but not 
    necessarily formatted to standards of formal journal articles or books. 
 
+<<<<<<< HEAD
 #. producing documents with source files that need to be separated into public
    and private parts prior to sharing as open-source.
 
@@ -88,3 +89,11 @@ The primary use cases for *rivt* are:
 Specific examples include internal group documents, research documentation,
 government permits, technical reports, funding applications, teaching and
 homework, and turning static books into interactive documents.
+=======
+#. producing documents with source files that need to be partitioned into public
+   and private parts prior to sharing as open-source
+
+Specific examples include: internal communication, research documentation,
+government permits, technical reports, funding applications, teaching, 
+presentations, homework, and front or back ends for calculation software. 
+>>>>>>> df1a03859f323b01def400828bf4306e747c1e53

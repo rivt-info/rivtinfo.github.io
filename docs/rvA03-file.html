@@ -28,8 +28,8 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
@@ -38,10 +38,10 @@
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=5f316132" />
   
   <!-- So that users can add custom icons -->
-  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
 
     <script src="_static/jquery.js?v=5d32c60e"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
@@ -53,10 +53,11 @@
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'rvA03-file';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="A.4 | TEXT doc" href="rvA04-txt.html" />
@@ -64,20 +65,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="dark">
-
+  <body data-default-mode="dark">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
+  
+  
+  
   
   <dialog id="pst-search-dialog">
     
@@ -103,7 +110,7 @@
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
   <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
@@ -406,7 +413,8 @@
   <section id="a-3-rivt-example-file">
 <h1><strong>A.3 | rivt Example File</strong><a class="headerlink" href="#a-3-rivt-example-file" title="Link to this heading">#</a></h1>
 <div class="highlight-python notranslate" id="example-file"><div class="highlight"><pre><span></span><span class="ch">#! python3</span>
-<span class="sd">&quot;&quot;&quot; This is the complete rivt file example used in the tutorial.</span>
+<span class="sd">&quot;&quot;&quot; This is a rivt doc example.  It is used in the tutorial at</span>
+<span class="sd">https://www.rivt.info.</span>
 
 <span class="sd">This example illustrates:</span>
 
@@ -438,7 +446,7 @@
 <span class="c1"># rv private = true ; if false, default section heading changed to public (private)</span>
 
 <span class="c1"># %% rv.I(&quot;&quot;&quot;Summary and Loads</span>
-<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Summary and Loads</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&quot;&quot;Summary and Loads</span>
 
 <span class="s2">    This rivt file example calculates the maximum stress and deflection in a</span>
 <span class="s2">    simply supported, uniformly loaded beam using E-B theory _[#]. It also</span>
@@ -455,7 +463,7 @@
 <span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
 
 <span class="c1"># %% rv.I(&quot;&quot;&quot;Load Combinations</span>
-<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Load Combinations</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&quot;&quot;Load Combinations</span>
 
 <span class="s2">    ## Indented comments with double hashes will not appear in the doc</span>
 
@@ -473,7 +481,7 @@
 <span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
 
 <span class="c1"># %% rv.V(&quot;&quot;&quot;Loads and Geometry</span>
-<span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Loads and Geometry</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&quot;&quot;Loads and Geometry</span>
 
 <span class="s2">    Successive value definitions are formatted as a table. Variable values are</span>
 <span class="s2">    defined with the define operator. The line tag [T] labels and numbers the</span>
@@ -494,7 +502,7 @@
 <span class="s2">    folder. The description is the table title, followed by the max</span>
 <span class="s2">    column width.</span>
 
-<span class="s2">    | VALTABLE | rvsrc/data/beam1.csv | Beam Geometry, 40</span>
+<span class="s2">    | VALTABLE | rvsrc/vals/beam1.csv | Beam Geometry, 40</span>
 
 <span class="s2">    | IMAGE | rvsrc/img/beam1.png | Beam Diagram, 60, num, not</span>
 
@@ -507,7 +515,7 @@
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 
 <span class="c1"># %% rv.V(&quot;&quot;&quot;Beam Stress</span>
-<span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Beam Response</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&quot;&quot;Beam Response</span>
 
 <span class="s2">    The following lines import the beam geometry from an external file,</span>
 <span class="s2">    calculate section properties from imported functions and calculate</span>
@@ -536,7 +544,7 @@
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 
 <span class="c1"># %% rv.R(&quot;&quot;&quot;doc notes | endnotes</span>
-<span class="n">rv</span><span class="o">.</span><span class="n">R</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;doc notes | endnotes</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">T</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&quot;&quot;doc notes | endnotes</span>
 <span class="s2">    &quot;Euler–Bernoulli beam theory&quot;, Wikipedia, Wikimedia Foundation. [Online].</span>
 <span class="s2">    https://en.wikipedia.org/wiki/Euler_Bernoulli_beam_theory.</span>
 <span class="s2">    [Accessed: Jun. 15, 2026].</span>
@@ -545,9 +553,8 @@
 <span class="s2">    American Society of Civil Engineers, 2005.</span>
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 
-
 <span class="c1"># %% rv.D(&quot;&quot;&quot;Publish Doc</span>
-<span class="n">rv</span><span class="o">.</span><span class="n">D</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Publish Doc</span>
+<span class="n">rv</span><span class="o">.</span><span class="n">D</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&quot;&quot;Publish Doc</span>
 
 <span class="s2">    A rivt file may be published as a text, PDF or HTML doc by specifying the</span>
 <span class="s2">    PUBLISH type parameter as txt, pdf or html.</span>
@@ -557,42 +564,46 @@
 <span class="s2">    _rivt-public folders as a README.txt file. READMEs are formatted and</span>
 <span class="s2">    displayed on the first page of a GitHub repo.</span>
 
-<span class="s2">    | PUBLISH | Example 1 - rivt Doc | pdf</span>
+<span class="s2">    | PUBLISH | Example 1 - rivt Doc | txt</span>
 
 <span class="s2">    _[[METADATA]]</span>
+<span class="s2">    [process]</span>
+<span class="s2">    ;-----------------------------------------</span>
+<span class="s2">    doc_verbose = true; if false minmize output during doc processing</span>
+<span class="s2">    auto_cfg = true ; if false, config files are not updated from rivt file</span>
 <span class="s2">    [doc]</span>
+<span class="s2">    ;-----------------------------------------</span>
 <span class="s2">    authors = R Holland</span>
-<span class="s2">    version = 1.0.0a12</span>
-<span class="s2">    repo = https://github.com/rivt-info/rivt-single-doc</span>
+<span class="s2">    version = 1.0.0a13</span>
+<span class="s2">    repo = https://github.com/rivt-info/rivt-example-01</span>
 <span class="s2">    license = https://opensource.org/license/mit/</span>
-<span class="s2">    copyright = -</span>
-<span class="s2">    fork1_authors = -</span>
-<span class="s2">    fork1_version = -</span>
-<span class="s2">    fork1_repo = -</span>
+<span class="s2">    copyright = --</span>
+<span class="s2">    fork1_authors = --</span>
+<span class="s2">    fork1_version = --</span>
+<span class="s2">    fork1_repo = --</span>
 <span class="s2">    fork1_license = https://opensource.org/license/mit/</span>
-
 <span class="s2">    [layout]</span>
+<span class="s2">    ;----------------------- cover page and runner settings</span>
+<span class="s2">    ;--- add logo files to rvsrc/img folder, size is % page width</span>
 <span class="s2">    subtitle =  UDL Beam</span>
 <span class="s2">    copyright = --</span>
-<span class="s2">    client = Attn: User Example</span>
+<span class="s2">    client = user example</span>
 <span class="s2">    coverpage = true</span>
 <span class="s2">    coverlogo_size = 30</span>
 <span class="s2">    coverlogo = logo1.png</span>
 <span class="s2">    runninglogo = logo2.png</span>
 <span class="s2">    runninglabel = rivt</span>
 <span class="s2">    project_ref = proj. 0001</span>
+<span class="s2">    ;------------------------ PDF settings</span>
+<span class="s2">    ;--- colors: red, blue, green, black, gray, brown, maroon, gray, olive, cyan</span>
+<span class="s2">    ;--- margins: top, right, bottom, left    page size: letter, legal, A4</span>
+<span class="s2">    pdf_link_color = brown</span>
+<span class="s2">    pdf_link_underline = false</span>
 <span class="s2">    pdf_pagesize = letter</span>
 <span class="s2">    pdf_margins = 1in, 1in, 1in, 1in</span>
-<span class="s2">    pdf_link_underline = true</span>
-<span class="s2">    ; colors - red, blue, green, yellow, black, gray, brown</span>
-<span class="s2">    ; lightblue, magenta, lime, maroon, gray, olive, cyan</span>
-<span class="s2">    pdf_link_color = black</span>
-<span class="s2">    ; toc levels: 1 - includes subdivisions, 2 - also includes sections</span>
+<span class="s2">    ;----------------------- TOC levels</span>
+<span class="s2">    ;--- 1: include subdivisions   2: include subdivisions and sections</span>
 <span class="s2">    toc_level = 2</span>
-
-<span class="s2">    [process]</span>
-<span class="s2">    doc_verbose = true; if false minmize output during doc processing</span>
-<span class="s2">    auto_cfg = true ; if false, config files are not updated from rivt file</span>
 <span class="s2">    _[[END]]</span>
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
@@ -645,8 +656,8 @@
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">

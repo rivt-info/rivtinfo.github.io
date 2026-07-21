@@ -28,8 +28,8 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
@@ -38,10 +38,10 @@
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=5f316132" />
   
   <!-- So that users can add custom icons -->
-  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
 
     <script src="_static/jquery.js?v=5d32c60e"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
@@ -53,31 +53,38 @@
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'rvC01-documents';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="C.2 | rivt File" href="rvC02-files.html" />
+    <link rel="next" title="C.2 | rivt Files" href="rvC02-files.html" />
     <link rel="prev" title="B.3 | Frameworks" href="rvB03-framework.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="dark">
-
+  <body data-default-mode="dark">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
+  
+  
+  
   
   <dialog id="pst-search-dialog">
     
@@ -103,7 +110,7 @@
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
   <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
@@ -341,9 +348,9 @@
 <nav class="bd-docs-nav bd-links" aria-label="Docs">
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="rvC02-files.html"><strong>C.2 | rivt File</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC03-repfolder.html"><strong>C.3 | rivt Report</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvC04-rivtbks.html"><strong>C.4 | rivtbook</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC02-files.html"><strong>C.2 | rivt Files</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC03-reports.html"><strong>C.3 | Reports</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC04-rivtbks.html"><strong>C.4 | rivtbooks</strong></a></li>
 </ul>
 </div>
 </nav></div>
@@ -403,15 +410,18 @@
                   
   <section id="c-1-docs">
 <h1><strong>C.1 | Docs</strong><a class="headerlink" href="#c-1-docs" title="Link to this heading">#</a></h1>
-<section id="docs-reports-books">
-<h2><strong>[1]</strong> Docs-Reports-Books<a class="headerlink" href="#docs-reports-books" title="Link to this heading">#</a></h2>
-<p>A <em>rivt doc</em> is the output of a <em>rivt file</em> processed by <em>rivtlib</em>. Each <em>rivt
-file</em> outputs a formatted <a class="reference internal" href="rvG02-terms.html#term-doc"><span class="xref std std-term">doc</span></a> with a <em>doc number</em> derived from the rivt
-file name. The <em>doc</em> is written to the respective subfolder of the <em>_published</em>
-folder.</p>
-<p>Each <a class="reference internal" href="rvG02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> outputs a corresponding <a class="reference internal" href="rvG02-terms.html#term-doc"><span class="xref std std-term">doc</span></a> of the format
-specified in PUBLISH command of the <em>rv.D()</em> API. A rivt file number has the
-form:</p>
+<section id="docs">
+<h2><strong>[1]</strong> Docs<a class="headerlink" href="#docs" title="Link to this heading">#</a></h2>
+<p>A <em>rivt doc</em> is the output of a <em>rivt file</em> . <em>rivt files</em> and <em>docs</em> are the
+basic units of <em>rivt reports</em> and <em>rivtbooks</em> which are organized in folders
+for editing and assembly. <a class="reference internal" href="rvC03-reports.html#rivt-reports"><span class="std std-ref">rivt reports</span></a> are organized to
+simplify editing and document assembly. <a class="reference internal" href="rvC04-rivtbks.html#rivt-books"><span class="std std-ref">rivtbooks</span></a> are
+organized to select <em>rivt files</em> for inclusion in <em>reports</em>. <em>rivt files</em> in
+<em>rivtbooks</em> are referred to as <em>chapters</em>.</p>
+<p>Each <a class="reference internal" href="rvG02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> outputs a corresponding <a class="reference internal" href="rvG02-terms.html#term-doc"><span class="xref std std-term">doc</span></a> with a <em>doc number</em>
+derived from the rivt file name and a format specified in PUBLISH command of
+the <em>rv.D()</em> API. The <em>doc</em> is written to the respective subfolder of the
+<em>_published</em> folder. A rivt file number has the form:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rvAnn-filename.py
 </pre></div>
 </div>
@@ -1000,7 +1010,7 @@ rv212-filename.py
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>C.2 | rivt File</strong></p>
+        <p class="prev-next-title"><strong>C.2 | rivt Files</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1021,9 +1031,9 @@ rv212-filename.py
     class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Sections
   </div>
-  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docs-reports-books"><strong>[1]</strong> Docs-Reports-Books</a></li>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docs"><strong>[1]</strong> Docs</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration-file-py"><strong>[2]</strong> Configuration file (.py)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#style-file-yaml"><strong>[3]</strong> Style file (.yaml)</a></li>
 </ul>
@@ -1042,8 +1052,8 @@ rv212-filename.py
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">

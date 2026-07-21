@@ -28,8 +28,8 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
@@ -38,10 +38,10 @@
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=5f316132" />
   
   <!-- So that users can add custom icons -->
-  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
 
     <script src="_static/jquery.js?v=5d32c60e"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
@@ -53,10 +53,11 @@
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'rvB01-overview';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="B.2 | Motivations" href="rvB02-motivation.html" />
@@ -64,20 +65,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="dark">
-
+  <body data-default-mode="dark">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
+  
+  
+  
   
   <dialog id="pst-search-dialog">
     
@@ -103,7 +110,7 @@
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
   <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
@@ -404,12 +411,32 @@
 <h1><strong>B.1 | Overview</strong><a class="headerlink" href="#b-1-overview" title="Link to this heading">#</a></h1>
 <section id="summary">
 <span id="rivt-overview"></span><h2><strong>[1]</strong> Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
-<p><em>rivt</em> is an open source Python project built around the
-<a class="reference external" href="https://pypi.org/project/rivtlib/" rel="noreferrer" target="_blank">rivtlib Python package</a>
-and <cite>:ref:dependencies &lt;Project-requirements&gt;</cite>.  It publishes a formatted
-<a class="reference internal" href="rvG02-terms.html#term-rivt-doc"><span class="xref std std-term">rivt doc</span></a> as a text, PDF or HTML file. from a <a class="reference internal" href="rvG02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> -
-a Python file (.py) that imports the <a class="reference internal" href="rvG02-terms.html#term-rivtlib"><span class="xref std std-term">rivtlib</span></a> Python package. <em>rivtlib</em>
-includes rivt API functions that implement <a class="reference internal" href="rvG02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a>.</p>
+<p><em>rivt</em> was designed to facilitate the creation of engineering calculation
+documents from a wide variety of sources including external engineering
+programs, data files, Python scripts, image files and single purpose programs
+like Excel, Mermaid, Graphviz, and LaTeX. It accomplishes this using four API
+functions:</p>
+<p style="border-width:2px; border-style:solid;
+border-color:#49b2c3;padding: 1em;">
+
+<b>R():</b> Runs external binary programs <br>
+
+<b>I():</b> Inserts static sources e.g. images, text, and PDF files <br>
+
+<b>V():</b> Imports data and calculates values from equations and functions <br>
+
+<b>T():</b> Processes text and scripts, e.g. restructured text, Python, LateX. <br>
+
+<br> <br><p>For further API details see <a class="reference internal" href="#rivt-api"><span class="std std-ref">here</span></a>.</p>
+<p><em>rivtlib</em> is a Python library that compiles a <em>rivt file</em> to a text, PDF or HTML
+document. A <em>rivt file</em> is a Python file (.py) that imports the <em>rivtlib</em>
+Python package. The <em>rivtlib</em> package includes API functions that implement
+<em>rivt markup</em>. <em>rivt</em> is an open source Python project built around the
+<a class="reference external" href="https://pypi.org/project/rivtlib/" rel="noreferrer" target="_blank">rivtlib Python package</a> and
+<cite>:ref:dependencies &lt;vscode-settings&gt;</cite>. It publishes a formatted <a class="reference internal" href="rvG02-terms.html#term-rivt-doc"><span class="xref std std-term">rivt
+doc</span></a> as a text, PDF or HTML file. from a <a class="reference internal" href="rvG02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> - a Python file
+(.py) that imports the <a class="reference internal" href="rvG02-terms.html#term-rivtlib"><span class="xref std std-term">rivtlib</span></a> Python package. <em>rivtlib</em> includes rivt
+API functions that implement <a class="reference internal" href="rvG02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a>.</p>
 <p>Groups of <em>rivt files</em> may be compiled and linked into a single
 <a class="reference internal" href="rvG02-terms.html#term-rivt-report"><span class="xref std std-term">rivt report</span></a>. Collections of <em>rivt files</em> with related subject matter
 may be grouped together as a <a class="reference internal" href="rvC04-rivtbks.html#rivt-books"><span class="std std-ref">rivtbook</span></a>. <em>rivtbooks</em> are
@@ -548,7 +575,7 @@ improved readability and section folding.</p>
 parameters. The content substring includes <a class="reference internal" href="rvG02-terms.html#term-rivt-markup"><span class="xref std std-term">rivt markup</span></a> and arbitrary
 text. For further details see <a class="reference internal" href="rvD01-markup.html"><span class="doc">here</span></a>.</p>
 <p><strong>API Function Syntax</strong></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | parameters</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&quot;&quot;Section Label | parameters</span>
 
 <span class="s2">     Content text that is</span>
 <span class="s2">     indented four spaces.</span>
@@ -572,8 +599,26 @@ functions and imports the <a class="reference internal" href="rvG02-terms.html#t
 and corresponding <em>rivt doc</em> has a prefix used for document organization. The
 top level folder structures are shown below. The difference in folder structure
 facilitates copying chapters from rivtbooks into report. A more detailed
-description of the folder structure is <a class="reference internal" href="rvC03-repfolder.html#report-folders"><span class="std std-ref">here</span></a>.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Report<span class="w"> </span>Folder
+description of the folder structure is <a class="reference internal" href="rvC03-reports.html#id1"><span class="std std-ref">here</span></a>.</p>
+<blockquote>
+<div><p>&lt;p style=”border-width:2px; border-style:solid;
+border-color:#49b2c3;padding: 1em;”&gt;</p>
+<p>&lt;b&gt;Folder Names&lt;/b&gt;&lt;br&gt;
+&lt;br&gt;</p>
+<p>A report folder can contain any set of files and folders but the following
+structure is required for &lt;i&gt;doc&lt;/i&gt; processing. Files and folders are
+organized under a root folder with the prefix &lt;i&gt;rivt-&lt;/i&gt; e.g.
+&lt;i&gt;rivt-Report-Label&lt;/i&gt;. &lt;br&gt; &lt;br&gt;</p>
+<p>&lt;i&gt;report folders&lt;/i&gt; (root folders) include at least the &lt;i&gt;rivt files&lt;/i&gt;
+and the five required subfolders. Required folders and prefixes are
+shown in brackets. Folders preceded by an underscore contain rivt outputs.
+Folders requiring author input are capitalized. &lt;br&gt; &lt;br&gt;</p>
+</div></blockquote>
+<p>The top level folder structure is shown below. A more detailed description of
+the folder structure is <a class="reference internal" href="rvC03-reports.html#rivt-report"><span class="std std-ref">here</span></a>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Top<span class="w"> </span>Level<span class="w"> </span>Folders
+
+Report<span class="w"> </span>Folders
 
 <span class="o">[</span>rivt-<span class="o">]</span>Report-Label/<span class="w">           </span>Report<span class="w"> </span>Folder
 <span class="w">    </span>├──<span class="w"> </span>.help/<span class="w">                     </span><span class="nb">help</span><span class="w"> </span>files
@@ -597,7 +642,7 @@ description of the folder structure is <a class="reference internal" href="rvC03
 <span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv201-<span class="o">]</span>filename3.py<span class="w">        </span>rivt<span class="w"> </span>file
 <span class="w">        </span>...
 
-rivtbook<span class="w"> </span>Folder
+rivtbook<span class="w"> </span>Folders
 
 <span class="o">[</span>rivtbk-<span class="o">]</span>Book-Label/<span class="w">            </span>rivtbook<span class="w"> </span>folder
 <span class="w">    </span>├──<span class="w"> </span>.help/<span class="w">                      </span><span class="nb">help</span><span class="w"> </span>files
@@ -663,8 +708,8 @@ rivtbook<span class="w"> </span>Folder
     class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Sections
   </div>
-  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary"><strong>[1]</strong> Summary</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docs"><strong>[2]</strong> Docs</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api"><strong>[3]</strong> API</a></li>
@@ -685,8 +730,8 @@ rivtbook<span class="w"> </span>Folder
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">

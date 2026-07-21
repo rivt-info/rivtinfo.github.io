@@ -13,14 +13,13 @@ API Scope           Command                                                     
 ========== =============================================================== ========================
 rv.R        **| COPY |** abs src path | abs dest path | file pattern         :ref:`Copy file`
 rv.R        **| SHELL |** abs path | os, wait                                :ref:`Shell file`
-rv.I, V     **| TEXT |** rel path | type                                     :ref:`Text file`
-rv.I, V     **| TABLE |** rel path | title,width,head;nohead,num;non         :ref:`Table file`     
-rv.I, V     **| IMAGE |** rel path | caption, scale, num;non, time;not       :ref:`Image file`
-rv.I, V     **| IMAGE2 |** rel path1, rel path2 | c1,c2,s1,s2,n1,n2          :ref:`Adjacent images`
-rv.V        **| PYTHON |** rel path | rivt;namespace                         :ref:`Python file`
-rv.V        **| VALTABLE |** rel path | title, width, num;non                :ref:`Values file`   
+rv.I, V     **| TABLE |** file name | title,width,head;nohead,num;non        :ref:`Table file`     
+rv.I, V     **| IMAGE |** file name | caption, scale, num;non, time;not      :ref:`Image file`
+rv.I, V     **| IMAGE2 |** file1, file2 | c1,c2,s1,s2,n1,n2                  :ref:`Adjacent images`
+rv.V        **| VALTABLE |** file name | title, width, num;non               :ref:`Values file`
+rv.V        **| VALSTOR |** file name | title, width, num;non                :ref:`Values file`
 rv.V        **| FUNCTION |** function, arg, var, type | label                :ref:`Function value`  
-rv.D        **| ATTACHPDF |** rel path | front;back, title                   :ref:`Attach PDF`   
+rv.D        **| ATTACHPDF |** file name | front;back, title                  :ref:`Attach PDF`   
 rv.D        **| PUBLISH |** doc title | type                                 :ref:`Publish doc` 
 ========== =============================================================== ========================
 
@@ -37,7 +36,7 @@ See :ref:`here <report-folders>` for the folder structure.
 \| IMAGE2 |         **rivt-report/**           R
 \| TABLE |          **rivt-report/**           R
 \| VALTABLE |       **rivt-report/** [2,3]     R
-\| PYTHON |         **rivt-report/**           R
+\| VALSTOR |        **rivt-report/** [2,3]     R
 \| ATTACHPDF |      **rivt-report/**           R
 \| PUBLISH |        **_published/** [4]        W
 ================ =========================== ======
@@ -86,13 +85,14 @@ specifies formatting and syntax coloring.  Language types include:
 
 Inserts formatted text from file into doc. 
 
-- *literal*
-- *python*
-- *topic*
-- *bold*
-- *italic*
+    - *text*
+    - *python*
+    - *topic*
+    - *bold*
+    - *italic*
+    - *notes*
 
-The *literal* type inserts text into the *doc* without formatting. Paths are
+The *text* type inserts text into the *doc* without formatting. Paths are
 relative to the rivit-report the report root (rivt file folder). If the doc is
 a single doc the file is read from the rivt file folder.
 
@@ -101,9 +101,9 @@ a single doc the file is read from the rivt file folder.
     .. code-block:: text
 
         Syntax:
-            | MARKUP | relative path | type
+            | TEXT | relative path | type
         Example:
-            | MARKUP | rvsrc/quote.txt | literal
+            | TEXT | rvsrc/quote.txt | literal
 
 =========== =====================================
 API Scope     rv.I, rv.V

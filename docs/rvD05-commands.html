@@ -28,8 +28,8 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
@@ -38,10 +38,10 @@
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=5f316132" />
   
   <!-- So that users can add custom icons -->
-  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
 
     <script src="_static/jquery.js?v=5d32c60e"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
@@ -53,10 +53,11 @@
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'rvD05-commands';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="D.4 | Assignment" href="rvD06-assign.html" />
@@ -64,20 +65,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="dark">
-
+  <body data-default-mode="dark">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
+  
+  
+  
   
   <dialog id="pst-search-dialog">
     
@@ -103,7 +110,7 @@
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
   <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
@@ -428,38 +435,34 @@
 <td><p><a class="reference internal" href="#shell-file"><span class="std std-ref">[2] Shell file</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I, V</p></td>
-<td><p><strong>| TEXT |</strong> rel path | type</p></td>
-<td><p><a class="reference internal" href="#text-file"><span class="std std-ref">[3] Text file</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I, V</p></td>
-<td><p><strong>| TABLE |</strong> rel path | title,width,head;nohead,num;non</p></td>
+<td><p><strong>| TABLE |</strong> file name | title,width,head;nohead,num;non</p></td>
 <td><p><a class="reference internal" href="#table-file"><span class="std std-ref">[4] Table file</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.I, V</p></td>
-<td><p><strong>| IMAGE |</strong> rel path | caption, scale, num;non, time;not</p></td>
+<tr class="row-odd"><td><p>rv.I, V</p></td>
+<td><p><strong>| IMAGE |</strong> file name | caption, scale, num;non, time;not</p></td>
 <td><p><a class="reference internal" href="#image-file"><span class="std std-ref">[5] Image file</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.I, V</p></td>
-<td><p><strong>| IMAGE2 |</strong> rel path1, rel path2 | c1,c2,s1,s2,n1,n2</p></td>
+<tr class="row-even"><td><p>rv.I, V</p></td>
+<td><p><strong>| IMAGE2 |</strong> file1, file2 | c1,c2,s1,s2,n1,n2</p></td>
 <td><p><a class="reference internal" href="#adjacent-images"><span class="std std-ref">[6] Adjacent images</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.V</p></td>
-<td><p><strong>| PYTHON |</strong> rel path | rivt;namespace</p></td>
-<td><p><a class="reference internal" href="#python-file"><span class="std std-ref">[8] Python file</span></a></p></td>
-</tr>
 <tr class="row-odd"><td><p>rv.V</p></td>
-<td><p><strong>| VALTABLE |</strong> rel path | title, width, num;non</p></td>
+<td><p><strong>| VALTABLE |</strong> file name | title, width, num;non</p></td>
 <td><p><a class="reference internal" href="#values-file"><span class="std std-ref">[7]  Valtable file</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.V</p></td>
+<td><p><strong>| VALSTOR |</strong> file name | title, width, num;non</p></td>
+<td><p><a class="reference internal" href="#values-file"><span class="std std-ref">[7]  Valtable file</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.V</p></td>
 <td><p><strong>| FUNCTION |</strong> function, arg, var, type | label</p></td>
 <td><p><a class="reference internal" href="#function-value"><span class="std std-ref">[9] Function</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.D</p></td>
-<td><p><strong>| ATTACHPDF |</strong> rel path | front;back, title</p></td>
+<tr class="row-even"><td><p>rv.D</p></td>
+<td><p><strong>| ATTACHPDF |</strong> file name | front;back, title</p></td>
 <td><p><a class="reference internal" href="#attach-pdf"><span class="std std-ref">[11] Attach PDF</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.D</p></td>
+<tr class="row-odd"><td><p>rv.D</p></td>
 <td><p><strong>| PUBLISH |</strong> doc title | type</p></td>
 <td><p><a class="reference internal" href="#publish-doc"><span class="std std-ref">[12] Publish doc</span></a></p></td>
 </tr>
@@ -467,7 +470,7 @@
 </table>
 </div>
 <p><strong>Parent paths for commands</strong></p>
-<p>See <a class="reference internal" href="rvC03-repfolder.html#report-folders"><span class="std std-ref">here</span></a> for the folder structure.</p>
+<p>See <a class="reference internal" href="rvC03-reports.html#id1"><span class="std std-ref">here</span></a> for the folder structure.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Command</p></th>
@@ -500,8 +503,8 @@
 <td><p><strong>rivt-report/</strong> [2,3]</p></td>
 <td><p>R</p></td>
 </tr>
-<tr class="row-even"><td><p>| PYTHON |</p></td>
-<td><p><strong>rivt-report/</strong></p></td>
+<tr class="row-even"><td><p>| VALSTOR |</p></td>
+<td><p><strong>rivt-report/</strong> [2,3]</p></td>
 <td><p>R</p></td>
 </tr>
 <tr class="row-odd"><td><p>| ATTACHPDF |</p></td>
@@ -557,22 +560,25 @@ Example:
 <p>The TEXT command reads and formats text and code files. The language parameter
 specifies formatting and syntax coloring.  Language types include:</p>
 <p>Inserts formatted text from file into doc.</p>
-<ul class="simple">
-<li><p><em>literal</em></p></li>
+<blockquote>
+<div><ul class="simple">
+<li><p><em>text</em></p></li>
 <li><p><em>python</em></p></li>
 <li><p><em>topic</em></p></li>
 <li><p><em>bold</em></p></li>
 <li><p><em>italic</em></p></li>
+<li><p><em>notes</em></p></li>
 </ul>
-<p>The <em>literal</em> type inserts text into the <em>doc</em> without formatting. Paths are
+</div></blockquote>
+<p>The <em>text</em> type inserts text into the <em>doc</em> without formatting. Paths are
 relative to the rivit-report the report root (rivt file folder). If the doc is
 a single doc the file is read from the rivt file folder.</p>
 <aside class="topic">
 <p class="topic-title">| TEXT |</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    | MARKUP | relative path | type
+    | TEXT | relative path | type
 Example:
-    | MARKUP | rvsrc/quote.txt | literal
+    | TEXT | rvsrc/quote.txt | literal
 </pre></div>
 </div>
 </aside>
@@ -917,8 +923,8 @@ Example:
     class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Sections
   </div>
-  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#command-summary"><strong>[1]</strong> Command Summary</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shell-file"><strong>[2]</strong> Shell file</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-file"><strong>[3]</strong> Text file</a></li>
@@ -947,8 +953,8 @@ Example:
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">

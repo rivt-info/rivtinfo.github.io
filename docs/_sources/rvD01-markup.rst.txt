@@ -39,10 +39,10 @@ document generation and debugging.
 ================ =============== ================================================
 API Function         Name             Purpose
 ================ =============== ================================================
-**rv.R** (rS)         Run            Run scripts and markup
+**rv.R** (rS)         Run            Run external binary programs
 **rv.I** (rS)         Insert         Insert static sources 
 **rv.V** (rS)         Values         Calculate values
-**rv.T** (rS)         Tools          Shell scripts and external programs
+**rv.T** (rS)         Tools          Process text scripts
 **rv.D** (rS)         Doc            Publish docs 
 **rv.S,X** (rS)    Skip, Exit        Skip section, exit (comments and debugging)
 ================ =============== ================================================
@@ -55,7 +55,7 @@ notation:
 .. code-block:: python
 
     # %% optional label for navigation
-    rv._("""rivt string""")
+    rv._(r"""rivt string""")
 
 
 ------------------------------------------------
@@ -65,8 +65,8 @@ notation:
 **[2]** rivt string
 ----------------------------------
 
-Each :doc:`API function <rvA01-start>` takes a triple quoted :term:`rivt string` 
-argument composed of a :term:`header substring` line followed 
+Each :doc:`API function <rvA01-start>` takes a raw, triple quoted 
+:term:`rivt string` composed of a :term:`header substring` line followed 
 by a multiple-line :term:`content substring`. The *header substring* defines 
 section processing parameters.  The *content substring* includes  
 :term:`rivt markup` and is indented four spaces for improved readability 
@@ -82,7 +82,7 @@ section title, followed by a vertical bar and three comma separated
 
 .. code-block:: python
 
-    rv._("""Section Label | doc;stored, private;public, section;merge
+    rv._(r"""Section Label | doc;stored, private;public, section;merge
 
          Content substring indented 4 spaces
         
@@ -153,7 +153,7 @@ Examples of *header substring* settings are shown below.
 
     # This
     
-    rv.I("""A New Section | private, doc, section
+    rv.I(r"""A New Section | private, doc, section
 
         Content text
         ...
@@ -162,7 +162,7 @@ Examples of *header substring* settings are shown below.
     
     # is equivalent to:
 
-    rv.I("""A New Section  
+    rv.I(r"""A New Section  
 
         Content text
   
@@ -175,7 +175,7 @@ Examples of *header substring* settings are shown below.
 
 .. code-block:: python
 
-    rv.I("""A Merged Section | merge
+    rv.I(r"""A Merged Section | merge
 
         Content text
 
@@ -194,7 +194,7 @@ along with  text.
 
 .. code-block:: python
 
-    rv._("""Section Label  
+    rv._(r"""Section Label  
 
         Content text indented 4 spaces.
         ...
@@ -273,56 +273,6 @@ using the following format:
     </pre> 
     </p>
 
------------------------------------------------
-
-**[4]** Folders
----------------------------
-
-    <p style="border-width:2px; border-style:solid; 
-    border-color:#49b2c3;padding: 1em;">
-
-    <b>Folder Names</b><br>
-    <br>
-    
-    A report folder can contain any set of files and folders but the following
-    structure is required for <i>doc</i> processing. Files and folders are
-    organized under a root folder with the prefix <i>rivt-</i> e.g.
-    <i>rivt-Report-Label</i>. <br> <br>
-    
-    <i>report folders</i> (root folders) include at least the <i>rivt files</i> 
-    and the five required subfolders. Required folders and prefixes are 
-    shown in brackets. Folders preceded by an underscore contain rivt outputs. 
-    Folders requiring author input are capitalized. <br> <br>
-
-The top level folder structure is shown below. A more detailed description of
-the folder structure is :ref:`here<report-folders>`.
-
-**Top Level Folders** 
-
-.. code-block:: bash
-
-.. code-block:: bash
-
-      rivt-Report-Label/           Report Folder                
-        ├── .vscode/                  optional VSCode settings 
-        ├── rivt-public_/             rivt-generated public files
-            ├── rvsrc/                     source files
-            ├── README.txt                public text report or doc
-            ├── rv-101-filename1.py       public rivt file
-            ├── rv-102-filename2.py       public rivt file       
-            ├── rv-201-filename3.py       public rivt file          
-            ...
-        └── rivt-report/               rivt files and docs               
-            ├── _published/               published docs and reports
-            ├── _rstdocs/                 intermediate restructured text files               
-            ├── rv_stor/                  rivt generated stored files
-            ├── rvsrc/                    author source files
-            ├── rivt-report.py            report generating script
-            ├── rv101-filename1.py        rivt file
-            ├── rv102-filename2.py        rivt file       
-            ├── rv201-filename3.py        rivt file          
-            ...    
-        └── README.txt                 text report or doc  
 
 ------------------------------------
 

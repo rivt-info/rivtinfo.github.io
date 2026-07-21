@@ -1,6 +1,8 @@
 **A.5 | HTML doc**
 =========================   
 
+.. _html-doc:
+
 Click on HTML image to enlarge. 
 HTML doc :download:`download link <_downloads/rv001-example01-html.zip>`.
 

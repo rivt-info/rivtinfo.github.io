@@ -13,51 +13,12 @@ API Scope         Block Tag                                Description
 ========== ========================================= ===============================
 rv.R        **_[[WRITE]]** var name                   :ref:`Write block`
 rv.R        **_[[SHELL]]** os, *wait;nowait*          :ref:`Shell script`
-rv.I,V      **_[[TEXT]]** type                        :ref:`Text block`
 rv.I,V      **_[[TABLE]]** label                      :ref:`Table block`
+rv.I,V      **_[[ENDNOTES]]**                         :ref:`Endnotes block`
 rv.V        **_[[ARGS]]** arg dict name               :ref:`Arg block`
-rv.V        **_[[PYTHON]]** label                     :ref:`Python block`
 rv.D        **_[[METADATA]]** label                   :ref:`Meta block` 
 all         **_[[END]]**                              :ref:`End block`
 ========== ========================================= ===============================
-
-.. _Text block:
-
-**[2]** Text block
----------------------------------------
-
-.. topic:: _[[TEXT]] type
-    
-    Inserts formatted text into doc. 
-
-    - *literal*
-    - *python*
-    - *topic*
-    - *bold*
-    - *italic*
-
-    .. code-block:: text
-            
-        Syntax:    
-            _[[TEXT]] type
-            text
-            ...
-            _[[END]]
-
-        Example:    
-            _[[TEXT]] literal
-            This is a line of text.
-              This is another line indented.
-                 A third line. 
-            This text will be formatted as typed.
-            _[[END]]
-
-=========== ==========================
-API Scope     Insert, Values
-Doc Types     PDF, HTML
-=========== ==========================
-
------------------------------
 
 .. _Table block:
 
@@ -69,7 +30,7 @@ Doc Types     PDF, HTML
 .. topic:: _[[TABLE]] 
 
     Reads and formats restructured text table and writes contents
-    to csv file in the _stored/Vals folder.
+    to csv file in the _rvstor/data folder.
     .. code-block:: text 
 
             Syntax:
@@ -89,7 +50,7 @@ Doc Types     PDF, HTML
                 _[[END]]
 
 =========== ==========================
-API Scope     Insert
+API Scope     Insert, Values
 Doc Types     text, PDF, HTML
 =========== ==========================
 
@@ -128,42 +89,6 @@ Doc Types     text, PDF, HTML
 
 -----------------------
 
-.. _Python block:
-
-**[4]** Python block
----------------------------------------
-
-.. topic:: _[[PYTHON]] label
-        
-    Runs a Python script. Results are typically written to the default folder
-    rv_stor through an alias and then imported as needed using the TEXT 
-    or IMAGE command.
-
-    .. code-block:: text
-            
-        Syntax:    
-            _[[PYTHON]] label
-            code line 1
-            code line 2
-            ...
-            _[[END]]
-
-        Example:    
-            _[[PYTHON]] loop
-            str1 = ""
-            for i in range(10):
-                str1+="  " + str(i)
-            with open("rv_stor/numbers.txt", "w") as f1:
-                f1.write(str1)    
-            _[[END]]
-
-=========== ==========================
-API Scope     Values
-Doc Types     text, PDF, HTML
-=========== ==========================
-
------------------------
-
 
 .. _Write block:
 
@@ -189,7 +114,7 @@ Doc Types     text, PDF, HTML
                 _[[END]]
 
 =========== ==========================
-API Scope     Tools
+API Scope     Run
 Doc Types     text, PDF, HTML
 =========== ==========================
 
@@ -225,7 +150,7 @@ after execution.
             _[[END]]
 
 =========== ==========================
-API Scope     Tools
+API Scope     Run
 Doc Types     text, PDF, HTML
 =========== ==========================
 

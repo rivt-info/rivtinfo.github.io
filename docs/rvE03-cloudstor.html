@@ -28,8 +28,8 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
@@ -38,10 +38,10 @@
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=5f316132" />
   
   <!-- So that users can add custom icons -->
-  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
 
     <script src="_static/jquery.js?v=5d32c60e"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
@@ -53,10 +53,11 @@
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'rvE03-cloudstor';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="F.1 | AI" href="rvF01-aiintro.html" />
@@ -64,20 +65,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="dark">
-
+  <body data-default-mode="dark">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
+  
+  
+  
   
   <dialog id="pst-search-dialog">
     
@@ -103,7 +110,7 @@
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
   <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
@@ -235,6 +242,10 @@
     </div>
   
 
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="Sections">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
   
 </div>
 
@@ -401,6 +412,92 @@
                   
   <section id="e-3-cloud-storage">
 <h1><strong>E.3 | Cloud Storage</strong><a class="headerlink" href="#e-3-cloud-storage" title="Link to this heading">#</a></h1>
+<section id="general-considerations">
+<h2><strong>[1]</strong> General Considerations<a class="headerlink" href="#general-considerations" title="Link to this heading">#</a></h2>
+<p>A typical <em>rivt report folder</em> is about 50 to 100 MB in size, depending on the
+formats used and resources stored. Folders can be stored locally or in the
+cloud. The preferred storage location depends on the purpose.
+The simplest location is local storage. It does not require and internet
+connection.Other options include remote repositories and file based cloud
+storage.</p>
+</section>
+<hr class="docutils" />
+<section id="remote-repositories">
+<h2><strong>[2]</strong> Remote Repositories<a class="headerlink" href="#remote-repositories" title="Link to this heading">#</a></h2>
+<p>A remote repository stores a version of the rivt project files and version
+history hosted on a server or online network (like GitHub, GitLab, or
+Bitbucket) rather than on your local computer. It acts as a central hub for
+team collaboration and an off-site backup.</p>
+<p>GitHub is the repository for rivtlib and related code. See
+<a class="reference external" href="https://github.com/rivtlib-dev" rel="noreferrer" target="_blank">rivtlib.dev</a> and
+<cite>rivtlib.info &lt;https://github.com/rivtlib-info&gt;</cite>.</p>
+<p>Repositories usually include local files managed by a tool like which are synced to a cloud based
+host. The local files should not be stored on folders that are also synced to
+other file based cloud storage services. This leads to potential conflicts
+between the syncing services.</p>
+<p>One approach to avoid this conflict is to independently synchronize the local
+files to a file based cloud storage folder using a synchronization utility. File
+management tools like <em>git</em> only sync when invoked, not as a background process.</p>
+<p><em>GitHub</em> is a popular and widely used cloud and version control system
+based on the <a class="reference internal" href="rvG02-terms.html#term-Git"><span class="xref std std-term">Git</span></a> program that may be downloaded
+<a class="reference external" href="https://git-scm.com/" rel="noreferrer" target="_blank">here</a>. <cite>Git &lt;https://git-scm.com/&gt;</cite> is part of
+<em>rivt-code</em>. It is a free, open-source, distributed version control
+system designed to manage and track changes in files. It allows multiple people
+to work on the same project simultaneously without overwriting each other’s
+work. <em>GitHub</em> is a web-based platform for hosting, managing, and collaborating
+on code built around Git. It allows teams to work together efficiently on
+software projects and provides features like pull requests, issue tracking, and
+project management.</p>
+<p>Each <em>rivt folder</em> is typically stored in its own repository. Every user of
+GitHub has a personal account with essentially unlimited repositories.Free
+accounts provide for:</p>
+<ul class="simple">
+<li><p>Unlimited Repositories: You can create as many public and private
+repositories as you need.</p></li>
+<li><p>Unlimited Collaborators: There is no limit to the number of people you can
+work with on your repositories.</p></li>
+<li><p>Community Support: You have access to the GitHub Community Discussions for help.</p></li>
+<li><p>Core Services with Usage Limits: The free plan includes a certain amount of
+monthly usage for services:</p>
+<ul>
+<li><dl class="simple">
+<dt>GitHub Actions: 2,000 minutes per month for private repositories</dt><dd><p>(unlimited for public repositories).</p>
+</dd>
+</dl>
+</li>
+<li><p>GitHub Codespaces: 120 core hours and 15 GB of storage per month.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="file-based-cloud-storage">
+<h2><strong>[3]</strong> File Based Cloud Storage<a class="headerlink" href="#file-based-cloud-storage" title="Link to this heading">#</a></h2>
+<p>File base cloud storage is convenient for storing and sharing <em>rivt folders</em>.
+Public <em>rivt files</em> may be downloaded from
+<a class="reference external" href="https://www.openmodels.info" rel="noreferrer" target="_blank">Google Drive.</a></p>
+<p><strong>Summary of File Based Cloud Storage</strong></p>
+<ul class="simple">
+<li><p>Microsoft OneDrive: Best for Windows and Microsoft 365 users, featuring
+strong collaborative editing and deep OS integration.</p></li>
+<li><p>Google Drive: The go-to for Google Workspace users, offering seamless sharing
+and heavy-duty data workloads.</p></li>
+<li><p>iCloud: The standard choice for Apple device owners, syncing photos,
+documents, and backups across all iOS and macOS devices.</p></li>
+<li><p>Dropbox: Ideal for remote teams and general file synchronization across
+multiple platforms.</p></li>
+<li><p>pCloud: Highly rated for media storage and video streaming, offering unique
+lifetime payment plans.</p></li>
+<li><p>Proton Drive: Based in Switzerland, this is the top pick for a
+privacy-focused ecosystem with end-to-end encryption.</p></li>
+<li><p>IDrive: Comprehensive online backup that supports external hard drives and
+disaster recovery.</p></li>
+<li><p>Box: Geared toward enterprise businesses with advanced security, compliance
+tracking, and administrative controls.</p></li>
+<li><p>MEGA: A great option if you need a generous free tier or highly affordable
+massive storage capacities.</p></li>
+</ul>
+</section>
 </section>
 
 
@@ -438,6 +535,26 @@
             
             
               
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Sections
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-considerations"><strong>[1]</strong> General Considerations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#remote-repositories"><strong>[2]</strong> Remote Repositories</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#file-based-cloud-storage"><strong>[3]</strong> File Based Cloud Storage</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
             
           </div>
           <footer class="bd-footer-content">
@@ -449,8 +566,8 @@
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">

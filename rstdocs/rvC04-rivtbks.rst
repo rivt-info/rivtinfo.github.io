@@ -1,4 +1,4 @@
-**C.4 | rivtbook**
+**C.4 | rivtbooks**
 ============================================
 
 .. _rivt-books:
@@ -52,6 +52,63 @@ A typical :term:`rivtbook folder` structure is shown below. The required
 
 
 
+<<<<<<< HEAD
+=======
+**rivtbook Folders**
+
+.. code-block:: bash
+
+    [rivtbk-]Book-Label/             rivtbook report folder              
+        ├── .help/                        help files
+        ├── .vscode/                      optional VSCode settings   
+        ├── README.txt                    rivtbook as text
+        ├── [rivtbook-report]-1.py        rivtbook generating script                  
+        ├── [_pdfdocs]/                   rivtbook pdf report
+            ├── pdf auxiliary folders     
+            ├── report-title.pdf
+            ├── rv101-filename1.pdf             
+            ├── rv102-filename1.pdf             
+            ├── rv201-filename3.pdf
+        ├── [_rstdocs]/                   rst files
+            ├── _downloads/                    
+            ├── _static/                                                       
+            ├── rv101-filename1.rst            
+            ├── rv102-filename2.rst                          
+            ├── rv201-filename3.rst          
+                ...
+        └── [_rvstor]/                    rivt-generated source files
+            ├── [logs]/                          log and temp files
+                ├── rv101-log.txt
+                └── rv102-log.txt
+            ├── [sect]/                          sections stored and not printed                    
+                ├── rv202-5d.txt  
+                ├── rv103-4t.txt                         
+                └── rv301-2r.txt               
+            ├── [data]/                          rivt and script output files
+                ├── v101-2.csv
+                └── v102-3.csv         
+        ├── [bk1-]folder name              rivtbook chapter folder
+            ├── [rv001-]filename1.py          rivt file       
+            ├── [downloads]/                  files to download      
+                └── conc-vals.txt 
+            ├── [images]/                     page layout images              
+                ├── favicon.png    
+                ├── covlogo1.png    
+                ├── runlogo1.png
+                └── fig1.png
+            ├── [data]/                        tables 
+                ├── v101-2.csv                     
+                └── steel-vals.csv                                                 
+            ├── [scripts]/                     scripts and shell commands
+                ├── opensees.sh                     
+                └── calc1.py                              
+        ├── [bk2-]folder name             rivtbook chapter folder
+                ...        
+        └── [bk3-]folder name             rivtbook chapter folder
+                ...
+
+
+>>>>>>> df1a03859f323b01def400828bf4306e747c1e53
 **[3]** rivtbook Application
 ----------------------------------------------------------
  

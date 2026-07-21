@@ -6,13 +6,38 @@
 **[1]** Summary
 --------------------------------------------------------------------- 
 
+*rivt* was designed to facilitate the creation of engineering calculation
+documents from a wide variety of sources including external engineering
+programs, data files, Python scripts, image files and single purpose programs
+like Excel, Mermaid, Graphviz, and LaTeX. It accomplishes this using four API
+functions:
 
-*rivt* is an open source Python project built around the
-`rivtlib Python package <https://pypi.org/project/rivtlib/>`__
-and `:ref:dependencies <Project-requirements>`.  It publishes a formatted 
-:term:`rivt doc` as a text, PDF or HTML file. from a :term:`rivt file` - 
-a Python file (.py) that imports the :term:`rivtlib` Python package. *rivtlib* 
-includes rivt API functions that implement :term:`rivt markup`. 
+.. raw:: html
+
+    <p style="border-width:2px; border-style:solid; 
+    border-color:#49b2c3;padding: 1em;">
+
+    <b>R():</b> Runs external binary programs <br>
+
+    <b>I():</b> Inserts static sources e.g. images, text, and PDF files <br>
+
+    <b>V():</b> Imports data and calculates values from equations and functions <br>
+
+    <b>T():</b> Processes text and scripts, e.g. restructured text, Python, LateX. <br> 
+
+    <br> <br>
+
+For further API details see :ref:`here <rivt-api>`.
+
+*rivtlib* is a Python library that compiles a *rivt file* to a text, PDF or HTML
+document. A *rivt file* is a Python file (.py) that imports the *rivtlib*
+Python package. The *rivtlib* package includes API functions that implement
+*rivt markup*. *rivt* is an open source Python project built around the
+`rivtlib Python package <https://pypi.org/project/rivtlib/>`__ and
+`:ref:dependencies <vscode-settings>`. It publishes a formatted :term:`rivt
+doc` as a text, PDF or HTML file. from a :term:`rivt file` - a Python file
+(.py) that imports the :term:`rivtlib` Python package. *rivtlib* includes rivt
+API functions that implement :term:`rivt markup`.
 
 Groups of *rivt files* may be compiled and linked into a single 
 :term:`rivt report`. Collections of *rivt files* with related subject matter 
@@ -90,7 +115,7 @@ the corresponding *doc numbers* in a report would be:
 
 --------------------------------
 
-.. _rivt API:
+.. _rivt-api:
 
 **[3]** API
 ------------------------------------------------------------------------------- 
@@ -148,7 +173,7 @@ text. For further details see :doc:`here <rvD01-markup>`.
 
 .. code-block:: python
 
-    rv._("""Section Label | parameters
+    rv._(r"""Section Label | parameters
 
          Content text that is 
          indented four spaces.
@@ -179,9 +204,30 @@ top level folder structures are shown below. The difference in folder structure
 facilitates copying chapters from rivtbooks into report. A more detailed
 description of the folder structure is :ref:`here <report-folders>`.
 
+    <p style="border-width:2px; border-style:solid; 
+    border-color:#49b2c3;padding: 1em;">
+
+    <b>Folder Names</b><br>
+    <br>
+    
+    A report folder can contain any set of files and folders but the following
+    structure is required for <i>doc</i> processing. Files and folders are
+    organized under a root folder with the prefix <i>rivt-</i> e.g.
+    <i>rivt-Report-Label</i>. <br> <br>
+    
+    <i>report folders</i> (root folders) include at least the <i>rivt files</i> 
+    and the five required subfolders. Required folders and prefixes are 
+    shown in brackets. Folders preceded by an underscore contain rivt outputs. 
+    Folders requiring author input are capitalized. <br> <br>
+
+The top level folder structure is shown below. A more detailed description of
+the folder structure is :ref:`here<rivt-report>`.
+
 .. code-block:: bash
     
-    Report Folder
+    Top Level Folders
+
+    Report Folders
 
     [rivt-]Report-Label/           Report Folder                
         ├── .help/                     help files
@@ -205,7 +251,7 @@ description of the folder structure is :ref:`here <report-folders>`.
             ├── [rv201-]filename3.py        rivt file          
             ...    
 
-    rivtbook Folder
+    rivtbook Folders
 
     [rivtbk-]Book-Label/            rivtbook folder
         ├── .help/                      help files
@@ -218,6 +264,7 @@ description of the folder structure is :ref:`here <report-folders>`.
         ├── [rvbk102-]folder name       rivtbook folder        
         ├── [rvbk201-]folder name       rivtbook folder           
              ...            
+
 
 --------------------------------
 

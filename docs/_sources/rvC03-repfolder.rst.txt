@@ -85,7 +85,7 @@ A typical :term:`report folder` structure is shown below. The required
                     ├── favicon.png    
                     ├── covlogo1.png    
                     └── runlogo1.png                   
-                ├── [data]/                         tables    
+                ├── [vals]/                         tables    
                     └── steel-vals.csv                                                 
                 ├── [scripts]/                      scripts
                     └── bending.py    

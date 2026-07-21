@@ -1,6 +1,8 @@
 **A.4 | TEXT doc**
 =========================
 
+.. _text-doc:
+
 Text doc  :download:`download link <_downloads/rv001-example01.txt>`.
 
 .. code-block:: text

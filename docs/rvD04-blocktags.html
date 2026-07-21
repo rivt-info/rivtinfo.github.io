@@ -28,8 +28,8 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
@@ -38,10 +38,10 @@
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=5f316132" />
   
   <!-- So that users can add custom icons -->
-  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
 
     <script src="_static/jquery.js?v=5d32c60e"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
@@ -53,10 +53,11 @@
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'rvD04-blocktags';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="D.6 | Commands" href="rvD05-commands.html" />
@@ -64,20 +65,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="dark">
-
+  <body data-default-mode="dark">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
+  
+  
+  
   
   <dialog id="pst-search-dialog">
     
@@ -103,7 +110,7 @@
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
   <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
@@ -419,29 +426,21 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>rv.I,V</p></td>
-<td><p><strong>_[[TEXT]]</strong> type</p></td>
-<td><p><a class="reference internal" href="#text-block"><span class="std std-ref">[2] Text block</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I,V</p></td>
-<td><p><strong>_[[TABLE]]</strong> label</p></td>
-<td><p><a class="reference internal" href="#table-block"><span class="std std-ref">[3] Table Block</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p>rv.V</p></td>
-<td><p><strong>_[[ARGS]]</strong> arg dict name</p></td>
-<td><p><a class="reference internal" href="#arg-block"><span class="std std-ref">[4] Argument block</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.V</p></td>
-<td><p><strong>_[[PYTHON]]</strong> label</p></td>
-<td><p><a class="reference internal" href="#python-block"><span class="std std-ref">[4] Python block</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p>rv.T</p></td>
+<tr class="row-even"><td><p>rv.R</p></td>
 <td><p><strong>_[[WRITE]]</strong> var name</p></td>
 <td><p><a class="reference internal" href="#write-block"><span class="std std-ref">[5] Write</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>rv.T</p></td>
+<tr class="row-odd"><td><p>rv.R</p></td>
 <td><p><strong>_[[SHELL]]</strong> os, <em>wait;nowait</em></p></td>
 <td><p><a class="reference internal" href="#shell-script"><span class="std std-ref">[6] Shell script</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>rv.I,V</p></td>
+<td><p><strong>_[[TABLE]]</strong> label</p></td>
+<td><p><a class="reference internal" href="#table-block"><span class="std std-ref">[3] Table Block</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.V</p></td>
+<td><p><strong>_[[ARGS]]</strong> arg dict name</p></td>
+<td><p><a class="reference internal" href="#arg-block"><span class="std std-ref">[4] Argument block</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.D</p></td>
 <td><p><strong>_[[METADATA]]</strong> label</p></td>
@@ -455,49 +454,8 @@
 </table>
 </div>
 </section>
-<section id="text-block">
-<span id="id1"></span><h2><strong>[2]</strong> Text block<a class="headerlink" href="#text-block" title="Link to this heading">#</a></h2>
-<aside class="topic">
-<p class="topic-title">_[[TEXT]] type</p>
-<p>Inserts formatted text into doc.</p>
-<ul class="simple">
-<li><p><em>literal</em></p></li>
-<li><p><em>python</em></p></li>
-<li><p><em>topic</em></p></li>
-<li><p><em>bold</em></p></li>
-<li><p><em>italic</em></p></li>
-</ul>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    _[[TEXT]] type
-    text
-    ...
-    _[[END]]
-
-Example:
-    _[[TEXT]] literal
-    This is a line of text.
-      This is another line indented.
-         A third line.
-    This text will be formatted as typed.
-    _[[END]]
-</pre></div>
-</div>
-</aside>
-<div class="pst-scrollable-table-container"><table class="table">
-<tbody>
-<tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Insert, Values</p></td>
-</tr>
-<tr class="row-even"><td><p>Doc Types</p></td>
-<td><p>PDF, HTML</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<hr class="docutils" />
-</section>
 <section id="table-block">
-<span id="id2"></span><h2><strong>[3]</strong> Table Block<a class="headerlink" href="#table-block" title="Link to this heading">#</a></h2>
+<span id="id1"></span><h2><strong>[3]</strong> Table Block<a class="headerlink" href="#table-block" title="Link to this heading">#</a></h2>
 <aside class="topic">
 <p class="topic-title">_[[TABLE]]</p>
 <p>Reads and formats restructured text table and writes contents
@@ -571,7 +529,7 @@ Example:
 <hr class="docutils" />
 </section>
 <section id="python-block">
-<span id="id3"></span><h2><strong>[4]</strong> Python block<a class="headerlink" href="#python-block" title="Link to this heading">#</a></h2>
+<span id="id2"></span><h2><strong>[4]</strong> Python block<a class="headerlink" href="#python-block" title="Link to this heading">#</a></h2>
 <aside class="topic">
 <p class="topic-title">_[[PYTHON]] label</p>
 <p>Runs a Python script. Results are typically written to the default folder
@@ -641,7 +599,7 @@ Example:
 <hr class="docutils" />
 </section>
 <section id="shell-script">
-<span id="id4"></span><h2><strong>[6]</strong> Shell script<a class="headerlink" href="#shell-script" title="Link to this heading">#</a></h2>
+<span id="id3"></span><h2><strong>[6]</strong> Shell script<a class="headerlink" href="#shell-script" title="Link to this heading">#</a></h2>
 <p>Runs shell scripts that run external programs. The shell parameters include
 specifying the operating system, process control and terminal window control.
 The os parameter specifies the terminal type. The wait parameter specifies
@@ -723,7 +681,7 @@ Example:
 <hr class="docutils" />
 </section>
 <section id="end-block">
-<span id="id5"></span><h2><strong>[8]</strong> End block<a class="headerlink" href="#end-block" title="Link to this heading">#</a></h2>
+<span id="id4"></span><h2><strong>[8]</strong> End block<a class="headerlink" href="#end-block" title="Link to this heading">#</a></h2>
 <aside class="topic">
 <p class="topic-title">_[[END]]</p>
 <p>Terminates a block tag.</p>
@@ -794,10 +752,9 @@ Example:
     class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Sections
   </div>
-  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#block-tag-summary"><strong>[1]</strong> Block Tag Summary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-block"><strong>[2]</strong> Text block</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-block"><strong>[3]</strong> Table Block</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#argument-block"><strong>[4]</strong> Argument block</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-block"><strong>[4]</strong> Python block</a></li>
@@ -821,8 +778,8 @@ Example:
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
