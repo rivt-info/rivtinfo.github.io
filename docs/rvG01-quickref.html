@@ -28,8 +28,8 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
@@ -38,10 +38,10 @@
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=5f316132" />
   
   <!-- So that users can add custom icons -->
-  <script defer src="_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="_static/jquery.js?v=5d32c60e"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
@@ -53,11 +53,10 @@
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js?v=b8b12719"></script>
+    <script src="_static/togglebutton.js?v=1ae7504c"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'rvG01-quickref';</script>
-    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="G.2 | Terms" href="rvG02-terms.html" />
@@ -65,26 +64,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
-  
-    
-    <script src="_static/searchtools.js"></script>
-    <script src="_static/language_data.js"></script>
-    <script src="searchindex.js"></script>
-  
   </head>
-  <body data-default-mode="dark">
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="dark">
+
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
-
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-  
-  
-  
+
   
   <dialog id="pst-search-dialog">
     
@@ -110,7 +103,7 @@
 </div>
 
   
-    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
   <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
@@ -476,16 +469,16 @@ changing the default.</p>
 <th class="head"><p>doc; stored</p></th>
 <th class="head"><p>section; merge</p></th>
 <th class="head"><p>pdfpage; nopage</p></th>
-<th class="head"><p>markup</p></th>
+<th class="head"><p>other</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>rv.R</p></td>
 <td><p><strong>private</strong></p></td>
-<td><p><strong>stored</strong></p></td>
+<td><p><strong>doc</strong></p></td>
 <td><p><strong>section</strong></p></td>
 <td><p><strong>nopage</strong></p></td>
-<td><p><strong>type</strong></p></td>
+<td><p>NA</p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I</p></td>
 <td><p><strong>private</strong></p></td>
@@ -503,10 +496,10 @@ changing the default.</p>
 </tr>
 <tr class="row-odd"><td><p>rv.T</p></td>
 <td><p><strong>private</strong></p></td>
-<td><p><strong>stored</strong></p></td>
-<td><p><strong>merge</strong> [1]</p></td>
+<td><p>stored only</p></td>
+<td><p><strong>section</strong></p></td>
 <td><p><strong>nopage</strong></p></td>
-<td><p>NA</p></td>
+<td><p><strong>text type</strong></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.D</p></td>
 <td><p><strong>private</strong></p></td>
@@ -631,20 +624,12 @@ changing the default.</p>
 <td><p><a class="reference internal" href="rvD04-blocktags.html#shell-script"><span class="std std-ref">[6] Shell script</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I,V</p></td>
-<td><p><strong>_[[TEXT]]</strong> type</p></td>
-<td><p><span class="xref std std-ref">Text block</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I,V</p></td>
 <td><p><strong>_[[TABLE]]</strong> label</p></td>
 <td><p><a class="reference internal" href="rvD04-blocktags.html#table-block"><span class="std std-ref">[3] Table Block</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.V</p></td>
+<tr class="row-odd"><td><p>rv.V</p></td>
 <td><p><strong>_[[ARGS]]</strong> arg dict name</p></td>
 <td><p><a class="reference internal" href="rvD04-blocktags.html#arg-block"><span class="std std-ref">[4] Argument block</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.V</p></td>
-<td><p><strong>_[[PYTHON]]</strong> label</p></td>
-<td><p><a class="reference internal" href="rvD04-blocktags.html#python-block"><span class="std std-ref">[4] Python block</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.D</p></td>
 <td><p><strong>_[[METADATA]]</strong> label</p></td>
@@ -692,7 +677,7 @@ changing the default.</p>
 </section>
 <section id="commands">
 <span id="commands-list"></span><h2><strong>[5]</strong> Commands<a class="headerlink" href="#commands" title="Link to this heading">#</a></h2>
-<p><strong>Commands format files and equations</strong></p>
+<p><strong>Read and format files</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>API Scope</p></th>
@@ -701,40 +686,40 @@ changing the default.</p>
 </tr>
 </thead>
 <tbody>
+<tr class="row-even"><td><p>rv.R</p></td>
+<td><p><strong>| COPY |</strong> abs src path | abs dest path | file pattern</p></td>
+<td><p><a class="reference internal" href="rvD05-commands.html#copy-file"><span class="std std-ref">[10] Copy Files</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.R</p></td>
+<td><p><strong>| SHELL |</strong> abs path | os, wait</p></td>
+<td><p><a class="reference internal" href="rvD05-commands.html#shell-file"><span class="std std-ref">[2] Shell file</span></a></p></td>
+</tr>
 <tr class="row-even"><td><p>rv.I, V</p></td>
-<td><p><strong>| TABLE |</strong> rel path | title,width,head;nohead,num;non</p></td>
+<td><p><strong>| TABLE |</strong> file name | title,width,head;nohead,num;non</p></td>
 <td><p><a class="reference internal" href="rvD05-commands.html#table-file"><span class="std std-ref">[4] Table file</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I, V</p></td>
-<td><p><strong>| IMAGE |</strong> rel path | caption, scale, num;non, time;not</p></td>
+<td><p><strong>| IMAGE |</strong> file name | caption, scale, num;non, time;not</p></td>
 <td><p><a class="reference internal" href="rvD05-commands.html#image-file"><span class="std std-ref">[5] Image file</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I, V</p></td>
-<td><p><strong>| IMAGE2 |</strong> rel path1, rel path2 | c1,c2,s1,s2,n1,n2</p></td>
+<td><p><strong>| IMAGE2 |</strong> file1, file2 | c1,c2,s1,s2,n1,n2</p></td>
 <td><p><a class="reference internal" href="rvD05-commands.html#adjacent-images"><span class="std std-ref">[6] Adjacent images</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V</p></td>
-<td><p><strong>| PYTHON |</strong> rel path | rivt;namespace</p></td>
-<td><p><a class="reference internal" href="rvD05-commands.html#python-file"><span class="std std-ref">[8] Python file</span></a></p></td>
+<td><p><strong>| VALTABLE |</strong> file name | title, width, num;non</p></td>
+<td><p><a class="reference internal" href="rvD05-commands.html#values-file"><span class="std std-ref">[7]  Valtable file</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.V</p></td>
-<td><p><strong>| VALTABLE |</strong> rel path | title, width, num;non</p></td>
+<td><p><strong>| VALSTOR |</strong> file name | title, width, num;non</p></td>
 <td><p><a class="reference internal" href="rvD05-commands.html#values-file"><span class="std std-ref">[7]  Valtable file</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V</p></td>
 <td><p><strong>| FUNCTION |</strong> function, arg, var, type | label</p></td>
 <td><p><a class="reference internal" href="rvD05-commands.html#function-value"><span class="std std-ref">[9] Function</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.T</p></td>
-<td><p><strong>| COPY |</strong> abs src path | abs dest path | file pattern</p></td>
-<td><p><a class="reference internal" href="rvD05-commands.html#copy-file"><span class="std std-ref">[10] Copy Files</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.T</p></td>
-<td><p><strong>| SHELL |</strong> abs path | os, wait</p></td>
-<td><p><a class="reference internal" href="rvD05-commands.html#shell-file"><span class="std std-ref">[2] Shell file</span></a></p></td>
-</tr>
 <tr class="row-even"><td><p>rv.D</p></td>
-<td><p><strong>| ATTACHPDF |</strong> rel path | front;back, title</p></td>
+<td><p><strong>| ATTACHPDF |</strong> file name | front;back, title</p></td>
 <td><p><a class="reference internal" href="rvD05-commands.html#attach-pdf"><span class="std std-ref">[11] Attach PDF</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.D</p></td>
@@ -744,92 +729,61 @@ changing the default.</p>
 </tbody>
 </table>
 </div>
-<p><strong>Parent Paths for Commands</strong></p>
-<p>See <a class="reference internal" href="rvC03-reports.html#id1"><span class="std std-ref">here</span></a> for the folder structure.</p>
+<p><strong>Relative paths for commands</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Command</p></th>
-<th class="head"><p>Parent Path [1]</p></th>
+<th class="head"><p>Default Path [1]</p></th>
 <th class="head"><p>R/W</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>| SHELL |</p></td>
-<td><p><strong>rivt-report/</strong></p></td>
+<tr class="row-even"><td><p>| COPY |</p></td>
+<td><p>os root</p></td>
 <td><p>R</p></td>
 </tr>
-<tr class="row-odd"><td><p>| IMAGE |</p></td>
-<td><p><strong>rivt-report/</strong></p></td>
+<tr class="row-odd"><td><p>| SHELL |</p></td>
+<td><p>os root</p></td>
 <td><p>R</p></td>
 </tr>
-<tr class="row-even"><td><p>| IMAGE2 |</p></td>
-<td><p><strong>rivt-report/</strong></p></td>
+<tr class="row-even"><td><p>| IMAGE |</p></td>
+<td><p><strong>rivt-report/image</strong></p></td>
 <td><p>R</p></td>
 </tr>
-<tr class="row-odd"><td><p>| TABLE |</p></td>
-<td><p><strong>rivt-report/</strong></p></td>
+<tr class="row-odd"><td><p>| IMAGE2 |</p></td>
+<td><p><strong>rivt-report/image</strong></p></td>
 <td><p>R</p></td>
 </tr>
-<tr class="row-even"><td><p>| VALTABLE |</p></td>
-<td><p><strong>rivt-report/</strong>   [2]</p></td>
+<tr class="row-even"><td><p>| TABLE |</p></td>
+<td><p><strong>rivt-report/data</strong></p></td>
 <td><p>R</p></td>
 </tr>
 <tr class="row-odd"><td><p>| VALTABLE |</p></td>
-<td><p><strong>rivt-report/</strong>   [3]</p></td>
+<td><p><strong>rivt-report/data</strong></p></td>
 <td><p>R</p></td>
 </tr>
-<tr class="row-even"><td><p>| PYTHON |</p></td>
-<td><p><strong>rivt-report/</strong></p></td>
+<tr class="row-even"><td><p>| VALSTOR |</p></td>
+<td><p><strong>_rvstor/data</strong> [2]</p></td>
 <td><p>R</p></td>
 </tr>
-<tr class="row-odd"><td><p>| MARKUP |</p></td>
-<td><p><strong>rivt-report/</strong></p></td>
+<tr class="row-odd"><td><p>| ATTACHPDF |</p></td>
+<td><p><strong>rivt-report/image</strong></p></td>
 <td><p>R</p></td>
 </tr>
-<tr class="row-even"><td><p>| ATTACHPDF |</p></td>
-<td><p><strong>rivt-report/</strong></p></td>
-<td><p>R</p></td>
-</tr>
-<tr class="row-odd"><td><p>| PUBLISH |</p></td>
-<td><p><strong>/_published/</strong>   [4]</p></td>
+<tr class="row-even"><td><p>| PUBLISH |</p></td>
+<td><p><strong>rivt-report/_published/</strong> [3]</p></td>
 <td><p>W</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>[1} file paths begin with rvsrc/ and may include subdirectories
-[2] values are read from <em>rvsrc/</em> and its subdirectories
-[3] values written by <em>rivt</em> are read from <em>rv_stor/vals</em>
-[4] <em>docs</em> are written to subdirectories of <em>_published</em></p>
+<p>[1] The relative path is the absolute path to the <em>rivt-report</em> folder
+[2] values written by <em>rivt</em> are read from <em>rv_stor/vals</em>
+[3] <em>docs</em> are written to subdirectories of <em>_published</em></p>
 <hr class="docutils" />
 </section>
 <section id="rivt-report-folders">
 <span id="folders"></span><h2><strong>[5]</strong> rivt Report Folders<a class="headerlink" href="#rivt-report-folders" title="Link to this heading">#</a></h2>
-<p><strong>rivt Report Top Level Folders</strong></p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt-<span class="o">]</span>Report-Label/<span class="w">             </span>report<span class="w"> </span>folder
-<span class="w">    </span>├──<span class="w"> </span>.help/<span class="w">                      </span><span class="nb">help</span><span class="w"> </span>files
-<span class="w">    </span>├──<span class="w"> </span>.vscode/<span class="w">                    </span>optional<span class="w"> </span>VSCode<span class="w"> </span>settings
-<span class="w">    </span>├──<span class="w"> </span>README.txt<span class="w">                  </span>rivt-generated<span class="w"> </span>report
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>_rivt-public<span class="o">]</span>/<span class="w">                 </span>public<span class="w"> </span>subset<span class="w"> </span>of<span class="w"> </span>rivt<span class="w"> </span>files
-<span class="w">        </span>├──<span class="w"> </span>rv_stor/
-<span class="w">        </span>├──<span class="w"> </span>rvsrc/
-<span class="w">        </span>├──<span class="w"> </span>README.txt
-<span class="w">        </span>├──<span class="w"> </span>rv-101-filename1.py
-<span class="w">        </span>├──<span class="w"> </span>rv-102-filename2.py
-<span class="w">        </span>├──<span class="w"> </span>rv-201-filename3.py
-<span class="w">         </span>...
-<span class="w">    </span>└──<span class="w"> </span><span class="o">[</span>rivt-report<span class="o">]</span>/<span class="w">              </span>report<span class="w"> </span>folder
-<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>_published<span class="o">]</span>/<span class="w">               </span>published<span class="w"> </span>docs<span class="w"> </span>and<span class="w"> </span>reports
-<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>_rstdocs<span class="o">]</span>/<span class="w">                 </span>restructured<span class="w"> </span>text<span class="w"> </span>files
-<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv_stor<span class="o">]</span>/<span class="w">                  </span>rivt<span class="w"> </span>generated<span class="w"> </span><span class="nb">source</span><span class="w"> </span>files
-<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rvsrc<span class="o">]</span>/<span class="w">                    </span>author<span class="w"> </span>provided<span class="w"> </span><span class="nb">source</span><span class="w"> </span>files
-<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename1.py<span class="w">        </span>rivt<span class="w"> </span>file
-<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv102-<span class="o">]</span>filename2.py<span class="w">        </span>rivt<span class="w"> </span>file
-<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv201-<span class="o">]</span>filename3.py<span class="w">        </span>rivt<span class="w"> </span>file
-<span class="w">         </span>...
-</pre></div>
-</div>
-<p><strong>rivt Report Expanded Folders</strong></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt-<span class="o">]</span>Report-Label/<span class="w">             </span>report<span class="w"> </span>folder
 <span class="w">    </span>├──<span class="w"> </span>.help/<span class="w">                        </span><span class="nb">help</span><span class="w"> </span>files
 <span class="w">    </span>├──<span class="w"> </span>.vscode/<span class="w">                      </span>optional<span class="w"> </span>VSCode<span class="w"> </span>settings
@@ -906,21 +860,6 @@ changing the default.</p>
 </section>
 <section id="rivtbook-folders">
 <span id="rivtbook-folders2"></span><h2><strong>[6]</strong> rivtbook Folders<a class="headerlink" href="#rivtbook-folders" title="Link to this heading">#</a></h2>
-<p><strong>rivtbook Top Level Folders</strong></p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivtbk-<span class="o">]</span>Book-Label/<span class="w">            </span>rivtbook<span class="w"> </span>report<span class="w"> </span>folder
-<span class="w">    </span>├──<span class="w"> </span>.help/<span class="w">                      </span><span class="nb">help</span><span class="w"> </span>files
-<span class="w">    </span>├──<span class="w"> </span>.vscode/<span class="w">                    </span>optional<span class="w"> </span>VSCode<span class="w"> </span>settings
-<span class="w">    </span>├──<span class="w"> </span>README.txt<span class="w">                  </span>rivt-generated<span class="w"> </span>book<span class="w"> </span>as<span class="w"> </span>text
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>_rivtbk-public<span class="o">]</span>/<span class="w">           </span>public<span class="w"> </span>subset<span class="w"> </span>of<span class="w"> </span>rivt<span class="w"> </span>files
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>_rstdocs<span class="o">]</span>/<span class="w">                 </span>restructured<span class="w"> </span>text<span class="w"> </span>files
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>_pdfdocs<span class="o">]</span>/<span class="w">                 </span>PDF<span class="w"> </span>docs<span class="w"> </span>and<span class="w"> </span>report
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rvbk101-<span class="o">]</span>folder<span class="w"> </span>name<span class="w">       </span>rivtbook<span class="w"> </span>folder
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rvbk102-<span class="o">]</span>folder<span class="w"> </span>name<span class="w">       </span>rivtbook<span class="w"> </span>folder
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rvbk201-<span class="o">]</span>folder<span class="w"> </span>name<span class="w">       </span>rivtbook<span class="w"> </span>folder
-<span class="w">         </span>...
-</pre></div>
-</div>
-<p><strong>rivtbook Expanded Folders</strong></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivtbk-<span class="o">]</span>Book-Label/<span class="w">             </span>rivtbook<span class="w"> </span>report<span class="w"> </span>folder
 <span class="w">    </span>├──<span class="w"> </span>.help/<span class="w">                        </span><span class="nb">help</span><span class="w"> </span>files
 <span class="w">    </span>├──<span class="w"> </span>.vscode/<span class="w">                      </span>optional<span class="w"> </span>VSCode<span class="w"> </span>settings
@@ -1764,8 +1703,8 @@ should be included as part of a <em>report folder</em>. Settings that affect the
     class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Sections
   </div>
-  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="pst-show_toc_level nav section-nav flex-column">
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api"><strong>[1]</strong> API</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#line-tags"><strong>[2]</strong> Line Tags</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#block-tags"><strong>[3]</strong> Block Tags</a></li>
@@ -1792,8 +1731,8 @@ should be included as part of a <em>report folder</em>. Settings that affect the
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">

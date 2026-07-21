@@ -50,10 +50,6 @@ A typical :term:`rivtbook folder` structure is shown below. The required
     <a href="https://drive.google.com/drive/folders/1hwVOs0CVJqdZlTieV_Lt5bICbd3ywzWj?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto">openmodels.info</a>.
     <br> <br>
 
-
-
-<<<<<<< HEAD
-=======
 **rivtbook Folders**
 
 .. code-block:: bash
@@ -108,7 +104,6 @@ A typical :term:`rivtbook folder` structure is shown below. The required
                 ...
 
 
->>>>>>> df1a03859f323b01def400828bf4306e747c1e53
 **[3]** rivtbook Application
 ----------------------------------------------------------
  

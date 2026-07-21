@@ -61,7 +61,7 @@
 ---------------------------------
 
 
-**[3]** *rivt* design and development
+**[2]** How do I
 -------------------------------------------------------------------------------
 
 .. dropdown:: What is the *rivt* release schedule?
@@ -92,3 +92,35 @@
     - `QCAD <https://qcad.org/en/>`__ for diagramming
     - `Git <https://git-scm.com/>`__ for document sharing and version control
 
+---------------------------------
+
+**[3]** *rivt* development
+-------------------------------------------------------------------------------
+
+.. dropdown:: What is the *rivt* release schedule?
+
+    1.0.x bug releases are issued as needed.
+
+    1.x.0 minor releases are planned monthly following the release of version 1.0.0
+    
+    X.0.0. major releases will have backward compatiblity. See
+    `past releases <https://github.com/rivtlib-dev/rivtlib/releases>`_ and
+    `changelog <https://github.com/rivtlib-dev/rivtlib/blob/main/CHANGELOG.md>`_ .
+
+
+.. dropdown:: What are the programs and libraries used to build *rivt*?
+
+    The *rivt project* uses dozens of Python libraries 
+    (see :ref:`rivt-depend`):
+
+    - numpy, sympy and related scientific computing libraries
+    - docutils and related text processing libraries
+    - Reportlab, rst2pdf and related PDF generation libraries
+    - Sphinx, Pydata and related HTML libraries
+
+    The *rivt framework* uses the following open source and free programs:
+
+    - `VSCode <https://code.visualstudio.com/>`__ for editing
+    - `LaTeX <https://www.latex-project.org/>`__ for PDF generation
+    - `QCAD <https://qcad.org/en/>`__ for diagramming
+    - `Git <https://git-scm.com/>`__ for document sharing and version control

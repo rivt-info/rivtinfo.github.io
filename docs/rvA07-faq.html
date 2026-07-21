@@ -28,8 +28,8 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
@@ -38,10 +38,10 @@
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=5f316132" />
   
   <!-- So that users can add custom icons -->
-  <script defer src="_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="_static/jquery.js?v=5d32c60e"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
@@ -53,11 +53,10 @@
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js?v=b8b12719"></script>
+    <script src="_static/togglebutton.js?v=1ae7504c"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'rvA07-faq';</script>
-    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="B.1 | Overview" href="rvB01-overview.html" />
@@ -65,26 +64,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
-  
-    
-    <script src="_static/searchtools.js"></script>
-    <script src="_static/language_data.js"></script>
-    <script src="searchindex.js"></script>
-  
   </head>
-  <body data-default-mode="dark">
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="dark">
+
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
-
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-  
-  
-  
+
   
   <dialog id="pst-search-dialog">
     
@@ -110,7 +103,7 @@
 </div>
 
   
-    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
   <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
@@ -465,8 +458,40 @@ Public License Version 2.0 (GPLv2).</p>
 </div>
 </details></section>
 <hr class="docutils" />
-<section id="rivt-design-and-development">
-<h2><strong>[3]</strong> <em>rivt</em> design and development<a class="headerlink" href="#rivt-design-and-development" title="Link to this heading">#</a></h2>
+<section id="how-do-i">
+<h2><strong>[2]</strong> How do I<a class="headerlink" href="#how-do-i" title="Link to this heading">#</a></h2>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">What is the <em>rivt</em> release schedule?</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">1.0.x bug releases are issued as needed.</p>
+<p class="sd-card-text">1.x.0 minor releases are planned monthly following the release of version 1.0.0</p>
+<p class="sd-card-text">X.0.0. major releases will have backward compatiblity. See
+<a class="reference external" href="https://github.com/rivtlib-dev/rivtlib/releases" rel="noreferrer" target="_blank">past releases</a> and
+<a class="reference external" href="https://github.com/rivtlib-dev/rivtlib/blob/main/CHANGELOG.md" rel="noreferrer" target="_blank">changelog</a> .</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">What are the programs and libraries used to build <em>rivt</em>?</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The <em>rivt project</em> uses dozens of Python libraries
+(see <a class="reference internal" href="rvG01-quickref.html#rivt-depend"><span class="std std-ref">[8] rivt Python Dependencies</span></a>):</p>
+<ul class="simple">
+<li><p class="sd-card-text">numpy, sympy and related scientific computing libraries</p></li>
+<li><p class="sd-card-text">docutils and related text processing libraries</p></li>
+<li><p class="sd-card-text">Reportlab, rst2pdf and related PDF generation libraries</p></li>
+<li><p class="sd-card-text">Sphinx, Pydata and related HTML libraries</p></li>
+</ul>
+<p class="sd-card-text">The <em>rivt framework</em> uses the following open source and free programs:</p>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference external" href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">VSCode</a> for editing</p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://www.latex-project.org/" rel="noreferrer" target="_blank">LaTeX</a> for PDF generation</p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://qcad.org/en/" rel="noreferrer" target="_blank">QCAD</a> for diagramming</p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://git-scm.com/" rel="noreferrer" target="_blank">Git</a> for document sharing and version control</p></li>
+</ul>
+</div>
+</details></section>
+<hr class="docutils" />
+<section id="rivt-development">
+<h2><strong>[3]</strong> <em>rivt</em> development<a class="headerlink" href="#rivt-development" title="Link to this heading">#</a></h2>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">What is the <em>rivt</em> release schedule?</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -543,11 +568,12 @@ Public License Version 2.0 (GPLv2).</p>
     class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Sections
   </div>
-  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="pst-show_toc_level nav section-nav flex-column">
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contact"><strong>[1]</strong> Contact</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#licenses"><strong>[2]</strong> Licenses</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-design-and-development"><strong>[3]</strong> <em>rivt</em> design and development</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-i"><strong>[2]</strong> How do I</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-development"><strong>[3]</strong> <em>rivt</em> development</a></li>
 </ul>
   </nav></div>
 
@@ -564,8 +590,8 @@ Public License Version 2.0 (GPLv2).</p>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">

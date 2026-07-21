@@ -11,11 +11,11 @@ A typical :term:`report folder` structure is shown below. The required
 :term:`rivtbook folder` structure see :ref:`here <rivt-books>`.
 
 A report folder can contain any file or folder but the following structure is
-required for doc processing. report folders include at least
-the folders and files shown in brackets[] below. Folders with an underscore
-contain rivt generated files. Files and folders are organized under
-a rivt root folder with the prefix *rivt-* followed by the report
-label, e.g. rivt-Report-Label. 
+required for doc processing. *report folders* include at least the folders and
+files with prefixesshown in brackets[] below. Folders with an underscore
+contain rivt generated files. Files and folders are organized under a rivt root
+folder with the prefix *rivt-* followed by the report label, e.g.
+rivt-Report-Label.
 
 A new report folder is typically started by copying and editing a
 similar folder. rivt-folder examples can be downloaded at 
@@ -82,33 +82,28 @@ Reports are organized using the folllowing folders and subfolders.
             ├── [rvsrc]/                      author provided files and folders        
                 ├── [downloads]/                    files to download      
                     └── conc-vals.txt 
-                ├── [img]/                          page layout images              
+                ├── [image]/                          page layout images              
                     ├── favicon.png    
                     ├── covlogo1.png    
                     └── runlogo1.png                   
-                ├── [vals]/                         tables    
+                ├── [data]/                         tables    
                     └── steel-vals.csv                                                 
-                ├── [scripts]/                      scripts
-                    └── bending.py    
-                ├── tools/                          OS shell commands               
-                    └── opensees.sh                        
-                ├── fig1.png
-                └── fig2.jpg                  
-            ├── [rv_stor]/                    rivt-generated source files
-                ├── [logs]/                          log files
+                ├── [scripts]/                      scripts and shell coammands
+                    ├── bending.py    
+                    └── opensees.sh                                 
+            ├── [_rvstor]/                    rivt-generated files
+                ├── [logs]/                          log and temp files
                     ├── rv101-log.txt
                     └── rv102-log.txt
                 ├── [sect]/                          sections not printed                    
                     ├── rv202-5d.txt  
                     ├── rv103-4t.txt                         
                     └── rv301-2r.txt               
-                ├── [temp]/                          temp files
-                    └── rv101-label3.tex
-                ├── [vals]/                          values files
+                ├── [data]/
+                    ├── output.dat                   output files
                     ├── v101-2.csv
                     └── v102-3.csv         
-                ├── output.dat
-            ├── [_published]/                 rivt-published docs and reports
+            ├── [_published]/                  docs and reports
                 ├── [docs]/                          html docs
                     ├── html auxiliary folders    
                     ├── index.html
@@ -129,7 +124,7 @@ Reports are organized using the folllowing folders and subfolders.
                     ├── rv102-filename1.txt             
                     ├── rv201-filename3.txt 
                         ...
-            └── [_rstdocs]/                     rivt-generated rst files
+            └── [_rstdocs]/                     rst files
                 ├── _downloads/                    
                 ├── _static/                                                       
                 ├── rv101-filename1.rst            

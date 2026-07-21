@@ -221,7 +221,7 @@ description of the folder structure is :ref:`here <report-folders>`.
     Folders requiring author input are capitalized. <br> <br>
 
 The top level folder structure is shown below. A more detailed description of
-the folder structure is :ref:`here<rivt-report>`.
+the folder structure is :ref:`here <rivt-report>`.
 
 .. code-block:: bash
     

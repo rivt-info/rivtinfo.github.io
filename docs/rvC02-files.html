@@ -28,8 +28,8 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
@@ -38,10 +38,10 @@
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=5f316132" />
   
   <!-- So that users can add custom icons -->
-  <script defer src="_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="_static/jquery.js?v=5d32c60e"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
@@ -53,11 +53,10 @@
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js?v=b8b12719"></script>
+    <script src="_static/togglebutton.js?v=1ae7504c"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'rvC02-files';</script>
-    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="C.3 | Reports" href="rvC03-reports.html" />
@@ -65,26 +64,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
-  
-    
-    <script src="_static/searchtools.js"></script>
-    <script src="_static/language_data.js"></script>
-    <script src="searchindex.js"></script>
-  
   </head>
-  <body data-default-mode="dark">
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="dark">
+
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
-
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-  
-  
-  
+
   
   <dialog id="pst-search-dialog">
     
@@ -110,7 +103,7 @@
 </div>
 
   
-    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
   <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
@@ -351,6 +344,10 @@
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>C.2 | rivt Files</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC03-reports.html"><strong>C.3 | Reports</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="rvC04-rivtbks.html"><strong>C.4 | rivtbooks</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC05-folders.html"><strong>[1]</strong>  Report Folders</a></li>
+
+
+
 </ul>
 </div>
 </nav></div>
@@ -417,18 +414,18 @@
 <h2><strong>[1]</strong> File Types<a class="headerlink" href="#file-types" title="Link to this heading">#</a></h2>
 <p><strong>rivt file</strong></p>
 <p>A <em>rivt file</em> provides the formatting instructions and content that generate
-<em>rivt docs</em>. Each <em>rivt file</em> has a <em>doc number</em> prefix that specifies the
-division and subdivision of the <em>doc</em>. <em>rivt reports</em> are assembled using <em>doc
-numbers</em>. The <em>doc number</em> prefix includes a single digit capital alphanumeric
-division label <em>D</em>, followed by a two digit subdivision number <em>ss</em>. For
-example:</p>
+<em>rivt docs</em> or <em>chapters</em> in the context of a report. Each <em>rivt file</em> has a
+<em>doc number</em> prefix that specifies the division and subdivision of the <em>doc</em>.
+<em>rivt reports</em> are assembled using <em>doc numbers</em>. The <em>doc number</em> prefix
+includes a single digit capital alphanumeric division label <em>D</em>, followed by a
+two digit subdivision number <em>ss</em>. For example:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rvDss-<span class="o">]</span>file-name.py
 
 rvB02-Beam-Loads.py
 </pre></div>
 </div>
 <p><strong>Author provided source file inputs</strong></p>
-<p><em>rivt</em> reads and writes a variety of files including:</p>
+<p><em>rivt</em> reads and writes a variety of files through a command syntax including:</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>description</p></th>
@@ -454,21 +451,15 @@ rvB02-Beam-Loads.py
 </tbody>
 </table>
 </div>
-<p>Files for use in a <em>rivt doc</em> are stored in the <em>rvsrc</em> folder and any author
-created subfolders. File paths are give relative to the <em>rivt-report</em> folder.
-Files are read using <a class="reference internal" href="rvD05-commands.html#command-summary"><span class="std std-ref">rivt commands</span></a>. For example, to
-read and insert an image file in the author created subfolder <em>img</em> the command
-would be:</p>
-<blockquote>
-<div><div class="line-block">
-<div class="line">IMAGE | rvscr/img/filename.png | parameters</div>
+<p>Files for use in a <em>rivt doc</em> are read and written to default folders that may
+be changed by specifiying file paths relative to the <em>rivt file</em>. The</p>
+<div class="line-block">
+<div class="line">IMAGE | filename.png | parameters</div>
 </div>
-</div></blockquote>
-<p>Available commands and tags depend on the API function, summarized
-<a class="reference internal" href="rvG01-quickref.html#commands-list"><span class="std std-ref">here</span></a></p>
-<p><strong>Source files generated by rivtlib</strong></p>
-<p><em>rivt</em> also generates files that can be read by subsequent <em>rivt files</em>. These
-generated files are written to the <em>rv_stor</em> folder and subfolders and include:</p>
+<p><strong>Report files written by rivtlib</strong></p>
+<p><em>rivt</em> also generates and saves files that can be read by subsequent <em>rivt
+files</em>.  When generating reports these are written to <em>rv_stor</em> folder and
+subfolders and include:</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>description</p></th>
@@ -574,8 +565,8 @@ file</em> with an added hyphen between “rv” and the docnumber e.g.</p>
     class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Sections
   </div>
-  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="pst-show_toc_level nav section-nav flex-column">
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#file-types"><strong>[1]</strong> File Types</a></li>
 </ul>
   </nav></div>
@@ -593,8 +584,8 @@ file</em> with an added hyphen between “rv” and the docnumber e.g.</p>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">

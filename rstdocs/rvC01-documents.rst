@@ -597,9 +597,5 @@ The *rivtstyle.yaml* file contains default formats for PDF files.
 
     rvC02-files.rst
     rvC03-reports.rst
-<<<<<<< HEAD
     rvC04-rivtbks.rst
     rvC05-folders.rst    
-=======
-    rvC04-rivtbks.rst    
->>>>>>> df1a03859f323b01def400828bf4306e747c1e53

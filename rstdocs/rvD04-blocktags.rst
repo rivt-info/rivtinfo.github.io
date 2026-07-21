@@ -20,6 +20,48 @@ rv.D        **_[[METADATA]]** label                   :ref:`Meta block`
 all         **_[[END]]**                              :ref:`End block`
 ========== ========================================= ===============================
 
+
+.. _Endnotes block:
+
+**[2]** Endnotes Block
+------------------------------------------------
+
+.. topic:: _[[ENDNOTES]] 
+
+    Inserts endnotes at end of document. One block is used per document. 
+    
+    .. code-block:: text 
+
+            Syntax:
+                _[[ENDNOTES]] 
+                endnote 1
+
+                endnote 2
+
+                endnote 3
+                ...
+                _[[END]]  
+        
+            Example:
+                _[[ENDNOTES]] 
+                Timoshenko, Stephen P. (1983). History of strength of
+                materials: with a brief account of the history of theory of
+                elasticity and theory of structures. Dover Books on Physics.
+                Dover Publications.
+
+                Truesdell, C. (1960). The rational mechanics of flexible or
+                elastic bodies 1638–1788. Venditioni Exponunt Orell Fussli
+                Turici.
+                _[[END]]
+
+=========== ==========================
+API Scope     Insert, Values
+Doc Types     text, PDF, HTML
+=========== ==========================
+
+-----------------------
+
+
 .. _Table block:
 
 **[3]** Table Block

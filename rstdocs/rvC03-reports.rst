@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-**C.3 | rivt Report**
-============================================
-
-=======
 **C.3 | Reports**
 ============================================
 
@@ -137,7 +132,6 @@ Reports are organized using the folllowing folders and subfolders.
                 ├── rv201-filename3.rst          
                     ...
 
->>>>>>> df1a03859f323b01def400828bf4306e747c1e53
 
 .. _rivt-report:
 

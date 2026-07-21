@@ -110,10 +110,8 @@ API Scope         Block Tag                                Description
 ========== ========================================= ===============================
 rv.R        **_[[WRITE]]** var name                   :ref:`Write block`
 rv.R        **_[[SHELL]]** os, *wait;nowait*          :ref:`Shell script`
-rv.I,V      **_[[TEXT]]** type                        :ref:`Text block`
 rv.I,V      **_[[TABLE]]** label                      :ref:`Table block`
 rv.V        **_[[ARGS]]** arg dict name               :ref:`Arg block`
-rv.V        **_[[PYTHON]]** label                     :ref:`Python block`
 rv.D        **_[[METADATA]]** label                   :ref:`Meta block` 
 all         **_[[END]]**                              :ref:`End block`
 ========== ========================================= ===============================
@@ -186,34 +184,6 @@ rv.D        **| PUBLISH |** doc title | type                                 :re
 
 **[5]** rivt Report Folders
 ---------------------------------------------------------------------
-
-**rivt Report Top Level Folders** 
-
-.. code-block:: bash
-
-    [rivt-]Report-Label/             report folder
-        ├── .help/                      help files
-        ├── .vscode/                    optional VSCode settings   
-        ├── README.txt                  rivt-generated report                  
-        ├── [_rivt-public]/                 public subset of rivt files
-            ├── rv_stor/                    
-            ├── rvsrc/                        
-            ├── README.txt                              
-            ├── rv-101-filename1.py         
-            ├── rv-102-filename2.py                
-            ├── rv-201-filename3.py                          
-             ...
-        └── [rivt-report]/              report folder              
-            ├── [_published]/               published docs and reports
-            ├── [_rstdocs]/                 restructured text files               
-            ├── [rv_stor]/                  rivt generated source files
-            ├── [rvsrc]/                    author provided source files
-            ├── [rv101-]filename1.py        rivt file
-            ├── [rv102-]filename2.py        rivt file       
-            ├── [rv201-]filename3.py        rivt file          
-             ...    
-
-**rivt Report Expanded Folders**
 
 .. code-block:: bash
 
@@ -295,24 +265,6 @@ rv.D        **| PUBLISH |** doc title | type                                 :re
 
 **[6]** rivtbook Folders
 ---------------------------------------------------------------------
-
-**rivtbook Top Level Folders** 
-
-.. code-block:: bash
-
-    [rivtbk-]Book-Label/            rivtbook report folder
-        ├── .help/                      help files
-        ├── .vscode/                    optional VSCode settings   
-        ├── README.txt                  rivt-generated book as text
-        ├── [_rivtbk-public]/           public subset of rivt files           
-        ├── [_rstdocs]/                 restructured text files
-        ├── [_pdfdocs]/                 PDF docs and report         
-        ├── [rvbk101-]folder name       rivtbook folder
-        ├── [rvbk102-]folder name       rivtbook folder        
-        ├── [rvbk201-]folder name       rivtbook folder           
-             ...    
-
-**rivtbook Expanded Folders**
 
 .. code-block:: bash
 

@@ -51,17 +51,17 @@ changing the default.
 
 **Header substring defaults**
 
-====== =================== =============== =================== ================== ===========
-API      private; public     doc; stored      section; merge     pdfpage; nopage    markup
-====== =================== =============== =================== ================== ===========
-rv.R    **private**         **stored**       **section**          **nopage**       **type**
+====== =================== =============== =================== ================== ================
+API      private; public     doc; stored      section; merge     pdfpage; nopage    other
+====== =================== =============== =================== ================== ================
+rv.R    **private**         **doc**          **section**          **nopage**         NA
 rv.I    **private**         **doc**          **section**          **nopage**         NA
 rv.V    **private**         **doc**          **section**          **nopage**         NA
-rv.T    **private**         **stored**       **merge** [1]        **nopage**         NA
+rv.T    **private**         stored only      **section**          **nopage**       **text type**
 rv.D    **private**         stored only          NA                  NA              NA
 rv.S         NA                 NA               NA                  NA              NA
 rv.X         NA                 NA               NA                  NA              NA
-====== =================== =============== =================== ================== ===========
+====== =================== =============== =================== ================== ================
 
 
 ----------------------------------
@@ -110,10 +110,8 @@ API Scope         Block Tag                                Description
 ========== ========================================= ===============================
 rv.R        **_[[WRITE]]** var name                   :ref:`Write block`
 rv.R        **_[[SHELL]]** os, *wait;nowait*          :ref:`Shell script`
-rv.I,V      **_[[TEXT]]** type                        :ref:`Text block`
 rv.I,V      **_[[TABLE]]** label                      :ref:`Table block`
 rv.V        **_[[ARGS]]** arg dict name               :ref:`Arg block`
-rv.V        **_[[PYTHON]]** label                     :ref:`Python block`
 rv.D        **_[[METADATA]]** label                   :ref:`Meta block` 
 all         **_[[END]]**                              :ref:`End block`
 ========== ========================================= ===============================
@@ -143,48 +141,42 @@ rv.V         a **<=** c | unit, decimal, text1, text2 | label                :re
 **[5]** Commands
 -------------------------------------
 
+**Read and format files**
 
-**Commands format files and equations**
-
-========== ================================================================ ========================
+========== =============================================================== ========================
 API Scope           Command                                                        Description
-========== ================================================================ ========================
-rv.I, V     **| TABLE |** rel path | title,width,head;nohead,num;non         :ref:`Table file`     
-rv.I, V     **| IMAGE |** rel path | caption, scale, num;non, time;not       :ref:`Image file`
-rv.I, V     **| IMAGE2 |** rel path1, rel path2 | c1,c2,s1,s2,n1,n2          :ref:`Adjacent images`
-rv.V        **| PYTHON |** rel path | rivt;namespace                         :ref:`Python file`
-rv.V        **| VALTABLE |** rel path | title, width, num;non                :ref:`Values file`   
+========== =============================================================== ========================
+rv.R        **| COPY |** abs src path | abs dest path | file pattern         :ref:`Copy file`
+rv.R        **| SHELL |** abs path | os, wait                                :ref:`Shell file`
+rv.I, V     **| TABLE |** file name | title,width,head;nohead,num;non        :ref:`Table file`     
+rv.I, V     **| IMAGE |** file name | caption, scale, num;non, time;not      :ref:`Image file`
+rv.I, V     **| IMAGE2 |** file1, file2 | c1,c2,s1,s2,n1,n2                  :ref:`Adjacent images`
+rv.V        **| VALTABLE |** file name | title, width, num;non               :ref:`Values file`
+rv.V        **| VALSTOR |** file name | title, width, num;non                :ref:`Values file`
 rv.V        **| FUNCTION |** function, arg, var, type | label                :ref:`Function value`  
-rv.T        **| COPY |** abs src path | abs dest path | file pattern         :ref:`Copy file`
-rv.T        **| SHELL |** abs path | os, wait                                :ref:`Shell file`
-rv.D        **| ATTACHPDF |** rel path | front;back, title                   :ref:`Attach PDF`   
+rv.D        **| ATTACHPDF |** file name | front;back, title                  :ref:`Attach PDF`   
 rv.D        **| PUBLISH |** doc title | type                                 :ref:`Publish doc` 
-========== ================================================================ ========================
+========== =============================================================== ========================
 
+**Relative paths for commands**
 
-**Parent Paths for Commands**
+================ ================================= ======
+   Command           Default Path [1]               R/W
+================ ================================= ======
+\| COPY |               os root                      R
+\| SHELL |              os root                      R
+\| IMAGE |          **rivt-report/image**            R
+\| IMAGE2 |         **rivt-report/image**            R
+\| TABLE |          **rivt-report/data**             R
+\| VALTABLE |       **rivt-report/data**             R
+\| VALSTOR |        **_rvstor/data** [2]             R
+\| ATTACHPDF |      **rivt-report/image**            R
+\| PUBLISH |      **rivt-report/_published/** [3]    W
+================ ================================= ======
 
-See :ref:`here <report-folders>` for the folder structure. 
-
-================ ========================= ======
-   Command           Parent Path [1]        R/W
-================ ========================= ======
-\| SHELL |          **rivt-report/**           R
-\| IMAGE |          **rivt-report/**           R
-\| IMAGE2 |         **rivt-report/**           R
-\| TABLE |          **rivt-report/**           R
-\| VALTABLE |       **rivt-report/**   [2]     R
-\| VALTABLE |       **rivt-report/**   [3]     R
-\| PYTHON |         **rivt-report/**           R
-\| MARKUP |         **rivt-report/**           R
-\| ATTACHPDF |      **rivt-report/**           R
-\| PUBLISH |        **/_published/**   [4]     W
-================ ========================= ======
-
-[1} file paths begin with rvsrc/ and may include subdirectories 
-[2] values are read from *rvsrc/* and its subdirectories
-[3] values written by *rivt* are read from *rv_stor/vals*  
-[4] *docs* are written to subdirectories of *_published*
+[1] The relative path is the absolute path to the *rivt-report* folder 
+[2] values written by *rivt* are read from *rv_stor/vals*  
+[3] *docs* are written to subdirectories of *_published*
 
 ----------------------------------
 
@@ -192,34 +184,6 @@ See :ref:`here <report-folders>` for the folder structure.
 
 **[5]** rivt Report Folders
 ---------------------------------------------------------------------
-
-**rivt Report Top Level Folders** 
-
-.. code-block:: bash
-
-    [rivt-]Report-Label/             report folder
-        ├── .help/                      help files
-        ├── .vscode/                    optional VSCode settings   
-        ├── README.txt                  rivt-generated report                  
-        ├── [_rivt-public]/                 public subset of rivt files
-            ├── rv_stor/                    
-            ├── rvsrc/                        
-            ├── README.txt                              
-            ├── rv-101-filename1.py         
-            ├── rv-102-filename2.py                
-            ├── rv-201-filename3.py                          
-             ...
-        └── [rivt-report]/              report folder              
-            ├── [_published]/               published docs and reports
-            ├── [_rstdocs]/                 restructured text files               
-            ├── [rv_stor]/                  rivt generated source files
-            ├── [rvsrc]/                    author provided source files
-            ├── [rv101-]filename1.py        rivt file
-            ├── [rv102-]filename2.py        rivt file       
-            ├── [rv201-]filename3.py        rivt file          
-             ...    
-
-**rivt Report Expanded Folders**
 
 .. code-block:: bash
 
@@ -301,24 +265,6 @@ See :ref:`here <report-folders>` for the folder structure.
 
 **[6]** rivtbook Folders
 ---------------------------------------------------------------------
-
-**rivtbook Top Level Folders** 
-
-.. code-block:: bash
-
-    [rivtbk-]Book-Label/            rivtbook report folder
-        ├── .help/                      help files
-        ├── .vscode/                    optional VSCode settings   
-        ├── README.txt                  rivt-generated book as text
-        ├── [_rivtbk-public]/           public subset of rivt files           
-        ├── [_rstdocs]/                 restructured text files
-        ├── [_pdfdocs]/                 PDF docs and report         
-        ├── [rvbk101-]folder name       rivtbook folder
-        ├── [rvbk102-]folder name       rivtbook folder        
-        ├── [rvbk201-]folder name       rivtbook folder           
-             ...    
-
-**rivtbook Expanded Folders**
 
 .. code-block:: bash
 
