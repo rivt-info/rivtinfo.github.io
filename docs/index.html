@@ -370,7 +370,7 @@ Home
 <a class="dark-light reference internal image-reference" href="_images/rivt-finalb.png"><img alt="rivt logo" class="dark-light" height="106" src="_images/rivt-finalb.png" width="133" />
 </a>
 </figure>
-<hr><p><em>rivt</em> is an extensible, open-source Python tool for writing engineering
+<hr><p><em>rivt</em> is an extensible, open-source program for writing and assembling
 calculation documents with a focus on reuse <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>. Python knowledge is not
 required but <em>rivt</em> capabilities can be extended with Python scripts that
 access scientific and engineering libraries.</p>
@@ -383,18 +383,17 @@ rivt file     | compiles to a text, PDF or HTML document.
               | A rivtbook is a collection of rivt files with
 rivtbook      | common subject matter and a folder structure
               | that makes it easy to select files with related
-              | resources for inclusion in docs and reports.
+              | resources for inclusion in documents and reports.
 
-              | A rivt doc is the published output of a
-rivt doc      | rivt file. A doc (or chapter) is an output file
-rivt chapter  | formatted as text, PDF or HTML. Each format is
-              | compiled from the same rivt file.
+              | A rivt doc is the published output of a rivt
+rivt doc or   | file. A doc (or chapter in the context of a
+chapter       | rivt report) is the output of a rivt file
+              | formatted as text, PDF or HTML.
 
-              | A rivt report is the published output
-              | of multiple docs collated into a single
-rivt report   | text, PDF or HTML file. Each doc is a
-              | chapter in a report. Chapters are
-              | grouped into divisions.
+              | A rivt report is the collated output of multiple
+              | docs into a single text file, PDF file or HTML site.
+rivt report   | Each doc is a chapter in a report. Chapters are
+              | grouped into divisions using file doc numbers.
 </pre></div>
 </div>
 <p>Examples of a <a class="reference internal" href="rvA03-file.html#example-file"><span class="std std-ref">rivt file</span></a> with its <a class="reference internal" href="rvA04-txt.html#text-doc"><span class="std std-ref">text</span></a>,
@@ -424,8 +423,8 @@ tools and their strengths relative to the objectives of <em>rivt</em> is <a clas
 <aside class="footnote brackets" id="id2" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
 <p>rivt includes the built-in capability to selectively export
-sections of a <em>rivt file</em> to a <em>public rivt file</em> for sharing
-and open-source reuse.</p>
+sections of a <em>rivt file</em> to a <em>public rivt report</em> for open-source
+reuse.</p>
 </aside>
 </aside>
 <hr>

@@ -18,7 +18,7 @@
 
    <hr>
 
-*rivt* is an extensible, open-source Python tool for writing engineering
+*rivt* is an extensible, open-source program for writing and assembling 
 calculation documents with a focus on reuse [1]_. Python knowledge is not
 required but *rivt* capabilities can be extended with Python scripts that
 access scientific and engineering libraries.
@@ -35,18 +35,17 @@ There are four types of rivt document files:
                     | A rivtbook is a collection of rivt files with
       rivtbook      | common subject matter and a folder structure
                     | that makes it easy to select files with related
-                    | resources for inclusion in docs and reports.
+                    | resources for inclusion in documents and reports.
 
-                    | A rivt doc is the published output of a
-      rivt doc      | rivt file. A doc (or chapter) is an output file 
-      rivt chapter  | formatted as text, PDF or HTML. Each format is 
-                    | compiled from the same rivt file. 
+                    | A rivt doc is the published output of a rivt
+      rivt doc or   | file. A doc (or chapter in the context of a  
+      chapter       | rivt report) is the output of a rivt file
+                    | formatted as text, PDF or HTML.  
 
-                    | A rivt report is the published output 
-                    | of multiple docs collated into a single 
-      rivt report   | text, PDF or HTML file. Each doc is a
-                    | chapter in a report. Chapters are
-                    | grouped into divisions.
+                    | A rivt report is the collated output of multiple
+                    | docs into a single text file, PDF file or HTML site.
+      rivt report   | Each doc is a chapter in a report. Chapters are
+                    | grouped into divisions using file doc numbers. 
 
 
 Examples of a :ref:`rivt file <example-file>` with its :ref:`text <text-doc>`,
@@ -79,8 +78,8 @@ tools and their strengths relative to the objectives of *rivt* is :ref:`here
 <motivation>`.
 
 .. [1] rivt includes the built-in capability to selectively export 
-    sections of a *rivt file* to a *public rivt file* for sharing 
-    and open-source reuse.
+    sections of a *rivt file* to a *public rivt report* for open-source 
+    reuse.
 
 .. raw:: html
 
