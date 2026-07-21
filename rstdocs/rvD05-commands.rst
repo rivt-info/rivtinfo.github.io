@@ -6,7 +6,7 @@
 **[1]** Command Summary
 -------------------------------------
 
-**Commands read and format files**
+**Read and format files**
 
 ========== =============================================================== ========================
 API Scope           Command                                                        Description
@@ -23,28 +23,27 @@ rv.D        **| ATTACHPDF |** file name | front;back, title                  :re
 rv.D        **| PUBLISH |** doc title | type                                 :ref:`Publish doc` 
 ========== =============================================================== ========================
 
-**Parent paths for commands**
+**Relative paths for commands**
 
-See :ref:`here <report-folders>` for the folder structure. 
+================ ================================= ======
+   Command           Default Path [1]               R/W
+================ ================================= ======
+\| COPY |               os root                      R
+\| SHELL |              os root                      R
+\| IMAGE |          **rivt-report/image**            R
+\| IMAGE2 |         **rivt-report/image**            R
+\| TABLE |          **rivt-report/data**             R
+\| VALTABLE |       **rivt-report/data**             R
+\| VALSTOR |        **_rvstor/data** [2]             R
+\| ATTACHPDF |      **rivt-report/image**            R
+\| PUBLISH |      **rivt-report/_published/** [3]    W
+================ ================================= ======
 
-================ =========================== ======
-   Command           Parent Path [1]          R/W
-================ =========================== ======
-\| COPY |               os root                R
-\| SHELL |              os root                R
-\| IMAGE |          **rivt-report/**           R
-\| IMAGE2 |         **rivt-report/**           R
-\| TABLE |          **rivt-report/**           R
-\| VALTABLE |       **rivt-report/** [2,3]     R
-\| VALSTOR |        **rivt-report/** [2,3]     R
-\| ATTACHPDF |      **rivt-report/**           R
-\| PUBLISH |        **_published/** [4]        W
-================ =========================== ======
+[1] The relative path is the absolute path to the *rivt-report* folder 
+[2] values written by *rivt* are read from *rv_stor/vals*  
+[3] *docs* are written to subdirectories of *_published*
 
-[1] relative file paths begin with *rvsrc/* 
-[2] author values are read from *rvsrc/* and subdirectories
-[3] values written by *rivt* are read from *rv_stor/vals*  
-[4] *docs* are written to subdirectories of *_published*
+See :ref:`here <report-folders>` for folders. 
 
 .. _Shell file:
 
