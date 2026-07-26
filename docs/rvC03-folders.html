@@ -457,19 +457,19 @@ Subfolders include <em>docs</em> (HTML), <em>pdfdocs</em> (PDF) and <em>txtdocs<
 <section id="default-folders">
 <span id="id1"></span><h2><strong>[3]</strong>  Default Folders<a class="headerlink" href="#default-folders" title="Link to this heading">#</a></h2>
 <p>Files are opened using default paths relative to the <em>rivt-report</em> folder for
-<em>reports</em> and the <em>specific chapter folder</em> for <em>rivtbooks</em>. They have the form:</p>
+<em>reports</em> and <em>doc folders</em> for <em>rivtbooks</em>. They have the form:</p>
 <div class="line-block">
 <div class="line">COMMAND | filename | parameters</div>
 </div>
 <p>For example, to read and insert an image file the command would be:</p>
 <div class="line-block">
-<div class="line">IMAGE | filename.png | parameters</div>
+<div class="line">IMAGE | image1.png | parameters</div>
 </div>
-<p>If a user specified file path is needed it needs to be specified relative to
-the <em>rivt-report</em> folder for <em>reports</em> and the <em>specific chapter folder</em> for
-<em>rivtbooks</em>. It needs to include at least one folder separator “/” in the path
-specification. See <a class="reference internal" href="rvD05-commands.html#command-summary"><span class="std std-ref">command summary</span></a> for further
-details.</p>
+<p>If a different file path is needed it needs to be specified relative to
+the <em>rivt-report</em> folder for <em>reports</em> and the <em>doc folder</em> for
+<em>rivtbooks</em>. A unique path is triggered by including at least one folder
+separator “/” in the path specification.</p>
+<p>See <a class="reference internal" href="rvD05-commands.html#command-summary"><span class="std std-ref">command summary</span></a> for further details.</p>
 <p><strong>Default Paths for Commands</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -515,17 +515,14 @@ details.</p>
 <td><p><strong>rvsrc/image</strong></p></td>
 <td><p><strong>image/</strong></p></td>
 </tr>
-<tr class="row-odd"><td><p>| PUBLISH |</p></td>
+<tr class="row-odd"><td><p>| PUBLISH | [1]</p></td>
 <td><p><strong>/_published/</strong></p></td>
 <td><p><strong>rivtbook/_published/</strong></p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>[1] file paths begin with rvsrc/ and may include subdirectories
-[2] values are read from <em>rvsrc/</em> and its subdirectories
-[3] values written by <em>rivt</em> are read from <em>rv_stor/vals</em>
-[4] <em>docs</em> are written to subdirectories of <em>_published</em></p>
+<p>[1] <em>docs</em> are written to subdirectories of <em>_published</em></p>
 </section>
 <section id="report-folder-structure">
 <span id="report-folders2"></span><h2><strong>[4]</strong>  Report Folder Structure<a class="headerlink" href="#report-folder-structure" title="Link to this heading">#</a></h2>

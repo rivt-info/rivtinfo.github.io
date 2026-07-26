@@ -68,25 +68,26 @@ Reports are organized using the folllowing folders and subfolders.
 ------------------------------------------------------------------------------
 
 Files are opened using default paths relative to the *rivt-report* folder for
-*reports* and the *specific chapter folder* for *rivtbooks*. They have the form:
+*reports* and *doc folders* for *rivtbooks*. They have the form:
 
 | COMMAND | filename | parameters
 
 For example, to read and insert an image file the command would be:
 
-| IMAGE | filename.png | parameters 
+| IMAGE | image1.png | parameters 
 
-If a user specified file path is needed it needs to be specified relative to
-the *rivt-report* folder for *reports* and the *specific chapter folder* for
-*rivtbooks*. It needs to include at least one folder separator "/" in the path
-specification. See :ref:`command summary <command-summary>` for further
-details.
+If a different file path is needed it needs to be specified relative to
+the *rivt-report* folder for *reports* and the *doc folder* for
+*rivtbooks*. A unique path is triggered by including at least one folder 
+separator "/" in the path specification. 
+
+See :ref:`command summary <command-summary>` for further details.
 
 **Default Paths for Commands**
 
-================ ========================= =============================
+================= ========================= =============================
     Command        Default Report Paths     Default rivtbook Paths  
-================ ========================= =============================
+================= ========================= =============================
 \| SHELL |          **rvsrc/script**         **script/**     
 \| IMAGE |          **rvsrc/image**          **image/** 
 \| IMAGE2 |         **rvsrc/image**          **image/**   
@@ -96,13 +97,10 @@ details.
 \| VALTABLE |       **rvsrc/data**           **data/**   
 \| VALDATA |        **_rvstor/data**         **_rvstor/** 
 \| ATTACHPDF |      **rvsrc/image**          **image/**  
-\| PUBLISH |        **/_published/**         **rivtbook/_published/**  
-================ ========================= =============================
+\| PUBLISH | [1]    **/_published/**         **rivtbook/_published/**  
+================= ========================= =============================
 
-[1] file paths begin with rvsrc/ and may include subdirectories 
-[2] values are read from *rvsrc/* and its subdirectories
-[3] values written by *rivt* are read from *rv_stor/vals*  
-[4] *docs* are written to subdirectories of *_published*
+[1] *docs* are written to subdirectories of *_published*
 
 
 .. _report-folders2:

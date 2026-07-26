@@ -23,45 +23,78 @@ API Function         Name             Purpose
 where **rS** is a *rivt string*. The first line of a *rivt string* (rS)
 is the :term:`header substring`.
 
-**Header substrings**
+**Header Defaults**
 
 .. code-block:: python
 
-    rv.I("""A New Section | private, doc, section
+    rv._(r"""Section Label 
 
-        Content text
+         Content text and rivt markup - indented four spaces.
+        
         ...
         
         """)
 
 
-The default privacy setting may be changed in the rivt file comment settings
-shown below
+**Header Modifications**
 
 .. code-block:: python
 
-    import rivtlib.rvapi as rv
+    rv._(r"""Section Label | shmpn | type | template or script file
 
-    # rv private = false ; default section parameter changed to public (true)
-    # rv no_tag = true ; API type is added to section number (true)
-    # rv set_width = true character width of text output (80
 
-Individual sections may be set back to private in the header substring after
-changing the default. 
+         Content text and rivt markup - indented four spaces. 
+         Content may be ommitted if a template file or script 
+         is specified.
+        
+        ...
+        
+        """)
 
-**Header substring defaults**
 
-====== =================== =============== =================== ================== ================
-API      private; public     doc; stored      section; merge     pdfpage; nopage    other
-====== =================== =============== =================== ================== ================
-rv.R    **private**         **doc**          **section**          **nopage**         NA
-rv.I    **private**         **doc**          **section**          **nopage**         NA
-rv.V    **private**         **doc**          **section**          **nopage**         NA
-rv.T    **private**         stored only      **section**          **nopage**       **text type**
-rv.D    **private**         stored only          NA                  NA              NA
-rv.S         NA                 NA               NA                  NA              NA
-rv.X         NA                 NA               NA                  NA              NA
-====== =================== =============== =================== ================== ================
+The first set of parameters in the *header substring* specify handling of the
+*content substring*. The second and third parameters specify a type and file or
+script that is processed by the API method before processing any *content*.
+
+**Parameters**
+
+Section parameters may be specified in any order or ommitted if defaults are
+acceptable. The default parameters are shown in the
+
+- s
+  stores the section content in *_rvstored/sect* as a *.rvt file.*
+
+- h
+  processes the section but suppresses the *doc* output.
+   
+- m
+  merges the section with the previous section.
+
+- p 
+  toggles the public/private status of the section. The rivt file default is
+  private unless overridden by a :ref:`comment settings <comment-settings>`
+
+- n 
+  Starts a new pdf page.
+
+**File and Type Settings**
+
+The second parameter specifies a template file or script that is processed by
+the API method before processing any *content*. The file is read from the
+rvsrc/data folder unless a relative path is specified. The file type is
+determined by the API method. The type setting for all
+API methods, except rv.T, is *rvt*. A *rvt* file type is a section content
+string stored as a file. It is written by the **s** parameter.
+
+For the rv.T method the type settings are:
+
+ #. **PYTHON** - run Python script
+ #. **python** - insert Python script
+ #. **text** - literal text
+ #. **rst** - reStructuredText
+ #. **html** - HTML markup
+ #. **mermaid** - Mermaid diagram (requires mermaid installation)
+ #. **latex** - LaTeX (requires LaTeX installation)
 
 
 ----------------------------------

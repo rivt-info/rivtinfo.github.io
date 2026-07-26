@@ -405,8 +405,7 @@
                   
   <section id="a-3-rivt-example-file">
 <h1><strong>A.3 |</strong> rivt Example File<a class="headerlink" href="#a-3-rivt-example-file" title="Link to this heading">#</a></h1>
-<div class="highlight-python notranslate" id="example-file"><div class="highlight"><pre><span></span><span class="ch">#! python3</span>
-<span class="sd">&quot;&quot;&quot; This is a rivt doc example.  It is used in the tutorial at</span>
+<div class="highlight-python notranslate" id="example-file"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot; This is a rivt doc example used in the tutorial at</span>
 <span class="sd">https://www.rivt.info.</span>
 
 <span class="sd">This example illustrates:</span>
@@ -421,7 +420,7 @@
 <span class="sd">    - Table blocks and commands</span>
 <span class="sd">    - Value table command</span>
 <span class="sd">    - Metadata and layout block</span>
-<span class="sd">    - Python function command</span>
+<span class="sd">    - Python function assignment</span>
 <span class="sd">    - Image command</span>
 <span class="sd">    - Publish command</span>
 
@@ -446,7 +445,7 @@
 <span class="s2">    serves as an annotated example of a single rivt doc with multiple sections</span>
 <span class="s2">    that is not part of a report.</span>
 
-<span class="s2">    The example illustrates the use of some of the most common API methods,</span>
+<span class="s2">    The example illustrates the use of some of the most common API functions,</span>
 <span class="s2">    commands and tags. Further details are provided in the</span>
 <span class="s2">    _[U] rivt user manual, https://www.rivt.info |.</span>
 
@@ -495,9 +494,9 @@
 <span class="s2">    folder. The description is the table title, followed by the max</span>
 <span class="s2">    column width.</span>
 
-<span class="s2">    | VALTABLE | rvsrc/vals/beam1.csv | Beam Geometry, 40</span>
+<span class="s2">    | VALTABLE | beam1.csv | Beam Geometry, 40</span>
 
-<span class="s2">    | IMAGE | rvsrc/img/beam1.png | Beam Diagram, 60, num, not</span>
+<span class="s2">    | IMAGE | beam1.png | Beam Diagram, 60, num, not</span>
 
 <span class="s2">    Uniform Distributed Loads _[C]</span>
 <span class="s2">    dl_1 &lt;=: 1.2 * (spc_1 * (D_1 + D_2 + D_3) + D_4) | k_ft, kN_m, 2 | Dead load [ASCE7-05 2.3.2]</span>
@@ -514,13 +513,13 @@
 <span class="s2">    calculate section properties from imported functions and calculate</span>
 <span class="s2">    the maximum moment, bending stress and mid-span deflection.</span>
 
-<span class="s2">    | PYTHON | rvsrc/scripts/sectprop.py | Beam functions</span>
+<span class="s2">    | PYTHON | sectprop.py | Beam functions</span>
 
 <span class="s2">    section_1 :=: rectsect(b_1, h_1) | in3, cm3, 2 | rectangle - S (sectprop.py)</span>
 
 <span class="s2">    inertia_1 :=: rectinertia(b_1, h_1) | in4, cm4, 1 | rectangle - I (sectprop.py)</span>
 
-<span class="s2">    | IMAGE2 | rvsrc/img/ss-beam2.png, rvsrc/img/ss-beam1.png | Moment diagram, Deflection diagram,46,54,num,num</span>
+<span class="s2">    | IMAGE2 | ss-beam2.png, ss-beam1.png | Moment diagram, Deflection diagram,46,54,num,num</span>
 
 <span class="s2">    Maximum bending stress formula _[B]</span>
 
@@ -534,19 +533,19 @@
 <span class="s2">    fb_1 &lt; Fb_1 | k_si, 2, OK, &gt;&gt;&gt; NOT OK | Stress ratio</span>
 
 <span class="s2">    delta_1 :=: midspan_delta(spn_1, omega_1, E_1, inertia_1) | inch, mm, 2 | mid-span deflection (sectprop.py)</span>
-<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 
-<span class="c1"># %% rv.R(&quot;&quot;&quot;doc notes | endnotes</span>
-<span class="n">rv</span><span class="o">.</span><span class="n">T</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&quot;&quot;doc notes | endnotes</span>
+<span class="s2">    _[[ENDNOTES]]</span>
 <span class="s2">    &quot;Euler–Bernoulli beam theory&quot;, Wikipedia, Wikimedia Foundation. [Online].</span>
 <span class="s2">    https://en.wikipedia.org/wiki/Euler_Bernoulli_beam_theory.</span>
 <span class="s2">    [Accessed: Jun. 15, 2026].</span>
 
 <span class="s2">    ASCE/SEI 7-05, Minimum Design Loads for Buildings and Other Structures,</span>
 <span class="s2">    American Society of Civil Engineers, 2005.</span>
+<span class="s2">    _[[END]]]</span>
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 
-<span class="c1"># %% rv.D(&quot;&quot;&quot;Publish Doc</span>
+
+<span class="c1"># %% rv.D(r&quot;&quot;&quot;Publish Doc</span>
 <span class="n">rv</span><span class="o">.</span><span class="n">D</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&quot;&quot;Publish Doc</span>
 
 <span class="s2">    A rivt file may be published as a text, PDF or HTML doc by specifying the</span>
@@ -557,17 +556,13 @@
 <span class="s2">    _rivt-public folders as a README.txt file. READMEs are formatted and</span>
 <span class="s2">    displayed on the first page of a GitHub repo.</span>
 
-<span class="s2">    | PUBLISH | Example 1 - rivt Doc | txt</span>
+<span class="s2">    | PUBLISH | Example 1 - rivt Doc | html</span>
 
 <span class="s2">    _[[METADATA]]</span>
-<span class="s2">    [process]</span>
-<span class="s2">    ;-----------------------------------------</span>
-<span class="s2">    doc_verbose = true; if false minmize output during doc processing</span>
-<span class="s2">    auto_cfg = true ; if false, config files are not updated from rivt file</span>
 <span class="s2">    [doc]</span>
 <span class="s2">    ;-----------------------------------------</span>
 <span class="s2">    authors = R Holland</span>
-<span class="s2">    version = 1.0.0a13</span>
+<span class="s2">    version = 1.0.0a17</span>
 <span class="s2">    repo = https://github.com/rivt-info/rivt-example-01</span>
 <span class="s2">    license = https://opensource.org/license/mit/</span>
 <span class="s2">    copyright = --</span>
@@ -589,14 +584,18 @@
 <span class="s2">    project_ref = proj. 0001</span>
 <span class="s2">    ;------------------------ PDF settings</span>
 <span class="s2">    ;--- colors: red, blue, green, black, gray, brown, maroon, gray, olive, cyan</span>
-<span class="s2">    ;--- margins: top, right, bottom, left    page size: letter, legal, A4</span>
 <span class="s2">    pdf_link_color = brown</span>
 <span class="s2">    pdf_link_underline = false</span>
-<span class="s2">    pdf_pagesize = letter</span>
-<span class="s2">    pdf_margins = 1in, 1in, 1in, 1in</span>
+<span class="s2">    pdf_pagesize = letter ; letter, legal, A4</span>
+<span class="s2">    pdf_margins = 1in, 1in, 1in, 1in ; top, right, bottom, left</span>
+<span class="s2">    pdf_page = false ; if true, start sections on new page</span>
 <span class="s2">    ;----------------------- TOC levels</span>
 <span class="s2">    ;--- 1: include subdivisions   2: include subdivisions and sections</span>
 <span class="s2">    toc_level = 2</span>
+<span class="s2">    [process]</span>
+<span class="s2">    ;-----------------------------------------</span>
+<span class="s2">    doc_verbose = true; if false minmize output during doc processing</span>
+<span class="s2">    auto_cfg = true ; if false, config files are not updated from rivt file</span>
 <span class="s2">    _[[END]]</span>
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>

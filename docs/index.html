@@ -371,60 +371,57 @@ Home
 </a>
 </figure>
 <hr><p><em>rivt</em> is an extensible, open-source program for writing and assembling
-calculation documents with a focus on reuse <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>. Python knowledge is not
-required but <em>rivt</em> capabilities can be extended with Python scripts that
-access scientific and engineering libraries.</p>
-<p>There are four types of rivt document files:</p>
+calculation documents with a focus on reuse <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>. It provides a markup language
+that facilitates conversion to live calculation documents from any PDF or text.
+Python knowledge is not required but <em>rivt</em> capabilities can be extended using
+Python scientific and engineering libraries and scripts.</p>
+<p>There are four types of rivt files:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>              | A rivt file is the basic input file that
 rivt file     | compiles to a text, PDF or HTML document.
               | It is a Python file (.py) that imports the
               | rivtlib Python package.
+
+              | A rivt doc is the published output of a rivt
+rivt doc      | file. A doc may be formatted as text, PDF
+              | or HTML from the same rivt file.
 
               | A rivtbook is a collection of rivt files with
 rivtbook      | common subject matter and a folder structure
               | that makes it easy to select files with related
               | resources for inclusion in documents and reports.
 
-              | A rivt doc is the published output of a rivt
-rivt doc or   | file. A doc (or chapter in the context of a
-chapter       | rivt report) is the output of a rivt file
-              | formatted as text, PDF or HTML.
-
               | A rivt report is the collated output of multiple
-              | docs into a single text file, PDF file or HTML site.
-rivt report   | Each doc is a chapter in a report. Chapters are
-              | grouped into divisions using file doc numbers.
+              | docs into a single text file, PDF file or HTML
+rivt report   | site. Docs are linked and grouped into divisions
+              | using doc file naming conventions.
 </pre></div>
 </div>
-<p>Examples of a <a class="reference internal" href="rvA03-file.html#example-file"><span class="std std-ref">rivt file</span></a> with its <a class="reference internal" href="rvA04-txt.html#text-doc"><span class="std std-ref">text</span></a>,
-<a class="reference internal" href="rvA06-pdf.html#pdf-doc"><span class="std std-ref">PDF</span></a>, and <a class="reference internal" href="rvA05-html.html#html-doc"><span class="std std-ref">HTML</span></a> docs are provided in a
-<a class="reference internal" href="rvA02-tutor.html#rivt-tutor"><span class="std std-ref">tutorial</span></a></p>
 <p>For an overview of <em>rivt</em> see <a class="reference internal" href="rvB01-overview.html#rivt-overview"><span class="std std-ref">here</span></a>. To get started with
-running examples see <a class="reference internal" href="rvA01-start.html#rivt-start"><span class="std std-ref">install</span></a>.  For <em>rivt</em> and <em>AI</em> see
-<a class="reference internal" href="rvF01-aiintro.html#rivt-context"><span class="std std-ref">here</span></a>.</p>
+running examples see <a class="reference internal" href="rvA01-start.html#rivt-start"><span class="std std-ref">install</span></a>. For <em>rivt</em> and <em>AI</em> see
+<a class="reference internal" href="rvF01-aiintro.html#rivt-context"><span class="std std-ref">here</span></a>. Examples of a <a class="reference internal" href="rvA03-file.html#example-file"><span class="std std-ref">rivt file</span></a> with
+<a class="reference internal" href="rvA04-txt.html#text-doc"><span class="std std-ref">text</span></a>, <a class="reference internal" href="rvA06-pdf.html#pdf-doc"><span class="std std-ref">PDF</span></a>, and <a class="reference internal" href="rvA05-html.html#html-doc"><span class="std std-ref">HTML</span></a>
+output docs are provided in this <a class="reference internal" href="rvA02-tutor.html#rivt-tutor"><span class="std std-ref">tutorial</span></a>. Other documents
+and examples may be downloaded from <a class="reference external" href="https://www.openmodels.info" rel="noreferrer" target="_blank">Google Drive.</a></p>
 <p>The <em>rivtlib</em> <a class="reference external" href="https://pypi.org/project/rivtlib/" rel="noreferrer" target="_blank">Python package</a> formats
-and compiles a <em>rivt file</em> to a text, PDF or HTML document (<em>doc</em>) in about a
-second. <em>rivt file</em> sections may be interactively executed in an IDE. Multiple
+and compiles a <em>rivt file</em> to a text, PDF or HTML document (<em>doc</em>) in a
+few seconds. <em>rivt file</em> sections may be interactively executed in an IDE. Multiple
 <em>rivt files</em> may be compiled into a collated <em>rivt report</em>.  <em>rivt files</em> may
 be organized into  <em>rivtbooks</em>, collections around a common subject matter
 and organized for efficient selection and inclusion in reports.  This website is
-an example of an HTML <em>rivt report</em>.</p>
-<p>A convenient interface for searching and downloading public <em>rivt files</em> on
-<em>GitHub</em> is <a class="reference internal" href="rvE02-github.html"><span class="doc">here.</span></a> Open source engineering models,
-documents and examples, including <em>rivt</em>, may be downloaded from
-<a class="reference external" href="https://www.openmodels.info" rel="noreferrer" target="_blank">Google Drive.</a></p>
-<p><em>rivt</em> produces clear, organized engineering documents from active calculations
-using reasonable defaults. Use cases are listed <a class="reference internal" href="rvB02-motivation.html#use-case"><span class="std std-ref">here</span></a>.
-Document tools like <a class="reference external" href="https://quarto.org/" rel="noreferrer" target="_blank">Quarto</a> are likely better tools
-for static documents including journal articles and books that do
-not need recalculation. A brief discussion of current engineering document
-tools and their strengths relative to the objectives of <em>rivt</em> is <a class="reference internal" href="rvB02-motivation.html#motivation"><span class="std std-ref">here</span></a>.</p>
+an example of an HTML <em>rivt report</em>. A convenient interface for searching and
+downloading public <em>rivt files</em> on <em>GitHub</em> is <a class="reference internal" href="rvE02-github.html"><span class="doc">here.</span></a></p>
+<p><em>rivt</em> produces organized, formatted engineering documents from active
+calculation files using reasonable defaults. Use cases are listed
+<a class="reference internal" href="rvB02-motivation.html#use-case"><span class="std std-ref">here</span></a>. Document tools like <a class="reference external" href="https://quarto.org/" rel="noreferrer" target="_blank">Quarto</a>
+are likely better tools for static documents including journal articles and
+books that do not need recalculation. A brief discussion of current engineering
+document tools and their strengths relative to the objectives of <em>rivt</em> is
+<a class="reference internal" href="rvB02-motivation.html#motivation"><span class="std std-ref">here</span></a>.</p>
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="id2" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
-<p>rivt includes the built-in capability to selectively export
-sections of a <em>rivt file</em> to a <em>public rivt report</em> for open-source
-reuse.</p>
+<p>rivt includes switches that selectively export sections
+of a <em>rivt file</em> to a <em>public rivt report</em> for open-source reuse.</p>
 </aside>
 </aside>
 <hr>

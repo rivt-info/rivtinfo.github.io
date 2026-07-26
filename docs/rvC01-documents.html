@@ -407,11 +407,9 @@
 <section id="docs">
 <h2><strong>[1]</strong> Docs<a class="headerlink" href="#docs" title="Link to this heading">#</a></h2>
 <p>A <em>rivt doc</em> is the output of a <em>rivt file</em> . <em>rivt files</em> and <em>docs</em> are the
-basic units of <em>rivt reports</em> and <em>rivtbooks</em> which are organized in folders
-for editing and assembly. <a class="reference internal" href="rvC04-reports.html#rivt-reports"><span class="std std-ref">rivt reports</span></a> are organized to
-simplify editing and document assembly. <a class="reference internal" href="rvC05-rivtbks.html#rivt-books"><span class="std std-ref">rivtbooks</span></a> are
-organized to select <em>rivt files</em> for inclusion in <em>reports</em>. <em>rivt files</em> in
-<em>rivtbooks</em> are referred to as <em>chapters</em>.</p>
+basic units of <a class="reference internal" href="rvC04-reports.html#rivt-reports"><span class="std std-ref">rivt reports</span></a> and <a class="reference internal" href="rvC05-rivtbks.html#rivt-books"><span class="std std-ref">rivtbooks</span></a>.
+<em>rivt report</em> folders are organized for editing. <em>rivtbook</em> folders are organized
+to simplify copy and paste into <em>rivt reports</em>.</p>
 <p>Each <a class="reference internal" href="rvG02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> outputs a corresponding <a class="reference internal" href="rvG02-terms.html#term-doc"><span class="xref std std-term">doc</span></a> with a <em>doc number</em>
 derived from the rivt file name and a format specified in PUBLISH command of
 the <em>rv.D()</em> API. The <em>doc</em> is written to the respective subfolder of the
@@ -439,10 +437,28 @@ rv212-filename.py
 <li><p>2.12 (division 2, subdivision 12)</p></li>
 </ul>
 <p>A <em>rivt report</em> is organized using <em>rivt doc numbers</em></p>
-</section>
 <hr class="docutils" />
-<section id="html-pdf-config-py">
-<h2><strong>[2]</strong> HTML / PDF Config (.py)<a class="headerlink" href="#html-pdf-config-py" title="Link to this heading">#</a></h2>
+</section>
+<section id="comment-settings-py">
+<span id="comment-settings"></span><h2><strong>[2]</strong> Comment Settings (.py)<a class="headerlink" href="#comment-settings-py" title="Link to this heading">#</a></h2>
+<p>Comment settings are specified in the <em>rivt file</em> immediately following the
+import statement and before API methods, and are used to override default
+settings for the entire <em>rivt doc</em>. The <em>rv private</em> setting may be changed at
+the section level (see <span class="xref std std-ref">header settings</span>). If default
+settings shown in parenthesis are acceptable the comment settings are not
+needed.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
+
+<span class="c1"># rv set_width = 80  ; character width of text output (80)</span>
+<span class="c1"># rv no_tag = true ; if false, the API type is added to section number (true)</span>
+<span class="c1"># rv private = true ; if false, default section heading changed to public (private)</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<p>See <span class="xref std std-ref">rivt markup</span> for further details.</p>
+</section>
+<section id="html-and-pdf-config-py">
+<h2><strong>[3]</strong> HTML and PDF Config (.py)<a class="headerlink" href="#html-and-pdf-config-py" title="Link to this heading">#</a></h2>
 <p>The <em>conf.py</em> configuration file contains default configuration settings for
 <em>rivt docs</em> and reports. A typical <em>conf.py</em> file looks like this:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#! python</span>
@@ -597,7 +613,7 @@ rv212-filename.py
 </section>
 <hr class="docutils" />
 <section id="pdf-style-file-yaml">
-<h2><strong>[3]</strong> PDF style file (.yaml)<a class="headerlink" href="#pdf-style-file-yaml" title="Link to this heading">#</a></h2>
+<h2><strong>[4]</strong> PDF Style File (.yaml)<a class="headerlink" href="#pdf-style-file-yaml" title="Link to this heading">#</a></h2>
 <p>The <em>rivtstyle.yaml</em> file contains default formats for PDF files.</p>
 <blockquote>
 <div><div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">fontsAlias</span><span class="p">:</span>
@@ -1028,8 +1044,9 @@ rv212-filename.py
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docs"><strong>[1]</strong> Docs</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-pdf-config-py"><strong>[2]</strong> HTML / PDF Config (.py)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pdf-style-file-yaml"><strong>[3]</strong> PDF style file (.yaml)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-settings-py"><strong>[2]</strong> Comment Settings (.py)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-and-pdf-config-py"><strong>[3]</strong> HTML and PDF Config (.py)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pdf-style-file-yaml"><strong>[4]</strong> PDF Style File (.yaml)</a></li>
 </ul>
   </nav></div>
 

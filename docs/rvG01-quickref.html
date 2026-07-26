@@ -441,90 +441,67 @@
 </div>
 <p>where <strong>rS</strong> is a <em>rivt string</em>. The first line of a <em>rivt string</em> (rS)
 is the <a class="reference internal" href="rvG02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a>.</p>
-<p><strong>Header substrings</strong></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;A New Section | private, doc, section</span>
+<p><strong>Header Defaults</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&quot;&quot;Section Label</span>
 
-<span class="s2">    Content text</span>
+<span class="s2">     Content text and rivt markup - indented four spaces.</span>
+
 <span class="s2">    ...</span>
 
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The default privacy setting may be changed in the rivt file comment settings
-shown below</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
+<p><strong>Header Modifications</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&quot;&quot;Section Label | shmpn | type | template or script file</span>
 
-<span class="c1"># rv private = false ; default section parameter changed to public (true)</span>
-<span class="c1"># rv no_tag = true ; API type is added to section number (true)</span>
-<span class="c1"># rv set_width = true character width of text output (80</span>
+
+<span class="s2">     Content text and rivt markup - indented four spaces.</span>
+<span class="s2">     Content may be ommitted if a template file or script</span>
+<span class="s2">     is specified.</span>
+
+<span class="s2">    ...</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Individual sections may be set back to private in the header substring after
-changing the default.</p>
-<p><strong>Header substring defaults</strong></p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>API</p></th>
-<th class="head"><p>private; public</p></th>
-<th class="head"><p>doc; stored</p></th>
-<th class="head"><p>section; merge</p></th>
-<th class="head"><p>pdfpage; nopage</p></th>
-<th class="head"><p>other</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>rv.R</p></td>
-<td><p><strong>private</strong></p></td>
-<td><p><strong>doc</strong></p></td>
-<td><p><strong>section</strong></p></td>
-<td><p><strong>nopage</strong></p></td>
-<td><p>NA</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.I</p></td>
-<td><p><strong>private</strong></p></td>
-<td><p><strong>doc</strong></p></td>
-<td><p><strong>section</strong></p></td>
-<td><p><strong>nopage</strong></p></td>
-<td><p>NA</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.V</p></td>
-<td><p><strong>private</strong></p></td>
-<td><p><strong>doc</strong></p></td>
-<td><p><strong>section</strong></p></td>
-<td><p><strong>nopage</strong></p></td>
-<td><p>NA</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.T</p></td>
-<td><p><strong>private</strong></p></td>
-<td><p>stored only</p></td>
-<td><p><strong>section</strong></p></td>
-<td><p><strong>nopage</strong></p></td>
-<td><p><strong>text type</strong></p></td>
-</tr>
-<tr class="row-even"><td><p>rv.D</p></td>
-<td><p><strong>private</strong></p></td>
-<td><p>stored only</p></td>
-<td><p>NA</p></td>
-<td><p>NA</p></td>
-<td><p>NA</p></td>
-</tr>
-<tr class="row-odd"><td><p>rv.S</p></td>
-<td><p>NA</p></td>
-<td><p>NA</p></td>
-<td><p>NA</p></td>
-<td><p>NA</p></td>
-<td><p>NA</p></td>
-</tr>
-<tr class="row-even"><td><p>rv.X</p></td>
-<td><p>NA</p></td>
-<td><p>NA</p></td>
-<td><p>NA</p></td>
-<td><p>NA</p></td>
-<td><p>NA</p></td>
-</tr>
-</tbody>
-</table>
-</div>
+<p>The first set of parameters in the <em>header substring</em> specify handling of the
+<em>content substring</em>. The second and third parameters specify a type and file or
+script that is processed by the API method before processing any <em>content</em>.</p>
+<p><strong>Parameters</strong></p>
+<p>Section parameters may be specified in any order or ommitted if defaults are
+acceptable. The default parameters are shown in the</p>
+<ul class="simple">
+<li><p>s
+stores the section content in <em>_rvstored/sect</em> as a <em>.rvt file.</em></p></li>
+<li><p>h
+processes the section but suppresses the <em>doc</em> output.</p></li>
+<li><p>m
+merges the section with the previous section.</p></li>
+<li><p>p
+toggles the public/private status of the section. The rivt file default is
+private unless overridden by a <a class="reference internal" href="rvC01-documents.html#comment-settings"><span class="std std-ref">comment settings</span></a></p></li>
+<li><p>n
+Starts a new pdf page.</p></li>
+</ul>
+<p><strong>File and Type Settings</strong></p>
+<p>The second parameter specifies a template file or script that is processed by
+the API method before processing any <em>content</em>. The file is read from the
+rvsrc/data folder unless a relative path is specified. The file type is
+determined by the API method. The type setting for all
+API methods, except rv.T, is <em>rvt</em>. A <em>rvt</em> file type is a section content
+string stored as a file. It is written by the <strong>s</strong> parameter.</p>
+<p>For the rv.T method the type settings are:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p><strong>PYTHON</strong> - run Python script</p></li>
+<li><p><strong>python</strong> - insert Python script</p></li>
+<li><p><strong>text</strong> - literal text</p></li>
+<li><p><strong>rst</strong> - reStructuredText</p></li>
+<li><p><strong>html</strong> - HTML markup</p></li>
+<li><p><strong>mermaid</strong> - Mermaid diagram (requires mermaid installation)</p></li>
+<li><p><strong>latex</strong> - LaTeX (requires LaTeX installation)</p></li>
+</ol>
+</div></blockquote>
 <hr class="docutils" />
 </section>
 <section id="line-tags">

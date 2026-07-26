@@ -20,9 +20,9 @@
 
 *rivt* is an extensible, open-source program for writing and assembling
 calculation documents with a focus on reuse [1]_. It provides a markup language
-that facilitates article, manuals and book chapter conversion to live 
-calculation documents. Python knowledge is not required but *rivt* capabilities 
-can be extended with Python scientific and engineering libraries and scripts.
+that facilitates conversion to live calculation documents from any PDF or text.
+Python knowledge is not required but *rivt* capabilities can be extended using
+Python scientific and engineering libraries and scripts.
 
 There are four types of rivt files:
 
@@ -44,8 +44,8 @@ There are four types of rivt files:
 
                     | A rivt report is the collated output of multiple
                     | docs into a single text file, PDF file or HTML
-      rivt report   | site. Docs are grouped into divisions using file 
-                    | doc numbers. 
+      rivt report   | site. Docs are linked and grouped into divisions
+                    | using doc file naming conventions.
 
 For an overview of *rivt* see :ref:`here <rivt-overview>`. To get started with
 running examples see :ref:`install <rivt-start>`. For *rivt* and *AI* see
