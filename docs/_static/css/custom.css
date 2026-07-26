@@ -138,3 +138,10 @@ hr {
     background-color: hwb(200 15% 27%);
     border: none;
 }
+
+/* Removes the icon for standard notes */
+.admonition.note .admonition-title::before,
+.admonition.note .admonition-title::after {
+    display: none !important;
+    content: "" !important;
+}

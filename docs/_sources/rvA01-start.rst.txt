@@ -35,7 +35,7 @@ A typical **VSCode IDE** layout for editing a *rivt file* is shown below.
     :align: center
     :alt: ide layout
 
-    *rivt* files and docs in **VSCode** (click on image to enlarge)
+    rivt files and docs in **VSCode** (click on image to enlarge)
 
 .. note::
 
@@ -60,7 +60,7 @@ A *rivt-code* installation is recommended for Windows users unfamiliar with
 Python. *rivt-code* is a zip file that includes the 
 :ref:`rivt-code framework <rivt framework>`. 
 
- The zip file naming convention is:
+The zip file naming convention is:
 
 .. code-block:: text
 
