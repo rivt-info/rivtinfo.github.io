@@ -6,32 +6,28 @@
 **[1]** Getting Started 
 ------------------------------------------------------------------------------- 
 
-This section covers installation of *rivt* and *rivt doc* examples. As open
-source software you are free to download and modify the program as needed (see
-:ref:`FAQ <Licenses>`). The open source software installation process is
-designed multiple gather and install multiple open source components from
-various sources. This section covers three ways to install *rivt*.
+This section covers installation of *rivt* and *rivt doc* examples. They are
+source software so you are free to download and modify the program as needed 
+(see :ref:`FAQ <Licenses>`). The open source software installation process is
+designed to gather and install multiple open source components from
+various sources. This section covers three ways to run *rivt*.
 
-#. For users unfamiliar with Python and open source software the simplest way
-   to get started is to download the Windows portable *rivt-code.zip* file (~800
-   MB). For further details see :ref:`here <rivt-code>`.
+#. For users unfamiliar with Python and GitHub the best way to get started
+   is to download the Windows portable file *rivt-code.zip*  (~800
+   MB). For further details see :ref:`rivt-code <rivt-code>`.
 
-#. For users with a `GitHub <https://github.com>`__ account *rivt-codespace*
-can be forked and run in a browser using 
-`Codespaces <https://github.com/features/codespaces>`__. 
-Further details are :ref:`here <rivt-codespace>`.
+#. For users with a `GitHub <https://github.com>`__ account
+   the best way to get started is to fork and run 
+   :ref:`rivt-codespace <rivt-codespace>` in a browser. 
 
 #. For users familiar with Python, *rivt* may be installed at the system level
-   or in an isolated environment using *uv*. Further details are 
-   :ref:`here<rivt-sys>`.
-
-**[2]** rivt IDE
-------------------------------------------------------------------------------- 
+   and in an isolated environment using *uv*. Further details are 
+   :ref:`here <rivt-sys>`.
 
 *rivt* may be edited in a simple text processor and run from the command line 
 but efficient editing and compiling is typically done in an :term:`IDE`. Any IDE 
-may be used but *VSCode* support is documented. A typical **VSCode IDE** layout 
-editing a *rivt file* is shown below.
+may be used but *VSCode* with extensions is supported and documented. 
+A typical **VSCode IDE** layout for editing a *rivt file* is shown below.
 
 .. figure::  _static/img/vscode3.png
     :class: dark-light
@@ -41,22 +37,23 @@ editing a *rivt file* is shown below.
 
     *rivt* files and docs in **VSCode** (click on image to enlarge)
 
+.. note::
 
-A *rivt file* is a Python file (.py) that imports the 
-`rivtlib <https://pypi.org/project/rivtlib/>`__ Python package and includes 
-:doc:`rivt markup <rvD01-markup>`. The *rivt file* is in the center editing 
-panel[2], the *doc* outputs are in the right panel[3] and the file explorer 
-is the far left panel [1]. Text, PDF and HTML output files are accessed in 
-the file explorer and displayed within panels. Individual *rivt* sections 
-(cells) can be run and output to an interactive terminal during *doc* development. 
-Panel locations may be customized by the user. Additional example *rivt files* 
-and *docs* are :ref:`here <rivt-tutor>`.
+    A *rivt file* is a Python file (.py) that imports the 
+    `rivtlib <https://pypi.org/project/rivtlib/>`__ Python package and includes 
+    :doc:`rivt markup <rvD01-markup>`. The *rivt file* is in the center editing 
+    panel[2], the *doc* outputs are in the right panel[3] and the file explorer 
+    is the far left panel [1]. Text, PDF and HTML output files are accessed in 
+    the file explorer and displayed within panels. Individual *rivt* sections 
+    (cells) can be run and output to an interactive terminal during *doc* development. 
+    Panel locations may be customized by the user. Additional example *rivt files* 
+    and *docs* are :ref:`here <rivt-tutor>`.
 
 -------------------------------
 
 .. _rivt-code:
 
-**[3]** rivt-code
+**[2]** rivt-code
 -------------------------------------------------------------------------------- 
 
 A *rivt-code* installation is recommended for Windows users unfamiliar with
@@ -90,7 +87,7 @@ Releases are updated monthly and may be downloaded from the
 
 .. _rivt-codespace:
 
-**[4]** rivt-codespace
+**[3]** rivt-codespace
 -------------------------------------------------------------------------------- 
 
 `VSCode <https://code.visualstudio.com/>`_ is a customizable code editor that
@@ -99,6 +96,7 @@ to as a `Codespace <https://github.com/features/codespaces>`__ . A
 :term:`rivt Codespace` is a *VSCode* cloud environment with *rivt* extensions 
 for editing and running *rivt files*. It can be forked (copied) into a personal 
 GitHub account. A rivt Codepsace can be forked from 
+`Codespaces <https://github.com/features/codespaces>`__. 
 
 by following the steps below.  Example rivt files are included.
 
