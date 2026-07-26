@@ -60,7 +60,7 @@ with rivt profiles and extensions documented :ref:`here <vscode-settings>`.
 
 The *rivt API* includes :ref:`API methods <API methods>`, 
 :ref:`markup <Line Tags>` and structured 
-:ref:`folders and files <Files-folders>`.
+:ref:`folders and files <file-folder>`.
 
 The API is designed to be:
 
@@ -123,8 +123,8 @@ for readability and section folding. See :ref:`here <rivt-header>` for
 
     **rivt Doc Processing**
 
-Each :term:`rivt file` outputs a corresponding :term:`doc` of the format
-specified in PUBLISH command of the *rv.D()* API. A rivt file number has the
+Each :term:`rivt file` outputs a corresponding :term:`doc` with the format
+specified in | PUBLISH | command of the *rv.D()* API. A rivt file number has the
 form:
 
 .. code-block:: text
@@ -157,7 +157,7 @@ the corresponding *doc numbers* in a report would be:
 --------------------------------
 
 
-.. _Files-folders:
+.. _file-folder:
 
 **[4]** Files / Folders
 ------------------------------------------------------------------------------- 

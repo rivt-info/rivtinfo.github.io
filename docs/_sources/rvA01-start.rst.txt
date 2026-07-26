@@ -29,7 +29,7 @@ but efficient editing and compiling is typically done in an :term:`IDE`. Any IDE
 may be used but *VSCode* with extensions is supported and documented. 
 A typical **VSCode IDE** layout for editing a *rivt file* is shown below.
 
-.. figure::  _static/img/vscode3.png
+.. figure::  _static/img/vscode3a.png
     :class: dark-light
     :width: 95%
     :align: center
@@ -39,15 +39,15 @@ A typical **VSCode IDE** layout for editing a *rivt file* is shown below.
 
 .. note::
 
-    A *rivt file* is a Python file (.py) that imports the 
-    `rivtlib <https://pypi.org/project/rivtlib/>`__ Python package and includes 
-    :doc:`rivt markup <rvD01-markup>`. The *rivt file* is in the center editing 
-    panel[2], the *doc* outputs are in the right panel[3] and the file explorer 
-    is the far left panel [1]. Text, PDF and HTML output files are accessed in 
-    the file explorer and displayed within panels. Individual *rivt* sections 
-    (cells) can be run and output to an interactive terminal during *doc* development. 
-    Panel locations may be customized by the user. Additional example *rivt files* 
-    and *docs* are :ref:`here <rivt-tutor>`.
+    The :ref:`rivt file <file-folder>` is in the center editing panel[blue], the 
+    :ref:`text doc <rivt-docs>` output is in the right panel[brown] and the
+    *file explorer* is the far left panel [green]. Extension buttoms are
+    located on the top and bottom status bars [red]. Text, PDF and HTML output
+    files are accessed in the file explorer and displayed within panels.
+    Individual *rivt* sections are linked in the navigation panel and in the
+    text output for quick naviagation through the file. Panel locations may be
+    customized by the user. An example *rivt file* and *doc* are
+    :ref:`here <rivt-tutor>`.
 
 -------------------------------
 
