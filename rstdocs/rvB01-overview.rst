@@ -59,7 +59,7 @@ with rivt profiles and extensions documented :ref:`here <vscode-settings>`.
 ------------------------------------------------------------------------------- 
 
 The *rivt API* includes :ref:`API methods <API methods>`, 
-:ref:`markup <rvD01-markup>` and structured 
+:ref:`markup <Line Tags>` and structured 
 :ref:`folders and files <Files-folders>`.
 
 The API is designed to be:
@@ -103,7 +103,7 @@ An API function starts in the first column and takes a triple quoted
 :term:`rivt string` argument containing a *header and content substring*.
 The first line of the *rivt string* is the header substring, 
 followed by a :term:`content substring` indented 4 spaces 
-for readability and section folding. See :ref:`here <rivt string>` for 
+for readability and section folding. See :ref:`here <rivt-header>` for 
 *rivt string* details.
 
 

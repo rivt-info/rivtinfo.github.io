@@ -117,14 +117,15 @@ the **| PUBLISH |** command.
 
 .. dropdown:: [ 2 ] Add API method - rv.I
 
-    See :ref:`header <Header substring>` and 
-    :ref:`content <Content substring>` reference for rivt string details. 
-    This section includes :ref:`footnote [#]  and link [U] tags <line summary>`.
+    See :ref:`API methods <API methods>` and header and content 
+    :ref:`substrings <rivt-header>` for rivt string details.
+    This section also includes footnote [#]  and a URL link [U]
+    :ref:`tags <line summary>`.
 
     .. code-block:: python
 
         # %% rv.I("""Summary and Loads
-        rv.I(r"""Summary and Loads
+        rv.I("""Summary and Loads
 
             This rivt file example calculates the maximum stress and deflection in a
             simply supported, uniformly loaded beam using E-B theory _[#]. It also
@@ -151,7 +152,7 @@ the **| PUBLISH |** command.
     .. code-block:: python
 
         # %% rv.I("""Load Combinations 
-        rv.I(r"""Load Combinations 
+        rv.I("""Load Combinations 
 
             ## Comments with double hashes will not appear in the doc
             
@@ -177,7 +178,7 @@ the **| PUBLISH |** command.
     .. code-block:: python
 
         # %% rv.V("""Loads and Geometry
-        rv.V(r"""Loads and Geometry 
+        rv.V("""Loads and Geometry 
             
             Value definitions are formatted as a table. Variable values are
             defined with the define operator. The line tag [T] labels and
@@ -221,7 +222,7 @@ the **| PUBLISH |** command.
     .. code-block:: python
 
         # %% rv.V("""Beam Stress
-        rv.V(r"""Beam Response
+        rv.V("""Beam Response
 
             The following lines import the beam geometry from an external file, 
             calculate section properties from imported functions and calculate 
@@ -259,7 +260,7 @@ the **| PUBLISH |** command.
     .. code-block:: python
 
         # %% rv.R("""doc notes | endnotes
-        rv.R(r"""doc notes | endnotes
+        rv.R("""doc notes | endnotes
             "Euler-Bernoulli beam theory", Wikipedia, Wikimedia Foundation. [Online].
             https://en.wikipedia.org/wiki/Euler_Bernoulli_beam_theory. 
             [Accessed: Jun. 15, 2026].
@@ -279,7 +280,7 @@ the **| PUBLISH |** command.
     .. code-block:: python
 
         # %% rv.D("""Publish Doc 
-        rv.D(r"""Publish Doc 
+        rv.D("""Publish Doc 
             
             A rivt file may be published as a text, PDF or HTML doc by specifying 
             the PUBLISH type parameter as txt, pdf or html. 

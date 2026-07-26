@@ -38,7 +38,7 @@
     # rv private = true ; if false, default section heading changed to public (private)
 
     # %% rv.I("""Summary and Loads
-    rv.I(r"""Summary and Loads
+    rv.I("""Summary and Loads
 
         This rivt file example calculates the maximum stress and deflection in a
         simply supported, uniformly loaded beam using E-B theory _[#]. It also
@@ -55,7 +55,7 @@
     """)
 
     # %% rv.I("""Load Combinations 
-    rv.I(r"""Load Combinations 
+    rv.I("""Load Combinations 
 
         ## Indented comments with double hashes will not appear in the doc
         
@@ -73,7 +73,7 @@
     """)
 
     # %% rv.V("""Loads and Geometry
-    rv.V(r"""Loads and Geometry 
+    rv.V("""Loads and Geometry 
         
         Successive value definitions are formatted as a table. Variable values are
         defined with the define operator. The line tag [T] labels and numbers the
@@ -107,7 +107,7 @@
         """)
 
     # %% rv.V("""Beam Stress
-    rv.V(r"""Beam Response
+    rv.V("""Beam Response
 
         The following lines import the beam geometry from an external file, 
         calculate section properties from imported functions and calculate 
@@ -146,7 +146,7 @@
 
 
     # %% rv.D(r"""Publish Doc 
-    rv.D(r"""Publish Doc 
+    rv.D("""Publish Doc 
         
         A rivt file may be published as a text, PDF or HTML doc by specifying the
         PUBLISH type parameter as txt, pdf or html. 

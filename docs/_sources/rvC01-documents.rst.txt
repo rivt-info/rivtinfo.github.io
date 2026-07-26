@@ -54,9 +54,8 @@ A *rivt report* is organized using *rivt doc numbers*
 Comment settings are specified in the *rivt file* immediately following the
 import statement and before API methods, and are used to override default
 settings for the entire *rivt doc*. The *rv private* setting may be changed at
-the section level (see :ref:`header settings <api-header>`). If default
-settings shown in parenthesis are acceptable the comment settings are not
-needed.
+the section level. If default settings shown in parenthesis are acceptable the
+comment settings are not needed.
 
 .. code-block:: python
 
@@ -68,7 +67,7 @@ needed.
 
 --------------------
 
-See :ref:`rivt markup <rivt string>` for further details. 
+See :ref:`rivt markup <API methods>` for further details.
 
 
 **[3]** HTML and PDF Config (.py)

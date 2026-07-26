@@ -232,7 +232,7 @@ Python and programming.
     :hidden:
 
     rvA02-tutor.rst
-    rvA03-file.rst
+    rvA03-exfile.rst
     rvA04-txt.rst
     rvA05-html.rst
     rvA06-pdf.rst

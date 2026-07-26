@@ -70,10 +70,9 @@ the *rivt Profile* is installed in VSCode.
 .. code-block:: python
 
     # %% My Section Label
-    rv._(r"""My Section Label
+    rv._("""My Section Label
     
             Content text and rivt markup - indented four spaces.
-        
         ...
         
         """)
@@ -114,7 +113,7 @@ need to be modified.
 
 .. code-block:: python
 
-    rv._(r"""Section Label 
+    rv._("""Section Label 
 
          Content text and rivt markup - indented four spaces.
         
@@ -127,7 +126,7 @@ need to be modified.
 
 .. code-block:: python
 
-    rv._(r"""Section Label | shmpn | type | template or script file
+    rv._("""Section Label | shmpn | type | template or script file
 
 
          Content text and rivt markup - indented four spaces. 
@@ -195,7 +194,7 @@ along with  text.
 
 .. code-block:: python
 
-    rv._(r"""Section Label  
+    rv._("""Section Label  
 
         Content text indented 4 spaces.
         ...

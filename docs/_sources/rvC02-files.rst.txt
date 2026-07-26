@@ -62,10 +62,8 @@ Public rivt files                   .py
 
     **Value files**
 
-A *value file* is a *csv* file that defines variable values. A file with all
-values is written to rv_stor for each Values API call. The
-filename has the form:
-
+A *value file* is a *csv* file that defines variable values. A values file 
+is exported to rv_stor for each Values API call. The filename has the form:
 
 .. code-block:: bash
 
