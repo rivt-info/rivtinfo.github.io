@@ -5,11 +5,9 @@
 ------------------------------
 
 A *rivt doc* is the output of a *rivt file* . *rivt files* and *docs* are the
-basic units of *rivt reports* and *rivtbooks* which are organized in folders
-for editing and assembly. :ref:`rivt reports<rivt-reports>` are organized to
-simplify editing and document assembly. :ref:`rivtbooks<rivt-books>` are
-organized to select *rivt files* for inclusion in *reports*. *rivt files* in
-*rivtbooks* are referred to as *chapters*.
+basic units of :ref:`rivt reports<rivt-reports>` and :ref:`rivtbooks<rivt-books>`.
+*rivt report* folders are organized for editing. *rivtbook* folders are organized
+to simplify copy and paste into *rivt reports*.
 
 Each :term:`rivt file` outputs a corresponding :term:`doc` with a *doc number*
 derived from the rivt file name and a format specified in PUBLISH command of
@@ -48,8 +46,32 @@ A *rivt report* is organized using *rivt doc numbers*
 
 --------------------
 
+.. _comment-settings:
 
-**[2]** HTML / PDF Config (.py)
+**[2]** Comment Settings (.py)
+--------------------------------
+
+Comment settings are specified in the *rivt file* immediately following the
+import statement and before API methods, and are used to override default
+settings for the entire *rivt doc*. The *rv private* setting may be changed at
+the section level (see :ref:`header settings <api-header>`). If default
+settings shown in parenthesis are acceptable the comment settings are not
+needed.
+
+.. code-block:: python
+
+    import rivtlib.rvapi as rv
+
+    # rv set_width = 80  ; character width of text output (80)
+    # rv no_tag = true ; if false, the API type is added to section number (true)
+    # rv private = true ; if false, default section heading changed to public (private)
+
+--------------------
+
+See :ref:`rivt markup <rivt string>` for further details. 
+
+
+**[3]** HTML and PDF Config (.py)
 --------------------------------------------------------------------- 
 
 The *conf.py* configuration file contains default configuration settings for 
@@ -209,7 +231,7 @@ The *conf.py* configuration file contains default configuration settings for
 ----------------------------------
 
 
-**[3]** PDF style file (.yaml)
+**[4]** PDF Style File (.yaml)
 --------------------------------------------------------------------- 
 
 The *rivtstyle.yaml* file contains default formats for PDF files.

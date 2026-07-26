@@ -5,8 +5,7 @@
 
 .. code-block:: python
 
-    #! python3
-    """ This is a rivt doc example.  It is used in the tutorial at 
+    """ This is a rivt doc example used in the tutorial at 
     https://www.rivt.info. 
 
     This example illustrates: 
@@ -21,7 +20,7 @@
         - Table blocks and commands
         - Value table command
         - Metadata and layout block
-        - Python function command
+        - Python function assignment
         - Image command
         - Publish command
 
@@ -46,7 +45,7 @@
         serves as an annotated example of a single rivt doc with multiple sections
         that is not part of a report.
 
-        The example illustrates the use of some of the most common API methods,
+        The example illustrates the use of some of the most common API functions,
         commands and tags. Further details are provided in the 
         _[U] rivt user manual, https://www.rivt.info |.
 
@@ -95,9 +94,9 @@
         folder. The description is the table title, followed by the max
         column width. 
 
-        | VALTABLE | rvsrc/vals/beam1.csv | Beam Geometry, 40
+        | VALTABLE | beam1.csv | Beam Geometry, 40
 
-        | IMAGE | rvsrc/img/beam1.png | Beam Diagram, 60, num, not
+        | IMAGE | beam1.png | Beam Diagram, 60, num, not
 
         Uniform Distributed Loads _[C]
         dl_1 <=: 1.2 * (spc_1 * (D_1 + D_2 + D_3) + D_4) | k_ft, kN_m, 2 | Dead load [ASCE7-05 2.3.2]
@@ -114,13 +113,13 @@
         calculate section properties from imported functions and calculate 
         the maximum moment, bending stress and mid-span deflection. 
 
-        | PYTHON | rvsrc/scripts/sectprop.py | Beam functions
+        | PYTHON | sectprop.py | Beam functions
 
         section_1 :=: rectsect(b_1, h_1) | in3, cm3, 2 | rectangle - S (sectprop.py)
 
         inertia_1 :=: rectinertia(b_1, h_1) | in4, cm4, 1 | rectangle - I (sectprop.py)
 
-        | IMAGE2 | rvsrc/img/ss-beam2.png, rvsrc/img/ss-beam1.png | Moment diagram, Deflection diagram,46,54,num,num
+        | IMAGE2 | ss-beam2.png, ss-beam1.png | Moment diagram, Deflection diagram,46,54,num,num
 
         Maximum bending stress formula _[B]
         
@@ -134,19 +133,19 @@
         fb_1 < Fb_1 | k_si, 2, OK, >>> NOT OK | Stress ratio 
 
         delta_1 :=: midspan_delta(spn_1, omega_1, E_1, inertia_1) | inch, mm, 2 | mid-span deflection (sectprop.py)
-        """)
-
-    # %% rv.R("""doc notes | endnotes
-    rv.T(r"""doc notes | endnotes
+            
+        _[[ENDNOTES]]
         "Euler–Bernoulli beam theory", Wikipedia, Wikimedia Foundation. [Online].
         https://en.wikipedia.org/wiki/Euler_Bernoulli_beam_theory. 
         [Accessed: Jun. 15, 2026].
 
         ASCE/SEI 7-05, Minimum Design Loads for Buildings and Other Structures,
         American Society of Civil Engineers, 2005.
+        _[[END]]]
         """)
 
-    # %% rv.D("""Publish Doc 
+
+    # %% rv.D(r"""Publish Doc 
     rv.D(r"""Publish Doc 
         
         A rivt file may be published as a text, PDF or HTML doc by specifying the
@@ -157,17 +156,13 @@
         _rivt-public folders as a README.txt file. READMEs are formatted and
         displayed on the first page of a GitHub repo.
         
-        | PUBLISH | Example 1 - rivt Doc | txt
+        | PUBLISH | Example 1 - rivt Doc | html
         
         _[[METADATA]] 
-        [process]
-        ;-----------------------------------------
-        doc_verbose = true; if false minmize output during doc processing
-        auto_cfg = true ; if false, config files are not updated from rivt file
         [doc]
         ;-----------------------------------------
         authors = R Holland
-        version = 1.0.0a13
+        version = 1.0.0a17
         repo = https://github.com/rivt-info/rivt-example-01
         license = https://opensource.org/license/mit/
         copyright = --
@@ -189,14 +184,17 @@
         project_ref = proj. 0001
         ;------------------------ PDF settings
         ;--- colors: red, blue, green, black, gray, brown, maroon, gray, olive, cyan
-        ;--- margins: top, right, bottom, left    page size: letter, legal, A4    
         pdf_link_color = brown
         pdf_link_underline = false
-        pdf_pagesize = letter
-        pdf_margins = 1in, 1in, 1in, 1in 
+        pdf_pagesize = letter ; letter, legal, A4    
+        pdf_margins = 1in, 1in, 1in, 1in ; top, right, bottom, left
+        pdf_page = false ; if true, start sections on new page 
         ;----------------------- TOC levels
         ;--- 1: include subdivisions   2: include subdivisions and sections
         toc_level = 2
+        [process]
+        ;-----------------------------------------
+        doc_verbose = true; if false minmize output during doc processing
+        auto_cfg = true ; if false, config files are not updated from rivt file
         _[[END]]    
         """)
-

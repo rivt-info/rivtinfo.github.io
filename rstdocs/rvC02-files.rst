@@ -7,11 +7,10 @@
 **rivt file**
 
 A *rivt file* provides the formatting instructions and content that generate
-*rivt docs* or *chapters* in the context of a report. Each *rivt file* has a
-*doc number* prefix that specifies the division and subdivision of the *doc*.
-*rivt reports* are assembled using *doc numbers*. The *doc number* prefix
-includes a single digit capital alphanumeric division label *D*, followed by a
-two digit subdivision number *ss*. For example:
+*rivt docs*. Each *rivt file* has a *doc number* prefix that specifies the
+*doc* division. The *doc number* prefix includes a single digit capital 
+alphanumeric division label *D*, followed by a two digit subdivision 
+number *ss*. For example:
 
 .. code-block:: bash
     
@@ -22,7 +21,7 @@ two digit subdivision number *ss*. For example:
 
 **Author provided source file inputs**
 
-*rivt* reads and writes a variety of files through a command syntax including:
+*rivt* reads and writes file types including:
 
 ================================  =================================================
 description                         read file types   
