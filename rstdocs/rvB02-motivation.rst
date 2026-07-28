@@ -6,21 +6,23 @@
 **[1]** Background
 --------------------------------------------------------------------- 
 
-*rivt* is an open source software program that simplifies publication and
-general reuse of engineering documents. These software characteristics have
-always been a challenge because engineering documents are complex and
-commercial software purposes do not align with this goal.
+*rivt* is an open source software program that for writing, assembling
+and reusing engineering calculation documents. Reuse of engineering documents has
+always been a challenge because engineering documents are complex and apparently
+commercial software goals do not align with this goal.
 
-Widely used document software is not sufficient because of the additional
-complexity of engineering documents. They may include text, images, tables,
-calculations, models and computer code. They are also dynamic and are
-frequently updated by many people as projects evolve and progress.
+Widely used text and image oriented software is generally not sufficient
+because of the additional complexity of engineering documents. They may include
+text, images, tables, calculations, active models and computer code. They are
+also dynamic, and are frequently updated and recalculated by others as
+project designs evolve and progress.
 
 The desire to reuse engineering documents is a matter of simple efficiency. Most
-engineering projects are not fundamentally unique. They use similar patterns and
-templates that differ in degree and details, not kind. The commercial market 
-response to engineering document software has been to develop incompatible, 
-siloed programs with barriers to sharing and reuse that include:
+engineering calculations are not unique. They may be organized in different ways
+with different inputs, but the basic equations and methods are shared across
+many projects and evolve slowly. The commercial market 
+response has been to develop incompatible, 
+siloed programs with a number of barriers to sharing and reuse that include:
 
 - incompatible documents across programs
 - costly software updates that are backward incompatible
@@ -29,14 +31,12 @@ siloed programs with barriers to sharing and reuse that include:
 - limited report generation
 - limited collaboration
 
-Open source solutions can alter that approach and *rivt* is designed to address
-these barriers as both a compliment and replacement to existing software. The 
-table below summarizes and compares limitations between different programs
-(commercial programs in italics).
+The table below summarizes and compares limitations between specific programs
+that *rivt* is designed to complement or replace.
 
 .. rst-class:: center
 
-**Software Comparison**
+**Software Comparison (commercial programs in italics)**
 
 ============= ============ ========= ======== ========== =========== ========== ========= ============= ===========
 Program       Reprt [1]_   Ver [2]_  Txt [3]_  Priv [4]_  Unts [5]_  Comp [6]_  C-P [7]_   Coll [8]_     Pub [9]_

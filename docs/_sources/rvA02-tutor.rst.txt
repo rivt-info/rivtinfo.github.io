@@ -139,7 +139,8 @@ the **| PUBLISH |** command.
             The file may be formatted as a text, PDF or HTML doc by changing the type
             parameter in the PUBLISH command at the end of each rivt file (Doc-API
             *rv.D*). Published files are found in the _published folder.
-        """)
+            
+            """)
 
 
 .. dropdown:: [ 3 ] Add API method - rv.I
@@ -167,7 +168,8 @@ the **| PUBLISH |** command.
             16-3           1.2(D+F+T) + 1.6(Lr or S or R) + (f1L or 0.8W)
             ============= ================================================
             _[[END]]
-        """)
+        
+            """)
 
 .. dropdown:: [ 4 ]  Add API method - rv.V
     
@@ -211,6 +213,7 @@ the **| PUBLISH |** command.
             ll_1 <=: 1.6 * spc_1 * L_1 | k_ft, kN_m, 2 | Live load [ASCE7-05 2.3.2]
             
             omega_1 <=: dl_1 + ll_1 | k_ft, kN_m, 2 | Total load [ASCE7-05 2.3.2]
+        
             """)
 
 .. dropdown:: [ 5 ] Add API method - rv.V 
@@ -218,6 +221,9 @@ the **| PUBLISH |** command.
     This Value section includes the | PYTHON |  and | IMAGE2 | 
     :ref:`commands <command-summary>`, the _[B] and _[M] :ref:`tags <line summary>`, 
     and the :ref:`assignment operators <assign-summary>` **:=:** and **<=:** . 
+
+    It is the last API for the Doc method so it also includes the endnotes block 
+    tag and entries.
 
     .. code-block:: python
 
@@ -248,28 +254,20 @@ the **| PUBLISH |** command.
             fb_1 < Fb_1 | k_si, 2, OK, >>> NOT OK | Stress ratio 
 
             delta_1 :=: midspan_delta(spn_1, omega_1, E_1, inertia_1) | inch, mm, 2 | mid-span deflection (sectprop.py)
-            """)
-
-.. dropdown:: [ 6 ] Add API method - rv.R
-
-    The **Run API** does not use commands or tags in the *content substring*.
-    The **header substring** includes a type parameter identifying the content
-    text or script. In this example the API is used for endnotes. See :ref:`rv.R
-    Markup <markup-R>`.
-
-    .. code-block:: python
-
-        # %% rv.R("""doc notes | endnotes
-        rv.R("""doc notes | endnotes
-            "Euler-Bernoulli beam theory", Wikipedia, Wikimedia Foundation. [Online].
+        
+            _[[ENDNOTES]]
+            "Euler–Bernoulli beam theory", Wikipedia, Wikimedia Foundation. [Online].
             https://en.wikipedia.org/wiki/Euler_Bernoulli_beam_theory. 
             [Accessed: Jun. 15, 2026].
 
             ASCE/SEI 7-05, Minimum Design Loads for Buildings and Other Structures,
             American Society of Civil Engineers, 2005.
+            _[[END]]]
+        
             """)
 
-.. dropdown:: [ 7 ] Final API method - rv.D
+
+.. dropdown:: [ 6 ] Final API method - rv.D
     
     The Doc API publishes formatted *docs* and then exits the rivt file. The
     primary command is the **| PUBLISH |** command which specifies the doc title
@@ -285,47 +283,57 @@ the **| PUBLISH |** command.
             A rivt file may be published as a text, PDF or HTML doc by specifying 
             the PUBLISH type parameter as txt, pdf or html. 
             
+            When writing and debugging a rivt file this API is typically set to
+            rv.S (skip). When getting ready to publish the starting with the
+            txt type is preferred because it executes the fastest.
+
             Published files are found in sub-folders of the _published folder. A 
             text version of the doc or report is is always written to 
             STDOUT (terminal) and the rivt and _rivt-public folders as a 
             README.txt file. READMEs are formatted and displayed on the first 
             page of a GitHub repo.
+
             
-            | PUBLISH | Example 1 - rivt Doc | pdf
+            | PUBLISH | Example 1 - rivt doc | txt
             
             _[[METADATA]] 
             [doc]
+            ;-----------------------------------------
             authors = R Holland
-            version = 1.0.0a12
-            repo = https://github.com/rivt-info/rivt-single-doc
+            version = 1.0.0a17
+            repo = https://github.com/rivt-info/rivt-example-01
             license = https://opensource.org/license/mit/
-            copyright = -
-            fork1_authors = -
-            fork1_version = -
-            fork1_repo = -
+            copyright = --
+            fork1_authors = --
+            fork1_version = --
+            fork1_repo = --
             fork1_license = https://opensource.org/license/mit/
-            
             [layout]
+            ;----------------------- cover page and runner settings
+            ;--- add logo files to rvsrc/img folder, size is % page width
             subtitle =  UDL Beam
             copyright = --
-            client = Attn: User Example
+            client = user example
             coverpage = true
             coverlogo_size = 30
             coverlogo = logo1.png
             runninglogo = logo2.png
             runninglabel = rivt
             project_ref = proj. 0001
-            pdf_pagesize = letter
-            pdf_margins = 1in, 1in, 1in, 1in 
-            pdf_link_underline = false
-            ; colors - red, blue, green, yellow, black, gray, brown
-            ; lightblue, magenta, lime, maroon, gray, olive, cyan
+            ;------------------------ PDF settings
+            ;--- colors: red, blue, green, black, gray, brown, maroon, gray, olive, cyan
             pdf_link_color = brown
-            ; toc levels: 1 - includes subdivisions, 2 - also includes sections
+            pdf_link_underline = false
+            pdf_pagesize = letter ; letter, legal, A4    
+            pdf_margins = 1in, 1in, 1in, 1in ; top, right, bottom, left
+            pdf_page = false ; if true, start sections on new page 
+            ;----------------------- TOC levels
+            ;--- 1: include subdivisions   2: include subdivisions and sections
             toc_level = 2
-
             [process]
+            ;-----------------------------------------
             doc_verbose = true; if false minmize output during doc processing
             auto_cfg = true ; if false, config files are not updated from rivt file
-            _[[END]]    
+            _[[END]]       
+            
             """)

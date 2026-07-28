@@ -57,33 +57,43 @@ A typical **VSCode IDE** layout for editing a *rivt file* is shown below.
 -------------------------------------------------------------------------------- 
 
 A *rivt-code* installation is recommended for Windows users unfamiliar with
-Python. *rivt-code* is a zip file that includes the 
-:ref:`rivt-code framework <rivt framework>`. 
-
-The zip file naming convention is:
+Python. *rivt-code* is a zip file that includes rivt, Python, VSCode and an
+example rivt file. The zipped file size is ~800 MB which unzips to about 2.2
+GB. It may be downloaded from the `rivt-code repository
+<https://github.com/rivtlib-dev/rivt-code/releases/>`__.
 
 .. code-block:: text
 
-    win64-rivt-code-n.n.n[an].zip
+    rivt-code-monthx.year.zip
 
-where n is a number representing the major, minor and patch release number. An
-*an* appended to the version is an *alpha* release where users should expect
-missing and incomplete features. The zip file contents must be unzipped into a
-directory with read-write access - typically the users home folder or a flash
-drive. After unzipping, VSCode and examples are started by clicking on the
-*start-rivt.cmd* file.
+where x is an a-z character representing mid month releases. 
 
-The primary features of *rivt-portable* are: 
+The tag release follows the major, minor and patch release number convention.
+
+.. code-block:: text
+
+   v<major>.<minor>.<patch>[an]
+
+The zip file contents must be unzipped into a directory with read-write access
+- typically the users home folder or a flash drive. After unzipping, click the
+*rivt-code* shortcut to open the example rivt file in a rivt VSCode environment.
+Click on the triangle in the upper right to run the file and output text, pdf
+or html docs, depending on the | PUBLISH | setting. See the rivt user manual
+for details.
+
+Features of *rivt-code* include:
 
 #. simplified, isolated installation
 #. package and framework integration
 #. installation needs to be updated as a whole, not as individual components. 
 #. integration with other programs may be more difficult. 
 
-Releases are updated monthly and may be downloaded from the 
-`GitHub repository <https://github.com/rivtlib-dev/rivt-portable/releases/>`__. 
+rivt-code includes preinstalled VSCode extensions designed to simplify editing 
+navigation and running *rivt files*. They are listed in :ref:`vscode settings 
+<vscode-settings>` and may explored and modified in the VSCode interface. 
 
 -------------------------------
+
 
 .. _rivt-codespace:
 
@@ -94,25 +104,15 @@ Releases are updated monthly and may be downloaded from the
 can be run locally or in the cloud. The cloud version of *VSCode* is referred
 to as a `Codespace <https://github.com/features/codespaces>`__ . A 
 :term:`rivt Codespace` is a *VSCode* cloud environment with *rivt* extensions 
-for editing and running *rivt files*. It can be forked (copied) into a personal 
-GitHub account. A rivt Codepsace can be forked from 
-`Codespaces <https://github.com/features/codespaces>`__. 
+for editing and running *rivt files*. 
 
-by following the steps below.  Example rivt files are included.
+Codespaces are run in a personal GitHub account. When rivt-codespace is forked
+into a personal account and run, an example rivt file is loaded. The example
+file may be run and edited in the Codespace and the rivt interface extensions
+may be explored.
 
-**Fork a rivt Codespace**
-
-#. Set up a `GitHub account <https://github.com>`__ if needed.    
-#. Go to the `rivt Codespace repository <https://github.com/rivt-info/rivt-codespace-examples>`__ 
-#. Click the **Fork** button in the upper right corner. This creates a copy 
-   of the repository in your GitHub account.
-#. Switch to your GitHub account and naviate to the forked repository.
-#. Click the green **Code** button.
-#. Select the **Codespaces** tab.
-#. Click the rivt-codespace-examples option.
-#. This creates a Codespace environment in your GitHub account 
-    and opens the repository in the online VSCode IDE. The environment 
-    includes the rivt packages, extensions and examples. 
+Steps for running rivt-codespace are provided in the README `here
+<https://github.com/rivtlib-dev/rivtlib>`__.
 
 
 .. figure::  _static/img/codespace2.png

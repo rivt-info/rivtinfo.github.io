@@ -45,7 +45,7 @@
 
     <script src="_static/jquery.js?v=5d32c60e"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-    <script src="_static/documentation_options.js?v=96ca68dc"></script>
+    <script src="_static/documentation_options.js?v=7ed0cb1e"></script>
     <script src="_static/doctools.js?v=fd6eb6e6"></script>
     <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
@@ -405,8 +405,8 @@
                   
   <section id="a-3-rivt-example-file">
 <h1><strong>A.3 |</strong> rivt Example File<a class="headerlink" href="#a-3-rivt-example-file" title="Link to this heading">#</a></h1>
-<div class="highlight-python notranslate" id="example-file"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot; This is a rivt doc example used in the tutorial at</span>
-<span class="sd">https://www.rivt.info.</span>
+<div class="highlight-python notranslate" id="example-file"><div class="highlight"><pre><span></span><span class="ch">#! python3</span>
+<span class="sd">&quot;&quot;&quot; This is a rivt doc example used in the tutorial at https://www.rivt.info.</span>
 
 <span class="sd">This example illustrates:</span>
 
@@ -450,9 +450,10 @@
 <span class="s2">    _[U] rivt user manual, https://www.rivt.info |.</span>
 
 <span class="s2">    The file may be formatted as a text, PDF or HTML doc by changing the type</span>
-<span class="s2">    parameter in the PUBLISH command at the end of each rivt file (Doc-API</span>
-<span class="s2">    *rv.D*). Published files are found in the _published folder.</span>
-<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
+<span class="s2">    parameter in the Doc API | PUBLISH | command at the end of each</span>
+<span class="s2">    rivt file (*rv.D()*). Published files are found in the</span>
+<span class="s2">    _published folder.</span>
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 
 <span class="c1"># %% rv.I(&quot;&quot;&quot;Load Combinations</span>
 <span class="n">rv</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Load Combinations</span>
@@ -470,7 +471,8 @@
 <span class="s2">    16-3           1.2(D+F+T) + 1.6(Lr or S or R) + (f1L or 0.8W)</span>
 <span class="s2">    ============= ================================================</span>
 <span class="s2">    _[[END]]</span>
-<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 
 <span class="c1"># %% rv.V(&quot;&quot;&quot;Loads and Geometry</span>
 <span class="n">rv</span><span class="o">.</span><span class="n">V</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Loads and Geometry</span>
@@ -504,6 +506,7 @@
 <span class="s2">    ll_1 &lt;=: 1.6 * spc_1 * L_1 | k_ft, kN_m, 2 | Live load [ASCE7-05 2.3.2]</span>
 
 <span class="s2">    omega_1 &lt;=: dl_1 + ll_1 | k_ft, kN_m, 2 | Total load [ASCE7-05 2.3.2]</span>
+
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 
 <span class="c1"># %% rv.V(&quot;&quot;&quot;Beam Stress</span>
@@ -534,18 +537,10 @@
 
 <span class="s2">    delta_1 :=: midspan_delta(spn_1, omega_1, E_1, inertia_1) | inch, mm, 2 | mid-span deflection (sectprop.py)</span>
 
-<span class="s2">    _[[ENDNOTES]]</span>
-<span class="s2">    &quot;Euler–Bernoulli beam theory&quot;, Wikipedia, Wikimedia Foundation. [Online].</span>
-<span class="s2">    https://en.wikipedia.org/wiki/Euler_Bernoulli_beam_theory.</span>
-<span class="s2">    [Accessed: Jun. 15, 2026].</span>
-
-<span class="s2">    ASCE/SEI 7-05, Minimum Design Loads for Buildings and Other Structures,</span>
-<span class="s2">    American Society of Civil Engineers, 2005.</span>
-<span class="s2">    _[[END]]]</span>
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 
 
-<span class="c1"># %% rv.D(r&quot;&quot;&quot;Publish Doc</span>
+<span class="c1"># %% rv.D(&quot;&quot;&quot;Publish Doc</span>
 <span class="n">rv</span><span class="o">.</span><span class="n">D</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Publish Doc</span>
 
 <span class="s2">    A rivt file may be published as a text, PDF or HTML doc by specifying the</span>
@@ -597,6 +592,7 @@
 <span class="s2">    doc_verbose = true; if false minmize output during doc processing</span>
 <span class="s2">    auto_cfg = true ; if false, config files are not updated from rivt file</span>
 <span class="s2">    _[[END]]</span>
+
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>

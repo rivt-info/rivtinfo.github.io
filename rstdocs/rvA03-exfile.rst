@@ -5,8 +5,8 @@
 
 .. code-block:: python
 
-    """ This is a rivt doc example used in the tutorial at 
-    https://www.rivt.info. 
+    #! python3
+    """ This is a rivt doc example used in the tutorial at https://www.rivt.info. 
 
     This example illustrates: 
 
@@ -48,11 +48,12 @@
         The example illustrates the use of some of the most common API functions,
         commands and tags. Further details are provided in the 
         _[U] rivt user manual, https://www.rivt.info |.
-
+        
         The file may be formatted as a text, PDF or HTML doc by changing the type
-        parameter in the PUBLISH command at the end of each rivt file (Doc-API
-        *rv.D*). Published files are found in the _published folder.
-    """)
+        parameter in the Doc API | PUBLISH | command at the end of each 
+        rivt file (*rv.D()*). Published files are found in the 
+        _published folder.
+        """)
 
     # %% rv.I("""Load Combinations 
     rv.I("""Load Combinations 
@@ -70,7 +71,8 @@
         16-3           1.2(D+F+T) + 1.6(Lr or S or R) + (f1L or 0.8W)
         ============= ================================================
         _[[END]]
-    """)
+
+        """)
 
     # %% rv.V("""Loads and Geometry
     rv.V("""Loads and Geometry 
@@ -104,6 +106,7 @@
         ll_1 <=: 1.6 * spc_1 * L_1 | k_ft, kN_m, 2 | Live load [ASCE7-05 2.3.2]
         
         omega_1 <=: dl_1 + ll_1 | k_ft, kN_m, 2 | Total load [ASCE7-05 2.3.2]
+        
         """)
 
     # %% rv.V("""Beam Stress
@@ -134,18 +137,10 @@
 
         delta_1 :=: midspan_delta(spn_1, omega_1, E_1, inertia_1) | inch, mm, 2 | mid-span deflection (sectprop.py)
             
-        _[[ENDNOTES]]
-        "Euler–Bernoulli beam theory", Wikipedia, Wikimedia Foundation. [Online].
-        https://en.wikipedia.org/wiki/Euler_Bernoulli_beam_theory. 
-        [Accessed: Jun. 15, 2026].
-
-        ASCE/SEI 7-05, Minimum Design Loads for Buildings and Other Structures,
-        American Society of Civil Engineers, 2005.
-        _[[END]]]
         """)
 
 
-    # %% rv.D(r"""Publish Doc 
+    # %% rv.D("""Publish Doc 
     rv.D("""Publish Doc 
         
         A rivt file may be published as a text, PDF or HTML doc by specifying the
@@ -197,4 +192,6 @@
         doc_verbose = true; if false minmize output during doc processing
         auto_cfg = true ; if false, config files are not updated from rivt file
         _[[END]]    
+        
         """)
+

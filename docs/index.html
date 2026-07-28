@@ -45,7 +45,7 @@
 
     <script src="_static/jquery.js?v=5d32c60e"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-    <script src="_static/documentation_options.js?v=96ca68dc"></script>
+    <script src="_static/documentation_options.js?v=7ed0cb1e"></script>
     <script src="_static/doctools.js?v=fd6eb6e6"></script>
     <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
@@ -371,11 +371,19 @@ Home
 </a>
 </figure>
 <hr><p><em>rivt</em> is an open-source program for writing and assembling calculation
-documents with a focus on reuse <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>. Its straightforward markup language
-facilitates conversion of any PDF or text to a live calculation document. Python
-knowledge is not required but <em>rivt</em> capabilities can be extended using Python
-scientific and engineering libraries and scripts.</p>
-<p>There are four types of rivt files:</p>
+documents with a focus on reuse <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>. The large ecosystem of engineering calculation
+tools often requires organizing their output into a single project document.
+<em>rivt</em> is designed to write, assemble and link calculation documents and code
+into a live, editable and organized format prior to publishing to a text, PDF or HTML
+static format.</p>
+<p>The <em>rivt markup</em> language also facilitates conversion of any PDF or text
+document into a live calculation document that can then be modified or extended.
+Python knowledge is not required to use <em>rivt</em> but its capabilities are
+increased when Python scientific and engineering libraries and scripts are used.
+For further details refer to the <a class="reference external" href="https://rivt.info" rel="noreferrer" target="_blank">rivt user manual</a>.</p>
+<p>The primary use case for <em>rivt</em> is producing organized, live calculation
+documents that can be easily shared, reused and maintained. There are four
+types of rivt files:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>              | A rivt file is the basic input file that
 rivt file     | compiles to a text, PDF or HTML document.
               | It is a Python file (.py) that imports the
@@ -406,17 +414,16 @@ and examples may be downloaded from <a class="reference external" href="https://
 and compiles a <em>rivt file</em> to a text, PDF or HTML document (<em>doc</em>) in a
 few seconds. <em>rivt file</em> sections may be interactively executed in an IDE. Multiple
 <em>rivt files</em> may be compiled into a collated <em>rivt report</em>.  <em>rivt files</em> may
-be organized into  <em>rivtbooks</em>, collections around a common subject matter
-and organized for efficient selection and inclusion in reports.  This website is
-an example of an HTML <em>rivt report</em>. A convenient interface for searching and
-downloading public <em>rivt files</em> on <em>GitHub</em> is <a class="reference internal" href="rvE02-github.html"><span class="doc">here.</span></a></p>
+be organized into  <em>rivtbooks</em>. These are rivt file collections around a
+common subject matter and organized for efficient selection and inclusion in
+reports.  This website is an example of an HTML <em>rivt report</em>. A convenient
+interface for searching and downloading public <em>rivt files</em> on <em>GitHub</em> is
+<a class="reference internal" href="rvE02-github.html"><span class="doc">here.</span></a></p>
 <p><em>rivt</em> produces organized, formatted engineering documents from active
-calculation files using reasonable defaults. Use cases are listed
-<a class="reference internal" href="rvB02-motivation.html#use-case"><span class="std std-ref">here</span></a>. Document tools like <a class="reference external" href="https://quarto.org/" rel="noreferrer" target="_blank">Quarto</a>
-are likely better tools for static documents including journal articles and
-books that do not need recalculation. A brief discussion of current engineering
-document tools and their strengths relative to the objectives of <em>rivt</em> is
-<a class="reference internal" href="rvB02-motivation.html#motivation"><span class="std std-ref">here</span></a>.</p>
+calculation files using reasonable defaults. Use cases are listed <a class="reference internal" href="rvB02-motivation.html#use-case"><span class="std std-ref">here</span></a>. For static documents with rigid format requirements, including
+journal articles and books that do not need recalculation, tools like <a class="reference external" href="https://quarto.org/" rel="noreferrer" target="_blank">Quarto</a> are likely a better fit. A brief discussion of current
+engineering document tools and their strengths relative to the objectives of
+<em>rivt</em> is <a class="reference internal" href="rvB02-motivation.html#motivation"><span class="std std-ref">here</span></a>.</p>
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="id2" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>

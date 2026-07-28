@@ -6,7 +6,7 @@ from pathlib import Path
 project = "rivt.info"
 copyright = "2025 R Holland"
 author = "rholland"
-release = "1.0.0a17"
+release = "1.0.0a18"
 extensions = [
     "sphinx.ext.githubpages",
     "sphinx_togglebutton",

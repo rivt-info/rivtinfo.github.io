@@ -549,6 +549,9 @@ should be included as part of a *report folder*. Settings that affect the
 Global settings can be exported and imported using VSCode Profiles. VSCode
 *rivt* extensions and settings may be installed from this link.
 
+
+**Snippets and extensions**
+
 ============================================== ===============================
 Extension                                        description
 ============================================== ===============================
@@ -622,8 +625,6 @@ yzane.markdown-pdf                                  markdown to pdf
 yzhang.markdown-all-in-one                          markdown tools
 ============================================== ===============================
 
-**Snippets and extensions**
-
 ================= ==============================================================
 Keystrokes                   Description
 ================= ==============================================================
@@ -639,7 +640,7 @@ rvd                 API Docs
 | pu                 publish command
 | ta                 table command
 | va                 value command
-| va                 value table command
+| vs                 value table command
 _ce                 center bold line of text
 _ma                 utf-8 text math
 _la                 LaTeX math
@@ -652,32 +653,6 @@ _do                 download link
 _[m                 markup block
 _[p                 python block
 _[e                 end block 
-alt+ctrl+c          insert cell marker with label above API function
-alt+q               rewrap paragraph with hard line feeds (80 default)
-alt+p               open file under cursor
-alt+.               select correct spelling under cursor
-alt+8               insert date
-alt+9               insert time
-ctl+1               focus on first editor
-ctl+2               focus on next editor
-ctl+3               focus on previous editor
-ctl+8               focus on explorer pane
-ctl+9               focus on github pane    
-ctl+alt+x           reload window
-ctl+alt+[           reload window
-ctl+alt+]           unfold all code
-ctl+alt+u           unfold all code
-ctl+alt+f           fold code level 2 (rivt sections visible)
-ctl+alt+a           fold code - all levels
-ctl+alt+t           toggle local fold
-ctl+alt+e           toggle explorer sort order
-ctl+alt+s           toggle spell check
-ctl+alt+g           next editor group
-ctl+shift+u         open URL under cursor in browser
-ctl+shift+s         open GitHub README search for rivt
-ctl+shift+a         commit all 
-ctl+shift+z         commit the current editor
-ctl+shift+x         post to remote   
 ================= ==============================================================
 
 **Modified Keyboard Shortcuts**

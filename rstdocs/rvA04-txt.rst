@@ -3,40 +3,47 @@
 
 .. _text-doc:
 
-Text doc  :download:`download link <_downloads/rv001-example01.txt>`.
+
+The text doc is stored in the _published/txtdocs folder.  The file may be  
+:download:`downloaded <_downloads/rv001-example01.txt>`. Section separations are
+designed for code folding in text editors e.g. Noteppad++ and VSCode
 
 .. code-block:: text
 
-        
         --------------------------------------------------------------------------------
-        Example 1 - rivt Doc | R Holland | v-1.0.0a12 | 2026-07-07 - 04:22AM
+        Example 1 - rivt Doc | R Holland | v-1.0.0a17 | 2026-07-27 - 05:11PM
         --------------------------------------------------------------------------------
 
 
-        0.1 | Summary and Loads
-        ================================================================================
-        
+        ................................................................................]
+
+        0.1-1 | Summary and Loads
+        ================================================================================]
+
         This rivt file example calculates the maximum stress and deflection in a
         simply supported, uniformly loaded beam using E-B theory [0.1.1]. It also
         serves as an annotated example of a single rivt doc with multiple sections
         that is not part of a report.
-        
-        The example illustrates the use of some of the most common API methods,
+
+        The example illustrates the use of some of the most common API functions,
         commands and tags. Further details are provided in the
         rivt user manual https://www.rivt.info .
-        
-        The file may be formatted as a text, PDF or HTML doc by changing the type
-        parameter in the PUBLISH command at the end of each rivt file (Doc-API
-        rv.D). Published files are found in the _published folder.
-        
 
-        0.1 - 2 | Load Combinations
-        --------------------------------------------------------------------------------
-        
-        
+        The file may be formatted as a text, PDF or HTML doc by changing the type
+        parameter in the Doc API | PUBLISH | command at the end of each
+        rivt file (rv.D()). Published files are found in the
+        _published folder.
+
+
+        ................................................................................]
+
+        0.1-2 | Load Combinations
+        ================================================================================]
+
+
         Dead and live loads effects are taken from ASCE 7-05 [0.1.2]
-        
-        Table 1: Load Effects (stored: t001-1.csv)
+
+        Table 2.1: Load Effects (stored: t001-1.csv)
         ============= ================================================
         Equation No.    Load Combination
         ============= ================================================
@@ -45,17 +52,19 @@ Text doc  :download:`download link <_downloads/rv001-example01.txt>`.
         16-3           1.2(D+F+T) + 1.6(Lr or S or R) + (f1L or 0.8W)
         ============= ================================================
 
-        
 
-        0.1 - 3 | Loads and Geometry
-        --------------------------------------------------------------------------------
-        
+
+        ................................................................................]
+
+        0.1-3 | Loads and Geometry
+        ================================================================================]
+
         Successive value definitions are formatted as a table. Variable values are
         defined with the define operator. The line tag [T] labels and numbers the
         table.
-        
 
-        Table 2: Define Unit Loads
+
+        Table 3.1: Define Unit Loads
         ==========  =============  =============  =====================
         variable    value          [value]        description
         ==========  =============  =============  =====================
@@ -69,13 +78,13 @@ Text doc  :download:`download link <_downloads/rv001-example01.txt>`.
         E_1         29000.00 k_si  199947.96 MPA  modulus of elasticity
         Fb_1        20000.00 p_si  137.90 MPA     allowable stress
         ==========  =============  =============  =====================
-        
+
         The VALTABLE command reads variable values from a file in the rvsrc/data
         folder. The description is the table title, followed by the max
         column width.
-        
 
-        Table 3: Beam Geometry (rvsrc/data/beam1.csv)
+
+        Table 3.2: Beam Geometry (beam1.csv)
         ==========  ========  =========  =============
         variable    value     [value]    description
         ==========  ========  =========  =============
@@ -83,48 +92,48 @@ Text doc  :download:`download link <_downloads/rv001-example01.txt>`.
         spn_1       16.00 ft  4.88 m     beam span
         ==========  ========  =========  =============
 
-        
+
                 ----------------------------------------
-        Fig. 1 - Beam Diagram 
+        Fig. 3.1 - Beam Diagram 
                 ----------------------------------------
 
-        
+
                                 Uniform Distributed Loads                            
 
 
-        ┌  Eq-1 | Dead load [ASCE7-05 2.3.2]
+        ┌  Eq-3.1 | Dead load [ASCE7-05 2.3.2]
         │
         │     dl₁ = 1.2⋅(D₄ + spc₁⋅(D₁ + D₂ + D₃))
         └
 
         dl₁ = 3.64 k_ft    [dl₁] = 53.09 kN_m  | Dead load [ASCE7-05 2.3.2]
 
-        =========  ==========  ==================  ============  =============
-        D₁         D₂          D₄                  spc₁          D₃
-        =========  ==========  ==================  ============  =============
-        3.80 p_sf  2.10 p_sf   3.00 k_ft           2.00 ft       10.00 p_sf
-        —————      —————       —————               —————         —————
-        joists DL  plywood DL  fixed machinery DL  beam spacing  partitions DL
-        =========  ==========  ==================  ============  =============
-        
+        ==========  ============  =========  =============  ==================
+        D₂          spc₁          D₁         D₃             D₄
+        ==========  ============  =========  =============  ==================
+        2.10 p_sf   2.00 ft       3.80 p_sf  10.00 p_sf     3.00 k_ft
+        —————       —————         —————      —————          —————
+        plywood DL  beam spacing  joists DL  partitions DL  fixed machinery DL
+        ==========  ============  =========  =============  ==================
 
-        ┌  Eq-2 | Live load [ASCE7-05 2.3.2]
+
+        ┌  Eq-3.2 | Live load [ASCE7-05 2.3.2]
         │
         │     ll₁ = 1.6⋅L₁⋅spc₁
         └
 
         ll₁ = 0.13 k_ft    [ll₁] = 1.87 kN_m  | Live load [ASCE7-05 2.3.2]
 
-        ===========  ============
-        L₁           spc₁
-        ===========  ============
-        40.00 p_sf   2.00 ft
-        —————        —————
-        ASCE7-O5 LL  beam spacing
-        ===========  ============
-        
+        ============  ===========
+        spc₁          L₁
+        ============  ===========
+        2.00 ft       40.00 p_sf
+        —————         —————
+        beam spacing  ASCE7-O5 LL
+        ============  ===========
 
-        ┌  Eq-3 | Total load [ASCE7-05 2.3.2]
+
+        ┌  Eq-3.3 | Total load [ASCE7-05 2.3.2]
         │
         │     ω₁ = dl₁ + ll₁
         └
@@ -132,24 +141,26 @@ Text doc  :download:`download link <_downloads/rv001-example01.txt>`.
         ω₁ = 3.77 k_ft    [ω₁] = 54.96 kN_m  | Total load [ASCE7-05 2.3.2]
 
         ===================  ===================
-        dl₁                  ll₁
+        ll₁                  dl₁
         ===================  ===================
-        3.64 k_ft            128.00 ft·p_sf
+        128.00 ft·p_sf       3.64 k_ft
         —————                —————
-        Dead load [ASCE7-05  Live load [ASCE7-05
+        Live load [ASCE7-05  Dead load [ASCE7-05
         2.3.2]               2.3.2]
         ===================  ===================
-        
 
-        0.1 - 4 | Beam Response
-        --------------------------------------------------------------------------------
-        
+
+        ................................................................................]
+
+        0.1-4 | Beam Response
+        ================================================================================]
+
         The following lines import the beam geometry from an external file,
         calculate section properties from imported functions and calculate
         the maximum moment, bending stress and mid-span deflection.
-        
 
-        Table 4: (from file)
+
+        Table 4.1: (from file)
         ==========================  ============================================
         Function                    Docstring
         ==========================  ============================================
@@ -159,9 +170,9 @@ Text doc  :download:`download link <_downloads/rv001-example01.txt>`.
                                 with UDL
         ==========================  ============================================
 
-        
 
-        ┌  Eq-4 | rectangle - S (sectprop.py)
+
+        ┌  Eq-4.2 | rectangle - S (sectprop.py)
         │
         │     section₁ = rectsect(b₁, h₁)
         └
@@ -175,9 +186,9 @@ Text doc  :download:`download link <_downloads/rv001-example01.txt>`.
         —————       —————
         beam width  beam depth
         ==========  ==========
-        
 
-        ┌  Eq-5 | rectangle - I (sectprop.py)
+
+        ┌  Eq-4.3 | rectangle - I (sectprop.py)
         │
         │     inertia₁ = rectinertia(b₁, h₁)
         └
@@ -191,18 +202,18 @@ Text doc  :download:`download link <_downloads/rv001-example01.txt>`.
         —————       —————
         beam width  beam depth
         ==========  ==========
-        
+
                 ----------------------------------------
-        Fig. 2 - Moment diagram  | Fig. 3 - Deflection diagram 
+        Fig. 4.1 - Moment diagram  | Fig. 4.2 - Deflection diagram 
                 ----------------------------------------
 
 
-        
+
         Maximum bending stress formula
 
 
-        
-        ┌  Eq-6 |   
+
+        ┌  Eq-4.4 |   
         │
         │          M₁
         │     σ₁ = ──
@@ -210,9 +221,9 @@ Text doc  :download:`download link <_downloads/rv001-example01.txt>`.
         └
 
 
-        
 
-        ┌  Eq-7 | Mid-span UDL moment
+
+        ┌  Eq-4.4 | Mid-span UDL moment
         │
         │                 2
         │          ω₁⋅spn₁ 
@@ -222,17 +233,17 @@ Text doc  :download:`download link <_downloads/rv001-example01.txt>`.
 
         m₁ = 120.52 ft-kip    [m₁] = 163.40 mkN  | Mid-span UDL moment
 
-        ====================  =========
-        ω₁                    spn₁
-        ====================  =========
-        3.77 k_ft             16.00 ft
-        —————                 —————
-        Total load [ASCE7-05  beam span
-        2.3.2]                -
-        ====================  =========
-        
+        =========  ====================
+        spn₁       ω₁
+        =========  ====================
+        16.00 ft   3.77 k_ft
+        —————      —————
+        beam span  Total load [ASCE7-05
+        -          2.3.2]
+        =========  ====================
 
-        ┌  Eq-8 | Bending stress
+
+        ┌  Eq-4.5 | Bending stress
         │
         │              m₁   
         │     fb₁ = ────────
@@ -241,16 +252,16 @@ Text doc  :download:`download link <_downloads/rv001-example01.txt>`.
 
         fb₁ = 2678.2 p_si    [fb₁] = 18.5 MPA  | Bending stress
 
-        ===================  =============
-        m₁                   section₁
-        ===================  =============
-        120.5 ft2·k_ft       540.0 inch3
-        —————                —————
-        Mid-span UDL moment  rectangle - S
-        -                    (sectprop.py)
-        ===================  =============
-        
-        ┌  Eq-9 | Stress ratio
+        =============  ===================
+        section₁       m₁
+        =============  ===================
+        540.0 inch3    120.5 ft2·k_ft
+        —————          —————
+        rectangle - S  Mid-span UDL moment
+        (sectprop.py)  -
+        =============  ===================
+
+        ┌  Eq-4.7 | Stress ratio
         │
         │     fb_1 < Fb_1
         └
@@ -262,31 +273,29 @@ Text doc  :download:`download link <_downloads/rv001-example01.txt>`.
         ▮  =========  ==========  ===============  =======  ============
 
 
-        
 
-        ┌  Eq-10 | mid-span deflection (sectprop.py)
+
+        ┌  Eq-4.8 | mid-span deflection (sectprop.py)
         │
         │     δ₁ = midspan_δ(spn₁, ω₁, E₁, inertia₁)
         └
 
         δ₁ = 0.04 inch   [δ₁] = 1.00 mm  | mid-span deflection (sectprop.py)
 
-        =============  ====================  =============  =========
-        inertia₁       ω₁                    E₁             spn₁
-        =============  ====================  =============  =========
-        4860.00 inch4  3.77 k_ft             29000.00 k_si  16.00 ft
-        —————          —————                 —————          —————
-        rectangle - I  Total load [ASCE7-05  modulus of     beam span
-        (sectprop.py)  2.3.2]                elasticity     -
-        =============  ====================  =============  =========
-        
+        =============  ====================  =========  =============
+        E₁             ω₁                    spn₁       inertia₁
+        =============  ====================  =========  =============
+        29000.00 k_si  3.77 k_ft             16.00 ft   4860.00 inch4
+        —————          —————                 —————      —————
+        modulus of     Total load [ASCE7-05  beam span  rectangle - I
+        elasticity     2.3.2]                -          (sectprop.py)
+        =============  ====================  =========  =============
 
 
         --------------------------------------------------------------------------------
 
         [0.1.1] "Euler–Bernoulli beam theory", Wikipedia, Wikimedia Foundation.
-        [Online].https://en.wikipedia.org/wiki/Euler_Bernoulli_beam_theory.[Accessed:
-        Jun. 15, 2026].
+        [Online].https://en.wikipedia.org/wiki/Euler_Bernoulli_beam_theory.[Accessed: Jun. 15, 2026].
 
         [0.1.2] ASCE/SEI 7-05, Minimum Design Loads for Buildings and Other
         Structures,American Society of Civil Engineers, 2005.

@@ -45,7 +45,7 @@
 
     <script src="_static/jquery.js?v=5d32c60e"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-    <script src="_static/documentation_options.js?v=96ca68dc"></script>
+    <script src="_static/documentation_options.js?v=7ed0cb1e"></script>
     <script src="_static/doctools.js?v=fd6eb6e6"></script>
     <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
@@ -452,27 +452,32 @@ customized by the user. An example <em>rivt file</em> and <em>doc</em> are
 <section id="rivt-code">
 <span id="id1"></span><h2><strong>[2]</strong> rivt-code<a class="headerlink" href="#rivt-code" title="Link to this heading">#</a></h2>
 <p>A <em>rivt-code</em> installation is recommended for Windows users unfamiliar with
-Python. <em>rivt-code</em> is a zip file that includes the
-<a class="reference internal" href="rvB03-framework.html#rivt-framework"><span class="std std-ref">rivt-code framework</span></a>.</p>
-<p>The zip file naming convention is:</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>win64-rivt-code-n.n.n[an].zip
+Python. <em>rivt-code</em> is a zip file that includes rivt, Python, VSCode and an
+example rivt file. The zipped file size is ~800 MB which unzips to about 2.2
+GB. It may be downloaded from the <a class="reference external" href="https://github.com/rivtlib-dev/rivt-code/releases/" rel="noreferrer" target="_blank">rivt-code repository</a>.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rivt-code-monthx.year.zip
 </pre></div>
 </div>
-<p>where n is a number representing the major, minor and patch release number. An
-<em>an</em> appended to the version is an <em>alpha</em> release where users should expect
-missing and incomplete features. The zip file contents must be unzipped into a
-directory with read-write access - typically the users home folder or a flash
-drive. After unzipping, VSCode and examples are started by clicking on the
-<em>start-rivt.cmd</em> file.</p>
-<p>The primary features of <em>rivt-portable</em> are:</p>
+<p>where x is an a-z character representing mid month releases.</p>
+<p>The tag release follows the major, minor and patch release number convention.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>v&lt;major&gt;.&lt;minor&gt;.&lt;patch&gt;[an]
+</pre></div>
+</div>
+<p>The zip file contents must be unzipped into a directory with read-write access
+- typically the users home folder or a flash drive. After unzipping, click the
+<em>rivt-code</em> shortcut to open the example rivt file in a rivt VSCode environment.
+Click on the triangle in the upper right to run the file and output text, pdf
+or html docs, depending on the | PUBLISH | setting. See the rivt user manual
+for details.</p>
+<p>Features of <em>rivt-code</em> include:</p>
 <ol class="arabic simple">
 <li><p>simplified, isolated installation</p></li>
 <li><p>package and framework integration</p></li>
 <li><p>installation needs to be updated as a whole, not as individual components.</p></li>
 <li><p>integration with other programs may be more difficult.</p></li>
 </ol>
-<p>Releases are updated monthly and may be downloaded from the
-<a class="reference external" href="https://github.com/rivtlib-dev/rivt-portable/releases/" rel="noreferrer" target="_blank">GitHub repository</a>.</p>
+<p>rivt-code includes preinstalled VSCode extensions designed to simplify editing
+navigation and running <em>rivt files</em>. They are listed in <a class="reference internal" href="rvG01-quickref.html#vscode-settings"><span class="std std-ref">vscode settings</span></a> and may explored and modified in the VSCode interface.</p>
 <hr class="docutils" />
 </section>
 <section id="rivt-codespace">
@@ -481,27 +486,12 @@ drive. After unzipping, VSCode and examples are started by clicking on the
 can be run locally or in the cloud. The cloud version of <em>VSCode</em> is referred
 to as a <a class="reference external" href="https://github.com/features/codespaces" rel="noreferrer" target="_blank">Codespace</a> . A
 <a class="reference internal" href="rvG02-terms.html#term-rivt-Codespace"><span class="xref std std-term">rivt Codespace</span></a> is a <em>VSCode</em> cloud environment with <em>rivt</em> extensions
-for editing and running <em>rivt files</em>. It can be forked (copied) into a personal
-GitHub account. A rivt Codepsace can be forked from
-<a class="reference external" href="https://github.com/features/codespaces" rel="noreferrer" target="_blank">Codespaces</a>.</p>
-<p>by following the steps below.  Example rivt files are included.</p>
-<p><strong>Fork a rivt Codespace</strong></p>
-<ol class="arabic simple">
-<li><p>Set up a <a class="reference external" href="https://github.com" rel="noreferrer" target="_blank">GitHub account</a> if needed.</p></li>
-<li><p>Go to the <a class="reference external" href="https://github.com/rivt-info/rivt-codespace-examples" rel="noreferrer" target="_blank">rivt Codespace repository</a></p></li>
-<li><p>Click the <strong>Fork</strong> button in the upper right corner. This creates a copy
-of the repository in your GitHub account.</p></li>
-<li><p>Switch to your GitHub account and naviate to the forked repository.</p></li>
-<li><p>Click the green <strong>Code</strong> button.</p></li>
-<li><p>Select the <strong>Codespaces</strong> tab.</p></li>
-<li><p>Click the rivt-codespace-examples option.</p></li>
-<li><dl class="simple">
-<dt>This creates a Codespace environment in your GitHub account</dt><dd><p>and opens the repository in the online VSCode IDE. The environment
-includes the rivt packages, extensions and examples.</p>
-</dd>
-</dl>
-</li>
-</ol>
+for editing and running <em>rivt files</em>.</p>
+<p>Codespaces are run in a personal GitHub account. When rivt-codespace is forked
+into a personal account and run, an example rivt file is loaded. The example
+file may be run and edited in the Codespace and the rivt interface extensions
+may be explored.</p>
+<p>Steps for running rivt-codespace are provided in the README <a class="reference external" href="https://github.com/rivtlib-dev/rivtlib" rel="noreferrer" target="_blank">here</a>.</p>
 <figure class="align-center">
 <a class="dark-light reference internal image-reference" href="_images/codespace2.png"><img alt="rivt Codespace repo" class="dark-light" src="_images/codespace2.png" style="width: 90%;" />
 </a>
