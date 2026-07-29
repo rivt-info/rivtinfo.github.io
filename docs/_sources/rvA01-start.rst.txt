@@ -12,16 +12,16 @@ source software so you are free to download and modify the program as needed
 designed to gather and install multiple open source components from
 various sources. This section covers three ways to run *rivt*.
 
-#. For users unfamiliar with Python and GitHub the best way to get started
-   is to download the Windows portable file *rivt-code.zip*  (~800
-   MB). For further details see :ref:`rivt-code <rivt-code>`.
+#. For most Windows users the best way to get started is to download
+   the portable file *rivt-code.zip*  (~800 MB zipped, ~2.2 GB expanded). 
+   For further details see :ref:`rivt-code <rivt-code>`.
 
-#. For users with a `GitHub <https://github.com>`__ account
-   the best way to get started is to fork and run 
+#. For users with a `GitHub <https://github.com>`__ account or limitations
+   on running local software, the best way to get started is to fork and run
    :ref:`rivt-codespace <rivt-codespace>` in a browser. 
 
 #. For users familiar with Python, *rivt* may be installed at the system level
-   and in an isolated environment using *uv*. Further details are 
+   or in an isolated environment using *uv*. Further details are 
    :ref:`here <rivt-sys>`.
 
 *rivt* may be edited in a simple text processor and run from the command line 
@@ -56,11 +56,13 @@ A typical **VSCode IDE** layout for editing a *rivt file* is shown below.
 **[2]** rivt-code
 -------------------------------------------------------------------------------- 
 
-A *rivt-code* installation is recommended for Windows users unfamiliar with
-Python. *rivt-code* is a zip file that includes rivt, Python, VSCode and an
+A *rivt-code* installation is recommended for Windows users interested in trying
+*rivt* *rivt-code* is a zip file that includes rivt, Python, VSCode and an
 example rivt file. The zipped file size is ~800 MB which unzips to about 2.2
 GB. It may be downloaded from the `rivt-code repository
 <https://github.com/rivtlib-dev/rivt-code/releases/>`__.
+
+The zip file naming convention is:
 
 .. code-block:: text
 
@@ -68,7 +70,7 @@ GB. It may be downloaded from the `rivt-code repository
 
 where x is an a-z character representing mid month releases. 
 
-The tag release follows the major, minor and patch release number convention.
+The tag name follows the major, minor and patch release number convention.
 
 .. code-block:: text
 
@@ -76,19 +78,19 @@ The tag release follows the major, minor and patch release number convention.
 
 The zip file contents must be unzipped into a directory with read-write access
 - typically the users home folder or a flash drive. After unzipping, click the
-*rivt-code* shortcut to open the example rivt file in a rivt VSCode environment.
-Click on the triangle in the upper right to run the file and output text, pdf
-or html docs, depending on the | PUBLISH | setting. See the rivt user manual
-for details.
+*rivt-code* shortcut to open the example rivt file in a rivt VSCode
+environment. Click on the triangle in the upper right of the editor to run the
+file and output text, pdf or html docs, depending on the | PUBLISH | setting.
+See the rivt user manual for details.
 
 Features of *rivt-code* include:
 
 #. simplified, isolated installation
 #. package and framework integration
-#. installation needs to be updated as a whole, not as individual components. 
+#. installation generally needs to be updated as a whole, not the individual components. 
 #. integration with other programs may be more difficult. 
 
-rivt-code includes preinstalled VSCode extensions designed to simplify editing 
+*rivt-code* includes preinstalled VSCode extensions designed to simplify editing 
 navigation and running *rivt files*. They are listed in :ref:`vscode settings 
 <vscode-settings>` and may explored and modified in the VSCode interface. 
 
@@ -110,6 +112,13 @@ Codespaces are run in a personal GitHub account. When rivt-codespace is forked
 into a personal account and run, an example rivt file is loaded. The example
 file may be run and edited in the Codespace and the rivt interface extensions
 may be explored.
+
+The first time a rivt-codespace is run, it may take a few minutes to load and
+initialize the environment. After it is set up, it will load in a few seconds.
+The same delays apply to running a rivt file. The first time will be a minute
+or two to compile the Python files. Subsequent runs will be a few seconds. The
+rivt-codespace environment is persistent and will save any changes made to the
+example files.
 
 Steps for running rivt-codespace are provided in the README `here
 <https://github.com/rivtlib-dev/rivtlib>`__.
@@ -180,40 +189,13 @@ Python and programming.
 
 .. topic:: Step 2. Create the rivt environment
 
-    After installing *uv*, download and run the following rivt install script.
-    It installs an isolated *rivt environment* and example files in a
-    folder named *rivt-examples* in the users *Home* directory.
+    After installing *uv*, the following rivt install scripts
+    will install an isolated *rivt environment*  folder named *rivt-start* 
+    in the users *Home* directory.
 
     Windows:  :download:`rivtuv.cmd </_downloads/rivtuv.cmd>` 
 
     OSX and Linux: :download:`rivtuv.sh </_downloads/rivtuv.sh>`
-    
-.. topic:: Step 3. Run the example program from Pyzo.
-
-    The *rivt environment* is activated by:
-    
-    Windows:
-
-    .. code-block:: bash
-        
-        ./venv/Scripts/activate
-
-    macOS and Linux:
-
-    .. code-block:: bash
-        
-        source venv/bin/activate
-
-    *rivt* includes the `Pyzo <https://pyzo.org/>`__ IDE for editing and
-    running examples. Typing the command *pyzo-example* from the environment
-    root will load the example file *rv00-simple-doc.py* where it can be edited
-    and run.
-    
-    The example file can also be run from the command line with the command:
-
-    .. code-block:: bash
-
-        python -m rivt rv001-single-doc.py
 
     The uv environment can be completely removed with the following commands.
 
@@ -222,6 +204,16 @@ Python and programming.
         uv deactivate
         rmdir /s /q rivt-examples
         uv cache clean
+    
+.. topic:: Step 3. Download example rivt report folders
+
+    Example folders can be downloaded and unzipped through
+    `openmodels.info <https://www.openmodels.info>`__ or directly from  
+    `Google Cloud <https://drive.google.com/drive/u/1/folders/1NP04tdp3FRAir0ErvL2hlm3YBaFlLk5V>`__ .
+
+    *rivt* also includes the `Pyzo <https://pyzo.org/>`__ IDE for editing and
+    running examples. Pyzo may be configured in the uv environment and
+    provides an effective environment for running rivt examples. 
         
 ---------------------------------
 

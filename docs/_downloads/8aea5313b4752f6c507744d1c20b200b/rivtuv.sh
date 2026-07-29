@@ -51,20 +51,3 @@ else
   pip install --upgrade git+https://github.com/rivtlib-dev/rivtlib.git@main
 fi
 
-# download example project into new folder
-mkdir -p example2
-cd example2
-
-# Use -L to follow redirects and download raw files
-curl -L https://raw.githubusercontent.com/rivt-info/rivt-single-doc/main/rv000-single-doc.py -O
-curl -L https://raw.githubusercontent.com/rivt-info/rivt-single-doc/main/s-beam1-v.csv -O
-curl -L https://raw.githubusercontent.com/rivt-info/rivt-single-doc/main/s-sectprop.py -O
-curl -L https://raw.githubusercontent.com/rivt-info/rivt-single-doc/main/s-beam.png -O
-
-echo
-echo "Setup complete. To run the example (inside the activated venv):"
-echo "  python rv000-single-doc.py"
-echo
-echo "If you want an interactive shell after this script finishes, run:"
-echo "  exec \$SHELL"
-echo
