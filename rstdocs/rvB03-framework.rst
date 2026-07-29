@@ -13,13 +13,28 @@ user interface and capabilities. The documented frameworks include
 ----------------------------------
 
 
-**[2]** rivt-code and CodeSpaces
+**[2]** rivt-code
 ------------------------------------------------------------------------------
 
-The *rivt-code* and *rivt-CodeSpaces* framework includes *VSCode* for editing 
-and *git* for remote storage and version control. *rivt-code* is a local 
-portable zip  :ref:`installation  <rivt-code>`. *rivt-CodeSpaces* is a cloud
-based installation that may be forked into a personal GitHub repository.
+*rivt-code* includes *VSCode* `VSCode <https://code.visualstudio.com/>`
+for editing and managing *rivt-docs*. *rivt-code* is a local
+:ref:`portable installation <rivt-code>`.
+
+======================= =====================================================
+Purpose                    Link
+======================= =====================================================
+Editing                     `VSCode <https://code.visualstudio.com/>`_  
+rivt Extensions             :ref:`vscode-settings`
+======================= =====================================================
+
+---------------------------------
+
+
+**[2]** VSCode and rivt-codespaces
+-----------------------------------------------------------------------------
+
+*CodeSpaces* is a cloud based GitHub implementation of VSCode with a large
+set of extensions, including collaboration and versioning support. 
 
 ======================= =====================================================
 Purpose                    Link
@@ -29,24 +44,21 @@ rivt Extensions             :ref:`vscode-settings`
 Version Control             `Git <https://git-scm.com>`_
 ======================= =====================================================
 
----------------------------------
-
-
-**[2]** VSCode and CodeSpaces
------------------------------------------------------------------------------
-
-`VSCode <https://code.visualstudio.com/>`_ is an open source IDE with a large
-set of extensions, including collaboration support. Collaboration is 
-facilitated by the `Visual Studio Live Share
-<https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare>`_. 
-You can start a *Live Share* session either within *CodeSpaces* in 
-your browser, or within the *VS Code* desktop application. *CodeSpaces* 
-is a cloud based GitHub implementation of VSCode that shares many of the 
-same features.
-
 *GitHub Codespaces* is a VSCode cloud-based development environment connected
 to GitHub files. It can be set up with *rivt extensions* that provide a complete
 rivt editing and collaboration environment in the cloud.
+
+*rivt-codespace* is a cloud based rivt installation that may be 
+:ref:`forked<rivt-codespace>` into a personal GitHub repository.
+
+
+**[3]** rivt Collaboration
+-----------------------------------------------------------------------------
+
+Collaboration is facilitated by the `Visual Studio Live Share
+<https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare>`_. 
+You can start a *Live Share* session either within *CodeSpaces* in 
+your browser, or within the *VS Code* desktop application. 
 
 The *Live Share* extension enables:
 
@@ -68,7 +80,7 @@ The *Live Share* extension enables:
 ---------------------------
 
 
-**[3]** git
+**[4]** git
 ----------------------------------------------------------------------------
 
 Git is a free, open-source distributed version control system designed to track
@@ -113,11 +125,11 @@ distinct environments before saving:
 
 
 
-**[4]** Extended framework
+**[5]** Extended framework
 -----------------------------------------------------------------------------
 
-The *rivt extended framework* includes the *rivt-code* and additional 
-programs and libraries for formatting, drawing, diagramming and calculating.
+The *rivt extended framework* includes additional programs and libraries for
+formatting, drawing, diagramming and calculating.
 
 ======================= ==========================================================================
 Purpose                  Link
