@@ -8,7 +8,7 @@
 
 *rivt* interoperates with a large number of external programs that improve its
 user interface and capabilities. The documented frameworks include
-*rivt-code* and *rivt-framework*.
+*rivt-code*.
 
 ----------------------------------
 
@@ -19,6 +19,9 @@ user interface and capabilities. The documented frameworks include
 *rivt-code* includes *VSCode* `VSCode <https://code.visualstudio.com/>`
 for editing and managing *rivt-docs*. *rivt-code* is a local
 :ref:`portable installation <rivt-code>`.
+
+rivt folders include markdown help files that can be accessed from VSCode and
+other IDE's
 
 ======================= =====================================================
 Purpose                    Link
