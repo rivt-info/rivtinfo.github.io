@@ -82,10 +82,10 @@ interface for searching and downloading public *rivt files* on *GitHub* is
 *rivt* produces organized, formatted engineering documents from active
 calculation files using reasonable defaults. Use cases are listed :ref:`here
 <use-case>`. For static documents with rigid format requirements, including
-journal articles and books that do not need recalculation, tools like `Quarto
-<https://quarto.org/>`__ are likely a better fit. For interactive calculation 
+journal articles and books that do not need recalculation, `Quarto
+<https://quarto.org/>`__ is likely a better fit. For interactive calculation 
 documents not intended for organized report publication 
-`Jupyter Notebooks <https://jupyter.org/>`__ are likely a better fit. A brief 
+`Jupyter Notebooks <https://jupyter.org/>`__ is likely a better fit. A brief 
 discussion of current engineering document tools and their strengths relative 
 to the objectives of *rivt* is :ref:`here <motivation>`.
 
