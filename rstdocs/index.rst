@@ -19,21 +19,22 @@
    <hr>
 
 *rivt* is an open-source program for writing and assembling calculation
-documents with a focus on reuse [#]_. The large ecosystem of engineering calculation
-tools often requires organizing their output into a single project document.
-*rivt* is designed to write, assemble and link calculation documents and code 
-into a live, editable and organized format prior to publishing to a text, PDF or HTML
-static format. 
+documents with a focus on reuse [#]_.  The large ecosystem of engineering 
+analysis software often requires organizing and combining their output into a 
+single, systematic project document.
 
-The *rivt markup* language also facilitates conversion of any PDF or text
-document into a live calculation document that can then be modified or extended.
-Python knowledge is not required to use *rivt* but its capabilities are
-increased when Python scientific and engineering libraries and scripts are used.
-For further details refer to the `rivt user manual <https://rivt.info>`__.
+*rivt* is designed to write, assemble and link calculation documents and code
+into live, editable and organized *rivt files*  prior to publishing text, PDF or
+HTML *docs* or *reports*. *rivt markup* facilitates writing or converting any PDF or
+text document to a live calculation document that can then be modified or 
+extended. Python knowledge is not required to use *rivt* but Python scientific 
+and engineering libraries increase its capabilities.
 
-The primary use case for *rivt* is producing organized, live calculation
-documents that can be easily shared, reused and maintained. There are four 
-types of rivt files:
+The primary purpose of *rivt* is providing a stable *rivt file* format that
+can be shared, edited, and maintained as a live calculation file, and that 
+produces text, PDF and HTML engineering reports as output.  *rivt files* and 
+their output can be organized in three ways that differ only in their 
+folder structure and publication settings.
 
 .. code-block:: text
 
@@ -52,9 +53,9 @@ types of rivt files:
                     | for inclusion in documents and reports.
 
                     | A rivt report is the collated output of multiple
-                    | docs into a single text or PDF file or HTML
+                    | docs into a single text or PDF file, or HTML
       rivt report   | site. Docs are linked and grouped into divisions
-                    | using doc file name conventions.
+                    | using rivt file numbering conventions.
 
 For an overview of *rivt* see :ref:`here <rivt-overview>`. To get started with
 running examples see :ref:`install <rivt-start>`. For *rivt* and *AI* see
