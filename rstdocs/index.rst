@@ -1,8 +1,4 @@
 
-.. raw:: html
-
-   <div style="display:none">
-
 Home
 =================
 
