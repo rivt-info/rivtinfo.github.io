@@ -1,4 +1,11 @@
 
+.. raw:: html
+
+   <div style="display:none">
+
+Home
+=================
+
 .. figure::  _static/img/rivt-finalb.png
     :class: dark-light
     :scale: 20%
