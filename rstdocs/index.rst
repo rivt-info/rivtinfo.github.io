@@ -1,12 +1,6 @@
 
-.. raw:: html
+:title: Home
 
-   <div style="height: 0; visibility: hidden;">
-
-   Home
-   ========
-
-   </div>
 
 .. figure::  _static/img/rivt-finalb.png
     :class: dark-light
@@ -17,6 +11,7 @@
 .. raw:: html
 
    <hr>
+    
 
 *rivt* is an open-source program for writing and assembling calculation
 documents with a focus on reuse [#]_.  The large ecosystem of engineering 
