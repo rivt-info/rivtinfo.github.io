@@ -39,8 +39,14 @@ html_theme_options = {
         {
             "name": "home",
             "title": "home",
+            "url": "https://rivt.info",
+            "icon": "fa-solid fa-house",
+        },        
+        {
+            "name": "home",
+            "title": "home",
             "url": "https://rivt.info/index.html",
-            
+            "icon": "fa-solid fa-house",
         },        
     ],
     "pygments_light_style": "tango",
