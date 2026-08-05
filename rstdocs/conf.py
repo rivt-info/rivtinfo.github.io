@@ -38,8 +38,10 @@ html_theme_options = {
     "icon_links": [
         {
             "name": "home",
+            "title": "home",
             "url": "https://rivt.info/index.html",
-        },
+            
+        },        
     ],
     "pygments_light_style": "tango",
     "pygments_dark_style": "github-dark",
