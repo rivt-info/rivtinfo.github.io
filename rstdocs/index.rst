@@ -54,7 +54,7 @@ publication processing.
 
                     | A rivt report is the collated output of multiple
       rivt report   | docs into a single text or PDF file, or an HTML
-                    | site. A python script links, groups and numbers docs 
+                    | site. A Python script links and organizes docs 
                     | into a structured report using rivt file numbering. 
 
 For an overview of *rivt* see :ref:`here <rivt-overview>`. To get started with
