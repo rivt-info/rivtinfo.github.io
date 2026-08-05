@@ -383,8 +383,8 @@ and engineering libraries increases its capabilities.</p>
 <p>The primary purpose of <em>rivt</em> is providing a stable file format that
 can be shared, edited, and maintained as a live calculation document, and that
 produces text, PDF and HTML engineering reports as output.  <em>rivt files</em> and
-their output can be organized in three ways that differ only in their
-folder structure and publication settings.</p>
+can be organized in three ways, that differ only in their folder structure and
+publication processing.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>              | A rivt file is the basic input file that
 rivt file     | compiles to a text, PDF or HTML document.
               | It is a Python file (.py) that imports the
@@ -400,9 +400,9 @@ rivtbook      | common subject matter and a folder structure
               | for inclusion in documents and reports.
 
               | A rivt report is the collated output of multiple
-              | docs into a single text or PDF file, or HTML
-rivt report   | site. Docs are linked and grouped into divisions
-              | using rivt file numbering conventions.
+rivt report   | docs into a single text or PDF file, or an HTML
+              | site. A python script links, groups and numbers docs
+              | into a structured report using rivt file numbering.
 </pre></div>
 </div>
 <p>For an overview of <em>rivt</em> see <a class="reference internal" href="rvB01-overview.html#rivt-overview"><span class="std std-ref">here</span></a>. To get started with

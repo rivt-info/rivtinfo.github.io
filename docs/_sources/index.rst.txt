@@ -33,8 +33,8 @@ and engineering libraries increases its capabilities.
 The primary purpose of *rivt* is providing a stable file format that
 can be shared, edited, and maintained as a live calculation document, and that 
 produces text, PDF and HTML engineering reports as output.  *rivt files* and 
-their output can be organized in three ways that differ only in their 
-folder structure and publication settings.
+can be organized in three ways, that differ only in their folder structure and 
+publication processing.
 
 .. code-block:: text
 
@@ -53,9 +53,9 @@ folder structure and publication settings.
                     | for inclusion in documents and reports.
 
                     | A rivt report is the collated output of multiple
-                    | docs into a single text or PDF file, or HTML
-      rivt report   | site. Docs are linked and grouped into divisions
-                    | using rivt file numbering conventions.
+      rivt report   | docs into a single text or PDF file, or an HTML
+                    | site. A python script links, groups and numbers docs 
+                    | into a structured report using rivt file numbering. 
 
 For an overview of *rivt* see :ref:`here <rivt-overview>`. To get started with
 running examples see :ref:`install <rivt-start>`. For *rivt* and *AI* see
