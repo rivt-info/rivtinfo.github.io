@@ -38,7 +38,7 @@ html_theme_options = {
     "icon_links": [
         {
             "name": "home",
-            "url": "https://rivt.info",
+            "url": "https://rivt.info/index.html",
         },
     ],
     "pygments_light_style": "tango",
