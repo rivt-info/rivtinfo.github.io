@@ -1,0 +1,9 @@
+{% extends "!layout.html" %}
+
+{% block title %}
+{% if pagename == 'index' %}
+{{ html_title }}
+{% else %}
+{{ title|striptags|e }}{{ titlesuffix }}
+{% endif %}
+{% endblock %}

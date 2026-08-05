@@ -1,9 +1,4 @@
 
-.. raw:: html
-
-   <h1 style="display:none;">rivt Home</h1>
-
-
 .. figure::  _static/img/rivt-finalb.png
     :class: dark-light
     :scale: 20%
