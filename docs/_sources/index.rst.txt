@@ -1,7 +1,16 @@
 
-Home
+.. raw:: html
+
+   <div style="display:none">
+
+My Document Title
 =================
 
+.. raw:: html
+
+   </div>
+
+   
 .. figure::  _static/img/rivt-finalb.png
     :class: dark-light
     :scale: 20%
