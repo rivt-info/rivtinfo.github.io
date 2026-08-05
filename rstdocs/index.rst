@@ -65,14 +65,14 @@ output docs are provided in this :ref:`tutorial <rivt-tutor>`. Other documents
 and examples may be downloaded from `Google Drive. <https://www.openmodels.info>`__ 
 
 The *rivtlib* `Python package <https://pypi.org/project/rivtlib/>`__ formats
-and compiles a *rivt file* to a text, PDF or HTML document (*doc*) in a
-few seconds. *rivt file* sections may be interactively executed in an IDE. Multiple
-*rivt files* may be compiled into a collated *rivt report*.  *rivt files* may 
-be organized into  *rivtbooks*. These are rivt file collections around a 
-common subject matter and organized for efficient selection and inclusion in 
-reports.  This website is an example of an HTML *rivt report*. A convenient 
-interface for searching and downloading public *rivt files* on *GitHub* is 
-:doc:`here. <rvE02-github>` 
+and compiles a *rivt file* to a text, PDF or HTML document (*doc*) in a few
+seconds. *rivt file* sections may be interactively executed, top down, in an
+IDE.  Multiple *rivt files* may be compiled into a collated 
+:ref:`rivt report <rivt-report>`. This website is an example of an HTML *rivt
+report*. *rivt files* may be organized into :ref:`rivtbooks <rivt-books>` 
+around a common subject matter for efficient selection and inclusion 
+in reports. A convenient interface for searching and downloading public *rivt
+files* on *GitHub* is :doc:`here. <rvE02-github>`
 
 *rivt* produces organized, formatted engineering documents from active
 calculation files using reasonable defaults. Use cases are listed :ref:`here
