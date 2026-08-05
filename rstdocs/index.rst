@@ -61,14 +61,14 @@ For an overview of *rivt* see :ref:`here <rivt-overview>`. To get started with
 running examples see :ref:`install <rivt-start>`. For *rivt* and *AI* see
 :ref:`here <rivt-context>`. Examples of a :ref:`rivt file <example-file>` with
 :ref:`text <text-doc>`, :ref:`PDF <pdf-doc>`, and :ref:`HTML <html-doc>`
-output docs are provided in this :ref:`tutorial <rivt-tutor>`. Other documents 
+output *docs* are provided in this :ref:`tutorial <rivt-tutor>`. Other documents 
 and examples may be downloaded from `Google Drive. <https://www.openmodels.info>`__ 
 
 The *rivtlib* `Python package <https://pypi.org/project/rivtlib/>`__ formats
 and compiles a *rivt file* to a text, PDF or HTML document (*doc*) in a few
 seconds. *rivt file* sections may be interactively executed, top down, in an
 IDE.  Multiple *rivt files* may be compiled into a collated 
-:ref:`rivt report <rivt-report>`. This website is an example of an HTML *rivt
+:ref:`rivt report <rivt-reports>`. This website is an example of an HTML *rivt
 report*. *rivt files* may be organized into :ref:`rivtbooks <rivt-books>` 
 around a common subject matter for efficient selection and inclusion 
 in reports. A convenient interface for searching and downloading public *rivt
