@@ -27,11 +27,11 @@ single, systematic project document.
 into live, editable and organized *rivt files*  prior to publishing text, PDF or
 HTML *docs* or *reports*. *rivt markup* facilitates writing, or converting any PDF
 or text document to, a live calculation document that can be modified. 
-Python knowledge is not required to use *rivt* but Python scientific 
-and engineering libraries increase its capabilities.
+Python knowledge is not required to use *rivt* but incorporating Python scientific
+and engineering libraries increases its capabilities.
 
-The primary purpose of *rivt* is providing a stable *rivt file* format that
-can be shared, edited, and maintained as a live calculation file, and that 
+The primary purpose of *rivt* is providing a stable file format that
+can be shared, edited, and maintained as a live calculation document, and that 
 produces text, PDF and HTML engineering reports as output.  *rivt files* and 
 their output can be organized in three ways that differ only in their 
 folder structure and publication settings.
@@ -72,7 +72,7 @@ IDE. Multiple *rivt files* may be compiled into a collated :ref:`rivt report
 files* may be organized into :ref:`rivtbooks <rivt-books>` with a common
 subject matter for efficient selection and inclusion in reports. A convenient
 interface for searching and downloading public *rivt files* on *GitHub* is
-:doc:`here. <rvE02-github>` . *rivt* reports and examples are also available at
+:doc:`here. <rvE02-github>` . *rivt reports* and examples are also available at
 `openmodels.info <https://www.openmodels.info/models>`__.
 
 *rivt* produces organized, formatted engineering documents from active
