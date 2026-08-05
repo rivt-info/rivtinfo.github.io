@@ -35,20 +35,6 @@ html_css_files = [
     "css/custom.css",
 ]
 html_theme_options = {
-    "icon_links": [
-        {
-            "name": "home",
-            "title": "home",
-            "url": "https://rivt.info",
-            "icon": "fa-solid fa-house",
-        },        
-        {
-            "name": "home",
-            "title": "home",
-            "url": "https://rivt.info/index.html",
-            "icon": "fa-solid fa-house",
-        },        
-    ],
     "pygments_light_style": "tango",
     "pygments_dark_style": "github-dark",
     "navbar_start": ["navbar-logo"],

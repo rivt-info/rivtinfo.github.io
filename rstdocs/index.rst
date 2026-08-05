@@ -1,5 +1,7 @@
 
-:title: Home
+.. raw:: html
+
+   <h1 style="display:none;">rivt Home</h1>
 
 
 .. figure::  _static/img/rivt-finalb.png
@@ -20,10 +22,10 @@ single, systematic project document.
 
 *rivt* is designed to write, assemble and link calculation documents and code
 into live, editable and organized *rivt files*  prior to publishing text, PDF or
-HTML *docs* or *reports*. *rivt markup* facilitates writing, or converting any PDF
-or text document to, a live calculation document that can be modified. 
-Python knowledge is not required to use *rivt* but incorporating Python scientific
-and engineering libraries increases its capabilities.
+HTML *docs* or *reports*. *rivt markup* facilitates converting any PDF or text
+document to, or directly writing, a live calculation document that can be 
+easily modified and extended. Python knowledge is not required to use *rivt* but 
+incorporating Python scientific and engineering libraries increases its capabilities.
 
 The primary purpose of *rivt* is providing a stable file format that
 can be shared, edited, and maintained as a live calculation document, and that 
