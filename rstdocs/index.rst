@@ -36,9 +36,9 @@ incorporating Python scientific and engineering libraries increases its capabili
 
 The primary purpose of *rivt* is providing a stable file format that
 can be shared, edited, and maintained as a live calculation document, and that 
-produces text, PDF and HTML engineering reports as output.  *rivt files* and 
-can be organized in three ways, that differ only in their folder structure and 
-publication processing.
+produces text, PDF and HTML engineering reports as output.  *rivt files* 
+can be organized in three ways that differ only in folder structure and 
+publication process settings.
 
 .. code-block:: text
 
@@ -96,7 +96,7 @@ to the objectives of *rivt* is :ref:`here <motivation>`.
 
    <hr>
 
-   <p style="color:rgb(63,177,197);">ver: 1.0.0a12 
+   <p style="color:rgb(63,177,197);">ver: 1.0.0a18 
    (Note: rivt is currently <i>alpha sofware</i>. Some features are 
    incomplete and markup tags, commands and assignments may change.)</p>
 
