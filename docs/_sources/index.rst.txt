@@ -76,8 +76,8 @@ storage service. *rivt report* examples on *Google Drive* are available at
 version control are needed `GitHub <https://github.com/>`__ may be used. 
 *rivt files and reports* are organized in top level 
 :ref:`rivt project <rivt-folders>` or :ref:`rivtbook <rivt-books>` folders which
-work well as *GitHub repositories*. *rivt* also generates a text report as a 
-*GitHub README* file. A convenient interface for searching public *rivt file* 
+work well as *GitHub* repositories. *rivt* also generates a text report as a 
+*GitHub* README file. A convenient interface for searching public *rivt file* 
 READMEs  on *GitHub* is :doc:`here. <rvE02-github>`. 
 
 *rivt* produces organized, formatted engineering documents from active
@@ -88,7 +88,7 @@ For documents with rigid format requirements, including
 journal articles and books that do not need active recalculation, `Quarto
 <https://quarto.org/>`__ is likely a better fit. For interactive calculation 
 documents that do not need an organized published report,
-`Jupyter Notebooks <https://jupyter.org/>`__ is likely a better fit. 
+`Jupyter Notebooks <https://jupyter.org/>`__ is likely a better tool. 
 
 .. [#] rivt includes switches that selectively export *rivt file* sections
     to a *public rivt report folder* for open-source reuse.
