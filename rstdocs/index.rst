@@ -78,10 +78,11 @@ storage service. *rivt report* examples are available at
 `openmodels.info <https://www.openmodels.info/models>`__.
 
 If collaboration and version control are needed `GitHub <https://github.com/>`__ 
-may be used. *rivt files and reports* are organized in a top level *rivt project* 
-or *rivtbook* folder which works well as a *GitHub repository*. *rivt* also 
-generates a text report as a *README* file. A convenient interface for  
-searching READMEs of public *rivt files* on *GitHub* is :doc:`here. <rvE02-github>`. 
+may be used. *rivt files and reports* are organized in top level 
+`rivt project <rivt-folders>` or `rivtbook <rivt-books>` folders which work
+well as *GitHub repositories*. *rivt* also generates a text report as a 
+*GitHub README* file. A convenient interface for searching public *rivt file* 
+READMEs  on *GitHub* is :doc:`here. <rvE02-github>`. 
 
 *rivt* produces organized, formatted engineering documents from active
 calculation files using reasonable defaults. Use cases are listed :ref:`here

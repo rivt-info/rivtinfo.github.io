@@ -23,27 +23,24 @@ Home
     
 
 *rivt* is an open-source program for writing and assembling calculation
-documents with a focus on reuse [#]_.  The large ecosystem of engineering 
-analysis software often requires organizing and combining their output into a 
-single, systematic project document.
+documents with a focus on reuse [#]_.  Extensive libraries of engineering 
+and scientific software often require organizing and combining different outputs 
+into systematic project documents.
 
-*rivt* is designed to write, assemble and link calculation documents and code
-into live, editable and organized *rivt files*  prior to publishing text, PDF or
-HTML *docs* or *reports*. *rivt markup* facilitates converting any PDF or text
-document to, or directly writing, a live calculation document that can be 
-easily modified and extended. Python knowledge is not required to use *rivt* but 
-incorporating Python scientific and engineering libraries increases its capabilities.
+*rivt markup* is used to write live, linked and editable *rivt files*. *rivt*
+publishes the *rivt files* as text, PDF or HTML *docs* or *reports*. Python
+knowledge is not required to use *rivt* but incorporating Python scientific and
+engineering libraries into a *rivt file* increases its capabilities.
 
-The primary purpose of *rivt* is providing a stable file format that
-can be shared, edited, and maintained as a live calculation document, and that 
-produces text, PDF and HTML engineering reports as output.  *rivt files* 
-can be organized in three ways that differ only in folder structure and 
-publication process settings.
+The primary purpose of *rivt* is providing a stable file format that can be
+shared, edited, and maintained as a live calculation document, and that
+produces text, PDF and HTML engineering reports as output. *rivt files* can be
+organized in two ways that differ only in folder structure.
 
 .. code-block:: text
 
                     | A rivt file is the basic input file that
-      rivt file     | compiles to a text, PDF or HTML document. 
+      rivt file     | compiles to a text, PDF or HTML document (doc). 
                     | It is a Python file (.py) that imports the 
                     | rivtlib Python package and uses rivt markup.
 
@@ -52,14 +49,12 @@ publication process settings.
                     | that makes it easy to select files and resources
                     | for inclusion in documents and reports.
 
-                    | A rivt doc is the published output of a rivt
-      rivt doc      | file. A doc may be formatted as text, PDF
-                    | or HTML from the same rivt file.
-
                     | A rivt report is the collated output of multiple
-      rivt report   | docs into a single text or PDF file, or an HTML
-                    | site. A Python script links and organizes docs 
-                    | into a structured report using rivt file numbering. 
+                    | docs into a single text or PDF file, or an HTML
+      rivt report   | site. A rivt doc is the published output of a rivt
+                    | file and a report can consist of a single doc. 
+                    | A Python script links and organizes docs into a
+                    | report using rivt file numbers 
 
 For an overview of *rivt* see :ref:`here <rivt-overview>`. To get started with
 running examples see :ref:`install <rivt-start>`. For *rivt* and *AI* see
@@ -69,25 +64,35 @@ output *docs* are provided in this :ref:`tutorial <rivt-tutor>`. Other documents
 and examples may be downloaded from `Google Drive. <https://www.openmodels.info>`__ 
 
 The *rivtlib* `Python package <https://pypi.org/project/rivtlib/>`__ formats
-and compiles a *rivt file* to a text, PDF or HTML document (*doc*) in a few
-seconds. *rivt file* sections may be interactively executed, top down, in an
-IDE. Multiple *rivt files* may be compiled into a collated :ref:`rivt report
-<rivt-reports>`. This website is an example of an HTML *rivt report*. *rivt
-files* may be organized into :ref:`rivtbooks <rivt-books>` with a common
-subject matter for efficient selection and inclusion in reports. A convenient
-interface for searching and downloading public *rivt files* on *GitHub* is
-:doc:`here. <rvE02-github>` . *rivt reports* and examples are also available at
+and compiles a *rivt file* to a text, PDF or HTML document (*doc*) in a second
+or two. A *rivt file* may be interactively executed from the top down in 
+an IDE, or as a whole from the command line. Multiple *rivt files* may be 
+compiled into a collated :ref:`rivt report  <rivt-reports>`. 
+This website is an example of an HTML *rivt report*.  *rivt files* may also be 
+organized into :ref:`rivtbooks <rivt-books>` that address  a common subject matter. 
+*rivtbooks* are organized for efficient selection and inclusion of chapters in 
+a report. 
+
+*rivt files and reports* may be shared and distributed through any cloud
+storage service. *rivt report* examples are available at 
 `openmodels.info <https://www.openmodels.info/models>`__.
+
+If collaboration and version control are needed `GitHub <https://github.com/>`__ 
+may be used. *rivt files and reports* are organized in top level 
+`rivt project <rivt-folders>` or `rivtbook <rivt-books>` folders which work
+well as *GitHub repositories*. *rivt* also generates a text report as a 
+*GitHub README* file. A convenient interface for searching public *rivt file* 
+READMEs  on *GitHub* is :doc:`here. <rvE02-github>`. 
 
 *rivt* produces organized, formatted engineering documents from active
 calculation files using reasonable defaults. Use cases are listed :ref:`here
-<use-case>`. For static documents with rigid format requirements, including
+<use-case>`. A brief discussion of current engineering document tools and their 
+strengths relative to the objectives of *rivt* is :ref:`here <motivation>`.
+For static documents with rigid format requirements, including
 journal articles and books that do not need recalculation, `Quarto
 <https://quarto.org/>`__ is likely a better fit. For interactive calculation 
-documents not intended for organized report publication 
-`Jupyter Notebooks <https://jupyter.org/>`__ is likely a better fit. A brief 
-discussion of current engineering document tools and their strengths relative 
-to the objectives of *rivt* is :ref:`here <motivation>`.
+documents that do not need an organized publihsed report,
+`Jupyter Notebooks <https://jupyter.org/>`__ is likely a better fit. 
 
 .. [#] rivt includes switches that selectively export *rivt file* sections
     to a *public rivt report folder* for open-source reuse.

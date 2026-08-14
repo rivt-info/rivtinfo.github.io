@@ -409,7 +409,8 @@
 <h1><strong>C.3 |</strong> Folders<a class="headerlink" href="#c-3-folders" title="Link to this heading">#</a></h1>
 <section id="report-folders">
 <span id="rivt-folders"></span><h2><strong>[1]</strong>  Report Folders<a class="headerlink" href="#report-folders" title="Link to this heading">#</a></h2>
-<p>A typical <a class="reference internal" href="rvG02-terms.html#term-report-folder"><span class="xref std std-term">report folder</span></a> structure is shown below. The required
+<p>A typical <a class="reference internal" href="rvG02-terms.html#term-report-folder"><span class="xref std std-term">report folder</span></a> structure is shown below. The top level
+folder is the <em>rivt project folder</em>. The required
 <em>rivt file</em> names and prefixes are shown in brackets.  For the
 <a class="reference internal" href="rvG02-terms.html#term-rivtbook-folder"><span class="xref std std-term">rivtbook folder</span></a> structure see <a class="reference internal" href="rvC05-rivtbks.html#rivt-books"><span class="std std-ref">see</span></a>.</p>
 <p style="border-width:2px; border-style:solid;
@@ -418,8 +419,8 @@ border-color:#49b2c3;padding: 1em;">
 <b>Folder Naming</b><br>
 <br>
 
-A report folder can contain any file or folder but the following structure is
-required for <i>doc</i> processing. <i>report folders</i> include at least
+A report project folder can contain any file or folder but the following structure
+is required for <i>doc</i> processing. <i>report folders</i> include at least
 the folders and files shown in brackets[] below. Folders with an underscore
 contain rivt generated files. Files and folders are organized under
 a rivt root folder with the prefix <i>rivt-</i> followed by the report
@@ -430,7 +431,7 @@ similar folder. Several <i>rivt-folders</i> can be downloaded at
 <a href="https://drive.google.com/drive/folders/1hwVOs0CVJqdZlTieV_Lt5bICbd3ywzWj?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto">openmodels.info</a>.
 <br> <br><p>Reports are organized using the folllowing folders and subfolders.</p>
 <dl class="simple">
-<dt><em>rivt-</em> report-label</dt><dd><p>Top level report folder containing rivt report and public files.</p>
+<dt><em>rivt-</em> report-label</dt><dd><p>Top level project folder containing rivt report and public files.</p>
 </dd>
 <dt><em>_rivt-public</em></dt><dd><p>Includes <em>public rivt files</em> designated byt the author written by
 <em>rivtlib</em> for public sharing. The prefix <em>rvAnn-</em> is changed to
@@ -526,7 +527,7 @@ separator “/” in the path specification.</p>
 </section>
 <section id="report-folder-structure">
 <span id="report-folders2"></span><h2><strong>[4]</strong>  Report Folder Structure<a class="headerlink" href="#report-folder-structure" title="Link to this heading">#</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt-<span class="o">]</span>Report-Label/<span class="w">             </span>report<span class="w"> </span>folder
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt-<span class="o">]</span>Report-Label/<span class="w">             </span>report<span class="w"> </span>project<span class="w"> </span>folder
 <span class="w">    </span>├──<span class="w"> </span>.help/<span class="w">                        </span><span class="nb">help</span><span class="w"> </span>files
 <span class="w">    </span>├──<span class="w"> </span>.vscode/<span class="w">                      </span>optional<span class="w"> </span>VSCode<span class="w"> </span>settings
 <span class="w">    </span>├──<span class="w"> </span>README.txt<span class="w">                    </span>rivt-generated<span class="w"> </span>text<span class="w"> </span>report
