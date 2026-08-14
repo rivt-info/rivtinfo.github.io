@@ -52,7 +52,7 @@ produces formatted text, PDF and HTML engineering reports as output.
                     | rivt docs into a single text or PDF file, or an HTML
       rivt report   | site. A rivt doc is the published output of a rivt  
                     | file. A Python script links and organizes multiple 
-                    | docs into areport using rivt file numbers. 
+                    | docs into a report using rivt file numbers. 
 
 For an overview of *rivt* see :ref:`here <rivt-overview>`. To get started with
 running examples see :ref:`install <rivt-start>`. For *rivt with AI* see
