@@ -23,19 +23,18 @@ Home
     
 
 *rivt* is an open-source program for writing and assembling calculation
-documents with a focus on reuse [#]_.  Extensive libraries of engineering 
-and scientific software often require organizing and combining different outputs 
-into systematic project documents.
-
-*rivt markup* is used to write live, linked and editable *rivt files*. *rivt*
-publishes the *rivt files* as text, PDF or HTML *docs* or *reports*. Python
-knowledge is not required to use *rivt* but incorporating Python scientific and
-engineering libraries into a *rivt file* increases its capabilities.
+documents with a focus on reuse [#]_. Extensive libraries of engineering and
+scientific software often require organizing and combining different outputs
+into systematic project documents. *rivt markup* is used to write live, linked
+and editable *rivt files*. *rivt* publishes the *rivt files* as text, PDF or
+HTML *docs* or *reports*. Python knowledge is not required to use *rivt* but
+if Python scientific and engineering libraries into a *rivt file*
+its capabilities are increased.
 
 The primary purpose of *rivt* is providing a stable file format that can be
-shared, edited, and maintained as a live calculation document, and that
-produces text, PDF and HTML engineering reports as output. *rivt files* can be
-organized in two ways that differ only in folder structure.
+shared, edited, and maintained as a live calculation document that
+produces formatted text, PDF and HTML engineering reports as output. 
+*rivt files* can be organized in two ways that differ only in folder structure:
 
 .. code-block:: text
 
@@ -50,18 +49,17 @@ organized in two ways that differ only in folder structure.
                     | for inclusion in documents and reports.
 
                     | A rivt report is the collated output of multiple
-                    | docs into a single text or PDF file, or an HTML
+                    | rivt docs into a single text or PDF file, or an HTML
       rivt report   | site. A rivt doc is the published output of a rivt
-                    | file and a report can consist of a single doc. 
+                    | file. A report can consist of a single doc. 
                     | A Python script links and organizes docs into a
-                    | report using rivt file numbers 
+                    | report using rivt file numbers. 
 
 For an overview of *rivt* see :ref:`here <rivt-overview>`. To get started with
-running examples see :ref:`install <rivt-start>`. For *rivt* and *AI* see
+running examples see :ref:`install <rivt-start>`. For *rivt with AI* see
 :ref:`here <rivt-context>`. Examples of a :ref:`rivt file <example-file>` with
-:ref:`text <text-doc>`, :ref:`PDF <pdf-doc>`, and :ref:`HTML <html-doc>`
-output *docs* are provided in this :ref:`tutorial <rivt-tutor>`. Other documents 
-and examples may be downloaded from `Google Drive. <https://www.openmodels.info>`__ 
+:ref:`text <text-doc>`, :ref:`PDF <pdf-doc>`, and :ref:`HTML <html-doc>` *docs* 
+are provided in this :ref:`tutorial <rivt-tutor>`.
 
 The *rivtlib* `Python package <https://pypi.org/project/rivtlib/>`__ formats
 and compiles a *rivt file* to a text, PDF or HTML document (*doc*) in a second
@@ -75,10 +73,9 @@ a report.
 
 *rivt files and reports* may be shared and distributed through any cloud
 storage service. *rivt report* examples are available at 
-`openmodels.info <https://www.openmodels.info/models>`__.
-
-If collaboration and version control are needed `GitHub <https://github.com/>`__ 
-may be used. *rivt files and reports* are organized in top level 
+`openmodels.info <https://www.openmodels.info/models>`__. If collaboration and 
+version control are needed `GitHub <https://github.com/>`__ may be used. 
+*rivt files and reports* are organized in top level 
 `rivt project <rivt-folders>` or `rivtbook <rivt-books>` folders which work
 well as *GitHub repositories*. *rivt* also generates a text report as a 
 *GitHub README* file. A convenient interface for searching public *rivt file* 

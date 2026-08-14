@@ -368,17 +368,17 @@
 </a>
 </figure>
 <hr><p><em>rivt</em> is an open-source program for writing and assembling calculation
-documents with a focus on reuse <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.  Extensive libraries of engineering
-and scientific software often require organizing and combining different outputs
-into systematic project documents.</p>
-<p><em>rivt markup</em> is used to write live, linked and editable <em>rivt files</em>. <em>rivt</em>
-publishes the <em>rivt files</em> as text, PDF or HTML <em>docs</em> or <em>reports</em>. Python
-knowledge is not required to use <em>rivt</em> but incorporating Python scientific and
-engineering libraries into a <em>rivt file</em> increases its capabilities.</p>
+documents with a focus on reuse <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>. Extensive libraries of engineering and
+scientific software often require organizing and combining different outputs
+into systematic project documents. <em>rivt markup</em> is used to write live, linked
+and editable <em>rivt files</em>. <em>rivt</em> publishes the <em>rivt files</em> as text, PDF or
+HTML <em>docs</em> or <em>reports</em>. Python knowledge is not required to use <em>rivt</em> but
+if Python scientific and engineering libraries into a <em>rivt file</em>
+its capabilities are increased.</p>
 <p>The primary purpose of <em>rivt</em> is providing a stable file format that can be
-shared, edited, and maintained as a live calculation document, and that
-produces text, PDF and HTML engineering reports as output. <em>rivt files</em> can be
-organized in two ways that differ only in folder structure.</p>
+shared, edited, and maintained as a live calculation document that
+produces formatted text, PDF and HTML engineering reports as output.
+<em>rivt files</em> can be organized in two ways that differ only in folder structure:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>              | A rivt file is the basic input file that
 rivt file     | compiles to a text, PDF or HTML document (doc).
               | It is a Python file (.py) that imports the
@@ -390,19 +390,18 @@ rivtbook      | common subject matter and a folder structure
               | for inclusion in documents and reports.
 
               | A rivt report is the collated output of multiple
-              | docs into a single text or PDF file, or an HTML
+              | rivt docs into a single text or PDF file, or an HTML
 rivt report   | site. A rivt doc is the published output of a rivt
-              | file and a report can consist of a single doc.
+              | file. A report can consist of a single doc.
               | A Python script links and organizes docs into a
-              | report using rivt file numbers
+              | report using rivt file numbers.
 </pre></div>
 </div>
 <p>For an overview of <em>rivt</em> see <a class="reference internal" href="rvB01-overview.html#rivt-overview"><span class="std std-ref">here</span></a>. To get started with
-running examples see <a class="reference internal" href="rvA01-start.html#rivt-start"><span class="std std-ref">install</span></a>. For <em>rivt</em> and <em>AI</em> see
+running examples see <a class="reference internal" href="rvA01-start.html#rivt-start"><span class="std std-ref">install</span></a>. For <em>rivt with AI</em> see
 <a class="reference internal" href="rvF01-aiintro.html#rivt-context"><span class="std std-ref">here</span></a>. Examples of a <a class="reference internal" href="rvA03-exfile.html#example-file"><span class="std std-ref">rivt file</span></a> with
-<a class="reference internal" href="rvA04-txt.html#text-doc"><span class="std std-ref">text</span></a>, <a class="reference internal" href="rvA06-pdf.html#pdf-doc"><span class="std std-ref">PDF</span></a>, and <a class="reference internal" href="rvA05-html.html#html-doc"><span class="std std-ref">HTML</span></a>
-output <em>docs</em> are provided in this <a class="reference internal" href="rvA02-tutor.html#rivt-tutor"><span class="std std-ref">tutorial</span></a>. Other documents
-and examples may be downloaded from <a class="reference external" href="https://www.openmodels.info" rel="noreferrer" target="_blank">Google Drive.</a></p>
+<a class="reference internal" href="rvA04-txt.html#text-doc"><span class="std std-ref">text</span></a>, <a class="reference internal" href="rvA06-pdf.html#pdf-doc"><span class="std std-ref">PDF</span></a>, and <a class="reference internal" href="rvA05-html.html#html-doc"><span class="std std-ref">HTML</span></a> <em>docs</em>
+are provided in this <a class="reference internal" href="rvA02-tutor.html#rivt-tutor"><span class="std std-ref">tutorial</span></a>.</p>
 <p>The <em>rivtlib</em> <a class="reference external" href="https://pypi.org/project/rivtlib/" rel="noreferrer" target="_blank">Python package</a> formats
 and compiles a <em>rivt file</em> to a text, PDF or HTML document (<em>doc</em>) in a second
 or two. A <em>rivt file</em> may be interactively executed from the top down in
@@ -414,9 +413,9 @@ organized into <a class="reference internal" href="rvC05-rivtbks.html#rivt-books
 a report.</p>
 <p><em>rivt files and reports</em> may be shared and distributed through any cloud
 storage service. <em>rivt report</em> examples are available at
-<a class="reference external" href="https://www.openmodels.info/models" rel="noreferrer" target="_blank">openmodels.info</a>.</p>
-<p>If collaboration and version control are needed <a class="reference external" href="https://github.com/" rel="noreferrer" target="_blank">GitHub</a>
-may be used. <em>rivt files and reports</em> are organized in top level
+<a class="reference external" href="https://www.openmodels.info/models" rel="noreferrer" target="_blank">openmodels.info</a>. If collaboration and
+version control are needed <a class="reference external" href="https://github.com/" rel="noreferrer" target="_blank">GitHub</a> may be used.
+<em>rivt files and reports</em> are organized in top level
 <cite>rivt project &lt;rivt-folders&gt;</cite> or <cite>rivtbook &lt;rivt-books&gt;</cite> folders which work
 well as <em>GitHub repositories</em>. <em>rivt</em> also generates a text report as a
 <em>GitHub README</em> file. A convenient interface for searching public <em>rivt file</em>
