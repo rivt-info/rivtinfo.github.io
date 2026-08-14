@@ -6,7 +6,8 @@
 **[1]**  Report Folders
 ------------------------------------------------------------------------------
 
-A typical :term:`report folder` structure is shown below. The required 
+A typical :term:`report folder` structure is shown below. The top level 
+folder is the *rivt project folder*. The required 
 *rivt file* names and prefixes are shown in brackets.  For the
 :term:`rivtbook folder` structure see :ref:`see <rivt-books>`.
 
@@ -18,8 +19,8 @@ A typical :term:`report folder` structure is shown below. The required
     <b>Folder Naming</b><br>
     <br>
 
-    A report folder can contain any file or folder but the following structure is
-    required for <i>doc</i> processing. <i>report folders</i> include at least
+    A report project folder can contain any file or folder but the following structure
+    is required for <i>doc</i> processing. <i>report folders</i> include at least
     the folders and files shown in brackets[] below. Folders with an underscore
     contain rivt generated files. Files and folders are organized under
     a rivt root folder with the prefix <i>rivt-</i> followed by the report
@@ -34,7 +35,7 @@ A typical :term:`report folder` structure is shown below. The required
 Reports are organized using the folllowing folders and subfolders. 
 
 *rivt-* report-label 
-    Top level report folder containing rivt report and public files.
+    Top level project folder containing rivt report and public files.
 
 *_rivt-public* 
     Includes *public rivt files* designated byt the author written by 
@@ -110,7 +111,7 @@ See :ref:`command summary <command-summary>` for further details.
 
 .. code-block:: bash
 
-    [rivt-]Report-Label/             report folder              
+    [rivt-]Report-Label/             report project folder              
         ├── .help/                        help files
         ├── .vscode/                      optional VSCode settings   
         ├── README.txt                    rivt-generated text report                  
