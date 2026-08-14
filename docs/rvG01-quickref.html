@@ -442,7 +442,7 @@
 <p>where <strong>rS</strong> is a <em>rivt string</em>. The first line of a <em>rivt string</em> (rS)
 is the <a class="reference internal" href="rvG02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a>.</p>
 <p><strong>Header Defaults</strong></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&quot;&quot;Section Label</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label</span>
 
 <span class="s2">     Content text and rivt markup - indented four spaces.</span>
 
@@ -452,7 +452,7 @@ is the <a class="reference internal" href="rvG02-terms.html#term-header-substrin
 </pre></div>
 </div>
 <p><strong>Header Modifications</strong></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&quot;&quot;Section Label | shmpn | type | template or script file</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | shmpn | type | template or script file</span>
 
 
 <span class="s2">     Content text and rivt markup - indented four spaces.</span>
@@ -479,7 +479,7 @@ processes the section but suppresses the <em>doc</em> output.</p></li>
 merges the section with the previous section.</p></li>
 <li><p>p
 toggles the public/private status of the section. The rivt file default is
-private unless overridden by a <a class="reference internal" href="rvC01-documents.html#comment-settings"><span class="std std-ref">comment settings</span></a></p></li>
+private unless overridden by a <a class="reference internal" href="rvC01-documents.html#comment-settings"><span class="std std-ref">comment setting</span></a></p></li>
 <li><p>n
 Starts a new pdf page.</p></li>
 </ul>
@@ -491,8 +491,7 @@ determined by the API method. The type setting for all
 API methods, except rv.T, is <em>rvt</em>. A <em>rvt</em> file type is a section content
 string stored as a file. It is written by the <strong>s</strong> parameter.</p>
 <p>For the rv.T method the type settings are:</p>
-<blockquote>
-<div><ol class="arabic simple">
+<ol class="arabic simple">
 <li><p><strong>PYTHON</strong> - run Python script</p></li>
 <li><p><strong>python</strong> - insert Python script</p></li>
 <li><p><strong>text</strong> - literal text</p></li>
@@ -501,7 +500,6 @@ string stored as a file. It is written by the <strong>s</strong> parameter.</p>
 <li><p><strong>mermaid</strong> - Mermaid diagram (requires mermaid installation)</p></li>
 <li><p><strong>latex</strong> - LaTeX (requires LaTeX installation)</p></li>
 </ol>
-</div></blockquote>
 <hr class="docutils" />
 </section>
 <section id="line-tags">

@@ -27,7 +27,7 @@ is the :term:`header substring`.
 
 .. code-block:: python
 
-    rv._(r"""Section Label 
+    rv._("""Section Label 
 
          Content text and rivt markup - indented four spaces.
         
@@ -40,7 +40,7 @@ is the :term:`header substring`.
 
 .. code-block:: python
 
-    rv._(r"""Section Label | shmpn | type | template or script file
+    rv._("""Section Label | shmpn | type | template or script file
 
 
          Content text and rivt markup - indented four spaces. 
@@ -72,7 +72,7 @@ acceptable. The default parameters are shown in the
 
 - p 
   toggles the public/private status of the section. The rivt file default is
-  private unless overridden by a :ref:`comment settings <comment-settings>`
+  private unless overridden by a :ref:`comment setting <comment-settings>`
 
 - n 
   Starts a new pdf page.
@@ -88,13 +88,13 @@ string stored as a file. It is written by the **s** parameter.
 
 For the rv.T method the type settings are:
 
- #. **PYTHON** - run Python script
- #. **python** - insert Python script
- #. **text** - literal text
- #. **rst** - reStructuredText
- #. **html** - HTML markup
- #. **mermaid** - Mermaid diagram (requires mermaid installation)
- #. **latex** - LaTeX (requires LaTeX installation)
+#. **PYTHON** - run Python script
+#. **python** - insert Python script
+#. **text** - literal text
+#. **rst** - reStructuredText
+#. **html** - HTML markup
+#. **mermaid** - Mermaid diagram (requires mermaid installation)
+#. **latex** - LaTeX (requires LaTeX installation)
 
 
 ----------------------------------
