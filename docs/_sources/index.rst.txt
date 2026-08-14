@@ -48,11 +48,10 @@ produces formatted text, PDF and HTML engineering reports as output.
                     | that makes it easy to select files and resources
                     | for inclusion in docs and reports.
 
-                    | A rivt report is the collated output of multiple
+                    | A rivt report is the collated output of one or more 
                     | rivt docs into a single text or PDF file, or an HTML
-      rivt report   | site. A rivt doc is the published output of a rivt
-                    | file (a report can consist of a single doc). 
-                    | A Python script links and organizes docs into a
+      rivt report   | site. A rivt doc is the published output of a rivt file. 
+                    | A Python script links and organizes multiple docs into a
                     | report using rivt file numbers. 
 
 For an overview of *rivt* see :ref:`here <rivt-overview>`. To get started with
