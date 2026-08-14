@@ -26,10 +26,10 @@ Home
 documents with a focus on reuse [#]_. Extensive libraries of engineering and
 scientific software often require organizing and combining different outputs
 into systematic project documents. *rivt markup* is used to write live, linked
-and editable *rivt files*. *rivt* publishes the *rivt files* as text, PDF or
-HTML *docs* or *reports*. Python knowledge is not required to use *rivt* but
-if Python scientific and engineering libraries into a *rivt file*
-its capabilities are increased.
+and editable *rivt files*. *rivt* publishes *rivt files* as text, PDF or
+HTML *docs* or *reports*. Python knowledge is not required but
+incorporating Python scientific and engineering libraries into a *rivt file*
+increases its capabilities.
 
 The primary purpose of *rivt* is providing a stable file format that can be
 shared, edited, and maintained as a live calculation document that
