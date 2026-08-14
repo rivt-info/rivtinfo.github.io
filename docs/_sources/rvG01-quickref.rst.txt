@@ -61,21 +61,16 @@ script that is processed by the API method before processing any *content*.
 Section parameters may be specified in any order or ommitted if defaults are
 acceptable. The default parameters are shown in the
 
-- s
-  stores the section content in *_rvstored/sect* as a *.rvt file.*
+- **s** stores the section content in *_rvstored/sect* as a *.rvt file.*
 
-- h
-  processes the section but suppresses the *doc* output.
+- **h** processes the section but suppresses the *doc* output.
    
-- m
-  merges the section with the previous section.
+- **m** merges the section with the previous section.
 
-- p 
-  toggles the public/private status of the section. The rivt file default is
+- **p** toggles the public/private status of the section. The rivt file default is
   private unless overridden by a :ref:`comment setting <comment-settings>`
 
-- n 
-  Starts a new pdf page.
+- **n** starts a new pdf page.
 
 **File and Type Settings**
 
