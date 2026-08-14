@@ -1,8 +1,9 @@
 
-**G.1 |** Quick Ref
-===================== 
+**G.1 |** Quick Reference
+=========================== 
 
 .. _API Summary:
+
 
 **[1]** API
 --------------------------------------------------------------------- 
@@ -15,9 +16,9 @@ API Function         Name             Purpose
 **rv.R** (rS)         Run          Run scripts and markup
 **rv.I** (rS)         Insert       Insert static sources 
 **rv.V** (rS)         Values       Calculate values
-**rv.T** (rS)         Tools        Execute shell scripts and external programs
+**rv.T** (rS)         Tools        Shell scripts and programs
 **rv.D** (rS)         Doc          Publish docs 
-**rv.S;X** (rS)       Skip         Skip section or exit (comments and debugging)
+**rv.S; X** (rS)     Skip; Exit    Skip section or exit 
 ================= =============== ================================================
 
 where **rS** is a *rivt string*. The first line of a *rivt string* (rS)

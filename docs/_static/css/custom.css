@@ -21,12 +21,6 @@ html[data-theme="dark"] div.footnote * {
     /* Dark theme background */
 }
 
-img.align-center {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    display: block;
-}
 
 
 html {
@@ -49,6 +43,22 @@ html {
     display: inline;
     float: right;
 }
+
+.container,
+.wrapper {
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: left !important;
+}
+
+img.align-center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+}
+
 
 
 .topic-title {
