@@ -31,9 +31,9 @@ output from different sources. *rivt* publishes a *rivt file* as a text, PDF or 
 *doc*. Python knowledge is not required but incorporating Python scientific 
 and engineering libraries into a *rivt file* increases its capabilities.
 
-The primary purpose of *rivt* is providing a stable file format that can be
-shared, edited, and maintained as a live calculation document to
-produces formatted reports.  *rivt files* can be organized into *rivt folders* 
+The primary purpose of *rivt* is to provide a stable file and folder format that 
+can be shared, edited, and maintained as a live calculation document to
+produce formatted reports.  *rivt files* can be organized into *rivt folders* 
 in two ways:
 
 .. code-block:: text
