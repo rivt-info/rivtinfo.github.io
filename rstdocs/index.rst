@@ -75,8 +75,8 @@ storage service. *rivt report* examples on *Google Drive* are available at
 `openmodels.info <https://www.openmodels.info/models>`__. If collaboration and 
 version control are needed `GitHub <https://github.com/>`__ may be used. 
 *rivt files and reports* are organized in top level 
-`rivt project <rivt-folders>` or `rivtbook <rivt-books>` folders which work
-well as *GitHub repositories*. *rivt* also generates a text report as a 
+:ref:`rivt project <rivt-folders>` or :ref:`rivtbook <rivt-books>` folders which
+work well as *GitHub repositories*. *rivt* also generates a text report as a 
 *GitHub README* file. A convenient interface for searching public *rivt file* 
 READMEs  on *GitHub* is :doc:`here. <rvE02-github>`. 
 
