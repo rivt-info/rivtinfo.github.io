@@ -75,7 +75,7 @@ version control are needed `GitHub <https://github.com/>`__ may be used.
 *rivt files and reports* are organized in top level folders  
 ( :ref:`rivt project <rivt-folders>` or :ref:`rivtbook <rivt-books>` ) which
 work well as *GitHub* repositories. *rivt* also generates a *GitHub* README file 
-from a *rivt report*. A convenient interface for searching  public READMEs 
+from a *rivt report*. A convenient interface for searching  public *rivt* READMEs 
 is :doc:`here. <rvE02-github>`. 
 
 *rivt* produces organized, formatted engineering documents from active
