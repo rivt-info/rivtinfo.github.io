@@ -46,7 +46,7 @@ produces formatted text, PDF and HTML engineering reports as output.
                     | A rivtbook is a collection of rivt files with
       rivtbook      | common subject matter and a folder structure
                     | that makes it easy to select files and resources
-                    | for inclusion in documents and reports.
+                    | for inclusion in docs and reports.
 
                     | A rivt report is the collated output of multiple
                     | rivt docs into a single text or PDF file, or an HTML
