@@ -32,7 +32,7 @@ a text, PDF or HTML *doc*.
 
 The primary purpose of *rivt* is to provide a stable file and folder format that 
 can be shared, edited, and maintained as a live calculation document to
-produce formatted reports.  *rivt files* can be organized into *rivt folders* 
+produce formatted reports.  *rivt files* can be organized in *rivt folders* 
 in two ways:
 
 .. code-block:: text
