@@ -3,22 +3,21 @@
 
 .. _API Summary:
 
-
 **[1]** API
 --------------------------------------------------------------------- 
 
 **API methods**
 
-================= =============== ================================================
+================= =============== =============================
 API Function         Name             Purpose
-================= =============== ================================================
+================= =============== =============================
 **rv.R** (rS)         Run          Run scripts and markup
 **rv.I** (rS)         Insert       Insert static sources 
 **rv.V** (rS)         Values       Calculate values
 **rv.T** (rS)         Tools        Shell scripts and programs
 **rv.D** (rS)         Doc          Publish docs 
 **rv.S; X** (rS)     Skip; Exit    Skip section or exit 
-================= =============== ================================================
+================= =============== =============================
 
 where **rS** is a *rivt string*. The first line of a *rivt string* (rS)
 is the :term:`header substring`.
@@ -81,18 +80,18 @@ determined by the API method. The type setting for all
 API methods, except rv.T, is *rvt*. A *rvt* file type is a section content
 string stored as a file. It is written by the **s** parameter.
 
-For the rv.T method the type settings are:
+For the **rv.T** method the type settings are:
 
 #. **PYTHON** - run Python script
-#. **python** - insert Python script
+#. **python** - insert Python script code
 #. **text** - literal text
 #. **rst** - reStructuredText
 #. **html** - HTML markup
 #. **mermaid** - Mermaid diagram (requires mermaid installation)
 #. **latex** - LaTeX (requires LaTeX installation)
+#. **dot** - Graphviz (requires graphviz installation)
 
-
-----------------------------------
+-------------------------------------
 
 .. _Line Tags:
 
@@ -102,9 +101,9 @@ For the rv.T method the type settings are:
   
 **Format a line of text**
 
-========== ==================================================== ================================
+========== ==================================================== =============================
 API Scope             Line Tag                                      Description 
-========== ==================================================== ================================
+========== ==================================================== =============================
 rv.I                   text \*word word\* text                      italicize words  
 rv.I                   text \*\*word word\*\* text                  bold words   
 rv.I                   text **_[D] label, filename |** text       :ref:`Download link`
@@ -120,7 +119,7 @@ rv.I,V      **ASCII text math _[M]** description                  :ref:`Text mat
 rv.I,V           **LaTeX math _[L]** description                  :ref:`LaTeX math` 
 rv.I,V                 text **_[V] var_name |** text              :ref:`Substitute value`
 all                     **##** text                               nonprinting comment
-========== ==================================================== ================================
+========== ==================================================== =============================
 
 ----------------------------------
 
