@@ -34,7 +34,7 @@ and engineering libraries into a *rivt file* increases its capabilities.
 The primary purpose of *rivt* is providing a stable file format that can be
 shared, edited, and maintained as a live calculation document that
 produces formatted text, PDF and HTML engineering reports as output. 
-*rivt files* can be organized in two ways that differ only in folder structure:
+*rivt files* can be organized in two ways:
 
 .. code-block:: text
 
