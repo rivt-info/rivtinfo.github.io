@@ -27,9 +27,8 @@ documents with a focus on reuse [#]_. The extensive and ever expanding collectio
 of engineering and scientific software often require that outputs be organized
 into systematic project documents. *rivt markup* is used to write live, linked
 and editable *rivt files* that organize text, calculations, images, code and 
-output from different sources. *rivt* publishes a *rivt file* as a text, PDF or HTML 
-*doc*. Python knowledge is not required but incorporating Python scientific 
-and engineering libraries into a *rivt file* increases its capabilities.
+output from different sources. *rivt* compiles and publishes a *rivt file* as 
+a text, PDF or HTML *doc*. 
 
 The primary purpose of *rivt* is to provide a stable file and folder format that 
 can be shared, edited, and maintained as a live calculation document to
@@ -61,10 +60,12 @@ running examples see :ref:`install <rivt-start>`. For *rivt with AI* see
 are provided in this :ref:`tutorial <rivt-tutor>`.
 
 *rivtlib* is the `Python package <https://pypi.org/project/rivtlib/>`__ that formats
-and compiles a *rivt file* to a *doc* in a second or two. A *rivt file* may 
+and compiles a *rivt file* to a *doc* in a second or two. Python knowledge is not 
+required to use *rivt* but incorporating Python scientific and engineering 
+libraries into a *rivt file* increases its capabilities. A *rivt file* may 
 be interactively executed from the top down in an IDE, or from the command line. 
 Multiple *rivt files* may be compiled into a :ref:`rivt report  <rivt-reports>`.  
-This website is an example of an *HTML report*.  *rivt files* may also be collected 
+This website is an example of an *HTML report*. *rivt files* may also be collected 
 into a :ref:`rivtbook <rivt-books>` organized around a common subject matter. 
 *rivtbooks* are organized for efficient file selection and inclusion in reports. 
 
