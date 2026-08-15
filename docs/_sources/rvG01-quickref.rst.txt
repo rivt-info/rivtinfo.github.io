@@ -110,7 +110,7 @@ For the **rv.T** method the type settings are:
 
 .. _Line Tags Summary:
 
-**[3]** Line Tags
+**[3]** Line Tags Summary
 ---------------------------------------------------------------------------
 
   
@@ -140,8 +140,8 @@ all                     **##** text                               nonprinting co
 
 .. _Block Tags Summary:
 
-**[4]** Block Tags
--------------------------------------
+**[4]** Block Tags Summary
+---------------------------------------------------------------------------
 
 **Format or run blocks of text or scripts**
 
@@ -163,7 +163,7 @@ all         **_[[END]]**                              :ref:`End block`
 .. _Assignment Summary:
 
 **[5]** Assignment Summary
--------------------------------------
+---------------------------------------------------------------------------
 
 **Assign values to expressions**
 
@@ -179,8 +179,8 @@ rv.V         a **<=** c | unit, decimal, text1, text2 | label                :re
 
 .. _commands list:
 
-**[6]** Commands
--------------------------------------
+**[6]** Command Summary
+---------------------------------------------------------------------------
 
 **Read and format files**
 
@@ -223,7 +223,7 @@ rv.D        **| PUBLISH |** doc title | type                                 :re
 
 .. _report-folders-summary:
 
-**[7]** rivt Report Folders
+**[7]** Report Folders
 ---------------------------------------------------------------------
 
 .. code-block:: bash
@@ -371,7 +371,7 @@ rv.D        **| PUBLISH |** doc title | type                                 :re
 .. _unit-definitions:
 
 **[9]** Unit Definitions
--------------------------------------
+---------------------------------------------------------------------------
 
 .. code-block:: python
 
@@ -482,7 +482,7 @@ rv.D        **| PUBLISH |** doc title | type                                 :re
 .. _rivt-depend:
 
 **[10]** rivt Python Dependencies
--------------------------------------
+---------------------------------------------------------------------------
 
 The minimum Python version is *3.14*. In addition to *rivtlib*, *rivt* packages
 include the following categories:
@@ -544,7 +544,7 @@ include the following categories:
 .. _vscode-settings:
 
 **[11]** VSCode Profile
-------------------------------------
+---------------------------------------------------------------------------
 
 Workspace extension and other settings are stored in the *.vscode* folder and
 should be included as part of a *report folder*. Settings that affect the
