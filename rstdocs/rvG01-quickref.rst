@@ -6,7 +6,7 @@
 **[1]** Reference Summary
 --------------------------------------------------------------------- 
 
-- :ref::`API Summary <API Summary>` 
+- :ref:`API Summary <API Summary>` 
 - :ref:`Line Tags <Line Tags>` 
 - :ref:`Block Tags <Block Tags>` 
 - :ref:`Assignment Summary <Assignment Summary>` 
