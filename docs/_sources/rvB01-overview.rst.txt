@@ -59,7 +59,7 @@ with rivt profiles and extensions documented :ref:`here <vscode-settings>`.
 ------------------------------------------------------------------------------- 
 
 The *rivt API* includes :ref:`API methods <API methods>`, 
-:ref:`markup <Line Tags>` and structured 
+:ref:`markup <Line Tags Summary>` and structured 
 :ref:`folders and files <file-folder>`.
 
 The API is designed to be:

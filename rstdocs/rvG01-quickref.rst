@@ -7,12 +7,12 @@
 --------------------------------------------------------------------- 
 
 - :ref:`API Summary <API Summary>` 
-- :ref:`Line Tags <Line Tags>` 
-- :ref:`Block Tags <Block Tags>` 
+- :ref:`Line Tags <Line Tags Summary>` 
+- :ref:`Block Tags <Block Tags Summary>` 
 - :ref:`Assignment Summary <Assignment Summary>` 
 - :ref:`Commands <commands list>` 
-- :ref:`rivt Report Folders <Folders>` 
-- :ref:`rivtbook Folders <rivtbook-folders2>` 
+- :ref:`rivt Report Folders <report-folders-summary>` 
+- :ref:`rivtbook Folders <rivtbook-folders-summary>` 
 - :ref:`Unit Definitions <unit-definitions>`
 
 
@@ -108,7 +108,7 @@ For the **rv.T** method the type settings are:
 
 -------------------------------------
 
-.. _Line Tags:
+.. _Line Tags Summary:
 
 **[3]** Line Tags
 ---------------------------------------------------------------------------
@@ -138,7 +138,7 @@ all                     **##** text                               nonprinting co
 
 ----------------------------------
 
-.. _Block Tags:
+.. _Block Tags Summary:
 
 **[4]** Block Tags
 -------------------------------------
@@ -221,7 +221,7 @@ rv.D        **| PUBLISH |** doc title | type                                 :re
 
 ----------------------------------
 
-.. _Folders:
+.. _report-folders-summary:
 
 **[7]** rivt Report Folders
 ---------------------------------------------------------------------
@@ -302,7 +302,7 @@ rv.D        **| PUBLISH |** doc title | type                                 :re
 
 ----------------------------------
 
-.. _rivtbook-folders2:
+.. _rivtbook-folders-summary:
 
 **[8]** rivtbook Folders
 ---------------------------------------------------------------------
