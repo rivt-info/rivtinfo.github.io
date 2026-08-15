@@ -1,9 +1,24 @@
 **G.1 |** Quick Reference
 =========================== 
 
+.. _Quick Reference:
+
+**[1]** Reference Summary
+--------------------------------------------------------------------- 
+
+- :ref::`API Summary <API Summary>` 
+- :ref:`Line Tags <Line Tags>` 
+- :ref:`Block Tags <Block Tags>` 
+- :ref:`Assignment Summary <Assignment Summary>` 
+- :ref:`Commands <commands list>` 
+- :ref:`rivt Report Folders <Folders>` 
+- :ref:`rivtbook Folders <rivtbook-folders2>` 
+- :ref:`Unit Definitions <unit-definitions>`
+
+
 .. _API Summary:
 
-**[1]** API
+**[2]** API Summary
 --------------------------------------------------------------------- 
 
 **API methods**
@@ -95,8 +110,8 @@ For the **rv.T** method the type settings are:
 
 .. _Line Tags:
 
-**[2]** Line Tags
--------------------------------------
+**[3]** Line Tags
+---------------------------------------------------------------------------
 
   
 **Format a line of text**
@@ -125,7 +140,7 @@ all                     **##** text                               nonprinting co
 
 .. _Block Tags:
 
-**[3]** Block Tags
+**[4]** Block Tags
 -------------------------------------
 
 **Format or run blocks of text or scripts**
@@ -145,9 +160,9 @@ all         **_[[END]]**                              :ref:`End block`
 
 ----------------------------------
 
+.. _Assignment Summary:
 
-
-**[4]** Assignment Summary
+**[5]** Assignment Summary
 -------------------------------------
 
 **Assign values to expressions**
@@ -164,7 +179,7 @@ rv.V         a **<=** c | unit, decimal, text1, text2 | label                :re
 
 .. _commands list:
 
-**[5]** Commands
+**[6]** Commands
 -------------------------------------
 
 **Read and format files**
@@ -208,7 +223,7 @@ rv.D        **| PUBLISH |** doc title | type                                 :re
 
 .. _Folders:
 
-**[5]** rivt Report Folders
+**[7]** rivt Report Folders
 ---------------------------------------------------------------------
 
 .. code-block:: bash
@@ -289,7 +304,7 @@ rv.D        **| PUBLISH |** doc title | type                                 :re
 
 .. _rivtbook-folders2:
 
-**[6]** rivtbook Folders
+**[8]** rivtbook Folders
 ---------------------------------------------------------------------
 
 .. code-block:: bash
@@ -355,7 +370,7 @@ rv.D        **| PUBLISH |** doc title | type                                 :re
 
 .. _unit-definitions:
 
-**[7]** Unit Definitions
+**[9]** Unit Definitions
 -------------------------------------
 
 .. code-block:: python
@@ -466,7 +481,7 @@ rv.D        **| PUBLISH |** doc title | type                                 :re
 
 .. _rivt-depend:
 
-**[8]** rivt Python Dependencies
+**[10]** rivt Python Dependencies
 -------------------------------------
 
 The minimum Python version is *3.14*. In addition to *rivtlib*, *rivt* packages
@@ -528,7 +543,7 @@ include the following categories:
 
 .. _vscode-settings:
 
-**[9]** VSCode Profile
+**[11]** VSCode Profile
 ------------------------------------
 
 Workspace extension and other settings are stored in the *.vscode* folder and
