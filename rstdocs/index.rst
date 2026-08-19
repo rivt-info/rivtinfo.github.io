@@ -22,42 +22,41 @@ Home
    <hr>
     
 
-*rivt* is an open-source program for writing and assembling calculation
-documents with a focus on reuse [#]_. The extensive and ever expanding collection
-of engineering and scientific software often require that outputs be organized
-into systematic project documents. *rivt markup* is used to write live, linked
-and editable *rivt files* that organize text, calculations, images, code and 
-output from different sources. *rivt* compiles and publishes a *rivt file* as 
-a text, PDF or HTML *doc*. 
+*rivt* is an open-source project for writing and assembling calculation
+documents with a focus on file reuse [#]_. It is designed to work with the 
+extensive collection of individual engineering and scientific software packages 
+that often require organization into systematic project documents. 
+*rivt markup* is used in *rivt files* to write and organize text, calculations, 
+images, code and output from different sources. The *rivtlib* Python package 
+compiles and publishes a *rivt file* as a text, PDF or HTML *doc*.
 
 The primary purpose of *rivt* is to provide a stable file and folder format that 
-can be shared, edited, and maintained as a live calculation document to
-produce formatted reports.  *rivt files* can be organized in *rivt folders* 
-in two ways:
+can be shared, edited, and maintained as a live calculation file that
+produces formatted reports.  *rivt files* are organized in *rivt project*
+or *rivtbook* folders. 
 
 .. code-block:: text
 
-                       | A rivt file is the basic input file that
-   rivt file           | compiles to a text, PDF or HTML document (doc). 
-                       | It is a Python file (.py) that imports the 
-                       | rivtlib Python package and uses rivt markup.
+                        | A rivt file is the input file that compiles
+   rivt file            | to a text, PDF or HTML document (doc). 
+                        | It is a Python file (.py) that imports the 
+                        | rivtlib Python package and uses rivt markup.
 
-                       | A rivtbook is a collection of rivt files with
-   rivtbook folder     | common subject matter and a folder structure
-                       | that makes it easy to select files and resources
-                       | for inclusion in docs.
+                        | A rivtbook folder is a collection of rivt files with
+   rivtbook folder      | common subject matter, and a folder structure
+                        | that makes it easy to select files and resources
+                        | for inclusion in rivt docs.
 
-                       | A rivt report is the collated output of one or more 
-                       | rivt docs into a single text or PDF file, or an HTML
-   rivt report folder  | site. A rivt doc is the published output of a rivt  
-                       | file. A Python script links and organizes multiple 
-                       | docs into a report using rivt file numbers. 
+                        | A rivt project folder is a collection of one or
+   rivt project folder  | more rivt files and resources. rivt files in the
+                        | project folder are compiled into a text, PDF or
+                        | HTML doc and assembled into a report. 
 
 For an overview of *rivt* see :ref:`here <rivt-overview>`. To get started with
 running examples see :ref:`install <rivt-start>`. For *rivt with AI* see
-:ref:`here <rivt-context>`. Examples of a :ref:`rivt file <example-file>` with its 
-:ref:`text <text-doc>`, :ref:`PDF <pdf-doc>`, and :ref:`HTML <html-doc>` *docs* 
-are provided in this :ref:`tutorial <rivt-tutor>`.
+:ref:`here <rivt-context>`. Examples of a :ref:`rivt file <example-file>` with 
+the associated :ref:`text <text-doc>`, :ref:`PDF <pdf-doc>`, and 
+:ref:`HTML <html-doc>` *docs* are provided in this :ref:`tutorial <rivt-tutor>`.
 
 *rivtlib* is the `Python package <https://pypi.org/project/rivtlib/>`__ that formats
 and compiles a *rivt file* to a *doc* in a second or two. Python knowledge is not 
@@ -72,8 +71,8 @@ into a :ref:`rivtbook <rivt-books>` organized around a common subject matter.
 *rivt files and reports* may be shared and distributed through any cloud
 storage service. Examples are available on *Google Drive* at 
 `openmodels.info <https://www.openmodels.info/models>`__. If collaboration and 
-version control are needed `GitHub <https://github.com/>`__ may be used. 
-*rivt files and reports* are organized in top level folders  
+version control are needed `GitHub <https://github.com/>`__ may be used for development
+and distribution. *rivt files and reports* are organized in top level folders  
 ( :ref:`rivt project <rivt-folders>` or :ref:`rivtbook <rivt-books>` ) which
 work well as *GitHub* repositories. *rivt* also generates a *GitHub* README file 
 from a *rivt report*. A convenient interface for searching  public *rivt* READMEs 
