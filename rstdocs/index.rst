@@ -43,15 +43,15 @@ or *rivtbook* folders.
                         | It is a Python file (.py) that imports the 
                         | rivtlib Python package and uses rivt markup.
 
-                        | A rivtbook folder is a collection of rivt files with
-   rivtbook folder      | common subject matter, and a folder structure
+                        | A rivtbook folder is a collection of rivt files
+   rivtbook folder      | with common subject matter and folder structure
                         | that makes it easy to select files and resources
-                        | for inclusion in rivt docs.
+                        | for inclusion in rivt files.
 
                         | A rivt project folder is a collection of one or
-   rivt project folder  | more rivt files and resources. rivt files in the
-                        | project folder are compiled into a text, PDF or
-                        | HTML doc and assembled into a report. 
+   rivt project folder  | more rivt files and resources. rivt files are 
+                        | compiled into a text, PDF or HTML doc and
+                        | assembled into a report. 
 
 For an overview of *rivt* see :ref:`here <rivt-overview>`. To get started with
 running examples see :ref:`install <rivt-start>`. For *rivt with AI* see
