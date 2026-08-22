@@ -23,34 +23,34 @@ Home
     
 
 *rivt* is an open-source project for writing and assembling calculation
-documents with a focus on file reuse [#]_. It is designed to work with outputs
-from Python code and the extensive collection of special purpose scientific and
-engineering software that often requires organization into project documents.
+documents with a focus on file reuse [#]_. *rivt* is designed to work with 
+outputs from Python code and other scientific and engineering software that 
+often requires inclusion and organization within project documents.
 
-*rivt files* contain *rivt markup* that writes and organizes text, calculations, 
-images, code and output from different sources. The *rivtlib* Python package 
-compiles and publishes a *rivt file* as a text, PDF or HTML *doc*.
+The core of the project is a *rivt file* (.py) using *rivt markup* to write, 
+organize and process text, calculations, images, code and general software 
+output. The Python library *rivtlib* compiles and publishes a *rivt file* as 
+a text, PDF or HTML document (a *doc*).
 
 The primary purpose of *rivt* is to provide a stable file and folder format that 
-can be shared, edited, and maintained as a live calculation file that
-produces formatted reports.  *rivt files* are organized in *rivt project*
-or *rivtbook* folders. 
+can be shared, edited, and maintained as a live calculation file producing
+formatted reports.  *rivt files* are organized in either a *rivt project*
+or *rivtbook* folder. 
 
 .. code-block:: text
 
-                        | A rivt file is the input file that compiles
-   rivt file            | to a text, PDF or HTML document (doc). 
-                        | It is a Python file (.py) that imports the 
-                        | rivtlib Python package and uses rivt markup.
+                        | A rivt file is a Python file file that imports
+   rivt file            | the rivtlib Python package (.py), includes rivt  
+                        | markup, and compiles to a text, PDF or HTML doc.
 
                         | A rivtbook folder is a collection of rivt files
-   rivtbook folder      | with common subject matter and folder structure
+   rivtbook folder      | with common subject matter and a folder structure
                         | that makes it easy to select files and resources
                         | for inclusion in rivt files.
 
                         | A rivt project folder is a collection of one or
-   rivt project folder  | more rivt files and resources. rivt files are 
-                        | compiled into a text, PDF or HTML doc and
+   rivt project folder  | more rivt files and related resources. rivt files 
+                        | are compiled into a text, PDF or HTML doc and
                         | assembled into a report. 
 
 For an overview of *rivt* see :ref:`here <rivt-overview>`. To get started with

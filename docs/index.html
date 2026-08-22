@@ -368,29 +368,29 @@
 </a>
 </figure>
 <hr><p><em>rivt</em> is an open-source project for writing and assembling calculation
-documents with a focus on file reuse <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>. It is designed to work with outputs
-from Python code and the extensive collection of special purpose scientific and
-engineering software that often requires organization into project documents.</p>
-<p><em>rivt files</em> contain <em>rivt markup</em> that writes and organizes text, calculations,
-images, code and output from different sources. The <em>rivtlib</em> Python package
-compiles and publishes a <em>rivt file</em> as a text, PDF or HTML <em>doc</em>.</p>
+documents with a focus on file reuse <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>. <em>rivt</em> is designed to work with
+outputs from Python code and other scientific and engineering software that
+often requires inclusion and organization within project documents.</p>
+<p>The core of the project is a <em>rivt file</em> (.py) using <em>rivt markup</em> to write,
+organize and process text, calculations, images, code and general software
+output. The Python library <em>rivtlib</em> compiles and publishes a <em>rivt file</em> as
+a text, PDF or HTML document (a <em>doc</em>).</p>
 <p>The primary purpose of <em>rivt</em> is to provide a stable file and folder format that
-can be shared, edited, and maintained as a live calculation file that
-produces formatted reports.  <em>rivt files</em> are organized in <em>rivt project</em>
-or <em>rivtbook</em> folders.</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>                     | A rivt file is the input file that compiles
-rivt file            | to a text, PDF or HTML document (doc).
-                     | It is a Python file (.py) that imports the
-                     | rivtlib Python package and uses rivt markup.
+can be shared, edited, and maintained as a live calculation file producing
+formatted reports.  <em>rivt files</em> are organized in either a <em>rivt project</em>
+or <em>rivtbook</em> folder.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>                     | A rivt file is a Python file file that imports
+rivt file            | the rivtlib Python package (.py), includes rivt
+                     | markup, and compiles to a text, PDF or HTML doc.
 
                      | A rivtbook folder is a collection of rivt files
-rivtbook folder      | with common subject matter and folder structure
+rivtbook folder      | with common subject matter and a folder structure
                      | that makes it easy to select files and resources
                      | for inclusion in rivt files.
 
                      | A rivt project folder is a collection of one or
-rivt project folder  | more rivt files and resources. rivt files are
-                     | compiled into a text, PDF or HTML doc and
+rivt project folder  | more rivt files and related resources. rivt files
+                     | are compiled into a text, PDF or HTML doc and
                      | assembled into a report.
 </pre></div>
 </div>
