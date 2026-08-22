@@ -25,7 +25,7 @@ Home
 *rivt* is an open-source project for writing and assembling calculation
 documents with a focus on file reuse [#]_. *rivt* is designed to work with 
 outputs from Python code and other scientific and engineering software that 
-often requires inclusion and organization within project documents.
+often require inclusion and organization within project documents.
 
 The core of the project is a *rivt file* (.py) using *rivt markup* to write, 
 organize and process text, calculations, images, code and general software 
