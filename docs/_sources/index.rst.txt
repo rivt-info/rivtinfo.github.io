@@ -22,16 +22,16 @@ Home
    <hr>
     
 .. |rivt_logo| image:: _static/img/rivt-finalb.png
-   :width: 20px
+   :width: 50px
 
 .. |studio_logo| image:: _static/img/rvstudio.png
-   :width: 20px
+   :width: 50px
 
 .. |remote_logo| image:: _static/img/rvremote.png
-   :width: 20px
+   :width: 50px
 
 .. |open_logo| image:: _static/img/openmod2.png
-   :width: 20px
+   :width: 50px
 
 *rivt* is an open source project for writing and sharing engineering documents.
 It runs in a portable desktop environment and the cloud . The project includes:
@@ -46,7 +46,7 @@ It runs in a portable desktop environment and the cloud . The project includes:
 | |open_logo|   | *openModels* - online repositories of shared models and documents    |
 +---------------+----------------------------------------------------------------------+
 
-The :ref:` motivation <rvmotivation>` to write *rivt* developed over many years
+The :ref:`motivation <rvmotivation>` to write *rivt* developed over many years
 as it became apparent that a program that made it easy to share and reuse
 engineering documents might never appear.
 
@@ -55,9 +55,9 @@ engineering documents might never appear.
 
    <hr>
 
-   <p style="color:rgb(63,177,197);">ver: 1.0.0a18 
-   (Note: rivt is currently <i>alpha sofware</i>. Some features are 
-   incomplete and program structure, markup and assignment tags, and commands may change.)</p>
+   <p style="color:rgb(63,177,197);">ver: 1.0.0a20 
+    - Note: rivt is currently <i>alpha sofware</i>. Some features are 
+   incomplete and program structure, markup and assignment tags, and commands may change.</p>
 
 .. toctree::
    :maxdepth: 1
