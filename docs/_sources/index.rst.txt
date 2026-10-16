@@ -22,33 +22,33 @@ Home
    <hr>
     
 .. |rivt_logo| image:: _static/img/rivt-finalb.png
-   :width: 50px
+   :width: 45px
 
 .. |studio_logo| image:: _static/img/rvstudio.png
-   :width: 50px
+   :width: 45px
 
 .. |remote_logo| image:: _static/img/rvremote.png
-   :width: 50px
+   :width: 45px
 
 .. |open_logo| image:: _static/img/openmod2.png
-   :width: 50px
+   :width: 45px
 
 *rivt* is an open source project for writing and sharing engineering documents.
-It runs in a portable desktop environment and the cloud . The project includes:
+It runs in a portable desktop environment and in the cloud . The project includes:
 
 +---------------+----------------------------------------------------------------------+
-| |rivt_logo|   |  *rivt markup* and the *rivtlib* Python library                      |
+| |rivt_logo|   | *rivt markup* and *rivtlib* Python library                           |
 +---------------+----------------------------------------------------------------------+
 | |studio_logo| | *rivtStudio* - a portable desktop writing and publishing environment |
 +---------------+----------------------------------------------------------------------+
-| |remote_logo| | *rivtRemote* - containerized *rivtStudio* that runs in a browser     |
+| |remote_logo| | *rivtRemote* - a containerized *rivtStudio* that runs in a browser   |
 +---------------+----------------------------------------------------------------------+
 | |open_logo|   | *openModels* - online repositories of shared models and documents    |
 +---------------+----------------------------------------------------------------------+
 
-The :ref:`motivation <rvmotivation>` to write *rivt* developed over many years
-as it became apparent that a program that made it easy to share and reuse
-engineering documents might never appear.
+The :ref:`motivation <rvmotivation>` to write *rivt* developed over many years,
+as the need for a program that made it easy to share and reuse engineering
+documents only continued to increase.
 
 
 .. raw:: html
