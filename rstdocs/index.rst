@@ -47,7 +47,7 @@ It runs in a portable desktop environment and in the cloud . The project include
 +---------------+----------------------------------------------------------------------+
 
 The :ref:`motivation <rvmotivation>` to write *rivt* developed over many years,
-as the need for a program that made it easy to share and reuse engineering
+as the need for a program that made it easy to share and reuse live engineering
 documents only continued to increase.
 
 
