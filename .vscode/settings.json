@@ -98,6 +98,12 @@
                 "useVsCodeApi": true,
                 "command": "settings.cycle.explorerSort2",
             },
+            {
+                "name": "ShowImage",
+                "color": "yellow",
+                "useVsCodeApi": true,
+                "command": "vscode-infra.webviewImageViewer"
+            },
         ],
     },
     "cSpell.words": [
@@ -116,7 +122,6 @@
     },
     "workbench.panel.defaultLocation": "right",
     "python.defaultInterpreterPath": "C:\\Users\\rodhh\\Python314\\python.exe",
-    "explorer.sortOrder": "name",
     "editor.hover.enabled": "off",
     "editor.parameterHints.enabled": false,
     "editor.minimap.enabled": false,
@@ -130,5 +135,6 @@
     ],
     "python.terminal.activateEnvInCurrentTerminal": true,
     "python-envs.defaultEnvManager": "ms-python.python:system",
-    "inline-bookmarks.view.showVisibleFilesOnly": false
+    "inline-bookmarks.view.showVisibleFilesOnly": false,
+    "iis.configDir": ""
 }

@@ -1,0 +1,1207 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" data-theme="dark">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
+    <title>C.1 | Publish &#8212; rivt</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "dark";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "dark";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=70555702" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/jquery.js?v=5d32c60e"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="_static/documentation_options.js?v=7ed0cb1e"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'rvC01-publish';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="C.2 | rivt Files" href="rvC02-files.html" />
+    <link rel="prev" title="B.6 | Assignment" href="rvB06-assign.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="dark">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+    
+    <img src="_static/rivhome11t.png" class="logo__image only-dark" alt=""/>
+    <img src="_static/rivhome11t.png" class="logo__image only-light pst-js-only" alt=""/>
+  
+  
+    <p class="title logo__title">rivt</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvA01-start.html">
+    [1] Overview
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvB01-rivt.html">
+    B.1 | R-I-V-T
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
+    C.1 | Publish
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvD01-rivtstudio.html">
+    D.1 | rivtStudio
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvE01-aiintro.html">
+    E.1 | AI Workflow
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvF01-quickref.html">
+    F.1 | Quick Reference
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="Sections">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvA01-start.html">
+    [1] Overview
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvB01-rivt.html">
+    B.1 | R-I-V-T
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
+    C.1 | Publish
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvD01-rivtstudio.html">
+    D.1 | rivtStudio
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvE01-aiintro.html">
+    E.1 | AI Workflow
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvF01-quickref.html">
+    F.1 | Quick Reference
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links" aria-label="Docs">
+    <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
+    <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="rvC02-files.html"><strong>C.2 |</strong> rivt Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvC03-folders.html"><strong>C.3 |</strong> Folders</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>C.1 |</strong> Publish</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="c-1-publish">
+<h1><strong>C.1 |</strong> Publish<a class="headerlink" href="#c-1-publish" title="Link to this heading">#</a></h1>
+<section id="docs">
+<h2><strong>[1]</strong> Docs<a class="headerlink" href="#docs" title="Link to this heading">#</a></h2>
+<a class="dark-light reference internal image-reference" href="_images/process2.png"><img alt="rivt flow chart" class="align-center dark-light" src="_images/process2.png" style="width: 75%;" />
+</a>
+<p class="center"><strong>rivt Doc Processing</strong></p>
+<p>Each <a class="reference internal" href="rvF02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> outputs a corresponding <a class="reference internal" href="rvF02-terms.html#term-doc"><span class="xref std std-term">doc</span></a> of the format
+specified in PUBLISH command of the <em>rv.D()</em> API. A rivt file number has the
+form:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rvAnn-filename.py
+</pre></div>
+</div>
+<p>where rvAnn is a required file number prefix with A an alphanumeric character and nn a two
+digit non-negative integer. Corresponding rivt docs are output as:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rvAnn-filename.txt, pdf or html
+</pre></div>
+</div>
+<p>A <em>rivt report</em> is organized using the <em>file numbers</em>. The file numbers are
+used to organize reports into divisions and subdivisions. Each <em>rivt file</em> or
+<em>doc</em> is a report subdivision. If the <em>rivt filenames</em> are:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rvA01-filename.py
+rv105-filename.py
+rv212-filename.py
+</pre></div>
+</div>
+<p>the corresponding <em>doc numbers</em> in a report would be:</p>
+<ul class="simple">
+<li><p>A.1 (division A, subdivision 1)</p></li>
+<li><p>1.5 (division 1, subdivision 5)</p></li>
+<li><p>2.12 (division 2, subdivision 12)</p></li>
+</ul>
+</section>
+<section id="files-folders">
+<span id="rivt-docs"></span><h2><strong>[4]</strong> Files / Folders<a class="headerlink" href="#files-folders" title="Link to this heading">#</a></h2>
+<p><strong>rivt folders</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>                     | A rivt file is a Python file file that imports the
+rivt file            | rivtlib Python package and compiles to a text,
+                     | PDF or HTML doc.
+
+                     | A rivt project folder contains setting and
+rivt project folder  | configuration files for the IDE and version control,
+                     | as well as one or more rvbook or rvreport folders.
+
+                     | A rivtbook folder is a collection of rivt files with
+rvbook folder        | common subject matter organized to simplify selection
+                     | selection of files and resources for inclusion in rivt
+
+                     | A rivt report folder is a collection of rivt files
+rvreport folder      | organized for publication of rivt docs and reports
+                     | as text, html or PDF files.
+</pre></div>
+</div>
+</section>
+<section id="public-files">
+<h2><strong>[2]</strong> Public files<a class="headerlink" href="#public-files" title="Link to this heading">#</a></h2>
+<p>A feature of <em>rivt</em> is efficient control over public sharing of all or parts
+of a rivt file. <em>Public rivt files</em> are generated by <em>rivtlib</em> on a section by
+section basis defined by the API header substring. Each API function defines a
+section and has a public/private setting in the header. Sections are private by
+default (see <cite>:doc: &lt;rvF01-quickref&gt;</cite>).</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | doc;stored, private;public, section;merge</span>
+
+<span class="s2">     Content substring indented 4 spaces</span>
+
+<span class="s2">    ...</span>
+
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Sections are written to a rivt file in the <em>/public</em> folder with a file name
+composed as:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rivt file name
+
+    rvAnn-filename.py
+
+modified with an additional hyphen
+
+    rv-Ann-filename.py
+</pre></div>
+</div>
+<p>The public folder may be uploaded to a GitHub repo for public sharing. When
+files are downloaded for reuse the extra hyphens may be removed with a batch
+remove command (e.g. in VSCode).</p>
+<p class="center"><strong>2. Contribute to rivt and rivtlib</strong></p>
+<p><em>rivtlib</em> can be improved by:</p>
+<blockquote>
+<div><blockquote>
+<div><ul class="simple">
+<li><p>providing pull requests.</p></li>
+<li><p>submitting issues and bugs.</p></li>
+<li><p>contributing to documentation and examples.</p></li>
+</ul>
+</div></blockquote>
+<p><em>rivt</em> can be improved by:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>contributing to packages and extensions used by <em>rivt</em>.</p></li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+</section>
+<section id="file-folder">
+<span id="id1"></span><h2><strong>[4]</strong> Files / Folders<a class="headerlink" href="#file-folder" title="Link to this heading">#</a></h2>
+<p>A <a class="reference internal" href="rvF02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> is a Python plain text file ( <em>.py</em> ) that includes API
+functions and imports the <a class="reference internal" href="rvF02-terms.html#term-rivtlib"><span class="xref std std-term">rivtlib</span></a> package into the <em>rv</em>
+<a class="reference internal" href="rvF02-terms.html#term-namespace"><span class="xref std std-term">namespace</span></a>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
+</pre></div>
+</div>
+<p><em>rivt files</em> are stored in either a <em>rivt</em> or <em>rivtbk</em> folder. Each <em>rivt file</em>
+and corresponding <em>rivt doc</em> has a prefix used for document organization. The
+top level folder structures are shown below. The difference in folder structure
+facilitates copying docs from rivtbooks into report. A more detailed
+description of the folder structure is <a class="reference internal" href="rvC03-folders.html#id4"><span class="std std-ref">here</span></a>.</p>
+<p>A report folder can contain any set of files and folders but the following
+structure is required for &lt;i&gt;doc&lt;/i&gt; processing. Files and folders are
+organized under a root folder with the prefix rivt- e.g. rivt-Report-Label.</p>
+<p>report folders (root folders) include at least the rivt files
+and the five required subfolders. Required folders and prefixes are
+shown in brackets. Folders preceded by an underscore contain rivt outputs.
+Folders requiring author input are capitalized.</p>
+<p>The top level folder structure is shown below. More detailed descriptions of
+the folder structures are <a class="reference internal" href="rvC03-folders.html#rivt-report"><span class="std std-ref">here</span></a>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Report<span class="w"> </span>Folders
+--------------
+
+<span class="o">[</span>rivt-<span class="o">]</span>Report-Label/<span class="w">           </span>Report<span class="w"> </span>Folder
+<span class="w">    </span>├──<span class="w"> </span>.help/<span class="w">                     </span><span class="nb">help</span><span class="w"> </span>files
+<span class="w">    </span>├──<span class="w"> </span>.vscode/<span class="w">                   </span>optional<span class="w"> </span>VSCode<span class="w"> </span>settings
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>_rivt-public<span class="o">]</span>/<span class="w">            </span>rivt-generated<span class="w"> </span>public<span class="w"> </span>files
+<span class="w">    </span>└──<span class="w"> </span><span class="o">[</span>README.txt<span class="o">]</span><span class="w">               </span>text<span class="w"> </span>doc<span class="w"> </span>or<span class="w"> </span>report
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rvsrc<span class="o">]</span>/<span class="w">                    </span><span class="nb">source</span><span class="w"> </span>files
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>README.txt<span class="o">]</span><span class="w">                </span>public<span class="w"> </span>text<span class="w"> </span>report<span class="w"> </span>or<span class="w"> </span>doc
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv-101-<span class="o">]</span>filename1.py<span class="w">       </span>public<span class="w"> </span>rivt<span class="w"> </span>file
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv-102-<span class="o">]</span>filename2.py<span class="w">       </span>public<span class="w"> </span>rivt<span class="w"> </span>file
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv-201-<span class="o">]</span>filename3.py<span class="w">       </span>public<span class="w"> </span>rivt<span class="w"> </span>file
+<span class="w">        </span>...
+<span class="w">    </span>└──<span class="w"> </span><span class="o">[</span>rivt-report<span class="o">]</span>/<span class="w">               </span>rivt<span class="w"> </span>files<span class="w"> </span>and<span class="w"> </span>docs
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>_published<span class="o">]</span>/<span class="w">               </span>published<span class="w"> </span>docs<span class="w"> </span>and<span class="w"> </span>reports
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>_rstdocs<span class="o">]</span>/<span class="w">                 </span>rivt<span class="w"> </span>generated<span class="w"> </span>rst<span class="w"> </span>files
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>_rvstor<span class="o">]</span>/<span class="w">                  </span>rivt<span class="w"> </span>generated<span class="w"> </span>stored<span class="w"> </span>files
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>_rvsrc<span class="o">]</span>/<span class="w">                   </span>author<span class="w"> </span><span class="nb">source</span><span class="w"> </span>files
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rivt-<span class="o">]</span>report.py<span class="w">            </span>report<span class="w"> </span>generating<span class="w"> </span>script
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename1.py<span class="w">        </span>rivt<span class="w"> </span>file
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv102-<span class="o">]</span>filename2.py<span class="w">        </span>rivt<span class="w"> </span>file
+<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv201-<span class="o">]</span>filename3.py<span class="w">        </span>rivt<span class="w"> </span>file
+<span class="w">        </span>...
+
+rivtbook<span class="w"> </span>Folders
+----------------
+
+<span class="o">[</span>rivtbk-<span class="o">]</span>Book-Label/<span class="w">            </span>rivtbook<span class="w"> </span>folder
+<span class="w">    </span>├──<span class="w"> </span>.help/<span class="w">                      </span><span class="nb">help</span><span class="w"> </span>files
+<span class="w">    </span>├──<span class="w"> </span>.vscode/<span class="w">                    </span>optional<span class="w"> </span>VSCode<span class="w"> </span>settings
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>README.txt<span class="o">]</span><span class="w">                </span>rivt-generated<span class="w"> </span>book<span class="w"> </span>as<span class="w"> </span>text
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>_rstdocs<span class="o">]</span>/<span class="w">                 </span>restructured<span class="w"> </span>text<span class="w"> </span>files
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>_pdfdocs<span class="o">]</span>/<span class="w">                 </span>PDF<span class="w"> </span>docs<span class="w"> </span>and<span class="w"> </span>report
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rvbk101-<span class="o">]</span>folder<span class="w"> </span>name<span class="w">       </span>rivtbook<span class="w"> </span>folder
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rvbk102-<span class="o">]</span>folder<span class="w"> </span>name<span class="w">       </span>rivtbook<span class="w"> </span>folder
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rvbk201-<span class="o">]</span>folder<span class="w"> </span>name<span class="w">       </span>rivtbook<span class="w"> </span>folder
+<span class="w">         </span>...
+</pre></div>
+</div>
+<hr class="docutils" />
+</section>
+<section id="comment-settings-py">
+<span id="comment-settings"></span><h2><strong>[2]</strong> Comment Settings (.py)<a class="headerlink" href="#comment-settings-py" title="Link to this heading">#</a></h2>
+<p>Comment settings are specified in the <em>rivt file</em> immediately following the
+import statement and before API methods, and are used to override default
+settings for the entire <em>rivt doc</em>. The <em>rv private</em> setting may be changed at
+the section level. If default settings shown in parenthesis are acceptable the
+comment settings are not needed.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
+
+<span class="c1"># rv set_width = 80  ; character width of text output (80)</span>
+<span class="c1"># rv no_tag = true ; if false, the API type is added to section number (true)</span>
+<span class="c1"># rv private = true ; if false, default section heading changed to public (private)</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<p>See <a class="reference internal" href="rvB01-rivt.html#api-methods"><span class="std std-ref">rivt markup</span></a> for further details.</p>
+</section>
+<section id="html-and-pdf-config-py">
+<h2><strong>[3]</strong> HTML and PDF Config (.py)<a class="headerlink" href="#html-and-pdf-config-py" title="Link to this heading">#</a></h2>
+<p>The <em>conf.py</em> configuration file contains default configuration settings for
+<em>rivt docs</em> and reports. A typical <em>conf.py</em> file looks like this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#! python</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">rivtlib.rvconfig</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>  <span class="c1"># noqa: F403</span>
+
+<span class="sd">&quot;&quot;&quot; configuration settings for rivt docs and reports</span>
+
+<span class="sd">This file is stored in /src/Tools. Settings for both HTML and PDF docs are</span>
+<span class="sd">included anc cover:</span>
+
+<span class="sd">- metadata</span>
+<span class="sd">- formatting</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()))</span>
+
+<span class="n">project</span> <span class="o">=</span> <span class="s2">&quot;rivt doc&quot;</span>
+<span class="n">copyright</span> <span class="o">=</span> <span class="s2">&quot;2023 StructureLabs LLC&quot;</span>
+<span class="n">author</span> <span class="o">=</span> <span class="s2">&quot;rholland&quot;</span>
+<span class="n">release</span> <span class="o">=</span> <span class="s2">&quot;0.3.8a7&quot;</span>
+
+<span class="c1">#</span>
+<span class="c1"># -- Options for HTML and PDF output --------------------------------------</span>
+<span class="c1">#</span>
+
+<span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;sphinx.ext.githubpages&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinx_togglebutton&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinxcontrib.jquery&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinx_copybutton&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinx_favicon&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinx.ext.duration&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinx.ext.doctest&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinx.ext.autodoc&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinx_design&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinx_new_tab_link&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;rst2pdf.pdfbuilder&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+<span class="n">root_doc</span> <span class="o">=</span> <span class="s2">&quot;index&quot;</span>
+<span class="n">duration_write_json</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="n">html_show_sourcelink</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">exclude_patterns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;_build&quot;</span><span class="p">,</span> <span class="s2">&quot;Thumbs.db&quot;</span><span class="p">,</span> <span class="s2">&quot;.DS_Store&quot;</span><span class="p">]</span>
+<span class="n">source_suffix</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;.rst&quot;</span><span class="p">,</span> <span class="s2">&quot;.md&quot;</span><span class="p">]</span>
+<span class="n">templates_path</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;_templates&quot;</span><span class="p">]</span>
+<span class="n">locale_dirs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;_locale&quot;</span><span class="p">]</span>
+<span class="n">html_title</span> <span class="o">=</span> <span class="s2">&quot;rivt&quot;</span>
+<span class="n">html_theme</span> <span class="o">=</span> <span class="s2">&quot;pydata_sphinx_theme&quot;</span>
+<span class="n">html_context</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;default_mode&quot;</span><span class="p">:</span> <span class="s2">&quot;dark&quot;</span><span class="p">}</span>
+<span class="n">html_sidebars</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;**&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;sidebar-nav-bs.html&quot;</span><span class="p">]}</span>
+<span class="n">html_static_path</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;_static&quot;</span><span class="p">,</span> <span class="s2">&quot;_static/img&quot;</span><span class="p">]</span>
+<span class="n">html_css_files</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;css/custom.css&quot;</span><span class="p">]</span>
+<span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;pygments_light_style&quot;</span><span class="p">:</span> <span class="s2">&quot;tango&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;pygments_dark_style&quot;</span><span class="p">:</span> <span class="s2">&quot;github-dark&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;navbar_start&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;navbar-logo&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;collapse_navigation&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s2">&quot;header_links_before_dropdown&quot;</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span>
+    <span class="s2">&quot;navbar_align&quot;</span><span class="p">:</span> <span class="s2">&quot;left&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;show_toc_level&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">&quot;navigation_depth&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">&quot;footer_start&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;copyright&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;footer_end&quot;</span><span class="p">:</span> <span class="p">[],</span>
+    <span class="s2">&quot;logo&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="s2">&quot;rivt&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;image_dark&quot;</span><span class="p">:</span> <span class="s2">&quot;rivhome11c.png&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;image_light&quot;</span><span class="p">:</span> <span class="s2">&quot;rivhome11c.png&quot;</span><span class="p">,</span>
+    <span class="p">},</span>
+<span class="p">}</span>
+<span class="n">favicons</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;rel&quot;</span><span class="p">:</span> <span class="s2">&quot;icon&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;sizes&quot;</span><span class="p">:</span> <span class="s2">&quot;16x16&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;favicon-16x16.png&quot;</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;rel&quot;</span><span class="p">:</span> <span class="s2">&quot;icon&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;sizes&quot;</span><span class="p">:</span> <span class="s2">&quot;32x32&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;favicon-32x32.png&quot;</span><span class="p">,</span>
+    <span class="p">},</span>
+<span class="p">]</span>
+
+<span class="c1">#</span>
+<span class="c1"># -- Options for PDF output -----------------------------------------------</span>
+<span class="c1">#</span>
+<span class="c1"># source start file, target name, title, author, options</span>
+<span class="c1"># options: (&#39;index&#39;, &#39;MyProject&#39;, &#39;My Project&#39;, &#39;Author Name&#39;, {&#39;pdf_compressed&#39;: True})</span>
+<span class="c1"># More than one author : \\r&#39;Guido van Rossum\\Fred L. Drake, Jr., editor&#39;</span>
+<span class="n">pdf_documents</span> <span class="o">=</span> <span class="p">[(</span><span class="s2">&quot;rv001-single-doc&quot;</span><span class="p">,</span> <span class="s2">&quot;rv001-single-doc&quot;</span><span class="p">,</span> <span class="s2">&quot;rivt&quot;</span><span class="p">,</span> <span class="s2">&quot;r holland&quot;</span><span class="p">)]</span>
+<span class="c1"># Label to use as a prefix for the subtitle on the cover page</span>
+<span class="n">subtitle_prefix</span> <span class="o">=</span> <span class="s2">&quot;User Manual&quot;</span>
+<span class="c1"># A list of folders to search for stylesheets. Example:</span>
+<span class="n">pdf_style_path</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;./rstdocs/_static/pdfstyle&quot;</span><span class="p">]</span>
+<span class="c1"># A colon-separated list of folders to search for fonts. Example:</span>
+<span class="n">pdf_font_path</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;./rstdocs/_staticfonts&quot;</span><span class="p">]</span>
+<span class="c1"># A comma-separated list of custom stylesheets. Example:</span>
+<span class="n">pdf_stylesheets</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;./rstdocs/_static/pdfstyle/stylepdf1.yaml&quot;</span><span class="p">]</span>
+<span class="c1"># Example: compressed=True</span>
+<span class="n">pdf_compressed</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="c1"># Language to be used for hyphenation support</span>
+<span class="n">pdf_language</span> <span class="o">=</span> <span class="s2">&quot;en_US&quot;</span>
+<span class="c1"># literal blocks wider than the frame overflow, shrink or truncate</span>
+<span class="n">pdf_fit_mode</span> <span class="o">=</span> <span class="s2">&quot;shrink&quot;</span>
+<span class="c1"># 1 means top-level sections start in a new page 0 disabled</span>
+<span class="n">pdf_break_level</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="c1"># When a section starts in a new page, force it to be &#39;even&#39;, &#39;odd&#39;,</span>
+<span class="c1"># or just use &#39;any&#39;</span>
+<span class="n">pdf_breakside</span> <span class="o">=</span> <span class="s2">&quot;any&quot;</span>
+<span class="c1"># If false, no coverpage is generated.</span>
+<span class="n">pdf_use_coverpage</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="c1"># Name of the cover page template to use</span>
+<span class="n">pdf_cover_template</span> <span class="o">=</span> <span class="s2">&quot;pdfcover.rst&quot;</span>
+<span class="c1"># Page template name for &quot;regular&quot; pages</span>
+<span class="c1"># pdf_page_template = &#39;cutePage&#39;</span>
+<span class="c1"># Documents to append as an appendix to all manuals.</span>
+<span class="c1"># pdf_appendices = []</span>
+<span class="c1"># Enable experimental feature to split table cells. Use it</span>
+<span class="c1"># if you get &quot;DelayedTable too big&quot; errors</span>
+<span class="c1"># pdf_splittables = False</span>
+<span class="c1"># Set the default DPI for images</span>
+<span class="c1"># pdf_default_dpi = 72</span>
+<span class="c1"># Enable rst2pdf extension modules</span>
+<span class="c1"># pdf_extensions = []</span>
+<span class="c1"># Show Table Of Contents at the beginning?</span>
+<span class="n">pdf_use_toc</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="c1"># How many levels deep should the table of contents be?</span>
+<span class="n">pdf_toc_depth</span> <span class="o">=</span> <span class="mi">9999</span>
+<span class="c1"># Insert footnotes where they are defined instead of</span>
+<span class="c1"># at the end.</span>
+<span class="n">pdf_inline_footnotes</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="c1"># verbosity level. 0 1 or 2</span>
+<span class="c1"># pdf_verbosity = 0</span>
+<span class="c1"># If false, no index is generated.</span>
+<span class="n">pdf_use_index</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="c1"># If false, no modindex is generated.</span>
+<span class="n">pdf_use_modindex</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="c1"># Add section number to section references</span>
+<span class="n">pdf_use_numbered_links</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="c1"># Background images fitting mode</span>
+<span class="n">pdf_fit_background_mode</span> <span class="o">=</span> <span class="s2">&quot;scale&quot;</span>
+<span class="c1"># Repeat table header on tables that cross a page boundary?</span>
+<span class="n">pdf_repeat_table_rows</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="c1"># Enable smart quotes (1, 2 or 3) or disable by setting to 0</span>
+<span class="n">pdf_smartquotes</span> <span class="o">=</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="pdf-style-file-yaml">
+<h2><strong>[4]</strong> PDF Style File (.yaml)<a class="headerlink" href="#pdf-style-file-yaml" title="Link to this heading">#</a></h2>
+<p>The <em>rivtstyle.yaml</em> file contains default formats for PDF files.</p>
+<blockquote>
+<div><div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">fontsAlias</span><span class="p">:</span>
+<span class="nt">fontSerif</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DejaVuSans</span>
+<span class="nt">fontSerifBold</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DejaVuSans-Bold</span>
+<span class="nt">fontSerifBoldItalic</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DejaVuSans-BoldOblique</span>
+<span class="nt">fontSerifItalic</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DejaVuSans-Oblique</span>
+<span class="nt">fontMono</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DejaVuSansMono</span>
+<span class="nt">fontMonoBold</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DejaVuSansMono-Bold</span>
+<span class="nt">fontMonoBoldItalic</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DejaVuSansMono-BoldOblique</span>
+<span class="nt">fontMonoItalic</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DejaVuSansMono-Oblique</span>
+<span class="nt">fontSans</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DejaVuSans</span>
+<span class="nt">fontSansBold</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DejaVuSans-Bold</span>
+<span class="nt">fontSansBoldItalic</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DejaVuSans-BoldOblique</span>
+<span class="nt">fontSansItalic</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DejaVuSans-Oblique</span>
+<span class="nt">pageSetup</span><span class="p">:</span>
+<span class="nt">firstTemplate</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">coverPage</span>
+<span class="nt">height</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
+<span class="nt">margin-bottom</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4mm</span>
+<span class="nt">margin-gutter</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1mm</span>
+<span class="nt">margin-left</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1.5cm</span>
+<span class="nt">margin-right</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1.5cm</span>
+<span class="nt">margin-top</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4mm</span>
+<span class="nt">size</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">letter</span>
+<span class="nt">spacing-footer</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10mm</span>
+<span class="nt">spacing-header</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10mm</span>
+<span class="nt">width</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
+<span class="nt">pageTemplates</span><span class="p">:</span>
+<span class="nt">coverPage</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">showFooter</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">showHeader</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">    </span><span class="nt">underline</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="nt">noHead</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">frames</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[[</span><span class="nv">0%</span><span class="p p-Indicator">,</span><span class="nv">0%</span><span class="p p-Indicator">,</span><span class="nv">100%</span><span class="p p-Indicator">,</span><span class="nv">100%</span><span class="p p-Indicator">]]</span>
+<span class="w">    </span><span class="nt">showFooter</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">showHeader</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">    </span><span class="nt">underline</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="nt">mainPage</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">frames</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[[</span><span class="nv">0%</span><span class="p p-Indicator">,</span><span class="nv">0%</span><span class="p p-Indicator">,</span><span class="nv">100%</span><span class="p p-Indicator">,</span><span class="nv">110%</span><span class="p p-Indicator">]]</span>
+<span class="w">    </span><span class="nt">showFooter</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">True</span>
+<span class="w">    </span><span class="nt">showHeader</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">True</span>
+<span class="nt">styles</span><span class="p">:</span>
+<span class="nt">base</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">allowWidows</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">    </span><span class="nt">allowOrphans</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">    </span><span class="nt">alignment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TA_LEFT</span>
+<span class="w">    </span><span class="nt">allowOrphans</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">    </span><span class="nt">allowWidows</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">    </span><span class="nt">backColor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
+<span class="w">    </span><span class="nt">borderColor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
+<span class="w">    </span><span class="nt">borderPadding</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span>
+<span class="w">    </span><span class="nt">borderRadius</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
+<span class="w">    </span><span class="nt">borderWidth</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">    </span><span class="nt">bulletFontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontMono</span>
+<span class="w">    </span><span class="nt">bulletFontSize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span>
+<span class="w">    </span><span class="nt">bulletIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">    </span><span class="nt">commands</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[]</span>
+<span class="w">    </span><span class="nt">firstLineIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSans</span>
+<span class="w">    </span><span class="nt">fontSize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9</span>
+<span class="w">    </span><span class="nt">hyphenation</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">    </span><span class="nt">leading</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">12</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
+<span class="w">    </span><span class="nt">rightIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">    </span><span class="nt">spaceAfter</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">    </span><span class="nt">spaceBefore</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">    </span><span class="nt">strike</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">    </span><span class="nt">textColor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">black</span>
+<span class="w">    </span><span class="nt">wordWrap</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
+<span class="w">    </span><span class="nt">linkUnderline</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">linkColor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">blue</span>
+<span class="nt">tableofcontents</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">normal</span>
+<span class="nt">big-text</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">fontSize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">175%</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">base</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSans</span>
+<span class="nt">medium-text</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">fontSize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">125%</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">base</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSans</span>
+<span class="nt">small-text</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">fontSize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">125%</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">base</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSans</span>
+<span class="nt">blockquote</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">20</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bodytext</span>
+<span class="nt">bodytext</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">alignment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TA_JUSTIFY</span>
+<span class="w">    </span><span class="nt">hyphenation</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">normal</span>
+<span class="w">    </span><span class="nt">spaceBefore</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">6</span>
+<span class="nt">align-center</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">alignment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TA_CENTER</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bodytext</span>
+<span class="nt">align-right</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">alignment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TA_RIGHT</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bodytext</span>
+<span class="nt">code</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">spaceBefore</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">6</span>
+<span class="w">    </span><span class="nt">spaceAfter</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">6</span>
+<span class="w">    </span><span class="nt">backColor</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;#d1dede&quot;</span>
+<span class="w">    </span><span class="nt">borderColor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">darkgray</span>
+<span class="w">    </span><span class="nt">borderPadding</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">6</span>
+<span class="w">    </span><span class="nt">borderWidth</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.5</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">literal</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontMonoBold</span>
+<span class="nt">compgreen</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">textColor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">green</span>
+<span class="w">    </span><span class="nt">alignment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TA_RIGHT</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSansBold</span>
+<span class="nt">compred</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">textColor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">red</span>
+<span class="w">    </span><span class="nt">alignment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TA_RIGHT</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSansBold</span>
+<span class="nt">contents</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">normal</span>
+<span class="nt">figure</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">spaceBefore</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">18</span>
+<span class="w">    </span><span class="nt">spaceAfter</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">12</span>
+<span class="w">    </span><span class="nt">alignment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TA_CENTER</span>
+<span class="w">    </span><span class="nt">colWidths</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100%</span>
+<span class="w">    </span><span class="nt">commands</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">VALIGN</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- TOP</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ALIGN</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- CENTER</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bodytext</span>
+<span class="nt">figure-caption</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">alignment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TA_CENTER</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSans</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bodytext</span>
+<span class="nt">figure-legend</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bodytext</span>
+<span class="nt">footer-box</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">alignment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TA_CENTER</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSans</span>
+<span class="w">    </span><span class="nt">commands</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BOX</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- 0.25</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- white</span>
+<span class="nt">header-box</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">alignment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TA_RIGHT</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSans</span>
+<span class="w">    </span><span class="nt">commands</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BOX</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- 0.25</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- white</span>
+<span class="nt">heading</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">keepWithNext</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">normal</span>
+<span class="w">    </span><span class="nt">spaceAfter</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">    </span><span class="nt">spaceBefore</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSerif</span>
+<span class="w">    </span><span class="nt">textColor</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;#222222&quot;</span>
+<span class="nt">heading1</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">fontSize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">120%</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">heading</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSansBold</span>
+<span class="w">    </span><span class="nt">underlineColor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">black</span>
+<span class="w">    </span><span class="nt">underlineWidth</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">    </span><span class="nt">underlineOffset</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span>
+<span class="nt">heading2</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">fontSize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">110%</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">heading</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSansBold</span>
+<span class="w">    </span><span class="nt">underlineColor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">black</span>
+<span class="w">    </span><span class="nt">underlineWidth</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">    </span><span class="nt">underlineOffset</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span>
+<span class="nt">heading3</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">fontSize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100%</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">heading</span>
+<span class="nt">heading4</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">heading</span>
+<span class="nt">heading5</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">heading</span>
+<span class="nt">heading6</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">heading</span>
+<span class="nt">hint</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admonition</span>
+<span class="nt">hint-heading</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admonition-heading</span>
+<span class="nt">image</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">spaceBefore</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span>
+<span class="w">    </span><span class="nt">spaceAfter</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span>
+<span class="w">    </span><span class="nt">alignment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TA_CENTER</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bodytext</span>
+<span class="nt">important</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admonition</span>
+<span class="nt">important-heading</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admonition-heading</span>
+<span class="nt">italic</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSansItalic</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bodytext</span>
+<span class="nt">line</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">lineblock</span>
+<span class="w">    </span><span class="nt">spaceBefore</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="nt">lineblock</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bodytext</span>
+<span class="nt">linenumber</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">code</span>
+<span class="nt">literal</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">firstLineIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontMono</span>
+<span class="w">    </span><span class="nt">hyphenation</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">normal</span>
+<span class="w">    </span><span class="nt">wordWrap</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
+<span class="nt">normal</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">base</span>
+<span class="nt">note</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admonition</span>
+<span class="nt">note-heading</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admonition-heading</span>
+<span class="nt">option-list</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">colWidths</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
+<span class="w">    </span><span class="nt">commands</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">VALIGN</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- TOP</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TOPPADDING</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- 0</span>
+<span class="nt">rubric</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">alignment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TA_CENTER</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bodytext</span>
+<span class="w">    </span><span class="nt">textColor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">darkred</span>
+<span class="nt">separation</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">normal</span>
+<span class="nt">sidebar</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">backColor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cornsilk</span>
+<span class="w">    </span><span class="nt">borderColor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">darkgray</span>
+<span class="w">    </span><span class="nt">borderPadding</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8</span>
+<span class="w">    </span><span class="nt">borderWidth</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.5</span>
+<span class="w">    </span><span class="nt">float</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">none</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">normal</span>
+<span class="w">    </span><span class="nt">width</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100%</span>
+<span class="nt">sidebar-subtitle</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">heading4</span>
+<span class="nt">sidebar-title</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">heading3</span>
+<span class="nt">subtitle</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">fontSize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">85%</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">title</span>
+<span class="w">    </span><span class="nt">spaceBefore</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">12</span>
+<span class="nt">table</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">alignment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TA_LEFT</span>
+<span class="w">    </span><span class="nt">spaceBefore</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">    </span><span class="nt">spaceAfter</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">    </span><span class="nt">borderPadding</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span>
+<span class="w">    </span><span class="nt">leftPadding</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">6</span>
+<span class="w">    </span><span class="nt">rightPadding</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">6</span>
+<span class="w">    </span><span class="nt">topPadding</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span>
+<span class="w">    </span><span class="nt">bottomPadding</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span>
+<span class="w">    </span><span class="nt">background-color</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">white</span>
+<span class="w">    </span><span class="nt">alternate-row-background-color</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">lightgray</span>
+<span class="w">    </span><span class="nt">commands</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ROWBACKGROUNDS</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - white</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- &quot;#E0E0E0&quot;</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BOX</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- 0</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- - -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- -1</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- 0.25</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">- black</span>
+<span class="nt">admonition</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">borderWidth</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">    </span><span class="nt">borderPadding</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="nt">table-heading</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">alignment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TA_LEFT</span>
+<span class="w">    </span><span class="nt">borderWidth</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">    </span><span class="nt">borderPadding</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">    </span><span class="nt">backColor</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;#c5d1c5&quot;</span>
+<span class="w">    </span><span class="nt">borderColor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">darkgray</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontMonoBold</span>
+<span class="nt">tip-heading</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admonition-heading</span>
+<span class="nt">title</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">alignment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TA_CENTER</span>
+<span class="w">    </span><span class="nt">fontSize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">120%</span>
+<span class="w">    </span><span class="nt">keepWithNext</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">heading</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSansBold</span>
+<span class="w">    </span><span class="nt">spaceAfter</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">36</span>
+<span class="nt">title-reference</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSansItalic</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">normal</span>
+<span class="nt">toc</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">normal</span>
+<span class="w">    </span><span class="nt">fontSize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100%</span>
+<span class="nt">toc1</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">fontName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontSansBold</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span>
+<span class="nt">toc10</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span>
+<span class="nt">toc11</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span>
+<span class="nt">toc12</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span>
+<span class="nt">toc13</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span>
+<span class="nt">toc14</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span>
+<span class="nt">toc15</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span>
+<span class="nt">toc2</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">20</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span>
+<span class="nt">toc3</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">40</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span>
+<span class="nt">toc4</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">60</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span>
+<span class="nt">toc5</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">80</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span>
+<span class="nt">toc6</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span>
+<span class="nt">toc7</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span>
+<span class="nt">toc8</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span>
+<span class="nt">toc9</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">leftIndent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span>
+<span class="nt">topic-title</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">heading3</span>
+<span class="nt">warning</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admonition</span>
+<span class="nt">warning-heading</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admonition-heading</span>
+</pre></div>
+</div>
+</div></blockquote>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="rvB06-assign.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><strong>B.6 |</strong> Assignment</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="rvC02-files.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>C.2 |</strong> rivt Files</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Sections
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docs"><strong>[1]</strong> Docs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#files-folders"><strong>[4]</strong> Files / Folders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#public-files"><strong>[2]</strong> Public files</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#file-folder"><strong>[4]</strong> Files / Folders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-settings-py"><strong>[2]</strong> Comment Settings (.py)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-and-pdf-config-py"><strong>[3]</strong> HTML and PDF Config (.py)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pdf-style-file-yaml"><strong>[4]</strong> PDF Style File (.yaml)</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2025 R Holland.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+  </body>
+</html>

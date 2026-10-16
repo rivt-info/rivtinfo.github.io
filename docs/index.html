@@ -59,7 +59,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="A.1 | Start" href="rvA01-start.html" />
+    <link rel="next" title="[1] Overview" href="rvA01-start.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -146,49 +146,42 @@
     
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvA01-start.html">
-    A.1 | Start
+    [1] Overview
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvB01-overview.html">
-    B.1 | Overview
+  <a class="nav-link nav-internal" href="rvB01-rivt.html">
+    B.1 | R-I-V-T
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvC01-documents.html">
-    C.1 | Docs
+  <a class="nav-link nav-internal" href="rvC01-publish.html">
+    C.1 | Publish
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvD01-markup.html">
-    D.1 | rivt Markup
+  <a class="nav-link nav-internal" href="rvD01-rivtstudio.html">
+    D.1 | rivtStudio
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvE01-collab.html">
-    E.1 | Collaboration
+  <a class="nav-link nav-internal" href="rvE01-aiintro.html">
+    E.1 | AI Workflow
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvF01-aiintro.html">
-    F.1 | AI
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvG01-quickref.html">
-    G.1 | Quick Reference
+  <a class="nav-link nav-internal" href="rvF01-quickref.html">
+    F.1 | Quick Reference
   </a>
 </li>
 
@@ -265,49 +258,42 @@
     
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rvA01-start.html">
-    A.1 | Start
+    [1] Overview
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvB01-overview.html">
-    B.1 | Overview
+  <a class="nav-link nav-internal" href="rvB01-rivt.html">
+    B.1 | R-I-V-T
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvC01-documents.html">
-    C.1 | Docs
+  <a class="nav-link nav-internal" href="rvC01-publish.html">
+    C.1 | Publish
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvD01-markup.html">
-    D.1 | rivt Markup
+  <a class="nav-link nav-internal" href="rvD01-rivtstudio.html">
+    D.1 | rivtStudio
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvE01-collab.html">
-    E.1 | Collaboration
+  <a class="nav-link nav-internal" href="rvE01-aiintro.html">
+    E.1 | AI Workflow
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvF01-aiintro.html">
-    F.1 | AI
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvG01-quickref.html">
-    G.1 | Quick Reference
+  <a class="nav-link nav-internal" href="rvF01-quickref.html">
+    F.1 | Quick Reference
   </a>
 </li>
 
@@ -367,70 +353,28 @@
 <a class="dark-light reference internal image-reference" href="_images/rivt-finalb.png"><img alt="rivt logo" class="dark-light" height="106" src="_images/rivt-finalb.png" width="133" />
 </a>
 </figure>
-<hr><p><em>rivt</em> is an open-source project for writing and assembling calculation
-documents with a focus on file reuse <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>. <em>rivt</em> is designed to work with
-outputs from Python code and other scientific and engineering software that
-often require inclusion and organization within project documents.</p>
-<p>The core of the project is a <em>rivt file</em> (.py) using <em>rivt markup</em> to write,
-organize and process text, calculations, images, code and general software
-output. The Python library <em>rivtlib</em> compiles and publishes a <em>rivt file</em> as
-a text, PDF or HTML document (a <em>doc</em>).</p>
-<p>The primary purpose of <em>rivt</em> is to provide a stable file and folder format that
-can be shared, edited, and maintained as a live calculation file producing
-formatted reports.  <em>rivt files</em> are organized in either a <em>rivt project</em>
-or <em>rivtbook</em> folder.</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>                     | A rivt file is a Python file file that imports
-rivt file            | the rivtlib Python package (.py), includes rivt
-                     | markup, and compiles to a text, PDF or HTML doc.
-
-                     | A rivtbook folder is a collection of rivt files
-rivtbook folder      | with common subject matter and a folder structure
-                     | that makes it easy to select files and resources
-                     | for inclusion in rivt files.
-
-                     | A rivt project folder is a collection of one or
-rivt project folder  | more rivt files and related resources. rivt files
-                     | are compiled into a text, PDF or HTML doc and
-                     | assembled into a report.
-</pre></div>
+<hr><p><em>rivt</em> is an open source project for writing and sharing engineering documents.
+It runs in a portable desktop environment and the cloud . The project includes:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="_images/rivt-finalb.png"><img alt="rivt_logo" src="_images/rivt-finalb.png" style="width: 20px;" /></a></p></td>
+<td><p><em>rivt markup</em> and the <em>rivtlib</em> Python library</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_images/rvstudio.png"><img alt="studio_logo" src="_images/rvstudio.png" style="width: 20px;" /></a></p></td>
+<td><p><em>rivtStudio</em> - a portable desktop writing and publishing environment</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_images/rvremote.png"><img alt="remote_logo" src="_images/rvremote.png" style="width: 20px;" /></a></p></td>
+<td><p><em>rivtRemote</em> - containerized <em>rivtStudio</em> that runs in a browser</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_images/openmod2.png"><img alt="open_logo" src="_images/openmod2.png" style="width: 20px;" /></a></p></td>
+<td><p><em>openModels</em> - online repositories of shared models and documents</p></td>
+</tr>
+</tbody>
+</table>
 </div>
-<p>For an overview of <em>rivt</em> see <a class="reference internal" href="rvB01-overview.html#rivt-overview"><span class="std std-ref">here</span></a>. To get started with
-running examples see <a class="reference internal" href="rvA01-start.html#rivt-start"><span class="std std-ref">install</span></a>. For <em>rivt with AI</em> see
-<a class="reference internal" href="rvF01-aiintro.html#rivt-context"><span class="std std-ref">here</span></a>. Examples of a <a class="reference internal" href="rvA03-exfile.html#example-file"><span class="std std-ref">rivt file</span></a> with
-the associated <a class="reference internal" href="rvA04-txt.html#text-doc"><span class="std std-ref">text</span></a>, <a class="reference internal" href="rvA06-pdf.html#pdf-doc"><span class="std std-ref">PDF</span></a>, and
-<a class="reference internal" href="rvA05-html.html#html-doc"><span class="std std-ref">HTML</span></a> <em>docs</em> are provided in this <a class="reference internal" href="rvA02-tutor.html#rivt-tutor"><span class="std std-ref">tutorial</span></a>.</p>
-<p><em>rivtlib</em> is the <a class="reference external" href="https://pypi.org/project/rivtlib/" rel="noreferrer" target="_blank">Python package</a> that formats
-and compiles a <em>rivt file</em> to a <em>doc</em> in a second or two. Python knowledge is not
-required to use <em>rivt</em> but incorporating Python scientific and engineering
-libraries into a <em>rivt file</em> increases its capabilities. A <em>rivt file</em> may
-be interactively executed from the top down in an IDE, or from the command line.
-Multiple <em>rivt files</em> may be compiled into a <a class="reference internal" href="rvC04-reports.html#rivt-reports"><span class="std std-ref">rivt report</span></a>.
-This website is an example of an <em>HTML report</em>. <em>rivt files</em> may also be collected
-into a <a class="reference internal" href="rvC05-rivtbks.html#rivt-books"><span class="std std-ref">rivtbook</span></a> organized around a common subject matter.
-<em>rivtbooks</em> are organized for efficient file selection and inclusion in reports.</p>
-<p><em>rivt files and reports</em> may be shared and distributed through any cloud
-storage service. Examples are available on <em>Google Drive</em> at
-<a class="reference external" href="https://www.openmodels.info/models" rel="noreferrer" target="_blank">openmodels.info</a>. If collaboration and
-version control are needed <a class="reference external" href="https://github.com/" rel="noreferrer" target="_blank">GitHub</a> may be used for development
-and distribution. <em>rivt files and reports</em> are organized in top level folders
-( <a class="reference internal" href="rvC03-folders.html#rivt-folders"><span class="std std-ref">rivt project</span></a> or <a class="reference internal" href="rvC05-rivtbks.html#rivt-books"><span class="std std-ref">rivtbook</span></a> ) which
-work well as <em>GitHub</em> repositories. <em>rivt</em> also generates a <em>GitHub</em> README file
-from a <em>rivt report</em>. A convenient interface for searching  public <em>rivt</em> READMEs
-is <a class="reference internal" href="rvE02-github.html"><span class="doc">here.</span></a>.</p>
-<p><em>rivt</em> produces organized, formatted engineering documents from active
-calculation files using reasonable defaults. Use cases are listed <a class="reference internal" href="rvB02-motivation.html#use-case"><span class="std std-ref">here</span></a>. A brief discussion of current engineering document tools and their
-strengths and weaknesses relative to <em>rivt</em> objectives is <a class="reference internal" href="rvB02-motivation.html#motivation"><span class="std std-ref">here</span></a>.
-For documents with rigid format requirements, including
-journal articles and books that do not need active recalculation, <a class="reference external" href="https://quarto.org/" rel="noreferrer" target="_blank">Quarto</a> is likely a better fit. For interactive calculation
-documents that do not need an organized published report,
-<a class="reference external" href="https://jupyter.org/" rel="noreferrer" target="_blank">Jupyter Notebooks</a> is likely a better tool.</p>
-<aside class="footnote-list brackets">
-<aside class="footnote brackets" id="id2" role="doc-footnote">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
-<p>rivt includes switches that selectively export <em>rivt file</em> sections
-to a <em>public rivt report folder</em> for open-source reuse.</p>
-</aside>
-</aside>
+<p>The :ref:` motivation &lt;rvmotivation&gt;` to write <em>rivt</em> developed over many years
+as it became apparent that a program that made it easy to share and reuse
+engineering documents might never appear.</p>
 <hr>
 
 <p style="color:rgb(63,177,197);">ver: 1.0.0a18
@@ -454,7 +398,7 @@ incomplete and program structure, markup and assignment tags, and commands may c
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>A.1 |</strong> Start</p>
+        <p class="prev-next-title"><strong>[1]</strong> Overview</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

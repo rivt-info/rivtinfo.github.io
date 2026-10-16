@@ -1,22 +1,129 @@
 **A.1 |** Start
+
 =====================================================================
 
 .. _rivt-start:
 
-**[1]** Getting Started 
-------------------------------------------------------------------------------- 
+**[1]** Overview
+-------------------------------------------------------------------------------- 
 
-This section covers installation of *rivt* and *rivt doc* examples. They are
-source software so you are free to download and modify the program as needed 
-(see :ref:`FAQ <Licenses>`). The open source software installation process is
-designed to gather and install multiple open source components from
-various sources. This section covers three ways to run *rivt*.
+*rivt* is an open source project for writing, sharing and reusing engineering
+calculation documents [1]_. It runs on the desktop and in the cloud. The project
+includes *rivtlib* - a `Python package <https://pypi.org/project/rivtlib/>`__
+that formats and compiles *rivt files*, *rivtStudio* - an integrated
+desktopeditor that manages and publishes *rivt docs*, and *rivtRemote* -
+containerized versions of rivtStudio. Python knowledge is not required to use
+*rivt*, but adding custom Python scripts increases its capabilities. 
 
-#. For most Windows users the best way to get started is to download
-   the portable file *rivt-code.zip*  (~800 MB zipped, ~2.2 GB expanded). 
+Each rivt file (.py) uses *rivt markup* to organize text, calculations, images,
+code and external programs that may be published as a *rivt doc* (a formatted
+text, HTML and PDF document).The *rivt* folder structure provides a replicable
+format for organizing a wide variety of file types. Groups of *docs* can form a
+complete, structured *rivt report*.
+
+This :ref:`tutorial <rivt-tutor>` provides examples of a 
+:ref:`rivt file <example-file>` and associated :ref:`text <text-doc>`, 
+:ref:`PDF <pdf-doc>`, and :ref:`HTML <html-doc>` *docs*. 
+ 
+To get started with running examples see :ref:`install <rivt-start>`. For *rivt
+with AI* see :ref:`here <rivt-context>`.
+
+*rivt files and reports* may be shared and distributed through any cloud
+storage service. Examples are available on *Google Drive* at 
+`openmodels.info <https://www.openmodels.info/models>`_. If collaboration and 
+version control are needed `GitHub <https://github.com/>`_ may be used for 
+development and distribution. *rivt files and reports* are organized in top 
+level folders (:ref:`rivt project <rivt-folders>` or :ref:`rivtbook <rivt-books>`) 
+which work well as *GitHub* repositories. *rivt* also generates a *GitHub* 
+README file from a *rivt report*. A convenient interface for searching public 
+*rivt* READMEs is :ref:`here <search-interface>`. 
+
+.. [1] rivt includes provisions for selectively exporting *rivt file*
+    sections to a *public rivt report folder* for open-source distribution.
+
+.. _rvmotivation:
+ 
+**[2]** Motivation
+-------------------------------------------------------------------------------- 
+
+Reuse of engineering documents has always been a challenge because engineering
+documents are complex and apparently commercial software goals do not align
+with this goal.
+
+Widely used text and image oriented software is generally not sufficient
+because of the additional complexity of engineering documents. They may include
+text, images, tables, calculations, active models and computer code. They are
+also dynamic, and are frequently updated and recalculated by others as
+project designs evolve and progress.
+
+The desire to reuse engineering documents is a matter of simple efficiency. Most
+engineering calculations are not unique. They may be organized in different ways
+with different inputs, but the basic equations and methods are shared across
+many projects and evolve slowly. The commercial market 
+response has been to develop incompatible, 
+siloed programs with a number of barriers to sharing and reuse that include:
+
+- incompatible documents across programs
+- costly software updates that are backward incompatible
+- software limited to specific platforms
+- limited version control
+- limited report generation
+- limited collaboration
+
+The table below summarizes and compares limitations between specific programs
+that *rivt* is designed to complement or replace.
+
+.. _use-case:
+
+.. rst-class:: center
+
+**Software Comparison (commercial programs in italics)**
+
+============= ============ ========= ======== ========== =========== ========== ========= ============= ===========
+Program       Reprt [2]_   Ver [3]_  Txt [4]_  Priv [5]_  Unts [6]_  Comp [7]_  C-P [8]_   Coll [9]_     Pub [10]_
+============= ============ ========= ======== ========== =========== ========== ========= ============= ===========
+*Matlab*         no           no         no     no        no           no         no        no            yes
+*Mathcad*        no           no         no     no        no           no         no        no            no
+*Mathematica*    no           no         no     no        no           no         no        no            yes
+*Cloud SaaS*    limited       no         no     no        no           no         yes      limited       limited
+*Excel*         limited       no         no     no        no           yes        no        yes           yes
+Jupyter          no           no         no     no        no           yes        yes       yes           yes
+Quarto           yes          yes        no     no        no           no         yes       yes           yes
+**rivt**        **yes**     **yes**   **yes**  **yes**    **yes**     **yes**    **yes**   **yes**       **yes**  
+============= ============ ========= ======== ========== =========== ========== ========= ============= ===========
+
+.. [2] Report generation.
+.. [3] Native Git version control.
+.. [4] Plain text input and output files.
+.. [5] Syntax control of private and public sections.
+.. [6] Calculation with dual units.
+.. [7] Forward and backward compatibility.
+.. [8] Cross-platform support.
+.. [9] Collaboration support.
+.. [10] Text, PDF, and HTML documents from the same input file.
+
+*rivt* produces organized, formatted engineering documents from active
+calculation files using reasonable defaults. Use cases are listed 
+:ref:`here <use-case>`. A brief discussion of current engineering document tools 
+and their  strengths and weaknesses relative to *rivt* objectives is 
+:ref:`here <rvmotivation>`. For documents with specific format requirements
+including journal articles and books and that do not need live recalculation, 
+`Quarto <https://quarto.org/>`_ is likely a better fit. For interactive 
+calculation documents that do not need an organized published report, 
+`Jupyter Notebooks <https://jupyter.org/>`_ is likely a better tool. 
+
+.. _run-rivt:
+
+**[2]** Run rivt
+--------------------------------------------------------------------------------
+
+This section covers three ways to run *rivt*.
+
+#. For most users the best way to get started is to download
+   *rivtStudio*  (~1 GB zipped, ~2 GB expanded). 
    For further details see :ref:`rivt-code <rivt-code>`.
 
-#. For users with a `GitHub <https://github.com>`__ account or limitations
+#. For users with a `GitHub <https://github.com>`_ account or limitations
    on running local software, the best way to get started is to fork and run
    :ref:`rivt-codespace <rivt-codespace>` in a browser. 
 
@@ -51,30 +158,32 @@ A typical **VSCode IDE** layout for editing a *rivt file* is shown below.
 
 -------------------------------
 
-.. _rivt-code:
 
-**[2]** rivt-code
+This section covers installation of *rivt* and *rivt doc* examples. They are
+source software so you are free to download and modify the program as needed 
+(see :ref:`FAQ <Licenses>`). The open source software installation process is
+designed to gather and install multiple open source components from
+various sources. 
+
+.. _rivt-studio:
+
+**[3]** rivtStudio
 -------------------------------------------------------------------------------- 
 
 A *rivt-code* installation is recommended for Windows users interested in trying
 *rivt* *rivt-code* is a zip file that includes rivt, Python, VSCode and an
 example rivt file. The zipped file size is ~800 MB which unzips to about 2.2
 GB. It may be downloaded from the `rivt-code repository
-<https://github.com/rivtlib-dev/rivt-code/releases/>`__.
+<https://github.com/rivtlib-dev/rivt-code/releases/>`_.  
+rivtStudio is currently in alpha
 
 The zip file naming convention is:
 
 .. code-block:: text
 
-    rivt-code-monthx.year.zip
+    rivtStudio-monthx.year.zip
 
 where x is an a-z character representing mid month releases. 
-
-The tag name follows the major, minor and patch release number convention.
-
-.. code-block:: text
-
-   v<major>.<minor>.<patch>[an]
 
 The zip file contents must be unzipped into a directory with read-write access
 - typically the users home folder or a flash drive. After unzipping, click the
@@ -99,12 +208,12 @@ navigation and running *rivt files*. They are listed in :ref:`vscode settings
 
 .. _rivt-codespace:
 
-**[3]** rivt-codespace
+**[3]** rivtRemote
 -------------------------------------------------------------------------------- 
 
 `VSCode <https://code.visualstudio.com/>`_ is a customizable code editor that
 can be run locally or in the cloud. The cloud version of *VSCode* is referred
-to as a `Codespace <https://github.com/features/codespaces>`__ . A 
+to as a `Codespace <https://github.com/features/codespaces>`_ . A 
 :term:`rivt Codespace` is a *VSCode* cloud environment with *rivt* extensions 
 for editing and running *rivt files*. 
 
@@ -121,7 +230,7 @@ rivt-codespace environment is persistent and will save any changes made to the
 example files.
 
 Steps for running rivt-codespace are provided in the README `here
-<https://github.com/rivtlib-dev/rivtlib>`__.
+<https://github.com/rivtlib-dev/rivtlib>`_.
 
 
 .. figure::  _static/img/codespace2.png
@@ -136,14 +245,14 @@ Steps for running rivt-codespace are provided in the README `here
 
 .. _rivt-sys:
 
-**[4]** rivt-system
+**[4]** rivt system
 --------------------------------------------------------------------------------
 
 *rivt* may be installed into a system level Python. 
 
 .. topic:: Step 1. Install Python
 
-    Install Python using `Python installers <https://www.python.org/downloads/>`__
+    Install Python using `Python installers <https://www.python.org/downloads/>`_
     if not already installed. The minimum required version is Python 3.14.
 
 .. topic:: Step 2. install rivtlib and dependencies
@@ -157,7 +266,7 @@ Steps for running rivt-codespace are provided in the README `here
 A list of the installed dependencies is :ref:`here <rivt-depend>`.
 
 *rivt* may also be installed and isolated environment using the `uv package
-manager <https://docs.astral.sh/uv/>`__. The primary advantage of *uv* is the
+manager <https://docs.astral.sh/uv/>`_. The primary advantage of *uv* is the
 simplicity of insalling and updating packages while keeping them isolated from
 the system Python. 
 
@@ -167,7 +276,7 @@ Python and programming.
 .. topic:: Step 1. Install uv
 
     Different methods for installing *uv* are described
-    `here <https://docs.astral.sh/uv/getting-started/installation/#pypi>`__. 
+    `here <https://docs.astral.sh/uv/getting-started/installation/#pypi>`_. 
 
     The recommended method for installing *uv* is from the command line:
 
@@ -208,14 +317,17 @@ Python and programming.
 .. topic:: Step 3. Download example rivt report folders
 
     Example folders can be downloaded and unzipped through
-    `openmodels.info <https://www.openmodels.info>`__ or directly from  
-    `Google Cloud <https://drive.google.com/drive/u/1/folders/1NP04tdp3FRAir0ErvL2hlm3YBaFlLk5V>`__ .
+    `openmodels.info <https://www.openmodels.info>`_ or directly from  
+    `Google Cloud <https://drive.google.com/drive/u/1/folders/1NP04tdp3FRAir0ErvL2hlm3YBaFlLk5V>`_ .
 
-    *rivt* also includes the `Pyzo <https://pyzo.org/>`__ IDE for editing and
+    *rivt* also includes the `Pyzo <https://pyzo.org/>`_ IDE for editing and
     running examples. Pyzo may be configured in the uv environment and
     provides an effective environment for running rivt examples. 
         
 ---------------------------------
+
+
+
 
 .. toctree::
     :maxdepth: 1
@@ -223,7 +335,7 @@ Python and programming.
 
     rvA02-tutor.rst
     rvA03-exfile.rst
-    rvA04-txt.rst
-    rvA05-html.rst
-    rvA06-pdf.rst
-    rvA07-faq.rst
+    rvA04-txtdoc.rst
+    rvA05-htmldoc.rst
+    rvA06-pdfdoc.rst
+

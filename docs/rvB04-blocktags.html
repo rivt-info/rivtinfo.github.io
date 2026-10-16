@@ -1,0 +1,854 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" data-theme="dark">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
+    <title>B.4 | Block Tags &#8212; rivt</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "dark";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "dark";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=70555702" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/jquery.js?v=5d32c60e"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="_static/documentation_options.js?v=7ed0cb1e"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'rvB04-blocktags';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="B.5 | Commands" href="rvB05-commands.html" />
+    <link rel="prev" title="B.3 | Line Tags" href="rvB03-linetags.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="dark">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+    
+    <img src="_static/rivhome11t.png" class="logo__image only-dark" alt=""/>
+    <img src="_static/rivhome11t.png" class="logo__image only-light pst-js-only" alt=""/>
+  
+  
+    <p class="title logo__title">rivt</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvA01-start.html">
+    [1] Overview
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="rvB01-rivt.html">
+    B.1 | R-I-V-T
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvC01-publish.html">
+    C.1 | Publish
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvD01-rivtstudio.html">
+    D.1 | rivtStudio
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvE01-aiintro.html">
+    E.1 | AI Workflow
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvF01-quickref.html">
+    F.1 | Quick Reference
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="Sections">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvA01-start.html">
+    [1] Overview
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="rvB01-rivt.html">
+    B.1 | R-I-V-T
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvC01-publish.html">
+    C.1 | Publish
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvD01-rivtstudio.html">
+    D.1 | rivtStudio
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvE01-aiintro.html">
+    E.1 | AI Workflow
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvF01-quickref.html">
+    F.1 | Quick Reference
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links" aria-label="Docs">
+    <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
+    <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="rvB02-apiscope.html"><strong>B.2 |</strong> API Scopes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvB03-linetags.html"><strong>B.3 |</strong> Line Tags</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>B.4 |</strong> Block Tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvB05-commands.html"><strong>B.5 |</strong> Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvB06-assign.html"><strong>B.6 |</strong> Assignment</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="rvB01-rivt.html" class="nav-link"><strong>B.1 |</strong> R-I-V-T</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>B.4 |</strong> Block Tags</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="b-4-block-tags">
+<h1><strong>B.4 |</strong> Block Tags<a class="headerlink" href="#b-4-block-tags" title="Link to this heading">#</a></h1>
+<section id="block-tag-summary">
+<span id="block-summary"></span><h2><strong>[1]</strong> Block Tag Summary<a class="headerlink" href="#block-tag-summary" title="Link to this heading">#</a></h2>
+<p><strong>Format or run blocks of text or scripts</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>API Scope</p></th>
+<th class="head"><p>Block Tag</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>rv.R</p></td>
+<td><p><strong>_[[WRITE]]</strong> var name</p></td>
+<td><p><a class="reference internal" href="#write-block"><span class="std std-ref">[5] Write</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.R</p></td>
+<td><p><strong>_[[SHELL]]</strong> os, <em>wait;nowait</em></p></td>
+<td><p><a class="reference internal" href="#shell-script"><span class="std std-ref">[6] Shell script</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>rv.I,V</p></td>
+<td><p><strong>_[[TABLE]]</strong> label</p></td>
+<td><p><a class="reference internal" href="#table-block"><span class="std std-ref">[3] Table Block</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.I,V</p></td>
+<td><p><strong>_[[ENDNOTES]]</strong></p></td>
+<td><p><a class="reference internal" href="#endnotes-block"><span class="std std-ref">[2] Endnotes Block</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>rv.V</p></td>
+<td><p><strong>_[[ARGS]]</strong> arg dict name</p></td>
+<td><p><a class="reference internal" href="#arg-block"><span class="std std-ref">[4] Argument block</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.D</p></td>
+<td><p><strong>_[[METADATA]]</strong> label</p></td>
+<td><p><a class="reference internal" href="#meta-block"><span class="std std-ref">[7] Metadata</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>all</p></td>
+<td><p><strong>_[[END]]</strong></p></td>
+<td><p><a class="reference internal" href="#end-block"><span class="std std-ref">[8] End block</span></a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="endnotes-block">
+<span id="id1"></span><h2><strong>[2]</strong> Endnotes Block<a class="headerlink" href="#endnotes-block" title="Link to this heading">#</a></h2>
+<aside class="topic">
+<p class="topic-title">_[[ENDNOTES]]</p>
+<p>Inserts endnotes at end of document. One block is used per document.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    _[[ENDNOTES]]
+    endnote 1
+
+    endnote 2
+
+    endnote 3
+    ...
+    _[[END]]
+
+Example:
+    _[[ENDNOTES]]
+    Timoshenko, Stephen P. (1983). History of strength of
+    materials: with a brief account of the history of theory of
+    elasticity and theory of structures. Dover Books on Physics.
+    Dover Publications.
+
+    Truesdell, C. (1960). The rational mechanics of flexible or
+    elastic bodies 1638–1788. Venditioni Exponunt Orell Fussli
+    Turici.
+    _[[END]]
+</pre></div>
+</div>
+</aside>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Insert, Values</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+</section>
+<section id="table-block">
+<span id="id2"></span><h2><strong>[3]</strong> Table Block<a class="headerlink" href="#table-block" title="Link to this heading">#</a></h2>
+<aside class="topic">
+<p class="topic-title">_[[TABLE]]</p>
+<p>Reads and formats restructured text table and writes contents
+to csv file in the _rvstor/data folder.
+.. code-block:: text</p>
+<blockquote>
+<div><dl class="simple">
+<dt>Syntax:</dt><dd><p>_[[TABLE]] label
+reST table
+…
+_[[END]]</p>
+</dd>
+<dt>Example:</dt><dd><p>_[[TABLE]] my_table
+=====  ======
+Name   Age
+=====  ======
+John   25
+Jane   30
+=====  =====
+_[[END]]</p>
+</dd>
+</dl>
+</div></blockquote>
+</aside>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Insert, Values</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+</section>
+<section id="argument-block">
+<span id="arg-block"></span><h2><strong>[4]</strong> Argument block<a class="headerlink" href="#argument-block" title="Link to this heading">#</a></h2>
+<aside class="topic">
+<p class="topic-title">_[[ARG]] arg_name</p>
+<p>Organizes function arguments into a dictionary that may be passed
+to the FUNCTION command.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    _[[ARGS]] arg_dictionary_name | list of units
+    arg1 = A # label
+    arg2 = B # label
+    ...
+    _[[END]]
+
+Example:
+    _[[ARGS]] beam1 | units: inch, pounds
+    ln_1 = 10*12 # beam length
+    P_1 = 1.1*1000 # beam load
+    ...
+    _[[END]]
+</pre></div>
+</div>
+</aside>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Values</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+</section>
+<section id="write">
+<span id="write-block"></span><h2><strong>[5]</strong> Write<a class="headerlink" href="#write" title="Link to this heading">#</a></h2>
+<aside class="topic">
+<p class="topic-title">_[[WRITE]] rel file path</p>
+<p>Updates variables in templates and writes file to report folder.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    _[[WRITE]] relative file path
+    text or script
+    ...
+    _[[END]]
+
+Example:
+    _[[WRITE]] rvsrc/script.py
+    for i in range(2):
+        print(f&quot;{vars}&quot;,i)
+    _[[END]]
+</pre></div>
+</div>
+</aside>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Run</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+</section>
+<section id="shell-script">
+<span id="id3"></span><h2><strong>[6]</strong> Shell script<a class="headerlink" href="#shell-script" title="Link to this heading">#</a></h2>
+<p>Runs shell scripts that run external programs. The shell parameters include
+specifying the operating system, process control and terminal window control.
+The os parameter specifies the terminal type. The wait parameter specifies
+whether rivt file processing waits for the script to complete before
+continuing. The open parameter specifies whether to keep the shell window open
+after execution.</p>
+<aside class="topic">
+<p class="topic-title">_[[SHELL]]</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    _[[SHELL]] win;mac;linux,wait; nowait,open; close
+    shell command
+    ...
+    _[[END]]
+
+
+Example:
+    _[[SHELL]] win,nowait,open
+    dir
+    path
+    _[[END]]
+</pre></div>
+</div>
+</aside>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Run</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+</section>
+<section id="metadata">
+<span id="meta-block"></span><h2><strong>[7]</strong> Metadata<a class="headerlink" href="#metadata" title="Link to this heading">#</a></h2>
+<aside class="topic">
+<p class="topic-title">_[[METADATA]]</p>
+<p>Each keyword is required and is followed by an equal sign and a value. The
+keywords are case insensitive.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Synatax - defaults:
+
+    _[[METADATA]]
+    [doc]
+    ;-----------------------------------------
+    authors = --
+    version = --
+    repo = --
+    license = --
+    copyright = --
+    fork1_authors = --
+    fork1_version = --
+    fork1_repo = --
+    fork1_license = --
+    [layout]
+    ;----------------------- cover page and runner settings
+    ;--- add logo files to rvsrc/image folder, size is % page width
+    subtitle =  --
+    copyright = --
+    client =  --
+    coverpage = --
+    coverlogo_size = --
+    coverlogo = --
+    runninglogo = --
+    runninglabel = --
+    project_ref = --
+    ;------------------------ PDF settings
+    ;--- colors: red, blue, green, black, gray, brown, maroon, gray, olive, cyan
+    pdf_link_color = --
+    pdf_link_underline = --
+    pdf_pagesize = -- ; letter, legal, A4
+    pdf_margins = -- ; top, right, bottom, left
+    pdf_page = -- ; if true, start sections on new page
+    ;----------------------- TOC levels
+    ;--- 1: include subdivisions   2: include subdivisions and sections
+    toc_level = --
+    [process]
+    ;-----------------------------------------
+    doc_verbose = true; if false minmize output during doc processing
+    auto_cfg = true ; if false, config files are not updated from rivt file
+    _[[END]]
+
+Example:
+    _[[METADATA]]
+    [doc]
+    ;-----------------------------------------
+    authors = R Holland
+    version = 1.0.0a17
+    repo = https://github.com/rivt-info/rivt-example-01
+    license = https://opensource.org/license/mit/
+    copyright = --
+    fork1_authors = --
+    fork1_version = --
+    fork1_repo = --
+    fork1_license = https://opensource.org/license/mit/
+    [layout]
+    ;----------------------- cover page and runner settings
+    ;--- add logo files to rvsrc/image folder, size is % page width
+    subtitle =  UDL Beam
+    copyright = --
+    client = user example
+    coverpage = true
+    coverlogo_size = 30
+    coverlogo = logo1.png
+    runninglogo = logo2.png
+    runninglabel = rivt
+    project_ref = proj. 0001
+    ;------------------------ PDF settings
+    ;--- colors: red, blue, green, black, gray, brown, maroon, gray, olive, cyan
+    pdf_link_color = brown
+    pdf_link_underline = false
+    pdf_pagesize = letter ; letter, legal, A4
+    pdf_margins = 1in, 1in, 1in, 1in ; top, right, bottom, left
+    pdf_page = false ; if true, start sections on new page
+    ;----------------------- TOC levels
+    ;--- 1: include subdivisions   2: include subdivisions and sections
+    toc_level = 2
+    [process]
+    ;-----------------------------------------
+    doc_verbose = true; if false minmize doc processing output
+    auto_cfg = true ; if false, config files are not updated from rivt file
+    _[[END]]
+</pre></div>
+</div>
+</aside>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Docs</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+</section>
+<section id="end-block">
+<span id="id4"></span><h2><strong>[8]</strong> End block<a class="headerlink" href="#end-block" title="Link to this heading">#</a></h2>
+<aside class="topic">
+<p class="topic-title">_[[END]]</p>
+<p>Terminates a block tag.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    _[[NEWPAGE]] optional label
+
+Example:
+    _[[END]]
+</pre></div>
+</div>
+</aside>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>All</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="rvB03-linetags.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><strong>B.3 |</strong> Line Tags</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="rvB05-commands.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>B.5 |</strong> Commands</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Sections
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#block-tag-summary"><strong>[1]</strong> Block Tag Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#endnotes-block"><strong>[2]</strong> Endnotes Block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-block"><strong>[3]</strong> Table Block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#argument-block"><strong>[4]</strong> Argument block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#write"><strong>[5]</strong> Write</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shell-script"><strong>[6]</strong> Shell script</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metadata"><strong>[7]</strong> Metadata</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-block"><strong>[8]</strong> End block</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2025 R Holland.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+  </body>
+</html>
