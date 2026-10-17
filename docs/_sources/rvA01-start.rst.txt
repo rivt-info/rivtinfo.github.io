@@ -9,7 +9,7 @@
 
 *rivt* is an open source project for writing, sharing and reusing engineering
 calculation documents [1]_. It runs on the desktop and in the cloud. The project
-includes *rivtlib* - a `Python package <https://pypi.org/project/rivtlib/>`__
+includes *rivtlib* - a `Python package <https://pypi.org/project/rivtlib/>`_
 that formats and compiles *rivt files*, *rivtStudio* - an integrated
 desktopeditor that manages and publishes *rivt docs*, and *rivtRemote* -
 containerized versions of rivtStudio. Python knowledge is not required to use

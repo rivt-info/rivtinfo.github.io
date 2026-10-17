@@ -15,7 +15,7 @@ Home
    :scale: 20%
    :align: center
    :alt: rivt logo
-    
+   
 
 .. raw:: html
 
@@ -43,8 +43,11 @@ It runs in a portable desktop environment and in the cloud . The project include
 +---------------+----------------------------------------------------------------------+
 | |remote_logo| | *rivtRemote* - a containerized *rivtStudio* that runs in a browser   |
 +---------------+----------------------------------------------------------------------+
-| |open_logo|   | *openModels* - online repositories of shared models and documents    |
+|  |open_logo|  | `openModels`_ - online repositories of shared models and documents   |
 +---------------+----------------------------------------------------------------------+
+
+
+.. _openModels: https://openmodels.info
 
 The :ref:`motivation <rvmotivation>` to write *rivt* developed over many years,
 as the need for a program that made it easy to share and reuse live engineering
