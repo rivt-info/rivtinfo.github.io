@@ -36,18 +36,21 @@ Home
 *rivt* is an open source project for writing and sharing engineering documents.
 It runs in a portable desktop environment and in the cloud . The project includes:
 
-+---------------+----------------------------------------------------------------------+
-| |rivt_logo|   | *rivt markup* and *rivtlib* Python library                           |
-+---------------+----------------------------------------------------------------------+
-| |studio_logo| | *rivtStudio* - a portable desktop writing and publishing environment |
-+---------------+----------------------------------------------------------------------+
-| |remote_logo| | *rivtRemote* - a containerized *rivtStudio* that runs in a browser   |
-+---------------+----------------------------------------------------------------------+
-|  |open_logo|  | `openModels`_ - online repositories of shared models and documents   |
-+---------------+----------------------------------------------------------------------+
++---------------+-------------------------------------------------------------------------------+
+| |rivt_logo|   | *rivtlib* Python library that processes *rivt markup*                         |
++---------------+-------------------------------------------------------------------------------+
+| |studio_logo| | `rivtStudio`_ - a portable desktop writing and publishing program for rivt    |
++---------------+-------------------------------------------------------------------------------+
+| |remote_logo| | `rivtRemote`_ - a containerized *rivtStudio* running on a server and browser  |
++---------------+-------------------------------------------------------------------------------+
+|  |open_logo|  | `openModels`_ - online database of shared engineering models and documents    |
++---------------+-------------------------------------------------------------------------------+
 
 
 .. _openModels: https://openmodels.info
+.. _rivtStudio: https://openmodels.infohttps://github.com/rivt-info/rivtStudio
+.. _rivtRemote: https://github.com/rivtlib-dev/rivtlib
+
 
 The :ref:`motivation <rvmotivation>` to write *rivt* developed over many years,
 as the need for a program that made it easy to share and reuse live engineering

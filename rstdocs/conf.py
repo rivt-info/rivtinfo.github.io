@@ -4,7 +4,7 @@ from pathlib import Path
 
 
 project = "rivt.info"
-copyright = "2025 R Holland"
+copyright = "2026 StL Engineering "
 author = "rholland"
 release = "1.0.0a18"
 extensions = [
