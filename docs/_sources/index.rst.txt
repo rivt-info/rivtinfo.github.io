@@ -24,7 +24,7 @@ Home
 .. |rivt_logo| image:: _static/img/rivt-finalb.png
    :width: 80px
 
-.. |studio_logo| image:: _static/img/rvstudio.png
+.. |studio_logo| image:: _static/img/rvstudio2.jpg
    :width: 80px
 
 .. |remote_logo| image:: _static/img/rvremote.png
@@ -41,7 +41,7 @@ It runs in a portable desktop environment and in the cloud . The project include
 +---------------+-------------------------------------------------------------------------------+
 | |studio_logo| | `rivtStudio`_ - a portable desktop writing and publishing program for rivt    |
 +---------------+-------------------------------------------------------------------------------+
-| |remote_logo| | `rivtRemote`_ - a containerized *rivtStudio* running on a server and browser  |
+| |remote_logo| | `rivtRemote`_ - a containerized *rivtStudio* running in the browser           |
 +---------------+-------------------------------------------------------------------------------+
 |  |open_logo|  | `openModels`_ - an online database of shared engineering models and documents |
 +---------------+-------------------------------------------------------------------------------+

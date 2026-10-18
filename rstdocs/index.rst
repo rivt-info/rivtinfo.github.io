@@ -39,7 +39,7 @@ It runs in a portable desktop environment and in the cloud . The project include
 +---------------+-------------------------------------------------------------------------------+
 | |rivt_logo|   | `rivtlib`_ - a Python library that processes *rivt markup*                    |
 +---------------+-------------------------------------------------------------------------------+
-| |studio_logo| |  - a portable desktop writing and publishing program for rivt                 |
+| |studio_logo| | `rivtStudio`_ - a portable desktop writing and publishing program for rivt    |
 +---------------+-------------------------------------------------------------------------------+
 | |remote_logo| | `rivtRemote`_ - a containerized *rivtStudio* running in the browser           |
 +---------------+-------------------------------------------------------------------------------+
