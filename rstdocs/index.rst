@@ -41,7 +41,7 @@ It runs in a portable desktop environment and in the cloud . The project include
 +---------------+-------------------------------------------------------------------------------+
 | |studio_logo| | `rivtStudio`_ - a portable desktop writing and publishing program for rivt    |
 +---------------+-------------------------------------------------------------------------------+
-| |remote_logo| | `rivtRemote`_ - a containerized *rivtStudio* running on a server and browser  |
+| |remote_logo| | `rivtRemote`_ - a containerized *rivtStudio* running in the browser           |
 +---------------+-------------------------------------------------------------------------------+
 |  |open_logo|  | `openModels`_ - an online database of shared engineering models and documents |
 +---------------+-------------------------------------------------------------------------------+
