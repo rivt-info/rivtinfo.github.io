@@ -22,35 +22,35 @@ Home
    <hr>
     
 .. |rivt_logo| image:: _static/img/rivt-finalb.png
-   :width: 45px
+   :width: 80px
 
 .. |studio_logo| image:: _static/img/rvstudio.png
-   :width: 45px
+   :width: 80px
 
 .. |remote_logo| image:: _static/img/rvremote.png
-   :width: 45px
+   :width: 80px
 
 .. |open_logo| image:: _static/img/openmod2.png
-   :width: 45px
+   :width: 80px
 
 *rivt* is an open source project for writing and sharing engineering documents.
 It runs in a portable desktop environment and in the cloud . The project includes:
 
 +---------------+-------------------------------------------------------------------------------+
-| |rivt_logo|   | *rivtlib* Python library that processes *rivt markup*                         |
+| |rivt_logo|   | `rivtlib`_ - a Python library that processes *rivt markup*                    |
 +---------------+-------------------------------------------------------------------------------+
 | |studio_logo| | `rivtStudio`_ - a portable desktop writing and publishing program for rivt    |
 +---------------+-------------------------------------------------------------------------------+
 | |remote_logo| | `rivtRemote`_ - a containerized *rivtStudio* running on a server and browser  |
 +---------------+-------------------------------------------------------------------------------+
-|  |open_logo|  | `openModels`_ - online database of shared engineering models and documents    |
+|  |open_logo|  | `openModels`_ - an online database of shared engineering models and documents |
 +---------------+-------------------------------------------------------------------------------+
 
 
 .. _openModels: https://openmodels.info
-.. _rivtStudio: https://openmodels.infohttps://github.com/rivt-info/rivtStudio
-.. _rivtRemote: https://github.com/rivtlib-dev/rivtlib
-
+.. _rivtStudio: https://github.com/rivt-info/rivtStudio
+.. _rivtRemote: https://github.com/rivtlib-dev/rivtStudio-devcontainer-1.0.0a20
+.. _rivtlib: https://github.com/rivtlib-dev/rivtlib
 
 The :ref:`motivation <rvmotivation>` to write *rivt* developed over many years,
 as the need for a program that made it easy to share and reuse live engineering
