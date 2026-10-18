@@ -24,7 +24,7 @@ Home
 .. |rivt_logo| image:: _static/img/rivt-finalb.png
    :width: 80px
 
-.. |studio_logo| image:: _static/img/rvstudio.png
+.. |studio_logo| image:: _static/img/rvstudio2.png
    :width: 80px
 
 .. |remote_logo| image:: _static/img/rvremote.png
