@@ -37,7 +37,7 @@ Home
 It runs in a portable desktop environment and in the cloud . The project includes:
 
 +---------------+--------------------------------------------------------------------------------------------+
-| |rivt_logo|   | `rivtlib`_ - a Python library ( :ref: `source <rivtlibgit>` ) that processes *rivt markup* |
+| |rivt_logo|   | `rivtlib`_ - a Python library ( `source <rivtlibgit>`_ ) that processes *rivt markup*      |
 +---------------+--------------------------------------------------------------------------------------------+
 | |studio_logo| | `rivtStudio`_ - a portable desktop writing and publishing program for rivt                 |
 +---------------+--------------------------------------------------------------------------------------------+
@@ -54,7 +54,7 @@ It runs in a portable desktop environment and in the cloud . The project include
 
 The :ref:`motivation <rvmotivation>` to write *rivt* developed over many years
 as the need for uncomplicated sharing of live engineering documents became urgent. 
-*rivtlib* and *rivtStudio* are distributed under the
+Both *rivtlib* and *rivtStudio* are distributed under the
 `MIT open source license <https://opensource.org/license/mit>`_ 
 (see :ref:`FAQ <Licenses>`). 
 
