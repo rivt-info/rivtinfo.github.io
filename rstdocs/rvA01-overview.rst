@@ -1,9 +1,9 @@
-**A.1 |** Overview
+**A.1 |** Start
 ==============================================
 
 .. _rivt-overview:
 
-**[1]** Start
+**[1]** Overview
 -------------------------------------------------------------------------------- 
 
 *rivt* is an open source project for writing, sharing and reusing engineering
