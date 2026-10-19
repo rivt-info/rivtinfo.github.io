@@ -34,7 +34,12 @@ Home
    :width: 80px
 
 *rivt* is an open source Python project for writing and sharing engineering
-documents. It runs in a portable desktop environment and in the cloud. 
+documents. It runs in a portable desktop environment and in the cloud. The 
+:ref:`motivation <rvmotivation>` for writing *rivt* developed as live 
+engineering document sharing became a more urgent need. Both *rivtlib* 
+and *rivtStudio* are distributed under the
+`MIT open source license <https://opensource.org/license/mit>`_ 
+( see :ref:`FAQ <Licenses>` ). 
 
 -----------------------------------------
 
@@ -43,12 +48,10 @@ documents. It runs in a portable desktop environment and in the cloud.
 +---------------+-----------------------------------------------------------------------------------+
 | |studio_logo| | `rivtStudio`_ - a portable writing and publishing program on the desktop          |
 +---------------+-----------------------------------------------------------------------------------+
-| |remote_logo| | `rivtRemote`_ - containerized *rivtStudio*  for servers and browsers              |
+| |remote_logo| | `rivtRemote`_ - containerized *rivtStudio* for servers and browsers               |
 +---------------+-----------------------------------------------------------------------------------+
 |  |open_logo|  | `openModels`_ - online database of shared engineering models and documents        |
 +---------------+-----------------------------------------------------------------------------------+
-
------------------------------------------
 
 .. _openModels: https://openmodels.info
 .. _rivtStudio: https://github.com/rivt-info/rivtStudio
@@ -57,11 +60,7 @@ documents. It runs in a portable desktop environment and in the cloud.
 
 .. _source: https://github.com/rivtlib-dev/rivtlib
 
-The :ref:`motivation <rvmotivation>` for writing *rivt* developed as live 
-engineering document sharing became a more urgent need. Both *rivtlib* 
-and *rivtStudio* are distributed under the
-`MIT open source license <https://opensource.org/license/mit>`_ 
-( see :ref:`FAQ <Licenses>` ). 
+-----------------------------------------
 
 .. raw:: html
 
