@@ -47,18 +47,9 @@ landing page and can be searched across all *GitHub* using a
 
 
 Packages and extensions are summarized :ref:`here<rivt-depend>` and 
-:ref:`here<vscode-settings>`.
+:ref:`here<rivtstudio-settings>`.
 
-.. rst-class:: center
-
-   **3. Contribute to rivt frameworks**
-
-As a Python file, *rivt* can work efficiently with a large variety of programs
-using scripts and shell commands. Frameworks are collections of programs and
-scripts that facilitate the use of *rivt* with other programs. The *basic* and
-*extended* frameworks are described :ref:`here<rivt framework>`.
-
-The generality of rivt allows for the developement of domain-specific
+The generality of rivt allows for the development of domain-specific
 frameworks that include programs and scripts for that domain. For
 example, a *rivt structural engineering framework* could include scripts 
 for running, pre- and post-processing:
@@ -71,7 +62,7 @@ for running, pre- and post-processing:
 
 .. rst-class:: center
 
-   **4. Real-time Collaboration**
+   **2. Real-time Collaboration**
 
 Within an IDE or cloud environment, *rivt files* can be collaboratively
 developed and edited. 

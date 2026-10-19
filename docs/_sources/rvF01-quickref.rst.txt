@@ -11,8 +11,7 @@
 - :ref:`Block Tags <Block Tags Summary>` 
 - :ref:`Assignment Summary <Assignment Summary>` 
 - :ref:`Commands <commands list>` 
-- :ref:`rivt Report Folders <report-folders-summary>` 
-- :ref:`rivtbook Folders <rivtbook-folders-summary>` 
+- :ref:`Folders <project-folders-summary>` 
 - :ref:`Unit Definitions <unit-definitions>`
 
 
@@ -221,38 +220,42 @@ rv.D        **| PUBLISH |** doc title | type                                 :re
 
 ----------------------------------
 
-.. _report-folders-summary:
+.. _project-folders-summary:
 
-**[7]** Report Folders
+**[7]** Project Folders
 ---------------------------------------------------------------------
 
 .. code-block:: bash
 
-    [rivt-]Report-Label/             report folder              
+    [rivt-]project-Label/             project folder       
         ├── .help/                        help files
-        ├── .vscode/                      optional VSCode settings   
+        ├── .vscode/                      optional VSCode settings
+        ├── .git                          optional git repository
         ├── README.txt                    rivt-generated text report                  
-        ├── [_rivt-public]/               rivt-generated public files
+        ├── [_rvpublic-reptname]/          rivt-generated public files
             ├── rvsrc/                        author source files          
             ├── rv-101-filename1.py           public rivt file
             ├── rv-102-filename2.py           public rivt file       
             ├── rv-201-filename3.py           public rivt file          
              ...
-        ├── [rivt-report]/                 report folder               
+        ├── [rvreport-reptname]/              report folder               
             ├── [rivt-report]-1.py            report generating script
             ├── [rv101-]filename1.py          rivt file
             ├── [rv102-]filename2.py          rivt file       
             ├── [rv201-]filename3.py          rivt file          
                 ...
             ├── [rvsrc]/                      author provided files and folders        
+                ├── [data]/                         tables    
+                    └── steel-vals.csv    
                 ├── [downloads]/                    files to download      
                     └── conc-vals.txt 
-                ├── [img]/                          page layout images              
+                ├── [img]/                          images              
                     ├── favicon.png    
                     ├── covlogo1.png    
                     └── runlogo1.png                   
-                ├── [data]/                         tables    
-                    └── steel-vals.csv                                                 
+                ├── [scripts]/                      scripts
+                    ├── beam1.py    
+                    └── text.rst                                                                
                 ├── tools/                          OS shell commands               
                     └── opensees.sh                        
                 ├── fig1.png
@@ -298,27 +301,7 @@ rv.D        **| PUBLISH |** doc title | type                                 :re
                 ├── rv102-filename2.rst                          
                 ├── rv201-filename3.rst          
                     ...
-
-
-----------------------------------
-
-.. _rivtbook-folders-summary:
-
-**[8]** rivtbook Folders
----------------------------------------------------------------------
-
-.. code-block:: bash
-
-    [rivtbk-]Book-Label/             rivtbook report folder              
-        ├── .help/                        help files
-        ├── .vscode/                      optional VSCode settings   
-        ├── README.txt                    rivt-generated book as text
-        ├── [rivtbook-report]-1.py        rivtbook generating script                  
-        ├── [_rivtbk-public]/             public subset of rivt files         
-            ├── [rvbk-101-]folder name    rivtbook folder
-            ├── [rvbk-102-]folder name    rivtbook folder        
-            ├── [rvbk-201-]folder name    rivtbook folder         
-                ...
+    [rivtbk-]book-Label/             rivtbook report folder              
         ├── [_rstdocs]/                   rivt-generated rst files
             ├── _downloads/                    
             ├── _static/                                                       
@@ -451,8 +434,10 @@ rv.D        **| PUBLISH |** doc title | type                                 :re
     # force
     lbf = new_unit("lbf", 4.4482216 * N, "pound-force")
     kips = new_unit("kips", lbf * 1000.0, "kilopound")
+    # moments
     ftkips = new_unit("ft-kip", ft * lbf * 1000.0, "foot-kips")
     inkips = new_unit("in-kips", inch * lbf * 1000.0, "inch-kips")
+    # linear force
     k_in = new_unit("k_in", kips / inch, "kips per inch")
     k_ft = new_unit("k_ft", kips / ft, "kips per foot")
     p_in = new_unit("lb_in", lbf / inch, "pounds per inch")
@@ -475,7 +460,6 @@ rv.D        **| PUBLISH |** doc title | type                                 :re
     # velocity
     mph = new_unit("mph", miles / hr, "miles per hour")
     fps = new_unit("fps", ft / sec, "feet per second")
-
 
 ----------------------
 

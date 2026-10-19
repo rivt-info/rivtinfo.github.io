@@ -37,6 +37,10 @@
     The first line of a  *rivt string* that includes a section title, followed 
     by comma separated parameters.
 
+  handbook
+    A collection of *rivt files* in a handbook foldersharing a common theme and 
+    organized for easy inclusion in *rivt docs*.
+
   content
   content text
   content substring
@@ -108,6 +112,9 @@
       | COMMAND | relative path | parameters
     
 
+  project folder
+    The containing folder for settings and report and handbook folders.
+
   report
   reports
   rivt report
@@ -116,7 +123,7 @@
 
   report folder
   report folders
-    The folder structure for producing a report. See :ref:`here. <rivt-folders>`
+    The folder structure that produces a report. See :ref:`here. <rivt-folders>`
 
   section parameter 
   section parameters 
@@ -132,7 +139,7 @@
   
   rivtbook folder
   rivtbook folders
-    The folder structure for a rivtbook. See :ref:`here. <rivt-books>`
+    The folder structure for a rivtbook. See :ref:`here. <book-folder>`
 
   report script
     A Python script that assembles *rivt files* into *docs* and a *report*.
@@ -145,8 +152,6 @@
 
 **[2]** Python Terms
 -----------------------------
-
- 
 
 .. glossary::
   :sorted: 
@@ -171,10 +176,25 @@
     and variables. 
 
 
-**[3]** GitHub and VSCode Terms
+**[3]** rivtStudio Terms
 -----------------------------------
 
- 
+.. glossary::
+  :sorted: 
+
+
+  IDE
+  ide
+    Integrated Development Environment. A software application that provides 
+    comprehensive facilities to computer programmers for software development. 
+    An IDE typically includes a code editor, build automation tools, 
+    and a debugger. *rivt extensions* have been developed for VSCode. 
+    Other IDEs include PyCharm, Spyder, and JupyterLab.
+
+
+
+**[4]** GitHub Terms
+-----------------------------------
 
 .. glossary::
   :sorted: 
@@ -202,15 +222,7 @@
     configurations of settings, extensions, keyboard shortcuts, snippets, 
     and tasks.
 
-  IDE
-  ide
-    Integrated Development Environment. A software application that provides 
-    comprehensive facilities to computer programmers for software development. 
-    An IDE typically includes a code editor, build automation tools, 
-    and a debugger. *rivt extensions* have been developed for VSCode. 
-    Other IDEs include PyCharm, Spyder, and JupyterLab.
-
   rivt Codespace
   rivt codespace
-    A Codespace set up with extensions, snippets and keyboard shortcuts for 
-    editing and publishing *rivt docs*.
+    A Codespace container set up with extensions, snippets and keyboard 
+    shortcuts for editing and publishing *rivt docs*.

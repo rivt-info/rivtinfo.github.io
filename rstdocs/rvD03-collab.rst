@@ -1,4 +1,4 @@
-**E.2 |** Distributed Sharing
+**D.3 |** Collaboration
 ===================================
 
 **[1]** General Considerations
@@ -38,7 +38,7 @@ management tools like *git* only sync when invoked, not as a background process.
 *GitHub* is a popular and widely used cloud and version control system 
 based on the :term:`Git` program that may be downloaded
 `here <https://git-scm.com/>`__. `Git <https://git-scm.com/>` is part of
-*rivt-code*. It is a free, open-source, distributed version control
+*rivtstudio*. It is a free, open-source, distributed version control
 system designed to manage and track changes in files. It allows multiple people
 to work on the same project simultaneously without overwriting each other's
 work. *GitHub* is a web-based platform for hosting, managing, and collaborating

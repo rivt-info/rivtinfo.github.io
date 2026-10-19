@@ -33,18 +33,20 @@ Home
 .. |open_logo| image:: _static/img/openmod2.png
    :width: 80px
 
-*rivt* is an open source project for writing and sharing engineering documents.
-It runs in a portable desktop environment and in the cloud . The project includes:
+*rivt* is an open source Python project for writing and sharing engineering
+documents. It runs in a portable desktop environment and in the cloud. 
 
-+---------------+--------------------------------------------------------------------------------------------+
-| |rivt_logo|   | `rivtlib`_ - a Python library that processes *rivt markup* ( `source`_ )                   |
-+---------------+--------------------------------------------------------------------------------------------+
-| |studio_logo| | `rivtStudio`_ - a portable desktop writing and publishing program for rivt                 |
-+---------------+--------------------------------------------------------------------------------------------+
-| |remote_logo| | `rivtRemote`_ - a containerized *rivtStudio* running in the browser                        |
-+---------------+--------------------------------------------------------------------------------------------+
-|  |open_logo|  | `openModels`_ - an online database of shared engineering models and documents              |
-+---------------+--------------------------------------------------------------------------------------------+
+**rivt Project**
+
++---------------+-----------------------------------------------------------------------------------+
+| |rivt_logo|   | `rivtlib`_ - a Python library that processes *rivt markup* ( `source`_ )          |
++---------------+-----------------------------------------------------------------------------------+
+| |studio_logo| | `rivtStudio`_ - a portable writing and publishing program on the desktop          |
++---------------+-----------------------------------------------------------------------------------+
+| |remote_logo| | `rivtRemote`_ - a containerized *rivtStudio* running in the browser               |
++---------------+-----------------------------------------------------------------------------------+
+|  |open_logo|  | `openModels`_ - an online database of shared engineering models and documents     |
++---------------+-----------------------------------------------------------------------------------+
 
 .. _openModels: https://openmodels.info
 .. _rivtStudio: https://github.com/rivt-info/rivtStudio
@@ -53,12 +55,11 @@ It runs in a portable desktop environment and in the cloud . The project include
 
 .. _source: https://github.com/rivtlib-dev/rivtlib
 
-The :ref:`motivation <rvmotivation>` to write *rivt* developed over many years
-as the need for uncomplicated sharing of live engineering documents became urgent. 
-Both *rivtlib* and *rivtStudio* are distributed under the
+The :ref:`motivation <rvmotivation>` for writing *rivt* developed as live 
+engineering document sharing became a more urgent need. Both *rivtlib* 
+and *rivtStudio* are distributed under the
 `MIT open source license <https://opensource.org/license/mit>`_ 
 ( see :ref:`FAQ <Licenses>` ). 
-
 
 .. raw:: html
 
@@ -77,6 +78,5 @@ Both *rivtlib* and *rivtStudio* are distributed under the
    rvB01-rivt.rst
    rvC01-publish.rst
    rvD01-rivtstudio.rst
-   rvE01-aiintro.rst
+   rvE01-aiwork.rst
    rvF01-quickref.rst
-    

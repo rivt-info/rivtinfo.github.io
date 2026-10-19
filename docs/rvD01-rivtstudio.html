@@ -174,7 +174,7 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvE01-aiintro.html">
+  <a class="nav-link nav-internal" href="rvE01-aiwork.html">
     E.1 | AI Workflow
   </a>
 </li>
@@ -288,7 +288,7 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvE01-aiintro.html">
+  <a class="nav-link nav-internal" href="rvE01-aiwork.html">
     E.1 | AI Workflow
   </a>
 </li>
@@ -328,8 +328,7 @@
     <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
     <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="rvD02-rivtremote.html"><strong>E.1 |</strong> rivtRemote</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvD03-distribshare.html"><strong>E.2 |</strong> Distributed Sharing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rvD04-userman.html"><strong>D.2 |</strong> Frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvD03-collab.html"><strong>D.3 |</strong> Collaboration</a></li>
 </ul>
 </div>
 </nav></div>
@@ -389,11 +388,11 @@
                   
   <section id="d-1-rivtstudio">
 <h1><strong>D.1 |</strong> rivtStudio<a class="headerlink" href="#d-1-rivtstudio" title="Link to this heading">#</a></h1>
-<section id="rivt-code">
-<span id="id1"></span><h2><strong>[2]</strong> rivt-code<a class="headerlink" href="#rivt-code" title="Link to this heading">#</a></h2>
-<p><em>rivt-code</em> includes <em>VSCode</em> <cite>VSCode &lt;https://code.visualstudio.com/&gt;</cite>
-for editing and managing <em>rivt-docs</em>. <em>rivt-code</em> is a local
-<a class="reference internal" href="#rivt-code"><span class="std std-ref">portable installation</span></a>.</p>
+<section id="rivtstudio">
+<span id="id1"></span><h2><strong>[2]</strong> rivtstudio<a class="headerlink" href="#rivtstudio" title="Link to this heading">#</a></h2>
+<p><em>rivtstudio</em> includes <em>VSCode</em> <cite>VSCode &lt;https://code.visualstudio.com/&gt;</cite>
+for editing and managing <em>rivt-docs</em>. <em>rivtstudio</em> is a local
+<a class="reference internal" href="#rivtstudio"><span class="std std-ref">portable installation</span></a>.</p>
 <p>rivt folders include markdown help files that can be accessed from VSCode and
 other IDE’s</p>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -407,15 +406,15 @@ other IDE’s</p>
 <td><p><a class="reference external" href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">VSCode</a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rivt Extensions</p></td>
-<td><p><a class="reference internal" href="rvD04-userman.html#vscode-settings"><span class="std std-ref">[11] VSCode Profile</span></a></p></td>
+<td><p><a class="reference internal" href="#rivtstudio-settings"><span class="std std-ref">[11] VSCode Profile</span></a></p></td>
 </tr>
 </tbody>
 </table>
 </div>
 </section>
 <hr class="docutils" />
-<section id="vscode-and-rivt-codespaces">
-<h2><strong>[2]</strong> VSCode and rivt-codespaces<a class="headerlink" href="#vscode-and-rivt-codespaces" title="Link to this heading">#</a></h2>
+<section id="vscode-and-rivtstudiospaces">
+<h2><strong>[2]</strong> VSCode and rivtstudiospaces<a class="headerlink" href="#vscode-and-rivtstudiospaces" title="Link to this heading">#</a></h2>
 <p><em>CodeSpaces</em> is a cloud based GitHub implementation of VSCode with a large
 set of extensions, including collaboration and versioning support.</p>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -429,7 +428,7 @@ set of extensions, including collaboration and versioning support.</p>
 <td><p><a class="reference external" href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">VSCode</a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rivt Extensions</p></td>
-<td><p><a class="reference internal" href="rvD04-userman.html#vscode-settings"><span class="std std-ref">[11] VSCode Profile</span></a></p></td>
+<td><p><a class="reference internal" href="#rivtstudio-settings"><span class="std std-ref">[11] VSCode Profile</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Version Control</p></td>
 <td><p><a class="reference external" href="https://git-scm.com" rel="noreferrer" target="_blank">Git</a></p></td>
@@ -440,8 +439,423 @@ set of extensions, including collaboration and versioning support.</p>
 <p><em>GitHub Codespaces</em> is a VSCode cloud-based development environment connected
 to GitHub files. It can be set up with <em>rivt extensions</em> that provide a complete
 rivt editing and collaboration environment in the cloud.</p>
-<p><em>rivt-codespace</em> is a cloud based rivt installation that may be
+<p><em>rivtstudiospace</em> is a cloud based rivt installation that may be
 <a class="reference internal" href="rvA02-run.html#rivt-remote"><span class="std std-ref">forked</span></a> into a personal GitHub repository.</p>
+</section>
+<section id="vscode-profile">
+<span id="rivtstudio-settings"></span><h2><strong>[11]</strong> VSCode Profile<a class="headerlink" href="#vscode-profile" title="Link to this heading">#</a></h2>
+<p>Workspace extension and other settings are stored in the <em>.vscode</em> folder and
+should be included as part of a <em>report folder</em>. Settings that affect the
+<em>rivt</em> editing and execution environment incldue:</p>
+<ul class="simple">
+<li><p>rivt.code-snippets</p></li>
+<li><p>settings.json (extension settings)</p></li>
+<li><p>tasks.json</p></li>
+<li><p>launch.json</p></li>
+</ul>
+<p>Global settings can be exported and imported using VSCode Profiles. VSCode
+<em>rivt</em> extensions and settings may be installed from this link.</p>
+<p><strong>Snippets and extensions</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Extension</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>BUTTONS</strong></p></td>
+<td><p>—</p></td>
+</tr>
+<tr class="row-odd"><td><p>tombonnike.vscode-status-bar-format-toggle</p></td>
+<td><p>format button</p></td>
+</tr>
+<tr class="row-even"><td><p>gsppvo.vscode-commandbar</p></td>
+<td><p>command buttons</p></td>
+</tr>
+<tr class="row-odd"><td><p>AdamAnand.adamstool</p></td>
+<td><p>command buttons</p></td>
+</tr>
+<tr class="row-even"><td><p>nanlei.save-all</p></td>
+<td><p>save all button</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ho-Wan.setting-toggle</p></td>
+<td><p>toggle settings</p></td>
+</tr>
+<tr class="row-even"><td><p>yasukotelin.toggle-panel</p></td>
+<td><p>toggle panel</p></td>
+</tr>
+<tr class="row-odd"><td><p>fabiospampinato.vscode-commands</p></td>
+<td><p>user command buttons</p></td>
+</tr>
+<tr class="row-even"><td><p>jerrygoyal.shortcut-menu-bar</p></td>
+<td><p>menu bar</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>EDITING</strong></p></td>
+<td><p>—</p></td>
+</tr>
+<tr class="row-even"><td><p>henryclayton.context-menu-toggle-comments</p></td>
+<td><p>toggle comments</p></td>
+</tr>
+<tr class="row-odd"><td><p>TroelsDamgaard.reflow-paragraph</p></td>
+<td><p>wrap paragraph</p></td>
+</tr>
+<tr class="row-even"><td><p>streetsidesoftware.code-spell-checker</p></td>
+<td><p>spell check</p></td>
+</tr>
+<tr class="row-odd"><td><p>jmviz.quote-list</p></td>
+<td><p>quote elements in a list</p></td>
+</tr>
+<tr class="row-even"><td><p>njpwerner.autodocstring</p></td>
+<td><p>insert doc string</p></td>
+</tr>
+<tr class="row-odd"><td><p>oijaz.unicode-latex</p></td>
+<td><p>unicode symbols from latex</p></td>
+</tr>
+<tr class="row-even"><td><p>jsynowiec.vscode-insertdatestring</p></td>
+<td><p>insert date string</p></td>
+</tr>
+<tr class="row-odd"><td><p>janisdd.vscode-edit-csv</p></td>
+<td><p>csv editor</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>VIEWS</strong></p></td>
+<td><p>—</p></td>
+</tr>
+<tr class="row-odd"><td><p>GrapeCity.gc-excelviewer</p></td>
+<td><p>excel viewer</p></td>
+</tr>
+<tr class="row-even"><td><p>SimonSiefke.svg-preview</p></td>
+<td><p>svg viewer</p></td>
+</tr>
+<tr class="row-odd"><td><p>tomoki1207.pdf</p></td>
+<td><p>pdf viewer</p></td>
+</tr>
+<tr class="row-even"><td><p>RandomFractalsInc.vscode-data-preview</p></td>
+<td><p>data viewing tools</p></td>
+</tr>
+<tr class="row-odd"><td><p>Fr43nk.seito-openfile</p></td>
+<td><p>open file from path</p></td>
+</tr>
+<tr class="row-even"><td><p>vikyd.vscode-fold-level</p></td>
+<td><p>line folding tool</p></td>
+</tr>
+<tr class="row-odd"><td><p>file-icons.file-icons</p></td>
+<td><p>icon library</p></td>
+</tr>
+<tr class="row-even"><td><p>tintinweb.vscode-inline-bookmarks</p></td>
+<td><p>inline bookmarks</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>MANAGEMENT</strong></p></td>
+<td><p>—</p></td>
+</tr>
+<tr class="row-even"><td><p>alefragnani.project-manager</p></td>
+<td><p>folder, project management</p></td>
+</tr>
+<tr class="row-odd"><td><p>Anjali.clipboard-history</p></td>
+<td><p>clipboard history</p></td>
+</tr>
+<tr class="row-even"><td><p>dionmunk.vscode-notes</p></td>
+<td><p>notepad</p></td>
+</tr>
+<tr class="row-odd"><td><p>hbenl.vscode-test-explorer</p></td>
+<td><p>test explorer</p></td>
+</tr>
+<tr class="row-even"><td><p>mightycoco.fsdeploy</p></td>
+<td><p>save file to second location</p></td>
+</tr>
+<tr class="row-odd"><td><p>lyzerk.linecounter</p></td>
+<td><p>count lines in files</p></td>
+</tr>
+<tr class="row-even"><td><p>sandcastle.vscode-open</p></td>
+<td><p>open files in default app</p></td>
+</tr>
+<tr class="row-odd"><td><p>zjffun.snippetsmanager</p></td>
+<td><p>snippet manager</p></td>
+</tr>
+<tr class="row-even"><td><p>spmeesseman.vscode-taskexplorer</p></td>
+<td><p>task explorer</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>GITHUB</strong></p></td>
+<td><p>—</p></td>
+</tr>
+<tr class="row-even"><td><p>GitHub.codespaces</p></td>
+<td><p>run files in codespaces</p></td>
+</tr>
+<tr class="row-odd"><td><p>GitHub.remotehub</p></td>
+<td><p>run remote files</p></td>
+</tr>
+<tr class="row-even"><td><p>ettoreciprian.vscode-websearch</p></td>
+<td><p>search github within VSCode</p></td>
+</tr>
+<tr class="row-odd"><td><p>donjayamanne.githistory</p></td>
+<td><p>git history</p></td>
+</tr>
+<tr class="row-even"><td><p>MichaelCurrin.auto-commit-msg</p></td>
+<td><p>git auto commit message</p></td>
+</tr>
+<tr class="row-odd"><td><p>github.vscode-github-actions</p></td>
+<td><p>github actions</p></td>
+</tr>
+<tr class="row-even"><td><p>GitHub.vscode-pull-request-github</p></td>
+<td><p>github pull request</p></td>
+</tr>
+<tr class="row-odd"><td><p>k9982874.github-gist-explorer</p></td>
+<td><p>gist explorer</p></td>
+</tr>
+<tr class="row-even"><td><p>vsls-contrib.gistfs</p></td>
+<td><p>gist tools</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>PYTHON</strong></p></td>
+<td><p>—</p></td>
+</tr>
+<tr class="row-even"><td><p>ms-python.autopep8</p></td>
+<td><p>python pep8 formatting</p></td>
+</tr>
+<tr class="row-odd"><td><p>ms-python.isort</p></td>
+<td><p>python sort imports</p></td>
+</tr>
+<tr class="row-even"><td><p>donjayamanne.python-environment-manager</p></td>
+<td><p>python library list</p></td>
+</tr>
+<tr class="row-odd"><td><p>ms-python.python</p></td>
+<td><p>python tools</p></td>
+</tr>
+<tr class="row-even"><td><p>ms-python.vscode-pylance</p></td>
+<td><p>python language server</p></td>
+</tr>
+<tr class="row-odd"><td><p>ms-toolsai.jupyter</p></td>
+<td><p>jupyter tools</p></td>
+</tr>
+<tr class="row-even"><td><p>ms-toolsai.jupyter-keymap</p></td>
+<td><p>jupyter tools</p></td>
+</tr>
+<tr class="row-odd"><td><p>ms-toolsai.jupyter-renderers</p></td>
+<td><p>jupyter tools</p></td>
+</tr>
+<tr class="row-even"><td><p>ms-toolsai.vscode-jupyter-cell-tags</p></td>
+<td><p>jupyter tools</p></td>
+</tr>
+<tr class="row-odd"><td><p>ms-toolsai.vscode-jupyter-slideshow</p></td>
+<td><p>jupyter tools</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>LANGUAGES</strong></p></td>
+<td><p>—</p></td>
+</tr>
+<tr class="row-odd"><td><p>qwtel.sqlite-viewer</p></td>
+<td><p>sqlite tools</p></td>
+</tr>
+<tr class="row-even"><td><p>RDebugger.r-debugger</p></td>
+<td><p>R tools</p></td>
+</tr>
+<tr class="row-odd"><td><p>REditorSupport.r</p></td>
+<td><p>R tools</p></td>
+</tr>
+<tr class="row-even"><td><p>ms-vscode-remote.remote-wsl</p></td>
+<td><p>windows linux tools</p></td>
+</tr>
+<tr class="row-odd"><td><p>James-Yu.latex-workshop</p></td>
+<td><p>latex tools</p></td>
+</tr>
+<tr class="row-even"><td><p>lextudio.restructuredtext</p></td>
+<td><p>restructured text tools</p></td>
+</tr>
+<tr class="row-odd"><td><p>trond-snekvik.simple-rst</p></td>
+<td><p>restructured syntax</p></td>
+</tr>
+<tr class="row-even"><td><p>yzane.markdown-pdf</p></td>
+<td><p>markdown to pdf</p></td>
+</tr>
+<tr class="row-odd"><td><p>yzhang.markdown-all-in-one</p></td>
+<td><p>markdown tools</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Keystrokes</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>api</p></td>
+<td><p>insert import statement for API</p></td>
+</tr>
+<tr class="row-odd"><td><p>rvr</p></td>
+<td><p>API Run</p></td>
+</tr>
+<tr class="row-even"><td><p>rvi</p></td>
+<td><p>API Insert</p></td>
+</tr>
+<tr class="row-odd"><td><p>rvv</p></td>
+<td><p>API Values</p></td>
+</tr>
+<tr class="row-even"><td><p>rvt</p></td>
+<td><p>API Tools</p></td>
+</tr>
+<tr class="row-odd"><td><p>rvd</p></td>
+<td><p>API Docs</p></td>
+</tr>
+<tr class="row-even"><td><div class="line-block">
+<div class="line">at</div>
+</div>
+</td>
+<td><p>attach command</p></td>
+</tr>
+<tr class="row-odd"><td><div class="line-block">
+<div class="line">im</div>
+</div>
+</td>
+<td><p>image command</p></td>
+</tr>
+<tr class="row-even"><td><div class="line-block">
+<div class="line">i2</div>
+</div>
+</td>
+<td><p>side by side image command</p></td>
+</tr>
+<tr class="row-odd"><td><div class="line-block">
+<div class="line">pu</div>
+</div>
+</td>
+<td><p>publish command</p></td>
+</tr>
+<tr class="row-even"><td><div class="line-block">
+<div class="line">ta</div>
+</div>
+</td>
+<td><p>table command</p></td>
+</tr>
+<tr class="row-odd"><td><div class="line-block">
+<div class="line">va</div>
+</div>
+</td>
+<td><p>value command</p></td>
+</tr>
+<tr class="row-even"><td><div class="line-block">
+<div class="line">vs</div>
+</div>
+</td>
+<td><p>value table command</p></td>
+</tr>
+<tr class="row-odd"><td><p>_ce</p></td>
+<td><p>center bold line of text</p></td>
+</tr>
+<tr class="row-even"><td><p>_ma</p></td>
+<td><p>utf-8 text math</p></td>
+</tr>
+<tr class="row-odd"><td><p>_la</p></td>
+<td><p>LaTeX math</p></td>
+</tr>
+<tr class="row-even"><td><p>_ta</p></td>
+<td><p>number table</p></td>
+</tr>
+<tr class="row-odd"><td><p>_ur</p></td>
+<td><p>URL link</p></td>
+</tr>
+<tr class="row-even"><td><p>_gl</p></td>
+<td><p>glossary term link</p></td>
+</tr>
+<tr class="row-odd"><td><p>_se</p></td>
+<td><p>section link</p></td>
+</tr>
+<tr class="row-even"><td><p>_en</p></td>
+<td><p>endnote link</p></td>
+</tr>
+<tr class="row-odd"><td><p>_do</p></td>
+<td><p>download link</p></td>
+</tr>
+<tr class="row-even"><td><p>_[m</p></td>
+<td><p>markup block</p></td>
+</tr>
+<tr class="row-odd"><td><p>_[p</p></td>
+<td><p>python block</p></td>
+</tr>
+<tr class="row-even"><td><p>_[e</p></td>
+<td><p>end block</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Modified Keyboard Shortcuts</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Keystroke</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>alt+q</p></td>
+<td><p>rewrap paragraph with hard line feeds (80 default)</p></td>
+</tr>
+<tr class="row-odd"><td><p>alt+p</p></td>
+<td><p>open file under cursor</p></td>
+</tr>
+<tr class="row-even"><td><p>alt+.</p></td>
+<td><p>select correct spelling under cursor</p></td>
+</tr>
+<tr class="row-odd"><td><p>alt+8</p></td>
+<td><p>insert date</p></td>
+</tr>
+<tr class="row-even"><td><p>alt+9</p></td>
+<td><p>insert time</p></td>
+</tr>
+<tr class="row-odd"><td><p>ctl+1</p></td>
+<td><p>focus on first editor</p></td>
+</tr>
+<tr class="row-even"><td><p>ctl+2</p></td>
+<td><p>focus on next editor</p></td>
+</tr>
+<tr class="row-odd"><td><p>ctl+3</p></td>
+<td><p>focus on previous editor</p></td>
+</tr>
+<tr class="row-even"><td><p>ctl+8</p></td>
+<td><p>focus on explorer pane</p></td>
+</tr>
+<tr class="row-odd"><td><p>ctl+9</p></td>
+<td><p>focus on github pane</p></td>
+</tr>
+<tr class="row-even"><td><p>ctl+alt+x</p></td>
+<td><p>reload window</p></td>
+</tr>
+<tr class="row-odd"><td><p>ctl+alt+u</p></td>
+<td><p>unfold all code</p></td>
+</tr>
+<tr class="row-even"><td><p>ctl+alt+f</p></td>
+<td><p>fold code level 2 (rivt sections visible)</p></td>
+</tr>
+<tr class="row-odd"><td><p>ctl+alt+a</p></td>
+<td><p>fold code - all levels</p></td>
+</tr>
+<tr class="row-even"><td><p>ctl+alt+t</p></td>
+<td><p>toggle local fold</p></td>
+</tr>
+<tr class="row-odd"><td><p>ctl+alt+e</p></td>
+<td><p>toggle explorer sort order</p></td>
+</tr>
+<tr class="row-even"><td><p>ctl+alt+s</p></td>
+<td><p>toggle spell check</p></td>
+</tr>
+<tr class="row-odd"><td><p>ctl+alt+g</p></td>
+<td><p>next editor group</p></td>
+</tr>
+<tr class="row-even"><td><p>ctl+shift+u</p></td>
+<td><p>open URL under cursor in browser</p></td>
+</tr>
+<tr class="row-odd"><td><p>ctl+shift+s</p></td>
+<td><p>open GitHub rivt README search</p></td>
+</tr>
+<tr class="row-even"><td><p>ctl+shift+a</p></td>
+<td><p>commit all</p></td>
+</tr>
+<tr class="row-odd"><td><p>ctl+shift+z</p></td>
+<td><p>commit current editor</p></td>
+</tr>
+<tr class="row-even"><td><p>ctl+shift+x</p></td>
+<td><p>post to remote</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -494,8 +908,9 @@ rivt editing and collaboration environment in the cloud.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-code"><strong>[2]</strong> rivt-code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vscode-and-rivt-codespaces"><strong>[2]</strong> VSCode and rivt-codespaces</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivtstudio"><strong>[2]</strong> rivtstudio</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vscode-and-rivtstudiospaces"><strong>[2]</strong> VSCode and rivtstudiospaces</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vscode-profile"><strong>[11]</strong> VSCode Profile</a></li>
 </ul>
   </nav></div>
 

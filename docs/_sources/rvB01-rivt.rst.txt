@@ -6,10 +6,9 @@
 **[1]** Summary
 -------------------------------------------------------------------------------- 
 
-*rivt* is designed to publish engineering documents using a wide variety of
-source materials including external programs, images, functions, equations,
-data files and Python scripts. To assemble a *doc* it uses four primary API
-functions:
+*rivt* uses a wide variety of source materials when publishing *docs*. They
+include external programs, images, functions, equations, data files and Python
+scripts. To assemble a *doc* it uses four primary API functions:
 
 .. raw:: html
 
@@ -23,13 +22,13 @@ functions:
 
     <b>T(): </b> Runs external binary programs <br>
 
-A fourth API for publishing the doc is documented :ref:`here <rivt-docs>`:
+A fourth API for publishing the doc is documented :ref:`here <rivt-publish>`:
 
 .. raw:: html
 
     <b>D(): </b> Publishes documents <br>
 
-Examples of a complete rivt file with text, PDF and HTML docs are here:
+Examples of a *rivt file* with text, PDF and HTML *docs* are here:
 
 - :ref:`rivt file <example-file>` 
 - :ref:`text doc <text-doc>`, 

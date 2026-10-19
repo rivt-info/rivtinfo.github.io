@@ -29,7 +29,7 @@ To get started running examples see :ref:`install <rivt-overview>`. For *rivt
 with AI* see :ref:`here <rivt-context>`.
 
 *rivt files and reports* may be shared and distributed through any cloud
-storage service. *rivt reports* and *rivt handbooks* are organized in top level
+storage service. *rivt reports* and *handbooks* are organized in top level
 :ref:`project folders <rivt-folders>` that may be zipped for convenient
 distribution. Examples are available on *Google Drive* at 
 `openmodels.info <https://www.openmodels.info>`_. and on GitHub.A

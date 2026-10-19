@@ -32,8 +32,6 @@ the following sections.
     first column with a vertical bar ( | ) followed by the command name, file
     path, and parameters.
 
-
-
     .. code-block:: bash  
         
         | COMMAND | relative path | parameters

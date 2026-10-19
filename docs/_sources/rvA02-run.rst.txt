@@ -6,8 +6,7 @@
 **[1]** Summary
 --------------------------------------------------------------------------------
 
-This section covers installation of *rivt* and running examples. The example
-*rivt files* and *docs* may be downloaded and modified. *rivt* files may be
+This section covers installation of *rivt* and running examples. *rivt* files may be
 edited in a simple text processor and run from the command line but efficient
 editing and compiling is typically done in an :term:`IDE`. Any Python IDE may
 be used, but *VSCodium* with extensions is the IDE component used in
@@ -19,10 +18,11 @@ There are three ways to run *rivtlib*.
    *rivtStudio*  (~1 GB zipped, ~2 GB expanded). 
    For further details see :ref:`here <rivt-studio>`.
 
-#. For users familiar with Github or server containers rivtRemote may be run 
-   in the browser. Further details are :ref:`here <rivt-remote>`.
+#. For users familiar with Github or containers in general, a version of 
+*rivtStudio* named *rivtRemote* may be run in the browser. 
+Further details are :ref:`here <rivt-remote>`.
 
-#. For users familiar with Python, *rivtlib* may also be installed at the 
+#. For users familiar with Python, the *rivtlib* packagemay be installed at the 
    system level using *pip* or  *uv*. Further details are :ref:`here <rivt-sys>`.
 
 -------------------------------
@@ -46,50 +46,46 @@ below.
 
 - The :ref:`rivt file <example-file>` is in the center editing panel[blue] 
 
-- The :ref:`text doc <text-doc>` output is in the right panel[brown] 
+- The :ref:`text doc <text-doc>` output is in the right panel[brown]. 
 
 - The *file explorer* is the far left panel [green]. 
+  *rivt* and *doc* files are accessed in the file explorer. 
 
 - Extension buttons are located on the top and bottom status bars [red]. 
 
-Text, PDF and HTML output files are accessed in the file explorer and
-displayed within panels. Individual *rivt* sections are linked in the
-navigation panel and in the text output for quick naviagation through the
-file. Panel locations may be customized by the user. An example *rivt file*
-and *doc* are :ref:`here <rivt-tutor>`.
+Links to individual *rivt file* sections are provided in both the navigation
+panel and in the text doc output. An example 
+*rivt file*, *docs* and tutorial are :ref:`here <rivt-tutor>` and may be 
+downloaded for local use
 
-A *rivt-code* installation is recommended for Windows users interested in trying
-*rivt* *rivt-code* is a zip file that includes rivt, Python, VSCode and an
-example rivt file. The zipped file size is ~800 MB which unzips to about 2.2
-GB. It may be downloaded from the `rivt-code repository
-<https://github.com/rivtlib-dev/rivt-code/releases/>`_.  
-rivtStudio is currently in alpha
+**Install rivtStudio**
 
-The zip file naming convention is:
+*rivtStudio*  may be downloaded from
+`Github <https://github.com/rivtlib-dev/rivtstudio/releases/>`_.  
+The *rivtStudio* zip file naming convention uses semantic versioning. When an "a"
+is appended it indicates an alpha release.
 
 .. code-block:: text
 
-    rivtStudio-monthx.year.zip
-
-where x is an a-z character representing mid month releases. 
+    rivtStudio-major#.minor#.patch#
 
 The zip file contents must be unzipped into a directory with read-write access
-- typically the users home folder or a flash drive. After unzipping, click the
-*rivt-code* shortcut to open the example rivt file in a rivt VSCode
-environment. Click on the triangle in the upper right of the editor to run the
+which is typically the users home folder or a flash drive. After unzipping,
+click the *rivtStudio* shortcut to open the interface.
+
+- Open the rivt project folder.
+- Accept the trust prompts as needed.
+- Navigate to the example report folder
+- Open the example rivt file (.py)
+
+Click on the triangle in the upper right of the editor to run the
 file and output text, pdf or html docs, depending on the | PUBLISH | setting.
-See the rivt user manual for details.
+See the :ref:`publish settings <rivt-publish>` for details.
 
-Features of *rivt-code* include:
-
-#. simplified, isolated installation
-#. package and framework integration
-#. installation generally needs to be updated as a whole, not the individual components. 
-#. integration with other programs may be more difficult. 
-
-*rivt-code* includes preinstalled VSCode extensions designed to simplify editing 
-navigation and running *rivt files*. They are listed in :ref:`vscode settings 
-<vscode-settings>` and may explored and modified in the VSCode interface. 
+*rivtStudio* includes preinstalled extensions designed to simplify editing 
+navigation and running *rivt files*. They are listed in 
+:ref:`rivtStudio settings <rivtStudio-settings>` and may be explored and 
+modified in the interface. 
 
 -------------------------------
 
@@ -109,19 +105,19 @@ to as a `Codespace <https://github.com/features/codespaces>`_ . A
 :term:`rivt Codespace` is a *VSCode* cloud environment with *rivt* extensions 
 for editing and running *rivt files*. 
 
-Codespaces are run in a personal GitHub account. When rivt-codespace is forked
+Codespaces are run in a personal GitHub account. When rivtstudiospace is forked
 into a personal account and run, an example rivt file is loaded. The example
 file may be run and edited in the Codespace and the rivt interface extensions
 may be explored.
 
-The first time a rivt-codespace is run, it may take a few minutes to load and
+The first time a rivtstudiospace is run, it may take a few minutes to load and
 initialize the environment. After it is set up, it will load in a few seconds.
 The same delays apply to running a rivt file. The first time will be a minute
 or two to compile the Python files. Subsequent runs will be a few seconds. The
-rivt-codespace environment is persistent and will save any changes made to the
+rivtstudiospace environment is persistent and will save any changes made to the
 example files.
 
-Steps for running rivt-codespace are provided in the README `here
+Steps for running rivtstudiospace are provided in the README `here
 <https://github.com/rivtlib-dev/rivtlib>`_.
 
 

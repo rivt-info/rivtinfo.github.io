@@ -174,7 +174,7 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvE01-aiintro.html">
+  <a class="nav-link nav-internal" href="rvE01-aiwork.html">
     E.1 | AI Workflow
   </a>
 </li>
@@ -288,7 +288,7 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvE01-aiintro.html">
+  <a class="nav-link nav-internal" href="rvE01-aiwork.html">
     E.1 | AI Workflow
   </a>
 </li>
@@ -396,8 +396,7 @@
 <li><p><a class="reference internal" href="#block-tags-summary"><span class="std std-ref">Block Tags</span></a></p></li>
 <li><p><a class="reference internal" href="#assignment-summary"><span class="std std-ref">Assignment Summary</span></a></p></li>
 <li><p><a class="reference internal" href="#commands-list"><span class="std std-ref">Commands</span></a></p></li>
-<li><p><a class="reference internal" href="#report-folders-summary"><span class="std std-ref">rivt Report Folders</span></a></p></li>
-<li><p><a class="reference internal" href="#rivtbook-folders-summary"><span class="std std-ref">rivtbook Folders</span></a></p></li>
+<li><p><a class="reference internal" href="#project-folders-summary"><span class="std std-ref">Folders</span></a></p></li>
 <li><p><a class="reference internal" href="#unit-definitions"><span class="std std-ref">Unit Definitions</span></a></p></li>
 </ul>
 </section>
@@ -752,33 +751,37 @@ string stored as a file. It is written by the <strong>s</strong> parameter.</p>
 [3] <em>docs</em> are written to subdirectories of <em>_published</em></p>
 <hr class="docutils" />
 </section>
-<section id="report-folders">
-<span id="report-folders-summary"></span><h2><strong>[7]</strong> Report Folders<a class="headerlink" href="#report-folders" title="Link to this heading">#</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt-<span class="o">]</span>Report-Label/<span class="w">             </span>report<span class="w"> </span>folder
+<section id="project-folders">
+<span id="project-folders-summary"></span><h2><strong>[7]</strong> Project Folders<a class="headerlink" href="#project-folders" title="Link to this heading">#</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivt-<span class="o">]</span>project-Label/<span class="w">             </span>project<span class="w"> </span>folder
 <span class="w">    </span>├──<span class="w"> </span>.help/<span class="w">                        </span><span class="nb">help</span><span class="w"> </span>files
 <span class="w">    </span>├──<span class="w"> </span>.vscode/<span class="w">                      </span>optional<span class="w"> </span>VSCode<span class="w"> </span>settings
+<span class="w">    </span>├──<span class="w"> </span>.git<span class="w">                          </span>optional<span class="w"> </span>git<span class="w"> </span>repository
 <span class="w">    </span>├──<span class="w"> </span>README.txt<span class="w">                    </span>rivt-generated<span class="w"> </span>text<span class="w"> </span>report
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>_rivt-public<span class="o">]</span>/<span class="w">               </span>rivt-generated<span class="w"> </span>public<span class="w"> </span>files
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>_rvpublic-reptname<span class="o">]</span>/<span class="w">          </span>rivt-generated<span class="w"> </span>public<span class="w"> </span>files
 <span class="w">        </span>├──<span class="w"> </span>rvsrc/<span class="w">                        </span>author<span class="w"> </span><span class="nb">source</span><span class="w"> </span>files
 <span class="w">        </span>├──<span class="w"> </span>rv-101-filename1.py<span class="w">           </span>public<span class="w"> </span>rivt<span class="w"> </span>file
 <span class="w">        </span>├──<span class="w"> </span>rv-102-filename2.py<span class="w">           </span>public<span class="w"> </span>rivt<span class="w"> </span>file
 <span class="w">        </span>├──<span class="w"> </span>rv-201-filename3.py<span class="w">           </span>public<span class="w"> </span>rivt<span class="w"> </span>file
 <span class="w">         </span>...
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rivt-report<span class="o">]</span>/<span class="w">                 </span>report<span class="w"> </span>folder
+<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rvreport-reptname<span class="o">]</span>/<span class="w">              </span>report<span class="w"> </span>folder
 <span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rivt-report<span class="o">]</span>-1.py<span class="w">            </span>report<span class="w"> </span>generating<span class="w"> </span>script
 <span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv101-<span class="o">]</span>filename1.py<span class="w">          </span>rivt<span class="w"> </span>file
 <span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv102-<span class="o">]</span>filename2.py<span class="w">          </span>rivt<span class="w"> </span>file
 <span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rv201-<span class="o">]</span>filename3.py<span class="w">          </span>rivt<span class="w"> </span>file
 <span class="w">            </span>...
 <span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rvsrc<span class="o">]</span>/<span class="w">                      </span>author<span class="w"> </span>provided<span class="w"> </span>files<span class="w"> </span>and<span class="w"> </span>folders
+<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>data<span class="o">]</span>/<span class="w">                         </span>tables
+<span class="w">                </span>└──<span class="w"> </span>steel-vals.csv
 <span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>downloads<span class="o">]</span>/<span class="w">                    </span>files<span class="w"> </span>to<span class="w"> </span>download
 <span class="w">                </span>└──<span class="w"> </span>conc-vals.txt
-<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>img<span class="o">]</span>/<span class="w">                          </span>page<span class="w"> </span>layout<span class="w"> </span>images
+<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>img<span class="o">]</span>/<span class="w">                          </span>images
 <span class="w">                </span>├──<span class="w"> </span>favicon.png
 <span class="w">                </span>├──<span class="w"> </span>covlogo1.png
 <span class="w">                </span>└──<span class="w"> </span>runlogo1.png
-<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>data<span class="o">]</span>/<span class="w">                         </span>tables
-<span class="w">                </span>└──<span class="w"> </span>steel-vals.csv
+<span class="w">            </span>├──<span class="w"> </span><span class="o">[</span>scripts<span class="o">]</span>/<span class="w">                      </span>scripts
+<span class="w">                </span>├──<span class="w"> </span>beam1.py
+<span class="w">                </span>└──<span class="w"> </span>text.rst
 <span class="w">            </span>├──<span class="w"> </span>tools/<span class="w">                          </span>OS<span class="w"> </span>shell<span class="w"> </span>commands
 <span class="w">                </span>└──<span class="w"> </span>opensees.sh
 <span class="w">            </span>├──<span class="w"> </span>fig1.png
@@ -824,22 +827,7 @@ string stored as a file. It is written by the <strong>s</strong> parameter.</p>
 <span class="w">            </span>├──<span class="w"> </span>rv102-filename2.rst
 <span class="w">            </span>├──<span class="w"> </span>rv201-filename3.rst
 <span class="w">                </span>...
-</pre></div>
-</div>
-<hr class="docutils" />
-</section>
-<section id="rivtbook-folders">
-<span id="rivtbook-folders-summary"></span><h2><strong>[8]</strong> rivtbook Folders<a class="headerlink" href="#rivtbook-folders" title="Link to this heading">#</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>rivtbk-<span class="o">]</span>Book-Label/<span class="w">             </span>rivtbook<span class="w"> </span>report<span class="w"> </span>folder
-<span class="w">    </span>├──<span class="w"> </span>.help/<span class="w">                        </span><span class="nb">help</span><span class="w"> </span>files
-<span class="w">    </span>├──<span class="w"> </span>.vscode/<span class="w">                      </span>optional<span class="w"> </span>VSCode<span class="w"> </span>settings
-<span class="w">    </span>├──<span class="w"> </span>README.txt<span class="w">                    </span>rivt-generated<span class="w"> </span>book<span class="w"> </span>as<span class="w"> </span>text
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>rivtbook-report<span class="o">]</span>-1.py<span class="w">        </span>rivtbook<span class="w"> </span>generating<span class="w"> </span>script
-<span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>_rivtbk-public<span class="o">]</span>/<span class="w">             </span>public<span class="w"> </span>subset<span class="w"> </span>of<span class="w"> </span>rivt<span class="w"> </span>files
-<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rvbk-101-<span class="o">]</span>folder<span class="w"> </span>name<span class="w">    </span>rivtbook<span class="w"> </span>folder
-<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rvbk-102-<span class="o">]</span>folder<span class="w"> </span>name<span class="w">    </span>rivtbook<span class="w"> </span>folder
-<span class="w">        </span>├──<span class="w"> </span><span class="o">[</span>rvbk-201-<span class="o">]</span>folder<span class="w"> </span>name<span class="w">    </span>rivtbook<span class="w"> </span>folder
-<span class="w">            </span>...
+<span class="o">[</span>rivtbk-<span class="o">]</span>book-Label/<span class="w">             </span>rivtbook<span class="w"> </span>report<span class="w"> </span>folder
 <span class="w">    </span>├──<span class="w"> </span><span class="o">[</span>_rstdocs<span class="o">]</span>/<span class="w">                   </span>rivt-generated<span class="w"> </span>rst<span class="w"> </span>files
 <span class="w">        </span>├──<span class="w"> </span>_downloads/
 <span class="w">        </span>├──<span class="w"> </span>_static/
@@ -968,8 +956,10 @@ string stored as a file. It is written by the <strong>s</strong> parameter.</p>
 <span class="c1"># force</span>
 <span class="n">lbf</span> <span class="o">=</span> <span class="n">new_unit</span><span class="p">(</span><span class="s2">&quot;lbf&quot;</span><span class="p">,</span> <span class="mf">4.4482216</span> <span class="o">*</span> <span class="n">N</span><span class="p">,</span> <span class="s2">&quot;pound-force&quot;</span><span class="p">)</span>
 <span class="n">kips</span> <span class="o">=</span> <span class="n">new_unit</span><span class="p">(</span><span class="s2">&quot;kips&quot;</span><span class="p">,</span> <span class="n">lbf</span> <span class="o">*</span> <span class="mf">1000.0</span><span class="p">,</span> <span class="s2">&quot;kilopound&quot;</span><span class="p">)</span>
+<span class="c1"># moments</span>
 <span class="n">ftkips</span> <span class="o">=</span> <span class="n">new_unit</span><span class="p">(</span><span class="s2">&quot;ft-kip&quot;</span><span class="p">,</span> <span class="n">ft</span> <span class="o">*</span> <span class="n">lbf</span> <span class="o">*</span> <span class="mf">1000.0</span><span class="p">,</span> <span class="s2">&quot;foot-kips&quot;</span><span class="p">)</span>
 <span class="n">inkips</span> <span class="o">=</span> <span class="n">new_unit</span><span class="p">(</span><span class="s2">&quot;in-kips&quot;</span><span class="p">,</span> <span class="n">inch</span> <span class="o">*</span> <span class="n">lbf</span> <span class="o">*</span> <span class="mf">1000.0</span><span class="p">,</span> <span class="s2">&quot;inch-kips&quot;</span><span class="p">)</span>
+<span class="c1"># linear force</span>
 <span class="n">k_in</span> <span class="o">=</span> <span class="n">new_unit</span><span class="p">(</span><span class="s2">&quot;k_in&quot;</span><span class="p">,</span> <span class="n">kips</span> <span class="o">/</span> <span class="n">inch</span><span class="p">,</span> <span class="s2">&quot;kips per inch&quot;</span><span class="p">)</span>
 <span class="n">k_ft</span> <span class="o">=</span> <span class="n">new_unit</span><span class="p">(</span><span class="s2">&quot;k_ft&quot;</span><span class="p">,</span> <span class="n">kips</span> <span class="o">/</span> <span class="n">ft</span><span class="p">,</span> <span class="s2">&quot;kips per foot&quot;</span><span class="p">)</span>
 <span class="n">p_in</span> <span class="o">=</span> <span class="n">new_unit</span><span class="p">(</span><span class="s2">&quot;lb_in&quot;</span><span class="p">,</span> <span class="n">lbf</span> <span class="o">/</span> <span class="n">inch</span><span class="p">,</span> <span class="s2">&quot;pounds per inch&quot;</span><span class="p">)</span>
@@ -1188,8 +1178,7 @@ include the following categories:</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#block-tags-summary"><strong>[4]</strong> Block Tags Summary</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assignment-summary"><strong>[5]</strong> Assignment Summary</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#command-summary"><strong>[6]</strong> Command Summary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#report-folders"><strong>[7]</strong> Report Folders</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivtbook-folders"><strong>[8]</strong> rivtbook Folders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-folders"><strong>[7]</strong> Project Folders</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unit-definitions"><strong>[9]</strong> Unit Definitions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-python-dependencies"><strong>[10]</strong> rivt Python Dependencies</a></li>
 </ul>
