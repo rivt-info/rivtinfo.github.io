@@ -46,15 +46,14 @@ It runs in a portable desktop environment and in the cloud . The project include
 |  |open_logo|  | `openModels`_ - an online database of shared engineering models and documents |
 +---------------+-------------------------------------------------------------------------------+
 
-
 .. _openModels: https://openmodels.info
 .. _rivtStudio: https://github.com/rivt-info/rivtStudio
 .. _rivtRemote: https://github.com/rivtlib-dev/rivtStudio-devcontainer-1.0.0a20
 .. _rivtlib: https://github.com/rivtlib-dev/rivtlib
 
-The :ref:`motivation <rvmotivation>` to write *rivt* developed over many years,
-as the need for a program that supported broad sharing live engineering documents 
-increased. *rivtlib* and *rivtStudio* are distributed under the
+The :ref:`motivation <rvmotivation>` to write *rivt* developed over many years
+as the need for uncomplicated sharing of live engineering documents became urgent. 
+*rivtlib* and *rivtStudio* are distributed under the
 `MIT open source license <https://opensource.org/license/mit>`__. 
 (see:ref:`Licenses`).
 
