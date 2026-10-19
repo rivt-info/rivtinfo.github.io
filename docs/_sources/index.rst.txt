@@ -41,7 +41,7 @@ and *rivtStudio* are distributed under the
 `MIT open source license <https://opensource.org/license/mit>`_ 
 ( see :ref:`FAQ <Licenses>` ). 
 
-.. table:: My Styled Table
+.. table:: *rivt* Project
    :class: v-align-middle
       
    +---------------+-----------------------------------------------------------------------------------+
