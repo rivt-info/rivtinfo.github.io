@@ -1,7 +1,7 @@
 **B.1 |** R-I-V-T
 =================================  
 
-.. _rivt-overview:
+.. _rivt-summary:
 
 **[1]** Summary
 -------------------------------------------------------------------------------- 
@@ -136,7 +136,7 @@ the *rivt Profile* is installed in VSCode.
 **[4]** String Header
 ----------------------------------
 
-Individual *API methods* define sections.  Each :doc:`API function <rvA01-start>` 
+Individual *API methods* define sections.  Each :doc:`API function <rvB01-rivt>` 
 takes a raw, triple quoted :term:`rivt string` composed of a 
 :term:`header substring` on the first line followed by a multi-line 
 :term:`content substring`. The *header line* defines section processing 

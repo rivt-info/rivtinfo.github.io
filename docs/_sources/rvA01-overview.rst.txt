@@ -1,7 +1,7 @@
 **A.1 |** Overview
 ==============================================
 
-.. _rivt-start:
+.. _rivt-overview:
 
 **[1]** Overview
 -------------------------------------------------------------------------------- 
@@ -25,7 +25,7 @@ This :ref:`tutorial <rivt-tutor>` provides examples of a
 :ref:`rivt file <example-file>` and its :ref:`text <text-doc>`, 
 :ref:`PDF <pdf-doc>`, and :ref:`HTML <html-doc>` *docs*. 
  
-To get started running examples see :ref:`install <rivt-start>`. For *rivt
+To get started running examples see :ref:`install <rivt-overview>`. For *rivt
 with AI* see :ref:`here <rivt-context>`.
 
 *rivt files and reports* may be shared and distributed through any cloud
@@ -139,4 +139,3 @@ Quarto           yes          yes        no     no        no           no       
     rvA05-txtdoc.rst
     rvA06-htmldoc.rst
     rvA07-pdfdoc.rst
-

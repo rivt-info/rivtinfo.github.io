@@ -73,7 +73,7 @@ Both *rivtlib* and *rivtStudio* are distributed under the
    :maxdepth: 1
    :hidden:
 
-   rvA01-start.rst
+   rvA01-overview.rst
    rvB01-rivt.rst
    rvC01-publish.rst
    rvD01-rivtstudio.rst
