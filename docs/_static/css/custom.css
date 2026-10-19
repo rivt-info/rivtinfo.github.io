@@ -155,3 +155,8 @@ hr {
     display: none !important;
     content: "" !important;
 }
+
+table.v-align-middle td,
+table.v-align-middle th {
+    vertical-align: middle !important;
+}
