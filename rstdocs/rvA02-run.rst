@@ -1,7 +1,5 @@
-
 **A.2 |** Run
-
-=====================================================================
+=========================
 
 .. _run-rivt:
 
@@ -138,7 +136,7 @@ Steps for running rivt-codespace are provided in the README `here
 
 .. _rivt-sys:
 
-**[6]** rivt system
+**[6]** rivt System
 --------------------------------------------------------------------------------
 
 *rivt* may be installed into a system level Python. 
