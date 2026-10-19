@@ -59,7 +59,7 @@ comes from the need to share live engineering documents. Both *rivtlib* and
    +---------------+-----------------------------------------------------------------------------------+
    | |remote_logo| | `rivtRemote`_ - containerized *rivtStudio* for servers and browsers               |
    +---------------+-----------------------------------------------------------------------------------+
-   |  |git_logo|  |  :ref:`GitHub search interface <search-interface>`                                 |
+   |  |git_logo|   |  :ref:`GitHub search <search-interface>` - find public rivt projects on GitHub    |
    +---------------+-----------------------------------------------------------------------------------+
    |  |open_logo|  | `openModels`_ - online database of shared engineering models and documents        |
    +---------------+-----------------------------------------------------------------------------------+
