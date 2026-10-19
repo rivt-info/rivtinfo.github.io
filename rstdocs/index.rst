@@ -41,6 +41,10 @@ comes from the need to share live engineering documents. Both *rivtlib* and
 `MIT open source license <https://opensource.org/license/mit>`_ 
 ( see :ref:`FAQ <Licenses>` ). 
 
+.. raw:: html
+
+   <br>
+
 .. table:: 
    :class: v-align-middle
       
