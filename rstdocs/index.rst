@@ -57,7 +57,7 @@ The :ref:`motivation <rvmotivation>` to write *rivt* developed over many years
 as the need for uncomplicated sharing of live engineering documents became urgent. 
 Both *rivtlib* and *rivtStudio* are distributed under the
 `MIT open source license <https://opensource.org/license/mit>`_ 
-(see :ref:`FAQ <Licenses>`). 
+( see :ref:`FAQ <Licenses>` ). 
 
 
 .. raw:: html
@@ -66,7 +66,8 @@ Both *rivtlib* and *rivtStudio* are distributed under the
 
    <p style="color:rgb(63,177,197);">ver: 1.0.0a20 
     - Note: rivt is currently <i>alpha sofware</i>. Some features are 
-   incomplete and program structure, markup and assignment tags, and commands may change.</p>
+   incomplete and the program structure, markup and assignment tags, 
+   and commands may change.</p>
 
 .. toctree::
    :maxdepth: 1
