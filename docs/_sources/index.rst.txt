@@ -41,17 +41,18 @@ and *rivtStudio* are distributed under the
 `MIT open source license <https://opensource.org/license/mit>`_ 
 ( see :ref:`FAQ <Licenses>` ). 
 
-.. rst-class:: v-center-table
-
-+---------------+-----------------------------------------------------------------------------------+
-| |rivt_logo|   | `rivtlib`_ - a Python library for processing *rivt markup* ( `source`_ )          |
-+---------------+-----------------------------------------------------------------------------------+
-| |studio_logo| | `rivtStudio`_ - a portable writing and publishing program on the desktop          |
-+---------------+-----------------------------------------------------------------------------------+
-| |remote_logo| | `rivtRemote`_ - containerized *rivtStudio* for servers and browsers               |
-+---------------+-----------------------------------------------------------------------------------+
-|  |open_logo|  | `openModels`_ - online database of shared engineering models and documents        |
-+---------------+-----------------------------------------------------------------------------------+
+.. table:: My Styled Table
+   :class: v-align-middle
+      
+   +---------------+-----------------------------------------------------------------------------------+
+   | |rivt_logo|   | `rivtlib`_ - a Python library for processing *rivt markup* ( `source`_ )          |
+   +---------------+-----------------------------------------------------------------------------------+
+   | |studio_logo| | `rivtStudio`_ - a portable writing and publishing program on the desktop          |
+   +---------------+-----------------------------------------------------------------------------------+
+   | |remote_logo| | `rivtRemote`_ - containerized *rivtStudio* for servers and browsers               |
+   +---------------+-----------------------------------------------------------------------------------+
+   |  |open_logo|  | `openModels`_ - online database of shared engineering models and documents        |
+   +---------------+-----------------------------------------------------------------------------------+
 
 .. _openModels: https://openmodels.info
 .. _rivtStudio: https://github.com/rivt-info/rivtStudio
