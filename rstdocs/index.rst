@@ -41,6 +41,7 @@ and *rivtStudio* are distributed under the
 `MIT open source license <https://opensource.org/license/mit>`_ 
 ( see :ref:`FAQ <Licenses>` ). 
 
+.. rst-class:: v-center-table
 
 +---------------+-----------------------------------------------------------------------------------+
 | |rivt_logo|   | `rivtlib`_ - a Python library for processing *rivt markup* ( `source`_ )          |
