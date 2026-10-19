@@ -36,17 +36,19 @@ Home
 *rivt* is an open source Python project for writing and sharing engineering
 documents. It runs in a portable desktop environment and in the cloud. 
 
-**rivt Project**
+-----------------------------------------
 
 +---------------+-----------------------------------------------------------------------------------+
-| |rivt_logo|   | `rivtlib`_ - a Python library that processes *rivt markup* ( `source`_ )          |
+| |rivt_logo|   | `rivtlib`_ - a Python library for processing *rivt markup* ( `source`_ )          |
 +---------------+-----------------------------------------------------------------------------------+
 | |studio_logo| | `rivtStudio`_ - a portable writing and publishing program on the desktop          |
 +---------------+-----------------------------------------------------------------------------------+
-| |remote_logo| | `rivtRemote`_ - a containerized *rivtStudio* running in the browser               |
+| |remote_logo| | `rivtRemote`_ - containerized *rivtStudio*  for servers and browsers              |
 +---------------+-----------------------------------------------------------------------------------+
-|  |open_logo|  | `openModels`_ - an online database of shared engineering models and documents     |
+|  |open_logo|  | `openModels`_ - online database of shared engineering models and documents        |
 +---------------+-----------------------------------------------------------------------------------+
+
+-----------------------------------------
 
 .. _openModels: https://openmodels.info
 .. _rivtStudio: https://github.com/rivt-info/rivtStudio
