@@ -31,7 +31,7 @@ Home
    :width: 70px
 
 .. |open_logo| image:: _static/img/openmod2.png
-   :width: 70px
+   :width: 60px
 
 *rivt* is an open source Python project for writing and sharing engineering
 documents. It runs in a portable desktop environment and in the cloud. The 
