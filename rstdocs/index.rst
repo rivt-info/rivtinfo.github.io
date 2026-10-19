@@ -41,7 +41,6 @@ and *rivtStudio* are distributed under the
 `MIT open source license <https://opensource.org/license/mit>`_ 
 ( see :ref:`FAQ <Licenses>` ). 
 
------------------------------------------
 
 +---------------+-----------------------------------------------------------------------------------+
 | |rivt_logo|   | `rivtlib`_ - a Python library for processing *rivt markup* ( `source`_ )          |
@@ -60,7 +59,6 @@ and *rivtStudio* are distributed under the
 
 .. _source: https://github.com/rivtlib-dev/rivtlib
 
------------------------------------------
 
 .. raw:: html
 
