@@ -12,28 +12,26 @@ It runs on the desktop and in the cloud. The project includes *rivtlib* -
 a `Python package <https://pypi.org/project/rivtlib/>`_ that formats and compiles 
 *rivt files*, *rivtStudio* - an integrated desktop editor that manages and 
 publishes *rivt docs*, and *rivtRemote* - a containerized version of *rivtStudio*
-that runs on a server in the cloud. Python knowledge is not required to use 
-*rivt*, but adding custom Python scripts increases its capabilities. 
+that runs on a server in the cloud with a browser interface. Python knowledge 
+is not required to use *rivt*, but adding custom Python scripts increases 
+its capabilities. 
 
 A rivt file (.py) uses *rivt markup* to organize text, calculations, images,
-code and external programs that may be published as a *rivt doc* (a formatted
-text, HTML and PDF document).The *rivt* folder structure provides a replicable
-format for organizing a wide variety of file types. Groups of *docs* can form a
-complete, structured *rivt report*.
+code and external programs to publish *rivt doc*. A *doc* is a formatted
+text, HTML and PDF document. The *rivt* folder structure provides a replicable
+format for organizing a wide variety of file types. Groups of *docs* can be 
+assembled into a structured *rivt report*.
 
 This :ref:`tutorial <rivt-tutor>` provides examples of a 
 :ref:`rivt file <example-file>` and its :ref:`text <text-doc>`, 
-:ref:`PDF <pdf-doc>`, and :ref:`HTML <html-doc>` *docs*. 
- 
-To get started running examples see :ref:`install <rivt-overview>`. For *rivt
+:ref:`PDF <pdf-doc>`, and :ref:`HTML <html-doc>` *docs*.  To get started 
+running examples see :ref:`install <rivt-overview>`. For *rivt
 with AI* see :ref:`here <rivt-context>`.
 
-*rivt files and reports* may be shared and distributed through any cloud
-storage service. *rivt reports* and *handbooks* are organized in top level
-:ref:`project folders <rivt-folders>` that may be zipped for convenient
-distribution. Examples are available on *Google Drive* at 
-`openmodels.info <https://www.openmodels.info>`_. and on GitHub.A
-convenient interface for searching public *rivt* READMEs GitHub 
+*rivt* projects, reports and handbooks may be shared and distributed as zip 
+files through any cloud storage service. Examples are available on 
+*Google Drive* and searchable at `openmodels.info <https://www.openmodels.info>`_. 
+A convenient interface for searching public *rivt* READMEs on GitHub 
 is :ref:`here <search-interface>`.
 
 .. [1] rivt includes provisions for selectively exporting *rivt file*
