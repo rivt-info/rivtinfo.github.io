@@ -22,7 +22,7 @@ format for organizing a wide variety of file types. Groups of *docs* can form a
 complete, structured *rivt report*.
 
 This :ref:`tutorial <rivt-tutor>` provides examples of a 
-:ref:`rivt file <example-file>` and associated :ref:`text <text-doc>`, 
+:ref:`rivt file <example-file>` and :ref:`text <text-doc>`, 
 :ref:`PDF <pdf-doc>`, and :ref:`HTML <html-doc>` *docs*. 
  
 To get started with running examples see :ref:`install <rivt-start>`. For *rivt
@@ -30,12 +30,9 @@ with AI* see :ref:`here <rivt-context>`.
 
 *rivt files and reports* may be shared and distributed through any cloud
 storage service. Examples are available on *Google Drive* at 
-`openmodels.info <https://www.openmodels.info/models>`_. If collaboration and 
-version control are needed `GitHub <https://github.com/>`_ may be used for 
-development and distribution. *rivt files and reports* are organized in top 
-level folders (:ref:`rivt project <rivt-folders>` or :ref:`rivtbook <rivt-books>`) 
-which work well as *GitHub* repositories. *rivt* also generates a *GitHub* 
-README file from a *rivt report*. A convenient interface for searching public 
+`openmodels.info <https://www.openmodels.info>`_.  *rivt reports* and 
+*rivt handbooks* are organized in top level :ref:`project folders<rivt-folders>`.
+A convenient interface for searching public 
 *rivt* READMEs is :ref:`here <search-interface>`. 
 
 .. [1] rivt includes provisions for selectively exporting *rivt file*
@@ -46,34 +43,61 @@ README file from a *rivt report*. A convenient interface for searching public
 **[2]** Motivation
 -------------------------------------------------------------------------------- 
 
-Reuse of engineering documents has always been a challenge because engineering
-documents are complex and apparently commercial software goals do not align
-with this goal.
-
-Widely used text and image oriented software is generally not sufficient
-because of the additional complexity of engineering documents. They may include
-text, images, tables, calculations, active models and computer code. They are
-also dynamic, and are frequently updated and recalculated by others as
+Broadly sharing engineering documents has been a challenge because they are
+complex and because commercial software objectives do not align with this goal.
+They may include text, images, tables, calculations, active models and computer
+code. They are also dynamic and are frequently updated and recalculated as
 project designs evolve and progress.
 
-The desire to reuse engineering documents is a matter of simple efficiency. Most
-engineering calculations are not unique. They may be organized in different ways
-with different inputs, but the basic equations and methods are shared across
-many projects and evolve slowly. The commercial market 
-response has been to develop incompatible, 
-siloed programs with a number of barriers to sharing and reuse that include:
+The need for reuse of engineering documents is a matter of improving efficiency
+and making more time for independent and creative thought. Most engineering
+calculations are not fundamentally unique. The basic equations and methods are
+shared across many projects. However they are always organized differently and
+have different inputs. The commercial market response to this need has been to
+develop a number of siloed programs with barriers to sharing and reuse
+including:
 
-- incompatible documents across programs
+- incompatible documents across different programs
 - costly software updates that are backward incompatible
 - software limited to specific platforms
 - limited version control
 - limited report generation
 - limited collaboration
 
-The table below summarizes and compares limitations between specific programs
+*rivt* produces organized, formatted engineering documents from active
+calculation files that can be shared anywhere. The primary use cases for *rivt*
+are:
+
+A. producing reusable engineering documents that are easier to write, edit and 
+   format than LaTeX, Excel, or Word.
+
+B. producing documents with source files that need to be partitioned into public
+   and private parts prior to sharing.
+
+C. Using Python and AI tools to write engineering documents
+
+D. Functioning as a front and back end for external software.
+
+Engineering documents include:
+
+#. internal communications
+#. research documentation
+#. government permits
+#. technical reports
+#. funding applications
+#. teaching and presentation materials
+#. homework
+
+For documents with highly specific format requirements including journal
+articles and books and that do not need live recalculation, 
+`Quarto <https://quarto.org/>`_ is likely a better fit. For interactive calculation
+documents that do not need organized reports or partitioning into private and
+public sections, `Jupyter Notebooks <https://jupyter.org/>`_ is likely a better
+tool.
+
+Finally, the table below summarizes and compares limitations between specific programs
 that *rivt* is designed to complement or replace.
 
-.. _use-case:
 
 .. rst-class:: center
 
@@ -95,41 +119,30 @@ Quarto           yes          yes        no     no        no           no       
 .. [2] Report generation.
 .. [3] Native Git version control.
 .. [4] Plain text input and output files.
-.. [5] Syntax control of private and public sections.
+.. [5] Integrated syntax control of private/public files.
 .. [6] Calculation with dual units.
 .. [7] Forward and backward compatibility.
 .. [8] Cross-platform support.
 .. [9] Collaboration support.
 .. [10] Text, PDF, and HTML documents from the same input file.
 
-*rivt* produces organized, formatted engineering documents from active
-calculation files using reasonable defaults. Use cases are listed 
-:ref:`here <use-case>`. A brief discussion of current engineering document tools 
-and their  strengths and weaknesses relative to *rivt* objectives is 
-:ref:`here <rvmotivation>`. For documents with specific format requirements
-including journal articles and books and that do not need live recalculation, 
-`Quarto <https://quarto.org/>`_ is likely a better fit. For interactive 
-calculation documents that do not need an organized published report, 
-`Jupyter Notebooks <https://jupyter.org/>`_ is likely a better tool. 
 
 .. _run-rivt:
 
-**[2]** Run rivt
+**[3]** Run rivt
 --------------------------------------------------------------------------------
 
 This section covers three ways to run *rivt*.
 
 #. For most users the best way to get started is to download
    *rivtStudio*  (~1 GB zipped, ~2 GB expanded). 
-   For further details see :ref:`rivt-code <rivt-code>`.
+   For further details see :ref:`here <rivt-studio>`.
 
-#. For users with a `GitHub <https://github.com>`_ account or limitations
-   on running local software, the best way to get started is to fork and run
-   :ref:`rivt-codespace <rivt-codespace>` in a browser. 
+#. Running *rivtStudio* in the browser connected to a container in the cloud.
+   Further details are :ref:`here <rivt-remote>`.
 
-#. For users familiar with Python, *rivt* may be installed at the system level
-   or in an isolated environment using *uv*. Further details are 
-   :ref:`here <rivt-sys>`.
+#. For users familiar with Python, *rivtlib* may be installed at the system level
+   using *pip* or  *uv*. Further details are :ref:`here <rivt-sys>`.
 
 *rivt* may be edited in a simple text processor and run from the command line 
 but efficient editing and compiling is typically done in an :term:`IDE`. Any IDE 
@@ -146,7 +159,7 @@ A typical **VSCode IDE** layout for editing a *rivt file* is shown below.
 
 .. note::
 
-    The :ref:`rivt file <file-folder>` is in the center editing panel[blue], the 
+    The :ref:`rivt file <rivt-files>` is in the center editing panel[blue], the 
     :ref:`text doc <rivt-docs>` output is in the right panel[brown] and the
     *file explorer* is the far left panel [green]. Extension buttoms are
     located on the top and bottom status bars [red]. Text, PDF and HTML output
@@ -167,7 +180,7 @@ various sources.
 
 .. _rivt-studio:
 
-**[3]** rivtStudio
+**[4]** rivtStudio
 -------------------------------------------------------------------------------- 
 
 A *rivt-code* installation is recommended for Windows users interested in trying
@@ -206,10 +219,14 @@ navigation and running *rivt files*. They are listed in :ref:`vscode settings
 -------------------------------
 
 
-.. _rivt-codespace:
+.. _rivt-remote:
 
-**[3]** rivtRemote
+**[5]** rivtRemote
 -------------------------------------------------------------------------------- 
+
+For users with a `GitHub <https://github.com>`_ account or limitations
+on running local software, the best way to get started is to fork and run
+:ref:`rivtRemote <rivt-remote>` in a browser. 
 
 `VSCode <https://code.visualstudio.com/>`_ is a customizable code editor that
 can be run locally or in the cloud. The cloud version of *VSCode* is referred
@@ -245,7 +262,7 @@ Steps for running rivt-codespace are provided in the README `here
 
 .. _rivt-sys:
 
-**[4]** rivt system
+**[6]** rivt system
 --------------------------------------------------------------------------------
 
 *rivt* may be installed into a system level Python. 
@@ -325,7 +342,6 @@ Python and programming.
     provides an effective environment for running rivt examples. 
         
 ---------------------------------
-
 
 
 

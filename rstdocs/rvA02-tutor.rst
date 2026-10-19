@@ -117,10 +117,9 @@ the **| PUBLISH |** command.
 
 .. dropdown:: [ 2 ] Add API method - rv.I
 
-    See :ref:`API methods <API methods>` and header and content 
-    :ref:`substrings <rivt-header>` for rivt string details.
-    This section also includes footnote [#]  and a URL link [U]
-    :ref:`tags <line summary>`.
+    See :ref:`API methods <rivt-api>` and header and content 
+    :ref:`substrings <rivt-header>` for rivt string details. This section also 
+    includes footnote [#]  and a URL link [U] :ref:`tags <line summary>`.
 
     .. code-block:: python
 

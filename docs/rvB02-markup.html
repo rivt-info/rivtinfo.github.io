@@ -1,0 +1,755 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" data-theme="dark">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
+    <title>B.2 | Markup &#8212; rivt</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "dark";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "dark";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=70555702" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/jquery.js?v=5d32c60e"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="_static/documentation_options.js?v=7ed0cb1e"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'rvB02-markup';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="B.3 | Line Tags" href="rvB03-linetags.html" />
+    <link rel="prev" title="B.1 | R-I-V-T" href="rvB01-rivt.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="dark">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+    
+    <img src="_static/rivhome11t.png" class="logo__image only-dark" alt=""/>
+    <img src="_static/rivhome11t.png" class="logo__image only-light pst-js-only" alt=""/>
+  
+  
+    <p class="title logo__title">rivt</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvA01-start.html">
+    [1] Overview
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="rvB01-rivt.html">
+    B.1 | R-I-V-T
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvC01-publish.html">
+    C.1 | Publish
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvD01-rivtstudio.html">
+    D.1 | rivtStudio
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvE01-aiintro.html">
+    E.1 | AI Workflow
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvF01-quickref.html">
+    F.1 | Quick Reference
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="Sections">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvA01-start.html">
+    [1] Overview
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="rvB01-rivt.html">
+    B.1 | R-I-V-T
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvC01-publish.html">
+    C.1 | Publish
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvD01-rivtstudio.html">
+    D.1 | rivtStudio
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvE01-aiintro.html">
+    E.1 | AI Workflow
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rvF01-quickref.html">
+    F.1 | Quick Reference
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links" aria-label="Docs">
+    <p class="bd-links__title" role="heading" aria-level="1">Docs</p>
+    <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>B.2 |</strong> Markup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvB03-linetags.html"><strong>B.3 |</strong> Line Tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvB04-blocktags.html"><strong>B.4 |</strong> Block Tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvB05-assigntags.html"><strong>B.6 |</strong> Assignment Tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvB06-commands.html"><strong>B.5 |</strong> Commands</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="rvB01-rivt.html" class="nav-link"><strong>B.1 |</strong> R-I-V-T</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>B.2 |</strong> Markup</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="b-2-markup">
+<h1><strong>B.2 |</strong> Markup<a class="headerlink" href="#b-2-markup" title="Link to this heading">#</a></h1>
+<section id="tags-and-commands">
+<span id="rivt-markup"></span><h2><strong>[1]</strong> Tags and Commands<a class="headerlink" href="#tags-and-commands" title="Link to this heading">#</a></h2>
+<p>In addition to a subset of <em>restructuredText</em> markup, <em>rivt</em> provides its own
+set of <em>tags</em> and <em>commands</em> scoped to the API methods. They are summarized in
+the following sections.</p>
+<p><a class="reference internal" href="rvB03-linetags.html#line-summary"><span class="std std-ref">Line Tags</span></a></p>
+<blockquote>
+<div><p>A <a class="reference internal" href="rvF02-terms.html#term-line-tag"><span class="xref std std-term">line tag</span></a> formats a line of text and is denoted with a single
+<strong>_[LETTER]</strong>, placed at or near the end of the line, depending on the tag.</p>
+</div></blockquote>
+<p><a class="reference internal" href="rvB04-blocktags.html#block-summary"><span class="std std-ref">Block Tags</span></a></p>
+<blockquote>
+<div><p>A <a class="reference internal" href="rvF02-terms.html#term-block-tag"><span class="xref std std-term">block tag</span></a> formats a block of text and begins with
+<strong>_[[TAGNAME]]</strong> and terminates with <strong>_[[END]]</strong>.</p>
+</div></blockquote>
+<p><a class="reference internal" href="rvB05-assigntags.html#assign-summary"><span class="std std-ref">Assignment Tags</span></a></p>
+<blockquote>
+<div><p>The exceptions are the definition (<strong>==:</strong>), assignment (<strong>&lt;=:</strong>),
+function (<strong>:=:</strong>) and compare (<strong>&lt;&gt;</strong>) commands that are used to
+define, assign and compare values.</p>
+</div></blockquote>
+<p><a class="reference internal" href="rvB06-commands.html#command-summary"><span class="std std-ref">Commands</span></a></p>
+<blockquote>
+<div><p><em>rivt commands</em> read and write external files. They typically start in the
+first column with a vertical bar ( | ) followed by the command name, file
+path, and parameters.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="p">|</span><span class="w"> </span>COMMAND<span class="w"> </span><span class="p">|</span><span class="w"> </span>relative<span class="w"> </span>path<span class="w"> </span><span class="p">|</span><span class="w"> </span>parameters
+</pre></div>
+</div>
+<p>File paths are specified relative to the <em>rivt root folder</em>. The <em>rivt
+report</em> folder structure is described <a class="reference internal" href="rvC03-folders.html#rivt-folders"><span class="std std-ref">here</span></a>.</p>
+<p>If the path is ommitted the default path for each command is applied. If
+the <em>singledoc</em> parameter is set, the <em>resource files</em> and <em>docs</em> are
+stored in the <em>rivt root folder</em>.</p>
+</div></blockquote>
+<p>Tag and Command syntax for each API type is defined and described
+using the following format:</p>
+<p style="border-width:2px; border-style:solid;
+border-color:#49b2c3;padding: 1em;">
+
+<b>Markup Key<br>
+<br>
+_[TAG] or | COMMAND |</b><br>
+<br>
+Description<br>
+<br>
+<pre>
+    Syntax:
+        _[TAG] or | COMMAND | syntax
+
+    Example:
+        This is a sentence. _[C]
+</pre>
+</p><hr class="docutils" />
+</section>
+<section id="rv-r-markup">
+<span id="markup-r"></span><h2><strong>[1]</strong> rv.R Markup<a class="headerlink" href="#rv-r-markup" title="Link to this heading">#</a></h2>
+<p>The <em>Run API</em>  executes scripts commands.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>_[[SHELL]]</strong> process parameters</p></td>
+<td><p><a class="reference internal" href="rvB04-blocktags.html#shell-script"><span class="std std-ref">[6] Shell script</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>_[[END]]</strong></p></td>
+<td><p><a class="reference internal" href="rvB04-blocktags.html#end-block"><span class="std std-ref">[8] End block</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>| SHELL |</strong> relative path | os, wait</p></td>
+<td><p><a class="reference internal" href="rvB06-commands.html#shell-file"><span class="std std-ref">[2] Shell file</span></a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+</section>
+<section id="rv-i-markup">
+<span id="markup-i"></span><h2><strong>[2]</strong> rv.I Markup<a class="headerlink" href="#rv-i-markup" title="Link to this heading">#</a></h2>
+<p>The <em>Insert API</em> inserts and formats static sources into the <em>doc</em>,
+including images, tables, links and formatted text.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Tags / Commands</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>text <strong>_[C]</strong></p></td>
+<td><p><a class="reference internal" href="rvB03-linetags.html#bold-center-text"><span class="std std-ref">[2] Bold center text</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>text <strong>_[#]</strong> text</p></td>
+<td><p><a class="reference internal" href="rvB03-linetags.html#endnote-number"><span class="std std-ref">[6]  Endnote number</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>text <strong>_[G] text, term |</strong> text</p></td>
+<td><p><a class="reference internal" href="rvB03-linetags.html#term-link"><span class="std std-ref">[7] Glossary link</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>text <strong>_[S] text, section link |</strong> text</p></td>
+<td><p><a class="reference internal" href="rvB03-linetags.html#section-link"><span class="std std-ref">[8] Section link</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>text <strong>_[U] text, label |</strong> text</p></td>
+<td><p><a class="reference internal" href="rvB03-linetags.html#url-link"><span class="std std-ref">[9] URL link</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>text <strong>_[V] var_name |</strong> text</p></td>
+<td><p><a class="reference internal" href="rvB03-linetags.html#substitute-value"><span class="std std-ref">[10] Substitute value</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>text math _[M]</strong> description</p></td>
+<td><p><a class="reference internal" href="rvB03-linetags.html#text-math"><span class="std std-ref">[4] Text math</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>LaTeX math _[L]</strong> description</p></td>
+<td><p><a class="reference internal" href="rvB03-linetags.html#latex-math"><span class="std std-ref">[5] LaTeX math</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>title _[T]</strong></p></td>
+<td><p><a class="reference internal" href="rvB03-linetags.html#number-table"><span class="std std-ref">[11] Table number</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>_[[ENDNOTES]]</strong></p></td>
+<td><p><a class="reference internal" href="rvB04-blocktags.html#endnotes-block"><span class="std std-ref">[2] Endnotes Block</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>_[[END]]</strong></p></td>
+<td><p><a class="reference internal" href="rvB04-blocktags.html#end-block"><span class="std std-ref">[8] End block</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>| IMAGE |</strong> file | scale, caption, num, time</p></td>
+<td><p><a class="reference internal" href="rvB06-commands.html#image-file"><span class="std std-ref">[5] Image file</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>| IMAGE2 |</strong> file | s1, s2, c1, c2, fig1, fig2, num1, num2,</p></td>
+<td><p><a class="reference internal" href="rvB06-commands.html#adjacent-images"><span class="std std-ref">[6] Adjacent images</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>| TABLE |</strong> file | title, width, rows, align, head</p></td>
+<td><p><a class="reference internal" href="rvB06-commands.html#table-file"><span class="std std-ref">[4] Table file</span></a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+</section>
+<section id="rv-v-markup">
+<span id="markup-v"></span><h2><strong>[3]</strong> rv.V Markup<a class="headerlink" href="#rv-v-markup" title="Link to this heading">#</a></h2>
+<p>The <em>Values API</em> defines values and evaluates equations and functions.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Tags / Commands / Assignment</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>_[[ENDNOTES]]</strong></p></td>
+<td><p><a class="reference internal" href="rvB04-blocktags.html#endnotes-block"><span class="std std-ref">[2] Endnotes Block</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>_[[END]]</strong></p></td>
+<td><p><a class="reference internal" href="rvB04-blocktags.html#end-block"><span class="std std-ref">[8] End block</span></a></p></td>
+</tr>
+<tr class="row-even"><td><div class="line-block">
+<div class="line"><strong>TABLE</strong> | file | title,width,rows,align,head,num</div>
+</div>
+</td>
+<td><p><a class="reference internal" href="rvB06-commands.html#table-file"><span class="std std-ref">[4] Table file</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><div class="line-block">
+<div class="line"><strong>IMAGE</strong> | file |  scale, caption, figure</div>
+</div>
+</td>
+<td><p><a class="reference internal" href="rvB06-commands.html#image-file"><span class="std std-ref">[5] Image file</span></a></p></td>
+</tr>
+<tr class="row-even"><td><div class="line-block">
+<div class="line"><strong>IMAGE2</strong> | file1, file2 | c1, c2, s1, s2, f1, f2</div>
+</div>
+</td>
+<td><p><a class="reference internal" href="rvB06-commands.html#adjacent-images"><span class="std std-ref">[6] Adjacent images</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><div class="line-block">
+<div class="line"><strong>VALTABLE</strong> | file | title, width, rows</div>
+</div>
+</td>
+<td><p><a class="reference internal" href="rvB06-commands.html#values-file"><span class="std std-ref">[7]  Valtable file</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>a <strong>==:</strong> 1*IN  | unit1, unit2, decimal, num | label</p></td>
+<td><p><a class="reference internal" href="rvB05-assigntags.html#define-value"><span class="std std-ref">[2] Define values | ==:</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>c <strong>&lt;=:</strong> expression | unit1, unit2, decimal, num | label</p></td>
+<td><p><a class="reference internal" href="rvB05-assigntags.html#assign-value"><span class="std std-ref">[3] Assign expression values | &lt;=:</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>c <strong>:=:</strong> expression | unit1, unit2, decimal | label, number</p></td>
+<td><p><a class="reference internal" href="rvB06-commands.html#function-value"><span class="std std-ref">[9] Function</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>a <strong>&lt;</strong> c  | decimal | text1,text2,align, num</p></td>
+<td><p><a class="reference internal" href="rvB05-assigntags.html#compare-value"><span class="std std-ref">[5] Compare values | &lt;=</span></a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+</section>
+<section id="rv-t-text">
+<span id="markup-t"></span><h2><strong>[4]</strong> rv.T Text<a class="headerlink" href="#rv-t-text" title="Link to this heading">#</a></h2>
+<p>The <em>Text API</em> processes text and scripts. It does not use markup. The
+header substring takes an additional parameter that specifies the type of
+text or script. The header substring has the form:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="p">(</span><span class="n">T</span><span class="s2">&quot;&quot;&quot;Section title | script_type, file: filename&quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>script type</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>PYTHON</p></td>
+<td><p>run Python code</p></td>
+</tr>
+<tr class="row-odd"><td><p>python</p></td>
+<td><p>Python code</p></td>
+</tr>
+<tr class="row-even"><td><p>text</p></td>
+<td><p>literal text</p></td>
+</tr>
+<tr class="row-odd"><td><p>rst</p></td>
+<td><p>reStructuredText</p></td>
+</tr>
+<tr class="row-even"><td><p>html</p></td>
+<td><p>HTML markup</p></td>
+</tr>
+<tr class="row-odd"><td><p>mermaid</p></td>
+<td><p>Mermaid diagram (requires mermaid installation)</p></td>
+</tr>
+<tr class="row-even"><td><p>latex</p></td>
+<td><p>LaTeX (requires LaTeX installation)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+</section>
+<section id="rv-d-markup">
+<span id="markup-d"></span><h2><strong>[5]</strong> rv.D Markup<a class="headerlink" href="#rv-d-markup" title="Link to this heading">#</a></h2>
+<p>The <em>Doc API</em> publishes formatted <em>docs</em> from the rivt API strings.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Tags / Commands / Assignment</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>_[[METADATA]]</strong> label</p></td>
+<td><p><a class="reference internal" href="rvB04-blocktags.html#meta-block"><span class="std std-ref">[7] Metadata</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>_[[END]]</strong></p></td>
+<td><p><a class="reference internal" href="rvB04-blocktags.html#end-block"><span class="std std-ref">[8] End block</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>| PDFATTACH |</strong> relative path | place, cover</p></td>
+<td><p><a class="reference internal" href="rvB06-commands.html#attach-pdf"><span class="std std-ref">[11] Attach PDF</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>| PUBLISH |</strong> doc title | type</p></td>
+<td><p><a class="reference internal" href="rvB06-commands.html#publish-doc"><span class="std std-ref">[12] Publish doc</span></a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="rvB01-rivt.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><strong>B.1 |</strong> R-I-V-T</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="rvB03-linetags.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>B.3 |</strong> Line Tags</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Sections
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tags-and-commands"><strong>[1]</strong> Tags and Commands</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rv-r-markup"><strong>[1]</strong> rv.R Markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rv-i-markup"><strong>[2]</strong> rv.I Markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rv-v-markup"><strong>[3]</strong> rv.V Markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rv-t-text"><strong>[4]</strong> rv.T Text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rv-d-markup"><strong>[5]</strong> rv.D Markup</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2026 StL Engineering .
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+  </body>
+</html>

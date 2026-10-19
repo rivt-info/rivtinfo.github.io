@@ -1,6 +1,8 @@
 **C.1 |** Publish
 ======================
 
+.. _rivt-docs:
+
 **[1]** Docs
 -------------------------------------------------------------------------------
 
@@ -45,36 +47,57 @@ the corresponding *doc numbers* in a report would be:
 - A.1 (division A, subdivision 1)
 - 1.5 (division 1, subdivision 5)
 - 2.12 (division 2, subdivision 12)
-  
-.. _rivt-docs:
 
-**[4]** Files / Folders
+.. _rivt-files:  
+
+**[2]** Files
 -------------------------------------------------------------------------------
 
-**rivt folders**
+
+.. image:: _static/img/process2.png
+    :class: dark-light
+    :width: 75%
+    :align: center
+    :alt: rivt flow chart 
+
+.. rst-class:: center
+
+    **rivt Doc Processing**
+
+Each :term:`rivt file` outputs a corresponding :term:`doc` of the format
+specified in PUBLISH command of the *rv.D()* API. A rivt file number has the
+form:
 
 .. code-block:: text
 
-                        | A rivt file is a Python file file that imports the
-   rivt file            | rivtlib Python package and compiles to a text,
-                        | PDF or HTML doc.
+    rvAnn-filename.py
 
-                        | A rivt project folder contains setting and 
-   rivt project folder  | configuration files for the IDE and version control, 
-                        | as well as one or more rvbook or rvreport folders.
+where rvAnn is a required file number prefix with A an alphanumeric character and nn a two
+digit non-negative integer. Corresponding rivt docs are output as:
 
-                        | A rivtbook folder is a collection of rivt files with
-   rvbook folder        | common subject matter organized to simplify selection
-                        | selection of files and resources for inclusion in rivt 
+.. code-block:: text
 
-                        | A rivt report folder is a collection of rivt files
-   rvreport folder      | organized for publication of rivt docs and reports
-                        | as text, html or PDF files.
+    rvAnn-filename.txt, pdf or html
 
+A *rivt report* is organized using the *file numbers*. The file numbers are
+used to organize reports into divisions and subdivisions. Each *rivt file* or
+*doc* is a report subdivision. If the *rivt filenames* are:
 
+.. code-block:: bash
 
+    rvA01-filename.py
+    rv105-filename.py
+    rv212-filename.py  
 
-**[2]** Public files
+the corresponding *doc numbers* in a report would be: 
+
+- A.1 (division A, subdivision 1)
+- 1.5 (division 1, subdivision 5)
+- 2.12 (division 2, subdivision 12)
+
+.. _public-files:  
+
+**[3]** Public files
 ----------------------------------------
 
 A feature of *rivt* is efficient control over public sharing of all or parts
@@ -124,9 +147,34 @@ remove command (e.g. in VSCode).
 
   - contributing to packages and extensions used by *rivt*.
   
-.. _file-folder:
+.. _rivt-folder:
 
-**[4]** Files / Folders
+**[4]** Report Folders
+-------------------------------------------------------------------------------
+
+**rivt folders**
+
+.. code-block:: text
+
+                        | A rivt file is a Python file file that imports the
+   rivt file            | rivtlib Python package and compiles to a text,
+                        | PDF or HTML doc.
+
+                        | A rivt project folder contains setting and 
+   rivt project folder  | configuration files for the IDE and version control, 
+                        | as well as one or more rvbook or rvreport folders.
+
+                        | A rivtbook folder is a collection of rivt files with
+   rvbook folder        | common subject matter organized to simplify selection
+                        | selection of files and resources for inclusion in rivt 
+
+                        | A rivt report folder is a collection of rivt files
+   rvreport folder      | organized for publication of rivt docs and reports
+                        | as text, html or PDF files.
+
+
+
+**[4]** Book Folders
 ------------------------------------------------------------------------------- 
 
 A :term:`rivt file` is a Python plain text file ( *.py* ) that includes API
@@ -221,7 +269,7 @@ comment settings are not needed.
 
 --------------------
 
-See :ref:`rivt markup <API methods>` for further details.
+See :ref:`rivt markup <rivt-markup>` for further details.
 
 
 **[3]** HTML and PDF Config (.py)

@@ -1,8 +1,41 @@
 **C.2 |** rivt Files
 ============================
 
+.. _file-types:
+
 **[1]** File Types 
 --------------------------------------------------------------------- 
+
+
+rivt formatting *tags* and file *commands* have an :ref:`API scope <markup-R>`.
+The *Insert and Values APIs* have a fixed set fo tags and commands. The Run and
+Tools tags and command are extensible and function as a plugin-architecture.
+
+`rivtlib <https://pypi.org/project/rivtlib/>`__ is the Python library that 
+compiles a *rivt file* to a text, PDF or HTML doc. A *rivt file* is a 
+Python file (.py) that imports the *rivtlib* Python package and includes 
+*rivt markup*. *rivt* dependencies are listed `:ref:here <vscode-settings>`. 
+
+A *public rivt file* is a subset of a *rivt file*, made up of sections the
+author chooses to share under an `Open Source license
+<https://opensource.org/licenses>`__. *rivt* is designed to seamlessly extract
+public files, allowing the author discretion in choosing which file 
+sections to make public.
+
+Groups of *rivt files* may be compiled and linked into a single 
+:ref:`rivt report <rivt-report>`. Collections of *rivt files* with related 
+subject matter may be grouped together as a :ref:`rivtbook <rivt-books>`.
+
+*rivt files* are generally edited and run in an IDE. The lightweight 
+`Pyzo <https://pyzo.org/>`__ IDE is installed by rivtlib. The 
+`VSCode IDE <https://code.visualstudio.com/>`__ is a full featured IDE 
+with rivt profiles and extensions documented :ref:`here <vscode-settings>`. 
+*VSCode* is installed with the portable :ref:`rivt-code <rivt-code>` installation.
+
+*rivt file* examples are illustrated :ref:`here <rivt-tutor>`. Additional  
+*rivt files* may be downloaded from *Google Drive* at 
+`OpenModels.info <https://www.openmodels.info/>`__.  An interface for searching 
+*public rivt files* on *GitHub* is :ref:`here <search-interface>`. 
 
 **rivt file**
 
@@ -18,6 +51,10 @@ number *ss*. For example:
     
     rvB02-Beam-Loads.py
 
+
+project folders  or :ref:`rivtbook <rivt-books>`
+which work well as *GitHub* repositories. *rivt* also generates a *GitHub* 
+README file from a *rivt report*. 
 
 **Author provided source file inputs**
 

@@ -43,7 +43,7 @@ to GitHub files. It can be set up with *rivt extensions* that provide a complete
 rivt editing and collaboration environment in the cloud.
 
 *rivt-codespace* is a cloud based rivt installation that may be 
-:ref:`forked<rivt-codespace>` into a personal GitHub repository.
+:ref:`forked<rivt-remote>` into a personal GitHub repository.
 
 .. toctree::
    :maxdepth: 1

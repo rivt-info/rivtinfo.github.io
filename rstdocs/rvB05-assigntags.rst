@@ -1,11 +1,14 @@
-**B.6 |** Assignment
-========================
+**B.6 |** Assignment Tags
+===========================
 
 
 .. _assign-summary:
 
 **[1]** Summary
 -------------------------------------
+
+Assignments are tags that are evaluated in the *Values API*. They trigger
+evaluations of expressions and functions.
 
 **Assign values to expressions**
 

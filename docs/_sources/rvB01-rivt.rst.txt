@@ -4,12 +4,12 @@
 .. _rivt-overview:
 
 **[1]** Summary
---------------------------------------------------------------------- 
+-------------------------------------------------------------------------------- 
 
-*rivt* is designed to assemble engineering documents from a wide variety of
-sources including engineering programs, data files, Python scripts,
-image files and single purpose programs like Excel, Mermaid, Graphviz, and
-LaTeX. It accomplishes this using four API functions:
+*rivt* is designed to publish engineering documents using a wide variety of
+source materials including external programs, images, functions, equations,
+data files and Python scripts. To assemble a *doc* it uses four primary API
+functions:
 
 .. raw:: html
 
@@ -23,50 +23,25 @@ LaTeX. It accomplishes this using four API functions:
 
     <b>T(): </b> Runs external binary programs <br>
 
-A fourth API is documented here:
+A fourth API for publishing the doc is documented :ref:`here <rivt-docs>`:
 
 .. raw:: html
 
     <b>D(): </b> Publishes documents <br>
 
-`rivtlib <https://pypi.org/project/rivtlib/>`__ is the Python library that 
-compiles a *rivt file* to a text, PDF or HTML doc. A *rivt file* is a 
-Python file (.py) that imports the *rivtlib* Python package and includes 
-*rivt markup*. *rivt* dependencies are listed `:ref:here <vscode-settings>`. 
+Examples of a complete rivt file with text, PDF and HTML docs are here:
 
-A *public rivt file* is a subset of a *rivt file*, made up of sections the
-author chooses to share under an `Open Source license
-<https://opensource.org/licenses>`__. *rivt* is designed to seamlessly extract
-public files, allowing the author discretion in choosing which file 
-sections to make public.
+- :ref:`rivt file <example-file>` 
+- :ref:`text doc <text-doc>`, 
+- :ref:`PDF doc <pdf-doc>`
+- :ref:`HTML doc <html-doc>`
 
-Groups of *rivt files* may be compiled and linked into a single 
-:ref:`rivt report <rivt-report>`. Collections of *rivt files* with related 
-subject matter may be grouped together as a :ref:`rivtbook <rivt-books>`.
-
-*rivt files* are generally edited and run in an IDE. The lightweight 
-`Pyzo <https://pyzo.org/>`__ IDE is installed by rivtlib. The 
-`VSCode IDE <https://code.visualstudio.com/>`__ is a full featured IDE 
-with rivt profiles and extensions documented :ref:`here <vscode-settings>`. 
-*VSCode* is installed with the portable :ref:`rivt-code <rivt-code>` installation.
-
-*rivt file* examples are illustrated :ref:`here <rivt-tutor>`. Additional  
-*rivt files* may be downloaded from *Google Drive* at 
-`OpenModels.info <https://www.openmodels.info/>`__.  An interface for searching 
-*public rivt files* on *GitHub* is :ref:`here <search-interface>`. 
-
-*rivt* is distributed under the
-`MIT open source license <https://opensource.org/license/mit>`__. 
-(see:ref:`Licenses`).
+------------------------------------------------
 
 .. _rivt-api:
 
-**[3]** API
+**[2]** API
 ------------------------------------------------------------------------------- 
-
-The *rivt API* includes :ref:`API methods <API methods>`, 
-:ref:`markup <Line Tags Summary>` and structured 
-:ref:`folders and files <file-folder>`.
 
 The API is designed to be:
 
@@ -78,7 +53,7 @@ The API is designed to be:
 - extensible 
     *rivtlib* is written in Python with direct access to the large 
     library of Python packages and functions. Python scripts and external 
-    programs can be integrated into a *rivt doc*.
+    programs can be integrated into a *rivt doc* throught the Run and Tools APIs.
 
 - versatile 
     A *rivt file* produces a text, HTML or PDF *doc* from the same file. 
@@ -87,23 +62,25 @@ The API is designed to be:
     reports. *rivt* can be run within a variety of IDEs.
 
 - efficient
-    The file and folder settings produce clear, organized documents with 
-    default settings. Settings may be customized via *conf.py* and *yaml* files.
+    The file and folder organization is intuitive and it produces clear, organized 
+    documents with default settings. Settings may be customized via *conf.py* 
+    and *yaml* files. A *rivt doc* can be generated with a 
+    single file or, using the same folder structure extendec to a large report
+    involving  hundreds of files.
 
 The API methods are listed in the table below, where (rS) is a triple quoted 
 :term:`rivt string` argument.
 
-================= =============== ==============================================
+================= =============== ========================================
 API Function         Name             Purpose
-================= =============== ==============================================
-**rv.R** (rS)         Run          Run external programs
-**rv.I** (rS)         Insert       Insert static sources 
-**rv.V** (rS)         Values       Calculate values
-**rv.T** (rS)         Text         Process scripts and text blocks
-**rv.D** (rS)         Doc          Publish docs 
-**rv.S** (rS)         Skip         Skip section 
-**rv.X** ()           Exit         Exit rivt file
-================= =============== ==============================================
+================= =============== ========================================
+**rv.R** (rS)        Run           Run Python scripts and markup
+**rv.I** (rS)        Insert        Insert static sources 
+**rv.V** (rS)        Values        Calculate values
+**rv.T** (rS)        Tools         Execute shell scripts and programs
+**rv.D** (rS)        Doc           Publish docs 
+**rv.S; X** (rS)     Skip; Exit    Editing - Skip section or exit program 
+================= =============== ========================================
 
 An API function starts in the first column and takes a triple quoted
 :term:`rivt string` argument containing a *header and content substring*.
@@ -112,52 +89,15 @@ followed by a :term:`content substring` indented 4 spaces
 for readability and section folding. See :ref:`here <rivt-header>` for 
 *rivt string* details.
 
+The *rivt API* also provides scope for :ref:`rivt markup <rivt-markup>` 
 
-.. _API methods:
+---------------------------------------------------
 
-**[1]** API methods
---------------------------------------------------------------------- 
 
-*rivt* has seven *API methods*. The name *rivt* is an acronym taken from 
-four functions that process content. The remaining functions are used for
-document generation and debugging.
+.. _rivt-settings:
 
-.. raw:: html
-
-    <b>Content APIs</b>
-    <ol style="border: 2px; 
-            border-color: #49b2c3; 
-            border-style: solid; 
-            padding: 2em;
-            margin: 2em">
-        <li><b>[R]un</b> Runs Python scripts and markup.</li>
-        <li><b>[I]nsert</b> Adds static tables, images and equations.</li>
-        <li><b>[V]alues</b> Evaluates equations and functions.</li>
-        <li><b>[T]ools</b> Executes shell scripts and external programs.</li>
-    </ol>
-
-    <br>
-
-    <b>Publish APIs</b>
-    <ol style="border: 2px; 
-            border-color: #49b2c3; 
-            border-style: solid; 
-            padding: 2em;
-            margin: 2em">
-        <li><b>[D]oc</b> specifies the <i>doc</i> type and style.</li>
-        <li><b>[S]kip, e[X]it</b> can be used for interactive debugging and comments.</li>
-    </ol>
-
-================ =============== ================================================
-API Function         Name             Purpose
-================ =============== ================================================
-**rv.R** (rS)         Run            Run external binary programs
-**rv.I** (rS)         Insert         Insert static sources 
-**rv.V** (rS)         Values         Calculate values
-**rv.T** (rS)         Tools          Process text scripts
-**rv.D** (rS)         Doc            Publish docs 
-**rv.S,X** (rS)     Skip, Exit       Skip section, exit (comments, debugging)
-================ =============== ================================================
+**[3]** File Settings
+----------------------------------
 
 There are several settings that a apply to the entire rivt file. 
 These are specified in the *comment settings* immediately following the
@@ -191,10 +131,9 @@ the *rivt Profile* is installed in VSCode.
 
 ------------------------------------------------
 
-
 .. _rivt-header:
 
-**[2]** rivt string Header
+**[4]** String Header
 ----------------------------------
 
 Individual *API methods* define sections.  Each :doc:`API function <rvA01-start>` 
@@ -294,14 +233,16 @@ For the rv.T method the type settings are:
  #. **mermaid** - Mermaid diagram (requires mermaid installation)
  #. **latex** - LaTeX (requires LaTeX installation)
 
+------------------------------------------------
+
 .. _rivt-content:
 
-**[3]** rivt String Content
+**[5]** String Content
 ---------------------------------
 
 The :term:`content substring` is indented four spaces for legibility and 
-code folding. It includes :doc:`line tags<rvB03-linetags>`, 
-:doc:`block tags<rvB04-blocktags>` and  :doc:`commands<rvB05-commands>` 
+code folding. It includes :ref:`line tags <line summary>`, 
+:doc:`block tags<rvB04-blocktags>` and  :ref:`commands <command-summary>` 
 along with  text.
 
 .. code-block:: python
@@ -323,130 +264,16 @@ surrounding words with * or ** will format a word as italic or bold.
 In addition block tags in the *Tools function* (rv.R) directly supports
 processing HTML, LaTeX and reStructuredText scripts.
 
--------------------------------------------------
-
-.. _markup:
-
-**[3]** Tags and Commands
-----------------------------
-
-
-:doc:`Line Tags <rvB03-linetags>`
-
-    A :term:`line tag` formats a line of text and is denoted with a single
-    **_[LETTER]**, placed at or near the end of the line, depending on the tag.
-
-:doc:`Block Tags <rvB04-blocktags>`
-
-    A :term:`block tag` formats a block of text and begins with
-    **_[[TAGNAME]]** and terminates with **_[[END]]**.
-
-:doc:`Commands <rvB05-commands>`
-
-    *rivt commands* read and write external files. They typically start in the
-    first column with a vertical bar ( | ) followed by the command name, file
-    path, and parameters.
-
-    The exceptions are the definition (**==:**), assignment (**<=:**), 
-    function (**:=:**) and compare (**<>**) commands that are used to 
-    define, assign and compare values.
-
-    .. code-block:: bash  
-        
-        | COMMAND | relative path | parameters
-
-    File paths are specified relative to the *rivt root folder*. The *rivt
-    report* folder structure is described :ref:`here<rivt-folders>`.
-
-    If the path is ommitted the default path for each command is applied. If
-    the *singledoc* parameter is set, the *resource files* and *docs* are
-    stored in the *rivt root folder*.
-
-Tag and Command syntax for each API type is defined and described 
-using the following format:
-
-.. raw:: html
-
-    <p style="border-width:2px; border-style:solid; 
-    border-color:#49b2c3;padding: 1em;">
-
-    <b>Markup Key<br>
-    <br>
-    _[TAG] or | COMMAND |</b><br>
-    <br>
-    Description<br>
-    <br>
-    <pre>
-        Syntax:
-            _[TAG] or | COMMAND | syntax
-
-        Example:
-            This is a sentence. _[C]
-    </pre> 
-    </p>
-
-
-------------------------------------
-
-
-**[2]** Docs
--------------------------------------------------------------------------------
-
-
-.. image:: _static/img/process2.png
-    :class: dark-light
-    :width: 75%
-    :align: center
-    :alt: rivt flow chart 
-
-.. rst-class:: center
-
-    **rivt Doc Processing**
-
-Each :term:`rivt file` outputs a corresponding :term:`doc` with the format
-specified in | PUBLISH | command of the *rv.D()* API. A rivt file number has the
-form:
-
-.. code-block:: text
-
-    rvAnn-filename.py
-
-where rvAnn is a required file number prefix with A an alphanumeric character and nn a two
-digit non-negative integer. Corresponding rivt docs are output as:
-
-.. code-block:: text
-
-    rvAnn-filename.txt, pdf or html
-
-A *rivt report* is organized using the *file numbers*. The file numbers are
-used to organize reports into divisions and subdivisions. Each *rivt file* or
-*doc* is a report subdivision. If the *rivt filenames* are:
-
-.. code-block:: bash
-
-    rvA01-filename.py
-    rv105-filename.py
-    rv212-filename.py  
-
-the corresponding *doc numbers* in a report would be: 
-
-- A.1 (division A, subdivision 1)
-- 1.5 (division 1, subdivision 5)
-- 2.12 (division 2, subdivision 12)
-
---------------------------------
-
-
 
 .. toctree::
     :maxdepth: 2
     :hidden:
 
-    rvB02-apiscope.rst
+    rvB02-markup.rst
     rvB03-linetags.rst
     rvB04-blocktags.rst
-    rvB05-commands.rst    
-    rvB06-assign.rst    
+    rvB05-assigntags.rst    
+    rvB06-commands.rst    
 
 
 

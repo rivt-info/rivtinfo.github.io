@@ -53,8 +53,10 @@ It runs in a portable desktop environment and in the cloud . The project include
 .. _rivtlib: https://github.com/rivtlib-dev/rivtlib
 
 The :ref:`motivation <rvmotivation>` to write *rivt* developed over many years,
-as the need for a program that made it easy to share and reuse live engineering
-documents only continued to increase.
+as the need for a program that supported broad sharing live engineering documents 
+increased. *rivtlib* and *rivtStudio* are distributed under the
+`MIT open source license <https://opensource.org/license/mit>`__. 
+(see:ref:`Licenses`).
 
 
 .. raw:: html

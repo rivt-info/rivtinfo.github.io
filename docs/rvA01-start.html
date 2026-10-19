@@ -406,18 +406,15 @@ text, HTML and PDF document).The <em>rivt</em> folder structure provides a repli
 format for organizing a wide variety of file types. Groups of <em>docs</em> can form a
 complete, structured <em>rivt report</em>.</p>
 <p>This <a class="reference internal" href="rvA02-tutor.html#rivt-tutor"><span class="std std-ref">tutorial</span></a> provides examples of a
-<a class="reference internal" href="rvA03-exfile.html#example-file"><span class="std std-ref">rivt file</span></a> and associated <a class="reference internal" href="rvA04-txtdoc.html#text-doc"><span class="std std-ref">text</span></a>,
+<a class="reference internal" href="rvA03-exfile.html#example-file"><span class="std std-ref">rivt file</span></a> and <a class="reference internal" href="rvA04-txtdoc.html#text-doc"><span class="std std-ref">text</span></a>,
 <a class="reference internal" href="rvA06-pdfdoc.html#pdf-doc"><span class="std std-ref">PDF</span></a>, and <a class="reference internal" href="rvA05-htmldoc.html#html-doc"><span class="std std-ref">HTML</span></a> <em>docs</em>.</p>
 <p>To get started with running examples see <a class="reference internal" href="#rivt-start"><span class="std std-ref">install</span></a>. For <em>rivt
 with AI</em> see <a class="reference internal" href="rvE01-aiintro.html#rivt-context"><span class="std std-ref">here</span></a>.</p>
 <p><em>rivt files and reports</em> may be shared and distributed through any cloud
 storage service. Examples are available on <em>Google Drive</em> at
-<a class="reference external" href="https://www.openmodels.info/models" rel="noreferrer" target="_blank">openmodels.info</a>. If collaboration and
-version control are needed <a class="reference external" href="https://github.com/" rel="noreferrer" target="_blank">GitHub</a> may be used for
-development and distribution. <em>rivt files and reports</em> are organized in top
-level folders (<a class="reference internal" href="rvC03-folders.html#rivt-folders"><span class="std std-ref">rivt project</span></a> or <a class="reference internal" href="rvC03-folders.html#rivt-books"><span class="std std-ref">rivtbook</span></a>)
-which work well as <em>GitHub</em> repositories. <em>rivt</em> also generates a <em>GitHub</em>
-README file from a <em>rivt report</em>. A convenient interface for searching public
+<a class="reference external" href="https://www.openmodels.info" rel="noreferrer" target="_blank">openmodels.info</a>.  <em>rivt reports</em> and
+<em>rivt handbooks</em> are organized in top level <a class="reference internal" href="rvC03-folders.html#rivt-folders"><span class="std std-ref">project folders</span></a>.
+A convenient interface for searching public
 <em>rivt</em> READMEs is <a class="reference internal" href="rvD03-distribshare.html#search-interface"><span class="std std-ref">here</span></a>.</p>
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="id2" role="doc-footnote">
@@ -429,31 +426,56 @@ sections to a <em>public rivt report folder</em> for open-source distribution.</
 </section>
 <section id="motivation">
 <span id="rvmotivation"></span><h1><strong>[2]</strong> Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h1>
-<p>Reuse of engineering documents has always been a challenge because engineering
-documents are complex and apparently commercial software goals do not align
-with this goal.</p>
-<p>Widely used text and image oriented software is generally not sufficient
-because of the additional complexity of engineering documents. They may include
-text, images, tables, calculations, active models and computer code. They are
-also dynamic, and are frequently updated and recalculated by others as
+<p>Broadly sharing engineering documents has been a challenge because they are
+complex and because commercial software objectives do not align with this goal.
+They may include text, images, tables, calculations, active models and computer
+code. They are also dynamic and are frequently updated and recalculated as
 project designs evolve and progress.</p>
-<p>The desire to reuse engineering documents is a matter of simple efficiency. Most
-engineering calculations are not unique. They may be organized in different ways
-with different inputs, but the basic equations and methods are shared across
-many projects and evolve slowly. The commercial market
-response has been to develop incompatible,
-siloed programs with a number of barriers to sharing and reuse that include:</p>
+<p>The need for reuse of engineering documents is a matter of improving efficiency
+and making more time for independent and creative thought. Most engineering
+calculations are not fundamentally unique. The basic equations and methods are
+shared across many projects. However they are always organized differently and
+have different inputs. The commercial market response to this need has been to
+develop a number of siloed programs with barriers to sharing and reuse
+including:</p>
 <ul class="simple">
-<li><p>incompatible documents across programs</p></li>
+<li><p>incompatible documents across different programs</p></li>
 <li><p>costly software updates that are backward incompatible</p></li>
 <li><p>software limited to specific platforms</p></li>
 <li><p>limited version control</p></li>
 <li><p>limited report generation</p></li>
 <li><p>limited collaboration</p></li>
 </ul>
-<p>The table below summarizes and compares limitations between specific programs
+<p><em>rivt</em> produces organized, formatted engineering documents from active
+calculation files that can be shared anywhere. The primary use cases for <em>rivt</em>
+are:</p>
+<ol class="upperalpha simple">
+<li><p>producing reusable engineering documents that are easier to write, edit and
+format than LaTeX, Excel, or Word.</p></li>
+<li><p>producing documents with source files that need to be partitioned into public
+and private parts prior to sharing.</p></li>
+<li><p>Using Python and AI tools to write engineering documents</p></li>
+<li><p>Functioning as a front and back end for external software.</p></li>
+</ol>
+<p>Engineering documents include:</p>
+<ol class="arabic simple">
+<li><p>internal communications</p></li>
+<li><p>research documentation</p></li>
+<li><p>government permits</p></li>
+<li><p>technical reports</p></li>
+<li><p>funding applications</p></li>
+<li><p>teaching and presentation materials</p></li>
+<li><p>homework</p></li>
+</ol>
+<p>For documents with highly specific format requirements including journal
+articles and books and that do not need live recalculation,
+<a class="reference external" href="https://quarto.org/" rel="noreferrer" target="_blank">Quarto</a> is likely a better fit. For interactive calculation
+documents that do not need organized reports or partitioning into private and
+public sections, <a class="reference external" href="https://jupyter.org/" rel="noreferrer" target="_blank">Jupyter Notebooks</a> is likely a better
+tool.</p>
+<p>Finally, the table below summarizes and compares limitations between specific programs
 that <em>rivt</em> is designed to complement or replace.</p>
-<p class="center" id="use-case"><strong>Software Comparison (commercial programs in italics)</strong></p>
+<p class="center"><strong>Software Comparison (commercial programs in italics)</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Program</p></th>
@@ -575,7 +597,7 @@ that <em>rivt</em> is designed to complement or replace.</p>
 </aside>
 <aside class="footnote brackets" id="id15" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">5</a><span class="fn-bracket">]</span></span>
-<p>Syntax control of private and public sections.</p>
+<p>Integrated syntax control of private/public files.</p>
 </aside>
 <aside class="footnote brackets" id="id16" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id7">6</a><span class="fn-bracket">]</span></span>
@@ -598,44 +620,33 @@ that <em>rivt</em> is designed to complement or replace.</p>
 <p>Text, PDF, and HTML documents from the same input file.</p>
 </aside>
 </aside>
-<p><em>rivt</em> produces organized, formatted engineering documents from active
-calculation files using reasonable defaults. Use cases are listed
-<a class="reference internal" href="#use-case"><span class="std std-ref">here</span></a>. A brief discussion of current engineering document tools
-and their  strengths and weaknesses relative to <em>rivt</em> objectives is
-<a class="reference internal" href="#rvmotivation"><span class="std std-ref">here</span></a>. For documents with specific format requirements
-including journal articles and books and that do not need live recalculation,
-<a class="reference external" href="https://quarto.org/" rel="noreferrer" target="_blank">Quarto</a> is likely a better fit. For interactive
-calculation documents that do not need an organized published report,
-<a class="reference external" href="https://jupyter.org/" rel="noreferrer" target="_blank">Jupyter Notebooks</a> is likely a better tool.</p>
 </section>
 <section id="run-rivt">
-<span id="id21"></span><h1><strong>[2]</strong> Run rivt<a class="headerlink" href="#run-rivt" title="Link to this heading">#</a></h1>
+<span id="id21"></span><h1><strong>[3]</strong> Run rivt<a class="headerlink" href="#run-rivt" title="Link to this heading">#</a></h1>
 <p>This section covers three ways to run <em>rivt</em>.</p>
 <ol class="arabic simple">
 <li><p>For most users the best way to get started is to download
 <em>rivtStudio</em>  (~1 GB zipped, ~2 GB expanded).
-For further details see <a class="reference internal" href="rvD01-rivtstudio.html#rivt-code"><span class="std std-ref">rivt-code</span></a>.</p></li>
-<li><p>For users with a <a class="reference external" href="https://github.com" rel="noreferrer" target="_blank">GitHub</a> account or limitations
-on running local software, the best way to get started is to fork and run
-<a class="reference internal" href="#rivt-codespace"><span class="std std-ref">rivt-codespace</span></a> in a browser.</p></li>
-<li><p>For users familiar with Python, <em>rivt</em> may be installed at the system level
-or in an isolated environment using <em>uv</em>. Further details are
-<a class="reference internal" href="#rivt-sys"><span class="std std-ref">here</span></a>.</p></li>
+For further details see <a class="reference internal" href="#rivt-studio"><span class="std std-ref">here</span></a>.</p></li>
+<li><p>Running <em>rivtStudio</em> in the browser connected to a container in the cloud.
+Further details are <a class="reference internal" href="#rivt-remote"><span class="std std-ref">here</span></a>.</p></li>
+<li><p>For users familiar with Python, <em>rivtlib</em> may be installed at the system level
+using <em>pip</em> or  <em>uv</em>. Further details are <a class="reference internal" href="#rivt-sys"><span class="std std-ref">here</span></a>.</p></li>
 </ol>
 <p><em>rivt</em> may be edited in a simple text processor and run from the command line
 but efficient editing and compiling is typically done in an <a class="reference internal" href="rvF02-terms.html#term-IDE"><span class="xref std std-term">IDE</span></a>. Any IDE
 may be used but <em>VSCode</em> with extensions is supported and documented.
 A typical <strong>VSCode IDE</strong> layout for editing a <em>rivt file</em> is shown below.</p>
-<figure class="align-center" id="id25">
+<figure class="align-center" id="id24">
 <a class="dark-light reference internal image-reference" href="_images/vscode3a.png"><img alt="ide layout" class="dark-light" src="_images/vscode3a.png" style="width: 95%;" />
 </a>
 <figcaption>
-<p><span class="caption-text">rivt files and docs in <strong>VSCode</strong> (click on image to enlarge)</span><a class="headerlink" href="#id25" title="Link to this image">#</a></p>
+<p><span class="caption-text">rivt files and docs in <strong>VSCode</strong> (click on image to enlarge)</span><a class="headerlink" href="#id24" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The <a class="reference internal" href="rvC01-publish.html#file-folder"><span class="std std-ref">rivt file</span></a> is in the center editing panel[blue], the
+<p>The <a class="reference internal" href="rvC01-publish.html#rivt-files"><span class="std std-ref">rivt file</span></a> is in the center editing panel[blue], the
 <a class="reference internal" href="rvC01-publish.html#rivt-docs"><span class="std std-ref">text doc</span></a> output is in the right panel[brown] and the
 <em>file explorer</em> is the far left panel [green]. Extension buttoms are
 located on the top and bottom status bars [red]. Text, PDF and HTML output
@@ -653,7 +664,7 @@ designed to gather and install multiple open source components from
 various sources.</p>
 </section>
 <section id="rivtstudio">
-<span id="rivt-studio"></span><h1><strong>[3]</strong> rivtStudio<a class="headerlink" href="#rivtstudio" title="Link to this heading">#</a></h1>
+<span id="rivt-studio"></span><h1><strong>[4]</strong> rivtStudio<a class="headerlink" href="#rivtstudio" title="Link to this heading">#</a></h1>
 <p>A <em>rivt-code</em> installation is recommended for Windows users interested in trying
 <em>rivt</em> <em>rivt-code</em> is a zip file that includes rivt, Python, VSCode and an
 example rivt file. The zipped file size is ~800 MB which unzips to about 2.2
@@ -682,7 +693,10 @@ navigation and running <em>rivt files</em>. They are listed in <a class="referen
 <hr class="docutils" />
 </section>
 <section id="rivtremote">
-<span id="rivt-codespace"></span><h1><strong>[3]</strong> rivtRemote<a class="headerlink" href="#rivtremote" title="Link to this heading">#</a></h1>
+<span id="rivt-remote"></span><h1><strong>[5]</strong> rivtRemote<a class="headerlink" href="#rivtremote" title="Link to this heading">#</a></h1>
+<p>For users with a <a class="reference external" href="https://github.com" rel="noreferrer" target="_blank">GitHub</a> account or limitations
+on running local software, the best way to get started is to fork and run
+<a class="reference internal" href="#rivt-remote"><span class="std std-ref">rivtRemote</span></a> in a browser.</p>
 <p><a class="reference external" href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">VSCode</a> is a customizable code editor that
 can be run locally or in the cloud. The cloud version of <em>VSCode</em> is referred
 to as a <a class="reference external" href="https://github.com/features/codespaces" rel="noreferrer" target="_blank">Codespace</a> . A
@@ -706,7 +720,7 @@ example files.</p>
 <hr class="docutils" />
 </section>
 <section id="rivt-system">
-<span id="rivt-sys"></span><h1><strong>[4]</strong> rivt system<a class="headerlink" href="#rivt-system" title="Link to this heading">#</a></h1>
+<span id="rivt-sys"></span><h1><strong>[6]</strong> rivt system<a class="headerlink" href="#rivt-system" title="Link to this heading">#</a></h1>
 <p><em>rivt</em> may be installed into a system level Python.</p>
 <aside class="topic">
 <p class="topic-title">Step 1. Install Python</p>
@@ -822,10 +836,10 @@ provides an effective environment for running rivt examples.</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>[1]</strong> Overview</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation"><strong>[2]</strong> Motivation</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#run-rivt"><strong>[2]</strong> Run rivt</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#rivtstudio"><strong>[3]</strong> rivtStudio</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#rivtremote"><strong>[3]</strong> rivtRemote</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-system"><strong>[4]</strong> rivt system</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#run-rivt"><strong>[3]</strong> Run rivt</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#rivtstudio"><strong>[4]</strong> rivtStudio</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#rivtremote"><strong>[5]</strong> rivtRemote</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-system"><strong>[6]</strong> rivt system</a></li>
 </ul>
 
   </nav></div>

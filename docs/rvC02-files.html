@@ -392,7 +392,30 @@
   <section id="c-2-rivt-files">
 <h1><strong>C.2 |</strong> rivt Files<a class="headerlink" href="#c-2-rivt-files" title="Link to this heading">#</a></h1>
 <section id="file-types">
-<h2><strong>[1]</strong> File Types<a class="headerlink" href="#file-types" title="Link to this heading">#</a></h2>
+<span id="id1"></span><h2><strong>[1]</strong> File Types<a class="headerlink" href="#file-types" title="Link to this heading">#</a></h2>
+<p>rivt formatting <em>tags</em> and file <em>commands</em> have an <a class="reference internal" href="rvB02-markup.html#markup-r"><span class="std std-ref">API scope</span></a>.
+The <em>Insert and Values APIs</em> have a fixed set fo tags and commands. The Run and
+Tools tags and command are extensible and function as a plugin-architecture.</p>
+<p><a class="reference external" href="https://pypi.org/project/rivtlib/" rel="noreferrer" target="_blank">rivtlib</a> is the Python library that
+compiles a <em>rivt file</em> to a text, PDF or HTML doc. A <em>rivt file</em> is a
+Python file (.py) that imports the <em>rivtlib</em> Python package and includes
+<em>rivt markup</em>. <em>rivt</em> dependencies are listed <cite>:ref:here &lt;vscode-settings&gt;</cite>.</p>
+<p>A <em>public rivt file</em> is a subset of a <em>rivt file</em>, made up of sections the
+author chooses to share under an <a class="reference external" href="https://opensource.org/licenses" rel="noreferrer" target="_blank">Open Source license</a>. <em>rivt</em> is designed to seamlessly extract
+public files, allowing the author discretion in choosing which file
+sections to make public.</p>
+<p>Groups of <em>rivt files</em> may be compiled and linked into a single
+<a class="reference internal" href="rvC03-folders.html#rivt-report"><span class="std std-ref">rivt report</span></a>. Collections of <em>rivt files</em> with related
+subject matter may be grouped together as a <a class="reference internal" href="rvC03-folders.html#rivt-books"><span class="std std-ref">rivtbook</span></a>.</p>
+<p><em>rivt files</em> are generally edited and run in an IDE. The lightweight
+<a class="reference external" href="https://pyzo.org/" rel="noreferrer" target="_blank">Pyzo</a> IDE is installed by rivtlib. The
+<a class="reference external" href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">VSCode IDE</a> is a full featured IDE
+with rivt profiles and extensions documented <a class="reference internal" href="rvD04-userman.html#vscode-settings"><span class="std std-ref">here</span></a>.
+<em>VSCode</em> is installed with the portable <a class="reference internal" href="rvD01-rivtstudio.html#rivt-code"><span class="std std-ref">rivt-code</span></a> installation.</p>
+<p><em>rivt file</em> examples are illustrated <a class="reference internal" href="rvA02-tutor.html#rivt-tutor"><span class="std std-ref">here</span></a>. Additional
+<em>rivt files</em> may be downloaded from <em>Google Drive</em> at
+<a class="reference external" href="https://www.openmodels.info/" rel="noreferrer" target="_blank">OpenModels.info</a>.  An interface for searching
+<em>public rivt files</em> on <em>GitHub</em> is <a class="reference internal" href="rvD03-distribshare.html#search-interface"><span class="std std-ref">here</span></a>.</p>
 <p><strong>rivt file</strong></p>
 <p>A <em>rivt file</em> provides the formatting instructions and content that generate
 <em>rivt docs</em>. Each <em>rivt file</em> has a <em>doc number</em> prefix that specifies the
@@ -404,6 +427,9 @@ number <em>ss</em>. For example:</p>
 rvB02-Beam-Loads.py
 </pre></div>
 </div>
+<p>project folders  or <a class="reference internal" href="rvC03-folders.html#rivt-books"><span class="std std-ref">rivtbook</span></a>
+which work well as <em>GitHub</em> repositories. <em>rivt</em> also generates a <em>GitHub</em>
+README file from a <em>rivt report</em>.</p>
 <p><strong>Author provided source file inputs</strong></p>
 <p><em>rivt</em> reads and writes file types including:</p>
 <div class="pst-scrollable-table-container"><table class="table">

@@ -1,12 +1,83 @@
-**B.2 |** API Scopes
+**B.2 |** Markup
 ==========================
+
+.. _rivt-markup:
+
+**[1]** Tags and Commands
+----------------------------
+
+In addition to a subset of *restructuredText* markup, *rivt* provides its own
+set of *tags* and *commands* scoped to the API methods. They are summarized in
+the following sections.
+
+:ref:`Line Tags <line summary>`
+
+    A :term:`line tag` formats a line of text and is denoted with a single
+    **_[LETTER]**, placed at or near the end of the line, depending on the tag.
+
+:ref:`Block Tags <block summary>`
+
+    A :term:`block tag` formats a block of text and begins with
+    **_[[TAGNAME]]** and terminates with **_[[END]]**.
+
+:ref:`Assignment Tags <assign-summary>`
+
+    The exceptions are the definition (**==:**), assignment (**<=:**), 
+    function (**:=:**) and compare (**<>**) commands that are used to 
+    define, assign and compare values.
+
+:ref:`Commands <command-summary>`
+
+    *rivt commands* read and write external files. They typically start in the
+    first column with a vertical bar ( | ) followed by the command name, file
+    path, and parameters.
+
+
+
+    .. code-block:: bash  
+        
+        | COMMAND | relative path | parameters
+
+    File paths are specified relative to the *rivt root folder*. The *rivt
+    report* folder structure is described :ref:`here<rivt-folders>`.
+
+    If the path is ommitted the default path for each command is applied. If
+    the *singledoc* parameter is set, the *resource files* and *docs* are
+    stored in the *rivt root folder*.
+
+Tag and Command syntax for each API type is defined and described 
+using the following format:
+
+.. raw:: html
+
+    <p style="border-width:2px; border-style:solid; 
+    border-color:#49b2c3;padding: 1em;">
+
+    <b>Markup Key<br>
+    <br>
+    _[TAG] or | COMMAND |</b><br>
+    <br>
+    Description<br>
+    <br>
+    <pre>
+        Syntax:
+            _[TAG] or | COMMAND | syntax
+
+        Example:
+            This is a sentence. _[C]
+    </pre> 
+    </p>
+
+
+------------------------------------
+
 
 .. _markup-R:
 
 **[1]** rv.R Markup
 ------------------------------------
 
-The *Run API*  executes shell commands. 
+The *Run API*  executes scripts commands. 
 
 ========================================= =====================
    Command                                    Description
