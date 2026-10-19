@@ -6,22 +6,34 @@
 **[1]** Summary
 --------------------------------------------------------------------------------
 
-This section covers three ways to run *rivt*.
+This section covers installation of *rivt* and running examples. The example
+*rivt files* and *docs* may be downloaded and modified. *rivt* files may be
+edited in a simple text processor and run from the command line but efficient
+editing and compiling is typically done in an :term:`IDE`. Any Python IDE may
+be used, but *VSCodium* with extensions is the IDE component used in
+*rivtStudio*.
+
+There are three ways to run *rivtlib*.
 
 #. For most users the best way to get started is to download
    *rivtStudio*  (~1 GB zipped, ~2 GB expanded). 
    For further details see :ref:`here <rivt-studio>`.
 
-#. Running *rivtStudio* in the browser connected to a container in the cloud.
-   Further details are :ref:`here <rivt-remote>`.
+#. For users familiar with Github or server containers rivtRemote may be run 
+   in the browser. Further details are :ref:`here <rivt-remote>`.
 
-#. For users familiar with Python, *rivtlib* may be installed at the system level
-   using *pip* or  *uv*. Further details are :ref:`here <rivt-sys>`.
+#. For users familiar with Python, *rivtlib* may also be installed at the 
+   system level using *pip* or  *uv*. Further details are :ref:`here <rivt-sys>`.
 
-*rivt* may be edited in a simple text processor and run from the command line 
-but efficient editing and compiling is typically done in an :term:`IDE`. Any IDE 
-may be used but *VSCode* with extensions is supported and documented. 
-A typical **VSCode IDE** layout for editing a *rivt file* is shown below.
+-------------------------------
+
+.. _rivt-studio:
+
+**[2]** rivtStudio
+-------------------------------------------------------------------------------- 
+
+A typical **rivtStudio** layout for editing a *rivt file* is shown
+below.
 
 .. figure::  _static/img/vscode3a.png
     :class: dark-light
@@ -33,29 +45,19 @@ A typical **VSCode IDE** layout for editing a *rivt file* is shown below.
 
 .. note::
 
-    The :ref:`rivt file <rivt-files>` is in the center editing panel[blue], the 
-    :ref:`text doc <rivt-docs>` output is in the right panel[brown] and the
-    *file explorer* is the far left panel [green]. Extension buttoms are
-    located on the top and bottom status bars [red]. Text, PDF and HTML output
-    files are accessed in the file explorer and displayed within panels.
-    Individual *rivt* sections are linked in the navigation panel and in the
-    text output for quick naviagation through the file. Panel locations may be
-    customized by the user. An example *rivt file* and *doc* are
-    :ref:`here <rivt-tutor>`.
-
--------------------------------
-
-
-This section covers installation of *rivt* and *rivt doc* examples. They are
-source software so you are free to download and modify the program as needed 
-(see :ref:`FAQ <Licenses>`). The open source software installation process is
-designed to gather and install multiple open source components from
-various sources. 
-
-.. _rivt-studio:
-
-**[2]** rivtStudio
--------------------------------------------------------------------------------- 
+    The :ref:`rivt file <rivt-files>` is in the center editing panel[blue] 
+    
+    The :ref:`text doc <rivt-docs>` output is in the right panel[brown] 
+    
+    The *file explorer* is the far left panel [green]. 
+    
+    Extension buttoms are located on the top and bottom status bars [red]. 
+    
+    Text, PDF and HTML output files are accessed in the file explorer and
+    displayed within panels. Individual *rivt* sections are linked in the
+    navigation panel and in the text output for quick naviagation through the
+    file. Panel locations may be customized by the user. An example *rivt file*
+    and *doc* are :ref:`here <rivt-tutor>`.
 
 A *rivt-code* installation is recommended for Windows users interested in trying
 *rivt* *rivt-code* is a zip file that includes rivt, Python, VSCode and an

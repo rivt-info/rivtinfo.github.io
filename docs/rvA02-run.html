@@ -397,20 +397,28 @@
 <h1><strong>A.2 |</strong> Run rivt<a class="headerlink" href="#a-2-run-rivt" title="Link to this heading">#</a></h1>
 <section id="summary">
 <span id="run-rivt"></span><h2><strong>[1]</strong> Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
-<p>This section covers three ways to run <em>rivt</em>.</p>
+<p>This section covers installation of <em>rivt</em> and running examples. The example
+<em>rivt files</em> and <em>docs</em> may be downloaded and modified. <em>rivt</em> files may be
+edited in a simple text processor and run from the command line but efficient
+editing and compiling is typically done in an <a class="reference internal" href="rvF02-terms.html#term-IDE"><span class="xref std std-term">IDE</span></a>. Any Python IDE may
+be used, but <em>VSCodium</em> with extensions is the IDE component used in
+<em>rivtStudio</em>.</p>
+<p>There are three ways to run <em>rivtlib</em>.</p>
 <ol class="arabic simple">
 <li><p>For most users the best way to get started is to download
 <em>rivtStudio</em>  (~1 GB zipped, ~2 GB expanded).
 For further details see <a class="reference internal" href="#rivt-studio"><span class="std std-ref">here</span></a>.</p></li>
-<li><p>Running <em>rivtStudio</em> in the browser connected to a container in the cloud.
-Further details are <a class="reference internal" href="#rivt-remote"><span class="std std-ref">here</span></a>.</p></li>
-<li><p>For users familiar with Python, <em>rivtlib</em> may be installed at the system level
-using <em>pip</em> or  <em>uv</em>. Further details are <a class="reference internal" href="#rivt-sys"><span class="std std-ref">here</span></a>.</p></li>
+<li><p>For users familiar with Github or server containers rivtRemote may be run
+in the browser. Further details are <a class="reference internal" href="#rivt-remote"><span class="std std-ref">here</span></a>.</p></li>
+<li><p>For users familiar with Python, <em>rivtlib</em> may also be installed at the
+system level using <em>pip</em> or  <em>uv</em>. Further details are <a class="reference internal" href="#rivt-sys"><span class="std std-ref">here</span></a>.</p></li>
 </ol>
-<p><em>rivt</em> may be edited in a simple text processor and run from the command line
-but efficient editing and compiling is typically done in an <a class="reference internal" href="rvF02-terms.html#term-IDE"><span class="xref std std-term">IDE</span></a>. Any IDE
-may be used but <em>VSCode</em> with extensions is supported and documented.
-A typical <strong>VSCode IDE</strong> layout for editing a <em>rivt file</em> is shown below.</p>
+<hr class="docutils" />
+</section>
+<section id="rivtstudio">
+<span id="rivt-studio"></span><h2><strong>[2]</strong> rivtStudio<a class="headerlink" href="#rivtstudio" title="Link to this heading">#</a></h2>
+<p>A typical <strong>rivtStudio</strong> layout for editing a <em>rivt file</em> is shown
+below.</p>
 <figure class="align-center" id="id2">
 <a class="dark-light reference internal image-reference" href="_images/vscode3a.png"><img alt="ide layout" class="dark-light" src="_images/vscode3a.png" style="width: 95%;" />
 </a>
@@ -420,25 +428,16 @@ A typical <strong>VSCode IDE</strong> layout for editing a <em>rivt file</em> is
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The <a class="reference internal" href="rvC01-publish.html#rivt-files"><span class="std std-ref">rivt file</span></a> is in the center editing panel[blue], the
-<a class="reference internal" href="rvC01-publish.html#rivt-docs"><span class="std std-ref">text doc</span></a> output is in the right panel[brown] and the
-<em>file explorer</em> is the far left panel [green]. Extension buttoms are
-located on the top and bottom status bars [red]. Text, PDF and HTML output
-files are accessed in the file explorer and displayed within panels.
-Individual <em>rivt</em> sections are linked in the navigation panel and in the
-text output for quick naviagation through the file. Panel locations may be
-customized by the user. An example <em>rivt file</em> and <em>doc</em> are
-<a class="reference internal" href="rvA03-tutor.html#rivt-tutor"><span class="std std-ref">here</span></a>.</p>
+<p>The <a class="reference internal" href="rvC01-publish.html#rivt-files"><span class="std std-ref">rivt file</span></a> is in the center editing panel[blue]</p>
+<p>The <a class="reference internal" href="rvC01-publish.html#rivt-docs"><span class="std std-ref">text doc</span></a> output is in the right panel[brown]</p>
+<p>The <em>file explorer</em> is the far left panel [green].</p>
+<p>Extension buttoms are located on the top and bottom status bars [red].</p>
+<p>Text, PDF and HTML output files are accessed in the file explorer and
+displayed within panels. Individual <em>rivt</em> sections are linked in the
+navigation panel and in the text output for quick naviagation through the
+file. Panel locations may be customized by the user. An example <em>rivt file</em>
+and <em>doc</em> are <a class="reference internal" href="rvA03-tutor.html#rivt-tutor"><span class="std std-ref">here</span></a>.</p>
 </div>
-<hr class="docutils" />
-<p>This section covers installation of <em>rivt</em> and <em>rivt doc</em> examples. They are
-source software so you are free to download and modify the program as needed
-(see <a class="reference internal" href="rvF03-faq.html#licenses"><span class="std std-ref">FAQ</span></a>). The open source software installation process is
-designed to gather and install multiple open source components from
-various sources.</p>
-</section>
-<section id="rivtstudio">
-<span id="rivt-studio"></span><h2><strong>[2]</strong> rivtStudio<a class="headerlink" href="#rivtstudio" title="Link to this heading">#</a></h2>
 <p>A <em>rivt-code</em> installation is recommended for Windows users interested in trying
 <em>rivt</em> <em>rivt-code</em> is a zip file that includes rivt, Python, VSCode and an
 example rivt file. The zipped file size is ~800 MB which unzips to about 2.2
