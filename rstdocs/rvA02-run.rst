@@ -5,7 +5,7 @@
 
 .. _run-rivt:
 
-**[1]** Overview
+**[1]** Start
 --------------------------------------------------------------------------------
 
 This section covers three ways to run *rivt*.
