@@ -33,7 +33,7 @@ Home
 .. |open_logo| image:: _static/img/openmod2.png
    :width: 70px
 
-.. _git_logo: image:: _static/img/githubsrch.png
+.. |git_logo| image:: _static/img/githubsrch.png
    :width: 70px
 
 
