@@ -43,21 +43,20 @@ below.
 
     rivt files and docs in **VSCode** (click on image to enlarge)
 
-.. note::
 
-    The :ref:`rivt file <rivt-files>` is in the center editing panel[blue] 
-    
-    The :ref:`text doc <rivt-docs>` output is in the right panel[brown] 
-    
-    The *file explorer* is the far left panel [green]. 
-    
-    Extension buttoms are located on the top and bottom status bars [red]. 
-    
-    Text, PDF and HTML output files are accessed in the file explorer and
-    displayed within panels. Individual *rivt* sections are linked in the
-    navigation panel and in the text output for quick naviagation through the
-    file. Panel locations may be customized by the user. An example *rivt file*
-    and *doc* are :ref:`here <rivt-tutor>`.
+- The :ref:`rivt file <rivt-files>` is in the center editing panel[blue] 
+
+- The :ref:`text doc <rivt-docs>` output is in the right panel[brown] 
+
+- The *file explorer* is the far left panel [green]. 
+
+- Extension buttoms are located on the top and bottom status bars [red]. 
+
+Text, PDF and HTML output files are accessed in the file explorer and
+displayed within panels. Individual *rivt* sections are linked in the
+navigation panel and in the text output for quick naviagation through the
+file. Panel locations may be customized by the user. An example *rivt file*
+and *doc* are :ref:`here <rivt-tutor>`.
 
 A *rivt-code* installation is recommended for Windows users interested in trying
 *rivt* *rivt-code* is a zip file that includes rivt, Python, VSCode and an
