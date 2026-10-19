@@ -3,7 +3,7 @@
 
 .. _rivt-overview:
 
-**[1]** Overview
+**[1]** Start
 -------------------------------------------------------------------------------- 
 
 *rivt* is an open source project for writing, sharing and reusing engineering

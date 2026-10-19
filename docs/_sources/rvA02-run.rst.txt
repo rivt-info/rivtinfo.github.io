@@ -1,9 +1,9 @@
-**A.2 |** Run
+**A.2 |** Run rivt
 =========================
 
 .. _run-rivt:
 
-**[1]** Start
+**[1]** Summary
 --------------------------------------------------------------------------------
 
 This section covers three ways to run *rivt*.
@@ -54,7 +54,7 @@ various sources.
 
 .. _rivt-studio:
 
-**[4]** rivtStudio
+**[2]** rivtStudio
 -------------------------------------------------------------------------------- 
 
 A *rivt-code* installation is recommended for Windows users interested in trying
@@ -95,7 +95,7 @@ navigation and running *rivt files*. They are listed in :ref:`vscode settings
 
 .. _rivt-remote:
 
-**[5]** rivtRemote
+**[3]** rivtRemote
 -------------------------------------------------------------------------------- 
 
 For users with a `GitHub <https://github.com>`_ account or limitations
@@ -136,7 +136,7 @@ Steps for running rivt-codespace are provided in the README `here
 
 .. _rivt-sys:
 
-**[6]** rivt System
+**[4]** rivt System
 --------------------------------------------------------------------------------
 
 *rivt* may be installed into a system level Python. 
