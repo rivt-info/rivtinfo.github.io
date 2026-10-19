@@ -44,13 +44,13 @@ below.
     rivt files and docs in **VSCode** (click on image to enlarge)
 
 
-- The :ref:`rivt file <rivt-files>` is in the center editing panel[blue] 
+- The :ref:`rivt file <example-file>` is in the center editing panel[blue] 
 
-- The :ref:`text doc <rivt-docs>` output is in the right panel[brown] 
+- The :ref:`text doc <text-doc>` output is in the right panel[brown] 
 
 - The *file explorer* is the far left panel [green]. 
 
-- Extension buttoms are located on the top and bottom status bars [red]. 
+- Extension buttons are located on the top and bottom status bars [red]. 
 
 Text, PDF and HTML output files are accessed in the file explorer and
 displayed within panels. Individual *rivt* sections are linked in the
