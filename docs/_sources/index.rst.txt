@@ -57,9 +57,9 @@ documents.
    +---------------+-----------------------------------------------------------------------------------+
    | |remote_logo| | `rivtRemote`_ - containerized *rivtStudio* for servers and browsers               |
    +---------------+-----------------------------------------------------------------------------------+
-   |  |git_logo|   |  :ref:`GitHub search <search-interface>` - find public rivt projects on GitHub    |
+   |  |git_logo|   |  :ref:`GitHub search <search-interface>` - find public *rivt* projects on GitHub  |
    +---------------+-----------------------------------------------------------------------------------+
-   |  |open_logo|  | `openModels`_ - online database of shared models and documents including rivt     |
+   |  |open_logo|  | `openModels`_ - online database of shared models and documents including *rivt*   |
    +---------------+-----------------------------------------------------------------------------------+
 
 .. _openModels: https://openmodels.info
@@ -72,7 +72,7 @@ documents.
 
 *rivtlib* and *rivtStudio* are distributed under the 
 `MIT open source license <https://opensource.org/license/mit>`_ 
-( see :ref:`FAQ <Licenses>` ). Email contact for 
+( see :ref:`FAQ <Licenses>` ). Email for 
 :email:`questions and comments. <openmodels.info@gmail.com>`
 
 .. raw:: html

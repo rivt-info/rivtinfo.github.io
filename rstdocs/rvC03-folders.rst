@@ -93,24 +93,23 @@ file* names and prefixes are shown in brackets.
         ├── .vscode/                      optional VSCode settings
         ├── .git                          optional git repository
         ├── README.txt                    rivt-generated text report                  
-        ├── [_rvpublic-reptlabel]/          rivt-generated public files        
-        ├── [rvreport-reptlabel]/           report folder               
-            ├── [rivt-report]-1.py            report generating script
+        ├── [_rvpublic-]reptlabel/        rivt-generated public files        
+        ├── [rvreport-]reptlabel/         report folder               
+            ├── [rivtreport]-1.py            report generating script
             ├── [rv101-]filename1.py          rivt file
             ├── [rv102-]filename2.py          rivt file       
             ├── [rv201-]filename3.py          rivt file          
             ├── [rvsrc]/                      author provided files and folders        
-            ├── [rv_stor]/                    rivt-generated source files
+            ├── [_rvstor]/                    rivt-generated source files
             ├── [_published]/                 rivt-published docs and reports
             └── [_rstdocs]/                   rivt-generated rst files
-         ├── [rivtbk-]book-label/          handbook folder              
+         ├─ [rvhandbk-]booklabel/         handbook folder              
                 ├── [_rstdocs]/               rivt-generated rst files
                 ├── [_pdfdocs]/               pdf docs and rivtbook report
-                ├── [_rv_stor]/               rivt-generated source files
+                ├── [_rvstor]/                rivt-generated source files
                 ├── [bk1-]chapter name/       chapter folder                 
                 ├── [bk2-]chapter name/       chapter folder 
                 └── [bk3-]chapter name        chapter folder
-
 
 .. _report-folders:
 
@@ -209,13 +208,13 @@ steps. To insert a *rivtbook subdivision* into a *rivt doc or report*:
         ├── .vscode/                      optional VSCode settings
         ├── .git                          optional git repository
         ├── README.txt                    rivt-generated text report                  
-        ├── [_rvpublic-reptname]/          rivt-generated public files
+        ├── [_rvpublic-reptname]/         rivt-generated public files
             ├── rvsrc/                        author source files          
             ├── rv-101-filename1.py           public rivt file
             ├── rv-102-filename2.py           public rivt file       
             ├── rv-201-filename3.py           public rivt file          
              ...
-        ├── [rvreport-reptname]/              report folder               
+        ├── [rvreport-reptname]/          report folder               
             ├── [rivt-report]-1.py            report generating script
             ├── [rv101-]filename1.py          rivt file
             ├── [rv102-]filename2.py          rivt file       
@@ -229,15 +228,15 @@ steps. To insert a *rivtbook subdivision* into a *rivt doc or report*:
                 ├── [img]/                          images              
                     ├── favicon.png    
                     ├── covlogo1.png    
-                    └── runlogo1.png                   
+                    ├── runlogo1.png
+                    ├── fig1.png
+                    └── fig2.jpg                   
                 ├── [scripts]/                      scripts
                     ├── beam1.py    
                     └── text.rst                                                                
                 ├── tools/                          OS shell commands               
-                    └── opensees.sh                        
-                ├── fig1.png
-                └── fig2.jpg                  
-            ├── [rv_stor]/                    rivt-generated source files
+                    └── opensees.sh                                          
+            ├── [_rvstor]/                   rivt-generated source files
                 ├── [logs]/                          log files
                     ├── rv101-log.txt
                     └── rv102-log.txt
@@ -250,7 +249,7 @@ steps. To insert a *rivtbook subdivision* into a *rivt doc or report*:
                 ├── output.dat
                 ├── v101-2.csv
                 └── v102-3.csv         
-            ├── [_published]/                 rivt-published docs and reports
+            ├── [_published]/               rivt-published docs and reports
                 ├── [docs]/                          html docs
                     ├── html auxiliary folders    
                     ├── index.html
@@ -271,60 +270,60 @@ steps. To insert a *rivtbook subdivision* into a *rivt doc or report*:
                     ├── rv102-filename1.txt             
                     ├── rv201-filename3.txt 
                         ...
-            └── [_rstdocs]/                     rivt-generated rst files
+            └── [_rstdocs]/                    rivt-generated rst files
                 ├── _downloads/                    
                 ├── _static/                                                       
                 ├── rv101-filename1.rst            
                 ├── rv102-filename2.rst                          
                 ├── rv201-filename3.rst          
                     ...
-    [rivtbk-]book-Label/             rivtbook report folder              
-        ├── [_rstdocs]/                   rivt-generated rst files
-            ├── _downloads/                    
-            ├── _static/                                                       
-            ├── rv101-filename1.rst            
-            ├── rv102-filename2.rst                          
-            ├── rv201-filename3.rst          
-                ...
-        ├── [_pdfdocs]/                   pdf docs and rivtbook report
-            ├── pdf auxiliary folders     
-            ├── report-title.pdf
-            ├── rv101-filename1.pdf             
-            ├── rv102-filename1.pdf             
-            ├── rv201-filename3.pdf
-        └── [_rv_stor]/                    rivt-generated source files
-            ├── [logs]/                          log files
-                ├── rv101-log.txt
-                └── rv102-log.txt
-            ├── [sect]/                          sections not printed                    
-                ├── rv202-5d.txt  
-                ├── rv103-4t.txt                         
-                └── rv301-2r.txt               
-            ├── [temp]/                          temp files
-                └── rv101-label3.tex
-            ├── [vals]/                          values files
-                ├── v101-2.csv
-                └── v102-3.csv         
-            └── output.dat 
-        ├── [bk1-]folder name              rivtbook chapter folder
-            ├── [rv001-]filename1.py          rivt file       
-            ├── [downloads]/                    files to download      
-                └── conc-vals.txt 
-            ├── [img]/                          page layout images              
-                ├── favicon.png    
-                ├── covlogo1.png    
-                ├── runlogo1.png
-                └── fig1.png
-            ├── [data]/                          tables and values    
-                └── steel-vals.csv              
-                ├── v101-2.csv
-                └── v102-3.csv         
-            ├── [scripts]/                       scripts
-                ├── beam1.py    
-                └── text.rst  
-            └── tools/                           OS shell commands               
-                └── opensees.sh                           
-        ├── [bk2-]folder name             rivtbook chapter folder
-                ...        
-        └── [bk3-]folder name             rivtbook chapter folder
-                ...
+        ├── [rvhandbk-]book-Label/             rivt handbook folder              
+            ├── [_rstdocs]/                        rivt-generated rst files
+                ├── _downloads/                    
+                ├── _static/                                                       
+                ├── rv101-filename1.rst            
+                ├── rv102-filename2.rst                          
+                ├── rv201-filename3.rst          
+                    ...
+            ├── [_pdfdocs]/                        pdf docs and rivtbook report
+                ├── pdf auxiliary folders     
+                ├── report-title.pdf
+                ├── rv101-filename1.pdf             
+                ├── rv102-filename1.pdf             
+                ├── rv201-filename3.pdf
+            └── [_rvstor]/                         rivt-generated source files
+                ├── [logs]/                           log files
+                    ├── rv101-log.txt
+                    └── rv102-log.txt
+                ├── [sect]/                           sections not printed                    
+                    ├── rv202-5d.txt  
+                    ├── rv103-4t.txt                         
+                    └── rv301-2r.txt               
+                ├── [temp]/                           temp files
+                    └── rv101-label3.tex
+                ├── [vals]/                           values files
+                    ├── v101-2.csv
+                    └── v102-3.csv         
+                └── output.dat 
+            ├── [bk1-]folder name                  handbook chapter folder
+                ├── [rv001-]filename1.py              rivt file       
+                ├── [downloads]/                      files to download      
+                    └── conc-vals.txt 
+                ├── [img]/                            page layout images              
+                    ├── favicon.png    
+                    ├── covlogo1.png    
+                    ├── runlogo1.png
+                    └── fig1.png
+                ├── [data]/                           tables and values    
+                    └── steel-vals.csv              
+                    ├── v101-2.csv
+                    └── v102-3.csv         
+                ├── [scripts]/                        scripts
+                    ├── beam1.py    
+                    └── text.rst  
+                └── tools/                            OS shell commands               
+                    └── opensees.sh                           
+            ├── [bk2-]folder name                  handbook chapter folder
+                    ...        
+            └── [bk3-]folder name                  handbook chapter folder
+                    ...
