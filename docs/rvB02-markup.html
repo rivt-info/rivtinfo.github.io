@@ -45,7 +45,7 @@
 
     <script src="_static/jquery.js?v=5d32c60e"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-    <script src="_static/documentation_options.js?v=7ed0cb1e"></script>
+    <script src="_static/documentation_options.js?v=f01388dd"></script>
     <script src="_static/doctools.js?v=fd6eb6e6"></script>
     <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
@@ -429,12 +429,10 @@ report</em> folder structure is described <a class="reference internal" href="rv
 the <em>singledoc</em> parameter is set, the <em>resource files</em> and <em>docs</em> are
 stored in the <em>rivt root folder</em>.</p>
 </div></blockquote>
-<p>Tag and Command syntax for each API type is defined and described
-using the following format:</p>
 <hr class="docutils" />
 </section>
 <section id="rv-r-markup">
-<span id="markup-r"></span><h2><strong>[1]</strong> rv.R Markup<a class="headerlink" href="#rv-r-markup" title="Link to this heading">#</a></h2>
+<span id="markup-r"></span><h2><strong>[2]</strong> rv.R Markup<a class="headerlink" href="#rv-r-markup" title="Link to this heading">#</a></h2>
 <p>The <em>Run API</em>  executes scripts commands.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -458,7 +456,7 @@ using the following format:</p>
 <hr class="docutils" />
 </section>
 <section id="rv-i-markup">
-<span id="markup-i"></span><h2><strong>[2]</strong> rv.I Markup<a class="headerlink" href="#rv-i-markup" title="Link to this heading">#</a></h2>
+<span id="markup-i"></span><h2><strong>[3]</strong> rv.I Markup<a class="headerlink" href="#rv-i-markup" title="Link to this heading">#</a></h2>
 <p>The <em>Insert API</em> inserts and formats static sources into the <em>doc</em>,
 including images, tables, links and formatted text.</p>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -486,13 +484,13 @@ including images, tables, links and formatted text.</p>
 <tr class="row-odd"><td><p>text <strong>_[V] var_name |</strong> text</p></td>
 <td><p><a class="reference internal" href="rvB03-linetags.html#substitute-value"><span class="std std-ref">[10] Substitute value</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><strong>text math _[M]</strong> description</p></td>
+<tr class="row-even"><td><p>math text <strong>_[M]</strong> description</p></td>
 <td><p><a class="reference internal" href="rvB03-linetags.html#text-math"><span class="std std-ref">[4] Text math</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>LaTeX math _[L]</strong> description</p></td>
+<tr class="row-odd"><td><p>LaTeX math <strong>_[L]</strong> description</p></td>
 <td><p><a class="reference internal" href="rvB03-linetags.html#latex-math"><span class="std std-ref">[5] LaTeX math</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><strong>title _[T]</strong></p></td>
+<tr class="row-even"><td><p>text title <strong>_[T]</strong></p></td>
 <td><p><a class="reference internal" href="rvB03-linetags.html#number-table"><span class="std std-ref">[11] Table number</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>_[[ENDNOTES]]</strong></p></td>
@@ -516,7 +514,7 @@ including images, tables, links and formatted text.</p>
 <hr class="docutils" />
 </section>
 <section id="rv-v-markup">
-<span id="markup-v"></span><h2><strong>[3]</strong> rv.V Markup<a class="headerlink" href="#rv-v-markup" title="Link to this heading">#</a></h2>
+<span id="markup-v"></span><h2><strong>[4]</strong> rv.V Markup<a class="headerlink" href="#rv-v-markup" title="Link to this heading">#</a></h2>
 <p>The <em>Values API</em> defines values and evaluates equations and functions.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -579,7 +577,7 @@ including images, tables, links and formatted text.</p>
 <hr class="docutils" />
 </section>
 <section id="rv-t-text">
-<span id="markup-t"></span><h2><strong>[4]</strong> rv.T Text<a class="headerlink" href="#rv-t-text" title="Link to this heading">#</a></h2>
+<span id="markup-t"></span><h2><strong>[5]</strong> rv.T Text<a class="headerlink" href="#rv-t-text" title="Link to this heading">#</a></h2>
 <p>The <em>Text API</em> processes text and scripts. It does not use markup. The
 header substring takes an additional parameter that specifies the type of
 text or script. The header substring has the form:</p>
@@ -620,7 +618,7 @@ text or script. The header substring has the form:</p>
 <hr class="docutils" />
 </section>
 <section id="rv-d-markup">
-<span id="markup-d"></span><h2><strong>[5]</strong> rv.D Markup<a class="headerlink" href="#rv-d-markup" title="Link to this heading">#</a></h2>
+<span id="markup-d"></span><h2><strong>[6]</strong> rv.D Markup<a class="headerlink" href="#rv-d-markup" title="Link to this heading">#</a></h2>
 <p>The <em>Doc API</em> publishes formatted <em>docs</em> from the rivt API strings.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -695,11 +693,11 @@ text or script. The header substring has the form:</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tags-and-commands"><strong>[1]</strong> Tags and Commands</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rv-r-markup"><strong>[1]</strong> rv.R Markup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rv-i-markup"><strong>[2]</strong> rv.I Markup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rv-v-markup"><strong>[3]</strong> rv.V Markup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rv-t-text"><strong>[4]</strong> rv.T Text</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rv-d-markup"><strong>[5]</strong> rv.D Markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rv-r-markup"><strong>[2]</strong> rv.R Markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rv-i-markup"><strong>[3]</strong> rv.I Markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rv-v-markup"><strong>[4]</strong> rv.V Markup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rv-t-text"><strong>[5]</strong> rv.T Text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rv-d-markup"><strong>[6]</strong> rv.D Markup</a></li>
 </ul>
   </nav></div>
 
@@ -728,7 +726,7 @@ text or script. The header substring has the form:</p>
 
   <p class="copyright">
     
-      © Copyright 2026 StL Engineering .
+      © Copyright 2026 rodhholland.
       <br/>
     
   </p>

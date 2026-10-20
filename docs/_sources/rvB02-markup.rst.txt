@@ -43,15 +43,12 @@ the following sections.
     the *singledoc* parameter is set, the *resource files* and *docs* are
     stored in the *rivt root folder*.
 
-Tag and Command syntax for each API type is defined and described 
-using the following format:
-
 ------------------------------------
 
 
 .. _markup-R:
 
-**[1]** rv.R Markup
+**[2]** rv.R Markup
 ------------------------------------
 
 The *Run API*  executes scripts commands. 
@@ -68,7 +65,7 @@ The *Run API*  executes scripts commands.
 
 .. _markup-I:
 
-**[2]** rv.I Markup
+**[3]** rv.I Markup
 -------------------------------------------------------------------------------
  
 The *Insert API* inserts and formats static sources into the *doc*,
@@ -83,9 +80,9 @@ text **_[G] text, term |** text                                        :ref:`Ter
 text **_[S] text, section link |** text                                :ref:`Section link`
 text **_[U] text, label |** text                                       :ref:`URL link`   
 text **_[V] var_name |** text                                          :ref:`Substitute value`
-**text math _[M]** description                                         :ref:`Text math` 
-**LaTeX math _[L]** description                                        :ref:`LaTeX math` 
-**title _[T]**                                                         :ref:`Number table`
+math text **_[M]** description                                         :ref:`Text math` 
+LaTeX math **_[L]** description                                        :ref:`LaTeX math` 
+text title **_[T]**                                                    :ref:`Number table`
 **_[[ENDNOTES]]**                                                      :ref:`Endnotes block`
 **_[[END]]**                                                           :ref:`End block`
 **| IMAGE |** file | scale, caption, num, time                         :ref:`Image file`
@@ -97,7 +94,7 @@ text **_[V] var_name |** text                                          :ref:`Sub
 
 .. _markup-V:
  
-**[3]** rv.V Markup
+**[4]** rv.V Markup
 ---------------------------------------------
 
 The *Values API* defines values and evaluates equations and functions.
@@ -122,7 +119,7 @@ a **<** c  | decimal | text1,text2,align, num                      :ref:`Compare
 
 .. _markup-T:
 
-**[4]** rv.T Text
+**[5]** rv.T Text
 ------------------------------------------------ 
 
 The *Text API* processes text and scripts. It does not use markup. The
@@ -149,7 +146,7 @@ text or script. The header substring has the form:
 
 .. _markup-D:
 
-**[5]** rv.D Markup
+**[6]** rv.D Markup
 --------------------------------
 
 The *Doc API* publishes formatted *docs* from the rivt API strings.

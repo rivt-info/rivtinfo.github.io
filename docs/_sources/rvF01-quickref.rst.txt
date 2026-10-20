@@ -54,7 +54,6 @@ is the :term:`header substring`.
         
         """)
 
-
 **rv.D Header**
 
 .. code-block:: python

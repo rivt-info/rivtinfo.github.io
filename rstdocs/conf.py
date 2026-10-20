@@ -4,9 +4,9 @@ from pathlib import Path
 
 
 project = "rivt.info"
-copyright = "2026 StL Engineering "
-author = "rholland"
-release = "1.0.0a18"
+copyright = "2026 rodhholland"
+author = "rodhholland"
+release = "1.0.0a20"
 extensions = [
     "sphinx.ext.githubpages",
     "sphinx_togglebutton",
@@ -19,6 +19,7 @@ extensions = [
     "sphinx_design",
     "sphinx_new_tab_link",
     "rst2pdf.pdfbuilder",
+    'sphinxcontrib.email'
 ]
 master_doc = "index"
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]

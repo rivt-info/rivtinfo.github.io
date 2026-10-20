@@ -36,14 +36,12 @@ Home
 .. |git_logo| image:: _static/img/githubsrch.png
    :width: 70px
 
-
 *rivt* is an open source Python project for writing and sharing engineering
-documents. It includes portable desktop environments and cloud containers for 
-running in browsers. The :ref:`motivation <rvmotivation>` for writing *rivt* 
-comes from the need to share live engineering documents. Both *rivtlib* and 
-*rivtStudio* are distributed under the 
-`MIT open source license <https://opensource.org/license/mit>`_ 
-( see :ref:`FAQ <Licenses>` ). 
+documents and their sources. It includes a portable desktop application for
+editing and publishing and a version of the application that runs on servers
+and browsers. The :ref:`motivation <rvmotivation>` for writing *rivt* lies in
+all the benefits of being able to freely share live, editable engineering
+documents.
 
 .. raw:: html
 
@@ -55,7 +53,7 @@ comes from the need to share live engineering documents. Both *rivtlib* and
    +---------------+-----------------------------------------------------------------------------------+
    | |rivt_logo|   | `rivtlib`_ - a Python library for processing *rivt markup* ( `source`_ )          |
    +---------------+-----------------------------------------------------------------------------------+
-   | |studio_logo| | `rivtStudio`_ - a portable writing and publishing program on the desktop          |
+   | |studio_logo| | `rivtStudio`_ - a portable writing and publishing application on the desktop      |
    +---------------+-----------------------------------------------------------------------------------+
    | |remote_logo| | `rivtRemote`_ - containerized *rivtStudio* for servers and browsers               |
    +---------------+-----------------------------------------------------------------------------------+
@@ -71,6 +69,13 @@ comes from the need to share live engineering documents. Both *rivtlib* and
 
 .. _source: https://github.com/rivtlib-dev/rivtlib
 
+
+*rivtlib* and *rivtStudio* are distributed under the 
+`MIT open source license <https://opensource.org/license/mit>`_ 
+( see :ref:`FAQ <Licenses>` ). 
+
+
+Contact :email:`Questions <openmodels.info@gmail.com>`
 
 .. raw:: html
 
