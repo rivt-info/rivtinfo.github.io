@@ -62,4 +62,3 @@ A model example is here.
    :hidden:
     
    rvE02-agents.rst
-   rvE03-aibackgrnd.rst

@@ -4,7 +4,7 @@
 **[1]** Contact
 ------------------------------------------------------------------------------
 
-`rivtdoc@gmail.com <mailto:rivtdoc@gmail.com>`_
+`openmodels.info@gmail.com <mailto:openmodels.info@gmail.com>`_
 
 --------------------------------
 
