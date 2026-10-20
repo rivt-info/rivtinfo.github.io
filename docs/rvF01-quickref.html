@@ -440,29 +440,52 @@
 </div>
 <p>where <strong>rS</strong> is a <em>rivt string</em>. The first line of a <em>rivt string</em> (rS)
 is the <a class="reference internal" href="rvF02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a>.</p>
-<p><strong>Header Defaults</strong></p>
+<p><strong>Section Headers</strong></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label</span>
 
-<span class="s2">     Content text and rivt markup - indented four spaces.</span>
+<span class="s2">    Default header for Insert and Values sections.</span>
+<span class="s2">    Content text and rivt markup, indented four spaces.</span>
 
-<span class="s2">    ...</span>
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | shmpn</span>
+
+<span class="s2">    Header with modifications for Insert and Values sections.</span>
+<span class="s2">    Content text and rivt markup, indented four spaces.</span>
 
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><strong>Header Modifications</strong></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | shmpn</span>
+<p><strong>rv.D Header</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">D</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label</span>
 
-
-<span class="s2">     Content text and rivt markup - indented four spaces.</span>
-<span class="s2">     Content may be ommitted if a template file or script</span>
-<span class="s2">     is specified.</span>
-
-<span class="s2">    ...</span>
+<span class="s2">    Content text and rivt markup - indented four spaces.</span>
 
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>The first parameter list in the <em>header substring</em> specifies handling of the
+<em>content substring</em>. The second and third parameters, where applicable, specify
+a type and file that is processed by the API method before processing
+any <em>content</em>.</p>
+<p><strong>Parameters</strong></p>
+<p>Section parameters may be specified in any order or ommitted if defaults are
+acceptable.</p>
+<ul class="simple">
+<li><p>s | store - stores the section content in <em>_rvstored/sect</em> as a <em>.rvt file.</em></p></li>
+<li><p>h | hide - processes the section but suppresses the <em>doc</em> output.</p></li>
+<li><p>m | merge - merges the section with the previous section.</p></li>
+<li><p>p | public - toggles the default public/private status of the section (see <a class="reference internal" href="rvB01-rivtfile.html#rivt-settings"><span class="std std-ref">comments</span></a>)</p></li>
+<li><p>n | new page - Starts a new pdf page.</p></li>
+</ul>
+<p>The default parameters, when ommitted, are as follows:</p>
+<ul class="simple">
+<li><p>section is not stored</p></li>
+<li><p>section content is published</p></li>
+<li><p>section not merged</p></li>
+<li><p>private section</p></li>
+<li><p>continuous pages</p></li>
+</ul>
 <hr class="docutils" />
 </section>
 <section id="line-tags-summary">
@@ -847,7 +870,7 @@ is the <a class="reference internal" href="rvF02-terms.html#term-header-substrin
 </div>
 </section>
 <section id="unit-definitions">
-<span id="id5"></span><h2><strong>[9]</strong> Unit Definitions<a class="headerlink" href="#unit-definitions" title="Link to this heading">#</a></h2>
+<span id="id5"></span><h2><strong>[8]</strong> Unit Definitions<a class="headerlink" href="#unit-definitions" title="Link to this heading">#</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># standard SI units ==== DO NOT MODIFY BETWEEN DOUBLE LINES  ============</span>
 <span class="c1">#</span>
 <span class="c1"># temperature - relative degree, not offset</span>
@@ -955,7 +978,7 @@ is the <a class="reference internal" href="rvF02-terms.html#term-header-substrin
 <hr class="docutils" />
 </section>
 <section id="rivt-python-dependencies">
-<span id="rivt-depend"></span><h2><strong>[10]</strong> rivt Python Dependencies<a class="headerlink" href="#rivt-python-dependencies" title="Link to this heading">#</a></h2>
+<span id="rivt-depend"></span><h2><strong>[9]</strong> rivt Python Dependencies<a class="headerlink" href="#rivt-python-dependencies" title="Link to this heading">#</a></h2>
 <p>The minimum Python version is <em>3.14</em>. In addition to <em>rivtlib</em>, <em>rivt</em> packages
 include the following categories:</p>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -1147,8 +1170,8 @@ include the following categories:</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assignment-summary"><strong>[5]</strong> Assignment Summary</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#command-summary"><strong>[6]</strong> Command Summary</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-folders"><strong>[7]</strong> Project Folders</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unit-definitions"><strong>[9]</strong> Unit Definitions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-python-dependencies"><strong>[10]</strong> rivt Python Dependencies</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unit-definitions"><strong>[8]</strong> Unit Definitions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-python-dependencies"><strong>[9]</strong> rivt Python Dependencies</a></li>
 </ul>
   </nav></div>
 

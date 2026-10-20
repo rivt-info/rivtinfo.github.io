@@ -36,37 +36,58 @@ API Function         Name             Purpose
 where **rS** is a *rivt string*. The first line of a *rivt string* (rS)
 is the :term:`header substring`.
 
-**Header Defaults**
+**Section Headers**
 
 .. code-block:: python
 
     rv._("""Section Label 
 
-         Content text and rivt markup - indented four spaces.
-        
-        ...
+        Default header for Insert and Values sections.
+        Content text and rivt markup, indented four spaces.
         
         """)
-
-
-**Header Modifications**
-
-.. code-block:: python
 
     rv._("""Section Label | shmpn 
 
-
-         Content text and rivt markup - indented four spaces. 
-         Content may be ommitted if a template file or script 
-         is specified.
-        
-        ...
+        Header with modifications for Insert and Values sections.
+        Content text and rivt markup, indented four spaces.
         
         """)
 
+**rv.D Header**
 
+.. code-block:: python
 
+    rv.D("""Section Label 
 
+        Content text and rivt markup - indented four spaces.
+         
+        """)
+
+The first parameter list in the *header substring* specifies handling of the
+*content substring*. The second and third parameters, where applicable, specify 
+a type and file that is processed by the API method before processing 
+any *content*.
+
+**Parameters**
+
+Section parameters may be specified in any order or ommitted if defaults are
+acceptable. 
+
+- s | store - stores the section content in *_rvstored/sect* as a *.rvt file.*
+- h | hide - processes the section but suppresses the *doc* output.
+- m | merge - merges the section with the previous section.
+- p | public - toggles the default public/private status of the section (see :ref:`comments <rivt-settings>`)
+- n | new page - Starts a new pdf page.
+
+The default parameters, when ommitted, are as follows:
+
+- section is not stored
+- section content is published
+- section not merged
+- private section
+- continuous pages 
+  
 -------------------------------------
 
 .. _Line Tags Summary:
@@ -315,7 +336,7 @@ rv.D        **| PUBLISH |** doc title | type                                 :re
 
 .. _unit-definitions:
 
-**[9]** Unit Definitions
+**[8]** Unit Definitions
 ---------------------------------------------------------------------------
 
 .. code-block:: python
@@ -427,7 +448,7 @@ rv.D        **| PUBLISH |** doc title | type                                 :re
 
 .. _rivt-depend:
 
-**[10]** rivt Python Dependencies
+**[9]** rivt Python Dependencies
 ---------------------------------------------------------------------------
 
 The minimum Python version is *3.14*. In addition to *rivtlib*, *rivt* packages

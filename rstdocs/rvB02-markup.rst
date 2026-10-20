@@ -46,27 +46,6 @@ the following sections.
 Tag and Command syntax for each API type is defined and described 
 using the following format:
 
-.. raw:: html
-
-    <p style="border-width:2px; border-style:solid; 
-    border-color:#49b2c3;padding: 1em;">
-
-    <b>Markup Key<br>
-    <br>
-    _[TAG] or | COMMAND |</b><br>
-    <br>
-    Description<br>
-    <br>
-    <pre>
-        Syntax:
-            _[TAG] or | COMMAND | syntax
-
-        Example:
-            This is a sentence. _[C]
-    </pre> 
-    </p>
-
-
 ------------------------------------
 
 
