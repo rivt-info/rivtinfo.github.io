@@ -72,10 +72,8 @@ documents.
 
 *rivtlib* and *rivtStudio* are distributed under the 
 `MIT open source license <https://opensource.org/license/mit>`_ 
-( see :ref:`FAQ <Licenses>` ). 
-
-
-Contact :email:`Questions <openmodels.info@gmail.com>`
+( see :ref:`FAQ <Licenses>` ). Email contact for 
+:email:`questions and comments. <openmodels.info@gmail.com>`
 
 .. raw:: html
 
