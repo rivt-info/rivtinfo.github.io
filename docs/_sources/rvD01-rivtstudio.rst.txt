@@ -207,5 +207,5 @@ ctl+shift+x          post to remote
    :hidden:
 
    rvD02-rivtremote.rst
-   rvD03-collab.rst
+   rvD03-share.rst
   

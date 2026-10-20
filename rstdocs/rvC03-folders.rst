@@ -315,11 +315,13 @@ steps. To insert a *rivtbook subdivision* into a *rivt doc or report*:
                 ├── covlogo1.png    
                 ├── runlogo1.png
                 └── fig1.png
-            ├── [data]/                          tables    
-                └── steel-vals.csv                                                 
-            ├── [vals]/                          values files
+            ├── [data]/                          tables and values    
+                └── steel-vals.csv              
                 ├── v101-2.csv
                 └── v102-3.csv         
+            ├── [scripts]/                       scripts
+                ├── beam1.py    
+                └── text.rst  
             └── tools/                           OS shell commands               
                 └── opensees.sh                           
         ├── [bk2-]folder name             rivtbook chapter folder

@@ -11,19 +11,258 @@
 ========== ========================================= ===============================
 API Scope         Block Tag                                Description 
 ========== ========================================= ===============================
+rv.R        **_[[SCRIPT]]** type                      :ref:`Script block`
+rv.R        **_[[ARGS]]** arg-dict-name               :ref:`Arg block`
+rv.R        **_[[TEXT]]** type                        :ref:`Text block`
 rv.R        **_[[WRITE]]** var name                   :ref:`Write block`
-rv.R        **_[[SHELL]]** os, *wait;nowait*          :ref:`Shell script`
 rv.I,V      **_[[TABLE]]** label                      :ref:`Table block`
 rv.I,V      **_[[ENDNOTES]]**                         :ref:`Endnotes block`
-rv.V        **_[[ARGS]]** arg dict name               :ref:`Arg block`
+rv.T        **_[[SHELL]]** os, *wait;nowait*          :ref:`Shell script`
 rv.D        **_[[METADATA]]** label                   :ref:`Meta block` 
 all         **_[[END]]**                              :ref:`End block`
 ========== ========================================= ===============================
 
+.. _Script block:
+
+**[2]** Script
+------------------------------------------
+
+The SCRIPT block executes code and returns a file object (text, list, image
+etc.) that is written to *rvreport-.../scripts*. The language parameter specifies
+the processing and requires a compatible compiler installation.
+
+Language types include:
+
+    #. **python**
+    #. **ruby**
+    #. **mermaid** 
+    #. **latex** 
+
+.. topic:: _[[SCRIPT]]
+
+    .. code-block:: text
+
+            Syntax:
+                _[[SCRIPT]] type, output_file
+                script code
+                ...
+                _[[END]]  
+        
+            Example:
+                _[[SCRIPT]] python, myfile.txt
+                print("Hello, World!")
+                _[[END]]
+
+=========== =====================================
+API Scope     rv.R
+File Types    see above 
+Doc Types     text, PDF, HTML
+=========== =====================================
+
+
+.. _Args block:
+
+**[3]** Args
+------------------------------------------
+
+The ARGS command reads a Python file with arguments defined as dictionaries. The
+dictionary names are used as inputs to functions and scripts.
+
+The namespace name *rivt* imports the values into the main *rivt file* namespace.
+
+.. topic:: | ARGS |
+
+    .. code-block:: text
+
+        Syntax:
+            | ARGS | relative path | namespace
+        Example:
+            | ARGS | bm1args.py | rivt
+
+=========== =====================================
+API Scope     rv.R
+File Types    see above 
+Doc Types     text, PDF, HTML
+=========== =====================================
+
+
+.. _Text block:
+
+**[4]** Text
+------------------------------------------
+
+The TEXT command reads and formats text and code files. It inserts
+text after framing and formatting, without actually running it. 
+
+Language types include:
+
+    #. **text** - literal text
+    #. **bold**
+    #. **italic**
+    #. **indent4**
+    #. **python** - Python code
+    #. **ruby** - Ruby code
+    #. **sphinx** - Sphinx reStructuredText 
+    #. **rst** - reStructuredText
+    #. **html** - HTML markup
+
+
+.. topic:: | TEXT |
+
+    .. code-block:: text
+
+        Syntax:
+            | TEXT | relative path | type
+        Example:
+            | TEXT | quote.txt | literal
+
+=========== =====================================
+API Scope     rv.R
+File Types    see above 
+Doc Types     text, PDF, HTML
+=========== =====================================
+
+
+.. _Table block:
+
+**[5]** Table Block
+------------------------------------------------
+
+
+.. topic:: _[[TABLE]] 
+
+    Reads and formats restructured text table and writes contents
+    to csv file in the _rvstor/data folder.
+    .. code-block:: text 
+
+            Syntax:
+                _[[TABLE]] label
+                reST table
+                ...
+                _[[END]]  
+        
+            Example:
+                _[[TABLE]] my_table
+                =====  ======
+                Name   Age
+                =====  ======
+                John   25
+                Jane   30
+                =====  =====
+                _[[END]]
+
+=========== ==========================
+API Scope     Insert, Values
+Doc Types     text, PDF, HTML
+=========== ==========================
+
+-----------------------
+
+.. _Arg block:
+
+**[6]** Argument block
+---------------------------------------
+
+.. topic:: _[[ARG]] arg_name
+        
+    Organizes function arguments into a dictionary that may be passed
+    to the FUNCTION command.
+
+    .. code-block:: text
+            
+        Syntax:    
+            _[[ARGS]] arg_dictionary_name | list of units
+            arg1 = A # label
+            arg2 = B # label
+            ...
+            _[[END]]
+
+        Example:    
+            _[[ARGS]] beam1 | units: inch, pounds
+            ln_1 = 10*12 # beam length
+            P_1 = 1.1*1000 # beam load
+            ...
+            _[[END]]
+
+=========== ==========================
+API Scope     Values
+Doc Types     text, PDF, HTML
+=========== ==========================
+
+-----------------------
+
+
+.. _Write block:
+
+**[7]** Write 
+------------------------------------------------
+
+.. topic:: _[[WRITE]] rel file path
+
+    Updates variables in templates and writes file to report folder. 
+
+    .. code-block:: text
+
+            Syntax:    
+                _[[WRITE]] relative file path
+                text or script
+                ...
+                _[[END]]
+
+            Example:    
+                _[[WRITE]] rvsrc/script.py
+                for i in range(2):
+                    print(f"{vars}",i) 
+                _[[END]]
+
+=========== ==========================
+API Scope     Run
+Doc Types     text, PDF, HTML
+=========== ==========================
+
+-----------------------
+
+
+.. _Shell script:
+
+**[8]** Shell script
+------------------------------------
+Runs shell scripts that run external programs. The shell parameters include
+specifying the operating system, process control and terminal window control.
+The os parameter specifies the terminal type. The wait parameter specifies
+whether rivt file processing waits for the script to complete before
+continuing. The open parameter specifies whether to keep the shell window open
+after execution.
+
+.. topic:: _[[SHELL]] 
+
+    .. code-block:: text
+        
+        Syntax:
+            _[[SHELL]] win;mac;linux,wait; nowait,open; close
+            shell command
+            ...
+            _[[END]]
+    
+        
+        Example:
+            _[[SHELL]] win,nowait,open
+            dir
+            path
+            _[[END]]
+
+=========== ==========================
+API Scope     Run
+Doc Types     text, PDF, HTML
+=========== ==========================
+
+-----------------------
+
 
 .. _Endnotes block:
 
-**[2]** Endnotes Block
+
+**[9]** Endnotes Block
 ------------------------------------------------
 
 .. topic:: _[[ENDNOTES]] 
@@ -59,149 +298,10 @@ API Scope     Insert, Values
 Doc Types     text, PDF, HTML
 =========== ==========================
 
------------------------
-
-
-.. _Table block:
-
-**[3]** Table Block
-------------------------------------------------
-
- 
-
-.. topic:: _[[TABLE]] 
-
-    Reads and formats restructured text table and writes contents
-    to csv file in the _rvstor/data folder.
-    .. code-block:: text 
-
-            Syntax:
-                _[[TABLE]] label
-                reST table
-                ...
-                _[[END]]  
-        
-            Example:
-                _[[TABLE]] my_table
-                =====  ======
-                Name   Age
-                =====  ======
-                John   25
-                Jane   30
-                =====  =====
-                _[[END]]
-
-=========== ==========================
-API Scope     Insert, Values
-Doc Types     text, PDF, HTML
-=========== ==========================
-
------------------------
-
-.. _Arg block:
-
-**[4]** Argument block
----------------------------------------
-
-.. topic:: _[[ARG]] arg_name
-        
-    Organizes function arguments into a dictionary that may be passed
-    to the FUNCTION command.
-
-    .. code-block:: text
-            
-        Syntax:    
-            _[[ARGS]] arg_dictionary_name | list of units
-            arg1 = A # label
-            arg2 = B # label
-            ...
-            _[[END]]
-
-        Example:    
-            _[[ARGS]] beam1 | units: inch, pounds
-            ln_1 = 10*12 # beam length
-            P_1 = 1.1*1000 # beam load
-            ...
-            _[[END]]
-
-=========== ==========================
-API Scope     Values
-Doc Types     text, PDF, HTML
-=========== ==========================
-
------------------------
-
-
-.. _Write block:
-
-**[5]** Write 
-------------------------------------------------
-
-.. topic:: _[[WRITE]] rel file path
-
-    Updates variables in templates and writes file to report folder. 
-
-    .. code-block:: text
-
-            Syntax:    
-                _[[WRITE]] relative file path
-                text or script
-                ...
-                _[[END]]
-
-            Example:    
-                _[[WRITE]] rvsrc/script.py
-                for i in range(2):
-                    print(f"{vars}",i) 
-                _[[END]]
-
-=========== ==========================
-API Scope     Run
-Doc Types     text, PDF, HTML
-=========== ==========================
-
------------------------
-
-
-.. _Shell script:
-
-**[6]** Shell script
-------------------------------------
-Runs shell scripts that run external programs. The shell parameters include
-specifying the operating system, process control and terminal window control.
-The os parameter specifies the terminal type. The wait parameter specifies
-whether rivt file processing waits for the script to complete before
-continuing. The open parameter specifies whether to keep the shell window open
-after execution.
-
-.. topic:: _[[SHELL]] 
-
-    .. code-block:: text
-        
-        Syntax:
-            _[[SHELL]] win;mac;linux,wait; nowait,open; close
-            shell command
-            ...
-            _[[END]]
-    
-        
-        Example:
-            _[[SHELL]] win,nowait,open
-            dir
-            path
-            _[[END]]
-
-=========== ==========================
-API Scope     Run
-Doc Types     text, PDF, HTML
-=========== ==========================
-
------------------------
-
 
 .. _Meta block:
 
-**[7]** Metadata
+**[10]** Metadata
 -------------------
 
  
@@ -302,9 +402,10 @@ Doc Types     text, PDF, HTML
 
 -----------------------
 
+
 .. _End block:
 
-**[8]** End block
+**[11]** End block
 ------------------------------------------------
 
  
@@ -316,7 +417,7 @@ Doc Types     text, PDF, HTML
     .. code-block:: text
 
         Syntax:
-            _[[NEWPAGE]] optional label 
+            _[[END]] optional label 
 
         Example:    
             _[[END]] 

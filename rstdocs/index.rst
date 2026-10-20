@@ -61,7 +61,7 @@ comes from the need to share live engineering documents. Both *rivtlib* and
    +---------------+-----------------------------------------------------------------------------------+
    |  |git_logo|   |  :ref:`GitHub search <search-interface>` - find public rivt projects on GitHub    |
    +---------------+-----------------------------------------------------------------------------------+
-   |  |open_logo|  | `openModels`_ - online database of shared engineering models and documents        |
+   |  |open_logo|  | `openModels`_ - online database of shared models and documents including rivt     |
    +---------------+-----------------------------------------------------------------------------------+
 
 .. _openModels: https://openmodels.info
@@ -85,7 +85,7 @@ comes from the need to share live engineering documents. Both *rivtlib* and
    :hidden:
 
    rvA01-overview.rst
-   rvB01-rivt.rst
+   rvB01-rivtfile.rst
    rvC01-publish.rst
    rvD01-rivtstudio.rst
    rvE01-aiwork.rst

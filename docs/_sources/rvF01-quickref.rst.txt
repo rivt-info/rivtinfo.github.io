@@ -53,7 +53,7 @@ is the :term:`header substring`.
 
 .. code-block:: python
 
-    rv._("""Section Label | shmpn | type | template or script file
+    rv._("""Section Label | shmpn 
 
 
          Content text and rivt markup - indented four spaces. 
@@ -65,45 +65,7 @@ is the :term:`header substring`.
         """)
 
 
-The first set of parameters in the *header substring* specify handling of the
-*content substring*. The second and third parameters specify a type and file or
-script that is processed by the API method before processing any *content*.
 
-**Parameters**
-
-Section parameters may be specified in any order or ommitted if defaults are
-acceptable. The default parameters are shown in the
-
-- **s** stores the section content in *_rvstored/sect* as a *.rvt file.*
-
-- **h** processes the section but suppresses the *doc* output.
-   
-- **m** merges the section with the previous section.
-
-- **p** toggles the public/private status of the section. The rivt file default is
-  private unless overridden by a :ref:`comment setting <comment-settings>`
-
-- **n** starts a new pdf page.
-
-**File and Type Settings**
-
-The second parameter specifies a template file or script that is processed by
-the API method before processing any *content*. The file is read from the
-rvsrc/data folder unless a relative path is specified. The file type is
-determined by the API method. The type setting for all
-API methods, except rv.T, is *rvt*. A *rvt* file type is a section content
-string stored as a file. It is written by the **s** parameter.
-
-For the **rv.T** method the type settings are:
-
-#. **PYTHON** - run Python script
-#. **python** - insert Python script code
-#. **text** - literal text
-#. **rst** - reStructuredText
-#. **html** - HTML markup
-#. **mermaid** - Mermaid diagram (requires mermaid installation)
-#. **latex** - LaTeX (requires LaTeX installation)
-#. **dot** - Graphviz (requires graphviz installation)
 
 -------------------------------------
 
@@ -191,8 +153,8 @@ rv.R        **| SHELL |** abs path | os, wait                                :re
 rv.I, V     **| TABLE |** file name | title,width,head;nohead,num;non        :ref:`Table file`     
 rv.I, V     **| IMAGE |** file name | caption, scale, num;non, time;not      :ref:`Image file`
 rv.I, V     **| IMAGE2 |** file1, file2 | c1,c2,s1,s2,n1,n2                  :ref:`Adjacent images`
-rv.V        **| VALTABLE |** file name | title, width, num;non               :ref:`Values file`
-rv.V        **| VALSTOR |** file name | title, width, num;non                :ref:`Values file`
+rv.V        **| VALTABLE |** file name | title, width, num;non               :ref:`Valtable file`
+rv.V        **| VALSTOR |** file name | title, width, num;non                :ref:`Valstor file`
 rv.V        **| FUNCTION |** function, arg, var, type | label                :ref:`Function value`  
 rv.D        **| ATTACHPDF |** file name | front;back, title                  :ref:`Attach PDF`   
 rv.D        **| PUBLISH |** doc title | type                                 :ref:`Publish doc` 

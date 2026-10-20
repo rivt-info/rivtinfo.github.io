@@ -153,7 +153,7 @@
 
 
 <li class="nav-item current active">
-  <a class="nav-link nav-internal" href="rvB01-rivt.html">
+  <a class="nav-link nav-internal" href="rvB01-rivtfile.html">
     B.1 | R-I-V-T
   </a>
 </li>
@@ -267,7 +267,7 @@
 
 
 <li class="nav-item current active">
-  <a class="nav-link nav-internal" href="rvB01-rivt.html">
+  <a class="nav-link nav-internal" href="rvB01-rivtfile.html">
     B.1 | R-I-V-T
   </a>
 </li>
@@ -373,7 +373,7 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="rvB01-rivt.html" class="nav-link"><strong>B.1 |</strong> R-I-V-T</a></li>
+    <li class="breadcrumb-item"><a href="rvB01-rivtfile.html" class="nav-link"><strong>B.1 |</strong> R-I-V-T</a></li>
     
     <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>B.4 |</strong> Block Tags</span></li>
   </ul>
@@ -406,62 +406,70 @@
 </thead>
 <tbody>
 <tr class="row-even"><td><p>rv.R</p></td>
-<td><p><strong>_[[WRITE]]</strong> var name</p></td>
-<td><p><a class="reference internal" href="#write-block"><span class="std std-ref">[5] Write</span></a></p></td>
+<td><p><strong>_[[SCRIPT]]</strong> type</p></td>
+<td><p><a class="reference internal" href="#script-block"><span class="std std-ref">[2] Script</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.R</p></td>
-<td><p><strong>_[[SHELL]]</strong> os, <em>wait;nowait</em></p></td>
-<td><p><a class="reference internal" href="#shell-script"><span class="std std-ref">[6] Shell script</span></a></p></td>
+<td><p><strong>_[[ARGS]]</strong> arg-dict-name</p></td>
+<td><p><a class="reference internal" href="#arg-block"><span class="std std-ref">[6] Argument block</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>rv.R</p></td>
+<td><p><strong>_[[TEXT]]</strong> type</p></td>
+<td><p><a class="reference internal" href="#text-block"><span class="std std-ref">[4] Text</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>rv.R</p></td>
+<td><p><strong>_[[WRITE]]</strong> var name</p></td>
+<td><p><a class="reference internal" href="#write-block"><span class="std std-ref">[7] Write</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I,V</p></td>
 <td><p><strong>_[[TABLE]]</strong> label</p></td>
-<td><p><a class="reference internal" href="#table-block"><span class="std std-ref">[3] Table Block</span></a></p></td>
+<td><p><a class="reference internal" href="#table-block"><span class="std std-ref">[5] Table Block</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I,V</p></td>
 <td><p><strong>_[[ENDNOTES]]</strong></p></td>
-<td><p><a class="reference internal" href="#endnotes-block"><span class="std std-ref">[2] Endnotes Block</span></a></p></td>
+<td><p><a class="reference internal" href="#endnotes-block"><span class="std std-ref">[9] Endnotes Block</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>rv.V</p></td>
-<td><p><strong>_[[ARGS]]</strong> arg dict name</p></td>
-<td><p><a class="reference internal" href="#arg-block"><span class="std std-ref">[4] Argument block</span></a></p></td>
+<tr class="row-even"><td><p>rv.T</p></td>
+<td><p><strong>_[[SHELL]]</strong> os, <em>wait;nowait</em></p></td>
+<td><p><a class="reference internal" href="#shell-script"><span class="std std-ref">[8] Shell script</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.D</p></td>
 <td><p><strong>_[[METADATA]]</strong> label</p></td>
-<td><p><a class="reference internal" href="#meta-block"><span class="std std-ref">[7] Metadata</span></a></p></td>
+<td><p><a class="reference internal" href="#meta-block"><span class="std std-ref">[10] Metadata</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>all</p></td>
 <td><p><strong>_[[END]]</strong></p></td>
-<td><p><a class="reference internal" href="#end-block"><span class="std std-ref">[8] End block</span></a></p></td>
+<td><p><a class="reference internal" href="#end-block"><span class="std std-ref">[11] End block</span></a></p></td>
 </tr>
 </tbody>
 </table>
 </div>
 </section>
-<section id="endnotes-block">
-<span id="id1"></span><h2><strong>[2]</strong> Endnotes Block<a class="headerlink" href="#endnotes-block" title="Link to this heading">#</a></h2>
+<section id="script">
+<span id="script-block"></span><h2><strong>[2]</strong> Script<a class="headerlink" href="#script" title="Link to this heading">#</a></h2>
+<p>The SCRIPT block executes code and returns a file object (text, list, image
+etc.) that is written to <em>rvreport-…/scripts</em>. The language parameter specifies
+the processing and requires a compatible compiler installation.</p>
+<p>Language types include:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p><strong>python</strong></p></li>
+<li><p><strong>ruby</strong></p></li>
+<li><p><strong>mermaid</strong></p></li>
+<li><p><strong>latex</strong></p></li>
+</ol>
+</div></blockquote>
 <aside class="topic">
-<p class="topic-title">_[[ENDNOTES]]</p>
-<p>Inserts endnotes at end of document. One block is used per document.</p>
+<p class="topic-title">_[[SCRIPT]]</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    _[[ENDNOTES]]
-    endnote 1
-
-    endnote 2
-
-    endnote 3
+    _[[SCRIPT]] type, output_file
+    script code
     ...
     _[[END]]
 
 Example:
-    _[[ENDNOTES]]
-    Timoshenko, Stephen P. (1983). History of strength of
-    materials: with a brief account of the history of theory of
-    elasticity and theory of structures. Dover Books on Physics.
-    Dover Publications.
-
-    Truesdell, C. (1960). The rational mechanics of flexible or
-    elastic bodies 1638–1788. Venditioni Exponunt Orell Fussli
-    Turici.
+    _[[SCRIPT]] python, myfile.txt
+    print(&quot;Hello, World!&quot;)
     _[[END]]
 </pre></div>
 </div>
@@ -469,18 +477,91 @@ Example:
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p>API Scope</p></td>
-<td><p>Insert, Values</p></td>
+<td><p>rv.R</p></td>
 </tr>
-<tr class="row-even"><td><p>Doc Types</p></td>
+<tr class="row-even"><td><p>File Types</p></td>
+<td><p>see above</p></td>
+</tr>
+<tr class="row-odd"><td><p>Doc Types</p></td>
 <td><p>text, PDF, HTML</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<hr class="docutils" />
+</section>
+<section id="args">
+<span id="args-block"></span><h2><strong>[3]</strong> Args<a class="headerlink" href="#args" title="Link to this heading">#</a></h2>
+<p>The ARGS command reads a Python file with arguments defined as dictionaries. The
+dictionary names are used as inputs to functions and scripts.</p>
+<p>The namespace name <em>rivt</em> imports the values into the main <em>rivt file</em> namespace.</p>
+<aside class="topic">
+<p class="topic-title">| ARGS |</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    | ARGS | relative path | namespace
+Example:
+    | ARGS | bm1args.py | rivt
+</pre></div>
+</div>
+</aside>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>rv.R</p></td>
+</tr>
+<tr class="row-even"><td><p>File Types</p></td>
+<td><p>see above</p></td>
+</tr>
+<tr class="row-odd"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="text">
+<span id="text-block"></span><h2><strong>[4]</strong> Text<a class="headerlink" href="#text" title="Link to this heading">#</a></h2>
+<p>The TEXT command reads and formats text and code files. It inserts
+text after framing and formatting, without actually running it.</p>
+<p>Language types include:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p><strong>text</strong> - literal text</p></li>
+<li><p><strong>bold</strong></p></li>
+<li><p><strong>italic</strong></p></li>
+<li><p><strong>indent4</strong></p></li>
+<li><p><strong>python</strong> - Python code</p></li>
+<li><p><strong>ruby</strong> - Ruby code</p></li>
+<li><p><strong>sphinx</strong> - Sphinx reStructuredText</p></li>
+<li><p><strong>rst</strong> - reStructuredText</p></li>
+<li><p><strong>html</strong> - HTML markup</p></li>
+</ol>
+</div></blockquote>
+<aside class="topic">
+<p class="topic-title">| TEXT |</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    | TEXT | relative path | type
+Example:
+    | TEXT | quote.txt | literal
+</pre></div>
+</div>
+</aside>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>rv.R</p></td>
+</tr>
+<tr class="row-even"><td><p>File Types</p></td>
+<td><p>see above</p></td>
+</tr>
+<tr class="row-odd"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 <section id="table-block">
-<span id="id2"></span><h2><strong>[3]</strong> Table Block<a class="headerlink" href="#table-block" title="Link to this heading">#</a></h2>
+<span id="id1"></span><h2><strong>[5]</strong> Table Block<a class="headerlink" href="#table-block" title="Link to this heading">#</a></h2>
 <aside class="topic">
 <p class="topic-title">_[[TABLE]]</p>
 <p>Reads and formats restructured text table and writes contents
@@ -519,7 +600,7 @@ _[[END]]</p>
 <hr class="docutils" />
 </section>
 <section id="argument-block">
-<span id="arg-block"></span><h2><strong>[4]</strong> Argument block<a class="headerlink" href="#argument-block" title="Link to this heading">#</a></h2>
+<span id="arg-block"></span><h2><strong>[6]</strong> Argument block<a class="headerlink" href="#argument-block" title="Link to this heading">#</a></h2>
 <aside class="topic">
 <p class="topic-title">_[[ARG]] arg_name</p>
 <p>Organizes function arguments into a dictionary that may be passed
@@ -554,7 +635,7 @@ Example:
 <hr class="docutils" />
 </section>
 <section id="write">
-<span id="write-block"></span><h2><strong>[5]</strong> Write<a class="headerlink" href="#write" title="Link to this heading">#</a></h2>
+<span id="write-block"></span><h2><strong>[7]</strong> Write<a class="headerlink" href="#write" title="Link to this heading">#</a></h2>
 <aside class="topic">
 <p class="topic-title">_[[WRITE]] rel file path</p>
 <p>Updates variables in templates and writes file to report folder.</p>
@@ -586,7 +667,7 @@ Example:
 <hr class="docutils" />
 </section>
 <section id="shell-script">
-<span id="id3"></span><h2><strong>[6]</strong> Shell script<a class="headerlink" href="#shell-script" title="Link to this heading">#</a></h2>
+<span id="id2"></span><h2><strong>[8]</strong> Shell script<a class="headerlink" href="#shell-script" title="Link to this heading">#</a></h2>
 <p>Runs shell scripts that run external programs. The shell parameters include
 specifying the operating system, process control and terminal window control.
 The os parameter specifies the terminal type. The wait parameter specifies
@@ -623,8 +704,49 @@ Example:
 </div>
 <hr class="docutils" />
 </section>
+<section id="endnotes-block">
+<span id="id3"></span><h2><strong>[9]</strong> Endnotes Block<a class="headerlink" href="#endnotes-block" title="Link to this heading">#</a></h2>
+<aside class="topic">
+<p class="topic-title">_[[ENDNOTES]]</p>
+<p>Inserts endnotes at end of document. One block is used per document.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
+    _[[ENDNOTES]]
+    endnote 1
+
+    endnote 2
+
+    endnote 3
+    ...
+    _[[END]]
+
+Example:
+    _[[ENDNOTES]]
+    Timoshenko, Stephen P. (1983). History of strength of
+    materials: with a brief account of the history of theory of
+    elasticity and theory of structures. Dover Books on Physics.
+    Dover Publications.
+
+    Truesdell, C. (1960). The rational mechanics of flexible or
+    elastic bodies 1638–1788. Venditioni Exponunt Orell Fussli
+    Turici.
+    _[[END]]
+</pre></div>
+</div>
+</aside>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>API Scope</p></td>
+<td><p>Insert, Values</p></td>
+</tr>
+<tr class="row-even"><td><p>Doc Types</p></td>
+<td><p>text, PDF, HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 <section id="metadata">
-<span id="meta-block"></span><h2><strong>[7]</strong> Metadata<a class="headerlink" href="#metadata" title="Link to this heading">#</a></h2>
+<span id="meta-block"></span><h2><strong>[10]</strong> Metadata<a class="headerlink" href="#metadata" title="Link to this heading">#</a></h2>
 <aside class="topic">
 <p class="topic-title">_[[METADATA]]</p>
 <p>Each keyword is required and is followed by an equal sign and a value. The
@@ -728,12 +850,12 @@ Example:
 <hr class="docutils" />
 </section>
 <section id="end-block">
-<span id="id4"></span><h2><strong>[8]</strong> End block<a class="headerlink" href="#end-block" title="Link to this heading">#</a></h2>
+<span id="id4"></span><h2><strong>[11]</strong> End block<a class="headerlink" href="#end-block" title="Link to this heading">#</a></h2>
 <aside class="topic">
 <p class="topic-title">_[[END]]</p>
 <p>Terminates a block tag.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
-    _[[NEWPAGE]] optional label
+    _[[END]] optional label
 
 Example:
     _[[END]]
@@ -802,13 +924,16 @@ Example:
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#block-tag-summary"><strong>[1]</strong> Block Tag Summary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#endnotes-block"><strong>[2]</strong> Endnotes Block</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-block"><strong>[3]</strong> Table Block</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#argument-block"><strong>[4]</strong> Argument block</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#write"><strong>[5]</strong> Write</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shell-script"><strong>[6]</strong> Shell script</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metadata"><strong>[7]</strong> Metadata</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-block"><strong>[8]</strong> End block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#script"><strong>[2]</strong> Script</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#args"><strong>[3]</strong> Args</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text"><strong>[4]</strong> Text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-block"><strong>[5]</strong> Table Block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#argument-block"><strong>[6]</strong> Argument block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#write"><strong>[7]</strong> Write</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shell-script"><strong>[8]</strong> Shell script</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#endnotes-block"><strong>[9]</strong> Endnotes Block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metadata"><strong>[10]</strong> Metadata</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-block"><strong>[11]</strong> End block</a></li>
 </ul>
   </nav></div>
 

@@ -56,7 +56,7 @@
     <script src="_static/togglebutton.js?v=1ae7504c"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'rvB01-rivt';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'rvB01-rivtfile';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="B.2 | Markup" href="rvB02-markup.html" />
@@ -498,20 +498,17 @@ for readability and section folding. See <a class="reference internal" href="#ri
 </section>
 <section id="file-settings">
 <span id="rivt-settings"></span><h2><strong>[3]</strong> File Settings<a class="headerlink" href="#file-settings" title="Link to this heading">#</a></h2>
-<p>There are several settings that a apply to the entire rivt file.
-These are specified in the <em>comment settings</em> immediately following the
-import statement. Default settings do not need to be specified - only variants.</p>
+<p>There are several comment settings that apply to the entire rivt file. These
+are specified in the <em>comment settings</em> immediately following the import
+statement. Default settings shown in parentheses do not need to be specified -
+only variants.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
 
 <span class="c1"># rv private = false ; default section parameter changed to public (true)</span>
 <span class="c1"># rv no_tag = true ; API type is added to section number (true)</span>
-<span class="c1"># rv set_width = true character width of text output (80</span>
+<span class="c1"># rv set_width = 90; character width of text output (80)</span>
 </pre></div>
 </div>
-<p>If interactive IDEs are used <strong>rv.S</strong> and <strong>rv.X</strong> can be used for debugging
-and cell notation can be used for navigation. Note that Ctrl+Alt+C inserts the
-navigation cell label (# %%) if the cursor is on the first line of the cell and
-the <em>rivt Profile</em> is installed in VSCode.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %% My Section Label</span>
 <span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;My Section Label</span>
 
@@ -544,67 +541,52 @@ is processed in addition to the <em>content substring</em> if provided.</p>
 default form is used when the <em>header substring</em> accepts default parameters. It
 only requires a section label. The modified form is used when default parameters
 need to be modified.</p>
-<p><strong>Header Defaults</strong></p>
+<p><strong>Section Headers</strong></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label</span>
 
-<span class="s2">     Content text and rivt markup - indented four spaces.</span>
+<span class="s2">    Default header for Insert and Values sections.</span>
+<span class="s2">    Content text and rivt markup, indented four spaces.</span>
 
-<span class="s2">    ...</span>
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | shmpn</span>
+
+<span class="s2">    Header with modifications for Insert and Values sections.</span>
+<span class="s2">    Content text and rivt markup, indented four spaces.</span>
 
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><strong>Header Modifications</strong></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | shmpn | type | template or script file</span>
+<p><strong>rv.D Header</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">D</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label</span>
 
-
-<span class="s2">     Content text and rivt markup - indented four spaces.</span>
-<span class="s2">     Content may be ommitted if a template file or script</span>
-<span class="s2">     is specified.</span>
-
-<span class="s2">    ...</span>
+<span class="s2">    Content text and rivt markup - indented four spaces.</span>
 
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The first set of parameters in the <em>header substring</em> specify handling of the
-<em>content substring</em>. The second and third parameters specify a type and file or
-script that is processed by the API method before processing any <em>content</em>.</p>
+<p>The first parameter list in the <em>header substring</em> specifies handling of the
+<em>content substring</em>. The second and third parameters, where applicable, specify
+a type and file that is processed by the API method before processing
+any <em>content</em>.</p>
 <p><strong>Parameters</strong></p>
 <p>Section parameters may be specified in any order or ommitted if defaults are
-acceptable. The default parameters are shown in the</p>
+acceptable.</p>
 <ul class="simple">
-<li><p>s
-stores the section content in <em>_rvstored/sect</em> as a <em>.rvt file.</em></p></li>
-<li><p>h
-processes the section but suppresses the <em>doc</em> output.</p></li>
-<li><p>m
-merges the section with the previous section.</p></li>
-<li><p>p
-toggles the public/private status of the section. The rivt file default is
-private unless overridden by a <a class="reference internal" href="rvC01-publish.html#comment-settings"><span class="std std-ref">comment settings</span></a></p></li>
-<li><p>n
-Starts a new pdf page.</p></li>
+<li><p>s | store - stores the section content in <em>_rvstored/sect</em> as a <em>.rvt file.</em></p></li>
+<li><p>h | hide - processes the section but suppresses the <em>doc</em> output.</p></li>
+<li><p>m | merge - merges the section with the previous section.</p></li>
+<li><p>p | public - toggles the default public/private status of the section (see <a class="reference internal" href="#rivt-settings"><span class="std std-ref">comments</span></a>)</p></li>
+<li><p>n | new page - Starts a new pdf page.</p></li>
 </ul>
-<p><strong>File and Type Settings</strong></p>
-<p>The second parameter specifies a template file or script that is processed by
-the API method before processing any <em>content</em>. The file is read from the
-rvsrc/data folder unless a relative path is specified. The file type is
-determined by the API method. The type setting for all
-API methods, except rv.T, is <em>rvt</em>. A <em>rvt</em> file type is a section content
-string stored as a file. It is written by the <strong>s</strong> parameter.</p>
-<p>For the rv.T method the type settings are:</p>
-<blockquote>
-<div><ol class="arabic simple">
-<li><p><strong>PYTHON</strong> - run Python script</p></li>
-<li><p><strong>python</strong> - insert Python script</p></li>
-<li><p><strong>text</strong> - literal text</p></li>
-<li><p><strong>rst</strong> - reStructuredText</p></li>
-<li><p><strong>html</strong> - HTML markup</p></li>
-<li><p><strong>mermaid</strong> - Mermaid diagram (requires mermaid installation)</p></li>
-<li><p><strong>latex</strong> - LaTeX (requires LaTeX installation)</p></li>
-</ol>
-</div></blockquote>
+<p>The default parameters, when ommitted, are as follows:</p>
+<ul class="simple">
+<li><p>section is not stored</p></li>
+<li><p>section content is published</p></li>
+<li><p>section not merged</p></li>
+<li><p>private section</p></li>
+<li><p>continuous pages</p></li>
+</ul>
 <hr class="docutils" />
 </section>
 <section id="string-content">
@@ -629,6 +611,13 @@ a <em>command</em>, <em>tag</em> or <em>assignment</em> it is passed through as 
 surrounding words with * or ** will format a word as italic or bold.</p>
 <p>In addition block tags in the <em>Tools function</em> (rv.R) directly supports
 processing HTML, LaTeX and reStructuredText scripts.</p>
+</section>
+<section id="tips">
+<span id="rivt-tips"></span><h2><strong>[6]</strong> Tips<a class="headerlink" href="#tips" title="Link to this heading">#</a></h2>
+<p>Where interactive IDEs are used <strong>rv.S</strong> and <strong>rv.X</strong> can be used for
+debugging. Cell notation can be used for the navigation panels generated
+rivtStudio. Note that Ctrl+Alt+C inserts a cell label (# %%) followed by the
+section title if the cursor is on the first line of the section.</p>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -686,6 +675,7 @@ processing HTML, LaTeX and reStructuredText scripts.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#file-settings"><strong>[3]</strong> File Settings</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#string-header"><strong>[4]</strong> String Header</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#string-content"><strong>[5]</strong> String Content</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tips"><strong>[6]</strong> Tips</a></li>
 </ul>
   </nav></div>
 

@@ -153,7 +153,7 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvB01-rivt.html">
+  <a class="nav-link nav-internal" href="rvB01-rivtfile.html">
     B.1 | R-I-V-T
   </a>
 </li>
@@ -267,7 +267,7 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvB01-rivt.html">
+  <a class="nav-link nav-internal" href="rvB01-rivtfile.html">
     B.1 | R-I-V-T
   </a>
 </li>
@@ -451,7 +451,7 @@ is the <a class="reference internal" href="rvF02-terms.html#term-header-substrin
 </pre></div>
 </div>
 <p><strong>Header Modifications</strong></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | shmpn | type | template or script file</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label | shmpn</span>
 
 
 <span class="s2">     Content text and rivt markup - indented four spaces.</span>
@@ -463,38 +463,6 @@ is the <a class="reference internal" href="rvF02-terms.html#term-header-substrin
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The first set of parameters in the <em>header substring</em> specify handling of the
-<em>content substring</em>. The second and third parameters specify a type and file or
-script that is processed by the API method before processing any <em>content</em>.</p>
-<p><strong>Parameters</strong></p>
-<p>Section parameters may be specified in any order or ommitted if defaults are
-acceptable. The default parameters are shown in the</p>
-<ul class="simple">
-<li><p><strong>s</strong> stores the section content in <em>_rvstored/sect</em> as a <em>.rvt file.</em></p></li>
-<li><p><strong>h</strong> processes the section but suppresses the <em>doc</em> output.</p></li>
-<li><p><strong>m</strong> merges the section with the previous section.</p></li>
-<li><p><strong>p</strong> toggles the public/private status of the section. The rivt file default is
-private unless overridden by a <a class="reference internal" href="rvC01-publish.html#comment-settings"><span class="std std-ref">comment setting</span></a></p></li>
-<li><p><strong>n</strong> starts a new pdf page.</p></li>
-</ul>
-<p><strong>File and Type Settings</strong></p>
-<p>The second parameter specifies a template file or script that is processed by
-the API method before processing any <em>content</em>. The file is read from the
-rvsrc/data folder unless a relative path is specified. The file type is
-determined by the API method. The type setting for all
-API methods, except rv.T, is <em>rvt</em>. A <em>rvt</em> file type is a section content
-string stored as a file. It is written by the <strong>s</strong> parameter.</p>
-<p>For the <strong>rv.T</strong> method the type settings are:</p>
-<ol class="arabic simple">
-<li><p><strong>PYTHON</strong> - run Python script</p></li>
-<li><p><strong>python</strong> - insert Python script code</p></li>
-<li><p><strong>text</strong> - literal text</p></li>
-<li><p><strong>rst</strong> - reStructuredText</p></li>
-<li><p><strong>html</strong> - HTML markup</p></li>
-<li><p><strong>mermaid</strong> - Mermaid diagram (requires mermaid installation)</p></li>
-<li><p><strong>latex</strong> - LaTeX (requires LaTeX installation)</p></li>
-<li><p><strong>dot</strong> - Graphviz (requires graphviz installation)</p></li>
-</ol>
 <hr class="docutils" />
 </section>
 <section id="line-tags-summary">
@@ -586,27 +554,27 @@ string stored as a file. It is written by the <strong>s</strong> parameter.</p>
 <tbody>
 <tr class="row-even"><td><p>rv.R</p></td>
 <td><p><strong>_[[WRITE]]</strong> var name</p></td>
-<td><p><a class="reference internal" href="rvB04-blocktags.html#write-block"><span class="std std-ref">[5] Write</span></a></p></td>
+<td><p><a class="reference internal" href="rvB04-blocktags.html#write-block"><span class="std std-ref">[7] Write</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.R</p></td>
 <td><p><strong>_[[SHELL]]</strong> os, <em>wait;nowait</em></p></td>
-<td><p><a class="reference internal" href="rvB04-blocktags.html#shell-script"><span class="std std-ref">[6] Shell script</span></a></p></td>
+<td><p><a class="reference internal" href="rvB04-blocktags.html#shell-script"><span class="std std-ref">[8] Shell script</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I,V</p></td>
 <td><p><strong>_[[TABLE]]</strong> label</p></td>
-<td><p><a class="reference internal" href="rvB04-blocktags.html#table-block"><span class="std std-ref">[3] Table Block</span></a></p></td>
+<td><p><a class="reference internal" href="rvB04-blocktags.html#table-block"><span class="std std-ref">[5] Table Block</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V</p></td>
 <td><p><strong>_[[ARGS]]</strong> arg dict name</p></td>
-<td><p><a class="reference internal" href="rvB04-blocktags.html#arg-block"><span class="std std-ref">[4] Argument block</span></a></p></td>
+<td><p><a class="reference internal" href="rvB04-blocktags.html#arg-block"><span class="std std-ref">[6] Argument block</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.D</p></td>
 <td><p><strong>_[[METADATA]]</strong> label</p></td>
-<td><p><a class="reference internal" href="rvB04-blocktags.html#meta-block"><span class="std std-ref">[7] Metadata</span></a></p></td>
+<td><p><a class="reference internal" href="rvB04-blocktags.html#meta-block"><span class="std std-ref">[10] Metadata</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>all</p></td>
 <td><p><strong>_[[END]]</strong></p></td>
-<td><p><a class="reference internal" href="rvB04-blocktags.html#end-block"><span class="std std-ref">[8] End block</span></a></p></td>
+<td><p><a class="reference internal" href="rvB04-blocktags.html#end-block"><span class="std std-ref">[11] End block</span></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -657,19 +625,19 @@ string stored as a file. It is written by the <strong>s</strong> parameter.</p>
 <tbody>
 <tr class="row-even"><td><p>rv.R</p></td>
 <td><p><strong>| COPY |</strong> abs src path | abs dest path | file pattern</p></td>
-<td><p><a class="reference internal" href="rvB06-commands.html#copy-file"><span class="std std-ref">[10] Copy Files</span></a></p></td>
+<td><p><a class="reference internal" href="rvB06-commands.html#copy-file"><span class="std std-ref">[12] Copy Files</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.R</p></td>
 <td><p><strong>| SHELL |</strong> abs path | os, wait</p></td>
-<td><p><a class="reference internal" href="rvB06-commands.html#shell-file"><span class="std std-ref">[2] Shell file</span></a></p></td>
+<td><p><a class="reference internal" href="rvB06-commands.html#shell-file"><span class="std std-ref">[13] Shell file</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I, V</p></td>
 <td><p><strong>| TABLE |</strong> file name | title,width,head;nohead,num;non</p></td>
-<td><p><a class="reference internal" href="rvB06-commands.html#table-file"><span class="std std-ref">[4] Table file</span></a></p></td>
+<td><p><a class="reference internal" href="rvB06-commands.html#table-file"><span class="std std-ref">[7] Table</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.I, V</p></td>
 <td><p><strong>| IMAGE |</strong> file name | caption, scale, num;non, time;not</p></td>
-<td><p><a class="reference internal" href="rvB06-commands.html#image-file"><span class="std std-ref">[5] Image file</span></a></p></td>
+<td><p><a class="reference internal" href="rvB06-commands.html#image-file"><span class="std std-ref">[5] Image</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.I, V</p></td>
 <td><p><strong>| IMAGE2 |</strong> file1, file2 | c1,c2,s1,s2,n1,n2</p></td>
@@ -677,23 +645,23 @@ string stored as a file. It is written by the <strong>s</strong> parameter.</p>
 </tr>
 <tr class="row-odd"><td><p>rv.V</p></td>
 <td><p><strong>| VALTABLE |</strong> file name | title, width, num;non</p></td>
-<td><p><a class="reference internal" href="rvB06-commands.html#values-file"><span class="std std-ref">[7]  Valtable file</span></a></p></td>
+<td><p><a class="reference internal" href="rvB06-commands.html#valtable-file"><span class="std std-ref">[8]  Valtable</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.V</p></td>
 <td><p><strong>| VALSTOR |</strong> file name | title, width, num;non</p></td>
-<td><p><a class="reference internal" href="rvB06-commands.html#values-file"><span class="std std-ref">[7]  Valtable file</span></a></p></td>
+<td><p><a class="reference internal" href="rvB06-commands.html#valstor-file"><span class="std std-ref">[9]  Valstor</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.V</p></td>
 <td><p><strong>| FUNCTION |</strong> function, arg, var, type | label</p></td>
-<td><p><a class="reference internal" href="rvB06-commands.html#function-value"><span class="std std-ref">[9] Function</span></a></p></td>
+<td><p><a class="reference internal" href="rvB06-commands.html#function-value"><span class="std std-ref">[11] Function</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>rv.D</p></td>
 <td><p><strong>| ATTACHPDF |</strong> file name | front;back, title</p></td>
-<td><p><a class="reference internal" href="rvB06-commands.html#attach-pdf"><span class="std std-ref">[11] Attach PDF</span></a></p></td>
+<td><p><a class="reference internal" href="rvB06-commands.html#attach-pdf"><span class="std std-ref">[15] Attach PDF</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>rv.D</p></td>
 <td><p><strong>| PUBLISH |</strong> doc title | type</p></td>
-<td><p><a class="reference internal" href="rvB06-commands.html#publish-doc"><span class="std std-ref">[12] Publish doc</span></a></p></td>
+<td><p><a class="reference internal" href="rvB06-commands.html#publish-doc"><span class="std std-ref">[14] Publish doc</span></a></p></td>
 </tr>
 </tbody>
 </table>

@@ -131,7 +131,8 @@ The *Values API* defines values and evaluates equations and functions.
 | **TABLE** | file | title,width,rows,align,head,num               :ref:`Table file`     
 | **IMAGE** | file |  scale, caption, figure                       :ref:`Image file`
 | **IMAGE2** | file1, file2 | c1, c2, s1, s2, f1, f2               :ref:`Adjacent images`
-| **VALTABLE** | file | title, width, rows                         :ref:`Values file`     
+| **VALTABLE** | file | title, width, rows                         :ref:`Valtable file`
+| **VALSTOR** | file name | title, width, num;non                  :ref:`Valstor file`     
 a **==:** 1*IN  | unit1, unit2, decimal, num | label               :ref:`Define value`
 c **<=:** expression | unit1, unit2, decimal, num | label          :ref:`Assign value`
 c **:=:** expression | unit1, unit2, decimal | label, number       :ref:`Function value`

@@ -98,9 +98,10 @@ The *rivt API* also provides scope for :ref:`rivt markup <rivt-markup>`
 **[3]** File Settings
 ----------------------------------
 
-There are several settings that a apply to the entire rivt file. 
-These are specified in the *comment settings* immediately following the
-import statement. Default settings do not need to be specified - only variants. 
+There are several comment settings that apply to the entire rivt file. These
+are specified in the *comment settings* immediately following the import
+statement. Default settings shown in parentheses do not need to be specified -
+only variants.
 
 
 .. code-block:: python
@@ -109,13 +110,9 @@ import statement. Default settings do not need to be specified - only variants.
 
     # rv private = false ; default section parameter changed to public (true)
     # rv no_tag = true ; API type is added to section number (true)
-    # rv set_width = true character width of text output (80
+    # rv set_width = 90; character width of text output (80)
 
 
-If interactive IDEs are used **rv.S** and **rv.X** can be used for debugging
-and cell notation can be used for navigation. Note that Ctrl+Alt+C inserts the
-navigation cell label (# %%) if the cursor is on the first line of the cell and
-the *rivt Profile* is installed in VSCode.
 
 
 .. code-block:: python
@@ -135,7 +132,7 @@ the *rivt Profile* is installed in VSCode.
 **[4]** String Header
 ----------------------------------
 
-Individual *API methods* define sections.  Each :doc:`API function <rvB01-rivt>` 
+Individual *API methods* define sections.  Each :doc:`API function <rvB01-rivtfile>` 
 takes a raw, triple quoted :term:`rivt string` composed of a 
 :term:`header substring` on the first line followed by a multi-line 
 :term:`content substring`. The *header line* defines section processing 
@@ -159,78 +156,60 @@ only requires a section label. The modified form is used when default parameters
 need to be modified.
 
 
-**Header Defaults**
+
+**Section Headers**
 
 .. code-block:: python
 
     rv._("""Section Label 
 
-         Content text and rivt markup - indented four spaces.
+        Default header for Insert and Values sections.
+        Content text and rivt markup, indented four spaces.
         
-        ...
+        """)
+
+    rv._("""Section Label | shmpn 
+
+        Header with modifications for Insert and Values sections.
+        Content text and rivt markup, indented four spaces.
         
         """)
 
 
-**Header Modifications**
+**rv.D Header**
 
 .. code-block:: python
 
-    rv._("""Section Label | shmpn | type | template or script file
+    rv.D("""Section Label 
 
-
-         Content text and rivt markup - indented four spaces. 
-         Content may be ommitted if a template file or script 
-         is specified.
-        
-        ...
-        
+        Content text and rivt markup - indented four spaces.
+         
         """)
 
-
-The first set of parameters in the *header substring* specify handling of the
-*content substring*. The second and third parameters specify a type and file or
-script that is processed by the API method before processing any *content*.
+The first parameter list in the *header substring* specifies handling of the
+*content substring*. The second and third parameters, where applicable, specify 
+a type and file that is processed by the API method before processing 
+any *content*.
 
 **Parameters**
 
 Section parameters may be specified in any order or ommitted if defaults are
-acceptable. The default parameters are shown in the
+acceptable. 
 
-- s
-  stores the section content in *_rvstored/sect* as a *.rvt file.*
+- s | store - stores the section content in *_rvstored/sect* as a *.rvt file.*
+- h | hide - processes the section but suppresses the *doc* output.
+- m | merge - merges the section with the previous section.
+- p | public - toggles the default public/private status of the section (see :ref:`comments <rivt-settings>`)
+- n | new page - Starts a new pdf page.
 
-- h
-  processes the section but suppresses the *doc* output.
-   
-- m
-  merges the section with the previous section.
+The default parameters, when ommitted, are as follows:
 
-- p 
-  toggles the public/private status of the section. The rivt file default is
-  private unless overridden by a :ref:`comment settings <comment-settings>`
+- section is not stored
+- section content is published
+- section not merged
+- private section
+- continuous pages 
 
-- n 
-  Starts a new pdf page.
-
-**File and Type Settings**
-
-The second parameter specifies a template file or script that is processed by
-the API method before processing any *content*. The file is read from the
-rvsrc/data folder unless a relative path is specified. The file type is
-determined by the API method. The type setting for all
-API methods, except rv.T, is *rvt*. A *rvt* file type is a section content
-string stored as a file. It is written by the **s** parameter.
-
-For the rv.T method the type settings are:
-
- #. **PYTHON** - run Python script
- #. **python** - insert Python script
- #. **text** - literal text
- #. **rst** - reStructuredText
- #. **html** - HTML markup
- #. **mermaid** - Mermaid diagram (requires mermaid installation)
- #. **latex** - LaTeX (requires LaTeX installation)
 
 ------------------------------------------------
 
@@ -263,6 +242,16 @@ surrounding words with * or ** will format a word as italic or bold.
 In addition block tags in the *Tools function* (rv.R) directly supports
 processing HTML, LaTeX and reStructuredText scripts.
 
+
+.. _rivt-tips:
+
+**[6]** Tips 
+---------------------------------
+
+Where interactive IDEs are used **rv.S** and **rv.X** can be used for
+debugging. Cell notation can be used for the navigation panels generated
+rivtStudio. Note that Ctrl+Alt+C inserts a cell label (# %%) followed by the
+section title if the cursor is on the first line of the section.
 
 .. toctree::
     :maxdepth: 2
