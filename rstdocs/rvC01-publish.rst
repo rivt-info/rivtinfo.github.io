@@ -131,7 +131,7 @@ the corresponding *doc numbers* in a report would be:
 
 .. _report-script:
 
-**[4]** rivt-report.py
+**[3]** rivt-report.py
 ----------------------------------------------------------
 
 The Python *report script* includes settings that specify assembly parameters
@@ -219,66 +219,8 @@ An example rivt-report.py script is shown below.
     
 ------------------------------------------------
 
-.. _default-folders:
 
-**[5]** Command Defaults
-------------------------------------------------------------------------------
-
-Files are opened using default paths relative to the *rivt-report* folder for
-*reports* and *doc folders* for *rivtbooks*. They have the form:
-
-| COMMAND | filename | parameters
-
-For example, to read and insert an image file the command would be:
-
-| IMAGE | image1.png | parameters 
-
-If a different file path is needed it needs to be specified relative to
-the *rivt-report* folder for *reports* and the *doc folder* for
-*rivtbooks*. A unique path is triggered by including at least one folder 
-separator "/" in the path specification. 
-
-See :ref:`command summary <command-summary>` for further details.
-
-**Default Paths for Commands**
-
-================= ========================= =============================
-    Command        Default Report Paths     Default rivtbook Paths  
-================= ========================= =============================
-\| SHELL |          **rvsrc/script**         **script/**     
-\| IMAGE |          **rvsrc/image**          **image/** 
-\| IMAGE2 |         **rvsrc/image**          **image/**   
-\| PYTHON |         **rvsrc/script**         **script/**  
-\| TABLE |          **rvsrc/data**           **data/**  
-\| TEXT |           **rvsrc/script**         **script/**  
-\| VALTABLE |       **rvsrc/data**           **data/**   
-\| VALDATA |        **_rvstor/data**         **_rvstor/** 
-\| ATTACHPDF |      **rvsrc/image**          **image/**  
-\| PUBLISH | [1]    **/_published/**         **rivtbook/_published/**  
-================= ========================= =============================
-
-[1] *docs* are written to subdirectories of *_published*
-
-
-.. raw:: html
-
-    <p style="border-width:2px; border-style:solid; 
-    border-color:#49b2c3;padding: 1em;">
-
-    <b>Folder Naming</b><br>
-    <br>
-
-    A report project folder can contain any file or folder but the following structure
-    is required for <i>doc</i> processing. <i>report folders</i> include at least
-    the folders and files shown in brackets[] below. Folders with an underscore
-    contain rivt generated files. Files and folders are organized under
-    a rivt root folder with the prefix <i>rivt-</i> followed by the report
-    label, e.g. <i>rivt-Report-Label</i>. <br> <br>
-
---------------------
-
-
-**[6]** HTML and PDF Config (.py)
+**[4]** HTML and PDF Config (.py)
 --------------------------------------------------------------------- 
 
 The *conf.py* configuration file contains default configuration settings for 
@@ -438,7 +380,7 @@ The *conf.py* configuration file contains default configuration settings for
 ----------------------------------
 
 
-**[8]** PDF Style File (.yaml)
+**[5]** PDF Style File (.yaml)
 --------------------------------------------------------------------- 
 
 The *rivtstyle.yaml* file contains default formats for PDF files.

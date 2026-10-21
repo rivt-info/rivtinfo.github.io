@@ -488,7 +488,7 @@ rv212-filename.py
 <hr class="docutils" />
 </section>
 <section id="rivt-report-py">
-<span id="report-script"></span><h2><strong>[4]</strong> rivt-report.py<a class="headerlink" href="#rivt-report-py" title="Link to this heading">#</a></h2>
+<span id="report-script"></span><h2><strong>[3]</strong> rivt-report.py<a class="headerlink" href="#rivt-report-py" title="Link to this heading">#</a></h2>
 <p>The Python <em>report script</em> includes settings that specify assembly parameters
 and override defaults. These include:</p>
 <ul class="simple">
@@ -569,92 +569,10 @@ the <em>report</em> appearance are determined at when generating <em>docs</em>.<
         <span class="nb">__import__</span><span class="p">(</span><span class="n">module_name</span><span class="p">)</span>
 </pre></div>
 </div>
-<hr class="docutils" />
 </section>
-<section id="command-defaults">
-<span id="default-folders"></span><h2><strong>[5]</strong> Command Defaults<a class="headerlink" href="#command-defaults" title="Link to this heading">#</a></h2>
-<p>Files are opened using default paths relative to the <em>rivt-report</em> folder for
-<em>reports</em> and <em>doc folders</em> for <em>rivtbooks</em>. They have the form:</p>
-<div class="line-block">
-<div class="line">COMMAND | filename | parameters</div>
-</div>
-<p>For example, to read and insert an image file the command would be:</p>
-<div class="line-block">
-<div class="line">IMAGE | image1.png | parameters</div>
-</div>
-<p>If a different file path is needed it needs to be specified relative to
-the <em>rivt-report</em> folder for <em>reports</em> and the <em>doc folder</em> for
-<em>rivtbooks</em>. A unique path is triggered by including at least one folder
-separator “/” in the path specification.</p>
-<p>See <a class="reference internal" href="rvB06-commands.html#command-summary"><span class="std std-ref">command summary</span></a> for further details.</p>
-<p><strong>Default Paths for Commands</strong></p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Command</p></th>
-<th class="head"><p>Default Report Paths</p></th>
-<th class="head"><p>Default rivtbook Paths</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>| SHELL |</p></td>
-<td><p><strong>rvsrc/script</strong></p></td>
-<td><p><strong>script/</strong></p></td>
-</tr>
-<tr class="row-odd"><td><p>| IMAGE |</p></td>
-<td><p><strong>rvsrc/image</strong></p></td>
-<td><p><strong>image/</strong></p></td>
-</tr>
-<tr class="row-even"><td><p>| IMAGE2 |</p></td>
-<td><p><strong>rvsrc/image</strong></p></td>
-<td><p><strong>image/</strong></p></td>
-</tr>
-<tr class="row-odd"><td><p>| PYTHON |</p></td>
-<td><p><strong>rvsrc/script</strong></p></td>
-<td><p><strong>script/</strong></p></td>
-</tr>
-<tr class="row-even"><td><p>| TABLE |</p></td>
-<td><p><strong>rvsrc/data</strong></p></td>
-<td><p><strong>data/</strong></p></td>
-</tr>
-<tr class="row-odd"><td><p>| TEXT |</p></td>
-<td><p><strong>rvsrc/script</strong></p></td>
-<td><p><strong>script/</strong></p></td>
-</tr>
-<tr class="row-even"><td><p>| VALTABLE |</p></td>
-<td><p><strong>rvsrc/data</strong></p></td>
-<td><p><strong>data/</strong></p></td>
-</tr>
-<tr class="row-odd"><td><p>| VALDATA |</p></td>
-<td><p><strong>_rvstor/data</strong></p></td>
-<td><p><strong>_rvstor/</strong></p></td>
-</tr>
-<tr class="row-even"><td><p>| ATTACHPDF |</p></td>
-<td><p><strong>rvsrc/image</strong></p></td>
-<td><p><strong>image/</strong></p></td>
-</tr>
-<tr class="row-odd"><td><p>| PUBLISH | [1]</p></td>
-<td><p><strong>/_published/</strong></p></td>
-<td><p><strong>rivtbook/_published/</strong></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>[1] <em>docs</em> are written to subdirectories of <em>_published</em></p>
-<p style="border-width:2px; border-style:solid;
-border-color:#49b2c3;padding: 1em;">
-
-<b>Folder Naming</b><br>
-<br>
-
-A report project folder can contain any file or folder but the following structure
-is required for <i>doc</i> processing. <i>report folders</i> include at least
-the folders and files shown in brackets[] below. Folders with an underscore
-contain rivt generated files. Files and folders are organized under
-a rivt root folder with the prefix <i>rivt-</i> followed by the report
-label, e.g. <i>rivt-Report-Label</i>. <br> <br></section>
 <hr class="docutils" />
 <section id="html-and-pdf-config-py">
-<h2><strong>[6]</strong> HTML and PDF Config (.py)<a class="headerlink" href="#html-and-pdf-config-py" title="Link to this heading">#</a></h2>
+<h2><strong>[4]</strong> HTML and PDF Config (.py)<a class="headerlink" href="#html-and-pdf-config-py" title="Link to this heading">#</a></h2>
 <p>The <em>conf.py</em> configuration file contains default configuration settings for
 <em>rivt docs</em> and reports. A typical <em>conf.py</em> file looks like this:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#! python</span>
@@ -809,7 +727,7 @@ label, e.g. <i>rivt-Report-Label</i>. <br> <br></section>
 </section>
 <hr class="docutils" />
 <section id="pdf-style-file-yaml">
-<h2><strong>[8]</strong> PDF Style File (.yaml)<a class="headerlink" href="#pdf-style-file-yaml" title="Link to this heading">#</a></h2>
+<h2><strong>[5]</strong> PDF Style File (.yaml)<a class="headerlink" href="#pdf-style-file-yaml" title="Link to this heading">#</a></h2>
 <p>The <em>rivtstyle.yaml</em> file contains default formats for PDF files.</p>
 <blockquote>
 <div><div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">fontsAlias</span><span class="p">:</span>
@@ -1241,10 +1159,9 @@ label, e.g. <i>rivt-Report-Label</i>. <br> <br></section>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docs"><strong>[1]</strong> Docs</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#report"><strong>[2]</strong> Report</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-report-py"><strong>[4]</strong> rivt-report.py</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#command-defaults"><strong>[5]</strong> Command Defaults</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-and-pdf-config-py"><strong>[6]</strong> HTML and PDF Config (.py)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pdf-style-file-yaml"><strong>[8]</strong> PDF Style File (.yaml)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-report-py"><strong>[3]</strong> rivt-report.py</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-and-pdf-config-py"><strong>[4]</strong> HTML and PDF Config (.py)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pdf-style-file-yaml"><strong>[5]</strong> PDF Style File (.yaml)</a></li>
 </ul>
   </nav></div>
 
