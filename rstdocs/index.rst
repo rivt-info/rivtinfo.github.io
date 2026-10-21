@@ -37,8 +37,8 @@ Home
    :width: 70px
 
 *rivt* is an open source Python project for writing and sharing engineering
-documents and their sources. It includes both a portable editor desktop
-application and a containerized installation that runs in the browser. The
+documents and their sources. It includes both a portable desktop editor 
+and a containerized server application that runs in the browser. The
 :ref:`motivation <rvmotivation>` for writing *rivt* is in the many benefits
 that come from freely sharing live engineering documents that are editable and
 checkable.
