@@ -831,7 +831,6 @@ The *rivtstyle.yaml* file contains default formats for PDF files.
         parent: admonition-heading
 
 
-
 .. toctree::
     :maxdepth: 1
     :hidden:
