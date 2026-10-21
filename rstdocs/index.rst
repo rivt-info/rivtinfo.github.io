@@ -40,8 +40,8 @@ Home
 documents and their sources. It includes both a portable desktop application,
 and a containerized installation that runs in the browser, for editing and
 publishing *rivt* documents. The :ref:`motivation <rvmotivation>` for writing
-*rivt* lies in the many benefits of freely sharing live, editable and checkable
-engineering documents.
+*rivt* lies in the many benefits of freely sharing editable and checkable
+live engineering documents.
 
 .. raw:: html
 

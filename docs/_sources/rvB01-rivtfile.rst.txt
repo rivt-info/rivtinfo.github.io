@@ -22,18 +22,14 @@ scripts. To assemble a *doc* it uses four primary API functions:
 
     <b>T(): </b> Runs external binary programs <br>
 
-A fourth API for publishing the doc is documented :ref:`here <rivt-publish>`:
+A fourth **rv.D API**  for publishing the *doc* is documented 
+:ref:`here <rivt-publish>`. Examples of a *rivt file* with text, PDF and 
+HTML *docs* are here:
 
-.. raw:: html
-
-    <b>D(): </b> Publishes documents <br>
-
-Examples of a *rivt file* with text, PDF and HTML *docs* are here:
-
-- :ref:`rivt file <example-file>` 
-- :ref:`text doc <text-doc>`, 
-- :ref:`PDF doc <pdf-doc>`
-- :ref:`HTML doc <html-doc>`
+- :ref:`a rivt file <example-file>` 
+- :ref:`a text doc <text-doc>`
+- :ref:`a PDF doc <pdf-doc>`
+- :ref:`a HTML doc <html-doc>`
 
 ------------------------------------------------
 
@@ -111,8 +107,6 @@ statement. Default settings shown in parentheses and do not need to be specified
     # rv toggle_pub = true, false; toggles default section setting from private to public (false)
     # rv set_width = 80; character width of text output (80)
     # rv no_tag = true; false ; the API type symbol is added to section number (false)
-
-
 
 
 .. code-block:: python
