@@ -169,37 +169,44 @@ rv.V         a **<=** c | unit, decimal, text1, text2 | label                :re
 ========== =============================================================== ========================
 API Scope           Command                                                        Description
 ========== =============================================================== ========================
-rv.R        **| COPY |** abs src path | abs dest path | file pattern         :ref:`Copy file`
-rv.R        **| SHELL |** abs path | os, wait                                :ref:`Shell file`
-rv.I, V     **| TABLE |** file name | title,width,head;nohead,num;non        :ref:`Table file`     
+rv.R        **| SCRIPT |** file name | args, output file                     :ref:`Script file`
+rv.R        **| ARGS |** file name | namespace                               :ref:`Args file`
+rv.R        **| TEXT |** file name | type                                    :ref:`Text file` 
 rv.I, V     **| IMAGE |** file name | caption, scale, num;non, time;not      :ref:`Image file`
 rv.I, V     **| IMAGE2 |** file1, file2 | c1,c2,s1,s2,n1,n2                  :ref:`Adjacent images`
+rv.I, V     **| TABLE |** file name | title,width,head;nohead,num;non        :ref:`Table file`    
 rv.V        **| VALTABLE |** file name | title, width, num;non               :ref:`Valtable file`
 rv.V        **| VALSTOR |** file name | title, width, num;non                :ref:`Valstor file`
-rv.V        **| FUNCTION |** function, arg, var, type | label                :ref:`Function value`  
-rv.D        **| ATTACHPDF |** file name | front;back, title                  :ref:`Attach PDF`   
+rv.V        **| PYTHON |** file name | args, var, type, label                :ref:`Function value`  
+rv.V        **| FUNCTION |** function name | args, var, type, label          :ref:`Function value`  
+rv.T        **| COPY |** abs src path | abs dest path | file pattern         :ref:`Copy file`
+rv.T        **| SHELL |** abs file path | os, wait                           :ref:`Shell file`
 rv.D        **| PUBLISH |** doc title | type                                 :ref:`Publish doc` 
+rv.D        **| ATTACHPDF |** file name | front;back, title                  :ref:`Attach PDF`   
 ========== =============================================================== ========================
 
-**Relative paths for commands**
+**Command File Paths**
 
-================ ================================= ======
-   Command           Default Path [1]               R/W
-================ ================================= ======
-\| COPY |               os root                      R
-\| SHELL |              os root                      R
-\| IMAGE |          **rivt-report/image**            R
-\| IMAGE2 |         **rivt-report/image**            R
-\| TABLE |          **rivt-report/data**             R
-\| VALTABLE |       **rivt-report/data**             R
-\| VALSTOR |        **_rvstor/data** [2]             R
-\| ATTACHPDF |      **rivt-report/image**            R
-\| PUBLISH |      **rivt-report/_published/** [3]    W
-================ ================================= ======
+================ ===================================== ======
+   Command           Default Path [1]                   R/W
+================ ===================================== ======
+\| SCRIPT |         **rvreport-.../scripts** [2]        R/W
+\| ARGS |           **rvreport-.../data**                R
+\| TEXT |           **rvreport-.../data**                R 
+\| IMAGE |          **rvreport-.../image**               R
+\| IMAGE2 |         **rvreport-.../image**               R
+\| TABLE |          **rvreport-.../data**                R
+\| VALTABLE |       **rvreport-.../data**                R
+\| VALSTOR |        **rv_stor/vals**                     R
+\| ATTACHPDF |      **rvreport-.../data**                R
+\| PUBLISH |        **rvreport-.../_published/** [3]     W
+\| COPY |               os root                          R
+\| SHELL |              os root                          R
+================ ===================================== ======
 
-[1] The relative path is the absolute path to the *rivt-report* folder 
-[2] values written by *rivt* are read from *rv_stor/vals*  
-[3] *docs* are written to subdirectories of *_published*
+[1] Path overrides are relative to the **rvreport-...** folder and include an initial /
+[2] Output is written to **rvreport-.../data**   
+[3] *docs* are written to subdirectories of **rvreport-../_published** for each type
 
 ----------------------------------
 
@@ -290,13 +297,21 @@ rv.D        **| PUBLISH |** doc title | type                                 :re
                 ├── rv101-filename1.rst            
                 ├── rv102-filename2.rst                          
                 ├── rv201-filename3.rst          
-                    ...
-            ├── [_pdfdocs]/                        pdf docs and rivtbook report
+                  ...
+            ├── [_txtdocs]/                        txt docs and handbook report
+                ├── pdf auxiliary folders     
+                ├── report-title.txt
+                ├── rv101-filename1.txt             
+                ├── rv102-filename1.txt             
+                ├── rv201-filename3.txt
+                  ...        
+            ├── [_pdfdocs]/                        pdf docs and handbook report
                 ├── pdf auxiliary folders     
                 ├── report-title.pdf
                 ├── rv101-filename1.pdf             
                 ├── rv102-filename1.pdf             
                 ├── rv201-filename3.pdf
+                  ...
             └── [_rvstor]/                         rivt-generated source files
                 ├── [logs]/                           log files
                     ├── rv101-log.txt
@@ -333,7 +348,6 @@ rv.D        **| PUBLISH |** doc title | type                                 :re
                     ...        
             └── [bk3-]folder name                  handbook chapter folder
                     ...
-
 
 .. _unit-definitions:
 

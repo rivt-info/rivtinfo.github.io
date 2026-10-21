@@ -174,7 +174,7 @@ A typical :term:`rivtbook folder` structure is shown below. The required
 
     A new <i>rivtbook folder</i> is typically started by copying and editing a
     similar folder. Several <i>rivt-folder</i> examples can be downloaded at 
-    <a href="https://drive.google.com/drive/folders/1hwVOs0CVJqdZlTieV_Lt5bICbd3ywzWj?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto">openmodels.info</a>.
+    <a href="https://www.openmodels.info/">openmodels.info</a>.
     <br> <br>
 
  
@@ -284,13 +284,21 @@ steps. To insert a *rivtbook subdivision* into a *rivt doc or report*:
                 ├── rv101-filename1.rst            
                 ├── rv102-filename2.rst                          
                 ├── rv201-filename3.rst          
-                    ...
-            ├── [_pdfdocs]/                        pdf docs and rivtbook report
+                  ...
+            ├── [_txtdocs]/                        txt docs and handbook report
+                ├── pdf auxiliary folders     
+                ├── report-title.txt
+                ├── rv101-filename1.txt             
+                ├── rv102-filename1.txt             
+                ├── rv201-filename3.txt
+                  ...        
+            ├── [_pdfdocs]/                        pdf docs and handbook report
                 ├── pdf auxiliary folders     
                 ├── report-title.pdf
                 ├── rv101-filename1.pdf             
                 ├── rv102-filename1.pdf             
                 ├── rv201-filename3.pdf
+                  ...
             └── [_rvstor]/                         rivt-generated source files
                 ├── [logs]/                           log files
                     ├── rv101-log.txt
