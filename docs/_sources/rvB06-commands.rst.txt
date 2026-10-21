@@ -48,11 +48,13 @@ rv.D        **| ATTACHPDF |** file name | front;back, title                  :re
 \| SHELL |              os root                          R
 ================ ===================================== ======
 
-[1] Path overrides are relative to the **rvreport-...** folder and include an initial /
+[1] Path overrides are relative to the **rvreport-...** folder and include an initial slash
+
 [2] Output is written to **rvreport-.../data**   
+
 [3] *docs* are written to subdirectories of **rvreport-../_published** for each type
 
-See :ref:`here <report-folders>` for folder layout. 
+See :ref:`here <report-folders>` for the folder layout. 
 
 
 .. _Script file:
