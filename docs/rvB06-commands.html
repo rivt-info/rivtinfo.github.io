@@ -476,13 +476,13 @@
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Command</p></th>
-<th class="head"><p>Default Path [1]</p></th>
+<th class="head"><p>Default Path <a class="footnote-reference brackets" href="#id5" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p></th>
 <th class="head"><p>R/W</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>| SCRIPT |</p></td>
-<td><p><strong>rvreport-…/scripts</strong> [2]</p></td>
+<td><p><strong>rvreport-…/scripts</strong> <a class="footnote-reference brackets" href="#id6" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a></p></td>
 <td><p>R/W</p></td>
 </tr>
 <tr class="row-odd"><td><p>| ARGS |</p></td>
@@ -518,7 +518,7 @@
 <td><p>R</p></td>
 </tr>
 <tr class="row-odd"><td><p>| PUBLISH |</p></td>
-<td><p><strong>rvreport-…/_published/</strong> [3]</p></td>
+<td><p><strong>rvreport-…/_published/</strong> <a class="footnote-reference brackets" href="#id7" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a></p></td>
 <td><p>W</p></td>
 </tr>
 <tr class="row-even"><td><p>| COPY |</p></td>
@@ -532,9 +532,20 @@
 </tbody>
 </table>
 </div>
-<p>[1] Path overrides are relative to the <strong>rvreport-…</strong> folder and include an initial slash
-[2] Output is written to <strong>rvreport-…/data</strong>
-[3] <em>docs</em> are written to subdirectories of <strong>rvreport-../_published</strong> for each type</p>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id5" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">1</a><span class="fn-bracket">]</span></span>
+<p>Path overrides are relative to the <strong>rvreport-…</strong> folder and include an initial slash</p>
+</aside>
+<aside class="footnote brackets" id="id6" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">2</a><span class="fn-bracket">]</span></span>
+<p>Output is written to <strong>rvreport-…/data</strong></p>
+</aside>
+<aside class="footnote brackets" id="id7" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">3</a><span class="fn-bracket">]</span></span>
+<p><em>docs</em> are written to subdirectories of <strong>rvreport-../_published</strong> for each type</p>
+</aside>
+</aside>
 <p>See <a class="reference internal" href="rvC03-folders.html#report-folders"><span class="std std-ref">here</span></a> for the folder layout.</p>
 </section>
 <section id="script">
@@ -692,7 +703,7 @@ Example:
 </div>
 </section>
 <section id="adjacent-images">
-<span id="id2"></span><h2><strong>[6]</strong> Adjacent images<a class="headerlink" href="#adjacent-images" title="Link to this heading">#</a></h2>
+<span id="id8"></span><h2><strong>[6]</strong> Adjacent images<a class="headerlink" href="#adjacent-images" title="Link to this heading">#</a></h2>
 <p>The IMAGE2 command reads two PNG or JPEG file and places them side by side in
 the <em>doc</em>. The scale parameters are a decimal fraction of the page width. The
 captions may be ommited by using a single hyphen for either or both images. The
@@ -829,7 +840,7 @@ Example:
 </div>
 </section>
 <section id="python-file">
-<span id="id3"></span><h2><strong>[10]</strong> Python file<a class="headerlink" href="#python-file" title="Link to this heading">#</a></h2>
+<span id="id9"></span><h2><strong>[10]</strong> Python file<a class="headerlink" href="#python-file" title="Link to this heading">#</a></h2>
 <p>Executes Python code in the <em>rivt namespace</em> or user specified namespace. File
 paths used in the script are relative to the root <em>rivt</em> folder.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
@@ -906,7 +917,7 @@ Example:
 </div>
 </section>
 <section id="shell-file">
-<span id="id4"></span><h2><strong>[13]</strong> Shell file<a class="headerlink" href="#shell-file" title="Link to this heading">#</a></h2>
+<span id="id10"></span><h2><strong>[13]</strong> Shell file<a class="headerlink" href="#shell-file" title="Link to this heading">#</a></h2>
 <p>The SHELL command runs shell scripts including .cmd, .bat and .sh files. The
 <em>os</em> parameter specifies the operating system: <em>win</em>, <em>mac</em> or <em>linux</em>. The
 <em>wait; nowait</em> specifies whether rivt file processing waits for the script to
@@ -938,7 +949,7 @@ Example:
 </div>
 </section>
 <section id="publish-doc">
-<span id="id5"></span><h2><strong>[14]</strong> Publish doc<a class="headerlink" href="#publish-doc" title="Link to this heading">#</a></h2>
+<span id="id11"></span><h2><strong>[14]</strong> Publish doc<a class="headerlink" href="#publish-doc" title="Link to this heading">#</a></h2>
 <p>Publishes a <em>doc</em>.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Syntax:
     | PUBLISH | ini relative path | rst2pdf, texpdf, tex, hmtl
@@ -963,7 +974,7 @@ Example:
 </div>
 </section>
 <section id="attach-pdf">
-<span id="id6"></span><h2><strong>[15]</strong> Attach PDF<a class="headerlink" href="#attach-pdf" title="Link to this heading">#</a></h2>
+<span id="id12"></span><h2><strong>[15]</strong> Attach PDF<a class="headerlink" href="#attach-pdf" title="Link to this heading">#</a></h2>
 <p>Appends or prepends a PDF file to the <em>doc</em>. The title parameter generates an
 Appendix cover page with the specified title. A “-” omits the over page. For
 HTML <em>docs</em> the file is inserted as a donwload link.</p>

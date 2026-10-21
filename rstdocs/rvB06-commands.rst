@@ -32,9 +32,9 @@ rv.D        **| ATTACHPDF |** file name | front;back, title                  :re
 **Command File Paths - Defaults**
 
 ================ ===================================== ======
-   Command           Default Path [1]                   R/W
+   Command           Default Path [1]_                  R/W
 ================ ===================================== ======
-\| SCRIPT |         **rvreport-.../scripts** [2]        R/W
+\| SCRIPT |         **rvreport-.../scripts** [2]_       R/W
 \| ARGS |           **rvreport-.../data**                R
 \| TEXT |           **rvreport-.../data**                R 
 \| IMAGE |          **rvreport-.../image**               R
@@ -43,14 +43,14 @@ rv.D        **| ATTACHPDF |** file name | front;back, title                  :re
 \| VALTABLE |       **rvreport-.../data**                R
 \| VALSTOR |        **rv_stor/vals**                     R
 \| ATTACHPDF |      **rvreport-.../data**                R
-\| PUBLISH |        **rvreport-.../_published/** [3]     W
+\| PUBLISH |        **rvreport-.../_published/** [3]_    W
 \| COPY |               os root                          R
 \| SHELL |              os root                          R
 ================ ===================================== ======
 
-[1] Path overrides are relative to the **rvreport-...** folder and include an initial slash
-[2] Output is written to **rvreport-.../data**   
-[3] *docs* are written to subdirectories of **rvreport-../_published** for each type
+.. [1] Path overrides are relative to the **rvreport-...** folder and include an initial slash
+.. [2] Output is written to **rvreport-.../data**   
+.. [3] *docs* are written to subdirectories of **rvreport-../_published** for each type
 
 See :ref:`here <report-folders>` for the folder layout. 
 
