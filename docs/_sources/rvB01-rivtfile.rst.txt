@@ -24,7 +24,7 @@ scripts. To assemble a *doc* it uses four primary API functions:
 
 A fourth **rv.D API**  for publishing the *doc* is documented 
 :ref:`here <rivt-publish>`. Examples of a *rivt file* with text, PDF and 
-HTML *docs* are here:
+HTML *docs* are provided below.
 
 - :ref:`a rivt file <example-file>` 
 - :ref:`a text doc <text-doc>`
@@ -33,12 +33,13 @@ HTML *docs* are here:
 
 ------------------------------------------------
 
+
 .. _rivt-api:
 
 **[2]** API
-------------------------------------------------------------------------------- 
+--------------------------------------------------------- 
 
-The API is designed to be:
+The rivt API is designed to be:
 
 - lightweight
     :term:`rivt markup` wraps :term:`reStructuredText` and uses fewer than
@@ -57,11 +58,11 @@ The API is designed to be:
     reports. *rivt* can be run within a variety of IDEs.
 
 - efficient
-    The file and folder organization is intuitive and it produces clear, organized 
+    The file and folder organization is intuitive and produces clear, organized 
     documents with default settings. Settings may be customized via *conf.py* 
-    and *yaml* files. A *rivt doc* can be generated with a 
-    single file or, using the same folder structure extendec to a large report
-    involving  hundreds of files.
+    and *yaml* files. A *rivt doc* can be generated from a 
+    single file or, adding more files using the same folder structure to geneate
+    a large organized report. 
 
 The API methods are listed in the table below, where (rS) is a triple quoted 
 :term:`rivt string` argument.
@@ -86,13 +87,13 @@ for readability and section folding. See :ref:`here <rivt-header>` for
 
 The *rivt API* also provides scope for :ref:`rivt markup <rivt-markup>` 
 
----------------------------------------------------
+-----------------------------------------
 
 
 .. _rivt-settings:
 
 **[3]** File Settings
-----------------------------------
+-------------------------------------------------
 
 There are several comment settings that apply to the entire rivt file. They
 are specified in the *comment settings* immediately following the import
@@ -119,12 +120,12 @@ statement. Default settings shown in parentheses and do not need to be specified
         
         """)
 
-------------------------------------------------
+----------------------------------------
 
 .. _rivt-header:
 
 **[4]** String Header
-----------------------------------
+-------------------------------------------------
 
 Individual *API methods* define sections.  Each :doc:`API function <rvB01-rivtfile>` 
 takes a raw, triple quoted :term:`rivt string` composed of a 
