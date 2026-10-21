@@ -393,68 +393,11 @@
 <a class="dark-light reference internal image-reference" href="_images/process2.png"><img alt="rivt flow chart" class="align-center dark-light" src="_images/process2.png" style="width: 75%;" />
 </a>
 <p class="center"><strong>rivt Doc Processing</strong></p>
-<p>A <a class="reference internal" href="rvF02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> is a Python plain text file ( <em>.py</em> ) that includes API
-functions and imports the <a class="reference internal" href="rvF02-terms.html#term-rivtlib"><span class="xref std std-term">rivtlib</span></a> package into the <em>rv</em>
-<a class="reference internal" href="rvF02-terms.html#term-namespace"><span class="xref std std-term">namespace</span></a>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
-</pre></div>
-</div>
-<p><em>rivt files</em> are stored in either a <em>rivt</em> or <em>rivtbk</em> folder. Each <em>rivt file</em>
-and corresponding <em>rivt doc</em> has a prefix used for document organization. The</p>
 <p>Each <a class="reference internal" href="rvF02-terms.html#term-rivt-file"><span class="xref std std-term">rivt file</span></a> outputs a corresponding <a class="reference internal" href="rvF02-terms.html#term-doc"><span class="xref std std-term">doc</span></a> of the format
 specified in PUBLISH command of the <em>rv.D()</em> API. A rivt file number has the
 form:</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rvAnn-filename.py
-</pre></div>
-</div>
-<p>where rvAnn is a required file number prefix with A an alphanumeric character and nn a two
-digit non-negative integer. Corresponding rivt docs are output as:</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rvAnn-filename.txt, pdf or html
-</pre></div>
-</div>
-<hr class="docutils" />
-</section>
-<section id="report">
-<span id="rivt-report"></span><h2><strong>[2]</strong> Report<a class="headerlink" href="#report" title="Link to this heading">#</a></h2>
-<p>A <em>rivt report</em> is organized using the <em>file numbers</em>. The file numbers are
-used to organize reports into divisions and subdivisions. Each <em>rivt file</em> or
-<em>doc</em> is a report subdivision. If the <em>rivt filenames</em> are:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rvA01-filename.py
-rv105-filename.py
-rv212-filename.py
-</pre></div>
-</div>
-<p>the corresponding <em>doc numbers</em> in a report would be:</p>
-<ul class="simple">
-<li><p>A.1 (division A, subdivision 1)</p></li>
-<li><p>1.5 (division 1, subdivision 5)</p></li>
-<li><p>2.12 (division 2, subdivision 12)</p></li>
-</ul>
-<hr class="docutils" />
-</section>
-<section id="comment-settings-py">
-<span id="comment-settings"></span><h2><strong>[3]</strong> Comment Settings (.py)<a class="headerlink" href="#comment-settings-py" title="Link to this heading">#</a></h2>
-<p>Comment settings are specified in the <em>rivt file</em> immediately following the
-import statement and before API methods, and are used to override default
-settings for the entire <em>rivt doc</em>. The <em>rv private</em> setting may be changed at
-the section level. If default settings shown in parenthesis are acceptable the
-comment settings are not needed.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
-
-<span class="c1"># rv set_width = 80  ; character width of text output (80)</span>
-<span class="c1"># rv no_tag = true ; if false, the API type is added to section number (true)</span>
-<span class="c1"># rv private = true ; if false, default section heading changed to public (private)</span>
-</pre></div>
-</div>
-<p>See <a class="reference internal" href="rvB02-markup.html#rivt-markup"><span class="std std-ref">rivt markup</span></a> for further details.</p>
-<hr class="docutils" />
-</section>
-<section id="publish-settings">
-<span id="id1"></span><h2><strong>[4]</strong> Publish Settings<a class="headerlink" href="#publish-settings" title="Link to this heading">#</a></h2>
-<blockquote>
-<div><p>Settings for <em>doc</em> publishing are specified using the PUBLISH command and
+<p id="publish-settings">Settings for <em>doc</em> publishing are specified using the PUBLISH command and
 METADA block in the <em>rv.D()</em> API. An example is shown below.</p>
-</div></blockquote>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">D</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Publish Doc</span>
 
 <span class="s2">A rivt file may be published as a text, PDF or HTML doc by specifying the</span>
@@ -515,9 +458,37 @@ METADA block in the <em>rv.D()</em> API. An example is shown below.</p>
 <span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
+<hr class="docutils" />
+</section>
+<section id="report">
+<span id="rivt-report"></span><h2><strong>[2]</strong> Report<a class="headerlink" href="#report" title="Link to this heading">#</a></h2>
+<p>A <em>rivt report</em> is assembled using a <a class="reference internal" href="#report-script"><span class="std std-ref">Python script</span></a> and
+<em>rivt file numbers</em>. The file numbers organize reports into divisions and
+subdivisions. Each <em>rivt file</em> or <em>doc</em> is a report subdivision. If the <em>rivt
+filenames</em> are:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rvAnn-filename.py
+</pre></div>
+</div>
+<p>where rvAnn is a required file number prefix with A an alphanumeric character
+and nn a two digit non-negative integer. Corresponding rivt docs are output as:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rvAnn-filename.txt, pdf or html
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rvA01-filename.py
+rv105-filename.py
+rv212-filename.py
+</pre></div>
+</div>
+<p>the corresponding <em>doc numbers</em> in a report would be:</p>
+<ul class="simple">
+<li><p>A.1 (division A, subdivision 1)</p></li>
+<li><p>1.5 (division 1, subdivision 5)</p></li>
+<li><p>2.12 (division 2, subdivision 12)</p></li>
+</ul>
+<hr class="docutils" />
 </section>
 <section id="rivt-report-py">
-<span id="report-script"></span><h2><strong>[5]</strong> rivt-report.py<a class="headerlink" href="#rivt-report-py" title="Link to this heading">#</a></h2>
+<span id="report-script"></span><h2><strong>[4]</strong> rivt-report.py<a class="headerlink" href="#rivt-report-py" title="Link to this heading">#</a></h2>
 <p>The Python <em>report script</em> includes settings that specify assembly parameters
 and override defaults. These include:</p>
 <ul class="simple">
@@ -531,58 +502,77 @@ assemble the report from previously generated <em>docs</em>.  Most aspects of
 the <em>report</em> appearance are determined at when generating <em>docs</em>.</p>
 <p>An example rivt-report.py script is shown below.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#! python</span>
-<span class="sd">&quot;&quot;&quot;generate rivt report</span>
+<span class="sd">&quot;&quot;&quot;generate a rivt report</span>
 
-<span class="sd">Run this Python script in the rivt-report folder to write reports to the</span>
+<span class="sd">Run this Python script in the rivt-report folder. It writes reports to the</span>
 <span class="sd">_published folder. Copy and rename this file to save custom report settings</span>
-<span class="sd">(e.g. rivt-folder-new.py).</span>
+<span class="sd">(e.g. make-report-new.py).</span>
 
-<span class="sd">The script does not regenerate individual PDF docs unless specified in the</span>
-<span class="sd">settings. Regenerating individual PDF docs adds execution time. HTML and text</span>
-<span class="sd">docs are always regenerated. See https://www.rivt.info for more details.</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">To save execution time the script does not regenerate individual PDF docs</span>
+<span class="sd">unless specified in the settings. HTML and text docs are always regenerated.</span>
+<span class="sd">See https://www.rivt.info for more details. The report may be published in each</span>
+<span class="sd">format in a single runby including it in the typeS list. &quot;&quot;&quot;</span>
 
-<span class="c1"># ========= Modify report settings between the double lines ==============</span>
-<span class="n">iniS</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">[settings]</span>
-<span class="s2">;----- file name for report including extension (pdf, html, txt)</span>
-<span class="s2">rept_filename = rivt-treehouse-report.txt</span>
-<span class="s2">;----- comma separated list of excluded doc numbers eg. rv102, rv204</span>
-<span class="s2">exclude = --</span>
-<span class="s2">;-----  update settings and configuration files from rivt</span>
-<span class="s2">rivt_cfg = true</span>
-<span class="s2">;----- regenerate pdf doc files</span>
-<span class="s2">regen_pdf = false</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">importlib</span>
 
-<span class="s2">[format]</span>
-<span class="s2">title = Treehouse Design</span>
-<span class="s2">subtitle =rivt report</span>
-<span class="s2">client = Example</span>
-<span class="s2">project_ref = Proj. 0001</span>
-<span class="s2">authors = R Holland</span>
-<span class="s2">copyright = StL</span>
-<span class="s2">version = 1.0.0a12</span>
-<span class="s2">;----- logo files are stored in rvsrc/page folder, size is % page width</span>
-<span class="s2">coverlogo = tree1.png</span>
-<span class="s2">coverlogo_size = 50</span>
-<span class="s2">;----- header and footer logos and labels</span>
-<span class="s2">running_logo = rivt02.png</span>
-<span class="s2">running_label = rivt</span>
-<span class="s2">;----- underline links in PDF - true or false</span>
-<span class="s2">pdf_link = true</span>
-<span class="s2">;----- page size letter, legal, A4 - margins top, right, bottom and left</span>
-<span class="s2">pdf_pagesize = letter</span>
-<span class="s2">pdf_margins = 1in, 1in, 1in, 1in</span>
-<span class="s2">&quot;&quot;&quot;</span>
+<span class="c1"># ==== Update rept_filename when needed</span>
+<span class="c1"># ==== Do not modify .{typeS} variable</span>
+<span class="c1"># ==== Edit typeS list with desired output formats [&quot;txt&quot;,&quot;pdf&quot;,&quot;html&quot;] =======</span>
+<span class="c1">#==============================================================================</span>
+<span class="k">for</span> <span class="n">typeS</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;txt&quot;</span><span class="p">,</span><span class="s2">&quot;pdf&quot;</span><span class="p">,</span><span class="s2">&quot;html&quot;</span><span class="p">]:</span>  <span class="c1"># 1 or more options: [&quot;txt&quot;,&quot;pdf&quot;,&quot;html&quot;]</span>
+    <span class="n">reportsetS</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">    [report]</span>
+<span class="s2">    ;-----------------------------------------</span>
+<span class="s2">    rept_filename = rivt-treefort-report.</span><span class="si">{</span><span class="n">typeS</span><span class="si">}</span>
+<span class="s2">    version = 1.0.0a17</span>
+<span class="s2">    exclude = -- ; comma separated doc numbers to exclude eg. rv102, rv204</span>
+<span class="s2">    [process]</span>
+<span class="s2">    ;-----------------------------------------</span>
+<span class="s2">    auto_cfg = true ; writes config files, false allows for manual editing</span>
+<span class="s2">    regen_pdf = false ; regenerate pdf doc files</span>
+<span class="s2">    rep_verbose = true ; generate report - verbose output</span>
+<span class="s2">    [layout]</span>
+<span class="s2">    ;--------------- cover page and runner settings</span>
+<span class="s2">    ;--- add logo files to rvsrc/img folder, size is % page width</span>
+<span class="s2">    title = Tree Fort</span>
+<span class="s2">    subtitle = Structural Design</span>
+<span class="s2">    client = Report Example</span>
+<span class="s2">    project_ref = Proj. 0003</span>
+<span class="s2">    authors = R Holland</span>
+<span class="s2">    copyright = StL</span>
+<span class="s2">    coverlogo = tree1.png</span>
+<span class="s2">    coverlogo_size = 50</span>
+<span class="s2">    running_logo = rivt02.png</span>
+<span class="s2">    running_label = rivt</span>
+<span class="s2">    ;---------------- PDF settings</span>
+<span class="s2">    ; colors: red, blue, green, black, gray, brown, maroon, gray, olive, cyan</span>
+<span class="s2">    ; margins: top, right, bottom, left    page size: letter, legal, A4</span>
+<span class="s2">    pdf_link_underline = false</span>
+<span class="s2">    pdf_link_color = blue</span>
+<span class="s2">    pdf_pagesize = letter</span>
+<span class="s2">    pdf_margins = 1in, 1in, 1in, 1in</span>
+<span class="s2">    ;------------- TOC levels</span>
+<span class="s2">    ; 1: include subdivisions    2: include subdivisions and sections</span>
+<span class="s2">    toc_level = 1</span>
+<span class="s2">    &quot;&quot;&quot;</span>
 <span class="c1"># ============================================================================</span>
-<span class="c1"># the following line is required after settings</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvreport</span>
+<span class="c1"># the following lines are required</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;reportset&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">reportsetS</span>
+    <span class="n">module_name</span> <span class="o">=</span> <span class="s1">&#39;rivtlib.rvreport&#39;</span>
+    <span class="k">if</span> <span class="n">module_name</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">modules</span><span class="p">:</span>
+        <span class="c1"># Reloads the module on subsequent iterations</span>
+        <span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">modules</span><span class="p">[</span><span class="n">module_name</span><span class="p">])</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1"># Loads the module for the very first time</span>
+        <span class="nb">__import__</span><span class="p">(</span><span class="n">module_name</span><span class="p">)</span>
 </pre></div>
 </div>
 <hr class="docutils" />
 </section>
 <section id="command-defaults">
-<span id="default-folders"></span><h2><strong>[6]</strong> Command Defaults<a class="headerlink" href="#command-defaults" title="Link to this heading">#</a></h2>
+<span id="default-folders"></span><h2><strong>[5]</strong> Command Defaults<a class="headerlink" href="#command-defaults" title="Link to this heading">#</a></h2>
 <p>Files are opened using default paths relative to the <em>rivt-report</em> folder for
 <em>reports</em> and <em>doc folders</em> for <em>rivtbooks</em>. They have the form:</p>
 <div class="line-block">
@@ -664,7 +654,7 @@ a rivt root folder with the prefix <i>rivt-</i> followed by the report
 label, e.g. <i>rivt-Report-Label</i>. <br> <br></section>
 <hr class="docutils" />
 <section id="html-and-pdf-config-py">
-<h2><strong>[7]</strong> HTML and PDF Config (.py)<a class="headerlink" href="#html-and-pdf-config-py" title="Link to this heading">#</a></h2>
+<h2><strong>[6]</strong> HTML and PDF Config (.py)<a class="headerlink" href="#html-and-pdf-config-py" title="Link to this heading">#</a></h2>
 <p>The <em>conf.py</em> configuration file contains default configuration settings for
 <em>rivt docs</em> and reports. A typical <em>conf.py</em> file looks like this:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#! python</span>
@@ -1251,11 +1241,9 @@ label, e.g. <i>rivt-Report-Label</i>. <br> <br></section>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docs"><strong>[1]</strong> Docs</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#report"><strong>[2]</strong> Report</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-settings-py"><strong>[3]</strong> Comment Settings (.py)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publish-settings"><strong>[4]</strong> Publish Settings</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-report-py"><strong>[5]</strong> rivt-report.py</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#command-defaults"><strong>[6]</strong> Command Defaults</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-and-pdf-config-py"><strong>[7]</strong> HTML and PDF Config (.py)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rivt-report-py"><strong>[4]</strong> rivt-report.py</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#command-defaults"><strong>[5]</strong> Command Defaults</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#html-and-pdf-config-py"><strong>[6]</strong> HTML and PDF Config (.py)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pdf-style-file-yaml"><strong>[8]</strong> PDF Style File (.yaml)</a></li>
 </ul>
   </nav></div>

@@ -97,7 +97,8 @@ The *rivt API* also provides scope for :ref:`rivt markup <rivt-markup>`
 
 There are several comment settings that apply to the entire rivt file. They
 are specified in the *comment settings* immediately following the import
-statement. Default settings shown in parentheses and do not need to be specified.
+statement. Default settings are shown in parentheses and do not need to be 
+specified. See :ref:`rivt markup <rivt-markup>` for further details.
 
 
 .. code-block:: python
@@ -105,9 +106,9 @@ statement. Default settings shown in parentheses and do not need to be specified
     import rivtlib.rvapi as rv
 
     # rv pub_folder = true, false; create _rvpublic folder in project root (false)
-    # rv toggle_pub = true, false; toggles default section setting from private to public (false)
+    # rv toggle_pub = true, false; toggles default privacy setting for doc (false)
     # rv set_width = 80; character width of text output (80)
-    # rv no_tag = true; false ; the API type symbol is added to section number (false)
+    # rv no_tag = true; false; add an API symbol to the section number (false)
 
 
 .. code-block:: python
@@ -121,6 +122,7 @@ statement. Default settings shown in parentheses and do not need to be specified
         """)
 
 ----------------------------------------
+
 
 .. _rivt-header:
 

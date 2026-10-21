@@ -501,13 +501,14 @@ for readability and section folding. See <a class="reference internal" href="#ri
 <span id="rivt-settings"></span><h2><strong>[3]</strong> File Settings<a class="headerlink" href="#file-settings" title="Link to this heading">#</a></h2>
 <p>There are several comment settings that apply to the entire rivt file. They
 are specified in the <em>comment settings</em> immediately following the import
-statement. Default settings shown in parentheses and do not need to be specified.</p>
+statement. Default settings are shown in parentheses and do not need to be
+specified. See <a class="reference internal" href="rvB02-markup.html#rivt-markup"><span class="std std-ref">rivt markup</span></a> for further details.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
 
 <span class="c1"># rv pub_folder = true, false; create _rvpublic folder in project root (false)</span>
-<span class="c1"># rv toggle_pub = true, false; toggles default section setting from private to public (false)</span>
+<span class="c1"># rv toggle_pub = true, false; toggles default privacy setting for doc (false)</span>
 <span class="c1"># rv set_width = 80; character width of text output (80)</span>
-<span class="c1"># rv no_tag = true; false ; the API type symbol is added to section number (false)</span>
+<span class="c1"># rv no_tag = true; false; add an API symbol to the section number (false)</span>
 </pre></div>
 </div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %% My Section Label</span>

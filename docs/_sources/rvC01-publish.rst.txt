@@ -17,87 +17,14 @@
 
     **rivt Doc Processing**
 
-A :term:`rivt file` is a Python plain text file ( *.py* ) that includes API
-functions and imports the :term:`rivtlib` package into the *rv*
-:term:`namespace`:
-
-.. code-block:: python
-
-    import rivtlib.rvapi as rv
-
-*rivt files* are stored in either a *rivt* or *rivtbk* folder. Each *rivt file*
-and corresponding *rivt doc* has a prefix used for document organization. The
-
 Each :term:`rivt file` outputs a corresponding :term:`doc` of the format
 specified in PUBLISH command of the *rv.D()* API. A rivt file number has the
 form:
 
-.. code-block:: text
-
-    rvAnn-filename.py
-
-where rvAnn is a required file number prefix with A an alphanumeric character and nn a two
-digit non-negative integer. Corresponding rivt docs are output as:
-
-.. code-block:: text
-
-    rvAnn-filename.txt, pdf or html
-
----------------------------
-
-.. _rivt-report:
-
-**[2]** Report
--------------------------------------------------------------------------------
-
-A *rivt report* is organized using the *file numbers*. The file numbers are
-used to organize reports into divisions and subdivisions. Each *rivt file* or
-*doc* is a report subdivision. If the *rivt filenames* are:
-
-.. code-block:: bash
-
-    rvA01-filename.py
-    rv105-filename.py
-    rv212-filename.py  
-
-the corresponding *doc numbers* in a report would be: 
-
-- A.1 (division A, subdivision 1)
-- 1.5 (division 1, subdivision 5)
-- 2.12 (division 2, subdivision 12)
-
-----------------------------------------
-
-.. _comment-settings:
-
-**[3]** Comment Settings (.py)
---------------------------------
-
-Comment settings are specified in the *rivt file* immediately following the
-import statement and before API methods, and are used to override default
-settings for the entire *rivt doc*. The *rv private* setting may be changed at
-the section level. If default settings shown in parenthesis are acceptable the
-comment settings are not needed.
-
-.. code-block:: python
-
-    import rivtlib.rvapi as rv
-
-    # rv set_width = 80  ; character width of text output (80)
-    # rv no_tag = true ; if false, the API type is added to section number (true)
-    # rv private = true ; if false, default section heading changed to public (private)
-
-See :ref:`rivt markup <rivt-markup>` for further details.
-
-------------------------------
-
 .. _publish-settings:
 
-**[4]** Publish Settings
-------------------------------
-
-    Settings for *doc* publishing are specified using the PUBLISH command and
-    METADA block in the *rv.D()* API. An example is shown below.
+Settings for *doc* publishing are specified using the PUBLISH command and
+METADA block in the *rv.D()* API. An example is shown below.
 
 .. code-block:: python
 
@@ -159,10 +86,52 @@ See :ref:`rivt markup <rivt-markup>` for further details.
     auto_cfg = true ; if false, config files are not updated from rivt file
     _[[END]]    
     """)
-     
+
+----------------------------------------------------
+
+
+.. _rivt-report:
+
+**[2]** Report
+-------------------------------------------------------------------------------
+
+
+A *rivt report* is assembled using a :ref:`Python script <report-script>` and
+*rivt file numbers*. The file numbers organize reports into divisions and
+subdivisions. Each *rivt file* or *doc* is a report subdivision. If the *rivt
+filenames* are:
+
+.. code-block:: text
+
+    rvAnn-filename.py
+
+where rvAnn is a required file number prefix with A an alphanumeric character
+and nn a two digit non-negative integer. Corresponding rivt docs are output as:
+
+.. code-block:: text
+
+    rvAnn-filename.txt, pdf or html
+
+
+.. code-block:: bash
+
+    rvA01-filename.py
+    rv105-filename.py
+    rv212-filename.py  
+
+the corresponding *doc numbers* in a report would be: 
+
+- A.1 (division A, subdivision 1)
+- 1.5 (division 1, subdivision 5)
+- 2.12 (division 2, subdivision 12)
+
+----------------------------------------
+
+
+
 .. _report-script:
 
-**[5]** rivt-report.py
+**[4]** rivt-report.py
 ----------------------------------------------------------
 
 The Python *report script* includes settings that specify assembly parameters
@@ -182,58 +151,77 @@ An example rivt-report.py script is shown below.
 .. code-block:: python
 
     #! python
-    """generate rivt report
+    """generate a rivt report
 
-    Run this Python script in the rivt-report folder to write reports to the
+    Run this Python script in the rivt-report folder. It writes reports to the
     _published folder. Copy and rename this file to save custom report settings
-    (e.g. rivt-folder-new.py).
+    (e.g. make-report-new.py).
 
-    The script does not regenerate individual PDF docs unless specified in the
-    settings. Regenerating individual PDF docs adds execution time. HTML and text
-    docs are always regenerated. See https://www.rivt.info for more details.
-    """
+    To save execution time the script does not regenerate individual PDF docs
+    unless specified in the settings. HTML and text docs are always regenerated.
+    See https://www.rivt.info for more details. The report may be published in each
+    format in a single runby including it in the typeS list. """
 
-    # ========= Modify report settings between the double lines ==============
-    iniS = """
-    [settings]
-    ;----- file name for report including extension (pdf, html, txt)
-    rept_filename = rivt-treehouse-report.txt
-    ;----- comma separated list of excluded doc numbers eg. rv102, rv204
-    exclude = -- 
-    ;-----  update settings and configuration files from rivt 
-    rivt_cfg = true
-    ;----- regenerate pdf doc files 
-    regen_pdf = false
+    import os
+    import sys
+    import importlib
 
-    [format]
-    title = Treehouse Design 
-    subtitle =rivt report
-    client = Example
-    project_ref = Proj. 0001
-    authors = R Holland 
-    copyright = StL
-    version = 1.0.0a12
-    ;----- logo files are stored in rvsrc/page folder, size is % page width
-    coverlogo = tree1.png
-    coverlogo_size = 50
-    ;----- header and footer logos and labels
-    running_logo = rivt02.png 
-    running_label = rivt
-    ;----- underline links in PDF - true or false
-    pdf_link = true 
-    ;----- page size letter, legal, A4 - margins top, right, bottom and left
-    pdf_pagesize = letter
-    pdf_margins = 1in, 1in, 1in, 1in 
-    """
+    # ==== Update rept_filename when needed
+    # ==== Do not modify .{typeS} variable
+    # ==== Edit typeS list with desired output formats ["txt","pdf","html"] =======
+    #==============================================================================
+    for typeS in ["txt","pdf","html"]:  # 1 or more options: ["txt","pdf","html"]
+        reportsetS = f"""
+        [report]
+        ;-----------------------------------------
+        rept_filename = rivt-treefort-report.{typeS}
+        version = 1.0.0a17
+        exclude = -- ; comma separated doc numbers to exclude eg. rv102, rv204
+        [process]
+        ;-----------------------------------------
+        auto_cfg = true ; writes config files, false allows for manual editing
+        regen_pdf = false ; regenerate pdf doc files 
+        rep_verbose = true ; generate report - verbose output
+        [layout]
+        ;--------------- cover page and runner settings
+        ;--- add logo files to rvsrc/img folder, size is % page width
+        title = Tree Fort
+        subtitle = Structural Design
+        client = Report Example
+        project_ref = Proj. 0003
+        authors = R Holland 
+        copyright = StL
+        coverlogo = tree1.png
+        coverlogo_size = 50
+        running_logo = rivt02.png 
+        running_label = rivt
+        ;---------------- PDF settings
+        ; colors: red, blue, green, black, gray, brown, maroon, gray, olive, cyan
+        ; margins: top, right, bottom, left    page size: letter, legal, A4 
+        pdf_link_underline = false
+        pdf_link_color = blue
+        pdf_pagesize = letter
+        pdf_margins = 1in, 1in, 1in, 1in 
+        ;------------- TOC levels
+        ; 1: include subdivisions    2: include subdivisions and sections
+        toc_level = 1
+        """
     # ============================================================================
-    # the following line is required after settings
-    import rivtlib.rvreport
-
+    # the following lines are required
+        os.environ["reportset"] = reportsetS
+        module_name = 'rivtlib.rvreport'
+        if module_name in sys.modules:
+            # Reloads the module on subsequent iterations
+            importlib.reload(sys.modules[module_name])
+        else:
+            # Loads the module for the very first time
+            __import__(module_name)
+    
 ------------------------------------------------
 
 .. _default-folders:
 
-**[6]** Command Defaults
+**[5]** Command Defaults
 ------------------------------------------------------------------------------
 
 Files are opened using default paths relative to the *rivt-report* folder for
@@ -290,7 +278,7 @@ See :ref:`command summary <command-summary>` for further details.
 --------------------
 
 
-**[7]** HTML and PDF Config (.py)
+**[6]** HTML and PDF Config (.py)
 --------------------------------------------------------------------- 
 
 The *conf.py* configuration file contains default configuration settings for 
