@@ -17,11 +17,12 @@
 
 .. _rivt-context:
 
+
 **[1]** *rivt* and AI
 ------------------------------------------------------------------------ 
 
-*AI* can be used to generate *rivt* content including scripts and tables. It
-can assist in converting PDFs into text and ASCII math used by *rivt files*.
+*AI* can be used to generate *rivt* content including scripts and tables and
+assist in converting PDFs into text and ASCII math used by *rivt files*.
 Since *rivtlib* is built on Python and rivt files are Python files, many
 existing *AI* tools are availale for interacting with and extending *rivt*.
 *AI* outputs are based on a few large foundational models which provide in turn

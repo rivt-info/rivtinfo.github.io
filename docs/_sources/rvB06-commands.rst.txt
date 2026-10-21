@@ -13,7 +13,9 @@ API Scope           Command                                                     
 ========== =============================================================== ========================
 rv.R        **| SCRIPT |** file name | args, output file                     :ref:`Script file`
 rv.R        **| ARGS |** file name | namespace                               :ref:`Args file`
-rv.R        **| TEXT |** file name | type                                    :ref:`Text file` 
+rv.R        **| TEXT |** file name | type                                    :ref:`Text file`
+rv.R        **| ABSTEXT |** file name | type                                 :ref:`Text file`
+rv.R        **| ABSIMAGE |** file name | caption, scale, num;non, time;not   :ref:`Image file`
 rv.I, V     **| IMAGE |** file name | caption, scale, num;non, time;not      :ref:`Image file`
 rv.I, V     **| IMAGE2 |** file1, file2 | c1,c2,s1,s2,n1,n2                  :ref:`Adjacent images`
 rv.I, V     **| TABLE |** file name | title,width,head;nohead,num;non        :ref:`Table file`    
@@ -27,7 +29,7 @@ rv.D        **| PUBLISH |** doc title | type                                 :re
 rv.D        **| ATTACHPDF |** file name | front;back, title                  :ref:`Attach PDF`   
 ========== =============================================================== ========================
 
-**Command File Paths**
+**Command File Paths - Defaults**
 
 ================ ===================================== ======
    Command           Default Path [1]                   R/W
@@ -118,8 +120,8 @@ Doc Types     text, PDF, HTML
 **[4]** Text
 ------------------------------------------
 
-The TEXT command reads and formats text and code files. It inserts
-text after framing and formatting, without actually running it. 
+The TEXT and ABSTEXT commands read and format text and code files. They insert
+text after framing and formatting, without actually running. 
 
 Language types include:
 
@@ -143,6 +145,17 @@ Language types include:
         Example:
             | TEXT | quote.txt | literal
 
+
+.. topic:: | ABSTEXT |
+
+    .. code-block:: text
+
+        Syntax:
+            | TEXT | absolute path | type
+        Example:
+            | TEXT | c:/mydir/quote.txt | literal
+
+
 =========== =====================================
 API Scope     rv.R
 File Types    see above 
@@ -155,16 +168,11 @@ Doc Types     text, PDF, HTML
 **[5]** Image
 -------------------------------------------
 
-The IMAGE command reads a PNG or JPEG file and centers it in the *doc*. The
-scale parameter is a decimal fraction of the page width. The caption may be
-ommited by using a single hyphen. The *num;nonum* parameter specifies whether
-to assign a figure number. The image path is inserted in the text *doc* instead
-of the image.
-
-If a *doc* is part of a report and no path is specified, the file is assumed to
-be in the default folder */src/img/* . Otherwise the path needs to be specified
-relative to the report root (rivt file folder). If the doc is a single doc 
-the file is read from the rivt file folder.
+The IMAGE and ABSIMAGE commands read a PNG or JPEG file and centers it in the
+*doc*. The scale parameter is a decimal fraction of the page width. The caption
+may be ommited by using a single hyphen. The *num;nonum* parameter specifies
+whether to assign a figure number. The image path is inserted in the text *doc*
+instead of the image.
 
 .. code-block:: text
 
@@ -174,8 +182,18 @@ the file is read from the rivt file folder.
     Example:
         | IMAGE | file1.png | Map, 0.5, num
 
+.. code-block:: text
+
+    Syntax:
+        | ABSIMAGE | absolute path | caption, scale, num;nonum
+
+    Example:
+        | ABSIMAGE | c:/mydir/file1.png | Map, 0.5, num
+
+
+
 =========== ==========================
-API Scope     rv.V, rv.I
+API Scope     rv.V, rv.I or rv.R
 File Types    PNG, JPG 
 Doc Types     PDF, HTML
 =========== ==========================
@@ -193,11 +211,6 @@ captions may be ommited by using a single hyphen for either or both images. The
 *fig;nofig* parameters specify whether to assign a figure number to either or
 both images. The image path is inserted in the text *doc* instead
 of the image.
-
-If a *doc* is part of a report and no path is specified, the file is assumed to
-be in the default folder */src/img/* . Otherwise the path needs to be specified
-relative to the report root (rivt file folder). If the doc is a 
-single doc the file is read from the rivt file folder.
 
 .. code-block:: text
 
@@ -225,10 +238,6 @@ specifies the cell justification - left, center, right. The number parameter
 specifies whether the table is numbered. For csv files, the head parameter
 specifies whether the first row is a column header.
 
-If a *doc* is part of a report and no path is specified, the file is assumed to
-be in the default folder */src/data/* . Otherwise the path needs to be specified
-relative to the report root (rivt file folder). If the doc is a 
-single doc the file is read from the rivt file folder.
 
 .. topic:: | TABLE |   
 
@@ -263,12 +272,6 @@ table title. A hyphen omits the title. The *rows* parameter specifies the rows
 to import. The *num; nonum* parameter specifies whether to assign a table
 number to the values table.
 
-If a *doc* is part of a report and no path is specified, the file is assumed to
-be in the default folder */src/vals/* . Otherwise the path needs to be
-specified relative to the report root (rivt file folder). If the values are
-read from prior calculated values, they will be found in the */stored/vals*
-folder. If the doc is a single doc the file is read from the rivt file
-folder.
 
 .. code-block:: text
 
@@ -303,13 +306,6 @@ were generated by rivtlib or provided by the author. The title parameter is the
 table title. A hyphen omits the title. The *rows* parameter specifies the rows
 to import. The *num; nonum* parameter specifies whether to assign a table
 number to the values table.
-
-If a *doc* is part of a report and no path is specified, the file is assumed to
-be in the default folder */src/vals/* . Otherwise the path needs to be
-specified relative to the report root (rivt file folder). If the values are
-read from prior calculated values, they will be found in the */stored/vals*
-folder. If the doc is a single doc the file is read from the rivt file
-folder.
 
 .. code-block:: text
 
@@ -391,7 +387,7 @@ OS alias may also be used e.g. %USERPROFILE% on Windows.
         | COPY | -rvsrc-/scripts | %USERPROFILE%/venv1
 
 =========== ==========================
-API Scope     Tools
+API Scope     rv.T
 File Types    *.*
 Doc Types     text, PDF, HTML
 =========== ==========================
@@ -420,7 +416,7 @@ read from the rivt file folder.
         | SHELL | rvsrc | sap.cmd
 
 =========== ==========================
-API Scope     rv.R
+API Scope     rv.T
 File Types    .cmd, .bat, .sh, .bsh 
 Doc Types     text, PDF, HTML
 =========== ==========================
@@ -430,8 +426,6 @@ Doc Types     text, PDF, HTML
 
 **[14]** Publish doc
 -------------------------------------------
-
- 
 
 Publishes a *doc*. 
 
@@ -449,14 +443,10 @@ File Types    tex, html, text, pdf
 Doc Types     text, PDF, HTML
 =========== ==========================
 
-
-
 .. _Attach PDF:
 
 **[15]** Attach PDF
 -------------------------------------------
-
- 
 
 Appends or prepends a PDF file to the *doc*. The title parameter generates an
 Appendix cover page with the specified title. A "-" omits the over page. For
@@ -466,11 +456,11 @@ HTML *docs* the file is inserted as a donwload link.
 
     .. code-block:: text
 
-        Syntax:
-            | ATTACHPDF | relative path | *front;back*, title
+        Syntax:``
+            | ATTACHPDF | relative path | front;back, title
   
         Example:
-            | ATTACHPDF | relative path | *front;back*, title
+            | ATTACHPDF | relative path | front;back, title
 
 
 =========== ==========================

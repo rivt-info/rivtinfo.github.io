@@ -498,15 +498,15 @@ for readability and section folding. See <a class="reference internal" href="#ri
 </section>
 <section id="file-settings">
 <span id="rivt-settings"></span><h2><strong>[3]</strong> File Settings<a class="headerlink" href="#file-settings" title="Link to this heading">#</a></h2>
-<p>There are several comment settings that apply to the entire rivt file. These
+<p>There are several comment settings that apply to the entire rivt file. They
 are specified in the <em>comment settings</em> immediately following the import
-statement. Default settings shown in parentheses do not need to be specified -
-only variants.</p>
+statement. Default settings shown in parentheses and do not need to be specified.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">rivtlib.rvapi</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rv</span>
 
-<span class="c1"># rv private = false ; default section parameter changed to public (true)</span>
-<span class="c1"># rv no_tag = true ; API type is added to section number (true)</span>
-<span class="c1"># rv set_width = 90; character width of text output (80)</span>
+<span class="c1"># rv pub_folder = true, false; create _rvpublic folder in project root (false)</span>
+<span class="c1"># rv toggle_pub = true, false; toggles default section setting from private to public (false)</span>
+<span class="c1"># rv set_width = 80; character width of text output (80)</span>
+<span class="c1"># rv no_tag = true; false ; the API type symbol is added to section number (false)</span>
 </pre></div>
 </div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %% My Section Label</span>
@@ -540,7 +540,7 @@ is processed in addition to the <em>content substring</em> if provided.</p>
 <p>The <em>API method header</em> has two general forms: <em>Default</em> and <em>Modified</em>. The
 default form is used when the <em>header substring</em> accepts default parameters. It
 only requires a section label. The modified form is used when default parameters
-need to be modified.</p>
+need to be overriden. <em>The rv.D API</em> header does not have modification settings.</p>
 <p><strong>Section Headers</strong></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label</span>
 
@@ -557,14 +557,6 @@ need to be modified.</p>
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><strong>rv.D Header</strong></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rv</span><span class="o">.</span><span class="n">D</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Section Label</span>
-
-<span class="s2">    Content text and rivt markup - indented four spaces.</span>
-
-<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
 <p>The first parameter list in the <em>header substring</em> specifies handling of the
 <em>content substring</em>. The second and third parameters, where applicable, specify
 a type and file that is processed by the API method before processing
@@ -576,17 +568,23 @@ acceptable.</p>
 <li><p>s | store - stores the section content in <em>_rvstored/sect</em> as a <em>.rvt file.</em></p></li>
 <li><p>h | hide - processes the section but suppresses the <em>doc</em> output.</p></li>
 <li><p>m | merge - merges the section with the previous section.</p></li>
-<li><p>p | public - toggles the default public/private status of the section (see <a class="reference internal" href="#rivt-settings"><span class="std std-ref">comments</span></a>)</p></li>
 <li><p>n | new page - Starts a new pdf page.</p></li>
+<li><p>p | public - toggles the default public/private status of the section</p></li>
 </ul>
+<p>Note that the default publication status for a <em>doc</em> is private. The default
+setting can be switched to public using a
+<a class="reference internal" href="#rivt-settings"><span class="std std-ref">comment setting</span></a>. The <em>p</em> parameter toggles the
+setting from whichever default is currently in effect.</p>
 <p>The default parameters, when ommitted, are as follows:</p>
 <ul class="simple">
 <li><p>section is not stored</p></li>
 <li><p>section content is published</p></li>
 <li><p>section not merged</p></li>
-<li><p>private section</p></li>
-<li><p>continuous pages</p></li>
+<li><p>section is private</p></li>
+<li><p>pages are continuous</p></li>
 </ul>
+<p>Note: that section breaks at the <em>doc</em> level are specified in the
+<a class="reference internal" href="rvC01-publish.html#publish-settings"><span class="std std-ref">METADATA block</span></a>.</p>
 <hr class="docutils" />
 </section>
 <section id="string-content">

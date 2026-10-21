@@ -89,11 +89,80 @@ comment settings are not needed.
 
 See :ref:`rivt markup <rivt-markup>` for further details.
 
---------------------
+------------------------------
 
+.. _publish-settings:
+
+**[4]** Publish Settings
+------------------------------
+
+    Settings for *doc* publishing are specified using the PUBLISH command and
+    METADA block in the *rv.D()* API. An example is shown below.
+
+.. code-block:: python
+
+    rv.D("""Publish Doc 
+    
+    A rivt file may be published as a text, PDF or HTML doc by specifying the
+    PUBLISH type parameter as txt, pdf or html. 
+    
+    Published files are found in sub-folders of the _published folder. A text
+    version of the doc or report is is always written to the rivt and
+    _rivt-public folders as a README.txt file. READMEs are formatted and
+    displayed on the first page of a GitHub repo.
+    
+    | PUBLISH | Pier and Ramp Design | pdf
+    
+    _[[METADATA]] 
+    [doc]
+    ;-----------------------------------------
+    authors = rodhholland
+    version = 1.0.0a20
+    repo = https://github.com/rivt-info/rivt-example-01
+    license = https://opensource.org/license/mit/
+    copyright = --
+    fork1_authors = --
+    fork1_version = --
+    fork1_repo = --
+    fork1_license = https://opensource.org/license/mit/
+    [layout]
+    ;----------------------- cover page and runner settings
+    ; put logo files in rvsrc/image folder
+    subtitle =  Structural Design
+    copyright = --
+    client = Zach Kahn, Verissimo Dr., Novato CA
+    coverpage = true
+    coverlogo = rivt-design2.png
+    ; size in percent page width
+    coverlogo_size = 30 
+    runninglogo = rivt-design2.png
+    ; size in pixels
+    runninglogo_size = 175
+    runninglabel = Rivt Design
+    project_ref = proj. 1001
+    ;------------------------ PDF settings
+    ; colors: red, blue, green, black, gray, brown, maroon, gray, olive, cyan
+    pdf_link_color = brown
+    pdf_link_underline = false
+    ; page sizes: letter, legal, A4    
+    pdf_pagesize = letter 
+    ; margin order: top, right, bottom, left
+    pdf_margins = 1in, 1in, 1in, 1in 
+    ; start new page for each section
+    pdf_page = false 
+    ;----------------------- TOC levels
+    ;--- 1: include subdivisions   2: include subdivisions and sections
+    toc_level = 2
+    [process]
+    ;-----------------------------------------
+    doc_verbose = true; if false minmize output during doc processing
+    auto_cfg = true ; if false, config files are not updated from rivt file
+    _[[END]]    
+    """)
+     
 .. _report-script:
 
-**[4]** rivt-report.py
+**[5]** rivt-report.py
 ----------------------------------------------------------
 
 The Python *report script* includes settings that specify assembly parameters
@@ -164,7 +233,7 @@ An example rivt-report.py script is shown below.
 
 .. _default-folders:
 
-**[2]** Command Defaults
+**[6]** Command Defaults
 ------------------------------------------------------------------------------
 
 Files are opened using default paths relative to the *rivt-report* folder for
@@ -221,7 +290,7 @@ See :ref:`command summary <command-summary>` for further details.
 --------------------
 
 
-**[3]** HTML and PDF Config (.py)
+**[7]** HTML and PDF Config (.py)
 --------------------------------------------------------------------- 
 
 The *conf.py* configuration file contains default configuration settings for 
@@ -381,7 +450,7 @@ The *conf.py* configuration file contains default configuration settings for
 ----------------------------------
 
 
-**[4]** PDF Style File (.yaml)
+**[8]** PDF Style File (.yaml)
 --------------------------------------------------------------------- 
 
 The *rivtstyle.yaml* file contains default formats for PDF files.

@@ -21,6 +21,7 @@ rv.V         c **:=:** func(x,y) | unit1, unit2, decimal | label             :re
 rv.V         a **<=** c | unit, decimal, text1, text2 | label                :ref:`Compare value`
 ========== =============================================================== ========================
 
+To omit evaluation of a second unit insert a dash (-) in its place.
 
 .. _Define value:
 

@@ -98,19 +98,19 @@ The *rivt API* also provides scope for :ref:`rivt markup <rivt-markup>`
 **[3]** File Settings
 ----------------------------------
 
-There are several comment settings that apply to the entire rivt file. These
+There are several comment settings that apply to the entire rivt file. They
 are specified in the *comment settings* immediately following the import
-statement. Default settings shown in parentheses do not need to be specified -
-only variants.
+statement. Default settings shown in parentheses and do not need to be specified.
 
 
 .. code-block:: python
 
     import rivtlib.rvapi as rv
 
-    # rv private = false ; default section parameter changed to public (true)
-    # rv no_tag = true ; API type is added to section number (true)
-    # rv set_width = 90; character width of text output (80)
+    # rv pub_folder = true, false; create _rvpublic folder in project root (false)
+    # rv toggle_pub = true, false; toggles default section setting from private to public (false)
+    # rv set_width = 80; character width of text output (80)
+    # rv no_tag = true; false ; the API type symbol is added to section number (false)
 
 
 
@@ -153,9 +153,7 @@ is processed in addition to the *content substring* if provided.
 The *API method header* has two general forms: *Default* and *Modified*. The
 default form is used when the *header substring* accepts default parameters. It
 only requires a section label. The modified form is used when default parameters
-need to be modified.
-
-
+need to be overriden. *The rv.D API* header does not have modification settings.
 
 **Section Headers**
 
@@ -175,17 +173,6 @@ need to be modified.
         
         """)
 
-
-**rv.D Header**
-
-.. code-block:: python
-
-    rv.D("""Section Label 
-
-        Content text and rivt markup - indented four spaces.
-         
-        """)
-
 The first parameter list in the *header substring* specifies handling of the
 *content substring*. The second and third parameters, where applicable, specify 
 a type and file that is processed by the API method before processing 
@@ -199,17 +186,24 @@ acceptable.
 - s | store - stores the section content in *_rvstored/sect* as a *.rvt file.*
 - h | hide - processes the section but suppresses the *doc* output.
 - m | merge - merges the section with the previous section.
-- p | public - toggles the default public/private status of the section (see :ref:`comments <rivt-settings>`)
 - n | new page - Starts a new pdf page.
+- p | public - toggles the default public/private status of the section 
+
+Note that the default publication status for a *doc* is private. The default
+setting can be switched to public using a 
+:ref:`comment setting <rivt-settings>`. The *p* parameter toggles the 
+setting from whichever default is currently in effect.
 
 The default parameters, when ommitted, are as follows:
 
 - section is not stored
 - section content is published
 - section not merged
-- private section
-- continuous pages 
+- section is private
+- pages are continuous 
 
+Note: that section breaks at the *doc* level are specified in the 
+:ref:`METADATA block <publish-settings>`. 
 
 ------------------------------------------------
 
