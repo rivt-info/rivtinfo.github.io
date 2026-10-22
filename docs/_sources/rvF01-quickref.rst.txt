@@ -409,17 +409,23 @@ rv.D        **| ATTACHPDF |** file name | front;back, title                  :re
     kPA = new_unit("kPA", PA * (10**3), "kilopascals")
     # force
     kN = new_unit("kN", N * (10**3), "kilonewton")
-    MN = new_unit("mN", N * (10**6), "meganewton")
-    km = new_unit("kM", M * (10**3), "kilometer")
-    kN_m3 = new_unit("kN_m3", kN / (M**3), "kilonewton per cubic meter")
-    kN_m = new_unit("kN_m", kN / M, "kilonewton per meter")
-    kN_cm = new_unit("kN_cm", kN / cm, "kilonewton per centimeter")
-    mkN = new_unit("mkN", (kN * M), "meter-kilonewton")
+    MN = new_unit("MN", N * (10**6), "meganewton")
+    km = new_unit("km", M * (10**3), "kilometer")
+    kN_m = new_unit("kN/m", kN / M, "kilonewton per meter")
+    kN_cm = new_unit("kN/cm", kN / cm, "kilonewton per centimeter")
+    kN_m2 = new_unit("kN/m^2", kN / M^2, "kilonewton per square meter")
+    kN_cm2 = new_unit("kN/cm^2", kN / (cm**2), "kilonewton per square centimeter")
+    mkN = new_unit("m-kN", (kN * M), "meter-kilonewton")
     # area
-    sqm = new_unit("sqm", (M**2), "square meter")
-    cm2 = new_unit("cm2", (cm**2), "square centimeter")
-    cm3 = new_unit("cm3", (cm**3), "cubic centimeter")
-    cm4 = new_unit("cm4", (cm**4), "cm to fourth power")
+    m2 = new_unit("m^2", (m**2), "square meter")
+    mm2 = new_unit("mm^2", (mm**2), "square millimeter")
+    cm2 = new_unit("cm^2", (cm**2), "square centimeter")
+    # volume
+    cm3 = new_unit("cm^3", (cm**3), "cubic centimeter")
+    cm4 = new_unit("cm^4", (cm**4), "cm to fourth power")
+    # density
+    kg_m3 = new_unit("kg/m^3", KG / (M**3), "kilogram per cubic meter")
+    kN_m3 = new_unit("kN/m^3", kN / (M**3), "kilonewton per cubic meter")
     #
     # ------------------------------------------------- imperial
     #
@@ -432,32 +438,31 @@ rv.D        **| ATTACHPDF |** file name | front;back, title                  :re
     # force
     lbf = new_unit("lbf", 4.4482216 * N, "pound-force")
     kips = new_unit("kips", lbf * 1000.0, "kilopound")
-    # moments
-    ftkips = new_unit("ft-kip", ft * lbf * 1000.0, "foot-kips")
+    ftkips = new_unit("ft-kips", ft * lbf * 1000.0, "foot-kips")
     inkips = new_unit("in-kips", inch * lbf * 1000.0, "inch-kips")
-    # linear force
-    k_in = new_unit("k_in", kips / inch, "kips per inch")
-    k_ft = new_unit("k_ft", kips / ft, "kips per foot")
-    p_in = new_unit("lb_in", lbf / inch, "pounds per inch")
-    p_ft = new_unit("lb_ft", lbf / ft, "pounds per foot")
+    kips_in = new_unit("kips/in", kips / inch, "kips per inch")
+    kips_ft = new_unit("kips/ft", kips / ft, "kips per foot")
+    lbf_in = new_unit("lbf/in", lbf / inch, "pounds per inch")
+    lbf_ft = new_unit("lbf/ft", lbf / ft, "pounds per foot")
     # area
-    sf = new_unit("sf", ft**2, "square feet")
-    in2 = new_unit("in2", inch**2, "square inches")
-    in3 = new_unit("in3", inch**3, "cubic inches")
-    in4 = new_unit("in4", inch**4, "inches to fourth")
+    ft2 = new_unit("ft^2", ft**2, "square feet")
+    in2 = new_unit("in^2", inch**2, "square inches")
+    in3 = new_unit("in^3", inch**3, "cubic inches")
+    in4 = new_unit("in^4", inch**4, "inches to fourth")
     # pressure
-    p_sf = new_unit("p_sf", lbf / ft**2, "pounds per square foot")
-    p_si = new_unit("p_si", lbf / inch**2, "pounds per square inch")
-    k_sf = new_unit("k_sf", kips / ft**2, "kips per square foot")
-    k_si = new_unit("k_si", kips / inch**2, "kips per square inch")
+    lbf_ft2 = new_unit("lbf/ft^2", lbf / ft**2, "pounds per square foot")
+    lbf_in2 = new_unit("lbf/in^2", lbf / inch**2, "pounds per square inch")
+    kips_ft2 = new_unit("kips/ft^2", kips / ft**2, "kips per square foot")
+    kips_in2 = new_unit("kips/in^2", kips / inch**2, "kips per square inch")
     # density
-    p_ci = new_unit("p_ci", lbf / inch**3, "pounds per cubic inch")
-    p_cf = new_unit("p_cf", lbf / ft**3, "pounds per cubic ft")
+    kips_in3 = new_unit("kips/in^3", kips / inch**3, "pounds per cubic inch")
+    lbf_in3 = new_unit("lbf/in^3", lbf / inch**3, "pounds per cubic inch")
+    lbf_ft3 = new_unit("lbf/ft^3", lbf / ft**3, "pounds per cubic ft")
     # time
     hr = new_unit("hr", 60 * 60 * sec, "hours")
     # velocity
-    mph = new_unit("mph", miles / hr, "miles per hour")
-    fps = new_unit("fps", ft / sec, "feet per second")
+    miles_hr = new_unit("miles/hr", miles / hr, "miles per hour")
+    ft_sec = new_unit("ft/sec", ft / sec, "feet per second")
 
 ----------------------
 
