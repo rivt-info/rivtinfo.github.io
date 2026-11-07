@@ -45,23 +45,20 @@ Home
 documents and their sources. It includes a portable desktop editor and an
 editor that runs on a server in the browser.
 
-.. raw:: html
-
-   <br>
 
 .. table:: 
    :class: v-align-middle
       
    +------------------------------------------------------------------------------------------------------+
-   | |rivt_logo|    `rivtlib`_ - a Python library for processing *rivt markup* ( `source code`_ )         |
+   | |rivt_logo|\ `rivtlib`_ - a Python library for processing *rivt markup* ( `source code`_ )           |
    +------------------------------------------------------------------------------------------------------+
-   | |studio_logo|  `rivtStudio`_ - a portable writing and publishing desktop application                 |
+   | |studio_logo|\ `rivtStudio`_ - a portable writing and publishing desktop application                 |
    +------------------------------------------------------------------------------------------------------+
-   | |remote_logo|  `rivtRemote`_ - containerized *rivtStudio* for servers and browsers                   |
+   | |remote_logo|\ `rivtRemote`_ - containerized *rivtStudio* for servers and browsers                   |
    +------------------------------------------------------------------------------------------------------+
-   |  |git_logo|    :ref:`GitHub search <search-interface>` - find public *rivt* projects on GitHub       |
+   | |git_logo|\ :ref:`GitHub search <search-interface>` - find public *rivt* projects on GitHub          |
    |                                                                                                      |
-   |  |open_logo|   `openModels`_ - online database of shared model and document files including *rivt*   |
+   |  |open_logo|\ `openModels`_ - online database of shared model and document files including *rivt*    |
    +------------------------------------------------------------------------------------------------------+
    
 .. _openModels: https://openmodels.info
