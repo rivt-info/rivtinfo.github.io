@@ -56,17 +56,17 @@ the installation programs and source code.
 .. table:: 
    :class: v-align-middle
       
-   +----------------------------------------------------------------------------------------------------------------+
-   | |rivt_logo|\ `rivtlib`_ - a Python library for processing *rivt markup* ( `rivtlib source`_ )                  |
-   +----------------------------------------------------------------------------------------------------------------+
-   | |studio_logo|\ `rivtStudio`_ - a portable writing and publishing desktop application  ( `rivtStudio source`_ ) |
-   +----------------------------------------------------------------------------------------------------------------+
-   | |remote_logo|\ `rivtRemote`_ - containerized *rivtStudio* for servers and browsers  ( `rivtRemote source`_ )   |
-   +----------------------------------------------------------------------------------------------------------------+
-   | |git_logo|\ :ref:`GitHub search <search-interface>` - find public *rivt* projects on GitHub                    |
-   |                                                                                                                |
-   |  |open_logo|\ `openModels`_ - online database of shared model and document files including *rivt*              |
-   +----------------------------------------------------------------------------------------------------------------+
+   +-----------------------------------------------------------------------------------------------------------------+
+   | |rivt_logo|\\ `rivtlib`_ - a Python library for processing *rivt markup* ( `rivtlib source`_ )                  |
+   +-----------------------------------------------------------------------------------------------------------------+
+   | |studio_logo|\\ `rivtStudio`_ - a portable writing and publishing desktop application  ( `rivtStudio source`_ ) |
+   +-----------------------------------------------------------------------------------------------------------------+
+   | |remote_logo|\\ `rivtRemote`_ - containerized *rivtStudio* for servers and browsers  ( `rivtRemote source`_ )   |
+   +-----------------------------------------------------------------------------------------------------------------+
+   | |git_logo|\\ :ref:`GitHub search <search-interface>` - find public *rivt* projects on GitHub                    |
+   |                                                                                                                 |
+   | |open_logo|\\ `openModels`_ - online database of shared model and document files including *rivt*               |
+   +-----------------------------------------------------------------------------------------------------------------+
    
 .. _rivtlib: https://pypi.org/project/rivtlib
 .. _rivtStudio: https://github.com/rivt-info/rivtStudio/releases/latest
