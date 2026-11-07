@@ -51,19 +51,19 @@ Home
 
 
 
-*rivt* is an open source `Python <https://www.python.org/>` project for writing
-and sharing live engineering documents and their sources. Python knowledge is
-not required, but working with custom Python scripts increases *rivt*
-capabilities. It includes both portable desktop and server-browser editor and
-publication environments based on `VSCodium <https://vscodium.com/>`_. The
-table below provides links to the installation programs and source code.
+*rivt* is an open source `Python <https://www.python.org/>`_ project for
+writing and sharing live engineering documents with sources. Python knowledge
+is not required, but incorporating custom Python scripts increases *rivt*
+capabilities. *rivt* includes both portable desktop and server-browser editors
+based on `VSCodium <https://vscodium.com/>`_. The table below provides links to
+the installation programs and source code.
 
 
 .. table:: 
    :class: v-align-middle
       
    +------------------------------------------------------------------------------------------------------------------------+
-   | |rivt_logo| |spaces| `rivtlib`_ - Python library for processing *rivt markup* ( `rivtlib source`_ )                    |
+   | |rivt_logo| |spaces| `rivtlib`_ - Python library for processing *rivt files* ( `rivtlib source`_ )                     |
    +------------------------------------------------------------------------------------------------------------------------+
    | |space6| |git_logo| |spaces| :ref:`GitHub search <search-interface>` - find public *rivt* files on GitHub              |
    |                                                                                                                        |
