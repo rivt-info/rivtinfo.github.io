@@ -50,13 +50,13 @@ complex. They may include text, images, tables, calculations, active models and
 computer code. They are also dynamic and frequently updated and recalculated as
 project designs evolve and change.
 
-The need for reuse of engineering documents is a matter of improving efficiency
-and making time for independent and creative thought. Most engineering
-calculations are not fundamentally unique. The basic equations and methods are
-shared across many projects. However they are always organized in a unique way
-for the specific project requirements. The commercial market response to this
-need has been to develop a number of siloed programs with barriers to sharing
-and reuse including:
+The need for reuse of engineering documents is a matter of reducing writing
+time and increasing time for independent and creative thought and checking.
+Most engineering calculations are not fundamentally unique. The basic equations
+and methods are shared across many projects. However they are organized
+in unique ways for specific project requirements. The commercial market
+response to this need has been to develop a number of siloed programs with
+barriers to sharing and reuse including:
 
 - incompatible documents across different programs
 - costly software updates that are backward incompatible
