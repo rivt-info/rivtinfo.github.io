@@ -76,7 +76,7 @@ containerized server application that runs in the browser.
 ( see :ref:`FAQ <Licenses>` ). The :ref:`motivation <rvmotivation>` for 
 writing *rivt* is the benefit that comes from freely sharing live 
 engineering documents that can be edited, automated and checked. Examples of 
-*rivt files* and *docs* are `here <_rivt-tutor>`. 
+*rivt files* and *docs* are :ref:`here <rivt-tutor>`. 
  
 For questions and comments please use :email:`this email. <questions@openmodels.engineering>`.
 
