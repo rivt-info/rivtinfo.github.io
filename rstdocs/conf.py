@@ -4,7 +4,7 @@ from pathlib import Path
 
 
 project = "rivt.info"
-copyright = "2026 rodhholland"
+copyright = "2026 openmodels.engineering"
 author = "rodhholland"
 release = "1.0.0a20"
 extensions = [

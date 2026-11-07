@@ -22,7 +22,7 @@ Home
    <hr>
 
 .. |spaces| unicode:: U+00A0 U+00A0 U+00A0
-.. |space6| unicode:: U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0
+.. |space6| unicode:: U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0  U+00A0 U+00A0 U+00A0
 
 .. |rivt_logo| image:: _static/img/rivt-finalb.png
    :width: 70px
@@ -85,7 +85,7 @@ the installation programs and source code.
 `MIT open source license <https://opensource.org/license/mit>`_ 
 ( see :ref:`FAQ <Licenses>` ). 
 
-*rivt* was written  because there are :ref:`many benefits <rvmotivation>` to freely 
+*rivt* was created because there are :ref:`many benefits <rvmotivation>` to freely 
 writing and sharing live engineering documents. Examples of *rivt files* and *docs* 
 are :ref:`here <rivt-tutor>`.  For questions and comments please send 
 email to questions@openmodels.engineering
