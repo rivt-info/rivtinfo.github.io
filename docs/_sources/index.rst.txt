@@ -54,7 +54,7 @@ containerized server application that runs in the browser.
    +---------------+-----------------------------------------------------------------------------------+
    | |remote_logo| | `rivtRemote`_ - containerized *rivtStudio* for servers and browsers               |
    +---------------+-----------------------------------------------------------------------------------+
-   |  |git_logo|   | :ref:`GitHub search <search-interface>` - find public *rivt* projects on GitHub  |
+   |  |git_logo|   | :ref:`GitHub search <search-interface>` - find public *rivt* projects on GitHub   |
    |               |                                                                                   |
    |  |open_logo|  | `openModels`_ - online database of shared models and documents including *rivt*   |
    +---------------+-----------------------------------------------------------------------------------+
