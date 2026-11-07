@@ -44,10 +44,10 @@ is :ref:`here <search-interface>`.
 **[2]** Motivation
 -------------------------------------------------------------------------------- 
 
-Broadly sharing engineering documents has been a challenge because they are
-complex and because commercial software objectives do not align with this goal.
-They may include text, images, tables, calculations, active models and computer
-code. They are also dynamic and are frequently updated and recalculated as
+Broadly sharing live engineering documents has been a challenge because 
+commercial software objectives do not align with this goal and because they are
+complex. They may include text, images, tables, calculations, active models and 
+computer code. They are also dynamic and frequently updated and recalculated as
 project designs evolve and change.
 
 The need for reuse of engineering documents is a matter of improving efficiency
