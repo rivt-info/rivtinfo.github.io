@@ -61,13 +61,13 @@ the installation programs and source code.
    :class: v-align-middle
       
    +------------------------------------------------------------------------------------------------------------------------+
-   | |rivt_logo| |spaces| `rivtlib`_ - a Python library for processing *rivt markup* ( `rivtlib source`_ )                  |
+   | |rivt_logo| |spaces| `rivtlib`_ - Python library for processing *rivt markup* ( `rivtlib source`_ )                    |
    +------------------------------------------------------------------------------------------------------------------------+
-   | |studio_logo| |spaces| `rivtStudio`_ - a portable writing and publishing desktop application  ( `rivtStudio source`_ ) |
+   | |studio_logo| |spaces| `rivtStudio`_ - portable writing and publishing desktop application  ( `rivtStudio source`_ )   |
    +------------------------------------------------------------------------------------------------------------------------+
    | |remote_logo| |spaces| `rivtRemote`_ - containerized *rivtStudio* for servers and browsers  ( `rivtRemote source`_ )   |
    +------------------------------------------------------------------------------------------------------------------------+
-   | |space6| |git_logo| |spaces| :ref:`GitHub search <search-interface>` - find public *rivt* projects on GitHub           |
+   | |space6| |git_logo| |spaces| :ref:`GitHub search <search-interface>` - find public *rivt* files on GitHub              |
    |                                                                                                                        |
    | |space6| |open_logo| |spaces| `openModels`_ - online database of shared model and document files including *rivt*      |
    +------------------------------------------------------------------------------------------------------------------------+
@@ -81,7 +81,7 @@ the installation programs and source code.
 .. _rivtStudio source: https://github.com/rivt-info/rivtStudio
 .. _rivtRemote source: https://github.com/rivtlib-dev/rivtStudio-devcontainer-1.0.0a20
 
-*rivtlib*, *rivtStudio* and *rivtRmote* are distributed under the 
+*rivtlib*, *rivtStudio* and *rivtRemote* are distributed under the 
 `MIT open source license <https://opensource.org/license/mit>`_ 
 ( see :ref:`FAQ <Licenses>` ). 
 
