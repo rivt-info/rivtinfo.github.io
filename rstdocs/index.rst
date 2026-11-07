@@ -37,11 +37,8 @@ Home
    :width: 70px
 
 *rivt* is an open source Python project for writing and sharing engineering
-documents and their sources. It includes both a portable desktop editor and a
-containerized server application that runs in the browser. The 
-:ref:`motivation <rvmotivation>` for writing *rivt* is the benefit that 
-comes from freely sharing live engineering documents that can be edited, 
-automated and checked.
+documents and their sources. It includes a portable desktop editor and a
+containerized server application that runs in the browser.
 
 .. raw:: html
 
@@ -53,15 +50,15 @@ automated and checked.
    +---------------+-----------------------------------------------------------------------------------+
    | |rivt_logo|   | `rivtlib`_ - a Python library for processing *rivt markup* ( `source`_ )          |
    +---------------+-----------------------------------------------------------------------------------+
-   | |studio_logo| | `rivtStudio`_ - a portable writing and publishing application on the desktop      |
+   | |studio_logo| | `rivtStudio`_ - a portable writing and publishing desktop application             |
    +---------------+-----------------------------------------------------------------------------------+
    | |remote_logo| | `rivtRemote`_ - containerized *rivtStudio* for servers and browsers               |
    +---------------+-----------------------------------------------------------------------------------+
    |  |git_logo|   |  :ref:`GitHub search <search-interface>` - find public *rivt* projects on GitHub  |
-   +---------------+-----------------------------------------------------------------------------------+
+   |               |                                                                                   |
    |  |open_logo|  | `openModels`_ - online database of shared models and documents including *rivt*   |
    +---------------+-----------------------------------------------------------------------------------+
-
+   
 .. _openModels: https://openmodels.info
 .. _rivtStudio: https://github.com/rivt-info/rivtStudio
 .. _rivtRemote: https://github.com/rivtlib-dev/rivtStudio-devcontainer-1.0.0a20
@@ -69,11 +66,12 @@ automated and checked.
 
 .. _source: https://github.com/rivtlib-dev/rivtlib
 
-
 *rivtlib* and *rivtStudio* are distributed under the 
 `MIT open source license <https://opensource.org/license/mit>`_ 
-( see :ref:`FAQ <Licenses>` ). Email for 
-:email:`questions and comments. <openmodels.info@gmail.com>`
+( see :ref:`FAQ <Licenses>` ). The :ref:`motivation <rvmotivation>` for 
+writing *rivt* is the benefit that comes from freely sharing live 
+engineering documents that can be edited, automated and checked.
+Email for :email:`questions and comments. <openmodels.info@gmail.com>`
 
 .. raw:: html
 
