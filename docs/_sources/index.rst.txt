@@ -75,8 +75,10 @@ containerized server application that runs in the browser.
 `MIT open source license <https://opensource.org/license/mit>`_ 
 ( see :ref:`FAQ <Licenses>` ). The :ref:`motivation <rvmotivation>` for 
 writing *rivt* is the benefit that comes from freely sharing live 
-engineering documents that can be edited, automated and checked.
-Email for :email:`questions and comments. <openmodels.info@gmail.com>`
+engineering documents that can be edited, automated and checked. Examples of 
+*rivt files* and *docs* are `here <_rivt-tutor>`. 
+ For questions and comments please use  
+ :email:`this email. <questions@openmodels.engineering>`.
 
 .. raw:: html
 

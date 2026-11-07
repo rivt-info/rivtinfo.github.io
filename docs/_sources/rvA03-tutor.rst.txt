@@ -115,7 +115,7 @@ the **| PUBLISH |** command.
         # rv private = true ; if false, default section heading changed to public (private)
 
 
-.. dropdown:: [ 2 ] Add API method - rv.I
+.. dropdown:: [ 2 ] Add Insert method - rv.I
 
     See :ref:`API methods <rivt-api>` and header and content 
     :ref:`substrings <rivt-header>` for rivt string details. This section also 
@@ -142,7 +142,7 @@ the **| PUBLISH |** command.
             """)
 
 
-.. dropdown:: [ 3 ] Add API method - rv.I
+.. dropdown:: [ 3 ] Add Insert method- rv.I
     
     This section includes inline comments ( ## ) and 
     :ref:`[[TABLE]] blocks <block summary>`. The **# %%** marks provide 
@@ -170,7 +170,7 @@ the **| PUBLISH |** command.
         
             """)
 
-.. dropdown:: [ 4 ]  Add API method - rv.V
+.. dropdown:: [ 4 ]  Add Values method - rv.V
     
     This Value section includes the | VALTABLE | and | IMAGE | 
     :ref:`commands <command-summary>`, the _[C] and _[T] :ref:`tags <line summary>`, 
@@ -215,7 +215,7 @@ the **| PUBLISH |** command.
         
             """)
 
-.. dropdown:: [ 5 ] Add API method - rv.V 
+.. dropdown:: [ 5 ] Add Values method - rv.V 
 
     This Value section includes the | PYTHON |  and | IMAGE2 | 
     :ref:`commands <command-summary>`, the _[B] and _[M] :ref:`tags <line summary>`, 
@@ -266,7 +266,7 @@ the **| PUBLISH |** command.
             """)
 
 
-.. dropdown:: [ 6 ] Final API method - rv.D
+.. dropdown:: [ 6 ] Add Doc method - rv.D
     
     The Doc API publishes formatted *docs* and then exits the rivt file. The
     primary command is the **| PUBLISH |** command which specifies the doc title
