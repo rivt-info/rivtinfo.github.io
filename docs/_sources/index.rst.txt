@@ -22,7 +22,7 @@ Home
    <hr>
 
 .. |spaces| unicode:: U+00A0 U+00A0 U+00A0
-.. |space6| unicode:: U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0
+.. |space6| unicode:: U+00A0 U+00A0 U+00A0 U+00A0 U+00A0
 
 .. |rivt_logo| image:: _static/img/rivt-finalb.png
    :width: 70px
