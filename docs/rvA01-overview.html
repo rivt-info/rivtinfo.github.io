@@ -395,15 +395,17 @@
 <section id="overview">
 <span id="rivt-overview"></span><h2><strong>[1]</strong> Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
 <p><em>rivt</em> is an open source project for writing, sharing and reusing engineering
-calculation documents <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>. This user manual is written in <em>rivt</em>.
-It runs on the desktop and in the cloud. The project includes <em>rivtlib</em> -
-a <a class="reference external" href="https://pypi.org/project/rivtlib/" rel="noreferrer" target="_blank">Python package</a> that formats and compiles
-<em>rivt files</em>, <em>rivtStudio</em> - an integrated desktop editor that manages and
-publishes <em>rivt docs</em>, and <em>rivtRemote</em> - a containerized version of <em>rivtStudio</em>
-that runs on a server in the cloud with a browser interface. Python knowledge
-is not required to use <em>rivt</em>, but adding custom Python scripts increases
-its capabilities.</p>
-<p>A rivt file (.py) uses <em>rivt markup</em> to organize text, calculations, images,
+calculation documents <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>. It runs on the desktop and in the cloud.
+The project components include:</p>
+<ul class="simple">
+<li><p><em>rivtlib</em> - a <a class="reference external" href="https://pypi.org/project/rivtlib/" rel="noreferrer" target="_blank">Python package</a> that
+formats and compiles <em>rivt files</em> into <em>rivt docs</em></p></li>
+<li><p><em>rivt files</em> - text documents written using <em>rivt markup</em></p></li>
+<li><p><em>rivt docs</em> - formatted text, HTML and PDF <em>docs</em> output from <em>rivt files</em></p></li>
+<li><p><em>rivtStudio</em> - an integrated desktop editor that manages and publishes</p></li>
+<li><p><em>rivtRemote</em> - a cloud version of <em>rivtStudio</em> that runs on a server in a browser</p></li>
+</ul>
+<p>A <em>rivt</em> file (.py) uses <em>rivt markup</em> to organize text, calculations, images,
 code and external programs to publish <em>rivt doc</em>. A <em>doc</em> is a formatted
 text, HTML and PDF document. The <em>rivt</em> folder structure provides a replicable
 format for organizing a wide variety of file types. Groups of <em>docs</em> can be
@@ -421,8 +423,8 @@ is <a class="reference internal" href="rvD03-share.html#search-interface"><span 
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="id2" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
-<p>rivt includes provisions for selectively exporting <em>rivt file</em>
-sections to a <em>public rivt report folder</em> for open-source distribution.</p>
+<p><em>rivt</em> includes provisions for selectively exporting <em>rivt file</em>
+sections to a <em>public rivt folder</em> intended for open-source distribution.</p>
 </aside>
 </aside>
 <hr class="docutils" />
@@ -430,7 +432,7 @@ sections to a <em>public rivt report folder</em> for open-source distribution.</
 <section id="motivation">
 <span id="rvmotivation"></span><h2><strong>[2]</strong> Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h2>
 <p>Freely sharing live engineering documents has been a challenge because
-commercial software objectives do not align with this goal and because the
+commercial software does not align with this objective, and because the
 documents are complex. They may include text, images, tables, calculations,
 active models and computer code. They are also dynamic, and frequently updated
 and recalculated as project designs evolve and change.</p>

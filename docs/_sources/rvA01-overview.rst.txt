@@ -7,16 +7,17 @@
 -------------------------------------------------------------------------------- 
 
 *rivt* is an open source project for writing, sharing and reusing engineering
-calculation documents [1]_. This user manual is written in *rivt*. 
-It runs on the desktop and in the cloud. The project includes *rivtlib* - 
-a `Python package <https://pypi.org/project/rivtlib/>`_ that formats and compiles 
-*rivt files*, *rivtStudio* - an integrated desktop editor that manages and 
-publishes *rivt docs*, and *rivtRemote* - a containerized version of *rivtStudio*
-that runs on a server in the cloud with a browser interface. Python knowledge 
-is not required to use *rivt*, but adding custom Python scripts increases 
-its capabilities. 
+calculation documents [1]_. It runs on the desktop and in the cloud. 
+The project components include: 
 
-A rivt file (.py) uses *rivt markup* to organize text, calculations, images,
+- *rivtlib* - a `Python package <https://pypi.org/project/rivtlib/>`_ that 
+  formats and compiles *rivt files* into *rivt docs*
+- *rivt files* - text documents written using *rivt markup*
+- *rivt docs* - formatted text, HTML and PDF *docs* output from *rivt files*
+- *rivtStudio* - an integrated desktop editor that manages and publishes 
+- *rivtRemote* - a cloud version of *rivtStudio* that runs on a server in a browser 
+
+A *rivt* file (.py) uses *rivt markup* to organize text, calculations, images,
 code and external programs to publish *rivt doc*. A *doc* is a formatted
 text, HTML and PDF document. The *rivt* folder structure provides a replicable
 format for organizing a wide variety of file types. Groups of *docs* can be 
@@ -34,8 +35,8 @@ files through any cloud storage service. Examples are available on
 A convenient interface for searching public *rivt* READMEs on GitHub 
 is :ref:`here <search-interface>`.
 
-.. [1] rivt includes provisions for selectively exporting *rivt file*
-    sections to a *public rivt report folder* for open-source distribution.
+.. [1] *rivt* includes provisions for selectively exporting *rivt file*
+    sections to a *public rivt folder* intended for open-source distribution.
 
 ------------------------------------------------------
 
@@ -45,7 +46,7 @@ is :ref:`here <search-interface>`.
 -------------------------------------------------------------------------------- 
 
 Freely sharing live engineering documents has been a challenge because
-commercial software objectives do not align with this goal and because the
+commercial software does not align with this objective, and because the
 documents are complex. They may include text, images, tables, calculations,
 active models and computer code. They are also dynamic, and frequently updated
 and recalculated as project designs evolve and change.
