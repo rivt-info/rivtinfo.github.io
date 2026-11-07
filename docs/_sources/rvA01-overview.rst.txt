@@ -44,18 +44,18 @@ is :ref:`here <search-interface>`.
 **[2]** Motivation
 -------------------------------------------------------------------------------- 
 
-Broadly sharing live engineering documents has been a challenge because 
-commercial software objectives do not align with this goal and because they are
-complex. They may include text, images, tables, calculations, active models and 
-computer code. They are also dynamic and frequently updated and recalculated as
-project designs evolve and change.
+Freely sharing live engineering documents has been a challenge because
+commercial software objectives do not align with this goal and because the
+documents are complex. They may include text, images, tables, calculations,
+active models and computer code. They are also dynamic, and frequently updated
+and recalculated as project designs evolve and change.
 
 The need for reuse of engineering documents is a matter of reducing writing
-time and increasing time for independent and creative thought and checking.
+time and increasing time for independent creative thought and checking.
 Most engineering calculations are not fundamentally unique. The basic equations
 and methods are shared across many projects. However they are organized
 in unique ways for specific project requirements. The commercial market
-response to this need has been to develop a number of siloed programs with
+response to this has been to develop a number of siloed programs with
 barriers to sharing and reuse including:
 
 - incompatible documents across different programs
@@ -65,38 +65,8 @@ barriers to sharing and reuse including:
 - limited report generation
 - limited collaboration
 
-*rivt* produces organized, formatted engineering documents from active
-calculation files that can be shared anywhere. The primary use cases for *rivt*
-are:
-
-    A. producing reusable engineering documents that are easier to write, edit and 
-    maintian compared to LaTeX, Excel, or Word.
-
-    B. producing documents that need to be partitioned into public
-    and private parts prior to sharing.
-
-    C. using Python and AI tools to write engineering documents
-
-    D. functioning as a front and back end for external software.
-
-Engineering document types include:
-
-    #. internal communications
-    #. research documentation
-    #. government permits
-    #. technical reports
-    #. funding applications
-    #. teaching and presentation materials
-    #. homework
-
-`Quarto <https://quarto.org/>`_ is likely a better fit for documents with
-highly specific format requirements including journal articles and books and
-that do not need live recalculation . For interactive calculation documents
-that do not need organized reports or partitioning into private and public
-sections `Jupyter Notebooks <https://jupyter.org/>`_ is likely a better tool.
-Finally, the table below summarizes and compares limitations between specific
+The table below summarizes and compares limitations between specific
 programs that *rivt* is designed to complement or replace.
-
 
 .. rst-class:: center
 
@@ -126,6 +96,36 @@ Quarto           yes          yes        no     no        no           no       
 .. [10] Text, PDF, and HTML documents from the same input file.
 
 
+*rivt* produces organized, formatted engineering documents from active
+calculation files that can be shared anywhere. The primary use cases for *rivt*
+include:
+
+    A. producing reusable engineering documents that are easier to write, edit and 
+    maintain compared to LaTeX, Excel, or Word.
+
+    B. producing documents that need to be separated into public
+    and private parts prior to sharing.
+
+    C. using Python and AI tools to write engineering documents.
+
+    D. functioning as a front and back end for external software.
+
+Engineering document types include:
+
+    #. internal communications
+    #. research documentation
+    #. government permits
+    #. technical reports
+    #. funding applications
+    #. teaching and presentation materials
+    #. homework
+
+*rivt* may not be the best fit for all use cases. `Quarto <https://quarto.org/>`_ 
+is likely a better fit for documents forhighly specific format requirements 
+including journal articles and books that do not need live recalculation. 
+For interactive calculation documents that do not need organized report output 
+or separation of private and public sections 
+`Jupyter Notebooks <https://jupyter.org/>`_ is likely a better tool.
 
 .. toctree::
     :maxdepth: 1
