@@ -23,18 +23,23 @@ Home
     
 .. |rivt_logo| image:: _static/img/rivt-finalb.png
    :width: 70px
+   :align: middle       
 
 .. |studio_logo| image:: _static/img/rvstudio2.jpg
    :width: 70px
+   :align: middle
 
 .. |remote_logo| image:: _static/img/rvremote.png
    :width: 70px
+   :align: middle
 
 .. |open_logo| image:: _static/img/openmod2.png
-   :width: 70px
+   :width: 50px
+   :align: middle
 
 .. |git_logo| image:: _static/img/githubsrch.png
-   :width: 70px
+   :width: 50px
+   :align: middle
 
 *rivt* is an open source Python project for writing and sharing engineering
 documents and their sources. It includes a portable desktop editor and a
@@ -47,17 +52,17 @@ containerized server application that runs in the browser.
 .. table:: 
    :class: v-align-middle
       
-   +---------------+-----------------------------------------------------------------------------------+
-   | |rivt_logo|   | `rivtlib`_ - a Python library for processing *rivt markup* ( `source`_ )          |
-   +---------------+-----------------------------------------------------------------------------------+
-   | |studio_logo| | `rivtStudio`_ - a portable writing and publishing desktop application             |
-   +---------------+-----------------------------------------------------------------------------------+
-   | |remote_logo| | `rivtRemote`_ - containerized *rivtStudio* for servers and browsers               |
-   +---------------+-----------------------------------------------------------------------------------+
-   |  |git_logo|   | :ref:`GitHub search <search-interface>` - find public *rivt* projects on GitHub   |
-   |               |                                                                                   |
-   |  |open_logo|  | `openModels`_ - online database of shared models and documents including *rivt*   |
-   +---------------+-----------------------------------------------------------------------------------+
+   +---------------+---------------------------------------------------------------------------------------+
+   | |rivt_logo|   | `rivtlib`_ - a Python library for processing *rivt markup* ( `source`_ )              |
+   +---------------+---------------------------------------------------------------------------------------+
+   | |studio_logo| | `rivtStudio`_ - a portable writing and publishing desktop application                 |
+   +---------------+---------------------------------------------------------------------------------------+
+   | |remote_logo| | `rivtRemote`_ - containerized *rivtStudio* for servers and browsers                   |
+   +---------------+---------------------------------------------------------------------------------------+
+   |  |git_logo|   | :ref:`GitHub search <search-interface>` - find public *rivt* projects on GitHub       |
+   |               |                                                                                       |
+   |  |open_logo|  | `openModels`_ - online database of shared model and document files including *rivt*   |
+   +---------------+---------------------------------------------------------------------------------------+
    
 .. _openModels: https://openmodels.info
 .. _rivtStudio: https://github.com/rivt-info/rivtStudio
