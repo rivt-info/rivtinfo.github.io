@@ -53,7 +53,7 @@ Home
 
 *rivt* is an open source `Python <https://www.python.org/>`_ project for
 writing and sharing live engineering documents with sources. Python knowledge
-is not required, but incorporating custom Python scripts increases *rivt*
+is not required but incorporating custom Python scripts increases *rivt*
 capabilities. *rivt* includes both portable desktop and server-browser editors
 based on `VSCodium <https://vscodium.com/>`_. The table below provides links to
 the installation programs and source code.
@@ -85,14 +85,12 @@ the installation programs and source code.
 
 *rivtlib*, *rivtStudio* and *rivtRemote* are distributed under the 
 `MIT open source license <https://opensource.org/license/mit>`_ 
-( see :ref:`FAQ <Licenses>` ). 
+( :ref:`FAQ <Licenses>` ).  Examples of *rivt files* and *docs* include this 
+user manual and other :ref:`demo files <rivt-tutor>`.
 
 *rivt* was created because there are :ref:`many benefits <rvmotivation>` to
-freely writing and sharing live engineering documents. This user manual is
-written in *rivt*. Other examples of *rivt files* and *docs* are 
-:ref:`here <rivt-tutor>`.
-
-For questions and comments please send email to questions@openmodels.engineering
+freely writing and sharing live engineering documents. For questions and 
+comments please send emails to questions@openmodels.engineering
 
 .. raw:: html
 
