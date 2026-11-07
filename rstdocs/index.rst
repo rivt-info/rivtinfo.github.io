@@ -22,7 +22,7 @@ Home
    <hr>
 
 .. |spaces| unicode:: U+00A0 U+00A0 U+00A0
-.. |space6| unicode:: U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0  U+00A0 U+00A0 U+00A0
+.. |space6| unicode:: U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0
 
 .. |rivt_logo| image:: _static/img/rivt-finalb.png
    :width: 70px
@@ -40,12 +40,12 @@ Home
    :target: https://github.com/rivtlib-dev/rivtlib
 
 .. |git_logo| image:: _static/img/githubsrch.png
-   :width: 50px
+   :width: 45px
    :align: middle
    :target: :ref:`GitHub search <search-interface>`
    
 .. |open_logo| image:: _static/img/openmod2.png
-   :width: 50px
+   :width: 45px
    :align: middle
    :target:  https://openmodels.engineering 
 
