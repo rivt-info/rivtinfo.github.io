@@ -53,7 +53,7 @@ containerized server application that runs in the browser.
    :class: v-align-middle
       
    +---------------+---------------------------------------------------------------------------------------+
-   | |rivt_logo|   | `rivtlib`_ - a Python library for processing *rivt markup* ( `source`_ )              |
+   | |rivt_logo|   | `rivtlib`_ - a Python library for processing *rivt markup* ( `source code`_ )         |
    +---------------+---------------------------------------------------------------------------------------+
    | |studio_logo| | `rivtStudio`_ - a portable writing and publishing desktop application                 |
    +---------------+---------------------------------------------------------------------------------------+
@@ -69,7 +69,7 @@ containerized server application that runs in the browser.
 .. _rivtRemote: https://github.com/rivtlib-dev/rivtStudio-devcontainer-1.0.0a20
 .. _rivtlib: https://pypi.org/project/rivtlib
 
-.. _source: https://github.com/rivtlib-dev/rivtlib
+.. _source code: https://github.com/rivtlib-dev/rivtlib
 
 *rivtlib* and *rivtStudio* are distributed under the 
 `MIT open source license <https://opensource.org/license/mit>`_ 
