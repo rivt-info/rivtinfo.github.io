@@ -22,6 +22,7 @@ Home
    <hr>
 
 .. |spaces| unicode:: U+00A0 U+00A0 U+00A0
+.. |space6| unicode:: U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0
 
 .. |rivt_logo| image:: _static/img/rivt-finalb.png
    :width: 70px
@@ -38,16 +39,17 @@ Home
    :align: middle
    :target: https://github.com/rivtlib-dev/rivtlib
 
-
-.. |open_logo| image:: _static/img/openmod2.png
-   :width: 50px
-   :align: middle
-   :target: :ref:`GitHub search <search-interface>`
-
 .. |git_logo| image:: _static/img/githubsrch.png
    :width: 50px
    :align: middle
-   :target: https://openmodels.engineering
+   :target: :ref:`GitHub search <search-interface>`
+   
+.. |open_logo| image:: _static/img/openmod2.png
+   :width: 50px
+   :align: middle
+   :target:  https://openmodels.engineering 
+
+
 
 *rivt* is an open source Python project for writing and sharing live engineering
 documents and their sources. It includes a portable desktop editor and an
@@ -65,9 +67,9 @@ the installation programs and source code.
    +------------------------------------------------------------------------------------------------------------------------+
    | |remote_logo| |spaces| `rivtRemote`_ - containerized *rivtStudio* for servers and browsers  ( `rivtRemote source`_ )   |
    +------------------------------------------------------------------------------------------------------------------------+
-   | |git_logo| |spaces| :ref:`GitHub search <search-interface>` - find public *rivt* projects on GitHub                    |
+   | |space6| |git_logo| |spaces| :ref:`GitHub search <search-interface>` - find public *rivt* projects on GitHub           |
    |                                                                                                                        |
-   | |open_logo| |spaces| `openModels`_ - online database of shared model and document files including *rivt*               |
+   | |space6| |open_logo| |spaces| `openModels`_ - online database of shared model and document files including *rivt*      |
    +------------------------------------------------------------------------------------------------------------------------+
    
 .. _rivtlib: https://pypi.org/project/rivtlib
