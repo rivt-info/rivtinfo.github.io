@@ -41,9 +41,9 @@ Home
    :width: 50px
    :align: middle
 
-*rivt* is an open source Python project for writing and sharing engineering
-documents and their sources. It includes a portable desktop editor and a
-containerized server application that runs in the browser.
+*rivt* is an open source Python project for writing and sharing live engineering
+documents and their sources. It includes a portable desktop editor and an
+editor that runs on a server in the browser.
 
 .. raw:: html
 
@@ -52,17 +52,17 @@ containerized server application that runs in the browser.
 .. table:: 
    :class: v-align-middle
       
-   +---------------+---------------------------------------------------------------------------------------+
-   | |rivt_logo|   | `rivtlib`_ - a Python library for processing *rivt markup* ( `source code`_ )         |
-   +---------------+---------------------------------------------------------------------------------------+
-   | |studio_logo| | `rivtStudio`_ - a portable writing and publishing desktop application                 |
-   +---------------+---------------------------------------------------------------------------------------+
-   | |remote_logo| | `rivtRemote`_ - containerized *rivtStudio* for servers and browsers                   |
-   +---------------+---------------------------------------------------------------------------------------+
-   |  |git_logo|   | :ref:`GitHub search <search-interface>` - find public *rivt* projects on GitHub       |
-   |               |                                                                                       |
-   |  |open_logo|  | `openModels`_ - online database of shared model and document files including *rivt*   |
-   +---------------+---------------------------------------------------------------------------------------+
+   +------------------------------------------------------------------------------------------------------+
+   | |rivt_logo|    `rivtlib`_ - a Python library for processing *rivt markup* ( `source code`_ )         |
+   +------------------------------------------------------------------------------------------------------+
+   | |studio_logo|  `rivtStudio`_ - a portable writing and publishing desktop application                 |
+   +------------------------------------------------------------------------------------------------------+
+   | |remote_logo|  `rivtRemote`_ - containerized *rivtStudio* for servers and browsers                   |
+   +------------------------------------------------------------------------------------------------------+
+   |  |git_logo|    :ref:`GitHub search <search-interface>` - find public *rivt* projects on GitHub       |
+   |                                                                                                      |
+   |  |open_logo|   `openModels`_ - online database of shared model and document files including *rivt*   |
+   +------------------------------------------------------------------------------------------------------+
    
 .. _openModels: https://openmodels.info
 .. _rivtStudio: https://github.com/rivt-info/rivtStudio
@@ -71,14 +71,14 @@ containerized server application that runs in the browser.
 
 .. _source code: https://github.com/rivtlib-dev/rivtlib
 
-*rivtlib* and *rivtStudio* are distributed under the 
+*rivtlib*, *rivtStudio* and *rivtRmote* are distributed under the 
 `MIT open source license <https://opensource.org/license/mit>`_ 
-( see :ref:`FAQ <Licenses>` ). The :ref:`motivation <rvmotivation>` for 
-writing *rivt* is the benefit that comes from freely sharing live 
-engineering documents that can be edited, automated and checked. Examples of 
-*rivt files* and *docs* are :ref:`here <rivt-tutor>`. 
- 
-For questions and comments please send email to questions@openmodels.engineering
+( see :ref:`FAQ <Licenses>` ). 
+
+*rivt* was written  because there are :ref:`many benefits <rvmotivation>` to freely 
+writing and sharing live engineering documents. Examples of *rivt files* and *docs* 
+are :ref:`here <rivt-tutor>`.  For questions and comments please send 
+email to questions@openmodels.engineering
 
 .. raw:: html
 
