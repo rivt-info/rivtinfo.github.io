@@ -100,32 +100,31 @@ Quarto           yes          yes        no     no        no           no       
 calculation files that can be shared anywhere. The primary use cases for *rivt*
 include:
 
-    A. producing reusable engineering documents that are easier to write, edit and 
-    maintain compared to LaTeX, Excel, or Word.
+A. producing reusable engineering documents that are easier to write, edit and 
+maintain compared to LaTeX, Excel, or Word.
 
-    B. producing documents that need to be separated into public
-    and private parts prior to sharing.
+B. producing documents that need to be separated into public
+   and private parts prior to sharing.
 
-    C. using Python and AI tools to write engineering documents.
+C. using Python and AI tools to write engineering documents.
 
-    D. functioning as a front and back end for external software.
+D. functioning as a front and back end for external software.
 
 Engineering document types include:
 
-    #. internal communications
-    #. research documentation
-    #. government permits
-    #. technical reports
-    #. funding applications
-    #. teaching and presentation materials
-    #. homework
+#. internal communications
+#. research documentation
+#. government permits
+#. technical reports
+#. funding applications
+#. teaching and presentation materials
+#. homework
 
 *rivt* may not be the best fit for all use cases. `Quarto <https://quarto.org/>`_ 
-is likely a better fit for documents forhighly specific format requirements 
-including journal articles and books that do not need live recalculation. 
-For interactive calculation documents that do not need organized report output 
-or separation of private and public sections 
-`Jupyter Notebooks <https://jupyter.org/>`_ is likely a better tool.
+is likely a better fit for static documents with highly specific format requirements 
+including journal articles and books. For interactive calculation documents 
+that do not need organized report output or separation of private and public 
+sections `Jupyter Notebooks <https://jupyter.org/>`_ is likely a better tool.
 
 .. toctree::
     :maxdepth: 1
