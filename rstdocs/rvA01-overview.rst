@@ -101,7 +101,7 @@ calculation files that can be shared anywhere. The primary use cases for *rivt*
 include:
 
 A. producing reusable engineering documents that are easier to write, edit and 
-maintain compared to LaTeX, Excel, or Word.
+   maintain compared to LaTeX, Excel, or Word.
 
 B. producing documents that need to be separated into public
    and private parts prior to sharing.
