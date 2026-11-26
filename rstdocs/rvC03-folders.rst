@@ -23,7 +23,7 @@
                         | as well as one or more rvbook or rvreport folders.
 
                         | A rivtbook folder is a collection of rivt files with
-   rvbook subfolder     | common subject matter organized to simplify selection
+   rvhandbk subfolder   | common subject matter organized to simplify selection
                         | selection of files and resources for inclusion in rivt 
 
                         | A rivt report folder is a collection of rivt files

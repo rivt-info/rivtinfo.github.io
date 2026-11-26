@@ -152,7 +152,7 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvB01-rivtfile.html">
+  <a class="nav-link nav-internal" href="rvB01-rivt.html">
     B.1 | R-I-V-T
   </a>
 </li>
@@ -264,7 +264,7 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rvB01-rivtfile.html">
+  <a class="nav-link nav-internal" href="rvB01-rivt.html">
     B.1 | R-I-V-T
   </a>
 </li>
@@ -353,12 +353,27 @@
 <a class="dark-light reference internal image-reference" href="_images/rivt-finalb.png"><img alt="rivt logo" class="dark-light" height="106" src="_images/rivt-finalb.png" width="133" />
 </a>
 </figure>
-<hr><p><em>rivt</em> is an open source <a class="reference external" href="https://www.python.org/" rel="noreferrer" target="_blank">Python</a> and
-<a class="reference external" href="https:/https://vscodium.com/" rel="noreferrer" target="_blank">Code-OSS</a> project for writing and sharing
-live engineering documents with sources. Python knowledge isn’t necessary but
-custom integrated Python scripts can increase <em>rivt</em> capabilities.
-<em>rivt</em> includes both a portable desktop editor and a server driven browser editor.
-The table below provides links to the project programs and source code.</p>
+<hr><p><em>rivt</em> is an open source <a class="reference external" href="https://www.python.org/" rel="noreferrer" target="_blank">Python</a> and integrated IDE
+(Integrated Development Environment) for writing and sharing live engineering
+documents and their sources. Python knowledge isn’t necessary, but knowing or
+learning it can increase <em>rivt</em> capabilities. There are several parts to
+the project.</p>
+<p><em>rivtStudio</em> is a portable desktop editor for writing and publishing <em>rivt</em>
+documents. It uses
+<a class="reference external" href="https://continuumio-docs.readthedocs-hosted.com/miniconda/" rel="noreferrer" target="_blank">miniconda</a> or
+<a class="reference external" href="https://winpython.github.io//" rel="noreferrer" target="_blank">WinPython</a> and is distributed as an
+approximately 1GB zip file.</p>
+<ul class="simple">
+<li><p><em>rivtStudio-Codium</em> uses VSCodium <a class="reference external" href="https://vscodium.com/" rel="noreferrer" target="_blank">VSCodium</a> as the IDE.</p></li>
+<li><p><em>rivtStudio-Spyder</em> uses <a class="reference external" href="https://www.spyder-ide.org/download" rel="noreferrer" target="_blank">Spyder</a> as the IDE.</p></li>
+<li><p><em>rivtStudio-Pyzo</em> uses <a class="reference external" href="https://pyzo.org/" rel="noreferrer" target="_blank">Pyzo</a> as the IDE.</p></li>
+</ul>
+<p><a class="reference external" href="https://pypi.org/project/rivtlib/" rel="noreferrer" target="_blank">rivtlib</a> is the Python library that
+processes <em>rivt</em> Python files. <em>rivt markup</em> is the Python embedded markup
+language used to produce <em>rivt</em> documents.</p>
+<p><em>rivtRemote</em> is <em>rivtStudio</em> running in a browser.</p>
+<p>The table below provides links to the project programs and source code.</p>
+<p><strong>rivt Project</strong></p>
 <div class="pst-scrollable-table-container"><table class="v-align-middle table">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference external" href="https://pypi.org/project/rivtlib" rel="noreferrer" target="_blank"><img alt="rivt_logo" class="align-middle" src="_images/rivt-finalb.png" style="width: 70px;" /></a>     <a class="reference external" href="https://pypi.org/project/rivtlib" rel="noreferrer" target="_blank">rivtlib</a> - Python library for processing <em>rivt files</em> ( <a class="reference external" href="https://github.com/rivtlib-dev/rivtlib" rel="noreferrer" target="_blank">rivtlib source</a> )</p></td>
@@ -373,32 +388,38 @@ The table below provides links to the project programs and source code.</p>
 <p><em>rivtlib</em>, <em>rivtStudio</em> and <em>rivtRemote</em> are distributed under the
 <a class="reference external" href="https://opensource.org/license/mit" rel="noreferrer" target="_blank">MIT open source license</a>
 ( <a class="reference internal" href="rvF03-faq.html#licenses"><span class="std std-ref">FAQ</span></a> ).</p>
-<p>There are six folder and file types that generate <em>rivt</em> documents and are
-designed for open source sharing. Two general methods are available for
-sharing: public repositories like <em>GitHub</em> provide version control and user
-interaction, or cloud databases like <em>Google Drive</em> that do not require an
-account. The table below provides a summary of the file types and distribution
-methods.</p>
+<p><em>rivt</em> documents are generated from files and folders designed for open source
+sharing through public repositories like <em>GitHub</em> that provide version control
+and user interaction, or cloud databases like <em>Google Drive</em> that are simple to
+access and do not require an account. The table below provides a summary:</p>
+<p><strong>rivt Files and Folders</strong></p>
 <div class="pst-scrollable-table-container"><table class="v-align-middle table">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference external" href=":ref:`GitHubsearch&lt;search-interface&gt;`" rel="noreferrer" target="_blank"><img alt="git_logo" class="align-middle" src="_images/githubsrch.png" style="width: 45px;" /></a>     <a class="reference internal" href="rvD03-share.html#search-interface"><span class="std std-ref">GitHub search</span></a> - find public <em>rivt</em> files on GitHub</p>
-<p><a class="reference external" href="https://openmodels.engineering" rel="noreferrer" target="_blank"><img alt="open_logo" class="align-middle" src="_images/openmod2.png" style="width: 45px;" /></a>     <a class="reference external" href="https://openmodels.engineering" rel="noreferrer" target="_blank">openModels</a> - online database of shared model and document files including <em>rivt</em></p>
+<tr class="row-odd"><td><p>      <strong>rivt-project_folder_name</strong> - The enclosing folder for a <em>rivt</em> project</p></td>
+</tr>
+<tr class="row-even"><td><p>         <strong>rvreport-report_folder_name</strong> - The enclosing folder for a <em>rivt</em> report</p>
+<p>         <strong>rvhandbk-handbook_folder_name</strong> - The enclosing folder for a <em>rivt</em> handbook</p>
 </td>
 </tr>
-<tr class="row-even"><td><p><strong>rivt-project_folder_name</strong> - The enclosing folder for a <em>rivt</em> project including interace repository settings</p></td>
-</tr>
-<tr class="row-odd"><td><p>        <strong>rvreport-report_folder_name</strong> - The enclosing folder for a <em>rivt</em> report</p>
-<p>        <strong>rvhandbk-handbook_folder_name</strong> - The enclosing folder for a <em>rivt</em> handbook</p>
-</td>
-</tr>
-<tr class="row-even"><td><p>           <strong>rvDDSS-file_name.py</strong> - A file that generates a <em>rivt</em> doc - the basic unit of a <em>rivt</em> document report</p>
-<p>           <strong>rvscript-file_name.py</strong> - A Pyhon file that extends <em>rivt</em> functionality</p>
-<p>           <strong>rvtask-file_name.shelltype</strong> - A shell file that runs external programs</p>
+<tr class="row-odd"><td><p>             <strong>rvDDSS-file_name.py</strong> - A file that generates a <em>rivt</em> doc - the basic unit of a <em>rivt</em> document report</p>
+<p>             <strong>rvscript-file_name.py</strong> - A Pyhon file that extends <em>rivt</em> functionality</p>
+<p>             <strong>rvtask-file_name.shelltype</strong> - A shell file that runs external programs</p>
 </td>
 </tr>
 </tbody>
 </table>
 </div>
+<blockquote>
+<div><div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href=":ref:`GitHubsearch&lt;search-interface&gt;`" rel="noreferrer" target="_blank"><img alt="git_logo" class="align-middle" src="_images/githubsrch.png" style="width: 45px;" /></a>     <a class="reference internal" href="rvD03-share.html#search-interface"><span class="std std-ref">GitHub search</span></a> - find public <em>rivt</em> files on GitHub</p>
+<p><a class="reference external" href="https://openmodels.engineering" rel="noreferrer" target="_blank"><img alt="open_logo" class="align-middle" src="_images/openmod2.png" style="width: 45px;" /></a>     <a class="reference external" href="https://openmodels.engineering" rel="noreferrer" target="_blank">openModels</a> - online database of shared model and document files ( including <em>rivt</em> )</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div></blockquote>
 <p>Examples of <em>rivt files</em> and <em>docs</em> include this
 user manual, which was written in <em>rivt</em>, and other <a class="reference internal" href="rvA03-tutor.html#rivt-tutor"><span class="std std-ref">demo files</span></a>.</p>
 <p><em>rivt</em> was developed because there are <a class="reference internal" href="rvA01-overview.html#rvmotivation"><span class="std std-ref">many benefits</span></a> to

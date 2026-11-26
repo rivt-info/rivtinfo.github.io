@@ -22,8 +22,9 @@ Home
    <hr>
 
 .. |spaces| unicode:: U+00A0 U+00A0 U+00A0
-.. |space4| unicode:: U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0
-.. |space8| unicode:: U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0
+.. |space2| unicode:: U+00A0 U+00A0 U+00A0 U+00A0 U+00A0
+.. |space4| unicode:: U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0
+.. |space8| unicode:: U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0 U+00A0
 
 .. |rivt_logo| image:: _static/img/rivt-finalb.png
    :width: 70px
@@ -51,13 +52,31 @@ Home
    :target:  https://openmodels.engineering 
 
 
-*rivt* is an open source `Python <https://www.python.org/>`_ and 
-`Code-OSS <https:/https://vscodium.com/>`_ project for writing and sharing 
-live engineering documents with sources. Python knowledge isn't necessary but 
-custom integrated Python scripts can increase *rivt* capabilities. 
-*rivt* includes both a portable desktop editor and a server driven browser editor. 
+*rivt* is an open source `Python <https://www.python.org/>`_ and integrated IDE
+(Integrated Development Environment) for writing and sharing live engineering
+documents and their sources. Python knowledge isn't necessary, but knowing or
+learning it can increase *rivt* capabilities. There are several parts to
+the project.
+
+*rivtStudio* is a portable desktop editor for writing and publishing *rivt*
+documents. It uses  
+`miniconda <https://continuumio-docs.readthedocs-hosted.com/miniconda/>`_ or 
+`WinPython <https://winpython.github.io//>`_ and is distributed as an 
+approximately 1GB zip file.
+
+- *rivtStudio-Codium* uses VSCodium `VSCodium <https://vscodium.com/>`_ as the IDE. 
+- *rivtStudio-Spyder* uses `Spyder <https://www.spyder-ide.org/download>`_ as the IDE. 
+- *rivtStudio-Pyzo* uses `Pyzo <https://pyzo.org/>`_ as the IDE. 
+
+`rivtlib <https://pypi.org/project/rivtlib/>`_ is the Python library that
+processes *rivt* Python files. *rivt markup* is the Python embedded markup
+language used to produce *rivt* documents.
+
+*rivtRemote* is *rivtStudio* running in a browser.
+ 
 The table below provides links to the project programs and source code.
 
+**rivt Project**
 
 .. table:: 
    :class: v-align-middle
@@ -82,24 +101,19 @@ The table below provides links to the project programs and source code.
 `MIT open source license <https://opensource.org/license/mit>`_ 
 ( :ref:`FAQ <Licenses>` ). 
 
-There are six folder and file types that generate *rivt* documents and are
-designed for open source sharing. Two general methods are available for
-sharing: public repositories like *GitHub* provide version control and user
-interaction, or cloud databases like *Google Drive* that do not require an
-account. The table below provides a summary of the file types and distribution
-methods.
+*rivt* documents are generated from files and folders designed for open source
+sharing through public repositories like *GitHub* that provide version control
+and user interaction, or cloud databases like *Google Drive* that are simple to
+access and do not require an account. The table below provides a summary:
 
+
+**rivt Files and Folders**
 
 .. table:: 
    :class: v-align-middle
-      
-  
+        
    +------------------------------------------------------------------------------------------------------------------------+
-   | |git_logo| |spaces| :ref:`GitHub search <search-interface>` - find public *rivt* files on GitHub                       |
-   |                                                                                                                        |
-   | |open_logo| |spaces| `openModels`_ - online database of shared model and document files including *rivt*               |
-   +------------------------------------------------------------------------------------------------------------------------+
-   | **rivt-project_folder_name** - The enclosing folder for a *rivt* project including interace repository settings        |
+   | |space2| **rivt-project_folder_name** - The enclosing folder for a *rivt* project                                      |
    +------------------------------------------------------------------------------------------------------------------------+
    | |space4| **rvreport-report_folder_name** - The enclosing folder for a *rivt* report                                    |
    |                                                                                                                        |    
@@ -112,8 +126,13 @@ methods.
    | |space8| **rvtask-file_name.shelltype** - A shell file that runs external programs                                     |
    +------------------------------------------------------------------------------------------------------------------------+
  
-
 .. _openModels: https://openmodels.engineering
+
+   +------------------------------------------------------------------------------------------------------------------------+
+   | |git_logo| |spaces| :ref:`GitHub search <search-interface>` - find public *rivt* files on GitHub                       |
+   |                                                                                                                        |
+   | |open_logo| |spaces| `openModels`_ - online database of shared model and document files ( including *rivt* )           |
+   +------------------------------------------------------------------------------------------------------------------------+
 
 
 Examples of *rivt files* and *docs* include this 
@@ -136,7 +155,7 @@ comments please send emails to questions@openmodels.engineering
    :hidden:
 
    rvA01-overview.rst
-   rvB01-rivtfile.rst
+   rvB01-rivt.rst
    rvC01-publish.rst
    rvD01-rivtstudio.rst
    rvE01-aiwork.rst

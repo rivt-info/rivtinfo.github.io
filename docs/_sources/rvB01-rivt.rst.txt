@@ -20,7 +20,7 @@ scripts. To assemble a *doc* it uses four primary API functions:
 
     <b>V():</b> Imports data and calculates values from equations and functions <br>
 
-    <b>T(): </b> Runs external binary programs <br>
+    <b>T(): </b> Runs external programs <br>
 
 A fourth **rv.D API**  for publishing the *doc* is documented 
 :ref:`here <rivt-publish>`. Examples of a *rivt file* with text, PDF and 
@@ -70,10 +70,10 @@ The API methods are listed in the table below, where (rS) is a triple quoted
 ================= =============== ========================================
 API Function         Name             Purpose
 ================= =============== ========================================
-**rv.R** (rS)        Run           Run Python scripts and markup
+**rv.R** (rS)        Run           Run Python scripts
 **rv.I** (rS)        Insert        Insert static sources 
 **rv.V** (rS)        Values        Calculate values
-**rv.T** (rS)        Tools         Execute shell scripts and programs
+**rv.T** (rS)        Tasks         Execute shell scripts and programs
 **rv.D** (rS)        Doc           Publish docs 
 **rv.S; X** (rS)     Skip; Exit    Editing - Skip section or exit program 
 ================= =============== ========================================
@@ -129,7 +129,7 @@ specified. See :ref:`rivt markup <rivt-markup>` for further details.
 **[4]** String Header
 -------------------------------------------------
 
-Individual *API methods* define sections.  Each :doc:`API function <rvB01-rivtfile>` 
+Individual *API methods* define sections.  Each API function 
 takes a raw, triple quoted :term:`rivt string` composed of a 
 :term:`header substring` on the first line followed by a multi-line 
 :term:`content substring`. The *header line* defines section processing 

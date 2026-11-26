@@ -56,7 +56,7 @@
     <script src="_static/togglebutton.js?v=1ae7504c"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'rvB01-rivtfile';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'rvB01-rivt';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="B.2 | Markup" href="rvB02-markup.html" />
@@ -404,7 +404,7 @@ scripts. To assemble a <em>doc</em> it uses four primary API functions:</p>
 
 <b>V():</b> Imports data and calculates values from equations and functions <br>
 
-<b>T(): </b> Runs external binary programs <br><p>A fourth <strong>rv.D API</strong>  for publishing the <em>doc</em> is documented
+<b>T(): </b> Runs external programs <br><p>A fourth <strong>rv.D API</strong>  for publishing the <em>doc</em> is documented
 <a class="reference internal" href="rvC01-publish.html#rivt-publish"><span class="std std-ref">here</span></a>. Examples of a <em>rivt file</em> with text, PDF and
 HTML <em>docs</em> are provided below.</p>
 <ul class="simple">
@@ -463,7 +463,7 @@ a large organized report.</p>
 <tbody>
 <tr class="row-even"><td><p><strong>rv.R</strong> (rS)</p></td>
 <td><p>Run</p></td>
-<td><p>Run Python scripts and markup</p></td>
+<td><p>Run Python scripts</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>rv.I</strong> (rS)</p></td>
 <td><p>Insert</p></td>
@@ -474,7 +474,7 @@ a large organized report.</p>
 <td><p>Calculate values</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>rv.T</strong> (rS)</p></td>
-<td><p>Tools</p></td>
+<td><p>Tasks</p></td>
 <td><p>Execute shell scripts and programs</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>rv.D</strong> (rS)</p></td>
@@ -524,7 +524,7 @@ specified. See <a class="reference internal" href="rvB02-markup.html#rivt-markup
 </section>
 <section id="string-header">
 <span id="rivt-header"></span><h2><strong>[4]</strong> String Header<a class="headerlink" href="#string-header" title="Link to this heading">#</a></h2>
-<p>Individual <em>API methods</em> define sections.  Each <a class="reference internal" href="#"><span class="doc">API function</span></a>
+<p>Individual <em>API methods</em> define sections.  Each API function
 takes a raw, triple quoted <a class="reference internal" href="rvF02-terms.html#term-rivt-string"><span class="xref std std-term">rivt string</span></a> composed of a
 <a class="reference internal" href="rvF02-terms.html#term-header-substring"><span class="xref std std-term">header substring</span></a> on the first line followed by a multi-line
 <a class="reference internal" href="rvF02-terms.html#term-content-substring"><span class="xref std std-term">content substring</span></a>. The <em>header line</em> defines section processing
