@@ -74,7 +74,8 @@ capabilities.
    | |studio_logo| |spaces| `rivtStudio`_  is a portable, desktop publishing environment. ( `rivtStudio downloads`_ )      |
    +-----------------------------------------------------------------------------------------------------------------------+
 
-*rivtStudio-Codium* uses `VSCodium <https://vscodium.com/>`_ .  *rivtStudio-Pyzo* uses `Pyzo <https://pyzo.org/>`_ . 
+1. *rivtStudio-Codium* uses `VSCodium <https://vscodium.com/>`_   
+2. *rivtStudio-Pyzo* uses `Pyzo <https://pyzo.org/>`_ . 
 
 .. table:: 
    :class: v-align-middle
@@ -83,7 +84,7 @@ capabilities.
    | |remote_logo| |spaces| `rivtRemote`_ is *rivtStudio* running in a browser  ( `rivtRemote container`_ )          |
    +-----------------------------------------------------------------------------------------------------------------+
 
-*rivtRemote-CodeSpaces* runs in `GitHub Codespaces <https://github.com/features/codespaces/>`_ .  
+1. *rivtRemote-CodeSpaces* runs in `GitHub Codespaces <https://github.com/features/codespaces/>`_ .  
 
 .. _rivtlib source: https://pypi.org/project/rivtlib/
 .. _rivtStudio downloads: https://github.com/rivt-info/rivtStudio/releases/latest
@@ -92,22 +93,25 @@ capabilities.
 .. _rivtlib: https://pypi.org/project/rivtlib
 .. _rivtStudio: https://github.com/rivt-info/rivtStudio/releases/latest
 .. _rivtRemote: https://pypi.org/project/rivtlib
-
+.. _openModels: https://openmodels.engineering
 
 **Sharing**
 
-*rivt* documents are generated from Python files and folders designed for open source
-sharing and distributed through cloud databases like *Google Drive* that are
-simple to access, or through public repositories like *GitHub* that provide
-version control and automation.
- 
-.. _openModels: https://openmodels.engineering
-
+.. table:: 
+   :class: v-align-middle
+      
    +------------------------------------------------------------------------------------------------------------------------+
    | |open_logo| |spaces| `openModels`_ - online database of shared model and document files ( including *rivt* )           |
    |                                                                                                                        |
    | |git_logo| |spaces| :ref:`GitHub search <search-interface>` - find public *rivt* files on GitHub                       |
    +------------------------------------------------------------------------------------------------------------------------+
+
+
+*rivt* documents are generated from Python files and folders designed for open source
+sharing and distributed through cloud databases like *Google Drive* that are
+simple to access, or through public repositories like *GitHub* that provide
+version control and automation.
+
 
 **rivt Files and Folders**
 
@@ -129,8 +133,8 @@ version control and automation.
    +------------------------------------------------------------------------------------------------------------------------+
 
 
-Examples of *rivt files* and *docs* include this 
-user manual, which was written in *rivt*, and other :ref:`demo files <rivt-tutor>`.
+Examples of *rivt files* and *docs* are :ref:`here <rivt-tutor>`. This user
+manual is written in *rivt*
 
 *rivt* was developed because there are :ref:`many benefits <rvmotivation>` to
 writing and freely sharing live, editable engineering documents. For questions and 
