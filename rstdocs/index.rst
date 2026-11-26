@@ -106,9 +106,9 @@ version control and automation.
 .. _openModels: https://openmodels.engineering
 
    +------------------------------------------------------------------------------------------------------------------------+
-   | |git_logo| |spaces| :ref:`GitHub search <search-interface>` - find public *rivt* files on GitHub                       |
-   |                                                                                                                        |
    | |open_logo| |spaces| `openModels`_ - online database of shared model and document files ( including *rivt* )           |
+   |                                                                                                                        |
+   | |git_logo| |spaces| :ref:`GitHub search <search-interface>` - find public *rivt* files on GitHub                       |
    +------------------------------------------------------------------------------------------------------------------------+
 
 **rivt Files and Folders**
