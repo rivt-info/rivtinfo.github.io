@@ -56,8 +56,9 @@ Home
 (Integrated Development Environment) for writing and sharing live engineering
 documents and their sources. Python knowledge isn't necessary, but knowing or
 learning it can increase *rivt* capabilities. There are several parts to
-the project.
-
+the project. They are all distributed under the 
+`MIT open source license <https://opensource.org/license/mit>`_ 
+( :ref:`FAQ <Licenses>` ). 
 
 
 .. table:: 
@@ -71,17 +72,12 @@ the project.
 .. table:: 
    :class: v-align-middle
       
-   +---------------------------------------------------------------------------------------------------------------------------------------------+
-   | |studio_logo| |spaces| `rivtStudio`_  is a portable desktop editor for writing and publishing *rivt* documents.  ( `rivtStudio source`_ )   |
-   +---------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-It can be paired with different IDEs.
+   +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |studio_logo| |spaces| `rivtStudio`_  is a portable desktop editor for writing and publishing *rivt* documents ( `rivtStudio source`_ ). It can be paired with different IDEs.   |
+   +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 - *rivtStudio-Codium* uses `VSCodium <https://vscodium.com/>`_. 
-- *rivtStudio-Spyder* uses `Spyder <https://www.spyder-ide.org/download>`_. 
 - *rivtStudio-Pyzo* uses `Pyzo <https://pyzo.org/>`_. 
-
 
 .. table:: 
    :class: v-align-middle
@@ -99,9 +95,6 @@ It can be paired with different IDEs.
 .. _rivtStudio: https://github.com/rivt-info/rivtStudio/releases/latest
 .. _rivtRemote: https://pypi.org/project/rivtlib
 
-*rivtlib*, *rivtStudio* and *rivtRemote* are distributed under the 
-`MIT open source license <https://opensource.org/license/mit>`_ 
-( :ref:`FAQ <Licenses>` ). 
 
 *rivt* documents are generated from files and folders designed for open source
 sharing through public repositories like *GitHub* that provide version control
