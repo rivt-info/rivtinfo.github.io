@@ -55,9 +55,7 @@ Home
 *rivt* is an open source `Python <https://www.python.org/>`_ project for
 writing and sharing live engineering documents and their sources. Python
 knowledge isn't necessary, but knowing or learning it can increase *rivt*
-capabilities. There are several parts to the project. They are all distributed
-under the `MIT open source license <https://opensource.org/license/mit>`_ 
-(:ref:`FAQ <Licenses>` ).
+capabilities. 
 
 
 .. table:: 
@@ -67,29 +65,29 @@ under the `MIT open source license <https://opensource.org/license/mit>`_
    | |rivt_logo| |spaces| `rivtlib`_ is a library for processing *rivt* Python files. ( `rivtlib source`_ )                 |
    +------------------------------------------------------------------------------------------------------------------------+
 
+*rivtlib* is distributed  under the `MIT open source license <https://opensource.org/license/mit>`_ (:ref:`FAQ <Licenses>` ).
 
 .. table:: 
    :class: v-align-middle
       
-   +---------------------------------------------------------------------------------------------------------------------+
-   | |studio_logo| |spaces| `rivtStudio`_  is a portable, desktop publishing environment. ( `rivtStudio source`_ )       |
-   +---------------------------------------------------------------------------------------------------------------------+
+   +-----------------------------------------------------------------------------------------------------------------------+
+   | |studio_logo| |spaces| `rivtStudio`_  is a portable, desktop publishing environment. ( `rivtStudio downloads`_ )      |
+   +-----------------------------------------------------------------------------------------------------------------------+
 
-*rivtStudio-Codium* uses `VSCodium <https://vscodium.com/>`_. 
-
-*rivtStudio-Pyzo* uses `Pyzo <https://pyzo.org/>`_. 
+*rivtStudio-Codium* uses `VSCodium <https://vscodium.com/>`_.  *rivtStudio-Pyzo* uses `Pyzo <https://pyzo.org/>`_. 
 
 .. table:: 
    :class: v-align-middle
       
-   +------------------------------------------------------------------------------------------------------------------------+
-   | |remote_logo| |spaces| `rivtRemote`_ is *rivtStudio* running in a browser  ( `rivtRemote source`_ )                    |
-   +------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------------------------------------------------------------------------------------------------+
+   | |remote_logo| |spaces| `rivtRemote`_ is *rivtStudio* running in a browser  ( `rivtRemote container`_ )          |
+   +-----------------------------------------------------------------------------------------------------------------+
 
+*rivtRemote-CodeSpaces* runs in `GitHub Codespaces <https://github.com/features/codespaces/>`_.  
 
 .. _rivtlib source: https://pypi.org/project/rivtlib/
-.. _rivtStudio source: https://github.com/rivt-info/rivtStudio
-.. _rivtRemote source: https://github.com/rivtlib-dev/rivtStudio-devcontainer-1.0.0a20
+.. _rivtStudio downloads: https://github.com/rivt-info/rivtStudio/releases/latest
+.. _rivtRemote container: https://github.com/rivtlib-dev/rivtStudio-devcontainer-1.0.0a20
 
 .. _rivtlib: https://pypi.org/project/rivtlib
 .. _rivtStudio: https://github.com/rivt-info/rivtStudio/releases/latest
