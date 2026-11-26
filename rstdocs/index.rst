@@ -59,53 +59,39 @@ learning it can increase *rivt* capabilities. There are several parts to
 the project.
 
 
-`rivtlib <https://pypi.org/project/rivtlib/>`_ is the Python library that
-processes *rivt* Python files. *rivt markup* is the Python embedded markup
-language used to produce *rivt* documents.
-
 
 .. table:: 
    :class: v-align-middle
       
    +------------------------------------------------------------------------------------------------------------------------+
-   | |rivt_logo| |spaces| `rivtlib`_ - Python library for processing *rivt files* ( `rivtlib source`_ )                     |
+   | |rivt_logo| |spaces| `rivtlib`_ is a library for processing *rivt* Python files ( `rivtlib source`_ )                  |
    +------------------------------------------------------------------------------------------------------------------------+
-
-
-*rivtStudio* is a portable desktop editor for writing and publishing *rivt*
-documents. 
 
 
 .. table:: 
    :class: v-align-middle
       
-   +------------------------------------------------------------------------------------------------------------------------+
-   | |studio_logo| |spaces| `rivtStudio`_ - portable writing and publishing desktop application  ( `rivtStudio source`_ )   |
-   +------------------------------------------------------------------------------------------------------------------------+
+   +---------------------------------------------------------------------------------------------------------------------------------------------+
+   | |studio_logo| |spaces| `rivtStudio`_  is a portable desktop editor for writing and publishing *rivt* documents.  ( `rivtStudio source`_ )   |
+   +---------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-It uses  
-`miniconda <https://continuumio-docs.readthedocs-hosted.com/miniconda/>`_ or 
-`WinPython <https://winpython.github.io//>`_ and is distributed as an 
-approximately 1GB zip file. It can be paired with different IDEs.
+It can be paired with different IDEs.
 
 - *rivtStudio-Codium* uses `VSCodium <https://vscodium.com/>`_. 
 - *rivtStudio-Spyder* uses `Spyder <https://www.spyder-ide.org/download>`_. 
 - *rivtStudio-Pyzo* uses `Pyzo <https://pyzo.org/>`_. 
 
 
-
 .. table:: 
    :class: v-align-middle
       
-
    +------------------------------------------------------------------------------------------------------------------------+
-   | |remote_logo| |spaces| `rivtRemote`_ - is *rivtStudio* running in a browser  ( `rivtRemote source`_ )                  |
+   | |remote_logo| |spaces| `rivtRemote`_ is *rivtStudio* running in a browser  ( `rivtRemote source`_ )                    |
    +------------------------------------------------------------------------------------------------------------------------+
 
 
-
-.. _rivtlib source: https://github.com/rivtlib-dev/rivtlib
+.. _rivtlib source: https://pypi.org/project/rivtlib/
 .. _rivtStudio source: https://github.com/rivt-info/rivtStudio
 .. _rivtRemote source: https://github.com/rivtlib-dev/rivtStudio-devcontainer-1.0.0a20
 
